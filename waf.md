@@ -34,7 +34,7 @@ The most malicious adversaries hit during the worst period of the year [black fr
 
 Minutes into the psycho-technical series' first episode, one character mentions a <strong>"R.U.D.Y. attack"</strong>. 
 
-So below is how I would "mansplain" what that means (to excruiciating detail) instead of watching the damn show. ;)
+So below is how I would "mansplain" what that means (to excruiciating detail), instead of watching the show. ;)
 
 RUDY is an acronymn for <strong>"aRe yoU Dead Yet"</strong> -- the name of a tool hackers use to create Denial of Service attacks. (An example is at <a target="_blank" href="https://github.com/darkweak/rudy">https://github.com/darkweak/rudy</a>, written in the Go language). 
 
@@ -42,19 +42,17 @@ A <a target="_blank" href="https://en.wikipedia.org/wiki/Slowloris_(computer_sec
 ">similar tool</a> is at <a target="_blank" href="https://github.com/gkbrk/slowloris">https://github.com/gkbrk/slowloris</a>, written in the Python language. The program is named after <a target="_blank" href="https://www.wikiwand.com/en/Slow_loris">slow lorises</a>, a group of primates known for their slow movement. It's exhausting watching them.
 
 
-## Incidious
+## Low and Slow
 
-Unlike other DoS (Denial of Service) attacks which flood target servers with traffic from many malicious clients, <strong>"low and slow"</strong> attack aims to exhaust server resources through long-running, incomplete requests.
+A single hacker machine can use the tools to take down even a large targeted Apache web server because the attack requires minimal bandwidth.
 
-The low traffic volume and slow rate ("low-and-slow" type) of RUDY attacks make them difficult to detect using conventional DDoS detection mechanisms which expect a high volume and fast rate of traffic.
+Unlike "volumetric" DoS (Denial of Service) attacks which aim to <strong>overwhelm</strong> (flood) target servers with traffic from many malicious clients, <strong>"low and slow"</strong> attack aims to exhaust server resources through long-running, incomplete requests.
+
+Such an attack is difficult to detect using conventional DDoS detection mechanisms which expect a high volume and fast rate of traffic.
 
 The exploit "sends long HTTP POST requests to the target server, but breaks the request body into small packets sent at a very slow rate (e.g. one byte every 10 seconds). This slow rate of sending the request body prevents the server from closing the connection, forcing it to keep the connection open and wait for the full request."
 
 Apache web servers have a finite pool of processing threads available to handle connections with the clients it serves. When the maximum number of possible connections that a server can handle is reached, additional connections cannot be established. And thus a denial-of-service attack is successful.
-
-Thus, the havoc that they cause is difficult to detect and mitigate.
-
-A single hacker machine can use the tools to take down even a large targeted Apache web server because the attack requires minimal bandwidth.
 
 That's why I have a feeling we'll see state-sponsored actors use such tools for cyber warfare - to shut down websites of value to society.
 
@@ -148,7 +146,7 @@ Articles by reverse proxy vendors <a target="_blank" href="https://www.cloudflar
 
    Unlike with Apache, NGINX/Lighttpd ignore incomplete requests by letting them run in the background, which does not use up system resources.
 
-2. Upgrade from use of HTTP protocol 1.1 to HTTP 2, which does not hold long sessions.
+2. Upgrade from use of HTTP protocol 1.1 to HTTP 2, which does not hold sessions open.
 
 PROTIP: The above advances have been available for several years. So essentially, "low and slow" attacks on an organization take advantage of that organization's inability to modernize quickly enough. Implementing the above involves changes to application programming code. The job of a CISO is to recognize this and rally the organization from the top down.
 
@@ -172,27 +170,43 @@ A similar service is <a target="_blank" href="https://www.corero.com/products/">
 Many organizations use both Reverse Proxies also use a WAF as part of a layered security approach for their web infrastructure.
 
 
-## Web Application Firewall
+## DDoS Resiliance Architecture
 
-A WAF (Web Application Firewall) works at the "Application" level of the network (at what is called Level 7) where they can examine various protocols. 
+The <a target="_blank" href="https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/mitigation-techniques.html">AWS Best Practices for DDoS Resiliency</a> uses this DDoS-resilient reference architecture diagram:
 
-A WAF typically operates in front of a load balancer which allocates traffic among several physical servers, analyzing all communications before they reach the app or the end-user.
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714929795/waf-aws-ddos-ref-arch-1164x667_dtloy9.png"><img alt="waf-aws-ddos-ref-arch-1164x667.png" width="1164" height="667" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714929795/waf-aws-ddos-ref-arch-1164x667_dtloy9.png"></a>
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714730367/waf-flow-1124x626_lqjo1h.png"><img alt="waf-flow-1124x626.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714730367/waf-flow-1124x626_lqjo1h.png"></a>
+Prepatory services to WAF:
 
-HANDS-ON: Let's create the above within the AWS cloud so we have a practical understanding.
-
-Using your default browser:
+Using your default browser to establish Administrator:
 1. Create a Root AWS account using your email.
-2. Lock down the root account and configure an IAM user to login with.
+2. Lock down the root account and configure IAM users to login with. The <a target="_blank" href="https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html">AWS Security Reference Architecture (SRA)</a> prescribes 5 Organizational Units (OUs) and Accoutns:
+   1. Organization Management account
+   2. Security Tooling & Log Archive accounts
+   3. Workloads account
+   4. Infrastructure Network Account & Shared Services accounts
+   <br /><br />
 3. Setup AWS Route 53 for DNS of a custom host name.
+4. Optionally, setup <a target="_blank" href="https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html">AWS Global Accelerator</a> service to route traffic among the AWS global network of 100 edge locations to the closest healthy endpoint. This improves performance by up to 60% compared to routing over the public internet. It can also protect applications from DDoS attacks by absorbing  traffic closer to the source. 
 
-4. View <a target="_blank" href="https://www.youtube.com/watch?v=FHRXXrQ765M" title="Premiered Oct 26, 2023">This video</a> by <a target="_blank" href="https://www.linkedin.com/in/rahul-wagh/">Rahul Wagh</a> on how to, step-by-step, manually to setup a VPC, Internet gateway, Subent, Route table. Launch an Ubuntu t2.micro EC2 Instances with an Apache web server invoking <a target="_blank" href="https://www.youtube.com/watch?v=FHRXXrQ765M&t=9m21s">these commands</a> on start:
+   ### Setup Web Application Firewall
+
+5. A WAF typically operates behind a DNS (AWS Route 53) about in front of a load balancer which allocates traffic among several physical servers, analyzing all communications before they reach the app or the end-user.
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714910173/waf-aws-icon-1600x1600_k3eqhs.webp"><img align="right" width="160" height="160" alt="waf-aws-icon-1600x1600.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714910173/waf-aws-icon-1600x1600_k3eqhs.webp"></a>
+   
+   A WAF (Web Application Firewall) works at the "Application" level (at what ISO called Level 7) where the program can examine various protocols, including HTTP headers and body text.
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714730367/waf-flow-1124x626_lqjo1h.png"><img alt="waf-flow-1124x626.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714730367/waf-flow-1124x626_lqjo1h.png"></a>
+
+   HANDS-ON: Let's create the above within the AWS cloud so we have a practical understanding.
+
+6. <a target="_blank" href="https://www.youtube.com/watch?v=FHRXXrQ765M" title="Premiered Oct 26, 2023">This video</a> by <a target="_blank" href="https://www.linkedin.com/in/rahul-wagh/">Rahul Wagh</a> describes how to, step-by-step, manually to setup a VPC, Internet gateway, Subent, Route table. Launch an Ubuntu t2.micro EC2 Instances with an Apache web server invoking <a target="_blank" href="https://www.youtube.com/watch?v=FHRXXrQ765M&t=9m21s">these commands</a> on start:
 
    <pre>#!/bin/bash
 yes | sudo apt update
 yes | sudo apt install apache2
-echo "&LT;h1>Server Details&LT;/h1>&LT;p>&LT;strong>Hostname:&LT;/strong> ${hostname}
+echo "&LT;h1>Server Details&LT;/h1>&LT;p>&LT;strong>Hostname:&LT;/strong> $ hostname\}
 &LT;/p>&LT;p>&LT;strong>IP Address:&LT;/strong> $(hostname -l | cut -d' ' -f1)&LT;/p>" > /var/www/html/index.html
 sudo systemctl restart apache2
    </pre>
@@ -218,15 +232,17 @@ sudo systemctl restart apache2
 
    ### AWS WAF, Shield, Firewall Manager
 
-   Within the AWS (Amazon Web Services) cloud are <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html">several security services</a> which work together:
+   Within the AWS (Amazon Web Services) cloud are <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html">several security services</a>:
 
    * AWS WAF - see <a target="_blank" href="https://aws.amazon.com/waf/">https://aws.amazon.com/waf</a>
 
-   * AWS Shield Advanced (subscription for additional cost) is an AWS-managed service that comes with dedicated support from the Shield Response Team (SRT) to enhance WAF with <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/ddos-advanced-summary-capabilities.html">advanced event visibility</a> for high visibility websites using Amazon EC2 instances, Elastic Load Balancing load balancers, CloudFront distributions, Route 53 hosted zones, and AWS Global Accelerator standard accelerators.
-
    * <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/fms-chapter.html">AWS Firewall Manager</a> applies a <strong>central configuration across several accounts</strong> and resources. For a <a target="_blank" href="https://aws.amazon.com/firewall-manager/pricing/">$100 per month per region per policy</a> ($110 in UAE, $120 in Jakarta and Zurich).
 
-9.  <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714706149/waf-menu-240502-356x866_d8pwhm.png"><img align="right" alt="waf-menu-240502-356x866.png" width="356" height="866" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714706149/waf-menu-240502-356x866_d8pwhm.png"></a>AWS has a "classic" WAF. But we use "WAF" on the top of the menu, which is referenced in <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">AWS documentation as WAFv2 (version 2)</a>.
+   * AWS Shield Advanced (at a subscription fee of $3,000/month per organization) is an AWS-managed service that comes with dedicated support from the AWS Shield Response Team (SRT). AWS handles the provisioning, configuration, and ongoing management of DDoS protection, reducing operational overhead. It enhance WAF with <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/ddos-advanced-summary-capabilities.html">advanced event visibility</a> for important websites using Amazon EC2 instances, Elastic Load Balancing load balancers, CloudFront distributions, Route 53 hosted zones, and AWS Global Accelerator standard accelerators.
+
+   PROTIP: Do not select both AWS Firewall manager AND AWS Shield Advanced.
+
+9.  <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714706149/waf-menu-240502-356x866_d8pwhm.png"><img align="right" alt="waf-menu-240502-356x866.png" width="150" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714706149/waf-menu-240502-356x866_d8pwhm.png"></a>AWS has a "classic" WAF. But we use "WAF" on the top of the menu, which is referenced in <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">AWS documentation as WAFv2 (version 2)</a>.
 
 10. Although Web ACLs are global, the region where resources the WAF acts on needs to be specified.
 
@@ -245,7 +261,7 @@ sudo systemctl restart apache2
     In the sample video, select "Regional resources" for the Application Load Balancer defined earlier. Next.
 
     NOTE: The WAF can handle HTTP protocol Requests going into <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">several other AWS services</a> not applicable to this example:
-    * Amazon API Gateway REST API (to mobile apps)
+    * Amazon API Gateway REST API (to mobile apps) <a target="_blank" href="https://docs.aws.amazon.com/securityhub/latest/userguide/apigateway-controls.html#apigateway-4">for FSBP</a>
     * AWS App Runner service
     * AWS AppSync GraphQL API
     * Amazon Cognito user pool
@@ -279,7 +295,7 @@ sudo systemctl restart apache2
     
 16. Toggle the "Add to web ACL" associated with each Rule set applicable to your environment.
 
-    * <strong>Amazon IP reputation list</strong> provides a minimal protection against known bot networks. "Amazon Threat Intelligence" is one of several groups that constantly monitor the internet for them.
+    * <strong>Amazon IP reputation list</strong> is compiled by the "Amazon Threat Intelligence" group protecting the amazon.com shopping site.<br /><br />PROTIP: Whether a particular IP addresses is malicious is a dynamic situation, changing all the time.
 
     * <strong>Core rule set</strong> for what <a target="_blank" href="https://wilsonmar.github.io/owasp-testing">OWASP has identified among Top 10 vulnerabilities in web applications</a>. Notice that the 700 units make it among the most compute intensive of choices.
 
@@ -288,6 +304,8 @@ sudo systemctl restart apache2
     * Activate one for the operating system (POSIX, Windows).
 
     * Activate one for the language you use (PHP, WordPress, etc.).
+
+    * PROTIP: Before blocking traffic from <strong>VPNs</strong>, survey everyone in your organization to see if they use one to protect themselves from someone in Starbucks listening in which they login to work or their bank. If so, specify a specific VPN they can use and put that VPN's addresses in the allowlist.
 
 17. Consider capacity limits.
 
@@ -302,7 +320,29 @@ sudo systemctl restart apache2
     
     QUESTION: Please correct me if I'm wrong with this.
 
-18. Consider costs. PROTIP: Please refer to the spreadsheet I created, available on Gumroad.
+    ### Alerts when limits are reached
+    
+    PROTIP: <strong>Raise an alert</strong> about incoming requests which AWS WAF is not able to fully analyze due to it being <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/limits.html">limited </a> on how much it can process at one time:
+
+    * Maximum 64 KB in the web request body that can be inspected for CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access protections
+    * Maximum 4 KB in the custom response body content for a single custom response definition 	
+    * Maximum 50K in the combined size of all response body content for a single rule group or a single web ACL
+    * Maximum 10 custom headers for a single custom response definition 	
+    <br /><br />
+
+    <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/limits.html">REMEMBER</a>:
+    AWS has defined a Quota for the Maximum number of calls of 
+    * <strong>5 request per second</strong> to any individual Get or List action, if no other quota is defined for it 
+    * <strong>1 request per second</strong> specifically to GetWebACLForResource and ListResourcesForWebACL (which can return a lot of information)
+    * <strong>1 request per second</strong> to any individual Create, Put, or Update action, if no other quota is defined for it 
+    * <strong>2 request every 2 seconds</strong> specifically to AssociateWebACL and DisassociateWebACL
+    <br /><br />
+
+    <hr />
+
+18. Consider costs. 
+
+    PROTIP: Please refer to the spreadsheet I created, available on Gumroad. ???
 
     AWS charges for each ACL processed within each hour at the equivalent of <strong>$5 per month</strong> per region, or $0.0925925925926 (about 1 cent) per hour, assuming processing occuring 18 hours each of 30 days (540 hours). 
     At the maximum of 100 WAF ACLs, that's $50/month for each region.
@@ -381,6 +421,7 @@ sudo systemctl restart apache2
     * Cloudflare
     * Fastly
     * Rapid7 <a target="_blank" href="https://www.youtube.com/watch?v=L9-K1DPYFuE">VIDEO</a>: vs RASP (Runtime Application Self-Protection) that monitors built into the application itself  provide detailed visibility to detect and actively block attacks in real-time, such as terminating a user session, shutting down the application, or alerting security teams.
+    * AppTrana WAAP by <a target="_blank" href="https://www.indusface.com/">Indusface</a>
     <br /><br />
     
 
@@ -390,6 +431,9 @@ sudo systemctl restart apache2
 
     PROTIP: Verify each mitigation you add to ensure it actually works.
     For example, use the "known-bad" app DVWA (Damn Vulnerable Web Application) <a target="_blank" href="https://wilsonmar.github.io/owasp-testing/">described in my article on OWASP Testing</a>  to <a target="_blank" href="https://www.youtube.com/watch?v=WxwCGj5TXl8&t=1m13s&list=PLZmbPz-KgDtgJLfsdLmSHIXyv0TlQ-CJj&index=1">VIDEO: verify whether F5's WAF works</a>.
+
+    <a target="_blank" href="https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/run-regular-simulations.html">PROTIP</a>: 
+    Many security standards, including <a target="_blank" href="https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html">AWS Well-Architected Foundational Security Best Practices (FSBP) standard</a> require that simulations to mimic threat actors’ tactics, techniques, and procedures (TTPs) be repeated on a regular schedule. This is to verify your organization's <a target="_blank" href="https://aws.amazon.com/architecture/security-identity-compliance/">incident investigation response</a> capabilities.
 
 
     ### Analyze Logs
@@ -404,14 +448,14 @@ sudo systemctl restart apache2
 
 22. Scroll down to the "Default web ACL action for requests that don't match any rule". 
 
-    IMPORTANT: The selection of "Allow" or "Block" is fundamental to the <strong>maturity level</strong> of the organization running AWS.
+    PROTIP: The selection of default "Allow" or "Block" is fundamental to the <strong>maturity level</strong> of the organization running AWS. The red pill or the black pill.
 
-    NOTE that those two replaces "Whitelist" and "Blacklist" for more cultural sensitivity.
+    NOTE: The words "Allowlist" and "Blocklist" has replaced "Whitelist" and "Blacklist" for more cultural sensitivity.
 
-    Selecting <strong>"Allow" by default</strong> means relying completely on Rules defined to safeguard traffic.
-    That's not terrific but also terrifying. Miss one and your whole operation is open to hackers.
+    Selecting <strong>"Allow" by default</strong> means relying completely on Rules defined to safeguard traffic. 
+    That's not terrific but also terrifying. Miss one and you open your whole operation to hackers.
 
-    Selecting <strong>"Block" by default</strong> means that each user and app must be specifically specified, and unspecified when each user leaves the team or organization. Those who use VPNs would change the IP address frequently. That also will likely result in some complaints from developers and users. That requires more automation and staffing of a 24/7 operation. But mistakes with this approach doesn't open your whole environment to hackers. 
+    Selecting <strong>"Block" by default</strong> means that each user and app must be specifically specified, and unspecified quickly as each user leaves the team or organization. Those who use VPNs would change the IP address frequently. That also will likely result in some complaints from developers and users. That requires more automation and staffing of a 24/7 operation. But mistakes with this approach doesn't open your whole environment to hackers. 
 
     PROTIP: This is a good discussion prompt in an interview. 
     How did the candidate's previous employer collect IP addresses dynamically to open up the network to each downline service and user?
@@ -432,13 +476,19 @@ sudo systemctl restart apache2
 
     ## More than HTTP/IP traffic
     
-    At the Application layer, WAF can examine all protocols to detect security issues:
+    WAF can examine all protocols to detect exploits of vulnerabilities in network protocol handling:
     
-    * DNS per-request login by https://www.f5.com/glossary/web-application-firewall-waf
+    * DNS per-request login (see https://www.f5.com/glossary/web-application-firewall-waf)
 
     * FTP (File Transfer Protocol)
 
     * SMTP time protocol UTP flood
+
+    * TCP (layer 4) "Syn Flood" with a large number of TCP connection requests but doesn’t complete the connection handshake. Done to fill the server’s connection queue to prevent it from accepting legitimate connections.
+
+    * UDP (layer 4) "UDP Flood" with a high volume of UDP packets to overwhelm network resources, causing the server to become unresponsive to legitimate traffic.
+
+    * ICMP server status (layer 3) "Ping of Death" sendds oversized or malformed ICMP packets
     
 23. Select the vulnerabilities to catch.
 
@@ -509,20 +559,10 @@ tracking of who made what change, and when. There are two approaches:
    * <a href="#CF">Cloud Formation by AWS</a>
    <br /><br />
 
-They both reference the (at last count) 54 actions defined for AWS WAFV2 API from ovember, 2019 at:
-https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_AWS_WAFV2.html
-and 128 datatypes at
-https://docs.aws.amazon.com/waf/latest/APIReference/CommonErrors.html
-See the Developer Guide at
-https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html
+They both reference the (at last count) <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/APIReference/API_Operations_AWS_WAFV2.html">54 actions defined for AWS WAFV2 API from ovember, 2019</a>
+and <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/APIReference/CommonErrors.html">128 datatypes</a>.
+See the <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html">AWS WAF Developer Guide</a>.
 
-<a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/limits.html">REMEMBER</a>:
-AWS has defined a Quota for the Maximum number of calls of 
-* <strong>5 request per second</strong> to any individual Get or List action, if no other quota is defined for it 
-* <strong>1 request per second</strong> specifically to GetWebACLForResource and ListResourcesForWebACL (which can return a lot of information)
-* <strong>1 request per second</strong> to any individual Create, Put, or Update action, if no other quota is defined for it 
-* <strong>2 request every 2 seconds</strong> specifically to AssociateWebACL and DisassociateWebACL
-<hr />
 
 <a name="Terraform"></a>
 
@@ -571,7 +611,7 @@ variable "aws_lb_arn" {
 
 ??? aws_wafv2_web_acl.WafWebAcl
 
-The Terraform module contains:
+The Terraform module contains (for <a target="_blank" href="https://docs.aws.amazon.com/securityhub/latest/userguide/waf-controls.html#waf-12">FSBP</a>)
 
 <pre>
 resource "aws_cloudwatch_log_group" "WafWebAclLoggroup" {
@@ -598,6 +638,18 @@ resource "aws_wafv2_web_acl_association" "WafWebAclAssociation" {
 
 <hr />
 
+<a name="Lambda"></a>
+
+## Dynamic Lambda
+
+<a target="_blank" href="https://www.citrusconsulting.com/aws-web-application-firewall-waf/">
+This</a> diagram summarizes how a website's traffic can be monitored to dynamically create WAF rules necessary using AWS Lambda "serverless" functions.
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714911310/waf-aws-flow-simp-777x517_umvppu.png"><img alt="waf-aws-flow-simp-777x517.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714911310/waf-aws-flow-simp-777x517_umvppu.png"></a>
+
+
+<hr />w
+
 <a name="CF"></a>
 
 ## Security Automations for AWS WAF
@@ -605,7 +657,7 @@ resource "aws_wafv2_web_acl_association" "WafWebAclAssociation" {
 AWS offers a managed service: <a target="_blank" href="https://aws.amazon.com/solutions/implementations/security-automations-for-aws-waf/">"Security Automations for AWS WAF"</a> 
 to deploy AWS WAF rules and IP Sets (preconfigured by AWS people) to filter common web-based attacks.
 
-The <a target="_blank" href="https://github.com/aws-solutions/aws-waf-security-automations">diagram below</a> shows  the solution using Python-driven <strong>Lambda functions</strong>:
+The <a target="_blank" href="https://github.com/aws-solutions/aws-waf-security-automations">diagram below</a> shows the solution using Python-driven <strong>Lambda functions</strong>:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714771405/waf-aws-cf-arch-1019x1029_qtdesv.png"><img alt="waf-aws-cf-arch-1019x1029.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714771405/waf-aws-cf-arch-1019x1029_qtdesv.png"></a>
 
@@ -684,6 +736,10 @@ https://www.gartner.com/reviews/market/cloud-web-application-and-api-protection/
 <hr />
 
 ## References:
+
+* <a target="_blank" href="https://trailhead.salesforce.com/content/learn/modules/aws-cloud-security/learn-about-aws-security-services">On Salesforce Trailhead: About AWS Security Services</a>
+* <a target="_blank" href="https://trailhead.salesforce.com/content/learn/modules/aws-cloud-security/protect-against-dos-and-ddos-attacks-with-aws-shield">Protect Against DOS and DDoS Attacks with AWS Shield</a>
+* <a target="_blank" href="https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html">"AWS Best Practices for DDoS Resiliency"</a>
 
 * Advanced WAF https://www.youtube.com/watch?v=HBbDKBV4QW0
 https://www.youtube.com/watch?v=WxwCGj5TXl8&list=PLZmbPz-KgDtgJLfsdLmSHIXyv0TlQ-CJj&pp=iAQB
