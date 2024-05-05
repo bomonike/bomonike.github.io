@@ -1,4 +1,24 @@
-mrrobot.md
+---
+layout: post
+date: "2024-05-04"
+file: "waf"
+title: "WAF"
+excerpt: "Web Application Firewall."
+tags: [flood, perftest, selenium, testing, playwright]
+image:
+# flood-the-internet-wall-1900x500-105703.jpg
+  feature: https://user-images.githubusercontent.com/300046/59104048-b4980880-88ed-11e9-9a93-c19baaef18ab.jpg
+  credit: AttendantDesign.com
+  creditlink: https://attendantdesign.com/fake-tsunami-films-flood-internet/
+comments: true
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
+Here are my notes about the AP® (Advanced Placement) Computer Science exams given in the United States.
+
+{% include whatever.html %}
 
 The idea for this article came to me while re-watching the TV series <a target="_blank" href="https://www.imdb.com/title/tt4158110/?ref_=fn_al_tt_1">Mr. Robot (from 2015)</a> now streaming on <a target="_blank" href="https://www.amazon.com/gp/video/detail/0RV4BHIBUTM2BBF34OPWMYULXE/ref=atv_dl_rdr?tag=justus1ktp-20">Amazon Prime</a>.
 
@@ -362,6 +382,7 @@ sudo systemctl restart apache2
     * <a target="_blank" href="https://www.gartner.com/reviews/market/cloud-web-application-and-api-protection/vendor/akamai/product/app-and-api-protector">Akamai</a>
     * Cloudflare
     * Fastly
+    * Rapid7 <a target="_blank" href="https://www.youtube.com/watch?v=L9-K1DPYFuE">VIDEO</a>: vs RASP (Runtime Application Self-Protection) that monitors behavior in order to detect and block attacks in real-time.
     <br /><br />
     
 
