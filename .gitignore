@@ -1,0 +1,12 @@
+.DS_Store
+_future
+_site
+_asset_bundler_cache
+.sass-cache
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
+node_modules
+.jekyll-metadata
+.dir
