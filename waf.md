@@ -191,13 +191,13 @@ Using your default browser:
 
 4. View <a target="_blank" href="https://www.youtube.com/watch?v=FHRXXrQ765M" title="Premiered Oct 26, 2023">This video</a> by <a target="_blank" href="https://www.linkedin.com/in/rahul-wagh/">Rahul Wagh</a> on how to, step-by-step, manually to setup a VPC, Internet gateway, Subent, Route table. Launch an Ubuntu t2.micro EC2 Instances with an Apache web server invoking <a target="_blank" href="https://www.youtube.com/watch?v=FHRXXrQ765M&t=9m21s">these commands</a> on start:
 
-   ```#!/bin/bash
+   <pre>#!/bin/bash
 yes | sudo apt update
 yes | sudo apt install apache2
-echo "<h1>Server Details</h1><p><strong>Hostname:</strong> ${hostname}
-</p><p><strong>IP Address:</strong> $(hostname -l | cut -d' ' -f1)</p>" > /var/www/html/index.html
+echo "&LT;h1>Server Details&LT;/h1>&LT;p>&LT;strong>Hostname:&LT;/strong> ${hostname}
+&LT;/p>&LT;p>&LT;strong>IP Address:&LT;/strong> $(hostname -l | cut -d' ' -f1)&LT;/p>" > /var/www/html/index.html
 sudo systemctl restart apache2
-   ```
+   </pre>
 
    WARNING: This is the simplest verification of the simplest mitigation.
    See the section about enterprise-level <a href="#MitigationTesting">Mitigation Testing</a> below.
