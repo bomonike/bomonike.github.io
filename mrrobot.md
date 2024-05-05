@@ -382,7 +382,7 @@ sudo systemctl restart apache2
     * <a target="_blank" href="https://www.gartner.com/reviews/market/cloud-web-application-and-api-protection/vendor/akamai/product/app-and-api-protector">Akamai</a>
     * Cloudflare
     * Fastly
-    * Rapid7 <a target="_blank" href="https://www.youtube.com/watch?v=L9-K1DPYFuE">VIDEO</a>: vs RASP (Runtime Application Self-Protection) that monitors behavior in order to detect and block attacks in real-time.
+    * Rapid7 <a target="_blank" href="https://www.youtube.com/watch?v=L9-K1DPYFuE">VIDEO</a>: vs RASP (Runtime Application Self-Protection) that monitors built into the application itself  provide detailed visibility to detect and actively block attacks in real-time, such as terminating a user session, shutting down the application, or alerting security teams.
     <br /><br />
     
 
