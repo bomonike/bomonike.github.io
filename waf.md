@@ -16,13 +16,11 @@ comments: true
 {% include l18n.html %}
 {% include _toc.html %}
 
-Here are my notes about the AP® (Advanced Placement) Computer Science exams given in the United States.
-
 {% include whatever.html %}
 
 The idea for this article came to me while re-watching the TV series <a target="_blank" href="https://www.imdb.com/title/tt4158110/?ref_=fn_al_tt_1">Mr. Robot (from 2015)</a> now streaming on <a target="_blank" href="https://www.amazon.com/gp/video/detail/0RV4BHIBUTM2BBF34OPWMYULXE/ref=atv_dl_rdr?tag=justus1ktp-20">Amazon Prime</a>.
 
-I think a big reason for the popularity of the show (rated 8.5/10) is due to its <a target="_blank" href="https://www.imdb.com/name/nm7409899/">technical advisor</a> -- cybersecurity superstar <a target="_blank" href="https://www.linkedin.com/in/michael-bazzell-a83572122/">Michael Bazzell</a>, whose <a target="_blank" href="https://inteltechniques.com/">https://inteltechniques.com</a> -- my most useful and thorough resource on defending privacy.
+I think a big reason for the popularity of the show (rated 8.5/10) is due to its <a target="_blank" href="https://www.imdb.com/name/nm7409899/">technical advisor</a> -- cybersecurity superstar <a target="_blank" href="https://www.linkedin.com/in/michael-bazzell-a83572122/">Michael Bazzell</a>, whose <a target="_blank" href="https://inteltechniques.com/">https://inteltechniques.com</a> is my most useful and thorough resource on defending privacy.
 
 At the end of this deep-dive article, the key takeaway from this article should be about how Developers, Security, Network Engineers, Performance Engineers, Operations, Customer Support, and others must go out of their way to help each other rather than being isolated cogs who don't feel a need to actively collaborate with others.
 
