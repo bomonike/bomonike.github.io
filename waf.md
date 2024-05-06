@@ -399,7 +399,7 @@ sudo systemctl restart apache2
 
     ### Other vendors
 
-21. to click the toggle icon for <strong>each</strong> rule group you want to add to your Web ACL.
+21. Click the toggle icon for <strong>each</strong> rule group you want to add to your Web ACL, then click the orange "Add rule" at the bottom.
 
     PROTIP: I've added to each vendor name a link to its <a target="_blank" href="https://www.gartner.com/reviews/market/cloud-web-application-and-api-protection">Gartner Peer Insights page for Cloud Web Application and API Protection</a> and <a target="_blank" href="https://www.trustradius.com/">TrustRadius</a>, <a target="_blank" href="https://upcity.com/cybersecurity">Upcity</a> summarizes reviews of cybersecurity companies (everyone gets 5 stars).etc.
 
@@ -424,7 +424,6 @@ sudo systemctl restart apache2
     * AppTrana WAAP by <a target="_blank" href="https://www.indusface.com/">Indusface</a>
     <br /><br />
     
-
     <a name="MitigationTesting"></a> 
 
     ### Mitigation Testing
@@ -435,16 +434,6 @@ sudo systemctl restart apache2
     <a target="_blank" href="https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/run-regular-simulations.html">PROTIP</a>: 
     Many security standards, including <a target="_blank" href="https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html">AWS Well-Architected Foundational Security Best Practices (FSBP) standard</a> require that simulations to mimic threat actors’ tactics, techniques, and procedures (TTPs) be repeated on a regular schedule. This is to verify your organization's <a target="_blank" href="https://aws.amazon.com/architecture/security-identity-compliance/">incident investigation response</a> capabilities.
 
-
-    ### Analyze Logs
-
-    Within "Web ACL" GUI there is a Query editor. For example: <a target="_blank" href="https://www.youtube.com/watch?v=8pGS9YXnlJw&t=8m15s">VIDEO</a>:
-
-    <pre>fields action, @timestamp, @message
-    | filter httpRequest.clientIp="220.255.215.130"
-    | sort @timestamp desc
-    | limit 20
-    </pre>
 
 22. Scroll down to the "Default web ACL action for requests that don't match any rule". 
 
@@ -473,6 +462,9 @@ sudo systemctl restart apache2
 
     This would require storing the IPs of known-slow users can be tracked so that they are exempted when blocking IP addresses which respond slower than a cutoff threshold.
 
+22. Set Rule Priority. Drag and drop the highest priority rule on top of the list.
+23. Click the orange "Create Web ACL".
+
 
     ## More than HTTP/IP traffic
     
@@ -490,7 +482,7 @@ sudo systemctl restart apache2
 
     * ICMP server status (layer 3) "Ping of Death" sendds oversized or malformed ICMP packets
     
-23. Select the vulnerabilities to catch.
+24. Select the vulnerabilities to catch.
 
     ### WAF ACL Rules for OWASP
 
@@ -516,7 +508,20 @@ sudo systemctl restart apache2
 
     ???
 
-24. Switch to a Terminal to check WCU requirements for a set of rules:
+25. Run with "Check".
+26. Configure CloudFront to "Enable Security protections". Select "Use monitor mode" and "Use existing WAF configuration". See <a target="_blank" href="https://www.youtube.com/watch?v=PCqx7MQsmwY&t=12m9s">VIDEO</a> by <a target="_blank" href="https://www.linkedin.com/in/justin-kurpius-6a04538/">Justin Kurpius</a>
+
+    ### Analyze Logs
+
+    Within "Web ACL" GUI there is a Query editor. For example: <a target="_blank" href="https://www.youtube.com/watch?v=8pGS9YXnlJw&t=8m15s">VIDEO</a>:
+
+    <pre>fields action, @timestamp, @message
+    | filter httpRequest.clientIp="220.255.215.130"
+    | sort @timestamp desc
+    | limit 20
+    </pre>
+
+26. Switch to a Terminal to check WCU requirements for a set of rules:
 
     <pre>aws wafv2 check-capacity</pre>
 

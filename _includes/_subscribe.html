@@ -1,0 +1,36 @@
+<!-- _includes/_subscribe.html added into _layouts/page.html referencing subscrib: yes in _config.yml
+and CSS specified in _includes/_head.html
+Alt from http://codepen.io/SaijoGeorge/pen/oLgQKB for use with emailOctopus 
+-->
+<div class="email-octopus-form-wrapper">
+<h2 class="email-octopus-heading">Subscribe:</h2>
+<p class="email-octopus-success-message"></p>
+<p class="email-octopus-error-message"></p>
+<form method="post" action="https://emailoctopus.com/lists/68312c04-643d-11e6-b4a1-06ef9e0a2bd5/members/external-add" class="email-octopus-form">
+<div class="email-octopus-form-row">
+<label>Email address (required)</label>
+<input type="email" name="emailAddress" class="email-octopus-email-address">
+</div>
+<div class="email-octopus-form-row">
+<label>First name</label>
+<input type="text" name="firstName" class="email-octopus-first-name">
+</div>
+<div class="email-octopus-form-row">
+<label>Last name</label>
+<input type="text" name="lastName" class="email-octopus-last-name">
+</div>
+<div class="email-octopus-form-row-hp">
+ 
+<input type="text" name="hp68312c04-643d-11e6-b4a1-06ef9e0a2bd5" autocomplete="off" value="">
+</div>
+<div class="email-octopus-form-row-subscribe">
+<input type="hidden" name="successRedirectUrl" class="email-octopus-success-redirect-url" value="">
+<button type="submit">Subscribe</button>
+</div>
+</form>
+<div class="email-octopus-referral">
+Powered by <a href="https://emailoctopus.com/">EmailOctopus</a>
+</div>
+</div>
+<script data-rocketsrc="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" type="text/rocketscript" data-rocketoptimized="true"></script>
+<script data-rocketsrc="https://emailoctopus.com/bundles/emailoctopuslist/js/formEmbed.js" type="text/rocketscript" data-rocketoptimized="true"></script>
