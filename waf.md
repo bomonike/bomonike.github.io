@@ -16,45 +16,77 @@ comments: true
 {% include l18n.html %}
 {% include _toc.html %}
 
-{% include whatever.html %}
-
 The idea for this article came to me while re-watching the TV series <a target="_blank" href="https://www.imdb.com/title/tt4158110/?ref_=fn_al_tt_1">Mr. Robot (from 2015)</a> now streaming on <a target="_blank" href="https://www.amazon.com/gp/video/detail/0RV4BHIBUTM2BBF34OPWMYULXE/ref=atv_dl_rdr?tag=justus1ktp-20">Amazon Prime</a>.
 
 I think a big reason for the popularity of the show (rated 8.5/10) is due to its <a target="_blank" href="https://www.imdb.com/name/nm7409899/">technical advisor</a> -- cybersecurity superstar <a target="_blank" href="https://www.linkedin.com/in/michael-bazzell-a83572122/">Michael Bazzell</a>, whose <a target="_blank" href="https://inteltechniques.com/">https://inteltechniques.com</a> is my most useful and thorough resource on defending privacy.
 
-At the end of this deep-dive article, the key takeaway from this article should be about how Developers, Security, Network Engineers, Performance Engineers, Operations, Customer Support, and others must go out of their way to help each other rather than being isolated cogs who don't feel a need to actively collaborate with others.
-
-This article identifies where that collaboration can occur.
-
-PROTIP: The root cause of vulnerabilities within enterprises is <strong>complacency</strong> -- a lack of the collaboration needed to be proactive toward preparing for war, manifested as DoS (Denial of Service) attacks.
-
-The most malicious adversaries hit during the worst period of the year [black friday / cyber monday]).
 
 ## Are You Dead Yet?
 
-Minutes into the psycho-technical series' first episode, one character mentions a <strong>"R.U.D.Y. attack"</strong>. 
+Minutes into the psycho-technical series' first episode, one asks about a <strong>"R.U.D.Y. attack"</strong>. 
 
-So below is how I would "mansplain" what that means (to excruiciating detail), instead of watching the show. ;)
+So below is how I would "mansplain" what that means (to excruiciating detail), instead of watching the show.
 
 RUDY is an acronymn for <strong>"aRe yoU Dead Yet"</strong> -- the name of a tool hackers use to create Denial of Service attacks. (An example is at <a target="_blank" href="https://github.com/darkweak/rudy">https://github.com/darkweak/rudy</a>, written in the Go language). 
 
 A <a target="_blank" href="https://en.wikipedia.org/wiki/Slowloris_(computer_security)
 ">similar tool</a> is at <a target="_blank" href="https://github.com/gkbrk/slowloris">https://github.com/gkbrk/slowloris</a>, written in the Python language. The program is named after <a target="_blank" href="https://www.wikiwand.com/en/Slow_loris">slow lorises</a>, a group of primates known for their slow movement. It's exhausting watching them.
 
+A single hacker machine can use the tools to take down even a large targeted Apache web server because the attack requires minimal bandwidth.
 
 ## Low and Slow
 
-A single hacker machine can use the tools to take down even a large targeted Apache web server because the attack requires minimal bandwidth.
-
 Unlike "volumetric" DoS (Denial of Service) attacks which aim to <strong>overwhelm</strong> (flood) target servers with traffic from many malicious clients, <strong>"low and slow"</strong> attack aims to exhaust server resources through long-running, incomplete requests.
 
-Such an attack is difficult to detect using conventional DDoS detection mechanisms which expect a high volume and fast rate of traffic.
+"Low and slow" attacks are difficult to detect using conventional DDoS detection mechanisms which expect a high volume and fast rate of traffic.
 
 The exploit "sends long HTTP POST requests to the target server, but breaks the request body into small packets sent at a very slow rate (e.g. one byte every 10 seconds). This slow rate of sending the request body prevents the server from closing the connection, forcing it to keep the connection open and wait for the full request."
 
-Apache web servers have a finite pool of processing threads available to handle connections with the clients it serves. When the maximum number of possible connections that a server can handle is reached, additional connections cannot be established. And thus a denial-of-service attack is successful.
+Each Apache web server has a finite pool of processing threads available to handle connections with the clients it serves. When the maximum number of possible connections that a server can handle is reached, additional connections cannot be established. And thus a denial-of-service attack is successful.
 
-That's why I have a feeling we'll see state-sponsored actors use such tools for cyber warfare - to shut down websites of value to society.
+## Increasing capacity may not help
+
+Administrators can buy some time by adding additional servers and, on each Apache server, increase the number of MaxRequestWorkers in the mpm_prefork.conf configuration file. 
+
+However the number of attackers can also increase. In a DDoS (Distributed Denial of Service) attack, hackers use thousands of devices that have been compromised to direct traffic toward a single site.
+
+
+## Mitigation: Upgrade the Tech
+
+Articles by reverse proxy vendors <a target="_blank" href="https://www.cloudflare.com/learning/ddos/ddos-attack-tools/slowloris/">Cloudflare</a> and <a target="_blank" href="https://www.wallarm.com/what/what-is-slowloris">Wallarm</a> do not mention tech upgrades to more advanced technologies to stop the attacks.
+
+1. Upgrade web server technology from Apache <a target="_blank" href="https://www.nginx.com/blog/nginx-app-protect-denial-of-service-blocks-application-level-dos-attacks/">to NGINX</a> or lightpd which were not designed to be limited with maximum connections. Instead, they use worker threads which has no limit on the number of connections they can handle.
+
+   Unlike with Apache, NGINX/Lighttpd ignore incomplete requests by letting them run in the background, which does not use up system resources.
+
+2. Upgrade from use of HTTP protocol 1.1 to HTTP 2, which does not hold sessions open.
+
+The above advances were available. 
+
+## Dead Inside
+
+"Low and Slow" attacks are not within a supply chain that's beyond the ability for a company to mitigate.
+
+PROTIP: And that's the genius of the "Mr Robot" writers in selecting RUDY as the mechanism for compromise. RUDY can succeed because the company did not implement available mitigations.
+Why? Top executives in the dystopian "Evil Corp" were too focused on bullying others.
+
+"Low and slow" attacks on an organization take advantage of that organization's inability to modernize quickly enough. Implementing the above involves changes to application programming code. 
+
+## Collaborate to modernize
+
+The job of a CTO is to recognize this and rally the organization.
+
+PROTIP: A common root cause enabling vulnerabilities within enterprises is <strong>complacency</strong>due to a lack of the collaboration needed to be proactive toward preparing for war, manifested as DoS (Denial of Service) attacks.
+
+At the end of this deep-dive article, the key takeaway from this article should be about how Developers, Security, Network Engineers, Performance Engineers, Operations, Customer Support, and others must go out of their way to help each other rather than being isolated cogs who don't feel a need to actively collaborate with others.
+
+This article identifies where collaboration can occur.
+
+{% include whatever.html %}
+
+<hr />
+
+The rest of this article examines what can be done to mitigate attacks on legacy Apache web server software. That's because there are likely other systems also vulnerable.x`
 
 ## Monitoring needed
 
@@ -131,26 +163,6 @@ Individual servers can be configured, but hackers have gotten wise to them:
    This would require a program that can track and analyze the behavior of each IP address, which is a daunting task explained below.
 
 
-## Increasing capacity may not help
-
-Administrators can buy some time by adding additional servers and, on each Apache server, increase the number of MaxRequestWorkers in the mpm_prefork.conf configuration file. 
-
-However the number of attackers can also increase. In a DDoS (Distributed Denial of Service) attack, hackers use thousands of devices that have been compromised to direct traffic toward a single site.
-
-
-## Mitigation: Upgrade the Tech
-
-Articles by reverse proxy vendors <a target="_blank" href="https://www.cloudflare.com/learning/ddos/ddos-attack-tools/slowloris/">Cloudflare</a> and <a target="_blank" href="https://www.wallarm.com/what/what-is-slowloris">Wallarm</a> do not mention tech upgrades to more advanced technologies to stop such attacks:
-
-1. Upgrade from Apache <a target="_blank" href="https://www.nginx.com/blog/nginx-app-protect-denial-of-service-blocks-application-level-dos-attacks/">to NGINX</a> and lightpd web servers which are not designed to have  maximum connections. Instead, they use worker threads which has no limit on the number of connections they can handle. Monitors of Apache connections show that the majority of the active connections are 'Sending' or 'Receiving' data from the client. 
-
-   Unlike with Apache, NGINX/Lighttpd ignore incomplete requests by letting them run in the background, which does not use up system resources.
-
-2. Upgrade from use of HTTP protocol 1.1 to HTTP 2, which does not hold sessions open.
-
-PROTIP: The above advances have been available for several years. So essentially, "low and slow" attacks on an organization take advantage of that organization's inability to modernize quickly enough. Implementing the above involves changes to application programming code. The job of a CISO is to recognize this and rally the organization from the top down.
-
-The rest of this article examines what can be done technically with legacy Apache web server software.
 
 ## But we have an IPS
 
@@ -509,6 +521,7 @@ sudo systemctl restart apache2
     ???
 
 25. Run with "Check".
+
 26. Configure CloudFront to "Enable Security protections". Select "Use monitor mode" and "Use existing WAF configuration". See <a target="_blank" href="https://www.youtube.com/watch?v=PCqx7MQsmwY&t=12m9s">VIDEO</a> by <a target="_blank" href="https://www.linkedin.com/in/justin-kurpius-6a04538/">Justin Kurpius</a>
 
     ### Analyze Logs
