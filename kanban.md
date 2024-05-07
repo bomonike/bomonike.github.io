@@ -1,14 +1,16 @@
 kanban.md
 
-## What's KanBan?
-
 If I'm working with small team or just by myself, I use the Kanban system to stay focused.
 
 I've found that the KanBan system helps me focus and collaborate better with others.
 
-And that's not only because I've worked at Toyota.
+And that's not only because I've worked at Toyota, where Kanban was made famous.
+
+## What's KanBan?
+
 Kanban is a japanese word coined in the 1950s by Taiichi Ohno, an industrial engineer at Toyota.
-Use of Kanban enabled the car manufacturer to achieve large efficiency gains in the 1950s and beyond.
+
+Use of Kanban enabled the car manufacturer to achieve large efficiency and quality gains in the 1950s and beyond.
 
 Instead of computers, the Kanban system uses a card to represent each product (that generates value) traveling through the production line. It's a just-in-time scheduling system because movement of a card visually signals the need to create that part. 
 
@@ -78,6 +80,12 @@ so is ideal for team members working in different time zones around the world.
 
    Trello puts a red dot on items with new Note activity. Since that dot goes away after viewing, an additional reply such as "Noted" or "Agreed" is not necessary.
 
+1. If you get <strong>stuck</strong> on an item on Doing, instead of wasting time going in circles and getting frustrated, be productive on the next item in the list. Add "BLOCKER:" at the beginning of the blocked item's name and move it back to "Next To Do".
+
+   Others may be able to help troubleshoot it.
+
+   So in a note within the blocked item, paste the error message output by the app. Define how to recreate the error and what you've tried.
+
 1. When a task from the Doing column is completed, move it to the "Review/Test" column so someone else performs the Quality Control.
 
    RULE: Each team member should prioritize performing Quality Control in order to get items to "Done" as soon as possible.   
@@ -88,13 +96,13 @@ so is ideal for team members working in different time zones around the world.
 
    PROTIP: Marking items as done prematurely is a form of lying. Closing an item can be used to "sweep things under the carpet" and create invisible "Technical Debt".
 
-1. The <strong>Current ToDo</strong> list is for tasks which the team aims to do within the <strong>current window</strong>.
+1. The <strong>Next ToDo</strong> list tasks which the team aims to do within the <strong>current window</strong>.
 
    Kanban is particularly useful for those with multi-disciplinary skills. Workers can pick to work any task from the <strong>top</strong> of the Current ToDo list any task they have been cleared to do (front-end UI, database, utilities, etc.).
 
    Thus, Kanban is favored among "Agile" teams which need to immediately jump on new requirements added at any time. 
 
-1. If the team does have a forward horizon, the current ToDo list can first begin as a "Upcoming ToDo" list compiled by the Project/Product Manager.
+1. If the team does have a forward horizon, the Next ToDo list can first begin as a "Upcoming ToDo" list compiled by the Project/Product Manager.
    
    Before the team meets to promote the Upcoming ToDO to Current ToDo, discussion occurs within Notes. There is a "Discuss" item at the top of the Upcoming list for what applies to all tasks.
 
@@ -111,12 +119,6 @@ so is ideal for team members working in different time zones around the world.
    Its items may be link to a Product Roadmap. Names are usually not assigned unless an item only has one possible person who can do it, which presents a risk to be considered.
 
 1. Optionally, time stamps the system automatically tracks enable Notes in the template to be updated with <strong>actual times</strong> of task completed during previous iterations, presented as a histogram if there are enough repeats. Several histograms can be presented for each level of difficulty.
-
-1. If you get stuck on an item, add "BLOCKER:" at the beginning of an item's name and move it back to "To Do".
-
-   Don't waste time going in circles. 
-   Others may be able to help on it.
-   In a note, paste the error message and what you've tried.
 
 1. Each team member should look at the board occassionally to pick up items unassigned.
 
