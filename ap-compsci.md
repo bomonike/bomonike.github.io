@@ -20,12 +20,12 @@ comments: true
 
 ## Alternatives
 
-In order to gain a higher chance for admission into top universities,
-to have more freedom to take classes,
-to take more advanced classes sooner, 
-to graduate sooner,
-to build a more impressive resume for jobs,
-students in high school can earn college credits while still in high school.
+To gain a higher chance for admission into top universities,<br />
+to have more freedom to take classes,<br />
+to take more advanced classes sooner, <br />
+to graduate sooner,<br />
+to build a more impressive resume for jobs,<br />
+students, while still in high school, can earn college credits:
 
 1. Take classes on-line at colleges which accept high school students:
 
@@ -262,6 +262,137 @@ The College Board conducts an Audit of curriculum plans.
    * <a target="_blank" href="https://apcourseaudit.inflexion.org/ledger/">Schools that have passed the audit</a>
    <br /><br />
 
+
+
+## Timeline for CSP students
+
+1. Develop Digital Portfolio
+
+1. Create Digital Portfolio video
+
+1. Create Program code into your Digital Portfolio
+
+   A list, A function, with a parameter. Within that function, a FOR statement that iterates through a LIST and through an If/Else statement.
+
+   <a target="_blank" href="https://docs.google.com/spreadsheets/d/1Ava1nIgDLbdxdtslVYHEWuWnpXbOWb7WhRbkIkC7PLI/edit?pli=1#gid=0">Mr. Rhodes' Awesome list</a> 2024 Create Task: Written Response Video: UPDATED 4-17-24
+
+   "Final requirement for the Create Task is submitting 4 code segments. You will use these code segments to answer 4 written response questions the day of the exam. The first two code segments deal with your function. First, you need to paste your ENTIRE function. Second, you need to paste where the function is being called in your program. The final two code segments deal with your list. The first one is your list being created. Second is where that list is receiving or processing information. BIG NOTE HERE. These code segments cannot contain ANY comments!"
+
+   The maximum grade for the AP Create Task is a 6.
+
+1. In a 9-hour closs, create in your Digital Portfolio your PPR (Personalized Project Reference)
+
+   No comments are allowed in the code.
+
+1. On day of exam, answer 70 multi-choice questions in 2 hours for 70% of the grade. It has 6 rubric rows:
+
+   * 57 single-select multiple-choise
+   * 5 single-select with reading passage about a computer innovation
+   * 8 multi-select multi-choice: select 2 answers
+   <br /><br />
+
+1. On day of exam, after multiple choice questions, students have one hour to answer four questions about their PPR: <a target="_blank" href="https://www.youtube.com/watch?v=EuVXyqQ4N7c" title="by Mr. Rhodes">VIDEO 1</a> & <a target="_blank" href="https://www.youtube.com/watch?v=EdaPlqud5b0">2</a> https://www.youtube.com/watch?v=okShNDfIYj0
+   WR 1. Program Design, Function, and Purpose<br />
+   WR 2(a). Algorithm Development<br />
+   WR 2(b). Errors and Testing<br />
+   WR 2(c). Data and Procedural Abstraction<br />
+   <br /><br />
+
+### WR 1. Program Design, Function, and Purpose
+
+Identify an expected user of the program and describes one way the program’s design meets the needs of that identified user.
+
+This question is asking you to Identify a specific user of your app AND describing one way the program’s design meets their specific needs. DO NOT describe what the program does.
+
+AP Example GOOD Answer:
+The user of my game would be children who are trying to learn their colors in another language. The program design is great for children because each color button is filled with the corresponding color for the word. This will make it easy for students who don't know how to read to still use the app to hear the colors in languages.
+
+### WR 2(a). Algorithm Development
+
+Identify the number of times the loop will execute.  This can be constant or generalization of times AND Describe a condition that would cause an infinite loop in your code, if your code cannot, you have to explain how you would modify your code to become an infinite loop.
+
+This question is asking you to determine the number of times the body of the iteration statement will execute.You must also identify a condition that could impede the termination of the iteration statement, potentially resulting in an infinite loop.
+
+AP Example GOOD Answer:
+The loop iterates until time = 0;  The variable time is being updated in another part of the program.  An infinite loop would occur if in this loop time was increased by enough to offset the decrease that is happening in another part of the program or reset to a large enough value to offset the decrease that is happening.  See example #1
+
+
+### WR 2(b). Errors and Testing
+
+Describe a change to the procedure that will result in a run-time error AND explains why the change will result in a run- time error.
+
+This question is asking you to describe a way to cause a runtime error in your code.  If you cannot cause one, you need to describe a way your code can be modified to cause a runtime error.  Runtime errors occur during program execution due to unexpected conditions, while compiler errors occur during the compilation phase due to syntax or reference issues in the code.  
+
+AP Example GOOD Answer:
+A runtime error would occur if instead of printing i, we printed i / (stop - i).  Once i is equal to stop, a divide by 0 run-time error will occur.  See example #3
+
+### WR 2(c). Data and Procedural Abstraction
+
+To count the number of times a certain value appears in your list using the isEqual(value1, value2) procedure
+Steps written in pseudocode, not actual code. Must return a count.
+
+This question is asking for a step-by-step explanation of the algorithm, detailing how to traverse through the list, compare each element with the target value using the isEqual procedure, and increment a count variable for each occurrence of the target value. The explanation should be thorough enough that someone else could understand it well enough to write the code based on your instructions. This includes describing the initialization of variables, the iteration process, the use of the isEqual procedure, the counting mechanism, and returning a count.
+
+AP Example GOOD Answer:
+Set a counter variable count to 0.  Iterate over the elements of the list named myList.  For each element, call isEqual to compare the element from myList to the given value.  If isEquals returns true add 1 to count.  After iterating over every list value, print the value of count.  
+
+### AP CSP Tutorials
+
+<a target="_blank" href="https://www.youtube.com/@DrCodie">Dr Codie</a>
+drcodie.com
+https://www.Alps.Academy/apcspexam
+<a target="_blank" href="https://www.youtube.com/watch?v=zWcts-prp_s&list=PLpeS0xTwoWAtwiXc7QB9D-LrjMtJU9BM4">
+30-day challenge</a>
+
+<a target="_blank" href="https://www.youtube.com/@codology">YouTube: Codology</a>
+
+* https://knowt.com/exams/AP/AP-Computer-Science-Principles
+* https://knowt.com/exams/AP/AP-Computer-Science-A
+
+
+<hr />
+
+## Units for CSA
+
+Computational Thinking Practices:
+
+   * Breaking down problems into smaller parts
+   * Identifying patterns in data
+   * Developing algorithms and instructions to solve problems
+   <br /><br />
+
+Programming and Coding:
+
+   * Learning programming basics like variables, control structures, functions, and data structures in languages like Python or JavaScript
+   * Designing and evaluating computational solutions to problems
+   * Developing and implementing algorithms
+   * Analyzing and testing code
+   <br /><br />
+
+Computer Systems and Networks:
+
+   * Understanding the components and design of the internet and how it affects communication, security, and privacy
+   * Exploring different types of computer networks like client-server and peer-to-peer
+   <br /><br />
+
+Data and Information:
+
+   * Representing information digitally using number systems, encoding, and compression
+   * Storing, manipulating, and visualizing large datasets
+   <br /><br />
+
+Impact of Computing:
+
+   * Investigating the societal and ethical implications of computing innovations
+   * Exploring topics like cybersecurity, privacy, and the effects of computing on various aspects of life
+   <br /><br />
+
+https://www.edx.org/learn/java/purdue-university-ap-computer-science-a-java-programming
+archived. 
+by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-50879427/">Phil Sands</a>
+
+<hr />
+
 ## Curriculum Materials
 
 The College Board recognizes several organizations providing curriculum materials.
@@ -275,8 +406,14 @@ The College Board recognizes several organizations providing curriculum material
 
 * NCyTE.net
 
+* Knowt.com
 
-## Additional 
+   * https://knowt.com/exams/AP/AP-Computer-Science-Principles
+   * https://knowt.com/exams/AP/AP-Computer-Science-A
+
+
+
+## Additional topics
 
 Do the standard curriculum materials enable students to get a job?
 
@@ -356,7 +493,7 @@ https://www.outsystems.com/education-program/
    <a target="_blank" href="https://cs50.harvard.edu/x/2024/syllabus/">Syllabus</a>:
    (the intro to each video is 40 seconds long)
 
-   Week 0 - Scratch<br />
+   Week 0 - Scratch (visual programming)<br />
    Week 1 - C<br />
    Week 2 - Arrays<br />
    Week 3 - Algorithms<br />
@@ -382,6 +519,7 @@ There are now several CS50 courses:
 
    * <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/">CS50 AI with Python</a>
 
+<hr />
 
 ## References
 
@@ -389,260 +527,3 @@ There are now several CS50 courses:
 * https://www.afterschoolalliance.org/policyStateFacts.cfm?state=MT
 * https://4-h.org/programs/tech-changemakers/
 
-
-<hr />
-
-## Teacher Prof Learning
-
-https://apcentral.collegeboard.org/courses/ap-computer-science-principles/professional-learning
-
-https://apcentral.collegeboard.org/professional-learning/summer-institutes/about-summer-institutes
-
-
-## Units for CSA
-
-Computational Thinking Practices:
-
-   * Breaking down problems into smaller parts
-   * Identifying patterns in data
-   * Developing algorithms and instructions to solve problems
-   <br /><br />
-
-Programming and Coding:
-
-   * Learning programming basics like variables, control structures, functions, and data structures in languages like Python or JavaScript
-   * Designing and evaluating computational solutions to problems
-   * Developing and implementing algorithms
-   * Analyzing and testing code
-   <br /><br />
-
-Computer Systems and Networks:
-
-   * Understanding the components and design of the internet and how it affects communication, security, and privacy
-   * Exploring different types of computer networks like client-server and peer-to-peer
-   <br /><br />
-
-Data and Information:
-
-   * Representing information digitally using number systems, encoding, and compression
-   * Storing, manipulating, and visualizing large datasets
-   <br /><br />
-
-Impact of Computing:
-
-   * Investigating the societal and ethical implications of computing innovations
-   * Exploring topics like cybersecurity, privacy, and the effects of computing on various aspects of life
-   <br /><br />
-
-https://www.edx.org/learn/java/purdue-university-ap-computer-science-a-java-programming
-archived. 
-by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-50879427/">Phil Sands</a>
-
-<hr />
-
-## Timeline for students
-
-1. Create Digital Portfolio video
-
-1. Create Program code into your Digital Portfolio
-
-   A list, A function, with a parameter. Within that function, a FOR statement that iterates through a LIST and through an If/Else statement.
-
-   <a target="_blank" href="https://docs.google.com/spreadsheets/d/1Ava1nIgDLbdxdtslVYHEWuWnpXbOWb7WhRbkIkC7PLI/edit?pli=1#gid=0">Mr. Rhodes' Awesome list</a> 2024 Create Task: Written Response Video: UPDATED 4-17-24
-
-   "Final requirement for the Create Task is submitting 4 code segments. You will use these code segments to answer 4 written response questions the day of the exam. The first two code segments deal with your function. First, you need to paste your ENTIRE function. Second, you need to paste where the function is being called in your program. The final two code segments deal with your list. The first one is your list being created. Second is where that list is receiving or processing information. BIG NOTE HERE. These code segments cannot contain ANY comments!"
-
-   The maximum grade for the AP Create Task is a 6.
-
-1. In a 9-hour closs, create in your Digital Portfolio your PPR (Personalized Project Reference)
-
-   No comments are allowed in the code.
-
-1. On day of exam, answer 70 multi-choice questions in 2 hours for 70% of the grade. It has 6 rubric rows:
-
-   * 57 single-select multiple-choise
-   * 5 single-select with reading passage about a computer innovation
-   * 8 multi-select multi-choice: select 2 answers
-   <br /><br />
-
-1. On day of exam, after multiple choice questions, students have one hour to answer four questions about their PPR: <a target="_blank" href="https://www.youtube.com/watch?v=EuVXyqQ4N7c" title="by Mr. Rhodes">VIDEO 1</a> & <a target="_blank" href="https://www.youtube.com/watch?v=EdaPlqud5b0">2</a> https://www.youtube.com/watch?v=okShNDfIYj0
-   WR 1. Program Design, Function, and Purpose<br />
-   WR 2(a). Algorithm Development<br />
-   WR 2(b). Errors and Testing<br />
-   WR 2(c). Data and Procedural Abstraction<br />
-   <br /><br />
-
-
-
-### WR 1. Program Design, Function, and Purpose
-
-Identify an expected user of the program and describes one way the program’s design meets the needs of that identified user.
-
-This question is asking you to Identify a specific user of your app AND describing one way the program’s design meets their specific needs. DO NOT describe what the program does.
-
-AP Example GOOD Answer:
-The user of my game would be children who are trying to learn their colors in another language. The program design is great for children because each color button is filled with the corresponding color for the word. This will make it easy for students who don't know how to read to still use the app to hear the colors in languages.
-
-### WR 2(a). Algorithm Development
-
-Identify the number of times the loop will execute.  This can be constant or generalization of times AND Describe a condition that would cause an infinite loop in your code, if your code cannot, you have to explain how you would modify your code to become an infinite loop.
-
-This question is asking you to determine the number of times the body of the iteration statement will execute.You must also identify a condition that could impede the termination of the iteration statement, potentially resulting in an infinite loop.
-
-AP Example GOOD Answer:
-The loop iterates until time = 0;  The variable time is being updated in another part of the program.  An infinite loop would occur if in this loop time was increased by enough to offset the decrease that is happening in another part of the program or reset to a large enough value to offset the decrease that is happening.  See example #1
-
-
-### WR 2(b). Errors and Testing
-
-Describe a change to the procedure that will result in a run-time error AND explains why the change will result in a run- time error.
-
-This question is asking you to describe a way to cause a runtime error in your code.  If you cannot cause one, you need to describe a way your code can be modified to cause a runtime error.  Runtime errors occur during program execution due to unexpected conditions, while compiler errors occur during the compilation phase due to syntax or reference issues in the code.  
-
-AP Example GOOD Answer:
-A runtime error would occur if instead of printing i, we printed i / (stop - i).  Once i is equal to stop, a divide by 0 run-time error will occur.  See example #3
-
-### WR 2(c). Data and Procedural Abstraction
-
-To count the number of times a certain value appears in your list using the isEqual(value1, value2) procedure
-Steps written in pseudocode, not actual code. Must return a count.
-
-This question is asking for a step-by-step explanation of the algorithm, detailing how to traverse through the list, compare each element with the target value using the isEqual procedure, and increment a count variable for each occurrence of the target value. The explanation should be thorough enough that someone else could understand it well enough to write the code based on your instructions. This includes describing the initialization of variables, the iteration process, the use of the isEqual procedure, the counting mechanism, and returning a count.
-
-AP Example GOOD Answer:
-Set a counter variable count to 0.  Iterate over the elements of the list named myList.  For each element, call isEqual to compare the element from myList to the given value.  If isEquals returns true add 1 to count.  After iterating over every list value, print the value of count.  
-
-<hr />
-
-## AP CSP Tutorials
-
-<a target="_blank" href="https://www.youtube.com/@DrCodie">Dr Codie</a>
-drcodie.com
-https://www.Alps.Academy/apcspexam
-<a target="_blank" href="https://www.youtube.com/watch?v=zWcts-prp_s&list=PLpeS0xTwoWAtwiXc7QB9D-LrjMtJU9BM4">
-30-day challenge</a>
-
-<a target="_blank" href="https://www.youtube.com/@codology">YouTube: Codology</a>
-
-* https://knowt.com/exams/AP/AP-Computer-Science-Principles
-* https://knowt.com/exams/AP/AP-Computer-Science-A
-
-
-<hr />
-
-## Use XBox
-
-https://techcommunity.microsoft.com/t5/educator-developer-blog/using-your-xbox-for-learning/ba-p/2389569
-Using your Xbox for learning
-Published Jun 07 2021 
-by Dr Chris Headleand, Associate Professor and Director of Teaching and Learning, School of Computer Science, University of Lincoln. 
-https://www.linkedin.com/in/chris-headleand-5a922239
-on LinkedIn.
-
-The first one is just using your Xbox to access online learning materials. This is possibly the easiest way to use your Xbox for learning, but probably the least known. 
-
-  1.  Navigate to Games and Apps and find Microsoft Edge and open it.
-  1.  Plug a Keyboard and Mouse into the USB socket on your Xbox (notably, the Xbox always supported the keyboard, but since April has also allowed you to use a mouse! Brilliant).
-  1.  Navigate to your favourite institutional or open-learning platform and access materials.
-
-
-### Minecraft
-
-Use Java
-
-
-
-### Farming Simulator 
-
-https://www.microsoft.com/p/farming-simulator-19/bqw91w950j67?WT.mc_id=academic-29699-jabenn
-Farming Simulator is a role-playing game where the player assumes the life of a farmer. 
-
-It is a great way to learn about geography, the food supply chain, and resource management.
-
-
-### Kerbal Space Program 
-
-https://www.microsoft.com/p/kerbal-space-program-enhanced-edition/brbd7bdk271p?WT.mc_id=academic-29699-jabenn
-The Kerbal Space Program is a rocket simulation for some adorable aliens called Kerbals. 
-
-Participants build rockets to try and get the Kerbals into space, and it is built on realistic aerodynamic and orbital physics models. There are loads of opportunities to learn here, especially developing awareness of Physics. NASA also got involved with the game, creating a realistic mission for players to get their teeth into. This game can also be a great tool for learning history, developing an understanding of the challenges faced by the early space programme.
-
-### Portal
-
-Portal is one of a few non-violent games on XBox.
-It's widely regarded as one of the best games of all time. 
-
-It provides users move among rooms to overcome a series of challenges.
-
-The player wakes up in a room.
-
-There are several editions of Portal. But they have a similar premise.
-
-<hr />
-
-## Hacker
-
-BOOK: The Hacker Playbook
-
-* linkedint.com
-* https://github.com/gophish/gophish run within Lightsail
-
-
-## Child safety in Age of AI
-
-https://www.privo.com/summit/2024#videos
-Jan 24, 2024
- Child Privacy Protections
-
-
-## Jobs
-
-Jason DiPietro at https://mjdpresources.com/gigs/ (Delaware Valley) 
-from Ryan McBeth on YouTube.
-
-https://blog.knowbe4.com/how-athletic-director-exploited-ai/
-AI voice fake to frame a school principal
-
-
-<a target="_blank" href="https://www.edx.org/learn/android-development/trinity-college-mobile-computing-with-app-inventor-cs-principles-part-ii">
-ARCHIVED: TrinityX: Mobile Computing with App Inventor: CS Principles Part II
-Explore intermediate and advanced topics in computer science by building mobile apps with App Inventor for Android.
-
-
-## Research
-
-<a target="_blank" href="https://www.coursera.org/learn/ubiquitouslearning/home/week/1">
-Ubiquitous Learning and Instructional Technologies</a>
-University of Illinois at Urbana-Champaign
-
-https://www.coursera.org/learn/answering-interesting-questions-with-data/home/week/1
-Answering Interesting Questions with Data
-University of Michigan
-1. using Python web scraping Beautiful Soup
-2. XML
-3. Database
-4. Spidering Twitter & Matplotlib plots
-
-https://www.coursera.org/learn/teach-java-boolean-expressions-if-statements-iteration/home/week/1
-
-Magpie lab
-
-
-## CSA
-https://knowt.com/exams/AP/AP-Computer-Science-Principles
-https://knowt.com/exams/AP/AP-Computer-Science-A
-
-
-
-## 
-
-https://learn.microsoft.com/en-us/training/modules/create-computer-science-curriculum/
-
-https://www.cs.cmu.edu/%7E15110-s13/Wing06-ct.pdf
-Jeanette Wing's Computational Thinking article.
-https://edudownloads.azureedge.net/msdownloads/Microsoft-Computer-Science-Curriculum-Toolkit-Whitepaper.pdf
-Reimagining Computer Science in the Curriculum: White Paper.
-https://edudownloads.azureedge.net/msdownloads/Microsoft-Computer-Science-Framework-Structure-Principles.pdf
-Microsoft Computer Science Curriculum Toolkit: Structure and Principles.
-https://edudownloads.azureedge.net/msdownloads/Microsoft-Computer-Science-Framework.pdf
-Microsoft Computer Science Curriculum Toolkit.
