@@ -240,12 +240,48 @@ The College Board conducts an Audit of curriculum plans.
 
 The College Board recognizes several organizations providing curriculum materials.
 
+## Additional 
 
+Do the standard curriculum materials enable students to get a job?
 
+As the name of the organization implies, the College Board has an academic rather than vocational focus.
 
-## Additional
+However, several AP instructors (and this instructor does) enrich the materials with real-world tools entry-level developers are expected to master:
+
+1. Safe computing with email, banking, and other personal data
+2. LinkedIn profile to display achievements and recommendations
+3. Trello Kanban boards cloud service to plan and track work collaboration
+4. AKeyless cloud service to store and dispense SSH and other secrets
+
+5. Git utilities and GitHub cloud service to store and share code
+6. GitHub Markdown for creating a static website within GitHub ($75/year)
+7. Text editing using Vim and VSCode
+
+8. bash/Linux Command line utilities to manage files and folders
+9. Image, Sound, Video recording, generation, and editing 
+10. Python Jupyter coding to run Machine Learningx in cloud environments
+11. Amazon AWS and Microsoft Azure cloud service to access workstations and data
+
+12. CAD printing and design
+13. Internet of Things (IoT) to quantify and control physical objects (with AI)
+<br /><br />
+
+Fundamental skill with the above would enable students to subsequently focus on 
+mastery with complex craftmanship with HTML/CSS/JavaScript, data structures, algorithms, automated testing, design, risk management.
+
+There is a professional certification for each of the above skill areas
+which provide students to be more competitive when applying for jobs.
+
+Skill with PowerPoint to create presentations would be useful coming into the AP class.
+
+## Leadership development
+
+To develop leadership and teaching skills, a student can become the
+"product manager" responsible for each technology listed above.
 
 ### Khan Academy
+
+KhanAcademy.org
 
 ### CS50 Harvard
 

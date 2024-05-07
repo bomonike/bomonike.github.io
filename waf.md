@@ -409,7 +409,7 @@ sudo systemctl restart apache2
 
     <a target="_blank" href="https://youtube.com/shorts/pGKUzdSdOU4?si=n647E9ueuO7MJftL">VIDEO</a>: Netgate documentation.
 
-    ### Other vendors
+    ### Other WAF vendors
 
 21. Click the toggle icon for <strong>each</strong> rule group you want to add to your Web ACL, then click the orange "Add rule" at the bottom.
 
@@ -428,13 +428,20 @@ sudo systemctl restart apache2
 
     <tt><a target="_blank" href="https://console.aws.amazon.com/wafv2/homev2/marketplace">https://console.aws.amazon.com/wafv2/homev2/marketplace</a></tt>
 
+
+    ### Other Vendors
+
     PROTIP: Not on the list are famous vendors 
     * <a target="_blank" href="https://www.gartner.com/reviews/market/cloud-web-application-and-api-protection/vendor/akamai/product/app-and-api-protector">Akamai</a>
     * Cloudflare
     * Fastly
     * Rapid7 <a target="_blank" href="https://www.youtube.com/watch?v=L9-K1DPYFuE">VIDEO</a>: vs RASP (Runtime Application Self-Protection) that monitors built into the application itself  provide detailed visibility to detect and actively block attacks in real-time, such as terminating a user session, shutting down the application, or alerting security teams.
     * AppTrana WAAP by <a target="_blank" href="https://www.indusface.com/">Indusface</a>
+    
+    * Atomicorp's open-sourced <a target="_blank" href="https://atomicorp.com/atomic-modsecurity-rules/">Atomic ModSecurity Rules</a> for $225 per server per year, and WAF with GUI for $300/IP/server/year. They also have a free version. <a target="_blank" href="https://ss-usa.s3.amazonaws.com/c/308483062/media/178860f9a333b23c944700968676873/Atomic%20ModSecurity%20Rules%20-%20SolutionsOverview.pdf">PDF</a>
     <br /><br />
+    
+    * Atomic offers <a target="_blank" href="https://atomicorp.com/about-ossec/">enhancements</a> of OSSEC, the most widely used open source host-based intrusion detection system
     
     <a name="MitigationTesting"></a> 
 
@@ -761,10 +768,6 @@ https://www.gartner.com/reviews/market/cloud-web-application-and-api-protection/
 
 * Advanced WAF https://www.youtube.com/watch?v=HBbDKBV4QW0
 https://www.youtube.com/watch?v=WxwCGj5TXl8&list=PLZmbPz-KgDtgJLfsdLmSHIXyv0TlQ-CJj&pp=iAQB
-
-"Proactive Bot Defense"
-
-"IP Intelligence"
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=Bj6fDT4oyCE"> Hands-on: Deploy AWS WAF on ALB and setup WAF Rules by StormIT
 
