@@ -16,13 +16,16 @@ comments: true
 {% include l18n.html %}
 {% include _toc.html %}
 
-The College Board conducts <a target="_blank" href="https://apcentral.collegeboard.org/courses">exams in 38 academic subjects</a>. Each year, some exams are retired and others are added.
-
 {% include whatever.html %}
 
 ## Alternatives
 
-Students in high school can earn college credits while in high school.
+In order to gain a higher chance for admission into top universities,
+to have more freedom to take classes,
+to take more advanced classes sooner, 
+to graduate sooner,
+to build a more impressive resume for jobs,
+students in high school can earn college credits while still in high school.
 
 1. Take classes on-line at colleges which accept high school students:
 
@@ -32,9 +35,13 @@ Students in high school can earn college credits while in high school.
 
 4. Score high enough on AP (Advance Placement) exams by the College Board.
 
-## AP (Advanced Placement)
 
-Within the STEM (Science, Technology, Engineering, and Math) category, for 2023/24 the College Board offered <a target="_blank" href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles/compare-ap-computer-science-courses">two</a> Computer Science AP exams:
+## AP (Advanced Placement) for Computer Science
+
+The College Board conducts <a target="_blank" href="https://apcentral.collegeboard.org/courses">exams in 38 academic subjects</a>. Each year, some exams are retired and others are added.
+
+Within the STEM (Science, Technology, Engineering, and Math) category, for 2023/24 the College Board offered <a target="_blank" href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles/compare-ap-computer-science-courses">two</a> <a target="_blank" href="https://blog.collegeboard.org/difference-between-ap-computer-science-principles-and-ap-computer-science
+">different</a> Computer Science AP exams:
 
    * <a target="_blank" href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles">"<strong>AP CSP</strong>" for the <strong>AP Computer Science Principles</strong></a> exam on the "Big ideas of computer science (including algorithms and programming)" (computational thinking and fluency).
 
@@ -45,6 +52,7 @@ The College Board's exam names have a suffix "A" to designate the equivalent of 
 There was a time when there was a "AP Computer Science AB" which covered all the topics of AP Computer Science A plus more formal and in-depth study of algorithms, data structures, and data abstractions. That exam was discontinued after the 2008–2009 year.
 
 The two exams can be taken in any order.
+There are no limit on retakes.
 
 ## CSA - Computer Languages
 
@@ -191,7 +199,7 @@ AP scores come out about two months after the exam, during the beginning of July
 Students who are homeschooled or go to a school that doesn’t administer AP Exams can find a school on the <a target="_blank" href="https://apcourseaudit.inflexion.org/ledger/">College Board's AP Course Ledger</a>, which lists secondary schools that have passed the AP Course Audit. 
 * For 23-24, there were 6437 schools in all 50 US states, up from 6162 in 22-23 and 6037 in 21-22.
 * In Montana, for 23-24 there were 9 schools, up from 5 in 22-23, 6 in 21-22, and 4 in 20-21.
-   * Belgrade High School (<a target="_blank" href="https://maps.app.goo.gl/EawUtUSW5LanJACK8">NorthWest Bozeman</a>, Gallatin Valley) Amy Guevara</a>, STEM Coordinator, 406-924-2122
+   * Belgrade High School (<a target="_blank" href="https://maps.app.goo.gl/EawUtUSW5LanJACK8">NorthWest Bozeman</a>, Gallatin Valley) Amy Guevara</a>, STEM Coordinator, 406-924-2122. AP® participation rate at Belgrade High School is 34%. 
    * Capital High School, Helena 
    * Glacier HIgh School, Kalispell
    * Great Falls Central Catholic High School
@@ -213,7 +221,10 @@ Results are reported on a scale from 1 to 5. Most colleges recognize a score of 
 
 Historically, 12% of test takers received a mark of 5 on the CSP.
 
-There are no limit on retakes.
+The mean score for all 2023 AP Exams was 2.96. More than 60% of all exams taken earned a score of 3 or higher. 
+https://apstudents.collegeboard.org/about-ap-scores/score-distributions
+AP Score Distributions.
+AP Computer Science Principles, 63.1% received a score of 3 or higher.
 
 Using <a target="_blank" href="https://apstudents.collegeboard.org/getting-credit-placement/search-policies">
 College Board's AP Credit Policy Search tool</a> on May 1, 2024:
@@ -234,11 +245,36 @@ The exam will be 3 hours long and will test students on the full course content,
 
 <hr />
 
-## Curriculum Materials
+## Recruitment materials
+
+https://apcentral.collegeboard.org/courses/ap-computer-science-principles/recruitment-toolkit
+
+<a target="_blank" href="https://www.youtube.com/watch?v=by2l3O3Lio8&t=1m48s">Webinar</a>: "Bring AP Computer Science Principles to Your School"
+by College Board directors
+
+https://apcentral.collegeboard.org/courses/ap-computer-science-principles/bring-csp-to-your-school
+
+
+## Curriculum Audits
 
 The College Board conducts an Audit of curriculum plans.
 
+   * <a target="_blank" href="https://apcourseaudit.inflexion.org/ledger/">Schools that have passed the audit</a>
+   <br /><br />
+
+## Curriculum Materials
+
 The College Board recognizes several organizations providing curriculum materials.
+
+* https://codehs.com
+
+   Added <a target="_blank" href="https://codehs.com/course/ap_csp_cyber/overview">
+   Foundations</a> and <a target="_blank" href="https://codehs.com/course/advanced_cyber/overview">Advanced</a> courses on AP Cybersecurity.
+
+* https://code.org
+
+* NCyTE.net
+
 
 ## Additional 
 
@@ -246,42 +282,71 @@ Do the standard curriculum materials enable students to get a job?
 
 As the name of the organization implies, the College Board has an academic rather than vocational focus.
 
-However, several AP instructors (and this instructor does) enrich the materials with real-world tools entry-level developers are expected to master:
+However, several AP instructors (and this instructor does) enrich the materials with real-world tools entry-level contributors need to master.
+All these are free unless noted otherwise:
 
-1. Safe computing with email, banking, and other personal data
-2. LinkedIn profile to display achievements and recommendations
-3. Trello Kanban boards cloud service to plan and track work collaboration
-4. AKeyless cloud service to store and dispense SSH and other secrets
+1. Safe computing with email, Passkeys, and personal data protections
+2. Secure networking with wifi, internet, cellular, radios
 
-5. Git utilities and GitHub cloud service to store and share code
-6. GitHub Markdown for creating a static website within GitHub ($75/year)
-7. Text editing using Vim and VSCode
+3. AKeyless cloud service to store and dispense SSH and other secrets
+4. LinkedIn profile to display achievements and recommendations
+5. Trello Kanban boards cloud service to plan and track work collaboration
 
-8. bash/Linux Command line utilities to manage files and folders
-9. Image, Sound, Video recording, generation, and editing 
-10. Python Jupyter coding to run Machine Learningx in cloud environments
-11. Amazon AWS and Microsoft Azure cloud service to access workstations and data
+6. Text editing using Vim and VSCode
+7. Git utilities with GitHub cloud service to store and share code
+8. GitHub Markdown for creating a static website within GitHub ($75/year)
+9. bash/Linux Command line utilities to manage files and folders
 
-12. CAD printing and design
-13. Internet of Things (IoT) to quantify and control physical objects (with AI)
+10. Low-code e-commerce shops (Gumroad, Shopify, etc.) (freemium)
+11. Recording, generation, editing of images, sound, video (freemium)
+
+12. Python Jupyter coding to run Machine Learning in cloud environments (freemium)
+13. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
+
+14. Workflow automation (GitHub Actions, Jenkins)
+15. OnShape 3D CAD printing and design (freemium)
+16. Internet of Things (IoT) to quantify and control physical objects (with AI)
 <br /><br />
 
-Fundamental skill with the above would enable students to subsequently focus on 
-mastery with complex craftmanship with HTML/CSS/JavaScript, data structures, algorithms, automated testing, design, risk management.
+Developing basic level skill with the above would enable students to subsequently focus on 
+mastery with crafting HTML/CSS/JavaScript, Cybersecurity, data engineering, algorithms, automated testing, design, risk management.
 
-There is a professional certification for each of the above skill areas
+There is a professional certification for many of the above skill areas
 which provide students to be more competitive when applying for jobs.
 
-Skill with PowerPoint to create presentations would be useful coming into the AP class.
+Skill with PowerPoint to create presentations would be useful as a prerequisite coming into the AP class.
 
 ## Leadership development
 
-To develop leadership and teaching skills, a student can become the
-"product manager" responsible for each technology listed above.
+The class is structured so that one student can be the "product manager"
+responsible for each specific technology listed above.
+
+This provides an opportunity for students to develop leadership and teaching skills. 
+
+There are many "Product Manager" jobs for those who have not mastered all the technologies,
+but just one or a few:
+   
+   * customize descriptions of the technology so it can be easily understood by different audiences
+   * promote the use of a technology using various media
+   * define and organize events
+
+   * develop training materials
+   * present trainings
+   * onboard individuals and help troubleshoot usage
+   * define a future roadmap
+   <br /><br />
+
+This builds a community for the program to become self-sustaining,
+to proactively take advantage of changes in technologies as they emerge.
+
 
 ### Khan Academy
 
 KhanAcademy.org
+
+### Outsystems
+
+https://www.outsystems.com/education-program/
 
 ### CS50 Harvard
 
