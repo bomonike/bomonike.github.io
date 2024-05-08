@@ -22,18 +22,31 @@ Kanban aims focus on the "now" -- on the most urgent items at the top of the "Do
 
 ## Trello.com
 
-I and my team uses Trello.com's free website to use Kanban. 
+I and my team uses Trello.com's free website to use Kanban.
+
 Trello was purchased by Atlanssian, which also makes Jira, a licensed product also used to manage Kanban.
 See my https://wilsonmar.github.io/jira 
 
-Each team has its own Kanban board containing multiple stacks in columns.
+Kanban is not suited for a very creative endeavor.
+
+PROTIP: Each Kanban board is best for <strong>processing well-known tasks like in a factory</strong>.
+Thus, each Kanban board tyically organizes people with the <strong>same skillset</strong>.
+
+   Kanban is particularly useful for those with multi-disciplinary skills. Workers can pick to work any task from the <strong>top</strong> of the Current ToDo list any task they have been cleared to do (front-end UI, database, utilities, etc.).
+
+Time is being wasted when team members skip tasks only others can handle.
+With such boards, it's crucial to designate the specific member who can handle each task.
+
+## Kanban board
 
 The flow of columns from left to right represents common names for the flow of work from ideation to completion.
 
 PROTIP: The methodology and rules here use the Kanban board to minimize live meetings,
 so is ideal for team members working in different time zones around the world.
 
-1. The "Doing" column lists cards (tasks) the team currently "has on its plate".
+### Doing column
+
+1. The "Doing" (or "In Progress") column lists cards (tasks) the team <strong>currently</strong> "has on its plate".
 
    A glance at that column answers "who is working on what now"?
 
@@ -48,7 +61,7 @@ so is ideal for team members working in different time zones around the world.
    RULE: Set a personal limit of how many tasks one person can do at the same time.
    RULE: The WIP (Work in Progress) Limit is the number of items the whole team can work on at the same time.
 
-   A key benefit of an Agile mindset is the invention of <strong>quick change</strong> mechanisms that enable more efficient switching between different types of tasks.
+   ### Notes
 
 1. PROTIP: As tasks are performed, since Notes in active cards are abandoned when done, ideas for <strong>improvement</strong> in future iterations are added in a <strong>separate template board</strong> containing items to be copied onto the team's active Kanban board "ToDo" column for each new project/customer. 
 
@@ -80,43 +93,65 @@ so is ideal for team members working in different time zones around the world.
 
    Trello puts a red dot on items with new Note activity. Since that dot goes away after viewing, an additional reply such as "Noted" or "Agreed" is not necessary.
 
-1. If you get <strong>stuck</strong> on an item on Doing, instead of wasting time going in circles and getting frustrated, be productive on the next item in the list. Add "BLOCKER:" at the beginning of the blocked item's name and move it back to "Next To Do".
+   ### Review/Test
 
-   Others may be able to help troubleshoot it.
+1. When a task from the Doing column is complete, move it to the "Review/Test" column for someone else perform the Quality Control.
 
-   So in a note within the blocked item, paste the error message output by the app. Define how to recreate the error and what you've tried.
+   PROTIP: Team members should pick "Review/Test" items before picking the next "To Do" item. This is so all items get to "Done" as soon as possible, without being stuck in progress.
 
-1. When a task from the Doing column is completed, move it to the "Review/Test" column so someone else performs the Quality Control.
+   Part Quality Control is evaluation of the <strong>manual documentation or automation</strong>. Are they still accurate and efficient? Steps that are error-prone in future iterations should be flagged.
 
-   RULE: Each team member should prioritize performing Quality Control in order to get items to "Done" as soon as possible.   
+   ### Next To Do
 
-   Quality Control evaluates drafts of the <strong>manual documentation or automation</strong> that make the item more efficient and error-prone in future iterations.
+1. The <strong>Next To Do</strong> column contain items which the team agrees it should do when all "Doing" and "Review/Testing" items are completed.
+
+   Kanban is considered a continuous workflow. It's unlike Scrum's "time boxed" approach which some claim  intentionally adds psychological pressure to worry about how to cram a whole list of items into a fixed time-frame (sprint). 
+   
+   The culture of Kanban is that team members are not cohersed into accepting estimates as "commitments" that must be kept. This approach encourages open discussion/handling of delays without the shame which encourages lying and poor quality.
+
+   ### Backlog
+
+1. As you're working on an item and inspiration strikes, create a card in the <strong>bottom of the "Backlog" column<strong>. Backlog items are in a column all the way to the left, as in "from left field" in American Baseball slang, to refer to something that is unexpected, unusual, or surprising.
+
+   Backlong items are also called <strong>unplanned</strong> because they have not been <strong>accepted</strong> as an item that <strong>should</strong> be worked on.
+   
+   PROTIP: Making acceptance a conscious step is important to ensure that the <strong>risks and costs</strong> be properly considered. That includes the possible benefit of NOT doing the item if that makes better sense.
+   
+   Movement of the item to the next column should usually occur after there is agreement about where the backlong item fits within the planned <strong>Product Roadmap/Timeline</strong>, as in which other tasks take precedent.
+
+   During deliberations, some items may be broken out into separate items. 
+   Other items may be combined with another item.
+
+   Teams <strong>have a designated recurring time</strong> when team members deliberate Backlog items together. Before that meeting, each team member add notes and reply to notes. "+1" is added to designate acceptance of an item as stated. That would mute disscussion on the item, which enable "air time" to be on where it's most productive (such as on socializing).
+
+   With that said, special meetings may be necessary to resolve emergencies.
+
+   ### Stuck
+
+1. If you get <strong>stuck</strong> working on an item, be weary of wasting time going in circles and getting frustrated. 
+
+   It may be better use of time to move on to work the next item. But before you do that,
+   to minimize <strong>switching costs</strong>, in a note within the blocked item, paste the error message output by the app. Define how to recreate the error and what you've tried.
+   
+   Then to summon help on the blocked item, add "<strong>BLOCKED:</strong>" at the beginning of its name. It's good for others to help you because they may learn something too.
+   
+   A key benefit of an Agile mindset is the invention of <strong>quick change</strong> mechanisms that enable more efficient switching between different types of tasks.
+
+   Take a quick break while you see if someone can come to your aid.
+   
+   If you cannot work on an item, move it back to the top of the "To Do" list because you are not working on it.
+
+   ### Closure
 
 1. PROTIP: Unless otherwise agreed upon, only the person who created the item be the one to move to Done. This is to prevent unwarrented closures, which drains initiative. If allowed, it can be a "power move" to bully others.
 
    PROTIP: Marking items as done prematurely is a form of lying. Closing an item can be used to "sweep things under the carpet" and create invisible "Technical Debt".
 
-1. The <strong>Next ToDo</strong> list tasks which the team aims to do within the <strong>current window</strong>.
-
-   Kanban is particularly useful for those with multi-disciplinary skills. Workers can pick to work any task from the <strong>top</strong> of the Current ToDo list any task they have been cleared to do (front-end UI, database, utilities, etc.).
-
-   Thus, Kanban is favored among "Agile" teams which need to immediately jump on new requirements added at any time. 
-
-1. If the team does have a forward horizon, the Next ToDo list can first begin as a "Upcoming ToDo" list compiled by the Project/Product Manager.
-   
-   Before the team meets to promote the Upcoming ToDO to Current ToDo, discussion occurs within Notes. There is a "Discuss" item at the top of the Upcoming list for what applies to all tasks.
-
-   Kanban is considered a continuous workflow. It's unlike Scrum's "time boxed" approach which some claim  intentionally adds psychological pressure to worry about how to cram a whole list of items into a fixed time-frame (sprint). 
-   
-   The intent of Kanban is that team members are not cohersed into accepting estimates as "commitments" that must be kept. This approach encourages open discussion/handling of delays without the shame which encourages lying and poor quality.
-
 1. Add "TEAM:" to the front of item names items which the entire team should review together.
 
    Pre-scheduled demo meetings would be an items with a date in the "Review/Test" column.
 
-1. The <strong>"Backlog" column</strong> holds items that are <strong>known but not planned out</strong>.
-
-   Its items may be link to a Product Roadmap. Names are usually not assigned unless an item only has one possible person who can do it, which presents a risk to be considered.
+   ### Time Stamps
 
 1. Optionally, time stamps the system automatically tracks enable Notes in the template to be updated with <strong>actual times</strong> of task completed during previous iterations, presented as a histogram if there are enough repeats. Several histograms can be presented for each level of difficulty.
 

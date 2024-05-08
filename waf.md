@@ -36,11 +36,11 @@ A single hacker machine can use the tools to take down even a large targeted Apa
 
 ## Low and Slow
 
-Unlike "volumetric" DoS (Denial of Service) attacks which aim to <strong>overwhelm</strong> (flood) target servers with traffic from many malicious clients, <strong>"low and slow"</strong> attack aims to exhaust server resources through long-running, incomplete requests.
+Unlike "volumetric" DoS (Denial of Service) attacks which seek to <strong>overwhelm</strong> (flood) target servers with traffic from many malicious clients, <strong>"low and slow"</strong> attack aims to exhaust server resources through long-running, incomplete requests.
 
 "Low and slow" attacks are difficult to detect using conventional DDoS detection mechanisms which expect a high volume and fast rate of traffic.
 
-The exploit "sends long HTTP POST requests to the target server, but breaks the request body into small packets sent at a very slow rate (e.g. one byte every 10 seconds). This slow rate of sending the request body prevents the server from closing the connection, forcing it to keep the connection open and wait for the full request."
+The exploit "sends long HTTP POST requests to the target server, but breaks the request body into small packets sent at a very slow rate (e.g. one byte every 10 seconds). This slow rate of exchange prevents the server from closing the connection, forcing it to wait for the full request."
 
 Each Apache web server has a finite pool of processing threads available to handle connections with the clients it serves. When the maximum number of possible connections that a server can handle is reached, additional connections cannot be established. And thus a denial-of-service attack is successful.
 
@@ -50,6 +50,7 @@ Administrators can buy some time by adding additional servers and, on each Apach
 
 However the number of attackers can also increase. In a DDoS (Distributed Denial of Service) attack, hackers use thousands of devices that have been compromised to direct traffic toward a single site.
 
+In late March 2015, China directed its botnet (dubbed "Great Canon") toward GitHub (a web-based code hosting service) as well as GreatFire (a service dedicated to monitoring websites blocked by China). 
 
 ## Mitigation: Upgrade the Tech
 
@@ -456,17 +457,18 @@ sudo systemctl restart apache2
 
 22. Scroll down to the "Default web ACL action for requests that don't match any rule". 
 
-    PROTIP: The selection of default "Allow" or "Block" is fundamental to the <strong>maturity level</strong> of the organization running AWS. The red pill or the black pill.
+    PROTIP: The selection of default "Allow" or "Block" is fundamental to the <strong>maturity level</strong> of the organization running AWS. It's the "red pill or the blue pill".
 
-    NOTE: The words "Allowlist" and "Blocklist" has replaced "Whitelist" and "Blacklist" for more cultural sensitivity.
-
-    Selecting <strong>"Allow" by default</strong> means relying completely on Rules defined to safeguard traffic. 
-    That's not terrific but also terrifying. Miss one and you open your whole operation to hackers.
+    Selecting <strong>"Allow" by default</strong> means relying completely on Rules defined to safeguard traffic. That's not terrific but also terrifying. Miss one and you open your whole operation to hackers. 
+    
+    Many organizations CANNOT choose this because it viloates a key part of <strong>Zero Trust</strong>  mandates by government standards and customer agreements.
 
     Selecting <strong>"Block" by default</strong> means that each user and app must be specifically specified, and unspecified quickly as each user leaves the team or organization. Those who use VPNs would change the IP address frequently. That also will likely result in some complaints from developers and users. That requires more automation and staffing of a 24/7 operation. But mistakes with this approach doesn't open your whole environment to hackers. 
 
     PROTIP: This is a good discussion prompt in an interview. 
     How did the candidate's previous employer collect IP addresses dynamically to open up the network to each downline service and user?
+
+    NOTE: The words "Allowlist" and "Blocklist" has replaced "Whitelist" and "Blacklist" for more cultural sensitivity.
 
     PROTIP: Selecting <strong>Count</strong> is a good move to analyze the impact of rules defined before productive use. Use this for general monitoring and also to test your new web request handling rules. A toggle can be defined in <a href="#Terraform">Terraform</a> to easily select this.
 
@@ -789,4 +791,4 @@ by The AWS Ninja
 * https://www.youtube.com/watch?v=U3fycWWA1tg 
 Vercel
 
-* <a target="_blank" href="https://www.youtube.com/watch?v=xZBJKXh6Lco">VIDEO</a>: The Largest Botnet Ever  Mantis
+<a target="_blank" href="https://www.youtube.com/watch?v=xZBJKXh6Lco">VIDEO</a>: The Largest Botnet Ever (GreatCanon)  Mantis
