@@ -38,6 +38,8 @@ students, while still in high school, can earn college credits:
 
 ## AP (Advanced Placement) for Computer Science
 
+<a target="_blank" href="https://www.veritasai.com/veritasaiblog/https/wwwveritasaicom/8-reasons-why-you-should-take-ap-computer-science-in-high-school">VIDEO: Why you should take AP Computer Science in High School</a>
+
 The College Board conducts <a target="_blank" href="https://apcentral.collegeboard.org/courses">exams in 38 academic subjects</a>. Each year, some exams are retired and others are added.
 
 Within the STEM (Science, Technology, Engineering, and Math) category, for 2023/24 the College Board offered <a target="_blank" href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles/compare-ap-computer-science-courses">two</a> <a target="_blank" href="https://blog.collegeboard.org/difference-between-ap-computer-science-principles-and-ap-computer-science
@@ -82,28 +84,67 @@ There exists other programming languages (Assembly, C, C#, F#, Go, JavaScript, L
 
 Recently, many teachers of the AP CSP exam select the <strong>Python</strong> programming langauge, which is popular among Data Scientists working with AI (Artificial Intelligence) and Machine Learning that's all the rage since 2023.
 
-<a target="_blank" href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-overview.pdf">pdf about the CSP exam</a>
+   * <a target="_blank" href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-overview.pdf">pdf about the CSP exam</a>
+   * <a target="_blank" href="https://csteachers.org/k12standards/standards-alignment-review/?gf_protect_submission=1">CSTA (Computer Science Teacher Association) Level 3B Standards (grades 11-12 / ages 16-18)</a> <a target="_blank" href="https://docs.google.com/spreadsheets/d/1uamgdNykfGldvaJN-rh2vx-AGrm3gWlAOs_JarGLT4o/edit#gid=1212951193">Spreadsheet</a>
+   <br /><br />
 
 * Big Idea 1: Creative Development
 
-   You'll understand the significance of collaboration in program development and how to use an iterative approach in your work. When developing computing innovations, developers can use a formal, iterative design process or a less rigid process of experimentation, and will encounter phases of investigating and reflecting, designing, prototyping, and testing. Collaboration is an important tool at any phase of development.
+   Understand the significance of collaboration in program development and how to use an iterative approach in your work. When developing computing innovations, developers can use a formal, iterative design process or a less rigid process of experimentation, and will encounter phases of investigating and reflecting, designing, prototyping, and testing. Collaboration is an important tool at any phase of development.
 
-* Big Idea 2: Data
+* Big Idea 2: Data & Analysis
 
-   You'll delve into how computers handle data and how data can be utilized to generate fresh information and solve problems. Data are central to computing innovations because they communicate initial conditions to programs and represent new knowledge.
+   Delve into how computers handle data and how data can be utilized to generate fresh information and solve problems. Data are central to computing innovations because they communicate initial conditions to programs and represent new knowledge.
+
+   * 3B-DA-05	Use data analysis tools and techniques to identify patterns in data representing complex systems.	For example, identify trends in a dataset representing social media interactions, movie reviews, or shopping patterns.
+   * 3B-DA-06	Select data collection tools and techniques to generate data sets that support a claim or communicate information.	
+   * 3B-DA-07	Evaluate the ability of models and simulations to test and support the refinement of hypotheses.	
+   <br /><br />
 
 * Big Idea 3: Algorithms and Programming
 
-   You'll gain proficiency in utilizing algorithms and abstractions to create programs that solve problems or express your creativity.
+   Gain proficiency in utilizing algorithms and abstractions to create programs that solve problems or express your creativity.
+
+   * 3B-AP-08	Describe how artificial intelligence drives many software and physical systems.	Examples include digital ad delivery, self-driving cars, and credit card fraud detection.
+   * 3B-AP-09	Implement an artificial intelligence algorithm to play a game against a human opponent or solve a problem.	Games do not have to be complex. Simple guessing games, Tic-Tac-Toe, or simple robot commands will be sufficient.
+   * 3B-AP-10	Use and adapt classic algorithms to solve computational problems.	Examples could include sorting and searching.
+   * 3B-AP-11	Evaluate algorithms in terms of their efficiency, correctness, and clarity.	Examples could include sorting and searching.
+   * 3B-AP-12	Compare and contrast fundamental data structures and their uses.	Examples could include strings, lists, arrays, stacks, and queues.
+   * 3B-AP-13	Illustrate the flow of execution of a recursive algorithm.	
+   * 3B-AP-14	Construct solutions to problems using student-created components, such as procedures, modules and/or objects.	Object-oriented programming is optional at this level. Problems can be assigned or student-selected.
+   * 3B-AP-15	Analyze a large-scale computational problem and identify generalizable patterns that can be applied to a solution.	As students encounter complex, real-world problems that span multiple disciplines or social systems, they should decompose complex problems into manageable subproblems that could potentially be solved with programs or procedures that already exist. For example, students could create an app to solve a community problem by connecting to an online database through an application programming interface (API).
+   * 3B-AP-16	Demonstrate code reuse by creating programming solutions using libraries and APIs.	Libraries and APIs can be student-created or common graphics libraries or maps APIs, for example.
+   * 3B-AP-17	Plan and develop programs for broad audiences using a software life cycle process.	Processes could include agile, spiral, or waterfall.
+   * 3B-AP-18	Explain security issues that might lead to compromised computer programs.	For example, common issues include lack of bounds checking, poor input validation, and circular references.
+   * 3B-AP-19	Develop programs for multiple computing platforms.	Example platforms could include: computer desktop, web, or mobile.
+   * 3B-AP-20	Use version control systems, integrated development environments (IDEs), and collaborative tools and practices (code documentation) in a group software project.	Group software projects can be assigned or student-selected.
+   * 3B-AP-21	Develop and use a series of test cases to verify that a program performs according to its design specifications.	At this level, students are expected to select their own test cases.
+   * 3B-AP-22	Modify an existing program to add additional functionality and discuss intended and unintended implications (e.g., breaking other functionality).	For instance, changes made to a method or function signature could break invocations of that method elsewhere in a system.
+   * 3B-AP-23	Evaluate key qualities of a program through a process such as a code review.	Examples of qualities could include correctness, usability, readability, efficiency, portability and scalability.
+   * 3B-AP-24	Compare multiple programming languages and discuss how their features make them suitable for solving different types of problems.	Examples of features include blocks versus text, indentation versus curly braces, and high-level versus low-level.
+   <br /><br />
 
 * Big Idea 4: Computer Systems and Networks
 
-   You'll explore the functioning of computer systems and networks, as well as how multiple computers can be employed to divide tasks and expedite processes.
+   Explore the functioning of computer systems and networks, as well as how multiple computers can be employed to divide tasks and expedite processes.
+
+   * 3B-CS-01	Categorize the roles of operating system software.	Examples of roles could include memory management, data storage/retrieval, processes management, and access control.
+   * 3B-CS-02	Illustrate ways computing systems implement logic, input, and output through hardware components.	Examples of components could include logic gates and IO pins.
+   * 3B-NI-03	Describe the issues that impact network functionality (e.g., bandwidth, load, delay, topology).	Recommend use of free online network simulators to explore how these issues impact network functionality.
+   * 3B-NI-04	Compare ways software developers protect devices and information from unauthorized access.	Examples of security concerns to consider: encryption and authentication strategies, secure coding, and safeguarding keys.
+   <br /><br />
 
 * Big Idea 5: Impact of Computing
 
-   You'll analyze the ramifications of computing on societies, economies, and cultures, and contemplate the legal and ethical responsibilities that programmers bear.
+   Analyze the ramifications of computing on societies, economies, and cultures, and contemplate the legal and ethical responsibilities that programmers bear.
 
+   * 3B-IC-25	Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society.	
+   * 3B-IC-26	Evaluate the impact of equity, access, and influence on the distribution of computing resources in a global society.	
+   * 3B-IC-27	Predict how computational innovations that have revolutionized aspects of our culture might evolve.	Areas to consider might include education, healthcare, art/entertainment, and energy.
+   * 3B-IC-28	Debate laws and regulations that impact the development and use of software.	
+   <br /><br />
+
+<hr />
 
 ## Units for CSA
 
@@ -159,11 +200,15 @@ These computational thinking practices are skills students should develop during
    * Algorithms: procedures to solve problems and obtain answers
    * Abstraction in Program Development: Develop programs that incorporate abstractions.
    * Code Analysis: Evaluate and test programs.
-   * Computing Innovations: Investigate computing innovations.
+   * Computing Innovations: Investigate 
    * Responsible Computing: Contribute to an inclusive, safe, collaborative, and ethical computing culture.
    <br /><br />
 
-<a target="_blank" href="https://www.flvs.net/high-school-courses/course/ap-computer-science-a/12/">One school</a> specified that for CSA, "Algebra 1 required. Algebra 2 and prior programming experience (i.e. Foundations of Programming) recommended." Students may have prior experience with Computer Science topics:
+<a target="_blank" href="https://www.flvs.net/high-school-courses/course/ap-computer-science-a/12/">One school</a> specified that for CSA, "Algebra 1 required. Algebra 2 and prior programming experience (i.e. Foundations of Programming) recommended." 
+
+Students may have prior experience with Computer Science topics:
+   * Turtle graphics and micro:bit in <a target="_blank" href="https://codehs.com/course/9434/explore">"Tech Apps and Coding" at CodeHS</a> (<a target="_blank" href="https://codehs.com/uploads/379980882e1302b1493894153a851a2e">180 contact hours</a>) to meet Montana <a target="_blank" href="https://csteachers.org/k12standards/interactive/">CSTA 2 (Computer Science Teachers Association) standards</a> for students in grades 6-8
+
    * <a target="_blank" href="https://stemfinity.com/products/coding-express-by-legoa%C2%AE-education">LEGO Duplo</a> for <a target="_blank" href="https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/">Coding Express</a> physical programming during pre-K
    * <a target="_blank" href="https://www.tynker.com/lego/">Tynker WeDo</a> in Grades 3-5
    * Use <a target="_blank" href="https://education.lego.com/en-us/product-resources/mindstorms-ev3/teacher-resources/python-for-ev3/">EV3 Brick and Visual Studio Code using MicroPython</a> <target="_blank" href="https://www.youtube.com/watch?v=JkB_0FqamCE">VIDEO</a> to <a target="_blank" href="https://www.lego.com/en-us/themes/mindstorms/learntoprogram">program LEGO Mindstorms robots</a> (which have color sensors, gyro sensors, ultrasonic, and touch sensors). <a target="_blank" href="https://www.udemy.com/course/learn-how-to-program-lego-robots/">Udemy course</a>
@@ -395,9 +440,15 @@ by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-50879427/">Ph
 
 ## Curriculum Materials
 
-The College Board recognizes several organizations providing curriculum materials.
+The College Board recognizes several organizations providing curriculum materials, LMS (Learning Management System), auto-graders, and teacher professional development.
+
+Stand-outs are:
 
 * https://codehs.com
+
+   Codehs has a free option but also offers their materials and community at $800/year per school, plus $1,000 for teacher professional development.
+   
+   Provides an <a target="_blank" href="https://codehs.com/ide">on-line IDE</a> for 10+ programming languages.
 
    Added <a target="_blank" href="https://codehs.com/course/ap_csp_cyber/overview">
    Foundations</a> and <a target="_blank" href="https://codehs.com/course/advanced_cyber/overview">Advanced</a> courses on AP Cybersecurity.
@@ -440,7 +491,7 @@ All these are free unless noted otherwise:
 12. Python Jupyter coding to run Machine Learning in cloud environments (freemium)
 13. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
 
-14. Workflow automation (GitHub Actions, Jenkins)
+14. Workflow automation (GitHub Actions, Jenkins/Cloudbees cloud)
 15. OnShape 3D CAD printing and design (freemium)
 16. Internet of Things (IoT) to quantify and control physical objects (with AI)
 <br /><br />
@@ -476,14 +527,14 @@ but just one or a few:
 This builds a community for the program to become self-sustaining,
 to proactively take advantage of changes in technologies as they emerge.
 
+### PBS
+
+https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL3wVmwRSQ38q8DaE_t0-0zfHwuYRQO12d
+PBS Crash Course Computer Science Preview from 2017
 
 ### Khan Academy
 
 KhanAcademy.org
-
-### Outsystems
-
-https://www.outsystems.com/education-program/
 
 ### CS50 Harvard
 
@@ -518,6 +569,11 @@ are 36 weeks <a target="_blank" href="https://www.edx.org/xseries/harvardx-cs50-
 There are now several CS50 courses:
 
    * <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/">CS50 AI with Python</a>
+
+### Outsystems
+
+https://www.outsystems.com/education-program/
+
 
 <hr />
 

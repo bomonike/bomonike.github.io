@@ -25,9 +25,9 @@ I think a big reason for the popularity of the show (rated 8.5/10) is due to its
 
 Minutes into the psycho-technical series' first episode, one asks about a <strong>"R.U.D.Y. attack"</strong>. 
 
-So below is how I would "mansplain" what that means (to excruiciating detail), instead of watching the show.
+Below is how I would "mansplain" what that means (to excruiciating detail) before going back to watch the show.
 
-RUDY is an acronymn for <strong>"aRe yoU Dead Yet"</strong> -- the name of a tool hackers use to create Denial of Service attacks. (An example is at <a target="_blank" href="https://github.com/darkweak/rudy">https://github.com/darkweak/rudy</a>, written in the Go language). 
+R.U.D.Y. is an acronymn for <strong>"aRe yoU Dead Yet"</strong> -- the name of a tool hackers use to create Denial of Service attacks. An example is at <a target="_blank" href="https://github.com/darkweak/rudy">https://github.com/darkweak/rudy</a>, written in the Go language.
 
 A <a target="_blank" href="https://en.wikipedia.org/wiki/Slowloris_(computer_security)
 ">similar tool</a> is at <a target="_blank" href="https://github.com/gkbrk/slowloris">https://github.com/gkbrk/slowloris</a>, written in the Python language. The program is named after <a target="_blank" href="https://www.wikiwand.com/en/Slow_loris">slow lorises</a>, a group of primates known for their slow movement. It's exhausting watching them.
@@ -273,7 +273,7 @@ sudo systemctl restart apache2
     In the sample video, select "Regional resources" for the Application Load Balancer defined earlier. Next.
 
     NOTE: The WAF can handle HTTP protocol Requests going into <a target="_blank" href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html">several other AWS services</a> not applicable to this example:
-    * Amazon API Gateway REST API (to mobile apps) <a target="_blank" href="https://docs.aws.amazon.com/securityhub/latest/userguide/apigateway-controls.html#apigateway-4">for FSBP</a>
+    * Amazon API Gateway REST API (to mobile apps) <a target="_blank" href="https://docs.aws.amazon.com/securityhub/latest/userguide/apigateway-controls.html#apigateway-4">for FSBP</a>, which limit access based on API keys it issues.
     * AWS App Runner service
     * AWS AppSync GraphQL API
     * Amazon Cognito user pool
@@ -771,4 +771,22 @@ https://www.youtube.com/watch?v=WxwCGj5TXl8&list=PLZmbPz-KgDtgJLfsdLmSHIXyv0TlQ-
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=Bj6fDT4oyCE"> Hands-on: Deploy AWS WAF on ALB and setup WAF Rules by StormIT
 
+* <a target="_blank" href="https://www.youtube.com/watch?v=1_jS4hjlYQw">VIDEO</a>: 
+Getting started With AWS WAF for Beginners | Protect your APIS by blocking certain IP | #1
+by Soumil Shah
 
+* <a target="_blank" href="https://www.youtube.com/watch?v=bHPNRc2APEc">VIDEO</a> 
+Hands-on: AWS WAF Integration with CloudFront + Security Dashboard
+by StormIT
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=hFoSLRBCMeM">VIDEO</a>: DDoS Protection with AWS WAF
+by The AWS Ninja
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=VPcYMgTYQs0">How I survived a DDoS attack</a> by Jeff Geerling
+
+* https://youtu.be/p2oYg1byGJ8?si=nu0sQJbsb8RO_xZ0 ShieldsUp
+
+* https://www.youtube.com/watch?v=U3fycWWA1tg 
+Vercel
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=xZBJKXh6Lco">VIDEO</a>: The Largest Botnet Ever  Mantis
