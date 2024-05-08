@@ -16,9 +16,7 @@ Instead of computers, the Kanban system uses a card to represent each product (t
 
 The transparency made possible by visible cards enable "lean manufacturing" practioners to measure lead time and cycle time as a way to highlight problem areas.
 
-Kanban is described as an approach that "pulls" items from upstream rather than having items "pushed" downstream processes.
-
-Kanban aims focus on the "now" -- on the most urgent items at the top of the "Doing" stack.
+Kanban is described as an approach that "pulls" items from upstream rather than having items "pushed" to downstream processes. <a target="_blank" href="https://www.youtube.com/watch?v=Levkx8f0qL4">This video</a> shows how Kanban is used within a physical factory.
 
 ## Trello.com
 
@@ -43,6 +41,8 @@ The flow of columns from left to right represents common names for the flow of w
 
 PROTIP: The methodology and rules here use the Kanban board to minimize live meetings,
 so is ideal for team members working in different time zones around the world.
+
+Kanban aims focus on the most urgent items at the top of the "Doing" stack.
 
 ### Doing column
 
@@ -99,7 +99,7 @@ so is ideal for team members working in different time zones around the world.
 
    PROTIP: Team members should pick "Review/Test" items before picking the next "To Do" item. This is so all items get to "Done" as soon as possible, without being stuck in progress.
 
-   Part Quality Control is evaluation of the <strong>manual documentation or automation</strong>. Are they still accurate and efficient? Steps that are error-prone in future iterations should be flagged.
+   Part of Quality Control is evaluating the <strong>manual documentation or automation</strong>. Are they still accurate and efficient? Steps that are error-prone in future iterations should be flagged. Such attention to detail is what the Japanese call <strong>Kaisan</strong> (Continuous Improvement).
 
    ### Next To Do
 
@@ -111,7 +111,11 @@ so is ideal for team members working in different time zones around the world.
 
    ### Backlog
 
-1. As you're working on an item and inspiration strikes, create a card in the <strong>bottom of the "Backlog" column<strong>. Backlog items are in a column all the way to the left, as in "from left field" in American Baseball slang, to refer to something that is unexpected, unusual, or surprising.
+1. As you're working on an item and inspiration strikes, create a card to the <strong>bottom of the "Backlog" column<strong>. 
+
+   Some companies celebrate their <a target="_blank" href="https://www.youtube.com/watch?v=u_y2inguzjw">favorite improvement of the year</a>.
+
+   Backlog items are in the left-most column, as in "from left field" in American Baseball slang, to refer to something that is unexpected, unusual, or surprising.
 
    Backlong items are also called <strong>unplanned</strong> because they have not been <strong>accepted</strong> as an item that <strong>should</strong> be worked on.
    
