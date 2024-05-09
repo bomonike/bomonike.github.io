@@ -95,7 +95,7 @@ Kanban aims focus on the most urgent items at the top of the "Doing" stack.
 
    ### Review/Test
 
-1. When a task from the Doing column is complete, move it to the "Review/Test" column for someone else perform the Quality Control.
+1. When a task from the Doing column is complete, move it to the "Review/Test" column for someone else to perform Quality Control.
 
    PROTIP: Team members should pick "Review/Test" items before picking the next "To Do" item. This is so all items get to "Done" as soon as possible, without being stuck in progress.
 
@@ -108,6 +108,25 @@ Kanban aims focus on the most urgent items at the top of the "Doing" stack.
    Kanban is considered a continuous workflow. It's unlike Scrum's "time boxed" approach which some claim  intentionally adds psychological pressure to worry about how to cram a whole list of items into a fixed time-frame (sprint). 
    
    The culture of Kanban is that team members are not cohersed into accepting estimates as "commitments" that must be kept. This approach encourages open discussion/handling of delays without the shame which encourages lying and poor quality.
+
+   ### Stuck
+
+1. If you get <strong>stuck</strong> working on an item, be weary of wasting time going in circles and getting frustrated. 
+
+   It may be better use of time to move on to work the next item. But before you do that,
+   to minimize <strong>switching costs</strong>, create a note within the blocked item and paste in it the error message output by the app. Define how to recreate the error and what you've tried.
+   
+   To summon help on the blocked item, add "<strong>BLOCKED:</strong>" at the beginning of its name. It's good for others to help you because they may learn something too.
+   
+   A key benefit of an Agile mindset is the invention of <strong>quick change</strong> mechanisms that enable more efficient switching between different types of tasks.
+
+   Take a quick break to clear your head while you see if someone can come to your aid.
+   
+   It's usually preferrable to fix issues immediately rather than fixing problems later. 
+   It's usually more expensive to "kick the can down the road".
+   Quality costs less.
+
+   If you cannot work on an item, move it back to the top of the "To Do" list because you are not working on it.
 
    ### Backlog
 
@@ -129,21 +148,6 @@ Kanban aims focus on the most urgent items at the top of the "Doing" stack.
    Teams <strong>have a designated recurring time</strong> when team members deliberate Backlog items together. Before that meeting, each team member add notes and reply to notes. "+1" is added to designate acceptance of an item as stated. That would mute disscussion on the item, which enable "air time" to be on where it's most productive (such as on socializing).
 
    With that said, special meetings may be necessary to resolve emergencies.
-
-   ### Stuck
-
-1. If you get <strong>stuck</strong> working on an item, be weary of wasting time going in circles and getting frustrated. 
-
-   It may be better use of time to move on to work the next item. But before you do that,
-   to minimize <strong>switching costs</strong>, in a note within the blocked item, paste the error message output by the app. Define how to recreate the error and what you've tried.
-   
-   Then to summon help on the blocked item, add "<strong>BLOCKED:</strong>" at the beginning of its name. It's good for others to help you because they may learn something too.
-   
-   A key benefit of an Agile mindset is the invention of <strong>quick change</strong> mechanisms that enable more efficient switching between different types of tasks.
-
-   Take a quick break while you see if someone can come to your aid.
-   
-   If you cannot work on an item, move it back to the top of the "To Do" list because you are not working on it.
 
    ### Closure
 

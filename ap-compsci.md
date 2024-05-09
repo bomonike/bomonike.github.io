@@ -74,7 +74,7 @@ AP Computer Science was taught using Pascal for the 1984–1998 exams, C++ for 1
    10. Recursion (Computational Thinking)
    <br /><br />
 
-PROTIP: Almost all the above concepts need to be address among all programming languages, but with different implementations.
+PROTIP: Almost all the above concepts need to be addressed with all programming languages, but with different implementations.
 
 One concern about CSA is that the programming lack the <strong>context</strong> of building a complete system, which programmers need to do.
 

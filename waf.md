@@ -193,11 +193,13 @@ Prepatory services to WAF:
 
 Using your default browser to establish Administrator:
 1. Create a Root AWS account using your email.
-2. Lock down the root account and configure IAM users to login with. The <a target="_blank" href="https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html">AWS Security Reference Architecture (SRA)</a> prescribes 5 Organizational Units (OUs) and Accoutns:
+2. <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715217204/aws-ref-arch-1086x1352_fh2rmr.png"><img align="right" width="150" alt="aws-ref-arch-1086x1352.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715217204/aws-ref-arch-1086x1352_fh2rmr.png"></a>Lock down the root account and configure IAM users to login with. The <a target="_blank" href="https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html">AWS Security Reference Architecture (SRA)</a> prescribes 5 Organizational Units (OUs) and Accoutns:
    1. Organization Management account
-   2. Security Tooling & Log Archive accounts
-   3. Workloads account
-   4. Infrastructure Network Account & Shared Services accounts
+   2. Security Tooling account
+   3. Security Tooling Log Archive accounts
+   4. Workloads account
+   5. Infrastructure Network Shared Services accounts
+   6. Infrastructure Network Account
    <br /><br />
 3. Setup AWS Route 53 for DNS of a custom host name.
 4. Optionally, setup <a target="_blank" href="https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html">AWS Global Accelerator</a> service to route traffic among the AWS global network of 100 edge locations to the closest healthy endpoint. This improves performance by up to 60% compared to routing over the public internet. It can also protect applications from DDoS attacks by absorbing  traffic closer to the source. 
