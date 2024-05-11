@@ -529,12 +529,19 @@ to proactively take advantage of changes in technologies as they emerge.
 
 ### PBS
 
-https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL3wVmwRSQ38q8DaE_t0-0zfHwuYRQO12d
+<a target="_blank" href="https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL3wVmwRSQ38q8DaE_t0-0zfHwuYRQO12d">On YouTube</a>:
 PBS Crash Course Computer Science Preview from 2017
+provides illustrations and examples from a child's point of view.
 
 ### Khan Academy
 
-KhanAcademy.org
+https://KhanAcademy.org
+provides in-depth gamified tutorials online, for free, on the full range of subjects that include
+many of the AP STEM subjects. Courses related to computer science:
+
+    * <a target="_blank" href="https://www.khanacademy.org/college-careers-more/internet-safety">Internet safety</a>
+    * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science">Computer science theory</a> (Algorithms, Cryptography, Information theory)
+    * <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles">AP College Computer Science Principles</a>
 
 ### CS50 Harvard
 
