@@ -27,11 +27,17 @@ to graduate sooner,<br />
 to build a more impressive resume for jobs,<br />
 students, while still in high school, can earn college credits:
 
-1. Take classes on-line at colleges which accept high school students:
+1. Take classes on-line at community colleges which accept high school students.
 
-2. Attend a nearby community college on-site within "duel enrollment" programs administered at authorized Prometric testing centers, mostly on college campuses.
+2. Attend a nearby community college on-site within "duel enrollment" programs so credits earned apply to both high school and university graduation requirements.
 
-3. Score high enough on credit-by-examination CLEP, DSST (DANTES Subject Standardized Tests), IB, and Cambridge AICE. Such exams demonstrate student knowledge of college-level material without having to take the full course. CLEP are accepted at nearly 3,000 institutions.
+3. Score high enough on credit-by-examination:
+   * <a target="_blank" href="https://clep.collegeboard.org/clep-exams">College Board's CLEP (College-Level Examination Program®)</a> offered for $93 year-round for anyone (with parent approval at age 13 or below). They have a <a target="_blank" href="https://clep.collegeboard.org/clep-exams/information-systems">Information Systems exam</a>.
+   * IB
+   * Cambridge AICE in the UK.
+   <br /><br />
+
+   BTW: Those in the US military can <a target="_blank" href="https://dodwrlibraries.org/">study</a> and <a target="_blank" href="https://getcollegecredit.com/">take</a> (at Prometric testing centers) each exam once for free among <a target="_blank" href="https://www.dantes.mil/dsst/">DSST (DANTES Subject Standardized Tests)</a> with accreditation by the American Council on Education (ACE). Tests include: TECHNICAL WRITING, COMPUTING & INFORMATION TECHNOLOGY, MANAGEMENT INFORMATION SYSTEMS, FUNDAMENTALS OF CYBERSECURITY.
 
 4. Score high enough on AP (Advance Placement) exams by the College Board.
 
