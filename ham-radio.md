@@ -1,4 +1,4 @@
-ham-radio.md
+ham-radio.md 2024-05-14
 
 The FCC (Federal Communications Commission) in the US, and its equivalent in each country (except Yemen and North Korea) have rules on how its citizens can use the airwaves.
 
@@ -23,6 +23,8 @@ Back in the day, the nickname for someone with amature skills (not professional)
 
 Form factors: handheld, mobile, and base station units.
 
+Wireless radio manufacturers create transcivers to operate on specific frequency bands.
+
 <a target="_blank" href="https://www.youtube.com/watch?v=dnUH80LuySQ&t=12s">VIDEO</a>:
 Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
 
@@ -38,15 +40,93 @@ Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
     <br /><br />
 * Ham/Amateur radio operators licensed at the Technician level can build their own equipment.
 
-* Ham/Amateur radio operators licensed at the General level can communicate all over the world on additional frequencies.
+* Ham/Amateur radio operators licensed at the General level can communicate all over the world on additional frequencies. <a target="_blank" href="https://www.amazon.com/ARRL-General-Class-License-Manual/dp/162595171X/">$29.66 BOOK: AARL manual</a>
 
-* LoRa
+* LoRa (Long Range) is a proprietary patented technique to exchange <strong>text messages</strong> (which can include GPS locations) within a low-power but wide-area network (WAN) off cellular networks. It operates only at the <strong>915 MHz</strong> ISM radio band. No license needed. The longest is 150m, but line-of-sight range. Its low power, low bit rate, wireless platform used in <a target="_blank" href="https://www.instructables.com/LoRa-Mesh-Radio/">IoT applications</a>. Low bit rate means 0.3 to 50 kbits/s using spread spectrum modulation. [<a target="_blank" href="https://wifivitae.com/2022/12/14/lorawan-mapper-overview/">*</a>]
+
+
+
+   * <a target="_blank" href="https://www.thethingsnetwork.org/map">LoRa Meshtastic Repeater map</a>
+   <br /><br />
+
+* Cellular WiFi hotspots by AT&T, Verizon, T-Mobile, etc.
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=HMtnHC5z0Lg&t=6m40s">VIDEO</a>: <a target="_blank" href="https://members.calyxinstitute.org/enroll/device?">Calyx Institute</a> 4G & 5G hot spots off T-Mobile.
+
+
+
+## Wavelengths vs Frequencies
+
+Light travels at about a constant velocity of 300,000 kilometers per second.<br />
+That's 300 Meters per second.
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"><img alt="ham-wavelengths-1920x1047.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"></a>
+
+The 6-meter (50 MHz) band is excellent for meteor scatter communications, when radio waves are reflected back to Earth from the ionized atmospherem where meteorites enter Earth's atmosphere and burning up on entry.
+
+To convert between wavelength and frequency:
+
+   * 300 M/sec = 50 MHz * 6 meters
+   * 300 / 6 meters = 50 MHz
+   * 6 meters = 50 MHz / 300
+   <br /><br />
+
+
+
+## Maximum PEP Watts:
+
+1,500 Watts is the legal limit on most ham radio bands.
+
+* 1,500 W - EHF (Extremely High Frequency) 30-300 GHz
+* 1,500 W - SHF (Somewhat High Frequency) 3-30 GHz
+* 1,500 W - UHF (Ultra High Frequency) 300-3000 MHz
+* 1,500 W - VHF (Very High Frequency) 30-300 MHz
+* 200 watts - HF (High Frequency) 3-30 MHz
+* 5 watt MF (Medium Frequency) 300-3000 kHz
+* 1 watt LF (Low Frequency) 30-300 kHz
+<br /><br />
+
+To get 
+want the length of a half-wavelength antenna in inches based on a given wavelength. 
+
+Now that we have our frequency (50 MHz), let's use the tried-and-true formula for a half-wavelength antenna: 468 / frequency in MHz = antenna length in feet. 468 / 50 MHz = 9.36 feet. To convert to inches, take 9.36 feet x 12 = 112.32 inches.
+
+An <strong>antenna analyzer</strong> measures whether an antenna is resonant at the desired operating frequency. It puts out a tiny signal to determine the reactance, impedance, standing wave ratio and resonant frequency of the antenna being evaluated. In some cases it can detect a cable fault in your feed line.
+
+
+zzz
+
+## Modes of modulation
+FCC Rule §2.201 on emission types:
+* CW (Continuous Wave) = Morse Code
+* AM (Amplitude Modulation) upper SSB (Single Side Band) at 2.4 kHz 28.3 - 28.5 MHz (yellow on the chart). 3 Khz without carrier for long range 10 meter
+* FM (Frequency Modulation) uses 10-15 kHz bandwidth (2 meters+) vertical polarization. One signal
+* PM (Phase Modulation) created by connecting a reactance modulator to a transmitter RF amplier stage.
+* FSK (Frequency Shift Keying) is direct digital modulation of oscillator
+* FT8 (FSK with 8-tones)
+* QPSK (Quadrature Phase Shift Keying) with four phases shifted to create data bits
+* NTSC (National Television System Committee) video UHF analog fast scan 
+<br /><br />
+
+in mode U/V, the satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band.  LEO typically refers to satellites that are 1,000 km to as low as 160 km.
+
+Most VHF power amplifiers are multimode: operate SSB, CW, and FM. 
+
+At frequencies below 29.7 MHz, which includes all HF bands, the maximum bandwidth for a RTTY or data emission is 2.8khz. 
+
+* 20 KHz On 6 meters and 2 meters, max. symbol rate of 19.6k baud.
+* 100 KHz on 1.25 meters and 70 cm, max. symbol rate of 5.6k baud.
+* No limit on 30 cm and above.
+<br /><br />
+
+(most people don't use 6m)
+
+<a target="_blank" href="https://study.hamradioprep.com/courses/take/general-license-course-2023-2027/lessons/44705801-mixing-digital-microwave-video">VIDEO</a>:
+The combination of harmonnic frequencies create spurious output called <strong>intermodulation</strong>.
 
 ## Multi-band radio
 
 Retail radios have a short antenna that cannot be swapped out, so are limited to a range of about a mile.
-
-Radio manufacturers 
 
 <a target="_blank" href="https://www.youtube.com/watch?v=x_rhmFntwwc">VIDEO</a>:
 <a target="_blank" href="https://amzn.to/43X2UuS">$__ TidRadioTD-H3</a>3W from China
@@ -54,34 +134,16 @@ https://amzn.to/4asgKrQ It can receive FM Airband, NOAA channels. Can scramble (
 It contains a GMRS radio and ham radio "mode". Not waterproof. Everytime mode is changed, it resets to factory defaults, wiping out all custom settings. But you can backup and restore via its micro USB connector and CHIRP software. Hold side button to clone OTW. Hold down 1 to detect nearby frequencies.
 
 
-## Digital LoRa Meshtastic
-
-LoRa (Long Range) is a proprietary patented technique to exchange <strong>text messages</strong> (about GPS locations) within a low-power wide-area network (WAN) off cellular networks. It operates at the <strong>915 MHz</strong> ISM radio band. So no license is needed.
-
-Its technology is based on spread-spectrum modulation technique derived from chip spread spectrum (CSS) developed by Cycleo of Grenoble, France and acquired by Semtech, the founding member of the LoRA alliance.
-
-<strong>Meshtastic</strong> chips within firmware enable a mesh network using LoRa.
-
-Devices (such as the <a target="_blank" href="https://beartooth.com/products/beartooth-mk-ii">$2,498 MK II</a>) bridge LoRa with Bluetooth and WiFi.
-
-ATAK (Android )
-On Android and iOS 
-Flash firmware
-Battery Run 3 days
-Supports wifi & wifi
-
-https://www.youtube.com/watch?v=EdqF9ZxWjmE
-
-
-
-
-HF reception depends on many factors such as location, time of year, time of day, the frequency being used, and atmospheric and ionospheric propagation conditions. 
 
 ## Repeaters
 
-* http://mygmrs.com
+HF reception depends on many factors, such as location, time of year, time of day, the frequency being used, and atmospheric and ionospheric propagation conditions. 
+
+A FM VHF packet repeater is called a digipeater.
 
 [RadioReference.com's database of 224K frequencies](https://www.radioreference.com/db/) 
+
+* http://mygmrs.com
 
 * http://repeaterbook.com searches within QRZ, HamOTH, HamCall, Wiki Search as well
 
@@ -91,18 +153,74 @@ HF reception depends on many factors such as location, time of year, time of day
 
     * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=DStar">D-Star Repeaters</a>
 
-    * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=DMR">DMR Repeaters</a>
+    * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=DMR">DMR (Digital Mobile Radio) Repeaters</a> for "walkie talkies" which can display call signs, addresses. DMR color codes are similar to CTCSS or DCS codes.
+    
+    C4FM GPS walkie-talkies can only display call signs and distance information. 
 
     * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=P-25">APCO P-25 Repeaters</a>
 
     * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=YSF">Yaesu System Fusion Repeaters</a>
 
+Common repeater Frequency offset between send and receive in the 70m band is Plus or Minus 5 MHz.
+
+
+## Digital bridge to the internet
+
+Several ways to use digitial technologies with analog voice:
+
+   * VoIP Link
+   * Text LoRa Meshtastic
+   * WIRES-X
+   <br /><br />
+
+
+### EchoLink
+
+<a target="_blank" href="https://www.youtube.com/watch?v=fB1ozVc2WKM&pp=ygUHRWNvbGluaw%3D%3D">VIDEO</a>:
+Ecolink software runs on Windows and Android which streams VoIP data through the internet to a <strong>ham/amateur band</strong> base station.
+
+### LoRa Meshtastic
+
+LoRa technology is based on spread-spectrum modulation technique derived from chip spread spectrum (CSS) tech developed by Cycleo (of Grenoble, France), then acquired by Semtech, the founding member of the LoRA alliance.
+
+LoRA devices connect with other LoRa devices on the license-free narrow ISM (industrial, Scientific, Medical) band to create a mesh network by <a target="_blank" href="https://meshtastic.org/">Meshtastic.org</a>. So that can be used "off-grid" in case the internet goes down.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=EdqF9ZxWjmE">VIDEO</a>:
+LoRA devices can communicate through the internet by connecting with Bluetooth on Android and iOS mobile phones which also have WiFi that connect to the internet. That and the <a target="_blank" href="https://beartooth.com/products/beartooth-mk-ii">$2,498 MK II</a>.
+
+A lower-cost LoRa board comes with a battery and antenna.
+Solder to it a small LED screen.
+Enclosures can be 3D printed.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=x99R78fkSg0&list=PLshzThxhw4O4--klTjqDzR6KeJyqXNNXI">VIDEO</a>:
+The open-sourced Team Awareness Kit (TAK) improves situational awareness by both DoD military and <a target="_blank" href="https://tak.gov/solutions/recreation">civilian use</a>.
+
+### Winlink
+
+contact an automated Winlink ??? station to send a message.
+
+### Wires-X
+
+https://systemfusion.yaesu.com/what-is-system-fusion/
+Yeasu's "Fusion" solution uses continuous envelope <strong>C4FM 4-level FSK</strong> digital modulation technology to transmit digital voice and data over Amateur radio bands. 
+
+The first version of the American digital intercom mechanism Project 25 (P25 for short) adopted C4FM, 
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715636248/ham-wiresx-620x243_sid8du.jpg"><img alt="ham-wiresx-620x243.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715636248/ham-wiresx-620x243_sid8du.jpg"></a>
+
+http://c4fm.xyz/
+The RF signal is amplified and transmitted to space through the antenna. The RF signal received by the receiver and passes through the frequency modulation demodulator, often referred to as a frequency discriminator circuit in analog mode. The demodulated result is a C4FM baseband signal whose amplitude varies between four voltage levels. After logical judgment and transformation of the level, a two-digit binary digit sequence is obtained. In order to improve the anti-interference performance, the process of extracting the digital signal from the four-level waveform usually uses a certain algorithm instead of using a simple voltage comparator. It is not substantially different from the well-known traditional analog FM, except that it is not an analog signal of voice that modulates the radio frequency input signal, but a digital signal with only four-level states.
+
+As with D-STAR, C4FM uses FDMA (???) digital modulation mode with channel interval at 12.5 kHz.  C4FM FDMA provides a data transfer rate of 9.6 kbps.
 
 ## Baofeng
 
 <a target="_blank" href="https://www.youtube.com/watch?v=fnnXa-nV-jc">VIDEO</a>:
 <a target="_blank" href="https://www.amazon.com/gp/product/B007H4VT7A/">$18.35</a>
 BAOFENG UV-5R Dual Band Two Way Radio (Black), 144-148MHz & 420-450MHz
+
+For $17, add a 15-inch Nagoya NA-771 antenna for 2.15 dBi gain on UHF.
+The mag-mount Tram 1185 antenna 
 
 Baofeng has a VFO (Variable Frequency Oscillator)
 for National Simplex frequencies used for "calling" 
@@ -182,6 +300,8 @@ HamRadioPrep.com (on <a target="_blank" href="https://www.youtube.com/@HamRadioP
 by Jim (N4BFR) at 1309 Coffeen Ave Ste 1956, Sheridan WY 82801
 https://www.facebook.com/groups/HamRadioPrep/
 
+https://hamstudy.com/freebasic/index-bf.html
+
 hamfest, a large electronics flea market where you can buy and sell used ham equipment and other electronics, 
 
 ## Field Days
@@ -217,11 +337,13 @@ Long-peroidic TV antennas have wide-bandwidth frequencies from 6-meters at 54 Mh
 
 ## Band Plans
 
-Some of the most popular ham bands include:
-Band Name 	Frequency Range 	Band Type
-2 meters 	144-148 MHz 	VHF
-70 centimeters 	420-450 MHz 	UHF
-20 meters 	14-14.35 MHz 	HF
+Some of the most popular ham bands include:<br />
+Band Name 	Frequency Range 	Band Type<br />
+2 meters 	144-148 MHz 	VHF<br />
+70 centimeters 	420-450 MHz 	UHF<br />
+20 meters 	14-14.35 MHz 	HF<br />
+
+The approximate bandwidth of a VHF repeater FM phone signal?
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715476118/ham-aarl-band-chart-2222x1676_dapr67.png"><img align="right" alt="ham-aarl-band-chart-2222x1676.png" width="200" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715476118/ham-aarl-band-chart-2222x1676_dapr67.png"></a>
 Click to expand the Band Plan chart from AARL:
@@ -233,54 +355,13 @@ Click to expand the Band Plan chart from AARL:
 
 Most common FSK shift is 170 Hz.
 
-contact an automated Winlink ??? station to send a message.
-
 The lowest phone is operated at 7.178 Hz, which includes the ___ to avoid being out of band.
 Below 7.175 Hz is reserved for Extra operators.
 
-## Modes of modulation
-FCC Rule §2.201 on emission types:
-* CW (Continuous Wave) = Morse Code
-* AM (Amplitude Modulation) upper SSB (Single Side Band) at 2.4 kHz 28.3 - 28.5 MHz (yellow on the chart). 3 Khz without carrier for long range 10 meter
-* FM (Frequency Modulation) uses 10-15 kHz bandwidth (2 meters+) vertical polarization. One signal
-* PM (Phase Modulation) created by connecting a reactance modulator to a transmitter RF amplier stage.
-* FSK (Frequency Shift Keying) is direct digital modulation of oscillator
-* FT8 (FSK with 8-tones)
-* QPSK (Quadrature Phase Shift Keying) with four phases shifted to create data bits
-* NTSC (National Television System Committee) video UHF analog fast scan 
-<br /><br />
-
-C4FM digital stations 
-
-in mode U/V, the satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band.  LEO typically refers to satellites that are 1,000 km to as low as 160 km.
-
-Most VHF power amplifiers are multimode: operate SSB, CW, and FM. 
-
-At frequencies below 29.7 MHz, which includes all HF bands, the maximum bandwidth for a RTTY or data emission is 2.8khz. 
-
-* 20 KHz On 6 meters and 2 meters, max. symbol rate of 19.6k baud.
-* 100 KHz on 1.25 meters and 70 cm, max. symbol rate of 5.6k baud.
-* No limit on 30 cm and above.
-<br /><br />
-
-(most people don't use 6m)
-
-<a target="_blank" href="https://study.hamradioprep.com/courses/take/general-license-course-2023-2027/lessons/44705801-mixing-digital-microwave-video">VIDEO</a>:
-The combination of harmonnic frequencies create spurious output called <strong>intermodulation</strong>.
+<a target="_blank" href="https://www.youtube.com/watch?v=wt5wZhC5crI&t=126s">VIDEO</a>:
+The first contact on ham radio to the Space Shuttle Columbia STS-9 occured on 1983 on 144.55 MHz between astronaut <a target="_blank" href="https://www.amsat.org/first-ham-in-space-amsat-life-member-owen-garriott-w5lfl-sk/">Owen Garriott</a> and WA1JXN (Lance Collister) in Montana.
 
 
-## Maximum PEP Watts:
-
-1,500 Watts is the legal limit on most ham radio bands.
-
-* 1,500 W - EHF (Extremely High Frequency) 30-300 GHz
-* 1,500 W - SHF (Somewhat High Frequency) 3-30 GHz
-* 1,500 W - UHF (Ultra High Frequency) 300-3000 MHz
-* 1,500 W - VHF (Very High Frequency) 30-300 MHz
-* 200 watts - HF (High Frequency) 3-30 MHz
-* 5 watt MF (Medium Frequency) 300-3000 kHz
-* 1 watt LF (Low Frequency) 30-300 kHz
-<br /><br />
 
 2400-Hz bandwidth for the best signal-to-noise ratio for SSB reception.
 
@@ -295,8 +376,9 @@ General or Extra class HF operators can use linear or tube amps to boost transmi
 
 Use a RF preamplifier between the antenna and the receiver to boost weak signal reception.
 
-VHF/UHF transceiver’s “reverse” function is To listen on a repeater’s input frequency
+VHF/UHF transceiver’s “reverse” function is To listen on a repeater’s input frequency.
 
+counterpoise???
 
 ## FM
 
@@ -374,12 +456,12 @@ The "skin effect": In AC circuits, current flows on the outside of the conductor
 <strong>Inductance</strong> is the ability to store energy in a magnetic field.
 The basic unit of inductance is the <strong>henry</strong>. 
 
-An <strong>inductor</strong> stores energy in a magnetic field when current flows through it. 
+An <strong>inductor</strong> stores electrical energy in a <strong>magnetic</strong> field when current flows through it. 
 Generally, the more turns of a coil, the higher the inductance.
 Inductors are made of a coil of wire such as from small copper tubing.
 So inductors are also called chokes or coils. 
 
-A <strong>capacitor</strong> stores electrical energy in an electrical circuit. 
+A <strong>capacitor</strong> stores electrical energy in an <strong>electrical</strong> circuit. 
 Its symbol is a line and a frown.
 The conductive surfaces of a capacitor may be foil, film or metal 
 separated by glass, ceramic, air or other elements that provide insulation.
@@ -395,6 +477,11 @@ They are used as a “low / high” switch in a circuit.
 A <strong>bettery</strong> ???
 
 <a target="_blank" href="https://study.hamradioprep.com/courses/take/general-license-course-2023-2027/lessons/44702611-capacitance-inductance-reactance-video">VIDEO</a>
+
+Electrodes of bipolar junction transister -
+energy from the ollector to emitter is controlled by the base.
+
+
 
 ## Digital modes
 
@@ -435,8 +522,6 @@ users are operating their transceivers into a digital mode hot spot.
 A DMR "code plug" contains the programming information
 https://dstarusers.org/viewrepeater.php?system=K7EFA
 Billings
-
-A FM VHF packet repeater is called a digipeater.
 
 https://www.repeaterbook.com/index.php/en-us/
 
@@ -596,13 +681,6 @@ Around airports, antennas below 200 feet tall do not need FCC notification.
 A <strong>band-pass filter</strong> filters out incoming signal.
 Attenuation is the signal lost in the passband.
 
-Light travels at about a constant of 300,000 kilometers per second.
-
-To get 
-want the length of a half-wavelength antenna in inches based on a given wavelength. First let's get our wavelength to a frequency using 300 divided by wavelength in meters, which is equal to the frequency in megahertz. 300 / 6 meters = 50 MHz. Now that we have our frequency (50 MHz), let's use the tried-and-true formula for a half-wavelength antenna: 468 / frequency in MHz = antenna length in feet. 468 / 50 MHz = 9.36 feet. To convert to inches, take 9.36 feet x 12 = 112.32 inches.
-
-An <strong>antenna analyzer</strong> measures whether an antenna is resonant at the desired operating frequency. It puts out a tiny signal to determine the reactance, impedance, standing wave ratio and resonant frequency of the antenna being evaluated. In some cases it can detect a cable fault in your feed line.
-
 On a 80-meter dipole would have a height of 8 meters (26 feet) above ground.
 
 <a target="_blank" href="https://study.hamradioprep.com/courses/take/general-license-course-2023-2027/lessons/44705634-digital-circuits-video">VIDEO</a>
@@ -642,11 +720,6 @@ AWS (American Wireguage Standard) - the higher the number the smaller the wire:
 * 12 AWG is minimum for a 20 ampre circuit breakerx
 * 14 AWG limit circuit breaker to 15 ampres
 <br /><br />
-
-
-## Meteor Scatter
-
-Communications via meteor scatter occurs when radio waves are reflected back to Earth from the ionized atmosphere because meteorites are entering Earth's atmosphere and burning up on entry. The 6-meter, or 50 MHz, band is excellent for meteor scatter communications because of its wavelength.
 
 
 

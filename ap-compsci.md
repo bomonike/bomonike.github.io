@@ -32,12 +32,14 @@ students, while still in high school, can earn college credits:
 2. Attend a nearby community college on-site within "duel enrollment" programs so credits earned apply to both high school and university graduation requirements.
 
 3. Score high enough on credit-by-examination:
-   * <a target="_blank" href="https://clep.collegeboard.org/clep-exams">College Board's CLEP (College-Level Examination Program®)</a> offered for $93 year-round for anyone (with parent approval at age 13 or below). They have a <a target="_blank" href="https://clep.collegeboard.org/clep-exams/information-systems">Information Systems exam</a>.
+   * <a target="_blank" href="https://clep.collegeboard.org/clep-exams">College Board's CLEP (College-Level Examination Program®)</a> have $93 year-round exams for anyone (with parent approval at age 13 or below). Usually taken in undergrad years. They have a <a target="_blank" href="https://clep.collegeboard.org/clep-exams/information-systems">Information Systems exam</a>, <a target="_blank" href="https://clep.collegeboard.org/clep-college-credit-policy-search">accepted</a> on score 50-65 or higher. 
+   PROTIP: The College Board Access Code is 970000 for "US Territories Homeschool" students, 000003 (in the U.S. or U.S. territories) or 000004 (in international locations) for those no longer in school or do not have a high school code. 877-274-6474
+
    * IB
    * Cambridge AICE in the UK.
    <br /><br />
 
-   BTW: Those in the US military can <a target="_blank" href="https://dodwrlibraries.org/">study</a> and <a target="_blank" href="https://getcollegecredit.com/">take</a> (at Prometric testing centers) each exam once for free among <a target="_blank" href="https://www.dantes.mil/dsst/">DSST (DANTES Subject Standardized Tests)</a> with accreditation by the American Council on Education (ACE). Tests include: TECHNICAL WRITING, COMPUTING & INFORMATION TECHNOLOGY, MANAGEMENT INFORMATION SYSTEMS, FUNDAMENTALS OF CYBERSECURITY.
+   BTW: Those in the US military can <a target="_blank" href="https://dodwrlibraries.org/">study</a> and <a target="_blank" href="https://getcollegecredit.com/">take</a> (at Prometric testing centers) each exam once for free <a target="_blank" href="https://www.dantes.mil/dsst/">DSST (DANTES Subject Standardized Tests)</a> accreditated by the American Council on Education (ACE). Tests include: TECHNICAL WRITING, COMPUTING & INFORMATION TECHNOLOGY, MANAGEMENT INFORMATION SYSTEMS, FUNDAMENTALS OF CYBERSECURITY.
 
 4. Score high enough on AP (Advance Placement) exams by the College Board.
 
@@ -497,9 +499,10 @@ All these are free unless noted otherwise:
 12. Python Jupyter coding to run Machine Learning in cloud environments (freemium)
 13. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
 
-14. Workflow automation (GitHub Actions, Jenkins/Cloudbees cloud)
-15. OnShape 3D CAD printing and design (freemium)
-16. Internet of Things (IoT) to quantify and control physical objects (with AI)
+14. REST API programming (Postman and other tools)
+15. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
+16. OnShape 3D CAD printing and design (freemium)
+17. Internet of Things (IoT) to quantify and control physical objects (with AI)
 <br /><br />
 
 Developing basic level skill with the above would enable students to subsequently focus on 

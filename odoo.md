@@ -171,3 +171,19 @@ Garden Valley, ID
 https://www.upwork.com/freelancers/asimzaidi
 $45/hr Asim Z.
 
+## API
+
+<a target="_blank" href="https://www.odoo.com/documentation/17.0/developer/reference/external_api.html">Odoo documentation</a> explains how to do XMLRPC.
+But JSON will be used for controllers.
+
+https://github.com/OCA/odoorpc
+Python module to pilot your Odoo servers through JSON-RPC.
+
+https://mart-e.be/2024/01/utiliser-api-odoo-python
+calling RPC 
+
+by <a target="_blank" href="https://www.linkedin.com/in/martintrigaux/">Martin Trigaux</a>,
+developer at Odoo
+
+https://softwareconnect.com/erp/cloud-vs-on-premise/
+Decision Tree
