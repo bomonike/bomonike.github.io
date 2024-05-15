@@ -794,3 +794,34 @@ by The AWS Ninja
 Vercel
 
 <a target="_blank" href="https://www.youtube.com/watch?v=xZBJKXh6Lco">VIDEO</a>: The Largest Botnet Ever (GreatCanon)  Mantis
+
+<hr />
+
+## Qualys.com
+
+https://www.linkedin.com/company/qualys/ lists the Foster City, CA Computer and Network Security company as having less than 5,000 employees (<a target="_blank" href="https://www.glassdoor.com/Reviews/Qualys-Reviews-E30935.htm">58% rating</a>)
+
+Yet, Qualys provides <a target="_blank" href="https://www.qualys.com/training/">free tutorials and free certifications</a> on each of their products, with free cloud time:
+
+1. Cloud Security Assessment and Response 
+2. Endpoint Detection and Response (Secure Endpoints) 
+3. API Fundamentals 
+4. Cloud Agents 
+5. Container Security 
+6. File Integrity Monitoring 
+7. Web Application Scanning
+8. <a target="_blank" href="https://www.qualys.com/training/course/cybersecurity-asset-management-csam/">CyberSecurity Asset Management (CSAM)</a>
+* <a target="_blank" href="">Vulnerability Management, Detection, and Response (VMDR) with TruRisk</a> consists of four applications Asset Management, Vulnerability Management, Threat Protection, and Patch Management.
+8. Vulnerability Management (Foundation, Detection, and Response) 
+   * Global Asset View and Management 
+   * Scanning Strategies  
+   * Reporting Strategies 
+   * Patch Management 
+
+9. Policy Compliance (Foundation & Deeper Knowledge) 
+10. PCI Compliance (Foundation & Deeper Knowledge) 
+11. Endpoint Detection and Response (Foundation & Deeper Knowledge) 
+
+Videos are served via Vimeo.
+
+

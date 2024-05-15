@@ -763,6 +763,11 @@ Such operate on 50.1 MHz to 50.125 MHz.
 azimuthal projection maps show true bearings and distances from a specific location
 It's used by hams to find the short-path between two stations. If an amateur turns their antenna 180 degrees, they would be using the long path to transmit.
 
+## End conversations
+
+Ending a conversation or transmission with "73" means "Best Regards" or goodbye. 
+This harks back to the early days of landline Morse code telegraphy in the 1800s, when Telegraphers used numerical codes to represent common phrases to speed up transmission. BTW: In Morse code, "73" forms a palindromic sequence that is the same forwards and backwards, adding to its appeal and memorability for ham operators.
+
 ## Contesting
 
 AARL section
