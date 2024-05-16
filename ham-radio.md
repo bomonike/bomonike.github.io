@@ -131,7 +131,7 @@ Retail radios have a short antenna that cannot be swapped out, so are limited to
 <a target="_blank" href="https://www.youtube.com/watch?v=x_rhmFntwwc">VIDEO</a>:
 <a target="_blank" href="https://amzn.to/43X2UuS">$__ TidRadioTD-H3</a>3W from China
 https://amzn.to/4asgKrQ It can receive FM Airband, NOAA channels. Can scramble (not encryption).
-It contains a GMRS radio and ham radio "mode". Not waterproof. Everytime mode is changed, it resets to factory defaults, wiping out all custom settings. But you can backup and restore via its micro USB connector and CHIRP software. Hold side button to clone OTW. Hold down 1 to detect nearby frequencies.
+It contains a GMRS radio and ham radio "mode". Not waterproof. Everytime mode is changed, it resets to factory defaults, wiping out all custom settings. But you can backup and restore via its micro USB connector and low-bit-rate chirp (echolocation like the way dolphins and bats communicate). Hold side button to clone OTW. Hold down 1 to detect nearby frequencies.
 
 
 

@@ -23,7 +23,12 @@ Being in Belgium, the software has been internationalized for localization into 
 
 Support to partners are from India.
 
-__ annual conf
+https://www.glassdoor.com/Reviews/Odoo-Reviews-E749314.htm
+
+<a target="_blank" href="https://www.linkedin.com/company/odoo/insights/">LinkeIn reports that</a>
+while there has been a 83% 2-year growth in 22-24, the Median employee tenure is 1.6 years.
+
+__ annual conf ???
 
 ## Pricing
 
