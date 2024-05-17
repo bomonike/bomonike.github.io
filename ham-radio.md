@@ -8,8 +8,15 @@ The US NIST operates two Short Wave radio stations which broadcast atomic clock 
 <a target="_blank" href="https://www.nist.gov/pml/time-and-frequency-division/time-distribution/radio-station-wwv">WWV</a> near Fort Collins, Colorado & WWVH in Hawaii
 10 000 W on 5 MHz, 10 MHz, and 15 MHz; and 2500 W on 2.5 MHz and 20 MHz.
 
-NOAA weather service.
-
+Listen to https://www.weatherusa.net/radio from <a target="_blank" href="https://www.aoml.noaa.gov/general/graphics/lib/radio.html">NOAA weather service</a> 29 VHF-FM transmitters have a 40 mile range. [<a target="_blank" href="https://en.wikipedia.org/wiki/NOAA_Weather_Radio">Wikipedia</a>: daily schedule]
+   1. 162.550 MHz on 1,000 watts in SF bay
+   2. 162.400 MHz
+   3. 162.475 MHz
+   4. 162.425 MHz
+   5. 162.450 MHz
+   6. 162.500 MHz
+   7. 162.525 MHz
+   <br /><br />
 Increasingly, Police and Fire use encrypted communications on P25 systems.
 
 Search and Rescue.
@@ -60,7 +67,7 @@ That's 300 Meters per second.
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"><img alt="ham-wavelengths-1920x1047.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"></a>
 
 To convert between wavelength and frequency for Technician class Ham raio bands:
-   * 300 M/sec/ 10 meters ~ 440 MHz
+   * 300 M/sec/ 10 meters ~ 440 MHz (for phones)
    * 300 M/sec / 2 meters ~ 144 MHz
    * 300 M/sec / 6 meters ~ 50 MHz
    <br /><br />
@@ -129,7 +136,9 @@ FCC Rule §2.201 on emission types:
 * NTSC (National Television System Committee) video UHF analog fast scan 
 <br /><br />
 
-in mode U/V, the satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band.  LEO typically refers to satellites that are 1,000 km to as low as 160 km.
+In mode U/V, the satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band.  A <strong>space station</strong> is any amateur state more than 50 km above earth.
+Satellites (such as SpaceX) at "Low Earth Obit" (LEO) are from 160 km (100 miles) but never more than about one-third of the radius of Earth about 2,000 kilometers (1,200 mi).
+
 
 Most VHF power amplifiers are multimode: operate SSB, CW, and FM. 
 
@@ -246,8 +255,8 @@ For $17, add a 15-inch Nagoya NA-771 antenna for 2.15 dBi gain on UHF.
 The mag-mount Tram 1185 antenna 
 
 Baofeng has a VFO (Variable Frequency Oscillator)
-for National Simplex frequencies used for "calling" 
-   * 2 meters: 146.520 MHz
+for National Simplex frequencies used for "simplex" (point-to-point) calling REMEMBER:
+   * 2 meters: <strong>146.520 MHz</strong>
    * 1.25 meters: 223.500 MHz (program this on your tri-band Baofeng)
    * 70 centimeters: 446.000 MHz
    <br /><br />
@@ -273,6 +282,8 @@ Switchable 1W to 5W.
 1370 mAh Lithium-Ion Battery Pack that can be field-charged. Separate volume & squash controls. 
 BNC antenna connector for <a target="_blank" href="https://caatailantennas.com/products/wearable-tactical-antenna">$60 v2 Wearable Antenna (BNC-F to TNC-M Adapter)</a>.
 <a target="_blank" href="https://www.hamradio.com/detail.cfm?pid=H0-009346">adapter</a>
+
+<a target="_blank" href="https://www.youtube.com/watch?v=R6pL0ZyMuuQ&list=PLkoi40PWhXbtpeJ0Am_Uq49eJIqMgjPp4&index=4">YouTube series on VX-6</a>
 
 To encrypt audio, <a target="_blank" href="https://www.youtube.com/watch?v=hL-TrpGzEkg&list=PLZpc6PnzmzmEVE4u_8K9svKc1-CHi4tUC">VIDEO</a>:
 Interfaces with Android & PC with <a target="_blank" href="https://digirig.net/product/digirig-mobile/">$49.95 Digirig mobile</a> USB PnP Sound Device "to combine audio codec, serial CAT interface, and PTT control" after <a target="_blank" href="https://www.thetechprepper.com/digital-modes/digirig-baofeng-linux">installing Dire Wolf</a>.
@@ -325,7 +336,33 @@ https://www.facebook.com/groups/HamRadioPrep/
 
 https://hamstudy.com/freebasic/index-bf.html
 
+<a target="_blank" href="https://www.youtube.com/watch?v=FktSv3tDwA8&list=PL1KAjn5rGhixvvb_jMZFWmbP97-t9Kyxk&index=2">YouTube: Ham Radio Crash Course</a>
+explains through each sample question.
+
+Gordon West Study Book: https://amzn.to/3KZUKL8
+
+The Fast Track to Your Technician Class Ham Radio License: https://amzn.to/3kPWqfq
+
+TESTING ONLINE: https://hrcc.wiki/en/home/VETesting
+
 hamfest, a large electronics flea market where you can buy and sell used ham equipment and other electronics, 
+
+
+## Beacons
+
+<a target="_blank" href="https://www.youtube.com/watch?v=FktSv3tDwA8&list=PL1KAjn5rGhixvvb_jMZFWmbP97-t9Kyxk&index=2">VIDEO</a> 
+
+FCC Part 97 defines in the US <a target="_blank" href="https://en.wikipedia.org/wiki/International_Beacon_Project">18 automatically controlled beacons</a> which send 100-watt CW (Morse code)one-way every 3 minutes to assess ionospheric signal propagation characteristics at 28.20 - 28.30 MHz, 24.930, 21.150, 18.110, 14.100.
+   * The W6WX beacon in on Mt. Umunhum in the Santa Cruz mountains of California.
+   <br /><br />
+MAP TOOL: Instead of beacons actively transmitting signals, the reverse beacon network map at <a target="_blank" href="https://www.reversebeacon.net/main.php?rows=10&max_age=10,hours&hide=distance_km">reversebeacon.net</a> show the network of stations listening to the bands and reporting what stations they hear, when and how well.
+
+TOOL: Obtain the <a target="_blank" href="https://www.ncdxf.org/beacon/AzMap/index.html">
+heading and distance</a> to the 
+
+https://soundbytes.asia/proppy/radcom
+Proppy HF Circuit Prediction: Radcom
+
 
 ## Field Days
 
@@ -372,8 +409,8 @@ The approximate bandwidth of a VHF repeater FM phone signal?
 Click to expand the Band Plan chart from AARL:
 
 * red to show frequencies for RTTY (Radio TeleType) and data (max 2.8 kHz)
-* Orange shows fixed digital message forwarding is only on 219.0 to 220.0 MHz.
-* CW (Continuous Wave) = Morse Code digital mode at max 150 hz
+* Orange shows <strong>fixed digital message forwarding only on 219.0 to 220.0 MHz.</strong>
+* CW (Continuous Wave) = Morse Code digital mode at max 150 hz (50.0 - 50.1 MHz & 144.0-144.1 MHz)
 <br /><br />
 
 Most common FSK shift is 170 Hz.
@@ -387,10 +424,6 @@ The first contact on ham radio to the Space Shuttle Columbia STS-9 occured on 19
 
 
 2400-Hz bandwidth for the best signal-to-noise ratio for SSB reception.
-
-Obtain the <a target="_blank" href="https://www.ncdxf.org/beacon/AzMap/index.html">
-heading and distance</a> to the <a target="_blank" href="https://en.wikipedia.org/wiki/International_Beacon_Project">18 automatically controlled beacons</a> which send 100-watt CW one-way every 3 minutes to assess ionospheric signal propagation characteristics at 28.20 - 28.30 MHz, 24.930, 21.150, 18.110, 14.100.
-The W6WX beacon in on Mt. Umunhum in the Santa Cruz mountains of California.
 
 When using an amp like a VHF power amplifier, the SSB/CW-FM switch sets the amplifier for the selected mode. The transmitter mode needs to be set to match change it.
 

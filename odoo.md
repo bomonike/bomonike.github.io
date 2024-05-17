@@ -135,27 +135,58 @@ The $250 Odoo 17 Certification online, answer 70% of 120-questions in 1.5 hours 
 
 ## Modules
 
-1. Website
-1. CRM
-1. Studio
-1. Spreadsheet
-1. Project
-1. Survey
+Links to the public demo instance:
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/settings?cids=1">Settings</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/apps?cids=1">Apps</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/dashboards?cids=1&dashboard_id=13">Dashboards</a>
 
-1. Sales
-1. Marketing
-1. Purchases
-1. eCommerce (shopping, payments, Stripe, PayPal)
-1. POS (Point of Sale)
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/to-do?cids=1">To-do</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/discuss?cids=1">Discuss</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/knowledge/33?cids=1">Knowledge</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/documents?cids=1">Documents</a>
 
-1. Timesheet
-1. HR
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/contacts?cids=1">Contacts</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/employees?cids=1">Employees</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/recruitement?cids=1">Recruitment</a>
 
-1. Accounting
-1. Inventory
-1. MRP
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/appointments?cids=1">Appointments</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/calendar?cids=1">Calendar</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/time-off?cids=1">Time Off</a>
 
-no werehousing, field svc, emp scheduling, 
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/project?cids=1">Projects</a>
+
+1. <a target="_blank" href="https://demo5.odoo.com/">Website</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/events?cids=1">Events</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/email-marketing?cids=1">Email Marketing</a>
+
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/crm?cids=1">CRM</a> (Customer Relationship Management)
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/sales?cids=1">Sales</a>
+1. Gamification
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/sign?cids=1">Sign</a>
+
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/subscriptions?cids=1">Subscriptions</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/rental?cids=1">Rentals</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/action-1097?cids=1">Kitchen Display</a> ???
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/field-service?cids=1">Field Service</a>
+
+1. <a target="_blank" href="">eCommerce</a> (shopping, payments, Stripe, PayPal)
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/point-of-sale?cids=1">POS</a> (Point of Sale Registers) 
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/helpdesk?cids=1">Helpdesk</a> Tickets
+
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/expenses?cids=1">Expenses</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/purchase?cids=1">Purchase</a> (Payables???)
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/accounting?cids=1">Accounting</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/inventory?cids=1">Inventory</a>
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/work-centers?cids=1">Manufacturing</a> (MRP)
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/shop-floor?cids=1">Shop Floor</a>
+
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/employees-planning?cids=1">Planning</a> (Schedules)
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/timesheets?cids=1">Timesheets</a>
+
+1. <a target="_blank" href="">Spreadsheet</a> ???
+1. <a target="_blank" href="">Survey</a> ???
+
+No werehousing
 
 <a target="_blank" href="https://apps.odoo.com/apps/modules/category/Addon/browse">40,000 community-developed apps</a> by
 * <a target="_blank" href="https://apps.odoo.com/apps/modules/16.0/smile_audit/">Audit Trail</a> of create, write, unlink methods.
