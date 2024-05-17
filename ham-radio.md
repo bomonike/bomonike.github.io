@@ -34,17 +34,15 @@ Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
 
 * MURS (Multi-Use Radio Service) is limited to 2W on only 5 VHF channels designed for commercial use. The antenna on the BTech MURS-V1 can be replaced. Better out in the open.
 
-* <a target="_blank" href="https://www.fcc.gov/wireless/bureau-divisions/mobility-division/general-mobile-radio-service-gmrs">GMRS (General Mobile Radio Service)</a> adds 8 more channels (at 462-467 MHz) to FRS. 50W up to 35 miles = more range and clarity than CB. No-test $35 for 10 year family license. Text & GPS added in 2017.
+* <a target="_blank" href="https://www.fcc.gov/wireless/bureau-divisions/mobility-division/general-mobile-radio-service-gmrs">GMRS (General Mobile Radio Service)</a> adds 8 more channels (at 462-467 MHz) to FRS. <strong>50W max</strong> up to 35 miles = more range and clarity than CB. No-test $35 for 10 year family license. Text & GPS added in 2017.
 
     * <a target="_blank" href="https://www.repeaterbook.com/gmrs/index.php?state_id=none">U.S. GMRS Repeaters</a>, including all countries not listed above.
     <br /><br />
-* Ham/Amateur radio operators licensed at the Technician level can build their own equipment.
+* Ham/Amateur radio individual operators licensed at the Technician level can build their own equipment.
 
 * Ham/Amateur radio operators licensed at the General level can communicate all over the world on additional frequencies. <a target="_blank" href="https://www.amazon.com/ARRL-General-Class-License-Manual/dp/162595171X/">$29.66 BOOK: AARL manual</a>
 
 * LoRa (Long Range) is a proprietary patented technique to exchange <strong>text messages</strong> (which can include GPS locations) within a low-power but wide-area network (WAN) off cellular networks. It operates only at the <strong>915 MHz</strong> ISM radio band. No license needed. The longest is 150m, but line-of-sight range. Its low power, low bit rate, wireless platform used in <a target="_blank" href="https://www.instructables.com/LoRa-Mesh-Radio/">IoT applications</a>. Low bit rate means 0.3 to 50 kbits/s using spread spectrum modulation. [<a target="_blank" href="https://wifivitae.com/2022/12/14/lorawan-mapper-overview/">*</a>]
-
-
 
    * <a target="_blank" href="https://www.thethingsnetwork.org/map">LoRa Meshtastic Repeater map</a>
    <br /><br />
@@ -54,7 +52,6 @@ Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
 * <a target="_blank" href="https://www.youtube.com/watch?v=HMtnHC5z0Lg&t=6m40s">VIDEO</a>: <a target="_blank" href="https://members.calyxinstitute.org/enroll/device?">Calyx Institute</a> 4G & 5G hot spots off T-Mobile.
 
 
-
 ## Wavelengths vs Frequencies
 
 Light travels at about a constant velocity of 300,000 kilometers per second.<br />
@@ -62,14 +59,12 @@ That's 300 Meters per second.
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"><img alt="ham-wavelengths-1920x1047.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"></a>
 
-The 6-meter (50 MHz) band is excellent for meteor scatter communications, when radio waves are reflected back to Earth from the ionized atmospherem where meteorites enter Earth's atmosphere and burning up on entry.
-
-To convert between wavelength and frequency:
-
-   * 300 M/sec = 50 MHz * 6 meters
-   * 300 / 6 meters = 50 MHz
-   * 6 meters = 50 MHz / 300
+To convert between wavelength and frequency for Technician class Ham raio bands:
+   * 300 M/sec/ 10 meters ~ 440 MHz
+   * 300 M/sec / 2 meters ~ 144 MHz
+   * 300 M/sec / 6 meters ~ 50 MHz
    <br /><br />
+The 6-meter (50 MHz) band is excellent for meteor scatter communications, when radio waves are reflected back to Earth from the ionized atmospherem where meteorites enter Earth's atmosphere and burning up on entry.
 
 
 
@@ -78,13 +73,41 @@ To convert between wavelength and frequency:
 1,500 Watts is the legal limit on most ham radio bands.
 
 * 1,500 W - EHF (Extremely High Frequency) 30-300 GHz
-* 1,500 W - SHF (Somewhat High Frequency) 3-30 GHz
-* 1,500 W - UHF (Ultra High Frequency) 300-3000 MHz
+* 1,500 W - SHF (Super High Frequency) 3-30 GHz
+   * 9 cm =  3.300 -  3.500 GHz
+   * 5 cm =  5.650 -  5.925 GHz
+   * 3 cm = 10.000 - 10.500 GHz
+   * 1.2 cm = 24.000 - 24.250 GHz
+* 1,500 W - UHF (Ultra High Frequency) 300-3000 MHz 
+   * contains spliter frequencies of FRS simplex operation
 * 1,500 W - VHF (Very High Frequency) 30-300 MHz
-* 200 watts - HF (High Frequency) 3-30 MHz
+* 200 watts - HF (High Frequency) 3-30 MHz 
+   * "shortwave" for very long distance (transcontinental) communication
 * 5 watt MF (Medium Frequency) 300-3000 kHz
 * 1 watt LF (Low Frequency) 30-300 kHz
 <br /><br />
+
+### Shortwave
+
+   * Voice of America: 6.040, 7.335, 15.580 MHz
+   * BBC World Service: 5.875, 6.195, 9.410 MHz
+   * Radio Havana Cuba: 6.000, 6.165 MHz
+   * Radio Romania International: 9.535, 11.940 MHz
+
+   * 120 meter band: 2.3 - 2.495 MHz
+   * 90 meter band: 3.2 - 3.4 MHz
+   * 75 meter band: 3.9 - 4.0 MHz
+   * 60 meter band: 4.75 - 4.995 MHz
+   * 49 meter band: 5.9 - 6.2 MHz
+   * 41 meter band: 7.2 - 7.45 MHz
+   * 31 meter band: 9.4 - 9.9 MHz
+   * 25 meter band: 11.6 - 12.2 MHz
+   * 22 meter band: 13.57 - 13.87 MHz
+   * 19 meter band: 15.1 - 15.8 MHz
+   * 16 meter band: 17.48 - 17.9 MHz
+   * 13 meter band: 21.45 - 21.85 MHz
+   * 11 meter band: 25.67 - 26.1 MHz
+   <br /><br />
 
 To get 
 want the length of a half-wavelength antenna in inches based on a given wavelength. 
@@ -93,8 +116,6 @@ Now that we have our frequency (50 MHz), let's use the tried-and-true formula fo
 
 An <strong>antenna analyzer</strong> measures whether an antenna is resonant at the desired operating frequency. It puts out a tiny signal to determine the reactance, impedance, standing wave ratio and resonant frequency of the antenna being evaluated. In some cases it can detect a cable fault in your feed line.
 
-
-zzz
 
 ## Modes of modulation
 FCC Rule §2.201 on emission types:
@@ -162,6 +183,8 @@ A FM VHF packet repeater is called a digipeater.
     * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=YSF">Yaesu System Fusion Repeaters</a>
 
 Common repeater Frequency offset between send and receive in the 70m band is Plus or Minus 5 MHz.
+
+nggmrs.org of North Georgia
 
 
 ## Digital bridge to the internet
