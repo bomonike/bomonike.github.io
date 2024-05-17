@@ -88,7 +88,8 @@ The 6-meter (50 MHz) band is excellent for meteor scatter communications, when r
 * 1,500 W - UHF (Ultra High Frequency) 300-3000 MHz 
    * contains spliter frequencies of FRS simplex operation
 * 1,500 W - VHF (Very High Frequency) 30-300 MHz
-* 200 watts - HF (High Frequency) 3-30 MHz 
+
+* 200 watts - HF (High Frequency) 3-30 MHz  REMEMBER
    * "shortwave" for very long distance (transcontinental) communication
 * 5 watt MF (Medium Frequency) 300-3000 kHz
 * 1 watt LF (Low Frequency) 30-300 kHz
@@ -126,7 +127,7 @@ An <strong>antenna analyzer</strong> measures whether an antenna is resonant at 
 
 ## Modes of modulation
 FCC Rule §2.201 on emission types:
-* CW (Continuous Wave) = Morse Code
+* CW (Continuous Wave) = Morse Code - generally on the low side of a band.
 * AM (Amplitude Modulation) upper SSB (Single Side Band) at 2.4 kHz 28.3 - 28.5 MHz (yellow on the chart). 3 Khz without carrier for long range 10 meter
 * FM (Frequency Modulation) uses 10-15 kHz bandwidth (2 meters+) vertical polarization. One signal
 * PM (Phase Modulation) created by connecting a reactance modulator to a transmitter RF amplier stage.
@@ -818,6 +819,10 @@ Such operate on 50.1 MHz to 50.125 MHz.
 
 azimuthal projection maps show true bearings and distances from a specific location
 It's used by hams to find the short-path between two stations. If an amateur turns their antenna 180 degrees, they would be using the long path to transmit.
+
+## Start conversation
+
+QRF
 
 ## End conversations
 
