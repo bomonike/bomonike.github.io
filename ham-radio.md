@@ -25,6 +25,10 @@ Local TV and radio stations
 
 Back in the day, the nickname for someone with amature skills (not professional) was "ham".
 
+CTCSS (Continuous Tone Coded Squelch System) subaudible 
+
+DTSS (Dual Tone Multi-Freq)uency) 
+
 
 ## Wireless Tech
 
@@ -127,28 +131,37 @@ An <strong>antenna analyzer</strong> measures whether an antenna is resonant at 
 
 ## Modes of modulation
 FCC Rule §2.201 on emission types:
-* CW (Continuous Wave) = Morse Code - generally on the low side of a band.
+* CW (Continuous Wave) = Morse Code - generally on the low side of a band, using just 150 Hz of  bandwidth
 * AM (Amplitude Modulation) upper SSB (Single Side Band) at 2.4 kHz 28.3 - 28.5 MHz (yellow on the chart). 3 Khz without carrier for long range 10 meter
 * FM (Frequency Modulation) uses 10-15 kHz bandwidth (2 meters+) vertical polarization. One signal
 * PM (Phase Modulation) created by connecting a reactance modulator to a transmitter RF amplier stage.
-* FSK (Frequency Shift Keying) is direct digital modulation of oscillator
+* FSK (Frequency Shift Keying) is direct digital modulation of oscillation
 * FT8 (FSK with 8-tones)
 * QPSK (Quadrature Phase Shift Keying) with four phases shifted to create data bits
 * NTSC (National Television System Committee) video UHF analog fast scan 
 <br /><br />
 
-In mode U/V, the satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band.  A <strong>space station</strong> is any amateur state more than 50 km above earth.
+A <strong>space station</strong> is any amateur state more than 50 km above earth.
 Satellites (such as SpaceX) at "Low Earth Obit" (LEO) are from 160 km (100 miles) but never more than about one-third of the radius of Earth about 2,000 kilometers (1,200 mi).
+In mode U/V, the satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band. Your signal strength on the downlink should be about the same as the beacon.
 
+No music can be transmitted except to the Space Station 50 km above earth.
 
 Most VHF power amplifiers are multimode: operate SSB, CW, and FM. 
 
-At frequencies below 29.7 MHz, which includes all HF bands, the maximum bandwidth for a RTTY or data emission is 2.8khz. 
+At frequencies below 29.7 MHz, which includes all HF bands, 
+the maximum bandwidth for a RTTY or data emission is 2.8khz. 
 
 * 20 KHz On 6 meters and 2 meters, max. symbol rate of 19.6k baud.
 * 100 KHz on 1.25 meters and 70 cm, max. symbol rate of 5.6k baud.
 * No limit on 30 cm and above.
 <br /><br />
+
+AM transmissions are 6 kHz wide. But<br />
+FM transmissions can use 2.8 kHz with SSB (Single Side Band), using only one side of the Carrier Frequency is transmitted, for 
+   * LSB (Lower Side Band) is used at 10 MHz and higher
+   * USB (Upper Side Band) 
+
 
 (most people don't use 6m)
 
@@ -157,10 +170,11 @@ The combination of harmonnic frequencies create spurious output called <strong>i
 
 ## Multi-band radio
 
-Retail radios have a short antenna that cannot be swapped out, so are limited to a range of about a mile.
+Retail radios have a short antenna that cannot be swapped out, 
+so are limited to a range of about a mile.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=x_rhmFntwwc">VIDEO</a>:
-<a target="_blank" href="https://amzn.to/43X2UuS">$__ TidRadioTD-H3</a>3W from China
+<a target="_blank" href="https://amzn.to/43X2UuS">$__ TidRadioTD-H3</a> 3W from China
 https://amzn.to/4asgKrQ It can receive FM Airband, NOAA channels. Can scramble (not encryption).
 It contains a GMRS radio and ham radio "mode". Not waterproof. Everytime mode is changed, it resets to factory defaults, wiping out all custom settings. But you can backup and restore via its micro USB connector and low-bit-rate chirp (echolocation like the way dolphins and bats communicate). Hold side button to clone OTW. Hold down 1 to detect nearby frequencies.
 
@@ -193,6 +207,8 @@ A FM VHF packet repeater is called a digipeater.
     * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=YSF">Yaesu System Fusion Repeaters</a>
 
 Common repeater Frequency offset between send and receive in the 70m band is Plus or Minus 5 MHz.
+
+Rules for GMRS are at <a target="_blank" href="https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E?toc=1">Title 47, Part 95, Subpart E of the Code of Federal Regulations</a>. Call 1-888-CALLFCC (877) 480-3201 or https://apps.fcc.gov/cores/html/help.html
 
 nggmrs.org of North Georgia
 
@@ -269,6 +285,7 @@ Baofeng has memory slots for 128 frequencies
 It does not work on the 220 MHz. 
 But the Yesu VF6 & VF6VR do.
 
+
 To receive frequency coverage of 504kHz to 998.99MHz* available after a $35 MARS (Military Auxiliary Radio Service) mod to unlock transmit on 6m during emergencies. 
 <a target="_blank" href="https://www.youtube.com/watch?v=9yDJg57tPRw&t=8m26s">VIDEO</a>:
 Apply at The U.S. Army Network Enterprise Technology Command (NETCOM) 
@@ -331,7 +348,7 @@ The 80m band ITU split into 3 regions:
 
 ## Tutorials
 
-HamRadioPrep.com (on <a target="_blank" href="https://www.youtube.com/@HamRadioPrep">YouTube</a>)
+<a target="_blank" href="HamRadioPrep.com">HamRadioPrep.com</a> (on <a target="_blank" href="https://www.youtube.com/@HamRadioPrep">YouTube</a>)
 by Jim (N4BFR) at 1309 Coffeen Ave Ste 1956, Sheridan WY 82801
 https://www.facebook.com/groups/HamRadioPrep/
 
@@ -356,7 +373,7 @@ hamfest, a large electronics flea market where you can buy and sell used ham equ
 FCC Part 97 defines in the US <a target="_blank" href="https://en.wikipedia.org/wiki/International_Beacon_Project">18 automatically controlled beacons</a> which send 100-watt CW (Morse code)one-way every 3 minutes to assess ionospheric signal propagation characteristics at 28.20 - 28.30 MHz, 24.930, 21.150, 18.110, 14.100.
    * The W6WX beacon in on Mt. Umunhum in the Santa Cruz mountains of California.
    <br /><br />
-MAP TOOL: Instead of beacons actively transmitting signals, the reverse beacon network map at <a target="_blank" href="https://www.reversebeacon.net/main.php?rows=10&max_age=10,hours&hide=distance_km">reversebeacon.net</a> show the network of stations listening to the bands and reporting what stations they hear, when and how well.
+MAP TOOL: Instead of beacons actively transmitting signals, the Reverse Beacon Network (RBN) map at <a target="_blank" href="https://www.reversebeacon.net/main.php?rows=10&max_age=10,hours&hide=distance_km">reversebeacon.net</a> show the network of stations listening to the bands and reporting what stations they hear, when and how well. On CW and some digital modes.
 
 TOOL: Obtain the <a target="_blank" href="https://www.ncdxf.org/beacon/AzMap/index.html">
 heading and distance</a> to the 
@@ -366,6 +383,10 @@ Proppy HF Circuit Prediction: Radcom
 
 
 ## Field Days
+
+POTA (Parks On The Air) 
+
+SOTA (Summits On The Air)
 
 where many contests are held.
 
@@ -380,8 +401,9 @@ There is a 1-mile restriction around the 14 10-watt monitoring stations FCC oper
 Within 20 miles between <a target="_blank" href="https://www.fcc.gov/engineering-technology/electromagnetic-compatibility-division/frequency-coordination-canada-below">Line A and Line B</a> formed in a 1962/5 treaty between US and Canada, amateur stations may not transmit in the
    * 420-430 MHz subband of the 70cm Amateur band
    * "650" and "700" channels, either simplex or duplex, of GMRS stations
+   <br /><br />
+For GMRS: "Applicant/Licensee certifies that he or she will comply with the requirement that use of frequencies 462.650, 467.650, 462.700 and 467.700 MHz is not permitted near the Canadian border North of Line A and East of Line C. These frequencies are used throughout Canada and harmful interference is anticipated."
 
-No music can be transmitted except to the Space Station 50 km above earth.
 
 ## MUF/LUF
 
@@ -551,6 +573,17 @@ There are two different approaches:
 Packet radios use the AX.25 protocol standard based on the X.25 protocol. 
 The "A" in AX.25 stands for amateur radio.
 
+<a target="_blank" href="https://www.youtube.com/watch?v=HuvNxztn_j0&t=25s">VIDEO</a>
+aprs.org created in the 1980s
+<a target="_blank" href="https://www.youtube.com/watch?v=24hnEjIoZQA">VIDEO</a>:
+Kenwood TM-D710G
+APRS (Automatic Packet Reporting System) shows a map of locations allows real-time digital communication and tracking of objects using GPS coordinates.  It displays the locations of stations, objects, and moving assets on a map, providing a shared live view of the local area.
+In the US, Canada, Mexico its' 144.390 Mhz.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=hzdi9fTI1kE">VIDEO</a>:
+$65 Mobilinkd APRS Digipeater dongle for Android and $136 for iPhones, plus TNC cable
+APRSDroid app.
+
 IRLP (Internet Radio Linking Project) nodes by using DTMF (dual-tone multi-frequency) tones. A technique to connect amateur radio systems, such as repeaters, via the internet using Voice Over Internet Protocol (VoIP)
 
 FT8, or "Franke-Taylor design, 8-FSK modulation," 15 secs needs 
@@ -587,7 +620,7 @@ Yaesu System Fusion combines both analog and digital
 <a target="_blank" href="https://www.yaesu.com/jp/en/wires-x/index.php">WIRES-X</a>
 WIRES (Wide-coverage Internet Repeater Enhancement System) is an Internet communication system which expands the range of amateur radio communication. For WIRES-X, an amateur node station connecting to the Internet is used as the access point and connects the wireless communication to the Internet. Users' stations can communicate with other amateur stations all over the world using a node within the radio wave range.
 
-APRS (Automatic Packet Reporting System) sends GPS, text, weather.
+sends GPS, text, weather.
 
 Uses ARQ (Automatic Repeat Query)
 
@@ -705,6 +738,7 @@ Cold tin-lead solder (made for steel and other metals) result in a rough or lump
 ## Antennas
 
 <a target="_blank" href="https://study.hamradioprep.com/courses/take/general-license-course-2023-2027/lessons/44706097-directional-specialized-antennas-video">VIDEO</a>:
+<a target="_blank" href="https://www.youtube.com/watch?v=BLVAiGGk2j0&list=PL1KAjn5rGhixvvb_jMZFWmbP97-t9Kyxk&index=10">EXAM</a>:
 
 "Isotropic" antennas measures gain in dBi directionally.
 
@@ -779,12 +813,25 @@ AWS (American Wireguage Standard) - the higher the number the smaller the wire:
 <br /><br />
 
 
+## Conversational Etiquette
 
-## Overdeviating
+
+### Start conversation
+
+CQ means seeking all.
+
+call sign
+
+monitoring
+
+Q-codes - QRF request to increase power
+
+
+### Overdeviating
 
 Overdiating can be caused by talking too close to the microphone.
 
-## Contact Keep a Log
+### Contact Keep a Log
 
 Listen before you transmit.
 
@@ -820,11 +867,7 @@ Such operate on 50.1 MHz to 50.125 MHz.
 azimuthal projection maps show true bearings and distances from a specific location
 It's used by hams to find the short-path between two stations. If an amateur turns their antenna 180 degrees, they would be using the long path to transmit.
 
-## Start conversation
-
-QRF
-
-## End conversations
+### End conversations
 
 Ending a conversation or transmission with "73" means "Best Regards" or goodbye. 
 This harks back to the early days of landline Morse code telegraphy in the 1800s, when Telegraphers used numerical codes to represent common phrases to speed up transmission. BTW: In Morse code, "73" forms a palindromic sequence that is the same forwards and backwards, adding to its appeal and memorability for ham operators.
@@ -838,8 +881,13 @@ WRTC (World Radio Team Championship)
 https://www.arrl.org/grid-locator
 ARRL.org has grid locator maps
 
+## Retailers
+
+https://www.hamradio.com/detail.cfm
 
 
+
+## References
 
 https://www.cisa.gov/safecom/field-operations-guides
 
