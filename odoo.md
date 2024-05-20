@@ -301,12 +301,43 @@ Since Odoo touts itself as "open source", let's look at their source.
    git branch
    </pre>
 
+<hr />
+
+## Installation
+
+### Manifest
+
+When utility <tt>sdist</tt> processes the <tt>MANIFEST.in</tt> file, <tt>graft odoo</tt> specifies inclusion of non-Python files like data files, documentation, or other resources that are part of your Python package. By using graft, you don't have to list each individual file to be included in the MANIFEST.in file.
+
+The order of commands is crucial.
+
+The recursive-exclude * *.py[co] command in a MANIFEST.in file is used to exclude all bytecode files (files with .pyc or .pyo extensions) from being included in the source distribution created by the sdist command.
+
+https://marketplace.visualstudio.com/items?itemName=benspaulding.python-manifest-template
+"They can be tough because first you have to get the right configuration between all of the involved bits, such as setup.py, setup.cfg, and MANIFEST.in. Then you then need to play whack-a-mole testing your distribution or — actually probably and — take a very deep dive into distutils and setuptools code to figure out the nuance of the six template commands for including and excluding files."
+
+
+### .gitignore
+
+<tt>.gitignore</tt> does not contain "_DS_Store" from macOS because oDoo doesn't run on macOS.
+
+https://github.com/odoo/odoo/blob/17.0/setup/debinstall.sh
+contains <tt>apt-get update</tt>
+
+## Configuration
+
+
 1. Configuration (activations?)
 
    https://github.com/odoo/odoo/blob/master/.tx/config
 
 
-   ## Multi-lingual
+https://www.odoo.com/documentation/master/applications/studio.html
+
+addons ???
+
+
+## Multi-lingual
 
 1. Docs about Translating
 
@@ -317,23 +348,6 @@ Since Odoo touts itself as "open source", let's look at their source.
    https://github.com/odoo/odoo/tree/master/addons/fleet/i18n
 
 
-   ### Analyze Python dependencies:
-
-1. <tt>code requirements.txt</tt>
-
-   <pre># python3-* equivalent distributed in Ubuntu 22.04 and Debian 11
-   Babel==2.9.1  # min version = 2.6.0 (Focal with security backports)
-   </pre>
-
-   PROTIP: It's evident Odoo is paying attention to version numbers (and trying to stay ahead of security despite its app code dependent on prior versions) by <a target="_blank" href="https://www.perplexity.ai/search/what-are-security-A4GlMUzCRbOK0Kr6GnQYWA">security backports</a> from <a target="_blank" href="https://www.crowdstrike.com/cybersecurity-101/backporting/">services vendor CrowdStrike</a>. QUESTION: How comprehensive is Odoo's testing infrastructure? What percentage of code is covered by testing?
-
-1. Export SBOM about the 102 modules in the Dependency graph
-
-   https://github.com/odoo/odoo/network/dependencies
-
-   Analyze the SBOM spdx json file output.
-
-
 ## Python Packages
 
 There are two lists of Python packages below.
@@ -342,6 +356,8 @@ The first list are packages in the <strong>requirements.txt</strong> file
 as of v17.0 on May 20, 2024 at 
 https://github.com/odoo/odoo/blob/17.0/requirements.txt
 Each package name in the file is referenced in an <tt>import</tt> statement within a Python source code file. The description of each package was manually drafted from Snyk.com and other sources.
+
+PROTIP: It's evident Odoo is paying attention to version numbers (and trying to stay ahead of security despite its app code dependent on prior versions) by <a target="_blank" href="https://www.perplexity.ai/search/what-are-security-A4GlMUzCRbOK0Kr6GnQYWA">security backports</a> from <a target="_blank" href="https://www.crowdstrike.com/cybersecurity-101/backporting/">services vendor CrowdStrike</a>. QUESTION: How comprehensive is Odoo's testing infrastructure? What percentage of code is covered by testing?
 
 Some packages are mentioned more than once when a different version needs to be used based on the version of Python used.
 
@@ -384,7 +400,7 @@ Some packages are mentioned more than once when a different version needs to be 
 * <a target="_blank" href="https://pypi.org/project/python-dateutil/">python-dateutil</a> Extensions to the standard Python datetime module   [<a target="_blank" href="https://security.snyk.io/package/pip/python-dateutil/">Snyk</a>] ==2.8.1
 * <a target="_blank" href="https://pypi.org/project/python-ldap/">python-ldap</a>  Python modules for implementing LDAP clients ! [<a target="_blank" href="https://security.snyk.io/package/pip/python-ldap/">Snyk</a>] ==3.4.0  sys_platform != 'win32'  # min version = 3.2.0 (Focal with security backports)
 * <a target="_blank" href="https://pypi.org/project/python-stdnum/">python-stdnum</a> handle standardized numbers and codes   [<a target="_blank" href="https://security.snyk.io/package/pip/python-stdnum/">Snyk</a>] ==1.17
-* <a target="_blank" href="https://pypi.org/project/pytz/">pytz</a>  # no version pinning to avoid OS perturbations [<a target="_blank" href="https://security.snyk.io/package/pip/pytz  # no version pinning to avoid OS perturbations/">Snyk</a>] 
+* <a target="_blank" href="https://pypi.org/project/pytz/">pytz</a> World timezone definitions, modern and historical # no version pinning to avoid OS perturbations [<a target="_blank" href="https://security.snyk.io/package/pip/pytz  # no version pinning to avoid OS perturbations/">Snyk</a>] 
 * <a target="_blank" href="https://pypi.org/project/pyusb/">pyusb</a> Python USB access module   [<a target="_blank" href="https://security.snyk.io/package/pip/pyusb/">Snyk</a>] ==1.2.1
 * <a target="_blank" href="https://pypi.org/project/qrcode/">qrcode</a> QR Code image generator   [<a target="_blank" href="https://security.snyk.io/package/pip/qrcode/">Snyk</a>] ==7.3.1
 * <a target="_blank" href="https://pypi.org/project/reportlab/">reportlab</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/reportlab/">Snyk</a>] ==3.6.8  python_version <= '3.10'
@@ -402,12 +418,6 @@ Some packages are mentioned more than once when a different version needs to be 
 
 ## SBOM
 
-The Python packages below were discovered by looking into each package above and looking for what packages they referenced. So these packages are call indirect references.
-
-
-
-## Issues
-
 IMPORTANT: The commpany has no SOC2/27000 certification.
 
 QUESTION: What RBAC permissions?
@@ -417,6 +427,15 @@ Never Paid ransomware?
 1. Sign the CLA
 
    https://github.com/odoo/odoo/blob/master/doc/cla/sign-cla.md
+
+1. Export SBOM about the 102 modules in the Dependency graph
+
+   https://github.com/odoo/odoo/network/dependencies
+
+   Analyze the SBOM spdx json file output.
+
+
+The Python packages below were discovered by looking into each package above and identifying what packages each referenced, then (recursively) looking each of those references, building a "Suply Chain Dependency graph" to identify vulnerabilities within indirectly obtained dependencies.
 
 1. Dependency scans
 
@@ -434,35 +453,6 @@ reported vulnerabilities identified at:
 [17.0][SEC] Dependency jinja2 3.0.3 & 3.1.2 vulnerabilities #165053
 [17.0][SEC] Dependency pillow 9.0.1 & 9.4.0 vulnerabilities #165054
 [17.0][SEC] Dependency lxml 4.8.0 denial of service (or application crash) vulnerability #165055
-
-<hr />
-
-## Installation
-
-### Manifest
-
-When utility <tt>sdist</tt> processes the <tt>MANIFEST.in</tt> file, <tt>graft odoo</tt> specifies inclusion of non-Python files like data files, documentation, or other resources that are part of your Python package. By using graft, you don't have to list each individual file to be included in the MANIFEST.in file.
-
-The order of commands is crucial.
-
-The recursive-exclude * *.py[co] command in a MANIFEST.in file is used to exclude all bytecode files (files with .pyc or .pyo extensions) from being included in the source distribution created by the sdist command.
-
-https://marketplace.visualstudio.com/items?itemName=benspaulding.python-manifest-template
-"They can be tough because first you have to get the right configuration between all of the involved bits, such as setup.py, setup.cfg, and MANIFEST.in. Then you then need to play whack-a-mole testing your distribution or — actually probably and — take a very deep dive into distutils and setuptools code to figure out the nuance of the six template commands for including and excluding files."
-
-
-### .gitignore
-
-<tt>.gitignore</tt> does not contain "_DS_Store" from macOS because oDoo doesn't run on macOS.
-
-https://github.com/odoo/odoo/blob/17.0/setup/debinstall.sh
-contains <tt>apt-get update</tt>
-
-## Configuration
-
-https://www.odoo.com/documentation/master/applications/studio.html
-
-addons ???
 
 ## Testing
 
