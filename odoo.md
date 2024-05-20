@@ -1,7 +1,6 @@
-odoo.md
+# odoo
 
-With website 10m visits/month,
-Odoo.com in 2024 was rated the <a target="_blank" href="https://www.youtube.com/watch?v=_CxP3Lw_fUo">#9 CRM</a> by Eric Emberling
+<a target="_blank" href="https://www.odoo.com/">Odoo.com</a> receives 10m visits/month.
 
 Odoo in 2024 has 12 million users worldwide.
 Shell, McKinsey are customers
@@ -28,6 +27,8 @@ https://www.glassdoor.com/Reviews/Odoo-Reviews-E749314.htm
 
 <a target="_blank" href="https://www.linkedin.com/company/odoo/insights/">LinkeIn reports that</a>
 while there has been a 83% 2-year growth in 22-24, the Median employee tenure is 1.6 years.
+
+Odoo on 2024 was rated the <a target="_blank" href="https://www.youtube.com/watch?v=_CxP3Lw_fUo">#9 CRM</a> by Digital implementation guru Eric Emberling of 3rd Stage Consulting.
 
 ## Open Source?
 
@@ -72,7 +73,8 @@ The five types of Project (PSC) Teams:
 
 1. Community Tools Teams (providing support to members, e.g. Backport, OpenUpgrade, admin)
 
-
+<a target="_blank" href="https://www.odoo.com/documentation/17.0/administration/on_premise/community_to_enterprise.html">Switch from Community to Enterprise</a>
+begins with a backup, shutdown, install of the web_enterprise module,
 
 ## Pricing
 
@@ -349,6 +351,59 @@ Contrast Odoo's modules against the <a href="](https://en.wikipedia.org/wiki/Ent
 
 ## Installation
 
+As described at https://github.com/bomonike/odoo-utils/blob/main/README.md
+
+1. If the repo is private, get a GitHub token for read access at your GitHub's Account settings > Developer settings > Fine-grained Personal access tokens:
+
+   <a target="_blank" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>
+
+1. Click "Generate new token". Confirm access. Select Expiration "7 days". Give token a descriptive name (with a date)
+    
+1. Under "Select scopes", check the "read:packages" scope to grant read access to private repositories.
+1. Click green "Generate token". Click the icon to copy the generated token to paste.
+
+1. Open a Terminal instance to download shell script (instead of git clone):
+
+   ```
+   cd
+   cd Projects
+   export OS_TO_INSTALL="debian"  # or "ubuntu"
+   export GITHUB_READ_TOKEN="???"  # DO NOT echo this secret!
+   echo "OS_TO_INSTALL=\"${OS_TO_INSTALL}\" in $PWD"
+   # Actually: https://github.com/bomonike/odoo-utils/blob/main/odoo_install_debian.sh
+if [ -f "odoo_install_${OS_TO_INSTALL}.sh" ]; then
+   echo "using $(ls -al odoo_install_${OS_TO_INSTALL}.sh)"
+   sudo wget "https://raw.githubusercontent.com/bomonike/odoo-utils/main/odoo_install_${OS_TO_INSTALL}.sh?token=${GITHUB_READ_TOKEN}"
+      # odoo_install_debian.sh?token=ghp_l 100%[===...===>]  13.86K  --.-KB/s    in 0.1s
+fi
+   sudo chmod +x "odoo_install_${OS_TO_INSTALL}.sh"
+   ```
+
+2. Use text editor to modify the shell file if parameter values need to be made current going forward and thus updated in GitHub :
+
+   ```
+   OE_VERSION="17.0"
+   # Based on https://www.debian.org/releases/
+   OS_VERSION="12.0"
+   ```
+   
+3. Set custom values that should not be set in a public script:
+
+    ```
+    export OE_SUPERADMIN="admin"
+    export ADMIN_EMAIL="me@example.com"
+    ```
+
+5. Execute the script:
+
+   ```
+   sudo ./odoo_install_${OS_TO_INSTALL}.sh
+   ```
+
+
+https://github.com/odoo/odoo/blob/17.0/setup/debinstall.sh
+contains <tt>apt-get update</tt>
+
 ### Manifest
 
 When utility <tt>sdist</tt> processes the <tt>MANIFEST.in</tt> file, <tt>graft odoo</tt> specifies inclusion of non-Python files like data files, documentation, or other resources that are part of your Python package. By using graft, you don't have to list each individual file to be included in the MANIFEST.in file.
@@ -363,10 +418,11 @@ https://marketplace.visualstudio.com/items?itemName=benspaulding.python-manifest
 
 ### .gitignore
 
-<tt>.gitignore</tt> does not contain "_DS_Store" from macOS because oDoo doesn't run on macOS.
+NOTE: <tt>.gitignore</tt> does not contain "_DS_Store" from macOS because Odoo doesn't run on macOS.
 
-https://github.com/odoo/odoo/blob/17.0/setup/debinstall.sh
-contains <tt>apt-get update</tt>
+macos,python,windows
+
+See https://github.com/github/gitignore
 
 ## Configuration
 
@@ -487,15 +543,15 @@ Run of
 osv-scanner scan -S odoo_odoo_6f6763b6728335b0728645806d77a0cb7453ffc7.json
 reported vulnerabilities identified at:
 
-[17.0][SEC] Dependency werkzeug 2.0.2 vulnerabilities #165044
-[17.0][SEC] Dependency urllib3 1.26.5 vulnerabilities #165045
-[17.0][SEC] Dependency pypdf2 1.26.0 & 2.12.1 vulnerabilities #165047
-[17.0][SEC] Dependency cryptography 3.4.8 vulnerabilities #165048
-[17.0][SEC] Dependency gevent 21.8.0 allows a remote attacker to escalate privileges via a crafted script to the WSGIServer component #165049
-[17.0][SEC] Dependency idna 2.10 could consume significant resources, leading to a denial-of-service #165051
-[17.0][SEC] Dependency jinja2 3.0.3 & 3.1.2 vulnerabilities #165053
-[17.0][SEC] Dependency pillow 9.0.1 & 9.4.0 vulnerabilities #165054
-[17.0][SEC] Dependency lxml 4.8.0 denial of service (or application crash) vulnerability #165055
+* [17.0][SEC] Dependency werkzeug 2.0.2 vulnerabilities #165044
+* [17.0][SEC] Dependency urllib3 1.26.5 vulnerabilities #165045
+* [17.0][SEC] Dependency pypdf2 1.26.0 & 2.12.1 vulnerabilities #165047
+* [17.0][SEC] Dependency cryptography 3.4.8 vulnerabilities #165048
+* [17.0][SEC] Dependency gevent 21.8.0 allows a remote attacker to escalate privileges via a crafted script to the WSGIServer component #165049
+* [17.0][SEC] Dependency idna 2.10 could consume significant resources, leading to a denial-of-service #165051
+* [17.0][SEC] Dependency jinja2 3.0.3 & 3.1.2 vulnerabilities #165053
+* [17.0][SEC] Dependency pillow 9.0.1 & 9.4.0 vulnerabilities #165054
+* [17.0][SEC] Dependency lxml 4.8.0 internal denial of service (or application crash) vulnerability #165055
 
 ## Testing runboat
 
