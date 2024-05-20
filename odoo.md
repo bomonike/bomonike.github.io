@@ -430,61 +430,61 @@ There are two lists of Python packages below.
 The first list are packages in the <strong>requirements.txt</strong> file 
 as of v17.0 on May 20, 2024 at 
 https://github.com/odoo/odoo/blob/17.0/requirements.txt
-Each package name in the file is referenced in an <tt>import</tt> statement within a Python source code file. The description of each package was manually drafted from various sources.
+Each package name in the file is referenced in an <tt>import</tt> statement within a Python source code file. The description of each package was manually drafted from Snyk.com and other sources.
 
-* <a target=”_blank” href=”https://pypi.org/project/Babel/“>Babel</a> Internationalization utilities [<a target=”_blank” href=”https://security.snyk.io/package/pip/Babel/“>Snyk</a>] ==2.9.1  # min version = 2.6.0 (Focal with security backports)
-* <a target=”_blank” href=”https://pypi.org/project/chardet/“>chardet</a>  [<a target=”_blank” href=”https://security.snyk.io/package/pip/chardet/“>Snyk</a>] ==4.0.0
-* <a target=”_blank” href=”https://pypi.org/project/cryptography/“>cryptography</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/cryptography/“>Snyk</a>] ==3.4.8
-* <a target=”_blank” href=”https://pypi.org/project/decorator/“>decorator</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/decorator/“>Snyk</a>] ==4.4.2
-* <a target=”_blank” href=”https://pypi.org/project/docutils/“>docutils</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/docutils/“>Snyk</a>] ==0.17
-* <a target=”_blank” href=”https://pypi.org/project/ebaysdk/“>ebaysdk</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/ebaysdk/“>Snyk</a>] ==2.1.5
-* <a target=”_blank” href=”https://pypi.org/project/freezegun/“>freezegun</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/freezegun/“>Snyk</a>] ==1.1.0
-* <a target=”_blank” href=”https://pypi.org/project/geoip2/“>geoip2</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/geoip2/“>Snyk</a>] ==2.9.0
-* <a target=”_blank” href=”https://pypi.org/project/gevent/“>gevent</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/gevent/“>Snyk</a>] ==21.8.0  python_version == '3.10'  # (Jammy)
-* <a target=”_blank” href=”https://pypi.org/project/gevent/“>gevent</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/gevent/“>Snyk</a>] ==22.10.2 python_version > '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/greenlet/“>greenlet</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/greenlet/“>Snyk</a>] ==1.1.2  python_version == '3.10'  # (Jammy)
-* <a target=”_blank” href=”https://pypi.org/project/greenlet/“>greenlet</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/greenlet/“>Snyk</a>] ==2.0.2  python_version > '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/idna/“>idna</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/idna/“>Snyk</a>] ==2.10  # requests 2.25.1 depends on idna<3 and >=2.5
-* <a target=”_blank” href=”https://pypi.org/project/Jinja2/“>Jinja2</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/Jinja2/“>Snyk</a>] ==3.0.3  python_version <= '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/Jinja2/“>Jinja2</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/Jinja2/“>Snyk</a>] ==3.1.2  python_version > '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/libsass/“>libsass</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/libsass/“>Snyk</a>] ==0.20.1
-* <a target=”_blank” href=”https://pypi.org/project/lxml/“>lxml</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/lxml/“>Snyk</a>] ==4.8.0  python_version <= '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/lxml/“>lxml</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/lxml/“>Snyk</a>] ==4.9.2  python_version > '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/MarkupSafe/“>MarkupSafe</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/MarkupSafe/“>Snyk</a>] ==2.0.1  python_version <= '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/MarkupSafe/“>MarkupSafe</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/MarkupSafe/“>Snyk</a>] ==2.1.2  python_version > '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/num2words/“>num2words</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/num2words/“>Snyk</a>] ==0.5.10
-* <a target=”_blank” href=”https://pypi.org/project/ofxparse/“>ofxparse</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/ofxparse/“>Snyk</a>] ==0.21
-* <a target=”_blank” href=”https://pypi.org/project/passlib/“>passlib</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/passlib/“>Snyk</a>] ==1.7.4 # min version = 1.7.2 (Focal with security backports)
-* <a target=”_blank” href=”https://pypi.org/project/Pillow/“>Pillow</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/Pillow/“>Snyk</a>] ==9.0.1  python_version <= '3.10'  # min version = 7.0.0 (Focal with security backports)
-* <a target=”_blank” href=”https://pypi.org/project/Pillow/“>Pillow</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/Pillow/“>Snyk</a>] ==9.4.0  python_version > '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/polib/“>polib</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/polib/“>Snyk</a>] ==1.1.1
-* <a target=”_blank” href=”https://pypi.org/project/psutil/“>psutil</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/psutil/“>Snyk</a>] ==5.9.0  python_version <= '3.10' 
-* <a target=”_blank” href=”https://pypi.org/project/psutil/“>psutil</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/psutil/“>Snyk</a>] ==5.9.4  python_version > '3.10' 
-* <a target=”_blank” href=”https://pypi.org/project/psycopg2/“>psycopg2</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/psycopg2/“>Snyk</a>] ==2.9.2  sys_platform != 'win32' and python_version <= '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/psycopg2/“>psycopg2</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/psycopg2/“>Snyk</a>] ==2.9.5  python_version > '3.10' or sys_platform == 'win32'
-* <a target=”_blank” href=”https://pypi.org/project/pydot/“>pydot</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/pydot/“>Snyk</a>] ==1.4.2
-* <a target=”_blank” href=”https://pypi.org/project/pyopenssl/“>pyopenssl</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/pyopenssl/“>Snyk</a>] ==21.0.0
-* <a target=”_blank” href=”https://pypi.org/project/PyPDF2/“>PyPDF2</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/PyPDF2/“>Snyk</a>] ==1.26.0  python_version <= '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/PyPDF2/“>PyPDF2</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/PyPDF2/“>Snyk</a>] ==2.12.1  python_version > '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/pypiwin32 /“>pypiwin32 </a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/pypiwin32 /“>Snyk</a>]  sys_platform == 'win32'
-* <a target=”_blank” href=”https://pypi.org/project/pyserial/“>pyserial</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/pyserial/“>Snyk</a>] ==3.5
-* <a target=”_blank” href=”https://pypi.org/project/python-dateutil/“>python-dateutil</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/python-dateutil/“>Snyk</a>] ==2.8.1
-* <a target=”_blank” href=”https://pypi.org/project/python-ldap/“>python-ldap</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/python-ldap/“>Snyk</a>] ==3.4.0  sys_platform != 'win32'  # min version = 3.2.0 (Focal with security backports)
-* <a target=”_blank” href=”https://pypi.org/project/python-stdnum/“>python-stdnum</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/python-stdnum/“>Snyk</a>] ==1.17
-* <a target=”_blank” href=”https://pypi.org/project/pytz  # no version pinning to avoid OS perturbations/“>pytz  # no version pinning to avoid OS perturbations</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/pytz  # no version pinning to avoid OS perturbations/“>Snyk</a>] 
-* <a target=”_blank” href=”https://pypi.org/project/pyusb/“>pyusb</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/pyusb/“>Snyk</a>] ==1.2.1
-* <a target=”_blank” href=”https://pypi.org/project/qrcode/“>qrcode</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/qrcode/“>Snyk</a>] ==7.3.1
-* <a target=”_blank” href=”https://pypi.org/project/reportlab/“>reportlab</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/reportlab/“>Snyk</a>] ==3.6.8  python_version <= '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/reportlab/“>reportlab</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/reportlab/“>Snyk</a>] ==3.6.12  python_version > '3.10'
-* <a target=”_blank” href=”https://pypi.org/project/requests/“>requests</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/requests/“>Snyk</a>] ==2.25.1 # versions < 2.25 aren't compatible w/ urllib3 1.26. Bullseye = 2.25.1. min version = 2.22.0 (Focal)
-* <a target=”_blank” href=”https://pypi.org/project/rjsmin/“>rjsmin</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/rjsmin/“>Snyk</a>] ==1.1.0
-* <a target=”_blank” href=”https://pypi.org/project/urllib3/“>urllib3</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/urllib3/“>Snyk</a>] ==1.26.5 # indirect / min version = 1.25.8 (Focal with security backports)
-* <a target=”_blank” href=”https://pypi.org/project/vobject/“>vobject</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/vobject/“>Snyk</a>] ==0.9.6.1
-* <a target=”_blank” href=”https://pypi.org/project/Werkzeug/“>Werkzeug</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/Werkzeug/“>Snyk</a>] ==2.0.2
-* <a target=”_blank” href=”https://pypi.org/project/xlrd/“>xlrd</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/xlrd/“>Snyk</a>] ==1.2.0
-* <a target=”_blank” href=”https://pypi.org/project/XlsxWriter/“>XlsxWriter</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/XlsxWriter/“>Snyk</a>] ==3.0.2
-* <a target=”_blank” href=”https://pypi.org/project/xlwt/“>xlwt</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/xlwt/“>Snyk</a>] ==1.3.*
-* <a target=”_blank” href=”https://pypi.org/project/zeep/“>zeep</a>   [<a target=”_blank” href=”https://security.snyk.io/package/pip/zeep/“>Snyk</a>] ==4.1.
+* <a target="_blank" href="https://pypi.org/project/Babel/">Babel</a> Internationalization utilities [<a target="_blank" href="https://security.snyk.io/package/pip/Babel/">Snyk</a>] ==2.9.1  # min version = 2.6.0 (Focal with security backports)
+* <a target="_blank" href="https://pypi.org/project/chardet/">chardet</a>  [<a target="_blank" href="https://security.snyk.io/package/pip/chardet/">Snyk</a>] ==4.0.0
+* <a target="_blank" href="https://pypi.org/project/cryptography/">cryptography</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/cryptography/">Snyk</a>] ==3.4.8
+* <a target="_blank" href="https://pypi.org/project/decorator/">decorator</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/decorator/">Snyk</a>] ==4.4.2
+* <a target="_blank" href="https://pypi.org/project/docutils/">docutils</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/docutils/">Snyk</a>] ==0.17
+* <a target="_blank" href="https://pypi.org/project/ebaysdk/">ebaysdk</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/ebaysdk/">Snyk</a>] ==2.1.5
+* <a target="_blank" href="https://pypi.org/project/freezegun/">freezegun</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/freezegun/">Snyk</a>] ==1.1.0
+* <a target="_blank" href="https://pypi.org/project/geoip2/">geoip2</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/geoip2/">Snyk</a>] ==2.9.0
+* <a target="_blank" href="https://pypi.org/project/gevent/">gevent</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/gevent/">Snyk</a>] ==21.8.0  python_version == '3.10'  # (Jammy)
+* <a target="_blank" href="https://pypi.org/project/gevent/">gevent</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/gevent/">Snyk</a>] ==22.10.2 python_version > '3.10'
+* <a target="_blank" href="https://pypi.org/project/greenlet/">greenlet</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/greenlet/">Snyk</a>] ==1.1.2  python_version == '3.10'  # (Jammy)
+* <a target="_blank" href="https://pypi.org/project/greenlet/">greenlet</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/greenlet/">Snyk</a>] ==2.0.2  python_version > '3.10'
+* <a target="_blank" href="https://pypi.org/project/idna/">idna</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/idna/">Snyk</a>] ==2.10  # requests 2.25.1 depends on idna<3 and >=2.5
+* <a target="_blank" href="https://pypi.org/project/Jinja2/">Jinja2</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/Jinja2/">Snyk</a>] ==3.0.3  python_version <= '3.10'
+* <a target="_blank" href="https://pypi.org/project/Jinja2/">Jinja2</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/Jinja2/">Snyk</a>] ==3.1.2  python_version > '3.10'
+* <a target="_blank" href="https://pypi.org/project/libsass/">libsass</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/libsass/">Snyk</a>] ==0.20.1
+* <a target="_blank" href="https://pypi.org/project/lxml/">lxml</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/lxml/">Snyk</a>] ==4.8.0  python_version <= '3.10'
+* <a target="_blank" href="https://pypi.org/project/lxml/">lxml</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/lxml/">Snyk</a>] ==4.9.2  python_version > '3.10'
+* <a target="_blank" href="https://pypi.org/project/MarkupSafe/">MarkupSafe</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/MarkupSafe/">Snyk</a>] ==2.0.1  python_version <= '3.10'
+* <a target="_blank" href="https://pypi.org/project/MarkupSafe/">MarkupSafe</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/MarkupSafe/">Snyk</a>] ==2.1.2  python_version > '3.10'
+* <a target="_blank" href="https://pypi.org/project/num2words/">num2words</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/num2words/">Snyk</a>] ==0.5.10
+* <a target="_blank" href="https://pypi.org/project/ofxparse/">ofxparse</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/ofxparse/">Snyk</a>] ==0.21
+* <a target="_blank" href="https://pypi.org/project/passlib/">passlib</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/passlib/">Snyk</a>] ==1.7.4 # min version = 1.7.2 (Focal with security backports)
+* <a target="_blank" href="https://pypi.org/project/Pillow/">Pillow</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/Pillow/">Snyk</a>] ==9.0.1  python_version <= '3.10'  # min version = 7.0.0 (Focal with security backports)
+* <a target="_blank" href="https://pypi.org/project/Pillow/">Pillow</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/Pillow/">Snyk</a>] ==9.4.0  python_version > '3.10'
+* <a target="_blank" href="https://pypi.org/project/polib/">polib</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/polib/">Snyk</a>] ==1.1.1
+* <a target="_blank" href="https://pypi.org/project/psutil/">psutil</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/psutil/">Snyk</a>] ==5.9.0  python_version <= '3.10' 
+* <a target="_blank" href="https://pypi.org/project/psutil/">psutil</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/psutil/">Snyk</a>] ==5.9.4  python_version > '3.10' 
+* <a target="_blank" href="https://pypi.org/project/psycopg2/">psycopg2</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/psycopg2/">Snyk</a>] ==2.9.2  sys_platform != 'win32' and python_version <= '3.10'
+* <a target="_blank" href="https://pypi.org/project/psycopg2/">psycopg2</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/psycopg2/">Snyk</a>] ==2.9.5  python_version > '3.10' or sys_platform == 'win32'
+* <a target="_blank" href="https://pypi.org/project/pydot/">pydot</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/pydot/">Snyk</a>] ==1.4.2
+* <a target="_blank" href="https://pypi.org/project/pyopenssl/">pyopenssl</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/pyopenssl/">Snyk</a>] ==21.0.0
+* <a target="_blank" href="https://pypi.org/project/PyPDF2/">PyPDF2</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/PyPDF2/">Snyk</a>] ==1.26.0  python_version <= '3.10'
+* <a target="_blank" href="https://pypi.org/project/PyPDF2/">PyPDF2</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/PyPDF2/">Snyk</a>] ==2.12.1  python_version > '3.10'
+* <a target="_blank" href="https://pypi.org/project/pypiwin32 /">pypiwin32 </a>   [<a target="_blank" href="https://security.snyk.io/package/pip/pypiwin32 /">Snyk</a>]  sys_platform == 'win32'
+* <a target="_blank" href="https://pypi.org/project/pyserial/">pyserial</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/pyserial/">Snyk</a>] ==3.5
+* <a target="_blank" href="https://pypi.org/project/python-dateutil/">python-dateutil</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/python-dateutil/">Snyk</a>] ==2.8.1
+* <a target="_blank" href="https://pypi.org/project/python-ldap/">python-ldap</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/python-ldap/">Snyk</a>] ==3.4.0  sys_platform != 'win32'  # min version = 3.2.0 (Focal with security backports)
+* <a target="_blank" href="https://pypi.org/project/python-stdnum/">python-stdnum</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/python-stdnum/">Snyk</a>] ==1.17
+* <a target="_blank" href="https://pypi.org/project/pytz  # no version pinning to avoid OS perturbations/">pytz  # no version pinning to avoid OS perturbations</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/pytz  # no version pinning to avoid OS perturbations/">Snyk</a>] 
+* <a target="_blank" href="https://pypi.org/project/pyusb/">pyusb</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/pyusb/">Snyk</a>] ==1.2.1
+* <a target="_blank" href="https://pypi.org/project/qrcode/">qrcode</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/qrcode/">Snyk</a>] ==7.3.1
+* <a target="_blank" href="https://pypi.org/project/reportlab/">reportlab</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/reportlab/">Snyk</a>] ==3.6.8  python_version <= '3.10'
+* <a target="_blank" href="https://pypi.org/project/reportlab/">reportlab</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/reportlab/">Snyk</a>] ==3.6.12  python_version > '3.10'
+* <a target="_blank" href="https://pypi.org/project/requests/">requests</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/requests/">Snyk</a>] ==2.25.1 # versions < 2.25 aren't compatible w/ urllib3 1.26. Bullseye = 2.25.1. min version = 2.22.0 (Focal)
+* <a target="_blank" href="https://pypi.org/project/rjsmin/">rjsmin</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/rjsmin/">Snyk</a>] ==1.1.0
+* <a target="_blank" href="https://pypi.org/project/urllib3/">urllib3</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/urllib3/">Snyk</a>] ==1.26.5 # indirect / min version = 1.25.8 (Focal with security backports)
+* <a target="_blank" href="https://pypi.org/project/vobject/">vobject</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/vobject/">Snyk</a>] ==0.9.6.1
+* <a target="_blank" href="https://pypi.org/project/Werkzeug/">Werkzeug</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/Werkzeug/">Snyk</a>] ==2.0.2
+* <a target="_blank" href="https://pypi.org/project/xlrd/">xlrd</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/xlrd/">Snyk</a>] ==1.2.0
+* <a target="_blank" href="https://pypi.org/project/XlsxWriter/">XlsxWriter</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/XlsxWriter/">Snyk</a>] ==3.0.2
+* <a target="_blank" href="https://pypi.org/project/xlwt/">xlwt</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/xlwt/">Snyk</a>] ==1.3.*
+* <a target="_blank" href="https://pypi.org/project/zeep/">zeep</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/zeep/">Snyk</a>] ==4.1.
 
 
 ## SBOM
