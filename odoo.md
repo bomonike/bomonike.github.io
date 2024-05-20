@@ -29,7 +29,50 @@ https://www.glassdoor.com/Reviews/Odoo-Reviews-E749314.htm
 <a target="_blank" href="https://www.linkedin.com/company/odoo/insights/">LinkeIn reports that</a>
 while there has been a 83% 2-year growth in 22-24, the Median employee tenure is 1.6 years.
 
-__ annual conf ???
+## Open Source?
+
+Since Odoo touts itself as "open source", let's look at their source.
+
+From inception, Odoo S.A (formerly OpenERP S.A) has released the core software as open source.
+Since release V9.0, the company has transitioned to an open core model, which provides subscription-based proprietary enterprise software and cloud-hosted software as a service, in addition to the open source version. 
+
+In 2013, the not-for-profit Odoo Community Association - <a target="_blank" href="https://odoo-community.org">odoo-community.org</a> (OCA) - was formed to promote the widespread use of Odoo and to support the collaborative development of Odoo features.
+
+1. Pay the OCA membership of 50 euros a year. Opt-in to be listed in the <a target="-blank" href="https://odoo-community.org/members">Directory of members</a> around the world.
+
+1. <a target="_blank" href="https://odoo-community.org/about/cla"><img align="right" width="150" src="https://odoo-community.org/web/image/3649316-f8015c51/Contributor%20Badge%20Medium.png">Sign the CLA</a> so you can add the "Contributor" logo to your profile.
+
+   https://github.com/odoo/odoo/blob/master/doc/cla/sign-cla.md
+
+1. Organize a <a target="_blank" href="https://odoo-community.org/resources/events-sprints">Sprint</a> where contributors work together.
+
+   https://github.com/OCA/odoo-community.org/blob/master/website/Contribution/CONTRIBUTING.rst
+
+   * <a target="_blank" href="https://odoo-community.org/resources/review">Review & test modules</a> (functional testing)
+   * Bug fixing
+   * Modules migration
+   * <a href="#Translations">Translation</a>
+   <br /><br />
+
+1. Attend <a target="_blank" href="https://odoo-community.org/event">events</a>:
+
+   OCA sponsors OCA Days 2024 on 30th September - 1st October 2024 at Val Benoit,  Liège
+
+   OSICON 2023 
+
+The five types of Project (PSC) Teams:
+
+1. Functional Teams (accounting, marketing...)
+
+1. Vertical Interest Teams (hotel, construction, medical...)
+
+1. Localization Teams (by country)
+
+1. Connector Teams (integrate Odoo with other software)
+
+1. Community Tools Teams (providing support to members, e.g. Backport, OpenUpgrade, admin)
+
+
 
 ## Pricing
 
@@ -197,10 +240,11 @@ https://github.com/odoo/odoo/tree/master/addons/hr
 
 <a target="_blank" href="https://www.odoo.com/documentation/master/developer/tutorials/server_framework_101/03_basicmodel.html">estate_property in the models API</a> should be created.
 
+Contrast Odoo's modules against the <a href="](https://en.wikipedia.org/wiki/Enterprise_resource_planning)" title="File:ERP Modules.png">definition of Enterprise Resource Planning</a> in this <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> diagram by Shing Hin Yeung:<br />
+<a target="_blank" href="https://commons.wikimedia.org/w/index.php?curid=141742154"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/ERP_modules.svg"></a>
 
-## Open Source
 
-Since Odoo touts itself as "open source", let's look at their source.
+## Repositories
 
 1. See odoo's repositories:
 
@@ -337,6 +381,8 @@ https://www.odoo.com/documentation/master/applications/studio.html
 addons ???
 
 
+<a name="Translations"></a>
+
 ## Multi-lingual
 
 1. Docs about Translating
@@ -424,16 +470,13 @@ QUESTION: What RBAC permissions?
 
 Never Paid ransomware?
 
-1. Sign the CLA
-
-   https://github.com/odoo/odoo/blob/master/doc/cla/sign-cla.md
-
 1. Export SBOM about the 102 modules in the Dependency graph
 
    https://github.com/odoo/odoo/network/dependencies
 
    Analyze the SBOM spdx json file output.
 
+You have discovered a security issue and want to report it, write us to: security@odoo-community.org. You can also encrypt and verify messages to/from our security team with our GPG Key with ID 0xed07aacf416f9287.
 
 The Python packages below were discovered by looking into each package above and identifying what packages each referenced, then (recursively) looking each of those references, building a "Suply Chain Dependency graph" to identify vulnerabilities within indirectly obtained dependencies.
 
@@ -454,10 +497,50 @@ reported vulnerabilities identified at:
 [17.0][SEC] Dependency pillow 9.0.1 & 9.4.0 vulnerabilities #165054
 [17.0][SEC] Dependency lxml 4.8.0 denial of service (or application crash) vulnerability #165055
 
-## Testing
+## Testing runboat
 
 https://github.com/odoo/odoodays-2014/blob/master/automated_tests/index.rst
 
+## OCA Board
+
+https://www.camptocamp.com/en
+Camptocamp SA
+Route de la Chaux 4, 1030 Bussigny, Switzerland
+
+* <a target="_blank" href="https://www.linkedin.com/in/rebecca-gellatly-b412205/">Rebecca Gellatly</a> (New Zealand), OCA General Secretary
+
+* <a target="_blank" href="">Joël Grand-Guillame</a> (CamptoCamp) - President
+* <a target="_blank" href="https://www.linkedin.com/in/sorsi/">Simone Orsi</a> (Sr Architect at CamptoCamp)
+* <a target="_blank" href="">Enric Tobella</a> (DIXMIT Consulting SLU) - Vice President
+* <a target="_blank" href="">Frederik Kramer</a> (initOS GmbH) - Treasurer
+* <a target="_blank" href="">Daniel Reis</a> (Open Source Integrators) - Secretary
+* <a target="_blank" href="">Stéphane Bidoul</a> (Acsone)
+* <a target="_blank" href="">Virginie Dewulf</a> (Coop It Easy)
+* <a target="_blank" href="">Benoit Guillot</a> (Akretion)
+* <a target="_blank" href="">Jordi Ballester Alomar</a> (ForgeFlow)
+
+## Members in the US
+
+* <a target="_blank" href="">Joel Patrick</a>
+
+Open Source Integrators: www.o2btechnologies.com (Loma Linda, CA) https://osicon23.com/
+* <a target="_blank" href="https://www.linkedin.com/in/balaji-kannan68/">Balaji Kannan, CTO</a>
+* <a target="_blank" href="">Antonio Yamuta</a>
+* <a target="_blank" href="">Ronda Mader</a>
+* <a target="_blank" href="">Ronda Mader</a>
+* <a target="_blank" href="">Gregory A Mader</a>
+* <a target="_blank" href="">Patrick Kittredge</a>
+* <a target="_blank" href="">Michael Allen</a>
+* <a target="_blank" href="">Manish Mannan</a>
+
+Hibou Corp.
+* <a target="_blank" href="https://www.linkedin.com/in/kaylie-kipe-09a18334/">Kaylie Kipe</a> Seattle VP 
+
+<a target="_blank" href="https://www.linkedin.com/in/mame-abdoul-aziz-sy-8a72ab230/">Mame Abdoul Aziz Sy</a> Senegal
+
+### Canada
+
+* <a target="_blank" href="https://www.linkedin.com/in/lucasjoliveau/">Lucas Joliveau</a>, designer @ Kapreon, Quebec, Canada
 
 ## Consultants
 
@@ -484,3 +567,8 @@ developer at Odoo
 
 https://softwareconnect.com/erp/cloud-vs-on-premise/
 Decision Tree
+
+
+Wilson Mar is a veteran of many transformations - from working on the Skunkworks stealth fighter IT  ERP to cloud to AI. He is APICS-certified to work on SAP, Salesforce, Azure, AWS, and many other technologies.
+
+What can waste your time, money, and reputation? You can spend a lot of money attracting prospects but not allowed to demo because your company doesn't have a SOC2/ISO 27000 letter. You can make millions only to lose it to ransomware. This talk is about what organizations can do to avoid such fate.
