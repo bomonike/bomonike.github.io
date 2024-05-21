@@ -359,49 +359,104 @@ Observability: logs, traces
 
 <hr />
 
-## Installation
+<a name="Installations"></a>
+
+## Installation Options
+
+Comparing Odoo SaaS, Odoo On-Premise, and SH:
+   * https://softwareconnect.com/erp/cloud-vs-on-premise/ Decision Tree
+   * https://www.ksolves.com/blog/odoo/comparing-odoo-saas-odoo-on-premise-and-sh-a-comprehensive-analysis
+   <br /><br />
 
 There are different ways to create an instance of odoo:
 
-A. In Odoo's cloud running SaaS (Software as a Service)
-B. odoo.sh "hybrid"
-C. On-prem. on a local server
-   * On a local Linux Debian machine running odoo installed directly
-   
-   * On a local Linux Debian machine running a Docker image
-   * On a local Linux Debian machine running a VMWare image using VMWare on Linux
+A. In Odoo's cloud running SaaS (Software as a Service). The easiest with a subscription.
 
-   * On macOS running a Docker image using Docker Desktop
-   * On macOS running a VMWare image using VMWare Fusion
+<a name="OnpremMachines"></a>
+
+B. On-premises on machines you build and maintain. For experimentation with add-ons.
+
+   * <a href="#DebianLinuxInstall">On a local Linux Debian machine running odoo installed directly</a>
+   * <a href="#DebianLinuxDocker">On a local Linux Debian machine running Odoo in a Docker image</a>
+   * <a href="#DebianLinuxVMware">On a local Linux Debian machine running a VMWare image using VMWare on Linux</a>
+
+   * <a href="#MacDocker">On macOS running Odoo in a Docker image using Docker Desktop</a>
+   * <a href="#MacVMware">On macOS Intel chips running Odoo in a VMWare image using VMWare Fusion</a> (version purchase)
+   * <a href="#MacLinuxParallels">On macOS Silicon chips running Odoo in a VMWare image using Parallels</a> (subscription)
    <br /><br />
-D. "On-prem." within a cloud instance you build and maintain:
-   * [Amazon AWS](https://aws.amazon.com/),
-   * Azure
-   * [Google Cloud](https://cloud.google.com/),
+
+C. <strong>odoo.sh</strong> aka "hybrid" Odoo-managed PaaS (Platform as a Service) where you create your own cloud platform by clicking on odoo's UI. It also encompasses an email server. Tools provided include:
+
+   * SSH Access
+   * Staging Servers
+   * DNS and Routes
+   * Email Gateways
+   * Backup Servers
+   * Database Replication
+   * Automated Testing
+   * etc.
+   <br /><br />
+
+   <a name="PrivateClouds"></a>
+
+D. On-premises within a <strong>private cloud</strong> instance you build and maintain. The most difficult.
+
+   * <a target="_blank" href="https://wilsonmar.github.io/aws-onboarding/">Amazon AWS</a>
+   * <a target="_blank" href="https://wilsonmar.github.io/azure-onboarding/">Azure</a>
+   * <a target="_blank" href="https://wilsonmar.github.io/gcp/">GCP (Google Cloud Platform)</a>
    * [Hetzner](https://www.hetzner.com/),
-   * [DigitalOcean](https://www.digitalocean.com/products/droplets/) - Use my [DigitalOcean referral link](https://m.do.co/c/d605cc420682) which gives you a $200 voucher for free 60 days.
+   * [DigitalOcean](https://www.digitalocean.com/products/droplets/)
+   <br /><br />
 
+<hr />
 
-## On-prem Installation
+## Assets
 
-https://softwareconnect.com/erp/cloud-vs-on-premise/
-Decision Tree
+   References:
+   * https://github.com/odoo/odoo/tree/master/setup
+   * https://github.com/odoo/odoo/blob/master/setup/rpm/odoo.spec 
+   * https://github.com/odoo/odoo/tree/master/debian
+   <br /><br />
 
-As described at https://github.com/bomonike/odoo-setup/blob/main/README.md
+Assets referenced by this article are at a private repo:
 
-1. If the repo is private, get a GitHub Personal Access Token for read access:
+   <ul><pre><strong><a target="_blank" href="https://github.com/bomonike/odoo-setup/">https://github.com/bomonike/odoo-setup</strong></a></pre></ul>
 
+1. Request to join via Patreon.
+
+1. Once you're made a contributor, generate a GitHub Personal Access Token for read access:
+
+   1. You need a GitHub account with SSH certificates.
    1. At your GitHub's Account settings > Developer settings > Fine-grained Personal access tokens:<br /><br /><a target="_blank" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>
    1. Click "Generate new token". Confirm access. Select Expiration "7 days". Give token a descriptive name (with a date).
    1. Under "Select scopes", check the "read:packages" scope to grant read access to private repositories.
    1. Click green "Generate token". Click the icon to copy the generated token to paste.
+   <br /><br />
+
+1. Open a Terminal and navigate to a folder where Git will create a folder.
+1. Load our project assets:
+
+   <pre>git clone git@github.com:bomonike/odoo-setup.git
+   cd odoo-setup
+   du -sh
+   git branch
+   </pre>
+
+   <tt>du -sh</tt> reported 196K for all branches/history.   
+
+   The repo contains shell scripts to load Odoo onto <a href="#OnpremMachines">on-prem. machines</a> and in <a href="#PrivateClouds">each private cloud</a>.
+
+<hr />
+
+<a name="DebianLinuxInstall"></a>
+
+## Install local Linux Debian machine running odoo installed directly
 
 1. Obtain the latest stable Debian (Linux) image for running on AMD64:
 
    1. At https://www.debian.org/releases/bookworm/debian-installer/<br />under "full DVD sets" select "amd64" for Zimaboard. Scroll to bottom to click<br />"debian-12.5.0-amd64-DVD-1.iso" to start downloading from:<br />   https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-12.5.0-amd64-DVD-1.iso for 3.99 GB.
 
-   Alternately, the "netinst CD image" for "amd64" at
-   https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.5.0-amd64-netinst.iso for 659.6 MB.
+   Alternately, the "netinst CD image" for "amd64" for 659.6 MB.
    
    2. In Finder, wait until file "Unconfirmed ... -crdownload" disappears and "debian-12.5.0-amd64-DVD-1.iso" appears with MB.
    3. Eject the USB drive.
@@ -409,12 +464,61 @@ As described at https://github.com/bomonike/odoo-setup/blob/main/README.md
 
 1. Create a bootable USB on macOS, use the balenEtcher.app.
 
-   * https://github.com/odoo/odoo/tree/master/setup
-   * https://github.com/odoo/odoo/blob/master/setup/rpm/odoo.spec 
-   * https://github.com/odoo/odoo/tree/master/debian
+
+
+
+   Alternately, to create on Debian:
+
+1. Create a preconfiguration file (which pulls in other files) for Automated installs, based on:
+
+   https://www.debian.org/releases/bookworm/example-preseed.txt
+
+   PROTIP: Automated installs enable quicker recovery from mistakes. See:
+   * https://wiki.debian.org/DebianInstaller/Preseed
+   * https://www.debian.org/releases/stable/amd64/apb.en.html
    <br /><br />
 
-1. Create both a VMware image and Docker image using HashiCorp Packer. See:
+1. Make the preconfiguration file available to the Debian installer.
+
+1. Ensure that the HDI cable from your machine is connected to the monitor/TV.
+1. Insert the USB and hold the F11 key during power-up.
+1. Select the device preference to boot up from USB.
+1. Select "Autoinstall".
+1. Type the preseed file URL.
+
+1. TODO:
+
+
+<hr />
+
+<a name="DebianLinuxDocker"></a>
+
+## Install local Linux Debian machine running Odoo in a Docker image
+
+1. TODO: 
+
+   ### Configure 
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=Bx_HkLVBz9M&t=5m55s">VIDEO</a>: 
+   Watchtower to automate Docker container base images.
+
+
+<hr />
+
+<a name="DebianLinuxVMware"></a>
+
+## Install local Linux Debian machine running a VMWare image using VMWare on Linux
+
+TODO: 
+
+<hr />
+
+<a name="MacDocker"></a>
+
+## Install macOS running Odoo in a Docker image using Docker Desktop
+
+1. Install Docker and Docker Compose.
+1. Create a Docker image using HashiCorp Packer. See:
 
    https://wilsonmar.github.io/packer which describes use of
    https://github.com/bomonike/packer
@@ -422,6 +526,34 @@ As described at https://github.com/bomonike/odoo-setup/blob/main/README.md
    Create a new file with a .pkr.hcl extension (e.g., vm-image.pkr.hcl) and define your VM image configuration. Here's an example for creating an Amazon EC2 AMI:
 
    Dockerfile
+
+TODO: 
+
+<hr />
+
+<a name="MacVMware"></a>
+
+## Install macOS Intel chips running Odoo in a VMWare image using VMWare Fusion
+
+1. Create a VMware image using HashiCorp Packer. See:
+
+   https://wilsonmar.github.io/packer which describes use of
+   https://github.com/bomonike/packer
+
+   Create a new file with a .pkr.hcl extension (e.g., vm-image.pkr.hcl) and define your VM image configuration. Here's an example for creating an Amazon EC2 AMI:
+
+1. Obtain license for VMWare Fusion.
+1. Download and install VMWare Fusion.
+
+TODO: 
+
+<hr />
+
+<a name="MacLinuxParallels"></a>
+
+## Install macOS Silicon chips running Odoo in a VMWare image using Parallels
+
+TODO: 
 
 1. Obtain a key pair to SSH into the instance.
 
