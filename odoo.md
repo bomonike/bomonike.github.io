@@ -85,9 +85,8 @@ begins with a backup, shutdown, install of the web_enterprise module.
 
 Most ERP vendors estimate software should cost about 3% of annual sales.
 
-$3,950 partner fee per year includes $2,600 discounts for internal use 5 users
+The $3,950 partner fee per year includes $2,600 discounts for internal use by 5 users.
 
-https://softwareconnect.com/erp/cloud-vs-on-premise/
 
 ## Partnerships
 
@@ -315,12 +314,6 @@ Observability: logs, traces
 
    Only the <a target="_blank" href="https://www.odoo.com/page/editions">Enterprise version</a> supports mobile.
 
-1. Operating system Debian
-
-   * https://github.com/odoo/odoo/tree/master/setup
-   * https://github.com/odoo/odoo/blob/master/setup/rpm/odoo.spec 
-   * https://github.com/odoo/odoo/tree/master/debian
-   <br /><br />
 1. Analyze Issues metrics (Time to First Response, Time to Close, Time in Label):
    https://github.com/github/issue-metrics
    https://www.reddit.com/r/devops/comments/ys5ivs/github_actions_metrics/
@@ -350,6 +343,10 @@ Observability: logs, traces
 
    https://github.com/odoo/odoo/branches/active
 
+   ### View odoo locally
+
+   If you would like to view files locally:
+
 1. Instead of getting all branches (which consumed 9.2G on May 8, 2024)<br />PROTIP: download only the branch for the latest named version, not the master (which consumed 1.1G):
 
    <pre>git clone --branch "17.0" git@github.com:odoo/odoo.git
@@ -358,42 +355,97 @@ Observability: logs, traces
    git branch
    </pre>
 
+   NOTE: On-prem. servers load Odoo within install script.
+
 <hr />
 
 ## Installation
 
+There are different ways to create an instance of odoo:
 
-As described at https://github.com/bomonike/odoo-utils/blob/main/README.md
+A. In Odoo's cloud running SaaS (Software as a Service)
+B. odoo.sh "hybrid"
+C. On-prem. on a local server
+   * On a local Linux Debian machine running odoo installed directly
+   
+   * On a local Linux Debian machine running a Docker image
+   * On a local Linux Debian machine running a VMWare image using VMWare on Linux
 
-1. If the repo is private, get a GitHub token for read access at your GitHub's Account settings > Developer settings > Fine-grained Personal access tokens:
+   * On macOS running a Docker image using Docker Desktop
+   * On macOS running a VMWare image using VMWare Fusion
+   <br /><br />
+D. "On-prem." within a cloud instance you build and maintain:
+   * [Amazon AWS](https://aws.amazon.com/),
+   * Azure
+   * [Google Cloud](https://cloud.google.com/),
+   * [Hetzner](https://www.hetzner.com/),
+   * [DigitalOcean](https://www.digitalocean.com/products/droplets/) - Use my [DigitalOcean referral link](https://m.do.co/c/d605cc420682) which gives you a $200 voucher for free 60 days.
 
-   <a target="_blank" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>
 
-1. Click "Generate new token". Confirm access. Select Expiration "7 days". Give token a descriptive name (with a date).
-1. Under "Select scopes", check the "read:packages" scope to grant read access to private repositories.
-1. Click green "Generate token". Click the icon to copy the generated token to paste.
+## On-prem Installation
 
-1. Open a Terminal instance.
-1. Build the Linux (Debian) instance and obtain a SSH key pair.
+https://softwareconnect.com/erp/cloud-vs-on-premise/
+Decision Tree
+
+As described at https://github.com/bomonike/odoo-setup/blob/main/README.md
+
+1. If the repo is private, get a GitHub Personal Access Token for read access:
+
+   1. At your GitHub's Account settings > Developer settings > Fine-grained Personal access tokens:<br /><br /><a target="_blank" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>
+   1. Click "Generate new token". Confirm access. Select Expiration "7 days". Give token a descriptive name (with a date).
+   1. Under "Select scopes", check the "read:packages" scope to grant read access to private repositories.
+   1. Click green "Generate token". Click the icon to copy the generated token to paste.
+
+1. Obtain the latest stable Debian (Linux) image for running on AMD64:
+
+   1. At https://www.debian.org/releases/bookworm/debian-installer/<br />under "full DVD sets" select "amd64" for Zimaboard. Scroll to bottom to click<br />"debian-12.5.0-amd64-DVD-1.iso" to start downloading from:<br />   https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-12.5.0-amd64-DVD-1.iso for 3.99 GB.
+
+   Alternately, the "netinst CD image" for "amd64" at
+   https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.5.0-amd64-netinst.iso for 659.6 MB.
+   
+   2. In Finder, wait until file "Unconfirmed ... -crdownload" disappears and "debian-12.5.0-amd64-DVD-1.iso" appears with MB.
+   3. Eject the USB drive.
+   4. Optionally, also download file SHA521SUMS
+
+1. Create a bootable USB on macOS, use the balenEtcher.app.
+
+   * https://github.com/odoo/odoo/tree/master/setup
+   * https://github.com/odoo/odoo/blob/master/setup/rpm/odoo.spec 
+   * https://github.com/odoo/odoo/tree/master/debian
+   <br /><br />
+
+1. Create both a VMware image and Docker image using HashiCorp Packer. See:
+
+   https://wilsonmar.github.io/packer which describes use of
+   https://github.com/bomonike/packer
+
+   Create a new file with a .pkr.hcl extension (e.g., vm-image.pkr.hcl) and define your VM image configuration. Here's an example for creating an Amazon EC2 AMI:
+
+   Dockerfile
+
+1. Obtain a key pair to SSH into the instance.
+
 1. SSH into the instance using the asymetric key pair.
-1. Configure the environment:
+1. Create folder and environment variables:
 
    ```
    cd
+   # Create the destination folder and cd into it:
    cd Projects
-   export OS_TO_INSTALL="debian"  # or "ubuntu"
+   export OS_TO_INSTALL="debian"  # or "ubuntu" (less favored)
    export GITHUB_READ_TOKEN="???"  # DO NOT echo this secret!
    echo "OS_TO_INSTALL=\"${OS_TO_INSTALL}\" in $PWD"
    ```
 
-1. Download shell script (instead of git clone) to where:
+1. Download shell script (instead of git clone):
 
    ```
 if [ -f "odoo_install_${OS_TO_INSTALL}.sh" ]; then
    echo "using $(ls -al odoo_install_${OS_TO_INSTALL}.sh)"
-   sudo wget "https://raw.githubusercontent.com/bomonike/odoo-utils/main/odoo_install_${OS_TO_INSTALL}.sh?token=${GITHUB_READ_TOKEN}"
+   sudo wget "https://raw.githubusercontent.com/bomonike/odoo-setup/main/odoo_install_${OS_TO_INSTALL}.sh?token=${GITHUB_READ_TOKEN}"
       # odoo_install_debian.sh?token=ghp_l 100%[===...===>]  13.86K  --.-KB/s    in 0.1s
 fi
+   # Set eXecute permissions:
    sudo chmod +x "odoo_install_${OS_TO_INSTALL}.sh"
    ```
 
@@ -601,9 +653,6 @@ calling RPC
 
 by <a target="_blank" href="https://www.linkedin.com/in/martintrigaux/">Martin Trigaux</a>,
 developer at Odoo
-
-https://softwareconnect.com/erp/cloud-vs-on-premise/
-Decision Tree
 
 https://github.com/it-projects-llc/odoo-saas-tools
 
