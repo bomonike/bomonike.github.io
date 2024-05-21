@@ -869,9 +869,36 @@ It's used by hams to find the <strong>short-path</strong> between two stations. 
 
 <a target="_blank" href="https://www.youtube.com/watch?v=TesQ5GON_iw&t=54s">VIDEO</a>: pronouciation.
 
-<table border="1" cellpadding="4" cellspacing="0"><tr valign="bottom"><th><strong>Character</strong></th><th><strong>Morse Code</strong></th><th><strong>Code word</strong></th><th><strong>Pronunciation</strong></th></tr>
-<tbody><tr valign="top"><td><strong>A</strong></td><td>● ▬</td><td>Alfa/Alpha</td><td>AL FAH</td></tr><tr valign="top"><td><strong>B</strong></td><td>▬ ● ● ●</td><td>Bravo</td><td>BRAH VOH</td></tr><tr valign="top"><td><strong>C</strong></td><td>▬ ● ▬ ●</td><td>Charlie</td><td>CHAR LEE</td></tr><tr valign="top"><td><strong>D</strong></td><td>▬ ●●</td><td>Delta</td><td>DELL TAH</td></tr><tr valign="top"><td><strong>E</strong></td><td>●</td><td>Echo</td><td>ECK OH</td></tr><tr valign="top"><td><strong>F</strong></td><td>● ● ▬ ●</td><td>Foxtrot</td><td>FOKS TROT</td></tr><tr valign="top"><td><strong>G</strong></td><td>▬ ▬ ●</td><td>Golf</td><td>GOLF</td></tr><tr valign="top"><td><strong>H</strong></td><td>● ● ● ●</td><td>Hotel</td><td>HOH TELL</td></tr><tr valign="top"><td><strong>I</strong></td><td>● ●</td><td>India</td><td>IN DEE AH</td></tr><tr valign="top"><td><strong>J</strong></td><td>● ▬ ▬ ▬</td><td>Juliett</td><td>JEW LEE ETT</td></tr><tr valign="top"><td><strong>K</strong></td><td>▬ ● ▬</td><td>Kilo</td><td>KEY LOH</td></tr><tr valign="top"><td><strong>L</strong></td><td>● ▬ ● ●</td><td>Lima</td><td>LEE MAH</td></tr><tr valign="top"><td><strong>M</strong></td><td>▬ ▬</td><td>Mike</td><td>MIKE</td></tr><tr valign="top"><td><strong>N</strong></td><td>▬ ●</td><td>November</td><td>NO VEM BER</td></tr><tr valign="top"><td><strong>O</strong></td><td>▬ ▬ ▬</td><td>Oscar</td><td>OSS CAH</td></tr><tr valign="top"><td><strong>P</strong></td><td>● ▬ ▬ ●</td><td>Papa</td><td>PAH PAH</td></tr><tr valign="top"><td><strong>Q</strong></td><td>▬ ▬ ● ▬</td><td>Quebec</td><td>KEH BECK</td></tr><tr valign="top"><td><strong>R</strong></td><td>● ▬ ●</td><td>Romeo</td><td>RO ME OH</td></tr><tr valign="top"><td><strong>S</strong></td><td>● ● ●</td><td>Sierra</td><td>SEE AIR RAH</td></tr><tr valign="top"><td><strong>T</strong></td><td>▬</td><td>Tango</td><td>TANG OH</td></tr><tr valign="top"><td><strong>U</strong></td><td>● ● ▬</td><td>Uniform</td><td>YOU NEE FORM</td></tr><tr valign="top"><td><strong>V</strong></td><td>● ● ● ▬</td><td>Victor</td><td>VIK TAH</td></tr><tr valign="top"><td><strong>W</strong></td><td>● ▬ ▬</td><td>Whiskey</td><td>WISS KEY</td></tr><tr valign="top"><td><strong>X</strong></td><td>▬ ● ● ▬</td><td>X-ray</td><td>ECKS RAY</td></tr><tr valign="top"><td><strong>Y</strong></td><td>▬ ▬ ● ●</td><td>Yankee</td><td>YANG KEY</td></tr><tr valign="top"><td><strong>Z</strong></td><td>▬ ▬ ▬ ▬ ▬</td><td>Zulu</td><td>ZOO LOO</td></tr>
+<table border="1" cellpadding="4" cellspacing="0"><tr valign="bottom"><th><strong>Character</strong></th><th><strong>Code word</strong></th><th><strong>Pronunciation</strong></th><th><strong>Morse Code</strong></th></tr><tbody>
+<tr valign="top"><td><strong>A</strong></td><td>Alfa/Alpha</td><td>AL FAH</td><td>● ▬</td></tr>
+<tr valign="top"><td><strong>B</strong></td><td>Bravo</td><td>BRAH VOH</td><td>▬ ● ● ●</td></tr>
+<tr valign="top"><td><strong>C</strong></td><td>Charlie</td><td>CHAR LEE</td><td>▬ ● ▬ ●</td></tr>
+<tr valign="top"><td><strong>D</strong></td><td>Delta</td><td>DELL TAH</td><td>▬ ●●</td></tr>
+<tr valign="top"><td><strong>E</strong></td><td>Echo</td><td>ECK OH</td><td>●</td></tr>
+<tr valign="top"><td><strong>F</strong></td><td>Foxtrot</td><td>FOKS TROT</td><td>● ● ▬ ●</td></tr>
+<tr valign="top"><td><strong>G</strong></td><td>Golf</td><td>GOLF</td><td>▬ ▬ ●</td></tr>
+<tr valign="top"><td><strong>H</strong></td><td>Hotel</td><td>HOH TELL</td><td>● ● ● ●</td></tr>
+<tr valign="top"><td><strong>I</strong></td><td>India</td><td>IN DEE AH</td></td><td>● ●</td></tr>
+<tr valign="top"><td><strong>J</strong></td><td>Juliett</td><td>JEW LEE ETT</td><td>● ▬ ▬ ▬</td></tr>
+<tr valign="top"><td><strong>K</strong></td><td>Kilo</td><td>KEY LOH</td><td>▬ ● ▬</td></tr>
+<tr valign="top"><td><strong>L</strong></td><td>Lima</td><td>LEE MAH</td><td>● ▬ ● ●</td></tr>
+<tr valign="top"><td><strong>M</strong></td><td>Mike</td><td>MIKE</td><td>▬ ▬</td></tr>
+<tr valign="top"><td><strong>N</strong></td><td>November</td><td>NO VEM BER</td><td>▬ ●</td></tr>
+<tr valign="top"><td><strong>O</strong></td><td>Oscar</td><td>OSS CAH</td><td>▬ ▬ ▬</td></tr>
+<tr valign="top"><td><strong>P</strong></td><td>Papa</td><td>PAH PAH</td><td>● ▬ ▬ ●</td></tr>
+<tr valign="top"><td><strong>Q</strong></td><td>Quebec</td><td>KEH BECK</td><td>▬ ▬ ● ▬</td></tr>
+<tr valign="top"><td><strong>R</strong></td><td>Romeo</td><td>RO ME OH</td><td>● ▬ ●</td></tr>
+<tr valign="top"><td><strong>S</strong></td><td>Sierra</td><td>SEE AIR RAH</td><td>● ● ●</td></tr>
+<tr valign="top"><td><strong>T</strong></td><td>Tango</td><td>TANG OH</td><td>▬</td></tr>
+<tr valign="top"><td><strong>U</strong></td><td>Uniform</td><td>YOU NEE FORM</td><td>● ● ▬</td></tr>
+<tr valign="top"><td><strong>V</strong></td><td>Victor</td><td>VIK TAH</td><td>● ● ● ▬</td></tr>
+<tr valign="top"><td><strong>W</strong></td><td>Whiskey</td><td>WISS KEY</td><td>● ▬ ▬</td></tr>
+<tr valign="top"><td><strong>X</strong></td><td>X-ray</td><td>ECKS RAY</td><td>▬ ● ● ▬</td></tr>
+<tr valign="top"><td><strong>Y</strong></td><td>Yankee</td><td>YANG KEY</td><td>▬ ▬ ● ●</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>Zulu</td><td>ZOO LOO</td><td>▬ ▬ ▬ ▬ ▬</td></tr>
 </tbody></table>
+
+The two t's in Juliett is to ensure that French speakers who usually do not pronounce the t at the end of a word.
 
 Type or paste words into website: <a target="_blank" href="https://www.radiospelling.com/">https://www.radiospelling.com</a> to pronounce then out your speakers. 
 
