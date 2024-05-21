@@ -39,6 +39,9 @@ Since release V9.0, the company has transitioned to an open core model, which pr
 
 In 2013, the not-for-profit Odoo Community Association - <a target="_blank" href="https://odoo-community.org">odoo-community.org</a> (OCA) - was formed to promote the widespread use of Odoo and to support the collaborative development of Odoo features.
 
+   * https://github.com/OCA/server-tools are "tools for Odoo Administrators to improve some technical features on Odoo"
+   <br /><br />
+
 1. Pay the OCA membership of 50 euros a year. Opt-in to be listed in the <a target="-blank" href="https://odoo-community.org/members">Directory of members</a> around the world.
 
 1. <a target="_blank" href="https://odoo-community.org/about/cla"><img align="right" width="150" src="https://odoo-community.org/web/image/3649316-f8015c51/Contributor%20Badge%20Medium.png">Sign the CLA</a> so you can add the "Contributor" logo to your profile.
@@ -74,7 +77,7 @@ The five types of Project (PSC) Teams:
 1. Community Tools Teams (providing support to members, e.g. Backport, OpenUpgrade, admin)
 
 <a target="_blank" href="https://www.odoo.com/documentation/17.0/administration/on_premise/community_to_enterprise.html">Switch from Community to Enterprise</a>
-begins with a backup, shutdown, install of the web_enterprise module,
+begins with a backup, shutdown, install of the web_enterprise module.
 
 ## Pricing
 
@@ -113,7 +116,7 @@ The $250 Odoo 17 Certification online, answer 70% of 120-questions in 1.5 hours 
 https://www.odoo.com/documentation/master/applications/general/apps_modules.html
 
 
-## Modules
+## Official Modules
 
 Links to the public demo instance, listed like at https://www.odoo.com/page/editions
 
@@ -231,19 +234,27 @@ Links to the public demo instance, listed like at https://www.odoo.com/page/edit
 
 No warehousing
 
+## Addon Modules
+
+Contrast Odoo's modules against the <a href="](https://en.wikipedia.org/wiki/Enterprise_resource_planning)" title="File:ERP Modules.png">definition of Enterprise Resource Planning</a> in this <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> diagram by Shing Hin Yeung:<br />
+<a target="_blank" href="https://commons.wikimedia.org/w/index.php?curid=141742154"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/ERP_modules.svg"></a>
+
 https://github.com/odoo/odoo/tree/master/addons/hr
 
 * <a target="_blank" href="https://apps.odoo.com/apps/modules/category/Addon/browse">40,000 community-developed apps</a> stored at 
 
-   https://github.com/odoo/odoo/tree/master/addons
+   <a target="_blank" href="https://github.com/odoo/odoo/tree/master/addons">https://github.com/odoo/odoo/tree/master/addons</a>
+
+
+## Audit Trails
+
+Observability: logs, traces
 
 * <a target="_blank" href="https://apps.odoo.com/apps/modules/16.0/smile_audit/">Audit Trail</a> of create, write, unlink methods.
+
 * <a target="_blank" href="https://apps.odoo.com/apps/modules/browse?author=Almighty%20Consulting%20Solutions%20Pvt.%20Ltd.">210 for hospitals</a> <a target="_blank" href="https://www.almightycs.com">Almighty Consulting</a> Gujurat, India - 
 
 <a target="_blank" href="https://www.odoo.com/documentation/master/developer/tutorials/server_framework_101/03_basicmodel.html">estate_property in the models API</a> should be created.
-
-Contrast Odoo's modules against the <a href="](https://en.wikipedia.org/wiki/Enterprise_resource_planning)" title="File:ERP Modules.png">definition of Enterprise Resource Planning</a> in this <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> diagram by Shing Hin Yeung:<br />
-<a target="_blank" href="https://commons.wikimedia.org/w/index.php?curid=141742154"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/ERP_modules.svg"></a>
 
 
 ## Repositories
@@ -351,18 +362,21 @@ Contrast Odoo's modules against the <a href="](https://en.wikipedia.org/wiki/Ent
 
 ## Installation
 
+
 As described at https://github.com/bomonike/odoo-utils/blob/main/README.md
 
 1. If the repo is private, get a GitHub token for read access at your GitHub's Account settings > Developer settings > Fine-grained Personal access tokens:
 
    <a target="_blank" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>
 
-1. Click "Generate new token". Confirm access. Select Expiration "7 days". Give token a descriptive name (with a date)
-    
+1. Click "Generate new token". Confirm access. Select Expiration "7 days". Give token a descriptive name (with a date).
 1. Under "Select scopes", check the "read:packages" scope to grant read access to private repositories.
 1. Click green "Generate token". Click the icon to copy the generated token to paste.
 
-1. Open a Terminal instance to download shell script (instead of git clone):
+1. Open a Terminal instance.
+1. Build the Linux (Debian) instance and obtain a SSH key pair.
+1. SSH into the instance using the asymetric key pair.
+1. Configure the environment:
 
    ```
    cd
@@ -370,7 +384,11 @@ As described at https://github.com/bomonike/odoo-utils/blob/main/README.md
    export OS_TO_INSTALL="debian"  # or "ubuntu"
    export GITHUB_READ_TOKEN="???"  # DO NOT echo this secret!
    echo "OS_TO_INSTALL=\"${OS_TO_INSTALL}\" in $PWD"
-   # Actually: https://github.com/bomonike/odoo-utils/blob/main/odoo_install_debian.sh
+   ```
+
+1. Download shell script (instead of git clone) to where:
+
+   ```
 if [ -f "odoo_install_${OS_TO_INSTALL}.sh" ]; then
    echo "using $(ls -al odoo_install_${OS_TO_INSTALL}.sh)"
    sudo wget "https://raw.githubusercontent.com/bomonike/odoo-utils/main/odoo_install_${OS_TO_INSTALL}.sh?token=${GITHUB_READ_TOKEN}"
@@ -379,25 +397,28 @@ fi
    sudo chmod +x "odoo_install_${OS_TO_INSTALL}.sh"
    ```
 
-2. Use text editor to modify the shell file if parameter values need to be made current going forward and thus updated in GitHub :
+1. Use text editor to modify the shell file if parameter values need to be made current going forward and thus updated in GitHub :
 
    ```
+   # Based on 
+   # Summary of release at https://www.odoo.com/odoo-17-release-notes
    OE_VERSION="17.0"
-   # Based on https://www.debian.org/releases/
-   OS_VERSION="12.0"
+   # Based on https://www.debian.org/releases/ and 
+   # https://www.wikiwand.com/en/Debian_version_history : Bookworm (10 Feb 2024)
+   OS_VERSION="12.5"
    ```
    
-3. Set custom values that should not be set in a public script:
+1. Set custom values that should not be within a public script (substiting sample values here):
 
     ```
     export OE_SUPERADMIN="admin"
     export ADMIN_EMAIL="me@example.com"
     ```
 
-5. Execute the script:
+1. Execute the script:
 
    ```
-   sudo ./odoo_install_${OS_TO_INSTALL}.sh
+   sudo ./"odoo_install_${OS_TO_INSTALL}.sh"
    ```
 
 
@@ -418,24 +439,36 @@ https://marketplace.visualstudio.com/items?itemName=benspaulding.python-manifest
 
 ### .gitignore
 
-NOTE: <tt>.gitignore</tt> does not contain "_DS_Store" from macOS because Odoo doesn't run on macOS.
+NOTE: <tt>.gitignore</tt> from odoo does not contain "_DS_Store" from macOS because Odoo doesn't run on macOS.
 
-macos,python,windows
+The <tt>.gitignore</tt> file was generated using this:
+
+https://www.toptal.com/developers/gitignore/api/macOS,linux,windows,github,visualstudiocode,nginx,node,python,virtualenv
+
+TODO: An explanation of each line is becoming a favorite topic during developer interviews.
 
 See https://github.com/github/gitignore
 
-## Configuration
 
+## Configuration
 
 1. Configuration (activations?)
 
    https://github.com/odoo/odoo/blob/master/.tx/config
 
-
 https://www.odoo.com/documentation/master/applications/studio.html
 
-addons ???
+* conf.d
+* nginx.conf
 
+* pg_hba.conf
+* postgresql.conf
+
+* odoo-server.conf
+* odoo.service
+
+
+<hr />
 
 <a name="Translations"></a>
 
@@ -553,9 +586,41 @@ reported vulnerabilities identified at:
 * [17.0][SEC] Dependency pillow 9.0.1 & 9.4.0 vulnerabilities #165054
 * [17.0][SEC] Dependency lxml 4.8.0 internal denial of service (or application crash) vulnerability #165055
 
+<hr />
+
+## APIs
+
+<a target="_blank" href="https://www.odoo.com/documentation/17.0/developer/reference/external_api.html">Odoo documentation</a> explains how to do XMLRPC.
+But JSON will be used for controllers.
+
+https://github.com/OCA/odoorpc
+Python module to pilot your Odoo servers through JSON-RPC.
+
+https://mart-e.be/2024/01/utiliser-api-odoo-python
+calling RPC 
+
+by <a target="_blank" href="https://www.linkedin.com/in/martintrigaux/">Martin Trigaux</a>,
+developer at Odoo
+
+https://softwareconnect.com/erp/cloud-vs-on-premise/
+Decision Tree
+
+https://github.com/it-projects-llc/odoo-saas-tools
+
+https://github.com/itpp-labs/misc-addons from itpp.dev
+
+
+
+<hr />
+
+<a name="Testing"></a>
+
 ## Testing runboat
 
 https://github.com/odoo/odoodays-2014/blob/master/automated_tests/index.rst
+
+
+<hr />
 
 ## OCA Board
 
@@ -575,7 +640,7 @@ Route de la Chaux 4, 1030 Bussigny, Switzerland
 * <a target="_blank" href="">Benoit Guillot</a> (Akretion)
 * <a target="_blank" href="">Jordi Ballester Alomar</a> (ForgeFlow)
 
-## Members in the US
+### Members in the US
 
 * <a target="_blank" href="">Joel Patrick</a>
 
@@ -598,6 +663,7 @@ Hibou Corp.
 
 * <a target="_blank" href="https://www.linkedin.com/in/lucasjoliveau/">Lucas Joliveau</a>, designer @ Kapreon, Quebec, Canada
 
+
 ## Consultants
 
 https://www.upwork.com/freelancers/~01f688ac2ee5f3320a
@@ -607,23 +673,8 @@ Garden Valley, ID
 https://www.upwork.com/freelancers/asimzaidi
 $45/hr Asim Z.
 
-## API
 
-<a target="_blank" href="https://www.odoo.com/documentation/17.0/developer/reference/external_api.html">Odoo documentation</a> explains how to do XMLRPC.
-But JSON will be used for controllers.
-
-https://github.com/OCA/odoorpc
-Python module to pilot your Odoo servers through JSON-RPC.
-
-https://mart-e.be/2024/01/utiliser-api-odoo-python
-calling RPC 
-
-by <a target="_blank" href="https://www.linkedin.com/in/martintrigaux/">Martin Trigaux</a>,
-developer at Odoo
-
-https://softwareconnect.com/erp/cloud-vs-on-premise/
-Decision Tree
-
+## References
 
 Wilson Mar is a veteran of many transformations - from working on the Skunkworks stealth fighter IT  ERP to cloud to AI. He is APICS-certified to work on SAP, Salesforce, Azure, AWS, and many other technologies.
 
