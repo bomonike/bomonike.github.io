@@ -1,25 +1,32 @@
 # odoo
 
+Subscribe to our YouTube Channel : https://www.youtube.com/@Bomonike 
+
+Unlike other clubs which charge you to waste time seeing others fumble around starting from scatch,
+here we learn to improve DevSecOps and Cloud assets of production-level complexity and security,
+just like you would on the job.
+
+## Odoo
+
 <a target="_blank" href="https://www.odoo.com/">Odoo.com</a> receives 10m visits/month.
 
 Odoo in 2024 has 12 million users worldwide.
 Shell, McKinsey are customers
 
-In additional to being available as SaaS internet browser, 
-Odoo can (uniquely) be installed as "open-source" self-host on-prem.
-
-Odoo also offers a hybrid "odoo.sh".
-
-Odoo aims for the "sweet spot" of both high functionality with ease-of-use.
+Odoo aims for the "sweet spot" of both high functionality with ease-of-use.<br />
 <img src="imgs/odoo-unique-value-2024.svg">
-
 
 
 ## The Company
 
 Odoo began in 2005 by founder <a target="_blank" href="https://www.odoo.com/event/odoo-experience-2021-2847/track/ask-me-anything-ama-with-fabien-odoo-s-founder-4196">VIDEO</a>: <a target="_blank" href="https://www.linkedin.com/in/fpodoo/">Fabien Pinckaers</a>, who is now CEO.
 
-Being in Belgium, the software has been internationalized for localization into various dialects of French (BE, CA, CH) and other languages.
+* <a target="_blank" href="https://be.linkedin.com/in/antony-lesuisse-91479924">Antony Lesuisse</a> is CTO
+* <a target="_blank" href="https://be.linkedin.com/in/alessandromazzocchetti">Alessandro Mazzocchetti</a> is CFO (Finance, Legal, and HR)
+* <a target="_blank" href="https://be.linkedin.com/in/s%C3%A9bastien-bruyr-ba529839">Sébastien Bruyr</a> is CCO (head of Direct and Indirect Channel)
+<br /><br />
+
+They are in Brussels, Belgium, the software has been internationalized for localization into various dialects of French (BE, CA, CH) and other languages.
 
 Support to partners are from India.
 
@@ -83,7 +90,7 @@ begins with a backup, shutdown, install of the web_enterprise module.
 
 15 day free trial
 
-Most ERP vendors estimate software should cost about 3% of annual sales.
+"Most ERP vendors estimate software should cost about 3% of annual sales."
 
 The $3,950 partner fee per year includes $2,600 discounts for internal use by 5 users.
 
@@ -114,6 +121,7 @@ The $250 Odoo 17 Certification online, answer 70% of 120-questions in 1.5 hours 
 
 https://www.odoo.com/documentation/master/applications/general/apps_modules.html
 
+HTML fragments and pages in Odoo are generated using Odoo's x<a target="_blank" href="https://www.odoo.com/documentation/saas-17.2/developer/reference/frontend/qweb.html#reference-qweb">QWeb Templates</a> XML templating engine. It's simliar to Jinja (Python), ERB (Ruby) or Twig (PHP).
 
 ## Official Modules
 
@@ -135,97 +143,100 @@ Links to the public demo instance, listed like at https://www.odoo.com/page/edit
 
    https://www.odoo.com/documentation/master/applications/finance/accounting.html
 
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/accounting?cids=1">Accounting</a>
-1. Invoicing [Ent] Payments
+1. <a target="_blank" href="https://www.odoo.com/app/accounting">Accounting</a> <a target="_blank" href="https://demo5.odoo.com/odoo/accounting?cids=1">Demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/invoicing">Invoicing</a> [Ent] Payments<br />
    [Ent]: AI
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/expenses?cids=1">Expenses</a>
+1. <a target="_blank" href="https://www.odoo.com/app/accounting">Expenses</a> <a target="_blank" href="https://demo5.odoo.com/odoo/expenses?cids=1">Demo</a>
 1. Payroll [Ent] Expense Digitization (OCR), Reimbursement in Payslip
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/documents?cids=1">Documents</a> [Ent]
-   [Ent]: Spreadsheet
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/sign?cids=1">Sign</a> [Ent]
+1. <a target="_blank" href="https://demo5.odoo.com/odoo/documents?cids=1">Documents</a> [Ent]<br />
+   [Ent]: <a target="_blank" href="https://www.odoo.com/app/spreadsheet">Spreadsheet (BI)</a>
+1. <a target="_blank" href="https://www.odoo.com/app/sign">Sign</a> <a target="_blank" href="https://demo5.odoo.com/odoo/sign?cids=1">Demo</a> [Ent]
 
    ### Sales
 
    https://www.odoo.com/documentation/master/applications/sales/crm.html
 
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/crm?cids=1">CRM</a> (Customer Relationship Management)
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/sales?cids=1">Sales</a>
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/point-of-sale?cids=1">POS</a> (Point of Sale Registers) 
+1. <a target="_blank" href="https://www.odoo.com/app/crm">CRM</a> (Customer Relationship Management) <a target="_blank" href="https://demo5.odoo.com/odoo/crm?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/sales">Sales</a> <a target="_blank" href="https://demo5.odoo.com/odoo/sales?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/point-of-sale-shop">POS</a> (Point of Sale Shop Registers) <a target="_blank" href="https://demo5.odoo.com/odoo/point-of-sale?cids=1">demo</a><br />
    [Ent]: Loyalty Programs and Gift Cards
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/subscriptions?cids=1">Subscriptions</a> [Ent]
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/rental?cids=1">Rental</a> [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/subscriptions">Subscriptions</a> [Ent] <a target="_blank" href="https://demo5.odoo.com/odoo/subscriptions?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/rental">Rental</a> [Ent] <a target="_blank" href="https://demo5.odoo.com/odoo/rental?cids=1">demo</a>
 1. Amazon Connector [Ent]
    
    ### Websites
 
    https://www.odoo.com/documentation/master/applications/websites/website.html
 
-1. <a target="_blank" href="https://demo5.odoo.com/">Website Builder</a>
-1. <a target="_blank" href="">eCommerce</a> (shopping, payments, Stripe, PayPal)
-1. Blog
-1. Forum
-1. Live Chat
-1. eLearning
-   
+1. <a target="_blank" href="https://www.odoo.com/app/website">Website Builder</a> 
+1. <a target="_blank" href="https://www.odoo.com/app/ecommerce">eCommerce</a> (shopping, payments, Stripe, PayPal)
+1. <a target="_blank" href="https://www.odoo.com/app/blog">Blog</a>
+1. <a target="_blank" href="https://www.odoo.com/app/forum">Forum</a>
+1. <a target="_blank" href="https://www.odoo.com/app/live-chat">Live Chat</a>
+1. <a target="_blank" href="https://www.odoo.com/app/elearning">eLearning</a>
+
    ### Inventory & MRP
 
    https://www.odoo.com/documentation/master/applications/inventory_and_mrp/inventory.html
 
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/inventory?cids=1">Inventory</a>
+1. <a target="_blank" href="https://www.odoo.com/app/inventory">Inventory</a> <a target="_blank" href="https://demo5.odoo.com/odoo/inventory?cids=1">demo</a><br />
    [Ent]: Barcode
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/work-centers?cids=1">Manufacturing</a> (MRP)
+1. <a target="_blank" href="https://www.odoo.com/app/manufacturing">Manufacturing</a> (MRP) <a target="_blank" href="https://demo5.odoo.com/odoo/work-centers?cids=1">demo</a><br />
    [Ent]: Workcenter, Control Panel, Scheduling
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/shop-floor?cids=1">Shop Floor</a>
-1. PLM [Ent]
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/purchase?cids=1">Purchase</a> (Payables???)
-1. Maintenance 
-1. Quality [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/shop-floor">Shop Floor</a> <a target="_blank" href="https://demo5.odoo.com/odoo/shop-floor?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/plm">PLM (Product Lifecycle Management)</a> [Ent]
+1. Purchase (Payables???) <a target="_blank" href="https://demo5.odoo.com/odoo/purchase?cids=1">demo</a> 
+1. <a target="_blank" href="https://www.odoo.com/app/maintenance">Maintenance</a>
+1. <a target="_blank" href="https://www.odoo.com/app/quality">Quality</a> [Ent]
 
    ### Human Resources
 
    https://www.odoo.com/documentation/master/applications/hr/attendances.html
    
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/employees?cids=1">Employees</a>
+1. <a target="_blank" href="https://www.odoo.com/app/employee">Employees</a> <a target="_blank" href="https://demo5.odoo.com/odoo/employees?cids=1">demo</a><br />
    [Ent]: Departmental Dashboards
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/recruitement?cids=1">Recruitment</a>
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/time-off?cids=1">Time Off</a>
-1. Referrals [Ent]
-1. Appraisals [Ent]
-1. Fleet (https://github.com/odoo/odoo/tree/master/addons/fleet)
+1. <a target="_blank" href="https://www.odoo.com/app/recruitment">Recruitment</a> <a target="_blank" href="https://demo5.odoo.com/odoo/recruitement?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/time-off">Time Off</a> <a target="_blank" href="https://demo5.odoo.com/odoo/time-off?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/referrals">Referrals</a> [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/appraisals">Appraisals</a> [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/fleet">Fleet</a> (https://github.com/odoo/odoo/tree/master/addons/fleet)
 
    ### Marketing
 
    https://www.odoo.com/documentation/master/applications/marketing/email_marketing.html
 
-1. Social Marketing [Ent]
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/email-marketing?cids=1">Email Marketing</a>
+1. <a target="_blank" href="https://www.odoo.com/app/social-marketing">Social Marketing</a> [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/email-marketing">Email Marketing</a> <a target="_blank" href="https://demo5.odoo.com/odoo/email-marketing?cids=1">demo</a><br />
    [Ent]: Mailing Templates
-1. SMS Marketing
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/events?cids=1">Events</a>
-1. Marketing Automation [Ent]
-1. Surveys</a>
+1. <a target="_blank" href="https://www.odoo.com/app/social-marketing">SMS Marketing</a>
+1. <a target="_blank" href="https://www.odoo.com/app/events">Events</a> <a target="_blank" href="https://demo5.odoo.com/odoo/events?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/marketing-automation">Marketing Automation</a> [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/surveys">Surveys</a>
 
    ### Services
 
    https://www.odoo.com/documentation/master/applications/services/project.html
 
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/project?cids=1">Projects</a>
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/timesheets?cids=1">Timesheets</a>
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/field-service?cids=1">Field Service</a> [Ent]
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/helpdesk?cids=1">Helpdesk</a> [Ent] Tickets
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/employees-planning?cids=1">Planning</a>  [Ent] (Schedules)
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/appointments?cids=1">Appointments</a> [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/project">Projects</a> <a target="_blank" href="https://demo5.odoo.com/odoo/project?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/Timesheets">Timesheets</a> <a target="_blank" href="https://demo5.odoo.com/odoo/timesheets?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/Field-Service">Field Service</a> <a target="_blank" href="https://demo5.odoo.com/odoo/field-service?cids=1">demo</a> [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/Helpdesk">Helpdesk</a> <a target="_blank" href="https://demo5.odoo.com/odoo/helpdesk?cids=1">Helpdesk</a> [Ent] Tickets
+1. <a target="_blank" href="https://www.odoo.com/app/Planning">Planning</a> <a target="_blank" href="https://demo5.odoo.com/odoo/employees-planning?cids=1">demo</a>  [Ent] (Schedules)
+1. <a target="_blank" href="https://www.odoo.com/app/Appointments">Appointments</a> <a target="_blank" href="https://demo5.odoo.com/odoo/appointments?cids=1">demo</a> [Ent]
 
    ### Productivity
 
    https://www.odoo.com/documentation/master/applications/productivity/documents.html
 
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/discuss?cids=1">Discuss</a>
-1. Approvals  [Ent]
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/to-do?cids=1">To-do</a>
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/calendar?cids=1">Calendar</a>
-1. VoIP (Voice over Internet Protocol)  [Ent]
-1. IoT (Internet of Things)  [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/Discuss">Discuss</a> <a target="_blank" href="https://demo5.odoo.com/odoo/discuss?cids=1">Discuss</a>
+1. <a target="_blank" href="https://www.odoo.com/app/Approvals">Approvals</a>
+1. <a target="_blank" href="https://www.odoo.com/app/VoIP">VoIP</a> (Voice over Internet Protocol)  [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/IoT">IoT (Internet of Things) </a> [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/Knowlege">Knowlege</a>
+1. <a target="_blank" href="https://www.odoo.com/app/WhatsApp">WhatsApp</a>
+
+1. To-do <a target="_blank" href="https://demo5.odoo.com/odoo/to-do?cids=1">demo</a>
+1. Calendar <a target="_blank" href="https://demo5.odoo.com/odoo/calendar?cids=1">demo</a>
 
    ### Customization
    
@@ -359,13 +370,15 @@ Observability: logs, traces
 
 <hr />
 
-<a name="Installations"></a>
+<a name="Hosting"></a>
 
-## Installation Options
+## Hosting Options
 
 Comparing Odoo SaaS, Odoo On-Premise, and SH:
    * https://softwareconnect.com/erp/cloud-vs-on-premise/ Decision Tree
    * https://www.ksolves.com/blog/odoo/comparing-odoo-saas-odoo-on-premise-and-sh-a-comprehensive-analysis
+   * https://www.pptssolutions.com/odoo-online-vs-odoo-sh/
+   * https://www.biztechcs.com/blog/odoo-sh-picking-right-odoo-hosting/
    <br /><br />
 
 There are different ways to create an instance of odoo:
@@ -376,6 +389,8 @@ A. In Odoo's cloud running SaaS (Software as a Service). The easiest with a subs
 
 B. On-premises on machines you build and maintain. For experimentation with add-ons.
 
+   We use Debian (instead of Ubuntu or Red Hat)
+
    * <a href="#DebianLinuxInstall">On a local Linux Debian machine running odoo installed directly</a>
    * <a href="#DebianLinuxDocker">On a local Linux Debian machine running Odoo in a Docker image</a>
    * <a href="#DebianLinuxVMware">On a local Linux Debian machine running a VMWare image using VMWare on Linux</a>
@@ -384,6 +399,8 @@ B. On-premises on machines you build and maintain. For experimentation with add-
    * <a href="#MacVMware">On macOS Intel chips running Odoo in a VMWare image using VMWare Fusion</a> (version purchase)
    * <a href="#MacLinuxParallels">On macOS Silicon chips running Odoo in a VMWare image using Parallels</a> (subscription)
    <br /><br />
+
+   https://www.linkedin.com/pulse/odoo-deployment-when-opt-container-based-solutions-docker-kubernetes-hbmrf
 
 C. <strong>odoo.sh</strong> aka "hybrid" Odoo-managed PaaS (Platform as a Service) where you create your own cloud platform by clicking on odoo's UI. It also encompasses an email server. Tools provided include:
 
@@ -406,6 +423,9 @@ D. On-premises within a <strong>private cloud</strong> instance you build and ma
    * <a target="_blank" href="https://wilsonmar.github.io/gcp/">GCP (Google Cloud Platform)</a>
    * [Hetzner](https://www.hetzner.com/),
    * [DigitalOcean](https://www.digitalocean.com/products/droplets/)
+   * Akamai
+   * CloudFlare
+   * Vultr (for support by cloudpepper.io)
    <br /><br />
 
 <hr />
@@ -424,7 +444,7 @@ Assets referenced by this article are at a private repo:
 
 1. Request to join via Patreon.
 
-1. Once you're made a contributor, generate a GitHub Personal Access Token for read access:
+1. If you have not been made a contributor, generate a GitHub Personal Access Token for read access:
 
    1. You need a GitHub account with SSH certificates.
    1. At your GitHub's Account settings > Developer settings > Fine-grained Personal access tokens:<br /><br /><a target="_blank" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>
@@ -434,9 +454,10 @@ Assets referenced by this article are at a private repo:
    <br /><br />
 
 1. Open a Terminal and navigate to a folder where Git will create a folder.
-1. Load our project assets:
+1. Load the assets associated with our project
 
    <pre>git clone git@github.com:bomonike/odoo-setup.git
+   # Paste token ???
    cd odoo-setup
    du -sh
    git branch
@@ -446,11 +467,22 @@ Assets referenced by this article are at a private repo:
 
    The repo contains shell scripts to load Odoo onto <a href="#OnpremMachines">on-prem. machines</a> and in <a href="#PrivateClouds">each private cloud</a>.
 
+PROTIP: The thoroughness of Debian's testing means that older versions of apps are installed with Debian core. So some install Flathub to download replacements of cames with Debian.
+
+
 <hr />
 
 <a name="DebianLinuxInstall"></a>
 
 ## Install local Linux Debian machine running odoo installed directly
+
+   References:
+   * https://www.odoo.com/documentation/17.0/administration/on_premise/packages.html
+   <br /><br />
+
+1. Obtain and connect a blank USB hard drive for your rig. Format it with no password.
+
+   NOTE: On a Zimaboard, the 31.3 GB MMC/SD card onboard (mmcblk0) BJTD4R should not be used to run apps.
 
 1. Obtain the latest stable Debian (Linux) image for running on AMD64:
 
@@ -462,29 +494,53 @@ Assets referenced by this article are at a private repo:
    3. Eject the USB drive.
    4. Optionally, also download file SHA521SUMS
 
-1. Create a bootable USB on macOS, use the balenEtcher.app.
+1. Use the balenEtcher.app to create a bootable USB from the .iso file. 
 
+1. Edit the <tt>bookworm_preseed.txt</tt> preconfiguration (preseed) file: 
 
-
-
-   Alternately, to create on Debian:
-
-1. Create a preconfiguration file (which pulls in other files) for Automated installs, based on:
-
-   https://www.debian.org/releases/bookworm/example-preseed.txt
-
-   PROTIP: Automated installs enable quicker recovery from mistakes. See:
+   <a target="_blank" href="https://www.youtube.com/watch?v=ndHi1sQWuH4&list=PLvadQtO-ihXvL64Rfc1jLfPQo0zP35n02&index=10">VIDEO</a> PROTIP: Running "autoinstall" using a preconfiguration (preseed) file instead of manually clicking every time makes for less mistakes, less tedius debugging, and better repeatability. 
    * https://wiki.debian.org/DebianInstaller/Preseed
-   * https://www.debian.org/releases/stable/amd64/apb.en.html
+   * https://www.debian.org/releases/stable/amd64/apb.en.html references sample file 
+   * https://www.debian.org/releases/bookworm/example-preseed.txt
    <br /><br />
 
-1. Make the preconfiguration file available to the Debian installer.
+   "bookwarm" in the name of the file specifies the version of Debian because each release has slightly different values.
 
-1. Ensure that the HDI cable from your machine is connected to the monitor/TV.
+   Customization to the file can be made. Saving the file in GitHub provides an audit trail of who made what changes when.
+
+   Entries without "#" comment in this file are in the sequence of manual steps for regular install:
+   1. Language and Localization Locale: <tt>d-i debian-installer/locale string en_US</tt>
+   2. Keyboard Keymap: American English = <tt>d-i keyboard-configuration/xkb-keymap select us</tt>
+   3. Network: enp2s0 = <tt>d-i netcfg/choose_interface select auto</tt>
+   4. Hostname: debian = <tt>d-i netcfg/get_hostname string debian</tt>
+   5. Domain name: <tt>d-i netcfg/get_domain string bomonike</tt>
+   6. Root password: Encrypted <tt>d-i passwd/root-password-crypted password [crypt(3) hash]</tt> ???
+   7. Full name of user: <tt>d-i passwd/user-fullname string Debian User</tt>
+   8. User name: <tt>d-i passwd/username string debian</tt>
+   9. Password: <tt>d-i passwd/user-password-crypted password [crypt(3) hash]</tt> ???
+   10. Set Time to UTC: <tt>d-i clock-setup/utc boolean true</tt> ???
+   11. Time Zone: <tt>d-i time/zone string US/Mountain</tt>
+   12. Partioning: <tt>d-i partman-auto/method string lvm</tt>
+   <br /><br />
+
+   NOTE: LVM (Logical Volume Management) is used on servers and in enterprise environments where storage needs are dynamic and require frequent resizing or reorganization of disk space. It simplifies storage administration by abstracting the physical disk layout. LVM is a disk partitioning technique that provides a layer of abstraction over physical storage devices, allowing for more flexible and dynamic allocation of disk space. LVM partitioning works by initializing physical disks Physical Volumes (PVs). PVs are combined into Volume Groups (VGs), which act as storage pools. Within a VG, Logical Volumes (LVs) are created from the available space. PVs can be added or removed from a VG while the system is running, providing more flexibility for storage expansion. LVs function similar to traditional disk partitions but with more flexibility because LVs can be resized (grown or shrunk) while online by adding or removing space from the underlying VG, without disrupting applications using the LV. LVs can span across multiple PVs in the same VG, allowing for volumes larger than a single disk. 
+
+1. TODO: Make the preconfiguration file available to the Debian installer. This can be a URL to a server in the local network such as:
+
+   <tt>http://198.168.1.33/files/projectx/debian_preseed.txt</tt>
+
 1. Insert the USB and hold the F11 key during power-up.
+1. Ensure that the HDMI cable from your machine is connected to the monitor.
+
 1. Select the device preference to boot up from USB.
-1. Select "Autoinstall".
+
+1. When the "UEFI Installer menu" appears, select "Accessible dark contrast installer menu".
+1. Select "Autoinstall" to use the preseed file.
+1. Select network.
 1. Type the preseed file URL.
+   * Name the computer, domain, password for root
+   * tine zone, hard drive
+   Debian archive mirror country
 
 1. TODO:
 
@@ -789,7 +845,7 @@ developer at Odoo
 https://github.com/it-projects-llc/odoo-saas-tools
 
 https://github.com/itpp-labs/misc-addons from itpp.dev
-
+for web_debranding and web_theme_kit until v15.
 
 
 <hr />
