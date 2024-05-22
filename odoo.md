@@ -67,9 +67,13 @@ In 2013, the not-for-profit Odoo Community Association - <a target="_blank" href
 
 1. Attend <a target="_blank" href="https://odoo-community.org/event">events</a>:
 
-   OCA sponsors OCA Days 2024 on 30th September - 1st October 2024 at Val Benoit,  Liège
+   #odoo17 was announced November 2023 at the Odoo Experience (OXP) conference (#OdooExperience)
+
+   OCA sponsors OCA Days 2024 on 30th September - 1st October 2024 at Val Benoit, Liège, Belgium.
 
    OSICON 2023 
+
+   https://www.linkedin.com/pulse/29-what-odoo-why-its-smart-erp-choice-businesses-william-mcmahon-ozihe
 
 The five types of Project (PSC) Teams:
 
@@ -251,9 +255,9 @@ Contrast Odoo's modules against the <a href="](https://en.wikipedia.org/wiki/Ent
 
 https://github.com/odoo/odoo/tree/master/addons/hr
 
-* <a target="_blank" href="https://apps.odoo.com/apps/modules/category/Addon/browse">40,000 community-developed apps</a> stored at 
-
-   <a target="_blank" href="https://github.com/odoo/odoo/tree/master/addons">https://github.com/odoo/odoo/tree/master/addons</a>
+Among <a target="_blank" href="https://apps.odoo.com/apps">https://apps.odoo.com/apps</a>
+are <a target="_blank" href="https://apps.odoo.com/apps/modules/category/Addon/browse">40,000 community-developed apps</a> stored with<br />
+<a target="_blank" href="https://github.com/odoo/odoo/tree/master/addons">https://github.com/odoo/odoo/tree/master/addons</a>
 
 
 ## Audit Trails
@@ -433,8 +437,9 @@ D. On-premises within a <strong>private cloud</strong> instance you build and ma
 ## Assets
 
    References:
-   * https://github.com/odoo/odoo/tree/master/setup
-   * https://github.com/odoo/odoo/blob/master/setup/rpm/odoo.spec 
+   * https://github.com/odoo/odoo/blob/master/setup/rpm/odoo.spec which follows 
+   * https://rpm-packaging-guide.github.io/
+   * https://rpm-software-management.github.io/rpm/manual/spec.html
    * https://github.com/odoo/odoo/tree/master/debian
    <br /><br />
 
@@ -496,7 +501,7 @@ PROTIP: The thoroughness of Debian's testing means that older versions of apps a
 
 1. Use the balenEtcher.app to create a bootable USB from the .iso file. 
 
-1. Edit the <tt>bookworm_preseed.txt</tt> preconfiguration (preseed) file: 
+   ### Prepare the preseed file
 
    <a target="_blank" href="https://www.youtube.com/watch?v=ndHi1sQWuH4&list=PLvadQtO-ihXvL64Rfc1jLfPQo0zP35n02&index=10">VIDEO</a> PROTIP: Running "autoinstall" using a preconfiguration (preseed) file instead of manually clicking every time makes for less mistakes, less tedius debugging, and better repeatability. 
    * https://wiki.debian.org/DebianInstaller/Preseed
@@ -504,46 +509,127 @@ PROTIP: The thoroughness of Debian's testing means that older versions of apps a
    * https://www.debian.org/releases/bookworm/example-preseed.txt
    <br /><br />
 
+   Customization to the file can be made. Saving the file in GitHub provides an audit trail of who made what changes when.
+
+   PROTIP: Many prefer to use the <tt>replace</tt> command which ships with the "mysql-server" package such that:
+
+   <pre># replace string abc to XYZ in files:
+replace "abc" "XYZ" -- file.txt file2.txt file3.txt
+# or pipe an echo to replace:
+echo "abcdef" |replace "abc" "XYZ"
+   </pre>
+
+1. Retrieve the <tt>bookworm_preseed.txt</tt> preconfiguration (preseed) file in:
+
+   <a target="_blank" href="https://github.com/bomonike/odoo-setup/blob/main/debian/bookworm_preseed.txt">https://github.com/bomonike/odoo-setup/blob/main/debian/bookworm_preseed.txt</a>
+
    "bookwarm" in the name of the file specifies the version of Debian because each release has slightly different values.
 
-   Customization to the file can be made. Saving the file in GitHub provides an audit trail of who made what changes when.
+1. Generate strong root and user passwords, then store them in a 3rd-party central secrets vault.
+
+   PROTIP: Provide a <strong>salt</strong> value to an algorithm defined in the <tt>/etc/shadow</tt> file. ??? Example:
+
+   <pre>mkpasswd -m sha-512 -S $(pwgen -ns 16 1) mypassword
+   ROOT_PASSWORD="$mypassword"
+   </pre>
+
+   Replace the "[crypt(3) hash]" handle within the file:
+   <pre>sed -i -e 's/[crypt(3) hash]/$ROOT_PASSWORD/g' /tmp/bookworm_preseed.txt
+   </pre>
+
+   PROTIP: On BSD-based platforms, including MacOS, you need an explicit option argument <tt>-i ''</tt>
+
+   A sample result within the file:
+   <tt>d-i passwd/root-password-crypted password $1$CHp7HkQW$Z2ZTY5cZMurbwbqU1zaS.1</tt>
+
+1. Replace the "bomonike.com" handle within the file with the value of <tt>MY_DOMAIN_NAME</tt> obtained from a common .env file referenced by other processes:
+
+   <pre>sed -i -e 's/my_domain_name/$MY_DOMAIN_NAME/g' /tmp/bookworm_preseed.txt
+   </pre>
+
+   A sample result within the file:
+   <tt>d-i netcfg/get_domain string bomonike.com</tt>
+
+1. Replace the "Debian User" handle within the file with the value of <tt>MY_ADMIN_FULL_NAME</tt> obtained from a common .env file referenced by other processes:
+
+   <pre>sed -i -e 's/Debian User/$MY_ADMIN_FULL_NAME/g' /tmp/bookworm_preseed.txt
+   </pre>
+
+   A sample result within the file:
+   <tt>d-i passwd/user-fullname string Debian User</tt>
+  
+1. Replace the "debian1234" handle within the file with the value of <tt>MY_ADMIN_USER_NAME</tt> obtained from a common .env file referenced by other processes:
+
+   <pre>sed -i -e 's/debian1234/$MY_ADMIN_USER_NAME/g' /tmp/bookworm_preseed.txt
+   </pre>
+
+   A sample result within the file:
+   <tt>d-i passwd/username string debian1234</tt>
+  
+1. Replace the "Mountain" handle within the file with the value of <tt>MY_TIMEZONE</tt> obtained from a common .env file referenced by other processes:
+
+   <pre>sed -i -e 's/Eastern/$MY_TIMEZONE/g' /tmp/bookworm_preseed.txt
+   </pre>
+
+   A sample result within the file:
+   <tt>d-i time/zone string US/Mountain</tt>
+  
+1. TODO: Make the preconfiguration file available to the Debian installer. This can be a URL to a server in the local network such as:
+
+   <tt>http://198.168.1.33/files/projectx/debian_preseed.txt</tt>
+
+   ## Power-up to run install
+
+1. Ensure that the HDMI cable from your machine is connected to the powered-up monitor.
+1. Insert the USB and hold the F11 key during power-up.
+1. Select the device preference to boot up from USB.
+
+1. When the "UEFI Installer menu" appears, select "Accessible dark contrast installer menu".
+1. Select "Autoinstall" to use the preseed file.
+1. Select the Installer
 
    Entries without "#" comment in this file are in the sequence of manual steps for regular install:
    1. Language and Localization Locale: <tt>d-i debian-installer/locale string en_US</tt>
    2. Keyboard Keymap: American English = <tt>d-i keyboard-configuration/xkb-keymap select us</tt>
    3. Network: enp2s0 = <tt>d-i netcfg/choose_interface select auto</tt>
    4. Hostname: debian = <tt>d-i netcfg/get_hostname string debian</tt>
-   5. Domain name: <tt>d-i netcfg/get_domain string bomonike</tt>
-   6. Root password: Encrypted <tt>d-i passwd/root-password-crypted password [crypt(3) hash]</tt> ???
+   5. Domain name: <tt>d-i netcfg/get_domain string mydomain_name</tt>
+   6. Root password: Encrypted <tt>d-i passwd/root-password-crypted password [crypt(3) hash]<br />
+   </tt>
    7. Full name of user: <tt>d-i passwd/user-fullname string Debian User</tt>
-   8. User name: <tt>d-i passwd/username string debian</tt>
-   9. Password: <tt>d-i passwd/user-password-crypted password [crypt(3) hash]</tt> ???
-   10. Set Time to UTC: <tt>d-i clock-setup/utc boolean true</tt> ???
-   11. Time Zone: <tt>d-i time/zone string US/Mountain</tt>
+   8. User name: <tt>d-i passwd/username string debian1234</tt>
+   9. Password: <tt>d-i passwd/user-password-crypted password [crypt(3) hash]</tt>
+   10. Set Time to UTC: <tt>d-i clock-setup/utc boolean true</tt><br />PROTIP: It is the standard for many enterprises to have all servers be set to the same time zone - UTC - which has no time change jumps twice a year.
+
+   11. Time Zone: <tt>d-i time/zone string <strong>US/Eastern</strong></tt>
    12. Partioning: <tt>d-i partman-auto/method string lvm</tt>
    <br /><br />
 
+   An sample disk selection: <tt>SCSI4 (0,0,0) (sdb) - 2.0 TB Samsung PSSD T7</tt>
+   where <tt>ext4</tt> file system is installed.
+
    NOTE: LVM (Logical Volume Management) is used on servers and in enterprise environments where storage needs are dynamic and require frequent resizing or reorganization of disk space. It simplifies storage administration by abstracting the physical disk layout. LVM is a disk partitioning technique that provides a layer of abstraction over physical storage devices, allowing for more flexible and dynamic allocation of disk space. LVM partitioning works by initializing physical disks Physical Volumes (PVs). PVs are combined into Volume Groups (VGs), which act as storage pools. Within a VG, Logical Volumes (LVs) are created from the available space. PVs can be added or removed from a VG while the system is running, providing more flexibility for storage expansion. LVs function similar to traditional disk partitions but with more flexibility because LVs can be resized (grown or shrunk) while online by adding or removing space from the underlying VG, without disrupting applications using the LV. LVs can span across multiple PVs in the same VG, allowing for volumes larger than a single disk. 
 
-1. TODO: Make the preconfiguration file available to the Debian installer. This can be a URL to a server in the local network such as:
+1. If the disk cannot be read, format the disk to "Ext" on another machine.
 
-   <tt>http://198.168.1.33/files/projectx/debian_preseed.txt</tt>
+1. Select an archive location. In the United States, <tt>deb.debian.org</tt>
+1. Press Enter if you don't need a proxy.
+1. Wait for "Retrieving" messages, then "Select and install software".
+1. Reply "No" to the survey question.
+1. Software selection is the "Debian desktop environment", MATE, and "Standard system utilities".
 
-1. Insert the USB and hold the F11 key during power-up.
-1. Ensure that the HDMI cable from your machine is connected to the monitor.
+   PROTIP: Install utilities later using <tt>flatpack</tt> to obtain the latest version. The ones from Debian tend to be dated (and thus potentially less secure).
 
-1. Select the device preference to boot up from USB.
+1. Reply "Yes" to install GRUB boot loader.
+1. Select the device for boot loader installation. Example for using the Samsung T7 USB drive:
 
-1. When the "UEFI Installer menu" appears, select "Accessible dark contrast installer menu".
-1. Select "Autoinstall" to use the preseed file.
-1. Select network.
-1. Type the preseed file URL.
-   * Name the computer, domain, password for root
-   * tine zone, hard drive
-   Debian archive mirror country
+   <tt>/dev/sda (usb-Samsung-PSSD_T7_S5TCNS0RB12345K-0:0)</tt>
 
-1. TODO:
+1. Click "Continue" to "Installation complete" to cause a reboot.
 
+   ### Debian login
+
+1. Login using your user name and password.
 
 <hr />
 
@@ -630,7 +716,7 @@ TODO:
    ```
 if [ -f "odoo_install_${OS_TO_INSTALL}.sh" ]; then
    echo "using $(ls -al odoo_install_${OS_TO_INSTALL}.sh)"
-   sudo wget "https://raw.githubusercontent.com/bomonike/odoo-setup/main/odoo_install_${OS_TO_INSTALL}.sh?token=${GITHUB_READ_TOKEN}"
+   sudo wget "https://raw.githubusercontent.com/bomonike/odoo-setup/main/debian/odoo_install_${OS_TO_INSTALL}.sh?token=${GITHUB_READ_TOKEN}"
       # odoo_install_debian.sh?token=ghp_l 100%[===...===>]  13.86K  --.-KB/s    in 0.1s
 fi
    # Set eXecute permissions:
