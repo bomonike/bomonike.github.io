@@ -1,12 +1,12 @@
-# odoo
-
-Please subscribe: 
-* Our YouTube Channel : https://www.youtube.com/@Bomonike 
-<br /><br />
+# Our Bomonike Learning Club
 
 Unlike other clubs which charge you to waste time seeing others fumble around starting from scatch,
 here we learn to improve DevSecOps and Cloud assets of production-level complexity and security,
 just like you would on the job.
+
+Please subscribe: 
+* Our YouTube Channel : https://www.youtube.com/@Bomonike 
+<br /><br />
 
 ## Odoo
 
@@ -145,6 +145,9 @@ Links to the public demo instance, listed like at https://www.odoo.com/page/edit
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715972772/odoo-modules-demo5-800x788_cdbmep.png"><img width="100" alt="odoo-modules-demo5-800x788.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715972772/odoo-modules-demo5-800x788_cdbmep.png"><em>Click for full screen.</em></a>
 
+   More apps appear on the localhost created using Docker:<br />
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png"><img width="200" alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png"></a>
+
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/settings?cids=1">Settings</a>
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/dashboards?cids=1&dashboard_id=13">Dashboards</a>
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/knowledge/33?cids=1">Knowledge</a>
@@ -160,7 +163,7 @@ Links to the public demo instance, listed like at https://www.odoo.com/page/edit
 1. <a target="_blank" href="https://www.odoo.com/app/accounting">Accounting</a> <a target="_blank" href="https://demo5.odoo.com/odoo/accounting?cids=1">Demo</a>
 1. <a target="_blank" href="https://www.odoo.com/app/invoicing">Invoicing</a> [Ent] Payments<br />
    [Ent]: AI
-1. <a target="_blank" href="https://www.odoo.com/app/accounting">Expenses</a> <a target="_blank" href="https://demo5.odoo.com/odoo/expenses?cids=1">Demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/accounting">Expenses</a> <a target="_blank" href="https://demo5.odoo.com/odoo/expenses?cids=1">demo</a>
 1. Payroll [Ent] Expense Digitization (OCR), Reimbursement in Payslip
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/documents?cids=1">Documents</a> [Ent]<br />
    [Ent]: <a target="_blank" href="https://www.odoo.com/app/spreadsheet">Spreadsheet (BI)</a>
@@ -271,37 +274,40 @@ Among <a target="_blank" href="https://apps.odoo.com/apps">https://apps.odoo.com
 
 ## Industries
 
-The CATEGORIES:
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481283/odoo-docker-indus-240522_w4ddzv.png"><img align="right" width="200" alt="odoo-docker-indus-240522.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481283/odoo-docker-indus-240522_w4ddzv.png">
+The most comprehensive menu is from the official Docker image</a>,
+under each CATEGORIES, alphabetically:
+
 * Manufacturing
-   * Micro Brewery 
-   * Coal and Petroleum (Fossil Fuels)
+   * <a target="_blank" href="">Coal and Petroleum (Fossil Fuels)</a>
+   * <a target="_blank" href="">Micro Brewery</a>
 * NGO (Non-Governmental Organizations) 
-   * Non Profit Organizations
+   * <a target="_blank" href="">Non Profit Organizations</a>
 * Retail
-   * Software Reseller
-   * Hardware Shop
-   * Clothing and Boutique
-   * Automobile Spareparts
-   * Grocery Store
-   * Furniture Store
-   * Cake Shop
-   * Eyewear Shop
-   * The Arts & Crafts Shop
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/software_reseller/">Software Reseller</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/hardware_shop/">Hardware Shop</a>
+   * <a target="_blank" href="">Clothing and Boutique</a>
+   * <a target="_blank" href="">Automobile Spareparts</a>
+   * <a target="_blank" href="">Grocery Store</a>
+   * <a target="_blank" href="">Furniture Store</a>
+   * <a target="_blank" href="">Cake Shop</a>
+   * <a target="_blank" href="">Eyewear Shop</a>
+   * <a target="_blank" href="">The Arts & Crafts Shop</a>
 * Services
-   * Real Estate
-   * Restaurant (Foods & Cafes)
-   * Construction
-   * Hair Salon
-   * Lawyer
-   * Photography
-   * Sports Club
-   * Architects
-   * Headhunter
-   * Certification Auditors
-   * Bar and Lounge
-   * Surveyor
-   * Corporate Gifts
-   * Solar Installation
+   * <a target="_blank" href="">Real Estate</a>
+   * <a target="_blank" href="">Restaurant (Foods & Cafes)</a>
+   * <a target="_blank" href="">Construction</a>
+   * <a target="_blank" href="">Hair Salon</a>
+   * <a target="_blank" href="">Lawyer</a>
+   * <a target="_blank" href="">Photography</a>
+   * <a target="_blank" href="">Sports Club</a>
+   * <a target="_blank" href="">Architects</a>
+   * <a target="_blank" href="">Headhunter</a>
+   * <a target="_blank" href="">Certification Auditors</a>
+   * <a target="_blank" href="">Bar and Lounge</a>
+   * <a target="_blank" href="">Surveyor</a>
+   * <a target="_blank" href="">Corporate Gifts</a>
+   * <a target="_blank" href="">Solar Installation</a>
 * eCommerce
    * <em>no modules</em>
 
@@ -428,7 +434,7 @@ Observability: logs, traces
 
 ## Hosting Options
 
-Comparing Odoo SaaS, Odoo On-Premise, and SH:
+   References: Comparing Odoo SaaS, Odoo On-Premise, and SH:
    * https://softwareconnect.com/erp/cloud-vs-on-premise/ Decision Tree
    * https://www.ksolves.com/blog/odoo/comparing-odoo-saas-odoo-on-premise-and-sh-a-comprehensive-analysis
    * https://www.pptssolutions.com/odoo-online-vs-odoo-sh/
@@ -535,9 +541,16 @@ Assets referenced by this article are at a private repo:
    * https://www.odoo.com/documentation/17.0/administration/on_premise/packages.html
    <br /><br />
 
-1. Obtain and connect a blank USB hard drive for your rig. Format it with no password.
+1. Obtain and connect a blank USB hard drive for your rig. 
+1. Format it as "Ext". 
 
    NOTE: On a Zimaboard, the 31.3 GB MMC/SD card onboard (mmcblk0) BJTD4R should not be used to run apps.
+
+1. Verify that the blank drive is formatted correctly (among all the drives and partitions connected to your system)
+
+   <pre>fdisk -l</pre>
+
+   The reponse should say ???
 
 1. Obtain the latest stable Debian (Linux) image for running on AMD64:
 
@@ -551,6 +564,8 @@ Assets referenced by this article are at a private repo:
 
 1. Use the balenEtcher.app to create a bootable USB from the .iso file. 
 
+   Alternately, use Rufus.
+
    ### Prepare the preseed file
 
    <a target="_blank" href="https://www.youtube.com/watch?v=ndHi1sQWuH4&list=PLvadQtO-ihXvL64Rfc1jLfPQo0zP35n02&index=10">VIDEO</a> PROTIP: Running "autoinstall" using a preconfiguration (preseed) file instead of manually clicking every time makes for less mistakes, less tedius debugging, and better repeatability. 
@@ -563,11 +578,12 @@ Assets referenced by this article are at a private repo:
 
    PROTIP: Many prefer to use the <tt>replace</tt> command which ships with the "mysql-server" package such that:
 
-   <pre># replace string abc to XYZ in files:
+   ```
+   # replace string abc to XYZ in files:
 replace "abc" "XYZ" -- file.txt file2.txt file3.txt
 # or pipe an echo to replace:
-echo "abcdef" |replace "abc" "XYZ"
-   </pre>
+echo "abcdef" | replace "abc" "XYZ"
+   ```
 
 1. Retrieve the <tt>bookworm_preseed.txt</tt> preconfiguration (preseed) file in:
 
@@ -677,6 +693,8 @@ echo "abcdef" |replace "abc" "XYZ"
    <tt>/dev/sda (usb-Samsung-PSSD_T7_S5TCNS0RB12345K-0:0)</tt>
 
 1. Click "Continue" to "Installation complete" to cause a reboot.
+1. Power down. Remove the USB stick.
+1. Power up.
 
    ### Debian login
 
@@ -750,7 +768,7 @@ echo "abcdef" |replace "abc" "XYZ"
 
 ## Install local Linux Debian machine running Odoo in a Docker image
 
-This is the simplest approach.
+<a target="_blank" href="https://www.youtube.com/watch?v=XVRTd4CcpHA&t=2m30s">VIDEO</a>: This is the simplest and quickest approach, but only on x86 machines (not ARM). 
 
 1. Copy the <tt>odoo.conf</tt> file to your local folder <tt>/etc/odoo/odoo.conf</tt>
 
@@ -770,8 +788,41 @@ This is the simplest approach.
 
 1. How big is it?
 
-   <pre><strong>docker ???
+   <pre><strong>docker system df -v
    </strong></pre>
+
+   <pre>Images space usage:
+&nbsp;
+REPOSITORY                   TAG       IMAGE ID       CREATED        SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+odoo                         latest    d3418aa89ab7   19 hours ago   1.82GB    0B            1.819GB       1
+postgres                     15        08df065641e2   13 days ago    447MB     0B            447.3MB       1
+grafana/grafana-enterprise   latest    ab01b5ecb880   6 weeks ago    439MB     0B            439.1MB       1
+&nbsp;
+Containers space usage:
+&nbsp;
+CONTAINER ID   IMAGE                        COMMAND                  LOCAL VOLUMES   SIZE      CREATED          STATUS                     NAMES
+31e0127a5e57   odoo                         "/entrypoint.sh odoo"    2               215B      43 minutes ago   Up 43 minutes              odoo
+4c2d596c3300   postgres:15                  "docker-entrypoint.s…"   1               63B       43 minutes ago   Up 43 minutes              db
+d3196718d679   grafana/grafana-enterprise   "/run.sh"                0               1.21MB    5 weeks ago      Exited (137) 5 weeks ago   grafana
+&nbsp;
+Local Volumes space usage:
+&nbsp;
+VOLUME NAME                                                        LINKS     SIZE
+fb957d8867fa931e223318b96f9adb13e7fa4d0542b3b5748b242d11d978ac3e   1         6.465MB
+af5606f2b38f5ab0cd6957d58adfe71fd24d2e8d545270a63c985df63518b37d   1         78.17MB
+d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
+</pre>
+
+   The columns show:
+
+   * REPOSITORY: The image repository name
+   * TAG: The image tag
+   * IMAGE ID: The unique ID of the image
+   * CREATED: How long ago the image was created
+   * SIZE: The total size of the image
+   * SHARED SIZE: The amount of space shared with other images
+   * UNIQUE SIZE: The amount of space unique to this image
+   * CONTAINERS: The number of containers created from this image
 
 1. Start a PostreSQL server:
 
@@ -781,6 +832,8 @@ This is the simplest approach.
 1. Start an Odoo instance
 
    <pre><strong>docker run -p 8069:8069 --name odoo --link db:db -t odoo</strong></pre>
+
+   WARNING: Clocing the Terminal tab would stop the instance.
 
 1. In an internet browser:
 
@@ -869,10 +922,11 @@ Docker Engine comes bundled with Docker Desktop for Linux. While this is the "ea
 
    The Dockerfile constains:
 
-   <pre>FROM scratch
+   ```
+   FROM scratch
 ADD rootfs.tar.xz /
 CMD ["bash"]
-   </pre>
+   ```
 
    Alternatives: 
    * https://www.server-world.info/en/note?os=Debian_12&p=docker&f=4
