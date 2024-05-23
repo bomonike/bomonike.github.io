@@ -71,6 +71,7 @@ In 2013, the not-for-profit Odoo Community Association - <a target="_blank" href
    * Bug fixing
    * Modules migration
    * <a href="#Translations">Translation</a>
+   * <a target="_blank" href="https://www.odoo.com/documentation/master/developer/reference.html">Reference</a> maintained by Odoo
    <br /><br />
 
 1. Attend <a target="_blank" href="https://odoo-community.org/event">events</a>:
@@ -143,45 +144,72 @@ Links to the public demo instance, listed like at https://www.odoo.com/page/edit
 
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/apps?cids=1">Apps</a> to select what appears in the main screen:
 
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715972772/odoo-modules-demo5-800x788_cdbmep.png"><img width="100" alt="odoo-modules-demo5-800x788.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715972772/odoo-modules-demo5-800x788_cdbmep.png"><em>Click for full screen.</em></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715972772/odoo-modules-demo5-800x788_cdbmep.png"><img align="right" width="200" alt="odoo-modules-demo5-800x788.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715972772/odoo-modules-demo5-800x788_cdbmep.png"><em><br />Click for full screen.</em></a>
 
-   More apps appear on the localhost created using Docker:<br />
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png"><img width="200" alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png"></a>
+More apps appear on the localhost created using Docker:<br />
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png"><img align="right" width="200" alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png"></a>
+
+Categories:
+
+   * <a href="#SalesApps">Sales</a>
+   * <a href="#SvcsApps">Services</a>
+   * <a href="#AcctgApps">Accounting</a>
+   * <a href="#InvApps">Inventory</a>
+   * <a href="#MfgApps">Manufacturing</a>
+   * <a href="#WebsiteApps">Website</a>
+   * <a href="#MktgApps">Marketing</a>
+   * <a href="#HRApps">Human Resources</a>
+   * <a href="#ProductivityApps">Productivity</a>
+   * <a href="#AdminApps">Administration</a>
+   <br /><br />
 
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/settings?cids=1">Settings</a>
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/dashboards?cids=1&dashboard_id=13">Dashboards</a>
-1. <a target="_blank" href="https://demo5.odoo.com/odoo/knowledge/33?cids=1">Knowledge</a>
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/contacts?cids=1">Contacts</a>
 1. Gamification
 
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/action-1097?cids=1">Kitchen Display</a> (<a target="_blank" href="https://www.odoo.com/documentation/master/developer/tutorials/server_framework_101/02_newapp.html">new app?</a>)
 
-   ### Finance
+   <a name="AcctgApps"></a>
+
+   ### Accounting (and Finance) apps 
 
    https://www.odoo.com/documentation/master/applications/finance/accounting.html
 
 1. <a target="_blank" href="https://www.odoo.com/app/accounting">Accounting</a> <a target="_blank" href="https://demo5.odoo.com/odoo/accounting?cids=1">Demo</a>
 1. <a target="_blank" href="https://www.odoo.com/app/invoicing">Invoicing</a> [Ent] Payments<br />
    [Ent]: AI
-1. <a target="_blank" href="https://www.odoo.com/app/accounting">Expenses</a> <a target="_blank" href="https://demo5.odoo.com/odoo/expenses?cids=1">demo</a>
+
+   LOCAL:
+
 1. Payroll [Ent] Expense Digitization (OCR), Reimbursement in Payslip
 1. <a target="_blank" href="https://demo5.odoo.com/odoo/documents?cids=1">Documents</a> [Ent]<br />
    [Ent]: <a target="_blank" href="https://www.odoo.com/app/spreadsheet">Spreadsheet (BI)</a>
 1. <a target="_blank" href="https://www.odoo.com/app/sign">Sign</a> <a target="_blank" href="https://demo5.odoo.com/odoo/sign?cids=1">Demo</a> [Ent]
 
-   ### Sales
+   <a name="SalesApps"></a>
+
+   ### Sales apps
 
    https://www.odoo.com/documentation/master/applications/sales/crm.html
 
-1. <a target="_blank" href="https://www.odoo.com/app/crm">CRM</a> (Customer Relationship Management) <a target="_blank" href="https://demo5.odoo.com/odoo/crm?cids=1">demo</a>
 1. <a target="_blank" href="https://www.odoo.com/app/sales">Sales</a> <a target="_blank" href="https://demo5.odoo.com/odoo/sales?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/crm">CRM</a> (Customer Relationship Management) <a target="_blank" href="https://demo5.odoo.com/odoo/crm?cids=1">demo</a>
+
 1. <a target="_blank" href="https://www.odoo.com/app/point-of-sale-shop">POS</a> (Point of Sale Shop Registers) <a target="_blank" href="https://demo5.odoo.com/odoo/point-of-sale?cids=1">demo</a><br />
    [Ent]: Loyalty Programs and Gift Cards
+1. <a target="_blank" href="https://www.odoo.com/app/point-of-sale-restaurant">POS</a> (Point of Sale Restaurant)
+
 1. <a target="_blank" href="https://www.odoo.com/app/subscriptions">Subscriptions</a> [Ent] <a target="_blank" href="https://demo5.odoo.com/odoo/subscriptions?cids=1">demo</a>
+
+1. VoIP
 1. <a target="_blank" href="https://www.odoo.com/app/rental">Rental</a> [Ent] <a target="_blank" href="https://demo5.odoo.com/odoo/rental?cids=1">demo</a>
 1. Amazon Connector [Ent]
+1. eBay Connector [Ent]
    
-   ### Websites
+   <a name="WebsiteApps"></a>
+
+   ### Website apps
 
    https://www.odoo.com/documentation/master/applications/websites/website.html
 
@@ -192,33 +220,63 @@ Links to the public demo instance, listed like at https://www.odoo.com/page/edit
 1. <a target="_blank" href="https://www.odoo.com/app/live-chat">Live Chat</a>
 1. <a target="_blank" href="https://www.odoo.com/app/elearning">eLearning</a>
 
-   ### Inventory & MRP
+   <a name="InvApps"></a>
 
+   ### Inventory (& MRP) apps
+   
    https://www.odoo.com/documentation/master/applications/inventory_and_mrp/inventory.html
 
 1. <a target="_blank" href="https://www.odoo.com/app/inventory">Inventory</a> <a target="_blank" href="https://demo5.odoo.com/odoo/inventory?cids=1">demo</a><br />
    [Ent]: Barcode
-1. <a target="_blank" href="https://www.odoo.com/app/manufacturing">Manufacturing</a> (MRP) <a target="_blank" href="https://demo5.odoo.com/odoo/work-centers?cids=1">demo</a><br />
+1. <a target="_blank" href="https://www.odoo.com/app/purchase">Purchase</a> <a target="_blank" href="https://demo5.odoo.com/odoo/purchase?cids=1">demo</a> 
+
+   LOCAL:
+
+1. LOCAL: <a target="_blank" href="https://www.odoo.com/app/barcode">Barcode</a> [Ent]
+1. LOCAL: <a target="_blank" href="https://www.odoo.com/app/repairs">Repairs</a> [Ent]
+
+
+   <a name="MfgApps"></a>
+
+   ### Manufacturing apps
+
+1. <a target="_blank" href="https://www.odoo.com/app/manufacturing">Manufacturing</a> Track equipment and manage maintenance requests
+1. <a target="_blank" href="https://www.odoo.com/app/manufacturing">MRP II</a> Work Orders, Planning, Routing <a target="_blank" href="https://demo5.odoo.com/odoo/work-centers?cids=1">demo</a><br />
    [Ent]: Workcenter, Control Panel, Scheduling
-1. <a target="_blank" href="https://www.odoo.com/app/shop-floor">Shop Floor</a> <a target="_blank" href="https://demo5.odoo.com/odoo/shop-floor?cids=1">demo</a>
-1. <a target="_blank" href="https://www.odoo.com/app/plm">PLM (Product Lifecycle Management)</a> [Ent]
-1. Purchase (Payables???) <a target="_blank" href="https://demo5.odoo.com/odoo/purchase?cids=1">demo</a> 
+1. <a target="_blank" href="https://www.odoo.com/app/plm">PLM (Product Lifecycle Management)</a> PLM, ECOs, Versions [Ent] <a target="_blank" href="https://www.youtube.com/watch?v=2m4ZoUEeTgU">VIDEO</a>
 1. <a target="_blank" href="https://www.odoo.com/app/maintenance">Maintenance</a>
 1. <a target="_blank" href="https://www.odoo.com/app/quality">Quality</a> [Ent]
+
+   LOCAL:
+
+1. <a target="_blank" href="https://www.odoo.com/app/shop-floor">Shop Floor</a> <a target="_blank" href="https://demo5.odoo.com/odoo/shop-floor?cids=1">demo</a>
+
+
+   <a name="HRApps">Human Resources</a>
 
    ### Human Resources
 
    https://www.odoo.com/documentation/master/applications/hr/attendances.html
    
-1. <a target="_blank" href="https://www.odoo.com/app/employee">Employees</a> <a target="_blank" href="https://demo5.odoo.com/odoo/employees?cids=1">demo</a><br />
+1. <a target="_blank" href="https://www.odoo.com/app/accounting">Expenses</a> Submit, validate and reinvoice employee expenses <a target="_blank" href="https://demo5.odoo.com/odoo/expenses?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/employee">Employees</a> Centralize employee information <a target="_blank" href="https://demo5.odoo.com/odoo/employees?cids=1">demo</a><br />
    [Ent]: Departmental Dashboards
-1. <a target="_blank" href="https://www.odoo.com/app/recruitment">Recruitment</a> <a target="_blank" href="https://demo5.odoo.com/odoo/recruitement?cids=1">demo</a>
-1. <a target="_blank" href="https://www.odoo.com/app/time-off">Time Off</a> <a target="_blank" href="https://demo5.odoo.com/odoo/time-off?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/recruitment">Recruitment</a> Track your recruitment pipeline <a target="_blank" href="https://demo5.odoo.com/odoo/recruitement?cids=1">demo</a>
+1. <a target="_blank" href="https://www.odoo.com/app/time-off">Time Off</a> Allocate PTOs and follow leaves requests <a target="_blank" href="https://demo5.odoo.com/odoo/time-off?cids=1">demo</a>
 1. <a target="_blank" href="https://www.odoo.com/app/referrals">Referrals</a> [Ent]
 1. <a target="_blank" href="https://www.odoo.com/app/appraisals">Appraisals</a> [Ent]
 1. <a target="_blank" href="https://www.odoo.com/app/fleet">Fleet</a> (https://github.com/odoo/odoo/tree/master/addons/fleet)
 
-   ### Marketing
+   LOCAL:
+
+1. LOCAL: Skills Management - Manage skills, knowledge and resume of your employees
+1. LOCAL: Lunch - Handle lunch orders of your employees
+1. LOCAL: Employee Contracts
+1. LOCAL: Attendances
+
+   <a name="MktgApps"></a>
+
+   ### Marketing apps
 
    https://www.odoo.com/documentation/master/applications/marketing/email_marketing.html
 
@@ -230,34 +288,49 @@ Links to the public demo instance, listed like at https://www.odoo.com/page/edit
 1. <a target="_blank" href="https://www.odoo.com/app/marketing-automation">Marketing Automation</a> [Ent]
 1. <a target="_blank" href="https://www.odoo.com/app/surveys">Surveys</a>
 
-   ### Services
+   <a name="SvcsApps"></a>
+
+   ### Services apps
 
    https://www.odoo.com/documentation/master/applications/services/project.html
 
 1. <a target="_blank" href="https://www.odoo.com/app/project">Projects</a> <a target="_blank" href="https://demo5.odoo.com/odoo/project?cids=1">demo</a>
 1. <a target="_blank" href="https://www.odoo.com/app/Timesheets">Timesheets</a> <a target="_blank" href="https://demo5.odoo.com/odoo/timesheets?cids=1">demo</a>
 1. <a target="_blank" href="https://www.odoo.com/app/Field-Service">Field Service</a> <a target="_blank" href="https://demo5.odoo.com/odoo/field-service?cids=1">demo</a> [Ent]
-1. <a target="_blank" href="https://www.odoo.com/app/Helpdesk">Helpdesk</a> <a target="_blank" href="https://demo5.odoo.com/odoo/helpdesk?cids=1">Helpdesk</a> [Ent] Tickets
 1. <a target="_blank" href="https://www.odoo.com/app/Planning">Planning</a> <a target="_blank" href="https://demo5.odoo.com/odoo/employees-planning?cids=1">demo</a>  [Ent] (Schedules)
+
+   LOCAL:
+
+1. <a target="_blank" href="https://www.odoo.com/app/Helpdesk">Helpdesk</a> <a target="_blank" href="https://demo5.odoo.com/odoo/helpdesk?cids=1">Helpdesk</a> [Ent] Tickets
 1. <a target="_blank" href="https://www.odoo.com/app/Appointments">Appointments</a> <a target="_blank" href="https://demo5.odoo.com/odoo/appointments?cids=1">demo</a> [Ent]
 
-   ### Productivity
+   <a name="ProductivityApps"></a>
+
+   ### Productivity apps
 
    https://www.odoo.com/documentation/master/applications/productivity/documents.html
 
+1. <a target="_blank" href="https://www.odoo.com/app/Knowlege">Knowlege</a> <a target="_blank" href="https://demo5.odoo.com/odoo/knowledge/33?cids=1">demo</a>
+
 1. <a target="_blank" href="https://www.odoo.com/app/Discuss">Discuss</a> <a target="_blank" href="https://demo5.odoo.com/odoo/discuss?cids=1">Discuss</a>
+
+   Not in LOCAL:
+
 1. <a target="_blank" href="https://www.odoo.com/app/Approvals">Approvals</a>
 1. <a target="_blank" href="https://www.odoo.com/app/VoIP">VoIP</a> (Voice over Internet Protocol)  [Ent]
 1. <a target="_blank" href="https://www.odoo.com/app/IoT">IoT (Internet of Things) </a> [Ent]
-1. <a target="_blank" href="https://www.odoo.com/app/Knowlege">Knowlege</a>
 1. <a target="_blank" href="https://www.odoo.com/app/WhatsApp">WhatsApp</a>
 
-1. To-do <a target="_blank" href="https://demo5.odoo.com/odoo/to-do?cids=1">demo</a>
-1. Calendar <a target="_blank" href="https://demo5.odoo.com/odoo/calendar?cids=1">demo</a>
+1. LOCAL: Data Recycle - Find old records and archive/delete them
+1. LOCAL: To-do <a target="_blank" href="https://demo5.odoo.com/odoo/to-do?cids=1">demo</a>
+1. LOCAL: Calendar <a target="_blank" href="https://demo5.odoo.com/odoo/calendar?cids=1">demo</a> <a target="_blank" href="https://www.youtube.com/watch?v=Hs7saOC9aFo">VIDEO</a>
 
-   ### Customization
+   <a name="AdminApps"></a>
+
+   ### Administration
    
-1. Studio  [Ent]
+1. <a target="_blank" href="https://www.odoo.com/app/studio">Studio</a> Create and Customize Applications [Ent]
+1. <a target="_blank" href="https://play.google.com/store/apps/details?id=com.odoo.mobile">Android</a> & iPhone - Support for Google Play & iOS Apps [Ent]
 
 No warehousing
 
@@ -279,35 +352,35 @@ The most comprehensive menu is from the official Docker image</a>,
 under each CATEGORIES, alphabetically:
 
 * Manufacturing
-   * <a target="_blank" href="">Coal and Petroleum (Fossil Fuels)</a>
-   * <a target="_blank" href="">Micro Brewery</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/micro_brewery/">Micro Brewery</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/coal_petroleum/">Coal and Petroleum (Fossil Fuels)</a>
 * NGO (Non-Governmental Organizations) 
-   * <a target="_blank" href="">Non Profit Organizations</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/non_profit_organization/">Non Profit Organizations</a>
 * Retail
    * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/software_reseller/">Software Reseller</a>
    * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/hardware_shop/">Hardware Shop</a>
-   * <a target="_blank" href="">Clothing and Boutique</a>
-   * <a target="_blank" href="">Automobile Spareparts</a>
-   * <a target="_blank" href="">Grocery Store</a>
-   * <a target="_blank" href="">Furniture Store</a>
-   * <a target="_blank" href="">Cake Shop</a>
-   * <a target="_blank" href="">Eyewear Shop</a>
-   * <a target="_blank" href="">The Arts & Crafts Shop</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/clothing_boutique/">Clothing and Boutique</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/automobile/">Automobile Spareparts</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/fmcg_store/">Grocery Store</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/furniture_store/">Furniture Store</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/cake_shop/">Cake Shop</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/eyewear_shop/">Eyewear Shop</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/art_craft/">The Arts & Crafts Shop</a>
 * Services
-   * <a target="_blank" href="">Real Estate</a>
-   * <a target="_blank" href="">Restaurant (Foods & Cafes)</a>
-   * <a target="_blank" href="">Construction</a>
-   * <a target="_blank" href="">Hair Salon</a>
-   * <a target="_blank" href="">Lawyer</a>
-   * <a target="_blank" href="">Photography</a>
-   * <a target="_blank" href="">Sports Club</a>
-   * <a target="_blank" href="">Architects</a>
-   * <a target="_blank" href="">Headhunter</a>
-   * <a target="_blank" href="">Certification Auditors</a>
-   * <a target="_blank" href="">Bar and Lounge</a>
-   * <a target="_blank" href="">Surveyor</a>
-   * <a target="_blank" href="">Corporate Gifts</a>
-   * <a target="_blank" href="">Solar Installation</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/industry_real_estate/">Real Estate</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/industry_restaurant/">Restaurant (Foods & Cafes)</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/construction/">Construction</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/hair_salon/">Hair Salon</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/industry_lawyer/">Lawyer</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/photography/">Photography</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/sports_club/">Sports Club</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/architects/">Architects</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/headhunter/">Headhunter</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/certification_organism/">Certification Auditors</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/bar_and_lounge/">Bar and Lounge</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/surveyor/">Surveyor</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/corporate_gifts/">Corporate Gifts</a>
+   * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/solar_installation/">Solar Installation</a>
 * eCommerce
    * <em>no modules</em>
 
@@ -419,11 +492,12 @@ Observability: logs, traces
 
 1. Instead of getting all branches (which consumed 9.2G on May 8, 2024)<br />PROTIP: download only the branch for the latest named version, not the master (which consumed 1.1G):
 
-   <pre>git clone --branch "17.0" git@github.com:odoo/odoo.git
+   ```
+   git clone --branch "17.0" git@github.com:odoo/odoo.git
    cd odoo
    du -sh
    git branch
-   </pre>
+   ```
 
    NOTE: On-prem. servers load Odoo within install script.
 
@@ -504,7 +578,9 @@ D. On-premises within a <strong>private cloud</strong> instance you build and ma
 
 Assets referenced by this article are at a private repo:
 
-   <ul><pre><strong><a target="_blank" href="https://github.com/bomonike/odoo-setup/">https://github.com/bomonike/odoo-setup</strong></a></pre></ul>
+   ```
+   <a target="_blank" href="https://github.com/bomonike/odoo-setup/"><strong>https://github.com/bomonike/odoo-setup</strong></a>
+   ```
 
 1. Request to join via Patreon.
 
@@ -520,11 +596,12 @@ Assets referenced by this article are at a private repo:
 1. Open a Terminal and navigate to a folder where Git will create a folder.
 1. Load the assets associated with our project
 
-   <pre>git clone git@github.com:bomonike/odoo-setup.git
+   ```
+   git clone git@github.com:bomonike/odoo-setup.git
    cd odoo-setup
    du -sh
    git branch
-   </pre>
+   ```
 
    <tt>du -sh</tt> reported 196K for all branches/history.   
 
@@ -548,7 +625,9 @@ Assets referenced by this article are at a private repo:
 
 1. Verify that the blank drive is formatted correctly (among all the drives and partitions connected to your system)
 
-   <pre>fdisk -l</pre>
+   ```
+   fdisk -l
+   ```
 
    The reponse should say ???
 
@@ -595,13 +674,15 @@ echo "abcdef" | replace "abc" "XYZ"
 
    PROTIP: Provide a <strong>salt</strong> value to an algorithm defined in the <tt>/etc/shadow</tt> file. ??? Example:
 
-   <pre>mkpasswd -m sha-512 -S $(pwgen -ns 16 1) mypassword
+   ```
+   mkpasswd -m sha-512 -S $(pwgen -ns 16 1) mypassword
    ROOT_PASSWORD="$mypassword"
-   </pre>
+   ```
 
    Replace the "[crypt(3) hash]" handle within the file:
-   <pre>sed -i -e 's/[crypt(3) hash]/$ROOT_PASSWORD/g' /tmp/bookworm_preseed.txt
-   </pre>
+   ```
+   sed -i -e 's/[crypt(3) hash]/$ROOT_PASSWORD/g' /tmp/bookworm_preseed.txt
+   ```
 
    PROTIP: On macOS and other BSD-based platforms, you need an explicit option argument <tt>-i ''</tt>
 
@@ -612,32 +693,36 @@ echo "abcdef" | replace "abc" "XYZ"
 
 1. Replace the "bomonike.com" handle within the file with the value of <tt>MY_DOMAIN_NAME</tt> obtained from a common .env file referenced by other processes:
 
-   <pre>sed -i -e 's/my_domain_name/$MY_DOMAIN_NAME/g' /tmp/bookworm_preseed.txt
-   </pre>
+   ```
+   sed -i -e 's/my_domain_name/$MY_DOMAIN_NAME/g' /tmp/bookworm_preseed.txt
+   ```
 
    A sample result within the file:
    <tt>d-i netcfg/get_domain string bomonike.com</tt>
 
 1. Replace the "Debian User" handle within the file with the value of <tt>MY_ADMIN_FULL_NAME</tt> obtained from a common .env file referenced by other processes:
 
-   <pre>sed -i -e 's/Debian User/$MY_ADMIN_FULL_NAME/g' /tmp/bookworm_preseed.txt
-   </pre>
+   ```
+   sed -i -e 's/Debian User/$MY_ADMIN_FULL_NAME/g' /tmp/bookworm_preseed.txt
+   ```
 
    A sample result within the file:
    <tt>d-i passwd/user-fullname string Debian User</tt>
   
 1. Replace the "debian1234" handle within the file with the value of <tt>MY_ADMIN_USER_NAME</tt> obtained from a common .env file referenced by other processes:
 
-   <pre>sed -i -e 's/debian1234/$MY_ADMIN_USER_NAME/g' /tmp/bookworm_preseed.txt
-   </pre>
+   ```
+   sed -i -e 's/debian1234/$MY_ADMIN_USER_NAME/g' /tmp/bookworm_preseed.txt
+   ```
 
    A sample result within the file:
    <tt>d-i passwd/username string debian1234</tt>
   
 1. Replace the "Mountain" handle within the file with the value of <tt>MY_TIMEZONE</tt> obtained from a common .env file referenced by other processes:
 
-   <pre>sed -i -e 's/Eastern/$MY_TIMEZONE/g' /tmp/bookworm_preseed.txt
-   </pre>
+   ```
+   sed -i -e 's/Eastern/$MY_TIMEZONE/g' /tmp/bookworm_preseed.txt
+   ```
 
    A sample result within the file:
    <tt>d-i time/zone string US/Mountain</tt>
@@ -718,29 +803,52 @@ echo "abcdef" | replace "abc" "XYZ"
 
    This script "hardens" your Debian instance.
    
-   Alternately, <a target="_blank" href="https://github.com/Gatsby-Lee/moon-rapi/blob/main/ansible_playbook/install-docker-on-debian.yaml">use Ansible</a> per <a target="_blank" href="https://github.com/Gatsby-Lee/DevOps">Gatsby</a>
+   Alternately, <a target="_blank" href="https://github.com/Gatsby-Lee/moon-rapi/blob/main/ansible_playbook/install-docker-on-debian.yaml">use Ansible</a> per <a target="_blank" href="https://github.com/Gatsby-Lee/DevOps">Gatsby</a>.
+
+   Phases in the script:
+   1. Obtain memtest88 and verify memory
+   1. Install OSSec integrity monitoring utility (from http://www.atomicorp.com) which generates a SHA1 hash of each monitored static file so unauthorized changes can be detected.
+   1. Install utility to Backup data.
+   1. Disable DisplayLink driver to docking stations
+   <br /><br />
 
 1. View the <tt>harden-debian.sh</tt> file using the default text editor.
 
-   1. Install OSSec integrity monitoring utility (from http://www.atomicorp.com) which generates a SHA1 hash of each monitored static file so unauthorized changes can be detected.
-   1. Install utility to Backup data.
-   <br /><br />
+   1. Verify memory
 
-1. Edit
+   1. Edit
 
    sudo vim /etc/apt/apt.conf.d/50unattended-upgrades
 
-1. Flatpack
+   1. Flatpak from flathub
 
    PROTIP: The thoroughness of Debian's testing means that older versions of apps are installed with Debian core. So some install from Flathub to download replacements of apps.
 
    <a target="_blank" href="https://www.youtube.com/watch?v=IG2wTCacEtQ">VIDEO</a> DEFINITION: There are several distribution formats: AptImage, Snap, Flatpak. 
    Flatpak uses a "Universal Package" format without dependency resoltuion so it can be used across different Linux distributions. That can (or not) be more secure.
 
-   PROTIP: Add-on packages from Debian tend to be dated (and thus potentially less secure). Install utilities later using <tt>flatpack</tt> to obtain the latest version. Some packages (such as )
+   PROTIP: Add-on packages from Debian tend to be dated (and thus potentially less secure). Install utilities later using <tt>flatpack</tt> to obtain the latest version. 
+   
+   1. Scheduled actions
+
+   ## Backups
+
+   https://www.odoo.com/documentation/master/administration/odoo_sh/getting_started/branches.html#odoo-sh-branches-backups
+
+   Logs generated by Odoo include:
+
+   * Console logs viewed
+   * install.log of the database installation. In a development branch, the logs of the tests are included.
+   * pip.log of Python dependencies installation.
+   * odoo.log of the running server.
+   * update.log of database updates.
+   * pg_long_queries.log from psql queries that take an unusual amount of time.
+   <br /><br />
 
 
-   ### Odoo Manifest
+<hr />
+
+## Odoo Manifest
 
 1. Obtain odoo:
 
@@ -778,20 +886,25 @@ echo "abcdef" | replace "abc" "XYZ"
 
 1. View the vulnerabilities:
 
-   <pre><strong>docker login
+   ```
+   docker login
    docker scout quickview odoo
-   </strong></pre>
+   ```
 
 1. On a Terminal, obtain the latest version of the official DockerHub image maintained by Odoo for amd64, arm64v8, ppc64le at <a targete="_blank" href="https://hub.docker.com/_/odoo">https://hub.docker.com/_/odoo</a>, using:
 
-   <pre>docker pull odoo</pre>
+   ```
+   docker pull odoo
+   ```
 
 1. How big is it?
 
-   <pre><strong>docker system df -v
-   </strong></pre>
+   ```
+   docker system df -v
+   ```
 
-   <pre>Images space usage:
+   ```
+   Images space usage:
 &nbsp;
 REPOSITORY                   TAG       IMAGE ID       CREATED        SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
 odoo                         latest    d3418aa89ab7   19 hours ago   1.82GB    0B            1.819GB       1
@@ -811,7 +924,7 @@ VOLUME NAME                                                        LINKS     SIZ
 fb957d8867fa931e223318b96f9adb13e7fa4d0542b3b5748b242d11d978ac3e   1         6.465MB
 af5606f2b38f5ab0cd6957d58adfe71fd24d2e8d545270a63c985df63518b37d   1         78.17MB
 d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
-</pre>
+   ```
 
    The columns show:
 
@@ -826,18 +939,23 @@ d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
 
 1. Start a PostreSQL server:
 
-   <pre><strong>docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15
-   </strong></pre>
+   ```
+   docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15
+   ```
 
 1. Start an Odoo instance
 
-   <pre><strong>docker run -p 8069:8069 --name odoo --link db:db -t odoo</strong></pre>
+   ```
+   docker run -p 8069:8069 --name odoo --link db:db -t odoo
+   ```
 
    WARNING: Clocing the Terminal tab would stop the instance.
 
+   <a name="LocalhostApps"></a>
+
 1. In an internet browser:
 
-   <pre>http://localhost:8069</pre>
+   <a target="_blank" href="http://localhost:8069">http://localhost:8069</a>
 
    You should see "Warning, your Odoo database manager is not protected. To secure it, we have generated the following master password for it:"
 
@@ -860,7 +978,11 @@ d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
 
 1. Back at the Terminal, notice the log output has:
    
-   <pre>Using configuration file at /etc/odoo/odoo.conf</pre>
+   Using configuration file at 
+
+   ```
+   /etc/odoo/odoo.conf
+   ```
 
    CAUTION: When the Odoo container is created like described above, the odoo filestore is created inside the container. If the container is removed, the filestore is lost. 
 
@@ -870,7 +992,9 @@ d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
 
    The log output includes:
 
-   <pre>odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf</pre>
+   ```
+   odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+   ```
 
    wkhtmltopdf is a utility executable that converts HTML-formatted files to PDF-format files.
 
@@ -882,12 +1006,13 @@ d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
 
    Sample Python code:
 
-   <pre>import pdfkit
+   ```
+   import pdfkit
    // Convert a local file:
    pdfkit.from_file('sample.html','sample.pdf',options={'enable-local-file-access" : ""})
    // Convert a file from URL:
    pdfkit.from_url('https://wkhtmltopd.org/downloads.html','output.pdf')
-   </pre>
+   ```
 
    <a target="_blank" href="https://www.youtube.com/watch?v=_L6ELUJN-9Q">VIDEO</a>: Convert HTML to PDF in python with playwright 
 
@@ -897,7 +1022,9 @@ d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
 
    The log contains:
 
-   <pre>odoo.service.server: HTTP service (werkzeug) running on 31e0127a5e57:8069</pre>
+   ```
+   odoo.service.server: HTTP service (werkzeug) running on 31e0127a5e57:8069
+   ```
 
 
 <hr />
@@ -949,11 +1076,15 @@ CMD ["bash"]
 
 1. Verify version of Docker installed:
 
-   <pre>docker --version</pre>
+   ```
+   docker --version
+   ```
    
 1. Run Docker Engine:
 
-   <pre>sudo ndocker run -it debian</pre>
+   ```
+   sudo ndocker run -it debian
+   ```
    
 
    ### Push to Dockerhub for use in clouds
@@ -962,12 +1093,13 @@ CMD ["bash"]
 
 1. On your browser run:
 
-   http://localhost:9069
+   <a target="_blank" href="http://localhost:9069">http://localhost:9069</a>
 
-1. To Stop Odoo detached Odoo container
+1. To Stop Odoo started as detached:
 
+   ```
    docker-compose stop
-
+   ```
 
 <hr />
 
@@ -1325,6 +1457,11 @@ Hibou Corp.
 
 * <a target="_blank" href="https://www.linkedin.com/in/lucasjoliveau/">Lucas Joliveau</a>, designer @ Kapreon, Quebec, Canada
 
+## Generate Test Data
+
+Sample data for demo apps are in XML format.
+
+TODO:
 
 ## Consultants
 
