@@ -1,6 +1,8 @@
 # odoo
 
-Subscribe to our YouTube Channel : https://www.youtube.com/@Bomonike 
+Please subscribe: 
+* Our YouTube Channel : https://www.youtube.com/@Bomonike 
+<br /><br />
 
 Unlike other clubs which charge you to waste time seeing others fumble around starting from scatch,
 here we learn to improve DevSecOps and Cloud assets of production-level complexity and security,
@@ -10,8 +12,11 @@ just like you would on the job.
 
 <a target="_blank" href="https://www.odoo.com/">Odoo.com</a> receives 10m visits/month.
 
+> "Odoo is the most installed business software in the world. Odoo is used by 2.000.000 users worldwide ranging from very small companies (1 user) to very large ones (300 000 users)." -- <a target="_blank" href="https://hub.docker.com/_/odoo">source</a>
+
 Odoo in 2024 has 12 million users worldwide.
 Shell, McKinsey are customers
+https://www.odoo.com/customers
 
 Odoo aims for the "sweet spot" of both high functionality with ease-of-use.<br />
 <img src="imgs/odoo-unique-value-2024.svg">
@@ -48,6 +53,9 @@ In 2013, the not-for-profit Odoo Community Association - <a target="_blank" href
 
    * https://github.com/OCA/server-tools are "tools for Odoo Administrators to improve some technical features on Odoo"
    <br /><br />
+
+<a target="_blank" href="https://www.odoo.com/documentation/17.0/">https://www.odoo.com/documentation/17.0</a>
+
 
 1. Pay the OCA membership of 50 euros a year. Opt-in to be listed in the <a target="-blank" href="https://odoo-community.org/members">Directory of members</a> around the world.
 
@@ -126,6 +134,8 @@ The $250 Odoo 17 Certification online, answer 70% of 120-questions in 1.5 hours 
 https://www.odoo.com/documentation/master/applications/general/apps_modules.html
 
 HTML fragments and pages in Odoo are generated using Odoo's x<a target="_blank" href="https://www.odoo.com/documentation/saas-17.2/developer/reference/frontend/qweb.html#reference-qweb">QWeb Templates</a> XML templating engine. It's simliar to Jinja (Python), ERB (Ruby) or Twig (PHP).
+
+<a name="Modules"></a>
 
 ## Official Modules
 
@@ -248,17 +258,56 @@ Links to the public demo instance, listed like at https://www.odoo.com/page/edit
 
 No warehousing
 
-## Addon Modules
-
 Contrast Odoo's modules against the <a href="](https://en.wikipedia.org/wiki/Enterprise_resource_planning)" title="File:ERP Modules.png">definition of Enterprise Resource Planning</a> in this <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a> diagram by Shing Hin Yeung:<br />
 <a target="_blank" href="https://commons.wikimedia.org/w/index.php?curid=141742154"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/ERP_modules.svg"></a>
 
+## Addon Modules
+
 https://github.com/odoo/odoo/tree/master/addons/hr
 
-Among <a target="_blank" href="https://apps.odoo.com/apps">https://apps.odoo.com/apps</a>
-are <a target="_blank" href="https://apps.odoo.com/apps/modules/category/Addon/browse">40,000 community-developed apps</a> stored with<br />
+Among <a target="_blank" href="https://apps.odoo.com/apps">https://apps.odoo.com/apps</a> are <a target="_blank" href="https://apps.odoo.com/apps/modules/category/Addon/browse">40,000 community-developed apps</a> stored with<br />
 <a target="_blank" href="https://github.com/odoo/odoo/tree/master/addons">https://github.com/odoo/odoo/tree/master/addons</a>
 
+
+## Industries
+
+The CATEGORIES:
+* Manufacturing
+   * Micro Brewery 
+   * Coal and Petroleum (Fossil Fuels)
+* NGO (Non-Governmental Organizations) 
+   * Non Profit Organizations
+* Retail
+   * Software Reseller
+   * Hardware Shop
+   * Clothing and Boutique
+   * Automobile Spareparts
+   * Grocery Store
+   * Furniture Store
+   * Cake Shop
+   * Eyewear Shop
+   * The Arts & Crafts Shop
+* Services
+   * Real Estate
+   * Restaurant (Foods & Cafes)
+   * Construction
+   * Hair Salon
+   * Lawyer
+   * Photography
+   * Sports Club
+   * Architects
+   * Headhunter
+   * Certification Auditors
+   * Bar and Lounge
+   * Surveyor
+   * Corporate Gifts
+   * Solar Installation
+* eCommerce
+   * <em>no modules</em>
+
+<hr />
+
+https://apps.odoo.com/apps/modules/17.0/software_reseller/
 
 ## Audit Trails
 
@@ -372,6 +421,7 @@ Observability: logs, traces
 
    NOTE: On-prem. servers load Odoo within install script.
 
+
 <hr />
 
 <a name="Hosting"></a>
@@ -393,7 +443,10 @@ A. In Odoo's cloud running SaaS (Software as a Service). The easiest with a subs
 
 B. On-premises on machines you build and maintain. For experimentation with add-ons.
 
-   We use Debian (instead of Ubuntu or Red Hat)
+   References: We use Debian (instead of Ubuntu, Red Hat, Centos, etc.):
+   * https://linuxiac.com/debian/ says Debian, founded on August 16, 1993 by Ian Murdock. The name Debian was formed from the combination of the first names of its creator, Ian Murdock, and his then-girlfriend (later ex-wife), Debra Lynn.
+   Debian is "known for its stability and robustness, it is one of the most stable, universal, respectable, and widely used Linux distributions, earning legendary status in open-source circles." Debian is a community distribution governed by a board of elected developers, and just about everyone working on the project is a volunteer. Debian typically uses codenames to refer to its releases, starting with the Toy Story character names and version numbers. The decision to use those names was made by Bruce Perens, who was, at the time, the Debian Project Leader and was working also at Pixar, the company that produced the movies. Upcoming major Debian releases are Trixie (13) in 2025, Forky (14) in 2027.
+   <br /><br />
 
    * <a href="#DebianLinuxInstall">On a local Linux Debian machine running odoo installed directly</a>
    * <a href="#DebianLinuxDocker">On a local Linux Debian machine running Odoo in a Docker image</a>
@@ -462,7 +515,6 @@ Assets referenced by this article are at a private repo:
 1. Load the assets associated with our project
 
    <pre>git clone git@github.com:bomonike/odoo-setup.git
-   # Paste token ???
    cd odoo-setup
    du -sh
    git branch
@@ -471,8 +523,6 @@ Assets referenced by this article are at a private repo:
    <tt>du -sh</tt> reported 196K for all branches/history.   
 
    The repo contains shell scripts to load Odoo onto <a href="#OnpremMachines">on-prem. machines</a> and in <a href="#PrivateClouds">each private cloud</a>.
-
-PROTIP: The thoroughness of Debian's testing means that older versions of apps are installed with Debian core. So some install Flathub to download replacements of cames with Debian.
 
 
 <hr />
@@ -537,10 +587,12 @@ echo "abcdef" |replace "abc" "XYZ"
    <pre>sed -i -e 's/[crypt(3) hash]/$ROOT_PASSWORD/g' /tmp/bookworm_preseed.txt
    </pre>
 
-   PROTIP: On BSD-based platforms, including MacOS, you need an explicit option argument <tt>-i ''</tt>
+   PROTIP: On macOS and other BSD-based platforms, you need an explicit option argument <tt>-i ''</tt>
 
    A sample result within the file:
    <tt>d-i passwd/root-password-crypted password $1$CHp7HkQW$Z2ZTY5cZMurbwbqU1zaS.1</tt>
+
+   Optionally, <a target="_blank" href="https://github.com/markilott/password-checker/">setup a password checker app</a> to verify whether a password is among common ones.
 
 1. Replace the "bomonike.com" handle within the file with the value of <tt>MY_DOMAIN_NAME</tt> obtained from a common .env file referenced by other processes:
 
@@ -574,7 +626,7 @@ echo "abcdef" |replace "abc" "XYZ"
    A sample result within the file:
    <tt>d-i time/zone string US/Mountain</tt>
   
-1. TODO: Make the preconfiguration file available to the Debian installer. This can be a URL to a server in the local network such as:
+1. TODO: Make the preconfiguration file available to the Debian installer. This can be a URL to a server in the local network such as: TODO:
 
    <tt>http://198.168.1.33/files/projectx/debian_preseed.txt</tt>
 
@@ -595,7 +647,8 @@ echo "abcdef" |replace "abc" "XYZ"
    4. Hostname: debian = <tt>d-i netcfg/get_hostname string debian</tt>
    5. Domain name: <tt>d-i netcfg/get_domain string mydomain_name</tt>
    6. Root password: Encrypted <tt>d-i passwd/root-password-crypted password [crypt(3) hash]<br />
-   </tt>
+   </tt><br />PROTIP: Normally, administrators use sudo instead of root. However, <a target="_blank" href="https://github.com/odoo/odoo/blob/17.0/setup/debinstall.sh">odoo's debinstall.sh</a> insists on use of root.
+
    7. Full name of user: <tt>d-i passwd/user-fullname string Debian User</tt>
    8. User name: <tt>d-i passwd/username string debian1234</tt>
    9. Password: <tt>d-i passwd/user-password-crypted password [crypt(3) hash]</tt>
@@ -618,8 +671,6 @@ echo "abcdef" |replace "abc" "XYZ"
 1. Reply "No" to the survey question.
 1. Software selection is the "Debian desktop environment", MATE, and "Standard system utilities".
 
-   PROTIP: Install utilities later using <tt>flatpack</tt> to obtain the latest version. The ones from Debian tend to be dated (and thus potentially less secure).
-
 1. Reply "Yes" to install GRUB boot loader.
 1. Select the device for boot loader installation. Example for using the Samsung T7 USB drive:
 
@@ -631,18 +682,237 @@ echo "abcdef" |replace "abc" "XYZ"
 
 1. Login using your user name and password.
 
+   <a target="_blank" href="https://markilott.medium.com/password-storage-basics-2aa9e1586f98">PROTIP</a>: The preferred security practice is to store a <strong>salted one-way hash</strong> of the password in the database instead of the password itself. When a user enters a password, it is hashed for comparison with the hash in the database. That way, if a hacker or rogue admin manages to steal the user database, they cannot (even using quantum computers) extract passwords. To thwart the use of "rainbow tables" based on <a target="_blank" href="https://haveibeenpwned.com/">already compromised passwords</a>, a "salt" value added to each password to make each hash unique (using a program such as <a target="_blank" href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>)
+
+   ### Configure Debian
+
+1. Open the Terminal.
+
+   Within the new Debian instance:
+
+1. Run Odoo's script: ???
+
+   https://github.com/odoo/odoo/blob/17.0/setup/debinstall.sh
+
+1. Retrieve the <tt>harden-debian.sh</tt> shell file at:
+
+   <a target="_blank" href="https://github.com/bomonike/odoo-setup/blob/main/debian/harden-debian.sh">https://github.com/bomonike/odoo-setup/blob/main/debian/harden-debian.sh</a>
+
+   This script "hardens" your Debian instance.
+   
+   Alternately, <a target="_blank" href="https://github.com/Gatsby-Lee/moon-rapi/blob/main/ansible_playbook/install-docker-on-debian.yaml">use Ansible</a> per <a target="_blank" href="https://github.com/Gatsby-Lee/DevOps">Gatsby</a>
+
+1. View the <tt>harden-debian.sh</tt> file using the default text editor.
+
+   1. Install OSSec integrity monitoring utility (from http://www.atomicorp.com) which generates a SHA1 hash of each monitored static file so unauthorized changes can be detected.
+   1. Install utility to Backup data.
+   <br /><br />
+
+1. Edit
+
+   sudo vim /etc/apt/apt.conf.d/50unattended-upgrades
+
+1. Flatpack
+
+   PROTIP: The thoroughness of Debian's testing means that older versions of apps are installed with Debian core. So some install from Flathub to download replacements of apps.
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=IG2wTCacEtQ">VIDEO</a> DEFINITION: There are several distribution formats: AptImage, Snap, Flatpak. 
+   Flatpak uses a "Universal Package" format without dependency resoltuion so it can be used across different Linux distributions. That can (or not) be more secure.
+
+   PROTIP: Add-on packages from Debian tend to be dated (and thus potentially less secure). Install utilities later using <tt>flatpack</tt> to obtain the latest version. Some packages (such as )
+
+
+   ### Odoo Manifest
+
+1. Obtain odoo:
+
+   https://github.com/odoo/odoo/blob/17.0/setup/debinstall.sh
+   contains <tt>apt-get update</tt>
+
+   When utility <tt>sdist</tt> processes the <tt>MANIFEST.in</tt> file, <tt>graft odoo</tt> specifies inclusion of non-Python files like data files, documentation, or other resources that are part of your Python package. By using graft, you don't have to list each individual file to be included in the MANIFEST.in file.
+
+   CAUTION: The order of commands is crucial.
+
+   The recursive-exclude * *.py[co] command in a MANIFEST.in file is used to exclude all bytecode files (files with .pyc or .pyo extensions) from being included in the source distribution created by the sdist command.
+
+   https://marketplace.visualstudio.com/items?itemName=benspaulding.python-manifest-template
+   "They can be tough because first you have to get the right configuration between all of the involved bits, such as setup.py, setup.cfg, and MANIFEST.in. Then you then need to play whack-a-mole testing your distribution or — actually probably and — take a very deep dive into distutils and setuptools code to figure out the nuance of the six template commands for including and excluding files."
+
+   ### Managing Logs, Events, Traces
+
+1. Install Prometheus to extract metrics.
+1. Install Grafana to display metrics on dashboards.
+1. Alerts
+
 <hr />
 
 <a name="DebianLinuxDocker"></a>
 
 ## Install local Linux Debian machine running Odoo in a Docker image
 
-1. TODO: 
+This is the simplest approach.
+
+1. Copy the <tt>odoo.conf</tt> file to your local folder <tt>/etc/odoo/odoo.conf</tt>
+
+   <a target="_blank" href="https://github.com/bomonike/odoo-setup/blob/main/odoo.conf">https://github.com/bomonike/odoo-setup/blob/main/odoo.conf</a>
+
+1. Start the Docker Desktop daemon.
+
+1. View the vulnerabilities:
+
+   <pre><strong>docker login
+   docker scout quickview odoo
+   </strong></pre>
+
+1. On a Terminal, obtain the latest version of the official DockerHub image maintained by Odoo for amd64, arm64v8, ppc64le at <a targete="_blank" href="https://hub.docker.com/_/odoo">https://hub.docker.com/_/odoo</a>, using:
+
+   <pre>docker pull odoo</pre>
+
+1. How big is it?
+
+   <pre><strong>docker ???
+   </strong></pre>
+
+1. Start a PostreSQL server:
+
+   <pre><strong>docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15
+   </strong></pre>
+
+1. Start an Odoo instance
+
+   <pre><strong>docker run -p 8069:8069 --name odoo --link db:db -t odoo</strong></pre>
+
+1. In an internet browser:
+
+   <pre>http://localhost:8069</pre>
+
+   You should see "Warning, your Odoo database manager is not protected. To secure it, we have generated the following master password for it:"
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716475593/odoo-docker-start-1310x972_emnsvs.png"><img alt="odoo-docker-start-1310x972.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716475593/odoo-docker-start-1310x972_emnsvs.png"></a>
+
+1. Type the Database Name (odoodb), Email, Password, 
+1. Select your Country.
+1. check "Demo data".
+1. Click "Create Database" and wait for the user login.
+1. Type in the user name and password you just input.
+1. Shown by default are <a href="#Modules">Official Apps</a>
+1. Click <a href="#Industries">Industries</a>
+
+   ### Demo Tour
+
+   http://localhost:8069/web#action=38&model=ir.module.module&view_type=kanban&cids=1&menu_id=15
+
+1. Click one among CATEGORIES.
+1. Click "Industries" at the left. Activate one.
+
+1. Back at the Terminal, notice the log output has:
+   
+   <pre>Using configuration file at /etc/odoo/odoo.conf</pre>
+
+   CAUTION: When the Odoo container is created like described above, the odoo filestore is created inside the container. If the container is removed, the filestore is lost. 
+
+   <a name="wkhtmltopdf"></a>
+   
+   ### wkhtmltopdf
+
+   The log output includes:
+
+   <pre>odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf</pre>
+
+   wkhtmltopdf is a utility executable that converts HTML-formatted files to PDF-format files.
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=sEPgaqi7no4">VIDEO</a>: <a target="_blank" href="https://wkhtmltopdf.org">https://wkhtmltopdf.org</a> shows that the program is available for many operating systems (Windows, etc.).
+
+   pdfkit is a Python library that uses webkit rendering with qt to enable conversion of HTML to PDF within Python programming code. To install it:
+
+   pip install pdfkit
+
+   Sample Python code:
+
+   <pre>import pdfkit
+   // Convert a local file:
+   pdfkit.from_file('sample.html','sample.pdf',options={'enable-local-file-access" : ""})
+   // Convert a file from URL:
+   pdfkit.from_url('https://wkhtmltopd.org/downloads.html','output.pdf')
+   </pre>
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=_L6ELUJN-9Q">VIDEO</a>: Convert HTML to PDF in python with playwright 
+
+   <a name="werkzeug"></a>
+   
+   ### werkzeug
+
+   The log contains:
+
+   <pre>odoo.service.server: HTTP service (werkzeug) running on 31e0127a5e57:8069</pre>
+
+
+<hr />
+
+### Custom Docker image
+
+This packages up the instance created into a Docker image based on a <tt>Dockerfile</tt>.
+
+DEFINITION: Docker Engine was introduced in 2013 as an industry-standard tool to provide a universal packaging method. Today, developers adopt this tool to create applications and improve the cloud. The docker containers have their own system and a lock function that cannot interfere with the operation of the main server.
+
+Docker Engine comes bundled with Docker Desktop for Linux. While this is the "easiest and quickest way" to get started, it's not the most secure because we want <a target="_blank" href="https://wiki.debian.org/UnattendedUpgrades">unattended upgrades</a> automatically to obtain the latest to stay ahead of security patches.
+
+   References about installing Docker on Debian:
+   * https://www.linuxcloudvps.com/blog/how-to-install-docker-on-debian-12/
+   * https://linuxiac.com/how-to-install-docker-on-debian-12-bookworm/
+   * https://www.thomas-krenn.com/en/wiki/Docker_installation_on_Debian_12
+   <br /><br />
+
+1. Within DockerHub, official images are at:
+
+   https://hub.docker.com/_/debian
+
+   The Dockerfile constains:
+
+   <pre>FROM scratch
+ADD rootfs.tar.xz /
+CMD ["bash"]
+   </pre>
+
+   Alternatives: 
+   * https://www.server-world.info/en/note?os=Debian_12&p=docker&f=4
+   * https://github.com/tsaarni/docker-deb-builder/blob/master/Dockerfile-Debian-bookworm-12
+   * https://github.com/odoo/odoo/blob/17.0/setup/package.dfdebian
 
    ### Configure 
 
    <a target="_blank" href="https://www.youtube.com/watch?v=Bx_HkLVBz9M&t=5m55s">VIDEO</a>: 
    Watchtower to automate Docker container base images.
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=uL589cUpY2U">VIDEO</a>:
+   How to Install Docker on Debian 12 Bookworm
+
+   Flatcar Container Linux is a minimal, open source Linux distribution designed specifically for running container workloads at scale
+
+1. Checksums
+
+   https://docker.debian.net/
+
+1. Verify version of Docker installed:
+
+   <pre>docker --version</pre>
+   
+1. Run Docker Engine:
+
+   <pre>sudo ndocker run -it debian</pre>
+   
+
+   ### Push to Dockerhub for use in clouds
+
+1. Type docker-compose up to run Odoo container, or docker-compose up -d to run with detach (background mode).
+
+1. On your browser run:
+
+   http://localhost:9069
+
+1. To Stop Odoo detached Odoo container
+
+   docker-compose stop
 
 
 <hr />
@@ -748,20 +1018,21 @@ fi
    ```
 
 
-https://github.com/odoo/odoo/blob/17.0/setup/debinstall.sh
-contains <tt>apt-get update</tt>
 
-### Manifest
+<hr />
 
-When utility <tt>sdist</tt> processes the <tt>MANIFEST.in</tt> file, <tt>graft odoo</tt> specifies inclusion of non-Python files like data files, documentation, or other resources that are part of your Python package. By using graft, you don't have to list each individual file to be included in the MANIFEST.in file.
+<a name="PrivateClouds">
 
-The order of commands is crucial.
+## Create odoo within AWS EC2 AMI 
 
-The recursive-exclude * *.py[co] command in a MANIFEST.in file is used to exclude all bytecode files (files with .pyc or .pyo extensions) from being included in the source distribution created by the sdist command.
+<a target="_blank" href="https://www.youtube.com/watch?v=E4yXSKyOdx0">VIDEO</a>:
 
-https://marketplace.visualstudio.com/items?itemName=benspaulding.python-manifest-template
-"They can be tough because first you have to get the right configuration between all of the involved bits, such as setup.py, setup.cfg, and MANIFEST.in. Then you then need to play whack-a-mole testing your distribution or — actually probably and — take a very deep dive into distutils and setuptools code to figure out the nuance of the six template commands for including and excluding files."
+https://www.pluralsight.com/cloud-guru/labs/aws/using-packer-to-create-an-ami
 
+https://app.pluralsight.com/library/courses/hashicorp-packer-getting-started/table-of-contents
+
+
+<hr />
 
 ### .gitignore
 
@@ -800,14 +1071,28 @@ https://www.odoo.com/documentation/master/applications/studio.html
 
 ## Multi-lingual
 
+1. Translators use the "Weblate" tool for translation:
+
+   https://docs.weblate.org/en/latest/user/translating.html
+
+   QUESTION: What is the extent of usage of Generative AI tools?
+
+1. A dashboard about progress of each translation project is at:
+
+   https://translation.odoo-community.org/
+
 1. Docs about Translating
 
    https://github.com/odoo/odoo/wiki/Translations
+
+   https://odoo-community.org/resources/translate
 
 1. Localization text are defined in a .po file for each <tt>i18n</tt> folder within each module.
 
    https://github.com/odoo/odoo/tree/master/addons/fleet/i18n
 
+
+<hr />
 
 ## Python Packages
 

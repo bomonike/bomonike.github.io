@@ -48,6 +48,7 @@ Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
 * <a target="_blank" href="https://www.fcc.gov/wireless/bureau-divisions/mobility-division/general-mobile-radio-service-gmrs">GMRS (General Mobile Radio Service)</a> adds 8 more channels (at 462-467 MHz) to FRS. <strong>50W max</strong> up to 35 miles = more range and clarity than CB. No-test $35 for 10 year family license. Text & GPS added in 2017.
 
     * <a target="_blank" href="https://www.repeaterbook.com/gmrs/index.php?state_id=none">U.S. GMRS Repeaters</a>, including all countries not listed above.
+    * https://medium.com/@life-is-short-so-enjoy-it/applying-gmrs-radio-license-purchasing-gmrs-radio-5421f1ee729b
     <br /><br />
 * Ham/Amateur radio individual operators licensed at the Technician level can build their own equipment.
 
