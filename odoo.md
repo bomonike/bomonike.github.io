@@ -345,7 +345,9 @@ Among <a target="_blank" href="https://apps.odoo.com/apps">https://apps.odoo.com
 <a target="_blank" href="https://github.com/odoo/odoo/tree/master/addons">https://github.com/odoo/odoo/tree/master/addons</a>
 
 
-## Industries
+<a name="Industries"></a>
+
+## Industries (Verticals)
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481283/odoo-docker-indus-240522_w4ddzv.png"><img align="right" width="200" alt="odoo-docker-indus-240522.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481283/odoo-docker-indus-240522_w4ddzv.png">
 The most comprehensive menu is from the official Docker image</a>,
@@ -787,7 +789,50 @@ echo "abcdef" | replace "abc" "XYZ"
 
    <a target="_blank" href="https://markilott.medium.com/password-storage-basics-2aa9e1586f98">PROTIP</a>: The preferred security practice is to store a <strong>salted one-way hash</strong> of the password in the database instead of the password itself. When a user enters a password, it is hashed for comparison with the hash in the database. That way, if a hacker or rogue admin manages to steal the user database, they cannot (even using quantum computers) extract passwords. To thwart the use of "rainbow tables" based on <a target="_blank" href="https://haveibeenpwned.com/">already compromised passwords</a>, a "salt" value added to each password to make each hash unique (using a program such as <a target="_blank" href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>)
 
-   ### Configure Debian
+
+   ### Configure Debian to Use UTC
+
+1. In the Terminal, edit the file:
+
+   ```
+   sudo nano /etc/adjtime
+   ```
+
+1. Change the last field from LOCAL to UTC and save the file.
+   
+1. Reconfigure the tzdata package:
+
+   ```
+   sudo dpkg-reconfigure tzdata
+   ```
+
+1. Select None of the above when asked to select your geographic area.
+
+   ### Obtain memtest88 to test memory
+
+1. Install:
+
+   ```
+   sudo apt install memtest86+
+   ```
+
+   This should add to the GRUB boot menu a "Memory Test" option.
+
+   That's because although the memtester utility can be run from Terminal:<br />
+   ```
+   sudo apt install memtester<br />
+   memtester 512M 1
+   ```
+   
+   Due to kernel limitations, it can only test a portion of memory.
+   
+   So reboot your system to select the "Memory Test" option. 
+   If the GRUB menu doesn't show up, press and hold the Shift key during boot.
+
+   The test can run indefinitely until stopped manually.
+
+
+   ### Harden Debian
 
 1. Open the Terminal.
 
@@ -801,37 +846,41 @@ echo "abcdef" | replace "abc" "XYZ"
 
    <a target="_blank" href="https://github.com/bomonike/odoo-setup/blob/main/debian/harden-debian.sh">https://github.com/bomonike/odoo-setup/blob/main/debian/harden-debian.sh</a>
 
-   This script "hardens" your Debian instance.
+   This script "hardens" your Debian instance in several phases.
    
    Alternately, <a target="_blank" href="https://github.com/Gatsby-Lee/moon-rapi/blob/main/ansible_playbook/install-docker-on-debian.yaml">use Ansible</a> per <a target="_blank" href="https://github.com/Gatsby-Lee/DevOps">Gatsby</a>.
 
    Phases in the script:
    1. Obtain memtest88 and verify memory
-   1. Install OSSec integrity monitoring utility (from http://www.atomicorp.com) which generates a SHA1 hash of each monitored static file so unauthorized changes can be detected.
+   1. Install OSSec integrity 
    1. Install utility to Backup data.
    1. Disable DisplayLink driver to docking stations
    <br /><br />
 
+   ### harden-debian.sh
+
 1. View the <tt>harden-debian.sh</tt> file using the default text editor.
 
-   1. Verify memory
-
-   1. Edit
-
+   ```
    sudo vim /etc/apt/apt.conf.d/50unattended-upgrades
+   ```
 
-   1. Flatpak from flathub
+1. Flatpak from flathub
 
    PROTIP: The thoroughness of Debian's testing means that older versions of apps are installed with Debian core. So some install from Flathub to download replacements of apps.
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=IG2wTCacEtQ">VIDEO</a> DEFINITION: There are several distribution formats: AptImage, Snap, Flatpak. 
+   <a target="_blank" href="https://www.youtube.com/watch?v=IG2wTCacEtQ">VIDEO</a> DEFINITION: There are several distribution formats: 
+   * AptImage; 
+   * Snap and snapd from Canonical (who distributes Ubuntu)
+   * Flatpak
+   <br /><br />
    Flatpak uses a "Universal Package" format without dependency resoltuion so it can be used across different Linux distributions. That can (or not) be more secure.
 
    PROTIP: Add-on packages from Debian tend to be dated (and thus potentially less secure). Install utilities later using <tt>flatpack</tt> to obtain the latest version. 
    
-   1. Scheduled actions
+1. Scheduled actions
 
-   ## Backups
+   ### Backups
 
    https://www.odoo.com/documentation/master/administration/odoo_sh/getting_started/branches.html#odoo-sh-branches-backups
 
