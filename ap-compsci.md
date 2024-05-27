@@ -544,13 +544,24 @@ provides illustrations and examples from a child's point of view.
 
 ### Khan Academy
 
-https://KhanAcademy.org
+<a target="_blank" href="https://KhanAcademy.org">https://KhanAcademy.org</a>
 provides in-depth gamified tutorials online, for free, on the full range of subjects that include
 many of the AP STEM subjects. Courses related to computer science:
 
-    * <a target="_blank" href="https://www.khanacademy.org/college-careers-more/internet-safety">Internet safety</a>
-    * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science">Computer science theory</a> (Algorithms, Cryptography, Information theory)
-    * <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles">AP College Computer Science Principles</a>
+* <a target="_blank" href="https://www.khanacademy.org/college-careers-more/internet-safety">Internet safety</a>
+* <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles">AP College Computer Science Principles</a> consists of these "units":
+
+   1. Digital information 
+   2. The Internet
+   3. Programming
+   4. Algorithms
+   5. Data analysis
+   6. Simulations
+   7. Online data security
+   8. Computing innovations
+   9. Exam preparation
+   <br /><br />
+* <a target="_blank" href="https://www.khanacademy.org/computing/computer-science">Computer science theory</a> (Algorithms, Cryptography, Information theory)
 
 ### CS50 Harvard
 

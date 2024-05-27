@@ -1,12 +1,30 @@
-# Our Bomonike Learning Club
+# Our Bomonike Club
 
-Unlike other clubs which charge you to waste time seeing others fumble around starting from scatch,
-here we learn to improve DevSecOps and Cloud assets of production-level complexity and security,
-just like you would on the job.
+Here we created a way to learn deeply so that we can become professionals quickly yet competently.
 
-Please subscribe: 
-* Our YouTube Channel : https://www.youtube.com/@Bomonike 
-<br /><br />
+How this is different?
+
+Some on YouTube ask you for money to join a learning group. You get links to private videos. But you find them a waste time because the videos are high level or you see others fumble around starting from scatch. 
+
+The tragedy is that everyone ends up with incomplete, insecure automation to do work.
+They are not repeatable by others.
+
+<strong>Here we learn to improve DevSecOps and Cloud assets of production-level complexity and security,
+just like you would on the job.</strong>
+
+First, our strategy is to automate where we can, then document the manual steps.
+
+We have a specific way to code the automation (with variables) so they are flexible to accomodate variations.
+
+As each person makes use of the automation and stumbles through the documented steps, <strong>a video is made</strong> that others can see specifically what happened.
+
+Then code can be changed, missing steps be added, or steps be made clear.
+
+No more stumbling around desperetly trying random changes for hours.
+
+It takes a village and here's your village.
+
+<hr />
 
 ## Odoo
 
@@ -818,18 +836,24 @@ echo "abcdef" | replace "abc" "XYZ"
 
    This should add to the GRUB boot menu a "Memory Test" option.
 
-   That's because although the memtester utility can be run from Terminal:<br />
+   That's because although the memtester utility can be run from Terminal:
    ```
-   sudo apt install memtester<br />
+   sudo apt install memtester
    memtester 512M 1
    ```
    
-   Due to kernel limitations, it can only test a portion of memory.
+   But due to kernel limitations, that command can only test a portion of memory.
    
-   So reboot your system to select the "Memory Test" option. 
-   If the GRUB menu doesn't show up, press and hold the Shift key during boot.
+1. So reboot your system to select the "Memory Test" option now in the GRUB menu.
+
+   If the GRUB menu doesn't show up, press and hold the <strong>Shift key</strong> during boot.
 
    The test can run indefinitely until stopped manually.
+
+1. The output a list of bad RAM regions usable by the Linux kernel's BadRAM patch.
+
+   You can still utilize memory with a few bad bits. 
+   But systems in productive use should have a clean report.
 
 
    ### Harden Debian
@@ -877,7 +901,13 @@ echo "abcdef" | replace "abc" "XYZ"
    Flatpak uses a "Universal Package" format without dependency resoltuion so it can be used across different Linux distributions. That can (or not) be more secure.
 
    PROTIP: Add-on packages from Debian tend to be dated (and thus potentially less secure). Install utilities later using <tt>flatpack</tt> to obtain the latest version. 
-   
+
+1. Visual
+
+   GNOME is the default desktop.
+
+   Debian does not come with a package manager that reaches out externally to the internet.
+
 1. Scheduled actions
 
    ### Backups
