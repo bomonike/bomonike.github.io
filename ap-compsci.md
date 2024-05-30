@@ -465,14 +465,14 @@ Stand-outs are:
 
 * NCyTE.net
 
-* Knowt.com
+* Knowt.com provides over 1,000 questions in sample tests, cards:
 
    * https://knowt.com/exams/AP/AP-Computer-Science-Principles
    * https://knowt.com/exams/AP/AP-Computer-Science-A
 
 
 
-## Additional topics
+## Practical workplace skills
 
 Do the standard curriculum materials enable students to get a job?
 
@@ -482,27 +482,43 @@ However, several AP instructors (and this instructor does) enrich the materials 
 All these are free unless noted otherwise:
 
 1. Safe computing with email, Passkeys, and personal data protections
-2. Secure networking with wifi, internet, cellular, radios
+   * Email spoofing and 2FA, logout
+   * Phone number security
+   * Facetime & iMessage on iPhones (4G, 5G, LTE, satellite)
+   * [Calculate sunrise & sunset of sun] SunCalc.org for solar panels Sun Surveyor and Sun Seeker {3B-DA-05}
+   * Comparing: ChatGPT & Perpexity.ai for search
+1. Secure networking with wifi, internet, cellular, radios
+   * [Use Perplexity.ai] {3B-AP-08}
+   * [Connect a weather station to the internet] on openweather.com {3B-DA-06} {3B-DA-07}
+   * Send analog talk between from a radio between repeaters connected to the internet
+1. AKeyless cloud service to store and dispense SSH and other secrets
+   * [Use Post-Quantum encryption algorithm]
+   * [Backup and restore] as incident response
+1. [Plan and track work collaboration] using Trello Kanban board
+1. [LinkedIn profile] to display achievements and recommendations
 
-3. AKeyless cloud service to store and dispense SSH and other secrets
-4. LinkedIn profile to display achievements and recommendations
-5. Trello Kanban boards cloud service to plan and track work collaboration
+1. [Edit text using keyboard shortcuts] in Vim and VSCode - freeware vs licensed
+    * Foot pedals
+1. [Run bash/Linux Command line] utilities to [manage files and folders]
+1. [Obtain and edit code] using Git utilities with GitHub cloud service
+   * Setup Git
+   * Create and use SSH certificates
+1. [Create a static github.io website] and [Write GitHub Markdown]
+   * Register a domain name  
+1. [Install a USB chip to setup a Zima board from scratch]
+   * <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
+   * Internet of Things (IoT) to quantify and control physical objects (with AI)
+1. [Use AI to generate images, sound, video] (freemium)
 
-6. Text editing using Vim and VSCode
-7. Git utilities with GitHub cloud service to store and share code
-8. GitHub Markdown for creating a static website within GitHub ($75/year)
-9. bash/Linux Command line utilities to manage files and folders
+1. Python Jupyter coding to run Machine Learning in cloud environments
+   * [Use Gen AI to generate code]
+1. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
+    * Countries and cities of the world - compare latency averages and anomalies over time
+1. REST API programming (Postman and other tools)
+1. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
 
-10. Low-code e-commerce shops (Gumroad, Shopify, etc.) (freemium)
-11. Recording, generation, editing of images, sound, video (freemium)
-
-12. Python Jupyter coding to run Machine Learning in cloud environments (freemium)
-13. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
-
-14. REST API programming (Postman and other tools)
-15. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
-16. OnShape 3D CAD printing and design (freemium)
-17. Internet of Things (IoT) to quantify and control physical objects (with AI)
+1. [Print 3D object from STL file] created using OnShape 3D CAD
+1. [Modify a e-commerce shop template] (Gumroad, Shopify, etc.)
 <br /><br />
 
 Developing basic level skill with the above would enable students to subsequently focus on 
@@ -577,7 +593,7 @@ many of the AP STEM subjects. Courses related to computer science:
    Week 3 - Algorithms<br />
    Week 4 - Memory<br />
    Week 5 - Data Structures<br />
-   Week 6 - Python<br />
+   Week 6 - <a target="_blank" href="https://wilsonmar.github.io/">Python</a><br />
    <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@e4cc36bce80b403f9940ec8ed6f24cce/block-v1:HarvardX+CS50+X+type@vertical+block@1bff0d3d54d34d8aa260429907c988ac">Week 6.5 - Artificial Intelligence</a> (misinformation)<br />
    Week 7 - SQL<br />
    Week 8 - HTML, CSS, JavaScript<br />
@@ -588,7 +604,8 @@ Dr. Malan brings concepts to life <a target="_blank" href="https://www.youtube.c
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714867871/cs50-evals-2934x1172_sp5cqc.png"><img alt="cs50-evals-2934x1172.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714867871/cs50-evals-2934x1172_sp5cqc.png"></a>
 
-   Recommended by <a target="_blank" href="https://youtube.com/shorts/mmVaKcM_vrw?si=RVvDvlJY_ckb3Cnt">this</a> and <a target="_blank" href="https://youtube.com/shorts/otJLgUL0STI?si=iHduCXzfNV6sKXy4">this</a>.
+
+The class is recommended by <a target="_blank" href="https://youtube.com/shorts/mmVaKcM_vrw?si=RVvDvlJY_ckb3Cnt">this</a> and <a target="_blank" href="https://youtube.com/shorts/otJLgUL0STI?si=iHduCXzfNV6sKXy4">this</a>.
 
 <a target="_blank" href="https://www.edx.org/learn/ap/harvard-university-cs50-s-ap-r-computer-science-principles">Archived Apr 30, 2020</a> 
 are 36 weeks <a target="_blank" href="https://www.edx.org/xseries/harvardx-cs50-ap-computer-science-principles">XSeries Program in CS50's AP® Computer Science Principles</a>
