@@ -96,9 +96,17 @@ Recently, many teachers of the AP CSP exam select the <strong>Python</strong> pr
    * <a target="_blank" href="https://csteachers.org/k12standards/standards-alignment-review/?gf_protect_submission=1">CSTA (Computer Science Teacher Association) Level 3B Standards (grades 11-12 / ages 16-18)</a> <a target="_blank" href="https://docs.google.com/spreadsheets/d/1uamgdNykfGldvaJN-rh2vx-AGrm3gWlAOs_JarGLT4o/edit#gid=1212951193">Spreadsheet</a>
    <br /><br />
 
+<a name="BigIdeas"></a>
+
+Five Big Ideas (not covered in sequence below):
+
+<a name="CreativeDevelopment"></a>
+
 * Big Idea 1: Creative Development
 
    Understand the significance of collaboration in program development and how to use an iterative approach in your work. When developing computing innovations, developers can use a formal, iterative design process or a less rigid process of experimentation, and will encounter phases of investigating and reflecting, designing, prototyping, and testing. Collaboration is an important tool at any phase of development.
+
+<a name="DataAnalysis"></a>
 
 * Big Idea 2: Data & Analysis
 
@@ -108,6 +116,8 @@ Recently, many teachers of the AP CSP exam select the <strong>Python</strong> pr
    * 3B-DA-06	Select data collection tools and techniques to generate data sets that support a claim or communicate information.	
    * 3B-DA-07	Evaluate the ability of models and simulations to test and support the refinement of hypotheses.	
    <br /><br />
+
+<a name="Algorithms"></a>
 
 * Big Idea 3: Algorithms and Programming
 
@@ -132,6 +142,8 @@ Recently, many teachers of the AP CSP exam select the <strong>Python</strong> pr
    * 3B-AP-24	Compare multiple programming languages and discuss how their features make them suitable for solving different types of problems.	Examples of features include blocks versus text, indentation versus curly braces, and high-level versus low-level.
    <br /><br />
 
+<a name="SystemsNetworks"></a>
+
 * Big Idea 4: Computer Systems and Networks
 
    Explore the functioning of computer systems and networks, as well as how multiple computers can be employed to divide tasks and expedite processes.
@@ -141,6 +153,8 @@ Recently, many teachers of the AP CSP exam select the <strong>Python</strong> pr
    * 3B-NI-03	Describe the issues that impact network functionality (e.g., bandwidth, load, delay, topology).	Recommend use of free online network simulators to explore how these issues impact network functionality.
    * 3B-NI-04	Compare ways software developers protect devices and information from unauthorized access.	Examples of security concerns to consider: encryption and authentication strategies, secure coding, and safeguarding keys.
    <br /><br />
+
+<a name="ImpactComputing"></a>
 
 * Big Idea 5: Impact of Computing
 
@@ -215,6 +229,7 @@ These computational thinking practices are skills students should develop during
 <a target="_blank" href="https://www.flvs.net/high-school-courses/course/ap-computer-science-a/12/">One school</a> specified that for CSA, "Algebra 1 required. Algebra 2 and prior programming experience (i.e. Foundations of Programming) recommended." 
 
 Students may have prior experience with Computer Science topics:
+
    * Turtle graphics and micro:bit in <a target="_blank" href="https://codehs.com/course/9434/explore">"Tech Apps and Coding" at CodeHS</a> (<a target="_blank" href="https://codehs.com/uploads/379980882e1302b1493894153a851a2e">180 contact hours</a>) to meet Montana <a target="_blank" href="https://csteachers.org/k12standards/interactive/">CSTA 2 (Computer Science Teachers Association) standards</a> for students in grades 6-8
 
    * <a target="_blank" href="https://stemfinity.com/products/coding-express-by-legoa%C2%AE-education">LEGO Duplo</a> for <a target="_blank" href="https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/">Coding Express</a> physical programming during pre-K
@@ -464,6 +479,8 @@ Stand-outs are:
 
    Codehs has a free option but also offers their materials and community at $800/year per school, plus $1,000 for teacher professional development.
 
+   CodeHS AP courses are College Board Endorsed, meaning they have preapproved syllabi, lesson plans, and other instructional support.
+
    Features include classroom management.
    
    Provides an <a target="_blank" href="https://codehs.com/ide">on-line IDE</a> for 10+ programming languages.
@@ -478,11 +495,19 @@ Stand-outs are:
    * https://knowt.com/exams/AP/AP-Computer-Science-Principles
    * https://knowt.com/exams/AP/AP-Computer-Science-A
 
-* https://cyber.org/ empowers educators to teach Cyber
+* https://cyber.org/ empowers educators to teach Cyber info@cyber.org 318.841.9618
+   * Cyber Range
+   * https://www.accelevents.com/e/cyberorgedcon
+   * https://www.cisa.gov/topics/cybersecurity-best-practices/cybersecurity-education-career-development
 
+Several AP instructors (and this instructor does) enrich the materials with real-world tools entry-level contributors need to master. All these are free unless noted otherwise:
 
 
 ## Objectives
+
+As the name of the organization implies, the College Board has an academic rather than vocational focus.
+
+However, the aim of this course is to enable students to be more job ready.
 
 By the end of this course, the learner would be able to:
 
@@ -502,27 +527,25 @@ By the end of this course, the learner would be able to:
 
 <a href="#LowCodeApps">H. Use low-code systems to develop apps</a>
 
+Links are to the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the AP CSP curriculum and exam.
 
-Links are to the "Big Ideas" tested in the AP CSP curriculum and exam.
+   * <a href="#CreativeDevelopment">Big Idea 1: [Creative] Development</a>
+   * <a href="#DataAnalysis">Big Idea 2: Data & [Analysis]</a>
+   * <a href="#Algorithms">Big Idea 3: [Algorithms] and Programming</a>
+   * <a href="#SystemsNetworks">Big Idea 4: Computer [Systems] and Networks</a>
+   * <a href="#ImpactComputing">Big Idea 5: [Impact] of Computing</a>
+   <br /><br />
 
-
-## Practical workplace skills
-
-Do the standard curriculum materials enable students to get a job?
-
-As the name of the organization implies, the College Board has an academic rather than vocational focus.
-
-However, several AP instructors (and this instructor does) enrich the materials with real-world tools entry-level contributors need to master.
-All these are free unless noted otherwise:
+<hr />
 
 <a name="SafeComputing"></a>
 
-   <strong>A. Practice safe defensive computing practices</strong>
+&nbsp; &nbsp; &nbsp;<strong>A. Practice safe defensive computing practices</strong>  [Systems] [Impact]
 
+1. Secure FaceTime & iMessage on iPhones (4G, 5G, LTE, satellite)
 1. Shut down, Auto Updates
 1. Temp accounts: Phone, email, credit card
 1. PII spoofing and 2FA, Passkeys, logout, restart
-1. Secure FaceTime & iMessage on iPhones (4G, 5G, LTE, satellite)
    
 1. "Clickbait" Manipulation to share: emotions (mad, sad, scared, outraged) 
 1. Inappropriate/Toxic Topics: Search in ChatGPT & Perpexity.ai
@@ -532,27 +555,26 @@ All these are free unless noted otherwise:
  
 1. [Use Perplexity.ai] {3B-AP-08}
 1. [Connect a weather station to the internet] on openweather.com {3B-DA-06} {3B-DA-07}
-1. Send analog talk between from a radio between repeaters connected to the internet
 
    <a name="SafeData"></a>
 
-   <strong>B. Organize data and secrets backup data appropriately</strong>
+   <strong>B. Organize data and secrets backup data appropriately</strong> [Analysis]
 
-1. Browser profiles
+1. Browser profiles, settings
 1. AKeyless cloud service to store and dispense SSH and other secrets
 1. [Use Post-Quantum encryption algorithm]
 1. [Backup and restore] as incident response
 
    <a name="Socials"></a>
 
-   <strong>C. Craft profiles with portfolio projects</strong>
+   <strong>C. Craft profiles with portfolio projects</strong> [Impact]
 
 1. [LinkedIn profile] to display achievements and recommendations
 1. Career Job Titles
 
    <a name="Collaboration"></a>
 
-   <strong>D. Plan and track work collaboratively</strong>
+   <strong>D. Plan and track work collaboratively</strong> [Creative]
    
 1. Kanban board and flow in Trello
 1. [Calculate sunrise & sunset of sun] SunCalc.org for solar panels Sun Surveyor and Sun Seeker {3B-DA-05}
@@ -576,8 +598,8 @@ All these are free unless noted otherwise:
 
 1. [Install a USB chip to setup a Zima board from scratch]
 1. <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
-1. Internet of Things (IoT) to quantify and control physical objects (with AI)
-1. Foot pedals
+1. Internet of Things (IoT) to quantify and control physical objects (Foot pedals)
+1. Send analog talk between from a radio between repeaters connected to the internet
 
    <a name="UseAI"></a>
 
@@ -588,8 +610,8 @@ All these are free unless noted otherwise:
 1. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
 1. REST API programming (Postman and other tools)
 1. Countries and cities of the world - compare latency averages and anomalies over time
-1. Odoo
-1. Outsystems
+1. Outsystems app creator
+1. Odoo app templates
 
    <a name="LowCodeApps"></a>
 
@@ -602,7 +624,7 @@ All these are free unless noted otherwise:
 
 <br /><br />
 
-There are professional certifications (with fee) for many of the above skill areas
+Some entry-level professional certifications can be earned (for a fee) as early as high school,
 which provide students to be more competitive when applying for jobs.
 
 Skill with PowerPoint to create presentations would be useful as a prerequisite coming into the AP class.
