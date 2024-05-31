@@ -251,6 +251,8 @@ AP scores come out about two months after the exam, during the beginning of July
 
 Students who are homeschooled or go to a school that doesn’t administer AP Exams can find a school on the <a target="_blank" href="https://apcourseaudit.inflexion.org/ledger/">College Board's AP Course Ledger</a>, which lists secondary schools that have passed the AP Course Audit. 
 * For 23-24, there were 6437 schools in all 50 US states, up from 6162 in 22-23 and 6037 in 21-22.
+   <a target="_blank" href="https://nces.ed.gov/ccd/schoolsearch/">National Center for Educaton Statistics Search</a> by NCES School ID https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?Search=1&City=Joliet&State=30&Zip=59041&SchoolType=1&SchoolType=2&SchoolType=3&SchoolType=4&SpecificSchlTypes=all&IncGrade=-1&LoGrade=-1&HiGrade=-1&ID=301526000464
+
 * In Montana, for 23-24 there were 9 schools, up from 5 in 22-23, 6 in 21-22, and 4 in 20-21.
    * Belgrade High School (<a target="_blank" href="https://maps.app.goo.gl/EawUtUSW5LanJACK8">NorthWest Bozeman</a>, Gallatin Valley) Amy Guevara</a>, STEM Coordinator, 406-924-2122. AP® participation rate at Belgrade High School is 34%. 
    * Capital High School, Helena 
@@ -452,16 +454,22 @@ The College Board recognizes several organizations providing curriculum material
 
 Stand-outs are:
 
+* https://code.org - the one I'm using
+
+  Offered free.
+
+  Their training for teachers is $1,500. That covers a week of virtual or on-site, plus sessions throughout the year.
+
 * https://codehs.com
 
    Codehs has a free option but also offers their materials and community at $800/year per school, plus $1,000 for teacher professional development.
+
+   Features include classroom management.
    
    Provides an <a target="_blank" href="https://codehs.com/ide">on-line IDE</a> for 10+ programming languages.
 
    Added <a target="_blank" href="https://codehs.com/course/ap_csp_cyber/overview">
    Foundations</a> and <a target="_blank" href="https://codehs.com/course/advanced_cyber/overview">Advanced</a> courses on AP Cybersecurity.
-
-* https://code.org
 
 * NCyTE.net
 
@@ -470,6 +478,32 @@ Stand-outs are:
    * https://knowt.com/exams/AP/AP-Computer-Science-Principles
    * https://knowt.com/exams/AP/AP-Computer-Science-A
 
+* https://cyber.org/ empowers educators to teach Cyber
+
+
+
+## Objectives
+
+By the end of this course, the learner would be able to:
+
+<a href="#SafeComputing">A. Practice safe defensive computing practices</a>
+
+<a href="#SafeData">B. Organize and handle data secrets securely</a>
+
+<a href="#Socials">C. Craft profiles with portfolio projects</a>
+
+<a href="#Collaboration">D. Plan and track work collaboratively</a>
+
+<a href="#GitHub">E. Read and contribute to projects on GitHub using git</a>
+
+<a href="#ConfigScratch">F. Configure a computer from scratch</a>
+
+<a href="#UseAI">G. Make use of AI and cloud developer tools</a>
+
+<a href="#LowCodeApps">H. Use low-code systems to develop apps</a>
+
+
+Links are to the "Big Ideas" tested in the AP CSP curriculum and exam.
 
 
 ## Practical workplace skills
@@ -481,50 +515,94 @@ As the name of the organization implies, the College Board has an academic rathe
 However, several AP instructors (and this instructor does) enrich the materials with real-world tools entry-level contributors need to master.
 All these are free unless noted otherwise:
 
-1. Safe computing with email, Passkeys, and personal data protections
-   * Email spoofing and 2FA, logout
-   * Phone number security
-   * Facetime & iMessage on iPhones (4G, 5G, LTE, satellite)
-   * [Calculate sunrise & sunset of sun] SunCalc.org for solar panels Sun Surveyor and Sun Seeker {3B-DA-05}
-   * Comparing: ChatGPT & Perpexity.ai for search
+<a name="SafeComputing"></a>
+
+   <strong>A. Practice safe defensive computing practices</strong>
+
+1. Shut down, Auto Updates
+1. Temp accounts: Phone, email, credit card
+1. PII spoofing and 2FA, Passkeys, logout, restart
+1. Secure FaceTime & iMessage on iPhones (4G, 5G, LTE, satellite)
+   
+1. "Clickbait" Manipulation to share: emotions (mad, sad, scared, outraged) 
+1. Inappropriate/Toxic Topics: Search in ChatGPT & Perpexity.ai
+1. [Use AI to generate images, sound, video] (freemium)
+1. Carpel-Tunnel prevention
 1. Secure networking with wifi, internet, cellular, radios
-   * [Use Perplexity.ai] {3B-AP-08}
-   * [Connect a weather station to the internet] on openweather.com {3B-DA-06} {3B-DA-07}
-   * Send analog talk between from a radio between repeaters connected to the internet
+ 
+1. [Use Perplexity.ai] {3B-AP-08}
+1. [Connect a weather station to the internet] on openweather.com {3B-DA-06} {3B-DA-07}
+1. Send analog talk between from a radio between repeaters connected to the internet
+
+   <a name="SafeData"></a>
+
+   <strong>B. Organize data and secrets backup data appropriately</strong>
+
+1. Browser profiles
 1. AKeyless cloud service to store and dispense SSH and other secrets
-   * [Use Post-Quantum encryption algorithm]
-   * [Backup and restore] as incident response
-1. [Plan and track work collaboration] using Trello Kanban board
+1. [Use Post-Quantum encryption algorithm]
+1. [Backup and restore] as incident response
+
+   <a name="Socials"></a>
+
+   <strong>C. Craft profiles with portfolio projects</strong>
+
 1. [LinkedIn profile] to display achievements and recommendations
+1. Career Job Titles
+
+   <a name="Collaboration"></a>
+
+   <strong>D. Plan and track work collaboratively</strong>
+   
+1. Kanban board and flow in Trello
+1. [Calculate sunrise & sunset of sun] SunCalc.org for solar panels Sun Surveyor and Sun Seeker {3B-DA-05}
+1. [Print 3D object from STL file] created using OnShape 3D CAD
+ 
+   <a name="GitHub"></a>
+
+   <strong>E. Read and contribute to projects on GitHub using git</strong>
 
 1. [Edit text using keyboard shortcuts] in Vim and VSCode - freeware vs licensed
-    * Foot pedals
 1. [Run bash/Linux Command line] utilities to [manage files and folders]
+1. Setup Git
 1. [Obtain and edit code] using Git utilities with GitHub cloud service
-   * Setup Git
-   * Create and use SSH certificates
+1. Create and use SSH certificates
 1. [Create a static github.io website] and [Write GitHub Markdown]
-   * Register a domain name  
-1. [Install a USB chip to setup a Zima board from scratch]
-   * <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
-   * Internet of Things (IoT) to quantify and control physical objects (with AI)
-1. [Use AI to generate images, sound, video] (freemium)
+1. Register a domain name  
 
-1. Python Jupyter coding to run Machine Learning in cloud environments
-   * [Use Gen AI to generate code]
+   <a name="ConfigScratch"></a>
+
+   <strong>F. Configure a computer from scratch</strong>
+
+1. [Install a USB chip to setup a Zima board from scratch]
+1. <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
+1. Internet of Things (IoT) to quantify and control physical objects (with AI)
+1. Foot pedals
+
+   <a name="UseAI"></a>
+
+   <strong>G. Make use of AI and cloud developer tools</strong>
+
+1. "AI/ML for Oceans" https://code.org/oceans
+
 1. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
-    * Countries and cities of the world - compare latency averages and anomalies over time
 1. REST API programming (Postman and other tools)
+1. Countries and cities of the world - compare latency averages and anomalies over time
+1. Odoo
+1. Outsystems
+
+   <a name="LowCodeApps"></a>
+
+   <strong>H. Use low-code systems to develop apps</strong>
+
+1. [Modify a e-commerce shop template] (Gumroad, Shopify, etc.)
+1. Python Jupyter coding to run Machine Learning in cloud environments
+1. [Use Gen AI to generate code]
 1. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
 
-1. [Print 3D object from STL file] created using OnShape 3D CAD
-1. [Modify a e-commerce shop template] (Gumroad, Shopify, etc.)
 <br /><br />
 
-Developing basic level skill with the above would enable students to subsequently focus on 
-mastery with crafting HTML/CSS/JavaScript, Cybersecurity, data engineering, algorithms, automated testing, design, risk management.
-
-There is a professional certification for many of the above skill areas
+There are professional certifications (with fee) for many of the above skill areas
 which provide students to be more competitive when applying for jobs.
 
 Skill with PowerPoint to create presentations would be useful as a prerequisite coming into the AP class.
@@ -603,7 +681,6 @@ many of the AP STEM subjects. Courses related to computer science:
 Dr. Malan brings concepts to life <a target="_blank" href="https://www.youtube.com/watch?v=AMiNIjePZlo&t=11m38s">with memorable theatrical explanations</a>, which he has students rank:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714867871/cs50-evals-2934x1172_sp5cqc.png"><img alt="cs50-evals-2934x1172.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714867871/cs50-evals-2934x1172_sp5cqc.png"></a>
-
 
 The class is recommended by <a target="_blank" href="https://youtube.com/shorts/mmVaKcM_vrw?si=RVvDvlJY_ckb3Cnt">this</a> and <a target="_blank" href="https://youtube.com/shorts/otJLgUL0STI?si=iHduCXzfNV6sKXy4">this</a>.
 
