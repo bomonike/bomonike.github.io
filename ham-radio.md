@@ -868,7 +868,7 @@ It's used by hams to find the <strong>short-path</strong> between two stations. 
 
 ### MEMORIZE: Use NATO phoetic alphabet.
 
-<a target="_blank" href="https://www.youtube.com/watch?v=TesQ5GON_iw&t=54s">VIDEO</a>: pronouciation.
+<a target="_blank" href="https://www.youtube.com/watch?v=TesQ5GON_iw&t=54s">VIDEO</a>: pronounciation, with 
 
 <table border="1" cellpadding="4" cellspacing="0"><tr valign="bottom"><th><strong>Character</strong></th><th><strong>Code word</strong></th><th><strong>Pronunciation</strong></th><th><strong>Morse Code</strong></th></tr><tbody>
 <tr valign="top"><td><strong>A</strong></td><td>Alfa/Alpha</td><td>AL FAH</td><td>● ▬</td></tr>
@@ -897,18 +897,31 @@ It's used by hams to find the <strong>short-path</strong> between two stations. 
 <tr valign="top"><td><strong>X</strong></td><td>X-ray</td><td>ECKS RAY</td><td>▬ ● ● ▬</td></tr>
 <tr valign="top"><td><strong>Y</strong></td><td>Yankee</td><td>YANG KEY</td><td>▬ ▬ ● ●</td></tr>
 <tr valign="top"><td><strong>Z</strong></td><td>Zulu</td><td>ZOO LOO</td><td>▬ ▬ ▬ ▬ ▬</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>0</td><td>ZERO</td><td>● ▬ ▬ ▬ ▬</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>1</td><td>ONE</td><td>● ▬ ▬ ▬ ▬</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>2</td><td>TWO</td><td>● ● ▬ ▬ ▬</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>3</td><td>THREE</td><td>● ● ● ▬ ▬</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>4</td><td>FOUR</td><td>● ● ● ● ▬</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>5</td><td>FIVE</td><td>● ● ● ● ●</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>6</td><td>SIX</td><td>▬ ● ● ● ●</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>7</td><td>SEVEN</td><td>▬ ▬ ● ● ●</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>8</td><td>EIGHT</td><td>▬ ▬ ▬ ● ●</td></tr>
+<tr valign="top"><td><strong>Z</strong></td><td>9</td><td>NINE</td><td>▬ ▬ ▬ ▬ ●</td></tr>
 </tbody></table>
 
 The two t's in Juliett is to ensure that French speakers who usually do not pronounce the t at the end of a word.
+
+Morse code dits and dahs. <a target="_blank" href="https://www.youtube.com/watch?v=rufnWLVQcKg">VIDEO</a> 
+https://cyber.org/find-curricula/morse-code
 
 Type or paste words into website: <a target="_blank" href="https://www.radiospelling.com/">https://www.radiospelling.com</a> to pronounce then out your speakers. 
 
 Select "International Civil Aviation Organization" (ICAO) adopted in 1956 rather than historical ones described at https://en.wikipedia.org/wiki/NATO_phonetic_alphabet
 (Some Police departments have a <a target="_blank" href="https://www.rfcafe.com/references/general/phonetic-alphabet.htm">different set</a>)
 
-<ul>W	S	C	Z	3	4	6
+<ul><tt>W	S	C	Z	3	4	6<br />
 Whiskey	Sierra	Charlie	Zulu	Three	Four	Six
-</ul>
+</tt></ul>
 
 That's also called "NATO" alphabet as there is <a target="_blank" href="https://cryptii.com/pipes/nato-phonetic-alphabet">a different set in Russia</a>.
 

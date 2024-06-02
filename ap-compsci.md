@@ -204,8 +204,7 @@ Impact of Computing:
    <br /><br />
 
 https://www.edx.org/learn/java/purdue-university-ap-computer-science-a-java-programming
-archived. 
-by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-50879427/">Phil Sands</a>
+archived by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-50879427/">Phil Sands</a>
 
 <hr />
 
@@ -500,8 +499,13 @@ Stand-outs are:
    * https://www.accelevents.com/e/cyberorgedcon
    * https://www.cisa.gov/topics/cybersecurity-best-practices/cybersecurity-education-career-development
 
+* Palo Alto Networks K-12 Fundamental Series Courses and Labs
+
+
 Several AP instructors (and this instructor does) enrich the materials with real-world tools entry-level contributors need to master. All these are free unless noted otherwise:
 
+
+<a name="Syllabus"></a>
 
 ## Objectives
 
@@ -527,7 +531,7 @@ By the end of this course, the learner would be able to:
 
 <a href="#LowCodeApps">H. Use low-code systems to develop apps</a>
 
-Links are to the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the AP CSP curriculum and exam.
+> The aim is not to make learners "super pro users". The strategy is to, <strong>while demonstrating how</strong> to use various applications, we <strong>analyze</strong> each product based on the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the AP CSP curriculum and exam:
 
    * <a href="#CreativeDevelopment">Big Idea 1: [Creative] Development</a>
    * <a href="#DataAnalysis">Big Idea 2: Data & [Analysis]</a>
@@ -542,12 +546,13 @@ Links are to the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the 
 
 &nbsp; &nbsp; &nbsp;<strong>A. Practice safe defensive computing practices</strong>  [Systems] [Impact]
 
-1. Secure FaceTime & iMessage on iPhones (4G, 5G, LTE, satellite)
-1. Shut down, Auto Updates
-1. Temp accounts: Phone, email, credit card
+1. Temp/alt info: Address, Phone, email, credit card, social security
+1. Security of hardware
+1. Operating systems: Shut down, Auto Updates
 1. PII spoofing and 2FA, Passkeys, logout, restart
+1. Secure config FaceTime & iMessage on iPhones (4G, 5G, LTE, satellite)
    
-1. "Clickbait" Manipulation to share: emotions (mad, sad, scared, outraged) 
+1. "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage) 
 1. Inappropriate/Toxic Topics: Search in ChatGPT & Perpexity.ai
 1. [Use AI to generate images, sound, video] (freemium)
 1. Carpel-Tunnel prevention
@@ -623,6 +628,11 @@ Links are to the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the 
 1. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
 
 <br /><br />
+
+The average number of school days  in a school year in the United States is <strong>180 days</strong> (within a range from 170 to 185 days).
+So there are roughly 36 weeks in a school year (180 days ÷ 5 days per week).
+
+## Professional certifications
 
 Some entry-level professional certifications can be earned (for a fee) as early as high school,
 which provide students to be more competitive when applying for jobs.
@@ -713,9 +723,21 @@ There are now several CS50 courses:
 
    * <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/">CS50 AI with Python</a>
 
-### Outsystems
+https://conference.csteachers.org/
+
+
+### Vendor info
 
 https://www.outsystems.com/education-program/
+
+https://www.csunplugged.org/en/
+Computer Science without a computer
+CS Unplugged is a collection of free teaching material that teaches Computer Science through engaging games and puzzles that use cards, string, crayons and lots of running around.
+
+## Scholarships
+
+Scholarship For Service (SFS) (at <a target="_blank" href="https://sfs.opm.gov/">https://sfs.opm.gov</a>)
+scholarships for up to 3 years of support for cybersecurity undergraduate and graduate (MS or PhD) education, in order to meet the needs of the cybersecurity mission for Federal, State, local, and tribal governments. The scholarships are funded through grants awarded by the National Science Foundation. In return for their scholarships, recipients must agree to work after graduation for the U.S. Government, in a position related to cybersecurity, for a period equal to the length of the scholarship.
 
 
 <hr />
@@ -726,3 +748,4 @@ https://www.outsystems.com/education-program/
 * https://www.afterschoolalliance.org/policyStateFacts.cfm?state=MT
 * https://4-h.org/programs/tech-changemakers/
 
+* https://www.linkedin.com/in/lucia-zuniga-0a0749227/
