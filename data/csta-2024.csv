@@ -1,0 +1,121 @@
+_	_Identifier	_Grades	_Standard	_Concept	_Subconcept	_Practice(s)
+1	1A-AP-08	K+	Model daily processes by creating and following algorithms (sets of step-by-step instructions) to complete tasks.	Algorithms & Programming	Algorithms	Abstraction
+1	3A-AP-13	09+	Create prototypes that use algorithms to solve computational problems by leveraging prior student knowledge and personal interests.	Algorithms & Programming	Algorithms	Creating
+1	2-AP-10	06+	Use flowcharts and/or pseudocode to address complex problems as algorithms.	Algorithms & Programming	Algorithms	Abstraction
+1	1B-AP-08	03+	Compare and refine multiple algorithms for the same task and determine which is the most appropriate.	Algorithms & Programming	Algorithms	Testing, Computational Problems
+1	3B-AP-08	11+	Describe how artificial intelligence drives many software and physical systems.	Algorithms & Programming	Algorithms	Communicating
+1	3B-AP-09	11+	Implement an artificial intelligence algorithm to play a game against a human opponent or solve a problem.	Algorithms & Programming	Algorithms	Creating
+1	3B-AP-10	11+	Use and adapt classic algorithms to solve computational problems.	Algorithms & Programming	Algorithms	Abstraction
+1	3B-AP-11	11+	Evaluate algorithms in terms of their efficiency, correctness, and clarity.	Algorithms & Programming	Algorithms	Abstraction
+1	1A-AP-10	K+	Develop programs with sequences and simple loops, to express ideas or address a problem.	Algorithms & Programming	Control	Creating
+1	3A-AP-15	09+	Justify the selection of specific control structures when tradeoffs involve implementation, readability, and program performance, and explain the benefits and drawbacks of choices made.	Algorithms & Programming	Control	Computational Problems 
+1	3A-AP-16	09+	Design and iteratively develop computational artifacts for practical intent, personal expression, or to address a societal issue by using events to initiate instructions.	Algorithms & Programming	Control	Creating
+1	2-AP-12	06+	Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals.	Algorithms & Programming	Control	Creating
+1	1B-AP-10	03+	Create programs that include sequences, events, loops, and conditionals.	Algorithms & Programming	Control	Creating
+1	3B-AP-13	11+	Illustrate the flow of execution of a recursive algorithm.	Algorithms & Programming	Control	Computational Problems
+1	1A-AP-11	K+	Decompose (break down) the steps needed to solve a problem into a precise sequence of instructions.	Algorithms & Programming	Modularity	Computational Problems
+1	3A-AP-17	09+	Decompose problems into smaller components through systematic analysis, using constructs such as procedures, modules, and/or objects.	Algorithms & Programming	Modularity	Computational Problems
+1	3A-AP-18	09+	Create artifacts by using procedures within a program, combinations of data and procedures, or independent but interrelated programs.	Algorithms & Programming	Modularity	Creating
+1	3A-AP-19	09+	Systematically design and develop programs for broad audiences by incorporating feedback from users.	Algorithms & Programming	Modularity	Creating
+1	2-AP-13	06+	Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs.	Algorithms & Programming	Modularity	Computational Problems
+1	2-AP-14	06+	Create procedures with parameters to organize code and make it easier to reuse.	Algorithms & Programming	Modularity	Abstraction
+1	1B-AP-11	03+	Decompose (break down) problems into smaller, manageable subproblems to facilitate the program development process.	Algorithms & Programming	Modularity	Computational Problems
+1	1B-AP-12	03+	Modify, remix, or incorporate portions of an existing program into one's own work, to develop something new or add more advanced features.	Algorithms & Programming	Modularity	Creating
+1	3B-AP-14	11+	Construct solutions to problems using student-created components, such as procedures, modules and/or objects.	Algorithms & Programming	Modularity	Creating
+1	3B-AP-15	11+	Analyze a large-scale computational problem and identify generalizable patterns that can be applied to a solution.	Algorithms & Programming	Modularity	Abstraction
+1	3B-AP-16	11+	Demonstrate code reuse by creating programming solutions using libraries and APIs.	Algorithms & Programming	Modularity	Creating
+1	1A-AP-12	K+	Develop plans that describe a program’s sequence of events, goals, and expected outcomes.	Algorithms & Programming	Program Development	Creating, Communicating
+1	1A-AP-13	K+	Give attribution when using the ideas and creations of others while developing programs.	Algorithms & Programming	Program Development	Communicating
+1	1A-AP-14	K+	Debug (identify and fix) errors in an algorithm or program that includes sequences and simple loops.	Algorithms & Programming	Program Development	Testing
+1	1A-AP-15	K+	Using correct terminology, describe steps taken and choices made during the iterative process of program development.	Algorithms & Programming	Program Development	Communicating
+1	3A-AP-20	09+	Evaluate licenses that limit or restrict use of computational artifacts when using resources such as libraries.	Algorithms & Programming	Program Development	Communicating
+1	3A-AP-21	09+	Evaluate and refine computational artifacts to make them more usable and accessible.	Algorithms & Programming	Program Development	Testing
+1	3A-AP-22	09+	Design and develop computational artifacts working in team roles using collaborative tools.	Algorithms & Programming	Program Development	Collaborating
+1	3A-AP-23	09+	Document design decisions using text, graphics, presentations, and/or demonstrations in the development of complex programs.	Algorithms & Programming	Program Development	Communicating
+1	2-AP-15	06+	Seek and incorporate feedback from team members and users to refine a solution that meets user needs.	Algorithms & Programming	Program Development	Collaborating, Inclusion
+1	2-AP-16	06+	Incorporate existing code, media, and libraries into original programs, and give attribution.	Algorithms & Programming	Program Development	Abstraction, Creating, Communicating
+1	2-AP-17	06+	Systematically test and refine programs using a range of test cases.	Algorithms & Programming	Program Development	Testing
+1	2-AP-18	06+	Distribute tasks and maintain a project timeline when collaboratively developing computational artifacts.	Algorithms & Programming	Program Development	Collaborating
+1	2-AP-19	06+	Document programs in order to make them easier to follow, test, and debug.	Algorithms & Programming	Program Development	Communicating
+1	1B-AP-13	03+	Use an iterative process to plan the development of a program by including others' perspectives and considering user preferences.	Algorithms & Programming	Program Development	Inclusion, Creating
+1	1B-AP-14	03+	Observe intellectual property rights and give appropriate attribution when creating or remixing programs.	Algorithms & Programming	Program Development	Creating, Communicating
+1	1B-AP-15	03+	Test and debug (identify and fix errors) a program or algorithm to ensure it runs as intended.	Algorithms & Programming	Program Development	Testing
+1	1B-AP-16	03+	Take on varying roles, with teacher guidance, when collaborating with peers during the design, implementation, and review stages of program development.	Algorithms & Programming	Program Development	Collaborating
+1	1B-AP-17	03+	Describe choices made during program development using code comments, presentations, and demonstrations.	Algorithms & Programming	Program Development	Communicating
+1	3B-AP-17	11+	Plan and develop programs for broad audiences using a software life cycle process.	Algorithms & Programming	Program Development	Creating
+1	3B-AP-18	11+	Explain security issues that might lead to compromised computer programs.	Algorithms & Programming	Program Development	Communicating
+1	3B-AP-19	11+	Develop programs for multiple computing platforms.	Algorithms & Programming	Program Development	Creating
+1	3B-AP-20	11+	Use version control systems, integrated development environments (IDEs), and collaborative tools and practices (code documentation) in a group software project.	Algorithms & Programming	Program Development	Collaborating
+1	3B-AP-21	11+	Develop and use a series of test cases to verify that a program performs according to its design specifications.	Algorithms & Programming	Program Development	Testing
+1	3B-AP-22	11+	Modify an existing program to add additional functionality and discuss intended and unintended implications (e.g., breaking other functionality).	Algorithms & Programming	Program Development	Creating
+1	3B-AP-23	11+	Evaluate key qualities of a program through a process such as a code review.	Algorithms & Programming	Program Development	Testing
+1	3B-AP-24	11+	Compare multiple programming languages and discuss how their features make them suitable for solving different types of problems.	Algorithms & Programming	Program Development	Communicating
+1	1A-AP-09	K+	Model the way programs store and manipulate data by using numbers or other symbols to represent information.	Algorithms & Programming	Variables	Abstraction
+1	3A-AP-14	09+	Use lists to simplify solutions, generalizing computational problems instead of repeatedly using simple variables.	Algorithms & Programming	Variables	Abstraction
+1	2-AP-11	06+	Create clearly named variables that represent different data types and perform operations on their values.	Algorithms & Programming	Variables	Creating
+1	1B-AP-09	03+	Create programs that use variables to store and modify data.	Algorithms & Programming	Variables	Creating
+1	3B-AP-12	11+	Compare and contrast fundamental data structures and their uses.	Algorithms & Programming	Variables	Abstraction 
+1	1A-CS-01	K+	Select and operate appropriate software to perform a variety of tasks, and recognize that users have different needs and preferences for the technology they use.	Computing Systems	Devices	Inclusion
+1	3A-CS-01	09+	Explain how abstractions hide the underlying implementation details of Computing Systems embedded in everyday objects.	Computing Systems	Devices	Abstraction
+1	2-CS-01	06+	Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices.	Computing Systems	Devices	Computational Problems
+1	1B-CS-01	03+	Describe how internal and external parts of computing devices function to form a system.	Computing Systems	Devices	Communicating
+1	1A-CS-02	K+	Use appropriate terminology in identifying and describing the function of common physical components of Computing Systems (hardware).	Computing Systems	Hardware & Software	Communicating
+1	3A-CS-02	09+	Compare levels of abstraction and interactions between application software, system software, and hardware layers.	Computing Systems	Hardware & Software	Abstraction
+1	2-CS-02	06+	Design projects that combine hardware and software components to collect and exchange data.	Computing Systems	Hardware & Software	Creating
+1	1B-CS-02	03+	Model how computer hardware and software work together as a system to accomplish tasks.	Computing Systems	Hardware & Software	Abstraction
+1	3B-CS-01	11+	Categorize the roles of operating system software.	Computing Systems	Hardware & Software	Communicating
+1	1A-CS-03	K+	Describe basic hardware and software problems using accurate terminology.	Computing Systems	Troubleshooting	Testing, Communicating
+1	3A-CS-03	09+	Develop guidelines that convey systematic Troubleshooting strategies that others can use to identify and fix errors.	Computing Systems	Troubleshooting	Testing
+1	2-CS-03	06+	Systematically identify and fix problems with computing devices and their components.	Computing Systems	Troubleshooting	Testing
+1	1B-CS-03	03+	Determine potential solutions to solve simple hardware and software problems using common Troubleshooting strategies.	Computing Systems	Troubleshooting	Testing
+1	3B-CS-02	11+	Illustrate ways Computing Systems implement logic, input, and output through hardware components.	Computing Systems	Troubleshooting	Communicating
+1	1A-DA-06	K+	Collect and present the same data in various visual formats.	Data & Analysis	Collection Visualization & Transformation	Communicating, Abstraction
+1	3A-DA-11	09+	Create interactive data visualizations using software tools to help others better understand real-world phenomena.	Data & Analysis	Collection Visualization & Transformation	Abstraction
+1	2-DA-08	06+	Collect data using computational tools and transform the data to make it more useful and reliable.	Data & Analysis	Collection Visualization & Transformation	Testing
+1	1B-DA-06	03+	Organize and present collected data visually to highlight relationships and support a claim.	Data & Analysis	Collection Visualization & Transformation	Communicating
+1	3B-DA-05	11+	Use data analysis tools and techniques to identify patterns in data representing complex systems.	Data & Analysis	Collection Visualization & Transformation	Abstraction
+1	3B-DA-06	11+	Select data collection tools and techniques to generate data sets that support a claim or communicate information.	Data & Analysis	Collection Visualization & Transformation	Communicating
+1	1A-DA-07	K+	Identify and describe patterns in data visualizations, such as charts or graphs, to make predictions.	Data & Analysis	Inference & Models	Abstraction
+1	3A-DA-12	09+	Create computational models that represent the relationships among different elements of data collected from a phenomenon or process.	Data & Analysis	Inference & Models	Abstraction
+1	2-DA-09	06+	Refine computational models based on the data they have generated.	Data & Analysis	Inference & Models	Creating, Abstraction
+1	1B-DA-07	03+	Use data to highlight or propose cause-and-effect relationships, predict outcomes, or communicate an idea.	Data & Analysis	Inference & Models	Communicating
+1	3B-DA-07	11+	Evaluate the ability of models and simulations to test and support the refinement of hypotheses.	Data & Analysis	Inference & Models	Abstraction
+1	1A-DA-05	K+	Store, copy, search, retrieve, modify, and delete information using a computing device and define the information stored as data.	Data & Analysis	Storage	Abstraction
+1	3A-DA-09	09+	Translate between different bit representations of real-world phenomena, such as characters, numbers, and images.	Data & Analysis	Storage	Abstraction
+1	3A-DA-10	09+	Evaluate the tradeoffs in how data elements are organized and where data is stored.	Data & Analysis	Storage	Computational Problems
+1	2-DA-07	06+	Represent data using multiple encoding schemes.	Data & Analysis	Storage	Abstraction 
+1	1A-IC-16	K+	Compare how people live and work before and after the implementation or adoption of new computing technology.	Impacts of Computing	Culture	Communicating
+1	3A-IC-24	09+	Evaluate the ways computing impacts personal, ethical, social, economic, and cultural practices.	Impacts of Computing	Culture	Inclusion
+1	3A-IC-25	09+	Test and refine computational artifacts to reduce bias and equity deficits.	Impacts of Computing	Culture	Inclusion
+1	3A-IC-26	09+	Demonstrate ways a given algorithm applies to problems across disciplines.	Impacts of Computing	Culture	Computational Problems
+1	2-IC-20	06+	Compare tradeoffs associated with computing technologies that affect people's everyday activities and career options.	Impacts of Computing	Culture	Communicating
+1	2-IC-21	06+	Discuss issues of bias and accessibility in the design of existing technologies.	Impacts of Computing	Culture	Inclusion
+1	1B-IC-18	03+	Discuss computing technologies that have changed the world, and express how those technologies influence, and are influenced by, cultural practices.	Impacts of Computing	Culture	Computational Problems
+1	1B-IC-19	03+	Brainstorm ways to improve the accessibility and usability of technology products for the diverse needs and wants of users.	Impacts of Computing	Culture	Inclusion
+1	3B-IC-25	11+	Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society.	Impacts of Computing	Culture	Testing, Inclusion
+1	3B-IC-26	11+	Evaluate the impact of equity, access, and influence on the distribution of computing resources in a global society.	Impacts of Computing	Culture	Inclusion
+1	3B-IC-27	11+	Predict how computational innovations that have revolutionized aspects of our culture might evolve.	Impacts of Computing	Culture	Communicating
+1	1A-IC-18	K+	Keep login information private, and log off of devices appropriately.	Impacts of Computing	Safety Law & Ethics	Communicating
+1	3A-IC-28	09+	Explain the beneficial and harmful effects that intellectual property laws can have on innovation.	Impacts of Computing	Safety Law & Ethics	Communicating
+1	3A-IC-29	09+	Explain the privacy concerns related to the collection and generation of data through automated processes that may not be evident to users.	Impacts of Computing	Safety Law & Ethics	Communicating
+1	3A-IC-30	09+	Evaluate the social and economic implications of privacy in the context of safety, law, or ethics.	Impacts of Computing	Safety Law & Ethics	Communicating
+1	2-IC-23	06+	Describe tradeoffs between allowing information to be public and keeping information private and secure.	Impacts of Computing	Safety Law & Ethics	Communicating
+1	1B-IC-21	03+	Use public domain or creative commons media, and refrain from copying or using material created by others without permission.	Impacts of Computing	Safety Law & Ethics	Communicating
+1	3B-IC-28	11+	Debate laws and regulations that impact the development and use of software.	Impacts of Computing	Safety Law & Ethics        	Computational Problems, Communicating
+1	1A-IC-17	K+	Work respectfully and responsibly with others online.	Impacts of Computing	Social Interactions	Collaborating
+1	3A-IC-27	09+	Use tools and methods for collaboration on a project to increase connectivity of people in different cultures and career fields.	Impacts of Computing	Social Interactions	Collaborating
+1	2-IC-22	06+	Collaborate with many contributors through strategies such as crowdsourcing or surveys when creating a computational artifact.	Impacts of Computing	Social Interactions	Collaborating, Creating
+1	1B-IC-20	03+	Seek diverse perspectives for the purpose of improving computational artifacts.	Impacts of Computing	Social Interactions	Inclusion
+1	1A-NI-04	K+	Explain what passwords are and why we use them, and use strong passwords to protect devices and information from unauthorized access.	Networks & the Internet	Cybersecurity	Communicating
+1	3A-NI-06	09+	Recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts.	Networks & the Internet	Cybersecurity	Computational Problems
+1	3A-NI-08	09+	Explain tradeoffs when selecting and implementing cybersecurity recommendations.	Networks & the Internet	Cybersecurity	Communicating
+1	2-NI-05	06+	Explain how physical and digital security measures protect electronic information.	Networks & the Internet	Cybersecurity	Communicating
+1	2-NI-06	06+	Apply multiple methods of encryption to model the secure transmission of information.	Networks & the Internet	Cybersecurity	Abstraction
+1	1B-NI-05	03+	Discuss real-world cybersecurity problems and how personal information can be protected.	Networks & the Internet	Cybersecurity	Computational Problems
+1	3B-NI-04	11+	Compare ways software developers protect devices and information from unauthorized access.	Networks & the Internet	Cybersecurity	Communicating
+1	3A-NI-04	09+	Evaluate the scalability and reliability of networks, by describing the relationship between routers, switches, servers, topology, and addressing.	Networks & the Internet	Network Communication & Organization	Abstraction
+1	3A-NI-05	09+	Give examples to illustrate how sensitive data can be affected by malware and other attacks.	Networks & the Internet	Network Communication & Organization	Communicating
+1	3A-NI-07	09+	Compare various security measures, considering tradeoffs between the usability and security of a computing system.	Networks & the Internet	Network Communication & Organization	Testing
+1	2-NI-04	06+	Model the role of protocols in transmitting data across networks and the Internet.	Networks & the Internet	Network Communication & Organization	Abstraction
+1	1B-NI-04	03+	Model how information is broken down into smaller pieces, transmitted as packets through multiple devices over networks and the Internet, and reassembled at the destination.	Networks & the Internet	Network Communication & Organization	Abstraction 
+1	3B-NI-03	11+	Describe the issues that impact network functionality (e.g., bandwidth, load, delay, topology).	Networks & the Internet	Network Communication & Organization	Communicating

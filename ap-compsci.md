@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-05-04"
+date: "2024-06-04"
 file: "ap-compsci"
 title: "ap-compsci"
 excerpt: "How to stufy for the AP® (Advanced Placement) Computer Science exams given in United States high schools"
@@ -41,7 +41,7 @@ students, while still in high school, can earn college credits:
 
    BTW: Those in the US military can <a target="_blank" href="https://dodwrlibraries.org/">study</a> and <a target="_blank" href="https://getcollegecredit.com/">take</a> (at Prometric testing centers) each exam once for free <a target="_blank" href="https://www.dantes.mil/dsst/">DSST (DANTES Subject Standardized Tests)</a> accreditated by the American Council on Education (ACE). Tests include: TECHNICAL WRITING, COMPUTING & INFORMATION TECHNOLOGY, MANAGEMENT INFORMATION SYSTEMS, FUNDAMENTALS OF CYBERSECURITY.
 
-4. Score high enough on AP (Advance Placement) exams by the College Board.
+4. Score high enough on AP (Advance Placement) exams by the College Board. See next section:
 
 
 ## AP (Advanced Placement) for Computer Science
@@ -64,7 +64,7 @@ There was a time when there was a "AP Computer Science AB" which covered all the
 The two exams can be taken in any order.
 There are no limit on retakes.
 
-## CSA - Computer Languages
+## Computer Science A (CSA)
 
 AP Computer Science was taught using Pascal for the 1984–1998 exams, C++ for 1999–2003, and object-oriented <strong>Java</strong> since 2004 as AP Computer Science A.
 
@@ -100,11 +100,14 @@ Recently, many teachers of the AP CSP exam select the <strong>Python</strong> pr
 
 Five Big Ideas (not covered in sequence below):
 
+Items below are based on the national CSTA (Computer Science Teacher Associate) at <a target="_blank" href="https://csteachers.org/k12standards/interactive/">* https://csteachers.org/k12standards/interactive</a> refactored into <a target="_blank" href="">this CSV file</a>.
+
+
 <a name="CreativeDevelopment"></a>
 
 * Big Idea 1: Creative Development
 
-   Understand the significance of collaboration in program development and how to use an iterative approach in your work. When developing computing innovations, developers can use a formal, iterative design process or a less rigid process of experimentation, and will encounter phases of investigating and reflecting, designing, prototyping, and testing. Collaboration is an important tool at any phase of development.
+   Understand the significance of <strong>collaboration</strong> in program development and how to use an <strong>iterative</strong> approach in your work. When developing computing innovations, developers can use a formal, iterative design process or a less rigid process of experimentation, and will encounter phases of investigating and reflecting, designing, prototyping, and testing.
 
 <a name="DataAnalysis"></a>
 
@@ -146,6 +149,8 @@ Five Big Ideas (not covered in sequence below):
 
 * Big Idea 4: Computer Systems and Networks
 
+   <em>(The CSTA standard separates Systems & Networks)</em>
+
    Explore the functioning of computer systems and networks, as well as how multiple computers can be employed to divide tasks and expedite processes.
 
    * 3B-CS-01	Categorize the roles of operating system software.	Examples of roles could include memory management, data storage/retrieval, processes management, and access control.
@@ -156,7 +161,7 @@ Five Big Ideas (not covered in sequence below):
 
 <a name="ImpactComputing"></a>
 
-* Big Idea 5: Impact of Computing
+* Big Idea 5: Impacts of Computing
 
    Analyze the ramifications of computing on societies, economies, and cultures, and contemplate the legal and ethical responsibilities that programmers bear.
 
@@ -197,7 +202,7 @@ Computer Systems and Networks:
    * Exploring different types of computer networks like client-server and peer-to-peer
    <br /><br />
 
-Impact of Computing:
+Impacts of Computing:
 
    * Investigating the societal and ethical implications of computing innovations
    * Exploring topics like cybersecurity, privacy, and the effects of computing on various aspects of life
@@ -263,7 +268,15 @@ Schools have until November 15 to let College Board know which students are test
 
 AP scores come out about two months after the exam, during the beginning of July. 
 
-Students who are homeschooled or go to a school that doesn’t administer AP Exams can find a school on the <a target="_blank" href="https://apcourseaudit.inflexion.org/ledger/">College Board's AP Course Ledger</a>, which lists secondary schools that have passed the AP Course Audit. 
+The College Board's phone is 212-632-1780 or 888-225-5427 (toll free in the United States and Canada).
+
+### Montana
+
+https://codehs.com/states/MT
+> "Only 52 students in Montana took the Advanced Placement Computer Science exams in 2019 (16 AP CSA, 36 AP CSP); only 38% of exams were taken by females. 
+
+Students who are homeschooled or go to a school that doesn’t administer AP Exams can find a school on the <a target="_blank" href="https://apcourseaudit.inflexion.org/ledger/">College Board's AP Course Ledger</a>, which lists secondary schools that have passed the AP Course Audit.
+
 * For 23-24, there were 6437 schools in all 50 US states, up from 6162 in 22-23 and 6037 in 21-22.
    <a target="_blank" href="https://nces.ed.gov/ccd/schoolsearch/">National Center for Educaton Statistics Search</a> by NCES School ID https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?Search=1&City=Joliet&State=30&Zip=59041&SchoolType=1&SchoolType=2&SchoolType=3&SchoolType=4&SpecificSchlTypes=all&IncGrade=-1&LoGrade=-1&HiGrade=-1&ID=301526000464
 
@@ -276,9 +289,24 @@ Students who are homeschooled or go to a school that doesn’t administer AP Exa
    * Manhattan High School
    * Polson High School (South of Flathead Lake)
    * West Yellowstone School
+
+<a target="_blank" href="http://montanadigitalacademy.org">montanadigitalacademy.org</a> (MTDA) was created in 2009 by the Montana Legislature to provide an online program for Montana students in partnership with public schools across the state. It provides over 75 original credit courses, including AP and Dual Credit Initial Enrollment Deadline:  08/28/2024 that include:
+
+   * No Computer Science Principles? Jason Neiffer
+   
+   * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vQPFAsgaGQqMAR3oak6LaLek0ZitPL4jS8YKJm95vv6pjNMMP2ar2Rt1-vrqwkuthR2-Xdx0WwNdiTR/pub">AP Computer Science A</a>
+   * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vTyf3QEyp_VShjxIkE9S2UJEYccKXu0SO6SYHA6tFz6P3J7IvRxl_ZUu0oRj3Oa2_tA7eoa0D6pZ4Ps/pub">Artificial Intelligence in the World</a>
+   * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSTbkc-Nf7JkadA8b4su1nN3M4rxNT9OKTYOjtdocch6t264knUpdZEvFcCPE8FwKMqqrKG4y3NoKLs/pub">Computer Science I: Joy and Beauty of Computing (High School Credit)</a>
+   * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vRe-KhORY_ERcDi8nmxp_rSK_8tbIk3FulvXu3QVnDO9brKjsWLmvlWSuKNz_V3m4LgPatxIP322-Zk/pub">Cybersecurity</a>
+   * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vQUtKphdTE16N5mRi66IGnV7NAqEIEiYMMZt8Dv9TM9ppxcaEIbN5iRjwxXPD3jbdLb8t6058RNeb6E/pub">Entrepreneurship</a>
+   * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vTWx0hzYWPTNab0V1xCLf2LLzwpLDj_uKCw7JjDpaoWRYdXDSDYVQT4OeEiNCdqqGPrdxklpheCymBZ/pub">Google Workspace Career Tech</a>
+   * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vQoegy2t2GLSMXzgO_uMdeY_ZtR2X31itbY2cPZ__lICeLkwaWMo7ERYCrYoYhtjL0a2YD50lwT8WHw/pub">Microsoft Office Career Technology</a>
+   * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vQ7qRxcBNq2KMw5SJdQS3dr8rhpAGI8LUUqLC6Ubt-1JszA21mzii4UtpxqocLBf8Eb7Vo8uHCktgWV/pub">Video Production</a>
+
 <br /><br />
 
-The College Board's phone is 212-632-1780 or 888-225-5427 (toll free in the United States and Canada).
+According to College Board, Department of Education, Bureau of Labor Statistics:
+> Computer programmers and software developers in Montana have an average annual salary of $86,386, which is significantly higher than the average state salary at $43,860
 
 
 ## Scores
@@ -517,7 +545,7 @@ By the end of this course, the learner would be able to:
 
 <a href="#SafeComputing">A. Practice safe defensive computing practices</a>
 
-<a href="#SafeData">B. Organize and handle data secrets securely</a>
+<a href="#SafeData">B. View, organize, and handle data secrets securely</a>
 
 <a href="#Socials">C. Craft profiles with portfolio projects</a>
 
@@ -542,66 +570,129 @@ By the end of this course, the learner would be able to:
 
 <hr />
 
+Project Based Learning (PBL) means an authentic, “real-world” Performance Tasks (PT) to solve a problem related to each topic.
+
 <a name="SafeComputing"></a>
 
 &nbsp; &nbsp; &nbsp;<strong>A. Practice safe defensive computing practices</strong>  [Systems] [Impact]
 
+1. Digital Divide: PC x86 laptops vs macOS RaspberryPi ARM vs Chromebooks vs 
 1. Temp/alt info: Address, Phone, email, credit card, social security
-1. Security of hardware
-1. Operating systems: Shut down, Auto Updates
-1. PII spoofing and 2FA, Passkeys, logout, restart
-1. Secure config FaceTime & iMessage on iPhones (4G, 5G, LTE, satellite)
-   
+1. PII spoofing and 2FA, Passkeys, logout, restart   
+1. Email phising, malware
 1. "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage) 
-1. Inappropriate/Toxic Topics: Search in ChatGPT & Perpexity.ai
-1. [Use AI to generate images, sound, video] (freemium)
-1. Carpel-Tunnel prevention
-1. Secure networking with wifi, internet, cellular, radios
- 
-1. [Use Perplexity.ai] {3B-AP-08}
-1. [Connect a weather station to the internet] on openweather.com {3B-DA-06} {3B-DA-07}
+
+1. networking: airgap, wifi, internet, cellular, radios 
+1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS
+1. AKeyless cloud service: variables, hierarchy
+1. dispense SSH and other secrets
+
+1. Hardware: components, powers of 2, Volts = Amperge x Resistance Ohms
+1. Keyboards Carpel-Tunnel prevention, keylogging
+1. Operating systems: Families, Bootup, sleep, periodic shut down, auto Updates
+
+1. Terminal: root, CLI commands, folders, files, parameters
+1. chmod permissions for Users and Groups
+1. Package managers: apps vs command packages, downloading
+1. Browsers: Edge, Chrome, Firefox/Arkenfox, Opera, Brave, Tor/Mullvad https://privacytests.org
+1. Browsers: profiles, search engine, bookmarks, downloading
+1. Protocols: [Wireshark utility] HTTP, HTTPS with SSL certs, CAs, 
+1. Man-in-the-middle attacks
+1. Secure config FaceTime & iMessage on iPhones (4G, 5G, LTE, satellite)
 
    <a name="SafeData"></a>
 
-   <strong>B. Organize data and secrets backup data appropriately</strong> [Analysis]
+   <strong>B. View, organize, and handle data and secrets securely</strong> [Analysis]
 
-1. Browser profiles, settings
-1. AKeyless cloud service to store and dispense SSH and other secrets
-1. [Use Post-Quantum encryption algorithm]
-1. [Backup and restore] as incident response
+1. Text editors: vim, VSCode
+
+1. [Use AI to generate images, sound, video] (freemium)
+1. Ask questions of [Use Perplexity.ai] {3B-AP-08}
+1. [Connect a weather station to the internet] on openweather.com {3B-DA-06} {3B-DA-07} - measure validity of predictions based on barometric pressure
+1. Surveys, bias
+1. Correlation is not Causation
+
+1. File systems directories
+1. CLI: Make, delete folders & files, symlinks
+1. CLI: locate, find, grep, which
+1. CLI: grep
+1. CLI: jq for json and xml
+
+1. Search: Inappropriate/Toxic Topics: Search in ChatGPT & Perpexity.ai
+
+1. NAS, Durability "bit rot", RAID-5
+1. Disk encryption
+1. USB chips
+
+1. Encryption: [Post-Quantum encryption algorithm]
+1. [Backup and restore] as incident response workflow
+1. Detect evidence of intrusion, log archival, zero trust segmentation
 
    <a name="Socials"></a>
 
    <strong>C. Craft profiles with portfolio projects</strong> [Impact]
 
+1. Digital footprint
+1. Social networks
+1. Career Job Titles - paths to trades and professions
+
 1. [LinkedIn profile] to display achievements and recommendations
-1. Career Job Titles
+1. Examplars and Checklist of best profiles: how to
+1. Blogs on LinkedIn, Substack, Medium, dev.to, etc.
+
+1. Image video & Compression (lossless & lossy): gif, png, jpeg, mp3, mp4
+1. Image: Adobe
+1. Audio: Elevenlabs
+1. Screen scraper programming: types of UI controls
 
    <a name="Collaboration"></a>
 
    <strong>D. Plan and track work collaboratively</strong> [Creative]
-   
-1. Kanban board and flow in Trello
+
+1. Bias, Incomplete & Invalid data
+1. Objectives vs. Tasks vs. Activities: Eisenhower
+1. Calendars
 1. [Calculate sunrise & sunset of sun] SunCalc.org for solar panels Sun Surveyor and Sun Seeker {3B-DA-05}
+1. Messaging Apps: Facebook, Slack, Discord, Telegram, LinkedIn Messages, Twitter/X, <a target="_blank" href="https://www.youtube.com/watch?v=eTRvFyDxKvU">Mastodon</a>
+1. Impersonations, change handles.
+
+1. Kanban board and flow in Trello
+
+1. Attribution (giving credit): [Wikipedia] Creative Commons
+1. Debug Python using github.com/gruns/icecream
+1. Test coverage
+
 1. [Print 3D object from STL file] created using OnShape 3D CAD
  
    <a name="GitHub"></a>
 
    <strong>E. Read and contribute to projects on GitHub using git</strong>
 
-1. [Edit text using keyboard shortcuts] in Vim and VSCode - freeware vs licensed
-1. [Run bash/Linux Command line] utilities to [manage files and folders]
-1. Setup Git
-1. [Obtain and edit code] using Git utilities with GitHub cloud service
+1. PPAs (Personal Package Archives) in Debian/Ubuntu Canonical
 1. Create and use SSH certificates
 1. [Create a static github.io website] and [Write GitHub Markdown]
 1. Register a domain name  
+
+1. [Edit text using keyboard shortcuts] in Vim and VSCode - freeware vs licensed
+1. [Run bash/Linux Command line] utilities to [manage files and folders]
+1. Setup Git: Create and use SSH certificates
+
+1. [Create a static github.io website] and [Write GitHub Markdown]
+1. Register a domain name  
+
+1. [Obtain and edit code] using Git utilities with GitHub cloud service
+
+1. Resolving/preventing merge conflicts in same file & lines
 
    <a name="ConfigScratch"></a>
 
    <strong>F. Configure a computer from scratch</strong>
 
+1. File Systems: format USB chips and drives
 1. [Install a USB chip to setup a Zima board from scratch]
+1. Configuration files: between json & yaml & xml & toml 
+1. dotfiles by others
+
 1. <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
 1. Internet of Things (IoT) to quantify and control physical objects (Foot pedals)
 1. Send analog talk between from a radio between repeaters connected to the internet
@@ -610,13 +701,16 @@ By the end of this course, the learner would be able to:
 
    <strong>G. Make use of AI and cloud developer tools</strong>
 
+1. Node vs Python vs Rust vs Java vs Go [TIOBE rankings]
+
 1. "AI/ML for Oceans" https://code.org/oceans
 
 1. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
 1. REST API programming (Postman and other tools)
 1. Countries and cities of the world - compare latency averages and anomalies over time
-1. Outsystems app creator
+
 1. Odoo app templates
+1. Outsystems app creator
 
    <a name="LowCodeApps"></a>
 
@@ -739,6 +833,8 @@ CS Unplugged is a collection of free teaching material that teaches Computer Sci
 Scholarship For Service (SFS) (at <a target="_blank" href="https://sfs.opm.gov/">https://sfs.opm.gov</a>)
 scholarships for up to 3 years of support for cybersecurity undergraduate and graduate (MS or PhD) education, in order to meet the needs of the cybersecurity mission for Federal, State, local, and tribal governments. The scholarships are funded through grants awarded by the National Science Foundation. In return for their scholarships, recipients must agree to work after graduation for the U.S. Government, in a position related to cybersecurity, for a period equal to the length of the scholarship.
 
+https://dsu.edu/index.html
+South Dakota
 
 <hr />
 
@@ -749,3 +845,28 @@ scholarships for up to 3 years of support for cybersecurity undergraduate and gr
 * https://4-h.org/programs/tech-changemakers/
 
 * https://www.linkedin.com/in/lucia-zuniga-0a0749227/
+
+* https://github.com/dylanaraps/pure-bash-bible
+
+* https://codehs.com/plans_detail 
+* codehs.com/ai
+* https://codehs.com/pro
+* codehs.com/states
+* codehs.com/standards/framework/AP_CSA/course/6165 from course curriculum/catalog "Learn More"
+* https://codehs.com/course/msmixandmatch/overview
+* https://codehs.com/info/curriculum/pathways/6-12
+* https://codehs.com/curriculum/pathways/k-12
+
+* NCyTE Cybersecurity Concept Lessons Python
+
+* TechSmart
+
+* https://michiganvirtual.org/consulting/
+* https://mtda.org/ai
+
+* https://www.edweek.org/technology/when-schools-want-to-ban-cellphones-but-parents-stand-in-the-way/2024/05
+
+   Heavy use of cellphones by adolescents has been linked to adverse mental health outcomes, from increasing risk of anxiety to suicidal ideation. Nearly half of children ages 10 to 17 who use social media wind up on porn sites, according to Rich. And in a recent survey of an estimated 1,300 girls ages 11 to 15 by nonprofit Common Sense Media, most respondents who reported using Snapchat or Instagram said they’d been contacted by a stranger via these social media platforms in ways that made them feel uncomfortable.
+
+https://www.nytimes.com/2023/11/30/learning/what-students-are-saying-about-school-cellphone-bans.html
+

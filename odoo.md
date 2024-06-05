@@ -472,6 +472,8 @@ Observability: logs, traces
 
    https://odoo.github.io/owl/playground/
 
+   https://medium.com/cybrosys/introduction-to-odoo-owl-framework-29cbe9111919
+
    The logic tier is exclusively written in Python <strong>objects</strong>.<br />
    An <a target="_blank" href="https://en.wikipedia.org/wiki/Object-relational_mapping">ORM (Object Relational Mapping) layer</a> is used to access data stored in a PostgreSQL RDBMS.
 
