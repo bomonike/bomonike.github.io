@@ -100,20 +100,48 @@ Recently, many teachers of the AP CSP exam select the <strong>Python</strong> pr
 
 Five Big Ideas (not covered in sequence below):
 
-Items below are based on the national CSTA (Computer Science Teacher Associate) at <a target="_blank" href="https://csteachers.org/k12standards/interactive/">* https://csteachers.org/k12standards/interactive</a> refactored into <a target="_blank" href="">this CSV file</a>.
+Items below are based on the national CSTA (Computer Science Teacher Associate) <a target="_blank" href="https://csteachers.org/k12standards/interactive/">Standards at https://csteachers.org/k12standards/interactive</a> saved as <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/data/csta-2024.csv">this CSV file at https://github.com/bomonike/bomonike.github.io/blob/master/data/csta-2024.csv</a> after refactoring for sortable codes in "_Grade" ("00" for "K-2"), then sorting by _Concept, _SubConcept, _Grade (descending)
 
 
 <a name="CreativeDevelopment"></a>
 
-* Big Idea 1: Creative Development
+### Big Idea 1: Creative Development
+
+   <em>This is in the AP CSP but not in CSTA</em>
 
    Understand the significance of <strong>collaboration</strong> in program development and how to use an <strong>iterative</strong> approach in your work. When developing computing innovations, developers can use a formal, iterative design process or a less rigid process of experimentation, and will encounter phases of investigating and reflecting, designing, prototyping, and testing.
 
 <a name="DataAnalysis"></a>
 
-* Big Idea 2: Data & Analysis
+### Big Idea 2: Data & Analysis (DA)
 
    Delve into how computers handle data and how data can be utilized to generate fresh information and solve problems. Data are central to computing innovations because they communicate initial conditions to programs and represent new knowledge.
+
+   Collection Visualization & Transformation:
+
+*	00+	Collect and present the same data in various visual formats.	1A-DA-06
+*	03+	Organize and present collected data visually to highlight relationships and support a claim.	1B-DA-06
+*	06+	Collect data using computational tools and transform the data to make it more useful and reliable.	2-DA-08
+*	09+	Create interactive data visualizations using software tools to help others better understand real-world phenomena.	3A-DA-11
+*	11+	Select data collection tools and techniques to generate data sets that support a claim or communicate information.	3B-DA-06
+*	11+	Use data analysis tools and techniques to identify patterns in data representing complex systems.	3B-DA-05
+
+   Inference & Models:
+
+*	00+	Identify and describe patterns in data visualizations, such as charts or graphs, to make predictions.	1A-DA-07
+*	03+	Use data to highlight or propose cause-and-effect relationships, predict outcomes, or communicate an idea.	1B-DA-07
+*	06+	Refine computational models based on the data they have generated.	2-DA-09
+*	09+	Create computational models that represent the relationships among different elements of data collected from a phenomenon or process.	3A-DA-12
+*	11+	Evaluate the ability of models and simulations to test and support the refinement of hypotheses.	3B-DA-07
+
+   Storage:
+
+*	00+	Store, copy, search, retrieve, modify, and delete information using a computing device and define the information stored as data.	1A-DA-05
+*	06+	Represent data using multiple encoding schemes.	2-DA-07
+*	09+	Evaluate the tradeoffs in how data elements are organized and where data is stored.	3A-DA-10
+*	09+	Translate between different bit representations of real-world phenomena, such as characters, numbers, and images.	3A-DA-09
+
+Montana:
 
    * 3B-DA-05	Use data analysis tools and techniques to identify patterns in data representing complex systems.	For example, identify trends in a dataset representing social media interactions, movie reviews, or shopping patterns.
    * 3B-DA-06	Select data collection tools and techniques to generate data sets that support a claim or communicate information.	
@@ -122,9 +150,83 @@ Items below are based on the national CSTA (Computer Science Teacher Associate) 
 
 <a name="Algorithms"></a>
 
-* Big Idea 3: Algorithms and Programming
+### Big Idea 3: Algorithms and Programming
 
    Gain proficiency in utilizing algorithms and abstractions to create programs that solve problems or express your creativity.
+
+Algorithms:
+
+*	00+	Model daily processes by creating and following algorithms (sets of step-by-step instructions) to complete tasks.	1A-AP-08
+*	03+	Compare and refine multiple algorithms for the same task and determine which is the most appropriate.	1B-AP-08
+*	06+	Use flowcharts and/or pseudocode to address complex problems as algorithms.	2-AP-10
+*	09+	Create prototypes that use algorithms to solve computational problems by leveraging prior student knowledge and personal interests.	3A-AP-13
+*	11+	Describe how artificial intelligence drives many software and physical systems.	3B-AP-08
+*	11+	Evaluate algorithms in terms of their efficiency, correctness, and clarity.	3B-AP-11
+*	11+	Implement an artificial intelligence algorithm to play a game against a human opponent or solve a problem.	3B-AP-09
+*	11+	Use and adapt classic algorithms to solve computational problems.	3B-AP-10
+
+Control:
+
+*	00+	Develop programs with sequences and simple loops, to express ideas or address a problem.	1A-AP-10
+*	03+	Create programs that include sequences, events, loops, and conditionals.	1B-AP-10
+*	06+	Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals.	2-AP-12
+*	09+	Design and iteratively develop computational artifacts for practical intent, personal expression, or to address a societal issue by using events to initiate instructions.	3A-AP-16
+*	09+	Justify the selection of specific control structures when tradeoffs involve implementation, readability, and program performance, and explain the benefits and drawbacks of choices made.	3A-AP-15
+*	11+	Illustrate the flow of execution of a recursive algorithm.	3B-AP-13
+
+Modularity:
+
+*	00+	Decompose (break down) the steps needed to solve a problem into a precise sequence of instructions.	1A-AP-11
+*	03+	Decompose (break down) problems into smaller, manageable subproblems to facilitate the program development process.	1B-AP-11
+*	03+	Modify, remix, or incorporate portions of an existing program into one's own work, to develop something new or add more advanced features.	1B-AP-12
+*	06+	Create procedures with parameters to organize code and make it easier to reuse.	2-AP-14
+*	06+	Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs.	2-AP-13
+*	09+	Create artifacts by using procedures within a program, combinations of data and procedures, or independent but interrelated programs.	3A-AP-18
+*	09+	Decompose problems into smaller components through systematic analysis, using constructs such as procedures, modules, and/or objects.	3A-AP-17
+*	09+	Systematically design and develop programs for broad audiences by incorporating feedback from users.	3A-AP-19
+*	11+	Analyze a large-scale computational problem and identify generalizable patterns that can be applied to a solution.	3B-AP-15
+*	11+	Construct solutions to problems using student-created components, such as procedures, modules and/or objects.	3B-AP-14
+*	11+	Demonstrate code reuse by creating programming solutions using libraries and APIs.	3B-AP-16
+
+Program Development:
+
+*	00+	Debug (identify and fix) errors in an algorithm or program that includes sequences and simple loops.	1A-AP-14
+*	00+	Develop plans that describe a program’s sequence of events, goals, and expected outcomes.	1A-AP-12
+*	00+	Give attribution when using the ideas and creations of others while developing programs.	1A-AP-13
+*	00+	Using correct terminology, describe steps taken and choices made during the iterative process of program development.	1A-AP-15
+*	03+	Describe choices made during program development using code comments, presentations, and demonstrations.	1B-AP-17
+*	03+	Observe intellectual property rights and give appropriate attribution when creating or remixing programs.	1B-AP-14
+*	03+	Take on varying roles, with teacher guidance, when collaborating with peers during the design, implementation, and review stages of program development.	1B-AP-16
+*	03+	Test and debug (identify and fix errors) a program or algorithm to ensure it runs as intended.	1B-AP-15
+*	03+	Use an iterative process to plan the development of a program by including others' perspectives and considering user preferences.	1B-AP-13
+*	06+	Distribute tasks and maintain a project timeline when collaboratively developing computational artifacts.	2-AP-18
+*	06+	Document programs in order to make them easier to follow, test, and debug.	2-AP-19
+*	06+	Incorporate existing code, media, and libraries into original programs, and give attribution.	2-AP-16
+*	06+	Seek and incorporate feedback from team members and users to refine a solution that meets user needs.	2-AP-15
+*	06+	Systematically test and refine programs using a range of test cases.	2-AP-17
+*	09+	Design and develop computational artifacts working in team roles using collaborative tools.	3A-AP-22
+*	09+	Document design decisions using text, graphics, presentations, and/or demonstrations in the development of complex programs.	3A-AP-23
+*	09+	Evaluate and refine computational artifacts to make them more usable and accessible.	3A-AP-21
+*	09+	Evaluate licenses that limit or restrict use of computational artifacts when using resources such as libraries.	3A-AP-20
+*	11+	Compare multiple programming languages and discuss how their features make them suitable for solving different types of problems.	3B-AP-24
+*	11+	Develop and use a series of test cases to verify that a program performs according to its design specifications.	3B-AP-21
+*	11+	Develop programs for multiple computing platforms.	3B-AP-19
+*	11+	Evaluate key qualities of a program through a process such as a code review.	3B-AP-23
+*	11+	Explain security issues that might lead to compromised computer programs.	3B-AP-18
+*	11+	Modify an existing program to add additional functionality and discuss intended and unintended implications (e.g., breaking other functionality).	3B-AP-22
+*	11+	Plan and develop programs for broad audiences using a software life cycle process.	3B-AP-17
+*	11+	Use version control systems, integrated development environments (IDEs), and collaborative tools and practices (code documentation) in a group software project.	3B-AP-20
+
+
+Variables:
+
+*	00+	Model the way programs store and manipulate data by using numbers or other symbols to represent information.	1A-AP-09
+*	03+	Create programs that use variables to store and modify data.	1B-AP-09
+*	06+	Create clearly named variables that represent different data types and perform operations on their values.	2-AP-11
+*	09+	Use lists to simplify solutions, generalizing computational problems instead of repeatedly using simple variables.	3A-AP-14
+*	11+	Compare and contrast fundamental data structures and their uses.	3B-AP-12
+
+Montana:
 
    * 3B-AP-08	Describe how artificial intelligence drives many software and physical systems.	Examples include digital ad delivery, self-driving cars, and credit card fraud detection.
    * 3B-AP-09	Implement an artificial intelligence algorithm to play a game against a human opponent or solve a problem.	Games do not have to be complex. Simple guessing games, Tic-Tac-Toe, or simple robot commands will be sufficient.
@@ -147,11 +249,38 @@ Items below are based on the national CSTA (Computer Science Teacher Associate) 
 
 <a name="SystemsNetworks"></a>
 
-* Big Idea 4: Computer Systems and Networks
+### Big Idea 4: Computer Systems (CS) and Networks & the Internet (NI)
 
    <em>(The CSTA standard separates Systems & Networks)</em>
 
    Explore the functioning of computer systems and networks, as well as how multiple computers can be employed to divide tasks and expedite processes.
+
+   Devices:
+
+*	00+	Select and operate appropriate software to perform a variety of tasks, and recognize that users have different needs and preferences for the technology they use.	1A-CS-01
+*	03+	Describe how internal and external parts of computing devices function to form a system.	1B-CS-01
+*	06+	Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices.	2-CS-01
+*	09+	Explain how abstractions hide the underlying implementation details of Computing Systems embedded in everyday objects.	3A-CS-01
+
+   Hardware & Software:
+
+*	00+	Use appropriate terminology in identifying and describing the function of common physical components of Computing Systems (hardware).	1A-CS-02
+*	03+	Model how computer hardware and software work together as a system to accomplish tasks.	1B-CS-02
+*	06+	Design projects that combine hardware and software components to collect and exchange data.	2-CS-02
+*	09+	Compare levels of abstraction and interactions between application software, system software, and hardware layers.	3A-CS-02
+*	11+	Categorize the roles of operating system software.	3B-CS-01
+
+   Troubleshooting:
+
+*	00+	Describe basic hardware and software problems using accurate terminology.	1A-CS-03
+*	03+	Determine potential solutions to solve simple hardware and software problems using common Troubleshooting strategies.	1B-CS-03
+*	06+	Systematically identify and fix problems with computing devices and their components.	2-CS-03
+*	09+	Develop guidelines that convey systematic Troubleshooting strategies that others can use to identify and fix errors.	3A-CS-03
+*	11+	Illustrate ways Computing Systems implement logic, input, and output through hardware components.	3B-CS-02
+
+   Cybersecurity:
+
+   Network Communication & Organization:
 
    * 3B-CS-01	Categorize the roles of operating system software.	Examples of roles could include memory management, data storage/retrieval, processes management, and access control.
    * 3B-CS-02	Illustrate ways computing systems implement logic, input, and output through hardware components.	Examples of components could include logic gates and IO pins.
@@ -161,9 +290,42 @@ Items below are based on the national CSTA (Computer Science Teacher Associate) 
 
 <a name="ImpactComputing"></a>
 
-* Big Idea 5: Impacts of Computing
+### Big Idea 5: Impacts of Computing (IC)
 
    Analyze the ramifications of computing on societies, economies, and cultures, and contemplate the legal and ethical responsibilities that programmers bear.
+
+   Culture:
+
+*	00+	Compare how people live and work before and after the implementation or adoption of new computing technology.	1A-IC-16
+*	03+	Brainstorm ways to improve the accessibility and usability of technology products for the diverse needs and wants of users.	1B-IC-19
+*	03+	Discuss computing technologies that have changed the world, and express how those technologies influence, and are influenced by, cultural practices.	1B-IC-18
+*	06+	Compare tradeoffs associated with computing technologies that affect people's everyday activities and career options.	2-IC-20
+*	06+	Discuss issues of bias and accessibility in the design of existing technologies.	2-IC-21
+*	09+	Demonstrate ways a given algorithm applies to problems across disciplines.	3A-IC-26
+*	09+	Evaluate the ways computing impacts personal, ethical, social, economic, and cultural practices.	3A-IC-24
+*	09+	Test and refine computational artifacts to reduce bias and equity deficits.	3A-IC-25
+*	11+	Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society.	3B-IC-25
+*	11+	Evaluate the impact of equity, access, and influence on the distribution of computing resources in a global society.	3B-IC-26
+*	11+	Predict how computational innovations that have revolutionized aspects of our culture might evolve.	3B-IC-27
+
+   Safety Law & Ethics:
+
+*	00+	Keep login information private, and log off of devices appropriately.	1A-IC-18
+*	03+	Use public domain or creative commons media, and refrain from copying or using material created by others without permission.	1B-IC-21
+*	06+	Describe tradeoffs between allowing information to be public and keeping information private and secure.	2-IC-23
+*	09+	Evaluate the social and economic implications of privacy in the context of safety, law, or ethics.	3A-IC-30
+*	09+	Explain the beneficial and harmful effects that intellectual property laws can have on innovation.	3A-IC-28
+*	09+	Explain the privacy concerns related to the collection and generation of data through automated processes that may not be evident to users.	3A-IC-29
+*	11+	Debate laws and regulations that impact the development and use of software.	3B-IC-28
+
+   Social Interactions:
+
+*	00+	Work respectfully and responsibly with others online.	1A-IC-17
+*	03+	Seek diverse perspectives for the purpose of improving computational artifacts.	1B-IC-20
+*	06+	Collaborate with many contributors through strategies such as crowdsourcing or surveys when creating a computational artifact.	2-IC-22
+*	09+	Use tools and methods for collaboration on a project to increase connectivity of people in different cultures and career fields.	3A-IC-27
+
+Montana:
 
    * 3B-IC-25	Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society.	
    * 3B-IC-26	Evaluate the impact of equity, access, and influence on the distribution of computing resources in a global society.	
