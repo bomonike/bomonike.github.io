@@ -68,6 +68,8 @@ There are no limit on retakes.
 
 AP Computer Science was taught using Pascal for the 1984–1998 exams, C++ for 1999–2003, and object-oriented <strong>Java</strong> since 2004 as AP Computer Science A.
 
+https://help.codehs.com/en/articles/1121548-using-the-codehs-sandbox
+
 <strong>Units</strong> listed in the <a target="_blank" href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-a-course-overview.pdf">pdf about the 3-hour CSA exam</a>:
 
    1. Primitive (Data) Types
@@ -734,6 +736,32 @@ By the end of this course, the learner would be able to:
 
 Project Based Learning (PBL) means an authentic, “real-world” Performance Tasks (PT) to solve a problem related to each topic.
 
+The class operates in what's called an "inverted classroom" approach, where
+learners view videos and identify questions about a topic before the live class discussions
+about the same topic.
+
+To foster leadership, collaboration, and debugging skills, 
+students are expected to help each other.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=go8qow9I6cM&list=PLwXXOxvDboebhtPwm0cipRwN6tUL-WDc0">Google Classroom</a> is used with 
+<a target="_blank" href="https://www.youtube.com/watch?v=0AaumF0jSAE&list=PLwXXOxvDboebt_ljDSC1GsP1KVaJB0HRH">
+Google Meet</a> (instead of Zoom or Microsoft Teams).
+<a target="_blank" href="https://www.youtube.com/watch?v=0Qvm2-I9H40">VIDEO</a>
+
+For help with memorization recall such as glossary definitions, 
+instead of paper flash cards and Quizlet, we use 
+<a target="_blank" href="https://www.youtube.com/watch?v=oBPpyAuWi14">use Google Sheets</a>. 
+<a target="_blank" href="https://www.youtube.com/watch?v=iIyDJK_SAjs&t=1m39s">VIDEO</a>:
+<a target="_blank" href="https://www.youtube.com/watch?v=UAby79mP-4I">VIDEO</a>:
+Answers are hidden using a white font.
+The background color is changed for flagging additional review.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=5vh_bWsztPc">VIDEO</a>:
+To <a target="_blank" href="https://thevitalcurriculum.super.site/1697e3f550934489b3b23ef29e278382">
+prompt GPT to write flashcard text</a>
+
+
+
 <a name="SafeComputing"></a>
 
 &nbsp; &nbsp; &nbsp;<strong>A. Practice safe defensive computing practices</strong>  [Systems] [Impact]
@@ -741,13 +769,19 @@ Project Based Learning (PBL) means an authentic, “real-world” Performance Ta
 1. Digital Divide: PC x86 laptops vs macOS RaspberryPi ARM vs Chromebooks vs 
 1. Temp/alt info: Address, Phone, email, credit card, social security
 1. PII spoofing and 2FA, Passkeys, logout, restart   
-1. Email phising, malware
-1. "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage) 
+1. Countries: codes +1, world map, adversarial countries
 
 1. networking: airgap, wifi, internet, cellular, radios 
-1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS
+1. email phising, malware
+1. "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage) 
+
+1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS, <a target="_blank" href="https://www.signal.org/">Signal messaging</a> uses <a target="_blank" href="https://signal.org/blog/pqxdh/">post-quantum encryption</a>
+1. Contacts: Fields, invite, sort
+1. Linked devices: laptop & mobile phone
+
 1. AKeyless cloud service: variables, hierarchy
-1. dispense SSH and other secrets
+1. Authy app: backup keys
+1. SSH for GitHub
 
 1. Hardware: components, powers of 2, Volts = Amperge x Resistance Ohms
 1. Keyboards Carpel-Tunnel prevention, keylogging
