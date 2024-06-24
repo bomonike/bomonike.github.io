@@ -2,21 +2,65 @@ kanban.md 2024-05-14
 
 If I'm working with small team or just by myself, I use the Kanban system to stay focused.
 
-I've found that the KanBan system helps me focus and collaborate better with others.
+I've found that the Kanban system helps me focus and collaborate better with others.
 
 And that's not only because I've worked at Toyota, where Kanban was made famous.
+Use of Kanban enabled the car manufacturer to achieve large efficiency and quality gains in the 1950s and beyond.
 
-## What's KanBan?
+
+## What's Kanban?
 
 Kanban is a japanese word coined in the 1950s by Taiichi Ohno, an industrial engineer at Toyota.
 
-Use of Kanban enabled the car manufacturer to achieve large efficiency and quality gains in the 1950s and beyond.
+"Kanban is a strategy for optimizing the flow of <strong>value</strong> through a process that uses a visual, pull-based system."
 
-Instead of computers, the Kanban system uses a card to represent each product (that generates value) traveling through the production line. It's a just-in-time scheduling system because movement of a card visually signals the need to create that part. 
+Kanban is described as an approach that "pulls" items from upstream rather than having items "pushed" to downstream processes. <a target="_blank" href="https://www.youtube.com/watch?v=Levkx8f0qL4">This video</a> shows how Kanban is used within a physical factory. 
 
-The transparency made possible by visible cards enable "lean manufacturing" practioners to measure lead time and cycle time as a way to highlight problem areas.
+Unlike "Scrum", Kanban does not prescibe "Daily standups" or any kind of team meeting.
+However, daily reviews provide an opportunity to deal with blocks and observed issues with flow and value produced.
 
-Kanban is described as an approach that "pulls" items from upstream rather than having items "pushed" to downstream processes. <a target="_blank" href="https://www.youtube.com/watch?v=Levkx8f0qL4">This video</a> shows how Kanban is used within a physical factory.
+Unlike "Scrum", there are <strong>no set roles</strong> in Kanban such as "Product Owner". 
+Kanban members define what value they are optimizing in their context.
+
+## The 5 rules of Kanban:
+
+<a target="_blank" href="https://www.youtube.com/watch?v=cBraNRu-v4k">VIDEO</a>:
+
+1. Visualize workflow - "Visible" means that the Kanban system uses a card to represent each product (that generates value) traveling through the production line. It's a just-in-time scheduling system because movement of a card visually signals the need to create that part. 
+
+2. Limit Work-In-Process (WIP)
+
+   > The most important practice is explicityly controlling WIP (Work in Process) through limits of how many items are in progress at a time.
+
+3. Measure and manage flow. The transparency made possible by visible cards enable "lean manufacturing" practioners to measure the basic metrics of flow as a way to highlight areas to focus continuous improvement:
+
+   * Total System WIP (items of Work In Process started but not finished)
+
+   * Throughput count of items getting done (items per day/week)
+
+   * Work Item Age (hours & days between when an item started and the current time)
+
+   * <strong>Cycle Time</strong> - the amount of elapsed (calendar) time from when an item starts to when it got <strong>finished</strong> (meet exit criteria). 
+   https://kanbanguides.org/html-kanban-guide/#KanbanMeasures
+   <br /><br /> 
+   
+   Weekends and holidays are included. There should be at least one, with no Cycle Time of Zero.
+   
+   None are measured per person.
+
+4. Make process policies explicit
+
+   Each item does not have to be of the same size, but that they be broken into a small enough batch size.
+
+5. Use models to recognize improvement opportunities
+
+
+   References:
+   * Quiz: https://prokanban.org/open-assessment/
+   * <a target="_blank" href="https://www.youtube.com/channel/UCTLmcK9w1bZOpQbRCEg6vEw/videos">ProKanban videos</a>
+
+
+
 
 ## Trello.com
 
@@ -230,3 +274,24 @@ https://www.kanban.help/
 by <a target="_blank" href="https://www.linkedin.com/in/marcore69/">Marco Re</a>
 
 https://www.linkedin.com/advice/0/how-do-you-design-kanban-board-complex-uncertain-environment
+
+Cumulative Flow Diagram
+
+SLE (Service Level Expectation) is a probabilistic forecast for your process -- with a range and a probability.
+
+Cycle Time Scatterplot to identify possible outlyers
+Cycle Time Histogram
+Throughput Run Chart
+
+Little's Law throughput form of items of similar size.
+   * https://people.cs.umass.edu/~emery/classes/cmpsci69st/readings/OS/Littles-Law-50-Years-Later.pdf
+
+Monte Carlo simulation is a statistical used to determine when a given number of items in a backlog might possibly be completed.
+   * number of work items by a date (within a given probability)
+   * the date which a number of work items could be delivered
+
+   * https://kanbanguuides.org/html-kanban-guide
+   * https://leanpub.com/actionableagilemetrics
+
+There is no equivalent of a SCRUM Burndown chart in flow.
+Cost of Delay is not tracked in flow systems.

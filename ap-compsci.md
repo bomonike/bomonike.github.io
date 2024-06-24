@@ -1,24 +1,693 @@
----
-layout: post
-date: "2024-06-04"
-file: "ap-compsci"
-title: "ap-compsci"
-excerpt: "How to stufy for the AP® (Advanced Placement) Computer Science exams given in United States high schools"
-tags: [education]
-image:
-# flood-the-internet-wall-1900x500-105703.jpg
-  feature: https://user-images.githubusercontent.com/300046/59104048-b4980880-88ed-11e9-9a93-c19baaef18ab.jpg
-  credit: AttendantDesign.com
-  creditlink: https://attendantdesign.com/fake-tsunami-films-flood-internet/
-comments: true
----
-<i>{{ page.excerpt }}</i>
-{% include l18n.html %}
-{% include _toc.html %}
+This article presents a path for preparing high school students to begin careers in the cyber-enhanced workplace of the 21st century.
 
-{% include whatever.html %}
+Highlights:
 
-## Alternatives
+1. Before touching a computer, learners earn a "drivers license" about safe computing (A)
+
+2. Earn college credit while in high school by passing AP Computer Science Principles in April
+
+3. Prepare learners to take entry-level professional certifications. Exam questions are reviewed in each module.
+
+   Professional certifications enable faster/cheaper completion of bachelor's degrees such as <a target="_blank" href="https://www.wgu.edu/online-it-degrees/cybersecurity-information-assurance-bachelors-program.html">Western Governors Universiity online</a>, where students of this class take CompTIA Security+, Cloud+, Project+, PenTest+ not in the scope of this introductory class.
+
+4. Create quiz questions and learn to take tests confidently.
+
+5. Practice Collaboration using tools professional use.
+
+Gen Z slang "glow-up" = a major improvement in one's self, usually an improvement in appearance, confidence, and style.
+
+
+<a name="Syllabus"></a>
+
+## Objectives (Syllabus)
+
+By the end of this course, the learner would be able to:
+
+<a href="#SafeComputing">A. Practice safe and efficient computing practices</a> (before touching a computer)
+
+   1. Identify misinformation.
+   2. Use VirusTotal.com to check whether host name and IP address have been reported as malicious.
+   3. Identify utilities to prevent man-in-the-middle attacks 
+   4. Identify indicators of compromise (host files, auto-start processes)
+   
+<a href="#SafeData">B. Securely handle secrets</a><br /> - 1) $50 Certified in CyberSecurity (CC) certification from ISC2
+   
+   1. Evaluate risk of man-in-the-middle attacks using websites <a target="_blank" href="https://onetimesecret.com/">yopass.se</a> or <a target="_blank" href="https://password.link/en">passlink</a>.
+   2. Install and configure password manager to securely store secrets locally.
+   3. Install GPG to use receiver's public gpg key to encrypt file locally for email so receiver can decrypt with private key.
+   3. Install and configure Signal app for end-to-end encryption of messages.
+   4. Install and configure Akeyless web service to store secrets retrieve by programs.
+
+<a href="#Collaboration">C. Plan and track work collaboratively</a> using SaaS tools (Google Classroom, Twilio) - 3) Kanban
+
+   1. Build an airgapped (stand-alone) Raspberry Pi for <a target="_blank" href="https://circl.lu/projects/CIRCLean/">CIRClean on USB</a> to examine & <a target="_blank" href="https://lwn.net/Articles/626559/">scrub</a> USB drives.
+   1. Use CLI utility <a target="_blank" href="https://github.com/magic-wormhole/magic-wormhole">magic-wormhold</a> to send and receive files peer-to-peer
+
+<a href="#GitHub">D. Read and contribute to projects on GitHub using git</a><br /> - 2) GitHub Foundations certification
+
+   1. Search through GitHub.com using several filters.
+   1. Contribute to an open-source repository on GitHub by forking.
+   1. Format documentation in <a target="_blank" href="https://github.com/mattcone/markdown-guide">Markedown format</a>
+
+<a href="#Socials">E. Craft profiles, static website, portfolio projects</a> 
+
+   1. Modify Jupyter Python code within a cloud to create a privacy-maintaining portrait using Machine Learning style transfer.
+   1. Upload a profile photo to gravatar.com so other websites can (using MD5 hash) associate emails with a profile image.
+
+<a href="#ConfigScratch">F. Configure and administer a computer from scratch</a><br /> - 3) $178 CompTIA Linux+ certification
+
+   1. Use CLI commands to create a USB drive from a downloaded ISO image to boot up a machine.
+   1. Use CLI commands to run bash scripts.
+   1. Use CLI utility <a target="_blank" href="https://github.com/magic-wormhole/magic-wormhole">magic-wormhold</a> to send and receive files peer-to-peer
+   1. Enable users to login more securely using SSH certificates rather than passwords.
+
+   1. Install <a target="_blank" href="https://privatebin.info/">PrivateBin</a> server for encryption before sending to zero-knowledge server.
+   1. Encrypt secret text and send to another for decryption (end-to-end encryption) using <a target="_blank" href="https://privatebin.info/">zeor-knowledge</a> 
+
+<a href="#Clouds">G. Navigate within cloud environments</a> (Hertzer, AWS, Azure, Google)
+
+   1. Obtain free accounts to use clouds.
+   1. Setup user account permissions to avoid using too-powerful root credentials.
+   1. Install CLI programs to enable shell scripts to automate use of clouds.
+   
+<a href="#LowCodeApps">H. Use low-code systems to develop a mobile app</a> - 
+
+<a href="#PythonApps">I. Code Python apps</a><br /> - 4) <a target="_blank" href="https://wilsonmar.github.io/python-certifications/">Python Fundamentals certification</a>
+
+- 5) College Board AP Computer Science Principles (March)
+
+
+<hr />
+
+<a name="HowWeLearn"></a>
+
+## How we learn
+
+<a target="_blank" href="https://www.youtube.com/watch?v=go8qow9I6cM&list=PLwXXOxvDboebhtPwm0cipRwN6tUL-WDc0">Google Classroom</a> is used with 
+<a target="_blank" href="https://www.youtube.com/watch?v=0AaumF0jSAE&list=PLwXXOxvDboebt_ljDSC1GsP1KVaJB0HRH">
+Google Meet</a> (instead of Zoom or Microsoft Teams).
+<a target="_blank" href="https://www.youtube.com/watch?v=0Qvm2-I9H40">VIDEO</a>
+
+Use an "inverted classroom" approach, where learners view videos and identify questions about a topic before live class activities about the same topic.
+
+To foster leadership, collaboration, and debugging skills, learners are expected to help each other.
+
+Project Based Learning (PBL) means an authentic, “real-world” Performance Tasks (PTs) to solve a problem related to each topic.
+
+To develop a sequence, we print a card for each step (not labeled for sequence), then debate about why one step should go before another step.
+
+We collaborate by diving tasks among learners.
+
+We seek to learn more from deduction than being told.
+
+We use <strong>active learning</strong> - practical hands-on projects
+
+We reference <strong>checklists</strong> from others who have mastered the topic.
+
+For help with memorization recall such as glossary definitions, we use paper flash cards and Quizlet.com:
+<a target="_blank" href="https://www.youtube.com/watch?v=oBPpyAuWi14">use Google Sheets</a>. 
+<a target="_blank" href="https://www.youtube.com/watch?v=iIyDJK_SAjs&t=1m39s">VIDEO</a>:
+<a target="_blank" href="https://www.youtube.com/watch?v=UAby79mP-4I">VIDEO</a>:
+Answers are hidden using a white font.
+The background color is changed for flagging additional review.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=5vh_bWsztPc">VIDEO</a>:
+To <a target="_blank" href="https://thevitalcurriculum.super.site/1697e3f550934489b3b23ef29e278382">
+prompt GPT to write flashcard text</a>
+
+Hands-on activities:
+
+   <br /><br />
+
+Learners create hands-on practical projects - with live presentation video recording and descriptions profiles
+
+   1. Create accounts on several cloud services (GitHub, Cloudinary, AWS, Azure, Google).
+   1. Create a static github.io website using Jekyll using Ruby or 11ty using Node.
+   1. Register a domain name.
+
+   1. Create a mobile app using a <strong>"low-code"</strong> development platform (Outsystems) calling several GenAI APIs.
+   1. Create secure password: using base-6 dice and lookup diceware list or base-20 numbers to a fandom list. Explain password best practices ITF 6.5.
+   <br /><br />
+
+Computer Science Education Week in early December.
+
+We <strong>analyze</strong> each technology based on the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the AP CSP curriculum and exam:
+
+   * <a href="#CreativeDevelopment">Big Idea 1: [Creative] Development</a>
+   * <a href="#DataAnalysis">Big Idea 2: Data & [Analysis]</a>
+   * <a href="#Algorithms">Big Idea 3: [Algorithms] and Programming</a>
+   * <a href="#SystemsNetworks">Big Idea 4: Computer [Systems] and Networks</a>
+   * <a href="#ImpactComputing">Big Idea 5: [Impact] of Computing</a>
+   <br /><br />
+
+We make use of tools professionals use (where possible):
+   * USB sticks
+   * Operating systems
+   * Keyboard shortcuts
+   * Installers
+   * IDE: Visual Studio Code (rather than thonny.org)
+   * Clouds
+
+
+<a name="SafeComputing"></a>
+
+&nbsp; &nbsp; &nbsp;<strong>A. Practice safe defensive computing practices</strong>  [Systems] [Impact]
+
+1. <a href="#HowWeLearn">How we learn</a> & Active listening
+
+   <strong>Risks</strong>
+
+1. 15-year Generations: Boomer: TV, X: TV, Millenials: PCs, Z: Internet, <a target="_blank" href="https://www.wikiwand.com/en/Generation_Alpha">Alpha</a>: smartphones & AI
+1. Industrial ages: 1st: farming, 2nd: railroads & factories, 3rd: computers & internet, 4th: AI & robots
+1. BRAINSTORM: "What are our concerns?" Risk identification: as a teenager, school, citizen, town, country, planet - CC 1.2.2
+   * examples: properity, ransom, pestilance, war,  cyber-bullying, screen addiction, and inappropriate content
+1. POLLS: Risk management: priorities, tolerance - CC 1.2.1
+   * Impact
+   * Probability
+
+   <strong>Preparing for Recovery</strong>
+
+   <strong>Backup to restore (3-2-1 rule)</strong>
+
+1. Contacts
+1. Calendar
+1. Photos on iPhone
+1. Emails hygiene
+1. Files (on Google Drive)
+
+1. Incident Response - CC 2.3
+   * EXERCISE: Who to call: Phone #s, acct #. Stop loss.
+1. Opartions/Business continuity - ITF 6.7 & CC 2.1
+   * Use old phone? Nearest stores
+1. Disaster Recovery - CC 2.1
+   * EXERCISE: Steps to setup new smartphone (apps)
+
+
+1. Rules to secure communication with children: protect identity, parental consent
+   * Website alert/check for PG13 & 18+
+   * <a target="_blank" href="https://www.nsopw.gov/search-public-sex-offender-registries">Dru Sjodin National Sex Offender Public Website</a> limitations: mapping, 3 miles
+1. Privacy policy - CC 5.3
+
+
+1. Jobs
+
+
+1. Value of data and information - ITF 1.4
+   * Intellectual Property (Trademarks, Copyrights, Patents, Trade Secrets) - ITF 1.4.2
+   * Ransomware & cyber warfare
+1. Social Engineering Vishing (credential harvesting) - CC 5.4
+
+   <strong>Prevention</strong>
+
+1. Governance: Policies, Procedures, Standards, Regulations and laws - CC 1.5
+1. Professional code of conduct from ISC2 - CC 1.4
+1. Reputation: Revilers not welcome
+
+1. Authorized versus unauthorized personnel - CC 1.3.3
+1. Physical security controls (e.g., badge systems, gate entry, environmental design) - CC 1.3.3
+1. Physical Monitoring (e.g., security guards, closed-circuit television (CCTV), alarm systems, cameras, logs) - CC 1.3.3
+1. Principle of least privilege - CC 3.2.1
+1. Segregation of duties - CC 3.2.2
+   1. Discretionary access control (DAC) - CC 3.2.3
+   1. Mandatory access control (MAC) - CC 3.2.4
+   1. Role-based access control (RBAC) - CC 3.2.5
+
+1. Data handling policies - CC 5.3 USB, labeling - CC 5.1 using IoT device:
+   * "You computer ports are like your mouth. Avoid putting anything in there you do not trust." VIDEO
+   * HANDS-ON: Disable AutoRun & AutoPlay on Windows computer to prevent automatic execution of programs on the USB stick when it is inserted into the computer.
+   * HANDS-ON: autorun files on USB drives (Random USB Stuxnet case)
+   * HANDS-ON: Build an airgapped Raspberry Pi for <a target="_blank" href="https://circl.lu/projects/CIRCLean/">CIRClean on USB</a> to examine & <a target="_blank" href="https://lwn.net/Articles/626559/">scrub</a> USB drives
+1. Data handling policies - CC 5.3 proper destruction, retention, classification - CC 5.1
+
+1. Acceptable Use Policy (AUP) - CC 5.3
+1. Bring your own device (BYOD) policy - CC 5.3
+1. Change management policy (e.g., documentation, approval, rollback) - CC 5.3
+
+1. Technical controls - CC 1.3.2
+1. Administrative controls - CC 1.3.1
+
+1. Confidentiality, Integrity, availability (CIA) concerns - ITF 6.1 & CC 1.1
+   * Federated authentication: Apple, Microsoft, Google, Facebook, Twitter, Clever
+
+
+1. Digital Divide: PC x86 laptops vs macOS RaspberryPi ARM vs Chromebooks (<a target="_blank" href="https://www.youtube.com/watch?v=z6oyqrrXTLM">Linux on Chromebook</a>) - KA
+   * Secure config FaceTime & iMessage on iPhones 
+
+   <strong>Troubleshooting</strong>
+
+1. Troubleshooting methodology [sequencing, random tries] - ITF 1.6.1
+1. Input/Output GUI devices - ITF 2.1
+1. Linked devices: Networking tech: 2G, 3G, 4G, LTE, 5G, 6G, Starlink, etc.
+1. Networking: airgap, wifi, internet, cellular, radios - ITF 2.3
+1. Units of measure for storage, throughput, processing - ITF 1.5
+
+1. Uses of encryption - ITF 6.6
+1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS, 
+   * <a target="_blank" href="https://www.signal.org/">Signal messaging</a> uses <a target="_blank" href="https://signal.org/blog/pqxdh/">post-quantum encryption</a>
+1. HANDS-ON: Use VirusTotal.com to check issues whether host name and IP address is malicious
+
+1. Logging tracking
+1. Indicators of Compromise
+1. Forensics to obtain evidence without tampering - FTK
+   * SleuthKit.org command-line tools
+   * AccessData
+   * Autopsy.com software (for Windows FTK from Basis Technologies)
+
+1. Critical thinking (misinformation & manipulation): 
+   * What is that trying to make me feel or do? Clickbait to serve up advertising & propaganda?
+   * How valid (true) is the info? 
+   * How biased is its source? <a target="_blank" href="">News</a> - KA 1
+
+1. <a target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-register-passkey-authenticator?tabs=iOS">Setup Microsoft Passkey</a> Authenticator
+
+1. Use cases and projects <a target="_blank" href="https://www.youtube.com/watch?v=qYSWWGz9Z6s">VIDEO</a>
+1. [Use Gen AI to <a target="_blank" href="https://wilsonmar.github.io/genai/">generate code</a>
+
+   <strong>Web Browsers</strong>
+
+1. Web Browsers: default Microsoft Edge, Google Chrome, Firefox/Arkenfox, Opera, Brave, Tor/Mullvad https://privacytests.org
+1. Web Browsers: profiles, cache, search engine, bookmarks, downloading - ITF 3.5
+1. Web browsers: HTTPS TLS 1.3 vs HTTP certs - ITF 3.5
+1. Web browsers: cache, extensions, private, popups - ITF 3.5
+
+1. Fake URLs with unicode chars to click on malicious download sites
+1. Host name to IP address: DNS 9.9.9.9 - ITF 2.7
+
+1. Content: "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage) 
+1. Phising to install keylogger, Trojans provide backdoor access and remote control capabilities, while viruses primarily focus on spreading and causing damage to files and systems.
+
+   <strong>Identity Likeness:</strong>
+
+1. Facial recognition
+1. HANDS-ON: Gravatar.com image link (based on MD5 hash)
+1. [Use AI to generate images, sound, video] (freemium)
+
+1. Phising of email, phone. Block, Delete, Report. DoNoCall lists.
+1. Contacts: Fields (email, phone, websites), tags, invite, sort
+
+1. PII spoofing and 2FA, Passkeys, logout, restart   
+1. Temp/alt info: Address, Phone, email, credit card, social security
+1. HANDS-ON: Create carricatures using AI
+1. HANDS-ON: Cloudinary.com to hold image files
+
+
+1. Data brokers: haveibeenpwned.com, take-down requests
+1. Don't Panic: Incident Management - CC 2.3
+
+1. HANDS-ON: Select browser add-ons
+   * Firefox config, <a target="_blank" href="https://capturelabs.sonicwall.com/m/feature/ip-reputation-lookup">IP Reputation Lookup</a>
+1. HANDS-ON: Create browser add-on using JavaScript
+
+   <strong>Internationalization (i18n) & Localization:</strong>
+
+1. Maps: bookmarks: apple, google, Flightsim, world heritage sites
+1. Countries: codes +1, world map, <a target="_blank" href="https://capturelabs.sonicwall.com/m/feature/security-center">adversarial</a>, <a target="_blank" href="https://freedomhouse.org/countries/freedom-net/scores">freedoms</a>
+1. Locales (languages), UTC Time zones https://wilsonmar.github.io/calendar
+   * Longitude & Latitude
+   * Dateline & Daylight saving time (India, Russia, China)
+1. EXERCISE: Analytics: Create miles & meters vs. latency scatterplot
+1. ASCII vs. unicode Notation systems - ITF 1.1
+  * Unicode chars (echo u2014 for em dash, u1f643 for upside-down smiley face. Currency: Euros, Pounds)
+
+1. Network threats (e.g., distributed denial-of-service (DDoS), virus, worm, Trojan, man-in-the-middle (MITM), side-channel) - CC 4.2
+1. Identification (e.g., intrusion detection system (IDS), host-based intrusion detection system (HIDS), network intrusion detection system (NIDS)) - CC 4.2
+1. Prevention (e.g., antivirus, scans, firewalls, intrusion prevention system (IPS)) - CC 4.2
+
+   <strong>Passwords</strong>
+
+1. Password policy - CC 5.3
+   * EXERCISE: Calculate time to crack
+   * Encryption: [Post-Quantum encryption algorithm] - CC 5.1
+   * HANDS-ON TOOL: JohnTheRipper password (brute-force) crackers using dictionary attack
+
+1. Hash collisions MD5 & SSH 
+1. Methods to secure devices - ITF 6.2
+1. Behavoioral security concepts - ITF 6.3
+1. Authentication, authorization, accounting - ITF 6.4 & CC 1.1
+
+1. HANDS-ON: Calculate How much time it takes to crack a password <a target="_blank" href="https://cyber.org/find-curricula/test-strength-your-passwords">at cyber.org</a>
+1. HANDS-ON: Create secure password: using base-6 dice and lookup diceware list or base-20 numbers to a fandom list. Explain password best practices ITF 6.5
+1. HANDS-ON: Password reset via email.
+
+1. AKeyless cloud service: variables, hierarchy
+1. Authy app: backup keys
+1. SSH for GitHub
+
+1. Hardware: components, powers of 2, Volts = Amperge x Resistance Ohms
+1. Keyboards Carpel-Tunnel prevention, 
+1. Operating systems: Families, Bootup, sleep, periodic shut down, auto Updates
+
+   <strong>Terminal CLI</strong>
+
+1. Local vs cloud tiers ITF 3.4
+1. Terminal: root, CLI commands, folders, files, parameters
+1. Keyboard aliases
+1. chmod permissions for Users and Groups
+
+1. Package managers: apps vs command packages, downloading
+
+1. Protocols: [Wireshark utility] HTTP, HTTPS with SSL certs, CAs, 
+1. Man-in-the-middle attacks security
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=3VYj__vmm6Y">VIDEO</a>: <a target="_blank" href="https://www.penguinrandomhouse.com/books/740806/brave-new-words-by-salman-khan/">Brave New Words by Salman Khan</a>
+
+   <a name="SafeData"></a>
+
+   <strong>B. Securely handle secrets</strong>
+
+1. [Generate strongest passphrase using Dice and word lists]
+
+1. Ask questions of [Use Perplexity.ai] {3B-AP-08}
+1. [Connect a weather station to the internet] on openweather.com {3B-DA-06} {3B-DA-07} - measure validity of predictions based on barometric pressure
+1. Surveys, bias
+1. Correlation is not Causation
+
+1. Text editors: vim, VSCode
+
+1. Intelligent Agents - being outsmarted by superintelligence
+1. When AI runs out of human-generated data to consume
+
+   LAB: Fun with Linux:
+
+1. Operating systems types - ITF 3.1
+
+1. CLI: Pipe (cowsay -f tux I am Tux!), (fortune | cowsay -f tux ), (fortune | lolcat )
+1. CLI: Kill command after installing & using oneko, cmatrix ($ to change color)
+1. CLI: Background process (aafire &)
+1. CLI: rig addresses from files
+1. CLI: wget asciiquarium, (tar -zxf .asciiquarium.tar.gz)
+1. CLI: cd, ls, permission denied, chmod +x asciiquarium)
+1. CLI: install Term::Animation
+
+1. File systems directories
+1. CLI: Make, delete folders & files, symlinks
+1. CLI: locate, find, grep, which
+1. CLI: grep
+1. CLI: jq for json and xml
+
+1. AI Search: Inappropriate/Toxic Topics: Search in ChatGPT & Perpexity.ai
+
+1. Data Storage: NAS, Durability "bit rot", RAID-5 - ITF 2.5
+1. Disk encryption
+1. USB chips
+
+1. [Backup and restore] as incident response workflow
+
+1. Detect evidence of intrusion, log archival
+1. network segmentation mTLS for zero trust 
+
+1. CERTIFICATION: $50 <a target="_blank" href="https://www.isc2.org/certifications/cc/cc-certification-exam-outline">ISC2 Certified in Cybersecurity from ISC2</a>
+
+   * CC 1. Security Principles
+   * CC 2. Business Continuity (BC), Disaster Recovery (DR) & Incident Response Concepts
+   * CC 3. Access Controls Concepts
+   * CC 4. Network Security
+   * CC 5. Security Operations
+
+   <a name="Collaboration"></a>
+
+   <strong>C. Plan and track work collaboratively</strong>
+
+1. Attribution (giving credit): [Wikipedia] Creative Commons
+1. Bias, Incomplete & Invalid data
+1. Objectives vs. Tasks vs. Activities: Eisenhower
+1. Calendars
+1. [Calculate sunrise & sunset of sun] SunCalc.org for solar panels Sun Surveyor and Sun Seeker {3B-DA-05}
+1. Messaging Apps: Facebook, Slack, Discord, Telegram, LinkedIn Messages, Twitter/X, <a target="_blank" href="https://www.youtube.com/watch?v=eTRvFyDxKvU">Mastodon</a>
+1. Impersonations, change handles.
+
+1. Kanban board and flow in Trello & prokanban.org (https://kanbanguides.org/english/)
+
+1. CERTIFICATION: $200 <a target="_blank" href="https://prokanban.org/open-assessment/">ProKanban.org Kanban open assessment</a>
+
+1. [Print 3D object from STL file] created using OnShape 3D CAD
+   <a target="_blank" href="https://www.youtube.com/watch?v=4M87qBgpafk&t=434s">Boot.dev course</a>
+
+
+   <a name="GitHub"></a>
+
+   <strong>D. Read and contribute to projects on GitHub using git</strong>
+
+   <a target="_blank" href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"><em>Curriculum from Microsoft</em></a>
+
+1. Introduction to Git (31 min) - Install & Config Git utilities
+1. Introduction to GitHub (1 hr 32 min) - [Identify Awesome repos]
+1. Introduction to GitHub's products (23 min)
+1. [Create Public/Private Key SSH certificates]
+
+1. Introduction to GitHub Copilot (17 min)
+1. Code with GitHub Codespaces (27 min)
+1. Manage your work with GitHub Projects (36 min) - [manage files and folders]
+
+1. Maintain a secure repository by using GitHub best practices (<a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/?ns-enrollment-type=Collection&ns-enrollment-id=o1njfe825p602p">35 min</a>)
+1. Find commiter email addresses and evaulate their LinkedIn
+
+1. [Edit text using keyboard shortcuts] in Vim and VSCode - freeware vs licensed
+1. HANDS-ON: Configure git to sign commits using SSH stored in KeepassXC
+1. Manage repository changes by using pull requests on GitHub (49 min)
+1. Search and organize repository history by using GitHub (38 min)
+1. Using GitHub Copilot with Python <a target="_blank" href="https://aka.ms/Copilot4Students">for students</a> (<a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/?ns-enrollment-type=Collection&ns-enrollment-id=o1njfe825p602p">22 min</a>)
+
+1. HANDS-ON: Visualize git commits by installing <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/core/install/macos">.NET<a> to run <a target="_blank" href="https://visualgit.net/">a C# app</a>
+
+1. Communicate effectively on GitHub [using Markdown (<a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/?ns-enrollment-type=Collection&ns-enrollment-id=o1njfe825p602p">1 hr 6 min</a>)
+1. HANDS-ON: Create a static github.io website using Jekyll using Ruby or 11ty using Node
+1. HANDS-ON: Register a domain name
+
+1. Initialize a new repo 
+1. [Populate a .gitignore based on technologies used]
+1. PPAs (Personal Package Archives) in Debian/Ubuntu Canonical
+1. Contribute to an open-source project on GitHub (27 min)
+1. Manage an InnerSource program by using GitHub (<a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/manage-innersource-program-github/?ns-enrollment-type=Collection&ns-enrollment-id=o1njfe825p602p">50 min</a>)
+1. [Resolve/prevent merge conflicts in same file & lines]
+
+1. Benefits of the GitHub Community
+
+1. [Use AI: "Explain this code"] https://codehs.com/ai
+
+1. Introduction to GitHub administration (27 min)
+1. Authenticate and authorize user identities on GitHub (33 min) - add a contributor
+
+1. Project Management
+1. Privacy, Security, and Administration
+
+1. CERTIFICATION: $49 GitHub Foundations (https://examregistration.github.com/certification/GHF)
+
+
+
+   <a name="Socials"></a>
+
+   <strong>E. Craft profiles, static website, portfolio projects</strong>
+
+   <em>"Look not to what can be done today but what will be possible in 5 years."</em>
+
+   <strong>Create content</strong>
+
+1. Attribution like papers on https://arxiv.org/
+1. Image video & Compression (lossless & lossy): gif, png, jpeg, mp3, mp4
+1. Image: Adobe
+1. Audio: Elevenlabs
+1. Video: OpenAI Sora
+
+1. Programming languages: <a target="_blank" href="https://www.techrepublic.com/article/tiobe-index-language-rankings/">TIOBE Programming Language Index based on search engine</a>
+1. [Install compilers for Java, C, C++, C#, Go, SQL & Ruby, PHP, Python, PowerShell]
+
+1. Career Job Titles - paths to trades and professions <a target="_blank" href="https://bit.ly/3rBfVLG">CyberSecurity career picker</a>
+1. Intro
+   * School Help desk - service award
+   * Club officer
+   * Project for honors
+   * TA
+   * Company internship
+   * Apply for colleges, trades & scholarships
+1. "10X" coder myth and implications - digital footprint
+   * Answers questions, Mentors others within a community (collaborative social network)
+   * Create YouTube videos for subscriber recognition as "influencer"
+   * Write blogs on LinkedIn, Substack, Medium, dev.to, etc.
+   * Write books (for publicity by publishers)
+   * Create courses with quizes, projects in github
+   * Speak live at industry conferences (traveled)
+   * Interiew on video podcasts (Danny Jones, Lex Friedman, Jordan Harbinger, Jordan Peterson)
+   * Master ceremonies at events
+  
+1. [LinkedIn profile] to display achievements and recommendations
+1. Projects: (Make the complex simply complicated)
+   * https://www.linkedin.com/in/madisonhinman/details/projects/
+1. Examplars and Checklist of best profiles
+
+1. Diagrams, flowcharts in PowerPoint = LibreOffice = Google Draw, Miro
+
+1. ["Someone behind you" <a target="_blank" href="https://www.youtube.com/watch?v=k6p28-hyDBE/">OpenCV</a> image recognition] (<a target="_blank" href="https://www.youtube.com/watch?v=iluST-V757A&list=PLEsfXFp6DpzRyxnU-vfs3vk-61Wpt7bOS">VIDEO</a> 
+1. [custom bit.ly URL shortener]
+
+1. Website SSL (https://www.youtube.com/channel/UCTLmcK9w1bZOpQbRCEg6vEw/videos)
+   <a target="_blank" href="https://www.youtube.com/watch?v=pxl7IFDIJEk">VIDEO</a>
+
+1. Review Upwork & other gig sites
+
+
+
+   <a name="Clouds"></a>
+   
+   <strong>F. Navigate within cloud environments (AWS, Azure, Google)</a>
+
+   <em>The scope here is to be able to sign up and get permissions to navigate the menu. Creating resources is covered in more advanced classes.</em>
+
+1. Internet service types: ITF 2.4
+1. From traditional on-prem. to clouds
+1. Computer Clouds: Azure, AWS, GCP, Oracle, Hitzner, etc.
+1. Downsides of cloud
+
+1. NodeJs vs Python vs Rust vs Java vs Go [TIOBE rankings]
+1. <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms">Khan</a>: Algorithms: 
+   * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">Khan</a>: Binary Sort [calc average]
+
+1. "AI/ML for Oceans" https://code.org/oceans
+1. <a target="_blank" href="https://www.youtube.com/watch?v=mCk4Rabkmjc">ChatGPT</a>
+1. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
+1. REST API programming (Postman and other tools)
+1. Countries and cities of the world - compare latency averages and anomalies over time
+
+   <em>There currently is no certification for AI</em>
+
+
+   <a name="ConfigScratch"></a>
+
+   <strong>F. Configure and administer a computer from scratch</strong>
+
+   <em>The scope here is to gain understanding of the lifecycle and automation to setup and troubleshooting</em>
+
+1. Home Lab components (CPU, Memory, etc.) - ITF 2.3
+1. 8-bit to 16, 32, 64, 128 - ITF 2.3
+1. File Systems: format USB chips and drives
+1. [Install a USB chip to setup a Zima board from scratch]
+1. Configuration files: between json & yaml & xml & toml 
+1. dotfiles from others
+1. Logs: [convert epoch date]
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
+1. Internet of Things (IoT) to quantify and control physical objects (Foot pedals)
+1. Send analog talk between from a radio between repeaters connected to the internet
+
+1. IoT devices - ITF 2.6
+
+1. Install & configure wireless network ITF 2.8
+1. [Use Wireshark to analyze wire-level packets]
+
+1. system hardening - CC 5.2.1
+1. Configuration management (e.g., baselines, updates, patches) - CC 5.2.2
+
+1. Server Backup & Restore 
+1. Server Incident Management
+
+1. CERTIFICATION: $84 CompTIA TF+ (IT Foundations+) (https://www.comptia.org/certifications/a) 
+1. CERTIFICATION: CompTIA A+ (https://www.comptia.org/certifications/a) 
+   * $253 220-1102 - operating systems, security, software, operational procedures.
+   * $253 220-1101 - mobile devices, networking technology, hardware, virtualization, cloud computing.
+1. CERTIFICATION: LPIC-1 101 $200
+   <br /><br />
+
+
+   <a name="LowCodeApps"></a>
+
+   <strong>H. Use low-code systems to develop apps</strong>
+
+1. Flow charts, branching ITF 4.2
+1. GUI Design: DEMO: Figma/Tailwind
+1. <a target="_blank" href="https://www.youtube.com/watch?v=mop6g-c5HEY">GUI coding in Python</a> using Tcl
+
+1. [Modify a e-commerce shop template] (Gumroad, Shopify, etc.)
+1. <a target="_blank" href="https://www.youtube.com/watch?v=xkMuykgicYA">"full speed into a brick wall"</a>
+1. Odoo app templates
+1. Outsystems app creator
+
+1. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
+
+1. [Use AI to Solve word problems]
+
+1. <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/data-analysis-101">KA 5</a>
+1. Database ITF 5.1, DB structures ITF 5.2, Interface ITF 5.3
+
+
+   <a name="PythonApps"></a>
+
+   <strong>I. Code Python apps</strong>
+
+   APCSP requires submission of code to full programs to meet the "Create Performance Tasks" rubic for 30% of the exam score.
+
+1. [Create QR code using website & Python]
+
+1. Software installation, Licensing ITF 3.6a
+1. Python versioning install options: pyenv <a target="_blank" href="https://www.youtube.com/watch?v=q8DkatMZvUs">setup</a>
+1. import libraries: pip vs virtualenv vs. venv vs. Conda <a target="_blank" href="https://www.youtube.com/watch?v=MGTX5qI2Jts">VIDEO</a>
+1. Packages to avoid: six, pandas (doesn't scale)
+1. Packages: pydantic for variables
+1. GUI programming using Qt library (<a target="_blank" href="https://github.com/techwithtim/Schedule-Creator">Sample for scheduling</a>)
+
+1. Get a package into PyPi registry
+1. Transitive Dependency Security: SBOM
+1. Lookup CVEs for apps you use
+
+   <strong>Python testing:</strong>
+
+1. Structure Python code to use Pytest
+1. <a target="_blank" href="https://www.youtube.com/watch?v=EoNOWVYKyo0">printf-string tricks</a>
+1. Debug Python using github.com/gruns/icecream
+1. Tools to calculate test coverage
+
+1. TEAM Code review
+1. Automatic code reformatting (<a target="_blank" href="https://black.readthedocs.io/en/stable/">using Black</a>)
+1. PEP8
+1. OWASP: <a target="_blank" href="https://wilsonmar.github.io/owasp-testing">Known-bad sample code</a>
+
+1. PROJECT: Screen Scraper in Python using Selenium, Beautiful soup, etc.
+
+   <strong>Python Jupyter:</strong>
+
+1. Python Jupyter coding to run Machine Learning in cloud environments
+1. Handling secrets in Juypter <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">sample</a>
+1. Python numpy for calculations
+1. matplotlib for graphs
+1. Jupyter Graphing vs Cabana vs Superset <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">secrets</a>
+
+1. Programming language categories ITF 4.1, <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101">KA 3: Programming</a>
+
+1. Identifiers, Containers, Objects ITF 4.3
+
+   <strong>Core Pytong coding</strong>
+
+1. Data types (boolean, char, string, integers, float) - ITF 1.2
+1. Data Types, Evaluations, and Basic I/O Operations (20% - 6 exam items)
+1. Flow Control – loops and conditional blocks (20% - 6 exam items)
+1. Data Collections – Lists, Tuples, and Dictionaries (23% - 7 exam items)
+1. Functions (20% - 6 exam items) <a target="_blank" href="https://www.youtube.com/watch?v=kGcUtckifXc">Functions</a>
+
+1. Efficiency of Methods: <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation">Khan</a>: Big-O Notation: Asymptotic calculations]
+
+   <strong>Leetcode.com (scam) challenges: optimizations and tricks:</strong>
+
+1. Arrays (data structures) and matrices using numpy functions for linear algebra, fourier transform, and other scientific uses
+1. Algorithms - start from and save to disk
+1. Search: Breath-first
+1. Two pointers
+1. Sliding Window
+1. Binary Search
+1. Sorting: Quick Sort, Insertion Sort, Merge Sort
+1. Linked List
+1. Trees
+1. <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/x2d2f703b37b450a3:simulations">KA Simulations</a>
+
+1. CERTIFICATION: $59 PCAP-31-02 “Certified Entry-Level Python Programmer Certification” (https://wilsonmar.github.io/python-certs/)
+
+
+Soon, AI would capture ever bit human-generated writings ever created.
+In 2024, human experts have been bested in every game invented (chess, go, etc.) and are able to pass exams to score in the 90th percentile of lawyers and doctors. "Complex reasoning" is at the cusp.
+
+
+
+
+
+## Early Alternatives
 
 To gain a higher chance for admission into top universities,<br />
 to have more freedom to take classes,<br />
@@ -434,10 +1103,15 @@ AP scores come out about two months after the exam, during the beginning of July
 
 The College Board's phone is 212-632-1780 or 888-225-5427 (toll free in the United States and Canada).
 
+As the name of the organization implies, the College Board has an academic rather than vocational focus.
+
+However, the aim of this course is to enable students to be more job ready.
+
+
 ### Montana
 
 https://codehs.com/states/MT
-> "Only 52 students in Montana took the Advanced Placement Computer Science exams in 2019 (16 AP CSA, 36 AP CSP); only 38% of exams were taken by females. 
+> "Only 52 students in Montana took the Advanced Placement Computer Science exams in 2019 (16 AP CSA, 36 AP CSP); only 38% of exams were taken by females."
 
 Students who are homeschooled or go to a school that doesn’t administer AP Exams can find a school on the <a target="_blank" href="https://apcourseaudit.inflexion.org/ledger/">College Board's AP Course Ledger</a>, which lists secondary schools that have passed the AP Course Audit.
 
@@ -450,11 +1124,12 @@ Students who are homeschooled or go to a school that doesn’t administer AP Exa
    * Glacier HIgh School, Kalispell
    * Great Falls Central Catholic High School
    * Helena High School
+   * Joliet High School (to be audited)
    * Manhattan High School
    * Polson High School (South of Flathead Lake)
    * West Yellowstone School
 
-<a target="_blank" href="http://montanadigitalacademy.org">montanadigitalacademy.org</a> (MTDA) was created in 2009 by the Montana Legislature to provide an online program for Montana students in partnership with public schools across the state. It provides over 75 original credit courses, including AP and Dual Credit Initial Enrollment Deadline:  08/28/2024 that include:
+<a target="_blank" href="http://montanadigitalacademy.org/">montanadigitalacademy.org</a> (MTDA) was created in 2009 by the Montana Legislature to provide an online program for Montana students in partnership with public schools across the state. It provides over 75 original credit courses, including AP and Dual Credit Initial Enrollment Deadline:  08/28/2024 that include:
 
    * No Computer Science Principles? Jason Neiffer
    
@@ -693,233 +1368,13 @@ Stand-outs are:
 
 * Palo Alto Networks K-12 Fundamental Series Courses and Labs
 
+* TeachersPayTeachers.com
 
 Several AP instructors (and this instructor does) enrich the materials with real-world tools entry-level contributors need to master. All these are free unless noted otherwise:
 
-
-<a name="Syllabus"></a>
-
-## Objectives
-
-As the name of the organization implies, the College Board has an academic rather than vocational focus.
-
-However, the aim of this course is to enable students to be more job ready.
-
-By the end of this course, the learner would be able to:
-
-<a href="#SafeComputing">A. Practice safe defensive computing practices</a>
-
-<a href="#SafeData">B. View, organize, and handle data secrets securely</a>
-
-<a href="#Socials">C. Craft profiles with portfolio projects</a>
-
-<a href="#Collaboration">D. Plan and track work collaboratively</a>
-
-<a href="#GitHub">E. Read and contribute to projects on GitHub using git</a>
-
-<a href="#ConfigScratch">F. Configure a computer from scratch</a>
-
-<a href="#UseAI">G. Make use of AI and cloud developer tools</a>
-
-<a href="#LowCodeApps">H. Use low-code systems to develop apps</a>
-
-> The aim is not to make learners "super pro users". The strategy is to, <strong>while demonstrating how</strong> to use various applications, we <strong>analyze</strong> each product based on the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the AP CSP curriculum and exam:
-
-   * <a href="#CreativeDevelopment">Big Idea 1: [Creative] Development</a>
-   * <a href="#DataAnalysis">Big Idea 2: Data & [Analysis]</a>
-   * <a href="#Algorithms">Big Idea 3: [Algorithms] and Programming</a>
-   * <a href="#SystemsNetworks">Big Idea 4: Computer [Systems] and Networks</a>
-   * <a href="#ImpactComputing">Big Idea 5: [Impact] of Computing</a>
-   <br /><br />
-
-<hr />
-
-Project Based Learning (PBL) means an authentic, “real-world” Performance Tasks (PT) to solve a problem related to each topic.
-
-The class operates in what's called an "inverted classroom" approach, where
-learners view videos and identify questions about a topic before the live class discussions
-about the same topic.
-
-To foster leadership, collaboration, and debugging skills, 
-students are expected to help each other.
-
-<a target="_blank" href="https://www.youtube.com/watch?v=go8qow9I6cM&list=PLwXXOxvDboebhtPwm0cipRwN6tUL-WDc0">Google Classroom</a> is used with 
-<a target="_blank" href="https://www.youtube.com/watch?v=0AaumF0jSAE&list=PLwXXOxvDboebt_ljDSC1GsP1KVaJB0HRH">
-Google Meet</a> (instead of Zoom or Microsoft Teams).
-<a target="_blank" href="https://www.youtube.com/watch?v=0Qvm2-I9H40">VIDEO</a>
-
-For help with memorization recall such as glossary definitions, 
-instead of paper flash cards and Quizlet, we use 
-<a target="_blank" href="https://www.youtube.com/watch?v=oBPpyAuWi14">use Google Sheets</a>. 
-<a target="_blank" href="https://www.youtube.com/watch?v=iIyDJK_SAjs&t=1m39s">VIDEO</a>:
-<a target="_blank" href="https://www.youtube.com/watch?v=UAby79mP-4I">VIDEO</a>:
-Answers are hidden using a white font.
-The background color is changed for flagging additional review.
-
-<a target="_blank" href="https://www.youtube.com/watch?v=5vh_bWsztPc">VIDEO</a>:
-To <a target="_blank" href="https://thevitalcurriculum.super.site/1697e3f550934489b3b23ef29e278382">
-prompt GPT to write flashcard text</a>
-
-
-
-<a name="SafeComputing"></a>
-
-&nbsp; &nbsp; &nbsp;<strong>A. Practice safe defensive computing practices</strong>  [Systems] [Impact]
-
-1. Digital Divide: PC x86 laptops vs macOS RaspberryPi ARM vs Chromebooks vs 
-1. Temp/alt info: Address, Phone, email, credit card, social security
-1. PII spoofing and 2FA, Passkeys, logout, restart   
-1. Countries: codes +1, world map, adversarial countries
-
-1. networking: airgap, wifi, internet, cellular, radios 
-1. email phising, malware
-1. "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage) 
-
-1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS, <a target="_blank" href="https://www.signal.org/">Signal messaging</a> uses <a target="_blank" href="https://signal.org/blog/pqxdh/">post-quantum encryption</a>
-1. Contacts: Fields, invite, sort
-1. Linked devices: laptop & mobile phone
-
-1. AKeyless cloud service: variables, hierarchy
-1. Authy app: backup keys
-1. SSH for GitHub
-
-1. Hardware: components, powers of 2, Volts = Amperge x Resistance Ohms
-1. Keyboards Carpel-Tunnel prevention, keylogging
-1. Operating systems: Families, Bootup, sleep, periodic shut down, auto Updates
-
-1. Terminal: root, CLI commands, folders, files, parameters
-1. chmod permissions for Users and Groups
-1. Package managers: apps vs command packages, downloading
-1. Browsers: Edge, Chrome, Firefox/Arkenfox, Opera, Brave, Tor/Mullvad https://privacytests.org
-1. Browsers: profiles, search engine, bookmarks, downloading
-1. Protocols: [Wireshark utility] HTTP, HTTPS with SSL certs, CAs, 
-1. Man-in-the-middle attacks
-1. Secure config FaceTime & iMessage on iPhones (4G, 5G, LTE, satellite)
-
-   <a name="SafeData"></a>
-
-   <strong>B. View, organize, and handle data and secrets securely</strong> [Analysis]
-
-1. Text editors: vim, VSCode
-
-1. [Use AI to generate images, sound, video] (freemium)
-1. Ask questions of [Use Perplexity.ai] {3B-AP-08}
-1. [Connect a weather station to the internet] on openweather.com {3B-DA-06} {3B-DA-07} - measure validity of predictions based on barometric pressure
-1. Surveys, bias
-1. Correlation is not Causation
-
-1. File systems directories
-1. CLI: Make, delete folders & files, symlinks
-1. CLI: locate, find, grep, which
-1. CLI: grep
-1. CLI: jq for json and xml
-
-1. Search: Inappropriate/Toxic Topics: Search in ChatGPT & Perpexity.ai
-
-1. NAS, Durability "bit rot", RAID-5
-1. Disk encryption
-1. USB chips
-
-1. Encryption: [Post-Quantum encryption algorithm]
-1. [Backup and restore] as incident response workflow
-1. Detect evidence of intrusion, log archival, zero trust segmentation
-
-   <a name="Socials"></a>
-
-   <strong>C. Craft profiles with portfolio projects</strong> [Impact]
-
-1. Digital footprint
-1. Social networks
-1. Career Job Titles - paths to trades and professions
-
-1. [LinkedIn profile] to display achievements and recommendations
-1. Examplars and Checklist of best profiles: how to
-1. Blogs on LinkedIn, Substack, Medium, dev.to, etc.
-
-1. Image video & Compression (lossless & lossy): gif, png, jpeg, mp3, mp4
-1. Image: Adobe
-1. Audio: Elevenlabs
-1. Screen scraper programming: types of UI controls
-
-   <a name="Collaboration"></a>
-
-   <strong>D. Plan and track work collaboratively</strong> [Creative]
-
-1. Bias, Incomplete & Invalid data
-1. Objectives vs. Tasks vs. Activities: Eisenhower
-1. Calendars
-1. [Calculate sunrise & sunset of sun] SunCalc.org for solar panels Sun Surveyor and Sun Seeker {3B-DA-05}
-1. Messaging Apps: Facebook, Slack, Discord, Telegram, LinkedIn Messages, Twitter/X, <a target="_blank" href="https://www.youtube.com/watch?v=eTRvFyDxKvU">Mastodon</a>
-1. Impersonations, change handles.
-
-1. Kanban board and flow in Trello
-
-1. Attribution (giving credit): [Wikipedia] Creative Commons
-1. Debug Python using github.com/gruns/icecream
-1. Test coverage
-
-1. [Print 3D object from STL file] created using OnShape 3D CAD
- 
-   <a name="GitHub"></a>
-
-   <strong>E. Read and contribute to projects on GitHub using git</strong>
-
-1. PPAs (Personal Package Archives) in Debian/Ubuntu Canonical
-1. Create and use SSH certificates
-1. [Create a static github.io website] and [Write GitHub Markdown]
-1. Register a domain name  
-
-1. [Edit text using keyboard shortcuts] in Vim and VSCode - freeware vs licensed
-1. [Run bash/Linux Command line] utilities to [manage files and folders]
-1. Setup Git: Create and use SSH certificates
-
-1. [Create a static github.io website] and [Write GitHub Markdown]
-1. Register a domain name  
-
-1. [Obtain and edit code] using Git utilities with GitHub cloud service
-
-1. Resolving/preventing merge conflicts in same file & lines
-
-   <a name="ConfigScratch"></a>
-
-   <strong>F. Configure a computer from scratch</strong>
-
-1. File Systems: format USB chips and drives
-1. [Install a USB chip to setup a Zima board from scratch]
-1. Configuration files: between json & yaml & xml & toml 
-1. dotfiles by others
-
-1. <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
-1. Internet of Things (IoT) to quantify and control physical objects (Foot pedals)
-1. Send analog talk between from a radio between repeaters connected to the internet
-
-   <a name="UseAI"></a>
-
-   <strong>G. Make use of AI and cloud developer tools</strong>
-
-1. Node vs Python vs Rust vs Java vs Go [TIOBE rankings]
-
-1. "AI/ML for Oceans" https://code.org/oceans
-
-1. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
-1. REST API programming (Postman and other tools)
-1. Countries and cities of the world - compare latency averages and anomalies over time
-
-1. Odoo app templates
-1. Outsystems app creator
-
-   <a name="LowCodeApps"></a>
-
-   <strong>H. Use low-code systems to develop apps</strong>
-
-1. [Modify a e-commerce shop template] (Gumroad, Shopify, etc.)
-1. Python Jupyter coding to run Machine Learning in cloud environments
-1. [Use Gen AI to generate code]
-1. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
-
 <br /><br />
 
-The average number of school days  in a school year in the United States is <strong>180 days</strong> (within a range from 170 to 185 days).
+The average number of school days in a school year in the United States is <strong>180 days</strong> (within a range from 170 to 185 days).
 So there are roughly 36 weeks in a school year (180 days ÷ 5 days per week).
 
 ## Professional certifications
@@ -958,7 +1413,8 @@ to proactively take advantage of changes in technologies as they emerge.
 PBS Crash Course Computer Science Preview from 2017
 provides illustrations and examples from a child's point of view.
 
-### Khan Academy
+
+### Khan Academy (KA)
 
 <a target="_blank" href="https://KhanAcademy.org">https://KhanAcademy.org</a>
 provides in-depth gamified tutorials online, for free, on the full range of subjects that include
@@ -1055,6 +1511,8 @@ South Dakota
 
 * NCyTE Cybersecurity Concept Lessons Python
 
+* <a target="_blank" href="https://digitalpromise.org/2024/04/22/students-and-teachers-thrive-in-cybersecurity-initiative/">DigitalPromise</a> #CyberSecurity Pathways programs.
+
 * TechSmart
 
 * https://michiganvirtual.org/consulting/
@@ -1065,4 +1523,75 @@ South Dakota
    Heavy use of cellphones by adolescents has been linked to adverse mental health outcomes, from increasing risk of anxiety to suicidal ideation. Nearly half of children ages 10 to 17 who use social media wind up on porn sites, according to Rich. And in a recent survey of an estimated 1,300 girls ages 11 to 15 by nonprofit Common Sense Media, most respondents who reported using Snapchat or Instagram said they’d been contacted by a stranger via these social media platforms in ways that made them feel uncomfortable.
 
 https://www.nytimes.com/2023/11/30/learning/what-students-are-saying-about-school-cellphone-bans.html
+
+<a target="_blank" href="https://www.paloaltonetworks.com/resources/datasheets/cybersecurity-academy-curriculum">Palo Alto's Cyber Security Curriculum</a>
+
+https://www.wgu.edu/lp/it/lead/cybersecurity-scholarships.html
+$5,000 ($1,250 per six-month term) Cybersecurity scholarship
+
+https://sfs.opm.gov/
+CyberCorps®: Scholarship for Service
+recruit and train the next generation of information technology professionals, industrial control system security professionals, and security managers to meet the needs of the cybersecurity mission for Federal, State, local, and tribal governments. This program provides scholarships for up to 3 years of support for cybersecurity undergraduate and graduate (MS or PhD) education. The scholarships are funded through grants awarded by the National Science Foundation. In return for their scholarships, recipients must agree to work after graduation for the U.S. Government, in a position related to cybersecurity, for a period equal to the length of the scholarship. 
+
+
+<a target="_blank" href="https://us.store.bambulab.com/products/">Bamboo 3D printer</a> $599-$849 for 16-color (4 units) 
+P1P ideal: PLA, PETG translucent, TPU, PVA, PET, 
+P1S has enclosed cage to use ABS, ASA
+Capable: PA, PC
+https://www.reddit.com/r/BambuLab/comments/14q1srr/unpopular_opinion_bambu_lab_should_not_be_your/
+
+Use Micro:bit for TOTP chip like a ___ device used for authentication.
+The BBC micro:bit is a programmable device that allows students to get hands-on with coding and digital making. 
+It has a 5x5 pixel screen, acclerometer.
+It is use for introduction to Python.
+Use Chrome for online emulator https://python.microbit.org/v/3
+
+https://www.infosecinstitute.com/courses/comptia_authorized_a_plus_boot_camp_training/
+5-day A+ Boot Camp
+
+https://caecommunity.org/initiative/k12-ring
+https://maui.hawaii.edu/wp-content/uploads/2023/01/Hawaii-ACTE-RING-Cybersecurity-Curriculum.pdf
+<a target="_blank" href="https://bit.ly/RINGOVERVIEW">Overview</a>:
+RING ("Regions Investing in the Next Generation") launched in 2022
+for students without access to a cyber program: rural, home school, under-resourced
+<a target="_blank" href="https://drive.google.com/drive/folders/18BRn2X0lfncM2MeJCgQYRHx3Ql3vmX32">Files</a>:
+Cybersecurity Guidelines, each having KUs (Knowledge Units):
+
+   1. Ethics
+   2. Establishing Trust
+   3. Ubiquitious Connectivity
+   4. Data Security
+   5. System Security
+   6. Adversarial Thinking
+   7. Risk
+   8. Implications
+   * Python programming unit
+
+   * <a target="_blank" href="https://d2hie3dpn9wvbb.cloudfront.net/">eMates Labs & Games</a>
+
+   * Coastline Community College hosts Netlab access for RING teachers across the country. For Chromebooks. 3rBfVLG cyberseek.org
+
+   
+
+US AFA CyberPatriot
+
+National Center of Academic Excellence (CAE) in Cyber-Defense Two-Year (CAE2&) sponsored by the NSA and DHS
+recognizes collegiate institutions which have met their standards of excellence in Cyber Defense education.
+
+Practice different ciphers: https://tools.cyber.org/dashboard
+* Braille <a target="_blank" href="https://tools.cyber.org/braille/reference">Reference</a> (TODO: Numbers) -> <a target="_blank" href="https://tools.cyber.org/braille/practice">Practice</a>
+* <a target="_blank" href="https://tools.cyber.org/morse-code">Morse Code</a>
+* <a target="_blank" href="https://tools.cyber.org/vigenere">Vigenere</a>
+* <a target="_blank" href="https://tools.cyber.org/caesar">Caesar</a>
+* <a target="_blank" href="https://tools.cyber.org/base64">Base64</a>
+* <a target="_blank" href="https://tools.cyber.org/hashing">Hashing</a> MD5, SHA-1, SHA-224, SHA-256, SHA-512
+* <a target="_blank" href="https://tools.cyber.org/enigma">Enigma</a>
+
+https://feedbackfruits.com/ai-chatgpt-resources-hub
+
+
+## REMEMBER:
+
+* Linux separates configuration strings using colons (:) rather than semicolons.
+* Don't use the same password on multiple accounts - use password manager.
 
