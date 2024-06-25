@@ -23,32 +23,58 @@ Gen Z slang "glow-up" = a major improvement in one's self, usually an improvemen
 
 By the end of this course, the learner would be able to (by following step-by-step instructions executing automated scripts):
 
-<a href="#SafeData">A. Securely handle secrets</a><br /> - 1) $50 Certified in CyberSecurity (CC) certification from ISC2
-   
-<a href="#SafeComputing">B. Practice safe and efficient computing practices</a> (before touching a computer)
+<a href="#SafeData">A. Securely handle secrets</a>
 
 1. Define Threat model: what do you value?
+   
+<a href="#SafeComputing">B. Practice safe and efficient computing practices</a>
 
-   <em>You don't have to tell everyone everything</em>
+   <em>Keep updated to the latest versions:</em>
 
-1. Fake answers to security questions: relatives, address, birthday
+1. Configure you OS to automatically update.
+1. Make a checklist to run through all that you do to verify whether everything still works.
+
+   <em>Don't tell everyone everything</em>
+
+1. Use fake answers to security questions: relatives, address, birthday, socia; security number
 1. Compartmentalization: different pseudonym identities and a browser profile for each use (School, Browsing, Shopping, YouTube, Snapchat, Dating)
-1. Alternative phone (MintMobile $15/mo) and VoIP (Google Voice, hush, MySudo, etc.)
-1. Alternative credit cards (privacy.com).
+1. Use alternative VoIP (Google Voice, hushed.com, MySudo.com, etc.)
+1. For alternate network, account verification, Android, get a phone & plan for MVNO (<a target="_blank" href="https://www.consumerreports.org/electronics-computers/cell-phones-services/best-and-worst-phone-plan-providers-a7549256764/">top-rated</a> <a target="_blank" href="https://www.consumercellular.com/shopping/choose/plan">$20/m Consumer Cellular</a> on AT&T's network, <a target="_blank" href="https://www.ultramobile.com/plans/" title="888.777-0446">$15/m ultramobile.com</a> and <a target="_blank" href="https://www.visible.com/">$25/m Visible</a> use Verizon's network, <a target="_blank" href="https://mintmobile.com/">$15/mo MintMobile</a> uses T-Mobile's network).
+1. Use Paypal & alternative credit cards (privacy.com) with parental controls.
+1. Track where your give out your credit cards to.
+1. Setup a credit freeze to block opening of new credit lines.
 
-   <em>Bash your first programming language:</em>
+   <em>Bash your first programming language</em>
 
-1. Use a Terminal program to run CLI commands and Bash scripts. To optionally install an alternative Terminal program:
-1. Install Brew on macOS or Apt package managers to install utilities.
+1. Use a Terminal program to run CLI commands and Bash scripts.
+1. Install Brew on macOS or Apt package managers to optionally install alternative Terminal and other utilities.
+1. Configure automatic updates on CLI packages.
+1. Use ChatGPT GenAI LLM to suggest CLI commands by installing Python utility <a target="_blank" href="https://github.com/mendhak/llm-cli-helper/tree/main">llm-cli-helper</a>.
 
-   <em>Instead of using the same password on several accounts:</em>
+   <em>Use SSH with GitHub</em>
 
+1. Obtain a github account using an email.
+1. Create an SSH key pair to keep your repositories private.
+
+   <em>Isolate each Python program:</em>
+
+1. Understand the different (convoluated) ways to install Python.
+1. Install <a target="_blank" href="https://virtualenv.pypa.io/en/latest/installation.html">virtualenv</a>
+1. Dowload a sample ("Hello World") Python repo from GitHub.
+1. Establish venv folder.
+1. Examine chain of imported modules dependencies and reported CVEs in an SBOM.
+1. Download dependencies based on requirements.txt.
+1. Do a test run.
+
+   <em>Don't use the same password on several accounts: ITF 6.5</em>
+
+1. Use haveibeenpwned.com to check if credentials and data behind an email has been stolen.
 1. Install, configure, use local <a target="_blank" href="https://www.privacytools.io/secure-password-manager">password manager</a> KeepassXC to generate passwords.
-1. Create secure password: using base-6 dice and lookup diceware list or base-20 numbers to a fandom list. Explain password best practices ITF 6.5
 
    <em>Use really strong passwords:</em>
 
 1. Prefer hardware devices (Yubikey, Nitrokey) over biometrics (finger, face recognition).
+1. Create secure password: using base-6 dice and lookup diceware list or base-20 numbers to a fandom list.
 1. Install, configure, use cloud-based Twilio's Authy app for 2FA (Two-factor authentication) with TOTP (Temporary Token).
 1. TRIVIA: Use scientific calculator to define entropy of password length, complexity, IPv4 & IPv6
 
@@ -64,63 +90,74 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Install, configure, schedule use of encrypted backups.
 1. Verify restore from backups.
 
-   <em>Stop data theft:</em>
-
-1. Setup safer DNS 9.9.9.9 (Google's 8.8.8.8)
-1. Request take-down from (long) list of data brokers.
-1. Opt out of analytics and "customizations" on all devices, include TVs, Apple+, Roku.
-1. Use <a target="_blank" href="https://www.privacytools.io/world-maps">private map apps</a> (openstreetmap.org) instead of Google Maps.
-
    <em>Clear out what you don't use:</em>
 
 1. Shred deleted files. Burn papers.
 1. Clean system and free disk space using BleachBit.
 
+   <em>Stop data theft:</em>
+
+1. Configure OS to use safer DNS 9.9.9.9 (instead of tracker default or Google's 8.8.8.8)
+1. Request take-down from (long) list of data brokers ($20/yr deleteme).
+1. Opt out of analytics and "customizations" on all devices, include TVs, Apple+, Roku.
+1. Use <a target="_blank" href="https://www.privacytools.io/world-maps">private map apps</a> (openstreetmap.org) instead of Google Maps.
+
    <em>Configure settings for privacy and safety:</em>
 
-1. Configure automatic updates on OS and apps and CLI packages.
 1. Turn off Blutooth and other services when not in use.
 1. Configure privacy settings on iPhone Safari, Android Google Chrome. Clear Temp Data. Use startpage.com for private search.
-1. Install and configure Firefox browser or Brave browser
-1. VPN (mullvad, ProtonVPN)
-
-1. Use ChatGPT GenAI LLM to suggest CLI commands by installing Python utility <a target="_blank" href="https://github.com/mendhak/llm-cli-helper/tree/main">llm-cli-helper</a>.
+1. Install and configure Firefox browser or Brave browser.
+1. Install VPN (mullvad, ProtonVPN) when using unlocked networks.
 
    <em>Keep a lookout:</em>
 
-1. Practice critical thinking about content seeking emotional reactions.
-1. Identify fear mongering for clicks.
-1. Identify fake news misinformation by researching the legitimacy of sources (WSJ, GroundNews, FactCheck.org, Snopes.com, and PolitiFact.com).
 1. Identify logs and indicators of compromise (host files, auto-start processes).
+1. Build an airgapped (stand-alone) Raspberry Pi to examine  & <a target="_blank" href="https://lwn.net/Articles/626559/">scrub</a> USB drives using <a target="_blank" href="https://circl.lu/projects/CIRCLean/">CIRClean</a> utility.
 
    <em>Block intruders:</em>
-   
+
 1. Evaluate risk of man-in-the-middle attacks using websites <a target="_blank" href="https://onetimesecret.com/">yopass.se</a> or <a target="_blank" href="https://password.link/en">passlink</a>.
 1. Use <a target="_blank" href="https://www.VirusTotal.com/">VirusTotal.com</a> to check whether host name and IP address have been reported as malicious.
-1. Router password instead of default passwords (to not participate in DDoS)
+1. On your router, set custom password instead of default (to not participate in DDoS)
       
+   <em>Practice critical thinking about content:</em>
+   
+1. Identify attempts to co-opt emotional reactions.
+1. Identify fear mongering for clicks.
+1. Identify the pattern of posts by posters.
+1. Identify fake news misinformation by researching the legitimacy of sources (WSJ, GroundNews, FactCheck.org, Snopes.com, and PolitiFact.com).
+
 1. Use <a href="#GoogleClassroom">Google Classroom</a>.
 
+<a href="#Socials">E. Craft profiles, static website, portfolio projects</a>
 
-<a href="#Socials">E. Craft profiles, static website, portfolio projects</a> 
-
-   <em>Images of your face and body is a secret</em>
+   <em>Your face and body are a secret</em>
 
    1. Recognize the impact misuse of reverse image search (clearview.ai).
-   1. Set <strong>Instgram</strong> account to private so it knows not to use your photos for training their AI.
+   1. Set <strong>Instagram</strong> account to private so it does not use your photos for training their AI.
    1. Modify Jupyter Python code within a cloud to create obfuscated privacy-maintaining portrait using Machine Learning style transfer.
    1. Upload an obfuscated profile photo to gravatar.com so other websites can (using MD5 hash) associate emails with a profile image.
 
+   <strong>Obfuscate your likeness:</strong>
+
+1. Define a naming covention to save drives, folders, file.
+1. Use an AI-generated person's portrait with your demographic when you can.
+1. Take photos in different levels of formality.
+1. Perturb photos of you using <a target="_blank" href="https://github.com/Shawn-Shan/fawkes">open-source</a> <a target="_blank" href="https://sandlab.cs.uchicago.edu/fawkes/#code">fawkes</a> to disrupt use by mass facial recognition.
+1. Post obfuscated photo on Gravatar.com image for other websites to associate with each of your emails.
+1. [Use AI to generate images, sound, video] (freemium)
+
+ - 1) $50 Certified in CyberSecurity (CC) certification from ISC2
+
 <a href="#Collaboration">C. Plan and track work collaboratively</a> using SaaS tools (Google Classroom, Twilio) - 3) Kanban
 
-   1. Build an airgapped (stand-alone) Raspberry Pi for <a target="_blank" href="https://circl.lu/projects/CIRCLean/">CIRClean on USB</a> to examine & <a target="_blank" href="https://lwn.net/Articles/626559/">scrub</a> USB drives.
-   1. Use CLI utility <a target="_blank" href="https://github.com/magic-wormhole/magic-wormhole">magic-wormhold</a> to send and receive files peer-to-peer
-   1. Offline web apps
+   1. Use CLI utility <a target="_blank" href="https://github.com/magic-wormhole/magic-wormhole">magic-wormhold</a> to send and receive files peer-to-peer.
+   1. PROJECT: Create offline web apps.
 
 <a href="#GitHub">D. Read and contribute to projects on GitHub using git</a><br /> - 2) GitHub Foundations certification
 
    1. Search through GitHub.com using several filters.
-   1. Contribute to an open-source repository on GitHub by forking.
+   1. Contribute to an open-source repository on GitHub by forking, git clone, 
    1. Format documentation in <a target="_blank" href="https://github.com/mattcone/markdown-guide">Markedown format</a>
 
 <a href="#PythonApps">G. Code Python apps</a><br /> - 4) <a target="_blank" href="https://wilsonmar.github.io/python-certifications/">Python Fundamentals certification</a>
@@ -361,12 +398,6 @@ We make use of tools professionals use (where possible):
 1. Content: "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage) 
 1. Phising to install keylogger, Trojans provide backdoor access and remote control capabilities, while viruses primarily focus on spreading and causing damage to files and systems.
 
-   <strong>Identity Likeness:</strong>
-
-1. Facial recognition
-1. HANDS-ON: Gravatar.com image link (based on MD5 hash)
-1. [Use AI to generate images, sound, video] (freemium)
-
 1. Phising of email, phone. Block, Delete, Report. DoNoCall lists.
 1. Contacts: Fields (email, phone, websites), tags, invite, sort
 
@@ -376,7 +407,6 @@ We make use of tools professionals use (where possible):
 1. HANDS-ON: Cloudinary.com to hold image files
 
 
-1. Data brokers: haveibeenpwned.com, take-down requests
 1. Don't Panic: Incident Management - CC 2.3
 
 1. HANDS-ON: Select browser add-ons
