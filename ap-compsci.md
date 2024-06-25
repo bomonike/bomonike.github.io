@@ -21,27 +21,101 @@ Gen Z slang "glow-up" = a major improvement in one's self, usually an improvemen
 
 ## Objectives (Syllabus)
 
-By the end of this course, the learner would be able to:
+By the end of this course, the learner would be able to (by following step-by-step instructions executing automated scripts):
 
-<a href="#SafeComputing">A. Practice safe and efficient computing practices</a> (before touching a computer)
+<a href="#SafeData">A. Securely handle secrets</a><br /> - 1) $50 Certified in CyberSecurity (CC) certification from ISC2
+   
+<a href="#SafeComputing">B. Practice safe and efficient computing practices</a> (before touching a computer)
 
-   1. Identify misinformation.
-   2. Use VirusTotal.com to check whether host name and IP address have been reported as malicious.
-   3. Identify utilities to prevent man-in-the-middle attacks 
-   4. Identify indicators of compromise (host files, auto-start processes)
+1. Define Threat model: what do you value?
+
+   <em>You don't have to tell everyone everything</em>
+
+1. Fake answers to security questions: relatives, address, birthday
+1. Compartmentalization: different pseudonym identities and a browser profile for each use (School, Browsing, Shopping, YouTube, Snapchat, Dating)
+1. Alternative phone (MintMobile $15/mo) and VoIP (Google Voice, hush, MySudo, etc.)
+1. Alternative credit cards (privacy.com).
+
+   <em>Bash your first programming language:</em>
+
+1. Use a Terminal program to run CLI commands and Bash scripts. To optionally install an alternative Terminal program:
+1. Install Brew on macOS or Apt package managers to install utilities.
+
+   <em>Instead of using the same password on several accounts:</em>
+
+1. Install, configure, use local <a target="_blank" href="https://www.privacytools.io/secure-password-manager">password manager</a> KeepassXC to generate passwords.
+1. Create secure password: using base-6 dice and lookup diceware list or base-20 numbers to a fandom list. Explain password best practices ITF 6.5
+
+   <em>Use really strong passwords:</em>
+
+1. Prefer hardware devices (Yubikey, Nitrokey) over biometrics (finger, face recognition).
+1. Install, configure, use cloud-based Twilio's Authy app for 2FA (Two-factor authentication) with TOTP (Temporary Token).
+1. TRIVIA: Use scientific calculator to define entropy of password length, complexity, IPv4 & IPv6
+
+   <em>Use encryption:</em>
+
+1. Install and configure Signal app for sharing secrects using end-to-end encrypted <a target="_blank" href="https://www.privacytools.io/privacy-messaging">private messaging</a>. Ask friends to do the same for uniting iPhone & Android.
+1. Install and configure Akeyless web service to store secrets retrieved by programs.
+1. Install and configure <a target="_blank" href="https://www.privacytools.io/privacy-email">privacy email client</a> Startmail with aliases.
+1. Install GPG to use receiver's public gpg key to encrypt files locally for email so receiver can decrypt with private key.
+
+   <em>Backup and recover data:</em>
+
+1. Install, configure, schedule use of encrypted backups.
+1. Verify restore from backups.
+
+   <em>Stop data theft:</em>
+
+1. Setup safer DNS 9.9.9.9 (Google's 8.8.8.8)
+1. Request take-down from (long) list of data brokers.
+1. Opt out of analytics and "customizations" on all devices, include TVs, Apple+, Roku.
+1. Use <a target="_blank" href="https://www.privacytools.io/world-maps">private map apps</a> (openstreetmap.org) instead of Google Maps.
+
+   <em>Clear out what you don't use:</em>
+
+1. Shred deleted files. Burn papers.
+1. Clean system and free disk space using BleachBit.
+
+   <em>Configure settings for privacy and safety:</em>
+
+1. Configure automatic updates on OS and apps and CLI packages.
+1. Turn off Blutooth and other services when not in use.
+1. Configure privacy settings on iPhone Safari, Android Google Chrome. Clear Temp Data. Use startpage.com for private search.
+1. Install and configure Firefox browser or Brave browser
+1. VPN (mullvad, ProtonVPN)
+
+1. Use ChatGPT GenAI LLM to suggest CLI commands by installing Python utility <a target="_blank" href="https://github.com/mendhak/llm-cli-helper/tree/main">llm-cli-helper</a>.
+
+   <em>Keep a lookout:</em>
+
+1. Practice critical thinking about content seeking emotional reactions.
+1. Identify fear mongering for clicks.
+1. Identify fake news misinformation by researching the legitimacy of sources (WSJ, GroundNews, FactCheck.org, Snopes.com, and PolitiFact.com).
+1. Identify logs and indicators of compromise (host files, auto-start processes).
+
+   <em>Block intruders:</em>
    
-<a href="#SafeData">B. Securely handle secrets</a><br /> - 1) $50 Certified in CyberSecurity (CC) certification from ISC2
-   
-   1. Evaluate risk of man-in-the-middle attacks using websites <a target="_blank" href="https://onetimesecret.com/">yopass.se</a> or <a target="_blank" href="https://password.link/en">passlink</a>.
-   2. Install and configure password manager to securely store secrets locally.
-   3. Install GPG to use receiver's public gpg key to encrypt file locally for email so receiver can decrypt with private key.
-   3. Install and configure Signal app for end-to-end encryption of messages.
-   4. Install and configure Akeyless web service to store secrets retrieve by programs.
+1. Evaluate risk of man-in-the-middle attacks using websites <a target="_blank" href="https://onetimesecret.com/">yopass.se</a> or <a target="_blank" href="https://password.link/en">passlink</a>.
+1. Use <a target="_blank" href="https://www.VirusTotal.com/">VirusTotal.com</a> to check whether host name and IP address have been reported as malicious.
+1. Router password instead of default passwords (to not participate in DDoS)
+      
+1. Use <a href="#GoogleClassroom">Google Classroom</a>.
+
+
+<a href="#Socials">E. Craft profiles, static website, portfolio projects</a> 
+
+   <em>Images of your face and body is a secret</em>
+
+   1. Recognize the impact misuse of reverse image search (clearview.ai).
+   1. Set <strong>Instgram</strong> account to private so it knows not to use your photos for training their AI.
+   1. Modify Jupyter Python code within a cloud to create obfuscated privacy-maintaining portrait using Machine Learning style transfer.
+   1. Upload an obfuscated profile photo to gravatar.com so other websites can (using MD5 hash) associate emails with a profile image.
 
 <a href="#Collaboration">C. Plan and track work collaboratively</a> using SaaS tools (Google Classroom, Twilio) - 3) Kanban
 
    1. Build an airgapped (stand-alone) Raspberry Pi for <a target="_blank" href="https://circl.lu/projects/CIRCLean/">CIRClean on USB</a> to examine & <a target="_blank" href="https://lwn.net/Articles/626559/">scrub</a> USB drives.
    1. Use CLI utility <a target="_blank" href="https://github.com/magic-wormhole/magic-wormhole">magic-wormhold</a> to send and receive files peer-to-peer
+   1. Offline web apps
 
 <a href="#GitHub">D. Read and contribute to projects on GitHub using git</a><br /> - 2) GitHub Foundations certification
 
@@ -49,12 +123,17 @@ By the end of this course, the learner would be able to:
    1. Contribute to an open-source repository on GitHub by forking.
    1. Format documentation in <a target="_blank" href="https://github.com/mattcone/markdown-guide">Markedown format</a>
 
-<a href="#Socials">E. Craft profiles, static website, portfolio projects</a> 
+<a href="#PythonApps">G. Code Python apps</a><br /> - 4) <a target="_blank" href="https://wilsonmar.github.io/python-certifications/">Python Fundamentals certification</a>
 
-   1. Modify Jupyter Python code within a cloud to create a privacy-maintaining portrait using Machine Learning style transfer.
-   1. Upload a profile photo to gravatar.com so other websites can (using MD5 hash) associate emails with a profile image.
+<a href="#Clouds">H. Navigate within cloud environments</a> (Hertzer, AWS, Azure, Google)
 
-<a href="#ConfigScratch">F. Configure and administer a computer from scratch</a><br /> - 3) $178 CompTIA Linux+ certification
+   1. Obtain free accounts to use clouds.
+   1. Setup user account permissions to avoid using too-powerful root credentials.
+   1. Install CLI programs to enable shell scripts to automate use of clouds.
+   
+<a href="#LowCodeApps">I. Use low-code systems to develop a mobile app</a> - Outsystems?
+
+<a href="#ConfigScratch">J. Configure and administer a computer from scratch</a><br /> - 3) $178 CompTIA Linux+ certification
 
    1. Use CLI commands to create a USB drive from a downloaded ISO image to boot up a machine.
    1. Use CLI commands to run bash scripts.
@@ -63,16 +142,6 @@ By the end of this course, the learner would be able to:
 
    1. Install <a target="_blank" href="https://privatebin.info/">PrivateBin</a> server for encryption before sending to zero-knowledge server.
    1. Encrypt secret text and send to another for decryption (end-to-end encryption) using <a target="_blank" href="https://privatebin.info/">zeor-knowledge</a> 
-
-<a href="#Clouds">G. Navigate within cloud environments</a> (Hertzer, AWS, Azure, Google)
-
-   1. Obtain free accounts to use clouds.
-   1. Setup user account permissions to avoid using too-powerful root credentials.
-   1. Install CLI programs to enable shell scripts to automate use of clouds.
-   
-<a href="#LowCodeApps">H. Use low-code systems to develop a mobile app</a> - 
-
-<a href="#PythonApps">I. Code Python apps</a><br /> - 4) <a target="_blank" href="https://wilsonmar.github.io/python-certifications/">Python Fundamentals certification</a>
 
 - 5) College Board AP Computer Science Principles (March)
 
@@ -115,9 +184,7 @@ The background color is changed for flagging additional review.
 To <a target="_blank" href="https://thevitalcurriculum.super.site/1697e3f550934489b3b23ef29e278382">
 prompt GPT to write flashcard text</a>
 
-Hands-on activities:
-
-   <br /><br />
+POLLs
 
 Learners create hands-on practical projects - with live presentation video recording and descriptions profiles
 
@@ -125,19 +192,29 @@ Learners create hands-on practical projects - with live presentation video recor
    1. Create a static github.io website using Jekyll using Ruby or 11ty using Node.
    1. Register a domain name.
 
-   1. Create a mobile app using a <strong>"low-code"</strong> development platform (Outsystems) calling several GenAI APIs.
-   1. Create secure password: using base-6 dice and lookup diceware list or base-20 numbers to a fandom list. Explain password best practices ITF 6.5.
+   1. PROJECT: Create secure password: using base-6 dice and lookup diceware list or base-20 numbers to a fandom list. Explain password best practices ITF 6.5.
    <br /><br />
 
 Computer Science Education Week in early December.
 
 We <strong>analyze</strong> each technology based on the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the AP CSP curriculum and exam:
 
-   * <a href="#CreativeDevelopment">Big Idea 1: [Creative] Development</a>
-   * <a href="#DataAnalysis">Big Idea 2: Data & [Analysis]</a>
-   * <a href="#Algorithms">Big Idea 3: [Algorithms] and Programming</a>
-   * <a href="#SystemsNetworks">Big Idea 4: Computer [Systems] and Networks</a>
-   * <a href="#ImpactComputing">Big Idea 5: [Impact] of Computing</a>
+   * 10-13% <a href="#CreativeDevelopment">Big Idea 1: Creative Development</a>
+   * 17-22% <a href="#DataAnalysis">Big Idea 2: Data & Analysis</a>
+
+   * 30-35% <a href="#Algorithms">Big Idea 3: Algorithms and Programming</a>
+   * 11-15% <a href="#SystemsNetworks">Big Idea 4: Computer Systems and Networks</a>
+   * 21-26% <a href="#ImpactComputing">Big Idea 5: Impact of Computing</a>
+   <br /><br />
+
+<a target="_blank" href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-conceptual-framework-2020-21.pdf">Computational Thinking practices PDF</a>:
+
+   * Practice 1 - Computational Solution Design: Design and evaluate computational solutions for a purpose.
+   * Practice 2 - Algorithms and Program Development: Develop and implement algorithms.
+   * Practice 3 - Abstraction in Program Development: Develop programs that incorporate abstractions.
+   * Practice 4 - Code Analysis: Evaluate and test algorithms and programs.
+   * Practice 5 - Computing Innovations: Investigate computing innovations.
+   * Practice 6 - Responsible Computing: Contribute to an inclusive, safe, collaborative, and ethical computing culture.
    <br /><br />
 
 We make use of tools professionals use (where possible):
@@ -151,9 +228,9 @@ We make use of tools professionals use (where possible):
 
 <a name="SafeComputing"></a>
 
-&nbsp; &nbsp; &nbsp;<strong>A. Practice safe defensive computing practices</strong>  [Systems] [Impact]
+&nbsp; &nbsp; &nbsp;<strong>A. Practice safe & efficient computing practices</strong>  [Systems] [Impact]
 
-1. <a href="#HowWeLearn">How we learn</a> & Active listening
+1. <a href="#HowWeLearn">How we learn</a>
 
    <strong>Risks</strong>
 
@@ -164,48 +241,63 @@ We make use of tools professionals use (where possible):
 1. POLLS: Risk management: priorities, tolerance - CC 1.2.1
    * Impact
    * Probability
+1. Jobs & <a target="_blank" href="https://www.topmastersineducation.com/school-districts-with-highest-average-teacher-salary/">salaries</a>
 
-   <strong>Preparing for Recovery</strong>
+   <strong>Value of data and information - ITF 1.4 </strong>
 
-   <strong>Backup to restore (3-2-1 rule)</strong>
+1. POLL on PRIORITIZATION: What do you value?
+   * Photos & videos (on iPhone or Android)
+   * Contacts
+   * Calendar (Dec 10 for PT, May 15 for exam)
+   * Emails (hygiene)
+   * Docs & Files (on Google Drive, <a target="_blank" href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam/past-exam-questions">Exam questions</a>)
+   * Apps
+   * ?
 
-1. Contacts
-1. Calendar
-1. Photos on iPhone
-1. Emails hygiene
-1. Files (on Google Drive)
+   For a business:
+   * Proprietory IP (Intellectual Property) - Trademarks, Copyrights, Patents, Trade Secrets - ITF 1.4.2
+
+1. Ransomware (Advanced Persistent Threats by state actors)
 
 1. Incident Response - CC 2.3
-   * EXERCISE: Who to call: Phone #s, acct #. Stop loss.
-1. Opartions/Business continuity - ITF 6.7 & CC 2.1
-   * Use old phone? Nearest stores
-1. Disaster Recovery - CC 2.1
-   * EXERCISE: Steps to setup new smartphone (apps)
+   * EXERCISE lost phone: Find My; Who to call: Phone #s, acct #. Stop loss.
+1. Opertions/Business continuity - ITF 6.7 & CC 2.1
+   * Use old phone? Nearest phone stores (SIMless)
 
+   <strong>Enabling Easy/Quick Recovery:</strong>
+
+1. Backup to restore (3-2-1 rule)
+1. Disaster Recovery - CC 2.1
+   * EXERCISE: Steps to setup new smartphone (apps, settings)
+
+1. Social Engineering Vishing (credential harvesting) - CC 5.4
+   * Vishing is the fraudulent practice of making phone calls or leaving voice messages purporting to be from reputable companies in order to induce individuals to reveal personal information, such as bank details and credit card numbers.
+
+1. Critical thinking (misinformation & manipulation): 
+   * How <strong>valid</strong> is the sender? 
+   * How <strong>biased</strong> is its source? <a target="_blank" href="">News</a> - KA 1
+   * How <strong>valid (true)</strong> is the content? (Survey says by who?)
+   * What is that trying to make me <strong>feel or do</strong>? Clickbait to serve up advertising & propaganda?
+   * Is the <strong>rationale</strong> logically related to the requested action?
 
 1. Rules to secure communication with children: protect identity, parental consent
    * Website alert/check for PG13 & 18+
    * <a target="_blank" href="https://www.nsopw.gov/search-public-sex-offender-registries">Dru Sjodin National Sex Offender Public Website</a> limitations: mapping, 3 miles
 1. Privacy policy - CC 5.3
 
-
-1. Jobs
-
-
-1. Value of data and information - ITF 1.4
-   * Intellectual Property (Trademarks, Copyrights, Patents, Trade Secrets) - ITF 1.4.2
-   * Ransomware & cyber warfare
-1. Social Engineering Vishing (credential harvesting) - CC 5.4
-
-   <strong>Prevention</strong>
+   <strong>Prevention Controls</strong>
 
 1. Governance: Policies, Procedures, Standards, Regulations and laws - CC 1.5
 1. Professional code of conduct from ISC2 - CC 1.4
 1. Reputation: Revilers not welcome
 
-1. Authorized versus unauthorized personnel - CC 1.3.3
 1. Physical security controls (e.g., badge systems, gate entry, environmental design) - CC 1.3.3
 1. Physical Monitoring (e.g., security guards, closed-circuit television (CCTV), alarm systems, cameras, logs) - CC 1.3.3
+
+1. Authorized versus unauthorized personnel - CC 1.3.3
+1. Confidentiality, Integrity, availability (CIA) concerns - ITF 6.1 & CC 1.1
+   * Federated authentication: Apple, Microsoft, Google, Facebook, Twitter, Clever
+
 1. Principle of least privilege - CC 3.2.1
 1. Segregation of duties - CC 3.2.2
    1. Discretionary access control (DAC) - CC 3.2.3
@@ -226,10 +318,6 @@ We make use of tools professionals use (where possible):
 1. Technical controls - CC 1.3.2
 1. Administrative controls - CC 1.3.1
 
-1. Confidentiality, Integrity, availability (CIA) concerns - ITF 6.1 & CC 1.1
-   * Federated authentication: Apple, Microsoft, Google, Facebook, Twitter, Clever
-
-
 1. Digital Divide: PC x86 laptops vs macOS RaspberryPi ARM vs Chromebooks (<a target="_blank" href="https://www.youtube.com/watch?v=z6oyqrrXTLM">Linux on Chromebook</a>) - KA
    * Secure config FaceTime & iMessage on iPhones 
 
@@ -244,7 +332,9 @@ We make use of tools professionals use (where possible):
 1. Uses of encryption - ITF 6.6
 1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS, 
    * <a target="_blank" href="https://www.signal.org/">Signal messaging</a> uses <a target="_blank" href="https://signal.org/blog/pqxdh/">post-quantum encryption</a>
-1. HANDS-ON: Use VirusTotal.com to check issues whether host name and IP address is malicious
+1. HANDS-ON: Use VirusTotal.com to check issues whether host name and IP address is malicious.
+1. HANDS-ON: Request take-down from data brokers.
+1. Remove apps and delete accounts you don't use anymore (justdeleteme.xyz)
 
 1. Logging tracking
 1. Indicators of Compromise
@@ -252,11 +342,6 @@ We make use of tools professionals use (where possible):
    * SleuthKit.org command-line tools
    * AccessData
    * Autopsy.com software (for Windows FTK from Basis Technologies)
-
-1. Critical thinking (misinformation & manipulation): 
-   * What is that trying to make me feel or do? Clickbait to serve up advertising & propaganda?
-   * How valid (true) is the info? 
-   * How biased is its source? <a target="_blank" href="">News</a> - KA 1
 
 1. <a target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-register-passkey-authenticator?tabs=iOS">Setup Microsoft Passkey</a> Authenticator
 
@@ -527,91 +612,9 @@ We make use of tools professionals use (where possible):
 
 
 
-   <a name="Clouds"></a>
-   
-   <strong>F. Navigate within cloud environments (AWS, Azure, Google)</a>
-
-   <em>The scope here is to be able to sign up and get permissions to navigate the menu. Creating resources is covered in more advanced classes.</em>
-
-1. Internet service types: ITF 2.4
-1. From traditional on-prem. to clouds
-1. Computer Clouds: Azure, AWS, GCP, Oracle, Hitzner, etc.
-1. Downsides of cloud
-
-1. NodeJs vs Python vs Rust vs Java vs Go [TIOBE rankings]
-1. <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms">Khan</a>: Algorithms: 
-   * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">Khan</a>: Binary Sort [calc average]
-
-1. "AI/ML for Oceans" https://code.org/oceans
-1. <a target="_blank" href="https://www.youtube.com/watch?v=mCk4Rabkmjc">ChatGPT</a>
-1. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
-1. REST API programming (Postman and other tools)
-1. Countries and cities of the world - compare latency averages and anomalies over time
-
-   <em>There currently is no certification for AI</em>
-
-
-   <a name="ConfigScratch"></a>
-
-   <strong>F. Configure and administer a computer from scratch</strong>
-
-   <em>The scope here is to gain understanding of the lifecycle and automation to setup and troubleshooting</em>
-
-1. Home Lab components (CPU, Memory, etc.) - ITF 2.3
-1. 8-bit to 16, 32, 64, 128 - ITF 2.3
-1. File Systems: format USB chips and drives
-1. [Install a USB chip to setup a Zima board from scratch]
-1. Configuration files: between json & yaml & xml & toml 
-1. dotfiles from others
-1. Logs: [convert epoch date]
-
-1. <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
-1. Internet of Things (IoT) to quantify and control physical objects (Foot pedals)
-1. Send analog talk between from a radio between repeaters connected to the internet
-
-1. IoT devices - ITF 2.6
-
-1. Install & configure wireless network ITF 2.8
-1. [Use Wireshark to analyze wire-level packets]
-
-1. system hardening - CC 5.2.1
-1. Configuration management (e.g., baselines, updates, patches) - CC 5.2.2
-
-1. Server Backup & Restore 
-1. Server Incident Management
-
-1. CERTIFICATION: $84 CompTIA TF+ (IT Foundations+) (https://www.comptia.org/certifications/a) 
-1. CERTIFICATION: CompTIA A+ (https://www.comptia.org/certifications/a) 
-   * $253 220-1102 - operating systems, security, software, operational procedures.
-   * $253 220-1101 - mobile devices, networking technology, hardware, virtualization, cloud computing.
-1. CERTIFICATION: LPIC-1 101 $200
-   <br /><br />
-
-
-   <a name="LowCodeApps"></a>
-
-   <strong>H. Use low-code systems to develop apps</strong>
-
-1. Flow charts, branching ITF 4.2
-1. GUI Design: DEMO: Figma/Tailwind
-1. <a target="_blank" href="https://www.youtube.com/watch?v=mop6g-c5HEY">GUI coding in Python</a> using Tcl
-
-1. [Modify a e-commerce shop template] (Gumroad, Shopify, etc.)
-1. <a target="_blank" href="https://www.youtube.com/watch?v=xkMuykgicYA">"full speed into a brick wall"</a>
-1. Odoo app templates
-1. Outsystems app creator
-
-1. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
-
-1. [Use AI to Solve word problems]
-
-1. <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/data-analysis-101">KA 5</a>
-1. Database ITF 5.1, DB structures ITF 5.2, Interface ITF 5.3
-
-
    <a name="PythonApps"></a>
 
-   <strong>I. Code Python apps</strong>
+   <strong>F. Code Python apps</strong>
 
    APCSP requires submission of code to full programs to meet the "Create Performance Tasks" rubic for 30% of the exam score.
 
@@ -652,15 +655,20 @@ We make use of tools professionals use (where possible):
 
 1. Programming language categories ITF 4.1, <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101">KA 3: Programming</a>
 
-1. Identifiers, Containers, Objects ITF 4.3
-
-   <strong>Core Pytong coding</strong>
+   <strong>Core Pythong coding:</strong>
 
 1. Data types (boolean, char, string, integers, float) - ITF 1.2
 1. Data Types, Evaluations, and Basic I/O Operations (20% - 6 exam items)
 1. Flow Control – loops and conditional blocks (20% - 6 exam items)
 1. Data Collections – Lists, Tuples, and Dictionaries (23% - 7 exam items)
+
 1. Functions (20% - 6 exam items) <a target="_blank" href="https://www.youtube.com/watch?v=kGcUtckifXc">Functions</a>
+1. Identifiers, Containers, Objects ITF 4.3
+
+1. <a target="_blank" href="https://wilsonmar.github.io/python-certs/">CERTIFICATION</a>: $59 PCAP-31-02 "Certified Entry-Level Python Programmer Certification"
+
+
+   <strong>Next-level Python programming</strong>
 
 1. Efficiency of Methods: <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation">Khan</a>: Big-O Notation: Asymptotic calculations]
 
@@ -677,7 +685,92 @@ We make use of tools professionals use (where possible):
 1. Trees
 1. <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/x2d2f703b37b450a3:simulations">KA Simulations</a>
 
-1. CERTIFICATION: $59 PCAP-31-02 “Certified Entry-Level Python Programmer Certification” (https://wilsonmar.github.io/python-certs/)
+1. PROJECT: Create a mobile app using a <strong>"low-code"</strong> development platform (Outsystems) calling several GenAI APIs.
+
+1. <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/data-analysis-101">KA 5</a>
+
+1. Database ITF 5.1, DB structures ITF 5.2, Interface ITF 5.3
+
+
+
+   <a name="Clouds"></a>
+   
+   <strong>G. Navigate within cloud environments (AWS, Azure, Google)</a>
+
+   <em>The scope here is to be able to sign up and get permissions to navigate the menu. Creating resources is covered in more advanced classes.</em>
+
+1. Internet service types: ITF 2.4
+1. From traditional on-prem. to clouds
+1. Computer Clouds: Azure, AWS, GCP, Oracle, Hitzner, etc.
+1. Downsides of cloud
+
+1. NodeJs vs Python vs Rust vs Java vs Go [TIOBE rankings]
+1. <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms">Khan</a>: Algorithms: 
+   * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">Khan</a>: Binary Sort [calc average]
+
+1. "AI/ML for Oceans" https://code.org/oceans
+1. <a target="_blank" href="https://www.youtube.com/watch?v=mCk4Rabkmjc">ChatGPT</a>
+1. Amazon AWS and Microsoft Azure cloud service to access workstations and data (freemium)
+1. REST API programming (Postman and other tools)
+1. Countries and cities of the world - compare latency averages and anomalies over time
+
+   <em>There currently is no certification for AI</em>
+
+
+   <a name="LowCodeApps"></a>
+
+   <strong>H. Use low-code systems to develop apps</strong>
+
+1. Flow charts, branching ITF 4.2
+1. GUI Design: DEMO: Figma/Tailwind
+1. <a target="_blank" href="https://www.youtube.com/watch?v=mop6g-c5HEY">GUI coding in Python</a> using Tcl
+
+1. [Modify a e-commerce shop template] (Gumroad, Shopify, etc.)
+1. <a target="_blank" href="https://www.youtube.com/watch?v=xkMuykgicYA">"full speed into a brick wall"</a>
+1. Odoo app templates
+1. Outsystems app creator
+
+1. Workflow CI/CD automation (GitHub Actions, Jenkins/Cloudbees cloud)
+
+1. [Use AI to Solve word problems]
+
+
+   <a name="ConfigScratch"></a>
+
+   <strong>J. Configure and administer a computer from scratch</strong>
+
+   <em>The scope here is to gain understanding of the lifecycle and automation to setup and troubleshooting</em>
+
+1. Home Lab components (CPU, Memory, etc.) - ITF 2.3
+1. 8-bit to 16, 32, 64, 128 - ITF 2.3
+1. File Systems: format USB chips and drives
+1. [Install a USB chip to setup a Zima board from scratch]
+1. Configuration files: between json & yaml & xml & toml 
+1. dotfiles from others
+1. Logs: [convert epoch date]
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=UWlrodHF1EE">Open Media Vault</a>
+1. Internet of Things (IoT) to quantify and control physical objects (Foot pedals)
+1. Send analog talk between from a radio between repeaters connected to the internet
+
+1. IoT devices - ITF 2.6
+
+1. Install & configure wireless network ITF 2.8
+1. [Use Wireshark to analyze wire-level packets]
+
+1. system hardening - CC 5.2.1
+1. Configuration management (e.g., baselines, updates, patches) - CC 5.2.2
+
+1. Server Backup & Restore 
+1. Server Incident Management
+
+1. CERTIFICATION: $84 CompTIA TF+ (IT Foundations+) (https://www.comptia.org/certifications/a) 
+1. CERTIFICATION: CompTIA A+ (https://www.comptia.org/certifications/a) 
+   * $253 220-1102 - operating systems, security, software, operational procedures.
+   * $253 220-1101 - mobile devices, networking technology, hardware, virtualization, cloud computing.
+1. CERTIFICATION: LPIC-1 101 $200
+   <br /><br />
+
 
 
 Soon, AI would capture ever bit human-generated writings ever created.
