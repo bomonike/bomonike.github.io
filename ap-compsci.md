@@ -1,5 +1,7 @@
 This article presents a path for preparing high school students to begin careers in the cyber-enhanced workplace of the 21st century.
 
+This course is for those curious about how things work and enjoy taking a deep dive into technology.
+
 Highlights:
 
 1. Before touching a computer, learners earn a "drivers license" about safe computing (A)
@@ -23,16 +25,15 @@ Gen Z slang "glow-up" = a major improvement in one's self, usually an improvemen
 
 By the end of this course, the learner would be able to (by following step-by-step instructions executing automated scripts):
 
-<a href="#SafeData">A. Securely handle secrets</a>
+   ### <a href="#Welcome">A. Feel welcome and optimistic</a>
+
+   <em>Your data is an asset of value:</em>
 
 1. Define Threat model: what do you value?
    
-<a href="#SafeComputing">B. Practice safe and efficient computing practices</a>
+   ### <a href="#SafeComputing">B. Practice safe and efficient computing practices</a>
 
-   <em>Keep updated to the latest versions:</em>
-
-1. Configure you OS to automatically update.
-1. Make a checklist to run through all that you do to verify whether everything still works.
+   <em>This is <a target="_blank" href="https://studio.code.org/s/csp2-2023?redirect_warning=true">Code.org's APCSP Unit 2 "The Internet"</a> expanded</em>
 
    <em>Don't tell everyone everything</em>
 
@@ -40,9 +41,13 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Compartmentalization: different pseudonym identities and a browser profile for each use (School, Browsing, Shopping, YouTube, Snapchat, Dating)
 1. Use alternative VoIP (Google Voice, hushed.com, MySudo.com, etc.)
 1. For alternate network, account verification, Android, get a phone & plan for MVNO (<a target="_blank" href="https://www.consumerreports.org/electronics-computers/cell-phones-services/best-and-worst-phone-plan-providers-a7549256764/">top-rated</a> <a target="_blank" href="https://www.consumercellular.com/shopping/choose/plan">$20/m Consumer Cellular</a> on AT&T's network, <a target="_blank" href="https://www.ultramobile.com/plans/" title="888.777-0446">$15/m ultramobile.com</a> and <a target="_blank" href="https://www.visible.com/">$25/m Visible</a> use Verizon's network, <a target="_blank" href="https://mintmobile.com/">$15/mo MintMobile</a> uses T-Mobile's network).
-1. Use Paypal & alternative credit cards (privacy.com) with parental controls.
-1. Track where your give out your credit cards to.
+1. Use Paypal or one-time credit card numbers (privacy.com).
+1. Use a spreadsheet to track where your give out your credit cards to.
 1. Setup a credit freeze to block opening of new credit lines.
+
+   <em>Evaluate and select tools:</em>
+
+1. Evaluate and select a text editor/IDE: vim, VSCode, PyCharm
 
    <em>Bash your first programming language</em>
 
@@ -56,19 +61,34 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Obtain a github account using an email.
 1. Create an SSH key pair to keep your repositories private.
 
-   <em>Isolate each Python program:</em>
+   <em>On laptops, isolate each Python program:</em>
 
-1. Understand the different (convoluated) ways to install Python.
-1. Install <a target="_blank" href="https://virtualenv.pypa.io/en/latest/installation.html">virtualenv</a>
-1. Dowload a sample ("Hello World") Python repo from GitHub.
-1. Establish venv folder.
-1. Examine chain of imported modules dependencies and reported CVEs in an SBOM.
-1. Download dependencies based on requirements.txt.
-1. Do a test run.
+1. Understand the different (convoluated) ways to install Python (pyenv, Juypter, pip, Conda, Miniconda).
+1. Install <a target="_blank" href="https://virtualenv.pypa.io/en/latest/installation.html">virtualenv</a> and Miniconda (which comes with its own Python interpreter).
+1. Add Python to the $PATH where the operating system looks for programs.
+1. Clone a code repo from GitHub and navigate into the git-created folder.
 
-   <em>Don't use the same password on several accounts: ITF 6.5</em>
+1. Make venv folder and activate.
+1. Generate a SBOM and examine imported modules dependencies with reported CVEs.
+1. Download dependencies <tt>pip install -r requirements.txt</tt>
+1. Run program through a code linter utility.
 
-1. Use haveibeenpwned.com to check if credentials and data behind an email has been stolen.
+1. Copy code, prompt ChatGPT "what does this code do?" and paste code.
+1. Within Visual Studio Code, set break points and run the program one line at a time.
+1. Reformat code using formatting utility.
+1. Prompt ChatGPT to "improve this code".
+
+   <em>Keep updated to the latest versions:</em>
+
+1. Configure you OS to automatically update.
+1. Make a checklist to run through all that you do to verify whether everything still works.
+
+  
+   ### <a href="#SafeData">C Securely handle secrets</a>
+
+   <em>Don't reuse a password on several accounts: ITF 6.5</em>
+
+1. Use <a target="_blank" href="https://www.haveibeenpwned.com/">haveibeenpwned.com</a> to check if credentials and data behind an email has been stolen.
 1. Install, configure, use local <a target="_blank" href="https://www.privacytools.io/secure-password-manager">password manager</a> KeepassXC to generate passwords.
 
    <em>Use really strong passwords:</em>
@@ -78,12 +98,15 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Install, configure, use cloud-based Twilio's Authy app for 2FA (Two-factor authentication) with TOTP (Temporary Token).
 1. TRIVIA: Use scientific calculator to define entropy of password length, complexity, IPv4 & IPv6
 
-   <em>Use encryption:</em>
+   <em>Use encryption: ITF 6.6</em>
 
 1. Install and configure Signal app for sharing secrects using end-to-end encrypted <a target="_blank" href="https://www.privacytools.io/privacy-messaging">private messaging</a>. Ask friends to do the same for uniting iPhone & Android.
 1. Install and configure Akeyless web service to store secrets retrieved by programs.
 1. Install and configure <a target="_blank" href="https://www.privacytools.io/privacy-email">privacy email client</a> Startmail with aliases.
 1. Install GPG to use receiver's public gpg key to encrypt files locally for email so receiver can decrypt with private key.
+
+ 
+   ### <a href="#ProtectData">D. Protect your data</a>
 
    <em>Backup and recover data:</em>
 
@@ -93,14 +116,27 @@ By the end of this course, the learner would be able to (by following step-by-st
    <em>Clear out what you don't use:</em>
 
 1. Shred deleted files. Burn papers.
-1. Clean system and free disk space using BleachBit.
+1. Clean system and free disk space (using BleachBit).
 
    <em>Stop data theft:</em>
 
-1. Configure OS to use safer DNS 9.9.9.9 (instead of tracker default or Google's 8.8.8.8)
 1. Request take-down from (long) list of data brokers ($20/yr deleteme).
+1. Configure OS to use safer DNS 9.9.9.9 (instead of tracker default or Google's 8.8.8.8 which saves your activity)
 1. Opt out of analytics and "customizations" on all devices, include TVs, Apple+, Roku.
 1. Use <a target="_blank" href="https://www.privacytools.io/world-maps">private map apps</a> (openstreetmap.org) instead of Google Maps.
+
+   <strong>Internationalization (i18n) & Localization:</strong>
+
+1. Maps: bookmarks: apple, google, Flightsim, world heritage sites
+1. Locales (languages), UTC Time zones https://wilsonmar.github.io/calendar
+   * Dateline & Daylight saving time (India, Russia, China)
+1. Identify Longitude and Latitude coordinates on the globe. Calculate your Lat/Long. 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Zai0r1QvQw4">Set location in browser</a>
+1. EXERCISE: Analytics: Create miles & meters vs. latency scatterplot
+1. ASCII vs. unicode Notation systems - ITF 1.1
+  * Unicode chars (echo u2014 for em dash, u1f643 for upside-down smiley face. Currency: Euros, Pounds)
+  * On macOS: click the globe key, click on >> at the lower-right.
+1. Countries: codes +1, world map, <a target="_blank" href="https://capturelabs.sonicwall.com/m/feature/security-center">adversarial</a>, <a target="_blank" href="https://freedomhouse.org/countries/freedom-net/scores">freedoms</a>
 
    <em>Configure settings for privacy and safety:</em>
 
@@ -129,14 +165,22 @@ By the end of this course, the learner would be able to (by following step-by-st
 
 1. Use <a href="#GoogleClassroom">Google Classroom</a>.
 
-<a href="#Socials">E. Craft profiles, static website, portfolio projects</a>
+   ### <a href="#Socials">E. Craft profiles, articles, portfolio</a>
 
    <em>Your face and body are a secret</em>
 
-   1. Recognize the impact misuse of reverse image search (clearview.ai).
-   1. Set <strong>Instagram</strong> account to private so it does not use your photos for training their AI.
-   1. Modify Jupyter Python code within a cloud to create obfuscated privacy-maintaining portrait using Machine Learning style transfer.
-   1. Upload an obfuscated profile photo to gravatar.com so other websites can (using MD5 hash) associate emails with a profile image.
+1. Recognize the impact misuse of reverse image search (clearview.ai).
+1. Set <strong>Instagram</strong> account to private so it does not use your photos for training their AI.
+1. Upload an obfuscated profile photo to gravatar.com so other websites can (using MD5 hash) associate emails with a profile image.
+
+   <em>Generate portraits using Python Jupyter:</em>
+
+1. Modify Python Jupyter code within Google's cloud CodeLab to create obfuscated privacy-maintaining portrait using Machine Learning style transfer.
+   1. Handle <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">secrets</a> in Juypter <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">sample</a> 
+   1. Jupyter Graphing vs Cabana vs Superset 
+   1. Python numpy for calculations
+   1. matplotlib and Seaborn modules for graphing
+   1. Use ChatGPT in Codebin to evaluate CSS display to generate <a target="_blank" href="https://www.youtube.com/watch?v=EsRyyJmO-u8">VIDEO</a> tinyhost and webintoapp to Google Android store.
 
    <strong>Obfuscate your likeness:</strong>
 
@@ -149,28 +193,32 @@ By the end of this course, the learner would be able to (by following step-by-st
 
  - 1) $50 Certified in CyberSecurity (CC) certification from ISC2
 
-<a href="#Collaboration">C. Plan and track work collaboratively</a> using SaaS tools (Google Classroom, Twilio) - 3) Kanban
+   ### <a href="#Collaboration">F. Plan and track work collaboratively</a> using SaaS tools (Google Classroom, Twilio) - 3) Kanban
 
-   1. Use CLI utility <a target="_blank" href="https://github.com/magic-wormhole/magic-wormhole">magic-wormhold</a> to send and receive files peer-to-peer.
-   1. PROJECT: Create offline web apps.
+1. Use CLI utility <a target="_blank" href="https://github.com/magic-wormhole/magic-wormhole">magic-wormhold</a> to send and receive files peer-to-peer.
+1. PROJECT: Create offline web apps.
 
-<a href="#GitHub">D. Read and contribute to projects on GitHub using git</a><br /> - 2) GitHub Foundations certification
+   ### <a href="#GitHub">G. Read and contribute to projects on GitHub using git</a><br /> - 2) GitHub Foundations certification
 
-   1. Search through GitHub.com using several filters.
-   1. Contribute to an open-source repository on GitHub by forking, git clone, 
-   1. Format documentation in <a target="_blank" href="https://github.com/mattcone/markdown-guide">Markedown format</a>
+1. Search through GitHub.com using several filters.
+1. Contribute to an open-source repository on GitHub by forking, git clone, 
+1. Format documentation in <a target="_blank" href="https://github.com/mattcone/markdown-guide">Markedown format</a>
 
-<a href="#PythonApps">G. Code Python apps</a><br /> - 4) <a target="_blank" href="https://wilsonmar.github.io/python-certifications/">Python Fundamentals certification</a>
+   ### <a href="#PythonApps">H. Code Python apps</a><br /> - 4) <a target="_blank" href="https://wilsonmar.github.io/python-certifications/">Python Fundamentals certification</a>
 
-<a href="#Clouds">H. Navigate within cloud environments</a> (Hertzer, AWS, Azure, Google)
+   ### <a href="#Clouds">I. Navigate within cloud environments</a> (Hertzer, AWS, Azure, Google)
 
-   1. Obtain free accounts to use clouds.
-   1. Setup user account permissions to avoid using too-powerful root credentials.
-   1. Install CLI programs to enable shell scripts to automate use of clouds.
-   
-<a href="#LowCodeApps">I. Use low-code systems to develop a mobile app</a> - Outsystems?
+1. Obtain free accounts to use clouds.
+1. Setup user account permissions to avoid using too-powerful root credentials.
+1. Install CLI programs to enable shell scripts to automate use of clouds.
 
-<a href="#ConfigScratch">J. Configure and administer a computer from scratch</a><br /> - 3) $178 CompTIA Linux+ certification
+
+   ### <a href="#LowCodeApps">J. Use low-code systems to develop a mobile app</a> - Outsystems?
+
+1. Try <a target="_blank" href="https://earsketch.gatech.edu/">EarSketch</a> to program music.
+
+
+   ### <a href="#ConfigScratch">K. Configure and administer a computer from scratch</a><br /> - 3) $178 CompTIA Linux+ certification
 
    1. Use CLI commands to create a USB drive from a downloaded ISO image to boot up a machine.
    1. Use CLI commands to run bash scripts.
@@ -293,6 +341,7 @@ We make use of tools professionals use (where possible):
 
    For a business:
    * Proprietory IP (Intellectual Property) - Trademarks, Copyrights, Patents, Trade Secrets - ITF 1.4.2
+1. Provide appropriate attribution - <a target="_blank" href="https://studio.code.org/s/csp1-2023/lessons/11/student">CSP1</a> (<a target="_blank" href="https://www.youtube.com/watch?v=wC-m23T7cPM">VIDEO: Creative Commons</a>)
 
 1. Ransomware (Advanced Persistent Threats by state actors)
 
@@ -341,11 +390,14 @@ We make use of tools professionals use (where possible):
    1. Mandatory access control (MAC) - CC 3.2.4
    1. Role-based access control (RBAC) - CC 3.2.5
 
+   <em>"You computer ports are like your mouth. Avoid putting anything in there you do not trust."</em>
+
 1. Data handling policies - CC 5.3 USB, labeling - CC 5.1 using IoT device:
-   * "You computer ports are like your mouth. Avoid putting anything in there you do not trust." VIDEO
+   
    * HANDS-ON: Disable AutoRun & AutoPlay on Windows computer to prevent automatic execution of programs on the USB stick when it is inserted into the computer.
    * HANDS-ON: autorun files on USB drives (Random USB Stuxnet case)
    * HANDS-ON: Build an airgapped Raspberry Pi for <a target="_blank" href="https://circl.lu/projects/CIRCLean/">CIRClean on USB</a> to examine & <a target="_blank" href="https://lwn.net/Articles/626559/">scrub</a> USB drives
+
 1. Data handling policies - CC 5.3 proper destruction, retention, classification - CC 5.1
 
 1. Acceptable Use Policy (AUP) - CC 5.3
@@ -366,7 +418,6 @@ We make use of tools professionals use (where possible):
 1. Networking: airgap, wifi, internet, cellular, radios - ITF 2.3
 1. Units of measure for storage, throughput, processing - ITF 1.5
 
-1. Uses of encryption - ITF 6.6
 1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS, 
    * <a target="_blank" href="https://www.signal.org/">Signal messaging</a> uses <a target="_blank" href="https://signal.org/blog/pqxdh/">post-quantum encryption</a>
 1. HANDS-ON: Use VirusTotal.com to check issues whether host name and IP address is malicious.
@@ -413,16 +464,6 @@ We make use of tools professionals use (where possible):
    * Firefox config, <a target="_blank" href="https://capturelabs.sonicwall.com/m/feature/ip-reputation-lookup">IP Reputation Lookup</a>
 1. HANDS-ON: Create browser add-on using JavaScript
 
-   <strong>Internationalization (i18n) & Localization:</strong>
-
-1. Maps: bookmarks: apple, google, Flightsim, world heritage sites
-1. Countries: codes +1, world map, <a target="_blank" href="https://capturelabs.sonicwall.com/m/feature/security-center">adversarial</a>, <a target="_blank" href="https://freedomhouse.org/countries/freedom-net/scores">freedoms</a>
-1. Locales (languages), UTC Time zones https://wilsonmar.github.io/calendar
-   * Longitude & Latitude
-   * Dateline & Daylight saving time (India, Russia, China)
-1. EXERCISE: Analytics: Create miles & meters vs. latency scatterplot
-1. ASCII vs. unicode Notation systems - ITF 1.1
-  * Unicode chars (echo u2014 for em dash, u1f643 for upside-down smiley face. Currency: Euros, Pounds)
 
 1. Network threats (e.g., distributed denial-of-service (DDoS), virus, worm, Trojan, man-in-the-middle (MITM), side-channel) - CC 4.2
 1. Identification (e.g., intrusion detection system (IDS), host-based intrusion detection system (HIDS), network intrusion detection system (NIDS)) - CC 4.2
@@ -477,7 +518,6 @@ We make use of tools professionals use (where possible):
 1. Surveys, bias
 1. Correlation is not Causation
 
-1. Text editors: vim, VSCode
 
 1. Intelligent Agents - being outsmarted by superintelligence
 1. When AI runs out of human-generated data to consume
@@ -673,15 +713,7 @@ We make use of tools professionals use (where possible):
 1. PEP8
 1. OWASP: <a target="_blank" href="https://wilsonmar.github.io/owasp-testing">Known-bad sample code</a>
 
-1. PROJECT: Screen Scraper in Python using Selenium, Beautiful soup, etc.
-
-   <strong>Python Jupyter:</strong>
-
-1. Python Jupyter coding to run Machine Learning in cloud environments
-1. Handling secrets in Juypter <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">sample</a>
-1. Python numpy for calculations
-1. matplotlib for graphs
-1. Jupyter Graphing vs Cabana vs Superset <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">secrets</a>
+1. PROJECT: Screen Scraper in Python using Playright, Selenium, Beautiful soup, etc.
 
 1. Programming language categories ITF 4.1, <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/programming-101">KA 3: Programming</a>
 
@@ -735,7 +767,8 @@ We make use of tools professionals use (where possible):
 1. Downsides of cloud
 
 1. NodeJs vs Python vs Rust vs Java vs Go [TIOBE rankings]
-1. <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms">Khan</a>: Algorithms: 
+1. <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms">Khan</a>: Algorithms:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=fkIvmfqX-t0">Explained in 5 levels by Harvard profession</a>
    * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">Khan</a>: Binary Sort [calc average]
 
 1. "AI/ML for Oceans" https://code.org/oceans
@@ -744,14 +777,14 @@ We make use of tools professionals use (where possible):
 1. REST API programming (Postman and other tools)
 1. Countries and cities of the world - compare latency averages and anomalies over time
 
-   <em>There currently is no certification for AI</em>
+   <em>As of 2024 there is no certification for AI</em>
 
 
    <a name="LowCodeApps"></a>
 
    <strong>H. Use low-code systems to develop apps</strong>
 
-1. Flow charts, branching ITF 4.2
+1. Draw a flow chart about branching - ITF 4.2
 1. GUI Design: DEMO: Figma/Tailwind
 1. <a target="_blank" href="https://www.youtube.com/watch?v=mop6g-c5HEY">GUI coding in Python</a> using Tcl
 
