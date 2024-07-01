@@ -45,7 +45,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Use a spreadsheet to track where your give out your credit cards to.
 1. Setup a credit freeze to block opening of new credit lines.
 
-   <em>Evaluate and select tools:</em>
+   <em>Evaluate and select editors:</em>
 
 1. Evaluate and select a text editor/IDE: vim, VSCode, PyCharm
 
@@ -218,7 +218,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Try <a target="_blank" href="https://earsketch.gatech.edu/">EarSketch</a> to program music.
 
 
-   ### <a href="#ConfigScratch">K. Configure and administer a computer from scratch</a><br /> - 3) $178 CompTIA Linux+ certification
+   ### <a href="#ConfigScratch">K. Configure and administer a computer from scratch</a><br /> - 3) $178 CompTIA Tech+ certification
 
    1. Use CLI commands to create a USB drive from a downloaded ISO image to boot up a machine.
    1. Use CLI commands to run bash scripts.
@@ -286,7 +286,6 @@ We <strong>analyze</strong> each technology based on the <a href="#BigIdeas">"Fi
 
    * 10-13% <a href="#CreativeDevelopment">Big Idea 1: Creative Development</a>
    * 17-22% <a href="#DataAnalysis">Big Idea 2: Data & Analysis</a>
-
    * 30-35% <a href="#Algorithms">Big Idea 3: Algorithms and Programming</a>
    * 11-15% <a href="#SystemsNetworks">Big Idea 4: Computer Systems and Networks</a>
    * 21-26% <a href="#ImpactComputing">Big Idea 5: Impact of Computing</a>
@@ -302,13 +301,14 @@ We <strong>analyze</strong> each technology based on the <a href="#BigIdeas">"Fi
    * Practice 6 - Responsible Computing: Contribute to an inclusive, safe, collaborative, and ethical computing culture.
    <br /><br />
 
-We make use of tools professionals use (where possible):
-   * USB sticks
-   * Operating systems
-   * Keyboard shortcuts
-   * Installers
-   * IDE: Visual Studio Code (rather than thonny.org)
-   * Clouds
+Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simulation_kit">Physics simulation kit</a> provides:
+   * Standing Waves (standing.html)
+   * Interference Patterns (interference.html)
+   * Hooke's Law (hookes_law.html)
+   * Doppler Effect (doppler.html)
+   * Strings (strings.html)
+   * Psychedelic Doppler Effect (psychedelic.html)
+   <br /><br />
 
 
 <a name="SafeComputing"></a>
@@ -729,6 +729,11 @@ We make use of tools professionals use (where possible):
 
 1. <a target="_blank" href="https://wilsonmar.github.io/python-certs/">CERTIFICATION</a>: $59 PCAP-31-02 "Certified Entry-Level Python Programmer Certification"
 
+   <em>Object-Oriented Programming</em>
+
+1. The Tic-Tac-Toe two-player game played on a nine-square grid. <a target="_blank" href="https://hackr.io/blog/python-concepts-for-interviews">one of the concepts</a>. <a target="_blank" href="">Sample code</a>.
+1. Expand program scope to add Spock and Lizard.
+
 
    <strong>Next-level Python programming</strong>
 
@@ -834,6 +839,40 @@ We make use of tools professionals use (where possible):
 1. CERTIFICATION: LPIC-1 101 $200
    <br /><br />
 
+## CompTIA Tech+ certification
+
+*	Compare and contrast notational systems.	Tech+	1.1
+*	Compare and contrast fundamental data types and their characteristics.	Tech+	1.2
+*	Illustrate the basics of computing and processing.	Tech+	1.3
+*	Explain the value of data and information.	Tech+	1.4
+*	Compare and contrast common units of measure.	Tech+	1.5
+*	Explain the troubleshooting methodology.	Tech+	1.6
+*	Classify common types of input/output device interfaces.	Tech+	2.1
+*	Given a scenario, set up and install common peripheral devices to a laptop/PC.	Tech+	2.2
+*	Explain the purpose of common internal computing components.	Tech+	2.3
+*	Compare and contrast common Internet service types.	Tech+	2.4
+*	Compare and contrast storage types.	Tech+	2.5
+*	Compare and contrast common computing devices and their purposes.	Tech+	2.6
+*	Compare and contrast virtualization and cloud technologies.	Tech+	2.6
+*	Explain basic networking concepts.	Tech+	2.7
+*	Given a scenario, install, configure and secure a basic wireless network.	Tech+	2.8
+*	Given a scenario, install, configure and secure a basic wireless network.	Tech+	2.8
+*	Explain the purpose of operating systems.	Tech+	3.1
+*	Compare and contrast components of an operating system.	Tech+	3.2
+*	Explain the purpose and proper use of software.	Tech+	3.3
+*	Given a scenario, configure and use web browsers.	Tech+	3.5
+*	Identify common uses of artificial intelligence (AI).	Tech+	3.5
+*	Compare and contrast programming language categories.	Tech+	4.1
+*	Given a scenario, use programming organizational techniques and interpret logic.	Tech+	4.2
+*	Explain the purpose and use of programming concepts.	Tech+	4.3
+*	Explain database concepts and the purpose of a database.	Tech+	5.1
+*	Compare and contrast various database structures.	Tech+	5.2
+*	Summarize confidentiality, integrity, and availability concerns.	Tech+	6.1
+*	Explain methods to secure devices and best practices.	Tech+	6.2
+*	Compare and contrast authentication, authorization, accounting, and non-repudiation concepts.	Tech+	6.4
+*	Explain password best practices.	Tech+	6.5
+*	Explain common uses of encryption.	Tech+	6.6
+*	Explain business continuity concepts.	Tech+	6.7
 
 
 Soon, AI would capture ever bit human-generated writings ever created.
@@ -1266,8 +1305,8 @@ However, the aim of this course is to enable students to be more job ready.
 
 ### Montana
 
-https://codehs.com/states/MT
-> "Only 52 students in Montana took the Advanced Placement Computer Science exams in 2019 (16 AP CSA, 36 AP CSP); only 38% of exams were taken by females."
+According to https://codehs.com/states/MT
+> "52 students in Montana took the Advanced Placement Computer Science exams in 2019 (16 AP CSA, 36 AP CSP); 38% of exams were taken by females."
 
 Students who are homeschooled or go to a school that doesn’t administer AP Exams can find a school on the <a target="_blank" href="https://apcourseaudit.inflexion.org/ledger/">College Board's AP Course Ledger</a>, which lists secondary schools that have passed the AP Course Audit.
 
@@ -1275,7 +1314,7 @@ Students who are homeschooled or go to a school that doesn’t administer AP Exa
    <a target="_blank" href="https://nces.ed.gov/ccd/schoolsearch/">National Center for Educaton Statistics Search</a> by NCES School ID https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?Search=1&City=Joliet&State=30&Zip=59041&SchoolType=1&SchoolType=2&SchoolType=3&SchoolType=4&SpecificSchlTypes=all&IncGrade=-1&LoGrade=-1&HiGrade=-1&ID=301526000464
 
 * In Montana, for 23-24 there were 9 schools, up from 5 in 22-23, 6 in 21-22, and 4 in 20-21.
-   * Belgrade High School (<a target="_blank" href="https://maps.app.goo.gl/EawUtUSW5LanJACK8">NorthWest Bozeman</a>, Gallatin Valley) Amy Guevara</a>, STEM Coordinator, 406-924-2122. AP® participation rate at Belgrade High School is 34%. 
+   * AP® participation rate at Belgrade High School is 34%. (<a target="_blank" href="https://maps.app.goo.gl/EawUtUSW5LanJACK8">NorthWest Bozeman</a>, 303 N Hoffman St, Belgrade, MT 59714 Gallatin Valley) Amy Guevara</a>, STEM Coordinator, 406-924-2122. 
    * Capital High School, Helena 
    * Glacier HIgh School, Kalispell
    * Great Falls Central Catholic High School
@@ -1584,12 +1623,12 @@ many of the AP STEM subjects. Courses related to computer science:
    3. Programming
    4. Algorithms
    5. Data analysis
-   6. Simulations
+   6. Simulations (addressed especially by CMU)
    7. Online data security
    8. Computing innovations
    9. Exam preparation
    <br /><br />
-* <a target="_blank" href="https://www.khanacademy.org/computing/computer-science">Computer science theory</a> (Algorithms, Cryptography, Information theory)
+* <a target="_blank" href="https://www.khanacademy.org/computing/computer-science">Computer Science theory</a> (Algorithms, Cryptography, Information theory).
 
 ### CS50 Harvard
 
@@ -1605,7 +1644,7 @@ many of the AP STEM subjects. Courses related to computer science:
    Week 3 - Algorithms<br />
    Week 4 - Memory<br />
    Week 5 - Data Structures<br />
-   Week 6 - <a target="_blank" href="https://wilsonmar.github.io/">Python</a><br />
+   Week 6 - <a target="_blank" href="https://wilsonmar.github.io/python">Python</a><br />
    <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@e4cc36bce80b403f9940ec8ed6f24cce/block-v1:HarvardX+CS50+X+type@vertical+block@1bff0d3d54d34d8aa260429907c988ac">Week 6.5 - Artificial Intelligence</a> (misinformation)<br />
    Week 7 - SQL<br />
    Week 8 - HTML, CSS, JavaScript<br />
@@ -1635,6 +1674,11 @@ https://www.outsystems.com/education-program/
 https://www.csunplugged.org/en/
 Computer Science without a computer
 CS Unplugged is a collection of free teaching material that teaches Computer Science through engaging games and puzzles that use cards, string, crayons and lots of running around.
+
+
+
+
+
 
 ## Scholarships
 
