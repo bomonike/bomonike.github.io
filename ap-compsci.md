@@ -47,7 +47,8 @@ By the end of this course, the learner would be able to (by following step-by-st
 
    <em>Evaluate and select editors:</em>
 
-1. Evaluate and select a text editor/IDE: vim, VSCode, PyCharm
+1. Evaluate and select a text editor/IDE: vim, VSCode, PyCharm 
+1. Community Edition vs. Enterprise Editor licenses
 
    <em>Bash your first programming language</em>
 
@@ -94,6 +95,8 @@ By the end of this course, the learner would be able to (by following step-by-st
    <em>Use really strong passwords:</em>
 
 1. Prefer hardware devices (Yubikey, Nitrokey) over biometrics (finger, face recognition).
+1. PRE-READ: Generate pseudo-random numbers (coin, dice, 8-ball) JavaScript - <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/x2d2f703b37b450a3:simulations/x2d2f703b37b450a3:simulating-randomness/a/generating-random-numbers" title="Simulation">Khan CSP 2.1</a>
+   * <a target="_blank" href="https://replit.com/@PamelaFox1/CompoundBooleansCoinFlip#main.py">Python: coin flip</a>
 1. Create secure password: using base-6 dice and lookup diceware list or base-20 numbers to a fandom list.
 1. Install, configure, use cloud-based Twilio's Authy app for 2FA (Two-factor authentication) with TOTP (Temporary Token).
 1. TRIVIA: Use scientific calculator to define entropy of password length, complexity, IPv4 & IPv6
@@ -317,7 +320,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
 1. <a href="#HowWeLearn">How we learn</a>
 
-   <strong>Risks</strong>
+   <strong>Adapting to trends</strong>
 
 1. 15-year Generations: Boomer: TV, X: TV, Millenials: PCs, Z: Internet, <a target="_blank" href="https://www.wikiwand.com/en/Generation_Alpha">Alpha</a>: smartphones & AI
 1. Industrial ages: 1st: farming, 2nd: railroads & factories, 3rd: computers & internet, 4th: AI & robots
@@ -368,6 +371,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
 1. Rules to secure communication with children: protect identity, parental consent
    * Website alert/check for PG13 & 18+
+   * Receive an alert for mentions found in Google news
    * <a target="_blank" href="https://www.nsopw.gov/search-public-sex-offender-registries">Dru Sjodin National Sex Offender Public Website</a> limitations: mapping, 3 miles
 1. Privacy policy - CC 5.3
 
@@ -743,6 +747,8 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
 1. Arrays (data structures) and matrices using numpy functions for linear algebra, fourier transform, and other scientific uses
 1. Algorithms - start from and save to disk
+   * <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/building-algorithms/a/expressing-an-algorithm">Pig latin</a> in flowchart, pseudocode, JavaScript
+   * <a target="_blank" href="https://rosettacode.org/wiki/Rosetta_Code">RosettaCode</a> presents solutions to the same task in many different languages, to demonstrate how languages are similar and different, and to aid a person with a grounding in one approach to a problem in learning another.
 1. Search: Breath-first
 1. Two pointers
 1. Sliding Window
@@ -832,52 +838,56 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. Server Backup & Restore 
 1. Server Incident Management
 
-1. CERTIFICATION: $84 CompTIA TF+ (IT Foundations+) (https://www.comptia.org/certifications/a) 
+1. CERTIFICATION: $84 CompTIA Tech+ (formerly IT Foundations+) (https://www.comptia.org/certifications/a) 
 1. CERTIFICATION: CompTIA A+ (https://www.comptia.org/certifications/a) 
    * $253 220-1102 - operating systems, security, software, operational procedures.
    * $253 220-1101 - mobile devices, networking technology, hardware, virtualization, cloud computing.
-1. CERTIFICATION: LPIC-1 101 $200
+1. CERTIFICATION: Linux LPIC-1 101 $200
    <br /><br />
 
 ## CompTIA Tech+ certification
 
-*	Compare and contrast notational systems.	Tech+	1.1
-*	Compare and contrast fundamental data types and their characteristics.	Tech+	1.2
-*	Illustrate the basics of computing and processing.	Tech+	1.3
-*	Explain the value of data and information.	Tech+	1.4
-*	Compare and contrast common units of measure.	Tech+	1.5
-*	Explain the troubleshooting methodology.	Tech+	1.6
-*	Classify common types of input/output device interfaces.	Tech+	2.1
-*	Given a scenario, set up and install common peripheral devices to a laptop/PC.	Tech+	2.2
-*	Explain the purpose of common internal computing components.	Tech+	2.3
-*	Compare and contrast common Internet service types.	Tech+	2.4
-*	Compare and contrast storage types.	Tech+	2.5
-*	Compare and contrast common computing devices and their purposes.	Tech+	2.6
-*	Compare and contrast virtualization and cloud technologies.	Tech+	2.6
-*	Explain basic networking concepts.	Tech+	2.7
-*	Given a scenario, install, configure and secure a basic wireless network.	Tech+	2.8
-*	Given a scenario, install, configure and secure a basic wireless network.	Tech+	2.8
-*	Explain the purpose of operating systems.	Tech+	3.1
-*	Compare and contrast components of an operating system.	Tech+	3.2
-*	Explain the purpose and proper use of software.	Tech+	3.3
-*	Given a scenario, configure and use web browsers.	Tech+	3.5
-*	Identify common uses of artificial intelligence (AI).	Tech+	3.5
-*	Compare and contrast programming language categories.	Tech+	4.1
-*	Given a scenario, use programming organizational techniques and interpret logic.	Tech+	4.2
-*	Explain the purpose and use of programming concepts.	Tech+	4.3
-*	Explain database concepts and the purpose of a database.	Tech+	5.1
-*	Compare and contrast various database structures.	Tech+	5.2
-*	Summarize confidentiality, integrity, and availability concerns.	Tech+	6.1
-*	Explain methods to secure devices and best practices.	Tech+	6.2
-*	Compare and contrast authentication, authorization, accounting, and non-repudiation concepts.	Tech+	6.4
-*	Explain password best practices.	Tech+	6.5
-*	Explain common uses of encryption.	Tech+	6.6
-*	Explain business continuity concepts.	Tech+	6.7
+<a target="_blank" href="https://comptiacdn.azureedge.net/webcontent/docs/default-source/research-reports/comptia-tech-fco-u71-exam-objectives-comparison-flyer-v2.pdf?sfvrsn=b463c273_2">PDF</a>:
 
+*	Explain the basics of computing	- Tech+	1.1
+*	Identify national systems	- Tech+	1.2
+*	Compare and contrast common units of measure	- Tech+	1.3
+*	Explain the troubleshooting methodology	- Tech+	1.4
+*	Explain common computing devices and their purposes	- Tech+	2.1
+*	Explain the purpose of common internal computing components	- Tech+	2.2
+*	Compare and contrast storage types	- Tech+	2.3
+*	Given a scenario, install and configure common peripheral devices	- Tech+	2.4
+*	Compare and contrast common types of input/output device interfaces	- Tech+	2.5
+*	Compare and contrast virtualization and cloud technologies	- Tech+	2.6
+*	Compare and contrast common internet service types	- Tech+	2.7
+*	Identify basic networking concepts	- Tech+	2.8
+*	Explain the basic capabilities of a small wireless network	- Tech+	2.9
+*	Identify components of an OS	- Tech+	3.1
+*	Explain the purpose of operating systems	- Tech+	3.2
+*	Explain the purpose and proper use of software	- Tech+	3.3
+*	Given a scenario, configure and use web browser features	- Tech+	3.4
+*	Identify common uses of artificial intelligence (AI)	- Tech+	3.5
+*	Compare and contrast programming language categories	- Tech+	4.1
+*	Identify fundamental data types and their characteristics	- Tech+	4.2
+*	Explain the purpose and use of programming concepts	- Tech+	4.3
+*	Identify programming organizational techniques and logic concepts	- Tech+	4.4
+*	Explain the value of data and information	- Tech+	5.1
+*	Explain database concepts and the purpose of a database	- Tech+	5.2
+*	Compare and contrast various database structures	- Tech+	5.3
+*	Explain basic data backup concepts	- Tech+	5.4
+*	Explain fundamental security concepts and frameworks	- Tech+	6.1
+*	Explain methods to secure devices and security best practices	- Tech+	6.2
+*	Explain password best practices	- Tech+	6.3
+*	Identify common use cases for encryption	- Tech+	6.4
+*	Given a scenario, configure security settings for a small wireless network	- Tech+	6.5
+<br /><br />
 
 Soon, AI would capture ever bit human-generated writings ever created.
 In 2024, human experts have been bested in every game invented (chess, go, etc.) and are able to pass exams to score in the 90th percentile of lawyers and doctors. "Complex reasoning" is at the cusp.
 
+Selection
+Sequencing
+Iteration
 
 
 
@@ -1618,16 +1628,68 @@ many of the AP STEM subjects. Courses related to computer science:
 * <a target="_blank" href="https://www.khanacademy.org/college-careers-more/internet-safety">Internet safety</a>
 * <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles">AP College Computer Science Principles</a> consists of these "units":
 
-   1. Digital information 
-   2. The Internet
-   3. Programming
-   4. Algorithms
-   5. Data analysis
-   6. Simulations (addressed especially by CMU)
-   7. Online data security
-   8. Computing innovations
-   9. Exam preparation
-   <br /><br />
+1. Digital information
+   1. Bits and bytes: Digital information
+   1. Binary numbers: Digital information
+   1. Limitations of storing numbers: Digital information
+   1. Storing text in binary: Digital information
+   1. Converting analog data to binary: Digital information
+   1. Lossless data compression: Digital information
+   1. Lossy data compression: Digital information
+   1. Digital copyright and licenses
+2. The Internet
+   1. Introducing the Internet: The Internet
+   1. Connecting networks: The Internet
+   1. Addressing the Internet: The Internet
+   1. Routing with redundancy: The Internet
+   1. Transporting packets: The Internet
+   1. Web protocols: The Internet
+   1. Scalable systems: The Internet
+   1. The Internet protocol suite: The Internet
+   1. Open protocol development: The Internet
+   1. The digital divide
+3. Programming
+   1. What is programming?: Programming
+   1. Variables: Programming
+   1. Math: Programming
+   1. Strings: Programming
+   1. Conditionals: Programming
+   1. Logical equivalence: Programming
+   1. Procedures: Programming
+   1. Repetition: Programming
+   1. Lists
+4. Algorithms
+   1. Building algorithms: Algorithms
+   1. Evaluating algorithms: Algorithms
+   1. Solving hard problems
+5. Data analysis
+   1. Data tools: Data analysis
+   1. Big data: Data analysis
+   1. Bias in machine learning
+6. Simulations (addressed especially by CMU)
+   1. Exploring simulations: Simulations
+   1. Simulating randomness: Simulations
+   1. Creating simulations
+7. Online data security
+   1. Introduction to online data security: Online data security
+   1. PII (Personally identifiable information): Online data security
+   1. User data tracking: Online data security
+   1. Cyber attacks: Online data security
+   1. Data encryption techniques: Online data security
+   1. Secure Internet protocols: Online data security
+   1. User authentication methods
+8. Computing innovations:
+   1. Communication innovations at light speed: email, SMS, Social media
+   * POLL: How often do you forward/share/retweet items? Echo chamber.
+   1. Collaboration innovations: Group chat, Videoconferencing, Collaborative software
+   1. Crowdsourcing innovations: collective knowledge, crowdfunding, citizen science, open innovation
+   1. Monitoring innovations: sensors; sensor networks; smart buildings, transport, grids
+9. Exam preparation
+   1. Prepare for the AP Computer Science Principles exam: Exam preparation
+   1. Learn AP CSP exam pseudocode: Exam preparation
+   1. Practice passage-based questions
+<br /><br />
+
 * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science">Computer Science theory</a> (Algorithms, Cryptography, Information theory).
 
 ### CS50 Harvard
@@ -1661,7 +1723,7 @@ The class is recommended by <a target="_blank" href="https://youtube.com/shorts/
 are 36 weeks <a target="_blank" href="https://www.edx.org/xseries/harvardx-cs50-ap-computer-science-principles">XSeries Program in CS50's AP® Computer Science Principles</a>
 
 There are now several CS50 courses:
-
+   * <a target="_blank" href="https://www.youtube.com/playlist?list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE">CS50 Cybersecurity</a> playlist
    * <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/">CS50 AI with Python</a>
 
 https://conference.csteachers.org/
