@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-06-27"
+date: "2024-07-04"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "The rules shown in samples using Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -496,16 +496,42 @@ Use of Modulus would result in "O(n)" (linear) growth in time to run as the data
 
 Depth-first trees would have steeper (logarithmic) Time Complexity:
 
+From <a target="_blank" href="https://bigocheatsheet.com/">https://bigocheatsheet.com</a>, in the list of Big O values for sorting:
+
 <a target="_blank" href="https://user-images.githubusercontent.com/300046/141355255-b2b990cf-46d9-415e-b21a-2c06a156c3eb.png">
 <img alt="python-coding-time-complexity-1222x945" src="https://user-images.githubusercontent.com/300046/141355255-b2b990cf-46d9-415e-b21a-2c06a156c3eb.png"></a>
 
-In <a target="_blank" href="https://bigocheatsheet.com/">https://bigocheatsheet.com</a>, in the list of Big O values for sorting, see.
+Let's go from the most efficient (at the bottom-right) to the least efficient at the upper-left,
+where n is the number of input items in the list being processed:
 
-"Polynomial time" describes any run time that does not increase faster than 
-n<super>k</super>, which includes constant time (n<super>0</super>), logarithmic time (log2 n), linear time (n<super>1</strong>), quadratic time (n<super>2</super>), and other higher degree polynomials (like n<super>3</super> 
-).
+* O(n) or n<super>0</super> is <strong>constant run time</strong> (of a single step) as more data is processed. This happens when a lookup is done rather than recalculating. This is ideal, but is typically not possible for algorithms that process multiple pieces of data.
 
-"Superpolynomial time" describes any run time that DOES increase faster than n<super>k</super>, and includes exponential time (2<super>n</super>), factorial time (n!), and anything else faster.
+* (log<sub>2</sub> n) <strong>logarithmic time</strong> occurs during <strong>binary search</strong>, where steps increase at a slower rate than input list size:
+
+   | List size	| Steps |
+   | 1 |	1 |
+   | 10 | 4 |
+   | 100 | 7 |
+   | 1000 | 10 |
+
+* O(n) or (n<super>1</strong>) <strong>linear time</strong> occurs during an exhaustive search when each increase in list size increases the number of steps in direct proportion to the input size
+
+* (n<super>2</super>) <strong>quadratic time</strong> occurs in a <strong>nested loop</strong> when steps increase in proportion to the input size <strong>squared</strong> (to the power of 2). A <strong>selection sort</strong> starts from the front of the list, and looks at each <strong>unordered</strong> item to find the next smallest value in the list and swapping it with the current value. This is also when the minimax algorithm is used.
+
+   | List size	| Steps |
+   | 1 |	1 |
+   | 10 |45 |
+   | 100 | 4950 |
+   | 1000 | 499500 |
+
+* (n<super>k</superg>) is called "Polynomial time" to group run times which do not increase faster than 
+n<super>k</super> above, and other higher degree polynomials (like n<super>3</super>).
+
+* "Superpolynomial time" describes any run time that increase faster than n<super>k</super>, below:
+
+* (2<super>n</super>) <strong>exponential time</strong> occurs when a algorithm looks at every permutation of values, such as all possible value which brute-force guessing passwords. For example, 28 to the power of 8 is when guessing 8 positions of 28 alphanumatic characters. When 10 number values and special characters are added for 98 possible values, it's 98 to the power of 8, a very large number.
+
+* (n!) <strong>factorial time</strong>
 
 <a target="_blank" href="https://www.youtube.com/watch?v=umLZphwA-dw">VIDEO</a>: "Compiled Python is FAST"
 by $200/hour https://dougmercer.dev
