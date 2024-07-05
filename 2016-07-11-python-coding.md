@@ -504,9 +504,9 @@ From <a target="_blank" href="https://bigocheatsheet.com/">https://bigocheatshee
 Let's go from the most efficient (at the bottom-right) to the least efficient at the upper-left,
 where n is the number of input items in the list being processed:
 
-* O(n) or n<super>0</super> is <strong>constant run time</strong> (of a single step) as more data is processed. This happens when a lookup is done rather than recalculating. This is ideal, but is typically not possible for algorithms that process multiple pieces of data.
+* O(n) or n<super>0</super> is <strong>constant run time</strong> (of a single step) as more data is processed. This happens when a lookup is done rather than recalculating. Such use of "memoization" is ideal, but is typically not possible for algorithms that process multiple pieces of data.
 
-* (log<sub>2</sub> n) <strong>logarithmic time</strong> occurs during <strong>binary search</strong>, where steps increase at a slower rate than input list size:
+* log<sub>2</sub> n - <strong>logarithmic time</strong> occurs during <strong>binary search</strong>, where steps increase at a slower rate than input list size:
 
    | List size	| Steps |
    | 1 |	1 |
@@ -514,7 +514,7 @@ where n is the number of input items in the list being processed:
    | 100 | 7 |
    | 1000 | 10 |
 
-* O(n) or (n<super>1</strong>) <strong>linear time</strong> occurs during an exhaustive search when each increase in list size increases the number of steps in direct proportion to the input size
+* O(n) or (n<super>1</strong>) <strong>linear time</strong> occurs during an <strong>exhaustive search</strong> when each increase in list size increases the number of steps in direct proportion to the input size
 
 * (n<super>2</super>) <strong>quadratic time</strong> occurs in a <strong>nested loop</strong> when steps increase in proportion to the input size <strong>squared</strong> (to the power of 2). A <strong>selection sort</strong> starts from the front of the list, and looks at each <strong>unordered</strong> item to find the next smallest value in the list and swapping it with the current value. This is also when the minimax algorithm is used.
 
@@ -524,14 +524,15 @@ where n is the number of input items in the list being processed:
    | 100 | 4950 |
    | 1000 | 499500 |
 
-* (n<super>k</superg>) is called "Polynomial time" to group run times which do not increase faster than 
-n<super>k</super> above, and other higher degree polynomials (like n<super>3</super>).
+* n<super>k</superg> - such as n<super>3</super> and higher degree polynomials are called "Polynomial time" to group run times which do not increase faster than n<super>k</super>.
 
 * "Superpolynomial time" describes any run time that increase faster than n<super>k</super>, below:
 
-* (2<super>n</super>) <strong>exponential time</strong> occurs when a algorithm looks at every permutation of values, such as all possible value which brute-force guessing passwords. For example, 28 to the power of 8 is when guessing 8 positions of 28 alphanumatic characters. When 10 number values and special characters are added for 98 possible values, it's 98 to the power of 8, a very large number.
+* (2<super>n</super>) <strong>exponential time</strong> occurs when a algorithm looks at every permutation of values, such as all possible value which brute-force guessing passwords. For example, 28 to the power of 8 is when guessing 8 positions of 28 alphanumatic characters. When 10 number values and special characters are added for 98 possible values, it's 98 to the power of 8, a very large number. Such are considered "unreasonable" to make it harder to brute-force guess.
 
-* (n!) <strong>factorial time</strong>
+* (n!) <strong>factorial time</strong> (such as 1 X 2 X 3 X 5) - the product of all positive integers less than or equal to n. Used to analyze permutations and combinations. Factorials <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/e/comparing-run-time-efficiencies">determine the number of possible topping combinations</a>.
+
+The asymptope is when a number reaches an extremely large number that is essentially infinite.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=umLZphwA-dw">VIDEO</a>: "Compiled Python is FAST"
 by $200/hour https://dougmercer.dev

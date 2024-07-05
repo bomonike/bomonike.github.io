@@ -1529,8 +1529,7 @@ Impact of Computing:
    <br /><br />
 
 https://www.edx.org/learn/java/purdue-university-ap-computer-science-a-java-programming
-archived. 
-by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-50879427/">Phil Sands</a>
+archived by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-50879427/">Phil Sands</a>
 
 <hr />
 
