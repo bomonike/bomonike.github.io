@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-04"
+date: "2024-07-05"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "The rules shown in samples using Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"

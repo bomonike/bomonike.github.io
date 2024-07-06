@@ -27,7 +27,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 
    ### <a href="#Welcome">A. Feel welcome and optimistic</a>
 
-   <em>Your data is an asset of value:</em>
+   <u><em>Your data is an asset of value:</em></u>
 
 1. Define Threat model: what do you value?
    
@@ -35,7 +35,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 
    <em>This is <a target="_blank" href="https://studio.code.org/s/csp2-2023?redirect_warning=true">Code.org's APCSP Unit 2 "The Internet"</a> expanded</em>
 
-   <em>Don't tell everyone everything</em>
+   <em><u>Avoid over-sharing</u></em>
 
 1. Use fake answers to security questions: relatives, address, birthday, socia; security number
 1. Compartmentalization: different pseudonym identities and a browser profile for each use (School, Browsing, Shopping, YouTube, Snapchat, Dating)
