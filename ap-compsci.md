@@ -25,9 +25,9 @@ Gen Z slang "glow-up" = a major improvement in one's self, usually an improvemen
 
 By the end of this course, the learner would be able to (by following step-by-step instructions executing automated scripts):
 
-   ### <a href="#Welcome">A. Feel welcome and optimistic</a>
+### <a href="#Welcome">A. Feel welcome and optimistic</a>
 
-   <u><em>Your data is an asset of value:</em></u>
+   <u><em>Data about you is an asset of value:</em></u>
 
 1. Define Threat model: what do you value?
    
@@ -45,24 +45,24 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Use a spreadsheet to track where your give out your credit cards to.
 1. Setup a credit freeze to block opening of new credit lines.
 
-   <em>Evaluate and select editors:</em>
+   <u><em>Evaluate and select editors:</em></u>
 
 1. Evaluate and select a text editor/IDE: vim, VSCode, PyCharm 
 1. Community Edition vs. Enterprise Editor licenses
 
-   <em>Bash your first programming language</em>
+   <u><em>Bash your first programming language</em></u>
 
 1. Use a Terminal program to run CLI commands and Bash scripts.
 1. Install Brew on macOS or Apt package managers to optionally install alternative Terminal and other utilities.
 1. Configure automatic updates on CLI packages.
 1. Use ChatGPT GenAI LLM to suggest CLI commands by installing Python utility <a target="_blank" href="https://github.com/mendhak/llm-cli-helper/tree/main">llm-cli-helper</a>.
 
-   <em>Use SSH with GitHub</em>
+   <u><em>Use SSH with GitHub</em></u>
 
 1. Obtain a github account using an email.
 1. Create an SSH key pair to keep your repositories private.
 
-   <em>On laptops, isolate each Python program:</em>
+   <u><em>On laptops, isolate each Python program:</em></u>
 
 1. Understand the different (convoluated) ways to install Python (pyenv, Juypter, pip, Conda, Miniconda).
 1. Install <a target="_blank" href="https://virtualenv.pypa.io/en/latest/installation.html">virtualenv</a> and Miniconda (which comes with its own Python interpreter).
@@ -79,7 +79,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Reformat code using formatting utility.
 1. Prompt ChatGPT to "improve this code".
 
-   <em>Keep updated to the latest versions:</em>
+   <u><em>Keep updated to the latest versions:</em></u>
 
 1. Configure you OS to automatically update.
 1. Make a checklist to run through all that you do to verify whether everything still works.
@@ -87,12 +87,12 @@ By the end of this course, the learner would be able to (by following step-by-st
   
    ### <a href="#SafeData">C Securely handle secrets</a>
 
-   <em>Don't reuse a password on several accounts: ITF 6.5</em>
+   <u><em>Don't reuse a password on several accounts: ITF 6.5</em></u>
 
 1. Use <a target="_blank" href="https://www.haveibeenpwned.com/">haveibeenpwned.com</a> to check if credentials and data behind an email has been stolen.
 1. Install, configure, use local <a target="_blank" href="https://www.privacytools.io/secure-password-manager">password manager</a> KeepassXC to generate passwords.
 
-   <em>Use really strong passwords:</em>
+   <u><em>Use really strong passwords:</em></u>
 
 1. Prefer hardware devices (Yubikey, Nitrokey) over biometrics (finger, face recognition).
 1. PRE-READ: Generate pseudo-random numbers (coin, dice, 8-ball) JavaScript - <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/x2d2f703b37b450a3:simulations/x2d2f703b37b450a3:simulating-randomness/a/generating-random-numbers" title="Simulation">Khan CSP 2.1</a>
@@ -101,7 +101,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Install, configure, use cloud-based Twilio's Authy app for 2FA (Two-factor authentication) with TOTP (Temporary Token).
 1. TRIVIA: Use scientific calculator to define entropy of password length, complexity, IPv4 & IPv6
 
-   <em>Use encryption: ITF 6.6</em>
+   <u><em>Use encryption: ITF 6.6</em></u>
 
 1. Install and configure Signal app for sharing secrects using end-to-end encrypted <a target="_blank" href="https://www.privacytools.io/privacy-messaging">private messaging</a>. Ask friends to do the same for uniting iPhone & Android.
 1. Install and configure Akeyless web service to store secrets retrieved by programs.
@@ -111,17 +111,17 @@ By the end of this course, the learner would be able to (by following step-by-st
  
    ### <a href="#ProtectData">D. Protect your data</a>
 
-   <em>Backup and recover data:</em>
+   <u><em>Backup and recover data:</em></u>
 
 1. Install, configure, schedule use of encrypted backups.
 1. Verify restore from backups.
 
-   <em>Clear out what you don't use:</em>
+   <u><em>Clear out what you don't use:</em></u>
 
 1. Shred deleted files. Burn papers.
 1. Clean system and free disk space (using BleachBit).
 
-   <em>Stop data theft:</em>
+   <u><em>Stop data theft:</em></u>
 
 1. Request take-down from (long) list of data brokers ($20/yr deleteme).
 1. Configure OS to use safer DNS 9.9.9.9 (instead of tracker default or Google's 8.8.8.8 which saves your activity)
@@ -141,25 +141,25 @@ By the end of this course, the learner would be able to (by following step-by-st
   * On macOS: click the globe key, click on >> at the lower-right.
 1. Countries: codes +1, world map, <a target="_blank" href="https://capturelabs.sonicwall.com/m/feature/security-center">adversarial</a>, <a target="_blank" href="https://freedomhouse.org/countries/freedom-net/scores">freedoms</a>
 
-   <em>Configure settings for privacy and safety:</em>
+   <u><em>Configure settings for privacy and safety:</em></u>
 
 1. Turn off Blutooth and other services when not in use.
 1. Configure privacy settings on iPhone Safari, Android Google Chrome. Clear Temp Data. Use startpage.com for private search.
 1. Install and configure Firefox browser or Brave browser.
 1. Install VPN (mullvad, ProtonVPN) when using unlocked networks.
 
-   <em>Keep a lookout:</em>
+   <u><em>Keep a lookout:</em></u>
 
 1. Identify logs and indicators of compromise (host files, auto-start processes).
 1. Build an airgapped (stand-alone) Raspberry Pi to examine  & <a target="_blank" href="https://lwn.net/Articles/626559/">scrub</a> USB drives using <a target="_blank" href="https://circl.lu/projects/CIRCLean/">CIRClean</a> utility.
 
-   <em>Block intruders:</em>
+   <u><em>Block intruders:</em></u>
 
 1. Evaluate risk of man-in-the-middle attacks using websites <a target="_blank" href="https://onetimesecret.com/">yopass.se</a> or <a target="_blank" href="https://password.link/en">passlink</a>.
 1. Use <a target="_blank" href="https://www.VirusTotal.com/">VirusTotal.com</a> to check whether host name and IP address have been reported as malicious.
 1. On your router, set custom password instead of default (to not participate in DDoS)
       
-   <em>Practice critical thinking about content:</em>
+   <u><em>Practice critical thinking about content:</em></u>
    
 1. Identify attempts to co-opt emotional reactions.
 1. Identify fear mongering for clicks.
@@ -170,13 +170,13 @@ By the end of this course, the learner would be able to (by following step-by-st
 
    ### <a href="#Socials">E. Craft profiles, articles, portfolio</a>
 
-   <em>Your face and body are a secret</em>
+   <u><em>Your face and body are a secret</em></u>
 
 1. Recognize the impact misuse of reverse image search (clearview.ai).
 1. Set <strong>Instagram</strong> account to private so it does not use your photos for training their AI.
 1. Upload an obfuscated profile photo to gravatar.com so other websites can (using MD5 hash) associate emails with a profile image.
 
-   <em>Generate portraits using Python Jupyter:</em>
+   <u><em>Generate portraits using Python Jupyter:</em></u>
 
 1. Modify Python Jupyter code within Google's cloud CodeLab to create obfuscated privacy-maintaining portrait using Machine Learning style transfer.
    1. Handle <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">secrets</a> in Juypter <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">sample</a> 
@@ -394,7 +394,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
    1. Mandatory access control (MAC) - CC 3.2.4
    1. Role-based access control (RBAC) - CC 3.2.5
 
-   <em>"You computer ports are like your mouth. Avoid putting anything in there you do not trust."</em>
+   <u><em>"You computer ports are like your mouth. Avoid putting anything in there you do not trust."</em></u>
 
 1. Data handling policies - CC 5.3 USB, labeling - CC 5.1 using IoT device:
    
@@ -587,7 +587,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
    <strong>D. Read and contribute to projects on GitHub using git</strong>
 
-   <a target="_blank" href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"><em>Curriculum from Microsoft</em></a>
+   <a target="_blank" href="https://learn.microsoft.com/en-us/collections/o1njfe825p602p"><u><em>Curriculum from Microsoft</em></u></a>
 
 1. Introduction to Git (31 min) - Install & Config Git utilities
 1. Introduction to GitHub (1 hr 32 min) - [Identify Awesome repos]
@@ -638,7 +638,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
    <strong>E. Craft profiles, static website, portfolio projects</strong>
 
-   <em>"Look not to what can be done today but what will be possible in 5 years."</em>
+   <u><em>"Look not to what can be done today but what will be possible in 5 years."</em></u>
 
    <strong>Create content</strong>
 
@@ -733,7 +733,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
 1. <a target="_blank" href="https://wilsonmar.github.io/python-certs/">CERTIFICATION</a>: $59 PCAP-31-02 "Certified Entry-Level Python Programmer Certification"
 
-   <em>Object-Oriented Programming</em>
+   <u><em>Object-Oriented Programming</em></u>
 
 1. The Tic-Tac-Toe two-player game played on a nine-square grid. <a target="_blank" href="https://hackr.io/blog/python-concepts-for-interviews">one of the concepts</a>. <a target="_blank" href="">Sample code</a>.
 1. Expand program scope to add Spock and Lizard.
@@ -770,7 +770,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
    
    <strong>G. Navigate within cloud environments (AWS, Azure, Google)</a>
 
-   <em>The scope here is to be able to sign up and get permissions to navigate the menu. Creating resources is covered in more advanced classes.</em>
+   <u><em>The scope here is to be able to sign up and get permissions to navigate the menu. Creating resources is covered in more advanced classes.</em></u>
 
 1. Internet service types: ITF 2.4
 1. From traditional on-prem. to clouds
@@ -788,7 +788,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. REST API programming (Postman and other tools)
 1. Countries and cities of the world - compare latency averages and anomalies over time
 
-   <em>As of 2024 there is no certification for AI</em>
+   NOTE: As of 2024 there is no certification for AI.
 
 
    <a name="LowCodeApps"></a>
@@ -813,7 +813,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
    <strong>J. Configure and administer a computer from scratch</strong>
 
-   <em>The scope here is to gain understanding of the lifecycle and automation to setup and troubleshooting</em>
+   <u><em>The scope here is to gain understanding of the lifecycle and automation to setup and troubleshooting</em></u>
 
 1. Home Lab components (CPU, Memory, etc.) - ITF 2.3
 1. 8-bit to 16, 32, 64, 128 - ITF 2.3
@@ -983,7 +983,7 @@ Items below are based on the national CSTA (Computer Science Teacher Associate) 
 
 ### Big Idea 1: Creative Development
 
-   <em>This is in the AP CSP but not in CSTA</em>
+   NOTE: This is in the AP CSP but not in CSTA.
 
    Understand the significance of <strong>collaboration</strong> in program development and how to use an <strong>iterative</strong> approach in your work. When developing computing innovations, developers can use a formal, iterative design process or a less rigid process of experimentation, and will encounter phases of investigating and reflecting, designing, prototyping, and testing.
 
@@ -1127,7 +1127,7 @@ Montana:
 
 ### Big Idea 4: Computer Systems (CS) and Networks & the Internet (NI)
 
-   <em>(The CSTA standard separates Systems & Networks)</em>
+   NOTE: The CSTA standard separates Systems & Networks.
 
    Explore the functioning of computer systems and networks, as well as how multiple computers can be employed to divide tasks and expedite processes.
 

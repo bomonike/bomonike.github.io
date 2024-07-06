@@ -510,7 +510,7 @@ where n is the number of input items in the list being processed:
 
    ```
    | List | Steps |
-   |    1 | 	 1 |
+   |    1 |     1 |
    |   10 |     4 |
    |  100 |     7 |
    | 1000 |    10 |
