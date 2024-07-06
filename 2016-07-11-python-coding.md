@@ -504,37 +504,36 @@ From <a target="_blank" href="https://bigocheatsheet.com/">https://bigocheatshee
 Let's go from the most efficient (at the bottom-right) to the least efficient at the upper-left,
 where n is the number of input items in the list being processed:
 
-* O(n) or n<sup>0</sup> is <strong>constant run time</strong> (of a single step) as more data is processed. This happens when a lookup is done rather than recalculating. Such use of "memoization" is ideal, but is typically not possible for algorithms that process multiple pieces of data.
+* O(1) or n<sup>0</sup> is <strong>constant run time</strong> (of a single step) as more data is processed. This happens when a lookup is done rather than recalculating. Such use of "memoization" is ideal, but is typically not possible for algorithms that process multiple pieces of data.
 
-* log<sub>2</sub> n - <strong>logarithmic time</strong> occurs during <strong>binary search</strong>, where steps increase at a slower rate than input list size:
+* O(log n) or log<sub>2</sub>n - <strong>logarithmic time</strong> occurs during <strong>binary search</strong>, (like ripping up portions of a phone book) where steps increase at a <strong>slower rate</strong> than input list size:
 
    ```
-   | List size	| Steps |
-   | ---------	| ----- |
-   | 1 |	1 |
-   | 10 | 4 |
-   | 100 | 7 |
-   | 1000 | 10 |
+   | List | Steps |
+   |    1 | 	 1 |
+   |   10 |     4 |
+   |  100 |     7 |
+   | 1000 |    10 |
    ```
 
-* O(n) or (n<sup>1</strong>) <strong>linear time</strong> occurs during an <strong>exhaustive search</strong> when each increase in list size increases the number of steps in direct proportion to the input size
+* O(1) or (n<sup>1</sup>) <strong>linear time</strong> occurs during an <strong>exhaustive search</strong> when each increase in list size increases the number of steps in direct proportion to the input size
 
 * (n<sup>2</sup>) <strong>quadratic time</strong> occurs in a <strong>nested loop</strong> when steps increase in proportion to the input size <strong>squared</strong> (to the power of 2). A <strong>selection sort</strong> starts from the front of the list, and looks at each <strong>unordered</strong> item to find the next smallest value in the list and swapping it with the current value. This is also when the minimax algorithm is used.
    ```
-   | List size	| Steps |
-   | 1 |	1 |
-   | 10 |45 |
-   | 100 | 4950 |
+   | List |  Steps |
+   |    1 |      1 |
+   |   10 |     45 |
+   |  100 |   4950 |
    | 1000 | 499500 |
    ```
 
-* n<sup>k</superg> - such as n<sup>3</sup> and higher degree polynomials are called "Polynomial time" to group run times which do not increase faster than n<sup>k</sup>.
+* n<sup>k</sup> - such as n<sup>3</sup> and higher degree polynomials are called "Polynomial time" to group run times which do not increase faster than n<sup>k</sup>.
 
 * "Superpolynomial time" describes any run time that increase faster than n<sup>k</sup>, below:
 
-* (2<sup>n</sup>) <strong>exponential time</strong> occurs when a algorithm looks at every permutation of values, such as all possible value which brute-force guessing passwords. For example, 28 to the power of 8 is when guessing 8 positions of 28 alphanumatic characters. When 10 number values and special characters are added for 98 possible values, it's 98 to the power of 8, a very large number. Such are considered "unreasonable" to make it harder to brute-force guess.
+* O(n<sup>n</sup>) - <strong>exponential time</strong> occurs when a algorithm looks at every permutation of values, such as all possible value which brute-force guessing passwords. For example, 28 to the power of 8 is when guessing 8 positions of 28 alphanumatic characters. When 10 number values and special characters are added for 98 possible values, it's 98 to the power of 8, a very large number. Such are considered "unreasonable" to make it harder to brute-force guess.
 
-* (n!) <strong>factorial time</strong> (such as 1 X 2 X 3 X 5) - the product of all positive integers less than or equal to n. Used to analyze permutations and combinations. Factorials <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/e/comparing-run-time-efficiencies">determine the number of possible topping combinations</a>.
+* (n!) <strong>factorial time</strong> (such as 1 X 2 X 3 X 5, etc.) - the product of all positive integers less than or equal to n. Used to analyze permutations and combinations. Factorials <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/e/comparing-run-time-efficiencies">determine the number of possible topping combinations</a>.
 
 The asymptope is when a number reaches an extremely large number that is essentially infinite.
 
