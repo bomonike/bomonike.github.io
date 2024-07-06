@@ -25,7 +25,7 @@ Gen Z slang "glow-up" = a major improvement in one's self, usually an improvemen
 
 By the end of this course, the learner would be able to (by following step-by-step instructions executing automated scripts):
 
-### <a href="#Welcome">A. Feel welcome and optimistic</a>
+&nbsp; &nbsp; &nbsp; ### <a href="#Welcome">A. Feel welcome and optimistic</a>
 
    <u><em>Data about you is an asset of value:</em></u>
 
@@ -50,7 +50,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Evaluate and select a text editor/IDE: vim, VSCode, PyCharm 
 1. Community Edition vs. Enterprise Editor licenses
 
-   <u><em>Bash your first programming language</em></u>
+   <u><em>Bash automates Linux</em></u>
 
 1. Use a Terminal program to run CLI commands and Bash scripts.
 1. Install Brew on macOS or Apt package managers to optionally install alternative Terminal and other utilities.
@@ -320,7 +320,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
 1. <a href="#HowWeLearn">How we learn</a>
 
-   <strong>Adapting to trends</strong>
+   <u><em><strong>Predict, Prepare, Adapt to Trends</strong></em></u>
 
 1. 15-year Generations: Boomer: TV, X: TV, Millenials: PCs, Z: Internet, <a target="_blank" href="https://www.wikiwand.com/en/Generation_Alpha">Alpha</a>: smartphones & AI
 1. Industrial ages: 1st: farming, 2nd: railroads & factories, 3rd: computers & internet, 4th: AI & robots
