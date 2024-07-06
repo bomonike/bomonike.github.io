@@ -508,22 +508,25 @@ where n is the number of input items in the list being processed:
 
 * log<sub>2</sub> n - <strong>logarithmic time</strong> occurs during <strong>binary search</strong>, where steps increase at a slower rate than input list size:
 
+   ```
    | List size	| Steps |
    | ---------	| ----- |
    | 1 |	1 |
    | 10 | 4 |
    | 100 | 7 |
    | 1000 | 10 |
+   ```
 
 * O(n) or (n<sup>1</strong>) <strong>linear time</strong> occurs during an <strong>exhaustive search</strong> when each increase in list size increases the number of steps in direct proportion to the input size
 
 * (n<sup>2</sup>) <strong>quadratic time</strong> occurs in a <strong>nested loop</strong> when steps increase in proportion to the input size <strong>squared</strong> (to the power of 2). A <strong>selection sort</strong> starts from the front of the list, and looks at each <strong>unordered</strong> item to find the next smallest value in the list and swapping it with the current value. This is also when the minimax algorithm is used.
-
+   ```
    | List size	| Steps |
    | 1 |	1 |
    | 10 |45 |
    | 100 | 4950 |
    | 1000 | 499500 |
+   ```
 
 * n<sup>k</superg> - such as n<sup>3</sup> and higher degree polynomials are called "Polynomial time" to group run times which do not increase faster than n<sup>k</sup>.
 
@@ -540,7 +543,7 @@ by $200/hour https://dougmercer.dev
 
 <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/a/comparing-run-time-efficiency">KhanAcad explanation</a>
 
-### Minmax
+### minmax
 
 The difference between API, Library, Package, Module, Script, Frameworks.
 
@@ -617,6 +620,22 @@ Use this in every division to ensure that a zero denominator results in falling 
     # n=numerator, d=denominator.
     return n / d if d else 0
 </pre>
+
+## Random
+
+Flip a coin:
+```
+import random
+&nbsp;
+if random.randint(0, 1) == 0:
+  print("heads!")
+else:
+  print("tails!")
+```
+
+TODO: Roll a 6-sided die? See bomonike/memno
+
+TODO: Roll a 20-sided die?
 
 <hr />
 
@@ -896,11 +915,11 @@ Python has four different ways to format strings.
 
 Using f-strings to format (potentially malicious) <a target="_blank" href="https://snyk.io/blog/python-security-best-practices-cheat-sheet/">user-supplied strings can be exploited</a>:
 
-   ...
-   from string import Template
-   greeting_template = Template("Hello World, my name is $name.")
-   greeting = greeting_template.substitute(name="Hayley")
-   ```
+```
+from string import Template
+greeting_template = Template("Hello World, my name is $name.")
+greeting = greeting_template.substitute(name="Hayley")
+```
 
 So use a way that's less flexible with types and doesn’t evaluate Python statements.
 
