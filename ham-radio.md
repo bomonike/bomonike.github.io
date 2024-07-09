@@ -54,10 +54,7 @@ Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
 
 * Ham/Amateur radio operators licensed at the General level can communicate all over the world on additional frequencies. <a target="_blank" href="https://www.amazon.com/ARRL-General-Class-License-Manual/dp/162595171X/">$29.66 BOOK: AARL manual</a>
 
-* LoRa (Long Range) is a proprietary patented technique to exchange <strong>text messages</strong> (which can include GPS locations) within a low-power but wide-area network (WAN) off cellular networks. It operates only at the <strong>915 MHz</strong> ISM radio band. No license needed. The longest is 150m, but line-of-sight range. Its low power, low bit rate, wireless platform used in <a target="_blank" href="https://www.instructables.com/LoRa-Mesh-Radio/">IoT applications</a>. Low bit rate means 0.3 to 50 kbits/s using spread spectrum modulation. [<a target="_blank" href="https://wifivitae.com/2022/12/14/lorawan-mapper-overview/">*</a>]
-
-   * <a target="_blank" href="https://www.thethingsnetwork.org/map">LoRa Meshtastic Repeater map</a>
-   <br /><br />
+* LoRa (Long Range) is a proprietary patented technique to exchange <strong>text messages</strong> (which can include GPS locations) within a low-power but wide-area network (WAN) off cellular networks. No license needed. <a href="#Meshtastic"></a>
 
 * Cellular WiFi hotspots by AT&T, Verizon, T-Mobile, etc.
 
@@ -229,21 +226,54 @@ Several ways to use digitial technologies with analog voice:
 <a target="_blank" href="https://www.youtube.com/watch?v=fB1ozVc2WKM&pp=ygUHRWNvbGluaw%3D%3D">VIDEO</a>:
 Ecolink software runs on Windows and Android which streams VoIP data through the internet to a <strong>ham/amateur band</strong> base station.
 
+<a name="Meshtastic"></a>
+
 ### LoRa Meshtastic
+
+Intro "How it Works" videos:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=hMOwbNUpDQA">VIDEO from 2016</a> by andreasspiess.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=SmDza__-wAA">by Things Network</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Bsue0PzNRDU">by Sylvain Montagny 2022</a> says Coding Rate and Spreadshing Factor has to be same on both sides. EU requires 1% Duty Cycle.
+   * Semtech Corp</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=jp_2gwBrQc8&list=PLZKn4hapodtfZiTGy8VBIwqAwJd7NaIZh&pp=iAQB">CETech</a>
 
 LoRa technology is based on spread-spectrum modulation technique derived from chip spread spectrum (CSS) tech developed by Cycleo (of Grenoble, France), then acquired by Semtech, the founding member of the LoRA alliance.
 
-LoRA devices connect with other LoRa devices on the license-free narrow ISM (industrial, Scientific, Medical) band to create a mesh network by <a target="_blank" href="https://meshtastic.org/">Meshtastic.org</a>. So that can be used "off-grid" in case the internet goes down.
+LoRA devices connect with other LoRa devices on the <strong>license-free</strong> narrow ISM (industrial, Scientific, Medical) band to create a mesh network by <a target="_blank" href="https://meshtastic.org/">Meshtastic.org</a>. So that can be used "off-grid" in case the internet goes down.
+
+<a target="_blank" href="https://www.thethingsnetwork.org/">TheThingsNetwork.org</a> in Amsterdam () (co-founded by Johan Stokking) publishes a:
+   * <a target="_blank" href="https://www.thethingsnetwork.org/map">LoRa Meshtastic Repeater map</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_I4c-Al9hCI">Microsoft interview</a> 
+
+
+It operates in Europe on the 70cm band. In the US on the 433, 868, <strong>915 MHz</strong> ISM radio band. The longest range is 150m, but line-of-sight. Its low power, low bit rate, wireless platform used in <a target="_blank" href="https://www.instructables.com/LoRa-Mesh-Radio/">IoT applications</a>. Low bit rate means 0.3 to 50 kbits/s using spread spectrum modulation. [<a target="_blank" href="https://wifivitae.com/2022/12/14/lorawan-mapper-overview/">*</a>]
+
+   * Alliot Technologies
+
 
 <a target="_blank" href="https://www.youtube.com/watch?v=EdqF9ZxWjmE">VIDEO</a>:
+WiFi on LoRanWAN is called "HaLow" based on the IEEE 802.11ah spec at 902-928 MHz for max data rate of 16mbps.
+But only in the US since that band was sold in EU to cellular operators.
+The EU version has max data rate of 5 mbps.
+
 LoRA devices can communicate through the internet by connecting with Bluetooth on Android and iOS mobile phones which also have WiFi that connect to the internet. That and the <a target="_blank" href="https://beartooth.com/products/beartooth-mk-ii">$2,498 MK II</a>.
 
 A lower-cost LoRa board comes with a battery and antenna.
 Solder to it a small LED screen.
-Enclosures can be 3D printed.
+<a target="_blank" href="https://www.thingiverse.com/thing:3314134">Files to 3D print enclosures</a>
 
 <a target="_blank" href="https://www.youtube.com/watch?v=x99R78fkSg0&list=PLshzThxhw4O4--klTjqDzR6KeJyqXNNXI">VIDEO</a>:
 The open-sourced Team Awareness Kit (TAK) improves situational awareness by both DoD military and <a target="_blank" href="https://tak.gov/solutions/recreation">civilian use</a>.
+
+"Sigfox"
+
+Meshtastic operates only at the 433, 868, <strong>915 MHz</strong> ISM radio band. The longest range is 150m, but line-of-sight. Its low power, low bit rate, wireless platform used in <a target="_blank" href="https://www.instructables.com/LoRa-Mesh-Radio/">IoT applications</a>. Low bit rate means 0.3 to 50 kbits/s using spread spectrum modulation. [<a target="_blank" href="https://wifivitae.com/2022/12/14/lorawan-mapper-overview/">*</a>]
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=7OYDr4HPGgo">VIDEO</a> by HB9BLA build devices that create mesh networks on 70cm and, through a gateway and the internet or Hamnet, can transfer messages to meshes far away. Or to APRS. Or to e-mail.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=jHWepP1ZWTk&list=PLwSRYmJg6HSXT94PSULX5e3c603yB_GpC&pp=iAQB">Visual Electric video playlist</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=X08qvPm_dAg">How to get started</a>
+   <br /><br />
+
 
 ### Winlink
 

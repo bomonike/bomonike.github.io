@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-05"
+date: "2024-07-07"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "The rules shown in samples using Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -74,11 +74,33 @@ On IDE such as VSCode you can see key/value pairs without typing <tt>print</tt> 
 
 ### Scan for vulnerable Python code
 
-A. PEP8
+Static Application Security Testing (SAST) looks for weaknesses in code and vulnerable packages.
 
-B. https://github.com/PyCQA/bandit
+Dynamic Application Security Testing (DAST) looks for vulnerabilities that occur at runtime.
 
-C. Check for dependencies containing vulnerabilities
+https://www.statworx.com/en/content-hub/blog/how-to-scan-your-code-and-dependencies-in-python/
+
+A. PEP8 "lints" program code for violations of PIP.
+
+B. Bandit (open-sourced at https://github.com/PyCQA/bandit) scans python code for vulnerabilities. It decomposes the code into its abstract syntax tree and runs plugins against it to check for known weaknesses. Among other tests it performs checks on plain SQL code, which could provide an opening for SQL injections, passwords stored in code and hints about common openings for attacks such as use of the pickle library. Bandit is designed for use with CI/CD:
+
+<tt>bandit -c bandit_yml.cfg /path/to/python/files</tt>
+
+The <tt>bandit_yml.cfg</tt> configuration file contains YAML lines such as this to specify types of assertion to skip.
+
+```
+# bandit_cfg.yml
+skips: ["B101"] # skips the assert check
+```
+
+Bandit throws an exit status of 1 whenever it encounters any issues, thus terminating the pipeline. 
+
+The report it generates include the number of issues separated by confidence and severity according to three levels: low, medium, and high.
+
+C. <tt>safety</tt> checks for dependencies containing vulnerabilities (CVEs) identified.
+
+https://pypi.org/project/scancode-toolkit/
+
 
 <hr />
 
@@ -86,7 +108,7 @@ C. Check for dependencies containing vulnerabilities
 
 ## Reserved Keywords
 
-Listed alphabetically below are words that Python's reserved for itself, so you can't use them as custom variables.
+Listed alphabetically below is the lexis of words Python has reserved for itself, so they can't be used as custom variables.
 
 PROTIP: Research and find out what each is about:
 
@@ -858,11 +880,13 @@ MAE provides a more intuitive measure of average error magnitude.
 
 ## GUI
 
+There is also wxWidgets, Kivy.
+
 <a target="_blank" href="https://www.youtube.com/watch?v=rHlsV0hzr8I">VIDEO</a>:
-Qt C++ for cross-platform development.
-Nokia owned Qt and developed PySide for Python bindings. PySide2 arrived later than PyQt5.
+Qt for cross-platform development in Python over C++.
+Nokia owned Qt and developed PySide for Python bindings. 
+PySide2 arrived later than Riverbank's PyQt5  under GPL (buy license to keep code close source).
 PySide6 and PyQt5 released about the same time.
-Riverbank created their own PyQt under GPL (buy license to keep code close source).
 PySide6 is under LGPL with no sharing.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=It7nTqIDd7E">VIDEO</a>: Qt Media player

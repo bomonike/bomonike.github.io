@@ -1693,7 +1693,7 @@ many of the AP STEM subjects. Courses related to computer science:
 
 ### CS50 Harvard
 
-<a target="_blank" href="https://www.youtube.com/watch?v=3xaVX0cluDo">ROADMAP</a>: <a target="_blank" href="https://www.youtube.com/user/cs50tv">YouTube</a> <a target="_blank" href="https://www.youtube.com/playlist?list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4">2024</a>: <a target="_blank" href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science">CS50's Introduction to Computer Science</a>: An introduction to the intellectual enterprises of computer science and the art of programming. 12 weeks at 6–18 hours per week. By popular Dr. David Malan presents challenges.
+<a target="_blank" href="https://www.youtube.com/watch?v=3xaVX0cluDo">ROADMAP</a>: <a target="_blank" href="https://www.youtube.com/user/cs50tv">YouTube</a> <a target="_blank" href="https://www.youtube.com/playlist?list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4">2024</a>: <a target="_blank" href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science">CS50's Introduction to Computer Science</a>: An introduction to the intellectual enterprises of computer science and the art of programming. 12 weeks at 6–18 hours per week. By popular <a target="_blank" href="https://www.linkedin.com/in/malan/">Dr. David Malan</a> presents challenges.
 
    <a target="_blank" href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science">Intro</a>
    <a target="_blank" href="https://cs50.harvard.edu/x/2024/syllabus/">Syllabus</a>:
