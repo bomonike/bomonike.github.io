@@ -70,9 +70,9 @@ On IDE such as VSCode you can see key/value pairs without typing <tt>print</tt> 
 1. "special variables" are dunder (double underline) variables.
 1. Under each "function variables" and special variables of their own. For a list, it's append, clear, copy, etc.
 1. Under <tt>Globals</tt> are its special variable (such as __file__ for the file path of the program) and class variables, plus an entry for each class defined in the code (such as unittest).
-1. 
 
-### Scan for vulnerable Python code
+
+### Python Code Scans
 
 Static Application Security Testing (SAST) looks for weaknesses in code and vulnerable packages.
 
@@ -80,7 +80,7 @@ Dynamic Application Security Testing (DAST) looks for vulnerabilities that occur
 
 https://www.statworx.com/en/content-hub/blog/how-to-scan-your-code-and-dependencies-in-python/
 
-A. PEP8 "lints" program code for violations of PIP.
+A. PEP8 "lints" program code for violations of the PIP.
 
 B. Bandit (open-sourced at https://github.com/PyCQA/bandit) scans python code for vulnerabilities. It decomposes the code into its abstract syntax tree and runs plugins against it to check for known weaknesses. Among other tests it performs checks on plain SQL code, which could provide an opening for SQL injections, passwords stored in code and hints about common openings for attacks such as use of the pickle library. Bandit is designed for use with CI/CD:
 
@@ -101,7 +101,11 @@ C. <tt>safety</tt> checks for dependencies containing vulnerabilities (CVEs) ide
 
 https://pypi.org/project/scancode-toolkit/
 
+D. <a target="_blank" href="https://pypi.org/project/scancode-toolkit/">Scancode</a> ScanCode scans Python code for license, copyright, package and their documented dependencies and other interesting facts.
 
+E. <a target="_blank" href="https://github.com/advanced-security/demo-python">GitHub's Advanced Security</a> scans Python code based on <strong>CodeQL</strong> logic specifications.
+
+https://7451111251303.gumroad.com/l/wotve
 <hr />
 
 <a name="ReservedKeywords"></a>
