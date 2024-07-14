@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-07"
+date: "2024-07-14"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "The rules shown in samples using Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -402,8 +402,22 @@ Functions hmac.compare_digest() and secrets.compare_digest() are designed to mit
 
 http://pypi.python.org/pypi/profilehooks
 
-Depth-First Seach (DFS) uses a stack, whereas
+REMEMBER: Depth-First Seach (DFS) uses a stack, whereas
 Breadth-First Search (BFS) use a queue.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=MK-NZ4hN7rs">VIDEO</a>:
+The <strong>Sliding Window</strong> 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=MK-NZ4hN7rs">VIDEO</a>:
+FullStack's REACTO framework during coding interviews:
+   1. Repeat the question
+   2. Examples
+   3. Approach
+   4. Code
+   5. Test
+   6. Optimization
+
+
 
 <a name="DurationCalcs"></a>
 
