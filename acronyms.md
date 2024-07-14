@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-09"
+date: "2024-07-14"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -88,7 +88,7 @@ comments: true
 *	AKV	=	Azure Key Vault	
 *	ALB	=	Application Load Balancer	(Amazon)
 *	ALE	=	Annualized Loss Expectancy	
-*	ALEER	=	Adopt Land Ex pand Extend Renew	
+*	ALEER	=	Adopt Land Expand Extend Renew	(sales strategy)
 *	ALM	=	Application Lifecycle Management	(all that goes into managing building and maintaining software applications)
 *	ALZ	=	Azure Landing Zones (Microsoft)
 *	AM	=	Account Manager	
@@ -146,6 +146,7 @@ comments: true
 *	B2B	=	Business to Business	(marketing)
 *	B2C	=	Business to Consumer	(marketing)
 *	BANT	=	Budget + Authority + Need + Timeframe	(framework for buyer readiness)
+* BATNA = Best Alternative To a Negotiated Agreement
 *	BAU	=	Business Administration Unit	
 *	BAU	=	Business As Usual (pejorative slang)
 *	BBS	=	BitBucket Server	(self-managed edition of BitBucket source version manager from Atlassian)
@@ -158,6 +159,7 @@ comments: true
 *	BEC	=	Business Email Compromise	(spoofing emails to impersonate managers, vendors, customers, govt)
 *	BERT	=	Bidirectional Encoder Representations from Transformers (Google GenAI) 
 *	BFLA	=	Broken Function Level Authorization
+*	BFS	=	Breadth-First Search
 *	BFP	=	Bi-Directional Forwarding Detection (networking)
 *	BGP	=	Border Gateway Protocol	(networking)
 *	BHAG	=	Big Hairy Audacious Goal	
@@ -345,6 +347,7 @@ comments: true
 *	DEX	=	Decentralized Exchanges (Blockchain)
 *	DFC	=	Distributed Fragments Cryptography (by AKeyless.io)
 *	DFIR	=	Digital Forensics and Incident Response
+*	DFS	=	Depth-First Search
 *	DGO	=	Data Governance Organization/Officer (for security)
 *	DHCP	=	Dynamic Host Configuration Protocol	(automatically assigns IP addresses to devices on a network)
 *	DHS	=	Department of Homeland Security	(US government organization)
@@ -944,6 +947,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 *	PUA	=	Potentially Unwanted Application	
 *	PV	=	Persistent Volume	(Kubernetes)
 * PV	=	Paravirtual Virtualization (type of Linux AMI boot loader)
+* PVM = Python Virtual Machine
 *	PVC	=	Persistent Volume Claim	(Kubernetes)
 *	PWA	=	Progressive Web Application (application intended to work on any platform with a standards-compliant browser, including desktop and mobile devices)
 *	PWC	=	Price Waterhouse Coopers (International Global Integrator Consulting firm)
@@ -999,6 +1003,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 *	RLHF	=	Reinforcement Learning with Human Feedback (to fine-tune ML rates after initial training)
 *	RLS	=	Row-Level Security (in SQL database tables)
 *	RMF	=	Risk Management Framework	(for controls defined in NIST SP 800-53)
+* RMM = Remote Monitoring and Management (utilities)
 *	RNG	=	Random Number Generator
 *	RNN	=	Recurrent Neural Network (in Deep Learning)
 *	ROA	=	Return on Assets	
@@ -1305,6 +1310,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 *	WFH	=	Work From Home
 *	WIP	=	Work In Process	
 *	WMI	=	Windows Management Instrumentation (Microsoft)
+* WoL = Wake-on-LAN (BIOS/UEFI setting so device can save battery yet be worken from sleep from a static IP address)
 *	WOT	=	Web of Trust  (security)
 *	WPA	=	Wi-Fi Protected Access	
 *	WPF	=	Windows Presentation Foundation (Microsoft)
@@ -1336,6 +1342,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 <a name="Z"></a>
 ### Z
 
+* ZOPA = Zone Of Possible Agreement (in a negotiation)
 *	ZRS	=	Zone-Redundant Storage (across 3 Azure Availability Zones)
 *	ZT	=	Zero Trust	
 *	ZTA	=	Zero Trust Architecture	

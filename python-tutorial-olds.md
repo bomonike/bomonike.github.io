@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-11"
+date: "2024-07-09"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -67,7 +67,7 @@ Within CS50X "CS50 2023 - Week 6 - Section" video:
    * <a target="_blank" href="https://www.youtube.com/watch?v=Y07zwrbq4Lc&t=1m19s&t=56m39s">CSV files</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=Y07zwrbq4Lc&t=1m19s&t=57m12s">File I/O</a> using <tt>import csv</tt> and <tt>from csv import DictReader</tt> using <tt>reader</tt> iterable.
    * <a target="_blank" href="https://www.youtube.com/watch?v=6pgodt1mezg&t=4m50s&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V&index=11">set()</a> data structure automatically filters out duplicates
-   * <a target="_blank" href="https://www.youtube.com/watch?v=6pgodt1mezg&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V&index=12&t=7m37s">global</a> declarations cannot be changed within functions. Avoid them.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=6pgodt1mezg&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V&index=12&t=7m37s">global</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=6pgodt1mezg&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V&index=12&t=23m40s">Constants</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=6pgodt1mezg&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V&index=12&t=29m17s">Type Hints, mypy</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=6pgodt1mezg&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V&index=12&t=47m38s">Docstrings</a>
@@ -82,8 +82,6 @@ Within CS50X "CS50 2023 - Week 6 - Section" video:
    <br /><br />
 
 [This Harvard University's CS50P: Introduction to Programming with Python](https://youtu.be/nLRL_NcnK-4) - in a single 16-hour HD YouTube 2160p 4K video - is a comprehensive course tailored to teach Python programming.
-
-https://7451111251303.gumroad.com/l/rgtfex
 
 * Introduction https://cs50.dev/ explain highlighted code
 
@@ -189,7 +187,7 @@ https://www.github.com/rg3/youtube-dl
 Reading the code for youtube-dl turned me into a web-scraping machine. I picked up many good habits and tricks from following the code carefully.
 
 
-### Most In-depth Python for Everyone
+### Python for Everyone
 
 May 2019 <a target="_blank" href="https://www.py4e.com/">Python for Everybody (py4e.com)</a> free Python 3 <a target="_blank" href="https://www.py4e.com/book.php">book</a>, <a target="_blank" href="https://www.py4e.com/lectures3/">PowerPoint slides</a> and code in <a target="_blank" href="https://github.com/wilsonmar/py4e.git">GitHub</a> or in <a target="_blank" href="https://www.py4e.com/code3.zip">one zip file</a> from <a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp.org</a> in <a target="_blank" href="https://www.youtube.com/watch?v=8DvywoWv6fI">a single YouTube video</a>, from Dr. Chuck Severance ( <a target="_blank" href="https://www.dr-chuck.com">dr-chuck.com</a>) at the <a target="_blank" href="https://open.umich.edu/">University of Michigan School of Information</a>.
 
@@ -696,18 +694,6 @@ Data Scientist in Python (38 courses)
    8. Machine Learning In Python
    9. Deep Learning in Python
    10. Advanced Topics in Data Science
-
-<a target="_blank" href="https://www.youtube.com/watch?v=eWRfhZUzrAc">VIDEO</a>
-4h40m "Python for Beginners – Full Course [Programming Tutorial]"
-by <a target="_blank" href="https://www.linkedin.com/in/beau-carnes/">Beau Carnes</a> at freecodecamp.
-<a target="_blank" href="https://www.freecodecamp.org/news/the-python-handbook/">
-"The Python Handbook – Learn Python for Beginners"</a>
-by Flavio Copes.
-Learn with just a browser using replit.com at https://join.replit.com/python-students
-Sample coding for:
-💻 Rock, Paper, Scissors 
-💻 Blackjack 
-
 
 
 
