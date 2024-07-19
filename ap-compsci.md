@@ -30,7 +30,7 @@ By the end of this course, the learner would be able to (by following step-by-st
    <u><em>Data about you is an asset of value:</em></u>
 
 1. Define Threat model: what do you value?
-   
+
    ### <a href="#SafeComputing">B. Practice safe and efficient computing practices</a>
 
    <em>This is <a target="_blank" href="https://studio.code.org/s/csp2-2023?redirect_warning=true">Code.org's APCSP Unit 2 "The Internet"</a> expanded</em>
@@ -47,8 +47,8 @@ By the end of this course, the learner would be able to (by following step-by-st
 
    <u><em>Evaluate and select editors:</em></u>
 
-1. Evaluate and select a text editor/IDE: vim, VSCode, PyCharm 
 1. Community Edition vs. Enterprise Editor licenses
+1. Evaluate and select a text editor/IDE: vim, VSCode, PyCharm
 
    <u><em>Bash automates Linux</em></u>
 
@@ -84,7 +84,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Configure you OS to automatically update.
 1. Make a checklist to run through all that you do to verify whether everything still works.
 
-  
+
    ### <a href="#SafeData">C Securely handle secrets</a>
 
    <u><em>Don't reuse a password on several accounts: ITF 6.5</em></u>
@@ -108,7 +108,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Install and configure <a target="_blank" href="https://www.privacytools.io/privacy-email">privacy email client</a> Startmail with aliases.
 1. Install GPG to use receiver's public gpg key to encrypt files locally for email so receiver can decrypt with private key.
 
- 
+
    ### <a href="#ProtectData">D. Protect your data</a>
 
    <u><em>Backup and recover data:</em></u>
@@ -133,7 +133,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Maps: bookmarks: apple, google, Flightsim, world heritage sites
 1. Locales (languages), UTC Time zones https://wilsonmar.github.io/calendar
    * Dateline & Daylight saving time (India, Russia, China)
-1. Identify Longitude and Latitude coordinates on the globe. Calculate your Lat/Long. 
+1. Identify Longitude and Latitude coordinates on the globe. Calculate your Lat/Long.
    * <a target="_blank" href="https://www.youtube.com/watch?v=Zai0r1QvQw4">Set location in browser</a>
 1. EXERCISE: Analytics: Create miles & meters vs. latency scatterplot
 1. ASCII vs. unicode Notation systems - ITF 1.1
@@ -158,9 +158,9 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Evaluate risk of man-in-the-middle attacks using websites <a target="_blank" href="https://onetimesecret.com/">yopass.se</a> or <a target="_blank" href="https://password.link/en">passlink</a>.
 1. Use <a target="_blank" href="https://www.VirusTotal.com/">VirusTotal.com</a> to check whether host name and IP address have been reported as malicious.
 1. On your router, set custom password instead of default (to not participate in DDoS)
-      
+
    <u><em>Practice critical thinking about content:</em></u>
-   
+
 1. Identify attempts to co-opt emotional reactions.
 1. Identify fear mongering for clicks.
 1. Identify the pattern of posts by posters.
@@ -179,8 +179,8 @@ By the end of this course, the learner would be able to (by following step-by-st
    <u><em>Generate portraits using Python Jupyter:</em></u>
 
 1. Modify Python Jupyter code within Google's cloud CodeLab to create obfuscated privacy-maintaining portrait using Machine Learning style transfer.
-   1. Handle <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">secrets</a> in Juypter <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">sample</a> 
-   1. Jupyter Graphing vs Cabana vs Superset 
+   1. Handle <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">secrets</a> in Juypter <a target="_blank" href="https://medium.com/4th-coffee/how-to-handle-secrets-in-jupyter-notebooks-5453a7c129de">sample</a>
+   1. Jupyter Graphing vs Cabana vs Superset
    1. Python numpy for calculations
    1. matplotlib and Seaborn modules for graphing
    1. Use ChatGPT in Codebin to evaluate CSS display to generate <a target="_blank" href="https://www.youtube.com/watch?v=EsRyyJmO-u8">VIDEO</a> tinyhost and webintoapp to Google Android store.
@@ -204,7 +204,7 @@ By the end of this course, the learner would be able to (by following step-by-st
    ### <a href="#GitHub">G. Read and contribute to projects on GitHub using git</a><br /> - 2) GitHub Foundations certification
 
 1. Search through GitHub.com using several filters.
-1. Contribute to an open-source repository on GitHub by forking, git clone, 
+1. Contribute to an open-source repository on GitHub by forking, git clone,
 1. Format documentation in <a target="_blank" href="https://github.com/mattcone/markdown-guide">Markedown format</a>
 
    ### <a href="#PythonApps">H. Code Python apps</a><br /> - 4) <a target="_blank" href="https://wilsonmar.github.io/python-certifications/">Python Fundamentals certification</a>
@@ -229,7 +229,7 @@ By the end of this course, the learner would be able to (by following step-by-st
    1. Enable users to login more securely using SSH certificates rather than passwords.
 
    1. Install <a target="_blank" href="https://privatebin.info/">PrivateBin</a> server for encryption before sending to zero-knowledge server.
-   1. Encrypt secret text and send to another for decryption (end-to-end encryption) using <a target="_blank" href="https://privatebin.info/">zeor-knowledge</a> 
+   1. Encrypt secret text and send to another for decryption (end-to-end encryption) using <a target="_blank" href="https://privatebin.info/">zeor-knowledge</a>
 
 - 5) College Board AP Computer Science Principles (March)
 
@@ -240,7 +240,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 
 ## How we learn
 
-<a target="_blank" href="https://www.youtube.com/watch?v=go8qow9I6cM&list=PLwXXOxvDboebhtPwm0cipRwN6tUL-WDc0">Google Classroom</a> is used with 
+<a target="_blank" href="https://www.youtube.com/watch?v=go8qow9I6cM&list=PLwXXOxvDboebhtPwm0cipRwN6tUL-WDc0">Google Classroom</a> is used with
 <a target="_blank" href="https://www.youtube.com/watch?v=0AaumF0jSAE&list=PLwXXOxvDboebt_ljDSC1GsP1KVaJB0HRH">
 Google Meet</a> (instead of Zoom or Microsoft Teams).
 <a target="_blank" href="https://www.youtube.com/watch?v=0Qvm2-I9H40">VIDEO</a>
@@ -262,7 +262,7 @@ We use <strong>active learning</strong> - practical hands-on projects
 We reference <strong>checklists</strong> from others who have mastered the topic.
 
 For help with memorization recall such as glossary definitions, we use paper flash cards and Quizlet.com:
-<a target="_blank" href="https://www.youtube.com/watch?v=oBPpyAuWi14">use Google Sheets</a>. 
+<a target="_blank" href="https://www.youtube.com/watch?v=oBPpyAuWi14">use Google Sheets</a>.
 <a target="_blank" href="https://www.youtube.com/watch?v=iIyDJK_SAjs&t=1m39s">VIDEO</a>:
 <a target="_blank" href="https://www.youtube.com/watch?v=UAby79mP-4I">VIDEO</a>:
 Answers are hidden using a white font.
@@ -362,8 +362,8 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. Social Engineering Vishing (credential harvesting) - CC 5.4
    * Vishing is the fraudulent practice of making phone calls or leaving voice messages purporting to be from reputable companies in order to induce individuals to reveal personal information, such as bank details and credit card numbers.
 
-1. Critical thinking (misinformation & manipulation): 
-   * How <strong>valid</strong> is the sender? 
+1. Critical thinking (misinformation & manipulation):
+   * How <strong>valid</strong> is the sender?
    * How <strong>biased</strong> is its source? <a target="_blank" href="">News</a> - KA 1
    * How <strong>valid (true)</strong> is the content? (Survey says by who?)
    * What is that trying to make me <strong>feel or do</strong>? Clickbait to serve up advertising & propaganda?
@@ -397,7 +397,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
    <u><em>"You computer ports are like your mouth. Avoid putting anything in there you do not trust."</em></u>
 
 1. Data handling policies - CC 5.3 USB, labeling - CC 5.1 using IoT device:
-   
+
    * HANDS-ON: Disable AutoRun & AutoPlay on Windows computer to prevent automatic execution of programs on the USB stick when it is inserted into the computer.
    * HANDS-ON: autorun files on USB drives (Random USB Stuxnet case)
    * HANDS-ON: Build an airgapped Raspberry Pi for <a target="_blank" href="https://circl.lu/projects/CIRCLean/">CIRClean on USB</a> to examine & <a target="_blank" href="https://lwn.net/Articles/626559/">scrub</a> USB drives
@@ -412,7 +412,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. Administrative controls - CC 1.3.1
 
 1. Digital Divide: PC x86 laptops vs macOS RaspberryPi ARM vs Chromebooks (<a target="_blank" href="https://www.youtube.com/watch?v=z6oyqrrXTLM">Linux on Chromebook</a>) - KA
-   * Secure config FaceTime & iMessage on iPhones 
+   * Secure config FaceTime & iMessage on iPhones
 
    <strong>Troubleshooting</strong>
 
@@ -422,7 +422,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. Networking: airgap, wifi, internet, cellular, radios - ITF 2.3
 1. Units of measure for storage, throughput, processing - ITF 1.5
 
-1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS, 
+1. Secure networking: Mobile hotspots & VPNs & Mullvad DNS over HTTPS,
    * <a target="_blank" href="https://www.signal.org/">Signal messaging</a> uses <a target="_blank" href="https://signal.org/blog/pqxdh/">post-quantum encryption</a>
 1. HANDS-ON: Use VirusTotal.com to check issues whether host name and IP address is malicious.
 1. HANDS-ON: Request take-down from data brokers.
@@ -450,13 +450,13 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. Fake URLs with unicode chars to click on malicious download sites
 1. Host name to IP address: DNS 9.9.9.9 - ITF 2.7
 
-1. Content: "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage) 
+1. Content: "Clickbait" Manipulation to share: emotions (shame, fear, mad, sad, scared, outrage)
 1. Phising to install keylogger, Trojans provide backdoor access and remote control capabilities, while viruses primarily focus on spreading and causing damage to files and systems.
 
 1. Phising of email, phone. Block, Delete, Report. DoNoCall lists.
 1. Contacts: Fields (email, phone, websites), tags, invite, sort
 
-1. PII spoofing and 2FA, Passkeys, logout, restart   
+1. PII spoofing and 2FA, Passkeys, logout, restart
 1. Temp/alt info: Address, Phone, email, credit card, social security
 1. HANDS-ON: Create carricatures using AI
 1. HANDS-ON: Cloudinary.com to hold image files
@@ -480,7 +480,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
    * Encryption: [Post-Quantum encryption algorithm] - CC 5.1
    * HANDS-ON TOOL: JohnTheRipper password (brute-force) crackers using dictionary attack
 
-1. Hash collisions MD5 & SSH 
+1. Hash collisions MD5 & SSH
 1. Methods to secure devices - ITF 6.2
 1. Behavoioral security concepts - ITF 6.3
 1. Authentication, authorization, accounting - ITF 6.4 & CC 1.1
@@ -494,7 +494,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. SSH for GitHub
 
 1. Hardware: components, powers of 2, Volts = Amperge x Resistance Ohms
-1. Keyboards Carpel-Tunnel prevention, 
+1. Keyboards Carpel-Tunnel prevention,
 1. Operating systems: Families, Bootup, sleep, periodic shut down, auto Updates
 
    <strong>Terminal CLI</strong>
@@ -506,7 +506,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
 1. Package managers: apps vs command packages, downloading
 
-1. Protocols: [Wireshark utility] HTTP, HTTPS with SSL certs, CAs, 
+1. Protocols: [Wireshark utility] HTTP, HTTPS with SSL certs, CAs,
 1. Man-in-the-middle attacks security
 
    <a target="_blank" href="https://www.youtube.com/watch?v=3VYj__vmm6Y">VIDEO</a>: <a target="_blank" href="https://www.penguinrandomhouse.com/books/740806/brave-new-words-by-salman-khan/">Brave New Words by Salman Khan</a>
@@ -553,7 +553,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. [Backup and restore] as incident response workflow
 
 1. Detect evidence of intrusion, log archival
-1. network segmentation mTLS for zero trust 
+1. network segmentation mTLS for zero trust
 
 1. CERTIFICATION: $50 <a target="_blank" href="https://www.isc2.org/certifications/cc/cc-certification-exam-outline">ISC2 Certified in Cybersecurity from ISC2</a>
 
@@ -613,7 +613,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. HANDS-ON: Create a static github.io website using Jekyll using Ruby or 11ty using Node
 1. HANDS-ON: Register a domain name
 
-1. Initialize a new repo 
+1. Initialize a new repo
 1. [Populate a .gitignore based on technologies used]
 1. PPAs (Personal Package Archives) in Debian/Ubuntu Canonical
 1. Contribute to an open-source project on GitHub (27 min)
@@ -668,7 +668,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
    * Speak live at industry conferences (traveled)
    * Interiew on video podcasts (Danny Jones, Lex Friedman, Jordan Harbinger, Jordan Peterson)
    * Master ceremonies at events
-  
+
 1. [LinkedIn profile] to display achievements and recommendations
 1. Projects: (Make the complex simply complicated)
    * https://www.linkedin.com/in/madisonhinman/details/projects/
@@ -676,7 +676,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
 1. Diagrams, flowcharts in PowerPoint = LibreOffice = Google Draw, Miro
 
-1. ["Someone behind you" <a target="_blank" href="https://www.youtube.com/watch?v=k6p28-hyDBE/">OpenCV</a> image recognition] (<a target="_blank" href="https://www.youtube.com/watch?v=iluST-V757A&list=PLEsfXFp6DpzRyxnU-vfs3vk-61Wpt7bOS">VIDEO</a> 
+1. ["Someone behind you" <a target="_blank" href="https://www.youtube.com/watch?v=k6p28-hyDBE/">OpenCV</a> image recognition] (<a target="_blank" href="https://www.youtube.com/watch?v=iluST-V757A&list=PLEsfXFp6DpzRyxnU-vfs3vk-61Wpt7bOS">VIDEO</a>
 1. [custom bit.ly URL shortener]
 
 1. Website SSL (https://www.youtube.com/channel/UCTLmcK9w1bZOpQbRCEg6vEw/videos)
@@ -767,7 +767,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 
 
    <a name="Clouds"></a>
-   
+
    <strong>G. Navigate within cloud environments (AWS, Azure, Google)</a>
 
    <u><em>The scope here is to be able to sign up and get permissions to navigate the menu. Creating resources is covered in more advanced classes.</em></u>
@@ -819,7 +819,7 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. 8-bit to 16, 32, 64, 128 - ITF 2.3
 1. File Systems: format USB chips and drives
 1. [Install a USB chip to setup a Zima board from scratch]
-1. Configuration files: between json & yaml & xml & toml 
+1. Configuration files: between json & yaml & xml & toml
 1. dotfiles from others
 1. Logs: [convert epoch date]
 
@@ -835,11 +835,11 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
 1. system hardening - CC 5.2.1
 1. Configuration management (e.g., baselines, updates, patches) - CC 5.2.2
 
-1. Server Backup & Restore 
+1. Server Backup & Restore
 1. Server Incident Management
 
-1. CERTIFICATION: $84 CompTIA Tech+ (formerly IT Foundations+) (https://www.comptia.org/certifications/a) 
-1. CERTIFICATION: CompTIA A+ (https://www.comptia.org/certifications/a) 
+1. CERTIFICATION: $84 CompTIA Tech+ (formerly IT Foundations+) (https://www.comptia.org/certifications/a)
+1. CERTIFICATION: CompTIA A+ (https://www.comptia.org/certifications/a)
    * $253 220-1102 - operating systems, security, software, operational procedures.
    * $253 220-1101 - mobile devices, networking technology, hardware, virtualization, cloud computing.
 1. CERTIFICATION: Linux LPIC-1 101 $200
@@ -906,7 +906,7 @@ students, while still in high school, can earn college credits:
 2. Attend a nearby community college on-site within "duel enrollment" programs so credits earned apply to both high school and university graduation requirements.
 
 3. Score high enough on credit-by-examination:
-   * <a target="_blank" href="https://clep.collegeboard.org/clep-exams">College Board's CLEP (College-Level Examination Program®)</a> have $93 year-round exams for anyone (with parent approval at age 13 or below). Usually taken in undergrad years. They have a <a target="_blank" href="https://clep.collegeboard.org/clep-exams/information-systems">Information Systems exam</a>, <a target="_blank" href="https://clep.collegeboard.org/clep-college-credit-policy-search">accepted</a> on score 50-65 or higher. 
+   * <a target="_blank" href="https://clep.collegeboard.org/clep-exams">College Board's CLEP (College-Level Examination Program®)</a> have $93 year-round exams for anyone (with parent approval at age 13 or below). Usually taken in undergrad years. They have a <a target="_blank" href="https://clep.collegeboard.org/clep-exams/information-systems">Information Systems exam</a>, <a target="_blank" href="https://clep.collegeboard.org/clep-college-credit-policy-search">accepted</a> on score 50-65 or higher.
    PROTIP: The College Board Access Code is 970000 for "US Territories Homeschool" students, 000003 (in the U.S. or U.S. territories) or 000004 (in international locations) for those no longer in school or do not have a high school code. 877-274-6474
 
    * IB
@@ -1020,8 +1020,8 @@ Items below are based on the national CSTA (Computer Science Teacher Associate) 
 Montana:
 
    * 3B-DA-05	Use data analysis tools and techniques to identify patterns in data representing complex systems.	For example, identify trends in a dataset representing social media interactions, movie reviews, or shopping patterns.
-   * 3B-DA-06	Select data collection tools and techniques to generate data sets that support a claim or communicate information.	
-   * 3B-DA-07	Evaluate the ability of models and simulations to test and support the refinement of hypotheses.	
+   * 3B-DA-06	Select data collection tools and techniques to generate data sets that support a claim or communicate information.
+   * 3B-DA-07	Evaluate the ability of models and simulations to test and support the refinement of hypotheses.
    <br /><br />
 
 <a name="Algorithms"></a>
@@ -1109,7 +1109,7 @@ Montana:
    * 3B-AP-10	Use and adapt classic algorithms to solve computational problems.	Examples could include sorting and searching.
    * 3B-AP-11	Evaluate algorithms in terms of their efficiency, correctness, and clarity.	Examples could include sorting and searching.
    * 3B-AP-12	Compare and contrast fundamental data structures and their uses.	Examples could include strings, lists, arrays, stacks, and queues.
-   * 3B-AP-13	Illustrate the flow of execution of a recursive algorithm.	
+   * 3B-AP-13	Illustrate the flow of execution of a recursive algorithm.
    * 3B-AP-14	Construct solutions to problems using student-created components, such as procedures, modules and/or objects.	Object-oriented programming is optional at this level. Problems can be assigned or student-selected.
    * 3B-AP-15	Analyze a large-scale computational problem and identify generalizable patterns that can be applied to a solution.	As students encounter complex, real-world problems that span multiple disciplines or social systems, they should decompose complex problems into manageable subproblems that could potentially be solved with programs or procedures that already exist. For example, students could create an app to solve a community problem by connecting to an online database through an application programming interface (API).
    * 3B-AP-16	Demonstrate code reuse by creating programming solutions using libraries and APIs.	Libraries and APIs can be student-created or common graphics libraries or maps APIs, for example.
@@ -1203,10 +1203,10 @@ Montana:
 
 Montana:
 
-   * 3B-IC-25	Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society.	
-   * 3B-IC-26	Evaluate the impact of equity, access, and influence on the distribution of computing resources in a global society.	
+   * 3B-IC-25	Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society.
+   * 3B-IC-26	Evaluate the impact of equity, access, and influence on the distribution of computing resources in a global society.
    * 3B-IC-27	Predict how computational innovations that have revolutionized aspects of our culture might evolve.	Areas to consider might include education, healthcare, art/entertainment, and energy.
-   * 3B-IC-28	Debate laws and regulations that impact the development and use of software.	
+   * 3B-IC-28	Debate laws and regulations that impact the development and use of software.
    <br /><br />
 
 <hr />
@@ -1255,7 +1255,7 @@ archived by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-5087
 
 Studing of Computer Science is not mutually exclusive with studying other subjects.
 
-Because virtually all professional now use computers, even within trades, 
+Because virtually all professional now use computers, even within trades,
 skill with using computer hardware and software efficiently and securely enhances success in other disciplines.
 
 These computational thinking practices are skills students should develop during the CSP course:
@@ -1264,11 +1264,11 @@ These computational thinking practices are skills students should develop during
    * Algorithms: procedures to solve problems and obtain answers
    * Abstraction in Program Development: Develop programs that incorporate abstractions.
    * Code Analysis: Evaluate and test programs.
-   * Computing Innovations: Investigate 
+   * Computing Innovations: Investigate
    * Responsible Computing: Contribute to an inclusive, safe, collaborative, and ethical computing culture.
    <br /><br />
 
-<a target="_blank" href="https://www.flvs.net/high-school-courses/course/ap-computer-science-a/12/">One school</a> specified that for CSA, "Algebra 1 required. Algebra 2 and prior programming experience (i.e. Foundations of Programming) recommended." 
+<a target="_blank" href="https://www.flvs.net/high-school-courses/course/ap-computer-science-a/12/">One school</a> specified that for CSA, "Algebra 1 required. Algebra 2 and prior programming experience (i.e. Foundations of Programming) recommended."
 
 Students may have prior experience with Computer Science topics:
 
@@ -1285,7 +1285,7 @@ Students may have prior experience with Computer Science topics:
 
 But the CSP exam doesn't require much math and has one of the highest passing rates (68%) and is known to be one of the easiest exams. So it's feasible to take CSP as a Sophomore.
 
-This is why, within the <a target="_blank" href="https://www.usnews.com/education/best-high-schools/national-rankings">highest-ranked high schools in the US</a>, it's not uncommon for ambitious Sophomores and even Freshmen (9th or 10th grade) to take a Computer Science course so they have more time to take AP exams in other topics in their Junior and Senior year-end. That enables students to fully participate in extracurricula activities for a well-rounded experience. 
+This is why, within the <a target="_blank" href="https://www.usnews.com/education/best-high-schools/national-rankings">highest-ranked high schools in the US</a>, it's not uncommon for ambitious Sophomores and even Freshmen (9th or 10th grade) to take a Computer Science course so they have more time to take AP exams in other topics in their Junior and Senior year-end. That enables students to fully participate in extracurricula activities for a well-rounded experience.
 
 > “Colleges are looking at the context of what’s available to that student and how they have challenged themselves accordingly,” --<a target="_blank" href="https://www.usnews.com/education/best-colleges/articles/how-to-determine-the-right-number-of-ap-classes-to-take">this article</a>
 
@@ -1304,7 +1304,7 @@ The College Board provides fee reductions (to $53) for eligible students with fi
 
 Schools have until November 15 to let College Board know which students are testing.
 
-AP scores come out about two months after the exam, during the beginning of July. 
+AP scores come out about two months after the exam, during the beginning of July.
 
 The College Board's phone is 212-632-1780 or 888-225-5427 (toll free in the United States and Canada).
 
@@ -1324,8 +1324,8 @@ Students who are homeschooled or go to a school that doesn’t administer AP Exa
    <a target="_blank" href="https://nces.ed.gov/ccd/schoolsearch/">National Center for Educaton Statistics Search</a> by NCES School ID https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?Search=1&City=Joliet&State=30&Zip=59041&SchoolType=1&SchoolType=2&SchoolType=3&SchoolType=4&SpecificSchlTypes=all&IncGrade=-1&LoGrade=-1&HiGrade=-1&ID=301526000464
 
 * In Montana, for 23-24 there were 9 schools, up from 5 in 22-23, 6 in 21-22, and 4 in 20-21.
-   * AP® participation rate at Belgrade High School is 34%. (<a target="_blank" href="https://maps.app.goo.gl/EawUtUSW5LanJACK8">NorthWest Bozeman</a>, 303 N Hoffman St, Belgrade, MT 59714 Gallatin Valley) Amy Guevara</a>, STEM Coordinator, 406-924-2122. 
-   * Capital High School, Helena 
+   * AP® participation rate at Belgrade High School is 34%. (<a target="_blank" href="https://maps.app.goo.gl/EawUtUSW5LanJACK8">NorthWest Bozeman</a>, 303 N Hoffman St, Belgrade, MT 59714 Gallatin Valley) Amy Guevara</a>, STEM Coordinator, 406-924-2122.
+   * Capital High School, Helena
    * Glacier HIgh School, Kalispell
    * Great Falls Central Catholic High School
    * Helena High School
@@ -1337,7 +1337,7 @@ Students who are homeschooled or go to a school that doesn’t administer AP Exa
 <a target="_blank" href="http://montanadigitalacademy.org/">montanadigitalacademy.org</a> (MTDA) was created in 2009 by the Montana Legislature to provide an online program for Montana students in partnership with public schools across the state. It provides over 75 original credit courses, including AP and Dual Credit Initial Enrollment Deadline:  08/28/2024 that include:
 
    * No Computer Science Principles? Jason Neiffer
-   
+
    * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vQPFAsgaGQqMAR3oak6LaLek0ZitPL4jS8YKJm95vv6pjNMMP2ar2Rt1-vrqwkuthR2-Xdx0WwNdiTR/pub">AP Computer Science A</a>
    * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vTyf3QEyp_VShjxIkE9S2UJEYccKXu0SO6SYHA6tFz6P3J7IvRxl_ZUu0oRj3Oa2_tA7eoa0D6pZ4Ps/pub">Artificial Intelligence in the World</a>
    * <a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSTbkc-Nf7JkadA8b4su1nN3M4rxNT9OKTYOjtdocch6t264knUpdZEvFcCPE8FwKMqqrKG4y3NoKLs/pub">Computer Science I: Joy and Beauty of Computing (High School Credit)</a>
@@ -1355,14 +1355,14 @@ According to College Board, Department of Education, Bureau of Labor Statistics:
 
 ## Scores
 
-One does not need to take a class before taking the exam. 
+One does not need to take a class before taking the exam.
 But almost all students do.
 
 Results are reported on a scale from 1 to 5. Most colleges recognize a score of 3 as the basis for a student in lieu of taking the Fundamentals class. This enables the student to take more advanced classes earlier in college. AP exams can boost a student's chances of being accepted at competitive colleges.
 
 Historically, 12% of test takers received a mark of 5 on the CSP.
 
-The mean score for all 2023 AP Exams was 2.96. More than 60% of all exams taken earned a score of 3 or higher. 
+The mean score for all 2023 AP Exams was 2.96. More than 60% of all exams taken earned a score of 3 or higher.
 https://apstudents.collegeboard.org/about-ap-scores/score-distributions
 AP Score Distributions.
 AP Computer Science Principles, 63.1% received a score of 3 or higher.
@@ -1462,7 +1462,7 @@ The loop iterates until time = 0;  The variable time is being updated in another
 
 Describe a change to the procedure that will result in a run-time error AND explains why the change will result in a run- time error.
 
-This question is asking you to describe a way to cause a runtime error in your code.  If you cannot cause one, you need to describe a way your code can be modified to cause a runtime error.  Runtime errors occur during program execution due to unexpected conditions, while compiler errors occur during the compilation phase due to syntax or reference issues in the code.  
+This question is asking you to describe a way to cause a runtime error in your code.  If you cannot cause one, you need to describe a way your code can be modified to cause a runtime error.  Runtime errors occur during program execution due to unexpected conditions, while compiler errors occur during the compilation phase due to syntax or reference issues in the code.
 
 AP Example GOOD Answer:
 A runtime error would occur if instead of printing i, we printed i / (stop - i).  Once i is equal to stop, a divide by 0 run-time error will occur.  See example #3
@@ -1475,7 +1475,7 @@ Steps written in pseudocode, not actual code. Must return a count.
 This question is asking for a step-by-step explanation of the algorithm, detailing how to traverse through the list, compare each element with the target value using the isEqual procedure, and increment a count variable for each occurrence of the target value. The explanation should be thorough enough that someone else could understand it well enough to write the code based on your instructions. This includes describing the initialization of variables, the iteration process, the use of the isEqual procedure, the counting mechanism, and returning a count.
 
 AP Example GOOD Answer:
-Set a counter variable count to 0.  Iterate over the elements of the list named myList.  For each element, call isEqual to compare the element from myList to the given value.  If isEquals returns true add 1 to count.  After iterating over every list value, print the value of count.  
+Set a counter variable count to 0.  Iterate over the elements of the list named myList.  For each element, call isEqual to compare the element from myList to the given value.  If isEquals returns true add 1 to count.  After iterating over every list value, print the value of count.
 
 ### AP CSP Tutorials
 
@@ -1552,7 +1552,7 @@ Stand-outs are:
    CodeHS AP courses are College Board Endorsed, meaning they have preapproved syllabi, lesson plans, and other instructional support.
 
    Features include classroom management.
-   
+
    Provides an <a target="_blank" href="https://codehs.com/ide">on-line IDE</a> for 10+ programming languages.
 
    Added <a target="_blank" href="https://codehs.com/course/ap_csp_cyber/overview">
@@ -1593,11 +1593,11 @@ Skill with PowerPoint to create presentations would be useful as a prerequisite 
 The class is structured so that one student can be the "product manager"
 responsible for each specific technology listed above.
 
-This provides an opportunity for students to develop leadership and teaching skills. 
+This provides an opportunity for students to develop leadership and teaching skills.
 
 There are many "Product Manager" jobs for those who have not mastered all the technologies,
 but just one or a few:
-   
+
    * customize descriptions of the technology so it can be easily understood by different audiences
    * promote the use of a technology using various media
    * define and organize events
@@ -1691,8 +1691,16 @@ many of the AP STEM subjects. Courses related to computer science:
 
 * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science">Computer Science theory</a> (Algorithms, Cryptography, Information theory).
 
+### IBM Lightboards
+
+<a target="_blank" href="https://www.linkedin.com/in/jeffcrume/">IBMer Jeff Crume</a>
+<a target="_blank" href="https://www.youtube.com/playlist?list=PLdw2bVqUvsk2PnreCdr5uDZ1CjwvQScKe">
+video playlist</a> on cybersecurity
+
+
 ### CS50 Harvard
 
+<a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course"><img width="300" align="right" alt="CS50certificate-1056x816.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1721158621/CS50certificate-1056x816_cjymnh.png"></a>
 <a target="_blank" href="https://www.youtube.com/watch?v=3xaVX0cluDo">ROADMAP</a>: <a target="_blank" href="https://www.youtube.com/user/cs50tv">YouTube</a> <a target="_blank" href="https://www.youtube.com/playlist?list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4">2024</a>: <a target="_blank" href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science">CS50's Introduction to Computer Science</a>: An introduction to the intellectual enterprises of computer science and the art of programming. 12 weeks at 6–18 hours per week. By popular <a target="_blank" href="https://www.linkedin.com/in/malan/">Dr. David Malan</a> presents challenges.
 
    <a target="_blank" href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science">Intro</a>
@@ -1712,21 +1720,95 @@ many of the AP STEM subjects. Courses related to computer science:
    Week 9 - Flask<br />
    <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@ed66b9b9bb9240f19da6902ce9c358c3/block-v1:HarvardX+CS50+X+type@vertical+block@3c04948dcf1144a88abd3974a0069ec7">Week 10 - Cybersecurity</a><br />
 
+<a target="_blank" href="https://www.youtube.com/watch?v=22BRMz8siIE">VIDEO</a>: CS50 and the AP CSP Curriculum Framework (from 2016)
+
+
 Dr. Malan brings concepts to life <a target="_blank" href="https://www.youtube.com/watch?v=AMiNIjePZlo&t=11m38s">with memorable theatrical explanations</a>, which he has students rank:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714867871/cs50-evals-2934x1172_sp5cqc.png"><img alt="cs50-evals-2934x1172.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714867871/cs50-evals-2934x1172_sp5cqc.png"></a>
 
 The class is recommended by <a target="_blank" href="https://youtube.com/shorts/mmVaKcM_vrw?si=RVvDvlJY_ckb3Cnt">this</a> and <a target="_blank" href="https://youtube.com/shorts/otJLgUL0STI?si=iHduCXzfNV6sKXy4">this</a>.
 
-<a target="_blank" href="https://www.edx.org/learn/ap/harvard-university-cs50-s-ap-r-computer-science-principles">Archived Apr 30, 2020</a> 
+<a target="_blank" href="https://www.edx.org/learn/ap/harvard-university-cs50-s-ap-r-computer-science-principles">Archived Apr 30, 2020</a>
 are 36 weeks <a target="_blank" href="https://www.edx.org/xseries/harvardx-cs50-ap-computer-science-principles">XSeries Program in CS50's AP® Computer Science Principles</a>
 
 There are now several CS50 courses:
    * <a target="_blank" href="https://www.youtube.com/playlist?list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE">CS50 Cybersecurity</a> playlist
    * <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/">CS50 AI with Python</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=tIfWkN1hqZs">1:39:33 Teaching CS50 with AI</a>
+   <br /><br />
 
-https://conference.csteachers.org/
+* Run the website locally:
+   ```
+   cd
+   mkdir -p cs50
+   git clone https://github.com/cs50/cs50.readthedocs.io
+   cd cs50.readthedocs.io
+   cli50
+   make
+   ```
+1. Visit http://localhost:8080/
 
+   https://github.com/cs50/docs
+
+   https://github.com/cs50/python-cs50 is the CS50 Library for Python
+
+1. Install the library for Python (not in Conda):
+
+   ```
+   pip install cs50
+   ```
+
+   https://github.com/cs50/python-cs50
+
+1. Mount a directory within a container Docker on Ubuntu 22.04.
+   ```
+   pip install cli50
+   ```
+
+1. Setup VSCode for CS50: https://cs50.readthedocs.io/cs50.dev/
+
+1. CS50 Problem Sets:
+   ```
+   pip install check50
+   ```
+
+
+   (Coding in C is out of scope for Joliet HS, so the style50 utility is not needed.)
+
+   <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset6">Problem Set 6 (in Python)</a>:
+   * <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset6/cash/cash.py">cash</a> - make change
+   * <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset6/credit/credit.py">credit</a> - credit card
+   * <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset6/dna">dna</a> - sequencing
+   * <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset6/hello">hello</a> - What is your name?
+   * <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset6/mario">mario</a> - prints a pyramid of hashes - more and less
+   * <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset6/readability/readability.py">readability</a> - Uses Coleman-Liau index to calculate the difficulty of a body of text by assigning it a grade.
+
+   <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset7">Problem Set 7 SQL (in Python)</a>:
+   * houses of Hogwarts - <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset7/houses/houses/import.py">import.py</a> & <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset7/houses/houses/roster.py">roster.py</a>
+   * <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/pset7/movies">movies</a> SQL files
+
+   Problem Set 8: Web - Web Tracks:
+   * <a target="_blank" href="https://github.com/Federico-abss/CS50-intro-course/tree/master/Python/finance">finance</a>
+
+   Sample Final projects:
+   * https://github.com/Federico-abss/Lispy Final projects in 2020 by Federico Mannuci
+
+1. To automatically grade code on correctness:
+
+   https://cs50.readthedocs.io/projects/check50/en/latest/
+
+   pip install check50
+
+1. To setup for submit: https://cs50.readthedocs.io/submit50/
+   ```
+   pip install submit50
+   ```
+1. To submit: https://cs50.readthedocs.io/submit50/#submitting-with-submit50
+
+   ```
+   submit50 slug
+   ```
 
 ### Vendor info
 
@@ -1761,7 +1843,7 @@ South Dakota
 
 * https://github.com/dylanaraps/pure-bash-bible
 
-* https://codehs.com/plans_detail 
+* https://codehs.com/plans_detail
 * codehs.com/ai
 * https://codehs.com/pro
 * codehs.com/states
@@ -1792,17 +1874,17 @@ $5,000 ($1,250 per six-month term) Cybersecurity scholarship
 
 https://sfs.opm.gov/
 CyberCorps®: Scholarship for Service
-recruit and train the next generation of information technology professionals, industrial control system security professionals, and security managers to meet the needs of the cybersecurity mission for Federal, State, local, and tribal governments. This program provides scholarships for up to 3 years of support for cybersecurity undergraduate and graduate (MS or PhD) education. The scholarships are funded through grants awarded by the National Science Foundation. In return for their scholarships, recipients must agree to work after graduation for the U.S. Government, in a position related to cybersecurity, for a period equal to the length of the scholarship. 
+recruit and train the next generation of information technology professionals, industrial control system security professionals, and security managers to meet the needs of the cybersecurity mission for Federal, State, local, and tribal governments. This program provides scholarships for up to 3 years of support for cybersecurity undergraduate and graduate (MS or PhD) education. The scholarships are funded through grants awarded by the National Science Foundation. In return for their scholarships, recipients must agree to work after graduation for the U.S. Government, in a position related to cybersecurity, for a period equal to the length of the scholarship.
 
 
-<a target="_blank" href="https://us.store.bambulab.com/products/">Bamboo 3D printer</a> $599-$849 for 16-color (4 units) 
-P1P ideal: PLA, PETG translucent, TPU, PVA, PET, 
+<a target="_blank" href="https://us.store.bambulab.com/products/">Bamboo 3D printer</a> $599-$849 for 16-color (4 units)
+P1P ideal: PLA, PETG translucent, TPU, PVA, PET,
 P1S has enclosed cage to use ABS, ASA
 Capable: PA, PC
 https://www.reddit.com/r/BambuLab/comments/14q1srr/unpopular_opinion_bambu_lab_should_not_be_your/
 
 Use Micro:bit for TOTP chip like a ___ device used for authentication.
-The BBC micro:bit is a programmable device that allows students to get hands-on with coding and digital making. 
+The BBC micro:bit is a programmable device that allows students to get hands-on with coding and digital making.
 It has a 5x5 pixel screen, acclerometer.
 It is use for introduction to Python.
 Use Chrome for online emulator https://python.microbit.org/v/3
@@ -1832,7 +1914,7 @@ Cybersecurity Guidelines, each having KUs (Knowledge Units):
 
    * Coastline Community College hosts Netlab access for RING teachers across the country. For Chromebooks. 3rBfVLG cyberseek.org
 
-   
+
 
 US AFA CyberPatriot
 

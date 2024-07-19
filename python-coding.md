@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-14"
+date: "2024-07-19"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "The rules shown in samples using Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -39,21 +39,21 @@ This is the last in my series of articles about Python:
 
 > I wrote this because I have a mental block about programming Python. I'm afraid of Python like I'm afraid of real snakes.
 
-Maybe it's fear of not doing well on coding interviews. 
-That's weird because as an SRE I don't have a job where I'm programming Python every day. 
+Maybe it's fear of not doing well on coding interviews.
+That's weird because as an SRE I don't have a job where I'm programming Python every day.
 
 Yet employers make people go through coding challenges anyway like it was a fraternity hazing ritual.
 
-So to get over my Python phobia, like any other aversion therapy, 
-I needed to de-sensitize myself and do the very thing I fear. 
+So to get over my Python phobia, like any other aversion therapy,
+I needed to de-sensitize myself and do the very thing I fear.
 
 
-## Setup an IDE 
+## Setup an IDE
 
 The most popular IDEs for Python are:
    * <a href="https://www.jetbrains.com/pycharm/buy/#personal">PyCharm</a> (FREE or PRO $89/$71/$53 year)
 
-   * VSCode from Microsoft (free) has add-ons for Python, but some fear vulnerabilities from unknown authors 
+   * VSCode from Microsoft (free) has add-ons for Python, but some fear vulnerabilities from unknown authors
 
    * Cloud9 free on-line on AWS (which automatically generates new credentials every 5 minutes or on browser Reset<a target="_blank" href="https://www.coursera.org/learn/building-modern-python-applications-on-aws/lecture/UdnyB/using-temporary-credentials-in-aws-cloud9">*</a>)
 
@@ -93,7 +93,7 @@ The <tt>bandit_yml.cfg</tt> configuration file contains YAML lines such as this 
 skips: ["B101"] # skips the assert check
 ```
 
-Bandit throws an exit status of 1 whenever it encounters any issues, thus terminating the pipeline. 
+Bandit throws an exit status of 1 whenever it encounters any issues, thus terminating the pipeline.
 
 The report it generates include the number of issues separated by confidence and severity according to three levels: low, medium, and high.
 
@@ -116,7 +116,7 @@ Listed alphabetically below is the lexis of words Python has reserved for itself
 
 PROTIP: Research and find out what each is about:
 
-*	and 
+*	and
 *	as
 *	<a href="#assert">assert</a>
 *	async
@@ -130,12 +130,12 @@ PROTIP: Research and find out what each is about:
 *	else
 *	except
 *	False - boolean
-*	finally - of a try 
+*	finally - of a try
 *	for = iterate through a loop
 *	from
 *	global = defines a variable global in scope
 *	if
-*	import = make the specified package available 
+*	import = make the specified package available
 *	in
 *	is
 *	lambda - if/then/else in one line
@@ -149,7 +149,7 @@ PROTIP: Research and find out what each is about:
 *	True - Boolean
 *	try - [VIDEO](https://www.youtube.com/watch?v=NIWwJbo-9_8)
 *	while
-*	with
+*	<a href="#with">with</a>
 *	yield - resumes after returning a value back to the caller to produce a series of values over time.
 <br /><br />
 
@@ -168,7 +168,7 @@ Press control+D to exit anytime.
 
 Don't create custom functions with these function names reserved.
 
-Know what they do. See 
+Know what they do. See
 https://docs.python.org/3/library/functions.html
 
    * abs() = return absolute value
@@ -310,7 +310,7 @@ The value passed through when calling the function is called an <strong>argument
 
 ## Operators
 
-Walrun operator := 
+Walrun operator :=
 <a target="_blank" href="https://www.youtube.com/watch?v=e0vFRnEv16I">VID1</a>
 <a target="_blank" href="https://www.youtube.com/watch?v=MEMDi9mTCiU">VID2</a>
 
@@ -342,7 +342,7 @@ Modulus is used in circular buffers and hashing algorithms.
 &nbsp;
     for i in range(len(A)):
         # Use % modulo operator to calculate new index position 0 - 9:
-        result[(i + K) % len(A)] = A[i]   
+        result[(i + K) % len(A)] = A[i]
         print(f'i={i} A[i]={A[i]} K={K} result={result} ')
     return result
 &nbsp;
@@ -368,7 +368,7 @@ end = datetime.datetime.now()
 elapsed = end - start
 print(elapsed)
 # or
-print(elapsed.seconds,":",elapsed.microseconds) 
+print(elapsed.seconds,":",elapsed.microseconds)
 </pre></ul>
 
 Some prefer to display local time with a Time Zone code from Python package pytz or zulu.
@@ -390,7 +390,7 @@ Once a datetime has a tzinfo, the astimezone() strategy supplants new tzinfo.
 
 ### Timing Attacks
 
-A malicious use of precise microseconds timing code is used by <a target="_blank" href="https://codahale.com/a-lesson-in-timing-attacks/">Timing Attacks</a> based on the time it takes for an application to authenticate a password to determine the algorithm used to process the password. In the case of <a target="_blank" href="http://rdist.root.org/2009/05/28/timing-attack-in-google-keyczar-library/">Keyczar vulnerability found by Nate Lawson</a>, a simple break-on-inequality algorithm was used to compare a candidate HMAC digest with the calculated digest. A value which shares no bytes in common with the secret digest returns immediately; a value which shares the first 15 bytes will return 15 compares later. 
+A malicious use of precise microseconds timing code is used by <a target="_blank" href="https://codahale.com/a-lesson-in-timing-attacks/">Timing Attacks</a> based on the time it takes for an application to authenticate a password to determine the algorithm used to process the password. In the case of <a target="_blank" href="http://rdist.root.org/2009/05/28/timing-attack-in-google-keyczar-library/">Keyczar vulnerability found by Nate Lawson</a>, a simple break-on-inequality algorithm was used to compare a candidate HMAC digest with the calculated digest. A value which shares no bytes in common with the secret digest returns immediately; a value which shares the first 15 bytes will return 15 compares later.
 
 Similarly, <a target="_blank" href="https://belitsoft.com/assets/python-security.pdf">PDF: entropy</a>
 <a target="_blank" href="https://user-images.githubusercontent.com/300046/146260721-42584e8b-25d4-4853-a073-295dbbd9ac24.png">
@@ -406,7 +406,7 @@ REMEMBER: Depth-First Seach (DFS) uses a stack, whereas
 Breadth-First Search (BFS) use a queue.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=MK-NZ4hN7rs">VIDEO</a>:
-The <strong>Sliding Window</strong> 
+The <strong>Sliding Window</strong>
 
 <a target="_blank" href="https://www.youtube.com/watch?v=MK-NZ4hN7rs">VIDEO</a>:
 FullStack's REACTO framework during coding interviews:
@@ -435,7 +435,7 @@ Several packages, functions, and methods are available. They differ by:
 
 We want both reported.
 
-timeit.default_timer() is time.perf_counter() on Python 3.3+. 
+timeit.default_timer() is time.perf_counter() on Python 3.3+.
 
 The same program run several times would report similar CPU time but varying wall-clock times due to differences in what else was taking up resources during the runs.
 
@@ -464,10 +464,10 @@ print('{:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
 
 For more accurate wall-time capture, the timeit() functions disable the garbage collector.
 
-<tt><strong>timeit.timer()</strong></tt> 
+<tt><strong>timeit.timer()</strong></tt>
 provides a nice output format of <tt>0:00:01.946339</tt> for almost 2 seconds.
    * https://pynative.com/python-get-execution-time-of-program/
-   * https://docs.python.org/3/library/timeit.html 
+   * https://docs.python.org/3/library/timeit.html
    * https://www.guru99.com/timeit-python-examples.html
    <br /><br />
 
@@ -532,7 +532,7 @@ There is data complexity and time complexity.
 
 Time complexity analysis estimates how long it will take for an algorithm to complete its assigned job based on its structure.
 
-Use of Modulus would result in "O(n)" (linear) growth in time to run as the dataset grows. 
+Use of Modulus would result in "O(n)" (linear) growth in time to run as the dataset grows.
 
 Depth-first trees would have steeper (logarithmic) Time Complexity:
 
@@ -577,10 +577,23 @@ where n is the number of input items in the list being processed:
 
 The asymptope is when a number reaches an extremely large number that is essentially infinite.
 
-<a target="_blank" href="https://www.youtube.com/watch?v=umLZphwA-dw">VIDEO</a>: "Compiled Python is FAST"
-by $200/hour https://dougmercer.dev
+### Faster routes to machine code
+By default, Python comes with the <a target="_blank" href="https://github.com/python/cpython">CPython interpreter</a> (command cythonize) to generate machine-code. When speed is needed, such as in loops, custom C/C++ extensions are created. Additional speed is obtained by adding before nested loop code directives and decorators:
+```
+# cython: language_level=3, boundscheck=False, wraparound=False
+import cython
+@cython.locals(i=cython.int,j=cython.int,a=list[cython.int],b=list[cython.int])
+```
 
-<a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/a/comparing-run-time-efficiency">KhanAcad explanation</a>
+<a target="_blank" href="https://www.youtube.com/watch?v=umLZphwA-dw">VIDEO</a>:
+benchmarks Numba, mypyc, Taichi (the fastest). Alternately, code compiled using <a target="_blank" href="https://github.com/exaloop/codon">Codon by Exaloop</a> tool <a target="_blank" href="https://medium.com/intuition/codon-a-python-compiler-3d5322e1c0a5">"41,212 times faster"</a> than the standard Python interpreter.
+
+Condon is a new python compiler that uses the LLVM framework to compile directly to machine code. Condon can also make use of the thousands of processors on a GPU to process matrix, graphical, and mathematical operations without using a library like numpy, scikit-learn, scipy, and game library pygame.
+However, Condon cannot use modules like typing functools such as <a target="_blank" href="https://docs.python.org/3/library/functools.html#functools.wraps">wraps</a>, which provides contextual information for decorators.
+
+
+
+<a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/a/comparing-run-time-efficiency">KhanAcad explanation of run-time efficiency</a>.
 
 ### minmax
 
@@ -590,7 +603,7 @@ A library contains several modules which are separated by its use.
 
 http://docs.python.org/3/reference/import.html
 
-A module is a bunch of related code saved in a file with the extension .py. 
+A module is a bunch of related code saved in a file with the extension .py.
 Code in a module can be functions, classes, or variables.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=o06MyVhYte4">
@@ -639,15 +652,15 @@ Techniques for calculation of <strong>nested loops</strong> is often used to sho
 
    <ul><pre>fib(5) = fib(4) + fib(3)</pre></ul>
 
-Memoization  (sounds  like  memorization)  is  the  technique of  writing  a  function  that  remembers  the  results  of  previous computations. 
+Memoization  (sounds  like  memorization)  is  the  technique of  writing  a  function  that  remembers  the  results  of  previous computations.
 
 Longest Increasing Subsequence (LIS)
 
 That's a technique of "Dynamic Programming" (See https://www.wikiwand.com/en/Dynamic_programming)
 
-Dynamic programming is a catch phrase for solutions based on solving 
-successively similar but smaller problems, using algorithmic tasks in which 
-the solution of a bigger problem is relatively easy to find, 
+Dynamic programming is a catch phrase for solutions based on solving
+successively similar but smaller problems, using algorithmic tasks in which
+the solution of a bigger problem is relatively easy to find,
 if we have solutions for its sub-problems.
 
 
@@ -736,9 +749,9 @@ PySide6 is under LGPL with no sharing.
 
 https://github.com/mfitzp/books/tree/main/create-gui-applications/pyside6
 
-In PySide6, every widget is part of two distinct hierarchies: 
-* the Python object hierarchy and 
-* the Qt layout hierarchy. 
+In PySide6, every widget is part of two distinct hierarchies:
+* the Python object hierarchy and
+* the Qt layout hierarchy.
 How you respond or ignore events can affect how your UI behaves.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=It7nTqIDd7E">VIDEO</a>: Qt Media player
@@ -833,11 +846,11 @@ The load_builtin() method will offer to download the movielens-100k dataset if i
 
 
 
-Surprise is a "scikit" (https://projects.scipy.org/scikits.html) 
+Surprise is a "scikit" (https://projects.scipy.org/scikits.html)
 which enables you to <a target="_blank" href="https://surprise.readthedocs.io/en/stable/building_custom_algo.html">build your own cross-validation recommendation algorithm</a> as well as use ready-to-use prediction algorithms such as:
    * baseline algorithms,
-   * neighborhood methods, 
-   * similarity measures (cosine, 
+   * neighborhood methods,
+   * similarity measures (cosine,
 
 Matrix factorization-based algorithms are used for collaborative filtering within recommender systems. The algorithms aim decompose a large user-item interaction matrix into smaller matrices that capture latent factors. The four common matrix factorization algorithms are SVD, PMF, SVD++, NMF:
 
@@ -863,7 +876,7 @@ NMF (Non-negative Matrix Factorization) factorizes a non-negative matrix V into 
 
     Reduced prediction errors compared to techniques like SVD when non-negativity is imposed
 
-Ability to work with compressed dimensional models, speeding up clustering and data organization Automatic extraction of sparse and significant features from non-negative data vectors 
+Ability to work with compressed dimensional models, speeding up clustering and data organization Automatic extraction of sparse and significant features from non-negative data vectors
 
 These matrix factorization algorithms have proven to be effective in capturing latent factors and similarities between users and items, making them powerful tools for building recommender systems. The choice of algorithm depends on the specific requirements of the application, such as dataset characteristics, computational resources, and desired interpretability of the results.
 
@@ -881,15 +894,15 @@ Test time   0.26    0.26    0.25    0.15    0.13    0.21    0.06
 
 Lower RMSE and MAE values indicate better predictive accuracy.
 
-RMSE (Root Mean Square Error) is calculated as the square root of the average of squared differences between predicted and actual values. It gives higher weight to larger errors, making it more sensitive to outliers. The formula for RMSE is: 
+RMSE (Root Mean Square Error) is calculated as the square root of the average of squared differences between predicted and actual values. It gives higher weight to larger errors, making it more sensitive to outliers. The formula for RMSE is:
 
-   RMSE = √(Σ(predicted - actual)^2 / n) 
+   RMSE = √(Σ(predicted - actual)^2 / n)
 
-MAE (Mean Absolute Error) is the average of the absolute differences between predicted and actual values. It treats all errors equally, regardless of their magnitude. The formula for MAE is: 
+MAE (Mean Absolute Error) is the average of the absolute differences between predicted and actual values. It treats all errors equally, regardless of their magnitude. The formula for MAE is:
 
    MAE = Σ|predicted - actual| / n
 
-RMSE is more sensitive to large errors, while 
+RMSE is more sensitive to large errors, while
 MAE provides a more intuitive measure of average error magnitude.
 
 
@@ -902,7 +915,7 @@ There is also wxWidgets, Kivy.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=rHlsV0hzr8I">VIDEO</a>:
 Qt for cross-platform development in Python over C++.
-Nokia owned Qt and developed PySide for Python bindings. 
+Nokia owned Qt and developed PySide for Python bindings.
 PySide2 arrived later than Riverbank's PyQt5  under GPL (buy license to keep code close source).
 PySide6 and PyQt5 released about the same time.
 PySide6 is under LGPL with no sharing.
@@ -970,17 +983,17 @@ In Python 2, there was an internal limit to how large an integer value could be:
 
 But that limit was removed in Python 3. So there now is no explicitly defined limit, but the amount of available address space forms a practical limit depending on the machine Python runs on. 64-bit
 
-<tt>0xa5</tt> (two character bits) represents a hexdidecimal number 
+<tt>0xa5</tt> (two character bits) represents a hexdidecimal number
 
 <tt>3.2e-12</tt> expresses as a a constant exponential value.
 
 Define a d
 
-'foo\'bar' 
+'foo\'bar'
 
 ### Slicing strings
 
-For flexibility with alternative languages such as Cyrillic (Russian) character set, 
+For flexibility with alternative languages such as Cyrillic (Russian) character set,
 return just the first 3 characters of a string:
 
    <pre>letters = "abcdef"
@@ -1073,7 +1086,7 @@ msgid "Hello World"
 msgstr "Translation in different language"
    </pre>
 
- 
+
    ```
    >>> unicode_string = u"Fuu00dfbu00e4lle"
 >>> unicode_string
@@ -1106,7 +1119,7 @@ Fußbälle
 Ensure that your program works correctly when another human language (such as "es" for Spanish, "ko" for Korean, "de" for German, etc.) is configured by the user:
 
    A. English was selected in browser's Preferences, but the app displays another language.
-   
+
    B. Another language was selected in browser's preferences, and the app displays that language.
 
 To simulate selecting another language in the browser's Preferences in Firefox:
@@ -1130,7 +1143,7 @@ driver = new ChromeDriver(options);
 1. To create a requirements.txt file containing the latest versions:
 
    ```
-   pip freeze > requirements.txt 
+   pip freeze > requirements.txt
    ```
 
 1. Identify whether CVEs have been filed against each module in requirements.txt:
@@ -1141,7 +1154,7 @@ driver = new ChromeDriver(options);
 
  If you’re writing a library that you intend to distribute and use in many places (or to be used by many people), the standard approach is to write a setup.py package manifest, and in the install_requires argument of setup() declare your dependencies. You should declare only direct dependencies, and declare the range of versions your library is compatible with.
 
-If you’ve built something that you want to deploy, or otherwise reproduce as an environment somewhere else, the standard approach is to create a requirements file containing the full (direct and transitive) dependency tree, pinned to exact versions, with package hashes included. You can do this by writing a script that strings together several pip commands, or by using the pre-made “pip-compile” script from the pip-tools project. 
+If you’ve built something that you want to deploy, or otherwise reproduce as an environment somewhere else, the standard approach is to create a requirements file containing the full (direct and transitive) dependency tree, pinned to exact versions, with package hashes included. You can do this by writing a script that strings together several pip commands, or by using the pre-made “pip-compile” script from the pip-tools project.
 
 This pyproject.toml file will work with modern versions of setuptools (61.0 and above). It replaces the need for a separate setup.py or setup.cfg file in many cases. However, if you need more complex build configurations or have custom build steps, you may still need to use a setup.py file alongside pyproject.toml.
 
@@ -1258,7 +1271,7 @@ ee_countries["Bulgaria"]="7M"
 &nbsp;
 ee2=ee_countries.copy()
 ee_countries.clear()  # remove all
-print(ee_countries)   # {} means empty 
+print(ee_countries)   # {} means empty
 </pre>
 
 https://www.codesansar.com/python-programming-examples/sorting-dictionary-value.htm
@@ -1266,7 +1279,7 @@ https://www.codesansar.com/python-programming-examples/sorting-dictionary-value.
 
 ## File open() modes
 
-The Python runtime does not enforce type annotations introduced with Python version 3.5. But type checkers, IDEs, linters, SASTs, and other tools can benefit from the developer being more explicit. 
+The Python runtime does not enforce type annotations introduced with Python version 3.5. But type checkers, IDEs, linters, SASTs, and other tools can benefit from the developer being more explicit.
 
 Use this type checker to discover when the parameter is outside the allowed set and warn you:
 
@@ -1277,7 +1290,7 @@ def open_helper(file: str, mode: MODE) -> str:
     open_helper('/other/path', 'typo')  # Error in type checker
 </pre>
 
-BTW Literal[…] was introduced with version 3.8 and is not enforced by the runtime (you can pass whatever string you want in our example). 
+BTW Literal[…] was introduced with version 3.8 and is not enforced by the runtime (you can pass whatever string you want in our example).
 
 PROTIP: Be explicit about using text (vs. binary) mode.
 
@@ -1335,10 +1348,10 @@ See https://docs.python.org/3/library/filesys.html
 
 ### File Metadata
 
-Metadata includes Last modified and Last accessed info (mtime and atime). 
+Metadata includes Last modified and Last accessed info (mtime and atime).
 Such information is maintained at the folder level.
 
-For all commands, if the destination location is not writable, an IOError exception is raised. 
+For all commands, if the destination location is not writable, an IOError exception is raised.
 
 <a name="shutil.copyfile"></a>
 
@@ -1359,11 +1372,11 @@ CAUTION: folder-level copy commands do not buffer.
 
 * PROTIP: To copy a file to another folder and <strong>retain metadata</strong>:
 
-   <pre><strong>file_src = 'source.txt'  
+   <pre><strong>file_src = 'source.txt'
 f_src = open(file_src, 'rb')
-file_dest = 'destination.txt'  
+file_dest = 'destination.txt'
 f_dest = open(file_dest, 'wb')
-shutil.copyfileobj(f_src, f_dest)  
+shutil.copyfileobj(f_src, f_dest)
    </strong></pre>
 
    The destination needs to specify a <strong>full path</strong>.
@@ -1376,14 +1389,14 @@ shutil.copyfileobj(f_src, f_dest)
 
    <pre><strong># In Unix/Linux
 os.system('cp source.txt destination.txt')  \# https://docs.python.org/3/library/os.html#os.system
-status = subprocess.call('cp source.txt destination.txt', shell=True) 
+status = subprocess.call('cp source.txt destination.txt', shell=True)
 &nbsp;
 # In Windows
 os.system('copy source.txt destination.txt')
 status = subprocess.call('copy source.txt destination.txt', shell=True)  \# https://docs.python.org/3/library/subprocess.html
 </strong></pre>
 
-* Pipe open has been deprecated. https://docs.python.org/3/library/os.html#os.popen 
+* Pipe open has been deprecated. https://docs.python.org/3/library/os.html#os.popen
 
    <pre><strong># In Unix/Linux
 os.popen('cp source.txt destination.txt')
@@ -1483,7 +1496,7 @@ So some have offered alternatives:
 
 ## Handling Arguments
 
-For parsing parameters supplied by invoking a Python program, 
+For parsing parameters supplied by invoking a Python program,
 the command-line arguments and options/flags:
 
    <ul>python myprogram.py -v -LOG=info
@@ -1496,13 +1509,13 @@ https://www.geeksforgeeks.org/argparse-vs-docopt-vs-click-comparing-python-comma
 Alternatives: to Argparse are Docopt, Click, Client, <a target="_blank" href="https://pypi.org/project/argh/">argh</a>, and many more.
 
 Instead, <a target="_blank" href="https://dbader.org/blog/python-commandline-tools-with-click">
-Dan Bader recommends</a> the use of 
+Dan Bader recommends</a> the use of
 <a target="_blank" href="http://click.pocoo.org/6/why/">click.pocoo.org/6/why</a>
 click custom package (from Armin Ronacher).
 
 Click is a Command Line Interface Creation Kit for arbitrary nesting of commands, automatic help page generation. It supports lazy loading of subcommands at runtime. It comes with common helpers (getting terminal dimensions, ANSI colors, fetching direct keyboard input, screen clearing, finding config paths, launching apps and editors, etc.)
 
-Click provides <strong>decorators</strong> which makes reading of code very easy. 
+Click provides <strong>decorators</strong> which makes reading of code very easy.
 
 The "@click.command()" :
 
@@ -1521,9 +1534,9 @@ if __name__ == "__main__":
 
 <a name="Cloud"></a>
 
-## Python in the Cloud 
+## Python in the Cloud
 
-### On AWS: 
+### On AWS:
 
    Tutorials:
    * <a target="_blank" href="https://www.botmetric.com/blog/aws-cloud-automation-python-boto3-scripts/">Intro to Boto3</a>
@@ -1558,9 +1571,9 @@ print(response)
 1. Sign in
 1. https://portal.azure.com/#view/Microsoft_Azure_Billing/SubscriptionsBlade
 1. https://aka.ms/azsdk/python/all lists available packages.
-   
-   <tt>pip install azure</tt> has been deprecated from 
-   <a target="_blank" href="https://github.com/Azure/azure-sdk-for-python/">https://github.com/Azure/azure-sdk-for-python/pulls</a> 
+
+   <tt>pip install azure</tt> has been deprecated from
+   <a target="_blank" href="https://github.com/Azure/azure-sdk-for-python/">https://github.com/Azure/azure-sdk-for-python/pulls</a>
 
    ### New Program Authorization
 
@@ -1578,7 +1591,7 @@ print(response)
    azcli().invoke(['vm','list','-g', 'Dev2'])
    </pre>
 
-   ### 
+   ###
 
    <br /><br />
 
@@ -1620,17 +1633,17 @@ print(*li)
 
 Values are passed to a function with a single variable.
 So to multiple values of various types to or from a function, we use a
-<strong>tuple</strong> - a fixed-sized collection of related items (akin to a "struct" in Java or "record"). 
+<strong>tuple</strong> - a fixed-sized collection of related items (akin to a "struct" in Java or "record").
 
 PROTIP: When adding a single value, include a comma at the end to avoid it being classified as a string:
 
 
 1. REMEMBER: When storing a single value in a Tuple, the comma at the end makes it not be classified as a string:
 
-   <pre>mytuple=(50,) 
+   <pre>mytuple=(50,)
 type(mytuple)
    </pre>
-   
+
    <pre>&LT;class 'tuple'></pre>
 
 1. Store several items in a single variable:
@@ -1644,6 +1657,9 @@ person.index(40)  # index of item containing 40 = 2
    </pre>
 
 ## Range
+
+<a target="_blank" href="https://www.youtube.com/watch?v=LRIUg089W2c">range object</a>
+and property-based unit testing.
 
    <pre>myrange=range(3)
 type(myrange)
@@ -1707,7 +1723,7 @@ metaclasses(explained): 40:40
    * https://app.pluralsight.com/course-player?clipId=a5072421-b21f-4043-8164-e148e401492b
    <br /><br />
 
-The string starting with "@" before a function definition 
+The string starting with "@" before a function definition
 
 Decorators allow changes in behavior without changing the code.
 
@@ -1724,7 +1740,7 @@ By default, functions within a class need to supply "self" as the first paramete
        cls.attribute = text_in
    </pre></ul>
 
-<a target="_blank" href="https://app.pluralsight.com/course-player?clipId=d7eb69f7-37d3-4893-8773-79e73642064b">VIDEO</a>: 
+<a target="_blank" href="https://app.pluralsight.com/course-player?clipId=d7eb69f7-37d3-4893-8773-79e73642064b">VIDEO</a>:
 However, decorator <tt><strong>@classmethod</strong></tt> enable "cls" to be accepted as the first argument:
 
    <ul><pre>def afunction(self,text_in):
@@ -1735,6 +1751,20 @@ However, decorator <tt><strong>@classmethod</strong></tt> enable "cls" to be acc
 
 There is also <tt><strong>@staticmethod</strong></tt> when access is not needed to class or instance objects.
 
+<hr />
+
+<a name="Protocols"></a>
+
+## Protocols
+
+* Collection
+* Container
+* Hashtable
+* Iterable
+* Reversible
+* Sequence
+* Sized
+
 ### Generators
 
    * <a target="_blank" href="https://www.youtube.com/watch?v=Ut0-_eMVakU&list=RDCMUC6HfeAa0vWeSWS6IcNAjZ2A&index=4">VIDEO</a>
@@ -1744,7 +1774,27 @@ There is also <tt><strong>@staticmethod</strong></tt> when access is not needed 
 
 generator: 1:04:30
 
-### Context Manager
+
+<a name="with"></a>
+
+### dunders with Context Manager
+
+> "For repetitive set up and tear down, use Context Managers". -<a target="_blank" href="https://www.youtube.com/watch?v=spi0N_PNznE&t=2m23s">VIDEO by Doug Mercer</a>
+
+When a client is used in Python code, it must be closed as well.
+Context manager is a language feature of Python that takes care of things when you enter and exit the context.
+```
+with open("myfile.txt", r) as f:
+    contents = f.read()
+```
+double underscores ("dunders") before and after each name.
+__enter__, __exit__,<br />
+__init__, __repr__, __len__, __hash__, __add__, __sub__,<br />
+__and__, __reversed__, __contains__, __format__, __iter__, __call__,<br />
+
+Magic methods getitem, len, etc. make you code look like it's part of the library.
+
+Make it Iterable.
 
 context manager: 1:22:37
 
@@ -1852,8 +1902,8 @@ https://rules.sonarsource.com/python/tag/owasp/RSPEC-4529
    * <a target="_blank" href="https://www.loggly.com/ultimate-guide/python-logging-basics/">
    <br /><br />
 
-It is estimated that it can take up to 200 days, and often longer, between attack and detection by the attacked. 
-In the meantime, attackers can tamper with servers, corrupt databases, and steal confidential information. 
+It is estimated that it can take up to 200 days, and often longer, between attack and detection by the attacked.
+In the meantime, attackers can tamper with servers, corrupt databases, and steal confidential information.
 
 "Insufficient Logging and Monitoring" is among the top 10 OWASP.
 
@@ -1871,7 +1921,7 @@ To emit each log entry, use the loggin method so that logs can be filtered by le
 
    <pre>logging.critical("CRITICAL - Can't ... Aborting!") # A serious error. The program itself may be unable to continue running. Displayed even in production runs.
 logging.error("ERROR - Program cannot do it!") # A serious problem: the software is not been able to perform some function. Displayed even in production runs.
-logging.warning("WARNING - unexpected!")  # The software is still working as expected. But may be a problem in the near future (e.g. ‘disk space low’). 
+logging.warning("WARNING - unexpected!")  # The software is still working as expected. But may be a problem in the near future (e.g. ‘disk space low’).
 logging.info("INFO - version xxx")  # Provides confirmation that things are working as expected.
 logging.debug('DEBUG - detailed information such as each iteration in a loop used during troubleshooting at the lowest level of detail.')
    </pre>
@@ -1930,7 +1980,7 @@ The logging module also allows you to capture the full stack traces in an applic
    <br /><br />
 
 PROTIP: By default, python executes with “_debug_” = “true” so asserts are processed by the Python interpreter.
-But in production when the program is run in optimized mode, “_debug_” = “true” so assert statements are ignored. 
+But in production when the program is run in optimized mode, “_debug_” = “true” so assert statements are ignored.
 
 So avoid coding <a target="_blank" href="https://itnext.io/common-python-security-problems-ffedbae7b11c">the sample code below</a> which uses a comma that acts as an if/then:
 
@@ -1944,6 +1994,8 @@ In the above code, the user ends up with access to a resource with improper auth
 Instead (to remediate), use a if-else logic to implement true and false conditions.
 
 https://app.pluralsight.com/library/courses/using-unit-testing-python/table-of-contents
+
+<a target="_blank" href="https://www.youtube.com/watch?v=xBhUzShDv8k">VIDEO</a>: Use the hypothesis library
 
 
 ## Concurrency Programming
@@ -1972,7 +2024,7 @@ Use multiple threads, processes, mutexes, barriers, waitgroups, queues, pipes, c
 https://www.udemy.com/course/parallel-computing-in-python/
 
 On LinkedIn Learning: "<a target="_blank" href="https://github.com/bomonike/python-parallel-concurrent
-">Python Parallel and Concurrent Programming</a>" <a target="_blank" href="https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-1/" title="Released: 8/29/2019">2h 11m Part 1</a> and <a target="_blank" href="https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-2/">Part 2</a> (using Python 3.7.3 on Windows PC machines) 
+">Python Parallel and Concurrent Programming</a>" <a target="_blank" href="https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-1/" title="Released: 8/29/2019">2h 11m Part 1</a> and <a target="_blank" href="https://www.linkedin.com/learning/python-parallel-and-concurrent-programming-part-2/">Part 2</a> (using Python 3.7.3 on Windows PC machines)
 by Barron Stone and Olivia Chiu Stone Advanced
 
 * A Mutex can only be acquired/released by the same thread.<br />
@@ -2015,6 +2067,15 @@ Pyodbc by <a target="_blank" href="https://www.linkedin.com/in/michael-kleehamme
 https://python.plainenglish.io/the-easiest-ways-to-generate-a-side-income-with-python-60104ad36998
 
 https://learnpython.com/blog/9-best-python-online-resources-start-learning/
+
+https://github.com/PacktPublishing/Python-for-Security-and-Networking
+https://learning.oreilly.com/library/view/python-for-security/9781837637553/
+Python for Security and Networking - Third Edition
+by José Manuel Ortega
+covers the main modules we have in Python to encrypt and decrypt information, including pycryptome and cryptography.
+Covers extracting Geolocation and Metadata from Documents, Images, and Browsers, covers, main modules.
+Covers the pcapy and scapy modules to analyze network traffic and packet sniffing.
+
 
 ## More about Python
 
