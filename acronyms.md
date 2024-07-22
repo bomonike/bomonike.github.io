@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-14"
+date: "2024-07-19"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -945,6 +945,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 *	PTAL	=	Please Take A Look
 *	PTES	=	Penetration Testing Execution Standard
 *	PTT	=	Platform Trust Technology (on Intel chips for Windows PCs)
+* PTZ = Pan-Tilt-Zoom (Cameras)
 *	PUA	=	Potentially Unwanted Application
 *	PV	=	Persistent Volume	(Kubernetes)
 * PV	=	Paravirtual Virtualization (type of Linux AMI boot loader)

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-11"
+date: "2024-07-19"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -8,8 +8,8 @@ tags: [python, apple, mac, setup]
 image:
 # pic white python logo 1900x500.jpg
   feature: https://cloud.githubusercontent.com/assets/300046/14622164/4230c848-0585-11e6-957b-be11147346e6.jpg
-  credit: 
-  creditlink: 
+  credit:
+  creditlink:
 comments: true
 ---
 <i>{{ page.excerpt }}</i>
@@ -22,7 +22,7 @@ Here are the classes I've seen that teach Python programming.
 
 ## Python Official documentation
 
-<a target="_blank" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial</a> 
+<a target="_blank" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial</a>
 is the official tutorial.
 
 <a target="_blank" href="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</a> is the official documentation.
@@ -32,12 +32,12 @@ Official FREE 42-hour online course to prepare for Python certification exams
 * <a target="_blank" href="https://edube.org/study/pe1">Python Essentials - Part 1 (Basics)</a> for the
 <a target="_blank" href="https://ums.edube.org/products/pcep-30-02-exam-and-practice-test-bundle">$71 with practice test</a>
 PCEP-30-02: Certified Entry-Level Python Programmer certification
-   1. Introduction to Python and computer programming 
+   1. Introduction to Python and computer programming
    2. Data types, variables, basic input-output operations, and basic operators;
    3. Boolean values, conditional execution, loops, lists and list processing, logical and bitwise operations;
    4. Functions, tuples, dictionaries, exceptions, and data processing.
 
-* <a target="_blank" href="https://edube.org/study/pe2">Python Essentials - Part 2 (Intermediate)</a> in a 
+* <a target="_blank" href="https://edube.org/study/pe2">Python Essentials - Part 2 (Intermediate)</a> in a
 PCAP-31-03: Certified Associate in Python Programming  certification
    1. Modules, packages, and PIP
    2. Strings, String and List Methods, Exceptions
@@ -95,7 +95,7 @@ https://7451111251303.gumroad.com/l/rgtfex
    print(*objects, sep=' ', end='\n', file=sys.stdout, flash=false)
    ```
 
-1. <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=1h50m24s">Conditionals</a> 
+1. <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=1h50m24s">Conditionals</a>
 2. <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=2h46m23s">Loops</a>
 3. <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4h7m10s">Exceptions</a>
 4. <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4h51m45s">Libraries</a>
@@ -114,12 +114,12 @@ official FREE 42-hour online course to prepare for Python certification exams
 * <a target="_blank" href="https://edube.org/study/pe1">Python Essentials - Part 1 (Basics)</a> for the
 <a target="_blank" href="https://ums.edube.org/products/pcep-30-02-exam-and-practice-test-bundle">$71 with practice test</a>
 PCEP-30-02: Certified Entry-Level Python Programmer certification
-   1. Introduction to Python and computer programming 
+   1. Introduction to Python and computer programming
    2. Data types, variables, basic input-output operations, and basic operators;
    3. Boolean values, conditional execution, loops, lists and list processing, logical and bitwise operations;
    4. Functions, tuples, dictionaries, exceptions, and data processing.
 
-* <a target="_blank" href="https://edube.org/study/pe2">Python Essentials - Part 2 (Intermediate)</a> in a 
+* <a target="_blank" href="https://edube.org/study/pe2">Python Essentials - Part 2 (Intermediate)</a> in a
 PCAP-31-03: Certified Associate in Python Programming  certification
    1. Modules, packages, and PIP
    2. Strings, String and List Methods, Exceptions
@@ -154,13 +154,13 @@ Biology Meets Programming: Bioinformatics for Beginners - Python
 
 ## Edx.org University Courses
 
-Each video course on edx.org are $149 if you want assignments graded and long-term access (otherwise FREE). 
+Each video course on edx.org are $149 if you want assignments graded and long-term access (otherwise FREE).
 
 <a target="_blank" href="https://www.edx.org/learn/statistics/stanford-university-statistical-learning">"Statistical Learning" video course on edX.org</a> by <a target="_blank" href="https://online.stanford.edu/courses/sohs-ystatslearning-statistical-learning">Stanford University</a>
 professors <a target="_blank" href="https://www.linkedin.com/in/trevor-hastie-a6a4735/">Trevor Hastie</a> and <a target="_blank" href="https://www.linkedin.com/in/rob-tibshirani-0143391/">Rob Tibshirani</a> and they are hilarious as a pair who have worked together for 30 years.
 
    * Talk to them on the forum at <a target="_blank" href="https://stats.stackexchange.com/questions/tagged/isl">stats.stackexchange.com</a>
-   * For a 613-page pdf that accompanies the class, click on <a target="_blank" href="https://hastie.su.domains/ISLP/ISLP_website.pdf">the link</a> on their website: <a target="_blank" href="https://www.statlearning.com/">https://www.statlearning.com</a> 
+   * For a 613-page pdf that accompanies the class, click on <a target="_blank" href="https://hastie.su.domains/ISLP/ISLP_website.pdf">the link</a> on their website: <a target="_blank" href="https://www.statlearning.com/">https://www.statlearning.com</a>
    <br /><br />
 
 
@@ -220,7 +220,7 @@ https://www.youtube.com/watch?v=SmilJDG4B_8
 
 ## Azure
 
-Among [CBTNuggets training for Azure](https://www.cbtnuggets.com/it-training/microsoft-azure) is 
+Among [CBTNuggets training for Azure](https://www.cbtnuggets.com/it-training/microsoft-azure) is
 https://www.cbtnuggets.com/blog/new-skills/new-training-python3-with-the-azure-python-sdk
 5 videos in 26 minutes of training created in May 2020
 by Michael Levan
@@ -233,7 +233,7 @@ The Python packages from pipy and conda from
 https://aka.ms/azsdk/python/docs
 https://github.com/azure/azure-sdk-for-python/
 
-There are two distinct types of libraries in the SDK: 
+There are two distinct types of libraries in the SDK:
 * management libraries relate to the management plane of your infrastructure to provision and manage Azure resources
 * client libraries relate to the data plane of your infrastructure to connect and use resources.
 
@@ -266,7 +266,7 @@ Stanford CS lecturer</a>
 Nick Parlante.
 
 It has videos that
-covers strings, lists, sorting, dicts, files, 
+covers strings, lists, sorting, dicts, files,
 regular expressions, utilities.
 Support materials at<br />
 <a target="_blank" href="https://developers.google.com/edu/python/">
@@ -357,7 +357,7 @@ with intermediate classes at $29 a month.
 ### Pluralsight video courses
 
 Robert Smallshire (@robsmallshire, rob@ixty-north.com)
-and 
+and
 Austin Bingham (@Austin_Bingham, austin@sixty-north.com)
 
 * <a target="_blank" href="https://app.pluralsight.com/library/courses/python-fundamentals/">
@@ -380,21 +380,21 @@ of loonycorn.com
 
 
 <a target="_blank" href="https://app.pluralsight.com/library/courses/play-by-play-zed-shaw/">
-Play by Play: Building a Python Code Stats Tool 
+Play by Play: Building a Python Code Stats Tool
 Apr 28, 2011 1h 51m</a>
-by Zed Shaw 
-and 
+by Zed Shaw
+and
 Geoffrey Grosenbach
 
 <a target="_blank" href="https://app.pluralsight.com/library/courses/dota-2-workshop-getting-started-2486">
 Getting Started in the Dota 2 Workshop</a>
 Jul 07, 2016 4h 34m
-by Dan Cox 
+by Dan Cox
 
 <a target="_blank" href="https://app.pluralsight.com/library/courses/python-understanding-machine-learning">
 Understanding Machine Learning with Python
 May 17, 2016 1h 54m</a>
-by Jerry Kurata 
+by Jerry Kurata
 (@jerrykur insteptech.com)
 
 <a target="_blank" href="https://app.pluralsight.com/library/courses/python-design-patterns">
@@ -410,7 +410,7 @@ by Brett Romero
 <a target="_blank" href="https://app.pluralsight.com/library/courses/python-desktop-application-development">
 Python Desktop Application Development
 Sep 03, 2014 1h 42m</a>
-by Bo Milanovich 
+by Bo Milanovich
 
 <a target="_blank" href="https://app.pluralsight.com/library/courses/full-stack-web-development-python-web2py">
 Full Stack Web Development with Python (WEB2PY)</a>
@@ -461,9 +461,9 @@ by Filip Ekberg
    * <a target="_blank" href="https://www.amazon.com/Python-Tricks-Buffet-Awesome-Features-ebook/dp/B0785Q7GSY/">BOOK</a> Python Tricks:  A Buffet of Awesome Python Features
 
    * Dan Bader has emails and courses on Python: <a target="_blank" href="https://www.youtube.com/watch?v=p-89r5QvQvQ" title="Aug 23, 2017">VIDEO: What Python Projects Should I Build to Get a Job?</a>
-   
-   1. Tensorflow (for machine learning) 
-   2. Crawling (spider based projects, using Beautiful Soup) 
+
+   1. Tensorflow (for machine learning)
+   2. Crawling (spider based projects, using Beautiful Soup)
    3. Database handling (firebase, Mysql, Neo4j etc.)
    <br /><br />
 
@@ -479,10 +479,18 @@ shows you how to use Python for everyday Linux systems administration tasks with
 
 
 
-## Linux Academy
+## EarSketch
 
-<a target="_blank" href="https://linuxacademy.com/cp/modules/view/id/413">
-The video course at LinuxAcademy</a> by Keith Thompson references 
+The EarSketch platform was created by Georgia Tech to use Python to program sound and music.
+
+1. CLick "Create/Reset Account" at:
+
+   https://earsketch.gatech.edu/earsketch2/#
+
+, to further advance your understanding of the Python programming language.  For each lesson in Unit 5, the core learning materials are hosted within the EarSketch site.
+
+No longer available: <a target="_blank" href="https://linuxacademy.com/cp/modules/view/id/413">
+The video course at LinuxAcademy</a> by Keith Thompson references
 includes a practice exam.
 
 
@@ -512,7 +520,7 @@ includes a practice exam.
 ## OReilly.com
 
 * <a target="_blank" href="https://learning.oreilly.com/library/view/python-for-geeks/9781801070119/">Packt BOOK: Python for Geeks</a> October 2021 references
-<a target="_blank" href="https://github.com/PacktPublishing/Python-for-Geeks">https://github.com/PacktPublishing/Python-for-Geeks</a> 
+<a target="_blank" href="https://github.com/PacktPublishing/Python-for-Geeks">https://github.com/PacktPublishing/Python-for-Geeks</a>
 
 * <a target="_blank" href="http://shop.oreilly.com/product/0636920032519.do">BOOK: Fluent Python</a> August 2015. By Luciano Ramalho.
 
@@ -523,7 +531,7 @@ https://brilliant.org/courses/programming-python/
 https://brilliant.org/courses/python-next-steps/
 
 
-## Challenges 
+## Challenges
 
 * <a target="_blank" href="https://www.hackerrank.com/domains/python">Hackerrank.com practice domain for Python</a>
 
@@ -585,7 +593,7 @@ pyInstaller
 ## API
 
 From among <a target="_blank" href="https://www.freecodecamp.org/learn/back-end-development-and-apis/#back-end-development-and-apis-projects">
-FreeCodeCamp.org Python Back-end projects</a> is <a target="_blank" href="https://www.youtube.com/watch?v=WXsD0ZgxjRw">3-hr "APIs for Beginners 2023 - How to use an API "</a> 
+FreeCodeCamp.org Python Back-end projects</a> is <a target="_blank" href="https://www.youtube.com/watch?v=WXsD0ZgxjRw">3-hr "APIs for Beginners 2023 - How to use an API "</a>
 by Craig Dennis.
 
 "Swagger" refers to tools open-sourced by Tony Tam in 2011,  but then licensed from SmartBear.
@@ -618,7 +626,7 @@ NVIDIA's Fundamentals of Accelerated Computing with CUDA Python
    * During conference on March 19, 2024.
    <br /><br />
 
-The class covers use of <a target="_blank" href="https://numba.pydata.org/">Numba</a> — the just-in-time, type-specializing Python in Jupyter to accelerate Python code by using NumPy <a target="_blank" href="https://en.wikipedia.org/wiki/CUDA">CUDA</a> universal functions (ufuncs) using GPU kernel  memory management techniques, all within on massively parallel NVIDIA <strong>GPUs</strong>. 
+The class covers use of <a target="_blank" href="https://numba.pydata.org/">Numba</a> — the just-in-time, type-specializing Python in Jupyter to accelerate Python code by using NumPy <a target="_blank" href="https://en.wikipedia.org/wiki/CUDA">CUDA</a> universal functions (ufuncs) using GPU kernel  memory management techniques, all within on massively parallel NVIDIA <strong>GPUs</strong>.
 
 One student's <a target="_blank" href="https://github.com/AydinAlptug/Fundamentals-of-Accelerated-Computing-with-CUDA-Python">course GitHub:<br />
 <img src="https://github.com/AydinAlptug/Fundamentals-of-Accelerated-Computing-with-CUDA-Python/blob/main/Introduction%20to%20CUDA%20Python%20with%20Numba/images/numba_flowchart.png?raw=true"></a>
@@ -657,7 +665,7 @@ Use Python to manage directories and files in Azure Data Lake Storage Gen2
 1h 32m VIDEO: "Benchmarking, Profiling, and Optimizing Your Python Code: Easily Identify Bottlenecks and Efficiently Speed Up Your Python Code" by Coen de Groot
 It shows how to use the Python timeit for micro benchmarks, pytest.
 
-"Parseltongue is the language of serpents and those who can converse with them. 
+"Parseltongue is the language of serpents and those who can converse with them.
 An individual who can speak Parseltongue is known as a Parselmouth.
 It is a very uncommon skill, and may be hereditary.
 Nearly all known Parselmouths are descended from Salazar Slytherin.
@@ -705,8 +713,8 @@ by <a target="_blank" href="https://www.linkedin.com/in/beau-carnes/">Beau Carne
 by Flavio Copes.
 Learn with just a browser using replit.com at https://join.replit.com/python-students
 Sample coding for:
-💻 Rock, Paper, Scissors 
-💻 Blackjack 
+💻 Rock, Paper, Scissors
+💻 Blackjack
 
 
 
