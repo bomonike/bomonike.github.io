@@ -1152,15 +1152,15 @@ msgstr "Translation in different language"
 
 
    ```
-   >>> unicode_string = u"Fuu00dfbu00e4lle"
->>> unicode_string
+   &GT;&GT;&GT; unicode_string = u"Fuu00dfbu00e4lle"
+&GT;&GT;&GT; unicode_string
 Fußbälle
->>> type(unicode_string)
+&GT;&GT;&GT; type(unicode_string)
 <type 'unicode'>
->>> utf8_string = unicode_string.encode("utf-8")
->>> utf8_string
+&GT;&GT;&GT; utf8_string = unicode_string.encode("utf-8")
+&GT;&GT;&GT; utf8_string
 'Fuxc3x9fbxc3xa4lle'
->>> type(utf8_string)
+&GT;&GT;&GT; type(utf8_string)
 <type 'str'>
    ```
 
