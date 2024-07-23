@@ -487,11 +487,8 @@ The EarSketch platform was created by Georgia Tech to use Python to program soun
 
    https://earsketch.gatech.edu/earsketch2/#
 
-, to further advance your understanding of the Python programming language.  For each lesson in Unit 5, the core learning materials are hosted within the EarSketch site.
 
-No longer available: <a target="_blank" href="https://linuxacademy.com/cp/modules/view/id/413">
-The video course at LinuxAcademy</a> by Keith Thompson references
-includes a practice exam.
+
 
 
 ## Tutorials
@@ -524,11 +521,98 @@ includes a practice exam.
 
 * <a target="_blank" href="http://shop.oreilly.com/product/0636920032519.do">BOOK: Fluent Python</a> August 2015. By Luciano Ramalho.
 
+
+
 ## Brilliant.com
 
 https://brilliant.org/courses/programming-python/
 
 https://brilliant.org/courses/python-next-steps/
+
+
+## YouTube
+
+https://www.youtube.com/watch?v=eWRfhZUzrAc
+Python for Beginners – Full Course [Programming Tutorial]
+on FreeCodeCamp.org
+
+based on https://www.freecodecamp.org/news/the-python-handbook/
+by Flavio Copes
+
+Rock, Paper, Scissors Intro Project
+*  (0:03:11) RPS - Variables and Functions
+*  (0:09:07) RPS - Calling Functions
+*  (0:12:31) RPS - Dictionaries
+*  (0:15:28) RPS - User Input
+*  (0:16:55) RPS - Libraries, Lists, Methods
+*  (0:20:45) RPS - Function Arguments
+*  (0:22:33) RPS - If Statements
+*  (0:25:40) RPS - Concatenating Strings
+*  (0:27:13) RPS - f-strings
+*  (0:30:26) RPS - Else and Elif Statements
+*  (0:33:37) RPS - Refactoring and Nested If
+*  (0:38:37) RPS - Accessing Dictionary Values
+*  (0:41:55) RPS - Testing Game
+
+Fundamentals of Python
+*  (0:43:52) Setup Python Locally
+*  (0:47:47) Creating New Repl
+*  (0:48:45) Variables
+*  (0:51:21) Expressions and Statements
+*  (0:52:38) Comments
+*  (0:54:23) Data Types
+*  (1:00:16) Operators
+*  (1:00:44) Arithmetic Operators
+*  (1:03:52) Comparison Operators
+*  (1:05:13) Boolean Operators
+*  (1:07:26) Bitwise Operators
+*  (1:07:42) is & in Operators
+*  (1:08:21) Ternary Operator
+*  (1:09:40) Strings
+*  (1:12:36) String Methods
+*  (1:16:41) Escaping Characters
+*  (1:19:23) String Characters & Slicing
+*  (1:21:45) Booleans
+*  (1:26:07) Number Data Types
+*  (1:28:19) Built-in Functions
+*  (1:29:50) Enums
+*  (1:32:51) User Input
+*  (1:34:39) Control Statements
+*  (1:36:48) Lists
+*  (1:46:21) Sorting Lists
+*  (1:49:57) Tuples
+*  (1:53:49) Dictionaries
+*  (2:01:45) Sets
+*  (2:06:10) Functions
+*  (2:16:57) Variable Scope
+*  (2:18:35) Nested Functions
+*  (2:21:37) Closures
+*  (2:22:59) Objects
+*  (2:26:27) Loops
+*  (2:32:01) Break and Continue
+*  (2:33:02) Classes
+*  (2:39:12) Modules
+*  (2:45:55) Arguments from Command Line
+*  (2:52:42) Lambda Functions
+*  (2:54:51) Map, Filter, Reduce
+*  (3:02:41) Recursion
+*  (3:04:42) Decorators
+*  (3:06:45) Docstrings
+*  (3:09:54) Annotations
+*  (3:11:30) Exceptions
+*  (3:17:09) With
+*  (3:18:26) Installing Packages with pip
+*  (3:21:39) List Compression
+*  (3:23:09) Polymorphism
+*  (3:24:23) Operator Overloading
+
+Blackjack Card Game Project
+*  (3:26:58) Blackjack - Beginning
+*  (3:50:13) Blackjack - Deck Class
+*  (3:58:45) Blackjack - Card Class
+*  (4:03:25) Blackjack - Hand Class
+*  (4:21:13) Blackjack - Game Class
+*  (4:37:04) Blackjack - Testing
 
 
 ## Challenges
@@ -716,6 +800,11 @@ Sample coding for:
 💻 Rock, Paper, Scissors
 💻 Blackjack
 
+
+
+No longer available: <a target="_blank" href="https://linuxacademy.com/cp/modules/view/id/413">
+The video course at LinuxAcademy</a> by Keith Thompson references
+includes a practice exam.
 
 
 

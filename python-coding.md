@@ -35,35 +35,20 @@ This is the last in my series of articles about Python:
 
 {% include whatever.html %}
 
-## This is Therapy?
-
-> I wrote this because I have a mental block about programming Python. I'm afraid of Python like I'm afraid of real snakes.
-
-Maybe it's fear of not doing well on coding interviews.
-That's weird because as an SRE I don't have a job where I'm programming Python every day.
-
-Yet employers make people go through coding challenges anyway like it was a fraternity hazing ritual.
-
-So to get over my Python phobia, like any other aversion therapy,
-I needed to de-sensitize myself and do the very thing I fear.
-
 
 ## Setup an IDE
 
 The most popular IDEs for Python are:
-   * <a href="https://www.jetbrains.com/pycharm/buy/#personal">PyCharm</a> (FREE or PRO $89/$71/$53 year)
 
-   * VSCode from Microsoft (free) has add-ons for Python, but some fear vulnerabilities from unknown authors
+   * VSCode from Microsoft (free) has add-ons for Python, but some fear vulnerabilities from unknown authors. <a target="_blank" href="https://app.pluralsight.com/guides/visual-studio-code-for-python-development">BLOG: Setup VSCode for Python Development</a> https://code.visualstudio.com/docs/editor/extension-marketplace
+
+   * <a href="https://www.jetbrains.com/pycharm/buy/#personal">PyCharm</a> (FREE or PRO $89/$71/$53 year)
 
    * Cloud9 free on-line on AWS (which automatically generates new credentials every 5 minutes or on browser Reset<a target="_blank" href="https://www.coursera.org/learn/building-modern-python-applications-on-aws/lecture/UdnyB/using-temporary-credentials-in-aws-cloud9">*</a>)
 
    * Stryker?
 
-<a target="_blank" href="https://app.pluralsight.com/guides/visual-studio-code-for-python-development">
-BLOG: Setup VSCode for Python Development</a>
-https://code.visualstudio.com/docs/editor/extension-marketplace
-
-On IDE such as VSCode you can see key/value pairs without typing <tt>print</tt> statements in code, like an Xray machine:
+See key/value pairs without typing <tt>print</tt> statements in code, like an Xray machine:
 1. click next to a line number at the left to set a <strong>Breakpoint</strong>.
 1. Click "RUN AND DEBUG" to see variables: Locals and Globals.
 1. To expand and contract, click ">" and "V" in front of items.
@@ -82,7 +67,7 @@ https://www.statworx.com/en/content-hub/blog/how-to-scan-your-code-and-dependenc
 
 A. PEP8 "lints" program code for violations of the PIP.
 
-B. Bandit (open-sourced at https://github.com/PyCQA/bandit) scans python code for vulnerabilities. It decomposes the code into its abstract syntax tree and runs plugins against it to check for known weaknesses. Among other tests it performs checks on plain SQL code, which could provide an opening for SQL injections, passwords stored in code and hints about common openings for attacks such as use of the pickle library. Bandit is designed for use with CI/CD:
+B. Bandit (open-sourced at https://github.com/PyCQA/bandit) scans python code for vulnerabilities. It decomposes the code into its abstract syntax tree and runs plugins against it to check for known weaknesses. Among other tests it performs checks on plain SQL code, which could provide an opening for SQL injections, passwords stored in code and hints about common openings for attacks such as use of the <a href="#Pickle">pickle</a> library. Bandit is designed for use with CI/CD:
 
 <tt>bandit -c bandit_yml.cfg /path/to/python/files</tt>
 
@@ -107,6 +92,17 @@ E. <a target="_blank" href="https://github.com/advanced-security/demo-python">Gi
 
 https://7451111251303.gumroad.com/l/wotve
 <hr />
+
+<hr />
+
+## print, printf, echo
+
+PROTIP: Don't just print out the value. Include the variable name:
+
+```
+print("var1=",var1)
+```
+
 
 <a name="ReservedKeywords"></a>
 
@@ -246,44 +242,15 @@ https://docs.python.org/3/library/functions.html
 
 <hr />
 
-## CS50P Harvard
-
-https://cs50.harvard.edu/python/2022/
-
-https://cs50.ai/chat
-
-Videos:
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4">(00:00:00)</a> Introduction
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4m48s">(00:04:48) Lecture 0</a> - Comments, Functions, Variables, /n
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=1h50m24s">(01:50:24) Lecture 1</a> - Conditionals
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=2h46m23s">(02:46:23) Lecture 2</a> - Loops
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4h07m10s">(04:07:10) Lecture 3</a> - Exceptions
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4h51m45s">(04:51:45) Lecture 4</a> - Libraries
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=6h09m15s">(06:09:15) Lecture 5</a> - Unit Tests
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=7h00m22s">(07:00:22) Lecture 6</a> - File I/O
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=8h32m32s">(08:32:32) Lecture 7</a> - Regular Expressions
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=10h37m35s">(10:37:35) Lecture 8</a> - Object-Oriented Programming
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=13h28m47s">(13:28:47) Lecture 9</a> - Et Cetera
-* (15:47:47)
-
-<hr />
-
-## Cybrary.it
-
-FREE: 2h57m by <a target="_blank" href="https://www.linkedin.com/in/joseph-perry-a5127914a/">Joe Perry</a>
-https://app.cybrary.it/browse/course/python
-
-
-
 <a name="None"></a>
 
-### Use Not None Reserved Word
+### Function return Not None
 
 Returning 0 on error can be confused with the number 0 as a valid response.
 
 So to avoid the confusion, return the Python reserved word "None":
-
-<pre>result = safe_square_root(4)
+```
+result = safe_square_root(4)
 <strong>if result is not None:</strong>   # happy path:
    value = result.pop()  # pop up from stack.
    print(value)
@@ -291,33 +258,35 @@ else:  # notice we're not checking for None.
     # calling function does not need to handle error:
     # an error occurred, but encapsulated to be forwarded and processed upstream:
     print("unable to compute square root")
-</pre>
+```
 
 Function:
-
-<pre>def safe_square_root(x):
+```
+def safe_square_root(x):
     try:
         return [math.sqrt(x)]   # in a stack.
     except ValueError:
         return None   # using reserved word.
-</pre>
+```
 
 The <strong>parameter</strong> (x) is what is declared going into the function.
 
 The value passed through when calling the function is called an <strong>argument</strong>.
 
+
 <a name="Operators"></a>
 
 ## Operators
 
-Walrun operator :=
+DEFINITION: Walrun operator <strong>:=</strong>
+
 <a target="_blank" href="https://www.youtube.com/watch?v=e0vFRnEv16I">VID1</a>
 <a target="_blank" href="https://www.youtube.com/watch?v=MEMDi9mTCiU">VID2</a>
 
 
 ### Floor division Operators
 
-This is a feature in Python 3.
+This feature was added in Python 3.
 
 <tt>11 // 5</tt> uses <a target="_blank" href="https://python-reference.readthedocs.io/en/latest/docs/operators/floor_division.html">"floor division"</a> to return just the integer (integral part) of 2, discarding the remainder. This can be useful to <a target="_blank" href="https://medium.com/geekculture/solving-a-respectable-codility-challenge-in-one-line-of-code-6c331deff8bb">efficiently solve</a> the <a target="_blank" href="https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/">"Prefix Sums CountDiv" coding interview challenge</a>: "Write a function … that, given three integers A, B and K, returns the number of integers within the range [A..B] that are divisible by K":
 
@@ -335,22 +304,25 @@ Instead of a "brute force" approach which has linear time complexity — O(n), t
 <tt>11 % 5</tt> uses the (percent sign), the <strong>modulo operator</strong> to divide 11 by the quotient 5 in order to return 1 because two 5s can go into 11, leaving 1 left over, the remainder.
 Modulus is used in circular buffers and hashing algorithms.
 
-<pre>def solution(A, K):
+```
+def solution(A, K):
     # A is the array.
     # K is the increment to move.
     result = [None] * len(A)   # initialize result array for # items in array
-&nbsp;
+
     for i in range(len(A)):
         # Use % modulo operator to calculate new index position 0 - 9:
         result[(i + K) % len(A)] = A[i]
         print(f'i={i} A[i]={A[i]} K={K} result={result} ')
     return result
-&nbsp;
+
 print(solution([7, 2, 8, 3, 5], 2))
-</pre>
+```
 
 Modulu is also used in <a target="_blank" href="https://github.com/wilsonmar/CodilityInPython/blob/master/solutions/euclideanalgorithm/chocolates_by_numbers.py">this</a>
 
+
+<hr />
 
 <a name="WhenNow"></a>
 
@@ -358,9 +330,9 @@ Modulu is also used in <a target="_blank" href="https://github.com/wilsonmar/Cod
 
 The ISO 8601 format contains 6-digit microseconds ("123456") and a Time Zone offset ("-5.00" being five hours West of UTC):
 
-   <ul>2024-02-22T07:53:19.123456-05:00</ul>
+   <ul>2025-12-22T07:53:19.123456-05:00</ul>
 
-<ul><pre>
+```
 # import datetime
 start = datetime.datetime.now()
 # do some stuff ...
@@ -369,11 +341,12 @@ elapsed = end - start
 print(elapsed)
 # or
 print(elapsed.seconds,":",elapsed.microseconds)
-</pre></ul>
+```
 
 Some prefer to display local time with a Time Zone code from Python package pytz or zulu.
 
-PROTIP: Logs should be output in UTC time rather than local time, so would not have the "Zulu" Time Zone reference:
+PROTIP: Servers within enterprises and military run in UTC time and Logs should be output in UTC time
+rather than local time,
 
    <ul>2024-02-22T12:53:19.123456</ul>
 
@@ -382,11 +355,63 @@ PROTIP: Logs should be output in UTC time rather than local time, so would not h
 References:
    * https://www.geeksforgeeks.org/get-current-time-in-different-timezone-using-python/
 
+
 ### Timezone handling
+
+During Debian OS 12 install from iso file, a time zone is requested to be manually selected.
+After boot-up:
+1. Check the current timezone with bash <tt>timedatectl</tt>
+1. Set the timezone to UTC with bash <tt>sudo timedatectl set-timezone Etc/UTC</tt>
+Alternately, reconfigure the timezone data with bash <tt>sudo dpkg-reconfigure tzdata</tt>
+then select "None of the above" from the Continents list, then select "UTC" from the second list:
+Follow the prompts to navigate through the menus and select Etc or None of the above, then choose UTC.
 
 NOTE: On macOS, timezone data are in a binary file at <tt>/etc/localtime</tt>.
 
-Once a datetime has a tzinfo, the astimezone() strategy supplants new tzinfo.
+Within Python, there are several ways to detect time zone:
+
+```
+from dateutil import tz
+
+local_timezone = tz.tzlocal()
+print("dateutil local_timezone=",local_timezone)
+```
+
+
+Use the dateutil library to read /etc/localtime and get the timezone-aware datetime object:
+```
+from datetime import datetime
+
+local_now = datetime.now().astimezone()
+local_timezone = local_now.tzinfo
+print("zoneinfo local_timezone=",local_timezone)
+```
+
+```
+from zoneinfo import ZoneInfo
+from datetime import datetime
+
+local_timezone = datetime.now(ZoneInfo("localtime")).tzinfo
+print("zoneinfo local_timezone=",local_timezone)
+```
+
+Use the tzlocal library to obtain the IANA time zone name (e.g., 'America/New_York').
+But it varies across operating systems.
+```
+import tzlocal
+local_timezone = tzlocal.get_localzone_name()
+print("tzlocal local_timezone=",local_timezone)
+```
+
+Once a datetime has a tzinfo, the astimezone() strategy supplants new tzinfo
+```
+# astimezone() defaults to the local time zone when no argument is provided.
+from datetime import datetime
+
+local_now = datetime.now().astimezone()
+local_timezone = local_now.tzinfo
+print("astimezone local_timezone=",local_timezone)
+```
 
 ### Timing Attacks
 
@@ -530,35 +555,51 @@ There is data complexity and time complexity.
 
 ### Time Complexity Big Oh notation
 
-Time complexity analysis estimates how long it will take for an algorithm to complete its assigned job based on its structure.
-
-Use of Modulus would result in "O(n)" (linear) growth in time to run as the dataset grows.
-
-Depth-first trees would have steeper (logarithmic) Time Complexity:
+Big-O notation summarizes Time Complexity analysis, which estimates how long it can take for an algorithm to complete based on its structure. That's worst-case, before optimizations such as memoization.
 
 From <a target="_blank" href="https://bigocheatsheet.com/">https://bigocheatsheet.com</a>, in the list of Big O values for sorting:
 
 <a target="_blank" href="https://user-images.githubusercontent.com/300046/141355255-b2b990cf-46d9-415e-b21a-2c06a156c3eb.png">
 <img alt="python-coding-time-complexity-1222x945" src="https://user-images.githubusercontent.com/300046/141355255-b2b990cf-46d9-415e-b21a-2c06a156c3eb.png"></a>
 
+References: <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=47s">VIDEO</a>
+
 Let's go from the most efficient (at the bottom-right) to the least efficient at the upper-left,
 where n is the number of input items in the list being processed:
 
-* O(1) or n<sup>0</sup> is <strong>constant run time</strong> (of a single step) as more data is processed. This happens when a lookup is done rather than recalculating. Such use of "memoization" is ideal, but is typically not possible for algorithms that process multiple pieces of data.
+* O(1) or n<sup>0</sup> is <strong>constant run time</strong> as more data (n) is processed. This happens when a <strong>lookup</strong>  is done rather than calculating. Examples are the push, pop, lookup of an array; insert or remove a hash map/set.
 
-* O(log n) or log<sub>2</sub>n - <strong>logarithmic time</strong> occurs during <strong>binary search</strong>, (like ripping up portions of a phone book) where steps increase at a <strong>slower rate</strong> than input list size:
+   Use of "memoization" is ideal, but is typically not possible for some algorithms.
 
+   0Use of Modulus would result in "O(n)" (linear) growth in time to run as the dataset grows.
+
+* O(n) or (n<sup>1</sup>) <strong>linear time</strong> occurs the increase in list size (n) increases the number of steps in direct proportion to the input size. <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=176s">VIDEO</a>: This happens when
+   * values within an array are summed together, in a nested loop through all elements.
+   * during an <strong>exhaustive search</strong> though every item.
+   ```
+   nums = [1,2,3]
+   sum(nums)  # sum the array
+   print(100 in nums)   # search
+   nums.insert(1, 100)  # insert in the middle
+   nums.remove(100)     # remove from the middle
+
+   import heapq
+   heapq.heapify(nums)  # to build heap
+
+   # nested loop (monotonic stack or sliding window)
+   ```
+
+* O(log n) or log<sub>2</sub>n - <strong>logarithmic time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=10m56s">VIDEO</a>: occurs during <strong>binary search</strong>, (like ripping up portions of a phone book) where steps increase at a <strong>slower rate</strong> than input list size:
    ```
    | List | Steps |
    |    1 |     1 |
    |   10 |     4 |
    |  100 |     7 |
    | 1000 |    10 |
+   | .... |    35 | horizontal asymtope
    ```
 
-* O(1) or (n<sup>1</sup>) <strong>linear time</strong> occurs during an <strong>exhaustive search</strong> when each increase in list size increases the number of steps in direct proportion to the input size
-
-* (n<sup>2</sup>) <strong>quadratic time</strong> occurs in a <strong>nested loop</strong> when steps increase in proportion to the input size <strong>squared</strong> (to the power of 2). A <strong>selection sort</strong> starts from the front of the list, and looks at each <strong>unordered</strong> item to find the next smallest value in the list and swapping it with the current value. This is also when the minimax algorithm is used.
+* O(n<sup>2</sup>) - n squared <strong>quadratic time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=395s">VIDEO</a>: occurs in a <strong>nested loop</strong> when steps increase in proportion to the input size <strong>squared</strong> (to the power of 2). A <strong>selection sort</strong> starts from the front of the list, and looks at each <strong>unordered</strong> item to find the next smallest value in the list and swapping it with the current value. This is also when the minimax algorithm is used.
    ```
    | List |  Steps |
    |    1 |      1 |
@@ -566,6 +607,9 @@ where n is the number of input items in the list being processed:
    |  100 |   4950 |
    | 1000 | 499500 |
    ```
+  The standard form, When graphed, a quadratic equation forms a parabola - a U-shaped curve
+  used to illustrate trajectories of moving objects, areas of shapes, and in financial calculations.
+  𝑎𝑥<sup>2</sup> + 𝑏𝑥 + 𝑐 = 0
 
 * n<sup>k</sup> - such as n<sup>3</sup> and higher degree polynomials are called "Polynomial time" to group run times which do not increase faster than n<sup>k</sup>.
 
@@ -573,9 +617,18 @@ where n is the number of input items in the list being processed:
 
 * O(n<sup>n</sup>) - <strong>exponential time</strong> occurs when a algorithm looks at every permutation of values, such as all possible value which brute-force guessing passwords. For example, 28 to the power of 8 is when guessing 8 positions of 28 alphanumatic characters. When 10 number values and special characters are added for 98 possible values, it's 98 to the power of 8, a very large number. Such are considered "unreasonable" to make it harder to brute-force guess.
 
-* (n!) <strong>factorial time</strong> (such as 1 X 2 X 3 X 5, etc.) - the product of all positive integers less than or equal to n. Used to analyze permutations and combinations. Factorials <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/e/comparing-run-time-efficiencies">determine the number of possible topping combinations</a>.
+* O(n!) <strong>factorial time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=18m31s">VIDEO</a>: where 5! = 5x4x3x2x1 - the product of all positive integers less than or equal to n. Factorials are used to represent permutations and combinations. Factorials <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/e/comparing-run-time-efficiencies">determine the number of possible topping combinations</a> - graph problems such as the "Traveling Salesman".
 
-The asymptope is when a number reaches an extremely large number that is essentially infinite.
+   Used to purposely create complex calculations, such as for <strong>encryption</strong>.
+
+The <strong>asymptope</strong> is when a number reaches an extremely large number that is essentially infinite.
+
+Depth-first trees would have steeper (logarithmic) Time Complexity.
+
+References:
+   * <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/a/comparing-run-time-efficiency">KhanAcad explanation of run-time efficiency</a>.
+   * https://www.youtube.com/watch?v=7VHG6Y2QmtM
+
 
 ### Faster routes to machine code
 By default, Python comes with the <a target="_blank" href="https://github.com/python/cpython">CPython interpreter</a> (command cythonize) to generate machine-code. When speed is needed, such as in loops, custom C/C++ extensions are created. Additional speed is obtained by adding before nested loop code directives and decorators:
@@ -591,9 +644,17 @@ benchmarks Numba, mypyc, Taichi (the fastest). Alternately, code compiled using 
 Condon is a new python compiler that uses the LLVM framework to compile directly to machine code. Condon can also make use of the thousands of processors on a GPU to process matrix, graphical, and mathematical operations without using a library like numpy, scikit-learn, scipy, and game library pygame.
 However, Condon cannot use modules like typing functools such as <a target="_blank" href="https://docs.python.org/3/library/functools.html#functools.wraps">wraps</a>, which provides contextual information for decorators.
 
+### Pickle objects
 
+Pickling is the process of converting (serializing) a (especially complex) Python object (list, dict, set, tuple, matrix) into a byte stream used to transfer to another object, over the internet, or store in a database.
 
-<a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/a/comparing-run-time-efficiency">KhanAcad explanation of run-time efficiency</a>.
+* dump writes result to a file
+* load objects from a file
+
+* dumps in-memory object to a file
+* loads from file to in-memory objects
+
+https://www.youtube.com/watch?v=wO_gVvINtg0
 
 ### minmax
 
@@ -678,14 +739,14 @@ Use this in every division to ensure that a zero denominator results in falling 
 Flip a coin:
 ```
 import random
-&nbsp;
+
 if random.randint(0, 1) == 0:
   print("heads!")
 else:
   print("tails!")
 ```
 
-TODO: Roll a 6-sided die? See bomonike/memno
+TODO: Roll a 6-sided die? See bomonike/memon
 
 TODO: Roll a 20-sided die?
 
@@ -1056,18 +1117,20 @@ Internationalization, aka i18n for the 18 characters between i and n, is the pro
 
 1. Use Lokalise utility to manage translations through a GUI. It also has a CLI tool to automate the process of managing translations.  https://lokalise.com/blog/lokalise-apiv2-in-practice/
 
-   <pre>locales/
+   ```
+   locales/
 ├── el
 │   └── LC_MESSAGES
 │       └── base.po
 └── en
     └── LC_MESSAGES
         └── base.po
-   </pre>
+   ```
 
 1. Add the library
 
-   <pre>import gettext
+   ```
+   import gettext
 # Set the local directory
 localedir = './locale'
 # Set up your magic function
@@ -1075,16 +1138,17 @@ translate = gettext.translation('appname', localedir, fallback=True)
 _ = translate.gettext
 # Translate message
 print(_("Hello World"))
-   </pre>
+   ```
 
    See https://phrase.com/blog/posts/translate-python-gnu-gettext/
 
 1. Store a master list of locales supported in a Portable Object Template (POT) file, also known as a translator:
 
-   <pre>#: src/main.py:12
+   ```
+   #: src/main.py:12
 msgid "Hello World"
 msgstr "Translation in different language"
-   </pre>
+   ```
 
 
    ```
@@ -2075,6 +2139,36 @@ by José Manuel Ortega
 covers the main modules we have in Python to encrypt and decrypt information, including pycryptome and cryptography.
 Covers extracting Geolocation and Metadata from Documents, Images, and Browsers, covers, main modules.
 Covers the pcapy and scapy modules to analyze network traffic and packet sniffing.
+
+
+<hr />
+
+## CS50P Harvard
+
+https://cs50.harvard.edu/python/2022/
+
+https://cs50.ai/chat
+
+Videos:
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4">(00:00:00)</a> Introduction
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4m48s">Comments, Functions, Variables</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=1h50m24s">Conditionals</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=2h46m23s">Loops</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4h07m10s">Exceptions</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4h51m45s">Libraries</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=6h09m15s">Unit Tests</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=7h00m22s">File I/O</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=8h32m32s">Regular Expressions</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=10h37m35s">Object-Oriented Programming</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=13h28m47s">Et Cetera</a>
+* (15:47:47)
+
+<hr />
+
+## Cybrary.it
+
+FREE: 2h57m by <a target="_blank" href="https://www.linkedin.com/in/joseph-perry-a5127914a/">Joe Perry</a>
+https://app.cybrary.it/browse/course/python
 
 
 ## More about Python
