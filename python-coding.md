@@ -1156,12 +1156,12 @@ msgstr "Translation in different language"
 &GT;&GT;&GT; unicode_string
 Fußbälle
 &GT;&GT;&GT; type(unicode_string)
-<type 'unicode'>
+&LT;type 'unicode'>
 &GT;&GT;&GT; utf8_string = unicode_string.encode("utf-8")
 &GT;&GT;&GT; utf8_string
 'Fuxc3x9fbxc3xa4lle'
 &GT;&GT;&GT; type(utf8_string)
-<type 'str'>
+&LT;type 'str'>
    ```
 
 ```
