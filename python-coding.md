@@ -2145,12 +2145,10 @@ Covers the pcapy and scapy modules to analyze network traffic and packet sniffin
 
 ## CS50P Harvard
 
-https://cs50.harvard.edu/python/2022/
+0https://cs50.ai/chat
 
-https://cs50.ai/chat
-
-Videos:
-* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4">(00:00:00)</a> Introduction
+Videos from <a target="_blank" href="https://cs50.harvard.edu/python/2022/">15h47m47s of https://cs50.harvard.edu/python/2022</a>:
+* <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4">Introduction</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=4m48s">Comments, Functions, Variables</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=1h50m24s">Conditionals</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=2h46m23s">Loops</a>
@@ -2161,7 +2159,7 @@ Videos:
 * <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=8h32m32s">Regular Expressions</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=10h37m35s">Object-Oriented Programming</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=nLRL_NcnK-4&t=13h28m47s">Et Cetera</a>
-* (15:47:47)
+
 
 <hr />
 

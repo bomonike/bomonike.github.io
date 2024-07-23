@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-19"
+date: "2024-07-23"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -1052,6 +1052,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 *	SAS	=	Shared Access Signature (secure token URI to Azure accounts and storage resources)
 *	SASE	=	Secure Access Service Edge	(Microsoft & Trust Broker SaaS by Palo Alto Prisma	 zScaler	 Cato	 Cloudfare)
 *	SAST	=	Static Application Security Testing
+*	SBC	=	Single-Board Computer (like the ZimaBoard 832)
 *	SBI	=	Service-Based Interface
 *	SBOM	=	Software Bill of Materials
 *	SCA	=	Software Composition Analysis	(identify vulnerable components in containers)
@@ -1182,8 +1183,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 * TCO	=	Total Cost of Ownership
 *	TDE	=	Transparent Data Encryption	(HashiCorp Vault feature to substitute encrypted values in databases instead of HSMs)
 *	TDIR	=	Threat Detection and Incident Response (security workflow)
-* TDP = Thermal Design Power (avg. max. power a processor dissipates
- heat while running)
+* TDP = Thermal Design Power (avg. max. power a processor dissipates heat while running)
 *	TDM	=	Technical Decision Maker	(vs. Business Decision Maker)
 *	TFC	=	Terraform Cloud	(SaaS Terraform offering)
 *	TFE	=	Terraform Enterprise	(self-installed/managed Terraform)
