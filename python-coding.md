@@ -93,16 +93,108 @@ E. <a target="_blank" href="https://github.com/advanced-security/demo-python">Gi
 https://7451111251303.gumroad.com/l/wotve
 <hr />
 
+There is  time complexity, data complexity,
+
+<a name="TimeComplexity"></a>
+
+### Time Complexity Big Oh notation
+
+Big-O notation summarizes Time Complexity analysis, which estimates how long it can take for an algorithm to complete based on its structure. That's worst-case, before optimizations such as memoization.
+
+From <a target="_blank" href="https://bigocheatsheet.com/">https://bigocheatsheet.com</a>, in the list of Big O values for sorting:
+
+<a target="_blank" href="https://user-images.githubusercontent.com/300046/141355255-b2b990cf-46d9-415e-b21a-2c06a156c3eb.png">
+<img alt="python-coding-time-complexity-1222x945" src="https://user-images.githubusercontent.com/300046/141355255-b2b990cf-46d9-415e-b21a-2c06a156c3eb.png"></a>
+
+BigO References: <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=47s">VIDEO</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=TUiv2UgDgOQ">VIDEO</a> <a target="_blank" href="https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/">Cheet Sheat</a> & <a target="_blank" href="https://academy.zerotomastery.io/courses/700474/lectures/12568500">bootcamp</a> from ZeroToMastery.io</a>
+   Python Solutions:
+   * https://github.com/theja-m/Data-Structures-and-Algorithms
+   * https://github.com/VicodinAbuser/ZTM-DS-and-Algo-Python
+   * https://www.youtube.com/watch?v=v4cd1O4zkGw by HackerRank - rules
+   <br /><br />
+
+Let's go from the most efficient (at the bottom-right) to the least efficient at the upper-left,
+where n is the number of input items in the list being processed:
+
+* O(1) or n<sup>0</sup> is <strong>constant run time</strong> as more data (n) is processed. This happens when a <strong>lookup</strong>  is done rather than calculating. Examples are the push, pop, lookup of an array; insert or remove a hash map/set.
+
+   Use of "memoization" is ideal, but is typically not possible for some algorithms.
+
+   0Use of Modulus would result in "O(n)" (linear) growth in time to run as the dataset grows.
+
+* O(n) or (n<sup>1</sup>) <strong>linear time</strong> occurs the increase in list size (n) increases the number of steps in direct proportion to the input size. <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=176s">VIDEO</a>: This happens when
+   * values within an array are summed together, in a nested loop through all elements.
+   * during an <strong>exhaustive search</strong> though every item.
+   ```
+   nums = [1,2,3]
+   sum(nums)  # sum the array
+   print(100 in nums)   # search
+   nums.insert(1, 100)  # insert in the middle
+   nums.remove(100)     # remove from the middle
+
+   import heapq
+   heapq.heapify(nums)  # to build heap
+
+   # nested loop (monotonic stack or sliding window)
+   ```
+
+* O(log n) or log<sub>2</sub>n - <strong>logarithmic time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=10m56s">VIDEO</a>: occurs during <strong>binary search</strong>, (like ripping up portions of a phone book) where steps increase at a <strong>slower rate</strong> than input list size:
+   ```
+   | List | Steps |
+   |    1 |     1 |
+   |   10 |     4 |
+   |  100 |     7 |
+   | 1000 |    10 |
+   | .... |    35 | horizontal asymtope
+   ```
+
+* O(n<sup>2</sup>) - n squared <strong>quadratic time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=395s">VIDEO</a>: occurs in a <strong>nested loop</strong> when steps increase in proportion to the input size <strong>squared</strong> (to the power of 2). A <strong>selection sort</strong> starts from the front of the list, and looks at each <strong>unordered</strong> item to find the next smallest value in the list and swapping it with the current value. This is also when the minimax algorithm is used.
+   ```
+   | List |  Steps |
+   |    1 |      1 |
+   |   10 |     45 |
+   |  100 |   4950 |
+   | 1000 | 499500 |
+   ```
+  The standard form, When graphed, a quadratic equation forms a parabola - a U-shaped curve
+  used to illustrate trajectories of moving objects, areas of shapes, and in financial calculations.
+  𝑎𝑥<sup>2</sup> + 𝑏𝑥 + 𝑐 = 0
+
+* n<sup>k</sup> - such as n<sup>3</sup> and higher degree polynomials are called "Polynomial time" to group run times which do not increase faster than n<sup>k</sup>.
+
+* "Superpolynomial time" describes any run time that increase faster than n<sup>k</sup>, below:
+
+* O(n<sup>n</sup>) - <strong>exponential time</strong> occurs when a algorithm looks at every permutation of values, such as all possible value which brute-force guessing passwords. For example, 28 to the power of 8 is when guessing 8 positions of 28 alphanumatic characters. When 10 number values and special characters are added for 98 possible values, it's 98 to the power of 8, a very large number. Such are considered "unreasonable" to make it harder to brute-force guess.
+
+* O(n!) <strong>factorial time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=18m31s">VIDEO</a>: where 5! = 5x4x3x2x1 - the product of all positive integers less than or equal to n. Factorials are used to represent permutations and combinations. Factorials <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/e/comparing-run-time-efficiencies">determine the number of possible topping combinations</a> - graph problems such as the "Traveling Salesman".
+
+   Used to purposely create complex calculations, such as for <strong>encryption</strong>.
+
+The <strong>asymptope</strong> is when a number reaches an extremely large number that is essentially infinite.
+
+Depth-first trees would have steeper (logarithmic) Time Complexity.
+
+References:
+   * <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/a/comparing-run-time-efficiency">KhanAcad explanation of run-time efficiency</a>.
+   * https://www.youtube.com/watch?v=7VHG6Y2QmtM
+
+
+### Faster routes to machine code
+By default, Python comes with the <a target="_blank" href="https://github.com/python/cpython">CPython interpreter</a> (command cythonize) to generate machine-code. When speed is needed, such as in loops, custom C/C++ extensions are created. Additional speed is obtained by adding before nested loop code directives and decorators:
+```
+# cython: language_level=3, boundscheck=False, wraparound=False
+import cython
+@cython.locals(i=cython.int,j=cython.int,a=list[cython.int],b=list[cython.int])
+```
+
+<a target="_blank" href="https://www.youtube.com/watch?v=umLZphwA-dw">VIDEO</a>:
+benchmarks Numba, mypyc, Taichi (the fastest). Alternately, code compiled using <a target="_blank" href="https://github.com/exaloop/codon">Codon by Exaloop</a> tool <a target="_blank" href="https://medium.com/intuition/codon-a-python-compiler-3d5322e1c0a5">"41,212 times faster"</a> than the standard Python interpreter.
+
+Condon is a new python compiler that uses the LLVM framework to compile directly to machine code. Condon can also make use of the thousands of processors on a GPU to process matrix, graphical, and mathematical operations without using a library like numpy, scikit-learn, scipy, and game library pygame.
+However, Condon cannot use modules like typing functools such as <a target="_blank" href="https://docs.python.org/3/library/functools.html#functools.wraps">wraps</a>, which provides contextual information for decorators.
+
 <hr />
-
-## print, printf, echo
-
-PROTIP: Don't just print out the value. Include the variable name:
-
-```
-print("var1=",var1)
-```
-
 
 <a name="ReservedKeywords"></a>
 
@@ -241,6 +333,16 @@ https://docs.python.org/3/library/functions.html
    * super()
 
 <hr />
+
+## print, printf, echo
+
+PROTIP: Don't just print out the value. Include the variable name:
+
+```
+print("var1=",var1)
+```
+
+
 
 <a name="None"></a>
 
@@ -446,7 +548,7 @@ FullStack's REACTO framework during coding interviews:
 
 <a name="DurationCalcs"></a>
 
-## Duration calculations
+## Run Duration calculations
 
 Several packages, functions, and methods are available. They differ by:
    * the type of duration they report: wall-clock time or CPU time
@@ -549,100 +651,6 @@ References:
 
 <hr />
 
-There is data complexity and time complexity.
-
-<a name="TimeComplexity"></a>
-
-### Time Complexity Big Oh notation
-
-Big-O notation summarizes Time Complexity analysis, which estimates how long it can take for an algorithm to complete based on its structure. That's worst-case, before optimizations such as memoization.
-
-From <a target="_blank" href="https://bigocheatsheet.com/">https://bigocheatsheet.com</a>, in the list of Big O values for sorting:
-
-<a target="_blank" href="https://user-images.githubusercontent.com/300046/141355255-b2b990cf-46d9-415e-b21a-2c06a156c3eb.png">
-<img alt="python-coding-time-complexity-1222x945" src="https://user-images.githubusercontent.com/300046/141355255-b2b990cf-46d9-415e-b21a-2c06a156c3eb.png"></a>
-
-References: <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=47s">VIDEO</a>
-
-Let's go from the most efficient (at the bottom-right) to the least efficient at the upper-left,
-where n is the number of input items in the list being processed:
-
-* O(1) or n<sup>0</sup> is <strong>constant run time</strong> as more data (n) is processed. This happens when a <strong>lookup</strong>  is done rather than calculating. Examples are the push, pop, lookup of an array; insert or remove a hash map/set.
-
-   Use of "memoization" is ideal, but is typically not possible for some algorithms.
-
-   0Use of Modulus would result in "O(n)" (linear) growth in time to run as the dataset grows.
-
-* O(n) or (n<sup>1</sup>) <strong>linear time</strong> occurs the increase in list size (n) increases the number of steps in direct proportion to the input size. <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=176s">VIDEO</a>: This happens when
-   * values within an array are summed together, in a nested loop through all elements.
-   * during an <strong>exhaustive search</strong> though every item.
-   ```
-   nums = [1,2,3]
-   sum(nums)  # sum the array
-   print(100 in nums)   # search
-   nums.insert(1, 100)  # insert in the middle
-   nums.remove(100)     # remove from the middle
-
-   import heapq
-   heapq.heapify(nums)  # to build heap
-
-   # nested loop (monotonic stack or sliding window)
-   ```
-
-* O(log n) or log<sub>2</sub>n - <strong>logarithmic time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=10m56s">VIDEO</a>: occurs during <strong>binary search</strong>, (like ripping up portions of a phone book) where steps increase at a <strong>slower rate</strong> than input list size:
-   ```
-   | List | Steps |
-   |    1 |     1 |
-   |   10 |     4 |
-   |  100 |     7 |
-   | 1000 |    10 |
-   | .... |    35 | horizontal asymtope
-   ```
-
-* O(n<sup>2</sup>) - n squared <strong>quadratic time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=395s">VIDEO</a>: occurs in a <strong>nested loop</strong> when steps increase in proportion to the input size <strong>squared</strong> (to the power of 2). A <strong>selection sort</strong> starts from the front of the list, and looks at each <strong>unordered</strong> item to find the next smallest value in the list and swapping it with the current value. This is also when the minimax algorithm is used.
-   ```
-   | List |  Steps |
-   |    1 |      1 |
-   |   10 |     45 |
-   |  100 |   4950 |
-   | 1000 | 499500 |
-   ```
-  The standard form, When graphed, a quadratic equation forms a parabola - a U-shaped curve
-  used to illustrate trajectories of moving objects, areas of shapes, and in financial calculations.
-  𝑎𝑥<sup>2</sup> + 𝑏𝑥 + 𝑐 = 0
-
-* n<sup>k</sup> - such as n<sup>3</sup> and higher degree polynomials are called "Polynomial time" to group run times which do not increase faster than n<sup>k</sup>.
-
-* "Superpolynomial time" describes any run time that increase faster than n<sup>k</sup>, below:
-
-* O(n<sup>n</sup>) - <strong>exponential time</strong> occurs when a algorithm looks at every permutation of values, such as all possible value which brute-force guessing passwords. For example, 28 to the power of 8 is when guessing 8 positions of 28 alphanumatic characters. When 10 number values and special characters are added for 98 possible values, it's 98 to the power of 8, a very large number. Such are considered "unreasonable" to make it harder to brute-force guess.
-
-* O(n!) <strong>factorial time</strong> <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=18m31s">VIDEO</a>: where 5! = 5x4x3x2x1 - the product of all positive integers less than or equal to n. Factorials are used to represent permutations and combinations. Factorials <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/e/comparing-run-time-efficiencies">determine the number of possible topping combinations</a> - graph problems such as the "Traveling Salesman".
-
-   Used to purposely create complex calculations, such as for <strong>encryption</strong>.
-
-The <strong>asymptope</strong> is when a number reaches an extremely large number that is essentially infinite.
-
-Depth-first trees would have steeper (logarithmic) Time Complexity.
-
-References:
-   * <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/a/comparing-run-time-efficiency">KhanAcad explanation of run-time efficiency</a>.
-   * https://www.youtube.com/watch?v=7VHG6Y2QmtM
-
-
-### Faster routes to machine code
-By default, Python comes with the <a target="_blank" href="https://github.com/python/cpython">CPython interpreter</a> (command cythonize) to generate machine-code. When speed is needed, such as in loops, custom C/C++ extensions are created. Additional speed is obtained by adding before nested loop code directives and decorators:
-```
-# cython: language_level=3, boundscheck=False, wraparound=False
-import cython
-@cython.locals(i=cython.int,j=cython.int,a=list[cython.int],b=list[cython.int])
-```
-
-<a target="_blank" href="https://www.youtube.com/watch?v=umLZphwA-dw">VIDEO</a>:
-benchmarks Numba, mypyc, Taichi (the fastest). Alternately, code compiled using <a target="_blank" href="https://github.com/exaloop/codon">Codon by Exaloop</a> tool <a target="_blank" href="https://medium.com/intuition/codon-a-python-compiler-3d5322e1c0a5">"41,212 times faster"</a> than the standard Python interpreter.
-
-Condon is a new python compiler that uses the LLVM framework to compile directly to machine code. Condon can also make use of the thousands of processors on a GPU to process matrix, graphical, and mathematical operations without using a library like numpy, scikit-learn, scipy, and game library pygame.
-However, Condon cannot use modules like typing functools such as <a target="_blank" href="https://docs.python.org/3/library/functools.html#functools.wraps">wraps</a>, which provides contextual information for decorators.
 
 ### Pickle objects
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-23"
+date: "2024-07-27"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -990,6 +990,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 *	RDD	=	Resilient Distributed Dataset (native data structure underlying Apache Spark Dataframes used by Pandas)
 *	RDF	=	Resource Description Language (W3C standard for graph databases)
 *	RDL	=	Report Definition Language (XML representation of a paginated report definition from Microsoft SQL Server Reporting Services)
+* RDMA = Remote Direct Memory Access (to share liquid-cooled memory in parallel connected by low-latency Ethernet fabric by SMCI)
 *	RDP	=	Remote Desktop Protocol	(Microsoft technology for users to access a Windows computer remotely)
 *	RDS	=	Relational Database Service	(AWS cloud SQL service to host databases)
 *	REST	=	Representational State Transfer
