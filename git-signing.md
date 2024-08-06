@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2023-05-26"
+date: "2024-08-03"
 file: "git-signing"
 title: "Git Signing"
 excerpt: "Sign git commits and tags (for non-repudiation) in GitHub using GPG, Vault, Yubikey, Keybase"
@@ -22,6 +22,11 @@ comments: true
 
 The contribution of this article is a logical ordering of <strong>deep-dive</strong> concepts presented in a succinct way, as a hands-on narrated scenic tour. "PROTIP" flags advice from hard-won experience such as relevant keyboard shortcuts, recovering from common mistakes, and things to remember, available only here for you.
 
+NOTE: GPG (GNU Privacy Guard) was created in 1997 as a free, open-source alternative to PGP (Pretty Good Privacy) under the GNU General Public License. Messages encrypted with GPG can usually be decrypted using PGP and vice versa, due to their adherence to the OpenPGP standard. PGP was acquired by Symantec as a proprietary commercial product that requires paid licensing but more user-friendly.
+GPG is more powerful but can be more complex to use.
+PGP was originally developed by Phil Zimmermann in 1991 using RSA for public-key cryptography and algorithms like CAST-128, IDEA, or 3DES for symmetric encryption.
+GPG supports a wider range of algorithms including RSA, ElGamal, DSA, ECDH, ECDSA, EdDSA for public-key cryptography and IDEA, 3DES, CAST5, Blowfish, AES, Twofish, Camellia for symmetric encryption
+
 
 <a name="SignWithSSH"></a>
 
@@ -35,7 +40,7 @@ Thanks to https://blog.artis3nal.com/blog/sign-commits-github-ssh/
     NEW_KEY_FILE="wilson-mac22-23-02-19"
     MY_EMAIL="johndoe@gmail.com"
     &nbsp;
-    ssh-keygen -t ed25519 -o -C "$MY_EMAIL" -f "$NEW_KEY_FILE" 
+    ssh-keygen -t ed25519 -o -C "$MY_EMAIL" -f "$NEW_KEY_FILE"
     # no pass phrase
     </strong></pre>
 
@@ -112,8 +117,8 @@ The workflow:
 
    1. <a href="#Variations">Make decisions about install variations</a>
    2. <a href="#Installers">Install apps and programs locally</a>
-   3. <a href="#Configurations">Configure emails</a> 
-   4. <a href="#GenKeys">Generate keys</a> 
+   3. <a href="#Configurations">Configure emails</a>
+   4. <a href="#GenKeys">Generate keys</a>
    5. <a href="#ListKeys">list keys</a> to verify
    6. <a href="#CopyPasteGitHub">Add public GPG key to GitHub</a>
    7. <a href="#RequireSigned">Set up GitHub to require signing</a>
@@ -123,10 +128,10 @@ The workflow:
    <br /><br />
 
    BONUS: Since we have GPG installed, here are also notes about:
-   * <a href="#EncryptFiles">signing of whole files using GPG</a> 
+   * <a href="#EncryptFiles">signing of whole files using GPG</a>
    * <a href="#FacebookSigning">getting Facebook to encrypt notification emails it sends you</a>
-   * <a href="#CopyGPG">Copy GPG keys off to a secure cloud</a> 
-   * <a href="#GPGEmail">Encrypt emails in transit (between Gmail and Protonmail)</a> 
+   * <a href="#CopyGPG">Copy GPG keys off to a secure cloud</a>
+   * <a href="#GPGEmail">Encrypt emails in transit (between Gmail and Protonmail)</a>
    <br /><br />
 
 
@@ -139,7 +144,7 @@ The workflow:
 The alternatives on macOS:
 
    * <a href="#install_gpg-suite">Install on macOS GUI GPG-Suite </a> app which stores keys in the protected macOS KeyChain. This is the simplest approach.
-   * <a href="#1password">Generate and retrieve SSH & GPG from 1Password</a> 
+   * <a href="#1password">Generate and retrieve SSH & GPG from 1Password</a>
    * <a href="#gnupg2_mac_install">Install on macOS CLI GPGN2</a>
    * <a target="_blank" href="https://www.goanywhere.com/openpgp-studio">Install Open GPG Studio from GoAnywhere (free)</a>
    <br /><br />
@@ -176,11 +181,11 @@ The app generates the certificate pairs, stores them in Vault, installs them on 
 Then all a new working developer needs to do is, on a pre-configured laptop, make a change and do a git <a href="#SignTag">tag</a> or <a href="#SignCommits">add and commit with a tag</a>, then <a href="#Push">push</a>.
 
 
-<a name="1password"></a> 
+<a name="1password"></a>
 
 ## Generate and retrieve SSH & GPG from 1Password
 
-Protect your SSH key within 1Password. See 
+Protect your SSH key within 1Password. See
 https://developer.1password.com/docs/ssh/git-commit-signing/
 
 https://www.darkreading.com/dr-tech/how-to-use-ssh-keys-and-1password-to-sign-git-commits
@@ -202,7 +207,7 @@ Once the key is set up in GitHub, proceed to 1Password on your desktop to config
 2. Select the "Edit Automatically" option to have 1Password update the .gitconfig file with one click.
 
 3. Users in need of more advanced configuration can copy the snippet and do things manually.
-   
+
 <hr />
 
 <a name="GitHubEmail"></a>
@@ -210,7 +215,7 @@ Once the key is set up in GitHub, proceed to 1Password on your desktop to config
 ### Email address in GitHub
 
    We want to configure GitHub to use your primary email in the form such as:
-   
+
    <tt><strong>john_doe+github@gmail.com</strong></tt>
 
    The extra "+github" confuses simple attempts.
@@ -326,16 +331,16 @@ drwxr-xr-x   3 root  admin    96 May 14 18:37 _CodeSignature
 1. Press Command+Q to quit the GPG Keychain program.
 
    Also install utility to handle GPG within your Terminal:
-   
+
 
    <a name="gnupg2_mac_install"></a>
 
-   ### Install on macOS CLI utility gnupg2 
+   ### Install on macOS CLI utility gnupg2
 
 1. Open a Terminal. Be at your home user folder.
 
 1. If you have not already, manually install <a target="_blank" href="https://wilsonmar.github.io/macos-homebrew/">brew (Homebrew)</a>
-   
+
 1. Upgrade or Install a Git client using <a target="_blank" href="https://formulae.brew.sh/formula/gnupg">Homebrew's gnupg formulae</a>
 
    <pre><strong>brew upgrade git</strong></pre>
@@ -441,7 +446,7 @@ Compression: Uncompressed, ZIP, ZLIB, BZIP2
 1. Update permissions on your `~/.gnupg` Directory:
 
    <pre><strong>chmod 700 ~/.gnupg</strong></pre>
-   
+
    No response is expected if the command is successful.
 
 1. Update or Create <tt>~/.gnupg/gpg.conf</tt> using your favorite text editor:
@@ -450,13 +455,13 @@ Compression: Uncompressed, ZIP, ZLIB, BZIP2
    </strong></pre>
 
    The above would open Visual Studio Code containing lines such as:
-   
+
    <pre>auto-key-retrieve
 no-emit-version
    </pre>
 
 1. If the <tt>use-agent</tt> is not there, add it. If it's there, remove the comment character # from "use-agent" to enable it:
-   
+
    <pre># Uncomment within config (or add this line)
    # This tells gpg to use the gpg-agent
    use-agent
@@ -533,9 +538,9 @@ uid           [ultimate] John Doe <johndoe+github@gmail.com>
 
 <a name="install-win"></a>
 
-### Install Windows GUI 
+### Install Windows GUI
 
-TODO: 
+TODO:
 
 1. Proceed to <a href="#Config">Configuration</a>
 
@@ -627,7 +632,7 @@ In a Terminal:
    <pre><strong>vault --version</strong></pre>
 
    At time of writing:
-   
+
    <pre>Vault v1.10.4 (6a1dde56c18c4a1be2756b931ce3c872d8ca5a76)</pre>
 
 1. If you don't have a HashiCorp Vault server, follow my instructions to run it (for development/experimentation) locally at:
@@ -694,7 +699,7 @@ References:
 
    The advantage of using the Keybase app to generate GPG keys is that the keys are stored online at <a target="_blank" href="https://keybase.io/">keybase.io</a>, where you'll be able to retrieve your keys when you don't have your laptop anymore.
 
-   The downside is that it's possible for Keybase.io to be hacked. 
+   The downside is that it's possible for Keybase.io to be hacked.
 
    PROTIP: Keybase was acquired by Zoom in 2020. Some are concerned that Zoom will stop support of the product because Zoom only wanted the talent and not fund the free product.
 
@@ -717,7 +722,7 @@ References:
 
    It takes a few seconds and returns you to the command prompt.
 
-1. To avoid <a target="_blank" href="#https://blog.pablobm.com/2017/05/30/warning-server-gpg-agent-is-older-than-us.html">error message</a>: 
+1. To avoid <a target="_blank" href="#https://blog.pablobm.com/2017/05/30/warning-server-gpg-agent-is-older-than-us.html">error message</a>:
 
    <pre>gpg: WARNING: server 'gpg-agent' is older than us (2.2.20 < 2.2.23)
 gpg: Note: Outdated servers may lack important security fixes.
@@ -732,7 +737,7 @@ gpg: Note: Use the command "gpgconf --kill all" to restart them.
 
    <pre><strong>keybase pgp export | gpg --import</strong></pre>
 
-   Example response:   
+   Example response:
 
    <pre>gpg: key 938BBBDEB75FEA21: public key "Wilson Mar <wilsonmar+github@gmail.com>" imported
 gpg: Total number processed: 1
@@ -774,7 +779,7 @@ Push an encrypted copy of your new secret key to the Keybase.io server? [Y/n] Y
 ▶ INFO   4096-bit RSA key, ID CB86A866E870EE00, created 2016-04-06
 ▶ INFO Exported new key to the local GPG keychain
    </pre>
-   
+
 1. Verify whether it's configured with signingkey:
 
    <pre><strong>git config --list | grep user
@@ -786,7 +791,7 @@ Push an encrypted copy of your new secret key to the Keybase.io server? [Y/n] Y
 user.email=wilsonmar+github@gmail.com
 user.id=WilsonMar+github@gmail.com
 user.username=hotwilson
-user.signingkey=E62CF51CE3E5A4E8   
+user.signingkey=E62CF51CE3E5A4E8
    </pre>
 
 1. Skip to <a href="#ListKeys">List GPG keys (below)</a>.
@@ -807,7 +812,7 @@ List keys to verify that you have indeed generated them.
 
    <tt>\-\-keyid-format LONG</tt> requests showing only those keys where both public and private key pair exists. This is because both are required to sign commits and tags.
    If nothing is returned, there are no keys usable for signing.
-   
+
    PROTIP: This above command can be used often, so added as Bash shell alias (keyboard shortcut) in <a target="_blank" href="https://github.com/wilsonmar/git-utilities/blob/master/aliases.sh">https://github.com/wilsonmar/git-utilities/blob/master/aliases.sh</a> so that you can instead just type:
 
    <pre><strong>gsk</strong></pre>
@@ -890,10 +895,10 @@ pinetry-program /usr/local/bin/pinetry-mac
 
    https://www.yubico.com/works-with-yubikey/catalog/#protocol=all&usecase=all&key=yubikey-5ci
 
-   Note that these are internet-based SaaS apps rather than local apps (such as 
+   Note that these are internet-based SaaS apps rather than local apps (such as
    <a target="_blank" href="https://support.1password.com/security-key/">1Password"</a>.
 
-1. Click on "GitHub" for <a target="_blank" href="https://docs.github.com/en/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-fido-u2f">these instructions</a> to enable a 2FA app (if you haven't already),  
+1. Click on "GitHub" for <a target="_blank" href="https://docs.github.com/en/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-fido-u2f">these instructions</a> to enable a 2FA app (if you haven't already),
 
 1. In a Terminal, install software to manage Yubikey (<a target="_blank" href="https://github.com/Yubico/yubikey-manager">ykman</a>):
 
@@ -927,7 +932,7 @@ Manufacturer .....: Yubico
 Serial number ....: 12345678
 Name of cardholder: [not set]
 Language prefs ...: [not set]
-Salutation .......: 
+Salutation .......:
 URL of public key : [not set]
 Login data .......: [not set]
 Signature PIN ....: not forced
@@ -941,7 +946,7 @@ Encryption key....: [none]
 Authentication key: [none]
 General key info..: [none]
    </pre>
-   
+
    ### Configure Yubikey
 
 1. Initiate the configuration program:
@@ -986,10 +991,10 @@ You should change them using the command --change-pin
 
    "Make off-card backup of encryption key? (Y/n) n
 
-   <a target="_blank" href="https://github.com/jeffmaher/yubikey-macos-setup">BLOG</a>: 
+   <a target="_blank" href="https://github.com/jeffmaher/yubikey-macos-setup">BLOG</a>:
    if you see these messages:
    <pre>gpg: selecting openpgp failed: Operation not supported by device
-gpg: OpenPGP card not available: Operation not supported by device   
+gpg: OpenPGP card not available: Operation not supported by device
    </pre>
 
 1. In the pop-up, type PIN "123456", which is the default pin.
@@ -1016,7 +1021,7 @@ gpg: OpenPGP card not available: Operation not supported by device
 
    <pre>GnuPG needs to construct a user ID to identify your key.
 &nbsp;
-Real name: 
+Real name:
    </pre>
 
 1. Type your real name, such as "John Doe".
@@ -1041,7 +1046,7 @@ public and secret key created and signed.
 1. Change the PIN and Admin PIN:
 
    <pre>gpg/card> <strong>passwd</strong></pre>
-   
+
    Response:
    <pre>gpg: OpenPGP card no. A1234567890103040006162528900000 detected
 &nbsp;
@@ -1094,7 +1099,7 @@ Your selection? _
 
    <pre>gpg/card> <strong>list</strong></pre>
 
-   <pre>General key info..: 
+   <pre>General key info..:
 pub  rsa2048/A1D1DC27394AD9D0 2021-06-22 John Doe <johndoe+github@gmail.com>
 sec>  rsa2048/A1D1DC27394AD9D0  created: 2021-06-22  expires: 2022-06-22
                                 card-no: 0006 16252890
@@ -1193,7 +1198,7 @@ Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? _
 1. In response to "Please enter the passphrase to protect your new key":
 
    <a target="_blank" href="https://user-images.githubusercontent.com/300046/75696173-26349580-5c79-11ea-9227-6731ccd22211.png"><img width="671" alt="git-signed-pass-form" src="https://user-images.githubusercontent.com/300046/75696173-26349580-5c79-11ea-9227-6731ccd22211.png"></a>
-            
+
    PROTIP: Save you <strong>Passphrase</strong> in a secure place (such as in <a target="_blank" href="https://wilsonmar.github.io/hashicorp-vault/">HashiCorp Vault</a>), <strong>then</strong> copy it to paste in the prompt. This tactic is to ensure that you really can retrieve it when you use the key in a future command.
 
    REMEMBER: Don't reuse passwords and passphrases.
@@ -1303,7 +1308,7 @@ Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?
 
    The response is like:
 
-   <pre>You selected this USER-ID: 
+   <pre>You selected this USER-ID:
     "John Doe (My Git signing key) &LT;john_doe+github@gmail.com>"
    </pre>
 
@@ -1324,7 +1329,7 @@ Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?
 
 1. Navigate to your <tt>.ssh</tt> folder:
 
-   <pre><strong>cd ~/.ssh</strong></pre>   
+   <pre><strong>cd ~/.ssh</strong></pre>
 
 1. Print a command such as this to emit a public GPG key, in <strong>ASCII armor</strong> format so that they can be sent in a standard messaging format such as email. (Otherwise, the output is in binary format):
 
@@ -1353,7 +1358,7 @@ Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?
 1. Press command+V to paste what was saved to your invisible Clipboard using the pbcopy command above.
 
    PROTIP: IMPORTANT: If you lost your laptop, <strong>immediately </strong> log into GitHub Settings on another laptop to remove the SSH and GPG keys associated with that laptop.
-   
+
    <a name="RequireSigned"></a>
 
    ### Require Signed Commits
@@ -1370,7 +1375,7 @@ Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit?
 
    <a name="SigningKey"></a>
 
-   ## Signing Key 
+   ## Signing Key
 
 1. Configure Git to use the program for signing:
 
@@ -1443,7 +1448,7 @@ echo 'export GPG_TTY=$(tty)' >> ~/.profile
 
    <pre>/dev/ttys001
    </pre>
-   
+
 1. Activate the setting by restarting your Terminal session. If using Bash:
 
    <pre><strong>source ~/.bash_profile
@@ -1554,7 +1559,7 @@ Date:   Sun Jun 20 22:54:17 2021 -0600
    PROTIP: Git tags are like a branch name. in Semantic Versionioning format. See semver.com.
 
    <tt>GIT_TRACE=1</tt> enables tracing. Example output on macOS:
-   
+
    <pre>03:45:46.646487 exec-cmd.c:139          trace: resolved executable path from Darwin stack: /Library/Developer/CommandLineTools/usr/bin/git
 03:45:46.647227 exec-cmd.c:236          trace: resolved executable dir: /Library/Developer/CommandLineTools/usr/bin
 03:45:46.647782 git.c:418               trace: built-in: git tag -a -s v1.5.2 -m 'Signed tag 1.5.2'
@@ -1577,13 +1582,13 @@ Date:   Sun Jun 20 22:54:17 2021 -0600
 
    ### Silencing
 
-   I don't recommend this, but theoretically you can silence the "you need a Passphrase" prompt by adding in file <tt>~/.gnupg/gpg.conf</tt> "batch". But 
+   I don't recommend this, but theoretically you can silence the "you need a Passphrase" prompt by adding in file <tt>~/.gnupg/gpg.conf</tt> "batch". But
 
    <pre># Connects gpg-agent to the OSX keychain via the brew-installed
 # pinentry program from GPGtools. This is the OSX 'magic sauce',
 # allowing the gpg key's passphrase to be stored in the login
 # keychain, enabling automatic key signing.
-pinentry-program /usr/local/bin/pinentry-mac   
+pinentry-program /usr/local/bin/pinentry-mac
    </pre>
 
 
@@ -1773,14 +1778,14 @@ gpg: can't hash datafile: No data"
 ### Standard signing
 
 Standard signing and clear signing both create ciphertext from the cleartext input file:
-   * Standard signing is used with encryption. 
-   * Clear signing wraps the input with a plaintext signature. 
+   * Standard signing is used with encryption.
+   * Clear signing wraps the input with a plaintext signature.
    <br /><br />
 
 1. To sign a plaintext file with your secret key:
 
    <pre><strong>gpg -s textfile</strong></pre>
-  
+
 1. To encrypt a plain text file with the user_id of the recipient's public key:
 
    <pre><strong>gpg -e -r recipient_userid textfile</strong></pre>
@@ -1823,7 +1828,7 @@ It's up to you to make sure you’re actually talking to the intended person.
 1. Check box "Use this public key to encrypt notification emails that Facebook sends you".
 1. Click "Save Changes".
 1. In your email program, decrypt the email from Facebook and click the link.
-<br /><br /> 
+<br /><br />
 
 
 <hr />
@@ -1832,7 +1837,7 @@ It's up to you to make sure you’re actually talking to the intended person.
 
 ## Encrypt emails in transit
 
-There are two ways to encrypt emails in transit using asymetric keys: 
+There are two ways to encrypt emails in transit using asymetric keys:
 S/MIME and <a href="#TLSEmail">TLS</a>.
 
 <a target="_blank" href="https://security.stackexchange.com/questions/260895/securing-email-use-gpg-for-all-emails/260901#260901?newreg=59936a42d2a1443fa7f03588cc26fd8f">CAUTION</a>: If you use Google's native Gmail client, since Google does the encryption using your key, Google (and law enforcement) always has access to your clear text body data.
@@ -1845,47 +1850,47 @@ CAUTION: The downside of encrypting Body data is that Google will not apply its 
 
 1. If you're not the Workspace Administrator, ask for <a target="_blank" href="https://support.google.com/mail/answer/6330403">S/MIME to be enabled</a>.
 
-1. Using a Workspace Admin email address, 
+1. Using a Workspace Admin email address,
 
    <a target="_blank" href="https://admin.google.com/ac/apps/gmail/usersettings">
    https://admin.google.com/ac/apps/gmail/usersettings</a>
 
-   Alternately, sign in to your Google Workspace admin dashboard:   
+   Alternately, sign in to your Google Workspace admin dashboard:
    <a target="_blank" href="https://admin.google.com/">https://admin.google.com</a>
 
    Then click the "sandwich" icon for the menu and select <strong>Apps</strong> > Google Workspace > Gmail > User Settings.
 
 1. Accept the terms of service if that comes up.
 
-1. Change the "Enable S/MIME encryption" for sending and receiving emails option. 
+1. Change the "Enable S/MIME encryption" for sending and receiving emails option.
 
-   Here is where I'm personally stuck because I don't see the options shown in 
+   Here is where I'm personally stuck because I don't see the options shown in
    <a target="_blank" href="https://www.computerworld.com/article/3322497/gmail-encryption.html" title="Nov 24, 2020 Gmail encryption: Everything you need to know">this Computerworld article</a>:
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1662229106/gmail-smime-menu-734x152_ekzyjq.jpg"><img alt="Google Gmail SMIME menu choice" width="734" height="152" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1662229106/gmail-smime-menu-734x152_ekzyjq.jpg"></a>
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1662229117/gmail-smime-config-784x690_qclzdg.jpg"><img alt="Google Gmail SMIME menu choice" width="784" height="690" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1662229117/gmail-smime-config-784x690_qclzdg.jpgg"></a>
 
-   S/MIME makes use of digital signatures to confirm that the sender's email address was actually the email address used to send it. 
-   
-1. Obtain your email's S/MIME certificate from a Certificate Authority (CA). 
+   S/MIME makes use of digital signatures to confirm that the sender's email address was actually the email address used to send it.
+
+1. Obtain your email's S/MIME certificate from a Certificate Authority (CA).
 
    Italian CA <a target="_blank" href="https://www.actalis.it/en/certificates-for-secure-electronic-mail.aspx">Actalis.it</a> provides them <a target="_blank" href="https://extrassl.actalis.it/portal/uapub/freemail?lang=en">free of charge</a> based on just your email (valid for 1 year).
- 
+
     1. Copy the verification code from the email to paste on their web page.
     1. Copy the password on their web page and save in your 1Password or other secret vault.
     1. Open the email to save the SMIME key and your Private Personal Code (CRP).
 
     1. Save that verification code, password, and Private Personal Code in your 1Password
-    1. Delete the email.    
+    1. Delete the email.
     <br /><br />
 
-   Certificate authorities provide S/MIME certificate bundles either as a PKCS #12 file (.p12 or .pfx) if they generated the certificate for you or as a PKCS #7 (.p7b) file if you created the private key on your own computer and submitted a Certificate Signing Request (CSR) to the CA. 
+   Certificate authorities provide S/MIME certificate bundles either as a PKCS #12 file (.p12 or .pfx) if they generated the certificate for you or as a PKCS #7 (.p7b) file if you created the private key on your own computer and submitted a Certificate Signing Request (CSR) to the CA.
 
     CAUTION: Can you trust Actalis.it to keep you certs secret? I don't know.
 
-1. Rules can be set up to require outgoing messages be sent with S/MIME (Secure/Multipurpose Internet Mail Extensions) for encryption. 
-   
+1. Rules can be set up to require outgoing messages be sent with S/MIME (Secure/Multipurpose Internet Mail Extensions) for encryption.
+
    "Verified" email address indicates that the associated email address is validated by a digital signature.
 
 
@@ -1901,12 +1906,12 @@ Don’t expect Google to set up site-wide end-to-end encryption, however. For Go
 1. To the right of the <strong>Subject:</strong>, a lock icon shows the level of encryption supported by your message's recipients. If there are multiple users with various encryption levels, the icon will show the lowest encryption status:
 
    * <img src="https://lh3.googleusercontent.com/WmzEOw364ngqLin-wCJv3HD08VRBhfjXKHy5QdOU0MHjvn_HFLocO85chSI3-9usUbU=w36-h36"> Green (S/MIME enhanced encryption) Encryption on. Suitable for your most sensitive information. S/MIME encrypts all outgoing messages if we have the recipient's public key. Only the recipient with the corresponding private key can decrypt this message.
-   
-   * Gray = "standard" TLS (Transport Layer Security) used for messages exchanged with other email services who don't support S/MIME. Encryption using TLS ensures that no third party can overhear or tamper with messages When a server and client communicate. For delivery TLS to work, the email delivery services of both the sender and the receiver always have to use TLS. That’s like why we send important messages in sealed envelopes rather than on the back of postcards. Tip: TLS support is not guaranteed. Support is inferred from past communications with the email service. 
-   
+
+   * Gray = "standard" TLS (Transport Layer Security) used for messages exchanged with other email services who don't support S/MIME. Encryption using TLS ensures that no third party can overhear or tamper with messages When a server and client communicate. For delivery TLS to work, the email delivery services of both the sender and the receiver always have to use TLS. That’s like why we send important messages in sealed envelopes rather than on the back of postcards. Tip: TLS support is not guaranteed. Support is inferred from past communications with the email service.
+
    * <img src="https://lh3.googleusercontent.com/WmzEOw364ngqLin-wCJv3HD08VRBhfjXKHy5QdOU0MHjvn_HFLocO85chSI3-9usUbU=w36-h36"> Red (no encryption) No encryption. That mail is not secure. Past messages sent to the recipient's domain are used to predict whether the message you're sending won't be reliably encrypted.
-   
-1. Click "View Details" 
+
+1. Click "View Details"
 1. Remove addressees or delete confidential information for emails marked red.
 
 1. To change your S/MIME settings or learn more about your recipient's level of encryption, click the lock, then View details.

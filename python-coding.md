@@ -200,54 +200,66 @@ However, Condon cannot use modules like typing functools such as <a target="_bla
 
 ## Reserved Keywords
 
+<a target="_blank" href="https://www.youtube.com/watch?v=rKk8XPLysj8">VIDEO</a>:
 Listed alphabetically below is the lexis of words Python has reserved for itself, so they can't be used as custom variables.
 
 PROTIP: Research and find out what each is about:
 
-*	and
-*	as
-*	<a href="#assert">assert</a>
-*	async
-*	await
-*	break - force escape from for/while loop
-*	class
-*	continue - force loop again next iteration
-*	def - define a custom function
-*	del - <tt>del list1[2]</tt> # delete 3rd list item, starting from 0.
-*	elif - else if
-*	else
-*	except
-*	False - boolean
-*	finally - of a try
-*	for = iterate through a loop
-*	from
-*	global = defines a variable global in scope
-*	if
-*	import = make the specified package available
-*	in
-*	is
-*	lambda - if/then/else in one line
-*	<a href="#None">None</a>
-*	nonlocal
-*	not
-*	or
-*	pass - (as in the game Bridge) instruction to do nothing (instead of return or yield with value)
-* raise - <tt>raise NotImplementedError()</tt> throws an exception purposely
-*	return
-*	True - Boolean
-*	try - [VIDEO](https://www.youtube.com/watch?v=NIWwJbo-9_8)
-*	while
-*	<a href="#with">with</a>
-*	yield - resumes after returning a value back to the caller to produce a series of values over time.
+1. and
+1. as
+1. <a href="#assert">assert</a>
+1. async
+1. await
+1. break - force escape from for/while loop
+1. class
+1. continue - force loop again next iteration
+1. def - define a custom function
+1. del - <tt>del list1[2]</tt> # delete 3rd list item, starting from 0.
+1. elif - else if
+1. else
+1. except
+1. False - boolean
+1. finally - of a try
+1. for = iterate through a loop
+1. from
+1. global = defines a variable global in scope
+1. if
+1. import = make the specified package available
+1. in
+1. is
+1. lambda - if/then/else in one line
+1. <a href="#None">None</a>
+1. nonlocal
+1. not
+1. or
+1. pass - (as in the game Bridge) instruction to do nothing (instead of return or yield with value)
+1. raise - <tt>raise NotImplementedError()</tt> throws an exception purposely
+1. return
+1. True - Boolean
+1. try - [VIDEO](https://www.youtube.com/watch?v=NIWwJbo-9_8)
+1. while
+1. <a href="#with">with</a>
+1. yield - resumes after returning a value back to the caller to produce a series of values over time.
 <br /><br />
 
 The list above can be retrieved (as an array) by this code after typing <tt>python</tt> for the REPL (Read Evaluate Print Loop) interactive prompt:
 
-<pre>python
->>> import keyword
->>> keyword.kwlist
->>> exit()
-</pre>
+```python
+from keyword import kwlist, softkwlist
+def display_keywords() -> None: 1usage
+    print('Keywords:')  # not alphabetically
+    for i, kw in enumerage(kwlist, start=1):
+        print(f'{i:2}: {kw})
+    print('Software keywords')
+    for i, skw in enumerate(softwlist, start=1):
+        print(f'{i:2}: {skw}')
+
+def main() -> None: 1usage
+    display_keywords()
+
+if __name__ == '__main__':
+    main()
+```
 
 Press control+D to exit anytime.
 
@@ -342,6 +354,33 @@ PROTIP: Don't just print out the value. Include the variable name:
 print("var1=",var1)
 ```
 
+<a target="_blank" href="https://www.youtube.com/watch?v=EoNOWVYKyo0">VIDEO</a> from idently.co:
+Underlines in numbers are ignored by Python:
+```
+n: int = 1_000_000_000
+```
+Specify command separator:
+```
+num: float = 1_000_000_000.342
+print(f'{num:_.3f}')
+```
+
+Right-align 20 spaces:
+```
+print(f'{var:>20}')
+```
+Center align within 20 | characters with the cap character:
+```
+print(f'{var:|^0}:')
+```
+The : character at the end of the string is a pass-through.
+
+A colon after a variable begins a formatting specification:
+```
+from datetime import datetime
+now: datetime = datetime.now()
+print(f'{now:%d.%m.%y(%H:%M:%D)})
+```
 
 
 <a name="None"></a>
@@ -2175,6 +2214,24 @@ Videos from <a target="_blank" href="https://cs50.harvard.edu/python/2022/">15h4
 
 FREE: 2h57m by <a target="_blank" href="https://www.linkedin.com/in/joseph-perry-a5127914a/">Joe Perry</a>
 https://app.cybrary.it/browse/course/python
+
+
+## Project STEM
+
+Python
+<br />Unit 0: Welcome
+<br />Unit 1: Beginning in Computer Science
+<br />Unit 2: Number Calculations and Data
+<br />Unit 3: Making Decisions
+<br />Unit 4: Repetition and Loops
+<br />Unit 5: Programming in EarSketch
+<br />Unit 6: Graphics
+<br />Unit 7: Functions
+<br />Unit 8: Lists
+<br />Unit 9: 2D Lists
+<br />Unit 10: Programming in EarSketch
+<br />Unit 11: Internet
+<br />Unit 12: Dictionaries (Extension)
 
 
 ## More about Python

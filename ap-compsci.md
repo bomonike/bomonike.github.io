@@ -287,11 +287,11 @@ Computer Science Education Week in early December.
 
 We <strong>analyze</strong> each technology based on the <a href="#BigIdeas">"Five Big Ideas"</a> covered/tested in the AP CSP curriculum and exam:
 
-   * 10-13% <a href="#CreativeDevelopment">Big Idea 1: Creative Development</a>
-   * 17-22% <a href="#DataAnalysis">Big Idea 2: Data & Analysis</a>
-   * 30-35% <a href="#Algorithms">Big Idea 3: Algorithms and Programming</a>
-   * 11-15% <a href="#SystemsNetworks">Big Idea 4: Computer Systems and Networks</a>
-   * 21-26% <a href="#ImpactComputing">Big Idea 5: Impact of Computing</a>
+   * 10-13% <a href="#CreativeDevelopment">Big Idea 1: Creative Development</a> [BI-CD] (collaboration, software development process)
+   * 17-22% <a href="#DataAnalysis">Big Idea 2: Data & Analysis</a> [BI-Data] (binary, compression, spreadsheets, etc.)
+   * 30-35% <a href="#Algorithms">Big Idea 3: Algorithms and Programming</a> [BI-Algo] (procedural programming, binary search)
+   * 11-15% <a href="#SystemsNetworks">Big Idea 4: Computer Systems and Networks</a> [BI-CSN] (systems, networking)
+   * 21-26% <a href="#ImpactComputing">Big Idea 5: Impact of Computing</a> [BI-Impact] (digital divide, bias, crowdsourcing, copyright, information security)
    <br /><br />
 
 <a target="_blank" href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-conceptual-framework-2020-21.pdf">Computational Thinking practices PDF</a>:
@@ -1100,7 +1100,7 @@ Variables:
 *	03+	Create programs that use variables to store and modify data.	1B-AP-09
 *	06+	Create clearly named variables that represent different data types and perform operations on their values.	2-AP-11
 *	09+	Use lists to simplify solutions, generalizing computational problems instead of repeatedly using simple variables.	3A-AP-14
-*	11+	Compare and contrast fundamental data structures and their uses.	3B-AP-12
+*	11+	Compare and contrast fundamental data structures and their uses.	ç
 
 Montana:
 
@@ -1189,7 +1189,7 @@ Montana:
 *	00+	Keep login information private, and log off of devices appropriately.	1A-IC-18
 *	03+	Use public domain or creative commons media, and refrain from copying or using material created by others without permission.	1B-IC-21
 *	06+	Describe tradeoffs between allowing information to be public and keeping information private and secure.	2-IC-23
-*	09+	Evaluate the social and economic implications of privacy in the context of safety, law, or ethics.	3A-IC-30
+*	09+	Evaluate the social and economic implications of privacy in the context of safety, law, or ethics. 3A-IC-30
 *	09+	Explain the beneficial and harmful effects that intellectual property laws can have on innovation.	3A-IC-28
 *	09+	Explain the privacy concerns related to the collection and generation of data through automated processes that may not be evident to users.	3A-IC-29
 *	11+	Debate laws and regulations that impact the development and use of software.	3B-IC-28
@@ -1537,6 +1537,9 @@ archived by <a target="_blank" href="https://www.linkedin.com/in/phil-sands-5087
 
 The College Board recognizes several organizations providing curriculum materials, LMS (Learning Management System), auto-graders, and teacher professional development.
 
+https://www.csforall.org/projects_and_programs/curriculum_directory/
+lists curriculum.
+
 Stand-outs are:
 
 * https://code.org - the one I'm using
@@ -1690,6 +1693,24 @@ many of the AP STEM subjects. Courses related to computer science:
 <br /><br />
 
 * <a target="_blank" href="https://www.khanacademy.org/computing/computer-science">Computer Science theory</a> (Algorithms, Cryptography, Information theory).
+
+
+## ProjectSTEM
+
+The ProjectStem offering is developed by the University of Texas at Auston who are
+funded by <a target="_blank" href="https://www.amazonfutureengineer.com/">Amazon's Future Engineer (AFE) program</a> also sponsored by Amazon, Booz Alan Hamilton, Crowdstrike.
+
+NOTE: The University of Austin also sponsors the https://cias.utsa.edu/k-12/
+
+<a target="_blank" href="https://files.projectstem.org/CSP/CSP_Teacher_Resources/AP_Computer_Science_Principles_Syllabus_and_Planning_Guide.pdf">Syllabus PDF</a> converted to Word .docx format using <a target="_blank" href="https://www.adobe.com/acrobat/online/pdf-to-word.html">Adobe online</a>.
+
+There is a video for each of __ modules, all presented by one person, a teacher who uses language appropriate at the high school level.
+
+So we supplement the curriculum with videos presented by industry professionals expert celebrities in specific subjects.
+
+https://www.awseducate.com/registration/s/learner-faqs?language=en_US#courses-labs
+
+
 
 ### IBM Lightboards
 
@@ -1938,3 +1959,4 @@ https://feedbackfruits.com/ai-chatgpt-resources-hub
 * Linux separates configuration strings using colons (:) rather than semicolons.
 * Don't use the same password on multiple accounts - use password manager.
 
+* <a target="_blank" href="https://curiositystream.com/video/1643">Making money in the 21st century</a>

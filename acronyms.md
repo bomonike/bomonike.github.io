@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-27"
+date: "2024-08-03"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -271,6 +271,7 @@ comments: true
 *	CPIC	=	Capital Planning Investment Controls
 *	CPS	=	Customer Profitability Score
 * CPRA = California Privacy Rights Act
+* CRDT = Conflict-free Replicated Data Type (for local-first multi-user systems)
 *	CPSM	=	Cloud Security Posture Management
 * CPE = Common Platform Enumeration (see <a target="_blank" href="https://en.wikipedia.org/wiki/Common_Platform_Enumeration">Wikipedia</a>)
 *	CPU	=	Central Processing Unit
