@@ -214,6 +214,7 @@ By the end of this course, the learner would be able to (by following step-by-st
 1. Obtain free accounts to use clouds.
 1. Setup user account permissions to avoid using too-powerful root credentials.
 1. Install CLI programs to enable shell scripts to automate use of clouds.
+1. <a target="_blank" href="https://mtech.edu/academics/programs/computer-science/index.html">Automate Google Calendar</a>
 
 
    ### <a href="#LowCodeApps">J. Use low-code systems to develop a mobile app</a> - Outsystems?
@@ -1953,6 +1954,18 @@ Practice different ciphers: https://tools.cyber.org/dashboard
 
 https://feedbackfruits.com/ai-chatgpt-resources-hub
 
+## Alignment with state universities
+
+This course Computer Science degrees:
+
+* Montana.edu (Montana Tech in Butte) https://mtech.edu/academics/programs/computer-science/index.html
+* Montana state at Bozeman
+
+Elite universities for computer science in the US:
+* Western Goverors University (where Amazon hires from more than all Ivy League colleges combined)
+* Babson.edu, Wellesley (Boston) MA for entrepreneurial
+* MIT in Boston, which has a lab
+* Carnagie Mellon, Pennsylvania
 
 ## REMEMBER:
 

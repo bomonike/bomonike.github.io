@@ -35,6 +35,10 @@ This is the last in my series of articles about Python:
 
 {% include whatever.html %}
 
+## Summary
+
+<a target="_blank" href="https://www.youtube.com/watch?v=x7X9w_GIm1s">VIDEO</a>: Python in 100 seconds:
+
 
 ## Setup an IDE
 
@@ -58,6 +62,8 @@ See key/value pairs without typing <tt>print</tt> statements in code, like an Xr
 
 
 ### Python Code Scans
+
+mypy
 
 Static Application Security Testing (SAST) looks for weaknesses in code and vulnerable packages.
 
@@ -228,7 +234,7 @@ PROTIP: Research and find out what each is about:
 1. in
 1. is
 1. lambda - if/then/else in one line
-1. <a href="#None">None</a>
+1. <a href="#None">None</a> - absence of value.
 1. nonlocal
 1. not
 1. or
@@ -260,6 +266,13 @@ def main() -> None: 1usage
 if __name__ == '__main__':
     main()
 ```
+
+Soft keywords:
+1. _  (magic)
+1. cate
+1. match
+1. type  (added by Python 3.12)
+
 
 Press control+D to exit anytime.
 
@@ -2233,6 +2246,14 @@ Python
 <br />Unit 11: Internet
 <br />Unit 12: Dictionaries (Extension)
 
+
+https://www.youtube.com/watch?v=8wysIxzqgPI
+neetcodeio
+
+https://www.youtube.com/watch?v=UFc-RPbq8kg
+Problem Solving for Developers - A Beginner's Guide
+
+jointaro.com/r/neetcode
 
 ## More about Python
 
