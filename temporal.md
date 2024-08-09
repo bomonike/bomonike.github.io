@@ -22,12 +22,6 @@ Temporal does not concern itself with containers but REST/RPC services of any ki
 Temporal is open-sourced under MIT licensing at
 <a target="_blank" href="https://github.com/temporalio/temporal">https://github.com/temporalio/temporal</a>
 
-Temporal makes money by providing a managed AWS cloud service (through AWS PrivateLink networking) at <a target="_blank" href="https://temporal.io/cloud/">https://temporal.io/cloud</a> (documentation at <a target="_blank" href="https://docs.temporal.io/cloud">https://docs.temporal.io/cloud</a>) <a target="_blank" href="https://www.youtube.com/watch?v=MF6axzFZg7o">VIDEO</a>: building it.
-
-   * Sign up to work in the Google or Microsoft Azure cloud with $1,000.00 Credits.
-   * After 90 days, there is a $200 monthly fee plus $25 per million Actions per month, pay as you go.
-
-https://docs.temporal.io/self-hosted-guide
 
 ## Temporal people
 
@@ -38,30 +32,42 @@ such as CTO <a target="_blank" href="https://www.linkedin.com/in/samar-abbas-381
 
 Head of Product is <a target="_blank" href="https://www.linkedin.com/in/ryland-goldstein-3467b710a/">Ryland Goldstein</a>.
 
+## Customers
+
 <a target="_blank" href="https://www.youtube.com/watch?v=2HjnQlnA5eY">VIDEO: "Temporal in 7 Minutes - the TL;DR  Intro"</a> (in 2022) mentions that Netflix uses Temporal for its Spinniker product.
 Other users are Stripe, Snap, etc. Customer presentations at Temporal's 2023 conference include
 <a target="_blank" href="https://www.youtube.com/watch?v=3ybR_6dHkWM&list=PLl9kRkvFJrlREHL7fiEKBWTp5QuFeYS2r&index=5&pp=iAQB">JPMC</a>, <a target="_blank" href="https://www.youtube.com/watch?v=St5nSSZScHg&list=PLl9kRkvFJrlREHL7fiEKBWTp5QuFeYS2r&index=3&pp=iAQB">Yum! Brands</a>, <a target="_blank" href="https://www.youtube.com/watch?v=vRfbu5WFTDA&list=PLl9kRkvFJrlREHL7fiEKBWTp5QuFeYS2r&index=7&pp=iAQB">Twilio</a>, <a target="_blank" href="https://www.youtube.com/watch?v=vRfbu5WFTDA&list=PLl9kRkvFJrlREHL7fiEKBWTp5QuFeYS2r&index=7&pp=iAQB">HashiCorp</a>, <a target="_blank" href="https://www.youtube.com/watch?v=Nm35-TVp8kY&list=PLl9kRkvFJrlREHL7fiEKBWTp5QuFeYS2r&index=17&pp=iAQB">Instacart</a>.
 <a target="_blank" href="https://www.youtube.com/watch?v=QDKhrfxg3yw">VIDEO</a>: DataDog is "one of the most aggressive users of Temporal".
 
-<a target="_blank" href="https://www.youtube.com/watch?v=2HjnQlnA5eY&t=1m46s">VIDEO:<br />
-<img width="935" alt="temporal-arch-935x713.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1723146777/temporal-arch-935x713_ulx8qp.png"></a>
+## Cloud costs
 
-1. Apps send commands
-1. Queries
-1. The Temporal Platform State Machines, Timers, Database, gRPC Gateway, Queues, Transactions
-1. Temporal Workers
+Temporal makes money by providing a managed AWS cloud service (through AWS PrivateLink networking from <a target="_blank" href="https://docs.temporal.io/cloud/service-availability">12+ regions</a>) at <a target="_blank" href="https://temporal.io/cloud/">https://temporal.io/cloud</a> (documentation at <a target="_blank" href="https://docs.temporal.io/cloud">https://docs.temporal.io/cloud</a>) <a target="_blank" href="https://www.youtube.com/watch?v=MF6axzFZg7o">VIDEO</a>: building it.
 
-   * <a target="_blank" href="https://www.youtube.com/watch?v=b31gqZCLFTA&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=21&pp=iAQB">Cloud Security</a>
+   * Sign up to work in the Google or Microsoft Azure cloud with $1,000 Credits.
+   * $0.042/GBhr is charged for Active Storage is the Event History size of running Workflows
+   * $0.00042/GBhr is charged for Retained Storage is the size of closed Workflows during their retention period.
 
-   * <a target="_blank" href="https://www.youtube.com/watch?v=cah5DWnY8t8&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=18&pp=iAQB">Observability to Tuning Workers</a>
-   <br /><br />
+   * After 90 days, there is a <strong>$200 monthly fee</strong> ($2,000 for premium support) plus pay as you go fees of $25 per million <a href="#Actions">Actions</a> per month. <a target="_blank" href="https://www.youtube.com/watch?v=Uu11alfVdTU&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=7&pp=iAQB">VIDEO</a>: An Action is the fundamental pricing unit in Temporal Cloud.
+   * Additional discounts are offered up to 70% with higher volume usage and credits purchase. See https://docs.temporal.io/cloud/pricing
 
-## Observe
+Billing can be <a target="_blank" href="https://aws.amazon.com/marketplace/pp/prodview-hbcjz7wcl2mvu?sr=0-2&ref_=beagle&applicationId=AWSMPContessa">AWS Marketplace</a>
 
-Temporal Platform has built-in Visibility APIs to view the status and get the state of a Workflow Execution at any time, as well as metric endpoints to monitor the health of the platform.
+https://docs.temporal.io/self-hosted-guide
 
-Unlike <a target="_blank" href="https://wilsonmar.github.io/airflow/">Apache Airflow</a>, which also offers <strong>Workflow as Code</strong>, Temporal doesn't run code but works as external observers. Also Temporal is multi-language while Airflow is Python only.
+## Latency
 
+The Temporal Platform has built-in Visibility APIs to view the status and get the state of a Workflow Execution at any time, as well as metric endpoints to monitor the health of the platform.
+
+<a target="_blank" href="https://docs.temporal.io/cloud/service-availability#latency">
+"Temporal Cloud has a p99 latency SLO of 200ms per region."</a>
+
+Temporal reports that, over a week-long period In March 2024, p90 and p99 latancy for starting and signaling Workflow Executions for specific Operations:
+    * StartWorkflowExecution	24ms	54ms
+    * SignalWorkflowExecution	14ms	40ms
+    * SignalWithStartWorkflowExecution	24ms	61ms
+
+
+## Glossary of Terms
 
 https://docs.temporal.io/glossary defines terms such as:
     Activity Definition,
@@ -82,6 +88,56 @@ https://docs.temporal.io/glossary defines terms such as:
     Workflow Id Reuse Policy,
     Workflow Type
 
+Temporal provides tutorial https://learn.temporal.io/getting_started/go/first_program_in_go/
+to explore core terminology and concepts.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=2HjnQlnA5eY&t=5m43s">VIDEO</a>
+<img width="935" alt="temporal-svcs-986x818.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1723147127/temporal-svcs-986x818_q3rdx6.png"></a>
+
+Unlike <a target="_blank" href="https://wilsonmar.github.io/airflow/">Apache Airflow</a>, which also offers <strong>Workflow as Code</strong>, Temporal doesn't run code but works as external observers. Also Temporal is multi-language while Airflow is Python only.
+
+
+## Socials
+
+* <a target="_blank" href="https://learn.temporal.io/assets/files/zines-6425991d04e05e05031aa2b4a2ccddf4.pdf">Zines</a> comics to introduce Durable Execution, What Happens If An External Service Goes Down?, and How Does The Event History Guarantee Durable Execution?
+* <a target="_blank" href="https://temporal.io/how-temporal-works/">How Temporal Works</a>
+* <a target="_blank" href="https://www.youtube.com/@Temporalio">YouTube channel</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=pfArIYRVsbo&list=PLl9kRkvFJrlREHL7fiEKBWTp5QuFeYS2r">videos</a> from "Replay": Temporal's 3-day annual conference
+
+* <a target="_blank" href="https://temporal.io/blog">Blog</a>
+* <a target="_blank" href="https://docs.temporal.io/">Docs</a>
+* <a target="_blank" href="https://learn.temporal.io/courses">courses</a> using GitHub online
+   * Temporal 101
+   * Temporal 102: Exploring Durable Execution
+   * Versioning
+   * Interacting with Workflows (search attributes, cancel workflow, Async Complete)
+   * Securing Application Data
+   * Introduction to Temporal Cloud
+
+* <a target="_blank" href="https://www.glassdoor.com/Overview/Working-at-Temporal-WA-EI_IE6755876.11,22.htm">Glassdoor</a>
+* <a target="_blank" href="https://www.indeed.com/cmp/Temporal-Technologies">Indeed</a> has no ratings.
+* LinkedIn
+
+* <a target="_blank" href="https://temporal.io/slack/">Slack</a>
+* <a target="_blank" href="https://community.temporal.io/">Support forum</a>
+* Discord community <a target="_blank" href="https://www.youtube.com/watch?v=MN30Xqk-Qxk">VIDEO</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=fcHEti0Doh8">VIDEO: Summer Camp</a>
+
+* <a target="_blank" href="https://replay.temporal.io/">Replay conf. Seattle East Hyatt Regency Bellevue Sep 18-20, 2024</a> $350 + $100 workshops  (Promo: WEBINAR20) - <a target="_blank" href="https://replay2024.sched.com/">Schedule</a>
+
+## Architecture
+
+<a target="_blank" href="https://www.youtube.com/watch?v=2HjnQlnA5eY&t=1m46s">VIDEO:<br />
+<img width="935" alt="temporal-arch-935x713.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1723146777/temporal-arch-935x713_ulx8qp.png"></a>
+
+1. Apps send commands
+1. Queries
+1. The Temporal Platform State Machines, Timers, Database, gRPC Gateway, Queues, Transactions
+1. Temporal Workers
+
+The Temporal Platform consists of a Temporal Service and Worker Processes.
+
 
 Temporal uses "durable execution" abstraction to specify orchestration while airflow uses DAG. As durable execution is just code in a top level programming language it is much more powerful, user friendly and supports many more use cases than any DAG based system. BTW you can implement Airflow DAG on top of Temporal if needed. There are dozens of DSLs already implemented on top of it. Also Temporal scales many orders of magnitude better than Airflow.
 
@@ -89,15 +145,23 @@ Temporal makes use of open-source observability platforms <a target="_blank" hre
 Temporal senses and logs delays, back-pressure, failures, retries, time-outs, etc.
 into an <strong>Elastic database</strong>.
 
-Temporal provides tutorial https://learn.temporal.io/getting_started/go/first_program_in_go/
-to explore core terminology and concepts.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=b31gqZCLFTA&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=21&pp=iAQB">Cloud Security</a>
 
-<a target="_blank" href="https://www.youtube.com/watch?v=2HjnQlnA5eY&t=5m43s">VIDEO</a>
-<img width="935" alt="temporal-svcs-986x818.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1723147127/temporal-svcs-986x818_q3rdx6.png"></a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=cah5DWnY8t8&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=18&pp=iAQB">Observability to Tuning Workers</a>
+   <br /><br />
 
-The Temporal Platform consists of a Temporal Service and Worker Processes.
+Temporal Clients communicate with a Temporal Service using a language-specific Temporal SDK library that offers APIs
 
-A Temporal SDK is a language-specific library that offers APIs to construct and use a Temporal Client to communicate with a Temporal Service, develop Workflow Definitions, and develop Worker Programs.
+construct and use a ??? develop Workflow Definitions, and develop Worker Programs.
+
+<img alt="temporal-work-svc.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1723226028/temporal-work-svc_khvlpu.png"></a>
+
+
+### Saga Pattern
+
+A very unique feature of the Temporal Platform is that its Timers support business processes that could <strong>span decades</strong>.
+
+<img alt="temporal-saga.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1723226057/temporal-saga_ozq0v2.png"></a>
 
 
 The project mimics a "money transfer" application with a single <strong>Workflow function</strong> orchestrating the execution of Withdraw() and Deposit() functions. Temporal calls these functions <strong>Activity</strong> functions.
@@ -115,10 +179,6 @@ Each ping informs the Temporal Service that the Activity Execution is making pro
 The Temporal Server is a grouping of four horizontally scalable services.
 
 Archival is a feature specific to a Self-hosted Temporal Service that automatically backs up Event Histories from Temporal Service persistence to a custom blob store after the Closed Workflow Execution retention period is reached.
-
-Costs: <a target="_blank" href="https://www.youtube.com/watch?v=Uu11alfVdTU&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=7&pp=iAQB">VIDEO</a>:
-An Action is the fundamental pricing unit in Temporal Cloud.
-
 
 To start the money transfer, a message is sent to the Temporal Cluster.
    * https://docs.temporal.io/references/configuration
@@ -166,7 +226,9 @@ Temporal SDKs (as <a target="_blank" href="https://www.youtube.com/watch?v=JQ6FR
 
    https://learn.temporal.io/getting_started/java/
 
-1. The Python example:
+   https://github.com/tsurdilo/temporal-java-workshop
+
+1. The Python example: https://www.youtube.com/watch?v=jxqPWS_LRzw&t=1166s&pp=ygUMVGVtcG9yYWwgMTAx
 
    https://learn.temporal.io/getting_started/python/
 
@@ -200,26 +262,6 @@ A multi-region Namespace (MRN) is a Temporal Cloud Namespace that is configured 
 Multi-Cluster Replication asynchronously replicates Workflow Executions from active Clusters to other passive Clusters, for backup and state reconstruction.
 
 
-
-
-## Socials
-
-* <a target="_blank" href="https://learn.temporal.io/assets/files/zines-6425991d04e05e05031aa2b4a2ccddf4.pdf">Zines</a> comics to introduce Durable Execution, What Happens If An External Service Goes Down?, and How Does The Event History Guarantee Durable Execution?
-* <a target="_blank" href="https://temporal.io/how-temporal-works/">How Temporal Works</a>
-* <a target="_blank" href="https://www.youtube.com/@Temporalio">YouTube channel</a>
-* <a target="_blank" href="https://www.youtube.com/watch?v=pfArIYRVsbo&list=PLl9kRkvFJrlREHL7fiEKBWTp5QuFeYS2r">videos</a> from "Replay": Temporal's 3-day annual conference
-
-* <a target="_blank" href="https://temporal.io/blog">Blog</a>
-* <a target="_blank" href="https://docs.temporal.io/">Docs</a>
-* <a target="_blank" href="https://learn.temporal.io/courses">courses</a>
-
-* <a target="_blank" href="https://www.glassdoor.com/Overview/Working-at-Temporal-WA-EI_IE6755876.11,22.htm">Glassdoor</a>
-* <a target="_blank" href="https://www.indeed.com/cmp/Temporal-Technologies">Indeed</a> has no ratings.
-* LinkedIn
-
-* <a target="_blank" href="https://temporal.io/slack/">Slack</a>
-* <a target="_blank" href="https://community.temporal.io/">Support forum</a>
-* Discord community <a target="_blank" href="https://www.youtube.com/watch?v=MN30Xqk-Qxk">VIDEO</a>
 
 
 ## Demo
@@ -256,13 +298,18 @@ Temporal was developed using <a target="_blank" href="https://wilsonmar.github.i
    a long-running <a target="_blank" href="https://www.youtube.com/watch?v=XnlZyW0xkGU&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=17&pp=iAQB">human-driven</a> workflow, described in <a target="_blank" href="https://www.youtube.com/watch?v=-YYtRwArSQM">VIDEO</a>: Learning Paths
 
 
-## Chron Timers
-
-A very unique feature of the Temporal Platform is thit it can support business processes that could <strong>span decades</strong>.
-
 ## Debugging
 
 Temporal has built-in debugging and troubleshooting tools, such as “replays” that allow developers to step through an execution to see what happened.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=3IjQde9HMNY&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=22&pp=iAQB">VIDEO</a>: Debug with the Temporal VS Code extension
 
+
+## Workflow Diagram Service
+
+Give it SW JSON/YAML, get back diagram SVG. By Tihomir Surdilovic.
+https://github.com/tsurdilo/workflow-diagram-service
+
+https://github.com/tsurdilo/my-temporal-dockercompose
+
+https://github.com/tsurdilo/temporal-patient-onboarding

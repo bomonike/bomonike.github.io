@@ -773,6 +773,8 @@ Techniques for calculation of <strong>nested loops</strong> is often used to sho
 
    <ul><pre>fib(5) = fib(4) + fib(3)</pre></ul>
 
+Fibonacci has the highest BigO because it uses recursive execution with Python generators. <a target="_blank" href="https://www.youtube.com/watch?v=1OSEzdOpmWQ">VIDEO</a>
+
 Memoization  (sounds  like  memorization)  is  the  technique of  writing  a  function  that  remembers  the  results  of  previous computations.
 
 Longest Increasing Subsequence (LIS)
@@ -2250,7 +2252,7 @@ Python
 https://www.youtube.com/watch?v=8wysIxzqgPI
 neetcodeio
 
-https://www.youtube.com/watch?v=UFc-RPbq8kg
+c
 Problem Solving for Developers - A Beginner's Guide
 
 jointaro.com/r/neetcode
