@@ -106,7 +106,7 @@ Unlike <a target="_blank" href="https://wilsonmar.github.io/airflow/">Apache Air
 
 * <a target="_blank" href="https://temporal.io/blog">Blog</a>
 * <a target="_blank" href="https://docs.temporal.io/">Docs</a>
-* <a target="_blank" href="https://learn.temporal.io/courses">courses</a> using GitHub online
+* <a target="_blank" href="https://learn.temporal.io/courses">courses</a> (requires login) uses GitHub online
    * Temporal 101
    * Temporal 102: Exploring Durable Execution
    * Versioning
@@ -137,7 +137,6 @@ Unlike <a target="_blank" href="https://wilsonmar.github.io/airflow/">Apache Air
 1. Temporal Workers
 
 The Temporal Platform consists of a Temporal Service and Worker Processes.
-
 
 Temporal uses "durable execution" abstraction to specify orchestration while airflow uses DAG. As durable execution is just code in a top level programming language it is much more powerful, user friendly and supports many more use cases than any DAG based system. BTW you can implement Airflow DAG on top of Temporal if needed. There are dozens of DSLs already implemented on top of it. Also Temporal scales many orders of magnitude better than Airflow.
 
