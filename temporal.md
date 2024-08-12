@@ -1,26 +1,38 @@
 workflows.md
 
-Temporal Technologies at <a target="_blank" href="https://www.Temporal.io/">Temporal.io</a>)
-provides a scalable orchestrator that manages application states within distributed mission-critical workflows,
-especially multiple long-running asynchronous services which work together.
+Temporal Technologies (at <a target="_blank" href="https://www.Temporal.io/">Temporal.io</a>)
+provides a scalable "orchestrator" that manages application states within distributed mission-critical workflows,
+especially a set of <strong>long-running asynchronous</stong> services working together.
 
-Temporal's job is to recover each service to a consistent state, so that developers don't need to write code to handle failures in every program in order to <strong>fail gracefully</strong>.
-Unlike Istio for Kubernetes ???
-Developers still need to write for Idempotent execution.
+Temporal's job is to keep each service to a <strong>consistent state</strong>.
 
-PROTIP: See the movie about the UK Postal Service accusing workers of stealing when the problem was the system's failure to properly handle failed transactions.
+Temporal's application state tracking enables automatic retries, <a target="_blank" href="https://www.youtube.com/watch?v=JK7WLK3ZSu8">timeouts</a>, rollbacks due to process failures.
 
-Temporal's application state tracking enables automatic retries, timeouts, rollbacks due to process failures.
-
-A Query is a synchronous operation that is used to report the state of a Workflow Execution.
-
-Temporal and Durable Execution encapsulate most of the complexities of event-driven architecture and allow developers to focus on what matters: business logic.
-
-Unlike <a target="_blank" href="https://wilsonmar.github.io/kubernetes/">Kubernetes</a>,
-Temporal does not concern itself with containers but REST/RPC services of any kind.
+The system is a part of overall efforts toward <a target="_blank" href="https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/a-technology-survival-guide-for-resilience">organizations</a> <a target="_blank" href="https://www.forrester.com/report/assess-your-technology-resilience-maturity/RES179157">assessing their resilience maturity</a>.
 
 Temporal is open-sourced under MIT licensing at
 <a target="_blank" href="https://github.com/temporalio/temporal">https://github.com/temporalio/temporal</a>
+so a self-hosted local environment can be setup locally instead of running
+Temporal Services in the Temporal-managed Temporal Cloud.
+
+Each Temporal Service coordinates the execution of app Workflows and Activities based on a pre-defined map.
+
+Each <strong>Worker</strong> is a wrapper around compiled Workflow and Activity code.
+A Worker's only job is to execute the Activity and Workflow functions and communicate the results back to the Temporal Server.
+
+Temporal is like Istio for Kubernetes, which provides a proxy sidecar to handle communications so app developers don't need to write code in every program to detect and handle failures, and <strong>fail gracefully</strong> from server crashes or network outages. Temporal allows developers to "write code as if failures don't even exist" and focus more on business logic.
+
+PROTIP: See the <a target="_blank" href="https://en.wikipedia.org/wiki/Mr_Bates_vs_The_Post_Office">ITV series</a> (<a target="_blank" href="https://www.pbs.org/wgbh/masterpiece/shows/mr-bates-vs-the-post-office/#">on US PBS</a>) about the UK Postal Service (between 1999 and 2015) wrongly <a target="_blank" href="https://inews.co.uk/news/politics/postmasters-wrongly-convicted-theft-faulty-600000-2625440">sent 900 workers to prison</a> for stealing when the problem was the system's failure to properly handle failed transactions, and the <a target="_blank" href="https://inews.co.uk/news/politics/postmasters-wrongly-convicted-theft-faulty-600000-2625440">government covered it up</a>.
+
+Of course, developers still need to code for <strong>idempotent execution</strong>.
+
+A <strong>Query</strong> is a synchronous operation used to report the state of a Workflow Execution.
+
+Temporal and Durable Execution encapsulate most of the complexities of event-driven architecture.
+This allow developers to focus on what matters: business logic.
+
+Unlike <a target="_blank" href="https://wilsonmar.github.io/kubernetes/">Kubernetes</a>,
+Temporal does not concern itself with containers but with REST/RPC services of any kind (which can be run within a container).
 
 
 ## Temporal people
@@ -54,9 +66,17 @@ Billing can be <a target="_blank" href="https://aws.amazon.com/marketplace/pp/pr
 
 https://docs.temporal.io/self-hosted-guide
 
+## Rate of processing
+
+APS (Actions Per Second) measures how many <strong>high-level operations (Actions)</strong> are performed each second within a Temporal Cloud.
+APS is the basis for throttling Actions such as starting or signaling a Workflow within the limits set for each Namespace.
+
+RPS (Requests Per Second) measures how many <strong>low-level gRPC requests</strong> are issued in the Temporal Service, both in self-hosted Temporal and Temporal Cloud.
+RPS is used to manage rates at the service level, such as the Frontend, History, or Matching Services.
+
 ## Latency
 
-The Temporal Platform has built-in Visibility APIs to view the status and get the state of a Workflow Execution at any time, as well as metric endpoints to monitor the health of the platform.
+The Temporal Platform has built-in Visibility APIs to get the state of a Workflow Execution at any time, as well as metric endpoints to monitor the health of the platform.
 
 <a target="_blank" href="https://docs.temporal.io/cloud/service-availability#latency">
 "Temporal Cloud has a p99 latency SLO of 200ms per region."</a>
@@ -99,6 +119,7 @@ Unlike <a target="_blank" href="https://wilsonmar.github.io/airflow/">Apache Air
 
 ## Socials
 
+* <a target="_blank" href="https://status.temporal.io/">Temporal Cloud status over last 90 days</a> (subscribe to updates)
 * <a target="_blank" href="https://learn.temporal.io/assets/files/zines-6425991d04e05e05031aa2b4a2ccddf4.pdf">Zines</a> comics to introduce Durable Execution, What Happens If An External Service Goes Down?, and How Does The Event History Guarantee Durable Execution?
 * <a target="_blank" href="https://temporal.io/how-temporal-works/">How Temporal Works</a>
 * <a target="_blank" href="https://www.youtube.com/@Temporalio">YouTube channel</a>
@@ -106,8 +127,8 @@ Unlike <a target="_blank" href="https://wilsonmar.github.io/airflow/">Apache Air
 
 * <a target="_blank" href="https://temporal.io/blog">Blog</a>
 * <a target="_blank" href="https://docs.temporal.io/">Docs</a>
-* <a target="_blank" href="https://learn.temporal.io/courses">courses</a> (requires login) uses GitHub online
-   * Temporal 101
+* <a target="_blank" href="https://learn.temporal.io/courses">courses</a> (requires login to separate temporal.talentlms.com) uses <a target="_blank" href="https://gitpod.io/#https://github.com/temporalio/edu-101-go-code">Gitpod</a> with its extension in VSCode online:
+   * Temporal 101 <a target="_blank" href="https://temporal.talentlms.com/catalog/info/id:126">with Go</a> on  temporalio/edu-101-go-code
    * Temporal 102: Exploring Durable Execution
    * Versioning
    * Interacting with Workflows (search attributes, cancel workflow, Async Complete)
@@ -192,13 +213,92 @@ The Temporal Server tracks the progress of Workflow function execution.
 
 Temporal Service configuration is the setup and configuration details of a Temporal Service, defined using YAML.
 
-
-
 A Worker is a wrapper around compiled Workflow and Activity code.
 
 Workers only execute the Activity and Workflow functions and communicate the results back to the Temporal Server.
 
-### Temporal SDKs
+## Install CLI
+
+PROTIP: Don't install static versions of programs by using download links such as:
+    * https://temporal.download/cli/archive/v0.11.0?platform=darwin&arch=arm64<br />for Intel Macs (with AMD processors)
+    * https://temporal.download/cli/archive/v0.11.0?platform=darwin&arch=amd64<br />for Apple Silicon Macs (with ARM processors)
+It's because we want a easy way to update to the latest version with the latest security patches.
+
+1.  Temporal's documentation doesn't mention this, but there is a Homebrew package for Temporal which automatically detects Intel Macs vs Apple Silicon Macs.
+    ```
+    brew info Temporal
+    ```
+    ```
+    ==> temporal: stable 1.0.0 (bottled), HEAD
+    Command-line interface for running and interacting with Temporal Server and UI
+    https://temporal.io/
+    Not installed
+    From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/t/temporal.rb
+    License: MIT
+    ==> Dependencies
+    Build: go ✔
+    ==> Options
+    --HEAD
+        Install HEAD version
+    ==> Analytics
+    install: 1,319 (30 days), 3,403 (90 days), 9,568 (365 days)
+    install-on-request: 1,320 (30 days), 3,391 (90 days), 9,526 (365 days)
+    build-error: 0 (30 days)
+    ```
+1. Install:
+    ```
+    brew install temporal
+    ```
+    ```
+    ==> Downloading https://formulae.brew.sh/api/formula.jws.json
+    ########################################################################################### 100.0%
+    ==> Downloading https://formulae.brew.sh/api/cask.jws.json
+    ########################################################################################### 100.0%
+    ==> Downloading https://ghcr.io/v2/homebrew/core/temporal/manifests/1.0.0
+    ########################################################################################### 100.0%
+    ==> Fetching temporal
+    ==> Downloading https://ghcr.io/v2/homebrew/core/temporal/blobs/sha256:e7e5a6383d9aff3b052c4770293
+    ########################################################################################### 100.0%
+    ==> Pouring temporal--1.0.0.arm64_sonoma.bottle.tar.gz
+    ==> Caveats
+    Bash completion has been installed to:
+    /opt/homebrew/etc/bash_completion.d
+    ==> Summary
+    🍺  /opt/homebrew/Cellar/temporal/1.0.0: 9 files, 71MB
+    ==> Running `brew cleanup temporal`...
+    Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+    Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+    ```
+    PROTIP: Brew installs onto folder "/opt/homebrew/Cellar/" on Apple Silicon, unlike folder "/usr/local/bin" with manual installs in Temporal docs.
+
+1.  Start-dev sets up the Web UI, creates the default Namespace, and establishes an in-memory database:
+    ```
+    temporal server start-dev --ui-port 8233 --db-filename temporal.db
+    ```
+    ```
+    time=2024-08-12T04:38:12.684 level=ERROR msg="service failures" operation=GetSystemInfo error="Frontend is not healthy yet"
+    time=2024-08-12T04:38:12.685 level=WARN msg="error creating sdk client" service=worker error="failed reaching server: Frontend is not healthy yet"
+    CLI 1.0.0 (Server 1.24.2, UI 2.28.0)
+    &nbsp;
+    Server:  localhost:7233
+    UI:      http://localhost:8233
+    Metrics: http://localhost:53787/metrics
+    ```
+1.  Switch to a brower to view the Temporal Web UI at its default port:
+    <a target="_blank" href="http://localhost:8233">http://localhost:8233</a>
+
+    <img alt="temporal-ui-first.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1723459559/temporal-ui-first_fj9b6h.png">
+
+1.  View the Temporal Service at:
+    <a target="_blank" href="http://localhost:8233">http://localhost:7233</a>
+
+1.  View the log stream at:
+    <a target="_blank" href="http://localhost:53787/metrics">http://localhost:53787/metrics</a>
+
+1.  To stop it, press CTRL+C at the Terminal.
+
+
+## Temporal SDKs
 
 Temporal SDKs (as <a target="_blank" href="https://www.youtube.com/watch?v=JQ6FRTnQWFI">VIDEO</a>: as career)
 
@@ -206,20 +306,101 @@ Temporal SDKs (as <a target="_blank" href="https://www.youtube.com/watch?v=JQ6FR
 
    The Temporal Client connect to a Temporal Service (Cloud) and start a Workflow Execution.
 
+1. Create/navigate to the folder where you download from GitHub:
+   ```
+   mkdir -p ~/my-github
+   ```
+1. View the repo at:
 
+   <a target="_blank" href="https://github.com/temporalio/money-transfer-project-template-go">https://github.com/temporalio/money-transfer-project-template-go</a>
 
+1. If you want to fork the repo to your own account, click that "Fork" button. But also specify your account name for commands in the remainder of this document:
+   ```
+   GH_ACCT="temporalio"
+   ```
 1. <a target="_blank" href="https://www.youtube.com/watch?v=-KWutSkFda8">VIDEO</a>: To download the Go example:
+   ```
+   git clone "https://github.com/$GH_ACCT/money-transfer-project-template-go"
+   cd money-transfer-project-template-go
+   ```
+   INFO: The sample application in this tutorial models a money transfer between two accounts. Money comes out of one account and goes into another. However, there are a few things that can go wrong with this process. If the withdrawal fails, then there's no need to attempt a deposit. But if the withdrawal works but the deposit fails, then the money needs to go back to the original account.
+
+1.  Let's view the repo:
     ```
-    git clone https://github.com/temporalio/money-transfer-project-template-go
-    cd money-transfer-project-template-go
+    ls
     ```
+    The .go programs:
+    * activity.go
+    * banking-client.go
+    * shared.go
 
-    The Workflow Definition to define the Workflow Execution's constraints:
-    https://github.com/temporalio/money-transfer-project-template-go/blob/main/workflow.go
+    * <a target="_blank" href="https://github.com/temporalio/money-transfer-project-template-go/blob/main/workflow.go">workflow.go</a>
+    * workflow_test.go
 
-    A Workflow Definition in Go is a regular Go function that accepts a Workflow Context and some input values.
+    * start/main.go
+    * worker/main.go
 
-    Complete several runs of a Temporal Workflow application using a Temporal Cluster and the Go SDK.
+    * go.mod
+    * go.sum
+
+1.  edit go.mod
+
+1.  View each of the files. NOTE: The first time you open a .go program in Visual Studio Code, accept the Install.
+
+    In workflow.go, the Workflow Definition defines the Workflow Execution's constraints. A Workflow Definition in Go is a regular Go function that accepts a Workflow Context and some input values.
+
+    Workflow Executions orchestrate the execution of Activities, which execute a single, well-defined action, such as calling another service, transcoding a media file, or sending an email message.
+
+    A Temporal Application is a set of Temporal Workflow Executions, which are reliable, durable function executions.
+
+1.  Create a new Terminal window and navigate to your project folder.
+
+    This tutorial uses a separate start/main.go program to start the Workflow. But most real applications start a Workflow as part of another program. For example, you might start the Workflow in response to a button press or an API call.
+
+    You can make the call synchronously or asynchronously. Here we do it synchronously by fetching the return value of the Workflow execution with we.Get. This call waits for the Workflow execution to complete before continuing.
+
+1.  Start the app for the first time:
+    ```
+    go run start/main.go
+    ```
+    Go might download some dependencies initially, but after those downloads complete, you'll see output that looks like the following:
+    ```
+    2022/11/14 10:52:20 INFO  No logger configured for temporal client. Created default one.
+    2022/11/14 10:52:20 Starting transfer from account 85-150 to account 43-812 for 250
+    2022/11/14 10:52:20 WorkflowID: pay-invoice-701 RunID: 3312715c-9fea-4dc3-8040-cf8f270eb53c
+    ```
+    The RunID will be different each time.
+
+1.  To see the Workflow, switch to the browser view of the Temporal Web UI at its default port and press Refresh:
+    <a target="_blank" href="http://localhost:8233">http://localhost:8233</a>
+
+1.  There is a "Start Workflow" button at the upper-right.
+
+    There is a <tt>tctl</tt> command-line tool to start a Temporal Workflow.
+    In this tutorial the SDK starts the Workflow, which is how most Workflows get started in a live environment.
+
+    To start a Workflow Execution, you connect to the Temporal Cluster, specify the Task Queue the Workflow should use, and start the Workflow with the input parameters it expects.
+
+    In a real application, you may invoke this code when someone submits a form, presses a button, or visits a certain URL. In this tutorial, you'll create a small command-line program that starts the Workflow Execution.
+
+    The Task Queue is where Temporal Workers look for Workflows and Activities to execute. You define Task Queues by assigning a name as a string. You'll use this Task Queue name when you start a Workflow Execution, and you'll use it again when you define your Workers. To ensure your Task Queue names are consistent, place the Task Queue name in a variable you can share across your project.
+
+    In this project, the Task Queue name is defined in a shared location: file <tt>shared.go</tt> which contains:
+
+    <tt>const MoneyTransferTaskQueueName = "TRANSFER_MONEY_TASK_QUEUE"</tt>
+
+    ```
+    type PaymentDetails struct {
+        SourceAccount string
+        TargetAccount string
+        Amount        int
+        ReferenceID   string
+    }
+    ```
+    https://github.com/temporalio/money-transfer-project-template-go
+
+
+### Java:
 
 1. <a target="_blank" href="https://www.youtube.com/watch?v=1RY2lWSuJaA&list=PLl9kRkvFJrlQ8KsM6m9cFfCeQegq_B8x4&pp=iAQB">VIDEO</a>: Java example:
 

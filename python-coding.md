@@ -118,6 +118,19 @@ BigO References: <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT
    * https://github.com/theja-m/Data-Structures-and-Algorithms
    * https://github.com/VicodinAbuser/ZTM-DS-and-Algo-Python
    * https://www.youtube.com/watch?v=v4cd1O4zkGw by HackerRank - rules
+   * https://www.youtube.com/watch?v=V6mKVRU1evU
+   * https://www.youtube.com/watch?v=zUUkiEllHG0
+   * https://www.youtube.com/watch?v=oJ5s2hs_cKk
+   * https://www.youtube.com/watch?v=itn09C2ZB9Y
+   * https://www.youtube.com/watch?v=jUy5N-3RAjo
+   * https://www.youtube.com/watch?v=kS_gr2_-ws8
+   * https://www.youtube.com/watch?v=QnRx6V8YQy0
+   * https://www.youtube.com/watch?v=tNrNLoCqzco
+
+   * https://www.youtube.com/watch?v=TWIlXV1z3gk combinations of 77 items (asymptope) to put in backpack based on weight - genetic algorithm with mutation.
+   * https://www.youtube.com/watch?v=nhT56blfRpE Python code for genetic algorithm
+   & https://www.youtube.com/watch?v=4XZoVQOt-0I
+   * https://www.youtube.com/watch?v=aOsET8KapQQ gen music with human rating
    <br /><br />
 
 Let's go from the most efficient (at the bottom-right) to the least efficient at the upper-left,
