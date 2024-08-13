@@ -1963,7 +1963,7 @@ This course Computer Science degrees:
 
 Elite universities for computer science in the US:
 * Western Goverors University (where Amazon hires from more than all Ivy League colleges combined)
-* Babson.edu, Wellesley (Boston) MA for entrepreneurial
+* Babson.edu, Wellesley (Boston) MA - #1 in entrepreneurial
 * MIT in Boston, which has a lab
 * Carnagie Mellon, Pennsylvania
 

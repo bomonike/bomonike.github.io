@@ -15,12 +15,28 @@ Temporal is open-sourced under MIT licensing at
 so a self-hosted local environment can be setup locally instead of running
 Temporal Services in the Temporal-managed Temporal Cloud.
 
-Each Temporal Service coordinates the execution of app Workflows and Activities based on a pre-defined map.
-
-Each <strong>Worker</strong> is a wrapper around compiled Workflow and Activity code.
-A Worker's only job is to execute the Activity and Workflow functions and communicate the results back to the Temporal Server.
 
 Temporal is like Istio for Kubernetes, which provides a proxy sidecar to handle communications so app developers don't need to write code in every program to detect and handle failures, and <strong>fail gracefully</strong> from server crashes or network outages. Temporal allows developers to "write code as if failures don't even exist" and focus more on business logic.
+
+But unlike <a target="_blank" href="https://wilsonmar.github.io/kubernetes/">Kubernetes</a>,
+Temporal does not concern itself with containers but with REST/RPC services of any kind (which can be run within a container).
+
+
+## Components
+
+Each Temporal Service coordinates the execution of app Workflows and Activities based on a pre-defined map.
+
+Each <strong>Worker</strong> executes the Activity and Workflow functions and communicate the results back to the Temporal Server.
+Each Worker is a wrapper around compiled Workflow and Activity code.
+
+In this project, the file <tt><strong>worker/main.go</strong></tt> contains the code for the Worker.
+
+Workers can only execute Workflows and Activities registered to it.
+Workers listen only to the Task Queue that it is registered to
+knows which piece of code to execute from Tasks that it gets from the Task Queue.
+
+Like the program that started the Workflow, it connects to the Temporal Cluster and specifies the Task Queue to use. It also registers the Workflow and the three Activities.
+
 
 PROTIP: See the <a target="_blank" href="https://en.wikipedia.org/wiki/Mr_Bates_vs_The_Post_Office">ITV series</a> (<a target="_blank" href="https://www.pbs.org/wgbh/masterpiece/shows/mr-bates-vs-the-post-office/#">on US PBS</a>) about the UK Postal Service (between 1999 and 2015) wrongly <a target="_blank" href="https://inews.co.uk/news/politics/postmasters-wrongly-convicted-theft-faulty-600000-2625440">sent 900 workers to prison</a> for stealing when the problem was the system's failure to properly handle failed transactions, and the <a target="_blank" href="https://inews.co.uk/news/politics/postmasters-wrongly-convicted-theft-faulty-600000-2625440">government covered it up</a>.
 
@@ -30,9 +46,6 @@ A <strong>Query</strong> is a synchronous operation used to report the state of 
 
 Temporal and Durable Execution encapsulate most of the complexities of event-driven architecture.
 This allow developers to focus on what matters: business logic.
-
-Unlike <a target="_blank" href="https://wilsonmar.github.io/kubernetes/">Kubernetes</a>,
-Temporal does not concern itself with containers but with REST/RPC services of any kind (which can be run within a container).
 
 
 ## Temporal people
@@ -139,6 +152,7 @@ Unlike <a target="_blank" href="https://wilsonmar.github.io/airflow/">Apache Air
 * <a target="_blank" href="https://www.indeed.com/cmp/Temporal-Technologies">Indeed</a> has no ratings.
 * LinkedIn
 
+* <a target="_blank" href="https://community.temporal.io/">https://community.temporal.io</a>
 * <a target="_blank" href="https://temporal.io/slack/">Slack</a>
 * <a target="_blank" href="https://community.temporal.io/">Support forum</a>
 * Discord community <a target="_blank" href="https://www.youtube.com/watch?v=MN30Xqk-Qxk">VIDEO</a>
@@ -162,8 +176,7 @@ The Temporal Platform consists of a Temporal Service and Worker Processes.
 Temporal uses "durable execution" abstraction to specify orchestration while airflow uses DAG. As durable execution is just code in a top level programming language it is much more powerful, user friendly and supports many more use cases than any DAG based system. BTW you can implement Airflow DAG on top of Temporal if needed. There are dozens of DSLs already implemented on top of it. Also Temporal scales many orders of magnitude better than Airflow.
 
 Temporal makes use of open-source observability platforms <a target="_blank" href="https://wilsonmar.github.io/prometheus/">Prometheus</a> and dashboarding with Grafana.
-Temporal senses and logs delays, back-pressure, failures, retries, time-outs, etc.
-into an <strong>Elastic database</strong>.
+Temporal senses and logs delays, back-pressure, failures, retries, time-outs, etc. into an <strong>Elastic database</strong>.
 
    * <a target="_blank" href="https://www.youtube.com/watch?v=b31gqZCLFTA&list=PLl9kRkvFJrlTn2blb5FG0aBrkLcrr_18F&index=21&pp=iAQB">Cloud Security</a>
 
@@ -176,6 +189,7 @@ construct and use a ??? develop Workflow Definitions, and develop Worker Program
 
 <img alt="temporal-work-svc.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1723226028/temporal-work-svc_khvlpu.png"></a>
 
+As of this writing, sessions that requires both activity and workflow worker support is only available in Go and <a target="_blank" href="https://github.com/temporalio/samples-python/tree/main/worker_specific_task_queues">not in Python</a>. Use host specific task queue as a workaround.
 
 ### Saga Pattern
 
@@ -373,6 +387,8 @@ Temporal SDKs (as <a target="_blank" href="https://www.youtube.com/watch?v=JQ6FR
 
 1.  To see the Workflow, switch to the browser view of the Temporal Web UI at its default port and press Refresh:
     <a target="_blank" href="http://localhost:8233">http://localhost:8233</a>
+
+1.  Click the Workflow ID for a Workflow to see its input values, timeout configurations, scheduled retries, number of attempts, stack traceable errors, and more.
 
 1.  There is a "Start Workflow" button at the upper-right.
 
