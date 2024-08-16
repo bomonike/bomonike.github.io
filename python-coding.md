@@ -198,6 +198,13 @@ References:
    * <a target="_blank" href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/evaluating-algorithms/a/comparing-run-time-efficiency">KhanAcad explanation of run-time efficiency</a>.
    * https://www.youtube.com/watch?v=7VHG6Y2QmtM
 
+GitHub repos with the highest stars:
+   * https://github.com/joeyajames/Python with <a target="_blank" href="https://www.youtube.com/watch?v=E_V71Ejz3f4&list=PLj8W7XIvO93oxLOZTi8JFghuRcKieIZU-">YouTube explanations</a>
+   * https://github.com/TheAlgorithms/Python
+   * https://github.com/geekcomputers/Python
+   * https://github.com/Show-Me-the-Code/python
+   * https://github.com/flypythoncom/python
+
 
 ### Faster routes to machine code
 By default, Python comes with the <a target="_blank" href="https://github.com/python/cpython">CPython interpreter</a> (command cythonize) to generate machine-code. When speed is needed, such as in loops, custom C/C++ extensions are created. Additional speed is obtained by adding before nested loop code directives and decorators:

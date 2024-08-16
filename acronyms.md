@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-08-03"
+date: "2024-08-16"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -690,6 +690,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 * LAM = Large Action Models (multihop & multimodal data type for agentic/action on LLMs)
 *	LAMP	=	Linux OS + Apache web server + MySQL DB + PHP/Perl/Python	(open-source web development technology stack)
 *	LAN	=	Local Area Network
+* LCEL = LangChain Expression Language (chain series of AI models and parsers)
 *	LDAP	=	Lightweight Directory Access Protocol	(used by Linux to manage user and group access)
 *	LED	=	Light-Emitting Diode
 *	LF-TBAC	=	Lake Formation tag-based access control (AWS)
