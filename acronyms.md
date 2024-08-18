@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-08-16"
+date: "2024-08-18"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -638,8 +638,9 @@ comments: true
 *	ISAC	=	Information Analysis Sharing Centres (for threat intelligence)
 *	ISCP	=	Information System Contingency Plan
 *	ISBN	=	Intelligent Spend and Business Network (SAP offering)
+*	ISA	=	Instruction Set Architecture (defines interface between software and different implementations of a processor)
 *	ISD	=	Internet Service Provider
-PDW*	ISMS	=	Information Security Management System (ISO 27001)
+*	ISMS	=	Information Security Management System (ISO 27001)
 *	ISO	=	International Standards Organization
 *	ISSO	=	Information System Security Officer (in RMF)
 *	ISP	=	Internet Service Provider	(company providing access to the internet)
@@ -1288,6 +1289,7 @@ PDW*	ISMS	=	Information Security Management System (ISO 27001)
 * VPS	=	Virtual Private Server (AWS)
 * VDP = Vulnerability Disclosure Policy (<a target="_blank" href="https://www.cisa.gov/securebydesign/pledge">CISA Pledge</a>)
 *	VPN	=	Virtual Private Network
+*	VRP	=	Vulnerability Research Program (way for organizations to receive security vulnerabilities found)
 *	VSM	=	Value Stream Mapping
 *	VSTS	=	Visual Studio Team Services  (Microsoft)
 * VTL	=	Virtual Tape Library
