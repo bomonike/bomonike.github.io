@@ -1,6 +1,6 @@
-This is https://bomonike.github.io/software-dev/
+This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev">https://bomonike.github.io/software-dev</a><br />from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
 
-<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"><br /><em>Click diagram to see video</em></a>
+<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"><br /><em>Click diagram to see video (without audio)</em></a>
 
 Let's start at the conceptual *low level* of how the <strong>hardware</strong> is controlled by the <strong>Binary Machine Code</strong>.
 The format of instructions is defined by an <strong>ISA (Instruction Set Architecture)</strong> for the  <strong>CPU (Central Processor Unit)</strong> hardware.
