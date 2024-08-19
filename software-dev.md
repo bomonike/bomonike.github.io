@@ -1,6 +1,6 @@
 This is https://bomonike.github.io/software-dev/
 
-<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"></a>
+<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"><br /><em>Click diagram to see video</em></a>
 
 Let's start at the conceptual *low level* of how the <strong>hardware</strong> is controlled by the <strong>Binary Machine Code</strong>.
 The format of instructions is defined by an <strong>ISA (Instruction Set Architecture)</strong> for the  <strong>CPU (Central Processor Unit)</strong> hardware.
