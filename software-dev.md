@@ -22,7 +22,7 @@ Now let's talk about <strong>Higher Level</strong> programming.
 
 Languages <strong>Java and C#</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> (IL) code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
 
-JavaScript and <strong>Python</trong> code are <strong>Interpreted</strong> into byte-code which a <strong>Run-Time</strong> utility installed on each target operating system to issue commands specific to each operating system.
+JavaScript and <strong>Python</strong> code are <strong>Interpreted</strong> into byte-code which a <strong>Run-Time</strong> utility installed on each target operating system to issue commands specific to each operating system.
 
 The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular becuase its compiler creates a standalone executable that includes the Go runtime. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go run-time on every server.
 
