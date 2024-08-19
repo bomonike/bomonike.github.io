@@ -1,10 +1,10 @@
 This is https://bomonike.github.io/software-dev/
 
-
+<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"></a>
 
 Let's start at the conceptual *low level* of how the <strong>hardware</strong> is controlled by the <strong>Binary Machine Code</strong>.
 The format of instructions is defined by an <strong>ISA (Instruction Set Architecture)</strong> for the  <strong>CPU (Central Processor Unit)</strong> hardware.
-The <a target="_blank" href="https://wilsonmar.github.io/quantum"/>Quantum</strong> computers being designed today have a completely different architecture. So we call the processors we use today <strong>Classical</strong> processors.
+The <a target="_blank" href="https://wilsonmar.github.io/quantum"/>Quantum</a> computers being designed today have a completely different architecture. So we call the processors we use today <strong>Classical</strong> processors.
 
 You are using the <strong>Intel x86</strong> ISA if you are running a <strong>PC</strong> with the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems.
 
