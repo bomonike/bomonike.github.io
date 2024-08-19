@@ -1,6 +1,6 @@
-This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev">https://bomonike.github.io/software-dev</a><br />from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
+This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev">https://bomonike.github.io/software-dev</a> from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
 
-<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"><br /><em>Click diagram to see video (without audio)</em></a>
+<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><em>Click this diagram to see video (without audio):</em><br /><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"></a>
 
 Let's start at the conceptual *low level* of how the <strong>hardware</strong> is controlled by the <strong>Binary Machine Code</strong>.
 The format of instructions is defined by an <strong>ISA (Instruction Set Architecture)</strong> for the  <strong>CPU (Central Processor Unit)</strong> hardware.
@@ -26,7 +26,7 @@ JavaScript and <strong>Python</strong> code are <strong>Interpreted</strong> int
 
 The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular becuase its compiler creates a standalone executable that includes the Go runtime. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go run-time on every server.
 
-<strong>Artificial Intelligence</strong> has a different architecture. Instead of humans crafting logical code, <strong>Data Science</strong> utilities filters and clean a <strong>corpus</strong> of data is used by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
+<strong>Artificial Intelligence</strong> has a different architecture. Instead of humans crafting logical code, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">>Data Management</a> utilities filter, clean, and organize the <strong>corpus</strong> of data is used by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
 Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable  parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
 <strong>TPUs (Tensor Processing Units)</strong> built specifically for machine learning work.
 
