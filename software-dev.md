@@ -2,7 +2,7 @@ This is shown formatted at <a target="_blank" href="https://bomonike.github.io/s
 
 <a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><em>Click this diagram to see video (without audio):</em><br /><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"></a>
 
-We call it  <strong>Low Level</strong> when we work code that directly controls the <strong>hardware</strong> that we can physically touch. The <strong>CPU (Central Processor Unit)</strong>. The lowest level is working with commands to the <strong>Binary Machine Code</strong> defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
+We call it  <strong>Low Level</strong> when we work code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> that control the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
 
 You are using the <strong>AMD64</strong> ISA if you are running a recent <strong>PC</strong> with the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backwards compatibility). AMD was adopted by Intel as "x86-64".
 
@@ -10,7 +10,11 @@ After several generations of operating system names using varios silicon chips, 
 
 It's tedious and time consuming to work with low-level code.
 So, over time, many companies have created easier and more reliable ways to control hardware at a <strong>High Level</strong>.
-That why there are many ways to create the <strong>apps</strong> or Applications that you invoke on your computer.
+That why there are many ways to create <strong>application</strong> programs.
+Programmers use <strong>Code Editors</strong> to craft <strong>programmatic</strong> code.
+During the last decade, <strong>Low-Code/No-Code GUI</a> enabled end-users to create code easier.
+Recently, <strong>Artificial Intelligence</strong> such as ChatGPT makes it possible to get output using <strong>natural language</strong> like two people talking to each other.
+
 
 Windows knows which <strong>executable</strong> to use for processing each file based on the file name suffix or extension.
 Files that end with <strong>.exe</strong> are treated as <strong>executable</strong> by the operating system. On Linux, it's not just <strong>.bin</strong> files because Linux reads the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_file_signatures">first few bytes of a file (its signature)</a> to determine what program executes that file.
