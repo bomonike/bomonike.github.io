@@ -2,7 +2,7 @@ This is shown formatted at <a target="_blank" href="https://bomonike.github.io/s
 
 <a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><em>Click this diagram to see video (without audio):</em><br /><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"></a>
 
-We call it  <strong>Low Level</strong> when we work code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> that control the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
+We call it  <strong>Low Level</strong> when we work with code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> that control the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
 
 You are using the <strong>AMD64</strong> ISA if you are running a recent <strong>PC</strong> with the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backwards compatibility). AMD was adopted by Intel as "x86-64".
 
