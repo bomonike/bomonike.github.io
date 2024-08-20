@@ -19,7 +19,7 @@ Recently, <strong>Artificial Intelligence</strong> such as ChatGPT makes it poss
 
 Windows knows which <strong>executable</strong> to use for processing each file based on the file name suffix or extension.
 Files that end with <strong>.exe</strong> are treated as <strong>executable</strong> by the operating system.
-However, Linux, reads the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_file_signatures">first few bytes of a file (its signature)</a> to determine what program executes that file.
+However, Linux reads the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_file_signatures">first few bytes of a file (its signature)</a> to determine what program executes that file.
 
 At the low-level, an executable is created by a <strong>Linker</strong> program that combines executable objects from a <strong>library</strong> of reusable utility objects with custom <strong>object code</strong>. Object code is created by an <strong> Assembler</strong> program based on <strong>Assembly code</strong> written by programmers using a <strong>Code Editor</strong>.
 Editors such as Microsoft's Visual Studio Code include a Terminal that executes <strong>Shell</strong> scripts to manage the operating environment.
@@ -27,7 +27,7 @@ For example, shell commands download and install commands such as <strong>git</s
 
 &nbsp;
 
-As for <strong>Higher Level</strong> programming, <a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">VIDEO</a> <strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.
+As for <strong>Higher Level</strong> programming, <a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">_</a> <strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.
 
 Languages <strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> (IL) code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
 
