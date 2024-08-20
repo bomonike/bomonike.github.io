@@ -1,6 +1,6 @@
 This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev">https://bomonike.github.io/software-dev</a> from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
 
-<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><em>Click this diagram to see video (without audio):</em><br /><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724028528/software-dev-4_ukb4dy.png"></a>
+<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><em>Click this diagram to see video (without audio):</em><br /><img alt="software-dev-4.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724184659/software-dev-4_z6epyo.png"></a>
 
 We call it  <strong>Low Level</strong> when we work with code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> to control the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
 
