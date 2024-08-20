@@ -25,8 +25,9 @@ At the low-level, an executable is created by a <strong>Linker</strong> program 
 Editors such as Microsoft's Visual Studio Code include a Terminal that executes <strong>Shell</strong> scripts to manage the operating environment.
 For example, shell commands download and install commands such as <strong>git</strong> to clone and push code changes to and from the GitHub.com website holding source code files.
 
-Now let's talk about <strong>Higher Level</strong> programming. <a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">VIDEO</a>:
-<strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.
+&nbsp;
+
+As for <strong>Higher Level</strong> programming, <a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">VIDEO</a> <strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.
 
 Languages <strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> (IL) code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
 
