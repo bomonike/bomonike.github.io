@@ -27,7 +27,7 @@ For example, shell commands download and install commands such as <strong>git</s
 
 &nbsp;
 
-As for <strong>Higher Level</strong> programming, <a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">_</a> <strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.
+As for <strong>Higher Level</strong> programming, <strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.<a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">*</a>
 
 Languages <strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> (IL) code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
 
@@ -37,6 +37,8 @@ Languages <strong>Java and C sharp</strong> are also compiled, but the compiler 
 On servers, JavaScript is run using Node J S installed on each server.
 
 The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular because its compiler creates a standalone executable that includes the Go runtime. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go run-time on every server.
+
+&nbsp;
 
 <strong>Artificial Intelligence</strong> has a different architecture. Instead of humans crafting code, or even using <strong>Low-Code/No-Code GUI</a> to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Management</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
 Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable  parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
