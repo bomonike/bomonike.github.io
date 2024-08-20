@@ -46,5 +46,5 @@ All this is enabling <strong>AI agents</strong> that automatically perform actio
 On the horizon are <a target="_blank" href="https://wilsonmar.github.io/quantum/">Quantum</a> computers being designed with a completely different architecture.
 Work is being done to leverage Python and other tools used today.
 But the mechanisms for controlling Quantum computers is very different, with <strong>Parallel Qubits</strong> manipulated by quantum circuits using quantum gates, switches, operators.
-The hope is that Quantum computers can run many times faster than the processors we use today that we have to call today's  processors <strong?>"classical'</strong>, as in classical music. Such speed would enable the enormous calculations needed to solve problems too complex for today's computers. But there is also fear that such speed can also be used to crack security keys generated using calculations that take a lot of time today.
+The hope is that Quantum computers can run many times faster than the processors we use today that we have to call today's  processors <strong>"classical'</strong>, as in classical music. Such speed would enable the enormous calculations needed to solve problems too complex for today's computers. But there is also fear that such speed can also be used to crack security keys generated using calculations that take a lot of time today.
 
