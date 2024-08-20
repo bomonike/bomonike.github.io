@@ -40,7 +40,7 @@ The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a>
 
 &nbsp;
 
-<strong>Artificial Intelligence</strong> has a different architecture. Instead of humans crafting code, or even using <strong>Low-Code/No-Code GUI</a> to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Management</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
+<strong>Artificial Intelligence</strong> has a different architecture. Instead of programming code to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Management</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
 Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable  parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
 <strong>TPUs (Tensor Processing Units)</strong> built specifically for machine learning work.
 
