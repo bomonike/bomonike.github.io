@@ -12,7 +12,7 @@ It's tedious and time consuming to work with low-level code.
 So, over time, many companies have created easier and more reliable ways to control hardware at a <strong>High Level</strong>.
 That why there are many ways to create <strong>application</strong> programs.
 Programmers use <strong>Code Editors</strong> to craft <strong>programmatic</strong> code.
-During the last decade, <strong>Low-Code/No-Code GUI</a> enabled end-users to create code easier.
+During the last decade, <strong>Low-Code/No-Code GUI</stronf> enabled end-users to create code easier.
 Recently, <strong>Artificial Intelligence</strong> such as ChatGPT makes it possible to get output using <strong>natural language</strong> like two people talking to each other.
 
 
@@ -20,7 +20,7 @@ Windows knows which <strong>executable</strong> to use for processing each file 
 Files that end with <strong>.exe</strong> are treated as <strong>executable</strong> by the operating system. On Linux, it's not just <strong>.bin</strong> files because Linux reads the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_file_signatures">first few bytes of a file (its signature)</a> to determine what program executes that file.
 
 At the low-level, an executable is created by a <strong>Linker</strong> program that combines executable objects from a <strong>library</strong> of reusable utility objects with custom <strong>object code</strong>. Object code is created by an <strong> Assembler</strong> program based on <strong>Assembly code</strong> written by programmers using a <strong>Code Editor</strong>.
-Editors such as Microsoft's Visual Studio Code include a Terminal that executes <strong>Shell</strong> scripts to manage the operating enviornment.
+Editors such as Microsoft's Visual Studio Code include a Terminal that executes <strong>Shell</strong> scripts to manage the operating environment.
 For example, shell commands download and install commands such as <strong>git</strong> to clone and push code changes to and from the GitHub.com website holding source code files.
 
 Now let's talk about <strong>Higher Level</strong> programming. <a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">VIDEO</a>:
@@ -33,7 +33,7 @@ Languages <strong>Java and C#</strong> are also compiled, but the compiler gener
 <strong>JavaScript</strong> is also interpreted, but browsers have an interpreter built-in.
 JavaScript is run using Node.Js installed on servers.
 
-The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular becuase its compiler creates a standalone executable that includes the Go runtime. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go run-time on every server.
+The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular because its compiler creates a standalone executable that includes the Go runtime. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go run-time on every server.
 
 <strong>Artificial Intelligence</strong> has a different architecture. Instead of humans crafting code, or even using <strong>Low-Code/No-Code GUI</a> to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Management</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
 Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable  parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
@@ -43,8 +43,8 @@ LLM models and other recent advancements in algorithms enable applications to re
 
 All this is enabling <strong>AI agents</strong> that automatically perform actions previously manually done with human intelligence.
 
-On the horizon are <a target="_blank" href="https://wilsonmar.github.io/quantum"/>Quantum</a> computers being designed with a completely different architecture.
-Work is being done to leaverage Python and other tools used today.
+On the horizon are <a target="_blank" href="https://wilsonmar.github.io/quantum/">Quantum</a> computers being designed with a completely different architecture.
+Work is being done to leverage Python and other tools used today.
 But the mechanisms for controlling Quantum computers is very different, with <strong>Parallel Qubits</strong> manipulated by quantum circuits using quantum gates, switches, operators.
-The hope is that Quantum computers can run many times faster than the processors we use today that we have to call today's  processors <strong?>"classical'</strong>, as in classical music. Such speed would enable the enormouse calculations needed to solve problems too complex for today's computers. But there is also fear that such speed can also be used to crack security keys generated using caluclations that take a lot of time today.
+The hope is that Quantum computers can run many times faster than the processors we use today that we have to call today's  processors <strong?>"classical'</strong>, as in classical music. Such speed would enable the enormous calculations needed to solve problems too complex for today's computers. But there is also fear that such speed can also be used to crack security keys generated using calculations that take a lot of time today.
 
