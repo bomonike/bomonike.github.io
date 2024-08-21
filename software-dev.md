@@ -55,3 +55,9 @@ Work is being done to leverage Python and other tools used today.
 But the mechanisms for controlling Quantum computers is very different, with <strong>Parallel Qubits</strong> manipulated by quantum circuits using quantum gates, switches, operators.
 The hope is that Quantum computers can run many times faster than the processors we use today that we have to call today's  processors <strong>"classical'</strong>, as in classical music. Such speed would enable the enormous calculations needed to solve problems too complex for today's computers. But there is also fear that such speed can also be used to crack security keys generated using calculations that take a lot of time today.
 
+-----------------------
+
+Audio for the video was created using elevenlabs.ai. Below are the adjustments that needs to be made for it to pronounce properly:
+* Node.JS ==> Node J S
+
+TODO: Use SSML for Pronunciation: Implement Speech Synthesis Markup Language (SSML) to specify how certain words should be pronounced. Wrap problematic words in &LT;phoneme> tags using either the International Phonetic Alphabet (IPA) or CMU Arpabet to guide the pronunciation accurately. https://elevenlabs.io/docs/speech-synthesis/prompting
