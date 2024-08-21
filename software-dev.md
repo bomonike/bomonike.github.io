@@ -40,11 +40,11 @@ The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a>
 
 &nbsp;
 
-<strong>Artificial Intelligence</strong> has a different architecture. Instead of programming code to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Management</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
+<strong>Artificial Intelligence</strong> has a different architecture. Instead of programming code to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Science</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
 Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable  parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
 <strong>TPUs (Tensor Processing Units)</strong> built specifically for machine learning work.
 
-LLM models and other recent advancements in algorithms enable applications to receive <strong>Natural Language</strong> prompts to make requests without programming in a computer language. The ability of the computer to understand relationships among concepts enable it to generate new poems and music videos. The trend of LLMs providing larger <strong>context windows</strong> to insert more customized data to be considered.
+LLM models and other recent advancements in algorithms enable applications to receive <strong>Natural Language</strong> prompts to make requests without programming in a computer language. The ability of the computer to understand relationships among concepts enable it to generate new poems and music videos. Over time, LLMs are created with larger <strong>context windows</strong> to insert more customized data for results more relevant to the requestor.
 
 All this is enabling <strong>AI agents</strong> that automatically perform actions previously manually done with human intelligence.
 
