@@ -48,6 +48,8 @@ LLM models and other recent advancements in algorithms enable applications to re
 
 All this is enabling <strong>AI agents</strong> that automatically perform actions previously manually done with human intelligence.
 
+&nbsp;
+
 On the horizon are <a target="_blank" href="https://wilsonmar.github.io/quantum/">Quantum</a> computers being designed with a completely different architecture.
 Work is being done to leverage Python and other tools used today.
 But the mechanisms for controlling Quantum computers is very different, with <strong>Parallel Qubits</strong> manipulated by quantum circuits using quantum gates, switches, operators.
