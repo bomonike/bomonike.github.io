@@ -32,11 +32,11 @@ At the top of programming code are requests for <strong>download and install</st
 
 &nbsp;
 
-As for Higher Level programming, <strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.<a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">*</a>
+As for Higher Level programming, <strong>C and C + +</strong> source code is <strong>compiled</strong> into Assembly code.<a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">*</a>
 
-Languages <strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> (IL) code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
+Languages <strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
 
-<strong>Python</strong> code are <strong>Interpreted</strong> into byte-code which a <strong>Run-Time</strong> utility installed on each target operating system to issue commands specific to each operating system.
+<strong>Python</strong> code are <strong>Interpreted</strong> to be run by a <strong>Run-Time</strong> utility installed on each target operating system to issue commands specific to each operating system.
 
 <strong>JavaScript</strong> is also interpreted, but browsers have that interpreter built-in.
 On servers, JavaScript is run using Node J S installed on each server.
@@ -66,5 +66,6 @@ Audio for the video was created using elevenlabs.ai, which ignores HTML codes su
 Below are the adjustments that needs to be made for it to pronounce properly:
 * GUI => GooEe (Graphical User Interface)
 * Node.JS ==> Node J S
+* C++ => C + +
 
 TODO: Use SSML for Pronunciation: Implement Speech Synthesis Markup Language (SSML) to specify how certain words should be pronounced. Wrap problematic words in &LT;phoneme> tags using either the International Phonetic Alphabet (IPA) or CMU Arpabet to guide the pronunciation accurately. https://elevenlabs.io/docs/speech-synthesis/prompting
