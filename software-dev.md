@@ -13,7 +13,7 @@ So, over time, many companies have created easier and more reliable ways to cont
 That's why there are many ways to create, <strong>for each Operating System</strong>, <strong>application</strong> programs  which present a Graphical User Interface (GUI) for people to view and enter data.
 
 Programmers use <strong>Code Editors</strong> to craft <strong>programmatic</strong> code.
-During the last decade, <strong>Low-Code/No-Code GUI</stronf> enabled end-users to create code easier.
+During the last decade, <strong>Low-Code/No-Code GUI</strong> enabled end-users to create code easier.
 Recently, <strong>Artificial Intelligence</strong> such as ChatGPT makes it possible to get output using <strong>natural language</strong> like two people talking to each other.
 
 &nbsp;
