@@ -4,9 +4,9 @@ This is shown formatted at <a target="_blank" href="https://bomonike.github.io/s
 
 We call it  <strong>Low Level</strong> when we work with code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> to control the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
 
-You are using the <strong>AMD64</strong> ISA if you are running a recent <strong>PC</strong> with the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backwards compatibility). AMD was adopted by Intel as "x86-64".
+You are using the <strong>AMD64</strong> ISA if you are running a recent <strong>PC</strong> with the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backward compatibility). AMD was adopted by Intel as "x86-64".
 
-After several generations of operating system names using varios silicon chips, Apple's <strong>macOS</strong> Operating System ran on Intel chips until switching to its own "Apple Silicon" chip, which makes use of the ARM ISA. The R in ARM stands for <strong>"Reduced Instruction Set Computer"</strong>. Its smaller instruction set makes the chip runs faster and cooler, which is why it's also used on <strong>Android</strong> mobile phones as well as Linux and Windows as well.
+As for Apple's <strong>macOS</strong> Operating System is the latest in several generations with different names. Older versions ran on Intel chips until switching to using ARM chips branded as "Apple Silicon". The R in ARM stands for <strong>"Reduced Instruction Set Computer"</strong>. Its smaller instruction set makes the chip runs faster and cooler, which is why it's also used on <strong>Android</strong> mobile phones as well as Linux and Windows as well.
 
 It's tedious and time consuming to work with low-level code.
 So, over time, many companies have created easier and more reliable ways to control hardware at a <strong>High Level</strong>.
@@ -23,12 +23,12 @@ Files that end with <strong>.exe</strong> are treated as <strong>executable</str
 However, Linux reads the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_file_signatures">first few bytes of a file (its signature)</a> to determine what program executes that file.
 
 At the low-level, an executable is created by a <strong>Linker</strong> program that combines executable objects from a <strong>library</strong> of reusable utility objects with custom <strong>object code</strong>. Object code is created by an <strong> Assembler</strong> program based on <strong>Assembly code</strong> written by programmers using a <strong>Code Editor</strong>.
-Editors such as Microsoft's Visual Studio Code include a Terminal that executes <strong>Shell</strong> scripts to manage the operating environment.
+Editors such as Microsoft's Visual Studio Code include a Command-Line Terminal app that executes <strong>Shell</strong> scripts to manage the operating system.
 For example, shell commands download and install commands such as <strong>git</strong> to clone and push code changes to and from the GitHub.com website holding source code files.
 
 &nbsp;
 
-As for <strong>Higher Level</strong> programming, <strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.<a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">*</a>
+As for Higher Level programming, <strong>C and C++</strong> source code is <strong>compiled</strong> into Assembly code.<a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">*</a>
 
 Languages <strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> (IL) code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
 
