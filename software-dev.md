@@ -6,7 +6,9 @@ We call it  <strong>Low Level</strong> when we work with code that directly cont
 
 You are using the <strong>AMD64</strong> ISA if you are running a recent <strong>PC</strong> with the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backward compatibility). AMD was adopted by Intel as "x86-64".
 
-As for Apple's <strong>macOS</strong> Operating System is the latest in several generations with different names. Older versions ran on Intel chips until switching to using ARM chips branded as "Apple Silicon". The R in ARM stands for <strong>"Reduced Instruction Set Computer"</strong>. Its smaller instruction set makes the chip runs faster and cooler, which is why it's also used on <strong>Android</strong> mobile phones as well as Linux and Windows as well.
+As for Apple, its <strong>macOS</strong> operating systems is the latest in several generations, with different names. Older versions ran on Intel chips until switching to using ARM chips they branded as "Apple Silicon". The R in ARM stands for <strong>"Reduced Instruction Set Computer"</strong>. Its smaller instruction set makes the chip runs faster and cooler, which is why it's also used on <strong>Android</strong> mobile phones as well as Linux and Windows as well.
+
+&nbsp;
 
 It's tedious and time consuming to work with low-level code.
 So, over time, many companies have created easier and more reliable ways to control hardware at a <strong>High Level</strong>.
@@ -18,13 +20,15 @@ Recently, <strong>Artificial Intelligence</strong> such as ChatGPT makes it poss
 
 &nbsp;
 
-Windows knows which <strong>executable</strong> to use for processing each file based on the file name suffix or extension.
-Files that end with <strong>.exe</strong> are treated as <strong>executable</strong> by the operating system.
+A file is <strong>executable</strong> by the Windows operating system if a file's name ends with the <strong>.exe</strong> suffix or extension. Other programs are used to open a file based on a list maintained by Windows.
+
 However, Linux reads the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_file_signatures">first few bytes of a file (its signature)</a> to determine what program executes that file.
 
 At the low-level, an executable is created by a <strong>Linker</strong> program that combines executable objects from a <strong>library</strong> of reusable utility objects with custom <strong>object code</strong>. Object code is created by an <strong> Assembler</strong> program based on <strong>Assembly code</strong> written by programmers using a <strong>Code Editor</strong>.
 Editors such as Microsoft's Visual Studio Code include a Command-Line Terminal app that executes <strong>Shell</strong> scripts to manage the operating system.
 For example, shell commands download and install commands such as <strong>git</strong> to clone and push code changes to and from the GitHub.com website holding source code files.
+
+At the top of programming code are requests for <strong>download and install</strong> of 3rd-party <strong>packages</strong> so that their contents can be referenced within the code.
 
 &nbsp;
 
@@ -58,7 +62,8 @@ The hope is that Quantum computers can run many times faster than the processors
 
 -----------------------
 
-Audio for the video was created using elevenlabs.ai. Below are the adjustments that needs to be made for it to pronounce properly:
+Audio for the video was created using elevenlabs.ai, which ignores HTML codes such as strong.
+Below are the adjustments that needs to be made for it to pronounce properly:
 * GUI => GooEe (Graphical User Interface)
 * Node.JS ==> Node J S
 
