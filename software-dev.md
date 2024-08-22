@@ -10,7 +10,8 @@ After several generations of operating system names using varios silicon chips, 
 
 It's tedious and time consuming to work with low-level code.
 So, over time, many companies have created easier and more reliable ways to control hardware at a <strong>High Level</strong>.
-That why there are many ways to create <strong>application</strong> programs.
+That's why there are many ways to create, <strong>for each Operating System</strong>, <strong>application</strong> programs  which present a Graphical User Interface (GUI) for people to view and enter data.
+
 Programmers use <strong>Code Editors</strong> to craft <strong>programmatic</strong> code.
 During the last decade, <strong>Low-Code/No-Code GUI</stronf> enabled end-users to create code easier.
 Recently, <strong>Artificial Intelligence</strong> such as ChatGPT makes it possible to get output using <strong>natural language</strong> like two people talking to each other.
@@ -58,6 +59,7 @@ The hope is that Quantum computers can run many times faster than the processors
 -----------------------
 
 Audio for the video was created using elevenlabs.ai. Below are the adjustments that needs to be made for it to pronounce properly:
+* GUI => GooEe (Graphical User Interface)
 * Node.JS ==> Node J S
 
 TODO: Use SSML for Pronunciation: Implement Speech Synthesis Markup Language (SSML) to specify how certain words should be pronounced. Wrap problematic words in &LT;phoneme> tags using either the International Phonetic Alphabet (IPA) or CMU Arpabet to guide the pronunciation accurately. https://elevenlabs.io/docs/speech-synthesis/prompting
