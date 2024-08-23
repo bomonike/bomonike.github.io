@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-08-18"
+date: "2024-08-23"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -1119,13 +1119,13 @@ comments: true
 *	SOP	=	Standard Operating Procedure
 *	SORN	=	System of Record Notice
 *	SOX	=	Sarbanes-Oxley Act
-*	SOX	=	Sarbanes-Oxley Act
 *	SPA	=	Single Page Application
 *	SPF	=	Sender Policy Framework	(lists IP address of servers allowed to send email for a domain - for email authentication)
 *	SPI	=	Service Provider Interface
 *	SPI	=	Secure Personal Information
 *	SPICE	=	Super-fast, Parallel, In-memory Calculation Engine (used in AWS QuickSight)
 *	SPIFFE	=	Secure Production Identity Framework for Everyone	(spec used by Consul Connect service mesh for establishing service identities)
+*	SPK	=	Spacecraft and Planet Kernel (files from NASA containing ephemeris data for solar system bodies, spacecraft, and other objects)
 *	SPOC	=	Single Point of Contact
 *	SPOF	=	Single Point of Failure
 *	SPLK	=	Splunk's stock ticker symbol
