@@ -1,8 +1,8 @@
 This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev">https://bomonike.github.io/software-dev</a> from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
 
-<a target="_blank" href="https://youtu.be/8lOaxFIk3wE"><em>Click this diagram to see video (without audio):</em><br /><img alt="software-dev-4.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724184659/software-dev-4_z6epyo.png"></a>
+<a target="_blank" href="https://youtu.be/LlqbKrJhIVM"><em>Click this diagram to see video (without audio):</em><br /><img alt="software-dev-4.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724184659/software-dev-4_z6epyo.png"></a>
 
-We call it  <strong>Low Level</strong> when we work with code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> to control the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
+We call it  <strong>Low Level</strong> when we work with code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> which controls the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
 
 You are using the <strong>AMD64</strong> ISA if you are running a recent <strong>PC</strong> with the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backward compatibility). AMD was adopted by Intel as "x86-64".
 
@@ -45,13 +45,16 @@ The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a>
 
 &nbsp;
 
-<strong>Artificial Intelligence</strong> has a different architecture. Instead of programming code to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Science</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic. A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
-Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable  parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
+<strong>Artificial Intelligence</strong> has a different architecture. Instead of programming code to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Science</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic.
+
+Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
 <strong>TPUs (Tensor Processing Units)</strong> built specifically for machine learning work.
+
+A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
 
 LLM models and other recent advancements in algorithms enable applications to receive <strong>Natural Language</strong> prompts to make requests without programming in a computer language. The ability of the computer to understand relationships among concepts enable it to generate new poems and music videos. Over time, LLMs are created with larger <strong>context windows</strong> to insert more customized data for results more relevant to the requestor.
 
-All this is enabling <strong>AI agents</strong> that automatically perform actions previously manually done with human intelligence.
+All this is giving rise to <strong>AI agents</strong> that automatically perform actions previously requiring manual work with human intelligence.
 
 &nbsp;
 
@@ -61,11 +64,22 @@ But the mechanisms for controlling Quantum computers is very different, with <st
 The hope is that Quantum computers can run many times faster than the processors we use today that we have to call today's  processors <strong>"classical'</strong>, as in classical music. Such speed would enable the enormous calculations needed to solve problems too complex for today's computers. But there is also fear that such speed can also be used to crack security keys generated using calculations that take a lot of time today.
 
 -----------------------
+QUIZ: ESSAY
 
-Audio for the video was created using elevenlabs.ai, which ignores HTML codes such as strong.
+1. What is one advantage of using the JavaScript language?
+
+
+2. What is the advantage of using the Go language?
+
+
+
+-----------------------
+
+Audio for the video was created using the elevenlabs.ai Bill voice. It ignores HTML codes such as strong.
 Below are the adjustments that needs to be made for it to pronounce properly:
 * GUI => GooEe (Graphical User Interface)
 * Node.JS ==> Node J S
 * C++ => C + +
+* LLMs => L L Ms
 
 TODO: Use SSML for Pronunciation: Implement Speech Synthesis Markup Language (SSML) to specify how certain words should be pronounced. Wrap problematic words in &LT;phoneme> tags using either the International Phonetic Alphabet (IPA) or CMU Arpabet to guide the pronunciation accurately. https://elevenlabs.io/docs/speech-synthesis/prompting
