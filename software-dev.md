@@ -1,4 +1,4 @@
-This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev">https://bomonike.github.io/software-dev</a> from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
+This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev/">https://bomonike.github.io/software-dev</a> from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
 
 <a target="_blank" href="https://youtu.be/LlqbKrJhIVM"><em>Click this diagram to see video (without audio):</em><br /><img alt="software-dev-4.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724184659/software-dev-4_z6epyo.png"></a>
 
@@ -64,17 +64,23 @@ But the mechanisms for controlling Quantum computers is very different, with <st
 The hope is that Quantum computers can run many times faster than the processors we use today that we have to call today's  processors <strong>"classical'</strong>, as in classical music. Such speed would enable the enormous calculations needed to solve problems too complex for today's computers. But there is also fear that such speed can also be used to crack security keys generated using calculations that take a lot of time today.
 
 -----------------------
-QUIZ: ESSAY
+QUIZ:
 
 1. What is one advantage of using the JavaScript language?
 
 
-2. What is the advantage of using the Go language?
 
+
+2. What is an advantage of using the Go language?
+
+
+
+
+3. What is an advantage of using ARM vs. AMD chips?
 
 
 -----------------------
-
+Description:
 Audio for the video was created using the elevenlabs.ai Bill voice. It ignores HTML codes such as strong.
 Below are the adjustments that needs to be made for it to pronounce properly:
 * GUI => GooEe (Graphical User Interface)
