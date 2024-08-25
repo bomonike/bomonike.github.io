@@ -4,7 +4,9 @@ This is shown formatted at <a target="_blank" href="https://bomonike.github.io/s
 
 We call it  <strong>Low Level</strong> when we work with code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> which controls the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
 
-You are using the <strong>AMD64</strong> ISA if you are running a recent <strong>PC</strong> with the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backward compatibility). AMD was adopted by Intel as "x86-64".
+The ISA is referenced by <strong>driver</strong> code that each <strong>OS</strong> (Operating System) uses to control various devices connected to the computer.
+
+The <strong>AMD64</strong> ISA controls recent <strong>PCs</strong> running the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backward compatibility). AMD was adopted by Intel as "x86-64".
 
 As for Apple, its <strong>macOS</strong> operating systems is the latest in several generations, with different names. Older versions ran on Intel chips until switching to using ARM chips they branded as "Apple Silicon". The R in ARM stands for <strong>"Reduced Instruction Set Computer"</strong>. Its smaller instruction set makes the chip runs faster and cooler, which is why it's also used on <strong>Android</strong> mobile phones as well as Linux and Windows as well.
 
@@ -12,10 +14,9 @@ As for Apple, its <strong>macOS</strong> operating systems is the latest in seve
 
 Over time, many companies have created easier and more reliable ways to control hardware at a <strong>High Level</strong>
 becuase it's tedious and time consuming to work with low-level code.
-That's why there are many ways to create, <strong>for each Operating System</strong>, <strong>application</strong> programs  which present a Graphical User Interface (<strong>GUI</strong>) for people to view and enter data.
+That's why there are many ways to create, <strong>for each Operating System</strong>, <strong>application</strong> programs  which present a Graphical User Interface (<strong>GUI</strong>) for end-users to view and enter data.
 
 Programmers use <strong>Code Editors</strong> to craft <strong>programmatic</strong> code.
-During the last decade, <strong>Low-Code/No-Code GUI</strong> enabled end-users to create code easier.
 
 &nbsp;
 
@@ -27,28 +28,31 @@ At the low-level, an executable is created by a <strong>Linker</strong> program 
 Editors such as Microsoft's Visual Studio Code include a Command-Line Terminal app that executes <strong>Shell</strong> scripts to manage the operating system.
 For example, shell commands download and install commands such as <strong>git</strong> to clone and push code changes to and from the GitHub.com website holding source code files.
 
-At the top of programming code are requests for <strong>download and install</strong> of 3rd-party <strong>packages</strong> so that their contents can be referenced within the code.
+At the top of programming code are requests for <strong>download and install</strong> the 3rd-party <strong>packages</strong> referenced within the code.
 
 &nbsp;
 
 <strong>C and C + +</strong> source code is <strong>compiled</strong> into Assembly code.<a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">*</a>
 
 As for Higher Level programming,
-<strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
+<strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> code that's independent of operating system. A <strong>Runtime</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
 
-<strong>Python</strong> code are <strong>Interpreted</strong> to be run by a <strong>Run-Time</strong> utility installed on each target operating system to issue commands specific to each operating system.
+<strong>Python</strong> code are <strong>Interpreted</strong> to be run by a <strong>Runtime</strong> utility installed on each target operating system to issue commands specific to each operating system.
 
 <strong>JavaScript</strong> is also interpreted, but browsers have that interpreter built-in.
 On servers, JavaScript is run using Node J S installed on each server.
 
-The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular because its compiler creates a standalone executable that includes the Go runtime. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go run-time on every server.
+The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular because its compiler creates a standalone executable that includes the Go runtime. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go runtime on every server.
+
+During the last decade, <strong>Low-Code/No-Code GUI</strong> enabled end-users to create code easier.
+<strong>RPA</strong> (Robotics Process Automation) automated how end-user type and click in the GUI.
 
 &nbsp;
 
 <strong>Artificial Intelligence</strong> has a different architecture. <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Science</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> which derive a <strong>model</strong> containing logic created from data rather than programming code. AI models are then referenced by executables making calls to Application Programming Interfaces (<strong>APIs</strong>).
 
-Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
-<strong>TPUs (Tensor Processing Units)</strong> built specifically for machine learning work.
+Programs doing the training can run much faster by using parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now <strong>TPUs (Tensor Processing Units)</strong> built specifically for machine learning work.
+using NVIDIA's <strong>CUDA</strong> package that enable
 
 The creation of <strong>LLMs (Large Language Models)</strong> and other recent advancements in algorithms enable applications to receive <strong>Natural Language</strong> prompts instead of a computer language. The ability of the computer to understand relationships among concepts enable it to generate new poems and music videos. Over time, LLMs are created with larger <strong>context windows</strong> to insert more customized data for results more relevant to the requestor.
 
@@ -87,6 +91,7 @@ Below are the adjustments that needs to be made for it to pronounce properly:
 * Node.JS ==> Node J S
 * C++ => C + +
 * LLMs => L L Ms
+* ISA => I S A
 
 TODO: Use SSML for Pronunciation: Implement Speech Synthesis Markup Language (SSML) to specify how certain words should be pronounced. Wrap problematic words in &LT;phoneme> tags using either the International Phonetic Alphabet (IPA) or CMU Arpabet to guide the pronunciation accurately. https://elevenlabs.io/docs/speech-synthesis/prompting
 
