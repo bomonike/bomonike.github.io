@@ -176,6 +176,7 @@ comments: true
 *	BPMN	=	Business Process Model Notation
 *	BPT	=	Business Process Technology (OutSystems workflow engine)
 *	BRB	=	Be Right Back	(internet slang)
+* BRG = Blue, Green, and Red (color space instead of RGB by OpenCV)
 *	BRM	=	Business Requirements Management
 *	BSI	=	Business-Sensitive Informatioin	(used in TPM)
 *	BSM	=	Basic Security Module	(used in TPM)
@@ -349,7 +350,7 @@ comments: true
 *	DEX	=	Decentralized Exchanges (Blockchain)
 *	DFC	=	Distributed Fragments Cryptography (by AKeyless.io)
 *	DFIR	=	Digital Forensics and Incident Response
-*	DFS	=	Depth-First Search
+*	DFS	=	Depth-First Search (programming algorithm)
 *	DGO	=	Data Governance Organization/Officer (for security)
 *	DHCP	=	Dynamic Host Configuration Protocol	(automatically assigns IP addresses to devices on a network)
 *	DHS	=	Department of Homeland Security	(US government organization)

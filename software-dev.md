@@ -10,13 +10,12 @@ As for Apple, its <strong>macOS</strong> operating systems is the latest in seve
 
 &nbsp;
 
-It's tedious and time consuming to work with low-level code.
-So, over time, many companies have created easier and more reliable ways to control hardware at a <strong>High Level</strong>.
-That's why there are many ways to create, <strong>for each Operating System</strong>, <strong>application</strong> programs  which present a Graphical User Interface (GUI) for people to view and enter data.
+Over time, many companies have created easier and more reliable ways to control hardware at a <strong>High Level</strong>
+becuase it's tedious and time consuming to work with low-level code.
+That's why there are many ways to create, <strong>for each Operating System</strong>, <strong>application</strong> programs  which present a Graphical User Interface (<strong>GUI</strong>) for people to view and enter data.
 
 Programmers use <strong>Code Editors</strong> to craft <strong>programmatic</strong> code.
 During the last decade, <strong>Low-Code/No-Code GUI</strong> enabled end-users to create code easier.
-Recently, <strong>Artificial Intelligence</strong> such as ChatGPT makes it possible to get output using <strong>natural language</strong> like two people talking to each other.
 
 &nbsp;
 
@@ -32,9 +31,10 @@ At the top of programming code are requests for <strong>download and install</st
 
 &nbsp;
 
-As for Higher Level programming, <strong>C and C + +</strong> source code is <strong>compiled</strong> into Assembly code.<a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">*</a>
+<strong>C and C + +</strong> source code is <strong>compiled</strong> into Assembly code.<a target="_blank" href="https://www.youtube.com/watch?v=N2y6csonII4">*</a>
 
-Languages <strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
+As for Higher Level programming,
+<strong>Java and C sharp</strong> are also compiled, but the compiler generates <strong>Intermediate Language</strong> code that's independent of operating system. A <strong>Run-Time</strong> utility specific to each operating system translates the IL into commands specific to each operating system.
 
 <strong>Python</strong> code are <strong>Interpreted</strong> to be run by a <strong>Run-Time</strong> utility installed on each target operating system to issue commands specific to each operating system.
 
@@ -45,14 +45,12 @@ The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a>
 
 &nbsp;
 
-<strong>Artificial Intelligence</strong> has a different architecture. Instead of programming code to define logic, <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Science</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> to derive a <strong>model</strong> containing logic.
+<strong>Artificial Intelligence</strong> has a different architecture. <a target="_blank" href="https://www.youtube.com/watch?v=qtuzVc0N5o0">Data Science</a> utilities filter, clean, and organize the <strong>corpus</strong> of <strong>multi-modal</strong> data for use by <strong>machine learning training</strong> which derive a <strong>model</strong> containing logic created from data rather than programming code. AI models are then referenced by executables making calls to Application Programming Interfaces (<strong>APIs</strong>).
 
 Programs doing the training can run much faster by using NVIDIA's <strong>CUDA</strong> package that enable parallel processing by <strong>GPU (Graphics Processor Units)</strong> and now
 <strong>TPUs (Tensor Processing Units)</strong> built specifically for machine learning work.
 
-A large corpus and new techniques has enable the generation of <strong>LLMs (Large Language Models)</strong> that understand natural language and generate new content.
-
-LLM models and other recent advancements in algorithms enable applications to receive <strong>Natural Language</strong> prompts to make requests without programming in a computer language. The ability of the computer to understand relationships among concepts enable it to generate new poems and music videos. Over time, LLMs are created with larger <strong>context windows</strong> to insert more customized data for results more relevant to the requestor.
+The creation of <strong>LLMs (Large Language Models)</strong> and other recent advancements in algorithms enable applications to receive <strong>Natural Language</strong> prompts instead of a computer language. The ability of the computer to understand relationships among concepts enable it to generate new poems and music videos. Over time, LLMs are created with larger <strong>context windows</strong> to insert more customized data for results more relevant to the requestor.
 
 All this is giving rise to <strong>AI agents</strong> that automatically perform actions previously requiring manual work with human intelligence.
 
@@ -79,6 +77,8 @@ QUIZ:
 3. What is an advantage of using ARM vs. AMD chips?
 
 
+
+
 -----------------------
 Description:
 Audio for the video was created using the elevenlabs.ai Bill voice. It ignores HTML codes such as strong.
@@ -89,3 +89,7 @@ Below are the adjustments that needs to be made for it to pronounce properly:
 * LLMs => L L Ms
 
 TODO: Use SSML for Pronunciation: Implement Speech Synthesis Markup Language (SSML) to specify how certain words should be pronounced. Wrap problematic words in &LT;phoneme> tags using either the International Phonetic Alphabet (IPA) or CMU Arpabet to guide the pronunciation accurately. https://elevenlabs.io/docs/speech-synthesis/prompting
+
+
+
+Recently, <strong>Artificial Intelligence</strong> such as ChatGPT makes it possible to get output using <strong>natural language</strong> like two people talking to each other.
