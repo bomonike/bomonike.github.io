@@ -1,14 +1,14 @@
 This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev/">https://bomonike.github.io/software-dev</a> from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
 
-<a target="_blank" href="https://youtu.be/LlqbKrJhIVM"><em>Click this diagram to see video (without audio):</em><br /><img alt="software-dev-4.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724184659/software-dev-4_z6epyo.png"></a>
+<a target="_blank" href="https://youtu.be/SdxRvTWo-JU"><em>Click this diagram to see video (without audio):</em><br /><img alt="software-dev-4.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724184659/software-dev-4_z6epyo.png"></a>
 
 We call it  <strong>Low Level</strong> when we work with code that directly control the <strong>hardware</strong> that we can physically touch. The lowest level is working with commands to the <strong>Binary Machine Code</strong> which controls the <strong>CPU (Central Processor Unit)</strong>, as defined by the <strong>ISA (Instruction Set Architecture)</strong> for each particular chip design.
 
-The ISA is referenced by <strong>driver</strong> code that each <strong>OS</strong> (Operating System) uses to control various devices connected to the computer.
+The ISA is the basis for <strong>driver</strong> code that each <strong>OS</strong> (Operating System) uses to control various devices connected to the computer.
 
 The <strong>AMD64</strong> ISA controls recent <strong>PCs</strong> running the <strong>Windows</strong> or <strong>Linux</strong> Operating Systems. It's called AMD because the company figured out how to make Intel x86 work in 64 bits (while maintaining backward compatibility). AMD was adopted by Intel as "x86-64".
 
-As for Apple, its <strong>macOS</strong> operating systems is the latest in several generations, with different names. Older versions ran on Intel chips until switching to using ARM chips they branded as "Apple Silicon". The R in ARM stands for <strong>"Reduced Instruction Set Computer"</strong>. Its smaller instruction set makes the chip runs faster and cooler, which is why it's also used on <strong>Android</strong> mobile phones as well as Linux and Windows as well.
+As for Apple, its <strong>macOS</strong> operating systems is the latest in several generations, with different names. Older versions ran on Intel chips until switching to using ARM chips they branded as "Apple Silicon". The R in ARM stands for <strong>"Reduced Instruction Set Computer"</strong>. Its reduced instruction set makes the chip run faster and cooler, which is why it's also used on <strong>Android</strong> mobile phones as well as Linux and Windows.
 
 &nbsp;
 
@@ -16,7 +16,7 @@ Over time, many companies have created easier and more reliable ways to control 
 becuase it's tedious and time consuming to work with low-level code.
 That's why there are many ways to create, <strong>for each Operating System</strong>, <strong>application</strong> programs  which present a Graphical User Interface (<strong>GUI</strong>) for end-users to view and enter data.
 
-Programmers use <strong>Code Editors</strong> to craft <strong>programmatic</strong> code.
+Programmers use text <strong>Code Editors</strong> to craft <strong>programmatic</strong> code.
 
 &nbsp;
 
@@ -24,7 +24,7 @@ A file is <strong>executable</strong> by the Windows operating system if a file'
 
 However, Linux reads the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_file_signatures">first few bytes of a file (its signature)</a> to determine what program executes that file.
 
-At the low-level, an executable is created by a <strong>Linker</strong> program that combines executable objects from a <strong>library</strong> of reusable utility objects with custom <strong>object code</strong>. Object code is created by an <strong> Assembler</strong> program based on <strong>Assembly code</strong> written by programmers using a <strong>Code Editor</strong>.
+At the low-level, an executable is created by a <strong>Linker</strong> program that combines a <strong>library</strong> of reusable utility objects with custom <strong>object code</strong>. Object code is created by an <strong> Assembler</strong> program based on <strong>Assembly code</strong> written by programmers using a <strong>Code Editor</strong>.
 Editors such as Microsoft's Visual Studio Code include a Command-Line Terminal app that executes <strong>Shell</strong> scripts to manage the operating system.
 For example, shell commands download and install commands such as <strong>git</strong> to clone and push code changes to and from the GitHub.com website holding source code files.
 
@@ -42,10 +42,12 @@ As for Higher Level programming,
 <strong>JavaScript</strong> is also interpreted, but browsers have that interpreter built-in.
 On servers, JavaScript is run using Node J S installed on each server.
 
-The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular because its compiler creates a standalone executable that includes the Go runtime. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go runtime on every server.
+The <a target="_blank" href="http://wilsonmar.github.io/golang/">Go language</a> has become popular because its compiler creates a standalone executable that includes the Go <strong>runtime</strong>. A different executable is created for each operating system. This means that those running Go are happy that they don't have the hassle of installing and maintaining a Go runtime on every server.
+
+&nbsp;
 
 During the last decade, <strong>Low-Code/No-Code GUI</strong> enabled end-users to create code easier.
-<strong>RPA</strong> (Robotics Process Automation) automated how end-user type and click in the GUI.
+<strong>RPA</strong> (Robotics Process Automation) automated end-users typing and clicking in the GUI.
 
 &nbsp;
 
