@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2024-08-26"
-change: "add DRAM ENIAC :acronyms"
+change: "add CMOS MOSFET :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -265,6 +265,7 @@ comments: true
 *	CNSS	=	Committee on National Security Systems
 *	COGS	=	Cost of Goods Sold	(Financial Accounting)
 *	COMINT	=	Command Intelligence	(from intercepted SIGINT)
+* CMOS = Complimentary Metal Oxide Semiconductor (Type of metal–oxide–semiconductor field-effect transistor fabrication process using complementary and symmetrical pairs of p-type and n-type MOSFETs)
 *	COOP	=	Continuity of Operations (plan)
 *	CORS	=	Cross-Origin Resource Sharing	(used by browsers to allow web apps to access resources from other origins)
 *	COSO	=	Committee of Sponsoring Organization	(of the Treadway Commission)
@@ -773,6 +774,7 @@ comments: true
 *	mTLS	=	Mutual TLS
 * MNO = Mobile Network Operator (ATT, Verizon, T-Mobile)
 *	MOR	=	Minimum Operating Requirements	(describes the minimum environmental and connectivity requirements in order to operate computer equipment)
+* MOSFET = Metal Oxide Semiconductor Field Effect Transitor
 *	MSI	=	Microsoft Software Installer	(file extension for Microsoft Windows installer files)
 *	MTD	=	Maximum Tolerable Downtime
 *	MQTT	=	MQ Telemetry Transport
