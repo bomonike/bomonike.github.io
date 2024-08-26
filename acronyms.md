@@ -1,6 +1,7 @@
 ---
 layout: post
-date: "2024-08-23"
+date: "2024-08-26"
+change: "add DRAM ENIAC :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -360,6 +361,7 @@ comments: true
 *	DLP	=	Data Loss Prevention
 * DMARC = Domain-based Message Authentication Reporting and Conformance (policies for VMC about what to do when SPF and DKIM fails)
 *	DMCA	=	Digital Millennium Copyright Act
+*	DMI	=	Direct Media Interface (the bus connecting the chipset and the CPU)
 *	DML	=	Data Manipulation Language (to INSERT, UPDATE, DELETE SQL data)
 *	DMS	=	Database Migration Service (AWS & Microsoft Azure)
 *	DMZ	=	Demilitarized Zone	(networking)
@@ -374,6 +376,7 @@ comments: true
 * DPL = Data Protection Officer (job role required by GDPR)
 *	DQL	=	Data Query Language (to SELECT SQL data)
 *	DR	=	Disaster Recovery
+* DRAM = Dynamic Random Access Memory
 *	DRI	=	Directly Responsible Individual	(Coined by Apple for the person to make sure that a task is completed)
 *	DRP	=	Disaster Recovery Plan	(to transition from alternative business processes back to regular processes.)
 *	DRPO	=	Defense Research & Development Organization
@@ -437,6 +440,7 @@ comments: true
 * EMR	=	Elastic Map Reduce (AWS ETL)
 * EMRFS	=	EMRFS (on AWS S3 encryption at rest)
 * ENA	=	Enhanced Networking Adapter (in AWS EC2 AMI instances)
+*	ENIAC	=	Electronic Numeric Integrator And Computer (first general purpose computer)
 *	ENI	=	Elastic Network Interface	(AWS)
 *	EPS	=	Earnings Per Share
 *	ETL	=	Extract Transform and Load
@@ -603,6 +607,7 @@ comments: true
 *	IDP	=	Internal Developer Platform
 *	IDS	=	Intrusion Detection System	(A detective control used to detect attacks after they occur. A signature-based IDS (also called definition-based) uses a database of predefined traffic patterns. An anomaly-based IDS (also called behavior-based) starts with a performance baseline of normal behavior and compares network traffic against this baseline. An IDS can be either host-based (HIDS) or network-based (NIDS)
 * IDS = Influencer Dynamics Simulator (predicts how followers react to influencers)
+*	IEC	=	International Electrotechnical Commission (counterpart to the US NIST)
 *	IEM	=	Infrastructure Event Management	(AWS service to ensure high traffic can be accommodated)
 *	IETF	=	Internet Engineering Task Force
 *	IYDMMA	=	If you don't mind me asking (chat slang)
@@ -643,8 +648,9 @@ comments: true
 *	ISD	=	Internet Service Provider
 *	ISMS	=	Information Security Management System (ISO 27001)
 *	ISO	=	International Standards Organization
-*	ISSO	=	Information System Security Officer (in RMF)
 *	ISP	=	Internet Service Provider	(company providing access to the internet)
+* ISQ = International System of Quantities
+*	ISSO	=	Information System Security Officer (in RMF)
 *	ISV	=	Independent Software Vendor
 *	IT	=	Information Technologies
 *	ITAR	=	International Traffic in Arms Regulations	(US)
