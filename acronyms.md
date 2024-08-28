@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-08-26"
-change: "add CMOS MOSFET :acronyms"
+date: "2024-08-27"
+lastchange: "add ALU FPGA :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -92,6 +92,7 @@ comments: true
 *	ALEER	=	Adopt Land Expand Extend Renew	(sales strategy)
 *	ALM	=	Application Lifecycle Management	(all that goes into managing building and maintaining software applications)
 *	ALZ	=	Azure Landing Zones (Microsoft)
+*	ALU	=	Arithmetic Logic Unit (within classical CPUs)
 *	AM	=	Account Manager
 *	AMA	=	Ask Me Anything	(slang)
 *	AMA	=	Azure Marketplace Application	(such as HashiCorp Consul Service)
@@ -488,6 +489,7 @@ comments: true
 *	FOMO	=	Fear Of Missing Out
 *	FP	=	False Positive	(test result that identified a legitimate sample as bad/malicious)
 *	FQDN	=	Fully-Qualified Domain Name
+* FPGA = <a target="_blank" href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">Field Programmable Gate Array</a>
 * FPS	=	Flexible Payments Service
 * FRAP = Facilitated Risk Analysis Process (analyze impact of each individual org unit)
 *	FTE	=	Full Time Employee/Equivalent
@@ -525,6 +527,7 @@ comments: true
 *	GNM	=	Global Network Manager	(HashiCorp product feature)
 *	GNU	=	GNU is Not Unix	(a recursive acronym for the set of commands in Linux Bash scripts)
 *	GPG	=	GNU Privacy Guard	(software program to handle encryption)
+*	GPIO	=	General Purpose Input/Output (on an Arduino board)
 *	GPO	=	Group Policy Object
 *	GPS	=	Global Positioning System
 *	GPT	=	Generative Pre-trained Transformer (OpenAI GenAI)
@@ -809,6 +812,7 @@ comments: true
 *	NDA	=	Non-Disclosure Agreement
 *	NDAA	=	National Defense Authorization Act of 2020 and 2021
 *	NDE	=	Net Dollar Expansion
+*	NPU	=	Neural Processing Unit (specialized for processing AI neural networks in parallel, especially on edge/hand-held devices)
 * NDI = National Defense Information (classified secrets)
 *	NDRR	=	Net Dollar Retention Rate
 *	NFR	=	Non-Functional Requirements
