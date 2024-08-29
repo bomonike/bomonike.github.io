@@ -83,7 +83,15 @@ QUIZ:
 3. What is an advantage of using ARM vs. AMD chips?
 
 
+-----------------------
+ADDITIONAL INFO:
 
+ARM licenses its ISA.
+RISC-V is an open-source ISA.
+
+Among microprocessors:
+* The Raspberry Pico1, based on ARM and consumes 100mW while idle.
+* The Raspberry Pico2, based on RISC-V and consumes 80mW while idle.
 
 -----------------------
 Description:

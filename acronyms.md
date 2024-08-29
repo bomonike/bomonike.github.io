@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-08-27"
-lastchange: "add ALU FPGA :acronyms"
+date: "2024-08-28"
+lastchange: "add PWM :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -65,7 +65,7 @@ comments: true
 *	ACR	=	Azure Container Registry	(substitute for GitHub within Microsoft Azure cloud)
 *	ACS	=	Azure Communication Service (to send emails)
 *	AD	=	Active Directory	(Microsoft's branding for technologies that control access by users and groups)
-*	ADC	=	Analog to Digital Converter
+*	ADC	=	Analog to Digital Converter (converts continuos analog to digital number on Arduino boards)
 *	ADC	=	AWS Direct Connect (Amazon)
 *	ADE	=	Automated Device Enrollment (Microsoft 365 Intune auto configuration of macOS)
 *	ADF	=	Azure Data Factory (part of Microsoft Fabric)
@@ -120,6 +120,7 @@ comments: true
 *	ASAP	=	As Soon As Possible (slang)
 *	ASB	=	Azure Security Benchmarks (Microsoft)
 *	ASC	=	Azure Security Center (Microsoft)
+*	ASCII	=	American Standard Code Information Interchange (defined binary values to display letters and special characters)
 *	ASG	=	Auto Scaling Group	(AWS)
 *	ASG	=	Application Security Group (Azure)
 *	ASI	=	Artificial Super-Intelligence (sentient prioritizing of its own needs and desires)
@@ -906,6 +907,7 @@ comments: true
 *	PAT	=	Port Address Translation (networking)
 *	PAW	=	Privileged Access Workstation (Microsoft)
 *	PAYG	=	Pay-As-You-Go (such as for cloud services billing)
+*	PBC	=	Printed Control Board
 *	PNAC	=	Port-Based Network Attack
 *	PBC	=	Provided By Client	(SOC term)
 *	PC	=	Personal Computer	(refers to a Microsoft Windows machine)
@@ -931,11 +933,13 @@ comments: true
 *	PII	=	Personally Identifiable Information
 *	PIM	=	Privileged Identity Management
 *	PIN	=	Personal Identification Number	(a secret consisting of a small number)
+*	PIO	=	Programmable Input Output (An Arduino feature to create hardware interfaces using GPIO pins)
 * PIOPS	=	Provisioned Input Output Operations Per Second
 *	PIV	=	Personal Identity Verification
 * PKE	=	Public Key Encryption
 *	PKI	=	Public Key Infrastructure	(manages cryptographic certificates)
 *	PM	=	Product Management/Manager
+*	PLA	=	Polyactic Acid (filament for 3D printing. Made from organic materials. Has low melting point and absorbs moisture.)
 *	PLC	=	Programmable Logic Controller
 *	P&L	=	Profit and Loss
 *	PMM	=	Product Marketing Manager	(organizational role)
@@ -969,6 +973,7 @@ comments: true
 *	PVC	=	Persistent Volume Claim	(Kubernetes)
 *	PWA	=	Progressive Web Application (application intended to work on any platform with a standards-compliant browser, including desktop and mobile devices)
 *	PWC	=	Price Waterhouse Coopers (International Global Integrator Consulting firm)
+*	PWM	=	Pulse Widthe Modulation
 
 <a name="Q"></a>
 ### Q
