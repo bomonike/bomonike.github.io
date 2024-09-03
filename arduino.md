@@ -1,10 +1,25 @@
 This is at https://bomonike.github.io/arduino
 
+There are two series of low-cost, low-power SOC (System on a Chip) microcontrollers.
+
 Arduino, Inc. is an embedded hardware and software company founded in Italy.
 
 Arduino is known for its microcontroller boards
+named Uno, Mega, and Nano.
+open-sourced at ???
 
-open-sourced at
+ESP32 is by Espressif Systems based in Shanghi, China, selling chips created by TSMC using their 40 nm process.
+The ESP32-WROOM-32 has dual-core 512kB SRAM on 160/240 MHz clock and Secure boot.
+It includes 802.11 b/g/n wi-fi and Bluetooth 4.2+BLE.
+Its proprietary ESP32-NOW protocol enables communication between ESP32 units.
+It has a 12-bit SAR ADC up to 18 channels.
+It has 2x8-bit DACs.
+16-channel PWM output.
+10x capacitive touch GPIOs.
+4x SPI, 2x I2C, 2x I2S. 3x UART buses.
+https://github.com/espressif/arduino-esp32
+https://www.youtube.com/watch?v=UuxBfKA3U5M
+Get from AliExpress
 
 ## Hardware
 
@@ -146,8 +161,8 @@ Q: What is the name of a program code file written to control Arduino ? A:4m23s
 Q: How to load a Sketch ? A:34m56s
 
 
-Online Simulators
-Wokwi
+## Online Simulators
+
 Wokwi is a popular online Arduino simulator that allows you to prototype and test Arduino projects in your web browser. It supports various Arduino boards, including Uno, Mega, and Nano. Wokwi offers:
 A user-friendly interface for writing and testing Arduino code
 Simulation of various components and sensors
@@ -173,3 +188,38 @@ Sample code to get started with your design
 Learning Resources
 Arduino's official website (arduino.cc) offers numerous tutorials, project ideas, and documentation to help you learn and practice Arduino programming online. Additionally, many online learning platforms provide Arduino courses that you can take to improve your skills without needing physical hardware.
 By utilizing these online tools and resources, you can practice Arduino programming, design circuits, and simulate projects without the need for physical components, making it an excellent way to learn and experiment with Arduino technology.
+
+
+https://www.youtube.com/watch?v=GrvvkYTW_0k&t=1m25s
+MOSFET are all about Voltage
+* Depletion type N-channel
+* Enhancement type N and P channel - the most commonly used
+
+Voltage
+
+Resistance
+
+Not all MOSFETs are "Logic Level" compatible.
+Check what the BGS threshold is
+
+https://www.youtube.com/watch?v=AwRJsze_9m4
+5:13 / 20:13
+How MOSFET Works - Ultimate guide, understand like a PRO
+
+Resister
+
+Potentiameter
+
+https://www.youtube.com/watch?v=rkbjHNEKcRw
+0:24 / 8:12
+How Does a MOSFET Work?
+N-type Pentavalent (5 Valence Electrons) - Majority: Electrons, Minority: Holes
+P-type Trivalent (3 Valence Electrons) -  Majority: Holes, Minority: Electrons
+VGS
+
+https://www.youtube.com/watch?v=DLd5dUychY8
+8:31
+What is a MOSFET? How MOSFETs Work? (MOSFET
+basic structure and working principle of MOSFETs used in switching, boosting or power balancing tasks in DC-DC converter circuits, motor driver circuits and many more power electronics circuits. MOSFETs are the most widely used field-effect transistors that operate with voltage control.
+
+We can examine FETs in two groups. JFET and MOSFET comes from the initials of the Metal Oxide Semiconductor Field Effect Transistor words.

@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-08-28"
-lastchange: "add PWM :acronyms"
+date: "2024-09-02"
+lastchange: "add DNN LSD MSD :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -65,7 +65,7 @@ comments: true
 *	ACR	=	Azure Container Registry	(substitute for GitHub within Microsoft Azure cloud)
 *	ACS	=	Azure Communication Service (to send emails)
 *	AD	=	Active Directory	(Microsoft's branding for technologies that control access by users and groups)
-*	ADC	=	Analog to Digital Converter (converts continuos analog to digital number on Arduino boards)
+*	ADC	=	Analog to Digital Converter (converts continuos analog to digital values on microprocessor boards)
 *	ADC	=	AWS Direct Connect (Amazon)
 *	ADE	=	Automated Device Enrollment (Microsoft 365 Intune auto configuration of macOS)
 *	ADF	=	Azure Data Factory (part of Microsoft Fabric)
@@ -168,13 +168,15 @@ comments: true
 *	BHAG	=	Big Hairy Audacious Goal
 *	BIA	=	Business Impact Assessment
 *	BIOS	=	Basic Input Output System
+* BJT = Single Bipolar Junction Transistor
 *	BKM	=	Best Known Method
 *	BLE	=	Bluetooth Low Energy
 *	BLF	=	Business Logic Flaw
 *	BOD	=	Board of Directors
 *	BOLA	=	Broken Object Level Authorization
 *	BOPLA	=	Broken Object Property Level Authorization
-*	BOM	=	Bill of Material
+* BOM = Bite Order Mark (used in Unicode to define which UTF page a grapheme is located)
+*	BOM	=	Bill of Material (for manufacturing)
 *	BPCS	=	Basic Process Control System  (responsible for process control and monitoring of the industrial infrastructure)
 *	BPMN	=	Business Process Model Notation
 *	BPT	=	Business Process Technology (OutSystems workflow engine)
@@ -331,6 +333,7 @@ comments: true
 
 *	DaaS	=	Data as a Service
 *	DA	=	Developer Advocate
+*	DAC	=	Digital to Analog Converter
 *	DAC	=	Discretionary Access Control (for Security)
 *	DAG	=	Directed Acyclic Graph
 *	DAO	=	Decentralized Autonomous Organization
@@ -370,7 +373,8 @@ comments: true
 *	DMZ	=	Demilitarized Zone	(networking)
 *	DMV	=	Dynamic management views (Microsoft SQL query lifecycle insights monitoring)
 *	DNC	=	Do Not Connect
-*	DNS	=	Domain Name Service (networking
+*	DNN	=	Deep Neural Network
+*	DNS	=	Domain Name Service (networking)
 *	DoD	=	Definition of Done
 *	DOD	=	Department of Defense	(US government organization)
 *	DODAF	=	Department of Defense Architecture Framework
@@ -618,6 +622,7 @@ comments: true
 *	IYDMMA	=	If you don't mind me asking (chat slang)
 * IFS	=	Internal Field Separator (to define character used to split strings in Bash shell scripts)
 *	IGA	=	Identity Governance and Administration
+*	IGPT	=	Insulated Gate Bipolar Transistor
 * IGW	=	Internet Gateway
 *	IIoT	=	Industrial Internet of Things
 * IKE	=	Internet Key Exchange
@@ -721,6 +726,7 @@ comments: true
 *	LotL	=	Living off the Land (type of attack)
 * LPU = Language Processing Unit (<a target="_blank" href="https://www.youtube.com/watch?v=8wSH4XukcH8">AI Agent OS component</a>)
 *	LRS	=	Locally-Redundant Storage (within same Azure Availability Zone)
+*	LSD	=	Least Significant Digit
 *	LSI	=	Local Secondary Index (AWS DynamoDB)
 *	LTM	=	Last Twelve Months
 *	LUKS	=	Linux Unified Key Setup (root + boot + swap partition encryption)
@@ -783,6 +789,7 @@ comments: true
 *	MTD	=	Maximum Tolerable Downtime
 *	MQTT	=	MQ Telemetry Transport
 *	MSAL	=	Microsoft Authentication Libraries
+*	MSD	=	Most Significant Digit
 *	MSK	=	Managed Streaming for Kafka (AWS using Apache)
 *	MSP	=	Managed Service Provider
 *	MSSP	=	Managed Security Service Provider (A provider of outsourced SOC services)
@@ -1133,6 +1140,7 @@ comments: true
 *	SOAR	=	Security Orchestration Automation and Response
 *	SOW	=	Statement of Work
 *	SOC	=	Security Operations Center
+*	SoC	=	System on a Chip
 *	SOC2	=	Systems and Organization Controls (AICPA ISO 27701)
 *	SOP	=	Standard Operating Procedure
 *	SORN	=	System of Record Notice
@@ -1141,6 +1149,7 @@ comments: true
 *	SPF	=	Sender Policy Framework	(lists IP address of servers allowed to send email for a domain - for email authentication)
 *	SPI	=	Service Provider Interface
 *	SPI	=	Secure Personal Information
+* SPI = Serial Peripheral Interface (master/slave protocol that requires a clock signal to transmit any information)
 *	SPICE	=	Super-fast, Parallel, In-memory Calculation Engine (used in AWS QuickSight)
 *	SPIFFE	=	Secure Production Identity Framework for Everyone	(spec used by Consul Connect service mesh for establishing service identities)
 *	SPK	=	Spacecraft and Planet Kernel (files from NASA containing ephemeris data for solar system bodies, spacecraft, and other objects)
@@ -1253,6 +1262,7 @@ comments: true
 *	U	=	yoU (chat slang)
 *	UAC	=	User Account Control (on Windows)
 *	UAT	=	User Acceptance Test
+*	UART	=	Universal Asynchronous Receiver / Transmitter (protocol)
 *	UCS	=	User
 *	UDF	=	User-Defined Function
 *	UDM	=	Unified Data Management
