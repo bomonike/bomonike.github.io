@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-09-02"
+date: "2024-09-03"
 lastchange: "add DNN LSD MSD :acronyms"
 file: "acronyms"
 title: "Acronyms"
@@ -1104,6 +1104,7 @@ comments: true
 *	SEB	=	Secure Enterprise Browsers
 *	SEC	=	Security and Exchange Commission (regulates US financial markets)
 *	SES	=	Simple Email Service	(AWS)
+*	SEU	=	Single Event Upset (a soft error caused by a random alpha particle flipping a bit)
 *	SF	=	Service Fabric	(Azure)
 * SG	=	Security Group
 * SGD	=	Stochastic Gradient Descent (AI technique to iteratively optimize)
