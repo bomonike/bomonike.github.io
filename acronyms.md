@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-03"
-lastchange: "add DNN LSD MSD :acronyms"
+date: "2024-09-07"
+lastchange: "add NSFET :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -177,6 +177,7 @@ comments: true
 *	BOPLA	=	Broken Object Property Level Authorization
 * BOM = Bite Order Mark (used in Unicode to define which UTF page a grapheme is located)
 *	BOM	=	Bill of Material (for manufacturing)
+* BPM = Beats Per Minute (in music)
 *	BPCS	=	Basic Process Control System  (responsible for process control and monitoring of the industrial infrastructure)
 *	BPMN	=	Business Process Model Notation
 *	BPT	=	Business Process Technology (OutSystems workflow engine)
@@ -237,10 +238,11 @@ comments: true
 *	CDN	=	Content Delivery Network (Amazon)
 *	CDPI	=	Control Data-Plane Interface (between SDN Datapath and Controller)
 *	CE	=	Community Edition
-*	CEO	=	Chief Executive Officer
+*	CEO	=	Chief Executive Officer (position title)
 *	CF	=	CloudFormation (AWS IaC)
 *	CFAA	=	Computer Fraud & Abuse Act (of 1986)
 *	CfCT	=	Customizations for Control Tower (Amazon)
+* CFET = Complementary FET
 *	CFS	=	Completely Fair Scheduler (Kubernetes CPU allocation among cgroups)
 *	CFT	=	Cloud Foundation Toolkit (Google Forseti Config Validator managed by Scorecard CLI utility)
 *	CFT	=	CloudFormation Templates (Amazon)
@@ -460,11 +462,13 @@ comments: true
 *	EPSS	=	Exploit Prediction Scoring System (to predict the likelihood of a vulnerability being exploited)
 *	ERM	=	Enterprise Risk Management
 *	ERP	=	Enterprise Resource Planning	(SAP does this)
+* eSRAM = embedded Static Random-Access Memory (TSMC memory coupled with the GPU of Microsoft Xbox One gaming console's architecture)
 * ESNI = Encrypted Server Name Indication (with TLS 1.3)
 *	ETDR	=	Endpoint Threat Detection and Response (security)
 *	ETW	=	Event Tracing for Windows (Microsoft EventPipe)
 *	EU	=	European Union
 * EUC = End-User Computing (includes SSO, MFA, RBAC, IAM)
+* EUV = Extreme Ultraviolet (lithography to make semiconductor chips)
 *	EV	=	Extended Validation	(certificate)
 
 <a name="F"></a>
@@ -487,6 +491,7 @@ comments: true
 *	FIFO	=	First In - First Out
 *	FIM	=	Federated Identity Management
 *	FIM	=	File Integrity Monitoring	(for Intrusion Detection)
+*	FinFET	=	Fin (as in fish) FET
 *	FISMA	=	Federal Information Security Management Act (US government)
 *	FM	=	Foundation Model (LLM for Generative AI)
 *	FMCG	=	Fast-Moving Consumer Goods
@@ -497,6 +502,7 @@ comments: true
 * FPGA = <a target="_blank" href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">Field Programmable Gate Array</a>
 * FPS	=	Flexible Payments Service
 * FRAP = Facilitated Risk Analysis Process (analyze impact of each individual org unit)
+* FSFET = Forksheet Field-Effect Transistor
 *	FTE	=	Full Time Employee/Equivalent
 *	FTK	=	Forensic ToolKit (drive imager tool from AccessData to preserve evidence)
 *	FQDN	=	Fully Qualified Domain Name
@@ -511,6 +517,7 @@ comments: true
 
 *	GAPP	=	Generally Accepted Privacy Principles	(developed by accountants)
 *	GA	=	General Availability
+* GAA = Gate All-Around (transitor technology used in FinFET & MBCFET)
 *	GAI	=	Generative Artificial Intelligence
 *	GAM	=	Global Account Manager	(job role)
 *	GANS	=	Generative Adversarial Networks (Generative AI)
@@ -570,6 +577,7 @@ comments: true
 *	HiPPO	=	Highest Paid Person‚Äôs Opinions
 *	HLS	=	HTTP Live Streaming (Apple video streaming protocol)
 *	HMI	=	Human-Machine Interface
+* HNDL = Harvest Now, Decrypt Later (store encrypted data for decrypting later using post-quantum computers)
 *	HPA	=	Horizontal Pod Autoscaler	(Kubernetes)
 *	HPC	=	High-Performance Compute
 * HQL = Hibernate Query Language (object-oriented ORM SQL with inheritance polymorphism used by Java)
@@ -745,6 +753,7 @@ comments: true
 *	MAP	=	Minimum Acceptable Product
 *	MASINT	=	Measurement and Signatures Intelligence	(of weapons capabilities and industrial activities)
 *	MBR	=	Master Boot Record
+*	MBCFET	=	Multi-Bridge Channel Field Effect Transister (Samsung)
 *	MCSB	=	Microsoft Cybersecurity Security Benchmark (best-practice framework using Microsoft Defender for Cloud. Successor of Azure Security Benchmark v3)
 *	MCR	=	Microsoft Container Registry
 *	MCRA	=	Microsoft Cybersecurity Reference Architectures
@@ -775,6 +784,7 @@ comments: true
 *	MNC	=	Multi-National Corporation
 *	MOD	=	Manager on Duty (incident manager - security and hospitality industry)
 * MoE = Mixture of Experts (in AI)
+* MOSFET = Metal Oxide Field Effect Transitor
 *	MPP	=	Massively Parallel Processing (on databases)
 *	MS	=	Microsoft
 *	MSA	=	Master Service Agreement
@@ -842,6 +852,7 @@ comments: true
 *	NPS	=	Net Promoter Score (rating by customers willing to promote to others)
 *	NPU	=	Neuro Processing Unit (powers Microft's AI laptops)
 *	NSA	=	National Security Agency	(conducts SIGINT)
+* NSFET = Nanosheet Field-Effect Transistor
 *	NSFW	=	Not Safe For Work (chat slang)
 *	NSG	=	Network Security Group	(Azure)
 *	NSP	=	Next Sentence Prediction (GenAI for BERT Natural Language Processing)
@@ -930,6 +941,7 @@ comments: true
 *	PEP	=	Policy Enforcement Point	(filters requests and makes eXtensible Access Control Markup Language (XACML) to a Policy Decision Point (PDP)
 *	PETM	=	Parameter-Efficient Tuning Methods (in Generative AI)
 *	PF	=	Privacy Framework
+* PFAS = Per- and polyfluoroalkyl Substances (<a target="_blank" href="https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances">carcinogenic</a>)
 *	PFS	=	Perfect Forward Secrecy
 * PHD	=	Personal Health Dashboard
 *	PHI	=	Protected Health Information
@@ -959,7 +971,6 @@ comments: true
 *	PPG	=	Point-to-Point Tunneling Protocol (networking)
 *	PPG	=	Proximity Placement Group (Azure VMs)
 *	PPK	=	Putty Private Key (AWS private key certificate encoding file type for Windows PuTTY SSH client)
-* HNDL = Harvest Now, Decrypt Later (store encrypted data for decrypting later using post-quantum computers)
 *	PPTP	=	Point-to-Point Tunneling Protocol
 *	PQC	=	Post-Quantum Cryptography (encryption resistant to fast quantum computers)
 *	PR	=	Pull Request	(GitHub feature for suggesting code changes and integrating them into the main code base)
@@ -1321,6 +1332,7 @@ comments: true
 *	VRP	=	Vulnerability Research Program (way for organizations to receive security vulnerabilities found)
 *	VSM	=	Value Stream Mapping
 *	VSTS	=	Visual Studio Team Services  (Microsoft)
+* VTFET	=	Vertical Transport Field Effect Transitor (IBM)
 * VTL	=	Virtual Tape Library
 *	vTPM	=	Virtual Trusted Platform Module
 * VUI	=	Voice User Interface (Amazon Alexa & Google Home)
