@@ -9,6 +9,10 @@ named Uno, Mega, and Nano.
 open-sourced at ???
 
 ESP32 is by Espressif Systems based in Shanghi, China, selling chips created by TSMC using their 40 nm process.
+
+Available from AdaFruit, Sparkfun,
+
+https://www.youtube.com/watch?v=A5CB4t9sukM
 The ESP32-WROOM-32 has dual-core 512kB SRAM on 160/240 MHz clock and Secure boot.
 It includes 802.11 b/g/n wi-fi and Bluetooth 4.2+BLE.
 Its proprietary ESP32-NOW protocol enables communication between ESP32 units.

@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-07"
-lastchange: "add NSFET :acronyms"
+date: "2024-09-10"
+lastchange: "add SOTA :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -1156,6 +1156,7 @@ comments: true
 *	SOC2	=	Systems and Organization Controls (AICPA ISO 27701)
 *	SOP	=	Standard Operating Procedure
 *	SORN	=	System of Record Notice
+* SOTA = State of the Art
 *	SOX	=	Sarbanes-Oxley Act
 *	SPA	=	Single Page Application
 *	SPF	=	Sender Policy Framework	(lists IP address of servers allowed to send email for a domain - for email authentication)
