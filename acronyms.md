@@ -757,6 +757,7 @@ comments: true
 *	MCSB	=	Microsoft Cybersecurity Security Benchmark (best-practice framework using Microsoft Defender for Cloud. Successor of Azure Security Benchmark v3)
 *	MCR	=	Microsoft Container Registry
 *	MCRA	=	Microsoft Cybersecurity Reference Architectures
+*	MCU	=	Microprocessor Unit (integrated circuit that contains one or more CPUs and supporting electronics for general-purpose computing)
 *	MDFC	=	Microsoft Defender for Cloud
 *	MDT	=	Microsoft Deployment Toolkit (to install Windows 11 from file shares)
 *	MDTI	=	Microsoft Defender Threat Intelligence

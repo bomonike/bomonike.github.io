@@ -65,6 +65,25 @@ B: Making logic gates from transistors on a breadboard
 https://www.youtube.com/watch?v=5vRAACeebjI
 C: Fun with Transistors
 
+## Competition among Edge SoC Devices
+
+https://paperswithcode.com/paper/deepedgebench-benchmarking-deep-neural
+EdgeAI (Edge computing based Artificial Intelligence) has been most actively researched for the last few years to handle variety of massively distributed AI applications to meet up the strict latency requirements. Meanwhile, many companies have released edge devices with smaller form factors (low power consumption and limited resources) for acting as compute nodes at the edge computing environments.
+   * Raspberry Pi
+   * Nvidia's Jetson Nano
+
+Although the edge devices are limited in terms of computing power and hardware resources, they are powered by accelerators to enhance their performance behavior. Therefore, it is interesting to see how AI-based Deep Neural Networks perform on such devices with limited resources. In this work, we present and compare the performance in terms of inference time and power consumption of the four Systems on a Chip (SoCs) on different deep learning models and frameworks:
+   * Asus Tinker Edge R,
+   * Raspberry Pi 4,
+   * Google Coral Dev Board,
+   * Nvidia Jetson Nano,
+   * microcontroller: Arduino Nano 33 BLE,
+
+We also provide a method for measuring power consumption, inference time and accuracy for the devices, which can be easily extended to other devices. Our results showcase that, for Tensorflow based quantized model, the <strong>Google Coral Dev Board</strong> delivers the best performance, both for inference time and power consumption.
+
+For a low fraction of inference computation time, i.e. less than 29.3% of the time for MobileNetV2, the Jetson Nano performs faster than the other devices.
+
+
 ## Breadboard
 
 Q: What voltage do Ardino boards run on ?
@@ -227,3 +246,8 @@ What is a MOSFET? How MOSFETs Work? (MOSFET
 basic structure and working principle of MOSFETs used in switching, boosting or power balancing tasks in DC-DC converter circuits, motor driver circuits and many more power electronics circuits. MOSFETs are the most widely used field-effect transistors that operate with voltage control.
 
 We can examine FETs in two groups. JFET and MOSFET comes from the initials of the Metal Oxide Semiconductor Field Effect Transistor words.
+
+## Papers mentioning Arduino
+
+https://paperswithcode.com/search?q_meta=&q_type=&q=arduino
+
