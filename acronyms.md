@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2024-09-10"
-lastchange: "add SOTA :acronyms"
+lastchange: "add ANI DSP ReLU :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -103,6 +103,7 @@ comments: true
 *	AMQP	=	Advanced Message Queuing Protocol
 * AMSI = Antimalware Scan Interface (Windows logging mechanism)
 * AMZN	=	(Amazon corporation stock market symbol and URL shortener host name)
+* ANI = Artificial Narrow Intelligence
 * ANN	=	Artificial Neural Networks (emulating the 80 billion neurons in human brains)
 *	AO	=	Authorizing Official (in RMF)
 *	API	=	Application Programming Interface
@@ -395,6 +396,7 @@ comments: true
 *	DSC	=	Desired State Configuration (declarative DevOps)
 *	DSL	=	Domain-Specific Language (used to control Apache Kafka stream processing)
 *	DSL	=	Domain-Specific Language (used to control Apache Kafka stream processing)
+* DSP = Digital Signal Processing
 * DSSE = Dead Simple Signing Envelope (signing methods and formats used by Secure Systems Lab)
 *	DSSS	=	Direct-Sequence Spread Spectrum
 *	DTLS	=	Datagram Transport Layer Security
@@ -484,6 +486,7 @@ comments: true
 *	FEDRAMP	=	Federal Risk and Authorization Management Program
 * FEA = Finite Element Analysis (generate a computer model of components within actual system to analyze response to stresses)
 * FEM = Finite Element Method (method for numerically solving differential equations)
+* FFT = Fast Fourier transform
 *	FGAC	=	Fine-grained Access Control (AWS)
 *	FHRP	=	First Hop Redundancy Protocol (for shared IP routing redundancy)
 * FHS = Filesystem Hierarchy Standard (directory structure of Linux distributions)
@@ -977,6 +980,7 @@ comments: true
 *	PR	=	Pull Request	(GitHub feature for suggesting code changes and integrating them into the main code base)
 *	PRD	=	Production (vs NPD for non-production in keeping with a consistent number of letters)
 *	PS	=	Professional Services
+*	PSD	=	Power Spectral Density (<a target="_blank" href="https://blog.endaq.com/why-the-power-spectral-density-psd-is-the-gold-standard-of-vibration-analysis">for vibration spectrum analysis</a>)
 *	PSE	=	Professional Services Engineer
 *	PSIRT	=	Product Security Incident Response Team (protects customers of products)
 *	PSK	=	Pre-Shared Key
@@ -1045,6 +1049,7 @@ comments: true
 *	RLAIF	=	Reinforcement Learning with AI/LLM Feedback (Anthropic's Constitutional AI)
 *	RLHF	=	Reinforcement Learning with Human Feedback (to fine-tune ML rates after initial training)
 *	RLS	=	Row-Level Security (in SQL database tables)
+* ReLU = Rectified Linear Unit (in Artificial Intelligence)
 *	RMF	=	Risk Management Framework	(for controls defined in NIST SP 800-53)
 * RMM = Remote Monitoring and Management (utilities)
 *	RNG	=	Random Number Generator
@@ -1335,6 +1340,7 @@ comments: true
 *	VSM	=	Value Stream Mapping
 *	VSTS	=	Visual Studio Team Services  (Microsoft)
 * VTFET	=	Vertical Transport Field Effect Transitor (IBM)
+* VTOC = Volatile Organic Compounds
 * VTL	=	Virtual Tape Library
 *	vTPM	=	Virtual Trusted Platform Module
 * VUI	=	Voice User Interface (Amazon Alexa & Google Home)
