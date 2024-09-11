@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2024-09-10"
-lastchange: "add ANI DSP ReLU :acronyms"
+lastchange: "add HBD TTT DIY ANI DSP ReLU :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -366,6 +366,7 @@ comments: true
 *	DHS	=	Department of Homeland Security	(US government organization)
 * DiD = Defense in depth (for security)
 *	DIR	=	Detection and Incident Response (security workflow)
+* DIY = Do It Yourself
 *	DKIM	=	DomainKeys Identified Mail	(provides public keys for signing of emails to prevent spoofing)
 *	DLP	=	Data Loss Prevention
 * DMARC = Domain-based Message Authentication Reporting and Conformance (policies for VMC about what to do when SPF and DKIM fails)
@@ -566,6 +567,7 @@ comments: true
 *	HADR	=	High Availability	Disaster Recovery
 * HAML = HTML Abstraction Markup Language (a template used in Ruby Rails views to simplify writing HTML)
 *	HANA	=	High-performance ANalytic Application	(SAP's in-memory column-oriented relational DBMS)
+* HBD = Happy Birth Day
 *	HBI	=	High Business Impact (flag for Azure to add encryption and limit diagnostics collection on sensitive data)
 *	HC	=	HashiCorp
 *	HCL	=	HashiCorp Configuration Language
@@ -1270,6 +1272,7 @@ comments: true
 *	TTP	=	Trusted Third Party
 *	TTP	=	Tactics + Techniques + Procedures (of security attack)
 *	TTS	=	Text To Speech
+*	TTT	=	Train the Trainer
 *	TTV	=	Time to Value	(marketing term)
 *	TTX	=	TableTop eXercise	(for security resilience)
 *	TUI	=	Text-based User Interface (Command Line Interface)
