@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-19"
+date: "2024-09-12"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -16,21 +16,24 @@ comments: true
 {% include l18n.html %}
 {% include _toc.html %}
 
-Here are the classes I've seen that teach Python programming.
+Here are the tutorials I've seen that teach Python programming.
+
+See my tutorial for how I would teach introduction to Python
+in the ChatGPT age that portends unemployed programmers.
 
 {% include whatever.html %}
 
 ## Python Official documentation
 
 <a target="_blank" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial</a>
-is the official tutorial.
+is the official tutorial by those who created the Python language.
 
 <a target="_blank" href="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</a> is the official documentation.
 
 Official FREE 42-hour online course to prepare for Python certification exams
 2-course series:
 * <a target="_blank" href="https://edube.org/study/pe1">Python Essentials - Part 1 (Basics)</a> for the
-<a target="_blank" href="https://ums.edube.org/products/pcep-30-02-exam-and-practice-test-bundle">$71 with practice test</a>
+To prepare for the <a target="_blank" href="https://ums.edube.org/products/pcep-30-02-exam-and-practice-test-bundle">$71 with practice test</a>
 PCEP-30-02: Certified Entry-Level Python Programmer certification
    1. Introduction to Python and computer programming
    2. Data types, variables, basic input-output operations, and basic operators;
@@ -43,6 +46,15 @@ PCAP-31-03: Certified Associate in Python Programming  certification
    2. Strings, String and List Methods, Exceptions
    3. Object-Oriented Programming
 
+## Python For Aerospace
+
+<a target="_blank" href="https://www.linkedin.com/in/angelina-tsuboi-322028211/">Angelina Tsuboi</a>
+makes use of Google Colab in her
+https://www.pythonforaerospace.com/
+on
+https://www.youtube.com/watch?v=V4jXVrUJsfM
+Her code is at
+https://github.com/ANG13T/python-for-aerospace
 
 ## Mind maps
 

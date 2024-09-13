@@ -1,9 +1,10 @@
 ---
 layout: post
-date: "2024-07-19"
+date: "2024-09-12"
+lastchange: "Add whileloop :python-coding"
 file: "python-coding"
 title: "Python Coding"
-excerpt: "The rules shown in samples using Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
+excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
 tags: [python, coding]
 image:
 # python-samples-1900x500.jpg
@@ -35,14 +36,19 @@ This is the last in my series of articles about Python:
 
 {% include whatever.html %}
 
-## Summary
+## What This Fixes
 
-<a target="_blank" href="https://www.youtube.com/watch?v=x7X9w_GIm1s">VIDEO</a>: Python in 100 seconds:
+In <a target="_blank" href="https://bomonike.github.io/python-tutorials/">my python-tutorials page</a> I list the many tutorials on YouTube and paid subscription channels.
 
+What I don't like about them I aim to fix on this page.
 
-## Setup an IDE
+* Over-emphasis on games rather than practical usage that improves productivity, etc. Making trivial games cheapens Python as if it doesn't matter.
 
-The most popular IDEs for Python are:
+* Assumption that people invoke Python programs and wait to manually answer input() commands. In real life, Python programs are executed automatically. So provide data in CLI invocation parameters and CSV files. Verify whether all input data is correct before making changes.
+
+* Lack of security features, such as retrieving API keys from a memory variable or (better yet) from a Key Vault rather that having them hard-coded in the program source code.
+
+* Over-emphasize the use of a particular IDE add-ons which those who use Google Colab can't take advantage of. The most popular IDEs for Python are:
 
    * VSCode from Microsoft (free) has add-ons for Python, but some fear vulnerabilities from unknown authors. <a target="_blank" href="https://app.pluralsight.com/guides/visual-studio-code-for-python-development">BLOG: Setup VSCode for Python Development</a> https://code.visualstudio.com/docs/editor/extension-marketplace
 
@@ -52,16 +58,19 @@ The most popular IDEs for Python are:
 
    * Stryker?
 
+## Debugging using IDE
+
 See key/value pairs without typing <tt>print</tt> statements in code, like an Xray machine:
-1. click next to a line number at the left to set a <strong>Breakpoint</strong>.
+1. Click next to a line number at the left to set a <strong>Breakpoint</strong>.
 1. Click "RUN AND DEBUG" to see variables: Locals and Globals.
 1. To expand and contract, click ">" and "V" in front of items.
 1. "special variables" are dunder (double underline) variables.
 1. Under each "function variables" and special variables of their own. For a list, it's append, clear, copy, etc.
 1. Under <tt>Globals</tt> are its special variable (such as __file__ for the file path of the program) and class variables, plus an entry for each class defined in the code (such as unittest).
 
+<hr />
 
-### Python Code Scans
+## Use Python Code Scans
 
 mypy
 
@@ -99,11 +108,12 @@ E. <a target="_blank" href="https://github.com/advanced-security/demo-python">Gi
 https://7451111251303.gumroad.com/l/wotve
 <hr />
 
-There is  time complexity, data complexity,
-
-<a name="TimeComplexity"></a>
 
 ### Time Complexity Big Oh notation
+
+There is time complexity, data complexity, etc.
+
+<a name="TimeComplexity"></a>
 
 Big-O notation summarizes Time Complexity analysis, which estimates how long it can take for an algorithm to complete based on its structure. That's worst-case, before optimizations such as memoization.
 
@@ -236,7 +246,7 @@ PROTIP: Research and find out what each is about:
 1. <a href="#assert">assert</a>
 1. async
 1. await
-1. break - force escape from for/while loop
+1. break - force escape from for/<a href="#WhileLoop">while</a> loop
 1. class
 1. continue - force loop again next iteration
 1. def - define a custom function
@@ -295,6 +305,22 @@ Soft keywords:
 
 
 Press control+D to exit anytime.
+
+<a name="WhileLoop"></a>
+
+## While Loop
+
+CAUTION: What's wrong with this code?
+
+<img alt="Insecure While loop" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726233213/while-loop-password_zolqrg.png">
+
+PROTIP: Passwords and other secrets should not be requested in an input() prompt because that would expose the passwords in CLI logs.
+
+PROTIP: Passwords and other secrets should not be stored in programming code.
+
+PROTIP: The way to verify passwords is not to store them as the raw password which the user typed in but as a hash of what the password the user typed in. The hash would also be created with a "salt" to ensure randomness. To verify whether the user provides the correct password, the program would add the salt to calculate the hash the user provides, then compare the two.
+
+PROTIP: The user should be provided with a set <strong>limited number of tries</strong>. When exceeded, the user and IP address used should be locked out, entered in central (SIEM) security logs, and reported as a Security incident.
 
 
 ## Built-in Methods/Functions
@@ -379,13 +405,17 @@ https://docs.python.org/3/library/functions.html
 
 <hr />
 
+The first thing that most tutorials cover is this:
+
 ## print, printf, echo
 
-PROTIP: Don't just print out the value. Include the variable name:
+PROTIP: Don't just print out the value. Include the variable name, such as:
 
 ```
-print("var1=",var1)
+print("=== var1=",var1)
 ```
+
+## Magic underlines
 
 <a target="_blank" href="https://www.youtube.com/watch?v=EoNOWVYKyo0">VIDEO</a> from idently.co:
 Underlines in numbers are ignored by Python:
@@ -2276,6 +2306,10 @@ c
 Problem Solving for Developers - A Beginner's Guide
 
 jointaro.com/r/neetcode
+
+<a target="_blank" href="https://www.youtube.com/watch?v=x7X9w_GIm1s">VIDEO</a>: Python in 100 seconds:
+
+
 
 ## More about Python
 

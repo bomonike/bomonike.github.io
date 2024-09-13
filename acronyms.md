@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-10"
-lastchange: "add HBD TTT DIY ANI DSP ReLU :acronyms"
+date: "2024-09-13"
+lastchange: "add PMS NUI KOL ENS TLDR :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -454,6 +454,7 @@ comments: true
 * ENA	=	Enhanced Networking Adapter (in AWS EC2 AMI instances)
 *	ENIAC	=	Electronic Numeric Integrator And Computer (first general purpose computer)
 *	ENI	=	Elastic Network Interface	(AWS)
+* ENS = Ethereum Name Service (provides names to wallet addresses to simplify token transactions)
 *	EPS	=	Earnings Per Share
 *	ETL	=	Extract Transform and Load
 * EOF = End of File
@@ -687,6 +688,7 @@ comments: true
 * J2EE	=	Java Enterprise Edition
 *	JIT	=	Just-In-Time (access for Zero Trust)
 *	JEA	=	Just-Enough-Access (for Zero Trust)
+* JND = Just Noticeable Difference (The minimum amount of change or difference required for a change to be perceptible to the human eye)
 *	JOSE	=	Javascript Object Signing and Encryption (standard)
 *	JSON	=	JavaScript Notation	(data format)
 *	JWT	=	JSON Web Token	(Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims)
@@ -703,6 +705,7 @@ comments: true
 *	KMIP	=	Key Management Interoperability Protocol
 *	KMS	=	Key Management Service	(AWS)
 *	KNOB	=	Key Negotiation of Bluetooth  (MITM attack on paired Bluetooth devices' security mechanisms)
+* KOL = Key Opinion Leader
 *	KPI	=	Key Performance Indicator
 *	KPL	=	Kinesis Python Library (AWS)
 *	KPU	=	Kinesis Processing Units (AWS streaming memory and compute)
@@ -841,6 +844,7 @@ comments: true
 *	NDRR	=	Net Dollar Retention Rate
 *	NFR	=	Non-Functional Requirements
 *	NFS	=	Network File System
+*	NFT	=	Non-fungible Tokens (currently defined as investments rather than consumer goods)
 *	NFV	=	Network Function Virtualization
 * NGC = NVIDIA GPU Cloud
 *	NGFW	=	Next-Generation firewall	(Originally from Palo Alto - it examines application data to filter traffic at the highest application layer of networks)
@@ -865,6 +869,7 @@ comments: true
 *	NTA	=	Network Traffic Anomaly
 *	NTM	=	Next Twelve Months
 *	NTP	=	Network Time Protocol
+* NUI = Natural User Interface
 *	NVIDIA	=	(the corporation which produces GPUs for AI and graphics)
 * NVMe = Non-Volatile Memory Express (protocol to connect SSDs to the CPU via high-speed PCIe bus)
 
@@ -969,6 +974,7 @@ comments: true
 *	P&L	=	Profit and Loss
 *	PMM	=	Product Marketing Manager	(organizational role)
 *	PMO	=	Program Management Office
+* PMS = Pantone Matching System (to select colors)
 *	POA&M	=	Plan of Action and Milestones
 *	PoC	=	Proof of Concept
 *	POLP	=	Principle of Least Privilege
@@ -1256,6 +1262,7 @@ comments: true
 *	TH	=	Threat Hunting
 *	TIP	=	Threat Intelligence Platform
 *	TLD	=	Top Level Domain	(the letters after the last dot on URLs processed by DNS)
+*	TLDR	=	Too Long Don't Read
 *	TLS	=	Transport Layer Security
 *	TMI	=	Too Much Information	(common vernacular)
 *	TOE	=	Target of Evaluation	(what is being evaluated by the Common Criteria EAL)
@@ -1301,6 +1308,7 @@ comments: true
 *	URL	=	Universal Resource Locator
 *	URM	=	Under-Represented Minority
 *	USB	=	Universal Service Bus
+* USP = Unique Selling Proposition
 *	UTC	=	Coordinated Universal Time	(the new compromise term for GMT)
 *	UTF	=	Unicode Transformation Format
 *	UUID	=	 Universally Unique Identifier  (to identify information objects)
