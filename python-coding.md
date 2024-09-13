@@ -306,22 +306,6 @@ Soft keywords:
 
 Press control+D to exit anytime.
 
-<a name="WhileLoop"></a>
-
-## While Loop
-
-CAUTION: What's wrong with this code?
-
-<img alt="Insecure While loop" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726233213/while-loop-password_zolqrg.png">
-
-PROTIP: Passwords and other secrets should not be requested in an input() prompt because that would expose the passwords in CLI logs.
-
-PROTIP: Passwords and other secrets should not be stored in programming code.
-
-PROTIP: The way to verify passwords is not to store them as the raw password which the user typed in but as a hash of what the password the user typed in. The hash would also be created with a "salt" to ensure randomness. To verify whether the user provides the correct password, the program would add the salt to calculate the hash the user provides, then compare the two.
-
-PROTIP: The user should be provided with a set <strong>limited number of tries</strong>. When exceeded, the user and IP address used should be locked out, entered in central (SIEM) security logs, and reported as a Security incident.
-
 
 ## Built-in Methods/Functions
 
@@ -414,6 +398,24 @@ PROTIP: Don't just print out the value. Include the variable name, such as:
 ```
 print("=== var1=",var1)
 ```
+
+
+<a name="WhileLoop"></a>
+
+## While Loop
+
+CAUTION: What's wrong with this code?
+
+<img alt="Insecure While loop" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726233213/while-loop-password_zolqrg.png">
+
+PROTIP: Passwords and other secrets should not be requested in an input() prompt because that would expose the passwords in CLI logs.
+
+PROTIP: Passwords and other secrets should not be stored in programming code.
+
+PROTIP: The way to verify passwords is not to store them as the raw password which the user typed in but as a hash of what the password the user typed in. The hash would also be created with a "salt" to ensure randomness. To verify whether the user provides the correct password, the program would add the salt to calculate the hash the user provides, then compare the two.
+
+PROTIP: The user should be provided with a set <strong>limited number of tries</strong>. When exceeded, the user and IP address used should be locked out, entered in central (SIEM) security logs, and reported as a Security incident.
+
 
 ## Magic underlines
 
