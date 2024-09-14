@@ -404,7 +404,7 @@ print("=== var1=",var1)
 
 ## While Loop
 
-CAUTION: What's wrong with this code?
+CAUTION: What's wrong with this sample code?
 
 <img alt="Insecure While loop" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726233213/while-loop-password_zolqrg.png">
 
