@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-13"
-lastchange: "add PMS NUI KOL ENS TLDR :acronyms"
+date: "2024-09-15"
+lastchange: "add FFB :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -488,6 +488,7 @@ comments: true
 *	FEDRAMP	=	Federal Risk and Authorization Management Program
 * FEA = Finite Element Analysis (generate a computer model of components within actual system to analyze response to stresses)
 * FEM = Finite Element Method (method for numerically solving differential equations)
+* FFB = Force Feedback (on gaming consoles)
 * FFT = Fast Fourier transform
 *	FGAC	=	Fine-grained Access Control (AWS)
 *	FHRP	=	First Hop Redundancy Protocol (for shared IP routing redundancy)
