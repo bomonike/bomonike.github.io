@@ -14,10 +14,9 @@ image:
 comments: true
 ---
 <i>{{ page.excerpt }}</i>
-{% include l18n.html %}
-{% include _toc.html %}
 
-{% include whatever.html %}
+This is at https://bomonike.github.io/ros
+with source at https://github.com/bomonike/bomonike.github.io/blob/master/ros.md
 
 ![ros-Robonaut2-ISS-770x578](https://user-images.githubusercontent.com/300046/133761877-fd7d01b0-9c81-4def-a644-ebcae4b7aba0.jpg)
 
@@ -297,4 +296,13 @@ focus on robotic hands with 5 fingers.
 <a target="_blank" href="https://www.youtube.com/watch?v=DFfeY7PUh5Q">
 VIDEO: The microdot push by Naran</a> is it (for $50). But it's out of stock.
 
+https://www.youtube.com/watch?v=7TVWlADXwRw
+What Is ROS2? - Framework Overview
 
+## Hardware
+
+https://www.robotshop.com/collections/clearpath-robotics
+* Clearpath Robotics TurtleBot 4 Lite Mobile Robot
+SKU: RB-Cle-04 is $1,336.99
+* Clearpath Robotics TurtleBot 4 Mobile Robot
+SKU: RB-Cle-03 is $2,191.44

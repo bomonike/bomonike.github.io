@@ -530,8 +530,9 @@ comments: true
 *	GAR	=	Geoogle Artifact Registry (in GCP)
 *	GB	=	Gigabytes	(173741824 bytes or 1024 megabytes)
 *	GCE	=	Google Compute Engine
-*	GCP	=	Google Cloud Platform
+* GCN = Graph Neural Network
 *	GCM	=	Galois/Counter Mode	(mode of operation for symmetric-key cryptographic block ciphers)
+*	GCP	=	Google Cloud Platform
 *	GDPR	=	General Data Protection Regulation	(EU Regulation 2016/679)
 *	GEOINT	=	Geospatial Intelligence	(from analysis and visualization of security activities on a map)
 *	GG	=	Good Game (gamer digital handshake to convey sportsmanship)
@@ -791,7 +792,9 @@ comments: true
 * MLDR = Machine Learning Detection and Response
 *	MLM	=	Masked Language Model (such as BERT for Natural Language Processing)
 * MLLP = Minimal Lower Layer Protocol (the leading and trailing delimiter HL7v2 healthcare data is transmitted using TCP/IP within VPNs)
+* MMU = Memory Management Unit (to manage VM memory)
 *	MNC	=	Multi-National Corporation
+* MNO = Mobile Network Operator (ATT, Verizon, T-Mobile)
 *	MOD	=	Manager on Duty (incident manager - security and hospitality industry)
 * MoE = Mixture of Experts (in AI)
 * MOSFET = Metal Oxide Field Effect Transitor
@@ -802,7 +805,6 @@ comments: true
 *	MSI	=	Managed Service Identity
 *	MTD	=	Month-To-Date
 *	mTLS	=	Mutual TLS
-* MNO = Mobile Network Operator (ATT, Verizon, T-Mobile)
 *	MOR	=	Minimum Operating Requirements	(describes the minimum environmental and connectivity requirements in order to operate computer equipment)
 * MOSFET = Metal Oxide Semiconductor Field Effect Transitor
 *	MSI	=	Microsoft Software Installer	(file extension for Microsoft Windows installer files)
@@ -1083,7 +1085,7 @@ comments: true
 *	RTC	=	Real Time Clock
 *	RTFM	=	Read The Fine Manual (slang)
 *	RTO	=	Recovery Time Objective
-*	RTOS	=	Real-Time Operating System
+*	RTOS	=	Real-Time Operating System (for IoT/Edge Computing)
 *	RTSP	=	Real-Time Streaming Protocol (AWS Kinesis)
 *	RUM	=	Resources Under Management	(HashiCorp Terraform at scale)
 *	RUP	=	Rational Unified Process	(phased software development methodology from 2003 using object UML)
@@ -1269,6 +1271,7 @@ comments: true
 *	TOE	=	Target of Evaluation	(what is being evaluated by the Common Criteria EAL)
 *	TOFU	=	Trust On First Use
 *	TOML	=	Tom's Obvious Minimal Language (config text file format)
+* TOPI = Tensor Operator Inventory (pre-defined templates of common tensor operators e.g., conv2d, transpose)
 *	TOTP	=	Time-based One Time Password
 *	TPISRM	=	Third Party Information Security Risk Management
 *	TPM	=	Trusted Platform Module	(on newer Microsoft Windows PCs)
@@ -1285,6 +1288,7 @@ comments: true
 *	TTX	=	TableTop eXercise	(for security resilience)
 *	TUI	=	Text-based User Interface (Command Line Interface)
 *	TVM	=	Threat and Vulnerability Management (Microsoft)
+*	TVM	=	Tensor Virtual Machine (fast Apache Python Deep Learning compilation framework)
 
 <a name="U"></a>
 ### U
@@ -1351,6 +1355,7 @@ comments: true
 *	VRP	=	Vulnerability Research Program (way for organizations to receive security vulnerabilities found)
 *	VSM	=	Value Stream Mapping
 *	VSTS	=	Visual Studio Team Services  (Microsoft)
+* VTA = Versatile Tensor Accelerator (an extension of Apache TVM)
 * VTFET	=	Vertical Transport Field Effect Transitor (IBM)
 * VTOC = Volatile Organic Compounds
 * VTL	=	Virtual Tape Library
