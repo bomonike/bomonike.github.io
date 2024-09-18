@@ -8,6 +8,9 @@ https://www.linkedin.com/in/traviscox-automation/
 in Folsom, CA (Near Sacramento)
 800-266-7798
 
+https://www.youtube.com/@InductiveAutomation
+points to https://ia.io/platform
+
 People:
 * https://www.linkedin.com/in/traviscox-automation/
 
@@ -21,8 +24,10 @@ Competitors include:
 <a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1"><img alt="ignition-basic-arch-2726x1694.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726629808/ignition-basic-arch-2726x1694_carhxt.png"></a>
 
 Induction Automation provides locally installed (not SaaS) Java-based <strong>"Ignition"</strong> web servers (in Docker containers) to communicate with PLCs (Programmable Logic Controllers) that control industrial equipment.
-
 * 58 min course "Ignition with Docker" is a guided walkthrough of Ignition with Docker
+
+https://www.youtube.com/watch?v=Qzskv9O_zh0
+shows screens
 
 Induction's "Ignition" product enables:
 * HMI (Human-Machine Interface) to PLCs (Programmable Logic Controllers) IIoT
@@ -41,7 +46,7 @@ Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/abo
 Protocols:
 * TCP (using the HSMS standard, SEMI E37)
 * RS-232 based protocol (using the SECS-I standard, SEMI E4).
-* <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service.
+* <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service. It was created to monitor oil pipelines within the SCADA industrial control system.
 * OPC-COM
 * OPC-UA
 * SECS/GEM is the <a target="_blank" href="https://en.wikipedia.org/wiki/SECS-II">Equipment Communications Standard E5</a> / Generic Equipment Model (standard E30) protocol defined by the <a target="_blank" href="https://en.wikipedia.org/wiki/SEMI">SEMI (Semiconductor Equipment and Materials International)</a> organization for equipment-to-host data communications. In an automated fab, the interface can start and stop equipment processing, collect measurement data, change variables and select recipes for products.
