@@ -86,8 +86,8 @@ Ignition's OPC-UA (Open Platform Communication United Architecture) <a target="_
 
 * SMS (mobile) text notifications
 
-* <a target="_blank" href="https://en.wikipedia.org/wiki/DNP3#:~:text=Distributed%20Network%20Protocol%203%20(DNP3,as%20electric%20and%20water%20companies.">DNP3</a> (Distributed Network Protocol 3) used  in electric and water utilities
-* EC 61850
+* <a target="_blank" href="https://en.wikipedia.org/wiki/DNP3#:~:text=Distributed%20Network%20Protocol%203%20(DNP3,as%20electric%20and%20water%20companies.">DNP3</a> (Distributed Network Protocol 3) used by electric and water utilities
+* <a target="_blank" href="https://en.wikipedia.org/wiki/IEC_61850">EC 61850</a> - communication protocols for intelligent electronic devices at electrical substations.
 * <a target="_blank" href="https://en.wikipedia.org/wiki/BACnet">BACnet</a> - a communication protocol for building automation and control (BAC) networks that use the ASHRAE, ANSI, and <a target="_blank" href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=37298">ISO 16484-5</a> standards protocol used by building automation and control systems for applications such as heating, ventilating, and air-conditioning control (HVAC), lighting control, access control, and fire detection systems and their associated equipment. The BACnet protocol provides mechanisms for computerized building automation devices to exchange information, regardless of the particular building service they perform.
 
 * Send message to Lark
