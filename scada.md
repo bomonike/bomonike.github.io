@@ -39,12 +39,13 @@ Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/abo
 * robots (from ABB, etc?)
 
 Protocols:
-* TCP & UDP
-* MQTT
+* TCP (using the HSMS standard, SEMI E37)
+* RS-232 based protocol (using the SECS-I standard, SEMI E4).
+* <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service.
 * OPC-COM
 * OPC-UA
-* SECS/GEM
-* SMS text notifications
+* SECS/GEM is the <a target="_blank" href="https://en.wikipedia.org/wiki/SECS-II">Equipment Communications Standard E5</a> / Generic Equipment Model (standard E30) protocol defined by the <a target="_blank" href="https://en.wikipedia.org/wiki/SEMI">SEMI (Semiconductor Equipment and Materials International)</a> organization for equipment-to-host data communications. In an automated fab, the interface can start and stop equipment processing, collect measurement data, change variables and select recipes for products.
+* SMS (mobile) text notifications
 
 ## Scaling with MQTT
 
