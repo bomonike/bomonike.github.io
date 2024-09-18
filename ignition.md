@@ -57,11 +57,17 @@ The above work for the benefit of an ERP (Enterprise Resource Planning) system i
 
 <img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726635389/MESP_attributes_vd4tom.webp">
 
-## Demo
+
+## Demo app
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc" title="18m22s">VIDEO</a>:
 
-<a target="_blank" href="https://demo.inductiveautomation.com/">https://demo.inductiveautomation.com</a>:
+Turn off Dark Reader on your browser.
+
+<a target="_blank" href="https://demo.inductiveautomation.com/">https://demo.inductiveautomation.com</a> works 2 hours at a time.
+
+View source to see that it uses React, Mobx, Moment, XHR.
+All HTML on the page is loaded dynamically.
 
 
 ### PLC Driver modules
