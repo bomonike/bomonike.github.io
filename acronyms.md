@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-17"
-lastchange: "add LIMS :acronyms"
+date: "2024-09-18"
+lastchange: "add MPC PID SFC LIMS :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -499,6 +499,7 @@ comments: true
 *	FIM	=	File Integrity Monitoring	(for Intrusion Detection)
 *	FinFET	=	Fin (as in fish) FET
 *	FISMA	=	Federal Information Security Management Act (US government)
+* FLC = Fuzzy Logic Control
 *	FM	=	Foundation Model (LLM for Generative AI)
 *	FMCG	=	Fast-Moving Consumer Goods
 *	FN	=	False Negative	(test result that missed catching a bad/malicious sample)
@@ -801,6 +802,7 @@ comments: true
 *	MOD	=	Manager on Duty (incident manager - security and hospitality industry)
 * MoE = Mixture of Experts (in AI)
 * MOSFET = Metal Oxide Field Effect Transitor
+* MPC = Model Predictive Control
 *	MPP	=	Massively Parallel Processing (on databases)
 *	MS	=	Microsoft
 *	MSA	=	Master Service Agreement
@@ -958,7 +960,7 @@ comments: true
 *	PEP	=	Policy Enforcement Point	(filters requests and makes eXtensible Access Control Markup Language (XACML) to a Policy Decision Point (PDP)
 *	PETM	=	Parameter-Efficient Tuning Methods (in Generative AI)
 *	PF	=	Privacy Framework
-* PFAS = Per- and polyfluoroalkyl Substances (<a target="_blank" href="https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances">carcinogenic</a>)
+* PFAS = Per- and polyfluoroalkyl Substances (<a target="_blank" href="https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances">carcinogenic</a> forever chemicals)
 *	PFS	=	Perfect Forward Secrecy
 * PHD	=	Personal Health Dashboard
 *	PHI	=	Protected Health Information
@@ -966,6 +968,7 @@ comments: true
 *	PHS	=	Password Hash Synchronization (Microsoft Azure AD Connect)
 * PIA = Privacy Impact Assessment
 *	PID	=	Process Identifier
+* PID = Proportional Integral Derivative (keeps a variable within a set of parameters/conditions, such as auto cruise control)
 *	PII	=	Personally Identifiable Information
 *	PIM	=	Privileged Identity Management
 *	PIN	=	Personal Identification Number	(a secret consisting of a small number)
