@@ -16,61 +16,18 @@ Competitors include:
 * Oracle
 * Siemens
 
-## Customer usage
+## Induction's Product Architecture
 
-https://inductiveautomation.com/resources/customerproject
+<a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1"><img alt="ignition-basic-arch-2726x1694.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726629808/ignition-basic-arch-2726x1694_carhxt.png"></a>
 
-## Induction's Products
+Induction Automation provides locally installed (not SaaS) Java-based <strong>"Ignition"</strong> web servers (in Docker containers) to communicate with PLCs (Programmable Logic Controllers) that control industrial equipment.
 
-<strong>"Perspective"</strong> is Induction's design IDE.
+* 58 min course "Ignition with Docker" is a guided walkthrough of Ignition with Docker
 
-<strong>"Ignition"</strong> is Induction's web server product for
+Induction's "Ignition" product enables:
 * HMI (Human-Machine Interface) to PLCs (Programmable Logic Controllers) IIoT
 * SCADA (Supervisory Control and Data Acquisition), and
 * MES (Manufacturing Execution System) to track material movement through the shop floor
-
-## OEE Loss Calculations
-
-The MES module calculates the three loss-related factors: Availability, Performance, and Quality in the OEE metric:
-
-   A x P x Q = OEE
-
-Because it exposes what actions to take against the underlying causes of lost productivity, it is preferred over calculation of OEE using the ratio of Fully Productive Time to Planned Production Time.
-
-OEE = (Good Count × Ideal Cycle Time) / Planned Production Time
-
-Fully Productive Time is just another way of saying manufacturing only Good Parts as fast as possible (Ideal Cycle Time) with no Stop Time.
-
-## Docker
-
-It runs under Docker container.
-* 58 min course "Ignition with Docker" is a guided walkthrough of Ignition with Docker
-
-Communicates using the MQTT with central administration of permissions.
-
-Ignition uses JDBC to store and retrieve data in SQL databases which use compression algorithms (called "Historian").
-
-Ignition's Reporting Engine creates dynamic PDF files.
-
-Ignition's Alarming system sends out notifications via voice, SMS, email.
-
-
-<img alt="ignition-integrations-1668x1338.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626234/ignition-integrations-1668x1338_gnji26.png">
-
-Ignition's components:
-
-<a target="_blank" href="https://inductiveuniversity.com/videos/what-is-ignition/8.1"><img alt="ignition-flow-2070x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626278/ignition-flow-2070x1304_yfsdlh.png"></a>
-
-* <strong>Gateway</strong> server executes modules, provides Launchers, then communicates with clients
-Launched from the Gateway:
-* Perspective Designer to configure and build projects
-* Clients (runtimes of local Vision modules)
-* Sessions are runtimes of the Perspective Module run in a browser.
-
-The Gateway
-
-<a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1"><img alt="ignition-arch-3024x1964.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726629243/ignition-arch-3024x1964_enzi0p.png"></a>
-
 
 Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>:
 * Allen-Bradley Logix 5000
@@ -88,6 +45,38 @@ Protocols:
 * OPC-UA
 * SECS/GEM
 * SMS text notifications
+
+## Scaling with MQTT
+
+<a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1"><img alt="ignition-arch-3024x1964.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726629243/ignition-arch-3024x1964_enzi0p.png"></a>
+
+Ignition communicates using the MQTT with central administration of permissions.
+
+Ignition uses JDBC to store and retrieve data in SQL databases which use compression algorithms (called "Historian").
+
+Ignition's Reporting Engine creates dynamic PDF files.
+
+Ignition's Alarming system sends out notifications via voice, SMS, email.
+
+
+## Customer usage
+
+https://inductiveautomation.com/resources/customerproject
+
+<strong>"Perspective"</strong> is Induction's design IDE.
+
+<img alt="ignition-integrations-1668x1338.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626234/ignition-integrations-1668x1338_gnji26.png">
+
+Ignition's components:
+
+<a target="_blank" href="https://inductiveuniversity.com/videos/what-is-ignition/8.1"><img alt="ignition-flow-2070x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626278/ignition-flow-2070x1304_yfsdlh.png"></a>
+
+* <strong>Gateway</strong> server executes modules, provides Launchers, then communicates with clients
+Launched from the Gateway:
+* Perspective Designer to configure and build projects
+* Clients (runtimes of local Vision modules)
+* Sessions are runtimes of the Perspective Module run in a browser.
+
 
 
 
@@ -174,3 +163,15 @@ https://www.wikiwand.com/en/articles/Open_Platform_Communications
 <a target="_blank" href="https://www.opcdatahub.com/WhatIsOPC.html#note1">Object Linking and Embedding OPC</a>
 
 https://www.udemy.com/course/mastering-opc-ole-for-process-control/
+
+## OEE Loss Calculations
+
+The MES module calculates the three loss-related factors: Availability, Performance, and Quality in the OEE metric:
+
+   A x P x Q = OEE
+
+Because it exposes what actions to take against the underlying causes of lost productivity, it is preferred over calculation of OEE using the ratio of Fully Productive Time to Planned Production Time.
+
+OEE = (Good Count × Ideal Cycle Time) / Planned Production Time
+
+Fully Productive Time is just another way of saying manufacturing only Good Parts as fast as possible (Ideal Cycle Time) with no Stop Time.
