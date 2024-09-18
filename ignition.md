@@ -27,26 +27,27 @@ Competitors include:
 
 <a target="_blank" href="https://www.youtube.com/watch?v=3325bTcuPKQ">Top Requirements for an effective SCADA</a>
 
-Unlike older competitors that use 15 inch monitors, Induction clients display at HD (1920x1080 pixel) resolution on 22 inch monitors.
+Unlike older competitors that use 15 inch monitors, inductiveautomation clients display at HD (1920x1080 pixel) resolution on 22 inch monitors.
 
-## Induction's Product Architecture
+## inductiveautomation's Product Architecture
 
 <a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1"><img alt="ignition-basic-arch-2726x1694.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726629808/ignition-basic-arch-2726x1694_carhxt.png"></a>
 
-Induction Automation provides locally installed <strong>"Ignition"</strong> web servers (in Docker containers) to communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) that control industrial equipment.
+inductiveautomation provides locally installed <strong>"Ignition"</strong> web servers (in Docker containers) to communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) that control industrial equipment.
 * 58 min course "Ignition with Docker" is a guided walkthrough of Ignition with Docker
 
-Induction charges by the number of servers installed for use by an <strong>unlimited number of clients</strong> at no additional licensing cost. <a target="_blank" href="https://www.youtube.com/watch?v=zH0m8Z0opyc">VIDEO</a>.
+inductiveautomation charges by the number of servers installed for use by an <strong>unlimited number of clients</strong> at no additional licensing cost. <a target="_blank" href="https://www.youtube.com/watch?v=zH0m8Z0opyc">VIDEO</a>.
 
 Unlike legacy PLCs which use proprietary Assembly language, Ignition is customized using the Python language.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=DCixhDisHQ8">Ignition Cloud</a>
 
+* https://www.youtube.com/watch?v=FDlxR2Ktoi4
 * <a target="_blank" href="https://www.youtube.com/watch?v=R65XegwK3Bk">VIDEO: Anywhere</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=0yKoEYPz5a4">VIDEO: Picking the right arch</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=Qzskv9O_zh0">VIDEO: shows screens</a>
 
-Induction's "Ignition" product enables:
+inductiveautomation's "Ignition" product enables:
 * HMI (Human-Machine Interface) to PLCs (Programmable Logic Controllers) IIoT
 * SCADA (Supervisory Control and Data Acquisition), and
 * MES (Manufacturing Execution System) to track material movement through the shop floor
@@ -56,6 +57,11 @@ The above work for the benefit of an ERP (Enterprise Resource Planning) system i
 
 <img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726635389/MESP_attributes_vd4tom.webp">
 
+## Demo
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc" title="18m22s">VIDEO</a>:
+
+<a target="_blank" href="https://demo.inductiveautomation.com/">https://demo.inductiveautomation.com</a>:
 
 
 ### PLC Driver modules
@@ -72,7 +78,7 @@ Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/abo
 
 ## Protocols
 
-A big part of Induction's value proposition is that the Ignition platform provides a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
+A big part of inductiveautomation's value proposition is that the Ignition platform provides a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
 
 * TCP (using the HSMS standard, SEMI E37)
 * <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service. It was created to monitor oil pipelines within the SCADA industrial control system. SarkplugB format or add-in <a target="_blank" href="https://inductiveautomation.com/exchange/2670/overview">Vanilla Transmission</a>
@@ -140,7 +146,7 @@ https://inductiveautomation.com/ignition/modules
 
 * <strong>Gateway</strong> server executes modules, provides Launchers, then communicates with clients
 Launched from the Gateway:
-* <strong>Perspective Designer</strong> is Induction's design IDE to configure and build projects.
+* <strong>Perspective Designer</strong> is inductiveautomation's design IDE to configure and build projects.
 * Sessions are runtimes of the Perspective Module run in a browser.
 * Vision clients are a legacy module superceded by Perspective.
 
@@ -286,7 +292,7 @@ Other approaches:
 
 ## Add-on packages
 
-<a target="_blank" href="https://inductiveautomation.com/exchange/">Induction's Exchange</a> website provides (at time of writing) 442 add-ons for download.
+<a target="_blank" href="https://inductiveautomation.com/exchange/">inductiveautomation's Exchange</a> website provides (at time of writing) 442 add-ons for download.
 
 Look for "Maker Edition Compatible" if you're running that.
 
