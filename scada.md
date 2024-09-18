@@ -58,10 +58,12 @@ The above work for the benefit of an ERP (Enterprise Resource Planning) system i
 
 
 
-## PLC Drivers
+### PLC Driver modules
+
+PROTIP: Don't select these modules during install unless you know you'll need them.
 
 Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>:
-* Allen-Bradley Logix 5000
+* Allen-Bradley (Logix 5000)
 * Modbus
 * Siemens
 * Omron
@@ -189,6 +191,7 @@ https://inductiveuniversity.com/courses/elective-studies
 
 ### Install
 
+* https://docs.inductiveautomation.com/docs/8.1/getting-started/quick-start-guide/download-and-install
 * <a target="_blank" href="https://www.youtube.com/watch?v=fPCbJSt9CBA">VIDEO</a>: Time-saving hacks
 
 Ignition module skeletons works on Windows, Linux, macOS.
@@ -280,8 +283,9 @@ Other approaches:
 
 <a target="_blank" href="https://inductiveautomation.com/exchange/">Induction's Exchange</a> website provides (at time of writing) 442 add-ons for download.
 
+Look for "Maker Edition Compatible" if you're running that.
 
-A sample package is a zip file contains a  README.md and MANIFEST file containing this example:
+A sample package is a zip file containing a README.md and MANIFEST file containing this example:
 ```
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
@@ -354,5 +358,30 @@ In each folder above is a resource.json such as:
 ```
 The Signature is created during the build based on a Private key.
 
-The code.py file
+Right below copy and paste the icons from the ha_icons.svg file and save. Now we have new icons to play around with. The dashboard requires a few of these icons for the provided example.
 
+Next, you need to import the project backup and tags provided by the resource. You can easily import both in the Ignition Designer. The tags are required for the example dashboard that is provided to show information.
+
+Project backup and restoring from a project backup is referred to as Project Export and Import. Projects are exported individually, and only include project-specific elements visible in the Project Browser in the Ignition Designer. They do not include Gateway resources, like database connections, Tag Providers, Tags, and images. The exported file (.zip or .proj ) is used to restore / import a project.
+
+    .zip = Ignition 8+
+    ..proj = Ignition 7+
+
+There are two primary ways to export and import a project:
+
+    Gateway Webpage - exports and imports the entire project.
+    Designer - exports and imports only those resources that are selected.
+
+When you restore / import a project from an exported file in the Gateway Webpage, it will be merged into your existing Gateway. The import is located in:
+
+Ignition Gateway > Configuration > System > Projects > Import Project Link
+
+If there is a naming collision, you have the option of renaming the project or overwriting the project. Project exports can also be restored / imported in the Designer. Once the Designer is opened you can choose File > Import from the menu. This will even allow you to select which parts of the project import you want to include and will merge them into the currently open project.
+
+
+The main view is Dashboard/Carousel. You can create a page (in Perspective page configuration) that uses that main view. You can easily configure the dashboard to modify the widgets and tags they point to. Simply open up the Carousel view and take a look at the Carousel component's "views" property.
+
+Basically, the carousel can have multiple pages since views is an array. Each page uses the Dashboard/Dashboard view. The parameters dictate the widgets shown. The resource provides a set of standard widgets. You can easily create your own. The Standard widget is the most used. There are a ton of configuration options. Play around with the parameters to get an idea. If you want to see what parameters are possible, check out the widget view.
+
+
+Ignition can export and import Tag configurations to and from the JSON (JavaScript Object Notation) file format. You can import XML (Extensible Markup Language) or CSV (Comma Separated Value) file formats as well, but Ignition will convert them to JSON format. Tag exports are imported in the Designer. Once the Designer is opened you can click on the import button in the Tag Browser panel.
