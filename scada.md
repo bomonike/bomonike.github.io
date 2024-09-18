@@ -166,12 +166,17 @@ https://www.udemy.com/course/mastering-opc-ole-for-process-control/
 
 ## OEE Loss Calculations
 
-The MES module calculates the three loss-related factors: Availability, Performance, and Quality in the OEE metric:
+https://www.oee.com/calculating-oee/
 
-   A x P x Q = OEE
+The MES module calculates the three loss-related factors:
+
+   OEE = Availability  x  Performance  x Quality
 
 Because it exposes what actions to take against the underlying causes of lost productivity, it is preferred over calculation of OEE using the ratio of Fully Productive Time to Planned Production Time.
 
 OEE = (Good Count × Ideal Cycle Time) / Planned Production Time
 
 Fully Productive Time is just another way of saying manufacturing only Good Parts as fast as possible (Ideal Cycle Time) with no Stop Time.
+
+Schedule Loss is not part of OEE but
+is part of <a target=="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>.
