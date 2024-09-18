@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2024-09-18"
-lastchange: "add MPC PID SFC LIMS :acronyms"
+lastchange: "add FLC MPC PID SFC LIMS :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -416,6 +416,7 @@ comments: true
 *	EAM	=	Externalized Authorization Management
 *	EAP	=	Extensible Authentication Protocol	(a framework for port-based access control that uses the same three primary components that are used in the RADIUS standard)
 *	EAR	=	Export Administration Regulations	(US)
+* EBITDA = Earnings Before Interest, Taxes, Depreciation, and Amortization
 *	EBS	=	Elastic Block Storage (Amazon)
 *	ECDSA	=	Elliptic Curve Digital Signature Algorithm	(algorithm for signatures)
 *	ECU	=	Electronic Control Unit (Embedded system in autos)
@@ -1047,6 +1048,7 @@ comments: true
 *	RBVM	=	Risk-Based Vulnerability Management
 *	RCA	=	Root Cause Analysis
 *	RCS	=	Rich Communication Services (messaging, voice, video)
+*	RCE	=	Remote Code Execution
 *	RCE	=	Root Code Execution
 *	RDD	=	Resilient Distributed Dataset (native data structure underlying Apache Spark Dataframes used by Pandas)
 *	RDF	=	Resource Description Language (W3C standard for graph databases)

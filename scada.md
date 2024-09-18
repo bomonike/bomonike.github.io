@@ -13,6 +13,9 @@ points to https://ia.io/platform
 
 <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc">VIDEO: Why? Overview</a>
 
+Interactions:
+* https://forum.inductiveautomation.com/
+
 People:
 * https://www.linkedin.com/in/traviscox-automation/
 
@@ -24,13 +27,18 @@ Competitors include:
 
 <a target="_blank" href="https://www.youtube.com/watch?v=3325bTcuPKQ">Top Requirements for an effective SCADA</a>
 
+Unlike older competitors that use 15 inch monitors, Induction clients display at HD (1920x1080 pixel) resolution on 22 inch monitors.
 
 ## Induction's Product Architecture
 
 <a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1"><img alt="ignition-basic-arch-2726x1694.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726629808/ignition-basic-arch-2726x1694_carhxt.png"></a>
 
-Induction Automation provides locally installed Java-based <strong>"Ignition"</strong> web servers (in Docker containers) to communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) that control industrial equipment.
+Induction Automation provides locally installed <strong>"Ignition"</strong> web servers (in Docker containers) to communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) that control industrial equipment.
 * 58 min course "Ignition with Docker" is a guided walkthrough of Ignition with Docker
+
+Induction charges by the number of servers installed for use by an <strong>unlimited number of clients</strong> at no additional licensing cost. <a target="_blank" href="https://www.youtube.com/watch?v=zH0m8Z0opyc">VIDEO</a>.
+
+Unlike legacy PLCs which use proprietary Assembly language, Ignition is customized using the Python language.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=DCixhDisHQ8">Ignition Cloud</a>
 
@@ -58,27 +66,27 @@ Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/abo
 * Siemens
 * Omron
 * Mitsubishi
-* ABB?
+* ABB (for robots???)
 
-* robots (from ABB, etc?)
+## Protocols
 
-Protocols:
+A big part of Induction's value proposition is that the Ignition platform provides a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
+
 * TCP (using the HSMS standard, SEMI E37)
-* RS-232 based protocol (using the SECS-I standard, SEMI E4).
 * <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service. It was created to monitor oil pipelines within the SCADA industrial control system. SarkplugB format or add-in <a target="_blank" href="https://inductiveautomation.com/exchange/2670/overview">Vanilla Transmission</a>
+
+Ignition's OPC-UA (Open Platform Communication United Architecture) <a target="_blank" href="https://inductiveautomation.com/ignition/modules/ignition-opc-ua">module</a> <a target="_blank" href="https://www.youtube.com/watch?v=3EREV8Q5PNU">VIDEO</a>:
 * <a target="_blank" href="https://inductiveautomation.com/ignition/modules/opc-com">OPC-COM</a> for legacy OPC servers
 * OPC-DA (Data Access) v2 & 3 for Windows
 * OPC-HDA (Historical Data Access) v12
-* <a target="_blank" href="https://inductiveautomation.com/ignition/modules/ignition-opc-ua">OPC-UA</a>
 
-* SECS/GEM is the <a target="_blank" href="https://en.wikipedia.org/wiki/SECS-II">Equipment Communications Standard E5</a> / Generic Equipment Model (standard E30) protocol defined by the <a target="_blank" href="https://en.wikipedia.org/wiki/SEMI">SEMI (Semiconductor Equipment and Materials International)</a> organization for equipment-to-host data communications. In an automated fab, the interface can start and stop equipment processing, collect measurement data, change variables and select recipes for products.
+* RS-232 based protocol (using the SECS-I standard, SEMI E4). SECS/GEM is the <a target="_blank" href="https://en.wikipedia.org/wiki/SECS-II">Equipment Communications Standard E5</a> / Generic Equipment Model (standard E30) protocol defined by the <a target="_blank" href="https://en.wikipedia.org/wiki/SEMI">SEMI (Semiconductor Equipment and Materials International)</a> organization for equipment-to-host data communications. In an automated fab, the interface can start and stop equipment processing, collect measurement data, change variables and select recipes for products.
+
 * SMS (mobile) text notifications
 
 * <a target="_blank" href="https://en.wikipedia.org/wiki/DNP3#:~:text=Distributed%20Network%20Protocol%203%20(DNP3,as%20electric%20and%20water%20companies.">DNP3</a> (Distributed Network Protocol 3) used  in electric and water utilities
 * EC 61850
 * BACnet
-
-<a target="_blank" href="https://inductiveautomation.com/exchange/">Induction's Exchange</a> website provides (at time of writing) 442 add-ons for download.
 
 * Send message to Lark
 
@@ -111,7 +119,7 @@ Raspberry Pi Ignition Edge Install
 
 ## Software Stack
 
-https://inductiveautomation.com/ignition/modules
+<a target="_blank" href="https://inductiveautomation.com/ignition/modules">
 <img alt="ignition-SoftwareStack-3200x1800.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726660786/ignition-SoftwareStack-3200x1800_llno0r.png"></a>
 from <a target="_blank" href="https://assets.inductiveautomation.com/static/images/modules/SoftwareStack-Full@2x.f0b2ebbfd212.png">here</a>
 
@@ -120,19 +128,21 @@ from <a target="_blank" href="https://assets.inductiveautomation.com/static/imag
 
 https://inductiveautomation.com/ignition/modules
 
-<strong>"Perspective"</strong> is Induction's design IDE.
-
-<img alt="ignition-integrations-1668x1338.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626234/ignition-integrations-1668x1338_gnji26.png">
-
-
-<a target="_blank" href="https://inductiveuniversity.com/videos/what-is-ignition/8.1"><img alt="ignition-flow-2070x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626278/ignition-flow-2070x1304_yfsdlh.png"></a>
+<!-- img alt="ignition-integrations-1668x1338.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626234/ignition-integrations-1668x1338_gnji26.png">
+-->
 
 * <strong>Gateway</strong> server executes modules, provides Launchers, then communicates with clients
 Launched from the Gateway:
-* Perspective Designer to configure and build projects
-* Clients (runtimes of local Vision modules)
+* <strong>Perspective Designer</strong> is Induction's design IDE to configure and build projects.
 * Sessions are runtimes of the Perspective Module run in a browser.
+* Vision clients are a legacy module superceded by Perspective.
 
+<a target="_blank" href="https://inductiveuniversity.com/videos/what-is-ignition/8.1"><img alt="ignition-flow-2070x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626278/ignition-flow-2070x1304_yfsdlh.png"></a>
+
+* Images ???
+* Projects
+* Tags is how Ignition uniquely identifies each OPC-UA object which communicates with PLCs.
+* Database connections use utility code to reach databases using the JDBC protocol.
 
 ## Reference Docs
 
@@ -142,6 +152,11 @@ Ignition User Manual
 https://account.inductiveautomation.com/
 
 ## Dev Build
+
+The current and prior releases (once per month) by QA Engineer <a target="_blank" href="https://www.linkedin.com/in/grossga/">Garth Gross</a> are at:
+https://github.com/inductiveautomation/ignition-automation-tools/tags
+
+Notice there is a different version for Ignition (8.1.39) and Perspective (2.1.39).
 
 https://github.com/inductiveautomation/ignition-sdk-training
 
@@ -179,7 +194,7 @@ https://inductiveuniversity.com/courses/elective-studies
 Ignition module skeletons works on Windows, Linux, macOS.
 
 1. Install JDK 11.
-2. Verify: java -v
+2. Install Python.
 3. https://inductiveautomation.com/downloads/
 
    * macOS ignition-8.1.43-macos-64-installer.dmg Sep 17, 2024 was 1,644,383,679 bytes (1.64 GB on disk)
@@ -235,16 +250,15 @@ https://www.oee.com/calculating-oee/
 
 The MES module calculates the three loss-related factors:
 
-   OEE = Availability  x  Performance  x Quality
+   <ul>OEE = Availability  x  Performance  x Quality</ul>
 
-Because it exposes what actions to take against the underlying causes of lost productivity, it is preferred over calculation of OEE using the ratio of Fully Productive Time to Planned Production Time.
+Because it exposes what actions to take against the underlying causes of lost productivity, the calculation above is preferred over calculation of OEE using the ratio of Fully Productive Time to Planned Production Time:
 
-OEE = (Good Count × Ideal Cycle Time) / Planned Production Time
+   <ul>OEE = (Good Count × Ideal Cycle Time) / Planned Production Time</ul>
 
 Fully Productive Time is just another way of saying manufacturing only Good Parts as fast as possible (Ideal Cycle Time) with no Stop Time.
 
-Schedule Loss is not part of OEE but
-is part of <a target=="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>.
+Schedule Loss is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>.
 
 ## Feedback Control Algorithms
 
@@ -252,11 +266,93 @@ To maintain a process variable such as ambiant temperature at a Setpoint, a PLC 
 <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8&t=1m47s">VIDEO</a> by <a target="_blank" href="https://www.realpars.com/">realpars.com</a>:
 <img alt="plc-pid-feedback.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726664501/plc-pid-feedback_a5kvtj.png">
 
-To dappen wild swings in actions, PLCs used the <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">PID (Proportional Integral Derivative)</a> approach
+To dampen wild swings in actions and values, PLCs used the <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">PID (Proportional Integral Derivative)</a> approach
 <a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=53s">VIDEO</a>:
 
 Other approaches:
 * Fuzzy Logic Control (FLC)
-* Model Predictive Control (MPC)
+* <a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=7m10s">Model Predictive Control (MPC)</a> works by using an algorithm based on a mathematical model to predict the behavior of process variables.
 * Adaptive Control
 * Neural Network Control
+
+
+## Add-on packages
+
+<a target="_blank" href="https://inductiveautomation.com/exchange/">Induction's Exchange</a> website provides (at time of writing) 442 add-ons for download.
+
+
+A sample package is a zip file contains a  README.md and MANIFEST file containing this example:
+```
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"name": "Next Generation Dashboard",
+	"ignition-version": "8.1.10",
+	"version": "1.0.0",
+	"modules": [{"name": "com.inductiveautomation.perspective"},{"name": "com.inductiveautomation.webdev"},{"name": "com.inductiveautomation.opcua"}]
+}
+```
+Notice the file specifies the specific Ignition version.
+
+The modules listed correspond to the folders at root:
+* com.inductiveautomation.perspective
+* com.inductiveautomation.vision is the older tech
+* com.inductiveautomation.webdev
+
+* com.inductiveautomation.opcua does not exist as a folder but mentioned in the project.json ???
+
+In the Other folder are icons.zip and themes.zip.
+
+The Projects folder holds a fonts.zip containing font files.
+
+The core of the package is a file such as:
+
+   <ul>dashboardKpi_20210922144324.zip<</ul>
+
+Numbers in the file name is its date of creation.
+
+The sample <tt>project.json</tt>
+```
+{
+  "title": "KPI Dashboard",
+  "description": "",
+  "parent": "",
+  "enabled": true,
+  "inheritable": false
+}
+```
+The ignition folder contains:
+* designer-properties
+* event-scripts
+* global-props
+* named-query
+* script-python
+
+The <tt>script-python</tt> contains folders:
+* dashboard
+* db
+* KPIFramework/kpi
+* tags
+
+In each folder above is a resource.json such as:
+```
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "code.py"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "admin",
+      "timestamp": "2021-09-21T21:51:47Z"
+    },
+    "lastModificationSignature": "bea61bf53cccfb3d2cb5e341bef1278049bd8ac4f44dc4b78bd948029b634872"
+  }
+}
+```
+The Signature is created during the build based on a Private key.
+
+The code.py file
+
