@@ -1137,6 +1137,7 @@ comments: true
 *	SES	=	Simple Email Service	(AWS)
 *	SEU	=	Single Event Upset (a soft error caused by a random alpha particle flipping a bit)
 *	SF	=	Service Fabric	(Azure)
+* SFC = Sequential Function Charts
 * SG	=	Security Group
 * SGD	=	Stochastic Gradient Descent (AI technique to iteratively optimize)
 *	SHA	=	Secure Hash Algorithm	(a method to identify whether a file has been altered - also used by GitHub to create an index)

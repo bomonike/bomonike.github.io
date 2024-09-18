@@ -1,5 +1,7 @@
 scada.md
 
+This is at <a target="_blank" href="https://bomonike.github.io/scada">https://bomonike.github.io/scada</a> from code at <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/scada.md">https://github.com/bomonike/bomonike.github.io/blob/master/scada.md</a>
+
 ## InductiveAutomation.com
 
 https://www.linkedin.com/in/traviscox-automation/
@@ -12,16 +14,34 @@ People:
 Competitors include:
 * SAP
 * Oracle
-* Allen-Bradley
+* Siemens
 
-## Products
+## Customer usage
+
+https://inductiveautomation.com/resources/customerproject
+
+## Induction's Products
 
 <strong>"Perspective"</strong> is Induction's design IDE.
 
 <strong>"Ignition"</strong> is Induction's web server product for
 * HMI (Human-Machine Interface) to PLCs (Programmable Logic Controllers) IIoT
 * SCADA (Supervisory Control and Data Acquisition), and
-* MES (Manufacturing Execution System) to track material movement through the shop floor.
+* MES (Manufacturing Execution System) to track material movement through the shop floor
+
+## OEE Loss Calculations
+
+The MES module calculates the three loss-related factors: Availability, Performance, and Quality in the OEE metric:
+
+   A x P x Q = OEE
+
+Because it exposes what actions to take against the underlying causes of lost productivity, it is preferred over calculation of OEE using the ratio of Fully Productive Time to Planned Production Time.
+
+OEE = (Good Count × Ideal Cycle Time) / Planned Production Time
+
+Fully Productive Time is just another way of saying manufacturing only Good Parts as fast as possible (Ideal Cycle Time) with no Stop Time.
+
+## Docker
 
 It runs under Docker container.
 * 58 min course "Ignition with Docker" is a guided walkthrough of Ignition with Docker
@@ -35,11 +55,11 @@ Ignition's Reporting Engine creates dynamic PDF files.
 Ignition's Alarming system sends out notifications via voice, SMS, email.
 
 
-<img alt="ignition-integrations-1668x1338.png" alt="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626234/ignition-integrations-1668x1338_gnji26.png">
+<img alt="ignition-integrations-1668x1338.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626234/ignition-integrations-1668x1338_gnji26.png">
 
 Ignition's components:
 
-<img alt="ignition-flow-2070x1304.png" alt="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626278/ignition-flow-2070x1304_yfsdlh.png">
+<a target="_blank" href="https://inductiveuniversity.com/videos/what-is-ignition/8.1"><img alt="ignition-flow-2070x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726626278/ignition-flow-2070x1304_yfsdlh.png"></a>
 
 * <strong>Gateway</strong> server executes modules, provides Launchers, then communicates with clients
 Launched from the Gateway:
@@ -47,10 +67,36 @@ Launched from the Gateway:
 * Clients (runtimes of local Vision modules)
 * Sessions are runtimes of the Perspective Module run in a browser.
 
+The Gateway
+
+<a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1"><img alt="ignition-arch-3024x1964.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726629243/ignition-arch-3024x1964_enzi0p.png"></a>
+
+
+Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>:
+* Allen-Bradley Logix 5000
+* Modbus
+* Siemens
+* DNP3
+* Omron
+
+* robots (from ABB, etc?)
+
+Protocols:
+* TCP & UDP
+* MQTT
+* OPC-COM
+* OPC-UA
+* SECS/GEM
+* SMS text notifications
+
+
+
 ## Reference Docs
 
 https://docs.inductiveautomation.com/docs/8.1/intro
 Ignition User Manual
+
+https://account.inductiveautomation.com/
 
 ## Tutorials
 
@@ -59,6 +105,10 @@ https://inductiveuniversity.com/
 1. Begin with first lesson at https://inductiveuniversity.com/courses/ignition/ignition-overview/8.1
 
    https://inductiveuniversity.com/videos/what-is-ignition/8.1
+
+2. Create Account and verify email.
+3. Take Topic Challenge
+
 
 * 3 hr 49 min course "Building in Perspective" to create your first Perspective project.
 
@@ -82,10 +132,31 @@ https://inductiveuniversity.com/courses/elective-studies
 Their Ignition module skeletons works on Windows, Linux, macOS.
 
 1. Install JDK 11.
+2. Verify: java -v
+3. https://inductiveautomation.com/downloads/
 
-https://inductiveautomation.com/downloads/
+   * macOS ignition-8.1.43-macos-64-installer.dmg Sep 17, 2024 was 1,644,383,679 bytes (1.64 GB on disk)
+   * Linux  https://www.inductiveuniversity.com/videos/installing-ignition-on-linux/8.1
+   * Windows  https://www.inductiveuniversity.com/videos/installing-ignition-on-windows/8.1
 
-* macOS ignition-8.1.43-macos-64-installer.dmg Sep 17, 2024 was 1,644,383,679 bytes (1.64 GB on disk)
+   CAUTION: On Windows, the path has a space:
+   <tt>C:\Program Files\Inductive Automation\ignition</tt>
+
+4. GUI
+
+5. https://docs.inductiveautomation.com/docs/8.1/getting-started/quick-start-guide
+
+6. <a target="_blank" href="https://www.inductiveuniversity.com/videos/installing-ignition-on-mac/8.1">VIDEO</a>: Select the "Maker Edition", a "free, limited version of Ignition for personal, non-commercial projects.
+
+7. Create a User
+8. Start Gateway.
+9. Don't save password on browser.
+10. "Get Started" web page on Localhost.
+
+11. Stop the Gateway server.
+12. To stop the Gateway from starting upon startup, ???
+
+## Dev
 
 https://github.com/inductiveautomation
 * https://github.com/inductiveautomation/ignition-module-tools
