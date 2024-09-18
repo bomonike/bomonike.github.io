@@ -34,6 +34,8 @@ Induction's "Ignition" product enables:
 * SCADA (Supervisory Control and Data Acquisition), and
 * MES (Manufacturing Execution System) to track material movement through the shop floor
 
+<img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726635389/MESP_attributes_vd4tom.webp">
+
 Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>:
 * Allen-Bradley Logix 5000
 * Modbus
