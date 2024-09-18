@@ -1,7 +1,7 @@
 ---
 layout: post
+date: "2024-09-17"
 created: "2021-08-02"
-date: "2022-11-17"
 file: "ros"
 title: "ROS (Robotic Operating System)"
 excerpt: "Learn the operating system for controlling simple robots"
@@ -35,10 +35,13 @@ It provides hardware abstraction, device drivers, libraries, visualizers, messag
 
 ROS was originally developed in 2007 at
 Stanford university's Artificial Intelligence Laboratory.
-Since 2013 it is managed by OSRF (Open Source Robotics Foundation) and offered
-free to use under open source BSD license.
+Since 2013 it is managed by the OSRF (Open Source Robotics Foundation) at <a target="_blank" href="https://www.openrobotics.org/">openrobotics.org</a> and offered free to use under open source BSD license at<br /><a target="_blank" hre="https://github.com/ros/">https://github.com/ros</a>
 
-<a target="_blank" hre="https://github.com/ros/">https://github.com/ros</a>
+But in December 2022, the business of OSRC and OSRC-SG was acquired by <a target="_blank" href="https://www.intrinsic.ai/">Intrinsic.ai</a>, an Alphabet (Google) company that sells a the Flowstate robot developer environment.
+
+<img alt="ros-intrinsic-flow-1898x1162.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726565022/ros-intrinsic-flow-1898x1162_skd1rn.png">
+
+## ROS Specs
 
 ROS runs within Ubuntu 14.04 (not other Linux flavors).
 

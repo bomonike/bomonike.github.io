@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-15"
-lastchange: "add FFB :acronyms"
+date: "2024-09-17"
+lastchange: "add LIMS :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -568,6 +568,7 @@ comments: true
 *	H2M	=	Human to Machine	(interface)
 *	HA	=	High Availability
 *	HADR	=	High Availability	Disaster Recovery
+* HAL = Hardware Abstraction Layer
 * HAML = HTML Abstraction Markup Language (a template used in Ruby Rails views to simplify writing HTML)
 *	HANA	=	High-performance ANalytic Application	(SAP's in-memory column-oriented relational DBMS)
 * HBD = Happy Birth Day
@@ -735,6 +736,7 @@ comments: true
 * LGTM = Loki + Grafana + Tempo + Mimir (Grafana’s integrated stack for logs, metrics, and traces to be collected and visualized)
 *	LI	=	Lead Implementer
 *	LIFO	=	Last In - Last Out
+* LIMS = Laboratory Information Management System
 *	LLC	=	Limited Liability Company
 *	LLM	=	Large Language Model (such as GPT-x for Generative AI)
 *	LLMNR	=	Link-Local Multicast Name Resolution (Microsoft protocol for name resolution)
@@ -779,6 +781,7 @@ comments: true
 *	MEF	=	Mission Essential Functions
 * MEI = Merit, Excellence, and Intelligence (anti DEI)
 *	MELT	=	Metrics + Errors + Traces + Logs (for Observability)
+* MES = Manufacturing Execution System (track material movement through the shop floor)
 *	MFA	=	Multi-Factor Authentication	(security)
 * MGT = Microsoft Graph Toolkit (to read the Outlook calendars and log of actions by each Microsoft user)
 *	MIG	=	Managed Instance Group (for autoscaling within Google Cloud)
@@ -1383,6 +1386,7 @@ comments: true
 *	WFH	=	Work From Home
 *	WIP	=	Work In Process
 *	WMI	=	Windows Management Instrumentation (Microsoft)
+* WMS = Warehouse Management System
 * WoL = Wake-on-LAN (BIOS/UEFI setting so device can save battery yet be worken from sleep from a static IP address)
 *	WOT	=	Web of Trust  (security)
 *	WPA	=	Wi-Fi Protected Access

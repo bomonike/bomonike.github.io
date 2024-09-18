@@ -1162,9 +1162,10 @@ But that limit was removed in Python 3. So there now is no explicitly defined li
 
 <tt>3.2e-12</tt> expresses as a a constant exponential value.
 
-Define a d
+https://docs.python.org/3/tutorial/introduction.html#lists
 
-'foo\'bar'
+<a target="_blank" href="https://docs.python.org/3/tutorial/datastructures.html#more-on-lists">
+list methods</a>
 
 ### Slicing strings
 
