@@ -1,8 +1,8 @@
 This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/plc</a> from code at <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/plc.md">https://github.com/bomonike/bomonike.github.io/blob/master/plc.md</a>
 
-Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">"Automation Pyramid"</a> are from a PowerPoint file at <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">https://7451111251303.gumroad.com/l/pussom</a>
+Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">"Automation Pyramid"</a> are captured from a PowerPoint file at <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.
 
-<img alt="ignition-pyramid-1495x816.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726755894/ignition-pyramid-1495x816_ehdnki.png"></a>
+<img alt="ignition-pyramid-2300x1250.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726775183/ignition-pyramid-2300x1250_warldr.png">
 
 InductiveAutomation enables industrial companies to manage
 * PLCs (Programmable Logic Controllers) that <strong>automate</strong> remote operation of equipment. Communication of inputs and outputs to and from each PLC is supervised by a
@@ -62,6 +62,7 @@ References:
 
 ## Key Links:
 
+* https://docs.inductiveautomation.com/docs/8.1/getting-started/
 * https://forum.inductiveautomation.com/
 * https://www.linkedin.com/in/traviscox-automation/
 * https://www.youtube.com/@InductiveAutomation
@@ -88,6 +89,8 @@ The <a target="_blank" href="https://www.youtube.com/watch?v=DCixhDisHQ8">VIDEO<
 <a target="_blank" href="https://inductiveautomation.com/ignition/cloud-edition">Ignition Cloud Edition</a> obtained from the
 <a target="_blank" href="https://aws.amazon.com/marketplace/pp/prodview-2rstgfnmrqc2o">AWS Marketplace</a> or <a target="_blank" href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/inductiveautomationllc1675268212292.ignition-cloud-edition?tab=Overview">Azure</a> installs on Ubuntu Linux servers from an (AMI) image, not as "serverless" functions.
 
+<a target="_blank" href="https://inductiveuniversity.com/videos/cloud-edition-overview/8.1">IU</a>
+
 "Auto-scaling" within a <a target="_blank" href="https://aws.amazon.com/solutions/partners/inductive-automation-ignition/">standalone AWS archicture</a> requires configuration of Auto Scaling Group (ASG) within a Bastion host in each of two Availability Zones. Configurations need to be <a target="_blank" href="https://aws-ia.github.io/cfn-ps-inductive-automation-ignition/">specified</a> in <a target="_blank" href="https://github.com/aws-ia/cfn-ps-inductive-automation-ignition/blob/main/scripts/creation_v2.sh">shell scripts</a> to define Security Groups, Public & Private subnets, NAT gateways, AWS KMS, CloudWatch, Amazon SNS, etc.
 
 <img alt="ignition-aws-standalone-asg.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726757987/ignition-aws-standalone-asg_pxbwqq.png">
@@ -103,6 +106,26 @@ Industrial Control Systems Advisories service.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc">VIDEO</a>:
 A big part of InductiveAutomation's value proposition is that they provide a way to obtain plant-wide <strong>visibility</strong> of the gamut of PLCs under various brands.
+
+<a name="PLCDrivers"></a>
+
+### PLC Driver modules
+
+PROTIP: Don't select these modules during install unless you know you'll need them.
+
+Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>, listed at
+
+   <ul><a target="_blank" href="https://inductiveautomation.com/ignition/modules">https://inductiveautomation.com/ignition/modules</a></ul>
+
+* Allen-Bradley (Logix 5000)
+* Siemens  (tags don't support browsing)
+* Omron
+* Logix
+* Micro800
+* Mitsubishi
+
+* ABB (Totalflow) ???
+* Rockwell Automation ???
 
 InductiveAutomation achieve that by inventing a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
 
@@ -208,25 +231,6 @@ Version 1.0 of the spec and SDK was published 4 October 2022.
 Matter uses as transport the <a target="_blank" href="https://www.threadgroup.org/What-is-Thread/Overview">Thread</a> <a target="_blank" href="https://en.wikipedia.org/wiki/Thread_(network_protocol)">IPv6 mesh protocol</a> for battery-powered devices,
 supported by Apple iPhone 15 Pro, and all models of iPhone 16 and Google Pixel 9.
 
-<a name="PLCDrivers"></a>
-
-### PLC Driver modules
-
-PROTIP: Don't select these modules during install unless you know you'll need them.
-
-Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>, listed at
-
-https://inductiveautomation.com/ignition/modules
-
-* Allen-Bradley (Logix 5000)
-* Siemens
-* Omron
-* Logix
-* Micro800
-* Mitsubishi
-
-* ABB (Totalflow) ???
-* Rockwell Automation ???
 
 
 ## Scaling with MQTT
