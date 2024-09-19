@@ -1,8 +1,7 @@
 This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/plc</a> from code at <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/plc.md">https://github.com/bomonike/bomonike.github.io/blob/master/plc.md</a>
 
-## What's This?
+Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">"Automation Pyramid"</a> are from a PowerPoint file at <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">https://7451111251303.gumroad.com/l/pussom</a>
 
-<a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">conceptual "Automation Pyramid":<br />
 <img alt="ignition-pyramid-1495x816.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726755894/ignition-pyramid-1495x816_ehdnki.png"></a>
 
 InductiveAutomation enables industrial companies to manage
@@ -26,16 +25,63 @@ At the shop floor or Field Level, barcodes and weights and other measures are ca
 <a target="_blank" href="https://libertyadvisorgroup.com/insight/manufacturing-execution-systems-erp-on-the-shop-floor/"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726635389/MESP_attributes_vd4tom.webp"></a>
 
 
-## Product Architecture
+
+## Competition in the MES industry
+Include:
+* Wonder ware
+* eazyworks.com
+* SAP
+* Oracle
+* Siemens
+<br /><br />
+
+### InductiveAutomation.com
+
+https://ia.io/platform redirects to<br />
+https://www.InductiveAutomation.com/
+in Folsom, CA (Near Sacramento)
+800-266-7798
+
+People:
+* https://www.linkedin.com/in/traviscox-automation/
+* Kevin McClusky is CTO
+
+Unlike legacy PLCs which use proprietary Assembly language, Ignition is customized using the Python language.
+
+Unlike older competitors that use 15 inch monitors, InductiveAutomation clients display at HD (1920x1080 pixel) resolution on 22+ inch monitors.
+
+InductiveAutomation charges by the number of servers installed for use by an <strong>unlimited number of clients</strong> at no additional licensing cost. <a target="_blank" href="https://www.youtube.com/watch?v=zH0m8Z0opyc">VIDEO</a>.
+
+References:
+* <a target="_blank" href="https://www.youtube.com/@YaskawaAmerica">VIDEO: IEC 61131-3 by Yaskawa</a>
+<a target="_blank" href="https://www.youtube.com/@yaskawa">robotics</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=3325bTcuPKQ">Top Requirements for an effective SCADA</a>
+* https://www.youtube.com/watch?v=FDlxR2Ktoi4
+* <a target="_blank" href="https://www.youtube.com/watch?v=R65XegwK3Bk">VIDEO: Anywhere</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=0yKoEYPz5a4">VIDEO: Picking the right arch</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=Qzskv9O_zh0">VIDEO: shows screens</a>
+
+## Key Links:
+
+* https://forum.inductiveautomation.com/
+* https://www.linkedin.com/in/traviscox-automation/
+* https://www.youtube.com/@InductiveAutomation
+
+
+## InductiveAutomation Product Architecture
 
 <a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1">
 <img alt="ignition-components.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726755769/ignition-components_m8bxbr.png"></a>
 
-A big part of InductiveAutomation's value proposition is that their <strong>Ignition Server</strong> provides a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
+## Ignition servers
 
-To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) that control industrial equipment, InductiveAutomation provides locally installed <strong>"Ignition"</strong> web servers called <strong>Gateways</strong> which run within Docker containers.
+To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) <strong>devices</strong> that control industrial equipment, InductiveAutomation provides <strong>"Ignition"</strong> web servers called <strong>Gateways</strong> which run within Docker containers.
 
-## Cloud Edition
+The number of component Connections managed by Ignition servers are displayed the Gateway's Status GUI
+<img alt="ignition-Connections.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726741634/ignition-Connections_icmkss.png">
+
+
+### Cloud Edition
 
 Iginition is not a SaaS app like Salesforce.
 
@@ -51,70 +97,35 @@ QUESTION: Can HashiCorp Terraform be used to stand up servers? That would enable
 
 ## Security Alerts
 
-Industrial Control Systems Advisories:
+America's Cyber Defense Agency, CISA (Critical Infastructure Security and Resilience) has released <a target="_blank" href="https://www.cisa.gov/search?g=inductive-automation-ignition#gsc.tab=0&gsc.q=inductive-automation-ignition&gsc.page=1">security alerts about Ignition</a> as part of its
+Industrial Control Systems Advisories service.
 
-America's Cyber Defense Agency, CISA (Critical Infastructure Security and Resilience) has released <a target="_blank" href="https://www.cisa.gov/search?g=inductive-automation-ignition#gsc.tab=0&gsc.q=inductive-automation-ignition&gsc.page=1">security alerts about Ignition</a>.
+## Open Platform Connect
 
-### Design Launcher
+<a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc">VIDEO</a>:
+A big part of InductiveAutomation's value proposition is that they provide a way to obtain plant-wide <strong>visibility</strong> of the gamut of PLCs under various brands.
 
-Those who design how Igition operates install the <strong>Design Launcher</strong> app on their workstations (laptops). There is also "WrapperSimpleApp" that has a Java icon.
+InductiveAutomation achieve that by inventing a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
+
+<a name="OPC-UA"></a>
+
+Ignition's OPC-UA (Open Platform Communication United Architecture) <a target="_blank" href="https://inductiveautomation.com/ignition/modules/ignition-opc-ua">module</a> <a target="_blank" href="https://www.youtube.com/watch?v=3EREV8Q5PNU">VIDEO</a>:
+* <a target="_blank" href="https://inductiveautomation.com/ignition/modules/opc-com">OPC-COM</a> for legacy OPC servers
+* OPC-DA (Data Access) v2 & 3 for Windows
+* OPC-HDA (Historical Data Access) v12
+* OPC Tunneller ???
+
+
+## Visibility from each and every location
+
+InducativeAutomation enables the design of all PLC interactions to be defined from a single central Designer location by starting the Inductive Ignition <strong>Design Launcher</strong> app on their workstations (laptops).
+
+There is also "WrapperSimpleApp" that has a Java icon.
 
 “Perspective” is Induction’s design IDE.
 
-Touch panels are also called "HMIs" (Human-Machine Interface) to PLCs (Programmable Logic Controllers).
-
-The list of Connections on the Gateway's Status GUI
-<img alt="ignition-Connections.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726741634/ignition-Connections_icmkss.png">
-
-
-## InductiveAutomation.com
-
-https://www.linkedin.com/in/traviscox-automation/
-in Folsom, CA (Near Sacramento)
-800-266-7798
-
-https://www.youtube.com/@InductiveAutomation
-points to https://ia.io/platform
-
-<a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc">VIDEO: Why? Overview</a>
-
-Interactions:
-* https://forum.inductiveautomation.com/
-
-People:
-* https://www.linkedin.com/in/traviscox-automation/
-* Kevin McClusky is CTO
-
-## Competition
-
-InductiveAutomation's competitors include:
-* Wonder ware
-* eazyworks.com
-* SAP
-* Oracle
-* Siemens
-
-Unlike older competitors that use 15 inch monitors, inductiveautomation clients display at HD (1920x1080 pixel) resolution on 22+ inch monitors.
-
-inductiveautomation charges by the number of servers installed for use by an <strong>unlimited number of clients</strong> at no additional licensing cost. <a target="_blank" href="https://www.youtube.com/watch?v=zH0m8Z0opyc">VIDEO</a>.
-
-* <a target="_blank" href="https://www.youtube.com/watch?v=3325bTcuPKQ">Top Requirements for an effective SCADA</a>
-
-
-
-Mobile using JavaScript?
-
-Unlike legacy PLCs which use proprietary Assembly language, Ignition is customized using the Python language.
-
-
-
-
-
-* https://www.youtube.com/watch?v=FDlxR2Ktoi4
-* <a target="_blank" href="https://www.youtube.com/watch?v=R65XegwK3Bk">VIDEO: Anywhere</a>
-* <a target="_blank" href="https://www.youtube.com/watch?v=0yKoEYPz5a4">VIDEO: Picking the right arch</a>
-* <a target="_blank" href="https://www.youtube.com/watch?v=Qzskv9O_zh0">VIDEO: shows screens</a>
-
+<a target="_blank" href="https://www.youtube.com/watch?v=_2ZqQ1Rc8xs">VIDEO</a>:
+Touch panels provide a "HMI" (Human-Machine Interface) to PLCs (Programmable Logic Controllers).
 
 ## Demo app
 
@@ -129,7 +140,8 @@ This does not require installation locally.
 View source to see that it uses React, Mobx, Moment, XHR.
 All HTML on the page is loaded dynamically.
 
-The app can be configured to <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc&t=14m56s">add a tint to an svg image</a>.
+The app can be configured to <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc&t=14m56s">VIDEO: add a tint to an svg image</a>.
+
 
 ## Modules
 
@@ -155,14 +167,6 @@ Modules selected for install and <a target="_blank" href="http://localhost:8088/
 * WebDev
 
 There are also <a href="#PLCDrivers">PLC Driver modules</a> and Communication protocol modules (such as OPC-UA).
-
-<a name="OPC-UA"></a>
-
-Ignition's OPC-UA (Open Platform Communication United Architecture) <a target="_blank" href="https://inductiveautomation.com/ignition/modules/ignition-opc-ua">module</a> <a target="_blank" href="https://www.youtube.com/watch?v=3EREV8Q5PNU">VIDEO</a>:
-* <a target="_blank" href="https://inductiveautomation.com/ignition/modules/opc-com">OPC-COM</a> for legacy OPC servers
-* OPC-DA (Data Access) v2 & 3 for Windows
-* OPC-HDA (Historical Data Access) v12
-* OPC Tunneller ???
 
 
 ### Communication Protocol Modules
@@ -203,8 +207,9 @@ https://inductiveautomation.com/ignition/modules
 * Micro800
 * Mitsubishi
 
-* ABB ???
+* ABB (Totalflow) ???
 * Rockwell Automation ???
+
 
 ## Scaling with MQTT
 
