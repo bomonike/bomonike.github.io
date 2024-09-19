@@ -127,7 +127,24 @@ There is also "WrapperSimpleApp" that has a Java icon.
 <a target="_blank" href="https://www.youtube.com/watch?v=_2ZqQ1Rc8xs">VIDEO</a>:
 Touch panels provide a "HMI" (Human-Machine Interface) to PLCs (Programmable Logic Controllers).
 
-## Demo app
+There is less mistakes and waste when operators are assisted with a control panel such as this:
+<a target="_blank" href="https://www.youtube.com/watch?v=T0WPK_lNQhM&t=1m46s"><img alt="ignition-fill-828x485.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726763341/ignition-fill-828x485_zvuizx.png"></a>
+
+### Ignition Edge Edition
+
+InductiveAutomation provides a "Touch Panel" that communicates with PLCs in their manufacturer's native protocol to access a 1-week data buffer.
+
+<a target="_blank" href="https://inductiveuniversity.com/videos/edge-edition-architecture/8.1"><img alt="ignition-panel-727x374.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726763936/ignition-panel-727x374_aueufc.png"></a>
+
+
+### Maker Edition
+
+InductiveAutomation provides a free-forever edition for home automation.
+
+<a target="_blank" href="https://inductiveuniversity.com/videos/getting-started-with-maker/8.1">VIDEO</a>:
+Maker Edition Install
+
+## Industrial Demo
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc" title="18m22s">VIDEO</a>:
 
