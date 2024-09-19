@@ -19,11 +19,10 @@ includes most accounting functions, including general ledger, as well as invento
 
 These systems help with ISO 9001 certification and compliance with FDA CFR 21 Part 11 Medical Device Manufacturing.
 
-At the shop floor or Field Level, barcodes and weights and other measures are captured and displayed by a
+At the shop floor or Field Level, RFID tags, barcodes, and weights and other measures are captured and displayed by a
 * LIM (Laboratory Information Management) system.
 
 <a target="_blank" href="https://libertyadvisorgroup.com/insight/manufacturing-execution-systems-erp-on-the-shop-floor/"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726635389/MESP_attributes_vd4tom.webp"></a>
-
 
 
 ## Competition in the MES industry
@@ -43,7 +42,7 @@ in Folsom, CA (Near Sacramento)
 800-266-7798
 
 People:
-* https://www.linkedin.com/in/traviscox-automation/
+* <a target="_blank" href="https://www.linkedin.com/in/traviscox-automation/">Travis Cox</a>
 * Kevin McClusky is CTO
 
 Unlike legacy PLCs which use proprietary Assembly language, Ignition is customized using the Python language.
@@ -189,7 +188,10 @@ There are also <a href="#PLCDrivers">PLC Driver modules</a> and Communication pr
 ### Communication Protocol Modules
 
 * TCP (using the HSMS standard, SEMI E37)
+
 * <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service. It was created to monitor oil pipelines within the SCADA industrial control system. SarkplugB format or add-in <a target="_blank" href="https://inductiveautomation.com/exchange/2670/overview">Vanilla Transmission</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=txi2p5_OjKU">MODBUS</a> is a protocol published by Modicon in 1979 (now owned by Schneider) when ASCII was used. It now makes use of RTU as well in several media: RS-232 & RS485 serial, RS-422 TCP/IP Ethernet. It is called open becuase it is used by different PLCs. A master send sends requests for slaves to respond. A CRC error check in is added.
 
 * RS-232 based protocol (using the SECS-I standard, SEMI E4), SECS/GEM is the <a target="_blank" href="https://en.wikipedia.org/wiki/SECS-II">Equipment Communications Standard E5</a> / Generic Equipment Model (standard E30) protocol defined by <a target="_blank" href="https://en.wikipedia.org/wiki/SEMI">SEMI (Semiconductor Equipment and Materials International)</a> for equipment-to-host data communications. In an automated fab, the interface can start and stop equipment processing, collect measurement data, change variables and select recipes for products.
 
@@ -217,7 +219,6 @@ Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/abo
 https://inductiveautomation.com/ignition/modules
 
 * Allen-Bradley (Logix 5000)
-* MODBUS
 * Siemens
 * Omron
 * Logix
@@ -646,3 +647,8 @@ Ignition can export and import Tag configurations to and from the JSON (JavaScri
    * system_logs.idb
    * thread-dump.json
    * wrapper.log
+
+
+## Tutorials
+
+* <a target="_blank" href="https://www.youtube.com/@ITandAutomationAcademy">IT and Automation Academy</a>
