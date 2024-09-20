@@ -2,7 +2,7 @@ This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomo
 
 Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">"Automation Pyramid"</a> are captured from a PowerPoint file at <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.
 
-<img alt="ignition-pyramid-2300x1250.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726775183/ignition-pyramid-2300x1250_warldr.png">
+<img alt="ignition-pyramid-1833x831.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726842630/ignition-pyramid-1833x831_y2qc08.png">
 
 InductiveAutomation enables industrial companies to manage
 * PLCs (Programmable Logic Controllers) that <strong>automate</strong> remote operation of equipment. Communication of inputs and outputs to and from each PLC is supervised by a
@@ -44,6 +44,7 @@ in Folsom, CA (Near Sacramento)
 People:
 * <a target="_blank" href="https://www.linkedin.com/in/traviscox-automation/">Travis Cox</a>
 * Kevin McClusky is CTO
+* Paul Scott, Training Content
 
 Unlike legacy PLCs which use proprietary Assembly language, Ignition is customized using the Python language.
 
@@ -60,9 +61,15 @@ References:
 * <a target="_blank" href="https://www.youtube.com/watch?v=0yKoEYPz5a4">VIDEO: Picking the right arch</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=Qzskv9O_zh0">VIDEO: shows screens</a>
 
-## Key Links:
+
+## Bookmark These Website URLs
+
+* https://account.inductiveautomation.com/
 
 * https://docs.inductiveautomation.com/docs/8.1/getting-started/
+* https://docs.inductiveautomation.com/docs/8.1/intro
+Ignition User Manual
+
 * https://forum.inductiveautomation.com/
 * https://www.linkedin.com/in/traviscox-automation/
 * https://www.youtube.com/@InductiveAutomation
@@ -75,7 +82,16 @@ References:
 
 ## Ignition servers
 
-To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) <strong>devices</strong> that control industrial equipment, InductiveAutomation provides <strong>"Ignition"</strong> web servers called <strong>Gateways</strong> which run within Docker containers.
+To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) <strong>devices</strong> that control industrial equipment, InductiveAutomation provides <strong>"Ignition"</strong> web servers called <strong>Gateways</strong> which <a target="_blank" href="https://inductiveuniversity.com/courses/elective-studies/ignition-with-docker">run within Docker</a> using docker compose.
+
+Licenses are <a target="_blank" href="https://inductiveuniversity.com/video/ignition-container-licensing">stored within the Docker image</a>.
+
+QUESTION: images are stored and retrieved from???
+
+<a target="_blank" href="https://inductiveuniversity.com/video/docker-secrets">secrets</a>
+
+An <a target="_blank" href="https://inductiveuniversity.com/video/adding-an-smtp-server">SMTP server</a> using image dockage/mailcatcher on 1080 & 1025.
+
 
 The number of component Connections managed by Ignition servers are displayed the Gateway's Status GUI
 <img alt="ignition-Connections.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726741634/ignition-Connections_icmkss.png">
@@ -97,12 +113,14 @@ The <a target="_blank" href="https://www.youtube.com/watch?v=DCixhDisHQ8">VIDEO<
 
 QUESTION: Can HashiCorp Terraform be used to stand up servers? That would enable identification of security and misconfiguration issues before resources are created.
 
+
 ## Security Alerts
 
 America's Cyber Defense Agency, CISA (Critical Infastructure Security and Resilience) has released <a target="_blank" href="https://www.cisa.gov/search?g=inductive-automation-ignition#gsc.tab=0&gsc.q=inductive-automation-ignition&gsc.page=1">security alerts about Ignition</a> as part of its
 Industrial Control Systems Advisories service.
 
-## Open Platform Connect
+
+## OPC (Open Platform Connect)
 
 <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc">VIDEO</a>:
 A big part of InductiveAutomation's value proposition is that they provide a way to obtain plant-wide <strong>visibility</strong> of the gamut of PLCs under various brands.
@@ -142,9 +160,9 @@ Ignition's OPC-UA (Open Platform Communication United Architecture) <a target="_
 
 InducativeAutomation enables the design of all PLC interactions to be defined from a single central Designer location by starting the Inductive Ignition <strong>Design Launcher</strong> app on their workstations (laptops).
 
-There is also "WrapperSimpleApp" that has a Java icon.
+QUESTION: What is "WrapperSimpleApp" that has a Java icon?
 
-“Perspective” is Induction’s design IDE.
+<a target="_blank" href="https://inductiveuniversity.com/courses/building-in-perspective">IU</a>:“Perspective” is Induction’s design IDE.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=_2ZqQ1Rc8xs">VIDEO</a>:
 Touch panels provide a "HMI" (Human-Machine Interface) to PLCs (Programmable Logic Controllers).
@@ -165,6 +183,7 @@ InductiveAutomation provides a free-forever edition for home automation.
 
 <a target="_blank" href="https://inductiveuniversity.com/videos/getting-started-with-maker/8.1">VIDEO</a>:
 Maker Edition Install
+
 
 ## Industrial Demo
 
@@ -207,6 +226,53 @@ Modules selected for install and <a target="_blank" href="http://localhost:8088/
 
 There are also <a href="#PLCDrivers">PLC Driver modules</a> and Communication protocol modules (such as OPC-UA).
 
+<a target="_blank" href="https://inductiveuniversity.com/video/filtering-modules">IU</a>: Modules displayed (filtered) are determined by the docker-compose.yml under services: gateway: enviornment: GATEWAY_MODULES_ENABLES=opc-ua,tag-historian,alarm-notification,logix-driver
+
+https://inductiveuniversity.com/video/basic-structure-of-an-ignition-sdk-module
+
+
+### Custom module development
+
+<img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726828461/ignition-module-build_cgxfvh.png">
+
+<a target="_blank" href="https://inductiveuniversity.com/courses/elective-studies/module-development-with-the-ignition-sdk">IU</a>:
+Dev custom modules using the Ignition SDK written in Kotlin (developed by JetBrains) and Java run by the Azul.com OpenJDK Zulu JDK.
+
+Use Git to clone https://github.com/inductiveautomation/ignition-sdk-training
+
+The IDE recommended is IntelliJ IDEA free Community Edition.
+
+The IMDC (Ignition Module Development Community) has code to Azure at
+https://github.com/IgnitionModuleDevelopmentCommunity
+
+* Scripting & expression Functions
+* Components
+* Tag providers
+* Drivers
+
+The <tt>build.gradle.kts</tt> config. file defines what project scope the module has. A letter defines each scope, such as "G" to com.inductiveautomation.ignition.examples.scripting.gateway.GatewayHook, C to ClientHook, D to DesignerHook, CDG to common.
+
+<a target="_blank" href="https://inductiveuniversity.com/video/creating-a-new-module-gradle">IU</a>:
+To build/generate SDK modules into a .modl file, Gradle.org is installed using:
+https://github.com/inductiveautomation/ignition-module-tools
+
+```
+gradlew.bat clean build
+```
+
+```
+gradlew.bat runCli --console plain
+```
+
+Each .modl file is actually a zip file containing a jar SNAPSHOT file for each scope, plus a XML manifest file named "module".
+
+QUESTION: How sign custom modules?
+
+<a target="_blank" href="https://inductiveuniversity.com/video/sdk-debugging-using-loggers">Logger objects</a> and messages for each scope.
+
+<a target="_blank" href="https://inductiveuniversity.com/video/sdk-debugging-using-breakpoints">
+Module debugging</a> makes use of a JDWP connection configured in /data/ignition.conf.
+
 
 ### Communication Protocol Modules
 
@@ -230,7 +296,6 @@ There are also <a href="#PLCDrivers">PLC Driver modules</a> and Communication pr
 Version 1.0 of the spec and SDK was published 4 October 2022.
 Matter uses as transport the <a target="_blank" href="https://www.threadgroup.org/What-is-Thread/Overview">Thread</a> <a target="_blank" href="https://en.wikipedia.org/wiki/Thread_(network_protocol)">IPv6 mesh protocol</a> for battery-powered devices,
 supported by Apple iPhone 15 Pro, and all models of iPhone 16 and Google Pixel 9.
-
 
 
 ## Scaling with MQTT
@@ -289,12 +354,12 @@ Launched from the Gateway:
 * SFC (Sequential Function Charts) is Ignition's implementation of <a target="_blank" href="https://www.wikiwand.com/en/articles/IEC_61131-3">IEC 61131-3</a> specifications for graphical design used instead of Python. SFCs remain running like Python programs. <a target="_blank" href="https://docs.inductiveautomation.com/docs/8.1/getting-started/modules-overview/core-modules/SFC-module">User Manual</a>
    PROTIP: SFCs
 
-## Reference Docs
 
-https://docs.inductiveautomation.com/docs/8.1/intro
-Ignition User Manual
+## Database
 
-https://account.inductiveautomation.com/
+database MariaDB 4306
+
+store password in code???
 
 ## Dev Build
 
@@ -335,7 +400,7 @@ https://inductiveuniversity.com/courses/elective-studies
 https://www.youtube.com/watch?v=ZkYZ1xTtzsg
 Learning to Code Using Ignition!
 
-### Install
+## Install
 
 The below is based on: https://docs.inductiveautomation.com/docs/8.1/getting-started/quick-start-guide/download-and-install
 
@@ -467,8 +532,23 @@ VIDEO: <a target="_blank" href="https://www.youtube.com/watch?v=spE6IpOU-2w">MQT
 1. Create a project.
 1. Download add-on extensions.
 
-11. Stop the Gateway server.
-12. To stop the Gateway from starting upon startup, ???
+   ### Stop & Start
+
+   PROTIP: Add an alias for these commands in the OS CLI.
+
+1. Stop the Gateway server.
+
+   <tt>docker compose down -v</tt>
+
+1. To start the Gateway server
+
+   <tt>docker compose up -d</tt>
+
+1. To stop the Gateway from starting upon startup, ???
+
+## Config
+
+1. Define the restore.gwbk file for backup.
 
 ## Dev
 
@@ -495,6 +575,7 @@ https://www.wikiwand.com/en/articles/Open_Platform_Communications
 <a target="_blank" href="https://www.opcdatahub.com/WhatIsOPC.html#note1">Object Linking and Embedding OPC</a>
 
 https://www.udemy.com/course/mastering-opc-ole-for-process-control/
+
 
 ## OEE Loss Calculations
 
@@ -656,3 +737,5 @@ Ignition can export and import Tag configurations to and from the JSON (JavaScri
 ## Tutorials
 
 * <a target="_blank" href="https://www.youtube.com/@ITandAutomationAcademy">IT and Automation Academy</a>
+
+<a target="_blank" href="https://www.youtube.com/watch?v=GD6WKPFG0T0">Remote monitoring design tips</a>
