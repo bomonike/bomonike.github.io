@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2024-09-20"
-lastchange: "add OEE FLC MPC PID SFC LIMS :acronyms"
+lastchange: "add TAED :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -1242,6 +1242,7 @@ comments: true
 <a name="T"></a>
 ### T
 
+* TAED = Target Actual Efficiency Downtime
 * TAM	=	Technical Account Manager
 *	TAM	=	Total Addressable Market (marketing)
 *	TaS	=	Test as Service

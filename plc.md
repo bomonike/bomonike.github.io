@@ -587,19 +587,22 @@ https://www.udemy.com/course/mastering-opc-ole-for-process-control/
 
 OEE (Overall Equipment Effectiveness) is commonly used as a manufacturing best practice key performance indicator (KPI) versus the <strong>full potential</strong> of how well a manufacturing operation is utilizing its facilities, time, and material.
 
-"Fully Productive Time" is another way of saying an OEE of 100% when only good parts are produced (100% quality), at the maximum speed (100% performance), and without interruption (100% availability).
+The term OEE was coined by Seiichi Nakajima (in Japan) based on the Harrington Emerson way of thinking regarding labor efficiency.
 
-Schedule Loss is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>, a closely related measure which quantifies OEE against <strong>calendar hours</strong> rather than only against scheduled operating hours. A TEEP of 100% means that the operations have run with an OEE of 100% 24 hours a day and 365 days a year (100% loading).
+"Fully Productive Time" is another way of saying an OEE of 100% when only good parts are produced (100% quality), at the maximum speed (100% performance), and without interruption (100% availability).<a target="_blank" href="https://www.leanproduction.com/oee/">:</a>
 
-   * OEE is used as a baseline to track progress over time in eliminating waste from a given production asset.
+OEE is used as a baseline to track progress over time in eliminating waste from a given production asset. See https://www.oee.com/calculating-oee/
 
-   * OEE is used as a benchmark to compare the performance of a given production asset to industry standards, to similar in-house assets, or to results for different shifts working on the same asset.
+OEE is used as a benchmark to compare the performance of a given production asset to industry standards, to similar in-house assets, or to results for different shifts working on the same asset.
+
+   * 85% OEE is considered world class for discrete manufacturers. For many companies, it is a suitable long-term goal.
+   * 60% OEE is fairly typical for discrete manufacturers, but indicates there is substantial room for improvement.
+   * 40% OEE is not uncommon for manufacturing companies that are just starting to track and improve their manufacturing performance. It is a low score and in most cases can be easily improved through straightforward measures (e.g., by tracking stop time reasons and addressing the largest sources of downtime – one at a time).
 
 By measuring OEE and the underlying losses, important insights can be gained on how to systematically improve the manufacturing process. OEE is an effective metric for identifying losses, bench-marking progress, and improving the productivity of manufacturing equipment (i.e., eliminating waste). The best way for reliable OEE monitoring is to automatically collect all data directly from the machines.
 
-The term OEE was coined by Seiichi Nakajima. It is based on the Harrington Emerson way of thinking regarding labor efficiency. The generic form of OEE allows comparison between manufacturing units in differing industries. It is not however an absolute measure and is best used to identify scope for process performance improvement, and how to get the improvement.
-
-<strong>Fully Productive Time</strong> obtained.
+That's the job of MES to collect, calculate, and display them over time.
+<a target="_blank" href="https://www.youtube.com/watch?v=QhO5Df1GdHY">VIDEO</a>: Show OEE gaps in data by filling in.
 
 What's keeping that valuable operating time down are these loss-related factors:
 
@@ -618,19 +621,20 @@ What's keeping that valuable operating time down are these loss-related factors:
    <tr valign="top"><td>Production Rejects</td><td>Reduced Yield</td></tr>
 </table>
 
-Their identification enables immediate recognition of inefficient processes.
-
-That's the job of MES to calculate them.
-
-
-* <a target="_blank" href="https://www.youtube.com/watch?v=QhO5Df1GdHY">VIDEO</a>: Show OEE gaps in data by filling in.
-
-https://www.oee.com/calculating-oee/
-
-Because it exposes what actions to take against the underlying causes of lost productivity, the calculation above is preferred over calculation of OEE using the ratio of Fully Productive Time to Planned Production Time:
+Because it exposes what actions to take against the underlying causes of lost productivity, the calculation above is preferred over calculation of OEE using the ratio of Fully Productive Time to <strong>Planned Production Time</strong>:
 
    <ul>(Good Count × Ideal Cycle Time) / Planned Production Time</ul>
 
+OEE definitions may seem abstract for plant floor employees. Since plant floor employees tend to perform best when they given goals that are real-time, easily interpreted, consider the acronymn TAED:
+
+  * Target: a real-time production rate target driven by the planned rate of production
+  * Actual: the actual production count
+
+  * Efficiency: the ratio of Target to Actual; how far ahead or behind production is running in terms of a percentage
+
+  * Downtime (Availability Loss): accumulated unplanned stop time for the shift updated in real-time; this keeps a strong focus on a key actionable improvement area
+
+"Schedule Loss" is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>, a closely related measure which quantifies OEE against <strong>calendar hours</strong> rather than only against scheduled operating hours. A TEEP of 100% means that the operations have run with an OEE of 100% 24 hours a day and 365 days a year (100% loading).
 
 
 ## Feedback Control Algorithms
