@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-18"
-lastchange: "add FLC MPC PID SFC LIMS :acronyms"
+date: "2024-09-20"
+lastchange: "add OEE FLC MPC PID SFC LIMS :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -896,6 +896,7 @@ comments: true
 *	OCM	=	Organizational Change Management
 *	ODNI	=	Office of the Director of National Intelligence
 *	OECD	=	Organization for Economic Cooperation and Development (published trans-border privacy guidelines in 1980)
+* OEE = Overall Equipment Effectiveness
 *	OEL	=	Oracle Enterprise Linux
 *	OEM	=	Original Equipment Manufacturer
 *	OEP	=	Occupant Emergency Plan

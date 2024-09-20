@@ -74,6 +74,8 @@ Ignition User Manual
 * https://www.linkedin.com/in/traviscox-automation/
 * https://www.youtube.com/@InductiveAutomation
 
+NOTE: The Ignition here is not related to the <a target="_blank" href="https://gazebosim.org/api/gazebo/6/index.html">Ignition Gazebo</a> libraries to develop robot and simulation applications.
+
 
 ## InductiveAutomation Product Architecture
 
@@ -220,7 +222,7 @@ Modules selected for install and <a target="_blank" href="http://localhost:8088/
 * Symbol Factory
 * Tag Historian
 * UDP and TCP Drivers
-* Vision
+* Vision (an older front-end technology replaced by Perspective)
 * Web Browser
 * WebDev
 
@@ -236,7 +238,7 @@ https://inductiveuniversity.com/video/basic-structure-of-an-ignition-sdk-module
 <img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726828461/ignition-module-build_cgxfvh.png">
 
 <a target="_blank" href="https://inductiveuniversity.com/courses/elective-studies/module-development-with-the-ignition-sdk">IU</a>:
-Dev custom modules using the Ignition SDK written in Kotlin (developed by JetBrains) and Java run by the Azul.com OpenJDK Zulu JDK.
+Dev custom modules using the Ignition SDK written in <a target="_blank" href="https://medium.com/@ddmendes/using-kotlin-from-cli-on-mac-4560b5c70604">Kotlin</a> (developed by JetBrains) and Java run by the Azul.com OpenJDK Zulu JDK.
 
 Use Git to clone https://github.com/inductiveautomation/ignition-sdk-training
 
@@ -320,6 +322,9 @@ https://inductiveautomation.com/resources/customerproject
 
 <a target="_blank" href="https://www.youtube.com/watch?v=2ievolmYuw8" title="from 2020">VIDEO</a>
 Raspberry Pi Ignition Edge Install
+
+
+### Using ChatGPT
 
 <a target="_blank" href="https://www.youtube.com/watch?v=RverIFT0D_A">ChatGPT to create Views</a>
 
@@ -578,6 +583,8 @@ https://www.udemy.com/course/mastering-opc-ole-for-process-control/
 
 
 ## OEE Loss Calculations
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=QhO5Df1GdHY">VIDEO</a>: Show OEE gaps in data by filling in.
 
 https://www.oee.com/calculating-oee/
 
