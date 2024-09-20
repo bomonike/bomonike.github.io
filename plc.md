@@ -581,10 +581,24 @@ https://www.wikiwand.com/en/articles/Open_Platform_Communications
 
 https://www.udemy.com/course/mastering-opc-ole-for-process-control/
 
+<a name="OEE"></a>
 
 ## OEE Loss Calculations
 
-OEE (Overall Equipment Effectiveness) is the
+OEE (Overall Equipment Effectiveness) is commonly used as a manufacturing best practice key performance indicator (KPI) versus the <strong>full potential</strong> of how well a manufacturing operation is utilizing its facilities, time, and material.
+
+"Fully Productive Time" is another way of saying an OEE of 100% when only good parts are produced (100% quality), at the maximum speed (100% performance), and without interruption (100% availability).
+
+Schedule Loss is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>, a closely related measure which quantifies OEE against <strong>calendar hours</strong> rather than only against scheduled operating hours. A TEEP of 100% means that the operations have run with an OEE of 100% 24 hours a day and 365 days a year (100% loading).
+
+   * OEE is used as a baseline to track progress over time in eliminating waste from a given production asset.
+
+   * OEE is used as a benchmark to compare the performance of a given production asset to industry standards, to similar in-house assets, or to results for different shifts working on the same asset.
+
+By measuring OEE and the underlying losses, important insights can be gained on how to systematically improve the manufacturing process. OEE is an effective metric for identifying losses, bench-marking progress, and improving the productivity of manufacturing equipment (i.e., eliminating waste). The best way for reliable OEE monitoring is to automatically collect all data directly from the machines.
+
+The term OEE was coined by Seiichi Nakajima. It is based on the Harrington Emerson way of thinking regarding labor efficiency. The generic form of OEE allows comparison between manufacturing units in differing industries. It is not however an absolute measure and is best used to identify scope for process performance improvement, and how to get the improvement.
+
 <strong>Fully Productive Time</strong> obtained.
 
 What's keeping that valuable operating time down are these loss-related factors:
@@ -592,7 +606,7 @@ What's keeping that valuable operating time down are these loss-related factors:
 <ul>Availability  x  Performance  x Quality</ul>
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr><th>Loss Factor</th><th>Recommended Six Big Losses</th><th>Example</th></tr>
+<tr align="left"><th>Loss Factor</th><th>Recommended Six Big Losses</th><th>Example</th></tr>
 <tr valign="top"><td rowspan="2">Availability Loss
    </td><td>Unplanned stops</td><td>Equipment failure</td></tr>
    <tr valign="top"><td>Planned Stops</td><td>Setup and Adjustments</td></tr>
@@ -617,9 +631,7 @@ Because it exposes what actions to take against the underlying causes of lost pr
 
    <ul>(Good Count × Ideal Cycle Time) / Planned Production Time</ul>
 
-Fully Productive Time is just another way of saying manufacturing only Good Parts as fast as possible (Ideal Cycle Time) with no Stop Time.
 
-Schedule Loss is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>.
 
 ## Feedback Control Algorithms
 
