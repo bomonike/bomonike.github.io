@@ -584,17 +584,38 @@ https://www.udemy.com/course/mastering-opc-ole-for-process-control/
 
 ## OEE Loss Calculations
 
+OEE (Overall Equipment Effectiveness) is the
+<strong>Fully Productive Time</strong> obtained.
+
+What's keeping that valuable operating time down are these loss-related factors:
+
+<ul>Availability  x  Performance  x Quality</ul>
+
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Loss Factor</th><th>Recommended Six Big Losses</th><th>Example</th></tr>
+<tr valign="top"><td rowspan="2">Availability Loss
+   </td><td>Unplanned stops</td><td>Equipment failure</td></tr>
+   <tr valign="top"><td>Planned Stops</td><td>Setup and Adjustments</td></tr>
+<tr valign="top"><td rowspan="2">Performance Loss
+   </td><td>Small stops</td><td>Idling and Minor stops</td></tr>
+   <tr valign="top"><td>Slow Cycles</td><td>Reduced speed</td></tr>
+<tr valign="top"><td rowspan="2">Quality Loss
+   </td><td>Startup Rejects</td><td>Process Defects</td></tr>
+   <tr valign="top"><td>Production Rejects</td><td>Reduced Yield</td></tr>
+</table>
+
+Their identification enables immediate recognition of inefficient processes.
+
+That's the job of MES to calculate them.
+
+
 * <a target="_blank" href="https://www.youtube.com/watch?v=QhO5Df1GdHY">VIDEO</a>: Show OEE gaps in data by filling in.
 
 https://www.oee.com/calculating-oee/
 
-The MES module calculates the three loss-related factors:
-
-   <ul>OEE = Availability  x  Performance  x Quality</ul>
-
 Because it exposes what actions to take against the underlying causes of lost productivity, the calculation above is preferred over calculation of OEE using the ratio of Fully Productive Time to Planned Production Time:
 
-   <ul>OEE = (Good Count × Ideal Cycle Time) / Planned Production Time</ul>
+   <ul>(Good Count × Ideal Cycle Time) / Planned Production Time</ul>
 
 Fully Productive Time is just another way of saying manufacturing only Good Parts as fast as possible (Ideal Cycle Time) with no Stop Time.
 
