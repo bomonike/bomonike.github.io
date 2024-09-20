@@ -589,7 +589,7 @@ OEE (Overall Equipment Effectiveness) is commonly used as a manufacturing best p
 
 The term OEE was coined by Seiichi Nakajima (in Japan) based on the Harrington Emerson way of thinking regarding labor efficiency.
 
-"Fully Productive Time" is another way of saying an OEE of 100% when only good parts are produced (100% quality), at the maximum speed (100% performance), and without interruption (100% availability).<a target="_blank" href="https://www.leanproduction.com/oee/">:</a>
+"Fully Productive Time" is another way of saying an OEE of 100% when only good parts are produced (100% quality), at the maximum speed (100% performance), and without interruption (100% availability).
 
 OEE is used as a baseline to track progress over time in eliminating waste from a given production asset. See https://www.oee.com/calculating-oee/
 
@@ -625,7 +625,9 @@ Because it exposes what actions to take against the underlying causes of lost pr
 
    <ul>(Good Count × Ideal Cycle Time) / Planned Production Time</ul>
 
-OEE definitions may seem abstract for plant floor employees. Since plant floor employees tend to perform best when they given goals that are real-time, easily interpreted, consider the acronymn TAED:
+OEE definitions may seem abstract for plant floor employees. Since plant floor employees tend to perform best when they given goals that are real-time, easily interpreted, consider the acronymn TAED plus Quality, as visualized here:
+
+<a target="_blank" href="https://www.leanproduction.com/oee/"><img alt="oee-vorne.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726862021/oee-vorne_hb6wu2.webp"></a>
 
   * Target: a real-time production rate target driven by the planned rate of production
   * Actual: the actual production count
