@@ -139,3 +139,6 @@ https://randomnerdtutorials.com/learn-esp32-with-arduino-ide/
 
 https://makeradvisor.com/tools/esp32-dev-board-wi-fi-bluetooth/
 $9.99
+
+To build a Arduino Tutorial: Getting weather data from API
+https://www.dfrobot.com/blog-917.html

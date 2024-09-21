@@ -90,6 +90,8 @@ print("machine.freq():",machine.freq())
 ```
 display.scroll('Hello')
 ```
+1. Click "Emulator" at the right-top.
+
 
 ## LEDs
 
@@ -173,6 +175,8 @@ NOTE: The default is Centigrade/Celsius because micro:bit was created for the BB
 
 ## Microphone
 
+The microphone senses sound from a small hole on the front of the micro:bit.
+
 ```
 from microbit import *
 lightsOn = False
@@ -188,6 +192,13 @@ while True:
 Clap your hands.
 
 From https://python.microbit.org/v/3/ideas/clap-lights
+
+
+## Sound insulation mixer
+
+From https://microbit.org/projects/make-it-code-it/sound-insulation-meter/
+two micro:bits are used: one a microphone and another a sound source of consistent volume and distance.
+
 
 ## Speaker
 
@@ -304,6 +315,26 @@ From https://python.microbit.org/v/3/reference/heading
 When you have two micro:bit boards:
 
 https://learn.parallax.com/tutorials/robot/cyberbot/cybersecurity-radio-basics
+
+## Radio to Transmit Weather
+
+From https://learn.sparkfun.com/tutorials/wireless-remote-weather-station-with-microbit/all
+
+Use MakeCode's radio blocks to have one micro:bit transmit a signal to a receiving micro:bit on the same channel. This is useful if your weather station is installed in a location that is difficult to retrieve data from the OpenLog.
+
+There are a few different ways to send and receive data.
+<a target="_blank" href="https://www.instructables.com/D4E1-No-code-IoT-Weather-Station-With-Microbit-and/">Send MQTT protocol to a Raspberry Pi</a>, which communicates with a Google Nest.
+
+Alligator clips
+
+https://makecode.microbit.org/reference/radio
+
+https://forum.core-electronics.com.au/t/weather-bit-micropython-code-examples-needed/2212
+
+https://microbit.org/projects/make-it-code-it/environment-data-logger/
+
+https://www.hackster.io/idreams/lora-weather-station-with-bbc-micro-bit-3f14f8
+
 
 ## Cyber:bot robot
 

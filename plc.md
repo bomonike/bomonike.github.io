@@ -83,42 +83,37 @@ America's Cyber Defense Agency, CISA (Critical Infastructure Security and Resili
 Industrial Control Systems Advisories service for the world.
 
 
-## InductiveAutomation Product Architecture
-
-<a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1">
-<img alt="ignition-components.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726755769/ignition-components_m8bxbr.png"></a>
-
-
 ## Ignition servers
 
-InductiveAutomation makes money by selling annual licenses for each Ignition server (shown in blue in the middle of the diagram).
+InductiveAutomation makes money by selling an annual <strong>license for each Ignition server</strong> (shown in blue in the middle of this diagram):
 
-<img alt="ignition-mqtt-3024x1964.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939517/ignition-mqtt-3024x1964_dx57of.png"></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939517/ignition-mqtt-3024x1964_dx57of.png"><img alt="ignition-mqtt-3024x1964.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939517/ignition-mqtt-3024x1964_dx57of.png"><br /><em>Click picture for full screen</em></a>
 
-Ignition servers are called "Gateways" because industrial projects are typically large and far-flung, so there are both local and remote Ignition servers connected to a central Gateway.
+Ignition servers are called "<strong>Gateways</strong>" because industrial plants  typically take up a lot of territory, so there are both local and remote Ignition servers connected to a central Gateway.
 
-Ignition makes uses of <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service. It was created to monitor oil pipelines within the SCADA industrial control system. SarkplugB format or add-in <a target="_blank" href="https://inductiveautomation.com/exchange/2670/overview">Vanilla Transmission</a>
+Ignition makes uses of <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine-to-machine network protocol for message queuing.
+MQTTt was created to monitor oil pipelines within the SCADA industrial control system (in SarkplugB format or add-in <a target="_blank" href="https://inductiveautomation.com/exchange/2670/overview">Vanilla Transmission</a>).
 
-Ignition servers <a target="_blank" href="https://inductiveuniversity.com/courses/elective-studies/ignition-with-docker">run within Docker</a> using the <tt>docker compose</tt> command. Licenses are <a target="_blank" href="https://inductiveuniversity.com/video/ignition-container-licensing">stored within the Docker image</a> along with <a target="_blank" href="https://inductiveuniversity.com/video/docker-secrets">secrets</a>. An <a target="_blank" href="https://inductiveuniversity.com/video/adding-an-smtp-server">SMTP server</a> using image dockage/mailcatcher on 1080 & 1025.
+Ignition servers <a target="_blank" href="https://inductiveuniversity.com/courses/elective-studies/ignition-with-docker">run as containers within Docker</a> using the <tt>docker compose</tt> command. Licenses are <a target="_blank" href="https://inductiveuniversity.com/video/ignition-container-licensing">stored within the Docker image</a> along with <a target="_blank" href="https://inductiveuniversity.com/video/docker-secrets">secrets</a>. An <a target="_blank" href="https://inductiveuniversity.com/video/adding-an-smtp-server">SMTP server</a> using image dockage/mailcatcher on 1080 & 1025.
 
 
 ## Ignition Connections
 
-<img alt="ignition-connections-2096x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939984/ignition-connections-2096x1304_u8xbiy.png">
-
-To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) <strong>devices</strong> that control industrial equipment.
-
-Each device is input into the database with a unique <strong>Tag</strong> identifier.
-
 The number of component Connections managed by Ignition servers are displayed the Gateway's Status GUI
+
+<img alt="ignition-connections-2096x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939984/ignition-connections-2096x1304_u8xbiy.png">
 
 <a name="PLCDrivers"></a>
 
 ## Device PLC Driver modules
 
-Each device that Ignition manages is <strong>Tag</strong>.
+The defining attractiveness of InductiveAutomation is that they provide a work-around to <strong>vendor lock-in</strong> which requires purchase of expensive solutions (and higher profits for the vendor) and subsequent integration efforts to across all the machines.
 
-Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>, listed at
+To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) <strong>devices</strong> that control industrial equipment.
+
+Each device is input into the database with a unique <strong>Tag</strong> identifier.
+
+Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for each manufacturer</a>, listed at
 
    <ul><a target="_blank" href="https://inductiveautomation.com/ignition/modules">https://inductiveautomation.com/ignition/modules</a></ul>
 
@@ -131,8 +126,6 @@ Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/abo
 
 * ABB (Totalflow) ???
 * Rockwell Automation ???
-
-InductiveAutomation achieve that by inventing a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
 
 PROTIP: Don't select these modules during install unless you know you'll need them.
 
@@ -203,7 +196,19 @@ Maker Edition Install
 
 ## Store and Forward
 
-???
+Store and Forward engines are automatically created for configured database connections and remote history providers.
+
+1. The Store and Forward Status page is at:
+
+   http://localhost:8088/web/config/database.sandf?7#/
+
+   It's where its Memory Buffer size and Disk Cache size can be edited.
+   Actions include "Archive Disk Cache" and "Load Disk Cache".
+
+1. Click "Details for
+
+   http://localhost:8088/web/status/con.history?10
+
 
 ## Industrial Demo
 
