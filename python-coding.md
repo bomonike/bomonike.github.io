@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-12"
-lastchange: "Add whileloop :python-coding"
+date: "2024-09-22"
+lastchange: "Add PCEP-03-02 items :python-coding"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -57,6 +57,140 @@ What I don't like about them I aim to fix on this page.
    * Cloud9 free on-line on AWS (which automatically generates new credentials every 5 minutes or on browser Reset<a target="_blank" href="https://www.coursera.org/learn/building-modern-python-applications-on-aws/lecture/UdnyB/using-temporary-credentials-in-aws-cloud9">*</a>)
 
    * Stryker?
+
+## PCEP-30-02 Exam Outline
+
+This article contains topic names and links to the PCEP™ – Certified Entry-Level
+Python Programmer (Exam PCEP-30-02) last updated: February 23, 2022:
+Sections:
+1. 7 items (18%) Computer Programming and <a href="#PythonFundamentals">Python Fundamentals</a>
+2. 8 items (29%) Control Flow – Conditional Blocks and Loops
+3. 7 items (25%) Data Collections – Tuples, Dictionaries, Lists,
+and Strings
+4. 8 items (28%) Functions and <a href="#Exceptions">Exceptions</a>
+
+<a name="PythonFundamentals"></a>
+
+1: Computer Programming and Python Fundamentals
+
+1.1 – Understand fundamental terms and definitions
+   * interpreting and the interpreter, compilation and the compiler
+   * language elements,
+   * lexis, syntax analysis (parsing), semantics (applying language rules such as type mismatch)
+   * <a target="_blank" href="https://wilsonmar.github.io/python-coding/#reserved-keywords">Python keywords</a>, instructions
+   * indenting
+   * REPL (<a target="_blank" href="https://linuxacademy.com/cp/courses/lesson/course/5262/lesson/4/module/413">Read Evaluate Print Loop interactive</a>), control-D to exit()
+   * comments. PROTIP: Text between triple-doublespace are actually string objects in the byte code
+   * literals: Boolean, integer, floating-point numbers, scientific notation, strings. <a target="_blank" href="https://app.pluralsight.com/course-player?clipId=891782ac-798e-4745-80a0-6f142520d168">b'data'</a> literals can be split().
+   * the print() function
+   * the input() function
+   * numeral systems (<a target="_blank" href="https://en.wikipedia.org/wiki/Bit_numbering">W</a>: binary, octal, decimal, hexadecimal) <a target="_blank" href="https://en.wikipedia.org/wiki/Numeral_system">W</a>, <a target="_blank" href="https://linuxacademy.com/cp/courses/lesson/course/5264/lesson/2/module/413">*</a>
+   * numeric operators: ** * / % // + –
+   <a target="_blank" href="https://linuxacademy.com/cp/courses/lesson/course/5264/lesson/1/module/413">// is floor division. Py3: Division always returns a float. Num (mod) % 2 is 0 for odd, 1 for even</a>
+   * string operators: * +
+   * assignments and shortcut operators
+   <br /><br />
+
+2: Data Types, Evaluations, and Basic I/O Operations (20% - 6 exam items)
+
+   * operators: unary and binary, priorities, and binding
+   * bitwise operators <a target="_blank" href="https://app.pluralsight.com/course-player?clipId=3db7f679-98dd-4cd4-9404-bd800eb22184">VIDEO:</a> ~ & ^ \| \<\< \>\> (<a target="_blank" href="https://app.pluralsight.com/course-player?clipId=b2e861ef-170d-4f7b-bc53-344781bf0fa0">Mandelbrot</a>)
+   * Boolean operators: not and or
+   * Boolean expressions <a target="_blank" href="https://linuxacademy.com/cp/courses/lesson/course/5263/lesson/4/module/413">(True/False)</a>
+   * relational operators ( == != > >= < <= ), building complex Boolean expressions
+   * accuracy of floating-point numbers <a target="_blank" href="https://linuxacademy.com/cp/courses/lesson/course/5263/lesson/5/module/413">4.5e9 == 4.5 * (10 ** 9) == 4.5E9 == 4.5E+9</a>
+
+   * basic input and output operations using the input(), print(), int(), float(), str(), len() <a target="_blank" href="https://www.youtube.com/watch?v=5Kzw-0-DQAk&list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p&index=20&pp=iAQB">functions</a>
+   * formatting print() output with end= and sep= arguments
+   * type casting
+   * basic calculations
+   * simple strings: constructing, assigning, indexing, slicing comparing, immutability
+   <br /><br />
+
+2: Control Flow Control – Conditional Blocks and Loops (29% - 8 exam items)
+
+2.1 – Make decisions and branch the flow with the if instruction
+   * <a target="_blank" href="https://www.youtube.com/watch?v=DmzEdsqxTbU&list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p&index=16&pp=iAQB">conditional statements</a>: if, if-else, if-elif, if-elif-else
+   * multiple conditional statements
+   * nesting loops and conditional statements
+
+2.2 – Perform different types of iterations
+   * the pass instruction
+   * building loops: while, for, range(), in
+   * iterating through sequences
+   * expanding loops: while-else, for-else
+   * controlling loop execution: break, continue
+   <br /><br />
+
+3: Data Collections – Lists, Tuples, and Dictionaries (25% - 7 exam items)
+
+3.1 – Collect and process data using lists
+   * <a target="_blank" href="https://www.youtube.com/watch?v=oVOcqQNpOFM&list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p&index=34&pp=iAQB">simple lists</a>: constructing vectors
+   * indexing and slicing
+   * the len() function
+   * lists methods: indexing, slicing, basic methods (append(), insert(), index()) and functions (len(), sorted(), etc.), del instruction, iterating lists with the for loop, initializing,
+   * in and not in operators, list comprehension, copying and cloning
+
+   * lists in lists: matrices and cubes
+
+3.2 – Collect and process data using tuples
+   * tuples: indexing, slicing, building, immutability
+   * tuples vs. lists: similarities and differences, lists inside tuples and tuples inside lists
+
+ 3.3 Collect and process data using dictionaries
+   * dictionaries: building, indexing, adding and removing keys, iterating through dictionaries as well as their keys and values, checking key existence, keys(), items() and values() methods
+
+3.4 - Operate with Strings
+   * <a target="_blank" href="https://www.youtube.com/watch?v=dr98iM4app8&list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p&index=28&pp=iAQB">strings</a> ASCII, UNICODE, UTF-8 (rendered/transmitted as pairs of bytes in norsk.encode("utf-8")
+   * indexing, slicing, immutability
+   * escaping using the \ character
+   * quotes and apostrophes inside strings
+   * multiline strings
+   * basic string functions & methods: upper(), lowe
+
+   * copying vs. cloning, string vs. string, string vs. non-string,
+   <br /><br />
+
+4: Functions and Exceptions (20% - 6 exam items)
+
+4.1 – Decompose the code using functions
+   * defining and invoking your own functions and generators
+   * The return and yield keywords, returning results,
+   * <a target="_blank" href="https://wilsonmar.github.io/python-coding/#use-not-none-reserved-word">the None keyword</a> (instead of return 0)
+   * recursion
+
+ 4.2 – Organize interaction between the function and its
+environment
+   * parameters vs. arguments,
+   * positional keyword and mixed argument passing,
+   * default parameter values
+   * converting generator objects into lists using the list() function
+   * name scopes, name hiding (shadowing), the global keyword
+   <br /><br />
+
+<a name="Exceptions"></a>
+
+4.3 – Python Built-In Exceptions Hierarchy
+• BaseException
+• Exception
+• SystemExit
+• KeyboardInterrupt
+• abstract exceptions
+• ArithmeticError
+• LookupError
+• IndexError
+• KeyError
+• TypeError
+• ValueError
+
+4.4 – Basics of Python Exception Handling
+
+• try-except / the try-except Exception
+• ordering the except branches
+• propagating exceptions through function boundaries
+• delegating responsibility for handling exceptions
+
+<hr />
 
 ## Debugging using IDE
 
@@ -232,21 +366,36 @@ However, Condon cannot use modules like typing functools such as <a target="_bla
 
 <hr />
 
+<a name="lexis"></a>
+
+## Lexis
+
+From https://learning.oreilly.com/library/view/python-in-a/0596100469/ch04s01.html
+
+The syntax of the Python programming language is the set of rules that defines how a Python program will be written and interpreted (by both the runtime system and by human readers). The Python language has many similarities to Perl, C, and Java. However, there are some definite differences between the languages. It supports multiple programming paradigms, including structured, object-oriented programming, and functional programming, and boasts a dynamic type system and automatic memory management.
+
+Python's syntax is simple and consistent, adhering to the principle that "There should be one— and preferably only one —obvious way to do it." The language incorporates built-in data types and structures, control flow mechanisms, first-class functions, and modules for better code reusability and organization. Python also uses English keywords where other languages use punctuation, contributing to its uncluttered visual layout.
+
+The language provides robust error handling through exceptions, and includes a debugger in the standard library for efficient problem-solving.
+
+Python's syntax, designed for readability and ease of use, makes it a popular choice among beginners and professionals alike.
+
 <a name="ReservedKeywords"></a>
 
-## Reserved Keywords
+### Reserved Keywords
 
 <a target="_blank" href="https://www.youtube.com/watch?v=rKk8XPLysj8">VIDEO</a>:
-Listed alphabetically below is the lexis of words Python has reserved for itself, so they can't be used as custom variables.
+<a target="_blank" href="https://www.wikiwand.com/en/articles/Python_syntax_and_semantics">W</a>:
+Here are the keywords Python has reserved for itself, so they can't be used as custom identifiers (variables).
 
-PROTIP: Research and find out what each is about:
-
+1. _ (soft keyword)
 1. and
 1. as
 1. <a href="#assert">assert</a>
 1. async
 1. await
 1. break - force escape from for/<a href="#WhileLoop">while</a> loop
+1. case (soft keyword)
 1. class
 1. continue - force loop again next iteration
 1. def - define a custom function
@@ -264,6 +413,7 @@ PROTIP: Research and find out what each is about:
 1. in
 1. is
 1. lambda - if/then/else in one line
+1. match (soft keyword)
 1. <a href="#None">None</a> - absence of value.
 1. nonlocal
 1. not
@@ -277,6 +427,8 @@ PROTIP: Research and find out what each is about:
 1. <a href="#with">with</a>
 1. yield - resumes after returning a value back to the caller to produce a series of values over time.
 <br /><br />
+
+NOTE: match, case and _ were introduced as keywords in Python 3.10.
 
 The list above can be retrieved (as an array) by this code after typing <tt>python</tt> for the REPL (Read Evaluate Print Loop) interactive prompt:
 

@@ -1,7 +1,6 @@
 ---
 layout: post
-date: "2024-09-20"
-created: "2021-08-02"
+date: "2024-09-21"
 file: "ros"
 title: "ROS (Robotic Operating System)"
 excerpt: "Learn the operating system for controlling simple robots"
@@ -12,11 +11,14 @@ image:
   credit:
   creditlink:
 comments: true
+created: "2021-08-02"
 ---
 <i>{{ page.excerpt }}</i>
 
 This is at https://bomonike.github.io/ros
 with source at https://github.com/bomonike/bomonike.github.io/blob/master/ros.md
+
+## Robot in space
 
 ![ros-Robonaut2-ISS-770x578](https://user-images.githubusercontent.com/300046/133761877-fd7d01b0-9c81-4def-a644-ebcae4b7aba0.jpg)
 
@@ -25,7 +27,15 @@ The "first human-like robot to space" went onboard the NASA STS-133 ULF-5 missio
 
 > "It can lift heavy objects in space. But then, since everything is weightless, anyone can."
 
+## Amazing
+
+The IEEE catalogs robot projects at
+
 https://robots.ieee.org/robots/
+
+## Mechatronics
+
+<a target="_blank" href="https://www.youtube.com/@OliverFoote">Oliver Foote</a> talks <a target="_blank" href="https://www.youtube.com/watch?v=1G6iwH0pn4c">Mechatronics</a> on his <a target="_blank" href="https://www.youtube.com/@OliverFoote">YouTube channel</a>
 
 ## Why ROS?
 

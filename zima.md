@@ -156,7 +156,7 @@ https://www.youtube.com/watch?v=RIMYGvVmclE
 
 https://www.youtube.com/watch?v=Lk6LJPcYhcE
 How to install CasaOS on Debian
-
+https://community.bigbeartechworld.com/t/step-by-step-guide-installing-casaos-on-ubuntu-debian-and-proxmox/201
 
 ## Remote Access
 

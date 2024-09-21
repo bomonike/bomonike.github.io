@@ -77,26 +77,64 @@ Ignition User Manual
 NOTE: The Ignition here is not related to the <a target="_blank" href="https://gazebosim.org/api/gazebo/6/index.html">Ignition Gazebo</a> libraries to develop robot and simulation applications.
 
 
+## Security Alerts
+
+America's Cyber Defense Agency, CISA (Critical Infastructure Security and Resilience) has released <a target="_blank" href="https://www.cisa.gov/search?g=inductive-automation-ignition#gsc.tab=0&gsc.q=inductive-automation-ignition&gsc.page=1">security alerts about Ignition</a> as part of its
+Industrial Control Systems Advisories service for the world.
+
+
 ## InductiveAutomation Product Architecture
 
 <a target="_blank" href="https://inductiveuniversity.com/videos/ignition-system-architectures/8.1">
 <img alt="ignition-components.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726755769/ignition-components_m8bxbr.png"></a>
 
+
 ## Ignition servers
 
-To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) <strong>devices</strong> that control industrial equipment, InductiveAutomation provides <strong>"Ignition"</strong> web servers called <strong>Gateways</strong> which <a target="_blank" href="https://inductiveuniversity.com/courses/elective-studies/ignition-with-docker">run within Docker</a> using docker compose.
+InductiveAutomation makes money by selling annual licenses for each Ignition server (shown in blue in the middle of the diagram).
 
-Licenses are <a target="_blank" href="https://inductiveuniversity.com/video/ignition-container-licensing">stored within the Docker image</a>.
+<img alt="ignition-mqtt-3024x1964.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939517/ignition-mqtt-3024x1964_dx57of.png"></a>
 
-QUESTION: images are stored and retrieved from???
+Ignition servers are called "Gateways" because industrial projects are typically large and far-flung, so there are both local and remote Ignition servers connected to a central Gateway.
 
-<a target="_blank" href="https://inductiveuniversity.com/video/docker-secrets">secrets</a>
+Ignition makes uses of <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service. It was created to monitor oil pipelines within the SCADA industrial control system. SarkplugB format or add-in <a target="_blank" href="https://inductiveautomation.com/exchange/2670/overview">Vanilla Transmission</a>
 
-An <a target="_blank" href="https://inductiveuniversity.com/video/adding-an-smtp-server">SMTP server</a> using image dockage/mailcatcher on 1080 & 1025.
+Ignition servers <a target="_blank" href="https://inductiveuniversity.com/courses/elective-studies/ignition-with-docker">run within Docker</a> using the <tt>docker compose</tt> command. Licenses are <a target="_blank" href="https://inductiveuniversity.com/video/ignition-container-licensing">stored within the Docker image</a> along with <a target="_blank" href="https://inductiveuniversity.com/video/docker-secrets">secrets</a>. An <a target="_blank" href="https://inductiveuniversity.com/video/adding-an-smtp-server">SMTP server</a> using image dockage/mailcatcher on 1080 & 1025.
 
+
+## Ignition Connections
+
+<img alt="ignition-connections-2096x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939984/ignition-connections-2096x1304_u8xbiy.png">
+
+To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) <strong>devices</strong> that control industrial equipment.
+
+Each device is input into the database with a unique <strong>Tag</strong> identifier.
 
 The number of component Connections managed by Ignition servers are displayed the Gateway's Status GUI
-<img alt="ignition-Connections.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726741634/ignition-Connections_icmkss.png">
+
+<a name="PLCDrivers"></a>
+
+## Device PLC Driver modules
+
+Each device that Ignition manages is <strong>Tag</strong>.
+
+Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>, listed at
+
+   <ul><a target="_blank" href="https://inductiveautomation.com/ignition/modules">https://inductiveautomation.com/ignition/modules</a></ul>
+
+* Allen-Bradley (Logix 5000)
+* Siemens  (tags don't support browsing)
+* Omron
+* Logix
+* Micro800
+* Mitsubishi
+
+* ABB (Totalflow) ???
+* Rockwell Automation ???
+
+InductiveAutomation achieve that by inventing a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
+
+PROTIP: Don't select these modules during install unless you know you'll need them.
 
 
 ### Cloud Edition
@@ -116,38 +154,12 @@ The <a target="_blank" href="https://www.youtube.com/watch?v=DCixhDisHQ8">VIDEO<
 QUESTION: Can HashiCorp Terraform be used to stand up servers? That would enable identification of security and misconfiguration issues before resources are created.
 
 
-## Security Alerts
-
-America's Cyber Defense Agency, CISA (Critical Infastructure Security and Resilience) has released <a target="_blank" href="https://www.cisa.gov/search?g=inductive-automation-ignition#gsc.tab=0&gsc.q=inductive-automation-ignition&gsc.page=1">security alerts about Ignition</a> as part of its
-Industrial Control Systems Advisories service.
-
 
 ## OPC (Open Platform Connect)
 
 <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc">VIDEO</a>:
 A big part of InductiveAutomation's value proposition is that they provide a way to obtain plant-wide <strong>visibility</strong> of the gamut of PLCs under various brands.
 
-<a name="PLCDrivers"></a>
-
-### PLC Driver modules
-
-PROTIP: Don't select these modules during install unless you know you'll need them.
-
-Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for manufacturers</a>, listed at
-
-   <ul><a target="_blank" href="https://inductiveautomation.com/ignition/modules">https://inductiveautomation.com/ignition/modules</a></ul>
-
-* Allen-Bradley (Logix 5000)
-* Siemens  (tags don't support browsing)
-* Omron
-* Logix
-* Micro800
-* Mitsubishi
-
-* ABB (Totalflow) ???
-* Rockwell Automation ???
-
-InductiveAutomation achieve that by inventing a work-around to <strong>proprietary protocols</strong> imposed by vendors to lock their customers into expensive solutions (and higher profits for the vendor).
 
 <a name="OPC-UA"></a>
 
@@ -172,6 +184,7 @@ Touch panels provide a "HMI" (Human-Machine Interface) to PLCs (Programmable Log
 There is less mistakes and waste when operators are assisted with a control panel such as this:
 <a target="_blank" href="https://www.youtube.com/watch?v=T0WPK_lNQhM&t=1m46s"><img alt="ignition-fill-828x485.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726763341/ignition-fill-828x485_zvuizx.png"></a>
 
+
 ### Ignition Edge Edition
 
 InductiveAutomation provides a "Touch Panel" that communicates with PLCs in their manufacturer's native protocol to access a 1-week data buffer.
@@ -186,6 +199,11 @@ InductiveAutomation provides a free-forever edition for home automation.
 <a target="_blank" href="https://inductiveuniversity.com/videos/getting-started-with-maker/8.1">VIDEO</a>:
 Maker Edition Install
 
+<a name="StoreAndForward"></a>
+
+## Store and Forward
+
+???
 
 ## Industrial Demo
 
@@ -279,8 +297,6 @@ Module debugging</a> makes use of a JDWP connection configured in /data/ignition
 ### Communication Protocol Modules
 
 * TCP (using the HSMS standard, SEMI E37)
-
-* <a target="_blank" href="https://en.wikipedia.org/wiki/MQTT">MQTT</a> (Message Queue Telemetry Transport), a lightweight, publish-subscribe, machine to machine network protocol for message queue/message queuing service. It was created to monitor oil pipelines within the SCADA industrial control system. SarkplugB format or add-in <a target="_blank" href="https://inductiveautomation.com/exchange/2670/overview">Vanilla Transmission</a>
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=txi2p5_OjKU">MODBUS</a> is a protocol published by Modicon in 1979 (now owned by Schneider) when ASCII was used. It now makes use of RTU as well in several media: RS-232 & RS485 serial, RS-422 TCP/IP Ethernet. It is called open becuase it is used by different PLCs. A master send sends requests for slaves to respond. A CRC error check in is added.
 
@@ -627,7 +643,7 @@ Because it exposes what actions to take against the underlying causes of lost pr
 
 OEE definitions may seem abstract for plant floor employees. Since plant floor employees tend to perform best when they given goals that are real-time, easily interpreted, consider the acronymn TAED plus Quality, as visualized here:
 
-<a target="_blank" href="https://www.leanproduction.com/oee/"><img alt="oee-vorne.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726862021/oee-vorne_hb6wu2.webp"></a>
+<a target="_blank" href="https://www.leanproduction.com/oee/"><img alt="oee-vorne.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726862021/oee-vorne_hb6wu2.webp"></a>
 
    * Target: a real-time production rate target driven by the planned rate of production
    * Actual: the production rate actually achieved
@@ -643,14 +659,24 @@ OEE definitions may seem abstract for plant floor employees. Since plant floor e
 
 ## Feedback Control Algorithms
 
-To maintain a process variable such as ambiant temperature at a Setpoint, a PLC controller activates a heater or cooler based on sensor readings, in a feedback control loop. Other variables include regulating pressure and flow rate.
+To maintain a process variable such as ambiant temperature at a target <strong>Setpoint</strong>, a PLC controller activates a heater or cooler based on sensor readings, in a feedback control loop. Other variables include regulating pressure and flow rate.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8&t=1m47s">VIDEO</a> by <a target="_blank" href="https://www.realpars.com/">realpars.com</a>:
 <img alt="plc-pid-feedback.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726664501/plc-pid-feedback_a5kvtj.png">
 
-To dampen wild swings in actions and values, PLCs used the <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">PID (Proportional Integral Derivative)</a> approach
-<a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=53s">VIDEO</a>:
+<a target="_blank" href="https://www.youtube.com/watch?v=fv6dLTEvl74">VIDEO</a>:
+To dampen wild swings in actions and values, PLCs use the <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">PID (Proportional Integral Derivative)</a> approach to use keep the temperature at a desired, constant, Setpoint Value (SV) <a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=53s">VIDEO</a>:
 <a target="_blank" href="https://www.youtube.com/watch?v=_VzHpLjKeZ8">VIDEO</a>
+
+PID Controllers can be <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">tuned</a> to reduce errors.
+
+Videos about PID:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=6OH-wOsVVjg">SieeFPV</a>
+In mathematical terms:
+<img alt="plc-pid-math.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939202/plc-pid-math_dflwcd.png">
+   * <a target="_blank" href="https://www.youtube.com/watch?v=tFVAaUcOm4I">DigiKey's</a> <a target="_blank" href="https://www.digikey.com/en/maker/projects/introduction-to-pid-controllers/763a6dca352b4f2ba00adde46445ddeb">docs</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=wkfEZmsQqiA">interval path of the past and derivative rate to predict future error</a> with <a target="_blank" href="https://www.mathworks.com/campaigns/offers/pid-tuning-code-examples.html?s_eid=PSM_15028">MATLAB code</a>
+
 
 Other approaches:
 * Fuzzy Logic Control (FLC)

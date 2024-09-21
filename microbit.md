@@ -28,18 +28,23 @@ QUESTION: have a stand?
 1. Click Next to the instruction.
 1. Click "BBC micro:bit CMSIS-DAP", then Next.
 
-## Python print to Serial monitor
+
+## 1st Python run to Serial monitor
 
 From https://learn.parallax.com/tutorials/robot/cyberbot/get-started-microbit-and-python/use-serial-monitor
 
 ```
 from microbit import *
-import sys, machine
+import os, sys, machine
+# https://microbit-micropython.readthedocs.io/en/v2-docs/os.html
+print("os.uname():",os.uname())
+print("")
 print("sys.platform:",sys.platform)
 print("sys.version_info:",sys.version_info)
 print("sys.version:",sys.version)
 print("sys.modules:",sys.modules)
 print("sys.implementation:",sys.implementation)
+print("")
 print("machine.unique_id():",machine.unique_id())
 print("machine.freq():",machine.freq())
 ```
@@ -48,17 +53,23 @@ print("machine.freq():",machine.freq())
    <img width="300" alt="microbit-serial-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726894275/microbit-serial-menu_hefmv4.png">
 
    That's a reminder to hold down the Ctrl key and D together to reset.
-   The micro:dot terminal does not understand the "clear" command.
+
+   PROTIP: The micro:dot terminal does not understand the "clear" command.
+
+1. The back of the micro:bit board has a <strong>reset button</strong>.
 
 1. Click "Show serial" at the lower-right so it turns to "Hide serial".
 1. Click on the Serial monitor body (to switch the cursor from a square to a solid white rectangle).
 1. Click the right side of the purple "Send to micro:bit" icon (with three vertical dots) and select "Disconnect". The response from the code above:
    ```
-   sys.platform: microbit
+   os.uname(): (sysname='microbit', nodename='microbit', release='2.1.2', version='micro:bit v2.1.2+0697c6d on 2023-10-30; MicroPython v1.18 on 2023-10-30', machine='micro:bit with nRF52833')
+
+   sys.platform: microbit, os
    sys.version_info: (3, 4, 0)
    sys.version: 3.4.0
    sys.modules: {}
    sys.implementation: (name='micropython', version=(1, 18, 0))
+
    machine.unique_id(): b'j\x11\xe7S*\xcf\xc3\xee'
    machine.freq(): 64000000
    ```
@@ -69,13 +80,16 @@ print("machine.freq():",machine.freq())
    >>>
    ```
 
-1. Click "Hide serial".
+   NOTE: There is a uname command in every operating system.
 
+1. Click "Hide serial".
 
 
 ## Emulator
 
+```
 display.scroll('Hello')
+```
 
 ## LEDs
 
@@ -90,6 +104,30 @@ while True:
     display.scroll('Hello')
 ```
 
+
+## microbit library
+
+https://microbit-micropython.readthedocs.io/en/v2-docs/microbit_micropython_api.html
+
+```
+# sleep for the given number of milliseconds.
+sleep(ms)
+# returns the number of milliseconds since the micro:bit was last switched on.
+running_time()
+# returns the temperature in Celcius
+temperature()
+# converts a number from one scale of values to another
+scale(value_to_convert, from_=(min_value, max_value), to=(min_value, max_value))
+# makes the micro:bit enter panic mode (this usually happens when the DAL runs
+# out of memory, and causes a sad face to be drawn on the display). The error
+# code can be any arbitrary integer value.
+panic(error_code)
+# resets the micro:bit.
+reset()
+# sets the output volume (0-255) of the micro:bit speaker **V2** and
+# external speaker or headphones connected to the edge connector pins.
+set_volume(128)    # V2
+```
 
 ## Accelerometer
 
