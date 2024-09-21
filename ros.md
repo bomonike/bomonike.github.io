@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-09-17"
+date: "2024-09-20"
 created: "2021-08-02"
 file: "ros"
 title: "ROS (Robotic Operating System)"
@@ -40,6 +40,15 @@ Since 2013 it is managed by the OSRF (Open Source Robotics Foundation) at <a tar
 But in December 2022, the business of OSRC and OSRC-SG was acquired by <a target="_blank" href="https://www.intrinsic.ai/">Intrinsic.ai</a>, an Alphabet (Google) company that sells a the Flowstate robot developer environment.
 
 <img alt="ros-intrinsic-flow-1898x1162.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726565022/ros-intrinsic-flow-1898x1162_skd1rn.png">
+
+## ROS Versions
+
+* ROS
+* ROS2 facilitates a multi-robot architecture, which ROS was not build for.
+* ROS3
+
+URDF (Unified Robot Description Format) is a popular code-independent, human-readable format to describe the geometry of robots and their cells. It's used for collision checking and dynamic path planning. Think of it like a textual CAD description: “part-one is 1 meter left of part-two and has the following triangle-mesh for display purposes.”
+
 
 ## ROS Specs
 

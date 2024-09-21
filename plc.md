@@ -629,12 +629,14 @@ OEE definitions may seem abstract for plant floor employees. Since plant floor e
 
 <a target="_blank" href="https://www.leanproduction.com/oee/"><img alt="oee-vorne.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726862021/oee-vorne_hb6wu2.webp"></a>
 
-  * Target: a real-time production rate target driven by the planned rate of production
-  * Actual: the actual production count
+   * Target: a real-time production rate target driven by the planned rate of production
+   * Actual: the production rate actually achieved
 
-  * Efficiency: the ratio of Target to Actual; how far ahead or behind production is running in terms of a percentage
+   * Efficiency: the ratio of Target to Actual; how far ahead or behind production is running in terms of a percentage
 
-  * Downtime (Availability Loss): accumulated unplanned stop time for the shift updated in real-time; this keeps a strong focus on a key actionable improvement area
+   * Downtime (Availability Loss): accumulated unplanned stop time for the shift updated in real-time; this keeps a strong focus on a key actionable improvement area
+
+   * Quality?
 
 "Schedule Loss" is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>, a closely related measure which quantifies OEE against <strong>calendar hours</strong> rather than only against scheduled operating hours. A TEEP of 100% means that the operations have run with an OEE of 100% 24 hours a day and 365 days a year (100% loading).
 
@@ -642,6 +644,7 @@ OEE definitions may seem abstract for plant floor employees. Since plant floor e
 ## Feedback Control Algorithms
 
 To maintain a process variable such as ambiant temperature at a Setpoint, a PLC controller activates a heater or cooler based on sensor readings, in a feedback control loop. Other variables include regulating pressure and flow rate.
+
 <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8&t=1m47s">VIDEO</a> by <a target="_blank" href="https://www.realpars.com/">realpars.com</a>:
 <img alt="plc-pid-feedback.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726664501/plc-pid-feedback_a5kvtj.png">
 
