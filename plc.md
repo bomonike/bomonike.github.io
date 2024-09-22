@@ -1,6 +1,6 @@
 This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/plc</a> from code at <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/plc.md">https://github.com/bomonike/bomonike.github.io/blob/master/plc.md</a>
 
-Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">"Automation Pyramid"</a> are captured from a PowerPoint file at <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.
+Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">"Automation Pyramid"</a> are captured from a PowerPoint file <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.
 
 <img alt="ignition-pyramid-1833x831.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726842630/ignition-pyramid-1833x831_y2qc08.png">
 
@@ -15,7 +15,7 @@ Such a system makes more efficient use of limited capacity. MES reduces bottlene
 Overall orchestration is done by an
 * ERP (Enterprise Resource Planning) system that does long-range planning in industries with long lead time items or complex bills of materials (BoM) needed on the shop floor, along with some form of associated shop orders in manufacturing industries.
 
-includes most accounting functions, including general ledger, as well as inventory management, and resource and inventory planning.
+* MRP includes most accounting functions, including general ledger, as well as inventory management, and resource and inventory planning.
 
 These systems help with ISO 9001 certification and compliance with FDA CFR 21 Part 11 Medical Device Manufacturing.
 
@@ -24,6 +24,14 @@ At the shop floor or Field Level, RFID tags, barcodes, and weights and other mea
 
 <a target="_blank" href="https://libertyadvisorgroup.com/insight/manufacturing-execution-systems-erp-on-the-shop-floor/"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726635389/MESP_attributes_vd4tom.webp"></a>
 
+## Industrial?
+
+"Heavy" industries need uninterruped power for monitoring and controlling real-time status of protected equipment:
+* Electric power generation, transmission, and distribution
+* Water and sewage
+* Buldings, facilities, and enviornments
+* Manufacturing
+* Mass transit and traffic signaling
 
 ## Competition in the MES industry
 Include:
@@ -131,6 +139,9 @@ Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/abo
 
 PROTIP: Don't select these modules during install unless you know you'll need them.
 
+Many challenge this <a target="_blank" href="https://www.youtube.com/watch?v=QC3Bd2ynC7c">VIDEO</a>:
+* "PLCs are programmed with code."
+* "RTUs (Remote Terminal Units) have a web interface to lots of inputs, outputs, intelligence"
 
 ### Cloud Edition
 
@@ -147,7 +158,6 @@ The <a target="_blank" href="https://www.youtube.com/watch?v=DCixhDisHQ8">VIDEO<
 <img alt="ignition-aws-standalone-asg.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726757987/ignition-aws-standalone-asg_pxbwqq.png">
 
 QUESTION: Can HashiCorp Terraform be used to stand up servers? That would enable identification of security and misconfiguration issues before resources are created.
-
 
 
 ## OPC (Open Platform Connect)
@@ -228,7 +238,7 @@ All HTML on the page is loaded dynamically.
 The app can be configured to <a target="_blank" href="https://www.youtube.com/watch?v=0SrEJuONDyc&t=14m56s">VIDEO: add a tint to an svg image</a>.
 
 
-## Modules
+## Ignition Modules
 
 Modules selected for install and <a target="_blank" href="http://localhost:8088/web/status/sys.modules?12">listed in the Gateway</a> (alphabetically):
 
@@ -305,7 +315,7 @@ Module debugging</a> makes use of a JDWP connection configured in /data/ignition
 
 * TCP (using the HSMS standard, SEMI E37)
 
-* <a target="_blank" href="https://www.youtube.com/watch?v=txi2p5_OjKU">MODBUS</a> is a protocol published by Modicon in 1979 (now owned by Schneider) when ASCII was used. It now makes use of RTU as well in several media: RS-232 & RS485 serial, RS-422 TCP/IP Ethernet. It is called open becuase it is used by different PLCs. A master send sends requests for slaves to respond. A CRC error check in is added.
+* <a target="_blank" href="https://www.youtube.com/watch?v=txi2p5_OjKU">MODBUS</a> is a protocol published by Modicon in 1979 (now owned by Schneider) when ASCII was used. It now make use of several media: RS-232 & RS485 serial, RS-422 TCP/IP Ethernet. It is called open becuase it is used by different PLCs. A master send sends requests for slaves to respond. A CRC error check in is added.
 
 * RS-232 based protocol (using the SECS-I standard, SEMI E4), SECS/GEM is the <a target="_blank" href="https://en.wikipedia.org/wiki/SECS-II">Equipment Communications Standard E5</a> / Generic Equipment Model (standard E30) protocol defined by <a target="_blank" href="https://en.wikipedia.org/wiki/SEMI">SEMI (Semiconductor Equipment and Materials International)</a> for equipment-to-host data communications. In an automated fab, the interface can start and stop equipment processing, collect measurement data, change variables and select recipes for products.
 
@@ -350,6 +360,7 @@ Raspberry Pi Ignition Edge Install
 ### Using ChatGPT
 
 <a target="_blank" href="https://www.youtube.com/watch?v=RverIFT0D_A">ChatGPT to create Views</a>
+
 
 
 ## Software Stack
@@ -662,6 +673,18 @@ OEE definitions may seem abstract for plant floor employees. Since plant floor e
 "Schedule Loss" is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>, a closely related measure which quantifies OEE against <strong>calendar hours</strong> rather than only against scheduled operating hours. A TEEP of 100% means that the operations have run with an OEE of 100% 24 hours a day and 365 days a year (100% loading).
 
 
+## Sensors and Actuators
+
+Several vendors provide industrial-strength sensors that monitor and actuators that control.
+
+* <a target="_blank" href="https://www.youtube.com/@DpsTV">VIDEO</a>: <a href="_blank" href="https://www.DpsTele.com/">DPS</a> 800.693-0351
+
+Low-cost microprocessors such as Arduino, Raspberry Pi, Intel NUC, Zima, etc.
+provide a good way to train about general concepts.
+But they don't have the weather, security, power-level proofing provided by industrial equipment.
+
+
+
 ## Feedback Control Algorithms
 
 To maintain a process variable such as ambiant temperature at a target <strong>Setpoint</strong>, a PLC controller activates a heater or cooler based on sensor readings, in a feedback control loop. Other variables include regulating pressure and flow rate.
@@ -670,10 +693,11 @@ To maintain a process variable such as ambiant temperature at a target <strong>S
 <img alt="plc-pid-feedback.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726664501/plc-pid-feedback_a5kvtj.png">
 
 <a target="_blank" href="https://www.youtube.com/watch?v=fv6dLTEvl74">VIDEO</a>:
-To dampen wild swings in actions and values, PLCs use the <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">PID (Proportional Integral Derivative)</a> approach to use keep the Setpoint Value (SV) at a desired temperature, pressure, etc. The difference between the SV and current observed PV (Process Variables) is the Error/Deviation. To keep that low, Control actions such changing the flow rate, varying voltage levels, etc. are applied to MV (Manipulated Variables) such as the position of values and voltage levels set.
+To dampen wild swings in actions and values, PLCs use the <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">PID (Proportional Integral Derivative)</a> approach to use keep the Setpoint Value (SV) at a desired temperature, pressure, battery or fuel level, etc. The difference between the SV and current observed PV (Process Variables) is the Error/Deviation. To keep that low, Control actions such changing the flow rate, varying voltage levels, etc. are applied to MV (Manipulated Variables) such as the position of values and voltage levels set.
    * <a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=53s">VIDEO</a>:
    * <a target="_blank" href="https://www.youtube.com/watch?v=_VzHpLjKeZ8">VIDEO</a>
    * https://blog.novus.com.br/basic-pid-control/?lang=en
+   * https://www.yokogawa.com/us/library/resources/media-publications/pid-tuning-improves-process-efficiency/
 
 
 <a target="_blank" href="https://www.youtube.com/watch?v=tFVAaUcOm4I">DigiKey's</a> <a target="_blank" href="https://www.digikey.com/en/maker/projects/introduction-to-pid-controllers/763a6dca352b4f2ba00adde46445ddeb">math:<br />
