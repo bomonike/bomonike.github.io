@@ -340,17 +340,51 @@ https://www.hackster.io/idreams/lora-weather-station-with-bbc-micro-bit-3f14f8
 
 Build the Robot car in the kit based on
 https://learn.parallax.com/tutorials/robot/cyberbot/build-your-cyberbot-rev-c-board
-$279 purchased from https://www.parallax.com/product/cyberbot-robot-kit-with-microbit/
+$279 from https://www.parallax.com/product/cyberbot-robot-kit-with-microbit/
 
 1. Right-link URL below to "Save link"
    https://learn.parallax.com/tutorials/robot/cyberbot/add-modules-your-microbit
 1. Create new folder "microbit"
-1. Click "Save" to download file "cyberbot-template-with-blink.hex".
+1. Click "Save" to download file "cyberbot-template-with-blink.hex" binary from:
+
+   https://www.parallax.com/package/cyberbot-library-python/
+
+   https://learn.parallax.com/support/reference/cyberbot-library-reference
+
+1. Unzip the file.
 
 1. In either Google Chrome or Microsoft Edge, go to the micro:bit Python Editor at
 
    <a target="_blank" href="https://python.microbit.org/v/3">https://python.microbit.org/v/3</a>
 1. Ignore the code already there.
+1. Click "Project" at the left edge.
+1. Click "Open".
+1. Select the file "cyberbot-template-with-blink.hex" and click "Open".
+   This enables you to use command:
+   ```
+   from cyberbot import *
+   ```
+
+1. Make sure that static has been discharged from your body.
+1. Lay the pieces down separately on a non-conductive surface (not on top of each other yet).
+
+1. Make sure the 5 AA batteries you have are all fully charged.
+1. In the battery pack, put in 5 AA batteries, each in a correct orientation.
+1. Put the black battery pack with cable coming out the middle of the aluminum frame.
+1. Attach the cyber:bot board to the aluminum frame holding the batteries.
+
+1. Plug the 5AA battery pack wire into the cyber:bot board.
+
+   Two green LEDs should shine on the board.
+
+1. Plug the micro:bit with the LEDs face up onto the cyber:bot board.
+1. Connect the micro:bit board to the cyber:bot board.
+
+1. On the edge of the cyber:bot, set the PWR switch set to 1 or 2.
+   * Set PWR to 0, the script won't run and green lights are off, to conserve battery.
+   * Set PWR to 1 to power everything while downloading code.
+   * Set PWR to 2 to powers all features except the servo ports (to keep the robot from running away while downloading code).
+
 1. Click the micro:bit Python Editor's purple "Open" sausage button.
 1. Browse to and open cyberbot-template-with-blink.hex.
 
@@ -363,27 +397,7 @@ $279 purchased from https://www.parallax.com/product/cyberbot-robot-kit-with-mic
         sleep(250)
    ```
 
-1. Make sure that static has been discharged from your body.
-1. Lay the pieces down separately on a non-conductive surface (not on top of each other yet).
-
-1. Plug the USB cable into the micro:bit and connected to your computer.
 1. Click "Send to micro:bit", then Yes, Yes. Click your board name so "Micro:bit flashed" appears at the lower-left corner.
-1. Unplug the USB cable from your micro:bit and your computer.
-
-1. Make sure the 5 AA batteries you have are all fully charged.
-1. In the battery pack, put in 5 AA batteries, each in a correct orientation.
-1. Put the black battery pack with cable coming out the middle of the aluminum frame.
-1. Attach the cyber:bot board to the aluminum frame holding the batteries.
-
-1. Plug the 5AA battery pack wire into the cyber:bot board.
-1. Plug the micro:bit with the LEDs face up onto the cyber:bot board.
-1. Connect the micro:bit board to the cyber:bot board.
-
-1. Set the PWR switch set to 1 or 2. The cyber:bot board's PWR switch to 2 to power all features, or to 1 to power everything,
-    but the servo ports (this keeps the 1. robot from running away while downloading code).
-
-    The script won't run if PWR is set to 0.
-
 1. Click the Send to micro:bit button, and follow the Connect to micro:bit popups.
 
    (For robot navigation apps, you'd be disconnecting the USB cable after this step.)
