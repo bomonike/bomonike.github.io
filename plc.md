@@ -42,8 +42,8 @@ in Folsom, CA (Near Sacramento)
 800-266-7798
 
 People:
-* <a target="_blank" href="https://www.linkedin.com/in/traviscox-automation/">Travis Cox</a>
 * Kevin McClusky is CTO
+* <a target="_blank" href="https://www.linkedin.com/in/traviscox-automation/">Travis Cox</a>, Evangelist, created the AWS shell scripts
 * Paul Scott, Training Content
 
 Unlike legacy PLCs which use proprietary Assembly language, Ignition is customized using the Python language.
@@ -101,28 +101,30 @@ Ignition servers <a target="_blank" href="https://inductiveuniversity.com/course
 
 The number of component Connections managed by Ignition servers are displayed the Gateway's Status GUI
 
-<img alt="ignition-connections-2096x1304.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939984/ignition-connections-2096x1304_u8xbiy.png">
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1726946500/ignition-connections-2088x1308_hn2zum.png"><img alt="ignition-connections-2088x1308.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726946500/ignition-connections-2088x1308_hn2zum.png"></a>
 
 <a name="PLCDrivers"></a>
 
 ## Device PLC Driver modules
 
-The defining attractiveness of InductiveAutomation is that they provide a work-around to <strong>vendor lock-in</strong> which requires purchase of expensive solutions (and higher profits for the vendor) and subsequent integration efforts to across all the machines.
+The defining attractiveness of InductiveAutomation is that they provide a work-around to <strong>vendor lock-in</strong> which requires purchase of expensive priprietary solutions (at high profits for the vendor) called DCS (Distributed Control System). This vendor-driven approach requires much effort by each purchaser to integrate machines from among various vendors.
 
-To communicate with PLCs (Programmable Logic Controllers) and DCS (Distributed Control System) <strong>devices</strong> that control industrial equipment.
+PLC (Programmable Logic Controller) <strong>devices</strong> control industrial equipment operation.
 
-Each device is input into the database with a unique <strong>Tag</strong> identifier.
+Each device is input into the database with a unique <strong>Tag</strong> identifier
+along with various attributes with values.
 
 Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/about-ignitions-modules/8.1">drivers for each manufacturer</a>, listed at
 
    <ul><a target="_blank" href="https://inductiveautomation.com/ignition/modules">https://inductiveautomation.com/ignition/modules</a></ul>
 
 * Allen-Bradley (Logix 5000)
-* Siemens  (tags don't support browsing)
-* Omron
+* GE
 * Logix
 * Micro800
 * Mitsubishi
+* Omron
+* Siemens (tags don't support browsing)
 
 * ABB (Totalflow) ???
 * Rockwell Automation ???
@@ -381,12 +383,6 @@ Launched from the Gateway:
    PROTIP: SFCs
 
 
-## Database
-
-database MariaDB 4306
-
-store password in code???
-
 ## Dev Build
 
 The current and prior releases (once per month) by QA Engineer <a target="_blank" href="https://www.linkedin.com/in/grossga/">Garth Gross</a> are at:
@@ -537,7 +533,11 @@ VIDEO: <a target="_blank" href="https://www.youtube.com/watch?v=spE6IpOU-2w">MQT
 
    <a target="_blank" href="https://docs.inductiveautomation.com/docs/8.1/ignition-modules/opc-ua/opc-ua-drivers/programmable-device-simulator">Programmable Device Simulator</a>
 
+
    ### Connect to a Database
+
+   database MariaDB 4306
+
    ### Open the Designer
    ### Create Tags
    ### Add History to Tags
@@ -670,16 +670,25 @@ To maintain a process variable such as ambiant temperature at a target <strong>S
 <img alt="plc-pid-feedback.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726664501/plc-pid-feedback_a5kvtj.png">
 
 <a target="_blank" href="https://www.youtube.com/watch?v=fv6dLTEvl74">VIDEO</a>:
-To dampen wild swings in actions and values, PLCs use the <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">PID (Proportional Integral Derivative)</a> approach to use keep the temperature at a desired, constant, Setpoint Value (SV) <a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=53s">VIDEO</a>:
-<a target="_blank" href="https://www.youtube.com/watch?v=_VzHpLjKeZ8">VIDEO</a>
+To dampen wild swings in actions and values, PLCs use the <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">PID (Proportional Integral Derivative)</a> approach to use keep the Setpoint Value (SV) at a desired temperature, pressure, etc. The difference between the SV and current observed PV (Process Variables) is the Error/Deviation. To keep that low, Control actions such changing the flow rate, varying voltage levels, etc. are applied to MV (Manipulated Variables) such as the position of values and voltage levels set.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=53s">VIDEO</a>:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_VzHpLjKeZ8">VIDEO</a>
+   * https://blog.novus.com.br/basic-pid-control/?lang=en
 
-PID Controllers can be <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">tuned</a> to reduce errors.
 
-Videos about PID:
+<a target="_blank" href="https://www.youtube.com/watch?v=tFVAaUcOm4I">DigiKey's</a> <a target="_blank" href="https://www.digikey.com/en/maker/projects/introduction-to-pid-controllers/763a6dca352b4f2ba00adde46445ddeb">math:<br />
+<img alt="plc-pid-math.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939202/plc-pid-math_dflwcd.png"></a>
+
+<a target="_blank" href="https://youtube.com/shorts/kHxsWbcxplk?si=CVrCpRAKy-zzCOto">VIDEO</a>:
+PID (Proportional Integral Derivative) controllers are <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">tuned</a> using three measures to reduce errors with minimal oscillations:
+
+* "Proportional" correction to errors increase in proportion to the magnitude of historical error between the current and the desired value.
+* "Integral" correction means small errors that have existed for a long time require more intensive correction.
+* "Derivative" correct means if the <strong>rate</strong> of error is varying too fast, this rate of change must be reduced to avoid oscillations in the future.
+
+References about PID:
    * <a target="_blank" href="https://www.youtube.com/watch?v=6OH-wOsVVjg">SieeFPV</a>
-In mathematical terms:
-<img alt="plc-pid-math.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939202/plc-pid-math_dflwcd.png">
-   * <a target="_blank" href="https://www.youtube.com/watch?v=tFVAaUcOm4I">DigiKey's</a> <a target="_blank" href="https://www.digikey.com/en/maker/projects/introduction-to-pid-controllers/763a6dca352b4f2ba00adde46445ddeb">docs</a>
+   * https://blog.novus.com.br/basic-pid-control/?lang=en
    * <a target="_blank" href="https://www.youtube.com/watch?v=wkfEZmsQqiA">interval path of the past and derivative rate to predict future error</a> with <a target="_blank" href="https://www.mathworks.com/campaigns/offers/pid-tuning-code-examples.html?s_eid=PSM_15028">MATLAB code</a>
 
 

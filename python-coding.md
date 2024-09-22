@@ -2308,6 +2308,7 @@ The logging module also allows you to capture the full stack traces in an applic
 ## Use assert only during testing
 
    * <a target="_blank" href="https://app.pluralsight.com/guides/asserts-assert-downside-defensive-programming-in-python">"Asserts and Assert Downsides to Defensive Programming in Python"</a>
+   * https://www.linkedin.com/learning/unit-testing-in-python/why-pytest run in a Docker container from VSCode referencing https://github.com/coding-geographies/dockerized-pytest-course
    <br /><br />
 
 PROTIP: By default, python executes with “_debug_” = “true” so asserts are processed by the Python interpreter.
