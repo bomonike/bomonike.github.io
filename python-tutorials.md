@@ -25,10 +25,11 @@ in the ChatGPT age that portends unemployed programmers.
 
 ## Python Official documentation
 
+<a target="_blank" href="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</a> is the official documentation
+and is designed to overwhelm with all the details.
+
 <a target="_blank" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial</a>
 is the official tutorial by those who created the Python language.
-
-<a target="_blank" href="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</a> is the official documentation.
 
 Official FREE 42-hour online course to prepare for Python certification exams
 2-course series:
@@ -818,6 +819,42 @@ Sample coding for:
 No longer available: <a target="_blank" href="https://linuxacademy.com/cp/modules/view/id/413">
 The video course at LinuxAcademy</a> by Keith Thompson references
 includes a practice exam.
+
+
+## Pragmatic Works Training
+
+https://learning.pragmaticworkstraining.com/course/intro_to_python
+<a target="_blank" href="https://www.linkedin.com/in/ben-evans/">Ben Evans</a>
+shows use of PyCharm IDE. Few quizzes.
+* Source files in GitHub, Comments: header, inline
+* print(), exit() and debugging
+* GUI with tkinker [9B]: licensing
+   * Titles, geometry, label, font, pack(pady), entry, button, Input string,
+   * matplotlib Figure, dpi, canvas
+   * password stored as salted hash
+   * Final Project: calculator [10A]
+* Debugging: communities
+* String operations: add, list, change, delete
+* Functions:
+   * Modules: built-in, import Modules, Conda vs env
+* Variables: Data Type https://www.youtube.com/watch?v=V4jXVrUJsfM&t=6m50s
+   * Defensive programming: checking input
+   * conversions: str(), num()
+* Iterables: Array Types: Lists, Tuples, Dictionaries
+* Control Flow:
+* Classes (objects) [5A] try loop <a target="_blank" href="https://www.w3schools.com/pythong/python_ref_exceptions.asp/">exceptions</a>
+* Loops:
+   * Fibonacci: Recursion limit error [4B]
+   * Infitie While [6A] for debugging: Break
+   * for [6B] break, range()
+   * Nested loops: LeetCode, memoization
+   * Guessing game [6C] = Binary Search
+   * Rock Paper Sizzors [6D]
+* File System: path, CSV: open() for rawx, close, read loop, print, write [8]
+* Databases: built-in sqlite [9A] conn, CREATE TABLE, transaction protection
+   * e.execute("SELECT *")
+   * e.execute("INSERT")
+   * Pandas vs. utilities
 
 
 

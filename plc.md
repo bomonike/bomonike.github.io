@@ -699,16 +699,47 @@ To dampen wild swings in actions and values, PLCs use the <a target="_blank" hre
    * https://blog.novus.com.br/basic-pid-control/?lang=en
    * https://www.yokogawa.com/us/library/resources/media-publications/pid-tuning-improves-process-efficiency/
 
+<a target="_blank" href="https://www.youtube.com/watch?v=KyZNsQBMkGE">VIDEO</a>:
+PID Control and Tuning by Rob Sink at Yokogawa 2016
+covers the topic fully in 1 hour.
+
+<a target="_blank" href="https://youtube.com/shorts/kHxsWbcxplk?si=CVrCpRAKy-zzCOto">VIDEO</a>:
+PID (Proportional Integral Derivative) controllers are <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">tuned</a> using three K Controller Gain settings to reduce errors with minimal oscillations:
+
+* Kp "Proportional" correction to errors increase in proportion to the magnitude of historical error between the current and the desired value.
+
+* Ki "Integral" correction counters small errors accumulated over time (with an integral meaning an area under the graph) require more intensive correction to keep exactly at the SV.
+
+* Kd "Derivative" correction dampens (slows) the speed (rate of error) to avoid oscillations in the future.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=tFVAaUcOm4I">DigiKey's</a> <a target="_blank" href="https://www.digikey.com/en/maker/projects/introduction-to-pid-controllers/763a6dca352b4f2ba00adde46445ddeb">math:<br />
 <img alt="plc-pid-math.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726939202/plc-pid-math_dflwcd.png"></a>
 
-<a target="_blank" href="https://youtube.com/shorts/kHxsWbcxplk?si=CVrCpRAKy-zzCOto">VIDEO</a>:
-PID (Proportional Integral Derivative) controllers are <a target="_blank" href="https://www.youtube.com/watch?v=sFqFrmMJ-sg&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl">tuned</a> using three measures to reduce errors with minimal oscillations:
+<img alt="pid-formula-1909x819.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727045229/pid-formula-1909x819_yulipx.png"></a>
 
-* "Proportional" correction to errors increase in proportion to the magnitude of historical error between the current and the desired value.
-* "Integral" correction means small errors that have existed for a long time require more intensive correction.
-* "Derivative" correct means if the <strong>rate</strong> of error is varying too fast, this rate of change must be reduced to avoid oscillations in the future.
+HANDS-ON: Manually adjust kp, ki, kd in real time on the PID simulator Excel sheet from https://www.engineers-excel.com/Apps/PID_Simulator/Description.htm
+
+
+Alternately, use web pages at
+* https://pidtuner.com/#/
+* <a target="_blank" href="https://www.youtube.com/watch?v=_S_nYlPieP0">VIDEO</a>: https://pidtuningireland.com/
+* https://tools.softinery.com/PIDSIM/ and
+* https://tech-uofm.info/pid/pid.html
+* https://smartmfg.me.wisc.edu/pages/resources/PIDMotorPositionControl.html
+* <a target="_blank" href="https://www.youtube.com/watch?v=6sQeWE-mIFM" title="Jul 16, 2024">VIDEO</a> of <a target="_blank" href="https://apps.microsoft.com/detail/9nbcz6qq5djs?hl=en-mt&gl=US">Manual PID Simulator from Microsoft Store</a>
+* https://instrumentationtools.com/pid-controller-simulator/
+
+They're an improvement over the original https://grauonline.de/alexwww/ardumower/pid/pid.html
+provides a PID simulator you can adjust in real time by changing JavaScript code
+(ported in 2004 from the <a target="_blank" href="https://github.com/br3ttb/Arduino-PID-Library">Arduino PID library</a> and <a target="_blank" href="https://github.com/br3ttb/Arduino-PID-AutoTune-Library">Arduino AutoTune Library</a> with <a target="_blank" href="https://github.com/br3ttb/arduino-pid-library-tester/blob/master/pid-tester/pid-tester.ino">tests</a>, as <a target="_blank" href="http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/">explained by Brett</a>). Learnings: Auto tune.
+
+   * If it overshoots a lot and oscillates, either the integral gain (I) needs to be increased or all gains (P,I,D) should be reduced
+   * If it ramps up quickly to a value below target value and then slows down as it approaches target value? Try increasing the I constant.
+   * Too much overshoot? Increase D, decrease P.
+   * Response too damped? Increase P.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=v4F-cGDGiEw">this video</a>
+https://www.aaedmusa.com/projects/project-three-sng7y-gaslp
 
 References about PID:
    * <a target="_blank" href="https://www.youtube.com/watch?v=6OH-wOsVVjg">SieeFPV</a>
@@ -852,3 +883,10 @@ Ignition can export and import Tag configurations to and from the JSON (JavaScri
 * <a target="_blank" href="https://www.youtube.com/@ITandAutomationAcademy">IT and Automation Academy</a>
 
 <a target="_blank" href="https://www.youtube.com/watch?v=GD6WKPFG0T0">Remote monitoring design tips</a>
+
+https://www.youtube.com/watch?v=z935clBMJYU
+The IP (ingress Protection) rating of devices is defined by International Standard EN 60529. The 2-digit code defines the result of tested resistance to solids and liquids.
+
+https://www.youtube.com/watch?v=aYltp_iM6VA
+6 Key Terms in Upstream Oil and Gas Automation (PLC vs RTU in the Electric/Digital Oilfield)
+by Kimray
