@@ -30,22 +30,29 @@ and is designed to overwhelm with all the details.
 
 <a target="_blank" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial</a>
 is the official tutorial by those who created the Python language.
+That's the place to learn Python with <strong>no gaps</strong>.
 
 Official FREE 42-hour online course to prepare for Python certification exams
 2-course series:
 * <a target="_blank" href="https://edube.org/study/pe1">Python Essentials - Part 1 (Basics)</a> for the
 To prepare for the <a target="_blank" href="https://ums.edube.org/products/pcep-30-02-exam-and-practice-test-bundle">$71 with practice test</a>
-PCEP-30-02: Certified Entry-Level Python Programmer certification
+<a target="_blank" href="https://pythoninstitute.org/pcep/">
+PCEP-30-02: Certified Entry-Level Python Programmer</a> certification
    1. Introduction to Python and computer programming
    2. Data types, variables, basic input-output operations, and basic operators;
    3. Boolean values, conditional execution, loops, lists and list processing, logical and bitwise operations;
    4. Functions, tuples, dictionaries, exceptions, and data processing.
 
-* <a target="_blank" href="https://edube.org/study/pe2">Python Essentials - Part 2 (Intermediate)</a> in a
-PCAP-31-03: Certified Associate in Python Programming  certification
+* <a target="_blank" href="https://edube.org/study/pe2">Python Essentials - Part 2 (Intermediate)</a> in a <a target="_blank" href="https://pythoninstitute.org/pcap/">
+PCAP-31-03: Certified Associate in Python Programming</a> certification
    1. Modules, packages, and PIP
    2. Strings, String and List Methods, Exceptions
    3. Object-Oriented Programming
+
+* <a target="_blank" href="https://pythoninstitute.org/pcpp1/">PCPP1 – Certified Professional in Python Programming</a> 1 (Exam PCPP-32-10x)
+
+* <a target="_blank" href="https://pythoninstitute.org/pcpp2/">PCPP2 – Certified Professional in Python Programming</a> 2 (Exam PCPP-32-20x)
+
 
 ## Python For Aerospace
 
@@ -826,22 +833,32 @@ includes a practice exam.
 https://learning.pragmaticworkstraining.com/course/intro_to_python
 <a target="_blank" href="https://www.linkedin.com/in/ben-evans/">Ben Evans</a>
 shows use of PyCharm IDE. Few quizzes.
+
+* Unit 1: Beginning in Computer Science
+* Exploring Careers in Computer Science
+* Unit 11: Internet
 * Source files in GitHub, Comments: header, inline
+* indentation vs. semicolon in C/Java
 * print(), exit() and debugging
 * GUI with tkinker [9B]: licensing
    * Titles, geometry, label, font, pack(pady), entry, button, Input string,
    * matplotlib Figure, dpi, canvas
    * password stored as salted hash
-   * Final Project: calculator [10A]
 * Debugging: communities
 * String operations: add, list, change, delete
-* Functions:
-   * Modules: built-in, import Modules, Conda vs env
+   * Unit 8: Lists
+   * Unit 9: 2D Lists
+* Unit 7: Functions & Modules <a target="_blank" href="https://docs.python.org/3/tutorial/modules.html">Fibonacci</a>
+   * <a target="_blank" href="https://docs.python.org/3/tutorial/modules.html">PT</a> Modules: built-in, import Modules, Conda vs env
+   * random()
+* Unit 2: Number Calculations and Data
 * Variables: Data Type https://www.youtube.com/watch?v=V4jXVrUJsfM&t=6m50s
    * Defensive programming: checking input
    * conversions: str(), num()
 * Iterables: Array Types: Lists, Tuples, Dictionaries
+   * Unit 12: Dictionaries (Optional Extension)
 * Control Flow:
+   * Unit 4: Repetition and Loops
 * Classes (objects) [5A] try loop <a target="_blank" href="https://www.w3schools.com/pythong/python_ref_exceptions.asp/">exceptions</a>
 * Loops:
    * Fibonacci: Recursion limit error [4B]
@@ -851,11 +868,36 @@ shows use of PyCharm IDE. Few quizzes.
    * Guessing game [6C] = Binary Search
    * Rock Paper Sizzors [6D]
 * File System: path, CSV: open() for rawx, close, read loop, print, write [8]
+* Unit 3: Making Decisions
 * Databases: built-in sqlite [9A] conn, CREATE TABLE, transaction protection
    * e.execute("SELECT *")
    * e.execute("INSERT")
    * Pandas vs. utilities
+* Unit 6: Graphics
+* Final Project: calculator [10A]
+Off scope:
+* Unit 5: Programming in EarSketch
+* Unit 10: Programming in EarSketch
 
+## KodeKloud Lydia Hallie
+
+https://learn.kodekloud.com/user/courses/python-basics
+
+https://learn.kodekloud.com/user/courses/d9f74b76-a361-40e8-9342-b49782bf2264
+PCAP-31-03 - Python Certification Course
+
+* Control Flow - Conditional Blocks and Loops
+* Logic and Bit Operations
+* Lists
+* Functions
+* Dictionaries
+* Exceptions
+* Python Basics
+* Mock Exams
+
+## CISCO
+
+https://www.netacad.com/courses/programming/pcap-programming-essentials-python
 
 
 ## More on Python
