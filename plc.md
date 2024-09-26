@@ -33,6 +33,10 @@ At the shop floor or Field Level, RFID tags, barcodes, and weights and other mea
 * Manufacturing
 * Mass transit and traffic signaling
 
+These systems need to be hardened" by implementing recommendations at:
+https://www.cisa.gov/sites/default/files/2024-05/defending-ot-operations-against-ongoing-pro-russia-hacktivist-activity-508c.pdf
+Controls include strong password, 3FA, VPN, log all access attempts, keep inventory & SBOM updated.
+
 ## Competition in the MES industry
 Include:
 * Wonder ware
@@ -613,13 +617,14 @@ https://www.wikiwand.com/en/articles/Open_Platform_Communications
 
 https://www.udemy.com/course/mastering-opc-ole-for-process-control/
 
+
 <a name="OEE"></a>
 
 ## OEE Loss Calculations
 
 OEE (Overall Equipment Effectiveness) is commonly used as a manufacturing best practice key performance indicator (KPI) versus the <strong>full potential</strong> of how well a manufacturing operation is utilizing its facilities, time, and material.
 
-The term OEE was coined by Seiichi Nakajima (in Japan) based on the Harrington Emerson way of thinking regarding labor efficiency.
+HISTORY: The term OEE was coined by Seiichi Nakajima (in Japan) based on the Harrington Emerson way of thinking regarding labor efficiency.
 
 "Fully Productive Time" is another way of saying an OEE of 100% when only good parts are produced (100% quality), at the maximum speed (100% performance), and without interruption (100% availability).
 
@@ -653,6 +658,8 @@ What's keeping that valuable operating time down are these loss-related factors:
    <tr valign="top"><td>Production Rejects</td><td>Reduced Yield</td></tr>
 </table>
 
+<a target="_blank" href="https://www.automationworld.com/factory/plant-maintenance/article/13309925/how-to-calculate-overall-equipment-effectiveness-a-practical-guide?o_eid=1439J4846112E7F&oly_enc_id=1439J4846112E7F&rdx.ident[pull]=omeda|1439J4846112E7F"><img alt="plc-oee-744x582.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727284795/plc-oee-744x582_talbao.png"></a>
+
 Because it exposes what actions to take against the underlying causes of lost productivity, the calculation above is preferred over calculation of OEE using the ratio of Fully Productive Time to <strong>Planned Production Time</strong>:
 
    <ul>(Good Count × Ideal Cycle Time) / Planned Production Time</ul>
@@ -683,6 +690,16 @@ Low-cost microprocessors such as Arduino, Raspberry Pi, Intel NUC, Zima, etc.
 provide a good way to train about general concepts.
 But they don't have the weather, security, power-level proofing provided by industrial equipment.
 
+## Projects
+
+https://www.linkedin.com/pulse/mcu-iiot-inductiveautomation-ignition-wilson-mar-msc--azpic/
+
+<a target="_blank" href="https://www.youtube.com/watch?v=RZW1PsfgVEI">VIDEO</a>:
+Arduino PID Controller - From Scratch!  by Ian Car
+
+<a target="_blank" href="https://www.youtube.com/watch?v=tEL3msXLE00">VIDEO</a>:
+How PID Control Works
+(the best explanation)
 
 ## Add-on packages
 
