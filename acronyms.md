@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2024-09-26"
-lastchange: "add ACE :acronyms"
+lastchange: "add IMSI :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -652,6 +652,7 @@ comments: true
 *	IMINT	=	Imagery (Photography) Intelligence	(from satellite or drone photos)
 *	IMHO	=	In My Humble Opinion
 *	IMO	=	In My Opinion
+*	IMSI	=	International Mobile Subscriber Identity (15-digit ID unique to each mobile phone)
 *	IOA	=	Indicator of Attack
 *	IOC	=	Indicator of Compromise
 *	IOPS	=	Input Output Per Second	(AWS)
