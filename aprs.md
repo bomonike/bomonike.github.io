@@ -15,6 +15,7 @@ https://www.youtube.com/watch?v=6b6fOQELDrk
 KM4ACK
 quackr.io to route phone for privacy.
 create an alias without exposing phone number.
+It costs $60/year or $15/week.
 
 ## SMSGTE service
 

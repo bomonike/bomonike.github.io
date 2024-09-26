@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-20"
-lastchange: "add TAED :acronyms"
+date: "2024-09-26"
+lastchange: "add ACE :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -68,6 +68,7 @@ comments: true
 *	ADC	=	Analog to Digital Converter (converts continuos analog to digital values on microprocessor boards)
 *	ADC	=	AWS Direct Connect (Amazon)
 *	ADE	=	Automated Device Enrollment (Microsoft 365 Intune auto configuration of macOS)
+* ACE = Access Control Entries (determines which subjects - user accounts, host IP addresses, and so on - are allowed or denied access to the object and the privileges given)
 *	ADF	=	Azure Data Factory (part of Microsoft Fabric)
 *	ADLS	=	Azure Data Lake Storage (Microsoft cloud Fabric storage)
 *	AEAD	=	Authenticated Encryption with Associated Data	(cipher used in TLS)
