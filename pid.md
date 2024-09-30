@@ -59,6 +59,8 @@ References about PID:
    * https://blog.novus.com.br/basic-pid-control/?lang=en
    * <a target="_blank" href="https://www.youtube.com/watch?v=wkfEZmsQqiA">interval path of the past and derivative rate to predict future error</a> with <a target="_blank" href="https://www.mathworks.com/campaigns/offers/pid-tuning-code-examples.html?s_eid=PSM_15028">MATLAB code</a>
 
+   * https://www.youtube.com/watch?v=uXnDwojRb1g 7:07 Empirical PID gain tuning (Kevin Lynch) at Northwestern Robotics - modeling using MATLAB
+
 
 ## Other approaches:
 

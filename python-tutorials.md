@@ -28,9 +28,64 @@ in the ChatGPT age that portends unemployed programmers.
 <a target="_blank" href="https://docs.python.org/3/library/index.html">https://docs.python.org/3/library/index.html</a> is the official documentation
 and is designed to overwhelm with all the details.
 
+
 <a target="_blank" href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial</a>
 is the official tutorial by those who created the Python language.
 That's the place to learn Python with <strong>no gaps</strong>.
+
+Online environments: Google Colab, Menti
+   * https://trinket.io/features/python3
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/controlflow.html#intermezzo-coding-style">4.10. Coding Style</a> PEP8: scanner
+   * docstrings
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator">3. Using Python as a calculator</a>:
+   * Numbers, Text, Lists
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/stdlib2.html#decimal-floating-point-arithmetic">11.8 Decimal Floating-Point Arithmetic</a>:
+   * <a target="_blank" href="https://docs.python.org/3/library/decimal.html#decimal.Decimal">decimal</a> data type from import decimal
+   * c.getcontext()
+   * c.traps[FloatOperation] = True
+   * getcontext().prec = 36  # user-defined precision
+   * Decimal(1) / Decimal(7) # notice the title case.
+   * Decimal(2).sqrt()
+   * round(.70 * 1.05,2)
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/controlflow.html">4. Control Flow Tools</a>:
+   * if, for, range(), break, else, pass, match,
+   * functions: parameters, arguments
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/datastructures.html">5. Data Structures</a>
+   * Lists: <a target="_blank" href="https://docs.python.org/3/tutorial/stdlib2.html#tools-for-working-with-lists">11.7 Tools</a>
+   * Stacks, Queues, List Comprehensions
+   * del
+   * Tuples and Sequences, Sets, Dictionaries
+   * Looping, Conditions
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/venv.html">12. Virtual Environments and Packages</a>
+   * pip CLI command vs. Conda (miniconda)
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/datastructures.html">6. Modules</a>
+   * Search path, Standard modules, dir() function
+   * Packages
+   * <a target="_blank" href="https://docs.python.org/3/tutorial/stdlib.html">10. Standard Library</a>
+   * <a target="_blank" href="https://docs.python.org/3/tutorial/stdlib2.html#logging">11.5 Logging</a>
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/inputoutput.html#">7. Input and Output</a>
+   * Strings, format(),
+   * Reading and writing files: json
+   * <a target="_blank" href="https://docs.python.org/3/tutorial/stdlib2.html#output-formatting">11.1. Output Formatting</a>
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/errors.html">8. Errors and Exceptions</a>
+
+<a target="_blank" href="https://docs.python.org/3/tutorial/classes.html">9. Classes</a>
+
+Qt GUI programming
+
+mobile app
+
+
+## Python Foundation
 
 Official FREE 42-hour online course to prepare for Python certification exams
 2-course series:
@@ -895,9 +950,70 @@ PCAP-31-03 - Python Certification Course
 * Python Basics
 * Mock Exams
 
+## MIT Intro to CS & Python
+
+MIT 6.100L Introduction to CS and Programming with Python
+https://www.youtube.com/watch?v=xAcTmDO6NTI&list=PLUl4u3cNGP62A-ynp6v6-LGBCzeH3VAQB
+
+
+2) Strings, Input/Output, Branching
+3) Iteration
+4) Loops over Strings, Guess-and-Check, and Binary
+5) Floats and Approximation Methods
+6) Bisection Search
+7) Decomposition, Abstraction, and Functions
+8) Functions as Objects
+9) Lambda Functions, Tuples, and Lists
+10) Lists and Mutability
+11) Aliasing and Cloning
+12) List Comprehension, Functions as Objects, Testing, and Debugging
+13) Exceptions and Assertions
+14) Dictionaries
+15) Recursion
+16) Recursion on Non-numerics
+17) Python Classes
+18) More Python Class Methods
+19) Inheritance
+20) Fitness Tracker Object-Oriented Programming Examples
+21) Timing Programs and Counting Operations
+22) Big Oh and Theta
+23) Complexity Classes Examples
+24) Sorting Algorithms
+25) Plotting
+26) List Access, Hashing, Simulations, and Wrap-Up
+
+
 ## CISCO
 
 https://www.netacad.com/courses/programming/pcap-programming-essentials-python
+
+PE1: Module 1. Introduction to Python and Computer Programming
+completed
+* 2.1.1 Your very first program
+* 2.1.2 The print() function
+* 2.1.3 Function arguments
+* 2.1.4 Function invocation
+* 2.1.5 LAB Working with the print() function
+* 2.1.6 The print() function and its effect, arguments, and values returned
+* 2.1.7 Instructions
+* 2.1.8 Python escape and newline characters
+* 2.1.9 Using multiple arguments
+* 2.1.10 Positional arguments
+* 2.1.11 Keyword arguments
+* 2.1.12 LAB The print() function and its arguments
+* 2.1.13 LAB Formatting the output
+* 2.1.14 SECTION SUMMARY
+* 2.1.15 SECTION QUIZ
+
+PE1: Module 2. Python Data Types, Variables, Operators, and Basic I/O Operations
+
+PE1: Module 3. Boolean Values, Conditional Execution, Loops, Lists and List Processing, Logical and Bitwise Operations
+
+PE1: Module 4. Functions, Tuples, Dictionaries, Exceptions, and Data Processing
+
+## Others
+A sample Python test by Certiport purchased by Pearsonvue.
+Python-ITS303-sample-test.docx
 
 
 ## More on Python

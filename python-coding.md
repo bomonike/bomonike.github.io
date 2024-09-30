@@ -362,7 +362,7 @@ import cython
 benchmarks Numba, mypyc, Taichi (the fastest). Alternately, code compiled using <a target="_blank" href="https://github.com/exaloop/codon">Codon by Exaloop</a> tool <a target="_blank" href="https://medium.com/intuition/codon-a-python-compiler-3d5322e1c0a5">"41,212 times faster"</a> than the standard Python interpreter.
 
 Condon is a new python compiler that uses the LLVM framework to compile directly to machine code. Condon can also make use of the thousands of processors on a GPU to process matrix, graphical, and mathematical operations without using a library like numpy, scikit-learn, scipy, and game library pygame.
-However, Condon cannot use modules like typing functools such as <a target="_blank" href="https://docs.python.org/3/library/functools.html#functools.wraps">wraps</a>, which provides contextual information for decorators.
+However, Conda cannot use modules like typing functools such as <a target="_blank" href="https://docs.python.org/3/library/functools.html#functools.wraps">wraps</a>, which provides contextual information for decorators.
 
 <hr />
 
@@ -942,6 +942,18 @@ The ___ VScode extension squences and reformats import statements to save memory
 
 Django, Flask, Bottle are frameworks - that provide the basic flow and architecture of the application.
 
+```
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+try:
+    celsius = float(input("Enter temperature in Celsius: "))
+    fahrenheit = celsius_to_fahrenheit(celsius)
+    print(f"{celsius}°C is equal to {fahrenheit:.2f}°F")
+    f"{fahrenheit:.2f}"
+except ValueError:
+    print("Please enter a valid number for the temperature.")
+```
 <hr />
 
 <a name="Sorting"></a>

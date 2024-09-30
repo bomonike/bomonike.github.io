@@ -133,6 +133,10 @@ For ESP32 and ESP8266 MCUs:
 
 ## Tutorials
 
+* <a target="_blank" href="https://www.dfrobot.com/blog-917.html">ESP32 Arduino Tutorial: Getting weather data from API</a> and https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+   https://www.instructables.com/Get-Weather-Data-Using-Python-and-Openweather-API/
+
 * $79.99 https://www.udemy.com/course/mastering-hardware-protocols-with-esp32-and-arduinos/
 
 https://randomnerdtutorials.com/learn-esp32-with-arduino-ide/

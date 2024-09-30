@@ -38,9 +38,12 @@ https://www.cisa.gov/sites/default/files/2024-05/defending-ot-operations-against
 Controls include strong password, 3FA, VPN, log all access attempts, keep inventory & SBOM updated.
 
 ## Competition in the MES industry
-Include:
-* Wonder ware
+PLC programming include:
+* Wonderware (by Schneider)
 * eazyworks.com
+* WinCC
+* iFix
+
 * SAP
 * Oracle
 * Siemens
@@ -200,12 +203,18 @@ InductiveAutomation provides a "Touch Panel" that communicates with PLCs in thei
 
 <a target="_blank" href="https://inductiveuniversity.com/videos/edge-edition-architecture/8.1"><img alt="ignition-panel-727x374.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726763936/ignition-panel-727x374_aueufc.png"></a>
 
+* <a target="_blank" href="https://www.youtube.com/watch?v=2ievolmYuw8">Raspberry Pi</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=-vuYDBQoZKc">
+What and why of Edge</a>
+
 
 ### Maker Edition
 
 InductiveAutomation provides a free-forever edition for home automation.
 
-<a target="_blank" href="https://inductiveuniversity.com/videos/getting-started-with-maker/8.1">VIDEO</a>:
+* <a target="_blank" href="https://www.youtube.com/watch?v=ZkYZ1xTtzsg">VIDEO</a>: Maker Edition Install and Programming
+* <a target="_blank" href="https://inductiveuniversity.com/videos/getting-started-with-maker/8.1">VIDEO</a>:
 Maker Edition Install
 
 <a name="StoreAndForward"></a>
@@ -677,7 +686,7 @@ OEE definitions may seem abstract for plant floor employees. Since plant floor e
 
    * Quality?
 
-"Schedule Loss" is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>, a closely related measure which quantifies OEE against <strong>calendar hours</strong> rather than only against scheduled operating hours. A TEEP of 100% means that the operations have run with an OEE of 100% 24 hours a day and 365 days a year (100% loading).
+"Schedule Loss" is not part of OEE but is part of <a target="_blank" href="https://www.oee.com/teep/">TEEP (Total Effective Equipment Performance)</a>, a closely related measure which quantifies OEE against <strong>calendar hours</strong> rather than only against scheduled operating hours. So a TEEP of 100% loading means unrelenting runs during all 24 hours each day and 365 days each year. This is used for robots.
 
 
 ## Sensors and Actuators
