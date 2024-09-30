@@ -950,6 +950,14 @@ PCAP-31-03 - Python Certification Course
 * Python Basics
 * Mock Exams
 
+## HPI by
+
+October 2, 2024 - October 29, 2024
+Berry Boessenkool at the Haz Plattner school in Germany
+http://open.hpi.de/courses/python2024
+runs a course in German.
+It's aimed specifically at young people and shows how versatile Python is - from data analysis and system administration to artificial intelligence.
+
 ## MIT Intro to CS & Python
 
 MIT 6.100L Introduction to CS and Programming with Python
