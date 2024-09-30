@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-09-12"
+date: "2024-09-30"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -956,7 +956,7 @@ October 2, 2024 - October 29, 2024
 Berry Boessenkool at the Haz Plattner school in Germany
 http://open.hpi.de/courses/python2024
 runs a course in German.
-It's aimed specifically at young people and shows how versatile Python is - from data analysis and system administration to artificial intelligence.
+It's aimed at young people and shows how versatile Python is - from data analysis and system administration to artificial intelligence.
 
 ## MIT Intro to CS & Python
 

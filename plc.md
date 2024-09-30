@@ -1,3 +1,4 @@
+
 This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/plc</a> from code at <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/plc.md">https://github.com/bomonike/bomonike.github.io/blob/master/plc.md</a>
 
 Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">"Automation Pyramid"</a> are captured from a PowerPoint file <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.
@@ -150,7 +151,7 @@ Many challenge this <a target="_blank" href="https://www.youtube.com/watch?v=QC3
    * "PLCs are programmed with code."
    * "RTUs (Remote Terminal Units) have a web interface to lots of inputs, outputs, intelligence"
 
-The cost of a license for Ignition depends on whether you want Siemens and voice notification. See:
+The cost of a license for Ignition depends on whether you want Perspective build, Siemens drivers, and voice notification. See:
 <img alt="ignition-licenses.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727723432/ignition-licenses_i5ztyn.png">
 
 
