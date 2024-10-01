@@ -951,6 +951,7 @@ try:
     fahrenheit = celsius_to_fahrenheit(celsius)
     print(f"{celsius}°C is equal to {fahrenheit:.2f}°F")
     f"{fahrenheit:.2f}"
+    round(fahrenheit, 2)
 except ValueError:
     print("Please enter a valid number for the temperature.")
 ```

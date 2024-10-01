@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-26"
-lastchange: "add IMSI :acronyms"
+date: "2024-09-30"
+lastchange: "add PIR :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -976,8 +976,9 @@ comments: true
 *	PII	=	Personally Identifiable Information
 *	PIM	=	Privileged Identity Management
 *	PIN	=	Personal Identification Number	(a secret consisting of a small number)
-*	PIO	=	Programmable Input Output (An Arduino feature to create hardware interfaces using GPIO pins)
+*	PIO	=	Programmable Input Output (An Arduino feature to create hardware interfaces using GP IO pins)
 * PIOPS	=	Provisioned Input Output Operations Per Second
+* PIR = Passive Infra-Red (electronic sensor)
 *	PIV	=	Personal Identity Verification
 * PKE	=	Public Key Encryption
 *	PKI	=	Public Key Infrastructure	(manages cryptographic certificates)
