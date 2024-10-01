@@ -31,16 +31,20 @@ by https://www.linkedin.com/in/matthew-graff-1029a1159/
 
 * [Case SmartiPi Touch 2](https://www.adafruit.com/product/4377?gad_source=1&gclid=CjwKCAjwqMO0BhA8EiwAFTLgIMRqNCXHAhp_l-yysnQuAGzoeCjPC7tV8XhQrg3Q21p99cGYjvx5rBoCb64QAvD_BwE) - $35
 
-  # <img src="https://github.com/user-attachments/assets/3f5fcbb1-25a9-42d6-ae0f-e2ca17844d25" style="width: 20%;" alt="4377-04">
+  <!--> <img src="https://github.com/user-attachments/assets/3f5fcbb1-25a9-42d6-ae0f-e2ca17844d25" style="width: 20%;" alt="4377-04">
+  -->
 
 * WiFi Router [GL.iNet GL-AR300M16-Ext](https://store-us.gl-inet.com/products/gl-ar300m16-mini-smart-router) or most any router - $30
 
-   # <img src="https://github.com/user-attachments/assets/8f36c3b7-f8ef-4a87-8133-f80b9922bc74" style="width: 20%;" alt="41gQQAA8ozL _AC_SL1000_">
+   <!-- <img src="https://github.com/user-attachments/assets/8f36c3b7-f8ef-4a87-8133-f80b9922bc74" style="width: 20%;" alt="41gQQAA8ozL _AC_SL1000_">
 
-   # ![thumbnail_IMG_3054](https://github.com/user-attachments/assets/62ca498c-cfb3-4ad6-86ff-0716ecaad7cd)
+   ![thumbnail_IMG_3054](https://github.com/user-attachments/assets/62ca498c-cfb3-4ad6-86ff-0716ecaad7cd)
+   -->
 
 * Opto 22 [GRV-RIO-LC](https://www.opto22.com/products/product-container/grv-rio-lc) - $1,095 for more advanced training for college programs.  This system shows how industry deploys Industry 4.0 technology.
-   # ![image](https://github.com/user-attachments/assets/baf884df-4738-427b-814a-6525a1b212ee)
+
+   <!-- ![image](https://github.com/user-attachments/assets/baf884df-4738-427b-814a-6525a1b212ee)
+   -->
 
 
 ## start.sh installs
@@ -75,4 +79,11 @@ https://www.nexcom.com/news/Detail/industry-4-0-and-beyond-a-focus-on-exceptiona
 Lorain County Community College in Ohio.
 https://www.lorainccc.edu/engineering/industry-4-0-teacher-training/
 uses Canvas LMS to present their <a target="_blank" href="https://www.lorainccc.edu/engineering/industry-4-0-teacher-training/">"Industry 4.0 Teacher Training Info Session"</a> October 3rd, 2024 11:00AM and October 17, 2024 3:30PM
+
+Opto22 hardened RaspberryPi
+
+https://www.linkedin.com/in/walkerdreynolds/
+Walker Reynolds
+Discord
+
 
