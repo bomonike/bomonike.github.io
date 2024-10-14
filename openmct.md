@@ -1,6 +1,6 @@
 This is at https://bomonike.github.io/openmct
 
-<!-- "v003 + CCSDS agencies :openmct.md"
+<!-- "v004 fix indents :openmct.md"
 -->
 
 From the same organization that brought you the first man on the moon,
@@ -51,51 +51,51 @@ Space Standards at <a target="_blank" href="https://www.ccsds.org">CCSDS.org</a>
 
 As of February 2021:
 CCSDS Member Agencies:
-    *  Agenzia Spaziale Italiana (ASI)/Italy.
-    *  Canadian Space Agency (CSA)/Canada.
-    *  Centre National d’Etudes Spatiales (CNES)/France.
-    *  China National Space Administration (CNSA)/People’s Republic of China.
-    *  Deutsches Zentrum für Luft- und Raumfahrt (DLR)/Germany.
-    *  European Space Agency (ESA)/Europe.
-    *  Federal Space Agency (FSA)/Russian Federation.
-    *  Instituto Nacional de Pesquisas Espaciais (INPE)/Brazil.
-    *  Japan Aerospace Exploration Agency (JAXA)/Japan.
-    *  National Aeronautics and Space Administration (NASA)/USA.
-    *  UK Space Agency/United Kingdom.
+   * Agenzia Spaziale Italiana (ASI)/Italy.
+   * Canadian Space Agency (CSA)/Canada.
+   * Centre National d’Etudes Spatiales (CNES)/France.
+   * China National Space Administration (CNSA)/People’s Republic of China.
+   * Deutsches Zentrum für Luft- und Raumfahrt (DLR)/Germany.
+   * European Space Agency (ESA)/Europe.
+   * Federal Space Agency (FSA)/Russian Federation.
+   * Instituto Nacional de Pesquisas Espaciais (INPE)/Brazil.
+   * Japan Aerospace Exploration Agency (JAXA)/Japan.
+   * National Aeronautics and Space Administration (NASA)/USA.
+   * UK Space Agency/United Kingdom.
 CCSDS Observer Agencies:
-    *  Austrian Space Agency (ASA)/Austria.
-    *  Belgian Science Policy Office (BELSPO)/Belgium.
-    *  Central Research Institute of Machine Building (TsNIIMash)/Russian Federation.
-    *  China Satellite Launch and Tracking Control General, Beijing Institute of Tracking and Telecommunications Technology (CLTC/BITTT)/China.
-    *  Chinese Academy of Sciences (CAS)/China.
-    *  China Academy of Space Technology (CAST)/China.
-    *  Commonwealth Scientific and Industrial Research Organization (CSIRO)/Australia.
-    *  Danish National Space Center (DNSC)/Denmark.
-    *  Departamento de Ciência e Tecnologia Aeroespacial (DCTA)/Brazil.
-    *  Electronics and Telecommunications Research Institute (ETRI)/Korea.
-    *  European Organization for the Exploitation of Meteorological Satellites (EUMETSAT)/Europe.
-    *  European Telecommunications Satellite Organization (EUTELSAT)/Europe.
-    *  Geo-Informatics and Space Technology Development Agency (GISTDA)/Thailand.
-    *  Hellenic National Space Committee (HNSC)/Greece.
-    *  Hellenic Space Agency (HSA)/Greece.
-    *  Indian Space Research Organization (ISRO)/India.
-    *  Institute of Space Research (IKI)/Russian Federation.
-    *  Korea Aerospace Research Institute (KARI)/Korea.
-    *  Ministry of Communications (MOC)/Israel.
-    *  Mohammed Bin Rashid Space Centre (MBRSC)/United Arab Emirates.
-    *  National Institute of Information and Communications Technology (NICT)/Japan.
-    *  National Oceanic and Atmospheric Administration (NOAA)/USA.
-    *  National Space Agency of the Republic of Kazakhstan (NSARK)/Kazakhstan.
-    *  National Space Organization (NSPO)/Chinese Taipei.
-    *  Naval Center for Space Technology (NCST)/USA.
-    *  Netherlands Space Office (NSO)/The Netherlands.
-    *  Research Institute for Particle & Nuclear Physics (KFKI)/Hungary.
-    *  Scientific and Technological Research Council of Turkey (TUBITAK)/Turkey.
-    *  South African National Space Agency (SANSA)/Republic of South Africa.
-    *  Space and Upper Atmosphere Research Commission (SUPARCO)/Pakistan.
-    *  Swedish Space Corporation (SSC)/Sweden.
-    *  Swiss Space Office (SSO)/Switzerland.
-    *  United States Geological Survey (USGS)/USA
+   * Austrian Space Agency (ASA)/Austria.
+   * Belgian Science Policy Office (BELSPO)/Belgium.
+   * Central Research Institute of Machine Building (TsNIIMash)/Russian Federation.
+   * China Satellite Launch and Tracking Control General, Beijing Institute of Tracking and Telecommunications Technology (CLTC/BITTT)/China.
+   * Chinese Academy of Sciences (CAS)/China.
+   * China Academy of Space Technology (CAST)/China.
+   * Commonwealth Scientific and Industrial Research Organization (CSIRO)/Australia.
+   * Danish National Space Center (DNSC)/Denmark.
+   * Departamento de Ciência e Tecnologia Aeroespacial (DCTA)/Brazil.
+   * Electronics and Telecommunications Research Institute (ETRI)/Korea.
+   * European Organization for the Exploitation of Meteorological Satellites (EUMETSAT)/Europe.
+   * European Telecommunications Satellite Organization (EUTELSAT)/Europe.
+   * Geo-Informatics and Space Technology Development Agency (GISTDA)/Thailand.
+   * Hellenic National Space Committee (HNSC)/Greece.
+   * Hellenic Space Agency (HSA)/Greece.
+   * Indian Space Research Organization (ISRO)/India.
+   * Institute of Space Research (IKI)/Russian Federation.
+   * Korea Aerospace Research Institute (KARI)/Korea.
+   * Ministry of Communications (MOC)/Israel.
+   * Mohammed Bin Rashid Space Centre (MBRSC)/United Arab Emirates.
+   * National Institute of Information and Communications Technology (NICT)/Japan.
+   * National Oceanic and Atmospheric Administration (NOAA)/USA.
+   * National Space Agency of the Republic of Kazakhstan (NSARK)/Kazakhstan.
+   * National Space Organization (NSPO)/Chinese Taipei.
+   * Naval Center for Space Technology (NCST)/USA.
+   * Netherlands Space Office (NSO)/The Netherlands.
+   * Research Institute for Particle & Nuclear Physics (KFKI)/Hungary.
+   * Scientific and Technological Research Council of Turkey (TUBITAK)/Turkey.
+   * South African National Space Agency (SANSA)/Republic of South Africa.
+   * Space and Upper Atmosphere Research Commission (SUPARCO)/Pakistan.
+   * Swedish Space Corporation (SSC)/Sweden.
+   * Swiss Space Office (SSO)/Switzerland.
+   * United States Geological Survey (USGS)/USA
 
 
 ## User Groups
@@ -104,9 +104,10 @@ Open MCT provides integrated situational awareness, health monitoring and <stron
 
 Open MCT is currently <a target="_blank" href="https://nasa.github.io/openmct/whos-using-open-mct/">in use supporting multiple missions at NASA including</a>:
 
-    * <a target="_blank" href="https://www.jpl.nasa.gov/cubesat/missions/asteria.php">ASTERIA</a>,
-    * <a target="_blank" href="https://coldatomlab.jpl.nasa.gov/">Cold Atom Laboratory</a> operating on the ISS, and
-    * <a target="_blank" href="https://www.jpl.nasa.gov/cubesat/missions/marco.php">Mars Cube One</a>, which played an integral role supporting the InSight lander on Mars.
+   * <a target="_blank" href="https://www.jpl.nasa.gov/cubesat/missions/asteria.php">ASTERIA</a>,
+   * <a target="_blank" href="https://coldatomlab.jpl.nasa.gov/">Cold Atom Laboratory</a> operating on the ISS, and
+   * <a target="_blank" href="https://www.jpl.nasa.gov/cubesat/missions/marco.php">Mars Cube One</a>, which played an integral role supporting the InSight lander on Mars.
+   <br /><br />
 
 "VISTA" is a multi-mission operations system built with Open MCT.
 
@@ -134,7 +135,8 @@ On the upper-right is a map "Where is Curiosity" with track trace labeled at eac
 On the lower-right are details of "Atmospheric Pressure" for each time stamp.<br />
 On the far-right is the "INSPECTION" pane to display "PROPERTIES".<br />
 
-Possibly
+### Science Fiction
+
 <img alt="openmct-small.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png">
 "announcement" on the middle-bottom indicate that the dashboard is
 part of a pretend universe of various science fiction fandoms.
@@ -184,15 +186,15 @@ Open MCT could be adapted <a target="_blank" href="https://nasa.github.io/openmc
 Plugins are bundles of software components used to extend Open MCT by defining new capabilities such as telemetry sources, object providers or new telemetry visualizations. Some Open MCT plugins are packaged along with Open MCT, with others are available for you to download from
 https://nasa.github.io/openmct/plugins/
 
-    *  Views and Visualizations
-    *  Telemetry Adapters
-    *  Object Types
-    *  Object Providers
-    *  Actions
-    *  Toolbars
-    *  User Notifications
-    *  Indicators
-    *  Many others...
+   * Views and Visualizations
+   * Telemetry Adapters
+   * Object Types
+   * Object Providers
+   * Actions
+   * Toolbars
+   * User Notifications
+   * Indicators
+   * Many others...
 
 Configure at:
 https://github.com/nasa/openmct/blob/master/index.html
@@ -201,7 +203,7 @@ Create your own Plugin at:
 https://nasa.github.io/openmct/plugins-documentation/
 
 
-## Alternatives
+## Alternatives to Open MCT
 
 * Grafana was created for displaying Kubernetes
 * Ignition from Inductive is part of an enterprise with links to SAP, specifically for Process Control of IIoT (Industrial Internet of Things)
@@ -226,11 +228,6 @@ https://news.ycombinator.com/item?id=40077048
 
 Kerbal Space https://github.com/hudsonfoo/kerbal-openmct
 https://store.privatedivision.com/game/buy-kerbal-space-program-ksp#compare-editions
-
-
-## Try it Out!
-
-https://nasa.github.io/openmct/
 
 
 ## Install
