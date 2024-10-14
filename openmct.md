@@ -120,7 +120,7 @@ There was a demo of Mars Science Laboratory dashboard at:
 
 ### Kerbal Space Game
 <img alt="openmct-weather-1280x860.jpeg" src="">
-<img alt="openmct-small.png" src=https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png">
+<img alt="openmct-small.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png">
 "announcement" on the middle-bottom indicate that the dashboard is
 part of a pretend universe of various science fiction fandoms, such as the
 Kerbal Space Program adventure game https://github.com/hudsonfoo/kerbal-openmct
@@ -145,8 +145,7 @@ On the right:
 ### Mars Weather
 
 A snapshot recoverd from The Mars Weather Display:
-<img alt="OpenMCT-demo-weather.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728870429/OpenMCT-demo-weather_xwwzvb.webp">
-<img alt="openmct-weather-1280x860.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728932713/openmct-weather-1280x860_e5gnud.jpg">
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1728932713/openmct-weather-1280x860_e5gnud.jpg"><img alt="openmct-weather-1280x860.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728932713/openmct-weather-1280x860_e5gnud.jpg"></a>
 On the bottom is the selection of timeframe shown in charts.<br />
 On the left bottom is a list of "My items"
    * Rover Operator Display Layout
