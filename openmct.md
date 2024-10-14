@@ -1,5 +1,8 @@
 This is at https://bomonike.github.io/openmct
 
+<!-- "v002 + config steps from pdf :openmct.md"
+-->
+
 From the same organization that brought you the first man on the moon,
 the Space Station, landers and helicopters on Mars, etc. comes:
 
@@ -28,7 +31,7 @@ NOTE: As of 24-10-13, the <a target="_blank" href="https://github.com/scottbell/
 ## External Interfaces
 
 Displays are used by spacecraft missions to visualize and analyze telemetry data  from systems such as:
-   * YAMCS (Yet Another Mission Control System at https://yamcs.org/ under a GNU Affero GPL license), a Java-based open-source mission control system framework developed by Space Applications Services, a Belgian company. It's designed for monitoring and controlling spacecraft, satellites, payloads, ground stations and ground equipment. It supports space industry standards like CCSDS protocols.
+   * YAMCS (Yet Another Mission Control System at https://yamcs.org/ under a GNU Affero GPL license at https://github.com/akhenry/openmct-yamcs), a Java-based open-source mission control system framework developed by Space Applications Services, a Belgian company. It's designed for monitoring and controlling spacecraft, satellites, payloads, ground stations and ground equipment. It supports space industry standards like CCSDS protocols.
    * AIT
    * AMPCS
    * ITOS
@@ -385,30 +388,27 @@ Here are my modifications piercing together several documents:
    http://localhost:8040/yamcs
 
 
+1. Configuring Persistence
+1. Run a Web Server
+1. Viewing in Browser
 
-Introduction
-Setting Up Open MCT Web
-Prerequisites
-Check out Open MCT Web Sources
-Configuring Persistence
-Run a Web Server
-Viewing in Browser
-Tutorials
 To do List
-Step 1. Create the Plugin
-Step 2. Add a Domain Object Type
-Step 3. Add a View
-Step 4. Add a Controller
-Step 5. Support Editing
-Step 6. Customizing Look and Feel
+* Step 1. Create the Plugin
+* Step 2. Add a Domain Object Type
+* Step 3. Add a View
+* Step 4. Add a Controller
+* Step 5. Support Editing
+* Step 6. Customizing Look and Feel
+
 Bar Graph
-Step 1. Define the View
-Step 2. Add a Controller
-Step 3. Using Telemetry Data
-Step 4. View Configuration
+* Step 1. Define the View
+* Step 2. Add a Controller
+* Step 3. Using Telemetry Data
+* Step 4. View Configuration
+
 Telemetry Adapter
-Step 0. Expose Your Telemetry
-Step 1. Add a Top level Object
-Step 2. Expose the Telemetry Dictionary
-Step 3. Historical Telemetry
-Step 4. Real time Telemetry
+* Step 0. Expose Your Telemetry
+* Step 1. Add a Top level Object
+* Step 2. Expose the Telemetry Dictionary
+* Step 3. Historical Telemetry
+* Step 4. Real time Telemetry
