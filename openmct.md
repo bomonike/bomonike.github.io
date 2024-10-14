@@ -1,12 +1,12 @@
 This is at https://bomonike.github.io/openmct
 
-<!-- "v004 fix indents :openmct.md"
+<!-- "v006 + Larger demo jpg :openmct.md"
 -->
 
 From the same organization that brought you the first man on the moon,
 the Space Station, landers and helicopters on Mars, etc. comes:
 
-<a target="_blank" href="https://github.com/nasa/openmct/tree/master/src/images/favicons"><img align="right" alt="src/images/favicons/favicon-96x96.png" width="96" height="96" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728842488/openmct-96x96_iqvflp.png"></a><strong>Open MCT (Mission Control Technologies)</strong> was developed at NASA (National Aeronautics and Space Administration) Ames Research Center in collaboration with the Jet Propulsion Laboratory.
+<a target="_blank" href="https://github.com/nasa/openmct/tree/master/src/images/favicons"><img align="right" alt="src/images/favicons/favicon-96x96.png" width="96" height="96" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728842488/openmct-96x96_iqvflp.png"></a><strong>Open MCT (Mission Control Technologies)</strong> was developed at NASA (National Aeronautics and Space Administration) Ames Research Center in collaboration with the Jet Propulsion Laboratory. Open MCT is part of <a target="_blank" href="https://www.nasa.gov/smallsat-institute/space-mission-design-tools/">NASA's Space Mission Design Tools</a>.
 
 Open MCT is among the most popular of NASA's open-source projects at <a target="_blank" href="https://code.nasa.gov/">code.nasa.gov</a>.
 
@@ -34,15 +34,14 @@ NOTE: As of 24-10-13, the <a target="_blank" href="https://github.com/scottbell/
 
 Displays are used by spacecraft missions to visualize and analyze telemetry data  from systems such as:
    * YAMCS (Yet Another Mission Control System at https://yamcs.org/ under a GNU Affero GPL license at https://github.com/akhenry/openmct-yamcs), a Java-based open-source mission control system framework developed by Space Applications Services, a Belgian company. It's designed for monitoring and controlling spacecraft, satellites, payloads, ground stations and ground equipment. It supports space industry standards like CCSDS protocols.
-   * AIT
-   * AMPCS
-   * ITOS
-   * ROS (Robotic Operating System)
+   * AIT (AMMOS Instrument Toolkit) is a Python-based software suite developed to handle Ground Data System (GDS), Electronic Ground Support Equipment (EGSE), commanding, telemetry uplink/downlink, and sequencing for instrument and CubeSat Missions. It is a generalization and expansion of tools developed for a number of ISS missions.
+   * AMPCS ( Advanced Multi-Mission Operations System at https://ammos.nasa.gov) is a catalog of mission operations and data processing capabilities for robotic missions through an "Ops in a Box" approach. AMMOS is a low-cost, highly reliable system utilized by more than 50 missions, including planetary exploration, deep space, earth science, heliophysics, and astrophysics, by NASA, ESA, industry, and academia. <a target="_blank" href="https://ammos.nasa.gov/pdf/Brochure-Monitor-Control-Solution.pdf">PDF</a>
+   * ITOS (Integrated Test and Operations System athttps://itos.gsfc.nasa.gov) for flight operations, integration and test, and development.
    <br /><br />
 
 Space Standards at <a target="_blank" href="https://www.ccsds.org">CCSDS.org</a> (Consultative Committee for Space Data Systems):
 
-   * CCSDS/OMG XML Telemetric and Command Exchange (XTCE) v1.1 and v1.2
+   * CCSDS/OMG XML Telemetric and Command Exchange (XTCE) v1.1 and v1.2 <a target="_blank" href="https://public.ccsds.org/Pubs/660x0b2.pdf">PDF</a>
    * CCSDS 133.0-B-2 Space Packet Protocol
    * CCSDS Space Data Link Protocols (AOS/TM/USLP/TC frames)
    * CCSDS 232.1-B-2 Communications Operation Procedure (COP-1)
@@ -111,14 +110,43 @@ Open MCT is currently <a target="_blank" href="https://nasa.github.io/openmct/wh
 
 "VISTA" is a multi-mission operations system built with Open MCT.
 
+<a name="Demo"></a>
+
 ## Demo
 
-There was a demo of Mars Science Laboratory dashboard at
+There was a demo of Mars Science Laboratory dashboard at:
 
-https://openmct-demo.herokuapp.com
+<strike>https://openmct-demo.herokuapp.com</strike>
+
+### Kerbal Space Game
+<img alt="openmct-weather-1280x860.jpeg" src="">
+<img alt="openmct-small.png" src=https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png">
+"announcement" on the middle-bottom indicate that the dashboard is
+part of a pretend universe of various science fiction fandoms, such as the
+Kerbal Space Program adventure game https://github.com/hudsonfoo/kerbal-openmct
+https://store.privatedivision.com/game/buy-kerbal-space-program-ksp#compare-editions
+
+Notice date/time stamps are by default in UTC time at Grenwich, near London, UK.
+
+On the left, lines over the same time span:
+* "online" hours?
+* "Station Power" load, with low and high bars
+* "Temperature"
+In the middle:
+* "Internet" kdg_rx/tx & ipb_rx/tx (receive & transmit)
+* "Humidity" in workshop, welbenbau, mainhall
+On the right:
+* "open" at nominal 0 with occassional spikes to 1.0.
+* "Replicator Status"
+* "vacuum" from -1 to 2, averaging 0.
+* "all motion sensors" (from zero) in mainhall, workshop, wellerbau
+
+
+### Mars Weather
 
 A snapshot recoverd from The Mars Weather Display:
 <img alt="OpenMCT-demo-weather.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728870429/OpenMCT-demo-weather_xwwzvb.webp">
+<img alt="openmct-weather-1280x860.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728932713/openmct-weather-1280x860_e5gnud.jpg">
 On the bottom is the selection of timeframe shown in charts.<br />
 On the left bottom is a list of "My items"
    * Rover Operator Display Layout
@@ -135,25 +163,6 @@ On the upper-right is a map "Where is Curiosity" with track trace labeled at eac
 On the lower-right are details of "Atmospheric Pressure" for each time stamp.<br />
 On the far-right is the "INSPECTION" pane to display "PROPERTIES".<br />
 
-### Science Fiction
-
-<img alt="openmct-small.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png">
-"announcement" on the middle-bottom indicate that the dashboard is
-part of a pretend universe of various science fiction fandoms.
-
-On the left, lines over the same time span:
-* "online" hours?
-* "Station Power" load, with low and high bars
-* "Temperature"
-In the middle:
-* "Internet" kdg_rx/tx & ipb_rx/tx (receive & transmit)
-* "Humidity" in workshop, welbenbau, mainhall
-On the right:
-* "open" at nominal 0 with occassional spikes to 1.0.
-* "Replicator Status"
-* "vacuum" from -1 to 2, averaging 0.
-* "all motion sensors" (from zero) in mainhall, workshop, wellerbau
-
 
 ## Generalized Usage
 
@@ -161,7 +170,7 @@ Open MCT was open-sourced for generalizable use for building applications for pl
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=4MYQjq1y41A">VIDEO</a>: Build a space program, construct powerful spacecraft, and navigate expansive celestial bodies as you explore cosmic mysteries. <a target="_blank" href="https://www.kerbalspaceprogram.com/games-kerbal-space-program-2">Version 2</a> of the Kerbal Space Program (KSP) non-violent cartoon adventure game plays <a target="_blank" href="https://store.steampowered.com/app/954850/Kerbal_Space_Program_2/">on Steam</a>. Version 1 plays on Windows 10.
 
-* ROS (Robotic Operating System)
+* <a target="_blank" href="https://bomonike.github.io/ros/">ROS (Robotic Operating System)</a>
 
 * PROTIP: I'm working on sending data from <strong>micro:bit</stong>
 
@@ -183,7 +192,7 @@ Open MCT could be adapted <a target="_blank" href="https://nasa.github.io/openmc
 
 ## Plugins
 
-Plugins are bundles of software components used to extend Open MCT by defining new capabilities such as telemetry sources, object providers or new telemetry visualizations. Some Open MCT plugins are packaged along with Open MCT, with others are available for you to download from
+Open MCT capabilities can be extended with plugins such as telemetry sources, object providers or new telemetry visualizations. Some Open MCT plugins are packaged along with Open MCT, with others are available for you to download from
 https://nasa.github.io/openmct/plugins/
 
    * Views and Visualizations
@@ -200,7 +209,8 @@ Configure at:
 https://github.com/nasa/openmct/blob/master/index.html
 
 Create your own Plugin at:
-https://nasa.github.io/openmct/plugins-documentation/
+* https://github.com/nasa/openmct-hello
+* https://nasa.github.io/openmct/plugins-documentation/
 
 
 ## Alternatives to Open MCT
@@ -226,22 +236,61 @@ https://news.ycombinator.com/item?id=40077048
    * Open MCT – Open-Source Mission Control Software - https://news.ycombinator.com/item?id=12339966 - Aug 2016 (14 comments)
    * NASA funding line called Tipping Point used to commercialize NASA tech
 
-Kerbal Space https://github.com/hudsonfoo/kerbal-openmct
-https://store.privatedivision.com/game/buy-kerbal-space-program-ksp#compare-editions
+<hr />
 
+<a name="Install"></a>
 
-## Install
+## Installation
 
 Here are my modifications piercing together several documents:
+
+
+CAUTION: There are several obsolete versions of docs about Open MCT on the internet,
+including NASA's pages such as
+
+https://github.com/nasa/openmct-hello give examples of extending the platform to add functionality and integrate with data sources.
+
     * <a target="_blank" href="https://github.com/nasa/openmct-tutorial">https://github.com/nasa/openmct-tutorial</a>
-    * https://github.com/nasa/openmct/
-    * https://ntrs.nasa.gov/api/citations/20150021313/downloads/20150021313.pdf
+    * https://github.com/nasa/openmct/ contains docs/src/guide
+    * https://nasa.github.io/openmct/documentation/
+    * https://github.com/nasa/openmct-tutorial  <a target="_blank" href="https://ntrs.nasa.gov/api/citations/20150021313/downloads/20150021313.pdf">PDF</a>
+
+https://github.com/CiscoDevNet/ContainerLabs/blob/master/artifacts/nodejs/openmct/README.md?plain=1
+
+https://github.com/jaxxzer/openmct/blob/master/docs/src/guide/index.md?plain=1
 
 <hr />
+
+1. Install Google Chrome browser, the "test-" browser.
+
+   Because the browser cache can sometimes interfere with development (masking changes by using older versions of sources). So it is easiest to run Chrome with Developer Tools expanded, and “Disable cache” selected from the Network tab, as shown below.
 
 1. Install Docker and Docker Compose.
 
    QUESTION: Who keeps Docker images up to date and how long is the lag?
+
+1. PROTIP: Do not specify <tt>\-\-depth 1</tt> to limit branches downloaded because the tutorial addresses a specific back branch.
+   ```
+   git clone https://github.com/nasa/openmct.git
+   cd openmct
+   ```
+
+1. Install VSCode
+1. Remove VSCode extension unwantedRecommendation ["octref.vetur"]
+1. Install VSCode extensions https://github.com/nasa/openmct/blob/master/.vscode/extensions.json
+
+   * Python
+   * "Vue.volar",
+   * "dbaeumer.vscode-eslint",
+   * "rvest.vs-code-prettier-eslint"
+
+1. eslint for https://github.com/nasa/openmct/blob/master/.eslintrc.cjs
+1. cspell for https://github.com/nasa/openmct/blob/master/.cspell.json
+1. Code Coverage for https://github.com/nasa/openmct/blob/master/codecov.yml
+1. Karma for https://github.com/nasa/openmct/blob/master/karma.conf.cjs
+
+
+   ### Install NodeJs
 
 1. PROTIP: Do not install the latest using <tt>brew install nodejs</tt> as instructed in the tutorial, which installs the absolute latest version:
 
@@ -251,10 +300,17 @@ Here are my modifications piercing together several documents:
    ```
    FIXME: This did not work on my macOS.
 
-1. Follow caveat instructions to onfigure your .bash_profile or .zshrc.
-1. Exit the Terminal and restart.
+1. Add the path to node into your .bash_profile or .zshrc PATH:<br />On a Mac Silicon machine:
+   ```
+   export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+   ```
+1. Exit the Terminal and restart or source the startup file just edited.
+
+   ### Install Open MCT from GitHub
 
 1. Identify the version of NodeJs Open MCT currently supports by viewing:
+
+   PROTIP: The release ccompatible with Open MCT is <strong>version 20</strong>.
 
    https://github.com/nasa/openmct.git
 
@@ -264,35 +320,40 @@ Here are my modifications piercing together several documents:
    npm error notsup Required: {"node":">=18.14.2 <22"}
    npm error notsup Actual:   {"npm":"10.8.3","node":"v22.9.0"}
    ```
-   That means the latest release for <strong>version 21</strong>.
-
    CAUTION: Regularly update your Node.js version to take advantage of the latest features, security patches, and performance improvements. It’s recommended to stay up to date with the LTS (Long-Term Support) versions if stability is a priority.
 
-1. Pick the specific release at:
+   The list of specific release is at:
    https://nodejs.org/en/about/previous-releases
 
-   In a Terminal, define the specific version of NodeJs:
+   As of 24-10-13, there is " No available formula with the name "node@21".
+
+   There is a "20.18.0".
+
+   So, in a Terminal, define the specific version of NodeJs:
    ```
-   NODE_VER=21.7.3
-   echo "${NODE_VER}"
+   OPENMCT_NODE_VER=20.18.0
+   echo "${OPENMCT_NODE_VER}"
    ```
 
 1. PROTIP: Brew normally enables install of back versions using a command such as:
    ```
-   brew install node@21
+   brew install node@20
    ```
-   However, as of 24-10-13, there is " No available formula with the name "node@21".
+   If this works, skip to <a href="#npm_install">npm install</a>.
+
+
+   ### Manual fallback install
 
    So the manual fall-back approach is all of the following:
 
    So we can try to install a specific version of NodeJs using the command nvm install:
    ```
-   nvm install "${NODE_VER}"
+   nvm install "${OPENMCT_NODE_VER}"
    ```
 
    Then switch to that version using the command:
    ```
-   nvm use "$NODE_VER"
+   nvm use "$OPENMCT_NODE_VER"
    ```
 
 1. click "Releases" on the same line as <strong>v21.7.3</strong> dated "2024-04-10" at
@@ -355,11 +416,6 @@ Here are my modifications piercing together several documents:
 
    xattr -d com.apple.quarantine  /usr/local/node/bin/node
 
-1. Verify the current Node.js version:
-   ```
-   node -v
-   ```
-
    ### Apple Malicious Software
 
    To the pop-up "“node” can’t be opened because Apple cannot check it for malicious software."
@@ -377,29 +433,101 @@ Here are my modifications piercing together several documents:
    However, this is not recommended for most users as it reduces system security.
 
 
+## npm install
 
-1. PROTIP: Do not specify <tt>\-\-depth 1</tt> to limit branches downloaded because the tutorial addresses a specific back branch.
+1. Verify the current Node.js version:
+   ```
+   node -v
+   ```
+1. Install Open MCT for webpack:
 
    ```
-   git clone https://github.com/nasa/openmct.git
-   cd openmct
    npm install
    ```
 
-1. Start the dev server process running locally on your laptop:
+   Sample response:
+   ```
+    > openmct@4.1.0-next prepare
+    > npm run build:prod && npx tsc
+   &nbsp;
+    > openmct@4.1.0-next build:prod
+    > webpack --config ./.webpack/webpack.prod.mjs
+   &nbsp;
+    webpack compiled successfully
+   &nbsp;
+    added 1042 packages, and audited 1044 packages in 39s
+   &nbsp;
+    161 packages are looking for funding
+    run `npm fund` for details
+   &nbsp;
+    10 vulnerabilities (3 low, 4 moderate, 3 high)
+   &nbsp;
+    To address issues that do not require attention, run:
+    npm audit fix
+   &nbsp;
+    To address all issues, run:
+    npm audit fix --force
+   &nbsp;
+    Run `npm audit` for details.
+   ```
+1. Fix:
+   ```
+   run npm audit --force
+   ```
 
+   ### npm start
+
+1. Start the dev server process running locally on your laptop:
    ```
    npm start
    ```
+   Sample response:
+   ```
+   > openmct@4.1.0-next start
+> npx webpack serve --config ./.webpack/webpack.dev.mjs
+
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: http://localhost:8080/
+<i> [webpack-dev-server] On Your Network (IPv4): http://192.168.1.26:8080/
+<i> [webpack-dev-server] On Your Network (IPv6): http://[fe80::1]:8080/
+<i> [webpack-dev-server] Content not from webpack is served from '$HOME/bomonike/openmct/dist' directory
+webpack compiled successfully
+   ```
+   CAUTION: Create another Terminal window to do something else.
+   Press control+C to stop the app running.
+
+1. Click "Allow" in the pop-up "Do you want the application "node" to accept incoming network connections?
+
+   ### Run Web Browser
+
+1. Switch to the Chrome web browser
+1. Obtain the GUI <strong>with logging</strong> using its default port without a SSL certificate:
+
+   <a target="_blank" href="http://localhost:8080?log=info">http://localhost:8080?log=info</a>
+
+   You should see a screen that's the beginnings of what is shown in the <a href="#Demo">demo screen above</a>.
+
    PROTIP: Production servers have a different procedure.
 
-1. Docker Compose ???
+1. View the log:
+
+
+   ### Web server status
+
+   QUESTION: The web server status is served from
+
+   http://localhost:8080/server-status
+
+Skip to <a href="#Configure">Configure</a>
+
+
+<hr />
+
+   ### Docker Compose
+
+1. QUESTION: Docker Compose ???
 
    https://github.com/scottbell/openmct-quickstart/blob/main/openmct/Dockerfile
-
-1. View the GUI using its default port with no SSL certificate:
-
-   <a target="_blank" href="http://localhost:8080">http://localhost:8040</a>
 
 1. Enter the username/password testuser/NasaIsCool!
 
@@ -408,14 +536,6 @@ Here are my modifications piercing together several documents:
    The OpenMCT web application is served from http://localhost:8040
 
    openmct builds the Open MCT web application into a shared volume (and quits).
-
-   ## Web server status
-
-   The Apache HTTP server used to serve the Open MCT web application, and to proxy requests to YAMCS and CouchDB.
-
-   The Apache server status is served from
-
-   http://localhost:8040/server-status
 
    ## Database
 
@@ -435,26 +555,138 @@ Here are my modifications piercing together several documents:
 
    http://localhost:8040/yamcs
 
+<hr />
 
-1. Configuring Persistence
-1. Run a Web Server
-1. Viewing in Browser
+<a name="Glossary"></a>
 
-To do List
-* Step 1. Create the Plugin
-* Step 2. Add a Domain Object Type
-* Step 3. Add a View
-* Step 4. Add a Controller
-* Step 5. Support Editing
-* Step 6. Customizing Look and Feel
+## Glossary
 
-Bar Graph
+The following terms are used throughout Open MCT. Other developer documentation, particularly in-line
+documentation, may presume an understanding of these terms.
+
+* _bundle_: A bundle is a removable, reusable grouping of software elements.
+  The application is composed of bundles. Plug-ins are bundles. For more
+  information, refer to framework documentation (under `platform/framework`.)
+
+* _capability_: An object which exposes dynamic behavior or non-persistent
+  state associated with a domain object.
+
+* _composition_: In the context of a domain object, this refers to the set of
+  other domain objects that compose or are contained by that object. A domain
+  object's composition is the set of domain objects that should appear
+  immediately beneath it in a tree hierarchy. A domain object's composition is
+  described in its model as an array of id's; its composition capability
+  provides a means to retrieve the actual domain object instances associated
+  with these identifiers asynchronously.
+
+* _description_: When used as an object property, this refers to the human-readable
+  description of a thing; usually a single sentence or short paragraph.
+  (Most often used in the context of extensions, domain
+  object models, or other similar application-specific objects.)
+
+* _domain object_: A meaningful object to the user; a distinct thing in
+  the work support by Open MCT. Anything that appears in the left-hand
+  tree is a domain object.
+
+* _extension_: An extension is a unit of functionality exposed to the
+  platform in a declarative fashion by a bundle. For more
+  information, refer to framework documentation (under `platform/framework`.)
+
+* _id_: A string which uniquely identifies a domain object.
+
+* _key_: When used as an object property, this refers to the machine-readable
+  identifier for a specific thing in a set of things. (Most often used in the
+  context of extensions or other similar application-specific object sets.)
+
+* _model_: The persistent state associated with a domain object. A domain
+  object's model is a JavaScript object which can be converted to JSON
+  without losing information (that is, it contains no methods.)
+
+* _name_: When used as an object property, this refers to the human-readable
+  name for a thing. (Most often used in the context of extensions, domain
+  object models, or other similar application-specific objects.)
+
+* _navigation_: Refers to the current state of the application with respect
+  to the user's expressed interest in a specific domain object; e.g. when
+  a user clicks on a domain object in the tree, they are _navigating_ to
+  it, and it is thereafter considered the _navigated_ object (until the
+  user makes another such choice.)
+
+* _space_: A name used to identify a persistence store. Interactions with
+  persistence will generally involve a `space` parameter in some form, to
+  distinguish multiple persistence stores from one another (for cases
+  where there are multiple valid persistence locations available.)
+
+<hr />
+
+<a name="Configure"></a>
+
+## OpenMCT Configuration
+
+Click "+ CREATE" on the upper-left for the menu of <strong>domain objects</strong> (or views) to add:
+<img align="right" width="30" alt="openmct-create-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728884710/openmct-create-menu_mthlc5.png">
+
+Domain objects can be created, organized, edited, placed in <strong>layouts</strong>.
+
+Victor.Woeltjen, NASA's author of Web Tutorials describes how to customize Open MCT (add features to it)by showing how to create a ToDo app like h​ttp://todomvc.com. All the following are done within a Terminal program.
+
+1. Create a folder named "todo" along a file path. Results of this is at
+
+   https://github.com/bomonike.github.io/blob/main/openmct/bundle.json ???
+
+1. Create a <tt>bundle.json</tt> file
+
+   A bundle is a group of software components (including source code, declared
+   as AMD modules, as well as resources such as images and HTML templates)
+   that is intended to be added or removed as a single unit. A plug-in for
+   Open MCT will be expressed as a bundle; platform components are also
+   expressed as bundles.
+
+   ```
+{
+    "name": "To­do Plugin",
+    "description": "Create and edit to­do lists.",
+    "extensions": {
+        "types": [
+            {
+                "key": "example.todo",
+                "name": "To­Do List",
+                "glyph": "j",
+                "description": "A list of what has to be done.",
+                "features": ["creation"]
+            }
+        ]
+    }
+}
+   ```
+
+1. In the root folder, <strong>create</strong> file <tt>bundles.json</tt> (note the plural) with an array of bundles (expressed as directory names) included in a running instance of Open MCT. Adding or removing paths from this list will add or remove bundles from the running application.
+
+   QUESTION: Does the file already exist in the repo?
+
+1. Add a Domain Object Type
+
+
+### Step 3. Add a View
+
+
+### Step 4. Add a Controller
+
+
+### Step 5. Support Editing
+
+
+### Step 6. Customizing Look and Feel
+
+<hr />
+
+## Bar Graph
 * Step 1. Define the View
 * Step 2. Add a Controller
 * Step 3. Using Telemetry Data
 * Step 4. View Configuration
 
-Telemetry Adapter
+## Telemetry Adapter
 * Step 0. Expose Your Telemetry
 * Step 1. Add a Top level Object
 * Step 2. Expose the Telemetry Dictionary
