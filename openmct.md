@@ -1,20 +1,22 @@
 This is at https://bomonike.github.io/openmct
 
-<!-- "v002 + config steps from pdf :openmct.md"
+<!-- "v003 + CCSDS agencies :openmct.md"
 -->
 
 From the same organization that brought you the first man on the moon,
 the Space Station, landers and helicopters on Mars, etc. comes:
 
-<a target="_blank" href="https://github.com/nasa/openmct/tree/master/src/images/favicons"><img align="right" alt="src/images/favicons/favicon-96x96.png" width="96" height="96" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728842488/openmct-96x96_iqvflp.png"></a><strong>Open MCT (Mission Control Technologies)</strong> developed at NASA (National Aeronautics and Space Administration) Ames Research Center in collaboration with the Jet Propulsion Laboratory.
+<a target="_blank" href="https://github.com/nasa/openmct/tree/master/src/images/favicons"><img align="right" alt="src/images/favicons/favicon-96x96.png" width="96" height="96" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728842488/openmct-96x96_iqvflp.png"></a><strong>Open MCT (Mission Control Technologies)</strong> was developed at NASA (National Aeronautics and Space Administration) Ames Research Center in collaboration with the Jet Propulsion Laboratory.
 
-Open MCT is called "next generation" because it brings together many functions of mission operations so that operators no longer need to switch between different applications to view all data.
+Open MCT is among the most popular of NASA's open-source projects at <a target="_blank" href="https://code.nasa.gov/">code.nasa.gov</a>.
 
 "Open MCT is designed to meet the rapidly evolving needs of mission control systems. At NASA, the requirements for Open MCT are being driven by a need to support distributed operations, access to data anywhere, data visualization for spacecraft analysis that spans multiple data sources, and flexible reconfiguration to support multiple missions and operator use cases."
 
 ## Overall architecture
 
 <img alt="openmct-dataflow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728871283/openmct-dataflow_y0fhn2.png">
+
+Open MCT is called "next generation" because it brings together many functions of mission operations so that operators no longer need to switch between different applications to view all data.
 
 
 ## Web Server Tech
@@ -38,7 +40,7 @@ Displays are used by spacecraft missions to visualize and analyze telemetry data
    * ROS (Robotic Operating System)
    <br /><br />
 
-Space Standards
+Space Standards at <a target="_blank" href="https://www.ccsds.org">CCSDS.org</a> (Consultative Committee for Space Data Systems):
 
    * CCSDS/OMG XML Telemetric and Command Exchange (XTCE) v1.1 and v1.2
    * CCSDS 133.0-B-2 Space Packet Protocol
@@ -47,7 +49,56 @@ Space Standards
    * CCSDS File Delivery Protocol (CFDP)
    * CCSDS Space Link Extension (FCLTU/RAF/RCF)
 
-## user groups
+As of February 2021:
+CCSDS Member Agencies:
+    *  Agenzia Spaziale Italiana (ASI)/Italy.
+    *  Canadian Space Agency (CSA)/Canada.
+    *  Centre National d’Etudes Spatiales (CNES)/France.
+    *  China National Space Administration (CNSA)/People’s Republic of China.
+    *  Deutsches Zentrum für Luft- und Raumfahrt (DLR)/Germany.
+    *  European Space Agency (ESA)/Europe.
+    *  Federal Space Agency (FSA)/Russian Federation.
+    *  Instituto Nacional de Pesquisas Espaciais (INPE)/Brazil.
+    *  Japan Aerospace Exploration Agency (JAXA)/Japan.
+    *  National Aeronautics and Space Administration (NASA)/USA.
+    *  UK Space Agency/United Kingdom.
+CCSDS Observer Agencies:
+    *  Austrian Space Agency (ASA)/Austria.
+    *  Belgian Science Policy Office (BELSPO)/Belgium.
+    *  Central Research Institute of Machine Building (TsNIIMash)/Russian Federation.
+    *  China Satellite Launch and Tracking Control General, Beijing Institute of Tracking and Telecommunications Technology (CLTC/BITTT)/China.
+    *  Chinese Academy of Sciences (CAS)/China.
+    *  China Academy of Space Technology (CAST)/China.
+    *  Commonwealth Scientific and Industrial Research Organization (CSIRO)/Australia.
+    *  Danish National Space Center (DNSC)/Denmark.
+    *  Departamento de Ciência e Tecnologia Aeroespacial (DCTA)/Brazil.
+    *  Electronics and Telecommunications Research Institute (ETRI)/Korea.
+    *  European Organization for the Exploitation of Meteorological Satellites (EUMETSAT)/Europe.
+    *  European Telecommunications Satellite Organization (EUTELSAT)/Europe.
+    *  Geo-Informatics and Space Technology Development Agency (GISTDA)/Thailand.
+    *  Hellenic National Space Committee (HNSC)/Greece.
+    *  Hellenic Space Agency (HSA)/Greece.
+    *  Indian Space Research Organization (ISRO)/India.
+    *  Institute of Space Research (IKI)/Russian Federation.
+    *  Korea Aerospace Research Institute (KARI)/Korea.
+    *  Ministry of Communications (MOC)/Israel.
+    *  Mohammed Bin Rashid Space Centre (MBRSC)/United Arab Emirates.
+    *  National Institute of Information and Communications Technology (NICT)/Japan.
+    *  National Oceanic and Atmospheric Administration (NOAA)/USA.
+    *  National Space Agency of the Republic of Kazakhstan (NSARK)/Kazakhstan.
+    *  National Space Organization (NSPO)/Chinese Taipei.
+    *  Naval Center for Space Technology (NCST)/USA.
+    *  Netherlands Space Office (NSO)/The Netherlands.
+    *  Research Institute for Particle & Nuclear Physics (KFKI)/Hungary.
+    *  Scientific and Technological Research Council of Turkey (TUBITAK)/Turkey.
+    *  South African National Space Agency (SANSA)/Republic of South Africa.
+    *  Space and Upper Atmosphere Research Commission (SUPARCO)/Pakistan.
+    *  Swedish Space Corporation (SSC)/Sweden.
+    *  Swiss Space Office (SSO)/Switzerland.
+    *  United States Geological Survey (USGS)/USA
+
+
+## User Groups
 
 Open MCT provides integrated situational awareness, health monitoring and <strong>telemetry</strong> display to many segments of rover mission teams, including operators, instrument specialists and strategic planners.
 
