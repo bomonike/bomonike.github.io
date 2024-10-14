@@ -1,7 +1,9 @@
 
-This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/plc</a> from code at <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/plc.md">https://github.com/bomonike/bomonike.github.io/blob/master/plc.md</a>
+This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/plc</a> from code within private repo <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/plc.md">https://github.com/bomonike/bomonike.github.io/blob/master/plc.md</a>
 
-Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">"Automation Pyramid"</a> are captured from a PowerPoint file <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.
+Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">Purdue "Automation Pyramid"</a> are from a PowerPoint file <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.
+
+This is based on <a target="_blank" href="https://www.hivemq.com/resources/smart-manufacturing-using-isa95-mqtt-sparkplug-and-uns/">ISA95</a> (International Society of Automation) which modeles data objects pushed to an enterprise Unified Namespace. <a target="_blank" href="https://www.wikiwand.com/en/articles/ANSI/ISA-95">ANSI-ISA95</a> is a large specification with many parts developed over many years.
 
 <img alt="ignition-pyramid-1833x831.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726842630/ignition-pyramid-1833x831_y2qc08.png">
 
@@ -13,8 +15,8 @@ Planning to coordinate minute-by-minute movement of material and work in process
 * MES (Manufacturing Execution System).
 Such a system makes more efficient use of limited capacity. MES reduces bottlenecks by calculating alternative routings in production.
 
-Overall orchestration is done by an
-* ERP (Enterprise Resource Planning) system that does long-range planning in industries with long lead time items or complex bills of materials (BoM) needed on the shop floor, along with some form of associated shop orders in manufacturing industries.
+Overall orchestration is done by "Top Floor" people using an
+* ERP (Enterprise Resource Planning) system that does long-range planning (in industries with long lead time items) or complex bills of materials (BoM) needed on the shop floor, along with some form of associated shop orders in manufacturing industries.
 
 * MRP includes most accounting functions, including general ledger, as well as inventory management, and resource and inventory planning.
 
@@ -22,6 +24,12 @@ These systems help with ISO 9001 certification and compliance with FDA CFR 21 Pa
 
 At the shop floor or Field Level, RFID tags, barcodes, and weights and other measures are captured and displayed by a
 * LIM (Laboratory Information Management) system.
+
+There are also:
+* Building Management Systems
+* Warehouse Management Systems
+* Logistics Management Systems to track and manage the movement of transportation vehicles carrying goods between vendors, plants, and customers.
+
 
 <a target="_blank" href="https://libertyadvisorgroup.com/insight/manufacturing-execution-systems-erp-on-the-shop-floor/"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1726635389/MESP_attributes_vd4tom.webp"></a>
 
@@ -135,12 +143,15 @@ Ignition has <a target="_blank" href="https://inductiveuniversity.com/videos/abo
    <ul><a target="_blank" href="https://inductiveautomation.com/ignition/modules">https://inductiveautomation.com/ignition/modules</a></ul>
 
 * Allen-Bradley (Logix 5000)
+* Bentley Nevada
 * GE
+* Honeywell
 * Logix
 * Micro800
 * Mitsubishi
-* Omron
+* Omron (<a target="_blank" href="https://www.realpars.com/courses/omron-nx5-controllers">NX5 course</a>)
 * Siemens (tags don't support browsing)
+* Yokogawa
 
 * ABB (Totalflow) ???
 * Rockwell Automation ???

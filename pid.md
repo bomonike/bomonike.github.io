@@ -66,7 +66,7 @@ References about PID:
 
 * Fuzzy Logic Control (FLC)
 
-* <a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=7m10s">Model Predictive Control (MPC)</a> works by using an algorithm based on a mathematical model to predict the behavior of process variables.
+* <a target="_blank" href="https://www.youtube.com/watch?v=lRZ4NT5DRk8&list=PLln3BHg93SQ_Ejn6godXbxromegXSMYOl&index=7&t=7m10s">Model Predictive Control (MPC)</a> works by using an algorithm based on a mathematical model to predict the behavior of process variables. <a target="_blank" href="https://www.youtube.com/watch?v=8BHMsKXlRq0&t=3m">VIDEO</a>
 
 * Adaptive Control
 

@@ -1080,7 +1080,7 @@ comments: true
 *	ROA	=	Return on Assets
 *	ROC	=	Report on Compliance (issued by DCS PSI  auditors)
 *	ROE	=	Return on Equity
-* RoHS = Restriction of Hazardous Substances Directive (EU)
+* RoHS = Restriction of Hazardous Substances Directive (EU Feb 2003)
 *	ROI	=	Return on Investment
 *	ROM	=	Read-only Memory
 *	ROS	=	Return on Sales

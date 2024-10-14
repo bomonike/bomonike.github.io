@@ -1,4 +1,5 @@
-oee.md
+This is at <a target="_blank" href="https://bomonike.github.io/oee">https://bomonike.github.io/oee</a> from code within private repo <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/oee.md">https://github.com/bomonike/bomonike.github.io/blob/master/oee.md</a>
+
 
 OEE (Overall Equipment Effectiveness) is commonly used as a manufacturing best practice key performance indicator (KPI).
 
@@ -62,3 +63,10 @@ OEE definitions may seem abstract for plant floor employees. Since plant floor e
    * Downtime (Availability Loss): accumulated unplanned stop time for the shift updated in real-time; this keeps a strong focus on a key actionable improvement area
 
    * Quality?
+
+PROTIP: An important mindset is understanding the actual root cause of each discruption being from random variation or "special" causes.
+The constant battle of process control is to act on one and ignore the other.
+
+   ## Visualization
+
+   https://inductiveautomation.com/exchange/2674/overview

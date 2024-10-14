@@ -328,3 +328,17 @@ https://www.robotshop.com/collections/clearpath-robotics
 SKU: RB-Cle-04 is $1,336.99
 * Clearpath Robotics TurtleBot 4 Mobile Robot
 SKU: RB-Cle-03 is $2,191.44
+
+## Arduino Alvik
+
+https://store.arduino.cc/products/alvik
+158,60
+For an obstacle avoidance robot to a smart warehouse automation robot car.
+Powered by the versatile Nano ESP32.
+MicroPython and Arduino language. soon plans to introduce block-based coding
+Sensors: Alvik’s Time of Flight, RGB color and line-following array sensors, along with its 6-axis gyroscope and accelerometer.
+Comes with LEGO® Technic™ connectors,
+M3 screw connectors for custom 3D or laser-cutter designs.
+
+Servo, I2C Grove, and I2C Qwiic connectors
+Add motors for controlling movement and robotic arms, or integrate extra sensors

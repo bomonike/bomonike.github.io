@@ -10,7 +10,7 @@ This is part of a series about low-cost, low-power SOC (System on a Chip) microc
 
 https://microbit.org/code/
 
-https://www.parallax.com
+https://www.parallax.com<br />
 https://www.parallax.com/product-category/sensors/
 
 The proper orientation is the 25-pixel LEDs with gold connectors at the bottom.
@@ -405,6 +405,82 @@ $279 from https://www.parallax.com/product/cyberbot-robot-kit-with-microbit/
 1. Verify that the P21 light blinks.
 
 
+
+## OTA download code
+
+From https://forum.micropython.org/viewtopic.php?t=11746
+
+<a target="_blank" href="https://microbit-micropython.readthedocs.io/en/v2-docs/ble.htm">Microsoft MakeCode supports Bluetooth BLE on the micro:bit</a>.
+
+To control a micro:bit from a laptop, use a second micro:bit connected to the laptop. For both V1 and V2 micro:bits.
+
+On the laptop running Linux with Python installed:
+```
+#!/usr/bin/python3
+
+import serial
+import time
+from serial.tools.list_ports import comports as serial_ports
+import sys
+
+def find_microbit():
+
+  ports = serial_ports()
+
+  for port in ports:
+    if "VID:PID=0D28:0204" in port.hwid:
+      return port.device
+
+  return None
+
+port = find_microbit()
+
+if port:
+  print('\nMicro:bit found at port %s.\n' % port)
+else:
+  print('\nError: No micro:bit found.\n')
+  sys.exit(1)
+
+ser = serial.Serial(port=port, baudrate=115200, timeout=1)
+
+while True:
+    msg = input("Send message: ")
+    if not msg:
+        break
+    else:
+        msg = msg.encode("ascii")
+        print(msg)
+        ser.write(msg)
+```
+On the micro:bit connected to the laptop:
+```
+from microbit import *
+import radio
+
+radio.config()
+radio.on()
+uart.init(115200)
+
+while True:
+    msg = uart.read()
+    if msg:
+        msg = str(msg, 'UTF-8')
+        display.scroll(msg, delay=80, wait=False)
+        radio.send(msg)
+```
+On the microbit (with battery) you want to control remotely:
+```
+from microbit import *
+import radio
+
+radio.config()
+radio.on()
+
+while True:
+    msg = radio.receive()
+    if msg:
+        display.scroll(msg, delay=80)
+```
 
 ## AI
 

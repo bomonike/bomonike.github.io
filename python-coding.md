@@ -170,25 +170,54 @@ environment
 
 <a name="Exceptions"></a>
 
-4.3 – Python Built-In Exceptions Hierarchy
-• BaseException
-• Exception
-• SystemExit
-• KeyboardInterrupt
-• abstract exceptions
-• ArithmeticError
-• LookupError
-• IndexError
-• KeyError
-• TypeError
-• ValueError
-
 4.4 – Basics of Python Exception Handling
 
-• try-except / the try-except Exception
-• ordering the except branches
-• propagating exceptions through function boundaries
-• delegating responsibility for handling exceptions
+All instances in Python must be instances of a class that derives from BaseException. Before using a divide operator:
+```
+try:
+    a = 10/0
+    print (a)
+except ArithmeticError:
+    print ("microbit-001: This raises an arithmetic exception.")
+else:
+    print ("Success.")
+```
+* try-except / the try-except Exception
+* ordering the except branches
+* propagating exceptions through function boundaries
+* delegating responsibility for handling exceptions
+
+References about Exception Handling:
+   * <a target="_blank" href="https://www.w3schools.com/python/python_ref_exceptions.asp">W3Schools</a>
+   * <a target="_blank" href="https://docs.python.org/3/library/exceptions.html">docs.python.org: Built-in Exceptions</a>
+   * <a target="_blank" href="https://realpython.com/python-raise-exception/">RealPython</a> with <a target="_blank" href="https://github.com/realpython/materials/tree/master/python-raise-exception">code</a>
+
+4.3 – Python Built-In Exceptions Hierarchy
+
+locals()['__builtins__']
+
+Python inherits from the Exceptions class.
+
+* BaseException
+   The BaseException class includes a <tt>with_traceback(tb)</tt> method which explicitly sets the new traceback information to the tb argument that was passed to it.
+   * Exception is most commonly inherited type.
+     * ArithmeticError when attempting to divide by zero, or when an arithmetic result would be too large for Python to accurately represent.
+     * AssertionError when assert statements fail
+     * FloatingPointError
+     * OverflowError
+     * ZeroDivisionError
+   * AssertionError
+* SystemExit
+* KeyboardInterrupt when the user presses Ctrl+C or other key combination that causes an interrupt to the executing script
+
+Abstract exceptions:
+* ArithmeticError
+* LookupError
+* IndexError
+* KeyError
+* TypeError
+* ValueError
+
 
 <hr />
 

@@ -146,3 +146,6 @@ $9.99
 
 To build a Arduino Tutorial: Getting weather data from API
 https://www.dfrobot.com/blog-917.html
+
+https://github.com/CircuitSetup/Expandable-6-Channel-ESP32-Energy-Meter
+CircuitSetup Expandable 6 Channel ESP32 Energy Meter
