@@ -1,12 +1,12 @@
 This is at https://bomonike.github.io/openmct
 
-<!-- "v006 + Larger demo jpg :openmct.md"
+<!-- "v007 + note about Apache deprecation :openmct.md"
 -->
 
 From the same organization that brought you the first man on the moon,
 the Space Station, landers and helicopters on Mars, etc. comes:
 
-<a target="_blank" href="https://github.com/nasa/openmct/tree/master/src/images/favicons"><img align="right" alt="src/images/favicons/favicon-96x96.png" width="96" height="96" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728842488/openmct-96x96_iqvflp.png"></a><strong>Open MCT (Mission Control Technologies)</strong> was developed at NASA (National Aeronautics and Space Administration) Ames Research Center in collaboration with the Jet Propulsion Laboratory. Open MCT is part of <a target="_blank" href="https://www.nasa.gov/smallsat-institute/space-mission-design-tools/">NASA's Space Mission Design Tools</a>.
+<a target="_blank" href="https://github.com/nasa/openmct/tree/master/src/images/favicons"><img align="right" alt="src/images/favicons/favicon-96x96.png" width="96" height="96" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728842488/openmct-96x96_iqvflp.png"></a><strong>Open MCT (Mission Control Technologies)</strong> was developed at NASA (National Aeronautics and Space Administration) Ames Research Center (@NASAAmes) in collaboration with the Jet Propulsion Laboratory (@NASAJPL). Open MCT is part of <a target="_blank" href="https://www.nasa.gov/smallsat-institute/space-mission-design-tools/">NASA's Space Mission Design Tools</a>.
 
 Open MCT is among the most popular of NASA's open-source projects at <a target="_blank" href="https://code.nasa.gov/">code.nasa.gov</a>.
 
@@ -23,7 +23,7 @@ Open MCT is called "next generation" because it brings together many functions o
 
 Open MCT is a front-end web server display accessed by desktop and mobile devices over the public internet. The server currently runs NodeJs using Vue.js GUI components.
 
-NOTE: As of 24-10-13, the <a target="_blank" href="https://github.com/scottbell/openmct-quickstart?tab=readme-ov-file#diagram">diagram on the openmct-quickstart repo on GitHub</a> for a previous version using Apache, NGINX, and Express.js now deprecated.
+OBSOLETED WARNING: Open MCT now runs on Node.js as of 24-10-13. So ignore <a target="_blank" href="https://github.com/scottbell/openmct-quickstart?tab=readme-ov-file#diagram">diagram on the openmct-quickstart repo on GitHub</a> for a previous version using Apache, NGINX, and Express.js now deprecated.
 
 <img alt="openmct-docker.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728871417/openmct-docker_fg5q1c.png">
 
@@ -106,9 +106,7 @@ Open MCT is currently <a target="_blank" href="https://nasa.github.io/openmct/wh
    * <a target="_blank" href="https://www.jpl.nasa.gov/cubesat/missions/asteria.php">ASTERIA</a>,
    * <a target="_blank" href="https://coldatomlab.jpl.nasa.gov/">Cold Atom Laboratory</a> operating on the ISS, and
    * <a target="_blank" href="https://www.jpl.nasa.gov/cubesat/missions/marco.php">Mars Cube One</a>, which played an integral role supporting the InSight lander on Mars.
-   <br /><br />
-
-"VISTA" is a multi-mission operations system built with Open MCT.
+   * "VISTA" is a multi-mission operations system built with Open MCT.
 
 <a name="Demo"></a>
 
@@ -119,12 +117,13 @@ There was a demo of Mars Science Laboratory dashboard at:
 <strike>https://openmct-demo.herokuapp.com</strike>
 
 ### Kerbal Space Game
-<img alt="openmct-weather-1280x860.jpeg" src="">
-<img alt="openmct-small.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png">
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png"><img alt="openmct-small.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png"></a>
+
 "announcement" on the middle-bottom indicate that the dashboard is
 part of a pretend universe of various science fiction fandoms, such as the
-Kerbal Space Program adventure game https://github.com/hudsonfoo/kerbal-openmct
-https://store.privatedivision.com/game/buy-kerbal-space-program-ksp#compare-editions
+<a target="_blank" href="https://github.com/hudsonfoo/kerbal-openmct
+https://store.privatedivision.com/game/buy-kerbal-space-program-ksp#compare-editions">Kerbal Space Program adventure game</a>
 
 Notice date/time stamps are by default in UTC time at Grenwich, near London, UK.
 
