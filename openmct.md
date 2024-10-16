@@ -236,6 +236,69 @@ https://news.ycombinator.com/item?id=40077048
 
 <hr />
 
+<a name="Glossary"></a>
+
+## Glossary
+
+The following terms are used throughout Open MCT. Other developer documentation, particularly in-line
+documentation, may presume an understanding of these terms.
+
+* _bundle_: A bundle is a removable, reusable grouping of software elements.
+  The application is composed of bundles. Plug-ins are bundles. For more
+  information, refer to framework documentation (under `platform/framework`.)
+
+* _capability_: An object which exposes dynamic behavior or non-persistent
+  state associated with a domain object.
+
+* _composition_: In the context of a domain object, this refers to the set of
+  other domain objects that compose or are contained by that object. A domain
+  object's composition is the set of domain objects that should appear
+  immediately beneath it in a tree hierarchy. A domain object's composition is
+  described in its model as an array of id's; its composition capability
+  provides a means to retrieve the actual domain object instances associated
+  with these identifiers asynchronously.
+
+* _description_: When used as an object property, this refers to the human-readable
+  description of a thing; usually a single sentence or short paragraph.
+  (Most often used in the context of extensions, domain
+  object models, or other similar application-specific objects.)
+
+* _domain object_: A meaningful object to the user; a distinct thing in
+  the work support by Open MCT. Anything that appears in the left-hand
+  tree is a domain object.
+
+* _extension_: An extension is a unit of functionality exposed to the
+  platform in a declarative fashion by a bundle. For more
+  information, refer to framework documentation (under `platform/framework`.)
+
+* _id_: A string which uniquely identifies a domain object.
+
+* _key_: When used as an object property, this refers to the machine-readable
+  identifier for a specific thing in a set of things. (Most often used in the
+  context of extensions or other similar application-specific object sets.)
+
+* _model_: The persistent state associated with a domain object. A domain
+  object's model is a JavaScript object which can be converted to JSON
+  without losing information (that is, it contains no methods.)
+
+* _name_: When used as an object property, this refers to the human-readable
+  name for a thing. (Most often used in the context of extensions, domain
+  object models, or other similar application-specific objects.)
+
+* _navigation_: Refers to the current state of the application with respect
+  to the user's expressed interest in a specific domain object; e.g. when
+  a user clicks on a domain object in the tree, they are _navigating_ to
+  it, and it is thereafter considered the _navigated_ object (until the
+  user makes another such choice.)
+
+* _space_: A name used to identify a persistence store. Interactions with
+  persistence will generally involve a `space` parameter in some form, to
+  distinguish multiple persistence stores from one another (for cases
+  where there are multiple valid persistence locations available.)
+
+
+<hr />
+
 <a name="Install"></a>
 
 ## Installation
@@ -256,6 +319,15 @@ https://github.com/nasa/openmct-hello give examples of extending the platform to
 https://github.com/CiscoDevNet/ContainerLabs/blob/master/artifacts/nodejs/openmct/README.md?plain=1
 
 https://github.com/jaxxzer/openmct/blob/master/docs/src/guide/index.md?plain=1
+
+https://www.youtube.com/watch?v=xWoR2OGSm9E
+
+
+From the Institute of Aircraft Design TUM Jan 12, 2021:
+   * https://gitlab.lrz.de/lls/vis-frame with
+   * https://www.youtube.com/watch?v=cU_Lc6hVV2w Part 1
+   * https://www.youtube.com/watch?v=hXqlugfHrCo Part 2
+   * https://gitlab.lrz.de/lls/vis-frame/-/wikis/Home/How-to-Install-and-Update-OpenMCT
 
 <hr />
 
@@ -494,25 +566,26 @@ webpack compiled successfully
    CAUTION: Create another Terminal window to do something else.
    Press control+C to stop the app running.
 
-1. Click "Allow" in the pop-up "Do you want the application "node" to accept incoming network connections?
+1. On macOS, click "Allow" in the pop-up "Do you want the application "node" to accept incoming network connections?
 
    ### Run Web Browser
 
-1. Switch to the Chrome web browser
+1. Switch to the Chrome web browser.
 1. Obtain the GUI <strong>with logging</strong> using its default port without a SSL certificate:
 
    <a target="_blank" href="http://localhost:8080?log=info">http://localhost:8080?log=info</a>
 
    You should see a screen that's the beginnings of what is shown in the <a href="#Demo">demo screen above</a>.
 
-   PROTIP: Production servers have a different procedure.
+   PROTIP: Production servers have a different procedure:
+   npm run build.
 
 1. View the log:
 
 
    ### Web server status
 
-   QUESTION: The web server status is served from
+   QUESTION: "Cannot GET /server-status" appears when the web server status is served from
 
    http://localhost:8080/server-status
 
@@ -553,67 +626,6 @@ Skip to <a href="#Configure">Configure</a>
 
    http://localhost:8040/yamcs
 
-<hr />
-
-<a name="Glossary"></a>
-
-## Glossary
-
-The following terms are used throughout Open MCT. Other developer documentation, particularly in-line
-documentation, may presume an understanding of these terms.
-
-* _bundle_: A bundle is a removable, reusable grouping of software elements.
-  The application is composed of bundles. Plug-ins are bundles. For more
-  information, refer to framework documentation (under `platform/framework`.)
-
-* _capability_: An object which exposes dynamic behavior or non-persistent
-  state associated with a domain object.
-
-* _composition_: In the context of a domain object, this refers to the set of
-  other domain objects that compose or are contained by that object. A domain
-  object's composition is the set of domain objects that should appear
-  immediately beneath it in a tree hierarchy. A domain object's composition is
-  described in its model as an array of id's; its composition capability
-  provides a means to retrieve the actual domain object instances associated
-  with these identifiers asynchronously.
-
-* _description_: When used as an object property, this refers to the human-readable
-  description of a thing; usually a single sentence or short paragraph.
-  (Most often used in the context of extensions, domain
-  object models, or other similar application-specific objects.)
-
-* _domain object_: A meaningful object to the user; a distinct thing in
-  the work support by Open MCT. Anything that appears in the left-hand
-  tree is a domain object.
-
-* _extension_: An extension is a unit of functionality exposed to the
-  platform in a declarative fashion by a bundle. For more
-  information, refer to framework documentation (under `platform/framework`.)
-
-* _id_: A string which uniquely identifies a domain object.
-
-* _key_: When used as an object property, this refers to the machine-readable
-  identifier for a specific thing in a set of things. (Most often used in the
-  context of extensions or other similar application-specific object sets.)
-
-* _model_: The persistent state associated with a domain object. A domain
-  object's model is a JavaScript object which can be converted to JSON
-  without losing information (that is, it contains no methods.)
-
-* _name_: When used as an object property, this refers to the human-readable
-  name for a thing. (Most often used in the context of extensions, domain
-  object models, or other similar application-specific objects.)
-
-* _navigation_: Refers to the current state of the application with respect
-  to the user's expressed interest in a specific domain object; e.g. when
-  a user clicks on a domain object in the tree, they are _navigating_ to
-  it, and it is thereafter considered the _navigated_ object (until the
-  user makes another such choice.)
-
-* _space_: A name used to identify a persistence store. Interactions with
-  persistence will generally involve a `space` parameter in some form, to
-  distinguish multiple persistence stores from one another (for cases
-  where there are multiple valid persistence locations available.)
 
 <hr />
 
@@ -621,14 +633,19 @@ documentation, may presume an understanding of these terms.
 
 ## OpenMCT Configuration
 
-Click "+ CREATE" on the upper-left for the menu of <strong>domain objects</strong> (or views) to add:
+1. Click "+ CREATE" on the upper-left for the menu of <strong>domain objects</strong> (or views) to add:
 <img align="right" width="30" alt="openmct-create-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728884710/openmct-create-menu_mthlc5.png">
 
-Domain objects can be created, organized, edited, placed in <strong>layouts</strong>.
+   Domain objects can be created, organized, edited, placed in <strong>layouts</strong>.
 
-Victor.Woeltjen, NASA's author of Web Tutorials describes how to customize Open MCT (add features to it)by showing how to create a ToDo app like h​ttp://todomvc.com. All the following are done within a Terminal program.
+   Victor.Woeltjen, NASA's author of Web Tutorials describes how to customize Open MCT (add features to it)by showing how to create a ToDo app like h​ttp://todomvc.com. All the following are done within a Terminal program.
 
-1. Create a folder named "todo" along a file path. Results of this is at
+1. Be sure you have forked the openmct repo.
+
+   Below are customization of instructions to create a hello-world plugin:
+   https://github.com/nasa/openmct-hello
+
+1. Create a root folder named "todo" along a file path. Results of this is at
 
    https://github.com/bomonike.github.io/blob/main/openmct/bundle.json ???
 
