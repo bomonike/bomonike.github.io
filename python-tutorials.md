@@ -1,6 +1,7 @@
 ---
 layout: post
 date: "2024-09-30"
+changes: "v025 + CMU & MIT & others :python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -11,6 +12,7 @@ image:
   credit:
   creditlink:
 comments: true
+created: "2016-07-10"
 ---
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
@@ -384,8 +386,11 @@ http://sthurlow.com/python/</a>
 0. <a target="_blank" href="http://sthurlow.com/python/lesson01/">
    Error Handling</a>
 
+<hr />
 
-### EDX.org & MIT
+## Universities:
+
+### MIT at EDX.org
 
 <a target="_blank" href="https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-9">
 MIT's Introduction to Computer Science using Python course 600.1.X</a> Aug 10, 2016 (free or $75 certificate) makes use of Windows and MacOS/Linux. Its major topics:
@@ -402,6 +407,64 @@ MIT's Introduction to Computer Science using Python course 600.1.X</a> Aug 10, 2
    * Data structures
    <br /><br />
 
+https://ocw.mit.edu/courses/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/
+MIT OpenCourseWare - A Gentle Introduction to Programming Using Python
+
+https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/
+MIT OpenCourseWare - Intro to CS & Programming Using Python
+
+
+### CMU
+
+<a target="_blank" href="https://academy.cs.cmu.edu/">Carnagie Mellon University</a>'s (in Pittsburg)
+Computer Science Academy has free courses:
+
+* <a target="_blank" href="https://academy.cs.cmu.edu/course-info#CS1">"Exploring Programming with Python"</a> is the Lightweight version of CS1 - same interactive fun as CS1, smaller curriculum.  4 UNITS for Out of school programs, Middle school, Camps
+
+* <a target="_blank" href="https://academy.cs.cmu.edu/course-info#CS0">"CS1: Introduction to Programming with Python"</a> is CMU's Flagship Course - A robust introduction to programming through graphics and animations. 12 UNITS for 8th + 9th grade, High school with No prior CS Academy experience required.
+
+* <a target="_blank" href="https://academy.cs.cmu.edu/course-info#CPCS">"15-111: College Programming and Computer Science"</a> - 4 University Credits for a full-year honors-level course in programming and computer science. For Advanced students with math skills and at least one prior programming course required. For those looking for college credit, available with $200 exam completion. <a target="_blank" href="https://drive.google.com/file/d/1jU1g_bLHz_b1joTzNUXP7yuwdvd7c_19/view">PDF</a>
+
++ <a target="_blank" href="http://www.youtube.com/@MrAdler-zj4qs">Mr Adler Youtube Channel</a>
+
+
+### CISCO Network Academy
+
+- <a target="_blank" href="https://skillsforall.com/course/python-essentials-1?courseLang=en-US&instance_id=49e08975-f089-4397-9d92-5bbf9f5b84be">Python Essentials 1</a>
+- <a target="_blank" href="https://skillsforall.com/course/python-essentials-2?courseLang=en-US&instance_id=fac757ce-029f-451b-b64f-f1b21e8abb97">
+Python Essentials 2 Course</a>
+
+### Replit
+
+https://firewalledreplit.com/learn/100-days-of-python/hub?enroll=success
+Tutorial - Replit's "100 days of python"
+
+https://firewalledreplit.com/@JudsonBirkel/Creating-Art-Using-Turtle-Python-Tutorial-Challenge
+Tutorial - Replit's "Creating Art Using Turtle Python"
+
+https://firewalledreplit.com/learn/mindjoy-python-turtle
+Tutorial - Replit's "Code Art - Master the Basics" (uses Turtle Python)
+
+https://firewalledreplit.com/@JudsonBirkel/Learn-steganography-in-Python-Tutorial#main.py
+Tutorial - Replit's "Learn Stenography in Python"
+
+
+## Others
+
+https://www.teachers.earsketch.org/
+Supplemental - EarSketch
+
+https://www.101computing.net/category/python-beginner/
+Challenges - 101 Computing Python Beginner
+
+https://wiingy.com/learn/python/
+Wiingy - Wiingy Learn Python
+
+https://runestone.academy/ns/books/published/fopp/index.html
+Runestone - Foundations of Python Programming Course
+
+https://developers.google.com/edu/python
+Curriculum - Google For Education - Python
 
 <hr />
 
