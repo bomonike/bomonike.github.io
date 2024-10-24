@@ -233,6 +233,20 @@ See key/value pairs without typing <tt>print</tt> statements in code, like an Xr
 
 <hr />
 
+## Pydantic
+
+Pydantic at <a target="_blank" href="https://docs.pydantic.dev/latest/">docs.pydantic.dev</a>)
+is the most widely used <strong>data validation</strong> library for Python.
+
+Use pydantic when you're not in control of the data input.
+
+Fast and extensible, Pydantic plays nicely with your linters/IDE/brain. Define how data should be in pure, canonical Python 3.8+; validate it with Pydantic. Its success means it suffers from feature creep. There's a temptation to move other classes over to pydantic, just because pydantic also includes serialization.
+
+It leans heavily on use of type hinting, which makes custom validation more complex than perhaps necessary.
+
+So check if you can get away with dataclasses.
+
+
 ## Use Python Code Scans
 
 mypy
@@ -244,6 +258,8 @@ Dynamic Application Security Testing (DAST) looks for vulnerabilities that occur
 https://www.statworx.com/en/content-hub/blog/how-to-scan-your-code-and-dependencies-in-python/
 
 A. PEP8 "lints" program code for violations of the PIP.
+
+   Other formaters: blake, ruff.
 
 B. Bandit (open-sourced at https://github.com/PyCQA/bandit) scans python code for vulnerabilities. It decomposes the code into its abstract syntax tree and runs plugins against it to check for known weaknesses. Among other tests it performs checks on plain SQL code, which could provide an opening for SQL injections, passwords stored in code and hints about common openings for attacks such as use of the <a href="#Pickle">pickle</a> library. Bandit is designed for use with CI/CD:
 
@@ -2479,34 +2495,50 @@ FREE: 2h57m by <a target="_blank" href="https://www.linkedin.com/in/joseph-perry
 https://app.cybrary.it/browse/course/python
 
 
-## Project STEM
+## CS50 Python class at Project STEM
 
-Python
+<a target="_blank" href="https://courses.projectstem.org/courses/174399/modules">CS Python Fundamentals AFE</a>
 <br />Unit 0: Welcome
 <br />Unit 1: Beginning in Computer Science
-<br />Unit 2: Number Calculations and Data
-<br />Unit 3: Making Decisions
-<br />Unit 4: Repetition and Loops
+<br />Unit 2: Number Calculations and Data: Division, Built-in Functions, Random Numbers,
+<br />Unit 3: Making Decisions: Simple Ifs, Logical Operators, Else, Elif, Alogorithm
+<br />Unit 4: Repetition and Loops: Loops, Count Variables, End Loop, Range, For Loops, Counting by Other Than 1, Modeling
 <br />Unit 5: Programming in EarSketch
-<br />Unit 6: Graphics
-<br />Unit 7: Functions
+<br />Unit 6: Graphics: Color Code, Loops, X&Y Coordinates, Lines, Circles, Animation
+<br />Unit 7: Functions: Parameters, return, Tracing,
 <br />Unit 8: Lists
-<br />Unit 9: 2D Lists
+<br />Unit 9: 2D Lists: Declaring, Loops, Algorithms, Animating
 <br />Unit 10: Programming in EarSketch
-<br />Unit 11: Internet
-<br />Unit 12: Dictionaries (Extension)
+<br />Unit 11: Internet: IP address, DNS, Packets & Routers, Web Pages, Cybersecurity, Net Neutrality,
+<br />Unit 12: Dictionaries (Extension): Methods, Iterating, Word Frequency Analysis
 
+
+https://www.youtube.com/playlist?list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4
+CS50x 2024 Lectures
 
 https://www.youtube.com/watch?v=8wysIxzqgPI
-neetcodeio
+by neetcodeio referencing
+jointaro.com/r/neetcode
 
-c
 Problem Solving for Developers - A Beginner's Guide
 
-jointaro.com/r/neetcode
 
 <a target="_blank" href="https://www.youtube.com/watch?v=x7X9w_GIm1s">VIDEO</a>: Python in 100 seconds:
 
+
+## Streamlit
+
+https://www.youtube.com/watch?v=o8p7uQCGD0U
+Python Interactive Dashboard Development using Streamlit and Plotly
+by Programming Is Fun
+
+https://www.youtube.com/watch?v=7yAw1nPareM
+
+https://www.youtube.com/watch?v=_Um12_OlGgw
+Streamlit Elements You Should Know About in 2023
+by Mısra Turp
+
+https://www.youtube.com/watch?v=9n4Ch2Dgex0
 
 
 ## More about Python

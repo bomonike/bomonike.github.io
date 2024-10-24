@@ -21,6 +21,7 @@ Open MCT is called "next generation" because it brings together many functions o
 
 ## Web Server Tech
 
+<a target="_blank" href="https://www.youtube.com/watch?v=xWoR2OGSm9E" title="OpenPlanetary channel 4-2021">VIDEO</a>:
 Open MCT is a front-end web server display accessed by desktop and mobile devices over the public internet. The server currently runs NodeJs using Vue.js GUI components.
 
 OBSOLETED WARNING: Open MCT now runs on Node.js as of 24-10-13. So ignore <a target="_blank" href="https://github.com/scottbell/openmct-quickstart?tab=readme-ov-file#diagram">diagram on the openmct-quickstart repo on GitHub</a> for a previous version using Apache, NGINX, and Express.js now deprecated.
@@ -28,6 +29,8 @@ OBSOLETED WARNING: Open MCT now runs on Node.js as of 24-10-13. So ignore <a tar
 <img alt="openmct-docker.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728871417/openmct-docker_fg5q1c.png">
 
 <img alt="openmct-components.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728871878/openmct-components_flsu0k.png">
+
+https://www.youtube.com/watch?v=Yotx-l27MiM
 
 
 ## External Interfaces
@@ -120,6 +123,8 @@ There was a demo of Mars Science Laboratory dashboard at:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png"><img alt="openmct-small.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728869690/openmct-small_mjnss5.png"></a>
 
+https://forum.kerbalspaceprogram.com/
+
 "announcement" on the middle-bottom indicate that the dashboard is
 part of a pretend universe of various science fiction fandoms, such as the
 <a target="_blank" href="https://github.com/hudsonfoo/kerbal-openmct
@@ -160,6 +165,10 @@ Lines in the middle-right:
 On the upper-right is a map "Where is Curiosity" with track trace labeled at each waypoint.<br />
 On the lower-right are details of "Atmospheric Pressure" for each time stamp.<br />
 On the far-right is the "INSPECTION" pane to display "PROPERTIES".<br />
+
+
+<a target="_blank" href="https://www.youtube.com/watch?v=cU_Lc6hVV2w&list=PLWAvG5LVeBRVgN-MH8NbRGIRosDzcge3h">
+8 VIDEO playlist: OpenMCT for Engineers 2021</a>
 
 
 ## Generalized Usage
@@ -540,6 +549,8 @@ From the Institute of Aircraft Design TUM Jan 12, 2021:
    &nbsp;
     Run `npm audit` for details.
    ```
+   NOTE: <a target="_blank" href="https://webpack.js.org/concepts/why-webpack/">Webpack</a> is a static module bundler for modern JavaScript applications.
+
 1. Fix:
    ```
    run npm audit --force
@@ -707,3 +718,34 @@ Skip to <a href="#Configure">Configure</a>
 * Step 2. Expose the Telemetry Dictionary
 * Step 3. Historical Telemetry
 * Step 4. Real time Telemetry
+
+https://github.com/jvigliotta
+
+
+## Grafana Performance
+
+https://n8n.io/integrations/grafana/and/nasa/
+Save yourself the work of writing custom integrations for Grafana and NASA and use n8n instead. Build adaptable and scalable Development, Analytics, and Miscellaneous workflows that work with your technology stack. All within a building experience you will love.
+
+https://grafana.com/blog/2016/01/19/grafana-its-rocket-science/
+Grafana- It's Rocket Science
+
+https://www.youtube.com/watch?v=CpHQfwFPvw8
+Grafana in Space: Monitoring Japan's SLIM Moon Lander in Real Time | GrafanaCON 2024 | Grafana
+
+https://grafana.com/blog/2021/07/13/how-astronomers-use-grafana-dashboards-to-read-the-stars-and-their-data-on-the-sofia-airborne-observatory/
+How astronomers use Grafana dashboards to read the stars (and their data) on the SOFIA airborne observatory
+
+https://grafana.com/events/grafanacon/2023/automated-performance-modeling-with-nasa-open-mct-grafana-cloud-k6/
+Automated performance modeling with NASA Open MCT, Grafana Cloud, and k6
+by John Hill @Ames
+   * https://notes.nicolevanderhoeven.com/sources/Presentation/Automated+performance+modeling+with+NASA+Open+MCT+Grafana+Cloud+and+k6
+   * https://www.linkedin.com/posts/linkedjohnhill_automated-performance-modeling-with-nasa-activity-7072719448582881280-_uZB/
+
+https://grafana.com/blog/2023/04/21/how-grafana-helped-a-rocket-engineering-team-break-a-world-record/
+How Grafana helped a rocket engineering team break a world record
+
+https://grafana.com/blog/2023/09/26/celebrating-grafana-10-top-10-oh-my-grafana-dashboard-moments-of-the-decade/
+Celebrating Grafana 10: Top 10 'Oh my Grafana!' dashboard moments of the decade
+
+

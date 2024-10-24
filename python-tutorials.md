@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-30"
-changes: "v025 + CMU & MIT & others :python-tutorials.py"
+date: "2024-10-16"
+changes: "v027 + MIT topics :python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -390,9 +390,46 @@ http://sthurlow.com/python/</a>
 
 ## Universities:
 
-### MIT at EDX.org
+### MIT
 
-<a target="_blank" href="https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-9">
+<a target="_blank" href="https://www.youtube.com/watch?v=xAcTmDO6NTI&list=PLUl4u3cNGP62A-ynp6v6-LGBCzeH3VAQB">
+YouTube Playlist</a>:
+<a target="_blank" href="https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/download/">
+MIT 6.100L Introduction to CS and Programming using Python, Fall 2022</a>
+by Ana Bell using Jupyter
+
+   1. Introduction to CS and Programming Using Python ***
+   2. Strings, Input/Output, and Branching ***
+   3. Iteration ***
+   4. Loops over Strings, Guess-and-Check, and Binary ***
+   5. Floats and Approximation Methods ***
+   6. Bisection Search (FIXED) ***
+   7. Decomposition, Abstraction, and Functions ***
+   8. Functions as Objects ***
+   9. Lambda Functions, Tuples, and Lists ***
+   10. Lists and Mutability (FIXED) ***
+   11. Aliasing and Cloning
+
+   12. List Comprehension, Functions as Objects, Testing, and Debugging (FIXED) ***
+   13. Exceptions and Assertions ***
+   14. Dictionaries ***
+   15. Recursion
+   16. Recursion on Non-numerics ***
+
+   17. Python Classes
+   18. More Python Class Methods
+   19. Inheritance
+   20. Fitness Tracker Object-Oriented Programming Example
+
+   21. Timing Programs and Counting Operations
+   22. Big Oh and Theta ***
+   23. Complexity Classes Examples
+   24. Sorting Algorithms ***
+   25. Plotting
+   26. List Access, Hashing, Simulations, and Wrap-Up
+
+
+Previously, <a target="_blank" href="https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-9">
 MIT's Introduction to Computer Science using Python course 600.1.X</a> Aug 10, 2016 (free or $75 certificate) makes use of Windows and MacOS/Linux. Its major topics:
 
    * <a target="_blank" href="https://www.youtube.com/watch?v=Xwf4DkNlIPA">Welcome</a>
@@ -417,7 +454,7 @@ MIT OpenCourseWare - Intro to CS & Programming Using Python
 ### CMU
 
 <a target="_blank" href="https://academy.cs.cmu.edu/">Carnagie Mellon University</a>'s (in Pittsburg)
-Computer Science Academy has free courses:
+Computer Science Academy has free courses that enhances code.org curriculum:
 
 * <a target="_blank" href="https://academy.cs.cmu.edu/course-info#CS1">"Exploring Programming with Python"</a> is the Lightweight version of CS1 - same interactive fun as CS1, smaller curriculum.  4 UNITS for Out of school programs, Middle school, Camps
 
@@ -1083,8 +1120,24 @@ PE1: Module 3. Boolean Values, Conditional Execution, Loops, Lists and List Proc
 PE1: Module 4. Functions, Tuples, Dictionaries, Exceptions, and Data Processing
 
 ## Others
+
 A sample Python test by Certiport purchased by Pearsonvue.
 Python-ITS303-sample-test.docx
+
+### James Murphy @mCoding
+
+<a target="_blank" href="https://www.mCoding.io/">mCoding.com</a> by
+James Murphy on his <a target="_blank" href="https://www.youtube.com/@mCoding">mCoding YouTube channel</a>
+referencing <a target="_blank" href="https://github.com/mCodingLLC/VideosSampleCode/tree/master/videos">code on his GitHub</a>
+
+### Jake Callahan
+
+<a target="_blank" href="https://www.youtube.com/@JakeCallahan">YouTube channel</a>
+referencing <a target="_blank" href="https://github.com/JacobCallahan/Understanding/tree/master/Python">https://github.com/JacobCallahan/Understanding/tree/master/Python</a>
+
+### Andrew Mallet (theurbanpenguin)
+
+<a target="_blank" href="https://www.youtube.com/@theurbanpenguin">YouTube channel</a>
 
 
 ## More on Python

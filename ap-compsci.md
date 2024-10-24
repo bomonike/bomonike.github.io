@@ -315,6 +315,14 @@ Simulations: <a target="_blank" href="https://gitlab.com/rubenwardy/physics_simu
    <br /><br />
 
 
+## AP CSP Resources
+
+Dale, N., and J. Lewis. Computer Science Illuminated. Boston: Jones and Bartlett Publishers.
+   * <a target="_blank" href="https://www.amazon.com/Computer-Science-Illuminated-Nell-Dale/dp/1284275078/">(2023) 8th Edition $130.97</a>
+   * <a target="_blank" href="https://www.amazon.com/Computer-Science-Illuminated-Nell-Dale/dp/1284155617/">(2019) 7th Edition $93.87</a>
+   * (2016) 6th ed. is in the AP Sample Syllabus #1 from https://apcourseaudit.inflexion.org/start/
+
+
 <a name="SafeComputing"></a>
 
 &nbsp; &nbsp; &nbsp;<strong>A. Practice safe & efficient computing practices</strong>  [Systems] [Impact]
@@ -1742,9 +1750,6 @@ video playlist</a> on cybersecurity
    Week 9 - Flask<br />
    <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@ed66b9b9bb9240f19da6902ce9c358c3/block-v1:HarvardX+CS50+X+type@vertical+block@3c04948dcf1144a88abd3974a0069ec7">Week 10 - Cybersecurity</a><br />
 
-<a target="_blank" href="https://www.youtube.com/watch?v=22BRMz8siIE">VIDEO</a>: CS50 and the AP CSP Curriculum Framework (from 2016)
-
-
 Dr. Malan brings concepts to life <a target="_blank" href="https://www.youtube.com/watch?v=AMiNIjePZlo&t=11m38s">with memorable theatrical explanations</a>, which he has students rank:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1714867871/cs50-evals-2934x1172_sp5cqc.png"><img alt="cs50-evals-2934x1172.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1714867871/cs50-evals-2934x1172_sp5cqc.png"></a>
@@ -1759,6 +1764,12 @@ There are now several CS50 courses:
    * <a target="_blank" href="https://learning.edx.org/course/course-v1:HarvardX+CS50AI+1T2020/">CS50 AI with Python</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=tIfWkN1hqZs">1:39:33 Teaching CS50 with AI</a>
    <br /><br />
+
+Install apps to view the class on <a target="_blank" href="https://apps.apple.com/us/app/cs50/id1631064453">Apple TV</a> and
+<a target="_blank" href="https://play.google.com/store/apps/details?id=edu.harvard.cs50.googletv">Google TV</a>.
+Mobile apps on iPhones are not yet available.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=22BRMz8siIE">VIDEO</a>: CS50 and the AP CSP Curriculum Framework (from 2016)
 
 * Run the website locally:
    ```
@@ -1831,6 +1842,18 @@ There are now several CS50 courses:
    ```
    submit50 slug
    ```
+
+### CS50 CyberSecurity
+
+Video on preserving privacy from CS50 CyberSecurity (1-2 hours each)
+https://www.youtube.com/watch?v=kmJlnUfMd7I&list=PLhQjrBD2T383Cqo5I1oRrbC1EKRAKGKUE&index=1
+* Intro
+* 0 - Security Accounts
+* 1 - Securing Data
+* 2 - Security Systems
+* 3 - Securing Software
+* 4 - Preserving Privacy
+
 
 ### Vendor info
 
@@ -1973,3 +1996,20 @@ Elite universities for computer science in the US:
 * Don't use the same password on multiple accounts - use password manager.
 
 * <a target="_blank" href="https://curiositystream.com/video/1643">Making money in the 21st century</a>
+
+https://grow.google/educators/
+Google CS4HS program (http://cs4hs.com)
+
+http://introcspogil.org
+http://cspogil.org/Python
+https://github.com/ChrisMayfield/cspogil/tree/master/CS0 CS101 uses Python (but not about Python)
+https://github.com/ChrisMayfield/cspogil/tree/master/CS1 about Java
+is among roughly 200 activities have been written for CS,
+including roughly 30 activities for AP CS Principles and 30 activities for CS 1.
+The CS-POGIL website (http://cspogil.org) lists many of POGIL activities, sorted by author, course, etc.
+only a few of these activities have been formally reviewed by The POGIL Project.
+
+
+https://skillshop.exceedlms.com/student/path/1176018
+Google's Generative AI for Educators
+(using ExceedLMS)
