@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-10-19"
-lastchange: "add GIL :acronyms"
+date: "2024-10-24"
+lastchange: "add SCRM FAISS CUDA HNSW :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -325,6 +325,7 @@ comments: true
 *	CTI	=	Cyber Threat Intelligence
 *	CTO	=	Chief Technology Officer
 *	CTS	=	Consul-Terraform Sync	(HashiCorp product)
+*	CUDA	=	Compute Unified Device Architecture (parallel computing platform & API developed by NVIDIA)
 *	CVD	=	Color Vision Deficiency  (aka Color Blindness)
 *	CVE	=	Common Vulnerabilities and Exposures	(identified through the US CISA database)
 *	CVRF	=	Common Vulnerability Reporting Framework (defined by OASIS)
@@ -481,6 +482,7 @@ comments: true
 ### F
 
 *	FaaS	=	Functions as a Service
+*	FAISS	=	<a target="_blank" href="https://github.com/facebookresearch/faiss">Facebook AI Similarity Search</a> (and clustering of dense vectors, implemented in C++ with Python wrappers using CUDA)
 *	FAQ	=	Frequently Asked Questions
 *	FBL	=	Feedback Loop
 *	FCEB	=	Federal Civilian Executive Branch (US government departments and agencies)
@@ -577,7 +579,7 @@ comments: true
 *	HANA	=	High-performance ANalytic Application	(SAP's in-memory column-oriented relational DBMS)
 * HBD = Happy Birth Day
 *	HBI	=	High Business Impact (flag for Azure to add encryption and limit diagnostics collection on sensitive data)
-*	HC	=	HashiCorp
+* HNSW = Hierarchical Navigable Small World (graphs)
 *	HCL	=	HashiCorp Configuration Language
 *	HD	=	High Definition
 *	HDFS	=	Hadoop Distributed File System
@@ -1137,6 +1139,7 @@ comments: true
 *	SCIM	=	System for Cross-Domain Identity Management (IT security)
 *	SCM	=	Source Control Manager	(such as GitHub)
 *	SCP	=	Service Control Policy (in AWS to govern the use of other IAM policies)
+* SCRM = Cyber Supply Chain Risk Management (defined by NIST)
 *	SCSS	=	Sidecar Container Security Stack
 * SCT	=	Schema Conversion Tool (AWS)
 *	SDE	=	Standardized Development Environment
