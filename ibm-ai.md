@@ -1,11 +1,11 @@
 This is <a target="_blank" href="https://bomonike.github.io/ibm-ai/">https://bomonike.github.io/ibm-ai</a>
 
-<!-- "v002 + openscale :ibm-ai.md"
+<!-- "v003 + hr openscale :ibm-ai.md"
 -->
 
 ## IBM ID, IBM Cloud, Watson Studio
 
-<a target="_blank" href="https://www.coursera.org/videos/ibm-ai-workflow-business-priorities-data-ingestion/rBnH2?query=ibm&page=7&sortBy=BEST_MATCH&authProvider=mckinsey&source=search">Setup</a>
+<a target="_blank" href="https://www.coursera.org/videos/ibm-ai-workflow-business-priorities-data-ingestion/rBnH2?query=ibm&page=7&sortBy=BEST_MATCH&authProvider=mckinsey&source=search">Setup</a>:
 
 1. IBMID
 1. Download
@@ -13,8 +13,7 @@ This is <a target="_blank" href="https://bomonike.github.io/ibm-ai/">https://bom
 
 <hr />
 
-https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/ibm-ai-product-manager?authProvider=mckinsey&source=search
-IBM AI Product Manager Professional Certificate
+<a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/ibm-ai-product-manager?authProvider=mckinsey&source=search">IBM AI Product Manager Professional Certificate</a>
 consists of 10 courses which Coursera estimates to take 3 months.
 Created by SkillUp EdTech
 
@@ -27,6 +26,8 @@ Created by SkillUp EdTech
 * 6 hr <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/learn/generative-ai-foundation-models-and-platforms?specialization=ibm-ai-product-manager">Generative AI: Foundation Models and Platforms</a>
 
 
+
+<hr />
 
 <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/specializations/generative-ai-for-cybersecurity-professionals?source=search">IBM Generative AI for Cybersecurity Professionals Specialization</a>
 
@@ -71,6 +72,8 @@ consists of 10 courses which Coursera estimates to take 6 months.
 
 10. 11 hr Software Developer Career Guide and Interview Preparation
 
+<hr />
+
 https://www.coursera.org/videos/building-gen-ai-powered-applications/3isJg?query=ibm&page=8&sortBy=BEST_MATCH&authProvider=mckinsey&source=search
 Understanding Watsonx.ai
 
@@ -100,6 +103,8 @@ Building Voice Assistant with GPT-3 and IBM Watson
 * 2 hr <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/learn/ibm-ai-ladder-framework?specialization=ibm-ai-foundations-for-business">The AI Ladder: A Framework for Deploying AI in your Enterprise</a>
 
 
+<hr />
+
 <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/specializations/ibm-ai-workflow?authProvider=mckinsey&source=search">IBM AI Enterprise Workflow Specialization</a>
 by <a target="_blank" href="https://www.linkedin.com/in/markjgrover/">Mark J Grover</a> and
 <a target="_blank" href="https://www.linkedin.com/in/raylopez/">Ray Lopez, Ph.D.</a>
@@ -112,23 +117,28 @@ by <a target="_blank" href="https://www.linkedin.com/in/markjgrover/">Mark J Gro
 6. 17 hr AI Workflow: AI in Production
     1. 04 hr Feedback loops and Monitoring
     2. 03 hr Hands on with Openscale and Kubernetes
-       * <a target="_blank" href="https://www.coursera.org/videos/ibm-ai-workflow-ai-production/uVr0I?query=ibm&page=9&sortBy=BEST_MATCH&authProvider=mckinsey&source=search">Cartoon: Unleashing the Full Power of AI with IBM Watson OpenScale</a>
+       * <a target="_blank" href="https://www.coursera.org/videos/ibm-ai-workflow-ai-production/uVr0I?query=ibm&page=9&sortBy=BEST_MATCH&authProvider=mckinsey&source=search">Marketing cartoon video: Unleashing the Full Power of AI with IBM Watson OpenScale</a>
     3. 03 hr Capstone: Pulling it all together (Part 1)
     4. 05 hr Capstone: Pulling it all together (Part 2)
 
-## OpenScale
 
-https://www.perplexity.ai/search/what-is-openscale-VxyaD9GeTp68roEc14.VAg
-aims to foster trust and transparency in AI systems, making it easier for businesses to adopt and scale AI technologies across their operations.
-
-OpenScale is designed to work with AI models regardless of where they are deployed - on-premises, in the cloud, or in hybrid environments. It can be integrated with various AI platforms and tools, including Amazon SageMaker, demonstrating its flexibility and openness.
-
-
-
-The 11 instructor IBM Skills Network Team consists of:
+IBM Skills Network Team Instructors are:
 * Rav Ahuja
 * Antonio Cangiano
 * Upkar Lidder
 * Ramesh Sannareddy
 * Bethany Hudnutt
 * Ramanujam Srinivasan
+
+
+## OpenScale
+
+<a target="_blank" href="https://www.perplexity.ai/search/what-is-openscale-VxyaD9GeTp68roEc14.VAg">What is OpenScale</a>
+aims to foster trust and transparency in AI systems, making it easier for businesses to adopt and scale AI technologies across their operations.
+
+OpenScale is designed to work with AI models regardless of where they are deployed - on-premises, in the cloud, or in hybrid environments.
+
+It can be integrated with various AI platforms and tools, including Amazon SageMaker, demonstrating its flexibility and openness.
+
+
+
