@@ -1,6 +1,6 @@
 This is <a target="_blank" href="https://bomonike.github.io/ibm-ai/">https://bomonike.github.io/ibm-ai</a>
 
-<!-- ibm-ai.md
+<!-- "v002 + openscale :ibm-ai.md"
 -->
 
 ## IBM ID, IBM Cloud, Watson Studio
@@ -71,6 +71,14 @@ consists of 10 courses which Coursera estimates to take 6 months.
 
 10. 11 hr Software Developer Career Guide and Interview Preparation
 
+https://www.coursera.org/videos/building-gen-ai-powered-applications/3isJg?query=ibm&page=8&sortBy=BEST_MATCH&authProvider=mckinsey&source=search
+Understanding Watsonx.ai
+
+https://www.coursera.org/videos/building-gen-ai-powered-applications/TnWsO?query=ibm&page=8&sortBy=BEST_MATCH&authProvider=mckinsey&source=search
+Building Voice Assistant with GPT-3 and IBM Watson
+
+
+<hr />
 
 <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/ai-engineer?authProvider=mckinsey&source=search">IBM AI Engineering Professional Certificate</a>
 
@@ -104,6 +112,7 @@ by <a target="_blank" href="https://www.linkedin.com/in/markjgrover/">Mark J Gro
 6. 17 hr AI Workflow: AI in Production
     1. 04 hr Feedback loops and Monitoring
     2. 03 hr Hands on with Openscale and Kubernetes
+       * <a target="_blank" href="https://www.coursera.org/videos/ibm-ai-workflow-ai-production/uVr0I?query=ibm&page=9&sortBy=BEST_MATCH&authProvider=mckinsey&source=search">Cartoon: Unleashing the Full Power of AI with IBM Watson OpenScale</a>
     3. 03 hr Capstone: Pulling it all together (Part 1)
     4. 05 hr Capstone: Pulling it all together (Part 2)
 
