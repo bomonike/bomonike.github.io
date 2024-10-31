@@ -10,19 +10,34 @@ This is <a target="_blank" href="https://bomonike.github.io/ibm-ai/">https://bom
 1. IBMID
 1. Download
 
+## IBM Skills Network Labs
+
+Hands-on labs use the IBM Skills Network Labs (SN Labs)</a> hosting virtual lab environments.
+Upon clicking "Launch App" your Username and Email is passed to Skills Network Labs.
+
+## IBM Watsonx
+
+Watsonx is an AI and data platform with a set of AI assistants designed to help you scale and accelerate the impact of AI with trusted data across your business.
+
+The core components include a studio for new foundation models, generative AI, and machine learning; a fit-for-purpose data store built on an open data lakehouse architecture; and a toolkit, to accelerate AI workflows that are built with responsibility, transparency, and explainability.
+
+The Watsonx AI assistants empower individuals in your organization to do work without expert knowledge across a variety of business processes and applications, including automating customer service, generating code, and automating key workflows in departments such as HR.
+
+IBM Watson® Speech Libraries for Embed is a set of containerized text-to-speech and speech-to-text libraries designed to offer our IBM partners greater flexibility to infuse the best of IBM Research® technology into their solutions. These technologies allow the assistant to communicate with users through voice input and output.
+
 
 <hr />
 
 <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/ibm-ai-product-manager?authProvider=mckinsey&source=search">IBM AI Product Manager Professional Certificate</a>
 consists of 10 courses which Coursera estimates to take 3 months.
-Created by SkillUp EdTech
+Created by SkillUp EdTech.
 
 1. 13 hr Product Management: An Introduction
 2. 15 hr Product Management: Foundations & Stakeholder Collaboration
 3. 18 hr Product Management: Initial Product Strategy and Plan
 4. 18 hr Product Management: Developing and Delivering a New Product
 *  07 hr Product Management: Building AI-Powered Products
-
+* "Generative AI:" courses in the next
 * 6 hr <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/learn/generative-ai-foundation-models-and-platforms?specialization=ibm-ai-product-manager">Generative AI: Foundation Models and Platforms</a>
 
 
@@ -31,12 +46,14 @@ Created by SkillUp EdTech
 
 <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/specializations/generative-ai-for-cybersecurity-professionals?source=search">IBM Generative AI for Cybersecurity Professionals Specialization</a>
 
+<em>Same as others:</em>
 * 06 hr Generative AI: Introduction and Applications
 * 07 hr Generative AI: Prompt Engineering Basics
 
 * 09 hr <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/learn/generative-ai-boost-your-cybersecurity-career?specialization=generative-ai-for-cybersecurity-professionals">Generative AI: Boost Your Cybersecurity Career</a>
 
 * <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/learn/ibm-cybersecurity-analyst-assessment?authProvider=mckinsey&source=search">Practice IBM Cybersecurity Analyst Assessment</a> exams CompTIA Security+ and CompTIA CySA+ exam-ready
+
 
 <hr />
 
@@ -45,12 +62,14 @@ consists of 10 courses which Coursera estimates to take 6 months.
 
 1. 14 hr Introduction to Software Engineering
 2. 13 hr Introduction to Artificial Intelligence (AI)
+   * <a target="_blank" href="https://www.coursera.org/videos/introduction-to-ai/EthVC?query=ai%20&source=search">AI Terminologies and Concepts</a>
+
 3. 06 hr Generative AI: Introduction and Applications
 4. 07 hr Generative AI: Prompt Engineering Basics
 
 5. 10 hr Introduction to HTML, CSS, & JavaScript
 
-6. 25 hr Python for Data Science, AI & Development - by <a target="_blank" href="https://www.linkedin.com/in/joseph-s-50398b136/">Joseph Santarcangelo</a>
+6. 25 hr <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/learn/python-for-applied-data-science-ai?authProvider=mckinsey&source=search">Python for Data Science, AI & Development</a> - by <a target="_blank" href="https://www.linkedin.com/in/joseph-s-50398b136/">Joseph Santarcangelo</a>
     1. 2 hr Python Basics (Jupyter, Types, Expressions, Variables, String Operations)
     2. 3 hr Python Data Structures (Lists, Tuples, Dictionaries, Sets)
     3. 6 hr Python Programming Fundamentals (Conditions, Branching, Loops, Exception Handling, Objects and Classes)
@@ -59,13 +78,16 @@ consists of 10 courses which Coursera estimates to take 6 months.
 
 7. 13 hr Developing AI Applications with Python and Flask
 
-8. 13 hr Building Generative AI-Powered Applications with Python - by Sina Nazeri
+
+   <a name="BuildingAIPython"></a>
+
+8. 13 hr <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/learn/building-gen-ai-powered-applications?authProvider=mckinsey&source=search">Building Generative AI-Powered Applications with Python</a> - by <a target="_blank" href="https://www.linkedin.com/in/sina-nazeri/">Sina Nazeri</a>
     1. 2 hr Image Captioning with Generative AI
     2. 2 hr Create Your Own ChatGPT-Like Website
     3. 1 hr Create a Voice Assistant
     4. 1 hr Generative AI-Powered Meeting Assistant
     5. 1 hr Summarize Your Private Data with Generative AI and RAG
-    6. 2 hr Babel Fish (Universal Language Translator) with LLM and STT TTS
+    6. 2 hr <a target="_blank" href="https://cf-courses-data.static.labs.skills.network/IBMSkillsNetwork-GPXX0PPIEN/labs/Babel_Fish_with_LLM_STT_TTS.md.html">Babel Fish</a> (Universal Language Translator) with LLM and STT TTS (Speech To Text, Text To Speech)
     7. 1 hr Build an AI Career Coach
 
 9. 17 hr Generative AI: Elevate your Software Development Career
@@ -74,11 +96,9 @@ consists of 10 courses which Coursera estimates to take 6 months.
 
 <hr />
 
-https://www.coursera.org/videos/building-gen-ai-powered-applications/3isJg?query=ibm&page=8&sortBy=BEST_MATCH&authProvider=mckinsey&source=search
-Understanding Watsonx.ai
+<a target="_blank" href="https://www.coursera.org/videos/building-gen-ai-powered-applications/3isJg?query=ibm&page=8&sortBy=BEST_MATCH&authProvider=mckinsey&source=search">Understanding Watsonx.ai</a>
 
-https://www.coursera.org/videos/building-gen-ai-powered-applications/TnWsO?query=ibm&page=8&sortBy=BEST_MATCH&authProvider=mckinsey&source=search
-Building Voice Assistant with GPT-3 and IBM Watson
+<a target="_blank" href="https://www.coursera.org/videos/building-gen-ai-powered-applications/TnWsO?query=ibm&page=8&sortBy=BEST_MATCH&authProvider=mckinsey&source=search">Building Voice Assistant with GPT-3 and IBM Watson</a>
 
 
 <hr />
@@ -121,6 +141,24 @@ by <a target="_blank" href="https://www.linkedin.com/in/markjgrover/">Mark J Gro
     3. 03 hr Capstone: Pulling it all together (Part 1)
     4. 05 hr Capstone: Pulling it all together (Part 2)
 
+
+<hr />
+
+<a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/ibm-applied-devops-engineering?authProvider=mckinsey&source=search">IBM Applied DevOps Engineering Professional Certificate</a>
+by Upkar Lidder, John Rofrano, Alex Parker, Ramanujam Srinivasan
+
+1. 09 hr Introduction to DevOps
+2. 11 hr Introduction to Agile Development and Scrum
+3. 17 hr Introduction to Containers w/ Docker, Kubernetes & OpenShift
+4. 14 hr Application Development using Microservices and Serverless
+5. 19 hr Introduction to Test and Behavior Driven Development
+6. 12 hr Continuous Integration and Continuous Delivery (CI/CD)
+7. 17 hr Application Security for Developers and DevOps Professionals
+8. 16 hr Monitoring and Observability for Development and DevOps
+9. 18 hr DevOps Capstone Project
+
+
+<hr />
 
 IBM Skills Network Team Instructors are:
 * Rav Ahuja

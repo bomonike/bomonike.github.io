@@ -342,3 +342,99 @@ M3 screw connectors for custom 3D or laser-cutter designs.
 
 Servo, I2C Grove, and I2C Qwiic connectors
 Add motors for controlling movement and robotic arms, or integrate extra sensors
+
+## Ranka Emika Robot
+
+ https://www.franka.de/co is based in Munchin (Munich), Germany
+
+https://www.youtube.com/watch?v=bXo68UFNyhk
+Torque sensors in all seven axes enable the arm to manipulate delicate objects such as jewlery.
+
+https://www.youtube.com/watch?v=MI4QqJY6nJA
+The $700 MyCobot Pi robot arm from Elephant Robotic has 6 DoF.
+
+It's driven by a Raspberry Pi.
+
+## Robotic arms
+
+https://www.youtube.com/watch?v=q35VVfmouX8
+Should you Buy a Robotic Arm?
+by Austen Paul
+
+https://www.youtube.com/watch?v=e3TNaIyTAnY
+I Made a Robot Arm to Hold My Camera [$500]
+by 3DprintedLife
+
+## Alt Keyboard Builds
+
+https://www.youtube.com/watch?v=rfJUuSfouM4
+What the heck is a $279 Corne 42 MX split keyboard? Made my own 36-key.
+by Adam Learns https://adamlearns.live/
+* Uses Layers like on mobile phones
+* https://github.com/Adam13531/crkbd/blob/choc-v3/README.md
+* https://github.com/Adam13531/qmk_firmware/blob/master/keyboards/crkbd/keymaps/adam/keymap.c
+
+Lily58
+
+https://www.youtube.com/watch?v=fU2H1dTXcJU
+Review: Sofle Split Mechanical Keyboard – build, encoders, choc switches. Full Review.
+by Ben Frain
+
+
+https://www.youtube.com/watch?v=rvM2BthjEI4
+Building My Endgame Split Keyboard from Scratch
+* Totem by GEISTGEIST: https://github.com/GEIGEIGEIST/TOTEM
+* Totem (Tenting version) by Bert Plasschaert: https://github.com/BertPlasschaert/TOTEM-Tenting
+* Sculpted KLP Lamé Keycaps printed in resin by braindefender: https://github.com/braindefender/KLP-Lame-Keycaps
+* $25.99 Soldering iron: https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/
+* Soldering tip cleaner kit: https://geni.us/xQ0L1c (Amazon)
+* Batteries: https://www.ebay.de/itm/256408901266
+* Keymap Editor by Nick Coutsos: https://nickcoutsos.github.io/keymap-editor/
+* [4:1] $9.90 Seeed Studio XIAO Microcontroller
+
+https://www.youtube.com/watch?v=PhxM8o__9Xo
+My Journey From Mechanical to Ergonomic Keyboards | The Story of Kaly
+
+https://www.youtube.com/watch?v=h_ex-oMVOrI
+Building Dactyl Cygnus
+by Juha Kauppinen
+
+
+https://www.youtube.com/watch?v=N_mZEbJmKYg
+Prebuilt Split Keyboards Aren't Overpriced
+by If Coding Were Natural
+
+https://www.youtube.com/watch?v=fU2H1dTXcJU
+Review: Sofle Split Mechanical Keyboard – build, encoders, choc switches. Full Review.
+Ben Frain
+
+https://www.youtube.com/watch?v=IJxuzyO9b8M
+How to Build a Custom Keyboard From Scratch | Part 1 Layout and Design
+by Casual Coders
+
+https://www.youtube.com/watch?v=EOaPb9wrgDY
+Try the keyboards for yourself: https://adumb-codes.github.io
+Code for all my videos is available at: https://github.com/sponsors/adumb-codes/
+
+https://www.youtube.com/watch?v=riqmW3UHqPY
+My favorite ergo split keyboard so far
+EIGA
+
+https://www.youtube.com/watch?v=7UXsD7nSfDY
+I Built My Dream Keyboard from Absolute Scratch
+Christian Selig
+
+https://www.youtube.com/watch?v=Ong_-2G9RDM
+the endgame keyboard
+by Joshua Blais
+
+https://www.youtube.com/watch?v=l5kAx08Iom4
+How to Build a Wireless Lily58 Keyboard
+Joe Scotto
+
+
+## AI Agent
+
+https://www.youtube.com/watch?v=WxcBEXkQoSE
+Creating the MOST POWERFUL AI Agent for Your Second Brain
+by Logan Hallucinates

@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-10-16"
-changes: "v027 + MIT topics :python-tutorials.py"
+date: "2024-10-30"
+changes: "v028 + Mr P Solver on Youtube :python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -1139,6 +1139,20 @@ referencing <a target="_blank" href="https://github.com/JacobCallahan/Understand
 
 <a target="_blank" href="https://www.youtube.com/@theurbanpenguin">YouTube channel</a>
 
+### Luke Polson (Mr P Solver)
+
+Luke Polson is a PhD candidate in medical physics at the University of British Columbia studying "medical imaging and tomographic image reconstruction".
+He specializes on programming for "STEM" on his <a target="_blank" href="https://www.youtube.com/@MrPSolver">Mr. P Solver YouTube channel</a>, which provides thorough step-by-step explanations showing what's in <a target="_blank" href="https://github.com/lukepolson/youtube_channel/blob/main/Python%20Tutorial%20Series/matplotlib_essentials.ipynb">his GitHub</a> of Python .pynb code that runs in Jupyter. His <a target="_blank" href="https://www.udemy.com/course/python-stem-essentials/?couponCode=KEEPLEARNING">"Python STEM Essentials" $60 course on Udemy</a> adds exercises and projects on modeling.
+
+
+### Greg Hogg
+
+Greg Hogg specializes on solutions to Leetcode challenges in Python, C, Java, and JavaScript at
+https://github.com/gahogg/Leetcode-Solutions/tree/main
+which he explains at
+https://www.youtube.com/@GregHogg
+
+He offers Master Data Structures & Algorithms for FREE at https://AlgoMap.io/
 
 ## More on Python
 
