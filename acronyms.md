@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-10-28"
-lastchange: "add v1 to SLSA :acronyms"
+date: "2024-11-08"
+lastchange: "add DSL :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -398,7 +398,7 @@ comments: true
 *	DSC	=	Digital Signature Algorithm	(algorithm for signatures)
 *	DSC	=	Desired State Configuration (declarative DevOps)
 *	DSL	=	Domain-Specific Language (used to control Apache Kafka stream processing)
-*	DSL	=	Domain-Specific Language (used to control Apache Kafka stream processing)
+*	DSL	=	Digital Subscriber Line
 * DSP = Digital Signal Processing
 * DSSE = Dead Simple Signing Envelope (signing methods and formats used by Secure Systems Lab)
 *	DSSS	=	Direct-Sequence Spread Spectrum
@@ -983,7 +983,7 @@ comments: true
 *	PIO	=	Programmable Input Output (An Arduino feature to create hardware interfaces using GP IO pins)
 * PIOPS	=	Provisioned Input Output Operations Per Second
 * PIR = Passive Infra-Red (electronic sensor)
-*	PIV	=	Personal Identity Verification
+*	PIV	=	Personal Identity Verification (uses tokens like YubiKeys)
 * PKE	=	Public Key Encryption
 *	PKI	=	Public Key Infrastructure	(manages cryptographic certificates)
 *	PM	=	Product Management/Manager
