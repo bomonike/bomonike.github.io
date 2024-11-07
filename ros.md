@@ -1,6 +1,7 @@
 ---
 layout: post
-date: "2024-09-21"
+date: "2024-11-01"
+change: "v003 + Thoughtworks Tech Radar :ros.md"
 file: "ros"
 title: "ROS (Robotic Operating System)"
 excerpt: "Learn the operating system for controlling simple robots"
@@ -59,6 +60,13 @@ But in December 2022, the business of OSRC and OSRC-SG was acquired by <a target
 
 URDF (Unified Robot Description Format) is a popular code-independent, human-readable format to describe the geometry of robots and their cells. It's used for collision checking and dynamic path planning. Think of it like a textual CAD description: “part-one is 1 meter left of part-two and has the following triangle-mesh for display purposes.”
 
+## Thoughtworks Tech Radar
+
+The influential October, 2024 publication<br />
+https://www.thoughtworks.com/radar/languages-and-frameworks/summary/ros-2
+says:
+
+"ROS 2 is an open-source framework designed for the development of robotic systems. It provides a set of libraries and tools that enable the modular implementation of applications, covering functions like inter-process communication, multithreaded execution and quality of service. ROS 2 builds on its predecessor by providing improved real-time capabilities, better modularity, increased support for diverse platforms and sensible defaults. ROS 2 is gaining traction in the automotive industry; its node-based architecture and topic-based communication model are especially attractive for manufacturers with complex, evolving in-vehicle applications, such as autonomous driving functionality."
 
 ## ROS Specs
 
@@ -438,3 +446,4 @@ Joe Scotto
 https://www.youtube.com/watch?v=WxcBEXkQoSE
 Creating the MOST POWERFUL AI Agent for Your Second Brain
 by Logan Hallucinates
+

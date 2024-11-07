@@ -1152,7 +1152,30 @@ https://github.com/gahogg/Leetcode-Solutions/tree/main
 which he explains at
 https://www.youtube.com/@GregHogg
 
-He offers Master Data Structures & Algorithms for FREE at https://AlgoMap.io/
+He offers "Master Data Structures & Algorithms" for FREE at
+<a target="_blank" href="https://AlgoMap.io/">AlgoMap.io</a>
+which provides challenges but not solutions:
+1. Arrays & Strings
+1. Hashmaps & Sets
+1. Pointers
+1. Stacks
+1. Linked Lists
+1. Binary Search
+1. Sliding Window
+1. Trees
+1. Heaps
+1. Recursive Backtracking
+1. Graphs
+1. Dynamic Programming
+
+He also offers "Learn Python, Data Science & AI" at  partner site
+<a target="_blank" href="https://www.mlnow.ai/">mlnow.ai</a>
+
+####
+
+ code for the O'Reilly Live Training, presented by Arianne Dee.
+ https://github.com/ariannedee/python-data-structs
+
 
 ## More on Python
 
