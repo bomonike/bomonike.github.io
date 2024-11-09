@@ -1,4 +1,6 @@
 <!-- genai-ide.md
+
+git commit -m"v002 + perpexity :genai-ide.md"
 -->
 
 Here are my notes about using GenAI to help with programming.
@@ -24,7 +26,11 @@ B. <strong>Comment code.</strong> LLMs are great at gleaning conceptual relation
 
 C. <strong>Discover new functions.</strong> Individual humans cannot hope to know about as many programs as was sucked into LLMs. So LLMs can help us identify what we don't know, but should know.
 
-   perplexity.ai is a search engine that, unlike Google.com which presents websites found, uses LLM summary features to combine search results in presenting information consolidated from several websites. Perpexity.ai provides a link to the website where each item was found. On the top right pane are images found within various websites.
+   perplexity.ai is a search engine that, unlike Google.com which presents websites found, uses LLM summary features to combine search results from several websites and presenting a consolidated list.
+
+   Example: "List useful projects that help high school students manage their time better."
+
+   Perpexity.ai provides a link to the website where each item was found. On the top right pane are images found within various websites.
 
 D. <strong>Write test cases,</strong> test code, and test data. Give LLMs a chance to reduce human drugery.
 
