@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-11-08"
-lastchange: "add DSL :acronyms"
+date: "2024-11-07"
+lastchange: "add SLM DSL DDR SDRAM :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -356,6 +356,7 @@ comments: true
 *	DDL	=	Data Definition Language (to CREATE, ALTER, DROP SQL data)
 *	DDoS	=	Distributed Denial of Service Attack
 *	DDPM	=	Denoising Diffusion Probabilistic Models (Generative AI)
+* DDR4 = Double Data Rate generation 4 (at 2133-3200 MT/s, a type of SDRAM that each generation doubles the data transfer rate of traditional SDR memory, at lower voltage of 1.2V)
 *	DEI	=	Diversity + Equity + Inclusion
 *	DEK	=	Data Encryption Key	(secret generated from Customer Managed keys to protect data)
 *	DES	=	Digital Encryption Standard	(56 bits)
@@ -1147,6 +1148,8 @@ comments: true
 *	SDN	=	Software-Defined Networking	(used by AWS - an advancement to BGP used on public networks)
 *	SDLC	=	System Development Life Cycle
 *	SDMN	=	Software-defined Mobile Network (for SDN)
+* SDR = Single Data Rate (memory)
+* SDRAM = Synchronous Dynamic Random Access Memory
 *	SDP	=	Software Defined Perimeter
 *	SEB	=	Secure Enterprise Browsers
 *	SEC	=	Security and Exchange Commission (regulates US financial markets)
@@ -1171,6 +1174,7 @@ comments: true
 *	SLA	=	Service Level Agreement
 *	SLE	=	Single Loss Expectancy
 *	SLI	=	Service Level Indicator
+*	SLM	=	Small Language Model
 *	SLO	=	Service Level Objective
 * SLR	=	Service Linked Role (in IAM for Amazon Lightsail)
 *	SLSA	=	Supply chain Levels for Software Artifacts	(<a target="_blank" href="https://slsa.dev/spec/">framework</a> of standards and controls for a secure supply chain to build secure resilient software)
