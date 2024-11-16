@@ -1,6 +1,7 @@
 ---
 layout: post
 date: "2024-11-15"
+change: "v002 + icon :copilots.md"
 file: "copilots"
 title: "Copilots"
 excerpt: "More than automcomplete on steroids - AI tools that provide helps you write code and other tricks."
@@ -27,33 +28,81 @@ On an airplane, a "co-pilot" (aka first officer) takes over when the captain goe
 
 But in the world of software development, a "co-pilot" is a <strong>collaborator</strong> who works like a <strong>pair programming</strong> session when two people are working on the same code at the same time.
 
-https://github.com/features/copilot
+CoPilots leverage the <strong>context</strong> of you're typing to provide <strong>suggestions</strong> that help you write code faster.
 
-   * As you type, it provides suggestions for what you might want to do next, such as "autofilling" repetitive "boilerplate" code.
-   * When you type a function, it separates the different words of a concatenated function name.
+* Code Completion: As you type, it provides suggestions for what you might want to do next, such as "autofilling" repetitive "boilerplate" code.
+* When you type a function, it separates the different words of a concatenated function name.
 
-   * Show alternatives ways to code
-   * Explain code (in English)
-   * Generate RegEx code when presented with data
-   * Convert descriptions of colors into hex codes
-   * Turn comments (natural language) into runnable code
-   * Translate one language to others (* Duolingo uses GPT-3 to correct grammar)
-   <br /><br />
+* Show alternatives ways to code
+* Explain code (in English)
+* Generate RegEx code when presented with data
+* Convert descriptions of colors into hex codes
+
+* Turn comments (natural language) into runnable code
+* Translate one language to others (Duolingo uses GPT-3 to correct grammar)
+<br /><br />
 
 Big tech companies have been working to create AI capabilities: Microsoft, Google, OpenAI, Anthropic, and others.
 
-GitHub Copilot uses "generative AI" into an editor extension that suggests code in real-time.
-See my explanation of Generative AI at <a target="_blank" href="https://wilsonmar.github.io/genai">https://wilsonmar.github.io/genai</a>
+- [Noi](https://github.com/lencx/Noi)
+- [ChatGPT clone](https://github.com/lencx/ChatGPT)
+- [LLMLingua](https://github.com/microsoft/LLMLingua)
+- [Perplexity](https://www.perplexity.ai/)
+- [Open Interpreter](https://www.openinterpreter.com/)
+- [Backplain](https://backplain.com/)
+
+## Cursor AI Code Editor
+
+For $20/month, $40/mo for OpenAI zero-data retention
+https://www.cursor.com/pricing
+from https://deepgram.com/ai-apps/cursor
+Cursor is a AI-first code editor designed for pair-programming. It provides features like chat, code generation, editing assistance, and debugging support. With the ability to understand your codebase, Cursor offers real-time suggestions and can generate code snippets based on your instructions. It integrates with popular code editors and is compatible with vscode extensions.
+
+<a target="_blank" href="https://medium.com/jonathans-musings/ai-and-the-future-of-coding-43caad31c3d3">Review</a>
+
+## AWS CodeWhisperer
+
+Amazon Q (for JetBrains, Visual Studio (VS) Code, Visual Studio, macOS Command Line)
+is a chatbot developed by Amazon for enterprise use. Based on both Amazon Titan and GPT generative artificial intelligence, it was announced on November 28, 2023. It is able to help troubleshoot issues in cloud apps or group chats, or summarize documents. As of November 2023, it costs $20 per month.
 
 
 ## Microsoft/GitHub Copilot
+
+   * https://github.com/features/copilot
+   * https://github.blog
+
+GitHub Copilot uses "generative AI" into an editor extension that suggests code in real-time.
+See my explanation of Generative AI at <a target="_blank" href="https://wilsonmar.github.io/genai">https://wilsonmar.github.io/genai</a>
 
 Microsoft funded OpenAI to create GPT-3, a language model used to generate complex text from complex queries. OpenAI's <strong>Codex</strong> translates natural language into programming code. GPT-3 (Generative Pre-trained Transformer 3&4) uses large models created using Deep Learning techniques to produce human-link text.
 
 https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/
 
-- [Blog](https://github.blog/)
+GitHub Copilot uses the <strong>OpenAI (foundational) Codex</strong> to suggest code and entire functions in real-time.<a href="#[1]">[1]</a>
 
+Microsoft co-opted the word "Copilot" as a brand name for AI tools that Microsoft has embedded in its line of products:
+
+   * Visual Studio Code (VS Code) text editor provides prompts, as "AI pair programming"
+   * Outlook emails
+   * Calendar entries
+   * OneNote notes
+   * OneDrive files
+   * Powerpoint presentations
+   * LinkedIn profiles, messages, recommedation, etc.
+   * LinkedIn Learning course content
+   * GitHub code repositories
+   <br /><br />
+
+Microsoft's AI is eerily smart becuase it knows your user metadata from all the above apps Microsoft has been saving in its <strong>Microsoft Graph</strong> database that combines email, calendar, contacts, and files into a single GraphQL database.
+
+WARNING: For a long time, Microsoft, Google, Facebook, etc. are always listening. It's always watching. It's always learning. It's always recording. It's always saving. It's always sharing. It's always spying. It's always tracking. It's always analyzing. It's always predicting. It's always profiling. It's always targeting.
+
+CoPilots combines:
+
+   * what it "knows" about you with
+   * what it knows about programming mechanics with
+   * what it knows about the "domains" manipulatable using code.
+   <br /><br />
 
 ### Copilot Certification
 
@@ -150,7 +199,7 @@ If you have a student or educator email address, get Enterprise free:
 
 1. Make the Status bar appear in View > Appearance.
 
-
+### Keyboard shortcuts
 
 <a target="_blank" href="https://code.visualstudio.com/docs/copilot/copilot-vscode-features">Cheatsheet:GitHub Copilot in VS Code</a>
 
@@ -166,45 +215,14 @@ Type @ in chat or select to view the list of chat participants, which are domain
 Example: @workspace how is auth implemented?
 
 
-
-
 <a target="_blank" href="https://github.com/timothywarner/copilot-ai">https://github.com/timothywarner/copilot-ai</a>
 
 - [Trust Center](https://resources.github.com/copilot-trust-center/)
 - [GitHub Next](https://githubnext.com/)
 
 
-GitHub Copilot uses the <strong>OpenAI (foundational) Codex</strong> to suggest code and entire functions in real-time.<a href="#[1]">[1]</a>
 
-Microsoft co-opted the word "Copilot" as a brand name for AI tools that Microsoft has embedded in its line of products:
-
-   * Visual Studio Code (VS Code) text editor provides prompts, as "AI pair programming"
-   * Outlook emails
-   * Calendar entries
-   * OneNote notes
-   * OneDrive files
-   * Powerpoint presentations
-   * LinkedIn profiles, messages, recommedation, etc.
-   * LinkedIn Learning course content
-   * GitHub code repositories
-   <br /><br />
-
-Microsoft's AI is eerily smart becuase it knows your user metadata from all the above apps Microsoft has been saving in its <strong>Microsoft Graph</strong> database that combines email, calendar, contacts, and files into a single GraphQL database.
-
-WARNING: For a long time, Microsoft, Google, Facebook, etc. are always listening. It's always watching. It's always learning. It's always recording. It's always saving. It's always sharing. It's always spying. It's always tracking. It's always analyzing. It's always predicting. It's always profiling. It's always targeting.
-
-CoPilots combines:
-
-   * what it "knows" about you with
-   * what it knows about programming mechanics with
-   * what it knows about the "domains" manipulatable using code.
-   <br /><br />
-
-CoPilots leverage the <strong>context</strong> of you're typing to provide <strong>suggestions</strong> that help you write code faster.
-
-
-
-## GithubNext.com
+### GithubNext.com
 
 GitHub Copilot X is Microsoft's vision for the future of AI-powered software development adopting OpenAI's newest GPT-4 models.
 
@@ -259,7 +277,7 @@ GitHub Copilot X is Microsoft's vision for the future of AI-powered software dev
     1. TODO: VPN Proxy support via self-signed certificates
     <br /><br />
 
-    ### Each user: Enable GitHub Copilot as VS Code extension
+    Each user: Enable GitHub Copilot as VS Code extension:
 
 1.  Install VSCode using my instructions at
 
@@ -313,7 +331,7 @@ https://github.com/skills/copilot-codespaces-vscode
 
 <hr />
 
-## Security Copilot
+### Security Copilot
 
 <a target="_blank" href="https://aka.ms/SecurityCopilot">Microsoft Security Copilot at https://aka.ms/SecurityCopilot</a>
 is an AI assistant for threat/vulnerability investigation and improving security posture.
@@ -329,7 +347,6 @@ It can reverse-engineer a script and generates a flowchart to explain what it do
 
 In a typical incident, this boost translates into gains in the quality of detection, speed of response and ability to strengthen security posture.
 
-
 It makes use of a security-specific foundational LLM model trained by Microsoft,
 which added a learning system to create and tune new skills.
 It is a closed-loop learning system, which means it’s continually learning from users and giving them the opportunity to give explicit feedback with the feedback feature that is built directly into the tool.
@@ -339,29 +356,6 @@ Security Copilot aims to catch what other approaches might miss. and augment an 
 
 
 <hr />
-
-- [Noi](https://github.com/lencx/Noi)
-- [ChatGPT clone](https://github.com/lencx/ChatGPT)
-- [LLMLingua](https://github.com/microsoft/LLMLingua)
-- [Perplexity](https://www.perplexity.ai/)
-- [Open Interpreter](https://www.openinterpreter.com/)
-- [Backplain](https://backplain.com/)
-
-## Cursor AI Code Editor
-
-For $20/month, $40/mo for OpenAI zero-data retention
-https://www.cursor.com/pricing
-from https://deepgram.com/ai-apps/cursor
-Cursor is a AI-first code editor designed for pair-programming. It provides features like chat, code generation, editing assistance, and debugging support. With the ability to understand your codebase, Cursor offers real-time suggestions and can generate code snippets based on your instructions. It integrates with popular code editors and is compatible with vscode extensions.
-
-<a target="_blank" href="https://medium.com/jonathans-musings/ai-and-the-future-of-coding-43caad31c3d3">Review</a>
-
-## AWS CodeWhisperer
-
-Amazon Q (for JetBrains, Visual Studio (VS) Code, Visual Studio, macOS Command Line)
-is a chatbot developed by Amazon for enterprise use. Based on both Amazon Titan and GPT generative artificial intelligence, it was announced on November 28, 2023. It is able to help troubleshoot issues in cloud apps or group chats, or summarize documents. As of November 2023, it costs $20 per month.
-
-
 
 ## Keys to Efficient Usage
 
