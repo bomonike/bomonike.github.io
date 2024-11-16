@@ -2,11 +2,12 @@
 
 Here are my notes on choosing and configuring headphones.
 
-I've cancelled flights if I don't have a noise-cancelling headphone on the flight.
+Why? I've cancelled flights if I don't have a noise-cancelling headphone on the flight.
+
+In-ear headphones is painful in my ear.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=l5qootmFQx0">Mike O'Brien's</a> ANC test showed Bose QuietComfort Ultra the best at blocking aircraft jet humm, with AirPods Max coming in 2nd at 60 dB.
 
-In-ear headphones is painful in my ear.
 
 
 ## Apple Airpods Max
@@ -41,10 +42,13 @@ and doesn't support Lossless playback.
    * 03:45 AWINNER Headband Cover https://amzn.to/3GIqCR9
    * 05:35 WIWU AirPods Max Case  https://amzn.to/3oj64IU
 
-1. In the back of each earpiece fabric there is a "L" for Left and "R" for Right
-   * Different colored ear pieces
+1. In the back inside each earpiece fabric there is a "L" for Left and "R" for Right
 
-1. To adjust how the crow and button work on iPhone:
+   * Buy different colored ear pieces?
+
+1. PROTIP: Grab the headset side with two hands to avoid touching the buttons by accident.
+
+1. To adjust how the crown and button work on iPhone:
    1. Settings > Bluetooth
    2. Press the blue (i) icon to the right of "AirPods Max".
    3. Select Transparency and Noise Cancellation.

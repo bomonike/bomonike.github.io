@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-10-30"
+date: "2024-11-14"
 changes: "v028 + Mr P Solver on Youtube :python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
@@ -1171,10 +1171,25 @@ which provides challenges but not solutions:
 He also offers "Learn Python, Data Science & AI" at  partner site
 <a target="_blank" href="https://www.mlnow.ai/">mlnow.ai</a>
 
-####
 
- code for the O'Reilly Live Training, presented by Arianne Dee.
- https://github.com/ariannedee/python-data-structs
+#### OReilly Live Training
+
+Code for the O'Reilly Live Training, presented by Arianne Dee.
+https://github.com/ariannedee/python-data-structs
+
+
+## Backend Ideas
+
+<a target="_blank" href="https://www.linkedin.com/in/solomoneseme/">Solomon Eseme</a>
+created <a target="_blank" href="https://masteringbackend.com/">masteringbackend.com</a>
+that lists <a target="_blank" href="https://projects.masteringbackend.com">ideas for backends (server) projects</a>.
+Only a few provide Python.
+
+They offer a free example project at <a target="_blank" href="https://github.com/backendcommunity/build-your-own-library-management-system">https://github.com/backendcommunity/build-your-own-library-management-system</a>
+It contains a README and a db.sqlite file that defines a Python SQLite database.
+
+https://masteringbackend.com/community
+
 
 
 ## More on Python

@@ -1623,6 +1623,18 @@ but just one or a few:
 This builds a community for the program to become self-sustaining,
 to proactively take advantage of changes in technologies as they emerge.
 
+### 2024 AP daily
+
+<a target="_blank" href="https://myap.collegeboard.org/login">Login</a> to view
+<a target="_blank" href="https://blog.collegeboard.org/free-resources-prepare-ap-exams">Free Resources to Prepare for AP Exams</a> which include
+<a target="_blank" href="https://apcentral.collegeboard.org/instructional-resources/ap-daily">AP Daily videos</a>
+
+MCQ by Sandy Czajka in Illinois
+<a target="_blank" href="https://apclassroom.collegeboard.org/video-resources/2024_Computer_Science_Principles/AP_Computer_Science_Principles_Session1__Worksheet.pdf">PDF</a>
+<a target="_blank" href="https://www.youtube.com/watch?v=cs58aO6XczY&list=PLoGgviqq4844vbwcKegJgIxSQyVHDzSXT&index=1&t=126s">VIDEO</a>
+listed in <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/youtube-downloads.csv">CSV</a> used by <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/youtube-download.py"> youtube-download.py</a>
+
+
 ### PBS
 
 <a target="_blank" href="https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL3wVmwRSQ38q8DaE_t0-0zfHwuYRQO12d">On YouTube</a>:
@@ -2013,3 +2025,7 @@ only a few of these activities have been formally reviewed by The POGIL Project.
 https://skillshop.exceedlms.com/student/path/1176018
 Google's Generative AI for Educators
 (using ExceedLMS)
+
+## GitHub
+
+https://www.twitch.tv/githubeducation

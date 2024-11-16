@@ -19,7 +19,40 @@ created: "2021-08-02"
 This is at https://bomonike.github.io/ros
 with source at https://github.com/bomonike/bomonike.github.io/blob/master/ros.md
 
-## Robot in space
+## Areas
+
+* Perception
+* Planning
+* Control
+
+## Companies
+
+The robotics industry is rapidly evolving, with companies innovating in areas like industrial automation, healthcare, defense, consumer products, and autonomous systems. Many of these companies are pushing the boundaries of artificial intelligence, computer vision, and advanced mechanical engineering to create increasingly capable and versatile robotic systems.
+
+Major Players:
+
+* Boston Dynamics - Known for their advanced humanoid and quadruped robots like Atlas and Spot. They focus on creating highly mobile and dexterous robots.
+* NVIDIA - Develops the Isaac robotics platform for designing, simulating and deploying robots. Their AI technologies power many autonomous machines.
+* Intuitive Surgical - Pioneers in robotic-assisted surgery with their da Vinci surgical systems.
+* ABB Robotics - Major player in industrial robotics and automation.
+* FANUC - Leading manufacturer of industrial robots and automation systems.
+
+Innovative Startups:
+* Anduril Industries - Develops autonomous systems for defense and national security applications. Recently raised $1.5 billion at a $14 billion valuation.
+* Agility Robotics - Creates bipedal robots like Digit for warehouse and logistics applications.
+* Simbe Robotics - Builds autonomous robots for retail inventory management.
+* Vecna Robotics - Provides autonomous mobile robots for logistics and material handling.
+* Energy Robotics - Offers robot-as-a-service solutions for industrial inspections.
+
+Specialized Robotics Companies
+* iRobot - Focuses on consumer robots like the Roomba vacuum cleaner.
+* DJI - Leader in consumer and commercial drones.
+* Starship Technologies - Develops autonomous delivery robots.
+* RightHand Robotics - Specializes in robotic picking solutions for e-commerce fulfillment.
+* ANYbotics - Creates four-legged robots for industrial inspections.
+
+
+## Robot in space?
 
 ![ros-Robonaut2-ISS-770x578](https://user-images.githubusercontent.com/300046/133761877-fd7d01b0-9c81-4def-a644-ebcae4b7aba0.jpg)
 

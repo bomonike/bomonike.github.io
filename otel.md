@@ -47,6 +47,9 @@ PROTIP: In order to get enterprise policies quickly and thoroughly implemented,
 Have app developers code their apps to send logs, metrics, and traces to a <strong>central router (Operations Platform)</strong>.
 
 The BindPlane OP (Observability Platform)</a> from <a target="_blank" href="https://observiq.com/">ObservIq</a> is such a platform.
+
+   * https://cloud.google.com/stackdriver/bindplane
+
 BindPlane is marketed as "Your Unified Telemetry Platform", but I think it is better described as a "Telemetry Management Router":
 * It routes telemetry from any source to the desired destination by managing the entire fleet of agents
 * Redact, Edit, mask & encrypt sensitive data

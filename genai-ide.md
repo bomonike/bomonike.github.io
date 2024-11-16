@@ -8,6 +8,7 @@ Here are my notes about using GenAI to help with programming.
 "This year, it's LLMs. Last year it was blockchain. Next year maybe quantum".
 "We keep moving".
 
+https://medium.com/@anala007/hidden-dangers-of-using-cursor-ai-for-code-generation-what-every-developer-should-know-f4993c407b00
 
 ## What We Do (Tasks)
 
@@ -170,6 +171,10 @@ ccessibility, click the "+".
 
 ## Bolt.New
 
+https://www.youtube.com/watch?v=i0bQ495vMBA
+Build anything with bolt.new, here’s how
+by David Ondrej
+
 https://www.youtube.com/watch?v=AzmSMntdivk&pp=ygUIYm9sdC5uZXc%3D
 How to Make Money With Bolt.new (5 Best Ways)
 
@@ -317,3 +322,8 @@ Improve your code and efficiency with AI next-gen software development tools
 https://learning.oreilly.com/live-events/using-github-copilot-chat/0636920099721/
 Using GitHub Copilot Chat -
 Pair programming with AI for easier software development
+
+https://www.sonarsource.com/lp/solutions/ai-assurance-codefix/
+High quality, AI-assisted coding assured with Sonar
+
+https://claude.ai/ from Anthropic. You must have a valid phone number to use Anthropic’s services. SMS and data charges may apply.

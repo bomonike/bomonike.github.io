@@ -30,24 +30,25 @@ But in the world of software development, a "co-pilot" is a <strong>collaborator
 
 CoPilots leverage the <strong>context</strong> of you're typing to provide <strong>suggestions</strong> that help you write code faster.
 
-* Code Completion: As you type, it provides suggestions for what you might want to do next, such as "autofilling" repetitive "boilerplate" code.
+* Translation:Translate one language to others (Duolingo uses GPT-3 to correct grammar)
+
+* Code Completion: As you type, provides suggestions for what you might want to do next, such as showing alternatives ways to code
+
+* Boilerplate Code: Generate RegEx code when presented with data
+
+* Explain code: Highlight code and it responds with questions about it
+
 * When you type a function, it separates the different words of a concatenated function name.
 
-* Show alternatives ways to code
-* Explain code (in English)
-* Generate RegEx code when presented with data
 * Convert descriptions of colors into hex codes
-
-* Turn comments (natural language) into runnable code
-* Translate one language to others (Duolingo uses GPT-3 to correct grammar)
 <br /><br />
 
 Big tech companies have been working to create AI capabilities: Microsoft, Google, OpenAI, Anthropic, and others.
 
+- [Perplexity](https://www.perplexity.ai/) search engine that summarizes web page content
 - [Noi](https://github.com/lencx/Noi)
 - [ChatGPT clone](https://github.com/lencx/ChatGPT)
 - [LLMLingua](https://github.com/microsoft/LLMLingua)
-- [Perplexity](https://www.perplexity.ai/)
 - [Open Interpreter](https://www.openinterpreter.com/)
 - [Backplain](https://backplain.com/)
 
@@ -394,5 +395,25 @@ Using GitHub Copilot
 <a target="_blank" href="https://learning.oreilly.com/live-events/level-up-with-github-copilot/0636920090759/0636920090758/">Level Up with GitHub Copilot</a> 2023-04-03
 by <a target="_blank" href="https://www.linkedin.com/in/rizel-bobb-semple/">Rizel Scarlett</a> (@blackgirlbytes, https://github.com/galaxy-bytes).
 
-Sample code:
+https://www.youtube.com/watch?v=2nPoiUJpDaU
+GitHub Copilot in VSCode: Top 10 Features Explained
+by Max Rohowsky (Max on Tech)
+
+https://www.youtube.com/watch?v=RDd71IUIgpg
+"CoPilot Review: My Thoughts After 6 Months"
+by ThePrimeagen
+
+https://www.youtube.com/watch?v=Wap2tkgaT1Q
+"Why I'm no longer using Copilot"
+by Dreams of Code
+
+https://www.youtube.com/watch?v=S_RorY_FRvo
+"GitHub Copilot just got promoted to Captain"
+by Fireship
+
+
+
+## Sample code:
+
 https://github.com/alekspopovic/simple-react-timeline
+
