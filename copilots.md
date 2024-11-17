@@ -48,11 +48,11 @@ A. Word Completion: As you type a word the AI recognizes, the AI suggests that w
 
 B. Code Completion: As you type code to call a known function name it recognizes, the AI generates code for that function.
 
-   ai-code-completion.png
+   This helps you avoid manually searching through public repositories for examples.
 
 C. Generate Code: Under a function def, type a docstring in natural language (English) description of what that function does, and the AI generates the code described.
 
-   <img alt="ai-gen-from-desc.png" src=https://res.cloudinary.com/dcajqrroq/image/upload/v1731881117/ai-gen-from-desc_b33dfc.png" />
+   <img alt="ai-gen-from-desc.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731881117/ai-gen-from-desc_b33dfc.png" />
 
 D. Autofill Repetitive Code: Type a few examples of the pattern. The AI adds other items following the pattern seen.
 
@@ -60,11 +60,9 @@ D. Autofill Repetitive Code: Type a few examples of the pattern. The AI adds oth
 
 E. Run Tests:
 
-   <img alt="ai-run-tests.png src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731881117/ai-run-tests_ahqvcb.png" />
+   <img alt="ai-run-tests.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731881117/ai-run-tests_ahqvcb.png" />
 
-Autocomplete: When you type a function, it separates the different words of a concatenated function name.
-
-   ai-autocomplete.png
+F. Create an Application. See the <a target="_blank" href="https://github.com/microsoft/PowerToys">PowerToys</a> project. <a target="_blank" href="https://blog.logrocket.com/building-github-copilot-app/">LogRocket</a>
 
 F. Translation: Translate one language to others (Duolingo uses GPT-3 to correct grammar)
 
