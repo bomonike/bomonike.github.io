@@ -28,21 +28,6 @@ On an airplane, a "co-pilot" (aka first officer) takes over when the captain goe
 
 But in the world of software development, a "co-pilot" is a <strong>collaborator</strong> who works like a <strong>pair programming</strong> session when two people are working on the same code at the same time.
 
-CoPilots leverage the <strong>context</strong> of you're typing to provide <strong>suggestions</strong> that help you write code faster.
-
-* Translation:Translate one language to others (Duolingo uses GPT-3 to correct grammar)
-
-* Code Completion: As you type, provides suggestions for what you might want to do next, such as showing alternatives ways to code
-
-* Boilerplate Code: Generate RegEx code when presented with data
-
-* Explain code: Highlight code and it responds with questions about it
-
-* When you type a function, it separates the different words of a concatenated function name.
-
-* Convert descriptions of colors into hex codes
-<br /><br />
-
 Big tech companies have been working to create AI capabilities: Microsoft, Google, OpenAI, Anthropic, and others.
 
 - [Perplexity](https://www.perplexity.ai/) search engine that summarizes web page content
@@ -51,6 +36,45 @@ Big tech companies have been working to create AI capabilities: Microsoft, Googl
 - [LLMLingua](https://github.com/microsoft/LLMLingua)
 - [Open Interpreter](https://www.openinterpreter.com/)
 - [Backplain](https://backplain.com/)
+
+
+## Feature Examples
+
+CoPilots leverage the <strong>context</strong> of you're typing to provide <strong>suggestions</strong> that help you write code faster.
+
+A. Word Completion: As you type a word the AI recognizes, the AI suggests that word. Press Tab to accept the suggestion.
+
+   ai-word-completion.png
+
+B. Code Completion: As you type code to call a known function name it recognizes, the AI generates code for that function.
+
+   ai-code-completion.png
+
+C. Generate Code: Under a function def, type a docstring in natural language (English) description of what that function does, and the AI generates the code described.
+
+   <img alt="ai-gen-from-desc.png" src=https://res.cloudinary.com/dcajqrroq/image/upload/v1731881117/ai-gen-from-desc_b33dfc.png" />
+
+D. Autofill Repetitive Code: Type a few examples of the pattern. The AI adds other items following the pattern seen.
+
+   <img alt="Autofill Repetitive Code" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731881117/ai-autofill_yam0t2.png" />
+
+E. Run Tests:
+
+   <img alt="ai-run-tests.png src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731881117/ai-run-tests_ahqvcb.png" />
+
+Autocomplete: When you type a function, it separates the different words of a concatenated function name.
+
+   ai-autocomplete.png
+
+F. Translation: Translate one language to others (Duolingo uses GPT-3 to correct grammar)
+
+G. Boilerplate Code: Generate RegEx code when presented with data
+
+H. Explain code: Highlight code and it responds with questions about it
+
+I. Convert descriptions of colors into hex codes
+
+
 
 ## Cursor AI Code Editor
 
@@ -109,6 +133,7 @@ CoPilots combines:
 
 The GitHub Copilot certification exam assesses your proficiency in utilizing the AI-powered code completion tool across different programming languages, certifying your ability to streamline software development processes effectively.
 <a target="_blank" href="https://examregistration.github.com/waitlist/copilot">Microsoft no longer has a waitlist for GitHub Copilot exam registration</a>. The Copilot certification exam is available October 2024.
+
 
 ### Copilot Training
 
@@ -200,30 +225,29 @@ If you have a student or educator email address, get Enterprise free:
 
 1. Make the Status bar appear in View > Appearance.
 
-### Keyboard shortcuts
 
-<a target="_blank" href="https://code.visualstudio.com/docs/copilot/copilot-vscode-features">Cheatsheet:GitHub Copilot in VS Code</a>
+### Open AI Chat
 
 <table border="1" >
 <tr valign="top">><th>Shortcut</th><th>Description</th></tr>
+<tr valign="top">><td>⌘I</td><td>Start Inline Chat to send a chat request to Copilot directly from the editor. Use natural language or use / commands to give instructions to Copilot.</td></tr>
 <tr valign="top">><td>⌃⌘I</td><td>Open the Chat view and start a chat conversation with Copilot by using natural language.</td></tr>
 <tr valign="top">><td>⇧⌘I</td><td>Open the Copilot Edits view and start a code editing session across multiple files.</td></tr>
 <tr valign="top">><td>⇧⌥⌘L</td><td>Open Quick Chat and ask a quick question to Copilot.</td></tr>
-<tr valign="top">><td>⌘I</td><td>Start Inline Chat to send a chat request to Copilot directly from the editor. Use natural language or use / commands to give instructions to Copilot.</td></tr>
 </table>
 
 Type @ in chat or select to view the list of chat participants, which are domain experts that can help you in a specific area. Extensions can also contribute additional participants.
 Example: @workspace how is auth implemented?
 
+<a target="_blank" href="https://code.visualstudio.com/docs/copilot/copilot-vscode-features">Cheatsheet:GitHub Copilot in VS Code</a>
 
-<a target="_blank" href="https://github.com/timothywarner/copilot-ai">https://github.com/timothywarner/copilot-ai</a>
 
-- [Trust Center](https://resources.github.com/copilot-trust-center/)
-- [GitHub Next](https://githubnext.com/)
-
+* Prompt GitHub Copilot for code suggestions
 
 
 ### GithubNext.com
+
+<a target="_blank" href="https://githubnext.com/">GitHubNext.com</a>
 
 GitHub Copilot X is Microsoft's vision for the future of AI-powered software development adopting OpenAI's newest GPT-4 models.
 
@@ -323,12 +347,11 @@ GitHub Copilot X is Microsoft's vision for the future of AI-powered software dev
    https://docs.github.com/en/copilot/troubleshooting-github-copilot/viewing-logs-for-github-copilot-in-your-environment
 
 
+### Codespaces
+
 https://github.com/skills/copilot-codespaces-vscode
 
-
-* Install GitHub Copilot using GitHub Codespaces
-* Prompt GitHub Copilot for code suggestions
-* Accept code suggestions from GitHub Copilot
+* Install GitHub Copilot using <a target="_blank" href="https://github.com/features/codespaces">GitHub Codespaces</a>
 
 <hr />
 
@@ -355,6 +378,8 @@ It continues to learn from interactions, adjusting its responses to create more 
 
 Security Copilot aims to catch what other approaches might miss. and augment an analyst’s work.
 
+<a target="_blank" href="https://github.com/advisories">GitHub Advisory Database</a>
+Security vulnerability database inclusive of CVEs and GitHub originated security advisories from the world of open source software.
 
 <hr />
 
@@ -416,4 +441,8 @@ by Fireship
 ## Sample code:
 
 https://github.com/alekspopovic/simple-react-timeline
+
+<a target="_blank" href="https://github.com/timothywarner/copilot-ai">https://github.com/timothywarner/copilot-ai</a>
+
+- [Trust Center](https://resources.github.com/copilot-trust-center/)
 

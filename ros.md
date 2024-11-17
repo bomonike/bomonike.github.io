@@ -480,3 +480,6 @@ https://www.youtube.com/watch?v=WxcBEXkQoSE
 Creating the MOST POWERFUL AI Agent for Your Second Brain
 by Logan Hallucinates
 
+## VEX Robotics labs
+
+https://education.vex.com/stemlabs/cs

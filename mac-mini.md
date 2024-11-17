@@ -1,4 +1,4 @@
-mac-mini.md
+This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini.md</a>.
 
 <a target="_blank" href="https://www.apple.com/mac-mini/">Apple Mac Mini</a>'s $599 base price
 is enticing. Apple provides a $100 discount to students.
@@ -8,9 +8,16 @@ Amazon offers discounts
 ## Use Cases
 
 The big question is whether you can live with the base storage and memory for your use case.
-Those who use Microsoft Office and a few light productivity apps will likely be ok with the base model.
 
-PROTIP: Many may work with the base storage of 256 GB if they have the discipline to move files to an external SSD or cloud storage (e.g., iCloud or <a target="_blank" href="https://www.backblaze.com/cloud-backup/personal">Backblaze cloud</a>).
+Those who use Microsoft Office and a few light productivity apps will likely be ok with the base model.
+<a target="_blank" href="https://www.youtube.com/watch?v=8Uuu046EE28&t=6m33s">VIDEO</a>:
+Elevated used UL's Office Productivity benchmark to find the base model outperforming other mini Windows PCs
+   * Beelink SER9 (R9 HX370)
+   * Geekom GT1 (U9-185H)
+   * Geekom A8 (U9-8945HS)
+   * HP Stream 14 (R3 H370)
+
+PROTIP: Many users may be happy with the base storage of 256 GB if they have the discipline to move files to an external SSD or cloud storage (e.g., iCloud or <a target="_blank" href="https://www.backblaze.com/cloud-backup/personal">Backblaze cloud</a>).
 
 The question is use with editing videos using Final Cut Pro, Premiere Pro, DaVinci Resolve, etc.
 or 3D graphics using Blender, etc.
@@ -69,7 +76,19 @@ There is a 3.5 mm headphone jack.
 
 * RJ45 Ethernet cable?
 
-* USB-C external SSD for backups
+* USB-C external SSD drives - <a target="_blank" href="https://www.youtube.com/watch?v=4MoV5kxVp2c">Geoff Fagien analyzed NVMe SSDs :
+
+   * https://amzn.to/40VPlMK - Crucial T500 2TB Gen4 NVMe M.2 Internal Gaming SSD
+
+   * https://amzn.to/3Cw0wSt - SABRENT Thunderbolt 3 Certified M.2 NVMe SSD Tool Free Solid Aluminum Enclosure
+
+   * https://amzn.to/40IVa0a - SAMSUNG T7 Portable SSD, 1TB External Solid State Drive:
+
+* NVM3 enclosure
+   * https://amzn.to/3CpAekA - OWC Express 1M2 Portable NVMe Thunderbolt (USB-C) SSD USB4 Ultra Fast External SSD Drive with Aluminum Heat Sink Enclosure (Enclosure Only)
+
+
+
 * USB-A to USB-C adapter plugs
 
 * HDMI 8K Ultra HD cable - Thunderbolt 5 video output via DisplayPort 2.1.  Bandwidth up to 48Gbps, 8K@ 60Hz/4K@120Hz, HDR10+, Dynamic HDR, Dolby Atmos, DTS:X, eARC, Ethernet, CEC, Zinc alloy housing, Gold-plated connectors
@@ -86,19 +105,33 @@ Cinebench R23: 1296 points
 
 <a target="_blank" href="https://www.youtube.com/live/HKoLxOkcfQ4&t=1m20s"><img alt="mac-mini-front-back.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731683979/mac-mini-front-back_fup4cz.png"></a>
 
-REMEMBER: The 2 USB ports on the front of the Mac Mini are Type C USB 4, rated to carry up to 40Gps and supply up to 100W of power.
-   * Thunderbolt 4 cables are rated to carry up to 40Gps and supply up to 100W of power.
+On the front, the 2 USB ports are Type C USB 4, rated to carry up to 40Gps and supply up to 100W of power.
 
-The 3 ports on the back are Thunderbolt 4 for up to 40 Gbps transfer speed.
-
-[_] <a target="_blank" href="https://www.amazon.com/Anker-Docking-Station-Triple-Display/dp/B08333333333333333">$169.95 Anker 575 USB-C Docking Station</a> (13-in-1), Triple Display, 4K HDMI, 10 Gbps USB-C and 5 Gbps USB-A Data, 85W Charging for Laptop, 18W Charging for Phone, Ethernet, Audio, SD 3.0</a>
+On the back, the 3 ports are Thunderbolt 4 for up to 40 Gbps transfer speed.
 
 Thunderbolt 5 cables are rated to carry up to 80Gps and supply up to 250W of power.
 But they are expensive and not widely unavailable.
 
+Thunderbolt 4 cables are rated to carry up to 40Gps and supply up to 100W of power.
+
 By contrast, PCI3 cables are rated to carry up to 20Gps and supply up to 50W of power.
 
-To connect up to 4 6K screens, the <a target="_blank" href="https://ivanky.com/products/ivanky-docking-station-fusiondock-max-1?ref=3gcsMvfWaBjc__">$439.99 Ivanki Fusion Dock 1</a> NEWOFFERS5 <a target="_blank" href="https://www.amazon.com/dp/B07ZVY133Q&t=1m23s">VIDEO</a> plugs into the Mac with <strong>>dual Thunderbolt 4 cable</a> for MacBook Pros.
+
+## Displays strategy
+
+[_] If you have a single HD monitor to display 1920x1080 resolution at 60Hz, any HDMI cable can be connected from either front USB-C ports.
+
+[_] To display a 4K monitor at 60Hz, get HDMI 3.2 HD cables to connect to a front USB-C port.
+
+[_] To display a 4K monitor at 240Hz or an 8K resolution at 60Hz, use <strong>Thunderbolt 4 cables</strong> to connect to the back Thunderbolt ports.
+
+[_] For two displays, one can be up to 8K resolution at 60Hz with a 5K also at 60Hz, get <strong>Thunderbolt 4 cables</strong> for the back Thunderbolt ports.
+
+[_] For 3 displays, buy two Thunderbolt 4 cables for connecting to the back Thunderbolt 4 ports. One is a 6K display at 60Hz and the other is a 5K display at 60Hz.
+
+[_] To connect up to 4 6K screens, the <a target="_blank" href="https://ivanky.com/products/ivanky-docking-station-fusiondock-max-1?ref=3gcsMvfWaBjc__">$439.99 Ivanki Fusion Dock 1</a> NEWOFFERS5 <a target="_blank" href="https://www.amazon.com/dp/B07ZVY133Q&t=1m23s">VIDEO</a> plugs into the Mac with <strong>>dual Thunderbolt 4 cable</a> for MacBook Pros.
+
+[_] <a target="_blank" href="https://www.amazon.com/Anker-Docking-Station-Triple-Display/dp/B08333333333333333">$169.95 Anker 575 USB-C Docking Station</a> (13-in-1), Triple Display, 4K HDMI, 10 Gbps USB-C and 5 Gbps USB-A Data, 85W Charging for Laptop, 18W Charging for Phone, Ethernet, Audio, SD 3.0</a>
 
 REMEMBER: Thunderbolt cables may not support USB-C ports.
 
@@ -122,3 +155,6 @@ Corning makes a $353 fibre-optic Thunderbolt cable that extends 5 meters (16 fee
 * https://www.youtube.com/watch?v=l20LgGSEAR8 "The Shocking Truth About Mac Mini Performance in 2024" talks through the <a target="_blank" href="https://github.com/XCodeBenchmark">XCodeBenchmark on GitHub</a>
 * https://www.youtube.com/watch?v=hccy19Hm6M8&t=60s "M4 Pro MacBook Pro: HUGE Leap for Music Production | M4 Pro vs M3 Pro vs M2 Pro vs M1 Pro" by James Zhan
 * https://www.youtube.com/watch?v=g0wX2jVVSZs "Leo's M4 Mac mini" by TWiT Tech Podcast Network
+* https://www.youtube.com/watch?v=DMl-zRIdcK0
+* https://www.youtube.com/watch?v=kpUtPDGOjxk by Mark Ellis Reviews on "M4 Mac Mini base model stress test impact on fan noise using LogicPro, FinalCutPro, Lightroom"
+* https://www.youtube.com/watch?v=Vyzuph9A1N8&t=5m16s "The editing experience on the M4 Mac Mini base model (10-cores) and the M1 MacBook Pro Max (with 32-core) is indistinguishable".
