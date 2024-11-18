@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2024-11-15"
-change: "v002 + icon :copilots.md"
+change: "v003 + other ides :copilots.md"
 file: "copilots"
 title: "Copilots"
 excerpt: "More than automcomplete on steroids - AI tools that provide helps you write code and other tricks."
@@ -38,9 +38,39 @@ Big tech companies have been working to create AI capabilities: Microsoft, Googl
 - [Backplain](https://backplain.com/)
 
 
-## Feature Examples
+## Keyboard Shortcuts
 
 CoPilots leverage the <strong>context</strong> of you're typing to provide <strong>suggestions</strong> that help you write code faster.
+
+* To trigger a suggestion: Alt + \ or Option (⌥) + \
+
+* To accept a suggestion, press the <strong>Tab</strong> key on a keyboard.
+
+* To dismiss inline code suggestion: Esc.
+
+* To see a list of suggestions to choose from, press ^ + Return on a Mac keyboard or Ctrl + Enter on Windows.
+
+* To open suggestions in a separate pane: Ctrl + Enter.
+
+* Show next suggestion — Alt + ] or Option (⌥) + ]
+
+* Show previous suggestion — Alt + [ or Option (⌥) + [
+
+
+## Keys to Efficient Usage
+
+PROTIP: To avoid autopilot, type a period and cursor left to type in front of it.
+
+REMEMBER: With Copilot: Reject with the left-arrow key. Accept suggestions by pressing the Tab key.
+
+More frequent use of the left-arrow and Esc keys made keyboard automation more worthwhile.
+
+PROTIP: It's difficult to reach the arrow key, so I remapped the Caps Lock key to it.
+
+PROTIP: Even better, I mappped my 3-key foot pedal to left-arrow on the left and Tab on the right.
+
+## Feature Examples
+
 
 A. Word Completion: As you type a word the AI recognizes, the AI suggests that word. Press Tab to accept the suggestion.
 
@@ -62,7 +92,7 @@ E. Run Tests:
 
    <img alt="ai-run-tests.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731881117/ai-run-tests_ahqvcb.png" />
 
-F. Create an Application. See the <a target="_blank" href="https://github.com/microsoft/PowerToys">PowerToys</a> project. <a target="_blank" href="https://blog.logrocket.com/building-github-copilot-app/">LogRocket</a>
+F. Create an Application. See the <a target="_blank" href="https://github.com/microsoft/PowerToys">PowerToys</a> project. <a target="_blank" href="https://blog.logrocket.com/building-github-copilot-app/">LogRocket</a> uses Node.js app using React.js to generate a simple quote-generating app.
 
 F. Translation: Translate one language to others (Duolingo uses GPT-3 to correct grammar)
 
@@ -221,7 +251,7 @@ If you have a student or educator email address, get Enterprise free:
    6. Notice that <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat">"GitHub Copilot Chat"</a> is also installed automatically.
    7. Exit VS Code and re-open it.
 
-1. Make the Status bar appear in View > Appearance.
+1. Make the Status bar appear in menu: View > Appearance.
 
 
 ### Open AI Chat
@@ -302,6 +332,16 @@ GitHub Copilot X is Microsoft's vision for the future of AI-powered software dev
 
     Each user: Enable GitHub Copilot as VS Code extension:
 
+## Install
+
+Copilot is available as extensions on several IDEs:
+
+   * https://plugins.jetbrains.com/plugin/17718-github-copilot
+
+   * https://github.com/github/copilot.vim
+
+   * https://marketplace.visualstudio.com/items?itemName=GitHub.copilot discussed below
+
 1.  Install VSCode using my instructions at
 
     <a target="_blank" href="https://wilsonmar.github.io/text-editors/VSCode">wilsonmar.github.io/text-editors/#VSCode</a>
@@ -380,19 +420,6 @@ Security Copilot aims to catch what other approaches might miss. and augment an 
 Security vulnerability database inclusive of CVEs and GitHub originated security advisories from the world of open source software.
 
 <hr />
-
-## Keys to Efficient Usage
-
-PROTIP: To avoid autopilot, type a period and cursor left to type in front of it.
-
-REMEMBER: With Copilot: Reject with the left-arrow key. Accept suggestions by pressing the Tab key.
-
-More frequent use of the left-arrow and Esc keys made keyboard automation more worthwhile.
-
-PROTIP: It's difficult to reach the arrow key, so I remapped the Caps Lock key to it.
-
-PROTIP: Even better, I mappped my 3-key foot pedal to left-arrow on the left and Tab on the right.
-
 
 ## Cautions
 
