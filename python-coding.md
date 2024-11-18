@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-09-22"
-lastchange: "Add PCEP-03-02 items :python-coding"
+date: "2024-11-18"
+lastchange: "v004 + docstrings :python-coding.md"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -2539,6 +2539,42 @@ Streamlit Elements You Should Know About in 2023
 by Mısra Turp
 
 https://www.youtube.com/watch?v=9n4Ch2Dgex0
+
+
+<hr />
+
+<a name="Docstrings"></a>
+
+## Docstrings
+
+## Google Style Docstrings
+
+Google style uses indentation to separate sections. The basic structure is:
+
+```python
+def function(arg1, arg2):
+    """Summary line.
+
+    Extended description of function.
+
+    Args:
+        arg1 (int): Description of arg1
+        arg2 (str): Description of arg2
+
+    Returns:
+        bool: Description of return value
+
+    Raises:
+        ValueError: Description of when this error is raised
+
+    Examples:
+        Examples should be written in doctest format and should illustrate how
+        to use the function.
+
+        >>> function(1, 'test')
+        True
+    """
+    return True
 
 
 ## More about Python

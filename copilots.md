@@ -37,12 +37,24 @@ Big tech companies have been working to create AI capabilities: Microsoft, Googl
 - [Open Interpreter](https://www.openinterpreter.com/)
 - [Backplain](https://backplain.com/)
 
+- <a target="_blank" href="https://www.youtube.com/watch?v=3xk2qG2QPdU">VIDEO</a>: <a target="_blank" href="https://wind.surf/">wind.surf</a> windsurf.ai editor, <a target="_blank" href="https://www.youtube.com/watch?v=YV7IPn4QmnE" title="Tech with Tim">VIDEO</a> combines its AI agents with Copilot to provide "Flows" that collects context to automate tasks.
+AI Agents are "agentic" in that they can perform tasks autonomously, such as open files it identifies on its own, search the web, and run code. <a target="_blank" href="https://www.youtube.com/watch?v=ouT8ItvJla8">VIDEO</a>
+
+   Codeium has a <a target="_blank" href="https://codeium.com/pricing">$10/month plan</a> that includes FIM (Fill In Middle) code suggestions they call "Supercomplete". The plan also includes access to larger Codeium models and unlimited access to GPT-4o, Claude Sonnet (Chat, Codeium extensions).
+
+   Their <a target="_blank" href="https://codeium.com/cascade">"Cascade" agentic capabilities</a> enable collaboration between AI and human, making it the ultimate partner for complex coding workflows.
+
+- Tabnine
 
 ## Keyboard Shortcuts
 
+<a target="_blank" href="https://www.youtube.com/watch?v=q0PorpN6SQM">VIDEO</a>:
+
 CoPilots leverage the <strong>context</strong> of you're typing to provide <strong>suggestions</strong> that help you write code faster.
 
-* To trigger a suggestion: Alt + \ or Option (⌥) + \
+* VSCode makes suggestions automatically. But<br />to trigger a suggestion: Alt + \ or Option (⌥) + \
+
+   VSCode shows suggestions on the right.
 
 * To accept a suggestion, press the <strong>Tab</strong> key on a keyboard.
 
@@ -59,7 +71,11 @@ CoPilots leverage the <strong>context</strong> of you're typing to provide <stro
 
 ## Keys to Efficient Usage
 
-PROTIP: To avoid autopilot, type a period and cursor left to type in front of it.
+Most AI tools only give suggestions when there is no meaningful text after the cursor on the current line (ignoring single closing braces or colons).
+
+PROTIP: To avoid suggestions, type a period and cursor left to type in front of it.
+
+That's unless you're using Codeium, which has a <a target="_blank" href="https://codeium.com/blog/inline-fim-code-suggestions">"FIM" (Fill In Middle) feature</a>.
 
 REMEMBER: With Copilot: Reject with the left-arrow key. Accept suggestions by pressing the Tab key.
 
@@ -102,6 +118,7 @@ H. Explain code: Highlight code and it responds with questions about it
 
 I. Convert descriptions of colors into hex codes
 
+J. Create Alt Text for image.
 
 
 ## Cursor AI Code Editor
@@ -124,6 +141,7 @@ is a chatbot developed by Amazon for enterprise use. Based on both Amazon Titan 
    * https://github.com/features/copilot
    * https://github.blog
 
+<img align="right" width="100" alt="github_copilot_badge.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731733144/copilot_b_w_icon_f0rt6t.png"/>
 GitHub Copilot uses "generative AI" into an editor extension that suggests code in real-time.
 See my explanation of Generative AI at <a target="_blank" href="https://wilsonmar.github.io/genai">https://wilsonmar.github.io/genai</a>
 
@@ -159,6 +177,7 @@ CoPilots combines:
 
 ### Copilot Certification
 
+<img align="right" width="100" alt="github_copilot_badge.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731898738/github_copilot_badge_icqs70.png"/>
 The GitHub Copilot certification exam assesses your proficiency in utilizing the AI-powered code completion tool across different programming languages, certifying your ability to streamline software development processes effectively.
 <a target="_blank" href="https://examregistration.github.com/waitlist/copilot">Microsoft no longer has a waitlist for GitHub Copilot exam registration</a>. The Copilot certification exam is available October 2024.
 
@@ -207,6 +226,9 @@ The GitHub Copilot certification exam assesses your proficiency in utilizing the
 
 1. ["The Ultimate Manual"](https://nira.com/github-copilot/)
 
+1. Max Rohowsky (Max on Tech) on YouTube:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=q0PorpN6SQM">GitHub Copilot in VSCode: Explaining the Basics</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=2nPoiUJpDaU">GitHub Copilot in VSCode: Top 10 Features Explained</a>
 
 ### Licenses
 
