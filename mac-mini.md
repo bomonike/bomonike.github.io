@@ -1,36 +1,99 @@
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini.md</a>.
 
-<a target="_blank" href="https://www.apple.com/mac-mini/">Apple Mac Mini</a>'s $599 base price
-is enticing. Apple provides a $100 discount to students.
-Buyers using Costco's credit card get 4% money-back at the end of the year. That' $28.
-Amazon offers discounts
+Since October 2024, the 2024 Mac Mini has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance.
 
-## Use Cases
+## Enough Memory
 
-The big question is whether you can live with the base storage and memory for your use case.
+"The 16 GB RAM is enough for typical video editing and 3D graphics." is the concensus of many reviewers.
 
-Those who use Microsoft Office and a few light productivity apps will likely be ok with the base model.
-<a target="_blank" href="https://www.youtube.com/watch?v=8Uuu046EE28&t=6m33s">VIDEO</a>:
-Elevated used UL's Office Productivity benchmark to find the base model outperforming other mini Windows PCs
+If apps need more RAM, the computer automatically swaps to the SSD, which is rather fast as well.
+
+Its 10-core M4 chip has the fastest single-core performance among all Macs. According to Tom's Guide's use of GeekBench 5, the 2024 Mac Mini base model (at 3087) is 2.4 times faster than the 2021 Mac Mini M3.
+
+Those who use Microsoft Office and a few light productivity apps will likely be ok with the base model. <a target="_blank" href="https://www.youtube.com/watch?v=8Uuu046EE28&t=6m33s">VIDEO</a>: Elevated used UL's Office Productivity benchmark to find the base model outperforming other mini Windows PCs:
    * Beelink SER9 (R9 HX370)
    * Geekom GT1 (U9-185H)
    * Geekom A8 (U9-8945HS)
    * HP Stream 14 (R3 H370)
 
-PROTIP: Many users may be happy with the base storage of 256 GB if they have the discipline to move files to an external SSD or cloud storage (e.g., iCloud or <a target="_blank" href="https://www.backblaze.com/cloud-backup/personal">Backblaze cloud</a>).
 
-The question is use with editing videos using Final Cut Pro, Premiere Pro, DaVinci Resolve, etc.
-or 3D graphics using Blender, etc.
-   * https://www.youtube.com/live/HKoLxOkcfQ4
+## Total Cost
 
-[_] PROTIP: If you use an external SSD often, get an enclosure with cooling fan to house your NVMe SSD, such as <a target="_blank" href="https://www.amazon.com/dp/B07ZVY133Q">$100 UGREEN M.2 from Amazon</a>. 40Gbps transfer speed. Lexar 256GB is $100.
+<a target="_blank" href="https://www.apple.com/mac-mini/">Apple Mac Mini</a>'s $599 base price
+is enticing. Apple provides a $100 discount to students with an .edu email.
+Buyers using Costco's credit card get 4% money-back at the end of the year. That' $28.
+
+Although the 2024 Mac Mini is physically smaller than the previous M3-based Mac Minis, it is still a <strong>desktop</strong> computer that plugs into a wall outlet. It's NOT really "portable".
+
+The 2024 Mac Mini only comes with a power chord. It does NOT come with a keyboard, mouse, trackpad, monitor, battery, nor SD slot. All that costs more money. You'll have to plug and unplug all those components every time you move it. 
+
+If you have a Bluetooth keyboard, mouse, or trackpad for your iPad, use that on the Mac Mini.
+
+PROTIP: If you use several computers at once with hard-wired keyboard and mouse, consider getting a <strong>KVM switch</strong> to switch among them from a single keyboard and mouse.
+
+But that may be fine if you can reuse components from another desktop computer or want to get exactly the componenents you want, such as an 8K monitor, ergonomic keyboard, etc.
+
+
+### iPad as monitor
+
+This is not for heavy graphics or video editing. Nevertheless...
+
+BLAH: You may setup the iPad as a secondary monitor in Apple System Settings, Displays. But <a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=3m4s">VIDEO</a>: macOS disconnects from the iPad when no monitor is connected to the Mac Mini. 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=5m5s">VIDEO</a>: The workaround is to open the App Store on your iPad to installthe <a target="_blank" href="https://apps.apple.com/us/app/hdmi-monitor-orion/id6459355072">free "HDMI Monitor - Orion" app (from "Lux Optics Incorporate")</a> which can make use of a USB-C to HDMI adapter. Some dongles also have a head to connec to an older VGA monitor.
+
+
+## Enough Storage
+
+PROTIP: Many users may be happy with the base storage of 256 GB if they have the <strong>discipline</strong> to plug in an external SSD or configure cloud storage (e.g., iCloud or <a target="_blank" href="https://www.backblaze.com/cloud-backup/personal">Backblaze cloud</a>).
 
 The base 256 GB NVMe Memory can a later swapped with 512 GB, but you'll have to pay for it.
    * <a target="_blank" href="https://www.youtube.com/watch?v=rtdGxBeSkz8">iFixit.com teardown</a>.
    * <a target="_blank" href="https://www.youtube.com/live/cJPXLE9uPr8">VIDEO on upgrading memory</a>
+When you upgrade the RAM, put the smaller SSD in an enclosure for use as a backup drive.
+
+PROTIP: The 256 GB SSD hard drive on the base Mac Mini is actually two 128 GB chips (4x 64 GB chips) on the circuit board. So it's slower than a solid 256 GB drive. The SSD on the 512GB Mac Mini has two 256GB chips.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=RlVEOw7WLtM&t=6m30s">VIDEO</a>: On the base Mac Mini, the internal256 GB SSD scored around 2004 MB/s on write and 2971 MB/s on read. 
+
+That's due to the 256 GB NVMeSSD hard drive on the 2024 Mac Mini having actually two 128 GB SSDs on the circuit board. So it's slower than a solid 256 GB drive. The SSD on the 512GB Mac Mini has two 256GB SSDs.
+
+The 512 GB SSD is <strong>twice as fast</strong>, scoring around 4417 MB/s on write and 3021 MB/s on read.
+The Mac Mini Pro's 512 GB SSD scored about the same or a little slower.
+
+The speeds are measured using the <a target="_blank" href="https://www.blackmagicdesign.com/products/disk-speed-test">Black Magic Disk Speed Test</a> utility.
+PROTIP: Black Magic is a camera company. Their utility measures only sequential reads/writes, not random reads/writes, which is more important for daily system usage. (For example, WD SN570 is way faster than KIOXIA G2 on sequentials, but G2 absolutely demolished SN570 in real usage because its randoms are faster.)
+PROTIP:So many use Amorphous Disk Mark instead of the Black Magic test.
+
+The question is use with editing videos using Final Cut Pro, Premiere Pro, DaVinci Resolve, etc. or 3D graphics using Blender, etc. <a target="_blank" href="https://www.youtube.com/live/HKoLxOkcfQ4">VIDEO</a>
+
+
+### Storage device features
+
+PROTIP: Heavy use of SSDs would require heat dissipantion feature on the drive. 
+
+SATA HDD drives are slower than NVMe SSD chips:
+   * 1TB SATA drives are 1000 MB/s on read and 800 MB/s on write. 
+   * 2TB drives are 800 MB/s on read and 600 MB/s on write.
+
+China-based iDiskk <a target="_blank" href="https://www.amazon.com/iDiskk-40Gbps-Professional-Aluminum-External/dp/B0CQYSFBCX">$219</a> 2TB drive has a 40Gbps Thunderbolt 3 cable to smaller fins on the aluminum enclosure with a (loud) fan.
+
+The Quizlab Fanless SSD case for M.2 NVMe chips is made of heavy aluminum with fanless heat sink fins. $89.99 on Amazon. It comes with a 40Gbps Thunderbolt 4 cable. Plus the $200 for 2TBSSD chip.
+
+For a quiet fanless enclosure, get the USA-based QWC <a target="_blank" href="https://www.amazon.com/OWC-Portable-Thunderbolt-External-Enclosure/dp/B0CPR88QFJ">$250 for 1TB, $400 for 2TB</a> and Thunderbolt 4 cable. <a target="_blank" href="https://www.youtube.com/watch?v=4MoV5kxVp2c">VIDEO</a>: "the best" with write speed of 3170 MB/s read and 3069 MB/s read.
+
+The above are not as dust and water proof as the SanDisk IP65 1TB portable SSD for $130 on Amazon & Costco. It comes with a USB-C cable and USB-A adapter, so not as fast as the 40Gbps Thunderbolt4 cable.
+
+[_] Get an envelope to protect against EMF as well as dust and moisture during transport.
+
+
+## External SSD
+
+[_] PROTIP: If you use an external SSD often, get an enclosure with cooling fan to house your NVMe SSD, such as <a target="_blank" href="https://www.amazon.com/dp/B07ZVY133Q">$100 UGREEN M.2 from Amazon</a>. 40Gbps transfer speed. Lexar 256GB is $100.
+
 
 PROTIP: Those who need quick response when editing big videos and 3D graphics will likely need to pick the Pro model for more money. The decision to go with the Pro RAM needs to be made at time of purchase because
-M4 CPU chips have a different physical form than M4Pro chips.
+M4 chips have a different physical form than M4Pro chips.
    * <a target="_blank" href="https://www.youtube.com/watch?v=TTWi2czS9nc">CNET</a>
 
    <table border="1" cellpadding="4" cellspacing="0">
@@ -50,7 +113,7 @@ That's a third of what Windows machines consume.
 
 ## Physicals
 
-Physically, the 2024 Mac Mini is smaller than the previous Mac Mini.
+Physically, the 5 inch square 2024 Mac Mini is smaller than the previous Mac Mini.
 
 Power button on the bottom corner.
 But there are 3D printed to put that on the side.
@@ -158,3 +221,6 @@ Corning makes a $353 fibre-optic Thunderbolt cable that extends 5 meters (16 fee
 * https://www.youtube.com/watch?v=DMl-zRIdcK0
 * https://www.youtube.com/watch?v=kpUtPDGOjxk by Mark Ellis Reviews on "M4 Mac Mini base model stress test impact on fan noise using LogicPro, FinalCutPro, Lightroom"
 * https://www.youtube.com/watch?v=Vyzuph9A1N8&t=5m16s "The editing experience on the M4 Mac Mini base model (10-cores) and the M1 MacBook Pro Max (with 32-core) is indistinguishable".
+* https://www.youtube.com/watch?v=wK6yv3aAWcA "MOTHER OF ALL STRESS TESTS! 🥵 Logic Pro, Blender, After Effects, Llama LLMs" tested the largest of models to identify when system overloads occur : 100-200 tracks. Local Llama 8 billion model.
+* https://www.tomsguide.com/computing/desktop-computers/m4-mac-mini-unveiled-with-stunningly-compact-design-over-50-percent-smaller-thunderbolt-5-support-and-up-to-64gb-of-unified-memory
+* https://www.youtube.com/watch?v=RlVEOw7WLtM by Craig Neidel
