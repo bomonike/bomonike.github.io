@@ -1,10 +1,10 @@
 ---
 layout: post
-date: "2024-11-01"
-change: "v003 + Thoughtworks Tech Radar :ros.md"
+date: "2024-11-18"
+change: "v001 + new :podcasts.md"
 file: "ros"
-title: "ROS (Robotic Operating System)"
-excerpt: "Learn the operating system for controlling simple robots"
+title: "Podcasts"
+excerpt: "My favorite podcasts and how to create them"
 tags: [Robots, DevOps]
 image:
 # pic silver robot white skin handshake 1900x500
@@ -16,10 +16,22 @@ created: "2021-08-02"
 ---
 <i>{{ page.excerpt }}</i>
 
-This is at https://bomonike.github.io/ros
-with source at https://github.com/bomonike/bomonike.github.io/blob/master/ros.md
+This is at https://bomonike.github.io/podcasts
+with source at https://github.com/bomonike/bomonike.github.io/blob/master/podcasts.md
 
-## Areas
+## illuminate.google.com
+
+Click "Start generating" at <a target="_blank" href="https://illuminate.google.com/home/">https://illuminate.google.com/home/</a> to create a podcast using AI which generates voicees from text. The content is not just someone reading a book - the AI knows when to have one of two people interviewing each other about the content.
+
+Before creating your own, listen to the examples listed on that page.
+
+Examples of voices generated from text:
+* The New York Times
+* The Washington Post
+* The Wall Street Journal
+
+Example
+
 
 * Perception
 * Planning

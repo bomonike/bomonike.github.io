@@ -1191,6 +1191,11 @@ It contains a README and a db.sqlite file that defines a Python SQLite database.
 https://masteringbackend.com/community
 
 
+Ajit Jaokar at Oxford University
+https://www.linkedin.com/pulse/easy-way-learn-python-using-chatgpt-ajit-jaokar-sd8ee/
+"An easy way to learn Python using ChatGPT" in his <a target="_blank" href="https://www.linkedin.com/pulse/easy-way-learn-python-using-chatgpt-ajit-jaokar-sd8ee/">LinkedIn</a> blog
+provides a Python program that uses ChatGPT to generate a Python program that can be used to create a database.
+Part 2 is at https://www.linkedin.com/pulse/easy-way-learn-python-coding-using-chatgpt-part-two-ajit-jaokar-5kagf/
 
 ## More on Python
 

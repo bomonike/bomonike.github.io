@@ -1,18 +1,22 @@
 #!/bin/bash
 
-# 
+# Check if Homebrew is installed
+if ! command -v brew &> /dev/null; then
+    echo "Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-# Install Git
-echo "Installing Git..."
-winget install --id Git.Git -e --source winget
+# Install Git if not already installed
+if ! command -v git &> /dev/null; then
+    echo "Installing Git..."
+    brew install git
+fi
 
-# Install OpenSSH Client
-echo "Installing OpenSSH Client..."
-Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
-
-# Install GPS tools
-echo "Installing GPS tools..."
-winget install --id GPSBabel.GPSBabel -e --source winget
+# Install GPG if not already installed
+if ! command -v gpg &> /dev/null; then
+    echo "Installing GPG..."
+    brew install gnupg
+fi
 
 # Verify installations
 echo "Verifying installations..."
@@ -24,18 +28,18 @@ else
     echo "Git installation failed."
 fi
 
-# Check SSH
+# Check SSH (comes pre-installed on macOS)
 if command -v ssh &> /dev/null; then
-    echo "SSH installed successfully. Version: $(ssh -V 2>&1)"
+    echo "SSH is available. Version: $(ssh -V 2>&1)"
 else
-    echo "SSH installation failed."
+    echo "SSH not found. This is unusual for macOS."
 fi
 
-# Check GPS tools
-if command -v gpsbabel &> /dev/null; then
-    echo "GPS tools installed successfully. Version: $(gpsbabel -V)"
+# Check GPG
+if command -v gpg &> /dev/null; then
+    echo "GPG installed successfully. Version: $(gpg --version | head -n 1)"
 else
-    echo "GPS tools installation failed."
+    echo "GPG installation failed."
 fi
 
 echo "Installation process completed."

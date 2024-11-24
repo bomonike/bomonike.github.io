@@ -15,3 +15,10 @@ https://www.skool.com/ai-automations-mastery-7642/classroom/0c39a268?md=91e6a575
 Agency templates
 
 * 6:01 McKinsey template
+
+## Yiannis Demetriou
+
+https://www.youtube.com/watch?v=kAk131n5aA4
+
+https://www.skool.com/ai-automations-mastery-7642/classroom/0c39a268?md=91e6a57596b54616968beb2a9838923a
+AI Automation Agency Wizards
