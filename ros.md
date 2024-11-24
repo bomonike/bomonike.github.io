@@ -483,3 +483,54 @@ by Logan Hallucinates
 ## VEX Robotics labs
 
 https://education.vex.com/stemlabs/cs
+
+## Install ROS2 & Gazebo
+
+1. Install Homebrew
+1. Install Conda
+
+1. Install ROS2 using RoboStack
+
+   Create a new Conda environment
+
+   ```bash
+   conda create -n ros2 python=3.9
+   ```
+1. Activate the environment:
+
+   ```
+   conda activate ros2
+   ```
+
+1. Install ROS2
+   ```
+   conda install -c robostack ros-humble-desktop
+   ```
+1. Install Gazebo: Deactivate the ROS2 environment
+   ```bash
+   conda deactivate
+   ```
+1. Install Gazebo using Homebrew
+   ```
+   brew install gazebo
+   ```
+1. Install additional ROS2-Gazebo packages
+    
+1. Activate the ROS2 environment
+   ```bash
+   conda activate ros2
+   ```
+1. Install Gazebo ROS packages
+   ```bash
+   conda install -c robostack ros-humble-gazebo-ros ros-humble-gazebo-ros-pkgs
+   ```
+1. Test the installation: # Run Gazebo GUI:
+   ```bash
+   gazebo
+   ```
+
+1. Run RViz2
+   ```bash
+   rviz2
+   ```
+
