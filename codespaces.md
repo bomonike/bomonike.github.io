@@ -1,5 +1,8 @@
 codespaces.md
 
+<!-- git commit -m "update codespaces.md"
+-->
+
 GitHub Codespaces is a SaaS browser-based execution environment for GitHub repositories
 
 GitHub Codespaces provides virtual machines for you to write, run, and debug code directly in your browser or accessed from Visual Studio Code, PyCharm, and other IDEs (after installing the GitHub Codespaces extension). 
@@ -39,9 +42,15 @@ What is GitHub Codespaces?
 
 ## Licensing
 
-If you're on a free plan, be mindful of your usage limits, as each GitHub account has a monthly quota of 60 free Codespaces hours per month.
+Students and educational organizations can use codespaces to work on public repositories for free.
+
+Sign up at 
+<a target="_blank" href="https://education.github.com/pack">https://education.github.com/pack</a>
 
 Enterprise and organization members can use codespaces to work on private repositories.
+
+To avoid charges, schedule your codespaces usage.
+Each GitHub account has a monthly quota of 60 free Codespaces hours per month.
 
 Educational GitHub students can use codespaces to work on public repositories for free.
 
