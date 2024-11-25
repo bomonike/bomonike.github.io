@@ -1,6 +1,6 @@
 codespaces.md
 
-<!-- git commit -m "update codespaces.md"
+<!-- git commit -m "v002 + gitub education :codespaces.md"
 -->
 
 GitHub Codespaces is a SaaS browser-based execution environment for GitHub repositories
