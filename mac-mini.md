@@ -1,9 +1,30 @@
 ---
-change: git commit -m"v003 + monitors :mac-mini.md"
+change: git commit -m"v005 + library :mac-mini.md"
 ---
+
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini.md</a>.
 
 Since October 2024, the 2024 Mac Mini has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance.
+
+## Physicals
+
+Most reviewers focus on the specs and performance of the Mac Mini
+and complain about Power button on the bottom corner.
+   * PROTIP: there are 3D printed to put that on the side. And many let the unit sleep and use the GUI to shut down anyway. <a target="_blank" href="https://youtube.com/shorts/DJ8HQfF_ghQ?si=7vC-llZ0r5L4oOYr">A Reddit user shows how to 3D print a stand that is also a giant power on and off button</a>.
+
+But I think that the revolution is the form factor.
+
+PROTIP: Like other mini PCs, students can run local machine using the internet provided in <strong>school and public libraries</strong>. Its Wi-Fi 6E (802.11ax) means you can sit in a corner at Starbucks.
+
+In such a use case, even though its speaker is adequate, you'd wear a headphone connected via Bluetooth or through the 3.5 mm headphone jack. Use of a microphone for advanced AI use is problematic, though.
+The mac Mini has a Tensor chip for Apple Intelligence features such as Smart Search.
+
+Physically, the 5 inch square 2024 Mac Mini is smaller than the previous Mac Mini.
+So it can be <strong>stuffed into a bag or backpack</strong> along your own small keyboard and mouse (if you are afraid of others' germs). PROTIP: Get a Bluetooth-enabled keyboard and mouse. Some brands provide a single dongle to connect to both.
+
+
+
+## Enough Memory?
 
 The macOS operating system takes up 6 GB disk space.
 
@@ -12,8 +33,6 @@ The base model has 16 GB RAM and 256 GB SSD with Thunderbolt 4.
 
 The Pro model has 24 GB RAM and 512 GB SSD with Thunderbolt 5.
    * Its Thunderbolt 5 is rated to carry up to 80 Gbps and supply up to 250W of power.
-
-## Enough Memory
 
 "The 16 GB RAM is enough for typical video editing and 3D graphics." is the concensus of many reviewers.
 
@@ -125,24 +144,6 @@ Fan on the bottom, with air entering from the front and exiting from the back.
 Benchmarks found that the base unit consumers 2 Watts on light load and 20 watts at full load.
 35 W max.
 That's a third of what Windows machines consume.
-
-
-## Physicals
-
-Physically, the 5 inch square 2024 Mac Mini is smaller than the previous Mac Mini.
-
-Power button on the bottom corner.
-But there are 3D printed to put that on the side.
-And many let the unit sleep and use the GUI to shut down anyway.
-<a target="_blank" href="https://youtube.com/shorts/DJ8HQfF_ghQ?si=7vC-llZ0r5L4oOYr">A Reddit user shows how to 3D print a stand that is also a giant power on and off button</a>.
-
-The mac Mini has a Tensor chip for Apple Intelligence features such as Smart Search.
-
-Wi-Fi 6E (802.11ax)3
-
-Speaker is adequate.
-
-There is a 3.5 mm headphone jack.
 
 
 ## Additional to buy
