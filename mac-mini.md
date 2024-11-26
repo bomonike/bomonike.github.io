@@ -1,6 +1,17 @@
+---
+change: git commit -m"v003 + monitors :mac-mini.md"
+---
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini.md</a>.
 
 Since October 2024, the 2024 Mac Mini has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance.
+
+The macOS operating system takes up 6 GB disk space.
+
+The base model has 16 GB RAM and 256 GB SSD with Thunderbolt 4.
+   * Its Thunderbolt 4 is rated to carry up to 40 Gbps and supply up to 100W of power.
+
+The Pro model has 24 GB RAM and 512 GB SSD with Thunderbolt 5.
+   * Its Thunderbolt 5 is rated to carry up to 80 Gbps and supply up to 250W of power.
 
 ## Enough Memory
 
@@ -25,7 +36,12 @@ Buyers using Costco's credit card get 4% money-back at the end of the year. That
 
 Although the 2024 Mac Mini is physically smaller than the previous M3-based Mac Minis, it is still a <strong>desktop</strong> computer that plugs into a wall outlet. It's NOT really "portable".
 
-The 2024 Mac Mini only comes with a power chord. It does NOT come with a keyboard, mouse, trackpad, monitor, battery, nor SD slot. All that costs more money. You'll have to plug and unplug all those components every time you move it. 
+[_] To make the 2024 Mac Mini portable, get a big battery designed for the MacBook M4 Pro.
+
+However, the Mac Mini does NOT come with a keyboard, mouse, trackpad, monitor, battery, nor SD slot. 
+You'll have to plug and unplug all those components every time you move it. 
+
+And all that costs more money. 
 
 If you have a Bluetooth keyboard, mouse, or trackpad for your iPad, use that on the Mac Mini.
 
@@ -180,7 +196,31 @@ Thunderbolt 4 cables are rated to carry up to 40Gps and supply up to 100W of pow
 By contrast, PCI3 cables are rated to carry up to 20Gps and supply up to 50W of power.
 
 
-## Displays strategy
+## Displays 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=ojwowaY3Ccw">VIDEO</a>:
+Macs are built to <strong>displays text sharper</strong> at 5K (5120 x 2880) resolution than at 4K (3840 x 2160) resolution. That 77% more display space enable controls for video editing on the same display as the 4K image being manipulated.
+
+QUESTION: What is the technique for apps to select the 4K image in the middle of a 5K display?
+
+Alternative 5K displays are from BenQ, LG, ViewSonic, Samsung, Asus, etc. 
+
+Apple's 27" Studio Display for 5K are <a target="_blank" href="https://www.amazon.com/dp/B09ZJQK9Q4">$1,299.99 on Amazon</a>. That's without a stand. But it enables configuration from a mac, with other brands can't offer. You can adjust brightness or volume using an Apple keyboard. 
+
+A 27" Samsung ViewFinity S9 brand 5K display with Thunderbolt 4 port with Matte Display, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> PROTIP: 
+   * It also has a DisplayPort which you can ignore.
+   * Its Thunderbolt 4 port is rated to carry up to 80Gbps and can power the mac. 
+   * Separate the power brick to keep the monitor cooler which will help with longevity.
+   * When plugged into a mac the 'allow display' option pops up for a split second before disappearing. If you can quickly click enter it will pair. Then calibrate using a Samsung phone. Its setup is confusing. 
+   * As soon as it connects to the internet it automatically downloads 3GB of bloatware (for AirPlay, Smart TV Apps, Gaming Hub). It won't work unless you connect it to the internet just to accept the license agreement. 
+   * Keep its remote around because you'll have to use the remote to turn it on after sleeping. The monitor has no physical controls. 
+   * Speakers are low power. That may not be a problem for those who use headphones or enjoy the bass from separate speakers.
+
+A 27" Asus brand 5K HDR display with USB-C ports is available for <a target="_blank" href="https://www.amazon.com/dp/B0D6C6F2L8/">$799 on Amazon</a>. 
+
+A 32-inch 4K (3440x1440) UHD 2160p 240Hz 1ms(GTG) response time curved monitor from Samsung (2022 QLED Neo G8) was <a target="_blank" href="https://www.amazon.com/SAMSUNG-Odyssey-FreeSync-Ultrawide-DisplayPort/dp/B09ZH3WM47/">$739.99 on Amazon during Black Friday</a>
+
+LCD monitors are cheapers than OLED monitors, which have darker blacks and lower contrast.
 
 [_] If you have a single HD monitor to display 1920x1080 resolution at 60Hz, any HDMI cable can be connected from either front USB-C ports.
 
@@ -188,7 +228,7 @@ By contrast, PCI3 cables are rated to carry up to 20Gps and supply up to 50W of 
 
 [_] To display a 4K monitor at 240Hz or an 8K resolution at 60Hz, use <strong>Thunderbolt 4 cables</strong> to connect to the back Thunderbolt ports.
 
-[_] For two displays, one can be up to 8K resolution at 60Hz with a 5K also at 60Hz, get <strong>Thunderbolt 4 cables</strong> for the back Thunderbolt ports.
+[_] For two displays, one can be up to 8K (7680 × 4320) resolution at 60Hz with a 5K (5120x2880) also at 60Hz through <strong>Thunderbolt 4 cables</strong> on the back Thunderbolt ports.
 
 [_] For 3 displays, buy two Thunderbolt 4 cables for connecting to the back Thunderbolt 4 ports. One is a 6K display at 60Hz and the other is a 5K display at 60Hz.
 
@@ -224,3 +264,4 @@ Corning makes a $353 fibre-optic Thunderbolt cable that extends 5 meters (16 fee
 * https://www.youtube.com/watch?v=wK6yv3aAWcA "MOTHER OF ALL STRESS TESTS! 🥵 Logic Pro, Blender, After Effects, Llama LLMs" tested the largest of models to identify when system overloads occur : 100-200 tracks. Local Llama 8 billion model.
 * https://www.tomsguide.com/computing/desktop-computers/m4-mac-mini-unveiled-with-stunningly-compact-design-over-50-percent-smaller-thunderbolt-5-support-and-up-to-64gb-of-unified-memory
 * https://www.youtube.com/watch?v=RlVEOw7WLtM by Craig Neidel
+* https://www.youtube.com/watch?v=ARZXJHr6H7A "The Mac Mini base model can handle programming with  VSCode and Olamma" recommends more RAM for virtualization.
