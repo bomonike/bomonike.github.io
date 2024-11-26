@@ -207,7 +207,7 @@ Alternative 5K displays are from BenQ, LG, ViewSonic, Samsung, Asus, etc.
 
 Apple's 27" Studio Display for 5K are <a target="_blank" href="https://www.amazon.com/dp/B09ZJQK9Q4">$1,299.99 on Amazon</a>. That's without a stand. But it enables configuration from a mac, with other brands can't offer. You can adjust brightness or volume using an Apple keyboard. 
 
-A 27" Samsung ViewFinity S9 brand 5K display with Thunderbolt 4 port with Matte Display, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> PROTIP: 
+A 27" Samsung ViewFinity S9 brand 5K display with Matte Display, Thunderbolt 4 port, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> What's its PPI? PROTIP: 
    * It also has a DisplayPort which you can ignore.
    * Its Thunderbolt 4 port is rated to carry up to 80Gbps and can power the mac. 
    * Separate the power brick to keep the monitor cooler which will help with longevity.
