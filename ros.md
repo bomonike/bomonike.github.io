@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-11-01"
+date: "2024-11-27"
 change: git commit -m"v004 + install steps :ros.md"
 file: "ros"
 title: "ROS (Robotic Operating System)"
