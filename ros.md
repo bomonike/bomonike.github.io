@@ -484,9 +484,13 @@ by Logan Hallucinates
 
 https://education.vex.com/stemlabs/cs
 
-## Install ROS2 & Gazebo
+
+## Install ROS2 and Gazebo on Ubuntu
+
+https://releases.ubuntu.com/noble/
 
 1. Install Homebrew
+
 1. Install Conda
 
 1. Install ROS2 using RoboStack
@@ -533,4 +537,3 @@ https://education.vex.com/stemlabs/cs
    ```bash
    rviz2
    ```
-
