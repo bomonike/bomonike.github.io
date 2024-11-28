@@ -1,8 +1,8 @@
 ---
-change: git commit -m"v008 + whine img seq. :mac-mini.md"
+lastchange: git commit -m"v009 + rm .md in url :mac-mini.md"
 ---
 
-This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini.md</a>.
+This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini</a>.
 
 Since October 2024, the 2024 Mac Mini has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance.
 
