@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2024-11-01"
-change: "v003 + Thoughtworks Tech Radar :ros.md"
+change: git commit -m"v004 + install steps :ros.md"
 file: "ros"
 title: "ROS (Robotic Operating System)"
 excerpt: "Learn the operating system for controlling simple robots"
@@ -490,12 +490,11 @@ https://education.vex.com/stemlabs/cs
 https://releases.ubuntu.com/noble/
 
 1. Install Homebrew
-
 1. Install Conda
 
 1. Install ROS2 using RoboStack
 
-   Create a new Conda environment
+1. Create a new Conda environment
 
    ```bash
    conda create -n ros2 python=3.9
