@@ -1,16 +1,19 @@
 --- 
-lastchange: git commit -m "v003 + gitub education :codespaces.md"
+lastchange: git commit -m "v004 + remote:codespaces.md"
 ---
 
 GitHub Codespaces is a SaaS (Software-as-a-Service) like Microsoft 360 and Google Colab.
 
-GitHub Codespaces works similar to GitHub Colab it that it provides a browser-based execution environment for your GitHub repositories.
-But, unlike Google Colab, Codespaces does not require coding in Jupyter Notebooks.
-Codespaces supports many programming languages.
-
-No complicated configuration of local development environment is required.
+GitHub Codespaces works similar to GitHub Colab it that it provides a browser-based (remote) <strong>execution environment</strong> for your GitHub repositories.
 
 GitHub Codespaces on its servers <strong>virtual machines</strong> for you to write, run, and debug code directly in your browser on a Chromebook or tablet.
+
+No complicated configuration of a development environment locally on your computer is required.
+
+However, you'll need constant connection to a fast internet connection, which can be expensive.
+
+But, unlike Google Colab, Codespaces does not require coding in Jupyter Notebooks.
+Codespaces supports many programming languages.
 
 Instances can also be accessed locally on your laptop or desktop from Visual Studio Code, PyCharm, and other IDEs (after installing the GitHub Codespaces extension). 
 

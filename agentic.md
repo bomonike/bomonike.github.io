@@ -22,3 +22,47 @@ https://www.youtube.com/watch?v=kAk131n5aA4
 
 https://www.skool.com/ai-automations-mastery-7642/classroom/0c39a268?md=91e6a57596b54616968beb2a9838923a
 AI Automation Agency Wizards
+
+## Andrew Ng
+
+https://www.youtube.com/watch?v=KrRD7r7y7NY
+Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning | BUILD 2024 Keynote
+
+## Explainers
+
+https://www.youtube.com/watch?v=2-JV8UxegWE
+What is AI Agent? | Simple Explanation of an AI Agent
+by codebasics
+
+https://www.youtube.com/watch?v=IivxYYkJ2DI
+AI Agents and AI Assistants: A Contrast in Function
+byIBM Technology
+
+https://www.youtube.com/watch?v=eDnA1pVPS64
+Mastering the AI Agent Stack: Building Smarter, Scalable Systems
+by sam_mk87
+
+https://www.youtube.com/watch?v=93fCvFkY1Lg
+Product Management Is Dead, So What Are We Doing Instead? | Lenny & Friends Summit 2024
+Lenny's Podcast
+Claire Vo @clairevo is the Chief Product Officer at LaunchDarkly and the creator of ChatPRD. 
+https://www.chatprd.ai/blog/product-management-is-dead
+She previously held leadership roles at Optimizely and Color. Claire is known for her forward-thinking approach to product management and her expertise in AI-powered product development. In this talk, she discusses:
+• Why product management as we know it is dying
+• How AI is transforming product development faster than we expect
+• The rise of AI-powered "triple threats" who can handle product, design, and engineering
+• What product leaders need to do to stay relevant in the AI era
+• How to build and manage AI-powered product teams
+
+
+https://www.youtube.com/watch?v=KY8n96Erp5Q
+Why Agent Frameworks Will Fail (and what to use instead)
+Dave Ebbelaar
+
+https://www.youtube.com/watch?v=kJvXT25LkwA
+How I Made AI Assistants Do My Work For Me: CrewAI
+Maya Akim
+
+https://www.youtube.com/watch?v=pcWKJ_yvf1M
+Microsoft Launches 10 NEW AI Agents
+Sam Witteveen
