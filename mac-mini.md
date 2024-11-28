@@ -1,18 +1,24 @@
 ---
-change: git commit -m"v006 + speech to text :mac-mini.md"
+change: git commit -m"v008 + whine img seq. :mac-mini.md"
 ---
 
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini.md</a>.
 
 Since October 2024, the 2024 Mac Mini has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance.
 
-## Physicals
+## Physical Portability?
 
 Most reviewers focus on the specs and performance of the Mac Mini
-and complain about Power button on the bottom corner.
+and whine about Power button on the bottom corner.
    * PROTIP: there are 3D printed to put that on the side. And many let the unit sleep and use the GUI to shut down anyway. <a target="_blank" href="https://youtube.com/shorts/DJ8HQfF_ghQ?si=7vC-llZ0r5L4oOYr">A Reddit user shows how to 3D print a stand that is also a giant power on and off button</a>.
 
 But I think that the revolution is the form factor.
+
+The 2024 Mac Mini only comes with a power cable that plugs into a wall outlet. 
+
+[_] PROTIP: To make the 2024 Mac Mini portable, get a <strong>big battery</strong> with enough ampere to last for a day, like those designed for use with MacBook Pro laptops.
+
+This approach may be fine because you can now <strong>reuse components</strong> from another desktop computer or want to get exactly the componenents you want, such as an 5K/8K monitor, ergonomic keyboard, etc. The advantage is that you can use a nice monitor that's bigger and better than on any laptop.
 
 PROTIP: Like other mini PCs, students can run local machine using the internet provided in <strong>school and public libraries</strong>. Its Wi-Fi 6E (802.11ax) means you can sit in a corner at Starbucks.
 
@@ -22,6 +28,68 @@ In such a use case, even though its speaker is adequate, you'd wear a headphone 
 
 Physically, the 5 inch square 2024 Mac Mini is smaller than the previous Mac Mini.
 So it can be <strong>stuffed into a bag or backpack</strong> along your own small keyboard and mouse (if you are afraid of others' germs). PROTIP: Get a Bluetooth-enabled keyboard and mouse. Some brands provide a single dongle to connect to both.
+
+You'll still have to plug and unplug all those components every time you move it. 
+
+PROTIP: If you use several computers at once with hard-wired keyboard and mouse, consider getting a <strong>KVM switch</strong> to switch among them from a single keyboard and mouse.
+
+
+### iPad as monitor
+
+This is not for heavy graphics or video editing. Nevertheless...
+
+BLAH: You may setup the iPad as a secondary monitor in Apple System Settings, Displays. But <a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=3m4s">VIDEO</a>: macOS disconnects from the iPad when no monitor is connected to the Mac Mini. 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=5m5s">VIDEO</a>: The workaround is to open the App Store on your iPad to installthe <a target="_blank" href="https://apps.apple.com/us/app/hdmi-monitor-orion/id6459355072">free "HDMI Monitor - Orion" app (from "Lux Optics Incorporate")</a> which can make use of a USB-C to HDMI adapter. Some dongles also have a head to connec to an older VGA monitor.
+
+## Display Monitors
+
+<a target="_blank" href="https://www.youtube.com/watch?v=ojwowaY3Ccw">VIDEO</a>:
+Macs are built to <strong>displays text sharper</strong> at 5K (5120 x 2880) resolution than at 4K (3840 x 2160) resolution. That 77% more display space enable controls for video editing on the same display as the 4K image being manipulated.
+
+<img alt="mac-mini-5k-605x341.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1732653874/mac-mini-5k-605x341_w41d99.png" />
+
+QUESTION: What is the technique for apps to select the 4K image in the middle of a 5K display?
+
+Alternative 5K displays are from BenQ, LG, ViewSonic, Samsung, Asus, etc. 
+
+Apple's 27" Studio Display for 5K are <a target="_blank" href="https://www.amazon.com/dp/B09ZJQK9Q4">$1,299.99 on Amazon</a>. That's without a stand. But it enables configuration from a mac, with other brands can't offer. You can adjust brightness or volume using an Apple keyboard. 
+
+A 27" Samsung ViewFinity S9 brand 5K display with Matte Display, Thunderbolt 4 port, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> What's its PPI? PROTIP: 
+   * It also has a DisplayPort which you can ignore.
+   * Its Thunderbolt 4 port is rated to carry up to 80Gbps and can power the mac. 
+   * Separate the power brick to keep the monitor cooler which will help with longevity.
+   * When plugged into a mac the 'allow display' option pops up for a split second before disappearing. If you can quickly click enter it will pair. Then calibrate using a Samsung phone. Its setup is confusing. 
+   * As soon as it connects to the internet it automatically downloads 3GB of bloatware (for AirPlay, Smart TV Apps, Gaming Hub). It won't work unless you connect it to the internet just to accept the license agreement. 
+   * Keep its remote around because you'll have to use the remote to turn it on after sleeping. The monitor has no physical controls. 
+   * Speakers are low power. That may not be a problem for those who use headphones or enjoy the bass from separate speakers.
+
+A 27" Asus brand 5K HDR display with USB-C ports is available for <a target="_blank" href="https://www.amazon.com/dp/B0D6C6F2L8/">$799 on Amazon</a>. 
+
+A 32-inch 4K (3440x1440) UHD 2160p 240Hz 1ms(GTG) response time curved monitor from Samsung (2022 QLED Neo G8) was <a target="_blank" href="https://www.amazon.com/SAMSUNG-Odyssey-FreeSync-Ultrawide-DisplayPort/dp/B09ZH3WM47/">$739.99 on Amazon during Black Friday</a>
+
+LCD monitors are cheapers than OLED monitors, which have darker blacks and lower contrast.
+
+[_] If you have a single HD monitor to display 1920x1080 resolution at 60Hz, any HDMI cable can be connected from either front USB-C ports.
+
+[_] To display a 4K monitor at 60Hz, get HDMI 3.2 HD cables to connect to a front USB-C port.
+
+[_] To display a 4K monitor at 240Hz or an 8K resolution at 60Hz, use <strong>Thunderbolt 4 cables</strong> to connect to the back Thunderbolt ports.
+
+[_] For two displays, one can be up to 8K (7680 × 4320) resolution at 60Hz with a 5K (5120x2880) also at 60Hz through <strong>Thunderbolt 4 cables</strong> on the back Thunderbolt ports.
+
+[_] For 3 displays, buy two Thunderbolt 4 cables for connecting to the back Thunderbolt 4 ports. One is a 6K display at 60Hz and the other is a 5K display at 60Hz.
+
+[_] To connect up to 4 6K screens, the <a target="_blank" href="https://ivanky.com/products/ivanky-docking-station-fusiondock-max-1?ref=3gcsMvfWaBjc__">$439.99 Ivanki Fusion Dock 1</a> NEWOFFERS5 <a target="_blank" href="https://www.amazon.com/dp/B07ZVY133Q&t=1m23s">VIDEO</a> plugs into the Mac with <strong>>dual Thunderbolt 4 cable</a> for MacBook Pros.
+
+[_] <a target="_blank" href="https://www.amazon.com/Anker-Docking-Station-Triple-Display/dp/B08333333333333333">$169.95 Anker 575 USB-C Docking Station</a> (13-in-1), Triple Display, 4K HDMI, 10 Gbps USB-C and 5 Gbps USB-A Data, 85W Charging for Laptop, 18W Charging for Phone, Ethernet, Audio, SD 3.0</a>
+
+REMEMBER: Thunderbolt cables may not support USB-C ports.
+
+Thunderbolt cables are limited to 1 meter (3.3 feet).
+Corning makes a $353 fibre-optic Thunderbolt cable that extends 5 meters (16 feet). But it doesn't work with USB-C.
+
+NOTE: Hyper is working on a Thunderbolt 5 dock to support 8K displays.
 
 
 ## Enough Memory?
@@ -41,7 +109,7 @@ Its 10-core M4 chip has the fastest single-core performance among all Macs. Acco
 "Those who use Microsoft Office and a few light productivity apps will likely be ok with the base model." 
 <a target="_blank" href="https://www.youtube.com/watch?v=8Uuu046EE28&t=6m33s">VIDEO</a>: Elevated used UL's Office Productivity benchmark to find the base model outperforming other mini Intel PCs:
    * Beelink SER9 (R9 HX370)
-   * Geekom GT1 (U9-185H)
+   * Geekom GT1 (U9-185H) 32GB RAM 1TB SSD <a target="_blank" href="https://www.amazon.com/GEEKOM-i7-13620H-4-9GHz-Desktop-Computers/dp/B0CHF3DY7S/">$466</a>
    * Geekom A8 (U9-8945HS)
    * HP Stream 14 (R3 H370)
 
@@ -52,29 +120,7 @@ Its 10-core M4 chip has the fastest single-core performance among all Macs. Acco
 is enticing. Apple provides a $100 discount to students with an .edu email.
 Buyers using Costco's credit card get 4% money-back at the end of the year. That' $28.
 
-Although the 2024 Mac Mini is physically smaller than the previous M3-based Mac Minis, it is still a <strong>desktop</strong> computer that plugs into a wall outlet. It's NOT really "portable".
-
-[_] To make the 2024 Mac Mini portable, get a big battery designed for the MacBook M4 Pro.
-
-However, the Mac Mini does NOT come with a keyboard, mouse, trackpad, monitor, battery, nor SD slot. 
-You'll have to plug and unplug all those components every time you move it. 
-
 And all that costs more money. 
-
-If you have a Bluetooth keyboard, mouse, or trackpad for your iPad, use that on the Mac Mini.
-
-PROTIP: If you use several computers at once with hard-wired keyboard and mouse, consider getting a <strong>KVM switch</strong> to switch among them from a single keyboard and mouse.
-
-But that may be fine if you can reuse components from another desktop computer or want to get exactly the componenents you want, such as an 8K monitor, ergonomic keyboard, etc.
-
-
-### iPad as monitor
-
-This is not for heavy graphics or video editing. Nevertheless...
-
-BLAH: You may setup the iPad as a secondary monitor in Apple System Settings, Displays. But <a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=3m4s">VIDEO</a>: macOS disconnects from the iPad when no monitor is connected to the Mac Mini. 
-
-<a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=5m5s">VIDEO</a>: The workaround is to open the App Store on your iPad to installthe <a target="_blank" href="https://apps.apple.com/us/app/hdmi-monitor-orion/id6459355072">free "HDMI Monitor - Orion" app (from "Lux Optics Incorporate")</a> which can make use of a USB-C to HDMI adapter. Some dongles also have a head to connec to an older VGA monitor.
 
 
 ## Enough Storage
@@ -172,11 +218,6 @@ That's a third of what Windows machines consume.
 
 * HDMI 8K Ultra HD cable - Thunderbolt 5 video output via DisplayPort 2.1.  Bandwidth up to 48Gbps, 8K@ 60Hz/4K@120Hz, HDR10+, Dynamic HDR, Dolby Atmos, DTS:X, eARC, Ethernet, CEC, Zinc alloy housing, Gold-plated connectors
 
-* PROTIP: Get monitors that link with each other. Three displays are supported (2560x1440 @ 60Hz)
-   * 4K resolution at 240Hz
-   * 8K resolution at 60Hz
-   * 6K/4K resolution at 60Hz
-
 Cinebench R23: 1296 points
 
 
@@ -194,54 +235,6 @@ But they are expensive and not widely unavailable.
 Thunderbolt 4 cables are rated to carry up to 40Gps and supply up to 100W of power.
 
 By contrast, PCI3 cables are rated to carry up to 20Gps and supply up to 50W of power.
-
-
-## Displays 
-
-<a target="_blank" href="https://www.youtube.com/watch?v=ojwowaY3Ccw">VIDEO</a>:
-Macs are built to <strong>displays text sharper</strong> at 5K (5120 x 2880) resolution than at 4K (3840 x 2160) resolution. That 77% more display space enable controls for video editing on the same display as the 4K image being manipulated.
-
-QUESTION: What is the technique for apps to select the 4K image in the middle of a 5K display?
-
-Alternative 5K displays are from BenQ, LG, ViewSonic, Samsung, Asus, etc. 
-
-Apple's 27" Studio Display for 5K are <a target="_blank" href="https://www.amazon.com/dp/B09ZJQK9Q4">$1,299.99 on Amazon</a>. That's without a stand. But it enables configuration from a mac, with other brands can't offer. You can adjust brightness or volume using an Apple keyboard. 
-
-A 27" Samsung ViewFinity S9 brand 5K display with Matte Display, Thunderbolt 4 port, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> What's its PPI? PROTIP: 
-   * It also has a DisplayPort which you can ignore.
-   * Its Thunderbolt 4 port is rated to carry up to 80Gbps and can power the mac. 
-   * Separate the power brick to keep the monitor cooler which will help with longevity.
-   * When plugged into a mac the 'allow display' option pops up for a split second before disappearing. If you can quickly click enter it will pair. Then calibrate using a Samsung phone. Its setup is confusing. 
-   * As soon as it connects to the internet it automatically downloads 3GB of bloatware (for AirPlay, Smart TV Apps, Gaming Hub). It won't work unless you connect it to the internet just to accept the license agreement. 
-   * Keep its remote around because you'll have to use the remote to turn it on after sleeping. The monitor has no physical controls. 
-   * Speakers are low power. That may not be a problem for those who use headphones or enjoy the bass from separate speakers.
-
-A 27" Asus brand 5K HDR display with USB-C ports is available for <a target="_blank" href="https://www.amazon.com/dp/B0D6C6F2L8/">$799 on Amazon</a>. 
-
-A 32-inch 4K (3440x1440) UHD 2160p 240Hz 1ms(GTG) response time curved monitor from Samsung (2022 QLED Neo G8) was <a target="_blank" href="https://www.amazon.com/SAMSUNG-Odyssey-FreeSync-Ultrawide-DisplayPort/dp/B09ZH3WM47/">$739.99 on Amazon during Black Friday</a>
-
-LCD monitors are cheapers than OLED monitors, which have darker blacks and lower contrast.
-
-[_] If you have a single HD monitor to display 1920x1080 resolution at 60Hz, any HDMI cable can be connected from either front USB-C ports.
-
-[_] To display a 4K monitor at 60Hz, get HDMI 3.2 HD cables to connect to a front USB-C port.
-
-[_] To display a 4K monitor at 240Hz or an 8K resolution at 60Hz, use <strong>Thunderbolt 4 cables</strong> to connect to the back Thunderbolt ports.
-
-[_] For two displays, one can be up to 8K (7680 × 4320) resolution at 60Hz with a 5K (5120x2880) also at 60Hz through <strong>Thunderbolt 4 cables</strong> on the back Thunderbolt ports.
-
-[_] For 3 displays, buy two Thunderbolt 4 cables for connecting to the back Thunderbolt 4 ports. One is a 6K display at 60Hz and the other is a 5K display at 60Hz.
-
-[_] To connect up to 4 6K screens, the <a target="_blank" href="https://ivanky.com/products/ivanky-docking-station-fusiondock-max-1?ref=3gcsMvfWaBjc__">$439.99 Ivanki Fusion Dock 1</a> NEWOFFERS5 <a target="_blank" href="https://www.amazon.com/dp/B07ZVY133Q&t=1m23s">VIDEO</a> plugs into the Mac with <strong>>dual Thunderbolt 4 cable</a> for MacBook Pros.
-
-[_] <a target="_blank" href="https://www.amazon.com/Anker-Docking-Station-Triple-Display/dp/B08333333333333333">$169.95 Anker 575 USB-C Docking Station</a> (13-in-1), Triple Display, 4K HDMI, 10 Gbps USB-C and 5 Gbps USB-A Data, 85W Charging for Laptop, 18W Charging for Phone, Ethernet, Audio, SD 3.0</a>
-
-REMEMBER: Thunderbolt cables may not support USB-C ports.
-
-Thunderbolt cables are limited to 1 meter (3.3 feet).
-Corning makes a $353 fibre-optic Thunderbolt cable that extends 5 meters (16 feet). But it doesn't work with USB-C.
-
-* Hyper is working on a Thunderbolt 5 dock to support 8K displays.
 
 
 
@@ -265,3 +258,4 @@ Corning makes a $353 fibre-optic Thunderbolt cable that extends 5 meters (16 fee
 * https://www.tomsguide.com/computing/desktop-computers/m4-mac-mini-unveiled-with-stunningly-compact-design-over-50-percent-smaller-thunderbolt-5-support-and-up-to-64gb-of-unified-memory
 * https://www.youtube.com/watch?v=RlVEOw7WLtM by Craig Neidel
 * https://www.youtube.com/watch?v=ARZXJHr6H7A "The Mac Mini base model can handle programming with  VSCode and Olamma" recommends more RAM for virtualization.
+* https://www.youtube.com/watch?v=QUf6W4s14ig stress tests
