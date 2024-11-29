@@ -1,5 +1,5 @@
 ---
-lastchange: git commit -m"v009 + rm .md in url :mac-mini.md"
+lastchange: git commit -m"v010 + mini keyboard :mac-mini.md"
 ---
 
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini</a>.
@@ -14,7 +14,7 @@ and whine about Power button on the bottom corner.
 
 But I think that the revolution is the form factor.
 
-The 2024 Mac Mini only comes with a power cable that plugs into a wall outlet. 
+The 2024 Mac Mini only comes with a power cable that plugs into a wall outlet.
 
 [_] PROTIP: To make the 2024 Mac Mini portable, get a <strong>big battery</strong> with enough ampere to last for a day, like those designed for use with MacBook Pro laptops.
 
@@ -29,16 +29,21 @@ In such a use case, even though its speaker is adequate, you'd wear a headphone 
 Physically, the 5 inch square 2024 Mac Mini is smaller than the previous Mac Mini.
 So it can be <strong>stuffed into a bag or backpack</strong> along your own small keyboard and mouse (if you are afraid of others' germs). PROTIP: Get a Bluetooth-enabled keyboard and mouse. Some brands provide a single dongle to connect to both.
 
-You'll still have to plug and unplug all those components every time you move it. 
+You'll still have to plug and unplug all those components every time you move it.
 
 PROTIP: If you use several computers at once with hard-wired keyboard and mouse, consider getting a <strong>KVM switch</strong> to switch among them from a single keyboard and mouse.
+
+[_] The Foldable Bluetooth Keyboard <strong>with Touchpad</trong> for macOS and mobile phones is
+<a target="_blank" href="https://www.amazon.com/Foldable-Bluetooth-Keyboard-Multi-Device-Pocket-Sized/dp/B0CYLT7TNS/ref=sr_1_3?crid=34FDCJ443KGCU&dib=eyJ2IjoiMSJ9.yyuPttKea4a7gyIFTvIMCfSCTO4u77dGIGKm5QVZ2rHJGEIwGl8vEfWjIn82S6aGFy0h1AYjN9mGuawr4uJiekMP6BQdJM3sosHq8xBMF3hgFm0-I6YD1U5SyPhSX0Rwhy6srTK0MfODenCu-Q1F2w8U0hhW0xRatASzAZszYlyqqRVsK5ukavjZRgEjayOzEh6aNH4POUjEkB47PKSwnVJuXxQm8p6Z80i4Hhllohw.SS_MtMsf3tST0uqIFYp46nwt8ZQBXiHNMVlEF6xvfDI&dib_tag=se&keywords=Seenda+Foldable+Bluetooth+Keyboard+with+Touchpad%2C+Folding+Portable+Travel+Keyboard%2C+Rechargeable+Wireless+Mini+Keyboard+UK+Layout+for+iOS+Android+Windows+PC+Tablet+Mobile+Phone+iphone+ipad%2C+Black&qid=1732847495&sprefix=seenda+foldable+bluetooth+keyboard+with+touchpad%2C+folding+portable+travel+keyboard%2C+rechargeable+wireless+mini+keyboard+uk+layout+for+ios+android+windows+pc+tablet+mobile+phone+iphone+ipad%2C+black%2Caps%2C274&sr=8-3">
+white $26.59 from Seenda on Amazon</a>. There's also the
+<a target="_blank" href="https://www.amazon.com/Samsers-Foldable-Bluetooth-Full-Size-Rechargeable/dp/B0BK4J5LSW/">black $37.38 Samsers on Amazon during Black Friday</a>
 
 
 ### iPad as monitor
 
 This is not for heavy graphics or video editing. Nevertheless...
 
-BLAH: You may setup the iPad as a secondary monitor in Apple System Settings, Displays. But <a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=3m4s">VIDEO</a>: macOS disconnects from the iPad when no monitor is connected to the Mac Mini. 
+BLAH: You may setup the iPad as a secondary monitor in Apple System Settings, Displays. But <a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=3m4s">VIDEO</a>: macOS disconnects from the iPad when no monitor is connected to the Mac Mini.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=LqH-QsGfxSA&t=5m5s">VIDEO</a>: The workaround is to open the App Store on your iPad to installthe <a target="_blank" href="https://apps.apple.com/us/app/hdmi-monitor-orion/id6459355072">free "HDMI Monitor - Orion" app (from "Lux Optics Incorporate")</a> which can make use of a USB-C to HDMI adapter. Some dongles also have a head to connec to an older VGA monitor.
 
@@ -51,20 +56,20 @@ Macs are built to <strong>displays text sharper</strong> at 5K (5120 x 2880) res
 
 QUESTION: What is the technique for apps to select the 4K image in the middle of a 5K display?
 
-Alternative 5K displays are from BenQ, LG, ViewSonic, Samsung, Asus, etc. 
+Alternative 5K displays are from BenQ, LG, ViewSonic, Samsung, Asus, etc.
 
-Apple's 27" Studio Display for 5K are <a target="_blank" href="https://www.amazon.com/dp/B09ZJQK9Q4">$1,299.99 on Amazon</a>. That's without a stand. But it enables configuration from a mac, with other brands can't offer. You can adjust brightness or volume using an Apple keyboard. 
+Apple's 27" Studio Display for 5K are <a target="_blank" href="https://www.amazon.com/dp/B09ZJQK9Q4">$1,299.99 on Amazon</a>. That's without a stand. But it enables configuration from a mac, with other brands can't offer. You can adjust brightness or volume using an Apple keyboard.
 
-A 27" Samsung ViewFinity S9 brand 5K display with Matte Display, Thunderbolt 4 port, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> What's its PPI? PROTIP: 
+A 27" Samsung ViewFinity S9 brand 5K display with Matte Display, Thunderbolt 4 port, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> What's its PPI? PROTIP:
    * It also has a DisplayPort which you can ignore.
-   * Its Thunderbolt 4 port is rated to carry up to 80Gbps and can power the mac. 
+   * Its Thunderbolt 4 port is rated to carry up to 80Gbps and can power the mac.
    * Separate the power brick to keep the monitor cooler which will help with longevity.
-   * When plugged into a mac the 'allow display' option pops up for a split second before disappearing. If you can quickly click enter it will pair. Then calibrate using a Samsung phone. Its setup is confusing. 
-   * As soon as it connects to the internet it automatically downloads 3GB of bloatware (for AirPlay, Smart TV Apps, Gaming Hub). It won't work unless you connect it to the internet just to accept the license agreement. 
-   * Keep its remote around because you'll have to use the remote to turn it on after sleeping. The monitor has no physical controls. 
+   * When plugged into a mac the 'allow display' option pops up for a split second before disappearing. If you can quickly click enter it will pair. Then calibrate using a Samsung phone. Its setup is confusing.
+   * As soon as it connects to the internet it automatically downloads 3GB of bloatware (for AirPlay, Smart TV Apps, Gaming Hub). It won't work unless you connect it to the internet just to accept the license agreement.
+   * Keep its remote around because you'll have to use the remote to turn it on after sleeping. The monitor has no physical controls.
    * Speakers are low power. That may not be a problem for those who use headphones or enjoy the bass from separate speakers.
 
-A 27" Asus brand 5K HDR display with USB-C ports is available for <a target="_blank" href="https://www.amazon.com/dp/B0D6C6F2L8/">$799 on Amazon</a>. 
+A 27" Asus brand 5K HDR display with USB-C ports is available for <a target="_blank" href="https://www.amazon.com/dp/B0D6C6F2L8/">$799 on Amazon</a>.
 
 A 32-inch 4K (3440x1440) UHD 2160p 240Hz 1ms(GTG) response time curved monitor from Samsung (2022 QLED Neo G8) was <a target="_blank" href="https://www.amazon.com/SAMSUNG-Odyssey-FreeSync-Ultrawide-DisplayPort/dp/B09ZH3WM47/">$739.99 on Amazon during Black Friday</a>
 
@@ -106,7 +111,7 @@ If apps need more RAM, the computer automatically swaps to the SSD, which is rat
 
 Its 10-core M4 chip has the fastest single-core performance among all Macs. According to Tom's Guide's use of GeekBench 5, the 2024 Mac Mini base model (at 3087) is 2.4 times faster than the 2021 Mac Mini M3.
 
-"Those who use Microsoft Office and a few light productivity apps will likely be ok with the base model." 
+"Those who use Microsoft Office and a few light productivity apps will likely be ok with the base model."
 <a target="_blank" href="https://www.youtube.com/watch?v=8Uuu046EE28&t=6m33s">VIDEO</a>: Elevated used UL's Office Productivity benchmark to find the base model outperforming other mini Intel PCs:
    * Beelink SER9 (R9 HX370)
    * Geekom GT1 (U9-185H) 32GB RAM 1TB SSD <a target="_blank" href="https://www.amazon.com/GEEKOM-i7-13620H-4-9GHz-Desktop-Computers/dp/B0CHF3DY7S/">$466</a>
@@ -120,7 +125,7 @@ Its 10-core M4 chip has the fastest single-core performance among all Macs. Acco
 is enticing. Apple provides a $100 discount to students with an .edu email.
 Buyers using Costco's credit card get 4% money-back at the end of the year. That' $28.
 
-And all that costs more money. 
+And all that costs more money.
 
 
 ## Enough Storage
@@ -134,7 +139,7 @@ When you upgrade the RAM, put the smaller SSD in an enclosure for use as a backu
 
 PROTIP: The 256 GB SSD hard drive on the base Mac Mini is actually two 128 GB chips (4x 64 GB chips) on the circuit board. So it's slower than a solid 256 GB drive. The SSD on the 512GB Mac Mini has two 256GB chips.
 
-<a target="_blank" href="https://www.youtube.com/watch?v=RlVEOw7WLtM&t=6m30s">VIDEO</a>: On the base Mac Mini, the internal256 GB SSD scored around 2004 MB/s on write and 2971 MB/s on read. 
+<a target="_blank" href="https://www.youtube.com/watch?v=RlVEOw7WLtM&t=6m30s">VIDEO</a>: On the base Mac Mini, the internal256 GB SSD scored around 2004 MB/s on write and 2971 MB/s on read.
 
 That's due to the 256 GB NVMeSSD hard drive on the 2024 Mac Mini having actually two 128 GB SSDs on the circuit board. So it's slower than a solid 256 GB drive. The SSD on the 512GB Mac Mini has two 256GB SSDs.
 
@@ -150,10 +155,10 @@ The question is use with editing videos using Final Cut Pro, Premiere Pro, DaVin
 
 ### Storage device features
 
-PROTIP: Heavy use of SSDs would require heat dissipantion feature on the drive. 
+PROTIP: Heavy use of SSDs would require heat dissipantion feature on the drive.
 
 SATA HDD drives are slower than NVMe SSD chips:
-   * 1TB SATA drives are 1000 MB/s on read and 800 MB/s on write. 
+   * 1TB SATA drives are 1000 MB/s on read and 800 MB/s on write.
    * 2TB drives are 800 MB/s on read and 600 MB/s on write.
 
 China-based iDiskk <a target="_blank" href="https://www.amazon.com/iDiskk-40Gbps-Professional-Aluminum-External/dp/B0CQYSFBCX">$219</a> 2TB drive has a 40Gbps Thunderbolt 3 cable to smaller fins on the aluminum enclosure with a (loud) fan.
