@@ -1,10 +1,26 @@
----
+<!---
 lastchange: git commit -m"v010 + mini keyboard :mac-mini.md"
----
+--->
 
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini</a>.
 
-Since October 2024, the 2024 Mac Mini has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance.
+Since its release on October, the 2024 Mac Mini with M4 chip has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance. The models:
+   * Mac Mini base model with 10 cores, 256 GB SSD and Thunderbolt 4
+   * Mac Mini Pro  model with 12 cores, 512 GB SSD and Thunderbolt 5
+   * Additional memory and storage can be added (at a high markup).
+
+* at <a target="_blank" href="https://www.apple.com/mac-mini/">Apple.com</a>: $599
+* <a target="_blank" href="https://www.amazon.com/dp/B0DM73SMNK/">on Amazon</a>
+* at Costco
+* at Best Buy
+* at Walmart
+* at Target
+* at Newegg
+* at <a target="_blank" href="https://www.macrumors.com/2024-mac-mini/">MacRumors</a>
+* at B&H
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1731683979/mac-mini-front-back_fup4cz.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1731683979/mac-mini-front-back_fup4cz.png"></a>
+
 
 ## Physical Portability?
 
@@ -22,7 +38,7 @@ This approach may be fine because you can now <strong>reuse components</strong> 
 
 PROTIP: Like other mini PCs, students can run local machine using the internet provided in <strong>school and public libraries</strong>. Its Wi-Fi 6E (802.11ax) means you can sit in a corner at Starbucks.
 
-In such a use case, even though its speaker is adequate, you'd wear a headphone connected via Bluetooth or through the 3.5 mm headphone jack. Use of a microphone for advanced AI use is problematic, though.
+[_] In such a use case, even though its speaker is adequate, you'd wear a headphone connected via Bluetooth or through the 3.5 mm headphone jack. Use of a microphone for advanced AI use is problematic, though.
 
    * The mac Mini has a Tensor chip for Apple Intelligence for better Speech to Text and Smart Search.
 
@@ -33,9 +49,8 @@ You'll still have to plug and unplug all those components every time you move it
 
 PROTIP: If you use several computers at once with hard-wired keyboard and mouse, consider getting a <strong>KVM switch</strong> to switch among them from a single keyboard and mouse.
 
-[_] The Foldable Bluetooth Keyboard <strong>with Touchpad</trong> for macOS and mobile phones is
-<a target="_blank" href="https://www.amazon.com/Foldable-Bluetooth-Keyboard-Multi-Device-Pocket-Sized/dp/B0CYLT7TNS/ref=sr_1_3?crid=34FDCJ443KGCU&dib=eyJ2IjoiMSJ9.yyuPttKea4a7gyIFTvIMCfSCTO4u77dGIGKm5QVZ2rHJGEIwGl8vEfWjIn82S6aGFy0h1AYjN9mGuawr4uJiekMP6BQdJM3sosHq8xBMF3hgFm0-I6YD1U5SyPhSX0Rwhy6srTK0MfODenCu-Q1F2w8U0hhW0xRatASzAZszYlyqqRVsK5ukavjZRgEjayOzEh6aNH4POUjEkB47PKSwnVJuXxQm8p6Z80i4Hhllohw.SS_MtMsf3tST0uqIFYp46nwt8ZQBXiHNMVlEF6xvfDI&dib_tag=se&keywords=Seenda+Foldable+Bluetooth+Keyboard+with+Touchpad%2C+Folding+Portable+Travel+Keyboard%2C+Rechargeable+Wireless+Mini+Keyboard+UK+Layout+for+iOS+Android+Windows+PC+Tablet+Mobile+Phone+iphone+ipad%2C+Black&qid=1732847495&sprefix=seenda+foldable+bluetooth+keyboard+with+touchpad%2C+folding+portable+travel+keyboard%2C+rechargeable+wireless+mini+keyboard+uk+layout+for+ios+android+windows+pc+tablet+mobile+phone+iphone+ipad%2C+black%2Caps%2C274&sr=8-3">
-white $26.59 from Seenda on Amazon</a>. There's also the
+[_] The Foldable Bluetooth Keyboard <strong>with Touchpad</strong> for macOS and mobile phones is
+<a target="_blank" href="https://www.amazon.com/Foldable-Bluetooth-Keyboard-Multi-Device-Pocket-Sized/dp/B0CYLT7TNS/">white $26.59 from Seenda on Amazon</a>. There's also the
 <a target="_blank" href="https://www.amazon.com/Samsers-Foldable-Bluetooth-Full-Size-Rechargeable/dp/B0BK4J5LSW/">black $37.38 Samsers on Amazon during Black Friday</a>
 
 
@@ -60,7 +75,7 @@ Alternative 5K displays are from BenQ, LG, ViewSonic, Samsung, Asus, etc.
 
 Apple's 27" Studio Display for 5K are <a target="_blank" href="https://www.amazon.com/dp/B09ZJQK9Q4">$1,299.99 on Amazon</a>. That's without a stand. But it enables configuration from a mac, with other brands can't offer. You can adjust brightness or volume using an Apple keyboard.
 
-A 27" Samsung ViewFinity S9 brand 5K display with Matte Display, Thunderbolt 4 port, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> What's its PPI? PROTIP:
+A 27" Samsung ViewFinity S9 brand 5K display with Matte Display, Thunderbolt 4 port, removeable 4K Slimfit (wide angle) Camera was <a target="_blank" href="https://www.amazon.com/dp/B0CB71BY87/">$679 on Amazon during Black Friday</a> What's its PPI?
    * It also has a DisplayPort which you can ignore.
    * Its Thunderbolt 4 port is rated to carry up to 80Gbps and can power the mac.
    * Separate the power brick to keep the monitor cooler which will help with longevity.
