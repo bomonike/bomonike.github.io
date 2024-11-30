@@ -1,5 +1,5 @@
 <!---
-lastchange: git commit -m"v010 + mini keyboard :mac-mini.md"
+lastchange: git commit -m"v011 + 12GB System data :mac-mini.md"
 --->
 
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini</a>.
@@ -114,7 +114,7 @@ NOTE: Hyper is working on a Thunderbolt 5 dock to support 8K displays.
 
 ## Enough Memory?
 
-The macOS operating system takes up 6 GB disk space.
+The macOS (operating) System Data takes 12.38 GB disk space.
 
 The base model has 16 GB RAM and 256 GB SSD with Thunderbolt 4, which is rated to carry up to 40 Gbps and supply up to 100W of power.
 
@@ -143,9 +143,10 @@ Buyers using Costco's credit card get 4% money-back at the end of the year. That
 And all that costs more money.
 
 
-## Enough Storage
+## Enough Storage?
 
-PROTIP: Many users may be happy with the base storage of 256 GB if they have the <strong>discipline</strong> to plug in an external SSD or configure cloud storage (e.g., iCloud or <a target="_blank" href="https://www.backblaze.com/cloud-backup/personal">Backblaze cloud</a>).
+PROTIP: Many users may be happy with the base storage of 256 GB if they have the
+<strong>discipline</strong> to plug in an external SSD or configure cloud storage (e.g., iCloud or <a target="_blank" href="https://www.backblaze.com/cloud-backup/personal">Backblaze cloud</a>).
 
 The base 256 GB NVMe Memory can a later swapped with 512 GB, but you'll have to pay for it.
    * <a target="_blank" href="https://www.youtube.com/watch?v=rtdGxBeSkz8">iFixit.com teardown</a>.
