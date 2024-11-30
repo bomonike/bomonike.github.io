@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-11-18"
-lastchange: "v004 + docstrings :python-coding.md"
+date: "2024-11-29"
+lastchange: "v005 + sorting bigO :python-coding.md"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -304,6 +304,7 @@ From <a target="_blank" href="https://bigocheatsheet.com/">https://bigocheatshee
 BigO References: <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU&t=47s">VIDEO</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=TUiv2UgDgOQ">VIDEO</a> <a target="_blank" href="https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/">Cheet Sheat</a> & <a target="_blank" href="https://academy.zerotomastery.io/courses/700474/lectures/12568500">bootcamp</a> from ZeroToMastery.io</a>
    Python Solutions:
+   * https://www.youtube.com/watch?v=x2CRZaN2xgM by ByteByteGo (the best)
    * https://github.com/theja-m/Data-Structures-and-Algorithms
    * https://github.com/VicodinAbuser/ZTM-DS-and-Algo-Python
    * https://www.youtube.com/watch?v=v4cd1O4zkGw by HackerRank - rules
@@ -1002,9 +1003,10 @@ except ValueError:
 ```
 <hr />
 
-<a name="Sorting"></a>
 
-### Sorting
+<a name="Swapping"></a>
+
+## Swapping
 
 To swap values, here's a straight-forward function:
 
@@ -1027,6 +1029,27 @@ To swap values, here's a straight-forward function:
 <pre>>>> swap2(10,20)
 (20,10)
 </pre>
+
+
+<a name="Sorting"></a>
+
+## Sorting
+
+Challenges:
+
+<a target="_blank" href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-bubble-sort">Implement Bubble Sort</a>
+
+<a target="_blank" href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort">Implement Quick Sort</a>
+
+<a target="_blank" href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-selection-sort">Implement Selection Sort</a>
+
+<a target="_blank" href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-insertion-sort">Implement Insertion Sort</a>
+
+<a target="_blank" href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort">Implement Quick Sort</a>
+
+<a target="_blank" href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-merge-sort">Implement Merge Sort</a>
+
+<a target="_blank" href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-binary-search">Implement Binary Search and Quick Sort</a>
 
 
 ### Reduce Space Complexity with Dynamic programming
