@@ -1,6 +1,6 @@
-<!---
-lastchange: git commit -m"v011 + 12GB System data :mac-mini.md"
---->
+---
+lastchange: "v012 + fix front matter :mac-mini.md"
+---
 
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini</a>.
 
