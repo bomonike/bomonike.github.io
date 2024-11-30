@@ -12,23 +12,28 @@ are captured in file it-media.xlsx
 ## James Bond Films
 
 Official James Bond Films in Release Order
-1. Dr. No (1962)
+
+1. Dr. No (1962) - Introduced Sean Connery
 1. From Russia with Love (1963)
 1. Goldfinger (1964)
 1. Thunderball (1965)
 1. You Only Live Twice (1967)
-1. On Her Majesty's Secret Service (1969)
-1. Diamonds Are Forever (1971)
-1. Live and Let Die (1973)
+
+1. On Her Majesty's Secret Service (1969) - George Lazenby
+1. Diamonds Are Forever (1971) - Sean Connery
+
+1. Live and Let Die (1973) - Roger Moore
 1. The Man with the Golden Gun (1974)
 1. The Spy Who Loved Me (1977)
 1. Moonraker (1979)
 1. For Your Eyes Only (1981)
 1. Octopussy (1983)
 1. A View to a Kill (1985)
-1. The Living Daylights (1987)
+
+1. The Living Daylights (1987) - Timothy Dalton
 1. Licence to Kill (1989)
-1. GoldenEye (1995)
+
+1. GoldenEye (1995) - Pierce Brosnan
 1. Tomorrow Never Dies (1997)
 1. The World Is Not Enough (1999)
 1. Die Another Day (2002)
