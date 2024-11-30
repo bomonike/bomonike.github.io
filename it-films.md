@@ -1,6 +1,3 @@
----
-it-films.md
----
 
 Here are some films and other media about IT (Information Technology) security, software development, and the internet.
 
