@@ -1,45 +1,15 @@
 ---
 layout: post
-date: "2024-11-30"
-lastchange: git commit -m "+ APFS :acronyms"
+date: "2024-12-02"
+lastchange: git commit -m "+ index hippo :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
 tags: [cloud, security, management, audit]
 comments: true
 ---
-<i>{{ page.excerpt }}</i>
-{% include l18n.html %}
-{% include _toc.html %}
 
-{% include whatever.html %}
-
-<a href="#A">A</a>
-<a href="#B">B</a>
-<a href="#C">C</a>
-<a href="#D">D</a>
-<a href="#E">E</a>
-<a href="#F">F</a>
-<a href="#G">G</a>
-<a href="#H">H</a>
-<a href="#I">I</a>
-<a href="#J">J</a>
-<a href="#K">K</a>
-<a href="#L">L</a>
-<a href="#M">M</a>
-<a href="#N">N</a>
-<a href="#O">O</a>
-<a href="#P">P</a>
-<a href="#Q">Q</a>
-<a href="#R">R</a>
-<a href="#S">S</a>
-<a href="#T">T</a>
-<a href="#U">U</a>
-<a href="#V">V</a>
-<a href="#W">W</a>
-<a href="#X">X</a>
-<a href="#Y">Y</a>
-<a href="#Z">Z</a>
+<a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a>
 
 <hr />
 
@@ -592,7 +562,7 @@ comments: true
 *	HCS	=	HashiCorp Consul Service	(SaaS on Azure)
 * HIDS	=	Host-Based Intrusion Detection System
 *	HIPAA	=	Health Insurance Portability and Accountability Act
-*	HiPPO	=	Highest Paid Person‚Äôs Opinions
+*	HiPPO	=	Highest Paid Person's Opinion (deference between high and low status employees)
 *	HLS	=	HTTP Live Streaming (Apple video streaming protocol)
 *	HMI	=	Human-Machine Interface
 * HNDL = Harvest Now, Decrypt Later (store encrypted data for decrypting later using post-quantum computers)
