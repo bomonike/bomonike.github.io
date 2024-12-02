@@ -15,7 +15,6 @@ Topics alphabetically:
 * <a target="_blank" href="https://bomonike.github.io/esp32/">esp32</a>
 * <a target="_blank" href="https://bomonike.github.io/genai-ide/">genai-ide</a>
 * <a target="_blank" href="https://bomonike.github.io/git-signing/">git-signing</a>
-* <a target="_blank" href="https://bomonike.github.io/git-ssh-gpg.shgit-ssh-gpg.sh
 * <a target="_blank" href="https://bomonike.github.io/github-install/">github-install</a>
 * <a target="_blank" href="https://bomonike.github.io/google-ai/">google-ai</a>
 * <a target="_blank" href="https://bomonike.github.io/ham-radio/">ham-radio</a>

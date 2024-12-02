@@ -1,10 +1,16 @@
-
 Here are some films and other media about IT (Information Technology) security, software development, and the internet.
 
 internet movie database api
 
-https://alfilatov.com/awesome-IT-films/#/build/movies?id=disconnect
-are captured in file it-media.xlsx
+My it-media.xlsx began from <a target="_blank" href="https://alfilatov.com/awesome-IT-films/#/build/movies?id=disconnect">here</a>.
+
+## Netflix
+
+<a target="_blank" href="https://www.netflix.com/watch/81554996/">
+"BUY NOW: The Shopping Conspiracy"</a>
+from the view of a webpage designer who worked at Amazon for 15 years
+and other whistleblowers.
+
 
 ## James Bond Films
 
