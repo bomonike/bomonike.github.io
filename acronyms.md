@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-11-29"
-lastchange: git commit -m "add ADAS :acronyms"
+date: "2024-11-30"
+lastchange: git commit -m "+ APFS :acronyms"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -108,6 +108,7 @@ comments: true
 * ANI = Artificial Narrow Intelligence
 * ANN	=	Artificial Neural Networks (emulating the 80 billion neurons in human brains)
 *	AO	=	Authorizing Official (in RMF)
+* APFS = Apple File System (since macOS High Sierra in 2017, optimized for SSDs instead of Mac OS Extended HFS+ file system for HDDs)
 *	API	=	Application Programming Interface
 *	APJ	=	Asia + Pacific + Japan
 *	APM	=	Application Performance Monitoring

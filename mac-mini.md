@@ -1,8 +1,8 @@
 ---
-lastchange: "v012 + fix front matter :mac-mini.md"
+lastchange: "v013 + nane :mac-mini.md"
 ---
 
-This is <a target="_blank" href="https://bomonike.github.io/mac-mini.md">https://bomonike.github.io/mac-mini</a>.
+This is <a target="_blank" href="https://bomonike.github.io/mac-mini/">https://bomonike.github.io/mac-mini</a>.
 
 Since its release on October, the 2024 Mac Mini with M4 chip has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance. The models:
    * Mac Mini base model with 10 cores, 256 GB SSD and Thunderbolt 4
