@@ -1,5 +1,6 @@
 ---
 layout: post
+lastchange: "v003 + script :maximum-limits.md"
 date: "2024-12-03"
 file: "maximum-limits"
 title: "Maximum limits (in macOS file descriptors)"
@@ -132,6 +133,47 @@ Operating systems (Linux and macOS included) have settings which limit the numbe
 </plist>
    ```
    (Thank you to sebco for the correction)
+
+5. Run this shell script:
+
+   ```
+# OS (Outside of System Settings): Limit of File Descriptors:
+# This needs to be done only once:
+# Explained in https://bomonike.github.io/maximum-limits
+# Mentions of this issue about the limit of open files on macOS & Linux:
+   # https://neo4j.com/developer/kb/setting-max-open-file-limits-on-osx/
+   # https://gist.github.com/tombigel/d503800a282fcadbee14b537735d202c?permalink_comment_id=3361594
+   # https://superuser.com/questions/1634286/how-do-i-increase-the-max-open-files-in-macos-big-sur
+   # https://www.baeldung.com/linux/limit-file-descriptors
+# This is in .zshrc to set only for current session (since Yosemite):
+   # sudo launchctl limit maxfiles 65536 200000
+   # This requires manual password entry.
+ULIMIT_SOFT_LIMIT=$( ulimit -Sn )   # 2560 on my mac
+ULIMIT_HARD_LIMIT=$( ulimit -Hn )   # unlimited
+echo "*** File Descriptors: ulimit -Sn: ${ULIMIT_SOFT_LIMIT}  ulimit -Hn: ${ULIMIT_HARD_LIMIT}"
+# To permanently increase the maximum number of open files:
+
+# We get it this file locally so values are under your control:
+sudo mv limit.maxfiles.plist /Library/LaunchDaemons
+# TODO: Copy from https://raw.githubusercontent.com/wilsonmar/mac-setup/refs/heads/main/configs/limit.maxfiles.plist
+   # to /Library/LaunchDaemons
+# chown for "-rw-r--r--", set by sudo chmod 644:
+sudo chown root:wheel /Library/LaunchDaemons/limit.maxfiles.plist
+sudo launchctl load -w /Library/LaunchDaemons/limit.maxfiles.plist
+   # In the file, 524288 is the soft limit (instead of 12288)
+   # The hard limit is up to 1048576 for high-performance scenarios.
+   # Per https://apple.stackexchange.com/a/366319, value of unlimited can be up to the max value of SIGNED INT of 2147483647.
+
+# The default maxproc is 2666 soft and 4000 hard.
+sudo mv limit.maxproc.plist /Library/LaunchDaemons
+# TODO:Copy from https://raw.githubusercontent.com/wilsonmar/mac-setup/refs/heads/main/configs/limit.maxproc.plist
+   # to /Library/LaunchDaemons
+   # In the file, 2048 is the soft and hard limit (instead of 256)
+sudo chown root:wheel /Library/LaunchDaemons/limit.maxproc.plist
+sudo launchctl load -w /Library/LaunchDaemons/limit.maxproc.plist
+
+# Additionally, Java applications need to use the -XX:-MaxFDLimit JVM option to bypass the internal 10,240 file descriptor limit.
+   ```
 
 5. Invoke the files:
 
