@@ -1,5 +1,5 @@
 ---
-lastchange: "v013 + nane :mac-mini.md"
+lastchange: "v014 + battery :mac-mini.md"
 ---
 
 This is <a target="_blank" href="https://bomonike.github.io/mac-mini/">https://bomonike.github.io/mac-mini</a>.
@@ -32,7 +32,7 @@ But I think that the revolution is the form factor.
 
 The 2024 Mac Mini only comes with a power cable that plugs into a wall outlet.
 
-[_] PROTIP: To make the 2024 Mac Mini portable, get a <strong>big battery</strong> with enough ampere to last for a day, like those designed for use with MacBook Pro laptops.
+[_] PROTIP: To make the 2024 Mac Mini portable, get a <strong>big battery</strong> with enough ampere to last for a day, like those designed for use with MacBook Pro laptops, such as the <a target="_blank" href="https://www.amazon.com/gp/product/B0D3PL8XCL/">$159.99 Anker 27,650mAh 250W</a>
 
 This approach may be fine because you can now <strong>reuse components</strong> from another desktop computer or want to get exactly the componenents you want, such as an 5K/8K monitor, ergonomic keyboard, etc. The advantage is that you can use a nice monitor that's bigger and better than on any laptop.
 
