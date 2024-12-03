@@ -1,10 +1,10 @@
 ---
 layout: post
-date: "2024-11-27"
-change: git commit -m"v004 + install steps :ros.md"
+date: "2024-12-02"
+change: git commit -m"v005 + URDF :ros.md"
 file: "ros"
 title: "ROS (Robotic Operating System)"
-excerpt: "Learn the operating system for controlling simple robots"
+excerpt: "Learn the operating system for viewing using Gazebo and controlling simple robots"
 tags: [Robots, DevOps]
 image:
 # pic silver robot white skin handshake 1900x500
@@ -18,6 +18,11 @@ created: "2021-08-02"
 
 This is at https://bomonike.github.io/ros
 with source at https://github.com/bomonike/bomonike.github.io/blob/master/ros.md
+
+https://classic.gazebosim.org/tutorials?tut=ros_urdf
+
+https://gazebosim.org/docs/ionic/spawn_urdf/
+
 
 ## Areas
 
@@ -87,11 +92,46 @@ But in December 2022, the business of OSRC and OSRC-SG was acquired by <a target
 
 ## ROS Versions
 
+"ROS" and "ROS2" are referenced interchangeably nowaday.
+
 * ROS
 * ROS2 facilitates a multi-robot architecture, which ROS was not build for.
 * ROS3
 
-URDF (Unified Robot Description Format) is a popular code-independent, human-readable format to describe the geometry of robots and their cells. It's used for collision checking and dynamic path planning. Think of it like a textual CAD description: “part-one is 1 meter left of part-two and has the following triangle-mesh for display purposes.”
+This "classic" version of Gazebo at v1.9 reaches end-of-life in January 2025.
+
+
+## URDF to SDF
+
+URDF (Unified Robot Description Format) is a popular code-independent, human-readable format to describe the geometry of robots and their cells. It's XML in format.
+
+https://wiki.ros.org/urdf
+
+It's used for collision checking and dynamic path planning. Think of it like a textual CAD description: “part-one is 1 meter left of part-two and has the following triangle-mesh for display purposes.”
+
+Currently, its limitations:
+* It can only specify kinematic and dynamic properties of a single robot
+* It cannot specify robot pose within a world
+* It's limited in describing complex robot configurations
+
+There are several ways to obtain a URDF file for Gazebo:
+
+* Pre-processed Example: The rrbot.urdf from the gazebo_ros_demos package is a readily available example.
+
+   https://gazebosim.org/docs/latest/spawn_urdf/
+
+* GitHub Repositories: Some repositories like mybot_ws at https://github.com/richardw05/mybot_ws provide URDF models with different configurations:
+   * Base URDF model
+   * URDF with sensors
+   * Navigation-enabled URDF
+
+The URDF syntax breaks proper formatting with heavy use of XML attributes, which in turn makes URDF more inflexible. There is also no mechanism for backward compatibility.
+
+To deal with this issue, a new format called the Simulation Description Format (SDF) was created for use in Gazebo. http://sdformat.org
+Also XML, SDF is a complete description for everything from the world level down to the robot level. It is scalable, and makes it easy to add and modify elements. The SDF format is itself described using XML, which facilitates a simple upgrade tool to migrate old versions to new versions. It is also self-descriptive.
+
+The Prop Shop at https://3dprop.store is an on online repository of 3D models.
+
 
 ## Thoughtworks Tech Radar
 
@@ -518,7 +558,7 @@ https://releases.ubuntu.com/noble/
    brew install gazebo
    ```
 1. Install additional ROS2-Gazebo packages
-    
+
 1. Activate the ROS2 environment
    ```bash
    conda activate ros2
