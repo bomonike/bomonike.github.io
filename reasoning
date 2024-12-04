@@ -1,0 +1,11 @@
+reasoning.md
+
+<a target="_blank" href="https://www.youtube.com/watch?v=4ysK3bCUVhc">VIDEO</a>:
+
+AWS announced their "Automated Reasoning" service in their December, 2024 RE:Invent conference.
+
+https://aws.amazon.com/what-is/automated-reasoning/
+
+Their AI demo turns a written HR policy (Leave of Absence)
+into FMS
+Amazon Bedrock Guardrails.
