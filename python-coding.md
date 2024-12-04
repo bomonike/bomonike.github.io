@@ -105,6 +105,11 @@ and Strings
    * type casting
    * basic calculations
    * simple strings: constructing, assigning, indexing, slicing comparing, immutability
+
+   ```
+   >>> "{} {} cost ${}".format(6, "bananas", 1.74 * 6)<br />
+   '6 bananas cost $10.44'
+   ```
    <br /><br />
 
 2: Control Flow Control – Conditional Blocks and Loops (29% - 8 exam items)

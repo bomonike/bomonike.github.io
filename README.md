@@ -1,5 +1,5 @@
 ---
-lastchange: "v003 + wilson - slash at end of url :README.md"
+lastchange: "v004 + reasoning & maximum-limits :README.md"
 ---
 This is used while <a target="_blank" href="https://wilsonmar.github.io/posts">wilsonmar.github.io</a> is being repaired.
 
@@ -30,23 +30,26 @@ Topics alphabetically:
 * <a target="_blank" href="https://bomonike.github.io/mac-mini">mac-mini</a>
 * <a target="_blank" href="https://bomonike.github.io/mac-utilities">mac-utilities</a>
 * <a target="_blank" href="https://bomonike.github.io/macos">macos</a>
+* <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a>
+maximum-limits
 * <a target="_blank" href="https://bomonike.github.io/mechatronics">mechatronics</a>
 * <a target="_blank" href="https://bomonike.github.io/microbit">microbit</a>
 * <a target="_blank" href="https://bomonike.github.io/networking">networking</a>
 * <a target="_blank" href="https://bomonike.github.io/odoo">odoo</a>
 * <a target="_blank" href="https://bomonike.github.io/oee">oee</a> (Overall Equipment Effectiveness)
 * <a target="_blank" href="https://bomonike.github.io/openmct">openmct</a>
-* <a target="_blank" href="https://bomonike.github.io/otel">otel</a>
+* <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (Operational Technologies)
 * <a target="_blank" href="https://bomonike.github.io/personal-data-security">personal-data-security</a>
-* <a target="_blank" href="https://bomonike.github.io/pid">pid</a>
+* <a target="_blank" href="https://bomonike.github.io/pid">pid</a> ()
 * <a target="_blank" href="https://bomonike.github.io/plc">plc</a>
 * <a target="_blank" href="https://bomonike.github.io/podcasts">podcasts</a>
 * <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
 * <a target="_blank" href="https://bomonike.github.io/python-coding">python-coding</a>
 * <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
 * <a target="_blank" href="https://bomonike.github.io/python-tutorials">python-tutorials</a>
+* <a target="_blank" href="https://bomonike.github.io/reasoning">reasoning</a>
 * <a target="_blank" href="https://bomonike.github.io/regex">regex</a>
-* <a target="_blank" href="https://bomonike.github.io/ros">ros</a>
+* <a target="_blank" href="https://bomonike.github.io/ros">ros</a> (Robotic Operating System)
 * <a target="_blank" href="https://bomonike.github.io/second-brain">second-brain</a>
 * <a target="_blank" href="https://bomonike.github.io/sentiment-analysis">sentiment-analysis</a>
 * <a target="_blank" href="https://bomonike.github.io/software-dev">software-dev</a>
