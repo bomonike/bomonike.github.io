@@ -1,5 +1,6 @@
 ---
-lastchange: "v003 + rename with md :reasoning.md"
+url: https://bomonike.github.io/reasoning
+lastchange: "v005 + indents :reasoning.md"
 ---
 
 <a target="_blank" href="https://www.youtube.com/watch?v=4ysK3bCUVhc">VIDEO</a>:
@@ -31,10 +32,10 @@ Amazon shows their article at
 https://aws.amazon.com/what-is/automated-reasoning</a>
 as categorized under "Security, Identity, & Compliance".
 
-    * AWS Identity and Access Management (IAM) <a target="_blank" href="https://aws.amazon.com/iam/access-analyzer/">Access Analyzer</a> manages accounts permission with automated reasoning.
-    * Amazon CodeGuru <a target="_blank" href="https://aws.amazon.com/codeguru/">Reviewer</a> uses automated reasoning and machine learning to help developers identify software vulnerabilities.
-    * Amazon Inspector Classic has a <a target="_blank" href="https://docs.aws.amazon.com/inspector/v1/userguide/inspector_network-reachability.html">Network Reachability feature</a> that automatically analyses your EC2 instances for potential security vulnerabilities and misconfigurations.
-    * Amazon Virtual Private Cloud (Amazon VPC) <a target="_blank" href="https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html">Reachability Analyzer</a> applies automated reasoning to help you understand and visualize your AWS network.
+   * AWS Identity and Access Management (IAM) <a target="_blank" href="https://aws.amazon.com/iam/access-analyzer/">Access Analyzer</a> manages accounts permission with automated reasoning.
+   * Amazon CodeGuru <a target="_blank" href="https://aws.amazon.com/codeguru/">Reviewer</a> uses automated reasoning and machine learning to help developers identify software vulnerabilities.
+   * Amazon Inspector Classic has a <a target="_blank" href="https://docs.aws.amazon.com/inspector/v1/userguide/inspector_network-reachability.html">Network Reachability feature</a> that automatically analyses your EC2 instances for potential security vulnerabilities and misconfigurations.
+   * Amazon Virtual Private Cloud (Amazon VPC) <a target="_blank" href="https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html">Reachability Analyzer</a> applies automated reasoning to help you understand and visualize your AWS network.
 
 AWS also calls it <a target="_blank" href="https://aws.amazon.com/security/provable-security/">
 "Provable Security"</a>.
