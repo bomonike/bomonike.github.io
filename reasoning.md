@@ -1,6 +1,6 @@
 ---
 url: https://bomonike.github.io/reasoning
-lastchange: "v005 + indents :reasoning.md"
+lastchange: "v006 + flows :reasoning.md"
 ---
 
 <a target="_blank" href="https://www.youtube.com/watch?v=4ysK3bCUVhc">VIDEO</a>:
@@ -18,7 +18,7 @@ While machine learning makes predictions and inferences.
 Automated reasoning provides proof from <strong>Logical deductions</strong>.
 
 
-## AWS Automated Reasoning
+## AWS Automated Reasoning for Provable Security
 
 AWS's "Automated Reasoning" service was
 <a target="_blank" href="https://go.aws/416r2vZ">announced</a>
@@ -27,18 +27,25 @@ during their December, 2024 RE:Invent conference.
 Their AI demo turns a written HR policy (Leave of Absence)
 into FMs (Feature Models?).
 
-Amazon shows their article at
-<a target="_blank" href="https://aws.amazon.com/what-is/automated-reasoning/">
-https://aws.amazon.com/what-is/automated-reasoning</a>
-as categorized under "Security, Identity, & Compliance".
+Amazon's' <a target="_blank" href="https://aws.amazon.com/what-is/automated-reasoning/">
+"Automated Reasoning"</a> they categorize under "Security, Identity, & Compliance".
 
-   * AWS Identity and Access Management (IAM) <a target="_blank" href="https://aws.amazon.com/iam/access-analyzer/">Access Analyzer</a> manages accounts permission with automated reasoning.
-   * Amazon CodeGuru <a target="_blank" href="https://aws.amazon.com/codeguru/">Reviewer</a> uses automated reasoning and machine learning to help developers identify software vulnerabilities.
+   * AWS Identity and Access Management (IAM) <a target="_blank" href="https://aws.amazon.com/iam/access-analyzer/">Access Analyzer</a> ensures fine-grained least-privilege permission with automated reasoning.<img alt="aws-iam-access-analyzer.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733376843/aws-iam-access-analyzer_gmhd5u.jpg" />
+<img alt="aws-verf-permissions.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733377167/aws-verf-permissions_xhuggx.png" />
+
+   * Amazon S3 Block Public Access<img alt="aws-s3-block.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733376654/aws-s3-block_h8hpns.png" />
+
    * Amazon Inspector Classic has a <a target="_blank" href="https://docs.aws.amazon.com/inspector/v1/userguide/inspector_network-reachability.html">Network Reachability feature</a> that automatically analyses your EC2 instances for potential security vulnerabilities and misconfigurations.
-   * Amazon Virtual Private Cloud (Amazon VPC) <a target="_blank" href="https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html">Reachability Analyzer</a> applies automated reasoning to help you understand and visualize your AWS network.
+
+   * Amazon Virtual Private Cloud (Amazon VPC) <a target="_blank" href="https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html">Reachability Analyzer</a> applies automated reasoning to visualize AWS networks.
 
 AWS also calls it <a target="_blank" href="https://aws.amazon.com/security/provable-security/">
 "Provable Security"</a>.
+
+Automated Reasoning is for more than security:
+
+   * Amazon CodeGuru <a target="_blank" href="https://aws.amazon.com/codeguru/">Reviewer</a> uses automated reasoning and machine learning to help developers identify software vulnerabilities.<img src="aws-codeguru-flow.png" src="https://console.cloudinary.com/console/c-deab63b516382ad456e1f8a7e2859a/media_library/search?q=&view_mode=mosaic" />
+
 
 
 ## Explainable AI!
@@ -53,7 +60,10 @@ The big deal is <strong>Explainable AI</strong>.
 
 ## How?
 
-Amazon <strong>Bedrock Guardrails</strong> "evaluates prompts and model responses for Agents, Knowledge Bases, and FMs in Amazon Bedrock and self-managed or third-party FMs."
+Amazon <strong>Bedrock Guardrails</strong> "evaluates prompts and model responses for Agents, Knowledge Bases, and FMs in Amazon Bedrock and self-managed or third-party FMs (Foundation Models)."
+
+   * Configure thresholds to filter unde
+
 
 OBSERVE: The prompt to do this work (turn a pdf into Rules, Variables) AWS calls the "intent".
 
