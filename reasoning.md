@@ -1,9 +1,9 @@
 ---
 url: https://bomonike.github.io/reasoning
-lastchange: "v007 + qrcode :reasoning.md"
+lastchange: "v008 + overview :reasoning.md"
 ---
 
-<a target="_blank" href="https://bomonike.github.io/reasoning"><img align="right" width="100" height="100" alt="mac-setup-readme-qr-500x500.png" src="https://github.com/bomonike/bomonike.github.io/blob/main/images/reasoning-qr.png?raw=true" />This article</a> describes a major capability in computer science.
+<a target="_blank" href="https://bomonike.github.io/reasoning"><img align="right" width="100" height="100" alt="mac-setup-readme-qr-500x500.png" src="https://github.com/bomonike/bomonike.github.io/blob/cd52d0359b078b7e4ee8685c71f2c9d482e8afe5/images/reasoning-qr.png" />This article</a> describes a significant advancement in computer science.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=4ysK3bCUVhc">VIDEO</a>:
 "Amazon's NEW AI Just Solved The HARDEST Programming Problem"
@@ -14,7 +14,7 @@ That would be <strong>halucinations</strong>, where the AI is making stuff up, a
 If we quibble about definitions, one definition of AI is the ability of computers to
 <strong>appear</strong> to behave like humans. Thus, the Turing test is about a conversation.
 
-<strong>Automated reasoning</strong> is a specific discipline of artificial intelligence (AI) that applies <strong>logical models and proofs</strong> to reason about the possible behaviors of a system or program, including states it can or will never reach.
+<a target="_blank" href="https://aws.amazon.com/blogs/aws/prevent-factual-errors-from-llm-hallucinations-with-mathematically-sound-automated-reasoning-checks-preview/">Automated reasoning</a> is a specific discipline of artificial intelligence (AI) that applies <strong>logical models and proofs</strong> to reason about the possible behaviors of a system or program, including states it can or will never reach.
 
 While machine learning makes predictions and inferences.
 Automated reasoning provides proof from <strong>Logical deductions</strong>.
@@ -27,15 +27,18 @@ AWS's "Automated Reasoning" service was
 during their December, 2024 RE:Invent conference.
 
 Their AI demo turns a written HR policy (Leave of Absence)
-into FMs (Feature Models?).
+into FMs (Foundational AI LLM Models).
+
+<img alt="aws-policy-reasoning.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733381011/aws-policy-reasoning_dy3byg.png" />
 
 Amazon's' <a target="_blank" href="https://aws.amazon.com/what-is/automated-reasoning/">
 "Automated Reasoning"</a> they categorize under "Security, Identity, & Compliance".
 
    * AWS Identity and Access Management (IAM) <a target="_blank" href="https://aws.amazon.com/iam/access-analyzer/">Access Analyzer</a> ensures fine-grained least-privilege permission with automated reasoning.<img alt="aws-iam-access-analyzer.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733376843/aws-iam-access-analyzer_gmhd5u.jpg" />
-<img alt="aws-verf-permissions.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733377167/aws-verf-permissions_xhuggx.png" />
+<img alt="aws-verf-permissions.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733377167/aws-verf-permissions_xhuggx.png" /> <a target="_blank" href="https://discovery.ucl.ac.uk/id/eprint/10081411/1/Semantic-based%20Automated%20Reasoning%20for%20AWS%20Access%20Policies%20using%20SMT.pdf">This pdf</a>
+is the academics of SMT (Satisfiability Modulo Theories) solvers and the "ZELKOVA" policy analysis engine. The SMT encoding uses the theory of strings, regular expressions, bit vectors, and integer comparisons.
 
-   * Amazon S3 Block Public Access<img alt="aws-s3-block.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733376654/aws-s3-block_h8hpns.png" />
+   * Amazon S3 Block Public Access<img alt="aws-s3-block.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733376654/aws-s3-block_h8hpns.png" /> based on <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-25543-5_14">Reachability analysis</a>
 
    * Amazon Inspector Classic has a <a target="_blank" href="https://docs.aws.amazon.com/inspector/v1/userguide/inspector_network-reachability.html">Network Reachability feature</a> that automatically analyses your EC2 instances for potential security vulnerabilities and misconfigurations.
 
@@ -46,7 +49,7 @@ AWS also calls it <a target="_blank" href="https://aws.amazon.com/security/prova
 
 Automated Reasoning is for more than security:
 
-   * Amazon CodeGuru <a target="_blank" href="https://aws.amazon.com/codeguru/">Reviewer</a> uses automated reasoning and machine learning to help developers identify software vulnerabilities.<img src="aws-codeguru-flow.png" src="https://console.cloudinary.com/console/c-deab63b516382ad456e1f8a7e2859a/media_library/search?q=&view_mode=mosaic" />
+   * Amazon CodeGuru <a target="_blank" href="https://aws.amazon.com/codeguru/">Reviewer</a> uses automated reasoning and machine learning to help developers identify software vulnerabilities.<img alt="aws-codeguru-flow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733375716/aws-codeguru-flow.png_rg45ng.png" />
 
 
 
