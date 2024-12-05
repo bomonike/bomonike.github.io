@@ -1,8 +1,18 @@
+---
+url: https://bomonike.github.io/it-films
+lastchange: "v005 + hacker movies :it-films.md"
+---
+
 Here are some films and other media about IT (Information Technology) security, software development, and the internet.
 
 internet movie database api
 
 My it-media.xlsx began from <a target="_blank" href="https://alfilatov.com/awesome-IT-films/#/build/movies?id=disconnect">here</a>.
+
+<a target="_blank" href="https://vimeo.com/998770915">A developer's goes to the movies</a>
+by Simon Painter
+
+PODCAST</a> "Hack the movies: the bet and worst hacker movies: <a target="_blank" href="https://www.compromisingpositions.co.uk/podcast/episode-38-hack-the-planet">part 1</a> & <a target="_blank" href="https://www.compromisingpositions.co.uk/podcast/episode-55-the-best-and-worst-hacker-movies">part 2</a>
 
 ## Netflix
 
