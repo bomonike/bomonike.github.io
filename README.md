@@ -43,6 +43,7 @@ maximum-limits
 * <a target="_blank" href="https://bomonike.github.io/pid">pid</a> ()
 * <a target="_blank" href="https://bomonike.github.io/plc">plc</a>
 * <a target="_blank" href="https://bomonike.github.io/podcasts">podcasts</a>
+* <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
 * <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
 * <a target="_blank" href="https://bomonike.github.io/python-coding">python-coding</a>
 * <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
