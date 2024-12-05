@@ -3,6 +3,10 @@ url: https://bomonike.github.io/reasoning
 lastchange: "v006 + flows :reasoning.md"
 ---
 
+<a target="_blank" href="https://bomonike.github.io/reasoning"><img align="right" width="100" height="100" alt="mac-setup-readme-qr-500x500.png" src="https://github.com/bomonike/bomonike.github.io/blob/main/images/reasoning-qr.png?raw=true" />This article</a>
+has been <a target="_blank" href="https://wilsonmar.github.io/mac-setup">
+refined over several years</a> to provide the the <strong>fastest</strong> way to get a new macOS machine up and running.
+
 <a target="_blank" href="https://www.youtube.com/watch?v=4ysK3bCUVhc">VIDEO</a>:
 "Amazon's NEW AI Just Solved The HARDEST Programming Problem"
 by Matthew Berman
