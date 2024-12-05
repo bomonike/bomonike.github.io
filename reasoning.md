@@ -1,15 +1,18 @@
 ---
 url: https://bomonike.github.io/reasoning
-lastchange: "v008 + overview :reasoning.md"
+lastchange: "v009 + qr pic :reasoning.md"
 ---
 
-<a target="_blank" href="https://bomonike.github.io/reasoning"><img align="right" width="100" height="100" alt="mac-setup-readme-qr-500x500.png" src="https://github.com/bomonike/bomonike.github.io/blob/cd52d0359b078b7e4ee8685c71f2c9d482e8afe5/images/reasoning-qr.png" />This article</a> describes a significant advancement in computer science.
+<a target="_blank" href="https://bomonike.github.io/reasoning"><img align="right" width="100" height="100" alt="mac-setup-readme-qr-500x500.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/reasoning-qr.png?raw=true" />This article</a> describes a significant advancement in computer science, when
+AWS's "Automated Reasoning" service was
+<a target="_blank" href="https://go.aws/416r2vZ">announced</a>
+during their December, 2024 RE:Invent conference.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=4ysK3bCUVhc">VIDEO</a>:
 "Amazon's NEW AI Just Solved The HARDEST Programming Problem"
 by Matthew Berman
 
-That would be <strong>halucinations</strong>, where the AI is making stuff up, albeit based on the likelihood in what it already knows. Generative AI makes use of "Deep learning" techniques to make predictions based on applying statistical models to large datasets.
+That would be <strong>halucinations</strong>, where the AI is making stuff up, albeit based on the likelihood in what it already knows. Generative AI makes use of "Deep learning" techniques to make predictions based on applying statistical models to large datasets (Large Language Models).
 
 If we quibble about definitions, one definition of AI is the ability of computers to
 <strong>appear</strong> to behave like humans. Thus, the Turing test is about a conversation.
@@ -22,11 +25,7 @@ Automated reasoning provides proof from <strong>Logical deductions</strong>.
 
 ## AWS Automated Reasoning for Provable Security
 
-AWS's "Automated Reasoning" service was
-<a target="_blank" href="https://go.aws/416r2vZ">announced</a>
-during their December, 2024 RE:Invent conference.
-
-Their AI demo turns a written HR policy (Leave of Absence)
+The AWS AI demo turns a written HR policy (Leave of Absence)
 into FMs (Foundational AI LLM Models).
 
 <img alt="aws-policy-reasoning.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733381011/aws-policy-reasoning_dy3byg.png" />
