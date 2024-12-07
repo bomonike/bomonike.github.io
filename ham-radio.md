@@ -1,5 +1,7 @@
 ---
-ham-radio.md 2024-05-14
+lastchange: "v002 + fix yaml :ham-radio.md"
+file: "ham-radio.md"
+created: "2024-05-14"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/ham-radio"><img align="right" width="100" height="100" alt="ham-radio.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ham-radio.png?raw=true" />
