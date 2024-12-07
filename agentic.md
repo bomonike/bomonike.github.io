@@ -1,8 +1,8 @@
-<---
+---
 layout: post
 url: https://bomonike.github.io/agentic
 date: "2024-12-06"
-lastchange: "v009 fix http= :agentic.md"
+lastchange: "v010 fix top yaml :agentic.md"
 file: "agentic"
 title: "Agentic"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
