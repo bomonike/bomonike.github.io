@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-04"
+date: "2024-12-06"
 file: "jupyter"
 title: "Jupyter"
 excerpt: "\"Notebooks\" display HTML markup as comments between executable Python code (for Machine Learning and Data Science), for Style Transfer of images, etc."
@@ -8,23 +8,25 @@ tags: [Python, Machine Learning]
 image:
 # pic silver robot white skin handshake 1900x500
   feature: https://cloud.githubusercontent.com/assets/300046/14622149/306629f0-0585-11e6-961a-dc8f60dadbf6.jpg
-  credit: 
-  creditlink: 
+  credit:
+  creditlink:
 comments: true
 ---
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
 
+<a target="_blank" href="https://bomonike.github.io/jupyter"><img align="right" width="100" height="100" alt="jupyter.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/jupyter.png?raw=true" />
+
 The name "Jupyter" comes from the combination of languages Julia, Python, and R (the statistics package).
 
 {% include whatever.html %}
 
-Jupyter is a <strong>web application server</strong> that runs several 
+Jupyter is a <strong>web application server</strong> that runs several
 separate environments (one on each port). It's open-sourced at:
 <ul><a target="_blank" href="https://github.com/jupyterlab/jupyterlab.git">https://github.com/jupyterlab/jupyterlab.git</a></ul>
 
-Each Jupyter notebook contains explanatory text, math equations, code, and visualizations 
+Each Jupyter notebook contains explanatory text, math equations, code, and visualizations
 all in one easily <strong>sharable</strong> document.
 
 Jupyter Notebooks are JSON files with the extension <strong>.ipynb</strong>. However, ".txt" is added for storage.
@@ -51,7 +53,7 @@ In the above example, data is received from the numpy (np) library's random func
 ### Photo Style Transfer
 
 There are other tools that do this.
-But as a practical example of learning about Colab for programming Python Machine Learning, 
+But as a practical example of learning about Colab for programming Python Machine Learning,
 let's do a "style transfer" on a photo file <strong>you provide</strong>:
 
 1. Click on this link to open the "TF-Hub: Fast Style Transfer for Arbitrary Styles.ipynb" within Colab:
@@ -95,7 +97,7 @@ let's do a "style transfer" on a photo file <strong>you provide</strong>:
    if np.ndim(tensor)>3:
       assert tensor.shape[0] == 1
       tensor = tensor[0]
-   return PIL.Image.fromarray(tensor)    
+   return PIL.Image.fromarray(tensor)
    ```
 
 1. To <strong>Run all</strong> Notebook cells: on a Mac, hold down command + fn to press the "F9".
@@ -116,16 +118,16 @@ let's do a "style transfer" on a photo file <strong>you provide</strong>:
    ### Style Transfer your picture's URL
 
 1. To run the code block:
-   * click on the rounded arrow or 
+   * click on the rounded arrow or
    * Press the Tab key then hold down Shift key to press Return.
    <br /><br />
 
 1. At the left menu, click "To Run: Load more images" to see where you can add a statement pointing to your own photo.
 
 1. Click on this URL, to go to many websites go to get a URL of a photo based on an email:
-   
+
    <a target="_blank" href="https://en.gravatar.com/">en.gravatar.com</a>
-   
+
 1. Sign in using your WordPress email and password, or sign up and download your photo.
 1. Right-click on the picture you want to use and select <strong>Copy image address</strong>.
 1. Click on the "TF-Hub" tab to return to the Colab.
@@ -139,7 +141,7 @@ let's do a "style transfer" on a photo file <strong>you provide</strong>:
 
 1. Select a different style_name and rerun to see a new stylized image.
 1. When you see a stylized image you like, right-click on the picture and Save Image As... download.jpg in your Downloads folder:
-   
+
    <img width="1013" alt="jupyter-amadeo-2026x698" src="https://user-images.githubusercontent.com/300046/136677101-fcc3dc9c-0620-4bc3-91c6-3146c424bafb.png">
 
    Admittedly, the pictures are not high resolution.
@@ -164,10 +166,10 @@ Navigate to a URL containing Jupyter Notebook files:
 
 * <a target="_blank" href="https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html">
    analysis of gravitational waves from two colliding blackholes detected</a>
-   by the LIGO experiment. 
+   by the LIGO experiment.
 
 * <a target="_blank" href="https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5892be63_sentiment-network/sentiment-network.zip">
-   Sentiment-network.zip</a> from 
+   Sentiment-network.zip</a> from
    Andrew Trask contains notebooks for sentiment analysis.
 
 <hr />
@@ -182,7 +184,7 @@ For possible offline access (on a cruise ship, a railcar through the wilderness,
 
    ### Jupyter notebook and session files
 
-0. Make a container folder (directory) to hold Jupyter <strong>session files</strong>. 
+0. Make a container folder (directory) to hold Jupyter <strong>session files</strong>.
 
    This is done automatically by doing a git clone.
 
@@ -208,7 +210,7 @@ https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html">htt
 
 Even better, the easiest approach is to use my Bash script at bash/bash-sample.sh
 
-   https://github.com/wilsonmar/DevSecOps 
+   https://github.com/wilsonmar/DevSecOps
 
 <hr />
 
@@ -221,7 +223,7 @@ Even better, the easiest approach is to use my Bash script at bash/bash-sample.s
    <pre><strong>pip3 install jupyterlab</strong></pre>
 
    This adds a bunch of "jupyter" files in the <tt>/bin</tt> folder.
-   
+
 0. Edit <tt>~/.bash_profile</tt> to make sure the <tt>/bin</tt> folder is in the PATH.
 
    <pre>export PATH="$PATH:/bin"  # for /bin/jupyter</pre>
@@ -251,7 +253,7 @@ Even better, the easiest approach is to use my Bash script at bash/bash-sample.s
    <pre><strong>jupyter notebook --port 8888 notebook1.ipynb
    </strong></pre>
 
-   A "&" is added to the end of the command above to run the server in background 
+   A "&" is added to the end of the command above to run the server in background
    so that additional bash commands can execute (such as identifying the process number and cleaning up after <a href="#Shutdown">shutdown</a>).
 
    The command above creates a (hidden) file <strong>.jupyter</strong> in your home folder, invokes a web server locally, and automatically pops up to your default browser a tab with url:
@@ -274,7 +276,7 @@ Even better, the easiest approach is to use my Bash script at bash/bash-sample.s
    ### Shutdown jupyter server
 
    If the server was started in background, you can't shutdown the server from Terminal by pressing control + C twice. You would need to run (such as):
-   
+
    <pre><strong>kill -9 2809</strong></pre>
 
 <hr />
@@ -298,12 +300,12 @@ those familiar with the file can press the ">>" button to run all <strong>cells 
    <a name="CommandPalette"></a>
 
    ### Keyboard Command Palette of shortcuts
-   
+
    NOTE: This does not work in Firefox and Internet Explorer,
    only in Chrome and Apple Safari.
 
-0. When in command mode, click the little keyboard icon, 
-   called the "command palette". 
+0. When in command mode, click the little keyboard icon,
+   called the "command palette".
 
    A panel appears with a search bar.
 
@@ -311,8 +313,8 @@ those familiar with the file can press the ">>" button to run all <strong>cells 
 
    Keyboard shortcuts are on the right side.
 
-0. Enter a command to search for. 
-   Helpful for speeding up your workflow instead of looking around in the menus with your mouse. 
+0. Enter a command to search for.
+   Helpful for speeding up your workflow instead of looking around in the menus with your mouse.
 
    See <a target="_blank" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a>
 
@@ -328,7 +330,7 @@ those familiar with the file can press the ">>" button to run all <strong>cells 
    ### Kernel
 
    Alternately, select the Kernel menu "Restart and Run All":
-   
+
    ![jupyter-kernel-menu-179x232](https://user-images.githubusercontent.com/300046/70844899-3a4cc180-1e05-11ea-89b2-5adbbd90d7d4.jpg)
 
    DEFINITION: A "kernel" is each web page (window).
@@ -336,8 +338,8 @@ those familiar with the file can press the ">>" button to run all <strong>cells 
 0. Create a <strong>kernel</strong> by clicking on the New drop-down
    and selecting one.
 
-0. Click on tab <strong>File</strong> to show all the 
-   files and folders in the current directory. 
+0. Click on tab <strong>File</strong> to show all the
+   files and folders in the current directory.
 
 0. Click Open.
 
@@ -378,7 +380,7 @@ those familiar with the file can press the ">>" button to run all <strong>cells 
 
 0. Click on the Edit tab.
 
-   NOTE: Cells are where code is written and run. 
+   NOTE: Cells are where code is written and run.
 
    Several of the selections have an icon equivalent.
 
@@ -388,19 +390,19 @@ those familiar with the file can press the ">>" button to run all <strong>cells 
 
    When the thick left border on a box is colored <strong>green</strong>,
    the box is in <strong>edit mode</strong>.
-  
+
    If you don't see a blinking cursor in the cell, click in the cell.
 
 0. To exit from edit mode to display mode, hold down Shift and press
-   Enter. 
-   
+   Enter.
+
 
    ### Command mode
 
-   When a new cell is created, it is in command mode. 
+   When a new cell is created, it is in command mode.
 
    When the thick left border on a box is colored <strong>blue</strong>,
-   the box is in <strong>command mode</strong>. 
+   the box is in <strong>command mode</strong>.
 
    When the bar is blue, press H for a help screen
    about Keyboard shortcuts. It reads:
@@ -414,7 +416,7 @@ those familiar with the file can press the ">>" button to run all <strong>cells 
 
    ### Python Code
 
-0. Click on the "Code" drop-down, which specifies what is 
+0. Click on the "Code" drop-down, which specifies what is
    typed in the cell (input box).
 
 0. Select Markdown to format syntax for writing web content.
@@ -427,7 +429,7 @@ those familiar with the file can press the ">>" button to run all <strong>cells 
 
    REMEMBER: Two dollar signs begin and end math entries.
 
-0. To <strong>run</strong> the cell, click the >| icon 
+0. To <strong>run</strong> the cell, click the >| icon
    (used to mean forward to the end) or
    press Shift + Enter or Control + Enter to run the Markdown cell.
 
@@ -493,9 +495,9 @@ IPython.load_extensions('custom_shortcuts');
 
    NBConvert code modify the UI and behavior of Jupyter itself on the browser.
 
-   So Jupyter notebook extensions are written in javascript and CSS. 
+   So Jupyter notebook extensions are written in javascript and CSS.
 
-   nbextensions are installed in the directory of the same name, 
+   nbextensions are installed in the directory of the same name,
    either system wide or in your user profile.
    Their entry point is named <em>extensionname</em>.js
 
@@ -503,7 +505,7 @@ IPython.load_extensions('custom_shortcuts');
    ### Output as HTML
 
 0. To share a Notebook with others who do not have Notebook installed,
-   convert the Notebook to HTML or Markdown. 
+   convert the Notebook to HTML or Markdown.
 
    PROTIP: Some prefer receiving Markdown text so they paste in blog editing software which formats the Markdown to their own liking.
 
@@ -541,7 +543,7 @@ IPython.load_extensions('custom_shortcuts');
 GraphLab Create</a> from Dato is no longer available since Dato was sold
 and an unrelated entity now uses their domain name.
 
-It provided scalable "pre-implemented" ML algorithms 
+It provided scalable "pre-implemented" ML algorithms
 using Python installed using Anaconda.
 Entire courses on its use is at:
 

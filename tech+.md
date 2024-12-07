@@ -1,4 +1,8 @@
+---
 tech+.md
+---
+
+<a target="_blank" href="https://bomonike.github.io/tech+"><img align="right" width="100" height="100" alt="tech+.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/tech+.png?raw=true" />
 
 https://www.linkedin.com/pulse/mcu-iiot-inductiveautomation-ignition-wilson-mar-msc--azpic/
 

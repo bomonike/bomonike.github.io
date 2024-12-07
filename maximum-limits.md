@@ -1,7 +1,7 @@
 ---
 layout: post
 lastchange: "v003 + script :maximum-limits.md"
-date: "2024-12-03"
+date: "2024-12-06"
 file: "maximum-limits"
 title: "Maximum limits (in macOS file descriptors)"
 excerpt: "Set this higher to prevent errors during high load"
@@ -16,6 +16,9 @@ created: "2018-06-21"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+
+<a target="_blank" href="https://bomonike.github.io/maximum-limits"><img align="right" width="100" height="100" alt="maximum-limits.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/maximum-limits.png?raw=true" />
 
 Operating systems (Linux and macOS included) have settings which limit the number of files and processes that are allowed to be open. This limit protects the system from being overrun. But its default is usually set too low, when machines had way less power. Thus a "gotcha" that is only apparent when "too many files open" crashes appear only under load (as in during a stress test or production spike).
 

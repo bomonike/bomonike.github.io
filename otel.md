@@ -1,6 +1,9 @@
-<!-- otel.md
+---
+otel.md
 change: "otel.md"
--->
+---
+
+<a target="_blank" href="https://bomonike.github.io/otel"><img align="right" width="100" height="100" alt="otel.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/otel.png?raw=true" />
 
 ## What is OpenTelemetry?
 

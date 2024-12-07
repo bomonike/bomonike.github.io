@@ -1,8 +1,8 @@
-<!-- genai-ide.md
+---
+lastchange: git commit -m"v002 + perpexity :genai-ide.md"
+---
 
-git commit -m"v002 + perpexity :genai-ide.md"
--->
-
+<a target="_blank" href="https://bomonike.github.io/genai-ide"><img align="right" width="100" height="100" alt="genai-ide.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/genai-ide.png?raw=true" />
 Here are my notes about using GenAI to help with programming.
 
 "This year, it's LLMs. Last year it was blockchain. Next year maybe quantum".

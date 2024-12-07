@@ -1,3 +1,5 @@
+
+<a target="_blank" href="https://bomonike.github.io/microbit"><img align="right" width="100" height="100" alt="microbit.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/microbit.png?raw=true" />
 This is at https://bomonike.github.io/microbit
 
 This is part of a series about low-cost, low-power SOC (System on a Chip) microcontrollers (MCUs):

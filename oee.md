@@ -1,3 +1,5 @@
+
+<a target="_blank" href="https://bomonike.github.io/oee"><img align="right" width="100" height="100" alt="oee.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/oee.png?raw=true" />
 This is at <a target="_blank" href="https://bomonike.github.io/oee">https://bomonike.github.io/oee</a> from code within private repo <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/oee.md">https://github.com/bomonike/bomonike.github.io/blob/master/oee.md</a>
 
 

@@ -1,12 +1,12 @@
---- 
+---
 lastchange: git commit -m "v004 + remote:codespaces.md"
 ---
 
-GitHub Codespaces is a SaaS (Software-as-a-Service) like Microsoft 360 and Google Colab.
+<a target="_blank" href="https://bomonike.github.io/codespaces"><img align="right" width="100" height="100" alt="codespaces.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/codespaces.png?raw=true" />
 
-GitHub Codespaces works similar to GitHub Colab it that it provides a browser-based (remote) <strong>execution environment</strong> for your GitHub repositories.
+GitHub Codespaces is a SaaS (Software-as-a-Service) from Microsoft like Google Colab in that it provides a browser-based (remote) <strong>execution environment</strong> for repositories in GitHub.com.
 
-GitHub Codespaces on its servers <strong>virtual machines</strong> for you to write, run, and debug code directly in your browser on a Chromebook or tablet.
+GitHub Codespaces provides servers <strong>virtual machines</strong> for you to write, run, and debug code directly in your browser on a Chromebook or tablet.
 
 No complicated configuration of a development environment locally on your computer is required.
 
@@ -15,7 +15,7 @@ However, you'll need constant connection to a fast internet connection, which ca
 But, unlike Google Colab, Codespaces does not require coding in Jupyter Notebooks.
 Codespaces supports many programming languages.
 
-Instances can also be accessed locally on your laptop or desktop from Visual Studio Code, PyCharm, and other IDEs (after installing the GitHub Codespaces extension). 
+Instances can also be accessed locally on your laptop or desktop from Visual Studio Code, PyCharm, and other IDEs (after installing the GitHub Codespaces extension).
 
 ## How Much Does It Cost
 
@@ -28,11 +28,11 @@ Students can use Codespaces to work on public repositories for free as part of G
    * <a target="_blank" href="https://www.educative.io/github-students">Educative.com</a> 30% Off
    * <a target="_blank" href="https://www.notion.so/githubstudentpack">Notion</a> note Education Plus plan, with free unlimited guests, unlimited file uploads, custom websites, additional Notion AI responses — and more.
 
-Students can sign up at 
+Students can sign up at
 <a target="_blank" href="https://education.github.com/pack">https://education.github.com/pack</a>
 and get support from GitHub at <a target="_blank" href="https://support.github.com/contact/education">https://support.github.com/contact/education</a>.
 
-<a target="_blank" href="https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-teachers/about-github-education-for-teachers">BLAH: Teachers</a> cannot access Student Developer Pack, which includes Codespaces. But teachers get <a target="_blank" href="https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-copilot-subscription/getting-free-access-to-copilot-as-a-student-teacher-or-maintainer">free Individual-level access to Copilot (instead of free 30-day trial)</a> 
+<a target="_blank" href="https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-teachers/about-github-education-for-teachers">BLAH: Teachers</a> cannot access Student Developer Pack, which includes Codespaces. But teachers get <a target="_blank" href="https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-copilot-subscription/getting-free-access-to-copilot-as-a-student-teacher-or-maintainer">free Individual-level access to Copilot (instead of free 30-day trial)</a>
 
    <ul>https://github.com/settings/copilot</ul>
 
@@ -104,7 +104,7 @@ If there is already a codespace running, click the green "Open in a codespace" b
 Create a New Codespace:
 1. Choose the repository and branch you want to work with.
 1. Select the location and machine type for your Codespace, then click 'Create Codespace'3.
-   
+
    Alternatively, you can create a codespace from a template by navigating to the desired template repository and selecting "Open in a codespace"1.
 
 ## Provisioning the Environment:
@@ -116,7 +116,7 @@ Develop Your Application:
 
 1. Use the integrated VS Code editor to write and edit code directly in your browser.
 1. Run applications using commands appropriate for your project (e.g., npm run dev for Node.js projects)1.
-   
+
    View and Test Changes:
 
 1. Forward ports from your Codespace to test web applications in your browser. Click "Open in Browser" when prompted to view running applications12.
@@ -148,11 +148,11 @@ https://learn.microsoft.com/en-us/training/modules/code-with-github-codespaces/
 GitHub Codespaces is a fully configured development environment hosted in the cloud. By using GitHub Codespaces, your workspace, along with all of your configured development environments, is available from any computer with access to the internet.
 
 https://www.youtube.com/watch?v=kvJf8s18Vr4
-YOUTUBE: How to use GitHub Codespaces for Coding and Data Science 
+YOUTUBE: How to use GitHub Codespaces for Coding and Data Science
 
 https://www.youtube.com/watch?v=ozuDPmcC1io&list=PLmsFUfdnGr3wTl-NCblzcrEv2lFSX975-&pp=iAQB
 YOUTUBE Playlist: Introduction to Codespaces by Microsoft Reactor
-Alfredo Deza uses GitHub Codespaces to run Azure function using Flask using https://github.com/alfredodeza/demo-function 
+Alfredo Deza uses GitHub Codespaces to run Azure function using Flask using https://github.com/alfredodeza/demo-function
 
 https://www.youtube.com/watch?v=vDXPkAdqSyI
 What is GitHub Codespaces?

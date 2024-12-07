@@ -1,3 +1,5 @@
+<a target="_blank" href="https://bomonike.github.io/ap-compsci"><img align="right" width="100" height="100" alt="ap-compsci.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ap-compsci.png?raw=true" />
+
 This article presents a path for preparing high school students to begin careers in the cyber-enhanced workplace of the 21st century.
 
 This course is for those curious about how things work and enjoy taking a deep dive into technology.
@@ -2029,3 +2031,7 @@ Google's Generative AI for Educators
 ## GitHub
 
 https://www.twitch.tv/githubeducation
+
+## IB Networking topics
+
+https://www.youtube.com/watch?v=b5GZcldk_cY

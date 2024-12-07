@@ -1,7 +1,7 @@
 ---
 layout: post
 lastchange: "v003 xfer from wilsonmar.github.io :ports-open.md"
-date: "2024-12-05"
+date: "2024-12-06"
 file: "ports-open"
 title: "Ports Open (Networking)"
 excerpt: "What ports are open on my Mac, Linux, and Windows machines?"
@@ -18,6 +18,7 @@ created: "2016-10-26"
 {% include l18n.html %}
 {% include _toc.html %}
 
+<a target="_blank" href="https://bomonike.github.io/ports-open"><img align="right" width="100" height="100" alt="ports-open.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ports-open.png?raw=true" />
 Here is how to see what ports are open listening on a server.
 
 This is perhaps the most important potential vulnerability.

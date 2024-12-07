@@ -1,7 +1,10 @@
 This is <a target="_blank" href="https://bomonike.github.io/ibm-ai/">https://bomonike.github.io/ibm-ai</a>
 
-<!-- "v003 + hr openscale :ibm-ai.md"
--->
+---
+ "v003 + hr openscale :ibm-ai.md"
+---
+
+<a target="_blank" href="https://bomonike.github.io/ibm-ai"><img align="right" width="100" height="100" alt="ibm-ai.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ibm-ai.png?raw=true" />
 
 ## IBM ID, IBM Cloud, Watson Studio
 

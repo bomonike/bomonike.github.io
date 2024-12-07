@@ -1,4 +1,5 @@
 
+<a target="_blank" href="https://bomonike.github.io/plc"><img align="right" width="100" height="100" alt="plc.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/plc.png?raw=true" />
 This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/plc</a> from code within private repo <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/plc.md">https://github.com/bomonike/bomonike.github.io/blob/master/plc.md</a>
 
 Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">Purdue "Automation Pyramid"</a> are from a PowerPoint file <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.

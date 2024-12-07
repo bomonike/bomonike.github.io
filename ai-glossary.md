@@ -1,4 +1,4 @@
-ai-glossary.md
+ai-glossary.csv
 https://www.coursera.org/learn/building-gen-ai-powered-applications/ungradedWidget/TRXdF/glossary-building-genai-powered-apps-with-python
 
 ML (Machien Learning) | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.

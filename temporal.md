@@ -1,4 +1,8 @@
-workflows.md
+---
+temporal.md
+---
+
+<a target="_blank" href="https://bomonike.github.io/temporal"><img align="right" width="100" height="100" alt="temporal.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/temporal.png?raw=true" />
 
 Temporal Technologies (at <a target="_blank" href="https://www.Temporal.io/">Temporal.io</a>)
 provides a scalable "orchestrator" that manages application states within distributed mission-critical workflows,

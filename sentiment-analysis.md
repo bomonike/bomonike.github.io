@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-8-06"
+date: "2024-12-06"
 file: "sentiment-analysis"
 title: "Sentiment Analysis in the cloud"
 excerpt: "Quickly find out and respond to what people are saying about you and your organization."
@@ -16,6 +16,8 @@ comments: true
 {% include l18n.html %}
 {% include _toc.html %}
 
+
+<a target="_blank" href="https://bomonike.github.io/sentiment-analysis"><img align="right" width="100" height="100" alt="sentiment-analysis.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/sentiment-analysis.png?raw=true" />
 Brands need to respond quickly to <strong>memes</strong> and text mentions in
 social media posts, chat messages, and emails.
 

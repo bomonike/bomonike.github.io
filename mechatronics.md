@@ -1,4 +1,8 @@
+---
 mechatronics.md
+---
+
+<a target="_blank" href="https://bomonike.github.io/mechatronics"><img align="right" width="100" height="100" alt="mechatronics.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/mechatronics.png?raw=true" />
 
 Building and using electronics and robots (mechatronics) are not on the current AP CSP exam. But that skill is becoming more important for many engineering degrees.
 The ability to understand them at a deeper level is crucial for many jobs, if only to understand how your job is being replaced by them.
@@ -10,13 +14,13 @@ Printing and recognition of targets
 LIDAR and other sensors
 Simulation
 Hands with 16 degrees of freedom
-Cloud 
+Cloud
 Not shown are tasks such as https://www.youtube.com/@Electronic.Repairs
 
 
 Companies building humanoid robots (some in stealth mode since 2015):
 Boston Dynamics
-Telsa Optimus 
+Telsa Optimus
 Figure.ai O2 (Microsoft, OpenAI)
 Agility Robotics (Amazon)
 Aptronic

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-11-22"
+date: "2024-12-06"
 lastchange: "v001 new :azure-local.md"
 file: "azure-local.md"
 title: "Azure Arc Local"
@@ -14,6 +14,8 @@ comments: true
 
 {% include whatever.html %}
 
+<a target="_blank" href="https://bomonike.github.io/azure-local"><img align="right" width="100" height="100" alt="azure-local.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/azure-local.png?raw=true" />
+
 Part of their "Adaptive Cloud" offerings.
 https://www.youtube.com/watch?v=0zc_O7U2YqM&
 
@@ -25,7 +27,7 @@ and IBM AS400 since 1990.
 
 ## HCI AKS
 
-Azure Arc Local rebranded from Azure Stack HCI (hyperconverged Infrastructure) team who have working on Azure Arc on-premises 
+Azure Arc Local rebranded from Azure Stack HCI (hyperconverged Infrastructure) team who have working on Azure Arc on-premises
 since 2020. HCI provides the option to implement AKS.
 See https://learn.microsoft.com/en-us/training/modules/manage-azure-kubernetes-service-azure-stack-hci/4-deploy-aks-cluster
 Instead of using Windows Admin Center feed manager settings, automate AKS cluster deployment by using Windows PowerShell.
@@ -36,7 +38,7 @@ Microsoft's Azure Local (part of Azure Arc), enables distributed physical machin
 
 <img alt="az-arc-local.png" src=="https://res.cloudinary.com/dcajqrroq/image/upload/v1732280114/az-arc-local_j6cdjj.png" />
 
-It uses Azure portal and APIs to perform lifecycle operations like deployment, configuration, updates, and monitoring. 
+It uses Azure portal and APIs to perform lifecycle operations like deployment, configuration, updates, and monitoring.
 
 https://docs.microsoft.com/en-us/azure/azure-arc/Azure Arc on-premises:     https://docs.microsoft.com/en-us/azure/azure-arc/overview
 
@@ -67,10 +69,10 @@ AKS on Azure Local
 
 Find compatible hardware at https://azurestackhcisolutions.azure.microsoft.com/
 
-"Azure Local for Small Form Factor (SFF)" for edge computers that meet 
+"Azure Local for Small Form Factor (SFF)" for edge computers that meet
 Windows Server certification requirements as well as relaxed requirements from Software Defined Data Center (SDDC) and Windows Server Software-Defined (WSSD) program. See https://learn.microsoft.com/en-us/azure/azure-local/concepts/system-requirements-small-23h2
 
-<a target="_blank" href="https://www.youtube.com/watch?v=yxlAfS9mh2E">https://www.youtube.com/watch?v=yxlAfS9mh2E</a> 
+<a target="_blank" href="https://www.youtube.com/watch?v=yxlAfS9mh2E">https://www.youtube.com/watch?v=yxlAfS9mh2E</a>
 shows install on two PCs (HPE ProLiant MicroServer Gen11) with 4-core, <strong>64GB RAM</strong>, 1 TB SSD, two Ethernet ports. Without keyboard, mouse, or monitor.
 
 An additional USB SSD (in addition to the OS disk)
@@ -94,7 +96,7 @@ On Azure, instead of Active Directory, the Identity provider is "Local identity 
 
 <a target="_blank" href="https://techcommunity.microsoft.com/blog/azurearcblog/introducing-azure-local-cloud-infrastructure-for-distributed-locations-enabled-b/4296017)">BLOG</a> "Introducing Azure Local: cloud infrastructure for distributed locations enabled by Azure Arc" mentions introduction of Azure Local at Ignite Novemeber 20,2024.
 
-<a target="_blank" href="https://www.youtube.com/watch?v=o_sQvOHWIcU&list=PLDkX8OJhBFVsVqsbjvSNscAsxZsD6ZWza">VIDEO</a>: 
+<a target="_blank" href="https://www.youtube.com/watch?v=o_sQvOHWIcU&list=PLDkX8OJhBFVsVqsbjvSNscAsxZsD6ZWza">VIDEO</a>:
 "Deploy Azure Kubernetes Service(AKS) Cluster using Terraform and Azure DevOps YAML Pipeline" using github.com/labdemo2233/AKS-Terraform.
 
 

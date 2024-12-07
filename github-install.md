@@ -1,4 +1,8 @@
+---
 github-install.md
+---
+
+<a target="_blank" href="https://bomonike.github.io/github-install"><img align="right" width="100" height="100" alt="github-install.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/github-install.png?raw=true" />
 
 This markdown file provides a comprehensive guide to configuring Windows 11 with Git for GitHub SSH and GPG, with clear sections, code blocks, and additional helpful information.
 
@@ -8,7 +12,7 @@ Microsoft does not provide SSH and GPG tools with Windows 11, so this guide is a
 
 1. Install Git for Windows
 1. Install OpenSSH for Windows (if not already included in your Windows version)
-1. Install Gpg4win 
+1. Install Gpg4win
 
 ### Install Git for Windows
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-12-02"
+date: "2024-12-06"
 change: git commit -m"v005 + URDF :ros.md"
 file: "ros"
 title: "ROS (Robotic Operating System)"
@@ -15,6 +15,9 @@ comments: true
 created: "2021-08-02"
 ---
 <i>{{ page.excerpt }}</i>
+
+
+<a target="_blank" href="https://bomonike.github.io/ros"><img align="right" width="100" height="100" alt="ros.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ros.png?raw=true" />
 
 This is at https://bomonike.github.io/ros
 with source at https://github.com/bomonike/bomonike.github.io/blob/master/ros.md

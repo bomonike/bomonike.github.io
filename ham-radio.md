@@ -1,4 +1,8 @@
+---
 ham-radio.md 2024-05-14
+---
+
+<a target="_blank" href="https://bomonike.github.io/ham-radio"><img align="right" width="100" height="100" alt="ham-radio.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ham-radio.png?raw=true" />
 
 The FCC (Federal Communications Commission) in the US, and its equivalent in each country (except Yemen and North Korea) have rules on how its citizens can use the airwaves.
 
@@ -25,9 +29,9 @@ Local TV and radio stations
 
 Back in the day, the nickname for someone with amature skills (not professional) was "ham".
 
-CTCSS (Continuous Tone Coded Squelch System) subaudible 
+CTCSS (Continuous Tone Coded Squelch System) subaudible
 
-DTSS (Dual Tone Multi-Freq)uency) 
+DTSS (Dual Tone Multi-Freq)uency)
 
 
 ## Wireless Tech
@@ -87,7 +91,7 @@ The 6-meter (50 MHz) band is excellent for meteor scatter communications, when r
    * 5 cm =  5.650 -  5.925 GHz
    * 3 cm = 10.000 - 10.500 GHz
    * 1.2 cm = 24.000 - 24.250 GHz
-* 1,500 W - UHF (Ultra High Frequency) 300-3000 MHz 
+* 1,500 W - UHF (Ultra High Frequency) 300-3000 MHz
    * contains spliter frequencies of FRS simplex operation
 * 1,500 W - VHF (Very High Frequency) 30-300 MHz
 
@@ -119,8 +123,8 @@ The 6-meter (50 MHz) band is excellent for meteor scatter communications, when r
    * 11 meter band: 25.67 - 26.1 MHz
    <br /><br />
 
-To get 
-want the length of a half-wavelength antenna in inches based on a given wavelength. 
+To get
+want the length of a half-wavelength antenna in inches based on a given wavelength.
 
 Now that we have our frequency (50 MHz), let's use the tried-and-true formula for a half-wavelength antenna: 468 / frequency in MHz = antenna length in feet. 468 / 50 MHz = 9.36 feet. To convert to inches, take 9.36 feet x 12 = 112.32 inches.
 
@@ -136,7 +140,7 @@ FCC Rule §2.201 on emission types:
 * FSK (Frequency Shift Keying) is direct digital modulation of oscillation
 * FT8 (FSK with 8-tones)
 * QPSK (Quadrature Phase Shift Keying) with four phases shifted to create data bits
-* NTSC (National Television System Committee) video UHF analog fast scan 
+* NTSC (National Television System Committee) video UHF analog fast scan
 <br /><br />
 
 A <strong>space station</strong> is any amateur state more than 50 km above earth.
@@ -145,10 +149,10 @@ In mode U/V, the satellite uplink is in the 70-centimeter band and the downlink 
 
 No music can be transmitted except to the Space Station 50 km above earth.
 
-Most VHF power amplifiers are multimode: operate SSB, CW, and FM. 
+Most VHF power amplifiers are multimode: operate SSB, CW, and FM.
 
-At frequencies below 29.7 MHz, which includes all HF bands, 
-the maximum bandwidth for a RTTY or data emission is 2.8khz. 
+At frequencies below 29.7 MHz, which includes all HF bands,
+the maximum bandwidth for a RTTY or data emission is 2.8khz.
 
 * 20 KHz On 6 meters and 2 meters, max. symbol rate of 19.6k baud.
 * 100 KHz on 1.25 meters and 70 cm, max. symbol rate of 5.6k baud.
@@ -156,9 +160,9 @@ the maximum bandwidth for a RTTY or data emission is 2.8khz.
 <br /><br />
 
 AM transmissions are 6 kHz wide. But<br />
-FM transmissions can use 2.8 kHz with SSB (Single Side Band), using only one side of the Carrier Frequency is transmitted, for 
+FM transmissions can use 2.8 kHz with SSB (Single Side Band), using only one side of the Carrier Frequency is transmitted, for
    * LSB (Lower Side Band) is used at 10 MHz and higher
-   * USB (Upper Side Band) 
+   * USB (Upper Side Band)
 
 
 (most people don't use 6m)
@@ -168,7 +172,7 @@ The combination of harmonnic frequencies create spurious output called <strong>i
 
 ## Multi-band radio
 
-Retail radios have a short antenna that cannot be swapped out, 
+Retail radios have a short antenna that cannot be swapped out,
 so are limited to a range of about a mile.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=x_rhmFntwwc">VIDEO</a>:
@@ -180,11 +184,11 @@ It contains a GMRS radio and ham radio "mode". Not waterproof. Everytime mode is
 
 ## Repeaters
 
-HF reception depends on many factors, such as location, time of year, time of day, the frequency being used, and atmospheric and ionospheric propagation conditions. 
+HF reception depends on many factors, such as location, time of year, time of day, the frequency being used, and atmospheric and ionospheric propagation conditions.
 
 A FM VHF packet repeater is called a digipeater.
 
-[RadioReference.com's database of 224K frequencies](https://www.radioreference.com/db/) 
+[RadioReference.com's database of 224K frequencies](https://www.radioreference.com/db/)
 
 * http://mygmrs.com
 
@@ -197,8 +201,8 @@ A FM VHF packet repeater is called a digipeater.
     * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=DStar">D-Star Repeaters</a>
 
     * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=DMR">DMR (Digital Mobile Radio) Repeaters</a> for "walkie talkies" which can display call signs, addresses. DMR color codes are similar to CTCSS or DCS codes.
-    
-    C4FM GPS walkie-talkies can only display call signs and distance information. 
+
+    C4FM GPS walkie-talkies can only display call signs and distance information.
 
     * <a target="_blank" href="https://www.repeaterbook.com/repeaters/niche/index.php?mode=P-25">APCO P-25 Repeaters</a>
 
@@ -243,7 +247,7 @@ LoRA devices connect with other LoRa devices on the <strong>license-free</strong
 
 <a target="_blank" href="https://www.thethingsnetwork.org/">TheThingsNetwork.org</a> in Amsterdam () (co-founded by Johan Stokking) publishes a:
    * <a target="_blank" href="https://www.thethingsnetwork.org/map">LoRa Meshtastic Repeater map</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=_I4c-Al9hCI">Microsoft interview</a> 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_I4c-Al9hCI">Microsoft interview</a>
 
 
 It operates in Europe on the 70cm band. In the US on the 433, 868, <strong>915 MHz</strong> ISM radio band. The longest range is 150m, but line-of-sight. Its low power, low bit rate, wireless platform used in <a target="_blank" href="https://www.instructables.com/LoRa-Mesh-Radio/">IoT applications</a>. Low bit rate means 0.3 to 50 kbits/s using spread spectrum modulation. [<a target="_blank" href="https://wifivitae.com/2022/12/14/lorawan-mapper-overview/">*</a>]
@@ -282,9 +286,9 @@ contact an automated Winlink ??? station to send a message.
 ### Wires-X
 
 https://systemfusion.yaesu.com/what-is-system-fusion/
-Yeasu's "Fusion" solution uses continuous envelope <strong>C4FM 4-level FSK</strong> digital modulation technology to transmit digital voice and data over Amateur radio bands. 
+Yeasu's "Fusion" solution uses continuous envelope <strong>C4FM 4-level FSK</strong> digital modulation technology to transmit digital voice and data over Amateur radio bands.
 
-The first version of the American digital intercom mechanism Project 25 (P25 for short) adopted C4FM, 
+The first version of the American digital intercom mechanism Project 25 (P25 for short) adopted C4FM,
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715636248/ham-wiresx-620x243_sid8du.jpg"><img alt="ham-wiresx-620x243.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715636248/ham-wiresx-620x243_sid8du.jpg"></a>
 
@@ -300,7 +304,7 @@ As with D-STAR, C4FM uses FDMA (???) digital modulation mode with channel interv
 BAOFENG UV-5R Dual Band Two Way Radio (Black), 144-148MHz & 420-450MHz
 
 For $17, add a 15-inch Nagoya NA-771 antenna for 2.15 dBi gain on UHF.
-The mag-mount Tram 1185 antenna 
+The mag-mount Tram 1185 antenna
 
 Baofeng has a VFO (Variable Frequency Oscillator)
 for National Simplex frequencies used for "simplex" (point-to-point) calling REMEMBER:
@@ -313,22 +317,22 @@ Find your state's frequency coordination body, such as "Illinois repeater associ
 
 Baofeng has memory slots for 128 frequencies
 
-It does not work on the 220 MHz. 
+It does not work on the 220 MHz.
 But the Yesu VF6 & VF6VR do.
 
 
-To receive frequency coverage of 504kHz to 998.99MHz* available after a $35 MARS (Military Auxiliary Radio Service) mod to unlock transmit on 6m during emergencies. 
+To receive frequency coverage of 504kHz to 998.99MHz* available after a $35 MARS (Military Auxiliary Radio Service) mod to unlock transmit on 6m during emergencies.
 <a target="_blank" href="https://www.youtube.com/watch?v=9yDJg57tPRw&t=8m26s">VIDEO</a>:
-Apply at The U.S. Army Network Enterprise Technology Command (NETCOM) 
-https://netcom.army.mil/mars not reliant on internet & cellular. 
+Apply at The U.S. Army Network Enterprise Technology Command (NETCOM)
+https://netcom.army.mil/mars not reliant on internet & cellular.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=dOOJaoxQU88&list=PLZpc6PnzmzmGNxYpbWDdWqQ-uQY9O6B54&index=1">VIDEO</a>:
 <a target="_blank" href="https://www.manualslib.com/manual/339785/Yaesu-Vx-6r.html">Manual</a>:
 <a target="_blank" href="https://www.yaesu.com/">Yaesu</a> in Cypress, CA
 <a target="_blank" href="https://www.youtube.com/watch?v=9yDJg57tPRw">VIDEO</a>:
-Their <a target="_blank" href="https://www.amazon.com/Tri-Band-Yaesu-VX-6R-Submersible-Transceiver/dp/B004ESEW6C/">$326.90</a> <a target="_blank" href="https://www.yaesu.com/indexVS.cfm?cmd=DisplayProducts&ProdCatID=111&encProdID=4C6F204F6FEBB5BAFA58BCC1C131EAC0&DivisionID=65&isArchived=0">VF-6R handheld</a> has 900 memory slots. And JIS7 submersibility. 
-Switchable 1W to 5W. 
-1370 mAh Lithium-Ion Battery Pack that can be field-charged. Separate volume & squash controls. 
+Their <a target="_blank" href="https://www.amazon.com/Tri-Band-Yaesu-VX-6R-Submersible-Transceiver/dp/B004ESEW6C/">$326.90</a> <a target="_blank" href="https://www.yaesu.com/indexVS.cfm?cmd=DisplayProducts&ProdCatID=111&encProdID=4C6F204F6FEBB5BAFA58BCC1C131EAC0&DivisionID=65&isArchived=0">VF-6R handheld</a> has 900 memory slots. And JIS7 submersibility.
+Switchable 1W to 5W.
+1370 mAh Lithium-Ion Battery Pack that can be field-charged. Separate volume & squash controls.
 BNC antenna connector for <a target="_blank" href="https://caatailantennas.com/products/wearable-tactical-antenna">$60 v2 Wearable Antenna (BNC-F to TNC-M Adapter)</a>.
 <a target="_blank" href="https://www.hamradio.com/detail.cfm?pid=H0-009346">adapter</a>
 
@@ -357,7 +361,7 @@ https://hamcall.net/
 Call sign database
    * Append "AG" until you have a certificate.
 
-Half of Ham Radio license holders are at the General level. 
+Half of Ham Radio license holders are at the General level.
 General licensees can be one of 3 VEs (Volunteer Examiners) who administer exams at each local site.
 VEs are accredited by VECs (VE Coordinators).
 
@@ -394,12 +398,12 @@ The Fast Track to Your Technician Class Ham Radio License: https://amzn.to/3kPWq
 
 TESTING ONLINE: https://hrcc.wiki/en/home/VETesting
 
-hamfest, a large electronics flea market where you can buy and sell used ham equipment and other electronics, 
+hamfest, a large electronics flea market where you can buy and sell used ham equipment and other electronics,
 
 
 ## Beacons
 
-<a target="_blank" href="https://www.youtube.com/watch?v=FktSv3tDwA8&list=PL1KAjn5rGhixvvb_jMZFWmbP97-t9Kyxk&index=2">VIDEO</a> 
+<a target="_blank" href="https://www.youtube.com/watch?v=FktSv3tDwA8&list=PL1KAjn5rGhixvvb_jMZFWmbP97-t9Kyxk&index=2">VIDEO</a>
 
 FCC Part 97 defines in the US <a target="_blank" href="https://en.wikipedia.org/wiki/International_Beacon_Project">18 automatically controlled beacons</a> which send 100-watt CW (Morse code)one-way every 3 minutes to assess ionospheric signal propagation characteristics at 28.20 - 28.30 MHz, 24.930, 21.150, 18.110, 14.100.
    * The W6WX beacon in on Mt. Umunhum in the Santa Cruz mountains of California.
@@ -407,7 +411,7 @@ FCC Part 97 defines in the US <a target="_blank" href="https://en.wikipedia.org/
 MAP TOOL: Instead of beacons actively transmitting signals, the Reverse Beacon Network (RBN) map at <a target="_blank" href="https://www.reversebeacon.net/main.php?rows=10&max_age=10,hours&hide=distance_km">reversebeacon.net</a> show the network of stations listening to the bands and reporting what stations they hear, when and how well. On CW and some digital modes.
 
 TOOL: Obtain the <a target="_blank" href="https://www.ncdxf.org/beacon/AzMap/index.html">
-heading and distance</a> to the 
+heading and distance</a> to the
 
 https://soundbytes.asia/proppy/radcom
 Proppy HF Circuit Prediction: Radcom
@@ -415,7 +419,7 @@ Proppy HF Circuit Prediction: Radcom
 
 ## Field Days
 
-POTA (Parks On The Air) 
+POTA (Parks On The Air)
 
 SOTA (Summits On The Air)
 
@@ -441,7 +445,7 @@ For GMRS: "Applicant/Licensee certifies that he or she will comply with the requ
 Usable frequencies that hop (refract) through the skip zone under the ionosphhere are between:
 
    * MUF (Maximum Usable Frequency)
-   
+
    * LUF (Lowest Usable Frequency)
 
 NVIS (Near Vertical Incident Skywave) bounces up (on a Critical Angle) for about (200-300 KM) 400 miles instead of out (around the world).
@@ -509,7 +513,7 @@ Parameters affecting receiver sensitivity:
 
 Some modern amateur transmitters still offer high-stability crystal oscillators as an added accessory option.
 <strong>oscillator</strong> circuits generate a signal at a specific frequency:
-There are different types: Pierce and crystal. 
+There are different types: Pierce and crystal.
 
 
 Append "QRP" to call sign when transmitted on less than 5 W digital or 10 W on voice.
@@ -534,7 +538,7 @@ Wifi Broadband-Hamnet (TM), also referred to as an HSMM (high-speed multimedia) 
 
 ### Transverter
 
-A <strong>transverter</strong> converts RF input and output of a transceiver to another band. 
+A <strong>transverter</strong> converts RF input and output of a transceiver to another band.
 It functions via a mixer used to convert radio signals from one frequency to another.
 For example, from 10-meter to 2-meter or 70-centimeters & back.
 
@@ -548,40 +552,40 @@ The mixer circuit converts a radio signal from one frequency to another. Two RF 
 A <strong>transistor</strong> is an electronic gate.
 It is composed of three layers of semiconductor material configured to dope with N and P dopants:
    * N-type transistor dopants donate electrons
-   * P-type transistor dopants accept electrons. 
+   * P-type transistor dopants accept electrons.
    <br /><br />
 
-A <strong>bipolar junction transistor</strong> allows a small current at one terminal to control larger current at its other terminals allowing for amplification or switching. 
+A <strong>bipolar junction transistor</strong> allows a small current at one terminal to control larger current at its other terminals allowing for amplification or switching.
 Energy passing from the collector to emitter is controlled by the base.
 
 A transister is the only component in an RF power amplifier that produces gain.
 
 A FET (Field-effect transistor) are commonly found in amateur radio receivers because of their efficiency in the RF ranges.
-They use an electric field to control the flow of current. 
+They use an electric field to control the flow of current.
 It's a unipolar transistor.
 Its gate is used to control the current passing between the source and the drain.
 
 The "skin effect": In AC circuits, current flows on the outside of the conductor.
 
 <strong>Inductance</strong> is the ability to store energy in a magnetic field.
-The basic unit of inductance is the <strong>henry</strong>. 
+The basic unit of inductance is the <strong>henry</strong>.
 
-An <strong>inductor</strong> stores electrical energy in a <strong>magnetic</strong> field when current flows through it. 
+An <strong>inductor</strong> stores electrical energy in a <strong>magnetic</strong> field when current flows through it.
 Generally, the more turns of a coil, the higher the inductance.
 Inductors are made of a coil of wire such as from small copper tubing.
-So inductors are also called chokes or coils. 
+So inductors are also called chokes or coils.
 
-A <strong>capacitor</strong> stores electrical energy in an <strong>electrical</strong> circuit. 
+A <strong>capacitor</strong> stores electrical energy in an <strong>electrical</strong> circuit.
 Its symbol is a line and a frown.
-The conductive surfaces of a capacitor may be foil, film or metal 
+The conductive surfaces of a capacitor may be foil, film or metal
 separated by glass, ceramic, air or other elements that provide insulation.
 
-An LC circuit -- a L (inductor) and a C (capacitor) connected in series or parallel to form a filter -- is a <strong>resonant</strong> or tuned circuit. 
+An LC circuit -- a L (inductor) and a C (capacitor) connected in series or parallel to form a filter -- is a <strong>resonant</strong> or tuned circuit.
 
-A <strong>relay</strong> is an electrically-controlled electromagnet to switch current flow. 
+A <strong>relay</strong> is an electrically-controlled electromagnet to switch current flow.
 Mechanical contacts control the flow of larger current.
 
-SPDT (single pole, double throw) switches have a single input and two outputs. 
+SPDT (single pole, double throw) switches have a single input and two outputs.
 They are used as a “low / high” switch in a circuit.
 
 A <strong>bettery</strong> ???
@@ -598,10 +602,10 @@ energy from the ollector to emitter is controlled by the base.
 There are two different approaches:
 
    * Send VOIP (Voice Over IP) through the internet to FM stations via EchoLink Windows & Android apps
- 
+
    * Send voice generated on a Linux laptop using direwolf
 
-Packet radios use the AX.25 protocol standard based on the X.25 protocol. 
+Packet radios use the AX.25 protocol standard based on the X.25 protocol.
 The "A" in AX.25 stands for amateur radio.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=HuvNxztn_j0&t=25s">VIDEO</a>
@@ -617,7 +621,7 @@ APRSDroid app.
 
 IRLP (Internet Radio Linking Project) nodes by using DTMF (dual-tone multi-frequency) tones. A technique to connect amateur radio systems, such as repeaters, via the internet using Voice Over Internet Protocol (VoIP)
 
-FT8, or "Franke-Taylor design, 8-FSK modulation," 15 secs needs 
+FT8, or "Franke-Taylor design, 8-FSK modulation," 15 secs needs
 https://en.wikipedia.org/wiki/WSJT_%28amateur_radio_software%29
 <a target="_blank" href="https://wsjt.sourceforge.io/wsjtx.html">
 WSJT-X software</a> and hardware.
@@ -631,9 +635,9 @@ A digital mode hot spot allows hams using digital radios such as DMR or D-STAR t
 https://www.icomjapan.com/explore/d-star/
 
 https://test.icomamerica.com/lineup/amateur/D-STAR/
-DMR or 
+DMR or
 https://regist.dstargateway.org/instructions/
-D-STAR (after regis) 
+D-STAR (after regis)
 
 D-STAR (Digital Smart Technologies for Amateur Radio) from Japan
 https://en.wikipedia.org/wiki/D-STAR
@@ -658,7 +662,7 @@ Uses ARQ (Automatic Repeat Query)
 ## Stations
 
 WebSDR (Software Defined Radio) receiver connected to the internet allows many listeners to listen simultaneously. WebSDR servers can register themselves automatically on http://www.websdr.org/
-listing 155 servers active throughout the world, with 1298 users and 749 MHz of radio spectrum. 
+listing 155 servers active throughout the world, with 1298 users and 749 MHz of radio spectrum.
 
 https://rx-tx.info/map-sdr-points
 provides a map
@@ -666,7 +670,7 @@ provides a map
 
 ## Ohm’s Law
 
-Ohm’s Law states that voltage (E) equals current (I) multiplied by resistance (R). 
+Ohm’s Law states that voltage (E) equals current (I) multiplied by resistance (R).
 
 The flow rate of one coulomb per second is equal to one amp of current.
 
@@ -681,7 +685,7 @@ Logrithmically means increases are exponential.
 * At 3 dB, there is a 2x change in power.
 * At 10 db, there is a 10x change in power
 
-Power is the rate at which electrical energy is consumed (converted to heat). 
+Power is the rate at which electrical energy is consumed (converted to heat).
 A 40-watt bulb uses more power than a 100-watt bulb.
 
 <a target="_blank" href="https://study.hamradioprep.com/courses/take/general-license-course-2023-2027/lessons/44706199-station-rf-evaluation-video">VIDEO</a>:
@@ -698,20 +702,20 @@ Reduce exposure by reducing transmission <strong>duty cycle</strong>.
 
 P (power watts) = E (volts) multiplied by I (current in amps).
 
-A <strong>transformer</strong> steps down 120 volts AC house current to a lower AC voltage for other uses. There also are step-up transformers. 
+A <strong>transformer</strong> steps down 120 volts AC house current to a lower AC voltage for other uses. There also are step-up transformers.
 In a diagram:
 The left-hand side of the transformer is the primary winding.
 The right hand side is the secondary winding.
 
-A <strong>regulator</strong> regulates the amount of voltage from a power supply. 
-So it's also called a voltage regulator. 
+A <strong>regulator</strong> regulates the amount of voltage from a power supply.
+So it's also called a voltage regulator.
 Some power supply designs use a single chip while others use many separate and independent components.
 
-A <strong>rectifier</strong> changes an alternating current into a varying direct current signal. 
-A rectifier is composed of diodes that direct the flow of current into specific directions in the electronic circuit. The diode allows current to flow in only one direction. 
+A <strong>rectifier</strong> changes an alternating current into a varying direct current signal.
+A rectifier is composed of diodes that direct the flow of current into specific directions in the electronic circuit. The diode allows current to flow in only one direction.
 
 The diode is classified as a semiconductor.
-In the forward direction, a minimum amount of voltage, called the voltage drop, is required to have the diode conduct current. 
+In the forward direction, a minimum amount of voltage, called the voltage drop, is required to have the diode conduct current.
 
 Within a diode, current flows into the anode and out of the cathode.
 
@@ -763,7 +767,7 @@ Antenner Tuner/Coupler
 
 Good rosin solder joints are shiny rather than "gray" or dull.
 
-Acid-core solder should NEVER be used for radio and electronic use. 
+Acid-core solder should NEVER be used for radio and electronic use.
 Cold tin-lead solder (made for steel and other metals) result in a rough or lumpy surface.
 
 ## Antennas
@@ -788,13 +792,13 @@ Gain in dBi is 25 dB higher than gain in dBd.
 
 To get the approximate length of a half-wavelength <strong>dipole</strong> (named for the Japanese who invented it), divide 468 by the frequency in megahertz:
 
-For 6 meter with 50 Megahertz.  So 468 / 50 MHz = 9.36 Feet or 112.32 inches. 
+For 6 meter with 50 Megahertz.  So 468 / 50 MHz = 9.36 Feet or 112.32 inches.
 If we need to calculate a quarter-wavelength, we can use half of 468 which is 234.  
 For 2 Meter, calculate 468 / 146 MHz is 3.20 feet or 38.4 inches for a half-wavelength dipole.  Take half of that to get a quarter-wavelength and you get 19.2 inches. Or 234 / 146 MHz = 1.60 Feet or 19.2 inches.
 
 The tried-and-true formula for <strong>quarter-wavelength</strong> antennas is divide 234 by the frequency in MHz. 234 / frequency in MHz = Antenna length in feet. Therefore, 234 / 146 MHz = 1.602 feet. To convert feet to inches, multiply by 12. Therefore, 1.602 feet x 12 = 19.2 inches.
 
-The approximate length, in inches, of a quarter-wavelength vertical antenna for 146 MHz will be 19 inches. Let's break down the math: they want the length on an antenna in inches based on a given frequency. 
+The approximate length, in inches, of a quarter-wavelength vertical antenna for 146 MHz will be 19 inches. Let's break down the math: they want the length on an antenna in inches based on a given frequency.
 
 A 5/8-wavelength antenna has longer range and more gain when compared to the 1/4 wavelength antenna.
 
@@ -828,7 +832,7 @@ At 2:1, loss is about 11%.<br />
 
 An <strong>antenna tuner</strong> adjusts to present a 1:1 match to the transmitter.
 
-To reduce attenuation (signal loss), 
+To reduce attenuation (signal loss),
 https://universal-radio.com
 
 * RG-8
@@ -868,18 +872,18 @@ Listen before you transmit.
 
 Repeat “CQ” a few times, followed by “this is,” then your call sign a few times, then pause to listen. Repeat as necessary.
 
-“CQ DX” (means “distant”) is a call for any stations outside the lower 48 states. 
+“CQ DX” (means “distant”) is a call for any stations outside the lower 48 states.
 Such operate on 50.1 MHz to 50.125 MHz.
 
 To ensure that you aren't causing interference to others who are already having a conversation,
-if you see a frequency that appears free, 
+if you see a frequency that appears free,
 * On CW send “QRL?”, followed by your call sign.
-* if using phone, ask if the frequency is in use, followed by your call sign. 
+* if using phone, ask if the frequency is in use, followed by your call sign.
 That's so they may be just not talking at that moment, but still using the frequency.
 After making a contact with another ham, exchange a signal report of readability and strength, such as “This is AA1RC. You are 5-9 in South Texas”
 for perfectly readable and very strong from these scales:
 
-R5 = 95%+ Perfectly readable<br /> 
+R5 = 95%+ Perfectly readable<br />
 R4 = 80%+ Practically no difficulty; occassional missed characters<br />
 R3 = 40%+ Considerable words distinguishable<br />
 R2 = 20%+ Ocassional words distinguishable<br />
@@ -898,7 +902,7 @@ It's used by hams to find the <strong>short-path</strong> between two stations. 
 
 ### MEMORIZE: Use NATO phoetic alphabet.
 
-<a target="_blank" href="https://www.youtube.com/watch?v=TesQ5GON_iw&t=54s">VIDEO</a>: pronounciation, with 
+<a target="_blank" href="https://www.youtube.com/watch?v=TesQ5GON_iw&t=54s">VIDEO</a>: pronounciation, with
 
 <table border="1" cellpadding="4" cellspacing="0"><tr valign="bottom"><th><strong>Character</strong></th><th><strong>Code word</strong></th><th><strong>Pronunciation</strong></th><th><strong>Morse Code</strong></th></tr><tbody>
 <tr valign="top"><td><strong>A</strong></td><td>Alfa/Alpha</td><td>AL FAH</td><td>● ▬</td></tr>
@@ -941,10 +945,10 @@ It's used by hams to find the <strong>short-path</strong> between two stations. 
 
 The two t's in Juliett is to ensure that French speakers who usually do not pronounce the t at the end of a word.
 
-Morse code dits and dahs. <a target="_blank" href="https://www.youtube.com/watch?v=rufnWLVQcKg">VIDEO</a> 
+Morse code dits and dahs. <a target="_blank" href="https://www.youtube.com/watch?v=rufnWLVQcKg">VIDEO</a>
 https://cyber.org/find-curricula/morse-code
 
-Type or paste words into website: <a target="_blank" href="https://www.radiospelling.com/">https://www.radiospelling.com</a> to pronounce then out your speakers. 
+Type or paste words into website: <a target="_blank" href="https://www.radiospelling.com/">https://www.radiospelling.com</a> to pronounce then out your speakers.
 
 Select "International Civil Aviation Organization" (ICAO) adopted in 1956 rather than historical ones described at https://en.wikipedia.org/wiki/NATO_phonetic_alphabet
 (Some Police departments have a <a target="_blank" href="https://www.rfcafe.com/references/general/phonetic-alphabet.htm">different set</a>)
@@ -959,7 +963,7 @@ Several codes words and sequences of code words have become well-known, such as 
 
 ### End conversations
 
-Ending a conversation or transmission with "73" means "Best Regards" or goodbye. 
+Ending a conversation or transmission with "73" means "Best Regards" or goodbye.
 This harks back to the early days of landline Morse code telegraphy in the 1800s, when Telegraphers used numerical codes to represent common phrases to speed up transmission. BTW: In Morse code, "73" forms a palindromic sequence that is the same forwards and backwards, adding to its appeal and memorability for ham operators.
 
 ## Contesting

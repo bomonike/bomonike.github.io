@@ -8,7 +8,7 @@ tags: [apple, mac, utilities]
 image:
 # feature: pic Giant-Swiss-Army-Knife-1900x500.jpg
   feature: https://cloud.githubusercontent.com/assets/300046/14622061/afe5f5da-0584-11e6-8140-3278289baef4.jpg
-  credit: 
+  credit:
   creditlink:
 comments: true
 ---
@@ -16,6 +16,7 @@ comments: true
 {% include l18n.html %}
 {% include _toc.html %}
 
+<a target="_blank" href="https://bomonike.github.io/mac-utilities"><img align="right" width="100" height="100" alt="mac-utilities.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/mac-utilities.png?raw=true" />
 This article compares and contrasts macOS utilites vs. Linux utilities -- the Swiss Army Knife for almost every need.
 
 ## Uname = Darwin (BSD)
@@ -47,9 +48,9 @@ Its packages include zshell and tig (Git spelled backwards), the Text-Mode Inter
 
 ## System Preferences GUI
 
-macOS provides a GUI to manage system configuration settings. 
+macOS provides a GUI to manage system configuration settings.
 
-1. Mouse to the upper-left corner of the screen and click the Apple icon that appears to choose "System Preferences...". 
+1. Mouse to the upper-left corner of the screen and click the Apple icon that appears to choose "System Preferences...".
 
    Alternately, you can also open the dialog with this command:
 
@@ -70,7 +71,7 @@ Open a Finder window to view files in both folders.
 
 In folder "/Applications/Utilities" are several apps which include "System Information.app".
 
-macOS provides a GUI to display detailed information about system Hardware, Software, and Networks. Mouse to the upper-left corner of the screen and <strong>hold down Option</strong> while you click the Apple icon. "System Information..." appears. But you can also open it without the Option key by selecting "About This Mac" then pressing "System Report". 
+macOS provides a GUI to display detailed information about system Hardware, Software, and Networks. Mouse to the upper-left corner of the screen and <strong>hold down Option</strong> while you click the Apple icon. "System Information..." appears. But you can also open it without the Option key by selecting "About This Mac" then pressing "System Report".
 
 Instead of examining various Linux config files (/etc/\*elease, /proc/meminfo for memory, /proc/cpuinfo for number of cores), macOS has a "system_profiler" utility presenting many data types.
 
@@ -175,13 +176,13 @@ Instead of "basic", there is also "mini" and "full" scope of output. When provid
    </pre>
 
    "load averages" numbers are calculations of the average system load over three periods of times: the last one-, five-, and fifteen-minute periods.
-   These count the <strong>number of processes</strong> either using or <strong>waiting</strong> for CPU (the ready queue or run queue) increments the load number by 1. 
+   These count the <strong>number of processes</strong> either using or <strong>waiting</strong> for CPU (the ready queue or run queue) increments the load number by 1.
 
    In a system with <strong>four CPU cores</strong>, a load average of 3.73 would indicate that there were, on average, 3.73 processes ready to run, and each one could be scheduled into a CPU.
 
 ## To identify number of CPU cores
 
-   <pre><strong>sysctl hw.physicalcpu 
+   <pre><strong>sysctl hw.physicalcpu
    hw.logicalcpu</strong></pre>
 
    Response:
@@ -236,7 +237,7 @@ See mac-diskspace
    <pre>/usr/local/Cellar/htop/2.2.0_1: 11 files, 188KB</pre>
 
 0. Invoke it:
-   
+
    <pre><strong>htop</strong></pre>
 
 
@@ -244,7 +245,7 @@ See mac-diskspace
 
 ## Processes
 
-0. So that we can kill it for fun, create a background process (by specifying &) 
+0. So that we can kill it for fun, create a background process (by specifying &)
    which sleep for 999 seconds:
 
    <pre><strong>sleep 999 &
@@ -297,12 +298,12 @@ UID   PID  PPID        F CPU PRI NI       SZ    RSS WCHAN     S             ADDR
 
    ## Kill
 
-0. To kill a single program by name: 
+0. To kill a single program by name:
 
    <pre><strong>pkill sleep
    </strong></pre>
 
-0. To kill several progams by name: 
+0. To kill several progams by name:
 
    <pre><strong>killall sleep
    </strong></pre>
@@ -316,7 +317,7 @@ UID   PID  PPID        F CPU PRI NI       SZ    RSS WCHAN     S             ADDR
 
    <pre><strong>xcode-select --install</strong></pre>
 
-2. List what it installed to folder <tt>/Library/Developer/CommandLineTools</tt> (containing folders 
+2. List what it installed to folder <tt>/Library/Developer/CommandLineTools</tt> (containing folders
 Library, SDKs, and usr):
 
    <pre><strong>ls /Library/Developer/CommandLineTools/usr/bin/</strong></pre>
@@ -343,7 +344,7 @@ More on this:
 
    This has the same problem as Linux ioreg - it reflects the state of kernel objects that the kernel has matched to devices, not the devices themselves.<a target="_blank" href="https://stackoverflow.com/questions/17058134/is-there-an-equivalent-of-lsusb-for-os-x">*</a>
 
-1. Alternately, to work same problem as ioreg 
+1. Alternately, to work same problem as ioreg
 
    <pre>ioreg -p IOUSB -l -w 0</pre>
 
@@ -396,7 +397,7 @@ See <a target="_blank" href="https://ponderthebits.com/2017/01/know-your-tools-l
 
 1. <a target="_blank" href="https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/">
    NOTE</a>: Add these lines to your .bashrc or .zshrc:
-   
+
    <tt>/usr/local/opt/coreutils</tt>
 
    <pre>export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"</pre>
@@ -427,7 +428,7 @@ brew link --overwrite bash
 
    ### Zsh
 
-   Switching to Zsh from Bash is a rather person choice. 
+   Switching to Zsh from Bash is a rather person choice.
    But it's done thus:
 
    <pre>
@@ -444,8 +445,8 @@ brew reinstall make
 brew reinstall unzip
    </pre>
 
-   Because macOS already provides this software, when brew install runs, as its response message says, 
-   formulas for them are installed as <strong>keg-only</strong>, which means brew did not symlink it into /usr/local 
+   Because macOS already provides this software, when brew install runs, as its response message says,
+   formulas for them are installed as <strong>keg-only</strong>, which means brew did not symlink it into /usr/local
    and installing another version in parallel can cause all kinds of trouble."
 
    So their installation would require placing their location in front of the default program's location.
@@ -469,9 +470,9 @@ brew install macvim --override-system-vim --custom-system-icons
    substituted GDB (the GNU interactive debugger) with <a target="_blank" href="http://lldb.llvm.org/">LLDB (the standalone LLVM debugger)</a>.
 
    Unfortunately, the Eclipse IDE was not capable of communicating with any interactive debugger other than gdb.
-   
+
    <a target="_blank" href="https://wiki.eclipse.org/CDT/User/FAQ#How_do_I_get_the_LLDB_debugger.3F">
-   NOTE</a>: Install Xcode (version 7.3.1 is known to work). The simplest way is to get is from the App Store. Once it is installed, lldb-mi will reside somewhere under the Xcode folder (it normally is /Applications/Xcode.app/Contents/Developer/usr/bin/lldb-mi). CDT will initialize the default LLDB path to this value if it is present. Note that if you had previous debug configurations with a non-default path for LLDB or if you changed the path in the preferences, the path to lldb will not be automatically set for you. You will have to edit the LLDB path manually in the debug configuration and/or you need to reset the preferences to defaults (if it was modified). 
+   NOTE</a>: Install Xcode (version 7.3.1 is known to work). The simplest way is to get is from the App Store. Once it is installed, lldb-mi will reside somewhere under the Xcode folder (it normally is /Applications/Xcode.app/Contents/Developer/usr/bin/lldb-mi). CDT will initialize the default LLDB path to this value if it is present. Note that if you had previous debug configurations with a non-default path for LLDB or if you changed the path in the preferences, the path to lldb will not be automatically set for you. You will have to edit the LLDB path manually in the debug configuration and/or you need to reset the preferences to defaults (if it was modified).
 
 
 1. Restore GDB back on your Mac:
@@ -527,7 +528,7 @@ brew install guile  # GNU Ubiquitious Language for Extensions https://www.gnu.or
 brew install gpatch
 brew install binutils  # https://en.wikipedia.org/wiki/GNU_Binutils
    </pre>
- 
+
    Below are <a target="_blank" href="https://www.gnu.org/manual/blurbs.html">
    GNU packages on https://www.gnu.org/software</a> but not on macOS:
 
@@ -543,7 +544,7 @@ brew install watch
 brew install wdiff --with-gettext
    <pre>
 
-   These are search 
+   These are search
 
    </pre>
 brew install diffutils
@@ -553,7 +554,7 @@ brew install wdiff --with-gettext
    <tt>--with-default-names</tt> prevents Homebrew from prepending a "g" to each command, so they can be used instead of the ones shipped by OS X.
 
    ### findutils
-   
+
    Missing from the list above is <tt>brew install findutils --with-default-names</tt>
    because that causes 'brew doctor' to issue warning: "Putting non-prefixed findutils in your path can cause python builds to fail."
 
@@ -591,7 +592,7 @@ brew install svn  # in /usr/bin/svn
    <pre>
 brew install htop  # like GNU top
 brew install nmap
-brew install tmux 
+brew install tmux
    </pre>
 
    ### MoreUtils and parallel
@@ -605,7 +606,7 @@ brew install moreutils --without-parallel
 
    Read about each utility command at <a target="_blank" href="https://rentes.github.io/unix/utilities/2015/07/27/moreutils-package/">
    https://rentes.github.io/unix/utilities/2015/07/27/moreutils-package/</a>
-  
+
    * <strong>chronic</strong> runs a command quietly unless it fails
    * <strong>combine</strong> combines lines in two files using boolean operations
    * <strong>errno</strong> look up errno names and descriptions
@@ -622,7 +623,7 @@ brew install moreutils --without-parallel
    * <strong>vipe</strong> insert a text editor into a pipe
    * <strong>zrun</strong> automatically uncompress arguments to command
    <br /><br />
-   
+
    Its home page at <a target="_blank" href="https://joeyh.name/code/moreutils/">https://joeyh.name/code/moreutils/</a>
    says more are on the way.
 
@@ -653,10 +654,10 @@ http://sourceware.org/gdb/wiki/BuildingOnDarwin
 cron in favor of <strong>launchd</strong> (a daemon running under the System context).
 to automatically start (after reboots) service programs at boot time.
 
-If the system is turned off or asleep, <strong>cron</strong> jobs 
+If the system is turned off or asleep, <strong>cron</strong> jobs
 do not execute until the <strong>next</strong> designated time occurs.
 
-However, a launchd job will run when the computer wakes up if 
+However, a launchd job will run when the computer wakes up if
 the computer was <strong>asleep</strong> when the job should have run
 (if the StartCalendarInterval key has been set).
 
@@ -664,9 +665,9 @@ Since it's a background process, launchd doesn't present a user interface.
 So you get "launchd cannot be run directly." when you run launchd like other commands.
 
 
-The standard way now to run a service on Mac OS X is to use launchd , a program that starts, stops and manages daemons and scripts in Apple OS X environments. 
+The standard way now to run a service on Mac OS X is to use launchd , a program that starts, stops and manages daemons and scripts in Apple OS X environments.
 
-An XML document named with file extension <strong> .plist</strong> defines its properties. 
+An XML document named with file extension <strong> .plist</strong> defines its properties.
 The sample file below defines the <a target="_blank" href="https://help.sonatype.com/display/NXRM3/Run+as+a+Service#RunasaService-MacOSX">Nexus Repository Manager</a> from Sonatype.com installed in `/opt`:
 
 {% highlight xml %}
@@ -687,7 +688,7 @@ The sample file below defines the <a target="_blank" href="https://help.sonatype
 </plist>
 {% endhighlight %}
 
-The above is the `com.sonatype.nexus.plist` file in `/Library/LaunchDaemons/` 
+The above is the `com.sonatype.nexus.plist` file in `/Library/LaunchDaemons/`
 
 Change its ownership and access rights:
 
@@ -696,7 +697,7 @@ sudo chown root:wheel /Library/LaunchDaemons/com.sonatype.nexus.plist
 sudo chmod 644 /Library/LaunchDaemons/com.sonatype.nexus.plist
    </strong></pre>
 
-PROTIP: Consider setting up a different user to run the repository manager and adapt permissions and the RUN_AS_USER setting in the nexus startup script. 
+PROTIP: Consider setting up a different user to run the repository manager and adapt permissions and the RUN_AS_USER setting in the nexus startup script.
 
 To manually start it after the configuration:
 
@@ -732,8 +733,8 @@ NOTE</a> To avoid the manual effort to add a wi-fi, use this command:
    /usr/sbin/networksetup -addpreferredwirelessnetworkatindex Airport my_ssid 0 my_security my_passkey
    </strong></pre>
 
-* my_ssid is the SSID of your network. 
-* my_security is the level of encryption (WEP, WPA, WPA2, etc) 
+* my_ssid is the SSID of your network.
+* my_security is the level of encryption (WEP, WPA, WPA2, etc)
 * my_passkey is your encryption passkey for your wireless network.
 <br /><br />
 
@@ -746,7 +747,7 @@ NOTE</a>:
 
 ## Shells
 
-nix-shell environment on top of nixos/nixpkgs 
+nix-shell environment on top of nixos/nixpkgs
 
 ## Mac Message Reset
 

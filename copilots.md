@@ -18,6 +18,8 @@ created: "2023-04-01"
 {% include l18n.html %}
 {% include _toc.html %}
 
+
+<a target="_blank" href="https://bomonike.github.io/copilots"><img align="right" width="100" height="100" alt="copilots.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/copilots.png?raw=true" />
 This is a hands-on tutorial (with commentary) on how to use AI tools that helps you create programs (write code) and other tricks.
 
 {% include whatever.html %}

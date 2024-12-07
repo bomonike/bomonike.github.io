@@ -1,10 +1,23 @@
 ---
 url: https://bomonike.github.io/it-films
-lastchange: "v007 + qr code :it-films.md"
+lastchange: "v007 + qr code & tutorial sites :it-films.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/it-films"><img align="right" width="100" height="100" alt="it-films-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/it-films-qr.png?raw=true" />
 Here are some films and other media about IT (Information Technology) security, software development, and the internet.
+
+## IT tutorials
+
+How about watching these instead?
+
+* KodeKloud.com (provides cloud time)
+* OReilly.com ($40/month)
+* Udemy.com
+* Pluralsight.com
+* Coursera.com
+* EdX.com
+
+## Movie Database API
 
 internet movie database api
 

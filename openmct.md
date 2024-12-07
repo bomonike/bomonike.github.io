@@ -1,3 +1,5 @@
+
+<a target="_blank" href="https://bomonike.github.io/openmct"><img align="right" width="100" height="100" alt="openmct.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/openmct.png?raw=true" />
 This is at https://bomonike.github.io/openmct
 
 <!-- "v007 + note about Apache deprecation :openmct.md"

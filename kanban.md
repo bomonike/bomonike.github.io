@@ -1,4 +1,8 @@
+---
 kanban.md 2024-05-14
+---
+
+<a target="_blank" href="https://bomonike.github.io/kanban"><img align="right" width="100" height="100" alt="kanban.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/kanban.png?raw=true" />
 
 If I'm working with small team or just by myself, I use the Kanban system to stay focused.
 
@@ -14,19 +18,19 @@ Kanban is a japanese word coined in the 1950s by Taiichi Ohno, an industrial eng
 
 "Kanban is a strategy for optimizing the flow of <strong>value</strong> through a process that uses a visual, pull-based system."
 
-Kanban is described as an approach that "pulls" items from upstream rather than having items "pushed" to downstream processes. <a target="_blank" href="https://www.youtube.com/watch?v=Levkx8f0qL4">This video</a> shows how Kanban is used within a physical factory. 
+Kanban is described as an approach that "pulls" items from upstream rather than having items "pushed" to downstream processes. <a target="_blank" href="https://www.youtube.com/watch?v=Levkx8f0qL4">This video</a> shows how Kanban is used within a physical factory.
 
 Unlike "Scrum", Kanban does not prescibe "Daily standups" or any kind of team meeting.
 However, daily reviews provide an opportunity to deal with blocks and observed issues with flow and value produced.
 
-Unlike "Scrum", there are <strong>no set roles</strong> in Kanban such as "Product Owner". 
+Unlike "Scrum", there are <strong>no set roles</strong> in Kanban such as "Product Owner".
 Kanban members define what value they are optimizing in their context.
 
 ## The 5 rules of Kanban:
 
 <a target="_blank" href="https://www.youtube.com/watch?v=cBraNRu-v4k">VIDEO</a>:
 
-1. Visualize workflow - "Visible" means that the Kanban system uses a card to represent each product (that generates value) traveling through the production line. It's a just-in-time scheduling system because movement of a card visually signals the need to create that part. 
+1. Visualize workflow - "Visible" means that the Kanban system uses a card to represent each product (that generates value) traveling through the production line. It's a just-in-time scheduling system because movement of a card visually signals the need to create that part.
 
 2. Limit Work-In-Process (WIP)
 
@@ -40,12 +44,12 @@ Kanban members define what value they are optimizing in their context.
 
    * Work Item Age (hours & days between when an item started and the current time)
 
-   * <strong>Cycle Time</strong> - the amount of elapsed (calendar) time from when an item starts to when it got <strong>finished</strong> (meet exit criteria). 
+   * <strong>Cycle Time</strong> - the amount of elapsed (calendar) time from when an item starts to when it got <strong>finished</strong> (meet exit criteria).
    https://kanbanguides.org/html-kanban-guide/#KanbanMeasures
-   <br /><br /> 
-   
+   <br /><br />
+
    Weekends and holidays are included. There should be at least one, with no Cycle Time of Zero.
-   
+
    None are measured per person.
 
 4. Make process policies explicit
@@ -67,7 +71,7 @@ Kanban members define what value they are optimizing in their context.
 I and my team uses Trello.com's free website to use Kanban.
 
 Trello was purchased by Atlanssian, which also makes Jira, a licensed product also used to manage Kanban.
-See my https://wilsonmar.github.io/jira 
+See my https://wilsonmar.github.io/jira
 
 Kanban is not suited for a very creative endeavor.
 
@@ -95,7 +99,7 @@ Kanban aims focus on the most urgent items at the top of the "Doing" stack.
    A glance at that column answers "who is working on what now"?
 
    PROTIP: Trello refreshes its dashboard automatically. So I have an old monitor display the Trello board continuously without going to sleep.
-   
+
    RULE: Tasks in "Doing" must have a team member assigned (or it's not really being worked on).
 
    RULE: Tasks in "Doing" are listed in order of steps within a process flow from producer to customer. The task at the top of the list produces what is needed for tasks below it.
@@ -107,23 +111,23 @@ Kanban aims focus on the most urgent items at the top of the "Doing" stack.
 
    ### Notes
 
-1. PROTIP: As tasks are performed, since Notes in active cards are abandoned when done, ideas for <strong>improvement</strong> in future iterations are added in a <strong>separate template board</strong> containing items to be copied onto the team's active Kanban board "ToDo" column for each new project/customer. 
+1. PROTIP: As tasks are performed, since Notes in active cards are abandoned when done, ideas for <strong>improvement</strong> in future iterations are added in a <strong>separate template board</strong> containing items to be copied onto the team's active Kanban board "ToDo" column for each new project/customer.
 
    Notes in the Template contain tips and caveats to perform each task. For example:
    As is common among Agile teams, the team has agreed ahead of time to a common "Definition of Done" (DoD) which defines the conditions for moving an item for another team member to Review/Test. For example:
 
    * Unit tests passed
    * Code reviewed
-   
+
    * Functionality documented in necessary user documentation
    * Integrated into a clean build
-   
+
    * Automated regression tests pass
    * Feature level functional tests passed
    * Functional Regression tests pass
    * Performance Regression tests pass
    * Non-functional requirements met
-   
+
    * Meets defined market expectations
    * Meets organizational/industry standards (e.g. HIPAA compliance)
    * Meets general security requirements
@@ -149,24 +153,24 @@ Kanban aims focus on the most urgent items at the top of the "Doing" stack.
 
 1. The <strong>Next To Do</strong> column contain items which the team agrees it should do when all "Doing" and "Review/Testing" items are completed.
 
-   Kanban is considered a continuous workflow. It's unlike Scrum's "time boxed" approach which some claim  intentionally adds psychological pressure to worry about how to cram a whole list of items into a fixed time-frame (sprint). 
-   
+   Kanban is considered a continuous workflow. It's unlike Scrum's "time boxed" approach which some claim  intentionally adds psychological pressure to worry about how to cram a whole list of items into a fixed time-frame (sprint).
+
    The culture of Kanban is that team members are not cohersed into accepting estimates as "commitments" that must be kept. This approach encourages open discussion/handling of delays without the shame which encourages lying and poor quality.
 
    ### Stuck
 
-1. If you get <strong>stuck</strong> working on an item, be weary of wasting time going in circles and getting frustrated. 
+1. If you get <strong>stuck</strong> working on an item, be weary of wasting time going in circles and getting frustrated.
 
    It may be better use of time to move on to work the next item. But before you do that,
    to minimize <strong>switching costs</strong>, create a note within the blocked item and paste in it the error message output by the app. Define how to recreate the error and what you've tried.
-   
+
    To summon help on the blocked item, add "<strong>BLOCKED:</strong>" at the beginning of its name. It's good for others to help you because they may learn something too.
-   
+
    A key benefit of an Agile mindset is the invention of <strong>quick change</strong> mechanisms that enable more efficient switching between different types of tasks.
 
    Take a quick break to clear your head while you see if someone can come to your aid.
-   
-   It's usually preferrable to fix issues immediately rather than fixing problems later. 
+
+   It's usually preferrable to fix issues immediately rather than fixing problems later.
    It's usually more expensive to "kick the can down the road".
    Quality costs less.
 
@@ -174,19 +178,19 @@ Kanban aims focus on the most urgent items at the top of the "Doing" stack.
 
    ### Backlog
 
-1. As you're working on an item and inspiration strikes, create a card to the <strong>bottom of the "Backlog" column<strong>. 
+1. As you're working on an item and inspiration strikes, create a card to the <strong>bottom of the "Backlog" column<strong>.
 
    Some companies celebrate their <a target="_blank" href="https://www.youtube.com/watch?v=u_y2inguzjw">favorite improvement of the year</a>.
 
    Backlog items are in the left-most column, as in "from left field" in American Baseball slang, to refer to something that is unexpected, unusual, or surprising.
 
    Backlong items are also called <strong>unplanned</strong> because they have not been <strong>accepted</strong> as an item that <strong>should</strong> be worked on.
-   
+
    PROTIP: Making acceptance a conscious step is important to ensure that the <strong>risks and costs</strong> be properly considered. That includes the possible benefit of NOT doing the item if that makes better sense.
-   
+
    Movement of the item to the next column should usually occur after there is agreement about where the backlong item fits within the planned <strong>Product Roadmap/Timeline</strong>, as in which other tasks take precedent.
 
-   During deliberations, some items may be broken out into separate items. 
+   During deliberations, some items may be broken out into separate items.
    Other items may be combined with another item.
 
    Teams <strong>have a designated recurring time</strong> when team members deliberate Backlog items together. Before that meeting, each team member add notes and reply to notes. "+1" is added to designate acceptance of an item as stated. That would mute disscussion on the item, which enable "air time" to be on where it's most productive (such as on socializing).
@@ -209,7 +213,7 @@ Kanban aims focus on the most urgent items at the top of the "Doing" stack.
 
 1. Each team member should look at the board occassionally to pick up items unassigned.
 
-   If you see an item marked "BLOCKED", see if you can help. 
+   If you see an item marked "BLOCKED", see if you can help.
 
 
 ## Kanban Stand-ups
@@ -229,9 +233,9 @@ Visualize the workflow: Divide your kanban board into columns that represent the
 
 ## Display continuosly
 
-To continuously refresh any web page, either install browser extension "Auto Refresh & Page Monitor" for Google Chrome or code JavaScript. 
+To continuously refresh any web page, either install browser extension "Auto Refresh & Page Monitor" for Google Chrome or code JavaScript.
 
-1. The extension allows you to automatically refresh web pages at specified time intervals, such as every 5 seconds, 10 minutes, etc. 
+1. The extension allows you to automatically refresh web pages at specified time intervals, such as every 5 seconds, 10 minutes, etc.
 
 1. Use the <meta> tag in the HTML of the web page to automatically refresh it. For example, adding <meta http-equiv="refresh" content="10"> will refresh the page every 10 seconds.
 Use JavaScript's setInterval() function to continuously reload the page.

@@ -1,4 +1,8 @@
+---
 emf-blocking.md
+---
+
+<a target="_blank" href="https://bomonike.github.io/emf-blocking"><img align="right" width="100" height="100" alt="emf-blocking.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/emf-blocking.png?raw=true" />
 
 These EMF Blocking Tips will help you reduce your exposure to harmful EMFs while using your favorite tech.
 

@@ -1,10 +1,13 @@
+
+<a target="_blank" href="https://bomonike.github.io/odoo"><img align="right" width="100" height="100" alt="odoo.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/odoo.png?raw=true" />
+
 # Our Bomonike Club
 
 Here we created a way to learn deeply so that we can become professionals quickly yet competently.
 
 How this is different?
 
-Some on YouTube ask you for money to join a learning group. You get links to private videos. But you find them a waste time because the videos are high level or you see others fumble around starting from scatch. 
+Some on YouTube ask you for money to join a learning group. You get links to private videos. But you find them a waste time because the videos are high level or you see others fumble around starting from scatch.
 
 The tragedy is that everyone ends up with incomplete, insecure automation to do work.
 They are not repeatable by others.
@@ -65,7 +68,7 @@ Odoo on 2024 was rated the <a target="_blank" href="https://www.youtube.com/watc
 Since Odoo touts itself as "open source", let's look at their source.
 
 From inception, Odoo S.A (formerly OpenERP S.A) has released the core software as open source.
-Since release V9.0, the company has transitioned to an open core model, which provides subscription-based proprietary enterprise software and cloud-hosted software as a service, in addition to the open source version. 
+Since release V9.0, the company has transitioned to an open core model, which provides subscription-based proprietary enterprise software and cloud-hosted software as a service, in addition to the open source version.
 
 In 2013, the not-for-profit Odoo Community Association - <a target="_blank" href="https://odoo-community.org">odoo-community.org</a> (OCA) - was formed to promote the widespread use of Odoo and to support the collaborative development of Odoo features.
 
@@ -98,7 +101,7 @@ In 2013, the not-for-profit Odoo Community Association - <a target="_blank" href
 
    OCA sponsors OCA Days 2024 on 30th September - 1st October 2024 at Val Benoit, Liège, Belgium.
 
-   OSICON 2023 
+   OSICON 2023
 
    https://www.linkedin.com/pulse/29-what-odoo-why-its-smart-erp-choice-businesses-william-mcmahon-ozihe
 
@@ -130,7 +133,7 @@ The $3,950 partner fee per year includes $2,600 discounts for internal use by 5 
 
 1. <a target="_blank" href="https://www.odoo.com/education/scale-up-business-game">VIDEO</a>: Play a card game about setting up and scaling a business - 7 business cases of 8 to 10 cards each. $24.78 paper or enter data into https://Odoo.com/scaleup. https://www.odoo.com/scaleup-teacher
 
-1. <a target="_blank" href="https://www.odoo.com/education/odoo-online">Build a business management course and get free unlimited access for 24 months. 
+1. <a target="_blank" href="https://www.odoo.com/education/odoo-online">Build a business management course and get free unlimited access for 24 months.
 
 1. Ready Partner 10% - 1 cert, 10 users 6mos
 2. Silver 15% - 75 users - 3 certs
@@ -146,7 +149,7 @@ QUESTION: Datacenters for disaster recovery and data soverignty in Singapore, Ge
 ## Certification
 There is a certification for each major release.
 https://www.odoo.com/slides/odoo-17-certification-331
-The $250 Odoo 17 Certification online, answer 70% of 120-questions in 1.5 hours about 16 modules (in English or Spanish): 
+The $250 Odoo 17 Certification online, answer 70% of 120-questions in 1.5 hours about 16 modules (in English or Spanish):
 
 ## General Settings
 
@@ -190,7 +193,7 @@ Categories:
 
    <a name="AcctgApps"></a>
 
-   ### Accounting (and Finance) apps 
+   ### Accounting (and Finance) apps
 
    https://www.odoo.com/documentation/master/applications/finance/accounting.html
 
@@ -224,14 +227,14 @@ Categories:
 1. <a target="_blank" href="https://www.odoo.com/app/rental">Rental</a> [Ent] <a target="_blank" href="https://demo5.odoo.com/odoo/rental?cids=1">demo</a>
 1. Amazon Connector [Ent]
 1. eBay Connector [Ent]
-   
+
    <a name="WebsiteApps"></a>
 
    ### Website apps
 
    https://www.odoo.com/documentation/master/applications/websites/website.html
 
-1. <a target="_blank" href="https://www.odoo.com/app/website">Website Builder</a> 
+1. <a target="_blank" href="https://www.odoo.com/app/website">Website Builder</a>
 1. <a target="_blank" href="https://www.odoo.com/app/ecommerce">eCommerce</a> (shopping, payments, Stripe, PayPal)
 1. <a target="_blank" href="https://www.odoo.com/app/blog">Blog</a>
 1. <a target="_blank" href="https://www.odoo.com/app/forum">Forum</a>
@@ -241,12 +244,12 @@ Categories:
    <a name="InvApps"></a>
 
    ### Inventory (& MRP) apps
-   
+
    https://www.odoo.com/documentation/master/applications/inventory_and_mrp/inventory.html
 
 1. <a target="_blank" href="https://www.odoo.com/app/inventory">Inventory</a> <a target="_blank" href="https://demo5.odoo.com/odoo/inventory?cids=1">demo</a><br />
    [Ent]: Barcode
-1. <a target="_blank" href="https://www.odoo.com/app/purchase">Purchase</a> <a target="_blank" href="https://demo5.odoo.com/odoo/purchase?cids=1">demo</a> 
+1. <a target="_blank" href="https://www.odoo.com/app/purchase">Purchase</a> <a target="_blank" href="https://demo5.odoo.com/odoo/purchase?cids=1">demo</a>
 
    LOCAL:
 
@@ -275,7 +278,7 @@ Categories:
    ### Human Resources
 
    https://www.odoo.com/documentation/master/applications/hr/attendances.html
-   
+
 1. <a target="_blank" href="https://www.odoo.com/app/accounting">Expenses</a> Submit, validate and reinvoice employee expenses <a target="_blank" href="https://demo5.odoo.com/odoo/expenses?cids=1">demo</a>
 1. <a target="_blank" href="https://www.odoo.com/app/employee">Employees</a> Centralize employee information <a target="_blank" href="https://demo5.odoo.com/odoo/employees?cids=1">demo</a><br />
    [Ent]: Departmental Dashboards
@@ -346,7 +349,7 @@ Categories:
    <a name="AdminApps"></a>
 
    ### Administration
-   
+
 1. <a target="_blank" href="https://www.odoo.com/app/studio">Studio</a> Create and Customize Applications [Ent]
 1. <a target="_blank" href="https://play.google.com/store/apps/details?id=com.odoo.mobile">Android</a> & iPhone - Support for Google Play & iOS Apps [Ent]
 
@@ -374,7 +377,7 @@ under each CATEGORIES, alphabetically:
 * Manufacturing
    * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/micro_brewery/">Micro Brewery</a>
    * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/coal_petroleum/">Coal and Petroleum (Fossil Fuels)</a>
-* NGO (Non-Governmental Organizations) 
+* NGO (Non-Governmental Organizations)
    * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/non_profit_organization/">Non Profit Organizations</a>
 * Retail
    * <a target="_blank" href="https://apps.odoo.com/apps/modules/17.0/software_reseller/">Software Reseller</a>
@@ -414,7 +417,7 @@ Observability: logs, traces
 
 * <a target="_blank" href="https://apps.odoo.com/apps/modules/16.0/smile_audit/">Audit Trail</a> of create, write, unlink methods.
 
-* <a target="_blank" href="https://apps.odoo.com/apps/modules/browse?author=Almighty%20Consulting%20Solutions%20Pvt.%20Ltd.">210 for hospitals</a> <a target="_blank" href="https://www.almightycs.com">Almighty Consulting</a> Gujurat, India - 
+* <a target="_blank" href="https://apps.odoo.com/apps/modules/browse?author=Almighty%20Consulting%20Solutions%20Pvt.%20Ltd.">210 for hospitals</a> <a target="_blank" href="https://www.almightycs.com">Almighty Consulting</a> Gujurat, India -
 
 <a target="_blank" href="https://www.odoo.com/documentation/master/developer/tutorials/server_framework_101/03_basicmodel.html">estate_property in the models API</a> should be created.
 
@@ -592,7 +595,7 @@ D. On-premises within a <strong>private cloud</strong> instance you build and ma
 ## Assets
 
    References:
-   * https://github.com/odoo/odoo/blob/master/setup/rpm/odoo.spec which follows 
+   * https://github.com/odoo/odoo/blob/master/setup/rpm/odoo.spec which follows
    * https://rpm-packaging-guide.github.io/
    * https://rpm-software-management.github.io/rpm/manual/spec.html
    * https://github.com/odoo/odoo/tree/master/debian
@@ -625,7 +628,7 @@ Assets referenced by this article are at a private repo:
    git branch
    ```
 
-   <tt>du -sh</tt> reported 196K for all branches/history.   
+   <tt>du -sh</tt> reported 196K for all branches/history.
 
    The repo contains shell scripts to load Odoo onto <a href="#OnpremMachines">on-prem. machines</a> and in <a href="#PrivateClouds">each private cloud</a>.
 
@@ -640,8 +643,8 @@ Assets referenced by this article are at a private repo:
    * https://www.odoo.com/documentation/17.0/administration/on_premise/packages.html
    <br /><br />
 
-1. Obtain and connect a blank USB hard drive for your rig. 
-1. Format it as "Ext". 
+1. Obtain and connect a blank USB hard drive for your rig.
+1. Format it as "Ext".
 
    NOTE: On a Zimaboard, the 31.3 GB MMC/SD card onboard (mmcblk0) BJTD4R should not be used to run apps.
 
@@ -658,20 +661,20 @@ Assets referenced by this article are at a private repo:
    1. At https://www.debian.org/releases/bookworm/debian-installer/<br />under "full DVD sets" select "amd64" for Zimaboard. Scroll to bottom to click<br />"debian-12.5.0-amd64-DVD-1.iso" to start downloading from:<br />   https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-12.5.0-amd64-DVD-1.iso for 3.99 GB.
 
    Alternately, the "netinst CD image" for "amd64" for 659.6 MB.
-   
+
    2. In Finder, wait until file "Unconfirmed ... -crdownload" disappears and "debian-12.5.0-amd64-DVD-1.iso" appears with MB.
    3. Eject the USB drive.
    4. Optionally, also download file SHA521SUMS
 
-1. Use the balenEtcher.app to create a bootable USB from the .iso file. 
+1. Use the balenEtcher.app to create a bootable USB from the .iso file.
 
    Alternately, use Rufus.
 
    ### Prepare the preseed file
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=ndHi1sQWuH4&list=PLvadQtO-ihXvL64Rfc1jLfPQo0zP35n02&index=10">VIDEO</a> PROTIP: Running "autoinstall" using a preconfiguration (preseed) file instead of manually clicking every time makes for less mistakes, less tedius debugging, and better repeatability. 
+   <a target="_blank" href="https://www.youtube.com/watch?v=ndHi1sQWuH4&list=PLvadQtO-ihXvL64Rfc1jLfPQo0zP35n02&index=10">VIDEO</a> PROTIP: Running "autoinstall" using a preconfiguration (preseed) file instead of manually clicking every time makes for less mistakes, less tedius debugging, and better repeatability.
    * https://wiki.debian.org/DebianInstaller/Preseed
-   * https://www.debian.org/releases/stable/amd64/apb.en.html references sample file 
+   * https://www.debian.org/releases/stable/amd64/apb.en.html references sample file
    * https://www.debian.org/releases/bookworm/example-preseed.txt
    <br /><br />
 
@@ -730,7 +733,7 @@ echo "abcdef" | replace "abc" "XYZ"
 
    A sample result within the file:
    <tt>d-i passwd/user-fullname string Debian User</tt>
-  
+
 1. Replace the "debian1234" handle within the file with the value of <tt>MY_ADMIN_USER_NAME</tt> obtained from a common .env file referenced by other processes:
 
    ```
@@ -739,7 +742,7 @@ echo "abcdef" | replace "abc" "XYZ"
 
    A sample result within the file:
    <tt>d-i passwd/username string debian1234</tt>
-  
+
 1. Replace the "Mountain" handle within the file with the value of <tt>MY_TIMEZONE</tt> obtained from a common .env file referenced by other processes:
 
    ```
@@ -748,7 +751,7 @@ echo "abcdef" | replace "abc" "XYZ"
 
    A sample result within the file:
    <tt>d-i time/zone string US/Mountain</tt>
-  
+
 1. TODO: Make the preconfiguration file available to the Debian installer. This can be a URL to a server in the local network such as: TODO:
 
    <tt>http://198.168.1.33/files/projectx/debian_preseed.txt</tt>
@@ -784,7 +787,7 @@ echo "abcdef" | replace "abc" "XYZ"
    An sample disk selection: <tt>SCSI4 (0,0,0) (sdb) - 2.0 TB Samsung PSSD T7</tt>
    where <tt>ext4</tt> file system is installed.
 
-   NOTE: LVM (Logical Volume Management) is used on servers and in enterprise environments where storage needs are dynamic and require frequent resizing or reorganization of disk space. It simplifies storage administration by abstracting the physical disk layout. LVM is a disk partitioning technique that provides a layer of abstraction over physical storage devices, allowing for more flexible and dynamic allocation of disk space. LVM partitioning works by initializing physical disks Physical Volumes (PVs). PVs are combined into Volume Groups (VGs), which act as storage pools. Within a VG, Logical Volumes (LVs) are created from the available space. PVs can be added or removed from a VG while the system is running, providing more flexibility for storage expansion. LVs function similar to traditional disk partitions but with more flexibility because LVs can be resized (grown or shrunk) while online by adding or removing space from the underlying VG, without disrupting applications using the LV. LVs can span across multiple PVs in the same VG, allowing for volumes larger than a single disk. 
+   NOTE: LVM (Logical Volume Management) is used on servers and in enterprise environments where storage needs are dynamic and require frequent resizing or reorganization of disk space. It simplifies storage administration by abstracting the physical disk layout. LVM is a disk partitioning technique that provides a layer of abstraction over physical storage devices, allowing for more flexible and dynamic allocation of disk space. LVM partitioning works by initializing physical disks Physical Volumes (PVs). PVs are combined into Volume Groups (VGs), which act as storage pools. Within a VG, Logical Volumes (LVs) are created from the available space. PVs can be added or removed from a VG while the system is running, providing more flexibility for storage expansion. LVs function similar to traditional disk partitions but with more flexibility because LVs can be resized (grown or shrunk) while online by adding or removing space from the underlying VG, without disrupting applications using the LV. LVs can span across multiple PVs in the same VG, allowing for volumes larger than a single disk.
 
 1. If the disk cannot be read, format the disk to "Ext" on another machine.
 
@@ -819,7 +822,7 @@ echo "abcdef" | replace "abc" "XYZ"
    ```
 
 1. Change the last field from LOCAL to UTC and save the file.
-   
+
 1. Reconfigure the tzdata package:
 
    ```
@@ -843,9 +846,9 @@ echo "abcdef" | replace "abc" "XYZ"
    sudo apt install memtester
    memtester 512M 1
    ```
-   
+
    But due to kernel limitations, that command can only test a portion of memory.
-   
+
 1. So reboot your system to select the "Memory Test" option now in the GRUB menu.
 
    If the GRUB menu doesn't show up, press and hold the <strong>Shift key</strong> during boot.
@@ -854,7 +857,7 @@ echo "abcdef" | replace "abc" "XYZ"
 
 1. The output a list of bad RAM regions usable by the Linux kernel's BadRAM patch.
 
-   You can still utilize memory with a few bad bits. 
+   You can still utilize memory with a few bad bits.
    But systems in productive use should have a clean report.
 
 
@@ -873,12 +876,12 @@ echo "abcdef" | replace "abc" "XYZ"
    <a target="_blank" href="https://github.com/bomonike/odoo-setup/blob/main/debian/harden-debian.sh">https://github.com/bomonike/odoo-setup/blob/main/debian/harden-debian.sh</a>
 
    This script "hardens" your Debian instance in several phases.
-   
+
    Alternately, <a target="_blank" href="https://github.com/Gatsby-Lee/moon-rapi/blob/main/ansible_playbook/install-docker-on-debian.yaml">use Ansible</a> per <a target="_blank" href="https://github.com/Gatsby-Lee/DevOps">Gatsby</a>.
 
    Phases in the script:
    1. Obtain memtest88 and verify memory
-   1. Install OSSec integrity 
+   1. Install OSSec integrity
    1. Install utility to Backup data.
    1. Disable DisplayLink driver to docking stations
    <br /><br />
@@ -895,14 +898,14 @@ echo "abcdef" | replace "abc" "XYZ"
 
    PROTIP: The thoroughness of Debian's testing means that older versions of apps are installed with Debian core. So some install from Flathub to download replacements of apps.
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=IG2wTCacEtQ">VIDEO</a> DEFINITION: There are several distribution formats: 
-   * AptImage; 
+   <a target="_blank" href="https://www.youtube.com/watch?v=IG2wTCacEtQ">VIDEO</a> DEFINITION: There are several distribution formats:
+   * AptImage;
    * Snap and snapd from Canonical (who distributes Ubuntu)
    * Flatpak
    <br /><br />
    Flatpak uses a "Universal Package" format without dependency resoltuion so it can be used across different Linux distributions. That can (or not) be more secure.
 
-   PROTIP: Add-on packages from Debian tend to be dated (and thus potentially less secure). Install utilities later using <tt>flatpack</tt> to obtain the latest version. 
+   PROTIP: Add-on packages from Debian tend to be dated (and thus potentially less secure). Install utilities later using <tt>flatpack</tt> to obtain the latest version.
 
 1. Visual
 
@@ -957,7 +960,7 @@ echo "abcdef" | replace "abc" "XYZ"
 
 ## Install local Linux Debian machine running Odoo in a Docker image
 
-<a target="_blank" href="https://www.youtube.com/watch?v=XVRTd4CcpHA&t=2m30s">VIDEO</a>: This is the simplest and quickest approach, but only on x86 machines (not ARM). 
+<a target="_blank" href="https://www.youtube.com/watch?v=XVRTd4CcpHA&t=2m30s">VIDEO</a>: This is the simplest and quickest approach, but only on x86 machines (not ARM).
 
 1. Copy the <tt>odoo.conf</tt> file to your local folder <tt>/etc/odoo/odoo.conf</tt>
 
@@ -1042,7 +1045,7 @@ d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716475593/odoo-docker-start-1310x972_emnsvs.png"><img alt="odoo-docker-start-1310x972.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716475593/odoo-docker-start-1310x972_emnsvs.png"></a>
 
-1. Type the Database Name (odoodb), Email, Password, 
+1. Type the Database Name (odoodb), Email, Password,
 1. Select your Country.
 1. check "Demo data".
 1. Click "Create Database" and wait for the user login.
@@ -1058,17 +1061,17 @@ d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
 1. Click "Industries" at the left. Activate one.
 
 1. Back at the Terminal, notice the log output has:
-   
-   Using configuration file at 
+
+   Using configuration file at
 
    ```
    /etc/odoo/odoo.conf
    ```
 
-   CAUTION: When the Odoo container is created like described above, the odoo filestore is created inside the container. If the container is removed, the filestore is lost. 
+   CAUTION: When the Odoo container is created like described above, the odoo filestore is created inside the container. If the container is removed, the filestore is lost.
 
    <a name="wkhtmltopdf"></a>
-   
+
    ### wkhtmltopdf
 
    The log output includes:
@@ -1095,10 +1098,10 @@ d27c074b07a7a29cbfb3c28fe3427221605252e3876749c7302e75c95856635a   1         0B
    pdfkit.from_url('https://wkhtmltopd.org/downloads.html','output.pdf')
    ```
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=_L6ELUJN-9Q">VIDEO</a>: Convert HTML to PDF in python with playwright 
+   <a target="_blank" href="https://www.youtube.com/watch?v=_L6ELUJN-9Q">VIDEO</a>: Convert HTML to PDF in python with playwright
 
    <a name="werkzeug"></a>
-   
+
    ### werkzeug
 
    The log contains:
@@ -1136,14 +1139,14 @@ ADD rootfs.tar.xz /
 CMD ["bash"]
    ```
 
-   Alternatives: 
+   Alternatives:
    * https://www.server-world.info/en/note?os=Debian_12&p=docker&f=4
    * https://github.com/tsaarni/docker-deb-builder/blob/master/Dockerfile-Debian-bookworm-12
    * https://github.com/odoo/odoo/blob/17.0/setup/package.dfdebian
 
-   ### Configure 
+   ### Configure
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=Bx_HkLVBz9M&t=5m55s">VIDEO</a>: 
+   <a target="_blank" href="https://www.youtube.com/watch?v=Bx_HkLVBz9M&t=5m55s">VIDEO</a>:
    Watchtower to automate Docker container base images.
 
    <a target="_blank" href="https://www.youtube.com/watch?v=uL589cUpY2U">VIDEO</a>:
@@ -1160,13 +1163,13 @@ CMD ["bash"]
    ```
    docker --version
    ```
-   
+
 1. Run Docker Engine:
 
    ```
    sudo ndocker run -it debian
    ```
-   
+
 
    ### Push to Dockerhub for use in clouds
 
@@ -1188,7 +1191,7 @@ CMD ["bash"]
 
 ## Install local Linux Debian machine running a VMWare image using VMWare on Linux
 
-TODO: 
+TODO:
 
 <hr />
 
@@ -1206,7 +1209,7 @@ TODO:
 
    Dockerfile
 
-TODO: 
+TODO:
 
 <hr />
 
@@ -1224,7 +1227,7 @@ TODO:
 1. Obtain license for VMWare Fusion.
 1. Download and install VMWare Fusion.
 
-TODO: 
+TODO:
 
 <hr />
 
@@ -1232,7 +1235,7 @@ TODO:
 
 ## Install macOS Silicon chips running Odoo in a VMWare image using Parallels
 
-TODO: 
+TODO:
 
 1. Obtain a key pair to SSH into the instance.
 
@@ -1263,14 +1266,14 @@ fi
 1. Use text editor to modify the shell file if parameter values need to be made current going forward and thus updated in GitHub :
 
    ```
-   # Based on 
+   # Based on
    # Summary of release at https://www.odoo.com/odoo-17-release-notes
    OE_VERSION="17.0"
-   # Based on https://www.debian.org/releases/ and 
+   # Based on https://www.debian.org/releases/ and
    # https://www.wikiwand.com/en/Debian_version_history : Bookworm (10 Feb 2024)
    OS_VERSION="12.5"
    ```
-   
+
 1. Set custom values that should not be within a public script (substiting sample values here):
 
     ```
@@ -1290,7 +1293,7 @@ fi
 
 <a name="PrivateClouds">
 
-## Create odoo within AWS EC2 AMI 
+## Create odoo within AWS EC2 AMI
 
 <a target="_blank" href="https://www.youtube.com/watch?v=E4yXSKyOdx0">VIDEO</a>:
 
@@ -1365,8 +1368,8 @@ https://www.odoo.com/documentation/master/applications/studio.html
 
 There are two lists of Python packages below.
 
-The first list are packages in the <strong>requirements.txt</strong> file 
-as of v17.0 on May 20, 2024 at 
+The first list are packages in the <strong>requirements.txt</strong> file
+as of v17.0 on May 20, 2024 at
 https://github.com/odoo/odoo/blob/17.0/requirements.txt
 Each package name in the file is referenced in an <tt>import</tt> statement within a Python source code file. The description of each package was manually drafted from Snyk.com and other sources.
 
@@ -1400,8 +1403,8 @@ Some packages are mentioned more than once when a different version needs to be 
 * <a target="_blank" href="https://pypi.org/project/Pillow/">Pillow</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/Pillow/">Snyk</a>] ==9.0.1  python_version <= '3.10'  # min version = 7.0.0 (Focal with security backports)
 * <a target="_blank" href="https://pypi.org/project/Pillow/">Pillow</a> Python Imaging Library (Fork)   [<a target="_blank" href="https://security.snyk.io/package/pip/Pillow/">Snyk</a>] ==9.4.0  python_version > '3.10'
 * <a target="_blank" href="https://pypi.org/project/polib/">polib</a> manipulate gettext files (po and mo files) for localization  [<a target="_blank" href="https://security.snyk.io/package/pip/polib/">Snyk</a>] ==1.1.1
-* <a target="_blank" href="https://pypi.org/project/psutil/">psutil</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/psutil/">Snyk</a>] ==5.9.0  python_version <= '3.10' 
-* <a target="_blank" href="https://pypi.org/project/psutil/">psutil</a> Cross-platform lib for process and system monitoring in Python.   [<a target="_blank" href="https://security.snyk.io/package/pip/psutil/">Snyk</a>] ==5.9.4  python_version > '3.10' 
+* <a target="_blank" href="https://pypi.org/project/psutil/">psutil</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/psutil/">Snyk</a>] ==5.9.0  python_version <= '3.10'
+* <a target="_blank" href="https://pypi.org/project/psutil/">psutil</a> Cross-platform lib for process and system monitoring in Python.   [<a target="_blank" href="https://security.snyk.io/package/pip/psutil/">Snyk</a>] ==5.9.4  python_version > '3.10'
 * <a target="_blank" href="https://pypi.org/project/psycopg2/">psycopg2</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/psycopg2/">Snyk</a>] ==2.9.2  sys_platform != 'win32' and python_version <= '3.10'
 * <a target="_blank" href="https://pypi.org/project/psycopg2/">psycopg2</a>  Python-PostgreSQL Database Adapter   [<a target="_blank" href="https://security.snyk.io/package/pip/psycopg2/">Snyk</a>] ==2.9.5  python_version > '3.10' or sys_platform == 'win32'
 * <a target="_blank" href="https://pypi.org/project/pydot/">pydot</a> Python interface to Graphviz's Dot   [<a target="_blank" href="https://security.snyk.io/package/pip/pydot/">Snyk</a>] ==1.4.2
@@ -1413,7 +1416,7 @@ Some packages are mentioned more than once when a different version needs to be 
 * <a target="_blank" href="https://pypi.org/project/python-dateutil/">python-dateutil</a> Extensions to the standard Python datetime module   [<a target="_blank" href="https://security.snyk.io/package/pip/python-dateutil/">Snyk</a>] ==2.8.1
 * <a target="_blank" href="https://pypi.org/project/python-ldap/">python-ldap</a>  Python modules for implementing LDAP clients ! [<a target="_blank" href="https://security.snyk.io/package/pip/python-ldap/">Snyk</a>] ==3.4.0  sys_platform != 'win32'  # min version = 3.2.0 (Focal with security backports)
 * <a target="_blank" href="https://pypi.org/project/python-stdnum/">python-stdnum</a> handle standardized numbers and codes   [<a target="_blank" href="https://security.snyk.io/package/pip/python-stdnum/">Snyk</a>] ==1.17
-* <a target="_blank" href="https://pypi.org/project/pytz/">pytz</a> World timezone definitions, modern and historical # no version pinning to avoid OS perturbations [<a target="_blank" href="https://security.snyk.io/package/pip/pytz  # no version pinning to avoid OS perturbations/">Snyk</a>] 
+* <a target="_blank" href="https://pypi.org/project/pytz/">pytz</a> World timezone definitions, modern and historical # no version pinning to avoid OS perturbations [<a target="_blank" href="https://security.snyk.io/package/pip/pytz  # no version pinning to avoid OS perturbations/">Snyk</a>]
 * <a target="_blank" href="https://pypi.org/project/pyusb/">pyusb</a> Python USB access module   [<a target="_blank" href="https://security.snyk.io/package/pip/pyusb/">Snyk</a>] ==1.2.1
 * <a target="_blank" href="https://pypi.org/project/qrcode/">qrcode</a> QR Code image generator   [<a target="_blank" href="https://security.snyk.io/package/pip/qrcode/">Snyk</a>] ==7.3.1
 * <a target="_blank" href="https://pypi.org/project/reportlab/">reportlab</a>   [<a target="_blank" href="https://security.snyk.io/package/pip/reportlab/">Snyk</a>] ==3.6.8  python_version <= '3.10'
@@ -1475,7 +1478,7 @@ https://github.com/OCA/odoorpc
 Python module to pilot your Odoo servers through JSON-RPC.
 
 https://mart-e.be/2024/01/utiliser-api-odoo-python
-calling RPC 
+calling RPC
 
 by <a target="_blank" href="https://www.linkedin.com/in/martintrigaux/">Martin Trigaux</a>,
 developer at Odoo
@@ -1530,7 +1533,7 @@ Open Source Integrators: www.o2btechnologies.com (Loma Linda, CA) https://osicon
 * <a target="_blank" href="">Manish Mannan</a>
 
 Hibou Corp.
-* <a target="_blank" href="https://www.linkedin.com/in/kaylie-kipe-09a18334/">Kaylie Kipe</a> Seattle VP 
+* <a target="_blank" href="https://www.linkedin.com/in/kaylie-kipe-09a18334/">Kaylie Kipe</a> Seattle VP
 
 <a target="_blank" href="https://www.linkedin.com/in/mame-abdoul-aziz-sy-8a72ab230/">Mame Abdoul Aziz Sy</a> Senegal
 
@@ -1547,8 +1550,8 @@ TODO:
 ## Consultants
 
 https://www.upwork.com/freelancers/~01f688ac2ee5f3320a
-$95/hr Andrew H. 
-Garden Valley, ID 
+$95/hr Andrew H.
+Garden Valley, ID
 
 https://www.upwork.com/freelancers/asimzaidi
 $45/hr Asim Z.

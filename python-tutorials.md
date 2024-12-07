@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-11-14"
+date: "2024-12-06"
 changes: "v028 + Mr P Solver on Youtube :python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
@@ -17,6 +17,9 @@ created: "2016-07-10"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+
+<a target="_blank" href="https://bomonike.github.io/python-tutorials"><img align="right" width="100" height="100" alt="python-tutorials.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-tutorials.png?raw=true" />
 
 Here are the tutorials I've seen that teach Python programming.
 

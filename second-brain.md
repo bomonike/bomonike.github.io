@@ -1,4 +1,8 @@
+---
 second-brain.md
+---
+
+<a target="_blank" href="https://bomonike.github.io/second-brain"><img align="right" width="100" height="100" alt="second-brain.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/second-brain.png?raw=true" />
 
 PARA is <a target="_blank" href="https://fortelabs.com/blog/para">Tiago Forte's</a>
 acronym for the top-level folders to organize your life:

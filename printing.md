@@ -17,6 +17,7 @@ created: "2020-03-22"
 {% include l18n.html %}
 {% include _toc.html %}
 
+<a target="_blank" href="https://bomonike.github.io/printing"><img align="right" width="100" height="100" alt="printing.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/printing.png?raw=true" />
 This tutorial describes how to print to paper.
 This updates <a href="https://wilsonmar.github.io/printing">the previous page at https://wilsonmar.github.io/printing</a>
 

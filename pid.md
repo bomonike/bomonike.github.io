@@ -1,3 +1,5 @@
+
+<a target="_blank" href="https://bomonike.github.io/pid"><img align="right" width="100" height="100" alt="pid.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/pid.png?raw=true" />
 This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/pid</a> from code at <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/pid.md">https://github.com/bomonike/bomonike.github.io/blob/master/pid.md</a>
 
 To maintain a process variable such as ambiant temperature at a target <strong>Setpoint</strong>, a PLC controller activates a heater or cooler based on sensor readings, in a feedback control loop. Other variables include regulating pressure and flow rate.

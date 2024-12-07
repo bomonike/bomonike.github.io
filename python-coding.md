@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-11-29"
+date: "2024-12-06"
 lastchange: "v005 + sorting bigO :python-coding.md"
 file: "python-coding"
 title: "Python Coding"
@@ -16,6 +16,8 @@ comments: true
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+<a target="_blank" href="https://bomonike.github.io/python-coding"><img align="right" width="100" height="100" alt="python-coding.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-coding.png?raw=true" />
 
 This is:
 

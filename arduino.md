@@ -1,3 +1,5 @@
+
+<a target="_blank" href="https://bomonike.github.io/arduino"><img align="right" width="100" height="100" alt="arduino.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/arduino.png?raw=true" />
 This is at https://bomonike.github.io/arduino
 
 There are two series of low-cost, low-power SOC (System on a Chip) microcontrollers.

@@ -1,4 +1,6 @@
-This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev/">https://bomonike.github.io/software-dev</a> from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
+
+<a target="_blank" href="https://bomonike.github.io/software-dev"><img align="right" width="100" height="100" alt="software-dev.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/software-dev.png?raw=true" />
+This is shown formatted at <a target="_blank" href="https://bomonike.github.io/software-dev">https://bomonike.github.io/software-dev</a> from <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/software-dev.md">this file</a>.
 
 <a target="_blank" href="https://youtu.be/SdxRvTWo-JU"><em>Click this diagram to see video (without audio):</em><br /><img alt="software-dev-4.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1724184659/software-dev-4_z6epyo.png"></a>
 

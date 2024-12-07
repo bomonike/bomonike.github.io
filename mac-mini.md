@@ -2,7 +2,8 @@
 lastchange: "v014 + battery :mac-mini.md"
 ---
 
-This is <a target="_blank" href="https://bomonike.github.io/mac-mini/">https://bomonike.github.io/mac-mini</a>.
+<a target="_blank" href="https://bomonike.github.io/mac-mini"><img align="right" width="100" height="100" alt="mac-mini.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/mac-mini.png?raw=true" />
+This is <a target="_blank" href="https://bomonike.github.io/mac-mini">https://bomonike.github.io/mac-mini</a>.
 
 Since its release on October, the 2024 Mac Mini with M4 chip has been the subject of many videos on YouTube. Some call it a "game-changer" for its price-performance. The models:
    * Mac Mini base model with 10 cores, 256 GB SSD and Thunderbolt 4

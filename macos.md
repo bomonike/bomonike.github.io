@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-10-31"
+date: "2024-12-06"
 file: "macos"
 title: "My macOS Topics"
 excerpt: "An index to my work on Apple macOS computers toward getting certifications."
@@ -16,6 +16,9 @@ created: "2012-08-22"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include mac_links.html %}
+
+
+<a target="_blank" href="https://bomonike.github.io/macos"><img align="right" width="100" height="100" alt="macos.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/macos.png?raw=true" />
 
 ## Apple Skill Certification Exams
 

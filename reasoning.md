@@ -3,7 +3,7 @@ url: https://bomonike.github.io/reasoning
 lastchange: "v009 + qr pic :reasoning.md"
 ---
 
-<a target="_blank" href="https://bomonike.github.io/reasoning"><img align="right" width="100" height="100" alt="mac-setup-readme-qr-500x500.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/reasoning-qr.png?raw=true" />This article</a> describes a significant advancement in computer science, when
+<a target="_blank" href="https://bomonike.github.io/reasoning"><img align="right" width="100" height="100" alt="reasoning-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/reasoning-qr.png?raw=true" />This article</a> describes a significant advancement in computer science, when
 AWS's "Automated Reasoning" service was
 <a target="_blank" href="https://go.aws/416r2vZ">announced</a>
 during their December, 2024 RE:Invent conference.

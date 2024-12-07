@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-07-10"
+date: "2024-12-06"
 file: "regex"
 title: "Regex (Regular Expressions)"
 excerpt: "Don't avoid them. Don't fear them. Make them your friend. Here and now."
@@ -8,8 +8,8 @@ tags: [DevOps, C#]
 image:
 # pic silver robot white skin handshake 1900x500
   feature: https://cloud.githubusercontent.com/assets/300046/14622149/306629f0-0585-11e6-961a-dc8f60dadbf6.jpg
-  credit: 
-  creditlink: 
+  credit:
+  creditlink:
 comments: true
 ---
 <i>{{ page.excerpt }}</i>
@@ -17,6 +17,8 @@ comments: true
 {% include _toc.html %}
 
 <a name="Sumry"></a>
+
+<a target="_blank" href="https://bomonike.github.io/regex"><img align="right" width="100" height="100" alt="regex.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/regex.png?raw=true" />
 
 JOKE: 'Some people, when confronted with a problem, think, “I know, I'll use regular expressions.” Now they have two problems.' - J. Zawinski
 
@@ -26,8 +28,8 @@ JOKE: 'Some people, when confronted with a problem, think, “I know, I'll use r
 
    The term regular expression is often abbreviated as "regex" or "regexes" in plural.
 
-   A regular expression is a "formula" for matching strings that follow some 
-   <a href="#RegexPatternz">pattern</a> in order to operate on a 
+   A regular expression is a "formula" for matching strings that follow some
+   <a href="#RegexPatternz">pattern</a> in order to operate on a
    <strong>subject</strong> character string.
 
    Text in HTML, log files, text files containing data, etc.
@@ -45,7 +47,7 @@ JOKE: 'Some people, when confronted with a problem, think, “I know, I'll use r
 
 ## Different RegEx Engine Flavors
 
-   Beware that vendor competitive urges has resulted in 
+   Beware that vendor competitive urges has resulted in
    <strong>several versions</strong> of regular expressions:
 
 1. regex101.com lists the different "flavors" of RegEx engines:
@@ -68,8 +70,8 @@ JOKE: 'Some people, when confronted with a problem, think, “I know, I'll use r
    * The GNU operating system's regex package are available using ftp from
    <a target="_blank" href="http://ftp.gnu.org/">ftp.gnu.org</a>.
 
-   * Compilers of programming languages Perl, Python, Emacs, Tcl, and .NET use a 
-   <strong>backtracking</strong> regular expression matcher that incorporates a 
+   * Compilers of programming languages Perl, Python, Emacs, Tcl, and .NET use a
+   <strong>backtracking</strong> regular expression matcher that incorporates a
    traditional <strong>Nondeterministic Finite Automaton (NFA)</strong> engine. So the standardized POSIX NFAs is slower.
 
       * <a target="_blank" href="http://perl.plover.com/Rx/paper/">
@@ -81,14 +83,14 @@ JOKE: 'Some people, when confronted with a problem, think, “I know, I'll use r
       <br /><br />
 
    * Utility programs initially developed for unix -- awk, egrep, and lex --
-   use a faster, but more limited, 
+   use a faster, but more limited,
    pure regular expression <strong>Deterministic Finite Automaton (DFA)</strong> engine.
 
    * The <strong> Extended Regular Expressions (ERE) </strong> version complies with the <a target="_blank" href="i18n.htm"><strong>internationalized</strong></a> <a target="_blank" href="http://www.opengroup.org/onlinepubs/7908799/xbd/re.html">ISO/IEC 9945-2:1993 standard</a>.  It matches based on the <strong>bit pattern</strong> used for encoding the character, not on the graphic representation of the character (which may represent more than a one bit pattern).
-      
+
    * <a target="_blank" href="http://msdn.microsoft.com/en-us/library/hs600312(v=vs.110).aspx">
    Microsoft's .NET Framework regular expressions</a>
-   are said to be compatible with Perl 5 regular expressions, but include features not yet seen in other implementations, such as right-to-left matching and on-the-fly compilation. 
+   are said to be compatible with Perl 5 regular expressions, but include features not yet seen in other implementations, such as right-to-left matching and on-the-fly compilation.
 
    NOTE: Parsing C/C++ style comments are a little more complex when you have to take into account string embedding, escaping, and line continuation. For example, the <strong> match </strong> routine of the C language library, accepts strings that are interpreted as regular expressions.
 
@@ -98,12 +100,12 @@ JOKE: 'Some people, when confronted with a problem, think, “I know, I'll use r
 ## Try It Now
 
    TIP:
-   The easiest way to learn this is to take a <strong>hands-on</strong> approach and manually work through some patterns. 
+   The easiest way to learn this is to take a <strong>hands-on</strong> approach and manually work through some patterns.
 
 Test and debug regular expressions using these tools:
 
    TOOL: Download or clone <a target="_blank" href="https://github.com/LeaVerou/regexplained">
-   RegexExplained</a> and see it used by its author @LeaVerou at 
+   RegexExplained</a> and see it used by its author @LeaVerou at
 
    VIDEO:
    <a target="_blank" href="https://www.youtube.com/watch?v=EkluES9Rvak">
@@ -142,16 +144,16 @@ Test and debug regular expressions using these tools:
    Patterns comprises two basic character types available from a standard keyboard
    (not using Greek alphas, lambdas, etc. like mathematicians do):
 
-   
-   * <strong>literal</strong> (normal) text characters such as 0 thru 9 or a thru z; and 
+
+   * <strong>literal</strong> (normal) text characters such as 0 thru 9 or a thru z; and
    *    <a href="#MetaCharacterz">Metacharacters</a> specify filtering.
       enabling a powerful, flexible, and efficient method for processing text.
       However, their compactness make them easier to create than to read.
-      
-   
+
+
 
    JOKE:
-   Some call regex expressions "ASCII puke" because it looks like a jumble of 
+   Some call regex expressions "ASCII puke" because it looks like a jumble of
    letters and numbers.
 
 
@@ -161,14 +163,14 @@ Test and debug regular expressions using these tools:
 ## The Kleene Star * (Wild Card) Metacharacter
 
    <a target="_blank" href="https://www.youtube.com/watch?v=528Jc3q86F8" title="Regular Expressions - Computerphile Professor Brailsford Jan 9, 2020">VIDEO</a>:
-   The development of regular expressions is first traced back to the work during the 1950's by 
+   The development of regular expressions is first traced back to the work during the 1950's by
    Kleene (some pronounce like "clean knee", not "clean") -- Stephen Cole Kleene (1904-1994), an American mathematician and theoretical computer scientist at Princeton and U. of Wisconsin-Madison.
 
    For this reason, the "*" wildcard character used in computer searches is formally known as a &quot;Kleene star.&quot;
 
    The use of < and > enclosing text is formally known as a &quot;<strong>Kleene closure</strong>&quot;.
 
-   Kleene's text-manipulation tools used by the Unix platform include 
+   Kleene's text-manipulation tools used by the Unix platform include
    <strong>ed</strong>, vi text editor, and <strong>grep</strong> file search utilities made used his notations for &#8220;the algebra of regular sets.&#8221;
 
 
@@ -238,7 +240,7 @@ as the first character after the opening bracket.</td>
    </td></tr>
 <tr valign="top" align="left"><td>+</td>
    <td>plus sign</td>
-   <td>one or more occurences of the character or regular expression immediately preceding. 
+   <td>one or more occurences of the character or regular expression immediately preceding.
    </td><td><strong><tt>9+</tt></strong> matches 9, 99, or 999.
    <br />NOTE: this metacharacter is not supported by all applications.
    </td></tr>
@@ -247,9 +249,9 @@ as the first character after the opening bracket.</td>
 </td>
    <td>braces</td>
    <td>a specific number of <strong>instances </strong> or instances within
-a range of the preceding character. 
-   </td><td><strong><tt><font face="Courier New">A[0-9]\{3\}</font></tt></strong> will match "A" followed by exactly 3 digits. That is, it will match A123 but not A1234. 
-   <br /> <strong><tt><font face="Courier New">[0-9]\{4,6\}</font></tt></strong> matches any sequence of 4, 5, or 6 digits. 
+a range of the preceding character.
+   </td><td><strong><tt><font face="Courier New">A[0-9]\{3\}</font></tt></strong> will match "A" followed by exactly 3 digits. That is, it will match A123 but not A1234.
+   <br /> <strong><tt><font face="Courier New">[0-9]\{4,6\}</font></tt></strong> matches any sequence of 4, 5, or 6 digits.
    NOTE: this metacharacter is supported by Robot's C-VU language but not by all applications.
    </td></tr>
 <tr valign="top" align="left"><td>?</td>
@@ -262,7 +264,7 @@ a range of the preceding character.
 </td></tr>
 </table>
 
-   In addition, VU regular expressions can include 
+   In addition, VU regular expressions can include
    <strong>ASCII control characters</strong>
    in the range 0 to 7F hex (0 to 127 decimal).
 
@@ -274,13 +276,13 @@ a range of the preceding character.
 ## Backward Slash Extended MetaCharacters
 
    One of the ways people are confused with regular expressions is the use of a backward slash \
-   character. 
+   character.
 
    For an analogy that you many already know, in Windows command line terminals,
    people use <tt>dir *.txt /s</tt> to look for text files in subdirectories.
    The asterisk or star character is a wildcard. The /s specifies processing of sub-folders.
 
-   With regex, the same parsing would be specified by <tt>.*\.txt</tt>, 
+   With regex, the same parsing would be specified by <tt>.*\.txt</tt>,
    with a back-slash in front of the dot for the escape character for the dot before txt
    since the dot has another meaning within regex expressions.
 
@@ -294,7 +296,7 @@ a range of the preceding character.
 
 ## Extended
 
-   Liks C and Java programs, regex programs use \ as an <strong>escape character</strong> to denote use of special characters as plain text. 
+   Liks C and Java programs, regex programs use \ as an <strong>escape character</strong> to denote use of special characters as plain text.
    These additional escape tags are recognized within Ruby regex:
 
    <table border="1" cellpadding="4" cellspacing="0">
@@ -353,8 +355,8 @@ web_reg_save_param_regexp(
    LAST );
    </pre>
 
-   The <tt>[\\s\\S]</tt> means match any white space and any non white space character = 
-   any character (because no Perl like "s" modifier available). 
+   The <tt>[\\s\\S]</tt> means match any white space and any non white space character =
+   any character (because no Perl like "s" modifier available).
 
    Introduced with VuGen 12 is a new function:
 
@@ -378,8 +380,8 @@ This regular expression matches any day of the week:
 ((Mon)|(Tues)|(Wednes)|(Thurs)|(Fri)|(Satur)|(Sun))day
 ```
 
-This matches simple dates against 1 or 2 digits for the month, 1 or 2 digit for the day, and either 2 or 4 digits for the year.  Matches:  [4/5/91], [04/5/1991], [4/05/89]  
-Non-Matches:  [4/5/1]  
+This matches simple dates against 1 or 2 digits for the month, 1 or 2 digit for the day, and either 2 or 4 digits for the year.  Matches:  [4/5/91], [04/5/1991], [4/05/89]
+Non-Matches:  [4/5/1]
 
 ```
 ((\d{2})|(\d))\/((\d{2})|(\d))\/((\d{4})|(\d{2}))
@@ -402,7 +404,7 @@ Validate a number between 1 and 255, such as an IP octet:
 This breaks down a Uniform Resource Identifier (URI) into its component parts.
 (from <a target="_blank" href="http://aspn.activestate.com/ASPN/Cookbook/Rx/Recipe/59863">
 ActiveState</a> quoting Appendix B of IETF RFC 2396)
-   
+
 ```
 my $uri = "http://www.ics.uci.edu/pub/ietf/uri/#Related";
 print "$1, $2, $3, $4, $5, $6, $7, $8, $9" if
@@ -415,27 +417,27 @@ $2 = http (the scheme)
 $3 = //www.ics.uci.edu
 $4 = www.ics.uci.edu (the authority)
 $5 = /pub/ietf/uri/ (the path)
-$6 = 
+$6 =
 $7 = (the query)
 $8 = #Related
 $9 = Related (the fragment)
 ```
 
 
-Validate an ip address in the form 255.255.255.255 -- 
+Validate an ip address in the form 255.255.255.255 --
 if it were combined with the email pattern above, the error above would not exist. Of course, the best way to test an email address is to send e-mail to it:
 
 ```
-^([a-zA-Z0-9_\-])+(\.([a-zA-Z0-9_\-])+)*@((\[(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5]))\]))|((([a-zA-Z0-9])+(([\-])+([a-zA-Z0-9])+)*\.)+([a-zA-Z])+(([\-])+([a-zA-Z0-9])+)*))$ 
+^([a-zA-Z0-9_\-])+(\.([a-zA-Z0-9_\-])+)*@((\[(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5])))\.(((([0-1])?([0-9])?[0-9])|(2[0-4][0-9])|(2[0-5][0-5]))\]))|((([a-zA-Z0-9])+(([\-])+([a-zA-Z0-9])+)*\.)+([a-zA-Z])+(([\-])+([a-zA-Z0-9])+)*))$
 ```
 
-Validates date in the US m/d/y format from 1/1/1600 - 12/31/9999. The days are validated for the given month and year. Leap years are validated for all 4 digits years from 1600-9999, and all 2 digits years except 00 since it could be any century (1900, 2000, 2100). Days and months must be 1 or 2 digits and may have leading zeros. Years must be 2 or 4 digit years. 4 digit years must be between 1600 and 9999. Date separator may be a slash (/), dash (-), or period (.) 
+Validates date in the US m/d/y format from 1/1/1600 - 12/31/9999. The days are validated for the given month and year. Leap years are validated for all 4 digits years from 1600-9999, and all 2 digits years except 00 since it could be any century (1900, 2000, 2100). Days and months must be 1 or 2 digits and may have leading zeros. Years must be 2 or 4 digit years. 4 digit years must be between 1600 and 9999. Date separator may be a slash (/), dash (-), or period (.)
 
 ```
-^(?:(?:(?:0?[13578]|1[02])(\/|-|\.)31)\1|(?:(?:0?[1,3-9]|1[0-2])(\/|-|\.)(?:29|30)\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:0?2(\/|-|\.)29\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:(?:0?[1-9])|(?:1[0-2]))(\/|-|\.)(?:0?[1-9]|1\d|2[0-8])\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$ 
+^(?:(?:(?:0?[13578]|1[02])(\/|-|\.)31)\1|(?:(?:0?[1,3-9]|1[0-2])(\/|-|\.)(?:29|30)\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:0?2(\/|-|\.)29\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:(?:0?[1-9])|(?:1[0-2]))(\/|-|\.)(?:0?[1-9]|1\d|2[0-8])\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$
 ```
 
-Validate passwords to be at least 4 characters, no more than 8 characters, and must include at least one upper case letter, one lower case letter, and one numeric digit. 
+Validate passwords to be at least 4 characters, no more than 8 characters, and must include at least one upper case letter, one lower case letter, and one numeric digit.
 
 ```
 ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$
@@ -444,7 +446,7 @@ Validate passwords to be at least 4 characters, no more than 8 characters, and m
 Validate major credit card numbers from Visa (length 16, prefix 4), Mastercard (length 16, prefix 51-55), Discover (length 16, prefix 6011), American Express (length 15, prefix 34 or 37). All 16 digit formats accept optional hyphens (-) between each group of four digits.
 
 ```
-^((4\d{3})|(5[1-5]\d{2})|(6011))-?\d{4}-?\d{4}-?\d{4}|3[4,7]\d{13}$ 
+^((4\d{3})|(5[1-5]\d{2})|(6011))-?\d{4}-?\d{4}-?\d{4}|3[4,7]\d{13}$
 ```
 
 This will Use extended grep for a valid MAC address, such as [01:23:45:67:89:ab], [01:23:45:67:89:AB], [fE:dC:bA:98:76:54] with colons seperating octets. It will ignore strings too short or long, or with invalid characters, such as [01:23:45:67:89:ab:cd], [01:23:45:67:89:Az], [01:23:45:56:]. It will accept mixed case hexadecimal.
@@ -498,9 +500,9 @@ while (<>) {
 ```[a-fA-F0-9]{1,4}
 ```
 
-   
+
 STAR: <a target="_blank" href="http://www.visibone.com/regular-expressions/">
-Visibone's FREE Regular Expressions detailed cheatsheet</a> provides 
+Visibone's FREE Regular Expressions detailed cheatsheet</a> provides
 examples for JavaScript.
 
    <a target="_blank" href="http://www.regexbuddy.com/">
@@ -509,19 +511,19 @@ $30 regexbuddy</a> allows you to easily create, understand and test regex patter
    TOOL: <a target="_blank" href="http://www.altova.com/">
 Altova.com</a>
 XML Regular Expressions
-Edit Regular Exp's for XML Schema XML Editor, 
+Edit Regular Exp's for XML Schema XML Editor,
 
    BOOK: <a target="_blank" href="http://www.amazon.com/exec/obidos/ASIN/159059441X/wilsonslifenotes">
-   Regular Expression Recipes: A Problem-Solution Approach 
+   Regular Expression Recipes: A Problem-Solution Approach
    (APress )</a>
-   by Nathan A. Good 
+   by Nathan A. Good
 
 
 
 
 <a name="Scripts"></a>
 
-## Error Recovery with Regular Expressions 
+## Error Recovery with Regular Expressions
 
 If a VU regular expression contains an error, when you run a suite, TestManager writes the message to stderr output prefixed with the following header:
 
@@ -612,19 +614,19 @@ errno   Explanation
    <pre>
       Console.WriteLine( match.Success );
    </pre>
-   
+
    This code would go inside code to define a command-line program named MatchTest.exe:
 
 
    CREDITS:
-      
+
    * <a target="_blank" href="http://www.pluralsight.com/courses/net-regular-expressions">Dan Sullivan's 3.25 hour .NET Regex video course on Pluralsight</a> shows how additional C# programming enhances additional logic for handling groups, etc..
-   <br /><br />      
-      
+   <br /><br />
+
 ## References
 
    http://www.wikiwand.com/en/Regular_expression
-   
+
    * <a target="_blank" href="http://www.regular-expressions.info/tutorial.html">
    Regular-Expressions.info</a>
 
@@ -661,12 +663,12 @@ errno   Explanation
    * BOOK: <a target="_blank" href="http://www.amazon.com/exec/obidos/ASIN/0672325667/wilsonslifenotes">
    Teach Yourself Regular Expressions in 10 Minutes
    (Sams; February 28, 2004)</a>
-   by Ben Forta 
+   by Ben Forta
 
    * BOOK: <a target="_blank" href="http://www.amazon.com/exec/obidos/ASIN/0764574892/wilsonslifenotes">
-   Beginning Regular Expressions 
+   Beginning Regular Expressions
    (Wrox Press, 2005)</a>
-   by Andrew Watt 
+   by Andrew Watt
 
 https://dev.to/emmabostian/regex-cheat-sheet-2j2a
 

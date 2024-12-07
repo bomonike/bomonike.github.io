@@ -1,8 +1,8 @@
 ---
 layout: post
-date: "2024-11-18"
+date: "2024-12-06"
 change: "v001 + new :podcasts.md"
-file: "ros"
+file: "podcasts"
 title: "Podcasts"
 excerpt: "My favorite podcasts and how to create them"
 tags: [Robots, DevOps]
@@ -16,6 +16,7 @@ created: "2021-08-02"
 ---
 <i>{{ page.excerpt }}</i>
 
+<a target="_blank" href="https://bomonike.github.io/podcasts"><img align="right" width="100" height="100" alt="podcasts.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/podcasts.png?raw=true" />
 This is at https://bomonike.github.io/podcasts
 with source at https://github.com/bomonike/bomonike.github.io/blob/master/podcasts.md
 

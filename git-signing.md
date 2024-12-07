@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-08-03"
+date: "2024-12-06"
 file: "git-signing"
 title: "Git Signing"
 excerpt: "Sign git commits and tags (for non-repudiation) in GitHub using GPG, Vault, Yubikey, Keybase"
@@ -15,6 +15,8 @@ comments: true
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+<a target="_blank" href="https://bomonike.github.io/git-signing"><img align="right" width="100" height="100" alt="git-signing.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/git-signing.png?raw=true" />
 
 > "If you ... want to verify that commits are actually from a trusted source, Git has a few ways to sign and verify work using GPG." -<a target="_blank" href="https://git-scm.com/docs/git-show-ref">git-scm.com/show-ref command</a>
 

@@ -1,6 +1,8 @@
-This is at https://bomonike.github.io/zima
+---
+url: "https://bomonike.github.io/zima"
+---
 
-This is part of a series about low-cost, low-power SOC (System on a Chip) microcontrollers (MCUs):
+<a target="_blank" href="https://bomonike.github.io/zima">This<img align="right" width="100" height="100" alt="zima.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/zima.png?raw=true" /></a> is part of a series about low-cost, low-power SOC (System on a Chip) microcontrollers (MCUs):
 
 * <a target="_blank" href="https://bomonike.github.io/arduino/">Arduino</a>
 * Raspberry Pi
