@@ -1,5 +1,6 @@
 ---
-python-features.md
+lastchange: "v002 + fix yaml :python-features.md"
+file: "python-features.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/python-features"><img align="right" width="100" height="100" alt="python-features.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-features.png?raw=true" />
