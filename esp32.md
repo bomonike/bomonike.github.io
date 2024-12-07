@@ -1,5 +1,6 @@
 ---
-esp32.md
+lastchange: "v002 + fix yaml :esp32.md"
+file: "esp32.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/esp32"><img align="right" width="100" height="100" alt="esp32.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/esp32.png?raw=true" />
