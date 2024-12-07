@@ -1,5 +1,6 @@
 ---
-github-install.md
+lastchange: "v002 + fix yaml :github-install.md"
+file: "github-install.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/github-install"><img align="right" width="100" height="100" alt="github-install.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/github-install.png?raw=true" />
