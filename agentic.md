@@ -1,8 +1,8 @@
----
+<---
 layout: post
 url: https://bomonike.github.io/agentic
 date: "2024-12-06"
-lastchange: git commit -m "v007 + qr :agentic.md"
+lastchange: "v008 + qr :agentic.md"
 file: "agentic"
 title: "Agentic"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -17,8 +17,8 @@ I Built a Virtual Assistant AI Agent that can do ANYTHING for Me [Step-by-step W
 Limitless AI
 
 
-https://www.skool.com/ai-automations-mastery-7642/classroom/0c39a268?md=91e6a57596b54616968beb2a9838923a
-Agency templates
+<a target="_blank" href-"https://www.skool.com/ai-automations-mastery-7642/classroom/0c39a268?md=91e6a57596b54616968beb2a9838923a">
+Agency templates</a>
 
 * 6:01 McKinsey template
 
