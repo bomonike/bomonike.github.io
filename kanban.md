@@ -1,5 +1,7 @@
 ---
-kanban.md 2024-05-14
+lastchange: "v002 + fix yaml :kanban.md"
+file: "kanban.md"
+created: "2024-05-14"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/kanban"><img align="right" width="100" height="100" alt="kanban.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/kanban.png?raw=true" />
