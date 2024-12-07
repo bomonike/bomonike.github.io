@@ -157,3 +157,9 @@ Alfredo Deza uses GitHub Codespaces to run Azure function using Flask using http
 https://www.youtube.com/watch?v=vDXPkAdqSyI
 What is GitHub Codespaces?
 
+<a target="_blank" href-"https://www.youtube.com/watch?v=tJxI-Z8X8Rs">VIDEO</a>:
+GitHub Certification Fundamentals: Get Started with Codespaces
+
+<a target="_blank" href="https://www.youtube.com/watch?v=-vTY7NvPC1w&1m25s">VIDEO</a>:
+Using AI to Write Better React Code w/Liz Myers
+ChatGPT
