@@ -787,7 +787,7 @@ comments: true
 * MOSFET = Metal Oxide Field Effect Transitor
 * MPC = Model Predictive Control
 *	MPP	=	Massively Parallel Processing (on databases)
-*	MRO	=	Method Resolution Order (in Python multiple inheritance hierarchy using C3 linearization algorithm)
+*	MRO	=	Method Resolution Order (in Python multiple inheritance hierarchy using C3 linearization algorithm which uses the method from the first parent class in the inheritance list)
 *	MS	=	Microsoft
 *	MSA	=	Master Service Agreement
 *	MSK	=	Managed Streaming for Kafka (AWS)
