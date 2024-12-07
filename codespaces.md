@@ -1,5 +1,12 @@
 ---
-lastchange: git commit -m "v004 + remote:codespaces.md"
+layout: post
+date: "2024-12-06"
+lastchange: "v005 + yaml heading :codespaces.md"
+file: "azure-local.md"
+title: "Azure Arc Local"
+excerpt: "Run Azure CLI commands on low-cost local hardware to manage VMs and containers, without Active Directory."
+tags: [cloud, IoT, Azure, macOS]
+comments: true
 ---
 
 <a target="_blank" href="https://bomonike.github.io/codespaces"><img align="right" width="100" height="100" alt="codespaces.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/codespaces.png?raw=true" />
