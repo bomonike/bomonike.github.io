@@ -1,11 +1,14 @@
 ---
 url: https://bomonike.github.io/it-films
-lastchange: "v005 + hacker movies :it-films.md"
+lastchange: "v007 + qr code :it-films.md"
 ---
 
+<a target="_blank" href="https://bomonike.github.io/it-films"><img align="right" width="100" height="100" alt="it-films-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/it-films-qr.png?raw=true" />
 Here are some films and other media about IT (Information Technology) security, software development, and the internet.
 
 internet movie database api
+
+https://omdbapi.com/
 
 My it-media.xlsx began from <a target="_blank" href="https://alfilatov.com/awesome-IT-films/#/build/movies?id=disconnect">here</a>.
 
