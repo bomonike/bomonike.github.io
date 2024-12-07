@@ -1,5 +1,6 @@
 ---
-mechatronics.md
+lastchange: "v002 + fix yaml :mechatronics.md"
+file: "mechatronics.md
 ---
 
 <a target="_blank" href="https://bomonike.github.io/mechatronics"><img align="right" width="100" height="100" alt="mechatronics.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/mechatronics.png?raw=true" />
