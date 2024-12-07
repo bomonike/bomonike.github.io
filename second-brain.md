@@ -1,5 +1,6 @@
 ---
-second-brain.md
+lastchange: "v002 + fix yaml :second-brain.md"
+file: "second-brain.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/second-brain"><img align="right" width="100" height="100" alt="second-brain.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/second-brain.png?raw=true" />
