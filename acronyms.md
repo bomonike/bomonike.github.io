@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/it-films
-date: "2024-12-06"
-lastchange: git commit -m "v007 + qr :acronyms.md"
+date: "2024-12-07"
+lastchange: git commit -m "v008 + MRO :acronyms.md"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -787,6 +787,7 @@ comments: true
 * MOSFET = Metal Oxide Field Effect Transitor
 * MPC = Model Predictive Control
 *	MPP	=	Massively Parallel Processing (on databases)
+*	MRO	=	Method Resolution Order (in Python multiple inheritance hierarchy using C3 linearization algorithm)
 *	MS	=	Microsoft
 *	MSA	=	Master Service Agreement
 *	MSK	=	Managed Streaming for Kafka (AWS)
