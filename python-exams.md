@@ -1,5 +1,5 @@
 ---
-lastchange: "v004 + netcad urls :python-exams.md"
+lastchange: "v005 + use personal email :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -13,9 +13,8 @@ file: "python-exams.md"
 1. Click "Login" at the upper-right.
 1. Click "Sign Up" at the lower-right.
 1. Click the Google icon under "Sign up with".
-1. Select your school Google account.
-
-1. Login using your school Google account and associated password.
+1. Select your personal Google account - the one credly.com will use even after you leave school.
+1. Login using your Google account and associated password.
 
    ### Contineu to PE1
 
