@@ -1,8 +1,10 @@
 ---
-lastchange: "v003 + netcad logos :python-exams.md"
+lastchange: "v003 + netcad logos & QR :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
+
+<a target="_blank" href="https://bomonike.github.io/python-exams"><img align="right" width="100" height="100" alt="python-exams.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-exams.png?raw=true" />
 
 1. Cisco's NetCad.com offers <a target="_blank" href="https://www.netacad.com/learning-collections/python?courseLang=en-US">two</a> courses aligned with PCEP™ and PCAP™ certifications to validate your expertise, and to show your instructors and potential employers that you are serious about your education and career.
 
