@@ -1,5 +1,5 @@
 ---
-lastchange: "v006 + netcad finish steps :python-exams.md"
+lastchange: "v007 + faster to reset redo :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -32,7 +32,7 @@ file: "python-exams.md"
 1. Scroll down and answer all questions.
 1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
 1. Review items you got wrong.
-1. Click "Reset" and answer again until you get 100%, so you know you have overcome incorrect thinking.
+1. Click "Reset" and answer again until you get 100%, so you know you have overcome incorrect thinking. Answering the questions you already know helps you get <strong>faster</strong>.
 
    ### Contineu to PE2
 
