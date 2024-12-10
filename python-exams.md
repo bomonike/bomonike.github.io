@@ -1,5 +1,5 @@
 ---
-lastchange: "v003 + netcad logos & QR :python-exams.md"
+lastchange: "v004 + netcad urls :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -19,7 +19,7 @@ file: "python-exams.md"
 
    ### Contineu to PE1
 
-   <img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810664/cisco_python_essentials_1_50_qxxfot.png" />
+   <a target="_blank" href="https://www.netacad.com/courses/python-essentials-1?courseLang=en-US"><img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810664/cisco_python_essentials_1_50_qxxfot.png" /></a>
 1. Click "Python Essentials 1"
 1. Notice the subjects:
    1. Introduction to Python and Computer Programming
@@ -34,7 +34,7 @@ file: "python-exams.md"
 
    ### Contineu to PE2
 
-   <img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810672/cisco_python_essentials_2_ja7h6b.png" />
+      <a target="_blank" href="https://www.netacad.com/courses/python-essentials-2?courseLang=en-US"><img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810672/cisco_python_essentials_2_ja7h6b.png" /></a>
 1. Click "Python Essentials 2"
 1. Notice the subjects:
    1. Modules, Packages, and PIP
