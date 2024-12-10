@@ -48,6 +48,7 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/podcasts">podcasts</a>
 1. <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
 1. <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
+1. <a target="_blank" href="https://bomonike.github.io/python-exams">python-exams</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-coding">python-coding</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-tutorials">python-tutorials</a>

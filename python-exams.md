@@ -1,16 +1,61 @@
 ---
-lastchange: "v001 + :python-exams.md"
+lastchange: "v002 + :python-exams.md"
+url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
 
-## Question 33
+1. Cisco's NetCad.com offers <a target="_blank" href="https://www.netacad.com/learning-collections/python?courseLang=en-US">two</a> courses aligned with PCEP™ and PCAP™ certifications to validate your expertise, and to show your instructors and potential employers that you are serious about your education and career.
 
-Look at the following code which uses a list comprehension [i*i for i in range(5)]
+   The courses are free, developed in collaboration with the OpenEDG Python Institute which administers the testing.
 
-<tt>numbers = [0, 2, 7, 9, 10]
+1. Click "Login" at the upper-right.
+1. Click "Sign Up" at the lower-right.
+1. Click the Google icon under "Sign up with".
+1. Select your school Google account.
+
+1. Login using your school Google account and associated password.
+
+   ### Contineu to PE1
+
+1. Click "Python Essentials 1"
+1. Notice the subjects:
+   1. Introduction to Python and Computer Programming
+   2. Python Data Types, Variables, Operators, and Basic I/O Operations
+   3. Boolean Values, Conditional Execution, Loops, Lists and List Processing, Logical and Bitwise
+   4. Functions, Tuples, Dictionaries, Exceptions, and Data Processing
+
+1. Click "Start Course".
+1. Scroll down to the bottom of the left menu to click "Python Essentials 2 (PE2) Course Final Exam", then "Final Test".
+1. Scroll down and answer all questions.
+1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
+
+   ### Contineu to PE2
+
+1. Click "Python Essentials 2"
+1. Notice the subjects:
+   1. Modules, Packages, and PIP
+   2. Strings, String and List Methods, Exceptions
+   3. Object-Oriented Programming
+   4. Miscellaneous
+
+1. Click "Start Course".
+1. Scroll down to the bottom of the left menu to click "Python Essentials 2 (PE2) Course Final Exam", then "Final Test".
+1. Scroll down and answer all questions.
+1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
+
+
+
+
+<hr />
+
+## Cisco Final Exam 1 Question 33
+
+Look at the following code:
+```
+numbers = [0, 2, 7, 9, 10]
 # Insert line of code here to produce [0, 4, 49, 81, 100]
 print(foo)
-</tt>
+```
 Which line would you insert in order for the program to produce the expected output?
 
 Choices given for the question suggests use of lambda within filter() and map() functions, all within a list:
@@ -39,7 +84,8 @@ The answer yields an internal Python object ID and its value from lambda:
 
 <tt>foo = list(filter(lambda num: num ** 2, numbers))</tt>
 
-## Question 34
+
+## Cisco Final Exam 1 Question 34
 
 A more complex question uses a list comprehension <tt>[i*i for i in range(5)]</tt>
 
