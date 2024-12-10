@@ -1,5 +1,5 @@
 ---
-lastchange: "v007 + faster to reset redo :python-exams.md"
+lastchange: "v008 + closure factory :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -48,6 +48,30 @@ Repeat as above.
 
 
 <hr />
+
+## Cisco Final Exam 2 Question 27
+
+```
+def o(p):
+    def q():
+        return '*' * p
+    return q
+
+r = o(1)
+s = o(2)
+print(r() + s())
+```
+
+This is an example of a <strong>"closure"</strong> in Python.
+
+The inner function o is a <strong>function factory</strong> - it creates functions on the fly and returns functions instead of a value. It allows for dynamic (parameterized) function generation with customizable behavior.
+
+https://realpython.com/factory-method-python/
+
+The inner function q "remembers" the value of p that was passed to the outer function o. Each call to o creates a new function with its own "remembered" value of p.
+
+While the code works, it could be made more readable by using more descriptive variable names and adding comments to explain its purpose.
+
 
 ## Cisco Final Exam 2 Question 33
 
@@ -222,8 +246,6 @@ c)	D<br />
 d)	A
 
 So no good choices?
-
-
 
 
 
