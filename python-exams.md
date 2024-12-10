@@ -1,12 +1,12 @@
 ---
-lastchange: "v002 + :python-exams.md"
+lastchange: "v003 + netcad logos :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
 
 1. Cisco's NetCad.com offers <a target="_blank" href="https://www.netacad.com/learning-collections/python?courseLang=en-US">two</a> courses aligned with PCEP™ and PCAP™ certifications to validate your expertise, and to show your instructors and potential employers that you are serious about your education and career.
 
-   The courses are free, developed in collaboration with the OpenEDG Python Institute which administers the testing.
+   The courses are free, developed in collaboration with the OpenEDG Python Institute which administers the exams.
 
 1. Click "Login" at the upper-right.
 1. Click "Sign Up" at the lower-right.
@@ -17,6 +17,7 @@ file: "python-exams.md"
 
    ### Contineu to PE1
 
+   <img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810664/cisco_python_essentials_1_50_qxxfot.png" />
 1. Click "Python Essentials 1"
 1. Notice the subjects:
    1. Introduction to Python and Computer Programming
@@ -31,6 +32,7 @@ file: "python-exams.md"
 
    ### Contineu to PE2
 
+   <img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810672/cisco_python_essentials_2_ja7h6b.png" />
 1. Click "Python Essentials 2"
 1. Notice the subjects:
    1. Modules, Packages, and PIP
@@ -89,10 +91,11 @@ The answer yields an internal Python object ID and its value from lambda:
 
 A more complex question uses a list comprehension <tt>[i*i for i in range(5)]</tt>
 
-<tt>numbers = [i*i for i in range(5)]
+```
+numbers = [i*i for i in range(5)]
 # Insert line of code here to produce [1, 9]
 print(foo)
-</tt>
+```
 
 Before looking at the answers, what value is contained in the numbers variable?
 
@@ -151,7 +154,7 @@ Perplexity.ai says the answer is b:
 <tt>foo = list(filter(lambda x: x % 2, numbers))</tt>
 
 
-## Question 35
+## Cisco Final Exam 1 Question 35
 
 This makes use of some methods for the random package described at
 https://docs.python.org/3/library/random.html
