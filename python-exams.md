@@ -1,5 +1,5 @@
 ---
-lastchange: "v005 + use personal email :python-exams.md"
+lastchange: "v006 + netcad finish steps :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -14,6 +14,7 @@ file: "python-exams.md"
 1. Click "Sign Up" at the lower-right.
 1. Click the Google icon under "Sign up with".
 1. Select your personal Google account - the one credly.com will use even after you leave school.
+1. Check the accept boxes, then "Accept & Continue".
 1. Login using your Google account and associated password.
 
    ### Contineu to PE1
@@ -30,6 +31,8 @@ file: "python-exams.md"
 1. Scroll down to the bottom of the left menu to click "Python Essentials 2 (PE2) Course Final Exam", then "Final Test".
 1. Scroll down and answer all questions.
 1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
+1. Review items you got wrong.
+1. Click "Reset" and answer again until you get 100%, so you know you have overcome incorrect thinking.
 
    ### Contineu to PE2
 
@@ -41,17 +44,12 @@ file: "python-exams.md"
    3. Object-Oriented Programming
    4. Miscellaneous
 
-1. Click "Start Course".
-1. Scroll down to the bottom of the left menu to click "Python Essentials 2 (PE2) Course Final Exam", then "Final Test".
-1. Scroll down and answer all questions.
-1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
-
-
+Repeat as above.
 
 
 <hr />
 
-## Cisco Final Exam 1 Question 33
+## Cisco Final Exam 2 Question 33
 
 Look at the following code:
 ```
@@ -88,7 +86,7 @@ The answer yields an internal Python object ID and its value from lambda:
 <tt>foo = list(filter(lambda num: num ** 2, numbers))</tt>
 
 
-## Cisco Final Exam 1 Question 34
+## Cisco Final Exam 2 Question 34
 
 A more complex question uses a list comprehension <tt>[i*i for i in range(5)]</tt>
 
@@ -104,7 +102,7 @@ Before looking at the answers, what value is contained in the numbers variable?
 
 <tt>[0, 1, 2, 3, 4]</tt>
 
-QUESTION: What does the <tt>i*i</tt> do? It's unusual.
+QUESTION: What does the <tt>i*i</tt> do?
 
 It multiples i by itself (turning into a square of itself), yielding:
 
@@ -223,8 +221,7 @@ b)	C<br />
 c)	D<br />
 d)	A
 
-
-The
+So no good choices?
 
 
 
