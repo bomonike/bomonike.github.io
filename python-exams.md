@@ -1,5 +1,5 @@
 ---
-lastchange: "v009 + exam code :python-exams.md"
+lastchange: "v010 + credly :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -16,6 +16,10 @@ file: "python-exams.md"
 1. Select your personal Google account - the one credly.com will use even after you leave school.
 1. Check the accept boxes, then "Accept & Continue".
 1. Login using your Google account and associated password.
+
+1. Use the email address you used to log into NetAcad.com to create an account at <a target="_blank" href="https://www.credly.com">credly.com</a>.
+   * Use your Authy mobile app to log in to credly.com.
+
 
    ### Continue to PE1
 
@@ -34,7 +38,8 @@ file: "python-exams.md"
 1. Review items you got wrong.
 1. Click "Reset" and answer again until you get 100%, so you know you have overcome incorrect thinking. Answering the questions you already know helps you get <strong>faster</strong>.
 1. Answer the post-survey questions so you'll get a "Discount coupon on completion of course" email from noreply@netacad.com containing a discount code unique to you.
-1. Email me the discount code so I can send you the exam code.
+1. DOTHIS: Email me the discount code so I can send you the exam code.
+
 
 
    ### Continue to PE2
