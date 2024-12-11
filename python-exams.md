@@ -1,5 +1,5 @@
 ---
-lastchange: "v008 + closure factory :python-exams.md"
+lastchange: "v009 + exam code :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -17,7 +17,7 @@ file: "python-exams.md"
 1. Check the accept boxes, then "Accept & Continue".
 1. Login using your Google account and associated password.
 
-   ### Contineu to PE1
+   ### Continue to PE1
 
    <a target="_blank" href="https://www.netacad.com/courses/python-essentials-1?courseLang=en-US"><img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810664/cisco_python_essentials_1_50_qxxfot.png" /></a>
 1. Click "Python Essentials 1"
@@ -33,8 +33,11 @@ file: "python-exams.md"
 1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
 1. Review items you got wrong.
 1. Click "Reset" and answer again until you get 100%, so you know you have overcome incorrect thinking. Answering the questions you already know helps you get <strong>faster</strong>.
+1. Answer the post-survey questions so you'll get a "Discount coupon on completion of course" email from noreply@netacad.com containing a discount code unique to you.
+1. Email me the discount code so I can send you the exam code.
 
-   ### Contineu to PE2
+
+   ### Continue to PE2
 
       <a target="_blank" href="https://www.netacad.com/courses/python-essentials-2?courseLang=en-US"><img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810672/cisco_python_essentials_2_ja7h6b.png" /></a>
 1. Click "Python Essentials 2"
@@ -70,7 +73,7 @@ https://realpython.com/factory-method-python/
 
 The inner function q "remembers" the value of p that was passed to the outer function o. Each call to o creates a new function with its own "remembered" value of p.
 
-While the code works, it could be made more readable by using more descriptive variable names and adding comments to explain its purpose.
+https://www.youtube.com/watch?v=JIImCgkAQxY&t=61s
 
 
 ## Cisco Final Exam 2 Question 33
