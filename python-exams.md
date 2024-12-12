@@ -1,14 +1,22 @@
 ---
-lastchange: "v010 + credly :python-exams.md"
+lastchange: "v010 + title & credly :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/python-exams"><img align="right" width="100" height="100" alt="python-exams.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-exams.png?raw=true" />
+# Python Exams
 
-1. Cisco's NetCad.com offers <a target="_blank" href="https://www.netacad.com/learning-collections/python?courseLang=en-US">two</a> courses aligned with PCEP™ and PCAP™ certifications to validate your expertise, and to show your instructors and potential employers that you are serious about your education and career.
+Certification exams validate your expertise, and to show potential schools, scholarships, and employers that you are serious about your education and career.
 
-   The courses are free, developed in collaboration with the OpenEDG Python Institute which administers the exams.
+1. Cisco's NetCad.com offers <a target="_blank" href="https://www.netacad.com/learning-collections/python?courseLang=en-US">
+free online Python courses</a> developed in collaboration with the OpenEDG Python Institute which administers the exams.
+
+   <img align="right" alt="python-certs-map=1200x253.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734024828/python-certs-map_yh2puu.png" />
+   1. 20% off $59 &nbsp; PCEP™ (Certified Entry-Level Python Programmer exam PCEP-30-0x) asks 30 questions over 40 minutes <br />https://pythoninstitute.org/pcep
+   2. 50% off $295 PCAP™ (Certified Associate Python Programmer exam PCAP-31-0x) asks 31 questions over 65 minutes at<br />https://pythoninstitute.org/pcap
+   3. $225 PCAPP1™ (Certified Professional Python Programmer Level 1 Exam PCPP-32-101) asks 32 questions over 40 minutes at <br />https://pythoninstitute.org/pcpp1
+   4. $225 PCAPP2™ (Certified Professional Python Programmer Level 2 Exam PCPP-32-201) asks 32 questions over 40 minutes at <br />https://pythoninstitute.org/pcpp2
 
 1. Click "Login" at the upper-right.
 1. Click "Sign Up" at the lower-right.
@@ -17,15 +25,16 @@ file: "python-exams.md"
 1. Check the accept boxes, then "Accept & Continue".
 1. Login using your Google account and associated password.
 
-1. Use the email address you used to log into NetAcad.com to create an account at <a target="_blank" href="https://www.credly.com">credly.com</a>.
-   * Use your Authy mobile app to log in to credly.com.
-
+1. Use the email address you used to log into NetAcad.com to <a target="_blank" href="https://www.credly.com/users/sign_up">create an account at credly.com</a>.
+1. In Credly, click Settings, Security & Privacy, to setup two-factor authentication with your Authy mobile app.
 
    ### Continue to PE1
 
    <a target="_blank" href="https://www.netacad.com/courses/python-essentials-1?courseLang=en-US"><img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810664/cisco_python_essentials_1_50_qxxfot.png" /></a>
+
+   <a target="_blank" href="https://edube.org/study/pe1">https://edube.org/study/pe1</a>
 1. Click "Python Essentials 1"
-1. Notice the subjects:
+1. Notice the PCAP (Certified Entry-Level Python Programmer) exam sections:
    1. Introduction to Python and Computer Programming
    2. Python Data Types, Variables, Operators, and Basic I/O Operations
    3. Boolean Values, Conditional Execution, Loops, Lists and List Processing, Logical and Bitwise
@@ -35,25 +44,33 @@ file: "python-exams.md"
 1. Scroll down to the bottom of the left menu to click "Python Essentials 2 (PE2) Course Final Exam", then "Final Test".
 1. Scroll down and answer all questions.
 1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
+
+   Passing requires 70%+
+
 1. Review items you got wrong.
 1. Click "Reset" and answer again until you get 100%, so you know you have overcome incorrect thinking. Answering the questions you already know helps you get <strong>faster</strong>.
 1. Answer the post-survey questions so you'll get a "Discount coupon on completion of course" email from noreply@netacad.com containing a discount code unique to you.
 1. DOTHIS: Email me the discount code so I can send you the exam code.
 
+1. When you get the exam code,
 
+   
 
    ### Continue to PE2
 
-      <a target="_blank" href="https://www.netacad.com/courses/python-essentials-2?courseLang=en-US"><img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810672/cisco_python_essentials_2_ja7h6b.png" /></a>
+   <a target="_blank" href="https://www.netacad.com/courses/python-essentials-2?courseLang=en-US"><img align="right" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1733810672/cisco_python_essentials_2_ja7h6b.png" /></a>
 1. Click "Python Essentials 2"
-1. Notice the subjects:
+1. Notice the PCAP (Certified Associate in Python Programming) exam sections:
    1. Modules, Packages, and PIP
    2. Strings, String and List Methods, Exceptions
    3. Object-Oriented Programming
    4. Miscellaneous
 
+<a target="_blank" href="https://edube.org/study/pe2">https://edube.org/study/pe2</a>
+   
 Repeat as above.
 
+Passing this prep exam gets you a discount coupon for 50% ($150) off the actual $295 exam fee for a cost to you of $144.
 
 <hr />
 
