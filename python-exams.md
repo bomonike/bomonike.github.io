@@ -124,8 +124,8 @@ Passing this prep exam gets you a discount coupon for 50% ($150) off the actual 
    * logging ‒ basics logging facility for Python
    * configparser ‒ configuration file parser
 
-   <img alt="python-pcpp1-badge-729x729.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027721/python-pcpp1-badge-729x729_cc3wrw.png" />
-   <img alt="python-pcpp2-badge-729x729.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027722/python-pcpp2-badge-729x729_aozbsd.png" />
+   <a target="_blank" href="https://pythoninstitute.org/pcpp1"><img alt="python-pcpp1-badge-729x729.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027721/python-pcpp1-badge-729x729_cc3wrw.png" /></a>
+   <a target="_blank" href="https://pythoninstitute.org/pcpp2"><img alt="python-pcpp2-badge-729x729.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027722/python-pcpp2-badge-729x729_aozbsd.png" /></a>
 
 <hr />
 
