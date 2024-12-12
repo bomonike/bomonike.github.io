@@ -1,5 +1,5 @@
 ---
-lastchange: "v010 + title & credly :python-exams.md"
+lastchange: "v011 + title & credly & advanced :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -9,14 +9,18 @@ file: "python-exams.md"
 
 Certification exams validate your expertise, and to show potential schools, scholarships, and employers that you are serious about your education and career.
 
-1. Cisco's NetCad.com offers <a target="_blank" href="https://www.netacad.com/learning-collections/python?courseLang=en-US">
-free online Python courses</a> developed in collaboration with the OpenEDG Python Institute which administers the exams.
+The OpenEDG Python Institute which administers the exams.
 
    <img align="right" alt="python-certs-map=1200x253.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734024828/python-certs-map_yh2puu.png" />
    1. 20% off $59 &nbsp; PCEP™ (Certified Entry-Level Python Programmer exam PCEP-30-0x) asks 30 questions over 40 minutes <br />https://pythoninstitute.org/pcep
-   2. 50% off $295 PCAP™ (Certified Associate Python Programmer exam PCAP-31-0x) asks 31 questions over 65 minutes at<br />https://pythoninstitute.org/pcap
-   3. $225 PCAPP1™ (Certified Professional Python Programmer Level 1 Exam PCPP-32-101) asks 32 questions over 40 minutes at <br />https://pythoninstitute.org/pcpp1
-   4. $225 PCAPP2™ (Certified Professional Python Programmer Level 2 Exam PCPP-32-201) asks 32 questions over 40 minutes at <br />https://pythoninstitute.org/pcpp2
+   2. 50% off $295 PCAP™ (Certified Associate Python Programmer exam PCAP-31-0x) asks 31 questions over 65 minutes<br />https://pythoninstitute.org/pcap
+   3. $225 PCAPP1™ (Certified Professional Python Programmer Level 1 Exam PCPP-32-101) asks 45 questions over 65 minutes <br />https://pythoninstitute.org/pcpp1
+   4. $195 PCAPP2™ (Certified Professional Python Programmer Level 2 Exam PCPP-32-201) asks 45 questions over 65 minutes <br />https://pythoninstitute.org/pcpp2
+
+## Cisco
+
+Cisco's offers <a target="_blank" href="https://www.netacad.com/learning-collections/python?courseLang=en-US">
+at their NetAcad.com site</a>  free online Python courses developed in collaboration with OpenEDG:
 
 1. Click "Login" at the upper-right.
 1. Click "Sign Up" at the lower-right.
@@ -40,7 +44,7 @@ free online Python courses</a> developed in collaboration with the OpenEDG Pytho
    3. Boolean Values, Conditional Execution, Loops, Lists and List Processing, Logical and Bitwise
    4. Functions, Tuples, Dictionaries, Exceptions, and Data Processing
 
-1. Click "Start Course".
+1. Click "Start Course". https://edube.org/login
 1. Scroll down to the bottom of the left menu to click "Python Essentials 2 (PE2) Course Final Exam", then "Final Test".
 1. Scroll down and answer all questions.
 1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
@@ -52,8 +56,7 @@ free online Python courses</a> developed in collaboration with the OpenEDG Pytho
 1. Answer the post-survey questions so you'll get a "Discount coupon on completion of course" email from noreply@netacad.com containing a discount code unique to you.
 1. DOTHIS: Email me the discount code so I can send you the exam code.
 
-1. When you get the exam code,
-
+1. When you get the exam code, visit <a target="_blank" href="https://pearsonvue.com/pythoninstitute">https://pearsonvue.com/pythoninstitute</a> to register for the exam.
    
 
    ### Continue to PE2
@@ -71,6 +74,51 @@ free online Python courses</a> developed in collaboration with the OpenEDG Pytho
 Repeat as above.
 
 Passing this prep exam gets you a discount coupon for 50% ($150) off the actual $295 exam fee for a cost to you of $144.
+
+## Continue to Advanced Python (PE3)
+
+1. <a target="_blank" href="https://edube.org/study/pcpp1-1">Python Advanced 1 (Advanced OOP)</a>
+
+   * Classes, instances, attributes, methods, as well as working with class and instance data
+   * Shallow and deep operations
+   * Abstract classes, method overriding, static and class methods, special methods
+   * Inheritance, polymorphism, subclasses, and encapsulation
+   * Advanced exception handling techniques
+   * The pickle and shelve modules
+   * Metaclasses
+
+2. <a target="_blank" href="https://edube.org/study/pcpp1-2">Python Advanced 2 (Best Practices and Standardization</a>
+   * Best practices, standardization, and coding conventions
+   * How to implement the conventions for code comprising the standard library in the main Python distribution
+   * The principles that influence the design of Python code
+   * How to write a better and more effective code
+   * How to avoid the most common errors and mistakes
+
+3. <a target="_blank" href="https://edube.org/study/pcpp1-3">Python Advanced 3 (Introduction to GUI Programming in Python (TkInter)</a>
+   * what GUI is and where it came from
+   * how to create Graphical User Interfaces (GUIs) in Python using the tkinter package
+   * how to construct a GUI using basic blocks and conventions
+   * how event-driven programming works
+   * some popular and commonly used GUI environments and toolkits
+   * what tkinter is and how to build a GUI with its help
+   * how to use widgets, windows, and events
+   * how to create basic applications based on tkinter's application life cycle
+
+4. <a target="_blank" href="https://edube.org/study/pcpp1-4">Python Advanced 4 (Working with RESTful APIs)</a>
+   * The basic concepts of network programming, REST, network sockets, and client-server communication
+   * How to use and create sockets in Python, and how to establish and close the connection with a server
+   * What JSON and XML files are, and how they can used in network communication
+   * What HTTP methods are, and how to say anything in HTTP
+   * How to build a sample testing environment
+   * What CRUD is
+   * How to build a simple REST client, and how to fetch and remove data from server, add new data to it, and update the already-existing data
+
+5. <a target="_blank" href="https://edube.org/study/pcpp1-5">Python Advanced 5 (File Processing and Communicating with a Program's Environment)</a>
+   * sqlite ‒ interacting with SQLite databases
+   * xml ‒ creating and processing XML files
+   * csv ‒ CSV file reading and writing
+   * logging ‒ basics logging facility for Python
+   * configparser ‒ configuration file parser
 
 <hr />
 
