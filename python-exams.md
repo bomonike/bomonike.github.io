@@ -1,5 +1,5 @@
 ---
-lastchange: "v011 + title & credly & advanced :python-exams.md"
+lastchange: "v012 + flow :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -9,7 +9,7 @@ file: "python-exams.md"
 
 Certification exams validate your expertise, and to show potential schools, scholarships, and employers that you are serious about your education and career.
 
-The OpenEDG Python Institute which administers the exams.
+The OpenEDG Python Institute administers this progression of Python certification exams:
 
    <img align="right" alt="python-certs-map=1200x253.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734024828/python-certs-map_yh2puu.png" />
    1. 20% off $59 &nbsp; PCEP™ (Certified Entry-Level Python Programmer exam PCEP-30-0x) asks 30 questions over 40 minutes <br />https://pythoninstitute.org/pcep
