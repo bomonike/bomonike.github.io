@@ -1,5 +1,5 @@
 ---
-lastchange: "v013 + badges :python-exams.md"
+lastchange: "v014 + 100 px badges :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -11,8 +11,8 @@ Certification exams validate your expertise to show potential schools, scholarsh
 
 The OpenEDG Python Institute administers this progression of Python certification exams:
 
-   <img align="right" alt="python-certs-map=1200x253.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734024828/python-certs-map_yh2puu.png" />
-
+   <img alt="python-certs-map=1200x253.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734024828/python-certs-map_yh2puu.png" />
+   
    1. 20% off $59 &nbsp; PCEP™ (Certified Entry-Level Python Programmer exam PCEP-30-0x) asks 30 questions over 40 minutes <br />https://pythoninstitute.org/pcep
    2. 50% off $295 PCAP™ (Certified Associate Python Programmer exam PCAP-31-0x) asks 31 questions over 65 minutes<br />https://pythoninstitute.org/pcap
    3. $225 PCAPP1™ (Certified Professional Python Programmer Level 1 Exam PCPP-32-101) asks 45 questions over 65 minutes <br />https://pythoninstitute.org/pcpp1
@@ -59,7 +59,7 @@ at their NetAcad.com site</a>  free online Python courses developed in collabora
 
 1. When you get the exam code, visit <a target="_blank" href="https://pearsonvue.com/pythoninstitute">https://pearsonvue.com/pythoninstitute</a> to register for the exam.
    
-   <img alt="python-pcep-badge-729x729.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027721/python-pcep-badge-729x729_wucsyk.png" />
+   <img alt="python-pcep-badge-729x729.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027721/python-pcep-badge-729x729_wucsyk.png" />
 
    ### Continue to PE2
 
@@ -77,7 +77,7 @@ Repeat as above.
 
 Passing this prep exam gets you a discount coupon for 50% ($150) off the actual $295 exam fee for a cost to you of $144.
 
-   <img alt="python-pcap-badge-729x729.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027720/python-pcap-badge-729x729_o8pfz2.png" />
+   <img alt="python-pcap-badge-729x729.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027720/python-pcap-badge-729x729_o8pfz2.png" />
 
 ## Continue to Advanced Python (PE3)
 
