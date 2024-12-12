@@ -1,5 +1,5 @@
 ---
-lastchange: "v014 + 100 px badges :python-exams.md"
+lastchange: "v014 + 100 pcpp1-2 badges :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -123,6 +123,9 @@ Passing this prep exam gets you a discount coupon for 50% ($150) off the actual 
    * csv ‒ CSV file reading and writing
    * logging ‒ basics logging facility for Python
    * configparser ‒ configuration file parser
+
+   <img alt="python-pcpp1-badge-729x729.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027721/python-pcpp1-badge-729x729_cc3wrw.png" />
+   <img alt="python-pcpp2-badge-729x729.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734027722/python-pcpp2-badge-729x729_aozbsd.png" />
 
 <hr />
 
