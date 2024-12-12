@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/it-films
-date: "2024-12-07"
-lastchange: git commit -m "v008 + MRO :acronyms.md"
+date: "2024-12-12"
+lastchange: git commit -m "v009 + SRP :acronyms.md"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -1194,6 +1194,7 @@ comments: true
 *	SRA	=	Security Reference Architecture
 *	SRE	=	Site Reliability Engineer	(job role)
 *	SRG	=	Security Requirements Guides (general guidelines for STIGs, from DISA)
+* SRP = Single Responsibility Principle
 * SRUM	=	System Resource Utilization Monitor (on Windows machines)
 *	SSAE	=	Statement on Standards for Attestation Engagements
 * SSAS = SQL Server Analysis Services (from Microsoft)
