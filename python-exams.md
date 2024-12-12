@@ -1,5 +1,5 @@
 ---
-lastchange: "v014 + 100 pcpp1-2 badges :python-exams.md"
+lastchange: "v015 + links to openedg :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -13,10 +13,13 @@ The OpenEDG Python Institute administers this progression of Python certificatio
 
    <img alt="python-certs-map=1200x253.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734024828/python-certs-map_yh2puu.png" />
    
-   1. 20% off $59 &nbsp; PCEP™ (Certified Entry-Level Python Programmer exam PCEP-30-0x) asks 30 questions over 40 minutes <br />https://pythoninstitute.org/pcep
-   2. 50% off $295 PCAP™ (Certified Associate Python Programmer exam PCAP-31-0x) asks 31 questions over 65 minutes<br />https://pythoninstitute.org/pcap
-   3. $225 PCAPP1™ (Certified Professional Python Programmer Level 1 Exam PCPP-32-101) asks 45 questions over 65 minutes <br />https://pythoninstitute.org/pcpp1
-   4. $195 PCAPP2™ (Certified Professional Python Programmer Level 2 Exam PCPP-32-201) asks 45 questions over 65 minutes <br />https://pythoninstitute.org/pcpp2
+   1. 20% off $59 &nbsp; PCEP™ (Certified Entry-Level Python Programmer exam PCEP-30-0x) asks 30 questions over 40 minutes <br /><a target="_blank" href="https://pythoninstitute.org/pcep">https://pythoninstitute.org/pcep</a>
+   2. 50% off $295 PCAP™ (Certified Associate Python Programmer exam PCAP-31-0x) asks 31 questions over 65 minutes<br /><a target="_blank" href="https://pythoninstitute.org/pcap">https://pythoninstitute.org/pcap</a>
+   3. $225 PCAPP1™ (Certified Professional Python Programmer Level 1 Exam PCPP-32-101) asks 45 questions over 65 minutes <br /><a target="_blank" href="https://pythoninstitute.org/pcpp1">https://pythoninstitute.org/pcpp1</a>
+   4. $195 PCAPP2™ (Certified Professional Python Programmer Level 2 Exam PCPP-32-201) asks 45 questions over 65 minutes <br /><a target="_blank" href="https://pythoninstitute.org/pcpp2">https://pythoninstitute.org/pcpp2</a>
+
+   Prices above are for a single try. 
+   Exams can be purchase with a retake option and sample tests.
 
 ## Cisco
 
