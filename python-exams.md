@@ -1,5 +1,5 @@
 ---
-lastchange: "v015 + links to openedg :python-exams.md"
+lastchange: "v016 + threshold :python-exams.md"
 url: "https://bomonike.github.io/python-exams"
 file: "python-exams.md"
 ---
@@ -18,8 +18,9 @@ The OpenEDG Python Institute administers this progression of Python certificatio
    3. $225 PCAPP1™ (Certified Professional Python Programmer Level 1 Exam PCPP-32-101) asks 45 questions over 65 minutes <br /><a target="_blank" href="https://pythoninstitute.org/pcpp1">https://pythoninstitute.org/pcpp1</a>
    4. $195 PCAPP2™ (Certified Professional Python Programmer Level 2 Exam PCPP-32-201) asks 45 questions over 65 minutes <br /><a target="_blank" href="https://pythoninstitute.org/pcpp2">https://pythoninstitute.org/pcpp2</a>
 
-   Prices above are for a single try. 
-   Exams can be purchase with a retake option and sample tests.
+   70% is the threshold for passing for all exams.
+
+   Prices above are for a single try. Exams can be purchased with a retake option and sample tests.
 
 ## Cisco
 
@@ -52,8 +53,6 @@ at their NetAcad.com site</a>  free online Python courses developed in collabora
 1. Scroll down to the bottom of the left menu to click "Python Essentials 2 (PE2) Course Final Exam", then "Final Test".
 1. Scroll down and answer all questions.
 1. Click "Submit" for your score. Hopefully you'll see "Congratulations, you have passed the assessment."
-
-   Passing requires 70%+
 
 1. Review items you got wrong.
 1. Click "Reset" and answer again until you get 100%, so you know you have overcome incorrect thinking. Answering the questions you already know helps you get <strong>faster</strong>.
