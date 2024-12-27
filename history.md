@@ -381,12 +381,13 @@ the "New Chronology" proposed in the 1990s, which lowers New Kingdom dates by as
 ? Egyptian pharaoh Phiops II subjugates Isrealistes.
 <br /> Moses rescued from the Nile [not by Egyptian princess Hatshepsut 1503-1482 ?]
 <br /> PROPOSED: <a target="_blank" href="http://www.biblicalchronologist.org/qa/adb/millennium.htm">
-2447(+/-12)</a> (during reign of Egyptian Menkaure, 1480 years after the Promise was given Abram, per modern reading of <a target="_blank" href="https://www.blueletterbible.org/kjv/1ki/6/1/s_297001">1Kings 6:1</a>) in the jubilee of jubilees (50 x 50 years or 2500 years after the fall of Adam) Moses leads Exodus from Egypt (<a target="_blank" href="https://www.blueletterbible.org/kjv/exo/14/23/s_64023">Exodus 14:23,27-30</a>).
-<br /> 1446 <a target="_blank" href="https://www.youtube.com/watch?v=2JusQxiTXnE">VIDEO</a>: (based on <a target="_blank" href="https://www.blueletterbible.org/kjv/1ki/6/1/s_297001">1Kings 6:1</a> "In the 480th year after the Israelites came out of Egypt), in the 4th year of Solomon's reign") in 966 BC. That's during the reign of Ahmenhotep II (1450-1425 BC) during the 18th Dynasty of Egypt.
-
+2447(+/-12)</a> (during reign of Egyptian Menkaure, 1480 years after the Promise was given Abram, per modern reading of <a target="_blank" href="https://www.blueletterbible.org/kjv/1ki/6/1/s_297001">1Kings 6:1</a>) 
 <br /> 2152 BC The 6th Dynasty of Egypt's Old Kingdom under Pharoah Merenre Antyemsaf II
 	(Greek name Niocris) collapses (putting Egypt into Dynasty 7 of the First Intermediate period),
 	by parting and closing of the <em>Yam suth</em> (modern day <em>Lak Yahablah</em> - the Red Sea).
+<br /> 1446 <a target="_blank" href="https://www.youtube.com/watch?v=2JusQxiTXnE">VIDEO</a>: (based on <a target="_blank" href="https://www.blueletterbible.org/kjv/1ki/6/1/s_297001">1Kings 6:1</a> "In the 480th year after the Israelites came out of Egypt), in the 4th year of Solomon's reign") in 966 BC. That's during the reign of Ahmenhotep II (1450-1425 BC) during the 18th Dynasty of Egypt.
+in the jubilee of jubilees (50 x 50 years or 2500 years after the fall of Adam) 
+<br />1406 BC Moses leads Exodus from Egypt (<a target="_blank" href="https://www.blueletterbible.org/kjv/exo/14/23/s_64023">Exodus 14:23,27-30</a>). Alt:
 
 <br /> Ten commandments given <em>apodictic</em> Normative, the beginning of Judaism
 
