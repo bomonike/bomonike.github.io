@@ -1,7 +1,7 @@
 ---
 layout: post
-lastchange: "v003 + add from wilsonmar :history.md"
-date: "2024-12-25"
+lastchange: "v005 + Persians :history.md"
+date: "2024-12-26"
 file: "history"
 title: "(Dates in) History"
 excerpt: "The most significant events in world history, in chronological order."
@@ -333,7 +333,7 @@ on 1 Tishrei (New Year)
 <br /> 3092(+/-16) [1630] [1921 Usher] God calls Abraham to leave Ur Chaldeans (who identified the Soros cycle) to settle awhile in Haran, Egypt, then Canaan.
 <br /> 3067 Issac born (<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/25/26/s_25026">Gen 25:26</a>)
 <br /> ? Ishmael cast out (<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/21/8-10/s_21008">Gen 21:8-10</a>)
-<br /> ? Issac (Genesis 26:17-25) wife Rebecca from Iraq (Genesis 24:4,10)
+<br /> ? Issac (<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/26/17-25/s_26017">Gen 26:17-25</a>) wife Rebecca from Iraq (Gen 24:4,10)
 <br /> ? Semite <a target="_blank" href="https://www.wikiwand.com/en/Sodom_and_Gomorrah">Sodom &amp; Gomorrah</a> destroyed by
 fire and brimstone" (<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/19/24-25/s_19024">Gen 19:24-25</a>)
 <br /> 3007 Jacob (=by might) born (Gen 47:9) (Gen. 28:10-12, 32 & 35:1-7)
@@ -343,7 +343,7 @@ fire and brimstone" (<a target="_blank" href="https://www.blueletterbible.org/kj
 <br /> 2879-2872 (Transition from Early Broze age I and II)
 	high residue radioactivity in tree rings of the time indicate
 	lower solar activity, which causes drought and thus famine in the Near East.
-<br /> 2877 Joseph and family in Egypt (during its <a target="_blank href="https://en.wikipedia.org/wiki/Second_Dynasty_of_Egypt">Second Dynasty</a>)
+<br /> 2877 Joseph and family in Egypt (during its <a target="_blank" href="https://en.wikipedia.org/wiki/Second_Dynasty_of_Egypt">Second Dynasty</a>)
 
 <br /> 2646 <a target="_blank" href="https://www.youtube.com/watch?v=2bjG1lm2Rq4">(by Carbon 14 dating)</a> &quot;Step&quot; pyramid of <a target="_blank" href="https://www.wikiwand.com/en/Pyramid_of_Djoser">Djoser (Zoser)</a> built at Saqqara, Egypt. 
 <br /> 2590 Great Pyramid of Khufu at Giza begins to be built.
@@ -372,22 +372,6 @@ The word pharaoh is not from the Egyptian language but is the Hebrew word for th
 
 <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_pharaohs">Pharoahs of ancient Egypt</a> are each identified by a <a target="_blank" href="https://en.wikipedia.org/wiki/Second_Dynasty_of_Egypt#/media/File:SecondDynastyKingLists.png">cartouche</a>. Each ruled for an average of 25 years. The first king was Menes, who ruled for 62 years. The last king was Cleopatra VII, who ruled for 21 years. The longest-reigning monarch was Pepi II, who ruled for 94 years. Mention of some were erased from history by their successors. The Bible mentions some of them by name, such as Shishak (1 Kings 14:25-26) and Necho (2 Kings 23:29-35). Chronology places the beginning of the Old Kingdom in the 27th century BC (+/- 300 years), the beginning of the Middle Kingdom in the 21st century BC and the beginning of the New Kingdom in the mid-16th century BC.
 the "New Chronology" proposed in the 1990s, which lowers New Kingdom dates by as much as 350 years, or the "Glasgow Chronology" (proposed 1978–1982), which lowers New Kingdom dates by as much as 500 years.
-
-### Ancient Persians
-
-539 BC Cyrus the Great of Persia (lion with wings) conquers Babylon (<a target="_blank" href="https://www.blueletterbible.org/kjv/dan/5/30-31/s_855030">Daniel 5:30-31</a>)
-<br /> 521 - 485 BC Darius I (the Great of Persia, dinosaur?) (<a target="_blank" href="https://www.blueletterbible.org/kjv/ezr/4/5/s_407005">Ezra 4:5</a>)
-<br /> 486 - 464 BC Xerxes I (Ahasuerus) of Persia marries Esther (<a target="_blank" href="https://www.blueletterbible.org/kjv/est/1/1-22/s_427001">Esther 1:1-22</a>)
-<br /> 464 - 424 BC Artaxerxes I (Longimanus) of Persia sends Ezra to Jerusalem (<a target="_blank" href="https://www.blueletterbible.org/kjv/ezr/7/1-28/s_410001">Ezra 7:1-28</a>)
-<br /> 424 BC Xerxes II
-<br /> 424 - 423 BC Sognianus
-<br /> 424 - 404 BC Darius II (Nothus) of Persia sends Nehemiah to Jerusalem (<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/11/1/s_11001">Nehemiah 13:6</a>)
-<br /> 404 - 358 BC Artaxerxes II (Mnemon) of Persia
-<br /> 358 - 338 BC Artaxerxes III (Ochus) of Persia
-<br /> 338 - 336 BC Arses of Persia
-<br /> 336 - 330 BC Darius III (Codomannus) of Persia conquered by Alexander the Great (<a target="_blank" href="https://www.blueletterbible.org/kjv/dan/11/2/s_861002">Daniel 11:2</a>)
-
-A "diadem" (crown) is a blue band marked with white which Persian kings used to bind on the turban or tiera.
 
 
 <a id="Moses"></a>
@@ -526,15 +510,33 @@ Nebuchadnezzar destroys <strong> Soloman's temple</strong> in Jerusalem
 <br /> 561 Pisistratus, leader of the poor, becomes the tyrant of Athens.
 <br /> 560 Lao-Tze writes his philosophy.
 <br /> 551-479 Confucious writes fortune cookie sayings in China (Analects).
+
+### Ancient Persians
+
 <br /> 550 King Cyrus II of Persia founds Persian empire.
+<br /> 539 Mesopotamian region (inhabited by Chaldeans and Babylonians) conquered by <a target="_blank" href="http://en.wikipedia.org/wiki/Cyrus_the_Great">Cyrus the Great</a> (the Father of Iran).
+<br /> 539 BC Cyrus the Great of Persia (lion with wings) conquers Babylon (<a target="_blank" href="https://www.blueletterbible.org/kjv/dan/5/30-31/s_855030">Daniel 5:30-31</a>)
+<br /> Oct 12, 539 Persian Aramaic Cyrus overthrows Babylon (<a target="bible" href="https://www.blueletterbible.org/kjv/dan/8/25/s_858025">Daniel 8:25</a> fulfills <a target="bible" href="https://www.blueletterbible.org/kjv/isa/44/28/s_723028">Isaiah 44:28</a>) under Belshazzar.
 
 <a id="Medo-Persiaz"></a>
-<br /> 539 Mesopotamian region (inhabited by Chaldeans and Babylonians) conquered by <a target="_blank" href="http://en.wikipedia.org/wiki/Cyrus_the_Great">Cyrus the Great</a> (the Father of Iran).
-<br /> Oct 12, 539 Persian Aramaic Cyrus overthrows Babylon (<a target="bible" href="https://www.blueletterbible.org/kjv/dan/8/25/s_858025">Daniel 8:25</a> fulfills <a target="bible" href="https://www.blueletterbible.org/kjv/isa/44/28/s_723028">Isaiah 44:28</a>) under Belshazzar.
+<br /> 521 - 485 BC Darius I (the Great of Persia) (<a target="_blank" href="https://www.blueletterbible.org/kjv/ezr/4/5/s_407005">Ezra 4:5</a>)
 <br /> 520 Cyrus allows Isreal to return from Babylonian Exile (<a target="bible" href="https://www.blueletterbible.org/kjv/ezr/1/1/s_404001">Ezra</a>).
 <br /> 512 <strong> Second Temple of Isreal finished.</strong>
 <br /> 510 Cleisthenes, with exiled Athenian nobles and an army from Sparta, liberates Athenians from Pisistratus and his sons.
 <br /> 505 Democracy established in Athens.
+
+<br /> 486 - 464 BC Xerxes I (Ahasuerus) of Persia marries Esther (<a target="_blank" href="https://www.blueletterbible.org/kjv/est/1/1-22/s_427001">Esther 1:1-22</a>)
+<br /> 464 - 424 BC Artaxerxes I (Longimanus) of Persia sends Ezra to Jerusalem (<a target="_blank" href="https://www.blueletterbible.org/kjv/ezr/7/1-28/s_410001">Ezra 7:1-28</a>)
+<br /> 424 BC Xerxes II
+<br /> 424 - 423 BC Sognianus
+<br /> 424 - 404 BC Darius II (Nothus) of Persia sends Nehemiah to Jerusalem (<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/11/1/s_11001">Nehemiah 13:6</a>)
+<br /> 404 - 358 BC Artaxerxes II (Mnemon) of Persia
+<br /> 358 - 338 BC Artaxerxes III (Ochus) of Persia
+<br /> 338 - 336 BC Arses of Persia
+<br /> 336 - 330 BC Darius III (Codomannus) of Persia conquered by Alexander the Great (<a target="_blank" href="https://www.blueletterbible.org/kjv/dan/11/2/s_861002">Daniel 11:2</a>)
+
+A "diadem" (crown) is a blue band marked with white which Persian kings used to bind on the turban or tiera.
+
 
 <br /> 477 Athens assumed leadership of the Delian League alliance of the city-states and islands of Greece against the Persians.
 <br /> 464 Earthquake in Sparta; helots revolt.
