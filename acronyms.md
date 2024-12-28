@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/it-films
-date: "2024-12-12"
-lastchange: git commit -m "v009 + SRP :acronyms.md"
+date: "2024-12-28"
+lastchange: "v010 + Meta LCM :acronyms.md"
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
@@ -712,6 +712,7 @@ comments: true
 *	LAMP	=	Linux OS + Apache web server + MySQL DB + PHP/Perl/Python	(open-source web development technology stack)
 *	LAN	=	Local Area Network
 * LCEL = LangChain Expression Language (chain series of AI models and parsers)
+* LCM = Large Concepts Model (Meta's approach for reasoning)
 *	LDAP	=	Lightweight Directory Access Protocol	(used by Linux to manage user and group access)
 *	LED	=	Light-Emitting Diode
 *	LF-TBAC	=	Lake Formation tag-based access control (AWS)
