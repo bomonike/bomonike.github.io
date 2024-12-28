@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/jetson
-date: "2024-12-21"
-lastchange: "v001 new :jetson.md"
+date: "2024-12-28"
+lastchange: "v004 + certs :jetson.md"
 file: "jetson"
 title: "Jetson AI"
 excerpt: "How to get, install, and use NVIDIA's Jetson micro servers for AI at edge."
@@ -19,6 +19,141 @@ From https://developer.nvidia.com/embedded/develop/software
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1734884266/nvidia-software-7292x4792_jxwiyf.png">
 <img alt="nvidia-software-7292x4792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734884266/nvidia-software-7292x4792_jxwiyf.png"></a>
+
+## Professional Certifications
+
+<a target="_blank" href="https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/index.html">
+
+For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $135 for a 2-year validity period:
+
+1. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/">NVIDIA-Certified Associate: Generative AI and LLMs (NCA-GENL)</a>
+   validates skills in the use of generative AI and large language models.
+   30% Core Machine Learning and AI Knowledge<br />
+   24% Software Development<br />
+   22% Experimentation<br />
+   14% Data Analysis and Visualization<br />
+   10% Trustworthy AI
+
+   * <a target="_blank" href="https://nvdam.widen.net/s/rpdddpdgtc/nvt-certification-exam-study-guide-gen-ai-llm-3262644-r7-web">Exam Guide</a>. 
+   * <a target="_blank" href="https://courses.nvidia.com/courses/course-v1:DLI+S-FX-07+V1/">$FREE Generative AI Explained</a>.
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1">$90 Getting Started With Deep Learning</a>
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V1">$90 Accelerating End-to-End Data Science Workflows</a>.
+   * <a target="_blank" href="https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/">$30 Introduction to Transformer-Based Natural Language Processing</a>.
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-FX-03+V3">8-hour $500 Building Transformer-Based Natural Language Processing Applications</a>.
+   * <a target="_blank" href="https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/">3-hour $30 Prompt Engineering With LLaMA-2</a>.
+
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1">1-hour $FREE Augment Your LLM Using Retrieval-Augmented Generation</a>.
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1">8-hour $FREE Buillding RAG Agents for LLMs</a>.
+
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-14+V1">8-hour $90 Generative AI With Diffusion Models</a>.
+
+   * <a target="_blank" href="https://www.nvidia.com/en-us/training/instructor-led-workshops/efficient-large-language-model-customization/">8-hour $500 Efficient Large Language Model (LLM) Customization</a>.
+
+
+2. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-multimodal-associate/">NVIDIA-Certified Associate: Generative AI Multimodal (NCA-GENM)</a> 
+   25% Experimentation<br />
+   20% Core Machine Learning and AI Knowledge<br />
+   15% Multimodel Data<br />
+   15% Software Development<br />
+   10% Data Analysis and Visualization<br />
+   10% Performance Optimization<br />
+    5% Trustworthy AI
+
+   In addition to the resources for the GENL exam:
+
+   * <a target="_blank" href="https://nvdam.widen.net/s/btdtlqshvh/nvt-certification-exam-study-guide-gen-ai-mm-3262600-r11-web">Study Guide</a> PDF</a>.
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-FX-06+V2">$500 Building Conversational AI Applications</a>
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-MF-01+V2">$500 Computer Vision for ​Industrial Inspection</a>
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-TC-01+V1">$500 Applications of AI for Anomaly Detection</a>
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-MF-02+V1">$500 Applications of AI for Predictive Maintenance</a>
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-FX-09+V1">$500 Rapid Application Development with Large Lanaguage Models</a>
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-03+V1">$30 Deploying a Model for Inference At Production Scale</a>
+
+ 
+   * <a target="_blank" href="https://www.nvidia.com/en-us/on-demand/session/gtcspring23-S51531/?ncid=em-even-124008-vt33">High-Resolution Image Synthesis via Two-Stage Generative Models</a> (on-demand video, 35 minutes)
+   * <a target="_blank" href="https://www.nvidia.com/en-us/on-demand/session/gtcspring23-S51531/?ncid=em-even-124008-vt33">Accelerated Creative AI—Using NVIDIA-Optimized Image Generation for Media and Entertainment</a​ (on-demand webinar, 1 hour) 
+   * <a target="_blank" href="https://developer.nvidia.com/blog/building-lifelike-digital-avatars-with-nvidia-ace-microservices/">Building Lifelike Digital Avatars With NVIDIA ACE Microservices​</a> (blog, 15 minutes) 
+   * <a target="_blank" href="https://www.nvidia.com/en-us/on-demand/session/gtcspring23-S52095/?ncid=em-even-124008-vt33">The Future of Generative AI for Content Creation</a> (on-demand video, 35 minutes) ​
+
+3. <a target="_blank" href="https://developer.nvidia.com/certified-associate-ai-infrastructure-and-operations">NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO)</a>
+   validates fundamental skills in AI infrastructure and operations learned from <a target="_blank" href="https://nvdam.widen.net/s/9hxmprb8gq/nvt-certification-exam-study-guide-aiio-3262763-r1-web">Study Guide</a> 
+
+   15% Troubleshoot and Optimize	
+   * Identify and troubleshoot hardware faults (e.g., GPU, fan, network card)
+   * Identify faulty cards, GPUs, power supplies
+   * Replace faulty cards, GPUs, power supplies
+   * Optimize AMD and Intel servers for performance
+   * Optimize storage
+
+   17% Systems and Network
+   * Configure routing tables on InfiniBand and NVIDIA Spectrum-X™
+   * Install and configure NVIDIA NVLink™ Switch
+   * Set up network fabric ports for the hosts
+   * Identify network topologies for data centers
+
+   33% Systems and Servers
+   * Install GPU-based servers
+   * Install physical GPUs
+   * Install NVIDIA® Bluefield® DPU-based servers
+   * Identify cable types and transceivers
+   * Validate hardware operation for workloads
+   * Validate hardware installation
+   * Validate power and cooling
+   * Establish storage requirements in a cluster design
+
+   35% Physical Layer Management
+   * Install, update, and remove NVIDIA GPU drivers
+   * Install the NVIDIA Container Toolkit
+   * Demonstrate how to use NVIDIA GPUs with Docker
+   * Install NGC command line interface on hosts
+   * Configure and manage Bluefield
+   * Configure MIG (AI and HPC)
+   * Deploy the Bluefield OS image to Arm
+   * Manage cloud-native stack
+
+   * <a target="_blank" href="https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals-course-and-certification/?cm=86222">7-hour $50 AI Infrastructure Operations Fundamentals</a> with exam coupon.
+
+   * <a target="_blank" href="https://academy.nvidia.com/en/ai-infrastructure-public-training/">7-sessions 4-hours each $3500 hands-on AI Infrastructure Professional Public Training</a> explores configuration, management and troubleshooting of AI Infrastructure.
+
+2. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-professional/">NVIDIA-Certified Professional: AI Infrastructure (NCP-AII)</a>, for $400 answer 50 questions in 90-minutes to validates the ability to deploy, manage, and maintain AI infrastructure by NVIDIA.
+
+   * <a target="_blank" href="https://academy.nvidia.com/en/course/ai-operations-fundamentals/?cm=86222">7-hour $50 AI Infrastructure & Operations Fundamentals</a> covers essential components of AI infrastructure, including compute platforms, networking, and storage solutions. The course also addresses AI operations, focusing on infrastructure management and cluster orchestration.
+
+3. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/">NVIDIA-Certified Professional: AI Operations (NCP-AIO)</a> has 2-3 year preprequisite. For $400, answer 50 questions in 90-minutes to validate your ability to monitor, troubleshoot, and optimize AI infrastructure by NVIDIA.
+
+   36% Administration	
+   * Administer Fleet Command
+   * Administer Slurm cluster
+   * Understand data center architecture for AI workloads
+   * Administer Base Command Manager (BCM) and cluster provisioning
+   * Administer Run.ai (potentially part of ACM)
+   * Configure MIG (for AI and HPC)
+   16% Workload Management
+   * Administer Kubernetes cluster
+   * Use system management tools to troubleshoot issues
+   26% Installation and Deployment
+   * Install and configure BCM
+   * Install and initialize Kubernetes on NVIDIA hosts using BCM
+   * Deploy containers from NGC
+   * Deploy cloud VMI containers
+   * Understand storage requirements for AI data centers
+   * Deploy DOCA services on DPU Arm
+   20% Troubleshooting and Optimization
+   * Troubleshoot docker
+   * Troubleshoot the fabric manager service for NVIDIA NVlink™/NVswitch™ systems
+   * Troubleshoot BCM 
+   * Troubleshoot Magnum IO components
+   * Troubleshoot storage performance
+
+   * <a target="_blank" href="https://academy.nvidia.com/en/course/ai-operations-fundamentals/?cm=86222">7-hour $50 AI Operations Fundamentals</a>
+
+   * <a target="_blank" href="https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals-course-and-certification/?cm=86222">7-hour $150 AI Infrastructure & Operations Fundamentals</a> includes exam certificate. covers essential components of AI infrastructure, including compute platforms, networking, and storage solutions. The course also addresses AI operations, focusing on infrastructure management and cluster orchestration.
+
+   * <a target="_blank" href="https://academy.nvidia.com/en/ai-operations-public-training/">$3,000 for six 4-hour session AI Operations Professional Public Training</a> for hands-on experience with NVIDIA's DCGM, InfiniBand networking, NVIDIA BlueField™ DPUs, and GPU virtualization, while learning to leverage tools for infrastructure provisioning, workload scheduling, and cluster orchestration.
+
+4. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/infiniband-professional/">NVIDIA-Certified Professional: InfiniBand (NCP-IB)</a>. For $220 answer 40 questions in 90-minutes to validate skills in AI networking by NVIDIA. Correctly answer 40 questions in 90-minutes online, for $220, with a 2-year validity period for those who installs, configures, manages, troubleshoots, or monitors InfiniBand fabrics.
+
+   * <a target="_blank" href="https://academy.nvidia.com/en/course/ib-pro-online/?cm=137">6-hour $200 AI Operations Professional Workshop</a>
 
 ## Hardware
 
@@ -43,6 +178,9 @@ Developer Kits:
 
 * Jetson AGX Orin (32GB) 
    * 64 GB eMMC (+ NVMeSSD)
+
+<a target="_blank" href="https://forums.developer.nvidia.com/t/agx/65068/3">BTW</a>:
+AGX is "not an acronym persay, but it loosely means Autonomous machines accelerator technology."
 
 Others:
 * Jetson Orin NX (16GB) 
