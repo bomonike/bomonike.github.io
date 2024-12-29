@@ -2,7 +2,7 @@
 layout: post
 url: https://bomonike.github.io/jetson
 date: "2024-12-28"
-lastchange: "v004 + certs :jetson.md"
+lastchange: "v006 + certs :jetson.md"
 file: "jetson"
 title: "Jetson AI"
 excerpt: "How to get, install, and use NVIDIA's Jetson micro servers for AI at edge."
@@ -111,13 +111,11 @@ For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $1
    * Deploy the Bluefield OS image to Arm
    * Manage cloud-native stack
 
-   * <a target="_blank" href="https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals-course-and-certification/?cm=86222">7-hour $50 AI Infrastructure Operations Fundamentals</a> with exam coupon.
+   * <a target="_blank" href="https://academy.nvidia.com/en/course/ai-infrastructure-operations-fundamentals-course-and-certification/?cm=86222">7-hour $150 AI Infrastructure Operations Fundamentals</a> with exam coupon. This covers compute platforms, networking, and storage solutions. The course also addresses AI operations, focusing on infrastructure management and cluster orchestration.
 
    * <a target="_blank" href="https://academy.nvidia.com/en/ai-infrastructure-public-training/">7-sessions 4-hours each $3500 hands-on AI Infrastructure Professional Public Training</a> explores configuration, management and troubleshooting of AI Infrastructure.
 
 2. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-professional/">NVIDIA-Certified Professional: AI Infrastructure (NCP-AII)</a>, for $400 answer 50 questions in 90-minutes to validates the ability to deploy, manage, and maintain AI infrastructure by NVIDIA.
-
-   * <a target="_blank" href="https://academy.nvidia.com/en/course/ai-operations-fundamentals/?cm=86222">7-hour $50 AI Infrastructure & Operations Fundamentals</a> covers essential components of AI infrastructure, including compute platforms, networking, and storage solutions. The course also addresses AI operations, focusing on infrastructure management and cluster orchestration.
 
 3. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/">NVIDIA-Certified Professional: AI Operations (NCP-AIO)</a> has 2-3 year preprequisite. For $400, answer 50 questions in 90-minutes to validate your ability to monitor, troubleshoot, and optimize AI infrastructure by NVIDIA.
 
@@ -258,8 +256,7 @@ supports the Jetson Orin Nano Super Developer Kit, featuring [MAXN mode] which b
 
 * OpenVLA (Vision-Language-Action) Model https://openvla.github.io
 
-* OpenUSD Stages, Prims, and Attributes https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-17+V1
-   * https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-19+V1
+* OpenUSD
 
 * TAO Toolkit https://developer.nvidia.com/tao-toolkit
 
@@ -277,6 +274,31 @@ supports the Jetson Orin Nano Super Developer Kit, featuring [MAXN mode] which b
 * DLFW 24.0
 * https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nx/docs/jetson_orin_nx_16gb_pcn211361_bom_addition_of_dram.pdf
 * RIVA
+
+### OpenUSD
+
+* OpenUSD <a target="_blank" href="https://www.openusd.org">https://www.openusd.org</a> 3D scenes USD scene description data files on Stages, Hydra rendering architecture, Prims (primatives  hierarchy of objects from geometry, to materials, to lights and other organizational elements.), and Attributes https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-17+V1
+   * https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-19+V1
+
+  * rendering backend, such as OpenGL or DirectX. 
+  OpenUSD is an open-source USD library for creating and working with USD scenes.
+  * https://github.com/PixarAnimationStudios/OpenUSD
+  * HdStorm is included in OpenUSD 
+
+Each file format can be created through Python bindings in the OpenUSD library. When creating a new stage we can pass in a string to represent a file name that ends in .usdc, .usd, .usda, or .usdz.
+File Formats (USD, USDC, USDA and USDZ) are used for storing and exchanging various types of 3D scene data, including meshes, cameras, lights, and shaders.
+
+* A USD (.usd) file can have either ASCII or binary format. This switch can be done at any point without breaking references for debugging. 
+
+   Separate heavier data from more light weight data. When doing so, consider using .usdc and .usda explicitly to avoid obfuscation and create large .usda files unintentionally.
+
+* USDA (.usda) is a native file format used by OpenUSD to store and exchange 3D scene data. Its format is ASCII text and therefore "Human Readable" and editable. This makes USDA optimal for small files, such as a stage that is referencing external content. 
+
+* USDC (.usdc) - the Crate Binary Format -- is a <strong>compressed binary</strong> file format designed to minimize load time and provide a more efficient representation of the scene data compared to the human-readable ASCII format (USDA). USDC is extremely efficient for numerically-heavy data, like geometry. Various compression techniques  reduce the file size and improve loading performance. It also employs memory mapping for faster file access and loading times.
+
+* USDZ (.usdz) is an <strong>atomic, uncompressed, zipped archive</strong> for delivery of all necessary assets ( a mesh with its texture) together in a single file. It’s generally intended as read-only and is optimal for XR experiences. We would not use USDZ if we are still making edits to the asset.
+
+* We may choose to use some other 3D format backed by an SdfFileFormatPlugin when we prefer to keep our source data as is and still leverage all of OpenUSD for scene manipulation and rendering.
 
 
 ## Social
@@ -343,3 +365,11 @@ https://developer.nvidia.com/downloads/embedded/L4T/r36_Release_v4.0/jp61-rev1-o
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1734884307/keyboard-shortcuts-576x331_yqq5zg.png">
 <img alt="keyboard-shortcuts-576x331.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734884307/keyboard-shortcuts-576x331_yqq5zg.png"></a>
+
+
+## RAG
+https://www.youtube.com/watch?v=N_OOfkEWcOk
+Within
+https://github.com/NVIDIA/GenerativeAIExamples
+https://github.com/NVIDIA/GenerativeAIExamples/tree/main/community/5_mins_rag_no_gpu
+Run using Streamlit:
