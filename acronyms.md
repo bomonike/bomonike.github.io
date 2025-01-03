@@ -1,13 +1,14 @@
 ---
 layout: post
-url: https://bomonike.github.io/it-films
-date: "2024-12-28"
-lastchange: "v010 + Meta LCM :acronyms.md"
+date: "2025-01-03"
+lastchange: "v012 + FSD :acronyms.md"
+url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
 excerpt: "It's often difficult to know the context of an acronym. So here are all 900+ in one page to cover Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG!"
 tags: [cloud, security, management, audit]
 comments: true
+created: "2024-12-28"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/acronyms"><img align="right" width="100" height="100" alt="acronyms-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/acronyms-qr.png?raw=true" />
@@ -485,15 +486,16 @@ comments: true
 *	FN	=	False Negative	(test result that missed catching a bad/malicious sample)
 *	FOMO	=	Fear Of Missing Out
 *	FP	=	False Positive	(test result that identified a legitimate sample as bad/malicious)
-*	FQDN	=	Fully-Qualified Domain Name
 * FPGA = <a target="_blank" href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">Field Programmable Gate Array</a>
 * FPS	=	Flexible Payments Service
+*	FQDN	=	Fully-Qualified Domain Name
 * FRAP = Facilitated Risk Analysis Process (analyze impact of each individual org unit)
-* FSFET = Forksheet Field-Effect Transistor
+* FSFET = ForkSheet Field-Effect Transistor
 *	FTE	=	Full Time Employee/Equivalent
 *	FTK	=	Forensic ToolKit (drive imager tool from AccessData to preserve evidence)
 *	FQDN	=	Fully Qualified Domain Name
 * FSBP = Foundational Security Best Practices (defined by AWS)
+*	FSD	=	Full Self-Driving (by autonomous vehicles)
 *	FSM	=	Finite State Machine
 *	FYE	=	Fiscal Year End
 *	FYI	=	For Your Information
@@ -832,6 +834,7 @@ comments: true
 *	NDA	=	Non-Disclosure Agreement
 *	NDAA	=	National Defense Authorization Act of 2020 and 2021
 *	NDE	=	Net Dollar Expansion
+* NeRF = Neural Radiance Fields (for generating 3D content from 2D images)
 *	NPU	=	Neural Processing Unit (specialized for processing AI neural networks in parallel, especially on edge/hand-held devices)
 * NDI = National Defense Information (classified secrets)
 *	NDRR	=	Net Dollar Retention Rate
@@ -1328,6 +1331,7 @@ comments: true
 
 *	v12n	=	Virtualization	(numeronym of 11 letters between v and n)
 *	VAR	=	Value-Added Reseller
+* VAE = Variational Autoencoders (uses encoder-decoder architecture to generate new data for image and video generation)
 *	VAT	=	Value-Added Tax
 *	VBO	=	Value-Based Outcome
 *	VCS	=	Version Control System
