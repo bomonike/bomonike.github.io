@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-01-03"
-lastchange: "v013 + header :acronyms.md"
+lastchange: "v014 + NLP :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -11,11 +11,10 @@ comments: true
 created: "2024-12-28"
 ---
 <a target="_blank" href="https://bomonike.github.io/acronyms"><img align="right" width="100" height="100" alt="acronyms-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/acronyms-qr.png?raw=true" />
+{% include l18n.html %}
 <i>{{ page.excerpt }}</i>
 
 <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a>
-
-{% include l18n.html %}
 
 <hr />
 
@@ -53,7 +52,7 @@ created: "2024-12-28"
 * AFAIK	=	As Far As I Know (internet slang)
 * AFK	=	Away From Keyboard (gamer slang)
 * AFR	=	Annual Failure Rate
-*	AGI	=	Artificial General Intelligence
+*	AGI	=	Artificial General Intelligence (AI that surpasses human intelligence)
 *	AHOD	=	All Hands On Deck
 *	AI	=	Artificial Intelligence
 *	AIB	=	Azure Image Builder (to run within Azure VMs)
@@ -535,7 +534,7 @@ created: "2024-12-28"
 *	GPIO	=	General Purpose Input/Output (on an Arduino board)
 *	GPO	=	Group Policy Object
 *	GPS	=	Global Positioning System
-*	GPT	=	Generative Pre-trained Transformer (OpenAI GenAI)
+*	GPT	=	Generative Pre-trained Transformer (LLM used in ChatGPT by OpenAI for GenAI)
 *	GPT	=	GUID Partition Table (used with UEFI)
 *	GRC	=	Governance and Risk and Compliance
 *	gRPC =	Global Remote Procedure Call	(a protocol to connect services)
@@ -853,6 +852,7 @@ created: "2024-12-28"
 *	NISQ	=	Noisy Intermediate-Scale Quantum (device)
 *	NIST	=	National Institute of Standards and Technology	(US)
 *	NLB	=	Network Load Balancer	(Amazon)
+*	NLP	=	Natural Language Processing (interaction between computers and human language such as Alexa and Google Assistant)
 *	NLU	=	Natural Language Understanding  (Alexa & Generative AI)
 *	NOC	=	Network Operations Center
 *	NoSQL	=	(Nonrelational database system such as key-value pair document storage in DynamoDB)
