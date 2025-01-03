@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-12-06"
-lastchange: "v005 + sorting bigO :python-coding.md"
+date: "2025-01-03"
+lastchange: "v006 + Swift :python-coding.md"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -13,18 +13,15 @@ image:
   creditlink: https://www.wikiwand.com/en/An_Athlete_Wrestling_with_a_Python
 comments: true
 ---
+<a target="_blank" href="https://bomonike.github.io/python-coding"><img align="right" width="100" height="100" alt="python-coding.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-coding.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
-
-<a target="_blank" href="https://bomonike.github.io/python-coding"><img align="right" width="100" height="100" alt="python-coding.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-coding.png?raw=true" />
-
-This is:
-
-   * Put learning and creativity to work on the <tt>python-samples.py</tt> program described at:<br /><a target="_blank" href="https://wilsonmar.github.io/python-samples">wilsonmar.github.io/python-samples</a>
-   <br /><br />
+{% include whatever.html %}
 
 This is the last in my series of articles about Python:
+
+   * Put learning and creativity to work on the <tt>python-samples.py</tt> program described at:<br /><a target="_blank" href="https://wilsonmar.github.io/python-samples">wilsonmar.github.io/python-samples</a>
 
    * Handle the intricacies of <strong>installing Python</strong> and associated utilities (pyenv, pip, venv, conda, etc.) at:<br /><a target="_blank" href="https://wilsonmar.github.io/python-install">wilsonmar.github.io/python-install</a>
 
@@ -36,9 +33,8 @@ This is the last in my series of articles about Python:
 
    * Know Python language <strong>coding tricks and techniques</strong> at:<br /><a target="_blank" href="https://wilsonmar.github.io/python-coding">wilsonmar.github.io/python-coding</a>
 
-{% include whatever.html %}
 
-## What This Fixes
+## Why This?
 
 In <a target="_blank" href="https://bomonike.github.io/python-tutorials/">my python-tutorials page</a> I list the many tutorials on YouTube and paid subscription channels.
 
@@ -1151,26 +1147,42 @@ https://towardsdatascience.com/image-processing-blob-detection-204dc6428dd
 
 <hr />
 
-## GUI using PySide6 & Qt Media
+## GUI
 
-create-gui-applications-pyside6.epub
+https://docs.python.org/3/using/ios.html
 
-<a target="_blank" href="https://www.youtube.com/watch?v=rHlsV0hzr8I">VIDEO</a>:
-Qt C++ for cross-platform development.
-Nokia owned Qt and developed PySide for Python bindings. PySide2 arrived later than PyQt5.
-PySide6 and PyQt5 released about the same time.
-Riverbank created their own PyQt under GPL (buy license to keep code close source).
-PySide6 is under LGPL with no sharing.
+<a target="_blank" href="https://www.reddit.com/r/learnprogramming/comments/v6q8iv/building_mobile_ios_app_with_python/?rdt=41629">Not many</a> develop iOS and iPad apps using Python vs. coding Swift, which is similar to Python. Learning Swift to develop an iOS application would be easier than figuring out how to develop an iOS application in Python.
 
-https://github.com/mfitzp/books/tree/main/create-gui-applications/pyside6
+But if you are hell-bent on it:
 
-In PySide6, every widget is part of two distinct hierarchies:
-* the Python object hierarchy and
-* the Qt layout hierarchy.
-How you respond or ignore events can affect how your UI behaves.
+* <a target="_blank" href="https://www.toobler.com/blog/getting-started-with-pythonista-building-ios-apps-in-python">Pythonista</a>
+* wxWidgets
+* Kivy
+* ReactNative JavaScript
+* Xamarin (Microsoft) coding in C#, etc.
+* <a target="_blank" href="https://beeware.org/">beeware.org</a> framework
+* <a target="_blank" href="https://www.youtube.com/watch?v=rHlsV0hzr8I">VIDEO</a>:
+   Qt for cross-platform development in Python over C++.
+   Nokia owned Qt and developed PySide for Python bindings.
+   PySide2 arrived later than Riverbank's PyQt5  under GPL (buy license to keep code close source).
+
+   PySide6 and PyQt5 released about the same time.
+
+   PySide6 is under LGPL with no sharing.
+   In PySide6, every widget is part of two distinct hierarchies:
+   * the Python object hierarchy and
+   * the Qt layout hierarchy.
+   How you respond or ignore events can affect how your UI behaves.
+
 
 <a target="_blank" href="https://www.youtube.com/watch?v=It7nTqIDd7E">VIDEO</a>: Qt Media player
 
+create-gui-applications-pyside6.epub
+
+https://github.com/mfitzp/books/tree/main/create-gui-applications/pyside6
+
+
+More advanced developers integrate Python directly into an iOS project using a Python XCFramework.
 
 <hr />
 
@@ -1323,20 +1335,6 @@ MAE provides a more intuitive measure of average error magnitude.
 
 
 <hr />
-
-## GUI
-
-There is also wxWidgets, Kivy.
-
-<a target="_blank" href="https://www.youtube.com/watch?v=rHlsV0hzr8I">VIDEO</a>:
-Qt for cross-platform development in Python over C++.
-Nokia owned Qt and developed PySide for Python bindings.
-PySide2 arrived later than Riverbank's PyQt5  under GPL (buy license to keep code close source).
-PySide6 and PyQt5 released about the same time.
-PySide6 is under LGPL with no sharing.
-
-<a target="_blank" href="https://www.youtube.com/watch?v=It7nTqIDd7E">VIDEO</a>: Qt Media player
-
 
 ## GCP
 
