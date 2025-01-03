@@ -1,5 +1,5 @@
 ---
-lastchange: "v006 + history :README.md"
+lastchange: "v007 + fonts :README.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/README">This<img align="right" width="100" height="100" alt="README.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/README.png?raw=true" /><a>
@@ -19,6 +19,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/copilots">copilots</a>
 1. <a target="_blank" href="https://bomonike.github.io/emf-blocking">emf-blocking</a>
 1. <a target="_blank" href="https://bomonike.github.io/esp32">esp32</a>
+1. <a target="_blank" href="https://bomonike.github.io/fonts">fonts</a>
 1. <a target="_blank" href="https://bomonike.github.io/genai-ide">genai-ide</a>
 1. <a target="_blank" href="https://bomonike.github.io/git-signing">git-signing</a>
 1. <a target="_blank" href="https://bomonike.github.io/github-install">github-install</a>
