@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-03"
-lastchange: "v014 + NLP :acronyms.md"
+date: "2025-01-04"
+lastchange: "v015 + DST :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -380,6 +380,7 @@ created: "2024-12-28"
 * DSP = Digital Signal Processing
 * DSSE = Dead Simple Signing Envelope (signing methods and formats used by Secure Systems Lab)
 *	DSSS	=	Direct-Sequence Spread Spectrum
+*	DST	=	Daylight Saving Time
 *	DTLS	=	Datagram Transport Layer Security
 *	DUT	=	Device Under Test
 *	DWaaS	=	Data Warehouse as a Service
