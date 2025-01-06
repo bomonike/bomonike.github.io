@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-03"
-lastchange: "v001 + QR image from wilsonmar.github.io :singularity.md"
+date: "2025-01-06"
+lastchange: "v002 + sound of singularity :singularity.md"
 file: "singularity"
 title: "Singularity"
 excerpt: "What can you do to survive or even thrive when AGI (Artificial General Intelligence) ushers in the Age of Technical Singularity?"
@@ -27,6 +27,9 @@ The history of technological innovation is that <strong>the rate of innovation i
 
 "Technical Singularity" refers to rapid and uncontrollable technological growth that will occur when artificial intelligence (AI) surpasses human intelligence.
 
+<a target="_blank" href="https://youtube.com/shorts/TGuxwgUyu2A?si=IJsYnXq8dF8kTlSh">VIDEO</a>:
+The sound of singularity (frequency going higher and higher as disk spins faster and faster).
+
 This is also known as the "Infinite" Industrial Revolution because industry, infrastructure and transportation are <strong>continuously upgraded</strong> by software and smart systems.
 
 The Singularity with profound and unpredictable consequences for human civilization
@@ -34,21 +37,23 @@ that few can predict today.
 
 ??? When robots take over work, people will have less and less to do.
 
-The disturbing aspect of the Singularity is that it 
+The disturbing aspect of the Singularity is that it
 
 
-## AI & Robots vs. HumanLimitations 
+## AI & Robots vs. Human Limitations
 
 It's naive to say that "retraining" will fix everything.
 
 Many retraining aim to create more automation which accelerates the displacement of human workers.
 
-Individual humans cannot hope to compete with AI and robots like they can with other humans. 
+Individual humans cannot hope to compete with AI and robots like they can with other humans.
 
-1. During the industrial era, workers can <strong>unionize</strong> and go on strike because managers cannot do the work of all workers. That's how workers can protect their benefits and 
+1. During the industrial era, workers can <strong>unionize</strong> and go on strike because managers cannot do the work of all workers. That's how workers can protect their benefits and
 working conditions.
 
    But when AI and robots managers can replace human workers, human workers have <strong>no bargaining power</strong>.
+
+   Reasoning
 
 1. Humans degrade over time. Human replacements require repeated training.
 
@@ -56,7 +61,7 @@ working conditions.
 
 1. Individual humans have a limited number of hours in a day to learn. And humans have a limited short-term memory and unreliable long-term memory. Humans learn from others slowly and incompletely.
 
-   But what each computer learns can be added to a <strong>shared pool of knowledge</strong> accessible to all other computers. Computers can learn from each other quickly and easily. 
+   But what each computer learns can be added to a <strong>shared pool of knowledge</strong> accessible to all other computers. Computers can learn from each other quickly and easily.
 
    By definition, an LLM contains knowledge from many domains (medicine, law, finance, politics, etc.)
 
@@ -67,30 +72,36 @@ working conditions.
 
 ## Making Money
 
-What can you do to survive or even thrive in the Age of AI Singularity? 
+What can you do to survive or even thrive in the Age of AI Singularity?
 
 Logic? Imagination? Creativity?
 
-1. Build AI and robots for OpenAI, Amazon, Microsoft, Google, Meta, Anthropic, Perpexity, etc.
+1. Build AI and robots for OpenAI, Amazon, Microsoft, Google, Meta, Anthropic, Perpexity, abacus.ai, scale.ai, Tesla, etc. PROTIP: Programming and IT is not the only job within AI companies.
 
-1. Help others make use of AI and robots.
+   o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
 
-1. "Universal Basic Income" is often touted as a solution to mass human unemployment. 
+1. Help others make use of AI and robots by getting ahead of changes and organizing knowledge for others.
 
-   The danger of relying on handouts is that this can quicky lead to the rationale of eliminating the elderly and others who are not "contributing" to increasing profitability.
+   The GUI with AI is trending toward "low code" or "no code" (clickable) specification.
 
-   Elon Musk's elmination of 80% of the workforce within Twitter within days of his acquisition is a harbinger of such thinking. 
+1. "Universal Basic Income" is often touted as a solution to mass human unemployment.
 
-2. <strong>Sell to the corporate rich</strong>. Be an artisan to apply the fine-motor <strong>dexterity</strong> which robots have not yet achieved, such as being a robot repairman or worker creating luxury goods for luxury brands such as Hermes, Gucci, Louis Vuitton, etc. 
+   The danger of "handouts" is that it can quicky lead to the rationale of eliminating the elderly and others who are not "contributing" to increasing profitability.
 
-   There are a limited number of artisan jobs. 
+   "I visualize a time when we will be to robots what dogs are to humans, and I'm rooting for the machines." -- Claude Shannon (1916-2001)
+
+   Elon Musk's elmination of 80% of the workforce at Twitter within days of his acquisition is a harbinger of such thinking.
+
+2. <strong>Sell to the corporate rich</strong>. Be an artisan to apply the fine-motor <strong>dexterity</strong> which robots have not yet achieved, such as being a robot repairman or worker creating luxury goods for luxury brands such as Hermes, Gucci, Louis Vuitton, etc.
+
+   There are a limited number of artisan jobs.
    Eventually, robots will create and repair other robots.
    Over time, there will be less and less superrich.
 
-3. Achieve <strong>self-sufficiency</strong> by producing your own food on your own homestead. 
+3. Achieve <strong>self-sufficiency</strong> by producing your own food on your own homestead.
 
    This is difficult, so requires collaboration with other like-minded people. Amish communities are an example of this.
- 
+
 4. Participate in <strong>underground ("extra legal")</strong> enterprises not subject to governmental authorities.
 
 HKPCt&H!=NztN`Yelhd
@@ -137,4 +148,8 @@ IMF (International Monetary Fund)
 Singularity is Near
 https://www.youtube.com/watch?v=ZV9k0cr3k6M
 
+https://www.amacad.org/publication/daedalus/turing-trap-promise-peril-human-artificial-intelligence
 
+https://www.amacad.org/publication/daedalus/language-coding-creativity
+
+Coursera: AI For Everyone by Andrew Ng
