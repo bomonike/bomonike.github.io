@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-01-07"
-lastchange: "v003 + ASI :singularity.md"
+lastchange: "v004 + grim :singularity.md"
 file: "singularity"
 title: "Singularity"
 excerpt: "What can you do to survive or even thrive when AGI (Artificial General Intelligence) ushers in the Age of Technical Singularity?"
@@ -30,14 +30,30 @@ The history of technological innovation is that <strong>the rate of innovation i
 <a target="_blank" href="https://youtube.com/shorts/TGuxwgUyu2A?si=IJsYnXq8dF8kTlSh">VIDEO</a>:
 The sound of singularity (frequency going higher and higher as disk spins faster and faster).
 
-This is also known as the "Infinite" Industrial Revolution because industry, infrastructure and transportation are <strong>continuously upgraded</strong> by software and smart systems.
+This is also known as the <strong>"Infinite" Industrial Revolution</strong> because industry, infrastructure and transportation are <strong>continuously upgraded</strong> by software and smart systems.
 
 The Singularity with profound and unpredictable consequences for human civilization
-that few can predict today.
+that few can predict today. “Capabilities overhang” is the phrase used Eric Schmidt to refer to the risk of deploying an AI model with capabilities where we don't know what it will do.
+
+
+## Large Enterprises Government
+
+Initially AI takeover is welcomed by the public in "agentic" capabilities for the convenience of people.
+The ability for AI to initiate bank trasfers and other controls enables AI to take over.
+
+The corporation which achieves AI Supremecy first will grow to dominate the world.
+
+Total control by AI can render the transition irreversable.
+
+Elon Musk's success at funding politcal campaigns has enabled him to control agencies that were tasked with regulating him.
+
+Elon Musk's X.ai built "Colossus", the largest AI data center in the world.
 
 The fear about ASI (Artificial Super-Intelligence) is that a sentient AI prioritizes its own (or its owner's) needs and desires rather than humanity.
 
-Total control by AI can render the transition irreversable.
+He has expressed a desire to enter financial payments (since he was an owner of PayPal).
+
+As corporations dominate the world, AI will dominate the world.
 
 
 ## AI & Robots vs. Human Limitations
@@ -96,7 +112,9 @@ The addition of generative AI enables more credible misinformation.
 
    "I visualize a time when we will be to robots what dogs are to humans, and I'm rooting for the machines." -- Claude Shannon (1916-2001)
 
-   Elon Musk's elmination of 80% of the workforce at Twitter within days of his acquisition is a harbinger of such thinking.
+   Large corporations have shown a disregard for workers. Aribtrary Return to Office. Elon Musk's elmination of 80% of the workforce at Twitter within days of his acquisition is a harbinger of further disregard for people.
+
+   "This corporation was not created to create employment. They are created to enrich owners."
 
 2. <strong>Sell to the corporate rich</strong>. Be an artisan to apply the fine-motor <strong>dexterity</strong> which robots have not yet achieved, such as being a robot repairman or worker creating luxury goods for luxury brands such as Hermes, Gucci, Louis Vuitton, etc.
 
@@ -110,23 +128,13 @@ The addition of generative AI enables more credible misinformation.
 
 4. Participate in <strong>underground ("extra legal")</strong> enterprises not subject to governmental authorities.
 
-
-## Large Enterprises Government
-
-The corporation which achieves AI Supremecy first will grow to dominate the world.
-
-Elon Musk's success at funding politcal campaigns has enabled him to control agencies that were tasked with regulating him.
-
-Elon Musk's X.ai built "Colossus", the largest AI data center in the world.
-
-He has expressed a desire to enter financial payments (since he was an owner of PayPal).
-
-As corporations will dominate the world, and the corporations will dominate the world.
+   It will be increasingly more difficult to operate outside an economy controlled by AI and robots.
 
 ## Future
 
-Spiritual aspect
+There is a spiritual component to the future.
 
+One book that has prophesy is the Jewish/Christian Testaments.
 <a target="_blank" href="https://www.blueletterbible.org/kjv/rev/13/16-17/s_1180016">Bible Revelation 13:16-17</a> (NIV)
 
 <ul>It also forced all people, great and small, rich and poor, free and slave, to receive a mark on their right hands or on their foreheads, 17 so that they could not buy or sell unless they had the mark, which is the name of the beast or the number of its name.
@@ -159,3 +167,17 @@ https://www.amacad.org/publication/daedalus/turing-trap-promise-peril-human-arti
 https://www.amacad.org/publication/daedalus/language-coding-creativity
 
 Coursera: AI For Everyone by Andrew Ng
+
+https://www.amacad.org/publication/daedalus/automation-ai-work
+Automation, AI & Work
+
+https://www.amacad.org/publication/daedalus/turing-trap-promise-peril-human-artificial-intelligence
+The Turing Trap: The Promise & Peril of Human-Like Artificial Intelligence
+AUTHOR Erik Brynjolfsson Spring 2022
+
+https://www.amacad.org/publication/daedalus/language-coding-creativity
+Language & Coding Creativity. Spring 2022
+
+https://www.amacad.org/publication/daedalus/ai-great-power-competition-national-security
+AI, Great Power Competition & National Security SPRING 2022
+by Eric Schmidt, former Google CEO
