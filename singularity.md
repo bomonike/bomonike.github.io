@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-06"
-lastchange: "v002 + sound of singularity :singularity.md"
+date: "2025-01-07"
+lastchange: "v003 + ASI :singularity.md"
 file: "singularity"
 title: "Singularity"
 excerpt: "What can you do to survive or even thrive when AGI (Artificial General Intelligence) ushers in the Age of Technical Singularity?"
@@ -35,16 +35,18 @@ This is also known as the "Infinite" Industrial Revolution because industry, inf
 The Singularity with profound and unpredictable consequences for human civilization
 that few can predict today.
 
-??? When robots take over work, people will have less and less to do.
+The fear about ASI (Artificial Super-Intelligence) is that a sentient AI prioritizes its own (or its owner's) needs and desires rather than humanity.
 
-The disturbing aspect of the Singularity is that it
+Total control by AI can render the transition irreversable.
 
 
 ## AI & Robots vs. Human Limitations
 
-It's naive to say that "retraining" will fix everything.
+In the age of Artificial Super Intelligence (ASI), machines are able to <strong>self-improve</strong>.
 
-Many retraining aim to create more automation which accelerates the displacement of human workers.
+PROTIP: We think it's naive to say that "retraining" of people will fix the plight of humans.
+
+Many retraining aim to create <strong>more automation</strong>, which accelerates the displacement of human workers even further.
 
 Individual humans cannot hope to compete with AI and robots like they can with other humans.
 
@@ -74,7 +76,9 @@ working conditions.
 
 What can you do to survive or even thrive in the Age of AI Singularity?
 
-Logic? Imagination? Creativity?
+Amazon, Facebook, and Google became the largest companies by getting people to buy more.
+
+The addition of generative AI enables more credible misinformation.
 
 1. Build AI and robots for OpenAI, Amazon, Microsoft, Google, Meta, Anthropic, Perpexity, abacus.ai, scale.ai, Tesla, etc. PROTIP: Programming and IT is not the only job within AI companies.
 
@@ -83,6 +87,8 @@ Logic? Imagination? Creativity?
 1. Help others make use of AI and robots by getting ahead of changes and organizing knowledge for others.
 
    The GUI with AI is trending toward "low code" or "no code" (clickable) specification.
+
+   Logic? Imagination? Creativity?
 
 1. "Universal Basic Income" is often touted as a solution to mass human unemployment.
 
@@ -104,7 +110,7 @@ Logic? Imagination? Creativity?
 
 4. Participate in <strong>underground ("extra legal")</strong> enterprises not subject to governmental authorities.
 
-HKPCt&H!=NztN`Yelhd
+
 ## Large Enterprises Government
 
 The corporation which achieves AI Supremecy first will grow to dominate the world.
