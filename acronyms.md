@@ -102,7 +102,7 @@ created: "2024-12-28"
 *	ASCII	=	American Standard Code Information Interchange (defined binary values to display letters and special characters)
 *	ASG	=	Auto Scaling Group	(AWS)
 *	ASG	=	Application Security Group (Azure)
-*	ASI	=	Artificial Super-Intelligence (sentient prioritizing of its own needs and desires)
+*	ASI	=	Artificial Super-Intelligence (sentient AI prioritizing of its own needs and desires)
 *	ASIC	=	Application-Specific Integrated Circuit
 *	ASIM	=	Advanced Security Information Model (schemas by Microsoft Sentinel)
 *	ASM	=	AWS Secrets Manager	(Amazon)
