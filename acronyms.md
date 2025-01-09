@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-04"
-lastchange: "v015 + DST :acronyms.md"
+date: "2025-01-09"
+lastchange: "v016 + IPFS :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -644,6 +644,7 @@ created: "2024-12-28"
 *	IOT	=	Internet of Things
 *	IP	=	Internet Protocol
 *	IPAM	=	IP Address Manager	(AWS feature that manages CIDR ranges)
+* IPFS  = InterPlanetary File System (a decentralized, peer-to-peer file storage protocol to store and access content without a central server)
 *	IPC	=	Inter-Process Communication
 *	IPE	=	Information Produced by the Entity
 *	IPS	=	Intrusion Protection System	(detect or prevent brute force & other attacks on security)
