@@ -1,7 +1,7 @@
 ---
 layout: post
-lastchange: "v005 + Persians :history.md"
-date: "2024-12-26"
+date: "2025-01-14"
+lastchange: "v007 + eclipse :history.md"
 file: "history"
 title: "(Dates in) History"
 excerpt: "The most significant events in world history, in chronological order."
@@ -313,7 +313,7 @@ Additional information:
 
 ## Early History
 
-<br /> <strong>Jan 1, 4712 BC </strong>- First Julian Date (Epoch) on the Gregorian Calendar.
+<br /> <strong>Jan 1, 4713 BC</strong> (-4712 CE) - First Julian Date (Epoch) on the Gregorian Calendar, as proposed in 1583 by Joseph Justus Scaliger, who named the epoch after his father's name. Complex formulas are needed to convert between the two due to its use of the 19-year Metonic cycle (lunar phase cycle). The Julian calendar added one extra day every four years, but this led to an overcorrection of about 11 minutes per year (one day every 128 years). The Gregorian calendar introduced a more accurate calculation of leap years by omitting three leap years every 400 years. The change created a period of about 350 years (1582-1920s) where two different dating systems were in use simultaneously. Historians used notations like O.S. (Old Style) for Julian dates and N.S. (New Style) for Gregorian dates.
 <br /> 3913 Seth born when Adam was 130 years old (<a target="bible" href="https://www.blueletterbible.org/kjv/gen/5/3/s_5003">Genesis 5:3</a>)
 <br /> 3808 Enosh born when Seth was 105 (<a target="bible" href="https://www.blueletterbible.org/kjv/gen/5/6/s_5006">Genesis 5:6</a>)
 <br /> <strong> Oct 7, 3761 BC</strong>, Hebrew (lunar) calendar starts on a New Moon (<em>Molad</em>)
@@ -345,7 +345,7 @@ fire and brimstone" (<a target="_blank" href="https://www.blueletterbible.org/kj
 	lower solar activity, which causes drought and thus famine in the Near East.
 <br /> 2877 Joseph and family in Egypt (during its <a target="_blank" href="https://en.wikipedia.org/wiki/Second_Dynasty_of_Egypt">Second Dynasty</a>)
 
-<br /> 2646 <a target="_blank" href="https://www.youtube.com/watch?v=2bjG1lm2Rq4">(by Carbon 14 dating)</a> &quot;Step&quot; pyramid of <a target="_blank" href="https://www.wikiwand.com/en/Pyramid_of_Djoser">Djoser (Zoser)</a> built at Saqqara, Egypt. 
+<br /> 2646 <a target="_blank" href="https://www.youtube.com/watch?v=2bjG1lm2Rq4">(by Carbon 14 dating)</a> &quot;Step&quot; pyramid of <a target="_blank" href="https://www.wikiwand.com/en/Pyramid_of_Djoser">Djoser (Zoser)</a> built at Saqqara, Egypt.
 <br /> 2590 Great Pyramid of Khufu at Giza begins to be built.
 <br /> 2334 Semitic Akkadian Sargon the Great from the North conquers Summarians in the South (Mesopotamia) above the Red Sea, forming the first empire and standing army (armed with bows on horses)
 <br /> 2234 [Usher] The races are dispersed with different languages after the <a target="_blank" href="https://answersingenesis.org/tower-of-babel/was-the-dispersion-at-babel-a-real-event/">Tower of Babel</a> in Iraq (<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/10/10/s_10010">Genesis 10:10,11</a>;<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/11/1/s_11001">11:1-9</a>) during the Bronze Age of Human Government
@@ -381,12 +381,12 @@ the "New Chronology" proposed in the 1990s, which lowers New Kingdom dates by as
 ? Egyptian pharaoh Phiops II subjugates Isrealistes.
 <br /> Moses rescued from the Nile [not by Egyptian princess Hatshepsut 1503-1482 ?]
 <br /> PROPOSED: <a target="_blank" href="http://www.biblicalchronologist.org/qa/adb/millennium.htm">
-2447(+/-12)</a> (during reign of Egyptian Menkaure, 1480 years after the Promise was given Abram, per modern reading of <a target="_blank" href="https://www.blueletterbible.org/kjv/1ki/6/1/s_297001">1Kings 6:1</a>) 
+2447(+/-12)</a> (during reign of Egyptian Menkaure, 1480 years after the Promise was given Abram, per modern reading of <a target="_blank" href="https://www.blueletterbible.org/kjv/1ki/6/1/s_297001">1Kings 6:1</a>)
 <br /> 2152 BC The 6th Dynasty of Egypt's Old Kingdom under Pharoah Merenre Antyemsaf II
 	(Greek name Niocris) collapses (putting Egypt into Dynasty 7 of the First Intermediate period),
 	by parting and closing of the <em>Yam suth</em> (modern day <em>Lak Yahablah</em> - the Red Sea).
 <br /> 1446 <a target="_blank" href="https://www.youtube.com/watch?v=2JusQxiTXnE">VIDEO</a>: (based on <a target="_blank" href="https://www.blueletterbible.org/kjv/1ki/6/1/s_297001">1Kings 6:1</a> "In the 480th year after the Israelites came out of Egypt), in the 4th year of Solomon's reign") in 966 BC. That's during the reign of Ahmenhotep II (1450-1425 BC) during the 18th Dynasty of Egypt.
-in the jubilee of jubilees (50 x 50 years or 2500 years after the fall of Adam) 
+in the jubilee of jubilees (50 x 50 years or 2500 years after the fall of Adam)
 <br />1406 BC Moses leads Exodus from Egypt (<a target="_blank" href="https://www.blueletterbible.org/kjv/exo/14/23/s_64023">Exodus 14:23,27-30</a>). Alt:
 
 <br /> Ten commandments given <em>apodictic</em> Normative, the beginning of Judaism
@@ -473,6 +473,7 @@ seiges Meggiddo</a> (among 350 cities) during his 1504-1450 reign of Egypt's 18t
 <a target="bible" href="https://www.blueletterbible.org/kjv/mat/12/38/s_941038">Matthew 12:38</a>)
 <br /> 776 Greeks hold first Olympics in town of Olympia &#8212; the first year of the Greek Calendar.
 <br /> Northern Prophets: 760-750 Amos, 753 Hosea (harlot wife Gomer)
+<br /> 763 June 15 <a target="_blank" href="https://www.youtube.com/watch?v=3DJtVlLRMGw">VIDEO</a>: <a target="_blank" href="https://www.blueletterbible.org/kjv/isa/13/10/s_692010">Solar eclipse</a> in Nineveh (North of Bagdad Iraq) noted on cuniform tablets under Assyrian king Ashurbanipal provides a way to corroborate (using <a target="_blank" href="https://www.alcyone.de/alcyone_eclipse_calculator.html">Eclipse Emphemeris</a>) <a href="https://www.blueletterbible.org/kjv/jon/1/1-2/s_890001">Jonah</a> and correlate <a href="2 Kings 18:13">Sennacherib's captue of Jerusalem on 701 BC</a> and Exodus at 1446 BC.
 <br /> 753 Foundation of Rome.
 <br /> Southern Jotham &amp; Ahaz & Hezekiah: 742 Micah, 740-681 Isaiah
 <br /> 731 Ukinzer (a Chaldean) becomes king of Babylon (modern-day Iraq) to begin Chaldean rule.
@@ -1365,3 +1366,5 @@ the "one religion" in the holy muslim land of Mecca and Medina.
 ## References
 
 Those who receive God's seal upon their foreheads are "God's commandment-keeping people." "Here is the patience of the saints: here are they that keep the commandments of God, and the faith of Jesus" (Rev 14:12; Testimonies, 6:15).
+
+Jack Finegan, Handbook of Biblical Chronology, Revised Edition, Hendrickson, 1998.
