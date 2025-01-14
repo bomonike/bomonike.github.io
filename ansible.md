@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-01-13"
-lastchange: "v001 + from wilsonmar.github.io :ansible.md"
+lastchange: "v002 + AI Assistant :ansible.md"
 title: "Ansible (for Configuraton)"
 excerpt: "This robot butler is simple, but not stupid"
 tags: [Ansible, devops, ci, setup]
@@ -21,32 +21,38 @@ The object of this tutorial is provide deep but succinct commentary (without mar
 {% include whatever.html %}
 {% include _toc.html %}
 
-Below is a map of my Ansible tour (TOBE: animated video), in which I cover one concept at a time:
+## Why Ansible?
 
-The objective of Ansible is to configure software within <strong>host nodes</strong> securely, but also quickly and easily.
-
-(Ansible is not a configuration management system like Jenkins.
-Ansible is an infrastructure management system.)
-
-The name <strong>"ansible"</strong> is popularized by the science-fiction book and <a target="_blank" href="https://en.wikipedia.org/wiki/Ender's_Game_%28film%29"> movie "Ender's Game"</a>
-which uses what it calls an "ansible" to communicate, in real-time, with <strong>many</strong> ships at once, to many galaxies far away.
-
-`ansible` is one of the <a href="#Executables">command-line executables</a> installed by <strong>Python</strong> when the <strong>Ansible (Core) Control Server</strong> is installed. The word "Core" is there because it is a dependency of the <strong>Ansible Tower</strong> which provides an API and GUI front-end to the open-source Control Server. It has a <strong>command line interface</strong> and web-based interface for managing Ansible projects using role-based access control, job scheduling, and real-time job status updates. For small to medium-sized environments.
-
-* The <a target="_blank" href="https://docs.ansible.com/#project">Ansible Project</a> (Ansible Core) was identified as, among the hundreds of thousands of repositories in GitHub, <a target="_blank" href="https://octoverse.github.com/projects">#7 most contributors and most discussed projects</a> (in front of even Kubernetes, npm). PROTIP: This means there will be changes ahead.
-
+Ansible is not a configuration management system like Jenkins.<br />
+Ansible is an infrastructure management system like Terraform, Puppet, Chef, Salt.
+The <a target="_blank" href="https://docs.ansible.com/#project">Ansible Project (https://docs.ansible.com/)</a> (Ansible Core) was identified as, among the hundreds of thousands of repositories in GitHub, <a target="_blank" href="https://octoverse.github.com/projects">#7 most contributors and most discussed projects</a> (in front of even Kubernetes, npm).
+   <ul>
    Mentions in Reddit Hacker News (HN) forum show higher uptake in Ansible vs. other configuration management solutions:
 
    ![ansible-hn-mentions_2015-222376](https://user-images.githubusercontent.com/300046/58876022-2e2fbc80-868a-11e9-9a7d-7f3cd4bcf08f.png)
+   </ul>
 
-The <strong>ansible-galaxay</strong> command retrieves from the <a target="_blank" href="https://galaxy.ansible.com/">https://galaxy.ansible.com/ Ansible Galaxy</a> website, which is a community-submitted repository of <a href="#Roles">Roles</a> that define the installation of many categories of software (database, etc).
+BTW The name <strong>"ansible"</strong> is popularized by the science-fiction book and <a target="_blank" href="https://en.wikipedia.org/wiki/Ender's_Game_%28film%29"> movie "Ender's Game"</a>
+which uses what it calls an "ansible" to communicate, in real-time, with <strong>many</strong> ships at once, to many galaxies far away.
+
+The objective of building an Ansible Managed Environment is to configure software of many <strong>host nodes</strong> using "declarative" <a href="#Playbooks">YAML code within "playbooks"</a> instead of <strong>manual configuration</strong> on individual nodes.
+
+When the ansible program is invoked, it delegates work to <a href="#Modules">various Modules</a>. Additional custom modules can be defined,
+such as for building assets within AWS using CloudFormation as well as other clouds (Digital Ocean, Linode, Rackspace, etc.).
+
+
+`ansible` is one of the <a href="#Executables">command-line executables</a> installed by <strong>Python</strong> when the <strong>Ansible (Core) Control Server</strong> is installed.
+
+The Ansible Core only contains core (essential) modules. It's legacy "Ansible Engine" in RHEL 8.5 and earlierincludes 3367 modules by default.
+
+Ansible 2.13 "Core" in RHEL 8.6 and later installs additional modules through collections from 
+the <strong>ansible-galaxay</strong> at <a target="_blank" href="https://galaxy.ansible.com/">https://galaxy.ansible.com</a> website, which is a community-submitted repository of <a href="#Roles">Roles</a> that define the installation of many categories of software (database, etc).
 
 The website shows a "quality rating" based on runs of the <strong>ansible-lint</strong> program which validate changes. The program used on by the website can be run on your server after being installed by pip to validate changes after downloading and editing.
 
 Files in the Galaxy are versioned in  a <strong>GitHub repository</strong> files can also be pulled by the <strong>ansible-pull</strong> program which (like Git) can pull other files such as the <strong>inventory</strong> of host nodes to be populated. Inventory files are managed by the <strong>ansible-inventory</strong> executable. Among downloads can be (dyn) programs that act like a static inventory file, but dynamically retrieve inventory data.
 
-When the ansible program is invoked, it delegates work to <a href="#Modules">various Modules</a>. Additional custom modules can be defined,
-such as for building assets within AWS using CloudFormation as well as other clouds (Digital Ocean, Linode, Rackspace, etc.).
+is a dependency of the <strong>Ansible Tower</strong> which provides an API and GUI front-end to the open-source Control Server. It has a <strong>command line interface</strong> and web-based interface for managing Ansible projects using role-based access control, job scheduling, and real-time job status updates. For small to medium-sized environments.
 
 ## SSH
 
@@ -105,7 +111,7 @@ Recap:
 
 <hr />
 
-## Background
+## Owned by Red Hat
 
 The <a target="_blank" href="https://www.twitter.com/ansible">@ansible Twitter account</a> is titled "Red Hat Ansible" because it's initiating author,
 <a target="_blank" href="http://michaeldehaan.net/">
@@ -158,6 +164,87 @@ Ansible Tower makes use of a PostgreSQL database, either locally, remotely, or i
 
 Red Hat's <strong>Ansible Automation Platform</strong> includes Ansible Tower as one of its components
 to provide a comprehensive suite for enterprise-level automation of large-scale operations and complex environments (thousands of nodes). It provides an Automation mesh for distributed deployments with high availability through clustering and performance monitoring across clusters.
+
+### Ansible Lightspeed
+
+Ansible Lightspeed can do:
+1. Single and multitask generation
+1. Generate Playbooks
+1. Explain Playbooks
+1. Content source matching
+1. Content maintenance and modernization
+1. Monitoring through Red Hat Hybrid Cloud Console Admin Dashboard
+
+To use GenAI services to make it easier to create and manage Ansible playbooks,
+add to Ansible Lightspeed IBM Watsonx Code Assistant's training models to generate code.
+Ansible is one of 100 languages supported by WatsonX Code Assistant.
+Lightspeed can use Ansible-specific custom IBM Watsonx Granite LLM models.
+Assistant tools to make it easier to create and manage Ansible playbooks.
+
+Ansible Lightspeed is a paid VS Code extension add-on for Ansible Automation Platform.
+A separate license of Ansible Lightspeed and Ansible Automation Platform (AAP).
+A free 90-days license of Lightspeed "Cloud Pak for Data" is available. 
+After that, it's a minimum of $ 1,500.
+A developer license option to use AAP doesn't count as a valid license for AAP + Lightspeed.
+
+Ansible Lightspeed is offered on both on-premises and in a cloud hosted by IBM.
+
+1. Request a trial for Ansible Automation Platform (not through developers.redhat.com)
+   ```
+   https://cloud.ibm.com/catalog/services/ibm-watsonx-code-assistant
+   ```
+
+1. install:
+   ```
+   sudo dnf install python3-pip ansible-core
+   ```
+   <a target="_blank" href="https://github.com/monfresh/laptop">https://github.com/monfresh/laptop</a> my personal playbooks and scripts to install a laptop from scratch including some dotfiles. Based on Fedora 27. Not idempotent.
+
+   <a target="_blank" href="https://github.com/vaskas/laptop-ansible">https://github.com/vaskas/laptop-ansible</a>
+   for Fedora 26
+
+1. install the Ansible development package: 
+   ```python3 -m pip install ansible-dev-tools --no-input
+   ```
+1. Download VS Code from visualstudio.com
+1. Run the RPM installer and start VS Code
+1. From the left side, open the Extension option
+1. Search for the Ansible extension and click Install
+1. This adds an Ansible icon in the left toolbar. Click it
+1. Click the Link "Create Ansible environment" in the upper left corner
+
+   From a terminal, create a directory: mkdir ansible
+1. In VS Code, select File > Open Folder and open the ansible directory you
+just created
+1. Open a new file in this directory and start typing YAML code
+1. In Ansible Development Tools, select Settings and have a look at the
+settings that are available
+
+1. In the VS Code plugin, select Settings > Ansible Lightspeed
+1. Ensure that all options are selected
+1. In the Ansible Lightspeed settings, click Connect. VS Code shows a pop-up
+where you need to allow the extension to sign in.
+1. Check your browser if no pop-up shows!
+1. You'll be connected, once you use it for the first time, you'll be prompted
+to request a 90 days trial license
+
+1. Create a yml file, and use name: for the task that you want to create
+   - The argument to name: should be a complete description of what you
+want the task to do
+   - name: install postgresql-server
+1. Press Enter to generate the task, which by default will be all grayed-out
+1. Press Tab to convert the commented-out task to real code
+1. Press Escape to ignore the code suggestion
+1. To create a multitask request, start the request with a #, separate the
+requests with an &, and do NOT include - name:
+1. # install postgresql-server & run postgresql-setup command
+1. See the Lightspeed plugin working for about 5 seconds each task.
+   Once done, code will be generated
+
+   View Lightspeed Sources:
+1. Select View > Open View
+1. Scroll down to see Lightspeed training matchs
+1. A new pane opens, where sources can be clicked open to get more details
 
 <hr />
 
@@ -1420,14 +1507,6 @@ Gwyn Price:
 * <a target="_blank" href="https://www.youtube.com/watch?v=OSkGaxR1yds">
   OpenStack Ansible Deployment (OSAD)</a>
 
-## Ansible on laptops
-
-<a target="_blank" href="https://github.com/monfresh/laptop">https://github.com/monfresh/laptop</a> my personal playbooks and scripts to install a laptop from scratch including some dotfiles. Based on Fedora 27. Not idempotent.
-
-<a target="_blank" href="https://github.com/vaskas/laptop-ansible">https://github.com/vaskas/laptop-ansible</a>
-for Fedora 26
-
-
 ## Misc
 
 * From 2013 until October 11, 2017, Ansible Weekly newsletter at <a target="_blank" href="https://hvops.com/news/ansible/">https://hvops.com/news/ansible</a>
@@ -1444,6 +1523,11 @@ The diagram is based on <a target="_blank" href="https://www.ansible.com/how-ans
 
 * https://www.udemy.com/course/valaxy-devops/?referralCode=8147A5CF4C8C7D9E253F
 "100% Hands-on labs on how to create DevOps CI/CD pipelines using Git, Jenkins, Ansible, Docker and Kubernetes on AWS"</a> also on <a target="_blank" href="https://www.youtube.com/channel/UC_evcfxhjjui5hChhLE08tQ">YOUTUBE</a>
+
+## Resources
+
+https://learning.oreilly.com/course/ansible-from-basics/9780137894949/
+
 
 ## More on DevOps #
 
