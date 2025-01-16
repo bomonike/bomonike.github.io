@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-13"
-lastchange: "v002 + AI Assistant :ansible.md"
+date: "2025-01-15"
+lastchange: "v004 + core vs :ansible.md"
 title: "Ansible (for Configuraton)"
 excerpt: "This robot butler is simple, but not stupid"
 tags: [Ansible, devops, ci, setup]
@@ -40,12 +40,11 @@ The objective of building an Ansible Managed Environment is to configure softwar
 When the ansible program is invoked, it delegates work to <a href="#Modules">various Modules</a>. Additional custom modules can be defined,
 such as for building assets within AWS using CloudFormation as well as other clouds (Digital Ocean, Linode, Rackspace, etc.).
 
-
 `ansible` is one of the <a href="#Executables">command-line executables</a> installed by <strong>Python</strong> when the <strong>Ansible (Core) Control Server</strong> is installed.
 
-The Ansible Core only contains core (essential) modules. It's legacy "Ansible Engine" in RHEL 8.5 and earlierincludes 3367 modules by default.
+"Ansible Core" since version 2.13 only contains core (essential) modules. It's legacy "Ansible Engine" in RHEL 8.5 and earlier includes 3367 modules by default.
 
-Ansible 2.13 "Core" in RHEL 8.6 and later installs additional modules through collections from 
+"Core" in RHEL 8.6 and later installs additional modules through collections from
 the <strong>ansible-galaxay</strong> at <a target="_blank" href="https://galaxy.ansible.com/">https://galaxy.ansible.com</a> website, which is a community-submitted repository of <a href="#Roles">Roles</a> that define the installation of many categories of software (database, etc).
 
 The website shows a "quality rating" based on runs of the <strong>ansible-lint</strong> program which validate changes. The program used on by the website can be run on your server after being installed by pip to validate changes after downloading and editing.
@@ -183,7 +182,7 @@ Assistant tools to make it easier to create and manage Ansible playbooks.
 
 Ansible Lightspeed is a paid VS Code extension add-on for Ansible Automation Platform.
 A separate license of Ansible Lightspeed and Ansible Automation Platform (AAP).
-A free 90-days license of Lightspeed "Cloud Pak for Data" is available. 
+A free 90-days license of Lightspeed "Cloud Pak for Data" is available.
 After that, it's a minimum of $ 1,500.
 A developer license option to use AAP doesn't count as a valid license for AAP + Lightspeed.
 
@@ -203,7 +202,7 @@ Ansible Lightspeed is offered on both on-premises and in a cloud hosted by IBM.
    <a target="_blank" href="https://github.com/vaskas/laptop-ansible">https://github.com/vaskas/laptop-ansible</a>
    for Fedora 26
 
-1. install the Ansible development package: 
+1. install the Ansible development package:
    ```python3 -m pip install ansible-dev-tools --no-input
    ```
 1. Download VS Code from visualstudio.com
@@ -296,10 +295,31 @@ Mercifully, Tower is not a significant requirement in the exam.
 
 <hr />
 
-
 <a name="InstallAnsible"></a>
 
 ## Install Ansible
+
+Due to the transition from Ansible to Ansible Core:
+
+* RHEL 8:
+   ```
+   sudo subscription-manager repos --enable=ansible-2-for-rhel-8-x86_64-rpms
+   sudo yum install ansible
+   ```
+* RHEL 9:
+   ```
+   sudo subscription-manager repos --enable=rhel-9-for-x86_64-
+appstream-rpms
+   sudo dnf install ansible-core
+   ```
+* CentOS Stream / Fedora:
+   ```
+   sudo dnf install ansible-core
+   ```
+* Ubuntu:
+   ```
+   sudo apt install ansible-core
+   ```
 
 1. Know what version may be installed already:
 
@@ -1527,6 +1547,8 @@ The diagram is based on <a target="_blank" href="https://www.ansible.com/how-ans
 ## Resources
 
 https://learning.oreilly.com/course/ansible-from-basics/9780137894949/
+
+https://github.com/sandervanvugt/ansiblefundamentals
 
 
 ## More on DevOps #
