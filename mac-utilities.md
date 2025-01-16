@@ -1,6 +1,7 @@
 ---
 layout: post
-date: "2024-07-06"
+date: "2025-01-15"
+lastchange: "v021 :mac-utilities.md"
 file: "mac-utilities"
 title: "MacOS (Command-Line) Utilities"
 excerpt: "kill, grep, sed, regex, cron, etc. vs. Linux commands"
@@ -54,7 +55,11 @@ macOS provides a GUI to manage system configuration settings.
 
    Alternately, you can also open the dialog with this command:
 
-   <pre><strong>open /Applications/System\ Preferences.app</strong></pre>
+   <pre><strong>open "/Applications/System\ Preferences.app"</strong></pre>
+
+   On newer macOS versions:
+
+   <pre><strong>open "/Applications/System\ Settings.app"</strong></pre>
 
 BTW, instead of typing out the whole line above, you can simply type "prefs" if you use a text editor to add this line in the ~/.bash_profile file:
 
@@ -77,7 +82,21 @@ Instead of examining various Linux config files (/etc/\*elease, /proc/meminfo fo
 
 ## You hot?
 
-1. Get CPU thermal data on MacOS
+Overheating (and fan noise) was a problem with older Intel Macs. Newer Apple Silicon macs fans and overheating are not as much a problem.
+
+1. If running CLI on an Intel Macs, use <a target="_blank" href="https://www.digitaltrends.com/computing/how-to-check-mac-temperature/#dt-heading-get-a-temperature-snapshot-for-intel-macs-with-terminal">this</a> to display the CPU temperature. Use this built-in command to display the CPU temperature in Cetigrade, then convert to Fahrenheit if the user wants:
+
+   ```
+   # if on an Intel mac:
+      centigrade=$(system_profiler SPHardwareDataType | grep -o 'CPU die temperature: [0-9]*' | cut -d ' ' -f 4)
+      echo $((centigrade*9/5+32))
+      echo "degrees Fahrenheit"
+      echo "get temp sudo powermetrics --samplers smc |grep -i
+   ```
+
+   Alternatively, install app ...
+
+   BLAH: The followng command doesn't work:
 
    <pre><strong>sysctl machdep.xcpm.cpu_thermal_level</strong></pre>
 
