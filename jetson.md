@@ -1,7 +1,7 @@
 ---
 layout: post
 url: https://bomonike.github.io/jetson
-date: "2024-12-28"
+date: "2025-01-15"
 lastchange: "v006 + certs :jetson.md"
 file: "jetson"
 title: "Jetson AI"
@@ -24,6 +24,8 @@ From https://developer.nvidia.com/embedded/develop/software
 
 <a target="_blank" href="https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/index.html">
 
+NVIDIA has a <a target="_blank" href="https://learn.nvidia.com/en-us/training/educator-programs">program for training and certifying university educators</a> and <a target="_blank" href="https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/index.html">certifying Jetson AGX Orin developers</a>.
+
 For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $135 for a 2-year validity period:
 
 1. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/">NVIDIA-Certified Associate: Generative AI and LLMs (NCA-GENL)</a>
@@ -34,7 +36,7 @@ For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $1
    14% Data Analysis and Visualization<br />
    10% Trustworthy AI
 
-   * <a target="_blank" href="https://nvdam.widen.net/s/rpdddpdgtc/nvt-certification-exam-study-guide-gen-ai-llm-3262644-r7-web">Exam Guide</a>. 
+   * <a target="_blank" href="https://nvdam.widen.net/s/rpdddpdgtc/nvt-certification-exam-study-guide-gen-ai-llm-3262644-r7-web">Exam Guide</a>.
    * <a target="_blank" href="https://courses.nvidia.com/courses/course-v1:DLI+S-FX-07+V1/">$FREE Generative AI Explained</a>.
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1">$90 Getting Started With Deep Learning</a>
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V1">$90 Accelerating End-to-End Data Science Workflows</a>.
@@ -50,7 +52,7 @@ For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $1
    * <a target="_blank" href="https://www.nvidia.com/en-us/training/instructor-led-workshops/efficient-large-language-model-customization/">8-hour $500 Efficient Large Language Model (LLM) Customization</a>.
 
 
-2. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-multimodal-associate/">NVIDIA-Certified Associate: Generative AI Multimodal (NCA-GENM)</a> 
+2. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-multimodal-associate/">NVIDIA-Certified Associate: Generative AI Multimodal (NCA-GENM)</a>
    25% Experimentation<br />
    20% Core Machine Learning and AI Knowledge<br />
    15% Multimodel Data<br />
@@ -69,16 +71,16 @@ For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $1
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-FX-09+V1">$500 Rapid Application Development with Large Lanaguage Models</a>
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-03+V1">$30 Deploying a Model for Inference At Production Scale</a>
 
- 
+
    * <a target="_blank" href="https://www.nvidia.com/en-us/on-demand/session/gtcspring23-S51531/?ncid=em-even-124008-vt33">High-Resolution Image Synthesis via Two-Stage Generative Models</a> (on-demand video, 35 minutes)
-   * <a target="_blank" href="https://www.nvidia.com/en-us/on-demand/session/gtcspring23-S51531/?ncid=em-even-124008-vt33">Accelerated Creative AI—Using NVIDIA-Optimized Image Generation for Media and Entertainment</a​ (on-demand webinar, 1 hour) 
-   * <a target="_blank" href="https://developer.nvidia.com/blog/building-lifelike-digital-avatars-with-nvidia-ace-microservices/">Building Lifelike Digital Avatars With NVIDIA ACE Microservices​</a> (blog, 15 minutes) 
+   * <a target="_blank" href="https://www.nvidia.com/en-us/on-demand/session/gtcspring23-S51531/?ncid=em-even-124008-vt33">Accelerated Creative AI—Using NVIDIA-Optimized Image Generation for Media and Entertainment</a​ (on-demand webinar, 1 hour)
+   * <a target="_blank" href="https://developer.nvidia.com/blog/building-lifelike-digital-avatars-with-nvidia-ace-microservices/">Building Lifelike Digital Avatars With NVIDIA ACE Microservices​</a> (blog, 15 minutes)
    * <a target="_blank" href="https://www.nvidia.com/en-us/on-demand/session/gtcspring23-S52095/?ncid=em-even-124008-vt33">The Future of Generative AI for Content Creation</a> (on-demand video, 35 minutes) ​
 
 3. <a target="_blank" href="https://developer.nvidia.com/certified-associate-ai-infrastructure-and-operations">NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO)</a>
-   validates fundamental skills in AI infrastructure and operations learned from <a target="_blank" href="https://nvdam.widen.net/s/9hxmprb8gq/nvt-certification-exam-study-guide-aiio-3262763-r1-web">Study Guide</a> 
+   validates fundamental skills in AI infrastructure and operations learned from <a target="_blank" href="https://nvdam.widen.net/s/9hxmprb8gq/nvt-certification-exam-study-guide-aiio-3262763-r1-web">Study Guide</a>
 
-   15% Troubleshoot and Optimize	
+   15% Troubleshoot and Optimize
    * Identify and troubleshoot hardware faults (e.g., GPU, fan, network card)
    * Identify faulty cards, GPUs, power supplies
    * Replace faulty cards, GPUs, power supplies
@@ -119,7 +121,7 @@ For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $1
 
 3. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/">NVIDIA-Certified Professional: AI Operations (NCP-AIO)</a> has 2-3 year preprequisite. For $400, answer 50 questions in 90-minutes to validate your ability to monitor, troubleshoot, and optimize AI infrastructure by NVIDIA.
 
-   36% Administration	
+   36% Administration
    * Administer Fleet Command
    * Administer Slurm cluster
    * Understand data center architecture for AI workloads
@@ -139,7 +141,7 @@ For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $1
    20% Troubleshooting and Optimization
    * Troubleshoot docker
    * Troubleshoot the fabric manager service for NVIDIA NVlink™/NVswitch™ systems
-   * Troubleshoot BCM 
+   * Troubleshoot BCM
    * Troubleshoot Magnum IO components
    * Troubleshoot storage performance
 
@@ -157,13 +159,13 @@ For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $1
 
 https://developer.nvidia.com/embedded/jetson-modules
 
-All Jetson 
+All Jetson
 https://developer.nvidia.com/buy-jetson?product=all&location=US
 
 Developer Kits:
 
 * Jetson Orin Nano (8GB LPDDR5 RAM) 1024-core ARM CPU with 32 Tensor Cores
-   * $249 USD/$369 Euros from https://www.amazon.com/dp/B0BZJTQ5YP?th=1 has Athlon 6-core ARM CPU 
+   * $249 USD/$369 Euros from https://www.amazon.com/dp/B0BZJTQ5YP?th=1 has Athlon 6-core ARM CPU
    * https://www.arrow.com/en/products/945-13766-0000-000/nvidia
    * Datasheet https://static6.arrow.com/aropdfconversion/e5f9455a906908a5cd69a1b5f187a8e543689c1d/jetson-orin-datasheet-nano-developer-kit-3575392-r24.pdf
    * https://www.sparkfun.com/products/22098
@@ -174,17 +176,17 @@ Developer Kits:
    * $1,999 USD https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html
    https://www.youtube.com/watch?v=eFgsOeHMAW4
 
-* Jetson AGX Orin (32GB) 
+* Jetson AGX Orin (32GB)
    * 64 GB eMMC (+ NVMeSSD)
 
 <a target="_blank" href="https://forums.developer.nvidia.com/t/agx/65068/3">BTW</a>:
 AGX is "not an acronym persay, but it loosely means Autonomous machines accelerator technology."
 
 Others:
-* Jetson Orin NX (16GB) 
+* Jetson Orin NX (16GB)
 
 Previous :
-* NVIDIA® Jetson AGX Xavier was the first generation of Jetson AGX platform. 
+* NVIDIA® Jetson AGX Xavier was the first generation of Jetson AGX platform.
 Released in 2019 and is now EOL.
 
 ## Hardware Components
@@ -234,7 +236,7 @@ supports the Jetson Orin Nano Super Developer Kit, featuring [MAXN mode] which b
 
 
 * NVIDIA SDK Manager
-* NVIDIA Jetpack SDK - 
+* NVIDIA Jetpack SDK -
     https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-61/install-setup/index.html#upgradable-compute-stack
     https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-61/install-setup/index.html#package-management-tool
 * Jetson AI Stack
@@ -280,19 +282,19 @@ supports the Jetson Orin Nano Super Developer Kit, featuring [MAXN mode] which b
 * OpenUSD <a target="_blank" href="https://www.openusd.org">https://www.openusd.org</a> 3D scenes USD scene description data files on Stages, Hydra rendering architecture, Prims (primatives  hierarchy of objects from geometry, to materials, to lights and other organizational elements.), and Attributes https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-17+V1
    * https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-19+V1
 
-  * rendering backend, such as OpenGL or DirectX. 
+  * rendering backend, such as OpenGL or DirectX.
   OpenUSD is an open-source USD library for creating and working with USD scenes.
   * https://github.com/PixarAnimationStudios/OpenUSD
-  * HdStorm is included in OpenUSD 
+  * HdStorm is included in OpenUSD
 
 Each file format can be created through Python bindings in the OpenUSD library. When creating a new stage we can pass in a string to represent a file name that ends in .usdc, .usd, .usda, or .usdz.
 File Formats (USD, USDC, USDA and USDZ) are used for storing and exchanging various types of 3D scene data, including meshes, cameras, lights, and shaders.
 
-* A USD (.usd) file can have either ASCII or binary format. This switch can be done at any point without breaking references for debugging. 
+* A USD (.usd) file can have either ASCII or binary format. This switch can be done at any point without breaking references for debugging.
 
    Separate heavier data from more light weight data. When doing so, consider using .usdc and .usda explicitly to avoid obfuscation and create large .usda files unintentionally.
 
-* USDA (.usda) is a native file format used by OpenUSD to store and exchange 3D scene data. Its format is ASCII text and therefore "Human Readable" and editable. This makes USDA optimal for small files, such as a stage that is referencing external content. 
+* USDA (.usda) is a native file format used by OpenUSD to store and exchange 3D scene data. Its format is ASCII text and therefore "Human Readable" and editable. This makes USDA optimal for small files, such as a stage that is referencing external content.
 
 * USDC (.usdc) - the Crate Binary Format -- is a <strong>compressed binary</strong> file format designed to minimize load time and provide a more efficient representation of the scene data compared to the human-readable ASCII format (USDA). USDC is extremely efficient for numerically-heavy data, like geometry. Various compression techniques  reduce the file size and improve loading performance. It also employs memory mapping for faster file access and loading times.
 
@@ -323,7 +325,7 @@ YouTube
 ## Tutorials
 
 https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit
-The NVIDIA® Jetson Orin Nano™ Developer Kit empowers the development of AI-powered 
+The NVIDIA® Jetson Orin Nano™ Developer Kit empowers the development of AI-powered
 robots, smart drones, and intelligent cameras built on the Jetson Orin series.
 
 
@@ -340,8 +342,8 @@ https://www.jetson-ai-lab.com/tutorial-intro.html
 https://www.jetson-ai-lab.com/ros.html
 
 The 22GB for nano_llm:humble container image
-ros2_nanollm package provides ROS2 nodes for running optimized LLM's and VLM's 
-locally inside a container. These are built on NanoLLM and ROS2 Humble for 
+ros2_nanollm package provides ROS2 nodes for running optimized LLM's and VLM's
+locally inside a container. These are built on NanoLLM and ROS2 Humble for
 deploying generative AI models onboard your robot with Jetson.
 
 
@@ -351,7 +353,7 @@ deploying generative AI models onboard your robot with Jetson.
 
 1. Download Jetson Orin Nano Super Developer Kit
 https://developer.nvidia.com/downloads/embedded/L4T/r36_Release_v4.0/jp61-rev1-orin-nano-sd-card-image.zip
-    
+
 1. Download JETSON ORIN NANO DEVELOPER KIT SD card image from https://developer.nvidia.com/embedded/jetpack
 
  https://docs.nvidia.com/jetson/archives/r36.4/DeveloperGuide/SD/Security/FirmwareTPM.html
