@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-09"
-lastchange: "v016 + IPFS :acronyms.md"
+date: "2025-01-15"
+lastchange: "v017 + EEA, EEC :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -399,13 +399,6 @@ created: "2024-12-28"
 *	EAR	=	Export Administration Regulations	(US)
 * EBITDA = Earnings Before Interest, Taxes, Depreciation, and Amortization
 *	EBS	=	Elastic Block Storage (Amazon)
-*	ECDSA	=	Elliptic Curve Digital Signature Algorithm	(algorithm for signatures)
-*	ECU	=	Electronic Control Unit (Embedded system in autos)
-*	EDA	=	Exploratory Data Analysis (Microsoft MLOps)
-*	EDR	=	Endpoint Detection and Response (security)
-*	EDI	=	Electronic Data Interchange
-*	EE	=	Enterprise Edition
-*	EIN	=	Employer Identification Number
 *	EC2	=	Elastic Cloud Compute (AWS)
 *	ECR	=	Elastic Container Registry	(Amazon service)
 *	ECS	=	Elastic Container Service	(Amazon service)
@@ -414,6 +407,15 @@ created: "2024-12-28"
 *	EDM	=	External Dependency Management	(NIST)
 * EDPB = European Data Protection Board (EU GDPR)
 *	EDR	=	Endpoint Detection and Remediation
+*	ECDSA	=	Elliptic Curve Digital Signature Algorithm	(algorithm for signatures)
+*	ECU	=	Electronic Control Unit (Embedded system in autos)
+*	EDA	=	Exploratory Data Analysis (Microsoft MLOps)
+*	EDR	=	Endpoint Detection and Response (security)
+*	EDI	=	Electronic Data Interchange
+*	EE	=	Enterprise Edition
+*	EEA	=	European Economic Area
+*	EEC	=	European Economic Community
+*	EIN	=	Employer Identification Number
 * EFA	=	Elastic Fabric Adapter (AWS)
 * EFF	=	Electronic Frontier Foundation
 *	EFS	=	Elastic File System	(Amazon file storage service for EC2 instances)
