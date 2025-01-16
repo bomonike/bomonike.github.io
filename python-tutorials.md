@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-12-06"
-changes: "v028 + Mr P Solver on Youtube :python-tutorials.py"
+date: "2025-01-15"
+changes: "v031 + MySQL course :python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -1127,6 +1127,23 @@ PE1: Module 4. Functions, Tuples, Dictionaries, Exceptions, and Data Processing
 A sample Python test by Certiport purchased by Pearsonvue.
 Python-ITS303-sample-test.docx
 
+### Paul Deitel
+
+<a target="_blank" href="https://www.youtube.com/@PaulDeitel">@PaluDeitel YouTube channel</a>
+
+Paul's live class Intro to Python on OReilly.com references
+https://github.com/pdeitel/PythonFullThrottle
+* the online JupyterLab environment (explained at https://jupyterlab.readthedocs.io/en/latest/)
+* https://mybinder.org/v2/gh/pdeitel/PythonFullThrottle/master?urlpath=lab
+* Run as http://localhost:8888/lab to interact with notebooks downloaded on your local system after
+   ```docker run -p 8888:8888 -it --user root -v \
+   $HOME/jupyter/scipy-notebook:latest start.sh  jupyter lab
+   ```
+   (replace FULL_PATH_TO with the exact location on your system of the PythonFullThrottle folder containing my notebooks)
+
+They run Python locally using the Anaconda Python Distribution (currently Python 3.8) from
+https://www.anaconda.com/distribution/
+
 ### James Murphy @mCoding
 
 <a target="_blank" href="https://www.mCoding.io/">mCoding.com</a> by
@@ -1175,11 +1192,51 @@ He also offers "Learn Python, Data Science & AI" at  partner site
 <a target="_blank" href="https://www.mlnow.ai/">mlnow.ai</a>
 
 
-#### OReilly Live Training
+### OReilly Live Training
 
 Code for the O'Reilly Live Training, presented by Arianne Dee.
 https://github.com/ariannedee/python-data-structs
 
+
+### Boot.dev
+
+https://www.boot.dev/tracks/backend
+content is free under guest mode:
+1. Password managers
+1. Git
+1. Shells and Terminal
+1. Basic Python
+1. Object Oriented Programming
+1. Functional Programming
+1. Golang
+1. Rust?
+1. Algorithms
+1. Data Structures
+1. Memory Management
+1. SQL
+
+1. HTTPS clients & CIA Cybersecurity
+1. JavaScript & Node.js
+1. File Servers and CDNs
+1. HTTP Servers
+1. Docker
+1. CI/CD
+1. Kubernetes
+1. Pub/Sub
+1. Cryptography
+
+Build Projects:
+* Bookbot
+* Astroids
+* Static Site Generator
+* Maze Solver
+* Pokedex
+* Blog Aggregator
+* Capstone Project
+* Web Crawler
+
+For AI mentor, gameification, solutions, certificates of completion,
+use code <a target="_blank" href="https://sponsr.is/bootdev_travismedia">TRAVISMEDIA</a> get 25% off your first payment of $348/year ($29/month). 30-day money-back guarantee.
 
 ## Backend Ideas
 
@@ -1199,6 +1256,12 @@ https://www.linkedin.com/pulse/easy-way-learn-python-using-chatgpt-ajit-jaokar-s
 "An easy way to learn Python using ChatGPT" in his <a target="_blank" href="https://www.linkedin.com/pulse/easy-way-learn-python-using-chatgpt-ajit-jaokar-sd8ee/">LinkedIn</a> blog
 provides a Python program that uses ChatGPT to generate a Python program that can be used to create a database.
 Part 2 is at https://www.linkedin.com/pulse/easy-way-learn-python-coding-using-chatgpt-part-two-ajit-jaokar-5kagf/
+
+
+https://www.udemy.com/course/database-design-and-app-development-with-python-mysql/
+Database Design and App development with Python + MySQL (2.5 hours)
+-- Unlock the Power of Database-Driven Apps with MySQL and Python Integration
+
 
 ## More on Python
 
