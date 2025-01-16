@@ -1,10 +1,10 @@
 ---
 layout: post
 date: "2025-01-15"
-lastchange: "v001 + new qr :nft.md"
+lastchange: "v002 + toc :nft.md"
 file: "nft"
 title: "nft"
-excerpt: "Non-Fungible Tokens to use unalterable blockchains, Etherium crypto currency, and smart contracts (all web3 tech) to prove provenance and thus enable safer commerce without central cotrol by billionaires."
+excerpt: "Non-Fungible Tokens use unalterable blockchains, Etherium crypto currency, and smart contracts (all web3 tech) to prove provenance and thus enable safer to buy & sell digital art with distributed rather than central cotrol by billionaires."
 tags: [apple, mac, utilities]
 image:
 # feature: pic Giant-Swiss-Army-Knife-1900x500.jpg
@@ -13,21 +13,13 @@ image:
   creditlink:
 comments: true
 ---
+<a target="_blank" href="https://bomonike.github.io/nft"><img align="right" width="100" height="100" alt="nft.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/nft.png?raw=true" /></a>
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
-<a target="_blank" href="https://bomonike.github.io/nft"><img align="right" width="100" height="100" alt="nft.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/nft.png?raw=true" />
-This article describes how my Python program generates artwork, then publishes it on a marketplace based on cryptocurrency tied to NFT (Non-Fungible Token) blockchains.
+The NFT (Non-Fungible Token) ecosystem was created because copies of digital media can be easily duplicated.
 
-https://nftnow.com/features/the-creators-of-the-worlds-first-nft-talk-new-collection-web3-future/
-
-“The fraud in [the NFT space in] 2022 was pretty intense,” Kevin said.
-<a target="_blank" href="https://www.rollingstone.com/culture/culture-news/nfts-worthless-researchers-find-1234828767/" title="September 20, 2023">
-Rolling Stones reports that</a> many hyped NFT crypto assets are worthless.
-
-https://medium.com/@analyticsemergingindia/creating-non-fungible-tokens-nfts-with-python-and-blockchain-technology-6f172be6e1aa
-
-The NFT (Non-Fungible Token) ecosystem was created because copies of digital media can be easily duplicated. Digital media include music audio, video, or images in GIF/PNG/JPEG format.
+Digital media include music audio, video, or images in GIF/PNG/JPEG format.
 
 
 ## The first NFT trade
@@ -241,5 +233,11 @@ he token itself is hashed information stored on the blockchain. The digital item
 
 https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/
 
-https://opensea.io/
+https://nftnow.com/features/the-creators-of-the-worlds-first-nft-talk-new-collection-web3-future/
+
+“The fraud in [the NFT space in] 2022 was pretty intense,” Kevin said.
+<a target="_blank" href="https://www.rollingstone.com/culture/culture-news/nfts-worthless-researchers-find-1234828767/" title="September 20, 2023">
+Rolling Stones reports that</a> many hyped NFT crypto assets are worthless.
+
+https://medium.com/@analyticsemergingindia/creating-non-fungible-tokens-nfts-with-python-and-blockchain-technology-6f172be6e1aa
 
