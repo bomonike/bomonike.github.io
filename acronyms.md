@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-15"
-lastchange: "v017 + EEA, EEC :acronyms.md"
+date: "2025-01-17"
+lastchange: "v018 + MFS :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -231,6 +231,7 @@ created: "2024-12-28"
 *	CIDR	=	Classless Inter-Domain Routing (networking)
 *	CIEM	=	Cloud Infrastructure and Entitlement Management	(invented by Gartner)
 *	CIM	=	Common Information Model (Splunk)
+* CID = Content Identifier (hash from content used in web3 IPFS)
 *	CIP	=	Critical Infrastructure Protection (plan)
 *	CIRP	=	Cyber Incident Response Plan
 *	CIS	=	Center for Internet Security
@@ -775,6 +776,7 @@ created: "2024-12-28"
 *	MELT	=	Metrics + Errors + Traces + Logs (for Observability)
 * MES = Manufacturing Execution System (track material movement through the shop floor)
 *	MFA	=	Multi-Factor Authentication	(security)
+* MFS = Mutable File System (to read and write files on web3 IPFS)
 * MGT = Microsoft Graph Toolkit (to read the Outlook calendars and log of actions by each Microsoft user)
 *	MIG	=	Managed Instance Group (for autoscaling within Google Cloud)
 *	MIP	=	Microsoft Information Protection (sensitivity labels)
