@@ -1,10 +1,10 @@
 ---
 layout: post
-date: "2025-01-15"
-lastchange: "v002 + toc :nft.md"
+date: "2025-01-17"
+lastchange: "v003 + IPFS :nft.md"
 file: "nft"
 title: "nft"
-excerpt: "Non-Fungible Tokens use unalterable blockchains, Etherium crypto currency, and smart contracts (all web3 tech) to prove provenance and thus enable safer to buy & sell digital art with distributed rather than central cotrol by billionaires."
+excerpt: "Non-Fungible Tokens (NFTs) use unalterable blockchains, Etherium crypto currency, and smart contracts (all web3 tech) to prove provenance and thus enable safer to buy & sell digital art with distributed rather than central cotrol by billionaires."
 tags: [apple, mac, utilities]
 image:
 # feature: pic Giant-Swiss-Army-Knife-1900x500.jpg
@@ -142,11 +142,115 @@ NFTs extend the use of cryptographic hashes to provide a guarantee of true uniqu
 Because each NFT is unalterably unique within a blockchain, ownership can be confirmed.
 And changes in ownership can be recorded safely as well.
 
-NFTs also include <strong>metadata</strong> describing the asset it represents, plus a link (IPFS URL) to where the asset content is listed and stored. The IPFS (InterPlanetary File System) is a decentralized, peer-to-peer file storage protocol that allows users to store and access content without a central server. See https://docs.ipfs.tech/concepts/content-addressing/
+NFTs also include <strong>metadata</strong> describing the asset it represents, plus a link (<a href="#IPFS">IPFS</a> URL) to where the asset content is listed and stored.
 
 ??? Each block contains transaction data, a timestamp, and a link to the previous block, forming a chain.
 
 ??? information is recorded on the blockchain, it cannot be altered retroactively without altering all subsequent blocks. This makes blockchain ideal for ensuring trust in data integrity and authenticity.
+
+
+<a name="IPFS"></a>
+
+## IPFS
+
+The IPFS (InterPlanetary File System)</a> is a decentralized, peer-to-peer file storage protocol that enable users to store and access content without a central server. It's used by:
+
+   * https://d.tube a YouTube clone on its Avalon blockchain
+   * app.Uniswap.org blockchain app (URL uniswap.exchange) ENS contenthash for uniswap.eth for uniswap.eth.link
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_lNL1uU_I58">Filecoin</a>
+
+Notice that files take longer to load than HTTP servers.
+
+CAUTION: IPFS is not an anonymous system because it needs each user's IP address is visible when sharing files.
+
+Unlike HTTP which retrieve data based on a specific location defined by an IP address,
+IPFS, uses "content-based addressing" which references
+
+
+<img alt="ipfs-vs-http-383x222.png from eraser.io" width="383" height="222" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1737126071/ipfs-vs-http-383x222_dsvqgn.png" />
+
+This distribution of content means that, once added, files can't be deleted from it (by government censors).
+
+1. To create a temporary link to a file's content only on your local Machine, use this web page:
+
+   <a target="_blank" href="https://share.ipfs.io/#/">https://share.ipfs.io/#/</a>
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=s8i8qn8APR4&t=3m56s">VIDEO</a>
+   Notice at the upper-right corner is the "PeerID" - a long random number created for your computer.
+
+   It's referenced by the Kademlia Distributed Hash Table (DHT), the catalog of all addresses in IPFS.
+   IPNS uses both DHT and libp2p PubSub for publishing and resolving records, offering different trade-offs in terms of global consistency and speed.
+
+1. Drag and drop a file to create a IPFS CID (Content IDentifiers) such as:
+
+   <a target="_blank" href="https://share.ipfs.io/#/bafybeigiepgawww4qsdmwwv5m4zzsaaexwwnnsrfsi4xojfybri3qragju">https://share.ipfs.io/#/bafybeigiepgawww4qsdmwwv5m4zzsaaexwwnnsrfsi4xojfybri3qragju</a>
+
+   That URL link is made up of a SHA256 hash created based on the file's content.
+
+   CIDv0 is 46 characters long and always starts with "Qm". It uses a base 58-encoded multihash to create the content identifier.
+
+   CIDv1 adds to v0 multi-base prefix, CID version identifier, and multi-codec identifier.
+
+   So the content associated with a CID cannot be changed.
+
+   Change to content would require generation of a new CID. However, the changes can be linked together.
+
+1. Share the QR code so people can load the URL using a mobile phone.
+
+1. To make permanent address within the IPFS, "Set pinning" to a local node, which makes it available to be found and imported by others (peer nodes). Each download distributes the file in an additional node.
+   Thus, the more that a file is shared, the faster it becomes.
+
+   Publish to IPNS (InterPlanetary Name System), add your files or directory to IPFS using the command:
+
+   ```
+   MY_CONTENT_HASH=$( ipfs add -r "$MY_CONTENT_DIRECTORY" )
+   ipfs key gen "$MY_KEY_NAME"
+   ipfs name publish --key="$MY_KEY_NAME" /ipfs/"$MY_CONTENT_HASH"
+   ```
+
+  * IPNS records are typically republished every 4 hours by default to keep them alive in the network.
+
+1. To setup human-readable URLs to frequently shared files, use (set up) a dedicated <a target="_blank" href="https://www.youtube.com/watch?v=gc3-UzHtDzE">IPFS gateway</a>.
+
+1. NOTE: IPFS apps can communicate using the IPFS project's IPFS protocol:
+
+   <tt>ipns://k2k4r8nismm5mmgrox2fci816xvj4l4cudnuc55gkfoealjuiaexbsup#IPFS-Toolkit</tt>
+
+1. More advanced features like IPNS record management and IPFS PubSub functionality. When using IPNS over PubSub, the system calculates a topic name from the IPNS name and joins it by querying the DHT for the topic's provider records2.
+
+Among IPFS Awesome Tools https://awesome.ipfs.io/tools/
+* <a target="_blank" href="https://github.com/ipfs-shipyard/ipfs-share-files">without local node</a>
+* To browse whats in IPFS, use the Brave browser.
+* Helia implementaiton that runs on a browser
+* For simple one-to-one transfers, there is the <a target="_blank" href="https://github.com/psanford/wormhole-william/releases/">Magic Wormhole app</a>.
+* To upload files directly from your browser without installing IPFS, use web app IPFS Share (https://share.ipfs.io).
+* Install the <a target="_blank" href="https://github.com/ipfs/ipfs-desktop">IPFS Desktop app</a> to click the "Import" button in the GUI
+* In the command-line interface, use the <tt>ipfs add</tt> command to add files to IPFS.
+* hbarsuite smart nodes that are integrated with IPFS
+* <a target="_blank" href="https://docs.pinata.cloud/web3/ipfs-101/what-are-cids">Pinata.com</a> private IPFS Gateway & hubs
+
+Since file content is public by default, <strong>encrypt</strong> the file's content and share its key the usual secure way.
+
+Download as CAR
+
+Official media:
+   * https://docs.ipfs.tech
+   * https://docs.ipfs.tech/concepts/content-addressing/
+   * https://www.youtube.com/watch?v=zE_WSLbqqvo "Why IPFS?" (during IPFS Camp 2000) by Juan Benet on the https://www.youtube.com/@IPFSbot">IPFS YouTube channel</a>
+   * https://www.youtube.com/watch?v=18T1AlHVVPo "BASS 2024 01" Juan Benet by Stanford Blockchain Club
+References:
+   * https://www.youtube.com/watch?v=s8i8qn8APR4 "The Missing Piece of Web3" by EatTheBlocks
+   * https://www.youtube.com/watch?v=xOUz3ifDpR4 "Upload larger files on IPFS" by HarshLips Academy
+   * https://www.youtube.com/shorts/3rkIGZ4RxgQ
+   * https://www.youtube.com/watch?v=C3zrFkOacss What Is IPFS and How to Use It [Decentralized File Sharing]
+   * https://www.youtube.com/watch?v=TbagkanDeiU How IPFS Works in Under 5 Minutes by Data Slayer
+   * https://www.youtube.com/watch?v=z2judsbo-5E What is IPFS and How Does it Work? 5:03
+   * https://www.youtube.com/watch?v=_lNL1uU_I58 Introduction to IPFS & Filecoin ft. Konstantin Tkachuk
+   * https://www.youtube.com/watch?v=94HH5D23WWI IPFS: the future of data storage
+   * <a target="_blank" href="https://www.youtube.com/watch?v=PlvMGpQnqOM">VIDEO</a>: "The IPFS Protocol Explained with Examples - Welcome to the Decentralized Web" by Hussein Nasser
+   * https://www.youtube.com/watch?v=5Uj6uR3fp-U "IPFS: Interplanetary file storage!" by Simply Explained
+
+
 
 <a name="GasFees"></a>
 
@@ -197,6 +301,9 @@ Solidity is commonly used for this purpose.
 Smart contracts on Etherium nodes run the decentralized virtual environment
 <a target="_blank" href="https://ethereum.org/en/developers/docs/evm/">EVM (Etherium Virtual Machine)</a>.
 EVMs use "gas" to measure the computational effort required for operations, ensuring efficient resource allocation and network security.
+
+References:
+  * https://www.youtube.com/watch?v=V3xuiUpkcUc What Are Smart Contracts? Learn Solidity Programming for Blockchain Development by Xmps Market
 
 
 <a href="#CryptoWallet"></a>
