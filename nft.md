@@ -1,10 +1,10 @@
 ---
 layout: post
 date: "2025-01-17"
-lastchange: "v003 + IPFS :nft.md"
+lastchange: "v004 + Gateways :nft.md"
 file: "nft"
 title: "nft"
-excerpt: "Non-Fungible Tokens (NFTs) use unalterable blockchains, Etherium crypto currency, and smart contracts (all web3 tech) to prove provenance and thus enable safer to buy & sell digital art with distributed rather than central cotrol by billionaires."
+excerpt: "Non-Fungible Tokens (NFTs) use unalterable blockchains, Etherium crypto currency, and smart contracts (all web3 tech) to prove provenance and thus make it safer to buy & sell digital media in a distributed ecosystem not centrally controlled by billionaires."
 tags: [apple, mac, utilities]
 image:
 # feature: pic Giant-Swiss-Army-Knife-1900x500.jpg
@@ -169,7 +169,7 @@ IPFS, uses "content-based addressing" which references
 
 <img alt="ipfs-vs-http-383x222.png from eraser.io" width="383" height="222" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1737126071/ipfs-vs-http-383x222_dsvqgn.png" />
 
-This distribution of content means that, once added, files can't be deleted from it (by government censors).
+This distribution of content means that, once added, files can't be deleted from it (by government censors). immutable.
 
 1. To create a temporary link to a file's content only on your local Machine, use this web page:
 
@@ -197,6 +197,10 @@ This distribution of content means that, once added, files can't be deleted from
 
 1. Share the QR code so people can load the URL using a mobile phone.
 
+1. Gateway:
+
+   https://ipfs.github.io/public-gateway-checker/
+
 1. To make permanent address within the IPFS, "Set pinning" to a local node, which makes it available to be found and imported by others (peer nodes). Each download distributes the file in an additional node.
    Thus, the more that a file is shared, the faster it becomes.
 
@@ -222,12 +226,15 @@ Among IPFS Awesome Tools https://awesome.ipfs.io/tools/
 * <a target="_blank" href="https://github.com/ipfs-shipyard/ipfs-share-files">without local node</a>
 * To browse whats in IPFS, use the Brave browser.
 * Helia implementaiton that runs on a browser
+App:
+* <a target="_blank" href="https://github.com/ipfs/ipfs-desktop/releases">ipfs-desktop</a> has no homebrew
 * For simple one-to-one transfers, there is the <a target="_blank" href="https://github.com/psanford/wormhole-william/releases/">Magic Wormhole app</a>.
 * To upload files directly from your browser without installing IPFS, use web app IPFS Share (https://share.ipfs.io).
 * Install the <a target="_blank" href="https://github.com/ipfs/ipfs-desktop">IPFS Desktop app</a> to click the "Import" button in the GUI
 * In the command-line interface, use the <tt>ipfs add</tt> command to add files to IPFS.
 * hbarsuite smart nodes that are integrated with IPFS
 * <a target="_blank" href="https://docs.pinata.cloud/web3/ipfs-101/what-are-cids">Pinata.com</a> private IPFS Gateway & hubs
+* https://thedefiant.io/news/defi/filecoin-ipfs-space by Lockheed Martin
 
 Since file content is public by default, <strong>encrypt</strong> the file's content and share its key the usual secure way.
 
@@ -239,6 +246,7 @@ Official media:
    * https://www.youtube.com/watch?v=zE_WSLbqqvo "Why IPFS?" (during IPFS Camp 2000) by Juan Benet on the https://www.youtube.com/@IPFSbot">IPFS YouTube channel</a>
    * https://www.youtube.com/watch?v=18T1AlHVVPo "BASS 2024 01" Juan Benet by Stanford Blockchain Club
 References:
+   * https://www.reddit.com/r/ipfs/comments/1cetytv/ipfs_address_space_for_cids/
    * https://www.youtube.com/watch?v=s8i8qn8APR4 "The Missing Piece of Web3" by EatTheBlocks
    * https://www.youtube.com/watch?v=xOUz3ifDpR4 "Upload larger files on IPFS" by HarshLips Academy
    * https://www.youtube.com/shorts/3rkIGZ4RxgQ
