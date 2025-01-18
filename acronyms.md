@@ -1,11 +1,11 @@
 ---
 layout: post
 date: "2025-01-17"
-lastchange: "v019 + CAR :acronyms.md"
+lastchange: "v020 + EVM :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
-excerpt: "It's often difficult to know the context of an acronym. So here, in one page, are all 900+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum IT, Security, Networking, Amazon, Azure, GCP, OMG! " 
+excerpt: "It's often difficult to know the context of an acronym. So here, in one page, are all 900+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG! " 
 tags: [cloud, security, management, audit]
 comments: true
 created: "2024-12-28"
@@ -461,6 +461,9 @@ created: "2024-12-28"
 * EUC = End-User Computing (includes SSO, MFA, RBAC, IAM)
 * EUV = Extreme Ultraviolet (lithography to make semiconductor chips)
 *	EV	=	Extended Validation	(certificate)
+*	EVM	=	Ethereum Virtual Machine (Ethereum)
+*	EVMS	=	Ethereum Virtual Machine Suite (Ethereum)
+*	EVMOS	=	Ethereum Virtual Machine Operating System (Ethereum)
 
 <a name="F"></a>
 ### F
