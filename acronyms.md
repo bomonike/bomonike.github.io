@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-01-17"
-lastchange: "v018 + MFS :acronyms.md"
+lastchange: "v019 + CAR :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -197,6 +197,7 @@ created: "2024-12-28"
 *	CAP	=	Cybersecurity Assessment Plan (FISMA)
 *	CAPEX	=	Capital Expenditures	(impacts Asset Balance Statements and can be amortized over time)
 *	CAPTCHA	=	Completely Automated Public Turing (test) to tell Computers and Humans Apart
+* CAR = Content Addressable aRchive (used in IPFS)
 *	CASB	=	Cloud Access Security Broker	(provides IAM services to mediate cloud service access)
 *	CBC	= Cipher Block Chaining (used by AES openssl encryption)
 *	CBK	=	Common Body of Knowledge
@@ -385,6 +386,7 @@ created: "2024-12-28"
 *	DTLS	=	Datagram Transport Layer Security
 *	DUT	=	Device Under Test
 *	DWaaS	=	Data Warehouse as a Service
+*	DWeb	=	Decentralized Web
 *	DWBH	=	Don't Worry Be Happy (internet slang)
 *	DX	=	Developer eXperience
 
