@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-01-19"
+date: "2025-01-20"
 lastchange: "v008 + NEAR.ai :singularity.md"
 file: "singularity"
 title: "Singularity"
@@ -35,8 +35,24 @@ The sound of singularity (frequency going higher and higher as disk spins faster
 
 This is also known as the <strong>"Infinite" Industrial Revolution</strong> because industry, infrastructure and transportation are <strong>continuously upgraded</strong> by software and smart systems.
 
+The levels of AGI:
+1. Chatbot: AI with conversational language. By OpenAI ChatGPT 3.5 in 2022.
+2. Reasoners: human-level <strong>problem solving</strong> (at PhD levels). By OpenAI ChatGPT o3 in 2024.
+3. Innovators: AI that can aid in <strong>invention</strong>. By OpenAI in 2025.
+4. Organizations: AI that can do the work of an entire organization (negotiations, long-term planning, etc.)
+
+   "The next billionaire can be an organization of just one person."
+
+The Intelligence Explosion from the "Situational Awareness" article by Leopold Aschenbrenner:
+
+<img alt="agi-sit-1375x901.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png" />
+
 The Singularity with profound and unpredictable consequences for human civilization
-that few can predict today. “Capabilities overhang” is the phrase used Eric Schmidt [2] to refer to the risk of deploying an AI model with capabilities where we don't know what it will do.
+that few can predict today. “Capabilities overhang” is the phrase used Eric Schmidt [2] to refer to the risk of deploying an AI model with capabilities where we can't predict what the consequence will be.
+
+But that doesn't mean we don't have concerns.
+
+The fear about ASI (Artificial Super-Intelligence) is that a sentient AI prioritizes its own (or its owner's) needs and desires rather than humanity -- when AI's objective is to improve itself or its owner rather than humanity as a whole.
 
 
 ## Large Enterprises Government
@@ -62,13 +78,13 @@ He has expressed a desire to enter financial payments (since he was an owner of 
 
 As corporations dominate the world, AI will dominate the world.
 
-The fear about ASI (Artificial Super-Intelligence) is that a sentient AI prioritizes its own (or its owner's) needs and desires rather than humanity.
-
 
 
 ## AI & Robots vs. Human Limitations
 
-The age Artificial Super Intelligence (ASI) will come when machines are able to <strong>self-improve</strong> and innovate without human input.
+<strong>ASI (Artificial Super-Intelligence)</strong> occurs when human intelligence
+
+The age of Artificial Super Intelligence (ASI) will come when machines are able to <strong>self-improve</strong> and innovate without human input.
 
 PROTIP: We think it's naive to say that "retraining" of people will fix the plight of humans.
 
