@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-19"
-lastchange: "v011 + web-scraping :README.md"
+date: "2025-01-20"
+lastchange: "v012 + nft :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
