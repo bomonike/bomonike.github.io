@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-17"
-lastchange: "v020 + EVM :acronyms.md"
+date: "2025-01-19"
+lastchange: "v021 + DiFi QFT SSE :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -346,6 +346,7 @@ created: "2024-12-28"
 *	DGO	=	Data Governance Organization/Officer (for security)
 *	DHCP	=	Dynamic Host Configuration Protocol	(automatically assigns IP addresses to devices on a network)
 *	DHS	=	Department of Homeland Security	(US government organization)
+* DiFi = Distributed File Integrity
 * DiD = Defense in depth (for security)
 *	DIR	=	Detection and Incident Response (security workflow)
 * DIY = Do It Yourself
@@ -997,7 +998,7 @@ created: "2024-12-28"
 *	PPG	=	Proximity Placement Group (Azure VMs)
 *	PPK	=	Putty Private Key (AWS private key certificate encoding file type for Windows PuTTY SSH client)
 *	PPTP	=	Point-to-Point Tunneling Protocol
-*	PQC	=	Post-Quantum Cryptography (encryption resistant to fast quantum computers)
+*	PQC	=	Post-Quantum Cryptography (encryption resistant to crackers on fast quantum computers)
 *	PR	=	Pull Request	(GitHub feature for suggesting code changes and integrating them into the main code base)
 *	PRD	=	Production (vs NPD for non-production in keeping with a consistent number of letters)
 *	PS	=	Professional Services
@@ -1025,6 +1026,7 @@ created: "2024-12-28"
 *	QA	=	Quality Assurance
 *	QBR	=	Quarterly Business Review
 *	QEC	=	Quantum Error Correction (IT)
+* QFT = Quantum Field Theory (combines quantum mechanics, special relativity, and classical field theory to describe the mechanics of higher dimensional math)
 *	QIR	=	Quantum Intermediate Representation (Microsoft)
 *	QKD	=	Quantum Key Distribution (secures communication using a cryptographic protocol involving quantum computing with lasers)
 * QLDB	=	Quantum Ledger Database (AWS)
@@ -1216,6 +1218,7 @@ created: "2024-12-28"
 *	SSAE	=	Statement on Standards for Attestation Engagements
 * SSAS = SQL Server Analysis Services (from Microsoft)
 *	SSD	=	Solid-State Drive (data storage)
+* SSE = Server-Sent Events (A one-way channel from server to client. The client subscribes to a stream of events, and the server continuously sends updates as text-based messages.)
 *	SSDT	=	SQL Server Data Tools (Microsoft SQL Server)
 *	SSE	=	Security Service Edge  (Microsoft conditional access mechanisms for Zero Trust)
 *	SSE	=	Server-Side Encryption
