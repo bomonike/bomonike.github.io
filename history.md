@@ -1,10 +1,10 @@
 ---
 layout: post
-date: "2025-01-14"
-lastchange: "v007 + eclipse :history.md"
+date: "2025-01-20"
+lastchange: "v008 + eclipse :history.md"
 file: "history"
 title: "(Dates in) History"
-excerpt: "The most significant events in world history, in chronological order."
+excerpt: "The most significant events in world history, in chronological order (plus the future)."
 tags: [history]
 image:
 # feature: history-hero-1900x500.png from history-hero-3781x2833.jpg
@@ -1353,6 +1353,8 @@ the "one religion" in the holy muslim land of Mecca and Medina.
 <a id="Future"></a>
 
 ## Future
+
+Apophis asteroid Apr 13, 2029.
 
 > "... the sons of Issachar had understanding of the times, to know what Israel ought to do,&#8221; <a target="bible" href="https://www.blueletterbible.org/kjv/1ch/12/32/s_350032"><nobr>--1 Chronicles 12:32</nobr> (KJV)</a>
 
