@@ -1,5 +1,14 @@
 ---
-lastchange: "v010 + nft :README.md"
+layout: post
+date: "2025-01-19"
+lastchange: "v011 + web-scraping :README.md"
+url: https://bomonike.github.io/README
+file: "README"
+title: "README"
+excerpt: "Table of Contents to the Bomonike GitHub wiki." 
+tags: [index]
+comments: true
+created: "2024-12-28"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/README">This<img align="right" width="100" height="100" alt="README.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/README.png?raw=true" /><a>
@@ -48,7 +57,7 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (Operational Technologies)
 1. <a target="_blank" href="https://bomonike.github.io/personal-data-security">personal-data-security</a>
 1. <a target="_blank" href="https://bomonike.github.io/pid">pid</a> (Proportional Integral Derivative)
-1. <a target="_blank" href="https://bomonike.github.io/plc">plc</a>
+1. <a target="_blank" href="https://bomonike.github.io/plc">plc</a>  (Programmable Logic Controllers)
 1. <a target="_blank" href="https://bomonike.github.io/podcasts">podcasts</a>
 1. <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
 1. <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
@@ -66,4 +75,5 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/tech+">tech+</a>
 1. <a target="_blank" href="https://bomonike.github.io/temporal">temporal</a>
 1. <a target="_blank" href="https://bomonike.github.io/waf">waf</a>
+1. <a target="_blank" href="https://bomonike.github.io/web-scraping">web-scraping</a>
 1. <a target="_blank" href="https://bomonike.github.io/zima">zima</a>
