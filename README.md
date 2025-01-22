@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-20"
-lastchange: "v012 + nft :README.md"
+date: "2025-01-22"
+lastchange: "v013 + comment out some :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -19,9 +19,9 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/acronyms">acronyms</a>
 1. <a target="_blank" href="https://bomonike.github.io/agentic">agentic</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
-1. <a target="_blank" href="https://bomonike.github.io/anthropic">anthropic</a>
+<!--<|cursor1. <a target="_blank" href="https://bomonike.github.io/anthropic">anthropic</a>-->
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
-1. <a target="_blank" href="https://bomonike.github.io/aprs">aprs</a>
+<!--1. <a target="_blank" href="https://bomonike.github.io/aprs">aprs</a> -->
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
 1. <a target="_blank" href="https://bomonike.github.io/codespaces">codespaces</a>
