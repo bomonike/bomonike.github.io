@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-19"
-lastchange: "v021 + DiFi QFT SSE :acronyms.md"
+date: "2025-01-23"
+lastchange: "v022 + CUA :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -304,6 +304,7 @@ created: "2024-12-28"
 *	CTI	=	Cyber Threat Intelligence
 *	CTO	=	Chief Technology Officer
 *	CTS	=	Consul-Terraform Sync	(HashiCorp product)
+* CUA = Computer Using Agent (OpenAI's <a target="_blank" href="https://www.youtube.com/watch?v=9oED8PXJuKg"><em>working</em></a> AI agent <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">Operator</a> controlling your computer)
 *	CUDA	=	Compute Unified Device Architecture (parallel computing platform & API developed by NVIDIA)
 *	CVD	=	Color Vision Deficiency  (aka Color Blindness)
 *	CVE	=	Common Vulnerabilities and Exposures	(identified through the US CISA database)
