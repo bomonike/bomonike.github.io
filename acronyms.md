@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-23"
-lastchange: "v022 + CUA :acronyms.md"
+date: "2025-01-24"
+lastchange: "v023 + FPV :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -501,6 +501,7 @@ created: "2024-12-28"
 * FPGA = <a target="_blank" href="https://en.wikipedia.org/wiki/Field-programmable_gate_array">Field Programmable Gate Array</a>
 * FPS	=	Flexible Payments Service
 *	FQDN	=	Fully-Qualified Domain Name
+* FPV = First Person View (in 3D games)
 * FRAP = Facilitated Risk Analysis Process (analyze impact of each individual org unit)
 * FSFET = ForkSheet Field-Effect Transistor
 *	FTE	=	Full Time Employee/Equivalent
