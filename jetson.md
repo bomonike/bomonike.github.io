@@ -10,8 +10,10 @@ tags: [cloud, security, management, ai]
 comments: true
 created: "2024-12-21"
 ---
-
 <a target="_blank" href="https://bomonike.github.io/jetson"><img align="right" width="100" height="100" alt="jetson.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/jetson.png?raw=true" />
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
 
 ## Overview
 
@@ -22,11 +24,23 @@ From https://developer.nvidia.com/embedded/develop/software
 
 ## Professional Certifications
 
-<a target="_blank" href="https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/index.html">
+<a target="_blank" href="https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/index.html">Jetson User Guide</a>
 
 NVIDIA has a <a target="_blank" href="https://learn.nvidia.com/en-us/training/educator-programs">program for training and certifying university educators</a> and <a target="_blank" href="https://developer.nvidia.com/embedded/learn/jetson-agx-orin-devkit-user-guide/index.html">certifying Jetson AGX Orin developers</a>.
 
-For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $135 for a 2-year validity period:
+   * WARNING: Certiport only works on Chrome and Microsoft Edge browsers (not on Safari & Firefox).
+   * A "Safe Exam Browser" must be installed.
+   * PROTIP: Restart your computer to enable pop-ups requesting configuration of microphone and video permissions.
+   * Authorize screen recording by the app.
+   * Launch the system compatibility check.
+
+   * Reschedule 24 hours in advance for an examination date within two months of the date the examination fee was paid for that examination.
+   * Results are pass/fail on Credly) to accept your digital badge.
+
+Http failure response for https://market-production.azurewebsites.net/api/Organization/StoreExams/0894ab5e-cc68-4f2b-a8bc-d41a576d345d/slots?startDate=2/22/2025,%2012:00:00%20AM&endDate=2/22/2025,%2011:59:59%20PM&timeZone=America/Denver&slotDurationInMinutes=60: 401 OK
+
+For AI, NVIDIA offers a 50 (40-60) question exam in one-hour with no breaks taken online, each at $135 for each retake.
+It's good for a 2-year validity period:
 
 1. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/">NVIDIA-Certified Associate: Generative AI and LLMs (NCA-GENL)</a>
    validates skills in the use of generative AI and large language models.
@@ -47,7 +61,7 @@ For AI, NVIDIA offers one-hour (50-question) exams taken online, each at just $1
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1">1-hour $FREE Augment Your LLM Using Retrieval-Augmented Generation</a>.
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1">8-hour $FREE Buillding RAG Agents for LLMs</a>.
 
-   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-14+V1">8-hour $90 Generative AI With Diffusion Models</a>.
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-14+V1">8-hour $90 Generative AI With Diffusion Models</a> (to generate images from text)
 
    * <a target="_blank" href="https://www.nvidia.com/en-us/training/instructor-led-workshops/efficient-large-language-model-customization/">8-hour $500 Efficient Large Language Model (LLM) Customization</a>.
 
