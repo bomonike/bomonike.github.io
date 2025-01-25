@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-01-22"
-lastchange: "v013 + comment out some :README.md"
+lastchange: "v014 + comment out some :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -24,6 +24,7 @@ Topics alphabetically:
 <!--1. <a target="_blank" href="https://bomonike.github.io/aprs">aprs</a> -->
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
+<!-- aws-ml -->
 1. <a target="_blank" href="https://bomonike.github.io/codespaces">codespaces</a>
 1. <a target="_blank" href="https://bomonike.github.io/copilots">copilots</a>
 1. <a target="_blank" href="https://bomonike.github.io/emf-blocking">emf-blocking</a>
@@ -71,6 +72,7 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/second-brain">second-brain</a>
 1. <a target="_blank" href="https://bomonike.github.io/sentiment-analysis">sentiment-analysis</a>
 1. <a target="_blank" href="https://bomonike.github.io/singularity">singularity</a>
+1. <a target="_blank" href="https://bomonike.github.io/skills">skills</a>
 1. <a target="_blank" href="https://bomonike.github.io/software-dev">software-dev</a>
 1. <a target="_blank" href="https://bomonike.github.io/tech+">tech+</a>
 1. <a target="_blank" href="https://bomonike.github.io/temporal">temporal</a>
