@@ -2,10 +2,10 @@
 layout: post
 url: https://bomonike.github.io/skills
 date: "2025-01-25"
-lastchange: "v001 + new :skills.md"
+lastchange: "v002 + asterisks :skills.md"
 file: "skills"
 title: "Skills"
-excerpt: "Skills you need to live without modern conveniences."
+excerpt: "Skills you need to live without modern conveniences. Survival and otherwise."
 tags: [cloud, security, management, ai]
 comments: true
 created: "2025-01-25"
@@ -15,203 +15,165 @@ created: "2025-01-25"
 {% include l18n.html %}
 {% include _toc.html %}
 
-Survival and otherwise.
+## Survey: What is your situation
+
+* USDA Zone for growing crops
+* Length of growing season
+* How far from water (well, stream)
+* Near Ocean?
+* Miles to nearest gasoline, store, hospital (Urban, Suburban, Countryside)
 
 ## Medical care
 
-Foot care
+* Foot care (blisters)
+* Stop itching from bug bite
+* Treat burns
+* Medicines $
+* Crutches $
+* CPR
 
-Medicines
+* Split to brace bone
+* Stop Bleeding
+* Clean and suture wound
 
-Stop Bleeding
+References:
+   * https://www.redcross.org/take-a-class/resources/articles/11-survival-skills-to-know
 
-* https://www.redcross.org/take-a-class/resources/articles/11-survival-skills-to-know
-
-CPR
 
 ## Clothing
 
-Gray Man clothing for urban
-
-Rain
-
-Snow gloves, hats, jackets
-
-Heat & Humidity
-
-Shoes
+* Gray Man clothing for urban
+* Shoes
+* Rain
+* Snow gloves, hats, jackets
+* Heat & Humidity
 
 ## Water
 
-Harvest Atmospheric Water
-
-Desalinate water
-
-Test water to see if it's safe to drink
-
-Filter water
-
-Transporting water using containers
-
-Collect rainwater in solar still with a tarp and bucket over a hole
+* Swimming
+* Harvest Atmospheric Water
+* Desalinate water from ocean
+* Test water to see if it's safe to drink
+* Filter water
+* Transporting water using containers
+* Collect rainwater in solar still with a tarp and bucket over a hole
 
 ## Waste
 
-Outdoor Toilet locations
-
-Latrine
-
-Trash disposal
+* Outdoor Toilet locations
+* Latrine
+* Trash disposal
 
 ## Power
 
-Batteries
-
-Generator
+* Batteries
+* Propane generator
+* Solar generator
 
 ## Foraging
 
-Poisonous plants to avoid
-
-Looking for edible and poisonous Mushrooms
-
-Finding, cooking worms <a target="_blank" href="https://www.youtube.com/channel/UCByXlUQD0YPUv8QSm5iVfjw">Survival Skills Anywhere YouTube channel</a> since 2017 from the rain forest
+* Poisonous plants to avoid
+* Looking for edible and poisonous Mushrooms
+* Finding, cooking worms <a target="_blank" href="https://www.youtube.com/channel/UCByXlUQD0YPUv8QSm5iVfjw">Survival Skills Anywhere YouTube channel</a> since 2017 from the rain forest
 
 ## Pet dogs
 
+* Food
 
 ## Fishing
 
-Gill nets
-
-Fish Trap baskets
-
-Poles
-
+* Gill nets
+* Fish Trap baskets
+* Poles
+* Lures
 
 ## Wild Game
 
-Bear avoidance
-
-Track and hunt game
-
-Snake awareness, capture, skinning, cooking
-
-Dressing and preserving game
+* Bear avoidance
+* Track and hunt game
+* Snake awareness, capture, skinning, cooking
+* Dressing and preserving game
 
 ## Growing Food
 
-Food Reserve plan
-
-Grow root vegatables
-
-Grow Potatoes in a bucket
-
-Make cheese from milk
+* Food Reserve plan
+* Grow root vegatables
+* Grow Potatoes in a bucket
+* Make cheese from milk
 
 ## Fire
 
-Use Solar oven to bake bread
+* Use Solar oven to bake bread
+* Fire safety
+* Selecting Wood, tinder and kindling
+* Cut branches using a saw blade/chain
+* Chop firewood using an ax
 
-Fire safety
+* Start a fire using a flint and bow pump drill (friction between sticks), in wind and rain <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo&t=21m11s">VIDEO</a> <a target="_blank" href="https://www.youtube.com/watch?v=ZsxzlKFSirQ">VIDEO</a>
 
-Selecting Wood, tinder and kindling
-
-Cut branches using a saw blade/chain
-
-Chop firewood using an ax
-
-Start a fire using a flint and bow pump drill (friction between sticks), in wind and rain <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo&t=21m11s">VIDEO</a> <a target="_blank" href="https://www.youtube.com/watch?v=ZsxzlKFSirQ">VIDEO</a>
-
-Build self-feeding fire that lasts for up to 14 hours
-
-Build the Dakota "invisible fire hole" that makes little smoke. Great for windy weather or when you want to stay.
-
-Build the Swedish fire from a log cut like a cake.
+* Build self-feeding fire that lasts for up to 14 hours
+* Build the Dakota "invisible fire hole" that makes little smoke. Great for windy weather or when you want to stay.
+* Build the Swedish fire from a log cut like a cake.
 
 ## Cooking
 
-create a tripod using forked sticks
-
-Boiling water
-
-Cooking eggs
-
-Trap small game
-
-Rocks to sleep with in the cold
+* create a tripod using forked sticks
+* Boiling water
+* Cooking eggs
+* Trap small game
+* Rocks to sleep with in the cold
 
 ## Foof Preservation
 
-Make pemican jerky
-
-Water Canning
-
-Make cans of jelly from fruits
-
-Prepare and store game meat
-
+* Make pemican jerky
+* Water Canning
+* Make cans of jelly from fruits
+* Prepare and store game meat
 
 ## Shelter
 
-Make tent stakes <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo&t=9m12s">VIDEO</a>
+* Make tent stakes <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo&t=9m12s">VIDEO</a>
+* Use parachord to tie sticks together for bi-pod seat <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo">VIDEO</a>
 
-Use parachord to tie sticks together for bi-pod seat <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo">VIDEO</a>
+* Build emergency shelter
+* <a target="_blank" href="https://www.youtube.com/watch?v=An3uI5LNz_8">build an igloo like the Inuit</a>
 
-Build emergency shelter
+* <a target="_blank" href="https://www.youtube.com/watch?v=2Lq7yRzIGf8">Build out a van to live in:</a> <a target="_blank" href="https://cyclecruza.com/links-to-get-my-bug-out-camper-van-stuff">camper</a>
 
-https://www.youtube.com/watch?v=An3uI5LNz_8
-How the Inuit build an igloo
-
-Build out a van to live in:
-https://www.youtube.com/watch?v=2Lq7yRzIGf8
-https://cyclecruza.com/links-to-get-my-bug-out-camper-van-stuff
-
-Build a house
+* Build a house
 
 ## Entertainment
 
-Musical instruments
+* Play DVDs
+* Sing acapella (like )
+* Play a musical instrument
 
 ## Storage
 
-Stockpile water
-
-Hiding valuables
-
-Preserve eggs without electricity
-
-Looter-proof
-
-Ropes
+* Stockpile water
+* Hiding valuables
+* Preserve eggs without electricity
+* Looter-proof house
+* Fire-proof house
+* Ropes
 
 ## Transportation
 
-Orienteering & Navigation
-
-Identify compass direction - sun and stars
-
-Navigating off a map
-
-Choosing & riding a bicycle
-
-Drive a car
-
-Drive a tractor
+* Orienteering & Navigation
+* Identify compass direction - sun and stars
+* Navigating off a map
+* Choosing & riding a bicycle
+* Drive a car
+* Drive a tractor
 
 ## Communication
 
-Whistling
-
-Signaling mirror
-
-Cell phones
-
-GBRS family radios
-
-Longer range
-
-EMP protection
+* Whistle $
+* Signaling mirror
+* Cell phones
+* GBRS family radios
+* Longer range
+* EMP protection
 
 ## Home construction
 
