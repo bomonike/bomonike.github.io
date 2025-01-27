@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-24"
-lastchange: "v023 + FPV :acronyms.md"
+date: "2025-01-26"
+lastchange: "v024 + DPP :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -249,6 +249,7 @@ created: "2024-12-28"
 *	CNAME	=	Canonical Name Record	(DNS)
 *	CNI	=	Container Network Interface	(Kubernetes)
 *	CNN	=	Convolutional Neural Networks (Machine Learning)
+*	CNNS	=	Convolutional Neural Networks (Machine Learning)
 *	CNSS	=	Committee on National Security Systems
 *	COGS	=	Cost of Goods Sold	(Financial Accounting)
 *	COMINT	=	Command Intelligence	(from intercepted SIGINT)
@@ -373,6 +374,7 @@ created: "2024-12-28"
 *	DR	=	Disaster Recovery
 * DRAM = Dynamic Random Access Memory
 *	DRI	=	Directly Responsible Individual	(Coined by Apple for the person to make sure that a task is completed)
+*	DPP = Digital Product Passport (a <a target="_blank" href="https://www.protokol.com/insights/what-is-the-ecodesign-for-sustainable-products-regulation-espr/">blockchain</a> to collect and share product sustainability, environmental, and recyclability attributes from raw material sourcing and manufacturing process to end-of-life disposal)
 *	DRP	=	Disaster Recovery Plan	(to transition from alternative business processes back to regular processes.)
 *	DRPO	=	Defense Research & Development Organization
 *	DRY	=	Don't Repeat Yourself
@@ -445,6 +447,7 @@ created: "2024-12-28"
 *	ENI	=	Elastic Network Interface	(AWS)
 * ENS = Ethereum Name Service (provides names to wallet addresses to simplify token transactions)
 *	EPS	=	Earnings Per Share
+* ESPR = Ecodesign for Sustainable Products Regulation (European Green Deal launched December 2019)
 *	ETL	=	Extract Transform and Load
 * EOF = End of File
 *	EOQ	=	End of Quarter
@@ -794,6 +797,7 @@ created: "2024-12-28"
 *	MitM	=	Man-in-the-Middle	(an attack in the form of active interception allowing an attacker to intercept traffic and insert malicious code sent to other clients. Kerberos provides mutual authentication and helps prevent MITM attacks)
 * MISP = Malware Information Sharing Platform (open-source threat intelligence platform)
 *	ML	=	Machine Learning
+* M-LAG = Multi-chassis Link AGgregation (synchronization protocols over a peer control link to enable multiple switches to aggregate links, for redundancy and load balancing, improving network performance and reliability<a target="_blank" href="https://docs.nvidia.com/networking/display/onyxv3104206/mlag">*</a>)
 * MLDR = Machine Learning Detection and Response
 *	MLM	=	Masked Language Model (such as BERT for Natural Language Processing)
 * MLLP = Minimal Lower Layer Protocol (the leading and trailing delimiter HL7v2 healthcare data is transmitted using TCP/IP within VPNs)
