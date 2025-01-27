@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-01-23"
+date: "2025-01-26"
 lastchange: "v003 + CUA :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
@@ -26,15 +26,19 @@ The 10 stages of AI capabilities: <a target="_blank" href="https://www.youtube.c
 
    1. Rule/Knowledge-based systems (pre-programmed, not from data)
    2. Content-based and Retention systems (adapts: learns from data: RNN, LSTM, etc.)
+
    3. Narrow domain or Expert AI systems (on specific tasks: Watson, DeepMind, AlphaGo)
    4. Reasoning AI systems (simulates human reasoning on self-driving cars)
    5. Self-aware AI systems (reflects on internal states: introspection)
+
    6. Artificial General Intelligence (AGI) human-like intelligence - flexibility at various activities
    7. Artificial Super Intelligence (ASI)
    8. Transcendent AI systems (from book: Apocalyptic AI - merging with humans)
    9. Cosmic AI (extends beyond Earth)
    10. God-like AI (omnipresent, omniscient, omnipotent)
 
+Sakana AI's Transformer Squared self-learns new tasks
+https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 ## Glossary
 
@@ -85,6 +89,8 @@ The 10 stages of AI capabilities: <a target="_blank" href="https://www.youtube.c
 
 * Sentiment analysis | A process of analyzing digital text to determine the emotional tone of a message. Performed on textual data, helping businesses monitor brands through customer feedback.
 * Streamlit | An open-source framework to build and share machine learning and data science web apps. It turns data scripts into shareable web apps in minutes.
+
+* TensorFlow <a target="_blank" href="https://www.nvidia.com/en-us/glossary/tensorflow/">|</a> a leading open-source library from Google for developing and deploying machine learning applications. It makes use of GPUs for parallel matrix operations for algebraic calculations.
 * Tokenizer | A tokenizer is a tool in natural language processing that breaks down text into smaller, manageable units (tokens), such as words or phrases, enabling models to analyze and understand the text.
 * Training data | Data (generally, large data sets that also have examples) used to teach a machine learning model.
 * Transformers | A deep learning architecture that uses an encoder-decoder mechanism. Transformers can generate coherent and contextually relevant text.
@@ -98,7 +104,9 @@ The 10 stages of AI capabilities: <a target="_blank" href="https://www.youtube.c
 * watsonx.data | A massive, curated data repository that can be used to train and fine-tune models with a state-of-the-art data management system.
 watsonx.governance | A (powerful) toolkit to direct, manage, and monitor your organization's AI activities.
 
-<a target="_blank" href="https://www.coursera.org/learn/building-gen-ai-powered-applications/ungradedWidget/TRXdF/glossary-building-genai-powered-apps-with-python"><i>Source</i></a>
+* <a target="_blank" href="https://www.coursera.org/learn/building-gen-ai-powered-applications/ungradedWidget/TRXdF/glossary-building-genai-powered-apps-with-python"><i>Source</i></a>
+* https://docs.anthropic.com/en/docs/resources/glossary
+
 
 ## Explainable AI
 
@@ -134,8 +142,13 @@ Current, XAI techniques:
 * <a target="_blank" href="https://www.youtube.com/watch?v=KovHUQRdPnE">Prompt Engineering</a> does deep dive tech
 * <a target="_blank" href="https://www.youtube.com/watch?v=pzgjYW3msKg">Wes Roth</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=-rmv4hK_4RA">Julia McCoy</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=yr0GiSgUvPU">Alex Kantrowitz</a> "Google DeepMind CEO Demis Hassabis: The Path To AGI, Deceptive AIs, Building a Virtual Cell"
+* <a target="_blank" href="https://www.youtube.com/watch?v=Hpop2LZ1Xi4">David Shapiro</a>
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=BsYysMluYkg">Bloomberg Live</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=x9Ekl9Izd38">CNBC Television</a> at Davos: "Scale AI CEO Alexandr Wang on U.S.-China AI race: We need to unleash U.S. energy to enable AI boom"
+* <a target="_blank" href="https://www.youtube.com/watch?v=zvbTDUSz8Cc">Fireship</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=LA4KXEYcU4o">AICodeKing</a>
 
 Foundation models:
 * <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">OpenAI</a>
