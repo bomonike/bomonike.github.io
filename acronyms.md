@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-26"
-lastchange: "v024 + DPP :acronyms.md"
+date: "2025-01-28"
+lastchange: "v025 + PEP :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -721,7 +721,7 @@ created: "2024-12-28"
 *	KRI	=	Key Recovery Information
 *	KSAs	=	Knowledge, Skills, and Abilities (Work Roles)
 *	KV	=	Key-Value	(data storage format)
-*	KYC	=	Know Your Customer
+*	KYC	=	Know Your Customer (requiring identity verification)
 
 <a name="L"></a>
 ### L
@@ -966,6 +966,7 @@ created: "2024-12-28"
 * PE = Pre-installed Environment (a bootable image of Microsoft Windows used to automate install)
 * PEFT = Parameter-Efficient Fine-Tuning (techniques for updating a small subset of an ML model’s parameters)
 *	PEM	=	Privacy Enhanced Mail (AWS private key certificate encoding file type)
+* PEP = Python Enhancement Proposal
 *	PEP	=	Policy Enforcement Point	(filters requests and makes eXtensible Access Control Markup Language (XACML) to a Policy Decision Point (PDP)
 *	PETM	=	Parameter-Efficient Tuning Methods (in Generative AI)
 *	PF	=	Privacy Framework
@@ -1341,6 +1342,7 @@ created: "2024-12-28"
 *	URL	=	Universal Resource Locator
 *	URM	=	Under-Represented Minority
 *	USB	=	Universal Service Bus
+* USDC = US Dollar Coin (digital stablecoin backed 1:1 with USD such as <a target="_blank" href="https://www.bitpay.com/blog/who-accepts-usdc">BitPay Card</a>)
 * USP = Unique Selling Proposition
 *	UTC	=	Coordinated Universal Time	(the new compromise term for GMT)
 *	UTF	=	Unicode Transformation Format
