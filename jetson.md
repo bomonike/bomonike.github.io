@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/jetson
-date: "2025-01-15"
-lastchange: "v006 + certs :jetson.md"
+date: "2025-01-30"
+lastchange: "v007 + certs :jetson.md"
 file: "jetson"
 title: "Jetson AI"
 excerpt: "How to get, install, and use NVIDIA's Jetson micro servers for AI at edge."
@@ -39,19 +39,26 @@ NVIDIA has a <a target="_blank" href="https://learn.nvidia.com/en-us/training/ed
 
 Http failure response for https://market-production.azurewebsites.net/api/Organization/StoreExams/0894ab5e-cc68-4f2b-a8bc-d41a576d345d/slots?startDate=2/22/2025,%2012:00:00%20AM&endDate=2/22/2025,%2011:59:59%20PM&timeZone=America/Denver&slotDurationInMinutes=60: 401 OK
 
-For AI, NVIDIA offers a 50 (40-60) question exam in one-hour with no breaks taken online, each at $135 for each retake.
-It's good for a 2-year validity period:
+<a name="NCA-GENL"></a>
 
-1. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/">NVIDIA-Certified Associate: Generative AI and LLMs (NCA-GENL)</a>
-   validates skills in the use of generative AI and large language models.
+### NCA-GENL
+
+1. NVIDIA offers a 50 (40-60) question exam in one-hour with no breaks taken online, each at $135 for each retake.
+It's good for a 2-year validity period.
+
+   <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/">NVIDIA-Certified Associate: Generative AI and LLMs (NCA-GENL)</a>
+   validates skills in the use of generative AI and large language models:
+
    30% Core Machine Learning and AI Knowledge<br />
    24% Software Development<br />
    22% Experimentation<br />
    14% Data Analysis and Visualization<br />
    10% Trustworthy AI
 
+   Study materials:
+
    * <a target="_blank" href="https://nvdam.widen.net/s/rpdddpdgtc/nvt-certification-exam-study-guide-gen-ai-llm-3262644-r7-web">Exam Guide</a>.
-   * <a target="_blank" href="https://courses.nvidia.com/courses/course-v1:DLI+S-FX-07+V1/">$FREE Generative AI Explained</a>.
+   * <a target="_blank" href="https://courses.nvidia.com/courses/course-v1:DLI+S-FX-07+V1/">$FREE Generative AI Explained</a> by <a target="_blank" href="https://www.linkedin.com/in/bryancatanzaro/">Bryan Catanzaro</a>, VP, Applied Deep Learning Research
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1">$90 Getting Started With Deep Learning</a>
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-01+V1">$90 Accelerating End-to-End Data Science Workflows</a>.
    * <a target="_blank" href="https://courses.nvidia.com/courses/course-v1:DLI+S-FX-08+V1/">$30 Introduction to Transformer-Based Natural Language Processing</a>.
@@ -67,17 +74,20 @@ It's good for a 2-year validity period:
 
 
 2. <a target="_blank" href="https://www.nvidia.com/en-us/learn/certification/generative-ai-multimodal-associate/">NVIDIA-Certified Associate: Generative AI Multimodal (NCA-GENM)</a>
+
    25% Experimentation<br />
    20% Core Machine Learning and AI Knowledge<br />
-   15% Multimodel Data<br />
+   15% Multimodel Data *<br />
    15% Software Development<br />
    10% Data Analysis and Visualization<br />
-   10% Performance Optimization<br />
+   10% Performance Optimization *<br />
     5% Trustworthy AI
+
+   Notice the two topics added (marked by *).
 
    In addition to the resources for the GENL exam:
 
-   * <a target="_blank" href="https://nvdam.widen.net/s/btdtlqshvh/nvt-certification-exam-study-guide-gen-ai-mm-3262600-r11-web">Study Guide</a> PDF</a>.
+   * <a target="_blank" href="https://nvdam.widen.net/s/btdtlqshvh/nvt-certification-exam-study-guide-gen-ai-mm-3262600-r11-web">PDF: Study Guide</a>
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-FX-06+V2">$500 Building Conversational AI Applications</a>
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-MF-01+V2">$500 Computer Vision for ​Industrial Inspection</a>
    * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+C-TC-01+V1">$500 Applications of AI for Anomaly Detection</a>
@@ -280,6 +290,8 @@ supports the Jetson Orin Nano Super Developer Kit, featuring [MAXN mode] which b
 
 ## Software
 
+<a target="_blank" href="https://www.nvidia.com/en-us/glossary/">Glossary</a>
+
 * CUDA 12.6
 * TensorRT 10.3
 * cuDNN 9.3
@@ -288,8 +300,29 @@ supports the Jetson Orin Nano Super Developer Kit, featuring [MAXN mode] which b
 * PVA
 * ISP
 * DLFW 24.0
-* https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nx/docs/jetson_orin_nx_16gb_pcn211361_bom_addition_of_dram.pdf
+* <a target="_blank" href="https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nx/docs/jetson_orin_nx_16gb_pcn211361_bom_addition_of_dram.pdf">PDF</a>: Jetson ORIN NX
 * RIVA
+* LoRA (Low-Rank Adaptation) to fine tune task-specific LLM models.
+
+### NIM
+
+NVIDIA NIM, part of NVIDIA AI Enterprise, is a set of intuitive inference microservices designed to accelerate generative AI deployment in enterprises.
+NIM microservices provide interactive APIs to run inference on AI models.
+
+   * <a target="_blank" href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-23+V1">"Introduction to NVIDIA NIM™ Microservices"</a> 2-hour Inference Microservices video course by Kevin Lee.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=vE80SLk-4PM">VIDEO</a>: by Mariya at Python Simplified
+
+Each NIM is packaged as a Docker container image on a per model or model family basis.
+
+NIM supports a wide range of AI models—including <sstrong>NVIDIA AI foundation</strong>, community, and custom—NIM ensures seamless, scalable AI inferencing, on-premises or in the cloud, all while leveraging industry-standard APIs.
+
+NIM uses <a target="_blank" href="https://docs.nvidia.com/tensorrt-llm/index.html">NVIDIA TensorRT-LLM</a> to optimize the models, with specialized accelerated profiles optimally selected for:
+
+   * NVIDIA H100 Tensor Core GPUs,
+   * NVIDIA A100 Tensor Core GPUs,
+   * NVIDIA A10 Tensor Core GPUs,
+   * NVIDIA L40S GPUs.
+
 
 ### OpenUSD
 
