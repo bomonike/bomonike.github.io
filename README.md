@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-22"
-lastchange: "v014 + comment out some :README.md"
+date: "2025-01-30"
+lastchange: "v015 + security-certs :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -70,11 +70,13 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/regex">regex</a>
 1. <a target="_blank" href="https://bomonike.github.io/ros">ros</a> (Robotic Operating System)
 1. <a target="_blank" href="https://bomonike.github.io/second-brain">second-brain</a>
+1. <a target="_blank" href="https://bomonike.github.io/security-certs">security-certs</a>
 1. <a target="_blank" href="https://bomonike.github.io/sentiment-analysis">sentiment-analysis</a>
 1. <a target="_blank" href="https://bomonike.github.io/singularity">singularity</a>
 1. <a target="_blank" href="https://bomonike.github.io/skills">skills</a>
 1. <a target="_blank" href="https://bomonike.github.io/software-dev">software-dev</a>
 1. <a target="_blank" href="https://bomonike.github.io/tech+">tech+</a>
+1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (Operational Technologies)
 1. <a target="_blank" href="https://bomonike.github.io/temporal">temporal</a>
 1. <a target="_blank" href="https://bomonike.github.io/waf">waf</a>
 1. <a target="_blank" href="https://bomonike.github.io/web-scraping">web-scraping</a>
