@@ -1,11 +1,11 @@
 ---
 layout: post
-date: "2025-01-28"
-lastchange: "v025 + PEP :acronyms.md"
+date: "2025-01-30"
+lastchange: "v026 + MAE, RMSE, MSE :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
-excerpt: "It's often difficult to know the context of an acronym. So here, in one page, are all 900+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG! " 
+excerpt: "It's often difficult to know the context of an acronym. So here, in one page, are all 900+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG! "
 tags: [cloud, security, management, audit]
 comments: true
 created: "2024-12-28"
@@ -766,6 +766,7 @@ created: "2024-12-28"
 *	M&A	=	Mergers and Acquisitions (business)
 *	MAC	=	Media Access Control	(address of NIC card)
 *	MAC	=	Message Authentication Code	(a tag appended to a message to verify its authenticity)
+* MAE = Mean Absolute Error (to calculate the accuracy of a regression model)
 *	MAP	=	Minimum Acceptable Product
 *	MASINT	=	Measurement and Signatures Intelligence	(of weapons capabilities and industrial activities)
 *	MBR	=	Master Boot Record
@@ -823,6 +824,7 @@ created: "2024-12-28"
 *	MQTT	=	MQ Telemetry Transport
 *	MSAL	=	Microsoft Authentication Libraries
 *	MSD	=	Most Significant Digit
+* MSE = Mean Squared Error (to calculate the accuracy of a regression model)
 *	MSK	=	Managed Streaming for Kafka (AWS using Apache)
 *	MSP	=	Managed Service Provider
 *	MSSP	=	Managed Security Service Provider (A provider of outsourced SOC services)
@@ -1083,6 +1085,7 @@ created: "2024-12-28"
 * ReLU = Rectified Linear Unit (in Artificial Intelligence)
 *	RMF	=	Risk Management Framework	(for controls defined in NIST SP 800-53)
 * RMM = Remote Monitoring and Management (utilities)
+* RMSE = Root Mean Squared Error (to calculate the accuracy of a regression model)
 *	RNG	=	Random Number Generator
 *	RNN	=	Recurrent Neural Network (in Deep Learning)
 *	ROA	=	Return on Assets
@@ -1354,8 +1357,8 @@ created: "2024-12-28"
 ### V
 
 *	v12n	=	Virtualization	(numeronym of 11 letters between v and n)
-*	VAR	=	Value-Added Reseller
 * VAE = Variational Autoencoders (uses encoder-decoder architecture to generate new data for image and video generation)
+*	VAR	=	Value-Added Reseller
 *	VAT	=	Value-Added Tax
 *	VBO	=	Value-Based Outcome
 *	VCS	=	Version Control System
