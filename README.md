@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-01-30"
-lastchange: "v015 + security-certs :README.md"
+lastchange: "v016 + genai :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -30,7 +30,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/emf-blocking">emf-blocking</a>
 1. <a target="_blank" href="https://bomonike.github.io/esp32">esp32</a>
 1. <a target="_blank" href="https://bomonike.github.io/fonts">fonts</a>
-1. <a target="_blank" href="https://bomonike.github.io/genai-ide">genai-ide</a>
+1. <a target="_blank" href="https://bomonike.github.io/genai">genai</a>
 1. <a target="_blank" href="https://bomonike.github.io/git-signing">git-signing</a>
 1. <a target="_blank" href="https://bomonike.github.io/github-install">github-install</a>
 1. <a target="_blank" href="https://bomonike.github.io/google-ai">google-ai</a>
