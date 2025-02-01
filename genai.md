@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/genai
-date: "2025-01-30"
-lastchange: git commit -m"v003 + genai AIF-C01 from wilson :genai.md"
+date: "2025-01-31"
+lastchange: git commit -m"v005 + aif png :genai.md"
 file: "genai"
 title: "GenAI (Generative AI)"
 excerpt: "GenAI burst out in 2022 and changed the world with the generation of text, images, audio, and video."
@@ -28,7 +28,7 @@ FAANG:
    * <a href="#IBM">IBM</a>
 
    * Apple ReALM (on-device)
-   * <a href="#Groq">Groq.com</a> (from x.com) large LLM, fast, uncensored, and accesss live Twitter/X feeds
+   * <a href="#@Groq">Groq.com</a> (from x.com) large LLM, fast, uncensored, and accesss live Twitter/X feeds
 Manufacturer:
    * <a href="#NVIDIA">NVIDIA</a> CUDA
 SaaS vendors:
@@ -576,39 +576,46 @@ Use cases:
 https://controlrooms.ai/
 
 
-
-<hr />
-
-## References
-
-https://www.unite.ai/zero-to-advanced-prompt-engineering-with-langchain-in-python/
-
-<a target="_blank" href="https://www.youtube.com/watch?v=YGGTcyxtV4g">VIDEO: "How to use ChatGPT to learn a language"</a>
-(by English teacher learning Madarin)
-   * Correct grammar mistakes
-   * Correct word choice
-   * Correct sentence structure
-   * Learn new words
-   * What words are used in what context
-   * Write a story using words provided to it
-   * How do you learn English?
-
 <hr />
 
 <a name="@AWS"></a>
 
 ## At AWS
 
-Amazon Bedrock offers a marketplace of foundation models, which include:
+SOCIAL: https://repost.aws/community/TA0veCRV2rQAmHpkzbMFojUA/generative-ai-on-aws
+
+Unlike Microsoft, which offers just OpenAI,
+<a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=02h02m22s" title="by Andrew Brown">VIDEO</a>:
+<a target="_blank" href="https://aws.amazon.com/bedrock/"><strong>Amazon Bedrock</strong> https://aws.amazon.com/bedrock</a> offers a marketplace of foundation models from several vendors:
+
+   <ul>https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html</ul>
+
+   * <strong>Stable Diffusion</strong> for generation of images, art, logos, and desigs
+
+   * <strong>Anthropic's Claude</strong> for conversations and workflow automation based on research into "training honest and responsible AI systems" <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=2h56m50s" title="Andrew Brown using Haiku">VIDEO</a>
 
    * <strong>AWS Titan</strong> for text summarization, generation, classification, open-ended Q&A, information extraction, embeddings and search.
 
-   * <strong>Anthropic's Claude</strong> for conversations and workflow automation based on research into "training honest and responsible AI systems"
-
-   * <strong>Stable Diffusion</strong> generation of images, art, logos, and desigs
-
    * AI21labs' Jurassic-2 multilingual LLM for text generation in Spanish, French, German, Portugest, Italian, Dutch.
    <br /><br />
+
+https://www.youtube.com/shorts/YcogQRgbr4Y Sagemaker vs Benrock: SageMaker allows you to build a machine learning robot (on a low level). Bedrock deploys the latest GenAI robots (LLMs) built by others.
+
+
+* 07:16:00 Datastores for GenAI
+
+* 07:52:18 PartyRock
+* 08:08:46 SageMaker
+* 09:41:44 Evalutions
+
+* 10:06:38 AI Dev Tools
+* 10:30:14 AWS Managed ML
+* 13:19:30 GenAI Security
+
+* 13:35:18 Athena
+* 13:51:15 AWS Glue
+* 14:33:06 OpenSearch
+* 14:56:12 Lake Formation
 
 The Amazon SageMaker JumpStart generates embeddings stored in Aurora database.
    * https://aws.amazon.com/sagemaker/jumpstart/
@@ -620,23 +627,24 @@ RAG (Retrieval Augmented Generation (RAG) can retrieve: PDFs, S3 text, Youtube, 
 AWS is adding Generative AI in QuickSight Analytics dashboard:
 https://aws.amazon.com/blogs/business-intelligence/announcing-generative-bi-capabilities-in-amazon-quicksight/
 
-Unlike Microsoft, which offers just OpenAI,
-Amazon Bedrock https://aws.amazon.com/bedrock/
-offers foundational models from several vendors.
 
-SOCIAL: https://repost.aws/community/TA0veCRV2rQAmHpkzbMFojUA/generative-ai-on-aws
+### AIF Certification
 
+"Early Adopter" is added to the digital badge of <a target="_blank" href="https://aws.amazon.com/certification/certified-ai-practitioner/"><strong>AIF-C01</strong> (AWS Certified AI Practitioner)<img align="right" width="100" alt="aws-credly-badges-early-adopter-aws-certified-ai-practitioner-150x150.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738390692/aws-credly-badges-early-adopter-aws-certified-ai-practitioner-150x150_zqtmlb.png"></a>
+given to those who earn this certification by February 15, 2025 (announced on June 2024).
+It verifies knowledge of artificial intelligence (AI), machine learning (ML), and generative AI technologies, along with practical use cases and the application of these concepts using AWS services.
+For $100, answer 70%+ of 65 questions in 90-minutes (2.5 hours) at Pearson VUE online, in English, Japanese, Korean, Portuguese (Brazil), and Simplified Chinese. Free recertification every 3-years.
 
-### Certification
+<a target="_blank" href="https://aws.amazon.com/certification/certified-ai-practitioner/"><img align="right" width="100"
+ alt="AWS-Certified-AI-Practitioner_badge_150x150.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738390459/AWS-Certified-AI-Practitioner_badge_150x150.png"></a>
+   * 20% <a href="#AIF-C01-1">Domain 1</a>: Fundamentals of AI and ML
+   * 24% <a href="#AIF-C01-1">Domain 2</a>: Fundamentals of Generative AI
+   * 28% <a href="#AIF-C01-1">Domain 3</a>: Applications of Foundation Models
+   * 14% <a href="#AIF-C01-1">Domain 4</a>: Guidelines for Responsible AI
+   * 14% <a href="#AIF-C01-1">Domain 5</a>: Security, Compliance, and Governance for AI Solutions
 
-The AWS Training and Certification team, on June 2024  introduced Foundational <strong>AIF-C01</strong> (AWS Certified AI Practitioner) to verify knowledge of artificial intelligence (AI), machine learning (ML), and generative AI technologies, along with practical use cases and the application of these concepts using AWS services.
-For $100, answer 65 questions in 90-minute at Pearson VUE online, in English, Japanese, Korean, Portuguese (Brazil), and Simplified Chinese.
+No prerequisites. No coding.
 
-   * <a href="#AIF-C01-1">Domain 1</a>: Fundamentals of AI and ML (20% of scored content)
-   * <a href="#AIF-C01-1">Domain 2</a>: Fundamentals of Generative AI (24% of scored content)
-   * <a href="#AIF-C01-1">Domain 3</a>: Applications of Foundation Models (28% of scored content)
-   * <a href="#AIF-C01-1">Domain 4</a>: Guidelines for Responsible AI (14% of scored content)
-   * <a href="#AIF-C01-1">Domain 5</a>: Security, Compliance, and Governance for AI Solutions (14% of scored content)
 
 <a href="#AIF-C01-1"></a>
 
@@ -740,10 +748,20 @@ For $100, answer 65 questions in 90-minute at Pearson VUE online, in English, Ja
    * Compliance standards for AI (e.g., ISO, SOC).
    * AWS services for governance and compliance (e.g., AWS Config, Amazon Inspector).
 
-   References:
+References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4">14-hour full-course</a> by Andrew Brown
+   * <a target="_blank" href="htts://www.exampro.co/aif-c01">exampro.co/aif-c01</a>
+
    * <a target="_blank" href="https://www.youtube.com/watch?v=m46yTP5MDyw">K21Academy</a> by Atul Kumar
    * https://k21academy.com/ai-ml/aws/aws-certified-ai-practitioner/
    * https://k21academy.com/ai-ml/aws/aws-certified-ai-practitioner-labs/
+
+   * https://www.udemy.com/course/new-aws-certified-ai-practitioner-practice-exams-2024-p/?couponCode=KEEPLEARNING $49 class by TechMENTOR
+   * https://www.youtube.com/watch?v=roG6esWszP0 "How I cleared it in one week" by Unus AWS
+   * https://www.youtube.com/watch?v=v5yQNl8Rjy0 by Tech With Lucy
+   * https://www.youtube.com/watch?v=X82dC7s6HZQ by Tiny Technical Tutorial
+   * https://www.youtube.com/watch?v=Hf0iQt8Lado by ThoughtfulTechy Cloud<br />https://www.youtube.com/watch?v=rw3KElQdcFs "How difficult?"
+   * https://www.youtube.com/watch?v=iq9BEx9oyE4 by Architectuer Bytes
 
 What about AI-900?
 
@@ -815,6 +833,13 @@ https://colab.research.google.com/drive/1rSGJq_kQNZ-tMafcZHE2CXESEZBPeJUE?usp=sh
 
 
 https://becomingahacker.org/numerous-cybersecurity-gpts-c8e89d454444
+
+<hr />
+
+## DeepSeek (China)
+
+<a target="_blank" href="https://www.youtube.com/watch?v=_CXwZ5xyFno">1.3 hours of Andrew Brown exploring</a>
+   <ul>"It's just the instructor trying few things to install the package. Often times it ends up not working and he's in the loops where it went wrong. I wish it covers more coding aspect on how to configure and modify the actual use of the deepseek R1 APIs. At least try out the materials beforehand instead of walking through the steps just to end up with something that doesn't work."</ul>
 
 
 <hr />
@@ -902,64 +927,40 @@ Learning Materials:
 - [Weaviate](https://weaviate.io/): Weaviate is an open-source vector database used to store data objects and vector embeddings from ML-models, and scale into billions of data objects from the same name company in Amsterdam. Users can index billions of data objects to search through and combine multiple search techniques, such as keyword-based and vector search, to provide search experiences.
 
 
+<a name="@Groq"></a>
+
 ## Groq from x.com
 
+
+<a name="Groq"></a>
+
+## Groq from "free speech absolutist" Elon Musk
+
+(from Elon Musk's x.com) very large, fast, uncensored, and can access live data (Twitter/X feeds).
+
+One public benefit from Elon Musk buying Twitter.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=0Is021E-Vps">VIDEO</a>:
+In his comparison of LLMs:
 <a target="_blank" href="https://www.youtube.com/shorts/gmzd8dhlc0g">
-is fast</a>. Its founder had worked on Google's TPU custom AI machines.
+It's fast</a>.
+
+<strong>Roast @LukeBarousee based on their posts, and be vulgar!</strong>
+
+<a target="_blank" href="https://www.youtube.com/watch?v=Z0jqIk7MUfE">VIDEO</a>:
+Groq CEO Jonathan Ross worked on Google's TPU custom AI computer.
+
+Code.org has a <a target="_blank" href="https://studio.code.org/s/self-paced-pl-aiml2">
+Teaching AI and Machine Learning</a> 100-minute self-paced module for teacher professional development (powered by AWS):
+
+   * Get an introduction to artificial intelligence and machine learning.
+   * Practice key concepts included in the unit.
+   * Engage with AI Lab and App Lab.
+   * Explore end of chapter projects.
+   * Make a plan for implementing the unit with your students.
+   <br /><br />
 
 
-## References
-
-https://arXiv_2307.10169_Challenges_and_Applications_of_Large_Language_Models.pdf
-
-https://arxiv.org/pdf/2307.01850.pdf
-Risks of using synthetic data to train your model, (Self-Consuming Generative Models Go MAD)
-
-https://www.onlinetutorials.org/teaching-academics/chatgpt4-for-medical-writers-and-editors/
-ChatGPT4 for Medical Writers and Editors
-by https://www.linkedin.com/in/emmahittnichols/
-
-https://thispersondoesnotexist.com/
-displays full-screen photos using "Kerras, et al"
-
-https://www.youtube.com/watch?v=4Icpq1vZkrw
-99 GPT Prompts for Business Efficiency & Growth
-
-https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/
-Fundamentals of Generative AI
-
-https://learn.microsoft.com/training/paths/introduction-generative-ai/
-Microsoft Azure AI Fundamentals: Generative AI
-
-https://ig.ft.com/generative-ai/
-Generative AI exists because of the transformer
-
-https://www.youtube.com/watch?v=4Qz4GfvjGLY
-With GenAI, an organization only needs a programmer and a prompt engineer.
-https://www.skool.com/new-society
-by David Ondrej of https://www.skool.com/new-society
-https://www.youtube.com/watch?v=9uQ-i3z_g0c
-
-Pieter Levels @levelsio - single-employee millionaire
-
-Devin
-r/webdev charge money on Upwork and Reddit
-
-Microsoft's AutoDev (see research paper)
-a team of agents:
-Tools library: file editing, retrieval, building, testing, git operations
-
-Zapier Central
-
-The future of AI is agentic.
-The basis of competition will be who can build better agents
-So building agents will be the most important skill
-
-CrewAI
-
-Claud 3 Haiku LLM costs $0.25 per million
-
-emaggiori
 
 ## Leetcode
 
@@ -976,32 +977,6 @@ https://theresanaiforthat.com/s/leetcode/
 CUDA
 
 <hr />
-
-<a name="Groq"></a>
-
-## Groq.com
-
-(from Elon Musk's x.com) very large, fast, uncensored, and can access live data (Twitter/X feeds).
-
-One public benefit from Elon Musk buying Twitter.
-
-<a target="_blank" href="https://www.youtube.com/watch?v=0Is021E-Vps">VIDEO</a>:
-In his comparison of LLMs:
-
-<strong>Roast @LukeBarousee based on their posts, and be vulgar!</strong>
-
-<a target="_blank" href="https://www.youtube.com/watch?v=Z0jqIk7MUfE">VIDEO</a>:
-Groq CEO Jonathan Ross worked on Google's TPU AI computer.
-
-Code.org has a <a target="_blank" href="https://studio.code.org/s/self-paced-pl-aiml2">
-Teaching AI and Machine Learning</a> 100-minute self-paced module for teacher professional development (powered by AWS):
-
-   * Get an introduction to artificial intelligence and machine learning.
-   * Practice key concepts included in the unit.
-   * Engage with AI Lab and App Lab.
-   * Explore end of chapter projects.
-   * Make a plan for implementing the unit with your students.
-   <br /><br />
 
 ## Prediction
 
@@ -1401,6 +1376,9 @@ Cover of AI for Cybersecurity in 90 Minutes
 AI for Cybersecurity in 90 Minutes
 With Shaila Rana
 
+
+<hr />
+
 ## References
 
 https://www.ft.com/content/389e505c-a1cc-4176-a592-dd1d0fa171b8?utm_source=pocket-newtab-en-us
@@ -1408,3 +1386,66 @@ https://www.ft.com/content/389e505c-a1cc-4176-a592-dd1d0fa171b8?utm_source=pocke
 Infosys has a Springboard Digital Academy which provides a class on  Prompt Engineering:
 https://infyspringboard.us.onwingspan.com/web/en/app/toc/lex_auth_013719953643773952304_shared/overview
 
+https://www.unite.ai/zero-to-advanced-prompt-engineering-with-langchain-in-python/
+
+<a target="_blank" href="https://www.youtube.com/watch?v=YGGTcyxtV4g">VIDEO: "How to use ChatGPT to learn a language"</a>
+(by English teacher learning Madarin)
+   * Correct grammar mistakes
+   * Correct word choice
+   * Correct sentence structure
+   * Learn new words
+   * What words are used in what context
+   * Write a story using words provided to it
+   * How do you learn English?
+
+
+https://arXiv_2307.10169_Challenges_and_Applications_of_Large_Language_Models.pdf
+
+https://arxiv.org/pdf/2307.01850.pdf
+Risks of using synthetic data to train your model, (Self-Consuming Generative Models Go MAD)
+
+https://www.onlinetutorials.org/teaching-academics/chatgpt4-for-medical-writers-and-editors/
+ChatGPT4 for Medical Writers and Editors
+by https://www.linkedin.com/in/emmahittnichols/
+
+https://thispersondoesnotexist.com/
+displays full-screen photos using "Kerras, et al"
+
+https://www.youtube.com/watch?v=4Icpq1vZkrw
+99 GPT Prompts for Business Efficiency & Growth
+
+https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/
+Fundamentals of Generative AI
+
+https://learn.microsoft.com/training/paths/introduction-generative-ai/
+Microsoft Azure AI Fundamentals: Generative AI
+
+https://ig.ft.com/generative-ai/
+Generative AI exists because of the transformer
+
+https://www.youtube.com/watch?v=4Qz4GfvjGLY
+With GenAI, an organization only needs a programmer and a prompt engineer.
+https://www.skool.com/new-society
+by David Ondrej of https://www.skool.com/new-society
+https://www.youtube.com/watch?v=9uQ-i3z_g0c
+
+Pieter Levels @levelsio - single-employee millionaire
+
+Devin
+r/webdev charge money on Upwork and Reddit
+
+Microsoft's AutoDev (see research paper)
+a team of agents:
+Tools library: file editing, retrieval, building, testing, git operations
+
+Zapier Central
+
+The future of AI is agentic.
+The basis of competition will be who can build better agents
+So building agents will be the most important skill
+
+CrewAI
+
+Claud 3 Haiku LLM costs $0.25 per million
+
+emaggiori
