@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-30"
-lastchange: "v026 + MAE, RMSE, MSE :acronyms.md"
+date: "2025-02-04"
+lastchange: "v028 + VADER :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -156,6 +156,7 @@ created: "2024-12-28"
 *	BOPLA	=	Broken Object Property Level Authorization
 * BOM = Bite Order Mark (used in Unicode to define which UTF page a grapheme is located)
 *	BOM	=	Bill of Material (for manufacturing)
+* <a target="_blank" href="https://borsh.io">Borsh</a> = Binary Object Representation Serializer for Hashing (faster alternative than <a target="_blank" href="https://serde.rs">Serde</a> for Rust)
 * BPM = Beats Per Minute (in music)
 *	BPCS	=	Basic Process Control System  (responsible for process control and monitoring of the industrial infrastructure)
 *	BPMN	=	Business Process Model Notation
@@ -966,7 +967,7 @@ created: "2024-12-28"
 *	PDF	=	Portable Document Format	(the format created by Adobe to create a universally accessible file containing graphics and text)
 * PDW = Parallel Data Warehouse (Microsoft SQL 2012 Analytics Platform System that became Azure SQL Data Warehouse)
 * PE = Pre-installed Environment (a bootable image of Microsoft Windows used to automate install)
-* PEFT = Parameter-Efficient Fine-Tuning (techniques for updating a small subset of an ML model’s parameters)
+* PEFT = Parameter-Efficient Fine-Tuning (techniques such as LoRA to update a small subset of an ML model’s parameters)
 *	PEM	=	Privacy Enhanced Mail (AWS private key certificate encoding file type)
 * PEP = Python Enhancement Proposal
 *	PEP	=	Policy Enforcement Point	(filters requests and makes eXtensible Access Control Markup Language (XACML) to a Policy Decision Point (PDP)
@@ -1162,6 +1163,7 @@ created: "2024-12-28"
 *	SEU	=	Single Event Upset (a soft error caused by a random alpha particle flipping a bit)
 *	SF	=	Service Fabric	(Azure)
 * SFC = Sequential Function Charts
+* SFT = Supervised Fine Tuning
 * SG	=	Security Group
 * SGD	=	Stochastic Gradient Descent (AI technique to iteratively optimize)
 *	SHA	=	Secure Hash Algorithm	(a method to identify whether a file has been altered - also used by GitHub to create an index)
@@ -1358,6 +1360,7 @@ created: "2024-12-28"
 
 *	v12n	=	Virtualization	(numeronym of 11 letters between v and n)
 * VAE = Variational Autoencoders (uses encoder-decoder architecture to generate new data for image and video generation)
+* VADER = Valence Aware Dictionary and sEntiment Reasoner (A lexicon that includes informal words used for sentiment analysis to determine emotional negativity)
 *	VAR	=	Value-Added Reseller
 *	VAT	=	Value-Added Tax
 *	VBO	=	Value-Based Outcome
