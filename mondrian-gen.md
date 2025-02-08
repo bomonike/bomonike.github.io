@@ -67,8 +67,6 @@ If you want the same result every time, write a procedural program like your gra
 
 That artpiece on my wall is a reminder thatAI generation is not "deterministic", meaning that every time I run the program with the same prompt, a different image is generated.
 
-> It's a reminder to me that AI does not natively respect rules.
-
 So I had that first image framed and hanging among on my wall as the basis for comparing others generated. I used a frame similar to another real Mondrian paining:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1736178566/mondrian.29-compnum3-268x266_hceym9.png"><img width="300" alt="mondrian.29-compnum3-268x266.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1736178566/mondrian.29-compnum3-268x266_hceym9.png" /></a>
@@ -87,18 +85,7 @@ When Qwen became available Feb 2025, I used it to generate this:
 The above broke the "rules" of Mondrian with its broken and faded lines.
 Colors are not confined between lines.
 
-> This reminds me that AI does not natively respect rules.
-
-<a name="multiple-generators"></a>
-
-## Multiple generators
-
-My program currently makes use of these APIs:
-
-   * OpenAI's DALL-E
-   * Anthropic's Claud
-   * Deep Seek Janus
-   * Qwan's Qwen-1.5
+> Lookign at it reminds me that AI does not natively respect rules.
 
 
 <a name="workflow"></a>
@@ -110,16 +97,20 @@ My program currently makes use of these APIs:
 The above provides a sequence of <a href="#TheProgram">the program's</a> workflow.
 It is a snapshot of the video created from <a target="_blank" href="https://7451111251303.gumroad.com/l/hdrsbe">this PowerPoint</a>.
 
+### 1. & 2. Secure API Keys
+
 #1 and #2 in <a href="#workflow">my workflow description</a> (in yellow) is to manually generate an API key for each service and store them securely for authenticated access by the program code.
 
 When I don't specify a specific api service, the program rotates through them one at a time.
 
 The CLI call is #3 in <a href="#workflow">my workflow description</a>.
 
+### 3. CLI parms
+
 I added a parameter to specify the number of images to generate with each CLI command call. I prefer to make a separate call for each image generation rather than specifying it in the request to the API. This is so that I can control the file name for each image generated.
 
 
-### Time and Dates
+### 4. Python vars
 
 The program begins with capturing time stamps at the earliest possible moment.
 
@@ -145,7 +136,45 @@ Presentation to users is in each user's local time zone and in AM/PM format:
 coverted from UTC ed on the local time zone obtained from operating system settings, such as:<br />
     2026-02-10 12:24:40.089415 PM MST -0700
 
+### 5. OS vars
 
+Some APIs were written to obtain its API Key from an OS-level variable.
+
+### 6. .env overrrides
+
+Too many developers put .env files to hold API Keys, which exposes them to everyone.
+
+Coding should reference them in the User's Home folder where GitHub usually doesn't look.
+
+However, .env files still contain plain text rather than encrypted cyphertext.
+
+### Pydantic
+
+### 7. Sentiment analysis
+
+The workflow includes an analysis of the prompt text for Negative, Positive, and Neutral words
+based on the "VADER" database of English words.
+
+
+<a name="multiple-generators"></a>
+
+### 8. Multiple generators
+
+My program currently makes use of these APIs:
+
+   * OpenAI's DALL-E
+   * Anthropic's Claud
+   * Deep Seek Janus
+   * Qwan's Qwen-1.5
+
+
+### 9. image files
+
+### 10. Desire evaluation
+
+I am intrigued by
+
+<hr />
 
 ## You'll need a robot to make this
 
