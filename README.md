@@ -1,11 +1,11 @@
 ---
 layout: post
 date: "2025-01-30"
-lastchange: "v016 + genai :README.md"
+lastchange: "v017 + mondrian :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
-excerpt: "Table of Contents to the Bomonike GitHub wiki." 
+excerpt: "Table of Contents to the Bomonike GitHub wiki."
 tags: [index]
 comments: true
 created: "2024-12-28"
@@ -49,6 +49,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a>
 maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/mechatronics">mechatronics</a>
+1. <a target="_blank" href="https://bomonike.github.io/mondrian-gen">mondrian-gen</a> (GenAI APIs to generate Mondrian-like artworks)
 1. <a target="_blank" href="https://bomonike.github.io/microbit">microbit</a>
 1. <a target="_blank" href="https://bomonike.github.io/networking">networking</a>
 1. <a target="_blank" href="https://bomonike.github.io/nft">nft (Non-Fungible Tokens) on web3</a>
