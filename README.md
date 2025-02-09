@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-30"
-lastchange: "v017 + mondrian :README.md"
+date: "2025-02-08"
+lastchange: "v0178 + prompt-engineering :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -49,7 +49,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a>
 maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/mechatronics">mechatronics</a>
-1. <a target="_blank" href="https://bomonike.github.io/mondrian-gen">mondrian-gen</a> (GenAI APIs to generate Mondrian-like artworks)
+1. <a target="_blank" href="https://bomonike.github.io/mondrian-gen">mondrian-gen</a> (Python workflow of utilities around using various GenAI APIs that generate Mondrian-like artworks from text prompts)
 1. <a target="_blank" href="https://bomonike.github.io/microbit">microbit</a>
 1. <a target="_blank" href="https://bomonike.github.io/networking">networking</a>
 1. <a target="_blank" href="https://bomonike.github.io/nft">nft (Non-Fungible Tokens) on web3</a>
@@ -63,6 +63,7 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/podcasts">podcasts</a>
 1. <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
 1. <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
+1. <a target="_blank" href="https://bomonike.github.io/prompt-engineering">prompt-engineering</a> using DPSy to automate better prompts using LLMs.
 1. <a target="_blank" href="https://bomonike.github.io/python-exams">python-exams</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-coding">python-coding</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
