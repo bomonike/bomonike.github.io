@@ -1,16 +1,16 @@
 ---
 layout: post
-url: https://bomonike.github.io/dspy
-date: "2025-02-08"
-lastchange: git commit -m"v001 + new :dspy.md"
-file: "dspy"
-title: "dspy"
-excerpt: "Even your AI prompts can be done better with AI with Declarative Self-improving Python."
+url: https://bomonike.github.io/prompt-engineering
+date: "2025-02-10"
+lastchange: git commit -m"v002 + new :prompt-engineering.md"
+file: "prompt-engineering"
+title: "Prompt-Engineering"
+excerpt: "Even your AI prompts can be done better with AI with Declarative Self-improving Python (DPSy)."
 tags: [python, ai, cloud]
 comments: true
 created: "2025-02-07"
 ---
-<a target="_blank" href="https://bomonike.github.io/dspy"><img align="right" width="100" height="100" alt="dspy.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/dspy.png?raw=true" />
+<a target="_blank" href="https://bomonike.github.io/prompt-engineering"><img align="right" width="100" height="100" alt="prompt-engineering.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/prompt-engineering.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
@@ -28,14 +28,18 @@ The object of this article is so you can add to your LinkedIn profile / resume s
 
 ## What is DSPy?
 
-DSPy is an acronym (pronounced "Dee Pee EsS Pi"), standing for <strong>Declarative Self-improving Python</strong>. It is a utility library open sourced in Dec 2022 by Standford's NLP group led by <a target="_blank" href="https://www.linkedin.com/in/omar-k-09747b188/">Omar Khatteb</a> at the
-Stanford Artificial Intelligence Laboratory (SAIL).
+DSPy is an acronym (<a target="_blank" href="https://www.youtube.com/watch?v=NoaDWKHdkHg&t=9m6s">pronounced "Dee Ess Py"</a>), standing for <strong>Declarative Self-improving Python</strong>. It is a utility library open sourced in Dec 2022 by Standford's NLP group in the
+Stanford Artificial Intelligence Laboratory (SAIL):
 
    <ul><a target="_blank" href="https://github.com/stanfordnlp/dspy">https://github.com/stanfordnlp/dspy</a></ul>
 
-As of this writing, it had 261 contributors.
+As of this writing, it had 261 contributors, led by <a target="_blank" href="https://x.com/lateinteraction">@lateinteraction</a> members <a target="_blank" href="https://www.linkedin.com/in/omar-k-09747b188/">Omar Khatteb</a> and
+<a target="_blank" href="https://www.youtube.com/watch?v=s85YY3myQLw&pp=ygUKZHBzeS5weSBhaQ%3D%3D">with Michael Ryan</a> and Josh Patel.
 
 BTW, the name is also a music troupe. So search for "dspy ai".
+
+
+## References
 
 According to these sources:
    1. <a target="_blank" href="https://dspy.ai">https://dspy.ai</a>
@@ -45,24 +49,45 @@ According to these sources:
    1. <a target="_blank" href="https://www.youtube.com/watch?v=D2HurSldDkE&t=20m52s">"Prompt Engineering is Dead; Build LLM Applications with DSPy Framework"</a> by <a target="_blank" href="https://www.linkedin.com/in/mattyatesatl/">Matt Yates</a> on the Databricks channel
    1. <a target="_blank" href="https://dspy-docs.vercel.app/docs/building-blocks/solving_your_task">this</a>
    1. https://www.youtube.com/watch?v=QdA-CRr_oXo Learn by Building AI "A Gentle Introduction" Part 1
+   1. https://www.youtube.com/watch?v=NoaDWKHdkHg&t=9m6s by MLOps.community interview Omar Khattab
+   1. https://www.youtube.com/watch?v=_ROckQHGHsU by Neural Breakdown with AVB
    1. https://www.youtube.com/watch?v=s85YY3myQLw by FunctionalTV
    1. https://arvix.org/pdf/2309.03409 LLMs as optimizers
    1. https://arvix.org/pdf/2405.06683 ERAGent
    1. https://www.youtube.com/watch?v=Y94tw4eDHW0 by Cohere
-   1. https://www.youtube.com/watch?v=Jfpxjg8xj9w by Fahd Mirza "Easy Tutorial"
+   1. https://www.youtube.com/watch?v=Jfpxjg8xj9w by Fahd Mirza "Easiest Tutorial"
    1. https://www.youtube.com/watch?v=ayHGacm5R_w by The AI Advantage "You probably don't need prompt engineering"
    1. https://www.youtube.com/watch?v=zBb8XQZ4ksI by Kamalraj MM
+   1. https://www.youtube.com/watch?v=s85YY3myQLw by FunctionalTV
+   1. https://www.youtube.com/playlist?list=PLYHC03VXva9sCKIAcozNMrtiKwjl6EQR- June 2024
+   1. https://www.youtube.com/watch?v=7EptCzJ9AL8 by Hacking AI
+   1. https://www.youtube.com/watch?v=wds11xm4ruo by Data Science in Everyday Life
 
 
 "You wouldn’t hand-select weights of your neural network, so don’t hand-select your prompts."
 DSPy's job is to expand <strong>signatures</strong> into prompts.
-DSPY also parses typed outputs.
+DSPy also parses typed outputs.
+
+## How DSPy Works
+
+DSPy is basically an optimising compiler that reads declarative code (signatures) to generate AI prompt text based on its predefined templates.
 
 > DSPy shifts the focus of work from tinkering with brittle prompt strings and messy incidental choices to programming with structured and declarative natural-language <strong>modules</strong>.
 
    * "Self-improving" means that Python framework for <strong>iteratively improving</strong> prompts using Python programming.
 
    * "Declarative" means for every AI component in your system, you specify input/output behavior as a signature and select a module to assign a strategy for invoking your LM.
+
+DSPy is based on PyTorch.
+
+Each template consists of:
+
+   <ul>Given the Context and Question, respond with Query.</ul>
+
+DSPy uses optimizers <a target="_blank" href="https://www.youtube.com/watch?v=s85YY3myQLw">VIDEO</a>:
+   * dspy.BootstrapFewShotWithRandomSearch
+   * dspy.COPRO and dspy.MIPROv2(Multi-Instruction PRoposer Optimiser version 2) induction of revised instructions <a target="_blank" href="https://www.youtube.com/watch?v=s85YY3myQLw&t=14m23s">VIDEO</a>
+   * dspy.BootstramFinetune for multi-stage fine tuning
 
 Compose different modules together into ergonomic, portable, and optimizable AI systems.
 
@@ -85,7 +110,7 @@ Within enterprises, it is now commonplace for <a target="_blank" href="https://s
 <a target="_blank" href="https://docs.anthropic.com/en/docs/prompt-engineering">
 <img alt="dspy-prompts-1714x628.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739076861/dspy-prompts-1714x628_d8tuc3.png" /></a>
 
-
+https://www.lycee.ai/blog/getting-started-with-dspy
 
 <a name="Signatures"></a>
 
@@ -93,6 +118,8 @@ Within enterprises, it is now commonplace for <a target="_blank" href="https://s
 
 Dpsy asks that you write your system in normal Python, but
 express <strong>AI steps</strong> in the form of <strong>DSPy signatures</strong>.
+
+As with other languaes, a signature defineds the input and output parameters of a function.
 
 DSPy handles:
 
@@ -115,11 +142,7 @@ The DSPy Optimizer has you pick will
 (iii) finetune the LM weights.
 
 
-https://x.com/lateinteraction
-Omar Khattab
-
 1. https://www.youtube.com/watch?v=Zv4LjO8teqE&t=856s&pp=ygUKZHBzeS5weSBhaQ%3D%3D
-1. https://www.youtube.com/watch?v=s85YY3myQLw&pp=ygUKZHBzeS5weSBhaQ%3D%3D
 1.  Lindy
 
    Extends RAG (Retrieval-Augmented Generation))
