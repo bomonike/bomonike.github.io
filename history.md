@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-20"
-lastchange: "v008 + eclipse :history.md"
+date: "2025-02-10"
+lastchange: "v009 + arabic :history.md"
 file: "history"
 title: "(Dates in) History"
 excerpt: "The most significant events in world history, in chronological order (plus the future)."
@@ -565,17 +565,20 @@ A "diadem" (crown) is a blue band marked with white which Persian kings used to 
 <br /> 606 Babylon captures Jerusalem, the <strong>beginning of &#8220;times of the Gentiles&#8221; <a target="bible" href="https://www.blueletterbible.org/kjv/luk/21/24/s_994024">Luke 21:24</a>)
 <br /> 604 Lao-tzu, founder of Taoism, born in China.
 
+<br /> 328 AD Nammara inscription is among earliest written evidence of Nabataean script Old Arabic.
+<br /> 470 AD oldest known inscription, a composite of Nabataean and Arabic writing, found near Najran in Saudi Arabia.
+
 <br /> 410-322 Age of Socrates (the first to recognize a one true, but unknown, G-d), Plato, and Aristotle in Greece
 <br /> 403 Start of &quot;Waring States&quot; period in China.
 
 <br /> 356 Alexander born to Phillip II of Macedonia, tutored by Aristotle (384-322)
 <br /> 338 Philip II of Macedonia conquers other Greek city-states in Battle of Chaeronea.
-<br /> 335 Alexander begins conquest of the known world with Thebes.
-<br /> 334 BC Battle of Granicus
+<br /> 335 Alexander begins in Thebes the conquest of the known world.
+<br /> 334 BC Battle of Granicus (now the Biga River in modern-day Turkey) is Alexander the Great's first major victory against the Persian Empire
 
-<br />
 
 <a id="Greecez"></a>
+
 ### Greece
 
    333 At the Battle of Issus, Alexander defeats the army of Persia to control the western Persian empire.
