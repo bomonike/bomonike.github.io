@@ -1,7 +1,7 @@
 ---
 layout: post
 url: https://bomonike.github.io/skills
-date: "2025-01-30"
+date: "2025-02-11"
 lastchange: "v004 + shelter :skills.md"
 file: "skills"
 title: "Skills"
@@ -139,13 +139,16 @@ Living in tents
 
 ## Hunt Wild Game
 
+* Snake poison awareness, capture, skinning, cooking
 * Raise rabits
+* Trap small game
 
 * Avoiding bears, cayotes, wolves
 * Trap mice indoors without chemicals
-* Trap small game
+
+* Create arrowheads and latch onto spears
 * Track and hunt game
-* Snake awareness, capture, skinning, cooking
+
 * Dressing and preserving game
 
 ## Growing Food
