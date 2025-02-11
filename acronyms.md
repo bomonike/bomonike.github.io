@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-09"
-lastchange: "v029 + NER :acronyms.md"
+date: "2025-02-11"
+lastchange: "v030 + PEFT :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -958,7 +958,6 @@ created: "2024-12-28"
 *	PAW	=	Privileged Access Workstation (Microsoft)
 *	PAYG	=	Pay-As-You-Go (such as for cloud services billing)
 *	PBC	=	Printed Control Board
-*	PNAC	=	Port-Based Network Attack
 *	PBC	=	Provided By Client	(SOC term)
 *	PC	=	Personal Computer	(refers to a Microsoft Windows machine)
 *	PCI	=	Peripheral Components Interconnect
@@ -968,7 +967,7 @@ created: "2024-12-28"
 *	PDF	=	Portable Document Format	(the format created by Adobe to create a universally accessible file containing graphics and text)
 * PDW = Parallel Data Warehouse (Microsoft SQL 2012 Analytics Platform System that became Azure SQL Data Warehouse)
 * PE = Pre-installed Environment (a bootable image of Microsoft Windows used to automate install)
-* PEFT = Parameter-Efficient Fine-Tuning (techniques such as LoRA to update a small subset of an ML model’s parameters)
+* PEFT = Parameter-Efficient Fine-Tuning (techniques such as LoRA to update a small subset of an AI ML model’s parameters)
 *	PEM	=	Privacy Enhanced Mail (AWS private key certificate encoding file type)
 * PEP = Python Enhancement Proposal
 *	PEP	=	Policy Enforcement Point	(filters requests and makes eXtensible Access Control Markup Language (XACML) to a Policy Decision Point (PDP)
@@ -999,6 +998,7 @@ created: "2024-12-28"
 *	PMM	=	Product Marketing Manager	(organizational role)
 *	PMO	=	Program Management Office
 * PMS = Pantone Matching System (to select colors)
+*	PNAC	=	Port-Based Network Attack
 *	POA&M	=	Plan of Action and Milestones
 *	PoC	=	Proof of Concept
 * POGIL = Process Oriented Guided Inquiry Learning
