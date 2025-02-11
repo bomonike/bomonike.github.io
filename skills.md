@@ -107,6 +107,11 @@ References:
 * Rocks to sleep with in the cold
 
 * Build a <a target="_blank" href="https://www.youtube.com/watch?v=7LV5wY-iM34">greenhouse heater</a> using a mason jar with copper tubes & felt buring denatured alchohol
+* Build a <a target="_blank" href="https://www.walmart.com/ip/Great-Value-All-Vegetable-Shortening-48-oz-Can/10450986">$6.18 48oz metal can of Great Value vegetables shortening</a> with a candle inside. <a target="_blank" href="https://youtu.be/DZ1CkDlN6Xw?si=J9C3298OMsCyMlTTl">with a copper coil to distribute heat</a> among <a target="_blank" href="https://www.walmart.com/ip/Kolorscape-Outdoor-Decorative-Extra-Fine-Washed-Play-Sand-4CF/16911957">>$4.97/12 cu ft play sand</a> in a bucket</a>. Burns for 6 hours. How's the smell?
+
+https://www.youtube.com/watch?v=bgjH4EvUPfs
+Living in tents
+
 
 ## Cooking
 

@@ -1,12 +1,71 @@
 ---
-lastchange: git commit -m"v002 + perpexity :genai-ide.md"
+layout: post
+url: https://bomonike.github.io/genai-ide
+date: "2025-02-04"
+lastchange: git commit -m"v003 + SWE-Bench :genai-ide.md"
+file: "genai-ide"
+title: "genai-ide"
+excerpt: "Here are my notes about using GenAI to help with programming."
+tags: [cloud, security, management, ai]
+comments: true
+created: "2025-01-25"
 ---
-
 <a target="_blank" href="https://bomonike.github.io/genai-ide"><img align="right" width="100" height="100" alt="genai-ide.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/genai-ide.png?raw=true" />
-Here are my notes about using GenAI to help with programming.
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
 
-"This year, it's LLMs. Last year it was blockchain. Next year maybe quantum".
-"We keep moving".
+## SWE-Bench benchmark
+
+https://www.swebench.com/
+SWE-Bench (Software Engineering Benchmark) has been used as the way to compare how well LLM offerings tests systems' ability to automatically <strong>solve GitHub issues</strong> in a dataset containing 2,294 Issue-Pull Request pairs from 12 popular Python repositories:
+
+   * astropy (95)
+   * Django (850)
+   * Flask (11)
+   * matplotlib (184)
+   * pylint (57)
+   * pytest (119)
+   * requests (44)
+   * scikit-learn (229)
+   * seaborn (22)
+   * sphinx (187)
+   * sympy (386)
+   * xarray (110)
+
+The <a target="_blank" href="https://arxiv.org/abs/2310.06770" title="Is AI Replacing Software Engineering?">10 Oct 2023 Arxiv article</a> describes the unit test verification using post-PR behavior as the reference solution.
+
+   <ul>"Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks."</ul>
+
+Those working on it include  carlosej@princeton.edu and johnby@stanford.edu
+
+Coding agents have made impressive progress on SWE-bench, with top scoring agents scoring 20% on SWE-bench and 43% on SWE-bench Lite according to the SWE-bench leaderboard⁠(opens in a new window) as of August 5, 2024. Advances on SWE-bench represent steps towards LMs that are more practical, intelligent, and autonomous. <a target="_blank" href="https://www.youtube.com/watch?v=pJ5dLwpG0_I">This VIDEO</a> from <a target="_blank" href="https://www.youtube.com/@Sourcegraph">@SourcegraphCody</a> introduced comparison of models that include:
+
+   * Google Gemini
+   * Devin
+   * Anthropic Claude 3.5 Sonnet
+   * Anthropic Claude
+   * SWE-Llama 113B
+   * SWE-Llama 7B
+   * OpenAI GPT-4
+
+Download from HuggingFace  the three variations:
+
+   * SWE-bench Lite - curated to make evaluation less costly and more accessible
+   * SWE-bench Multimodal featuring issues with visual elements (images, videos) from JavaScript repositories
+   * <a target="_blank" href="https://openai.com/index/introducing-swe-bench-verified/">SWE-bench Verified</a> - a human annotator filtered subset that has been deemed to have a ceiling of 100% resolution rate
+
+https://github.com/swe-bench/sb-cli/
+provides the CLI to run the benchmarks.
+
+The benchmark involves giving agents a code repository and issue description, and challenging them to generate a patch that resolves the problem described by the issue.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=XaOqSAXNkaM">SourcegrphCody's context fetching:<br />
+<img alt="genai-cody-flow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738733609/genai-cody-flow_hipplt.png" /></a>
+
+makes use of their <a target="_blank" href="https://sourcegraph.com/blog/anatomy-of-a-coding-assistant">OpenCtx</a> to manage contextual info about code.
+
+
 
 https://medium.com/@anala007/hidden-dangers-of-using-cursor-ai-for-code-generation-what-every-developer-should-know-f4993c407b00
 
@@ -86,23 +145,38 @@ This is adapted fron OReilly
 
 ## Solutions Evaluation
 
-<a target="_blank" href="https://research.aimultiple.com/ai-coding-benchmark/">
-Cem Dilmegani</a> identified these AI coding assistants as "Top ranked":
+    * <a target="_blank" href="https://www.youtube.com/watch?v=Ojk51mNOUow">VIDEO: "I ranked every AI Coder: Bolt vs. Cursor vs. Replit vs Lovable"</a> by Greg Isenberg
+   * <a target="_blank" href="https://research.aimultiple.com/ai-coding-benchmark/">Cem Dilmegani</a> identified these AI coding assistants as "Top ranked":
+
+There are two types of developers:
+
+   A. "Non-technical" who prefer lowcode/no code approach and admire micro-animations on websites
+   B. "Technical" nerds who can code Python, JavaScript, Rust, C, Java, etc.
+
+For the capable nerds:
+
+   * 4.9 Windsurf is almost magical
    * 4.8 <a href="#Cursor">Cursor</a> <a target="_blank" href="https://www.youtube.com/watch?v=CqkZ-ybl3lg" title="by Deave Ebbelaar Sep 2024">VIDEO</a>
+
+For those with low code preferences and CD (Code & Deploy):
+
+   * 4.5 Replit (CD too) with collaboration
+   * Onlook
+   * Tempolabs (like Figma, Code Editor)
+   * <a href="#Bolt">Bolt.new</a> <a target="_blank" href="https://www.youtube.com/watch?v=JnikJf0m5J4">VIDEO</a> is a combination of tools. (CD too)
+
+   * Lovable like Figma GUI designer with collaboration
+   * v0 (CD too)
    * 4.6 <a href="#AmazonQ">Amazon Q</a>
    * 4.5 Gitlab
-   * 4.5 Replit
-Others:
    * 4.4 Cody
    * 4.2 Gemini and Codeium for high performance
    * 4.1 Codiumate from Codeium
    * 4.1 Github Copilot (VSCode extension)
    * 4.0 Tabnine for concise coding
 
-   * <a href="#Bolt">Bolt.new</a> <a target="_blank" href="https://www.youtube.com/watch?v=JnikJf0m5J4">VIDEO</a> is a combination of tools.
-   * Devon?
+   * Devon? has an amazing code-fixing demo, and it's expensive
    * Mistral
-
    * HumanEval?
 
 Combined evaluation criteria from various sources:
@@ -327,3 +401,36 @@ https://www.sonarsource.com/lp/solutions/ai-assurance-codefix/
 High quality, AI-assisted coding assured with Sonar
 
 https://claude.ai/ from Anthropic. You must have a valid phone number to use Anthropic’s services. SMS and data charges may apply.
+
+https://www.youtube.com/watch?v=lw8RTSb39l4
+Which AI App Builder Should We Use? Is it Windsurf, Cursor, Bolt, Replit, v0, Vs Code, or Databutton
+Corbin Brown
+
+https://dzone.com/articles/how-llms-are-changing-code-generation-ides
+The Workflow of LLM-Powered IDEs
+1. Editor
+The process starts with a change that you, as the developer, make in the code using the code editor. Perhaps you typed some new code, deleted some lines, or even edited some statements. This is represented by node A.
+
+2. Context Extractor
+That change you have just made triggers the Context Extractor. This module essentially collects all information around your modification within the code — somewhat like an IDE detective looking for clues in the environs. This is represented by node B.
+
+3. AST Structure Generation
+That code snippet is fed to a module called AST Structure Generation. AST is the abbreviation for Abstract Syntax Tree. This module will parse your code, quite similar to what a compiler would do. Then, it begins creating a tree-like representation of the grammatical structure of your code. For LLMs, such a structured view is important for understanding the meaning and the relationships among the various parts of the code. This is represented by node C, provided within the curly braces.
+
+4. Creation of Code Graph Definition
+Next, the creation of the Code Graph Definition will be done. This module will take the structured information from the AST and build an even greater understanding of how your code fits in with the rest of your project. It infers dependencies between files, functions, classes, and variables and extends the knowledge graph, creating a big picture of the general context of your codebase. This is represented by node D.
+
+5. LLM Context API Input
+All the context gathered and structured — the current code, the AST, and the code graph — will finally be transformed into a particular input structure. This will be done so that it is apt for the large language model input. Then, finally, this input is sent to the LLM through a request, asking for either code generation or its completion. This is represented by node E.
+
+6. LLM API Call
+It is now time to actually call the LLM. At this moment, the well-structured context is passed to the API of the LLM. This is where all the magic has to happen: based on its training material and given context, the LLM should give suggestions for code. This is represented with node F, colored in blue to indicate again that this is an important node.
+
+7. Generated Output
+The LLM returns its suggestions, and the user sees them inside the code editor. This could be code completions, code block suggestions, or even refactoring options, depending on how well the IDE understands the current context of your project. This is represented by node G.
+
+## References
+
+https://www.youtube.com/watch?v=2ZpJXHiPwtQ
+"How useful is AI for programming? | Marc Andreessen and Lex Fridman"
+Lex Clips

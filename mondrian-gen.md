@@ -1,11 +1,11 @@
 ---
 layout: post
 url: https://bomonike.github.io/mondrian-gen
-date: "2025-02-07"
+date: "2025-02-09"
 lastchange: git commit -m"v003 + workflow diagram :mondrian-gen.md"
 file: "mondrian-gen"
 title: "mondrian-gen"
-excerpt: "Here are my notes about using GenAI to help with programming."
+excerpt: "Here are my notes about creating Python code to create a workflow  to generate art using several GenAI services."
 tags: [art, nft, ai, cloud, python]
 comments: true
 created: "2025-02-07"
@@ -16,8 +16,9 @@ created: "2025-02-07"
 
 <a name="TheProgram"></a>
 
-I created the program at <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py">https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py</a>
-to assemble all the various Python coding tricks and API calls together, in <a href="#workflow">one workflow</a>, in <strong>one program file</strong>, as the basis for being prepared to "do anything" during hackathons and MVP creations, <strong>quickly yet securely</strong>.
+This article describes my program at <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py">https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py</a>
+
+The Python program assembles, into one file, many Python coding tricks and API calls together, in <a href="#workflow">one workflow</a>. That's to be prepared to "do anything" during hackathons and MVP creations, <strong>quickly yet securely</strong>.
 
 Thus, this is intentionally a rather "bloated swiss army knife" monolith.
 However, in the future, utility functions here can be
@@ -26,14 +27,35 @@ But they are together here now to make it easier to understand and modify.
 
 ## GenAI
 
-Currently, this program has both local programming and Generative AI (GenAI) API calls to create (from text prompt) a PNG image file of art in the "pure abstract Neoplasticism style"
+Currently, this program has both local programming and Generative AI (GenAI) API calls to create (from text prompt) a <strong>PNG image</strong> file that can be printed and possibly sold as NFT art.
 
-This is to see how the different ways of creating horizontal and
-vertical lines of rectangular boxes filled with primary colors
-compare with the intuitive beauty of works manually created by Mondrian himself.
+Perhaps in the future, this workflow can be extended to other output formats:
+text, audio/music, video, 3D objects for printing, synthetic data, code.
+
+Criteria for evaluating foundation LLMs:
+   * Competitive advantages
+   * Incremental Investment (leveraging existing skills on AWS, GCP, Azure, Databricks, etc.)
+   * Cost (acquiring expertise, license fees, fine-tuning, and running models)
+   * Vendor lock-in
+   * Privacy & Security (private data leaked to China?)
+   * Quality (hallucinations due to lack of content in the LLM's corpus)
+   * Latency (does it waste your time creating or running the workflow?)
+   * Biases (promoting toxic & malicious stereotypes in data used to build the model)
+   * Debugging (logging, NeMo Guardrails)
+
+Regulations around AI:
+   * EU AI Act
+   * US Algorithmic Accounting Act 2022
+   * Japan AI regulation approach 2023
+   * California Regulation of Automated Decision Tools
+   * Biden-Harris Responsible AI Actions 2023 and Trump EO 2025
 
 
 ## Why Mondrian?
+
+This effort is to see how the different ways of creating horizontal and
+vertical lines of rectangular boxes filled with primary colors
+compare with the intuitive beauty of works manually created by Mondrian himself. Some call the art style "pure abstract Neoplasticism".
 
 I came to generate my fake art in Piet Mondrian style because it seemed easy to create his style in computer code: rectangular blocs with sharp corners and filled with primary colors.
 
@@ -94,10 +116,10 @@ Colors are not confined between lines.
 
 ## A GenAI workflow
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1738990409/genai-1_zqvu5i.png"><img alt="genai-1.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738990409/genai-1_zqvu5i.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739206840/genai-1-1802x860_oxp2to.pngg"><img alt="genai-1-1802x860.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739206840/genai-1-1802x860_oxp2to.png" /></a>
 
 The above provides a sequence of <a href="#TheProgram">the program's</a> workflow.
-It is a snapshot of the video created from <a target="_blank" href="https://7451111251303.gumroad.com/l/hdrsbe">this PowerPoint</a>.
+It is a snapshot of a future video created from <a target="_blank" href="https://7451111251303.gumroad.com/l/hdrsbe">this PowerPoint</a>.
 
 ### 1. & 2. Secure API Keys
 
@@ -172,6 +194,7 @@ Coding should reference them in the User's Home folder where GitHub usually does
 
 However, .env files still contain plain text rather than encrypted cyphertext.
 
+This is why a backup file is created automatically at start of run.
 
 ### 7. Sentiment analysis
 
@@ -193,11 +216,84 @@ My program currently makes use of these APIs:
 
 ### 9. image files
 
+The program currently outputs "lossless" .png format image files.
+
+TODO: It can also create files that are smaller by outputting "lossy" format image files in (jpeg, webp, etc.).
+
+Then there are video (.mp4) format files.
+
+
 ### 10. Desire evaluation
 
-I am intrigued by
+Traditionally, the effectivenss of AI is measured by "Accuracy".
+
+When art is generated, there needs to be a measure of <strong>taste</strong>
+or "Desirability" to certain audiences.
+
+### 11. Watermark
+
+### 12. Encryption
+
+Encryption also involves the creation and storage of keys used to encrypt and decrypt files.
+
+The program can generate an symmetric key or a pair of asymmetric private and public keys.
+
+On macOS machines, the program stores keys in Keychain app because it authenticates users.
+
+### 13. Wallets
+
+To monitize, a crypto wallet is needed. There are several of them.
+
+### 14. NFT chain
+
+### 15. Marketplace
+
+### 16. Thumbnails
+
+### 17. IPFS
+
+Many blockchain make uses of the
+IPFS (InterPlanetary File System) holds files permanently and cheaply.
+
+### 18. QR code
+
+QR codes typically send a URL to mobile devices though their camera.
+
+### 19. Discord
+
+Discord is a free chat app that doesn't charge money.
+
+ TODO: Send to TODOIST https://developer.todoist.com/sync/v8/
+
+ TODO: Send to IFTTT
 
 
+### 20. SMTP email 
+
+Emailing to a Gmail account is free.
+
+ TODO: Send to email https://www.emaildev.com/
+
+### 21. $MS etc.
+
+Those like Zapier, and Microsoft Teams.
+
+ TODO: Send to Jira.com, monday.com
+
+
+### 22. Slack, Telegram, Whatsapp
+
+### 23. logging
+
+### 24. MongoDB Atlas
+
+### 25. Analytics
+
+dashboard and, more importantly, alerts
+
+### 26. DPSy.ai Prompt Engineering
+
+See https://bomonike.github.io/prompt-engineering/
 
 <hr />
 

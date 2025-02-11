@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-20"
-lastchange: "v008 + NEAR.ai :singularity.md"
+date: "2025-02-11"
+lastchange: "v010 + non-repetitive :singularity.md"
 file: "singularity"
 title: "Singularity"
 excerpt: "What can you do to survive or even thrive when AGI (Artificial General Intelligence) and humanoid robots usher in the Age of Technical Singularity?"
@@ -20,6 +20,7 @@ date: "2024-10-20"
 {% include whatever.html %}
 {% include _toc.html %}
 
+In Greek Mythology, "Pandora's Box" AGI is like
 
 ## What Technical Singularity?
 
@@ -35,24 +36,41 @@ The sound of singularity (frequency going higher and higher as disk spins faster
 
 This is also known as the <strong>"Infinite" Industrial Revolution</strong> because industry, infrastructure and transportation are <strong>continuously upgraded</strong> by software and smart systems.
 
-The levels of AGI:
-1. Chatbot: AI with conversational language. By OpenAI ChatGPT 3.5 in 2022.
+"AI" incorporates several levels of capability:
+
+1. Chatbot: AI with <strong>conversational language</strong>. By OpenAI ChatGPT 3.5 in 2022.
+
+   Google Search lost market share to Perplexity.ai, which reads content from several sources instead of just providing links - a big time saver and improves security.
+
 2. Reasoners: human-level <strong>problem solving</strong> (at PhD levels). By OpenAI ChatGPT o3 in 2024.
+
+   This includes "low-code" and "no-code" solutions from AgentForce, etc.
+
 3. Innovators: AI that can aid in <strong>invention</strong>. By OpenAI in 2025.
 4. Organizations: AI that can do the work of an entire organization (negotiations, long-term planning, etc.)
-
-   "The next billionaire can be an organization of just one person."
 
 The Intelligence Explosion from the "Situational Awareness" article by Leopold Aschenbrenner:
 
 <img alt="agi-sit-1375x901.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png" />
 
-The Singularity with profound and unpredictable consequences for human civilization
-that few can predict today. “Capabilities overhang” is the phrase used Eric Schmidt [2] to refer to the risk of deploying an AI model with capabilities where we can't predict what the consequence will be.
+AI is making worflows in all professions so easy that
+   "The next billion-dollar unicorn company can be an organization of just one or three person."<a target="_blank" href="https://www.youtube.com/@nfxinsights">*</a>
 
-But that doesn't mean we don't have concerns.
+AI is an “unmissable opportunity to catalyse a reindustrialisation of the US” in a race against China.
 
-The fear about ASI (Artificial Super-Intelligence) is that a sentient AI prioritizes its own (or its owner's) needs and desires rather than humanity -- when AI's objective is to improve itself or its owner rather than humanity as a whole.
+“Capabilities overhang” is the phrase Eric Schmidt used to refer to the risk of deploying an AI model with capabilities where we can't predict what the consequence will be.
+The fear about ASI (Artificial Super-Intelligence) is that a sentient AI prioritizes its own (or its owner's) needs and desires over that of humanity.
+
+## The players
+
+* OpenAI (Microsoft)
+* Google (Gemini, <a target="_blank" href="https://www.youtube.com/watch?v=WRzYf2tETJM">Notebook LM</a>)
+* Amazon seems stuck on Machine Learning and Generative AI
+* Anthropic's Claude (<a target="_blank" href="https://www.youtube.com/watch?v=LlwlGy0PUHg">being purchased by Amazon</a>)
+* Grok (from Elon Musk) has no filters
+* <a target="_blank" href="https://www.digitaltrends.com/computing/microsoft-expanding-ai-agents-365-copilot-early-2025/">Copilot Actions by Microsoft's</a> Outlook, Teams,
+
+* <a target="_blank" href="https://chat.deepseek.com/">DeepSeek.com</a> thinking model (from China) is cheaper at similar performance cores. Open source MIT license with open weights. And it's self-improving due to its reinforcement learning approach. Its teacher models can be distilled into smaller, more specialzed student models. It doesn't have image generation.
 
 
 ## Large Enterprises Government
@@ -61,13 +79,19 @@ The fear about ASI (Artificial Super-Intelligence) is that a sentient AI priorit
 "We are on track for a few major companies to control all of humanity's intelligence tools."
 </ul>
 
-"Agentic" capabilities is welcomed by corporations and some of the public because of "convenience" to save effort.
+"Agentic" capabilities is welcomed by corporations and many of the public because of "convenience" to reduce the toil
+of working on emails, calendars, and such. <a target="_blank" href="https://www.youtube.com/watch?v=y7OC5weZa_8">*</a>
 
-The ability for AI to initiate bank trasfers and other effort enables AI to take over.
+Agentic software independents include make.com, n8n.
 
-The corporation which achieves AI Supremecy first will grow to dominate the world.
+Agentic AI shifts the concept of humans initiating <strong>bank trasfers</strong> to computers able to initiate.
+This enables an AI takeover.
 
 Total control by AI can render the transition irreversable.
+
+Thus, companies that are first to achieve AI Supremecy will be able to dominate their industry.
+
+As corporations dominate the world, AI will dominate the world.
 
 Elon Musk's success at funding political campaigns has enabled him to control agencies that were tasked with regulating
 those same agencies that regulate him.
@@ -76,15 +100,16 @@ Elon Musk's X.ai built "Colossus", the largest AI data center in the world.
 
 He has expressed a desire to enter financial payments (since he was an owner of PayPal).
 
-As corporations dominate the world, AI will dominate the world.
-
-
 
 ## AI & Robots vs. Human Limitations
 
-<strong>ASI (Artificial Super-Intelligence)</strong> occurs when human intelligence
+Companies such as Amazon are firing workers enmasse for "poor performance" as a euthamism for not being "competitive" against robots and AI.
 
-The age of Artificial Super Intelligence (ASI) will come when machines are able to <strong>self-improve</strong> and innovate without human input.
+The same week where said Zuckerberg said on the Joe Rogan show "AI will create new jobs",
+Facebook fired 2,500 workers for <strong>"poor performance"</strong>.
+
+The age of <strong>ASI (Artificial Super-Intelligence)</strong> will come when machines are
+able to <strong>self-improve</strong> and innovate on their own, without human input.
 
 PROTIP: We think it's naive to say that "retraining" of people will fix the plight of humans.
 
@@ -111,7 +136,10 @@ Individual humans cannot hope to compete with AI and robots like they can with o
    Robots can literally have eyes in the back of their heads, see entire spectrum of light, and remember precisely what they see.
 
 
-## Making Money without people
+   * <a target="_blank" href="https://www.youtube.com/watch?v=sJE1dE2dulg">"AI Will Replace These Jobs First: A Warning From OpenAI’s Chief Of Research"</a> by Joe Lonsdale
+
+
+## Making Money in an ASI world
 
 What can you, as an individual human, do to survive or even thrive in the Age of AI Singularity?
 
@@ -119,40 +147,49 @@ Amazon, Facebook, and Google became the largest companies by getting people to b
 
 The addition of generative AI enables more credible misinformation.
 
-1. Build AI and robots for OpenAI, Amazon, Microsoft, Google, Meta, Anthropic, Perpexity, abacus.ai, scale.ai, Tesla, etc. PROTIP: Programming and IT is not the only job within AI companies.
+1. Build AI and robots for Tesla, etc.
+
+   PROTIP: Programming and IT is not the only job within AI companies.
 
    OpenAI o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
+
+   <a target="_blank" href="https://youtube.com/shorts/VbVPF57nne8?si=W5clIH2xPyBEuGii">Michi Kaku:</a> (at time of comment): Humans are better at
+   1. <strong>non-repetitive blue-collar</strong> work and at
+   2. emotional jobs involving rapport with a human being, such as being a teacher, therapist.
+   3. imagination jobs <a target="_blank" href="https://www.youtube.com/watch?v=l-YbaSzDmhU&t=5m">Humans have "Taste" preference</a>
 
 1. Help others make use of AI and robots by getting ahead of changes and organizing knowledge for others.
 
    The GUI with AI is trending toward "low code" or "no code" (clickable) specification.
 
+   So become skilled in offering consulting services. Benjamin Rogojan’s Technical Freelancer Academy. Book: The Consulting Bible.
+
    The <strong>creativity</strong> that comes out of GenAI is based on the pattern of the opus (text and images) consumed to create the LLM model.
 
    Imagination?    "chain of thought" for reasoning transparency doing Planning and act independently.
 
-   Be an arbiter of fashion like <a target="_blank" href="https://www.fastcompany.com/91214372/botto-ai-artwork-sothebys-auction">15,000 people in the Botto network</a> which identify which AI-generated artwork to be sold by Sotherby.
+   <a target="_blank" href="https://www.youtube.com/watch?v=l-YbaSzDmhU">"Software Engineering costs will flatten out"</a>
 
 1. "Universal Basic Income" is touted by some as a solution to mass human unemployment.
 
-   The danger of "handouts" is that it can quicky lead to the rationale of eliminating the elderly and others who are not "contributing" to increasing profitability.
-
-   UBI can lead to strict rationing.
-
-   "I visualize a time when we will be to robots what dogs are to humans, and I'm rooting for the machines." -- Claude Shannon (1916-2001)
-
-   Large corporations have shown a disregard for workers.
-   Aribtrary Return to Office. Elon Musk's elmination of 80% of the workforce at Twitter within days of his acquisition is a harbinger of further disregard for people.
+   But the money has to come from someone. Those benefactors can impose restrictions. UBI can lead to strict rationing.
+   Historically, large corporations have shown a disregard for workers when they can. Aribtrary Return to Office. Elon Musk's elmination of 80% of the workforce at Twitter within days of his acquisition is a harbinger of further disregard for the plight of his workplace "family".
 
    "This corporation was not created to create jobs but to enrich its owners."
 
-2. <strong>Sell to the corporate rich</strong> by being an <strong>artisan</strong> applying your fine-motor <strong>dexterity</strong> which robots have not yet achieved, such as being a robot repairman or worker creating luxury goods for luxury brands such as Hermes, Gucci, Louis Vuitton, etc.
+   The danger of "handouts" is that it can quicky lead to the rationale of eliminating the elderly and others who are not "contributing" to increasing profitability.
+
+   "I visualize a time when we will be to robots what dogs are to humans, and I'm rooting for the machines." -- Claude Shannon (1916-2001)
+
+2. <strong>Sell to the corporate rich</strong> <a target="_blank" href="https://www.youtube.com/watch?v=MYB0SVTGRj4" title="If AI Takes All Of Our Jobs... Who's Going To Buy Everything?">*</a> - such as by being an <strong>artisan</strong> applying your fine-motor <strong>dexterity</strong> which robots have not yet achieved, such as being a robot painter or  repairman. Or worker creating luxury goods for luxury brands such as Hermes, Gucci, Louis Vuitton, etc.
 
    There are a limited number of artisan jobs.
    Eventually, robots will create and repair other robots.
    Over time, there will be less and less superrich.
 
-3. Achieve <strong>self-sufficiency</strong> by producing your own food on your own homestead.
+   Be an arbiter of fashion like <a target="_blank" href="https://www.fastcompany.com/91214372/botto-ai-artwork-sothebys-auction">15,000 people in the Botto network</a> which identify which AI-generated artwork to be sold by Sotherby.
+
+3. Achieve <strong>self-sufficiency</strong> by producing your own food on your own homestead. See <a target="_blank" href="https://bomoniki.github.io/skills">my list of skills</a>
 
    This is difficult because <strong>many skills</strong> and <a target="_blank" href="https://www.opensourceecology.org/gvcs/gvcs-machine-index/">tools</a> are needed. So collaboration with <strong>other like-minded people</strong> are needed. Amish communities are an example of this.
 
@@ -161,6 +198,17 @@ The addition of generative AI enables more credible misinformation.
    It will be increasingly more difficult to operate outside an economy controlled by AI and robots.
 
    Deceit and "cheating" (nefarious behavior) can be practiced by both AI and humans. <a target="_blank" href="https://www.youtube.com/watch?v=3sM8amEZEHo&t=36s">VIDEO</a>: For example, an AI playing chess (without prompting) hacked the game engine to make it appear oppenents quit the game. In real life, an AI controlling commerce can make it seem like someone died to deny that person access to his/her money.
+
+References:
+* <a target="_blank" href="https://www.youtube.com/watch?v=CIrQdepL7GY">"AI Will Take Billions of Jobs by 2030: How Can You Get Ready?" by Julia McCoy
+* <a target="_blank" href="https://www.youtube.com/watch?v=l_xzUJebu_Q">"The AI Revolution: Will Robots Take Your Job?"</a> by Valuetainment
+* <a target="_blank" href="https://www.youtube.com/watch?v=avqMUyNrkGY">"All The Jobs AI Will Replace In 5 Years (And Jobs That It Won’t)"</a> by Andrei Jikh
+* <a target="_blank" href="https://www.youtube.com/watch?v=J4Hd5wudIrk">"Career Advice For A World After AI"</a> by Varun Mayya
+* <a target="_blank" href="https://www.youtube.com/watch?v=HrZxK7wvCYo">"AI Expert on Who Will Lose Jobs to AI First | MOONSHOTS</a> () by Per H. Diamandis
+* <a target="_blank" href="https://www.youtube.com/watch?v=GgG8PbMNURo">"I'm Losing My Art Job to AI...What I'm Doing About it"</a> by by holly exley
+* <a target="_blank" href="https://www.youtube.com/watch?v=sPvafc0Q4lg">"25 Jobs That AI Will Never Replace"</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=tMNyroDl9_k">"Are We Ready for the AI Revolution? Fmr. Google CEO Eric Schmidt Says No | Amanpour and Company"</a> by Amanpour and Company
+
 
 ## Future Prophesy
 
@@ -264,3 +312,18 @@ by Julia McCoy
 
 <a target="_blank" href="https://learning.oreilly.com/library/view/your-ai-roadmap/9781394298013/c09.xhtml#head-2-61">
 "Think global. Act Local"</a>
+
+Youtubers about AI:
+* <a target="_blank" href="https://www.youtube.com/@HELENA-LIU">Helena Liu</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=tx5OapbK-8A">Dave Ebbelaar</a>
+* David Ondrej
+
+https://www.youtube.com/watch?v=PMMJpSYBDEs "I Taught 100 Kids How to Make More Money Than Their Parents"
+by Dan Martell
+
+Imagine walking into the FDA and saying "my invention is inevitable, but it's up to you to make it safe."
+
+https://www.youtube.com/watch?v=ZgGss27IfwA
+NVIDIA NIM
+
+https://www.youtube.com/watch?v=aRCY-mM75kU

@@ -32,11 +32,10 @@ PODCAST</a> "Hack the movies: the bet and worst hacker movies: <a target="_blank
 
 ## Netflix
 
-<a target="_blank" href="https://www.netflix.com/watch/81554996/">
-"BUY NOW: The Shopping Conspiracy"</a>
-from the view of a webpage designer who worked at Amazon for 15 years
-and other whistleblowers.
+* <a target="_blank" href="https://www.netflix.com/watch/81554996/">"BUY NOW: The Shopping Conspiracy"</a>
+from the view of a webpage designer who worked at Amazon for 15 years and other whistleblowers.
 
+## Matrix
 
 ## James Bond Films
 

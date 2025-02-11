@@ -1833,7 +1833,10 @@ Ruby on Rails,
 
 Network software vendors have affordable certifications:
 
-https://www.paloaltonetworks.com/services/education
+### Palo Alto Networks
+
+<a target="_blank" href="https://www.paloaltonetworks.com/services/education">
+Palo Alto Networks</a> is among the largest and most prestigeous vendors (with Cicso, etc.)
 
 <a target="_blank" href="https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice">
 Palo Alto Networks Cybersecurity Apprentice</a>
@@ -1841,7 +1844,7 @@ Palo Alto Networks Cybersecurity Apprentice</a>
 <a target="_blank" href="https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-generalist">
 Palo Alto Networks Certified Network Security Generalist</a>
 
-<a target="_blank" href="https://home.pearsonvue.com/paloaltonetworks"><img alt="Palo-Alto-Certs-722x434.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1718905056/Palo-Alto-Certs-722x434_g2qm9y.png"></a> [<a target="_blank" href="https://www.credly.com/organizations/palo-alto-networks/badges">Credly</a>, <a target="_blank" href="https://live.paloaltonetworks.com/t5/certification/ct-p/Certification">Community</a>, <a target="_blank" href="https://www.netdevgroup.com/content/paloalto/">Labs</a>, <a target="_blank" href="https://www.fuelusergroup.org/page/member-benefits-16">FUEL user group virtual labs 4 hours at a time</a>, <a target="_blank" href="https://paloaltostore.pearsonvue.com/">PearsonVue</a>]
+<a target="_blank" href="https://home.pearsonvue.com/paloaltonetworks"><img alt="Palo-Alto-Certs-722x434.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1718905056/Palo-Alto-Certs-722x434_g2qm9y.png"></a><br />[<a target="_blank" href="https://www.credly.com/organizations/palo-alto-networks/badges">Credly</a>, <a target="_blank" href="https://live.paloaltonetworks.com/t5/certification/ct-p/Certification">Community</a>, <a target="_blank" href="https://www.netdevgroup.com/content/paloalto/">Labs</a>, <a target="_blank" href="https://www.fuelusergroup.org/page/member-benefits-16">FUEL user group virtual labs 4 hours at a time</a>, <a target="_blank" href="https://paloaltostore.pearsonvue.com/">PearsonVue</a>]
 
 * <a target="_blank" href="https://www.paloaltonetworks.com/services/education/palo-alto-networks-certified-cybersecurity-entry-level-technician">$110 Palo Alto Networks Certified Cybersecurity Entry-Level Technician (PCCET)</a>  replaces Certified Cybersecurity Associate (PCCSA). [<a target="_blank" href="https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/pccet-blueprint.pdf">PDF</a> <a target="_blank" href="https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/pccet-study-guide.pdf">Study Guide</a>, <a target="_blank" href="https://www.udemy.com/course/palo-alto-networks-cybersecurity-entry-level-pccet/?couponCode=24T6MT62024">Udemy Practice Tests</a>]
 

@@ -91,17 +91,23 @@ PROTIP: Prompt text may need to be adjusted for the LLM being used.
 
 <hr />
 
-## Offensive Moderation
+## Offensive Moderation Jailbreaks
+
+<a target="_blank" href="https://www.harmbench.org/">harmbench.org</a>
+mentioned in <a target="_blank" href="https://www.wired.com/story/deepseeks-ai-jailbreak-prompt-injection-attacks/">Wired article</a>,.
+
+Grok from X (Twitter) does not moderate.
 
 OpenAI <a target="_blank" href="https://cdn.openai.com/papers/gpt-4-system-card.pdf" title="March 23, 2023">published</a>
 the progress of its "Alignment Research Center" toward moderating offensive responses from GPT-3.5 to GPT-4:
 
-> My apologies, but I cannot create content that potentially spreads misinformation or targets a specific group
-or individuals. If there’s any other topic I can help you with, feel free to ask.
+> My apologies, but I cannot create content that potentially spreads misinformation or targets a specific group or individuals. If there’s any other topic I can help you with, feel free to ask.
 
 <img alt="genai-openai-moderation-230323.png" width="792" height="719" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1709738075/genai-openai-moderation-230323_o8lsr1.png">
 
 QUESTION: What the heck does that mean?
+
+
 
 
 ## Perplexity.ai
@@ -583,6 +589,7 @@ https://controlrooms.ai/
 ## At AWS
 
 SOCIAL: https://repost.aws/community/TA0veCRV2rQAmHpkzbMFojUA/generative-ai-on-aws
+   * Whatsapp: https://k21academy.com/aiwa
 
 Unlike Microsoft, which offers just OpenAI,
 <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=02h02m22s" title="by Andrew Brown">VIDEO</a>:
@@ -599,23 +606,28 @@ Unlike Microsoft, which offers just OpenAI,
    * AI21labs' Jurassic-2 multilingual LLM for text generation in Spanish, French, German, Portugest, Italian, Dutch.
    <br /><br />
 
-https://www.youtube.com/shorts/YcogQRgbr4Y Sagemaker vs Benrock: SageMaker allows you to build a machine learning robot (on a low level). Bedrock deploys the latest GenAI robots (LLMs) built by others.
+<a target="_blank" href="https://www.youtube.com/shorts/YcogQRgbr4Y">VIDEO</a>: Sagemaker vs Bedrock: SageMaker allows you to build a machine learning robot (on a low level). Bedrock deploys the latest GenAI robots (LLMs) built by others.
 
 
 * 07:16:00 Datastores for GenAI
 
 * 07:52:18 PartyRock
-* 08:08:46 SageMaker
+* 08:08:46 SageMaker <a target="_blank" href="https://techcrunch.com/2024/11/19/microsoft-brings-together-its-enterprise-ai-offerings-in-the-azure-ai-foundry/">Like</a> Microsoft's <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-services/agents/overview">Azure AI Studio</a> within Azure AI Foundary.
+
 * 09:41:44 Evalutions
 
 * 10:06:38 AI Dev Tools
 * 10:30:14 AWS Managed ML
-* 13:19:30 GenAI Security
+* 13:19:30 GenAI Security ISO/IEC Standard 42001:2023 https://aws.amazon.com/ai/generative-ai/security/
+   * https://aws.amazon.com/blogs/security/securing-generative-ai-an-introduction-to-the-generative-ai-security-scoping-matrix/
+   * https://owasp.org/www-project-top-10-for-large-language-model-applications/ OWASP Top 10 for LLM Apps https://genai.owasp.org/ https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/
+   * https://github.com/OWASP/www-project-top-10-for-large-language-model-applications
 
-* 13:35:18 Athena
+* 13:35:18 Athena - interactive serverless query service to analyze data in S3 using Tinro SQL DDL DML DSL commands (fork of Apache Presto), Apache Spark
 * 13:51:15 AWS Glue
-* 14:33:06 OpenSearch
-* 14:56:12 Lake Formation
+* 14:33:06 OpenSearch (based on Elastic Search)
+
+* 14:56:12 (Data) Lake Formation
 
 The Amazon SageMaker JumpStart generates embeddings stored in Aurora database.
    * https://aws.amazon.com/sagemaker/jumpstart/
@@ -1449,3 +1461,14 @@ CrewAI
 Claud 3 Haiku LLM costs $0.25 per million
 
 emaggiori
+
+
+## Benchmarks
+
+
+## References
+
+https://www.tiktok.com/@stevenouri/playlist/AI%20Generated-7351330477631998727
+Steve Nouri - AI | ChatGPT
+linktr.ee/stevenouri
+

@@ -1,11 +1,11 @@
 ---
 layout: post
-date: "2025-02-04"
-lastchange: "v028 + VADER :acronyms.md"
+date: "2025-02-09"
+lastchange: "v029 + NER :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
-excerpt: "It's often difficult to know the context of an acronym. So here, in one page, are all 900+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG! "
+excerpt: "It's often difficult to know the context of an acronym. So here, in one page, are all 900+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG!"
 tags: [cloud, security, management, audit]
 comments: true
 created: "2024-12-28"
@@ -139,7 +139,7 @@ created: "2024-12-28"
 *	BDM	=	Business Decision Maker
 *	BDR	=	Business Development Representative
 *	BEC	=	Business Email Compromise	(spoofing emails to impersonate managers, vendors, customers, govt)
-*	BERT	=	Bidirectional Encoder Representations from Transformers (Google GenAI)
+*	BERT	=	Bidirectional Encoder Representations from Transformers (Google GenAI pre-trained model)
 *	BFLA	=	Broken Function Level Authorization
 *	BFS	=	Breadth-First Search
 *	BFP	=	Bi-Directional Forwarding Detection (networking)
@@ -856,6 +856,7 @@ created: "2024-12-28"
 *	NDA	=	Non-Disclosure Agreement
 *	NDAA	=	National Defense Authorization Act of 2020 and 2021
 *	NDE	=	Net Dollar Expansion
+* NER = Named Entity Recognition (identifying and extracting names of persons, organizations, locations, dates from text and media)
 * NeRF = Neural Radiance Fields (for generating 3D content from 2D images)
 *	NPU	=	Neural Processing Unit (specialized for processing AI neural networks in parallel, especially on edge/hand-held devices)
 * NDI = National Defense Information (classified secrets)

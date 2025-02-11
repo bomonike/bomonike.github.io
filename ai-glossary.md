@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-26"
-lastchange: "v003 + CUA :ai-glossary.md"
+date: "2025-02-04"
+lastchange: "v004 + Distillation :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -45,6 +45,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Machine Learning (ML) | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
 
 * Application Programming Interface (API) | | facilitates communication across applications. APIs help to extract and share data using a set of definitions and protocols.
+* AIMS (Artificial Intelligence Management System) | defined byhttps://www.iso.org/standard/81230.html $311 ISO/IEC Standard 42001:2023
 * Bootstrapping Language-Image Pre-training (BLIP) } An AI-based model, used to perform multi-modal tasks like visual question answering, image-text retrieval, and image captioning. It is a pre-training framework for unified vision-language understanding and generation.
 * BlenderBot | An AI-based chatbot that can converse naturally with people and takes direct feedback to improve its responses.
 
@@ -56,6 +57,8 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 *	CUDA	=	Compute Unified Device Architecture (parallel computing platform & API developed by NVIDIA)
 
 * Deep learning | A type of machine learning focused on training computers to perform tasks through learning from data. It uses artificial neural networks.
+* Distillation | The technique of a student app scraping knowledge from a teacher LLM by asking millions of questions (what <a target="_blank" href="https://www.youtube.com/watch?v=TciLnWFM-bY">Deek Seek did to OpenAI's LLM</a>)
+
 * Falcon | A large language model developed by the Technology Institute of Innovation (TII). Its variant, falcon-7b-instruct, is a 7-billion-parameter model based on the decoder-only model.
 * Foundation models | AI models with broad capabilities that can be adapted to create more specialized models or tools for specific use cases.
 
@@ -65,7 +68,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Google flan | An encoder-decoder foundation model based on the T5 architecture.
 * Gradio | An open-source Python package that allows the building of a demo or web application for machine learning models. It helps to create UIs to demo and deploy models and share them easily.
 
-* Hugging Face | An AI platform that allows open-source scientists, entrepreneurs, developers, and individuals to collaborate and build personalized machine learning tools and models.
+* Hugging Face | An AI platform that allows open-source scientists, entrepreneurs, developers, and individuals to collaborate and build personalized machine learning tools and models. It provides a way to evaluate different models.
 * HyperText Markup Language (HTML) | A standard markup language consists of elements that create web pages, structure them, and help display them. A start tag, some content, and an end tag define HTML elements.
 
 * IBM Watson | An integrated AI and data platform with a set of AI assistants designed to scale and accelerate the impact of AI with trusted data across businesses.
@@ -75,6 +78,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Llama | A large language model from Meta AI.
 * LlamaIndex | A flexible data framework to connect custom data sources to large language models using a central interface.
 * LangChain | A framework designed to simplify the creation of applications using LLMs that help in document analysis, document summarization, chatbot building, and code analysis.
+* Lemmatization | The process of reducing words to their root form.
 
 * Natural Language Processing (NLP) | A subset of artificial intelligence that enables computers to understand, manipulate, and generate human language (natural language).
 * Named-Entity Recognition (NER) | A subtask of information extraction that helps to locate and classify named entities like first and last names, geographic location, age, address, and phone number in unstructured data sources.
@@ -87,13 +91,14 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * Retrieval-Augmented Generation (RAG) | An AI framework designed to retrieve facts from an external knowledge base to ground large language models (LLMs) that provide information on the latest research, statistics, or news to generative models.
 
+* Sequence to sequence models | A model type that uses both encoders and decoders. ???
 * Sentiment analysis | A process of analyzing digital text to determine the emotional tone of a message. Performed on textual data, helping businesses monitor brands through customer feedback.
 * Streamlit | An open-source framework to build and share machine learning and data science web apps. It turns data scripts into shareable web apps in minutes.
 
 * TensorFlow <a target="_blank" href="https://www.nvidia.com/en-us/glossary/tensorflow/">|</a> a leading open-source library from Google for developing and deploying machine learning applications. It makes use of GPUs for parallel matrix operations for algebraic calculations.
 * Tokenizer | A tokenizer is a tool in natural language processing that breaks down text into smaller, manageable units (tokens), such as words or phrases, enabling models to analyze and understand the text.
 * Training data | Data (generally, large data sets that also have examples) used to teach a machine learning model.
-* Transformers | A deep learning architecture that uses an encoder-decoder mechanism. Transformers can generate coherent and contextually relevant text.
+* Transformers | A deep learning architecture that can generate coherent and contextually relevant text. The transformer model differs from other models in that it processes data in parallel, resulting in much quicker training times and a solution that can be scaled on modern hardware. Inputs to Encoders (such as BART) uses bi-directional to generate embeddings of context for unidirectional Decoders (such as GPT) to integrate with known knowledge to generate a response.
 * Text generation | A model that is trained on code from scratch that helps to automate repetitive coding tasks.
 
 * Unsupervised learning | A subset of machine learning and artificial intelligence that uses algorithms based on machine learning to analyze and cluster unlabeled data sets. These algorithms can discover hidden patterns or data groupings without human intervention.
@@ -107,8 +112,19 @@ watsonx.governance | A (powerful) toolkit to direct, manage, and monitor your or
 * <a target="_blank" href="https://www.coursera.org/learn/building-gen-ai-powered-applications/ungradedWidget/TRXdF/glossary-building-genai-powered-apps-with-python"><i>Source</i></a>
 * https://docs.anthropic.com/en/docs/resources/glossary
 
+## Workflow
+
+https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=10230s
+Machine Learning Workflow
+
+
+Sagemaker
+
+
 
 ## Explainable AI
+
+Algorithmic Accountability Act
 
 XAI (Explainable AI) is needed for trust of the system.
 

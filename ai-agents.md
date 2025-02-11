@@ -14,17 +14,13 @@ comments: true
 
 There are several levels of automation:
 
-* "Workflow Automation" follow a set sequence of tasks and tools are "programmatic" and not true AI agents.
+* <strong>"Workflow Automation"</strong> follow a set sequence of tasks and tools are "programmatic" and not true AI agents.
 
-* "Agentic AI" is a term used to describe AI that performs prescribed automated tasks.
+* <strong>"Agentic AI"</strong> is a term used to describe AI that performs <strong>pre-set</strong> automated tasks. Not True AI Agents.
 
-* True "AI Agents" act <strong>autonomously</strong>, able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions. True AI Agents are not bound to pre-defined tasks in a workflow.
+* <strong>True "AI Agents"</strong> act <strong>autonomously</strong>, able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions. True AI Agents are NOT bound to pre-defined tasks in a workflow.
 
    Modern AI Agents <strong>reason</strong> through steps.
-
-* True "AI Agents" act <strong>autonomously</strong>, able to choose among several tools and actions based on their environment and objectives. True AI Agents are not bound to pre-defined tasks in a workflow.
-
-   Modern AI Agents <strong>reason</strong> through
 
 ## Tasks
 
@@ -34,7 +30,7 @@ DEFINITION: Tasks https://practicallyintelligent.com/
 
 * Scrape websites for data
 
-* Combine your calendar, tasks, and scheduling links. Motion (https://www.usemotion.com/) is an AI-powered task management app automatically reschedule tasks based on your progress and any changes during the day. It's by Jacob Zeng. For $34/month, ensure you meet deadlines, Motion reschedules undone work.  Quick access to calendar (OPT + C), meeting scheduler (OPT + A), and task addition (OPT + SPACE) improves efficiency.
+* Combine calendar, tasks, and scheduling links. Motion (https://www.usemotion.com/) is an AI-powered task management app automatically reschedule tasks based on your progress and any changes during the day. It's by Jacob Zeng. For $34/month, ensure you meet deadlines, Motion reschedules undone work.  Quick access to calendar (OPT + C), meeting scheduler (OPT + A), and task addition (OPT + SPACE) improves efficiency.
 
    * https://www.youtube.com/watch?v=no2l-Ob1Eq4&t=9s How to use Motion
    * https://www.fahimai.com/motion-ai

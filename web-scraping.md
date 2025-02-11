@@ -1,10 +1,10 @@
 ---
 layout: post
-date: "2020-01-20"
-lastchange: "v002 + from wilsonmar :web-scraping.md"
+date: "2024-02-04"
+lastchange: "v003 + add AI :web-scraping.md"
 file: "web-scraping"
 title: "Web Scraping"
-excerpt: "How to use the Scrapy Python crawler framework to fetch HTML which Beautiful Soup parsers, on a Mac for Machine Learning visualizations"
+excerpt: "How to automate crawling through the WWW to fetch HTML and data, using Beautiful Soup and other parsers"
 tags: [python, coding]
 image:
 # pic white python logo 1900x500.jpg
@@ -22,6 +22,14 @@ created: "2019-12-24"
 This is a step-by-step hands-on tutorial explaining how to scrape websites for information.
 
 {% include whatever.html %}
+
+<a target="_blank" href="https://www.youtube.com/watch?v=Osl4NgAXvRk">aiwithbrandon</a> shows
+"Scrape Any Website for FREE Using DeepSeek & Crawl4AI"
+using https://brandonhancock.io/deepseek-scraper
+at https://github.com/bhancockio/
+by Brandon Hancock
+on https://skool.com/ai-developer-accelerator (FREE)
+
 
 PROTIP: If an API is not available, scrape (extract/mine) specific information by parsing HTML from websites using the <a target="_blank" href="http://docs.scrapy.org/en/latest/intro/overview.html">Scrapy</a> web scraping (Spider) framework. See <a target="_blank" href="https://www.inkoop.io/blog/web-scraping-using-python-and-scrapy/">blog</a>.
 

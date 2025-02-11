@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-15"
-changes: "v031 + MySQL course :python-tutorials.py"
+date: "2025-01-26"
+changes: "v032 + greghogg :python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -17,7 +17,6 @@ created: "2016-07-10"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
-
 
 <a target="_blank" href="https://bomonike.github.io/python-tutorials"><img align="right" width="100" height="100" alt="python-tutorials.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-tutorials.png?raw=true" />
 
@@ -1261,6 +1260,76 @@ Part 2 is at https://www.linkedin.com/pulse/easy-way-learn-python-coding-using-c
 https://www.udemy.com/course/database-design-and-app-development-with-python-mysql/
 Database Design and App development with Python + MySQL (2.5 hours)
 -- Unlock the Power of Database-Driven Apps with MySQL and Python Integration
+
+https://youtube.com/shorts/pFag4mBsO1I?si=f93ZOHnvq4TVuQP-
+"The most asked question ever"
+https://www.youtube.com/@GregHogg/shorts
+front for bootcamps MLNOW.ai and AlgoMap.io
+
+https://learn.mongodb.com/learning-paths/mongodb-python-developer-path
+15 hours free
+
+<a target="_blank" href="https://www.linkedin.com/in/patrick-löber-403022137/">Patrick Loeber</a>,
+Dev Advocate at AssemblyAI in Berlin
+(on <a target="_blank" href="https://www.youtube.com/@patloeber">on YouTube</a> & <a target="_blank" href="https://patloeber.com/">patloeber.com</a>)
+https://www.youtube.com/watch?v=qWYx5neOh2s
+
+Derek Comartin at CodeOpinion.com
+https://www.youtube.com/watch?v=Bxf_HMs7SeQ
+Just store UTC? Handling Time Zones & Daylight Saving
+
+## Pydantic data validation
+
+The built-in dataclasses also provides type hints.
+But Pydantic is an external library adds Data Validation (sanitizing), JSON Serialization.
+
+Used by HuggingFace/transformers, tiangolo/fastapi, hwchase17/langchain, apache/airflow
+
+Pydantic enables type hints in IDEs.
+
+Pydantic Crash Course:
+   * https://www.youtube.com/watch?v=g-F3FubxHd0
+ArjanCodes:
+   * https://www.youtube.com/watch?v=Vj-iU-8_xLs
+   * https://www.youtube.com/watch?v=502XOB0u8OY
+   * https://www.youtube.com/watch?v=zN4VCb0LbQI
+   * https://www.youtube.com/watch?v=qkxf583t4Vc returns
+Eric Roby
+   * https://www.youtube.com/watch?v=7DSuYAt0OlE Pydantic Has Saved Me Countless Hours Of Debugging
+   * https://www.youtube.com/watch?v=YKRqnWLZbpU I Stopped Using Everything Else Once I Found Pydantic
+Kennedy:
+   * https://www.youtube.com/watch?v=aHv7-6WIxNM
+Carberra
+   * https://www.youtube.com/watch?v=t6Cme1WTFCI
+John Watson Rooney
+   * https://www.youtube.com/watch?v=i4jespFbA1c
+Jason Liu
+   * https://www.youtube.com/watch?v=yj-wSRJwrrc "Pydantic is all you need"
+   * https://www.youtube.com/watch?v=pZ4DIH2BVqg "Pydantic is still all you need"
+
+Pydantic AI:
+   * https://www.youtube.com/watch?v=UnH7S5044GA
+
+
+
+## Surf.new
+
+https://www.youtube.com/watch?v=MieyLy_6N40
+
+
+## References
+
+https://www.cosmicpython.com/book/preface.html
+What’s the best way of structuring your application so that it’s easy to test?
+
+https://www.youtube.com/watch?v=7kf1SACqlRw
+I was bad at Data Structures and Algorithms. Then I did this.
+by Andrew Codesmith
+who wrote book <a target="_blank" href="https://shop.beacons.ai/andrewcodesmith/3b0e57be-7577-45d1-a8e5-b2cff6590bb9">$27 How to not suck at LeetCode/DSA Guide</a>
+
+https://frontendmasters.com/courses/
+"My Dev Setup is Better Than Yours"</a>
+by ThePrimeagen
 
 
 ## More on Python
