@@ -26,6 +26,32 @@ The object of this article is so you can add to your LinkedIn profile / resume s
 <ul>Achieved higher-rated results 3X quicker by leading optimization of LLM prompts through automated evaluation, using DSPy.
 </ul>
 
+## Strategic framework
+
+<a target="_blank" href="https://www.youtube.com/watch?v=p09yRj47kNM">VIDEO</a>:
+<a target="_blank" href="https://www.coursera.org/google-learn/prompting-essentials">
+Google Prompting Essentials</a> 9-hour video Coursera by Googlers.
+present their <a target="_blank" href="https://www.coursera.org/learn/google-prompting-essentials/lecture/aOSCm/use-the-5-step-prompt-framework">memonic2</a>:
+
+<table border="1" cellpadding="4" cellspacing="0"><tr valign="bottom"><thead><th><strong>Stage</strong></th><th><strong>Mememonic1</strong></th><th>Mememonic2</th></tr></thead><tbody>
+<tr valign="top"> Task       </td><td> Tiny   </td><td> Thoughtfully   </td></tr>
+<tr valign="top"> Context    </td><td> Crabs   </td><td> Create   </td></tr>
+<tr valign="top"> References    </td><td> Ride   </td><td> Really   </td></tr>
+<tr valign="top"> Evaluate    </td><td> Enormous   </td><td> Excellent   </td></tr>
+<tr valign="top"> Iterate    </td><td> Iguanas   </td><td> Inputs   </td></tr>
+</tbody></table>
+
+The first memonic is from Tina Huang's <a target="_blank" href="https://www.youtube.com/watch?v=p09yRj47kNM">"Google's 9 Hour AI Prompt Engineering Course In 20 Minutes"<br />
+<img alt="prompt-memonic-tina.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739297851/prompt-memonic-tina_wsk7hi.png"></a>
+
+
+
+<a name="Promptmetheus"></a>
+
+## Promptmetheus
+
+
+
 ## What is DSPy?
 
 DSPy is an acronym (<a target="_blank" href="https://www.youtube.com/watch?v=NoaDWKHdkHg&t=9m6s">pronounced "Dee Ess Py"</a>), standing for <strong>Declarative Self-improving Python</strong>. It is a utility library open sourced in Dec 2022 by Standford's NLP group in the
@@ -112,6 +138,11 @@ Within enterprises, it is now commonplace for <a target="_blank" href="https://s
 
 https://www.lycee.ai/blog/getting-started-with-dspy
 
+<a target="_blank" href="https://www.youtube.com/watch?v=GqrmkpKBlyI">
+"Run AI models locally without an expensive GPU"
+by Zen van Riel
+
+
 <a name="Signatures"></a>
 
 ## Signatures
@@ -141,8 +172,11 @@ The DSPy Optimizer has you pick will
 
 (iii) finetune the LM weights.
 
+## References
 
 1. https://www.youtube.com/watch?v=Zv4LjO8teqE&t=856s&pp=ygUKZHBzeS5weSBhaQ%3D%3D
 1.  Lindy
 
    Extends RAG (Retrieval-Augmented Generation))
+
+

@@ -170,6 +170,24 @@ The addition of generative AI enables more credible misinformation.
 
    <a target="_blank" href="https://www.youtube.com/watch?v=l-YbaSzDmhU">"Software Engineering costs will flatten out"</a>
 
+   <a target="_blank" href="https://www.youtube.com/watch?v=aXiOBAXYxCI&t=139s">The 8 AI Skills That Will Separate Winners From Losers in 2025"</a> by Liam Ottley
+
+   1. AI-assisted Software Development: Using no-code platforms like Bolt and RepetAgent to build applications. 12:32 OpenAI GPT, Relevance AI,
+
+   2. Automation with AI Agents: Creating digital workers that can perform tasks autonomously.
+   3. AI Content Generation: Utilizing tools like Midjourney for images and Runway for videos.
+   4. AI Editing and Enhancement: Using software like Descript for refining content.
+   5. Prompt Engineering: Crafting effective prompts for AI models to generate desired outputs.
+   6. Workflow Automation: Connecting tools using platforms like Zapier to streamline processes.
+   7. AI-enhanced Writing: Improving writing skills with AI tools to communicate effectively.
+   8. Audience Engagement: Building a personal brand and connecting with followers using digital platforms.
+   * Skill 2: AI Agent Development
+   * Skill 3: AI Workflow Automation
+   * Skill 4: Prompt Engineering [Promptmetheus]
+   * [13:01] Skill 5: API Integration [Postman]
+
+
+
 1. "Universal Basic Income" is touted by some as a solution to mass human unemployment.
 
    But the money has to come from someone. Those benefactors can impose restrictions. UBI can lead to strict rationing.

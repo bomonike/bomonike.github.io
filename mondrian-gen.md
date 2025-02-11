@@ -14,6 +14,9 @@ created: "2025-02-07"
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
+> "The printing press democratised knowledge,<br />the camera democratised images,<br />and AI is democratising creativity itself." -- Kevin Kelly
+
+
 <a name="TheProgram"></a>
 
 This article describes my program at <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py">https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py</a>
@@ -220,7 +223,7 @@ The program currently outputs "lossless" .png format image files.
 
 TODO: It can also create files that are smaller by outputting "lossy" format image files in (jpeg, webp, etc.).
 
-Then there are video (.mp4) format files.
+Then there are video (.mp4) format files created by <strong>Runway.ai</strong>, Sora, etc.
 
 
 ### 10. Desire evaluation
@@ -268,7 +271,7 @@ Discord is a free chat app that doesn't charge money.
  TODO: Send to IFTTT
 
 
-### 20. SMTP email 
+### 20. SMTP email
 
 Emailing to a Gmail account is free.
 
@@ -309,6 +312,40 @@ This above fittingly hung in New York's Museum of Modern Art.
 The work is shown above in full screen so you can see that the colorful lines were made by applying colored tape. Mondrian didn't know about then until he arrived in New York City from the Netherlands. Piet Mondrian was born in Amersfort, Netherlands 1872.
 
 To recreate the painting, a robot would be needed to apply the colored tape to the canvas.
+
+## Stable Diffusion on Intel Gaudi AI Cloud
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Enp8TP7ac18">VIDEO</a>: GenAI Notebooks
+and <a target="_blank" href="https://www.youtube.com/watch?v=s-I99wGfrnM&list=PLg-UKERBljNzfBux87mQ4aVfByElSNma_">among other videos</a>
+   * <a target="_blank" href="https://www.youtube.com/playlist?list=PLg-UKERBljNxsCltpcXU_Haz9xQSCN_SB">video training on OneAPI</a> cross-industry libraries. at h
+   https://software.intel.com/content/www/us/en/develop/tools/oneapi.html
+   LevelZero
+
+On the Intel Gaudi cloud, run the Stable Diffusion model v2.1 to create images based on your text prompt. Use Intel Gaudi software Model References and Hugging Face Optimum Habana library running Gaudi PyTorch:
+
+1. Log into the Intel Tiber AI Cloud.
+
+   https://console.cloud.intel.com/
+
+1. <a target="_blank" href="https://console.cloud.intel.com/learning/notebooks/detail/f44ffb9c-c738-4787-b61f-5385fb1d8d1a?region=us-region-2">At the Learning notebook page</a>
+1. <a target="_blank" href="https://console.cloud.intel.com/learning/notebooks/detail/f44ffb9c-c738-4787-b61f-5385fb1d8d1a?region=us-region-2">Launch Jupyter notebook</a> which uses the Intel Model Reference GitHub repository:
+
+   https://github.com/intel?
+
+1. In the Learn card, click the button Get Started.
+1. In the Learn page, click Connect now -> GPU.
+1. In the next dialog, click Launch.
+1. Consider viewing related documents.
+
+1. See the https://console.cloud.intel.com/docs/tutorials/jupyter_learning.html#jupyter-learning
+   Jupyter Guide
+
+1. Follow the instructions and examples in the Jupyter notebook.
+
+1. Select the Gaudi kernel.
+
+
+
 
 
 ## Other Mondrian generated art

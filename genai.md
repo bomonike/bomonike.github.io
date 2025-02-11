@@ -62,6 +62,10 @@ https://www.linkedin.com/pulse/what-using-genai-taught-me-managing-people-wilson
 
 https://checksum.ai/blog/the-engineering-of-an-llm-agent-system
 
+dair-ai/Prompt-Engineering-Guide)
+aggregated lists (e.g. f/awesome-chatgpt-prompts)
+
+https://huyenchip.com/2024/03/14/ai-oss.html
 
 <hr />
 

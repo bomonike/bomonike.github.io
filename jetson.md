@@ -235,7 +235,7 @@ Linux Developer Guide
 
 https://www.nvidia.com/en-au/glossary/
 
-* CUDA is NVIDIA's proprietary software for parallel computing on GPUs
+* CUDA is NVIDIA's proprietary software for parallel computing on GPUs. Its competitor is Intel's DPC++ (Data Parallel C++).
 
    CUDA 12.6
 
