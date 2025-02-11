@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-08"
-lastchange: "v0178 + prompt-engineering :README.md"
+lastchange: "v0178 + agentic to ai-agents :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -17,7 +17,7 @@ It is used while <a target="_blank" href="https://wilsonmar.github.io/posts">wil
 
 Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/acronyms">acronyms</a>
-1. <a target="_blank" href="https://bomonike.github.io/agentic">agentic</a>
+1. <a target="_blank" href="https://bomonike.github.io/ai-agents">ai-agents</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
 <!--<|cursor1. <a target="_blank" href="https://bomonike.github.io/anthropic">anthropic</a>-->
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
