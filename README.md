@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-12"
-lastchange: "v0179 + ruby :README.md"
+lastchange: "v0179 + soc2 :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -77,6 +77,7 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/sentiment-analysis">sentiment-analysis</a>
 1. <a target="_blank" href="https://bomonike.github.io/singularity">singularity</a>
 1. <a target="_blank" href="https://bomonike.github.io/skills">skills</a>
+1. <a target="_blank" href="https://bomonike.github.io/soc2">soc2</a>
 1. <a target="_blank" href="https://bomonike.github.io/software-dev">software-dev</a>
 1. <a target="_blank" href="https://bomonike.github.io/tech+">tech+</a>
 1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (Operational Technologies)
