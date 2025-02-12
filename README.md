@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-08"
-lastchange: "v0178 + agentic to ai-agents :README.md"
+date: "2025-02-12"
+lastchange: "v0179 + ruby :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -71,6 +71,7 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/reasoning">reasoning</a>
 1. <a target="_blank" href="https://bomonike.github.io/regex">regex</a>
 1. <a target="_blank" href="https://bomonike.github.io/ros">ros</a> (Robotic Operating System)
+1. <a target="_blank" href="https://bomonike.github.io/ruby">ruby</a>
 1. <a target="_blank" href="https://bomonike.github.io/second-brain">second-brain</a>
 1. <a target="_blank" href="https://bomonike.github.io/security-certs">security-certs</a>
 1. <a target="_blank" href="https://bomonike.github.io/sentiment-analysis">sentiment-analysis</a>
