@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-12"
-lastchange: "v0179 + soc2 terraform :README.md"
+lastchange: "v0180 + museums-roadtrip-usa :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -53,7 +53,7 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/mechatronics">mechatronics</a>
 1. <a target="_blank" href="https://bomonike.github.io/mondrian-gen">mondrian-gen</a> (Python workflow of utilities around using various GenAI APIs that generate Mondrian-like artworks from text prompts)
 1. <a target="_blank" href="https://bomonike.github.io/microbit">microbit</a>
-1. <a target="_blank" href="https://bomonike.github.io/museum-roadtrip-usa">museum-roadtrip-usa</a>
+1. <a target="_blank" href="https://bomonike.github.io/museums-roadtrip-usa">museums-roadtrip-usa</a>
 1. <a target="_blank" href="https://bomonike.github.io/networking">networking</a>
 1. <a target="_blank" href="https://bomonike.github.io/nft">nft (Non-Fungible Tokens) on web3</a>
 1. <a target="_blank" href="https://bomonike.github.io/odoo">odoo</a>
