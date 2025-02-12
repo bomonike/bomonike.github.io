@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-12"
-lastchange: "v0179 + soc2 :README.md"
+lastchange: "v0179 + soc2 terraform :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -82,6 +82,7 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/soc2">soc2</a>
 1. <a target="_blank" href="https://bomonike.github.io/software-dev">software-dev</a>
 1. <a target="_blank" href="https://bomonike.github.io/tech+">tech+</a>
+1. <a target="_blank" href="https://bomonike.github.io/terraform">terraform</a>
 1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (Operational Technologies)
 1. <a target="_blank" href="https://bomonike.github.io/temporal">temporal</a>
 1. <a target="_blank" href="https://bomonike.github.io/waf">waf</a>
