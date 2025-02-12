@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-12"
-lastchange: "v0180 + museums-roadtrip-usa :README.md"
+lastchange: "v0181 + azure-machine-learning :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -24,7 +24,7 @@ Topics alphabetically:
 <!--1. <a target="_blank" href="https://bomonike.github.io/aprs">aprs</a> -->
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
-<!-- aws-ml -->
+1. <a target="_blank" href="https://bomonike.github.io/azure-machine-learning">azure-machine-learning</a>
 1. <a target="_blank" href="https://bomonike.github.io/codespaces">codespaces</a>
 1. <a target="_blank" href="https://bomonike.github.io/copilots">copilots</a>
 1. <a target="_blank" href="https://bomonike.github.io/emf-blocking">emf-blocking</a>
