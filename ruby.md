@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-12"
-lastchange: "v001 + from wilsonmar"
+lastchange: "v002 + qr code :ruby"
 file: "ruby"
 title: "Ruby with RVM or RBenv on macOS"
 excerpt: "Switch among multiple versions of Ruby"
@@ -14,6 +14,7 @@ image:
 comments: true
 created: "2014-08-11"
 ---
+<a target="_blank" href="https://bomonike.github.io/ruby"><img align="right" width="100" height="100" alt="ruby.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ruby.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
