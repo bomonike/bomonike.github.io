@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-12"
-lastchange: "v0181 + azure-machine-learning :README.md"
+lastchange: "v0182 + windows-on-mac :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -46,8 +46,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/mac-mini">mac-mini</a>
 1. <a target="_blank" href="https://bomonike.github.io/mac-utilities">mac-utilities</a>
 1. <a target="_blank" href="https://bomonike.github.io/macos">macos</a>
-1. <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a>
-maximum-limits
+1. <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a> configuration settings
 1. <a target="_blank" href="https://bomonike.github.io/microsoft-ai">microsoft-ai</a>
 1. <a target="_blank" href="https://bomonike.github.io/microsoft-fabric">microsoft-fabric</a>
 1. <a target="_blank" href="https://bomonike.github.io/mechatronics">mechatronics</a>
@@ -88,4 +87,5 @@ maximum-limits
 1. <a target="_blank" href="https://bomonike.github.io/temporal">temporal</a>
 1. <a target="_blank" href="https://bomonike.github.io/waf">waf</a>
 1. <a target="_blank" href="https://bomonike.github.io/web-scraping">web-scraping</a>
+1. <a target="_blank" href="https://bomonike.github.io/windows-on-mac">windows-on-mac</a>
 1. <a target="_blank" href="https://bomonike.github.io/zima">zima</a>
