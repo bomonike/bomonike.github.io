@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-12"
-lastchange: "v002 + qr code :ruby"
+lastchange: "v002 + gem defs :ruby"
 file: "ruby"
 title: "Ruby with RVM or RBenv on macOS"
 excerpt: "Switch among multiple versions of Ruby"
@@ -23,13 +23,13 @@ created: "2014-08-11"
 The major commands around Ruby:
 
    1. ruby
-   2. gem
-   3. bundle
+   2. gem - a packaged library or piece of Ruby code that can be shared and reused across projects. Installs individual gems globally or locally. It includes Ruby files, metadata, and dependencies required for the gem to function.
+   3. bundle - Manages all gems for a specific project. Automatically resolves project dependencies. Requires Gemfile and generates Gemfile.lock.
    <br /><br />
 
 PROTIP: There is a war going on within the Ruby community between rvm and rbenv. See http://jonathan-jackson.net/rvm-and-rbenv
 and <a target="_blank" href="http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/">Ryan McGeary</a> who switched to rbenv.
-  
+
    1. rvm - the most established, but also the most intrusive (difficult) shell modifications.
    1. <a href="#rbenv">rbenv</a> version manager Partnered with Capistrano
    1. <a href="#chruby">chruby</a> - which doesn't use shims nor require write access, claims to be lighter than rbenv on zsh
@@ -53,7 +53,7 @@ and <a target="_blank" href="http://ryan.mcgeary.org/2011/02/09/vendor-everythin
    <a target="_blank" href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads</a>
 
 1. Remember the lastest (most recent) version number (such as "3.3.0" at time of writing).
-   
+
 
    ### System Default Ruby version
 
@@ -63,7 +63,7 @@ and <a target="_blank" href="http://ryan.mcgeary.org/2011/02/09/vendor-everythin
    CAUTION: Don't touch the system Ruby that comes with your Mac.
 
 0. Open a Terminal Shell Window and type:
- 
+
    <pre><strong>ruby -v
    </strong></pre>
 
@@ -125,8 +125,8 @@ ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-darwin17]
 
 1. To facilitate installing additional version of Rubies:
 
-   <pre><strong>brew install ruby-install -HEAD 
-ruby-install -V 
+   <pre><strong>brew install ruby-install -HEAD
+ruby-install -V
    </strong></pre>
 
 1. List the latest Ruby versions:
@@ -163,7 +163,7 @@ Stable ruby versions:
    </strong></pre>
 
 1. Configure shell to use chruby:
-  
+
    <pre>echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
 echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
 echo "chruby ruby-3.1.3" >> ~/.zshrc
@@ -310,7 +310,7 @@ Bug fixes:
 RubyGems installed the following executables:
    /Users/mac/.rvm/rubies/ruby-2.3.1/bin/gem
 &nbsp;
-Ruby Interactive (ri) documentation was installed. ri is kind of like man 
+Ruby Interactive (ri) documentation was installed. ri is kind of like man
 pages for ruby libraries. You may access it like this:
   ri Classname
   ri Classname.class_method
@@ -416,7 +416,7 @@ RubyGems installed the following executables:
   /usr/local/Cellar/ruby/2.5.1/bin/gem
   /usr/local/Cellar/ruby/2.5.1/bin/bundle
 &nbsp;
-Ruby Interactive (ri) documentation was installed. ri is kind of like man 
+Ruby Interactive (ri) documentation was installed. ri is kind of like man
 pages for Ruby libraries. You may access it like this:
   ri Classname
   ri Classname.class_method
@@ -437,7 +437,7 @@ rdoc's executable "ri" conflicts with /usr/bin/ri
 
 0. To rebuild any gems using native extensions:
 
-   <pre><strong>sudo gem pristine --all 
+   <pre><strong>sudo gem pristine --all
    </strong></pre>
 
 
@@ -457,9 +457,9 @@ rdoc's executable "ri" conflicts with /usr/bin/ri
 
 ### Install rbenv
 
-CAUTION: To install rbenv, one must first <a href="#RemoveRVM">remove RVM</a> 
+CAUTION: To install rbenv, one must first <a href="#RemoveRVM">remove RVM</a>
 because it's incompatible with rbenv.
- 
+
    <pre><strong>brew update
    brew install rbenv ruby-build
    </strong></pre>
@@ -502,7 +502,7 @@ For pkg-config to find this software you may need to set:
 ######################################################################## 100.0%
 ==> ./install.sh
 🍺  /usr/local/Cellar/ruby-build/20170201: 334 files, 178.8K, built in 4 seconds
-==> Installing rbenv 
+==> Installing rbenv
 ==> Downloading https://homebrew.bintray.com/bottles/rbenv-1.1.0.sierra.bottle.t
 ######################################################################## 100.0%
 ==> Pouring rbenv-1.1.0.sierra.bottle.tar.gz
@@ -557,7 +557,7 @@ To specify that folder when installing gems, for example:
 
    <pre>gem install cocoapods -n /usr/local/bin</pre>
 
-PROTIP: To automatically specify `-n /usr/local/bin`, save create file 
+PROTIP: To automatically specify `-n /usr/local/bin`, save create file
 `~/.gemrc` containing:
 
    <pre>:gemdir:
@@ -574,7 +574,7 @@ Before rbenv, there was rvm.
 <a target="_blank" href="https://metova.com/choosing-a-ruby-version-management-tool-rbenv-vs-rvm/">This article</a>
 describes the differences.
 
-PROTIP: Personally, the requirement for gpg to install was a turn-off for RVM as it was difficult to get working. 
+PROTIP: Personally, the requirement for gpg to install was a turn-off for RVM as it was difficult to get working.
 
 
 <a name="ruby-rvm"></a>
@@ -629,7 +629,7 @@ Upgrade of RVM in /Users/wilsonmar/.rvm/ is complete.
    </strong></pre>
 
 0. For a smaller response:
-   
+
    <pre><strong>rvm --version
    </strong></pre>
 
@@ -662,7 +662,7 @@ See https://rvm.io/rvm/security
 
    <pre><strong>curl -sSL https://rvm.io/mpapis.asc | gpg --import -
    </strong></pre>
-   
+
    <pre>
 gpg: key 3804BB82D39DC0E3: 47 signatures not checked due to missing keys
 gpg: key 3804BB82D39DC0E3: public key "Michal Papis (RVM signing) <mpapis@gmail.com>" imported
@@ -910,9 +910,9 @@ ruby-2.3.1 - #gemset created /Users/mac/.rvm/gems/ruby-2.3.1
 ruby-2.3.1 - #importing gemsetfile /Users/mac/.rvm/gemsets/default.gems evaluated to empty gem list
 ruby-2.3.1 - #generating default wrappers........
 ruby-2.3.1 - #adjusting #shebangs for (gem irb erb ri rdoc testrb rake).
-Install of ruby-2.3.1 - #complete 
+Install of ruby-2.3.1 - #complete
 Ruby was built without documentation, to build it run: rvm docs generate-ri
-   </pre> 
+   </pre>
 
 0. <a href="#ViewVersions">View versions again.</a>
 
@@ -1070,7 +1070,7 @@ Finally it might help to relogin / restart if you want to have fresh environment
 
    vim ~/.bashrc
 
-   vim ~/.profile 
+   vim ~/.profile
 
 0. Restart Terminal sessions.
 
