@@ -48,6 +48,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/macos">macos</a>
 1. <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a>
 maximum-limits
+1. <a target="_blank" href="https://bomonike.github.io/microsoft-ai">microsoft-ai</a>
 1. <a target="_blank" href="https://bomonike.github.io/microsoft-fabric">microsoft-fabric</a>
 1. <a target="_blank" href="https://bomonike.github.io/mechatronics">mechatronics</a>
 1. <a target="_blank" href="https://bomonike.github.io/mondrian-gen">mondrian-gen</a> (Python workflow of utilities around using various GenAI APIs that generate Mondrian-like artworks from text prompts)
