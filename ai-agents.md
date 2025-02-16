@@ -1,11 +1,11 @@
 ---
 layout: post
 url: https://bomonike.github.io/ai-agents
-date: "2024-02-10"
-lastchange: "v012 + from agentic :ai-agents.md"
+date: "2024-02-16"
+lastchange: "v013 + text-to-action :ai-agents.md"
 file: "ai-agents"
-title: "Agentic"
-excerpt: "Agents"
+title: "AI Agents"
+excerpt: "Text-to-Action carried out by AI Agents"
 tags: [cloud, security, management, ai]
 comments: true
 ---
