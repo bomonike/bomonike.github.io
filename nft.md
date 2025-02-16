@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-28"
-lastchange: "v008 + Polygon :nft.md"
+date: "2025-02-15"
+lastchange: "v010 + google course :nft.md"
 file: "nft"
 title: "nft"
 excerpt: "Non-Fungible Tokens (NFTs) use unalterable blockchains, crypto currency wallets, and smart contracts (all web3 tech) to prove provenance and thus make it safer to buy & sell digital media in a distributed ecosystem not centrally controlled by billionaires."
@@ -33,13 +33,39 @@ NFTs provides a way of establishing the <strong>provenance</strong> of a digital
 providing documentation which indelibly authenticates the creator, ownership history, and
 appraisal value of a specific piece of art.
 
-## Bitcoin
+* DAO = Decentralized Autonomous Organization | A group of people working together to achieve a common goal without the need for a central authority.
+
+
+## Why Bitcoin
 
 Traditional payment infrastructure falls short:
 
    * Credit cards charge fees of 2-3% on every transaction
    * Settlement takes days
    * Anti-fraud systems (such as CAPTCHA and 2FA) were built to require human intervention to prevent fraud, thus not facilitate automated autonomous payments by agents instead of people
+
+## ETFs
+
+It is no secret that Bitcoin's (BTC) price has experienced significant fluctuations since its inception in 2009. Each price movement is influenced by a complex interplay of technological advancements, regulatory changes, market sentiment and other macroeconomic factors. Bitcoin faced regulatory pressure, collapse of major crypto firms, which further rattled investor confidence, and rising interest rates (2021-2023). <a target="_blank" href="https://www.kraken.com/learn/what-is-bitcoin-etf">Bitcoin ETFs</a> debut (2024) led to renewed interest and price rise.
+
+After the election of Trump, on January 10, 2024, Gary Gensler, the Chair of the United States Securities and Exchange Comission (SEC), issued a Statement on the Approval of Spot Bitcoin Exchange-Traded Products. After rejecting more than 20 applications between 2018 and 2024, the SEC approved trading for a spot Bitcoin ETF in the United States.
+
+Globally, the three types of Bitcoin ETF available are: 
+   * Bitcoin spot ETF
+   * Bitcoin futures ETF. This removes the need for the ETF issuer to hold bitcoin in reserve. 
+   * Leveraged bitcoin futures ETF
+
+Bitcoin ETF Providers:
+
+   * iShares Bitcoin ETF Trust (IBIT)
+   * Bitwise Bitcoin ETF Trust (BITB) 
+   * ARK 21Shares Bitcoin ETF (ARKB)
+   * Franklin Templeton Bitcoin ETF (EZBC)
+   * Valkyrie Bitcoin Fund (BRRR)
+   * WisdomTree Bitcoin Fund (BTCW)
+
+These funds benchmark and strike the Net Asset Value (NAV) of the ETFs to the Bitcoin Reference Rate - New York Variant (BRRNY) provided by CF Benchmarks - a Kraken company.
+
 
 
 ## Glossary of Terms
@@ -144,6 +170,50 @@ In 2023 it's home to 3 of the top 10 apps on Web3:
    * $SWEAT Economy: 1.6 million MAU
    * Playember: 500k MAU
 
+## Metamask
+
+Among <a target="_blank" href="https://ethereum.org/en/wallets/find-wallet/">Ethereum Wallets</a>
+
+1. Install Metamask for iOS, Android, Chrome, Firefox (by danfinlay)
+   (Safari not supported) 
+
+   https://metamask.io/download/
+
+   PROTIP: <a target="_blank" href="https://www.youtube.com/watch?v=MU318siygUk">VIDEO</a>: Fees are difficult to compare. Beware of fees to withdraw to USD and other fiat currencies.
+
+1. Select your location. Crypto.com is not allowed in New York.
+
+1. Crypto.com's own CRO currency, which can be more volatile than other cryptocurrencies.
+
+   PROTIP: Purchasers pay the Taker Fee when an order is placed and the Maker Fee when an order is matched and filled. Higher "bps" (basis points) are paid for low volume trades. 0.40% is 40 bps. 60 bps is the upper end of the range for small trades.
+
+1. Consider deals by affiliates such as 
+
+   * $200 to signup on Coinbase through https://coinbase.mattscrypto.com/ But they charge 1% on the first $1000
+   * MoonPay to buy crypto using Venmo through http://moonpay.mattscrypto.com/
+   * $10 of free Bitcoin on Kraken through http://kraken.mattscrypto.com/
+
+1. Fund with credit card.
+1. Scroll down to compare rates from providers: 
+
+   <a target="_blank" href="https://coinmarketcap.com/ru/currencies/near/">CoinMarketCap</a>,
+   <a target="_blank" href="https://www.coingecko.com/en/coins/near-protocol">CoinGecko</a>,
+   <a target="_blank" href="https://www.blockchain.com/explorer/near">Blockchain</a>,
+
+   PROTIP: Ramp and Coinbase are among the lowest rates.
+
+   Strike: Offers an average 0.93% spread on Bitcoin purchases, making it one of the cheapest options8.
+Kraken Pro: Charges some of the lowest fees in the crypto asset exchange industry, with trading fees ranging from 0.16% to 5%24.
+Crypto.com: Offers trading fees between 0% and 2.99%, depending on the type of transaction2.
+Gemini: Provides fees starting at 0.5%, with a maximum of 1.49% for crypto-to-crypto trades and up to 3.99% for fiat-to-crypto purchases12.
+Coinbase: Fees range from 0% to 4%, varying by transaction type2.
+Among these options, Strike and Kraken Pro appear to offer the lowest fees for buying crypto from USD. However, it's important to consider other factors such as security, available cryptocurrencies, and user experience when choosing an exchange3.
+
+
+
+
+## 
+
 At https://app.near.ai/agents
 All Ethereum Wallets, Including MetaMask, <a target="_blank" href="https://near.org/blog/ethereum-near-mainnet/">Now</a> Usable on NEAR Mainnet MyNearWallet
    * Sender
@@ -170,8 +240,7 @@ and front-end https://github.com/near-examples/nft-tutorial-frontend.git
 
 There are several NFT marketplaces: OpenSea, MagicEden.us, Rarible, Superrare, etc.
 
-<a target="_blank" href="https://opensea.io/collection/cryptopunks"><img alt="cryptopunks-900x399.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1736487680/cryptopunks-900x399_njypxq.webp" />
-
+<a target="_blank" href="https://opensea.io/collection/cryptopunks"><img alt="cryptopunks-900x399.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1736487680/cryptopunks-900x399_njypxq.webp" /><br />
 The above is CryptoPunks's gallery</a>, launched as a fixed set of 10,000 items in mid-2017,
 is now one of the <a target="_blank" href="https://opensea.io/rankings">most popular</a>
 at <a target="_blank" href="https://www.opensea.com/">Opensea.com</a>.
@@ -204,10 +273,9 @@ rewards for validators.
 
 ## Media
 
-https://www.perplexity.ai/page/ai-art-magazine-debuts-.ZLN3RJ0TKSoIakVC1oQvQ
-The Art Newspaper, a new 176-page magazine dedicated solely to AI-generated art
+<a target="_blank" href="https://www.perplexity.ai/page/ai-art-magazine-debuts-.ZLN3RJ0TKSoIakVC1oQvQ">The Art Newspaper</a>, a new 176-page magazine dedicated solely to AI-generated art
 
-https://www.nftculture.com/nft-news/tiga-x-tamago-nft-auction/
+<a target="_blank" href="https://www.nftculture.com/nft-news/tiga-x-tamago-nft-auction/">https://www.nftculture.com/nft-news/tiga-x-tamago-nft-auction/</a>
 
 
 <a name="Wallets"></a>
@@ -284,16 +352,24 @@ NFTs also include <strong>metadata</strong> describing the asset it represents, 
 
 ??? information is recorded on the blockchain, it cannot be altered retroactively without altering all subsequent blocks. This makes blockchain ideal for ensuring trust in data integrity and authenticity.
 
+## Filecoin
+
+Filecoin (FIL) is a decentralized storage network designed to store and retrieve data securely and efficiently. It operates on a peer-to-peer network, allowing users to store files on the internet using blockchain technology.
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_lNL1uU_I58">VIDEO</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=7NUQlY7b4Mk">VIDEO</a>: Filecoin (FIL) Review: A Beginner's Guide
+   * <a target="_blank" href="https://www.youtube.com/watch?v=bfsDn0_gFBo">Filecoin Update: Will FIL 10X?! Complete Review!</a> by Coin Bureau
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lSfqPj7PpVc&pp=sAQB">Cryptopia: Bitcoin, Blockchains, and the Future of the Internet"</a> on YouTube Movies & TV Documentary • 2021
+
 
 <a name="IPFS"></a>
 
 ## IPFS
 
-The IPFS (InterPlanetary File System)</a> is a decentralized, peer-to-peer file storage protocol that enable users to store and access content without a central server. It's used by:
+The IPFS (InterPlanetary File System) <a target="_blank" href="https://ipfs.tech">https://ipfs.tech</a> is a decentralized, peer-to-peer file storage protocol that enable users to store and access content without a central server. It's used by:
 
    * https://d.tube a YouTube clone on its Avalon blockchain
    * app.Uniswap.org blockchain app (URL uniswap.exchange) ENS contenthash for uniswap.eth for uniswap.eth.link
-   * <a target="_blank" href="https://www.youtube.com/watch?v=_lNL1uU_I58">Filecoin</a>
 
 Notice that files take longer to load than HTTP servers.
 
@@ -306,6 +382,8 @@ IPFS, uses "content-based addressing" which enables a peer-to-peer exchanges:
 
 This distribution of content by IPFS is immutable.
 Once added, files can't be deleted from it (by government censors).
+
+    * <a target="_blank" href="https://www.youtube.com/watch?v=qarW5KhIWXE">How to use the Pinata IPFS API</a>
 
 Alternatives for NFT storage are IPFS, Filecoin (which ensures files are backed up), Arweave.
 
@@ -377,7 +455,9 @@ App:
 * Install the <a target="_blank" href="https://github.com/ipfs/ipfs-desktop">IPFS Desktop app</a> to click the "Import" button in the GUI
 * In the command-line interface, use the <tt>ipfs add</tt> command to add files to IPFS.
 * hbarsuite smart nodes that are integrated with IPFS
+
 * https://thedefiant.io/news/defi/filecoin-ipfs-space by Lockheed Martin
+* Filecoin provides Content preservation for organizations like the Shoah Foundation and Internet Archive. Filecoin employs Proof of Replication (PoRep) and Proof of Spacetime (PoSt) to ensure data integrity and continuous storage. As of August 2024, Filecoin's total storage capacity was 23 EiB, with 2.0 EiB of total data stored.
 
 Since file content is public by default, <strong>encrypt</strong> the file's content and share its key the usual secure way.
 
@@ -627,3 +707,253 @@ replaced him with "crypto mom" Hester Peirce led SEC Crypto Task Force to work w
 EO sidelined Fed & FDIC colluding on "Operation Chokepoint 2.0"
 appointed David Sachs as "Crypto Czar"
 https://www.youtube.com/watch?v=9Kc5QdNmtds
+
+https://www.youtube.com/watch?v=2vYBZ8Y2HdM
+
+
+<hr />
+
+## Google Develop an NFT with Google Cloud Web3
+
+<a target="_blank" href="https://www.cloudskillsboost.google/focuses/87986?parent=catalog">GSP1243:
+"Develop an NFT with Google Cloud Web3 (1h 30m, 7 credits)</a>
+You will receive the starting code to build a base for your NFT contract, then you'll customize the contract, and then launch it to the Ethereum Sepolia testnet.
+
+You'll also be modifying an ERC-721 NFT contract, using Google's Blockchain Node Engine to deploy your code, and then using BigQuery to monitor it. ERC-721 is a popular standard for NFTs, where each token belonging to the smart contract can be unique. 
+
+A. Write an NFT smart contract (see https://ethereum.org/en/nft/.)
+B. Receive testnet ETH from the Cloud Web3 Spolia Faucet
+C. Deploy to the Ethereum Sepolia testnet with Blockchain Node Engine https://cloud.google.com/blockchain-node-engine/
+D. Monitor your contract using BigQuery and extract relevant insights
+
+* Deploy to the Ethereum Sepolia testnet with Blockchain Node Engine.
+* Monitor your contract using BigQuery and extract relevant insights.
+
+E. https://www.perplexity.ai/search/which-offers-the-best-rate-for-gZTQuIcRS6OqCkZ8jLForg
+
+ENS, or Ethereum Name Service, is a decentralized naming protocol built on the Ethereum blockchain24. It translates long, complex cryptocurrency addresses into human-readable names, making it easier for users to interact with blockchain-based services23.
+
+1. Right-click on the "Open Cloud Console" to get the URL.
+1. Open an Chrome incognito or Firefox Private window.
+1. Paste the URL. Click "Next" to accept the Project ID embedded in the URL.
+1. Copy the Password and switch to paste in the "Enter the Password".
+1. "I understand".
+1. "I agree" and CONTINUE.
+1. Activate the Cloud Shell icon at the top of the Google Cloud console.
+1. Continue.
+1. "Got it!"
+
+1. gcloud auth list
+1. CLick Authorize
+1. gcloud config list project
+1. To  install node.js 
+   https://nodejs.org/en/download/package-manager
+
+1. Menu "Compute Engine".
+1. Click Connect "SSH" for popup "SSH-in-browser". Authorize.
+1. Within the SSH-in-browser copy the SSH command and paste it into the terminal:
+   <pre>
+   # installs NVM (Node Version Manager)
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+   source ~/.profile
+
+   # download and install Node.js
+   nvm install stable
+
+   # verifies the right Node.js version is in the environment
+   node -v
+
+   # verifies the right NPM version is in the environment
+   npm -v
+   </pre>
+1. Docs https://nodejs.org/en/download/package-manager
+
+   ## Sepolia Faucet
+   
+   You need a small amount of Sepolia ETH to deploy your contract. Sepolia ETH is free, but it must be obtained from a public faucet.
+
+1. Switch to a browser to use the Cloud Web3 Sepolia Faucet
+
+   https://cloud.google.com/application/web3/faucet
+
+   to load testnet ETH on your Ethereum account for the Sepolia network.
+
+   You need a small amount of Sepolia ETH to deploy your contract. Sepolia ETH is free, but it must be obtained from a public faucet.
+
+1. Select network "Ethereum Sepolia".
+1. Switch to Metamask to copy the Wallet Address 
+1. Switch to Google to paste it into its "Wallet address or ENS name" input field.
+
+1. Sign in using your Student Username such as
+   student-00-da52787eb902@qwiklabs.net
+1. Next.
+1. Password.
+1. Click "Receive 0.05 Sepolia ETH" for "Drip in queue", then "Drip complete"
+
+1. ADDED: In the SSH at the student folder: 
+   ```
+   npm --version   # 10.9.2
+   node --version  # v23.8.0
+   ```
+   v23.x is the "Current" at https://github.com/nodejs/Release
+   QUESTION: So should "22.x" LTS be used instead?
+
+1. In the SSH at the student folder:
+   ```
+   mkdir nft_codelab && cd nft_codelab
+   npm init
+   ```
+1. Press Enter to accept "package name: (nft_codelab)"
+1. Press Enter to accept "Version: (1.0.0)"
+1. Press Enter to accept "description:
+1. Press Enter to accept "entry point: (index.js)"
+1. Type "npm run test" then press Enter to accept "test command:"
+1. Press Enter to accept "git repository:"
+1. Press Enter to accept "keywords:"
+1. Press Enter to accept "author:"
+1. Press Enter to accept "license: (ISC)"
+1. Press Enter to accept "Is this OK? (yes)"
+
+1. In the SSH at the student "nft_codelab" folder:
+   ```
+   npm install hardhat
+   npx hardhat init
+   ```
+1. Press Enter to "Create a JavaScript project".
+1. ? Hardhat project root: ‣ /home/student-00-da52787eb902/nft_codelab
+1. ? Do you want to add a .gitignore? (Y/n) ‣ y
+1. ? Do you want to install this sample project's dependencies with npm (@nomicfoundation/hardhat-toolbox)? (Y/n) ‣ y
+   ```
+   npm install --save-dev "@nomicfoundation/hardhat-toolbox@^5.0.0"
+   ```
+1. Give Hardhat a star on Github if you're enjoying it!
+     https://github.com/NomicFoundation/hardhat
+
+1. Install OpenZeppelin:
+   ```
+   npm install @openzeppelin/contracts
+   ```
+1. Click "Check my progress" for the green check icon.
+
+
+1. Create a Solidity (.sol) file in the contracts directory:
+   ```
+   touch contracts/MyNFT.sol
+   vim contracts/MyNFT.sol
+   ```
+1. The file below was customized:
+   * {Collection-Name} to Collection-Name
+   * {Collection-Symbol} to Collection-Symbol
+   * {Max-Number} toHow many items in the collection would you like: Max-Number
+   * {Max-Mint} Determine the max mint per user: Max-Mint
+
+1. Paste the following code into the MyNFT.sol file:
+   ```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract Collection-Name is ERC721, Ownable {
+    uint256 private _tokenIdCounter;
+    uint256 public MAX_SUPPLY = Max-Number; // set max total supply
+    uint256 public maxMintsPerUser = Max-Mint; // max mints per user
+
+    string public baseTokenURI;
+    mapping(address => uint256) private _mintsPerUser;
+
+    constructor() ERC721("Collection-Name", "Collection-Symbol") Ownable(msg.sender) {}
+
+    function mintTo(address to) public payable returns (uint256) {
+        require(_tokenIdCounter < MAX_SUPPLY, "max NFTs already minted");
+        require(_mintsPerUser[to] < maxMintsPerUser, "exceeded max");
+        
+        _tokenIdCounter++;
+        _safeMint(to, _tokenIdCounter);
+        _mintsPerUser[to]++;
+
+        return _tokenIdCounter;
+    }
+
+    function setMaxMintsPerUser(uint256 maxMints) external onlyOwner {
+        maxMintsPerUser = maxMints;
+    }
+   ``` 
+1. Save the file by pressing ":", then "wd" to confirm.
+1. Click "Check my progress" for the green check icon.
+
+
+1. Compile your contract:
+   ```
+   cd ..  # to nft_codelab folder.
+   npx hardhat compile
+   ```
+FIXME:
+   ```
+WARNING: You are currently using Node.js v23.8.0, which is not supported by Hardhat. This can lead to unexpected behavior. See https://hardhat.org/nodejs-versions
+https://github.com/nodejs/Release
+
+ParserError: Expected '{' but got '-'
+ --> contracts/MyNFT.sol:7:20:
+  |
+7 | contract Collection-Name is ERC721, Ownable {
+  |                    ^
+
+Error HH600: Compilation failed
+
+HardhatError: HH600: Compilation failed
+    at SimpleTaskDefinition.action (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/builtin-tasks/compile.ts:499:15)
+    at Environment._runTaskDefinition (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)
+    at OverriddenTaskDefinition._action (/home/student-00-da52787eb902/nft_codelab/node_modules/@typechain/hardhat/src/index.ts:28:30)
+    at Environment._runTaskDefinition (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)
+    at Environment.run (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)
+    at SimpleTaskDefinition.action (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/builtin-tasks/compile.ts:1428:63)
+    at Environment._runTaskDefinition (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)
+    at Environment.run (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)
+    at SimpleTaskDefinition.action (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/builtin-tasks/compile.ts:1508:7)
+    at Environment._runTaskDefinition (/home/student-00-da52787eb902/nft_codelab/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)
+```
+
+
+Enter the address of your ethereum account
+Click Receive tokens
+
+1. Run hardhat to compile, test, deploy, and interact with your NFT smart contract.
+
+
+
+
+1. Faucet
+
+   The Google Cloud faucet provides web3 developers with free tokens for deploying, testing, and optimizing smart contracts on popular testnets like Holesky and Sepolia. A faucet is an app that dispenses free tokens on a testnet for experimentation, such as deploying smart contracts or debugging transactions. 
+   Testnet tokens have no real-world value and cannot be sold or used on the main blockchain network (like Ethereum mainnet).
+
+   If you're curious, you can track the transaction's status using a blockchain explorer or an RPC endpoint for that specific testnet.
+
+   https://discord.com/invite/gcp-web3-startup-program
+
+https://www.linkedin.com/in/bensyn/overlay/experience/2155655858/multiple-media-viewer/?profileId=ACoAACt0uJQBoBjUlzj29imjXOox6fgV3S0R3Ac&treasuryMediaId=1721925671972
+
+## Bitcoin speculation
+
+https://www.ripple.com/ripple-foundation/ripple-foundation-website.html
+
+https://www.youtube.com/watch?v=3QpdU9LS540
+[1:47:35] "RUIN: Money, Ego and Deception at FTX" by Bloomberg Originals
+
+https://www.youtube.com/watch?v=20BEJouWBgY
+[29:39] "The FTX Disaster is Deeper Than you Think" by ColdFusion
+
+
+
+
+* https://www.youtube.com/watch?v=d_DMq-sc5cY Crypto Quests
+* https://www.youtube.com/watch?v=Nv3byBEPa3o What is Chia?
+
+
+## Promptmate.io
+
+https://www.youtube.com/watch?v=wItCZX7Byp0
+We Built A FREE Generative AI Full Course For Beginners - It Has Something No One Else Has
