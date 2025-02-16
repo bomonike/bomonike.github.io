@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-12"
-lastchange: "v0183 + ai stack :README.md"
+date: "2025-02-15"
+lastchange: "v0184 + quantum :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -70,7 +70,8 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/python-coding">python-coding</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-tutorials">python-tutorials</a>
-1. <a target="_blank" href="https://bomonike.github.io/reasoning">reasoning</a>
+1. <a target="_blank" href="https://bomonike.github.io/quantum">quantum</a>
+1. <a target="_blank" href="https://bomonike.github.io/reasoning">reasoning</a> (AI)
 1. <a target="_blank" href="https://bomonike.github.io/regex">regex</a>
 1. <a target="_blank" href="https://bomonike.github.io/ros">ros</a> (Robotic Operating System)
 1. <a target="_blank" href="https://bomonike.github.io/ruby">ruby</a>
