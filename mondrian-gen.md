@@ -2,7 +2,7 @@
 layout: post
 url: https://bomonike.github.io/mondrian-gen
 date: "2025-02-09"
-lastchange: git commit -m"v003 + workflow diagram :mondrian-gen.md"
+lastchange: "v003 + workflow diagram :mondrian-gen.md"
 file: "mondrian-gen"
 title: "mondrian-gen"
 excerpt: "Here are my notes about creating Python code to create a workflow  to generate art using several GenAI services."
@@ -14,25 +14,34 @@ created: "2025-02-07"
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
-> "The printing press democratised knowledge,<br />the camera democratised images,<br />and AI is democratising creativity itself." -- Kevin Kelly
-
-
 <a name="TheProgram"></a>
 
-This article describes my program at <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py">https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py</a>
+This article describes how non-programmers can use my Python AI program at
 
-The Python program assembles, into one file, many Python coding tricks and API calls together, in <a href="#workflow">one workflow</a>. That's to be prepared to "do anything" during hackathons and MVP creations, <strong>quickly yet securely</strong>.
+   <ul><a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py">https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py</a></ul>
 
-Thus, this is intentionally a rather "bloated swiss army knife" monolith.
-However, in the future, utility functions here can be
-moved to a separate file (Python module) of custom utilities.
+to generate a collection of art pieces for monitization as NFTs (Non-Fungible Tokens)
+on Marketplaces with digital contracts.
+
+NFTs are stored (like GitHub) in blockchains of cryptographically defined addresses.
+The chain of addresses provide a secure and transparent way to verify authenticity and ownership.
+
+Because this Python program assembles many Python coding tricks and API calls together, in <a href="#workflow">one workflow</a>, it can be quickly and securely be adapted to do a full suite of tasks.
+
+Thus, to some this may seem like a "bloated swiss army knife" monolith.
+However, after team review, utility functions here will be
+moved to separate Python module files.
 But they are together here now to make it easier to understand and modify.
+
+
+> "The printing press democratised knowledge,<br />the camera democratised images,<br />and AI is democratizing creativity itself." -- Kevin Kelly
+
 
 ## GenAI
 
 Currently, this program has both local programming and Generative AI (GenAI) API calls to create (from text prompt) a <strong>PNG image</strong> file that can be printed and possibly sold as NFT art.
 
-Perhaps in the future, this workflow can be extended to other output formats:
+This workflow can be extended to other output formats:
 text, audio/music, video, 3D objects for printing, synthetic data, code.
 
 Criteria for evaluating foundation LLMs:
@@ -69,6 +78,7 @@ While impressionists were painting soft landscapes, Piet Mondrian started a new 
 When I was learning websites in the late 1980's, I wrote a Java program that created random Mondrian-styled images. Recently, I rewrote it in Python, which generated images like this:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1738291361/mondrian-gen-20250119T192300-0700-1-pgm-keep-art_xaz6ef.png"><img width="300" alt="mondrian-gen-20250119T192300-0700-1-pgm-keep-art.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738291361/mondrian-gen-20250119T192300-0700-1-pgm-keep-art_xaz6ef.png" /></a>
+
 
 <a name="Astonished"></a>
 
@@ -223,7 +233,9 @@ The program currently outputs "lossless" .png format image files.
 
 TODO: It can also create files that are smaller by outputting "lossy" format image files in (jpeg, webp, etc.).
 
-Then there are video (.mp4) format files created by <strong>Runway.ai</strong>, Sora, etc.
+TODO: Add creation of video (.mp4) format files created by <strong>Runway.ai</strong>, Suna, etc.
+
+TODO: Add creation of music (.mp4) created by Suno
 
 
 ### 10. Desire evaluation
@@ -233,7 +245,12 @@ Traditionally, the effectivenss of AI is measured by "Accuracy".
 When art is generated, there needs to be a measure of <strong>taste</strong>
 or "Desirability" to certain audiences.
 
-### 11. Watermark
+### 11. Watermark png
+
+BTW
+https://www.youtube.com/watch?v=BMAemNpHFP4
+Format Watermark using LibreOffice
+from docxtpl import DocXTemplate
 
 ### 12. Encryption
 
@@ -249,14 +266,62 @@ To monitize, a crypto wallet is needed. There are several of them.
 
 ### 14. NFT chain
 
+IPFS content-addressing system
+storage capacity of the Filecoin miner network.
+
+https://www.sothebys.com/en/articles/generative-art-a-quintessentially-modern-art-form
+   * <a target="_blank" href="https://www.sothebys.com/en/buy/auction/2023/grails-part-ii?locale=en"><img align="right" width="100" height="100" alt="dmitri-chernak-goose-sothebys-800x800.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739504893/dmitri-chernak-goose-sothebys-800x800_pqjcmt.png">"Ringers #879 (The Goose)"</a> by Dmitri Cherniak was listed for $2-$3 million but utimately sold in New York City for $6.2 million (inclusive of Sotheby's buyer's premium).
+   * Larva Labs CryptoPunk series sold for 40,000 - 60,000
+
+
 ### 15. Marketplace
+
+EVM-based chains
+
+Non-EVM based chains such as Solana.
 
 ### 16. Thumbnails
 
+TODO: Use Replicate to generate thumbnails
+
+
 ### 17. IPFS
 
-Many blockchain make uses of the
-IPFS (InterPlanetary File System) holds files permanently and cheaply.
+To physically hold files (permanently and cheaply), many blockchain enthusiasts make use of the
+IPFS (InterPlanetary File System) protocol to a decentralized Filecoin Network.
+
+with smart contracts to be deployed on multiple chains like FVM, Optimism, Polygon, Solana, etc.
+
+Files (and their metadata) would be referenced by a CID, which is a SHA256 hash of the file's contents plus https to a <strong>gateway</strong>. which provides:
+
+    * token gated access on a public network.
+
+A temporary gateway can be setup on any laptop.
+
+There are several organizations that provide a <strong>dedicated gateway</strong> serving requests
+
+   * 4K video streaming
+   * automatic image resizing that reduces mobile bandwidth while increasing speed
+
+Gateways built on IPFS and Filecoin:
+
+* Free service <a target="_blank" href="https://app.nft.storage/">NFT.storage</a> (<a target="_blank" href="https://github.com/nftstorage/nft.storage/blob/main/README.md#getting-started">on github</a>) was decommissioned on June 30, 2024 (<a target="_blank" href="https://www.youtube.com/watch?v=_8c9FJ7W-jE">VIDEO</a> by Reece Hunter)
+
+* <a target="_blank" href="https://lighthouse.storage/">Lighthouse</a> offers a free 1GB starter plan and unique <a target="_blank" href="https://files.lighthouse.storage">"pay-once and store-forever" pricing</a> starting at $20 for 5GB storage and 10GB bandwidth. <a target="_blank" href="https://files.lighthouse.storage">Their UI</a>.
+
+   1. Confirm with copying OTP code from web3auth.io email.
+   1.
+
+* <a target="_blank" href="https://pinata.cloud/">Pinata.cloud</a> offers flexible plans and powerful, easy-to-use tools for managing data on IPFS. Use code NFTSTORAGE50 at checkout to enjoy 50% off your first month. Sign up today. <a target="_blank" href="https://www.youtube.com/watch?v=7QwNLVTYGZ0">Python 360</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=5JP4j2hLNME">Cardano blockfrost API</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=4A-Ti_sb-Mo&pp=ygUZcHl0aG9uIG1pbmQgbmZ0IHVzaW5nIGFwaQ%3D%3D">web3.py</a> Engicode
+
+NFT Token Checker, a tool for block explorers, marketplaces, and wallets to show verification that NFT collections, tokens, and CIDs are preserved by NFT.Storage.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=G0wdVjBY70Q">NFT collection</a>
+
 
 ### 18. QR code
 
