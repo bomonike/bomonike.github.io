@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-15"
-lastchange: "v0184 + quantum :README.md"
+lastchange: "v0186 + london :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -22,6 +22,7 @@ Topics alphabetically:
 <!--<|cursor1. <a target="_blank" href="https://bomonike.github.io/anthropic">anthropic</a>-->
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
 <!--1. <a target="_blank" href="https://bomonike.github.io/aprs">aprs</a> -->
+1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-machine-learning">azure-machine-learning</a>
@@ -45,6 +46,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/kanban">kanban</a>
 1. <a target="_blank" href="https://bomonike.github.io/mac-mini">mac-mini</a>
 1. <a target="_blank" href="https://bomonike.github.io/mac-utilities">mac-utilities</a>
+1. <a target="_blank" href="https://bomonike.github.io/london">london</a> (England)
 1. <a target="_blank" href="https://bomonike.github.io/macos">macos</a>
 1. <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a> configuration settings
 1. <a target="_blank" href="https://bomonike.github.io/microsoft-ai">microsoft-ai</a>
@@ -85,6 +87,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/tech+">tech+</a>
 1. <a target="_blank" href="https://bomonike.github.io/terraform">terraform</a>
 1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (Operational Technologies)
+1. <a target="_blank" href="https://bomonike.github.io/tableau">tableau</a>
 1. <a target="_blank" href="https://bomonike.github.io/temporal">temporal</a>
 1. <a target="_blank" href="https://bomonike.github.io/waf">waf</a>
 1. <a target="_blank" href="https://bomonike.github.io/web-scraping">web-scraping</a>

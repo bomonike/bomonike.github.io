@@ -157,10 +157,12 @@ I think the London Eye is a rip off. And there is no bathroom.
 https://www.londoneye.com/tickets-and-prices/river-cruise/
 River cruise has live commentary
 The Windmill Ale and Pie
-Leicester Square - tkts.com.uk booth (fast food, avoid)
+Leicester Square - tkts.com.uk booth (fast food, avoid) by the Odeon theater.
+
 Chinatown bakeries under lanterns
 street lights West end
-Buckingham Palace changing of the guards (boring)
+Buckingham Palace changing of the guards (boring) 11am M,W,F,Sun in good weather
+   Get out from St. James' Palace.
    Get tickets to go into state rooms
 https://www.householddivision.org.uk/changing-the-guard-calendar
 
@@ -234,3 +236,7 @@ Ed Chapman
 
 https://www.youtube.com/watch?v=vpCYaDgX65w
 LONDON TRAVEL TIPS FOR FIRST TIMERS | 40+ Must-Knows Before Visiting London + What NOT to Do! by Happy to Wander (Travel Tips & Inspo)
+
+https://www.youtube.com/watch?v=njOwB9bKNq0
+14 HUGE mistakes tourists always make in London
+Claire's Footsteps (blue badge guide)
