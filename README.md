@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-15"
-lastchange: "v0187 + dapps :README.md"
+date: "2025-02-19"
+lastchange: "v0188 + ai-evaluations :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -17,6 +17,7 @@ It is used while <a target="_blank" href="https://wilsonmar.github.io/posts">wil
 
 Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/acronyms">acronyms</a>
+1. <a target="_blank" href="https://bomonike.github.io/ai-evaluations">ai-evaluations</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-agents">ai-agents</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
 <!--<|cursor1. <a target="_blank" href="https://bomonike.github.io/anthropic">anthropic</a>-->
