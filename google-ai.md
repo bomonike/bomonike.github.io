@@ -155,3 +155,18 @@ Instructions for Cloud Skills Boost and activating credits: https://services.goo
 Nikita Andreyev https://riqli.com/main/search/67230274a7bbc5dea4d00a43 We are using Generative AI and Vertex for test preparation, and get main information from topics
 
 Jay Veal For the folks asking about gen AI examples in education: - Design customized language lessons and exercises tailored to learner needs - Develop tailored tutoring materials and improvement guidance for students
+
+https://www.cloudskillsboost.google/focuses/86502?parent=catalog
+Get Started with Vertex AI Studio
+In this lab, you will learn how to:
+
+   * Analyze images with Gemini
+   * Explore Vertex AI Studio Freeform mode
+   * Design text prompts for zero-shot, one-shot, and few-shot prompting
+   * Generate conversations with chat prompts
+
+Vertex AI is a comprehensive machine learning development platform that provides both predictive and generative AI capabilities. It allows you to train, evaluate, and deploy predictive machine learning models for forecasting purposes. Additionally, you can utilize the platform to discover, tune, and serve generative AI models to produce content.
+
+Vertex AI Studio lets you quickly test and customize generative AI models so you can leverage their capabilities in your applications. It provides a variety of tools and resources including both UI (user interface) and coding examples that make it easy to start with generative AI, even if you don't have a background in machine learning.
+
+This lab guides you through Vertex AI Studio, where you'll unlock the potential of cutting-edge generative AI models. You'll explore Gemini and use it to analyze images, design prompts, and generate conversations directly on the Google Cloud console. No need for API or Python SDKs - it's all accessible through the intuitive user interface.

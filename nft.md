@@ -50,15 +50,15 @@ It is no secret that Bitcoin's (BTC) price has experienced significant fluctuati
 
 After the election of Trump, on January 10, 2024, Gary Gensler, the Chair of the United States Securities and Exchange Comission (SEC), issued a Statement on the Approval of Spot Bitcoin Exchange-Traded Products. After rejecting more than 20 applications between 2018 and 2024, the SEC approved trading for a spot Bitcoin ETF in the United States.
 
-Globally, the three types of Bitcoin ETF available are: 
+Globally, the three types of Bitcoin ETF available are:
    * Bitcoin spot ETF
-   * Bitcoin futures ETF. This removes the need for the ETF issuer to hold bitcoin in reserve. 
+   * Bitcoin futures ETF. This removes the need for the ETF issuer to hold bitcoin in reserve.
    * Leveraged bitcoin futures ETF
 
 Bitcoin ETF Providers:
 
    * iShares Bitcoin ETF Trust (IBIT)
-   * Bitwise Bitcoin ETF Trust (BITB) 
+   * Bitwise Bitcoin ETF Trust (BITB)
    * ARK 21Shares Bitcoin ETF (ARKB)
    * Franklin Templeton Bitcoin ETF (EZBC)
    * Valkyrie Bitcoin Fund (BRRR)
@@ -175,7 +175,7 @@ In 2023 it's home to 3 of the top 10 apps on Web3:
 Among <a target="_blank" href="https://ethereum.org/en/wallets/find-wallet/">Ethereum Wallets</a>
 
 1. Install Metamask for iOS, Android, Chrome, Firefox (by danfinlay)
-   (Safari not supported) 
+   (Safari not supported)
 
    https://metamask.io/download/
 
@@ -187,14 +187,14 @@ Among <a target="_blank" href="https://ethereum.org/en/wallets/find-wallet/">Eth
 
    PROTIP: Purchasers pay the Taker Fee when an order is placed and the Maker Fee when an order is matched and filled. Higher "bps" (basis points) are paid for low volume trades. 0.40% is 40 bps. 60 bps is the upper end of the range for small trades.
 
-1. Consider deals by affiliates such as 
+1. Consider deals by affiliates such as
 
    * $200 to signup on Coinbase through https://coinbase.mattscrypto.com/ But they charge 1% on the first $1000
    * MoonPay to buy crypto using Venmo through http://moonpay.mattscrypto.com/
    * $10 of free Bitcoin on Kraken through http://kraken.mattscrypto.com/
 
 1. Fund with credit card.
-1. Scroll down to compare rates from providers: 
+1. Scroll down to compare rates from providers:
 
    <a target="_blank" href="https://coinmarketcap.com/ru/currencies/near/">CoinMarketCap</a>,
    <a target="_blank" href="https://www.coingecko.com/en/coins/near-protocol">CoinGecko</a>,
@@ -212,7 +212,7 @@ Among these options, Strike and Kraken Pro appear to offer the lowest fees for b
 
 
 
-## 
+##
 
 At https://app.near.ai/agents
 All Ethereum Wallets, Including MetaMask, <a target="_blank" href="https://near.org/blog/ethereum-near-mainnet/">Now</a> Usable on NEAR Mainnet MyNearWallet
@@ -235,21 +235,29 @@ using the wallet.testnet.near.org
 and front-end https://github.com/near-examples/nft-tutorial-frontend.git
 
 
-
 ## NFT marketplaces on blockchains
 
+<a target="_blank" href="https://www.coursera.org/videos/crypto101/uCC1J?query=nft&page=2&sortBy=BEST_MATCH&authProvider=mckinsey&source=search">VIDEO</a>:
 There are several NFT marketplaces: OpenSea, MagicEden.us, Rarible, Superrare, etc.
 
 <a target="_blank" href="https://opensea.io/collection/cryptopunks"><img alt="cryptopunks-900x399.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1736487680/cryptopunks-900x399_njypxq.webp" /><br />
-The above is CryptoPunks's gallery</a>, launched as a fixed set of 10,000 items in mid-2017,
-is now one of the <a target="_blank" href="https://opensea.io/rankings">most popular</a>
-at <a target="_blank" href="https://www.opensea.com/">Opensea.com</a>.
+The above is CryptoPunks's gallery</a> from https://lavalabs.com/cryptopunks, launched as a fixed set of 10,000 unique 24x24 pixel characters in mid-2017. Although it doesn't comply with standards ERC-20, ERC-721, etc., it is now one of the <a target="_blank" href="https://opensea.io/rankings">most popular</a> at <a target="_blank" href="https://www.opensea.com/">Opensea.com</a>. It inspired the modern CryptoArt movement. On Feb 2022, the #5822 fetched $23 million dollars (8,000 ETH).
+
+10,000 ERC-271 tokens (Apes) from the Bored Ape Yacht Club provides NFT holders with members-only benefits such as access to a private digital board, offline parties hosted by Yuga Labs, etc. with celebrities such as Steph Curry, Madonna, Eminen, etc. Yuga Labs released ERC-20 "AppCoin" tokens Otherdeed.
+
+Axie Infinity Play-to-Earn (P2E) game was developed by Sky Mavis in 2018.
+Axies are the name of digital pets in the ERC-721 game,
+which involves collecting, breeding for battle with others using Axies.
+It started on Etherium and moved to the Ronin Etherium sidechain for faster and less expensive transactions.
+
 
 Opensea was used in Martha Stewart's 2021 collaboration with the Tokns UK NFT agency to create
 Shopify marthafreshmint.com to sell NFTs of photographs.
 It's now defunct.
 
 On Auguest 2024, SEC issues Wells Notice to OpenSea.
+
+NFT games like Axie Infinity, virtual worlds like Decentraland.
 
 Roofstock.com is revolutionizing real estate by using web3 blockchain.
 
@@ -266,7 +274,7 @@ have bought the opportunity to join a private chat room.
 NEAR's "Rainbow Bridge" facilitates transfers of various token types
 between different blockchains.
 
-rewards for validators.
+Rewards for validators.
 
 * <a target="_blank" href="https://www.linkedin.com/pulse/introduction-blockchain-what-why-how-sharad-kamra-j7ubc/">Blockchain 101</a>
 
@@ -484,15 +492,59 @@ References:
    * https://www.youtube.com/watch?v=TeFAHmzvIdg "Building decentralized websites on IPFS" byRyan Shahine
 
 
+## Pinata with Crossmint
+
+@pinatacloud
+
+https://www.youtube.com/watch?v=LTFRD-eEc5Y">How to Mint an NFT With APIs Using Crossmint and Pinata</a>
+
+https://www.youtube.com/shorts/W5cuba0A6Bs?feature=share
+
+1. Get Login Key from https://app.pinata.cloud/
+2. Create a free account. Confirm email.
+1. Menu API keys, New Key, 
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739737356/nft-pinanta-admin-1088x393_u9zlpc.png">
+   <img alt="nft-pinanta-admin-1088x393.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739737356/nft-pinanta-admin-1088x393_u9zlpc.png" /></a>
+
+1. in your secrets vault (Keychain Access.app on macOS, etc.) save:
+1. Save "apikey"
+1. Save "apisecret"
+1. Save "jwt"
+
+1. Go to the Dev Console at https://www.crossmint.com/console/overview
+   (Not to https://www.crossmint.com/signin?callbackUrl=/user/collection)
+1. Sign in with your email.
+1. Get login code from email and paste.
+1. Integrate menu. "API keys".
+1. Server-side keys: There are 3 secrets:
+
+1. Copy "Access token" and "Refresh token" values
+1. Save "accesstoken"
+1. Save "refreshtoken"
+
+
+From <a target="_blank" href="https://www.linkedin.com/in/ash-tech/">Ashish</a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739758143/aif-c01-cheatsheet_mtsfbb.jpg">
+<img alt="aif-c01-cheatsheet" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739758143/aif-c01-cheatsheet_mtsfbb.jpg" /></a>
+
+
+
+
+
+<hr />
+
 <a name="GasFees"></a>
 
 ## Gas fees
 
-Each blockchain charges a one-time $50 - $300
+The cost of creating NFT is recovered with "gas fees" charged when NFTs are 
+transferred on the Ethereum blockchain.
+
+Each blockchain charges a one-time $50 - $300.
+That can be steep.
 
 Royalties up to 10% ???
-
-The cost of creating NFT is recovered with "gas fees" charged when NFTs are transferred on the Ethereum blockchain.
 
 
 
@@ -713,13 +765,26 @@ https://www.youtube.com/watch?v=2vYBZ8Y2HdM
 
 <hr />
 
+## Cryptocurrency and Applications
+
+https://www.coursera.org/learn/crypto101/home/module/4
+by James Won-Ki HONG in South Korea
+
+1. Introduction to Cryptocurrencies 52 minutes
+2. Cryptocurrency Wallets and Exchanges 53 minutes
+3. Stablecoins 43 minutes
+4. Non-Fungible Tokens(NFT) 1 hour
+5. Fractional NFTs 59 minutes
+6. Decentralized Finance (DeFi) 51 minutes
+
+
 ## Google Develop an NFT with Google Cloud Web3
 
 <a target="_blank" href="https://www.cloudskillsboost.google/focuses/87986?parent=catalog">GSP1243:
 "Develop an NFT with Google Cloud Web3 (1h 30m, 7 credits)</a>
 You will receive the starting code to build a base for your NFT contract, then you'll customize the contract, and then launch it to the Ethereum Sepolia testnet.
 
-You'll also be modifying an ERC-721 NFT contract, using Google's Blockchain Node Engine to deploy your code, and then using BigQuery to monitor it. ERC-721 is a popular standard for NFTs, where each token belonging to the smart contract can be unique. 
+You'll also be modifying an ERC-721 NFT contract, using Google's Blockchain Node Engine to deploy your code, and then using BigQuery to monitor it. ERC-721 is a popular standard for NFTs, where each token belonging to the smart contract can be unique.
 
 A. Write an NFT smart contract (see https://ethereum.org/en/nft/.)
 B. Receive testnet ETH from the Cloud Web3 Spolia Faucet
@@ -746,7 +811,7 @@ ENS, or Ethereum Name Service, is a decentralized naming protocol built on the E
 1. gcloud auth list
 1. CLick Authorize
 1. gcloud config list project
-1. To  install node.js 
+1. To  install node.js
    https://nodejs.org/en/download/package-manager
 
 1. Menu "Compute Engine".
@@ -770,7 +835,7 @@ ENS, or Ethereum Name Service, is a decentralized naming protocol built on the E
 1. Docs https://nodejs.org/en/download/package-manager
 
    ## Sepolia Faucet
-   
+
    You need a small amount of Sepolia ETH to deploy your contract. Sepolia ETH is free, but it must be obtained from a public faucet.
 
 1. Switch to a browser to use the Cloud Web3 Sepolia Faucet
@@ -782,7 +847,7 @@ ENS, or Ethereum Name Service, is a decentralized naming protocol built on the E
    You need a small amount of Sepolia ETH to deploy your contract. Sepolia ETH is free, but it must be obtained from a public faucet.
 
 1. Select network "Ethereum Sepolia".
-1. Switch to Metamask to copy the Wallet Address 
+1. Switch to Metamask to copy the Wallet Address
 1. Switch to Google to paste it into its "Wallet address or ENS name" input field.
 
 1. Sign in using your Student Username such as
@@ -791,13 +856,13 @@ ENS, or Ethereum Name Service, is a decentralized naming protocol built on the E
 1. Password.
 1. Click "Receive 0.05 Sepolia ETH" for "Drip in queue", then "Drip complete"
 
-1. ADDED: In the SSH at the student folder: 
+1. ADDED: In the SSH at the student folder:
    ```
    npm --version   # 10.9.2
    node --version  # v23.8.0
    ```
    v23.x is the "Current" at https://github.com/nodejs/Release
-   QUESTION: So should "22.x" LTS be used instead?
+   QUESTION: So should "22.x" LTS be specified for use instead? Where?
 
 1. In the SSH at the student folder:
    ```
@@ -869,7 +934,7 @@ contract Collection-Name is ERC721, Ownable {
     function mintTo(address to) public payable returns (uint256) {
         require(_tokenIdCounter < MAX_SUPPLY, "max NFTs already minted");
         require(_mintsPerUser[to] < maxMintsPerUser, "exceeded max");
-        
+
         _tokenIdCounter++;
         _safeMint(to, _tokenIdCounter);
         _mintsPerUser[to]++;
@@ -880,7 +945,7 @@ contract Collection-Name is ERC721, Ownable {
     function setMaxMintsPerUser(uint256 maxMints) external onlyOwner {
         maxMintsPerUser = maxMints;
     }
-   ``` 
+   ```
 1. Save the file by pressing ":", then "wd" to confirm.
 1. Click "Check my progress" for the green check icon.
 
@@ -927,7 +992,7 @@ Click Receive tokens
 
 1. Faucet
 
-   The Google Cloud faucet provides web3 developers with free tokens for deploying, testing, and optimizing smart contracts on popular testnets like Holesky and Sepolia. A faucet is an app that dispenses free tokens on a testnet for experimentation, such as deploying smart contracts or debugging transactions. 
+   The Google Cloud faucet provides web3 developers with free tokens for deploying, testing, and optimizing smart contracts on popular testnets like Holesky and Sepolia. A faucet is an app that dispenses free tokens on a testnet for experimentation, such as deploying smart contracts or debugging transactions.
    Testnet tokens have no real-world value and cannot be sold or used on the main blockchain network (like Ethereum mainnet).
 
    If you're curious, you can track the transaction's status using a blockchain explorer or an RPC endpoint for that specific testnet.

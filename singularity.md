@@ -151,6 +151,8 @@ The addition of generative AI enables more credible misinformation.
 
    PROTIP: Programming and IT is not the only job within AI companies.
 
+   <img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739299274/ai-stack-1692x766_oozdlv.png"></a>
+
    OpenAI o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
 
    <a target="_blank" href="https://youtube.com/shorts/VbVPF57nne8?si=W5clIH2xPyBEuGii">Michi Kaku:</a> (at time of comment): Humans are better at
@@ -170,21 +172,27 @@ The addition of generative AI enables more credible misinformation.
 
    <a target="_blank" href="https://www.youtube.com/watch?v=l-YbaSzDmhU">"Software Engineering costs will flatten out"</a>
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=aXiOBAXYxCI&t=139s">The 8 AI Skills That Will Separate Winners From Losers in 2025"</a> by Liam Ottley
+   <a target="_blank" href="https://www.youtube.com/watch?v=aXiOBAXYxCI&t=139s">The 8 AI Skills That Will Separate Winners From Losers in 2025"</a> by Liam Ottley https://b.link/x2is9wz4
 
+   Power to Build:
    1. AI-assisted Software Development: Using no-code platforms like Bolt and RepetAgent to build applications. 12:32 OpenAI GPT, Relevance AI,
+   Power to Automate:
+   * Skill 2: AI Agent Development
+   * Skill 3: AI Workflow Automation
+   Power to Create:
+   * Skill 4: Prompt Engineering [Promptmetheus]
+   * [13:01] Skill 5: API Integration [Postman]
+   * SKill 6: Content Creation [Midjourney] [DALL-E] for images, Replicate [Runway] for videos
+   * Skill 7: AI Editing and Enhancement: [Descript], [Opus] for refining content.
+   Power to Connect:
+   * Skill 8: [YouTube] [Twitter] [linkedIn] to build to stand out from the crowd with interesting ideas communicated clearly. Use [Claude3] to write better and faster. 17:19
 
    2. Automation with AI Agents: Creating digital workers that can perform tasks autonomously.
    3. AI Content Generation: Utilizing tools like Midjourney for images and Runway for videos.
-   4. AI Editing and Enhancement: Using software like Descript for refining content.
    5. Prompt Engineering: Crafting effective prompts for AI models to generate desired outputs.
-   6. Workflow Automation: Connecting tools using platforms like Zapier to streamline processes.
+   6. Workflow Automation: Connecting tools using platforms like [Zapier] to streamline processes.
    7. AI-enhanced Writing: Improving writing skills with AI tools to communicate effectively.
    8. Audience Engagement: Building a personal brand and connecting with followers using digital platforms.
-   * Skill 2: AI Agent Development
-   * Skill 3: AI Workflow Automation
-   * Skill 4: Prompt Engineering [Promptmetheus]
-   * [13:01] Skill 5: API Integration [Postman]
 
 
 

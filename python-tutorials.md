@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-26"
-changes: "v032 + greghogg :python-tutorials.py"
+date: "2025-02-17"
+changes: "v033 + ms:python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -1319,6 +1319,7 @@ https://www.youtube.com/watch?v=MieyLy_6N40
 
 ## References
 
+BOOK:
 https://www.cosmicpython.com/book/preface.html
 What’s the best way of structuring your application so that it’s easy to test?
 
@@ -1330,6 +1331,32 @@ who wrote book <a target="_blank" href="https://shop.beacons.ai/andrewcodesmith/
 https://frontendmasters.com/courses/
 "My Dev Setup is Better Than Yours"</a>
 by ThePrimeagen
+
+### Microsoft on Coursera
+
+https://www.linkedin.com/pulse/microsofts-python-certificate-worth-stealth-startup-careers-xgtmf/
+
+https://www.coursera.org/professional-certificates/microsoft-python-developer
+Microsoft Python Development Professional Certificate
+
+1. <a target="_blank" href="https://www.coursera.org/learn/microsoft-python-programming-fundamentals?specialization=microsoft-python-developer">Python Programming Fundamentals 24 hours</a>
+   1. Introduction to Python 4 hours
+   2. Python basics 3 hours
+   3. Functions and modules 5 hours
+   4. Data structures in Python 4 hours
+   5. Error handling and debugging 3 hours
+   6. Testing basics & version control 4 hours
+
+2. <a target="_blank" href="https://www.coursera.org/learn/microsoft-data-analysis-visualization-with-python?specialization=microsoft-python-developer">Data Analysis and Visualization with Python 20 hours</a>
+3. <a target="_blank" href="https://www.coursera.org/learn/microsoft-automation-scripting-with-python?specialization=microsoft-python-developer">Automation and Scripting with Python 26 hours</a>
+   1. Introduction to automation,
+   1. Basic automation scripts,
+   1. Advanced automation techniques introduces you to more sophisticated automation techniques, focusing on application programming interface (API) interaction, integration with third-party services, and task scheduling. Learners will explore the world of APIs, learning how to use Python's requests library to interact with REST APIs, handle authentication, and manage rate limits. 
+   1. Optimization and scaling, focuses on optimizing and scaling automation scripts for improved performance and handling larger, more complex tasks. 
+   1. Git collaboration: Essential skills for a team environment
+4. <a target="_blank" href="https://www.coursera.org/learn/microsoft-web-development-with-python?specialization=microsoft-python-developer">Web Development with Python 22 hours</a>
+5. <a target="_blank" href="https://www.coursera.org/learn/microsoft-advanced-python-development-techniques?specialization=microsoft-python-developer">Advanced Python Development Techniques 21 hours</a>  March 3
+6. <a target="_blank" href="https://www.coursera.org/learn/microsoft-devops-agile-practices-in-python-development?specialization=microsoft-python-developer">Project Development in Python 19 hours</a> March 3
 
 
 ## More on Python

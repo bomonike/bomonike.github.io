@@ -63,9 +63,11 @@ Get a refund on the card when you leave.
    1. O2 arena
    1. NIGHT: ABBA Experience stadium
 
-      ### London Bridge:
-   1. Residence Inn by Marriott London Bridge
+      ### South London Bridge:
    1. Borough (Farmers) Market
+      * Wild Mushroom Rosotto made with Truffle Oil and Parmesan cheese and  Spelt
+      * Strawberries with chocolate
+   1. Residence Inn by Marriott London Bridge
    1. FOOD: <a target="_blank" href="https://www.instagram.com/p/CqNFwH8gkg8/">Bar Douro</a> Portuguese cuisine near London Bridge
    1. Shakespeare's Globe theater
 

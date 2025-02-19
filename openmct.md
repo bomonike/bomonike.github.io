@@ -1,11 +1,30 @@
+---
+layout: post
+date: "2025-02-12"
+changes: "v032 + from openmct :weather-tech.md"
+file: "weather-tech"
+title: "Weather Technologies"
+excerpt: "How to visualize, predict, and stay ahead of your microclimate weather using NASA's OpenMCT website and Python programs"
+tags: [python, weather, mac, setup]
+image:
+# pic white python logo 1900x500.jpg
+  feature: https://cloud.githubusercontent.com/assets/300046/14622164/4230c848-0585-11e6-957b-be11147346e6.jpg
+  credit:
+  creditlink:
+comments: true
+created: "2023-01-10"
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
 
 <a target="_blank" href="https://bomonike.github.io/openmct"><img align="right" width="100" height="100" alt="openmct.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/openmct.png?raw=true" />
-This is at https://bomonike.github.io/openmct
 
-<!-- "v007 + note about Apache deprecation :openmct.md"
--->
+{% include whatever.html %}
 
-From the same organization that brought you the first man on the moon,
+## NASA's OpenMCT
+
+From NASA, the same organization that brought you the first man on the moon,
 the Space Station, landers and helicopters on Mars, etc. comes:
 
 <a target="_blank" href="https://github.com/nasa/openmct/tree/master/src/images/favicons"><img align="right" alt="src/images/favicons/favicon-96x96.png" width="96" height="96" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1728842488/openmct-96x96_iqvflp.png"></a><strong>Open MCT (Mission Control Technologies)</strong> was developed at NASA (National Aeronautics and Space Administration) Ames Research Center (@NASAAmes) in collaboration with the Jet Propulsion Laboratory (@NASAJPL). Open MCT is part of <a target="_blank" href="https://www.nasa.gov/smallsat-institute/space-mission-design-tools/">NASA's Space Mission Design Tools</a>.
@@ -751,3 +770,9 @@ https://grafana.com/blog/2023/09/26/celebrating-grafana-10-top-10-oh-my-grafana-
 Celebrating Grafana 10: Top 10 'Oh my Grafana!' dashboard moments of the decade
 
 
+## Weather tech
+
+https://www.windandweather.com/category/advanced-weather-instruments
+
+Air quality
+https://map.purpleair.com/air-quality-standards-us-epa-aqi

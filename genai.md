@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/genai
-date: "2025-01-31"
-lastchange: git commit -m"v005 + aif png :genai.md"
+date: "2025-02-18"
+lastchange: git commit -m"v006 + aws svcs :genai.md"
 file: "genai"
 title: "GenAI (Generative AI)"
 excerpt: "GenAI burst out in 2022 and changed the world with the generation of text, images, audio, and video."
@@ -14,6 +14,34 @@ created: "2023-08-08"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+## Lay of the land
+
+<a target="_blank" href="https://huyenchip.com/assets/pics/ai-oss/1-ai-stack.png">
+<img width="200" alt="New Stack"src="https://huyenchip.com/assets/pics/ai-oss/1-ai-stack.png" /></a>
+
+<a target="_blank" href="https://huyenchip.com/2024/03/14/ai-oss.html">"The New AI Stack"</a>
+from Hueyen Chip is a great summary of the major ways contributions.
+
+Application development:
+   * Prompt engineering
+   * AI interface
+   * RAG (Retrieval-Augmented Generation) data storage to extend AI LLMs
+   * <a href="#Evaluation">Evaluation</a>
+
+Model development:
+   * Dataset engineering
+   * Inference optimization
+   * Modeling & training
+
+Infrastructure:
+   * Compute management
+   * Data management
+   * Serving (Deployment into data center to production?)
+   * Monitoring
+
+
+## Platforms
 
 "This year, it's LLMs. Last year it was blockchain. Next year maybe quantum".
 "We keep moving".
@@ -44,6 +72,7 @@ Also:
    * <a href="#EmbeddingDBs">EmbeddingDBs</a>
    <br /><br />
 
+
 ## What's the big deal?
 
 Generative AI (GenAI) is the next progression in "democratizing" how people interact with computers.
@@ -65,9 +94,61 @@ https://checksum.ai/blog/the-engineering-of-an-llm-agent-system
 dair-ai/Prompt-Engineering-Guide)
 aggregated lists (e.g. f/awesome-chatgpt-prompts)
 
-https://huyenchip.com/2024/03/14/ai-oss.html
 
 <hr />
+
+<a name="Evaluation"></a>
+
+## Evaluation Quality Metrics
+
+It depends on what you are trying to achieve.
+
+* Classification tasks are measured using accuracy.
+* Regression tasks are measured using mean squared error (MSE).
+* Generation tasks are measured using mean squared error (MSE).
+
+* Task allocation tasks are measured using the F1 score.
+* Text summarization tasks are measured using the ROUGE score.
+* Question answering tasks are measured using the BLEU score.
+
+
+## Benchmarks
+
+https://betterbench.stanford.edu/
+A repository of AI benchmark assessments for informed benchmark selection through quality evaluation and best practice analysis
+
+
+## Use Cases: Ranking GenAI models
+
+<a target="_blank" href="https://www.youtube.com/watch?v=Rxbirwpq9FA&t=7m12s">VIDEO</a>:
+This comparison using benchmarks:
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739896040/genai-grok3-819x426_wgomxb.png"><img width="100" alt="genai-grok3-819x426.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739896040/genai-grok3-819x426_wgomxb.png" /></a>
+
+* Style Control
+* Hard Prompts
+* Hard Prompts w/Style Control
+
+* Coding
+* Math
+* Creative Writing
+* Instruction Following
+* Longer Query
+
+* Multi-turn
+* Multi-turn w/Style Control
+
+Other benchmarks:
+
+   * AIME: O3-mini-high (Math)
+   * GPQA Diamond: for science
+   * Codeforces (ELO) for coding reaching a lofty 2130, making chess grandmasters nervous
+
+Clean code: 
+O3-mini achieved a perfect 10/10 on pylint for a Hangman game project.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=7LTks_tOosk">VIDEO</a>:
+Build a game usong ChatGPT 03 Mini
+
 
 ## Prompt Engineering
 
@@ -130,14 +211,14 @@ QUESTION: What the heck does that mean?
 
 They call it the "Google Killer".
 
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739894682/ai-chat-541x544_y6vqwh.png"><img align="right" width="100" alt="ai-chat-541x544.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739894682/ai-chat-541x544_y6vqwh.png" /></a>
 Unlike ChatGPT, Perplexity is an "answer engine":
    * Can reference where knowledge is from (Academic, etc.)
-   * To reduce hallucinations, citations to sources are provided
+   * Citations to sources are provided to reduce hallucinations 
    * Taps into real-time knowledge
    <br /><br />
 
 38 people work there with half a billion invested (including by Jeff Bezos) <a target="_blank" href="https://www.youtube.com/watch?v=FZieYYj0ImE">VIDEO</a>
-
 
 
 <hr />
@@ -595,6 +676,36 @@ https://controlrooms.ai/
 SOCIAL: https://repost.aws/community/TA0veCRV2rQAmHpkzbMFojUA/generative-ai-on-aws
    * Whatsapp: https://k21academy.com/aiwa
 
+
+### AWS AI AIF-C01 Certification
+
+<a target="_blank" href="https://aws.amazon.com/certification/certified-ai-practitioner/"><img align="right" width="100"
+ alt="AWS-Certified-AI-Practitioner_badge_150x150.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738390459/AWS-Certified-AI-Practitioner_badge_150x150.png"></a>
+
+For $100, answer 70%+ of 65 questions in 90-minutes (2.5 hours) at Pearson VUE online, in English, Japanese, Korean, Portuguese (Brazil), and Simplified Chinese. Free recertification every 3-years. The cert. verifies knowledge of artificial intelligence (AI), machine learning (ML), and generative AI technologies, along with practical use cases and the application of these concepts using AWS services. No prerequisites. No coding.
+
+* 20% <a href="#AIF-C01-1">Domain 1</a>: Fundamentals of AI and ML
+* 24% <a href="#AIF-C01-2">Domain 2</a>: Fundamentals of Generative AI
+* 28% <a href="#AIF-C01-3">Domain 3</a>: Applications of Foundation Models
+* 14% <a href="#AIF-C01-4">Domain 4</a>: Guidelines for Responsible AI
+* 14% <a href="#AIF-C01-5">Domain 5</a>: Security, Compliance, and Governance for AI Solutions
+
+### Tutorials
+
+<a target="_blank" href="https://www.coursera.org/learn/exam-prep-aif-c01-aws-certified-ai-practitioner/home/module/1">On Coursera by Whizlabs</a> lab time is provided to learn:
+
+   1. 4 hours Foundation Models and Generative AI in AWS
+   2. 4 hours Fundamentals of AI & ML in AWS
+   3. 2 hours AWS Managed AI/ML Services
+   4. 3 hours Prompt Engineering and Responsible AI in AWS
+   5. 1 hour Secure AI Solutions in AWS
+
+
+### AWS Services:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739894724/aif-c01-cheatsheet_n2elsg.jpg"><img width="100" alt="aif-c01-cheatsheet.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739894724/aif-c01-cheatsheet_n2elsg.jpg" /></a>
+
+
 Unlike Microsoft, which offers just OpenAI,
 <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=02h02m22s" title="by Andrew Brown">VIDEO</a>:
 <a target="_blank" href="https://aws.amazon.com/bedrock/"><strong>Amazon Bedrock</strong> https://aws.amazon.com/bedrock</a> offers a marketplace of foundation models from several vendors:
@@ -609,6 +720,28 @@ Unlike Microsoft, which offers just OpenAI,
 
    * AI21labs' Jurassic-2 multilingual LLM for text generation in Spanish, French, German, Portugest, Italian, Dutch.
    <br /><br />
+
+   Amazon Bedrock - Overview
+
+   Amazon Bedrock - Demo
+
+   Foundation Models on Amazon Bedrock - How to Choose?
+
+   Understanding the RAG Architecture of LLM
+
+   AWS Services for Storage of Vector Embeddings 
+
+   Amazon Bedrock RAG & Knowledge Base - Demo
+
+   Amazon Bedrock - GuardRails
+
+   Amazon Bedrock - GuardRails - Demo
+
+   Amazon Bedrock Agents
+
+   PartyRock - Amazon Bedrock Playground
+
+   Amazon Bedrock - Pricing
 
 <a target="_blank" href="https://www.youtube.com/shorts/YcogQRgbr4Y">VIDEO</a>: Sagemaker vs Bedrock: SageMaker allows you to build a machine learning robot (on a low level). Bedrock deploys the latest GenAI robots (LLMs) built by others.
 
@@ -638,28 +771,11 @@ The Amazon SageMaker JumpStart generates embeddings stored in Aurora database.
    * https://aws.amazon.com/blogs/machine-learning/using-amazon-sagemaker-jumpstart-to-generate-embeddings-for-your-text-data/
    <br /><br />
 
-RAG (Retrieval Augmented Generation (RAG) can retrieve: PDFs, S3 text, Youtube, CSV, PPT.
+RAG (Retrieval Augmented Generation) can retrieve: PDFs, S3 text, Youtube, CSV, PPT.
 
 AWS is adding Generative AI in QuickSight Analytics dashboard:
 https://aws.amazon.com/blogs/business-intelligence/announcing-generative-bi-capabilities-in-amazon-quicksight/
 
-
-### AIF Certification
-
-"Early Adopter" is added to the digital badge of <a target="_blank" href="https://aws.amazon.com/certification/certified-ai-practitioner/"><strong>AIF-C01</strong> (AWS Certified AI Practitioner)<img align="right" width="100" alt="aws-credly-badges-early-adopter-aws-certified-ai-practitioner-150x150.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738390692/aws-credly-badges-early-adopter-aws-certified-ai-practitioner-150x150_zqtmlb.png"></a>
-given to those who earn this certification by February 15, 2025 (announced on June 2024).
-It verifies knowledge of artificial intelligence (AI), machine learning (ML), and generative AI technologies, along with practical use cases and the application of these concepts using AWS services.
-For $100, answer 70%+ of 65 questions in 90-minutes (2.5 hours) at Pearson VUE online, in English, Japanese, Korean, Portuguese (Brazil), and Simplified Chinese. Free recertification every 3-years.
-
-<a target="_blank" href="https://aws.amazon.com/certification/certified-ai-practitioner/"><img align="right" width="100"
- alt="AWS-Certified-AI-Practitioner_badge_150x150.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738390459/AWS-Certified-AI-Practitioner_badge_150x150.png"></a>
-   * 20% <a href="#AIF-C01-1">Domain 1</a>: Fundamentals of AI and ML
-   * 24% <a href="#AIF-C01-1">Domain 2</a>: Fundamentals of Generative AI
-   * 28% <a href="#AIF-C01-1">Domain 3</a>: Applications of Foundation Models
-   * 14% <a href="#AIF-C01-1">Domain 4</a>: Guidelines for Responsible AI
-   * 14% <a href="#AIF-C01-1">Domain 5</a>: Security, Compliance, and Governance for AI Solutions
-
-No prerequisites. No coding.
 
 
 <a href="#AIF-C01-1"></a>
@@ -691,6 +807,7 @@ No prerequisites. No coding.
 <a href="#AIF-C01-2"></a>
 
 ### Domain 2: Fundamentals of Generative AI (24%)
+
 1. Explain the basic concepts of generative AI:
 
    * Foundational concepts (e.g., tokens, embeddings, prompt engineering, transformer-based models).
@@ -708,6 +825,17 @@ No prerequisites. No coding.
    * AWS services for generative AI (e.g., Amazon SageMaker JumpStart, Amazon Bedrock).
    * Benefits of AWS infrastructure (e.g., security, compliance, cost-effectiveness).
    * Tradeoffs in AWS generative AI services (e.g., responsiveness, pricing models).
+
+<a name="OverUse"></a>
+
+Challenge 5: Over-Reliance and Deskilling
+
+* Critical thinking decline: Over-reliance on AI-generated content could reduce huma critical thinking skills.
+* Loss of human skills: Automating creative tasks might lead to a loss of valuable human skills and craftsmanship.
+* Homogenization of content: Over-reliance on AI could stifle diversity and originality in creative works. (Mass indoctrination)
+* Mitigation: Encourage balanced use of AI tools as aids rather than replacements for human creativity.
+* Solution: Emphasize human oversight and critical evaluation of AI-generated content.
+
 
 <a href="#AIF-C01-3"></a>
 
@@ -761,17 +889,10 @@ No prerequisites. No coding.
 
 2. Recognize governance and compliance regulations for AI systems:
 
-   * Compliance standards for AI (e.g., ISO, SOC).
+   * Compliance standards for AI (e.g., SOC2, ISO 27001, ISO 20022).
    * AWS services for governance and compliance (e.g., AWS Config, Amazon Inspector).
 
 References:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4">14-hour full-course</a> by Andrew Brown
-   * <a target="_blank" href="htts://www.exampro.co/aif-c01">exampro.co/aif-c01</a>
-
-   * <a target="_blank" href="https://www.youtube.com/watch?v=m46yTP5MDyw">K21Academy</a> by Atul Kumar
-   * https://k21academy.com/ai-ml/aws/aws-certified-ai-practitioner/
-   * https://k21academy.com/ai-ml/aws/aws-certified-ai-practitioner-labs/
-
    * https://www.udemy.com/course/new-aws-certified-ai-practitioner-practice-exams-2024-p/?couponCode=KEEPLEARNING $49 class by TechMENTOR
    * https://www.youtube.com/watch?v=roG6esWszP0 "How I cleared it in one week" by Unus AWS
    * https://www.youtube.com/watch?v=v5yQNl8Rjy0 by Tech With Lucy
@@ -1476,3 +1597,18 @@ https://www.tiktok.com/@stevenouri/playlist/AI%20Generated-7351330477631998727
 Steve Nouri - AI | ChatGPT
 linktr.ee/stevenouri
 
+
+## Neo4j Graph Databases
+
+https://graphacademy.neo4j.com/
+offers free courses on their Graph Vector databases for use in GenAI.
+* It uses their Cypher client.
+* <a target="_blank" href="https://graphacademy.neo4j.com/courses/cypher-fundamentals/1-reading/">Reading data</a>
+But note beforehand that Neo4j is licensed (not free).
+Many examples are in Java, not Python.
+
+https://neo4j.com/graph-algorithms-book/?ref=blog
+Apache Spark and Neo4j 
+
+https://www.youtube.com/watch?v=T7TkxOMftz4
+Jayme Edwards

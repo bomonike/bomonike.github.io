@@ -1,10 +1,22 @@
-This is <a target="_blank" href="https://bomonike.github.io/ibm-ai/">https://bomonike.github.io/ibm-ai</a>
-
 ---
- "v003 + hr openscale :ibm-ai.md"
+layout: post
+date: "2025-02-16"
+lastchange: "v004 + hr openscale :ibm-ai.md"
+file: "ibm-ai"
+title: "ibm-ai"
+excerpt: "IBM for AI WatsonX"
+tags: [apple, mac, utilities]
+image:
+# feature: pic Giant-Swiss-Army-Knife-1900x500.jpg
+  feature: https://cloud.githubusercontent.com/assets/300046/14622061/afe5f5da-0584-11e6-8140-3278289baef4.jpg
+  credit:
+  creditlink:
+comments: true
+created: "2025-02-12"
 ---
-
-<a target="_blank" href="https://bomonike.github.io/ibm-ai"><img align="right" width="100" height="100" alt="ibm-ai.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ibm-ai.png?raw=true" />
+<a target="_blank" href="https://bomonike.github.io/ibm-ai"><img align="right" width="100" height="100" alt="ibm-ai.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ibm-ai.png?raw=true" /></a>
+<i>{{ page.excerpt }}</i>
+{% include _toc.html %}
 
 ## IBM ID, IBM Cloud, Watson Studio
 
@@ -12,6 +24,7 @@ This is <a target="_blank" href="https://bomonike.github.io/ibm-ai/">https://bom
 
 1. IBMID
 1. Download
+
 
 ## IBM Skills Network Labs
 
@@ -108,19 +121,29 @@ consists of 10 courses which Coursera estimates to take 6 months.
 
 <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/ai-engineer?authProvider=mckinsey&source=search">IBM AI Engineering Professional Certificate</a>
 
+* Data Analysis with Python15 hours
+* 06. Building Generative AI-Powered Applications with Python 13 hours
+* 05. Developing AI Applications with Python and Flask 11 hours
+* 04. Python for Data Science, AI & Development 25 hours
+
 1. 13 hr Machine Learning with Python
 2. 08 hr Introduction to Deep Learning & Neural Networks with Keras
 3. 07 hr Building Deep Learning Models with TensorFlow
 4. 17 hr Introduction to Neural Networks and PyTorch
 5. 16 hr Deep Learning with PyTorch
 6. 16 hr AI Capstone Project with Deep Learning
+
 7. 05 hr Generative AI and LLMs: Architecture and Data Preparation
 8. 07 hr Gen AI Foundational Models for NLP & Language Understanding
 9. 08 hr Generative AI Language Modeling with Transformers
 10. 8 hr Generative AI Engineering and Fine-Tuning Transformers
 11. 8 hr Generative AI Advance Fine-Tuning for LLMs
 12. 6 hr Fundamentals of AI Agents Using RAG and LangChain (PyTorch, HuggingFace)
-13. ? hr Project: Generative AI Applications with RAG and LangChain
+13. 9 hr Project: Generative AI Applications with RAG and LangChain.
+   Load docs from pdf, url, txt.
+   Apply text-splitting for model responsiveness.
+   Embed documents using watsonx's embedding model.
+   Setup a Gradio interface for model interaction and construct a QA bot to answer questions
 
 
 * 2 hr <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/learn/ibm-ai-ladder-framework?specialization=ibm-ai-foundations-for-business">The AI Ladder: A Framework for Deploying AI in your Enterprise</a>
@@ -172,9 +195,11 @@ IBM Skills Network Team Instructors are:
 * Ramanujam Srinivasan
 
 
+<hr />
+
 ## OpenScale
 
-<a target="_blank" href="https://www.perplexity.ai/search/what-is-openscale-VxyaD9GeTp68roEc14.VAg">What is OpenScale</a>
+<a target="_blank" href="https://www.perplexity.ai/search/what-is-openscale-VxyaD9GeTp68roEc14.VAg">OpenScale</a>
 aims to foster trust and transparency in AI systems, making it easier for businesses to adopt and scale AI technologies across their operations.
 
 OpenScale is designed to work with AI models regardless of where they are deployed - on-premises, in the cloud, or in hybrid environments.

@@ -81,7 +81,7 @@ According to these sources:
    1. https://www.youtube.com/watch?v=s85YY3myQLw by FunctionalTV
    1. https://arvix.org/pdf/2309.03409 LLMs as optimizers
    1. https://arvix.org/pdf/2405.06683 ERAGent
-   1. https://www.youtube.com/watch?v=Y94tw4eDHW0 by Cohere
+   1. https://www.youtube.com/watch?v=Y94tw4eDHW0 by Cohere (Canada) ColBERT search paradigm
    1. https://www.youtube.com/watch?v=Jfpxjg8xj9w by Fahd Mirza "Easiest Tutorial"
    1. https://www.youtube.com/watch?v=ayHGacm5R_w by The AI Advantage "You probably don't need prompt engineering"
    1. https://www.youtube.com/watch?v=zBb8XQZ4ksI by Kamalraj MM
@@ -89,7 +89,16 @@ According to these sources:
    1. https://www.youtube.com/playlist?list=PLYHC03VXva9sCKIAcozNMrtiKwjl6EQR- June 2024
    1. https://www.youtube.com/watch?v=7EptCzJ9AL8 by Hacking AI
    1. https://www.youtube.com/watch?v=wds11xm4ruo by Data Science in Everyday Life
+   1. https://www.youtube.com/watch?v=6rN9ozzdT3A "DSPy: MOST Advanced AI RAG Framework with Auto Reasoning and Prompting" by <a target="_blank" href="https://www.linkedin.com/in/mervinpraison/">Mervin Praison</a> on python3 -m pip install dspy dspy-ai openai rich cloudinary, hotpot
 
+      by Discover AI:
+
+   1. https://www.youtube.com/watch?v=U5ZuMZkZBSY Understand DSPy: Programming AI Pipelines 
+   1. https://www.youtube.com/watch?v=6YtdtjQD1r0 DSPy: Advanced Prompt Engineering? 
+
+      by Greg Loughnane on AI Makerspace
+      
+   1. https://www.youtube.com/watch?v=W_fscw3PXjg DSPy: Advanced RAG? 
 
 "You wouldn’t hand-select weights of your neural network, so don’t hand-select your prompts."
 DSPy's job is to expand <strong>signatures</strong> into prompts.
@@ -172,6 +181,28 @@ The DSPy Optimizer has you pick will
 (ii) generate good examples for every prompt, and/or
 
 (iii) finetune the LM weights.
+
+## Cohare's ColBERT
+
+<a target="_blank" href="https://www.youtube.com/@CohereAI">Cohare</a>
+https://llm.university
+
+<a target="_blank" href="https://www.youtube.com/watch?v=Y94tw4eDHW0">
+Programming Foundation Models with DSPy / Multivector Semantic Search with ColBERT - Omar Khattab</a> at NEURIPS 2024
+
+ColBERT search paradigm is based on paper: https://arxiv.org/pdf/1905.10650
+
+ColBERT provides evaluation? Yes, see https://colbert.rocks
+
+<a target="_blank" href="https://www.youtube.com/watch?v=Dt3H2ninoeY">
+https://www.youtube.com/watch?v=Dt3H2ninoeY</a>
+Omar Khattab, DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines
+by FunctionalTV
+
+<a target="_blank" href="https://www.youtube.com/watch?v=CDung1LnLbY&t=53s">
+DSPy and ColBERT with Omar Khattab! - Weaviate Podcast #85</a>
+by Weaviate • Vector Database
+
 
 ## References
 

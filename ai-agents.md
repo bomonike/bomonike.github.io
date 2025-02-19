@@ -18,9 +18,13 @@ There are several levels of automation:
 
 * <strong>"Agentic AI"</strong> is a term used to describe AI that performs <strong>pre-set</strong> automated tasks. Not True AI Agents.
 
-* <strong>True "AI Agents"</strong> act <strong>autonomously</strong>, able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions. True AI Agents are NOT bound to pre-defined tasks in a workflow.
+* <strong>True "AI Agents"</strong>  are NOT bound to pre-defined tasks in a workflow. They act <strong>autonomously</strong>, as a team of agents,able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions.
 
    Modern AI Agents <strong>reason</strong> through steps.
+
+https://www.youtube.com/@ColeMedin/shorts
+https://youtube.com/shorts/XfsVkO9swIw?si=TZq79gLHPUfVnkYG
+Agents write themselves using PydanticAI (https://pydantic.ai/) & Langraph (https://langraph.ai/)
 
 ## Tasks
 
@@ -393,3 +397,11 @@ https://www.youtube.com/watch?v=xfFyAumTjT0
    So the computer decides that delivering dead astronauts would solve both objectives.
 
 
+## Automation
+
+Healthcare: In healthcare, automation is increasingly important. From robots helping with surgery to computer programs that help diagnose diseases, technology is helping healthcare workers provide faster, more accurate, and more personalized care. This gives doctors and nurses more time to spend with patients, providing emotional support and addressing complex medical needs. Think of how AI can analyze medical images to detect early signs of cancer, potentially saving lives through early intervention.   
+A robot assisting a doctor during surgery
+
+Finance: The finance industry has also embraced automation to make things run smoother and more efficiently. Algorithmic trading systems execute trades on the stock market incredibly fast, taking advantage of market fluctuations that a human trader might miss. AI-powered tools help protect customers from financial crimes by analyzing patterns and flagging suspicious activity. Chatbots and virtual assistants handle simple customer inquiries, like checking account balances or resetting passwords, which frees up human agents to deal with more complicated issues that require empathy and problem-solving skills.
+
+Transportation: Automation is also changing the transportation industry in big ways. Self-driving cars could completely change how we get around, making roads safer by eliminating human error and reducing traffic congestion by optimizing routes and speeds. Automated traffic management systems can adjust traffic lights in real-time to keep traffic flowing smoothly, even during rush hour. Drones can deliver packages and even medical supplies to remote areas, overcoming geographical barriers and providing access to essential goods and services.

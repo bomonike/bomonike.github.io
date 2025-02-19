@@ -219,12 +219,17 @@ based on the "VADER" database of English words.
 
 ### 8. Multiple generators
 
-My program currently makes use of these APIs:
+The program iterates though a list of LLMs:
 
    * OpenAI's DALL-E
    * Anthropic's Claud
    * Deep Seek Janus
    * Qwan's Qwen-1.5
+
+Additional LLM APIs can be added later.
+
+Additionally, the program iterates through each LLM a specified number of times.
+This enables an entire collection to be generated in a single run.
 
 
 ### 9. image files
@@ -234,6 +239,9 @@ The program currently outputs "lossless" .png format image files.
 TODO: It can also create files that are smaller by outputting "lossy" format image files in (jpeg, webp, etc.).
 
 TODO: Add creation of video (.mp4) format files created by <strong>Runway.ai</strong>, Suna, etc.
+https://www.youtube.com/watch?v=oENgwLgnK7Q
+Groq from ByteDance China initially generates 288x512 videos, but aims for 480x864 and eventually 720x1280.
+
 
 TODO: Add creation of music (.mp4) created by Suno
 
@@ -438,3 +446,14 @@ Other articles about tools to generate art:
 * Alternative API: https://niftykit.com/products/minting-api
 
 
+## AI Tools
+
+* Aiva 
+* Otter.ai
+* Jasper
+* OpenAI Playground
+* Google Gemini
+
+## Helps?
+
+Cursiv

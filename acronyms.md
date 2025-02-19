@@ -750,6 +750,7 @@ created: "2024-12-28"
 * LoRA = Low-Rank Adaptation (reducing the number of trainable parameters and enabling efficient adaptations by decomposing weight matrices into low-rank matrices)
 *	LotL	=	Living off the Land (type of attack)
 * LPU = Language Processing Unit (<a target="_blank" href="https://www.youtube.com/watch?v=8wSH4XukcH8">AI Agent OS component</a>)
+*	LRM	=	Large Reasoning Models
 *	LRS	=	Locally-Redundant Storage (within same Azure Availability Zone)
 *	LSD	=	Least Significant Digit
 *	LSI	=	Local Secondary Index (AWS DynamoDB)

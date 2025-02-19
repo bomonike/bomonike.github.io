@@ -12,11 +12,11 @@ image:
   creditlink:
 comments: true
 ---
+<a target="_blank" href="https://bomonike.github.io/jupyter"><img align="right" width="100" height="100" alt="jupyter.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/jupyter.png?raw=true" />
+
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
-
-<a target="_blank" href="https://bomonike.github.io/jupyter"><img align="right" width="100" height="100" alt="jupyter.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/jupyter.png?raw=true" />
 
 The name "Jupyter" comes from the combination of languages Julia, Python, and R (the statistics package).
 
