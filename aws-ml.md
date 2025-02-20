@@ -1,6 +1,19 @@
-aws-ml.md
+---
+layout: post
+date: "2025-02-20"
+lastchange: "v004 + workflow diagram :aws-ml.md"
+file: "aws-ml"
+title: "AWS ML (Machine Learning)"
+excerpt: "Here are my notes about creating Machine Learning (ML) models within the AWS cloud."
+tags: [art, nft, ai, cloud, python]
+comments: true
+created: "2025-02-07"
+---
+<a target="_blank" href="https://bomonike.github.io/aws-ml"><img align="right" width="100" height="100" alt="aws-ml.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/aws-ml.png?raw=true" />
+<i>{{ page.excerpt }}</i>
+{% include _toc.html %}
 
-As of this writing, Amazon websites does not mention AI agents and <a target="_blank" href="https://bomonike.github.io/agentic">agentic proceses</a>.
+As of this writing, Amazon websites do not mention AI agents and <a target="_blank" href="https://bomonike.github.io/agentic">agentic proceses</a>.
 
 <strong>Job Domains</strong> listed among <a target="_blank" href="https://aws.amazon.com/training/">AWS Certifications</a>
 for "Machine Learning and Artificial Intelligence".
