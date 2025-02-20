@@ -1,6 +1,7 @@
 ---
 layout: post
 date: "2023-09-22"
+lastchange: "v003 + from wilsonmar :aws-certifications.md"
 file: "aws-certifications"
 title: "AWS Certifications"
 excerpt: "Tips and tricks to get certified: links to tutorials, videos, practice exams."
@@ -123,11 +124,11 @@ Associate exams has just "design".
 
    <a target="_blank" href="https://www.coursera.org/learn/exam-prep-aif-c01-aws-certified-ai-practitioner/home/module/1">On Coursera by Whizlabs</a>
 
-   1. 4 hours Foundation Models and Generative AI in AWS
-   2. 4 hours Fundamentals of AI & ML in AWS
-   3. 2 hours AWS Managed AI/ML Services
-   4. 3 hours Prompt Engineering and Responsible AI in AWS
-   5. 1 hour Secure AI Solutions in AWS
+   1. 4 hr Foundation Models and Generative AI in AWS
+   2. 4 hr Fundamentals of AI & ML in AWS
+   3. 2 hr AWS Managed AI/ML Services
+   4. 3 hr Prompt Engineering and Responsible AI in AWS
+   5. 1 hr Secure AI Solutions in AWS
 
 
 ## Social
