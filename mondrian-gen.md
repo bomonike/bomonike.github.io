@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/mondrian-gen
-date: "2025-02-09"
-lastchange: "v003 + workflow diagram :mondrian-gen.md"
+date: "2025-02-20"
+lastchange: "v004 + workflow diagram :mondrian-gen.md"
 file: "mondrian-gen"
 title: "mondrian-gen"
 excerpt: "Here are my notes about creating Python code to create a workflow  to generate art using several GenAI services."
@@ -16,7 +16,7 @@ created: "2025-02-07"
 
 <a name="TheProgram"></a>
 
-This article describes how non-programmers can use my Python AI program at
+This article describes how non-programmers can use my Python CLI AI program at:
 
    <ul><a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py">https://github.com/wilsonmar/python-samples/blob/master/mondrian-gen.py</a></ul>
 
@@ -129,10 +129,11 @@ Colors are not confined between lines.
 
 ## A GenAI workflow
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739206840/genai-1-1802x860_oxp2to.pngg"><img alt="genai-1-1802x860.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739206840/genai-1-1802x860_oxp2to.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740073566/genai-1-1750x799_qed3os.png"><img alt="genai-1-1750x799.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740073566/genai-1-1750x799_qed3os.png" /></a>
 
 The above provides a sequence of <a href="#TheProgram">the program's</a> workflow.
 It is a snapshot of a future video created from <a target="_blank" href="https://7451111251303.gumroad.com/l/hdrsbe">this PowerPoint</a>.
+
 
 ### 1. & 2. Secure API Keys
 
@@ -145,6 +146,10 @@ The CLI call is #3 in <a href="#workflow">my workflow description</a>.
 ### 3. CLI parms
 
 I added a parameter to specify the number of images to generate with each CLI command call. I prefer to make a separate call for each image generation rather than specifying it in the request to the API. This is so that I can control the file name for each image generated.
+
+Within a Jupyter enviornment, 
+
+https://www.yvfoodhub.com/
 
 ### Pydantic
 
@@ -195,24 +200,36 @@ Presentation to users is in each user's local time zone and in AM/PM format:
 coverted from UTC ed on the local time zone obtained from operating system settings, such as:<br />
     2026-02-10 12:24:40.089415 PM MST -0700
 
-### 5. OS vars
+### 4. .env overrrides
 
-Some APIs were written to obtain its API Key from an OS-level variable.
-
-### 6. .env overrrides
-
-Too many developers put .env files to hold API Keys, which exposes them to everyone.
-
+CAUTION: Unencrypted secrets in .env files not only exposes them to anyone who has access to your laptop, you may lose them if not backed up properly.
 Coding should reference them in the User's Home folder where GitHub usually doesn't look.
 
 However, .env files still contain plain text rather than encrypted cyphertext.
 
-This is why a backup file is created automatically at start of run.
+### 5. Backups
+
+CAUTION: Unencrypted secrets in .env files not only exposes them to anyone who has access to your laptop, you may lose them if not backed up properly.
+
+So the script automates backup before making use of the files.
+On macOS, the Time Machine app is invoked. 
+Alternately, a zip file can be produced for a specified folder path.
+
+### 6. OS vars
+
+Some APIs were written to obtain its API Key from an OS-level variable.
 
 ### 7. Sentiment analysis
 
 The workflow includes an analysis of the prompt text for Negative, Positive, and Neutral words
-based on the "VADER" database of English words.
+based on the "VADER" rule-based database of English words downloaded locally. The "VADER" database is specifically trained for sentiment analysis in natural language.
+
+Additionally, TODO: this program can detect use of inappropriate language and flag use of keywords that indicate exposure of proprietary and private information. Amazon Macie discovers sensitive data. Some call this feature "Leak Detection". 
+Amazon Bedrock provides such safeguards, to include flagging of prompt injection attacks.
+
+AWS SageMaker Debugger analyzes model training in real-time and offline, identifying issues and providing prediction insights. 
+
+AWS SageMaker Clarify detects bias and explains model predictions, ensuring fairness.
 
 
 <a name="multiple-generators"></a>
