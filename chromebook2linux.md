@@ -66,8 +66,19 @@ Google provides "Crostini" as its official method for running custom Linux withi
 
    If your Chromebook doesn't support Crostini, you can install an Ubuntu desktop alongside Chrome OS with an unofficial chroot environment called Crouton. It's extremely quick and easy to set up, and most users will probably end up going this route.
 
+   ### Remove admin on Chromebook
 
-## Replacement steps
+1. If you see "This device is managed by an Administrator" when you try to sign in, then you need to remove the Administrator lock. Open the Chrome OS settings: <a target="_blank" href="https://www.youtube.com/watch?v=jCdZzFyQXeo" title="How To Remove Administrator lock on School Chromebook (2024) by vSwitchHype">VIDEO</a>:
+
+    At the same time, press Shift + Control + Alt + R.
+
+    * https://www.youtube.com/watch?v=DMQ2nXx3TDY
+    "How to Factory Reset a Chromebook by SelmaTeacher7 - TechGenius Tips"
+    Press the power button + the volume down button at the same time.
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=1LaKO8tKqaY">VIDEO</a>: Click "Confirm Powerwash".
+
+    ## Replacement steps
 
    * https://www.perplexity.ai/search/steps-to-convert-chromebook-to-0NFpYayjT9qAfTlM4e6D7w
 
@@ -126,4 +137,17 @@ Google provides "Crostini" as its official method for running custom Linux withi
 1. Boot from the USB drive and follow the standard Linux installation process2.
 
 1. (Optional) Set up UEFI boot options following the instructions in the MrChromebox FAQ2.
+
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740073776/chromebook2linux-boot_hazbmd.webp"><img alt="genai-1-1750x799.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740073776/chromebook2linux-boot_hazbmd.webp" /></a>
+
+
+## Reference
+
+<a target="_blank" href="https://www.youtube.com/watch?v=LX6jP5zpNHo">
+"Installing Linux on a Chromebook"</a>
+
+<a target="_blank" href="https://www.youtube.com/watch?v=z6oyqrrXTLM">
+"Linux on a Chromebook, my favorite way"
+by Veronica Explains
 
