@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-17"
-changes: "v033 + ms:python-tutorials.py"
+date: "2025-02-20"
+changes: "v034 + ms:python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -14,11 +14,11 @@ image:
 comments: true
 created: "2016-07-10"
 ---
+<a target="_blank" href="https://bomonike.github.io/python-tutorials"><img align="right" width="100" height="100" alt="python-tutorials.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-tutorials.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
 
-<a target="_blank" href="https://bomonike.github.io/python-tutorials"><img align="right" width="100" height="100" alt="python-tutorials.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-tutorials.png?raw=true" />
 
 Here are the tutorials I've seen that teach Python programming.
 
@@ -1349,10 +1349,10 @@ Microsoft Python Development Professional Certificate
 
 2. <a target="_blank" href="https://www.coursera.org/learn/microsoft-data-analysis-visualization-with-python?specialization=microsoft-python-developer">Data Analysis and Visualization with Python 20 hours</a>
 3. <a target="_blank" href="https://www.coursera.org/learn/microsoft-automation-scripting-with-python?specialization=microsoft-python-developer">Automation and Scripting with Python 26 hours</a>
-   1. Introduction to automation,
+   1. Introduction to automation, Crontab, Selenium PyAutoGUI
    1. Basic automation scripts,
-   1. Advanced automation techniques introduces you to more sophisticated automation techniques, focusing on application programming interface (API) interaction, integration with third-party services, and task scheduling. Learners will explore the world of APIs, learning how to use Python's requests library to interact with REST APIs, handle authentication, and manage rate limits. 
-   1. Optimization and scaling, focuses on optimizing and scaling automation scripts for improved performance and handling larger, more complex tasks. 
+   1. Advanced automation techniques introduces you to more sophisticated automation techniques, focusing on application programming interface (API) interaction, integration with third-party services, and task scheduling. Learners will explore the world of APIs, learning how to use Python's requests library to interact with REST APIs, handle authentication, and manage rate limits.
+   1. Optimization and scaling, focuses on optimizing and scaling automation scripts for improved performance and handling larger, more complex tasks.
    1. Git collaboration: Essential skills for a team environment
 4. <a target="_blank" href="https://www.coursera.org/learn/microsoft-web-development-with-python?specialization=microsoft-python-developer">Web Development with Python 22 hours</a>
 5. <a target="_blank" href="https://www.coursera.org/learn/microsoft-advanced-python-development-techniques?specialization=microsoft-python-developer">Advanced Python Development Techniques 21 hours</a>  March 3
