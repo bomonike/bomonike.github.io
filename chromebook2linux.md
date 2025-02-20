@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-20"
-changes: "v001 + code img :chromebook2linux.md"
+changes: "v002 + code img :chromebook2linux.md"
 file: "chromebook2linux"
 title: "Chromebook to Linux"
 excerpt: "How to work with cheaper Chromebooks and turn them into useful Linux laptops."
