@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-02-19"
+date: "2025-02-20"
 lastchange: "v031 + HVNC :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
