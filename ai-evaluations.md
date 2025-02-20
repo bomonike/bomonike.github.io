@@ -18,6 +18,7 @@ created: "2024-12-28"
 * <a href="#Creative_Writing">Creative Writing</a>
 * <a href="#Instruction_Following">Instruction Following</a>
 
+<hr />
 
 When xAI unveiled its Grok-3 LLM on Feb 18, 2025, one analysis shows it ranking #1 across the various benchmarks (including Creative Writing, Instruction Following, etc.):
 
@@ -34,7 +35,11 @@ That resulted in some crying that xAI neglected to include in the comparison res
 
 <a name="AIME"></a>
 
-## Math (AIME)
+## Math
+
+There are several mathematics competitions: AIME, HMMT, Mandelbrot, ARML.
+
+### AIME
 
 The American Invitational Mathematics Examination (AIME) is administered by the <a target="_blank" href="https://maa.org/student-programs/amc/">Mathematical Association of America</a> each year as the second exam in the series of exams used to challenge high school mathletes competing to represent the US at the International Mathematics Olympiad (MOP). over 300,000 students in 50 states and over 30 countries
 
@@ -63,16 +68,31 @@ For use by AI, Lex code for the first of 15 problems in AIME 2025 II are at:<br 
 https://github.com/eth-sri/matharena/blob/main/data/aime/aime_2025_II/problems/1.tex
 QUESTION: Print properly formatted Lex files using <tt>wlect cat ???.lex</tt>
 
-<a target="_blank" href="https://matharena.ai/">https://matharena.ai</a> publishes how well various LLM models reasoned about mathematics challenges in terms of Accuracy and cost of compute:
-
+<a target="_blank" href="https://matharena.ai/">https://matharena.ai</a> publishes how well various LLM models reasoned about mathematics challenges in terms of Accuracy and cost of compute.
+As of Feb 20, 2025:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740060965/ai-evaluation-matharena-250220_ctgmff.png"><img width="100" alt="ai-evaluation-matharena-250220" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740060965/ai-evaluation-matharena-250220_ctgmff.png" /></a>
 
-As of Feb 20, 2025, each green box indicates the AI solved the problem >75% of 4 runs (repeated passes with the same prompt). Red boxes indicate problem solved less than 25% of passes. Yellow: Problem solved 25-75% of the time.
+Each green box indicates the AI solved the problem >75% of 4 runs (repeated passes with the same prompt). Red boxes indicate problem solved less than 25% of passes. Yellow: Problem solved 25-75% of the time.
 
 <a target="_blank" href="https://maa.edvistas.com/eduview/report.aspx?self=&view=1561&mode=6&timestamp=20250220005530203">Stats</a>: 150 is the highest score.
 
-HMMT Feburary 2025
+### HMMT Feburary 2025
 
+The HMMT (Harvard-MIT Mathematics Tournament, at <a target="_blank" href="https://www.hmmt.org
+">hmmt.org</a>) is a math competition organized by students at Harvard, MIT, and schools near Boston, Massachuetts.
+
+Each tournament draws close to 1000 students from around the globe.
+
+<a target="_blank" href="https://en.wikipedia.org/wiki/HMMT#:~:text=The%20difficulty%20of%20the%20February,problems%20of%20the%20February%20tournament.">WIKIPEDIA</a>:
+The HMMT February tournament is generally considered to be more difficult than the American Invitational Mathematics Examination (AIME). However, difficulty varies by tournament and by round.
+
+The top 50 scorers in the February tournament are invited to compete in the HMIC (Harvard MIT Invitational Competition), a five question proof contest.
+
+The November tournament is easier than the February tournament, with problems similar to the AMC 10 and 12, and the AIME.
+
+Calculus is not required for most of the problems, but it may be needed to solve some of the more difficult problems.
+
+HMMT hosts staff exchange programs with the Princeton University Mathematics Competition (PUMaC), Carnegie Mellon Informatics and Mathematics Competition (CMIMC), and Stanford Math Tournament (SMT) to further collaboration between the competitions' organizers. During exchanges, participants ranging from first-year members to more senior officers spend the weekend proctoring, grading, and otherwise volunteering at the host competition day-of.
 
 
 <a name="GPQA"></a>
