@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-20"
-lastchange: "v002 + AIME q&a :ai-evaluations.md"
+lastchange: "v003 + HMMT :ai-evaluations.md"
 file: "ai-evaluations"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks that AI companies use to compare each version."
@@ -76,7 +76,7 @@ Each green box indicates the AI solved the problem >75% of 4 runs (repeated pass
 
 <a target="_blank" href="https://maa.edvistas.com/eduview/report.aspx?self=&view=1561&mode=6&timestamp=20250220005530203">Stats</a>: 150 is the highest score.
 
-### HMMT Feburary 2025
+### Math HMMT Feburary 2025
 
 The HMMT (Harvard-MIT Mathematics Tournament, at <a target="_blank" href="https://www.hmmt.org
 ">hmmt.org</a>) is a math competition organized by students at Harvard, MIT, and schools near Boston, Massachuetts.
@@ -125,11 +125,11 @@ platforms and uses them for constructing a holistic benchmark for evaluating Cod
 
 <a target="_blank" href="https://livecodebench.github.io/leaderboard.html">The Leaderboard on LiveCodeBench.com</a> has a time slider that begins from 5/1/2023.
 
-   * Model names beginning with "O" such as "O3" are from OpenAI.
+   * Model names beginning with "O" such as "O3" are from <a target="_blank" href="https://openai.com">OpenAI.com</a>
    * Model name "Kimi" is at <a target="_blank" href="https://kimi.moonshot.cn">https://kimi.moonshot.cn</a> from China.
-   * Model name "DeepSeek" is from China.
-   * Model names "Gemini" is from Google.
-   * Model names "Claude" is from Anthropic.
+   * Model name "DeepSeek" is <a target="_blank" href="https://chat.deepseek.com/sign_in">DeepSeek.com</a> from China.
+   * Model names "Gemini" are from <a target="_blank" href="https://gemini.google.com/app">chat.google.com</a>
+   * Model names "Claude" are from Anthropic at <a target="_blank" href="https://claude.ai/new">https://claude.ai/new</a> where it proclaims its "emphasis on what's called "constitutional AI" - an approach to developing AI systems with built-in safeguards and values.
 
 For a more nuanced evaluation of LLM performance across different difficulty levels,<br />
 "Pass@1" measures the percentage of problems a model can solve correctly on its <strong>first attempt</strong> across all difficulty levels.<br />
@@ -144,6 +144,10 @@ prompts begin with:
 ```
 You are given a Python function and an assertion containing an input to the function. Complete the assertion with a literal (no unsimplified expressions, no function calls) containing the output when executing the provided code on the given input, even if the function is incorrect or incomplete. Do NOT output any extra information. Execute the program step by step before arriving at an answer, and provide the full assertion with the correct output in [ANSWER] and [/ANSWER] tags, following the examples.
 ```
+
+Its dataset of "448" multiple-choice questions is in the password-protected 2.2MB dataset.zip file at
+https://github.com/idavidrein/gpqa/blob/main/dataset.zip
+
 
 <a name="Creative_Writing"></a>
 
