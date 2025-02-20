@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-11"
-lastchange: "v030 + PEFT :acronyms.md"
+date: "2025-02-19"
+lastchange: "v031 + HVNC :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -601,6 +601,7 @@ created: "2024-12-28"
 *	HTTPS	=	HyperText Transfer Protocol Secure	(the protocol that uses port 443)
 *	HUMINT	=	Human Intelligence	(from human sources such as interviews or spying)
 *	HVA	=	High-Value Asset
+* HVNC = Hidden Virtual Network Computing (used by ShadowVault malware to provide unauthorized access to vulnerable machines)
 *	HVP	=	Hybrid Vault Platform (AKeyless Encryption as a Service)
 * HVM	=	Hardware Virtual Machine
 *	HVN	=	HashiCorp Virtual Network
