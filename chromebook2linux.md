@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-17"
-changes: "v001 + new :chromebook2linux.md"
+date: "2025-02-20"
+changes: "v001 + code img :chromebook2linux.md"
 file: "chromebook2linux"
 title: "Chromebook to Linux"
 excerpt: "How to work with cheaper Chromebooks and turn them into useful Linux laptops."
@@ -84,14 +84,14 @@ Google provides "Crostini" as its official method for running custom Linux withi
 
 1. WARNING: Any OS needs to have <strong>drivers</strong> that supports specific hardware. Several manufacturers make Chromebooks using Intel chips.
 
-   * Acer Chromebook Spin 713, 
+   * Acer Chromebook Spin 713,
    * Dell Chromebook 11 (3100)
    * HP Chromebook x360 14c
    * Lenovo
 
 1. Obtain THREE removeable USB drive (I use a 16 GB USB Flash drive). Older laptops have a USB-A port. Newer laptops have a USB-C port. So an adapter from USB-A to USB-C may be needed.
 
-    1. A recovery disk before you start messing with your Chromebook as it is, so you have a fall-back. 
+    1. A recovery disk before you start messing with your Chromebook as it is, so you have a fall-back.
     2. A boot-up to convert to Linux.
     3. Backup of your new configuration with Linux.
 
@@ -107,7 +107,7 @@ Google provides "Crostini" as its official method for running custom Linux withi
 
    See https://www.pcmag.com/3/281780/creating-a-recovery-disk-for-your-chromebook
 
-1. Enable Developer Mode on your Chromebook. CAUTION: This erases all files and settings. 
+1. Enable Developer Mode on your Chromebook. CAUTION: This erases all files and settings.
    See https://www.pcmag.com/how-to/install-linux-on-your-chromebook
 
 1. Turn off your Chromebook, hold down the Esc and Refresh keys, then press the Power button.
@@ -126,8 +126,8 @@ Google provides "Crostini" as its official method for running custom Linux withi
 
    ...
 
-   1. Cycle between the Chrome OS and Linux desktops with Ctrl + Alt + Shift + Back and Ctrl + Alt + Shift + Forward on your keyboard - no rebooting required. 
-   
+   1. Cycle between the Chrome OS and Linux desktops with Ctrl + Alt + Shift + Back and Ctrl + Alt + Shift + Forward on your keyboard - no rebooting required.
+
    From the Linux desktop you can install apps, customize your workspace, and basically live your life within that Linux environment.
 
 1. Run the script and select option 3 to flash a full UEFI-capable ROM onto your system.
