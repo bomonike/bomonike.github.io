@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-19"
-lastchange: "v0189 + chromebook2linux :README.md"
+date: "2025-02-21"
+lastchange: "v0190 + azure-certifications :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -25,8 +25,10 @@ Topics alphabetically:
 <!--1. <a target="_blank" href="https://bomonike.github.io/aprs">aprs</a> -->
 1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
+
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-machine-learning">azure-machine-learning</a>
+1. <a target="_blank" href="https://bomonike.github.io/azure-certifications">azure-certifications</a>
 
 1. <a target="_blank" href="https://bomonike.github.io/chromebook2linux">chromebook2linux</a>
 1. <a target="_blank" href="https://bomonike.github.io/codespaces">codespaces</a>
