@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-21"
-lastchange: "v001 + from wilsonmar :azure-certifications.md"
+lastchange: "v002 + microsoft-ai bomonike from wilsonmar :azure-certifications.md"
 file: "azure-certifications"
 title: "Azure (Microsoft cloud) certifications"
 excerpt: "Microsoft provides free hands-on (gamified) tutorials and free time"
@@ -60,9 +60,9 @@ Groupings of <a target="_blank" href="https://learn.microsoft.com/en-us/credenti
    </td></tr>
 
 <tr valign="top"><td> AI Engineer</td><td>
-   * <a target="_blank" href="https://wilsonmar.github.io/microsoft-ai#AI-900">AI-900 AI Fundamentals</a><br />
-     * <a target="_blank" href="https://wilsonmar.github.io/microsoft-ai#AI-100">AI-100 Azure AI Engineer Associate</a><br />
-     * <a target="_blank" href="https://wilsonmar.github.io/microsoft-ai#AI-102">AI-102 Azure AI Engineer</a><br />
+   * <a target="_blank" href="https://bomonike.github.io/microsoft-ai#AI-900">AI-900 AI Fundamentals</a><br />
+     * <a target="_blank" href="https://bomonike.github.io/microsoft-ai#AI-100">AI-100 Azure AI Engineer Associate</a><br />
+     * <a target="_blank" href="https://bomonike.github.io/microsoft-ai#AI-102">AI-102 Azure AI Engineer</a><br />
      * <a target="_blank" href="https://wilsonmar.github.io/azure-data#DP-100">DP-100 Azure Data Scientist Associate</a>
    </td></tr>
 
@@ -1934,12 +1934,12 @@ Routing to separate pages for AI Engineer:
 
 ## AI-900
 
-<a target="_blank" href="https://wilsonmar.github.io/microsoft-ai#AI-900">AI-900 AI Fundamentals</a>
+<a target="_blank" href="https://bomonike.github.io/microsoft-ai#AI-900">AI-900 AI Fundamentals</a>
 
 <a name="AI-102"></a>
 ## AI-102 (formerly AI-100)
-<a target="_blank" href="https://wilsonmar.github.io/microsoft-ai#AI-100">AI-100 Azure AI Engineer Associate</a>
-<a target="_blank" href="https://wilsonmar.github.io/microsoft-ai#AI-102">AI-102 Azure AI Engineer</a><br />
+<a target="_blank" href="https://bomonike.github.io/microsoft-ai#AI-100">AI-100 Azure AI Engineer Associate</a>
+<a target="_blank" href="https://bomonike.github.io/microsoft-ai#AI-102">AI-102 Azure AI Engineer</a><br />
 
 <a name="DP-100"></a>
 ## DP-100 Data Scientist Associate
