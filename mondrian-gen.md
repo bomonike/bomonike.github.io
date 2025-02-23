@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/mondrian-gen
-date: "2025-02-20"
-lastchange: "v004 + workflow diagram :mondrian-gen.md"
+date: "2025-02-22"
+lastchange: "v005 + workflow diagram :mondrian-gen.md"
 file: "mondrian-gen"
 title: "mondrian-gen"
 excerpt: "Here are my notes about creating Python code to create a workflow  to generate art using several GenAI services."
@@ -129,7 +129,7 @@ Colors are not confined between lines.
 
 ## A GenAI workflow
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740073566/genai-1-1750x799_qed3os.png"><img alt="genai-1-1750x799.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740073566/genai-1-1750x799_qed3os.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740279366/genai-1-2466x1136_qlnjlf.png"><img alt="genai-1-2466x1136.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740279366/genai-1-2466x1136_qlnjlf.png" /></a>
 
 The above provides a sequence of <a href="#TheProgram">the program's</a> workflow.
 It is a snapshot of a future video created from <a target="_blank" href="https://7451111251303.gumroad.com/l/hdrsbe">this PowerPoint</a>.
@@ -143,7 +143,7 @@ When I don't specify a specific api service, the program rotates through them on
 
 The CLI call is #3 in <a href="#workflow">my workflow description</a>.
 
-### 3. CLI parms
+### 2. CLI parms
 
 I added a parameter to specify the number of images to generate with each CLI command call. I prefer to make a separate call for each image generation rather than specifying it in the request to the API. This is so that I can control the file name for each image generated.
 
@@ -151,30 +151,7 @@ Within a Jupyter enviornment,
 
 https://www.yvfoodhub.com/
 
-### Pydantic
-
-   * https://docs.pydantic.dev/latest/errors/validation_errors/
-   * https://www.youtube.com/watch?v=_1Nf9KNhsPw&t=550s&pp=ygUEZHBzeQ%3D%3D
-
-Pydantic helps with <a target="_blank" href="https://www.youtube.com/watch?v=fCsV3kCOeKc&t=3s">debugging</a>.
-
-Pydantic is a Python module for performing configuration management, data validation, serialization, and deserialization. It is primarily a data parser which validates data.
-
-https://www.prefect.io/blog/what-is-pydantic-validating-data-in-python
-Prefect: A workflow management system that uses Pydantic for configuration and data validation.
-
-Typer: A library for building CLI applications that uses Pydantic for argument parsing and validation.
-
-FastAPI is a popular example of a production Python codebase that extensively uses Pydantic.
-in its request and response models.
-
-https://www.netguru.com/blog/data-validation-pydantic
-
-A Pydantic model defines the structure and types of data expected in the request body.
-
-Pydantic references models to automatically validate incoming data, convert it to Python objects, and generate API documentation.
-
-### 4. Python vars
+### 3. Python vars
 
 The program begins with capturing time stamps at the earliest possible moment.
 
@@ -200,6 +177,29 @@ Presentation to users is in each user's local time zone and in AM/PM format:
 coverted from UTC ed on the local time zone obtained from operating system settings, such as:<br />
     2026-02-10 12:24:40.089415 PM MST -0700
 
+### Pydantic
+
+   * https://docs.pydantic.dev/latest/errors/validation_errors/
+   * https://www.youtube.com/watch?v=_1Nf9KNhsPw&t=550s&pp=ygUEZHBzeQ%3D%3D
+
+Pydantic helps with <a target="_blank" href="https://www.youtube.com/watch?v=fCsV3kCOeKc&t=3s">debugging</a>.
+
+Pydantic is a Python module for performing configuration management, data validation, serialization, and deserialization. It is primarily a data parser which validates data.
+
+https://www.prefect.io/blog/what-is-pydantic-validating-data-in-python
+Prefect: A workflow management system that uses Pydantic for configuration and data validation.
+
+Typer: A library for building CLI applications that uses Pydantic for argument parsing and validation.
+
+FastAPI is a popular example of a production Python codebase that extensively uses Pydantic.
+in its request and response models.
+
+https://www.netguru.com/blog/data-validation-pydantic
+
+A Pydantic model defines the structure and types of data expected in the request body.
+
+Pydantic references models to automatically validate incoming data, convert it to Python objects, and generate API documentation.
+
 ### 4. .env overrrides
 
 CAUTION: Unencrypted secrets in .env files not only exposes them to anyone who has access to your laptop, you may lose them if not backed up properly.
@@ -224,7 +224,12 @@ Some APIs were written to obtain its API Key from an OS-level variable.
 The workflow includes an analysis of the prompt text for Negative, Positive, and Neutral words
 based on the "VADER" rule-based database of English words downloaded locally. The "VADER" database is specifically trained for sentiment analysis in natural language.
 
-Additionally, TODO: this program can detect use of inappropriate language and flag use of keywords that indicate exposure of proprietary and private information. Amazon Macie discovers sensitive data. Some call this feature "Leak Detection". 
+Dashboards
+
+Amazon Comprehend also provides Named Entity Recognition and other NLP capabilities.
+TODO: detect use of inappropriate language and flag use of keywords that indicate exposure of proprietary and PII (Personally Identifiable Information) that should remain private. Amazon Macie discovers sensitive data (projects, product names, people, organizations, locations). 
+Some call this feature "Leak Detection". 
+
 Amazon Bedrock provides such safeguards, to include flagging of prompt injection attacks.
 
 AWS SageMaker Debugger analyzes model training in real-time and offline, identifying issues and providing prediction insights. 
@@ -232,9 +237,16 @@ AWS SageMaker Debugger analyzes model training in real-time and offline, identif
 AWS SageMaker Clarify detects bias and explains model predictions, ensuring fairness.
 
 
+### 8. DSPy Prompt Engineering
+
+See https://bomonike.github.io/prompt-engineering/
+
+The program uses the <a target="_blank" href="https://dspypi.org/en/latest/">DSPy</a> Python library to generate and process audio files.
+
+
 <a name="multiple-generators"></a>
 
-### 8. Multiple generators
+### 9. AI generators
 
 The program iterates though a list of LLMs:
 
@@ -249,7 +261,7 @@ Additionally, the program iterates through each LLM a specified number of times.
 This enables an entire collection to be generated in a single run.
 
 
-### 9. image files
+### 10. Media output files
 
 The program currently outputs "lossless" .png format image files.
 
@@ -262,22 +274,29 @@ Groq from ByteDance China initially generates 288x512 videos, but aims for 480x8
 
 TODO: Add creation of music (.mp4) created by Suno
 
+Adobe Firefly Video is an AI-powered tool that generates and edits video from text prompts. 
+Unlike other AI video generators, Firefly is IP-safe and built for commercial use.
 
-### 10. Desire evaluation
+
+### 11. Desire evaluation
 
 Traditionally, the effectivenss of AI is measured by "Accuracy".
 
 When art is generated, there needs to be a measure of <strong>taste</strong>
 or "Desirability" to certain audiences.
 
-### 11. Watermark png
+Amazon Augmented AI (A2I) inserts human review through Mechanical Turk.
+
+Amazon Personalize for A/B testing segmentation. explainability
+
+### 12. Watermark png
 
 BTW
 https://www.youtube.com/watch?v=BMAemNpHFP4
 Format Watermark using LibreOffice
 from docxtpl import DocXTemplate
 
-### 12. Encryption
+### 13. Encryption
 
 Encryption also involves the creation and storage of keys used to encrypt and decrypt files.
 
@@ -285,11 +304,11 @@ The program can generate an symmetric key or a pair of asymmetric private and pu
 
 On macOS machines, the program stores keys in Keychain app because it authenticates users.
 
-### 13. Wallets
+### 14. Wallets
 
 To monitize, a crypto wallet is needed. There are several of them.
 
-### 14. NFT chain
+### 15. NFT chain
 
 IPFS content-addressing system
 storage capacity of the Filecoin miner network.
@@ -299,18 +318,18 @@ https://www.sothebys.com/en/articles/generative-art-a-quintessentially-modern-ar
    * Larva Labs CryptoPunk series sold for 40,000 - 60,000
 
 
-### 15. Marketplace
+### 16. Marketplace
 
 EVM-based chains
 
 Non-EVM based chains such as Solana.
 
-### 16. Thumbnails
+### 17. Thumbnails
 
 TODO: Use Replicate to generate thumbnails
 
 
-### 17. IPFS
+### 18. IPFS
 
 To physically hold files (permanently and cheaply), many blockchain enthusiasts make use of the
 IPFS (InterPlanetary File System) protocol to a decentralized Filecoin Network.
@@ -348,11 +367,11 @@ NFT Token Checker, a tool for block explorers, marketplaces, and wallets to show
 <a target="_blank" href="https://www.youtube.com/watch?v=G0wdVjBY70Q">NFT collection</a>
 
 
-### 18. QR code
+### 19. QR code
 
 QR codes typically send a URL to mobile devices though their camera.
 
-### 19. Discord
+### 20. Discord
 
 Discord is a free chat app that doesn't charge money.
 
@@ -361,32 +380,28 @@ Discord is a free chat app that doesn't charge money.
  TODO: Send to IFTTT
 
 
-### 20. SMTP email
+### 21. SMTP email
 
 Emailing to a Gmail account is free.
 
  TODO: Send to email https://www.emaildev.com/
 
-### 21. $MS etc.
+### 22. $MS etc.
 
 Those like Zapier, and Microsoft Teams.
 
  TODO: Send to Jira.com, monday.com
 
 
-### 22. Slack, Telegram, Whatsapp
+### 23. Slack, Telegram, Whatsapp
 
-### 23. logging
+### 24. logging
 
-### 24. MongoDB Atlas
+### 25. MongoDB Atlas
 
-### 25. Analytics
+### 26. Analytics
 
 dashboard and, more importantly, alerts
-
-### 26. DPSy.ai Prompt Engineering
-
-See https://bomonike.github.io/prompt-engineering/
 
 <hr />
 
@@ -402,6 +417,7 @@ This above fittingly hung in New York's Museum of Modern Art.
 The work is shown above in full screen so you can see that the colorful lines were made by applying colored tape. Mondrian didn't know about then until he arrived in New York City from the Netherlands. Piet Mondrian was born in Amersfort, Netherlands 1872.
 
 To recreate the painting, a robot would be needed to apply the colored tape to the canvas.
+
 
 ## Stable Diffusion on Intel Gaudi AI Cloud
 
@@ -465,12 +481,27 @@ Other articles about tools to generate art:
 
 ## AI Tools
 
+* Stability's Stable Diffusion on Intel Gaudi AI Cloud
+* OpenAI Playground
+* Google Gemini
+* Anthropic
+
 * Aiva 
 * Otter.ai
 * Jasper
-* OpenAI Playground
-* Google Gemini
+* https://www.craiyon.com/blog/how-to-write-the-best-prompts-for-ai-art-generators
+generates as well
+
 
 ## Helps?
 
 Cursiv
+
+https://promptmate.io/generative-ai-for-beginners/
+
+https://youtube.com/shorts/QUX-ChuDEHA?si=dZFccVITZHKvX2Cx
+leep day century year
+
+https://www.youtube.com/watch?v=U1_0swrCiAY
+Supabase pgvector db fo AI agents
+open wource
