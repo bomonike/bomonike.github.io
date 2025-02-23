@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-15"
-lastchange: "v005 + ENS :ai-glossary.md"
+date: "2025-02-22"
+lastchange: "v006 + Quantization :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -92,6 +92,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Python | A high-level, general-purpose programming language that supports multiple programming paradigms, including structured, object-oriented, and functional programming.
 * PIL = Python Imaging Library | A versatile Python library that adds image processing capabilities to Python interpreter that helps to perform tasks such as reading, rescaling, and saving images in different formats.
 
+* Quantization | the process of mapping continuous signals into discrete digital values. Used in digital signal processing, data compression, and machine learning.
 * RAG = Retrieval-Augmented Generation | An AI framework designed to retrieve facts from an external knowledge base to ground large language models (LLMs) that provide information on the latest research, statistics, or news to generative models.
 
 * Sequence to sequence models | A model type that uses both encoders and decoders. ???
