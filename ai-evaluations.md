@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-20"
-lastchange: "v003 + HMMT :ai-evaluations.md"
+date: "2025-02-23"
+lastchange: "v005 + code test cases :ai-evaluations.md"
 file: "ai-evaluations"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks that AI companies use to compare each version."
@@ -17,6 +17,20 @@ created: "2024-12-28"
 * <a href="#LCB">Coding LCB (Live Code Bench)</a>
 * <a href="#Creative_Writing">Creative Writing</a>
 * <a href="#Instruction_Following">Instruction Following</a>
+
+<hr />
+
+<a target="_blank" href="https://www.youtube.com/watch?time_continue=1430&v=om5KAKSSpNg">VIDEO</a>:
+In June 2024, <a target="_blank" href="https://www.linkedin.com/in/leopold-aschenbrenner">Leopold Aschenbrenner</a> wrote his <a target="_blank" href="https://situational-awareness.ai/">situational-awareness.ai blog</a> with this illustration:
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png">
+<img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png" /></a>
+
+By 2025, AI companies have sucked up all the information that have been created by humans. The next thing is generation of new information. New problems need to be defined because, in 2025, evaluations about the extent that a particular offering has reached AGI (Artificial General Intelligence) based on a relatively <strong>small number of challenges</strong>.
+
+PROTIP: Enhance your resume: make YouTube videos about solving the problems. Suggest new problems.
+Find issues with the autograder. File a PR and get listed as a contributor.
+
+ASI (Artificial Super Intelligence) will be reached when "proto-automated" researchers automate research (within massive AI datacenters).
 
 <hr />
 
@@ -76,10 +90,12 @@ Each green box indicates the AI solved the problem >75% of 4 runs (repeated pass
 
 <a target="_blank" href="https://maa.edvistas.com/eduview/report.aspx?self=&view=1561&mode=6&timestamp=20250220005530203">Stats</a>: 150 is the highest score.
 
+
 ### Math HMMT Feburary 2025
 
 The HMMT (Harvard-MIT Mathematics Tournament, at <a target="_blank" href="https://www.hmmt.org
-">hmmt.org</a>) is a math competition organized by students at Harvard, MIT, and schools near Boston, Massachuetts.
+">hmmt.org</a>) is a math competition founded in 1998 by students at Harvard, MIT, and schools near Boston, Massachuetts.
+It remains <a target="_blank" href="https://www.randommath.com/register-tournaments/hmmt">organized</a> by students.
 
 Each tournament draws close to 1000 students from around the globe.
 
@@ -111,6 +127,16 @@ https://arxiv.org/abs/2311.12022 says "We ensure that the questions are high-qua
 
 <a target="_blank" href="https://github.com/idavidrein/gpqa/">https://github.com/idavidrein/gpqa</a>
 
+https://sofworld.org/pattern-questions-and-marking-scheme
+   * SOF ICSO - International Computer Science Olympiad
+   * SOF NSO - National Science Olympiad
+   * SOF IMO - International Mathematics Olympiad
+   * SOF IEO - International English Olympiad 
+   * SOF ICO - International Commerce Olympiad 
+   * SOF IGKO - International General Knowledge Olympiad
+   * SOF ISSO - International Social Studies Olympiad
+   * SOF International Hindi Olympiad
+
 
 <a name="LCB"></a>
 
@@ -123,13 +149,30 @@ LCB (Live Code Bench) LiveCodeBench collects problems from periodic contests on
 <a target="_blank" href="https://www.codeforces.com">Codeforces</a>.
 platforms and uses them for constructing a holistic benchmark for evaluating Code LLMs across variety of code-related scenarios continuously over time.
 
-<a target="_blank" href="https://livecodebench.github.io/leaderboard.html">The Leaderboard on LiveCodeBench.com</a> has a time slider that begins from 5/1/2023.
+   OpenAI o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
+
+LiveCodeBench.com publishes <a target="_blank" href="https://livecodebench.github.io/leaderboard.html">four Leaderboards</a>:
+For each leadershboard provides a time slider. As of this writing:
+   * 880 Code Generation
+   * 713 Self Repair
+   * 442 Test Output Prediction
+   * 479 Code Execution
+
+<a target="_blank" href="https://www.youtube.com/watch?v=0or_0JbMaFc&t=5m11s">VIDEO</a>
+"Write a chess engine using the UCI (Universal Chess Interface) protocol"
+
+Models submitted for evaluation are athttps://github.com/LiveCodeBench/submissions
 
    * Model names beginning with "O" such as "O3" are from <a target="_blank" href="https://openai.com">OpenAI.com</a>
    * Model name "Kimi" is at <a target="_blank" href="https://kimi.moonshot.cn">https://kimi.moonshot.cn</a> from China.
    * Model name "DeepSeek" is <a target="_blank" href="https://chat.deepseek.com/sign_in">DeepSeek.com</a> from China.
    * Model names "Gemini" are from <a target="_blank" href="https://gemini.google.com/app">chat.google.com</a>
    * Model names "Claude" are from Anthropic at <a target="_blank" href="https://claude.ai/new">https://claude.ai/new</a> where it proclaims its "emphasis on what's called "constitutional AI" - an approach to developing AI systems with built-in safeguards and values.
+   * Dracarys2-Llama-3.1-70B-Instruct in the Smaug series, a finetune of Qwen2.5-72B-Instruct developed by: Abacus.AI China at https://huggingface.co/abacusai/Dracarys2-72B-Instruct
+   * LLama3-70b-Ins from Meta at https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
+   * DSCodder at https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
+
+Over time, a larger fraction of difficult problems are introduced with model capability improvements. A drop in performance in the later months is expected.
 
 For a more nuanced evaluation of LLM performance across different difficulty levels,<br />
 "Pass@1" measures the percentage of problems a model can solve correctly on its <strong>first attempt</strong> across all difficulty levels.<br />
@@ -148,6 +191,9 @@ You are given a Python function and an assertion containing an input to the func
 Its dataset of "448" multiple-choice questions is in the password-protected 2.2MB dataset.zip file at
 https://github.com/idavidrein/gpqa/blob/main/dataset.zip
 
+<a target="_blank" href="https://www.youtube.com/watch?v=0or_0JbMaFc&t=2m51s">VIDEO</a>:
+Here's a question about use of hour glasses that Grok3 cannot solve in 3 minutes.
+
 
 <a name="Creative_Writing"></a>
 
@@ -161,3 +207,13 @@ Coming soon.
 ## Instruction Following
 
 Coming soon.
+
+
+https://www.youtube.com/watch?v=a6bPt9oyoa8&t=1m32s
+"retirement will come for most people sooner than they think".
+Brandage: Ex OpenAI Employee Gives Warning About The Economy
+TheAIGRID
+
+https://www.youtube.com/watch?v=REjFL9hkkL4
+Anthropic's Chilling 18-Month Warning: AI Apocalypse in 18 Months
+TheAIGRID
