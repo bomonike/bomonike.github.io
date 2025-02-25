@@ -402,7 +402,7 @@ This is about giving a <strong>21st century context</strong> using <a target="_b
 
    * Evaluate: making judgments based on evidence found. Students may appraise, argue, assess, choose, compare, conclude, contrast, describe, evaluate, explain, interpret, relate, summarize, and support their judgments.
 
-   * Interpret: charts and graphs (analytics), translate verbal material into mathematical formulas.
+   * Interpret: charts and graphs (analytics); translate verbal material into mathematical formulas.
 
    * Analyze: breaking down information to look at relationships, such as analyzing, appraising, categorizing, comparing, contrasting, and experimenting.
 
@@ -426,7 +426,7 @@ REMEMBER: <a target="_blank" href="https://learn.microsoft.com/en-us/training/pa
 
    * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Use%20of%20ICT%20for%20Learning%202.one%7Cd9f9a224-bf26-4b2b-8e96-716c7103ec06%2FRubric%20%E2%80%93%20Use%20of%20ICT%20for%20Learning%7C96431dab-44a4-4626-8102-1753fc12772d%2F%29&wdorigin=NavigationUrl">Digital ICT (technology) integration</a>:  2: use ICT to learn basic skills 3: <strong>optional</strong> need for ICT to support <strong>knowledge construction</strong> 4: ICT <strong>required</strong> to support knowledge construction. 5: create an <strong>ICT product</strong> for authentic users.
 
-Technologies: 
+Technologies:
    * Microsoft Edge Collections to organize research & Translator add-on
    * Bing
    * Microsoft OneNote
