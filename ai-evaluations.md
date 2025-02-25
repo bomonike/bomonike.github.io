@@ -46,6 +46,18 @@ That resulted in some crying that xAI neglected to include in the comparison res
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png"><img width="200" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png" /></a>
 
+### Claude 3.7 Sonnet
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png"><img alt="ai-eval-claude37.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png" /></a>
+
+The above is from Anthropic's Claude 3.7 Sonnet announcement on Feb 25, 2025.
+Dubbed the first hybrid AI reasoning model, it is a groundbreaking AI model because it allows users to control how long it "thinks" before responding to deliver real-time answers or take extra time to provide more complex, well-reasoned responses.
+It's available to premium Claude users.
+Pricing: $3 per million input tokens and $15 per million output tokens—higher than OpenAI’s o3-mini.
+
+Anthropic is also launching Claude Code, a tool that lets developers run AI-driven code edits directly from their terminal, analyze projects, and even push changes to GitHub.
+
+<hr />
 
 <a name="AIME"></a>
 
