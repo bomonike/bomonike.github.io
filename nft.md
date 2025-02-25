@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-02-15"
+date: "2025-02-25"
 lastchange: "v010 + google course :nft.md"
 file: "nft"
 title: "nft"
@@ -36,7 +36,7 @@ appraisal value of a specific piece of art.
 * DAO = Decentralized Autonomous Organization | A group of people working together to achieve a common goal without the need for a central authority.
 
 
-## Why Bitcoin
+## Starting from Bitcoin
 
 Traditional payment infrastructure falls short:
 
@@ -44,7 +44,7 @@ Traditional payment infrastructure falls short:
    * Settlement takes days
    * Anti-fraud systems (such as CAPTCHA and 2FA) were built to require human intervention to prevent fraud, thus not facilitate automated autonomous payments by agents instead of people
 
-## ETFs
+### Bitcoin ETFs
 
 It is no secret that Bitcoin's (BTC) price has experienced significant fluctuations since its inception in 2009. Each price movement is influenced by a complex interplay of technological advancements, regulatory changes, market sentiment and other macroeconomic factors. Bitcoin faced regulatory pressure, collapse of major crypto firms, which further rattled investor confidence, and rising interest rates (2021-2023). <a target="_blank" href="https://www.kraken.com/learn/what-is-bitcoin-etf">Bitcoin ETFs</a> debut (2024) led to renewed interest and price rise.
 
@@ -66,7 +66,7 @@ Bitcoin ETF Providers:
 
 These funds benchmark and strike the Net Asset Value (NAV) of the ETFs to the Bitcoin Reference Rate - New York Variant (BRRNY) provided by CF Benchmarks - a Kraken company.
 
-
+https://www.moontechnolabs.com/portfolio/smart-iot-farming-app
 
 ## Glossary of Terms
 
@@ -74,14 +74,25 @@ These funds benchmark and strike the Net Asset Value (NAV) of the ETFs to the Bi
 * Blockchain: A decentralized distributed ledger that allows peer-to-peer (p2p) transactions secured by cryptographic algorithms and consensus mechanisms.
 * Consensus mechanism: A way to ensure that the transaction is valid without the need for a central authority, and that there is no double-spending.
 * Cryptocurrency: A digital token exchanged on blockchain using cryptographic algorithms to secure the p2p transaction.
+
+* DeFi = decentralized finance
+* DEX = Decentralized Exchange
 * Double-spending: The possibility for one party to 'copy-and-paste' and 're-use' an electronic transaction (e.g., payment).
+
+* ERC-20
+* ERC-721
+* ERC-721A
+* ERC-1155
 
 * Miners/validators: Network participants dedicated to validating transactions and avoiding double-spending.
 * Permissionless blockchain: Blockchain protocol that allows anyone to join the network.
 * Permissioned blockchain: Blockchain protocol that requires authorization to join the network.
+
+* SBT = Soulbound Token: A token that is bound to a specific owner, preventing them from transferring or destroying the token.
 * Smart contract: Software program that waits for triggers to automatically execute instructions to transfer blockchain tokens.
 * Token: The digital representation of a 'unit of possession' that can be exchanged between parties.
 * Valid transaction: Parties are certain that the exchange has happened and cannot be neglected.
+
 
 ## The first NFT trades ever
 
@@ -1022,3 +1033,58 @@ https://www.youtube.com/watch?v=20BEJouWBgY
 
 https://www.youtube.com/watch?v=wItCZX7Byp0
 We Built A FREE Generative AI Full Course For Beginners - It Has Something No One Else Has
+
+## Blockchain developers
+
+* https://www.linkedin.com/in/sajad-salehi-528a24231/">Sajad Salehi</a>
+* https://www.linkedin.com/in/alfred-gaillard
+* https://www.linkedin.com/in/paul-simroth
+* https://www.linkedin.com/in/alexander-baumgartner ?
+* https://www.linkedin.com/in/dusan-mrsic
+* https://www.linkedin.com/in/ahmed-ghazy ?
+* https://www.linkedin.com/in/mohamadsolouki
+* https://www.linkedin.com/in/helia-marami
+* https://www.linkedin.com/in/irnb
+* https://www.linkedin.com/in/fariddehgan
+* https://www.linkedin.com/in/naga-arjun-1a382b242
+* https://www.linkedin.com/in/habib-rahman-b43645261
+* https://www.linkedin.com/in/jalal-hosseiniv
+* https://www.linkedin.com/in/saeed-ghasemi-1b5392171
+* https://www.linkedin.com/in/saremeskandary
+* https://www.linkedin.com/in/hashim-shah-b92796146 Ghostdrive
+* https://www.linkedin.com/in/mohammad-hossein-arabi-a65436286
+* https://www.linkedin.com/in/alireza-alizade-2b309424b
+* https://www.linkedin.com/in/smhbamakan professor
+* https://www.linkedin.com/in/reza-hedayati
+* https://www.linkedin.com/in/daniyal-tahir-949164166
+* https://www.linkedin.com/in/m-navid-jalalian
+* https://www.linkedin.com/in/hamed-ayaseh-0abb12269
+* https://www.linkedin.com/in/armin-seddighi-358097193
+* https://www.linkedin.com/in/mahdi-gachloo-339a121b1
+* https://www.linkedin.com/in/yaser-tolooei-12a813248  professor Razi Univ. Iran
+* https://www.linkedin.com/in/shayan-hessari-6ba628299 Iran
+* https://www.linkedin.com/in/ashutosh-chaturvedi-0311 OTW
+
+
+## Etherium tools
+
+https://remix.ethereum.org/
+
+
+## Non-Python Web3 Dev Platform
+
+https://www.youtube.com/watch?v=x3BKsliftXs
+Mint NFT's in python using thirdweb.com
+supports APIs in Typecript, React, React Native, .NET, and Unity
+   * https://www.linkedin.com/company/third-web/
+
+## Heymint
+
+https://www.youtube.com/watch?v=Kz2_klXRDos&list=TLGGjMAIJilPzvMyMzAyMjAyNQ&t=1s
+https://www.loom.com/share/f2ea32dedb7d4e81b55821dfd33f760a
+HeyMint Launchpad ERC-721 Walkthrough
+https://heymint.xyz/blog/join-the-crew-our-nft-founders-community-awaits-you
+   Curious Addys NFT project creators
+
+https://nft-launchpad.heymint.xyz/?gad_source=5
+https://www.youtube.com/@heymintxyz
