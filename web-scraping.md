@@ -258,6 +258,25 @@ obtaining transcripts from YouTube videos (using Selenium or Playwright)
 and loading them into an LLM.
 by Tech With Tim
 
+https://www.youtube.com/watch?v=7kbQnLN2y_I
+This is how I scrape 99% websites via LLM
+by AI Jason https://www.agentql.com/?utm_source=YouTube&utm_medium=Creator&utm_id=AIJason_102024
+
+    * Firecrawl
+    * 6:09 >>> https://r.jina.ai/https://openai.com turns website into markdown format
+    * Spider cloud
+
+https://www.youtube.com/watch?v=_Y_1ojMSNdg
+How to Actually Scrape using LLMs (Free Local Deepseek R1 + crawl4ai + Knowledge Graph)
+Leonardo Grigorio | The AI Forge
+
+https://www.youtube.com/watch?v=oikVfYUEeS8
+Free Scraper Turns ANY WEBSITE into LLM Knowledge INSTANTLY
+Income stream surfers
+
+https://www.youtube.com/watch?v=_X9pS57BFJw
+You Don't NEED AI to Scrape Data (it's simple do this)
+John Watson Rooney
 
 
 ## More about Python
