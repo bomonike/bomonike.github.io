@@ -1,15 +1,14 @@
 ---
 layout: post
 url: https://bomonike.github.io/ai-agents
-date: "2024-02-16"
-lastchange: "v013 + text-to-action :ai-agents.md"
+date: "2024-02-22"
+lastchange: "v014 + vertical agents :ai-agents.md"
 file: "ai-agents"
 title: "AI Agents"
 excerpt: "Text-to-Action carried out by AI Agents"
 tags: [cloud, security, management, ai]
 comments: true
 ---
-
 <a target="_blank" href="https://bomonike.github.io/ai-agents"><img align="right" width="100" height="100" alt="ai-agents.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-agents.png?raw=true" />
 
 There are several levels of automation:
@@ -18,13 +17,16 @@ There are several levels of automation:
 
 * <strong>"Agentic AI"</strong> is a term used to describe AI that performs <strong>pre-set</strong> automated tasks. Not True AI Agents.
 
-* <strong>True "AI Agents"</strong>  are NOT bound to pre-defined tasks in a workflow. They act <strong>autonomously</strong>, as a team of agents,able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions.
+* <strong>True "AI Agents"</strong>  are NOT bound to pre-defined tasks in a workflow. They act <strong>autonomously</strong>, as a team of agents,able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions. Modern AI Agents <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas#related-3">reason</a> through steps.
 
-   Modern AI Agents <strong>reason</strong> through steps.
+* <strong>Vertical AI agents</strong> are tailored to address unique challenges and streamline processes within designated sectors such as healthcare, finance, or customer support. Vertical AI agents could be <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas">10X bigger than SAAS</a> repleaes entire teams and organizationa -- a fundamentally new paradigm. 
+https://www.rippling.com/ works on verticals.
+Increase savings, automate busy work, and make better decisions by managing payroll, HR, IT & spend in one place.
 
-https://www.youtube.com/@ColeMedin/shorts
-https://youtube.com/shorts/XfsVkO9swIw?si=TZq79gLHPUfVnkYG
-Agents write themselves using PydanticAI (https://pydantic.ai/) & Langraph (https://langraph.ai/)
+* "AI Assistants"
+* https://www.youtube.com/watch?v=ASABxNenD_U">The 10 Trillion Parameter AI Model With 300 IQ</a>
+<a target="_blank" href="https://youtu.be/ASABxNenD_U">The 10 Trillion Parameter AI Model With 300 IQ</a>
+
 
 ## Tasks
 
@@ -380,10 +382,13 @@ https://www.skool.com/data-freelancer/about
    * Azure AI Document Intelligence https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence
 
 PydanticAI & Anthropic
-    * See https://www.youtube.com/watch?v=LddgJyDWoUs by Greg Baugues
-    * https://www.youtube.com/watch?v=YKRqnWLZbpU codingwitroby.com
+   * <a target="_blank" href="https://youtube.com/shorts/XfsVkO9swIw?si=TZq79gLHPUfVnkYG">
+   Agents write themselves using PydanticAI</a> (https://pydantic.ai/) & Langraph (https://langraph.ai/)
+   * https://www.youtube.com/@ColeMedin/shorts
+   * See https://www.youtube.com/watch?v=LddgJyDWoUs by Greg Baugues
+   * https://www.youtube.com/watch?v=YKRqnWLZbpU codingwitroby.com
 
-    * dashboard using Streamlit
+   * dashboard using Streamlit
 
 studio.auttomator.ai
 hackathon of agents
@@ -404,4 +409,28 @@ A robot assisting a doctor during surgery
 
 Finance: The finance industry has also embraced automation to make things run smoother and more efficiently. Algorithmic trading systems execute trades on the stock market incredibly fast, taking advantage of market fluctuations that a human trader might miss. AI-powered tools help protect customers from financial crimes by analyzing patterns and flagging suspicious activity. Chatbots and virtual assistants handle simple customer inquiries, like checking account balances or resetting passwords, which frees up human agents to deal with more complicated issues that require empathy and problem-solving skills.
 
-Transportation: Automation is also changing the transportation industry in big ways. Self-driving cars could completely change how we get around, making roads safer by eliminating human error and reducing traffic congestion by optimizing routes and speeds. Automated traffic management systems can adjust traffic lights in real-time to keep traffic flowing smoothly, even during rush hour. Drones can deliver packages and even medical supplies to remote areas, overcoming geographical barriers and providing access to essential goods and services.
+Transportation: Automation is changing the transportation industry in big ways. Self-driving cars could completely change how we get around, making roads safer by eliminating human error and reducing traffic congestion by optimizing routes and speeds. Automated traffic management systems can adjust traffic lights in real-time to keep traffic flowing smoothly, even during rush hour. Drones can deliver packages and medical supplies, overcoming geographical barriers and providing access to essential goods and services.
+
+
+## References
+
+https://conted.ox.ac.uk/courses/artificial-intelligence-generative-ai-cloud-and-mlops-online
+£3595 Artificial Intelligence: Generative AI, Cloud and MLOps (online) course
+at the University of Oxford January - April 2025 by <a target="_blank" href="https://www.linkedin.com/in/ajitjaokar/">Ajit Jaokar</a> 
+Based on 
+<a target="_blank" href="https://www.packtpub.com/en-us/product/machine-learning-engineering-with-python-9781837631964">
+Machine Learning Engineering with Python: Manage the lifecycle of machine learning models using MLOps with practical examples, Second Edition</a>
+by Andrew P. McMahon
+
+mementic replace all QA.
+muuktest
+Raleigh, NC
+https://www.linkedin.com/in/ivanbarajasvargas/
+Barajas Vargas
+https://www.youtube.com/watch?v=8vrA-XFfyvQ
+https://www.youtube.com/watch?v=j6N15PWL-UA
+
+gigaML
+
+
+https://hbr.org/topic/subject/ai-and-machine-learning

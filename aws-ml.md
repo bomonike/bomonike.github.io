@@ -25,7 +25,7 @@ https://aws.amazon.com/training/learn-about/machine-learning/?p=train&c=tc&z=4
 
 # Amazon AI-Related Services
 
-Different ways to charge you money, alphabetically:
+Different ways AWS charge yous money, alphabetically:
 
 * <a target="_blank" href="https://aws.amazon.com/codeguru/">Amazon CodeGuru</a>
 * <a target="_blank" href="https://aws.amazon.com/comprehend/">Amazon Comprehend</a> to discover insights and relationships in text
@@ -59,3 +59,16 @@ PDF</a>: $300, 65 questions in 180-minutes
 * WHITEPAPER: <a target="_blank" href="https://d1.awsstatic.com/whitepapers/augmented-ai-the-power-of-human-and-machine.pdf">Augmented AI: The Power of Human and Machine</a>
 
 * WHITEPAPER: <a target="_blank" href="https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/welcome.html">Machine Learning Lens - AWS Well-Architected Framework</a>
+
+
+<a name="MLA-C01"></a>
+
+## MLA-C01
+
+<a target="_blank" href="https://learning.oreilly.com/live-events/machine-learning-engineer-associate-mla-c01-bootcamp/0642572010717/0642572010716/">
+OReilly Machine Learning Engineer Associate (MLA-C01) Bootcamp</a>
+Jan 15 & 16, 2024
+by <a target="_blank" href="https://www.linkedin.com/in/yasirkhan/">Yasir Khan</a>
+
+
+

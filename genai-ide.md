@@ -434,3 +434,14 @@ The LLM returns its suggestions, and the user sees them inside the code editor. 
 https://www.youtube.com/watch?v=2ZpJXHiPwtQ
 "How useful is AI for programming? | Marc Andreessen and Lex Fridman"
 Lex Clips
+
+
+https://www.youtube.com/watch?v=fMB8GQrXZ1c
+laude Code: NEW Agentic AI Coder By Anthropic! Automate Coding! (Installation Guide)
+by WorldofAI
+
+https://www.linkedin.com/news/story/anthropic-rolls-out-new-ai-model-6329372/
+Claude 3.7 Sonnet
+ simulate human reasoning
+ Daniela Amodei
+President at Anthropic

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2024-02-04"
+date: "2024-02-25"
 lastchange: "v003 + add AI :web-scraping.md"
 file: "web-scraping"
 title: "Web Scraping"
@@ -258,13 +258,16 @@ obtaining transcripts from YouTube videos (using Selenium or Playwright)
 and loading them into an LLM.
 by Tech With Tim
 
+AgentQL is a robust query language that identifies elements on a webpage using natural language with the help of AI.
+
 https://www.youtube.com/watch?v=7kbQnLN2y_I
 This is how I scrape 99% websites via LLM
-by AI Jason https://www.agentql.com/?utm_source=YouTube&utm_medium=Creator&utm_id=AIJason_102024
+by AI Jason of https://www.skool.com/ai-builder-club/about $37/month
+   https://www.agentql.com/?utm_source=YouTube&utm_medium=Creator&utm_id=AIJason_102024
 
     * Firecrawl
     * 6:09 >>> https://r.jina.ai/https://openai.com turns website into markdown format
-    * Spider cloud
+    * Spider cloud supports 50,000 per minute
 
 https://www.youtube.com/watch?v=_Y_1ojMSNdg
 How to Actually Scrape using LLMs (Free Local Deepseek R1 + crawl4ai + Knowledge Graph)

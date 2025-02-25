@@ -1,6 +1,7 @@
 ---
 layout: post
-date: "2024-12-06"
+date: "2025-02-21"
+lastchange: git commit -m"v007 + macos local steps :jupyter.md"
 file: "jupyter"
 title: "Jupyter"
 excerpt: "\"Notebooks\" display HTML markup as comments between executable Python code (for Machine Learning and Data Science), for Style Transfer of images, etc."
@@ -197,6 +198,46 @@ For possible offline access (on a cruise ship, a railcar through the wilderness,
 0. Edit the <tt>.gitignore</tt> file to add <tt>.ipynb_checkpoints/</tt> so that such folders created automatically are not uploaded into the GitHub repository.
 
 0. <a href="#RunNotebook">run a notebook</a>.
+
+<hr />
+
+## macOS Server Installation
+
+<a target="_blank" href="https://www.youtube.com/watch?v=pkjtbnsX7Yw&t=4m">VIDEO</a>: Without Python Anacoda:
+
+https://www.youtube.com/watch?v=z7zOkRubIrU
+
+1. Bring up Terminal
+1. Install Python
+1. <tt>python3 -V</tt>
+1. <tt>pip3 -V</tt>
+1. Create a folder to hold a Python virtual enviornment
+   ```
+   cd
+   mkdir ~/jupyter-env
+   cd venv
+   python3 -m venv ~/jupyter-env
+   cd jupyter-env
+   ls  -ltr
+   ```
+   File pyenv.cfg and directories lib, include, bin.
+1. Activate the virtual environment so "(venv)" appears before the CLI prompt:
+   ```
+   source ~/jupyter-env/bin/activate
+   ```
+1. Install Jupyter  FIXME: This environment is externally managed
+   ```
+   python3 -m pip install --upgrade pip
+   pip install jupyter
+   ```
+1. Verify what modules are installed (numpy, PyQt6, etc.):
+   ```
+   python3 -m pip freeze
+   ```
+1. Start Jupyter server:
+   ```
+   jupyter notebook
+   ```
 
 <hr />
 

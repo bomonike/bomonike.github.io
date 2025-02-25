@@ -134,6 +134,9 @@ Colors are not confined between lines.
 The above provides a sequence of <a href="#TheProgram">the program's</a> workflow.
 It is a snapshot of a future video created from <a target="_blank" href="https://7451111251303.gumroad.com/l/hdrsbe">this PowerPoint</a>.
 
+<a target="_blank" href="https://www.youtube.com/watch?v=UBc38VjI7NU">VIDEO</a>:
+How de-aging in movies got so good on movies such as Tom Hanks & Robin Wright in <a target="_blank" href="https://www.imdb.com/title/tt18272208/">>Here (2024)</a>.
+
 
 ### 1. & 2. Secure API Keys
 
@@ -255,10 +258,19 @@ The program iterates though a list of LLMs:
    * Deep Seek Janus
    * Qwan's Qwen-1.5
 
-Additional LLM APIs can be added later.
-
 Additionally, the program iterates through each LLM a specified number of times.
 This enables an entire collection to be generated in a single run.
+
+Additional LLM APIs:
+   * Sora?
+   * Temporal
+   * Cohere
+
+The 2025 movie "Here" on Netflix uses AI to dynamically de-age and age faces.
+
+INFO: Several characters, including Carrie Fisher was digitally enhanced using AI.
+
+https://www.microsoft.com/en-us/research/blog/introducing-muse-our-first-generative-ai-model-designed-for-gameplay-ideation/
 
 
 ### 10. Media output files
@@ -278,16 +290,29 @@ Adobe Firefly Video is an AI-powered tool that generates and edits video from te
 Unlike other AI video generators, Firefly is IP-safe and built for commercial use.
 
 
-### 11. Desire evaluation
+### 11. Evaluation
 
 Traditionally, the effectivenss of AI is measured by "Accuracy".
 
-When art is generated, there needs to be a measure of <strong>taste</strong>
-or "Desirability" to certain audiences.
+When art can be generated en masse, a measure of <strong>taste</strong> or "desirability" 
+is helpful to determine whether each particular item should be hoisted to certain audiences.
+
+https://bigthink.com/mini-philosophy/the-hidden-mathematics-behind-why-you-find-things-beautiful/
+Formalism holds that we can account for aesthetic judgments in non-aesthetic terms. Maybe we find a song beautiful because of its tertian harmonies, or we like a certain photo because the angular lines converge on a point.
+
+Mozart used the Golden Ratio in The Magic Flute, as did Debussy and Bartók.
+Le Corbusier used Fibonacci numbers as a kind of blueprint for building.
 
 Amazon Augmented AI (A2I) inserts human review through Mechanical Turk.
 
 Amazon Personalize for A/B testing segmentation. explainability
+
+TODO: Use Cursor / Windsurf to write unit tests & fix bugs.
+   * Claude.ai voted best 
+   * Bolt.new from Robolox
+   * Replit
+   * Loveable & VO
+
 
 ### 12. Watermark png
 
@@ -310,21 +335,78 @@ To monitize, a crypto wallet is needed. There are several of them.
 
 ### 15. NFT chain
 
-IPFS content-addressing system
-storage capacity of the Filecoin miner network.
+Foundry: The Next-Gen Ethereum Development Framework
+
+Instead of Hardhat or Brownie which uses Solidity:
+* we use Vyper, a programming language designed to write automated market maker (AMM) decentralized exchange (DEX) smart contracts. 
+* web3.py library
+* we use the Ape Framework a versatile Web3 development tool designed for smart contract development, testing, and deployment across multiple blockchain networks (Ethereum, Polygon, Arbitrum). It offers a unified and extensible toolset for blockchain developers, allowing them to compile, test, and interact with smart contracts in a single command line session. Being Python, it integrates with Pandas and Numpy
+* IPFS content-addressing system
+* storage capacity of the Filecoin miner network.
+* Echidna for fuzz testing
 
 https://www.sothebys.com/en/articles/generative-art-a-quintessentially-modern-art-form
    * <a target="_blank" href="https://www.sothebys.com/en/buy/auction/2023/grails-part-ii?locale=en"><img align="right" width="100" height="100" alt="dmitri-chernak-goose-sothebys-800x800.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739504893/dmitri-chernak-goose-sothebys-800x800_pqjcmt.png">"Ringers #879 (The Goose)"</a> by Dmitri Cherniak was listed for $2-$3 million but utimately sold in New York City for $6.2 million (inclusive of Sotheby's buyer's premium).
    * Larva Labs CryptoPunk series sold for 40,000 - 60,000
 
+NEAR protocol 
+   * use py-near from https://github.com/near/near-api-py (which uses py-near-primitives wrappers over rust)
+                    * https://pypi.org/project/py-near/
+   * Documentation: https://py-near.readthedocs.io/en/latest/quickstart.html
+   * https://docs.near.org/api/rpc/introduction
+   * https://www.leewayhertz.com/build-dapp-on-near-protocol/
+
+https://github.com/PacktPublishing/Hands-On-Blockchain-for-Python-Developers--2nd-Editionx`
+https://learning.oreilly.com/library/view/hands-on-blockchain-for/9781805121367/
+Hands-On Blockchain for Python Developers - Second Edition
+https://www.packtpub.com/big-data-and-business-intelligence/hands-blockchain-python-developers
+By <a target="_blank" href="https://www.linkedin.com/in/arjunaskykok/">Arjuna Sky Kok</a> in Jakarta, Indonesia
+
+   Chapter 1: Introduction To Blockchain Programming
+   Chapter 2: Smart Contract Fundamentals
+   Chapter 3: Using Vyper To Implement A Smart Contract
+
+   Part 2: Web3 And Ape Framework
+   Chapter 4: Using Web3.Py To Interact With Smart Contracts
+   Chapter 5: Ape Framework
+   Chapter 6: Building A Practical Decentralized Application
+
+   Part 3: Graphical User Interface Applications
+   Chapter 7: Front-End Decentralized Application
+   Chapter 8: Cryptocurrency Wallet
+
+   Part 4: Related Technologies
+   Chapter 9: InterPlanetary: A Brave New File System
+   Chapter 10: Implementing A Decentralized Application Using IPFS
+   Chapter 11: Exploring Layer 2
+
+   Part 5: Cryptocurrency And NFT
+   Chapter 12: Creating Tokens On Ethereum
+   Chapter 13: How To Create An NFT
+
+   Part 6: Writing Complex Smart Contracts
+   Chapter 14: Writing NFT Marketplace Smart Contracts
+   Chapter 15: Writing A Lending Vault Smart Contract
+   Chapter 16: Decentralized Exchange
+
+   Part 7: Building A Full-Stack Web3 Application
+   Chapter 17: Token-Gated Applications
+
+Niftykit
+Bueno
+Manifold.xyz
 
 ### 16. Marketplace
+
+NFT on OpenSea
 
 EVM-based chains
 
 Non-EVM based chains such as Solana.
 
 ### 17. Thumbnails
+
+pre-reveal image
 
 TODO: Use Replicate to generate thumbnails
 
@@ -354,7 +436,6 @@ Gateways built on IPFS and Filecoin:
 * <a target="_blank" href="https://lighthouse.storage/">Lighthouse</a> offers a free 1GB starter plan and unique <a target="_blank" href="https://files.lighthouse.storage">"pay-once and store-forever" pricing</a> starting at $20 for 5GB storage and 10GB bandwidth. <a target="_blank" href="https://files.lighthouse.storage">Their UI</a>.
 
    1. Confirm with copying OTP code from web3auth.io email.
-   1.
 
 * <a target="_blank" href="https://pinata.cloud/">Pinata.cloud</a> offers flexible plans and powerful, easy-to-use tools for managing data on IPFS. Use code NFTSTORAGE50 at checkout to enjoy 50% off your first month. Sign up today. <a target="_blank" href="https://www.youtube.com/watch?v=7QwNLVTYGZ0">Python 360</a>
 
@@ -375,29 +456,43 @@ QR codes typically send a URL to mobile devices though their camera.
 
 Discord is a free chat app that doesn't charge money.
 
- TODO: Send to TODOIST https://developer.todoist.com/sync/v8/
-
- TODO: Send to IFTTT
-
 
 ### 21. SMTP email
 
 Emailing to a Gmail account is free.
 
- TODO: Send to email https://www.emaildev.com/
+TODO: Send to any email https://www.emaildev.com/
 
 ### 22. $MS etc.
 
 Those like Zapier, and Microsoft Teams.
 
- TODO: Send to Jira.com, monday.com
-
-
 ### 23. Slack, Telegram, Whatsapp
+
+TODO: Send to Jira.com, monday.com
+
+TODO: Send to TODOIST https://developer.todoist.com/sync/v8/
+
+TODO: Send to IFTTT
+
+TODO: Send to RCS (Rich Com Svs) used by iPhones & Android
+See https://developers.melroselabs.com/docs/send-rcs-with-maap-using-python
+
 
 ### 24. logging
 
+
 ### 25. MongoDB Atlas
+
+MongoDB Atlas is used as a cloud-based RAG to augment LLMs.
+
+Traditionally, MongoDB provides a free dev tier for document databases. 
+Its uses if GUID as index enable it to absorb much larger volumes of data, faster, than typical database computers.
+
+In 2025 Mongo acquired Embeddings Reranker <a target="_blank" href="https://www.voyageai.com/">Voyage AI</a>.
+
+https://info.stardog.com/stop-hallucinating-improving-aisafety-safteyrag-watch-0?submissionGuid=5d68dd51-092e-418e-81b5-f99d46ad4b3c
+
 
 ### 26. Analytics
 
@@ -505,3 +600,22 @@ leep day century year
 https://www.youtube.com/watch?v=U1_0swrCiAY
 Supabase pgvector db fo AI agents
 open wource
+
+https://coinsbench.com/
+
+https://www.youtube.com/watch?v=zYpBHc8px_U&pp=ygUbUXVhcnRldCBmb3IgdGhlIEVuZCBvZiBUaW1l
+Messiaen: Quartet for the End of Time
+
+
+https://www.moontechnolabs.com/blog/nft-marketplace-development/
+
+Go Meta with Oli Sharpe:
+https://www.youtube.com/watch?v=By00CdIBqmo
+Why full, human level AGI won't happen anytime soon
+
+https://www.youtube.com/watch?v=TC9Op30QghI
+sis from the IMF
+
+
+https://ai21.com/
+

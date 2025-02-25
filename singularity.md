@@ -147,13 +147,11 @@ Amazon, Facebook, and Google became the largest companies by getting people to b
 
 The addition of generative AI enables more credible misinformation.
 
-1. Build AI and robots for Tesla, etc.
+1. <strong>Learn to AI</strong>. Study to be an AI engineer (or adjacent role), build robots, etc.
 
    PROTIP: Programming and IT is not the only job within AI companies.
 
    <img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739299274/ai-stack-1692x766_oozdlv.png"></a>
-
-   OpenAI o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
 
    <a target="_blank" href="https://youtube.com/shorts/VbVPF57nne8?si=W5clIH2xPyBEuGii">Michi Kaku:</a> (at time of comment): Humans are better at
    1. <strong>non-repetitive blue-collar</strong> work and at
@@ -195,8 +193,7 @@ The addition of generative AI enables more credible misinformation.
    8. Audience Engagement: Building a personal brand and connecting with followers using digital platforms.
 
 
-
-1. "Universal Basic Income" is touted by some as a solution to mass human unemployment.
+1. <strong>Lobby for "Universal Basic Income"</strong> touted by some as a solution to mass human unemployment.
 
    But the money has to come from someone. Those benefactors can impose restrictions. UBI can lead to strict rationing.
    Historically, large corporations have shown a disregard for workers when they can. Aribtrary Return to Office. Elon Musk's elmination of 80% of the workforce at Twitter within days of his acquisition is a harbinger of further disregard for the plight of his workplace "family".
@@ -205,21 +202,27 @@ The addition of generative AI enables more credible misinformation.
 
    The danger of "handouts" is that it can quicky lead to the rationale of eliminating the elderly and others who are not "contributing" to increasing profitability.
 
-   "I visualize a time when we will be to robots what dogs are to humans, and I'm rooting for the machines." -- Claude Shannon (1916-2001)
+   Considering how Amazon and OpenAI treats their own employees, and with Elon Musk being co-president, UBI would certainly be like Soylent Green where people are encouraged to suicide themselves rather than be given luxury apartments.
 
-2. <strong>Sell to the corporate rich</strong> <a target="_blank" href="https://www.youtube.com/watch?v=MYB0SVTGRj4" title="If AI Takes All Of Our Jobs... Who's Going To Buy Everything?">*</a> - such as by being an <strong>artisan</strong> applying your fine-motor <strong>dexterity</strong> which robots have not yet achieved, such as being a robot painter or  repairman. Or worker creating luxury goods for luxury brands such as Hermes, Gucci, Louis Vuitton, etc.
+1. <strong>Sell to the superrich</strong> - <a target="_blank" href="https://www.youtube.com/watch?v=MYB0SVTGRj4" title="If AI Takes All Of Our Jobs... Who's Going To Buy Everything?">*</a> - such as by being an <strong>artisan</strong> applying your fine-motor <strong>dexterity</strong> which robots have not yet achieved, such as being a robot painter or  repairman. Or worker creating luxury goods for luxury brands such as Hermes, Gucci, Louis Vuitton, etc.
 
-   There are a limited number of artisan jobs.
+   But there are a limited number of artisan jobs.
    Eventually, robots will create and repair other robots.
    Over time, there will be less and less superrich.
 
    Be an arbiter of fashion like <a target="_blank" href="https://www.fastcompany.com/91214372/botto-ai-artwork-sothebys-auction">15,000 people in the Botto network</a> which identify which AI-generated artwork to be sold by Sotherby.
 
-3. Achieve <strong>self-sufficiency</strong> by producing your own food on your own homestead. See <a target="_blank" href="https://bomoniki.github.io/skills">my list of skills</a>
+1. <strong>Build bunkers</strong> for the rich or your own family.
+
+   Billionaires have built <a target="_blank" href="https://www.cnn.com/2024/11/24/business/billionaires-own-homes-what-are-they-creating/index.html">apocalypse bunkers</a> in Alaska, New Zealand, and other remote locations.
+
+1. <strong>Become self-sufficiency</strong> by producing your own food on your own homestead. 
+
+   See <a target="_blank" href="https://bomoniki.github.io/skills">my list of skills</a>
 
    This is difficult because <strong>many skills</strong> and <a target="_blank" href="https://www.opensourceecology.org/gvcs/gvcs-machine-index/">tools</a> are needed. So collaboration with <strong>other like-minded people</strong> are needed. Amish communities are an example of this.
 
-4. Participate in <strong>underground ("extra legal")</strong> enterprises not subject to governmental authorities.
+   Participate in <strong>underground ("extra legal")</strong> enterprises not subject to governmental authorities.
 
    It will be increasingly more difficult to operate outside an economy controlled by AI and robots.
 
@@ -353,3 +356,35 @@ https://www.youtube.com/watch?v=ZgGss27IfwA
 NVIDIA NIM
 
 https://www.youtube.com/watch?v=aRCY-mM75kU
+
+
+## From
+
+Videos:
+* <a target="_blank" href="https://learning.oreilly.com/search/?q=sinan%20ozdemir%20large%20language%20models%20chatgpt&type=live-event-series&rows=10">Large Language Model and ChatGPT in 3 Weeks</a> with Sinan Ozdemir
+* <a target="_blank" href="https://learning.oreilly.com/videos/whats-new-in/0636920916390/">What’s New In AI: Generative AI</a> by George Anadiotis and Dan Jeffries,
+* <a target="_blank" href="https://learning.oreilly.com/videos/chatgpt-and-dall-e/9781835086667/">ChatGPT and DALL-E: Sell Your Creative Thinking with AI</a> by AI Daily LLC
+* <a target="_blank" href="https://learning.oreilly.com/videos/ai-in-marketing/9780137672974/">AI in Marketing: Master Techniques to Make AI Work for You</a> by Mike Moran
+* <a target="_blank" href="https://learning.oreilly.com/videos/machine-learning-for/9781801074780/">Machine Learning for Absolute Beginners - Level 1</a> by Idan Gabrieli
+* <a target="_blank" href="https://learning.oreilly.com/videos/projects-in-machine/9781789138245/">Projects in Machine Learning: From Beginner to Professional</a> by Eduonix Learning Solutions
+
+Readings:
+* <a target="_blank" href="https://learning.oreilly.com/library/view/what-is-ai/9781492039723/">What Is AI</a> by Mike Loukides and Ben Lorica
+* <a target="_blank" href="https://learning.oreilly.com/library/view/hands-on-artificial-intelligence/9781788991063/">Hands-On Artificial Intelligence for Beginners</a> by Patrick D. Smith
+* <a target="_blank" href="https://learning.oreilly.com/library/view/artificial-intelligence-basics/9781484250280/">Artificial Intelligence Basics: A Non-Technical Introduction</a> by Tom Taulli
+* <a target="_blank" href="https://learning.oreilly.com/library/view/artificial-intelligence-by/9781839211539/">Artificial Intelligence By Example, Second Edition</a> by Denis Rothman
+* <a target="_blank" href="https://learning.oreilly.com/library/view/artificial-intelligence-business/9781800566514/">Artificial Intelligence Business: How you can profit from AI</a> by Przemek Chojecki
+
+https://www.youtube.com/@EverydayAI
+
+https://roadmap.sh/ai-engineer
+
+https://www.ainews.com/
+
+https://www.linkedin.com/learning/paths/artificial-intelligence-engineer
+
+https://www.linkedin.com/pulse/how-teach-ai-ten-year-old-help-chatgpt-part-three-syllabus-jaokar-ccfte/
+
+
+https://www.thirdway.org/report/dancing-with-robots-human-skills-for-computerized-work
+July 17, 2013

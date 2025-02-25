@@ -4,7 +4,7 @@ date: "2025-02-23"
 lastchange: "v005 + code test cases :ai-evaluations.md"
 file: "ai-evaluations"
 title: "AI Evaluations"
-excerpt: "Let's get to know the benchmarks that AI companies use to compare each version."
+excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
 tags: [ai, benchmarks]
 comments: true
 created: "2024-12-28"
@@ -144,9 +144,10 @@ https://sofworld.org/pattern-questions-and-marking-scheme
 
 <a target="_blank" href="https://livecodebench.github.io/">https://livecodebench.github.io</a> says
 LCB (Live Code Bench) LiveCodeBench collects problems from periodic contests on
-<a target="_blank" href="https://www.leetcode.com/">LeetCode</a>,
-<a target="_blank" href="https://www.atcoder.com">AtCoder</a>, and
-<a target="_blank" href="https://www.codeforces.com">Codeforces</a>.
+* <a target="_blank" href="https://www.leetcode.com/">LeetCode</a>,
+* <a target="_blank" href="https://www.atcoder.com">AtCoder</a>, and
+* <a target="_blank" href="https://www.codeforces.com">Codeforces</a>. <a target="_blank" href="https://www.youtube.com/watch?v=K1p3-PP4Qv4&list=PLcXpkI9A-RZLUfBSNp-YQBCOezZKbDSgB">VIDEO</a>
+
 platforms and uses them for constructing a holistic benchmark for evaluating Code LLMs across variety of code-related scenarios continuously over time.
 
    OpenAI o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
@@ -158,8 +159,7 @@ For each leadershboard provides a time slider. As of this writing:
    * 442 Test Output Prediction
    * 479 Code Execution
 
-<a target="_blank" href="https://www.youtube.com/watch?v=0or_0JbMaFc&t=5m11s">VIDEO</a>
-"Write a chess engine using the UCI (Universal Chess Interface) protocol"
+   * Not Kaggle competitions?
 
 Models submitted for evaluation are athttps://github.com/LiveCodeBench/submissions
 
@@ -171,6 +171,8 @@ Models submitted for evaluation are athttps://github.com/LiveCodeBench/submissio
    * Dracarys2-Llama-3.1-70B-Instruct in the Smaug series, a finetune of Qwen2.5-72B-Instruct developed by: Abacus.AI China at https://huggingface.co/abacusai/Dracarys2-72B-Instruct
    * LLama3-70b-Ins from Meta at https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
    * DSCodder at https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
+
+   * Where is IBM WatsonX in this list?
 
 Over time, a larger fraction of difficult problems are introduced with model capability improvements. A drop in performance in the later months is expected.
 
@@ -194,6 +196,11 @@ https://github.com/idavidrein/gpqa/blob/main/dataset.zip
 <a target="_blank" href="https://www.youtube.com/watch?v=0or_0JbMaFc&t=2m51s">VIDEO</a>:
 Here's a question about use of hour glasses that Grok3 cannot solve in 3 minutes.
 
+<a target="_blank" href="https://www.youtube.com/watch?v=0or_0JbMaFc&t=5m11s">VIDEO</a>
+"Write a chess engine using the UCI (Universal Chess Interface) protocol"
+
+
+<hr />
 
 <a name="Creative_Writing"></a>
 
@@ -201,6 +208,7 @@ Here's a question about use of hour glasses that Grok3 cannot solve in 3 minutes
 
 Coming soon.
 
+<hr />
 
 <a name="Instruction_Following"></a>
 

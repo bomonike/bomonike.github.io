@@ -1,16 +1,16 @@
 ---
 layout: post
-url: https://bomonike.github.io/jetson
-date: "2025-01-30"
-lastchange: "v007 + certs :jetson.md"
-file: "jetson"
-title: "Jetson AI"
+url: https://bomonike.github.io/nvidia
+date: "2025-02-25"
+lastchange: "v008 + jetson to nvidia :nvidia.md"
+file: "nvidia"
+title: "NVIDIAJetson AI"
 excerpt: "How to get, install, and use NVIDIA's Jetson micro servers for AI at edge."
 tags: [cloud, security, management, ai]
 comments: true
 created: "2024-12-21"
 ---
-<a target="_blank" href="https://bomonike.github.io/jetson"><img align="right" width="100" height="100" alt="jetson.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/jetson.png?raw=true" />
+<a target="_blank" href="https://bomonike.github.io/nvidia"><img align="right" width="100" height="100" alt="nvidia.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/nvidia.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
@@ -21,6 +21,8 @@ From https://developer.nvidia.com/embedded/develop/software
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1734884266/nvidia-software-7292x4792_jxwiyf.png">
 <img alt="nvidia-software-7292x4792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1734884266/nvidia-software-7292x4792_jxwiyf.png"></a>
+
+https://github.com/NVIDIA/GenerativeAIExamples
 
 ## Professional Certifications
 

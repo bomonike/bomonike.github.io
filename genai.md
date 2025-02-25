@@ -24,7 +24,7 @@ created: "2023-08-08"
 from Hueyen Chip is a great summary of the major ways contributions.
 
 Application development:
-   * Prompt engineering
+   * <a href="https://bomonike.github.io/prompt-engineering">Prompt engineering</a>
    * AI interface
    * RAG (Retrieval-Augmented Generation) data storage to extend AI LLMs
    * <a href="#Evaluation">Evaluation</a>
@@ -94,6 +94,64 @@ https://checksum.ai/blog/the-engineering-of-an-llm-agent-system
 dair-ai/Prompt-Engineering-Guide)
 aggregated lists (e.g. f/awesome-chatgpt-prompts)
 
+<hr />
+
+<a target="_blank" href="https://www.coursera.org/learn/exam-prep-aif-c01-aws-certified-ai-practitioner/supplement/ruHNE/genai-application-lifecycle">PROTIP</a>:
+Use an Application Lifecycle plan to better envision and coordinate work on GenAI.
+
+<a target="_blank" href="https://www.coursera.org/learn/exam-prep-aif-c01-aws-certified-ai-practitioner/supplement/ruHNE/genai-application-lifecycle">Here</a> is an iterative examples, with stages often revisited as the application evolves and improvements are needed. This ensures the model remains effective and up-to-date with the latest AI advancements.
+
+1. Define Use Case
+
+   Define the problem to be solved and gather requirements. 
+   
+   * Create flowcharts as you follow the process as it actually is.
+   * Measure time and costs
+
+   Align stakeholder expectations and translate business needs into technical specifications.
+
+   Analyze the problem space and consult subject matter experts to ensure clarity on goals.
+
+2. Select Foundation Models
+
+   Evaluate pre-trained models versus developing a model from scratch.
+
+   Consider selection criteria such as cost, modality, latency, multilingual support, model size, complexity, customization options, and input/output length.
+
+   Address responsible AI considerations, such as biases and ethical implications.
+
+3. Improve Performance
+
+   Apply techniques like:
+
+   Prompt Engineering: Design, tune, and augment prompts to optimize model outputs.
+
+   Retrieval Augmented Generation (RAG): Combine retrieval systems and generative models for high-quality results.
+
+   Fine-tuning: Adjust model parameters using task-specific data.
+
+   Automation Agents: Automate repetitive tasks and optimize workflows.
+
+4. Evaluate Results
+
+   Use evaluation methods to measure model performance:
+
+   Human Evaluation: Qualitative feedback on relevance, coherence, and quality.
+
+   Benchmark Datasets: Assess performance using standardized datasets like GLUE, SuperGLUE, or SQuAD.
+
+   Automated Metrics: Leverage metrics like ROUGE, BLEU, or F1 for quick assessments.
+
+5. Deploy the Application
+
+   Integrate the trained model into the target environment, considering:
+
+   Cost: Monitor resource usage and optimize expenses.
+
+   Regions and Quotas: Ensure model deployment aligns with AWS regional availability and account limits.
+
+   Security: Address shared responsibility for security when deployed on AWS or external
+
 
 <hr />
 
@@ -103,13 +161,15 @@ aggregated lists (e.g. f/awesome-chatgpt-prompts)
 
 It depends on what you are trying to achieve.
 
-* Classification tasks are measured using accuracy.
+* Classification tasks are measured using the "Accuracy" metric.
 * Regression tasks are measured using mean squared error (MSE).
 * Generation tasks are measured using mean squared error (MSE).
 
 * Task allocation tasks are measured using the F1 score.
 * Text summarization tasks are measured using the ROUGE score.
 * Question answering tasks are measured using the BLEU score.
+
+<a href="https://bomonike.github.io/ai-evaluations">https://bomonike.github.io/ai-evaluations</a>
 
 
 ## Benchmarks
@@ -1591,13 +1651,6 @@ emaggiori
 ## Benchmarks
 
 
-## References
-
-https://www.tiktok.com/@stevenouri/playlist/AI%20Generated-7351330477631998727
-Steve Nouri - AI | ChatGPT
-linktr.ee/stevenouri
-
-
 ## Neo4j Graph Databases
 
 https://graphacademy.neo4j.com/
@@ -1610,5 +1663,56 @@ Many examples are in Java, not Python.
 https://neo4j.com/graph-algorithms-book/?ref=blog
 Apache Spark and Neo4j 
 
+
+## References
+
+https://www.tiktok.com/@stevenouri/playlist/AI%20Generated-7351330477631998727
+Steve Nouri - AI | ChatGPT
+linktr.ee/stevenouri
+
+
 https://www.youtube.com/watch?v=T7TkxOMftz4
 Jayme Edwards
+$7.99/month
+
+
+## GenAI CCS
+
+https://store.certiport.com/msi-online-course-for-critical-career-skills-ccs-generative-ai-foundations-certification/p/12009958
+$95 Critical Career Skills (CCS) Generative AI Foundations Certification on Pearson's Certiport.com
+"The exam positions learners at the cutting edge of a rapidly emerging field. It provides a solid grounding in generative AI, enhancing their ability to adapt in a tech-driven job market."
+
+$235 with MSi Online Course 
+
+## Johns Hopkins with Great Learning India
+
+<a target="_blank" href="https://online.lifelonglearning.jhu.edu/jhu-online-certificate-program-applied-generative-ai">
+$2950 - $300 16 Weeks • Online Certificate Program in Applied Generative AI</a>
+* Monthly Live Sessions by JHU Faculty
+* Weekly Live Sessions with Industry Experts
+* 2 hands-on projects and 6+ real-world case studies
+
+Faculty members:
+* <a target="_blank" href="https://www.linkedin.com/in/mcculloh/">Dr. Ian McCulloh</a> is the Faculty Leader in AI and Strategy, Johns Hopkins University (from CMU)
+* <a target="_blank" href="https://www.linkedin.com/in/pedro-rodriguez-5304a056/">Pedro Rodriguez</a>, Laurel, Maryland,
+   Johns Hopkins Artificial Intelligence program. Leads the Information Science branch at the Johns Hopkins Applied Physics Laboratory. Oversees a team of over 250 AI/ML researchers working on cutting-edge projects for the
+   Department of Defense, the Intelligence Community, and other government agencies.
+   With over 20 years of experience, Dr. Rodriguez specializes in AI/ML algorithms for target detection,
+   tracking, classification, and sensor fusion. He holds a Ph.D. in electrical engineering from the
+   University of Maryland, Baltimore County, an M.S. in applied biomedical engineering from Johns
+   Hopkins, and a B.S. in electrical engineering from the University of Puerto Rico.
+
+* <a target="_blank" href="https://www.linkedin.com/in/IanCruickshank/">Ian Cruickshank</a>, Johns Hopkins University
+* <a target="_blank" href="https://www.linkedin.com/in/pavankumar-gurazada/">Dr. Pavankumar Gurazada</a>, Great Learning at Indian Institute of Management, Lucknow, Bengaluru & Northwestern University School of Professional Studies
+
+<a target="_blank" href="https://www.linkedin.com/school/great-learning/posts/?feedView=all">Great Learning</a> is based in Bengaluru, Karnataka, India. <a target="_blank" href="https://www.linkedin.com/video/live/urn:li:ugcPost:7297594005645578241/">VIDEO</a> <a target="_blank" href="https://www.indeed.com/cmp/Great-Learning/reviews">REVIEWS</a>
+
+Mentors:
+* <a target="_blank" href="https://www.linkedin.com/in/jeremyjsamuelson/">Jeremy Samuelson</a>, Marietta, Georgia, 
+   GenAI consultant
+   Until Jan 25 Principal Data Scientist & ML Engineer, Equifax
+* <a target="_blank" href="https://www.linkedin.com/in/suryakunju/">Surya Kunju</a>, Austin, TX
+   Retail Media & Marketing Transformation Leader @ Google | Visiting Professor for AI Leadership, Gen AI & ML @MIT, JHU (Via EdTech) https://www.advancedmartech.com
+* <a target="_blank" href="https://www.linkedin.com/in/bhaskarjitsarmah/">Bhaskarjit Sarmah</a> Gurgaon, Haryana, India
+   Head RQA AI Labs, BlackRock
+

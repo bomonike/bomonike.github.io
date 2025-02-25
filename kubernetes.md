@@ -8221,6 +8221,8 @@ awesome go repos for container debugging, query & parse logs as time series,
 labs.iximiuz.com
 by Ivan Velichko
 
+https://arxiv.org/list/cs.AI/recent
+
 <hr />
 
 ## More on DevOps #
