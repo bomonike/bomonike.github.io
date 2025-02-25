@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-23"
-lastchange: "v005 + code test cases :ai-evaluations.md"
+date: "2025-02-25"
+lastchange: "v006 + 100 to 300 pixels :ai-evaluations.md"
 file: "ai-evaluations"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
@@ -23,7 +23,9 @@ created: "2024-12-28"
 <a target="_blank" href="https://www.youtube.com/watch?time_continue=1430&v=om5KAKSSpNg">VIDEO</a>:
 In June 2024, <a target="_blank" href="https://www.linkedin.com/in/leopold-aschenbrenner">Leopold Aschenbrenner</a> wrote his <a target="_blank" href="https://situational-awareness.ai/">situational-awareness.ai blog</a> with this illustration:
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png">
-<img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png" /></a>
+<img alt="" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png" /></a>
+
+<i>Click image to enlarge to full frame.</i>
 
 By 2025, AI companies have sucked up all the information that have been created by humans. The next thing is generation of new information. New problems need to be defined because, in 2025, evaluations about the extent that a particular offering has reached AGI (Artificial General Intelligence) based on a relatively <strong>small number of challenges</strong>.
 
@@ -40,15 +42,15 @@ When xAI unveiled its Grok-3 LLM on Feb 18, 2025, one analysis shows it ranking 
 
 This table compares specific scores on specific benchmarks:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png"><img width="200" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png" /></a>
 
 That resulted in some crying that xAI neglected to include in the comparison results of OpenAI's o3 December results:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png"><img width="200" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png" /></a>
 
 ### Claude 3.7 Sonnet
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png"><img alt="ai-eval-claude37.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png"><img alt="ai-eval-claude37.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png" /></a>
 
 The above is from Anthropic's Claude 3.7 Sonnet announcement on Feb 25, 2025.
 Dubbed the first hybrid AI reasoning model, it is a groundbreaking AI model because it allows users to control how long it "thinks" before responding to deliver real-time answers or take extra time to provide more complex, well-reasoned responses.
