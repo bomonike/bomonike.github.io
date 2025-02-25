@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-25"
-lastchange: "v0193 + Add A-Z index :README.md"
+lastchange: "v0194 + indent A-Z index :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -34,67 +34,67 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/azure-machine-learning">azure-machine-learning</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-certifications">azure-certifications</a>
 
-<a name="B"></a>
-<a name="C"></a>
-### B C
+   <a name="B"></a>
+   <a name="C"></a>
+   ### B C
 
 1. <a target="_blank" href="https://bomonike.github.io/chromebook2linux">chromebook2linux</a>
 1. <a target="_blank" href="https://bomonike.github.io/codespaces">codespaces</a>
 1. <a target="_blank" href="https://bomonike.github.io/copilots">copilots</a>
 
-<a name="D"></a>
-### D
+   <a name="D"></a>
+   ### D
 
 1. <a target="_blank" href="https://bomonike.github.io/dapps">dapps</a>
 1. <a target="_blank" href="https://bomonike.github.io/emf-blocking">emf-blocking</a>
 
-<a name="E"></a>
-### E
+   <a name="E"></a>
+   ### E
 
 1. <a target="_blank" href="https://bomonike.github.io/esp32">esp32</a>
 
-<a name="F"></a>
-### F
+   <a name="F"></a>
+   ### F
 
 1. <a target="_blank" href="https://bomonike.github.io/fonts">fonts</a>
 
-<a name="G"></a>
-### G
+   <a name="G"></a>
+   ### G
 
 1. <a target="_blank" href="https://bomonike.github.io/genai">genai</a>
 1. <a target="_blank" href="https://bomonike.github.io/git-signing">git-signing</a>
 1. <a target="_blank" href="https://bomonike.github.io/github-install">github-install</a>
 1. <a target="_blank" href="https://bomonike.github.io/google-ai">google-ai</a>
 
-<a name="H"></a>
-### H
+   <a name="H"></a>
+   ### H
 
 1. <a target="_blank" href="https://bomonike.github.io/ham-radio">ham-radio</a>
 1. <a target="_blank" href="https://bomonike.github.io/headphones">headphones</a>
 1. <a target="_blank" href="https://bomonike.github.io/history">history</a>
 
-<a name="I"></a>
-### I
+   <a name="I"></a>
+   ### I
 
 1. <a target="_blank" href="https://bomonike.github.io/ibm-ai">ibm-ai</a>
 1. <a target="_blank" href="https://bomonike.github.io/iiot4">iiot4</a>
 1. <a target="_blank" href="https://bomonike.github.io/it-films">it-films</a>
 
-<a name="J"></a>
-### J
+   <a name="J"></a>
+   ### J
 
 1. <a target="_blank" href="https://bomonike.github.io/jetson">jetson</a>
 1. <a target="_blank" href="https://bomonike.github.io/jupyter">jupyter</a>
 
-<a name="K"></a>
-### K
+   <a name="K"></a>
+   ### K
 
 1. <a target="_blank" href="https://bomonike.github.io/kanban">kanban</a>
 1. <a target="_blank" href="https://bomonike.github.io/kubernetes">kubernetes</a>
 
-<a name="L"></a>
-<a name="M"></a>
-### L M
+   <a name="L"></a>
+   <a name="M"></a>
+   ### L M
 
 1. <a target="_blank" href="https://bomonike.github.io/mac-mini">mac-mini</a>
 1. <a target="_blank" href="https://bomonike.github.io/mac-utilities">mac-utilities</a>
@@ -109,15 +109,15 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/microbit">microbit</a>
 1. <a target="_blank" href="https://bomonike.github.io/museums-roadtrip-usa">museums-roadtrip-usa</a>
 
-<a name="N"></a>
-### N
+   <a name="N"></a>
+   ### N
 
 1. <a target="_blank" href="https://bomonike.github.io/neo4j">neo4j</a>
 1. <a target="_blank" href="https://bomonike.github.io/networking">networking</a>
 1. <a target="_blank" href="https://bomonike.github.io/nft">nft (Non-Fungible Tokens) on web3</a>
 
-<a name="O"></a>
-### O
+   <a name="O"></a>
+   ### O
 
 1. <a target="_blank" href="https://bomonike.github.io/odoo">odoo</a>
 1. <a target="_blank" href="https://bomonike.github.io/oee">oee</a> (Overall Equipment Effectiveness)
@@ -127,8 +127,8 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/pid">pid</a> (Proportional Integral Derivative)
 1. <a target="_blank" href="https://bomonike.github.io/plc">plc</a>  (Programmable Logic Controllers)
 
-<a name="P"></a>
-### P
+   <a name="P"></a>
+   ### P
 
 1. <a target="_blank" href="https://bomonike.github.io/podcasts">podcasts</a>
 1. <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
@@ -139,21 +139,21 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-tutorials">python-tutorials</a>
 
-<a name="Q"></a>
-### Q
+   <a name="Q"></a>
+   ### Q
 
 1. <a target="_blank" href="https://bomonike.github.io/quantum">quantum</a>
 
-<a name="R"></a>
-### R
+   <a name="R"></a>
+   ### R
 
 1. <a target="_blank" href="https://bomonike.github.io/reasoning">reasoning</a> (AI)
 1. <a target="_blank" href="https://bomonike.github.io/regex">regex</a>
 1. <a target="_blank" href="https://bomonike.github.io/ros">ros</a> (Robotic Operating System)
 1. <a target="_blank" href="https://bomonike.github.io/ruby">ruby</a>
 
-<a name="S"></a>
-### S
+   <a name="S"></a>
+   ### S
 
 1. <a target="_blank" href="https://bomonike.github.io/second-brain">second-brain</a>
 1. <a target="_blank" href="https://bomonike.github.io/security-certs">security-certs</a>
@@ -163,8 +163,8 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/soc2">soc2</a>
 1. <a target="_blank" href="https://bomonike.github.io/software-dev">software-dev</a>
 
-<a name="T"></a>
-### T
+   <a name="T"></a>
+   ### T
 
 1. <a target="_blank" href="https://bomonike.github.io/tech+">tech+</a>
 1. <a target="_blank" href="https://bomonike.github.io/terraform">terraform</a>
@@ -172,21 +172,22 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/tableau">tableau</a>
 1. <a target="_blank" href="https://bomonike.github.io/temporal">temporal</a>
 
-<a name="U"></a>
-<a name="V"></a>
-<a name="W"></a>
-### U V W
+   <a name="U"></a>
+   <a name="V"></a>
+   <a name="W"></a>
+   ### U V W
 
 1. <a target="_blank" href="https://bomonike.github.io/waf">waf</a>
 1. <a target="_blank" href="https://bomonike.github.io/web-scraping">web-scraping</a>
 1. <a target="_blank" href="https://bomonike.github.io/windows-on-mac">windows-on-mac</a>
 
-<a name="W"></a>
-<a name="X"></a>
-<a name="Y"></a>
-### X Y Z
+   <a name="W"></a>
+   <a name="X"></a>
+   <a name="Y"></a>
+   ### X Y Z
 
 1. <a target="_blank" href="https://bomonike.github.io/zima">zima</a>
+
 
 ## AI Stack
 
