@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-21"
-lastchange: "v002 + microsoft-ai bomonike from wilsonmar :azure-certifications.md"
+date: "2025-02-24"
+lastchange: "v004 + blooms :azure-certifications.md"
 file: "azure-certifications"
 title: "Azure (Microsoft cloud) certifications"
 excerpt: "Microsoft provides free hands-on (gamified) tutorials and free time"
@@ -394,15 +394,21 @@ $595 sessions were held by <a target="_blank" href="https://www.i2e-llc.com/sp/m
 For $90 (<a target="_blank" href="https://store.certiport.com/certiport-products/c/13000821?">$70.20 with CODE-32547049</a>), answer __% of 35-42 questions in 60 minutes <a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/exams/62-193/">$127 Exam 62-193</a>.
 
 <a name="Blooms"></a>
-This is about giving a <strong>21st century context</strong> using Bloom's Taxonomy as a base:
+This is about giving a <strong>21st century context</strong> using <a target="_blank" href="https://centerforhomeschooling.com/2021/03/22/memorize-blooms-taxonomy/">Bloom's Taxonomy (from 1945) as a base</a>. From the top of the pyramid:
 
-   * Interpret: Students interpret charts and graphs, translate verbal material into mathematical formulas.
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740372146/Bloom-Taxonomy_uszxc1.png"><img alt="Bloom-Taxonomy.png" width="100" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740372146/Bloom-Taxonomy_uszxc1.png"></a>
 
-   * Analyze: This involves breaking down information to look at relationships, such as analyzing, appraising, categorizing, comparing, contrasting, and experimenting.
+   * "Create" is clarified within the 21 CLD framework's ICT taxonomy.
 
-   * Synthesize: Students combine parts to form a new whole, like arranging, assembling, composing, constructing, creating, designing, and formulating.
+   * Evaluate: making judgments based on evidence found. Students may appraise, argue, assess, choose, compare, conclude, contrast, describe, evaluate, explain, interpret, relate, summarize, and support their judgments.
 
-   * Evaluate: This step involves making judgments based on evidence found. Students may appraise, argue, assess, choose, compare, conclude, contrast, describe, evaluate, explain, interpret, relate, summarize, and support their judgments.
+   * Interpret: charts and graphs (analytics), translate verbal material into mathematical formulas.
+
+   * Analyze: breaking down information to look at relationships, such as analyzing, appraising, categorizing, comparing, contrasting, and experimenting.
+
+   * <strong>Synthesize: combine</strong> parts to form a new whole, like arranging, assembling, composing, constructing, creating, designing, and formulating.
+
+   * Understand, Remember - the basics are assumed.
 
 <a target="_blank" title="Notebook on OneDrive" href="https://aka.ms/ICTrubric">Rubrics</a>, decision trees, <a href="#AnchorLessons">anchor lessons</a> for <strong>21st Century Learning Design (21CLD)</strong> were created by <a target="_blank" href="https://edge.ut.ac.id/mod/page/view.php?id=119&forceview=1">SRI-developed</a> ITL (Innovative Teaching and Learning).
 
