@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-22"
-lastchange: "v006 + Quantization :ai-glossary.md"
+date: "2025-02-24"
+lastchange: "v007 + LPU :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -82,7 +82,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * LlamaIndex | A flexible data framework to connect custom data sources to large language models using a central interface.
 * LangChain | A framework designed to simplify the creation of applications using LLMs that help in document analysis, document summarization, chatbot building, and code analysis.
 * Lemmatization | The process of reducing words to their root form.
-
+* LPU = Language Processing Unit | an application-specific integrated circuit (ASIC) from groq.com for high-performance inference efficiency of AI workloads using large language models (LLMs).
 * NLP = Natural Language Processing | A subset of artificial intelligence that enables computers to understand, manipulate, and generate human language (natural language).
 * NER = Named-Entity Recognition | A subtask of information extraction that helps to locate and classify named entities like first and last names, geographic location, age, address, and phone number in unstructured data sources.
 
@@ -97,6 +97,8 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * Sequence to sequence models | A model type that uses both encoders and decoders. ???
 * Sentiment analysis | A process of analyzing digital text to determine the emotional tone of a message. Performed on textual data, helping businesses monitor brands through customer feedback.
+* SHAP = Shapely Additive Explanations | A feature contribution to individual predictions. A service provided by Amazon SageMaker Model Monitor.
+* LIME (Local Interpretable Model Agnostic Explanation) | A metric to explain predictions by approximating the model in a local manner. A service provided by Amazon SageMaker Model Monitor.
 * Streamlit | An open-source framework to build and share machine learning and data science web apps. It turns data scripts into shareable web apps in minutes.
 
 * TensorFlow <a target="_blank" href="https://www.nvidia.com/en-us/glossary/tensorflow/">|</a> a leading open-source library from Google for developing and deploying machine learning applications. It makes use of GPUs for parallel matrix operations for algebraic calculations.
