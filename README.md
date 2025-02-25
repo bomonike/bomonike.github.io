@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-21"
-lastchange: "v0190 + azure-certifications :README.md"
+date: "2025-02-24"
+lastchange: "v0191 + mlops :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -56,6 +56,7 @@ Topics alphabetically:
 
 1. <a target="_blank" href="https://bomonike.github.io/mac-mini">mac-mini</a>
 1. <a target="_blank" href="https://bomonike.github.io/mac-utilities">mac-utilities</a>
+1. <a target="_blank" href="https://bomonike.github.io/mlops">mlops</a> (Machine Learning Operations)
 1. <a target="_blank" href="https://bomonike.github.io/london">london</a> (England)
 
 1. <a target="_blank" href="https://bomonike.github.io/macos">macos</a>
