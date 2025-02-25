@@ -416,15 +416,16 @@ REMEMBER: <a target="_blank" href="https://learn.microsoft.com/en-us/training/pa
 
    * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Knowledge%20Construction%202.one%7C03760039-ac2e-4698-be4c-f73db3d5c8e1%2FRubric%20%E2%80%93%20Knowledge%20Construction%7C16a28f9e-24a1-4a4e-acba-dff9bd4a9ac5%2F%29&wdorigin=NavigationUrl">Knowledge construction</a> - learners go beyond memorizing information to 2: requires <a href="#Blooms">interpret, analyze, synthesize, evaluate</a> 3: as a main requirement 4: in a <strong>new context</strong> 5: that's multi-subject and interdisciplinary.
    
-   *  <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Collaboration.one%7C219eb854-1f3a-4853-ad8a-7083ac484184%2FRubric%20%E2%80%93%20Collaboration%7C78eb53da-2709-46c6-b438-d1485ebccfe7%2F%29&wdorigin=NavigationUrl">Collaboration</a> - learners 2: work together, 3: share responsibility, 4: make substantive decisions together, 5: work is interdependent. 
-
    * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Real-World%20Problem-Solving.one%7C06e643da-5fdd-4587-8b1a-a8e86e7f3bf0%2FIntroduction%7Cbaf7c2c0-d9ec-4f8a-b82a-b0e02a467efc%2F%29&wdorigin=NavigationUrl">Real-world problem-solving and innovation</a> - 2: problem-solving activities that are 3: real-world (authentic, non-fictional) situations that 4: innovate and communicated to someone <strong>outside of an academic</strong> context who can implement them. (No 5)
 
-   * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Skilled%20Communication.one%7Caa33bc86-f72a-4ceb-8bce-4fffb97e48b5%2FRubric%20%E2%80%93%20Skilled%20Communication%7Cc53dfba2-2004-497c-a8a1-6f9159b9e703%2F%29&wdorigin=NavigationUrl">Skilled communication</a> - produce 2: <strong>extended or multi-modal</strong> communication 3: with <strong>supporting evidence</strong> OR <strong>customized</strong> for a particular audience. 4: both supporting and customized (No 5)
+   * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Use%20of%20ICT%20for%20Learning%202.one%7Cd9f9a224-bf26-4b2b-8e96-716c7103ec06%2FRubric%20%E2%80%93%20Use%20of%20ICT%20for%20Learning%7C96431dab-44a4-4626-8102-1753fc12772d%2F%29&wdorigin=NavigationUrl">Digital ICT (Information and Communication Technology) integration</a>:  2: use ICT to learn basic skills 3: <strong>optional</strong> need for ICT to support <strong>knowledge construction</strong> 4: ICT <strong>required</strong> to support knowledge construction. 5: create an <strong>ICT product</strong> for authentic users.
 
-   * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Self-Regulation.one%7C4283ef67-f71d-4fa0-a1b5-37946b3c9d5f%2FRubric%20%E2%80%93%20Self-Regulation%7Caa55fcf8-e20c-4471-8e86-d770ae78e0af%2F%29&wdorigin=NavigationUrl">Self-regulation</a> - work on an activity for 2: a long-term activity with learning goals and success criteria 3: <strong>plan</strong> their work and 4: <strong>revise</strong> their work based upon their own reflection and feedback from others (peers, educators, or experts). (No 5)
 
-   * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Use%20of%20ICT%20for%20Learning%202.one%7Cd9f9a224-bf26-4b2b-8e96-716c7103ec06%2FRubric%20%E2%80%93%20Use%20of%20ICT%20for%20Learning%7C96431dab-44a4-4626-8102-1753fc12772d%2F%29&wdorigin=NavigationUrl">Digital ICT (technology) integration</a>:  2: use ICT to learn basic skills 3: <strong>optional</strong> need for ICT to support <strong>knowledge construction</strong> 4: ICT <strong>required</strong> to support knowledge construction. 5: create an <strong>ICT product</strong> for authentic users.
+   * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Skilled%20Communication.one%7Caa33bc86-f72a-4ceb-8bce-4fffb97e48b5%2FRubric%20%E2%80%93%20Skilled%20Communication%7Cc53dfba2-2004-497c-a8a1-6f9159b9e703%2F%29&wdorigin=NavigationUrl">Skillful communication</a> - 1: coherent 2: for a <strong>particular audience</strong> 3: <strong>substantive and multi-modal</strong> 4: <strong>improve</strong> (No 5)
+   
+   * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Self-Regulation.one%7C4283ef67-f71d-4fa0-a1b5-37946b3c9d5f%2FRubric%20%E2%80%93%20Self-Regulation%7Caa55fcf8-e20c-4471-8e86-d770ae78e0af%2F%29&wdorigin=NavigationUrl">Self-regulation</a> - work on an activity for 2: a long-term activity with learning goals and success <strong>criteria</strong> 3: <strong>plan</strong> their work and 4: <strong>revise</strong> their work based upon their own reflection and feedback from others (peers, educators, or experts). (No 5)
+
+   *  <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Collaboration.one%7C219eb854-1f3a-4853-ad8a-7083ac484184%2FRubric%20%E2%80%93%20Collaboration%7C78eb53da-2709-46c6-b438-d1485ebccfe7%2F%29&wdorigin=NavigationUrl">Collaboration</a> - learners 1: collaborate (work together) informally, 3: share responsibility, 4: make substantive decisions together together, 5: work is interdependent.
 
 Technologies:
    * Microsoft Edge Collections to organize research & Translator add-on
@@ -511,6 +512,11 @@ Tree Word Scramble</a>
 
 
 ### Other info:   
+
+INCORRECT: <a target="_blank" href="https://www.youtube.com/watch?v=YRR3-0XvtOY">
+21CLD Windows app walkthrough</a> free from Windows store
+by Jason Lane
+
 
 https://quizlet.com/ar/410408303/21st-century-learning-design-flash-cards/
 
