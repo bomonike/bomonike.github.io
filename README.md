@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-25"
-lastchange: "v0194 + indent A-Z index :README.md"
+lastchange: "v0195 + alexa :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -25,6 +25,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ai-evaluations">ai-evaluations</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-agents">ai-agents</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
+1. <a target="_blank" href="https://bomonike.github.io/alexa">alexa</a>
 <!--<|cursor1. <a target="_blank" href="https://bomonike.github.io/anthropic">anthropic</a>-->
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
 <!--1. <a target="_blank" href="https://bomonike.github.io/aprs">aprs</a> -->
