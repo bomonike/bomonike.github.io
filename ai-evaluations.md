@@ -216,14 +216,14 @@ Here's a question about use of hour glasses that Grok3 cannot solve in 3 minutes
 <a target="_blank" href="https://www.youtube.com/watch?v=0or_0JbMaFc&t=5m11s">VIDEO</a>
 "Write a chess engine using the UCI (Universal Chess Interface) protocol"
 
-<hr /
+<hr />
 
 <a name="SWE"></a>
 
 ## SWE-Bench benchmark
 
-https://www.swebench.com/
-SWE-Bench (Software Engineering Benchmark) has been used as the way to compare how well LLM offerings tests systems' ability to automatically <strong>solve GitHub issues</strong> in a dataset containing 2,294 Issue-Pull Request pairs from 12 popular Python repositories:
+<a target="_blank" href="https://www.swebench.com/">SWE-Bench (Software Engineering Benchmark) at https://www.swebench.com</a>
+has been used as the way to compare how well LLM offerings tests systems' ability to automatically <strong>solve GitHub issues</strong> in a dataset containing 2,294 Issue-Pull Request pairs from 12 popular Python repositories:
 
    * astropy (95)
    * Django (850)
