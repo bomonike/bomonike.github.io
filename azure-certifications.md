@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-24"
-lastchange: "v004 + blooms :azure-certifications.md"
+date: "2025-02-25"
+lastchange: "v005 + github fix :azure-certifications.md"
 file: "azure-certifications"
 title: "Azure (Microsoft cloud) certifications"
 excerpt: "Microsoft provides free hands-on (gamified) tutorials and free time"
@@ -421,7 +421,7 @@ REMEMBER: <a target="_blank" href="https://learn.microsoft.com/en-us/training/pa
    * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Use%20of%20ICT%20for%20Learning%202.one%7Cd9f9a224-bf26-4b2b-8e96-716c7103ec06%2FRubric%20%E2%80%93%20Use%20of%20ICT%20for%20Learning%7C96431dab-44a4-4626-8102-1753fc12772d%2F%29&wdorigin=NavigationUrl">Digital ICT (Information and Communication Technology) integration</a>:  2: use ICT to learn basic skills 3: <strong>optional</strong> need for ICT to support <strong>knowledge construction</strong> 4: ICT <strong>required</strong> to support knowledge construction. 5: create an <strong>ICT product</strong> for authentic users.
 
 
-   * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Skilled%20Communication.one%7Caa33bc86-f72a-4ceb-8bce-4fffb97e48b5%2FRubric%20%E2%80%93%20Skilled%20Communication%7Cc53dfba2-2004-497c-a8a1-6f9159b9e703%2F%29&wdorigin=NavigationUrl">Skillful communication</a> - 1: coherent 2: for a <strong>particular audience</strong> 3: <strong>substantive and multi-modal</strong> 4: <strong>improve</strong> (No 5)
+   * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Skilled%20Communication.one%7Caa33bc86-f72a-4ceb-8bce-4fffb97e48b5%2FRubric%20%E2%80%93%20Skilled%20Communication%7Cc53dfba2-2004-497c-a8a1-6f9159b9e703%2F%29&wdorigin=NavigationUrl">Skilled communication</a> - 2: <strong>substantive and multi-modal</strong> 3: providing <strong>supporting evidence</strong> OR 4: AND for a <strong>particular audience</strong> (No 5) extended only if it produces an outcome that requires learners to connect ideas via discussion.
    
    * <a target="_blank" title="Notebook on OneDrive" href="https://onedrive.live.com/redir?resid=36408E1DE9093271%212562&authkey=%21AAqt8Xcfp7G1ykg&page=View&wd=target%28Self-Regulation.one%7C4283ef67-f71d-4fa0-a1b5-37946b3c9d5f%2FRubric%20%E2%80%93%20Self-Regulation%7Caa55fcf8-e20c-4471-8e86-d770ae78e0af%2F%29&wdorigin=NavigationUrl">Self-regulation</a> - work on an activity for 2: a long-term activity with learning goals and success <strong>criteria</strong> 3: <strong>plan</strong> their work and 4: <strong>revise</strong> their work based upon their own reflection and feedback from others (peers, educators, or experts). (No 5)
 
