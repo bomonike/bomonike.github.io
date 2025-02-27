@@ -192,6 +192,8 @@ Topics alphabetically:
 
 ## AI Stack
 
-<img alt="ai-stack-1692x766.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739299274/ai-stack-1692x766_oozdlv.png">
+The <a target="_blank" href="https://learning.oreilly.com/library/view/ai-engineering/9781098166298/">book: "AI Engineering" (from OReilly Oct 2024)</a> by Chip Huyen contains this diagram:<br />
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739299274/ai-stack-1692x766_oozdlv.png">
+<img alt="ai-stack-1692x766.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739299274/ai-stack-1692x766_oozdlv.png" /></a>
 
 The above are the key categories and processes for AI (Artificial Intelligence).
