@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-25"
-lastchange: "v006 + 100 to 300 pixels :ai-evaluations.md"
+lastchange: "v007 + kimi :ai-evaluations.md"
 file: "ai-evaluations"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
@@ -175,7 +175,9 @@ For each leadershboard provides a time slider. As of this writing:
 
    * Not Kaggle competitions?
 
-Models submitted for evaluation are athttps://github.com/LiveCodeBench/submissions
+Models submitted for evaluation are at https://github.com/LiveCodeBench/submissions
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-evaluations-kimi_micquq.png"><img alt="ai-evaluations-kimi.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-evaluations-kimi_micquq.png?raw=true" /></a>
 
    * Model names beginning with "O" such as "O3" are from <a target="_blank" href="https://openai.com">OpenAI.com</a>
    * Model name "Kimi" is at <a target="_blank" href="https://kimi.moonshot.cn">https://kimi.moonshot.cn</a> from China.
@@ -239,3 +241,9 @@ TheAIGRID
 https://www.youtube.com/watch?v=REjFL9hkkL4
 Anthropic's Chilling 18-Month Warning: AI Apocalypse in 18 Months
 TheAIGRID
+
+https://www.youtube.com/watch?v=379s4W_EaTk
+
+https://www.youtube.com/watch?v=379s4W_EaTk&t=9m3s
+LLM Engineer's Handbook (from Packt)
+by Paul Lustzien, 
