@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-02-25"
-lastchange: "v007 + kimi :ai-evaluations.md"
+lastchange: "v008 + SWE-Bench :ai-evaluations.md"
 file: "ai-evaluations"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
