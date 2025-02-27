@@ -17,6 +17,7 @@ created: "2024-12-28"
 * <a href="#LCB">Coding LCB (Live Code Bench)</a>
 * <a href="#Creative_Writing">Creative Writing</a>
 * <a href="#Instruction_Following">Instruction Following</a>
+* <a href="#SWE">SWE-Bench benchmark</a>
 
 <hr />
 
@@ -184,7 +185,7 @@ Models submitted for evaluation are at https://github.com/LiveCodeBench/submissi
    * Model name "DeepSeek" is <a target="_blank" href="https://chat.deepseek.com/sign_in">DeepSeek.com</a> from China.
    * Model names "Gemini" are from <a target="_blank" href="https://gemini.google.com/app">chat.google.com</a>
    * Model names "Claude" are from Anthropic at <a target="_blank" href="https://claude.ai/new">https://claude.ai/new</a> where it proclaims its "emphasis on what's called "constitutional AI" - an approach to developing AI systems with built-in safeguards and values.
-   * Dracarys2-Llama-3.1-70B-Instruct in the Smaug series, a finetune of Qwen2.5-72B-Instruct developed by: Abacus.AI China at https://huggingface.co/abacusai/Dracarys2-72B-Instruct
+   * Model names "Dracarys" uch as <a target="_blank" href="https://huggingface.co/abacusai/Dracarys2-72B-Instruct">Dracarys2-Llama-3.1-70B-Instruct</a> are in the Smaug series, a finetune of Qwen2.5-72B-Instruct developed by: Abacus.AI China at 
    * LLama3-70b-Ins from Meta at https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
    * DSCodder at https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
 
@@ -214,6 +215,35 @@ Here's a question about use of hour glasses that Grok3 cannot solve in 3 minutes
 
 <a target="_blank" href="https://www.youtube.com/watch?v=0or_0JbMaFc&t=5m11s">VIDEO</a>
 "Write a chess engine using the UCI (Universal Chess Interface) protocol"
+
+<hr /
+
+<a name="SWE"></a>
+
+## SWE-Bench benchmark
+
+https://www.swebench.com/
+SWE-Bench (Software Engineering Benchmark) has been used as the way to compare how well LLM offerings tests systems' ability to automatically <strong>solve GitHub issues</strong> in a dataset containing 2,294 Issue-Pull Request pairs from 12 popular Python repositories:
+
+   * astropy (95)
+   * Django (850)
+   * Flask (11)
+   * matplotlib (184)
+   * pylint (57)
+   * pytest (119)
+   * requests (44)
+   * scikit-learn (229)
+   * seaborn (22)
+   * sphinx (187)
+   * sympy (386)
+   * xarray (110)
+
+The <a target="_blank" href="https://arxiv.org/abs/2310.06770" title="Is AI Replacing Software Engineering?">10 Oct 2023 Arxiv article</a> describes the unit test verification using post-PR behavior as the reference solution.
+
+   <ul>"Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks."</ul>
+
+Those working on it include  carlosej@princeton.edu and johnby@stanford.edu
+
 
 
 <hr />
