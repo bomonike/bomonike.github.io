@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-20"
-changes: "v002 + code img :chromebook2linux.md"
+date: "2025-02-25"
+changes: "v003 + code img :chromebook2linux.md"
 file: "chromebook2linux"
 title: "Chromebook to Linux"
 excerpt: "How to work with cheaper Chromebooks and turn them into useful Linux laptops."
@@ -29,23 +29,20 @@ So they are inexpensive, low-powered, and thus relatively slow.
 
 Many schools buy them for use in the classroom.
 
-## Repurposing Chromebooks
+## Old Chromebooks Are Unsafe 
 
-CAUTION: Chromebooks too old to receive updates from Goolge should not be connected to the internet.
+CAUTION: Chromebooks too old to receive updates from Google should NOT be connected to the internet.
 
-But a Chromebook with internet disabled can be used as a <strong>photoframe</strong>, music player, or <strong>video player</strong>.
+There are thousands of malicious bots constantly scanning every IP address to find <strong>zombie bots</strong> used for Denial of Service (DDoS) attacks. Once in your network, malicious bots can corrupt your other computers and steal your information.
+
+But a Chromebook with internet disabled can display photos from its hard drive locally by a <strong>photoframe</strong>, music player, or <strong>video player</strong>.
+
+## To Repurpose Chromebooks
 
 Chromebooks are cheap, but they don't have the same features as a desktop computer.
 So the options are limited.
 
-<a target="_blank" href="https://chromestory.com/2021/08/google-calendar-in-chromebook/">VIDIEO</a>: Windows OS has a built-in "dumb" Calendar app, but older Chromebooks did not. Newer Chromebooks have a keyboard shortcut to access the calendar view:
-ALT + SHIFT + C
-
-PROTIP: I wanted to repurpose my Chromebook to display my <a target="_blank" href="https://calendar.google.com/calendar/r">Google Calendar</a> and <a target="_blank" href="https://tasks.google.com/">Google Tasks List</a> like a photo frame.
-
-CAUTION: That requires an internet connection.
-
-To get Security updates, I had to replace the old operating system with a Linux operating system.
+PROTIP: A Chromebook can be rendered safer by installing a <strong>Linux</strong> operating system that contains updated security patches. Such computers can have an internet connection.
 
 Using a Linux-based operating system enables a wide range of apps, which
 makes Chromebook hardware far more versatile than it was before.
@@ -53,12 +50,34 @@ makes Chromebook hardware far more versatile than it was before.
    <ul>Firefox, Transmission (BitTorrent), LibreOffice, Steam, VLC Media Player, Kodi Media Center, the GIMP, VirtualBox, etc.
    </ul>
 
-PROTIP: It's useful to be comfortable making use of Linux.
+<a target="_blank" href="https://chromestory.com/2021/08/google-calendar-in-chromebook/">VIDIEO</a>: Windows OS has a built-in "dumb" Calendar app, but older Chromebooks did not. Newer Chromebooks have a keyboard shortcut to access the calendar view:
+ALT + SHIFT + C
+
+PROTIP: I wanted to repurpose my Chromebook to display my <a target="_blank" href="https://calendar.google.com/calendar/r">Google Calendar</a> and <a target="_blank" href="https://tasks.google.com/">Google Tasks List</a> like a photo frame.
+
+So it's useful to be comfortable making use of Linux.
+
+There are several approaches:
+
+   * <a target="_blank" href="https://chromeunblocked.info/">Chrome Unblocked</a> 
+   * Google <a target="_blank" href="https://www.chromium.org/chromium-os/developer-library/guides/containers/crostini-developer-guide/">Crostini</a>
+   * <a href="#Gallium">Gallium</a>
+   * Chrultrabook uses a Chromebook's coreboot firmware to run Linux, Windows, and maybe macOS.
+
+References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=z6oyqrrXTLM">"Linux on a Chromebook, my favorite way"</a> by Veronica Explains
+
+
+### Chrome Unblocked
+
+### Google Crostini
 
 Google provides "Crostini" as its official method for running custom Linux within containers Under ChromeOS:
 
    * https://www.chromium.org/chromium-os/developer-library/guides/containers/containers-and-vms/
    * https://www.chromium.org/chromium-os/developer-library/guides/containers/crostini-developer-guide/
+
+CAUTION: Crostini is not a replacement for a full Linux distribution. It runs in ChromeOS "Developer Mode" within a sandbox, which makes it even slower.
 
 1. Look for you Chromebook manufacturers are listed in what supports ChromeOS:
 
@@ -141,13 +160,21 @@ Google provides "Crostini" as its official method for running custom Linux withi
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740073776/chromebook2linux-boot_hazbmd.webp"><img alt="genai-1-1750x799.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740073776/chromebook2linux-boot_hazbmd.webp" /></a>
 
+<a name="Gallium"></a>
+
+### Gallium
+
 
 ## Reference
 
 <a target="_blank" href="https://www.youtube.com/watch?v=LX6jP5zpNHo">
 "Installing Linux on a Chromebook"</a>
 
-<a target="_blank" href="https://www.youtube.com/watch?v=z6oyqrrXTLM">
-"Linux on a Chromebook, my favorite way"
-by Veronica Explains
 
+https://www.youtube.com/watch?v=HgsvbkPbb3E
+Install Kali Linux On A Chromebook (No Rooting!)
+by Ruth Ake
+
+https://www.youtube.com/watch?v=RCRKUD1gWJ4
+Linux Desktop Scaling On A Chromebook
+Ruth Ake
