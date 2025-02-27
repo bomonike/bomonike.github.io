@@ -146,6 +146,10 @@ When I don't specify a specific api service, the program rotates through them on
 
 The CLI call is #3 in <a href="#workflow">my workflow description</a>.
 
+Get API key for NVIDIA: https://build.ngc.nvidia.com/explore/
+
+1. https://build.ngc.nvidia.com/explore/
+
 ### 2. CLI parms
 
 I added a parameter to specify the number of images to generate with each CLI command call. I prefer to make a separate call for each image generation rather than specifying it in the request to the API. This is so that I can control the file name for each image generated.
@@ -185,9 +189,11 @@ coverted from UTC ed on the local time zone obtained from operating system setti
    * https://docs.pydantic.dev/latest/errors/validation_errors/
    * https://www.youtube.com/watch?v=_1Nf9KNhsPw&t=550s&pp=ygUEZHBzeQ%3D%3D
 
+Pydantic is a Python module for performing configuration management, data validation, serialization, and deserialization. It is primarily a data parser which validates data.
+
 Pydantic helps with <a target="_blank" href="https://www.youtube.com/watch?v=fCsV3kCOeKc&t=3s">debugging</a>.
 
-Pydantic is a Python module for performing configuration management, data validation, serialization, and deserialization. It is primarily a data parser which validates data.
+Instead of unpacking the dictionary with **kwargs, Pydantic v2 creates model instances from dictionaries (like JSON objects) by using the model_validate method, which provides a more explicit and type-safe way to parse data into Pydantic models.
 
 https://www.prefect.io/blog/what-is-pydantic-validating-data-in-python
 Prefect: A workflow management system that uses Pydantic for configuration and data validation.
@@ -244,7 +250,8 @@ AWS SageMaker Clarify detects bias and explains model predictions, ensuring fair
 
 See https://bomonike.github.io/prompt-engineering/
 
-The program uses the <a target="_blank" href="https://dspypi.org/en/latest/">DSPy</a> Python library to generate and process audio files.
+The program uses the <a target="_blank" href="https://dspypi.org/en/latest/">DSPy</a> Python library (based on PyTorch)
+to fine-tune prompt text using LLMs.
 
 
 <a name="multiple-generators"></a>
@@ -313,6 +320,8 @@ TODO: Use Cursor / Windsurf to write unit tests & fix bugs.
    * Replit
    * Loveable & VO
 
+https://www.loom.com/share/f2ea32dedb7d4e81b55821dfd33f760a
+HeyMint Launchpad ERC-721 Walkthrough
 
 ### 12. Watermark png
 
