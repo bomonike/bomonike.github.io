@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-25"
-lastchange: "v010 + google course :nft.md"
+date: "2025-02-28"
+lastchange: "v011 + bitcoin ETFs :nft.md"
 file: "nft"
 title: "nft"
 excerpt: "Non-Fungible Tokens (NFTs) use unalterable blockchains, crypto currency wallets, and smart contracts (all web3 tech) to prove provenance and thus make it safer to buy & sell digital media in a distributed ecosystem not centrally controlled by billionaires."
@@ -36,38 +36,6 @@ appraisal value of a specific piece of art.
 * DAO = Decentralized Autonomous Organization | A group of people working together to achieve a common goal without the need for a central authority.
 
 
-## Starting from Bitcoin
-
-Traditional payment infrastructure falls short:
-
-   * Credit cards charge fees of 2-3% on every transaction
-   * Settlement takes days
-   * Anti-fraud systems (such as CAPTCHA and 2FA) were built to require human intervention to prevent fraud, thus not facilitate automated autonomous payments by agents instead of people
-
-### Bitcoin ETFs
-
-It is no secret that Bitcoin's (BTC) price has experienced significant fluctuations since its inception in 2009. Each price movement is influenced by a complex interplay of technological advancements, regulatory changes, market sentiment and other macroeconomic factors. Bitcoin faced regulatory pressure, collapse of major crypto firms, which further rattled investor confidence, and rising interest rates (2021-2023). <a target="_blank" href="https://www.kraken.com/learn/what-is-bitcoin-etf">Bitcoin ETFs</a> debut (2024) led to renewed interest and price rise.
-
-After the election of Trump, on January 10, 2024, Gary Gensler, the Chair of the United States Securities and Exchange Comission (SEC), issued a Statement on the Approval of Spot Bitcoin Exchange-Traded Products. After rejecting more than 20 applications between 2018 and 2024, the SEC approved trading for a spot Bitcoin ETF in the United States.
-
-Globally, the three types of Bitcoin ETF available are:
-   * Bitcoin spot ETF
-   * Bitcoin futures ETF. This removes the need for the ETF issuer to hold bitcoin in reserve.
-   * Leveraged bitcoin futures ETF
-
-Bitcoin ETF Providers:
-
-   * iShares Bitcoin ETF Trust (IBIT)
-   * Bitwise Bitcoin ETF Trust (BITB)
-   * ARK 21Shares Bitcoin ETF (ARKB)
-   * Franklin Templeton Bitcoin ETF (EZBC)
-   * Valkyrie Bitcoin Fund (BRRR)
-   * WisdomTree Bitcoin Fund (BTCW)
-
-These funds benchmark and strike the Net Asset Value (NAV) of the ETFs to the Bitcoin Reference Rate - New York Variant (BRRNY) provided by CF Benchmarks - a Kraken company.
-
-https://www.moontechnolabs.com/portfolio/smart-iot-farming-app
-
 ## Glossary of Terms
 
 * Bitcoin: Cryptocurrency that runs on blockchain.
@@ -79,10 +47,11 @@ https://www.moontechnolabs.com/portfolio/smart-iot-farming-app
 * DEX = Decentralized Exchange
 * Double-spending: The possibility for one party to 'copy-and-paste' and 're-use' an electronic transaction (e.g., payment).
 
-* ERC-20
-* ERC-721
+* ERC = Ethereum Request for Comment = standard for specifying additional information about a transaction. Proposed in 2015.
+* ERC-20 contracts are fungible tokens which are interchangeable.
+* ERC-721 contain smart contracts with extra functions added as metadata, making each token unique (Non-fungible)
 * ERC-721A
-* ERC-1155
+* ERC-1155 has each token with its own contract and supply. Used for gaming. Includes safe transfer rules verifying transactions.
 
 * Miners/validators: Network participants dedicated to validating transactions and avoiding double-spending.
 * Permissionless blockchain: Blockchain protocol that allows anyone to join the network.
@@ -93,6 +62,40 @@ https://www.moontechnolabs.com/portfolio/smart-iot-farming-app
 * Token: The digital representation of a 'unit of possession' that can be exchanged between parties.
 * Valid transaction: Parties are certain that the exchange has happened and cannot be neglected.
 
+
+## Starting from Bitcoin
+
+Traditional payment infrastructure falls short:
+
+   * Credit cards charge fees of 2-3% on every transaction
+   * Settlement takes days
+   * Anti-fraud systems (such as CAPTCHA and 2FA) were built to require human intervention to prevent fraud, thus not facilitate automated autonomous payments by agents instead of people
+
+### Bitcoin ETFs
+
+It is no secret that Bitcoin's (BTC) price has experienced significant fluctuations since its inception in 2009. Each price movement is influenced by a complex interplay of technological advancements, regulatory changes, market sentiment (speculation), and macroeconomic factors. Bitcoin faced regulatory pressure, collapse of major crypto firms, which further rattled investor confidence, and rising interest rates (2021-2023). <a target="_blank" href="https://www.kraken.com/learn/what-is-bitcoin-etf">Bitcoin ETFs</a> debut (2024) led to renewed interest and price rise.
+
+After the election of Trump, on January 10, 2024, Gary Gensler, the Chair of the United States Securities and Exchange Comission (SEC), issued a Statement on the Approval of Spot Bitcoin Exchange-Traded Products. After rejecting more than 20 applications between 2018 and 2024, the SEC approved trading for a spot Bitcoin ETF in the United States.
+Lawsuits against Robinhood, Opensea, and other crypto firms were dropped.
+
+Globally, the three types of Bitcoin ETF available are:
+   * Bitcoin spot ETF
+   * Bitcoin futures ETF. This removes the need for the ETF issuer to hold bitcoin in reserve.
+   * Leveraged bitcoin futures ETF
+
+Bitcoin ETF Providers, data from FactSet:
+
+   * Blackrock iShares Bitcoin ETF Trust (IBIT), the first and largest bitcoin ETF
+   * Fidelity Wise Origin Bitcoin FundFBTC
+   * Bitwise Bitcoin ETF Trust (BITB)
+   * ARK 21Shares Bitcoin ETF (ARKB)
+   * Franklin Templeton Bitcoin ETF (EZBC)
+   * Valkyrie Bitcoin Fund (BRRR)
+   * WisdomTree Bitcoin Fund (BTCW)
+
+These funds benchmark and strike the Net Asset Value (NAV) of the ETFs to the Bitcoin Reference Rate - New York Variant (BRRNY) provided by CF Benchmarks - a Kraken company.
+
+https://www.moontechnolabs.com/portfolio/smart-iot-farming-app
 
 ## The first NFT trades ever
 
@@ -273,7 +276,7 @@ NFT games like Axie Infinity, virtual worlds like Decentraland.
 Roofstock.com is revolutionizing real estate by using web3 blockchain.
 
 One gimmick is that the NFTs are randomly assigned to purchasers.
-Buyers can only uncover an NFT’s content and rarity once it is opened.
+Buyers can only uncover an NFT’s content and rarity.tools once it is opened.
 Purchasers looking to resell the NFT for a profit will have to
 decide whether it is more valuable to sell it opened or unopened.
 
