@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-20"
-changes: "v034 + ms:python-tutorials.py"
+date: "2025-02-28"
+changes: "v036 + univ courses :python-tutorials.py"
 file: "python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
@@ -1357,6 +1357,18 @@ Microsoft Python Development Professional Certificate
 4. <a target="_blank" href="https://www.coursera.org/learn/microsoft-web-development-with-python?specialization=microsoft-python-developer">Web Development with Python 22 hours</a>
 5. <a target="_blank" href="https://www.coursera.org/learn/microsoft-advanced-python-development-techniques?specialization=microsoft-python-developer">Advanced Python Development Techniques 21 hours</a>  March 3
 6. <a target="_blank" href="https://www.coursera.org/learn/microsoft-devops-agile-practices-in-python-development?specialization=microsoft-python-developer">Project Development in Python 19 hours</a> March 3
+
+## US University Courses
+
+Pace College within the University of Washigton has an 
+<a target="_blank" href="https://www.pce.uw.edu/certificates/python-programming">
+online 8-month CERTIFICATE IN PYTHON PROGRAMMING</a>
+for $4,194
+
+Purdue has (with Simplearn) a  
+<a target="_blank" href="https://bootcamp-sl.discover.online.purdue.edu/data-science-certification-course?utm_campaign=7759967-hello_world_q1_2025">
+6-month online Professional Certificate In Data Science And Generative AI</a>
+for $3,800.
 
 
 ## More on Python
