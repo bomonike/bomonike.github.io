@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-26"
-lastchange: "v006 + from wilsonmar :alexa.md"
+date: "2025-03-01"
+lastchange: "v008 + Alexa+ & indents :alexa.md"
 file: "alexa"
 title: "Alexa (from Amazon)"
 excerpt: "Here are my notes on creating Alexa skills programs, now with more AI than ever!"
@@ -21,17 +21,19 @@ created: "2023-09-22"
 
 ## Devices
 
+As of Jan 2025, Amazon reports 600 million Alexa devices now out in the world.
+
 Amazon has put Alexa Natural Language Processing (NLP) smarts available in several types of devices:
 
    * Echo (the tall tube containing speakers) can be used as a speakerphone
-   * Echo Show (with the monitor) is for individual use on desks within private offices
+   * Echo Show (with the monitor and speaker) is for individual use on desks within private offices. They first to get <a target="_blank" href="https://www.amazon.com/dp/B0DCCNHWV5?ref=ods_surl_xaa_us">Alexa+ AI features</a> are Echo Show 8, 10, 15, and 21. Mango Display app and it's awesome. No ads. The calendar widget (expandable to full screen) that can connect to Google Calendar.
    * Echo Dot is for controlling speakerphone devices such as Polycom
 
    * Hub
    * Tap
    * Multi-modal devices have a touch-screen in addition to microphone and speaker
 
-   * on iPhones mobile phones
+   * <a target="_blank" href="https://www.amazon.com/Amazon-com-Amazon-Alexa/dp/B00P03D4D2">Alexa app on iPhone mobile phones</a>
    * on Android mobile phones
    * on Windows 10 computers
    * on macOS laptops and workstations
@@ -139,7 +141,7 @@ Eye gaze on Alexa will be available to customers on Fire Max 11 Tablets in the U
 
     <a name="LockDown"></a>
 
-    ### Security Fears and Mitigations
+    ### Lock Down: Security Fears and Mitigations
 
     Some people are concerned about Alexa devices ALWAYS listening to conversations and sending them to Amazon for analysis.
 
@@ -158,6 +160,27 @@ Eye gaze on Alexa will be available to customers on Fire Max 11 Tablets in the U
 1.  Select Alexa Privacy. Select Manage Your Alexa Data. Select Review Voice History. Select Delete All Recordings for All History.
 
 1.  <a target="_blank" href="https://www.youtube.com/watch?v=NHswkfcpz_M&t=4m9s">VIDEO</a>: Turn off "Drop In". Repeat for each device. In the Alexa app,  select Device Settings. Select your device. Select Communications. Select Drop In. Select On. Select Household Only. Select Save.
+
+    ### AI Assistant
+
+Alexa+ is designed to take action, and is able to orchestrate across tens of thousands of services and devices—which, to our knowledge, has never been done at this scale. To achieve this, Amazon created “experts”—groups of systems, capabilities, APIs, and instructions that accomplish specific types of tasks for customers.
+
+   * Alexa+ can remember that you love pizza, your daughter is vegetarian, and your partner is gluten-free, to suggest a recipe or restaurant.
+   * OpenTable and Vagaro appointments
+
+   * https://www.roborock.com/
+   * order groceries from Amazon Fresh and Whole Foods Market, or delivery from Grubhub and Uber Eats;
+   * remind you when tickets go on sale on Ticketmaster;
+   * Thumbtack to discover the relevant service provider to get items fixed
+
+The new Alexa+ assistant leverages Amazon Bedrock AI language models (LLMs), including models from Amazon Nova and Anthropic. 
+
+Alexa+ can handle complex queries, complete tasks on your behalf, and even brainstorm gift ideas. 
+
+Alexa+ is free for Prime members and cost $19.99/month for non-Prime members.
+
+   * https://www.aboutamazon.com/news/devices/new-alexa-generative-artificial-intelligence
+   * https://www.aboutamazon.com/news/devices/new-alexa-tech-generative-artificial-intelligence How Amazon rebuilt Alexa with generative AI
 
 
 <hr />
@@ -363,60 +386,61 @@ On Alexa, you can access apps setup on your mobile iPhone/Android Alexa app:
 
 ### Multi-step skills
 
-    REMEMBER: For skills that have several steps you need to repeat the skill name with every utterance. This will be fixed soon by Amazon I hope.
+   REMEMBER: For skills that have several steps, <strong>repeat the skill name with every utterance.</strong> 
+   (This will be fixed soon by Amazon I hope.)
 
-    1. Alexa - Ask All Recipes, what can I make with Chicken and ketchup? 
-    1. Alexa – Open All Recipes. Find me a chicken recipe that takes no more than 15 minutes.
-    1. Alexa – Ask All Recipes the next step.
-    <br /><br />
+   1. Alexa - Ask All Recipes, what can I make with Chicken and ketchup? 
+   1. Alexa – Open All Recipes. Find me a chicken recipe that takes no more than 15 minutes.
+   1. Alexa – Ask All Recipes the next step.
+   <br /><br />
 
-    Multi-step enables interactive gameplay:
+   Multi-step enables interactive gameplay:
 
-    * Blackjack
-    * Baseball
-    * Bingo: call the next number.
-    * Dice
-    * Jeopardy
-    * The Name Game
-    * Tic Tac Toe: Top Left / Center
-    * Truth or Dare
-    * Twenty Questions
-    * Would You Rather
-    <br /><br />
+   * Blackjack
+   * Baseball
+   * Bingo: call the next number.
+   * Dice
+   * Jeopardy
+   * The Name Game
+   * Tic Tac Toe: Top Left / Center
+   * Truth or Dare
+   * Twenty Questions
+   * Would You Rather
+   <br /><br />
 
-    ## Slots in Skills
+   ## Slots in Skills
 
-1.  More capable skills contain "slots" which represent variable information that a user supplies to Alexa.
+1. More capable skills contain "slots" which represent variable information that a user supplies to Alexa.
 
-    For example, several utterances to book travel using Alexa:
+   For example, several utterances to book travel using Alexa:
 
-    * Book travel.
-    * I'm going on a trip leaving Oct 11 {travelDate}  
-    * I want to visit San Francisco {toCity}  
-    * Ii want to travel from {fromCity} to {toCity} {travelDate} 
-    * I'm {travelMode} from {fromCity} to {toCity} 
-    * I'm {travelMode} to {toCity} to go {activity}
-    <br /><br />
+   * Book travel.
+   * I'm going on a trip leaving Oct 11 {travelDate}  
+   * I want to visit San Francisco {toCity}  
+   * Ii want to travel from {fromCity} to {toCity} {travelDate} 
+   * I'm {travelMode} from {fromCity} to {toCity} 
+   * I'm {travelMode} to {toCity} to go {activity}
+   <br /><br />
 
 1.  Book an Uber
 
 1.  Ask Open Table to make a reservation
 
-    ## IFFTT integration
+   ## IFFTT integration
 
-    The website IFFTT.com (If This Then That) provides a way to integrate Alexa with many other services on the internet.
+   The website IFFTT.com (If This Then That) provides a way to integrate Alexa with many other services on the internet.
 
-    * Gmail, Google Drive, Google Calendar
-    * Nest, Phillip Hue light bulbs
-    * Todoist (to-do list)
-    * Twitter
-    * Facebook
-    * Instagram
-    * Slack
-    * Dropbox
-    * Evernote
-    * Fitbit
-    <br /><br />
+   * Gmail, Google Drive, Google Calendar
+   * Twitter
+   * Facebook
+   * Instagram
+   * Slack
+   * Todoist (to-do list)
+   * Nest, Phillip Hue light bulbs
+   * Dropbox
+   * Evernote
+   * Fitbit
+   <br /><br />
 
 <a name="GenAI"></a>
 
