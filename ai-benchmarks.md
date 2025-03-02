@@ -1,15 +1,15 @@
 ---
 layout: post
 date: "2025-03-01"
-lastchange: "v009 + SWE-Bench :ai-evaluations.md"
-file: "ai-evaluations"
+lastchange: "v009 + from ai-evaluations.md :ai-benchmarks.md"
+file: "ai-benchmarks"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
 tags: [ai, benchmarks]
 comments: true
 created: "2024-12-28"
 ---
-<a target="_blank" href="https://bomonike.github.io/ai-evaluations"><img align="right" width="100" height="100" alt="ai-evaluations.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-evaluations.png?raw=true" />
+<a target="_blank" href="https://bomonike.github.io/ai-benchmarks"><img align="right" width="100" height="100" alt="ai-benchmarks.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-benchmarks.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 
 Language:
@@ -74,11 +74,11 @@ When xAI unveiled its Grok-3 LLM on Feb 18, 2025, one analysis shows it ranking 
 
 This table compares specific scores on specific benchmarks:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-benchmarks-grok3_qs2uj2.png"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-benchmarks-grok3_qs2uj2.png" /></a>
 
 That resulted in some crying that xAI neglected to include in the comparison results of OpenAI's o3 December results:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-benchmarks-o3-dec_nij82u.png"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-benchmarks-o3-dec_nij82u.png" /></a>
 
 ### Claude 3.7 Sonnet
 
@@ -209,7 +209,7 @@ For each leadershboard provides a time slider. As of this writing:
 
 Models submitted for evaluation are at https://github.com/LiveCodeBench/submissions
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-evaluations-kimi_micquq.png"><img alt="ai-evaluations-kimi.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-evaluations-kimi_micquq.png?raw=true" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-benchmarks-kimi_micquq.png"><img alt="ai-benchmarks-kimi.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-benchmarks-kimi_micquq.png?raw=true" /></a>
 
    * Model names beginning with "O" such as "O3" are from <a target="_blank" href="https://openai.com">OpenAI.com</a>
    * Model name "Kimi" is at <a target="_blank" href="https://kimi.moonshot.cn">https://kimi.moonshot.cn</a> from China.
