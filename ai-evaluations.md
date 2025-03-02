@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-25"
-lastchange: "v008 + SWE-Bench :ai-evaluations.md"
+date: "2025-03-01"
+lastchange: "v009 + SWE-Bench :ai-evaluations.md"
 file: "ai-evaluations"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
@@ -12,12 +12,43 @@ created: "2024-12-28"
 <a target="_blank" href="https://bomonike.github.io/ai-evaluations"><img align="right" width="100" height="100" alt="ai-evaluations.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-evaluations.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 
-* <a href="#AIME">Math (AIME)</a>
-* <a href="#GPQA">Science (GPQA)</a>
-* <a href="#LCB">Coding LCB (Live Code Bench)</a>
+Language:
+* HELLASWAG (Harder Endings Longer context Low-shot Activities Situations With Adversarial Generations) to finish sentences
+* <a href="#MMLU">MMLU</a> (Massive Multitask Language Understanding) 15K questions
 * <a href="#Creative_Writing">Creative Writing</a>
+* <a href="#TRUTHFULQA">TRUTHFULQA</a> to test whether the LLM recognises 800 unhinged conspiracy theories as false
+
+General safety:
+* <a href="#IFEval">IFEval</a> (Instruction Following)
 * <a href="#Instruction_Following">Instruction Following</a>
-* <a href="#SWE">SWE-Bench benchmark</a>
+* <a href="#HarmBench">HarmBench</a> of prompts to jail-break out of content moderation controls by LLMs
+* Mind2Web and AITW benchmark of GUI screen object recognition to evaluate OMNIPARSER vs GPT-4V
+
+Science:
+* <a href="#MT-bench">MT-bench</a> as a judge of 160 questions in 8 categories of knowledge
+* <a href="#GPQA">Science (GPQA Diamond)</a>
+
+Reasoning:
+* ARC (AI2 Reasoning Challenge) from the Allen Institute for AI
+* ARC is "Abstraction and Reasoning Corpus". The best models solves 30% of the tasks.
+* AGIEval 5m58s
+
+Four Math benchmarks:
+* <a href="#MMMU">MMMU</a> (Massive Multitask Math Understanding) Visual Reasoning
+* <a href="#GSM8K">GSM8K</a> (Grade School Math 8K) word problems which take 2-8 steps to solve, from OpenAI
+* <a href="#Math500">Math 500</a> Math Problem Solving
+* <a href="#AIME">Math (AIME)</a> Math competition
+
+Coding:
+* WINOGRADE 44K
+* <a href="#LCB">Coding LCB (Live Code Bench)</a>
+* <a href="#SWE">SWE-Bench (Agentic SoftWare Engineering)</a>
+* <a href="#TAU">TAU-Bench (Task Analysis Unit)</a> to test agentic tool use
+* humaneval, humaneval+ and taco to cover the current programming benchmarks.
+
+https://www.youtube.com/watch?v=aOjgPJ94-aM
+Huggingface accelerate library to run 
+
 
 <hr />
 
@@ -277,3 +308,13 @@ https://www.youtube.com/watch?v=379s4W_EaTk
 https://www.youtube.com/watch?v=379s4W_EaTk&t=9m3s
 LLM Engineer's Handbook (from Packt)
 by Paul Lustzien, 
+
+OmniParser
+https://microsoft.github.io/OmniParser/
+
+https://www.youtube.com/watch?v=kkZ4-xY7oyU&t=2m11s
+PersonaQA for Hallucination Evaluation
+
+https://www.youtube.com/watch?v=WVhJSUtGbYM
+Best AI Coding IDE? I Tested 5, Winner Shocked Me!
+by Siraj Raval
