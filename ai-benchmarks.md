@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-01"
-lastchange: "v009 + from ai-evaluations.md :ai-benchmarks.md"
+date: "2025-03-02"
+lastchange: "v010 + AGIf :ai-benchmarks.md"
 file: "ai-benchmarks"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
@@ -24,16 +24,16 @@ General safety:
 * <a href="#HarmBench">HarmBench</a> of prompts to jail-break out of content moderation controls by LLMs
 * Mind2Web and AITW benchmark of GUI screen object recognition to evaluate OMNIPARSER vs GPT-4V
 
+Reasoning:
+* ARC (AI2 Reasoning Challenge) from the Allen Institute for AI
+* ARC is "Abstraction and Reasoning Corpus". The best models solves 30% of the tasks.
+
 Science:
 * <a href="#MT-bench">MT-bench</a> as a judge of 160 questions in 8 categories of knowledge
 * <a href="#GPQA">Science (GPQA Diamond)</a>
 
-Reasoning:
-* ARC (AI2 Reasoning Challenge) from the Allen Institute for AI
-* ARC is "Abstraction and Reasoning Corpus". The best models solves 30% of the tasks.
-* AGIEval 5m58s
-
-Four Math benchmarks:
+Math benchmarks:
+* <a href="#AGIEval">AGIEval</a> 5m58s - <a target="_blank" href="https://openreview.net/forum?id=fGfCsqVZ_hfq">ARVIX</a>: Available in English (AGIEval-en) and Chinese Gaokao (AGIEval-zh), a bilingual benchmark designed to use 20 official, public, and high-standard admission and qualification exams taken by humans around tasks relevant to human cognition and problem-solving.  law school admission (LSAT) tests, math competitions.
 * <a href="#MMMU">MMMU</a> (Massive Multitask Math Understanding) Visual Reasoning
 * <a href="#GSM8K">GSM8K</a> (Grade School Math 8K) word problems which take 2-8 steps to solve, from OpenAI
 * <a href="#Math500">Math 500</a> Math Problem Solving
@@ -43,8 +43,18 @@ Coding:
 * WINOGRADE 44K
 * <a href="#LCB">Coding LCB (Live Code Bench)</a>
 * <a href="#SWE">SWE-Bench (Agentic SoftWare Engineering)</a>
+   * SWE-bench Lite - curated to make evaluation less costly and more accessible
+   * SWE-bench Multimodal featuring issues with visual elements (images, videos) from JavaScript repositories
+   * <a target="_blank" href="https://openai.com/index/introducing-swe-bench-verified/">SWE-bench Verified</a> - a human annotator filtered subset that has been deemed to have a ceiling of 100% resolution rate
+
 * <a href="#TAU">TAU-Bench (Task Analysis Unit)</a> to test agentic tool use
 * humaneval, humaneval+ and taco to cover the current programming benchmarks.
+Download from HuggingFace the three variations:
+
+https://github.com/swe-bench/sb-cli/
+provides the CLI to run the benchmarks.
+
+The benchmark involves giving agents a code repository and issue description, and challenging them to generate a patch that resolves the problem described by the issue.
 
 https://www.youtube.com/watch?v=aOjgPJ94-aM
 Huggingface accelerate library to run 
@@ -93,11 +103,46 @@ Anthropic is also launching Claude Code, a tool that lets developers run AI-driv
 
 <hr />
 
-<a name="AIME"></a>
-
 ## Math
 
 There are several mathematics competitions: AIME, HMMT, Mandelbrot, ARML.
+
+<a name="AGIEval"></a>
+
+### AGIEval
+
+Introduced 16 Dec 2023 on <a target="_blank" href="https://openreview.net/forum?id=fGfCsqVZ_hfq">ARVIX</a> 
+(by <a target="_blank" href="https://www.linkedin.com/in/ruixiang-cui/">Ruixiang Cui</a> while working at Microsoft and during his PhD at the University of Copenhage)
+as "A Human-Centric Benchmark for Evaluating Foundation Models" for AGI (Artificial General Intelligence) development.
+   * 5m58s - 
+
+AGIEVal is called "human-centric" because its prompts are based on 20 exams: official, public, and high-standard admission and qualification exams taken by humans: SAT, law school admission (LSAT) tests, math competitions.
+
+As of March 2025, the v1.1 version of the <a target="_blank" href="https://github.com/ruixiangcui/AGIEval?tab=readme-ov-file#leaderboard">leaderboard for AGIEval</a> shows:
+
+   * A top score in the low 70% by GPT-4o means a low "pass" for humans?
+   * Providing examples (Few Shot and Few Shot-COT) improved accuracy by 3.1 points (AGIEval-en).
+   * The newer GPT-4o with reasoning capabilities improved accuracy over GPT-3.5 by an average of 1.2 points (AGIEval-en).
+   * Because AGIEval is uniquely bilingual, it provides insight on the "arms race" toward AGI development between the US and China. With Few-shot GPT-4o, the achievement of 71.9% puts the Chinese (AGIEval-zh) slightly ahead of the 71.4% (AGIEval-en) for English.
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740893682/ai-bench-agi-results-v1.1-png_q73hi9.png">
+<img alt="ai-bench-agi-results-v1.1-png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740893682/ai-bench-agi-results-v1.1-png_q73hi9.png" /></a>
+
+An example is https://github.com/ruixiangcui/AGIEval
+JSONL (JSON Lines) is a lightweight, text-based data format designed for storing structured data records, where each line in the file represents a valid JSON object. This format is particularly useful for handling large datasets efficiently, as it allows for line-by-line processing without requiring the entire file to be loaded into memory.
+
+Shown below: 
+https://github.com/ruixiangcui/AGIEval/blob/main/data/v1_1/math.jsonl
+
+```
+{"passage": null, "question": "Let $\\lambda$ be a constant, $0 \\le \\lambda \\le 4,$ and let $f : [0,1] \\to [0,1]$ be defined by\n\\[f(x) = \\lambda x(1 - x).\\]Find the values of $\\lambda,$ $0 \\le \\lambda \\le 4,$ for which there exists an $x \\in [0,1]$ such that $f(x) \\neq x$ but $f(f(x)) = x.$", "options": null, "label": null, "answer": "(3,4]", "other": {"solution": "We have that\n\\[f(f(x)) = f(\\lambda x(1 - x)) = \\lambda \\cdot \\lambda x(1 - x) (1 - \\lambda x(1 - x)),\\]so we want to solve $\\lambda \\cdot \\lambda x(1 - x) (1 - \\lambda x(1 - x)) = x.$\n\nNote that if $f(x) = x,$ then $f(f(x)) = f(x) = x,$ so any roots of $\\lambda x(1 - x) = x$ will also be roots of $\\lambda \\cdot \\lambda x(1 - x) (1 - \\lambda x(1 - x)) = x.$  Thus, we should expect $\\lambda x(1 - x) - x$ to be a factor of $\\lambda \\cdot \\lambda x(1 - x) (1 - \\lambda x(1 - x)) - x.$  Indeed,\n\\[\\lambda \\cdot \\lambda x(1 - x) (1 - \\lambda x(1 - x)) - x = (\\lambda x(1 - x) - x)(\\lambda^2 x^2 - (\\lambda^2 + \\lambda) x + \\lambda + 1).\\]The discriminant of $\\lambda^2 x^2 - (\\lambda^2 + \\lambda) x + \\lambda + 1$ is\n\\[(\\lambda^2 + \\lambda)^2 - 4 \\lambda^2 (\\lambda + 1) = \\lambda^4 - 2 \\lambda^3 - 3 \\lambda^2 = \\lambda^2 (\\lambda + 1)(\\lambda - 3).\\]This is nonnegative when $\\lambda = 0$ or $3 \\le \\lambda \\le 4.$\n\nIf $\\lambda = 0,$ then $f(x) = 0$ for all $x \\in [0,1].$\n\nIf $\\lambda = 3,$ then the equation $f(f(x)) = x$ becomes\n\\[(3x(1 - x) - x)(9x^2 - 12x + 4) = 0.\\]The roots of $9x^2 - 12x + 4 = 0$ are both $\\frac{2}{3},$ which satisfy $f(x) = x.$\n\nOn the other hand, for $\\lambda > 3,$ the roots of $\\lambda x(1 - x) = x$ are $x = 0$ and $x = \\frac{\\lambda - 1}{\\lambda}.$  Clearly $x = 0$ is not a root of $\\lambda^2 x^2 - (\\lambda^2 + \\lambda) x + \\lambda + 1 = 0.$  Also, if $x = \\frac{\\lambda - 1}{\\lambda},$ then\n\\[\\lambda^2 x^2 - (\\lambda^2 + \\lambda) x + \\lambda + 1 = \\lambda^2 \\left( \\frac{\\lambda - 1}{\\lambda} \\right)^2 - (\\lambda^2 + \\lambda) \\cdot \\frac{\\lambda - 1}{\\lambda} + \\lambda + 1 = 3 - \\lambda \\neq 0.\\]Furthermore, the product of the roots is $\\frac{\\lambda + 1}{\\lambda^2},$ which is positive, so either both roots are positive or both roots are negative.  Since the sum of the roots is $\\frac{\\lambda^2 + \\lambda}{\\lambda^2} > 0,$ both roots are positive.  Also,\n\\[\\frac{\\lambda^2 + \\lambda}{\\lambda} = 1 + \\frac{1}{\\lambda} < \\frac{4}{3},\\]so at least one root must be less than 1.\n\nTherefore, the set of $\\lambda$ that satisfy the given condition is $\\lambda \\in \\boxed{(3,4]}.$", "level": 5, "type": "Intermediate Algebra"}}
+```
+
+TODO: Utility to display jsonl files for human consumption.
+
+
+
+<a name="AIME"></a>
 
 ### AIME
 
