@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-03"
-lastchange: "v006 + Swift :python-coding.md"
+date: "2025-03-03"
+lastchange: "v007 + compilers :python-coding.md"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -2603,6 +2603,33 @@ def function(arg1, arg2):
         True
     """
     return True
+
+
+## Compilers
+
+   * <a target="_blank" href="https://codefinity.com/blog/Choosing-the-Best-Python-Compiler:-A-Comprehensive-Guide">https://codefinity.com/blog/Choosing-the-Best-Python-Compiler:-A-Comprehensive-Guide</a>
+
+   * <a target="_blank" href="https://blog.ionel-catalin.com/python-compilers/">https://blog.ionel-catalin.com/python-compilers/</a>
+
+1. CPython is the standard and most widely used implementation of the Python programming language. It is both an interpreter and a compiler, providing a solid balance between performance and ease of use. CPython translates Python code into bytecode before executing it, which allows for excellent integration with C extensions and libraries.
+
+1. Pyston is a fork of CPython, with additional optimizations primarily aimed at improving the performance of large applications. It uses JIT techniques similar to PyPy but focuses on maintaining maximal compatibility with CPython.
+
+1. Nuitka is a Python-to-C++ compiler that translates Python code into optimized C++ executables. It can significantly improve the performance of Python applications by generating faster code while maintaining compatibility with the vast majority of Python libraries.
+
+1. PyPy is renowned for its performance improvements over CPython, thanks to its Just-In-Time (JIT) compiler. It aims to execute Python code faster by dynamically compiling Python bytecodes to machine code at runtime. PyPy is particularly effective for long-running processes due to its optimization capabilities.
+
+1. Jython compiles Python code to Java bytecode, allowing Python programs to run on the Java Virtual Machine (JVM). This makes it a great choice for integrating Python with Java, accessing Java frameworks, and using Java libraries in Python programs.
+
+1. IronPython is tailored for compatibility with the .NET Framework, compiling Python code to .NET Common Intermediate Language (CIL). It enables developers to use Python scripts and libraries within the .NET framework and access .NET functionalities directly.
+
+1. MicroPython is designed for use in microcontrollers and in constrained environments. It implements a subset of Python standards and includes specific libraries to optimize Python code to run on hardware with limited resources like RAM and processing power.
+
+1. Brython (Browser Python) is an implementation of Python 3 for client-side web programming via a JavaScript framework. It allows Python code to run in browsers, utilizing web APIs as seamlessly as JavaScript.
+
+1. Stackless Python enhances Python with support for microthreads, allowing for concurrent programming without traditional thread-related overhead. It's particularly useful for applications requiring a large number of simultaneously active tasks, like game development or network servers.
+
+QUESTION: What coding style would take advantage of compilers or hinder their use?
 
 
 ## More about Python
