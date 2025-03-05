@@ -1,11 +1,11 @@
 ---
 layout: post
 url: https://bomonike.github.io/genai-ide
-date: "2025-02-04"
-lastchange: git commit -m"v003 + SWE-Bench :genai-ide.md"
+date: "2025-03-01"
+lastchange: "v004 + Criteria :genai-ide.md"
 file: "genai-ide"
 title: "genai-ide"
-excerpt: "Here are my notes about using GenAI to help with programming."
+excerpt: "Here is how to select and use GenAI to speed up your programming effectiveness."
 tags: [cloud, security, management, ai]
 comments: true
 created: "2025-01-25"
@@ -15,32 +15,11 @@ created: "2025-01-25"
 {% include l18n.html %}
 {% include _toc.html %}
 
-## SWE-Bench benchmark
-
-https://www.swebench.com/
-SWE-Bench (Software Engineering Benchmark) has been used as the way to compare how well LLM offerings tests systems' ability to automatically <strong>solve GitHub issues</strong> in a dataset containing 2,294 Issue-Pull Request pairs from 12 popular Python repositories:
-
-   * astropy (95)
-   * Django (850)
-   * Flask (11)
-   * matplotlib (184)
-   * pylint (57)
-   * pytest (119)
-   * requests (44)
-   * scikit-learn (229)
-   * seaborn (22)
-   * sphinx (187)
-   * sympy (386)
-   * xarray (110)
-
-The <a target="_blank" href="https://arxiv.org/abs/2310.06770" title="Is AI Replacing Software Engineering?">10 Oct 2023 Arxiv article</a> describes the unit test verification using post-PR behavior as the reference solution.
-
-   <ul>"Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks."</ul>
-
-Those working on it include  carlosej@princeton.edu and johnby@stanford.edu
+## IDEs
 
 Coding agents have made impressive progress on SWE-bench, with top scoring agents scoring 20% on SWE-bench and 43% on SWE-bench Lite according to the SWE-bench leaderboard⁠(opens in a new window) as of August 5, 2024. Advances on SWE-bench represent steps towards LMs that are more practical, intelligent, and autonomous. <a target="_blank" href="https://www.youtube.com/watch?v=pJ5dLwpG0_I">This VIDEO</a> from <a target="_blank" href="https://www.youtube.com/@Sourcegraph">@SourcegraphCody</a> introduced comparison of models that include:
 
+   * Bolt.New
    * Google Gemini
    * Devin
    * Anthropic Claude 3.5 Sonnet
@@ -48,17 +27,9 @@ Coding agents have made impressive progress on SWE-bench, with top scoring agent
    * SWE-Llama 113B
    * SWE-Llama 7B
    * OpenAI GPT-4
-
-Download from HuggingFace  the three variations:
-
-   * SWE-bench Lite - curated to make evaluation less costly and more accessible
-   * SWE-bench Multimodal featuring issues with visual elements (images, videos) from JavaScript repositories
-   * <a target="_blank" href="https://openai.com/index/introducing-swe-bench-verified/">SWE-bench Verified</a> - a human annotator filtered subset that has been deemed to have a ceiling of 100% resolution rate
-
-https://github.com/swe-bench/sb-cli/
-provides the CLI to run the benchmarks.
-
-The benchmark involves giving agents a code repository and issue description, and challenging them to generate a patch that resolves the problem described by the issue.
+   * Windsurf
+   * Cursor
+   
 
 <a target="_blank" href="https://www.youtube.com/watch?v=XaOqSAXNkaM">SourcegrphCody's context fetching:<br />
 <img alt="genai-cody-flow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738733609/genai-cody-flow_hipplt.png" /></a>
@@ -68,6 +39,7 @@ makes use of their <a target="_blank" href="https://sourcegraph.com/blog/anatomy
 
 
 https://medium.com/@anala007/hidden-dangers-of-using-cursor-ai-for-code-generation-what-every-developer-should-know-f4993c407b00
+
 
 ## What We Do (Tasks)
 
@@ -239,6 +211,43 @@ ccessibility, click the "+".
 1. User Guide at https://betterdictation.com/help
 
 1. With BetterDictation installed, press and hold <strong>Control+V</strong> (paste) to start listening.
+
+
+<a name="GoogleCodeAssist"></a>
+
+## Google Gemini Code Assist
+
+Google Code Assist <a target="_blank" href="[Giving Leadership Council](https://www.youtube.com/watch?v=fKtvRTFISq4)">VIDEO</a> was released on February 25, 2025. 
+It leverages Google’s Gemini 2.0 generative AI model to streamline software development.
+
+The tool is designed for students, hobbyists, freelancers, and startups, with a FREE plan with generous limits.
+
+Install Google Code Assist as an <trong>extension within VSCode IDE</strong> (like Cursor):
+
+1. Open the Visual Studio Code app  <a target="_blank" href="https://www.youtube.com/watch?v=fKtvRTFISq4&t=3m44s">VIDEO</a>
+1. Expose the Extensions (press Shift + Command + Xor select from the Activity Bar on the left).
+1. Type "Gemini Code Assist" in the Search box. 
+1. Click the stars to view comments by users.
+1. Click "Install" for "Google". "Trust Publiher & Install".
+1. 
+
+
+   References:
+   * https://developers.google.com/gemini-code-assist/docs/overview
+   * https://www.youtube.com/watch?v=fKtvRTFISq4 by Gary Explains (useful)
+   * https://www.youtube.com/watch?v=0BG_UBAlmdM
+   * https://www.youtube.com/watch?v=9LSovO2_gzY
+   * https://www.youtube.com/watch?v=W1JxFwh5EGA by WorldofAI 
+   * https://www.youtube.com/watch?v=LRE7_9CebGo by AICodeKing
+   * https://www.youtube.com/watch?v=WF2cdUlFS4U by Marketing Against the Grain
+   
+
+## Criteria
+
+Based on <a target="_blank" href="https://www.youtube.com/watch?v=WVhJSUtGbYM">VIDEO: Comparison by Siraj</a>:
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740891308/genai-ide-siraj_xhtwuj.png"><img alt="genai-ide-siraj.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740891308/genai-ide-siraj_xhtwuj.png" /></a>
+
+1. Speed
 
 
 <a name="Bolt"></a>
@@ -445,3 +454,7 @@ Claude 3.7 Sonnet
  simulate human reasoning
  Daniela Amodei
 President at Anthropic
+
+https://www.youtube.com/watch?v=gXAq-EXEgec
+ Groq on Generative AI: Challenges, Opportunities, and Solutions
+Groq

@@ -1,17 +1,16 @@
 ---
 layout: post
 date: "2025-02-20"
-lastchange: "v031 + HVNC :acronyms.md"
+lastchange: "v032 + rm flags :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
-excerpt: "It's often difficult to know the context of an acronym. So here, in one page, are all 900+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG!"
+excerpt: "Because it's often difficult to know the context of an acronym, here, in one page, are all 1,000+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG!"
 tags: [cloud, security, management, audit]
 comments: true
 created: "2024-12-28"
 ---
 <a target="_blank" href="https://bomonike.github.io/acronyms"><img align="right" width="100" height="100" alt="acronyms-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/acronyms-qr.png?raw=true" />
-{% include l18n.html %}
 <i>{{ page.excerpt }}</i>
 
 <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a>
@@ -1075,6 +1074,7 @@ created: "2024-12-28"
 *	RDP	=	Remote Desktop Protocol	(Microsoft technology for users to access a Windows computer remotely)
 *	RDS	=	Relational Database Service	(AWS cloud SQL service to host databases)
 *	REST	=	Representational State Transfer
+*	REEs = Rare Earths Elements (mining and processing, mostly in China, for minerals needed in modern electronics)
 *	RFI	=	Request for Information
 *	RFP	=	Request for Proposal
 *	RFQ	=	Request for Quote

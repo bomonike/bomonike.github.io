@@ -434,3 +434,7 @@ gigaML
 
 
 https://hbr.org/topic/subject/ai-and-machine-learning
+
+https://www.youtube.com/watch?v=ju9PmFl5L0c
+I tried 50+ Agent libraries, the only one I really needed is this
+BiasVsVariance

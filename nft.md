@@ -1091,3 +1091,9 @@ https://heymint.xyz/blog/join-the-crew-our-nft-founders-community-awaits-you
 
 https://nft-launchpad.heymint.xyz/?gad_source=5
 https://www.youtube.com/@heymintxyz
+
+https://www.youtube.com/watch?v=G0wdVjBY70Q
+"How To Create An Entire NFT Collection (10,000+) In Under 5 minutes Without Coding"
+by Autominter, a website for minting NFTs using a smart contract and a web3 wallet.
+generates png layers: background, body, hair, eyes, nose, mouth, and accessories.
+https://www.youtube.com/watch?v=k72aCI1VyKM

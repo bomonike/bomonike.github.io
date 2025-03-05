@@ -242,3 +242,12 @@ LONDON TRAVEL TIPS FOR FIRST TIMERS | 40+ Must-Knows Before Visiting London + Wh
 https://www.youtube.com/watch?v=njOwB9bKNq0
 14 HUGE mistakes tourists always make in London
 Claire's Footsteps (blue badge guide)
+
+https://www.youtube.com/watch?v=mn4aYZLQiHQ
+hidden gems of London
+
+https://www.youtube.com/watch?v=CZnuOIvT1LA
+Places Londoners don't want tourists to visit 
+
+https://www.youtube.com/watch?v=fI8ygOauNNA
+LONDON TRAVEL TIPS FOR FIRST TIMERS | 40+ Must-Knows Before Visiting London + What NOT to Do! by Happy to Wander (Travel Tips & Inspo)

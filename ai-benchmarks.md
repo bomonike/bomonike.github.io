@@ -30,7 +30,8 @@ Reasoning:
 
 Science:
 * <a href="#MT-bench">MT-bench</a> as a judge of 160 questions in 8 categories of knowledge
-* <a href="#GPQA">Science (GPQA Diamond)</a>
+* <a href="#GPQA">Science (GPQA Diamond)</a> of 198 questions
+
 
 Math benchmarks:
 * <a href="#AGIEval">AGIEval</a> 5m58s - <a target="_blank" href="https://openreview.net/forum?id=fGfCsqVZ_hfq">ARVIX</a>: Available in English (AGIEval-en) and Chinese Gaokao (AGIEval-zh), a bilingual benchmark designed to use 20 official, public, and high-standard admission and qualification exams taken by humans around tasks relevant to human cognition and problem-solving.  law school admission (LSAT) tests, math competitions.
@@ -107,6 +108,10 @@ Anthropic is also launching Claude Code, a tool that lets developers run AI-driv
 
 There are several mathematics competitions: AIME, HMMT, Mandelbrot, ARML.
 
+* <a target="_blank" href="https://www.montanamath.org/mctm-math-contest/math-contest">MCTM</a> (Montana Council of Teachers
+of Mathematics)
+
+
 <a name="AGIEval"></a>
 
 ### AGIEval
@@ -140,6 +145,8 @@ https://github.com/ruixiangcui/AGIEval/blob/main/data/v1_1/math.jsonl
 
 TODO: Utility to display jsonl files for human consumption.
 
+Upload a .json file and download it as .jsonl using online converters <a target="_blank" href="https://codebeautify.org/json-to-jsonl-converter">Code Beautify</a> 
+and <a target="_blank" href="https://konbert.com/convert/json/to/jsonl">Konbert.com</a> 
 
 
 <a name="AIME"></a>
@@ -202,9 +209,13 @@ Calculus is not required for most of the problems, but it may be needed to solve
 HMMT hosts staff exchange programs with the Princeton University Mathematics Competition (PUMaC), Carnegie Mellon Informatics and Mathematics Competition (CMIMC), and Stanford Math Tournament (SMT) to further collaboration between the competitions' organizers. During exchanges, participants ranging from first-year members to more senior officers spend the weekend proctoring, grading, and otherwise volunteering at the host competition day-of.
 
 
+<hr />
+
+## Science benchmarks
+
 <a name="GPQA"></a>
 
-## Science (GPQA)
+## GPQA
 
 GPQA (Google-Proof Q&A) is a challenging dataset of 448 multiple-choice questions written by domain experts in biology, physics, and chemistry.
 
@@ -216,7 +227,14 @@ https://arxiv.org/abs/2311.12022 says "We ensure that the questions are high-qua
 
 "The questions are also difficult for state-of-the-art AI systems, with our strongest GPT-4 based baseline achieving 39% accuracy. If we are to use future AI systems to help us answer very hard questions, for example, when developing new scientific knowledge, we need to develop scalable oversight methods that enable humans to supervise their outputs, which may be difficult even if the supervisors are themselves skilled and knowledgeable. The difficulty of GPQA both for skilled non-experts and frontier AI systems should enable realistic scalable oversight experiments, which we hope can help devise ways for human experts to reliably get truthful information from AI systems that surpass human capabilities.
 
+The GPQA Leaderboard at https://klu.ai/glossary/gpqa-eval
+
+The GPQA Dataset at 
 <a target="_blank" href="https://github.com/idavidrein/gpqa/">https://github.com/idavidrein/gpqa</a>
+was created by <a target="_blank" href="https://www.linkedin.com/in/idavidrein/">I. David Rein</a> 
+while he was a Researcher at New York University and now part of <a target="_blank" href="https://metr.org/blog/2025-01-17-ai-models-dangerous-before-public-deployment/">METR</a>
+FAR.AI
+
 
 https://sofworld.org/pattern-questions-and-marking-scheme
    * SOF ICSO - International Computer Science Olympiad
@@ -228,31 +246,19 @@ https://sofworld.org/pattern-questions-and-marking-scheme
    * SOF ISSO - International Social Studies Olympiad
    * SOF International Hindi Olympiad
 
+### GAIA
+
+GAIA: Real-World AI Assistant Assessment GAIA (General AI Assistant Benchmark) evaluates AI systems on practical, real-world tasks that encompass reasoning, multi-modal processing, web browsing, and tool utilization. Despite being conceptually simple for humans, who achieve 92% accuracy, GAIA poses significant challenges for AI, with GPT-4 (with plugins) scoring only 15%. This stark performance gap underscores GAIA's effectiveness in benchmarking AI systems' robustness and adaptability across diverse, everyday scenarios, emphasizing the need for AI to match or exceed average human performance on practical tasks.
+
+### BASIS
+
+BASIS: Frontier of Scientific AI Capabilities BASIS (Benchmark for Advanced Scientific Inquiry Systems) pushes the boundaries of AI evaluation in scientific domains, surpassing even GPQA in complexity. Tailored for assessing AI systems expected to perform at or beyond human expert level, BASIS focuses on tasks demanding advanced scientific inquiry and reasoning. This benchmark is crucial for developing and evaluating AI systems capable of contributing meaningfully to cutting-edge scientific research and problem-solving, potentially accelerating breakthroughs across various scientific disciplines.
+
+<hr />
 
 <a name="LCB"></a>
 
 ## Coding LCB (Live Code Bench)
-
-<a target="_blank" href="https://livecodebench.github.io/">https://livecodebench.github.io</a> says
-LCB (Live Code Bench) LiveCodeBench collects problems from periodic contests on
-* <a target="_blank" href="https://www.leetcode.com/">LeetCode</a>,
-* <a target="_blank" href="https://www.atcoder.com">AtCoder</a>, and
-* <a target="_blank" href="https://www.codeforces.com">Codeforces</a>. <a target="_blank" href="https://www.youtube.com/watch?v=K1p3-PP4Qv4&list=PLcXpkI9A-RZLUfBSNp-YQBCOezZKbDSgB">VIDEO</a>
-
-platforms and uses them for constructing a holistic benchmark for evaluating Code LLMs across variety of code-related scenarios continuously over time.
-
-   OpenAI o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
-
-LiveCodeBench.com publishes <a target="_blank" href="https://livecodebench.github.io/leaderboard.html">four Leaderboards</a>:
-For each leadershboard provides a time slider. As of this writing:
-   * 880 Code Generation
-   * 713 Self Repair
-   * 442 Test Output Prediction
-   * 479 Code Execution
-
-   * Not Kaggle competitions?
-
-Models submitted for evaluation are at https://github.com/LiveCodeBench/submissions
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-benchmarks-kimi_micquq.png"><img alt="ai-benchmarks-kimi.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-benchmarks-kimi_micquq.png?raw=true" /></a>
 
@@ -268,6 +274,29 @@ Models submitted for evaluation are at https://github.com/LiveCodeBench/submissi
    * Where is IBM WatsonX in this list?
 
 Over time, a larger fraction of difficult problems are introduced with model capability improvements. A drop in performance in the later months is expected.
+
+<a target="_blank" href="https://livecodebench.github.io/">https://livecodebench.github.io</a> says
+LCB (Live Code Bench) collects problems from periodic contests on
+* <a target="_blank" href="https://www.leetcode.com/">LeetCode</a>,
+* <a target="_blank" href="https://www.atcoder.com">AtCoder</a>, and
+* <a target="_blank" href="https://www.codeforces.com">Codeforces</a>. <a target="_blank" href="https://www.youtube.com/watch?v=K1p3-PP4Qv4&list=PLcXpkI9A-RZLUfBSNp-YQBCOezZKbDSgB">VIDEO</a>
+
+LLM platforms use them for constructing a holistic benchmark for evaluating Code LLMs across variety of code-related scenarios continuously over time.
+
+livecodebench is run by <a target="_blank" href="https://www.linkedin.com/in/kingh0730/">Shangdian (King) Han</a> living in Berkeley, California. Previously Microsoft Research.
+
+   OpenAI o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
+
+LiveCodeBench.com publishes <a target="_blank" href="https://livecodebench.github.io/leaderboard.html">four Leaderboards</a>:
+For each leadershboard provides a time slider. As of this writing:
+   * 880 Code Generation
+   * 713 Self Repair
+   * 442 Test Output Prediction
+   * 479 Code Execution
+
+   * Not Kaggle competitions?
+
+Models submitted for evaluation are at https://github.com/LiveCodeBench/submissions
 
 For a more nuanced evaluation of LLM performance across different difficulty levels,<br />
 "Pass@1" measures the percentage of problems a model can solve correctly on its <strong>first attempt</strong> across all difficulty levels.<br />
@@ -360,6 +389,12 @@ https://microsoft.github.io/OmniParser/
 https://www.youtube.com/watch?v=kkZ4-xY7oyU&t=2m11s
 PersonaQA for Hallucination Evaluation
 
-https://www.youtube.com/watch?v=WVhJSUtGbYM
-Best AI Coding IDE? I Tested 5, Winner Shocked Me!
-by Siraj Raval
+<hr />
+
+<a name="Translations"></a>
+
+## Language Translations
+
+COMET, BLEU, and CHRF are widely used metrics for evaluating machine translation (MT) quality.
+
+

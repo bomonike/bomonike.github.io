@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-28"
-lastchange: "v010 + apps nks :ai-glossary.md"
+date: "2025-03-04"
+lastchange: "v011 + CoT :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -51,8 +51,9 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * Chatbot | A computer program that simulates a human conversation with an end user. Though not all chatbots are equipped with artificial intelligence (AI), modern chatbots increasingly use conversational AI techniques like natural language processing (NLP) to make sense of the user's questions and automate their responses.
 * ChatGPT | A chatbot build developed by OpenAI that uses large language models (LLMs) to enable users to interact and get desired responses.
-* CodeT5 | A text-to-code seq2seq model developed by Google AI trained on a large data set of text and code. CodeT5 is the first pre-trained programming language model that is code-aware and encoder-decoder based.
+* CodeT5 | A text-to-code seq2seq model developed by Google AI, trained on a large data set of text and code. CodeT5 is the first pre-trained programming language model that is code-aware and encoder-decoder based.
 * Cascading Style Sheets (CSS) | A computer language to lay out and structure web pages using codes.
+* CoT = Chain-of-Thought | A technique in AI, a form of reasoning, that involves breaking down a problem into smaller, more manageable parts, and then using these parts to solve the problem.
 * CUA = Computer Using Agent | OpenAI's <a target="_blank" href="https://www.youtube.com/watch?v=9oED8PXJuKg"><em>working</em></a> AI agent <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">Operator</a> controlling your computer
 * CUDA = Compute Unified Device Architecture | A parallel computing platform & API developed by NVIDIA.
 
@@ -95,6 +96,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * Quantization | the process of mapping continuous signals into discrete digital values. Used in digital signal processing, data compression, and machine learning.
 * RAG = Retrieval-Augmented Generation | An AI framework designed to retrieve facts from an external knowledge base to ground large language models (LLMs) that provide information on the latest research, statistics, or news to generative models.
+* RLVR = Reinforcement Learning with Verifiable Rewards | reinforcement learning framework used by Tulu LLMs that builds upon supervised finetuning (SFT) by using simple functions to provide a deterministic correctness criteria binary ground truth signal to indicate whether a model's output meets a predefined correctness criterion. This allows subject matter experts to establish clear correctness criteria without deep machine learning expertise.
 
 * Sequence to sequence models | A model type that uses both encoders and decoders. ???
 * Sentiment analysis | A process of analyzing digital text to determine the emotional tone of a message. Performed on textual data, helping businesses monitor brands through customer feedback.
