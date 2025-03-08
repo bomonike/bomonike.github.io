@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/prompt-engineering
-date: "2025-02-10"
-lastchange: "v003 + fix td :prompt-engineering.md"
+date: "2025-03-07"
+lastchange: "v004 + fix td :prompt-engineering.md"
 file: "prompt-engineering"
 title: "Prompt-Engineering"
 excerpt: "Even your AI prompts can be done better with AI with Declarative Self-improving Python (DPSy)."
@@ -45,6 +45,12 @@ present their <a target="_blank" href="https://www.coursera.org/learn/google-pro
 The first memonic is from Tina Huang's <a target="_blank" href="https://www.youtube.com/watch?v=p09yRj47kNM">"Google's 9 Hour AI Prompt Engineering Course In 20 Minutes"<br />
 <img alt="prompt-memonic-tina.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739297851/prompt-memonic-tina_wsk7hi.png"></a>
 
+## Tutorials
+
+Tutorials FREE on Infosys Springboard Digital Academy:
+<a target="_blank" href="https://infyspringboard.us.onwingspan.com/web/en/app/toc/lex_auth_013719953643773952304_shared/overview">
+7h28m "Prompt Engineering"</a>
+This text-based course intends to teach learners the best practices of Prompt Design to extract more relevant and useful output from Large Language Models such as OpenAI GPT-3 /chatGPT, etc.   
 
 
 <a name="Promptmetheus"></a>

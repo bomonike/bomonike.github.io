@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-11"
-lastchange: "v010 + non-repetitive :singularity.md"
+date: "2025-03-05"
+lastchange: "v011 + books :singularity.md"
 file: "singularity"
 title: "Singularity"
 excerpt: "What can you do to survive or even thrive when AGI (Artificial General Intelligence) and humanoid robots usher in the Age of Technical Singularity?"
@@ -388,3 +388,27 @@ https://www.linkedin.com/pulse/how-teach-ai-ten-year-old-help-chatgpt-part-three
 
 https://www.thirdway.org/report/dancing-with-robots-human-skills-for-computerized-work
 July 17, 2013
+
+## Books
+
+What a world dominated by superintelligent AI might look like:
+
+* <a target="_blank" href="https://www.blinkist.com/en/books/superintelligence-en">BLINKLIST</a>: Superintelligence by Nick Bostrom, Oxford philosopher
+
+* <a target="_blank" href="https://www.blinkist.com/en/books/life-3-dot-0-en">BLINKLIST</a>: Life 3.0 by by Max Tegmark, MIT cosmologist
+
+* <a target="_blank" href="https://www.blinkist.com/en/books/human-compatible-en">BLINKLIST</a>: Human Compatible by Stuart Russell - explores the challenge of developing artificial intelligence systems aligned with human values and interests.
+
+   1. We need several breakthroughs in software before AI surpasses human intelligence.
+
+   2. We’ve been operating under a misguided conception of intelligence.
+
+   3. Instead of just intelligent machines, we should be designing beneficial machines.
+
+   4. We can expect AI to benefit us in many ways.
+
+   5. AI is going to make life less secure for everyone.
+
+   6. Mass automation will either liberate humanity’s potential or debilitate it.
+
+* <a target="_blank" href="https://www.blinkist.com/en/books/the-master-algorithm-en">BLINKLIST</a>: The Master Algorithm by Pedro Domingos, machine learning researcher

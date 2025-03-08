@@ -12,6 +12,9 @@ created: "2024-12-28"
 <a target="_blank" href="https://bomonike.github.io/ai-benchmarks"><img align="right" width="100" height="100" alt="ai-benchmarks.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-benchmarks.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 
+<a target="_blank" href="https://betterbench.stanford.edu/">https://betterbench.stanford.edu</a>
+is a repository of AI benchmark assessments for informed benchmark selection through quality evaluation and best practice analysis.
+
 Language:
 * HELLASWAG (Harder Endings Longer context Low-shot Activities Situations With Adversarial Generations) to finish sentences
 * <a href="#MMLU">MMLU</a> (Massive Multitask Language Understanding) 15K questions
@@ -85,11 +88,11 @@ When xAI unveiled its Grok-3 LLM on Feb 18, 2025, one analysis shows it ranking 
 
 This table compares specific scores on specific benchmarks:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-benchmarks-grok3_qs2uj2.png"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-benchmarks-grok3_qs2uj2.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png"><img alt="ai-evaluations-grok3.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png" /></a>
 
 That resulted in some crying that xAI neglected to include in the comparison results of OpenAI's o3 December results:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-benchmarks-o3-dec_nij82u.png"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-benchmarks-o3-dec_nij82u.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png"><img alt="ai-evaluations-o3-dec.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png" /></a>
 
 ### Claude 3.7 Sonnet
 
@@ -279,11 +282,20 @@ Over time, a larger fraction of difficult problems are introduced with model cap
 LCB (Live Code Bench) collects problems from periodic contests on
 * <a target="_blank" href="https://www.leetcode.com/">LeetCode</a>,
 * <a target="_blank" href="https://www.atcoder.com">AtCoder</a>, and
-* <a target="_blank" href="https://www.codeforces.com">Codeforces</a>. <a target="_blank" href="https://www.youtube.com/watch?v=K1p3-PP4Qv4&list=PLcXpkI9A-RZLUfBSNp-YQBCOezZKbDSgB">VIDEO</a>
+* <a target="_blank" href="https://www.codeforces.com">Codeforces</a> (ELO). <a target="_blank" href="https://www.youtube.com/watch?v=K1p3-PP4Qv4&list=PLcXpkI9A-RZLUfBSNp-YQBCOezZKbDSgB">VIDEO</a>
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=7LTks_tOosk">VIDEO</a>:
+   Build a game usong ChatGPT 03 Mini
+   O3-mini achieved a perfect 10/10 on pylint for a Hangman game project.
+
+
+
 
 LLM platforms use them for constructing a holistic benchmark for evaluating Code LLMs across variety of code-related scenarios continuously over time.
 
-livecodebench is run by <a target="_blank" href="https://www.linkedin.com/in/kingh0730/">Shangdian (King) Han</a> living in Berkeley, California. Previously Microsoft Research.
+The livecodebench runner is <a target="_blank" href="">Naman Jain</a> CS Ph.D. Berkeley.
+
+<a target="_blank" href="https://www.linkedin.com/in/kingh0730/">Shangdian (King) Han</a> living in Berkeley, California. Previously Microsoft Research.
 
    OpenAI o3 scored among the top 10 contestants in <a target="_blank" href="https://codeforces.com">Codeforces.com</a> competitive programming solving complex problems under time constraints (2.5 hours).
 
@@ -396,5 +408,26 @@ PersonaQA for Hallucination Evaluation
 ## Language Translations
 
 COMET, BLEU, and CHRF are widely used metrics for evaluating machine translation (MT) quality.
+
+https://www.perplexity.ai/search/what-is-the-comet-score-for-tr-9RkzS6rsRr6R9oyBwYZvag
+
+
+<hr />
+
+<a name="Evaluation"></a>
+
+## Evaluation Quality Metrics
+
+It depends on what you are trying to achieve.
+
+* Classification tasks are measured using the "Accuracy" metric.
+* Regression tasks are measured using mean squared error (MSE).
+* Generation tasks are measured using mean squared error (MSE).
+
+* Task allocation tasks are measured using the F1 score.
+* Text summarization tasks are measured using the ROUGE score.
+* Question answering tasks are measured using the BLEU score.
+
+<a href="https://bomonike.github.io/ai-benchmarks">https://bomonike.github.io/ai-benchmarks</a>
 
 

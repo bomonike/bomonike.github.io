@@ -91,8 +91,17 @@ https://www.linkedin.com/pulse/what-using-genai-taught-me-managing-people-wilson
 
 https://checksum.ai/blog/the-engineering-of-an-llm-agent-system
 
-dair-ai/Prompt-Engineering-Guide)
+https://dair-ai/Prompt-Engineering-Guide)
 aggregated lists (e.g. f/awesome-chatgpt-prompts)
+
+### Biases
+
+"Ground truth" is established by so many examples that the model is stuck with biases.
+OpenAI cannot generate analog watch hands with positions other than 10 after 10 because most pictures of watch hands are 10 after 10 because that's what photographers find as the most attractive position to photograph watches.
+<a target="_blank" href="https://youtube.com/shorts/BPbAJzAL7gw?si=f8C8K0YHjgj5he3b">VIDEO</a>
+<ul>
+<li>Draw a person writing using his left hand.</li>
+</ul>
 
 <hr />
 
@@ -169,7 +178,7 @@ It depends on what you are trying to achieve.
 * Text summarization tasks are measured using the ROUGE score.
 * Question answering tasks are measured using the BLEU score.
 
-<a href="https://bomonike.github.io/ai-evaluations">https://bomonike.github.io/ai-evaluations</a>
+<a href="https://bomonike.github.io/ai-benchmarks">https://bomonike.github.io/ai-benchmarks</a>
 
 
 ## Benchmarks

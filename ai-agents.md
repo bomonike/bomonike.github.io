@@ -11,7 +11,8 @@ comments: true
 ---
 <a target="_blank" href="https://bomonike.github.io/ai-agents"><img align="right" width="100" height="100" alt="ai-agents.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-agents.png?raw=true" />
 
-There are several levels of automation:
+
+## Levels of automation:
 
 * <strong>"Workflow Automation"</strong> follow a set sequence of tasks and tools are "programmatic" and not true AI agents.
 
@@ -19,16 +20,16 @@ There are several levels of automation:
 
 * <strong>True "AI Agents"</strong>  are NOT bound to pre-defined tasks in a workflow. They act <strong>autonomously</strong>, as a team of agents,able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions. Modern AI Agents <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas#related-3">reason</a> through steps.
 
+* <strong>AI Assistants</strong>
+   <a target="_blank" href="https://www.youtube.com/watch?v=ASABxNenD_U">VIDEO: The 10 Trillion Parameter AI Model With 300 IQ</a>
+
 * <strong>Vertical AI agents</strong> are tailored to address unique challenges and streamline processes within designated sectors such as healthcare, finance, or customer support. Vertical AI agents could be <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas">10X bigger than SAAS</a> repleaes entire teams and organizationa -- a fundamentally new paradigm. 
 https://www.rippling.com/ works on verticals.
 Increase savings, automate busy work, and make better decisions by managing payroll, HR, IT & spend in one place.
 
-* "AI Assistants"
-* https://www.youtube.com/watch?v=ASABxNenD_U">The 10 Trillion Parameter AI Model With 300 IQ</a>
-<a target="_blank" href="https://youtu.be/ASABxNenD_U">The 10 Trillion Parameter AI Model With 300 IQ</a>
 
 
-## Tasks
+## Calendar Task Apps
 
 ADM (Automated Decision Making)
 
@@ -36,7 +37,7 @@ DEFINITION: Tasks https://practicallyintelligent.com/
 
 * Scrape websites for data
 
-* Combine calendar, tasks, and scheduling links. Motion (https://www.usemotion.com/) is an AI-powered task management app automatically reschedule tasks based on your progress and any changes during the day. It's by Jacob Zeng. For $34/month, ensure you meet deadlines, Motion reschedules undone work.  Quick access to calendar (OPT + C), meeting scheduler (OPT + A), and task addition (OPT + SPACE) improves efficiency.
+* Motion (https://www.usemotion.com/) is an app that combines calendar, tasks, and scheduling links as an AI-powered task management app automatically reschedule tasks based on your progress and any changes during the day. It's by Jacob Zeng. For $34/month, ensure you meet deadlines, Motion reschedules undone work. Quick access to calendar (OPT + C), meeting scheduler (OPT + A), and task addition (OPT + SPACE) improves efficiency.
 
    * https://www.youtube.com/watch?v=no2l-Ob1Eq4&t=9s How to use Motion
    * https://www.fahimai.com/motion-ai
@@ -54,7 +55,10 @@ DEFINITION: Tasks https://practicallyintelligent.com/
 
 * Fantastical: A popular calendar app with powerful features for scheduling and managing your time. Fantastical offers a beautiful interface and seamless integration with Apple devices.
 
-See https://www.meetjamie.ai/blog/ai-scheduling-assistant
+   See https://www.meetjamie.ai/blog/ai-scheduling-assistant
+
+* Manus was introduced by Monica, a startup in China, on March 5, 2025 as an invitation-only web preview. The demo video quickly gaining over 200,000 views online. Manus is an AI agent able to handle complex real-world tasks autonomously. It can independently think, plan, and execute tasks such as creating websites, planning itineraries, and analyzing stocks, continuing to work even when users disconnect their devices. Monica claims that Manus outperforms other AI models based on the GAIA benchmark, showcasing its unique cloud-based functionality and adaptability to user preferences.
+
 
 ## Benefits
 

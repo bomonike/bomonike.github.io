@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-04"
-lastchange: "v011 + CoT :ai-glossary.md"
+date: "2025-03-07"
+lastchange: "v012 + SLAM :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -24,8 +24,8 @@ created: "2021-08-24"
 
 The 10 stages of AI capabilities: <a target="_blank" href="https://www.youtube.com/watch?v=AK5EwG62hx8">VIDEO</a>:
 
-   1. Rule/Knowledge-based systems (pre-programmed, not from data)
-   2. Content-based and Retention systems (adapts: learns from data: RNN, LSTM, etc.)
+   1. Programmatic (such as code in Python, Java, C#, programs) referencing <strong>rules</strong> (even dynamic rules)
+   2. <strong>Discriminative Intelligence</strong> that discriminates between win/loss, faulty/non-faulty, herb/tree, living/non-living, etc. Such AI systems also perform tasks like classification, clustering, and regression analysis. Created by "content-based and Retention" systems (adapts: learns from data: RNN, LSTM, etc.).
 
    3. Narrow domain or Expert AI systems (on specific tasks: Watson, DeepMind, AlphaGo)
    4. Reasoning AI systems (simulates human reasoning on self-driving cars)
@@ -42,10 +42,9 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 ## Glossary
 
-* Machine Learning (ML) | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
-
 * Application Programming Interface (API) | facilitates communication across applications. APIs help to extract and share data using a set of definitions and protocols.
 * AIMS (Artificial Intelligence Management System) | defined byhttps://www.iso.org/standard/81230.html $311 ISO/IEC Standard 42001:2023
+
 * Bootstrapping Language-Image Pre-training (BLIP) | An AI-based model, used to perform multi-modal tasks like visual question answering, image-text retrieval, and image captioning. It is a pre-training framework for unified vision-language understanding and generation.
 * BlenderBot | An AI-based chatbot that can converse naturally with people and takes direct feedback to improve its responses.
 
@@ -77,13 +76,17 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * IBM Watson | An integrated AI and data platform with a set of AI assistants designed to scale and accelerate the impact of AI with trusted data across businesses.
 * IBM Cloud Code Engine | A fully managed, serverless platform that is used to manage and secure the underlying infrastructure of codes, container images, and batch jobs.
-
+* JEPA = Joint Embedding Predicting Architecture | A macro architecture alternative instead of  GPTs predicting next-word. It arranges modules running Transformers and other AI modules <a target="_blank" href="https://www.youtube.com/watch?v=RUnFgu8kH-4&t=45m9s">*</a>
 * LLM = Large language model | A deep learning model trained on substantial text data to learn the patterns and structures of language. They can perform language-related tasks, including text generation, translation, summarization, sentiment analysis, and more.
 * Llama | A large language model from Meta AI.
 * LlamaIndex | A flexible data framework to connect custom data sources to large language models using a central interface.
 * LangChain | A framework designed to simplify the creation of applications using LLMs that help in document analysis, document summarization, chatbot building, and code analysis.
 * Lemmatization | The process of reducing words to their root form.
+* LIME = Local Interpretable Model Agnostic Explanation | A metric to explain predictions by approximating the model in a local manner. A service provided by Amazon SageMaker Model Monitor.
 * LPU = Language Processing Unit | an application-specific integrated circuit (ASIC) from groq.com for high-performance inference efficiency of AI workloads using large language models (LLMs).
+
+* Machine Learning (ML) | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
+
 * NLP = Natural Language Processing | A subset of artificial intelligence that enables computers to understand, manipulate, and generate human language (natural language).
 * NER = Named-Entity Recognition | A subtask of information extraction that helps to locate and classify named entities like first and last names, geographic location, age, address, and phone number in unstructured data sources.
 
@@ -101,9 +104,8 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Sequence to sequence models | A model type that uses both encoders and decoders. ???
 * Sentiment analysis | A process of analyzing digital text to determine the emotional tone of a message. Performed on textual data, helping businesses monitor brands through customer feedback.
 * SHAP = Shapely Additive Explanations | A feature contribution to individual predictions. A service provided by Amazon SageMaker Model Monitor.
+* SLAM = Simultaneous Localization And Mapping | A process of simultaneously determining a robot's location and mapping its environment, performed locally by a robot.
 * Streamlit | An open-source framework to build and share machine learning and data science web apps. It turns data scripts into shareable web apps in minutes.
-
-* LIME (Local Interpretable Model Agnostic Explanation) | A metric to explain predictions by approximating the model in a local manner. A service provided by Amazon SageMaker Model Monitor.
 
 * TensorFlow <a target="_blank" href="https://www.nvidia.com/en-us/glossary/tensorflow/">*</a> | A leading open-source library from Google for developing and deploying machine learning applications. It makes use of GPUs for parallel matrix operations for algebraic calculations.
 * Tokenizer | A tokenizer is a tool in natural language processing that breaks down text into smaller, manageable units (tokens), such as words or phrases, enabling models to analyze and understand the text.

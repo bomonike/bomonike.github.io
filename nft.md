@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-02-28"
-lastchange: "v011 + bitcoin ETFs :nft.md"
+date: "2025-03-07"
+lastchange: "v011 + infosys tutorial :nft.md"
 file: "nft"
 title: "nft"
 excerpt: "Non-Fungible Tokens (NFTs) use unalterable blockchains, crypto currency wallets, and smart contracts (all web3 tech) to prove provenance and thus make it safer to buy & sell digital media in a distributed ecosystem not centrally controlled by billionaires."
@@ -17,32 +17,16 @@ comments: true
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
-The NFT (Non-Fungible Token) ecosystem was created because copies of digital media can be easily duplicated.
-
-"Digital media" file formats include music audio (mp3), video (mp4), or images (GIF/PNG/JPEG).
-NFTs can be artwork, collectibles, virtual real estate, or any media file.
-<a target="_blank" href="https://magiceden.us/collections/polygon/0x251be3a17af4892035c37ebf5890f4a4d889dcad">
-Courtyard.io</a> sells paper trading cards.
-
-However, NFTs enable a person to assert ownership that can be verified by others.
-Each NFT is a unique digital identifier enshrined in a chain of cryptographic hashes within a blockchain.
-So an NFT can be owned only by one party at a time.
-NFTs enable an image to be verified as the authentic creation of an artist.
-
-NFTs provides a way of establishing the <strong>provenance</strong> of a digital piece of art --
-providing documentation which indelibly authenticates the creator, ownership history, and
-appraisal value of a specific piece of art.
-
-* DAO = Decentralized Autonomous Organization | A group of people working together to achieve a common goal without the need for a central authority.
-
 
 ## Glossary of Terms
 
 * Bitcoin: Cryptocurrency that runs on blockchain.
 * Blockchain: A decentralized distributed ledger that allows peer-to-peer (p2p) transactions secured by cryptographic algorithms and consensus mechanisms.
+
 * Consensus mechanism: A way to ensure that the transaction is valid without the need for a central authority, and that there is no double-spending.
 * Cryptocurrency: A digital token exchanged on blockchain using cryptographic algorithms to secure the p2p transaction.
 
+* DAO = Decentralized Autonomous Organization | A group of people working together to achieve a common goal without the need for a central authority.
 * DeFi = decentralized finance
 * DEX = Decentralized Exchange
 * Double-spending: The possibility for one party to 'copy-and-paste' and 're-use' an electronic transaction (e.g., payment).
@@ -63,19 +47,70 @@ appraisal value of a specific piece of art.
 * Valid transaction: Parties are certain that the exchange has happened and cannot be neglected.
 
 
-## Starting from Bitcoin
+## Blockchains
 
-Traditional payment infrastructure falls short:
+Blockchain is the revolutionary force behind transactional technologies like Bitcoin. Devised in 1990 by Haber and Sotrnetta. Merkle trees was added (with Bayer) in 1992.
+First implemented in 2008 as a "chain of blocks" linked by a crypographic hash of contents in each node.
+The cryptography used is "SHA-256" and RIPEMD". The hash also contains a timestamp. All that makes blocks unique. Contain the hash of the previous block in each hash creates an immutable linkage among nodes in the block of nodes, called a ledger. Duplicates of the decentralized blockchain by each user are checked using a consensus algorithm, which makes the contents of a blockchain very difficult to alter.
+
+That makes blockchains useful to provide a chain of transaction and asset custody and proof of ownership (provenance) in NFTs. Thus, blockchains mitigate fraud.
+
+### Starting from Bitcoin
+
+Cryptocurrencies make use of blockchains to store digital assets.
+
+Hundreds of cryptocurrencies have been created, including Bitcoin, Ethereum, Ripple, Litecoin, Dogecoin, Tether, Chainlink, Binance, Tether, Primecoin, Peercoin, Litecoin, EOS.IO, Zcash, etc. "Meme coins" have also been created.
+
+The first cryptocurrency, Bitcoin (traded using symbol "BTC") was described in a technical paper by "Satoshi Nakamoto" who remains unknown. The first version of Bitcoin was implemented in 2009. In 2017, Bitcoin grew to 100GB.
+
+Use of blockchains provides privacy.
+Ownership is proven by possession of the private key used to generate a Bitcoin address. However, the owner of a blockchain asset is not recorded within the blockchain, which makes Bitcoin ownership seem anonymous. However, use of Bitcoin for ransomware forced the FBI to figure out how to reverse engineer the private keys that allow a person to control a Bitcoin address.
+
+Unlike real minerals, "mining" Bitcoins does not remove bitcoins but create them.
+To mine (create) each BTC transaction costs $0.20 (20 cents) and takes 10 minutes (at the rate of 7 per second).
+In 20218, the cost of mining a whole block was around 4-5 BTF ($531 - $26,170). 
+
+The advantage of blockchain ecommerce is where traditional payment infrastructure falls short:
 
    * Credit cards charge fees of 2-3% on every transaction
    * Settlement takes days
    * Anti-fraud systems (such as CAPTCHA and 2FA) were built to require human intervention to prevent fraud, thus not facilitate automated autonomous payments by agents instead of people
 
+There are private blockchains where only authorized users have access. They include:
+
+   * Eris, a fork of the Ethereum blockchain
+   * <a href="#MultiChain">MultiChain</a>, a fork of Bitcoin
+   * Open Chain for enterprises (not strickly a blockchain)
+
+Smart contracts are programs written in a programming language that allow users to execute transactions on a blockchain. 
+
+## Tutorials
+
+HackerNoon: Learn Blockchains by Building One references https://GitHub.com/dvf/blockchain
+
+Tutorials FREE on Infosys Springboard Digital Academy:
+
+<a target="_blank" href="https://infyspringboard.us.onwingspan.com/web/en/app/toc/lex_auth_01378251278197555244/overview">
+Blockchains</a>  by Jamie Campbell of CodeCademy
+
+   * Exploring Blockchain 29m 31s
+   * Blockchain in Action & IoT 33m 41s
+   * Trust & Design 33m 24s
+   * Developing with Blockchain 35m 24s
+   * Transforming Your Business 25m 58s
+
+<a target="_blank" href="https://infyspringboard.us.onwingspan.com/web/en/app/toc/lex_auth_0136753943054581765365/overview">
+1h20m Cloud Blockchains: An Introduction to Blockchain on the Cloud</a>
+by Kishan Iyer
+
+
 ### Bitcoin ETFs
 
-It is no secret that Bitcoin's (BTC) price has experienced significant fluctuations since its inception in 2009. Each price movement is influenced by a complex interplay of technological advancements, regulatory changes, market sentiment (speculation), and macroeconomic factors. Bitcoin faced regulatory pressure, collapse of major crypto firms, which further rattled investor confidence, and rising interest rates (2021-2023). <a target="_blank" href="https://www.kraken.com/learn/what-is-bitcoin-etf">Bitcoin ETFs</a> debut (2024) led to renewed interest and price rise.
+Bitcoin's (BTC) price has experienced significant fluctuations since its "Day 1" inception on January 3, 2009. Each price movement is influenced by a complex interplay of technological advancements, regulatory changes, market sentiment (speculation), and macroeconomic factors. Bitcoin faced regulatory pressure, collapse of major crypto firms, which further rattled investor confidence, and rising interest rates (2021-2023). <a target="_blank" href="https://www.kraken.com/learn/what-is-bitcoin-etf">Bitcoin ETFs</a> debut (2024) led to renewed interest and price rise.
 
-After the election of Trump, on January 10, 2024, Gary Gensler, the Chair of the United States Securities and Exchange Comission (SEC), issued a Statement on the Approval of Spot Bitcoin Exchange-Traded Products. After rejecting more than 20 applications between 2018 and 2024, the SEC approved trading for a spot Bitcoin ETF in the United States.
+When 51% of all nodes agree that a new transaction should be added, needed "consensus" is declared to allow the blockchain to be updated with the new node. However, it's been postulated that a blockchain network could be attacked by bots holding a 51% majority, which allow the blockchain to be taken over by bad actors.
+
+After the election of Trump, on January 10, 2024, Gary Gensler, the Chair of the United States Securities and Exchange Comission (SEC) of the previous Biden administration, issued a Statement on the Approval of Spot Bitcoin Exchange-Traded Products. After rejecting more than 20 applications between 2018 and 2024, the SEC approved trading for a spot Bitcoin ETF in the United States.
 Lawsuits against Robinhood, Opensea, and other crypto firms were dropped.
 
 Globally, the three types of Bitcoin ETF available are:
@@ -96,6 +131,26 @@ Bitcoin ETF Providers, data from FactSet:
 These funds benchmark and strike the Net Asset Value (NAV) of the ETFs to the Bitcoin Reference Rate - New York Variant (BRRNY) provided by CF Benchmarks - a Kraken company.
 
 https://www.moontechnolabs.com/portfolio/smart-iot-farming-app
+
+
+
+The NFT (Non-Fungible Token) ecosystem was created because copies of digital media can be easily duplicated.
+
+"Digital media" file formats include music audio (mp3), video (mp4), or images (GIF/PNG/JPEG).
+NFTs can be artwork, collectibles, virtual real estate, or any media file.
+<a target="_blank" href="https://magiceden.us/collections/polygon/0x251be3a17af4892035c37ebf5890f4a4d889dcad">
+Courtyard.io</a> sells paper trading cards.
+
+However, NFTs enable a person to assert ownership that can be verified by others.
+Each NFT is a unique digital identifier enshrined in a chain of cryptographic hashes within a blockchain.
+So an NFT can be owned only by one party at a time.
+NFTs enable an image to be verified as the authentic creation of an artist.
+
+NFTs provides a way of establishing the <strong>provenance</strong> of a digital piece of art --
+providing documentation which indelibly authenticates the creator, ownership history, and
+appraisal value of a specific piece of art.
+
+
 
 ## The first NFT trades ever
 
@@ -224,9 +279,37 @@ Coinbase: Fees range from 0% to 4%, varying by transaction type2.
 Among these options, Strike and Kraken Pro appear to offer the lowest fees for buying crypto from USD. However, it's important to consider other factors such as security, available cryptocurrencies, and user experience when choosing an exchange3.
 
 
+## Blockchain Development platforms
+
+https://www.ripple.com/ripple-foundation/ripple-foundation-website.html
+
+Hyperledger Fabric
+
+Solidity
+   * https://solidity.readthedocs.io/
+   * https://soliditylang.org/
+
+Java
+   * Kass on the Programmers Blockchain channel at Medium: https://kass.medium.com/
+
+JavaScript
+
+<a name="MultiChain"></a>
+
+### MultiChain
+
+1. This is described 2:40 into video: Infosys "Developing with Blockchain 35m 24s"
+1. Download an app for macOS, Windows, Linux.
+   NO brew install multichain
+1.  To create the <strong>genesis block</strong> of a blochain:
+
+    multichaind 
+
+1.  multichain-cli
+1.  multichain-util
 
 
-##
+## NEAR Agents
 
 At https://app.near.ai/agents
 All Ethereum Wallets, Including MetaMask, <a target="_blank" href="https://near.org/blog/ethereum-near-mainnet/">Now</a> Usable on NEAR Mainnet MyNearWallet
@@ -257,17 +340,28 @@ There are several NFT marketplaces: OpenSea, MagicEden.us, Rarible, Superrare, e
 <a target="_blank" href="https://opensea.io/collection/cryptopunks"><img alt="cryptopunks-900x399.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1736487680/cryptopunks-900x399_njypxq.webp" /><br />
 The above is CryptoPunks's gallery</a> from https://lavalabs.com/cryptopunks, launched as a fixed set of 10,000 unique 24x24 pixel characters in mid-2017. Although it doesn't comply with standards ERC-20, ERC-721, etc., it is now one of the <a target="_blank" href="https://opensea.io/rankings">most popular</a> at <a target="_blank" href="https://www.opensea.com/">Opensea.com</a>. It inspired the modern CryptoArt movement. On Feb 2022, the #5822 fetched $23 million dollars (8,000 ETH).
 
+### ERC-20 
+
+The Ethereum community has established some standards regarding the functionality of smart contracts, including tokens.
+   <ul<><a target="_blank" href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md">https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md</a>
+   </ul>
+
+Cyptocurrency tokens based on the ERC-20 Token Standard
+
+### ERC-721
+
 10,000 ERC-271 tokens (Apes) from the Bored Ape Yacht Club provides NFT holders with members-only benefits such as access to a private digital board, offline parties hosted by Yuga Labs, etc. with celebrities such as Steph Curry, Madonna, Eminen, etc. Yuga Labs released ERC-20 "AppCoin" tokens Otherdeed.
 
-Axie Infinity Play-to-Earn (P2E) game was developed by Sky Mavis in 2018.
+The Axie Infinity Play-to-Earn (P2E) game was developed by Sky Mavis in 2018.
 Axies are the name of digital pets in the ERC-721 game,
 which involves collecting, breeding for battle with others using Axies.
 It started on Etherium and moved to the Ronin Etherium sidechain for faster and less expensive transactions.
 
-
 Opensea was used in Martha Stewart's 2021 collaboration with the Tokns UK NFT agency to create
 Shopify marthafreshmint.com to sell NFTs of photographs.
 It's now defunct.
+
+
 
 On Auguest 2024, SEC issues Wells Notice to OpenSea.
 
@@ -1016,8 +1110,6 @@ Click Receive tokens
 https://www.linkedin.com/in/bensyn/overlay/experience/2155655858/multiple-media-viewer/?profileId=ACoAACt0uJQBoBjUlzj29imjXOox6fgV3S0R3Ac&treasuryMediaId=1721925671972
 
 ## Bitcoin speculation
-
-https://www.ripple.com/ripple-foundation/ripple-foundation-website.html
 
 https://www.youtube.com/watch?v=3QpdU9LS540
 [1:47:35] "RUIN: Money, Ego and Deception at FTX" by Bloomberg Originals

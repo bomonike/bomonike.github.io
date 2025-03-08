@@ -12,7 +12,7 @@ during their December, 2024 RE:Invent conference.
 "Amazon's NEW AI Just Solved The HARDEST Programming Problem"
 by Matthew Berman
 
-That would be <strong>halucinations</strong>, where the AI is making stuff up, albeit based on the likelihood in what it already knows. Generative AI makes use of "Deep learning" techniques to make predictions based on applying statistical models to large datasets (Large Language Models).
+That would be <strong>hallucinations</strong>, where the AI is making stuff up, albeit based on the likelihood in what it already knows. Generative AI makes use of "Deep learning" techniques to make predictions based on applying statistical models to large datasets (Large Language Models).
 
 If we quibble about definitions, one definition of AI is the ability of computers to
 <strong>appear</strong> to behave like humans. Thus, the Turing test is about a conversation.
@@ -66,8 +66,7 @@ The big deal is <strong>Explainable AI</strong>.
 
 Amazon <strong>Bedrock Guardrails</strong> "evaluates prompts and model responses for Agents, Knowledge Bases, and FMs in Amazon Bedrock and self-managed or third-party FMs (Foundation Models)."
 
-   * Configure thresholds to filter unde
-
+   * Configure thresholds to filter undo
 
 OBSERVE: The prompt to do this work (turn a pdf into Rules, Variables) AWS calls the "intent".
 
