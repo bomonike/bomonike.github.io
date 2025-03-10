@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-07"
-lastchange: "v012 + SLAM :ai-glossary.md"
+date: "2025-03-09"
+lastchange: "v013 + BST etc :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -19,6 +19,14 @@ created: "2021-08-24"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+## LLM Foundation Models
+
+* OpenAI
+* Anthropic
+* MAI (Microsoft AI)
+
+Stefan Bauschard from Education Disrupted: Teaching and Learning in An AI World
 
 ## Stages of AI
 
@@ -42,14 +50,21 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 ## Glossary
 
-* Application Programming Interface (API) | facilitates communication across applications. APIs help to extract and share data using a set of definitions and protocols.
+* Ablation Study | The process of removing components from an AI system to analyze their impact on performance.
+* AGI = Artificial General Intelligence | A hypothetical AI system that can perform any intellectual task that a human can, with flexibility at various activities. Often considered the ultimate goal of AI research.
+* ANI = Artificial Narrow Intelligence | AI systems designed to perform a specific task, such as facial recognition or language translation, but not capable of general human-like intelligence.
+* API = Application Programming Interface | facilitates communication across applications. APIs help to extract and share data using a set of definitions and protocols.
 * AIMS (Artificial Intelligence Management System) | defined byhttps://www.iso.org/standard/81230.html $311 ISO/IEC Standard 42001:2023
 
+* Bias | Systematic prejudice within AI algorithms or models, often resulting from biased training data.
 * Bootstrapping Language-Image Pre-training (BLIP) | An AI-based model, used to perform multi-modal tasks like visual question answering, image-text retrieval, and image captioning. It is a pre-training framework for unified vision-language understanding and generation.
 * BlenderBot | An AI-based chatbot that can converse naturally with people and takes direct feedback to improve its responses.
+* BST = Belief State Transformer | LLM from Microsoft AI can predict words before as well as after tokens, which enables planning and making decisions. Prefix and suffix tokens together make the Belief State.
 
 * Chatbot | A computer program that simulates a human conversation with an end user. Though not all chatbots are equipped with artificial intelligence (AI), modern chatbots increasingly use conversational AI techniques like natural language processing (NLP) to make sense of the user's questions and automate their responses.
+* Chatbot | Programs that simulate human-like conversations through text or voice interactions.
 * ChatGPT | A chatbot build developed by OpenAI that uses large language models (LLMs) to enable users to interact and get desired responses.
+* CNN = Convolutional Neural Network | A type of deep learning model used primarily for image recognition tasks.
 * CodeT5 | A text-to-code seq2seq model developed by Google AI, trained on a large data set of text and code. CodeT5 is the first pre-trained programming language model that is code-aware and encoder-decoder based.
 * Cascading Style Sheets (CSS) | A computer language to lay out and structure web pages using codes.
 * CoT = Chain-of-Thought | A technique in AI, a form of reasoning, that involves breaking down a problem into smaller, more manageable parts, and then using these parts to solve the problem.
@@ -66,6 +81,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Foundation models | AI models with broad capabilities that can be adapted to create more specialized models or tools for specific use cases.
 
 * GAN = Generative Adversarial Network | A type of generative model that includes two neural networks: generator and discriminator. The generator is trained on vast data sets to create samples like text and images. The discriminator tries to distinguish whether the sample is real or fake.
+* Generative AI | AI models capable of generating new content, such as images, music, or text, based on patterns learned from existing data.
 * Generative AI models | Models that can understand the context of input content to generate new content. In general, they are used for automated content creation and interactive communication.
 * GPT = Generative Pre-trained Transformer | A series of large language models developed by OpenAI designed to understand language by leveraging a combination of two concepts: Training and transformers.
 * Google flan | An encoder-decoder foundation model based on the T5 architecture.
@@ -76,7 +92,9 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * IBM Watson | An integrated AI and data platform with a set of AI assistants designed to scale and accelerate the impact of AI with trusted data across businesses.
 * IBM Cloud Code Engine | A fully managed, serverless platform that is used to manage and secure the underlying infrastructure of codes, container images, and batch jobs.
+
 * JEPA = Joint Embedding Predicting Architecture | A macro architecture alternative instead of  GPTs predicting next-word. It arranges modules running Transformers and other AI modules <a target="_blank" href="https://www.youtube.com/watch?v=RUnFgu8kH-4&t=45m9s">*</a>
+
 * LLM = Large language model | A deep learning model trained on substantial text data to learn the patterns and structures of language. They can perform language-related tasks, including text generation, translation, summarization, sentiment analysis, and more.
 * Llama | A large language model from Meta AI.
 * LlamaIndex | A flexible data framework to connect custom data sources to large language models using a central interface.
@@ -87,7 +105,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * Machine Learning (ML) | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
 
-* NLP = Natural Language Processing | A subset of artificial intelligence that enables computers to understand, manipulate, and generate human language (natural language).
+* NLP = Natural Language Processing | The ability of AI systems to understand, interpret, and generate human language. A subset of artificial intelligence that enables computers to understand, manipulate, and generate human language (natural language).
 * NER = Named-Entity Recognition | A subtask of information extraction that helps to locate and classify named entities like first and last names, geographic location, age, address, and phone number in unstructured data sources.
 
 * OpenAI Whisper | An automatic speech recognition system trained on 680,000 hours of supervised data that can transcribe speech in several languages.
@@ -98,6 +116,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * PTX = Parallel Thread eXecution | virtual instruction set hardware-agnostic achitecture operating under NVIDIA's CUDA parallel execution framework, used by DeepSeek. <a target="_blank" href="https://www.youtube.com/watch?v=iEda8_Mvvo4">VIDEO</a>
 
 * Quantization | the process of mapping continuous signals into discrete digital values. Used in digital signal processing, data compression, and machine learning.
+
 * RAG = Retrieval-Augmented Generation | An AI framework designed to retrieve facts from an external knowledge base to ground large language models (LLMs) that provide information on the latest research, statistics, or news to generative models.
 * RLVR = Reinforcement Learning with Verifiable Rewards | reinforcement learning framework used by Tulu LLMs that builds upon supervised finetuning (SFT) by using simple functions to provide a deterministic correctness criteria binary ground truth signal to indicate whether a model's output meets a predefined correctness criterion. This allows subject matter experts to establish clear correctness criteria without deep machine learning expertise.
 
@@ -126,6 +145,8 @@ watsonx.governance | A (powerful) toolkit to direct, manage, and monitor your or
 
 * <a target="_blank" href="https://www.coursera.org/learn/building-gen-ai-powered-applications/ungradedWidget/TRXdF/glossary-building-genai-powered-apps-with-python"><i>Coursera's AI Glossary</i></a>
 * https://docs.anthropic.com/en/docs/resources/glossary
+
+
 
 ## Workflow
 
