@@ -31,7 +31,7 @@ describes how <strong>individual researchers</strong> are constructing specific 
 
 My concern is that this creates a <strong>reinforcement cycle</strong> where the same problems are used over and over again, leading to a lack of variety and depth in the assessment. 
 
-## MY PROPOSAL:
+## MY PROPOSAL: Make AI a benchmarking sport in high schools
 
 Since <strong>high school students</strong> (and their teachers) are studying SAT problems anyway, provide them a way to <strong>input and compare</strong> how different AI versions solve problems.
 
