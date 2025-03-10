@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-09"
-lastchange: "v003 + contacts :ReasonThruAI.md"
+lastchange: "v004 + sport :ReasonThruAI.md"
 file: "ReasonThruAI"
 title: "Reason Thru AI"
 excerpt: "Ecosystem for students to use, analyze, and maintain benchmarks of AI tools"
@@ -31,7 +31,7 @@ describes how <strong>individual researchers</strong> are constructing specific 
 
 My concern is that this creates a <strong>reinforcement cycle</strong> where the same problems are used over and over again, leading to a lack of variety and depth in the assessment. 
 
-## MY PROPOSAL: Make AI a benchmarking sport in high schools
+## MY PROPOSAL: Make AI benchmarking a sport
 
 Since <strong>high school students</strong> (and their teachers) are studying SAT problems anyway, provide them a way to <strong>input and compare</strong> how different AI versions solve problems.
 
