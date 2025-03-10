@@ -1,4 +1,24 @@
-ReasonThruAI.md
+---
+layout: post
+date: "2025-03-09"
+lastchange: "v002 + contacts :ReasonThruAI.md"
+file: "ReasonThruAI"
+title: "Reason Thru AI"
+excerpt: "Ecosystem for comparing AI tools"
+tags: [AI, Software]
+file: "software-evaluation-criteria"
+image:
+# pic silver robot white skin handshake 1900x500
+  feature: https://cloud.githubusercontent.com/assets/300046/14622149/306629f0-0585-11e6-961a-dc8f60dadbf6.jpg
+  credit: 
+  creditlink: 
+comments: true
+created: "2017-03-21"
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
 
 When Generative AI burst on the scene in 2022, they were not able to count the number of "r"s in the word strawberry.
 
@@ -24,13 +44,23 @@ whether working or not.
 
 This provides diligent students a <strong>competitive advantage</strong> at getting paid work managing AI.
 
-That's because contributors provide <strong>actionable feedback to AI providers and users</strong>.
-
-So I am also leveraging my contacts among AI companies for sponsorship of credits for our students.
-
 Connect with me and message me if you are interested in making this happen for students.
 
 // Wilson Mar
 https://linkedin.com/in/wilsonmar
+
+## GenAI providers
+
+Contributions provide <strong>actionable feedback to GenAI providers and users</strong>. So I am contacting AI companies for sponsorship of credits for our students:
+
+   * Anthropic (Gemini)
+   * DeepSeek
+   * Digital Ocean https://www.linkedin.com/in/john-humphreys-524a0939/
+   * Qwen (Alibaba)
+   * Google DeepMind https://www.linkedin.com/in/dynamicwebpaige/
+   * IBM (WatsonX) https://www.linkedin.com/in/andreashorn1/
+   * Intel https://www.linkedin.com/in/benjamin-odom-07539180/
+   * Meta
+   * OpenAI (DALL-E, etc.)
 
 
