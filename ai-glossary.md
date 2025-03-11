@@ -67,6 +67,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * CNN = Convolutional Neural Network | A type of deep learning model used primarily for image recognition tasks.
 * CodeT5 | A text-to-code seq2seq model developed by Google AI, trained on a large data set of text and code. CodeT5 is the first pre-trained programming language model that is code-aware and encoder-decoder based.
 * Cascading Style Sheets (CSS) | A computer language to lay out and structure web pages using codes.
+* Completion | The generated output from a user prompt after process by a LLM.
 * CoT = Chain-of-Thought | A technique in AI, a form of reasoning, that involves breaking down a problem into smaller, more manageable parts, and then using these parts to solve the problem.
 * CUA = Computer Using Agent | OpenAI's <a target="_blank" href="https://www.youtube.com/watch?v=9oED8PXJuKg"><em>working</em></a> AI agent <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">Operator</a> controlling your computer
 * CUDA = Compute Unified Device Architecture | A parallel computing platform & API developed by NVIDIA.
@@ -86,6 +87,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * GPT = Generative Pre-trained Transformer | A series of large language models developed by OpenAI designed to understand language by leveraging a combination of two concepts: Training and transformers.
 * Google flan | An encoder-decoder foundation model based on the T5 architecture.
 * Gradio | An open-source Python package that allows the building of a demo or web application for machine learning models. It helps to create UIs to demo and deploy models and share them easily.
+* GRU = Gated Recurrent Unit | A type of recurrent neural network that uses gating mechanisms to control the flow of information through the network.
 
 * Hugging Face | An AI platform that allows open-source scientists, entrepreneurs, developers, and individuals to collaborate and build personalized machine learning tools and models. It provides a way to evaluate different models.
 * HTML = HyperText Markup Language | A standard markup language consists of elements that create web pages, structure them, and help display them. A start tag, some content, and an end tag define HTML elements.
@@ -103,7 +105,8 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * LIME = Local Interpretable Model Agnostic Explanation | A metric to explain predictions by approximating the model in a local manner. A service provided by Amazon SageMaker Model Monitor.
 * LPU = Language Processing Unit | an application-specific integrated circuit (ASIC) from groq.com for high-performance inference efficiency of AI workloads using large language models (LLMs).
 
-* Machine Learning (ML) | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
+* ML = Machine Learning | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
+* MAI = Microsoft AI | Microsoft's AI platform that provides tools and services for building and deploying AI applications. <a target="_blank" href="https://www.youtube.com/watch?v=FKZktotIeRA">*</a>
 
 * NLP = Natural Language Processing | The ability of AI systems to understand, interpret, and generate human language. A subset of artificial intelligence that enables computers to understand, manipulate, and generate human language (natural language).
 * NER = Named-Entity Recognition | A subtask of information extraction that helps to locate and classify named entities like first and last names, geographic location, age, address, and phone number in unstructured data sources.
@@ -119,6 +122,8 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * RAG = Retrieval-Augmented Generation | An AI framework designed to retrieve facts from an external knowledge base to ground large language models (LLMs) that provide information on the latest research, statistics, or news to generative models.
 * RLVR = Reinforcement Learning with Verifiable Rewards | reinforcement learning framework used by Tulu LLMs that builds upon supervised finetuning (SFT) by using simple functions to provide a deterministic correctness criteria binary ground truth signal to indicate whether a model's output meets a predefined correctness criterion. This allows subject matter experts to establish clear correctness criteria without deep machine learning expertise.
+* RNN = Recurrent Neural Network | A type of neural network that processes sequential data by maintaining a hidden state that allows it to remember information from previous inputs (sequential time-based data such as stock prices, speech).
+* RPL = Reward-Plus-Loss | A training method that uses both positive and negative rewards to improve the performance of a model.
 
 * Sequence to sequence models | A model type that uses both encoders and decoders. ???
 * Sentiment analysis | A process of analyzing digital text to determine the emotional tone of a message. Performed on textual data, helping businesses monitor brands through customer feedback.
@@ -126,6 +131,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * SLAM = Simultaneous Localization And Mapping | A process of simultaneously determining a robot's location and mapping its environment, performed locally by a robot.
 * Streamlit | An open-source framework to build and share machine learning and data science web apps. It turns data scripts into shareable web apps in minutes.
 
+* Temperature | For a deterministic behavior (variation from content) the desirable value is zero.
 * TensorFlow <a target="_blank" href="https://www.nvidia.com/en-us/glossary/tensorflow/">*</a> | A leading open-source library from Google for developing and deploying machine learning applications. It makes use of GPUs for parallel matrix operations for algebraic calculations.
 * Tokenizer | A tokenizer is a tool in natural language processing that breaks down text into smaller, manageable units (tokens), such as words or phrases, enabling models to analyze and understand the text.
 * Tokenomics | The process of tokenizing, storing, and trading tokens on a blockchain.
