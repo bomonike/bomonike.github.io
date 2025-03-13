@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-04-15"
-lastchange: "v033 + from wilsonmar :microsoft-ai.md"
+date: "2025-03-13"
+lastchange: "v034 + update curriculum :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -21,49 +21,59 @@ created: "2018-04-03"
 
 Here is a hands-on deep dive introduction to Microsoft's Artificial Intelligence (AI) offerings running on the Azure cloud.
 My contribution to the world (to you) is a less overwhelming learning sequence, one that starts with the <strong>least complex</strong> of technologies used, then more complex ones.
-
 {% include whatever.html %}
 
-Microsoft "democratizes" AI and Machine Learning by providing a front-end that hides some of the complexities, enabling them to be run <strong>possibly without programming</strong>.
+## What is AI?
 
-## Gallery
+AI personality Bernard Marr <a target="_blank" href="https://www.forbes.com/sites/bernardmarr/2018/02/14/the-key-definitions-of-artificial-intelligence-ai-that-explain-its-importance/#22db12bb4f5d">identified</a> <a target="_blank" href="https://www.bernardmarr.com/default.asp?contentID=2191">four types of AI</a> evolving:
 
-1. Microsoft's Azure AI gallery of samples and users' contributions:
+1. "reactive" machines (such as Spam filters and the Netflix recommendation engine) are not able to learn or conceive of the past or future, so it responds to identical situations in the exact same way every time.
 
+2. "limited memory" AI absorbs learning data and improve over time based on its experience, using historical data to make predictions. It's similar to the way the human brain’s neurons connect. Deep-learning algorithms used in ChatGPT widely released in 2022 is the AI that is widely used and being perfected today.
+
+3. <a target="_blank" href="https://www.bernardmarr.com/default.asp?contentID=2191">"theory of mind"</a> is when AI acquires decision-making capabilities equal to humans, and have the capability to recognize and remember emotions, and adjust behavior based on those emotions. This was realized in 2025 with "reasoning" and "Chain of Thought" capabilities in LLM models.
+
+4. "self-aware", also called artificial superintelligence (ASI), is "sentient" understanding of of its own needs and desires.
+
+
+
+## Human-Computer Interaction (HCI)
+
+Microsoft "democratizes" AI and Machine Learning by providing a front-end GUI that hides some of the complexities, enabling them to be run <strong>possibly without programming</strong>.
+
+   <ul>Alas, Microsoft's Azure AI gallery of samples and users' contributions is no longer at
    <a target="_blank" href="https://gallery.azure.ai/browse">https://gallery.azure.ai/browse</a>
+   </ul>
 
-   These are what are called "narrow" or "weak" AI.
+1. DEMO: Hands-on with AI/Guidelines for Human-AI Interaction: Click each card to see examples of each guideline
 
-1. Click <a target="_blank" href="https://wilsonmar.github.io/azure-onboarding/">(Azure cloud) SERVICES</a> USED:
+   <a target="_blank" href="
+   https://aka.ms/hci-demo">
+   https://aka.ms/hci-demo</a> which redirects you to<br />
+   <a target="_blank" href="
+   https://aidemos.microsoft.com/guidelines-for-human-ai-interaction/demo">
+   https://aidemos.microsoft.com/guidelines-for-human-ai-interaction/demo</a>
 
-   * <a target="_blank" href="https://wilsonmar.github.io/azure-machine-learning//">Azure Machine Learning</a>
-   * <a target="_blank" href="https://wilsonmar.github.io/powerbi/">PowerBI</a>
-   * Azure Blob Storage
-   * Azure HDInsight
-   * Azure Data Factory
-   * Azure SQL DataWarehouse
-   * Azure App Service
-   * <a target="_blank" href="https://wilsonmar.github.io/sql/">Azure Sql</a>
-   * Azure Event Hubs
-   * Azure Stream Analytics
-   * Azure Cognitive Service - LUIS
-   * Azure Data Lake Analytics
-   * Azure Data Lake Store
-   * Azure Virtual Machine
-   * Azure Batch
+   * Initially - make clear what the system can do & how well the system can do what it can do.
+   * During interaction - Time services based on context; show contexually revelvant info; Match revelvant social norms; Migrate social biases.
+   * When Wrong - support efficient invocation, dismissal, correction; Scope services when in doubt.
+   * Over Time - remember recent interactions; learn from user behavior; update and adapt cautiously; encourage granular feedback
    <br /><br />
+
+   PROTIP: Some fonts are real small. Zoom in to read it.
+
 
    <a name="workflows"></a>
 
    ### Hybrid workflow Pipelines
 
-   PROTIP: Although most of Microsoft's product documents focus on one technology at a time, actual production work enjoyed by real end-users usually involves a <strong>pipeline</strong> consisting of several services. For example: <a target="_blank" href="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/ai/news-feed-ingestion-and-near-real-time-analysis">ingesting (stream processing) a newsfeed</a>:
+   PROTIP: Although most of Microsoft's product documents focus on one technology at a time, actual production work enjoyed by real end-users usually involves a <strong>pipeline</strong> consisting of several services. For example: <a target="_blank" href="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/ai/news-feed-ingestion-and-near-real-time-analysis">ingesting (stream processing) a newsfeed</a> NLP (Natural Langague Processing):
 
    ![az-ml-newsfeed-546x623](https://user-images.githubusercontent.com/300046/116988980-6254f300-ac8e-11eb-9901-c2c6f3d8a018.png)
 
    That and other flows are in the <a target="_blank" href="https://docs.microsoft.com/en-us/azure/architecture/">Azure Architecture Center</a>.
 
-1. For more about ALGORITHMS USED, see <a target="_blank" href="https://wilsonmar.github.io/machine-learning-algorithms/">my explanations at https://wilsonmar.github.io/machine-learning-algorithms</a>, which lists them by alphabetical order and grouped by.
+1. For more about ALGORITHMS USED, see <a target="_blank" href="https://bomonike.github.io/machine-learning-algorithms/">my explanations at https://bomonike.github.io/machine-learning-algorithms</a>, which lists them by alphabetical order and grouped by.
 
 Case studies of how people are already making use of AI/ML to save time and money:
 
@@ -85,13 +95,35 @@ In the diagram above left, Microsoft makes a distinction between "Business Users
 In the diagram above, Microsoft categorize Azure's AI services these groups (all of which have GUI, CLI, and API interfaces):
    * <strong>Applied</strong> AI Services are part of automated workflows, but a service can be included among
    * <a href="#Cognitive_Services"><strong>Cognitive</strong> Services</a> of foundational utilities used to build custom apps
-   * ML (Machine Learning) Platform, which <a target="_blank" href="https://wilsonmar.github.io/azure-machine-learning/">I cover in a separate article</a>
+   * ML (Machine Learning) Platform, which <a target="_blank" href="https://bomonike.github.io/azure-machine-learning/">I cover in a separate article</a>
    <br /><br />
 
 PROTIP: Several services are NOT shown in the diagram above.
 The list in a <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/prepare-to-develop-ai-solutions-azure/7-understand-capabilities-of-azure-cognitive-services">Microsoft LEARN module</a> show a different order:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1707738331/ms-ai-def-1187x508_d1tpvd.png"><img alt="ms-ai-def-1187x508.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707738331/ms-ai-def-1187x508_d1tpvd.png"></a>
+
+
+DEFINITION: There are what are called "narrow" or "weak" AI.
+
+1. Click <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">(Azure cloud) SERVICES</a> USED:
+
+   * <a target="_blank" href="https://bomonike.github.io/azure-machine-learning//">Azure Machine Learning</a>
+   * <a target="_blank" href="https://bomonike.github.io/powerbi/">PowerBI</a>
+   * Azure Blob Storage
+   * Azure HDInsight
+   * Azure Data Factory
+   * Azure SQL DataWarehouse
+   * Azure App Service
+   * <a target="_blank" href="https://bomonike.github.io/sql/">Azure Sql</a>
+   * Azure Event Hubs
+   * Azure Stream Analytics
+   * Azure Cognitive Service - LUIS
+   * Azure Data Lake Analytics
+   * Azure Data Lake Store
+   * Azure Virtual Machine
+   * Azure Batch
+   <br /><br />
 
 
 <a name="CognitiveServicesList"></a>
@@ -350,45 +382,6 @@ PROTIP: HANDS-ON: <a target="_blank" href="https://portal.azure.com/#create/Micr
 PROTIP: <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-services/create-account-terraform?tabs=azure-cli">Apply of Terraform to create AI service resources</a>
 will error out unless that is checked.
 
-<a target="_blank" href="https://docs.microsoft.com/en-us/learn/modules/get-started-ai-fundamentals/7-understand-responsible-ai">LEARN</a>:
-
-Using Microsoft's API algorithms and data (such as celebrity faces, landmarks, etc.) means there has be some vetting by Microsoft's <a target="_blank" href="https://www.microsoft.com/research/group/fate/">FATE (Fairness, Accountability, Transparency, and Ethics)</a> research group:
-<img width="1126" height="610" alt="az-ai-principled-1126x610" src="https://user-images.githubusercontent.com/300046/117167864-e1c4ee00-ad84-11eb-88b1-4f685155a64f.png">
-
-<a target="_blank" href="https://docs.microsoft.com/en-us/learn/modules/azure-artificial-intelligence/5-ai-impact-and-ethics">
-Microsoft's ethical principles</a> guiding the development and use of artificial intelligence with people:
-
-   * Fairness: AI systems should treat all people fairly.
-   * Reliability & Safety: AI systems should perform reliably and safely.
-   * Privacy & Security: AI systems should be secure and respect privacy.
-   * Inclusiveness: AI systems should empower everyone and engage people.
-   * Transparency: AI systems should be understandable.
-   * Accountability: AI systems should have algorithmic accountability.
-   <br /><br />
-
-1. DEMO: Hands-on with AI/Guidelines for Human-AI Interaction: Click each card to see examples of each guideline
-
-   <a target="_blank" href="
-   https://aka.ms/hci-demo">
-   https://aka.ms/hci-demo</a> which redirects you to<br />
-   <a target="_blank" href="
-   https://aidemos.microsoft.com/guidelines-for-human-ai-interaction/demo">
-   https://aidemos.microsoft.com/guidelines-for-human-ai-interaction/demo</a>
-
-   * Initially - make clear what the system can do & how well the system can do what it can do.
-   * During interaction - Time services based on context; show contexually revelvant info; Match revelvant social norms; Migrate social biases.
-   * When Wrong - support efficient invocation, dismissal, correction; Scope services when in doubt.
-   * Over Time - remember recent interactions; learn from user behavior; update and adapt cautiously; encourage granular feedback
-   <br /><br />
-
-   PROTIP: Some fonts are real small. Zoom in to read it.
-
-Resources:
-   * <a target="_blank" href="https://www.microsoft.com/ai/responsible-ai-resources">https://www.microsoft.com/ai/responsible-ai-resources</a>
-   * <a target="_blank" href="https://www.youtube.com/playlist?list=PLl8yjZLsL_WobPtlCCIRgoU91Geokx7qK">VIDEO</a>: Ethics an Artificial Intelligence at the DotNet Day Zurich May 28th, 2019, by Laurent Bugnion.
-
-
-
 
 <hr />
 
@@ -421,7 +414,7 @@ PROTIP: As of Jan 8, 2024, https://aka.ms/language-studio has "coming soon" for 
 <table border="1" cellpadding="4" cellspacing="0">
 <tr><th> Asset type </th><th> Resource provider namespace/Entity </th><th> Abbre- viation </th></tr>
 <tr valign="top"><td> <a href="#Cognitive_Services">Azure Cognitive Services</a> </td><td> <a href="#Cognitive_Services"> Microsoft.CognitiveServices/accounts</a> </td><td> cog- </td></tr>
-<tr valign="top"><td> <a target="_blank" href="https://wilsonmar.github.io/azure-machine-learning/">Azure Machine Learning workspace</a> </td><td>   Microsoft.MachineLearningServices/workspaces </td><td> mlw- </td></tr>
+<tr valign="top"><td> <a target="_blank" href="https://bomonike.github.io/azure-machine-learning/">Azure Machine Learning workspace</a> </td><td>   Microsoft.MachineLearningServices/workspaces </td><td> mlw- </td></tr>
 <tr valign="top"><td> Azure Cognitive Search </td><td> Microsoft.Search/searchServices </td><td> srch- </td></tr>
 </table>
 
@@ -482,39 +475,21 @@ https://learn.microsoft.com/en-us/training/challenges
 https://www.youtube.com/watch?v=ss-kyogPRNo
 by Carlotta
 
-
-
-<hr />
-
-<a name="Competitors"></a>
-
-## Competitive futures
-
 Microsoft competes for talent with Google, Amazon, IBM, China's Tencent, and many start-ups.
-
-BTW, by contrast, Bernard Marr <a target="_blank" href="https://www.forbes.com/sites/bernardmarr/2018/02/14/the-key-definitions-of-artificial-intelligence-ai-that-explain-its-importance/#22db12bb4f5d">identified</a> <a target="_blank" href="https://www.bernardmarr.com/default.asp?contentID=2191">four types of AI</a> evolving:
-
-   * "reactive" machines (such as Spam filters and the Netflix recommendation engine) are not able to learn or conceive of the past or future, so it responds to identical situations in the exact same way every time.
-
-   * "limited memory" AI absorbs learning data and improve over time based on its experience, using historical data to make predictions. It's similar to the way the human brain’s neurons connect. Deep-learning algorithms used today is the AI that is widely used and being perfected today.
-
-   * "theory of mind" is when AI acquires decision-making capabilities equal to humans, and have the capability to recognize and remember emotions, and adjust behavior based on those emotions.
-
-   * "self-aware", also called artificial superintelligence (ASI), is "sentient" understanding of of its own needs and desires.
 
 
 <hr />
 
 <a name="Prerequisites"></a>
 
-## Prerequisites to this document
+## Prerequisites for Hands-on
 
 This document assumes that you have done the following
 
-1. <a target="_blank" href="https://wilsonmar.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> and learn Portal GUI menu keyboard shortcuts.
+1. <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> and learn Portal GUI menu keyboard shortcuts.
 
 1. Setup a CLI scripting environment in shell.azure.com.
-<a target="_blank" href="https://wilsonmar.github.io/mac-setup/">like I describe in my mac-setup page</a>
+<a target="_blank" href="https://bomonike.github.io/mac-setup/">like I describe in my mac-setup page</a>
 
 1. Use CLI to <a href="#CognitiveServices">Create a Cognitive Service</a> to get keys to call the first REST API from among <a target="_blank" href="https://github.com/Azure-Samples/cognitive-services-REST-api-samples">sample calls</a> to <a target="_blank" href="https://docs.microsoft.com/en-us/rest/api/azure/">many REST APIs</a>: the <a href="#TextTranslation">Translator Text API</a>.
 
@@ -590,30 +565,43 @@ References:
 
    * https://www.c-sharpcorner.com/article/deploy-a-google-action-on-azure/
 
-   * <a target="_blank" href="https://automys.com/library/asset/scheduled-virtual-machine-shutdown-startup-microsoft-azure" title="2015"> start/stop by an Automation Acount Runbook</a> for specific tags attached to different Resource Groups: Assert: "AutoshutdownSchedule: Tuesday" run every hour.
-   https://translate.google.com/translate?sl=auto&tl=en&u=https://github.com/chomado/GoogleHomeHack">
-   <br /><br />
+   * <a target="_blank" href="https://automys.com/library/asset/scheduled-virtual-machine-shutdown-startup-microsoft-azure" title="2015"> start/stop by an Automation Account Runbook</a> for specific tags attached to different Resource Groups: Assert: "AutoshutdownSchedule: Tuesday" run every hour. <a target="_blank" href="https://translate.google.com/translate?sl=auto&tl=en&u=https://github.com/chomado/GoogleHomeHack">Google Translate</a>
+
 
 <hr />
 
+<a href="AIcerts"></a>
+
 ## Azure AI certifications
 
-Among <a target="_blank" href="https://wilsonmar.github.io/azure-certifications">Microsoft's Azure professional certifications</a>:
+There are three levels of AI:
 
-   * Previous exam 774 is now been retired. It was based on <a target="_blank" href="https://www.youtube.com/watch?v=eJOv-TfhhzQ">VIDEO</a>: <a target="_blank" href="https://services.azureml.net/">Azure Machine Learning Studio (classic)</a> web services, which reflected "All Microsoft all the time" using proprietary "pickle" (pkl) model files. <a target="_blank" href="https://www.coursera.org/learn/predictive-modelling-azure-machine-learning-studio/home/welcome">Classes referencing it</a> are now obsolete.
+1. <a href="#AI-900">AI-900</a> (Fundamentals) is the entry-level exam ($99). It's a pre-requisite for:
 
-   * <a href="#AI-900">AI-900</a> is the entry-level exam ($99). It's a pre-requisite for:
+2. <a href="#AI-102">AI-102</a> (Associate) $165 with free re-cert after 1-year) focuses on the use of <strong>pre-packaged</strong> cloud-based services for AI development. 
 
-   * <a href="#AI-102">AI-102</a> ($165 with free re-cert after 1-year) focuses on the use of <strong>pre-packaged</strong> services for AI development. The exam replaced <a href="#AI-100"><strike>AI-100</strike></a> on June 30, 2021 with a shift from infrastructure (KeyVault, AKS, Stream Analytics) to programming C#, Python, and curl commands.
+   The exam replaced <a href="#AI-100"><strike>AI-100</strike></a> on June 30, 2021 with a shift from infrastructure (KeyVault, AKS, Stream Analytics) to programming C#, Python, and curl commands. (Free re-cert after 2-years).
 
-      (Free re-cert after 2-years).
+   Get 50% off the AI-102 if you finish <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/microsoft-ai-and-ml-engineering?authProvider=mckinsey">Coursera's Microsoft AI & ML Engineering Professional Certificate</a> by Mark DiMauro at Univ. Pittsbergh.
+   * <a target="_blank" href="https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/dSDK3/getting-started-with-jupyter-notebooks-in-azure-machine-learning-studio">LAB: Getting started with Jupyter Notebooks in Azure Machine Learning Studio</a>
 
-   * <a target="_blank" href="https://github.com/MicrosoftLearning/dp-090-databricks-ml">DP-090</a> and <a target="_blank" href="https://microsoftlearning.github.io/dp-090-databricks-ml/">this LAB</a> goes into  implementing a Machine Learning Solution with <a target="_blank" href="https://wilsonmar.github.io/databricks/">Databricks</a>.
+3. <a href="#AI-100">AI-???</a> (Expert) 
 
-   * That's covered by <a target="_blank" href="https://wilsonmar.github.io/azure-machine-learning/#DP-100">exam DP-100</a> covers development of custom models using Azure Machine Learning.
+Among <a target="_blank" href="https://bomonike.github.io/azure-certifications">Microsoft's Azure professional certifications</a>:
 
-   * <a target="_blank" href="https://docs.microsoft.com/en-us/learn/certifications/exams/dp-203">DP-203 Data Engineering on Microsoft Azure</a> goes into how to use machine learning within <strong>Azure Synapse Analytics</strong>.
+   * Previous exam 774 was retired. It was based on <a target="_blank" href="https://www.youtube.com/watch?v=eJOv-TfhhzQ">VIDEO</a>: <a target="_blank" href="https://services.azureml.net/">Azure Machine Learning Studio (classic)</a> web services, which reflected "All Microsoft all the time" using proprietary "pickle" (pkl) model files. <a target="_blank" href="https://www.coursera.org/learn/predictive-modelling-azure-machine-learning-studio/home/welcome">Classes referencing it</a> are now obsolete.
 
+   * <a href="#AI-100"><strike>AI-100</strike></a> on June 30, 2021 with a shift from infrastructure (KeyVault, AKS, Stream Analytics) to programming C#, Python, and curl commands. (Free re-cert after 2-years).
+
+   * <a target="_blank" href="https://github.com/MicrosoftLearning/dp-090-databricks-ml">DP-090</a> and <a target="_blank" href="https://microsoftlearning.github.io/dp-090-databricks-ml/">this LAB</a> goes into  implementing a Machine Learning Solution with <a target="_blank" href="https://bomonike.github.io/databricks/">Databricks</a>, which has its own AI certification path.
+
+   * <a target="_blank" href="https://bomonike.github.io/azure-machine-learning/#DP-100">exam DP-100</a> covers development of custom models using Azure Machine Learning.
+
+   * <a target="_blank" href="https://docs.microsoft.com/en-us/learn/certifications/exams/dp-203">DP-203 Data Engineering on Microsoft Azure</a> goes into how to use machine learning within <strong>Azure Synapse Analytics</strong>. It was retired on March 31, 2025.
+
+<a target="_blank" href="https://www.linkedin.com/pulse/my-journey-becoming-microsoft-certified-ai-engineer-george-chen-svese/">George Chen's Journey</a> to Microsoft Certified: AI Engineer Associate.
+
+<hr />
 
 <a name="AI-900"></a>
 
@@ -668,6 +656,7 @@ Practice tests:
    <br /><br />
 
 <a target="_blank" href="https://www.aguidetocloud.com/full-courses/ai900fullcourse">2-hour AGuideToCloud video class by Susanth Sutheesh</a>
+
 
 <a name="OpenAIFeatures"></a>
 
@@ -792,15 +781,9 @@ PROTIP: Unlike the AI-100 (which uses Python Notebooks), <a target="_blank" href
 4. AI Decision Making
 5. Other: <a href="#OpenAITutorials">OpenAI Tutorials</a>
 
-* <a href="#knowledge-miningTutorials">knowledge-mining Tutorials</a>
-* https://microsoftlearning.github.io/mslearn-ai-document-intelligence/
-   * <a target="_blank" href="https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence/tree/main/Labfiles">https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence</a>
-   * Use prebuilt Document Intelligence models
-   * Extract Data from Forms
-   * Create a composed Document Intelligence model
-   <br /><br />
-
-DALL-E image generation
+<a target="_blank" href="https://www.youtube.com/watch?v=scJ4mobwjBQ">VIDEO</a>
+Andrew Brown's Azure AI Engineer Associate Certification (AI-102) – Full Course to PASS the Exam
+on FreeCodeCamp's YouTube channel
 
 https://learn.microsoft.com/en-us/training/courses/ai-102t00
 modules:
@@ -891,15 +874,43 @@ Get 50% off by completing just one of <a target="_blank" href="https://developer
 * Azure Optimization | AZ-500
 
 
+<a name="DocIntel"></a>
+
+## Document Intelligence Knowledge Mining
+
+https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/2-understand
+1. Get into the Azure Marketplace to look for Azure AI Document Intelligence -- an Azure service that you can use to analyze forms completed by your customers, partners, employers, or others and extract the data that they contain.
+
+Prebuilt models expect a common type of form or document:
+
+Invoice
+Receipt
+W-2 US tax declaration
+ID Document
+Business card
+Health insurance card
+
+* <a href="#knowledge-miningTutorials">knowledge-mining Tutorials</a>
+* https://microsoftlearning.github.io/mslearn-ai-document-intelligence/
+   * <a target="_blank" href="https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence/tree/main/Labfiles">https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence</a>
+   * Use prebuilt Document Intelligence models
+   * Extract Data from Forms
+   * Create a composed Document Intelligence model
+   <br /><br />
+
+
+
 <hr />
 
 <a name="LZ"></a>
 
 ## AI Landing Zones (ALZ)
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1708232471/ms-ai-arh-240216-2000x1194_w1lork.png"><img alt="ms-ai-arh-240216-2000x1194." src="https://res.cloudinary.com/dcajqrroq/image/upload/v1708232471/ms-ai-arh-240216-2000x1194_w1lork.png"></a>
+In production usage, several Azure subscriptions are needed.
 
-The above is the
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1741880512/azure-landing-zone-250219_uhl2hk.svg"><img alt="azure-landing-zone-250219.svg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1741880512/azure-landing-zone-250219_uhl2hk.svg"></a>
+
+The above (replacing <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1708232471/ms-ai-arh-240216-2000x1194_w1lork.png">previous version</a>) is the
 <a target="_blank" href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102?WT.mc_id=academic-0000-abartolo">Azure Landing Zones OpenAI Reference Architecture</a> defining how to envelope OpenAI with utilities to ensure a defensive security posture. It maps how resources are integrated in a structured, consistent manner, plus ensuring governance, compliance, and security.
 
 The diagram above is an adaptation of <a target="_blank" href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/">Microsoft's enterprise-scale Azure Landing Zone</a>, a part of Microsoft's Cloud Adoption Framework (CAF).
@@ -938,7 +949,7 @@ Design Areas F (the Landing Zone for AI):<br />
 
 
 To create the resources in the diagram:<br />
-If you prefer using <a target="_blank" href="https://wilsonmar.github.io/bicep/">Bicep</a>:
+If you prefer using <a target="_blank" href="https://bomonike.github.io/bicep/">Bicep</a>:
    1. https://github.com/Azure/ALZ-Bicep/wiki/DeploymentFlow
    1. https://github.com/Azure/ALZ-Bicep/wiki/ConsumerGuide
    1. https://learn.microsoft.com/en-us/azure/architecture/landing-zones/bicep/landing-zone-bicep
@@ -962,9 +973,9 @@ Included are Private Endpoints, Network Security Groups and Web Application Fire
 
 PROTIP: AI-102 is heavy on questions about coding.
 
-Samples (unlike examples) are a more complete, best-practices solution for each of the snippets. They're better for integrating into production code.
+Samples (unlike examples) are a more complete, best-practices solution for each of the snippets.
 
-<a target="_blank" href="https://github.com/Azure-Samples/">github.com/Azure-Samples</a>
+PROTIP: <a target="_blank" href="https://github.com/Azure-Samples/">github.com/Azure-Samples</a>
 from Microsoft offers samples code to use Cognitive Services REST API by each language:
 
    * <a target="_blank" href="https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples">.NET C#</a>
@@ -976,7 +987,7 @@ from Microsoft offers samples code to use Cognitive Services REST API by each la
 
 https://docs.microsoft.com/en-us/samples/azure-samples/azure-sdk-for-go-samples/azure-sdk-for-go-samples/
 
-A complete sample app is Microsoft' Northwinds Traders consumer ecommerce store.
+A complete sample app is Microsoft' Northwinds Traders consumer ecommerce store:
 <a target="_blank" href="https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/northwind-install">install</a>
 
 IMPORTANT: Cognitive Services SDK Samples for:
@@ -996,7 +1007,6 @@ Tim Warner's <a target="_blank" href="https://github.com/timothywarner/ai100">ht
 
 Among <a target="_blank" href="https://docs.microsoft.com/en-us/samples/azure/azureml-examples/azure-machine-learning-examples/">Azure Machine Learning examples</a> is a CLI at
 https://github.com/Azure/azureml-examples/tree/main/cli
-
 
    PROTIP: CAUTION: Each service has a different maturity level <a target="_blank" href="https://azure.microsoft.com/en-us/downloads/">in its documentation at azure.microsoft.com/en-us/downloads</a>, such as <a target="_blank" href="https://azure.github.io/azure-sdk/releases/latest/python.html">SDK for Python</a> open-sourced at <a target="_blank" href="   https://github.com/azure/azure-sdk-for-python/">github.com/azure/azure-sdk-for-python</a>, described at <a target="_blank" href="https://docs.microsoft.com/en-us/azure/developer/python/">docs.microsoft.com/en-us/azure/developer/python</a>.
 
@@ -1690,13 +1700,13 @@ Media Services & Storage Account:
 
 1. Switch to the file which defines Azure environment variable VIDEO_INDEXER_ACCOUNT (in setmem.sh) as described in
 
-   <a target="_blank" href="https://wilsonmar.github.io/azure-quickly">https://wilsonmar.github.io/azure-quickly</a>
+   <a target="_blank" href="https://bomonike.github.io/azure-quickly">https://bomonike.github.io/azure-quickly</a>
 
 1. Switch back.
 1. In Account settings, click "Copy" to get the Account ID GUID in your Clipboard.
 1. Switch to the file which defines Azure environment variable VIDEO_INDEXER_ACCOUNT (in setmem.sh) as described in
 
-   <a target="_blank" href="https://wilsonmar.github.io/azure-quickly">https://wilsonmar.github.io/azure-quickly</a>
+   <a target="_blank" href="https://bomonike.github.io/azure-quickly">https://bomonike.github.io/azure-quickly</a>
 
 1. Highlight the sample value and paste (Command+V).
 1. Switch back.
@@ -1712,7 +1722,7 @@ Media Services & Storage Account:
 1. Click "Show" on the "Primary key" line. Double-click on the subscription key to copy to Clipboard (Command+C).
 1. Switch to the file which defines Azure environment variable VIDEO_INDEXER_API_KEY (in setmem.sh) as described in
 
-   https://wilsonmar.github.io/azure-quickly
+   https://bomonike.github.io/azure-quickly
 
 1. Highlight the sample value and paste (Command+V).
 1. Switch back.
@@ -1731,7 +1741,7 @@ Media Services & Storage Account:
    <a target="_blank" href="https://docs.microsoft.com/en-us/learn/modules/extract-insights-from-videos-with-video-indexer-service/3-upload-index-videos?pivots=python">
    Program
 
-   <strong>az-video-upload.py</strong> in https://wilsonmar.github.io/azure-quickly
+   <strong>az-video-upload.py</strong> in https://bomonike.github.io/azure-quickly
 
 1. Make an additional call to retrieve insights.
 
@@ -3336,7 +3346,7 @@ References:
    * https://learn.microsoft.com/en-us/azure/ai-services/openai/
    * https://azure.microsoft.com/en-us/services/openai/
    * https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/
-   * https://wilsonmar.github.io/genai for definition of terms and tutorials about Generative AI, which produce new content based on what is described in the input. The OpenAI models are a collection of generative AI models that can produce language, code, and images.
+   * https://bomonike.github.io/genai for definition of terms and tutorials about Generative AI, which produce new content based on what is described in the input. The OpenAI models are a collection of generative AI models that can produce language, code, and images.
    * https://azure.microsoft.com/pricing/details/cognitive-services/openai-service
    <br /><br />
 
@@ -3470,9 +3480,36 @@ https://azure.github.io/Cloud-Native/
 https://github.com/azure/cloud-native
 is a showcase on Azure Cloud Native, the products, events and how to get started or go deep with cloud native technologies, including Serverless on Azure.
 
+
+## Responsible AI
+
+<a target="_blank" href="https://docs.microsoft.com/en-us/learn/modules/get-started-ai-fundamentals/7-understand-responsible-ai">LEARN</a>:
+
+Using Microsoft's API algorithms and data (such as celebrity faces, landmarks, etc.) means there has be some vetting by Microsoft's <a target="_blank" href="https://www.microsoft.com/research/group/fate/">FATE (Fairness, Accountability, Transparency, and Ethics)</a> research group in NYC:
+<a target="_blank" src="https://user-images.githubusercontent.com/300046/117167864-e1c4ee00-ad84-11eb-88b1-4f685155a64f.png"><img align="right" width="300" alt="az-ai-principled-1126x610" src="https://user-images.githubusercontent.com/300046/117167864-e1c4ee00-ad84-11eb-88b1-4f685155a64f.png" /></a>
+<a target="_blank" href="https://learn.microsoft.com/en-us/training/browse/?terms=ethical">
+Microsoft's ethical principles</a> guiding the development and use of artificial intelligence with people:
+
+   * Fairness: AI systems should treat all people fairly, regardless of race, belief, gender, sexuality, or other factors.
+   * Reliability & Safety: AI systems should perform reliably and safely, give reliable answers with quantifiable confidence levels.
+   * Privacy & Security: AI systems should be secure and respect privacy - protect sensitive data and operate within applicable data protection laws.
+   * Inclusiveness: AI systems should empower everyone and engage people - be available to all users, regardless of their abilities.
+   * Transparency: AI systems should be understandable - operate understandably and openly.
+   * Accountability: AI systems should have algorithmic accountability - run by people who are accountable for the actions of those systems.
+   <br /><br />
+
+Resources:
+   * <a target="_blank" href="https://www.microsoft.com/ai/responsible-ai-resources">https://www.microsoft.com/ai/responsible-ai-resources</a>
+   * <a target="_blank" href="https://www.youtube.com/playlist?list=PLl8yjZLsL_WobPtlCCIRgoU91Geokx7qK">VIDEO</a>: Ethics an Artificial Intelligence at the DotNet Day Zurich May 28th, 2019, by Laurent Bugnion.
+
 Mehrnoosh Sameki has a
 https://cs-people.bu.edu/sameki/ResponsibleAI.html
 course in Responsible AI
+
+"AI Alignment" refers to unintended consequences.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=qOB4dsEKYMg">VIDEO:
+Another OpenAI Scientist QUITS —Says AGI Is a ‘TICKING TIME BOMB’
 
 
 ## More
