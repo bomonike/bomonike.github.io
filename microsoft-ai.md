@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-14"
-lastchange: "v037 + rowspan in table :microsoft-ai.md"
+lastchange: "v038 + diag rowspan in table :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -126,6 +126,17 @@ DEFINITION: There are what are called "narrow" or "weak" AI.
    <br /><br />
 
 
+### Availability of AI Products
+
+ Every product Microsoft offers is listed, by region in 
+ <a target="_blank" href="https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/table">this table showing availability</a> (regardless of whether you have permissions to each specific product).
+
+<a target="_blank" href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=cognitive-services&regions=canada-central,canada-east,us-central,us-east,us-east-2,us-north-central,us-south-central,us-west-central,us-west,us-west-2,norway-east">
+<img alt="microsoft-ai-avail-240108-2544x1796.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707416863/microsoft-ai-avail-240108-2544x1796_wj2ysp.png"></a>
+
+
+
+
 <a name="CognitiveServicesList"></a>
 
 ### Cognitive Services List
@@ -166,15 +177,6 @@ After you've met the <a href="#Prerequisites">prerequisite setup</a> to run "az"
 
 PROTIP: "ContentModerator" has been deprecated.
 
-### Availability
-
- Every product Microsoft offers is listed, by region in 
- <a target="_blank" href="https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/table">this table showing availability</a> (regardless of whether you have permissions to each specific product).
-
-<a target="_blank" href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=cognitive-services&regions=canada-central,canada-east,us-central,us-east,us-east-2,us-north-central,us-south-central,us-west-central,us-west,us-west-2,norway-east">
-<img alt="microsoft-ai-avail-240108-2544x1796.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707416863/microsoft-ai-avail-240108-2544x1796_wj2ysp.png"></a>
-
-
 <a name="CognitiveServicesGroups"></a>
 
 ### Cognitive Services Grouping
@@ -208,7 +210,7 @@ IMPORTANT PROTIP: Microsoft allows its free "F0" tier to be applied to only a si
 
 <a name="ServicesTable"></a>
 
-## Services Table
+## Pricing of AI Services Kinds
 
 Within each <a href="#CognitiveServicesGroups">grouping</a>, each service is listed in the sequence within that group's LEARN module.
 
@@ -606,15 +608,6 @@ Create computer vision solutions with Azure AI Vision<br />5 hr 1 min</td></tr>
 <tr valign="top"><td>3.</td><td>Natural Language Processing<br />2 hr 39 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-language/">Exercises</a>:
 Develop natural language processing solutions with Azure AI Services<br />7 hr 4 min</td></tr>
-
-<tr valign="top" rowspan="2"><td rowspan="2">4.</td><td rowspan="2">Document Intelligence and Knowledge Mining<br />1 hr 19 min</td><td>
-<tr valign="top"><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
-Develop solutions with Azure AI Document Intelligence<br />2 hr 3 min</td></tr>
-
-<tr valign="top"><td>
-<a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
-Implement <a href="#knowledge-miningTutorials">knowledge mining</a> with Azure AI Search<br />6 hr 24 min</a>
-</td></tr>
 
 <tr valign="top"><td>5.</td><td>Generative AI<br />3 hr 32 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-openai/">Exercises</a>:
