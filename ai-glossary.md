@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-09"
-lastchange: "v013 + BST etc :ai-glossary.md"
+date: "2025-03-14"
+lastchange: "v015 + what is AI :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -20,13 +20,18 @@ created: "2021-08-24"
 {% include l18n.html %}
 {% include _toc.html %}
 
-## LLM Foundation Models
+## What is AI?
 
-* OpenAI
-* Anthropic
-* MAI (Microsoft AI)
+AI personality Bernard Marr <a target="_blank" href="https://www.forbes.com/sites/bernardmarr/2018/02/14/the-key-definitions-of-artificial-intelligence-ai-that-explain-its-importance/#22db12bb4f5d">identified</a> <a target="_blank" href="https://www.bernardmarr.com/default.asp?contentID=2191">four types of AI</a> evolving:
 
-Stefan Bauschard from Education Disrupted: Teaching and Learning in An AI World
+1. "reactive" machines (such as Spam filters and the Netflix recommendation engine) are not able to learn or conceive of the past or future, so it responds to identical situations in the exact same way every time.
+
+2. "limited memory" AI absorbs learning data and improve over time based on its experience, using historical data to make predictions. It's similar to the way the human brain’s neurons connect. Deep-learning algorithms used in ChatGPT widely released in 2022 is the AI that is widely used and being perfected today.
+
+3. <a target="_blank" href="https://www.bernardmarr.com/default.asp?contentID=2191">"theory of mind"</a> is when AI acquires decision-making capabilities equal to humans, and have the capability to recognize and remember emotions, and adjust behavior based on those emotions. This was realized in 2025 with "reasoning" and "Chain of Thought" capabilities in LLM models.
+
+4. "self-aware", also called artificial superintelligence (ASI), is "sentient" understanding of of its own needs and desires.
+
 
 ## Stages of AI
 
@@ -116,6 +121,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Perception | AI's ability to receive and interpret information through computer vision, speech recognition, and other sensor-based inputs.
 * Python | A high-level, general-purpose programming language that supports multiple programming paradigms, including structured, object-oriented, and functional programming.
 * PIL = Python Imaging Library | A versatile Python library that adds image processing capabilities to Python interpreter that helps to perform tasks such as reading, rescaling, and saving images in different formats.
+* PPO = Proximal Policy Optimization | An actor-critic algorithm from OpenAI that looks at how much better than average were the action taken. <a target="_blank" href="https://www.youtube.com/watch?v=8jtAzxUwDj0&t=8m43s">*</a>
 * PTX = Parallel Thread eXecution | virtual instruction set hardware-agnostic achitecture operating under NVIDIA's CUDA parallel execution framework, used by DeepSeek. <a target="_blank" href="https://www.youtube.com/watch?v=iEda8_Mvvo4">VIDEO</a>
 
 * Quantization | the process of mapping continuous signals into discrete digital values. Used in digital signal processing, data compression, and machine learning.
@@ -194,6 +200,7 @@ Current, XAI techniques:
 
 * TheAIGRID 29M views in 2024 for $216K
 * AI Revolution YouTube channel 20M views in 2024 for $138K
+* <a target="_blank" href="https://www.youtube.com/watch?v=sqFZaIebSB0">VIDEO: Understanding AI Jargon - Your Ultimate Cheat Sheet</a> by 
 * <a target="_blank" href="https://www.youtube.com/watch?v=9oED8PXJuKg">The AI Advantage</a> by Igor P. from Pertugal sells <a target="_blank" href="https://shop.myaiadvantage.com/products/community-course">$97/month community</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=4e2K50CO4iM">Matthew Berman</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=KovHUQRdPnE">Prompt Engineering</a> does deep dive tech
@@ -207,11 +214,19 @@ Current, XAI techniques:
 * <a target="_blank" href="https://www.youtube.com/watch?v=zvbTDUSz8Cc">Fireship</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=LA4KXEYcU4o">AICodeKing</a>
 
-Foundation models:
-* <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">OpenAI</a>
+* Stefan Bauschard from Education Disrupted: Teaching and Learning in An AI World
 
 How to make videos:
 * <a target="_blank" href="https://www.youtube.com/watch?v=tjPf3TEWX7Q">Invideo</a>
 * https://www.youtube.com/watch?v=OdUbl_2H8Pg Study with me
 * https://www.youtube.com/watch?v=9Vf31JTzRKk Steven Thompson
+
+## LLM Foundation Models
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">OpenAI</a>
+* Anthropic
+* MAI (Microsoft AI)
+* IBM
+* AWS
+
 
