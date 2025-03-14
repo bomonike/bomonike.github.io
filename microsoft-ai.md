@@ -511,7 +511,7 @@ Develop natural language processing solutions with Azure AI Services<br />7 hr 4
 </td><td rowspan="2"><a href="#DocIntel">Document Intelligence</a> and Knowledge Mining<br />1 hr 19 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
 Develop solutions with Azure AI Document Intelligence<br />2 hr 3 min</td></tr>
-<tr valign="top"><td>-</td><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
+<tr valign="top"><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
 Implement <a href="#knowledge-miningTutorials">knowledge mining</a> with Azure AI Search<br />6 hr 24 min</td></tr>
 
 <tr valign="top"><td>5.</td><td>Generative AI<br />3 hr 32 min</td><td>
@@ -519,6 +519,12 @@ Implement <a href="#knowledge-miningTutorials">knowledge mining</a> with Azure A
 Develop Generative AI solutions with <a href="#OpenAIFeatures">Azure OpenAI Services</a><br />2 hr 13 min</td></tr>
 
 </table>
+
+https://www.linkedin.com/in/alison-felix/
+notice that in exercises some of the items are duplicated. For example:
+   * The 1st one goes to ...Exercises/ai-foundry/01-azure-search.html
+   * The 2nd one goes to ...Exercises/01-azure-search.html
+
 
 <a name="DocIntel"></a>
 History of AI exams:
