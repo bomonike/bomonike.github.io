@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-13"
-lastchange: "v034 + update curriculum :microsoft-ai.md"
+lastchange: "v036 + certs table :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -576,7 +576,8 @@ References:
 
 ## Azure AI certifications
 
-There are three levels of AI:
+Among <a target="_blank" href="https://bomonike.github.io/azure-certifications">Microsoft's Azure professional certifications</a> illustrated by <a target="_blank" href="https://arch-center.azureedge.net/Credentials/Certification-Poster_en-us.pdf">this pdf</a>,
+there are three levels of AI:
 
 1. <a href="#AI-900">AI-900</a> (Fundamentals) is the entry-level exam ($99). It's a pre-requisite for:
 
@@ -588,42 +589,44 @@ There are three levels of AI:
    * <a target="_blank" href="https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/dSDK3/getting-started-with-jupyter-notebooks-in-azure-machine-learning-studio">LAB: Getting started with Jupyter Notebooks in Azure Machine Learning Studio</a>
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr valign="bottom"><th><a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">AI-900 Azure AI Fundamentals</a>
+<tr valign="bottom"><th>#</th><th><a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">AI-900 Azure AI Fundamentals</a>
 </th><th><a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/?practice-assessment-type=certification">AI-102 Azure AI Engineer Associate</a></th></tr>
 
-<tr valign="top"><td>1.</td><td>AI Overview
-3 hr 2 min</td><td>
-Get started with Azure AI Services
-5 hr 5 min</td></tr>
+<tr valign="top"><td>MS LEARN:</td><td><a target="_blank" href="https://github.com/MicrosoftLearning/mslearn-ai-fundamentals">MS LEARN</a></td><td>
+-</td></tr>
+<tr valign="top"><td>Excercises:</td><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-fundamentals/">Exercises</a></td><td>
+-</td></tr>
 
-<tr valign="top"><td>2.</td><td>Computer Vision
-1 hr 40 min</td><td>
-Create computer vision solutions with Azure AI Vision
-5 hr 1 min</td></tr>
+<tr valign="top"><td>1.</td><td>AI Overview<br />3 hr 2 min</td><td>
+<a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-services/">Exercises</a>:
+Get started with Azure AI Services<br />5 hr 5 min</td></tr>
 
-<tr valign="top"><td>3.</td><td>Natural Language Processing
-2 hr 39 min</td><td>
-Develop natural language processing solutions with Azure AI Services
-7 hr 4 min</td></tr>
+<tr valign="top"><td>2.</td><td>Computer Vision<br />1 hr 40 min</td><td>
+<a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-vision/">Exercises</a>:
+Create computer vision solutions with Azure AI Vision<br />5 hr 1 min</td></tr>
 
-<tr valign="top" colspan="2"><td colspan="2">4.</td><td colspan="2">Document Intelligence and Knowledge Mining
-1 hr 19 min</td><td>
-Develop solutions with Azure AI Document Intelligence
-2 hr 3 min</td></tr>
-<tr valign="top">
-Implement knowledge mining with Azure AI Search
-6 hr 24 min</td></tr>
+<tr valign="top"><td>3.</td><td>Natural Language Processing<br />2 hr 39 min</td><td>
+<a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-language/">Exercises</a>:
+Develop natural language processing solutions with Azure AI Services<br />7 hr 4 min</td></tr>
 
-<tr valign="top"><td>5.</td><td>Generative AI
-3 hr 32 min</td><td>
-Develop Generative AI solutions with Azure OpenAI Service
-2 hr 13 min</td></tr>
+<tr valign="top" colspan="2"><td colspan="2">4.</td><td colspan="2">Document Intelligence and Knowledge Mining<br />1 hr 19 min</td><td>
+<a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
+Develop solutions with Azure AI Document Intelligence<br />2 hr 3 min</td></tr>
+<tr valign="top"><td>
+<a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
+Implement knowledge mining with Azure AI Search<br />6 hr 24 min</td></tr>
+
+<tr valign="top"><td>5.</td><td>Generative AI<br />3 hr 32 min</td><td>
+<a target="_blank" href="https://microsoftlearning.github.io/mslearn-openai/">Exercises</a>:
+Develop Generative AI solutions with Azure OpenAI Service<br />2 hr 13 min</td></tr>
+
+
+
+
+
+
 
 </table>
-
-Among <a target="_blank" href="https://bomonike.github.io/azure-certifications">Microsoft's Azure professional certifications</a>:
-
-   https://arch-center.azureedge.net/Credentials/Certification-Poster_en-us.pdf
 
    * Previous exam 774 was retired. It was based on <a target="_blank" href="https://www.youtube.com/watch?v=eJOv-TfhhzQ">VIDEO</a>: <a target="_blank" href="https://services.azureml.net/">Azure Machine Learning Studio (classic)</a> web services, which reflected "All Microsoft all the time" using proprietary "pickle" (pkl) model files. <a target="_blank" href="https://www.coursera.org/learn/predictive-modelling-azure-machine-learning-studio/home/welcome">Classes referencing it</a> are now obsolete.
 
@@ -643,7 +646,8 @@ Among <a target="_blank" href="https://bomonike.github.io/azure-certifications">
 
 ### AI-900
 
-PROTIP: Here's a must-see website: <a target="_blank" href="http://aka.ms/AIFunPath">http://aka.ms/AIFunPath</a> which expands to <a target="_blank" href="https://docs.microsoft.com/en-us/learn/certifications/exams/AI-900">
+PROTIP: <a target="_blank" href="http://aka.ms/AIFunPath">http://aka.ms/AIFunPath</a> which expands to <a target="_blank" href="https://github.com/MicrosoftLearning/mslearn-ai-fundamentals">https://github.com/MicrosoftLearning/mslearn-ai-fundamentals</a  >
+
 Exam definitions are at Microsoft's LEARN</a> includes a free text-based tutorial called
 <a target="_blank" href="
 https://docs.microsoft.com/en-us/learn/paths/get-started-with-artificial-intelligence-on-azure/">
