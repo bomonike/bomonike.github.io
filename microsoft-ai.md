@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-14"
-lastchange: "v040 + alz & fix table :microsoft-ai.md"
+lastchange: "v041 + alz & fix table rowspan :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -130,7 +130,7 @@ DEFINITION: There are what are called "narrow" or "weak" AI.
 
 The method shown in this section gives you a list of all "kinds" of services Azure currently provides for <strong>your Azure subscription</strong>.
 
-After you've met the <a href="#Prerequisites">prerequisite setup</a> to run "az" commands on your Terminal, run this command:
+After your Command Terminal environment on your laptop has the <a href="#Prerequisites">Installed prerequisites</a> of obtaining an Azure account with subscription and installed the "az" CLI modules needed to run "az" commands on your Terminal, run this command:
 
    <ul><pre><strong>az cognitiveservices account list-kinds</strong></pre>
    &nbsp;
@@ -508,10 +508,10 @@ Create computer vision solutions with Azure AI Vision<br />5 hr 1 min</td></tr>
 Develop natural language processing solutions with Azure AI Services<br />7 hr 4 min</td></tr>
 
 <tr valign="top"><td rowspan="2">4.
-</td><td><a href="#DocIntel">Document Intelligence</a> and Knowledge Mining<br />1 hr 19 min</td><td>
+</td><td rowspan="2"><a href="#DocIntel">Document Intelligence</a> and Knowledge Mining<br />1 hr 19 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
 Develop solutions with Azure AI Document Intelligence<br />2 hr 3 min</td></tr>
-<tr valign="top"><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
+<tr valign="top"><td>-</td><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
 Implement <a href="#knowledge-miningTutorials">knowledge mining</a> with Azure AI Search<br />6 hr 24 min</td></tr>
 
 <tr valign="top"><td>5.</td><td>Generative AI<br />3 hr 32 min</td><td>
@@ -716,31 +716,34 @@ Practice tests:
 
 <hr />
 
-
-<hr />
-
 <a name="Prerequisites"></a>
 
-## Prerequisites for Hands-on
+## Terminal Prerequisites for Hands-on
 
-This document assumes that you have done the following
+As some LEARN modules explains:
 
-1. <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> and learn Portal GUI menu keyboard shortcuts.
+1. <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> 
+and learn Portal GUI menu keyboard shortcuts on the Azure portal at 
+
+   <a target="_blank" href="https://portal.azure.com/">https://portal.azure.com</a>
+
+1. Open your Command Terminal.
 
 1. Setup a CLI scripting environment in shell.azure.com.
 <a target="_blank" href="https://bomonike.github.io/mac-setup/">like I describe in my mac-setup page</a>
 
 1. Use CLI to <a href="#CognitiveServices">Create a Cognitive Service</a> to get keys to call the first REST API from among <a target="_blank" href="https://github.com/Azure-Samples/cognitive-services-REST-api-samples">sample calls</a> to <a target="_blank" href="https://docs.microsoft.com/en-us/rest/api/azure/">many REST APIs</a>: the <a href="#TextTranslation">Translator Text API</a>.
 
-1. Setup <strong>PowerShell scripts</strong>
-
-1. On Windows 11, install Edge according to
+1. On Windows 11, install Edge browser according to
 
    https://microsoftlearning.github.io/mslearn-ai-services/Instructions/setup.html
 
    The setup is for this LAB pop-up:
 
    https://learn.microsoft.com/en-us/training/modules/create-manage-ai-services/5a-exercise-ai-services
+
+1. Setup <strong>PowerShell scripts</strong>
+
 
 <hr />
 
