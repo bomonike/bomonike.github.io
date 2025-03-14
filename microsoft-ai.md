@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-14"
-lastchange: "v038 + diag rowspan in table :microsoft-ai.md"
+lastchange: "v039 + fix rowspan in table :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -22,19 +22,6 @@ created: "2018-04-03"
 Here is a hands-on deep dive introduction to Microsoft's Artificial Intelligence (AI) offerings running on the Azure cloud.
 My contribution to the world (to you) is a less overwhelming learning sequence, one that starts with the <strong>least complex</strong> of technologies used, then more complex ones.
 {% include whatever.html %}
-
-## What is AI?
-
-AI personality Bernard Marr <a target="_blank" href="https://www.forbes.com/sites/bernardmarr/2018/02/14/the-key-definitions-of-artificial-intelligence-ai-that-explain-its-importance/#22db12bb4f5d">identified</a> <a target="_blank" href="https://www.bernardmarr.com/default.asp?contentID=2191">four types of AI</a> evolving:
-
-1. "reactive" machines (such as Spam filters and the Netflix recommendation engine) are not able to learn or conceive of the past or future, so it responds to identical situations in the exact same way every time.
-
-2. "limited memory" AI absorbs learning data and improve over time based on its experience, using historical data to make predictions. It's similar to the way the human brain’s neurons connect. Deep-learning algorithms used in ChatGPT widely released in 2022 is the AI that is widely used and being perfected today.
-
-3. <a target="_blank" href="https://www.bernardmarr.com/default.asp?contentID=2191">"theory of mind"</a> is when AI acquires decision-making capabilities equal to humans, and have the capability to recognize and remember emotions, and adjust behavior based on those emotions. This was realized in 2025 with "reasoning" and "Chain of Thought" capabilities in LLM models.
-
-4. "self-aware", also called artificial superintelligence (ASI), is "sentient" understanding of of its own needs and desires.
-
 
 
 ## Human-Computer Interaction (HCI)
@@ -484,96 +471,6 @@ Microsoft competes for talent with Google, Amazon, IBM, China's Tencent, and man
 
 <hr />
 
-<a name="Prerequisites"></a>
-
-## Prerequisites for Hands-on
-
-This document assumes that you have done the following
-
-1. <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> and learn Portal GUI menu keyboard shortcuts.
-
-1. Setup a CLI scripting environment in shell.azure.com.
-<a target="_blank" href="https://bomonike.github.io/mac-setup/">like I describe in my mac-setup page</a>
-
-1. Use CLI to <a href="#CognitiveServices">Create a Cognitive Service</a> to get keys to call the first REST API from among <a target="_blank" href="https://github.com/Azure-Samples/cognitive-services-REST-api-samples">sample calls</a> to <a target="_blank" href="https://docs.microsoft.com/en-us/rest/api/azure/">many REST APIs</a>: the <a href="#TextTranslation">Translator Text API</a>.
-
-1. Setup <strong>PowerShell scripts</strong>
-
-1. On Windows 11, install Edge according to
-
-   https://microsoftlearning.github.io/mslearn-ai-services/Instructions/setup.html
-
-   The setup is for this LAB pop-up:
-
-   https://learn.microsoft.com/en-us/training/modules/create-manage-ai-services/5a-exercise-ai-services
-
-<hr />
-
-## Learning Sequence
-
-This document covers:
-
-1. <a href="#ShutDownRGs">Automatically shut down Resource Groups of a Subscription</a> by <strong>creating a Logic App</strong>.
-
-1. Run an API connecting to an established endpoint (SaaS) you don't need to setup:
-Bing Search.
-
-1. Create Functions
-
-1. <a href="#CreateWorkspace">Create a Workspace resource</a> to run ...
-
-1. <a href="#CreateWorkspace">Create a Workspace resource</a> and<br />
-   <a href="#CreateComputeInstance">Create Compute instance</a> to run<br />
-   <a href="#AutoML">Automated ML</a> of regression of bike-rentals.
-1. <a href="#CreateComputeInstance">Create Compute instance</a> to
-   run a <a name="RunJupyter">iPython notebook</a>
-1. Create ML Workspace in Portal, then ml.azure.com
-1. Us cognitivevision.com to <a href="#CreateCustomVision">Create Custom Vision</a> for ...
-
-1. QnA Maker Conversational AI
-1. Train a Machine Learning model using <a name="RunJupyter">iPython notebook</a>
-1. IoT - "Hey Google, ask Azure to shut down all my compute instances".
-
-
-<hr />
-
-<a name="ShutDownRGs"></a>
-
-## Automation necessary for PaaS
-
-IMPORTANT PROTIP: As of this writing, Microsoft Azure does NOT have a full SaaS offering for every AI/ML service. You are required to <strong>create your own computer instances</strong>, and thus manage machine sizes (which is a hassle). Resources you create <strong>continue to cost money</strong> until you shut them down.
-
-So after learning to set up the first compute service, we need to cover <strong>automation</strong> to <strong>shut them all down</strong> while you sleep.
-
-So that you're not tediously recreating everything everyday, this tutorial focuses on automation scripts (CLI Bash and PowerShell scripts) to create compute instances, publish results, then shut itself down. Each report run overwrites files from the previous run so you're not constantly piling up storage costs.
-
-Another reason for being able to rebuild is that you if you find that the pricing tier chosen is no longer suitable for your solution, you must create a new Azure Cognitive Search resource and recreate all indexes and objects.
-
-When you use my <a target="_blank" href="https://github.com/wilsonmar/azure-quickly/">Automation scripts at https://github.com/wilsonmar/azure-quickly/ to create resources the way you like</a>, using "Infrastructure as Code", so you can throw away any Subscription and begin anew quickly.
-
-My scripts also makes use of a more secure way to store secrets than inserting them in code that can be checked back into GitHub.
-
-Effective deletion hygiene is also good to see how your instances behave when it takes advantage of <strong>cheaper spot instances</strong> which can disappear at any time.
-This can also be used for "chaos engineering" efforts.
-
-To verify resource status and to discuss with others, you still need skill at clicking through the Portal.azure.com, ML.azure.com, etc.
-
-References:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=lu7a5RDeJU0" title="by Build5Nines">VIDEO</a>: To release IP address, don't stop machines, but delete the resource.
-
-   * <a target="_blank" href="https://www.youtube.com/watch?v=Rrx7NzPugaE">VIDEO</a>: <a target="_blank" href="https://dev.to/azure/keep-your-azure-subscription-clean-automatically-mmi">shut down automatically all your existing VMs</a> (using a PowerShell script called by a scheduled Logic App), by <a target="_blank" href="https://www.youtube.com/channel/UCAr20GBQayL-nFPWFnUHNAA">Frank Boucher</a> at <a target="_blank" href="https://github.com/FBoucher/AzurePowerTools">github.com/FBoucher</a>
-
-   * <a target="_blank" href="https://www.codeisahighway.com/effective-ways-to-delete-resources-in-a-resource-group-on-azure/">VIDEO</a>
-
-   * <a target="_blank" href="https://azure.microsoft.com/en-us/blog/announcing-auto-shutdown-for-vms-using-azure-resource-manager/">Auto-shutdown by Resource Manager</a> <a target="_blank" href="https://azure.microsoft.com/en-us/updates/set-auto-shutdown-within-a-couple-of-clicks-for-vms-using-azure-resource-manager/" title="November 22, 2016">on a schedule</a> is only for VMs in DevOps
-
-   * https://www.c-sharpcorner.com/article/deploy-a-google-action-on-azure/
-
-   * <a target="_blank" href="https://automys.com/library/asset/scheduled-virtual-machine-shutdown-startup-microsoft-azure" title="2015"> start/stop by an Automation Account Runbook</a> for specific tags attached to different Resource Groups: Assert: "AutoshutdownSchedule: Tuesday" run every hour. <a target="_blank" href="https://translate.google.com/translate?sl=auto&tl=en&u=https://github.com/chomado/GoogleHomeHack">Google Translate</a>
-
-
-<hr />
-
 <a href="AIcerts"></a>
 
 ## Azure AI certifications
@@ -581,12 +478,13 @@ References:
 Among <a target="_blank" href="https://bomonike.github.io/azure-certifications">Microsoft's Azure professional certifications</a> illustrated by <a target="_blank" href="https://arch-center.azureedge.net/Credentials/Certification-Poster_en-us.pdf">this pdf</a>,
 there are three levels of AI:
 
-1. <a href="#AI-900">AI-900</a> (Fundamentals) is the entry-level exam ($99). It's a pre-requisite for:
+1. <a href="#AI-900">AI-900</a> $99 Fundamentals is the entry-level exam. It's a pre-requisite for:
 
-2. <a href="#AI-102">AI-102</a> (Associate) $165 with free re-cert after 1-year) focuses on the use of <strong>pre-packaged</strong> cloud-based services for AI development. 
+2. <a href="#AI-102">AI-102</a> $165 Associate exam focuses on the use of <strong>pre-packaged</strong> cloud-based services for AI development. It has free re-cert after 1-year.
 
+   <a name="Coursera"></a>
    Get 50% off the AI-102 if you finish <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/microsoft-ai-and-ml-engineering?authProvider=mckinsey">Coursera's Microsoft AI & ML Engineering Professional Certificate</a> by Mark DiMauro at Univ. Pittsbergh.
-   * <a target="_blank" href="https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/dSDK3/getting-started-with-jupyter-notebooks-in-azure-machine-learning-studio">LAB: Getting started with Jupyter Notebooks in Azure Machine Learning Studio</a>
+   * <a href="#Coursera">Coursera LAB</a>: <a target="_blank" href="https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/dSDK3/getting-started-with-jupyter-notebooks-in-azure-machine-learning-studio">Getting started with Jupyter Notebooks in Azure Machine Learning Studio</a>
 
 <table border="1" cellpadding="4" cellspacing="0">
 <tr valign="bottom"><th>#</th><th><a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">AI-900 Azure AI Fundamentals</a>
@@ -609,6 +507,14 @@ Create computer vision solutions with Azure AI Vision<br />5 hr 1 min</td></tr>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-language/">Exercises</a>:
 Develop natural language processing solutions with Azure AI Services<br />7 hr 4 min</td></tr>
 
+<tr valign="top" colspan="2"><td colspan="2">4.
+</td><td>Document Intelligence and Knowledge Mining<br />1 hr 19 min</td><td>
+<a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
+Develop solutions with Azure AI Document Intelligence<br />2 hr 3 min</td></tr>
+<tr valign="top"><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
+Implement <a href="#knowledge-miningTutorials">knowledge mining</a> with Azure AI Search<br />6 hr 24 min</a>
+</td></tr>
+
 <tr valign="top"><td>5.</td><td>Generative AI<br />3 hr 32 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-openai/">Exercises</a>:
 Develop Generative AI solutions with Azure OpenAI Service<br />2 hr 13 min</td></tr>
@@ -625,7 +531,7 @@ History of AI exams:
 
    * <a target="_blank" href="https://github.com/MicrosoftLearning/dp-090-databricks-ml">DP-090</a> and <a target="_blank" href="https://microsoftlearning.github.io/dp-090-databricks-ml/">this LAB</a> goes into  implementing a Machine Learning Solution with <a target="_blank" href="https://bomonike.github.io/databricks/">Databricks</a>, which has its own AI certification path.
 
-   * <a target="_blank" href="https://bomonike.github.io/azure-machine-learning/#DP-100">exam DP-100</a> covers development of custom models using Azure Machine Learning.
+   * <a target="_blank" href="https://bomonike.github.io/azure-machine-learning/#DP-100">DP-100</a> covers development of custom models using Azure Machine Learning.
 
    * <a target="_blank" href="https://docs.microsoft.com/en-us/learn/certifications/exams/dp-203">DP-203 Data Engineering on Microsoft Azure</a> goes into how to use machine learning within <strong>Azure Synapse Analytics</strong>. It was retired on March 31, 2025.
 
@@ -663,7 +569,7 @@ Tim Warner has created several video courses on AI-900 and AI-100:
    * OReilly.com references<br /><a target="_blank" href="https://github.com/timothywarner/ai100">https://github.com/timothywarner/ai100</a>
 
 
-* <a target="_blank" href="https://cloudacademy.com/learning-paths/ai-900-exam-preparation-microsoft-azure-ai-fundamentals-1968/">CloudAcademy's 4h AI-900 video course</a> includes lab time (1-2 hours at a time).
+<a target="_blank" href="https://cloudacademy.com/learning-paths/ai-900-exam-preparation-microsoft-azure-ai-fundamentals-1968/">CloudAcademy's 4h AI-900 video course</a> includes lab time (1-2 hours at a time).
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=E9aarWMLJw0">AI-900 Study Guide - YouTube</a>
 
@@ -674,7 +580,7 @@ AI-900 Sample Practice Exam Questions</a>
 
 * https://www.itexams.com/info/AI-900
 
-* Emilio Melo on <a target="_blank" href="https://www.linkedin.com/learning/exam-tips-microsoft-azure-ai-fundamentals-ai-900/the-world-is-changing-because-of-ai">Linkedin Learning</a>
+Emilio Melo on <a target="_blank" href="https://www.linkedin.com/learning/exam-tips-microsoft-azure-ai-fundamentals-ai-900/the-world-is-changing-because-of-ai">Linkedin Learning</a>
 
 Practice tests:
    * https://www.whizlabs.com/learn/course/microsoft-azure-ai-900/
@@ -887,6 +793,98 @@ Practice tests:
 
 <hr />
 
+
+<hr />
+
+<a name="Prerequisites"></a>
+
+## Prerequisites for Hands-on
+
+This document assumes that you have done the following
+
+1. <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> and learn Portal GUI menu keyboard shortcuts.
+
+1. Setup a CLI scripting environment in shell.azure.com.
+<a target="_blank" href="https://bomonike.github.io/mac-setup/">like I describe in my mac-setup page</a>
+
+1. Use CLI to <a href="#CognitiveServices">Create a Cognitive Service</a> to get keys to call the first REST API from among <a target="_blank" href="https://github.com/Azure-Samples/cognitive-services-REST-api-samples">sample calls</a> to <a target="_blank" href="https://docs.microsoft.com/en-us/rest/api/azure/">many REST APIs</a>: the <a href="#TextTranslation">Translator Text API</a>.
+
+1. Setup <strong>PowerShell scripts</strong>
+
+1. On Windows 11, install Edge according to
+
+   https://microsoftlearning.github.io/mslearn-ai-services/Instructions/setup.html
+
+   The setup is for this LAB pop-up:
+
+   https://learn.microsoft.com/en-us/training/modules/create-manage-ai-services/5a-exercise-ai-services
+
+<hr />
+
+## Learning Sequence
+
+This document covers:
+
+1. <a href="#ShutDownRGs">Automatically shut down Resource Groups of a Subscription</a> by <strong>creating a Logic App</strong>.
+
+1. Run an API connecting to an established endpoint (SaaS) you don't need to setup:
+Bing Search.
+
+1. Create Functions
+
+1. <a href="#CreateWorkspace">Create a Workspace resource</a> to run ...
+
+1. <a href="#CreateWorkspace">Create a Workspace resource</a> and<br />
+   <a href="#CreateComputeInstance">Create Compute instance</a> to run<br />
+   <a href="#AutoML">Automated ML</a> of regression of bike-rentals.
+1. <a href="#CreateComputeInstance">Create Compute instance</a> to
+   run a <a name="RunJupyter">iPython notebook</a>
+1. Create ML Workspace in Portal, then ml.azure.com
+1. Us cognitivevision.com to <a href="#CreateCustomVision">Create Custom Vision</a> for ...
+
+1. QnA Maker Conversational AI
+1. Train a Machine Learning model using <a name="RunJupyter">iPython notebook</a>
+1. IoT - "Hey Google, ask Azure to shut down all my compute instances".
+
+
+<hr />
+
+<a name="ShutDownRGs"></a>
+
+## Automation necessary for PaaS
+
+IMPORTANT PROTIP: As of this writing, Microsoft Azure does NOT have a full SaaS offering for every AI/ML service. You are required to <strong>create your own computer instances</strong>, and thus manage machine sizes (which is a hassle). Resources you create <strong>continue to cost money</strong> until you shut them down.
+
+So after learning to set up the first compute service, we need to cover <strong>automation</strong> to <strong>shut them all down</strong> while you sleep.
+
+So that you're not tediously recreating everything everyday, this tutorial focuses on automation scripts (CLI Bash and PowerShell scripts) to create compute instances, publish results, then shut itself down. Each report run overwrites files from the previous run so you're not constantly piling up storage costs.
+
+Another reason for being able to rebuild is that you if you find that the pricing tier chosen is no longer suitable for your solution, you must create a new Azure Cognitive Search resource and recreate all indexes and objects.
+
+When you use my <a target="_blank" href="https://github.com/wilsonmar/azure-quickly/">Automation scripts at https://github.com/wilsonmar/azure-quickly/ to create resources the way you like</a>, using "Infrastructure as Code", so you can throw away any Subscription and begin anew quickly.
+
+My scripts also makes use of a more secure way to store secrets than inserting them in code that can be checked back into GitHub.
+
+Effective deletion hygiene is also good to see how your instances behave when it takes advantage of <strong>cheaper spot instances</strong> which can disappear at any time.
+This can also be used for "chaos engineering" efforts.
+
+To verify resource status and to discuss with others, you still need skill at clicking through the Portal.azure.com, ML.azure.com, etc.
+
+References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lu7a5RDeJU0" title="by Build5Nines">VIDEO</a>: To release IP address, don't stop machines, but delete the resource.
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Rrx7NzPugaE">VIDEO</a>: <a target="_blank" href="https://dev.to/azure/keep-your-azure-subscription-clean-automatically-mmi">shut down automatically all your existing VMs</a> (using a PowerShell script called by a scheduled Logic App), by <a target="_blank" href="https://www.youtube.com/channel/UCAr20GBQayL-nFPWFnUHNAA">Frank Boucher</a> at <a target="_blank" href="https://github.com/FBoucher/AzurePowerTools">github.com/FBoucher</a>
+
+   * <a target="_blank" href="https://www.codeisahighway.com/effective-ways-to-delete-resources-in-a-resource-group-on-azure/">VIDEO</a>
+
+   * <a target="_blank" href="https://azure.microsoft.com/en-us/blog/announcing-auto-shutdown-for-vms-using-azure-resource-manager/">Auto-shutdown by Resource Manager</a> <a target="_blank" href="https://azure.microsoft.com/en-us/updates/set-auto-shutdown-within-a-couple-of-clicks-for-vms-using-azure-resource-manager/" title="November 22, 2016">on a schedule</a> is only for VMs in DevOps
+
+   * https://www.c-sharpcorner.com/article/deploy-a-google-action-on-azure/
+
+   * <a target="_blank" href="https://automys.com/library/asset/scheduled-virtual-machine-shutdown-startup-microsoft-azure" title="2015"> start/stop by an Automation Account Runbook</a> for specific tags attached to different Resource Groups: Assert: "AutoshutdownSchedule: Tuesday" run every hour. <a target="_blank" href="https://translate.google.com/translate?sl=auto&tl=en&u=https://github.com/chomado/GoogleHomeHack">Google Translate</a>
+
+
+
 <a name="Challenges"></a>
 
 ### Challenges
@@ -900,6 +898,9 @@ Get 50% off by completing just one of <a target="_blank" href="https://developer
 * Azure AI Vision
 * Azure Optimization | AZ-500
 
+
+
+<hr />
 
 <a name="DocIntel"></a>
 
