@@ -583,8 +583,6 @@ there are three levels of AI:
 
 2. <a href="#AI-102">AI-102</a> (Associate) $165 with free re-cert after 1-year) focuses on the use of <strong>pre-packaged</strong> cloud-based services for AI development. 
 
-   The exam replaced <a href="#AI-100"><strike>AI-100</strike></a> on June 30, 2021 with a shift from infrastructure (KeyVault, AKS, Stream Analytics) to programming C#, Python, and curl commands. (Free re-cert after 2-years).
-
    Get 50% off the AI-102 if you finish <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/microsoft-ai-and-ml-engineering?authProvider=mckinsey">Coursera's Microsoft AI & ML Engineering Professional Certificate</a> by Mark DiMauro at Univ. Pittsbergh.
    * <a target="_blank" href="https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/dSDK3/getting-started-with-jupyter-notebooks-in-azure-machine-learning-studio">LAB: Getting started with Jupyter Notebooks in Azure Machine Learning Studio</a>
 
@@ -609,26 +607,26 @@ Create computer vision solutions with Azure AI Vision<br />5 hr 1 min</td></tr>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-language/">Exercises</a>:
 Develop natural language processing solutions with Azure AI Services<br />7 hr 4 min</td></tr>
 
-<tr valign="top" colspan="2"><td colspan="2">4.</td><td colspan="2">Document Intelligence and Knowledge Mining<br />1 hr 19 min</td><td>
-<a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
+<tr valign="top" colspan="2"><td rowspan="2">4.</td><td rowspan="2">Document Intelligence and Knowledge Mining<br />1 hr 19 min</td><td>
+<tr valign="top"><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
 Develop solutions with Azure AI Document Intelligence<br />2 hr 3 min</td></tr>
+
 <tr valign="top"><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
-Implement knowledge mining with Azure AI Search<br />6 hr 24 min</td></tr>
+Implement <a href="#knowledge-miningTutorials">knowledge mining</a> with Azure AI Search<br />6 hr 24 min</a>
+</td></tr>
 
 <tr valign="top"><td>5.</td><td>Generative AI<br />3 hr 32 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-openai/">Exercises</a>:
 Develop Generative AI solutions with Azure OpenAI Service<br />2 hr 13 min</td></tr>
 
-
-
-
-
-
-
 </table>
 
+History of AI exams:
+
    * Previous exam 774 was retired. It was based on <a target="_blank" href="https://www.youtube.com/watch?v=eJOv-TfhhzQ">VIDEO</a>: <a target="_blank" href="https://services.azureml.net/">Azure Machine Learning Studio (classic)</a> web services, which reflected "All Microsoft all the time" using proprietary "pickle" (pkl) model files. <a target="_blank" href="https://www.coursera.org/learn/predictive-modelling-azure-machine-learning-studio/home/welcome">Classes referencing it</a> are now obsolete.
+
+   * The MS LEARN site refers to files in <a target="_blank" href="https://github.com/MicrosoftLearning/mslearn-ai900">https://github.com/MicrosoftLearning/mslearn-ai900</a>
 
    * <a href="#AI-100"><strike>AI-100</strike></a> on June 30, 2021 with a shift from infrastructure (KeyVault, AKS, Stream Analytics) to programming C#, Python, and curl commands. (Free re-cert after 2-years).
 
@@ -638,7 +636,7 @@ Develop Generative AI solutions with Azure OpenAI Service<br />2 hr 13 min</td><
 
    * <a target="_blank" href="https://docs.microsoft.com/en-us/learn/certifications/exams/dp-203">DP-203 Data Engineering on Microsoft Azure</a> goes into how to use machine learning within <strong>Azure Synapse Analytics</strong>. It was retired on March 31, 2025.
 
-<a target="_blank" href="https://www.linkedin.com/pulse/my-journey-becoming-microsoft-certified-ai-engineer-george-chen-svese/">George Chen's Journey</a> to Microsoft Certified: AI Engineer Associate.
+<a target="_blank" href="https://www.linkedin.com/pulse/my-journey-becoming-microsoft-certified-ai-engineer-george-chen-svese/">George Chen's Journey</a> to Microsoft Certified: AI Engineer Associate. Videos with PPT file!
 
 <hr />
 
@@ -659,10 +657,6 @@ https://docs.microsoft.com/en-us/learn/paths/get-started-with-artificial-intelli
    * Describe features of <a href="#NLP">Natural Language Processing (NLP)</a> workloads on Azure (15-20%)
    * Describe features of <a href="#Coversational">conversational AI</a> workloads on Azure (15-20%)
    <br /><br />
-
-The MS LEARN site refers to files in <a target="_blank" href="
-https://github.com/MicrosoftLearning/mslearn-ai900">
-https://github.com/MicrosoftLearning/mslearn-ai900</a>
 
 * <a target="_blank" href="https://ravikirans.com/ai-900-azure-exam-study-guide/">
 Ravi Kirans' Study Guide</a> contains links to MS Docs.
@@ -922,22 +916,40 @@ Get 50% off by completing just one of <a target="_blank" href="https://developer
 
    <a target="_blank" href="https://documentintelligence.ai.azure.com/studio">https://documentintelligence.ai.azure.com/studio</a>
 
-1. Try it out: Prebuilt models expect a common type of form or document:
+   <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-model-overview">Azure AI Document Intelligence model overview</a>
 
-   * Business cards
+1. <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/use-prebuilt-form-recognizer-models/2-understand-prebuilt-models?pivots=python">Prebuilt models</a> expect a common type of form or document:
+
+   * <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/use-prebuilt-form-recognizer-models/4-use-financial-id-tax-models">Business cards</a>
    * Receipts
    * US Bank Statements
 
-   * Invoices
-   * W-2 US tax declaration
-   * ID Documents
+   * <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/use-prebuilt-form-recognizer-models/4-use-financial-id-tax-models">Invoices</a>
+   * <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/use-prebuilt-form-recognizer-models/4-use-financial-id-tax-models">W-2 US tax declaration</a>
+   * <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/use-prebuilt-form-recognizer-models/4-use-financial-id-tax-models">ID Documents</a>
    * Health insurance cards
+
+   NOT:
+   * Resumes
+
+1. CODING: 
+   ```
+   poller = document_analysis_client.begin_analyze_document(
+         "prebuilt-layout", AnalyzeDocumentRequest(url_source=docUrl
+      ))
+   result: AnalyzeResult = poller.result()
+   ```
+
+1. LAB: <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/use-prebuilt-form-recognizer-models/5-exercise-analyze-document-use-form-recognizer">Exercise - Analyze a document using Azure AI Document Intelligence</a>
+
+1. You are using the prebuilt layout model to analyze a document with many checkboxes. You want to find out whether each box is checked or empty. What object should you use in the returned JSON code? Selection marks record checkboxes and radio buttons and include whether they're selected or not. NOT Bounding boxes. NOT Confidence indicators.
+
+   PROTIP: Although Word documents are also from Microsoft, DOCX format files are NOT supported by Azure AI Document Intelligence. But PDF documents are supported. Azure AI Document Intelligence is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format so you should consider using another technology to extract the data in Word documents.
 
 1. Get into the Azure Marketplace to look for Azure AI Document Intelligence -- an Azure service that you can use to analyze forms completed by your customers, partners, employers, or others and extract the data that they contain.
 
 1. https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/2-understand
 
-* <a href="#knowledge-miningTutorials">knowledge-mining Tutorials</a>
 * https://microsoftlearning.github.io/mslearn-ai-document-intelligence/
    * <a target="_blank" href="https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence/tree/main/Labfiles">https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence</a>
    * Use prebuilt Document Intelligence models
@@ -945,7 +957,20 @@ Get 50% off by completing just one of <a target="_blank" href="https://developer
    * Create a composed Document Intelligence model
    <br /><br />
 
+References:
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/overview">What is Azure AI Document Intelligence?</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/legal/cognitive-services/document-intelligence/guidance-integration-responsible-use?toc=%2Fazure%2Fai-services%2Fdocument-intelligence%2Ftoc.json&bc=%2Fazure%2Fai-services%2Fdocument-intelligence%2Fbreadcrumb%2Ftoc.json">Guidance for integration and responsible use with Azure AI Document Intelligence</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-model-overview">Azure AI Document Intelligence models</a>
+* <a target="_blank" href="[_](https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-form-recognizer-studio)">Azure AI Document Intelligence Studio (preview)</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/create-a-form-recognizer-resource">Create an Azure AI Document Intelligence resource</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/quickstarts/try-v3-csharp-sdk">Get started: Azure AI Document Intelligence C# SDK (beta)</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-custom">Azure AI Document Intelligence custom models</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/concept-composed-models">Composed custom models</a>
 
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support">Language support for Azure AI Document Intelligence</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-read">Azure AI Document Intelligence read model</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-general-document">Azure AI Document Intelligence general document model</a>
+* <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-layout">Azure AI Document Intelligence layout model</a>
 
 <hr />
 
