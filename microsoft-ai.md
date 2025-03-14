@@ -168,7 +168,9 @@ PROTIP: "ContentModerator" has been deprecated.
 
 ### Availability
 
-Even though you have permissions, each specific product <a target="_blank" href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=cognitive-services&regions=canada-central,canada-east,us-central,us-east,us-east-2,us-north-central,us-south-central,us-west-central,us-west,us-west-2,norway-east">may be in preview or not available, depending on region:
+ Every product Microsoft offers is listed, by region in 
+ <a target="_blank" href="https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/table">this table showing availability</a> (regardless of whether you have permissions to each specific product).
+
 <a target="_blank" href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=cognitive-services&regions=canada-central,canada-east,us-central,us-east,us-east-2,us-north-central,us-south-central,us-west-central,us-west,us-west-2,norway-east">
 <img alt="microsoft-ai-avail-240108-2544x1796.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707416863/microsoft-ai-avail-240108-2544x1796_wj2ysp.png"></a>
 
@@ -585,9 +587,43 @@ There are three levels of AI:
    Get 50% off the AI-102 if you finish <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/microsoft-ai-and-ml-engineering?authProvider=mckinsey">Coursera's Microsoft AI & ML Engineering Professional Certificate</a> by Mark DiMauro at Univ. Pittsbergh.
    * <a target="_blank" href="https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/dSDK3/getting-started-with-jupyter-notebooks-in-azure-machine-learning-studio">LAB: Getting started with Jupyter Notebooks in Azure Machine Learning Studio</a>
 
-3. <a href="#AI-100">AI-???</a> (Expert) 
+<table border="1" cellpadding="4" cellspacing="0">
+<tr valign="bottom"><th><a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">AI-900 Azure AI Fundamentals</a>
+</th><th><a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/?practice-assessment-type=certification">AI-102 Azure AI Engineer Associate</a></th></tr>
+
+<tr valign="top"><td>1.</td><td>AI Overview
+3 hr 2 min</td><td>
+Get started with Azure AI Services
+5 hr 5 min</td></tr>
+
+<tr valign="top"><td>2.</td><td>Computer Vision
+1 hr 40 min</td><td>
+Create computer vision solutions with Azure AI Vision
+5 hr 1 min</td></tr>
+
+<tr valign="top"><td>3.</td><td>Natural Language Processing
+2 hr 39 min</td><td>
+Develop natural language processing solutions with Azure AI Services
+7 hr 4 min</td></tr>
+
+<tr valign="top" colspan="2"><td colspan="2">4.</td><td colspan="2">Document Intelligence and Knowledge Mining
+1 hr 19 min</td><td>
+Develop solutions with Azure AI Document Intelligence
+2 hr 3 min</td></tr>
+<tr valign="top">
+Implement knowledge mining with Azure AI Search
+6 hr 24 min</td></tr>
+
+<tr valign="top"><td>5.</td><td>Generative AI
+3 hr 32 min</td><td>
+Develop Generative AI solutions with Azure OpenAI Service
+2 hr 13 min</td></tr>
+
+</table>
 
 Among <a target="_blank" href="https://bomonike.github.io/azure-certifications">Microsoft's Azure professional certifications</a>:
+
+   https://arch-center.azureedge.net/Credentials/Certification-Poster_en-us.pdf
 
    * Previous exam 774 was retired. It was based on <a target="_blank" href="https://www.youtube.com/watch?v=eJOv-TfhhzQ">VIDEO</a>: <a target="_blank" href="https://services.azureml.net/">Azure Machine Learning Studio (classic)</a> web services, which reflected "All Microsoft all the time" using proprietary "pickle" (pkl) model files. <a target="_blank" href="https://www.coursera.org/learn/predictive-modelling-azure-machine-learning-studio/home/welcome">Classes referencing it</a> are now obsolete.
 
@@ -878,17 +914,24 @@ Get 50% off by completing just one of <a target="_blank" href="https://developer
 
 ## Document Intelligence Knowledge Mining
 
-https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/2-understand
+1. View the marketing page at:
+
+   <a target="_blank" href="https://documentintelligence.ai.azure.com/studio">https://documentintelligence.ai.azure.com/studio</a>
+
+1. Try it out: Prebuilt models expect a common type of form or document:
+
+   * Business cards
+   * Receipts
+   * US Bank Statements
+
+   * Invoices
+   * W-2 US tax declaration
+   * ID Documents
+   * Health insurance cards
+
 1. Get into the Azure Marketplace to look for Azure AI Document Intelligence -- an Azure service that you can use to analyze forms completed by your customers, partners, employers, or others and extract the data that they contain.
 
-Prebuilt models expect a common type of form or document:
-
-Invoice
-Receipt
-W-2 US tax declaration
-ID Document
-Business card
-Health insurance card
+1. https://learn.microsoft.com/en-us/training/modules/plan-form-recognizer-solution/2-understand
 
 * <a href="#knowledge-miningTutorials">knowledge-mining Tutorials</a>
 * https://microsoftlearning.github.io/mslearn-ai-document-intelligence/
