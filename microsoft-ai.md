@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-13"
-lastchange: "v036 + certs table :microsoft-ai.md"
+date: "2025-03-14"
+lastchange: "v037 + rowspan in table :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -607,7 +607,7 @@ Create computer vision solutions with Azure AI Vision<br />5 hr 1 min</td></tr>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-language/">Exercises</a>:
 Develop natural language processing solutions with Azure AI Services<br />7 hr 4 min</td></tr>
 
-<tr valign="top" colspan="2"><td rowspan="2">4.</td><td rowspan="2">Document Intelligence and Knowledge Mining<br />1 hr 19 min</td><td>
+<tr valign="top" rowspan="2"><td rowspan="2">4.</td><td rowspan="2">Document Intelligence and Knowledge Mining<br />1 hr 19 min</td><td>
 <tr valign="top"><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
 Develop solutions with Azure AI Document Intelligence<br />2 hr 3 min</td></tr>
 
