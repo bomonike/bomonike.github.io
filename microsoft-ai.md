@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-14"
-lastchange: "v039 + fix rowspan in table :microsoft-ai.md"
+lastchange: "v040 + alz & fix table :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -507,20 +507,20 @@ Create computer vision solutions with Azure AI Vision<br />5 hr 1 min</td></tr>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-language/">Exercises</a>:
 Develop natural language processing solutions with Azure AI Services<br />7 hr 4 min</td></tr>
 
-<tr valign="top" colspan="2"><td colspan="2">4.
-</td><td>Document Intelligence and Knowledge Mining<br />1 hr 19 min</td><td>
+<tr valign="top"><td rowspan="2">4.
+</td><td><a href="#DocIntel">Document Intelligence</a> and Knowledge Mining<br />1 hr 19 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-document-intelligence/">Exercises</a>:
 Develop solutions with Azure AI Document Intelligence<br />2 hr 3 min</td></tr>
 <tr valign="top"><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-knowledge-mining/">Exercises</a>:
-Implement <a href="#knowledge-miningTutorials">knowledge mining</a> with Azure AI Search<br />6 hr 24 min</a>
-</td></tr>
+Implement <a href="#knowledge-miningTutorials">knowledge mining</a> with Azure AI Search<br />6 hr 24 min</td></tr>
 
 <tr valign="top"><td>5.</td><td>Generative AI<br />3 hr 32 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-openai/">Exercises</a>:
-Develop Generative AI solutions with Azure OpenAI Service<br />2 hr 13 min</td></tr>
+Develop Generative AI solutions with <a href="#OpenAIFeatures">Azure OpenAI Services</a><br />2 hr 13 min</td></tr>
 
 </table>
 
+<a name="DocIntel"></a>
 History of AI exams:
 
    * Previous exam 774 was retired. It was based on <a target="_blank" href="https://www.youtube.com/watch?v=eJOv-TfhhzQ">VIDEO</a>: <a target="_blank" href="https://services.azureml.net/">Azure Machine Learning Studio (classic)</a> web services, which reflected "All Microsoft all the time" using proprietary "pickle" (pkl) model files. <a target="_blank" href="https://www.coursera.org/learn/predictive-modelling-azure-machine-learning-studio/home/welcome">Classes referencing it</a> are now obsolete.
@@ -589,83 +589,6 @@ Practice tests:
    <br /><br />
 
 <a target="_blank" href="https://www.aguidetocloud.com/full-courses/ai900fullcourse">2-hour AGuideToCloud video class by Susanth Sutheesh</a>
-
-
-<a name="OpenAIFeatures"></a>
-
-## OpenAI service features and use cases
-
-* <a target="_blank" href="http://qualtrics.com/">AOAI</a> GPT-3.5, GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, and/or Embeddings Models (Conversational AI, Search, Summarization, Writing Assistance or content generation, Code-based scenarios, Reason over Structured and Unstructured data) (a Limited Access Cognitive Service):
-
-   * Chat and conversation interaction: Users can interact with a conversational agent that responds with responses drawn from trusted documents such as internal company documentation or tech support documentation; conversations must be limited to answering scoped questions. Available to internal, authenticated external users, and unauthenticated external users.
-
-   * Chat and conversation creation: Users can create a conversational agent that responds with responses drawn from trusted documents such as internal company documentation or tech support documentation; conversations must be limited to answering scoped questions. Limited to internal users only.
-
-   * Code generation or transformation scenarios: For example, converting one programming language to another, generating docstrings for functions, converting natural language to SQL. Limited to internal and authenticated external users.
-
-   * Journalistic content: For use to create new journalistic content or to rewrite journalistic content submitted by the user as a writing aid for pre-defined topics. Users cannot use the application as a general content creation tool for all topics. May not be used to generate content for political campaigns. Limited to internal users.
-
-   * Question-answering: Users can ask questions and receive answers from trusted source documents such as internal company documentation. The application does not generate answers ungrounded in trusted source documentation. Available to internal, authenticated external users, and unauthenticated external users.
-
-   * Reason over structured and unstructured data: Users can analyze inputs using classification, sentiment analysis of text, or entity extraction. Examples include analyzing product feedback sentiment, analyzing support calls and transcripts, and refining text-based search with embeddings. Limited to internal and authenticated external users.
-
-   * Search: Users can search trusted source documents such as internal company documentation. The application does not generate results ungrounded in trusted source documentation. Available to internal, authenticated external users, and unauthenticated external users.
-
-   * Summarization: Users can submit content to be summarized for pre-defined topics built into the application and cannot use the application as an open-ended summarizer. Examples include summarization of internal company documentation, call center transcripts, technical reports, and product reviews. Limited to internal, authenticated external users, and unauthenticated external users.
-
-   * Writing assistance on specific topics: Users can create new content or rewrite content submitted by the user as a writing aid for business content or pre-defined topics. Users can only rewrite or create content for specific business purposes or pre-defined topics and cannot use the application as a general content creation tool for all topics. Examples of business content include proposals and reports. May not be selected to generate journalistic content (for journalistic use, select the above Journalistic content use case). Limited to internal users and authenticated external users.
-
-   * Data generation for fine-tuning: Users can use a model in Azure OpenAI to generate data which is used solely to fine-tune (i) another Azure OpenAI model, using the fine-tuning capabilities of Azure OpenAI, and/or (ii) another Azure AI custom model, using the fine-tuning capabilities of the Azure AI service. Generating data and fine-tuning models is limited to internal users only; the fine-tuned model may only be used for inferencing in the applicable Azure AI service and, for Azure OpenAI service, only for customer’s permitted use case(s) under this form.
-
-* DALL-E 2 and/or DALL-E 3 models (text to image)
-
-   * Accessibility Features: For use to generate imagery for visual description systems. Limited to internal users and authenticated external users.
-
-   * Art and Design: For use to generate imagery for artistic purposes only for designs, artistic inspiration, mood boards, or design layouts. Limited to internal and authenticated external users.
-
-   * Communication: For use to create imagery for business-related communication, documentation, essays, bulletins, blog posts, social media, or memos. This use case may not be selected to generate images for political campaigns or journalistic content (for journalistic use, see the Journalistic content use case below). Limited to internal and authenticated external users.
-
-   * Education: For use to create imagery for enhanced or interactive learning materials, either for use in educational institutions or for professional training. Limited to internal users and authenticated external users.
-
-   * Entertainment: For use to create imagery to enhance entertainment content such as video games, movies, TV, videos, recorded music, podcasts, audio books, or augmented or virtual reality. This use case may not be selected to generate images for political campaigns or journalistic content (for journalistic use, see the below Journalistic content use case). Limited to internal and authenticated external users.
-
-   * Journalistic content: For use to create imagery to enhance journalistic content. May not be used to generate images for political campaigns. Limited to internal users.
-
-   * Marketing: For use to create marketing materials for product or service media, product introductions, business promotion, or advertisements. May not be used to create personalized or targeted advertisements to individuals. This use case may not be selected to generate images for political campaigns or journalistic content (for journalistic use, see the above Journalistic content use case). Limited to internal and authenticated external users.
-
-   Most Valuable Professional (MVP) or Regional Director (RD) Demo Use: Azure OpenAI Service DALL·E capability (in accordance with a use case listed in this Question [X]). No production use, sale, or other disposition of an application is permitted under this use case; if an MVP, RD, or their employer wants to use an Azure OpenAI Service application in production, a separate form must be submitted, the appropriate use case must be selected, and a separate eligibility determination will be made.
-
-   * Prototyping and conceptual development: For use to generate imagery for ideation or visualization of products or services. This use case may not be selected to prototype use cases for DALL·E 2 or DALL·E 3 that do not appear in this Question [X]. Limited to internal and authenticated external users. NOTE: Consult the Azure OpenAI Service Transparency Note for image generation best practices.
-
-* OpenAI Whisper model (Speech-to-Text)
-
-* GPT-4 Turbo with Vision
-
-
-   * Chat and conversation interaction: Users can interact with a conversational agent that responds with information drawn from trusted documentation such as internal company documentation or tech support documentation. Conversations must be limited to answering scoped questions. Available to internal, authenticated external users, and unauthenticated external users.
-
-   * Chatbot and conversational agent creation: Users can create conversational agents that respond with information drawn from trusted documents such as internal company documentation or tech support documents. For instance, diagrams, charts, and other relevant images from technical documentation can enhance comprehension and provide more accurate responses. Conversations must be limited to answering scoped questions. Limited to internal users only.
-
-   * Code generation or transformation scenarios: Converting one programming language to another or enabling users to generate code using natural language or visual input. For example, users can take a photo of handwritten pseudocode or diagrams illustrating a coding concept and use the application to generate code based on that. Limited to internal and authenticated external users.
-
-   * Reason over structured and unstructured data: Users can analyze inputs using classification, sentiment analysis of text, or entity extraction. Users can provide an image alongside a text query for analysis. Limited to internal and authenticated external users.
-
-   * Summarization: Users can submit content to be summarized for pre-defined topics built into the application and cannot use the application as an open-ended summarizer. Examples include summarization of internal company documentation, call center transcripts, technical reports, and product reviews. Limited to internal, authenticated external users, and unauthenticated external users.
-
-   * Writing assistance on specific topics: Users can create new content or rewrite content submitted by the user as a writing aid for business content or pre-defined topics. Users can only rewrite or create content for specific business purposes or pre-defined topics and cannot use the application as a general content creation tool for all topics. Examples of business content include proposals and reports. May not be selected to generate journalistic content (for journalistic use, select the above Journalistic content use case). Limited to internal users and authenticated external users.
-
-   * Search: Users can search for content in trusted source documents and files such as internal company documentation. The application does not generate results ungrounded in trusted source documentation. Limited to internal users only.
-
-   * Image and Video Tagging: Users can identify and tag visual elements, including objects, living beings, scenery, and actions within an image or recorded video.  Users may not attempt to use the service to identify individuals. Limited to internal users and authenticated external users.
-
-   * Image and Video Captioning: Users can generate descriptive natural language captions for visuals. Beyond simple descriptions, the application can identify and provide textual insights about specific subjects or landmarks within images and recorded video. If shown an image of the Eiffel Tower, the system might offer a concise description or highlight intriguing facts about the monument. Generated descriptions of people may not be used to identify individuals. Limited to internal users and authenticated external users.
-
-   * Object Detection: For use to identify the positions of individual or multiple objects in an image by providing their specific coordinates. For instance, in an image that has scattered apples, the application can identify and indicate the location of each apple. Through this application, users can obtain spatial insights regarding objects captured in images. This use case is not yet available for videos. Limited to internal users and authenticated external users.
-
-   * Visual Question Answering: Users can ask questions about an image or video and receive contextually relevant responses. For instance, when shown a picture of a bird, one might ask, "What type of bird is this?" and receive a response like, "It's a European robin." The application can identify and interpret context within images and videos to answer queries. For example, if presented with an image of a crowded marketplace, users can ask, "How many people are wearing hats?" or "What fruit is the vendor selling?" and the application can provide the answers. The system may not be used to answer identifying questions about people. Limited to internal users and authenticated external users.
-
-   * Brand and Landmark recognition: The application can be used to identify commercial brands and popular landmarks in images or videos from a preset database of thousands of global logos and landmarks. Limited to internal users and authenticated external users.
-
 
 
 <hr />
@@ -884,6 +807,8 @@ References:
    * <a target="_blank" href="https://automys.com/library/asset/scheduled-virtual-machine-shutdown-startup-microsoft-azure" title="2015"> start/stop by an Automation Account Runbook</a> for specific tags attached to different Resource Groups: Assert: "AutoshutdownSchedule: Tuesday" run every hour. <a target="_blank" href="https://translate.google.com/translate?sl=auto&tl=en&u=https://github.com/chomado/GoogleHomeHack">Google Translate</a>
 
 
+https://github.com/Azure/azure-sdk-for-python
+
 
 <a name="Challenges"></a>
 
@@ -891,12 +816,12 @@ References:
 
 Get 50% off by completing just one of <a target="_blank" href="https://developer.microsoft.com/en-us/offers/30-days-to-learn-it?challenge_option=bfb9f08c-b763-4f60-b5d7-360debaf4f8f&ocid=fabric24_30DTLI_fabriccomm_commnews_clp">these challenges</a>:
 
-* Azure AI Fundamentals | AI-900
+* Azure AI Fundamentals = AI-900
 * <a target="_blank" href="https://learn.microsoft.com/en-us/training/challenges?id=973cdaf5-ce82-4541-940e-d6ecd90a5000&ocid=fabric24_30DTLI_fabriccomm_commnews_clp&wt.mc_id=cloudskillschallenge_973cdaf5-ce82-4541-940e-d6ecd90a5000_30dtli_web_wwl">Generative AI with Azure OpenAI</a>
 * Azure AI Document Intelligence
 * Azure AI Language
 * Azure AI Vision
-* Azure Optimization | AZ-500
+* Azure Optimization = AZ-500 
 
 
 
@@ -974,9 +899,9 @@ References:
 
 In production usage, several Azure subscriptions are needed.
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1741880512/azure-landing-zone-250219_uhl2hk.svg"><img alt="azure-landing-zone-250219.svg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1741880512/azure-landing-zone-250219_uhl2hk.svg"></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1741948347/ms-ai-alz-1327x792_unfipu.png"><img alt="ms-ai-alz-1327x792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1741948347/ms-ai-alz-1327x792_unfipu.png"></a>
 
-The above (replacing <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1708232471/ms-ai-arh-240216-2000x1194_w1lork.png">previous version</a>) is the
+The <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1741880512/azure-landing-zone-250219_uhl2hk.svg">above image</a> replaced <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1708232471/ms-ai-arh-240216-2000x1194_w1lork.png">the previous version</a>) is the
 <a target="_blank" href="https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102?WT.mc_id=academic-0000-abartolo">Azure Landing Zones OpenAI Reference Architecture</a> defining how to envelope OpenAI with utilities to ensure a defensive security posture. It maps how resources are integrated in a structured, consistent manner, plus ensuring governance, compliance, and security.
 
 The diagram above is an adaptation of <a target="_blank" href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/">Microsoft's enterprise-scale Azure Landing Zone</a>, a part of Microsoft's Cloud Adoption Framework (CAF).
@@ -3576,6 +3501,84 @@ course in Responsible AI
 
 <a target="_blank" href="https://www.youtube.com/watch?v=qOB4dsEKYMg">VIDEO:
 Another OpenAI Scientist QUITS —Says AGI Is a ‘TICKING TIME BOMB’
+
+
+
+
+<a name="OpenAIFeatures"></a>
+
+## OpenAI service features and use cases
+
+* <a target="_blank" href="http://qualtrics.com/">AOAI</a> GPT-3.5, GPT-3.5 Turbo, GPT-4, GPT-4 Turbo, and/or Embeddings Models (Conversational AI, Search, Summarization, Writing Assistance or content generation, Code-based scenarios, Reason over Structured and Unstructured data) (a Limited Access Cognitive Service):
+
+   * Chat and conversation interaction: Users can interact with a conversational agent that responds with responses drawn from trusted documents such as internal company documentation or tech support documentation; conversations must be limited to answering scoped questions. Available to internal, authenticated external users, and unauthenticated external users.
+
+   * Chat and conversation creation: Users can create a conversational agent that responds with responses drawn from trusted documents such as internal company documentation or tech support documentation; conversations must be limited to answering scoped questions. Limited to internal users only.
+
+   * Code generation or transformation scenarios: For example, converting one programming language to another, generating docstrings for functions, converting natural language to SQL. Limited to internal and authenticated external users.
+
+   * Journalistic content: For use to create new journalistic content or to rewrite journalistic content submitted by the user as a writing aid for pre-defined topics. Users cannot use the application as a general content creation tool for all topics. May not be used to generate content for political campaigns. Limited to internal users.
+
+   * Question-answering: Users can ask questions and receive answers from trusted source documents such as internal company documentation. The application does not generate answers ungrounded in trusted source documentation. Available to internal, authenticated external users, and unauthenticated external users.
+
+   * Reason over structured and unstructured data: Users can analyze inputs using classification, sentiment analysis of text, or entity extraction. Examples include analyzing product feedback sentiment, analyzing support calls and transcripts, and refining text-based search with embeddings. Limited to internal and authenticated external users.
+
+   * Search: Users can search trusted source documents such as internal company documentation. The application does not generate results ungrounded in trusted source documentation. Available to internal, authenticated external users, and unauthenticated external users.
+
+   * Summarization: Users can submit content to be summarized for pre-defined topics built into the application and cannot use the application as an open-ended summarizer. Examples include summarization of internal company documentation, call center transcripts, technical reports, and product reviews. Limited to internal, authenticated external users, and unauthenticated external users.
+
+   * Writing assistance on specific topics: Users can create new content or rewrite content submitted by the user as a writing aid for business content or pre-defined topics. Users can only rewrite or create content for specific business purposes or pre-defined topics and cannot use the application as a general content creation tool for all topics. Examples of business content include proposals and reports. May not be selected to generate journalistic content (for journalistic use, select the above Journalistic content use case). Limited to internal users and authenticated external users.
+
+   * Data generation for fine-tuning: Users can use a model in Azure OpenAI to generate data which is used solely to fine-tune (i) another Azure OpenAI model, using the fine-tuning capabilities of Azure OpenAI, and/or (ii) another Azure AI custom model, using the fine-tuning capabilities of the Azure AI service. Generating data and fine-tuning models is limited to internal users only; the fine-tuned model may only be used for inferencing in the applicable Azure AI service and, for Azure OpenAI service, only for customer’s permitted use case(s) under this form.
+
+* DALL-E 2 and/or DALL-E 3 models (text to image)
+
+   * Accessibility Features: For use to generate imagery for visual description systems. Limited to internal users and authenticated external users.
+
+   * Art and Design: For use to generate imagery for artistic purposes only for designs, artistic inspiration, mood boards, or design layouts. Limited to internal and authenticated external users.
+
+   * Communication: For use to create imagery for business-related communication, documentation, essays, bulletins, blog posts, social media, or memos. This use case may not be selected to generate images for political campaigns or journalistic content (for journalistic use, see the Journalistic content use case below). Limited to internal and authenticated external users.
+
+   * Education: For use to create imagery for enhanced or interactive learning materials, either for use in educational institutions or for professional training. Limited to internal users and authenticated external users.
+
+   * Entertainment: For use to create imagery to enhance entertainment content such as video games, movies, TV, videos, recorded music, podcasts, audio books, or augmented or virtual reality. This use case may not be selected to generate images for political campaigns or journalistic content (for journalistic use, see the below Journalistic content use case). Limited to internal and authenticated external users.
+
+   * Journalistic content: For use to create imagery to enhance journalistic content. May not be used to generate images for political campaigns. Limited to internal users.
+
+   * Marketing: For use to create marketing materials for product or service media, product introductions, business promotion, or advertisements. May not be used to create personalized or targeted advertisements to individuals. This use case may not be selected to generate images for political campaigns or journalistic content (for journalistic use, see the above Journalistic content use case). Limited to internal and authenticated external users.
+
+   Most Valuable Professional (MVP) or Regional Director (RD) Demo Use: Azure OpenAI Service DALL·E capability (in accordance with a use case listed in this Question [X]). No production use, sale, or other disposition of an application is permitted under this use case; if an MVP, RD, or their employer wants to use an Azure OpenAI Service application in production, a separate form must be submitted, the appropriate use case must be selected, and a separate eligibility determination will be made.
+
+   * Prototyping and conceptual development: For use to generate imagery for ideation or visualization of products or services. This use case may not be selected to prototype use cases for DALL·E 2 or DALL·E 3 that do not appear in this Question [X]. Limited to internal and authenticated external users. NOTE: Consult the Azure OpenAI Service Transparency Note for image generation best practices.
+
+* OpenAI Whisper model (Speech-to-Text)
+
+* GPT-4 Turbo with Vision
+
+
+   * Chat and conversation interaction: Users can interact with a conversational agent that responds with information drawn from trusted documentation such as internal company documentation or tech support documentation. Conversations must be limited to answering scoped questions. Available to internal, authenticated external users, and unauthenticated external users.
+
+   * Chatbot and conversational agent creation: Users can create conversational agents that respond with information drawn from trusted documents such as internal company documentation or tech support documents. For instance, diagrams, charts, and other relevant images from technical documentation can enhance comprehension and provide more accurate responses. Conversations must be limited to answering scoped questions. Limited to internal users only.
+
+   * Code generation or transformation scenarios: Converting one programming language to another or enabling users to generate code using natural language or visual input. For example, users can take a photo of handwritten pseudocode or diagrams illustrating a coding concept and use the application to generate code based on that. Limited to internal and authenticated external users.
+
+   * Reason over structured and unstructured data: Users can analyze inputs using classification, sentiment analysis of text, or entity extraction. Users can provide an image alongside a text query for analysis. Limited to internal and authenticated external users.
+
+   * Summarization: Users can submit content to be summarized for pre-defined topics built into the application and cannot use the application as an open-ended summarizer. Examples include summarization of internal company documentation, call center transcripts, technical reports, and product reviews. Limited to internal, authenticated external users, and unauthenticated external users.
+
+   * Writing assistance on specific topics: Users can create new content or rewrite content submitted by the user as a writing aid for business content or pre-defined topics. Users can only rewrite or create content for specific business purposes or pre-defined topics and cannot use the application as a general content creation tool for all topics. Examples of business content include proposals and reports. May not be selected to generate journalistic content (for journalistic use, select the above Journalistic content use case). Limited to internal users and authenticated external users.
+
+   * Search: Users can search for content in trusted source documents and files such as internal company documentation. The application does not generate results ungrounded in trusted source documentation. Limited to internal users only.
+
+   * Image and Video Tagging: Users can identify and tag visual elements, including objects, living beings, scenery, and actions within an image or recorded video.  Users may not attempt to use the service to identify individuals. Limited to internal users and authenticated external users.
+
+   * Image and Video Captioning: Users can generate descriptive natural language captions for visuals. Beyond simple descriptions, the application can identify and provide textual insights about specific subjects or landmarks within images and recorded video. If shown an image of the Eiffel Tower, the system might offer a concise description or highlight intriguing facts about the monument. Generated descriptions of people may not be used to identify individuals. Limited to internal users and authenticated external users.
+
+   * Object Detection: For use to identify the positions of individual or multiple objects in an image by providing their specific coordinates. For instance, in an image that has scattered apples, the application can identify and indicate the location of each apple. Through this application, users can obtain spatial insights regarding objects captured in images. This use case is not yet available for videos. Limited to internal users and authenticated external users.
+
+   * Visual Question Answering: Users can ask questions about an image or video and receive contextually relevant responses. For instance, when shown a picture of a bird, one might ask, "What type of bird is this?" and receive a response like, "It's a European robin." The application can identify and interpret context within images and videos to answer queries. For example, if presented with an image of a crowded marketplace, users can ask, "How many people are wearing hats?" or "What fruit is the vendor selling?" and the application can provide the answers. The system may not be used to answer identifying questions about people. Limited to internal users and authenticated external users.
+
+   * Brand and Landmark recognition: The application can be used to identify commercial brands and popular landmarks in images or videos from a preset database of thousands of global logos and landmarks. Limited to internal users and authenticated external users.
 
 
 ## More
