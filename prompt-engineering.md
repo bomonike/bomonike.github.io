@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/prompt-engineering
-date: "2025-03-07"
-lastchange: "v004 + fix td :prompt-engineering.md"
+date: "2025-03-15"
+lastchange: "v005 + fix td :prompt-engineering.md"
 file: "prompt-engineering"
 title: "Prompt-Engineering"
 excerpt: "Even your AI prompts can be done better with AI with Declarative Self-improving Python (DPSy)."
@@ -34,13 +34,13 @@ Google Prompting Essentials</a> 9-hour video Coursera by Googlers.
 present their <a target="_blank" href="https://www.coursera.org/learn/google-prompting-essentials/lecture/aOSCm/use-the-5-step-prompt-framework">memonic2</a>:
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr valign="bottom"><thead><th><strong>Stage</strong></th><th><strong>Mememonic1</strong></th><th>Mememonic2</th></tr></thead><tbody>
+<tr valign="bottom"><th><strong>Stage</strong></th><th><strong>Mememonic1</strong></th><th>Mememonic2</th></tr>
 <tr valign="top"><td> Task       </td><td> Tiny   </td><td> Thoughtfully   </td></tr>
 <tr valign="top"><td> Context    </td><td> Crabs   </td><td> Create   </td></tr>
 <tr valign="top"><td> References    </td><td> Ride   </td><td> Really   </td></tr>
 <tr valign="top"><td> Evaluate    </td><td> Enormous   </td><td> Excellent   </td></tr>
 <tr valign="top"><td> Iterate    </td><td> Iguanas   </td><td> Inputs   </td></tr>
-</tbody></table>
+</table>
 
 The first memonic is from Tina Huang's <a target="_blank" href="https://www.youtube.com/watch?v=p09yRj47kNM">"Google's 9 Hour AI Prompt Engineering Course In 20 Minutes"<br />
 <img alt="prompt-memonic-tina.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739297851/prompt-memonic-tina_wsk7hi.png"></a>
