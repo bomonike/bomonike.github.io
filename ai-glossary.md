@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-14"
-lastchange: "v015 + what is AI :ai-glossary.md"
+lastchange: "v017 + AI course :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -230,3 +230,50 @@ How to make videos:
 * AWS
 
 
+## Certifications
+
+<a target="_blank" href="https://www.comptia.org/newsroom/press-releases/comptia-announces-ai-product-roadmap-expansion-covering-six-domains">CompTIA AI Product Roadmap</a> of certifications around AI:
+
+   * AI Essentials
+   * Sec AI+ for Security Engineers
+   * PenTest AI+ for Penetration Testers
+   * CySA AI+ for Security Analysts
+   * Data AI+ for Data Analysts
+   * AI SysOp+ for Systems Operations
+   * AI Scripting+ for Tech Support, Network Operations
+   * AI Architect+ for AI Systems Architects
+   * AI Prompt+ for GenAI Prompt Engineers
+
+## Intro to AI course
+
+Here are the topics from the semester-long <a target="_blank" href="https://mtda.geniussis.com/Registration.aspx">class</a> offered by Montanta Digital Academy:
+
+Module 01 - What is Artificial Intelligence?
+
+* Introduction to What Is Artificial Intelligence?
+* Blast From the Past
+* Ingenious!
+* What Does It All Mean?
+* Keep It Real
+* Seeing Is Believing
+* Lessons Learned
+
+Module 02 - Data-Driven
+
+* Introduction to Data Driven
+* Is Your Machine Smarter Than a Fifth Grader?
+* It Just Makes Sense
+* It's A Numbers Game
+* Representation for Reasoning
+* Ability to Learn
+* Decide with Data
+* Domain Knowledge
+
+Module 03 - Dream It, Design It, Apply It!
+
+* Introduction to Dream It, Design It, Apply It!
+* AI Agents
+* Good Behavior
+* Ethics in AI
+* Deepfakes
+* Developer Responsibility
