@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-17"
-lastchange: "v003 + setup video cumpus buttons :weather.md"
+lastchange: "v004 + Ignition :weather-info.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -14,7 +14,7 @@ image:
 comments: true
 created: "2018-04-03"
 ---
-<a target="_blank" href="https://bomonike.github.io/weather"><img align="right" width="100" height="100" alt="weather.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/weather.png?raw=true" />
+<a target="_blank" href="https://bomonike.github.io/weather-info"><img align="right" width="100" height="100" alt="weather-info.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/weather-info.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
@@ -85,7 +85,17 @@ Buttons (left to right):<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png"><img alt="weather-ws-5000-dash.png" width="546" height="390" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png" /></a>
 -->
 
-## Metrics over time
+## Additional Analysis 
+
+Metrics over time.
+
+Comparison vs. other weather stations (upwind, downwind, etc.).
+
+d3.js <a target="_blank" href="https://d3js.org/">d3.js</a> is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. <a target="_blank" href="https://learning.oreilly.com/videos/-/10000MNHV2021133/">VIDEO</a>
+
+Smart Home display trends
+
+Upwind locations on the map would experience weather patterns (such as rain) before you (n=in a downwind location).
 
 
 ## Technologies
@@ -104,10 +114,17 @@ Instrument manufacturers:
 
 * The <a target="_blank" href="https://www.amazon.com/Ambient-Weather-WEATHERBRIDGE-Universal-Compatible/dp/B00FPPYM7M?ref_=ast_sto_dp">$159.50</a> <a target="_blank" href="https://www.ambientweather.com/weather-bridge">Ambient Weather Bridge</a> updates (without the use of a PC or networking fees) weather servers real-time to Twitter,  MySQL, EMail Summaries and Alerts, and aircams. See http://www.meteobridge.com/wiki/index.php/Push_Services
 
+Several locally-run servers receive and display weather information:
+   * The Ignition server
+   * "Home Assistant"
+
+
 ## Internet Weather Reports
 
 * Ambient Weather has its own cloud (AWN) Network to receive weather reports for its devices.
    * https://ambientweather.com/mwdownloads/download/link/id/1223
+
+* Weather Underground also accepts video from Ambient Weather AirCams
 
 * WeatherBug.com (USA)
 * pwsweather.com (USA) Weather For You
@@ -118,22 +135,8 @@ Instrument manufacturers:
 * wow.metoffice.gov.uk
 * awekas.at (Austria)
 
-* Weather Underground also accepts video from Ambient Weather AirCams
 
-
-## Additional Analysis 
-
-Comparison vs. other weather stations (upwind, downwind, etc.).
-
-d3.js <a target="_blank" href="https://d3js.org/">d3.js</a> is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. <a target="_blank" href="https://learning.oreilly.com/videos/-/10000MNHV2021133/">VIDEO</a>
-
-Smart Home display trends
-
-Upwind locations on the map would experience weather patterns (such as rain) before you (n=in a downwind location).
-
-https://www.linkedin.com/pulse/ai-classroom-balancing-access-equity-potential-jean-ng--0ub3c/
-
-## Ambient Weather
+## Ambient Weather Instruments
 
 Ambient Weather is a company that provides weather stations and data for consumer use.
 

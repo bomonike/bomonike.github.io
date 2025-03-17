@@ -176,7 +176,7 @@ Topics alphabetically:
    <a name="W"></a>
    ### U V W
 
-1. <a target="_blank" href="https://bomonike.github.io/weather">weather</a>
+1. <a target="_blank" href="https://bomonike.github.io/weather-info">weather-info</a>
 1. <a target="_blank" href="https://bomonike.github.io/waf">waf</a>
 1. <a target="_blank" href="https://bomonike.github.io/web-scraping">web-scraping</a>
 1. <a target="_blank" href="https://bomonike.github.io/windows-on-mac">windows-on-mac</a>
