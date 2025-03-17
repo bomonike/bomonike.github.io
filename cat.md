@@ -1,4 +1,58 @@
-cat.md
+---
+layout: post
+date: "2025-03-17"
+lastchange: "v008 + buffers headers :cat.md"
+file: "cat"
+title: "Caterpillar"
+excerpt: "tractors"
+tags: [skills, practical]
+image:
+# python-samples-1900x500.jpg
+  feature: https://user-images.githubusercontent.com/300046/145717691-60b8c765-e0a3-4d63-bf7f-0cb89492c0ee.png
+  credit: An Athlete Wrestling with a Python (1877) by Sir Frederic Leighton (1830-1896) at the Tate, London
+  creditlink: https://www.wikiwand.com/en/An_Athlete_Wrestling_with_a_Python
+comments: true
+created: "2025-01-11"
+---
+
+https://catdpc.docebosaas.com/t4w/learn/signin
+Caterpillar's Technicans for the World certification is <a target="_blank" href="https://catdpc.docebosaas.com/t4w/pages/49/caterpillarr-technicians-for-the-world">available in English, Arabic, Chinese, Japanese, Spanish, Portugese, French</a>
+
+## Glossary
+
+* azimuth thrusters 
+* APC = Accessory power converter receives DC voltage from the power inverter and supplies it to the HVAC compressor and machine batteries. The APC also monitors the machine frame for ground fault conditions.
+* CWL = Compact wheel loader |  have fully electric systems
+* ECM = electronic control modules
+GPIC = Generator Power Inverter Control
+MPIC = Motor Power Inverter Control
+* EMD = Electro-Mechanical Drive
+*  Energy Time Shift Module (ETSM) | Charges during the day and discharges at night, minimizing reliance on carbon-intense fuels and grid supply.  Contains lithium-ion batteries for energy storage.
+* gensets | Provides supplemental power when renewable energy sources are not producing at full capacity.
+*  Grid Stability Module (GSM) | Helps remote sites and firing of grid facilities to overcome large load steps, enabling high penetration levels of renewable energy.  Contains lithium-ion batteries for energy storage, with optional ultracapacitors for short duration, high-power output to support momentary load charges.
+* IGBT = insulated-gate bipolar transistor inverters (3). 
+* LHD = Load-Haul-Dump (model)
+* Microgrid Master Controller (MMC) | Allows operators to precisely control and monitor microgrid system energy.
+* NG output | Current produced by the alternator is sent to the electrical locker with a cabinet of insulated-gate bipolar transistor (IGBT) inverters (3).  These are supplied with rectified MG output. 
+
+* OHT = Off-Highway Truck | The 795F AC OHT has an electric drive power train. The engine drives a generator (6) through a drive shaft. Three phase AC electrical current produced by the generator is sent to the inverter cabinet (7) through high voltage cables. The power inverter rectifies the three phase AC current to DC current. The DC power is then inverted back to variable frequency AC, which can be regulated to adjust machine speed. The AC power is transmitted to the traction motors (8). The traction motors convert the electrical energy from the inverter cabinet to rotating mechanical energy. The traction motors are connected to the final drives, which propel the rear wheels. The 795F electric drive is also equipped with a retarding grid (9), which places a resistive load on the traction motors to help slow the motor speed and the wheel speed.
+
+* PIC = power inverter control | controls the flow of generator output current into the power inverter, as commanded by the machine ECM.
+* pentograph 
+* SPM = Screed Power Module | Screeds have a tractor-integrated generator driven by the engines of F-series asphalt pavers to power the screed heaters.
+* SR 
+* switched reluctance (SR) generator (2). In the D6 XE track-type tractor, 
+* versatile power system (VPS)
+* WHL = WHEEL LOADER | The 938M WHL has a hydrostatic power train hydraulic motors to transfer power to a transmission (5). The transmission controls the output speed, direction and torque of the power delivered to the remainder of the power train, as previously described with the mechanical power train. These applications also utilize drive shafts, differentials, and final drives similar to machines with a mechanical power train.
+
+During retarding mode, traction motors are used to generate power and deliver power to the inverter cabinet. 
+The power generated is the result of the energy required to maintain or reduce the machine speed while traveling downhill. The inverter cabinet rectifies the three-phase AC from the traction motors to DC. This DC power is delivered to the retarding grid (6).  The retarding grid dissipates the electric power in the form of heat.
+
+## Social Media
+
+* https://www.youtube.com/watch?v=mBQ0MPNRac0
+
+## Cat History
 
 What was the benefit of the first Holt Combined Harvester over previous designs?
 x	a) Cost less to repair.
@@ -157,6 +211,128 @@ x	c) Electric Hybrid
 25 question post assessment
 
 
+## Questions
+
+Diesel engines power the electric drives of several Cat machines and Progress Rail locomotives.
+
+Which of the following Cat products have diesel electric systems in them?
+	a) 775G Off-Highway Truck
+	b) 906 compact wheel loader
+x	c) 988K XE wheel loader
+x	d) EMD locomotive
+
+Which of the following are the main components of an electric drive?
+	a) differential
+x	b) engine
+x	c) generator
+	d) torque converter
+
+Which component is found in both off-highway trucks with mechanical drive trains and off-highway trucks with electric drive trains?
+x	a) final drive
+	b) retarding grid
+	c) torque converter
+	d) transmission
+
+In the electric drive of off-highway trucks, the engine (1) drives a three-phase synchronous generator (2) through a torsional rubber coupling, and the driveshaft  (for a 795 AC off-highway truck only).
+Three-phase AC produced by the generator is sent to the power inverter cabinet (3) through bus cables.  The power inverter rectifies the three-phase AC to direct current (DC).
+The drive train ECM controls the generator output current to the power inverter cabinet and monitors operator power train inputs and other machine functions.  The drive train ECM then commands the motor ECMs to supply current to the electric drive traction motors (4) from the inverter cabinet.
+The electric drive traction motors provide the power for machine travel based on inputs received from the operator controls.
+The electric drive also controls machine retarding.  During the retarding mode, the traction motors are used to generate power.  The power generated is the result of the energy required to maintain or reduce the machine speed while traveling downhill.
+Mechanical power from the ground is delivered via the final drives (5) to the electric drive traction motors.  In the retarding mode, the traction motors act as generators and deliver power to the inverter cabinet.  The inverter cabinet rectifies the AC from the traction motors to DC.  This DC power is delivered to the retarding grid (6).  The retarding grid dissipates the electric power in the form of heat.
+
+
+Dedicated trolley substations (1) convert AC to DC.  A typical substation can supply 2500 volts DC (VDC), handle 10 megawatts (MW) of power, and feed 500 meters of trolley line (2).  This is enough to support up to three trucks at a time.
+The off-highway truck engages and disengages with the trolley line via two pantographs (3) while traveling.  While engaged with the trolley line, the truck's traction power is supplied only by the trolley, and engine speed is reduced to 1300 rpm to support only parasitic loads (standby power).
+
+Which of the following are examples of Cat products with hybrid electric systems?
+x	a) 300.9D VPS mini excavator with HPU300 remote power unit
+x	b) 795F AC off-highway truck with trolley attachment
+	c) AP1055F asphalt paver with SE50 V screed
+	d) R1700K XE load-haul-dump with MEC500 mobile equipment charger
+
+Which of the following are key components of the marine hybrid propulsion system?
+x	a) electric motors
+x	b) engines
+x	c) storage batteries
+	d) UPS flywheels
+
+How do the pantographs of the trolley attachment for the 795F AC off-highway truck work?
+x	a) they connect to the trolley line and provide electric power to the electric drive traction motors
+	b) they connect to the trolley line and provide electric power to the retarding grid
+	c) they connect to the trolley line and provide electric power to the three-phase synchronous generator
+	d) they connect to the trolley line and provide electric power to the trolley substation
+
+Fully electric systems feature single or multiple non-engine electric power sources.  Typically, fully electric systems are either powered by rechargeable batteries, or are tethered to utility power.
+
+
+A 41 kilowatt (kW) battery takes about three hours to charge.  Fully charged, the machine can operate in a medium-duty application (such as mixed truck loading or material handling) for up to 4.5 hours.  The batteries are sealed and maintenance-free, with no need to monitor liquid levels or add water.
+When the next generation of the 906 CWL featuring a larger battery is introduced, working times are expected to increase to eight hours, in-line with many working shifts.
+Additional built-in charge modes may be available as well, including a rapid-boost mode to take maximum advantage of short recharge periods when the machine is idle, and a slower overnight mode to condition the lithium-ion batteries and extend battery pack life.
+
+Which of the following Cat products have fully electric systems in them?
+	a) 300.9D mini excavator
+	b) 795F AC Off-Highway Truck
+x	c) 906 compact wheel loader
+	d) 988K XE large wheel loader
+
+Which of the following components may be used by a motor-driven gas compressor set?
+x	a) autotransformer
+	b) auxiliary power transformer
+x	c) current transformer
+	d) drive power transformer
+
+Which of the following Cat products are battery-powered?
+	a) 7295 electric rope shovel
+	b) 8750 dragline
+	c) CN2785 electric motor
+x	d) R1700K XE load-haul-dump
+
+
+## FET01 Introduction to Electrification Technology
+
+Which electric drive system component is only found on AC off-highway trucks?
+	a) accessory power converter
+	b) electric drive motor
+	c) generator
+x	d) retarding grid
+
+Which electric drive system component is only found on D7E track-type tractors?
+x	a) accessory power converter
+	b) electric drive motor
+	c) power inverter cabinet
+	d) retarding grid
+
+Which electric drive system component is only found on D6 XE track-type tractors?
+	a) DT ECM
+	b) GPIC ECM
+	c) MPIC ECM
+x	d) PIC ECM
+
+Which electric drive system component is only found on 988K XE wheel loaders?
+	a) electric drive motor
+	b) electric drive transmission
+	c) final drives
+x	d) transfer gear housing
+
+Which electric drive system component is NOT found on F-series asphalt pavers with screeds?
+x	a) electric drive motor
+	b) generator
+	c) inverter
+	d) screed heater
+
+Which electric drive system component is NOT found on locomotives with electric drives?
+	a) generator
+x	b) generator ECM
+	c) inverter
+	d) traction motor
+
+Hybrid electric systems consist of multiple power sources, including diesel or gas engines, batteries, tethered or cable-powered systems, hydraulic accumulators, and high-speed flywheels.
+
+Some microgrid electric power systems are able to be housed within energy storage modules.  These modules contain some or all of the components mentioned above.  In addition, the module has a remote monitoring system, which allows the module to be monitored and controlled from a back office.
+Microgrid storage modules come in three different system options.  Click or tap on the module types below to learn more about each:
+
+
+
 ### Basic Electricity
 
 Electricity is the flow of electrons in a conductor. It is a phenomenon whose effects are experienced through such things as heat, light and magnetism. It is said that flashlights, electric drills, motors, etc. are generally recognized as electric. However, computers and televisions are often referred to as electronic. What is the difference?
@@ -189,4 +365,117 @@ Electron theory describes the flow of current going from the negative terminal t
 Conventional theory describes the flow going from the positive terminal to the negative terminal. Conventional theory is a standard on which wiring diagrams are based. Therefore, in most cases, use conventional flow theory in fault diagnosis and circuit testing.
 
 A parallel circuit is more complex than a series circuit because there is more than one path for current to flow. Because each current path (branch) connects to the same positive and negative terminal, they will all have the same applied voltage.
+
+
+## T4W FPT01 Power Train Overview (English)
+
+A power train is a group of components that provides a means to transfer, disconnect, and control engine power that is used to perform work.
+The basic functions of the power train are to:
+* Connect and disconnect power from the engine to the final drives
+* Modify speed and torque
+* Provide a means for reverse
+* Equalize power distribution to the final drives (enables the vehicle to turn)
+
+There are three primary types of power trains; mechanical, hydrostatic, and electric. 
+Mechanical power train is the most commonly used in Cat machines.
+In a mechanical power train, power from the engine (1) is transferred through a coupling (2) (clutch or torque converter) to the transmission (3). From the transmission, power is transferred through the drive line (4) to the differential (5), final drives (6), and to the wheels or tracks.
+
+Flywheel clutch | A coupling that connects or disconnects the engine power to the rest of the power train. It allows the engine to run while the machine is not moving.
+
+Torque converter | provides a fluid coupling that multiplies torque to connect the engine to the remainder of the power train.
+
+Drive line | components which transfer output speed, direction, and torque from the transmission to the differentials, axles, and final drives.
+
+Drive Shafts (propeller shaft or tail shaft) are interconnected to transmit the driving motion through fixed or varying angles.
+
+Transfer Gear (2): The transfer gear transfers the power of the transmission to the differential and axle, and in some applications divides the power between the front and rear axles. A drop box is utilized when there is a need to change the drive line elevation.
+
+Direct drive | A manual shift
+
+Synchromesh | A manual shift
+
+Sprockets | connected by a linked chain. Links of the chain mesh with the teeth of the sprockets so that the driven sprocket maintains a constant speed ratio with the drive sprocket. A tractor track configuration consists of shoes, rollers, links, idlers and sprockets.
+
+The chain drive provides no slippage, can handle high loads, and allows distance between the drive shaft and the driven shaft.
+
+Differential | transmits power through the axles to the final drive and wheels or tracks while allowing each wheel to rotate at a different speed when required. During a turn, the inside wheel may turn slower than the outside wheel.
+
+Countershaft | A power shift 
+
+Planetary | A power shift
+
+Final drive connects power to the wheels or tracks and helps the other power train components convert the engine speed into torque, allowing the machine to push or pull extremely heavy loads. Final Drives can be single reduction or double reduction depending on the application.
+
+Compactor wheel | used for equal compaction in forward or reverse. The wheel design can be a drum or individual wheels. The drums or wheels can be smooth or they can have tips as shown in this image, to improve compaction. The wheels can also have chopper blades which compact as well as fragment refuse.
+
+Hydrostatic Drives | A drive power train which uses fluid (oil) to transmit engine power to the wheels or tracks. Power from the engine (1) is transferred through a pump drive (2), which includes a gear train that transfers engine power to a hydraulic pump (3). The hydraulic pump provides oil flow to drive motors (4). The drive motors transfer power to the final drives (5). Its machine direction and speed is controlled by the amount of oil flow from the hydraulic pump. The pump may be controlled mechanically (older models) or electronically.
+
+SSL = SKID STEER LOADER | The hydraulic pump (1) provides oil to the hydraulic motors (2). Each hydraulic motor drives a chain (3), which transfers power through the final drive to the wheels and tires.
+
+TTT = TRACK-TYPE TRACTOR | The D5K2 TTT is equipped with a hydrostatic power train, except that each hydraulic motor transfers power directly through the final drive to sprockets and tracks.
+
+
+
+
+
+
+
+
+
+## FET02 Electrical Fundamentals
+
+
+A technician has been sent out to repair the generator of a D7E track-type tractor.  Which type of generator is found in its electric drive system?
+	a) permanent magnet generator
+	b) switched reluctance generator
+	c) three-phase isochronous generator
+?	d) three-phase synchronous generator
+
+Which of the following are examples of a hybrid electric system?
+	a) AC electric drive system
+	b) electric motor drive system
+x	c) marine hybrid propulsion system
+x	d) microgrid electric power system
+
+A technician has been sent out to a customer with a microgrid electric power system.  Which power sources should the technician expect to find at the work site?
+	a) flywheel energy storage
+x	b) photovoltaic modules
+x	c) storage batteries
+	d) utility power
+
+In which modes of operation do the electric (booster) motors provide power to the azimuth thrusters?
+x	a) dual power mode
+	b) full diesel-electric mode
+	c) full diesel-mechanical mode
+	d) full power operation
+
+In a 988K XE electric drive system, what controls the flow of generator output current into the power inverter?
+x	a) drive train ECM
+	b) generator ECM
+	c) GPIC ECM
+	d) PIC ECM
+
+Which of the following Cat machines feature a diesel electric system?
+	a) 794F AC mining truck
+	b) 795F AC mining truck
+	c) 906 compact wheel loader
+x	d) 988K XE large wheel loader
+
+Which of the following Cat machines have a fully electric system?
+x	a) 300.9D VPS mini excavator
+	b) 8750 dragline
+	c) D7E track-type tractor
+	d) SE60 V screed
+
+A technician has been sent out to a mining site for repairs on a 7495 electric rope shovel.  What components can the technician expect to find in its electric power system?
+x	a) current transformer
+	b) drive power transformer
+x	c) high-voltage cabinet
+x	d) power inverter cabinet
+
+Which components can be used to assist with the start-up of an electric motor for a gas compressor set?
+	a) current transformer
+x	b) starting motor
+x	c) soft starter
+	d) variable frequency drive
 
