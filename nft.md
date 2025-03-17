@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-03-07"
+date: "2025-03-17"
 lastchange: "v011 + infosys tutorial :nft.md"
 file: "nft"
 title: "nft"
@@ -300,7 +300,7 @@ JavaScript
 
 1. This is described 2:40 into video: Infosys "Developing with Blockchain 35m 24s"
 1. Download an app for macOS, Windows, Linux.
-   NO brew install multichain
+    NO brew install multichain
 1.  To create the <strong>genesis block</strong> of a blochain:
 
     multichaind 
@@ -1189,3 +1189,5 @@ https://www.youtube.com/watch?v=G0wdVjBY70Q
 by Autominter, a website for minting NFTs using a smart contract and a web3 wallet.
 generates png layers: background, body, hair, eyes, nose, mouth, and accessories.
 https://www.youtube.com/watch?v=k72aCI1VyKM
+
+https://nft-launchpad.heymint.xyz/nft-art-generator?ph_id=019534d5-f15c-77e2-af0e-2b2b4cb9b64a
