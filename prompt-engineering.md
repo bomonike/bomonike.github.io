@@ -1,7 +1,7 @@
 ---
 layout: post
 url: https://bomonike.github.io/prompt-engineering
-date: "2025-03-15"
+date: "2025-03-17"
 lastchange: "v005 + fix td :prompt-engineering.md"
 file: "prompt-engineering"
 title: "Prompt-Engineering"
@@ -44,6 +44,7 @@ present their <a target="_blank" href="https://www.coursera.org/learn/google-pro
 
 The first memonic is from Tina Huang's <a target="_blank" href="https://www.youtube.com/watch?v=p09yRj47kNM">"Google's 9 Hour AI Prompt Engineering Course In 20 Minutes"<br />
 <img alt="prompt-memonic-tina.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739297851/prompt-memonic-tina_wsk7hi.png"></a>
+https://f.io/0x4JnYKV
 
 ## Tutorials
 
@@ -217,4 +218,4 @@ by Weaviate • Vector Database
 
    Extends RAG (Retrieval-Augmented Generation))
 
-
+1. https://www.youtube.com/watch?v=AxfmzLz9xXM "An AI Prompt Engineer Shares Her Secrets" by Fortune Magazine
