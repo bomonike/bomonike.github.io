@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-16"
-lastchange: "v002 + fix img :weather.md"
+date: "2025-03-17"
+lastchange: "v003 + setup video cumpus :weather.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -20,45 +20,10 @@ created: "2018-04-03"
 {% include _toc.html %}
 ---
 
-## Technologies
-
-There are several technologies to measure your weather:
-
-* Build your own weather station on a Raspberry Pi, ESP32, etc.
-
-Instrument manufacturers:
-* AcuRite
-* Ambient Weather
-* https://www.scientificsales.com/6252-Davis-Wireless-Vantage-Pro2-Weather-Station-p/6252.htm
-* $339 https://shop.tempest.earth/products/tempest <a target="_blank" href="https://tempestwx.com/map/40.7127/-74.0059/8">Map</a>
-
-* The <a target="_blank" href="https://www.amazon.com/Ambient-Weather-WEATHERBRIDGE-Universal-Compatible/dp/B00FPPYM7M?ref_=ast_sto_dp">$159.50</a> <a target="_blank" href="https://www.ambientweather.com/weather-bridge">Ambient Weather Weather Bridge</a> updates (without the use of a PC or networking fees) weather servers real-time to Twitter,  MySQL, EMail Summaries and Alerts, and aircams. See http://www.meteobridge.com/wiki/index.php/Push_Services
-
-## Internet Weather Reports
-
-* Ambient Weather has its own cloud (AWN) Network to receive weather reports for its devices.
-   * https://ambientweather.com/mwdownloads/download/link/id/1223
-
-* WeatherBug.com (USA)
-* pwsweather.com (USA) Weather For You
-* windfinder.com (USA)
-* wxqa.com (Citizens Weather Observation Program) USA
-* openweathermap.org USA
-
-* wow.metoffice.gov.uk
-* awekas.at (Austria)
-
-* Weather Underground also accepts video from Ambient Weather AirCams
-
-
 ## Measurements and Instruments
 
-This is from the Ambient Weather WS-5000 series, which can connect to 8 WH31 Temp/Humidity remote sensors added over 8 channels:<br />
+This is from the most sophisticated manufacturer: Ambient Weather WS-5000 series, which can connect to 8 WH31 Temp/Humidity remote sensors added over 8 channels:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
-
-<!-- This is from the Ambient Weather WS-5000 series:<br />
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png"><img alt="weather-ws-5000-dash.png" width="546" height="390" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png" /></a>
--->
 
 1. AmbientWeather.net connection icon 
 2. Wi-Fi signal strength icon. An exclamation point ! indicates the display is connected to Wi-Fi but not the Internet.
@@ -89,9 +54,12 @@ This is from the Ambient Weather WS-5000 series, which can connect to 8 WH31 Tem
    * Barometric pressure (REL or ABS), 
    * arrow indicates rate of change of pressure
 
-19. Max daily wind gust
+19. "Max Daily Gust" of wind in MPH
 20. Moon Phase
-21. 10-minute average wind speed and direction
+21. "10 MinAvg" (10-minute average) wind speed and compass direction
+
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp" alt="compass-800x800_hvwmtu.webp" /></a>
+
 22. UV Index is measured in UV Index ? by UV meter (if installed)
 
 23. Under arc: am: Sunrise, pm: sunset
@@ -119,11 +87,47 @@ f. Channel
 g. History
 h. Set Mode
 
-## Weather Displays
+<!-- This is from the Ambient Weather WS-5000 series:<br />
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png"><img alt="weather-ws-5000-dash.png" width="546" height="390" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png" /></a>
+-->
 
-Dashboard
+## Metrics over time
 
-Trends over time?
+
+## Technologies
+
+There are several technologies to measure your weather:
+
+* Build your own weather station on a Raspberry Pi, ESP32, etc.
+
+Instrument manufacturers:
+* <a target="_blank" href="https://www.acurite.com/">AcuRite</a> "fell apart after a year" 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=7cxNahFvGVU">VIDEO</a>
+* Ambient Weather
+* Davis Instruments
+* https://www.scientificsales.com/6252-Davis-Wireless-Vantage-Pro2-Weather-Station-p/6252.htm
+* $339 <a target="_blank" href="https://shop.tempest.earth/products/tempest">Tempest</a> <a target="_blank" href="https://tempestwx.com/map/40.7127/-74.0059/8">MAP</a>
+
+* The <a target="_blank" href="https://www.amazon.com/Ambient-Weather-WEATHERBRIDGE-Universal-Compatible/dp/B00FPPYM7M?ref_=ast_sto_dp">$159.50</a> <a target="_blank" href="https://www.ambientweather.com/weather-bridge">Ambient Weather Bridge</a> updates (without the use of a PC or networking fees) weather servers real-time to Twitter,  MySQL, EMail Summaries and Alerts, and aircams. See http://www.meteobridge.com/wiki/index.php/Push_Services
+
+## Internet Weather Reports
+
+* Ambient Weather has its own cloud (AWN) Network to receive weather reports for its devices.
+   * https://ambientweather.com/mwdownloads/download/link/id/1223
+
+* WeatherBug.com (USA)
+* pwsweather.com (USA) Weather For You
+* windfinder.com (USA)
+* wxqa.com (Citizens Weather Observation Program) USA
+* openweathermap.org USA
+
+* wow.metoffice.gov.uk
+* awekas.at (Austria)
+
+* Weather Underground also accepts video from Ambient Weather AirCams
+
+
+## Additional Analysis 
 
 Comparison vs. other weather stations (upwind, downwind, etc.).
 
@@ -139,7 +143,7 @@ display trends
 
 Ambient Weather is a company that provides weather stations and data for consumer use.
 
-* $449.99 WS-5000 series has WiFi and no moving parts https://www.amazon.com/dp/B087V6N5WZ/ref=dp_iou_view_item?ie=UTF8&th=1 and a TFT color display <a target="_blank" href="https://ambientweather.com/mwdownloads/download/link/id/1081">manual</a> 
+* $449.99 WS-5000 series has WiFi and no moving parts https://www.amazon.com/dp/B087V6N5WZ/ref=dp_iou_view_item?ie=UTF8&th=1 and a TFT color display <a target="_blank" href="https://ambientweather.com/mwdownloads/download/link/id/1081">manual</a> <a target="_blank" href="https://www.youtube.com/watch?v=b8oQCBA6Tio">VIDEO</a> <a target="_blank" href="https://www.youtube.com/watch?v=I560_a3yPmE">User Observations</a>
 * $299.99 WS-2000 has WiFi & display
 * $144.99 WS-1965 is a entry-level monitor has moving parts.
 
