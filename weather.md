@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-16"
-lastchange: "v001 + new :weather.md"
+lastchange: "v002 + fix img :weather.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -20,13 +20,41 @@ created: "2018-04-03"
 {% include _toc.html %}
 ---
 
+## Technologies
+
+There are several technologies to measure your weather:
+
+* Build your own weather station on a Raspberry Pi, ESP32, etc.
+
+Instrument manufacturers:
+* AcuRite
+* Ambient Weather
+* https://www.scientificsales.com/6252-Davis-Wireless-Vantage-Pro2-Weather-Station-p/6252.htm
+* $339 https://shop.tempest.earth/products/tempest <a target="_blank" href="https://tempestwx.com/map/40.7127/-74.0059/8">Map</a>
+
+* The <a target="_blank" href="https://www.amazon.com/Ambient-Weather-WEATHERBRIDGE-Universal-Compatible/dp/B00FPPYM7M?ref_=ast_sto_dp">$159.50</a> <a target="_blank" href="https://www.ambientweather.com/weather-bridge">Ambient Weather Weather Bridge</a> updates (without the use of a PC or networking fees) weather servers real-time to Twitter,  MySQL, EMail Summaries and Alerts, and aircams. See http://www.meteobridge.com/wiki/index.php/Push_Services
+
+## Internet Weather Reports
+
+* Ambient Weather has its own cloud (AWN) Network to receive weather reports for its devices.
+   * https://ambientweather.com/mwdownloads/download/link/id/1223
+
+* WeatherBug.com (USA)
+* pwsweather.com (USA) Weather For You
+* windfinder.com (USA)
+* wxqa.com (Citizens Weather Observation Program) USA
+* openweathermap.org USA
+
+* wow.metoffice.gov.uk
+* awekas.at (Austria)
+
+* Weather Underground also accepts video from Ambient Weather AirCams
+
 
 ## Measurements and Instruments
 
-This is from the Ambient Weather WS-5000 series:<br />
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
-
-Up to 8 WH31 Temp/Humidity remote sensors can be added.
+This is from the Ambient Weather WS-5000 series, which can connect to 8 WH31 Temp/Humidity remote sensors added over 8 channels:<br />
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
 
 <!-- This is from the Ambient Weather WS-5000 series:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png"><img alt="weather-ws-5000-dash.png" width="546" height="390" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png" /></a>
@@ -101,30 +129,6 @@ Comparison vs. other weather stations (upwind, downwind, etc.).
 
 d3.js <a target="_blank" href="https://d3js.org/">d3.js</a> is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. <a target="_blank" href="https://learning.oreilly.com/videos/-/10000MNHV2021133/">VIDEO</a>
 
-## Technologies
-
-There are several technologies to measure your weather:
-
-* Build your own weather station on a Raspberry Pi, ESP32, etc.
-
-Instrument manufacturers:
-* AcuRite
-
-The <a target="_blank" href="https://www.amazon.com/Ambient-Weather-WEATHERBRIDGE-Universal-Compatible/dp/B00FPPYM7M?ref_=ast_sto_dp">$159.50</a> <a target="_blank" href="https://www.ambientweather.com/weather-bridge">Ambient Weather Weather Bridge</a> updates (without the use of a PC or networking fees) weather servers real-time to Twitter,  MySQL, EMail Summaries and Alerts, and aircams. See http://www.meteobridge.com/wiki/index.php/Push_Services
-* WeatherBug.com (USA)
-* pwsweather.com (USA) Weather For You
-* windfinder.com (USA)
-* wxqa.com (Citizens Weather Observation Program) USA
-* openweathermap.org USA
-
-* wow.metoffice.gov.uk
-* awekas.at (Austria)
-
-* Weather Underground also accepts video from AirCams
-
-* Ambient Weather has its own cloud (AWN) Network to receive weather reports for its devices.
-   * https://ambientweather.com/mwdownloads/download/link/id/1223
-
 
 ## Smart Home
 
@@ -169,3 +173,5 @@ Other Ambient Weather devices sold separately, with <a target="_blank" href="htt
 ## Variation
 
 Upwind locations on the map would experience weather patterns (such as rain) before you (n=in a downwind location).
+
+https://www.linkedin.com/pulse/ai-classroom-balancing-access-equity-potential-jean-ng--0ub3c/
