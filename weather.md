@@ -25,8 +25,8 @@ created: "2018-04-03"
 This is from the most sophisticated manufacturer: Ambient Weather WS-5000 series, which can connect to 8 WH31 Temp/Humidity remote sensors added over 8 channels:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
 
-Buttons left to right:<br />
-| Minus Brightness | Plus Brightness | Backlight On/Off toggle | Background On/Off toggle | Pressure Absolute/Relative toggle | Channel | History | Set Mode
+Buttons (left to right):<br />
+<table border="1"><tr><td> Minus Brightness </td><td> Plus Brightness </td><td> Backlight On/Off toggle </td><td> Background On/Off toggle </td><td> Pressure Absolute /Relative toggle </td><td> Channel </td><td> History </td><td> Set Mode </td></tr>
 
 1. AmbientWeather.net connection icon 
 2. Wi-Fi signal strength icon. An exclamation point ! indicates the display is connected to Wi-Fi but not the Internet.
@@ -61,7 +61,7 @@ Buttons left to right:<br />
 20. Moon Phase
 21. "10 MinAvg" (10-minute average) wind speed and compass direction
 
-    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp" alt="compass-800x800_hvwmtu.webp" /></a>
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp" alt="compass-800x800_hvwmtu.webp" /></a>
 
 22. UV Index is measured in UV Index ? by UV meter (if installed)
 
