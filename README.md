@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-01"
-lastchange: "v0196 + ai-benchmarks :README.md"
+date: "2025-03-16"
+lastchange: "v0197 + weather :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -176,6 +176,7 @@ Topics alphabetically:
    <a name="W"></a>
    ### U V W
 
+1. <a target="_blank" href="https://bomonike.github.io/weather">weather</a>
 1. <a target="_blank" href="https://bomonike.github.io/waf">waf</a>
 1. <a target="_blank" href="https://bomonike.github.io/web-scraping">web-scraping</a>
 1. <a target="_blank" href="https://bomonike.github.io/windows-on-mac">windows-on-mac</a>
