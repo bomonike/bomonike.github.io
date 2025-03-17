@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-17"
-lastchange: "v003 + setup video cumpus :weather.md"
+lastchange: "v003 + setup video cumpus buttons :weather.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -24,6 +24,9 @@ created: "2018-04-03"
 
 This is from the most sophisticated manufacturer: Ambient Weather WS-5000 series, which can connect to 8 WH31 Temp/Humidity remote sensors added over 8 channels:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
+
+Buttons left to right:<br />
+| Minus Brightness | Plus Brightness | Backlight On/Off toggle | Background On/Off toggle | Pressure Absolute/Relative toggle | Channel | History | Set Mode
 
 1. AmbientWeather.net connection icon 
 2. Wi-Fi signal strength icon. An exclamation point ! indicates the display is connected to Wi-Fi but not the Internet.
@@ -65,27 +68,18 @@ This is from the most sophisticated manufacturer: Ambient Weather WS-5000 series
 23. Under arc: am: Sunrise, pm: sunset
 
 24. Solar Radiation in wm/2 by ? (if installed) - Sunshine is measured by sunshine meters
-25. IN (Indoor) in ug/m3 by PM2.5 sensor if installed
-26. OUT (Outdoor) in ug/m3 by PM2.5 sensor ifs installed
+25. IN (Indoor) in ug/m3 by PM2.5 sensor (if installed)
+26. OUT (Outdoor) in ug/m3 by PM2.5 sensor (if installed)
 27. <a href="#dew-point">Dew point</a> is measured in degrees by dew point meters
 28. "Feels Like" above Temperature
 
-29. Lightning icon appears when then Dew Point exceeds70 ºF, which signifies conditions may be possible for lightning storms to form in the area.
+    <a name="dew-point"></a>
+29. Lightning icon appears when Dew Point exceeds 70ºF, when conditions make it possible for lightning storms to form in the area.
 30. Daily Rain Icon: Rainfall is measured by rain gauges. Modern ones use ultrasonic technology that has no moving parts.
 
 * Moonrise/Moonset?
 * Tide levels?
 * Soil moisture is measured by soil moisture meters
-
-Buttons left to right:
-a. Minus Brightness
-b. Plus Brightness
-c. Backlight On/Off toggle
-d. Background On/Off toggle
-e. Pressure Absolute/Relative toggle
-f. Channel
-g. History
-h. Set Mode
 
 <!-- This is from the Ambient Weather WS-5000 series:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png"><img alt="weather-ws-5000-dash.png" width="546" height="390" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png" /></a>
@@ -133,11 +127,11 @@ Comparison vs. other weather stations (upwind, downwind, etc.).
 
 d3.js <a target="_blank" href="https://d3js.org/">d3.js</a> is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. <a target="_blank" href="https://learning.oreilly.com/videos/-/10000MNHV2021133/">VIDEO</a>
 
+Smart Home display trends
 
-## Smart Home
+Upwind locations on the map would experience weather patterns (such as rain) before you (n=in a downwind location).
 
-display trends
-
+https://www.linkedin.com/pulse/ai-classroom-balancing-access-equity-potential-jean-ng--0ub3c/
 
 ## Ambient Weather
 
@@ -162,20 +156,3 @@ Other Ambient Weather devices sold separately, with <a target="_blank" href="htt
 * WH315M Soil Monitor Sensor (part of garden bundle) <a target="_blank" href="https://ambientweather.com/mwdownloads/download/link/id/1101">manual</a>
 * Pool <a target="_blank" href="https://ambientweather.com/mwdownloads/download/link/id/1102">manual</a>
 * AirCam camera for feeding weather websites <a target="_blank" href="https://ambientweather.com/mwdownloads/download/link/id/1103">manual</a>
-
-
-<hr />
-
-<a name="dew-point"></a>
-
-## Dew Point
-
-
-
-<hr />
-
-## Variation
-
-Upwind locations on the map would experience weather patterns (such as rain) before you (n=in a downwind location).
-
-https://www.linkedin.com/pulse/ai-classroom-balancing-access-equity-potential-jean-ng--0ub3c/
