@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-17"
-lastchange: "v042 + reorg :microsoft-ai.md"
+date: "2025-03-20"
+lastchange: "v043 + ml.azure. :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -19,10 +19,143 @@ created: "2018-04-03"
 {% include l18n.html %}
 {% include _toc.html %}
 
-Here is a hands-on deep dive introduction to Microsoft's Artificial Intelligence (AI) offerings running on the Azure cloud.
+Here is a hands-on deep dive introduction through all the information I've found around Microsoft's Artificial Intelligence (AI) offerings running on the Azure cloud.
+
 My contribution to the world (to you) is a less overwhelming learning sequence, one that starts with the <strong>least complex</strong> of technologies used, then more complex ones.
 {% include whatever.html %}
 
+## Acronyms & Glossary
+
+* AOAI = Azure OpenAI Service
+* OAI = OpenAI
+
+Machine Learning vs. AI services vs. LLMs vs. Generative AI
+
+## Community
+
+AI is moving fast, so everything breaks. Like walking across a desert, we don't get very far on our own.
+
+1. Sign up for https://discord.com/invite/6GUBsZfMBq
+
+2. Sign up for <a target="_blank" href="https://aka.ms/genai-foundershub/">Microsoft for Startups Founders Hub</a> to receive free OpenAI credits and up to $150k towards Azure credits to access OpenAI models through Azure OpenAI Services.
+
+3. Review issues in the GitHub at
+
+   https://github.com/microsoft/generative-ai-for-beginners/issues
+
+4. If you find something wrong in the content, add an issue in its GitHub.
+
+
+<a name="Prerequisites"></a>
+
+### Prerequisites to ai.azure.com (AI Foundry)
+
+Many give up entirely because they did not get their working environment properly setup before diving into the <a href="#ForBeginners">"For Beginners"</a> courses.
+
+As some LEARN modules explains:
+
+1. <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> 
+and learn Portal GUI menu keyboard shortcuts on the Azure portal at 
+
+   https://portal.azure.com/?quickstart=True#view/Microsoft_Azure_Resources/QuickstartCenterBlade
+   * <a target="_blank" href="https://portal.azure.com/?quickstart=True#view/Microsoft_Azure_Resources/QuickstartTutorialBlade/checklistId/get-started-with-azure/sectionId/get-started-deploy-resource/lessonId/get-started-deploy-sql-databases">Effortless create SQL database</a> using new vCore (not old DTU) purchasing model always-on
+
+   <a target="_blank" href="https://portal.azure.com/">https://portal.azure.com</a>
+
+1. Open your Command Terminal.
+
+1. Setup a CLI scripting environment in shell.azure.com.
+<a target="_blank" href="https://bomonike.github.io/mac-setup/">like I describe in my mac-setup page</a>
+
+1. Use CLI to <a href="#CognitiveServices">Create a Cognitive Service</a> to get keys to call the first REST API from among <a target="_blank" href="https://github.com/Azure-Samples/cognitive-services-REST-api-samples">sample calls</a> to <a target="_blank" href="https://docs.microsoft.com/en-us/rest/api/azure/">many REST APIs</a>: the <a href="#TextTranslation">Translator Text API</a>.
+
+1. On Windows 11, install Edge browser according to
+
+   https://microsoftlearning.github.io/mslearn-ai-services/Instructions/setup.html
+
+   The setup is for this LAB pop-up:
+
+   https://learn.microsoft.com/en-us/training/modules/create-manage-ai-services/5a-exercise-ai-services
+
+1. Setup <strong>PowerShell scripts</strong>
+
+Using Command Line:
+1. Install fancy Terminal program Warp.
+1. Install package manager Homebrew (if you're on macOS).
+
+1. Install Git.
+1. Install Visual Studio Code and fancy IDEs Windsurf, Cursor, Claude, etc.
+1. Install Python interpreter.
+1. Install Conda.
+1. Install JupyterLab.
+1. Install Azure CLI.
+1. Install Microsoft Edge browser.
+1. Install Google's Chrome browser.
+
+On Microsoft's Edge browser:
+1. Create an email (on protonmail.com or gmail.com)
+1. Save the password in a password manager.
+1. Credit card. If you have a Capital One card, generate a unique card number.
+1. Put the expiration date as an event in your calendar.
+1. Phone. If you can, generate a unique phone "burner" number.
+
+1. Create Azure master account using email, credit card, and phone.
+1. Create Subscription with credit card.
+1. Azure AI Foundry Account
+1. Create Azure Project (with Hub)
+1. View Hub in the Azure AI Foundry Management center
+
+1. Define IAM Roles and accounts
+1. Define Quota
+1. View Azure Cost analysis
+
+1. Create a GitHub account using your email address.
+1. Create a GitHub Personal Access Token to use Github Models Marketplace free access to LLMs used to create AI Agents.
+
+1. Open Command Prompt or Terminal.
+1. Create a folder for your GitHub account.
+1. Navigate to the folder for your GitHub account.
+
+1. Go to your Personal Access Tokens settings in your GitHub Account.
+1. Select the Fine-grained tokens option on the left side of your screen.
+1. Select Generate new token.
+1. Copy your new token that you have just created. 
+1. Add it to the .env file included in this course.
+
+1. In the https://ai.azure.com/ "Azure AI Foundry Portal"
+1. In the https://ml.azure.com/ "Azure Machine Learning Portal"
+
+
+<a name="ForBeginners"></a>
+
+## For Beginners Series from Microsoft Cloud Advocates
+
+DO THIS: Click "Star" and "Watch" for "All Activity" in each repo below:
+
+* <a target="_blank" href="https://github.com/microsoft/generative-ai-for-beginners/">github.com/microsoft/generative-ai-for-beginners (aka.ms/genai-beginners)</a> "Learn the fundamentals of building Generative AI applications with our 21-lesson comprehensive course by Microsoft Cloud Advocates. 21 Lessons teaching everything you need to know to start building Generative AI applications". (Version 3) Maintained by @bethanyjep.
+   <a target="_blank" href="https://www.youtube.com/watch?v=lFXQkBvEe0o&list=PLlrxD0HtieHj2nfK54c62lcs3-YSTx3Je">VIDEO series</a>
+
+   * <a target="_blank" href="https://learn.microsoft.com/en-us/collections/075ysqe443dd4p?WT.mc_id=academic-105485-koreyst">Generative AI Code Samples</a> - a collection of code samples as extra learning and materials from the "Generative AI for Beginners" course. 
+
+   * <a target="_blank" href="https://github.com/Azure-Samples/rag-data-openai-python-promptflow/tree/main">github.com/Azure-Samples/rag-data-openai-python-promptflow</a> - A copilot sample that uses python to ground the copilot responses in company data.
+   * <a target="_blank" href="https://github.com/Azure-Samples/aistudio-python-langchain-sample?WT.mc_id=academic-105485-koreyst">deprecated: Quickstart sample for using the Azure AI Studio with the SDK or CLI options - and the LangChain framework.</a>
+
+   * <a target="_blank" href="https://github.com/Azure-Samples/azure-search-openai-demo/?WT.mc_id=academic-105485-koreyst">[github.com/Azure-Samples/rag-data-openai-python-promptflow](https://github.com/Azure-Samples/azure-search-openai-demo/?WT.mc_id=academic-105485-koreyst)</a> "ChatGPT + Enterprise data with Azure OpenAI and AI Search - Python"
+
+   * <a target="_blank" href="https://github.com/Azure/AI-in-a-Box?WT.mc_id=academic-105485-koreyst">AI-in-a-Box</a> - leverages the expertise of Microsoft across the globe to develop and provide AI and ML solutions to the technical community. Our intent is to present a curated collection of solution accelerators that can help engineers establish their AI/ML environments and solutions rapidly and with minimal friction.
+
+   * <a target="_blank" href="https://github.com/Azure-Samples/contoso-chat?WT.mc_id=academic-105485-koreyst">Lesson 15: End to End LLM App development with Azure AI Studio and Prompt Flow - Python</a>
+   * <a target="_blank" href="https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/localdev.md#using-a-local-openai-compatible-api?WT.mc_id=academic-105485-koreyst">Lesson 16: RAG chat: Local development of chat app
+
+* <a target="_blank" href="https://github.com/microsoft/AI-For-Beginners">github.com/microsoft/AI-For-Beginners (aka.ms/ai-beginners)</a>
+says it's a "12-week, 24-lesson curriculum! It includes practical lessons, quizzes, and labs. The curriculum is beginner-friendly and covers tools like TensorFlow and PyTorch, as well as ethics in AI." It's an update of the:
+
+* <a target="_blank" href="https://github.com/microsoft/ML-For-Beginners">github.com/microsoft/AI-For-Beginners (aka.ms/ml-beginners)</a> "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all." using primarily Scikit-learn.
+
+* <a target="_blank" href="https://github.com/microsoft/ai-agents-for-beginners">github.com/microsoft/ai-agents-for-beginners (aka.ms/ai-agents-beginners)</a> "10 Lessons to Get Started Building AI Agents"
+
+
+<hr />
 
 ## Human-Computer Interaction (HCI)
 
@@ -93,6 +226,8 @@ The list in a <a target="_blank" href="https://learn.microsoft.com/en-us/trainin
 
 DEFINITION: There are what are called "narrow" or "weak" AI.
 
+### Azure Cloud Services
+
 1. Click <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">(Azure cloud) SERVICES</a> USED:
 
    * <a target="_blank" href="https://bomonike.github.io/azure-machine-learning//">Azure Machine Learning</a>
@@ -120,8 +255,6 @@ DEFINITION: There are what are called "narrow" or "weak" AI.
 
 <a target="_blank" href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=cognitive-services&regions=canada-central,canada-east,us-central,us-east,us-east-2,us-north-central,us-south-central,us-west-central,us-west,us-west-2,norway-east">
 <img alt="microsoft-ai-avail-240108-2544x1796.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707416863/microsoft-ai-avail-240108-2544x1796_wj2ysp.png"></a>
-
-
 
 
 <a name="CognitiveServicesList"></a>
@@ -386,8 +519,6 @@ Microsoft has invented several names to refer to their AI offerings:
 
 Cortana => Bing => Cognitive Services => OpenAI => Generative AI => AI Language
 
-The 2023 branding for Microsoft's AI services to mimic human intelligence is <a target="_blank" href="https://azure.microsoft.com/en-us/products/ai-services/ai-language">"AI Language"</a>, which includes <a target="_blank" href="https://azure.microsoft.com/en-us/services/cognitive-services/">Cognitive Services</a> and <a target="_blank" href="https://azure.microsoft.com/en-us/services/search/">Bing</a>.
-
 <a target="_blank" href="https://www.youtube.com/watch?v=KxwjnuhNVIY&list=RDCMUCFtEEv80fQVKkD4h1PF-Xqw&index=33">"Cortana"</a> was the brand-name for Microsoft's AI. Cortana is the name of the fictional artificially intelligent character in the Halo video game series. Cortana was going to be Microsoft's answer to Alexa, Siri, Hey Google, and other AI-powered personal assistants which respond to voice commands controlling skills that turn lights on and off, etc. However, since 2019, Cortana is considered a "skill" (app) that Amazon's Alexa and Google Assistant can call, working across multiple platforms.
 
 For <a href="#Search">Search, the <strong>Bing</strong></a> "Bing" brand, before OpenAI was separated out from  "Cognitive Services" to its own at <a target="_blank" href="https://docs.microsoft.com/en-us/azure/search/">https://docs.microsoft.com/en-us/azure/search</a>, although it's used in "Conversational AI" using an "agent" (<a href="#BotService">Azure Bot Service</a>) to participate in (natural) conversations. BTW: <a target="_blank" href="https://www.theverge.com/2019/7/25/20727129/microsoft-cortana-features-strategy-report">in 2019</a> Cortana decoupled from Windows 10 search.
@@ -396,9 +527,11 @@ Since October 31st, 2020, <a target="_blank" href="https://blogs.bing.com/search
 
 <a target="_blank" href="https://azure.microsoft.com/en-us/services/iot-edge/">Azure IoT (Edge) Services</a> are separate.
 
+The 2023 rebranding for Microsoft's AI services to mimic human intelligence is <a target="_blank" href="https://azure.microsoft.com/en-us/products/ai-services/ai-language">"AI Language"</a>, which includes <a target="_blank" href="https://azure.microsoft.com/en-us/services/cognitive-services/">Cognitive Services</a> and <a target="_blank" href="https://azure.microsoft.com/en-us/services/search/">Bing</a>.
+
 * https://www.computerworld.com/article/3252218/cortana-explained-why-microsofts-virtual-assistant-is-wired-for-business.html
 
-PROTIP: As of Jan 8, 2024, https://aka.ms/language-studio has "coming soon" for Video and Learn, and "preview" for several services. Essentially Microsoft has two separate offerings by different groups:
+PROTIP: On Jan 8, 2024, https://aka.ms/language-studio had "coming soon" for Video and Learn, and "preview" for several services. Essentially Microsoft has two separate offerings by different groups:
    * https://learn.microsoft.com/en-us/azure/ai-services/
    <br /><br />
 
@@ -415,7 +548,7 @@ Microsoft has been the "sole provider" of servers to OpenAI as part of some agre
 
 In 2025, Microsoft was not part of the "$500 billion investment" announced in the Trump White House.
 
-A few weeks later, Microsoft announced "Microsoft AI".
+A few weeks later, Microsoft announced "Microsoft AI" (MAI).
 
 
 ## Microsoft's History with AI
@@ -461,8 +594,7 @@ NOTE: <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Size_of_W
 https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/
 
 
-Microsoft Reactor ran a
-<a target="_blank" href="https://www.microsoft.com/en-US/cloudskillschallenge/ai/registration/2023/">"Skills Challenge"</a> to reward a badge for those who complete an AI tutorial.
+Microsoft Reactor ran a <a target="_blank" href="https://www.microsoft.com/en-US/cloudskillschallenge/ai/registration/2023/">"Skills Challenge"</a> to reward a badge for those who complete an AI tutorial.
 
 https://learn.microsoft.com/en-us/training/challenges
    * AI Builder
@@ -484,10 +616,13 @@ Microsoft competes for talent with Google, Amazon, IBM, China's Tencent, and man
 ## Azure AI certifications
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr valign="bottom"><th>#</th><th><a href="#AI-900">AI-900 Azure AI Fundamentals</a>
+<tr valign="bottom" align="left"><th>#</th><th><a href="#AI-900">AI-900 Azure AI Fundamentals</a>
 </th><th><a target="_blank" href="#AI-102">AI-102 Azure AI Engineer Associate</a></th></tr>
 
-<tr valign="top"><td>-</td><td><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-fundamentals/">Exercises</a> for <a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">MS LEARN</a></td><td>
+1. In the 
+1. In the https://ml.azure.com/ "Azure Machine Learning Portal"
+
+<tr valign="top"><td>-</td><td></td><td><a target="_blank" href="https://ml.azure.com/">ml.azure.com Azure Machine Learning Foundry Portal</a><br /><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-fundamentals/">Exercises</a> for <a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">MS LEARN</a></td><td><a target="_blank" href="https://ai.azure.com/">ai.azure.com Azure AI Foundry Portal</a>
 -</td></tr>
 
 <tr valign="top"><td>1.</td><td>AI Overview<br />3 hr 2 min</td><td>
@@ -522,14 +657,75 @@ there are three levels of AI:
 
 2. <a href="#AI-102">AI-102</a> $165 Associate exam focuses on the use of <strong>pre-packaged</strong> cloud-based services for AI development. It has free re-cert after 1-year.
 
-   <a name="Coursera"></a>
-   Get 50% off the AI-102 if you finish <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/microsoft-ai-and-ml-engineering?authProvider=mckinsey">Coursera's Microsoft AI & ML Engineering Professional Certificate</a> by Mark DiMauro at Univ. Pittsbergh.
-   * <a href="#Coursera">Coursera LAB</a>: <a target="_blank" href="https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/dSDK3/getting-started-with-jupyter-notebooks-in-azure-machine-learning-studio">Getting started with Jupyter Notebooks in Azure Machine Learning Studio</a>
-
    https://www.linkedin.com/in/alison-felix/
    notice that in exercises some of the items are duplicated. For example:
    * The 1st one goes to ...Exercises/ai-foundry/01-azure-search.html
    * The 2nd one goes to ...Exercises/01-azure-search.html
+
+   Azure AI Foundry FAQ at:<br />
+   https://learn.microsoft.com/en-us/azure/ai-foundry/faq
+   
+   Azure AI Foundry documentation is at:<br />
+   https://learn.microsoft.com/en-us/azure/ai-foundry/
+
+   <a name="Coursera"></a>
+   Get 50% off the AI-102 if you finish <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/microsoft-ai-and-ml-engineering?authProvider=mckinsey">Coursera's Microsoft AI & ML Engineering Professional Certificate</a> by Mark DiMauro at Univ. Pittsbergh. It consists of 5 courses:
+   1. Foundations of AI and Machine Learning - 35 hours
+   2. AI and Machine Learning Algorithms and Techniques - 45 hours
+   3. Building Intelligent Troubleshooting Agents - 45 hours
+   4. Microsoft Azure for AI and Machine Learning - 21 hours
+   5. Advanced AI and Machine Learning Techniques and Capstone - 32 hours
+
+   * <a href="#Coursera">Coursera LAB</a>: <a target="_blank" href="https://www.coursera.org/learn/foundations-of-ai-and-machine-learning/lecture/dSDK3/getting-started-with-jupyter-notebooks-in-azure-machine-learning-studio">Getting started with Jupyter Notebooks in Azure Machine Learning Studio</a>
+
+   There is also a <a target="_blank" href="https://www.coursera.org/learn/developing-ai-applications-azure#modules">Coursera course</a> on "Developing AI Applications with Azure".
+
+<a name="MSReactor"></a>
+
+## MS Reactor Tutorials
+
+   1. <a target="_blank" href="https://techcommunity.microsoft.com/category/azure/blog/azuredevcommunityblog">Microsoft Developer Community Blog at https://techcommunity.microsoft.com/category/azure/blog/azuredevcommunityblog</a> covers ALL the various tech Microsoft has (365, Bicep, etc. in Spanish, English, etc.)
+
+   1. https://devpost.com/software/avoid-maga-word-bans/joins/mG6Kzv8uN6hYCjW0jCt9lA
+
+   1. https://devpost.com/submit-to/23928-azure-ai-developer-hackathon/manage/submissions/630940-avoid-word-bans/project_details/edit
+   DevPost Hackthon project described as "Avoid word bans".
+
+   1. https://www.linkedin.com/pulse/program-find-words-banned-wilson-mar-msc-2ccbc/?trackingId=Ux0g5xgWdyTMf7EAC4hFow%3D%3D
+
+   2. Pamela Fox (MS Evangelist) (pamelafox.org) holds <a target="_blank" href="https://discord.com/invite/kCmxx2wrqZ?event=1329575174982336612">
+   Office hours on Discord</a> 
+
+   1. She held in 2025
+   <a target="_blank" href="https://developer.microsoft.com/en-us/reactor/events/25085/?wt.mc_id=youtube_25085_organicsocial_reactor">Microsoft Reactor livestream events in London, etc.</a> on Intelligent Applications
+   https://developer.microsoft.com/en-us/reactor/series/s-1491/
+
+   From aka.ms/PythonAI/series to https://github.com/pamelafox/python-openai-demos/discussions/21
+   * LLMs <a target="_blank" href="https://www.youtube.com/watch?v=hKTMTcvXxbM">Recording</a> <a target="_blank" href="http://aka.ms/pythonai/llm/slides">Slides</a> <a target="_blank" href="https://7451111251303.gumroad.com/l/bvjub">on GumRoad</a>
+   * Vector embeddings <a target="_blank" href="https://www.youtube.com/watch?v=lyIJcHKA6b0">Recording</a> <a target="_blank" href="http://aka.ms/pythonai/embeddings/slides">slides</a> <a target="_blank" href="">on GumRoad</a>
+   * 18 March RAG	<a target="_blank" href="https://www.youtube.com/watch?v=xSt0lmIuG4c">Recording</a>	<a target="_blank" href="http://aka.ms/pythonai/rag/slides">Slides</a> <a target="_blank" href="https://7451111251303.gumroad.com/l/tkqqin">on GumRoad</a>
+   https://github.com/microsoft/RAG_Hack?tab=readme-ov-file#stream-schedule
+
+   * 19 March, 2025 | 7:00 AM (UTC-06:00) Dynamics 365 CE - 2025 Release Topic: Intelligent Applications
+   * 20 March, 2025 | 4:30 PM (UTC-06:00) Python + AI: Vision models
+   * <a target="_blank" href="https://developer.microsoft.com/en-us/reactor/events/25087/">25 March, 2025 | 4:30 PM (UTC-06:00)</a> Python + AI: Function calling & structured outputs
+   * <a target="_blank" href="https://developer.microsoft.com/en-us/reactor/events/25088/">27 March, 2025 | 4:30 PM (UTC-06:00)</a> Python + AI: Quality & Safety
+
+   1. https://github.com/pamelafox/python-openai-demos
+   1. "Code" button to create GitHub Codespace.
+   1. AI Toolkit accesses FREE GitHub Models (these have limited tokens) at https://github.com/marketplace/models
+
+   1. https://gateway.on24.com/wcc/eh/4304051/category/142480/python-ai
+   Python & AI resources
+
+   1. https://github.com/marketplace?type=models
+
+   1. https://github.com/Azure-Samples/llama-index-python This sample shows how to quickly get started with LlamaIndex.ai on Azure🚀
+
+   * https://github.com/Azure-Samples/raft-distillation-recipe A recipe that will walk you through using either Meta Llama 3.1 405B or GPT-4o deployed on Azure AI to generate a synthetic dataset using UC Berkeley's Gorilla project RAFT method.
+   
+   * https://github.com/Azure-Samples/contoso-chat This sample has the full End2End process of creating RAG application with Prompty and Azure AI Foundry. It includes GPT 3.5 Turbo LLM application code, evaluations, deployment automation with AZD CLI, GitHub actions for evaluation and deployment and intent mapping for multiple LLM task mapping.
+
 
 
 <a name="DocIntel"></a>
@@ -600,7 +796,7 @@ Practice tests:
    * https://www.whizlabs.com/learn/course/designing-and-implementing-an-azure-ai-solution/
    <br /><br />
 
-<a target="_blank" href="https://www.aguidetocloud.com/full-courses/ai900fullcourse">2-hour AGuideToCloud video class by Susanth Sutheesh</a>
+* <a target="_blank" href="https://www.aguidetocloud.com/full-courses/ai900fullcourse">2-hour AGuideToCloud video class by Susanth Sutheesh</a>
 
 
 <hr />
@@ -729,37 +925,7 @@ Practice tests:
 
 <hr />
 
-<a name="Prerequisites"></a>
-
-## Terminal Prerequisites for Hands-on
-
-As some LEARN modules explains:
-
-1. <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> 
-and learn Portal GUI menu keyboard shortcuts on the Azure portal at 
-
-   https://portal.azure.com/?quickstart=True#view/Microsoft_Azure_Resources/QuickstartCenterBlade
-   * <a target="_blank" href="https://portal.azure.com/?quickstart=True#view/Microsoft_Azure_Resources/QuickstartTutorialBlade/checklistId/get-started-with-azure/sectionId/get-started-deploy-resource/lessonId/get-started-deploy-sql-databases">Effortless create SQL database</a> using new vCore (not old DTU) purchasing model always-on
-
-   <a target="_blank" href="https://portal.azure.com/">https://portal.azure.com</a>
-
-1. Open your Command Terminal.
-
-1. Setup a CLI scripting environment in shell.azure.com.
-<a target="_blank" href="https://bomonike.github.io/mac-setup/">like I describe in my mac-setup page</a>
-
-1. Use CLI to <a href="#CognitiveServices">Create a Cognitive Service</a> to get keys to call the first REST API from among <a target="_blank" href="https://github.com/Azure-Samples/cognitive-services-REST-api-samples">sample calls</a> to <a target="_blank" href="https://docs.microsoft.com/en-us/rest/api/azure/">many REST APIs</a>: the <a href="#TextTranslation">Translator Text API</a>.
-
-1. On Windows 11, install Edge browser according to
-
-   https://microsoftlearning.github.io/mslearn-ai-services/Instructions/setup.html
-
-   The setup is for this LAB pop-up:
-
-   https://learn.microsoft.com/en-us/training/modules/create-manage-ai-services/5a-exercise-ai-services
-
-1. Setup <strong>PowerShell scripts</strong>
-
+https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/
 
 <hr />
 
@@ -3602,6 +3768,28 @@ course in Responsible AI
 <a target="_blank" href="https://www.youtube.com/watch?v=qOB4dsEKYMg">VIDEO:
 Another OpenAI Scientist QUITS —Says AGI Is a ‘TICKING TIME BOMB’
 
+For Azure AI Foundry Models you pay for:
+* MaaP = Modela as a P? means You pay for the compute sized chosen. Microsoft offers GPU Model tuning where you can provide MaaP models to dedicated GPU Hardware such as A100 and then complete fine tuning see https://aka.ms/ignite/pre016 for examples for fine tuning with Azure.
+
+* MaaS = Models as a Service for Tokens consumed for pay-as-you-go inference APIs and hosted fine-tuning for <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/deploy-models-llama">Llama 2 family models</a>. Currently, there's no extra charge for Azure AI Foundry outside of typical AI services and other Azure resource charges.
+
+* For GPU acceleration, it's hard to get cost effectively on Azure AI foundry. So look at the cost of Hardware for Azure GPU VM Compute costs see the Azure pricing calc for estimates https://azure.microsoft.com/en-gb/pricing/calculator/
+
+<a target="_blank" href="https://www.linkedin.com/in/leestott/">Lee Stott</a> wrote in Oct 2024 <a target="_blank" href="https://www.youtube.com/watch?v=5o138585100">"The Future of AI"</a> says:
+
+To fine tune your own model, follow https://aka.ms/ignite/pre016 which shows you how to fine tune models using Azure AI Foundry 1 click fine tuning or Microsoft Olive Pipeline fine tuning. 
+
+but you can also use the tool to fine tune model from hugging face.
+
+GitHub Models are available at https://github.com/marketplace/models and each model card displays the quota/capacity limit 
+
+
+
+
+
+## Advanced RAG
+
+<a target="_blank" href="https://www.linkedin.com/in/yujiantang/">Yujian Tang</a> wrote in Oct 2024 <a target="_blank" href="https://www.linkedin.com/learning/advanced-rag-applications-with-vector-databases/introduction-to-preprocessing-for-rag">"Advanced RAG Applications with Vector Databases"</a> makes use of Python 3.11 on VScode.
 
 
 ## More
