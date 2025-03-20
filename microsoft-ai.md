@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-20"
-lastchange: "v043 + ml.azure. :microsoft-ai.md"
+lastchange: "v044 + FAQ :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -31,7 +31,7 @@ My contribution to the world (to you) is a less overwhelming learning sequence, 
 
 Machine Learning vs. AI services vs. LLMs vs. Generative AI
 
-## Community
+## Join Communities
 
 AI is moving fast, so everything breaks. Like walking across a desert, we don't get very far on our own.
 
@@ -52,7 +52,29 @@ AI is moving fast, so everything breaks. Like walking across a desert, we don't 
 
 Many give up entirely because they did not get their working environment properly setup before diving into the <a href="#ForBeginners">"For Beginners"</a> courses.
 
-As some LEARN modules explains:
+This is covered in <LEARN modules certification AZ-104:
+
+<u>Using Command Line</u>:
+
+1. Install fancy Terminal program Warp.
+1. Install package manager Homebrew (if you're on macOS).
+
+1. Install Git.
+1. Install Visual Studio Code and fancy IDEs Windsurf, Cursor, Claude, etc.
+1. Install Python interpreter.
+1. Install Conda.
+1. Install JupyterLab.
+1. Install Azure CLI.
+1. Install Microsoft Edge browser.
+1. Install Google's Chrome browser.
+
+   <u>On Microsoft's Edge browser:</u>
+
+1. Create an email (on protonmail.com or gmail.com)
+1. Save the password in a password manager.
+1. Credit card. If you have a Capital One card, generate a unique card number.
+1. Put the expiration date as an event in your calendar.
+1. Phone. If you can, generate a unique phone "burner" number.
 
 1. <a target="_blank" href="https://bomonike.github.io/azure-onboarding/">Get onboarded to a Microsoft Azure subscriptions</a> 
 and learn Portal GUI menu keyboard shortcuts on the Azure portal at 
@@ -60,12 +82,13 @@ and learn Portal GUI menu keyboard shortcuts on the Azure portal at
    https://portal.azure.com/?quickstart=True#view/Microsoft_Azure_Resources/QuickstartCenterBlade
    * <a target="_blank" href="https://portal.azure.com/?quickstart=True#view/Microsoft_Azure_Resources/QuickstartTutorialBlade/checklistId/get-started-with-azure/sectionId/get-started-deploy-resource/lessonId/get-started-deploy-sql-databases">Effortless create SQL database</a> using new vCore (not old DTU) purchasing model always-on
 
-   <a target="_blank" href="https://portal.azure.com/">https://portal.azure.com</a>
+   <a target="_blank" href="https://portal.azure.com/">https://portal.azure.com</a> (Azure Cloud Shell)
 
-1. Open your Command Terminal.
+1. Setup a CLI scripting environment in <a target="_blank" href="https://shell.azure.com">https://shell.azure.com</a> <a target="_blank" href="https://bomonike.github.io/mac-setup/">like I describe in my mac-setup page</a>
 
-1. Setup a CLI scripting environment in shell.azure.com.
-<a target="_blank" href="https://bomonike.github.io/mac-setup/">like I describe in my mac-setup page</a>
+   WARNING: A <strong>storage account</strong> is required for the CLI to work AND it costs money per month.
+
+1. Open your Command Terminal. On macOS, use Terminal. On Windows, use cmd, Bash (Windows Terminal) or PowerShell.
 
 1. Use CLI to <a href="#CognitiveServices">Create a Cognitive Service</a> to get keys to call the first REST API from among <a target="_blank" href="https://github.com/Azure-Samples/cognitive-services-REST-api-samples">sample calls</a> to <a target="_blank" href="https://docs.microsoft.com/en-us/rest/api/azure/">many REST APIs</a>: the <a href="#TextTranslation">Translator Text API</a>.
 
@@ -79,25 +102,6 @@ and learn Portal GUI menu keyboard shortcuts on the Azure portal at
 
 1. Setup <strong>PowerShell scripts</strong>
 
-Using Command Line:
-1. Install fancy Terminal program Warp.
-1. Install package manager Homebrew (if you're on macOS).
-
-1. Install Git.
-1. Install Visual Studio Code and fancy IDEs Windsurf, Cursor, Claude, etc.
-1. Install Python interpreter.
-1. Install Conda.
-1. Install JupyterLab.
-1. Install Azure CLI.
-1. Install Microsoft Edge browser.
-1. Install Google's Chrome browser.
-
-On Microsoft's Edge browser:
-1. Create an email (on protonmail.com or gmail.com)
-1. Save the password in a password manager.
-1. Credit card. If you have a Capital One card, generate a unique card number.
-1. Put the expiration date as an event in your calendar.
-1. Phone. If you can, generate a unique phone "burner" number.
 
 1. Create Azure master account using email, credit card, and phone.
 1. Create Subscription with credit card.
@@ -105,7 +109,7 @@ On Microsoft's Edge browser:
 1. Create Azure Project (with Hub)
 1. View Hub in the Azure AI Foundry Management center
 
-1. Define IAM Roles and accounts
+1. Define IAM Roles and accounts <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-ai-foundry">for Azure AI Foundary</a>
 1. Define Quota
 1. View Azure Cost analysis
 
@@ -157,9 +161,11 @@ says it's a "12-week, 24-lesson curriculum! It includes practical lessons, quizz
 
 <hr />
 
-## Human-Computer Interaction (HCI)
+## How to Make Money from this?
 
-Microsoft "democratizes" AI and Machine Learning by providing a front-end GUI that hides some of the complexities, enabling them to be run <strong>possibly without programming</strong>.
+End-user Productivity of Human-Computer Interaction (HCI)
+
+Microsoft "democratizes" Machine Learning and AI by providing a front-end GUI that hides some of the complexities, enabling them to be run <strong>possibly without programming</strong>.
 
    <ul>Alas, Microsoft's Azure AI gallery of samples and users' contributions is no longer at
    <a target="_blank" href="https://gallery.azure.ai/browse">https://gallery.azure.ai/browse</a>
@@ -210,7 +216,7 @@ Case studies of how people are already making use of AI/ML to save time and mone
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1691674882/microsoft-ai-portfolio-1725x989_mqivy5.png"><img alt="microsoft-ai-portfolio-1725x989.png" width="1725" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1691674882/microsoft-ai-portfolio-1725x989_mqivy5.png"><br /><em>Click picture for full-page view</em>.
 
-In the diagram above left, Microsoft makes a distinction between "Business Users & Citizen Developers" who use their Applications and "Power Platform" and geeky "Developers & Data Scientists" who use "Azure AI" in the Azure cloud.
+In the diagram above, Microsoft makes a distinction between "Business Users & Citizen Developers" who use their Applications and "Power Platform" and geeky "Developers & Data Scientists" who use "Azure AI" in the Azure cloud.
 
 In the diagram above, Microsoft categorize Azure's AI services these groups (all of which have GUI, CLI, and API interfaces):
    * <strong>Applied</strong> AI Services are part of automated workflows, but a service can be included among
@@ -619,11 +625,7 @@ Microsoft competes for talent with Google, Amazon, IBM, China's Tencent, and man
 <tr valign="bottom" align="left"><th>#</th><th><a href="#AI-900">AI-900 Azure AI Fundamentals</a>
 </th><th><a target="_blank" href="#AI-102">AI-102 Azure AI Engineer Associate</a></th></tr>
 
-1. In the 
-1. In the https://ml.azure.com/ "Azure Machine Learning Portal"
-
-<tr valign="top"><td>-</td><td></td><td><a target="_blank" href="https://ml.azure.com/">ml.azure.com Azure Machine Learning Foundry Portal</a><br /><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-fundamentals/">Exercises</a> for <a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">MS LEARN</a></td><td><a target="_blank" href="https://ai.azure.com/">ai.azure.com Azure AI Foundry Portal</a>
--</td></tr>
+<tr valign="top"><td>-</td><td><a target="_blank" href="https://ml.azure.com/">ml.azure.com Azure Machine Learning Foundry Portal</a><br /><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-fundamentals/">Exercises</a> for <a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">MS LEARN</a> FAW DOCS </td><td><a target="_blank" href="https://ai.azure.com/">ai.azure.com Azure AI Foundry Portal</a> <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-foundry/faq">FAQ</a> <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-foundry/">DOCS</a></td></tr>
 
 <tr valign="top"><td>1.</td><td>AI Overview<br />3 hr 2 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-services/">Exercises</a>:
@@ -663,10 +665,10 @@ there are three levels of AI:
    * The 2nd one goes to ...Exercises/01-azure-search.html
 
    Azure AI Foundry FAQ at:<br />
-   https://learn.microsoft.com/en-us/azure/ai-foundry/faq
+   
    
    Azure AI Foundry documentation is at:<br />
-   https://learn.microsoft.com/en-us/azure/ai-foundry/
+   
 
    <a name="Coursera"></a>
    Get 50% off the AI-102 if you finish <a target="_blank" href="https://www.coursera.org/programs/mckinsey-learning-program-uedvm/professional-certificates/microsoft-ai-and-ml-engineering?authProvider=mckinsey">Coursera's Microsoft AI & ML Engineering Professional Certificate</a> by Mark DiMauro at Univ. Pittsbergh. It consists of 5 courses:
@@ -925,7 +927,18 @@ Practice tests:
 
 <hr />
 
+AI Capabilities
+
 https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/
+
+most medium to large-scale development scenarios it's better to provision Azure AI services resources as part of an Azure Foundry hub - enabling you to centralize access control and cost management, and making it easier to manage shared resource usage based on AI development projects. Hubs provide a top-level container for managing shared resources, data, connections and security configuration for AI application development. A hub can support multiple projects, in which developers collaborate on building a specific solution.
+A hub provides a centrally managed collection of shared resources and management configuration for AI solution development. You need at least one hub to use all of the solution development features and capabilities of AI Foundry.
+
+https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/4-azure-ai-foundry
+
+
+
+
 
 <hr />
 
@@ -1482,26 +1495,29 @@ Alternating:
 
 <a name="VisionTutorials"></a>
 
-### Vision Tututoral
+### Vision Tutorial
 
-https://microsoftlearning.github.io/mslearn-ai-vision/
-   * <a target="_blank" href="https://github.com/MicrosoftLearning/mslearn-ai-vision">https://github.com/MicrosoftLearning/mslearn-ai-vision</a>
+<a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-vision/">https://microsoftlearning.github.io/mslearn-ai-vision/ EXERCISES</a> based on<br />
+<a target="_blank" href="https://github.com/MicrosoftLearning/mslearn-ai-vision">https://github.com/MicrosoftLearning/mslearn-ai-vision</a>
 
    * Analyze Images with Azure AI Vision
    * Classify images with an Azure AI Vision custom model
    * Detect Objects in Images with Custom Vision
    * Detect and Analyze Faces
    * Read Text in Images
-   * Analyze Video with <a href="#VideoAnalyzer">Video Analyzer</a>
-   * Classify Images with Azure AI <a href="#CustomVision">Custom Vision</a>
+   * Analyze Video with <a href="#VideoAnalyzer">Video Analyzer</a> (Indexer)
+   * Classify Images with Azure AIx <a href="#CustomVision">Custom Vision</a>
    <br /><br />
+
+LLMOps: <a target="_blank" href="https://www.youtube.com/playlist?list=PLlrxD0HtieHhB8tQ9Yi2BVVZqWrsjUB_4">LLMOps Microsoft Developer videos</a>
 
 
 ### Use GUI
 
-   References:
-   * aka.ms/cognitivevision
-   <br /><br />
+<a target="_blank" href="https://aka.ms/cognitivevision/">aka.ms/cognitivevision</a> resolves to <a target="_blank" href="https://www.youtube.com/c/MicrosoftMechanicsSeries">YouTube channel "Microsoft Mechanics"</a>
+rebranded to include "agents", such as:
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=GD7MnIwAxYM">VIDEO</a> "Introducing Azure AI Foundry - Everything you need for AI development"
 
 1. In a web browser, navigate to Vision Studio:
 
