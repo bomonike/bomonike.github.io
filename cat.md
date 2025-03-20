@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-03-17"
+date: "2025-03-20"
 lastchange: "v008 + buffers headers :cat.md"
 file: "cat"
 title: "Caterpillar"
@@ -210,6 +210,105 @@ x	c) Electric Hybrid
 
 25 question post assessment
 
+## T4W FBS17 Cat® Machines Product Line (English)
+
+Refer to the <a target="_blank" href="https://catdealer.com/">catdealer.com</a> for the up-to-date list of models that are currently in production.
+
+2019 and before being discontinued:
+
+* Machine Update/Version
+* Machine Arrangement
+
+2018 and after:
+
+* Model 140GC motor grader has a PIN with a prefix followed by a unique number for each machine built. 
+The 140GC shown has the prefix W92, and each machine has a different number, or suffix, following the prefix. 
+The 140GC also contains an engine and transmission.  This 140GC identification plate contains the model number, serial number, and arrangement number for the engine and transmission.
+* "1" is the machine family (1 being the motor grader family)
+* "40" is the machine size
+* "GC" is the value segment identifier focused on cost per hour and have the lowest cost of downtime/affordability of the Lifecycle Value segment. Customers see these machines as providing an exceptional value proposition for the applications and markets where they are designed to compete. 
+
+   Alternately, "XE" is a value segment identifier for Cat premium products with advanced technology where significant additional customer value is offered -- include a specific breakthrough technological advancement that is clearly differentiating in the industry and provides dramatic benefits to our customers' owning and operating costs.
+
+* PIN = Product identification number | is used to identify the machine.
+* A serial number is used to identify the major components in the machine.
+* A build number to identify the standard features on the machine. The build number '01' would be the letter designation and 'A' would be the Annual Product Update (APU) that it has. This numbering system gives each machine a unique number.
+
+* Refer to SEBU5596 for the PIN plate locations for all machines, or 
+* refer to its Operation and Maintenance Manual (OMM) found in Cat's Service Information System (SIS).
+
+<a target="_blank" href="https://www.cat.com/en_US/products/new/equipment/articulated-trucks.html">Articulated trucks</a> are designed to haul materials in poor underfoot conditions on shorter hauls and steeper grades.
+
+   "EJ" for ejector body design
+
+   Dump Body design
+
+* APECS = Advanced Productivity Electronic Control Strategy | transmission
+
+Two main types of backhoe loaders that dig trenches, load trucks, and reach over obstructions for
+
+Asphalt breaking
+Concrete demolition and preparation
+Construction
+Excavation
+Landscaping
+Light transportation of building materials
+Powering building equipment
+Road paving
+Small demolitions
+Utilities installation
+   * Center Pivot Backhoe loader provides optimal digging and breakout forces for moving large volumes of material. (415, 415F2, 416Fw, 420, 420XE, 420F2, 430, 430F2, 440, 450)
+   Centers only swings from side to side around a center point at the middle of the machine's rear. The backhoe cannot slide from side to side along the rear of the machine.
+   * Side Shift Backhoe can be used in close quarters with walls, fences, and other equipment as it goes about its work. (422F2, 427F2, 428F2, 432F2, 434F2, 444F2)
+
+Compact Track Loader (239D3, 249D3, 259D3) for 
+Adding soil layers over patios, sidewalks, and other areas
+Final grading
+Landscaping
+Loading and carrying material
+Material handling
+Site development
+Spread filling and back filling
+Stockpiling
+Truck loading
+
+Multi-Terrain Track Loader (257D3, 277D, 279D3, 287D, 289D3, 297D2 XHP, 299D3, 399D3), 
+   * XHP = Xtra Hydraulic Power
+
+Skid Steer Loader (226D3, 232D3, 236D3, 242D3, 246D3, 262D3, 272D3, 272D3XE)
+
+Landfill (816K, 826K, 836K) - Three wheel and tip configurations: paddle tip, plus tip, combination tip
+
+Soil Compactors (815K, 825K) to handle waste & spread materials. features 
+Articulated frame
+Cleaner bars
+Tamping wheels with tips in a chevron pattern
+
+
+### Material Handlers
+
+### Mining & Off-Highway Trucks
+
+### Motor Graders
+
+### Pipelayers
+
+### Telehandlers
+
+### Track Loaders
+
+### Track-Type Tractors
+
+### Wheel Loaders
+
+### Wheel-Tractors-Scrapers
+
+### Forestry Equipment
+
+### Mining Equipment
+
+### Paving Equipment
+
 
 ## Questions
 
@@ -402,7 +501,6 @@ Differential | transmits power through the axles to the final drive and wheels o
 
 Countershaft | A power shift 
 
-Planetary | A power shift
 
 Final drive connects power to the wheels or tracks and helps the other power train components convert the engine speed into torque, allowing the machine to push or pull extremely heavy loads. Final Drives can be single reduction or double reduction depending on the application.
 
@@ -414,12 +512,96 @@ SSL = SKID STEER LOADER | The hydraulic pump (1) provides oil to the hydraulic m
 
 TTT = TRACK-TYPE TRACTOR | The D5K2 TTT is equipped with a hydrostatic power train, except that each hydraulic motor transfers power directly through the final drive to sprockets and tracks.
 
+Passing Score: 86%
+
+Planetary gear | between sun gear output in the middle and a large ring gears held on the outside, and a planetary carrier holding planetary pinion gears rotating. The planetary carrier is mounted on a countershaft that is connected to the transmission. The planetary carrier is mounted on a countershaft that is connected to the transmission for reverse direction.
+
+Which component connects the power to the wheels or tracks?
+	a) Coupling
+	b) Differential
+s	c) Final drive
+	d) Transmission
+
+An electric drive power train is electronically controlled by which component?
+	a) Generator
+	b) Inverter
+x	c) ECM
+	d) AC/DC converter
+
+What type of gear changes the direction of the driven gear so it turns the same direction as the drive gear?
+	a) Bevel gear
+	b) Idler gear
+x	c) Pinion gear
+	d) Spur gear
+
+What allows the power flow in a gear train to be transferred at right angles?
+x	a) Bevel gear set
+	b) Idler gear
+	c) Pinion gear
+	d) Spur gear
+
+In an electric drive power train, mechanical energy from the engine rotates which component?
+	a) Generator
+	b) Inverter
+x	c) Propulsion motor
+	d) AC/DC converter
 
 
+gears
 
 
+To get reverse in a planetary gear set, which member must be held?
+x	a) Planetary carrier
+	b) Pinion gear
+	c) Ring gear
+	d) Sun gear
 
+Which type of drive provides no slippage, can handle high loads, and allows distance between the drive shaft and the driven shaft?
+	a) Gear
+	b) Friction
+	c) Fluid
+x	d) Chain
 
+This gear arrangement will provide which of the following?
+x	a) Speed advantage
+	b) Torque advantage
+	c) Power advantage
+
+The clearance in gear teeth that allows a slight backward movement of the gears is called __________.
+x	a) Backlash
+	b) Slack
+	c) Involute curve
+	d) Shims
+
+Which component controls output speed, direction, and torque in a mechanical power train?
+x	a) Transmission
+	b) Torque converter
+	c) Final drive
+	d) Transfer gear
+
+A torque converter transmits power using which of the following methods?
+	a) Pneumatics
+	b) Fluid
+x	c) Mechanical advantage
+	d) Drive shaft
+
+Which of the following are basic functions of a powertrain?
+x	a) Connect and disconnect power from the engine to the final drives(s)
+x	b) Modify speed and torque
+	c) Provide a means for reverse
+	d) Equalize power distribution to the final drives (enables the vehicle to turn)
+
+When calculating gear ratios in a planetary gear set, which component is the largest effective member?
+	a) Bevel gear
+	b) Planetary carrier
+x	c) Ring gear
+	d) Sun gear
+
+In a hydrostatic drive power train the hydraulic motor can transfer power to the _________.
+x	a) Transmission
+	b) Final Drive
+x	c) Chain
+x	d) Drive shaft
 
 
 ## FET02 Electrical Fundamentals
@@ -479,3 +661,24 @@ x	b) starting motor
 x	c) soft starter
 	d) variable frequency drive
 
+## Tuning
+
+For enhanced performance, custom tuning can, with Emissions equipment intact and factory safety monitoring retained:
+* increase power and torque by up to 20-30% across the engine's operating range.
+* allows for running larger implements, operating at higher gears, and potentially reducing fuel consumption.
+
+https://duramaxtuner.com/diesel-tuning/caterpillar-custom-tuning-and-hardware.html
+
+The Engine Control Module (ECM) is a critical component that requires programming:
+1. Connect the Caterpillar Communication Adapter (Cat Com Adapter 3) to the ECM and a laptop running Caterpillar Electronic Technician (Cat ET) software.
+2. Obtain the correct flash file for your specific tractor model from an authorized Caterpillar dealer.
+3. Flash the ECM using the appropriate file, which determines the engine type and horsepower rating.
+4. Configure the ECM parameters, either by copying from a previous ECM or manually entering them.
+
+* https://www.youtube.com/watch?v=6e23cJ6a5R8 How To Program A Cat ECM. How To Flash A Cat ECM. Cat Computer Programming. by Adept Ape
+* https://www.youtube.com/watch?v=QsMgZcT_LCw by Adept Ape
+* https://www.youtube.com/watch?v=zZDHt0VSN5o by Multi-Task
+
+
+
+* https://www.youtube.com/watch?v=0vbTkRvFa80 ECM on fuel-injector Harleys
