@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-20"
-lastchange: "v044 + FAQ :microsoft-ai.md"
+lastchange: "v045 + Glossary :microsoft-ai.md"
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
 excerpt: "How to automate AI workflows in Microsoft's Azure and Fabric, despite marketing rebrands, and passing AI-900 & AI-102 certification exams."
@@ -23,6 +23,8 @@ Here is a hands-on deep dive introduction through all the information I've found
 
 My contribution to the world (to you) is a less overwhelming learning sequence, one that starts with the <strong>least complex</strong> of technologies used, then more complex ones.
 {% include whatever.html %}
+
+<a name="Glossary"></a>
 
 ## Acronyms & Glossary
 
@@ -124,15 +126,17 @@ and learn Portal GUI menu keyboard shortcuts on the Azure portal at
 1. Select the Fine-grained tokens option on the left side of your screen.
 1. Select Generate new token.
 1. Copy your new token that you have just created. 
-1. Add it to the .env file included in this course.
+1. <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-studio/reference/region-support">Pick a region</a>.
+1. Add token & region to the .env file for this course.
 
+1. In the https://portal.azure.com
 1. In the https://ai.azure.com/ "Azure AI Foundry Portal"
 1. In the https://ml.azure.com/ "Azure Machine Learning Portal"
 
 
 <a name="ForBeginners"></a>
 
-## For Beginners Series from Microsoft Cloud Advocates
+## Beginners Series from Microsoft Cloud Advocates
 
 DO THIS: Click "Star" and "Watch" for "All Activity" in each repo below:
 
@@ -622,10 +626,10 @@ Microsoft competes for talent with Google, Amazon, IBM, China's Tencent, and man
 ## Azure AI certifications
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr valign="bottom" align="left"><th>#</th><th><a href="#AI-900">AI-900 Azure AI Fundamentals</a>
+<tr valign="bottom" align="left"><th><a href="#Glossary">#</a></th><th><a href="#AI-900">AI-900 Azure AI Fundamentals</a>
 </th><th><a target="_blank" href="#AI-102">AI-102 Azure AI Engineer Associate</a></th></tr>
 
-<tr valign="top"><td>-</td><td><a target="_blank" href="https://ml.azure.com/">ml.azure.com Azure Machine Learning Foundry Portal</a><br /><a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-fundamentals/">Exercises</a> for <a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">MS LEARN</a> FAW DOCS </td><td><a target="_blank" href="https://ai.azure.com/">ai.azure.com Azure AI Foundry Portal</a> <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-foundry/faq">FAQ</a> <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-foundry/">DOCS</a></td></tr>
+<tr valign="top"><td>-</td><td><a target="_blank" href="https://ml.azure.com/">ml.azure.com Azure <strong>Machine Learning Foundry</strong> Portal</a> <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-fundamentals/">Exercises</a> for <a target="_blank" href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification">MS LEARN</a> FAW DOCS </td><td><a target="_blank" href="https://ai.azure.com/">ai.azure.com Azure <strong>AI Foundry</strong> Portal</a> <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-foundry/faq">FAQ</a> <a target="_blank" href="https://learn.microsoft.com/en-us/azure/ai-foundry/">DOCS</a></td></tr>
 
 <tr valign="top"><td>1.</td><td>AI Overview<br />3 hr 2 min</td><td>
 <a target="_blank" href="https://microsoftlearning.github.io/mslearn-ai-services/">Exercises</a>:
