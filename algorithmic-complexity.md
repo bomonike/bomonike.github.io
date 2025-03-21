@@ -1,10 +1,10 @@
 ---
 layout: post
 date: "2025-03-21"
-lastchange: "v001 + new :algorithmic-complexity.md"
+lastchange: "v002 + tutorials :algorithmic-complexity.md"
 file: "algorithmic-complexity"
 title: "Algorithmic Complexity"
-excerpt: "We use Python programs using Matplotlib, Seaborn, Plotly to illustrate time and memory space complexity of algorithms (aka Big O Asymptotic Notation) such as for sorting"
+excerpt: "We use Python programs using Matplotlib to illustrate time and memory space complexity of algorithms (aka Big O Notation) such as for sorting"
 tags: [Python, analytics]
 image:
 # feature: pic green matrix hallway 1900x500.jpg
@@ -23,6 +23,10 @@ created: "2025-03-20"
 
 At first I thought "Big-O" was an academic term for theoretical computer scientists to show their superiority.
 
+<em>"If you want a job as a programmer"...</em>
+
+REMEMBER: "Big O" notation is about the <strong>worst case</strong> runtime of the algorithm as a function of the number of operations compared to the input size (representated as "N").
+
 But I've come to see some usfulness in it for showing how to illustrate the impact of different algorithms. 
 
    * To determine what is the most efficient <a href="#SortingAlgorithms">sorting algorithm</a> (Bubble Sort vs Quick Sort vs Merge Sort)
@@ -38,9 +42,9 @@ This article shows how to use Python libraries Matplotlib, Seabord, Plotly to pl
 
 This diagram (<a target="_blank" href="https://www.youtube.com/watch?v=_fgtTE2bhMg&t=13m26s">from BJC</a>) shows the six basic algorithmic complexity types:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742535852/algorithmic-complexity-plot_za0vgz.png"><img alt="algorithmic-complexity-plot.png" width="1725" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742535852/algorithmic-complexity-plot_za0vgz.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742535852/algorithmic-complexity-plot_za0vgz.png"><img alt="algorithmic-complexity-plot.png" width="546" height="443" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742535852/algorithmic-complexity-plot_za0vgz.png" /></a>
 
-(<a target="_blank" href="https://www.youtube.com/watch?v=kPRA0W1kECg" title="by Timo Bingmann (25M views)">some have identified more</a>)
+<a name="SortingAlgorithms"></a>
 
 ## Summary Table
 
@@ -48,41 +52,65 @@ This diagram (<a target="_blank" href="https://www.youtube.com/watch?v=_fgtTE2bh
 <tr valign="bottom" align="left"><th>Notation</th><th>Name</th><th>Usage</th></tr>
 
 <tr valign="top"><td> O(1) </td><td> Constant over all inputs
-</td><td> Lookups after Memoization
-</td><td> - </td></tr>
+</td><td> Multiplication or Lookups after Memoization (or already sorted)
+</td></tr>
 
 <tr valign="top"><td> O(N) </td><td> Linear
-</td><td> Recalculate each item
-</td><td> - </td></tr>
+</td><td> Recalculate for each N
+</td></tr>
 
 <tr valign="top"><td> O(LogN) </td><td> Logarithmic
 </td><td> (Half)
-</td><td> - </td></tr>
+</td></tr>
 
-<tr><td colspan="4"><a target="_blank" href="https://www.youtube.com/watch?v=0oDAlMwTrLo" title="symptotic Notations 101: Big O, Big Omega, & Theta (Asymptotic Analysis Bootcamp) Symptotic by Back To Back SWE">asymptotic (toward infinity)</a></td></tr>
+<tr><td colspan="4" align="center"><a target="_blank" href="https://www.youtube.com/watch?v=0oDAlMwTrLo" title="symptotic Notations 101: Big O, Big Omega, & Theta (Asymptotic Analysis Bootcamp) Symptotic by Back To Back SWE">asymptotic (toward infinity)</a>
+</td></tr>
 
 <tr valign="top"><td> O(N^2) N squared </td><td> Quadratic
-</td><td> Bubble sort
-</td><td> - </td></tr>
+</td><td> <a href="#BubbleSort">Unsorted Bubble sort</a>
+</td></tr>
 
 <tr valign="top"><td> O(N^3) N cubed </td><td> Cubic 
 </td><td> ?
-</td><td> - </td></tr>
+</td></tr>
 
-<tr valign="top"><td> O(2^N) 2 to the N </td><td> Exponential 
-</td><td> - </td></tr>
+<tr valign="top"><td> O(c^N) 2 or c to the N </td><td> Exponential 
+</td><td> For complex cryptography
+</td></tr>
+
+<tr valign="top"><td> O(N!) N </td><td> Factorial
+</td><td> Fibonacci (gets really slow real fast)
+</td></tr>
+
 </table>
 
+(<a target="_blank" href="https://www.youtube.com/watch?v=kPRA0W1kECg" title="by Timo Bingmann (25M views)">some have identified more</a>)
 
+
+<!-->
 ## Video Gradual Reveal 
 
 My sequence of revealing concepts one at a time:
 
 
 BTW There is also a Big Omega Notation and Big Theta Notation.
+-->
 
 
-## Coding 
+
+<hr />
+
+## Tutorials
+
+There are several full tutorials available online:
+
+1. "Sorting Algorithms" tutorial at RealPython.com <a target="_blank" href="https://realpython.com/sorting-algorithms-python/" title="by Santiago Valdarrama">in text</a> and 
+<a target="_blank" href="https://realpython.com/courses/intro-sorting-algorithms/" tite="by Liam Pulsifer">VIDEO</a> is short and sweet.
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU">VIDEO</a> introduces <a target="_blank" href="https://NeetCode.com/">NeetCode.com</a>
+
+
+## Visualizations 
 
 Several libraries have been written in Python to create visualizations:
 Matplotlib, Seaborn, Plotly
@@ -91,15 +119,223 @@ https://github.com/bomonike/python-samples/blob/main/plotting.py
 creates visualizations using matplotlib.
 
 
-<a name="SortingAlgorithms"></a>
+### Run Timing Code
 
-## Sorting Algorithms
+For timing calculations, we use the <a target="_blank" href="https://docs.python.org/3/library/timeit.html">timeit</a> module containing this code:
+
+```
+import time
+def timed_func(func_to_time):
+    def timed(*args, **kwargs):
+        start = time.perf_counter()
+        res = func_to_time(*args, **kwargs)
+        print(time.perf_counter() - start)
+        return res
+    return timed
+```
+
+To obtain timings for a defined function, first add a reference at the top of the custom program file:
+
+```
+from timing import timed_func
+```
+
+The Python decorator "@timed_func" is placed in front of each function so that Python knows to execute the module before the function is called.
+
+```
+@timed_func
+def bubble_sort(items):
+   ...
+```
+
+The decorator function return the execution time in seconds.
+
+The above approach is not the ideal way to measure execution time, but it is simple and avoids the need to add extra lines cluttering up function code.
 
 
-<a name="Asymptotic"></a>
+<a name="BubbleSort"></a>
 
-## Asymptotic
+### Bubble sort 
 
+Resources:
+   * <a target="_blank" href="https://realpython.com/videos/bubble-sort/">RealPython VIDEO</a>
+
+The "bubble" means each of the largest element "bubbles" to the top of the list in a series of swaps with adjacent items.
+
+The Bubble Sort is simple to understand and implement.
+
+```
+@timed_func
+def bubble_sort(items):
+    for i in range(len(items)): # Iterate through whole list
+        already_sorted = True # Set break condition
+        for j in range(len(items) - i - 1): # Maintain a growing section of the list that is sorted
+            if items[j] > items[j + 1]: # Swap out of place items.
+                items[j], items[j + 1] = items[j + 1], items[j]
+                already_sorted = False # Set sorted to false if we needed to swap
+        if already_sorted:
+            break
+    return items
+```
+
+1. Begins with an unsorted array.
+2. Scan through the array from left to right to find the largest element.
+3. Swap the largest element with the last element.
+4. Repeat steps 2 and 3 until the array is sorted.
+
+Bubble sort is memory-efficient. It requires only a small, fixed amount of additional space regardless of the input size. So its space complexity is O(1).
+
+The Bubble Sort is <strong>quadratic time</strong> complexity means it's best  suitable for small datasets (e.g., 10 elements) or nearly sorted data where its performance can be relatively efficient. 
+
+Bubble Sort is inefficient for large datasets. 
+
+
+<a name="InsertionSort"></a> 
+
+### Insertion Sort
+
+Resources:
+   * <a target="_blank" href="https://realpython.com/lessons/insertion-sort/">RealPython VIDEO</a> 
+
+The Insertion Sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+
+```
+@timed_funcdef insertion_sort(items, left=0, right=None):
+    if right is None: # If None, we want to sort the full list
+        right = len(items) - 1
+    for i in range(left + 1, right + 1): # If right is len(items) - 1, this sorts the full list.
+        current_item = items[i]
+        j = i - 1  # Chose the element right before the current element
+
+        while (j >= left and current_item < items[j]): # Break when the current el is in the right place
+            items[j + 1] = items[j] # Moving this item up 
+            j -= 1 # Traversing "leftwards" along the list
+        
+        items[j + 1] = current_item # Insert current_item into its correct spot
+
+    return items
+```
+
+1. The Insertion Sort begins with the <strong>second item</strong>.
+
+2. The algorithm is called "Insertion" because it inserts each element into its sorted place in the sorted sublist which grows to become the full list.
+
+   This is slightly less work that the Bubble Sort.
+
+The Insertion Sort is <strong>quadratic time</strong> complexity means it's best  suitable for small datasets (e.g., 10 elements) or nearly sorted data where its performance can be relatively efficient.
+
+
+<a name="MergeSort"></a>
+
+### Merge Sort
+
+Resources:
+   * <a target="_blank" href="https://realpython.com/lessons/merge-sort/">RealPython VIDEO</a> 
+
+O(n log(n)) performance.
+
+```
+def merge_sorted_lists(left, right):
+    left_index, right_index = 0, 0 # Start at the beginning of both lists
+    return_list = []
+    while (len(return_list) < len(left) + len(right)):
+
+        # Choose the left-most item from each list that has yet to be processed
+        # If all are processed, choose an "infinite" value so we know to not consider that list.
+        left_item = left[left_index] if left_index < len(left) else float('inf')
+        right_item = right[right_index] if right_index < len(right) else float('inf')
+        if (left_item < right_item): # Choose the smallest remaining item
+            return_list.append(left_item)
+            left_index += 1 # And move up in the list so we don't consider it again
+        else:
+            return_list.append(right_item)
+            right_index += 1
+    return return_list
+
+# The actual merge sort is super simple!
+def merge_sort(items):
+    if (len(items) <= 1):
+        return items
+    midpoint = len(items) // 2
+    left, right = items[:midpoint], items[midpoint:]
+
+    # Recursively divide the list into 2, sort it, and then merge those lists
+    return merge_sorted_lists(merge_sort(left), merge_sort(right))
+```
+
+
+<a name="QuickSort"></a>
+
+### Quick Sort
+
+Resources:
+   * <a target="_blank" href="https://realpython.com/lessons/quicksort-algorithm">RealPython VIDEO</a> 
+
+Quick Sort is a divide-and-conquer algorithm that works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
+
+```
+import random
+
+def quicksort(items):
+    if (len(items) <= 1):
+        return items
+    pivot = random.choice(items)
+    less_than_pivot = [x for x in items if x < pivot]
+    equal_to_pivot = [x for x in items if x == pivot]
+    greater_than_pivot = [x for x in items if x > pivot]
+
+    # Recursively divide the list into elements greater than, less than,
+    # and equal to a chose pivot, then combine the lists as below using recursion.
+    return quicksort(less_than_pivot) + equal_to_pivot + quicksort(greater_than_pivot)
+```
+
+
+
+<a name="TimSort"></a>
+
+### TimSort
+
+Resources:
+   * <a target="_blank" href="https://realpython.com/lessons/timsort-algorithm/">RealPython VIDEO</a>
+
+TimSort uses both insertion- and merge-sort strategies to produce a 
+stable, fast sort that uses existing runs in the data.
+
+```
+# This is a simplified TimSort (check out the real code if you're
+# looking for a code analysis project).
+
+from insertion_sort import insertion_sort
+from merge_sort import merge_sorted_lists
+
+def timsort(items):
+    min_subsection_size = 32
+
+    # Sort each subsection of size 32
+    # (The real algorithm carefully chooses a subsection size for performance.)
+    for i in range(0, len(items), min_subsection_size):
+        insertion_sort(items, i, min((i + min_subsection_size - 1), len(items) - 1))
+
+    # Move through the list of subsections and merge them using merge_sorted_lists
+    # (Again, the real algorithm carefully chooses when to do this.)
+    size = min_subsection_size
+    while size < len(items):    
+        for start in range(0, len(items), size * 2):
+            midpoint = start + size - 1
+            end = min((start + size * 2 - 1), (len(items) - 1)) # arithmetic to properly index
+
+            # Merge using merge_sorted_lists
+            merged_array = merge_sorted_lists(
+                items[start:midpoint + 1], 
+                items[midpoint + 1:end + 1])
+            
+            items[start:start + len(merged_array)] = merged_array # Insert merged array
+        size *= 2 # Double the size of the merged chunks each time until it reaches the whole list
+    
+    return items
+```
+
+<hr />
 
 ## Resources
 
@@ -110,8 +346,6 @@ Explanations here are a conglomeration of several videos:
    1. <a target="_blank" href="https://www.youtube.com/watch?v=5o199a9899c">by TheNewBoston</a> (1.2M views)
 
    1. <a target="_blank" href="https://www.youtube.com/watch?v=g2o22C3CRfU&pp=ygUQYmlnIG8gY29tcGxleGl0eQ%3D%3D">Fireship: deck of cards</a> (snarky)
-   1. RealPython (intro to in-depth tutorial)
-   1. <a target="_blank" href="https://www.youtube.com/watch?v=BgLTDT03QtU">by NeetCode</a> (intro to paid tutorials)
    1. <a target="_blank" href="https://www.youtube.com/watch?v=QnRx6V8YQy0">by Caleb Curry</a>
    1. <a target="_blank" href="https://www.youtube.com/watch?v=4TUgqm2gJkE">by Codebagel</a> "Big O in 2 minutes"
    1. <a target="_blank" href="https://www.youtube.com/watch?v=__vX2sjlpXU">by Michael Sambol</a>
@@ -124,8 +358,6 @@ Explanations here are a conglomeration of several videos:
 * Berkeley BJC <a target="_blank" href="https://www.youtube.com/watch?v=_fgtTE2bhMg&t=11m26s" title="from 2013">Lecture 7: Algorithmic Complexity</a>
 
 * Khan Academy (text) covers <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms">Algorithms</a> in detail (Binary search, Asymptotic notation, Selection sort, Insertion sort, Recursive algorithms, Towers of Hanoi, Merge sort, Quick sort, Graph representation, Breadth-first search)
-
-<em>"If you want a job as a programmer"...</em>
 
 BOOK "Algorithms" by Thomas H. Cormen, et. al.
 
