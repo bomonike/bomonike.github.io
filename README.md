@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-16"
-lastchange: "v0197 + weather :README.md"
+date: "2025-03-21"
+lastchange: "v0198 + algorithmic-complexity :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -26,6 +26,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ai-benchmarks">ai-benchmarks</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
 1. <a target="_blank" href="https://bomonike.github.io/alexa">alexa</a>
+1. <a target="_blank" href="https://bomonike.github.io/algorithmic-complexity">algorithmic-complexity</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
