@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-17"
-lastchange: "v004 + Ignition :weather-info.md"
+date: "2025-03-21"
+lastchange: "v004 + table fix :weather-info.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -27,6 +27,7 @@ This is from the most sophisticated manufacturer: Ambient Weather WS-5000 series
 
 Buttons (left to right):<br />
 <table border="1"><tr><td> Minus Brightness </td><td> Plus Brightness </td><td> Backlight On/Off toggle </td><td> Background On/Off toggle </td><td> Pressure Absolute /Relative toggle </td><td> Channel </td><td> History </td><td> Set Mode </td></tr>
+</table>
 
 1. AmbientWeather.net connection icon 
 2. Wi-Fi signal strength icon. An exclamation point ! indicates the display is connected to Wi-Fi but not the Internet.
