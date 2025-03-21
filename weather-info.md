@@ -26,7 +26,7 @@ This is from the most sophisticated manufacturer: Ambient Weather WS-5000 series
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
 
 Buttons (left to right):<br />
-<table border="1"><tr><td> Minus Brightness </td><td> Plus Brightness </td><td> Backlight On/Off toggle </td><td> Background On/Off toggle </td><td> Pressure Absolute /Relative toggle </td><td> Channel </td><td> History </td><td> Set Mode </td></tr>
+<table border="1"><tr><td> Minus<br />Brightness </td><td> Plus<br />Brightness </td><td> Backlight<br />On/Off<br />toggle </td><td> Background<br />On/Off<br />toggle </td><td> Pressure<br />Absolute<br />/Relative<br />toggle </td><td> Channel </td><td> History </td><td> Set<br />Mode </td></tr>
 </table>
 
 1. AmbientWeather.net connection icon 
@@ -34,8 +34,12 @@ Buttons (left to right):<br />
 3. Outdoor Sensor Array Low Battery Indicator 
 4. Outdoor Sensor Array Signal Quality 
 
-5. Temperature is measured in Centigrade or Fereinheght by therometers. Current, high and low outdoor temperature
-6. Humidity measured in Hg percentage by hygrometers
+5. Temperature is measured in Centigrade or Fereinheght by therometers: current, high, and low temperature of the day.
+
+6. Humidity measured in "Hg percentage" by hygrometers. Manual hygrometers use a polished mirror. As air within the hygrometer is cooled to the dew point, moisture forms on the mirror, which blocks some of the reflected light, indicating that the dew point temperature has been reached.
+
+   A manual psychrometer (aka "sling psychrometer") uses two thermometers. One has a wet wick around the bulb. As the water from the wick is evaporated, heat is removed, as measured on the thermometer. The temperature difference on the two thermometers provides the dew point.
+
 7. Wind: 
    * Wind direction (blue arrow) is measured in compass degrees by wind vanes (looks like an airplane)
    * Wind speed and Gust in mph is measured by anemometers within 10-minute average wind direction (larger gray arrow).
@@ -45,8 +49,7 @@ Buttons (left to right):<br />
 8. Leak detector status (channels 1-4) 
 9. Soil moisture, leaf wetness CH4 (Channel 4 among 1-8) 
 10. Current date and time 
-11. Lighting detector last strike, last strike time and strikes per hour (if installed)
-   * lightning icon appears when then Dew Point exceeds 70 ºF, which signifies temperature and humidity conditions may be possible for lightning storms to form in the area.
+11. Lighting detector last strike, last strike time and strikes per hour (if installed).
 12. Indoor, Channel 1-8 humidity 
 13. Indoor, Channel 1-8 temperature 
 14. CH (Channel) scroll mode indicator 
@@ -71,11 +74,17 @@ Buttons (left to right):<br />
 24. Solar Radiation in wm/2 by ? (if installed) - Sunshine is measured by sunshine meters
 25. IN (Indoor) in ug/m3 by PM2.5 sensor (if installed)
 26. OUT (Outdoor) in ug/m3 by PM2.5 sensor (if installed)
-27. <a href="#dew-point">Dew point</a> is measured in degrees by dew point meters
+27. <a href="#dew-point">Dew point</a> is measured in degrees by ???.
+
+   The dew point is the temperature to which air must be cooled (at constant pressure) in order for it to become saturated (have 100% relative humidity).
+
+   * When air cools to its dew point, it reaches 100% relative humidity, and any further cooling causes water vapor to condense into droplets, forming dew or fog.
+   * A low dew point of 45 degrees feels "refreshing". At 50, it's "comfortable". At 55, it's "not bad". 
+   * A high dew point indicates more moisture in the air, making it feel humid - and "sticky" and uncomfortable in warm weather. At 60, it's "muggy".At 65 it's "Very Humid". At 70 it's "tropical" 
 28. "Feels Like" above Temperature
 
     <a name="dew-point"></a>
-29. Lightning icon appears when Dew Point exceeds 70ºF, when conditions make it possible for lightning storms to form in the area.
+29. Lightning icon appears when Dew Point exceeds 70ºF, when conditions make it possible for lightning storms to form in the area. The dew point is the temperature at which air becomes saturated with moisture at a given pressure, leading to the formation of dew, fog, or frost. <a target="_blank" href="https://www.cbsnews.com/boston/news/what-is-dew-point-humidity-sticky-weather/">BLOB</a>
 30. Daily Rain Icon: Rainfall is measured by rain gauges. Modern ones use ultrasonic technology that has no moving parts.
 
 * Moonrise/Moonset?
