@@ -21,7 +21,7 @@ created: "2025-03-20"
 
 ## Why this?
 
-At first I thought "Big-O" was an academic term for theoretical computer scientists to show their superiority.
+At first I thought "Big-O" was an academic term for theoretical computer scientists (such as Donald Knuth in the 1970s) to show their superiority.
 
 <em>"If you want a job as a programmer"...</em>
 
@@ -69,7 +69,7 @@ In order of growth in the dominant term, shown on a log-log plot:
 </td></tr>
 
 <tr valign="top"><td> O(N^2) N squared </td><td> Quadratic
-</td><td> <a href="#BubbleSort">Unsorted Bubble sort</a>
+</td><td> <a href="#BubbleSort">Bubble sort</a>
 </td></tr>
 
 <tr valign="top"><td> O(N^3) N cubed </td><td> Cubic 
@@ -179,11 +179,13 @@ def bubble_sort(items):
             break
     return items
 ```
+<a target="_blank" href="https://www.youtube.com/watch?v=RGuJga2Gl_k&t=2m12s">VIDEO</a>
 
 1. Begins with an unsorted array.
 2. Scan through the array from left to right to find the largest element.
 3. Swap the largest element with the last element.
 4. Repeat steps 2 and 3 until the array is sorted.
+5. At the end of each iteration, the largest element is in its correct position.
 
 Bubble sort is memory-efficient. It requires only a small, fixed amount of additional space regardless of the input size. So its space complexity is O(1).
 
@@ -343,16 +345,18 @@ def timsort(items):
 
 Explanations here are a conglomeration of several videos:
 * <a target="_blank" href="https://www.youtube.com/results?search_query=big+o+complexity">By various YouTubers</a>:
+   1. <a target="_blank" href="https://www.youtube.com/watch?v=v4cd1O4zkGw">by HackerRank</a> (1.7M views 2018) by Gail McDowell of "Cracking the Interview" book. Says "pigeon transfer speed" is O(1)
    1. <a target="_blank" href="https://www.youtube.com/shorts/WbF2bLbAUik">Fireship: in 100 seconds</a> (550K views)
    1. <a target="_blank" href="https://www.youtube.com/watch?v=XMUe3zFhM5c">by BroCode</a> (348K) "How code slows as data grows"
    1. <a target="_blank" href="https://www.youtube.com/watch?v=5o199a9899c">by TheNewBoston</a> (1.2M views)
-
    1. <a target="_blank" href="https://www.youtube.com/watch?v=g2o22C3CRfU&pp=ygUQYmlnIG8gY29tcGxleGl0eQ%3D%3D">Fireship: deck of cards</a> (snarky)
    1. <a target="_blank" href="https://www.youtube.com/watch?v=QnRx6V8YQy0">by Caleb Curry</a>
    1. <a target="_blank" href="https://www.youtube.com/watch?v=4TUgqm2gJkE">by Codebagel</a> "Big O in 2 minutes"
    1. <a target="_blank" href="https://www.youtube.com/watch?v=__vX2sjlpXU">by Michael Sambol</a>
    1. <a target="_blank" href="https://www.youtube.com/watch?v=Q_1M2JaijjQ">by Reducible</a> "What Is Big O Notation?"
    1. <a target="_blank" href="https://www.youtube.com/watch?v=kgBjXUE_Nwc">by Computerphile</a> "Getting Sorted" (British accent) shows Bubble Sort
+   1. <a target="_blank" href="https://www.youtube.com/watch?v=oJ5s2hs_cKk">by Aaron Jack</a>
+   1. <a target="_blank" href="https://www.youtube.com/watch?v=RGuJga2Gl_k">by Tom Scott</a> "Why My Teenage Code Was Terrible: Sorting Algorithms and Big O Notation" 
    1. <a target="_blank" href="https://www.youtube.com/watch?v=ktgxMtWMflU">by Ardens</a> "10 FORBIDDEN Sorting Algorithms" (funny?)
 
 * Harvard CS50
