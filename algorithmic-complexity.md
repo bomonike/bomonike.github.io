@@ -1,10 +1,10 @@
 ---
 layout: post
 date: "2025-03-21"
-lastchange: "v002 + tutorials :algorithmic-complexity.md"
+lastchange: "v004 + tutorials :algorithmic-complexity.md"
 file: "algorithmic-complexity"
 title: "Algorithmic Complexity"
-excerpt: "We use Python programs using Matplotlib to illustrate time and memory space complexity of algorithms (aka Big O Notation) such as for sorting"
+excerpt: "We use Python programs using Matplotlib to illustrate time and memory space complexity of algorithms (aka Big O Notation) such for sorting different ways."
 tags: [Python, analytics]
 image:
 # feature: pic green matrix hallway 1900x500.jpg
@@ -47,6 +47,8 @@ This diagram (<a target="_blank" href="https://www.youtube.com/watch?v=_fgtTE2bh
 <a name="SortingAlgorithms"></a>
 
 ## Summary Table
+
+In order of growth in the dominant term, shown on a log-log plot:
 
 <table border="1" cellpadding="4" cellspacing="0">
 <tr valign="bottom" align="left"><th>Notation</th><th>Name</th><th>Usage</th></tr>
