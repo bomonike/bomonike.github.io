@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-21"
-lastchange: "v004 + table fix :weather-info.md"
+date: "2025-03-22"
+lastchange: "v005 + sun moon img fix :weather-info.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -22,15 +22,17 @@ created: "2018-04-03"
 
 ## Measurements and Instruments
 
-This is from the most sophisticated manufacturer: Ambient Weather WS-5000 series, which can connect to 8 WH31 Temp/Humidity remote sensors added over 8 channels:<br />
+This display is from the <a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">Ambient Weather WS-5000 series</a>:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
 
 Buttons (left to right):<br />
-<table border="1"><tr><td> Minus<br />Brightness </td><td> Plus<br />Brightness </td><td> Backlight<br />On/Off<br />toggle </td><td> Background<br />On/Off<br />toggle </td><td> Pressure<br />Absolute<br />/Relative<br />toggle </td><td> Channel </td><td> History </td><td> Set<br />Mode </td></tr>
-</table>
+<table border="1" cellpadding="4" cellspacing="0"><tr valign="top"><td> Minus<br />Brightness </td><td> Plus<br />Brightness<br />Adjust </td><td> Backlight<br />On/Off<br />toggle </td><td> Background<br />On/Off<br />toggle </td><td> Pressure<br />Absolute<br />/Relative<br />toggle </td><td> Channel </td><td> History </td><td> Set<br />Mode </td></tr></table>
 
-1. AmbientWeather.net connection icon 
+REMEMBER: (+) and (-) Adjusts values.
+
+1. On the <a target="_blank" href="df920bc15d3b38069de0ddc5cc34b374">AmbientWeather.net web page</a> click the icon for more information. See the <a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">FAQ</a>.
 2. Wi-Fi signal strength icon. An exclamation point ! indicates the display is connected to Wi-Fi but not the Internet.
+
 3. Outdoor Sensor Array Low Battery Indicator 
 4. Outdoor Sensor Array Signal Quality 
 
@@ -46,8 +48,8 @@ Buttons (left to right):<br />
    * Old anemometers have spinning cups
    * New anemometers have ultrasonic technology that has no moving parts.
 
-8. Leak detector status (channels 1-4) 
-9. Soil moisture, leaf wetness CH4 (Channel 4 among 1-8) 
+8. Leak detector status (channels 1-4, if installed) 
+9. Soil moisture, leaf wetness CH4 (Channel 4 among channels 1-8 for each of 8 WH31 Temp/Humidity remote sensors that can be added.
 10. Current date and time 
 11. Lighting detector last strike, last strike time and strikes per hour (if installed).
 12. Indoor, Channel 1-8 humidity 
@@ -57,7 +59,7 @@ Buttons (left to right):<br />
 16. Rain icon: maximum is 1.4 inch. 
    * "Rate", daily, hourly, weekly, monthly and yearly rain inches
 17. Forecast icon based on rate of change of pressure
-18. "Barometer Reading": Barometric pressure is measured in ABS Hg by barometers. 
+18. "Barometer Reading": Barometric pressure is measured in inHg, mmHg, or ABS Hg by barometers. 
    * Barometric pressure (REL or ABS), 
    * arrow indicates rate of change of pressure
 
@@ -65,11 +67,13 @@ Buttons (left to right):<br />
 20. Moon Phase
 21. "10 MinAvg" (10-minute average) wind speed and compass direction
 
-    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp"><img width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp" alt="compass-800x800_hvwmtu.webp" /></a>
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp"><img width="300" alt="compass-800x800_hvwmtu.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp" /></a>
 
 22. UV Index is measured in UV Index ? by UV meter (if installed)
 
-23. Under arc: am: Sunrise, pm: sunset
+23. Under arc: am: Sunrise, pm: sunset. On the website is this tile:
+
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742678815/weather-amb-web-sun-moon-540x572_ep3qfa.png"><img alt="weather-amb-web-sun-moon-540x572.png" width="540" height="572" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742678815/weather-amb-web-sun-moon-540x572_ep3qfa.png" />
 
 24. Solar Radiation in wm/2 by ? (if installed) - Sunshine is measured by sunshine meters
 25. IN (Indoor) in ug/m3 by PM2.5 sensor (if installed)
@@ -150,7 +154,7 @@ Several locally-run servers receive and display weather information:
 
 Ambient Weather is a company that provides weather stations and data for consumer use.
 
-* $449.99 WS-5000 series has WiFi and no moving parts https://www.amazon.com/dp/B087V6N5WZ/ref=dp_iou_view_item?ie=UTF8&th=1 and a TFT color display <a target="_blank" href="https://ambientweather.com/mwdownloads/download/link/id/1081">manual</a> <a target="_blank" href="https://www.youtube.com/watch?v=b8oQCBA6Tio">VIDEO</a> <a target="_blank" href="https://www.youtube.com/watch?v=I560_a3yPmE">User Observations</a>
+* <a target="_blank" href="https://www.amazon.com/dp/B087V6N5WZ/">$449.99</a> WS-5000 series has WiFi and no moving parts and a TFT color display <a target="_blank" href="https://ambientweather.com/mwdownloads/download/link/id/1081">manual</a> <a target="_blank" href="https://www.youtube.com/watch?v=b8oQCBA6Tio">VIDEO</a> <a target="_blank" href="https://www.youtube.com/watch?v=I560_a3yPmE">User Observations</a>
 * $299.99 WS-2000 has WiFi & display
 * $144.99 WS-1965 is a entry-level monitor has moving parts.
 
