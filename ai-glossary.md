@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-03-21"
+date: "2025-03-22"
 lastchange: "v022 + excerpt, png :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
@@ -51,8 +51,32 @@ The 10 stages of AI capabilities: <a target="_blank" href="https://www.youtube.c
    9. Cosmic AI (extends beyond Earth)
    10. God-like AI (omnipresent, omniscient, omnipotent)
 
-Sakana AI's Transformer Squared self-learns new tasks
-https://www.youtube.com/watch?v=Nj-yBHPSBmY
+## AI Industry Segments and Companies
+
+<a target="_blank" href="https://www.linkedin.com/in/yujiantang/">Yujian Tang</a>'s <a target="_blank" href="https://medium.com/plain-simple-software/the-llm-app-stack-2024-eac28b9dc1e7">list & chart on Medium</a> lists these industry segments:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742623355/ai-glossary-cos-1920x1080_fcxmg0.jpg"><img alt="ai-glossary-cos-1920x1080.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742623355/ai-glossary-cos-1920x1080_fcxmg0.jpg" /></a>
+
+   * Quality Tuning
+   * LLMs
+   * LLM Providers
+   * Infrastructure
+   * Data
+   * Vector Databases
+   * Orchestration
+   * Embedding Models
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=Nj-yBHPSBmY">Sakana AI's Transformer Squared self-learns new tasks</a>
+
+Makers of LLM Foundation Models:
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">OpenAI</a>
+* Anthropic
+* MAI (Microsoft AI)
+* IBM
+* AWS
+
+
 
 ## Glossary
 
@@ -224,7 +248,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 * watsonx.ai | A studio of integrated tools for working with generative AI capabilities powered by foundational models and building machine learning models.
 * watsonx.data | A massive, curated data repository that can be used to train and fine-tune models with a state-of-the-art data management system.
-*watsonx.governance | A (powerful) toolkit to direct, manage, and monitor your organization's AI activities.
+* watsonx.governance | A toolkit to direct, manage, and monitor an organization's AI activities.
 
 <a name="X"></a>
 ### X
@@ -239,7 +263,7 @@ None
 
 ## Other AI Glossaries:
 
-* <a target="_blank" href="https://www.coursera.org/learn/building-gen-ai-powered-applications/ungradedWidget/TRXdF/glossary-building-genai-powered-apps-with-python"><i>Coursera's AI Glossary</i></a>
+* <a target="_blank" href="https://www.coursera.org/learn/building-gen-ai-powered-applications/ungradedWidget/TRXdF/glossary-building-genai-powered-apps-with-python">Coursera's AI Glossary</a>
 
 * https://docs.anthropic.com/en/docs/resources/glossary
 
@@ -276,6 +300,8 @@ Current, XAI techniques:
    * Work backwards through the neural net to find the most relevant input values.<br />
    LRP (Layer-wise relevance propagtion)
 
+ux-glossary2.csv
+
 ## References
 
 * TheAIGRID 29M views in 2024 for $216K
@@ -300,14 +326,6 @@ How to make videos:
 * <a target="_blank" href="https://www.youtube.com/watch?v=tjPf3TEWX7Q">Invideo</a>
 * https://www.youtube.com/watch?v=OdUbl_2H8Pg Study with me
 * https://www.youtube.com/watch?v=9Vf31JTzRKk Steven Thompson
-
-## LLM Foundation Models
-
-* <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">OpenAI</a>
-* Anthropic
-* MAI (Microsoft AI)
-* IBM
-* AWS
 
 
 ## Certifications
