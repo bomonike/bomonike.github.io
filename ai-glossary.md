@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-21"
-lastchange: "v020 + Groundedness :ai-glossary.md"
+lastchange: "v021 + Index letters:ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -19,6 +19,7 @@ created: "2021-08-24"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
 
 ## What is AI?
 
@@ -55,16 +56,29 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 
 ## Glossary
 
+<a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a>
+
+<hr />
+
+<a name="A"></a>
+### A
+
 * Ablation Study | The process of removing components from an AI system to analyze their impact on performance.
 * AGI = Artificial General Intelligence | A hypothetical AI system that can perform any intellectual task that a human can, with flexibility at various activities. Often considered the ultimate goal of AI research.
 * ANI = Artificial Narrow Intelligence | AI systems designed to perform a specific task, such as facial recognition or language translation, but not capable of general human-like intelligence.
 * API = Application Programming Interface | facilitates communication across applications. APIs help to extract and share data using a set of definitions and protocols.
 * AIMS (Artificial Intelligence Management System) | defined byhttps://www.iso.org/standard/81230.html $311 ISO/IEC Standard 42001:2023
 
+<a name="B"></a>
+### B
+
 * Bias | Systematic prejudice within AI algorithms or models, often resulting from biased training data.
 * Bootstrapping Language-Image Pre-training (BLIP) | An AI-based model, used to perform multi-modal tasks like visual question answering, image-text retrieval, and image captioning. It is a pre-training framework for unified vision-language understanding and generation.
 * BlenderBot | An AI-based chatbot that can converse naturally with people and takes direct feedback to improve its responses.
 * BST = Belief State Transformer | LLM from Microsoft AI can predict words before as well as after tokens, which enables planning and making decisions. Prefix and suffix tokens together make the Belief State.
+
+<a name="C"></a>
+### C
 
 * Chatbot | A computer program that simulates a human conversation with an end user. Though not all chatbots are equipped with artificial intelligence (AI), modern chatbots increasingly use conversational AI techniques like natural language processing (NLP) to make sense of the user's questions and automate their responses.
 * Chatbot | Programs that simulate human-like conversations through text or voice interactions.
@@ -77,14 +91,26 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * CUA = Computer Using Agent | OpenAI's <a target="_blank" href="https://www.youtube.com/watch?v=9oED8PXJuKg"><em>working</em></a> AI agent <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">Operator</a> controlling your computer. Navigates software interfaces, executes tasks, and automates workflows.
 * CUDA = Compute Unified Device Architecture | A proprietary parallel computing platform & API developed by NVIDIA to enable high-performance computing on their GPUs.
 
+<a name="D"></a>
+### D
+
 * Deep learning | A type of machine learning focused on training computers to perform tasks through learning from data. It uses artificial neural networks.
 * Distillation | The technique of a student app scraping knowledge from a teacher LLM by asking millions of questions (what <a target="_blank" href="https://www.youtube.com/watch?v=TciLnWFM-bY">Deek Seek did to OpenAI's LLM</a>)
+
+<a name="E"></a>
+### E
 
 * ENS = Ethereum Name Service <a target="_blank" href="https://youtu.be/azGutqtukwI&t=1m23s">*</a> | A decentralized naming protocol (defined by Vitalik Buterin in 2013 and launched in 2017 byNick Johnson and Alex Van de Sande) built on the Ethereum blockchain. ENS Registry smart contracts manages .eth domains' TTL (Time To Live). Like DNS, ENS Resolver smart contracts translate 42-hex character cryptocurrency addresses into human-readable names (less error-prone). Names are auctioned. Tokens can be purchased on Coinbase, Binance Smart Chain (BSC), and SushiSwapa and Uniswap.
 * ENS domains | function as NFTs (Non-Fungible Tokens) and can be bought, sold, and traded. The system also has its own governance token, ENS, which allows holders to participate in the protocol's decision-making process.
 
+<a name="F"></a>
+### F
+
 * Falcon | A large language model developed by the Technology Institute of Innovation (TII). Its variant, falcon-7b-instruct, is a 7-billion-parameter model based on the decoder-only model.
 * Foundation models | AI models with broad capabilities that can be adapted to create more specialized models or tools for specific use cases.
+
+<a name="G"></a>
+### G
 
 * GAN = Generative Adversarial Network | A type of generative model that includes two neural networks: generator and discriminator. The generator is trained on vast data sets to create samples like text and images. The discriminator tries to distinguish whether the sample is real or fake.
 * Generative AI | AI models capable of generating new content, such as images, music, or text, based on patterns learned from existing data.
@@ -95,13 +121,25 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Groundedness | The extent the response of a language model is factual -- rooted, connected, or anchored in reality or a specific context (or "invented").
 * GRU = Gated Recurrent Unit | A type of recurrent neural network that uses gating mechanisms to control the flow of information through the network.
 
+<a name="H"></a>
+### H
+
 * Hugging Face | An AI platform that allows open-source scientists, entrepreneurs, developers, and individuals to collaborate and build personalized machine learning tools and models. It provides a way to evaluate different models.
 * HTML = HyperText Markup Language | A standard markup language consists of elements that create web pages, structure them, and help display them. A start tag, some content, and an end tag define HTML elements.
+
+<a name="I"></a>
+### I
 
 * IBM Watson | An integrated AI and data platform with a set of AI assistants designed to scale and accelerate the impact of AI with trusted data across businesses.
 * IBM Cloud Code Engine | A fully managed, serverless platform that is used to manage and secure the underlying infrastructure of codes, container images, and batch jobs.
 
+<a name="J"></a>
+### J
+
 * JEPA = Joint Embedding Predicting Architecture | A macro architecture alternative instead of  GPTs predicting next-word. It arranges modules running Transformers and other AI modules <a target="_blank" href="https://www.youtube.com/watch?v=RUnFgu8kH-4&t=45m9s">*</a>
+
+<a name="L"></a>
+### L
 
 * LLM = Large language model | A deep learning model trained on substantial text data to learn the patterns and structures of language. They can perform language-related tasks, including text generation, translation, summarization, sentiment analysis, and more.
 * Llama | A large language model from Meta AI.
@@ -111,13 +149,25 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * LIME = Local Interpretable Model Agnostic Explanation | A metric to explain predictions by approximating the model in a local manner. A service provided by Amazon SageMaker Model Monitor.
 * LPU = Language Processing Unit | an application-specific integrated circuit (ASIC) from groq.com for high-performance inference efficiency of AI workloads using large language models (LLMs).
 
+<a name="M"></a>
+### M
+
 * ML = Machine Learning | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
 * MAI = Microsoft AI | Microsoft's AI platform that provides tools and services for building and deploying AI applications. <a target="_blank" href="https://www.youtube.com/watch?v=FKZktotIeRA">*</a>
+
+<a name="N"></a>
+### N
 
 * NLP = Natural Language Processing | The ability of AI systems to understand, interpret, and generate human language. A subset of artificial intelligence that enables computers to understand, manipulate, and generate human language (natural language).
 * NER = Named-Entity Recognition | A subtask of information extraction that helps to locate and classify named entities like first and last names, geographic location, age, address, and phone number in unstructured data sources.
 
+<a name="O"></a>
+### O
+
 * OpenAI Whisper | An automatic speech recognition system trained on 680,000 hours of supervised data that can transcribe speech in several languages.
+
+<a name="P"></a>
+### P
 
 * Perception | AI's ability to receive and interpret information through computer vision, speech recognition, and other sensor-based inputs.
 * Python | A high-level, general-purpose programming language that supports multiple programming paradigms, including structured, object-oriented, and functional programming.
@@ -125,7 +175,13 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * PPO = Proximal Policy Optimization | An actor-critic algorithm from OpenAI that looks at how much better than average were the action taken. <a target="_blank" href="https://www.youtube.com/watch?v=8jtAzxUwDj0&t=8m43s">*</a>
 * PTX = Parallel Thread eXecution | virtual instruction set hardware-agnostic achitecture operating under NVIDIA's CUDA parallel execution framework, used by DeepSeek. <a target="_blank" href="https://www.youtube.com/watch?v=iEda8_Mvvo4">VIDEO</a>
 
+<a name="Q"></a>
+### Q
+
 * Quantization | the process of mapping continuous signals into discrete digital values. Used in digital signal processing, data compression, and machine learning.
+
+<a name="R"></a>
+### R
 
 * RAG = Retrieval-Augmented Generation | an AI framework designed to retrieve facts from an external knowledge base to ground large language models (LLMs) that provide information on the latest research, statistics, or news to generative models.
 * RRF = Reciprocal Rank Fusion | a rank aggregation method used in hybrid search systems to combine results from multiple search algorithms (like vector search and full-text search) into a single, unified ranking, prioritizing documents that consistently rank highly across different sources. 
@@ -133,11 +189,17 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * RNN = Recurrent Neural Network | A type of neural network that processes sequential data by maintaining a hidden state that allows it to remember information from previous inputs (sequential time-based data such as stock prices, speech).
 * RPL = Reward-Plus-Loss | A training method that uses both positive and negative rewards to improve the performance of a model.
 
+<a name="S"></a>
+### S
+
 * Sequence to sequence models | A model type that uses both encoders and decoders.
 * Sentiment analysis | A process of analyzing digital text to determine the emotional tone of a message. Performed on textual data, helping businesses monitor brands through customer feedback.
 * SHAP = Shapely Additive Explanations | A feature contribution to individual predictions. A service provided by Amazon SageMaker Model Monitor.
 * SLAM = Simultaneous Localization And Mapping | A process of simultaneously determining a robot's location and mapping its environment, performed locally by a robot.
 * Streamlit | An open-source framework to build and share machine learning and data science web apps. It turns data scripts into shareable web apps in minutes.
+
+<a name="T"></a>
+### T
 
 * Temperature | For a deterministic behavior (variation from content) the desirable value is zero.
 * TensorFlow <a target="_blank" href="https://www.nvidia.com/en-us/glossary/tensorflow/">*</a> | A leading open-source library from Google for developing and deploying machine learning applications. It makes use of GPUs for parallel matrix operations for algebraic calculations.
@@ -147,19 +209,39 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Transformers | A deep learning architecture that can generate coherent and contextually relevant text. The transformer model differs from other models in that it processes data in parallel, resulting in much quicker training times and a solution that can be scaled on modern hardware. Inputs to Encoders (such as BART) uses bi-directional to generate embeddings of context for unidirectional Decoders (such as GPT) to integrate with known knowledge to generate a response.
 * Text generation | A model that is trained on code from scratch that helps to automate repetitive coding tasks.
 
+<a name="U"></a>
+### U
+
 * Unsupervised learning | A subset of machine learning and artificial intelligence that uses algorithms based on machine learning to analyze and cluster unlabeled data sets. These algorithms can discover hidden patterns or data groupings without human intervention.
+
+<a name="V"></a>
+### V
 
 * VAE = Variational Autoencoder | A generative model that is a neural network model designed to learn the efficient representation of input data by encoding it into a smaller space and decoding it back to the original space.
 
+<a name="W"></a>
+### W
+
 * watsonx.ai | A studio of integrated tools for working with generative AI capabilities powered by foundational models and building machine learning models.
-
 * watsonx.data | A massive, curated data repository that can be used to train and fine-tune models with a state-of-the-art data management system.
+*watsonx.governance | A (powerful) toolkit to direct, manage, and monitor your organization's AI activities.
 
-watsonx.governance | A (powerful) toolkit to direct, manage, and monitor your organization's AI activities.
+<a name="X"></a>
+### X
+
+* XAI = <a href="#XAI">Explainable AI</a> | needed for trust of the system.
+
+<a name="Y"></a>
+<a name="Z"></a>
+### XYZ
+
+None
+
+## Other AI Glossaries:
 
 * <a target="_blank" href="https://www.coursera.org/learn/building-gen-ai-powered-applications/ungradedWidget/TRXdF/glossary-building-genai-powered-apps-with-python"><i>Coursera's AI Glossary</i></a>
-* https://docs.anthropic.com/en/docs/resources/glossary
 
+* https://docs.anthropic.com/en/docs/resources/glossary
 
 
 ## Workflow
@@ -167,15 +249,11 @@ watsonx.governance | A (powerful) toolkit to direct, manage, and monitor your or
 https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=10230s
 Machine Learning Workflow
 
-Amazon Sagemaker
 
-
-
+<a name="XAI"></a>
 ## Explainable AI
 
 Algorithmic Accountability Act
-
-XAI (Explainable AI) is needed for trust of the system.
 
 https://www.linkedin.com/learning/learning-xai-explainable-artificial-intelligence/
 
@@ -246,6 +324,7 @@ How to make videos:
    * AI Architect+ for AI Systems Architects
    * AI Prompt+ for GenAI Prompt Engineers
 
+
 ## Intro to AI course
 
 Here are the topics from the semester-long <a target="_blank" href="https://mtda.geniussis.com/Registration.aspx">class</a> offered by Montanta Digital Academy:
@@ -279,3 +358,7 @@ Module 03 - Dream It, Design It, Apply It!
 * Ethics in AI
 * Deepfakes
 * Developer Responsibility
+
+
+<hr />
+<i>{{ page.lastchange }}</i>
