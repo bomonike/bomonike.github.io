@@ -1,12 +1,12 @@
 ---
 layout: post
 date: "2025-03-21"
-lastchange: "v021 + Index letters:ai-glossary.md"
+lastchange: "v022 + excerpt, png :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
-excerpt: "Ask your Machine Learning/AI why it made the decisions it did, to satisfy GDPR and other legislation"
-tags: [Security, DevSecOps]
+excerpt: "Words that AI people use."
+tags: [AI, Glossary]
 image:
 # pic silver robot white skin handshake 1900x500
   feature: https://cloud.githubusercontent.com/assets/300046/14622149/306629f0-0585-11e6-961a-dc8f60dadbf6.jpg
@@ -15,7 +15,7 @@ image:
 comments: true
 created: "2021-08-24"
 ---
-<a target="_blank" href="https://bomonike.github.io/ai-glossary"><img align="right" width="100" height="100" alt="ai-glossary-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-glossary-qr.png?raw=true" />
+<a target="_blank" href="https://bomonike.github.io/ai-glossary"><img align="right" width="100" height="100" alt="ai-glossary.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-glossary.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
