@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-18"
-lastchange: "v018 + RRF :ai-glossary.md"
+date: "2025-03-21"
+lastchange: "v020 + Groundedness :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -74,8 +74,8 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * Cascading Style Sheets (CSS) | A computer language to lay out and structure web pages using codes.
 * Completion | The generated output from a user prompt after process by a LLM.
 * CoT = Chain-of-Thought | A technique in AI, a form of reasoning, that involves breaking down a problem into smaller, more manageable parts, and then using these parts to solve the problem.
-* CUA = Computer Using Agent | OpenAI's <a target="_blank" href="https://www.youtube.com/watch?v=9oED8PXJuKg"><em>working</em></a> AI agent <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">Operator</a> controlling your computer
-* CUDA = Compute Unified Device Architecture | A parallel computing platform & API developed by NVIDIA.
+* CUA = Computer Using Agent | OpenAI's <a target="_blank" href="https://www.youtube.com/watch?v=9oED8PXJuKg"><em>working</em></a> AI agent <a target="_blank" href="https://www.youtube.com/watch?v=CSE77wAdDLg">Operator</a> controlling your computer. Navigates software interfaces, executes tasks, and automates workflows.
+* CUDA = Compute Unified Device Architecture | A proprietary parallel computing platform & API developed by NVIDIA to enable high-performance computing on their GPUs.
 
 * Deep learning | A type of machine learning focused on training computers to perform tasks through learning from data. It uses artificial neural networks.
 * Distillation | The technique of a student app scraping knowledge from a teacher LLM by asking millions of questions (what <a target="_blank" href="https://www.youtube.com/watch?v=TciLnWFM-bY">Deek Seek did to OpenAI's LLM</a>)
@@ -92,6 +92,7 @@ https://www.youtube.com/watch?v=Nj-yBHPSBmY
 * GPT = Generative Pre-trained Transformer | A series of large language models developed by OpenAI designed to understand language by leveraging a combination of two concepts: Training and transformers.
 * Google flan | An encoder-decoder foundation model based on the T5 architecture.
 * Gradio | An open-source Python package that allows the building of a demo or web application for machine learning models. It helps to create UIs to demo and deploy models and share them easily.
+* Groundedness | The extent the response of a language model is factual -- rooted, connected, or anchored in reality or a specific context (or "invented").
 * GRU = Gated Recurrent Unit | A type of recurrent neural network that uses gating mechanisms to control the flow of information through the network.
 
 * Hugging Face | An AI platform that allows open-source scientists, entrepreneurs, developers, and individuals to collaborate and build personalized machine learning tools and models. It provides a way to evaluate different models.
