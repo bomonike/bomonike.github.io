@@ -22,13 +22,11 @@ created: "2018-04-03"
 
 ## Measurements and Instruments
 
-This display is from the <a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">Ambient Weather WS-5000 series</a>:<br />
+This display is from the <a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">Ambient Weather WS-5000 series</a> after <a target="_blank" href="https://www.youtube.com/watch?v=wyFh8edFZiA" title="VIDEO">installation/configuration</a>:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
 
-Buttons (left to right):<br />
-<table border="1" cellpadding="4" cellspacing="0"><tr valign="top"><td> Minus<br />Brightness </td><td> Plus<br />Brightness<br />Adjust </td><td> Backlight<br />On/Off<br />toggle </td><td> Background<br />On/Off<br />toggle </td><td> Pressure<br />Absolute<br />/Relative<br />toggle </td><td> Channel </td><td> History </td><td> Set<br />Mode </td></tr></table>
-
-REMEMBER: (+) and (-) Adjusts values.
+(-) and (+) adjust values:<br />
+<table border="1" cellpadding="4" cellspacing="0"><tr valign="top"><td>(-)<br />Minus<br />Brightness </td><td>(+)<br />Plus<br />Brightness<br />Adjust </td><td> Backlight<br />On/Off<br />toggle </td><td> Background<br />On/Off<br />toggle </td><td> Pressure<br />Absolute<br />/Relative<br />toggle </td><td> Channel </td><td> History </td><td> Set<br />Mode </td></tr></table>
 
 1. On the <a target="_blank" href="df920bc15d3b38069de0ddc5cc34b374">AmbientWeather.net web page</a> click the icon for more information. See the <a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">FAQ</a>.
 2. Wi-Fi signal strength icon. An exclamation point ! indicates the display is connected to Wi-Fi but not the Internet.
