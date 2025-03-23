@@ -67,30 +67,27 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 
     <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp"><img width="300" alt="compass-800x800_hvwmtu.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1727494071/compass-800x800_hvwmtu.webp" /></a>
 
-22. UV Index is measured in UV Index ? by UV meter (if installed)
+22. "UV Index" (Ultraviolet Index) is measured by a UV meter (if installed).
 
 23. Under arc: am: Sunrise, pm: sunset. On the website is this tile:
 
-    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742678815/weather-amb-web-sun-moon-540x572_ep3qfa.png"><img alt="weather-amb-web-sun-moon-540x572.png" width="540" height="572" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742678815/weather-amb-web-sun-moon-540x572_ep3qfa.png" />
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742678815/weather-amb-web-sun-moon-540x572_ep3qfa.png"><img alt="weather-amb-web-sun-moon-540x572.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742678815/weather-amb-web-sun-moon-540x572_ep3qfa.png" />
 
-24. <a target="_blank" href="https://ambientweather.com/solarradiation.html">>Solar Radiation</a> (if installed) in wm/2 (Watts per square meter), Lux, or FC (Foot Candles). The measurement is used to calculate evapotranspiration - the potential for evaporation of moisture from the soil (or the reverse of rainfall) as a function of solar energy, wind, and temperature.
+24. <a target="_blank" href="https://ambientweather.com/solarradiation.html">Solar Radiation</a> (if installed) in wm/2 (Watts per square meter), Lux, or FC (Foot Candles). The measurement is used to calculate evapotranspiration - the potential for evaporation of moisture from the soil (or the reverse of rainfall) as a function of solar energy, wind, and temperature.
 
-    Before electronic photoelectric sensors are used by computers, the Campbell-Stokes and Jordan Sunshine Recorders (in the UK) used a glass sphere to focus sunlight onto a recording card, creating burn marks that indicate the duration of sunshine. Not part of the WS-5000 series is a pyrheliometers to measure sunshine intensity thru direct solar radiation (not sunshine duration). Pyrheliometers have a tubular structure that needs to be aimed at the sun, often mounted on a solar tracker. There are also pyranometers that have a dome-shaped sensor that can be seen from all angles, resembling a "UFO saucer". 
+    Before electronic photoelectric sensors are used by computers, the Campbell-Stokes and Jordan Sunshine Recorders (in the UK) used a glass sphere to focus sunlight onto a recording card replaced each day, creating burn marks that indicate the duration of sunshine that day. 
+    
+    Not part of the WS-5000 series, a pyrheliometers to measure sunshine intensity thru direct solar radiation (not sunshine duration). Pyrheliometers have a tubular structure that needs to be aimed at the sun, often mounted on a solar tracker. There are also pyranometers that have a dome-shaped sensor that can be seen from all angles, resembling a "UFO saucer". 
 
 25. IN (Indoor) in ug/m3 by PM2.5 air quality sensor (if installed)
 26. OUT (Outdoor) Particulate monitor in ug/m3 by PM2.5 sensor (if installed)
-27. <a href="#dew-point">Dew point</a> is measured in degrees by ???.
-
-   The dew point is the temperature to which air must be cooled (at constant pressure) in order for it to become saturated (have 100% relative humidity).
-
-   * When air cools to its dew point, it reaches 100% relative humidity, and any further cooling causes water vapor to condense into droplets, forming dew or fog.
+27. <strong>Dew point</strong> is the temperature to which air must be cooled (at constant pressure) in order for it to become saturated (have 100% relative humidity). When air cools to its dew point, it reaches 100% relative humidity, and any further cooling causes water vapor to condense into droplets, forming dew or fog.
    * A low dew point of 45 degrees feels "refreshing". At 50, it's "comfortable". At 55, it's "not bad". 
-   * A high dew point indicates more moisture in the air, making it feel humid - and "sticky" and uncomfortable in warm weather. At 60, it's "muggy".At 65 it's "Very Humid". At 70 it's "tropical" 
+   * A high dew point indicates more moisture in the air, making it feel humid - and "sticky" and uncomfortable in warm weather. At 60, it's "muggy".At 65 it's "Very Humid". At 70 it's "tropical". 
+
 28. "Feels Like" above Temperature.
 
-    <a name="dew-point"></a>
-
-29. The <strong>lightning icon</strong> appears when Dew Point exceeds 70ºF, when conditions make it possible for lightning storms to form in the area. The dew point is the temperature at which air becomes saturated with moisture at a given pressure, leading to the formation of dew, fog, or frost. <a target="_blank" href="https://www.cbsnews.com/boston/news/what-is-dew-point-humidity-sticky-weather/">BLOB</a>
+29. The <strong>lightning icon</strong> appears when when conditions make it possible for lightning storms to form in the area. The dew point is the temperature at which air becomes saturated with moisture at a given pressure, leading to the formation of dew, fog, or frost. <a target="_blank" href="https://www.cbsnews.com/boston/news/what-is-dew-point-humidity-sticky-weather/">BLOB</a>
 30. Daily Rain Icon: Rainfall is measured by rain gauges. Modern ones use ultrasonic technology that has no moving parts.
 
 * Moonrise/Moonset?
