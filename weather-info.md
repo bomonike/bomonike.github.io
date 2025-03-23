@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-22"
-lastchange: "v006 + sunlight :weather-info.md"
+lastchange: "v007 + dew point :weather-info.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -25,20 +25,22 @@ created: "2018-04-03"
 This display is from the <a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">Ambient Weather WS-5000 series</a> after <a target="_blank" href="https://www.youtube.com/watch?v=wyFh8edFZiA" title="VIDEO">installation/configuration</a>:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
 
-(-) and (+) adjust values:<br />
+(-) and (+) adjust values: <a target="_blank" href="https://ambientweather.com/glossary.html">Glossary</a><br />
 <table border="1" cellpadding="4" cellspacing="0"><tr valign="top"><td>(-)<br />Minus<br />Brightness </td><td>(+)<br />Plus<br />Brightness<br />Adjust </td><td> Backlight<br />On/Off<br />toggle </td><td> Background<br />On/Off<br />toggle </td><td> Pressure<br />Absolute<br />/Relative<br />toggle </td><td> Channel </td><td> History </td><td> Set<br />Mode </td></tr></table>
 
-1. On the <a target="_blank" href="df920bc15d3b38069de0ddc5cc34b374">AmbientWeather.net web page</a> click the icon for more information. See the <a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">FAQ</a>.
+1. The icon is the <a target="_blank" href="https://ambientweather.net/dashboard/df920bc15d3b38069de0ddc5cc34b374">AmbientWeather.net dashboard for a sample location</a>. (<a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">FAQ</a>)
 2. Wi-Fi signal strength icon. An exclamation point ! indicates the display is connected to Wi-Fi but not the Internet.
 
 3. Outdoor Sensor Array Low Battery Indicator 
 4. Outdoor Sensor Array Signal Quality 
 
-5. Temperature is measured in Centigrade or Fereinheght by therometers: current, high, and low temperature of the day.
+5. Outdoor Temperature (shown with the larger ring) is measured in Centigrade or Fereinheght by therometers. Above and below the current temp. in large numbers in the middle is the high of the day on top and low temp. of the day on the bottom.   The time of day when that's recalculated can be set in Settings.
 
-6. Humidity measured in "Hg percentage" by hygrometers. Manual hygrometers use a polished mirror. As air within the hygrometer is cooled to the dew point, moisture forms on the mirror, which blocks some of the reflected light, indicating that the dew point temperature has been reached.
+6. <strong>Humidity</strong> is the <strong>percentage</strong> of water vapor in the air divided by the <a href="#dewpoint">Dew Point</a>.
 
-   A manual psychrometer (aka "sling psychrometer") uses two thermometers. One has a wet wick around the bulb. As the water from the wick is evaporated, heat is removed, as measured on the thermometer. The temperature difference on the two thermometers provides the dew point.
+   A manual psychrometer (aka "sling psychrometer") uses two thermometers. One has a wet wick around the bulb. The thermometer with the wet wick becomes cooler when water evaporates. The temperature difference on the two thermometers provides the Dew Point.
+
+   Manual hygrometers use a polished mirror. As air within the hygrometer is cooled to the dew point, moisture forms on the mirror, which blocks some of the reflected light, indicating that the dew point temperature has been reached.
 
 7. Wind: 
    * Wind direction (blue arrow) is measured in compass degrees by wind vanes (looks like an airplane)
@@ -79,28 +81,70 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
     
     Not part of the WS-5000 series, a pyrheliometers to measure sunshine intensity thru direct solar radiation (not sunshine duration). Pyrheliometers have a tubular structure that needs to be aimed at the sun, often mounted on a solar tracker. There are also pyranometers that have a dome-shaped sensor that can be seen from all angles, resembling a "UFO saucer". 
 
-25. IN (Indoor) in ug/m3 by PM2.5 air quality sensor (if installed)
-26. OUT (Outdoor) Particulate monitor in ug/m3 by PM2.5 sensor (if installed)
-27. <strong>Dew point</strong> is the temperature to which air must be cooled (at constant pressure) in order for it to become saturated (have 100% relative humidity). When air cools to its dew point, it reaches 100% relative humidity, and any further cooling causes water vapor to condense into droplets, forming dew or fog.
-   * A low dew point of 45 degrees feels "refreshing". At 50, it's "comfortable". At 55, it's "not bad". 
-   * A high dew point indicates more moisture in the air, making it feel humid - and "sticky" and uncomfortable in warm weather. At 60, it's "muggy".At 65 it's "Very Humid". At 70 it's "tropical". 
+25. "IN "(Indoor) air quality in ug/m3 by a PM2.5 sensor (if installed)
+26. "OUT" (Outdoor) Particulate monitor in ug/m3 by a PM2.5 sensor (if installed)
+
+27. <a name="dewpoint"></a><strong>Dewpoint</strong> is a theoretical construct, but practical for measuring the comfort level from moisture in the air:
+
+   At 45 degrees or below, air feels "refreshing".<br />
+   At 50, it's "comfortable". At 55, it's "not bad".<br />
+   At 60, it's "muggy". At 65 it's "Very Humid". At 70 it's "tropical". 
+
+   Technically, Dew Point is the <strong>temperature</strong> to which air must be cooled (at constant pressure) in order for it to become saturated (have 100% relative humidity). Dewpoint is the maximum amount of water vapor air can hold at a given temperature. When air cools to its dew point, it reaches 100% relative humidity, and any further cooling causes water vapor to condense into droplets, forming dew or fog.
+
+   In <a target="_blank" href="https://ambientweather.com/dewpoint.html">other words</a>, "The dew point is the temperature at which a given parcel of humid air must be cooled, at constant barometric pressure, for water vapor to condense into water. The condensed water is called dew. The dew point is a saturation temperature."
+
+   For example, if the temperature is 80 and the dew point 70, the relative humidity is 72%. Much more water is in the air at 100% humidity at a temperature of 70 degrees than at 30 degrees. 
 
 28. "Feels Like" above Temperature.
 
-29. The <strong>lightning icon</strong> appears when when conditions make it possible for lightning storms to form in the area. The dew point is the temperature at which air becomes saturated with moisture at a given pressure, leading to the formation of dew, fog, or frost. <a target="_blank" href="https://www.cbsnews.com/boston/news/what-is-dew-point-humidity-sticky-weather/">BLOB</a>
-30. Daily Rain Icon: Rainfall is measured by rain gauges. Modern ones use ultrasonic technology that has no moving parts.
+29. The <strong>lightning icon</strong> appears when when conditions make it possible for lightning storms to form in the area. The dew point is the temperature at which air becomes saturated with moisture at a given pressure, leading to the formation of dew, fog, or frost. <a target="_blank" href="https://www.cbsnews.com/boston/news/what-is-dew-point-humidity-sticky-weather/">BLOG</a>
+30. Daily Rain Icon: Rainfall is measured by rain gauges. Modern ones use ultrasonic technology that has less moving parts.
 
 * Moonrise/Moonset?
 * Tide levels?
-* Soil moisture is measured by soil moisture meters
+* Soil moisture is measured by soil moisture sensors (if installed).
 
 <!-- This is from the Ambient Weather WS-5000 series:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png"><img alt="weather-ws-5000-dash.png" width="546" height="390" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742181715/weather-ws-5000-dash_bjmwjh.png" /></a>
 -->
 
-## Additional Analysis 
 
-Metrics over time.
+## Changes Over Time
+
+This <a target="_blank" href="https://www.weatherbriefing.com/weather-blog/2020/7/5/a-teaching-tool-relationship-between-temperature-relative-humidity-and-dew-point">meteograph</a> shows the relationship of changes over time of several metrics:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742712550/weather-dew-temp-1019x312_zsq8kp.jpg"><img alt="weather-dew-temp-1019x312.jpg" width="1019" height="312" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742712550/weather-dew-temp-1019x312_zsq8kp.jpg" /></a>
+
+The temperature (brown line) warms up (by the sun) during the day. 
+Temperature cools down at night. 
+
+As air cools, humidity (purple line) rises to condensate as morning fog or clouds.
+
+Condensation is likely to occur when the air temperature reaches the <a href="#dewpoint">Dew point</a> (green line) rises to the temperature when air becomes saturated with moisture (at a given pressure).
+That's when rain and snow occurs.
+
+But remember that temperature (brown line) and dew point (in green) change independently of each other. Each can change without affecting the value of the other.
+
+To see metrics over time with multiple metrics overlaid together, click "Graphs & Tables" on the <a target="_blank" href="https://ambientweather.net/dashboard/df920bc15d3b38069de0ddc5cc34b374">AmbientWeather.net dashboard for a sample location</a>: 
+
+* Outdoor temperature, Dew Point, Feels like
+* Wind Speed with Wind Gusts overlaid
+* Wind direction (toward the direction of the wind
+* Daily Rain with Rain Rate
+* Relative Pressure: An upward trend indicates a high pressure system moving in with clear skies, while a downward trend indicates a low pressure sucking in bad weather.
+* Humidity
+* Sun Height (in yellow line) and Moon Height (in white line)
+
+  The highest point is not exactly Noon. 
+
+* Air quality with Particulate matter overlaid
+* Rain with Snow overlaid
+* UV Index with Solar Radiation overlaid
+
+<a target="_blank" href="https://ambientweather.com/awn-plus-annual-subscription">AWN+ subscription</a> unlocks premium features like advanced map layers, degree day tiles, enhanced graphing, text alerts, and a 10-Day Hourly Forecast
+
+<a target="_blank" href="https://www.home-assistant.io/integrations/ambient_station/">Home Assistant</a> integration.
 
 Comparison vs. other weather stations (upwind, downwind, etc.).
 
@@ -109,6 +153,23 @@ d3.js <a target="_blank" href="https://d3js.org/">d3.js</a> is a JavaScript libr
 Smart Home display trends
 
 Upwind locations on the map would experience weather patterns (such as rain) before you (n=in a downwind location).
+
+
+## Internet Weather Reports
+
+* Ambient Weather has its own cloud (AWN) Network to receive weather reports for its devices.
+   * https://ambientweather.com/mwdownloads/download/link/id/1223
+
+* WeatherUnderground.com also accepts video from Ambient Weather AirCams.
+
+* WeatherBug.com (USA)
+* pwsweather.com (USA) Weather For You
+* windfinder.com (USA)
+* wxqa.com (Citizens Weather Observation Program) USA
+* openweathermap.org USA
+
+* wow.metoffice.gov.uk
+* awekas.at (Austria)
 
 
 ## Technologies
@@ -131,22 +192,6 @@ Several locally-run servers receive and display weather information:
    * The Ignition server
    * "Home Assistant"
 
-
-## Internet Weather Reports
-
-* Ambient Weather has its own cloud (AWN) Network to receive weather reports for its devices.
-   * https://ambientweather.com/mwdownloads/download/link/id/1223
-
-* Weather Underground also accepts video from Ambient Weather AirCams
-
-* WeatherBug.com (USA)
-* pwsweather.com (USA) Weather For You
-* windfinder.com (USA)
-* wxqa.com (Citizens Weather Observation Program) USA
-* openweathermap.org USA
-
-* wow.metoffice.gov.uk
-* awekas.at (Austria)
 
 
 ## Ambient Weather Instruments
