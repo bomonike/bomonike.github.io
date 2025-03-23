@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-22"
-lastchange: "v007 + dew point :weather-info.md"
+date: "2025-03-23"
+lastchange: "v008 + indent fix :weather-info.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -84,17 +84,17 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 25. "IN "(Indoor) air quality in ug/m3 by a PM2.5 sensor (if installed)
 26. "OUT" (Outdoor) Particulate monitor in ug/m3 by a PM2.5 sensor (if installed)
 
-27. <a name="dewpoint"></a><strong>Dewpoint</strong> is a theoretical construct, but practical for measuring the comfort level from moisture in the air:
+27. <a name="dewpoint"></a><strong>Dewpoint</strong> is a theoretical construct, but practical for measuring the comfort level from moisture in the air. <a target="_blank" href="https://www.weather.gov/arx/why_dewpoint_vs_humidity">According to NOAA</a>:
 
-   At 45 degrees or below, air feels "refreshing".<br />
-   At 50, it's "comfortable". At 55, it's "not bad".<br />
-   At 60, it's "muggy". At 65 it's "Very Humid". At 70 it's "tropical". 
+    At 45 degrees or below, air feels "refreshing".<br />
+    At 50, it's "comfortable". At 55, it's "not bad".<br />
+    At 60, it's "muggy". At 65 it's "Very Humid". At 70 it's "tropical". 
 
-   Technically, Dew Point is the <strong>temperature</strong> to which air must be cooled (at constant pressure) in order for it to become saturated (have 100% relative humidity). Dewpoint is the maximum amount of water vapor air can hold at a given temperature. When air cools to its dew point, it reaches 100% relative humidity, and any further cooling causes water vapor to condense into droplets, forming dew or fog.
+    Technically, Dew Point is the <strong>temperature</strong> to which air must be cooled (at constant pressure) in order for it to become saturated (have 100% relative humidity). Dewpoint is the maximum amount of water vapor air can hold at a given temperature. When air cools to its dew point, it reaches 100% relative humidity, and any further cooling causes water vapor to condense into droplets, forming dew or fog.
 
-   In <a target="_blank" href="https://ambientweather.com/dewpoint.html">other words</a>, "The dew point is the temperature at which a given parcel of humid air must be cooled, at constant barometric pressure, for water vapor to condense into water. The condensed water is called dew. The dew point is a saturation temperature."
+    In <a target="_blank" href="https://ambientweather.com/dewpoint.html">other words</a>, "The dew point is the temperature at which a given parcel of humid air must be cooled, at constant barometric pressure, for water vapor to condense into water. The condensed water is called dew. The dew point is a saturation temperature."
 
-   For example, if the temperature is 80 and the dew point 70, the relative humidity is 72%. Much more water is in the air at 100% humidity at a temperature of 70 degrees than at 30 degrees. 
+    For example, if the temperature is 80 and the dew point 70, the relative humidity is 72%. Much more water is in the air at 100% humidity at a temperature of 70 degrees than at 30 degrees. 
 
 28. "Feels Like" above Temperature.
 
@@ -110,7 +110,7 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 -->
 
 
-## Changes Over Time
+## Trands Over Time
 
 This <a target="_blank" href="https://www.weatherbriefing.com/weather-blog/2020/7/5/a-teaching-tool-relationship-between-temperature-relative-humidity-and-dew-point">meteograph</a> shows the relationship of changes over time of several metrics:
 
