@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-21"
-lastchange: "v0198 + algorithmic-complexity :README.md"
+date: "2025-03-25"
+lastchange: "v0199 + plc under p :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -123,12 +123,12 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/oee">oee</a> (Overall Equipment Effectiveness)
 1. <a target="_blank" href="https://bomonike.github.io/openmct">openmct</a>
 1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (Operational Technologies)
-1. <a target="_blank" href="https://bomonike.github.io/personal-data-security">personal-data-security</a>
-1. <a target="_blank" href="https://bomonike.github.io/pid">pid</a> (Proportional Integral Derivative)
-1. <a target="_blank" href="https://bomonike.github.io/plc">plc</a>  (Programmable Logic Controllers)
-
    <a name="P"></a>
    ### P
+
+1. <a target="_blank" href="https://bomonike.github.io/personal-data-security">personal-data-security</a>
+1. <a target="_blank" href="https://bomonike.github.io/pid">pid</a> (Proportional Integral Derivative)
+1. <a target="_blank" href="https://bomonike.github.io/plc">plc</a> (Programmable Logic Controllers & Industrial Automation with Ignition from InductiveAutomation.com, etc.)
 
 1. <a target="_blank" href="https://bomonike.github.io/podcasts">podcasts</a>
 1. <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
