@@ -59,11 +59,22 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 16. Rain icon: maximum is 1.4 inch. 
    * "Rate", daily, hourly, weekly, monthly and yearly rain inches
 17. Forecast icon based on rate of change of pressure
-18. "Barometer Reading": Barometric pressure is measured in inHg, mmHg, or ABS Hg by barometers. 
-   * Barometric pressure (REL or ABS), 
+18. "Barometer Reading": Barometric pressure is measured in inHg, mmHg, or ABS Hg by barometers.
+   <a target="_blank" href="https://blog.mensor.com/blog/adjusting-barometric-pressure-readings-for-aviation-and-meteorology">BLOG</a>:
+   To allow for comparison between different locations, 
+   regardless of their actual elevation, the
+   SI Atmosphere (atm) air pressure reported is normalized relative (REL) to 
+   <strong>sea level</strong>
+   of 101,325 pascals (Pa) or 1013.25 hPa (hectoPascals).
+   
+   At sea level, absolute and relative pressures are the same.
+   As altitude increases, atmospheric pressure decreases.
+
+   The <a target="_blank" href="https://cumulus.hosiene.co.uk/viewtopic.php?t=8286">legacy</a> metric of millibar is equivalent to 100 Pa (Pascals).
+
    * arrow indicates rate of change of pressure
 
-19. "Max Daily Gust" of wind in MPH
+19. "Max Daily Gust" of wind in MPH.
 20. Moon Phase
 21. "10 MinAvg" (10-minute average) wind speed and compass direction
 
@@ -86,7 +97,11 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 25. "IN "(Indoor) air quality in ug/m3 by a PM2.5 sensor (if installed)
 26. "OUT" (Outdoor) Particulate monitor in ug/m3 by a PM2.5 sensor (if installed)
 
-27. <a name="dewpoint"></a><strong>Dewpoint</strong> is a theoretical construct, but practical for measuring the comfort level from moisture in the air. <a target="_blank" href="https://www.weather.gov/arx/why_dewpoint_vs_humidity">According to NOAA</a>:
+27. <a name="dewpoint"></a><strong>Dewpoint</strong> is calculated for measuring the comfort level from moisture in the air. A Simplified version of the <a href="https://en.wikipedia.org/wiki/Magnus-Tetens_equation">Magnus-Tetens Formula</a> is:
+
+     AirTemp - ( ( 100 − RelHumidity ) / 5 )
+
+    <a target="_blank" href="https://www.weather.gov/arx/why_dewpoint_vs_humidity">According to NOAA</a>:
 
     At 45 degrees or below, air feels "refreshing".<br />
     At 50, it's "comfortable". At 55, it's "not bad".<br />
@@ -103,7 +118,6 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 29. The <strong>lightning icon</strong> appears when when conditions make it possible for lightning storms to form in the area. The dew point is the temperature at which air becomes saturated with moisture at a given pressure, leading to the formation of dew, fog, or frost. <a target="_blank" href="https://www.cbsnews.com/boston/news/what-is-dew-point-humidity-sticky-weather/">BLOG</a>
 30. Daily Rain Icon: Rainfall is measured by rain gauges. Modern ones use ultrasonic technology that has less moving parts.
 
-* Moonrise/Moonset?
 * Tide levels?
 * Soil moisture is measured by soil moisture sensors (if installed).
 
@@ -180,7 +194,7 @@ Upwind locations on the map would experience weather patterns (such as rain) bef
 * awekas.at (Austria)
 
 
-## Program Code
+## Python Program Code
 
 Run my <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/openweather.py">openweather.py</a> program:
 
@@ -195,17 +209,17 @@ Run my <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob
    ```
 1. Set .env file containing the API keys
    ???
-1. Run 
+1. Because Run 
    ```
-   ./openweather.py
+   ./openweather.py -z 59102
    ```
    Example response:
    ```
 openweather.org at 07:50 AM (07:50:57) 2025-03-26 reports
 as 5661766     at: 07:50 AM (07:50:57) 2025-03-26 TZ: -21600
           Sunrise: 07:06 AM (07:06:52) 2025-03-26
-          Sunset:  07:35 PM (19:35:51) 2025-03-26
-scattered clouds at "lat=45.48686&lon=-108.97500" country=US
+           Sunset: 07:35 PM (19:35:51) 2025-03-26
+scattered clouds at "zip=59102" country=US
      Latitude:  45.48686° from the Equator &
      Longitude: -108.97500° from the Meridian at Greenwich, UK
 mild Dew Point of 34.28°F vs. 43.77°F at 69% humidity
@@ -216,6 +230,10 @@ normal pressure at 1016    hPa (HectoPascals, aka millibars)
                     882    hPa at Ground_level
    ```
 
+   The location to provide customized location.
+
+
+<a name="instrument-tech"></a>
 
 ## Instrument Technologies
 
