@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-25"
-lastchange: "v010 + neighborhood map :weather-info.md"
+date: "2025-03-26"
+lastchange: "v012 + openweather code :weather-info.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -74,6 +74,8 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 23. Under arc: am: Sunrise, pm: sunset. On the website is this tile:
 
     <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742678815/weather-amb-web-sun-moon-540x572_ep3qfa.png"><img alt="weather-amb-web-sun-moon-540x572.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742678815/weather-amb-web-sun-moon-540x572_ep3qfa.png" />
+
+    FUN FACT: About 5 minutes is lost or gained each day.
 
 24. <a target="_blank" href="https://ambientweather.com/solarradiation.html">Solar Radiation</a> (if installed) in wm/2 (Watts per square meter), Lux, or FC (Foot Candles). The measurement is used to calculate evapotranspiration - the potential for evaporation of moisture from the soil (or the reverse of rainfall) as a function of solar energy, wind, and temperature.
 
@@ -178,7 +180,44 @@ Upwind locations on the map would experience weather patterns (such as rain) bef
 * awekas.at (Austria)
 
 
-## Technologies
+## Program Code
+
+Run my <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/openweather.py">openweather.py</a> program:
+
+1. Open a Terminal app.
+1. Bring the <tt>openweather.py</tt> file to the Terminal.
+
+   In Google CoLab???
+
+1. Set permissions:
+   ```
+   chmod +x openweather.py
+   ```
+1. Set .env file containing the API keys
+   ???
+1. Run 
+   ```
+   ./openweather.py
+   ```
+   Example response:
+   ```
+openweather.org at 07:50 AM (07:50:57) 2025-03-26 reports
+as 5661766     at: 07:50 AM (07:50:57) 2025-03-26 TZ: -21600
+          Sunrise: 07:06 AM (07:06:52) 2025-03-26
+          Sunset:  07:35 PM (19:35:51) 2025-03-26
+scattered clouds at "lat=45.48686&lon=-108.97500" country=US
+     Latitude:  45.48686° from the Equator &
+     Longitude: -108.97500° from the Meridian at Greenwich, UK
+mild Dew Point of 34.28°F vs. 43.77°F at 69% humidity
+     Wind: 10.17 mph from WSW (222°)
+     Visibility to 10000 meters
+normal pressure at 1016    hPa (HectoPascals, aka millibars)
+       vs. normal: 1013.25 hPa at sea level
+                    882    hPa at Ground_level
+   ```
+
+
+## Instrument Technologies
 
 There are several technologies to measure your weather:
 
