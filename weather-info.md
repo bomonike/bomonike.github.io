@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-26"
-lastchange: "v012 + openweather code :weather-info.md"
+lastchange: "v013 + openweather by zip :weather-info.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -209,28 +209,28 @@ Run my <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob
    ```
 1. Set .env file containing the API keys
    ???
-1. Because Run 
+1. Because T-Mobile does not correctly identify your physical location, provide your US Zip Code when requesting the weather there:
    ```
    ./openweather.py -z 59102
    ```
-   Example response:
+   The weather service converts your Zip Code to a latitude and longitude:
    ```
-openweather.org at 07:50 AM (07:50:57) 2025-03-26 reports
-as 5661766     at: 07:50 AM (07:50:57) 2025-03-26 TZ: -21600
-          Sunrise: 07:06 AM (07:06:52) 2025-03-26
-           Sunset: 07:35 PM (19:35:51) 2025-03-26
-scattered clouds at "zip=59102" country=US
+openweather.org at 10:59 AM (10:59:07) 2025-03-26 reports
+as 0     at: 11:02 AM (11:02:06) 2025-03-26 TZ: -21600
+          Sunrise: 07:06 AM (07:06:56) 2025-03-26
+           Sunset: 07:35 PM (19:35:56) 2025-03-26
+few clouds at "zip=59041" country=US
      Latitude:  45.48686° from the Equator &
      Longitude: -108.97500° from the Meridian at Greenwich, UK
-mild Dew Point of 34.28°F vs. 43.77°F at 69% humidity
-     Wind: 10.17 mph from WSW (222°)
+mild Dew Point of 35.77°F vs. 58.15°F at 43% humidity
+     Wind: 11.48 mph from SW (202°)
      Visibility to 10000 meters
-normal pressure at 1016    hPa (HectoPascals, aka millibars)
+normal pressure at 1014 hPa (HectoPascals aka 10.14 millibars)
        vs. normal: 1013.25 hPa at sea level
-                    882    hPa at Ground_level
+                    881    hPa at ground level
    ```
 
-   The location to provide customized location.
+   A longitude and longitude can be specified as well.
 
 
 <a name="instrument-tech"></a>
