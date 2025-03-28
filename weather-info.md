@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-26"
-lastchange: "v013 + openweather by zip :weather-info.md"
+date: "2025-03-28"
+lastchange: "v014 + openweather colab modules :weather-info.md"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -196,13 +196,27 @@ Upwind locations on the map would experience weather patterns (such as rain) bef
 
 ## Python Program Code
 
-Run my <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/openweather.py">openweather.py</a> program:
+I wrote a Python program to retrieve and format weather info from an API calls to openweather.com.
+
+The program makes use of external modules, so can't be run within ProgramWiz.
+
+Here's how to run my program within Google's Colab like the pros:
 
 1. Open a Terminal app.
 1. Bring the <tt>openweather.py</tt> file to the Terminal.
 
+   Type an exclamation point character in front of each Bash CLI command such as git.
+
    In Google CoLab???
 
+1. To copy a file from your Google Drive:
+   ```
+   !cp /content/drive/My\ Drive/Importing\ Scripts\ as\ Modules/utils.py /content
+   ```
+   Alternately, you can manually select the file using:
+   ```
+   files.upload()
+   ```
 1. Set permissions:
    ```
    chmod +x openweather.py
@@ -210,8 +224,12 @@ Run my <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob
 1. Set .env file containing the API keys
    ???
 1. Because T-Mobile does not correctly identify your physical location, provide your US Zip Code when requesting the weather there:
+
+   <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/openweather.py">openweather.py</a> program:
+   
+1. Execute the program:
    ```
-   ./openweather.py -z 59102
+   !./openweather.py -z 59041
    ```
    The weather service converts your Zip Code to a latitude and longitude:
    ```
