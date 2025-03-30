@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-25"
-lastchange: "v0199 + plc under p :README.md"
+date: "2025-03-29"
+lastchange: "v0200 + palantir :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -126,6 +126,7 @@ Topics alphabetically:
    <a name="P"></a>
    ### P
 
+1. <a target="_blank" href="https://bomonike.github.io/palantir">palantir</a>
 1. <a target="_blank" href="https://bomonike.github.io/personal-data-security">personal-data-security</a>
 1. <a target="_blank" href="https://bomonike.github.io/pid">pid</a> (Proportional Integral Derivative)
 1. <a target="_blank" href="https://bomonike.github.io/plc">plc</a> (Programmable Logic Controllers & Industrial Automation with Ignition from InductiveAutomation.com, etc.)
