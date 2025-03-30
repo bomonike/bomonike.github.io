@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-03-28"
-lastchange: "v005 + add new :palantir.md"
+lastchange: "v006 + sign ups :palantir.md"
 url: "https://bomonike.github.io/palantir"
 file: "palantir"
 title: "Palantir"
@@ -20,33 +20,79 @@ created: "2018-04-03"
 {% include l18n.html %}
 {% include _toc.html %}
 
+## Why?
+
+At its core, Palantir provides an <strong>object-based database</strong> they call <a href='#Ontology'>Ontology</a> running in SaaS and on-premise mode accessed by an integrated set of production-capable tools. Being built for military use initially means its data governance features are built-in (to include object lineage time series, auditability, and traceability).
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332218/palantir-processes_yjzlsd.png"><img alt="palantir-processes.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332218/palantir-processes_yjzlsd.png" /></a>
+
+The <a href='#Ontology'>Ontology</a> "sematic layer" because in addition to holding data like SQL databases, it maintains all that is necessary to make a <strong>digital twin</strong> tracking the dynamic actions and workflows within organizations. 
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332764/palantir-role-actions_ttcfcg.png"><img alt="palantir-role-actions.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332764/palantir-role-actions_ttcfcg.png" /></a>
+
+That enables Palantir to conduct <a target="_blank" href="https://www.youtube.com/watch?v=4LQCsPbA6rU">predicate-based data mining</a>.
+
+Data as code: Unlike SQL databases, experiments to data are a built-in feature. Copies of Palantir's Ontology can be <strong>forked</strong> like GitHub branches with source code. So the Ontology can be modifed to model “what-if" scenarios to explore potential outcomes (defined in RFCs), then reverted back. Thus, more informed decisions. Moreover, simulation results can be "materialized" into the data when a satisfactory outcome is achieved.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=2NHgNBwTXRk">VIDEO</a> Fondary is fast!
+
+Integration also applies to the granular access allowed human users and automated actions depending on specific role and rights based on object and links within the Ontology.
+
+   * ___ to build Functions instead of AWS Lambda, Azure/Google <strong>Functions</strong>
+
+Palantir provides a full suite (stack) of tools instead of others (but also integrates with them).
+<a target="_blank" href="https://www.youtube.com/watch?v=k88WbxMEvPY&t=1m41s">VIDEO</a> "Workshop App: Supply Chain Control Tower" provides a quick tour:
+
+   * in github.com/palantir organization
+
+   * ___ to build visualizations dashboards & maps instead of Tableau & ArcGIS
+
+   * "Quiver" for predicate-based data mining
+
+   * "AIP" (AI Powered) Native LLM-backed features instead of Llamaindex, HuggingFace, etc. <a target="_blank" href="https://www.youtube.com/watch?v=akieze8_tSE">VIDEO</a>
+   * "AIP Now" provides pre-built AI apps as starting points for quicker customization.
+   * AIP Logic instead of n8n. AIP Logic is a no-code development environment for building, testing, and releasing functions powered by LLMs. Using Logic’s intuitive interface, application builders can engineer prompts, test, evaluate and monitor, set up automation, and more, while leveraging the Ontology.
+   * "AIP Logic Evaluations" instead of ____. AIP Logic is a testing framework designed to enhance and track AIP Logic function quality over time by improving prompt engineering, deciding between using various models
+   * "AIP Assist" instead of ___. AIP Assist is an LLM-powered support tool designed to help users navigate, understand
+
+   * "Apollo" instead of ___ for mission control for autonomous software deployment (software delivery layer). https://www.palantir.com/platforms/apollo/ 
+
+Operational App Building:
+
+   * Workshop App Builder
+   * Carbon Workspaces ???
+   * Vortex Scenario Builder ???
+
+   * Static App Builder
+   * Mobile Frameworks
+   * Mixed Reality (VR headsets)
+
+
 ## Dive right in
 
-At its core, Palantir provides an <strong>object-based database</strong>.
-They call it an <strong>Ontology</strong> because in addition to holding data, it maintains all that is necessary to make a <strong>digital twin</strong> of the dynamic actions and workflows within organizations.
+Get hands-on.
 
-1. https://learn.palantir.com/speedrun-your-first-e2e-workflow
-2. https://learn.palantir.com/foundry-aip-builder-foundations-quiz 10 questions
-3. https://learn.palantir.com/applied-notional-project-automobile-inbo
-4. <a target= "_blank" href="https://learn.palantir.com/applied-notional-project-automobile-inbo">Applied Notional Project</a> <a targete="_blank" href="https://www.youtube.com/watch?v=ZeapLGUJSMw" title="by Ontologize">VIDEO</a> to build a dashboard for a used car leasing company with minimal step-by-step instructions based on requirements taken from a notional statement of work. [1-2 days] an operational workflow 
+Out-of-the-box workflow templates or reusable workflow components to create workflow applications quickly, often within a matter of days. This accelerated development process ensures that organizations can realize the value of their data and insights swiftly, enhancing efficiency and responsiveness.
+
+1. At https://build.palantir.com click "Sign Up" to get an environment using your company email.
+1. At https://learn.palantir.com click "Start Building Now" to get an dev account using your email, phone, credit card, etc.
+1. https://accounts.skilljar.com/accounts/signup/ with a company email.
+
+   WARNING: I can't find what Palantir charges for dev & prod use.
+
+1. https://learn.palantir.com/speedrun-your-first-e2e-workflow at
+   https://github.com/palantir/first-e2e-workflow
+1. https://learn.palantir.com/foundry-aip-builder-foundations-quiz 10 questions
+
+1. <a target="_blank" href="https://learn.palantir.com/deep-dive-data-protection-tools-in-foundry">Deep Dive: Data Protection Tools in Foundry</a>
+
+1. https://learn.palantir.com/applied-notional-project-automobile-inbo
+1. <a target= "_blank" href="https://learn.palantir.com/applied-notional-project-automobile-inbo">Applied Notional Project</a> <a targete="_blank" href="https://www.youtube.com/watch?v=ZeapLGUJSMw" title="by Ontologize">VIDEO</a> to build a dashboard for a used car leasing company with minimal step-by-step instructions based on requirements taken from a notional statement of work. [1-2 days] an operational workflow 
 
 
-## The company
+## Socials
 
-Palantir (NYSE:PLTR) was founded by Peter Thiel in 2003 after 9/11 to serve CIA and other law enforcement companies.
-
-Palantir employees are called Palantirians.
-
-Corporate offices moved from the Silicon Valley to Denver, CO.
-
-Jobs listed in <a target= "_blank" href="https://www.palantir.com/jobs/">Palantir careers</a> and LinkedIn show "Forward Deployed Software Engineers" around the world and within engineering offices in Seattle, DC, NYC:
-
-   * 110 East End Ave: This office is a key player in Palantir's East Coast operations, focusing on financial services and media industries.
-   * 620 Avenue of the Americas: Palantir has a significant presence here, having renewed a lease for 140,345 square feet.
-   * 15 Little West 12th Street: This is another office location in New York, with a project size of 30,000 square feet.
-   * 450 W 17th St: This address is also associated with Palantir in New York.
-   * 45 West 18th Street (Lower East Side) used for events.
-
+* <a target= "_blank" href="https://discord.com/invite/XbabtYtqsn">Accept CodeStrap.me Discord invite</a>
 
 * https://youtube.com/c/palantirtech
 * https://www.youtube.com/@palantirdevelopers
@@ -60,29 +106,60 @@ Jobs listed in <a target= "_blank" href="https://www.palantir.com/jobs/">Palanti
 * https://community.palantir.com
 * https://learn.palantir.com
 
-The company has changed from "We don't have salespeople".
-
 As of this writing, the AIP con occured on June 6, 2024.
 <a target= "_blank" href="https://www.youtube.com/watch?v=rE8-P-0h070">VIDEO</a>
 "Our Ontology is "the only thing that creates quantifiable transformational value in Enterprise."
 <a target= "_blank" href="https://learn.palantir.com/deep-dive-creating-your-first-ontology">Deep Dive: Creating Your First Ontology</a>
 
 
-## Products
+## The company
 
+In 2025 Palantir (NYSE:PLTR) was the fastest-growing among all stocks.
 
+Palantir was founded by Peter Thiel (of PayPal) in 2003 after 9/11 to serve CIA and other law enforcement companies.
 
-out-of-the-box workflow templates or reusable workflow components to create workflow applications quickly, often within a matter of days. This accelerated development process ensures that organizations can realize the value of their data and insights swiftly, enhancing efficiency and responsiveness.
+CEO Alex Karp wrote NYTimes Bestseller "The Technological Republic". <a target="_blank" href="https://www.youtube.com/watch?v=j0Oz4P-NX84">VIDEO</a>
 
-Foundry includes built-in simulation capabilities that allow users to model “what-if scenarios.” For example, users can simulate the impact of varying parameter rates on key performance indicators (KPIs) or trends. These simulations help in exploring potential outcomes and making informed decisions.
+Palantir employees are called Palantirians.
 
-The “what-if scenarios” can be used purely for exploration or can be materialized by writing the simulation results back into the data once a satisfactory outcome is achieved. This flexibility ensures that users can experiment and validate their strategies before implementation.
- 
+* https://www.palantir.com/careers/
+* https://www.palantir.com/careers/students-and-early-talent/
+* https://palantirfoundation.org/foundation/fellowships/
+
+Corporate offices moved from the Silicon Valley to Denver, CO.
+
+The company has changed from "We don't have salespeople".
+
+Jobs listed in <a target= "_blank" href="https://www.palantir.com/jobs/">Palantir careers</a> and LinkedIn show <a target="_blank" href="https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87">"Forward Deployed Software Engineers"  (Deltas)</a>, what others call Solution Engineers) around the world and within engineering offices in Seattle, DC, NYC:
+
+   * 110 East End Ave: This office is a key player in Palantir's East Coast operations, focusing on financial services and media industries.
+   * 620 Avenue of the Americas: Palantir has a significant presence here, having renewed a lease for 140,345 square feet.
+   * 15 Little West 12th Street: This is another office location in New York, with a project size of 30,000 square feet.
+   * 450 W 17th St: This address is also associated with Palantir in New York.
+   * 45 West 18th Street (Lower East Side) used for events.
+
 
 ## Stack
 
-https://learn.palantir.com/deep-dive-data-protection-tools-in-foundry
-Deep Dive: Data Protection Tools in Foundry
+https://www.palantir.com/docs/foundry/ontology-sdk/overview
+
+1. Click "INSTALL" at <a target="_blank" href="https://build.palantir.com/platform/2fded05d-0d74-41a7-93f6-fa665114ab7b">"Ontology SDK (OSDK) With AIP Logic - Build a To Do application Powered by AIP Logic</a> 
+1. Enter your <strong>enrollment URL</strong> such as "almond-latte.palantirfoundry.com".
+
+AIP Logic is not locked inside Foundry, you can use it from anywhere you want. 
+This step-by-step tutorial and learn how to 
+Using Jupyter to analyze data from the Ontology or trigger AIP Logic functions
+
+Create your very own Todo application utilizing the power of Ontology SDK calling Query functions which uses GPT-4o from a TypeScript Query function. 
+This comprehensive guide will teach you everything from setting up your development environment to 
+running your application in production including calling AIP Logic functions from React or Python applications.
+
+Create a Dataset of tasks within projects within the Ontology 
+from which Jupyter notebooks run to analyze data and trigger AIP Logic functions from your OSDK application.
+
+
+Functions are executed to create a To Do application.
+
 
 ## Ontology Software Development Kit (OSDK)
 
@@ -94,6 +171,8 @@ The OSDK uses a token that is scoped only to the ontological entities required f
 ## Palantir platform tooling:
 
 * Foundry is Palantir's data operations platform, with the Ontology at its heart - it allows for enterprises to execute faster with universal logic representing the objects, actions, and processes of their business. https://www.palantir.com/docs/foundry/ontology-sdk/overview
+
+* Workshop
 
 * Palantir AIP connects generative AI to operations. AIP is a suite of modules in Foundry with preferred LLM (LLAMA, GPT, Claude, etc.). 
    * AIP Logic: a no-code development environment for building, testing, and releasing functions powered by LLMs. Using Logic’s intuitive interface, application builders can engineer prompts, test, evaluate and monitor, set up automation, and more, while leveraging the Ontology.
@@ -238,11 +317,7 @@ Four cert tracks, $260 for 70% of 60 multiple choice questions in 120 minutes:
 
 Exam guides, including an outline of topics, relevant documentation, and other study materials, will be provided to all candidates.
 
-## Quick Start
 
-1. Create an account with a credit card, images of your ID & face.
-1. At build.palantir.com
-1. https://accounts.skilljar.com/accounts/signup/ with a company email.
 
 Code Repositories
 
