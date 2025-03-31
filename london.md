@@ -1,10 +1,10 @@
 ---
 layout: post
-date: "2025-02-16"
-lastchange: "v013 + text-to-action :london.md"
+date: "2025-03-31"
+lastchange: "v014 + song :london.md"
 file: "london"
 title: "London (England)"
-excerpt: "Notes about my visit to London Oct-Nov 2023"
+excerpt: "Notes about visits to London"
 tags: [travel]
 image:
 # norway-trolltunga-1900x500.png
@@ -251,3 +251,7 @@ Places Londoners don't want tourists to visit
 
 https://www.youtube.com/watch?v=fI8ygOauNNA
 LONDON TRAVEL TIPS FOR FIRST TIMERS | 40+ Must-Knows Before Visiting London + What NOT to Do! by Happy to Wander (Travel Tips & Inspo)
+
+https://www.youtube.com/shorts/yakaJGpfMm8
+Song "London Bridge Is Falling Down" played by Loren Digiori in the style of 
+Ragtime, Jazz, Blues, Tango, 50's Doowap, Polka, and Satie's Gymnopedie.
