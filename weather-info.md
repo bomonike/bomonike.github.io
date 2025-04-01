@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-04-01"
-lastchange: "v016 pressure :weather-info.md"
+lastchange: "v017 pressure & temp :weather-info.md"
 url: "https://bomonike.github.io/weather-info"
 file: "weather"
 title: "Weather microclimate"
@@ -59,9 +59,11 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 16. Rain icon: maximum is 1.4 inch. 
    * "Rate", daily, hourly, weekly, monthly and yearly rain inches
 17. Forecast icon based on rate of change of pressure
-18. <a name="Pressure"></a>"Barometer Reading": <a target="_blank" href="https://blog.mensor.com/blog/adjusting-barometric-pressure-readings-for-aviation-and-meteorology">BLOG</a>: Atmospheric pressure Barometric pressure is measured by barometers, which measure the <a target="_blank" href="https://cumulus.hosiene.co.uk/viewtopic.php?t=8286">legacy</a> compression of mercury due to the weight of air above a square inch. The <strong>absolute</strong> pressue measured at Mean Sea Level (MSL) is 14.696 PSI (pounds per square) inch of mercury (due to gravity). That's a constant <strong>1013.25 hPa (hectoPascals)</strong> aka "millibars", also designated as "1 ATM" by the International Standard Atmosphere (ISA) standard. That's the equivalent of <strong>29.92 inHg</strong> (inches of mercury, symbol Hg).
+18. <a name="Pressure"></a>"Barometer Reading": <a target="_blank" href="https://blog.mensor.com/blog/adjusting-barometric-pressure-readings-for-aviation-and-meteorology">BLOG</a>: Atmospheric pressure is called Barometric pressure because it's measured by barometers that measure the <a target="_blank" href="https://cumulus.hosiene.co.uk/viewtopic.php?t=8286">legacy</a> compression of mercury due to the weight of air above a square inch. The <strong>absolute</strong> pressue measured at Mean Sea Level (MSL) is 14.696 PSI (pounds per square) inch of mercury (due to gravity). That's a constant <strong>1013.25 hPa (hectoPascals)</strong> aka "millibars", also designated as "1 ATM" by the International Standard Atmosphere (ISA) standard. That's the equivalent of <strong>29.92 inHg</strong> (inches of mercury, symbol Hg).
 
-    <a target="_blank" href="https://en.wikipedia.org/wiki/Atmospheric_pressure">Wikipedia</a> notes that the highest sea-level pressure on Earth occurs in Siberia, where record highs are 1,085 hPa (15.74 psi; 32.0 inHg). The lowest measurable sea-level pressure is found at the centres of tropical cyclones and tornadoes, with a record low of 870 hPa (12.6 psi; 26 inHg). The lowest place on Earth, the Dead Sea at 430 metres (1,410 ft) below sea level, has a typical atmospheric pressure of 1,065 hPa.
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Atmospheric_pressure">Wikipedia</a> notes that the highest sea-level pressure on Earth occurs in Siberia, where record highs are 1,085 hPa (15.74 psi; 32.0 inHg). The lowest measurable sea-level pressure is found at the centres of tropical cyclones and tornadoes, with a record low of 870 hPa (12.6 psi; 26 inHg). The lowest place on Earth, the Dead Sea at 430 metres (1,410 ft) below sea level, has a typical atmospheric pressure of 1,065 hPa. 
+    
+    Temperature and humidity also affect the atmospheric pressure. Pressure is proportional to temperature and inversely related to humidity, and both of these are necessary to compute an accurate figure. The graph on the right was developed for a temperature of 15 °C and a relative humidity of 0%.
 
     <strong>Relative (REL)</strong> pressure readings decrease as you gain altitude AND as heavier clouds move away. To differentiate between altitude and weather impact, weather reports of locations are normalized relative to <strong>sea level</strong>. In the US, three digits are all that are transmitted: decimal points and the one or two most significant digits are omitted: 1,013.2 hPa (14.695 psi) is transmitted as 132; 1,000 hPa (100 kPa) is transmitted as 000; 998.7 hPa is transmitted as 987; etc. 
 
