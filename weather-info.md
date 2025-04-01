@@ -1,7 +1,8 @@
 ---
 layout: post
-date: "2025-03-28"
-lastchange: "v014 + openweather colab modules :weather-info.md"
+date: "2025-04-01"
+lastchange: "v016 pressure :weather-info.md"
+url: "https://bomonike.github.io/weather-info"
 file: "weather"
 title: "Weather microclimate"
 excerpt: "How to measure weather metrics at your microclimate."
@@ -18,12 +19,11 @@ created: "2018-04-03"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
----
 
 ## Measurements and Instruments
 
 This display is from the <a target="_blank" href="https://ambientweather.com/support/ws-5000-weather-station-support/">Ambient Weather WS-5000 series</a> after <a target="_blank" href="https://www.youtube.com/watch?v=wyFh8edFZiA" title="VIDEO">installation/configuration</a>:<br />
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" width="891" height="527" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png"><img alt="weather-ws-5000-891x527_z7ypgc.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742185185/weather-ws-5000-891x527_z7ypgc.png" /></a>
 
 (-) and (+) adjust values: <a target="_blank" href="https://ambientweather.com/glossary.html">Glossary</a><br />
 <table border="1" cellpadding="4" cellspacing="0"><tr valign="top"><td>(-)<br />Minus<br />Brightness </td><td>(+)<br />Plus<br />Brightness<br />Adjust </td><td> Backlight<br />On/Off<br />toggle </td><td> Background<br />On/Off<br />toggle </td><td> Pressure<br />Absolute<br />/Relative<br />toggle </td><td> Channel </td><td> History </td><td> Set<br />Mode </td></tr></table>
@@ -59,20 +59,17 @@ This display is from the <a target="_blank" href="https://ambientweather.com/sup
 16. Rain icon: maximum is 1.4 inch. 
    * "Rate", daily, hourly, weekly, monthly and yearly rain inches
 17. Forecast icon based on rate of change of pressure
-18. "Barometer Reading": Barometric pressure is measured in inHg, mmHg, or ABS Hg by barometers.
-   <a target="_blank" href="https://blog.mensor.com/blog/adjusting-barometric-pressure-readings-for-aviation-and-meteorology">BLOG</a>:
-   To allow for comparison between different locations, 
-   regardless of their actual elevation, the
-   SI Atmosphere (atm) air pressure reported is normalized relative (REL) to 
-   <strong>sea level</strong>
-   of 101,325 pascals (Pa) or 1013.25 hPa (hectoPascals).
-   
-   At sea level, absolute and relative pressures are the same.
-   As altitude increases, atmospheric pressure decreases.
+18. <a name="Pressure"></a>"Barometer Reading": <a target="_blank" href="https://blog.mensor.com/blog/adjusting-barometric-pressure-readings-for-aviation-and-meteorology">BLOG</a>: Atmospheric pressure Barometric pressure is measured by barometers, which measure the <a target="_blank" href="https://cumulus.hosiene.co.uk/viewtopic.php?t=8286">legacy</a> compression of mercury due to the weight of air above a square inch. The <strong>absolute</strong> pressue measured at Mean Sea Level (MSL) is 14.696 PSI (pounds per square) inch of mercury (due to gravity). That's a constant <strong>1013.25 hPa (hectoPascals)</strong> aka "millibars", also designated as "1 ATM" by the International Standard Atmosphere (ISA) standard. That's the equivalent of <strong>29.92 inHg</strong> (inches of mercury, symbol Hg).
 
-   The <a target="_blank" href="https://cumulus.hosiene.co.uk/viewtopic.php?t=8286">legacy</a> metric of millibar is equivalent to 100 Pa (Pascals).
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Atmospheric_pressure">Wikipedia</a> notes that the highest sea-level pressure on Earth occurs in Siberia, where record highs are 1,085 hPa (15.74 psi; 32.0 inHg). The lowest measurable sea-level pressure is found at the centres of tropical cyclones and tornadoes, with a record low of 870 hPa (12.6 psi; 26 inHg). The lowest place on Earth, the Dead Sea at 430 metres (1,410 ft) below sea level, has a typical atmospheric pressure of 1,065 hPa.
 
-   * arrow indicates rate of change of pressure
+    <strong>Relative (REL)</strong> pressure readings decrease as you gain altitude AND as heavier clouds move away. To differentiate between altitude and weather impact, weather reports of locations are normalized relative to <strong>sea level</strong>. In the US, three digits are all that are transmitted: decimal points and the one or two most significant digits are omitted: 1,013.2 hPa (14.695 psi) is transmitted as 132; 1,000 hPa (100 kPa) is transmitted as 000; 998.7 hPa is transmitted as 987; etc. 
+
+    REMEMBER: A system transmitting the last three digits transmits the same code (800) for 1080.0 hPa as for 980.0 hPa.
+
+    In technical terms, "Atmospheric pressure is thus proportional to the weight per unit area of the atmospheric mass above that location." 
+
+    BTW The weight of a column of freshwater of approximately 10.3 m (33.8 ft) is also "one atmosphere" (101.325 kPa or 14.7 psi). Thus, a diver 10.3 m under water experiences a pressure of about 2 atmospheres (1 atm of air plus 1 atm of water). Conversely, 10.3 m is the maximum height to which water can be raised using suction under standard atmospheric conditions.
 
 19. "Max Daily Gust" of wind in MPH.
 20. Moon Phase
@@ -200,7 +197,7 @@ I wrote a Python program to retrieve and format weather info from an API calls t
 
 The program makes use of external modules, so can't be run within ProgramWiz.
 
-Here's how to run my program within Google's Colab like the pros:
+So run my program within Google's Colab like the pros:
 
 1. Open a Terminal app.
 1. Bring the <tt>openweather.py</tt> file to the Terminal.
