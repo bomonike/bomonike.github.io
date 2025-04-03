@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-28"
-lastchange: "v006 + sign ups :palantir.md"
+date: "2025-04-03"
+lastchange: "v008 + glassdoor :palantir.md"
 url: "https://bomonike.github.io/palantir"
 file: "palantir"
 title: "Palantir"
@@ -22,17 +22,52 @@ created: "2018-04-03"
 
 ## Why?
 
-At its core, Palantir provides an <strong>object-based database</strong> they call <a href='#Ontology'>Ontology</a> running in SaaS and on-premise mode accessed by an integrated set of production-capable tools. Being built for military use initially means its data governance features are built-in (to include object lineage time series, auditability, and traceability).
+At its core, Palantir provides an <strong>object-based database</strong> they call an <a href='#Ontology'>Ontology</a>. What's unique about Palantir's database is that <strong>branches</strong> of data can be versioned (forked) like GitHub source code. That enables "what-if" scenarios to be explored as different models to inform decisions. When a satisfactory outcome is achieved, those models can be "materialized" into the production data.
+
+What makes Palatir attractive is that tools to create apps in workflows, visualization, and dashboards were not hobled together through acquisitions over time. Palantir being built initially for military use required its data governance features to be built-in (to include object lineage time series, auditability, and traceability). So Palantirians have a better chance of getting apps working together in production-scale -- in SaaS and on-premise.
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332218/palantir-processes_yjzlsd.png"><img alt="palantir-processes.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332218/palantir-processes_yjzlsd.png" /></a>
 
-The <a href='#Ontology'>Ontology</a> "sematic layer" because in addition to holding data like SQL databases, it maintains all that is necessary to make a <strong>digital twin</strong> tracking the dynamic actions and workflows within organizations. 
+<a name="Ontology'></a>
 
+## The Ontology
+
+Palantir's uses the word "Ontology" instead of "database" to emphasize that in addition to holding data like SQL databases, it maintains what's necessary to make a <strong>digital twin</strong> modeling the dynamic interactions within organizations. 
+
+Built for each <strong>project</strong> are custom and pre-built 
+"semantic" elements:
+   * <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/object-types-overview/">Object types</a> which define real-worldentities or events in an organization,
+   * <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/link-types-overview/">Link types</a> that define the relationship between two object types,
+   * properties that define the object type’s characteristics.), plus<br /> 
+"kinetic" elements:
+   * <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/overview/">Action types</a> define how an object type can be modified.
+   * <a target="_blank" href="https://www.palantir.com/docs/foundry/functions/overview/">Functions</a>, 
+   * dynamic security).
+
+An object is an instance of an object type
+
+types of <a target="_blank" href="https://www.palantir.com/docs/foundry/ontology/overview#object-and-link-types">data and links</a>:
+
+
+<a target="_blank" href="https://www.palantir.com/docs/foundry/interfaces/interface-overview/">Interfaces</a> describes the shape of an object type and its capabilities. Interfaces provide object type polymorphism, allowing for consistent modeling of and interaction with object types that share a common shape.
+
+
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743588147/palantir-objects-702x81_ulc52k.png"><img alt="palantir-objects-702x81.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743588147/palantir-objects-702x81_ulc52k.png" /></a>
+
+The Ontology regarding decisions:
+
+   * Data: the relevant facts about the world and operations that form the context for this decision.
+   
+   * Actions: the "kinetics" or effects of this decision - how does the decision manifest in the world. How do we reduce or collapse the steps between taking a decision in AIP and affecting an outcome in a production setting?
+
+   * Links organizational or business rules act as guardrails for the decision. The probabilities of certain outcomes under different assumptions? What was done in previous, similar situations and  outcome metrics. Inputs from forecasting and optimization models.
+   
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332764/palantir-role-actions_ttcfcg.png"><img alt="palantir-role-actions.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332764/palantir-role-actions_ttcfcg.png" /></a>
 
 That enables Palantir to conduct <a target="_blank" href="https://www.youtube.com/watch?v=4LQCsPbA6rU">predicate-based data mining</a>.
 
-Data as code: Unlike SQL databases, experiments to data are a built-in feature. Copies of Palantir's Ontology can be <strong>forked</strong> like GitHub branches with source code. So the Ontology can be modifed to model “what-if" scenarios to explore potential outcomes (defined in RFCs), then reverted back. Thus, more informed decisions. Moreover, simulation results can be "materialized" into the data when a satisfactory outcome is achieved.
+treats data as code: Unlike SQL databases, experiments to data are a built-in feature. Copies of Palantir's Ontology 
 
 <a target="_blank" href="https://www.youtube.com/watch?v=2NHgNBwTXRk">VIDEO</a> Fondary is fast!
 
@@ -48,6 +83,8 @@ Palantir provides a full suite (stack) of tools instead of others (but also inte
    * ___ to build visualizations dashboards & maps instead of Tableau & ArcGIS
 
    * "Quiver" for predicate-based data mining
+
+For "full spectrum" enterprise AI:
 
    * "AIP" (AI Powered) Native LLM-backed features instead of Llamaindex, HuggingFace, etc. <a target="_blank" href="https://www.youtube.com/watch?v=akieze8_tSE">VIDEO</a>
    * "AIP Now" provides pre-built AI apps as starting points for quicker customization.
@@ -66,6 +103,7 @@ Operational App Building:
    * Static App Builder
    * Mobile Frameworks
    * Mixed Reality (VR headsets)
+
 
 
 ## Dive right in
@@ -92,7 +130,9 @@ Out-of-the-box workflow templates or reusable workflow components to create work
 
 ## Socials
 
-* <a target= "_blank" href="https://discord.com/invite/XbabtYtqsn">Accept CodeStrap.me Discord invite</a>
+1. On your calendar, set a recurring WEEKLY appointment to to read <a target= "_blank" href="https://www.palantir.com/docs/foundry/announcements/">Announcements</a> and <a target="_blank" href="https://www.palantir.com/docs/foundry/release-notes/2025/">Release Notes</a> from Palantir about specifics about changes that impact how you build software.
+
+1. <a target= "_blank" href="https://discord.com/invite/XbabtYtqsn">Accept CodeStrap.me Discord invite</a>
 
 * https://youtube.com/c/palantirtech
 * https://www.youtube.com/@palantirdevelopers
@@ -114,21 +154,41 @@ As of this writing, the AIP con occured on June 6, 2024.
 
 ## The company
 
-In 2025 Palantir (NYSE:PLTR) was the fastest-growing among all stocks.
+Palantir was founded <strong>May 3, 2003</strong> after 9/11 to serve CIA and other law enforcement companies.
 
-Palantir was founded by Peter Thiel (of PayPal) in 2003 after 9/11 to serve CIA and other law enforcement companies.
+In early 2025 Palantir (stock <a target="_blank" href="https://www.google.com/finance/quote/PLTR:NASDAQ?sa=X&ved=2ahUKEwiGzKXwlbuMAxWtIDQIHYb6GXgQ3ecFegQIRBAf">PLTR</a>) was among the fastest-growing among all stocks, peaking at $125 before the Trump tariff meltdown brougt it back to $80/share at P/E of 1457.
+ 
+Co-founders are Peter Thiel (of PayPal), Joe Lonsdale, Nathan Gettings, Stephen Cohen, and Alex Karp.
 
-CEO Alex Karp wrote NYTimes Bestseller "The Technological Republic". <a target="_blank" href="https://www.youtube.com/watch?v=j0Oz4P-NX84">VIDEO</a>
+CEO Alex Karp wrote NYTimes Bestseller <a target="_blank" href="https://techrepublicbook.com">"The Technological Republic"</a> "Hard Power, Soft Belief, and the Future of the West". <a target="_blank" href="https://www.youtube.com/watch?v=j0Oz4P-NX84">VIDEO</a>. He was named by The Economist’s “best CEO of 2024”.
+But he has a (middling) <a target="_blank" href="https://www.glassdoor.com/Reviews/Palantir-Technologies-Reviews-E236375.htm">69% approval rating on Glassdoor</a>.
+Karp describes himself as "anti-woke, pro-Israel, pro-Ukraine". VIDEOS:
+   * <a target= "_blank" href="https://www.youtube.com/watch?v=EZLr6EGGTPE">"Alex Karp CEO 2009 Interview"</a> 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=htUe8WkYre8">"The company that runs the world</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=KZWB5XGZy-Q">"I don't think in win/lose"
 
-Palantir employees are called Palantirians.
+<a target="_blank" href="https://www.youtube.com/watch?v=jLH0FALLRtg&t=4m47s">VIDEO</a>: Fund manager Kathy Wood said "Alex Karp believes that Plantir will be the largest AI company in the world. .. I think that might be right. ... It could be a big disruptor to Microsoft."
+Others:
+
+Glassdoor's employee rating of the company is 3.8/5.0 (on the lower end of scale, not among <a target="_blank" href="https://www.glassdoor.com/Award/Best-Places-to-Work-LST_KQ0,19.htm">Best Places to Work</a>). One employee commented:
+
+<ul>"Intense work environment with strict deadlines, long hours, and some micromanagement. This affects the culture a bit where it can be very cut throat if you aren’t performing at a certain level constantly."
+</ul>
+
+LinkedIn reports 2.7 year average tenure (short vs. other employers)
+
+Palantir employees are called <strong>Palantirians</strong>. 
+
+The company has "we don't have salespeople" philosophy. "each contract is tailored to the customer's needs."
+One employee commented on Indeed: 
+"They will do whatever they possibly can to avoid paying out owed commissions. Every salesperson I have worked with at Palantir have been owed hundreds of thousands in commissions."
 
 * https://www.palantir.com/careers/
 * https://www.palantir.com/careers/students-and-early-talent/
 * https://palantirfoundation.org/foundation/fellowships/
+* https://www.youtube.com/@palantirbite-sized 
 
 Corporate offices moved from the Silicon Valley to Denver, CO.
-
-The company has changed from "We don't have salespeople".
 
 Jobs listed in <a target= "_blank" href="https://www.palantir.com/jobs/">Palantir careers</a> and LinkedIn show <a target="_blank" href="https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87">"Forward Deployed Software Engineers"  (Deltas)</a>, what others call Solution Engineers) around the world and within engineering offices in Seattle, DC, NYC:
 
@@ -141,40 +201,87 @@ Jobs listed in <a target= "_blank" href="https://www.palantir.com/jobs/">Palanti
 
 ## Stack
 
-https://www.palantir.com/docs/foundry/ontology-sdk/overview
-
 1. Click "INSTALL" at <a target="_blank" href="https://build.palantir.com/platform/2fded05d-0d74-41a7-93f6-fa665114ab7b">"Ontology SDK (OSDK) With AIP Logic - Build a To Do application Powered by AIP Logic</a> 
 1. Enter your <strong>enrollment URL</strong> such as "almond-latte.palantirfoundry.com".
 
-AIP Logic is not locked inside Foundry, you can use it from anywhere you want. 
-This step-by-step tutorial and learn how to 
-Using Jupyter to analyze data from the Ontology or trigger AIP Logic functions
+   QUESTION: Where do we get the enrollment URL???
 
-Create your very own Todo application utilizing the power of Ontology SDK calling Query functions which uses GPT-4o from a TypeScript Query function. 
-This comprehensive guide will teach you everything from setting up your development environment to 
-running your application in production including calling AIP Logic functions from React or Python applications.
+1. <a target="_blank" href="https://www.palantir.com/docs/foundry/administration/configure-application-access">Configure application access</a>
+
+The Developer Console is the platform used to create both Ontology SDK applications as well as OAuth clients (formerly known as third-party applications in Control Panel). To access the Developer Console, open the application portal and search for developer console.
+
+
+Object Views are a central hub for all information and workflows related to a particular object. This includes key "biographical data" about an object, any linked objects, key related metrics, and links to (or embedding of) key analyses, dashboards, and applications related to the object.
+
+Use Jupyter to analyze data from the Ontology or trigger AIP Logic functions
 
 Create a Dataset of tasks within projects within the Ontology 
+
+## AI/ML
+
+To operationalize AI/ML in Foundry for live inference with the Ontology:
+
+1. Create a LLM model in Foundry.
+1. Configure a direct model deployment.
+1. Publish a simple wrapper function for your model and optionally call it from another function to orchestrate complex logic around your model.
+1. Use that function for live inference in Workshop, Vertex and other end-user facing applications.
+
+https://www.palantir.com/docs/foundry/model-integration/tutorial-train-code-repositories/#2b4-how-to-test-inference-logic-in-code-repositories
+Ontology Objects can also be backed with datasets that leverage a model for batch inference - 
+
+
+## Functions
+
+ <a target="_blank" href="https://www.palantir.com/docs/foundry/functions/overview/">Functions</a>
+
+A Function is a piece of code-based logic that takes in input parameters and returns an output. Functions are natively integrated with the Ontology: they can take objects and object sets as input, read property values of objects, and be used across action types and applications that build on the Ontology.
+
+AIP Logic can be used from anywhere. 
+
+AIP Logic functions from front-end React or back-end Python applications.
+
+Call Query functions which uses GPT-4o from a TypeScript Query function. 
+
 from which Jupyter notebooks run to analyze data and trigger AIP Logic functions from your OSDK application.
 
-
-Functions are executed to create a To Do application.
 
 
 ## Ontology Software Development Kit (OSDK)
 
-The Ontology SDK supports NPM (Node Package Manager) package for TypeScript, Pip or 
-Conda for Python, Maven for Java, and OpenAPI spec for any other language
+The Ontology SDK is multi-lingual. It supports NPM (Node Package Manager) package for TypeScript, PIP, or 
+Conda for Python, Maven for Java, and OpenAPI spec for any other language. It generate:
+   * Registry URL for NPM
+   * Index URL for PyPI
+   * Chanel URL for Conda
+
+https://www.palantir.com/docs/foundry/ontology-sdk/overview
+Functions are executed using the Ontology SDK to create a To Do webapp.
+
+QUESTION: Application RID???
 
 The OSDK uses a token that is scoped only to the ontological entities required for a single application to access, in addition to the user's own permissions to the data.
 
 ## Palantir platform tooling:
 
-* Foundry is Palantir's data operations platform, with the Ontology at its heart - it allows for enterprises to execute faster with universal logic representing the objects, actions, and processes of their business. https://www.palantir.com/docs/foundry/ontology-sdk/overview
+Palantir has three tools for building Apps & Dashboards:
 
-* Workshop
+* <strong>Slate</strong> is able to interact directly with <strong>datasets</strong>. Slate enables significant visual customization based on web development paradigms and has a wide range of available features, but also requires more technical knowledge to build and maintain applications than Workshop.
 
-* Palantir AIP connects generative AI to operations. AIP is a suite of modules in Foundry with preferred LLM (LLAMA, GPT, Claude, etc.). 
+* <strong>Workshop</strong> provides point-and-click code-less application-building natively on the Ontology layer. Applications built in Workshop are more dynamic and interactive than typical dashboards created in other point-and-click tools. High-quality Layouts and an easy-to-use but sophisticated Events system enable Workshop apps to be as user-friendly and high-quality as custom React applications.
+
+* <strong>Quiver</strong> enables advanced analytical workflows in the Ontology layer through a visual point-and-click interface and a powerful charting library. Quiver supports simple linear drill-down analyses to highly-branched and complex analyses with aggregations and statistical functions. Quiver also supports native time series analysis. Quiver analyses can be templatized into read-only dashboards for broader consumption.
+
+
+
+
+* Foundry is Palantir's data operations platform. 
+
+* <strong>Carbon</strong> Carbon enables workflow builders to perform the "last mile" of customization to create a highly tailored and usable experience for <strong>operational end users</strong> to create highly curated workspaces that combine multiple resources or applications - analytical results such as dashboards, applications built in Workshop or Slate, and out-of-the-box capabilities such as Object Views and Object Explorer.
+
+* <a target="_blank" href="https://www.palantir.com/docs/foundry/map/overview/">Map</a> (a GIS app like ArcGIS and Google Maps) analyzes objects and other data in a <a target="_blank" href="https://www.palantir.com/docs/foundry/geospatial/overview/">geospatial</a> context. The Map application renders maps using the <a target="_blank" href="https://en.wikipedia.org/wiki/Web_Mercator_projection">Web Mercator Projection</a> (EPSG:3857), and expects latitude/longitude coordinates in WGS 84 degrees (EPSG:4326). See Geospatial data in Foundry for more information on transforming geospatial data in Foundry.
+
+* AIP is a suite of modules in Foundry with preferred LLM (LLAMA, GPT, Claude, etc.).  AIP connects generative AI to operations. 
+
    * AIP Logic: a no-code development environment for building, testing, and releasing functions powered by LLMs. Using Logic’s intuitive interface, application builders can engineer prompts, test, evaluate and monitor, set up automation, and more, while leveraging the Ontology.
    * AIP Logic Evaluations: a testing framework designed to enhance and track AIP Logic function quality over time by improving prompt engineering, deciding between using various models
    * AIP Assist: an LLM-powered support tool designed to help users navigate, understand
@@ -184,6 +291,7 @@ The OSDK uses a token that is scoped only to the ontological entities required f
 Build an end-to-end Foundry workflow from raw data to operational application as an introduction to core platform concepts. [60-90mins]
 
 
+## What is
 
 <a target="_blank" href="https://www.youtube.com/watch?v=K-JZH4oOJhI">What is Palantir?</a>
 Eric Timberling's description
@@ -213,17 +321,6 @@ https://www.youtube.com/watch?v=Qa5KlRdk5UE
 
 The Ontology is designed to represent the decisions in an enterprise, not simply the data.
 
-Every decision can be broken down into data, logic, and actions.
-The Ontology automatically integrates the relevant data, logic and action components into a modern, AI-accessible computing environment.
-
-   * Data: What are the relevant facts or truth about the world and our operations that form the context for this decision?
-   
-   * Logic: What organizational or business rules act as guardrails for this decision? What are the probabilities of certain outcomes under different assumptions? What have we done in previous, similar situations and what have the outcomes been? What are the inputs from our forecasting and optimization models?
-   
-   * Actions: What are the "kinetics" or effects of this decision - that is, how does the decision manifest in the world? How do we reduce or collapse the steps between taking a decision in AIP and affecting an outcome in a production setting?
-
-
-
 Branch: A branch on the Ontology is a separate version of that Ontology, derived from the main version, designed to enable experimentation and changes without impacting the main branch. This allows users to test and refine adjustments to the Ontology in an isolated environment before merging them back into the main branch.
 
 Proposal: A proposal is analogous to a Pull Request in a version control system, specifically tailored for Ontology branches. A proposal is automatically created alongside a branch and contains metadata such as reviews, name, and descriptions of the changes being merged into the main branch. Proposals serve as a mechanism for reviewing and approving changes made in a separate branch before they are integrated into the main Ontology.
@@ -242,11 +339,6 @@ version of Foundary is called <strong>"Foundry Gov"</strong>
 Vertically integrated
 https://www.youtube.com/watch?v=m2u6KL2Hz2I
 Workflow Builder
-
-Palantir Vision:
-   * <a target= "_blank" href="https://www.youtube.com/watch?v=EZLr6EGGTPE">"Alex Karp CEO 2009 Interview"</a> by
-   * <a target="_blank" href="https://www.youtube.com/watch?v=htUe8WkYre8">"The company that runs the world</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=KZWB5XGZy-Q">"I don't think in win/lose"
 
 https://github.com/palantir/aip-community-registry
 
