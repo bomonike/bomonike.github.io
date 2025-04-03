@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-22"
-lastchange: "v022 + excerpt, png :ai-glossary.md"
+date: "2025-04-03
+lastchange: "v023 + MFU, png :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -178,6 +178,7 @@ Makers of LLM Foundation Models:
 
 * ML = Machine Learning | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
 * MAI = Microsoft AI | Microsoft's AI platform that provides tools and services for building and deploying AI applications. <a target="_blank" href="https://www.youtube.com/watch?v=FKZktotIeRA">*</a>
+* MFU = Model FLOPS Utilization | a metric to measure the efficiency of a model in terms of the number of floating-point operations (FLOPs) it can perform.
 
 <a name="N"></a>
 ### N

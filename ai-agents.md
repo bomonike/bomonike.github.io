@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/ai-agents
-date: "2024-02-22"
-lastchange: "v014 + vertical agents :ai-agents.md"
+date: "2025-03-16"
+lastchange: "v015 + mcp :ai-agents.md"
 file: "ai-agents"
 title: "AI Agents"
 excerpt: "Text-to-Action carried out by AI Agents"
@@ -10,7 +10,100 @@ tags: [cloud, security, management, ai]
 comments: true
 ---
 <a target="_blank" href="https://bomonike.github.io/ai-agents"><img align="right" width="100" height="100" alt="ai-agents.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-agents.png?raw=true" />
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
 
+The "Javis" computer in Ironman movies is a form of AI Agent.
+
+https://microsoft.github.io/AI_Agents_Hackathon/
+April 8, 2025
+
+1. INVALID: https://discord.gg/kzRShWzttr Azure AI Community Discord
+
+Learn more about the Hackathon and read the official rules at 
+https://microsoft.github.io/AI_Agents_Hackathon/
+
+1. Sign in to start OFFICIAL PLAN: https://learn.microsoft.com/en-us/plans/0n5kb1t56pzndr 6 milestones in this plan
+
+   Learn how to navigate and use Azure AI Foundry and Azure AI Foundry SDK.
+   Create a custom Retrieval-Augmented Generation (RAG) solution.
+   Fine-tune and tailor models.
+
+   https://learn.microsoft.com/en-us/plans/0n5kb1t56pzndr?source=docs
+
+1. https://www.youtube.com/watch?v=x6g5JutmHXk Azure AI Agent Service using Azure AI Foundry SDK Demo
+
+   https://www.youtube.com/watch?v=4m0MYnQnDo8&list=PLLasX02E8BPCRLOzJHUO39cSR_Bn6cvw8
+   playlist
+
+   https://www.linkedin.com/in/shivam2003/
+   Shivam Goyal 
+
+https://aka.ms/ai-agents-beginners/ai-agent-service
+Azure AI Agent Service
+https://aka.ms/ai-agents-beginners/semantic-kernel
+Semantic Kernel
+https://aka.ms/ai-agents/autogen
+AutoGen
+
+
+https://gateway.on24.com/wcc/eh/4304051/category/142477/ai-agents/?wt.mc_id=1reg_25323_webpage_reactor
+Join TheSource EHub to explore top picks including trainings, livestreams, repositories, technical guides, blogs, downloads, certifications, and more, all updated monthly. The AI Agent section offers essential resources for creating AI Agents, while other sections provide insights into AI, development tools, and programming languages
+
+Register for the AI Agents Hackathon!
+8 April, 2025 | 10:00 AM - 12:30 AM (UTC-06:00)
+
+https://learn.microsoft.com/en-us/collections/ee4ofotexqd15y?wt.mc_id=aiagenthack_hackathonlearningresource_webpage_cxp
+LEARN: Learning Resources for the AI Agents Hackathon
+
+    https://github.com/microsoft/ai-agents-for-beginners?tab=readme-ov-file#ai-agents-for-beginners---a-course
+
+https://microsoft.github.io/AI_Agents_Hackathon/
+
+   https://developer.microsoft.com/en-us/reactor/events/25324/
+   Agents 101 / AI Agents Hackathon Kickoff!
+   8 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00)
+
+https://aka.ms/CreateAgenticAISolutions
+https://aka.ms/ai_agents_apps__data
+
+   https://developer.microsoft.com/en-us/reactor/events/25325/
+   Build your code-first app with Azure AI Agent Service (EMEA/US offering)
+   9 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00) Mountain Time (VS en Canada)
+
+   https://developer.microsoft.com/en-us/reactor/events/25312/
+   Build your code-first app with Azure AI Agent Service (APAC offering)
+   9 April, 2025 | 4:00 PM - 5:00 PM (UTC-06:00) Mountain Time (VS en Canada)
+   Dave Glover
+   https://aka.ms/CreateAgenticAISolutions/?wt.mc_id=1reg_25312_webpage_reactor
+   Create agentic AI solutions by using Azure AI Foundry
+
+   https://aka.ms/ai_agents_apps__data/?wt.mc_id=1reg_25312_webpage_reactor
+   Practical Foundation for AI Agents: A Developer's Guide on Azure AI Foundry, Apps, and Data
+
+
+   https://developer.microsoft.com/reactor/events/25313
+   Transforming Business Processes with Multi-Agent AI using Semantic Kernel
+   10 April, 2025 | 1:00 PM - 2:00 PM (UTC-06:00) Mountain Time (US & Canada)
+
+
+   Extending AI Agents with Azure Functions
+   24 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00)
+
+https://developer.microsoft.com/en-us/reactor/events/25364/
+Securing AI agents on Azure by Joylynn Kirui & Pamela Fox
+29 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00) Mountain Time (US & Canada)
+
+
+https://aka.ms/model-mondays - Explore All Resources
+https://aka.ms/model-mondays/chat - Continue The Conversation
+https://aka.ms/model-mondays/collection - Explore The Model Cards
+https://aka.ms/model-mondays/newsletter - Get The Weekly Recaps
+
+
+Marlene Mhangami
+Korey Stegared-Pace
 
 ## Levels of automation:
 
@@ -20,12 +113,60 @@ comments: true
 
 * <strong>True "AI Agents"</strong>  are NOT bound to pre-defined tasks in a workflow. They act <strong>autonomously</strong>, as a team of agents,able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions. Modern AI Agents <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas#related-3">reason</a> through steps.
 
-* <strong>AI Assistants</strong>
-   <a target="_blank" href="https://www.youtube.com/watch?v=ASABxNenD_U">VIDEO: The 10 Trillion Parameter AI Model With 300 IQ</a>
+   True agents don't just respond to commands — they have their own objectives and make decisions and independently initiate action in service of those objectives. They can operate  and take initiative when appropriate.
+
+   True Agents have agency, which involves:
+
+   Autonomy - The ability to act independently without constant external direction
+
+   Intentionality - Having goals and the capacity to pursue them
+
+   Self-awareness - Understanding one's own capabilities and limitations
+
+   Adaptability - Adjusting strategies based on changing circumstances
+
+   Responsibility - Bearing some causal or moral accountability for actions
+
+* <strong>AI Assistants</strong> - <a target="_blank" href="https://www.youtube.com/watch?v=ASABxNenD_U">VIDEO: The 10 Trillion Parameter AI Model With 300 IQ</a>
+
 
 * <strong>Vertical AI agents</strong> are tailored to address unique challenges and streamline processes within designated sectors such as healthcare, finance, or customer support. Vertical AI agents could be <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas">10X bigger than SAAS</a> repleaes entire teams and organizationa -- a fundamentally new paradigm. 
 https://www.rippling.com/ works on verticals.
 Increase savings, automate busy work, and make better decisions by managing payroll, HR, IT & spend in one place.
+
+
+## MCP (Model Context Protocol)
+
+In the 1980's game (and movie) "Tron", the "MCP" is the Master Control Program ("god mode").
+
+But in real life, in Nov. 2024 <a target="_blank" href="https://www.anthropic.com/mcp">Anthropic</a> introduced their "MCP" (Model Context Protocol) API spec that standardizes how external tools and services vendors communicate with LLMs. MCP consists of a set of APIs and library.
+
+Catalogs of MCP servers are at <a target="_blank" href="https://www.smithery.com/">smithery.com</a> and <a target="_blank" href="https://mcpappstore.com">mcpappstore.com</a> to communicate with:
+   * GitHub
+   * n8n agents (low-code)
+   * <a target="_blank" href="https://www.linkedin.com/company/smithery-com/">LinkedIn</a>
+   * <a target="_blank" href="https://www.linkedin.com/company/mcpappstore/">Slack</a>
+   * Telegram
+
+IDEs Cursor and Windsurf provide a GUI to send npx commands to MCP servers which interface with various LLMs (like lego pieces).
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742127850/mcp-cursor-gui_x0phdm.png"><img alt="mcp-cursor-gui.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742127850/mcp-cursor-gui_x0phdm.png" /></a>
+
+References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=fJgFZRGO9AQ">MCP = Next Big Opportunity? EASIST way to build your own MCP business</a> by AI Jason
+   * https://www.youtube.com/watch?v=7j_NE6Pjv-E by Greg Isenberg (Startup Empire at <a target="_blank" href="https://communityempire.co">communityempire.co</a>)
+   * https://www.youtube.com/watch?v=KDxbPJH7XzY by Anthony Sistilli
+   * https://www.youtube.com/watch?v=eur8dUO9mvE by IBM Technology "How to build a MCP"
+   * https://www.youtube.com/watch?v=nMKYW0DiRp4 by Adam Lucek
+   * https://www.youtube.com/watch?v=nNLshWCoe0o by Dan Vega
+   * https://www.youtube.com/watch?v=TQsP_PlCY1I by David Ondrej
+   * https://www.youtube.com/watch?v=japoGcdbZGw by Rob Shocks "The Future of AI"
+   * https://www.youtube.com/watch?v=oAoigBWLZgE by AI Jason
+   * https://www.youtube.com/watch?v=5ZWeCKY5WZE by Underfitted
+
+## Anything LLM
+
+https://www.youtube.com/watch?v=Z6kK4DXqCOI
 
 
 
@@ -418,6 +559,8 @@ Transportation: Automation is changing the transportation industry in big ways. 
 
 ## References
 
+https://lakefs.io/blog/what-is-rag-pipeline/
+
 https://conted.ox.ac.uk/courses/artificial-intelligence-generative-ai-cloud-and-mlops-online
 £3595 Artificial Intelligence: Generative AI, Cloud and MLOps (online) course
 at the University of Oxford January - April 2025 by <a target="_blank" href="https://www.linkedin.com/in/ajitjaokar/">Ajit Jaokar</a> 
@@ -430,6 +573,8 @@ mementic replace all QA.
 muuktest
 Raleigh, NC
 https://www.linkedin.com/in/ivanbarajasvargas/
+
+
 Barajas Vargas
 https://www.youtube.com/watch?v=8vrA-XFfyvQ
 https://www.youtube.com/watch?v=j6N15PWL-UA
@@ -442,3 +587,70 @@ https://hbr.org/topic/subject/ai-and-machine-learning
 https://www.youtube.com/watch?v=ju9PmFl5L0c
 I tried 50+ Agent libraries, the only one I really needed is this
 BiasVsVariance
+
+
+Read More - https://aka.ms/entity1
+MS LEARN: Custom named entity recognition
+
+https://colivara.com
+
+## 
+https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/
+LEARN: Build a RAG-based agent with your own data using Azure AI Foundry
+
+Introduction
+2 min
+Understand how to ground your language model
+6 min
+Make your data searchable
+7 min
+Build an agent with prompt flow
+7 min
+Exercise - Create a custom agent that uses your own data
+15 min
+Knowledge check
+3 min
+Summary
+1 min
+
+Adding grounding data to an Azure AI project
+You can use Azure AI Foundry to build a custom age that uses your own data to ground prompts. Azure AI Foundry supports a range of data connections that you can use to add data to a project, including:
+Azure Blob Storage
+Azure Data Lake Storage Gen2
+Microsoft OneLake
+You can also upload files or folders to the storage used by your AI Foundry project.
+in Playgrounds
+
+https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/understand-embeddings
+embeddings in the Azure OpenAI Service
+
+https://learn.microsoft.com/en-us/azure/search/vector-search-overview
+vector search
+
+https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview
+hybrid search
+
+<a name="PromptFlow"></a>
+
+### Prompt Flow
+
+   * https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/4-build-copilot
+   * LAB Exercise: https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/04-Use-own-data.html Create a generative AI app that uses your own data
+
+
+Prompt Flow is a development framework for defining flows that orchestrate interactions with an LLM.
+
+After uploading data to Azure AI Foundry and creating an index on 
+your data using the integration with Azure AI Search, you can implement the RAG pattern with Prompt Flow to build a generative AI application.
+
+1. A flow begins with one or more inputs, usually a question or prompt entered by a user, and in the case of iterative conversations the chat history to this point.
+1. The flow is then defined as a series of connected <strong>tools</strong>, each of which performs a specific operation on the inputs and other environmental variables. There are multiple types of tool that you can include in a prompt flow to perform tasks such as:
+   * Running custom Python code
+   * Looking up data values in an index using an Index Lookup tool to retrieve data from an index so that subsequent tools in the flow can use the results to augment the prompt used to generate output from an LLM. https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/tools-reference/index-lookup-tool
+   * Creating prompt variants - enabling you to define multiple versions of a prompt for a large language model (LLM), varying system messages or prompt wording, and compare and evaluate the results from each variant.
+   * Submitting a prompt to an LLM to generate results.
+
+1. Finally, the flow has one or more outputs, typically to return the generated results from an LLM.
+
+<hr />
+<i>{{ page.lastchange }}</i>
