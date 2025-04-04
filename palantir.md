@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-04-03"
+date: "2025-04-04"
 lastchange: "v008 + glassdoor :palantir.md"
 url: "https://bomonike.github.io/palantir"
 file: "palantir"
@@ -22,29 +22,48 @@ created: "2018-04-03"
 
 ## Why?
 
-At its core, Palantir provides an <strong>object-based database</strong> they call an <a href='#Ontology'>Ontology</a>. What's unique about Palantir's database is that <strong>branches</strong> of data can be versioned (forked) like GitHub source code. That enables "what-if" scenarios to be explored as different models to inform decisions. When a satisfactory outcome is achieved, those models can be "materialized" into the production data.
+A "Palantir" is the mythical artifact from the "Lord of the Rings" which gives one the power of seeing and understanding the world.
 
-What makes Palatir attractive is that tools to create apps in workflows, visualization, and dashboards were not hobled together through acquisitions over time. Palantir being built initially for military use required its data governance features to be built-in (to include object lineage time series, auditability, and traceability). So Palantirians have a better chance of getting apps working together in production-scale -- in SaaS and on-premise.
+Technically, at its core, Palantir provides an <strong>object-based database</strong> they call an <a href="#Ontology">Ontology</a>. What's unique about Palantir's database is that <strong>branches</strong> of data can be <strong>versioned (forked)</strong> like GitHub source code. That enables "what-if" changes to be analyzed, which inform decisions. When a satisfactory outcome is achieved, changes can be "materialized" into production data. In addition to master reference data and transactional data, a Palantir Ontology can store <strong>decisions</strong> the organization makes over time.
+
+Palantir provides tools to create:
+
+   * Browsing
+   * workflows
+   * visualizations and dashboards
+   * interactive apps (running on web, mobile, and mixed reality)
+
+But the tools were not hobled together through acquisitions over time. Palantir being built initially for military use required its data governance features to be built-in (to include object lineage time series, auditability, and traceability). So Palantirians have a better chance of getting apps working together in production-scale -- in SaaS and on-premise.
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332218/palantir-processes_yjzlsd.png"><img alt="palantir-processes.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332218/palantir-processes_yjzlsd.png" /></a>
 
-<a name="Ontology'></a>
+PROTIP: What's not mentioned in Palantir's current docs are "AI agents" that have the "agency" to take autonomous action on their own, without human intervention, based on alerts triggered by events.
+
+
+<a name="Ontology"></a>
 
 ## The Ontology
 
 Palantir's uses the word "Ontology" instead of "database" to emphasize that in addition to holding data like SQL databases, it maintains what's necessary to make a <strong>digital twin</strong> modeling the dynamic interactions within organizations. 
 
-Built for each <strong>project</strong> are custom and pre-built 
-"semantic" elements:
-   * <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/object-types-overview/">Object types</a> which define real-worldentities or events in an organization,
-   * <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/link-types-overview/">Link types</a> that define the relationship between two object types,
-   * properties that define the object type’s characteristics.), plus<br /> 
-"kinetic" elements:
-   * <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/overview/">Action types</a> define how an object type can be modified.
-   * <a target="_blank" href="https://www.palantir.com/docs/foundry/functions/overview/">Functions</a>, 
-   * dynamic security).
+Built for each <strong>project</strong> are custom and pre-built "semantic" elements:
+* <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/object-types-overview/">Object types</a> which define real-worldentities or events in an organization,
+* <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/link-types-overview/">Link types</a> that define the relationship between two object types,
+* Properties define an object type’s characteristics
 
-An object is an instance of an object type
+"kinetic" elements:
+* An <a target="_blank" href="https://www.palantir.com/docs/foundry/actions/overview/">Action</a> is a single transaction that changes the properties of one or more objects, based on user-defined logic.
+* An <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/overview/">Action type</a> is a <strong>set</strong> of changes (edits) to objects, properties, and links that can be taken at once. 
+* <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/submission-criteria/">Submission criteria</a> define the conditions under which actions can be submitted.
+* <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/rules/">Rules</a> define the conditions under which actions can be taken.
+* <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/parameter-overview/">Parameters</a> define, in a standardized form, the inputs that can be passed to an action
+
+* <a target="_blank" href="https://www.palantir.com/docs/foundry/actions/overview/">Function-backed Actions</a> are used to implement custom business logic where a <a target="_blank" href="https://www.palantir.com/docs/foundry/functions/overview/">Function</a> defines how complex objects should be modified.
+* dynamic security.
+
+For example, the "Assign Employee" Action type would define how users can change the role property value for a given Employee object. This Action type could require a parameter definition to ensure input of the new role in a standardized form and can include rules for how to automatically create a link between the Employee object and that of a new Manager. Also, include a notification side effect that will notify the old and new manager of the change. Plus, Validate that authorized employees such as those working in human resources can perform the Action.
+
+An object is an instance of an object type.
 
 types of <a target="_blank" href="https://www.palantir.com/docs/foundry/ontology/overview#object-and-link-types">data and links</a>:
 
@@ -158,7 +177,9 @@ Palantir was founded <strong>May 3, 2003</strong> after 9/11 to serve CIA and ot
 
 In early 2025 Palantir (stock <a target="_blank" href="https://www.google.com/finance/quote/PLTR:NASDAQ?sa=X&ved=2ahUKEwiGzKXwlbuMAxWtIDQIHYb6GXgQ3ecFegQIRBAf">PLTR</a>) was among the fastest-growing among all stocks, peaking at $125 before the Trump tariff meltdown brougt it back to $80/share at P/E of 1457.
  
-Co-founders are Peter Thiel (of PayPal), Joe Lonsdale, Nathan Gettings, Stephen Cohen, and Alex Karp.
+Co-founders are billionaire Peter Thiel, Joe Lonsdale, Nathan Gettings, Stephen Cohen, and Alex Karp.
+
+They came from PayPal which had to develop complex fraud detection software to stem large losses with "Pattern of Life Analysis" that later was used to hunt terrorists: <a target="_blank" href="https://www.youtube.com/watch?v=xUnI0E33t6s">VIDEO</a>.
 
 CEO Alex Karp wrote NYTimes Bestseller <a target="_blank" href="https://techrepublicbook.com">"The Technological Republic"</a> "Hard Power, Soft Belief, and the Future of the West". <a target="_blank" href="https://www.youtube.com/watch?v=j0Oz4P-NX84">VIDEO</a>. He was named by The Economist’s “best CEO of 2024”.
 But he has a (middling) <a target="_blank" href="https://www.glassdoor.com/Reviews/Palantir-Technologies-Reviews-E236375.htm">69% approval rating on Glassdoor</a>.
@@ -200,6 +221,8 @@ Jobs listed in <a target= "_blank" href="https://www.palantir.com/jobs/">Palanti
 
 
 ## Stack
+
+Palantir sells "Gotham" to governments and "Foundry" to commercial clients.
 
 1. Click "INSTALL" at <a target="_blank" href="https://build.palantir.com/platform/2fded05d-0d74-41a7-93f6-fa665114ab7b">"Ontology SDK (OSDK) With AIP Logic - Build a To Do application Powered by AIP Logic</a> 
 1. Enter your <strong>enrollment URL</strong> such as "almond-latte.palantirfoundry.com".
