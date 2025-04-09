@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-29"
-lastchange: "v0200 + palantir :README.md"
+date: "2025-04-09"
+lastchange: "v0201 + ag-tech :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -22,6 +22,7 @@ Topics alphabetically:
 ### A
 
 1. <a target="_blank" href="https://bomonike.github.io/acronyms">acronyms</a>
+1. <a target="_blank" href="https://bomonike.github.io/ag-tech">ag-tech</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-agents">ai-agents</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-benchmarks">ai-benchmarks</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
