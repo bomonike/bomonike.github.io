@@ -20,7 +20,7 @@ Agricultural Technologies
 
 * Tractors
 * <a target="_blank" href="https://bomonike.github.io/weather-info/">Weather</a>
-* Mapping
+* <a href="#Geospatial">Geospatial Mapping</a>
 * Chemistry of soils
 
 <hr />
@@ -36,16 +36,28 @@ Agricultural Technologies
 * Kubota
 * etc.
 
-## Mapping
+<hr />
 
-ESRI ArcGIS is the choice of many governments and enterprises.
+<a name="Geospatial"></a>
+
+## Geospatial Mapping
+
+ESRI ArcGIS is used by many governments and enterprises.
 * ArcGIS Online
 * ArcGIS Pro
+ ESRI’s product platform (Desktop, Pro, ArcPy, ArcGIS Server, GeoEvent Server, AGO, Portal, ESRI Javascript API, WebApp Builder, etc.)
 
+production systems like ProCount and Aries
+
+ESRI has an instructor-led 2-day "Introduction to GIS Using ArcGIS" for $2,020.
 
 ESRI has a free certification course
 https://www.esri.com/training/catalog/601aef8230ee1a0b724f64b3/free-certification-course-in-6-days/
+Created by lauren1@illinois.edu_UnivofIllinois_1190444167 on February 3, 2021
 
+
+
+HERE Tour Planning connects with existing Transport Management Systems (TMS) and in-house data.
 
 
 ## Weather and Seasons
