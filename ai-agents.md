@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/ai-agents
-date: "2025-03-16"
-lastchange: "v015 + mcp :ai-agents.md"
+date: "2025-04-10"
+lastchange: "v016 + foundry :ai-agents.md"
 file: "ai-agents"
 title: "AI Agents"
 excerpt: "Text-to-Action carried out by AI Agents"
@@ -14,14 +14,135 @@ comments: true
 {% include l18n.html %}
 {% include _toc.html %}
 
+## Why?
+
+The intent of this article is that, after following this article, you will be able to claim on your resume (LinkedIn profile):
+
+"Designed and implemented a server which autonomously perform tasks by calling MCP-based services."
+See https://github.com/bomonike/agentic
+
+
+## GenAI vs Agents vs AI Agents
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1744220651/ai-agents-whiteboard_wldbds.jpg"><img alt="ai-agents-whiteboard.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1744220651/ai-agents-whiteboard_wldbds.jpg"></a>
+
+Generative AI (GenAI): When ChatGPT burst to popularity November 2023, OpenAI's LLMs generated text based on prompts typed or spoken by end-users. Back then, the LLM model referenced static data (books, github.com, etc.), but not real-time proprietary (personal) data in the real world. More importantly, they passively waited for prompts by humans to begin action.
+
+Early AI Agents made use of <strong>context window</strong> to provide personalized data using "RAG (Retrieval Augmented Generation)".
+Agents access <strong>tools</strong> to perform tasks.
+"Reasoning" and "chain-of-thought" capabilities enable agents to plan steps to achieve specific <strong>goals</strong> defined by end-users.
+
+In 2025, "Agentic AI" behave "like an intern with initiative", where Agentic means proactive -- They try to solve problems without constant human input.
+Agentic AI plan and delegate (orchestrate) steps to achieve objectives by recalling context, constraints, and previous actions (<strong>from memory</strong>) to avoid redundant or dumb behavior by breaking down obstacles into steps, then adapting to select and strategies collaboratively, and execute across tools or environments.
+
+Frameworks like AutoGPT, LangGraph, CrewAI, and MetaGPT.
+
+* Devin by Cognition: full-stack dev agent.
+* ChatGPT + Code Interpreter: emerging agent behavior via tool use.
+* LangChain + LangGraph: orchestrating tool-aware LLMs with memory.
+* Autogen (Microsoft): multi-agent collaboration framework.
+* CrewAI: roles and task delegation at scale.
+
+Fine-tuned models (like Devin by Cognition or ReAct-optimized agents) close the gap between “can predict text” and “can complete real-world tasks.”
+
+
+## Example Use Cases
+
+https://www.youtube.com/watch?v=JOYSDqJdiro
+Manus (from China) was the first to show, in early 2025, several agents "stitch together"
+It scored 90% of the GAIA "state of the art" benchmark.
+
+PROTIP: AI Agents takes advantage of new "reasoning" and "chain of thought" capabilities in LLMs such as provided by Anthropic Claude.
+
+* "Deep" Research
+
+Gemini Code Assist agents:
+* Build apps
+* Translate code
+* Write tests
+
+## Background
+
 The "Javis" computer in Ironman movies is a form of AI Agent.
 
-https://microsoft.github.io/AI_Agents_Hackathon/
-April 8, 2025
+At Google's Cloud Next 25 conference on April 9, <a target="_blank" href="https://www.youtube.com/watch?v=2OpHbyN4vEM">VIDEO</a>: Google announced <a target="_blank" href="https://google.github.io/adk-docs/#learn-more">Agent Development Kit (ADK)</a>
+that communites using Google's <a target="_blank" href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/">Agent2Agent (A2A) protocol</a>,
+an open protocol that allows AI agents to communicate with each other,
+exchange information in a secure way, and
+coordinate actions on top of enterprise applications.
+It was developed with support and contributions from over 50 other companies, including Atlassian, Box, MongoDB, Salesforce, ServiceNow.
+It competes with the MCP (Model Context Protocol) from Anthropic.
+
+On the Google <strong>Agentspace platform</strong> from within Chrome’s search box, developers build agents combining Gemini models with enterprise data for unified enterprise search, analysis, and synthesis.
+
+Other new capabilities include a
+no-code Agent Designer for building custom agents, and
+access to two new agents built by Google: Deep Research and Idea Generation.
+
+Lyria in Google Vertex AI generates 30-second music clips from text prompt.
+
+<a target="_blank" href="https://blog.google/products/workspace/cloud-next-2025-workspace-gemini/">
+Google Workspace Flows</a> enables users to create agentic workflows to streamline processes and automate repetitive tasks across Workspace.
+
+@CodeAssist from a Kanban board
+
+In Google Docs, users can create audio versions of their documents,
+including generating podcast-style overviews.
+
+Other new Workspace AI capabilities include an AI writing tool in Google Docs,
+
+New editing and camera control features in Veo 2 (preview)
+Veo 2 image generation in Google Vids.
+
+Instant Custom Voice in Chirp 3 to enable users to create custom voices from 10 seconds of audio
+
+Improved image generation and inpainting capabilities in Imagen 3 for fixing missing portions of an image or removing objects
+
+new Gemini capabilities in Google Chat, and
+
+AI-powered data analysis and surfacing of key insights in Google Sheets.
+
+
+
+## Microsoft Azure
+
+https://github.com/microsoft/ai-agents-for-beginners
+
+ using the VS Code container image in Azure AI Foundry portal, see 
+ https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/vscode
+ Get started with Azure AI Foundry projects in VS Code.
+
+
+1. Register https://aiskillsfest.event.microsoft.com
+1. On Apr 8 attend Microsoft AI Skills Fest
+   https://www.youtube.com/watch?v=tCmgSvloyoI
+   https://arch-center.azureedge.net/Credentials/Microsoft-AI-Skills-Fest-Map.pdf
+   https://microsoft.github.io/AI_Agents_Hackathon/
+1. Confirm attendance for the Guiness World Record.
+1. Work on hackathon until 30, 2025
+
+http://aka.ms/sk/recordings
+
+
+https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/4-azure-ai-foundry
+https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/01-Explore-ai-studio.html
+
+1. Get an Azure subscription.
+1. Sign in (using Passkey, if possible)
+1. In a Edge web browser, go to <a target="_blank" href="https://ai.azure.com/">https://ai.azure.com<img align="right" width="100" alt="aif-menu-364x1146.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1744352871/aif-menu-364x1146_icdw0b.png" /></a>, the Azure AI Foundry portal. The portal's menu is shown at left.>
+1. Create an Azure AI Hub to share resources among multiple projects that use solution development features and capabilities of AI Foundry.
+
+   A project is an organizational container with tools for AI customization and orchestration. In a project, you can organize your work, save state across different tools like prompt flow, and collaborate with others.
+
+1. Create a multi-service Azure AI services resource to provide access to Azure OpenAI and other Azure AI services.
+1. Create a Key vault in which sensitive data such as connections and credentials can be stored securely.
+1. Create a Storage account for data used in the hub and its projects.
+1. Optionally, createan Azure AI Search resource that can be used to index data and support grounding for generative AI prompts.
+1. Create an AI Face resource
 
 1. INVALID: https://discord.gg/kzRShWzttr Azure AI Community Discord
 
-Learn more about the Hackathon and read the official rules at 
+Learn more about the Hackathon and read the official rules at
 https://microsoft.github.io/AI_Agents_Hackathon/
 
 1. Sign in to start OFFICIAL PLAN: https://learn.microsoft.com/en-us/plans/0n5kb1t56pzndr 6 milestones in this plan
@@ -38,7 +159,7 @@ https://microsoft.github.io/AI_Agents_Hackathon/
    playlist
 
    https://www.linkedin.com/in/shivam2003/
-   Shivam Goyal 
+   Shivam Goyal
 
 https://aka.ms/ai-agents-beginners/ai-agent-service
 Azure AI Agent Service
@@ -130,9 +251,14 @@ Korey Stegared-Pace
 * <strong>AI Assistants</strong> - <a target="_blank" href="https://www.youtube.com/watch?v=ASABxNenD_U">VIDEO: The 10 Trillion Parameter AI Model With 300 IQ</a>
 
 
-* <strong>Vertical AI agents</strong> are tailored to address unique challenges and streamline processes within designated sectors such as healthcare, finance, or customer support. Vertical AI agents could be <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas">10X bigger than SAAS</a> repleaes entire teams and organizationa -- a fundamentally new paradigm. 
+* <strong>Vertical AI agents</strong> are tailored to address unique challenges and streamline processes within designated sectors such as healthcare, finance, or customer support. Vertical AI agents could be <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas">10X bigger than SAAS</a> repleaes entire teams and organizationa -- a fundamentally new paradigm.
 https://www.rippling.com/ works on verticals.
 Increase savings, automate busy work, and make better decisions by managing payroll, HR, IT & spend in one place.
+
+
+References:
+   * https://www.youtube.com/watch?v=FwOTs4UxQS4 by Jeff Su "AI Agents, Clearly Explained"
+
 
 
 ## MCP (Model Context Protocol)
@@ -163,6 +289,9 @@ References:
    * https://www.youtube.com/watch?v=japoGcdbZGw by Rob Shocks "The Future of AI"
    * https://www.youtube.com/watch?v=oAoigBWLZgE by AI Jason
    * https://www.youtube.com/watch?v=5ZWeCKY5WZE by Underfitted
+
+Solo.io has announced the launch of its MCP Gateway, a Model Context Protocol gateway for the cloud native API gateway
+<a target="_blank" href="https://github.com/kgateway-dev/kgateway">kgateway</a> (previously called Gloo).
 
 ## Anything LLM
 
@@ -549,7 +678,7 @@ https://www.youtube.com/watch?v=xfFyAumTjT0
 
 ## Automation
 
-Healthcare: In healthcare, automation is increasingly important. From robots helping with surgery to computer programs that help diagnose diseases, technology is helping healthcare workers provide faster, more accurate, and more personalized care. This gives doctors and nurses more time to spend with patients, providing emotional support and addressing complex medical needs. Think of how AI can analyze medical images to detect early signs of cancer, potentially saving lives through early intervention.   
+Healthcare: In healthcare, automation is increasingly important. From robots helping with surgery to computer programs that help diagnose diseases, technology is helping healthcare workers provide faster, more accurate, and more personalized care. This gives doctors and nurses more time to spend with patients, providing emotional support and addressing complex medical needs. Think of how AI can analyze medical images to detect early signs of cancer, potentially saving lives through early intervention.
 A robot assisting a doctor during surgery
 
 Finance: The finance industry has also embraced automation to make things run smoother and more efficiently. Algorithmic trading systems execute trades on the stock market incredibly fast, taking advantage of market fluctuations that a human trader might miss. AI-powered tools help protect customers from financial crimes by analyzing patterns and flagging suspicious activity. Chatbots and virtual assistants handle simple customer inquiries, like checking account balances or resetting passwords, which frees up human agents to deal with more complicated issues that require empathy and problem-solving skills.
@@ -563,8 +692,8 @@ https://lakefs.io/blog/what-is-rag-pipeline/
 
 https://conted.ox.ac.uk/courses/artificial-intelligence-generative-ai-cloud-and-mlops-online
 £3595 Artificial Intelligence: Generative AI, Cloud and MLOps (online) course
-at the University of Oxford January - April 2025 by <a target="_blank" href="https://www.linkedin.com/in/ajitjaokar/">Ajit Jaokar</a> 
-Based on 
+at the University of Oxford January - April 2025 by <a target="_blank" href="https://www.linkedin.com/in/ajitjaokar/">Ajit Jaokar</a>
+Based on
 <a target="_blank" href="https://www.packtpub.com/en-us/product/machine-learning-engineering-with-python-9781837631964">
 Machine Learning Engineering with Python: Manage the lifecycle of machine learning models using MLOps with practical examples, Second Edition</a>
 by Andrew P. McMahon
@@ -594,7 +723,7 @@ MS LEARN: Custom named entity recognition
 
 https://colivara.com
 
-## 
+##
 https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/
 LEARN: Build a RAG-based agent with your own data using Azure AI Foundry
 
@@ -640,7 +769,7 @@ hybrid search
 
 Prompt Flow is a development framework for defining flows that orchestrate interactions with an LLM.
 
-After uploading data to Azure AI Foundry and creating an index on 
+After uploading data to Azure AI Foundry and creating an index on
 your data using the integration with Azure AI Search, you can implement the RAG pattern with Prompt Flow to build a generative AI application.
 
 1. A flow begins with one or more inputs, usually a question or prompt entered by a user, and in the case of iterative conversations the chat history to this point.
@@ -651,6 +780,26 @@ your data using the integration with Azure AI Search, you can implement the RAG 
    * Submitting a prompt to an LLM to generate results.
 
 1. Finally, the flow has one or more outputs, typically to return the generated results from an LLM.
+
+
+## Coursera course
+
+<a target="_blank" href="https://www.coursera.org/specializations/ai-agents">"AI Agent Developer on Coursera.com</a> by Vanderbilt University's <a target="_blank" href="https://www.linkedin.com/in/jules-white-5717655/">Jules White</a> in Nashville, Tennessee.
+
+What is the difference with agentic AI?
+
+Agentic AI is characterized by its ability to perform tasks without any human intervention.
+
+* Adaptability: Agentic AI can adapt to unexpected changes, such as substituting ingredients, demonstrating its ability to respond dynamically to feedback.
+* Agentic AI can problem-solve and react to various situations, functioning similarly to generative AI but with a focus on real-world interactions.
+* Human-AI Collaboration: The lecture illustrates a scenario where a human collaborates with an AI to cook a dish, with the AI providing step-by-step instructions while the human performs the actions.
+* Importance of Interaction: The interaction between the human and AI highlights the need for effective communication and adaptability in AI systems, contrasting with traditional rigid computer systems.
+
+Agentic uses a flipped interaction pattern. The AI system asks users questions to gather information and perform tasks.
+* "Ask me questions one at a time."
+* The AI also executes actions based on the gathered data, creating a more interactive experience.
+* The AI can translate user goals into actions that can be understood by databases or other systems, similar to a protocol droid in a sci-fi context.
+
 
 <hr />
 <i>{{ page.lastchange }}</i>
