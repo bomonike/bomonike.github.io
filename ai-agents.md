@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/ai-agents
-date: "2025-04-10"
-lastchange: "v016 + foundry :ai-agents.md"
+date: "2025-04-12"
+lastchange: "v018 + A2A :ai-agents.md"
 file: "ai-agents"
 title: "AI Agents"
 excerpt: "Text-to-Action carried out by AI Agents"
@@ -14,217 +14,35 @@ comments: true
 {% include l18n.html %}
 {% include _toc.html %}
 
-## Why?
+## Why This?
 
-The intent of this article is that, after following this article, you will be able to claim on your resume (LinkedIn profile):
+This was written so that you will be able to claim on your resume (LinkedIn profile):
 
-"Designed and implemented a server which autonomously perform tasks by calling MCP-based services."
-See https://github.com/bomonike/agentic
+"Created Bash, Python, and Terraform, automation to, in an hour, configure and stand up a service (running locally, on Azure, AWS, Google, and other clouds) which interacts with users' voice (SST & TTS) to autonomously perform reasoning tasks by using MCP & A2A to supervise a mix of AI agents. The AI supervisor automatically responds to trends and telemetry. (Ask me how)"
+
+Among <a target="_blank" href="https://www.youtube.com/@aiDotEngineer">@aiDotEngineer World's Fair vidoes</a>,
+<a target="_blank" href="https://www.youtube.com/watch?v=zM9RYqCcioM" title="by https://AI.Engineer">VIDEO</a> by 
+OpenPipe worked with Method: Instead of hiring people, AI Agents in fintech 
 
 
 ## GenAI vs Agents vs AI Agents
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1744220651/ai-agents-whiteboard_wldbds.jpg"><img alt="ai-agents-whiteboard.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1744220651/ai-agents-whiteboard_wldbds.jpg"></a>
 
-Generative AI (GenAI): When ChatGPT burst to popularity November 2023, OpenAI's LLMs generated text based on prompts typed or spoken by end-users. Back then, the LLM model referenced static data (books, github.com, etc.), but not real-time proprietary (personal) data in the real world. More importantly, they passively waited for prompts by humans to begin action.
+A. Generative AI (GenAI): When ChatGPT burst to popularity November 2023, OpenAI's LLMs generated text based on prompts typed or spoken by end-users. Back then, the LLM model referenced static data (books, github.com, etc.), but not real-time proprietary (personal) data in the real world. More importantly, they passively waited for prompts by humans to begin action.
 
-Early AI Agents made use of <strong>context window</strong> to provide personalized data using "RAG (Retrieval Augmented Generation)".
+B. Early AI Agents made use of <strong>context window</strong> to provide personalized data in <strong>vector database</strong> using "RAG (Retrieval Augmented Generation)".
 Agents access <strong>tools</strong> to perform tasks.
 "Reasoning" and "chain-of-thought" capabilities enable agents to plan steps to achieve specific <strong>goals</strong> defined by end-users.
 
-In 2025, "Agentic AI" behave "like an intern with initiative", where Agentic means proactive -- They try to solve problems without constant human input.
-Agentic AI plan and delegate (orchestrate) steps to achieve objectives by recalling context, constraints, and previous actions (<strong>from memory</strong>) to avoid redundant or dumb behavior by breaking down obstacles into steps, then adapting to select and strategies collaboratively, and execute across tools or environments.
+C. In 2025, "Agentic AI" came on the scene when LLMs (Anthropic Claude 3) were able to "reason" in "Chain of Thought". Agentic AI can reflect, plan, and delegate (orchestrate) steps to achieve objectives by recalling context, constraints, and previous actions (<strong>from memory</strong>) to avoid redundant or dumb behavior by breaking down obstacles into steps, then adapting to select and strategies collaboratively, and execute across tools or environments.
 
-Frameworks like AutoGPT, LangGraph, CrewAI, and MetaGPT.
+Think of them as virtual assistants capable of handling the chores people generally rather avoid.
 
-* Devin by Cognition: full-stack dev agent.
-* ChatGPT + Code Interpreter: emerging agent behavior via tool use.
-* LangChain + LangGraph: orchestrating tool-aware LLMs with memory.
-* Autogen (Microsoft): multi-agent collaboration framework.
-* CrewAI: roles and task delegation at scale.
+Unlike humans, AI agents don't need to sleep, operate at lightning speed, and collaborate with other agents.
 
-Fine-tuned models (like Devin by Cognition or ReAct-optimized agents) close the gap between “can predict text” and “can complete real-world tasks.”
+Agentic means <strong>proactive</strong> -- they try to solve problems without constant human input.
 
-
-## Example Use Cases
-
-https://www.youtube.com/watch?v=JOYSDqJdiro
-Manus (from China) was the first to show, in early 2025, several agents "stitch together"
-It scored 90% of the GAIA "state of the art" benchmark.
-
-PROTIP: AI Agents takes advantage of new "reasoning" and "chain of thought" capabilities in LLMs such as provided by Anthropic Claude.
-
-* "Deep" Research
-
-Gemini Code Assist agents:
-* Build apps
-* Translate code
-* Write tests
-
-## Background
-
-The "Javis" computer in Ironman movies is a form of AI Agent.
-
-At Google's Cloud Next 25 conference on April 9, <a target="_blank" href="https://www.youtube.com/watch?v=2OpHbyN4vEM">VIDEO</a>: Google announced <a target="_blank" href="https://google.github.io/adk-docs/#learn-more">Agent Development Kit (ADK)</a>
-that communites using Google's <a target="_blank" href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/">Agent2Agent (A2A) protocol</a>,
-an open protocol that allows AI agents to communicate with each other,
-exchange information in a secure way, and
-coordinate actions on top of enterprise applications.
-It was developed with support and contributions from over 50 other companies, including Atlassian, Box, MongoDB, Salesforce, ServiceNow.
-It competes with the MCP (Model Context Protocol) from Anthropic.
-
-On the Google <strong>Agentspace platform</strong> from within Chrome’s search box, developers build agents combining Gemini models with enterprise data for unified enterprise search, analysis, and synthesis.
-
-Other new capabilities include a
-no-code Agent Designer for building custom agents, and
-access to two new agents built by Google: Deep Research and Idea Generation.
-
-Lyria in Google Vertex AI generates 30-second music clips from text prompt.
-
-<a target="_blank" href="https://blog.google/products/workspace/cloud-next-2025-workspace-gemini/">
-Google Workspace Flows</a> enables users to create agentic workflows to streamline processes and automate repetitive tasks across Workspace.
-
-@CodeAssist from a Kanban board
-
-In Google Docs, users can create audio versions of their documents,
-including generating podcast-style overviews.
-
-Other new Workspace AI capabilities include an AI writing tool in Google Docs,
-
-New editing and camera control features in Veo 2 (preview)
-Veo 2 image generation in Google Vids.
-
-Instant Custom Voice in Chirp 3 to enable users to create custom voices from 10 seconds of audio
-
-Improved image generation and inpainting capabilities in Imagen 3 for fixing missing portions of an image or removing objects
-
-new Gemini capabilities in Google Chat, and
-
-AI-powered data analysis and surfacing of key insights in Google Sheets.
-
-
-
-## Microsoft Azure
-
-https://github.com/microsoft/ai-agents-for-beginners
-
- using the VS Code container image in Azure AI Foundry portal, see 
- https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/vscode
- Get started with Azure AI Foundry projects in VS Code.
-
-
-1. Register https://aiskillsfest.event.microsoft.com
-1. On Apr 8 attend Microsoft AI Skills Fest
-   https://www.youtube.com/watch?v=tCmgSvloyoI
-   https://arch-center.azureedge.net/Credentials/Microsoft-AI-Skills-Fest-Map.pdf
-   https://microsoft.github.io/AI_Agents_Hackathon/
-1. Confirm attendance for the Guiness World Record.
-1. Work on hackathon until 30, 2025
-
-http://aka.ms/sk/recordings
-
-
-https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/4-azure-ai-foundry
-https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/01-Explore-ai-studio.html
-
-1. Get an Azure subscription.
-1. Sign in (using Passkey, if possible)
-1. In a Edge web browser, go to <a target="_blank" href="https://ai.azure.com/">https://ai.azure.com<img align="right" width="100" alt="aif-menu-364x1146.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1744352871/aif-menu-364x1146_icdw0b.png" /></a>, the Azure AI Foundry portal. The portal's menu is shown at left.>
-1. Create an Azure AI Hub to share resources among multiple projects that use solution development features and capabilities of AI Foundry.
-
-   A project is an organizational container with tools for AI customization and orchestration. In a project, you can organize your work, save state across different tools like prompt flow, and collaborate with others.
-
-1. Create a multi-service Azure AI services resource to provide access to Azure OpenAI and other Azure AI services.
-1. Create a Key vault in which sensitive data such as connections and credentials can be stored securely.
-1. Create a Storage account for data used in the hub and its projects.
-1. Optionally, createan Azure AI Search resource that can be used to index data and support grounding for generative AI prompts.
-1. Create an AI Face resource
-
-1. INVALID: https://discord.gg/kzRShWzttr Azure AI Community Discord
-
-Learn more about the Hackathon and read the official rules at
-https://microsoft.github.io/AI_Agents_Hackathon/
-
-1. Sign in to start OFFICIAL PLAN: https://learn.microsoft.com/en-us/plans/0n5kb1t56pzndr 6 milestones in this plan
-
-   Learn how to navigate and use Azure AI Foundry and Azure AI Foundry SDK.
-   Create a custom Retrieval-Augmented Generation (RAG) solution.
-   Fine-tune and tailor models.
-
-   https://learn.microsoft.com/en-us/plans/0n5kb1t56pzndr?source=docs
-
-1. https://www.youtube.com/watch?v=x6g5JutmHXk Azure AI Agent Service using Azure AI Foundry SDK Demo
-
-   https://www.youtube.com/watch?v=4m0MYnQnDo8&list=PLLasX02E8BPCRLOzJHUO39cSR_Bn6cvw8
-   playlist
-
-   https://www.linkedin.com/in/shivam2003/
-   Shivam Goyal
-
-https://aka.ms/ai-agents-beginners/ai-agent-service
-Azure AI Agent Service
-https://aka.ms/ai-agents-beginners/semantic-kernel
-Semantic Kernel
-https://aka.ms/ai-agents/autogen
-AutoGen
-
-
-https://gateway.on24.com/wcc/eh/4304051/category/142477/ai-agents/?wt.mc_id=1reg_25323_webpage_reactor
-Join TheSource EHub to explore top picks including trainings, livestreams, repositories, technical guides, blogs, downloads, certifications, and more, all updated monthly. The AI Agent section offers essential resources for creating AI Agents, while other sections provide insights into AI, development tools, and programming languages
-
-Register for the AI Agents Hackathon!
-8 April, 2025 | 10:00 AM - 12:30 AM (UTC-06:00)
-
-https://learn.microsoft.com/en-us/collections/ee4ofotexqd15y?wt.mc_id=aiagenthack_hackathonlearningresource_webpage_cxp
-LEARN: Learning Resources for the AI Agents Hackathon
-
-    https://github.com/microsoft/ai-agents-for-beginners?tab=readme-ov-file#ai-agents-for-beginners---a-course
-
-https://microsoft.github.io/AI_Agents_Hackathon/
-
-   https://developer.microsoft.com/en-us/reactor/events/25324/
-   Agents 101 / AI Agents Hackathon Kickoff!
-   8 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00)
-
-https://aka.ms/CreateAgenticAISolutions
-https://aka.ms/ai_agents_apps__data
-
-   https://developer.microsoft.com/en-us/reactor/events/25325/
-   Build your code-first app with Azure AI Agent Service (EMEA/US offering)
-   9 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00) Mountain Time (VS en Canada)
-
-   https://developer.microsoft.com/en-us/reactor/events/25312/
-   Build your code-first app with Azure AI Agent Service (APAC offering)
-   9 April, 2025 | 4:00 PM - 5:00 PM (UTC-06:00) Mountain Time (VS en Canada)
-   Dave Glover
-   https://aka.ms/CreateAgenticAISolutions/?wt.mc_id=1reg_25312_webpage_reactor
-   Create agentic AI solutions by using Azure AI Foundry
-
-   https://aka.ms/ai_agents_apps__data/?wt.mc_id=1reg_25312_webpage_reactor
-   Practical Foundation for AI Agents: A Developer's Guide on Azure AI Foundry, Apps, and Data
-
-
-   https://developer.microsoft.com/reactor/events/25313
-   Transforming Business Processes with Multi-Agent AI using Semantic Kernel
-   10 April, 2025 | 1:00 PM - 2:00 PM (UTC-06:00) Mountain Time (US & Canada)
-
-
-   Extending AI Agents with Azure Functions
-   24 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00)
-
-https://developer.microsoft.com/en-us/reactor/events/25364/
-Securing AI agents on Azure by Joylynn Kirui & Pamela Fox
-29 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00) Mountain Time (US & Canada)
-
-
-https://aka.ms/model-mondays - Explore All Resources
-https://aka.ms/model-mondays/chat - Continue The Conversation
-https://aka.ms/model-mondays/collection - Explore The Model Cards
-https://aka.ms/model-mondays/newsletter - Get The Weekly Recaps
-
-
-Marlene Mhangami
-Korey Stegared-Pace
 
 ## Levels of automation:
 
@@ -255,13 +73,173 @@ Korey Stegared-Pace
 https://www.rippling.com/ works on verticals.
 Increase savings, automate busy work, and make better decisions by managing payroll, HR, IT & spend in one place.
 
-
 References:
    * https://www.youtube.com/watch?v=FwOTs4UxQS4 by Jeff Su "AI Agents, Clearly Explained"
+   * https://medium.com/data-science-in-your-pocket/best-mcp-servers-you-should-know-019226d01bca
+   * https://www.youtube.com/watch?v=cPdVbVx5Z3Q "end of explicit programming"
+   
+
+## Use Cases
+
+The "Javis" computer in Ironman movies is a form of AI Agent.
+
+PROTIP: AI Agents takes advantage of new "reasoning" and "chain of thought" capabilities in LLMs such as provided by Anthropic Claude.
+
+* "Deep" Research
+
+Gemini Code Assist agents:
+* Build apps
+* Translate code
+* Write tests
+
+Grab info:
+* Weather
+* Get a meme picture
+* Playwright to scrape web pages -  https://www.youtube.com/watch?v=2716IUeCIQo
+* shopping 
+* Locations from Google Maps
+* Call API to download YouTube video
+
+Take action:
+* Change TV channel on Roku
+* IFTTT to automate smart home devices (Arduino, Raspberry Pi, etc.)
+* Summarize news from RSS feeds & databases
+
+Update info:
+* Send a link to a Google Sheet (Microsoft Excel)
+* <a href="#CalendarApp">Google Calendar</a>
+* Google Tasks 
+* Gmail https://youtu.be/rxKBixN_iD0
+
+* Perplexity to summarize articles
+* Post article on LinkedIn
+
+* Answer and make phone calls to book reservations
+
+* Discord https://youtu.be/pLOWqz7BxwU
+* Whatsapp phone calls
+* Slack
+* Text SMS via Twilio
+* Zapier to various APIs
+* Microsoft Teams
+
+* Stock market (bitcoins, meme coins, etc.)
+* Currency exchange rate (spot, trend, futures)
+
+* GitHub to publishprogram code
+* Microsoft PowerPoint presentation
+* Blender (3D graphics rendering software) 
+
+* Jupyter notebooks that run custom Python code https://youtu.be/qkoEsqiWDOU
+* Docker containers
+
+"The next billionaire can be a single person."
+
+In a world of AI Agents, human employees would oversee a team of AI agents, each dedicated to specific tasks.
+
+   * Procurement teams could use AI agents to identify suppliers, negotiate contracts, and finalize deals.
+
+   * Customer service departments might rely on AI agents to deliver consistent, high-quality interactions without the need for constant training or replacements.
 
 
+## Enabling tech: Screen Scraping
+
+To understand what’s happening on YOUR computer screen, laptop manufacturers Microsoft, Intel, Apple, and others 
+are building in their hardware and operating system for applications to see what’s happening on your screen.
+
+The path of control logic
+
+## GenAI 
+
+Frameworks like AutoGPT, LangGraph, CrewAI, and MetaGPT.
+
+Fine-tuned models close the gap between “can predict text” and “can complete real-world tasks.”
+
+* Devin by Cognition: full-stack dev agent.
+* ReAct-optimized (Reason-Action) framework of iterations
+* ChatGPT + Code Interpreter: emerging agent behavior via tool use.
+* LangChain + LangGraph (from Ollama): orchestrating tool-aware LLMs with memory.
+* Autogen (Microsoft): multi-agent collaboration framework.
+* CrewAI: roles and task delegation at scale.
+* <a target="_blank" href="https://www.youtube.com/watch?v=JOYSDqJdiro">Manus</a> (from China) was the first to show, in early 2025, several agents "stitch together"
+It scored 90% of the GAIA "state of the art" benchmark.
+
+   References:
+   * https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-an-ai-agent March 25, 2025 | Article
+   * https://www.udemy.com/course/langgraph-with-ollama/ "2025 Master LangGraph and LangChain with Ollama- Agentic RAG: Agentic RAG and Chatbot, AI Agent, DeepSeek, LLAMA 3.2 Agent, FAISS Vector Database, LLM RAG, Lang Graph RAG, Ollama RAG"
+   * https://www.linkedin.com/pulse/what-is-an-ai-agent-yasir-khan/
+
+create separate hubs for each business area (such as Marketing, HR, and so on) i
+
+
+## Google AgentSpace
+
+On the Google <strong>Agentspace platform</strong> from within Chrome’s search box, developers build agents combining Gemini models with enterprise data for unified enterprise search, analysis, and synthesis.
+
+Other new capabilities include a
+no-code Agent Designer for building custom agents, and
+access to two new agents built by Google: Deep Research and Idea Generation.
+
+Lyria in Google Vertex AI generates 30-second music clips from text prompt.
+
+<a target="_blank" href="https://blog.google/products/workspace/cloud-next-2025-workspace-gemini/">
+Google Workspace Flows</a> enables users to create agentic workflows to streamline processes and automate repetitive tasks across Workspace.
+
+@CodeAssist from a Kanban board
+
+In Google Docs, users can create audio versions of their documents,
+including generating podcast-style overviews.
+
+Other new Workspace AI capabilities include an AI writing tool in Google Docs,
+
+New editing and camera control features in Veo 2 (preview)
+Veo 2 image generation in Google Vids.
+
+Instant Custom Voice in Chirp 3 to enable users to create custom voices from 10 seconds of audio
+
+Improved image generation and inpainting capabilities in Imagen 3 for fixing missing portions of an image or removing objects
+
+new Gemini capabilities in Google Chat, and
+
+AI-powered data analysis and surfacing of key insights in Google Sheets.
+
+<hr />
+
+
+## Google A2A
+
+At Google's Cloud Next 25 conference on April 9, <a target="_blank" href="https://www.youtube.com/watch?v=2OpHbyN4vEM">VIDEO</a>: Google announced <a target="_blank" href="https://google.github.io/adk-docs/#learn-more">Agent Development Kit (ADK)</a>
+that communicates using Google's <a target="_blank" href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/">Agent2Agent (A2A) protocol</a> for AI agents to coordinate actions in a secure way on top of enterprise applications.
+
+READ: https://google.github.io/A2A/#/
+
+Future capability at <a target="_blank" href="https://github.com/google/A2A/">https://github.com/google/A2A</a>
+was developed with support and contributions from over 50 other companies, including Atlassian, Box, MongoDB, Salesforce, ServiceNow. (But not competitors Microsoft, Anthropic, OpenAI).
+A2A competes with the <a href="#MCP">MCP (Model Context Protocol) API standard</a> defined by Anthropic. https://www.youtube.com/watch?v=voaKr_JHvF4
+
+<a target="_blank" href="https://www.youtube.com/watch?v=voaKr_JHvF4&t=1m46s" title="Jack Herrington">VIDEO</a>
+shows how A2A might work <a target="_blank" href="https://www.youtube.com/shorts/JWrHkvmYi_Q">in JavaScript</a> calling <strong>JSONRPC schemas</strong> (like MCP).
+
+A2A is based on an Agent Marketplace to <strong>discover</strong> and <strong>integrate</strong> agents.
+
+Within the marketplace <strong>Registry</strong>, each Agent has its own <strong>Agent Card</strong> with metadata about the Agent, such as what skills and desires it has.
+
+Each agent can select which LLM model to use (unlike Claude MCP).
+Each agent is a vendor that provides a service.
+
+A2A needs MCP for the lower level.
+
+   References:
+   * https://www.youtube.com/watch?v=Sl9EZpE61xA by codebasics
+   * https://www.youtube.com/watch?v=WGeHYPLbXMk by Max
+   * 
+<hr />
+
+<a name="MCP"></a>
 
 ## MCP (Model Context Protocol)
+
+MCP provides contextual data to LLMs and AI assistants to solve problems. For instance, you can build an MCP documentation server to offer complete access to your documentation to IDEs and agentic frameworks, just like using llms.txt file.
 
 In the 1980's game (and movie) "Tron", the "MCP" is the Master Control Program ("god mode").
 
@@ -278,9 +256,10 @@ IDEs Cursor and Windsurf provide a GUI to send npx commands to MCP servers which
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1742127850/mcp-cursor-gui_x0phdm.png"><img alt="mcp-cursor-gui.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1742127850/mcp-cursor-gui_x0phdm.png" /></a>
 
-References:
+   References:
    * <a target="_blank" href="https://www.youtube.com/watch?v=fJgFZRGO9AQ">MCP = Next Big Opportunity? EASIST way to build your own MCP business</a> by AI Jason
    * https://www.youtube.com/watch?v=7j_NE6Pjv-E by Greg Isenberg (Startup Empire at <a target="_blank" href="https://communityempire.co">communityempire.co</a>)
+   * https://youtu.be/Sl9EZpE61xA by codebasics
    * https://www.youtube.com/watch?v=KDxbPJH7XzY by Anthony Sistilli
    * https://www.youtube.com/watch?v=eur8dUO9mvE by IBM Technology "How to build a MCP"
    * https://www.youtube.com/watch?v=nMKYW0DiRp4 by Adam Lucek
@@ -293,11 +272,209 @@ References:
 Solo.io has announced the launch of its MCP Gateway, a Model Context Protocol gateway for the cloud native API gateway
 <a target="_blank" href="https://github.com/kgateway-dev/kgateway">kgateway</a> (previously called Gloo).
 
+   * https://www.youtube.com/watch?v=0Z7u6DTDZ8o How to Build an Agent with the OpenAI Agents SDK by Sam Witteveen
+
+
+## AI Agent Protocol Security 
+
+JOKE: The "S" in MCP stands for Security.
+
+A2A servers cannot be directly called from clients as a command.
+
+A2A servers are registered in a catalog.
+
+Authentication in A2A is built-in out of the box (unlike MCP).
+
+
+## Multi-Agent Hairball
+
+
+
+<hr />
+
+<a name="Azure"></a>
+
+## Microsoft Azure
+
+https://github.com/microsoft/ai-agents-for-beginners
+
+using the VS Code container image in Azure AI Foundry portal, see 
+Based on https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/vscode
+Get started with Azure AI Foundry projects in VS Code.
+
+1. Register https://aiskillsfest.event.microsoft.com   
+1. Add to calendar "AI Skills Fest - 50 Days of AI Learning"
+1. Add to calendar the series
+   https://developer.microsoft.com/en-us/reactor/series/s-1507/
+1. Add to calendar Pamela Fox Office Hours:
+   https://microsoft.github.io/AI_Agents_Hackathon/#office-hours
+
+1. On Apr 8 attend Microsoft AI Skills Fest
+   https://www.youtube.com/watch?v=tCmgSvloyoI
+   https://arch-center.azureedge.net/Credentials/Microsoft-AI-Skills-Fest-Map.pdf
+   https://microsoft.github.io/AI_Agents_Hackathon/
+1. Confirm attendance for the Guiness World Record.
+1. Work on hackathon until 30, 2025
+
+http://aka.ms/sk/recordings
+
+https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/4-azure-ai-foundry
+https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/01-Explore-ai-studio.html
+
+https://learn.microsoft.com/en-us/collections/ee4ofotexqd15y?wt.mc_id=aiagenthack_hackathonlearningresource_webpage_cxp
+
+## Follow me for Azure AI
+
+1. Get an Azure subscription.
+1. Sign in (using Passkey, if possible)
+1. PROTIP: Create CLI environment to enable/update Azure Core "az" commands:
+   ```
+   brew info azure-cli
+   ==> Dependencies
+Build: pkgconf ✘, rust ✘
+Required: libsodium ✔, libyaml ✔, openssl@3 ✔, python@3.12 ✔
+   ...
+   brew install azure-cli
+   ```
+1. PROTIP: Create a folder for the GitHub account you want to use:
+   ```
+   mkdir <em>folder_name</em>
+   cd <em>folder_name</em>
+   ```
+1. PROTIP: Look at my https://github.com/bomonike/agentic/blob/master/az-agents.py which expects these external dependencies to be loaded:
+   ```
+   pip install azure-ai-projects
+   pip install azure-identity
+   ```
+   TODO: requirements.txt
+
+1. In a Edge web browser, go to <a target="_blank" href="https://ai.azure.com/">https://ai.azure.com<img align="right" width="100" alt="aif-menu-364x1146.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1744352871/aif-menu-364x1146_icdw0b.png" /></a>, the Azure AI Foundry portal. The portal's menu is shown at left.
+
+1. Create an Azure AI Hub to share resources among multiple projects that use solution development features and capabilities of AI Foundry.
+
+   A project is an organizational container with tools for AI customization and orchestration. In a project, you can organize your work, save state across different tools like prompt flow, and collaborate with others.
+
+   CAUTION: The following resources are created for each hub:
+   * A multi-service Azure AI services resource to provide access to Azure OpenAI and other Azure AI services.
+   * A Key vault in which sensitive data such as connections and credentials can be stored securely.
+   * A Storage account for data used in the hub and its projects.
+   Optionally, 
+   * an Azure AI Search resource that can be used to index data and support grounding for generative AI prompts.
+   * an Azure AI Face resource
+
+1. PROTIP: In your user home folder, create edit python.env file by manually transfer from Azure AI Foundry portal: https://ai.azure.com/build/overview
+   ```
+   region="eastus2"  # in <region>.api.azureml.ms;
+   project_id="???"
+   hub_name="???"
+   project_name="???"
+   ```
+
+
+   <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/02-azure-ai-foundry-sdk?pivots=python">LEARN: SDK</a>
+   
+   ```
+from azure.ai.projects import AIProjectClient
+from azure.ai.projects.models import ConnectionType
+from azure.identity import DefaultAzureCredential
+...
+
+project_connection_string = "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>"
+project_client = AIProjectClient.from_connection_string(
+      credential=DefaultAzureCredential(),
+      conn_str=project_connection_string,
+    )
+   ```
+
+
+### Azure Hackathon
+
+Learn more about the Hackathon and read the official rules at
+https://microsoft.github.io/AI_Agents_Hackathon/
+8 April, 2025 | 10:00 AM - 12:30 AM (UTC-06:00)
+
+1. Sign in to start OFFICIAL PLAN: https://learn.microsoft.com/en-us/plans/0n5kb1t56pzndr 6 milestones in this plan
+
+   Learn how to navigate and use Azure AI Foundry and Azure AI Foundry SDK.
+   Create a custom Retrieval-Augmented Generation (RAG) solution.
+   Fine-tune and tailor models.
+
+   https://learn.microsoft.com/en-us/plans/0n5kb1t56pzndr?source=docs
+
+1. https://www.youtube.com/watch?v=x6g5JutmHXk Azure AI Agent Service using Azure AI Foundry SDK Demo
+
+   https://www.youtube.com/watch?v=4m0MYnQnDo8&list=PLLasX02E8BPCRLOzJHUO39cSR_Bn6cvw8
+   playlist
+
+   https://www.linkedin.com/in/shivam2003/
+   Shivam Goyal
+
+* <a target="_blank" href="https://aka.ms/ai-agents-beginners/ai-agent-service">Azure AI Agent Service</a>
+* <a target="_blank" href="https://aka.ms/ai-agents-beginners/semantic-kernel">Semantic Kernel</a>
+* <a target="_blank" href="https://aka.ms/ai-agents/autogen">https://aka.ms/ai-agents/autogen</a>
+
+
+
+https://gateway.on24.com/wcc/eh/4304051/category/142477/ai-agents/?wt.mc_id=1reg_25323_webpage_reactor
+Join TheSource EHub to explore top picks including trainings, livestreams, repositories, technical guides, blogs, downloads, certifications, and more, all updated monthly. The AI Agent section offers essential resources for creating AI Agents, while other sections provide insights into AI, development tools, and programming languages
+
+https://learn.microsoft.com/en-us/collections/ee4ofotexqd15y?wt.mc_id=aiagenthack_hackathonlearningresource_webpage_cxp
+LEARN: Learning Resources for the AI Agents Hackathon
+
+    https://github.com/microsoft/ai-agents-for-beginners?tab=readme-ov-file#ai-agents-for-beginners---a-course
+
+   https://developer.microsoft.com/en-us/reactor/events/25324/
+   Agents 101 / AI Agents Hackathon Kickoff!
+   8 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00)
+
+https://aka.ms/CreateAgenticAISolutions
+https://aka.ms/ai_agents_apps__data
+
+   https://developer.microsoft.com/en-us/reactor/events/25325/
+   Build your code-first app with Azure AI Agent Service (EMEA/US offering)
+   9 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00) Mountain Time (VS en Canada)
+
+   https://developer.microsoft.com/en-us/reactor/events/25312/
+   Build your code-first app with Azure AI Agent Service (APAC offering)
+   9 April, 2025 | 4:00 PM - 5:00 PM (UTC-06:00) Mountain Time (VS en Canada)
+   Dave Glover
+   https://aka.ms/CreateAgenticAISolutions/?wt.mc_id=1reg_25312_webpage_reactor
+   Create agentic AI solutions by using Azure AI Foundry
+
+   https://aka.ms/ai_agents_apps__data/?wt.mc_id=1reg_25312_webpage_reactor
+   Practical Foundation for AI Agents: A Developer's Guide on Azure AI Foundry, Apps, and Data
+
+
+   https://developer.microsoft.com/reactor/events/25313
+   Transforming Business Processes with Multi-Agent AI using Semantic Kernel
+   10 April, 2025 | 1:00 PM - 2:00 PM (UTC-06:00) Mountain Time (US & Canada)
+
+   Extending AI Agents with Azure Functions
+   24 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00)
+
+https://developer.microsoft.com/en-us/reactor/events/25364/
+Securing AI agents on Azure by Joylynn Kirui & Pamela Fox
+29 April, 2025 | 10:00 AM - 11:00 AM (UTC-06:00) Mountain Time (US & Canada)
+
+
+https://aka.ms/model-mondays - Explore All Resources
+https://aka.ms/model-mondays/chat - Continue The Conversation
+https://aka.ms/model-mondays/collection - Explore The Model Cards
+https://aka.ms/model-mondays/newsletter - Get The Weekly Recaps
+
+
+Marlene Mhangami
+Korey Stegared-Pace
+
+
 ## Anything LLM
 
 https://www.youtube.com/watch?v=Z6kK4DXqCOI
 
 
+<hr />
+
+<a name="CalendarApp"></a>
 
 ## Calendar Task Apps
 
@@ -685,6 +862,17 @@ Finance: The finance industry has also embraced automation to make things run sm
 
 Transportation: Automation is changing the transportation industry in big ways. Self-driving cars could completely change how we get around, making roads safer by eliminating human error and reducing traffic congestion by optimizing routes and speeds. Automated traffic management systems can adjust traffic lights in real-time to keep traffic flowing smoothly, even during rush hour. Drones can deliver packages and medical supplies, overcoming geographical barriers and providing access to essential goods and services.
 
+## Here today
+
+Agents are here today from leading AI developers, including 
+* <a target="_blank" href="https://openai.com/index/introducing-operator/">OpenAI’s Operator</a>
+* <a target="_blank" href="https://aws.amazon.com/q/">Amazon’s Q</a>
+* Manus from China
+* <a target="_blank" href="https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466">Microsoft’s Copilot</a>
+* <a target="_blank" href="https://deepmind.google/technologies/project-astra/">Google’s Project Astra</a>
+
+* <a target="_blank" href="https://www.anaconda.com/ai/">Anaconda’s Astra</a>
+
 
 ## References
 
@@ -753,11 +941,19 @@ in Playgrounds
 https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/understand-embeddings
 embeddings in the Azure OpenAI Service
 
+## Search
+
 https://learn.microsoft.com/en-us/azure/search/vector-search-overview
 vector search
 
 https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview
 hybrid search
+
+## Agent-to-Agent Interaction
+
+https://www.youtube.com/watch?v=rAeqTaYj_aI
+
+
 
 <a name="PromptFlow"></a>
 
@@ -766,6 +962,10 @@ hybrid search
    * https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/4-build-copilot
    * LAB Exercise: https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/04-Use-own-data.html Create a generative AI app that uses your own data
 
+Agentic uses a "flipped" pattern of user interaction. The AI system asks users questions to gather information and perform tasks.
+* "Ask me questions one at a time."
+* The AI also executes actions based on the gathered data, creating a more interactive experience.
+* The AI can translate user goals into actions that can be understood by databases or other systems, similar to a protocol droid in a sci-fi context.
 
 Prompt Flow is a development framework for defining flows that orchestrate interactions with an LLM.
 
@@ -795,10 +995,28 @@ Agentic AI is characterized by its ability to perform tasks without any human in
 * Human-AI Collaboration: The lecture illustrates a scenario where a human collaborates with an AI to cook a dish, with the AI providing step-by-step instructions while the human performs the actions.
 * Importance of Interaction: The interaction between the human and AI highlights the need for effective communication and adaptability in AI systems, contrasting with traditional rigid computer systems.
 
-Agentic uses a flipped interaction pattern. The AI system asks users questions to gather information and perform tasks.
-* "Ask me questions one at a time."
-* The AI also executes actions based on the gathered data, creating a more interactive experience.
-* The AI can translate user goals into actions that can be understood by databases or other systems, similar to a protocol droid in a sci-fi context.
+
+## Types of AI agents 
+
+* simple reflex agents, model-based agents, goal-based agents, utility-based agents, and learning agents.
+
+## UI
+
+https://medium.com/@amosgyamfi/the-3-best-python-frameworks-to-build-uis-for-ai-apps-08619d53d281
+The 3 Best Python Frameworks To Build UIs for AI Apps
+Build user-friendly AI chat interfaces crucial for seamless interactions, demo presentation, and testing using the leading Python frameworks for creating intuitive chat UIs for AI.
+
+
+
+## Code
+
+Here is an overview of our code base at
+<a target="_blank" href="https://github.com/bomonike/agentic">https://github.com/bomonike/agentic</a>
+
+1. Install Ollama server
+1. Install LLAMA 3.2 and other LLMs
+1. Run Chatbot within benchmarks
+1. Add memory
 
 
 <hr />
