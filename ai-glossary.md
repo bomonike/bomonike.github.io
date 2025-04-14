@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-04-03
-lastchange: "v023 + MFU, png :ai-glossary.md"
+date: "2025-04-13"
+lastchange: "v024 SFT RL :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -176,9 +176,11 @@ Makers of LLM Foundation Models:
 <a name="M"></a>
 ### M
 
-* ML = Machine Learning | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
 * MAI = Microsoft AI | Microsoft's AI platform that provides tools and services for building and deploying AI applications. <a target="_blank" href="https://www.youtube.com/watch?v=FKZktotIeRA">*</a>
 * MFU = Model FLOPS Utilization | a metric to measure the efficiency of a model in terms of the number of floating-point operations (FLOPs) it can perform.
+* ML = Machine Learning | a subset of AI that helps make it possible for computers to learn from data, identify patterns, and improve their performance over time.
+* MLA = Multi-head Latent Attention | a method of attention that allows the model to focus on different parts of the input data at different times.
+* MoE = Mixture-of-Experts | - 
 
 <a name="N"></a>
 ### N
@@ -209,14 +211,16 @@ Makers of LLM Foundation Models:
 ### R
 
 * RAG = Retrieval-Augmented Generation | an AI framework designed to retrieve facts from an external knowledge base to ground large language models (LLMs) that provide information on the latest research, statistics, or news to generative models.
-* RRF = Reciprocal Rank Fusion | a rank aggregation method used in hybrid search systems to combine results from multiple search algorithms (like vector search and full-text search) into a single, unified ranking, prioritizing documents that consistently rank highly across different sources. 
+* RL = Reinforcement Learning | A type of machine learning that helps agents learn by trial and error, receiving rewards or penalties based on their actions.
 * RLVR = Reinforcement Learning with Verifiable Rewards | reinforcement learning framework used by Tulu LLMs that builds upon supervised finetuning (SFT) by using simple functions to provide a deterministic correctness criteria binary ground truth signal to indicate whether a model's output meets a predefined correctness criterion. This allows subject matter experts to establish clear correctness criteria without deep machine learning expertise.
 * RNN = Recurrent Neural Network | A type of neural network that processes sequential data by maintaining a hidden state that allows it to remember information from previous inputs (sequential time-based data such as stock prices, speech).
 * RPL = Reward-Plus-Loss | A training method that uses both positive and negative rewards to improve the performance of a model.
+* RRF = Reciprocal Rank Fusion | a rank aggregation method used in hybrid search systems to combine results from multiple search algorithms (like vector search and full-text search) into a single, unified ranking, prioritizing documents that consistently rank highly across different sources. 
 
 <a name="S"></a>
 ### S
 
+* SFT = supervised fine-tuning | -
 * Sequence to sequence models | A model type that uses both encoders and decoders.
 * Sentiment analysis | A process of analyzing digital text to determine the emotional tone of a message. Performed on textual data, helping businesses monitor brands through customer feedback.
 * SHAP = Shapely Additive Explanations | A feature contribution to individual predictions. A service provided by Amazon SageMaker Model Monitor.
