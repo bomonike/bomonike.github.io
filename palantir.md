@@ -1,11 +1,11 @@
 ---
 layout: post
-date: "2025-04-04"
-lastchange: "v008 + glassdoor :palantir.md"
+date: "2025-04-16"
+lastchange: "v009 + ontology :palantir.md"
 url: "https://bomonike.github.io/palantir"
 file: "palantir"
 title: "Palantir"
-excerpt: "How to learn Palantir for enterprise use."
+excerpt: "How to learn Palantir system for enterprise use."
 tags: [cloud, functions]
 image:
 # feature: pic green matrix hallway 1900x500.jpg
@@ -17,10 +17,11 @@ created: "2018-04-03"
 ---
 <a target="_blank" href="https://bomonike.github.io/palantir"><img align="right" width="100" height="100" alt="palantir.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/palantir.png?raw=true" />
 <i>{{ page.excerpt }}</i>
-{% include l18n.html %}
 {% include _toc.html %}
 
 ## Why?
+
+Many are taking time to learn Palantir because Palantir provides free tutorials and cloud time.
 
 A "Palantir" is the mythical artifact from the "Lord of the Rings" which gives one the power of seeing and understanding the world.
 
@@ -33,7 +34,9 @@ Palantir provides tools to create:
    * visualizations and dashboards
    * interactive apps (running on web, mobile, and mixed reality)
 
-But the tools were not hobled together through acquisitions over time. Palantir being built initially for military use required its data governance features to be built-in (to include object lineage time series, auditability, and traceability). So Palantirians have a better chance of getting apps working together in production-scale -- in SaaS and on-premise.
+QUESTION: How does Palantir identify and issue alerts based on events and metrics triggers?
+
+Palantir's tools were not hobled together through acquisitions over time. Palantir being built initially for military use required its data governance features to be built-in (to include object lineage time series, auditability, and traceability). So Palantirians have a better chance of getting apps working together in production-scale -- in SaaS and on-premise.
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332218/palantir-processes_yjzlsd.png"><img alt="palantir-processes.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743332218/palantir-processes_yjzlsd.png" /></a>
 
@@ -44,21 +47,26 @@ PROTIP: What's not mentioned in Palantir's current docs are "AI agents" that hav
 
 ## The Ontology
 
-Palantir's uses the word "Ontology" instead of "database" to emphasize that in addition to holding data like SQL databases, it maintains what's necessary to make a <strong>digital twin</strong> modeling the dynamic interactions within organizations. 
+Palantir's uses the word "<strong>Ontology</strong>" instead of "database" to emphasize that, in addition to holding data like SQL databases, it maintains what's necessary to make a <strong>digital twin</strong> modeling the dynamic interactions within organizations. 
 
-Built for each <strong>project</strong> are custom and pre-built "semantic" elements:
-* <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/object-types-overview/">Object types</a> which define real-worldentities or events in an organization,
-* <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/link-types-overview/">Link types</a> that define the relationship between two object types,
+Built for each <strong>project</strong> are custom and pre-built<br />
+"semantic" elements:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743588147/palantir-objects-702x81_ulc52k.png"><img alt="palantir-objects-702x81.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743588147/palantir-objects-702x81_ulc52k.png" /></a>
+
+* An <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/object-types-overview/">Object type</a> defines real-world entities or events in an organization,
+* A <a target="_blank" href="https://www.palantir.com/docs/foundry/object-link-types/link-types-overview/">Link type</a> defines the relationship between two object types,
 * Properties define an object type’s characteristics
 
 "kinetic" elements:
-* An <a target="_blank" href="https://www.palantir.com/docs/foundry/actions/overview/">Action</a> is a single transaction that changes the properties of one or more objects, based on user-defined logic.
 * An <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/overview/">Action type</a> is a <strong>set</strong> of changes (edits) to objects, properties, and links that can be taken at once. 
+* An <a target="_blank" href="https://www.palantir.com/docs/foundry/actions/overview/">Action</a> is a single transaction that changes the properties of one or more objects, based on user-defined logic.
 * <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/submission-criteria/">Submission criteria</a> define the conditions under which actions can be submitted.
 * <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/rules/">Rules</a> define the conditions under which actions can be taken.
 * <a target="_blank" href="https://www.palantir.com/docs/foundry/action-types/parameter-overview/">Parameters</a> define, in a standardized form, the inputs that can be passed to an action
 
 * <a target="_blank" href="https://www.palantir.com/docs/foundry/actions/overview/">Function-backed Actions</a> are used to implement custom business logic where a <a target="_blank" href="https://www.palantir.com/docs/foundry/functions/overview/">Function</a> defines how complex objects should be modified.
+
 * dynamic security.
 
 For example, the "Assign Employee" Action type would define how users can change the role property value for a given Employee object. This Action type could require a parameter definition to ensure input of the new role in a standardized form and can include rules for how to automatically create a link between the Employee object and that of a new Manager. Also, include a notification side effect that will notify the old and new manager of the change. Plus, Validate that authorized employees such as those working in human resources can perform the Action.
@@ -71,8 +79,6 @@ types of <a target="_blank" href="https://www.palantir.com/docs/foundry/ontology
 <a target="_blank" href="https://www.palantir.com/docs/foundry/interfaces/interface-overview/">Interfaces</a> describes the shape of an object type and its capabilities. Interfaces provide object type polymorphism, allowing for consistent modeling of and interaction with object types that share a common shape.
 
 
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1743588147/palantir-objects-702x81_ulc52k.png"><img alt="palantir-objects-702x81.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1743588147/palantir-objects-702x81_ulc52k.png" /></a>
 
 The Ontology regarding decisions:
 
@@ -123,6 +129,11 @@ Operational App Building:
    * Mobile Frameworks
    * Mixed Reality (VR headsets)
 
+https://www.youtube.com/shorts/Qvh2DovBi64
+Parady: "We're making more money"
+
+https://www.youtube.com/watch?v=A0yim6QYiUo&pp=0gcJCX4JAYcqIYzv
+"What does Palantir Actually do?" by CTO Shyam Sankar on Shawn Ryan
 
 
 ## Dive right in
@@ -220,9 +231,9 @@ Jobs listed in <a target= "_blank" href="https://www.palantir.com/jobs/">Palanti
    * 45 West 18th Street (Lower East Side) used for events.
 
 
-## Stack
+## Tech Stack
 
-Palantir sells "Gotham" to governments and "Foundry" to commercial clients.
+Palantir sells its <strong>data operations platform</strong> as "Gotham" to governments and "Foundry" to commercial clients.
 
 1. Click "INSTALL" at <a target="_blank" href="https://build.palantir.com/platform/2fded05d-0d74-41a7-93f6-fa665114ab7b">"Ontology SDK (OSDK) With AIP Logic - Build a To Do application Powered by AIP Logic</a> 
 1. Enter your <strong>enrollment URL</strong> such as "almond-latte.palantirfoundry.com".
@@ -255,9 +266,8 @@ Ontology Objects can also be backed with datasets that leverage a model for batc
 
 ## Functions
 
- <a target="_blank" href="https://www.palantir.com/docs/foundry/functions/overview/">Functions</a>
-
-A Function is a piece of code-based logic that takes in input parameters and returns an output. Functions are natively integrated with the Ontology: they can take objects and object sets as input, read property values of objects, and be used across action types and applications that build on the Ontology.
+A <a target="_blank" href="https://www.palantir.com/docs/foundry/functions/overview/">Function</a> 
+is a piece of code-based logic that takes in input parameters and returns an output. Functions are natively integrated with the Ontology: they can take objects and object sets as input, read property values of objects, and be used across action types and applications that build on the Ontology.
 
 AIP Logic can be used from anywhere. 
 
@@ -288,30 +298,26 @@ The OSDK uses a token that is scoped only to the ontological entities required f
 
 Palantir has three tools for building Apps & Dashboards:
 
-* <strong>Slate</strong> is able to interact directly with <strong>datasets</strong>. Slate enables significant visual customization based on web development paradigms and has a wide range of available features, but also requires more technical knowledge to build and maintain applications than Workshop.
+* <strong>Quiver</strong> provides a visual point-and-click interface to define <strong>analytical workflows</strong> (time series analysis) in the Ontology layer leveraging a powerful charting library. Quiver supports simple linear drill-down analyses to highly-branched and complex analyses with aggregations and statistical functions. Quiver analyses can be templatized into read-only dashboards for broader consumption.
 
-* <strong>Workshop</strong> provides point-and-click code-less application-building natively on the Ontology layer. Applications built in Workshop are more dynamic and interactive than typical dashboards created in other point-and-click tools. High-quality Layouts and an easy-to-use but sophisticated Events system enable Workshop apps to be as user-friendly and high-quality as custom React applications.
+* <strong>Workshop</strong> provides a visual point-and-click code-less <strong>application-building</strong> natively on the Ontology layer. Applications built in Workshop are more dynamic and interactive than typical dashboards created in other point-and-click tools. High-quality Layouts and an easy-to-use but sophisticated Events system enable Workshop apps to be as user-friendly and high-quality as custom React applications.
 
-* <strong>Quiver</strong> enables advanced analytical workflows in the Ontology layer through a visual point-and-click interface and a powerful charting library. Quiver supports simple linear drill-down analyses to highly-branched and complex analyses with aggregations and statistical functions. Quiver also supports native time series analysis. Quiver analyses can be templatized into read-only dashboards for broader consumption.
+* <strong>Slate</strong> interacts directly with <strong>datasets</strong>, which enables significant visual customization, but also requires more technical knowledge to build and maintain applications than Workshop.
 
-
-
-
-* Foundry is Palantir's data operations platform. 
-
-* <strong>Carbon</strong> Carbon enables workflow builders to perform the "last mile" of customization to create a highly tailored and usable experience for <strong>operational end users</strong> to create highly curated workspaces that combine multiple resources or applications - analytical results such as dashboards, applications built in Workshop or Slate, and out-of-the-box capabilities such as Object Views and Object Explorer.
+* <strong>Carbon</strong> enables workflow builders to perform the "last mile" of customization to create a highly tailored and usable experience for <strong>operational end users</strong> to create highly curated workspaces that combine multiple resources or applications - analytical results such as dashboards, applications built in Workshop or Slate, and out-of-the-box capabilities such as Object Views and Object Explorer.
 
 * <a target="_blank" href="https://www.palantir.com/docs/foundry/map/overview/">Map</a> (a GIS app like ArcGIS and Google Maps) analyzes objects and other data in a <a target="_blank" href="https://www.palantir.com/docs/foundry/geospatial/overview/">geospatial</a> context. The Map application renders maps using the <a target="_blank" href="https://en.wikipedia.org/wiki/Web_Mercator_projection">Web Mercator Projection</a> (EPSG:3857), and expects latitude/longitude coordinates in WGS 84 degrees (EPSG:4326). See Geospatial data in Foundry for more information on transforming geospatial data in Foundry.
 
-* AIP is a suite of modules in Foundry with preferred LLM (LLAMA, GPT, Claude, etc.).  AIP connects generative AI to operations. 
+* AIP (AI Powered) is a suite of modules in Foundry with preferred LLM (LLAMA, GPT, Claude, etc.).  AIP connects generative AI to operations. 
 
    * AIP Logic: a no-code development environment for building, testing, and releasing functions powered by LLMs. Using Logic’s intuitive interface, application builders can engineer prompts, test, evaluate and monitor, set up automation, and more, while leveraging the Ontology.
    * AIP Logic Evaluations: a testing framework designed to enhance and track AIP Logic function quality over time by improving prompt engineering, deciding between using various models
    * AIP Assist: an LLM-powered support tool designed to help users navigate, understand
    * In-platform LLM powered assistance : Native LLM-backed features designed to help end users perform regular workflows in Foundry. These are highly-specific features that leverage knowledge of the Foundry platform to accelerate a user's day-to-day operations.
  
-* <strong>Apollo</strong> is Palantir's <strong>mission control</strong> for autonomous software deployment (software delivery layer). https://www.palantir.com/platforms/apollo/
-Build an end-to-end Foundry workflow from raw data to operational application as an introduction to core platform concepts. [60-90mins]
+* <a target="_blank" href="https://www.palantir.com/platforms/apollo/">Apollo</strong> is Palantir's <strong>mission control</strong> for autonomous software deployment (software delivery layer). Build an end-to-end Foundry workflow from raw data to operational application as an introduction to core platform concepts. 
+
+* QUESTION: Backup & retore?
 
 
 ## What is
@@ -551,3 +557,5 @@ x 92
 6
 Utilize the filters, charts, and Object Table in your application to explore your data. (Hint: ensure you use the sorting feature of the Object Table to sort by highest quantity).
 
+<hr />
+<i>{{ page.lastchange }}</i>
