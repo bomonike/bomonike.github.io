@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-04-16"
-lastchange: "v009 + ontology :palantir.md"
+date: "2025-04-17"
+lastchange: "v010 + imgs :palantir.md"
 url: "https://bomonike.github.io/palantir"
 file: "palantir"
 title: "Palantir"
@@ -25,16 +25,21 @@ Many are taking time to learn Palantir because Palantir provides free tutorials 
 
 A "Palantir" is the mythical artifact from the "Lord of the Rings" which gives one the power of seeing and understanding the world.
 
-Technically, at its core, Palantir provides an <strong>object-based database</strong> they call an <a href="#Ontology">Ontology</a>. What's unique about Palantir's database is that <strong>branches</strong> of data can be <strong>versioned (forked)</strong> like GitHub source code. That enables "what-if" changes to be analyzed, which inform decisions. When a satisfactory outcome is achieved, changes can be "materialized" into production data. In addition to master reference data and transactional data, a Palantir Ontology can store <strong>decisions</strong> the organization makes over time.
+Technically, at its core, Palantir provides an <strong>object-based database</strong> they call an <a href="#Ontology">Ontology</a>. It's unique in that <strong>branches</strong> of data in it can be <strong>versioned (forked)</strong> like GitHub source code. That enables "what-if" changes to be analyzed, which inform decisions. When a satisfactory outcome is achieved, changes can be "materialized" into production data. In addition to master reference data and transactional data, a Palantir Ontology can store <strong>decisions</strong> the organization makes over time.
 
 Palantir provides tools to create:
-
-   * Browsing
+   * Browsing like a spreadsheet
    * workflows
-   * visualizations and dashboards
+   * visualizations and dashboards of the Common Operational Pictures (COPs) - a display of relevant operational information shared across multiple organizations to facilitate awareness and collaboration. For example, you might build a Workshop application to serve as an “on-the-wall”, big-screen view of the current situation, containing a map, relevant statistics and charts, ways to filter or drill down on data, and connections to other views or workflows.
    * interactive apps (running on web, mobile, and mixed reality)
 
-QUESTION: How does Palantir identify and issue alerts based on events and metrics triggers?
+REMEMBER: The Ontology has a different vocabulary:
+* "object type" is comparable to a dataset
+* "object" is a row in a dataset
+* "property" is a column (of various value instances) in a dataset.
+* a unique column that can be used as a primary key. To find a unique column, open the dataset, click on a column you suspect is unique, and click "view stats" in the dropdown next to the column name.
+
+QUESTION: How does Palantir identify and issue <strong>alerts</strong> based on events and metrics triggers?
 
 Palantir's tools were not hobled together through acquisitions over time. Palantir being built initially for military use required its data governance features to be built-in (to include object lineage time series, auditability, and traceability). So Palantirians have a better chance of getting apps working together in production-scale -- in SaaS and on-premise.
 
@@ -42,10 +47,109 @@ Palantir's tools were not hobled together through acquisitions over time. Palant
 
 PROTIP: What's not mentioned in Palantir's current docs are "AI agents" that have the "agency" to take autonomous action on their own, without human intervention, based on alerts triggered by events.
 
+## Applied Notational Project
+
+1. Play <a target="_blank" href="https://www.youtube.com/watch?v=ZeapLGUJSMw">step-by-step video</a> by Gena Coblentz at Ontologize
+
+   1. Begin with raw data sets
+   2. Prep data sets for ontology
+   3. Combine into workshop app with write back
+
+1. End-to-end speedrun https://learn.palantir.com/speedrun-your-first-e2e-workflow
+
+   https://learn.palantir.com/deep-dive-building-your-first-pipeline
+   Deep Dive: Building your First Pipeline
+   
+   https://learn.palantir.com/deep-dive-creating-your-first-ontology
+   Deep Dive: Creating your First Ontology
+   
+   https://learn.palantir.com/deep-dive-building-your-first-application
+   Deep Dive: Building your First Application
+
+2. Sign in to the lesson text at:
+
+   https://learn.palantir.com/applied-notional-project-automobile-inbox
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1744953889/palantir-notational-proj-2862x1746_gqtmh1.png"><img alt="palantir-notational-proj-2862x1746.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1744953889/palantir-notational-proj-2862x1746_gqtmh1.png" /></a>
+
+   Expected Completion Time: This course will take a Foundry novice (1 week of experience) around 1 full business day to complete. If you are someone who has only completed the End to End Speedrun, it may take longer, but that's okay! This project is designed to challenge you so that you come out with all the skills needed to develop on your own in the real world!
+
+   Overview: In this course, you will take on the role of a Foundry engineer tasked with constructing a dashboard for a used car leasing company. Designed to mimic real-world scenarios, the course provides raw datasets and application requirements, but not step-by-step instructions, challenging you to develop your problem-solving and development skills.
+
+   The application requirements are framed from the viewpoint of a car leasing manager, who needs assistance in monitoring his fleet and addressing related issues. By the end of the course, you will have created a fully functional application that enables a company to oversee their automobile fleet, examine their cars, and rectify issues.
+
+   This course is an excellent opportunity to learn Foundry development without rails, allowing you to gain practical skills in decomposing and solving problems. You will learn to critically analyze application requirements and transform them into development tasks. This hands-on experience will equip you with the ability to perceive Foundry not as a single-purpose application, but as a suite of tools designed to work together, ultimately helping you become an independent, self-sufficient developer.
+
+   [1:21] Prerequisites
+   Permissions & Help
+   Project Objectives and Requirements
+   Project Summary
+
+1. From within the course:
+
+1. Permissions to capabilities:
+
+   * Project Creation [Optional, can use an existing project instead]
+   * Raw Data Upload
+   * Object Type Creation in the Ontology
+   * Link Type Creation in the Ontology
+   * Action Type Creation in the Ontology
+   * Workshop Application Creation
+   
+   In almost all cases, your necessary permissions can be boiled down to having edit access in the project you are working in, as well as the ability to create and edit ontology object types.
+
+1. [1:29] Getting Help:
+   https://www.palantir.com/docs/foundry
+
+   AIP prompts
+
+1. Project Summary:
+
+   I own a car leasing company and I am looking to make an application to support my business. Recently, my customers have been reporting lots of issues with their cars. I need a system to help me keep track of this! I would like you to create an application in Foundry for me and my employees to use. 
+
+   In the first tab, I would like a high level dashboard of my cars. I have provided you with raw data that should have everything you need to build this application. 
+
+   In the second tab, I would like a list of outstanding issues on my cars. In addition to viewing details about existing issues, I want my employees to be able to update the priority of an issue, and mark an issue as closed. 
+
+   Keep in mind, the raw data is a bit messy, so you might have to clean it up before it can be application ready!
+
+1. [1:34] Tips Before Getting Started
+
+   The only Foundry applications that you need to use in order to complete this project are 
+   Pipeline Builder, Ontology Manger Application (OMA), and Workshop.
+
+1. Raw Data Downloads:
+
+   Car info raw.csv
+   Model information raw.csv
+   Issues raw.csv
+   Historical maintenance log raw.csv
+
+   1. cars dataset called Car info raw. This dataset contains basic information about each of the cars.
+   2. maintenance history dataset called Historical maintenance log raw. This dataset contains historical information on maintenance performed on the cars.  I don't need row level information from this dataset, I instead want aggregated information from this dataset, such as number of number of maintenance events per car.
+   3. Model information raw. This dataset provides additional information on a car based on the manufacturer and model of that car.
+   4. Issues raw. This dataset is a running list of active issues on the cars.
+
+
+
+   Objective 1 - Data Cleaning
+   Objective 2 - Cars Homepage
+   Objective 3 - Issues Inbox
+   Hints
+   Hints Overview & General FAQ
+   Architecture
+   Raw Datasets
+   Pipeline Builder
+   Ontology Manager Application
+   Workshop
+
+
 
 <a name="Ontology"></a>
 
 ## The Ontology
+
+https://www.palantir.com/docs/foundry/ontology/overview/
 
 Palantir's uses the word "<strong>Ontology</strong>" instead of "database" to emphasize that, in addition to holding data like SQL databases, it maintains what's necessary to make a <strong>digital twin</strong> modeling the dynamic interactions within organizations. 
 
@@ -399,7 +503,12 @@ Foundry’s core Analytics applications include:
 
 * Notepad, an integrated solution for embedding dynamic analytical, visual, and operational artifacts from across Foundry, alongside formatted text and media.
 
-## Certification
+
+<a name="Certifications"></a>
+
+## Certifications
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1744953699/palantir-certs-2048x791_v2pzld.jpg"><img alt="palantir-certs-2048x791.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1744953699/palantir-certs-2048x791_v2pzld.jpg"/></a>
 
 1. At https://learn.palantir.com
 1. Sign up with Palantir Foundry Platform account.
