@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-04-09"
-lastchange: "v019 + wording :weather-info.md"
+date: "2025-04-19"
+lastchange: "v021 + weather forecast :weather-info.md"
 url: "https://bomonike.github.io/weather-info"
 file: "weather"
 title: "Weather microclimate"
@@ -247,7 +247,19 @@ low -16 pressure at 997 hPa (HectoPascals = 9.97 millibars)
                      866    hPa at ground level
    ```
 
-   A longitude and longitude can be specified as well using the <a target="_blank" href="https://en.wikipedia.org/wiki/Web_Mercator_projection">Web Mercator Projection</a> (EPSG:3857). The Web Mercator uses the spherical form because it is much simpler to calculate than <a target="_blank" href="https://en.wikipedia.org/wiki/World_Geodetic_System#WGS_84">WGS 84</a> degrees (EPSG:4326) ellipsoidal datum. Google Maps, which uses it since 2005, cut off coverage at 85.051129° north and south.  But the United States Department of Defense through the National Geospatial-Intelligence Agency has declared to be unacceptable for any official use.
+<a target="_blank" href="https://www.youtube.com/shorts/QjTfk1OFCtk">VIDEO</a>:
+Readings from outlying weather stations are combined to provide a more accurate reading.
+During WWII, the Allies used stations in Iceland, and Ireland to forcast the weather for the Normandie Invasion on June 6, 1944.
+
+
+<a name="latlong"></a>
+
+## Latitudes & Longitudes
+
+A latitude and longitude make use of the <a target="_blank" href="https://en.wikipedia.org/wiki/Web_Mercator_projection">Web Mercator Projection</a> (EPSG:3857) which display spherical forms because it is much simpler to calculate than <a target="_blank" href="https://en.wikipedia.org/wiki/World_Geodetic_System#WGS_84">WGS 84</a> degrees (EPSG:4326) ellipsoidal datum. Land near the poles, such as Greenland, are distorted and appear larger than <a target="_blank" href="https://youtube.com/shorts/DjhZuN0woDY?si=TR7kQ-593O_4omVm">VIDEO: when moved to the equator for actual size</a>. Google Maps, which uses it since 2005, cut off coverage at 85.051129° north and south.  But the United States Department of Defense through the National Geospatial-Intelligence Agency has declared to be unacceptable for any official use.
+
+<img alt="weather-greenland-proj-470x289.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1744354495/weather-greenland-proj-470x289_smuctb.png" /></a>
+
 
 <a name="instrument-tech"></a>
 
@@ -302,5 +314,11 @@ Other Ambient Weather devices sold separately, with <a target="_blank" href="htt
 https://www.511mt.net/#&zoom=5.669649843806675&lon=-110.0832903124836&lat=45.86084166111809
 
 
+## Cameras
+
+https://www.youtube.com/live/8E84ogCRg8Y&t=1m
+OpenMV cameras meetup 
+
+
 <hr />
-<i>{{ page.lastchange }}</i>
+<i>{{ page.lastchange }}</i>x
