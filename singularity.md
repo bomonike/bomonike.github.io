@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-05"
-lastchange: "v011 + books :singularity.md"
+date: "2025-04-24"
+lastchange: "v013 + generations :singularity.md"
 file: "singularity"
 title: "Singularity"
 excerpt: "What can you do to survive or even thrive when AGI (Artificial General Intelligence) and humanoid robots usher in the Age of Technical Singularity?"
@@ -20,7 +20,19 @@ date: "2024-10-20"
 {% include whatever.html %}
 {% include _toc.html %}
 
-In Greek Mythology, "Pandora's Box" AGI is like
+## Generation
+
+Social scientists have come up with labels for each generation of people, each influenced by technologies they grew up using:
+  * Baby Boomers - Personal Computers
+  * Millennials - Internet
+  * Generation X - Smartphones
+  * Generation Y - Social Media, Amazon
+  * Generation Z - Internet Gaming, ChatGPT AI
+  * Generation Alpha now - AI vibe coding, Wearables, Robots
+
+Each generation is more advanced than the previous.
+
+But advances in AI, wearables, and hardware could introduce an entirely new stack—creating a more agentic, adaptive, and immersive computing experience for users everywhere.
 
 ## What Technical Singularity?
 
@@ -412,3 +424,37 @@ What a world dominated by superintelligent AI might look like:
    6. Mass automation will either liberate humanity’s potential or debilitate it.
 
 * <a target="_blank" href="https://www.blinkist.com/en/books/the-master-algorithm-en">BLINKLIST</a>: The Master Algorithm by Pedro Domingos, machine learning researcher
+
+https://www.youtube.com/watch?v=A_fOHpBqj50
+Strategies to Thrive as AIs get Better - Especially for programmers
+by Internet of Bugs
+
+## Agentic Rising
+
+DRAFT:
+
+The word "profound" is used to describe the impact of AI.
+
+* "Agentic" is not a feature of applications such as Excel or Word.
+* "Agentic" is not an new application to load on our iPhones.
+* "Agentic" is not an new way of working like Agile.
+
+"Agentic" is based on the word "agency", as in someone having agency to act on their own.
+"Agentic" is about Artificial Intelligence bots taking action independently.
+
+The shift is 
+
+An intermediate slot is humans managing the calendar (tasks) performed by each machine.
+
+Begin with alerting humans about events that have already occured.
+End with telling each person what to do, and when, to help them make decisions and get things done.
+
+Begin from a schedule for each electronic worker
+
+
+
+https://x.com/bytebytego/status/1907838355657863385
+MCP server intro
+
+
+In Greek Mythology, "Pandora's Box" AGI is like
