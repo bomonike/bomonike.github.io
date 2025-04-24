@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/skills
-date: "2025-02-11"
-lastchange: "v004 + shelter :skills.md"
+date: "2025-04-23"
+lastchange: "v005 + knots:skills.md"
 file: "skills"
 title: "Skills"
 excerpt: "Skills you need to live without modern conveniences. Survival and otherwise."
@@ -136,6 +136,7 @@ Living in tents
 * Fish Trap baskets
 * Poles
 * Lures
+* The measurement of <a target="_blank" href="https://youtube.com/shorts/fEyaYJt9TrA?si=0NTS2t7L3uOxevH-">Knots per hour</a> began with sailing ships who tied evenly-spaced knots on the rope.
 
 ## Hunt Wild Game
 
@@ -165,6 +166,7 @@ https://www.youtube.com/@AgPhD/shorts
 
 ## Shelter/Home
 
+* <a target="_blank" href="https://www.youtube.com/shorts/oT0FNIP7bck">Tie rope to tow car</a>
 * Tie tarps <a target="_blank" href="https://youtube.com/shorts/ajl7GSMlQto?si=uB8GzFgHmOPL2Sb5">using stopper knots</a> for faster release.
 * Make tent stakes from tree branches <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo&t=9m12s">VIDEO</a>
 * Use parachord to tie sticks together for bi-pod seat <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo">VIDEO</a>
