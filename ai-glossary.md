@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-04-13"
-lastchange: "v024 SFT RL :ai-glossary.md"
+date: "2025-04-23"
+lastchange: "v025 ACP :ai-glossary.md"
 url: https://bomonike.github.io/ai-glossary
 file: "ai-glossary"
 title: "AI Glossary"
@@ -88,6 +88,7 @@ Makers of LLM Foundation Models:
 ### A
 
 * Ablation Study | The process of removing components from an AI system to analyze their impact on performance.
+* ACP = <a target="_blank" href="https://docs.beeai.dev/acp/alpha/introduction">Agent Communication Protocol</a> | IBM's Linux Foundation project to standardize RESTful API for managing and executing agents, supporting synchronous, asynchronous, and streaming interactions between AI Agents within their BeeAI (i-am-bee) and externally.
 * AGI = Artificial General Intelligence | A hypothetical AI system that can perform any intellectual task that a human can, with flexibility at various activities. Often considered the ultimate goal of AI research.
 * ANI = Artificial Narrow Intelligence | AI systems designed to perform a specific task, such as facial recognition or language translation, but not capable of general human-like intelligence.
 * API = Application Programming Interface | facilitates communication across applications. APIs help to extract and share data using a set of definitions and protocols.
