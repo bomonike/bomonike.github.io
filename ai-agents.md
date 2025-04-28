@@ -43,37 +43,34 @@ Unlike humans, AI agents don't need to sleep, operate at lightning speed, and co
 
 Agentic means <strong>proactive</strong> -- they try to solve problems without constant human input.
 
+MCP Client is Claude client or IDE Cursor or Windsurf
 
 ## Levels of automation:
 
-* <strong>"Workflow Automation"</strong> follow a set sequence of tasks and tools are "programmatic" and not true AI agents.
-
-* <strong>"Agentic AI"</strong> is a term used to describe AI that performs <strong>pre-set</strong> automated tasks. Not True AI Agents.
+* <strong>"Workflow Automation"</strong> run using Python or other programming languages follow a set sequence of tasks are not "AI" nor "agents".
 
 * <strong>True "AI Agents"</strong>  are NOT bound to pre-defined tasks in a workflow. They act <strong>autonomously</strong>, as a team of agents,able to, based on their environment and objectives, <strong>choose</strong> to delegate to specialized tools to take actions. Modern AI Agents <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas#related-3">reason</a> through steps.
 
    True agents don't just respond to commands — they have their own objectives and make decisions and independently initiate action in service of those objectives. They can operate  and take initiative when appropriate.
 
-   True Agents have agency, which involves:
+   True Agents have <strong>agency</strong>, which means:
 
-   Autonomy - The ability to act independently without constant external direction
+   * Autonomy - The ability to act independently without constant external direction
 
-   Intentionality - Having goals and the capacity to pursue them
+   * Intentionality - Having goals and the capacity to pursue them
 
-   Self-awareness - Understanding one's own capabilities and limitations
+   * Self-awareness - Understanding one's own capabilities and limitations
 
-   Adaptability - Adjusting strategies based on changing circumstances
+   * Adaptability - Adjusting strategies based on changing circumstances
 
-   Responsibility - Bearing some causal or moral accountability for actions
-
-* <strong>AI Assistants</strong> - <a target="_blank" href="https://www.youtube.com/watch?v=ASABxNenD_U">VIDEO: The 10 Trillion Parameter AI Model With 300 IQ</a>
-
+   * Responsibility - Bearing some causal or moral accountability for actions
 
 * <strong>Vertical AI agents</strong> are tailored to address unique challenges and streamline processes within designated sectors such as healthcare, finance, or customer support. Vertical AI agents could be <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas">10X bigger than SAAS</a> repleaes entire teams and organizationa -- a fundamentally new paradigm.
 https://www.rippling.com/ works on verticals.
 Increase savings, automate busy work, and make better decisions by managing payroll, HR, IT & spend in one place.
 
 References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ASABxNenD_U">VIDEO: The 10 Trillion Parameter AI Model With 300 IQ</a>
    * https://www.youtube.com/watch?v=FwOTs4UxQS4 by Jeff Su "AI Agents, Clearly Explained"
    * https://medium.com/data-science-in-your-pocket/best-mcp-servers-you-should-know-019226d01bca
    * https://www.youtube.com/watch?v=cPdVbVx5Z3Q "end of explicit programming"
@@ -86,6 +83,7 @@ The "Javis" computer in Ironman movies is a form of AI Agent.
 PROTIP: AI Agents takes advantage of new "reasoning" and "chain of thought" capabilities in LLMs such as provided by Anthropic Claude.
 
 * "Deep" Research
+* contacts.google.com
 
 Gemini Code Assist agents:
 * Build apps
@@ -108,18 +106,23 @@ Take action:
 Update info:
 * Send a link to a Google Sheet (Microsoft Excel)
 * <a href="#CalendarApp">Google Calendar</a>
-* Google Tasks 
 * Gmail https://youtu.be/rxKBixN_iD0
+
+* Google Tasks 
+* jira for team Kanban tasks https://www.youtube.com/watch?v=qYChSSP8TTA
 
 * Perplexity to summarize articles
 * Post article on LinkedIn
 
 * Answer and make phone calls to book reservations
 
+* LinkedIn message
 * Discord https://youtu.be/pLOWqz7BxwU
 * Whatsapp phone calls
 * Slack
 * Text SMS via Twilio
+* Telegram
+
 * Zapier to various APIs
 * Microsoft Teams
 
@@ -133,6 +136,12 @@ Update info:
 * Jupyter notebooks that run custom Python code https://youtu.be/qkoEsqiWDOU
 * Docker containers
 
+* https://neo4j.com/blog/developer/model-context-protocol/
+
+"We will have more AI Agents than humans" <a target="_blank" href="https://www.youtube.com/watch?v=rI7tIkpusM8">--</a> Gaia
+
+## Supervision
+
 "The next billionaire can be a single person."
 
 In a world of AI Agents, human employees would oversee a team of AI agents, each dedicated to specific tasks.
@@ -141,6 +150,11 @@ In a world of AI Agents, human employees would oversee a team of AI agents, each
 
    * Customer service departments might rely on AI agents to deliver consistent, high-quality interactions without the need for constant training or replacements.
 
+https://ti.to/software-3/ai-engineer-worlds-fair-2025
+9am, June 3rd–5pm, June 5th, 2025
+Mariott Marquis, San Francisco, CA USA
+
+https://www.linkedin.com/pulse/how-ai-agents-revolutionize-workflow-automation-2025-deshmukh-pmp--vxpcf/
 
 ## Enabling tech: Screen Scraping
 
@@ -232,12 +246,22 @@ A2A needs MCP for the lower level.
    References:
    * https://www.youtube.com/watch?v=Sl9EZpE61xA by codebasics
    * https://www.youtube.com/watch?v=WGeHYPLbXMk by Max
-   * 
+   * https://www.youtube.com/watch?v=DAQ6msUVOp0 "Agent2Agent + (MCP to Tool) in Multi-Agent AI" to get weather info
+   * https://www.youtube.com/watch?v=tiNlTvpCKT8 "Google Launched A2A Protocol for AI Agents!" by Piyush Garg
+
+
+
 <hr />
 
 <a name="MCP"></a>
 
 ## MCP (Model Context Protocol)
+
+Think of MCP like HTTP. It’s a behind-the-scenes standard, a way for clients (like AI assistants) and servers (like tools and APIs) to communicate. You don't get excited about HTTP itself; you get excited about what it enables—browsers like Chrome, apps like Gmail, and the entire modern web. MCP is similar: it’s an enabling layer, not the end-user experience.
+
+Claude AI and ChatGPT , on the other hand, are like Chrome. They’re the part people interact with. While MCP defines how tools are exposed and called by AI agents, Zapier Agents show what’s possible with those capabilities.
+
+
 
 MCP provides contextual data to LLMs and AI assistants to solve problems. For instance, you can build an MCP documentation server to offer complete access to your documentation to IDEs and agentic frameworks, just like using llms.txt file.
 
@@ -267,7 +291,10 @@ IDEs Cursor and Windsurf provide a GUI to send npx commands to MCP servers which
    * https://www.youtube.com/watch?v=TQsP_PlCY1I by David Ondrej
    * https://www.youtube.com/watch?v=japoGcdbZGw by Rob Shocks "The Future of AI"
    * https://www.youtube.com/watch?v=oAoigBWLZgE by AI Jason
+
    * https://www.youtube.com/watch?v=5ZWeCKY5WZE by Underfitted
+   * https://www.youtube.com/watch?v=x8LQC6ut53Y by Underfitted "How to use MCP servers from a custom AI agent (step by step)"
+   * https://fnf.dev/3F3fMaB 
 
 Solo.io has announced the launch of its MCP Gateway, a Model Context Protocol gateway for the cloud native API gateway
 <a target="_blank" href="https://github.com/kgateway-dev/kgateway">kgateway</a> (previously called Gloo).
@@ -277,7 +304,15 @@ Solo.io has announced the launch of its MCP Gateway, a Model Context Protocol ga
 
 ## AI Agent Protocol Security 
 
-JOKE: The "S" in MCP stands for Security.
+JOKE: The "S" in MCP stands for Security. As in there is no S in MCP.
+
+To prevent unauthorized changes, pin specific versions of MCP server and tools they use.
+
+Have a thorough technical and user-level testing processes to detect misuse.
+
+To be able to see when MCP is misused, ensure that tool descriptions are clearly visible and traces of user-visible and AI-visible instructions. Trace the data lineage of transaction payloads at the data layer…
+
+To instill cross-server protection in guardrails: implement stricter boundaries and dataflow controls between MCP servers.
 
 A2A servers cannot be directly called from clients as a command.
 
@@ -285,6 +320,10 @@ A2A servers are registered in a catalog.
 
 Authentication in A2A is built-in out of the box (unlike MCP).
 
+
+References:
+   * AI Security group on LinkedIn: https://www.linkedin.com/groups/14545517/ and Twitter: https://x.com/AISecHub
+   * https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks
 
 ## Multi-Agent Hairball
 
@@ -323,7 +362,8 @@ https://microsoftlearning.github.io/mslearn-ai-studio/Instructions/01-Explore-ai
 
 https://learn.microsoft.com/en-us/collections/ee4ofotexqd15y?wt.mc_id=aiagenthack_hackathonlearningresource_webpage_cxp
 
-## Follow me for Azure AI
+
+## Azure AI in Python
 
 1. Get an Azure subscription.
 1. Sign in (using Passkey, if possible)
@@ -345,6 +385,7 @@ Required: libsodium ✔, libyaml ✔, openssl@3 ✔, python@3.12 ✔
    ```
    pip install azure-ai-projects
    pip install azure-identity
+   pip install azure-ai-textanalytics
    ```
    TODO: requirements.txt
 
@@ -363,28 +404,39 @@ Required: libsodium ✔, libyaml ✔, openssl@3 ✔, python@3.12 ✔
    * an Azure AI Face resource
 
 1. PROTIP: In your user home folder, create edit python.env file by manually transfer from Azure AI Foundry portal: https://ai.azure.com/build/overview
+   https://ai.azure.com/managementCenter/project/overview?
    ```
-   region="eastus2"  # in <region>.api.azureml.ms;
-   project_id="???"
-   hub_name="???"
-   project_name="???"
+   AZA_REGION="eastus2"
+   AZA_PROJECT="wmar-7833"
+   AZA_HUB_DISPLAY_NAME="wmar_ai-8943"
+   AZA_HUB_RESOURCE_NAME="wmar_ai-8943"
+   AZA_PROJECT_NAME=""
    ```
 
-
-   <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/02-azure-ai-foundry-sdk?pivots=python">LEARN: SDK</a>
-   
+1. Based on <a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/02-azure-ai-foundry-sdk?pivots=python">LEARN: SDK</a>
+   ``` 
+   #project_connection_string = "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>"
+   project_connection_string = f"{AZA_REGION}.api.azureml.ms;{AZA_PROJECT};{AZA_HUB_NAME};{AZA_PROJECT_NAME}"
+   project_client = AIProjectClient.from_connection_string(
+         credential=DefaultAzureCredential(),
+         conn_str=project_connection_string,
+      )
    ```
-from azure.ai.projects import AIProjectClient
-from azure.ai.projects.models import ConnectionType
-from azure.identity import DefaultAzureCredential
-...
-
-project_connection_string = "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>"
-project_client = AIProjectClient.from_connection_string(
-      credential=DefaultAzureCredential(),
-      conn_str=project_connection_string,
-    )
+   The above is dependes on:   
    ```
+   from azure.ai.projects import AIProjectClient
+   from azure.ai.projects.models import ConnectionType
+   from azure.identity import DefaultAzureCredential
+   ...
+
+1. Create Azure OpenAI : 
+   https://portal.azure.com/#create/Microsoft.CognitiveServicesOpenAI
+
+   "Azure OpenAI Service provides access to OpenAI's powerful language models, including all the latest OpenAI models. These models can be easily adapted to your specific tasks, including but not limited to content generation, summarization, image understanding, semantic search, and natural language to code translation. Top use cases include Call Centers, Virtual Assistants, Accessibility, Content Generation, and Code Development. The service also features the Assistants API, Fine Tuning capabilities and many ways to connect your data to the service for conversational experiences. The service can be scaled through Standard (tokens) and Provisioned (PTUs) deployment types.
+
+https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/03-connections?pivots=python
+Each resource is a connection to an external service, such as Azure AI services, Azure storage, Azure AI search, and others.
+
 
 
 ### Azure Hackathon
@@ -413,7 +465,7 @@ https://microsoft.github.io/AI_Agents_Hackathon/
 * <a target="_blank" href="https://aka.ms/ai-agents-beginners/semantic-kernel">Semantic Kernel</a>
 * <a target="_blank" href="https://aka.ms/ai-agents/autogen">https://aka.ms/ai-agents/autogen</a>
 
-
+* 
 
 https://gateway.on24.com/wcc/eh/4304051/category/142477/ai-agents/?wt.mc_id=1reg_25323_webpage_reactor
 Join TheSource EHub to explore top picks including trainings, livestreams, repositories, technical guides, blogs, downloads, certifications, and more, all updated monthly. The AI Agent section offers essential resources for creating AI Agents, while other sections provide insights into AI, development tools, and programming languages
