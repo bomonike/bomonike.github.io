@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-04-27"
-lastchange: "v002 + summary :ai-scaling.md"
+lastchange: "v003 + references :ai-scaling.md"
 url: "https://bomonike.github.io/ai-scaling"
 file: "ai-scaling"
 title: "Scaling dynamic AI infrastructure"
@@ -19,14 +19,32 @@ created: "2025-04-27"
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
+## Why Ray?
+
+Ray enables developers to run Python code at scale on <strong>Kubernetesclusters</strong> by abstracting orchestration on individual machines. 
+
+Ray is a high-performance distributed execution framework targets large-scale machine learning and reinforcement learning applications. Ray's MLOps ecosystem includes features for:
+   * Developer tools
+   * Labeling
+   * Experiment tracking
+   * Model Registry
+   * Orchestration
+   * Monitoring
+   * Feature Stores
+
+Our project is to scale MCP servers:
+* https://www.perplexity.ai/search/how-is-mcp-scaled-across-many-E2FBFN9CSGutRwn3YafkFw#0
+* https://www.arsturn.com/blog/mcp-server-strategies-effective-methods-for-scaling-up
+* Advice such as "start simple" is plain wrong with scaling: https://www.reddit.com/r/mcp/comments/1k9knt9/how_are_teams_deploying_mcp_servers_for/?rdt=61954
 
 ## Dive in
 
-1. Signup
+1. Signup at ray.io
 1. Take the [Intro to Ray](https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60941277-welcome-to-this-course) 
-   by Max (author of OReilly book "Ray: A Distributed Computing Framework for Python")
+   by Max (author of OReilly book "Ray: A Distributed Computing Framework for Python").
+   * Project code is at https://github.com/ray-project/ray and https://github.com/ray-project/ray-docker
 
-1. Anyscale provides free tutorial and certification.
+1. Anyscale provides free tutorial and free certification (just 10 questions)
 
 1. Setup our own Ray.io instance locally on Wilson's MacMini.
 1. Install MCP with agents within our local Ray.io instance.
@@ -48,19 +66,15 @@ created: "2025-04-27"
 1. Udemy
 1. Market to colleges
 
+## Customers
+
+Customer cases studies:
+* <a target="_blank" href="https://www.youtube.com/watch?v=rowxoxMsJH0&list=PLsnl23XQgokHHhG0Rbr4Wn5fG1cGWh5vP&index=12&pp=gAQBiAQB">VIDEO</a>: 31:38 Distributed training with Ray on Kubernetes at Lyft
+
 
 ## Ray.io by Anyscale hosted platform
 
-Ray is a high-performance distributed execution framework targets large-scale machine learning and reinforcement learning applications. Ray's MLOps ecosystem includes features for:
-   * Developer tools
-   * Labeling
-   * Experiment tracking
-   * Model Registry
-   * Orchestration
-   * Monitoring
-   * Feature Stores
-
-Ray was first developed by UC Berkeley’s <a target="_blank" href="https://rise.cs.berkeley.edu/" title="REAL-TIME INTELLIGENT SECURE EXPLAINABLE SYSTEMS">RISELab</a>. 
+Ray was first developed in 2016 by UC Berkeley’s <a target="_blank" href="https://rise.cs.berkeley.edu/" title="REAL-TIME INTELLIGENT SECURE EXPLAINABLE SYSTEMS">RISELab</a>  (the successor to the AMPLab that created Apache Spark and Mesos). 
 It's now open-sourced (with 36.8k stars) at:
 
    <ul><a target="_blank" href="https://github.com/ray-project/ray">https://github.com/ray-project/ray</a><br />
@@ -70,6 +84,28 @@ It's now open-sourced (with 36.8k stars) at:
    Srinath Krishnamachari</a>, who also created https://github.com/srinathk10/ray_mac_dev
    </ul>
 
+## Anyscale as employer
+
+https://www.builtinsf.com/company/anyscale
+at 415-267-9902, SOMA neighborhood: 55 Hawthorne St 9th Floor, San Francisco, CA 94105
+<a target="_blank" href="https://maps.app.goo.gl/CDv6seKziffpyh5i7">Map</a>
+(across the street from 3-Michelin star Asian restaurant BenuSF.com)
+
+https://www.glassdoor.com/Reviews/Anyscale-CA-Reviews-E3377996.htm
+rates 4.8/5 stars among 100 employees.
+Employer pays 99% of health insurance premiums
+but does not match 401k.
+
+100% approve of CEO <a target="_blank" href="https://www.linkedin.com/in/keertimelkote/">Keerti Melkote</a> who joined in July 2024 after being CTO & CEO of Aruba Networks thru to purchase by HPE.
+
+### KubeRay
+
+The KubeRay project (https://ray-project.github.io/kuberay/) is the standard way of deploying and managing Ray clusters on Kubernetes. KubeRay packages key Ray components into “pods.” From https://bit.ly/ray-arch:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1745817202/ray-kuberay-1713x628_jfbxnh.jpg"><img  alt="ray-kuberay-1713x628.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1745817202/ray-kuberay-1713x628_jfbxnh.jpg" /></a>
+
+A central component of KubeRay is the “KubeRay Operator” responsible for starting and maintaining the lifetime of other Ray pods – headnode pod, worker node pods, and the autoscaler pod (responsible for increasing or decreasing the size of the cluster). In particular, for online serving/service scenarios (which is becoming more popular now), the KubeRay operator is responsible for making sure the Ray Headnode pod is highly available.
+
 ## Anyscale
 
 Anyscale is the commercial enhancement built on top of Ray to provide:
@@ -78,28 +114,81 @@ Anyscale is the commercial enhancement built on top of Ray to provide:
 * Enterprise governance and security
 * Seamless integrations
 
+## Components
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1745808403/anyscale-arch-7680x4320_go2co5.png"><img width="300" align="right" alt="anyscale-arch-7680x4320.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1745808403/anyscale-arch-7680x4320_go2co5.png" /></a>
+
+<strong>Compute Observability</strong>
+
+<a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html"><img align="right" width="300" alt="ray-map-798x1058.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1745807563/ray-map-798x1058_e6s4ce.png" /></a>
+
+Metrics are reported during training using ray.train.report NOT after every epoch.
+
+The purpose of the Ray take batch method in Ray's Dataset API is retrieves a specified number of rows from a distributed dataset as a single batch. 
+
+## Ray Core
+
+Ray Core <a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html#ray-core-quickstart">Quickstart</a> is a general-purpose framework to scale out Python apps with distributed parallelism.
+Ray Core provides asynchronous/concurrent program execution on a cluster scale, by spanning multiple machines and heterogeneous computing devices, but abstracted away from developers.
+
+The basic application concepts a developer should understand in order to develop and use Ray programs:
+
+* Task: A remote function invocation. This is a single function invocation that executes on a process different from the caller, and potentially on a different machine. A task can be stateless (a “@ray.remote” function) or stateful (a method of a “@ray.remote” class – see Actor below). A task is executed asynchronously with the caller: the “.remote()” call immediately returns one or more “ObjectRefs” (futures) that can be used to retrieve the return value(s).
+
+* Object: An application value. These are values that are returned by a Task/Actor, or created through “ray.put”. Objects are immutable: they cannot be modified once created. A worker can refer to an object using an “ObjectRef.”
+
+* Actor: A stateful worker process (an instance of a “@ray.remote” class). Actor tasks must be submitted with a handle, or a Python reference to a specific instance of an actor, and can modify the actor’s internal state during execution.
+
+* Driver: The program root, or the “main” program. This is the code that runs “ray.init()”.
+
+* Job: The collection of tasks, objects, and actors originating (recursively) from the same driver, and their runtime environment. There is a 1:1 mapping between drivers and jobs.
+
+
 ## Ray's AI libraries
 
 Built on top of Ray Core,
 Ray's AI libraries <a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html#libraries-quickstart">Quikstart</a>
 target <strong>Workload Optimization</strong>. By order of usage during dev lifecycle) scales ML workloads:
-   * RLib (Ray Library)
-   * Data loading - Ingest and transform raw data; perform batch inference by mapping the checkpointed model to batches of data.
-   * Train models - use Trainer to scale XGBoost model training
-   * Tune models - use Tuner to scale hyperparameter tuning
-   * Serve models to clients - Deploy the model for online inference
+
+* <a target="_blank" href="https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60941126-introduction-to-ray-data">INTRO</a>: Ray Data (Loading) - Ingest and transform raw data; perform batch inference by mapping the checkpointed model to batches of data. The __ method is used to load images from a file-based datasource.
+
+   ```
+   dataset = ray.data.read_parquet(
+    "s3://anyscale-training-data/intro-to-ray-air/nyc_taxi_2021.parquet"
+)
+   ```
+
+   * <a target="_blank" href="https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60940883-introduction-to-ray-train">INTRO</a>: Ray Train and RLib (Reinforcement Learning library) - use Trainer to scale XGBoost model training
+   
+   * RaySGD (Stochastic Gradient Descent) to train Machine Learning?
+
+   * <a target="_blank" href="https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60941057-introduction-to-ray-tune">INTRO</a>: Ray Tune - use Tuner to scale HyperParameter Optimization (HPO) tuning. The train_my_model(config: dict[str,Any]) function signature is expected for the Ray Tune training. __ search algorithm is the default used for hyperperameter tuning.
+   
+   * <a target="_blank" href="https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60941259-introduction-to-ray-serve">INTRO</a>: Ray Serve - Deploy the model to serve online inference (as HTTP servers). Ray Serve can HTTP routing and OpenAPI docs @serve.ingress FastAPI feature to integrate. Percentages in the resource allocation can specify fractional compute resources for a deployment replica. Request consolidation is not a feature. 
+
+   * Community Integrations?
+
+The ScalingConfig utility is used to configure the number of training workers in a Trainer or Tuner.
+
+The ResNet neural network model is used in the PyTorch implementation of the MNIST Classifer.
 
 ### Sample Code Programming Ray
 
 Ray is a distributed execution framework to scale Python applications.
 ```
 pip install 'ray[default]'
+
+! pip install -U ray==2.3.0 xgboost_ray==0.1.18
 ```
 Ray is coded as a wrapper around app functions implemented in C++ and Python:
-   * @ray.init() - Initialize Ray runtime
-   * @ray.remote - converts functions/classes into distributed units
-   * @ray.remote() - Launches asynchronous tasks
-   * ray.get - retrieve results from remote tasks
+   * @ray.init() - Initialize the "Ray context" runtime and makes sure the current process is connected to a Ray Cluster.
+   * @ray.remote - Decorates functions/classes so they become Ray Tasks and Actors to be executed on a cluster (as distributed units)
+   * @ray.remote() - Postfix to trigger the asynchronous execution of remote function calls and class instantiations
+   * ray.put(x) - store Python object x in Ray object store and makes sure the object can be accessed by other Ray Tasks and Actors
+   * ray.get(y) - retrieve results from remote tasks. Blocking call that waits for the Python object to be resolved. 
+      If y involves a function call, ray.get() will block until the execution of the function itself, and 
+      all other required function calls to finish. 
+      Instead, if y was earlier stored in Ray object store ray.get() will block until the Python object is retrived from the Ray object store.
 
 So Ray is "invasive". Once Ray is used, you're all in.
 
@@ -110,10 +199,10 @@ import time
 import ray
 
 # Initialize Ray runtime (automatically uses available cores):
-ray.init()
+ray.init(num_cpus=4)
 
 # Convert function to distributed task:
-@ray.remote
+@ray.remote(num_cpus=2, num_gpus=0)
 def process_data(item):
     time.sleep(item / 10)  # Simulate work
     return f"Processed {item}"
@@ -172,26 +261,19 @@ For cluster deployment, add ray.init(address='auto') to connect to existing clus
 "Ray’s features make it suitable for any Python-based application that needs cluster-wide scalability. 
 PyTorch.
 
-## Components
+https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60941259-introduction-to-ray-serve
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1745808403/anyscale-arch-7680x4320_go2co5.png"><img width="300" align="right" alt="anyscale-arch-7680x4320.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1745808403/anyscale-arch-7680x4320_go2co5.png" /></a>
+<a target="_blank" href="https://www.youtube.com/watch?v=cYObRCAb1Fs">VIDEO: Create Docker file for Python program</a>
 
-<strong>Compute Observability</strong>
 
-<a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html"><img align="right" width="300" alt="ray-map-798x1058.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1745807563/ray-map-798x1058_e6s4ce.png" /></a>
+## Debugging and monitoring 
 
-Ray Core <a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html#ray-core-quickstart">Quickstart</a>
-scales Python apps with distributed parallelism
-
-Debugging and monitoring <a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html#debugging-and-monitoring-quickstart">Quickstart</a> 
+<a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html#debugging-and-monitoring-quickstart">Quickstart</a> 
 
 Ray Cloud <a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html#ray-cluster-quickstart">Quickstart</a>
 enables use of GPUs being managed as clusters of containers managed by Kubernetes.
 
 "Ray meets the needs of ML/AI applications—without requiring the skills and DevOps effort typically required for distributed computing.
-
-
-
 
 
 * anyscale.com/academy written by Dean Wampler
@@ -206,6 +288,8 @@ enables use of GPUs being managed as clusters of containers managed by Kubernete
 
 * online and in-person Ray Summit conferences (http://raysummit.org), speaking at and sponsoring other conferences, tutorial development, webinars, blog posts, advertising, etc.
 
+* https://www.upwork.com/services/search?nbs=1&q=anyscale
+
 ### Anyscale People
 
 <a target="_blank" href="https://www.linkedin.com/in/robert-nishihara-b6465444/">
@@ -216,7 +300,17 @@ He's <a target="_blank" href="https://www.linkedin.com/in/deanwampler/">now IBM'
     * Author of "Programming Scala, Third Edition", 2021
     * polyglotprogramming.com/talks
 
+<a target="_blank" href="https://www.linkedin.com/in/dmatrix/">Jules Damji</a>, pormerly at Databrickss, is Lead Developer Advocate at Anyscale, gave these talks:
+   * https://github.com/dmatrix/ray-core-tutorial#-setup-instructions-for-local-laptop-
+   * https://github.com/dmatrix/ray-misc-examples
+   * https://github.com/ray-project/ray-educational-materials
+   * Feb 16, 2022 <a target="_blank" href="https://www.youtube.com/watch?v=LmROEotKhJA&list=PLsnl23XQgokHHhG0Rbr4Wn5fG1cGWh5vP&index=9">VIDEO</a> "Ray: A Framework for Scaling and Distributing Python & ML Applications"
+   * <a target="_blank" href="https://www.youtube.com/watch?v=d6VK3czJ44I">VIDEO "Introduction to Ray for distributed and machine learning applications in Python"</a>
+
 ## Competitors:
+
+* Apache Spark  <a target="_blank" href="https://www.youtube.com/watch?v=yLKHHiT2nWw&list=PLsnl23XQgokHHhG0Rbr4Wn5fG1cGWh5vP&index=4" title="How does Ray compare to Apache Spark?">VIDEO</a>
+* Palantir
 * DaSC distributed arrays - visualization of its direct-to-disk piece and click graph
 * MXNet (now Apache TVM)
 * NVIDIA
@@ -226,8 +320,57 @@ He's <a target="_blank" href="https://www.linkedin.com/in/deanwampler/">now IBM'
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png"><img alt="odoo-docker-officialapps-240522.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png" /></a>
 
-## References
+
+## Videos
+
+<a target="_blank" href="https://github.com/jonathandinu">Jonathan Dinu</a> has several videos (until 2021) on the <a target="_blank" href="https://www.youtube.com/@jonathanuniversity">University of Jonathan</a> channel:
+* <a target="_blank" href="https://www.youtube.com/watch?v=cEF3ok1mSo0">Ray: A Framework for Scaling and Distributing Python & ML Applications</a>
+* https://github.com/jonathandinu/spark-ray-data-science running on Juypter
+* <a target="_blank" href="https://learning.oreilly.com/videos/-/9780136805922/">Spark, Ray, and Python for Scalable Data Science</a> Pearson Live Lessons June 2021
+7.5 Hours of Video Instruction Conceptual overviews and code-along sessions get you scaling up your data science projects using Spark, Ray, and Python. Overview Machine learning is moving from futuristic AI projects to data analysis on your desk. You need to go beyond following along in discussions to coding machine learning tasks. Spark, Ray, and Python for Scalable Data Science LiveLessons show you how to scale machine learning and artificial intelligence projects using Python, Spark, and Ray.
+
+   docker run -p 8888:8888 -p 8265:8265 -p 8000:8000 -p 8089:8089 -v $(pwd):/home/jovyan/ --pull 'always' psychothan/scaling-data-science
+
+   
+## Books
+
+* <a target="_blank" href="https://learning.oreilly.com/library/view/-/9798868803765/">BOOK: MLOps with Ray: Best Practices and Strategies for Adopting Machine Learning Operations</a>
+342 pages Apress June 2024
+By Hien Luu, Max Pumperla and Zhe Zhang
+"Understand how to use MLOps as an engineering discipline to help with the challenges of bringing machine learning models to production quickly and consistently. This book will help companies worldwide to adopt and incorporate machine learning into their processes and products to improve their competitiveness. The book delves into this engineering discipline's aspects and components and explores best practices and case studies.
+1. Introduction to MLOps
+2. MLOps Adoption Strategies and Case Studies
+3. Feature Engineering Infrastructure
+4. Model Training Infrastructure
+5. Model Serving Infrastructure
+6. ML Observability Infrastructure
+7. Ray Core
+8. An Introduction to the Ray AI Libraries
+9. The Future of MLOps
 
 
-https://learning.oreilly.com/library/view/-/9781633437203/
+* <a target="_blank" href="https://learning.oreilly.com/library/view/-/9781098118792/">BOOK: Scaling Python with Ray"</a>
+266 pages November 2022 O'Reilly Media, Inc.
+By Holden Karau and Boris Lublinsky
+Serverless computing enables developers to concentrate solely on their applications rather than worry about where they've been deployed. With the Ray general-purpose serverless implementation in Python, programmers and data scientists can hide servers, implement stateful applications, support direct communication between tasks, and access hardware accelerators. In this book, experienced software architecture practitioners Holden Karau and Boris Lublinsky show you how to scale existing Python applications and pipelines, allowing you to stay in the Python ecosystem while reducing single points of failure and manual scheduling.
+
+* https://learning.oreilly.com/library/view/-/9781633437203/
 LLMs in Production
+
+* <a target="_blank" href="https://learning.oreilly.com/library/view/-/9781098117214/">BOOK: Learning Ray</a>
+271 pages O'Reilly Media, Inc. February 2023
+By Max Pumperla, Edward Oakes and Richard Liaw
+"Get started with Ray, the open source distributed computing framework that simplifies the process of scaling compute-intensive Python workloads. With this practical book, Python programmers, data engineers, and data scientists will learn how to leverage Ray locally and spin up compute clusters. You'll be able to use Ray to structure and run machine learning programs at scale. Authors Max Pumperla, Edward Oakes, and Richard Liaw show you how to build machine learning applications with Ray.
+
+* <a target="_blank" href="https://learning.oreilly.com/library/view/-/9781492085768/">BOOK: What Is Ray?</a>
+46 pages O'Reilly Media, Inc. September 2020
+By Dean Wampler
+"Dean Wampler from Anyscale introduces you to Ray, an open source project that provides a concise and intuitive Python API for defining tasks that need to be distributed. Built by researchers at UC Berkeley, Ray does most of the tedious work of running workloads at massive scale. For the majority of distributed workloads, this guide shows you how Ray provides a flexible, efficient, and intuitive way to get work done."
+
+* Ownership: A Distributed Futures System for Fine-Grained Tasks. In NSDI (pp. 671-686).
+   by Wang, S., Liang, E., Oakes, E., Hindman, B., Luan, F.S., Cheng, A. and Stoica, I., 2021, April. 
+
+* In reference to RPC: it’s time to add distributed memory. In HotOS (pp. 191-198).
+   By Wang, S., Hindman, B. and Stoica, I., 2021, June. 
+
+* Ray v2 Architecture (https://bit.ly/ray-arch) by Ray Team, October 2022
