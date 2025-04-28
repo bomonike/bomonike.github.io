@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-04-27"
-lastchange: "v003 + references :ai-scaling.md"
+date: "2025-04-28"
+lastchange: "v004 + references :ai-scaling.md"
 url: "https://bomonike.github.io/ai-scaling"
 file: "ai-scaling"
 title: "Scaling dynamic AI infrastructure"
@@ -19,9 +19,16 @@ created: "2025-04-27"
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
-## Why Ray?
+## Why Ray / Anyscale?
 
 Ray enables developers to run Python code at scale on <strong>Kubernetesclusters</strong> by abstracting orchestration on individual machines. 
+
+Anyscale.com is the commercial enhancement built on top of Ray to provide:
+   * RayTurbo: Anyscale’s optimized engine for Ray, delivering improved performance, scale, efficiency, and reliability
+   * Interactive notebooks and workspaces
+   * Enterprise governance and security
+   * Seamless integrations
+
 
 Ray is a high-performance distributed execution framework targets large-scale machine learning and reinforcement learning applications. Ray's MLOps ecosystem includes features for:
    * Developer tools
@@ -106,13 +113,16 @@ The KubeRay project (https://ray-project.github.io/kuberay/) is the standard way
 
 A central component of KubeRay is the “KubeRay Operator” responsible for starting and maintaining the lifetime of other Ray pods – headnode pod, worker node pods, and the autoscaler pod (responsible for increasing or decreasing the size of the cluster). In particular, for online serving/service scenarios (which is becoming more popular now), the KubeRay operator is responsible for making sure the Ray Headnode pod is highly available.
 
-## Anyscale
+## RaySerice for Observability
 
-Anyscale is the commercial enhancement built on top of Ray to provide:
-* RayTurbo: Anyscale’s optimized engine for Ray, delivering improved performance, scale, efficiency, and reliability
-* Interactive notebooks and workspaces
-* Enterprise governance and security
-* Seamless integrations
+In KubeRay, creating a RayService will first create a RayCluster and then create Ray Serve applications once the RayCluster is ready.
+
+RayService is a Custom Resource Definition (CRD) designed for Ray Serve. 
+
+https://docs.ray.io/en/latest/cluster/kubernetes/troubleshooting/rayservice-troubleshooting.html#observability
+
+Metrics - Logs - Traces - Dashboard - Triggers - Alerts
+
 
 ## Components
 
@@ -126,12 +136,17 @@ Metrics are reported during training using ray.train.report NOT after every epoc
 
 The purpose of the Ray take batch method in Ray's Dataset API is retrieves a specified number of rows from a distributed dataset as a single batch. 
 
+
+<a name="RayCore"></a>
+
 ## Ray Core
 
 Ray Core <a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html#ray-core-quickstart">Quickstart</a> is a general-purpose framework to scale out Python apps with distributed parallelism.
 Ray Core provides asynchronous/concurrent program execution on a cluster scale, by spanning multiple machines and heterogeneous computing devices, but abstracted away from developers.
 
 The basic application concepts a developer should understand in order to develop and use Ray programs:
+
+* Driver
 
 * Task: A remote function invocation. This is a single function invocation that executes on a process different from the caller, and potentially on a different machine. A task can be stateless (a “@ray.remote” function) or stateful (a method of a “@ray.remote” class – see Actor below). A task is executed asynchronously with the caller: the “.remote()” call immediately returns one or more “ObjectRefs” (futures) that can be used to retrieve the return value(s).
 
@@ -146,11 +161,11 @@ The basic application concepts a developer should understand in order to develop
 
 ## Ray's AI libraries
 
-Built on top of Ray Core,
+Built on top of <a href="#RayCore">Ray Core</a>,
 Ray's AI libraries <a target="_blank" href="https://docs.ray.io/en/latest/ray-overview/getting-started.html#libraries-quickstart">Quikstart</a>
 target <strong>Workload Optimization</strong>. By order of usage during dev lifecycle) scales ML workloads:
 
-* <a target="_blank" href="https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60941126-introduction-to-ray-data">INTRO</a>: Ray Data (Loading) - Ingest and transform raw data; perform batch inference by mapping the checkpointed model to batches of data. The __ method is used to load images from a file-based datasource.
+* <a target="_blank" href="https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60941126-introduction-to-ray-data">INTRO</a>: Ray Data (Loading) - Ingest and transform raw data; perform batch inference by mapping the checkpointed model to batches of data. To load images from a file-based datasource:
 
    ```
    dataset = ray.data.read_parquet(
@@ -180,8 +195,10 @@ pip install 'ray[default]'
 
 ! pip install -U ray==2.3.0 xgboost_ray==0.1.18
 ```
+So Ray is "invasive". Once Ray is used, you're all in.
+
 Ray is coded as a wrapper around app functions implemented in C++ and Python:
-   * @ray.init() - Initialize the "Ray context" runtime and makes sure the current process is connected to a Ray Cluster.
+   * @ray.init() - Initialize the "Ray context" runtime and makes sure the current process is connected to a <a href="#RayCluster">Ray Cluster</a>.
    * @ray.remote - Decorates functions/classes so they become Ray Tasks and Actors to be executed on a cluster (as distributed units)
    * @ray.remote() - Postfix to trigger the asynchronous execution of remote function calls and class instantiations
    * ray.put(x) - store Python object x in Ray object store and makes sure the object can be accessed by other Ray Tasks and Actors
@@ -190,7 +207,27 @@ Ray is coded as a wrapper around app functions implemented in C++ and Python:
       all other required function calls to finish. 
       Instead, if y was earlier stored in Ray object store ray.get() will block until the Python object is retrived from the Ray object store.
 
-So Ray is "invasive". Once Ray is used, you're all in.
+<a name="RayCluster"></a>
+
+## Ray Cluster
+
+In the <a target="_blank" href="https://www.youtube.com/watch?v=cEF3ok1mSo0">diagram from this VIDEO</a>:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1745868049/ray-remote-2202x1114_ovpbhd.png"><img width="300" align="right" alt="ray-remote-2202x1114.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1745868049/ray-remote-2202x1114_ovpbhd.png" /></a>
+
+Obserability would involve these metrics displayed over time in dashboards:
+   * The number of Remote Clusters in each server
+   * The count of <strong>Worker Processes</strong> in each Head Node, Remote Cluster, and Remote Worker Node
+   * The memory used by <strong>Worker Processes</strong>  Head Nodes, Remote Clusters, and Remote Worker Nodes
+   * The tasks and actors in each Scheduler within each Raylet
+   * The number of objects in each Object Store
+   * The rate of churn of objects in each Object Store
+   * The span of time between Raylets communicating
+   * The number of Worker Processes within each Worker Node
+   * Global Control Store (GCS)
+
+
+## Python Code Example
 
 Here's a Basic Ray Task Example in Python, using Ray.io for distributed computing, incorporating key concepts from the documentation:
 
