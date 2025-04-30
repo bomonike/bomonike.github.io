@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-04-30"
-lastchange: "v007 rename from anyscale-ray :anyscale-ray.md"
+lastchange: "v008 paid features :anyscale-ray.md"
 url: "https://bomonike.github.io/anyscale-ray"
 file: "anyscale-ray"
 title: "MLOps using Ray at Anyscale to scale dynamic AI infrastructure"
@@ -21,13 +21,7 @@ created: "2025-04-27"
 
 ## Why Ray / Anyscale?
 
-Ray enables developers to run Python code at scale on <strong>Kubernetesclusters</strong> by abstracting orchestration on individual machines. 
-
-Anyscale.com is the commercial enhancement built on top of Ray to provide:
-   * RayTurbo: Anyscale’s optimized engine for Ray, delivering improved performance, scale, efficiency, and reliability
-   * Interactive notebooks and workspaces
-   * Enterprise governance and security
-   * Seamless integrations
+Ray enables developers to run Python code at scale on <strong>Kubernetes clusters</strong> by abstracting orchestration on individual machines. 
 
 Ray is a high-performance distributed execution framework targets large-scale machine learning and reinforcement learning applications. Ray's MLOps ecosystem includes features for:
    * Developer tools
@@ -38,7 +32,35 @@ Ray is a high-performance distributed execution framework targets large-scale ma
    * Monitoring
    * Feature Stores
 
-Our project is to scale MCP servers:
+   * SSO / SAML is available on Ray & Anyscale
+
+Anyscale.com is the company offering a paid edition of Ray built on top of Ray to provide:
+   * <strong>RayTurbo</strong>: Anyscale’s optimized engine for Ray, delivering "5x" improved performance, Elastic Training, Zero-downtime rollouts, Multi-AZ, Replica compaction
+
+   * Interactive notebooks and workspaces
+   * Seamless integrations
+
+   * Job Queues, Retries
+   * Multi Cloud & On Prem support
+   * Workspace (VSCode IDE running on cluster head node)
+   * High Availability Services (such as setup GCS w/Redis)
+   
+   Enterprise governance and security:
+   * Quota Management
+   * Data Encryption
+   * Access Controls
+   * Usage Tracking
+   * Audit Logs
+
+   Observability & Monitoring: https://docs.anyscale.com/monitoring/tracing/ (OTel integration)
+   * Persistent Logs
+   * Export logs to Datadog, CloudWatch
+   * Alerting
+   * Unified Log Viewer
+   * Tracing from Pofiler
+   * Distributed Debugger
+
+## Our project is to scale MCP servers:
 * https://www.perplexity.ai/search/how-is-mcp-scaled-across-many-E2FBFN9CSGutRwn3YafkFw#0
 * https://www.arsturn.com/blog/mcp-server-strategies-effective-methods-for-scaling-up
 * Advice such as "start simple" is plain wrong with scaling: https://www.reddit.com/r/mcp/comments/1k9knt9/how_are_teams_deploying_mcp_servers_for/?rdt=61954
@@ -54,8 +76,8 @@ Our project is to scale MCP servers:
 
 1. Setup our own Ray.io instance locally on Wilson's MacMini.
 1. Install MCP with agents within our local Ray.io instance.
-   * Azure MCP 
    * Anthropic Reference MCP
+   * Azure MCP  https://github.com/Azure/azure-mcp?tab=readme-ov-file
 
 1. Setup in cloud Digital Ocean or Hetzner.
 
