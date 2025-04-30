@@ -942,6 +942,7 @@ created: "2024-12-28"
 *	OTR	=	Off The Record (privacy)
 *	OVAL	=	Open Vulnerability and Assessment Language
 *	OU	=	Organizational Unit
+* OUI = Organizational Unique Identifier | The first three bytes of the six-byte field of the MAC address the IEEE identifies as vendor of the network adapter.
 * OWA = Outlook Web Application (Microsoft Exchange web interface)
 *	OWASP	=	Open Web Application Security Project
 
