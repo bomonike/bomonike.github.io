@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-04-09"
-lastchange: "v0201 + ag-tech :README.md"
+date: "2025-05-01"
+lastchange: "v0203 + nvidia :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -28,6 +28,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
 1. <a target="_blank" href="https://bomonike.github.io/alexa">alexa</a>
 1. <a target="_blank" href="https://bomonike.github.io/algorithmic-complexity">algorithmic-complexity</a>
+1. <a target="_blank" href="https://bomonike.github.io/anyscale-ray">anyscale-ray</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
@@ -84,7 +85,6 @@ Topics alphabetically:
    <a name="J"></a>
    ### J
 
-1. <a target="_blank" href="https://bomonike.github.io/jetson">jetson</a>
 1. <a target="_blank" href="https://bomonike.github.io/jupyter">jupyter</a>
 
    <a name="K"></a>
@@ -116,6 +116,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/neo4j">neo4j</a>
 1. <a target="_blank" href="https://bomonike.github.io/networking">networking</a>
 1. <a target="_blank" href="https://bomonike.github.io/nft">nft (Non-Fungible Tokens) on web3</a>
+1. <a target="_blank" href="https://bomonike.github.io/nvidia">nvidia</a>
 
    <a name="O"></a>
    ### O
