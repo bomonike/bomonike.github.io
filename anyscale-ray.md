@@ -19,9 +19,21 @@ created: "2025-04-27"
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
+This article defines how you can run a large set of <strong>MCP servers</strong> serving lots of AI Agents in production mode.
+
+The contribution of this article is use of CI/CD pipline that <strong>automates setup</strong> using Enterprise Anyscale (Ray.io) locally (on a MacMini) and within AWS, Azure, GCP, Digital Ocean, Hertzer (and other) clouds.
+
 ## Why Ray / Anyscale?
 
 Ray enables developers to run Python code at scale on <strong>Kubernetes clusters</strong> by abstracting orchestration on individual machines. 
+
+Workloads to use Ray for:
+   * Data processing
+   * Parallel processing Python code (using ray.remote)
+   * Reinforcement learning
+   * Distributed training
+   * Hyperparameter tuning
+   * Batch & Online inference
 
 Ray is a high-performance distributed execution framework targets large-scale machine learning and reinforcement learning applications. Ray's MLOps ecosystem includes features for:
    * Developer tools
@@ -182,15 +194,13 @@ Ray Core provides asynchronous/concurrent program execution on a cluster scale, 
 
 The basic application concepts a developer should understand in order to develop and use Ray programs:
 
-* Driver
+* <strong>Driver</strong>: The program root, or the “main” program. This is the code that runs “ray.init()”.
 
-* Task: A remote function invocation. This is a single function invocation that executes on a process different from the caller, and potentially on a different machine. A task can be stateless (a “@ray.remote” function) or stateful (a method of a “@ray.remote” class – see Actor below). A task is executed asynchronously with the caller: the “.remote()” call immediately returns one or more “ObjectRefs” (futures) that can be used to retrieve the return value(s).
+* <strong>Object</strong>: An application value. These are values that are returned by a Task/Actor, or created through “ray.put”. Objects are immutable: they cannot be modified once created. A worker can refer to an object using an “ObjectRef.”
 
-* Object: An application value. These are values that are returned by a Task/Actor, or created through “ray.put”. Objects are immutable: they cannot be modified once created. A worker can refer to an object using an “ObjectRef.”
+* <strong>Task</strong>: A remote function invocation. This is a <strong>single function</strong> invocation that executes on a process different from the caller, and potentially on a different machine. A task can be stateless (a “@ray.remote” function) or stateful (a method of a “@ray.remote” class – see Actor below). A task is executed asynchronously with the caller: the “.remote()” call immediately returns one or more “ObjectRefs” (futures) that can be used to retrieve the return value(s).
 
-* Actor: A stateful worker process (an instance of a “@ray.remote” class). Actor tasks must be submitted with a handle, or a Python reference to a specific instance of an actor, and can modify the actor’s internal state during execution.
-
-* Driver: The program root, or the “main” program. This is the code that runs “ray.init()”.
+* <strong>Actor</strong>: A <strong>stateful</strong> worker process (an <strong>instance of a “@ray.remote” class</strong>). Actor tasks must be submitted with a handle, or a Python reference to a specific instance of an actor, and can modify the actor’s internal state during execution.
 
 * Job: The collection of tasks, objects, and actors originating (recursively) from the same driver, and their runtime environment. There is a 1:1 mapping between drivers and jobs.
 
@@ -270,7 +280,7 @@ Obserability would involve these metrics displayed over time in dashboards:
 Here's a Basic Ray Task Example in Python, using Ray.io for distributed computing, incorporating key concepts from the documentation:
 
 ```
-import time
+import time  # and other standard libraries
 import ray
 
 # Initialize Ray runtime (automatically uses available cores):
@@ -290,6 +300,12 @@ print(results)
 ```
 
 Actor Pattern Example:
+Usage:
+```
+tracker = DataTracker.remote()
+ray.get([tracker.increment.remote() for _ in range(10)])
+print(ray.get(tracker.get_count.remote()))  # Output: 10
+```
 
 ```
 @ray.remote
@@ -302,11 +318,6 @@ class DataTracker:
     
     def get_count(self):
         return self.count
-
-# Usage:
-tracker = DataTracker.remote()
-ray.get([tracker.increment.remote() for _ in range(10)])
-print(ray.get(tracker.get_count.remote()))  # Output: 10
 ```
 
 Advanced Pattern (Data Sharing)
@@ -328,13 +339,7 @@ results = ray.get([
 print(sum(results))  # Sum of all chunks
 ```
 
-For cluster deployment, add ray.init(address='auto') to connect to existing clusters
-. The examples demonstrate task parallelism, stateful actors, and data sharing - fundamental patterns for distributed computing with Ray.
-
-
-
-"Ray’s features make it suitable for any Python-based application that needs cluster-wide scalability. 
-PyTorch.
+For cluster deployment, add ray.init(address='auto') to connect to existing clusters. The examples demonstrate task parallelism, stateful actors, and data sharing - fundamental patterns for distributed computing with Ray.
 
 https://courses.anyscale.com/courses/take/intro-to-ray/lessons/60941259-introduction-to-ray-serve
 
@@ -394,6 +399,23 @@ He's <a target="_blank" href="https://www.linkedin.com/in/deanwampler/">now IBM'
 ## Simulator
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png"><img alt="odoo-docker-officialapps-240522.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1716481274/odoo-docker-officialapps-240522_tkt77p.png" /></a>
+
+## Dataset Preprocessors
+
+The Ray Data library provides preprocessors, scalers, and encoders:
+* Generic preprocessors: Concatenator, Preprocessor, SimpleImputer
+* Feature scalers: MaxAbsScaler, MinMaxScaler, Normalizer, PowerTransformer, RobustScaler, StandardScaler
+* Categorical encoders: Categorizer, LabelEncoder, OneHotEncoder, MultiHotEncoder, OrdinalEndcoder
+
+A custom preprocessor to output transformed datasets:
+```
+import ray
+from ray.data.preprocessors import MinMaxScaler
+ds = ray.data.range(10)
+preprocessor = MinMaxScaler(["id"])
+ds_transformed = preprocessor.fit_transform(ds)
+print(ds_transformed.take())
+```
 
 
 ## Videos
