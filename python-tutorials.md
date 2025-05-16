@@ -1,8 +1,9 @@
 ---
 layout: post
-date: "2025-02-28"
-changes: "v036 + univ courses :python-tutorials.py"
+date: "2025-05-16"
+changes: "v040 + sensemakers iot :python-tutorials.md"
 file: "python-tutorials"
+url: "https://wilsonmar.github.io/python-tutorials"
 title: "Python Tutorials"
 excerpt: "Who will teach you to code in Python?"
 tags: [python, apple, mac, setup]
@@ -14,12 +15,11 @@ image:
 comments: true
 created: "2016-07-10"
 ---
-<a target="_blank" href="https://bomonike.github.io/python-tutorials"><img align="right" width="100" height="100" alt="python-tutorials.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/python-tutorials.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
 
-
+<a target="_blank" href="{{ page.url }}"><img align="right" width="100" height="100" alt="{{ page.file }}.png" src="https://github.com/wilsonmar/wilsonmar.github.io/blob/master/images/qrcodes/{{ page.file }}.png?raw=true" /></a>
 Here are the tutorials I've seen that teach Python programming.
 
 See my tutorial for how I would teach introduction to Python
@@ -1358,6 +1358,50 @@ Microsoft Python Development Professional Certificate
 5. <a target="_blank" href="https://www.coursera.org/learn/microsoft-advanced-python-development-techniques?specialization=microsoft-python-developer">Advanced Python Development Techniques 21 hours</a>  March 3
 6. <a target="_blank" href="https://www.coursera.org/learn/microsoft-devops-agile-practices-in-python-development?specialization=microsoft-python-developer">Project Development in Python 19 hours</a> March 3
 
+
+## Berkeley's BJC
+
+"BJC" (Berkeley's Joyful Computing) <a target="_blank" href="https://www.youtube.com/@CSPBJC">channel on Youtube</a> hosts videos from EdX incorporating AP CSP content:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=gy4Mmd4d-3U">Global Impact of Computing</a>
+   * [BJC.3x] Saving the World with Computing
+   * [BJC.4x] Human Computer Interaction
+
+<a target="_blank" href="https://www.youtube.com/watch?v=ozRovyDwKEM">VIDEO</a>:
+In 2014, <a target="_blank" href="https://www.linkedin.com/in/ddgarcia/">Dan Garcia</a> at the University of California at Berkeley renamed its introductory computer science course in 2014 from “Introduction to Symbolic Programming” to “Joy and Beauty of Computing.” That resulted in the first time the course ever had more women enrolled than men.
+
+<a target="_blank" href="https://twitter.com/cspbjc">@cspbjc</a>
+
+- BJC Sparks: Our middle school / early high school curriculum that teaches a functional approach to programming (https://bjc.berkeley.edu/sparks/)
+
+BJC's AP CS Principles: high school curriculum (https://bjc.edc.org/)
+<a target="_blank" href="https://montanadigitalacademy.org/programs/original-credit-courses/">as offered in Montana's online</a>, the one-semester "Computer Science" course covers the following topics:
+
+* Unit 1: Introduction to Programming
+* Unit 2: Simple Python Data
+* Unit 3: Debugging Interlude
+* Unit 4: Python Turtle Graphics
+* Unit 5: Python Modules
+* Unit 6: Functions
+* Unit 7: Selection
+* Unit 8: More About Iteration
+* Unit 9: Strings
+
+https://bjc.edc.org/bjc-r/course/bjc4nyc_teacher.html
+
+* Unit 1 Teacher Guide: Introduction to Programming
+* Unit 2 Teacher Guide: Abstraction
+* Unit 3 Teacher Guide: Data Structures
+
+* Unit 4 Teacher Guide: How the Internet Works
+* Unit 5 Teacher Guide: Algorithms and Simulations
+* Unit 6 Teacher Guide: How Computers Work
+
+* Unit 7 Teacher Guide: Fractals and Recursion
+* Unit 8 Teacher Guide: Recursive Functions
+
+https://bjc.berkeley.edu/summer-pd
+
+
 ## US University Courses
 
 Pace College within the University of Washigton has an 
@@ -1369,6 +1413,68 @@ Purdue has (with Simplearn) a
 <a target="_blank" href="https://bootcamp-sl.discover.online.purdue.edu/data-science-certification-course?utm_campaign=7759967-hello_world_q1_2025">
 6-month online Professional Certificate In Data Science And Generative AI</a>
 for $3,800.
+
+## Azure cloud
+
+https://learn.microsoft.com/en-us/azure/developer/python/
+Azure for Python Developers
+lists link to dev tools, SDK, Use ready-made AI services (face, speech, text, image, etc.),
+Python enterprise RAG chat sample
+
+https://learn.microsoft.com/en-us/training/modules/authenticate-azure-deployment-pipeline-service-principals/?source=recommendations
+Authenticate your Azure deployment pipeline by using service principals
+
+https://learn.microsoft.com/en-us/azure/developer/python/sdk/authentication/local-development-service-principal?tabs=azure-cli
+Authenticate Python apps to Azure services during local development using service principals
+Create separate app registrations for each developer working on the app. 
+```
+AZ-SVC-PRIN-NAME="john-doe-prin-1"
+az ad sp create-for-rbac --name "$AZ-SVC-PRIN-NAME"
+```
+   The command also creates the app registration for the app at the same time.
+   This creates separate application service principals for each developer to use during local development and avoid the need for developers to share credentials for a single application service principal.
+
+   ```
+   {
+  "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "displayName": "<service-principal-name>",
+  "password": "Ee5Ff~6Gg7.-Hh8Ii9Jj0Kk1Ll2Mm3_Nn4Oo5Pp6",
+  "tenant": "aaaabbbb-0000-cccc-1111-dddd2222eeee"
+}
+```
+Create separate app registrations per app. This scopes the app's permissions to only what is needed by the app.
+```
+az ad group create --display-name MyDisplay --mail-nickname MyDisplay --description "<group-description>"
+```
+1. LOG IN
+   ```
+   az login --service-principal --username APPLICATION_ID --password PASSWORD --tenant TENANT_ID --allow-no-subscriptions
+   ```
+1. <i>Do something</i>
+
+1. Log out
+   ```
+   az logout
+   ```
+
+## Tutorials
+
+<a target="_blank" href="https://sensemakersams.org/micropython-course-2024/">FREE micropython-courses</a> at sensemakersams.org in Amsterdam (the Netherlands) who reference <a target="_blank" href="https://github.com/sensemakersamsterdam/upython_on_wokwi">upython_on_wokwi</a> in their lessons:
+
+* <a target="_blank" href="https://sensemakersams.org/wp-content/uploads/2024/10/video1923236255.mp4" title="Aug 10, 2024">VIDEO</a> on <a target="_blank" href="https://github.com/sensemakersamsterdam/upython_on_wokwi/tree/main/lesson-1">Lesson 1: dimmer, dual_blink, led-pwm</a>
+
+* <a target="_blank" href="https://sensemakersams.org/wp-content/uploads/2024/10/video1071724182.mp4" title="Oct 15, 2024">VIDEO</a> on <a target="_blank" href="https://github.com/sensemakersamsterdam/upython_on_wokwi/tree/main/lesson-2">Lesson 2: neopixel</a >
+
+* <a target="_blank" href="https://sensemakersams.org/wp-content/uploads/2024/11/video1900963067.mp4" title="Oct 22, 2024">VIDEO</a> on <a target="_blank" href="https://github.com/sensemakersamsterdam/upython_on_wokwi/tree/main/lesson-2">Lesson 3: Stepper, Brother_John, LED PWM, Pico Async, Server Pot, Timers</a >
+
+
+
+
+
+https://www.zerotoknowing.com/pricing
+offers a $2,999 for 1-on-1 coaching calls with Josh at 
+https://www.youtube.com/@codewithjoshoffical
+https://youware.ai
 
 
 ## More on Python
