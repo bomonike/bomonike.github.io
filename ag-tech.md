@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/ag-tech
-date: "2025-04-09"
-lastchange: "v016 + new :ag-tech.md"
+date: "2025-05-16"
+lastchange: "v017 + Iridium :ag-tech.md"
 file: "ag-tech"
 title: "Ag Tech"
 excerpt: "Agricultural Technologies: Tractors, Weather, Mapping, Chemistry, etc."
@@ -62,3 +62,12 @@ HERE Tour Planning connects with existing Transport Management Systems (TMS) and
 
 ## Weather and Seasons
 
+https://devpost.com/software/farmai-qaguns
+An Al-powered platform that assists farmers by predicting the best crop, irrigation method, fertilizer usage, and yield based on soil.
+
+
+## Satellite Internet 
+
+To communicate through Iridium satellites, 
+https://www.groundcontrol.com/product/rockblock-9704/
+$250 
