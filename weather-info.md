@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-04-19"
-lastchange: "v021 + weather forecast :weather-info.md"
+date: "2025-05-16"
+lastchange: "v022 + DIY autodesk instructables :weather-info.md"
 url: "https://bomonike.github.io/weather-info"
 file: "weather"
 title: "Weather microclimate"
@@ -313,6 +313,25 @@ Other Ambient Weather devices sold separately, with <a target="_blank" href="htt
 
 https://www.511mt.net/#&zoom=5.669649843806675&lon=-110.0832903124836&lat=45.86084166111809
 
+
+<a name="DIY"></a>
+
+## DIY Weather Stations
+
+Others made their own weather stations using Raspberry Pi and other components that include sensors like wind, rainfall, UV Index, Lux Level. 
+
+<a target="_blank" href="https://www.instructables.com/Solar-Powered-WiFi-Weather-Station-V20/">VIDEO:Solar-Powered WiFi Weather Station V20</a> follows the <a target="_blank" href="https://amzn.to/3UMpT9N">Book: on Off-Grid Solar Power from Amazon</a> by Debasish Dutta at @opengreenenergy. Features:
+   1. Monitoring Weather parameters like Temperature, Pressure, Humidity, altitude and UV level, etc.
+   2. Connect to Wi-Fi, and upload the data to the web ( Blynk App and Thingspeak)
+   3. Extra ports to add more sensors
+   4. Remote Battery Status Monitoring
+   5. Uses a powerful Li-Ion Battery ( 3400 mAh ) and Solar Panel (1W) for independence from external power source
+
+Customers also bought books by
+* <a target="_blank" href="https://www.amazon.com/stores/Paul-Holmes/author/B0CN1JF8M4">Paul Holmes: Off-grid solar power</a>
+* <a target="_blank" href="https://www.amazon.com/stores/Nick-Seghers/author/B0844W9SJK">Nick Seghers</a>
+<a target="_blank" href="https://www.amazon.com/Off-Grid-Solar-Power-Simplified-ebook/dp/B0844TX6ND">Off Grid Solar Power Simplified: For Rvs, Vans, Cabins, Boats and Tiny Homes</a>
+* <a target="_blank" href="https://www.amazon.com/Grid-Solar-Power-Bible-Blackout-Free-ebook/dp/B0C3RWGZTZ">Caleb Stone</a> The Off Grid Solar Power Bible: [7 in 1] Easy Illustrated DIY Guide + VIDEO COURSE to Safely Install and Maintain your Own Blackout-Free System. Go from Zero Know-How to Zero Electricity Bills.
 
 ## Cameras
 
