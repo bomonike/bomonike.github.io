@@ -1,7 +1,7 @@
 ---
-date: "2025-05-15"
+date: "2025-05-16"
 url: https://bomonike.github.io/it-films
-lastchange: "v008 + mission impossible :it-films.md"
+lastchange: "v009 + timeline mission impossible :it-films.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/it-films"><img align="right" width="100" height="100" alt="it-films-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/it-films-qr.png?raw=true" />
@@ -38,8 +38,7 @@ from the view of a webpage designer who worked at Amazon for 15 years and other 
 
 ## Mission: Impossible Films
 
-<a target="_blank" href="https://www.youtube.com/watch?v=CZZskbCtRTU">Timeline</a>:
-
+<a target="_blank" href="https://www.youtube.com/watch?v=CZZskbCtRTU&t=55m10s">Timeline<br /><img alt="it-films-mission-1852x430.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1747464396/it-films-mission-1852x430_md34mx.png" /></a>
 
 * Original TV Series (September 1966-1967)
 * Rebooted series (1990)
