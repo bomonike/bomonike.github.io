@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-03"
-lastchange: "v007 + compilers :python-coding.md"
+date: "2025-05-22"
+lastchange: "v010 2^63 haris :python-coding.md"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -295,6 +295,8 @@ https://7451111251303.gumroad.com/l/wotve
 
 There is time complexity, data complexity, etc.
 
+See https://readmex.com/TheAlgorithms/Python
+
 <a name="TimeComplexity"></a>
 
 Big-O notation summarizes Time Complexity analysis, which estimates how long it can take for an algorithm to complete based on its structure. That's worst-case, before optimizations such as memoization.
@@ -400,6 +402,7 @@ GitHub repos with the highest stars:
 
 
 ### Faster routes to machine code
+
 By default, Python comes with the <a target="_blank" href="https://github.com/python/cpython">CPython interpreter</a> (command cythonize) to generate machine-code. When speed is needed, such as in loops, custom C/C++ extensions are created. Additional speed is obtained by adding before nested loop code directives and decorators:
 ```
 # cython: language_level=3, boundscheck=False, wraparound=False
@@ -458,7 +461,7 @@ Here are the keywords Python has reserved for itself, so they can't be used as c
 1. from
 1. global = defines a variable global in scope
 1. if
-1. import = make the specified package available
+1. <a href="#import">import</a> = make the specified package available
 1. in
 1. is
 1. lambda - if/then/else in one line
@@ -482,6 +485,7 @@ NOTE: match, case and _ were introduced as keywords in Python 3.10.
 The list above can be retrieved (as an array) by this code after typing <tt>python</tt> for the REPL (Read Evaluate Print Loop) interactive prompt:
 
 ```python
+# In the myutils.py file:
 from keyword import kwlist, softkwlist
 def display_keywords() -> None: 1usage
     print('Keywords:')  # not alphabetically
@@ -504,13 +508,14 @@ Soft keywords:
 1. match
 1. type  (added by Python 3.12)
 
-
 Press control+D to exit anytime.
 
 
 ## Built-in Methods/Functions
 
-Don't create custom functions with these function names reserved.
+DEFINITION: A <strong>built-in</strong> library the Python interpreter can load.
+
+IMPORTANT: Don't create custom functions with these function names reserved.
 
 Know what they do. See
 https://docs.python.org/3/library/functions.html
@@ -587,6 +592,74 @@ https://docs.python.org/3/library/functions.html
    * zip() = combine two interable arrays
    * _import_()
    * super()
+
+
+
+## import custom utility library myutils.py
+
+I grew tired of copying various custom utility functions I like to add to programs I write
+because when a change is made, I would have to update each file that uses it.
+
+So I want to have all my custom programs reference my custom utility functions in a file called "myutils.py". Such functions include:
+   * print_timestamp()
+   * print_info() to display information the function generated.
+   * print_debug() to display information that affects program logic.
+   * print_error() to display also alert the user of an error.
+   * print_warning() when a trigger is met to send a security alert to the operations team.
+   * etc.
+
+The Python <strong>import</strong> statement specifies each library which contains additional functions  that our custom program wants to use. 
+
+DEFINITION: 
+* A <strong>library</strong> is a collection of functions that are grouped together. 
+* A <strong>built-in</strong> library (such as argparse, os, sys, random, etc.) the Python interpreter can load.
+* A <strong>third-party</strong> package is one that is not built into Python. An example is <tt>import google.auth</tt>.
+
+REMEMBER: When a is specified in an import statement, an error occurs if that package was not installed with a CLI <strong>pip</strong> command such as:
+   ```bash
+   pip install google-auth
+   ```
+   <ul>DEFINITION: pip is a recursive acronym that stands for either "Pip Installs Packages" or "Pip Installs Python".</ul>
+
+Many put a list of external packages in a <strong>requirements.txt</strong> file so that
+a single CLI command can be used to install all packages listed in a requirements.txt file:
+   ```bash
+   pip install -r requirements.txt
+   ```
+By default, pip pulls external packages from its GitHub repository such as<br />
+   https://pypi.org/project/google-auth/
+
+pip can also pull external packages from specified GitHub repository using the following CLI command format:
+   ```
+   pip install git+https://github.com/<em>username/repository.git</em>
+   ```
+QUESTION: If you want to reference the many utility functions Hari Sekhon has created, use the CLI command:
+   ```
+   pip install git+https://github.com/HariSekhon/pylib.git
+   pip install git+https://github.com/HariSekhon/pylib/blob/master/harisekhon/utils.py
+   ```
+<a target="_blank" href="https://github.com/HariSekhon/DevOps-Python-tools/blob/master/hbase_compact_tables.py">Sample code</a> to import Hari Sekhon's utility functions:
+```python
+try:
+    # pylint: disable=wrong-import-position
+    from harisekhon.utils import log, die
+    from harisekhon.utils import validate_host, validate_port, validate_regex
+    from harisekhon import CLI
+except ImportError as _:
+    print(traceback.format_exc(), end='')
+    sys.exit(4)
+```
+BEST PRACTICE: To reduce the memory your program uses, specify the specific functions you need from a library rather than letting the interpreter load all the functions in the library. 
+For example, if your program only uses the log and die functions:
+```python
+    from harisekhon.utils import log, die
+```
+
+"myutils.py" must be in the same directory as the script.
+
+REMEMBER: The Python import statement is not evaluated until the code is run.
+
+
 
 <hr />
 
@@ -1392,18 +1465,31 @@ So use a way that's less flexible with types and doesn’t evaluate Python state
 
 ### Data Types
 
-In Python 2, there was an internal limit to how large an integer value could be: 2^63 - 1.
-
-But that limit was removed in Python 3. So there now is no explicitly defined limit, but the amount of available address space forms a practical limit depending on the machine Python runs on. 64-bit
-
 <tt>0xa5</tt> (two character bits) represents a hexdidecimal number
 
-<tt>3.2e-12</tt> expresses as a a constant exponential value.
+<tt>3.2e-12</tt> expresses as a constant exponential value.
 
-https://docs.python.org/3/tutorial/introduction.html#lists
+### Largest Integer Value
 
-<a target="_blank" href="https://docs.python.org/3/tutorial/datastructures.html#more-on-lists">
-list methods</a>
+<strong>2^63 - 1</strong> is the largest integer value permitted by Python 2.
+
+for a 64-bit address space.
+That's not 2^64−1 because of the sign bit.
+Half of the values is negative and half is positive.
+
+Practical analogy: Imagine 63 light switches. Each switch (bit) doubles the total possible combinations.
+9,223,372,036,854,776,000 is the largest value in a 64-bit address space.
+9,223,372,036,854,775,807.
+
+~9 exabytes
+
+But the limit was removed in Python 3. So there now is no explicitly defined limit.
+But the amount of available address space forms a practical limit depending on the machine Python runs on. 
+Still 64 bit.
+
+   * https://docs.python.org/3/tutorial/introduction.html#lists
+
+   * <a target="_blank" href="https://docs.python.org/3/tutorial/datastructures.html#more-on-lists">list methods</a>
 
 ### Slicing strings
 
@@ -1440,11 +1526,6 @@ print(conv_superscript('Convert all this2'))
 
 <hr />
 
-## Functions
-
-
-
-
 <a name="Localization"></a>
 
 ## Internationalization & Localization (I18N & L18N)
@@ -1464,12 +1545,9 @@ Internationalization, aka i18n for the 18 characters between i and n, is the pro
 
    <pre>pip install gettext</pre>
 
-   NOTE: pip is a recursive acronym that stands for either "Pip Installs Packages" or "Pip Installs Python".
-
 1. Create a folder for each locale in the <tt>./locale</tt> folder.
 
 1. Use Lokalise utility to manage translations through a GUI. It also has a CLI tool to automate the process of managing translations.  https://lokalise.com/blog/lokalise-apiv2-in-practice/
-
    ```
    locales/
 ├── el
@@ -1481,7 +1559,6 @@ Internationalization, aka i18n for the 18 characters between i and n, is the pro
    ```
 
 1. Add the library
-
    ```
    import gettext
 # Set the local directory
@@ -2630,6 +2707,39 @@ def function(arg1, arg2):
 1. Stackless Python enhances Python with support for microthreads, allowing for concurrent programming without traditional thread-related overhead. It's particularly useful for applications requiring a large number of simultaneously active tasks, like game development or network servers.
 
 QUESTION: What coding style would take advantage of compilers or hinder their use?
+
+## Resources
+
+https://apps.apple.com/us/app/pythonista-3/id1085978097
+   https://www.youtube.com/watch?v=yO8w8PIn-uk
+
+From https://tonylixu.medium.com/linux-basics-buffer-vs-cache-62ceb9f32f29
+* Buffers | A small (about 20MB) temporary storage for holding raw disk blocks written to disks -- used so that the OS kernel can optimize disk writes uniformly by merging multiple small writes into a more efficient single large write operation.
+* Cache | A temporary area in memory holding pages read from disk. Pages retained in the cache may be referenced again faster from memory without having to access the slow disk again.
+
+https://www.monterail.com/blog/python-task-automation-examples#a:What-To-Do-with-Python?-Automation-Scripts-Ideas
+
+
+## Algorithms: Big O Time Complexity
+
+https://guides.codepath.com/compsci/Big-O-Complexity-Analysis#o-log-n-logarithmic-complexity
+
+<a target="_blank" href="https://www.perplexity.ai/search/ai-software-to-create-bracket-rIa.w6G6QmOd9hwdKQXPHg">
+AI tools to generate sports brackets</a> is a good way to illustrate the concept of logarithmic time complexity
+because adding a new team to an already large bracket does not require the team to play all other teams
+
+ 5.1.5  https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/5-categorizing-algorithms.html?topic=nyc_bjc/5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment
+* An algorithm takes linear time the number of steps is proportional to the input size; doubling the input size doubles the time required.
+* An algorithm takes sublinear time if the number of steps grows more slowly than the size.
+* An algorithm takes constant time if it takes the same number of steps regardless of input size.
+* An algorithm takes quadratic time if the number of steps is proportional to the square of the input size.
+
+* An algorithm takes polynomial time if the number of steps is less than or equal to a power of the size of the input, such as constant (n0), sublinear, linear (n1), quadratic (n2), or cubic (n3).
+* An algorithm takes exponential time if the number of steps is proportional to an exponential function of the size of the input, such as 2n, 10n, etc., which is much slower than any polynomial.
+
+## References
+
+https://readmex.com/realpython/python-guide
 
 
 ## More about Python
