@@ -1,18 +1,19 @@
 ---
 layout: post
+date: "2025-05-22"
+lastchange: "v020 + qrcode :ai-agents.md"
 url: https://bomonike.github.io/ai-agents
-date: "2025-04-12"
-lastchange: "v018 + A2A :ai-agents.md"
 file: "ai-agents"
 title: "AI Agents"
 excerpt: "Text-to-Action carried out by AI Agents"
 tags: [cloud, security, management, ai]
 comments: true
 ---
-<a target="_blank" href="https://bomonike.github.io/ai-agents"><img align="right" width="100" height="100" alt="ai-agents.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-agents.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+<a target="_blank" href="{{ page.url }}"><img align="right" width="100" height="100" alt="{{ page.file }}.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/{{ page.file }}.png?raw=true" />
 
 ## Why This?
 
@@ -44,6 +45,11 @@ Unlike humans, AI agents don't need to sleep, operate at lightning speed, and co
 Agentic means <strong>proactive</strong> -- they try to solve problems without constant human input.
 
 MCP Client is Claude client or IDE Cursor or Windsurf
+
+D. A <strong>Global Agent</strong> can be an ID such as IDE OpenAI/Windsurf, Claude, Cursor, or extension-enabled VS Code.
+
+E. A <strong>Local Agent</strong> is a tool that can be called by an MCP client.
+
 
 ## Levels of automation:
 
@@ -259,7 +265,9 @@ A2A needs MCP for the lower level.
 
 Think of MCP like HTTP. It’s a behind-the-scenes standard, a way for clients (like AI assistants) and servers (like tools and APIs) to communicate. You don't get excited about HTTP itself; you get excited about what it enables—browsers like Chrome, apps like Gmail, and the entire modern web. MCP is similar: it’s an enabling layer, not the end-user experience.
 
-Claude AI and ChatGPT , on the other hand, are like Chrome. They’re the part people interact with. While MCP defines how tools are exposed and called by AI agents, Zapier Agents show what’s possible with those capabilities.
+Claude AI and ChatGPT , on the other hand, are like Chrome. They’re the part people interact with. While MCP defines how tools are exposed and called by AI agents, 
+https://www.linkedin.com/pulse/mcp-just-beginning-what-actually-powers-ai-productivity-zapier-cy4ic/
+Zapier Agents show what’s possible with those capabilities.
 
 
 
