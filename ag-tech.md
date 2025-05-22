@@ -1,20 +1,19 @@
 ---
 layout: post
+date: "2025-05-22"
+lastchange: "v018 + Iridium :ag-tech.md"
 url: https://bomonike.github.io/ag-tech
-date: "2025-05-16"
-lastchange: "v017 + Iridium :ag-tech.md"
 file: "ag-tech"
 title: "Ag Tech"
 excerpt: "Agricultural Technologies: Tractors, Weather, Mapping, Chemistry, etc."
 tags: [ag, security, management, ai]
 comments: true
 ---
-<a target="_blank" href="https://bomonike.github.io/ag-tech"><img align="right" width="100" height="100" alt="ag-tech.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ag-tech.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
 
-ag-tech.md
+<a target="_blank" href="{{ page.url }}"><img align="right" width="100" height="100" alt="{{ page.file }}.png" src="https://github.com/wilsonmar/wilsonmar.github.io/blob/master/images/qrcodes/{{ page.file }}.png?raw=true" /></a>
 
 Agricultural Technologies
 
@@ -70,4 +69,4 @@ An Al-powered platform that assists farmers by predicting the best crop, irrigat
 
 To communicate through Iridium satellites, 
 https://www.groundcontrol.com/product/rockblock-9704/
-$250 
+$250 Once messages leave the device, Cloudloop Data routes uplinks and downlinks to your HTTPS or MQTT endpoint, and exposes a REST API and dashboard for device metadata, transmission status, and message history.
