@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-05-01"
-lastchange: "v0203 + nvidia :README.md"
+date: "2025-05-22"
+lastchange: "v204 + london :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -88,14 +88,15 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/jupyter">jupyter</a>
 
    <a name="K"></a>
-   ### K
+   <a name="L"></a>
+   ### K & L
 
 1. <a target="_blank" href="https://bomonike.github.io/kanban">kanban</a>
 1. <a target="_blank" href="https://bomonike.github.io/kubernetes">kubernetes</a>
+1. <a target="_blank" href="https://bomonike.github.io/london">london</a>
 
-   <a name="L"></a>
    <a name="M"></a>
-   ### L M
+   ### M
 
 1. <a target="_blank" href="https://bomonike.github.io/mac-mini">mac-mini</a>
 1. <a target="_blank" href="https://bomonike.github.io/mac-utilities">mac-utilities</a>
