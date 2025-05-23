@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-05-22"
-lastchange: "v011 date & lastchange at bottom :python-coding.md"
+lastchange: "v013 use sub for small font in page code footer :python-coding.md"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -2749,4 +2749,4 @@ This is one of a series about Python:
 
 {% include python_links.html %}
 
-{% page.date %} {% page.lastchange %}
+<sub>{{ page.date }} {{ page.lastchange }}</sub>
