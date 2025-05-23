@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-05-22"
-lastchange: "v010 2^63 haris :python-coding.md"
+lastchange: "v011 date & lastchange at bottom :python-coding.md"
 file: "python-coding"
 title: "Python Coding"
 excerpt: "How to code Python as it matters, as shown in my samples github: how best to use Keywords, arguments, Exception Handling, OS commands, Strings, Lists, Sets, Tuples, Files, Timers"
@@ -2747,3 +2747,5 @@ https://readmex.com/realpython/python-guide
 This is one of a series about Python:
 
 {% include python_links.html %}
+
+{% page.date %} {% page.lastchange %}
