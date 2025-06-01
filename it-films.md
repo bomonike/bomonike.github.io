@@ -1,7 +1,7 @@
 ---
-date: "2025-05-18"
+date: "2025-06-01"
 url: https://bomonike.github.io/it-films
-lastchange: "v011 + star trek :it-films.md"
+lastchange: "v012 + star trek links :it-films.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/it-films"><img align="right" width="100" height="100" alt="it-films-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/it-films-qr.png?raw=true" />
@@ -53,43 +53,46 @@ Star Trek began with the original television series in 1966 about the starship U
 
 Twelve television series, totaling 940 episodes across 49 seasons.
 
-* 1966–1969 The Original Series	introduced Kirk, Spock, and the classic Enterprise crew. It popularized iconic phrases like "Live long and prosper" and "Beam me up, Scotty" have entered everyday language.
-* 1973–1974 The Animated Series	Animated adventures with original cast voices
-* 1987–1994	The Next Generation	set a century later, led by Captain Picard
-* 1993–1999	Deep Space Nine	is station-based, darker, serialized storytelling
-* 1995–2001	Voyager starship lost far from home, led by Captain Janeway
-* 2001–2005	Enterprise prequel to original, early human space exploration
-* 2017–present Discovery modern streaming, diverse cast, new directions
-* 2020–2023	Picard focuses on Jean-Luc Picard’s later years
-* 2020–present Lower Decks - animated comedy about junior officers
-* 2021–present Prodigy - Animated, aimed at younger audiences
-* 2022–present Strange New Worlds - Classic exploration, new takes on old characters
+1. 1966–1969 <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-original-series">80% The Original Series</a>	introduced Kirk, Spock, and the classic Enterprise crew. It popularized iconic phrases like "Live long and prosper" and "Beam me up, Scotty" have entered everyday language.
+1. 1973–1974 <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-animated-series">94% The Animated Series</a> Animated adventures with original cast voices
+1. 1987–1994	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-next-generation">92% The Next Generation</a> is set a century later, led by Captain Picard
+1. 1993–1999	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-deep-space-nine">91% Deep Space Nine</a> is station-based, darker, serialized storytelling
+1. 1995–2001	Voyager starship lost far from home, led by Captain Janeway
+1. 2001–2005	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-enterprise">56% Enterprise</a> prequel to original, early human space exploration
+1. 2017–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-discovery">91% Discovery</a> modern streaming, diverse cast, new directions
+1. 2020–2023	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-picard">89% Picard</a> focuses on Jean-Luc Picard’s later years
+1. 2020–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-lower-decks">91% Lower Decks</a> - animated comedy about junior officers
+1. 2021–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-prodigy">97% Prodigy</a> - Animated, aimed at younger audiences
+1. 2022–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-strange-new-worlds">98% Strange New Worlds</a> - Classic exploration, new takes on old characters
+1. <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-discovery">20% Star Trek: Section 31"</a> Discovery  completed filming in early 2024.
 
-Thirteen feature films, including a rebooted trilogy set in an alternate timeline (the "Kelvin" timeline).
+Feature films, including a rebooted trilogy set in an alternate timeline (the "Kelvin" timeline).
 
 https://en.wikipedia.org/wiki/Star_Trek from Paramount
 
 Original Series and Next Generation Films (Release Order):
 
-1. Star Trek: The Motion Picture (1979) – The original crew reunites to confront a powerful alien entity approaching Earth.
-1. Star Trek II: The Wrath of Khan (1982) – Kirk faces his old nemesis Khan in a story about revenge and sacrifice.
-1. Star Trek III: The Search for Spock (1984) – The crew attempts to recover Spock’s body and soul after his death.
-1. Star Trek IV: The Voyage Home (1986) – The crew time-travels to 20th-century Earth to save humpback whales and the planet.
-1. Star Trek V: The Final Frontier (1989) – Spock’s half-brother hijacks the Enterprise searching for God.
-1. Star Trek VI: The Undiscovered Country (1991) – The crew works to prevent a conspiracy threatening peace with the Klingons.
-1. Star Trek: Generations (1994) – A crossover between the original crew and The Next Generation crew, focusing on legacy and mortality.
-1. Star Trek: First Contact (1996) – The Next Generation crew battles the Borg to protect Earth’s past and future.
-1. Star Trek: Insurrection (1998) – The Enterprise crew defends a peaceful alien race from forced relocation. Ricardo Monteban
-1. Star Trek: Nemesis (2002) – The Next Generation crew confronts a clone of Captain Picard threatening the Federation.
-
-   Star Trek: Discovery titled "Section 31" completed filming in early 2024.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-the-motion-picture">52% Star Trek: The Motion Picture</a> (1979) – The original crew reunites to confront a powerful alien entity approaching Earth.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-ii-the-wrap-of-khan">86% Star Trek II: The Wrath of Khan</a> (1982) – Kirk faces his old nemesis Khan in a story about revenge and sacrifice.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-iii-the-search-for-spock">78% Star Trek III: The Search for Spock</a> (1984) – The crew attempts to recover Spock’s body and soul after his death.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-iv-the-voyage-home">81% Star Trek IV: The Voyage Home</a> (1986) – The crew time-travels to 20th-century Earth to save humpback whales and the planet.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-v-the-final-frontier">23% Star Trek V: The Final Frontier</a> (1989) – Spock’s half-brother hijacks the Enterprise searching for God.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-vi-the-undiscovered-country">83% Star Trek VI: The Undiscovered Country</a> (1991) – The crew works to prevent a conspiracy threatening peace with the Klingons.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-generations">47% Star Trek: Generations</a> (1994) – A crossover between the original crew and The Next Generation crew, focusing on legacy and mortality.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-first-contact">93% Star Trek: First Contact</a> (1996) – The Next Generation crew battles the Borg to protect Earth’s past and future.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-insurrection">55% Star Trek: Insurrection</a> (1998) – The Enterprise crew defends a peaceful alien race from forced relocation. Ricardo Monteban
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-nemesis">38% Star Trek: Nemesis</a> (2002) – The Next Generation crew confronts a clone of Captain Picard threatening the Federation.
 
    "Reboot Series" films in a "Kelvin" alternative timeline:
 
 1. Star Trek (2009) – A reboot featuring younger versions of the original crew in an alternate timeline.
-1. Star Trek Into Darkness (2013) – The crew faces a mysterious terrorist threat.
-1. Star Trek Beyond (2016) – The Enterprise crew is stranded on a hostile planet and must stop a new enemy.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-into-darkness">84% Star Trek Into Darkness (2013)</a> – The crew faces a mysterious terrorist threat.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-beyond">86% Star Trek Beyond (2016)</a> – The Enterprise crew is stranded on a hostile planet and must stop a new enemy.
 1. "Star Trek 4" (in development as of 2024)
+
+Specials:
+* <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-short-treks">Short Treks</a> on Paramount+
+* <a target="_blank" href="https://www.justwatch.com/us/movie/the-captains">The Captains</a> (2011) on Amazon Prime
 
 ## Mission: Impossible Films
 
