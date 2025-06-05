@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-05-22"
-lastchange: "v204 + london :README.md"
+date: "2025-06-05"
+lastchange: "v204 + to wilsonmar :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -21,7 +21,7 @@ Topics alphabetically:
 <a name="A"></a>
 ### A
 
-1. <a target="_blank" href="https://bomonike.github.io/acronyms">acronyms</a>
+1. <a target="_blank" href="https://wilsonmar.github.io/acronyms">acronyms</a>
 1. <a target="_blank" href="https://bomonike.github.io/ag-tech">ag-tech</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-agents">ai-agents</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-benchmarks">ai-benchmarks</a>
@@ -101,7 +101,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/mac-mini">mac-mini</a>
 1. <a target="_blank" href="https://bomonike.github.io/mac-utilities">mac-utilities</a>
 1. <a target="_blank" href="https://bomonike.github.io/mlops">mlops</a> (Machine Learning Operations)
-1. <a target="_blank" href="https://bomonike.github.io/london">london</a> (England)
+1. <a target="_blank" href="https://wilsonmar.github.io/london">london</a> (England)
 1. <a target="_blank" href="https://bomonike.github.io/macos">macos</a>
 1. <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a> configuration settings
 1. <a target="_blank" href="https://bomonike.github.io/microsoft-ai">microsoft-ai</a>
@@ -139,7 +139,6 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
 1. <a target="_blank" href="https://bomonike.github.io/prompt-engineering">prompt-engineering</a> using DPSy to automate better prompts using LLMs.
 1. <a target="_blank" href="https://bomonike.github.io/python-exams">python-exams</a>
-1. <a target="_blank" href="https://bomonike.github.io/python-coding">python-coding</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-tutorials">python-tutorials</a>
 
