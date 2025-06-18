@@ -1,5 +1,7 @@
-futurefun.md
-
+---
+file: "futurefun.md"
+lastchange: "v002 + :futurefun.md"
+---
 https://bucolic-kitten-8c03c9.netlify.app/#features
 
 would be project. Management skills. Offer training in tools such as calendar, project planning, estimating, prioritization
@@ -24,6 +26,12 @@ Comments can be added by others.
 
 AI project: Drop pdf files on the GUI, then ask questions based on its content.
 
+## Reference Information
+
+* <a target="_blank" href="https://wilsonmar.github.io/acronyms/">My Acronyms</a>
+
+
+
 <a name="StartWithSafety"></a>
 
 ## Start with Safety
@@ -31,11 +39,13 @@ AI project: Drop pdf files on the GUI, then ask questions based on its content.
 The starting point for our training is proactive protection of <strong>personal security</strong>.
 
 1. Rules for Minors < 13. Parents approve each stage.
-1. Financial 
+1. Financial literacy: Khan Academy
 1. Credit Cards
 1. Subscription tracking
+1. Purchasing Criteria ConsumerReports.com evaluation format
 
 1. Generational technologies influence
+1. Memon memprizing long secrets
 1. Password vault and fire-proof box
 1. Sales of personal information: haveibeenpwned.com
 1. Social Security Lock
@@ -44,97 +54,76 @@ The starting point for our training is proactive protection of <strong>personal 
 1. Authy app
 
 1. Each student need to pass <a target="_blank" href="https://www.khanacademy.org/college-careers-more/internet-safety/xef9bb6e081c9f4ff:online-data-security">Khan Academy's Online Data Security</a> course online
+
+## Learn Through Doing (Personal Technologies)
+
+1. Ecosystems (Apple, Google, Microsoft)
 1. Archive and restore
-
-## Learn Through Doing (Social Skills)
-
-1. Situation Reports (SITREP) format
-1. Risks, Issues, Changes
-1. Emotional Intelligence & thinking through consequences
-1. Willpower & self-sabotage
-
-1. Social Skills
-1. Intenet Etiquitte
-1. Dating apps (Scott Galloway's warnings)
-
-1. https://www.webull.com/paper-trading
-1. https://www.pionex.com/en
-
-1. Compliments & Dopamine
-1. Click bait
-1. Addiction FOMO
-1. <a target="_blank" href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-attention-equation-winning-the-right-battles-for-consumer-attention">monitization of Attention Economy</a> 
-
-1. Visual Mindmaps https://www.youtube.com/watch?v=Grd7K7bJVWg
-1. Gantt chart timelines
-
-## Build Real Apps
-
-Person Productivity Mastery in the 21st Century
-
-1. PARA: Projects, Archive, Resources, Tasks
-1. Paper note-taking
-1. Digital note-taking: iPhone Notepad, Obsidian, 
-
-1. https://quantifiedself.com/show-and-tell/
-
 1. Photo storage index
 1. Metadata in each photo (app)
 1. Cloud storage economics 
 1. Archival media (HDD vs Flash reliability & speeds)
 
-## AI
-
-1. Langchain https://www.youtube.com/watch?v=mrjq3lFz23s
-1. <a target="_blank" href="https://ai.gopubby.com/build-mcp-servers-and-host-them-for-free-a54a3bd24513">Turn Python functions into MCP</a> using <a target="_blank" href="https://huggingface.co/blog/gradio-mcp">Hugging Face Gradio Interface</a> as both a web app and an embedded tool within a notebook.
-
-## Quantified Life
-
-1. Financial literacy 
-
-1. REM deep sleep
-1. Weight & BMI
-1. Resting Heart rate
-1. Blood Oxygen (a COVID symptom) https://www.nature.com/articles/s41551-020-00640-6?fromPaywallRec=false
-1. Breathing Rate 15 (a COVID symptom, decreases over time) photoplethysmography
-1. Blood pressure
-1. Sleep patterns
-1. Breathing  https://quantifiedself.com/show-and-tell?project=1113
-   https://www.nature.com/articles/s41746-021-00493-6
-1. Watch wearables: Fitbit
-1. Apple iPhone Health app Fall alert
-1. Battery life (recharge during your shower) 
-1. Correlation Coefficient
-
+1. Calendar
+1. cal.com appointment maker
+1. Annual Calendar - Birthdays, Anniversaries, Annual Sales
+1. Gantt chart timelines
+1. Tasks
+1. Projects
 1. Focus blocks of alone time when notifications off
+   * Battery life (recharge during your shower) 
+   * 
+1. Compliments & Dopamine
+1. Click bait
+1. Addiction FOMO
+1. <a target="_blank" href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-attention-equation-winning-the-right-battles-for-consumer-attention">monitization of Attention Economy</a> 
 
-1. ConsumerReports.com
+1. Intenet Etiquitte
+1. Dating apps (Scott Galloway's warnings)
 
-1. Metrics under stress
-1. Fasting Ketosis
-1. Sugar vs Lost Productivity
-1. Food researchers from Columbia and the University of Chicago report that eating a full day's serving worth of fruits and vegetables strongly appears to help people sleep more soundly throughout the night.
-1. https://futurism.com/elon-musk-tweets-sleep https://www.economist.com/briefing/2024/11/21/elon-musks-transformation-in-his-own-words?irclickid=Stx07fwFrxycTkGTHdRU6V13UksVAcyeIzsexA0&irgwc=1&utm_medium=affiliates.offer.pd&utm_source=impact-apac&utm_campaign=a.new_july_2024_apac_lp&utm_content=conversion.direct-response.non-subscriber.apac_all_enfactum&utm_term=10078&channel=Impact
-1. Glucose monitoring pricks & IGM devices
-1. Oura ring ($500) ZDNET's 2024 product of the year - 8 days
+1. https://wilsonmar.github.io/asana/
+1. https://wilsonmar.github.io/jira/
 
-1. Snore Lab
-1. Exercise rings
-1. Habit apps
+1. Docs
+1. Spreadsheets
+1. Presentations
 
-1. Location (GPS)
-1. Weather statistics, tremds & prediction accuracy
-1. Alerts Notification settings
-1. Dew Point correlation
-1. <a target="_blank" href="https://www.youtube.com/watch?v=wPu5X-bG4Cc">Four types of Analytics</a>:
-   * What happened? Descriptive Analytics (rear vew mirror)
-   * Why Did it Happen? Diagnostic Analytics (insights)
-   * What will happen? Predictive Analytics https://www.youtube.com/watch?v=0K1ESOC8CXg">Pecan</a>
-   * What should we do? Prescriptive
+1. VPN
+1. Wireshark networking
+1. Eval (false positives)
+
+## Learn Through Doing (Developer Technologies)
+
+1. GitHub account
+1. Signing Certificates
+
+1. Voice command (Ambient) computing IoT with  https://wilsonmar.github.io/alexa/ voice
+1. Recognize text in pictures https://wilsonmar.github.io/tesseract/
+1. Screen scraping https://wilsonmar.github.io/web-scraping/
+1. Extract text from pictures
+
+1. Photo editing Png vs SVG
+1. One Page Website
+1. https://wilsonmar.github.io/docusaurus/
+1. Generate QR codes
+1. Generate videos
 
 
-1. Personal reliability ("I will") https://quantifiedself.com/show-and-tell/?project=1109 “Commits.to has given me reason to
-pause before I rattle off an empty promise.
+## Learn Through Doing (Social Skills)
+
+1. Linkedin profile
+1. Snapchat etiquitte
+
+1. Situation Reports (SITREP) format
+1. Paper note-taking
+1. Digital note-taking: iPhone Notepad, Obsidian, 
+1. Visual Mindmaps https://www.youtube.com/watch?v=Grd7K7bJVWg
+
+1. Risks, Issues, Changes
+1. Emotional Intelligence & thinking through consequences
+1. Willpower & self-sabotage
+1. Personal reliability Trend ("I will") https://quantifiedself.com/show-and-tell/?project=1109 
+“Commits.to has given me reason to pause before I rattle off an empty promise.
 As a people pleaser, I was in the habit of
 saying I would do things without a real
 intention to follow through on those
@@ -142,14 +131,73 @@ statements in a consistent way. Now, I
 value maintaining my overall reliability
 instead of my agreeability in the moment.”
 
+## Build Real AI Apps 
 
-<a name="Calendar"></a>
+1. https://www.webull.com/paper-trading
+1. https://www.pionex.com/en
+
+1. https://quantifiedself.com/show-and-tell/
+
+1. AI Langchain https://www.youtube.com/watch?v=mrjq3lFz23s
+1. <a target="_blank" href="https://ai.gopubby.com/build-mcp-servers-and-host-them-for-free-a54a3bd24513">Turn Python functions into MCP</a> using <a target="_blank" href="https://huggingface.co/blog/gradio-mcp">Hugging Face Gradio Interface</a> as both a web app and an embedded tool within a notebook.
+
+
+## Build Real Apps - Statistics
+
+1. dice-stats.py & Histogram and Description Statistics
+1. <a target="_blank" href="https://www.youtube.com/watch?v=wPu5X-bG4Cc">Four types of Analytics</a>:
+   * What happened? Descriptive Analytics (rear vew mirror)
+   * Why Did it Happen? Diagnostic Analytics (insights)
+   * What will happen? Predictive Analytics https://www.youtube.com/watch?v=0K1ESOC8CXg">Pecan</a>
+   * What should we do? Prescriptive
+
+1. Regression Correlation Coefficient
+
+1. Alerts Notification settings
+
+
+## Build Real Apps - Quantified Life
+
+Person Productivity Mastery in the 21st Century
+
+1. Apple iPhone Health app Fall alert
+1. Watch wearables: Fitbit
+
+1. REM deep sleep
+1. Weight & BMI
+1. Resting Heart rate
+1. Blood Oxygen (a COVID symptom) https://www.nature.com/articles/s41551-020-00640-6?fromPaywallRec=false
+1. Breathing Rate 15 (a COVID symptom, decreases over time) photoplethysmography
+1. Blood pressure
+
+1. Sleep patterns
+1. Snore Lab
+1. https://futurism.com/elon-musk-tweets-sleep https://www.economist.com/briefing/2024/11/21/elon-musks-transformation-in-his-own-words
+
+1. Breathing  https://quantifiedself.com/show-and-tell?project=1113
+   https://www.nature.com/articles/s41746-021-00493-6
+
+1. Fasting Ketosis
+1. Sugar vs Lost Productivity
+1. Food researchers from Columbia and the University of Chicago report that eating a full day's serving worth of fruits and vegetables strongly appears to help people sleep more soundly throughout the night.
+1. Glucose monitoring pricks & IGM devices
+1. Oura ring ($500) ZDNET's 2024 product of the year - 8 days
+
+1. Exercise rings
+1. Habit apps
+
+1. Location (GPS)
+1. Weather statistics, trends & prediction accuracy
+1. Dew Point correlation
+
 
 ## Apple macOS Mastery
 
+1. https://wilsonmar.github.io/macos-apps/
+1. https://wilsonmar.github.io/screen-capture-apple-mac-osx/
+
 1. Printing https://wilsonmar.github.io/printing/
 1. https://wilsonmar.github.io/mac-finder/
-1. https://wilsonmar.github.io/macos-apps/
 
 1. https://wilsonmar.github.io/play-sound-on-mouseover-or-click/
 
@@ -174,25 +222,7 @@ instead of my agreeability in the moment.”
 1. Keeping secrets
 1. https://wilsonmar.github.io/markdown-text-for-github-from-html/
 
-## Personal Cyber Security
-
-1. Password Managers - 
-1. dice rolls & stats
-1. Memon memprizing long secrets
-1. Gmail, P emails
-1. Docs
-1. Spreadsheets
-1. Presentations
-1. Photo editing Png vs SVG
-
-1. VPN
-1. Wireshark networking
-1. SMS text
-1. Linkedin profile
-1. cal.com
-1. GitHub
-1. Certificates
-1. Eval (false positives)
+## Security Certifications
 
 1. https://wilsonmar.github.io/security-certs/
 1. https://wilsonmar.github.io/cyber-security/
@@ -214,12 +244,6 @@ instead of my agreeability in the moment.”
 
 1. https://wilsonmar.github.io/production/
 
-1. Voice command (Ambient) computing IoT with  https://wilsonmar.github.io/alexa/ voice
-1. Generate QR codes
-1. Extract text from pictures
-1. Screen scraping https://wilsonmar.github.io/web-scraping/
-1. Recognize text in pictures https://wilsonmar.github.io/tesseract/
-
 1. NATO alphabet pengram https://github.com/wilsonmar/python-samples/blob/main/pengram2nato.py
 1. Automate sending of emails, SMS text on cellphoens, Slack messages, discussions on Discord, Splunk security operations
    https://wilsonmar.github.io/email-from-website/
@@ -231,26 +255,7 @@ instead of my agreeability in the moment.”
 1. Maintain statis using microcontrollers (IoT) https://www.raspberrypi-spy.co.uk/2017/07/pool-temperature-monitoring-and-pump-control-with-the-pi-zero-w/
 
 
-<a name="Calendar"></a>
-
-# AI calendar
-
-1. AI Agents within MCP servers
-
-1. Acronyms
-https://wilsonmar.github.io/acronyms/
-
-1. History
-https://wilsonmar.github.io/history/
-
-# Project Management
-
-https://www.linkedin.com/dms/prv/image/v2/D5606AQFndAxAeM555g/messaging-image-720/B56Zd6E7esGoAc-/0/1750099805236?m=AQKYLrBT4POrDwAAAZd8BnuoNuDu5xXH2oT20ElZYeDPRT98c49QBBg&ne=1&v=beta&t=Z5QQafP9vkTxtCPia5-ohPLzEyLPuSNeVSmltuvHEJE
-1. https://wilsonmar.github.io/asana/
-
-1. https://wilsonmar.github.io/docusaurus/
-
-# Python Programmatic Automation
+## Python Programmatic Automation
 
 Students have a library of Python program coding projects to construct.
 Students are not left to their own to struggle.
@@ -299,11 +304,15 @@ https://github.com/wilsonmar/python-samples/blob/main/foods.py
 1. https://wilsonmar.github.io/anomaly-detection/
 1. https://wilsonmar.github.io/analysis/
 
-## Build Leadership Skills
 
-Our approcah <strong>builds leadership skills</strong> We provide students a fully functional AI Agents
+
+## Real Understanding
+
+Our approcah <strong>builds professional certifications</strong>
 
 1. Project management sufficient to pass the fundamentals exam.
+
+   <img src="https://www.linkedin.com/dms/prv/image/v2/D5606AQFndAxAeM555g/messaging-image-720/B56Zd6E7esGoAc-/0/1750099805236?m=AQKYLrBT4POrDwAAAZd8BnuoNuDu5xXH2oT20ElZYeDPRT98c49QBBg&ne=1&v=beta&t=Z5QQafP9vkTxtCPia5-ohPLzEyLPuSNeVSmltuvHEJE">Project Management</a>
 
 1. Git workflow sufficient to pass the GitHub Fundamentals exam.
    1. https://wilsonmar.github.io/git-stash/
@@ -320,10 +329,6 @@ Our approcah <strong>builds leadership skills</strong> We provide students a ful
    1. https://wilsonmar.github.io/git-rebase/ & https://wilsonmar.github.io/git-imerge/
    1. https://wilsonmar.github.io/git-custom-commands/
    1. https://wilsonmar.github.io/git-hooks/
-
-1. https://wilsonmar.github.io/screen-capture-apple-mac-osx/
-
-1. Wikipedia
 
 1. Organizational Change Management https://wilsonmar.github.io/change-management/
    https://wilsonmar.github.io/changing-enterprises/
@@ -348,4 +353,3 @@ Our approcah <strong>builds leadership skills</strong> We provide students a ful
 
 Buckminster Fuller said, "The race between dystopia and utopia will be neck and neck until the very end."
 
-https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-attention-equation-winning-the-right-battles-for-consumer-attention?stcr=A394EEB80C92421AAD81B79C4B1115BF&cid=other-eml-alt-mip-mck&hlkid=a2a110aeaea24af584fbe9e7c936a7ef&hctky=11453994&hdpid=5cbbfdab-b985-43e9-b29a-ddb1ee227132
