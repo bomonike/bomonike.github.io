@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-06-05"
-lastchange: "v204 + to wilsonmar :README.md"
+date: "2025-06-28"
+lastchange: "v205 + python-exams to wilsonmar :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -138,7 +138,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
 1. <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
 1. <a target="_blank" href="https://bomonike.github.io/prompt-engineering">prompt-engineering</a> using DPSy to automate better prompts using LLMs.
-1. <a target="_blank" href="https://bomonike.github.io/python-exams">python-exams</a>
+1. <a target="_blank" href="https://wilsonmar.github.io/python-exams">python-exams</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-tutorials">python-tutorials</a>
 
