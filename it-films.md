@@ -1,7 +1,7 @@
 ---
-date: "2025-06-01"
+date: "2025-06-10"
+lastchange: "v013 + section 31 trek links :it-films.md"
 url: https://bomonike.github.io/it-films
-lastchange: "v012 + star trek links :it-films.md"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/it-films"><img align="right" width="100" height="100" alt="it-films-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/it-films-qr.png?raw=true" />
@@ -36,35 +36,45 @@ PODCAST: "Hack the movies: the bet and worst hacker movies: <a target="_blank" h
 * <a target="_blank" href="https://www.netflix.com/watch/81554996/">"BUY NOW: The Shopping Conspiracy"</a>
 from the view of a webpage designer who worked at Amazon for 15 years and other whistleblowers.
 
+## 2001: A Space Odyssey
+
+Stanley Kubrick's 2001: A Space Odyssey (1968) is a landmark science fiction film based on the novel by Arthur C. Clarke and stars Keir Dullea, Gary Lockwood, and Douglas Adams. It is a masterpiece of science fiction, with stunning visuals, a gripping storyline, and a timeless message about the power of technology to shape our future.
+
+"I can't do that, Dave" resonates as the film's most iconic line from a killer robot.
+
+
 ## Star Trek franchise
 
-Star Trek is one of the most recognizable and influential franchises in pop culture.
+Star Trek is one of the most recognizable and influential science fiction franchises in pop culture.
 
-Star Trek is a groundbreaking American science fiction franchise created by Gene Roddenberry. 
-The series was inspired by classic adventure tales and sought to explore philosophical and social issues through futuristic storytelling.
+Star Trek began with the original television series in 1966 about the starship USS Enterprise exploring the galaxy in the 23rd century: "To go where no man has gone before."
+
+Creator Gene Roddenberry was inspired by classic adventure tales and sought to explore philosophical and social issues through futuristic storytelling.
 
 Star Trek stands out for its optimistic vision of the future, when humanity has overcome many of its present-day flaws. The franchise is known for tackling big questions about morality, identity, and society, often using alien cultures as mirrors for our own. Its focus has always been more on dialogue, diplomacy, and ethical dilemmas than on action or violence.
+
+The show is known for its impressive visual effects and set designs. The production value was high, and the sets were elaborate, with the USS Enterprise-D's bridge being a standout design. The technology portrayed in the show was ahead of its time and became a staple in science fiction TV and movies. The most notable technology is the holodeck - a room that uses holographic technology to simulate any environment, including historical events and fantasies. The characters also use communicators which inspired the invention of cell phones, and virtual monitors used as computers which are now used worldwide.
+
+Some of the show's most memorable episodes include "The Measure of a Man", where Data is put on trial to determine whether he can be considered sentient and have rights as an individual, and "The Inner Light", where Picard is transported to a planet where he lives an entire lifetime in a matter of minutes. Other notable episodes involve time travel or interactions with alien races such as the Borg and the Klingons.
 
 NASA named its first shuttle "Enterprise" after the show.
 
 In 2025, addition to numerous novels, comics, video games, and merchandise:
 
-Star Trek began with the original television series in 1966 about the starship USS Enterprise exploring the galaxy in the 23rd century: "To go where no man has gone before."
-
 Twelve television series, totaling 940 episodes across 49 seasons.
 
-1. 1966–1969 <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-original-series">80% The Original Series</a>	introduced Kirk, Spock, and the classic Enterprise crew. It popularized iconic phrases like "Live long and prosper" and "Beam me up, Scotty" have entered everyday language.
-1. 1973–1974 <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-animated-series">94% The Animated Series</a> Animated adventures with original cast voices
-1. 1987–1994	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-next-generation">92% The Next Generation</a> is set a century later, led by Captain Picard
+1. 1966–1969   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-original-series">80% The Original Series</a>	introduced Kirk, Spock, and the classic Enterprise crew. It popularized iconic phrases like "Live long and prosper" and "Beam me up, Scotty" have entered everyday language.
+1. 1973–1974   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-animated-series">94% The Animated Series</a> Animated adventures with original cast voices
+1. 1987–1994   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-next-generation">92% The Next Generation</a> is set a century later, led by Captain Picard. It ran for 7 seasons (180 episodes) from September 28, 1987 on Paramount Television
 1. 1993–1999	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-deep-space-nine">91% Deep Space Nine</a> is station-based, darker, serialized storytelling
 1. 1995–2001	Voyager starship lost far from home, led by Captain Janeway
 1. 2001–2005	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-enterprise">56% Enterprise</a> prequel to original, early human space exploration
 1. 2017–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-discovery">91% Discovery</a> modern streaming, diverse cast, new directions
 1. 2020–2023	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-picard">89% Picard</a> focuses on Jean-Luc Picard’s later years
-1. 2020–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-lower-decks">91% Lower Decks</a> - animated comedy about junior officers
-1. 2021–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-prodigy">97% Prodigy</a> - Animated, aimed at younger audiences
-1. 2022–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-strange-new-worlds">98% Strange New Worlds</a> - Classic exploration, new takes on old characters
-1. <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-discovery">20% Star Trek: Section 31"</a> Discovery  completed filming in early 2024.
+1. 2020–present   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-lower-decks">91% Lower Decks</a> - animated comedy about junior officers
+1. 2021–present   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-prodigy">97% Prodigy</a> - Animated, aimed at younger audiences
+1. 2022–present   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-strange-new-worlds">98% Strange New Worlds</a> - Classic exploration, new takes on old characters
+1. <a target="_blank" href="https://en.wikipedia.org/wiki/Star_Trek:_Section_31">2024</a>  <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-discovery">20% Star Trek: Section 31</a> is about a secret division of Star Fleet. Itstars Michelle Yeoh, playing former Discovery captain and 2257 parallel universe ruthless Terran Emporor Phillapa Georgiou.
 
 Feature films, including a rebooted trilogy set in an alternate timeline (the "Kelvin" timeline).
 

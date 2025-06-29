@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-05-16"
-lastchange: "v022 + DIY autodesk instructables :weather-info.md"
+date: "2025-06-21"
+lastchange: "v023 + Fix Trands :weather-info.md"
 url: "https://bomonike.github.io/weather-info"
 file: "weather"
 title: "Weather microclimate"
@@ -134,7 +134,7 @@ This map of temperatue around a location shows the extent of variation among mic
 Comparison vs. other weather stations (upwind, downwind, etc.).
 
 
-## Trands Over Time
+## Trends Over Time
 
 This <a target="_blank" href="https://www.weatherbriefing.com/weather-blog/2020/7/5/a-teaching-tool-relationship-between-temperature-relative-humidity-and-dew-point">meteograph</a> shows the relationship of changes among several metrics over time:
 
