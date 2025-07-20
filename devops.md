@@ -2,7 +2,7 @@
 layout: post
 date: "2026-07-19"
 lastchange: "v008 + BOK :2012-01-01-devops.md"
-url: "https://wilsonmar.github.io/devops"
+url: "https://bomonike.github.io/devops"
 file: "devops"
 title: "DevOps"
 excerpt: "Skills and certification around the DevOps industrial complex"
