@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-19"
-lastchange: "v011 + radar :devops-job-tasks.md"
+date: "2026-07-20"
+lastchange: "v012 + skill categories :devops-job-tasks.md"
 url: "https://bomonike.github.io/devops-job-tasks"
 file: "devops-job-tasks"
 title: "DevOps job tasks (the work of DevOps)"
@@ -64,32 +64,35 @@ QUESTION: For example, if the job requires a "3" in "Functional programming", wh
 
 <a name="Categories"></a>
 
-## Categories
+## Skills Categories
 
-Below are the categories:
 
-1. Organizational experience (Etiquette, Events, Presentations, OKRs, Planning, Incident Response)
-1. Security Habits (Email/Spam, Password managers, 2FA, signing, VPN, privacy, hashes)
-1. Interpersonal (Calendars, Appointments, Social Networking, shares, GitHub)
+A. <strong>Organizational experience</strong> (Etiquette, Events, Presentations, OKRs, Planning, Roles, Permissions, Incident Response, Feedback)<br />
+B. <strong>Security Habits</strong> (Backups, Email/Spam, Password managers, signing, 2FA, VPN)<br />
+C. <strong>Interpersonal proactiveness</strong> (Courage: Calendars, Appointments, Social Networking, shares, GitHub, KPIs)<br />
+D. <strong>Architecture & Design</strong> (News, Flowcharts, Value Map, Change Strategy)<br /
 
-1. Hardware selection (components, speeds, monitoring)
-1. Shell automation (Bash, Zsh) to install laptop components (keyboard speed & shortcuts)
-1. Network & system administration (Permissions)
-1. Adaption & creativity (Debugging, Generative AI prompt & context engineering)
+E. <strong>Hardware selection</strong> (spreadsheets, components, speeds, monitoring)<br />
+F. <strong>Automation</strong> (Bash, Zsh, Keyboard, shortcuts, Git, Git Hooks, Ansible, GitHub Actions, Voice)<br />
+G. <strong>Network & system admin.</strong> (Firewalls, Gateways, Messaging)<br />
+H. <strong>Creativity with AI/ML</strong> (Debugging, GenAI prompting & RAG context engineering)<br />
 
-1. Linux (PATHs, Files, folders, OS flavors)
-1. CI/CD (Git, Git Hooks, GitHub Actions, SAST)
+I. <strong>Operating System control</strong> (OS flavors, PATHs, Files, folders)<br />
+J. <strong>Infra. Engineering</strong> (Cloud Terraform, Docker, Kubernetes, SAST, DAST, availability and capacity management)<br />
+K. <strong>Technology integration</strong> (testing & debugging using IDEs, logs, metrics, traces)<br />
+L. <strong>DB & Data Analytics</strong> (dashboards, trends, projections, alerting,  migrations)<br />
 
-1. Imperative programming using Python, C, Go, Rust, Ruby (strings, lists, arrays, vectors, matrices)
-1. Technology integration (testing & debugging using IDEs, logs, metrics, traces)
-1. Object-oriented programming
-1. Functional programming
-1. Optimization (Spreadsheets, Algorithms, CUDA Parallel Computing)
-1. Infrastructure (Cloud Terraform, Ansible, alerting)
+M. <strong>Imperative programming</strong> using Python, C, Go, Rust, Ruby (strings, lists, arrays, vectors, matrices)<br />
+>
+N. <strong>Tech. Optimization</strong> (Algorithms, CUDA Parallel Computing)<br />
  
-1. DB & Data (shops, transactions, migration)
-1. Web (JavaScript, HTML, CSS) GUI for dashboards
-1. Graphics & Motion design (gif, PowerPoint, videos)
+O. <strong>Web & Mobile GUI</strong> (JavaScript, HTML, CSS, GUI for dashboards, shop)<br />
+P. <strong>Graphics & Motion design</strong> (gif, PowerPoint, videos)<br />
+
+Compare and contrast with other frameworks:
+
+Q. <strong>Object-oriented programming</strong><br />
+R. <strong>Functional programming</strong><br />
 
 
 QUESTIONS: How do the categories compare against others?
@@ -693,6 +696,8 @@ DAST cannot identify non-reflective vulnerabilities (i.e – Cross-Site Scriptin
 <a target="_blank" href="https://www.amazon.com/AWS-Certified-DevOps-Engineer-Professional/dp/1796646377/">Amazon's Study Guide for AZ-400</a>
 
 * <a target="_blank" href="https://acloud.guru/learn/aws-certified-devops-engineer-professional-2019">ACoud.guru vidoes</a> 
+
+* https://www.techtarget.com/whatis/feature/Is-a-career-in-DevOps-right-for-you-Top-7-considerations
 
 
 ## More on DevOps #
