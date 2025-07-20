@@ -24,7 +24,6 @@ created: "2019-04-15"
 
 Most job descriptons for DevOps roles focus on vendor <strong>product offerings</strong> (GitHub, Jenkins, etc.).
 
-<a target="_blank" href="https://www.microsoft.com/en-us/learning/azure-devops.aspx"><img align="right" alt="azure-devopsexpert-230x258-7173.jpg" width="115" src="https://user-images.githubusercontent.com/300046/56392303-56548080-61ee-11e9-8c6c-016ec8c3625a.jpg"></a>
 However, <a target="_blank" href="https://wilsonmar.github.io/devops-job-tasks/">this page</a> lists the contributions, achievements, and outcomes from working DevOps (DevTestSecOps or DevXOps), based on Job Task Analysis.
 
 In <a href="#MyRadar">my radar chart below</a>:
@@ -34,23 +33,25 @@ Other jobs would have a different profile.
 
 <a name="MyRadar"></a>
 
-## Our DevOps Skills Radar Chart
+## My DevOps Skills Radar Chart
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1752978757/DevOpsSkillsRadarChart_o6rlww.png"><img alt="DevOpsSkillsRadarChart.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1752978757/DevOpsSkillsRadarChart_o6rlww.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1752978757/DevOpsSkillsRadarChart_o6rlww.png"><img alt="DevOpsSkillsRadarChart.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1752978757/DevOpsSkillsRadarChart_o6rlww.png" /><em>Click for full screen</em></a>
 
-For both the red and blue lines, the further a point is from the center, the more skill is noted:
+WARNING: Are the ratings <strong>realistic</strong> or too ambitious?
+
+For both the red and blue lines, the further a point is from the center, the more maturity is noted:
 
 &nbsp; 1. Novice / 2. Competent / 3. Proficient / 4. Expert / 5. Master
 
-1. <strong>Novice</strong> represents the beginning stage where someone has little to no experience with a skill or domain. Novices typically rely heavily on rules, guidelines, and step-by-step instructions. They lack the contextual understanding to know when rules should be bent or broken, and they need significant guidance and supervision. Their performance is often rigid and focused on following procedures correctly rather than achieving optimal outcomes.
+1. <strong>Novice</strong> describes the beginning stage where someone has little to no experience with a skill or domain. Novices typically rely heavily on <strong>rules, guidelines, and step-by-step instructions</strong>. They lack the contextual understanding to know when rules should be bent or broken, and they need significant guidance and supervision. Their performance is often rigid and focused on following procedures correctly rather than achieving optimal outcomes.
 
-1. <strong>Competent</strong> describes someone who has gained enough experience to start making conscious choices about their actions. They can prioritize tasks, plan ahead, and have developed some personal attachment to their outcomes. Competent practitioners can handle routine situations independently but may struggle with unexpected complications. They're beginning to see patterns and can adapt their approach based on experience, though they still rely on analytical thinking more than intuition.
+1. <strong>Competent</strong> describes someone who has gained enough experience to start making conscious choices about their actions. They <strong>can prioritize</strong> tasks, plan ahead, and have developed some personal attachment to their outcomes. Competent practitioners can handle routine situations <strong>independently</strong> but may struggle with unexpected complications. They're beginning to <strong>see patterns</strong> and can adapt their approach based on experience, though they still rely on analytical thinking more than intuition.
 
-1. <strong>Proficient</strong> individuals have developed a more fluid, intuitive grasp of their domain. They can see situations holistically rather than just as a collection of parts, and they recognize patterns quickly. Proficient practitioners know what's important in various situations and can focus their attention accordingly. They've moved beyond rigid rule-following to understanding the deeper principles underlying their field, allowing for more flexible and context-appropriate responses.
+1. <strong>Proficient</strong> individuals have developed a more fluid, intuitive grasp of their domain. They can see situations <strong>holistically</strong> rather than just as a collection of parts, and they recognize patterns quickly. Proficient practitioners know what's important in various situations and can focus their attention accordingly. They've moved beyond rigid rule-following to understanding the <strong>deeper principles</strong> underlying their field, allowing for more flexible and context-appropriate responses.
 
-1. <strong>Expert</strong> level represents highly developed intuitive understanding combined with extensive analytical ability when needed. Experts have a vast repertoire of experienced situations to draw from and can quickly identify what's most relevant in new circumstances. They operate fluidly and efficiently, often making complex decisions that appear effortless to observers. Experts can handle novel situations by drawing analogies to their deep experience base and can often sense when something isn't right even before they can articulate why.
+1. <strong>Expert</strong> level represents highly developed intuitive understanding combined with extensive <strong>analytical</strong> ability when needed. Experts have a vast repertoire of experienced situations to draw from and can quickly identify what's most <strong>relevant</strong> in new circumstances. They operate fluidly and efficiently, often making <strong>complex decisions</strong> that appear effortless to observers. Experts can handle novel situations by drawing analogies to their deep experience base and can often sense when something isn't right even before they can articulate why.
 
-1. <strong>Master</strong> goes beyond individual expertise to encompass wisdom, innovation, and the ability to guide others' development. Masters not only perform at the highest level but can also break new ground in their field, create new methods or understanding, and effectively teach and mentor others. They possess both deep technical knowledge and the broader perspective to see how their domain connects to larger contexts and purposes.
+1. <strong>Master</strong> goes beyond individual expertise to encompass <strong>wisdom</strong>, innovation, and the ability to guide others' development. Masters not only perform at the highest level but can also break new ground in their field, <strong>create new methods</strong> or understanding, and effectively <strong>teach and mentor</strong> others. They possess both deep technical knowledge and the broader perspective to see how their domain connects to larger contexts and purposes.
 <br /><br />
 
 ## Your Profile
@@ -58,6 +59,14 @@ For both the red and blue lines, the further a point is from the center, the mor
 The <strong>blue</strong> line showing ratings for "Your profile" above is hypothetical.
 
 The <strong>gap</strong> is the work needed to close the gap.
+
+QUESTION: For example, if the job requires a "3" in "Functional programming", what is the impact of requiring the candidate to be tested for that as if a "5" is needed?
+
+<a name="Categories"></a>
+
+## Categories
+
+Below are the categories:
 
 1. Organizational experience (Etiquette, Events, Presentations, OKRs, Planning, Incident Response)
 1. Security Habits (Email/Spam, Password managers, 2FA, signing, VPN, privacy, hashes)
@@ -82,13 +91,12 @@ The <strong>gap</strong> is the work needed to close the gap.
 1. Web (JavaScript, HTML, CSS) GUI for dashboards
 1. Graphics & Motion design (gif, PowerPoint, videos)
 
-WARNING: Are the ratings <strong>realistic</strong> or too ambitious?
 
 QUESTIONS: How do the categories compare against others?
 
-
 ## Microsoft's 
 
+<a target="_blank" href="https://www.microsoft.com/en-us/learning/azure-devops.aspx"><img align="right" alt="azure-devopsexpert-230x258-7173.jpg" width="115" src="https://user-images.githubusercontent.com/300046/56392303-56548080-61ee-11e9-8c6c-016ec8c3625a.jpg"></a>
 Compare against the <a target="_blank" href="https://www.microsoft.com/en-us/learning/exam-AZ-400.aspx">Implementing Azure DevOps Solutions exam AZ-400</a> which fuilfills requirements to be designated a <a target="_blank" href="https://www.microsoft.com/en-us/learning/azure-devops.aspx">Microsoft Certified: Azure DevOps Engineer Expert</a>. Expand all (click on) these high-level statements of <strong>contributions</strong>:
 
 1. <a href="#Strategy">Design a DevOps strategy</a>
