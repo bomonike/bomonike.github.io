@@ -1,8 +1,8 @@
 ---
 layout: post
+date: "2025-08-10"
+lastchange: "v010 + GPUs 2024-12-21 :nvidia.md"
 url: https://bomonike.github.io/nvidia
-date: "2025-02-25"
-lastchange: "v008 + jetson to nvidia :nvidia.md"
 file: "nvidia"
 title: "NVIDIAJetson AI"
 excerpt: "How to get, install, and use NVIDIA's Jetson micro servers for AI at edge."
@@ -40,6 +40,10 @@ NVIDIA has a <a target="_blank" href="https://learn.nvidia.com/en-us/training/ed
    * Results are pass/fail on Credly) to accept your digital badge.
 
 Http failure response for https://market-production.azurewebsites.net/api/Organization/StoreExams/0894ab5e-cc68-4f2b-a8bc-d41a576d345d/slots?startDate=2/22/2025,%2012:00:00%20AM&endDate=2/22/2025,%2011:59:59%20PM&timeZone=America/Denver&slotDurationInMinutes=60: 401 OK
+
+
+https://www.udemy.com/course/nvidia-certified-associate-generative-ai-llms-nca-genl/?couponCode=KEEPLEARNING
+$19.99 "NVIDIA-Certified Associate - Generative AI LLMs (NCA-GENL)" on Udemy
 
 <a name="NCA-GENL"></a>
 
@@ -190,6 +194,10 @@ https://developer.nvidia.com/buy-jetson?product=all&location=US
 
 Developer Kits:
 
+https://developer.nvidia.com/buy-jetson?product=all&location=US
+
+The NVIDIA Jetson Orin™ Nano Super Developer Kit is a compact, yet powerful computer that redefines generative AI for small edge devices. At just USD $249, it provides developers, students, and makers with the most affordable and accessible platform, backed by the support of NVIDIA AI software and a broad AI software ecosystem. Learn more
+
 * Jetson Orin Nano (8GB LPDDR5 RAM) 1024-core ARM CPU with 32 Tensor Cores
    * $249 USD/$369 Euros from https://www.amazon.com/dp/B0BZJTQ5YP?th=1 has Athlon 6-core ARM CPU
    * https://www.arrow.com/en/products/945-13766-0000-000/nvidia
@@ -210,6 +218,7 @@ AGX is "not an acronym persay, but it loosely means Autonomous machines accelera
 
 Others:
 * Jetson Orin NX (16GB)
+* <a target="_blank" href="https://www.seeedstudio.com/reComputer-J1020-v2-p-5498.html">reComputer J1020 v2 - Edge AI Computer with NVIDIA® Jetson Nano 4GB</a> (SKU 110061441)
 
 Previous :
 * NVIDIA® Jetson AGX Xavier was the first generation of Jetson AGX platform.
@@ -237,6 +246,7 @@ Linux Developer Guide
 
 https://www.nvidia.com/en-au/glossary/
 
+* BSP 
 * CUDA is NVIDIA's proprietary software for parallel computing on GPUs. Its competitor is Intel's DPC++ (Data Parallel C++).
 
    CUDA 12.6
@@ -244,8 +254,16 @@ https://www.nvidia.com/en-au/glossary/
 * CuOPT
 * CSP & 3P Service
 
-* BSP
-* HPC (High Performance Computing)
+  <a name="GPUs"></a>
+
+* GPU = Graphics Processing Unit
+
+   * <a target="_blank" href="https://en.wikipedia.org/wiki/Turing_(microarchitecture)">Turing GPUs</a> (e.g., T4, Quadro RTX series)
+   * <a target="_blank" href="https://en.wikipedia.org/wiki/Ampere_(microarchitecture)">Ampere GPUs</a> (e.g., RTX30 series, A30/40/100)
+   * <a target="_blank" href="https://www.nvidia.com/en-us/geforce/ada-lovelace-architecture/">Ada Lovelace GPUs</a> (e.g., RTX40 series)
+   * <a target="_blank" href="https://www.nvidia.com/en-us/data-center/technologies/hopper-architecture/">Hopper GPUs</a> (e.g., H100/H200)
+
+* HPC = High Performance Computing
 
 * JetPack 6.1 Cannonical Ubuntu Linux OS Kernel - https://developer.nvidia.com/embedded/jetpack
 supports the Jetson Orin Nano Super Developer Kit, featuring [MAXN mode] which boosts AI compute performance for the Jetson Orin Nano Developer Kit. https://developer.nvidia.com/blog/nvidia-jetson-orin-nano-developer-kit-gets-a-super-boost/
