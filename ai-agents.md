@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-05-22"
-lastchange: "v020 + qrcode :ai-agents.md"
+date: "2025-08-14"
+lastchange: "v022 + mcp quote :ai-agents.md"
 url: https://bomonike.github.io/ai-agents
 file: "ai-agents"
 title: "AI Agents"
@@ -84,7 +84,9 @@ References:
 
 ## Use Cases
 
-The "Javis" computer in Ironman movies is a form of AI Agent.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lzbbPBLPtdY">VIDEO: 10 MCP Use Cases using Claude & MCP</a>
+
+The "Javis" computer voice in Ironman movies is a form of AI Agent.
 
 PROTIP: AI Agents takes advantage of new "reasoning" and "chain of thought" capabilities in LLMs such as provided by Anthropic Claude.
 
@@ -269,6 +271,29 @@ Claude AI and ChatGPT , on the other hand, are like Chrome. They’re the part p
 https://www.linkedin.com/pulse/mcp-just-beginning-what-actually-powers-ai-productivity-zapier-cy4ic/
 Zapier Agents show what’s possible with those capabilities.
 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=E2DEHOEbzks&t=523s&pp=0gcJCa0JAYcqIYzv" title="[24:09]">"Explained for Beginniners" by KodeKloud</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=FLpS7OfD5-s">"Why MCP really is a big deal | Model Context Protocol with Tim Berglund"</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=7j1t3UZA1TY">MCP vs API: Simplifying AI Agent Integration with External Data</a>
+   <br /><br />
+
+<a target="_blank" href="https://www.thoughtworks.com/radar/languages-and-frameworks#download">ThoughtWorks recommended</a> its consultantcy clients to "Assess" MCP:
+
+"One of the biggest challenges in prompting is ensuring the AI tool has access to all the context 
+relevant to the task. Often, this context already exists within the systems we use all day: wikis, issue 
+trackers, databases or observability systems. Seamless integration between AI tools and these 
+information sources can significantly improve the quality of AI-generated outputs.
+The Model Context Protocol (MCP), an open standard released by Anthropic, provides a standardized 
+framework for integrating LLM applications with external data sources and tools. It defines MCP 
+servers and clients, where servers access the data sources and clients integrate and use this data 
+to enhance prompts. Many coding assistants have already implemented MCP integration, allowing 
+them to act as MCP clients. MCP servers can be run in two ways: Locally, as a Python or Node 
+process running on the user’s machine, or remotely, as a server that the MCP client connects to via 
+SSE (though we haven’t seen any usage of the remote server variant yet). Currently, MCP is primarily 
+used in the first way, with developers cloning open-source MCP server implementations. While 
+locally run servers offer a neat way to avoid third-party dependencies, they remain less accessible 
+to nontechnical users and introduce challenges such as governance and update management. 
+That said, it’s easy to imagine how this standard could evolve into a more mature and user-friendly 
+ecosystem in the future."
 
 
 MCP provides contextual data to LLMs and AI assistants to solve problems. For instance, you can build an MCP documentation server to offer complete access to your documentation to IDEs and agentic frameworks, just like using llms.txt file.
@@ -303,11 +328,35 @@ IDEs Cursor and Windsurf provide a GUI to send npx commands to MCP servers which
    * https://www.youtube.com/watch?v=5ZWeCKY5WZE by Underfitted
    * https://www.youtube.com/watch?v=x8LQC6ut53Y by Underfitted "How to use MCP servers from a custom AI agent (step by step)"
    * https://fnf.dev/3F3fMaB 
+   <br /><br />
 
 Solo.io has announced the launch of its MCP Gateway, a Model Context Protocol gateway for the cloud native API gateway
 <a target="_blank" href="https://github.com/kgateway-dev/kgateway">kgateway</a> (previously called Gloo).
 
    * https://www.youtube.com/watch?v=0Z7u6DTDZ8o How to Build an Agent with the OpenAI Agents SDK by Sam Witteveen
+   <br /><br />
+
+## Google ACA
+
+https://www.youtube.com/shorts/Dxn1ku9nkRc
+Google's A2A and Anthropic's MCP serve two different purposes.
+
+Think of A2A as a secure conference room for agents.
+It enables flexible conversations between independent agents for complex, long-running tasks.
+Agents discover each other via agent cards and negotiate formats.
+Security is built-in for enterprise use.
+
+MCP, on the other hand, is a structured tool workshop.
+It uses rigid schemas for precise single-shot interactions between an agent and external systems like databases or APIs.
+Agents connect to an MCP server for specific functions.
+
+Security for remote access need extra setup.
+
+The key takeaway? 
+* A2A is for agent-to-agent communication.
+* MCP is for agent-to-tool interaction.
+You often need both to build powerful, collaborative AI systems.
+
 
 
 ## AI Agent Protocol Security 
