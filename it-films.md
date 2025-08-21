@@ -1,6 +1,6 @@
 ---
-date: "2025-06-10"
-lastchange: "v013 + section 31 trek links :it-films.md"
+date: "2025-08-20"
+lastchange: "v014 + trek eval :it-films.md"
 url: https://bomonike.github.io/it-films
 ---
 
@@ -47,6 +47,9 @@ Stanley Kubrick's 2001: A Space Odyssey (1968) is a landmark science fiction fil
 
 Star Trek is one of the most recognizable and influential science fiction franchises in pop culture.
 
+"The Inner Light” episode of Star Trek Next Generation remains for me the most memorable and heartfelt show of any TV show ever.
+[<a target="_blank" href="https://www.youtube.com/watch?v=lZpZfJC21lM">The Art of Storytelling</a>]
+
 Star Trek began with the original television series in 1966 about the starship USS Enterprise exploring the galaxy in the 23rd century: "To go where no man has gone before."
 
 Creator Gene Roddenberry was inspired by classic adventure tales and sought to explore philosophical and social issues through futuristic storytelling.
@@ -83,7 +86,7 @@ https://en.wikipedia.org/wiki/Star_Trek from Paramount
 Original Series and Next Generation Films (Release Order):
 
 1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-the-motion-picture">52% Star Trek: The Motion Picture</a> (1979) – The original crew reunites to confront a powerful alien entity approaching Earth.
-1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-ii-the-wrap-of-khan">86% Star Trek II: The Wrath of Khan</a> (1982) – Kirk faces his old nemesis Khan in a story about revenge and sacrifice.
+1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-ii-the-wrap-of-khan">86% Star Trek II: The Wrath of Khan</a> (1982) – Kirk faces his old nemesis Khan (Richardo Monteban) inin a story about revenge and sacrifice. [<a target="_blank" href="https://www.youtube.com/watch?v=KFOqq2w92ss">Review by Siskel & Ebert</a>]
 1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-iii-the-search-for-spock">78% Star Trek III: The Search for Spock</a> (1984) – The crew attempts to recover Spock’s body and soul after his death.
 1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-iv-the-voyage-home">81% Star Trek IV: The Voyage Home</a> (1986) – The crew time-travels to 20th-century Earth to save humpback whales and the planet.
 1. <a target="_blank" href="https://www.justwatch.com/us/movie/star-trek-v-the-final-frontier">23% Star Trek V: The Final Frontier</a> (1989) – Spock’s half-brother hijacks the Enterprise searching for God.
