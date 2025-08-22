@@ -8,15 +8,18 @@ title: "DNS IP Firewalls"
 excerpt: "Understand how DNS works, then filter out malware and annoying ads on your network by installing and configuring a PiHole Raspberry Pi server."
 tags: [security, networking]
 image:
-  feature: https://res.cloudinary.com/dcajqrroq/image/upload/v1755319484/dnsfilters-1918x574_vun3ax.png
+# dns-ip-firewalls-2160x650.png
+  feature: https://res.cloudinary.com/dcajqrroq/image/upload/v1755844463/dns-ip-firewalls-2160x650_g5lfws.png
   credit: Wilson Mar
-  creditlink: https://res.cloudinary.com/dcajqrroq/image/upload/v1755319484/dnsfilters-1918x574_vun3ax.png
+  creditlink: https://res.cloudinary.com/dcajqrroq/image/upload/v1755844463/dns-ip-firewalls-2160x650_g5lfws.png
 comments: true
 created: "2023-02-04"
 ---
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1755844463/dns-ip-firewalls-2160x650_g5lfws.png"><img alt="dns-ip-firewalls-2160x650.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1755844463/dns-ip-firewalls-2160x650_g5lfws.png" /></a>
 
 1. When on an <strong>internet browser</strong> app, we type a 
 1. <strong>domain name</strong>, such as <strong>mit.edu</strong>.
@@ -91,8 +94,7 @@ created: "2023-02-04"
 
 ## nslookup & dig
 
-
-https://www.nslookup.io/dns-course/#pricing
+Reference: https://www.nslookup.io/dns-course/#pricing
 
 1.  To lookup IPv4 addresses on Linux and macOS:
    
@@ -119,6 +121,8 @@ https://www.nslookup.io/dns-course/#pricing
     That was back in 1987 when the internet was not as a hostile place.
     Now, nations purposely <strong>flood DNS servers</strong> to bring down a whole country.
 
+    NOTE: When the original specifications for DNS was defined in 1987 (as <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc1034">RFC 1034</a> and <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc1035">1035</a>), <strong>32-bit addresses</strong> were popular for electronics available at the time.
+
     Being <strong>unencrypted</strong> means that anyone close by can read all websites you visit. This is not just a privacy problem because that enables DNS to be hijacked to send you to a malicioius website instead.
 
     <a name="DoT"></a>
@@ -129,18 +133,14 @@ https://www.nslookup.io/dns-course/#pricing
     
     If the secure option (DoT) is less likely to be available than its insecure option, then users and applications might be tempted to try to fall back to unencrypted DNS. This subsequently could allow attackers to force users to an insecure version.
 
-    NOTE: When the original specifications for DNS was defined in 1987 (as <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc1034">RFC 1034</a> and <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc1035">1035</a>), <strong>32-bit addresses</strong> were popular for electronics available at the time.
+    With DNS over TLS (DoT), the original DNS message is directly embedded into the secure TLS channel. From the outside, one can neither learn the name that was being queried nor modify it. The intended client application will be able to decrypt TLS, it looks like this:
 
     ### DoH (DNS over HTTPS)
 
     In 2018, <a target="_blank" href="https://tools.ietf.org/html/rfc8484">RFC 8484</a> defined the DoH (DNS queries over HTTPS) protocol going through<br />
-    port <tt>443</tt>. Like other HTTPS traffic which encrypt traffic using cryptographic certificates, no other party can impersonate the server (the resolver). With DNS over TLS (DoT), the original DNS message is directly embedded into the secure TLS channel. From the outside, one can neither learn the name that was being queried nor modify it. The intended client application will be able to decrypt TLS, it looks like this:
-
-Another approach, DNS Queries over HTTPS (DoH), was designed to support two primary use cases:
-
-Prevent the above problem where on-path devices interfere with DNS. This includes the port blocking problem above.
-
-Enable web applications to access DNS through existing browser APIs.DoH is essentially HTTPS, the same encrypted standard the web uses, and reuses the same port number (tcp/443). Web browsers have already deprecated non-secure HTTP in favor of HTTPS. That makes HTTPS a great choice for securely transporting DNS messages. An example of such a DoH request can be found here.
+    TCP port <tt>443</tt> like other HTTPS and API traffic, which encrypt traffic using cryptographic certificates so that no other party can impersonate the server (the resolver). 
+    
+    Since web browsers have already deprecated non-secure HTTP in favor of HTTPS, DoH is a great choice for securely transporting DNS messages.
 
 <a name="IPv6"></a>
 
