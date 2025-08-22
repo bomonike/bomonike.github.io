@@ -9,9 +9,9 @@ excerpt: "Understand how DNS works, then filter out malware and annoying ads on 
 tags: [security, networking]
 image:
 # dns-ip-firewalls-2160x650.png
-  feature: https://res.cloudinary.com/dcajqrroq/image/upload/v1755844463/dns-ip-firewalls-2160x650_g5lfws.png
+  feature: https://res.cloudinary.com/dcajqrroq/image/upload/v1755882552/dns-ip-firewalls-1080x329_d0bmb8.png
   credit: Wilson Mar
-  creditlink: https://res.cloudinary.com/dcajqrroq/image/upload/v1755844463/dns-ip-firewalls-2160x650_g5lfws.png
+  creditlink: https://res.cloudinary.com/dcajqrroq/image/upload/v1755882552/dns-ip-firewalls-1080x329_d0bmb8.png
 comments: true
 created: "2023-02-04"
 ---
@@ -19,7 +19,7 @@ created: "2023-02-04"
 {% include l18n.html %}
 {% include _toc.html %}
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1755844463/dns-ip-firewalls-2160x650_g5lfws.png"><img alt="dns-ip-firewalls-2160x650.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1755844463/dns-ip-firewalls-2160x650_g5lfws.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1755882552/dns-ip-firewalls-1080x329_d0bmb8.png"><img alt="dns-ip-firewalls-1080x329.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1755882552/dns-ip-firewalls-1080x329_d0bmb8.png" /></a>
 
 1. When on an <strong>internet browser</strong> app, we type a 
 1. <strong>domain name</strong>, such as <strong>mit.edu</strong>.
@@ -32,11 +32,10 @@ created: "2023-02-04"
 1. assigned <strong>IP addresses</strong>.
 1. Such associations are registered by the domain owners within the <strong>Domain Name System registrars</strong> (such as GoDaddy).
 
-   BTW, there are two types of IP addresses registered today.
+   BTW, there are two types of IP addresses registered:
 
-1. DNS was created in 1987 with "<strong>-type A</strong>" records defining IPv4 addresses of 32-bits common to electronics at the time.
-1. In 1995, processsing of AAAA type <a href="#IPv6">IPv6</a> was added to handle addresses up to 128-bit (16 byte) binary addresses.
-1. On the internet browser or other apps, IPv4 addresses are routed using the ARP (Address Request Protocol).
+1. DNS was created in 1987 with "<strong>type A</strong>" records defining IPv4 addresses of 32-bits common to electronics at the time.
+1. In 1995, processsing of AAAA type <a href="#IPv6">IPv6</a> was added to handle binary addresses up to 128-bit (16 byte).
 
 1. DNS Registrars <strong>propagate</strong> these DNS records into
 1. <strong>Authoritative Name Servers</strong> around the world answering DNS queries.
@@ -90,9 +89,41 @@ created: "2023-02-04"
 
 <hr />
 
+<a name="localDNS"></a>
+
+## Local DNS Resolver
+
+1.  Use Terminal to show IP addresses used for DNS on your macOS machine:
+
+    <pre><strong>networksetup -getdnsservers Wi-Fi</strong></pre>
+    ```
+    9.9.9.9
+    149.112.112.112
+    ```
+    PROTIP: Usually, DNS is configured with two or more addresses for redundancy.
+
+    Alternately, for more geeky details:
+    <pre><strong>scutil --dns</strong></pre>
+    ```
+    ...
+    DNS configuration (for scoped queries)
+
+    resolver #1
+    nameserver[0] : 9.9.9.9
+    nameserver[1] : 149.112.112.112
+    if_index : 14 (en0)
+    flags    : Scoped, Request A records
+    reach    : 0x00000002 (Reachable)
+    ```
+    Alternately, on Linux machines, look at the configuration file:
+    <pre><strong>cat /etc/resolv.conf</strong></pre>
+    On Linux systems with systemd (newer distributions of Ubuntu, Fedora, or CentOS):
+    <pre><strong>resolvectl status</strong></pre>
+
+
 <a name="nslookup"></a>
 
-## nslookup & dig
+## dig & nslookup
 
 Reference: https://www.nslookup.io/dns-course/#pricing
 
@@ -125,6 +156,9 @@ Reference: https://www.nslookup.io/dns-course/#pricing
 
     Being <strong>unencrypted</strong> means that anyone close by can read all websites you visit. This is not just a privacy problem because that enables DNS to be hijacked to send you to a malicioius website instead.
 
+    https://www.nslookup.io/learning/dns-record-types/aaaa/
+    shows a trace which leaks privacy.
+
     <a name="DoT"></a>
 
     ### DoT (DNS over TLS)
@@ -144,7 +178,7 @@ Reference: https://www.nslookup.io/dns-course/#pricing
 
 <a name="IPv6"></a>
 
-1. To lookup IPv6 addresses: See See https://www.nslookup.io/learning/dns-record-types/aaaa/
+1. To lookup IPv6 addresses: 
    
    <pre><strong>nslookup -type=AAAA mit.edu</strong></pre>
 
@@ -189,11 +223,23 @@ Reference: https://www.nslookup.io/dns-course/#pricing
 
    Note that IPv6 addresses are not in the DNSSBL spam exclusion list.
 
-## DNS over QUIC
+## HTTP/3 over QUIC
 
-Using HTTPS means that HTTP protocol improvements can also benefit DoH. The <a target="_blank" href="https://blog.cloudflare.com/http3-the-past-present-and-future/">HTTP/3</a>, built on top of <a target="_blank" href="https://blog.cloudflare.com/the-road-to-quic/">QUIC</a> (Quick UDP Internet Connections) may yield performance improvements by enabling multiple DNS queries to be sent simultaneously over a secure channel without blocking each other when one packet is lost.
+Google designed QUIC with IETF in 2012 too speed YouTube, particularly on cellular networks.
+Google calls <a target="_blank" href="https://blog.cloudflare.com/the-road-to-quic/">QUIC</a> (Quick UDP Internet Connections) but IETF just uses the letters.
 
-A draft for DNS over QUIC (DNS/QUIC) is similar to DoT, but without the "head-of-line blocking" problem due to the use of QUIC. Both HTTP/3 and DNS/QUIC, however, require a UDP port to be accessible. In theory, both could fall back to DoH over HTTP/2 and DoT respectively.
+It's already enabled on Chrome, Firefox. Open UDP port 443 in your firewall and create TLS SSL certs. Nginx servers need to add ALT-SVC header for HTTP/3 advertisement.
+
+UDIC combines the speed of UDP with the reliability and security features typically associated with TCP, along with the encryption capabilities of TLS (Transport Layer Security).
+
+China blocks it because QUIC traffic cannot be inspected.
+
+<a target="_blank" href="https://blog.cloudflare.com/http3-the-past-present-and-future/">HTTP/3</a> is built on top of QUIC, 
+ is faster by enabling multiple DNS queries to be sent simultaneously over a secure channel without blocking each other when one packet is lost.
+
+For more details: https://www.zscaler.com/blogs/product-insights/quic-secure-communication-protocol-shaping-future-of-internet
+
+DNS over QUIC (DNS/QUIC) is similar to DoT, but without the "head-of-line blocking" problem due to the use of QUIC. Both HTTP/3 and DNS/QUIC, however, require a UDP port to be accessible. In theory, both could fall back to DoH over HTTP/2 and DoT respectively.
 
 ## DNSBL
 
@@ -561,7 +607,10 @@ https://docs.pi-hole.net/main/basic-install/
 
 https://www.youtube.com/watch?v=gyMpI8csWis
 
-## Chron jobs
+
+<a name="cron"></a>
+
+## Cron jobs
 
 ### Update the Pi-hole
 
@@ -603,6 +652,70 @@ Run a chron (crontab) job to Once a week or month to apply updates (if one becom
 ## More 
 
 <a target="_blank" href="https://www.youtube.com/watch?v=0wpn3rXTe0g">VIDEO</a>: "Is adding 3 MILLION domains to your Pi-Hole Block List a good thing?" by Techno Tim
+
+## Firewalls on AWS
+
+Use least-privilege principles: 
+
+1. Define read and list permissions (required for console and management):
+   * ec2:DescribeSubnets
+   * ec2:DescribeVpcs
+
+   * network-firewall:DescribeFirewall
+   * network-firewall:ListFirewalls
+   * network-firewall:ListRuleGroups
+   * network-firewall:GetFirewallPolicy
+   * network-firewall:GetRuleGroup
+
+1. Define IAM Permissions for AWS Network Firewall Creation: Firewall and related resource creation permissions:
+   * ec2:CreateVpcEndpoint (if you're creating firewall endpoints in your VPC)
+
+   * network-firewall:CreateFirewall
+   * network-firewall:CreateFirewallPolicy
+   * network-firewall:CreateRuleGroup
+   * network-firewall:CreateLoggingConfiguration
+   * network-firewall:AssociateFirewallPolicy
+   * network-firewall:UpdateFirewall
+   * network-firewall:UpdateFirewallPolicy
+
+1. Define separate accounts ability to delete firewalls:
+   * network-firewall:DeleteFirewall
+   * network-firewall:DeleteFirewallPolicy
+   * network-firewall:DeleteRuleGroup
+
+1. Create <strong>Rule Groups</strong> of traffic filtering rules to block or allow certain protocols or ports. Stateless rule groups have specific patterns. Stateful rule groups are for tracking traffic state.
+
+2. Create a Firewall Policy to configure the firewall's traffic behavior. Bundle rule groups together by specifying which rule groups included, and set default actions (e.g., forward traffic to stateful engine or drop).
+
+3. Create the Firewall by associating VPCs with firewall policies. Choose the availability zones and subnets for firewall endpoints. At least two subnets are needed in the VPC: one for firewall endpoints and one for resources.
+
+   An AWS firewall can handle up to 100 Gbps per endpoint and scale by adding firewalls in multiple subnets.
+
+4. Update VPC Route Tables to ensure traffic inspection. Update route tables to route traffic through the firewall endpoints. This routes inbound and outbound traffic through the firewall for filtering.
+
+
+## Firewalls on Azure
+
+1. Set IAM
+
+1. Configure Firewall Policy and Rules to manage firewall rules centrally by defining application rules, network rules, and NAT rules in your firewall policy or directly on the firewall. Rules typically specify source/destination IPs or ranges, protocols, ports, and allow/deny actions.
+
+   See https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal
+
+1. Set Up Routing Through Firewall by a route table and disable BGP route propagation.
+   Add a route:
+   * Destination: 0.0.0.0/0 (to route all outbound traffic).
+   * Next hop type: Virtual appliance.
+   * Next hop address: Private IP of the Azure Firewall.
+   * Associate the route table to the target subnet(s) of your virtual network, such as a workload subnet, to enforce that traffic flows through the firewall.
+
+1. Monitor traffic logs and alerts via Azure Monitor or logging configured for Azure Firewall. 
+
+   Adjust firewall and routing rules as needed according to security requirements.
+
+
+## Firewalls on GCP
+
 
 ## References
 
