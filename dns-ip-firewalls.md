@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-08-22"
-lastchange: "v036 + new flowchart :dns-ip-firewalls.md"
+lastchange: "v038 + diagram flowchart :dns-ip-firewalls.md"
 url: "https://bomonike.github.io/dns-ip-firewalls"
 file: "dns-ip-firewalls"
 title: "DNS IP Firewalls"
@@ -19,73 +19,79 @@ created: "2023-02-04"
 {% include l18n.html %}
 {% include _toc.html %}
 
+<a name="flowchart"></a>
+
+## Diagram summary
+
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1755882552/dns-ip-firewalls-1080x329_d0bmb8.png"><img alt="dns-ip-firewalls-1080x329.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1755882552/dns-ip-firewalls-1080x329_d0bmb8.png" /></a>
 
-1. When on an <strong>internet browser</strong> app, we type a 
-1. <strong>domain name</strong>, such as <strong>mit.edu</strong>.
-1. Behind the scenes, apps look up a kind of "phone number" the internet uses to find the web page the
-1. <strong>IP addresses</strong> for the domain name.
+When on an <strong>internet browser</strong> app, we type a 
+<strong>domain name</strong> such as <strong>mit.edu</strong>,
+behind the scenes, apps look up a kind of "phone number" the internet uses to find the web server's
+<strong>IP addresses</strong> for the domain name.
 
-1. To take a deeper look, let's use a Linux CLI (Command Line Interface) <strong>Terminal</strong> to use the <a href="#nslookup">nslookup</a> or <a href="#dig">dig</a> command to a
-1. <a href="#PublicDNS">public DNS service</a> to look up where the domain's
-1. <strong>web servers</strong> were created with
-1. assigned <strong>IP addresses</strong>.
-1. Such associations are registered by the domain owners within the <strong>Domain Name System registrars</strong> (such as GoDaddy).
+To take a deeper look, let's use a Linux CLI (Command Line Interface) <strong>Terminal</strong> to use the <a href="#nslookup">nslookup</a> or <a href="#dig">dig</a> command to a
+<a href="#PublicDNS">public DNS service</a> to look up where the domain's
+<strong>web servers</strong> were created with
+assigned <strong>IP addresses</strong>.
+Such associations are registered by the domain owners within the <strong>Domain Name System registrars</strong> (such as GoDaddy).
 
-   BTW, there are two types of IP addresses registered:
+BTW, there are two types of IP addresses registered:
 
-1. DNS was created in 1987 with "<strong>type A</strong>" records defining IPv4 addresses of 32-bits common to electronics at the time.
-1. In 1995, processsing of AAAA type <a href="#IPv6">IPv6</a> was added to handle binary addresses up to 128-bit (16 byte).
+* DNS was created in 1987 with "<strong>type A</strong>" records defining IPv4 addresses of 32-bits common to electronics at the time.
+* In 1995, processsing of AAAA type <a href="#IPv6">IPv6</a> was added to handle binary addresses up to 128-bit (16 byte).
 
-1. DNS Registrars <strong>propagate</strong> these DNS records into
-1. <strong>Authoritative Name Servers</strong> around the world answering DNS queries.
-1. Because almost every request through the interet involves DNS, DNS servers are arranged in a hierarchy to accomodate the load. Access goes through a <strong>Recursive DNS</strong> workflow that 
-1. begins by reaching the server handling the <strong>TLD (Top-level Domain)</strong> at the end of each domain name, such as ".com", ".edu", etc.
-1. Each TLD DNS server has an index to Authoritative names for its TLD.
+DNS Registrars <strong>propagate</strong> these DNS records into
+<strong>Authoritative Name Servers</strong> around the world answering DNS queries.
+Because almost every request through the interet involves DNS, DNS servers are arranged in a hierarchy to accomodate the load. Access goes through a <strong>Recursive DNS</strong> workflow that 
+begins by reaching the server handling the <strong>TLD (Top-level Domain)</strong> at the end of each domain name, such as ".com", ".edu", etc.
+Each TLD DNS server has an index to Authoritative names for its TLD.
 
-1. On an <strong>internet browser</strong> (such as Google Chrome or Firefox) or other app,
-1. Requests for retrieving website content through your local <strong>router</strong> and
-1. the <strong>public internet</strong> (Data Link layer) using
-1. <strong>IPv4 address</strong> are routed using the <a target="_blank" href="https://en.wikipedia.org/wiki/Address_Resolution_Protocol">ARP (Address Resolution Protocol)</a>.
-1. <strong>IPv6</strong> requests are routed using the <a target="_blank" href="https://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol">NDP (Neighbor Discovery Protocol)</a>.
+On an <strong>internet browser</strong> (such as Google Chrome or Firefox) or other app,
+Requests for retrieving website content through your local <strong>router</strong> and
+the <strong>public internet</strong> (Data Link layer) using
+<strong>IPv4 address</strong> are routed using the <a target="_blank" href="https://en.wikipedia.org/wiki/Address_Resolution_Protocol">ARP (Address Resolution Protocol)</a>.
+<strong>IPv6</strong> requests are routed using the <a target="_blank" href="https://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol">NDP (Neighbor Discovery Protocol)</a>.
 
-   Because most enterprises use just a couple of DNS servers, they can be vulerable to <strong>volumetric attacks</strong> where large amounts of malicious traffic can prevent users from finding the website. 
+&nbsp; &nbsp; &nbsp; Because most enterprises use just a couple of DNS servers, they can be vulerable to <strong>volumetric attacks</strong> where large amounts of malicious traffic can prevent users from finding the website. 
 
-1. Most consumers are asked to configure their machine's <strong>default local DNS reslover</strong> to 
-1. use the public DNS server provided or controlled by their Internet Service Provider (ISP) (such as ATT, TMobile, Verizon, etc.).
-1. That enables them to make money from <strong>selling logs</strong> of your traffic details for profit.
+Most consumers are asked to configure their machine's <strong>default local DNS reslover</strong> to 
+use the public DNS server provided or controlled by their Internet Service Provider (ISP) (such as ATT, TMobile, Verizon, etc.).
+That enables them to make money from <strong>selling logs</strong> of your traffic details for profit.
 
-1. So I configure my System Settings to use the DNS server at <strong>9.9.9.9</strong>. 
-1. That's <strong>Quad9</strong>, created and run by the UK's Scotland Yard, who
-1. put <strong>malicious</strong> websites they know about on their own 
-1. <strong>blocklists</strong> of sites they don't serve to their users. So by configuring Quad9 as your local DNS, you get some protection from a few criminal websites.
-1. But many want to block the millions of malicious or serve annoying ads listed in <strong>public blocklists</strong> collected by others.
-1. You can also maintain your own <strong>private blocklist</strong> for parental control.
+So I configure my System Settings to use the DNS server at <strong>9.9.9.9</strong>. 
+That's <strong>Quad9</strong>, created and run by the UK's Scotland Yard, who
+put <strong>malicious</strong> websites they know about on their own 
+<strong>blocklists</strong> of sites they don't serve to their users. So by configuring Quad9 as your local DNS, you get some protection from a few criminal websites.
+But many want to block the millions of malicious or serve annoying ads listed in <strong>public blocklists</strong> collected by others.
+You can also maintain your own <strong>private blocklist</strong> for parental control.
 
-   Here is how you do that.
+&nbsp; &nbsp; &nbsp; Here is how you do that.
 
-1. An add-in such as <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">ublock</a> (by Raymond Hill) can be installed on Firefox browsers to block ads based on its own private blocklist. But each browser and app has its own add-in.
-1. But we need protection on all apps. looking up all <strong>host name</strong> lookups.
+An add-in such as <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">ublock</a> (by Raymond Hill) can be installed on Firefox browsers to block ads based on its own private blocklist. But each browser and app has its own add-in.
+But we need protection on all apps. looking up all <strong>host name</strong> lookups.
 
-1. We need to get away from the typical <strong>default configuration</strong> of a <strong>local DNS server</strong> using sketchy public DNS services.
+We need to get away from the typical <strong>default configuration</strong> of a <strong>local DNS server</strong> using sketchy public DNS services.
 
-1. To enable your machine to filter based on blocklists, your router and System Settings needs to be changed from depending on the local <strong>DHCP</strong> service to specify  
-1. the <strong>static</strong> IP address to the local redundant
-1. <strong>PiHole hardware</strong> you build and install on your network to <strong>filter</strong> traffic.
+To enable your machine to filter based on blocklists, your router and System Settings needs to be changed from depending on the local <strong>DHCP</strong> service to specify  
+the <strong>static</strong> IP address to the local redundant
+<strong>PiHole hardware</strong> you build and install on your network to <strong>filter</strong> traffic.
 
-1. Blacklists need <strong>update</strong> over time. 
-1. That can be automatically done using the <strong>"gravity"</strong> utility.
-1. You can also override specific domains by editing your <strong>custom allowlist</strong>.
+Blacklists need <strong>update</strong> over time. 
+That can be automatically done using the <strong>"gravity"</strong> utility.
+You can also override specific domains by editing your <strong>custom allowlist</strong>.
 
-1. Instead of using sketchy public DNS services to do the TLD and Authorative lookups,
-1. unfiltered traffic is passed to a <strong>local Recursive DNS service called "unbound"</strong> 
-1. This customization enables you to use <strong>DNSSEC</strong> protocols to encrypt traffic to make them more difficult to hack.
+Instead of using sketchy public DNS services to do the TLD and Authorative lookups,
+unfiltered traffic is passed to a <strong>local Recursive DNS service called "unbound"</strong> 
+This customization enables you to use <strong>DNSSEC</strong> protocols to encrypt traffic to make them more difficult to hack.
 
-1. The unbound service needs to be invoked automatically upon <strong>reboot</strong>, and be controlled by a
-1. <strong>automation CLI script</strong> that installs Python and other services such as <strong>DoH</strong> (DNS over HTTPS) protocol for better privacy by encrypting communications.
+The unbound service needs to be invoked automatically upon <strong>reboot</strong>, and be controlled by a
+<strong>automation CLI script</strong> that installs Python and other services such as <strong>DoH</strong> (DNS over HTTPS) protocol for better privacy by encrypting communications.
 
-1. To use your custom private blocklists <strong>while traveling</strong>, install a
-1. <strong>self-hosted VPN</strong>.
+To use your custom private blocklists <strong>while traveling</strong>, install a
+<strong>self-hosted VPN</strong>.
+
+Click links in the text above for more geeky details below.
 
 <hr />
 
@@ -696,6 +702,8 @@ Use least-privilege principles:
 
 ## Firewalls on Azure
 
+See https://www.perplexity.ai/search/how-to-define-firewalls-on-azu-kXInYB5ZRy6.zxelglXdCg
+
 1. Set IAM
 
 1. Configure Firewall Policy and Rules to manage firewall rules centrally by defining application rules, network rules, and NAT rules in your firewall policy or directly on the firewall. Rules typically specify source/destination IPs or ranges, protocols, ports, and allow/deny actions.
@@ -715,6 +723,10 @@ Use least-privilege principles:
 
 
 ## Firewalls on GCP
+
+Use the Terraform resource "google_compute_firewall" at 
+https://github.com/r-teller/terraform-google-firewall-rules
+to allow IAP ranges access to all VMs within 192.168.0.0/16 on all ports.",
 
 
 ## References
