@@ -1,14 +1,17 @@
 ---
-lastchange: "v002 + fix yaml :ham-radio.md"
+date: "2025-09-12"
+lastchange: "25-09-12 v003 + Starlink :ham-radio.md"
 file: "ham-radio.md"
 created: "2024-05-14"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/ham-radio"><img align="right" width="100" height="100" alt="ham-radio.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ham-radio.png?raw=true" />
 
-The FCC (Federal Communications Commission) in the US, and its equivalent in each country (except Yemen and North Korea) have rules on how its citizens can use the airwaves.
+I'm KK7UFL
 
 ## Goverment & Community bands
+
+The FCC (Federal Communications Commission) in the US, and its equivalent in each country (except Yemen and North Korea) have rules on how its citizens can use the airwaves.
 
 The US NIST operates two Short Wave radio stations which broadcast atomic clock times on lower HF:
 <a target="_blank" href="https://www.nist.gov/pml/time-and-frequency-division/time-distribution/radio-station-wwv">WWV</a> near Fort Collins, Colorado & WWVH in Hawaii
@@ -65,6 +68,9 @@ Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
 * Cellular WiFi hotspots by AT&T, Verizon, T-Mobile, etc.
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=HMtnHC5z0Lg&t=6m40s">VIDEO</a>: <a target="_blank" href="https://members.calyxinstitute.org/enroll/device?">Calyx Institute</a> 4G & 5G hot spots off T-Mobile.
+
+* <a target="_blank" href="https://www.dolphmicrowave.com/default/what-is-the-default-ghz-for-starlink/">BLOG</a>: Starlink’s phased-array dish automatically changes frequencies every few milliseconds, so exact band use depends on congestion and local conditions. Starlink operates mainly in the Ku-band (50–150 Mbps 10.7–12.7 GHz) because it has ​​wider global coverage​​ and ​​better penetration through light obstructions​​. For rural areas and Ka-band (​​100–200 Mbps 17.8–19.3 GHz) for urban-like speeds. For satellite-to-satellite backhaul, the E-band (71–86 GHz) is used. Additional minor allocations include bands from 13.85–14.5 GHz, 27.5–30 GHz, and 29.5–30 GHz depending on region and regulatory approval.
+
 
 
 ## Wavelengths vs Frequencies
@@ -987,3 +993,4 @@ https://www.hamradio.com/detail.cfm
 
 https://www.cisa.gov/safecom/field-operations-guides
 
+<sub>{{ page.lastchange }} {{ page.date }}</sub>
