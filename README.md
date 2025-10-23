@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-10-22"
-lastchange: "v206 + gta :README.md"
+lastchange: "v206 + gta, ap-stats, lamp-oil :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -30,6 +30,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/algorithmic-complexity">algorithmic-complexity</a>
 1. <a target="_blank" href="https://bomonike.github.io/anyscale-ray">anyscale-ray</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
+1. <a target="_blank" href="https://bomonike.github.io/ap-stats">ap-stats</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
@@ -68,6 +69,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/git-signing">git-signing</a>
 1. <a target="_blank" href="https://bomonike.github.io/github-install">github-install</a>
 1. <a target="_blank" href="https://bomonike.github.io/google-ai">google-ai</a>
+1. <a target="_blank" href="https://wilsonmar.github.io/gta">gta</a>
 
    <a name="H"></a>
    ### H
@@ -75,6 +77,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ham-radio">ham-radio</a>
 1. <a target="_blank" href="https://bomonike.github.io/headphones">headphones</a>
 1. <a target="_blank" href="https://bomonike.github.io/history">history</a>
+1. <a target="_blank" href="https://bomonike.github.io/security-cameras">security-cameras</a>
 
    <a name="I"></a>
    ### I
@@ -89,11 +92,15 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/jupyter">jupyter</a>
 
    <a name="K"></a>
-   <a name="L"></a>
-   ### K & L
+   ### K
 
 1. <a target="_blank" href="https://bomonike.github.io/kanban">kanban</a>
 1. <a target="_blank" href="https://bomonike.github.io/kubernetes">kubernetes</a>
+
+   <a name="L"></a>
+   ### L
+
+1. <a target="_blank" href="https://bomonike.github.io/lamp-oil">lamp-oil</a>
 1. <a target="_blank" href="https://bomonike.github.io/london">london</a>
 
    <a name="M"></a>
