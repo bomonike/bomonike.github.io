@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-10-22"
-lastchange: "25-10-22 v007 + glassary :ap-stats.md"
+date: "2025-10-23"
+lastchange: "25-10-23 v008 + Khan AP topics :ap-stats.md"
 url: https://bomonike.github.io/ap-stats
 file: "microsoft-ai"
 title: "Microsoft AI (Azure OpenAI Generative Services)"
@@ -34,22 +34,35 @@ D. Statistical Argumentation = Develop an explanation or justify a conclusion us
 definitions, or statistical inference. Use statistical reasoning to draw appropriate conclusions and justify claims.
 <br /><br />
 
+REMEMBER: Graphing calculators (TI-85) are allowed during exams.
+
 https://apcentral.collegeboard.org/courses/ap-statistics
 Exam Description PDF (Effective Fall 2020) 
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr><th>Unit</th><th> Weighting</th></tr>
-<tr valign="top"><td> 1. Exploring One-Variable Data </td><td align="center"> 15-23% </td></tr>
-<tr valign="top"><td> 2. Exploring Two-Variable Data </td><td align="center"> 5-7% </td></tr>
-<tr valign="top"><td> 3. Collecting Data </td><td align="center"> 12-15% </td></tr>
+<tr><th>Unit</th><th> Weight </th><th> <a href="#Khan">Khan</a> </th></tr>
+<tr valign="top"><td> 1. Exploring One-Variable Data </td><td align="center"> 15-23% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/quantitative-data-ap">AP</a></td></tr>
+<tr valign="top"><td> 2. Exploring Two-Variable Data </td><td align="center"> 5-7% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap">AP</a></td></tr>
+<tr valign="top"><td> 3. Collecting Data </td><td align="center"> 12-15% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/gathering-data-ap">AP</a></td></tr>
 
-<tr valign="top"><td> 4. Probability, Random Variables, and Probability Distributions </td><td align="center"> 10-20% </td></tr>
-<tr valign="top"><td> 5. Sampling Distributions </td><td align="center"> 7-12% </td></tr>
+<tr valign="top"><td> 4. Probability, Random Variables, and Probability Distributions </td><td align="center"> 10-20% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/random-variables-ap">AP</a></td></tr>
+<tr valign="top"><td> 5. Sampling Distributions </td><td align="center"> 7-12% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/sampling-distribution-ap">AP</a></td></tr>
 
-<tr valign="top"><td> 6. Inference for Categorical Data: Proportions </td><td align="center"> 12-15% </td></tr>
-<tr valign="top"><td> 7. Inference for Quantitative Data: Means </td><td align="center"> 10-18% </td></tr>
-<tr valign="top"><td> 8. Inference for Categorical Data: Chi-square </td><td align="center"> 2-5% </td></tr>
-<tr valign="top"><td> 9. Inference for Quantitative Data: Slopes </td><td align="center"> 2-65% </td></tr>
+<tr valign="top"><td> 6. Inference for Categorical Data: Proportions </td><td align="center"> 12-15% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:inference-categorical-proportions">AP</a></td></tr>
+<tr valign="top"><td> 7. Inference for Quantitative Data: Means </td><td align="center"> 10-18% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:inference-quantitative-means">AP</a></td></tr>
+<tr valign="top"><td> 8. Inference for Categorical Data: Chi-square </td><td align="center"> 2-5% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/chi-square-tests">AP</a></td></tr>
+<tr valign="top"><td> 9. Inference for Quantitative Data: Slopes </td><td align="center"> 2-65% 
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/inference-slope-linear-regression">AP</a></td></tr>
+<tr valign="top"><td> * Prepare for the 2022* AP Statistics Exam </td><td align="center"> -
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:prepare-for-the-2022-ap-statistics-exam">AP</a></td></tr>
 </table>
 <br /><br />
 
@@ -135,10 +148,11 @@ see https://www.statsdirect.com/help/references/glossary.htm
 | SRS     | simple random sample          | a sample taken so that each member and set of \[n\] members has an equal chance of being in the sample. |
 
 
-## Online
+<a name="Khan"></a>
 
-https://www.khanacademy.org/math/ap-statistics
+## Khan Academy
 
+<a target="_blank" href="https://www.khanacademy.org/math/ap-statistics">https://www.khanacademy.org/math/ap-statistics</a>
 
 Unit 1: Exploring categorical data
 * The language of variation: Variables: Exploring categorical data
