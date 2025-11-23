@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-11-11"
-lastchange: "25-11-11 v003 + header :countries.md"
+date: "2025-11-22"
+lastchange: "25-11-22 v004 + five eyes :countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -18,31 +18,61 @@ created: "2025-10-22"
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
-## Country Codes
-
-My countries.csv file
-contains several international standards bodies define their own list of country codes and names:
+<a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/country_info.csv">My country_info.csv file</a> contains data combined from several sources.
 
 * TLD (Top-Level Domain) codes used on the internet
 * Telephone country code prefix
+* ISO codes (two and three letters)
 * ISO codes (two and three letters)
 * Olympic Committee
 <br /><br />
 
 * https://history.state.gov/countries/all
 * https://countrycode.org/ misses some
-* The European Union is a political and economic union of 27 member countries.
-* NATO
+
+
+## Country groups
+
+The EU (European Union) is a political and economic union of 27 member countries. 20 of the 27 EU countries are in the "eurozone" where the euro (€) is the official currency in 2002. Members of the Economic Monetary Union (EMU) follow unified monetary policies managed by the European Central Bank (ECB). Some non-EU microstates also use the Euro by arrangement.
+
+Malta and the Republic of Cyprus adopted the euro in 2008. 
+Former communist country to adopt the euro include Slovakia (2009), Estonia (2011), Latvia (2014), Lithuania (2015), and Croatia (2023).
+
+Poland and Hungary do not use the euro. 
+
+Those in the <strong>Schengen Area</strong> agreed to abolish passport controls at mutual borders. It includes most EU countries plus Switzerland, Norway, and Iceland who are not in the EU.
+Ireland is not in Schengen.
+
+NATO (North Atlantic Treaty Organization), at <a target="_blank" href="https://www.nato.int/">https://www.nato.int</a>, is a military alliance made up of 32 countries from North America and Europe. US, Canada, Norway, and Turkey are in NATO but not in the EU.
+
+BRICS is an acronym for Brazil, Russia, India, China, and South Africa.
+But it refers to a bloc of 10 economies, of which no EU member nation is a part.
+
+<a target="_blank" href="https://en.wikipedia.org/wiki/Five_Eyes">"Five Eyes"</a> is an Anglosphere intelligence alliance comprising Australia, Canada, New Zealand, the United Kingdom, and the United States. These countries are party to the multilateral UKUSA Agreement, a treaty for joint cooperation in signals intelligence.
 
 ## New Countries
+
+* Greenland is a self-governing, autonomous country within the Kingdom of Denmark and has been part of Denmark for 600 years despite being 1,815 miles away (for context, the distance between Greenland and the US is 3,134 miles).
 
 * South Sudan split from Sudan in 2025.
 * Bougainville	is expected to split from Popua New Guinea in 2027
 
+## Passport Index
+
+<a target="_blank" href="https://www.globalcitizensolutions.com/global-passport-index/">Global Passport Index 2025</a> goes beyond visa access. It evaluates mobility, quality of life, and investment appeal, showing not just where a passport can take you, but how well you can live and plan once you get there.
+
+## Peace Index
+
+This is perhaps the most important consideration.
+
+https://www.visionofhumanity.org/maps/#/
+publishes a composite score weighted on a scale of 1-5 based on 23 quantitative and qualitative indicators. The lower the score the more peaceful the country. The lowest score is Iceland at 1.095, followed by Ireland, New Zealand, Austria, Switzerland, Singapore, Portugal, Denmark, Slovenia, Finland in the top 10. The US is 128th at 2.443.
+
+
 ## Passport Rankings
 
 https://www.boundless.com/blog/us-passport-ranking/
-The top-ranked countries in the 2024 report are largely European and Asian:
+The top-ranked countries in the 2024 report:
 
 1. Singapore (193 destinations)
 2. (tie) Japan and South Korea (190 destinations)<br />
