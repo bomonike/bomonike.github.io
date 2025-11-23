@@ -1,13 +1,21 @@
 ---
-date: "2025-09-12"
-lastchange: "25-09-12 v003 + Starlink :ham-radio.md"
+date: "2025-11-22"
+lastchange: "25-11-22 v005 + who are you :ham-radio.md"
+url: "https://bomonike.github.io/ham-radio"
 file: "ham-radio.md"
 created: "2024-05-14"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/ham-radio"><img align="right" width="100" height="100" alt="ham-radio.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ham-radio.png?raw=true" />
 
-I'm KK7UFL
+I'm KK7UFL.
+
+So many are getting on this for emergencies.
+
+But "who are you and why should I help you?"
+
+PROTIP: Before an emergency, figure out who you can help and who can help you.
+
 
 ## Goverment & Community bands
 
@@ -28,9 +36,12 @@ Listen to https://www.weatherusa.net/radio from <a target="_blank" href="https:/
    <br /><br />
 Increasingly, Police and Fire use encrypted communications on P25 systems.
 
-Search and Rescue.
+For Search and Rescue, automated distress signals are sent on Channel 70 on VHF as a dedicated frequency that's monitored continuously by radios enabled by DSC (Digital Selective Calling) as a vital part of the Global Maritime Distress and Safety System (GMDSS).
+DSC operates on VHF, MF, and HF frequencies. The DSC signal has a slightly longer range than voice calls due to its stable digital transmission.
+Automated distress signals include vessel identity and, when connected to a GPS, the vessel's location.
+The SOLAS convention require passenger and cargo ships over a certain size on international voyages to have DSC-capable radios configured with the ship's Maritime Mobile Service Identity (MMSI) and linked to GPS for automatic inclusion of position information.
 
-Local TV and radio stations
+Local TV and radio stations.
 
 Back in the day, the nickname for someone with amature skills (not professional) was "ham".
 
@@ -256,12 +267,56 @@ LoRA devices connect with other LoRa devices on the <strong>license-free</strong
 <a target="_blank" href="https://www.thethingsnetwork.org/">TheThingsNetwork.org</a> in Amsterdam () (co-founded by Johan Stokking) publishes a:
    * <a target="_blank" href="https://www.thethingsnetwork.org/map">LoRa Meshtastic Repeater map</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=_I4c-Al9hCI">Microsoft interview</a>
+   <br /><br />
 
+Regions:<br />
+In Europe it operates on the 70cm band.<br />
+In the US it operates on the 433, 868, <strong>915 MHz</strong> ISM radio band. 
+Beartooth works on the same band.
 
-It operates in Europe on the 70cm band. In the US on the 433, 868, <strong>915 MHz</strong> ISM radio band. The longest range is 150m, but line-of-sight. Its low power, low bit rate, wireless platform used in <a target="_blank" href="https://www.instructables.com/LoRa-Mesh-Radio/">IoT applications</a>. Low bit rate means 0.3 to 50 kbits/s using spread spectrum modulation. [<a target="_blank" href="https://wifivitae.com/2022/12/14/lorawan-mapper-overview/">*</a>]
+Its low power, low bit rate, wireless platform used in <a target="_blank" href="https://www.instructables.com/LoRa-Mesh-Radio/">IoT applications</a>. Low bit rate means 0.3 to 50 kbits/s using spread spectrum modulation. [<a target="_blank" href="https://wifivitae.com/2022/12/14/lorawan-mapper-overview/">*</a>]
 
    * Alliot Technologies
+   <br /><br />
 
+Theoretically, LoRa signals can travel 800 miles. 
+The longest range is 150m line-of-sight. 
+Meshtastic nodes are scarce in the wilderness.
+
+PROTIP: Put a Meshtastic repeater (with a small battery) on a small helicopter flown high.
+GOTENNA is used by many EMS.
+Beartooth TREX40
+<a target="_blank" href="https://www.youtube.com/watch?v=b8bVSwhYt8U">VIDEO</a>: $10,00 <a target="_blank" href="https://www.youtube.com/watch?v=Hb27jmFETVw&pp=ugUEEgJlbg%3D%3D">MPUS/SILVUS</a> controls drones with camera feeds.   
+
+PROTIP: For best reception, a <strong>long antenna</strong> is attached to your Meshtastic node. So the <a target="_blank" href="https://www.amazon.com/SenseCAP-Card-Tracker-T1000-Meshtastic/dp/B0DJ6KGXKB/ref=wilsonslifenotes">$50.99 SenseCAP Card Tracker T1000-E for Meshtastic</a> is not ideal even though Mediatek‘s AG3335 GPS chip
+and there is a backpack holder for it.
+
+<a target="_blank" href="https://store.rokland.com/blogs/news/we-are-excited-to-be-in-the-meshtastic-backer-program">Rockland.com</a> at (352) 372-9902 Monday through Friday, 9 AM to 5 PM EST (Gainesville, FL)
+carries RAKwireless, LILYGO
+   * https://store.rokland.com/pages/setting-up-cli-for-meshtastic-on-your-mac
+   <br /><br />
+
+<a target="_blank" href="https://www.youtube.com/watch?v=ZsIWyVzqJPM&list=PLshzThxhw4O5JTOACGHzYSSd3soDhoXKK">VIDEO Playlist</a>: Getting Started. 
+
+Early Meshtastic nodes connect via Bluetooth to a smart phone for its keyboard.
+
+<a target="_blank" href="https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html">38.61 SeedStudio</a> Wio Tracker L1 Pro</a> is in a nylon case and antenna with no keyboard.
+
+<a target="_blank" href="https://youtu.be/2Ry-ck0fhfw?si=kLBpfVIZdTasdamn">VIDEO</a>: The <a target="_blank" href="https://www.amazon.com/LILYGO-ESP32-S3-2-8-inch-Development-Keyboard/dp/B0FBGSW2QZ/ref=wilsonslifenotes">$102 LILYGo T-Deck pro</a> comes with an antenna to work out of the box. It looks like an old Blackberry from the 80s -- stanalone with a trackball and small keyboard. <a target="_blank" href="https://youtu.be/nlGkzIPWmnk?si=ZmzliVJ19L1-DHDz">VIDEO</a>
+with a 3D-printed case from printables.com/@alleycat
+
+PROTIP: Get a carrier to hold standard-sized mobile phones and
+<???> which attaches to iPhone's Qi magetic charger surface.
+
+That enables you to use your phone's keyboard, 
+and also program interactions, such as periodic send.
+
+Meshtastic enthusiasts would want to host a stationery repeater (solar powered). 
+
+pytap2
+
+
+### HaLow
 
 <a target="_blank" href="https://www.youtube.com/watch?v=EdqF9ZxWjmE">VIDEO</a>:
 WiFi on LoRanWAN is called "HaLow" based on the IEEE 802.11ah spec at 902-928 MHz for max data rate of 16mbps.
@@ -993,4 +1048,4 @@ https://www.hamradio.com/detail.cfm
 
 https://www.cisa.gov/safecom/field-operations-guides
 
-<sub>{{ page.lastchange }} {{ page.date }}</sub>
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
