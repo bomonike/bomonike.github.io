@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-02"
-lastchange: "v010 + AGIf :ai-benchmarks.md"
+date: "2025-11-26"
+lastchange: "25-11-26 v011 + notation :ai-benchmarks.md"
 file: "ai-benchmarks"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
@@ -12,8 +12,35 @@ created: "2024-12-28"
 <a target="_blank" href="https://bomonike.github.io/ai-benchmarks"><img align="right" width="100" height="100" alt="ai-benchmarks.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-benchmarks.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 
+In AI Computer Science, a benchmark is a way to determine how well a computer system can solve problems. Several benchmarks have been created, mostly by academics. The biggest one is "Humanity's Last Exam", 
+
+## List of benchmarks
+
 <a target="_blank" href="https://betterbench.stanford.edu/">https://betterbench.stanford.edu</a>
 is a repository of AI benchmark assessments for informed benchmark selection through quality evaluation and best practice analysis.
+
+Huggingface.co is the internet's repository of LLMs. For example:
+
+https://huggingface.co/datasets/cais/hle/viewer/default/test?p=24&views%5B%5D=test
+
+<a target="_blank" href="https://www.youtube.com/watch?v=aOjgPJ94-aM">VIDEO</a>:
+Huggingface accelerate library to run 
+
+
+## Show your work. Get famous.
+
+PROTIP: Look through the problems from a category (below) you might be able to solve. Explain how you solved each problem in text and video. Really solving just one problem provides proof of your academic capabilities and grit. It shows you're not lazy enough to blindly let AI rot your brain. And it others notice you can defend against false charges of plagerism.
+
+Making YouTube videos may get you some money. And if you find issues with a problem's autograder, even better. File an issue on the benchmark problem GitHub repo.
+
+PROTIP: Suggest new problems. File a PR and get listed as a contributor.
+
+BTW I'm working on a website to encourage such evaluations and contributions, 
+by giving out rewards and recognition (including cash). 
+Let me know if you're interested.
+
+
+## LLMs by subject category
 
 Language:
 * HELLASWAG (Harder Endings Longer context Low-shot Activities Situations With Adversarial Generations) to finish sentences
@@ -35,15 +62,17 @@ Science:
 * <a href="#MT-bench">MT-bench</a> as a judge of 160 questions in 8 categories of knowledge
 * <a href="#GPQA">Science (GPQA Diamond)</a> of 198 questions
 
+Composite:
+* <strong>Humanity's Last Exam</strong> (Math, Physics, Computer Science, Biology/Medicine, Chemistry, Engineering, Humanities/Social Science, Other) 2500 of the most difficult closed-end questions submitted by volunteers from universities around the world.
 
-Math benchmarks:
+<a href="#Math">Math benchmarks</a>:
 * <a href="#AGIEval">AGIEval</a> 5m58s - <a target="_blank" href="https://openreview.net/forum?id=fGfCsqVZ_hfq">ARVIX</a>: Available in English (AGIEval-en) and Chinese Gaokao (AGIEval-zh), a bilingual benchmark designed to use 20 official, public, and high-standard admission and qualification exams taken by humans around tasks relevant to human cognition and problem-solving.  law school admission (LSAT) tests, math competitions.
 * <a href="#MMMU">MMMU</a> (Massive Multitask Math Understanding) Visual Reasoning
 * <a href="#GSM8K">GSM8K</a> (Grade School Math 8K) word problems which take 2-8 steps to solve, from OpenAI
 * <a href="#Math500">Math 500</a> Math Problem Solving
 * <a href="#AIME">Math (AIME)</a> Math competition
 
-Coding:
+Coding/Programming:
 * WINOGRADE 44K
 * <a href="#LCB">Coding LCB (Live Code Bench)</a>
 * <a href="#SWE">SWE-Bench (Agentic SoftWare Engineering)</a>
@@ -53,18 +82,20 @@ Coding:
 
 * <a href="#TAU">TAU-Bench (Task Analysis Unit)</a> to test agentic tool use
 * humaneval, humaneval+ and taco to cover the current programming benchmarks.
-Download from HuggingFace the three variations:
 
-https://github.com/swe-bench/sb-cli/
-provides the CLI to run the benchmarks.
 
-The benchmark involves giving agents a code repository and issue description, and challenging them to generate a patch that resolves the problem described by the issue.
+### Humanity's Last Exam
 
-https://www.youtube.com/watch?v=aOjgPJ94-aM
-Huggingface accelerate library to run 
+https://huggingface.co/datasets/cais/hle
 
+The data folder (in parquet format) can be downloaded from:
+https://huggingface.co/datasets/cais/hle/tree/main
+
+Create an account at https://agi.safe.ai/ and click "Contributors" to see submissions in the fields of Math, Physics, Computer Science, Biology/Medicine, Chemistry, Engineering, Humanities/Social Science
 
 <hr />
+
+## AGI & ASI?
 
 <a target="_blank" href="https://www.youtube.com/watch?time_continue=1430&v=om5KAKSSpNg">VIDEO</a>:
 In June 2024, <a target="_blank" href="https://www.linkedin.com/in/leopold-aschenbrenner">Leopold Aschenbrenner</a> wrote his <a target="_blank" href="https://situational-awareness.ai/">situational-awareness.ai blog</a> with this illustration:
@@ -75,44 +106,7 @@ In June 2024, <a target="_blank" href="https://www.linkedin.com/in/leopold-asche
 
 By 2025, AI companies have sucked up all the information that have been created by humans. The next thing is generation of new information. New problems need to be defined because, in 2025, evaluations about the extent that a particular offering has reached AGI (Artificial General Intelligence) based on a relatively <strong>small number of challenges</strong>.
 
-PROTIP: Enhance your resume: make YouTube videos about solving the problems. Suggest new problems.
-Find issues with the autograder. File a PR and get listed as a contributor.
-
 ASI (Artificial Super Intelligence) will be reached when "proto-automated" researchers automate research (within massive AI datacenters).
-
-<hr />
-
-When xAI unveiled its Grok-3 LLM on Feb 18, 2025, one analysis shows it ranking #1 across the various benchmarks (including Creative Writing, Instruction Following, etc.):
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739896040/genai-grok3-819x426_wgomxb.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739896040/genai-grok3-819x426_wgomxb.png" /></a>
-
-This table compares specific scores on specific benchmarks:
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png"><img alt="ai-evaluations-grok3.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png" /></a>
-
-That resulted in some crying that xAI neglected to include in the comparison results of OpenAI's o3 December results:
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png"><img alt="ai-evaluations-o3-dec.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png" /></a>
-
-### Claude 3.7 Sonnet
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png"><img alt="ai-eval-claude37.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png" /></a>
-
-The above is from Anthropic's Claude 3.7 Sonnet announcement on Feb 25, 2025.
-Dubbed the first hybrid AI reasoning model, it is a groundbreaking AI model because it allows users to control how long it "thinks" before responding to deliver real-time answers or take extra time to provide more complex, well-reasoned responses.
-It's available to premium Claude users.
-Pricing: $3 per million input tokens and $15 per million output tokens—higher than OpenAI’s o3-mini.
-
-Anthropic is also launching Claude Code, a tool that lets developers run AI-driven code edits directly from their terminal, analyze projects, and even push changes to GitHub.
-
-<hr />
-
-## Math
-
-There are several mathematics competitions: AIME, HMMT, Mandelbrot, ARML.
-
-* <a target="_blank" href="https://www.montanamath.org/mctm-math-contest/math-contest">MCTM</a> (Montana Council of Teachers
-of Mathematics)
 
 
 <a name="AGIEval"></a>
@@ -150,6 +144,66 @@ TODO: Utility to display jsonl files for human consumption.
 
 Upload a .json file and download it as .jsonl using online converters <a target="_blank" href="https://codebeautify.org/json-to-jsonl-converter">Code Beautify</a> 
 and <a target="_blank" href="https://konbert.com/convert/json/to/jsonl">Konbert.com</a> 
+
+
+## Sneaky Tricks with Benchmarks
+
+When xAI unveiled its Grok-3 LLM on Feb 18, 2025, one analysis shows it ranking #1 across the various benchmarks (including Creative Writing, Instruction Following, etc.):
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739896040/genai-grok3-819x426_wgomxb.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739896040/genai-grok3-819x426_wgomxb.png" /></a>
+
+This table compares specific scores on specific benchmarks:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png"><img alt="ai-evaluations-grok3.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-grok3_qs2uj2.png" /></a>
+
+That resulted in some crying that xAI neglected to include in the comparison results of OpenAI's o3 December results:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png"><img alt="ai-evaluations-o3-dec.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739990857/ai-evaluations-o3-dec_nij82u.png" /></a>
+
+### Claude 3.7 Sonnet
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png"><img alt="ai-eval-claude37.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740511914/ai-eval-claude37-1092x868_xobnff.png" /></a>
+
+The above is from Anthropic's Claude 3.7 Sonnet announcement on Feb 25, 2025.
+Dubbed the first hybrid AI reasoning model, it is a groundbreaking AI model because it allows users to control how long it "thinks" before responding to deliver real-time answers or take extra time to provide more complex, well-reasoned responses.
+It's available to premium Claude users.
+Pricing: $3 per million input tokens and $15 per million output tokens—higher than OpenAI’s o3-mini.
+
+Anthropic is also launching Claude Code, a tool that lets developers run AI-driven code edits directly from their terminal, analyze projects, and even push changes to GitHub.
+
+<hr />
+
+<a name="Math"></a>
+
+## Math Benchmarks
+
+There are several mathematics competitions: AIME, HMMT, Mandelbrot, ARML. Additionally, each US state:
+
+   * <a target="_blank" href="https://www.montanamath.org/mctm-math-contest/math-contest">MCTM</a> (Montana Council of Teachers of Mathematics)
+   <br /><br />
+
+### Math notation in text
+
+To show answers in mathematical set notation, see:
+   * https://www.purplemath.com/modules/setnotn.htm
+   * https://www.geeksforgeeks.org/maths/set-notation/
+   <br /><br />
+
+Some use textual Roster notation for conversion to more graphical mathetical notation, such as:
+
+   <tt>$\frac{4}{9}\left(17-8\cos(2√3)\right)$</tt>
+
+converts to superscripts and subscripts (using Mathjax):
+
+   <img alt="jekyll-exp-358x82.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764215255/jekyll-exp-358x82_cs5wyz.png" />
+
+Within curly braces <tt>{ }</tt> is a “set,” i.e., a collection of elements without order or repetition rules. Commas separate elements within the set.
+
+The <tt>$</tt> dollar signs at the beginning and end ???
+
+<tt>frac</tt> specifies a fraction "4/9".
+
+<tt>e^</tt> specifies exponentiation to the power of <tt>{-1/3}</tt>, presented as a superscript.
 
 
 <a name="AIME"></a>
@@ -340,7 +394,14 @@ Here's a question about use of hour glasses that Grok3 cannot solve in 3 minutes
 ## SWE-Bench benchmark
 
 <a target="_blank" href="https://www.swebench.com/">SWE-Bench (Software Engineering Benchmark) at https://www.swebench.com</a>
-has been used as the way to compare how well LLM offerings tests systems' ability to automatically <strong>solve GitHub issues</strong> in a dataset containing 2,294 Issue-Pull Request pairs from 12 popular Python repositories:
+involves giving agents a code repository and issue description, and challenging them to generate a patch that resolves the problem described by the issue.
+
+https://www.swebench.com/#verified
+
+https://github.com/swe-bench/sb-cli/
+provides the CLI to run the benchmarks.
+
+SWE-Bench has been used as the way to compare how well LLM offerings tests systems' ability to automatically <strong>solve GitHub issues</strong> in a dataset containing 2,294 Issue-Pull Request pairs from 12 popular Python repositories:
 
    * astropy (95)
    * Django (850)
@@ -354,12 +415,48 @@ has been used as the way to compare how well LLM offerings tests systems' abilit
    * sphinx (187)
    * sympy (386)
    * xarray (110)
+   <br /><br />
 
 The <a target="_blank" href="https://arxiv.org/abs/2310.06770" title="Is AI Replacing Software Engineering?">10 Oct 2023 Arxiv article</a> describes the unit test verification using post-PR behavior as the reference solution.
 
    <ul>"Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks."</ul>
 
 Those working on it include  carlosej@princeton.edu and johnby@stanford.edu
+
+
+### CodeClash
+
+https://codeclash.ai/
+
+This evaluates 8 models on 6 arenas across 1680 tournaments at 15 rounds each (25,200 rounds total), generating 50k agent <a target="_blank" href="https://viewer.codeclash.ai/">trajectories</a>.
+
+An LLM's success over several "rounds" is measured by relative scores like income, territory control, survival in 6 "arenas":
+
+    1. Battlesnake: Snake AIs compete to survive and grow in a grid
+
+    2. Core War : Redcode warriors battle to control a virtual computer
+
+    3. Halite : Distribute resources wisely to conquer territory
+
+    4. Poker : No Limit Texas Hold'em with 2+ players
+
+    5. RoboCode - Tank combat - outlast and outgun opponents
+
+    6. RobotRumble : Program swarms to overwhelm opponents
+    <br /><br />
+
+https://viewer.codeclash.ai/
+shows the leader -- Anthropic Sonnet 4 and 4.5 -- score between 30 to 70.
+
+Instead of explicit GitHub issues or tasks to solve (like other benchmarks), competitors are given just a high-level objective (<strong>goals</strong>) so models decide for themselves what to build.
+
+Each round has two phases: edit, then compete. In the edit phase, models get to improve their codebase as they see fit. Write notes, analyze past rounds, run test suites, refactor code -- whatever helps.
+
+In each round, the LLM analyzes gigabytes of logs, adapt strategies, implement algorithms, and make all high- to low-level decisions. 
+
+Competition logs are then copied back to each model's codebase and the next round begins.
+
+https://github.com/CodeClash-ai/CodeClash
 
 
 
