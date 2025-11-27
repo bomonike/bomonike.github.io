@@ -2,6 +2,7 @@
 layout: post
 date: "2025-11-26"
 lastchange: "25-11-26 v011 + notation :ai-benchmarks.md"
+url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Evaluations"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
