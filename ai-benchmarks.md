@@ -1,10 +1,10 @@
 ---
 layout: post
 date: "2025-12-06"
-lastchange: "25-12-06 v012 mathjax in _includes/head :ai-benchmarks.md"
+lastchange: "25-12-06 v013 math notation :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
-title: "AI Evaluations"
+title: "AI Benchmarks"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
 tags: [ai, benchmarks]
 comments: true
@@ -16,7 +16,7 @@ mathjax: true
 
 In AI Computer Science, a benchmark is a way to determine how well a computer system can solve problems. Several benchmarks have been created, mostly by academics and giant frountier LLM producers.
 
-<img alt="ai-benchmark-hle-251203.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764810089/ai-benchmark-hle-251203_frs2bz.png" /></a>
+<img alt="ai-benchmark-hle-251203.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764810089/ai-benchmark-hle-251203_frs2bz.png" />
 
 ## List of benchmarks
 
@@ -190,7 +190,9 @@ Additionally, each US state:
    * <a target="_blank" href="https://www.montanamath.org/mctm-math-contest/math-contest">MCTM</a> (Montana Council of Teachers of Mathematics)
    <br /><br />
 
-### Math notation in text
+<a name="MathNotation"></a>
+
+### Math notation from text
 
 To show answers in mathematical set notation, see:
    * https://www.purplemath.com/modules/setnotn.htm
@@ -204,7 +206,7 @@ Some use textual Roster notation for conversion to more graphical mathetical not
 converts to superscripts and subscripts (using Mathjax):
 
 >
-\$$ \frac{4}{9}\left(17-8\cos(2√3)\right) \$$
+\$$\frac{4}{9}\left(17-8\cos(2√3)\right)$$
 
 <!--
    <img alt="jekyll-exp-358x82.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764215255/jekyll-exp-358x82_cs5wyz.png" />
