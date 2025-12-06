@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-06"
-lastchange: "25-12-06 v013 math notation :ai-benchmarks.md"
+lastchange: "25-12-06 v013 footer :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -543,3 +543,4 @@ It depends on what you are trying to achieve.
 <a href="https://bomonike.github.io/ai-benchmarks">https://bomonike.github.io/ai-benchmarks</a>
 
 
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
