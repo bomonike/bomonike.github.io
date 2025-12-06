@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-11-26"
-lastchange: "25-11-26 v011 + notation :ai-benchmarks.md"
+date: "2025-12-06"
+lastchange: "25-12-06 v012 mathjax in _includes/head :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Evaluations"
@@ -9,11 +9,14 @@ excerpt: "Let's get to know the benchmarks AI companies use to compare each othe
 tags: [ai, benchmarks]
 comments: true
 created: "2024-12-28"
+mathjax: true
 ---
 <a target="_blank" href="https://bomonike.github.io/ai-benchmarks"><img align="right" width="100" height="100" alt="ai-benchmarks.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-benchmarks.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 
-In AI Computer Science, a benchmark is a way to determine how well a computer system can solve problems. Several benchmarks have been created, mostly by academics. The biggest one is "Humanity's Last Exam", 
+In AI Computer Science, a benchmark is a way to determine how well a computer system can solve problems. Several benchmarks have been created, mostly by academics and giant frountier LLM producers.
+
+<img alt="ai-benchmark-hle-251203.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764810089/ai-benchmark-hle-251203_frs2bz.png" /></a>
 
 ## List of benchmarks
 
@@ -26,6 +29,8 @@ https://huggingface.co/datasets/cais/hle/viewer/default/test?p=24&views%5B%5D=te
 
 <a target="_blank" href="https://www.youtube.com/watch?v=aOjgPJ94-aM">VIDEO</a>:
 Huggingface accelerate library to run 
+
+The biggest one is "Humanity's Last Exam", 
 
 
 ## Show your work. Get famous.
@@ -178,7 +183,9 @@ Anthropic is also launching Claude Code, a tool that lets developers run AI-driv
 
 ## Math Benchmarks
 
-There are several mathematics competitions: AIME, HMMT, Mandelbrot, ARML. Additionally, each US state:
+There are several mathematics competitions: AIME, HMMT, Mandelbrot, ARML. 
+
+Additionally, each US state:
 
    * <a target="_blank" href="https://www.montanamath.org/mctm-math-contest/math-contest">MCTM</a> (Montana Council of Teachers of Mathematics)
    <br /><br />
@@ -196,7 +203,12 @@ Some use textual Roster notation for conversion to more graphical mathetical not
 
 converts to superscripts and subscripts (using Mathjax):
 
+>
+\$$ \frac{4}{9}\left(17-8\cos(2√3)\right) \$$
+
+<!--
    <img alt="jekyll-exp-358x82.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764215255/jekyll-exp-358x82_cs5wyz.png" />
+-->
 
 Within curly braces <tt>{ }</tt> is a “set,” i.e., a collection of elements without order or repetition rules. Commas separate elements within the set.
 
