@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-06"
-lastchange: "25-12-06 v013 footer :ai-benchmarks.md"
+lastchange: "25-12-06 v014 hr mathjax inline :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -201,16 +201,13 @@ To show answers in mathematical set notation, see:
 
 Some use textual Roster notation for conversion to more graphical mathetical notation, such as:
 
-   <tt>$\frac{4}{9}\left(17-8\cos(2√3)\right)$</tt>
+   <tt>\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)</tt>
 
-converts to superscripts and subscripts (using Mathjax):
+converts to superscripts and subscripts (using the Mathjax JavaScript library):
 
->
-\$$\frac{4}{9}\left(17-8\cos(2√3)\right)$$
+\$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
 
-<!--
    <img alt="jekyll-exp-358x82.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764215255/jekyll-exp-358x82_cs5wyz.png" />
--->
 
 Within curly braces <tt>{ }</tt> is a “set,” i.e., a collection of elements without order or repetition rules. Commas separate elements within the set.
 
@@ -542,5 +539,5 @@ It depends on what you are trying to achieve.
 
 <a href="https://bomonike.github.io/ai-benchmarks">https://bomonike.github.io/ai-benchmarks</a>
 
-
+<hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
