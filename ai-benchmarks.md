@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-06"
-lastchange: "25-12-06 v015 hr mathjax inline :ai-benchmarks.md"
+lastchange: "25-12-06 v016 mathjax lib inline :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -205,11 +205,26 @@ Some use textual Roster notation for conversion to more graphical mathetical not
 
    <pre>\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)</pre>
 
-converts to superscripts and subscripts (using the Mathjax JavaScript library):
+{% if page.mathjax or site.mathjax %}
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}
 
+converts to superscripts and subscripts (using the Mathjax JavaScript library):
+>
 \$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
 
 The above should look like this:
+
    <img alt="jekyll-exp-358x82.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764215255/jekyll-exp-358x82_cs5wyz.png" />
 
 Within curly braces <tt>{ }</tt> is a “set,” i.e., a collection of elements without order or repetition rules. Commas separate elements within the set.
