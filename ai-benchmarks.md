@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-12-06"
-lastchange: "25-12-06 v016 mathjax lib inline :ai-benchmarks.md"
+date: "2025-12-07"
+lastchange: "25-12-07 v017 set symbols :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -192,16 +192,64 @@ Additionally, each US state:
 
 <a name="MathNotation"></a>
 
-### Math notation from text
+### Math notations
 
-To show answers in mathematical set notation, see:
+<a target="_blank" href="https://www.youtube.com/watch?v=BNI5r-A2V8E">VIDEO</a>:
+Answers of specific (discrete) values can be represented between commas within <strong>curly braces</strong> (set by Shift + [ and Shift + ]) in "Roster Notation (aka Roster Form)" such as this to enumerate (list) a set of elements. <a target="_blank" href="https://www.youtube.com/watch?v=tyDKR4FG3Yw&list=PLDDGPdw7e6Ag1EIznZ-m-qXu4XX3A0cIz">VIDEO</a>:
+
+<tt>A = {1, 2, 3, 4,...,999}</tt>
+
+   * ℕ means Natural numbers (positive integers)
+   * 2ℤ means even integers (positive or negative integers)
+   * ℚ means rational numbers (fractions)
+   * ℝ 
+   * ℂ
+   * Three dots between elements represents intermediate values between 4 and 999.
+   * Three dots at the end of the list represents infinite number of elements.
+   <br /><br />
+
+   On Macs, to open the Character Viewer, press Control + Command + Space 
+
+With Roster Notation, the order of elements does not matter. 
+There is no order in a set.
+All elements are written in any order and only once.
+
+An alternative is "Set Builder Form", which defines the unique <strong>properties or conditions</strong> satisfied by all the elements of the set, using symbols:
+
+<tt>{ x | -1 ≤ x < 6 }</tt>
+
+   * "|" is read "such that".
+   * "≤" is less than or equal.
+   * "<" is less than or not equal to.
+   * &ne; not equal  
+   <br /><br />
+   Thus: All values of x such that X is less than or equal to -1 or less than 6.
+
+<tt>{ 2x | x ∈ ℤ<sup>+</sup> }</tt>
+
+   * ∈ (epsilon, set by Option+E or \in) in (belongs to) "x ∈ ℤ<sup>+</sup>" is read: x among positive integers.
+   * ∉ (not element of)
+   <br /><br />
+
+DEFINITION: "Cardinality" is the number of elements in a set, represented as |N|.
+   * n(A)
+
+   * |∅| (null, set by Option + O) means an empty set.
+   * ø means similar
+   * |{∅}| means the size of an empty set = 1 for the empty set itself.
+
+   * ⊂ (subset) is set by \subset
+   * ⊆ (subset or equal)
+   * ∪ (union = \cup)
+   * ∩ (intersection), as is "Fish n Chips"
+   <br /><br />
+
+in mathematical set notation, see:
    * https://www.purplemath.com/modules/setnotn.htm
    * https://www.geeksforgeeks.org/maths/set-notation/
    <br /><br />
 
-Some use textual Roster notation for conversion to more graphical mathetical notation, such as:
-
-   <tt>\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)</tt>
+Some use this notation for conversion to more graphical mathetical notation, such as:
 
    <pre>\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)</pre>
 
@@ -223,9 +271,11 @@ converts to superscripts and subscripts (using the Mathjax JavaScript library):
 >
 \$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
 
+<!--
 The above should look like this:
 
    <img alt="jekyll-exp-358x82.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764215255/jekyll-exp-358x82_cs5wyz.png" />
+-->
 
 Within curly braces <tt>{ }</tt> is a “set,” i.e., a collection of elements without order or repetition rules. Commas separate elements within the set.
 
