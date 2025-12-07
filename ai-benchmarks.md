@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-07"
-lastchange: "25-12-07 v017 set symbols :ai-benchmarks.md"
+lastchange: "25-12-07 v018 set symbols :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -218,11 +218,11 @@ An alternative is "Set Builder Form", which defines the unique <strong>propertie
 
 <tt>{ x | -1 ≤ x < 6 }</tt>
 
-   * "|" is read "such that".
+   * <tt>"|"</tt> is read "such that".
    * "≤" is less than or equal.
    * "<" is less than or not equal to.
    * &ne; not equal  
-   <br /><br />
+
    Thus: All values of x such that X is less than or equal to -1 or less than 6.
 
 <tt>{ 2x | x ∈ ℤ<sup>+</sup> }</tt>
@@ -234,9 +234,9 @@ An alternative is "Set Builder Form", which defines the unique <strong>propertie
 DEFINITION: "Cardinality" is the number of elements in a set, represented as |N|.
    * n(A)
 
-   * |∅| (null, set by Option + O) means an empty set.
+   * <tt>|∅|</tt> (null, set by Option + O) means an empty set.
    * ø means similar
-   * |{∅}| means the size of an empty set = 1 for the empty set itself.
+   * <tt>|{∅}|</tt> means the size of an empty set = 1 for the empty set itself.
 
    * ⊂ (subset) is set by \subset
    * ⊆ (subset or equal)
@@ -267,8 +267,8 @@ Some use this notation for conversion to more graphical mathetical notation, suc
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 
-converts to superscripts and subscripts (using the Mathjax JavaScript library):
->
+is presented in mathematical notation using the Mathjax JavaScript library as:
+
 \$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
 
 <!--
@@ -283,7 +283,7 @@ The <tt>$</tt> dollar signs at the beginning and end ???
 
 <tt>frac</tt> specifies a fraction "4/9".
 
-<tt>e^</tt> specifies exponentiation to the power of <tt>{-1/3}</tt>, presented as a superscript.
+<tt>e^</tt> of P(???) specifies exponentiation to the power of <tt>{-1/3}</tt>, presented as a superscript.
 
 
 <a name="AIME"></a>
