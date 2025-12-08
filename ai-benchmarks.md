@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-07"
-lastchange: "25-12-07 v22 Mathjax link :ai-benchmarks.md"
+lastchange: "25-12-07 v23 plus minus :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -223,7 +223,6 @@ An alternative is "Set Builder Form", which defines the unique <strong>propertie
    * <tt>"|"</tt> is read "such that".
    * "≤" is less than or equal.
    * "<" is less than or not equal to.
-   * &ne; not equal  
 
    Thus: All values of x such that X is less than or equal to -1 or less than 6.
 
@@ -263,7 +262,7 @@ Many use a textual notation for defining mathetical notation, such as MathML, Te
 
 <pre>\$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$</pre>
 
-The <tt>\$$</tt> at the beginning and <tt>$$</tt> at the end specifies use of the <a target="_blank" href="https://www.mathjax.org/">Mathjax library</a> to generate graphical mathematical symbols using CSS with web fonts or SVG, such as:
+The <tt>&#92;$$</tt> at the beginning and <tt>$$</tt> at the end specifies use of the <a target="_blank" href="https://www.mathjax.org/">Mathjax library</a> to generate graphical mathematical symbols using CSS with web fonts or SVG, such as:
 
 {% if page.mathjax or site.mathjax %}
 <script>
@@ -281,17 +280,21 @@ The <tt>\$$</tt> at the beginning and <tt>$$</tt> at the end specifies use of th
 
 \$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
 
-<!--
-The above should look like this:
+   * <tt>\frac</tt> specifies the fraction "4/9".
+   * <tt>\left</tt> specifies left parentheses.
+   * <tt>\right</tt> specifies right parentheses.
+   * <tt>\sqrt</tt> specifies square root.
+   <br /><br />
 
-   <img alt="jekyll-exp-358x82.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764215255/jekyll-exp-358x82_cs5wyz.png" />
--->
+<pre>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</pre>
 
-* <tt>\frac</tt> specifies a fraction "4/9".
-* <tt>\left</tt> specifies left parentheses.
-* <tt>\right</tt> specifies right parentheses.
-* <tt>\sqrt</tt> specifies square root.
-<br /><br />
+specifies the quadratic equation:
+
+\$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+   * <tt>\ne</tt> specifies the &ne; not equal symbol.
+   * <tt>\pm</tt> specifies the &#x2A26; plus or minus symbol.
+   <br /><br />
 
 <tt>e^</tt> of P(???) specifies exponentiation to the power of <tt>{-1/3}</tt>, presented as a superscript.
 
