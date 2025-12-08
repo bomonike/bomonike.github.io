@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-07"
-lastchange: "25-12-07 v024 Fibonacci :ai-benchmarks.md"
+lastchange: "25-12-07 v025 dollar html :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -265,7 +265,7 @@ Mathematical symbols are typeset from textual notation markup in <a target="_bla
 
 <pre>\$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$</pre>
 
-The <tt>&#92;$$</tt> at the beginning and <tt>$$</tt> at the end specifies use of the <a target="_blank" href="https://www.mathjax.org/">Mathjax library</a> to generate graphical mathematical symbols using CSS with web fonts or SVG, such as:
+The <tt>&#92;&#36;&#36;</tt> at the beginning and <tt>&#36;&#36;</tt> at the end specifies use of the <a target="_blank" href="https://www.mathjax.org/">Mathjax library</a> to generate graphical mathematical symbols using CSS with web fonts or SVG, such as:
 
 {% if page.mathjax or site.mathjax %}
 <script>
@@ -293,23 +293,19 @@ The <tt>&#92;$$</tt> at the beginning and <tt>$$</tt> at the end specifies use o
 
 specifies the quadratic equation:
 
-\$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+\$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
    * <tt>\pm</tt> specifies the &#x2A26; plus or minus symbol.
    <br /><br />
 
-<pre>$$F_n = round(1 / sqrt(5) phi.alt*n), quad phi.alt = (1 + sqrt(5)) / 2$$</pre>
-
-is the Fibonacci sequence:
-
-\$$F_n = round(1 / sqrt(5) phi.alt*n), quad phi.alt = (1 + sqrt(5)) / 2$$
 
 Others:
    * <tt>\ne</tt> specifies the &ne; not equal symbol.
    * &pi; is the symbol for Pi (3.14...), written as <tt>\pi</tt> or <tt>&#960;</tt>
    * ∞ is the infinity symbol &infin; written as <tt>\infty</tt> 
    * <tt>e^</tt> of P(???) specifies exponentiation to the power of <tt>{-1/3}</tt>, presented as a superscript.
-   * <tt>\log_2(x)</tt>
+
+   * _ (underline) define subscript as in <tt>\log_2(x)</tt>
    <br /><br />
 
 Alternatives to LaTex coding include <a target="_blank" href="https://www.youtube.com/watch?v=NTGkb4FCLhM">VIDEO</a>: <a target="_blank" href="https://typst.app/home/">Typst</a> which enables automatically formats as you write, and thus real-time collaboration on Google Docs.
