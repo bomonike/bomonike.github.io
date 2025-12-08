@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-07"
-lastchange: "25-12-07 v20 set symbols :ai-benchmarks.md"
+lastchange: "25-12-07 v21 nane Mathjax :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -247,7 +247,7 @@ DEFINITION: "Cardinality" is the number of elements in a set, represented as |N|
    * Δ or δ (delta symbol for difference, keyed by Option + J or Option + D) 
    * ° (degree symbol keyed by Option + Shift + 8
    * ∝ (proportional symbol &prop;)
-   * ≈ (approximately equal, keyed by Option + X.
+   * ≈ (approximately equal, keyed by Option + X. <tt>&asymp;</tt>
    <br /><br />
 
 About mathematical set notation, see:
@@ -255,7 +255,11 @@ About mathematical set notation, see:
    * https://www.geeksforgeeks.org/maths/set-notation/
    <br /><br />
 
-Some use this notation for defining mathetical notation, such as:
+<a name="Mathjax"></a>
+
+### Mathjax
+
+Many use this textual notation for defining mathetical notation, such as:
 
 <pre>\$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$</pre>
 
