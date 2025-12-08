@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-07"
-lastchange: "25-12-07 v21 nane Mathjax :ai-benchmarks.md"
+lastchange: "25-12-07 v22 Mathjax link :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -259,11 +259,11 @@ About mathematical set notation, see:
 
 ### Mathjax
 
-Many use this textual notation for defining mathetical notation, such as:
+Many use a textual notation for defining mathetical notation, such as MathML, TeX, or ASCIImath as input:
 
 <pre>\$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$</pre>
 
-The <tt>\$$</tt> at the beginning and <tt>$$</tt> at the end specifies use of the Mathjax library to generate graphical mathematical symbols such as:
+The <tt>\$$</tt> at the beginning and <tt>$$</tt> at the end specifies use of the <a target="_blank" href="https://www.mathjax.org/">Mathjax library</a> to generate graphical mathematical symbols using CSS with web fonts or SVG, such as:
 
 {% if page.mathjax or site.mathjax %}
 <script>
