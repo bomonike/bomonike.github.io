@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-07"
-lastchange: "25-12-07 v018 set symbols :ai-benchmarks.md"
+lastchange: "25-12-07 v20 set symbols :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -195,9 +195,13 @@ Additionally, each US state:
 ### Math notations
 
 <a target="_blank" href="https://www.youtube.com/watch?v=BNI5r-A2V8E">VIDEO</a>:
-Answers of specific (discrete) values can be represented between commas within <strong>curly braces</strong> (set by Shift + [ and Shift + ]) in "Roster Notation (aka Roster Form)" such as this to enumerate (list) a set of elements. <a target="_blank" href="https://www.youtube.com/watch?v=tyDKR4FG3Yw&list=PLDDGPdw7e6Ag1EIznZ-m-qXu4XX3A0cIz">VIDEO</a>:
+Answers of specific (discrete) values can be represented between commas within <strong>curly braces</strong> (keyed by Shift + [ and Shift + ]) in "Roster Notation (aka Roster Form)" such as this to enumerate (list) a set of elements. <a target="_blank" href="https://www.youtube.com/watch?v=tyDKR4FG3Yw&list=PLDDGPdw7e6Ag1EIznZ-m-qXu4XX3A0cIz">VIDEO</a>:
+
+Within curly braces <tt>{ }</tt> is a “set,” i.e., a collection of elements without order or repetition rules. Commas separate elements within the set.
 
 <tt>A = {1, 2, 3, 4,...,999}</tt>
+
+On Macs, to open the Character Viewer, press Control + Command + Space to type in a search term:
 
    * ℕ means Natural numbers (positive integers)
    * 2ℤ means even integers (positive or negative integers)
@@ -207,8 +211,6 @@ Answers of specific (discrete) values can be represented between commas within <
    * Three dots between elements represents intermediate values between 4 and 999.
    * Three dots at the end of the list represents infinite number of elements.
    <br /><br />
-
-   On Macs, to open the Character Viewer, press Control + Command + Space 
 
 With Roster Notation, the order of elements does not matter. 
 There is no order in a set.
@@ -242,16 +244,22 @@ DEFINITION: "Cardinality" is the number of elements in a set, represented as |N|
    * ⊆ (subset or equal)
    * ∪ (union = \cup)
    * ∩ (intersection), as is "Fish n Chips"
+   * Δ or δ (delta symbol for difference, keyed by Option + J or Option + D) 
+   * ° (degree symbol keyed by Option + Shift + 8
+   * ∝ (proportional symbol &prop;)
+   * ≈ (approximately equal, keyed by Option + X.
    <br /><br />
 
-in mathematical set notation, see:
+About mathematical set notation, see:
    * https://www.purplemath.com/modules/setnotn.htm
    * https://www.geeksforgeeks.org/maths/set-notation/
    <br /><br />
 
-Some use this notation for conversion to more graphical mathetical notation, such as:
+Some use this notation for defining mathetical notation, such as:
 
-   <pre>\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)</pre>
+<pre>\$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$</pre>
+
+The <tt>\$$</tt> at the beginning and <tt>$$</tt> at the end specifies use of the Mathjax library to generate graphical mathematical symbols such as:
 
 {% if page.mathjax or site.mathjax %}
 <script>
@@ -267,8 +275,6 @@ Some use this notation for conversion to more graphical mathetical notation, suc
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 
-is presented in mathematical notation using the Mathjax JavaScript library as:
-
 \$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
 
 <!--
@@ -277,11 +283,11 @@ The above should look like this:
    <img alt="jekyll-exp-358x82.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764215255/jekyll-exp-358x82_cs5wyz.png" />
 -->
 
-Within curly braces <tt>{ }</tt> is a “set,” i.e., a collection of elements without order or repetition rules. Commas separate elements within the set.
-
-The <tt>$</tt> dollar signs at the beginning and end ???
-
-<tt>frac</tt> specifies a fraction "4/9".
+* <tt>\frac</tt> specifies a fraction "4/9".
+* <tt>\left</tt> specifies left parentheses.
+* <tt>\right</tt> specifies right parentheses.
+* <tt>\sqrt</tt> specifies square root.
+<br /><br />
 
 <tt>e^</tt> of P(???) specifies exponentiation to the power of <tt>{-1/3}</tt>, presented as a superscript.
 
