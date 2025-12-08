@@ -1,6 +1,6 @@
 ---
-date: "2025-08-20"
-lastchange: "v014 + trek eval :it-films.md"
+date: "2025-12-07"
+lastchange: "25-12-07 v015 + time tunner :it-films.md"
 url: https://bomonike.github.io/it-films
 ---
 
@@ -164,4 +164,10 @@ Official James Bond Films in Release Order:
 
 1. No Time to Die (2021)
 
-1. - Henry Cavill?
+1. Henry Cavill?
+
+
+## Time travel
+
+<a target="_blank" href="https://www.youtube.com/watch?v=cPO7jY6Wr9M">The Time Tunnel 2002</a>
+Unaired 2002 attempt to relaunch Irwin Allen's original series "The Time Tunnel" 1996. In this version, a secret Dept. of Energy project to create "hot fusion" instead creates a "storm" in time. It takes the scientists four hours (240 minutes) to lock down one end of the storm, while the other is still randomly sweeping across the time stream. When they leave their bunker, the scientists discover that the "two-forty" (the 240 minutes the storm was out of control), caused random changes to the fabric of history, and only they know the true history of the world. Now the scientists must send teams back through the time tunnel to correct major errors the storm created. DOE employee Doug Phillips is recruited into the group because of his particular knowledge of a World War 2 battle, where the Time Tunnel team must go in order to stop an outbreak of the Black Plague.
