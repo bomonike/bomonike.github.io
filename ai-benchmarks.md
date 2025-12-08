@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-07"
-lastchange: "25-12-07 v23 plus minus :ai-benchmarks.md"
+lastchange: "25-12-07 v024 Fibonacci :ai-benchmarks.md"
 url: "https://bomonike.github.io/ai-benchmarks"
 file: "ai-benchmarks"
 title: "AI Benchmarks"
@@ -221,13 +221,15 @@ An alternative is "Set Builder Form", which defines the unique <strong>propertie
 <tt>{ x | -1 ≤ x < 6 }</tt>
 
    * <tt>"|"</tt> is read "such that".
-   * "≤" is less than or equal.
-   * "<" is less than or not equal to.
-
+   * "≤" is less than or equal symbol  <tt>\leq</tt> 
+   * "<" is less than or not equal to  <tt>\leq</tt>.
+   * ">" is greater than or not equal to <tt>\geq</tt>.
+   <br /><br />
    Thus: All values of x such that X is less than or equal to -1 or less than 6.
 
 <tt>{ 2x | x ∈ ℤ<sup>+</sup> }</tt>
 
+   * "x" is <tt>\times</tt> multiplier.
    * ∈ (epsilon, set by Option+E or \in) in (belongs to) "x ∈ ℤ<sup>+</sup>" is read: x among positive integers.
    * ∉ (not element of)
    <br /><br />
@@ -246,7 +248,7 @@ DEFINITION: "Cardinality" is the number of elements in a set, represented as |N|
    * Δ or δ (delta symbol for difference, keyed by Option + J or Option + D) 
    * ° (degree symbol keyed by Option + Shift + 8
    * ∝ (proportional symbol &prop;)
-   * ≈ (approximately equal, keyed by Option + X. <tt>&asymp;</tt>
+   * ≈ is approximately equal <tt>\approx</tt>, keyed by Option + X. <tt>&asymp;</tt>
    <br /><br />
 
 About mathematical set notation, see:
@@ -258,7 +260,8 @@ About mathematical set notation, see:
 
 ### Mathjax
 
-Many use a textual notation for defining mathetical notation, such as MathML, TeX, or ASCIImath as input:
+<a target="_blank" href="https://www.youtube.com/watch?v=6Ii_9H0tpvg">VIDEO</a>:
+Mathematical symbols are typeset from textual notation markup in <a target="_blank" href="https://en.wikipedia.org/wiki/LaTeX">LaTeX</a> (or ASCIImath <a target="_blank" href="http://www.w3.org/1998/Math/MathML">MathML</a>), such as:
 
 <pre>\$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$</pre>
 
@@ -292,12 +295,24 @@ specifies the quadratic equation:
 
 \$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-   * <tt>\ne</tt> specifies the &ne; not equal symbol.
    * <tt>\pm</tt> specifies the &#x2A26; plus or minus symbol.
    <br /><br />
 
-<tt>e^</tt> of P(???) specifies exponentiation to the power of <tt>{-1/3}</tt>, presented as a superscript.
+<pre>$$F_n = round(1 / sqrt(5) phi.alt*n), quad phi.alt = (1 + sqrt(5)) / 2$$</pre>
 
+is the Fibonacci sequence:
+
+\$$F_n = round(1 / sqrt(5) phi.alt*n), quad phi.alt = (1 + sqrt(5)) / 2$$
+
+Others:
+   * <tt>\ne</tt> specifies the &ne; not equal symbol.
+   * &pi; is the symbol for Pi (3.14...), written as <tt>\pi</tt> or <tt>&#960;</tt>
+   * ∞ is the infinity symbol &infin; written as <tt>\infty</tt> 
+   * <tt>e^</tt> of P(???) specifies exponentiation to the power of <tt>{-1/3}</tt>, presented as a superscript.
+   * <tt>\log_2(x)</tt>
+   <br /><br />
+
+Alternatives to LaTex coding include <a target="_blank" href="https://www.youtube.com/watch?v=NTGkb4FCLhM">VIDEO</a>: <a target="_blank" href="https://typst.app/home/">Typst</a> which enables automatically formats as you write, and thus real-time collaboration on Google Docs.
 
 <a name="AIME"></a>
 
@@ -525,18 +540,18 @@ This evaluates 8 models on 6 arenas across 1680 tournaments at 15 rounds each (2
 
 An LLM's success over several "rounds" is measured by relative scores like income, territory control, survival in 6 "arenas":
 
-    1. Battlesnake: Snake AIs compete to survive and grow in a grid
+   1. Battlesnake: Snake AIs compete to survive and grow in a grid
 
-    2. Core War : Redcode warriors battle to control a virtual computer
+   2. Core War : Redcode warriors battle to control a virtual computer
 
-    3. Halite : Distribute resources wisely to conquer territory
+   3. Halite : Distribute resources wisely to conquer territory
 
-    4. Poker : No Limit Texas Hold'em with 2+ players
+   4. Poker : No Limit Texas Hold'em with 2+ players
 
-    5. RoboCode - Tank combat - outlast and outgun opponents
+   5. RoboCode - Tank combat - outlast and outgun opponents
 
-    6. RobotRumble : Program swarms to overwhelm opponents
-    <br /><br />
+   6. RobotRumble : Program swarms to overwhelm opponents
+   <br /><br />
 
 https://viewer.codeclash.ai/
 shows the leader -- Anthropic Sonnet 4 and 4.5 -- score between 30 to 70.
