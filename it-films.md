@@ -1,6 +1,6 @@
 ---
 date: "2025-12-07"
-lastchange: "25-12-07 v015 + time tunner :it-films.md"
+lastchange: "25-12-16 v016 + time tunner :it-films.md"
 url: https://bomonike.github.io/it-films
 ---
 
@@ -66,12 +66,12 @@ In 2025, addition to numerous novels, comics, video games, and merchandise:
 
 Twelve television series, totaling 940 episodes across 49 seasons.
 
-1. 1966–1969   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-original-series">80% The Original Series</a>	introduced Kirk, Spock, and the classic Enterprise crew. It popularized iconic phrases like "Live long and prosper" and "Beam me up, Scotty" have entered everyday language.
+1. 1966–1969   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-original-series">80% The Original Series</a> (<a target="_blank" href="https://episoderatings.com/show/253">Episodes</a>) introduced Kirk, Spock, and the classic Enterprise crew. It popularized iconic phrases like "Live long and prosper" and "Beam me up, Scotty" have entered everyday language.
 1. 1973–1974   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-animated-series">94% The Animated Series</a> Animated adventures with original cast voices
 1. 1987–1994   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-the-next-generation">92% The Next Generation</a> is set a century later, led by Captain Picard. It ran for 7 seasons (180 episodes) from September 28, 1987 on Paramount Television
 1. 1993–1999	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-deep-space-nine">91% Deep Space Nine</a> is station-based, darker, serialized storytelling
 1. 1995–2001	Voyager starship lost far from home, led by Captain Janeway
-1. 2001–2005	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-enterprise">56% Enterprise</a> prequel to original, early human space exploration
+1. 2001–2005	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-enterprise">56% Enterprise</a> (<a target="_blank" href="https://episoderatings.com/show/314">Episodes</a>) prequel to original, early human space exploration
 1. 2017–present <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-discovery">91% Discovery</a> modern streaming, diverse cast, new directions
 1. 2020–2023	<a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-picard">89% Picard</a> focuses on Jean-Luc Picard’s later years
 1. 2020–present   <a target="_blank" href="https://www.justwatch.com/us/tv-show/star-trek-lower-decks">91% Lower Decks</a> - animated comedy about junior officers
