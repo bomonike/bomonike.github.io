@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-10-22"
-lastchange: "v206 + gta, ap-stats, lamp-oil :README.md"
+date: "2025-12-17"
+lastchange: "25-12-17 v207 + countries :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -43,6 +43,7 @@ Topics alphabetically:
 
 1. <a target="_blank" href="https://bomonike.github.io/chromebook2linux">chromebook2linux</a>
 1. <a target="_blank" href="https://bomonike.github.io/codespaces">codespaces</a>
+1. <a target="_blank" href="https://bomonike.github.io/countries">countries</a>
 1. <a target="_blank" href="https://bomonike.github.io/copilots">copilots</a>
 
    <a name="D"></a>
