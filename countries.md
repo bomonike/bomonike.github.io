@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-17"
-lastchange: "25-11-17 v006 + us bans :countries.md"
+lastchange: "25-11-17 v007 + us bans :countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -95,30 +95,6 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
 
    * Venezuela?
 
-
-Partial bans:
-
-   * Angola (new full)
-   * Antigua and Barbuda (new full)
-   * Benin (new full)
-   * Burundi
-   * Côte d’Ivoire (new full)
-   * Cuba
-   * Dominica (new full)
-   * Gabon (new full)
-   * Gambia (new full)
-   * Malawi (new full)
-   * Mauritania (new full)
-   * Nigeria (new full)
-   * Senegal (new full)
-   * Tanzania (new full)
-   * Togo
-   * Tonga (new full)
-   * Turkmenistan
-   * Venezuela
-   * Zambia (new full)
-   * Zimbabwe (new full)
-   <br /><br />
 
 ## New Countries
 
