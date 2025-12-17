@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-17"
-lastchange: "25-11-17 v005 + us bans :countries.md"
+lastchange: "25-11-17 v006 + us bans :countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -92,6 +92,8 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
    1. Zambia (additional partial)
    1. Zimbabwe  (additional partial)
    <br /><br />
+
+   * Venezuela?
 
 
 Partial bans:
