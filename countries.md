@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-11-22"
-lastchange: "25-11-22 v004 + five eyes :countries.md"
+date: "2025-12-17"
+lastchange: "25-11-17 v005 + us bans :countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -49,6 +49,74 @@ BRICS is an acronym for Brazil, Russia, India, China, and South Africa.
 But it refers to a bloc of 10 economies, of which no EU member nation is a part.
 
 <a target="_blank" href="https://en.wikipedia.org/wiki/Five_Eyes">"Five Eyes"</a> is an Anglosphere intelligence alliance comprising Australia, Canada, New Zealand, the United Kingdom, and the United States. These countries are party to the multilateral UKUSA Agreement, a treaty for joint cooperation in signals intelligence.
+
+On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-sheet-president-donald-j-trump-further-restricts-and-limits-the-entry-of-foreign-nationals-to-protect-the-security-of-the-united-states/">December 16, 2025, the Trump White House</a> expanded travel bans bans on "12 "High Risk" countries and partial restrictions on 20 others.
+
+   1. Afghanistan
+   1. Angola (additional partial)
+   1. Antigua and Barbuda (additional partial)
+   1. Benin (additional partial)
+   1. Burundi (original high risk)
+   1. Burkina Faso (new full)
+   1. Burma (Myanmar)
+   1. Chad
+   1. Cote d’Ivoire (additional partial)
+   1. Cuba (original high risk)
+   1. Dominica (additional partial)
+   1. Republic of the Congo
+   1. Equatorial Guinea
+   1. Eritrea
+   1. Gabon (additional partial)
+   1. Haiti
+   1. Iran
+   1. Laos (previously partial)
+   1. Libya
+   1. Malawi (additional partial)
+   1. Mali (new full)
+   1. Mauritania (additional partial)
+   1. Niger (new full)
+   1. Nigeria (additional partial)
+   1. Palestinian Authority passport holders
+   1. Senegal (additional partial)
+   1. Sierra Leone (previously partial)
+   1. Somalia
+   1. South Sudan (new full)
+   1. Sudan
+   1. Syria (new full)
+   1. Tanzania (additional partial)
+   1. The Gambia (additional partial)
+   1. Togo (original high risk)
+   1. Tonga (additional partial)
+   1. Venezuela (original high risk)
+   1. Yemen
+   1. Zambia (additional partial)
+   1. Zimbabwe  (additional partial)
+   <br /><br />
+
+
+Partial bans:
+
+   * Angola (new full)
+   * Antigua and Barbuda (new full)
+   * Benin (new full)
+   * Burundi
+   * Côte d’Ivoire (new full)
+   * Cuba
+   * Dominica (new full)
+   * Gabon (new full)
+   * Gambia (new full)
+   * Malawi (new full)
+   * Mauritania (new full)
+   * Nigeria (new full)
+   * Senegal (new full)
+   * Tanzania (new full)
+   * Togo
+   * Tonga (new full)
+   * Turkmenistan
+   * Venezuela
+   * Zambia (new full)
+   * Zimbabwe (new full)
+   <br /><br />
 
 ## New Countries
 
