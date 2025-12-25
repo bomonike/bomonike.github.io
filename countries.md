@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-12-17"
-lastchange: "25-11-17 v007 + us bans :countries.md"
+date: "2025-12-25"
+lastchange: "25-12-25 v008 + baltics :countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -35,10 +35,13 @@ created: "2025-10-22"
 
 The EU (European Union) is a political and economic union of 27 member countries. 20 of the 27 EU countries are in the "eurozone" where the euro (€) is the official currency in 2002. Members of the Economic Monetary Union (EMU) follow unified monetary policies managed by the European Central Bank (ECB). Some non-EU microstates also use the Euro by arrangement.
 
-Malta and the Republic of Cyprus adopted the euro in 2008. 
+Baltic countries include Estonia, Latvia, Lithuania, Poland, which is East of Germany, Austria, Czech Republic.
+
 Former communist country to adopt the euro include Slovakia (2009), Estonia (2011), Latvia (2014), Lithuania (2015), and Croatia (2023).
 
-Poland and Hungary do not use the euro. 
+Poland and Hungary do not use the euro.
+
+Malta and the Republic of Cyprus adopted the Euro in 2008. 
 
 Those in the <strong>Schengen Area</strong> agreed to abolish passport controls at mutual borders. It includes most EU countries plus Switzerland, Norway, and Iceland who are not in the EU.
 Ireland is not in Schengen.
