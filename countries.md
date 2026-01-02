@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-12-25"
-lastchange: "25-12-25 v008 + baltics :countries.md"
+date: "2026-01-02"
+lastchange: "26-01-02 v009 + baltics :countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
