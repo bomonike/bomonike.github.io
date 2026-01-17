@@ -1,17 +1,17 @@
 ---
 layout: post
 date: "2026-01-17"
-lastchange: "26-01-17 v001 + new :netbox.md"
+lastchange: "26-01-17 v002 + hero img :netbox.md"
 url: https://bomonike.github.io/netbox
 file: "netbox"
 title: "netbox"
 excerpt: "Web app to collaborate on a central source of truth for automating networks and data center specifics."
 tags: [datacenter, apps]
 image:
-# feature: pic green matrix hallway 1900x500.jpg
-  feature: https://cloud.githubusercontent.com/assets/300046/14623876/07afd066-0593-11e6-933a-2e596511ac67.jpg
-  credit:
-  creditlink:
+# feature: netbox-hero-1064x247.png
+  feature: https://res.cloudinary.com/dcajqrroq/image/upload/v1768637768/netbox-hero-1064x247_kjyei3.png
+  credit: netboxlabs.com
+  creditlink: https://netboxlabs.com
 comments: true
 created: "2026-01-17"
 ---
@@ -26,18 +26,19 @@ Instead of spreadsheets, NetBox provides a web app for data center and network o
 
 ## Company
 
-NetBox was first released June, 2016 by Jeremy Stretch who worked at DigitalOcean.
+NetBox Labs (<a target="_blank" href="https://netboxlabs.com/">netboxlabs.com</a>) is the commercial steward of NetBox source code.
 
-NetBox Labs is the commercial steward of NetBox source code.
+NetBox software was first open-sourced (under Apache 2) June, 2016 at
+
+<a target="_blank" href="https://github.com/netbox-community/netbox">
+https://github.com/netbox-community/netbox</a>
+
+Developer Jeremy Stretch worked at DigitalOcean.
 
 https://github.com/netbox-community/netbox/releases
-https://github.com/netbox-community/netbox
-under Apache 2.
 
 netbox-community/netbox-docker
 🐳 Docker Image of NetBox
-
-https://www.youtube.com/results?search_query=netboxlabs
 
 https://www.linkedin.com/company/netboxlabs/
 
@@ -45,6 +46,8 @@ https://netdev-community.slack.com/join/shared_invite/zt-3m82tqfj9-kv_tBWr7fTE92
 Slack NetDev community
 
 ## NetBox videos
+
+https://www.youtube.com/results?search_query=netboxlabs
 
 https://www.youtube.com/watch?v=hAfCbB-4cyk
 Intro to NetBox
