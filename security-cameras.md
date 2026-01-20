@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-11-19"
-lastchange: "25-11-19 v003 + chinese :security-cameras.md"
+date: "2026-01-20"
+lastchange: "26-01-20 v005 + Frigate :security-cameras.md"
 url: https://bomonike.github.io/security-cameras
 file: "security-cameras"
 title: "Security Cameras"
@@ -15,10 +15,69 @@ created: "2019-03-21"
 {% include l18n.html %}
 {% include _toc.html %}
 
+## Capabilities
+
+   References: 
+   * <a target="_blank" href="https://www.youtube.com/@foxysLab">@foxysLab</a>
+   * https://www.youtube.com/watch?v=tbCKWX34_G4 @NetworkChuck
+   * Hook Up channel by Robert
+   <br /><br />
+
+What we want are continuous video feeds from wired and wifi cameras being stored locally in an NVR (Network Video Recorder) so I don't pay to send to China (violating my privacy). Cameras have Infrared (IR) <strong>night vision</strong> to see in the dark.
+
+Many brands of cameras are junk (have problems keeping a connection, etc.).
+UniFi has their own NVR ecosystem.
+Reolink and Amcrest camera generally plays nicer than other brands.
+The Reolink 811A PoE IP Wired Security Camera 4K - 123° FoV, 5X Optical Zoom, 2 Way Talk (<a target="_blank" href="https://www.amazon.com/REOLINK-Security-Detection-Spotlight-Time-Lapse/dp/B09873G7X3/">$130 from Amazon</a>) has higher performance than the $89 810A or 510A.
+Annke B1200 has the highest performance but ???.
+
+Human monitoring services such as SimpliSafe Pro would have a human call when hardware alarms are triggered.
+
+We want to use AI object detection smart enough to recognize objects as named entitites such as "dog" vs "human", "porch pirate" vs "mailman", etc.
+Recognition focuses on custom <strong>detection zones</strong>.
+
+## Frigate
+
+Frigate began in 2019 by Blake Blackshear.
+
+To process streams from several cameras using AI requires a hefty computer with a TPU (Tensor Processing Unit) for running machine learning models efficiently. Frigate no longer supports use of the Coral USB accelerator, Google's edge TPU. And Google stopped making them. So look for them on Ebay or at Amazon UK.
+
+Now consider the Hailo 8L accelerator.
+
+We don't have time to scroll through hours of videos, so we want our AI to extract from the NVR relavent video clips and snapshot images across several cameras.
+
+Since storage capacity is finite (and costs money), this enables flexibility in retention policy which controls how far back recordings are kept. We keep videos of our kids for a year, other people for 30 days, and car detections for 7 days.
+
+On a Mac, the Scripted app passes recognitions to Apple HomeKit for viewing on Apple TV and/or Home Automation software???
+
+<a target="_blank" href="https://frigate.video/">https://frigate.video</a>
+Frigatae+ is $50/yr.
+
+Discovery and auto-configuration of IP cameras use the ONVIF (Open Network Video Interface Forum) protocol.
+
+Streaming makes use of cameras that sends out video streams in RTSP (Real Time Streaming Protocol).
+
+Frigate can control cameras able to PTZ (Pan & Tilt & Zoom).
+
+
+
+Triggers
+
+Frigate was trained on the COCO (Common Objects in Context) dataset of random images.
+Frigate+ subscription was trained on security-related images around the world.
+
+Frigate 
+Home Automation
+
+
+
+
 ## The problems with security cameras
 
-1. Wi-Fi can be jammed by a cheap jammer. It's best to use hard-wires.
+1. Wi-Fi can be jammed by a cheap jammer. It's best to hard-wire cameras (PoE).
 1. It's best to use local recording. Most cameras made in China sends videos to China (even though they say they don't).
+
+https://www.cnet.com/home/security/eufy-says-software-bug-that-exposed-users-video-footage-to-strangers-has-been-fixed/
 
 ## Brands 
 
