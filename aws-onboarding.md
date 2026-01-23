@@ -1,8 +1,8 @@
 ---
 layout: post
-date: "2026-01-18"
-lastchange: "26-01-18 v093 ways to interact :aws-onboarding.md"
-url: https://bomonike.github.io/acronyms
+date: "2026-01-23"
+lastchange: "26-01-23 v094 ways to interact :aws-onboarding.md"
+url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
 excerpt: "Get started safely & quickly using AWS GUI, CLI, and Terraform"
@@ -51,11 +51,27 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 
    <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
 
-1. Explore menu items:
+1. Explore its menu items:
 
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694649967/aws-marketing-1205x224_uaojtf.png"><img alt="aws-marketing-1205x224.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694649967/aws-marketing-1205x224_uaojtf.png"></a>
+   <a target="_blank" href="https://aws.amazon.com/"><img alt="aws-landing-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154950/aws-landing-menu_e8io6g.png"></a>
+   <!-- aws-marketing-1205x224_uaojtf.png -->
 
    PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
+
+   "My account" consists of:
+   * AWS Management Console
+   * Account Settings
+   * Billing & Cost Management
+   * Security Credentials
+   * AWS Personal Health Dashboard
+   <br /><br />
+   "Support" consists of:
+   * Support Center
+   * Expert Help
+   * Documentation
+   * Knowledge Center
+   * AWS Support Overview
+   * AWS re:Post
 
 1. Set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
 
@@ -94,7 +110,7 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 
    1. Install and use the Google Chrome browser so each Google email is setup within a different <strong>browser profile</strong>. Each profle holds its own preferences, browse history, and cookies for the specific email account.
 
-   1. Use your personal professional email address when creating a personal AWS "Skill Builder" account at <a target="_blank" href="https://skillbuilder.aws">https://skillbuilder.aws</a>  which links to your certification for life. NOTE: Additional accounts & passwords are used for Amazon marketplaces, AWS Events, and AWS cloud work.
+   1. Use your personal professional email address when creating a personal AWS "Skill Builder" account at <a target="_blank" href="https://skillbuilder.aws">https://skillbuilder.aws</a>  which links to your AWS certifications for life. NOTE: Additional accounts & passwords are used for Amazon marketplaces, AWS Events, and AWS cloud work.
 
 
    <a name="TypesOfAccounts"></a>
