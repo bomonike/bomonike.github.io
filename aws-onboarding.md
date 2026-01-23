@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-01-23"
-lastchange: "26-01-23 v094 ways to interact :aws-onboarding.md"
+date: "2026-01-24"
+lastchange: "26-01-24 v095 svcs :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -92,6 +92,8 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 
       Either way, a Chromebook can be used to control AWS resources. However, a powerful laptop is useful to hold larger files and process them locally, perhaps off-line.
 
+      <a target="_blank" href="https://aws.amazon.com/blogs/aws/appstream-chrome-chromebook-support/">The AWS Appstream app</a> is used to display streaming content (like Netflix and YouTube).
+
    1. On a trusted computer, establish a personal <strong>password manager</strong> (digital vault) for storing passwords and other sensitive information.
 
    1. Store your password manager vault file on a password-protected <a target="_blank" href="https://www.geckoandfly.com/21463/usb-password-protect-lock-encrypt-flash-drive/">removeable USB drive that has brute-force protection</a>. If the Admin PIN is entered incorrectly 10 times in a row, brute force attack protection triggers a crypto-erase of the drive. 
@@ -102,64 +104,27 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 
       Windows and MacOS users can use, for <a target="_blank" href="https://www.amazon.com/dp/B0B5B2WL5R/?th=1">$37.99 on Amazon</a>, the Kingston Ironkey Locker+ 50 32GB provides automatic cloud backup (if you trust Kingston). It needs a <a target="_blank" href="https://www.amazon.com/Adapter-Anker-High-Speed-Transfer-Notebook/dp/B08HZ6PS61/">USB-A to USB-C adapter</a>.
 
-   1. Configure your laptop to use Quad9.net DNS (at address 9.9.9.9) so known malicious websites are blocked automatically.
-
-   1. So you can ignore phishing attempts to common email domains and powned email addresses, <strong>create different emails</strong> for social media, professional, and governmental/banking activities. Use protonmail.com now that gmail.com is no longer cool.
-
-   1. On your mobile phone, install app <a target="_blank" href="https://www.authy.com/">Authy (from Twilio)</a> for MFA (Multi-Facator Authentication) which can be restored on new phones if you lose your phone.
+   1. Configure your computer to use Quad9.net DNS (at address 9.9.9.9) so known malicious websites are blocked automatically.
 
    1. Install and use the Google Chrome browser so each Google email is setup within a different <strong>browser profile</strong>. Each profle holds its own preferences, browse history, and cookies for the specific email account.
 
-   1. Use your personal professional email address when creating a personal AWS "Skill Builder" account at <a target="_blank" href="https://skillbuilder.aws">https://skillbuilder.aws</a>  which links to your AWS certifications for life. NOTE: Additional accounts & passwords are used for Amazon marketplaces, AWS Events, and AWS cloud work.
+   1. So you can ignore phishing attempts to common email domains and powned email addresses, <strong>create different emails</strong> for social media, professional, and governmental/banking activities. Use protonmail.com now that gmail.com is no longer cool.
 
+   1. Use your <strong>personal professional email address</strong> (such as "johndoe@proton.me") when creating a personal AWS "Skill Builder" account at <a target="_blank" href="https://skillbuilder.aws">https://skillbuilder.aws</a>  which links to your AWS certifications for life. NOTE: Additional accounts & passwords are used for Amazon marketplaces, AWS Events, and AWS cloud work.
 
-   <a name="TypesOfAccounts"></a>
+   1. On your mobile phone, install app <a target="_blank" href="https://www.authy.com/">Authy (from Twilio)</a> for MFA (Multi-Facator Authentication) which can be restored on new phones if you lose your phone.
+
+   1. Secure each account with <strong>multi-factor authentication</strong> (MFA), with recovery codes saved as secrets in the Password Manager. 
    
-   ## Types of accounts to sign-up for
-
-1. PROTIP: There are several different sign-up pages: one for each country and type of user: 
-
-   * If you want to create a stand-alone account in the US, click the "Sign up" button:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a> (see below)
-   * If you want to create a stand-alone account in China: ???
-   * If you're a student or educator with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a>
-   * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
-   * If you're using a gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
-   <br /><br />
-
-   <a name="RootSetup"></a>
-
-   ## Unique restricted email for God-Mode Global Admin Root account
+   <hr />
    
-   <a target="_blank" href="https://www.aws.amazon.com/blogs/aws/new-aws-sign-in-experience/"><img align="right" width="210" alt="aws-signup-root-315x150.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154720/aws-signup-root-315x150_elpgcs.png" /></a>
-   The email provided for "Sign up" is called the "Root" account "for account recovery".
-
-   By default, AWS enables the <strong>"Global Adminstrators" group</strong> to have access to the root account.
-
-   WARNING: "Root account" credentials have <strong>unlimited access</strong> to do anything to all AWS resources under the account and thus unlimited ability to rack up charges (legitimate or otherwise). By resources I mean: users, groups, roles, IAM Access Policies, API keys, etc. globally for all regions.
-
-1. So secure each email address with <strong>multi-factor authentication</strong> (MFA), with recovery codes saved as secrets in the Password Manager. 
-   
-1. PROTIP: To follow Separation of Duties (SoD) principles, the account should be owned only by a company's Accounts Payable department under the corporation's Controller and not by operational or IT staff. this should be announced by a corporate office as company policy.
-
-1. PROTIP: Passage of access responsibility should be recorded with time stamps and signatures of the parties involved, with a witness present.
-   
-1. A Global Adminstrators creates a set of <strong>sub-accounts</strong> and do not use the root account again except for emergency purposes.
-   
-   It's common for a separate account to be created for each <strong>department</strong> and <strong>project</strong> as well as each <strong>user</strong>. This is to limit the "blast radius" when an account's credentials become compromised, a situation we need to prepare for.
-
-   CAUTION: Do not use email address used for AWS to also be used in social media.
-   Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping.
-
-1. Create sub-accounts for use with each level of <strong>billing</strong> processing. 
-
-
 <hr />
 
 ## Ways to interact with AWS:
 
 Console GUI, CLI, API, IoC, Mobile:
 
-* <strong>Visually</strong> clicking and typing on the internet browser <a href="#AWSConsole"><strong>GUI</strong> (Graphical User Interface), aka "<strong>AWS Management Console</strong>"</a> at <tt>https://console.aws.amazon.com/</tt>. It's used to <a href="#RootSetup">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootSetup">Root Account</a>. Authentication is by user name and password plus MFA.
+* <strong>Visually</strong> clicking and typing on the internet browser "<strong>AWS Management Console</strong>"</a> at <tt>https://console.aws.amazon.com/</tt>. It's used during initial setup to <a href="#RootCredentials">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootCredentials">Root Account</a>. Authentication is by user name and password plus MFA.
 
 * <strong>Textually</strong> typing in the <strong>CLI</strong> (Command Line Interface)</a> provided by the MacOS/Linux Terminal or Windows PC Command (cmd) utility. The AWS CLI program is installed for <a target="_blank" href="https://wilsonmar.github.io/aws-cli/"><tt>az</tt> commands</a> to be executed interactively or within interpretive Bash scripts scheduled in batch jobs. Authentication is by <tt>aws configure</tt> command which stores credentials in an unencrypted file at <tt>~/.aws/credentials</tt>.
 
@@ -171,19 +136,200 @@ Console GUI, CLI, API, IoC, Mobile:
 
 SECURITY PROTIP: Many enterprises do not permit use of interactive CLI and Console GUI in production and instead allow only automated API calls by IaC (such as CloudFormation and Terraform). This is to ensure version control and repeatability during testing.
 
-AWS customers create and use a different AWS account for each environment (development, testing, production, etc.).
-They compare resource configurations and statuses across multiple accounts for troubleshooting application issues. 
+<hr />
 
-Only the Google Chrome browser supports <a target="_blank" href="[#ChromeExtension](https://towardsdev.com/managing-multi-session-aws-managed-console-with-the-aws-extend-switch-roles-chrome-extension-e2b8255e2163)">installation</a> of the simultaneous sign-in multiple AWS accounts in the AWS Management Console GUI. This "Multi-Session" feature can be used to switch between for up to 5 AWS accounts, each in a different browser tab, each tab managed independently with unique credentials and other context. The feature was added <a target="_blank" href="https://aws.amazon.com/about-aws/whats-new/2025/01/aws-management-console-simultaneous-sign-in-multiple-accounts/">Jan 16, 2025</a> in all Commercial Regions. 
+<a name="TypesOfAccounts"></a>
+   
+## Types of accounts to sign-up for
 
-   1. Install the extension by visiting the <a target="_blank" href="https://chromewebstore.google.com/detail/aws-extend-switch-roles/jpmkfafbacpgapdghgdpembnojdlgkdl">AWS Extend Switch Roles Chrome Extension</a> page.
-   1. Click to "Enable it".
-   1. In CLI, set the configuration using command <tt>aws config format</tt> ???
-   1. Open a new browser tab for each account. See https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/multisession.html
-   1. Use the command+' key combination to switch among tabs.
-   1. When a tab group is removed, the corresponding session will be automatically signed out.
+1. PROTIP: There are several different sign-up pages: one for each country and type of user: 
+
+   * If you want to create a stand-alone account in the US, click the "Sign up" button:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a> (<a href="#StandAloneAccount">see below</a>)
+   * If you want to create a stand-alone account in China: ???
+   * If you're a student or educator with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a>
+   * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
+   * If you're using a gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
+   <br /><br />
 
 <hr />
+
+## AWS Free Tier
+
+Since July 15, 2025, new AWS accounts are given 6 months (rather than a year) of free access to some AWS services.
+
+Each new AWS account receives up to $200 in AWS Free Tier credits, which can be applied towards eligible AWS services, such as AWS Amplify websites. 
+
+All Free Tier credits must be used within 12 months of your account creation date. To learn more about the AWS Free Tier program, refer to AWS Free Tier website and AWS Free Tier documentation.
+
+<a target="_blank" href="https://aws.amazon.com/free/">https://aws.amazon.com/free/</a>
+<a target="_blank" href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html">https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html</a>
+
+
+<a name="AWS_profile"></a>
+
+## AWS Profile
+
+These are steps to create a stand-alone root account.
+
+1. Create a new email address for your AWS account.
+1. In your Password Manager app (such as KeepassXC), create a new entry to store the email, Account Name, password, Account ID, Secret info.
+1. If you don't have Google Chrome installed, install it.
+1. Open a Google Chrome app.
+1. Click the person icon at the upper-right corner and sign in using your personal AWS "Skill Builder" profile email address.
+
+   <a target="_blank" href="https://aws.amazon.com/profile">Your AWS Profile</a> connects you to <a target="_blank" href="https://aws.amazon.com/profile/community-public">Community</a>: 
+   * <a target="_blank" href="https://aws.amazon.com/repost/">AWS re:Post</a> curated knowledge and a vibrant community
+   * <a target="_blank" href="https://aws.amazon.com/builder-center/">AWS Builder Center</a>
+   * <a target="_blank" href="https://aws.amazon.com/blogs/">AWS Blogs</a>
+   * AWS Startups
+   * Amazon Quick Suite Community
+   * <a target="_blank" href="https://www.awsmerchstore.com">AWS Merch Store</a>
+   * forms and surveys on AWS Pulse
+   * online webinar registrations and content downloads
+   <br /><br />
+
+<a name="FreeSvcs"></a>
+
+## Free AWS services
+
+<a target="_blank" href="https://aws.amazon.com/free/?ams%23interactive-card-vertical%23pattern-data-339318104.filters=((id:GLOBAL%23local-tags-free-tier-products-plan-type.and,value:(always-free)))">List of free AWS services</a>:
+
+Governance:
+* AWS Budgets: Improve planning and cost control with flexible budgeting and forecasting
+* Amazon Cognito: Simple and Secure User Sign-Up, Sign-In, and Access Control.
+* AWS Service Catalog: Create and manage catalogs of IT services that are approved for use on AWS.
+
+Social media:
+* AWS re:Post: A community-driven, questions-and-answers service to help AWS customers remove technical roadblocks.
+* Amazon Q Business: Unleash the power of generative AI in the workplace with Amazon Q Business
+* Amazon Pinpoint: Send and receive messages to and from your customers.
+
+Operational Utilities:
+* AWS CloudFormation: Model and provision all your cloud infrastructure resources with code to enable configuration compliance and faster troubleshooting.
+* AWS Resource Access Manager: Securely share your resources across AWS accounts or within your organization.
+* AWS CloudTrail: Log, continuously monitor, and retain account activity related to actions across your AWS infrastructure.
+* Amazon CloudWatch: Monitoring for AWS cloud resources and applications.
+* Amazon Managed Service for Prometheus: a Prometheus-compatible service that monitors and provides alerts on containerized applications.
+
+* AWS Resource Explorer: search for and discover your resources across AWS Regions.
+* AWS License Manager: Set rules to manage, discover, and report third-party license usage proactively
+* AWS Systems Manager: Centralize operational data from multiple AWS services and automate tasks across your AWS resources.
+
+* Amazon OpenSearch Service: Managed service that makes it easy to perform interactive log analytics, real-time application monitoring, website search, and more.
+
+* AWS HealthLake: Securely store, transform, transact, and analyze health data in minutes
+
+Security:
+* Amazon Route 53: Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service.
+* AWS Control Tower: The easiest way to set up and govern a new, secure multi-account AWS environment.
+* AWS Certificate Manager: Provision and manage SSL/TLS certificates for use with AWS, hybrid, and multicloud workloads
+* AWS Key Management Service: AWS Key Management Service is a managed service that provides easy encryption with administrative controls.
+* AWS WAF Bot Control: Protect your web applications from common and pervasive web bots
+* Amazon SWF: Task coordination and state management service for Cloud applications.
+
+Development:
+* Amazon Q Developer: The most capable generative AI–powered assistant for software development
+* AWS Application Discovery Service: Collects server specification information, performance data, and details of running processes and network connections.
+* AWS Step Functions: Coordinate components of distributed applications.
+* AWS Amplify: Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale.
+* Amazon EventBridge: Build event-driven applications at scale across AWS, existing systems, or SaaS applications
+
+* AWS CodeBuild: Fully managed build service that builds and tests code in the cloud.
+* Amazon CodeCatalyst: Quickly build and deliver apps at scale on AWS
+* AWS CodeArtifact: Secure, scalable, and cost-effective package management for software development
+* AWS CodePipeline: Continuous delivery service for fast and reliable application updates.
+* AWS Glue: Simple, flexible, and cost-effective extract, transform, and load (ETL) service.
+* AWS X-Ray: Analyze and debug your applications.
+
+Compute:
+* Amazon DynamoDB: Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale.
+* Amazon Aurora DSQL: Fastest serverless distributed SQL database for always available applications
+* Amazon SQS: Scalable queue for storing messages as they travel between computers.
+
+Data:
+* Amazon DataZone: Unlock data across organizational boundaries with built-in governance capabilities
+* Amazon S3: Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale.
+* AWS Lambda: Run code without thinking about servers or clusters
+* Amazon SimpleDB: Amazon SimpleDB is a highly available NoSQL data store that offloads the work of database administration.
+
+Networking:
+* AWS Shield: Protects networks and applications by analyzing network security configurations and providing managed DDoS protection
+* AWS API Gateway: Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale.
+* Amazon SNS: Fast, flexible, fully managed push messaging service.
+* Amazon CloudFront: Web service to distribute content to end users with low latency and high transfer speeds.
+
+Migration:
+* AWS Migration Hub: Migration Hub is a single location to track the progress of application migrations
+* Migration Evaluator: Migration Evaluator helps customers rapidly see projected costs of running their on-premises estate in AWS.
+* AWS Application Migration Service: Simplify and expedite migrations while reducing cost.
+
+
+<a name="StandAloneAccount"></a>
+
+## Stand-alone root account setup
+
+These are steps to create a stand-alone root account.
+
+1. Click the "Create Account" button.
+
+
+1. At <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com/</a>, click "Create Account" at the top-right corner.
+1. 
+
+
+1. For "AWS account name", examples are "master-billing" but the email works too.
+1. Switch to your email tab to click the link to verify your email address.
+1. PROTIP: When providing answers to Security Challenge Questions, do not specify the real answer,
+   which someone stole or figured out through social engineering. Instead, <strong>answer with nonsense</strong>
+
+1. Write that secret information down in 1Password or a paper in your fire-proof vault.
+1. Write down your <strong>Account Id</strong> number (12 digits).
+
+5. Supply a strong password.
+
+   PROTIP: Use 1Password so that you can easily generate up to <strong>64 character</strong> password, but remember only one password to access the 1Password database of secrets. 1Password encrypts its database so that you can make backups (to a USB drive or secure cloud). I favor 1Password because it provides a way to sync changes with your smartphone without going through the internet.
+
+   Because you only have to remember one master password, you can are free to change various passwords as often as you want with no fear of forgetting them.
+
+7. Click "Continue".
+
+   If you have 1Password installed, you would be prompted to create a new account.
+
+1. Provide phone number.
+
+   PROTIP: If you provide a Google Voice virtual number, it would be less of a hassle in case you change the actual number of your phone assigned by your carrier. So in case you change phone vendors (from ATT to T-Mobile), you only need to change it in Google Voice.
+
+
+
+
+<a name="RootCredentials"></a>
+
+## Unique restricted email for God-Mode Global Admin Root account
+   
+   <a target="_blank" href="https://www.aws.amazon.com/blogs/aws/new-aws-sign-in-experience/"><img align="right" width="210" alt="aws-signup-root-315x150.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154720/aws-signup-root-315x150_elpgcs.png" /></a>
+   The email provided for "Sign up" is called the "Root" account "for account recovery".
+
+   WARNING: By default, permissions for a <strong>"Global Adminstrators" group</strong> is granted to the email used to create the root account. The Global Adminstrators group has <strong>unlimited access</strong> to do anything to all AWS resources under the account and thus unlimited ability to rack up charges (legitimate or otherwise). By resources I mean: users, groups, roles, IAM Access Policies, API keys, etc. globally for all regions.
+
+   ## Separation of Duties and Concerns
+
+1. PROTIP: To follow Separation of Duties (SoD) principles, the account should be owned only by a company's Accounts Payable department under the corporation's Controller and not by operational or IT staff. this should be announced by a corporate office as company policy.
+
+1. In an enterprise when several people or departments are involved, create a sub-account for use with each level of processing, to provide individual traceability and accountability.
+
+1. A Global Adminstrators creates a set of <strong>sub-accounts</strong> and do not use the root account again except for emergency purposes.
+   
+   It's common for a separate account to be created for each <strong>department</strong> and <strong>project</strong> as well as each <strong>user</strong>. This is to limit the "blast radius" when an account's credentials become compromised, a situation we need to prepare for.
+
+   CAUTION: Do not use email address used for AWS to also be used in social media.
+   Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping.
+
+1. AWS customers create and use a different AWS account for each environment (development, testing, training, production, migration, etc.). IaC (Infrastructure as Code) allows resource configurations and statuses to be compared across multiple accounts for troubleshooting application issues. 
+
+1. PROTIP: Passage of access responsibility should be recorded with time stamps and signatures of the parties involved, with a witness present.
+   
+
+
 
 <a name="EmailSystem"></a>
 
@@ -207,7 +353,6 @@ Global Administrators working with AWS need to have admin control of an email sy
 Within an organization, it's common for a separate account to be created for each department and project as well as each user. This is to limit the blast radius when a user's credentials become compromised, a situation we need to prepare for.
 
 
-
 ### Unique Browser Profile for Each Email
 
 1. Install Google Chrome because it has detection of malicious conditions.
@@ -217,31 +362,16 @@ Within an organization, it's common for a separate account to be created for eac
    PROTIP: The Multi Login Helper extension is also useful for creating a new browser profile for each Google account you have.
    
 
-   ### Root Password
+Only the Google Chrome browser supports <a target="_blank" href="[#ChromeExtension](https://towardsdev.com/managing-multi-session-aws-managed-console-with-the-aws-extend-switch-roles-chrome-extension-e2b8255e2163)">installation</a> of the simultaneous sign-in multiple AWS accounts in the AWS Management Console GUI. This "Multi-Session" feature can be used to switch between for up to 5 AWS accounts, each in a different browser tab, each tab managed independently with unique credentials and other context. The feature was added <a target="_blank" href="https://aws.amazon.com/about-aws/whats-new/2025/01/aws-management-console-simultaneous-sign-in-multiple-accounts/">Jan 16, 2025</a> in all Commercial Regions. 
 
-1. Create a new 1Password entry to store the email, Account Name, password, Account ID, Secret info.
+   1. Install the extension by visiting the <a target="_blank" href="https://chromewebstore.google.com/detail/aws-extend-switch-roles/jpmkfafbacpgapdghgdpembnojdlgkdl">AWS Extend Switch Roles Chrome Extension</a> page.
+   1. Click to "Enable it".
+   1. In CLI, set the configuration using command <tt>aws config format</tt> ???
+   1. Open a new browser tab for each account. See https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/multisession.html
+   1. Use the command+' key combination to switch among tabs.
+   1. When a tab group is removed, the corresponding session will be automatically signed out.
 
-1. For "AWS account name", examples are "master-billing" but the email works too.
-1. Switch to your email tab to click the link to verify your email address.
-1. PROTIP: When providing answers to Security Challenge Questions, do not specify the real answer,
-   which someone stole or figured out through social engineering. Instead, <strong>answer with nonsense</strong>
 
-1. Write that secret information down in 1Password or a paper in your fire-proof vault.
-1. Write down your <strong>Account Id</strong> number (12 digits).
-
-5. Supply a strong password.
-
-   PROTIP: Use 1Password so that you can easily generate up to <strong>64 character</strong> password, but remember only one password to access the 1Password database of secrets. 1Password encrypts its database so that you can make backups (to a USB drive or secure cloud). I favor 1Password because it provides a way to sync changes with your smartphone without going through the internet.
-
-   Because you only have to remember one master password, you can are free to change various passwords as often as you want with no fear of forgetting them.
-
-7. Click "Continue".
-
-   If you have 1Password installed, you would be prompted to create a new account.
-
-1. Provide phone number.
-
-   PROTIP: If you provide a Google Voice virtual number, it would be less of a hassle in case you change the actual number of your phone assigned by your carrier. So in case you change phone vendors (from ATT to T-Mobile), you only need to change it in Google Voice.
 
    <a name="ComparePlans"></a>
 
