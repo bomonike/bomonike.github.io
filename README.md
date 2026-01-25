@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-01-17"
-lastchange: "26-01-17 v208 + netbox :README.md"
+date: "2026-01-25"
+lastchange: "26-01-25 v209 + aws-kiro :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -33,6 +33,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ap-stats">ap-stats</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
+1. <a target="_blank" href="https://bomonike.github.io/aws-kiro">aws-kiro</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-machine-learning">azure-machine-learning</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-certifications">azure-certifications</a>
