@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-01-24"
-lastchange: "26-01-24 v097 kiro :aws-onboarding.md"
+date: "2026-01-26"
+lastchange: "26-01-26 v1000 sh for new user :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -20,7 +20,7 @@ created: "2016-03-29"
 {% include _toc.html %}
 
 <a target="_blank" href="https://wilsonmar.github.io/aws-onboarding/">
-This</a> is a hands-on tutorial to get new users setup to effectively access and use the AWS cloud - without tedious "talking head" lectures. Here you do some action and explanations. "PROTIP" tags highlight my advice, found in few other places.
+This</a> is a <strong>hands-on</strong> tutorial for <strong>absolute beginners</strong> to begin using AWS cloud like a pro -- without tedious "talking head" lectures. Here you do some action and explanations. "PROTIP" tags highlight my hard-won advice available no where else.
 
 Covered here are instructions on how to install and use AWS CLI automation, smart phone apps, and 3rd party tools used by pros.
 
@@ -59,7 +59,7 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
    PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
 
    "My account" consists of:
-   * <a href="#console">AWS Management Console</a>
+   * <a href="#Console">AWS Management Console</a>
    * <a href="#account-settings">Account Settings</a>
    * <a href="#billing">Billing & Cost Management</a>
    * <a href="#security">Security Credentials</a>
@@ -114,12 +114,33 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 1. Click the "Business" and "Enterprise" buttons in the pop-up to see sample volume pricing tiers.
 
 
+## flowchart
+
+Here is a flowchart of essential corporate IT ecosystem movie:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png"><img alt="it-ecosystem-1466x732.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png" /></a>
+
+1. The IT department creates laptops for the rest of the organization that are installed with secure DNS for Quad9, Password Manager, and other utilities.
+1. People in the Payables department are fudiciaries of the AWS Root Account, with the corporate credit card used to pay for billings.
+1. System Administrators maintain a database of regions and what each service costs.
+1. The Human Resources department maintain a list of people, their roles, and what parts of the system each is allowed use.
+1. Groups and network areas.
+1. That information is used by a user setup program to 
+1. create IAM accounts used by
+1. End Users to reference and update
+1. production databases.
+
+1. Due to the impact thieves have had, there is an Archivist who catalogs, backs up, restor. In many companies, to reduce the "blast radius" of hacks, Archivists are the only ones who can <strong>delete</strong> data.
+1. System Administrators and some End-users manage the creation and use of logs, metrics, dashboards, reports, and alerts based on data.
+
 
 <a name="Preparations"></a>
 
 ## Preparations for highly secure use of AWS
 
-Get in the habit of working like James Bond, so you can brag about that at interviews:
+PROTIP: The distinctive aspect of this tutorial is that you are trained to <strong>form habits</strong> like elite Olympic athletes so can brag like this: 
+
+> "Instead of convenience, I consistently endure disciplines that enable me to be trusted by enterprises to keep assets safe from robbers."
 
 <a name="Laptop"></a>
 
@@ -129,17 +150,37 @@ Get in the habit of working like James Bond, so you can brag about that at inter
 
    AWS (Amazon Web Services) runs in Amazon's data centers to provide on-demand access to computing resources, including servers, storage, databases, and analytics tools.
 
-   However, Amazon provides its "Outpost" service for its enterprise customers to use a modified form of AWS commands and services on <strong>servers</strong> those enterprises maintain on their own premises.
+   However, Amazon provides its "Outpost" service for its enterprise customers to use a modified form of AWS commands and services on <strong>servers</strong> those enterprises maintain on their own premises. There is also <a target="_blank" href="https://www.localstack.cloud/">LocalStack</a> which replicates fully functional cloud applications on local infrastructure.
+   https://github.com/localstack/localstack
 
    Either way, a Chromebook can be used to control AWS resources. However, a powerful laptop is useful to hold larger files and process them locally, perhaps off-line.
 
-   <a target="_blank" href="https://aws.amazon.com/blogs/aws/appstream-chrome-chromebook-support/">The AWS Appstream app</a> is used to display streaming content (like Netflix and YouTube).
+   <a target="_blank" href="https://aws.amazon.com/blogs/aws/appstream-chrome-chromebook-support/">The AWS Appstream app</a> is used to display streaming content (like Amazon Prime).
+
 
    A Raspberry Pi 5 is powerful enough.
 
-   ### Secure Configuration
+   ### Secure DNS Configuration
 
-1. Configure your computer to use Quad9.net DNS (at address 9.9.9.9) so known malicious websites are blocked automatically.
+1. Configure your computer to use DNS resolver addresses 9.9.9.9 and 149.112.112.112 so that <a target="_blank" href="https://quad9dns.github.io/documentation/">Quad9.net</a> automatically block malicious websites. Those who <a target="_blank" href="https://en.wikipedia.org/wiki/Quad9#Service">secure DNS w/ECS</a> would use 9.9.9.11 and 149.112.112.11. When testing false positives, unsecure IPs 9.9.9.10 and 149.112.112.10 are used temporarily. 
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=Z4Wi9XWmlNk">VIDEO: Install on Windows 10</a>
+
+   On macOS: https://quad9.net/news/blog/doh-with-quad9-dns-servers/
+   1. Download the mobileconfig file from https://docs.quad9.net/Setup_Guides/iOS/iOS_14_and_later_%28Encrypted%29/
+   1. Open the Apple Settings app. Click the "+". Click to Open the profile. Continue.
+   1. Click Install (or Continue then Install).
+   1. Enter your Mac password when prompted.
+   1. Click Install again to confirm.
+   <br /><br />
+   Alternately on macOS Terminal, type <tt>sudo scutil</tt>
+   ```
+   > open
+   > d.init
+   > d.add ServerAddresses * 9.9.9.9 149.112.112.112
+   > set State:/Network/Service/PRIMARY_SERVICE_ID/DNS
+   > quit
+   ```
 
    ### Password/Secrets Vault/Manager
 
@@ -153,25 +194,29 @@ Get in the habit of working like James Bond, so you can brag about that at inter
 
    Windows and MacOS users can use, for <a target="_blank" href="https://www.amazon.com/dp/B0B5B2WL5R/?th=1">$37.99 on Amazon</a>, the Kingston Ironkey Locker+ 50 32GB provides automatic cloud backup (if you trust Kingston). It needs a <a target="_blank" href="https://www.amazon.com/Adapter-Anker-High-Speed-Transfer-Notebook/dp/B08HZ6PS61/">USB-A to USB-C adapter</a>.
 
+   <a name="MFA"></a>
+
    ### Mobile phone
 
 1. On your mobile phone, install app <a target="_blank" href="https://www.authy.com/">Authy (from Twilio)</a> for MFA (Multi-Facator Authentication) which can be restored on new phones if you lose your phone.
 
-   ### Different Chrome Profile per Email
-
-1. Install and use the <strong>Google Chrome browser</strong> because it support <strong>https://support.google.com/chrome/answer/2364824">People Profiles</a> can encapsulates each email's own preferences, browse history, and cookies. Click your user icon at the upper-right to switch among profiles.
-
-1. So you can ignore phishing attempts to common email domains and powned email addresses, <strong>create different emails</strong> for social media, professional, and governmental/banking activities. Use protonmail.com now that gmail.com is no longer cool.
+1. Secure each 3rd-party account (AWS, etc.) with <strong>multi-factor authentication</strong> (MFA). Save recovery codes among Notes in your Password Manager. 
 
    ### AWS SkillBuilder account
 
-1. Use your <strong>personal professional email address</strong> (such as "johndoe@proton.me") when creating a personal AWS "Skill Builder" account at <a target="_blank" href="https://skillbuilder.aws">https://skillbuilder.aws</a>  which links to your AWS certifications for life. NOTE: Additional accounts & passwords are used for Amazon marketplaces, AWS Events, and AWS cloud work.
+1. Use your <strong>personal professional email address</strong> (such as "johndoe@proton.me") when creating a personal AWS "Skill Builder" account at <a target="_blank" href="https://skillbuilder.aws">https://skillbuilder.aws</a> which links to your AWS certifications for life. NOTE: Additional accounts & passwords are used for Amazon marketplaces, AWS Events, and AWS cloud work.
 
-   <a name="MFA"></a>
-   
-   ### MFA
+   ### A different Chrome Profile per Email
 
-1. Secure each 3rd-party account (AWS, etc.) with <strong>multi-factor authentication</strong> (MFA). Save recovery codes among Notes in your Password Manager. 
+1. Install and use the <strong>Google Chrome browser</strong> because it support <strong>https://support.google.com/chrome/answer/2364824">People Profiles</a> can encapsulates each email's own preferences, browse history, and cookies. Click your user icon at the upper-right to switch among profiles.
+
+1. So you can ignore phishing attempts to common email domains and powned email addresses, <strong>create different emails</strong> for social media, professional, and governmental/banking activities. Use protonmail.com (now that gmail.com is no longer cool).
+
+1. Create a different email
+
+   ### GitHub account
+
+1. For each email used within AWS, create a GitHub account with SSH certificates.
 
    ### GitHub
 
@@ -198,7 +243,10 @@ Get in the habit of working like James Bond, so you can brag about that at inter
 
 1. Install the extension by visiting the <a target="_blank" href="https://chromewebstore.google.com/detail/aws-extend-switch-roles/jpmkfafbacpgapdghgdpembnojdlgkdl">AWS Extend Switch Roles Chrome Extension</a> page.
 1. Click to "Enable it".
-1. In CLI, set the configuration using command <tt>aws config format</tt> ???
+1. In CLI, define the configuration using command <tt>aws config format</tt> 
+
+   <tt>~/.aws/config</tt> or  the %UserProfile% directory On Windows.
+
 1. Open a new browser tab for each account. See https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/multisession.html
 1. Use the command+' key combination to switch among tabs.
 1. When a tab group is removed, the corresponding session will be automatically signed out.
@@ -210,7 +258,7 @@ Console GUI, CLI, API, IoC, Mobile:
 
 * <strong>Visually</strong> clicking and typing on the internet browser "<strong>AWS Management Console</strong>"</a> at <tt>https://console.aws.amazon.com/</tt>. It's used during initial setup to <a href="#RootCredentials">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootCredentials">Root Account</a>. Authentication is by user name and password plus MFA.
 
-* <strong>Textually</strong> typing in the <strong>CLI</strong> (Command Line Interface)</a> provided by the MacOS/Linux Terminal or Windows PC Command (cmd) utility. The AWS CLI program is installed for <a target="_blank" href="https://wilsonmar.github.io/aws-cli/"><tt>aws</tt> commands</a> to be executed interactively or within interpretive Bash scripts scheduled in batch jobs. Authentication is by <tt>aws configure</tt> command which stores credentials in an unencrypted file at <tt>~/.aws/credentials</tt>.
+* <strong>Textually</strong> typing in the <strong>CLI</strong> (Command Line Interface)</a> provided by the MacOS/Linux Terminal or Windows PC Command (cmd) utility. The AWS CLI program is installed for <a target="_blank" href="https://wilsonmar.github.io/aws-cli/"><tt>aws</tt> commands</a> to be executed interactively or within interpretive Bash scripts scheduled in batch jobs. Authentication is by <tt>aws configure</tt> command which stores credentials <tt>aws_access_key_id</tt> and <tt>aws_secret_access_key=</tt> in an unencrypted file at <tt>~/.aws/credentials</tt>.
 
 * <strong>Programmatically</strong> running custom program code (such as Pyyhon, JavaScript, etc.) which call AWS APIs (Application Programming Interface) called by custom programs calling <a href="#APIKeys">AWS's API (Application Programming Interface)</a>. Amazon's Boto3 SDK and Pulumi.com use this approach. This is the mechanism behind the scenes by <a href="#MobileApps">mobile apps</a>. Authentication is by including APIKeys generated by AWS.
 
@@ -235,12 +283,12 @@ Follow these steps to create a profile account:
 1. Open a Google Chrome app.
 1. Click the person icon at the upper-right corner and sign in using your personal AWS "Skill Builder" profile email address.
 
-   <a target="_blank" href="https://aws.amazon.com/profile">Your AWS Profile</a> connects you to <a target="_blank" href="https://aws.amazon.com/profile/community-public">Community</a>: 
+   Edit <a target="_blank" href="https://aws.amazon.com/profile">Your AWS Profile</a> shown on <br /><a target="_blank" href="https://aws.amazon.com/profile/community-public">Community at https://aws.amazon.com/profile/community-public</a>
    * <a target="_blank" href="https://aws.amazon.com/repost/">AWS re:Post</a> curated knowledge and a vibrant community
-   * <a target="_blank" href="https://aws.amazon.com/builder-center/">AWS Builder Center</a>
-   * <a target="_blank" href="https://aws.amazon.com/blogs/">AWS Blogs</a>
-   * <a target="_blank" href="https://aws.amazon.com/startups/">AWS Startups</a>
-   * <a target="_blank" href="http://community.amazonquicksight.com/">Amazon Quick Suite Community</a> to "Find answers to your questions, learning resources, and events in" major cities and <a target="_blank" href="https://community.amazonquicksight.com/tags/c/events/28/online">online</a>, <a target="_blank" href="https://www.youtube.com/channel/UCqtI0cKSreCwUUuKOlA1tow">on YouTube</a>
+   * <a target="_blank" href="https://builder.amazon.com/">AWS Builder Center at https://builder.amazon.com</a>
+   * <a target="_blank" href="https://aws.amazon.com/blogs/">AWS Blogs at https://aws.amazon.com/blogs</a>
+   * <a target="_blank" href="https://aws.amazon.com/startups/">AWS Startups at https://aws.amazon.com/startups</a>
+   * <a target="_blank" href="http://community.amazonquicksight.com/">Amazon Quick Suite Community at http://community.amazonquicksight.com</a> to "Find answers to your questions, learning resources, and events in" major cities and <a target="_blank" href="https://community.amazonquicksight.com/tags/c/events/28/online">online</a>, <a target="_blank" href="https://www.youtube.com/channel/UCqtI0cKSreCwUUuKOlA1tow">on YouTube</a>
    * <a target="_blank" href="https://www.awsmerchstore.com">AWS Merch Store</a>
    * forms and surveys on AWS Pulse
    * online webinar registrations and content downloads
@@ -257,7 +305,7 @@ Follow these steps to create a profile account:
 * Cloud Support Engineer: Solve Complex Challenges
 
 
-### Social
+### Social Accounts
 
 * <a target="_blank" href="https://www.reddit.com/r/aws/">Reddit r/AWS</a>
 
@@ -295,15 +343,13 @@ Follow these steps to create a profile account:
 
    * If you want to create a <strong>stand-alone account</strong> unaffiliateed with any company, click the "Sign up" button:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a> (<a href="#StandAloneAccount">see below</a>)
    * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a>
-   * If you're using your <strong>corporate email</strong>, check with your IT department, which may use federated Single-Sign-On managed by the AWS Organizations service with additional security controls.
+   * If you're using your <strong>corporate email</strong>, check with your IT department, which may use federated Single-Sign-On. <a target="_blank" href="https://us-east-1.console.aws.amazon.com/singlesignon/home?region=us-east-1#/">IAM Identity Center</a> managed with the free AWS Organizations centralized service to enable enterprise scaling. It involves definition of Organizational Units (OUs) to specify additional security controls that enable consolidated billing, policy-based controls (SCPs), resource sharing, and organized account structures.
 
    * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
    * If you're using a gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
    * If you're using the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
    <br /><br />
 
-
-Follow these steps to create a stand-alone root account:
 
 <a name="StandAloneAccount"></a>
 
@@ -331,7 +377,12 @@ These are steps to create a stand-alone root account.
 
 1. Switch to your credit card webpage (such as CapitalOne.com) and login. PROTIP: Generate a special <strong>virtual</strong>number only for the AWS account.
 
-   <a target="_blank" href="https://www.linkedin.com/pulse/how-use-aws-free-tips-teaching-college-wong-chun-yin-cyrus-%E9%BB%83%E4%BF%8A%E5%BD%A5-/">PROTIP</a>: You need a credit card to open an account. But to limit exposure, some people provide to AWS numbers from a <a target="_blank" href="https://usa.visa.com/pay-with-visa/cards/prepaid-cards.html">pre-paid reloadable Visa</a> gift <a target="_blank" href="https://aws.amazon.com/premiumsupport/knowledge-center/accepted-payment-methods/">(debit) card</a> <a target="_blank" href="https://usa.visa.com/pay-with-visa/find-card/get-prepaid-card">pre-paid online</a> (which has an expiration date and some have a monthly service fee). The <a target="_blank" href="https://www.drawpayvisa.com/">Drawpay card</a> provides a 1% refund on purchases and a mobile app to view balances. Others provide fee-Free cash withdrawal at over 25,000 MoneyPass ATMs.
+   <a target="_blank" href="https://www.linkedin.com/pulse/how-use-aws-free-tips-teaching-college-wong-chun-yin-cyrus-%E9%BB%83%E4%BF%8A%E5%BD%A5-/">PROTIP</a>: You need a credit card to open an account. But to limit exposure, some people provide to AWS numbers from a <a target="_blank" href="https://usa.visa.com/pay-with-visa/cards/prepaid-cards.html">pre-paid reloadable Visa</a> gift <a target="_blank" href="https://aws.amazon.com/premiumsupport/knowledge-center/accepted-payment-methods/">(debit) card</a> <a target="_blank" href="https://usa.visa.com/pay-with-visa/find-card/get-prepaid-card">pre-paid online</a> (which has an expiration date and some have a monthly service fee). 
+   
+   * The Blue Card from Walmart and American Express ends June 2026
+   * Discover bank card
+   * The <a target="_blank" href="https://www.drawpayvisa.com/">Drawpay card</a> provides a 1% refund on purchases and a mobile app to view balances. Others provide fee-Free cash withdrawal at over 25,000 MoneyPass ATMs.
+   <br /><br />
 
 1. In your password manager, write down the virtual number and switch back to AWS to paste that.
 
@@ -406,8 +457,11 @@ These are steps to create a stand-alone root account.
 1. There is a link for viewing your "Recently visited" widgets.
 1. Click the icon with the three dots to the right of the "Recently visited" widget and select "Remove widget" to make room.
 
-   ## Specify Your Region settings
-
+   <a name="DefaultRegion"></a>
+   
+   ## Specify Your Default Region settings
+   
+   On the <a target="_blank" href="https://aws.amazon.com/">AWS Management Console</a> signed in as the Root user:
 1. Click "Global" at the top-right of the screen to reveal the region selector pop-up.
 1. Click "Manage Regions" at the bottom-left of the pop-up.
 1. Scroll down to "AWS Regions".
@@ -419,19 +473,55 @@ These are steps to create a stand-alone root account.
 
    ## Root account lockdown
 
-1. On a browser in the AWS Management Console, select <a target="_blank" href="https://console.aws.amazon.com/iam/home">IAM</a> (for Identity Access Management) for the list <strong>Security Status</strong>
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769293001/aws-signin-660x946_gicpxk.png"><img align="right" width="200"  alt="aws-signin-660x946.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769293001/aws-signin-660x946_gicpxk.png" /></a>
+1. On a browser in the <a target="_blank" href="https://aws.amazon.com/">AWS Management Console</a> signed in as Root user for your default region:
+1. Select "Sign in using root user email". Paste the root email and password from your password manager.
+1. Switch to your email "Verify your identity" to copy the number.
+1. Switch back to paste the number and "Verify and continue".
+
+   ### MFA setup
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769285487/aws-mfa-choices-1150x768_dd6ahv.png"><img align="right" width="300" src="aws-mfa-choices-1150x768.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769285487/aws-mfa-choices-1150x768_dd6ahv.png" /></a>
+1. Select an authenticator app unlocked by a manually entered PIN.
+
+   PROTIP: The US Supreme Court ruled that biometrics are not protected under the US 5th Amendment gurantees of self-incrimination. So police can use your biometrics without your permission.
+
+1. Click "Show QR code" to reveal it.
+1. In the Authy app, scroll down to click "+ Add Account".
+1. Scan the QR code. 
+1. Click "Save".
+1. Enter two consecutive codes from your authenticator app.
+
+
+   ### Service Search to IAM
+
+   <img alt="aws-search-1318x170.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769336376/aws-search-1318x170_bp4lwm.png" />
+1. In the AWS Console, press <strong>Option+S</strong> or click inside the Search box. Type "IAM" and press Enter for the "Identity and Access Management (IAM)" page for your region.
+
+   <a target="_blank" href="https://console.aws.amazon.com/iam/home">https://console.aws.amazon.com/iam/home</a>
+
+
+   ### Inactivate Unused STS Regions
+
+1. Click "Account settings".
+1. Scroll down to the Security Token Service (STS) Info "Endpoints" section.
+1. Select each region you won't use regularly. Confirm "Deactivate" each.   
+
+   Don't deactivate your <a href="#DefaultRegion">default region</a>.
+
+1. ???
 
    A new account will have this:
 
    ![aws-iam-status-334x256-24837](https://user-images.githubusercontent.com/300046/38159769-9adbb7b0-346c-11e8-8cb9-044eba2a18f0.jpg)
 
-   To get back to this later, click "Dashboard" on the IAM menu on the left.
+   The FAQ to this is at<br /><a target="_blank" href="https://aws.amazon.com/iam/faqs/">https://aws.amazon.com/iam/faqs</a>
 
-   The FAQ to this is at <a target="_blank" href="https://aws.amazon.com/iam/faqs/">https://aws.amazon.com/iam/faqs</a>
+1. Click "Roles" in the left menu.
+1. ???
+1. Click "Delete your root access key".
 
-10. Click on "Delete your root access key".
-
-11. Check "Don't show me this message again" and Continue to Security Credentials.
+1. Check "Don't show me this message again" and Continue to Security Credentials.
 
 
     ### Apply an IAM password policy 
@@ -448,6 +538,8 @@ These are steps to create a stand-alone root account.
 13. PROTIP: The <strong>largest Minimum password length AWS allows is 128 characters</strong>. But 1Password can generate up to only 64 characters. Practically, 22 characters is a reasonable minimum. Require at least one number (digits) and one non-alphanumeric symbol character.
 
     ![aws-iam-1password-291x259-19343](https://user-images.githubusercontent.com/300046/38160291-93acae16-3478-11e8-80ac-7d5ae3bbd5c4.jpg)
+
+    ### STS Regions
 
 14. Scroll down to "Security Token Service Regions" and deactivate regions your organization will never use.
 
@@ -514,7 +606,24 @@ These are steps to create a stand-alone root account.
    <pre>Enter MFA code: _</pre>
 
 
+   <a name="CreateIAMAccts"></a>
+
    ### Create Admin sub-account
+
+   IAM Acounts can be created using the Console, but as the number of users grows, that job gets tedius and error prone.
+ 
+   So most enterprises make use of user setup shell scripts to automate the process.
+
+   Using a program to automate ensures traceability of changes in coding and data.
+
+   Consider the <strong>aws-iam-setup.sh</strong> from my repo
+
+   https://github.com/wilsonmar/mac-setup
+
+   A description of steps in the script is at the top of the script file.
+
+
+### Manual setup steps
 
 1. In the <a target="_blank" href="https://console.aws.amazon.com/iam/home#/home">IAM page</a>
    click "Create individual IAM users". What it says is important:
@@ -632,8 +741,6 @@ These are steps to create a stand-alone root account.
 1. AWS customers create and use a different AWS account for each environment (development, testing, training, production, migration, etc.). IaC (Infrastructure as Code) allows resource configurations and statuses to be compared across multiple accounts for troubleshooting application issues. 
 
 1. PROTIP: Passage of access responsibility should be recorded with time stamps and signatures of the parties involved, with a witness present.
-   
-
 
 
 <a name="EmailSystem"></a>
@@ -672,27 +779,19 @@ Within an organization, it's common for a separate account to be created for eac
 3. Enable Face ID on iPhones.
 4. Provide email, CAPTCHA security, password, email verification code. Success is seeing this:
 
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"><img alt="aws-mobile-iOS-1170x2532.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"></a>
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"><img alt="aws-mobile-iOS-1170x2532.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"></a>
 
 
-<hr />
+   ### Deactivate regions not used
 
+   On the same "Account settings" page:
 
-    ### Deactivate regions not used
+1. Scroll down to "Security Token Service Regions" and deactivate regions your organization are not using.
 
-    On the same "Account settings" page:
+   PROTIP: Select a Region where most of your target users are located.
+   New services are usually restricted to one region, such as N. Virginia or N. California where AWS does development work.
 
-14. Scroll down to "Security Token Service Regions" and deactivate regions your organization are not using.
-
-    PROTIP: Select a Region where most of your target users are located.
-    New services are usually restricted to one region, such as N. Virginia or N. California where AWS does development work.
-
-
-    <a name="SignInAdmin"></a>
-
-    ### Admin Sign In
-
-1. Sign out and sign in again to the AWS Console using the newly created admin sub-account.
+   This task can be <a target="_blank" href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html">automated with CLI script</a> using a custom list of regions.
 
 
    ### Quick Access icons
@@ -702,11 +801,104 @@ Within an organization, it's common for a separate account to be created for eac
 1. Click the push-pin icon.
 1. One by one, drag the icon on the list and drop it on the top black menu to the left of the orange push pin. If you don't see the black menu, pause just under the browser URL for the browser to automatically scroll.
 
-   PROTIP: The services most often used are IAM, VPC, EC2, S3
+   PROTIP: The services most often used are IAM, VPC, EC2, S3.
 
 1. If you have good memory of what icons mean, change the Settings to "Icons only".
 
    <img alt="aws-onboarding-icons-only-277x112-9365.jpg" src="https://user-images.githubusercontent.com/300046/40741420-c21d19b0-6408-11e8-9c8d-84c5afd9a8bd.jpg">
+
+
+
+## Icons and Diagrams #
+
+<a target="_blank" href="https://www.processon.com/">
+ProcessOn.com</a>
+provides a free on-line tool to draw diagrams such as
+<a target="_blank" href="https://www.processon.com/view/56e785b1e4b05387d0391d33">
+this</a>
+
+At <a target="_blank" href="https://aws.amazon.com/architecture/icons/">
+architecture/icons</a> Amazon provides a sample .PPTX (PowerPoint 2010+) file
+(AWS_Simple_Icons_PPT_v16.2.22.zip). Lines used to illustrate the hierarchy:
+<amp-img width="238" height="183" alt="aws simple icons-238x183-63"
+layout="responsive" src="https://cloud.githubusercontent.com/assets/300046/16263922/ed4eb538-3833-11e6-8a22-b72cb8f12c32.jpg"></amp-img>
+PROTIP: Use different colors for lines and text to reduce visual confusion.
+
+You can also download a zip containing .png and .svg files of icons
+(AWS_Simple_Icons_EPS-SVG_v16.2.22.zip).
+
+
+
+    ### Create IAM Users
+
+36. Click Users on the left menu.
+36. Click Add User.
+36. Specify User Name. For example: user1@myco.com
+
+    PROTIP: Use underscores to separate words in IAM User Names rather than spaces.
+
+36. Check "Programmatic Access".
+36. Uncheck "User must create a new password at next sign-in".
+36. Click "Next: Permissions".
+36. Click "Attach existing policies directly" for the first user.
+
+    PROTIP: The policy attached depends on what the user will be allowed to do.
+
+37. Send to each user the AccountId, UserName using a different mode of communication than the  password.
+37. User signs in using the credentials Account Id, the UserName, and password
+37. Click "Send email"
+
+    PROTIP: Send credentials to your <strong>alternate email</strong> rather than to a cloud drive (Amazon, Google, Box, etc.); an email account that you setup with a fake birthdate and other personal information; one you never give out to anyone.
+
+
+<hr />
+
+## Roles for federated access
+
+An analogy is a private ball where royal guests arrive wearing formal attire present an invitation card to enter.
+The fancy outfits with sashes and medals are kinda like group permissions that confer permissions to someone.
+The invitation card is kinda like IAM roles which are only for specific times.
+
+The host of the party is kinda like AWS's STS (Security Token Service) identify broker
+which grants access tokens to enable services to "assume" a role to perform on AWS services.
+
+IAM roles are used by computer programs reaching through Enterprise identity federation into Microsoft Active Directory
+using SAML (Security Assertion Markup Language) or through Web identity federation into Google, Facebook, Amazon, etc.
+
+IAM roles issue keys are valid for short durations, making them a more secure way to grant access.
+
+An IAM user needs to be granted two distinct permissions to launch EC2 instances with roles:
+
+   * Permission to launch EC2 instances.
+   * Permission to associate an IAM role with EC2 instances.
+   <br /><br />
+
+
+   <a name="SignInAdmin"></a>
+
+   ### Admin Sign In
+
+1. Sign out and sign in again to the AWS Console using the newly created admin sub-account.
+
+
+<a name="aws-info"></a>
+
+## aws-info.sh
+
+1. View the description of my aws-info.sh shell script at:
+
+   https://github.com/wilsonmar/mac-setup/blob/main/aws-info.sh
+
+   ```
+   chmod +x aws-info.sh
+   ./aws-info.sh -v
+   ```
+
+1. Display all information about the logged-in account by running the shell script:
+   ```
+   chmod +x aws-info.sh
+   ./aws-info.sh -all
+   ```
 
 
 <hr />
@@ -726,9 +918,13 @@ Within an organization, it's common for a separate account to be created for eac
    <img alt="aws-svcs-1of2-1840x3168.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769243224/aws-svcs-1of2-1840x3168_obgjyb.png" /><br />
    <img alt="aws-svcs-2of2.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769243329/aws-svcs-2of2_gegmxf.png" />
 
-1. DOTHIS: The <a target="_blank" href="https://chrome.google.com/webstore/detail/aws-services/jdkmpaoglhnpimfciphnednpkfbnphkp">Chrome browser extension "AWS Services"</a> provides a list of services by name and category so you can click it to get to Console and documentation for each service.
+1. PROTIP: Add the URL to Bookmarks tab named:
 
-1. DOTHIS: Read the User Guide for each service at:
+   <tt>Svcs us-east-1</tt>
+
+1. PROTIP: DOTHIS: The <a target="_blank" href="https://chrome.google.com/webstore/detail/aws-services/jdkmpaoglhnpimfciphnednpkfbnphkp">Chrome browser extension "AWS Services"</a> provides a list of services by name and category so you can click it to get to Console and documentation for each service.
+
+1. PROTIP: DOTHIS: Read the User Guide for each service at:
 
    <a target="_blank" href="https://aws.amazon.com/documentation/">
    https://aws.amazon.com/documentation</a>
@@ -837,7 +1033,7 @@ Terraform can manage existing and popular service providers as well as custom in
 1. Click on your email at the upper-right corner to select "Security credentials" for the IAM page.
 1. Scroll to click "Create Access keys", "Command Line Interface".
 1. Check "I understand", "Next".
-1. Construct a Description tag value  that satisfies your organization's naming conventions.
+1. Construct a Description tag value that satisfies your organization's naming conventions.
 1. Click "Create access key".
 
 1. Switch to a Terminal to issue <tt>aws configure</tt> to specify the Access Key ID and Secret Access Key.
@@ -926,18 +1122,18 @@ Foundational Policy library</a> is at <a target="_blank" href="https://github.co
 
 <a name="S3BucketNames"></a>
 
-### Claim S3 Bucket names
+## Claim S3 Bucket names
 
-   The AWS Account Administrator has a fudiciary responsibility to secure 
-   Intellectual Property assets.
+The AWS Account Administrator has a fudiciary responsibility to secure 
+Intellectual Property (IP) assets.
 
-   S3 Bucket names are universally unique among all AWS customers.
-   So just as there are domain name squatters who register and sit on .com host names
-   for sale at high prices to those who actually use the names,
-   the administrator of root accounts for an organization should
-   register your organization's brand names before others get them first.
+S3 Bucket names are universally unique among all AWS customers.
+So just as there are domain name squatters who register and sit on .com host names
+for sale at high prices to those who actually use the names,
+the administrator of root accounts for an organization should
+register your organization's brand names before others get them first.
 
-   To create a bucket for each host name registered on GoDaddy, Google Domains, etc.
+To create a bucket for each host name registered on GoDaddy, Google Domains, etc.
 
 4. Click S3 from among services.
 5. Click the blue "Create bucket" button.
@@ -951,7 +1147,6 @@ Foundational Policy library</a> is at <a target="_blank" href="https://github.co
 10. Click "Next" to manage users.
 11. Click "Create Bucket".
 
-QUESTION: Terraform?
 
 <hr />
 
@@ -981,9 +1176,6 @@ Alternately, you can refactor to send a Slack message instead of email (not show
    --role-session-name "RoleSession1" \
    --profile IAM-user-name > assume-role-output.txt
 </pre>
-
-----------------
-
 
 https://aws.amazon.com/blogs/security/how-to-rotate-access-keys-for-iam-users/
 
@@ -1045,33 +1237,28 @@ Additionally, add conditions to the policy that further restrict access, such as
 
 <a name="IAM-CLI"></a>
 
-### IAM CLI #
+## IAM CLI #
 
    AWS Identity and Access Management (IAM) controls access to
    users, groups, roles, and policies.
 
-6. List users:
-
-   <pre><strong>
+1. List users:
+   ```
    aws iam list-users --query Users[*].UserName
-   </strong></pre>
+   ```
 
-8. List groups which the user belongs to :
-
-   <tt><strong>
+1. List groups which the user belongs to :
+   ```
    aws iam list-groups-for-user \-\-username ???
-   </strong></tt>
+   ```
 
-9. Create a new user named "MyUser":
-
-   <pre>
+1. Create a new user named "MyUser":
+   ```
    aws iam create-user --user-name MyUser
-   </pre>
-
-   The response is:
-
+   ```
+   The response:
    <pre>
-{
+   {
     "User": {
         "UserName": "MyUser",
         "Path": "/",
@@ -1079,19 +1266,20 @@ Additionally, add conditions to the policy that further restrict access, such as
         "UserId": "AKIAIOSFODNN7EXAMPLE",
         "Arn": "arn:aws:iam::123456789012:user/MyUser"
     }
-}</pre>
+   }</pre>
 
 1. Add the user to the group:
-
-   <pre>aws iam add-user-to-group --user-name MyUser --group-name MyIamGroup</pre>
+   ```
+   aws iam add-user-to-group --user-name MyUser --group-name MyIamGroup
+   ```
 
 1. To verify that the MyIamGroup group contains the MyUser, use the get-group command:
+   ```
+   aws iam get-group --group-name MyIamGroup
+   ```
+   The response:
 
-    <pre>aws iam get-group --group-name MyIamGroup</pre>
-
-    The response:
-
-    <pre>
+   <pre>
     {
         "Group": {
             "GroupName": "MyIamGroup",
@@ -1111,7 +1299,6 @@ Additionally, add conditions to the policy that further restrict access, such as
         ],
         "IsTruncated": "false"
     }</pre>
-
 
 
 ## Linux AMIs #
@@ -1137,26 +1324,6 @@ https://gist.github.com/mikepfeiffer/
    <pre>aws Get-AWSCredentials -ListProfiles
    </pre>
 
-
-
-## Diagrams #
-
-<a target="_blank" href="https://www.processon.com/">
-ProcessOn.com</a>
-provides a free on-line tool to draw diagrams such as
-<a target="_blank" href="https://www.processon.com/view/56e785b1e4b05387d0391d33">
-this</a>
-
-At <a target="_blank" href="https://aws.amazon.com/architecture/icons/">
-architecture/icons</a> Amazon provides a sample .PPTX (PowerPoint 2010+) file
-(AWS_Simple_Icons_PPT_v16.2.22.zip). Lines used to illustrate the hierarchy:
-<amp-img width="238" height="183" alt="aws simple icons-238x183-63"
-layout="responsive" src="https://cloud.githubusercontent.com/assets/300046/16263922/ed4eb538-3833-11e6-8a22-b72cb8f12c32.jpg"></amp-img>
-PROTIP: Use different colors for lines and text to reduce visual confusion.
-
-
-You can also download a zip containing .png and .svg files of icons
-(AWS_Simple_Icons_EPS-SVG_v16.2.22.zip).
 
 
 
@@ -1202,6 +1369,8 @@ Ryan Scott Brown @ryan_sb
 
 Matt Wood, @mza, Product Strategy @ Amazon Web Services
 
+<a target="_blank" href="https://www.linkedin.com/in/schematical/">Matt Lea</a> of <a target="_blank" href="https://schematical.itch.io/techdebt">schematical.com</a>, <a target="_blank" href="http://cloudwargames.com/">cloudwargames.com</a>
+   * <a target="_blank" href="https://learning.oreilly.com/course/zero-to-hero/0642572107789/">video course "Zero to Hero on AWS Security: An Animated Guide to Security in the Cloud" Apr 2025</a> referencing https://github.com/wilsonmar/sc-terraform/tree/main/_course
 
 
 ### BaSA (Be a Solutions Architect)
@@ -1396,51 +1565,6 @@ AWS CLI Command Reference
 
     https://docs.aws.amazon.com/iot/latest/developerguide/create-iot-policy.html
 
-
-
-    ### Create IAM Users
-
-36. Click Users on the left menu.
-36. Click Add User.
-36. Specify User Name. For example: user1@myco.com
-
-    PROTIP: Use underscores to separate words in IAM User Names rather than spaces.
-
-36. Check "Programmatic Access".
-36. Uncheck "User must create a new password at next sign-in".
-36. Click "Next: Permissions".
-36. Click "Attach existing policies directly" for the first user.
-
-    PROTIP: The policy attached depends on what the user will be allowed to do.
-
-37. Send to each user the AccountId, UserName using a different mode of communication than the  password.
-37. User signs in using the credentials Account Id, the UserName, and password
-37. Click "Send email"
-
-    PROTIP: Send credentials to your <strong>alternate email</strong> rather than to a cloud drive (Amazon, Google, Box, etc.); an email account that you setup with a fake birthdate and other personal information; one you never give out to anyone.
-
-
-<hr />
-
-## Roles for federated access
-
-An analogy is a private ball where royal guests arrive wearing formal attire present an invitation card to enter.
-The fancy outfits with sashes and medals are kinda like group permissions that confer permissions to someone.
-The invitation card is kinda like IAM roles which are only for specific times.
-
-The host of the party is kinda like AWS's STS (Security Token Service) identify broker
-which grants access tokens to enable services to "assume" a role to perform on AWS services.
-
-IAM roles are used by computer programs reaching through Enterprise identity federation into Microsoft Active Directory
-using SAML (Security Assertion Markup Language) or through Web identity federation into Google, Facebook, Amazon, etc.
-
-IAM roles issue keys are valid for short durations, making them a more secure way to grant access.
-
-An IAM user needs to be granted two distinct permissions to launch EC2 instances with roles:
-
-   * Permission to launch EC2 instances.
-   * Permission to associate an IAM role with EC2 instances.
-   <br /><br />
 
 STS returns:
 
@@ -1667,7 +1791,7 @@ https://awslabs.github.io/mcp/
 https://www.awscloudinstitute.com/ for needs-based grants for the $210/month per course over 27 courses
 https://aws.amazon.com/training/aws-cloud-institute/resource-hub/
 
-## Amplify
+## AWSAmplify
 
 glue
 
@@ -1677,4 +1801,70 @@ https://www.youtube.com/watch?v=7-7ugqAxgxI
 
 
 
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
+
+## Install granted to assume role
+
+https://docs.commonfate.io/granted/getting-started
+
+1. Install Granted CLI:
+   ```
+   brew tap common-fate/granted
+   brew install common-fate/granted/granted
+   ``` 
+   <pre>
+   ✔︎ JSON API cask.jws.json                                            Downloaded   15.3MB/ 15.3MB
+   ✔︎ JSON API formula.jws.json                                         Downloaded   32.0MB/ 32.0MB
+   ==> Tapping common-fate/granted
+   Cloning into '/opt/homebrew/Library/Taps/common-fate/homebrew-granted'...
+   remote: Enumerating objects: 772, done.
+   remote: Counting objects: 100% (160/160), done.
+   remote: Compressing objects: 100% (120/120), done.
+   remote: Total 772 (delta 39), reused 0 (delta 0), pack-reused 612 (from 1)
+   Receiving objects: 100% (772/772), 108.62 KiB | 427.00 KiB/s, done.
+   Resolving deltas: 100% (192/192), done.
+   Tapped 2 formulae (14 files, 143.9KB).
+   Warning: Calling `depends_on macos: :high_sierra` is deprecated! There is no replacement.
+   Please report this issue to the powershell/homebrew-tap tap (not Homebrew/* repositories):
+   /opt/homebrew/Library/Taps/powershell/homebrew-tap/Formula/powershell.rb:33
+   &nbsp;
+   ==> Fetching downloads for: granted
+   ✔︎ Bottle Manifest granted (0.38.0)                                  Downloaded    7.6KB/  7.6KB
+   ✔︎ Bottle granted (0.38.0)                                           Downloaded   10.9MB/ 10.9MB
+   ==> Pouring granted--0.38.0.arm64_sequoia.bottle.2.tar.gz
+   🍺  /opt/homebrew/Cellar/granted/0.38.0: 9 files, 36.9MB
+   ==> Running `brew cleanup granted`...
+   Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+   Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+   </pre>
+
+1. Verify install of granted's assume command:
+   ```
+   granted -v
+   ```
+   <pre>
+   Granted version: 0.38.0
+   </pre>
+
+1. Use Granted to switch:
+   ```
+   assume role-a 
+   ```
+   <pre>
+   [role-a] session credentials will expire 2026-02-21 16:47:33 +0000 GMT
+   </pre>
+
+   https://granted.dev/browsers
+
+
+## Referebces
+
+   https://www.oreilly.com/videos/zero-to-hero/0642572107789/
+   OReilly Course: "Zero to Hero  on AWS Security: An Animated Guide to Security in the Cloud"
+   Apr 2025
+   by Matt Lea of https://schematical.com
+
+
+
+<hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
