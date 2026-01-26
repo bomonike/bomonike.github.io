@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-01-26"
-lastchange: "26-01-26 v1000 sh for new user :aws-onboarding.md"
+lastchange: "26-01-26 v101 sh for new user :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -608,19 +608,27 @@ These are steps to create a stand-alone root account.
 
    <a name="CreateIAMAccts"></a>
 
-   ### Create Admin sub-account
+## Create Admin sub-account
 
-   IAM Acounts can be created using the Console, but as the number of users grows, that job gets tedius and error prone.
- 
-   So most enterprises make use of user setup shell scripts to automate the process.
+IAM Acounts can be created using the Console, but as the number of users grows, that job gets tedius and error prone.
 
-   Using a program to automate ensures traceability of changes in coding and data.
+So most enterprises make use of user setup shell scripts to automate the process.
 
-   Consider the <strong>aws-iam-setup.sh</strong> from my repo
+Using a program to automate ensures traceability of changes in coding and data.
 
-   https://github.com/wilsonmar/mac-setup
+Consider the <strong>aws-iam-setup.sh</strong> from my repo at:
 
-   A description of steps in the script is at the top of the script file.
+<a target="_blank" href="https://github.com/wilsonmar/mac-setup/blob/main/aws-iam-setup.sh">https://github.com/wilsonmar/mac-setup/blob/main/aws-iam-setup.sh</a>
+
+A description of sections in the script (at the top of the script file):
+
+   1. SET UP SPECIFIC PERMISSIONS
+   2. CREATE MULTIPLE USERS
+   3. SECURITY BEST PRACTICES
+   4. PROGRAMMATIC ACCESS SETUP
+   5. ORGANIZATIONAL SETUP
+   UTILITY FUNCTIONS
+   <br /><br />
 
 
 ### Manual setup steps
