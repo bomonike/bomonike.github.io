@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-01-26"
-lastchange: "26-01-26 v101 sh for new user :aws-onboarding.md"
+lastchange: "26-01-26 v102 flowchart :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -114,9 +114,11 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 1. Click the "Business" and "Enterprise" buttons in the pop-up to see sample volume pricing tiers.
 
 
-## flowchart
+<a name="Flowchart"></a>
 
-Here is a flowchart of essential corporate IT ecosystem movie:
+## Flowchart
+
+1. Click on the flowchart for a movie about the steps to establish an essential corporate IT ecosystem:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png"><img alt="it-ecosystem-1466x732.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png" /></a>
 
@@ -132,6 +134,10 @@ Here is a flowchart of essential corporate IT ecosystem movie:
 
 1. Due to the impact thieves have had, there is an Archivist who catalogs, backs up, restor. In many companies, to reduce the "blast radius" of hacks, Archivists are the only ones who can <strong>delete</strong> data.
 1. System Administrators and some End-users manage the creation and use of logs, metrics, dashboards, reports, and alerts based on data.
+
+RECAP static flowchart:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png"><img alt="it-ecosystem-1466x732.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png" /></a>
 
 
 <a name="Preparations"></a>
