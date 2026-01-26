@@ -120,7 +120,7 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 
 1. Click on the flowchart for a movie about the steps to establish an essential corporate IT ecosystem:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png"><img alt="it-ecosystem-1466x732.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769457654/it-ecosystem-1838x914_k7khfr.png"><img alt="it-ecosystem-1838x914.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769457654/it-ecosystem-1838x914_k7khfr.png" /></a>
 
 1. The IT department creates laptops for the rest of the organization that are installed with secure DNS for Quad9, Password Manager, and other utilities.
 1. People in the Payables department are fudiciaries of the AWS Root Account, with the corporate credit card used to pay for billings.
@@ -137,7 +137,7 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 
 RECAP static flowchart:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png"><img alt="it-ecosystem-1466x732.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769454010/it-ecosystem-1466x732_hllm2j.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769457654/it-ecosystem-1838x914_k7khfr.png"><img alt="it-ecosystem-1838x914.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769457654/it-ecosystem-1838x914_k7khfr.png" /></a>
 
 
 <a name="Preparations"></a>
@@ -636,6 +636,10 @@ A description of sections in the script (at the top of the script file):
    UTILITY FUNCTIONS
    <br /><br />
 
+   References:
+   * <a target="_blank" href="https://www.oreilly.com/videos/zero-to-hero/0642572107789/">OReilly Course</a>: "Zero to Hero  on AWS Security: An Animated Guide to Security in the Cloud"
+   Apr 2025 by Matt Lea of https://schematical.com
+
 
 ### Manual setup steps
 
@@ -676,6 +680,7 @@ A description of sections in the script (at the top of the script file):
 10. Click "Next: Review".
 11. Click "Create user".
 
+zzz
 
     ### Inform user of credentials
 
@@ -823,25 +828,6 @@ Within an organization, it's common for a separate account to be created for eac
 
 
 
-## Icons and Diagrams #
-
-<a target="_blank" href="https://www.processon.com/">
-ProcessOn.com</a>
-provides a free on-line tool to draw diagrams such as
-<a target="_blank" href="https://www.processon.com/view/56e785b1e4b05387d0391d33">
-this</a>
-
-At <a target="_blank" href="https://aws.amazon.com/architecture/icons/">
-architecture/icons</a> Amazon provides a sample .PPTX (PowerPoint 2010+) file
-(AWS_Simple_Icons_PPT_v16.2.22.zip). Lines used to illustrate the hierarchy:
-<amp-img width="238" height="183" alt="aws simple icons-238x183-63"
-layout="responsive" src="https://cloud.githubusercontent.com/assets/300046/16263922/ed4eb538-3833-11e6-8a22-b72cb8f12c32.jpg"></amp-img>
-PROTIP: Use different colors for lines and text to reduce visual confusion.
-
-You can also download a zip containing .png and .svg files of icons
-(AWS_Simple_Icons_EPS-SVG_v16.2.22.zip).
-
-
 
     ### Create IAM Users
 
@@ -863,6 +849,155 @@ You can also download a zip containing .png and .svg files of icons
 37. Click "Send email"
 
     PROTIP: Send credentials to your <strong>alternate email</strong> rather than to a cloud drive (Amazon, Google, Box, etc.); an email account that you setup with a fake birthdate and other personal information; one you never give out to anyone.
+
+
+
+## Installing, updating AWS CLI version 2
+
+AWS CLI versions 1 and 2 use the same aws command name. 
+
+If you have both versions installed, your computer uses the…docs.aws.amazon.com
+
+The installer automatically creates a symlink in a folder in your PATH which links to the main program in the installation folder you chose:
+
+1. Identify the version and location of the installed version:
+   ```
+   ls -al $(which aws)
+   ```
+   Response:
+   <pre>lrwxr-xr-x  1 johndoe  admin  31 Jan 24 02:07 /opt/homebrew/bin/aws -> ../Cellar/awscli/2.33.6/bin/aws</pre>
+
+1. Upgrade to latest version:
+   ```
+   brew upgrade awscli
+   ```
+
+1. Verify install:
+   ```
+   aws --version
+   ```
+   Sample response (at time of writing):
+   <pre>aws-cli/2.33.6 Python/3.13.11 Darwin/24.6.0 source/arm64</pre>
+   Previously:
+   <pre>aws-cli/1.20.3 Python/3.7.3 Darwin/18.7.0 botocore/1.21.3</pre>
+
+
+   <a name="Configure"></a>
+
+   ## AWS configure 
+
+1. To prompt acceptance or override of default AWS ACCESS KEY ID, AWS SECRET ACCESS KEY, and region saved as a plain-text file at~/.aws/credentials</tt>
+
+   <tt>aws configure</tt>
+
+    Prompt:
+   
+   <pre>AWS Access Key ID [None]: </pre>
+
+  Sample contents:
+
+   <pre>[default]
+aws_access_key_id = ABCDEFGHIJKLMNOPQRST
+aws_secret_access_key = 123456786iJsvzQbkIlDiFtBh6DrPzIw8r7hVb35
+[py-ec2–1]
+aws_access_key_id = ABCDEFGHIJKLMNOPQRST
+aws_secret_access_key = 123456782Nwk156aPF0SxZ8KGY+RrhEbq3AIHUSS
+   </pre>
+
+   BTW Progress toward AWS providing a more secure approach is at https://github.com/aws/aws-sdk/issues/41
+
+   Meanwhile, to avoid having credentials in clear text, store them in encrypted form.
+
+
+
+Instead of doing what other clouds do (an <tt>aws login</tt> command which prompt for a user name and password), aws commands reference a specifically-named file at <tt>$HOME/.aws/credentials</tt> created by command <tt>aws configure</tt>.
+
+The <tt>aws configure</tt> command creates that file after prompting for access key identifiers (AKIDs) to an AWS account. Press Enter to accept the value previously defined:
+
+   * AWS Access Key ID [****************L5ZQ]:
+   * AWS Secret Access Key [****************+1MD]:
+   <br /><br />
+
+Stored with credentials are also:
+
+   * Default region name [us-east-1]: 
+   * Default output format [json]:
+   <br /><br />
+
+To create AKID credentials, AWS asks that account owners to manually use the <a target="_blank" href="https://aws.amazon.com/iam/">IAM GUI</a> to disable programmatic access to their <strong>root</strong> (email) account and protect it with <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html">MFA (Multi-factor Authentication)</a>
+
+The AWS Management Console provides a way for account owners (administrators) to manually create <strong>IAM user accounts</strong> for programmatic access.
+
+For programmatic access to resources running inside AWS, the best practice is to use IAM roles which are not associated with a specific user or group. Any trusted entity can <strong>assume the role</strong> to perform a specific business task. A resource can be granted access without hardcoding an access key ID and secret access key into the configuration file. For example, you can grant an Amazon Elastic Compute Cloud (EC2) instance access to an Amazon Simple Storage Service (Amazon S3) bucket by attaching a role with a policy that defines this access to the EC2 instance. IAM dynamically manages the credentials for you with temporary credentials it rotates automatically.
+
+Outside AWS (on a Terminal/Console on your laptop), a dedicated service account should be created for each use case with only the permissions needed to limit the "blast radius" if credentials are compromised. For example, if a monitoring tool and a release management tool both require access to your AWS environment, create two separate service accounts with two separate policies that define the minimum set of permissions for each tool.
+
+
+
+CAUTION: The problem with IAM user account secrets is that they are <strong>long-running secrets</strong> stored in the credentials file in <strong>clear-text</strong>. Someone who clicks on a roque link on a phishing email would expose that file for theft. Many who lose control of their AWS credentials see bills from Amazon of thousands of dollars in unauthorized use (mining Bitcoins).
+
+CloudAcademy.com and many enterprises create a centrally-administered
+https://aws.amazon.com/code/token-vending-machine-for-identity-registration-sample-java-web-application/
+"Vending Machine" application to generate and dispense <strong>temporary</strong> IAM user accounts with access keys. Such credentials are valid for only 12 hours or less. 
+
+But that requires tedious repeated manual effort.
+Securing temporary accounts with MFA adds to that toil.
+
+
+
+<hr />
+
+<a name="SetupGitSigning"></a>
+
+## Setup Git-signing
+
+1. Install GPG locally using my instructions at:
+
+   <a target="_blank" href="https://wilsonmar.github.io/git-signing">https://wilsonmar.github.io/git-signing</a>
+
+1. Generate encrypted file "credentials.gpg" from file "credentials". See:
+
+   https://wilsonmar.github.io/git-signing/#bonus-encrypting-whole-files-using-gpg
+
+1. To be able to retrieve secrets in case you lose your laptop, for backup make a copy of the secret file in encrypted format, somewhere else.
+
+1. Make a backup of GPG keys somewhere else (in a key vault) so you can decrypt. One way is to store your private key in a Yubikey USB chip you plug into your laptop.
+
+1. Using the GPG private key, encrypt the aws/credentials file to a new credentials.gpg file also in the same ~/.aws folder.
+
+1. Delete the file at ~/.aws/credentials
+
+1. Download my shell script:
+
+   <pre>curl "https://raw.githubusercontent.com/wilsonmar/DevSecOps/main/bash/awslogin.sh" -o "awslogin.sh"</pre>
+
+   NOTE: It works similar to https://github.com/99designs/aws-vault, but with no external dependencies (other than GPG). However, aws-vault supports several vaulting backends.
+
+1. Run the script to login based on the encrypted credential.gpg file:
+   ```
+   source ~/awslogin.sh
+   ```
+
+   Alternately, run the script to use the "susan" profile defined:
+   ```
+   source ~/awslogin.sh -p susan
+   ```
+
+   The script unencrypts the gpg file, invokes aws login, then removes the unencrypted file.
+   
+   BONUS: To parse variables from within an AWS credentials file, consider:
+   GitHub - whereisaaron/get-aws-profile-bash: Fetch AWS keys and secrets from ~/.aws/credentials…
+
+   This is a pure bash script that can parse and extract AWS credentials (key id and secret) from a ~/.aws/credentials…github.com
+
+1. PROTIP: If you use it, remember to clear out variables after usage, so they don't linger in memory.
+
+
+TODO: Put each AWS CLI command in a script at
+https://medium.com/circuitpeople/aws-cli-with-jq-and-bash-9d54e2eabaf1
+by Lee Harding
+
+https://aws.amazon.com/cli/
 
 
 <hr />
@@ -942,6 +1077,25 @@ An IAM user needs to be granted two distinct permissions to launch EC2 instances
 
    <a target="_blank" href="https://aws.amazon.com/documentation/">
    https://aws.amazon.com/documentation</a>
+
+
+### Icons and Diagrams #
+
+<a target="_blank" href="https://www.processon.com/">
+ProcessOn.com</a>
+provides a free on-line tool to draw diagrams such as
+<a target="_blank" href="https://www.processon.com/view/56e785b1e4b05387d0391d33">
+this</a>
+
+At <a target="_blank" href="https://aws.amazon.com/architecture/icons/">
+architecture/icons</a> Amazon provides a sample .PPTX (PowerPoint 2010+) file
+(AWS_Simple_Icons_PPT_v16.2.22.zip). Lines used to illustrate the hierarchy:
+<amp-img width="238" height="183" alt="aws simple icons-238x183-63"
+layout="responsive" src="https://cloud.githubusercontent.com/assets/300046/16263922/ed4eb538-3833-11e6-8a22-b72cb8f12c32.jpg"></amp-img>
+PROTIP: Use different colors for lines and text to reduce visual confusion.
+
+You can also download a zip containing .png and .svg files of icons
+(AWS_Simple_Icons_EPS-SVG_v16.2.22.zip).
 
 
 <a name="FreeSvcs"></a>
@@ -1609,154 +1763,6 @@ After obtaining an AWS Access Key ID, AWS Secret Access Key for your account (de
 use the credentials on your local machine (laptop), install the AWS CLI locally. Although there is a "awscli" Homebrew formula, but it has been deprecated. So follow this doc to manually install a pkg file for awscli2:
 
 
-## Installing, updating AWS CLI version 2
-
-AWS CLI versions 1 and 2 use the same aws command name. 
-
-If you have both versions installed, your computer uses the…docs.aws.amazon.com
-
-The installer automatically creates a symlink in a folder in your PATH which links to the main program in the installation folder you chose:
-
-1. Identify the version and location of the installed version:
-   ```
-   ls -al $(which aws)
-   ```
-   Response:
-   <pre>lrwxr-xr-x  1 johndoe  admin  31 Jan 24 02:07 /opt/homebrew/bin/aws -> ../Cellar/awscli/2.33.6/bin/aws</pre>
-
-1. Upgrade to latest version:
-   ```
-   brew upgrade awscli
-   ```
-
-1. Verify install:
-   ```
-   aws --version
-   ```
-   Sample response (at time of writing):
-   <pre>aws-cli/2.33.6 Python/3.13.11 Darwin/24.6.0 source/arm64</pre>
-   Previously:
-   <pre>aws-cli/1.20.3 Python/3.7.3 Darwin/18.7.0 botocore/1.21.3</pre>
-
-
-   <a name="Configure"></a>
-
-   ## AWS configure 
-
-1. To prompt acceptance or override of default AWS ACCESS KEY ID, AWS SECRET ACCESS KEY, and region saved as a plain-text file at~/.aws/credentials</tt>
-
-   <tt>aws configure</tt>
-
-    Prompt:
-   
-   <pre>AWS Access Key ID [None]: </pre>
-
-  Sample contents:
-
-   <pre>[default]
-aws_access_key_id = ABCDEFGHIJKLMNOPQRST
-aws_secret_access_key = 123456786iJsvzQbkIlDiFtBh6DrPzIw8r7hVb35
-[py-ec2–1]
-aws_access_key_id = ABCDEFGHIJKLMNOPQRST
-aws_secret_access_key = 123456782Nwk156aPF0SxZ8KGY+RrhEbq3AIHUSS
-   </pre>
-
-   BTW Progress toward AWS providing a more secure approach is at https://github.com/aws/aws-sdk/issues/41
-
-   Meanwhile, to avoid having credentials in clear text, store them in encrypted form.
-
-
-
-Instead of doing what other clouds do (an <tt>aws login</tt> command which prompt for a user name and password), aws commands reference a specifically-named file at <tt>$HOME/.aws/credentials</tt> created by command <tt>aws configure</tt>.
-
-The <tt>aws configure</tt> command creates that file after prompting for access key identifiers (AKIDs) to an AWS account. Press Enter to accept the value previously defined:
-
-   * AWS Access Key ID [****************L5ZQ]:
-   * AWS Secret Access Key [****************+1MD]:
-   <br /><br />
-
-Stored with credentials are also:
-
-   * Default region name [us-east-1]: 
-   * Default output format [json]:
-   <br /><br />
-
-To create AKID credentials, AWS asks that account owners to manually use the <a target="_blank" href="https://aws.amazon.com/iam/">IAM GUI</a> to disable programmatic access to their <strong>root</strong> (email) account and protect it with <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html">MFA (Multi-factor Authentication)</a>
-
-The AWS Management Console provides a way for account owners (administrators) to manually create <strong>IAM user accounts</strong> for programmatic access.
-
-For programmatic access to resources running inside AWS, the best practice is to use IAM roles which are not associated with a specific user or group. Any trusted entity can <strong>assume the role</strong> to perform a specific business task. A resource can be granted access without hardcoding an access key ID and secret access key into the configuration file. For example, you can grant an Amazon Elastic Compute Cloud (EC2) instance access to an Amazon Simple Storage Service (Amazon S3) bucket by attaching a role with a policy that defines this access to the EC2 instance. IAM dynamically manages the credentials for you with temporary credentials it rotates automatically.
-
-Outside AWS (on a Terminal/Console on your laptop), a dedicated service account should be created for each use case with only the permissions needed to limit the "blast radius" if credentials are compromised. For example, if a monitoring tool and a release management tool both require access to your AWS environment, create two separate service accounts with two separate policies that define the minimum set of permissions for each tool.
-
-
-
-CAUTION: The problem with IAM user account secrets is that they are <strong>long-running secrets</strong> stored in the credentials file in <strong>clear-text</strong>. Someone who clicks on a roque link on a phishing email would expose that file for theft. Many who lose control of their AWS credentials see bills from Amazon of thousands of dollars in unauthorized use (mining Bitcoins).
-
-CloudAcademy.com and many enterprises create a centrally-administered
-https://aws.amazon.com/code/token-vending-machine-for-identity-registration-sample-java-web-application/
-"Vending Machine" application to generate and dispense <strong>temporary</strong> IAM user accounts with access keys. Such credentials are valid for only 12 hours or less. 
-
-But that requires tedious repeated manual effort.
-Securing temporary accounts with MFA adds to that toil.
-
-
-
-<hr />
-
-<a name="SetupGitSigning"></a>
-
-## Setup Git-signing
-
-1. Install GPG locally using my instructions at:
-
-   <a target="_blank" href="https://wilsonmar.github.io/git-signing">https://wilsonmar.github.io/git-signing</a>
-
-1. Generate encrypted file "credentials.gpg" from file "credentials". See:
-
-   https://wilsonmar.github.io/git-signing/#bonus-encrypting-whole-files-using-gpg
-
-1. To be able to retrieve secrets in case you lose your laptop, for backup make a copy of the secret file in encrypted format, somewhere else.
-
-1. Make a backup of GPG keys somewhere else (in a key vault) so you can decrypt. One way is to store your private key in a Yubikey USB chip you plug into your laptop.
-
-1. Using the GPG private key, encrypt the aws/credentials file to a new credentials.gpg file also in the same ~/.aws folder.
-
-1. Delete the file at ~/.aws/credentials
-
-1. Download my shell script:
-
-   <pre>curl "https://raw.githubusercontent.com/wilsonmar/DevSecOps/main/bash/awslogin.sh" -o "awslogin.sh"</pre>
-
-   NOTE: It works similar to https://github.com/99designs/aws-vault, but with no external dependencies (other than GPG). However, aws-vault supports several vaulting backends.
-
-1. Run the script to login based on the encrypted credential.gpg file:
-   ```
-   source ~/awslogin.sh
-   ```
-
-   Alternately, run the script to use the "susan" profile defined:
-   ```
-   source ~/awslogin.sh -p susan
-   ```
-
-   The script unencrypts the gpg file, invokes aws login, then removes the unencrypted file.
-   
-   BONUS: To parse variables from within an AWS credentials file, consider:
-   GitHub - whereisaaron/get-aws-profile-bash: Fetch AWS keys and secrets from ~/.aws/credentials…
-
-   This is a pure bash script that can parse and extract AWS credentials (key id and secret) from a ~/.aws/credentials…github.com
-
-1. PROTIP: If you use it, remember to clear out variables after usage, so they don't linger in memory.
-
-
-TODO: Put each AWS CLI command in a script at
-https://medium.com/circuitpeople/aws-cli-with-jq-and-bash-9d54e2eabaf1
-by Lee Harding
-
-https://aws.amazon.com/cli/
-
-
 ## More on Amazon #
 
 This is one of a series on Amazon:
@@ -1873,10 +1879,7 @@ https://docs.commonfate.io/granted/getting-started
 
 ## Referebces
 
-   https://www.oreilly.com/videos/zero-to-hero/0642572107789/
-   OReilly Course: "Zero to Hero  on AWS Security: An Animated Guide to Security in the Cloud"
-   Apr 2025
-   by Matt Lea of https://schematical.com
+   
 
 
 
