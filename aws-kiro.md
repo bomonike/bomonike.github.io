@@ -1,11 +1,11 @@
 ---
 layout: post
 date: "2026-01-25"
-lastchange: "26-01-25 v003 kiro :aws-kiro.md"
+lastchange: "26-01-25 v003 steering files :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
-excerpt: "Create apps"
+excerpt: "Create Spec-Driven Development (SDD) of apps running in AWS"
 tags: [AWS, AI, cloud, on-boarding]
 image:
 # feature: pic data center slice 1900x500.jpg
@@ -19,12 +19,14 @@ created: "2026-01-25"
 {% include l18n.html %}
 {% include _toc.html %}
 
-This defines how to create apps on the AWS cloud using Kiro, step-by-step.
+This article defines how to create apps on the AWS cloud using Kiro, step-by-step.
 
 Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the new AWS Kiro, which consist of a GUI app and CLI.
 
    * <a target="_blank" href="https://www.linkedin.com/in/saurabhdahal/">Saurabh Dahal</a> is Sr Dev Advocate <a target="_blank" href="https://www.youtube.com/watch?v=HI_qexVlU2Y">VIDEO</a>
    <br /><br />
+
+   ## Install
 
 1. Open the OS's default Terminal app, not another AI CLI app from Warp.dev, which cause this error reported by doctor:
 
@@ -67,19 +69,33 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    |-- argv.json
    |-- extensions
    |   `-- extensions.json
-   |-- powers
+   |-- <a href="#Powers">powers</a>
    |   `-- registry.json
    |-- settings
    |   `-- cli.json
-   `-- steering
+   `-- <a href="#Steering">steering</a>
    </pre>
    Not listed is internal file <tt>.cli-bash_history</tt> to track every command entered.
 
+
+   <a name="Powers"></a>
+
+   ## Powers
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=14se2WpEaCo&pp=0gcJCYcKAYcqIYzv">VIDEO: Kiro Powers</a>
+   inject specialized context and tools into Kiro agents on-demand, providing focused knowledge exactly when needed. Unlike traditional context injection that loads everything upfront, Powers activate specific capabilities dynamically. 
+   https://dev.to/kirodotdev/analyzing-react-best-practices-with-kiro-powers-4i1f
+   Power-Builder:
+   * https://github.com/kirodotdev/powers/blob/main/power-builder/POWER.md
+   * https://github.com/kirodotdev/powers/blob/main/power-builder/steering/interactive.md
+   * https://github.com/kirodotdev/powers/blob/main/power-builder/steering/testing.md
+
+
    <a name="Steering"></a>
 
-   ### Steering 
+   ### Steering specs
 
-   * https://www.youtube.com/watch?v=Ap0tXXvyn3k
+   * https://www.youtube.com/watch?v=Ap0tXXvyn3k by Allie Fortman, GTM
    <br /><br />
 
 1. Add into the "steering" folder .md (markdown) files <strong>foundational steering files</strong> from the Steering section in the Kiro panel. Click the Generate Steering Docs button, or click the + button and select the Foundation steering files option
@@ -96,10 +112,10 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
 
    "KIRO automatically shows which steering documents are being included in your conversation, giving you full visibility into the context being applied.*"
 
-1. Load steering files from <a target="_blank" href="https://www.linkedin.com/in/sagemaker/">Vivek Velso</a>:
+1. Load steering files from <a target="_blank" href="https://www.linkedin.com/in/sagemaker/">Vivek Velso</a> cataloged by https://www.promptz.dev/library/kiro-best-practices :
 
-   * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/steering/aws-cli-best-practices.md”>aws-cli-best-practices.md</a> `—no-cli-pager` and AWS integration patterns
-   * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/steering/cdk-best-practices">cdk-best-practices.md</a> - Project structure, testing, and deployment patterns
+   * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/steering/aws-cli-best-practices.md”>aws-cli-best-practices.md</a> <tt>—no-cli-pager</tt> and AWS integration patterns
+   * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/steering/cdk-best-practices.md">cdk-best-practices.md</a> - Project structure, testing, and deployment patterns
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/steering/development-standards.md">development-standards.md</a> - Dependency management, code quality, documentation
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/steering/docker-best-practices.md">docker-best-practices.md</a> - Container security and optimization
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/steering/git-best-practices.md">git-best-practices.md</a> - Conventional commits, branching, and security
@@ -120,16 +136,19 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    * https://github.com/cremich/promptz.lib
    * https://github.com/mbonig/kiro-steering-docs
 
-   Files:
+   Files 
    * well-architected-context.md
    * terraform_best_practices.md
    * minimal-engineering-approach.md
    * git_commit_rules.md
 
+   To <a target="_blank" href="https://learning.oreilly.com/live-events/ai-agents-with-aws/0642572272098/0642572272081/">Develop intelligent agents</a> with Amazon Bedrock, <a target="_blank" href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html">AgentCore</a>, and <a target="_blank" href="https://strandsagents.com/latest/documentation/docs/">Strands Agents</a> by Eduardo Mota
+   * strands-python.md  and 
+   * agentcore_strans_requirements.md
+
    Others: QUESTION: Where do we find these???
 
    * troubleshooting_app.md
-   * strands-python.md
    * sam-deployment-bucket.md
    * react_best_practices.md
    * python_best_practices.md
@@ -139,7 +158,6 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    * architecture_diagram_rules.md
    * approved-model-for-building-agentic.md
    * amazon-q-resources-reference.md
-   * agentcore_strans_requirements.md
    * CloudFront_S3_setup_for_UI_app_website.md
    
    * api-standards.md - Define REST conventions, error response formats, authentication flows, and versioning strategies. Include endpoint naming patterns, HTTP status code usage, and request/response examples.
@@ -168,14 +186,14 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    These files can be generated or refactored by AI.
 
 1. In the YAML front matter (between "---") at the top of each steering file, configure <strong>inclusion</strong> directives for loading, to optimize performance and ensures relevant context is available when needed. 
-   ```
+   ```yaml
    ---
    title: Invoked in all runs
    inclusion: always
    ---
    ```
    For example, steering for Typescript files use this conditional:
-   ```
+   ```yaml
    ---
    title: Typescript steering
    inclusion: fileMatch
@@ -204,7 +222,7 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    </pre>
 
 1. Analyze (like with Git):
-   ```
+   ```bash
    kiro-cli doctor
    ```
    <pre>
@@ -212,7 +230,7 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    </pre>
 
 1. Chat:
-   ```
+   ```bash
    kiro-cli chat
    ```
    <pre>
@@ -221,7 +239,7 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    TODO: ???
 
 1. Know Kiro commands:
-   ```
+   ```bash
    kiro-cli --help-all
    ```
    <pre>
@@ -316,7 +334,7 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    Kiro outputs standalone HTML files that open directly in any browser - no build step or server required. That enables you to share them with stakeholders by simply sending the files.
 
 1. Install the Kiro.app, which is a clone of Microsoft Visual Studio Code IDE. 
-   ```
+   ```bash
    brew install --cask kiro
    ```
    Response:
@@ -332,7 +350,7 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    </pre>
 
 1. Open Kiro.app:
-   ```
+   ```bash
    kiro
    ```
 
@@ -342,10 +360,15 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
 
    Kiro hook files contain JSON-format code that specify automation actions. reach APIs.
 
-   Hook files include clear, specific prompts. Vivek's example:
+   Hook files include clear, specific prompts.
+
+   ### "when: fileEdited" hooks run automatically 
+
+   when a file matching one of the "patterns", the "prompt" is displayed. Vivek's example:
+
    <pre>
    {
-      "enabled": true,
+      "enabled": true,  // Change to false to disable
       "name": "Descriptive Hook Name",
       "description": "Clear description of what this hook does",
       "version": "1",
@@ -359,8 +382,6 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
       }
    }   
    </pre>
-
-   ### 🔄 Automatic Hooks run automatically when files are saved
 
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/auto-test-on-save.kiro.hook">auto-test-on-save.kiro.hook</a> - Runs tests with minimal verbosity when code changes
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/lint-and-format-on-save.kiro.hook">lint-and-format-on-save.kiro.hook</a> - Auto-formats and lints code following project standards
@@ -387,6 +408,16 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/accessibility-audit.kiro.hook">accessibility-audit.kiro.hook</a> - Checks React components for accessibility issues
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/update-documentation.kiro.hook">update-documentation.kiro.hook</a> - Updates docs when code changes
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/translation-update.kiro.hook">translation-update.kiro.hook</a> - Syncs translation files
+
+
+## References
+
+BLOG: https://prpm.dev/blog
+
+https://www.youtube.com/watch?v=40vTCH0Iaac&pp=2AaCAg%3D%3D
+<a target="_blank" href="https://www.youtube.com/@RasmusWiding">videos</a> 
+by Rasmus Widing
+
 
 
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
