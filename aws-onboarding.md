@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-01-26"
-lastchange: "26-01-26 v102 flowchart :aws-onboarding.md"
+date: "2026-01-28"
+lastchange: "26-01-28 v103 flowchart :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -114,30 +114,94 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 1. Click the "Business" and "Enterprise" buttons in the pop-up to see sample volume pricing tiers.
 
 
+
+## Separation of Duties and Concerns
+
+1. PROTIP: To follow Separation of Duties (SoD) principles, the account should be owned only by a company's Accounts Payable department under the corporation's Controller and not by operational or IT staff. this should be announced by a corporate office as company policy.
+
+1. In an enterprise when several people or departments are involved, create a sub-account for use with each level of processing, to provide individual traceability and accountability.
+
+1. A Global Adminstrators creates a set of <strong>sub-accounts</strong> and do not use the root account again except for emergency purposes.
+   
+   It's common for a separate account to be created for each <strong>department</strong> and <strong>project</strong> as well as each <strong>user</strong>. This is to limit the "blast radius" when an account's credentials become compromised, a situation we need to prepare for.
+
+   CAUTION: Do not use email address used for AWS to also be used in social media.
+   Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping.
+
+1. PROTIP: Passage of access responsibility should be recorded with time stamps and signatures of the parties involved, with a witness present.
+
+https://policysim.aws.amazon.com
+
 <a name="Flowchart"></a>
 
-## Flowchart
+## Ecosystem Flowchart
 
-1. Click on the flowchart for a movie about the steps to establish an essential corporate IT ecosystem:
+1. Click on this flowchart for a movie about the simplified sequence to establish an essential corporate IT ecosystem:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769457654/it-ecosystem-1838x914_k7khfr.png"><img alt="it-ecosystem-1838x914.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769457654/it-ecosystem-1838x914_k7khfr.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769544714/it-ecosystem-1852x918_dgdfk6.png"><img alt="it-ecosystem-1852x918.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769544714/it-ecosystem-1852x918_dgdfk6.png" /></a>
 
-1. The IT department creates laptops for the rest of the organization that are installed with secure DNS for Quad9, Password Manager, and other utilities.
-1. People in the Payables department are fudiciaries of the AWS Root Account, with the corporate credit card used to pay for billings.
-1. System Administrators maintain a database of regions and what each service costs.
-1. The Human Resources department maintain a list of people, their roles, and what parts of the system each is allowed use.
-1. Groups and network areas.
-1. That information is used by a user setup program to 
-1. create IAM accounts used by
-1. End Users to reference and update
-1. production databases.
+All this work can be done by one person. But "separation of duties" is shown how different departments can enable scaling and technical specialization.
 
-1. Due to the impact thieves have had, there is an Archivist who catalogs, backs up, restor. In many companies, to reduce the "blast radius" of hacks, Archivists are the only ones who can <strong>delete</strong> data.
-1. System Administrators and some End-users manage the creation and use of logs, metrics, dashboards, reports, and alerts based on data.
+1. The IT department obtains and configures <strong>laptops</strong> with secure DNS settings, 
+1. Password Manager, and utilities to keep <strong>secrets</strong> on and off computers.
+1. Architects define what <strong>services</strong> are used within each <strong>region</strong>.
+
+   Regions not used are disabled to prevent rogue charges from accumulating.
+
+1. Architects also define <strong>policy files</strong> to specify the <strong>actions</strong> on AWS resources that each <strong>AWS Security Group</strong> is allowed to use.
+1. People handling <strong>Payables</strong> are fudiciaries of the <strong>AWS Root Account</strong> created with the credit card charges for billing.
+
+   PROTIP: NAMING CONVENTION: Include in the name of each root account the date when initial free plan <strong>ends</strong>. Starting in 2026, that's six months instead of 12 months previously. 
+   
+   Use of <strong>AWS Organizations</strong> or some other AWS services and offers require an upgrade to a <a target="_blank" href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html">paid plan</a>.
+
+   PROTIP: Since the root account has "God-mode" capability to do anything, it is NOT used after it is used to create a set of "IAM accounts", each with some <strong>limitations</strong>, which many call "Least Privilege" to do each job.
+
+1. Each IAM account is associated with URLs and <strong>secrets</strong> used to login.
+
+   https://1234567890123.signin.aws.amazon.com/console
+
+1. The first to receive credentials are <strong>System Administrators</strong> who build applications and databases.
+
+   PROTIP: Using "IaC (Infrastructure as Code)" means that configurations are defined as a set of codes rather than interatively using a GUI. This approach enables the status of a system built that way to be duplicated and analyzed during troubleshooting. 
+
+1. generate a database of regions and what each service costs.
+
+   <a target="_blank" href="https://aws.amazon.com/neptune/?source=rePost">Amazon Nepture</a> is the AWS graph database offering.
+
+1. IAM accounts are created with permissions specific to what other groups do.
+1. The HR (Human Resources) department maintains a list of people, their roles, and what parts of the system each is allowed use.
+1. Production data is created and updated by
+1. End Users.
+
+   PROTIP: AWS customers may be asked to use a different AWS account for each environment (development, testing, training, production, migration, etc.). 
+
+1. In the current era of widespread randsomware, we have professional Archivists diligently catalog, backup, restore, and delete data. In many companies, to reduce the "blast radius" of hacks, Archivists are the only ones who can <strong>delete</strong> data.
+1. The course of data being processed generates logs, metrics, dashboards, reports, alerts, and traces of events inside and outside the organization.
+
+   NOTE: These utilities for "Observability" and Governance are often larger than systems thy observe.
+ 
+1. The SOC (Security Operations Center) monitor and provide rapid response.
+
+1. Managers in the SOC ensure that the appropriate notifications occur, with action taken in a timely.
+
+There are additional user groups (such as Developers, Testers, Auditors, Product Managers, Trainees, Contractors, Legal, Finance, etc.).
 
 RECAP static flowchart:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769457654/it-ecosystem-1838x914_k7khfr.png"><img alt="it-ecosystem-1838x914.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769457654/it-ecosystem-1838x914_k7khfr.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769544714/it-ecosystem-1852x918_dgdfk6.png"><img alt="it-ecosystem-1852x918.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769544714/it-ecosystem-1852x918_dgdfk6.png" /></a>
+
+
+<a target="_blank" href="https://www.youtube.com/watch?v=_KhrGFV_Npw&pp=2AYt">VIDEO</a>:
+The AWS Organizations service enables various accounts to be consolidated centrally.
+billings for various accounts can be combined to apply volume discounts.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=gpquYmcpZpo">VIDEO</a>: 
+Amazon's "IAM Identity Center" service was previously called AWS Single Sign On (SSO)
+for accessing Salesforce, Box, Microsoft 365, and other apps enabled with SAML 2.0 (GitHub).
+It also collaborates with centralized identity providers such as Okta, Microsoft Active Directory.
+
+https://www.youtube.com/watch?v=hAk-7ImN6iM
 
 
 <a name="Preparations"></a>
@@ -204,7 +268,7 @@ PROTIP: The distinctive aspect of this tutorial is that you are trained to <stro
 
    ### Mobile phone
 
-1. On your mobile phone, install app <a target="_blank" href="https://www.authy.com/">Authy (from Twilio)</a> for MFA (Multi-Facator Authentication) which can be restored on new phones if you lose your phone.
+1. On your mobile phone, install app <a target="_blank" href="https://www.authy.com/">Authy (from Twilio)</a> for MFA (Multi-Facator Authentication) which can be restored on new phones if you lose your phone. <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_lost-or-broken.html">Troubleshooting AWS MFA</a> PROTIP: In the United States, your phone number should be formatted as +1 followed by your number with no periods or dashes (for example, +13103207878.
 
 1. Secure each 3rd-party account (AWS, etc.) with <strong>multi-factor authentication</strong> (MFA). Save recovery codes among Notes in your Password Manager. 
 
@@ -268,7 +332,47 @@ Console GUI, CLI, API, IoC, Mobile:
 
 * <strong>Programmatically</strong> running custom program code (such as Pyyhon, JavaScript, etc.) which call AWS APIs (Application Programming Interface) called by custom programs calling <a href="#APIKeys">AWS's API (Application Programming Interface)</a>. Amazon's Boto3 SDK and Pulumi.com use this approach. This is the mechanism behind the scenes by <a href="#MobileApps">mobile apps</a>. Authentication is by including APIKeys generated by AWS.
 
-* <strong>Declaratively</strong> running Infrastructure as Code (IoC) DSL (Domain Specific Language) definitions to define the <strong>desired state</strong> of the AWS environment. This makes it easier to track changes and repeat the same environment in different regions and accounts. This also makes it possible to evaluate the vulnerabilities and costs of an environment even before it is created. Authentication is by including APIKeys generated by AWS. <a target="_blank" href="https://spacelift.io/blog/terraform-alternatives">Alternatives for IoC</a> on AWS include AWS CloudFormation, AWS CDK, Hashicorp CDKTF, <a target="_blank" href="https://wilsonmar.github.io/terraform/">Hashicorp Terraform</a> directed acyclic graphs, OpenTofu, <a target="_blank" href="https://spacelift.io/customers/affinity">Spacelift</a>, <a target="_blank" href="https://www.firefly.ai/academy/terraform-alternatives">Firefly</a>, <a target="_blank" href="https://scalr.com/learning-center/terraform-alternatives-checklist-before-switching/">Scalr cloud</a>, <a target="_blank" href="https://wilsonmar.github.io/ansible/">Red Hat Ansible</a>, Crossplane (inside K8s clusters), <a target="_blank" href="https://github.com/skypilot-org/skypilot">SkyPilot</a> (GPUs), etc. Some of these are able to use <a target="_blank" href="https://wilsonmar.github.io/opa/">Open Policy Agents (OPA)</a> to define and enforce policies for security, accurate billing, etc. https://www.youtube.com/watch?v=RTEgE2lcyk4&t=1332s
+   Amazon open-sourced its <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">CDK</a> (Cloud Development Kit) as a SDK layer above CF, at the cost of making troubleshooting more complex. A <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">library</a> of "constructs" in TypeScript, JavaScript, Python, Java, .NET C#, and Go. An example in Python to create an Amazon Elastic Container Service (Amazon ECS) service with AWS Fargate launch type:
+   ```python
+   class MyEcsConstructStack(Stack):
+      def __init__(self, scope: Construct, id: str, **kwargs) -> None:
+         super().__init__(scope, id, **kwargs)
+
+         vpc = ec2.Vpc(self, "MyVpc", max_azs=3)     # default is all AZs in region
+         cluster = ecs.Cluster(self, "MyCluster", vpc=vpc)
+         ecs_patterns.ApplicationLoadBalancedFargateService(self, "MyFargateService",
+            cluster=cluster,            # Required
+            cpu=512,                    # Default is 256
+            desired_count=6,            # Default is 1
+            task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
+               image=ecs.ContainerImage.from_registry("amazon/amazon-ecs-sample")),
+            memory_limit_mib=2048,      # Default is 512
+            public_load_balancer=True)  # Default is False
+   ```
+   <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">A "stack" of several constructs</a> may be needed.
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png"><img alt="aws-cdk-stack.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png" /></a>
+
+   Each construct creates Cloud Formation files AWS uses to create resources.
+
+   CDK provides no built-in support for Secrets Management.
+   But Pulumi provides built-in support for encrypted secrets. It also supports third-party providers.
+
+   Policy as Code.
+
+* <strong>Declaratively</strong> running Infrastructure as Code (IoC) DSL (Domain Specific Language) definitions to define the <strong>desired state</strong> of the AWS environment. This makes it easier to track changes and repeat the same environment in different regions and accounts. 
+
+   Cloud Formation (CF) was created by Amazon and only works within AWS. So its use would likely enable you to automate the latest tech AWS has to offer.
+
+   CF makes use of GitHub for tracking changes and to provide an AWS deployment role.
+
+   <a target="_blank" href="https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/">ECS web apps</a> with VPC, ECS/Fargate or Lambda, RDS/Dynamo can all be defined in CDK.
+   A GitHub Actions workflow runs cdk synth and cdk diff on PR, cdk deploy on merge.
+
+   Use of IaC makes it easier to evaluate the vulnerabilities and costs of an environment even before it is created. Authentication is by including APIKeys generated by AWS. 
+   
+   <a target="_blank" href="https://spacelift.io/blog/terraform-alternatives">Alternatives for IoC</a> on AWS include  Hashicorp CDKTF, <a target="_blank" href="https://wilsonmar.github.io/terraform/">Hashicorp Terraform</a> directed acyclic graphs, OpenTofu, <a target="_blank" href="https://spacelift.io/customers/affinity">Spacelift</a>, <a target="_blank" href="https://www.firefly.ai/academy/terraform-alternatives">Firefly</a>, <a target="_blank" href="https://scalr.com/learning-center/terraform-alternatives-checklist-before-switching/">Scalr cloud</a>, <a target="_blank" href="https://wilsonmar.github.io/ansible/">Red Hat Ansible</a>, Crossplane (inside K8s clusters), <a target="_blank" href="https://github.com/skypilot-org/skypilot">SkyPilot</a> (GPUs), etc. 
+   
+   Some of these are able to use <a target="_blank" href="https://wilsonmar.github.io/opa/">Open Policy Agents (OPA)</a> to define and enforce policies for security, accurate billing, etc. https://www.youtube.com/watch?v=RTEgE2lcyk4&t=1332s
 
 * <strong>Visibly</strong> reading from <a href="#MobileApps">AWS Console Mobile app</a> month-to-date costs, CloudWatch alarms triggered, and AWS Health issues identified.
 
@@ -348,7 +452,8 @@ Follow these steps to create a profile account:
 1. PROTIP: There are several different sign-up pages: one for each country and type of user: 
 
    * If you want to create a <strong>stand-alone account</strong> unaffiliateed with any company, click the "Sign up" button:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a> (<a href="#StandAloneAccount">see below</a>)
-   * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a>
+   * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a> for program: AWS Academy, Cloud Institute, <a target="_blank" href="https://www.awseducate.com/student/s/content">Educate</a>, re/Start, Skill Builder, Skills Center.
+      
    * If you're using your <strong>corporate email</strong>, check with your IT department, which may use federated Single-Sign-On. <a target="_blank" href="https://us-east-1.console.aws.amazon.com/singlesignon/home?region=us-east-1#/">IAM Identity Center</a> managed with the free AWS Organizations centralized service to enable enterprise scaling. It involves definition of Organizational Units (OUs) to specify additional security controls that enable consolidated billing, policy-based controls (SCPs), resource sharing, and organized account structures.
 
    * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
@@ -356,6 +461,10 @@ Follow these steps to create a profile account:
    * If you're using the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
    <br /><br />
 
+https://www.awseducate.com/registration/s/learner-faqs#jobs
+
+https://www.awseducate.com/registration/s/learner-faqs#emerging-talent-community
+AWS Emerging Talent Community when you earn digital badges
 
 <a name="StandAloneAccount"></a>
 
@@ -545,9 +654,10 @@ These are steps to create a stand-alone root account.
 
     ![aws-iam-1password-291x259-19343](https://user-images.githubusercontent.com/300046/38160291-93acae16-3478-11e8-80ac-7d5ae3bbd5c4.jpg)
 
+    
     ### STS Regions
 
-14. Scroll down to "Security Token Service Regions" and deactivate regions your organization will never use.
+1. Keep thieves from using regions you don't usually use and thus won't notice. Scroll down to "Security Token Service Regions" and deactivate regions you are not using.
 
     PROTIP: The region is where most of your users are located.
     New services are usually restricted to one region, such as N. Virginia or N. California where AWS does development work.
@@ -680,7 +790,7 @@ A description of sections in the script (at the top of the script file):
 10. Click "Next: Review".
 11. Click "Create user".
 
-zzz
+
 
     ### Inform user of credentials
 
@@ -744,22 +854,6 @@ zzz
 
    WARNING: By default, permissions for a <strong>"Global Adminstrators" group</strong> is granted to the email used to create the root account. The Global Adminstrators group has <strong>unlimited access</strong> to do anything to all AWS resources under the account and thus unlimited ability to rack up charges (legitimate or otherwise). By resources I mean: users, groups, roles, IAM Access Policies, API keys, etc. globally for all regions.
 
-   ## Separation of Duties and Concerns
-
-1. PROTIP: To follow Separation of Duties (SoD) principles, the account should be owned only by a company's Accounts Payable department under the corporation's Controller and not by operational or IT staff. this should be announced by a corporate office as company policy.
-
-1. In an enterprise when several people or departments are involved, create a sub-account for use with each level of processing, to provide individual traceability and accountability.
-
-1. A Global Adminstrators creates a set of <strong>sub-accounts</strong> and do not use the root account again except for emergency purposes.
-   
-   It's common for a separate account to be created for each <strong>department</strong> and <strong>project</strong> as well as each <strong>user</strong>. This is to limit the "blast radius" when an account's credentials become compromised, a situation we need to prepare for.
-
-   CAUTION: Do not use email address used for AWS to also be used in social media.
-   Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping.
-
-1. AWS customers create and use a different AWS account for each environment (development, testing, training, production, migration, etc.). IaC (Infrastructure as Code) allows resource configurations and statuses to be compared across multiple accounts for troubleshooting application issues. 
-
-1. PROTIP: Passage of access responsibility should be recorded with time stamps and signatures of the parties involved, with a witness present.
 
 
 <a name="EmailSystem"></a>
@@ -815,7 +909,7 @@ Within an organization, it's common for a separate account to be created for eac
 
    ### Quick Access icons
 
-   Save time by quickly get to the most frequently used services by having their icons at the top (black) menu bar.
+   Save time by quickly get to the most frequently used services by having their icons at the top Favorites menu bar.
 
 1. Click the push-pin icon.
 1. One by one, drag the icon on the list and drop it on the top black menu to the left of the orange push pin. If you don't see the black menu, pause just under the browser URL for the browser to automatically scroll.
@@ -910,7 +1004,7 @@ aws_secret_access_key = 123456782Nwk156aPF0SxZ8KGY+RrhEbq3AIHUSS
 
 
 
-Instead of doing what other clouds do (an <tt>aws login</tt> command which prompt for a user name and password), aws commands reference a specifically-named file at <tt>$HOME/.aws/credentials</tt> created by command <tt>aws configure</tt>.
+Instead of doing what other clouds do (an <tt>aws login</tt> command which prompt for a user name and password), aws commands reference a specifically-named file at <tt>$HOME/.aws/credentials</tt> created by command <tt>aws configure</tt> or copied in.
 
 The <tt>aws configure</tt> command creates that file after prompting for access key identifiers (AKIDs) to an AWS account. Press Enter to accept the value previously defined:
 
@@ -942,7 +1036,6 @@ https://aws.amazon.com/code/token-vending-machine-for-identity-registration-samp
 
 But that requires tedious repeated manual effort.
 Securing temporary accounts with MFA adds to that toil.
-
 
 
 <hr />
@@ -1054,7 +1147,58 @@ An IAM user needs to be granted two distinct permissions to launch EC2 instances
 
 <a name="Svcs"></a>
 
-## AWS services
+## AWS Services List
+
+### Services for web app
+
+<a target="_blank" href="https://www.youtube.com/watch?v=FDEpdNdFglI">VIDEO</a>: The most important services for a 3-tier multi-node databased web application with search and monitoring:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769561086/aws-important-svcs-1751x700_bvlwlz.png"><img alt="aws-important-svcs-1751x700.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769561086/aws-important-svcs-1751x700_bvlwlz.png" /></a>
+
+<a target="_blank" href="https://www.youtube.com/watch?v=zuKu0VFiwas">VIDEO</a>:
+Portfolio project.
+
+
+### AWS services by category
+
+1. Use CLI to list all AWS services available:
+   ```bash
+   aws help 2>&1 | grep -A 500 "AVAILABLE SERVICES" | head -100
+   ```
+   <pre>
+   Core Compute & Containers:
+   •  ec2, ecs, eks, ecr, lambda, lightsail, batch, elastic-beanstalk
+
+   Storage:
+   •  s3, s3api, s3control, ebs, efs, fsx, glacier, backup, storagegateway
+
+   Database:
+   •  rds, dynamodb, elasticache, redshift, neptune, docdb, timestream-query, timestream-write, memorydb
+
+   Networking & Content Delivery:
+   •  vpc, cloudfront, route53, elb, elbv2, api-gateway, apigw, direct-connect, vpc-lattice
+
+   Security & Identity:
+   •  iam, cognito-identity, cognito-idp, kms, secrets-manager, acm, waf, wafv2, guardduty, inspector, macie
+
+   Developer Tools:
+   •  codecommit, codebuild, codedeploy, codepipeline, codeartifact, cloud9, cloudshell
+
+   Management & Governance:
+   •  cloudformation, cloudwatch, cloudtrail, config, organizations, ssm, systems-manager, opsworks
+
+   Analytics:
+   •  athena, emr, kinesis, quicksight, glue, redshift-data, opensearch
+
+   Machine Learning:
+   •  sagemaker, rekognition, comprehend, translate, transcribe, polly, lex, textract, bedrock
+
+   Application Integration:
+   •  sns, sqs, eventbridge, step-functions, swf, mq, appflow
+
+   Monitoring & Observability:
+   •  cloudwatch, logs, xray, application-insights
+   </pre>
 
 1. Click the icon with the 9 square dots at upper-left for an alphabetical list of service categories.
 1. Click "All services" for an alphabetical list of all AWS services.
@@ -1067,7 +1211,7 @@ An IAM user needs to be granted two distinct permissions to launch EC2 instances
    <img alt="aws-svcs-1of2-1840x3168.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769243224/aws-svcs-1of2-1840x3168_obgjyb.png" /><br />
    <img alt="aws-svcs-2of2.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769243329/aws-svcs-2of2_gegmxf.png" />
 
-1. PROTIP: Add the URL to Bookmarks tab named:
+1. PROTIP: Add the URL to Bookmarks tab named, with region in the name:
 
    <tt>Svcs us-east-1</tt>
 
@@ -1080,6 +1224,9 @@ An IAM user needs to be granted two distinct permissions to launch EC2 instances
 
 
 ### Icons and Diagrams #
+
+   * https://www.awsicon.com/icon/q
+   <br /><br />
 
 <a target="_blank" href="https://www.processon.com/">
 ProcessOn.com</a>
@@ -1117,7 +1264,7 @@ You can also download a zip containing .png and .svg files of icons
 * Tagging
 
 <u>Governance:</u>
-* AWS Budgets: Improve planning and cost control with flexible budgeting and forecasting
+* <a href="#SetupBudgets">AWS Budgets</a>: Improve planning and cost control with flexible budgeting and forecasting
 * Amazon Cognito: Simple and Secure User Sign-Up, Sign-In, and Access Control.
 * AWS Service Catalog: Create and manage catalogs of IT services that are approved for use on AWS.
 
@@ -1150,7 +1297,7 @@ You can also download a zip containing .png and .svg files of icons
 * AWS WAF Bot Control: Protect your web applications from common and pervasive web bots
 * Amazon SWF: Task coordination and state management service for Cloud applications.
 
-<u>Development:</u>
+<u>Developer Tools:</u>
 * Amazon Q Developer: The most capable generative AI–powered assistant for software development
 * AWS Application Discovery Service: Collects server specification information, performance data, and details of running processes and network connections.
 * AWS Step Functions: Coordinate components of distributed applications.
@@ -1186,6 +1333,51 @@ You can also download a zip containing .png and .svg files of icons
 * Migration Evaluator: Migration Evaluator helps customers rapidly see projected costs of running their on-premises estate in AWS.
 * AWS Application Migration Service: Simplify and expedite migrations while reducing cost.
 
+
+<a name="EarnMoney"></a>
+
+## Earn Money: Explore AWS
+
+1. <a href="#SysAdminLogin">Login as a System Administrator</a>.
+1. Scroll to the "Explore AWS" pane of the AWS Management Console.
+1. For Filter, select "Earn AWS credits".
+1. Click an Activity on the Console, then "Start activity" (to begin earning $20 each).
+   * <a target="_blank" href="">Create a web app using AWS Lambda</a>
+   * <a target="_blank" href="">Create an Aurora or RDS database</a>
+   * <a target="_blank" href="">Launch an instance using EC2</a>
+   * <a href="#SetupBudgets">Set up a cost budget using AWS Budgets</a>
+   * <a target="_blank" href="https://bomonike.github.io/aws-bedrock">Use a foundation model in the Amazon Bedrock playground</a>: In this activity, you'll select a model and submit a prompt to generate a response in the Amazon Bedrock playground.
+
+
+<a name="SetupBudgets"></a>
+
+## Setup AWS Budgets
+
+To improve planning and cost control with flexible budgeting and forecasting...
+
+1. In the Console "Explore AWS" widget, click "Set up a cost budget using AWS Budget".
+
+   "Using AWS Budgets, you can set a budget that alerts you when you exceed (or are forecasted to exceed) your budgeted cost or usage amount.
+
+   "In this activity, you’ll create a cost budget to monitor your AWS cost and usage.
+
+   https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html
+
+1. Click "Start Activity".
+1. In field "Email recipients", 
+
+   QUESTION: How to manage changes in email in case of turnover? How to monitor where specific emails are used throughout various budgets.
+
+1. Click "Create budget" orange button.
+1. Back to "Explore AWS" to see a green "Completed".
+
+1. Upon enablement of AWS Cost Explorer, AWS sends out email "AWS Cost Anomaly Detection".
+1. Click "Trust sender" (anomalydetection@costalerts.amazonaws.com).
+1. Visit https://us-east-1.console.aws.amazon.com/costmanagement/home#/anomaly-detection/overview?activeTab=history
+
+1. PROTIP: In your Calendar, setup an event to put aside monthly time for reviewing AWS bills and reports.
+
+QUESTION: Obtain billing reports.
 
 <hr />
 
