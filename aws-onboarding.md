@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-01-28"
-lastchange: "26-01-28 v103 flowchart :aws-onboarding.md"
+lastchange: "26-01-28 v104 flowchart :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -19,10 +19,9 @@ created: "2016-03-29"
 {% include l18n.html %}
 {% include _toc.html %}
 
-<a target="_blank" href="https://wilsonmar.github.io/aws-onboarding/">
-This</a> is a <strong>hands-on</strong> tutorial for <strong>absolute beginners</strong> to begin using AWS cloud like a pro -- without tedious "talking head" lectures. Here you do some action and explanations. "PROTIP" tags highlight my hard-won advice available no where else.
+<a target="_blank" href="https://wilsonmar.github.io/aws-onboarding/">This</a> is a logically presented <strong>hands-on deep dive</strong> on how to setup AWS cloud like a pro. Advice prefixed by "PROTIP" highlight my hard-won advice available no                                            where else.
 
-Covered here are instructions on how to install and use AWS CLI automation, smart phone apps, and 3rd party tools used by pros.
+Covered here are instructions on how to install and code <strong>CLI scripts</strong> and Python programs, and 3rd party tools used by pros.
 
 
 <a name="KPI"></a>
@@ -43,94 +42,6 @@ B1. each end-user needs to spend between receiving instructions to being complet
 
 PROTIP: CAUTION: Using speed as the primary basis for judging performance can lead to cutting corners and thus security holes. So security must be a primary consideration. But security is difficult to measure.
 
-
-
-## AWS Marketing Page
-
-1. Use an internet browser to get on the <strong>AWS marketing page</strong> at 
-
-   <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
-
-1. Explore its menu items:
-
-   <a target="_blank" href="https://aws.amazon.com/"><img alt="aws-landing-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154950/aws-landing-menu_e8io6g.png"></a>
-   <!-- aws-marketing-1205x224_uaojtf.png -->
-
-   PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
-
-   "My account" consists of:
-   * <a href="#Console">AWS Management Console</a>
-   * <a href="#account-settings">Account Settings</a>
-   * <a href="#billing">Billing & Cost Management</a>
-   * <a href="#security">Security Credentials</a>
-   * <a href="https://health.console.aws.amazon.com/health/home?nc2=h_uta_hd#/account/dashboard/open-issues">AWS Personal Health Dashboard</a> (EventBridge rules)
-   <br /><br />
-   "Support" consists of:
-   * <a href="#SupportCenter">Support Center</a>
-   * Expert Help
-   * Documentation
-   * Knowledge Center
-   * AWS Support Overview
-   * AWS re:Post
-
-1. Set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
-
-<a name="ComparePlans"></a>
-
-## Compare Support Plans
-
-   https://support.microsoft.com/en-us/home/contact?SourceApp=smcivr2
-
-1. Click <a target="_blank" href="https://console.aws.amazon.com/support/plans/home?#/">Amazon's Support Plan page here</a>.
-
-   Admins call (800) 865-9408 or (800) 642 7676 (toll-free, US only). Outside the United States, see <a target="_blank" href="https://support.microsoft.com/en-us/topic/global-customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2">global support phone numbers</a>.
-
-   The Basic account does not enable you to communicate with Amazon people who can answer technical questions.
-
-   The $29/month Developer Plan enables you to open an unlimited number of support cases
-   only via email, with a 12-hour response time if "system impaired". Otherwise, the SLA
-   is 24 hours.
-
-   The $100/month Business Plan enables you to have 24/7 chat, phone, as well as email access with AWS Support people on an unlimited number of support cases, with a 1-hour response time for "production down" issues, or 4-hour response for "production impaired" issues.
-
-   Amazon's <strong>Enterprise Plan</strong> for $15,000/month gets you 15 minute response on "business critical system down" issues. This plan also comes with an assigned TAM (Technical Account Manager).
-
-   These dollar amounts are minimums, not fixed prices.
-
-   <a target="_blank" href="https://aws.amazon.com/premiumsupport/programs/iem/">https://aws.amazon.com/premiumsupport/programs/iem/</a> mentions "AWS Infrastructure Event Management (IEM) offers architecture and scaling guidance and operational support during the preparation and execution of planned events, such as shopping holidays, product launches, and migrations."
-
-1. Scroll down to mouse over the "$29" on the Pricing line at the bottom of the table.
-
-   ![aws-onboarding-pricing-179x101-7688](https://user-images.githubusercontent.com/300046/40592743-edf804f8-61df-11e8-82e4-d48308fe1c92.jpg)
-
-   PROTIP: Pricing for Developer support is the Greater of $29 or 3% of monthly AWS usage,
-   so you will pay more than $29 if you spend more than $966.67.
-
-1. Scroll back up to click the "Pricing example" link on the right.
-1. Notice that if your spend is $2,000, Amazon bills you $60 for support, not $29.
-
-   <img alt="aws-onboarding-price-example-533x307-27004.jpg" width="533" src="https://user-images.githubusercontent.com/300046/40593326-2004f3f2-61e5-11e8-956f-c74bc35a161b.jpg">
-
-1. Click the "Business" and "Enterprise" buttons in the pop-up to see sample volume pricing tiers.
-
-
-
-## Separation of Duties and Concerns
-
-1. PROTIP: To follow Separation of Duties (SoD) principles, the account should be owned only by a company's Accounts Payable department under the corporation's Controller and not by operational or IT staff. this should be announced by a corporate office as company policy.
-
-1. In an enterprise when several people or departments are involved, create a sub-account for use with each level of processing, to provide individual traceability and accountability.
-
-1. A Global Adminstrators creates a set of <strong>sub-accounts</strong> and do not use the root account again except for emergency purposes.
-   
-   It's common for a separate account to be created for each <strong>department</strong> and <strong>project</strong> as well as each <strong>user</strong>. This is to limit the "blast radius" when an account's credentials become compromised, a situation we need to prepare for.
-
-   CAUTION: Do not use email address used for AWS to also be used in social media.
-   Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping.
-
-1. PROTIP: Passage of access responsibility should be recorded with time stamps and signatures of the parties involved, with a witness present.
-
-https://policysim.aws.amazon.com
 
 <a name="Flowchart"></a>
 
@@ -171,6 +82,13 @@ All this work can be done by one person. But "separation of duties" is shown how
 
 1. IAM accounts are created with permissions specific to what other groups do.
 1. The HR (Human Resources) department maintains a list of people, their roles, and what parts of the system each is allowed use.
+
+   Each IAM Role is an identity that a trusted user or service temporarily "assume" to get a specific set of permissions to take specific actions on specified resources.
+
+   Each User Group is just a collection of IAM users that all need the same permissions.
+
+   When a Policy File is attached to a group, every user in that group automatically gets permissions defined in the policy.
+
 1. Production data is created and updated by
 1. End Users.
 
@@ -185,21 +103,340 @@ All this work can be done by one person. But "separation of duties" is shown how
 
 1. Managers in the SOC ensure that the appropriate notifications occur, with action taken in a timely.
 
-There are additional user groups (such as Developers, Testers, Auditors, Product Managers, Trainees, Contractors, Legal, Finance, etc.).
+Other roles include: Mobile Developers, Testers, Auditors, Product Managers, Network Administrators, Trainees, Contractors, Legal, Finance, etc.
+
+A <strong>policy files</strong> is crafted to define what <strong>specific actions</strong> each <strong>role</strong> is enabled to take on specified <strong>resources</strong>. Actions include list, create, update, delete, etc. 
+
+Roles can also be defined for resources outside of AWS when using "AWS Roles Anywhere".
 
 RECAP static flowchart:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769544714/it-ecosystem-1852x918_dgdfk6.png"><img alt="it-ecosystem-1852x918.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769544714/it-ecosystem-1852x918_dgdfk6.png" /></a>
 
 
+
+## AWS Marketing Page
+
+1. Use an internet browser to get on the <strong>AWS marketing page</strong> at 
+
+   <a target="_blank" href="https://aws.com/">https://aws.com</a> resolves to<br />
+   <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
+
+1. Explore its menu items:
+
+   <a target="_blank" href="https://aws.amazon.com/"><img alt="aws-landing-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154950/aws-landing-menu_e8io6g.png"></a>
+   <!-- aws-marketing-1205x224_uaojtf.png -->
+
+   PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
+
+   "My account" consists of:
+   * <a href="#Console">AWS Management Console</a>
+   * <a href="#account-settings">Account Settings</a>
+   * <a href="#billing">Billing & Cost Management</a>
+   * <a href="#security">Security Credentials</a>
+   * <a href="https://health.console.aws.amazon.com/health/home?nc2=h_uta_hd#/account/dashboard/open-issues">AWS Personal Health Dashboard</a> (EventBridge rules)
+   <br /><br />
+
+1. Set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
+
+
+<a name="WaysToInteract"></a>
+
+## Ways to create resources in AWS
+
+Console GUI, CLI, API, IoC, Mobile:
+
+* <strong>Visually</strong> clicking and typing on the internet browser "<strong>AWS Management Console</strong>" at <a target="_blank" href="https://console.aws.amazon.com/">https://console.aws.amazon.com</a>. The Console is used during initial setup to <a href="#RootCredentials">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootCredentials">Root Account</a>. Authentication is by user name and password plus MFA.
+
+   SECURITY PROTIP: Many enterprises do not permit use of interactive CLI and Console GUI in production and instead allow only automated API calls by IaC (such as CloudFormation and Terraform). This is to ensure version control and repeatability.
+
+* <strong>Textually</strong> typing in the <strong>CLI</strong> (Command Line Interface) provided by the MacOS/Linux Terminal or Windows PC Command (cmd) utility. The AWS CLI program is installed for <a target="_blank" href="https://wilsonmar.github.io/aws-cli/"><tt>aws</tt> commands</a> to be executed interactively or within interpretive Bash scripts scheduled in batch jobs. Authentication is by <tt>aws configure</tt> command which stores credentials <tt>aws_access_key_id</tt> and <tt>aws_secret_access_key=</tt> in an unencrypted file at <tt>~/.aws/credentials</tt>.
+
+* <strong>Programmatically</strong> running custom program code (such as Python, JavaScript, etc.) which call AWS APIs (Application Programming Interface) called by custom programs calling <a href="#APIKeys">AWS's API (Application Programming Interface)</a>. Amazon's Boto3 SDK and Pulumi.com use this approach. This is the mechanism behind the scenes by mobile apps. Authentication is by including APIKeys generated by AWS.
+
+   Amazon open-sourced its <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">CDK</a> (Cloud Development Kit) as a SDK layer above CF, at the cost of making troubleshooting more complex. A <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">library</a> of "constructs" in TypeScript, JavaScript, Python, Java, .NET C#, and Go. An example in Python to create an Amazon Elastic Container Service (Amazon ECS) service with AWS Fargate launch type:
+   ```python
+   class MyEcsConstructStack(Stack):
+      def __init__(self, scope: Construct, id: str, **kwargs) -> None:
+         super().__init__(scope, id, **kwargs)
+
+         vpc = ec2.Vpc(self, "MyVpc", max_azs=3)     # default is all AZs in region
+         cluster = ecs.Cluster(self, "MyCluster", vpc=vpc)
+         ecs_patterns.ApplicationLoadBalancedFargateService(self, "MyFargateService",
+            cluster=cluster,            # Required
+            cpu=512,                    # Default is 256
+            desired_count=6,            # Default is 1
+            task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
+               image=ecs.ContainerImage.from_registry("amazon/amazon-ecs-sample")),
+            memory_limit_mib=2048,      # Default is 512
+            public_load_balancer=True)  # Default is False
+   ```
+   <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">A "stack" of several constructs</a> may be needed.
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png"><img alt="aws-cdk-stack.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png" /></a>
+
+   Each construct creates Cloud Formation files AWS uses to create resources.
+
+   CDK provides no built-in support for Secrets Management.
+   But Pulumi provides built-in support for encrypted secrets. It also supports third-party providers.
+
+   Policy as Code.
+
+* <strong>Declaratively</strong> running Infrastructure as Code (IoC) DSL (Domain Specific Language) definitions to define the <strong>desired state</strong> of the AWS environment. This makes it easier to track changes and repeat the same environment in different regions and accounts. 
+
+   Cloud Formation (CF) was created by Amazon and only works within AWS. So its use would likely enable you to automate the latest tech AWS has to offer.
+
+   CF makes use of GitHub for tracking changes and to provide an AWS deployment role.
+
+   <a target="_blank" href="https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/">ECS web apps</a> with VPC, ECS/Fargate or Lambda, RDS/Dynamo can all be defined in CDK.
+   A GitHub Actions workflow runs cdk synth and cdk diff on PR, cdk deploy on merge.
+
+   Use of IaC makes it easier to evaluate the vulnerabilities and costs of an environment even before it is created. Authentication is by including APIKeys generated by AWS. 
+   
+   <a target="_blank" href="https://spacelift.io/blog/terraform-alternatives">Alternatives for IoC</a> on AWS include  Hashicorp CDKTF, <a target="_blank" href="https://wilsonmar.github.io/terraform/">Hashicorp Terraform</a> directed acyclic graphs, OpenTofu, <a target="_blank" href="https://spacelift.io/customers/affinity">Spacelift</a>, <a target="_blank" href="https://www.firefly.ai/academy/terraform-alternatives">Firefly</a>, <a target="_blank" href="https://scalr.com/learning-center/terraform-alternatives-checklist-before-switching/">Scalr cloud</a>, <a target="_blank" href="https://wilsonmar.github.io/ansible/">Red Hat Ansible</a>, Crossplane (inside K8s clusters), <a target="_blank" href="https://github.com/skypilot-org/skypilot">SkyPilot</a> (GPUs), etc. 
+   
+   Some of these are able to use <a target="_blank" href="https://wilsonmar.github.io/opa/">Open Policy Agents (OPA)</a> to define and enforce policies for security, accurate billing, etc. https://www.youtube.com/watch?v=RTEgE2lcyk4&t=1332s
+
+* <strong>Visibly</strong> reading from <a href="#MobileApps">AWS Console Mobile app</a> month-to-date costs, CloudWatch alarms triggered, and AWS Health issues identified.
+
+
+
+<a name="TypesOfAccounts"></a>
+   
+## Types of accounts to sign-up for
+
+1. PROTIP: There are several different sign-up pages: one for each country and type of user: 
+
+   * If you want to create a <strong>stand-alone account</strong> unaffiliateed with any company, click the "Sign up" button:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a> (<a href="#StandAloneAccount">see below</a>)
+   * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a> for program: AWS Academy, Cloud Institute, <a target="_blank" href="https://www.awseducate.com/student/s/content">Educate</a>, re/Start, Skill Builder, Skills Center.
+      
+   * If you're using your <strong>corporate email</strong>, check with your IT department, which may use federated Single-Sign-On. <a target="_blank" href="https://us-east-1.console.aws.amazon.com/singlesignon/home?region=us-east-1#/">IAM Identity Center</a> managed with the free AWS Organizations centralized service to enable enterprise scaling. It involves definition of Organizational Units (OUs) to specify additional security controls that enable consolidated billing, policy-based controls (SCPs), resource sharing, and organized account structures.
+
+   * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
+   * If you're using a gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
+   * If you're using the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
+   <br /><br />
+
+https://www.awseducate.com/registration/s/learner-faqs#jobs
+
+https://www.awseducate.com/registration/s/learner-faqs#emerging-talent-community
+AWS Emerging Talent Community when you earn digital badges
+
+<a name="StandAloneAccount"></a>
+
+## Stand-alone root account setup
+
+These are steps to create a stand-alone root account.
+
+1. At <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com/</a>, click "Create Account" at the top-right corner.
+1. Type your email address which you will set aside as the <strong>root</strong> email address which you will next use in social media. 
+1. For "AWS account name", examples are "master-billing" but the email works too.
+1. Switch to your email tab to click the link to verify your email address.
+1. PROTIP: When providing answers to Security Challenge Questions, do not specify the real answer,
+   which someone stole or figured out through social engineering. Instead, <strong>answer with nonsense</strong>
+1. Write that secret information down in your password manager.
+1. Compe up with a strong password.
+
+   PROTIP: Use 1Password so that you can easily generate up to <strong>64 character</strong> password, but remember only one password to access the 1Password database of secrets. 1Password encrypts its database so that you can make backups (to a USB drive or secure cloud). I favor 1Password because it provides a way to sync changes with your smartphone without going through the internet.
+
+   Because you only have to remember one master password, you can are free to change various passwords as often as you want with no fear of forgetting them.
+
+1. So you don't create a typo, from the password manager, copy the password and paste it into the password field.
+1. Paste the password (so you write a typo) into a text file, print it out to paper, and put that in your fire-proof vault.
+
+   ### Credit card
+
+1. Switch to your credit card webpage (such as CapitalOne.com) and login. PROTIP: Generate a special <strong>virtual</strong>number only for the AWS account.
+
+   <a target="_blank" href="https://www.linkedin.com/pulse/how-use-aws-free-tips-teaching-college-wong-chun-yin-cyrus-%E9%BB%83%E4%BF%8A%E5%BD%A5-/">PROTIP</a>: You need a credit card to open an account. But to limit exposure, some people provide to AWS numbers from a <a target="_blank" href="https://usa.visa.com/pay-with-visa/cards/prepaid-cards.html">pre-paid reloadable Visa</a> gift <a target="_blank" href="https://aws.amazon.com/premiumsupport/knowledge-center/accepted-payment-methods/">(debit) card</a> <a target="_blank" href="https://usa.visa.com/pay-with-visa/find-card/get-prepaid-card">pre-paid online</a> (which has an expiration date and some have a monthly service fee). 
+   
+   * The Blue Card from Walmart and American Express ends June 2026
+   * Discover bank card
+   * The <a target="_blank" href="https://www.drawpayvisa.com/">Drawpay card</a> provides a 1% refund on purchases and a mobile app to view balances. Others provide fee-Free cash withdrawal at over 25,000 MoneyPass ATMs.
+   <br /><br />
+
+1. In your password manager, write down the virtual number and switch back to AWS to paste that.
+
+   PROTIP: CAUTION: Once you give Amazon a credit card number, you cannot remove it. Amazon can continue to charge for it until the card expires in several years.
+
+1. In your password manager, type the expiration, and CVV card.
+1. PROTIP: Setup automatic billing to your checking account and note that in your monthly budget app.
+
+1. Provide your phone number. PROTIP:If you provide a Google Voice virtual number, it would be less of a hassle in case you change the actual number of your phone assigned by your carrier. So in case you change phone vendors (from ATT to T-Mobile), you only need to change it in Google Voice. Not everyone accepts a Google Voice virtual number for SMS verification.
+1. PROTIP: In your password manager, write down in that tag field the last 4 digits of the virtual number so you can easily find which accounts make use of that number.
+
+1. In your password manager, write down the <strong>Account Id</strong> that appears in the upper-right corner of the AWS Console page, such as:
+
+   1234-5678-9876
+
+   AWS will ask for the Account Id when you ask for support.
+
+   ## Console navigation & configuration
+
+1. In the blue pop-up, click "Continue" and "Try Now" to follow the tour. Click on a clear area of the screen to close the pop-up.
+
+1. Click the gear icon at upper-right to select user settings: language and Visual mode (such as "Dark").
+
+1. Click the "AWS" icon in the upper-left corner to return to your Console home page.
+1. PROTIP: Since you'll be using this Console screen often, drag the Console tab all the way to the left.
+1. PROTIP: Right-click the Console tab to Bookmark it so you can easily open it after logging out.
+
+   <a name="Health"></a>
+
+   ### AWS Health
+
+1. PROTIP: An important widget is the <strong>"AWS Health"</strong> widget. Drag its icon with the six dots to the top left of the page and let go. This widget also appears in the <a href="#AWSMobileApp">AWS mobile app</a>.
+
+   <a name="AWSMobileApp"></a>
+
+   ### AWS Mobile App on smart phones
+
+1. Get the <strong>AWS Console</strong> app on your mobile phone:
+
+   <a target="_blank" href="http://www.amazon.com/AWS-Mobile-LLC-Console/dp/B00ATSN730">On Google Android mobile phones</a>
+
+   On your iPhone, open the Store app and search to get <a target="_blank" href="https://itunes.apple.com/us/app/aws-console/id580990573?mt=8">AWS Console</a>. Make sure the publisher is <strong>AMZN Mobile LLC</strong>  which creates <a target="_blank" href="https://itunes.apple.com/us/developer/amzn-mobile-llc/id297606954?mt=8">all Amazon's apps</a>.
+
+   PROTIP: These apps got low review scores because the app only lets people read-only,
+   but not change anything. And the 2FA is clunky.
+
+1. <strong>Add an identity</strong>: select Root/IAM account or Federation.
+1. Enable Face ID on iPhones.
+1. Provide email, CAPTCHA security, password, email verification code. Success is seeing this:
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"><img alt="aws-mobile-iOS-1170x2532.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"></a>
+
+
+## Social Media
+
+* <a target="_blank" href="https://www.reddit.com/r/aws/">Reddit r/AWS</a>
+
+* <a target="_blank" href="https://www.twitch.tv/aws/videos/all">https://www.twitch.tv/aws/videos/all</a> videos include:
+
+   * <a target="_blank" href="https://www.twitch.tv/videos/206753304">IoT at re:Invent 2017 video</a> with Sarah Cooper (General Manager IoT), Kip Larson (Principal Product Manager for IoT Analytics)
+
+* Sign-up to receive the <a target="_blank" href="https://www.amazon.com/AWS-Architecture-Monthly-FREE-Subscription/dp/B077F2P7DH/ref=pd_sim_405_1?_encoding=UTF8&psc=1&refRID=8JWKBP6Z7PVJZG34T3AW">AWS Architecture Monthly (FREE Subscription)</a> on your Kindle account.
+
+   <a name="ForumAccount"></a>
+
+   ## Create Forum Account
+
+1. PROTIP: To ensure anonymity interacting on public forums, the Administrator should create in a public email system (such as gmail.com, hotmail.com, etc.) an email address for use on forums. Don't use a real name in the email address, but a positive adjective with a number to ensure it's unique, such as "concerned123".
+
+   AWS says "Your email will be kept private" but I don't trust that they can't be hacked.
+
+2. Go to the AWS forums at URL:
+
+   <a target="_blank" href="https://forums.aws.amazon.com/forum.jspa?forumID=150">https://forums.aws.amazon.com/forum.jspa?forumID=150</a>
+
+3. Register the new email address along with an AWS Nickname without a proper name, such as, again, "concerned123".
+
+3. Use that email in StackOverflow.com and other public forums.
+
+
+   ### AWS Support
+
+   "Support" consists of:
+   * <a href="#SupportCenter">Support Center</a>
+   * Expert Help
+   * Documentation
+   * Knowledge Center
+   * AWS Support Overview
+   * AWS re:Post
+
+   <a name="ComparePlans"></a>
+
+  ### Compare Support Plans
+
+   https://support.microsoft.com/en-us/home/contact?SourceApp=smcivr2
+
+1. Click <a target="_blank" href="https://console.aws.amazon.com/support/plans/home?#/">Amazon's Support Plan page here</a>.
+
+   Admins call (800) 865-9408 or (800) 642 7676 (toll-free, US only). Outside the United States, see <a target="_blank" href="https://support.microsoft.com/en-us/topic/global-customer-service-phone-numbers-c0389ade-5640-e588-8b0e-28de8afeb3f2">global support phone numbers</a>.
+
+   The Basic account does not enable you to communicate with Amazon people who can answer technical questions.
+
+   The $29/month Developer Plan enables you to open an unlimited number of support cases
+   only via email, with a 12-hour response time if "system impaired". Otherwise, the SLA
+   is 24 hours.
+
+   The $100/month Business Plan enables you to have 24/7 chat, phone, as well as email access with AWS Support people on an unlimited number of support cases, with a 1-hour response time for "production down" issues, or 4-hour response for "production impaired" issues.
+
+   Amazon's <strong>Enterprise Plan</strong> for $15,000/month gets you 15 minute response on "business critical system down" issues. This plan also comes with an assigned TAM (Technical Account Manager).
+
+   These dollar amounts are minimums, not fixed prices.
+
+   <a target="_blank" href="https://aws.amazon.com/premiumsupport/programs/iem/">https://aws.amazon.com/premiumsupport/programs/iem/</a> mentions "AWS Infrastructure Event Management (IEM) offers architecture and scaling guidance and operational support during the preparation and execution of planned events, such as shopping holidays, product launches, and migrations."
+
+1. Scroll down to mouse over the "$29" on the Pricing line at the bottom of the table.
+
+   ![aws-onboarding-pricing-179x101-7688](https://user-images.githubusercontent.com/300046/40592743-edf804f8-61df-11e8-82e4-d48308fe1c92.jpg)
+
+   PROTIP: Pricing for Developer support is the Greater of $29 or 3% of monthly AWS usage,
+   so you will pay more than $29 if you spend more than $966.67.
+
+1. Scroll back up to click the "Pricing example" link on the right.
+1. Notice that if your spend is $2,000, Amazon bills you $60 for support, not $29.
+
+   <img alt="aws-onboarding-price-example-533x307-27004.jpg" width="533" src="https://user-images.githubusercontent.com/300046/40593326-2004f3f2-61e5-11e8-956f-c74bc35a161b.jpg">
+
+1. Click the "Business" and "Enterprise" buttons in the pop-up to see sample volume pricing tiers.
+
+
+   <a name="SupportCenter"></a>
+
+   ### Support Center
+
+1. To view support cases filed and their status, see:   
+
+   <a target="_blank" href="https://console.aws.amazon.com/support/home">
+   https://console.aws.amazon.com/support/home</a>
+
+   Policies for this are:
+
+   * AWSSupportAccess (Allows users to access the AWS Support Center)
+   * SupportUser (This policy grants permissions to troubleshoot and resolve issues in an AWS account. This policy also enables the user to contact AWS support to create and manage cases)
+   <br /><br />
+
+
+## Job Roles
+
+* Cloud Application Developer: Turn Ideas into Digital Reality
+* DevOps Engineer: Ensure Smooth Cloud Operations
+* Cloud Engineer: Build the Backbone of the Cloud
+* Cloud Administrator: Safeguard and Optimize the Cloud
+* Cloud Support Engineer: Solve Complex Challenges
+
+## Separation of Duties and Concerns
+
+1. PROTIP: To follow Separation of Duties (SoD) principles, the account should be owned only by a company's Accounts Payable department under the corporation's Controller and not by operational or IT staff. this should be announced by a corporate office as company policy.
+
+1. In an enterprise when several people or departments are involved, create a sub-account for use with each level of processing, to provide individual traceability and accountability.
+
+1. A Global Adminstrators creates a set of <strong>sub-accounts</strong> and do not use the root account again except for emergency purposes.
+   
+   It's common for a separate account to be created for each <strong>department</strong> and <strong>project</strong> as well as each <strong>user</strong>. This is to limit the "blast radius" when an account's credentials become compromised, a situation we need to prepare for.
+
+   CAUTION: Do not use email address used for AWS to also be used in social media.
+   Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping.
+
+1. PROTIP: Passage of access responsibility should be recorded with time stamps and signatures of the parties involved, with a witness present.
+
+https://policysim.aws.amazon.com
+
+
+## IAM Identity Center for AWS Organizations
+
 <a target="_blank" href="https://www.youtube.com/watch?v=_KhrGFV_Npw&pp=2AYt">VIDEO</a>:
 The AWS Organizations service enables various accounts to be consolidated centrally.
-billings for various accounts can be combined to apply volume discounts.
+billings for various accounts can be combined to apply <strong>volume discounts</strong>.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=gpquYmcpZpo">VIDEO</a>: 
 Amazon's "IAM Identity Center" service was previously called AWS Single Sign On (SSO)
 for accessing Salesforce, Box, Microsoft 365, and other apps enabled with SAML 2.0 (GitHub).
-It also collaborates with centralized identity providers such as Okta, Microsoft Active Directory.
+
+IAM Identity Center can obtain from centralized identity providers such as Okta, Microsoft Active <strong>attributes</strong> from their corporate directories into AWS sessions. 
+
+Attributes include department, project, cost center, location, or other fine-grained <strong>tag-value pairs</strong> attached to AWS principals (like users or roles) or resources (like S3 buckets, KMS keys, or SQS queues). Attributes are used for <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html">ABAC (Attribute-Based Access Control)</a> for AWS to grant access based on attributes.
 
 https://www.youtube.com/watch?v=hAk-7ImN6iM
 
@@ -322,62 +559,6 @@ PROTIP: The distinctive aspect of this tutorial is that you are trained to <stro
 1. When a tab group is removed, the corresponding session will be automatically signed out.
 
 
-## Ways to interact with AWS:
-
-Console GUI, CLI, API, IoC, Mobile:
-
-* <strong>Visually</strong> clicking and typing on the internet browser "<strong>AWS Management Console</strong>"</a> at <tt>https://console.aws.amazon.com/</tt>. It's used during initial setup to <a href="#RootCredentials">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootCredentials">Root Account</a>. Authentication is by user name and password plus MFA.
-
-* <strong>Textually</strong> typing in the <strong>CLI</strong> (Command Line Interface)</a> provided by the MacOS/Linux Terminal or Windows PC Command (cmd) utility. The AWS CLI program is installed for <a target="_blank" href="https://wilsonmar.github.io/aws-cli/"><tt>aws</tt> commands</a> to be executed interactively or within interpretive Bash scripts scheduled in batch jobs. Authentication is by <tt>aws configure</tt> command which stores credentials <tt>aws_access_key_id</tt> and <tt>aws_secret_access_key=</tt> in an unencrypted file at <tt>~/.aws/credentials</tt>.
-
-* <strong>Programmatically</strong> running custom program code (such as Pyyhon, JavaScript, etc.) which call AWS APIs (Application Programming Interface) called by custom programs calling <a href="#APIKeys">AWS's API (Application Programming Interface)</a>. Amazon's Boto3 SDK and Pulumi.com use this approach. This is the mechanism behind the scenes by <a href="#MobileApps">mobile apps</a>. Authentication is by including APIKeys generated by AWS.
-
-   Amazon open-sourced its <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">CDK</a> (Cloud Development Kit) as a SDK layer above CF, at the cost of making troubleshooting more complex. A <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">library</a> of "constructs" in TypeScript, JavaScript, Python, Java, .NET C#, and Go. An example in Python to create an Amazon Elastic Container Service (Amazon ECS) service with AWS Fargate launch type:
-   ```python
-   class MyEcsConstructStack(Stack):
-      def __init__(self, scope: Construct, id: str, **kwargs) -> None:
-         super().__init__(scope, id, **kwargs)
-
-         vpc = ec2.Vpc(self, "MyVpc", max_azs=3)     # default is all AZs in region
-         cluster = ecs.Cluster(self, "MyCluster", vpc=vpc)
-         ecs_patterns.ApplicationLoadBalancedFargateService(self, "MyFargateService",
-            cluster=cluster,            # Required
-            cpu=512,                    # Default is 256
-            desired_count=6,            # Default is 1
-            task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
-               image=ecs.ContainerImage.from_registry("amazon/amazon-ecs-sample")),
-            memory_limit_mib=2048,      # Default is 512
-            public_load_balancer=True)  # Default is False
-   ```
-   <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">A "stack" of several constructs</a> may be needed.
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png"><img alt="aws-cdk-stack.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png" /></a>
-
-   Each construct creates Cloud Formation files AWS uses to create resources.
-
-   CDK provides no built-in support for Secrets Management.
-   But Pulumi provides built-in support for encrypted secrets. It also supports third-party providers.
-
-   Policy as Code.
-
-* <strong>Declaratively</strong> running Infrastructure as Code (IoC) DSL (Domain Specific Language) definitions to define the <strong>desired state</strong> of the AWS environment. This makes it easier to track changes and repeat the same environment in different regions and accounts. 
-
-   Cloud Formation (CF) was created by Amazon and only works within AWS. So its use would likely enable you to automate the latest tech AWS has to offer.
-
-   CF makes use of GitHub for tracking changes and to provide an AWS deployment role.
-
-   <a target="_blank" href="https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/">ECS web apps</a> with VPC, ECS/Fargate or Lambda, RDS/Dynamo can all be defined in CDK.
-   A GitHub Actions workflow runs cdk synth and cdk diff on PR, cdk deploy on merge.
-
-   Use of IaC makes it easier to evaluate the vulnerabilities and costs of an environment even before it is created. Authentication is by including APIKeys generated by AWS. 
-   
-   <a target="_blank" href="https://spacelift.io/blog/terraform-alternatives">Alternatives for IoC</a> on AWS include  Hashicorp CDKTF, <a target="_blank" href="https://wilsonmar.github.io/terraform/">Hashicorp Terraform</a> directed acyclic graphs, OpenTofu, <a target="_blank" href="https://spacelift.io/customers/affinity">Spacelift</a>, <a target="_blank" href="https://www.firefly.ai/academy/terraform-alternatives">Firefly</a>, <a target="_blank" href="https://scalr.com/learning-center/terraform-alternatives-checklist-before-switching/">Scalr cloud</a>, <a target="_blank" href="https://wilsonmar.github.io/ansible/">Red Hat Ansible</a>, Crossplane (inside K8s clusters), <a target="_blank" href="https://github.com/skypilot-org/skypilot">SkyPilot</a> (GPUs), etc. 
-   
-   Some of these are able to use <a target="_blank" href="https://wilsonmar.github.io/opa/">Open Policy Agents (OPA)</a> to define and enforce policies for security, accurate billing, etc. https://www.youtube.com/watch?v=RTEgE2lcyk4&t=1332s
-
-* <strong>Visibly</strong> reading from <a href="#MobileApps">AWS Console Mobile app</a> month-to-date costs, CloudWatch alarms triggered, and AWS Health issues identified.
-
-SECURITY PROTIP: Many enterprises do not permit use of interactive CLI and Console GUI in production and instead allow only automated API calls by IaC (such as CloudFormation and Terraform). This is to ensure version control and repeatability during testing.
-
 
 <hr />
 
@@ -406,148 +587,11 @@ Follow these steps to create a profile account:
 
    NOTE: <a target="_blank" href="https://iq.aws.amazon.com/?utm=dp">AWS IQ</a> (Experts on Demand) will be discontinued on May 28, 2026.
 
-### Job Roles
-
-* Cloud Application Developer: Turn Ideas into Digital Reality
-* DevOps Engineer: Ensure Smooth Cloud Operations
-* Cloud Engineer: Build the Backbone of the Cloud
-* Cloud Administrator: Safeguard and Optimize the Cloud
-* Cloud Support Engineer: Solve Complex Challenges
-
-
-### Social Accounts
-
-* <a target="_blank" href="https://www.reddit.com/r/aws/">Reddit r/AWS</a>
-
-* <a target="_blank" href="https://www.twitch.tv/aws/videos/all">https://www.twitch.tv/aws/videos/all</a> videos include:
-
-   * <a target="_blank" href="https://www.twitch.tv/videos/206753304">IoT at re:Invent 2017 video</a> with Sarah Cooper (General Manager IoT), Kip Larson (Principal Product Manager for IoT Analytics)
-
-* Sign-up to receive the <a target="_blank" href="https://www.amazon.com/AWS-Architecture-Monthly-FREE-Subscription/dp/B077F2P7DH/ref=pd_sim_405_1?_encoding=UTF8&psc=1&refRID=8JWKBP6Z7PVJZG34T3AW">AWS Architecture Monthly (FREE Subscription)</a> on your Kindle account.
-
-
-<a name="ForumAccount"></a>
-
-### Create Forum Account
-
-1. PROTIP: To ensure anonymity interacting on public forums, the Administrator should create in a public email system (such as gmail.com, hotmail.com, etc.) an email address for use on forums. Don't use a real name in the email address, but a positive adjective with a number to ensure it's unique, such as "concerned123".
-
-   AWS says "Your email will be kept private" but I don't trust that they can't be hacked.
-
-2. Go to the AWS forums at URL:
-
-   <a target="_blank" href="https://forums.aws.amazon.com/forum.jspa?forumID=150">https://forums.aws.amazon.com/forum.jspa?forumID=150</a>
-
-3. Register the new email address along with an AWS Nickname without a proper name, such as, again, "concerned123".
-
-3. Use that email in StackOverflow.com and other public forums.
 
 
 <hr />
 
-<a name="TypesOfAccounts"></a>
-   
-## Types of accounts to sign-up for
-
-1. PROTIP: There are several different sign-up pages: one for each country and type of user: 
-
-   * If you want to create a <strong>stand-alone account</strong> unaffiliateed with any company, click the "Sign up" button:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a> (<a href="#StandAloneAccount">see below</a>)
-   * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a> for program: AWS Academy, Cloud Institute, <a target="_blank" href="https://www.awseducate.com/student/s/content">Educate</a>, re/Start, Skill Builder, Skills Center.
-      
-   * If you're using your <strong>corporate email</strong>, check with your IT department, which may use federated Single-Sign-On. <a target="_blank" href="https://us-east-1.console.aws.amazon.com/singlesignon/home?region=us-east-1#/">IAM Identity Center</a> managed with the free AWS Organizations centralized service to enable enterprise scaling. It involves definition of Organizational Units (OUs) to specify additional security controls that enable consolidated billing, policy-based controls (SCPs), resource sharing, and organized account structures.
-
-   * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
-   * If you're using a gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
-   * If you're using the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
-   <br /><br />
-
-https://www.awseducate.com/registration/s/learner-faqs#jobs
-
-https://www.awseducate.com/registration/s/learner-faqs#emerging-talent-community
-AWS Emerging Talent Community when you earn digital badges
-
-<a name="StandAloneAccount"></a>
-
-## Stand-alone root account setup
-
-These are steps to create a stand-alone root account.
-
-1. At <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com/</a>, click "Create Account" at the top-right corner.
-1. Type your email address which you will set aside as the <strong>root</strong> email address which you will next use in social media. 
-1. For "AWS account name", examples are "master-billing" but the email works too.
-1. Switch to your email tab to click the link to verify your email address.
-1. PROTIP: When providing answers to Security Challenge Questions, do not specify the real answer,
-   which someone stole or figured out through social engineering. Instead, <strong>answer with nonsense</strong>
-1. Write that secret information down in your password manager.
-1. Compe up with a strong password.
-
-   PROTIP: Use 1Password so that you can easily generate up to <strong>64 character</strong> password, but remember only one password to access the 1Password database of secrets. 1Password encrypts its database so that you can make backups (to a USB drive or secure cloud). I favor 1Password because it provides a way to sync changes with your smartphone without going through the internet.
-
-   Because you only have to remember one master password, you can are free to change various passwords as often as you want with no fear of forgetting them.
-
-1. So you don't create a typo, from the password manager, copy the password and paste it into the password field.
-1. Paste the password (so you write a typo) into a text file, print it out to paper, and put that in your fire-proof vault.
-
-   ### Credit card
-
-1. Switch to your credit card webpage (such as CapitalOne.com) and login. PROTIP: Generate a special <strong>virtual</strong>number only for the AWS account.
-
-   <a target="_blank" href="https://www.linkedin.com/pulse/how-use-aws-free-tips-teaching-college-wong-chun-yin-cyrus-%E9%BB%83%E4%BF%8A%E5%BD%A5-/">PROTIP</a>: You need a credit card to open an account. But to limit exposure, some people provide to AWS numbers from a <a target="_blank" href="https://usa.visa.com/pay-with-visa/cards/prepaid-cards.html">pre-paid reloadable Visa</a> gift <a target="_blank" href="https://aws.amazon.com/premiumsupport/knowledge-center/accepted-payment-methods/">(debit) card</a> <a target="_blank" href="https://usa.visa.com/pay-with-visa/find-card/get-prepaid-card">pre-paid online</a> (which has an expiration date and some have a monthly service fee). 
-   
-   * The Blue Card from Walmart and American Express ends June 2026
-   * Discover bank card
-   * The <a target="_blank" href="https://www.drawpayvisa.com/">Drawpay card</a> provides a 1% refund on purchases and a mobile app to view balances. Others provide fee-Free cash withdrawal at over 25,000 MoneyPass ATMs.
-   <br /><br />
-
-1. In your password manager, write down the virtual number and switch back to AWS to paste that.
-
-   PROTIP: CAUTION: Once you give Amazon a credit card number, you cannot remove it. Amazon can continue to charge for it until the card expires in several years.
-
-1. In your password manager, type the expiration, and CVV card.
-1. PROTIP: Setup automatic billing to your checking account and note that in your monthly budget app.
-
-1. Provide your phone number. PROTIP:If you provide a Google Voice virtual number, it would be less of a hassle in case you change the actual number of your phone assigned by your carrier. So in case you change phone vendors (from ATT to T-Mobile), you only need to change it in Google Voice. Not everyone accepts a Google Voice virtual number for SMS verification.
-1. PROTIP: In your password manager, write down in that tag field the last 4 digits of the virtual number so you can easily find which accounts make use of that number.
-
-1. In your password manager, write down the <strong>Account Id</strong> that appears in the upper-right corner of the AWS Console page, such as:
-
-   1234-5678-9876
-
-   AWS will ask for the Account Id when you ask for support.
-
-   ## Console navigation & configuration
-
-1. In the blue pop-up, click "Continue" and "Try Now" to follow the tour. Click on a clear area of the screen to close the pop-up.
-
-1. Click the gear icon at upper-right to select user settings: language and Visual mode (such as "Dark").
-
-1. Click the "AWS" icon in the upper-left corner to return to your Console home page.
-1. PROTIP: Since you'll be using this Console screen often, drag the Console tab all the way to the left.
-1. PROTIP: Right-click the Console tab to Bookmark it so you can easily open it after logging out.
-
-   <a name="Health"></a>
-
-   ### AWS Health
-
-1. PROTIP: An important widget is the <strong>"AWS Health"</strong> widget. Drag its icon with the six dots to the top left of the page and let go. This widget also appears in the <a href="#MobileApps">AWS mobile apps</a>.
-
-   <a name="SupportCenter"></a>
-
-   ### Support Center
-
-1. To view support cases filed and their status, see:   
-
-   <a target="_blank" href="https://console.aws.amazon.com/support/home">
-   https://console.aws.amazon.com/support/home</a>
-
-   Policies for this are:
-
-   * AWSSupportAccess (Allows users to access the AWS Support Center)
-   * SupportUser (This policy grants permissions to troubleshoot and resolve issues in an AWS account. This policy also enables the user to contact AWS support to create and manage cases)
-   <br /><br />
-
-
-   ## AWS Free Tier Benefits
+## AWS Free Tier Benefits
 
 1. Notice within the <strong>"Cost and Usage"</strong> widget the days and date for credits remaining. 
 1. PROTIP: Create in your calendar an event to take action before your credits run out.
@@ -622,9 +666,19 @@ These are steps to create a stand-alone root account.
 1. Scroll down to the Security Token Service (STS) Info "Endpoints" section.
 1. Select each region you won't use regularly. Confirm "Deactivate" each.   
 
-   Don't deactivate your <a href="#DefaultRegion">default region</a>.
+   CAUTION: Don't deactivate your <a href="#DefaultRegion">default region</a>.
 
-1. ???
+   ### Deactivate regions not used
+
+   On the same "Account settings" page:
+
+1. Scroll down to "Security Token Service Regions" and deactivate regions your organization are not using.
+
+   PROTIP: Select a Region where most of your target users are located.
+   New services are usually restricted to one region, such as N. Virginia or N. California where AWS does development work.
+
+   This task can be <a target="_blank" href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html">automated with CLI script</a> using a custom list of regions.
+
 
    A new account will have this:
 
@@ -659,13 +713,13 @@ These are steps to create a stand-alone root account.
 
 1. Keep thieves from using regions you don't usually use and thus won't notice. Scroll down to "Security Token Service Regions" and deactivate regions you are not using.
 
-    PROTIP: The region is where most of your users are located.
-    New services are usually restricted to one region, such as N. Virginia or N. California where AWS does development work.
+   PROTIP: The region is where most of your users are located.
+   New services are usually restricted to one region, such as N. Virginia or N. California where AWS does development work.
 
 
-    ### MFA (Multi-Factor Authentication)
+   ### MFA (Multi-Factor Authentication)
 
-    This has AWS text or call your smartphone (a virtual device) to make sure that it's really you logging in.
+   This has AWS text or call your smartphone (a virtual device) to make sure that it's really you logging in.
  
 1. Click <strong>Activate MFA</strong>
 1. Click "A virtual MFA device".
@@ -875,37 +929,6 @@ Within an organization, it's common for a separate account to be created for eac
 
 
 
-<a name="MobileApps"></a>
-
-## Mobile apps for smart phones
-
-1. Get the <strong>AWS Console</strong> app on your mobile phone:
-
-   <a target="_blank" href="http://www.amazon.com/AWS-Mobile-LLC-Console/dp/B00ATSN730">On Google Android mobile phones</a>
-
-   On your iPhone, open the Store app and search to get <a target="_blank" href="https://itunes.apple.com/us/app/aws-console/id580990573?mt=8">AWS Console</a>. Make sure the publisher is <strong>AMZN Mobile LLC</strong>  which creates <a target="_blank" href="https://itunes.apple.com/us/developer/amzn-mobile-llc/id297606954?mt=8">all Amazon's apps</a>.
-
-   PROTIP: These apps got low review scores because the app only lets people read-only,
-   but not change anything. And the 2FA is clunky.
-
-2. <strong>Add an identity</strong>: select Root/IAM account or Federation.
-3. Enable Face ID on iPhones.
-4. Provide email, CAPTCHA security, password, email verification code. Success is seeing this:
-
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"><img alt="aws-mobile-iOS-1170x2532.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"></a>
-
-
-   ### Deactivate regions not used
-
-   On the same "Account settings" page:
-
-1. Scroll down to "Security Token Service Regions" and deactivate regions your organization are not using.
-
-   PROTIP: Select a Region where most of your target users are located.
-   New services are usually restricted to one region, such as N. Virginia or N. California where AWS does development work.
-
-   This task can be <a target="_blank" href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html">automated with CLI script</a> using a custom list of regions.
-
 
    ### Quick Access icons
 
@@ -946,7 +969,7 @@ Within an organization, it's common for a separate account to be created for eac
 
 
 
-## Installing, updating AWS CLI version 2
+## Installing, updating AWS CLI
 
 AWS CLI versions 1 and 2 use the same aws command name. 
 
@@ -954,7 +977,7 @@ If you have both versions installed, your computer uses the…docs.aws.amazon.co
 
 The installer automatically creates a symlink in a folder in your PATH which links to the main program in the installation folder you chose:
 
-1. Identify the version and location of the installed version:
+1. Identify the version and location of what is installed:
    ```
    ls -al $(which aws)
    ```
@@ -1479,6 +1502,34 @@ Foundational Policy library</a> is at <a target="_blank" href="https://github.co
 
 
 <hr />
+
+<a name="S3Js"></a>
+
+## Coding to obtain resources from S3
+
+In this sample JavaScript code to retrieve a bucket from Amazon S3:
+
+```JavaScript
+import {s3client, GetObjectCommand} from "@aws-sdk/client-s3";
+const s3Client = new S3Client({});
+const obj = await s3client.send(new GetObjectCommand({
+  Bucket: 'example-bucket',
+  Key: 'path/to/obj'
+});
+...
+```
+The <strong>new S3Client()</strong> is called to find the credentials.
+App developers don't have to code authentication code.
+
+This CLI Bash script code does the same:
+```
+aws sso login
+aws s3api get-object --bucket example-bucket --key path/to/obj --debug /tmp/obj.out
+```
+BTW the example-bucket can be retrieved using CLI command:
+```
+dig example-bucket.s3.amazonaws.com
+```
 
 <a name="S3BucketNames"></a>
 
