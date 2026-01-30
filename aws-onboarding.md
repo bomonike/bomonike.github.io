@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-01-28"
-lastchange: "26-01-28 v104 flowchart :aws-onboarding.md"
+date: "2026-01-29"
+lastchange: "26-01-29 v105 control tower :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -19,7 +19,7 @@ created: "2016-03-29"
 {% include l18n.html %}
 {% include _toc.html %}
 
-<a target="_blank" href="https://wilsonmar.github.io/aws-onboarding/">This</a> is a logically presented <strong>hands-on deep dive</strong> on how to setup AWS cloud like a pro. Advice prefixed by "PROTIP" highlight my hard-won advice available no                                            where else.
+<a target="_blank" href="https://wilsonmar.github.io/aws-onboarding/">This</a> is a logically presented <strong>hands-on deep dive</strong> on how to setup AWS cloud like a pro. Advice prefixed by "PROTIP" highlight my hard-won advice available nowhere else.
 
 Covered here are instructions on how to install and code <strong>CLI scripts</strong> and Python programs, and 3rd party tools used by pros.
 
@@ -43,9 +43,158 @@ B1. each end-user needs to spend between receiving instructions to being complet
 PROTIP: CAUTION: Using speed as the primary basis for judging performance can lead to cutting corners and thus security holes. So security must be a primary consideration. But security is difficult to measure.
 
 
+## AWS Marketing Page
+
+1. Use an internet browser to get on the <strong>AWS marketing page</strong> at 
+
+   <a target="_blank" href="https://aws.com/">https://aws.com</a> resolves to<br />
+   <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
+
+1. Explore its menu items:
+
+   <a target="_blank" href="https://aws.amazon.com/"><img alt="aws-landing-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154950/aws-landing-menu_e8io6g.png"></a>
+   <!-- aws-marketing-1205x224_uaojtf.png -->
+
+   PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
+
+   "My account" consists of:
+   * <a href="#Console">AWS Management Console</a>
+   * <a href="#account-settings">Account Settings</a>
+   * <a href="#billing">Billing & Cost Management</a>
+   * <a href="#security">Security Credentials</a>
+   * <a href="https://health.console.aws.amazon.com/health/home?nc2=h_uta_hd#/account/dashboard/open-issues">AWS Personal Health Dashboard</a> (EventBridge rules)
+   <br /><br />
+
+   ## Browser Bookmarks
+
+1. Set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
+
+
+
+   <a name="TypesOfAccounts"></a>
+   
+   ## Types of AWS accounts
+
+   PROTIP: There are several different sign-up processess:
+
+   * If you want to <a href="#StandAloneAccount">create an individual (stand-alone) account</a> (using a free email account such as Gmail) unaffiliated with any company, click the "Sign up" button at:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a>
+
+      PROTIP: CAUTION: To stop fueling phishing attempts, create new email addresses for use in AWS so that you don't expose it in public social media.
+      Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping. 
+
+      Individual accounts have use of designated <a href="#FreeTier">Free Tier</a> resources for a period of time.
+
+   * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a> for program: AWS Academy, Cloud Institute, <a target="_blank" href="https://www.awseducate.com/student/s/content">Educate</a>, re/Start, Skill Builder, Skills Center.
+
+      * https://www.awseducate.com/registration/s/learner-faqs#jobs
+      * https://www.awseducate.com/registration/s/learner-faqs#emerging-talent-community AWS Emerging Talent Community when you earn digital badges
+      <br /><br />
+
+      Education accounts also have use of a <a href="#FreeTier">Free Tier</a>.
+         
+   * If you're using your <strong>corporate email</strong>, check with your IT department, which typically use <a href="#AWSOrganizations">AWS Organizations</a> and federated Single-Sign-On to enable enterprise scaling. It involves definition of Organizational Units (OUs) to specify additional security controls that enable consolidated billing, policy-based controls (SCPs), resource sharing, and organized account structures.
+      
+         CAUTION: Switching to use <a href="#AWSOrganizations">AWS Organizations</a> before the end of the individual <a href="#FreeTier">Free Tier</a> period automatically <a target="_blank" href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html">upgrades the account to a paid plan</a>.
+
+   * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
+
+   * If you're using a .gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
+      
+   * If you're using the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
+
+   * Separate <strong>environments</strong> (aka sandboxes) need to be created
+   so that different changes can be evaluated at each levels of maturity, simultaneously: 
+   dev (development), performance testing, training, staging, production, etc.
+
+
+
+<a name="WaysToInteract"></a>
+
+## Ways to create resources in AWS
+
+Console Console GUI, Terminal CLI, Python* API, IoC JSON:
+
+* <strong>Visually</strong> clicking and typing on the internet browser "<strong>AWS Management Console</strong>" at <a target="_blank" href="https://console.aws.amazon.com/">https://console.aws.amazon.com</a>. The Console is used during initial setup to <a href="#RootCredentials">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootCredentials">Root Account</a>. Authentication is by user name and password plus MFA.
+
+   SECURITY PROTIP: Many enterprises do not permit use of interactive CLI and Console GUI in production and instead allow only automated API calls by IaC (such as CloudFormation and Terraform). This is to ensure version control and repeatability.
+
+* <strong>Textually</strong> typing in the <strong>CLI</strong> (Command Line Interface) provided by the MacOS/Linux Terminal or Windows PC Command (cmd) utility. The AWS CLI program is installed for <a target="_blank" href="https://wilsonmar.github.io/aws-cli/"><tt>aws</tt> commands</a> to be executed interactively or within interpretive Bash scripts scheduled in batch jobs. Authentication is by <tt>aws configure</tt> command which stores credentials <tt>aws_access_key_id</tt> and <tt>aws_secret_access_key=</tt> in an unencrypted file at <tt>~/.aws/credentials</tt>.
+
+* <strong>Programmatically</strong> running custom program code (such as Python, JavaScript, etc.) which call AWS APIs (Application Programming Interface) called by custom programs calling <a href="#APIKeys">AWS's API (Application Programming Interface)</a>. Amazon's Boto3 SDK and Pulumi.com use this approach. This is the mechanism behind the scenes by mobile apps. Authentication is by including APIKeys generated by AWS.
+
+   Amazon open-sourced its <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">CDK</a> (Cloud Development Kit) as a SDK layer above CF, at the cost of making troubleshooting more complex. A <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">library</a> of "constructs" in TypeScript, JavaScript, Python, Java, .NET C#, and Go. An example in Python to create an Amazon Elastic Container Service (Amazon ECS) service with AWS Fargate launch type:
+   ```python
+   class MyEcsConstructStack(Stack):
+      def __init__(self, scope: Construct, id: str, **kwargs) -> None:
+         super().__init__(scope, id, **kwargs)
+
+         vpc = ec2.Vpc(self, "MyVpc", max_azs=3)     # default is all AZs in region
+         cluster = ecs.Cluster(self, "MyCluster", vpc=vpc)
+         ecs_patterns.ApplicationLoadBalancedFargateService(self, "MyFargateService",
+            cluster=cluster,            # Required
+            cpu=512,                    # Default is 256
+            desired_count=6,            # Default is 1
+            task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
+               image=ecs.ContainerImage.from_registry("amazon/amazon-ecs-sample")),
+            memory_limit_mib=2048,      # Default is 512
+            public_load_balancer=True)  # Default is False
+   ```
+   <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">A "stack" of several constructs</a> may be needed.
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png"><img alt="aws-cdk-stack.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png" /></a>
+
+   Each construct creates Cloud Formation files AWS uses to create resources.
+
+   CDK provides no built-in support for Secrets Management.
+   But Pulumi provides built-in support for encrypted secrets. It also supports third-party providers.
+
+   Policy as Code.
+
+* <strong>Declaratively</strong> running Infrastructure as Code (IoC) DSL (Domain Specific Language) definitions to define the <strong>desired state</strong> of the AWS environment. This makes it easier to track changes and repeat the same environment in different regions and accounts. 
+
+   Cloud Formation (CF) was created by Amazon and only works within AWS. So its use would likely enable you to automate the <strong>latest tech</strong> AWS has to offer.
+
+   <a target="_blank" href="https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/aws-cloudformation-templates.html">Download AWS Cloud Migration Factory template</a> text file (6119 lines).
+
+   CF makes use of GitHub for tracking changes and to provide an AWS deployment role.
+
+   <a target="_blank" href="https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/">ECS web apps</a> with VPC, ECS/Fargate or Lambda, RDS/Dynamo can all be defined in CDK.
+   A GitHub Actions workflow runs cdk synth and cdk diff on PR, cdk deploy on merge.
+
+   Use of IaC makes it easier to evaluate the vulnerabilities and costs of an environment even before it is created. Authentication is by including APIKeys generated by AWS. 
+   
+   <a target="_blank" href="https://spacelift.io/blog/terraform-alternatives">Alternatives for IoC</a> on AWS include  Hashicorp CDKTF, <a target="_blank" href="https://wilsonmar.github.io/terraform/">Hashicorp Terraform</a> directed acyclic graphs, OpenTofu, <a target="_blank" href="https://spacelift.io/customers/affinity">Spacelift</a>, <a target="_blank" href="https://www.firefly.ai/academy/terraform-alternatives">Firefly</a>, <a target="_blank" href="https://scalr.com/learning-center/terraform-alternatives-checklist-before-switching/">Scalr cloud</a>, <a target="_blank" href="https://wilsonmar.github.io/ansible/">Red Hat Ansible</a>, Crossplane (inside K8s clusters), <a target="_blank" href="https://github.com/skypilot-org/skypilot">SkyPilot</a> (GPUs), etc. 
+   
+   Some of these are able to use <a target="_blank" href="https://wilsonmar.github.io/opa/">Open Policy Agents (OPA)</a> to define and enforce policies for security, accurate billing, etc. https://www.youtube.com/watch?v=RTEgE2lcyk4&t=1332s
+
+* <strong>Visibly</strong> reading from <a href="#AWSMobileApp">AWS Console Mobile app</a> month-to-date costs, CloudWatch alarms triggered, and AWS Health issues identified.
+
+
+<a name="AWSMobileApp"></a>
+
+## AWS Mobile App on smart phones
+
+1. Get the <strong>AWS Console</strong> app on your mobile phone:
+
+   <a target="_blank" href="http://www.amazon.com/AWS-Mobile-LLC-Console/dp/B00ATSN730">On Google Android mobile phones</a>
+
+   On your iPhone, open the Store app and search to get <a target="_blank" href="https://itunes.apple.com/us/app/aws-console/id580990573?mt=8">AWS Console</a>. Make sure the publisher is <strong>AMZN Mobile LLC</strong>  which creates <a target="_blank" href="https://itunes.apple.com/us/developer/amzn-mobile-llc/id297606954?mt=8">all Amazon's apps</a>.
+
+   PROTIP: These apps got low review scores because the app only lets people read-only,
+   but not change anything. And the 2FA is clunky.
+
+1. <strong>Add an identity</strong>: select Root/IAM account or Federation.
+1. Enable Face ID on iPhones.
+1. Provide email, CAPTCHA security, password, email verification code. Success is seeing this:
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"><img alt="aws-mobile-iOS-1170x2532.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"></a>
+
+
+
 <a name="Flowchart"></a>
 
 ## Ecosystem Flowchart
+
+Let's jump right inside the heart of the technology:
 
 1. Click on this flowchart for a movie about the simplified sequence to establish an essential corporate IT ecosystem:
 
@@ -60,12 +209,12 @@ All this work can be done by one person. But "separation of duties" is shown how
    Regions not used are disabled to prevent rogue charges from accumulating.
 
 1. Architects also define <strong>policy files</strong> to specify the <strong>actions</strong> on AWS resources that each <strong>AWS Security Group</strong> is allowed to use.
-1. People handling <strong>Payables</strong> are fudiciaries of the <strong>AWS Root Account</strong> created with the credit card charges for billing.
+1. People handling <strong>Payables</strong> are fudiciaries of the <a  href="#StandAloneAccount">AWS Root Account created</a> with the credit card charges for billing. 
 
-   PROTIP: NAMING CONVENTION: Include in the name of each root account the date when initial free plan <strong>ends</strong>. Starting in 2026, that's six months instead of 12 months previously. 
+   PROTIP: Passage of account ownership should be recorded with time stamps and signatures of the parties involved, with a witness present.
+
+   PROTIP: NAMING CONVENTION: Include in the name of each root account the date when initial <a href="#FreeTier">Free Tier</a> <strong>ends</strong>. Starting in 2026, that's six months instead of 12 months previously. 
    
-   Use of <strong>AWS Organizations</strong> or some other AWS services and offers require an upgrade to a <a target="_blank" href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html">paid plan</a>.
-
    PROTIP: Since the root account has "God-mode" capability to do anything, it is NOT used after it is used to create a set of "IAM accounts", each with some <strong>limitations</strong>, which many call "Least Privilege" to do each job.
 
 1. Each IAM account is associated with URLs and <strong>secrets</strong> used to login.
@@ -115,115 +264,9 @@ RECAP static flowchart:
 
 
 
-## AWS Marketing Page
-
-1. Use an internet browser to get on the <strong>AWS marketing page</strong> at 
-
-   <a target="_blank" href="https://aws.com/">https://aws.com</a> resolves to<br />
-   <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
-
-1. Explore its menu items:
-
-   <a target="_blank" href="https://aws.amazon.com/"><img alt="aws-landing-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154950/aws-landing-menu_e8io6g.png"></a>
-   <!-- aws-marketing-1205x224_uaojtf.png -->
-
-   PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
-
-   "My account" consists of:
-   * <a href="#Console">AWS Management Console</a>
-   * <a href="#account-settings">Account Settings</a>
-   * <a href="#billing">Billing & Cost Management</a>
-   * <a href="#security">Security Credentials</a>
-   * <a href="https://health.console.aws.amazon.com/health/home?nc2=h_uta_hd#/account/dashboard/open-issues">AWS Personal Health Dashboard</a> (EventBridge rules)
-   <br /><br />
-
-1. Set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
-
-
-<a name="WaysToInteract"></a>
-
-## Ways to create resources in AWS
-
-Console GUI, CLI, API, IoC, Mobile:
-
-* <strong>Visually</strong> clicking and typing on the internet browser "<strong>AWS Management Console</strong>" at <a target="_blank" href="https://console.aws.amazon.com/">https://console.aws.amazon.com</a>. The Console is used during initial setup to <a href="#RootCredentials">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootCredentials">Root Account</a>. Authentication is by user name and password plus MFA.
-
-   SECURITY PROTIP: Many enterprises do not permit use of interactive CLI and Console GUI in production and instead allow only automated API calls by IaC (such as CloudFormation and Terraform). This is to ensure version control and repeatability.
-
-* <strong>Textually</strong> typing in the <strong>CLI</strong> (Command Line Interface) provided by the MacOS/Linux Terminal or Windows PC Command (cmd) utility. The AWS CLI program is installed for <a target="_blank" href="https://wilsonmar.github.io/aws-cli/"><tt>aws</tt> commands</a> to be executed interactively or within interpretive Bash scripts scheduled in batch jobs. Authentication is by <tt>aws configure</tt> command which stores credentials <tt>aws_access_key_id</tt> and <tt>aws_secret_access_key=</tt> in an unencrypted file at <tt>~/.aws/credentials</tt>.
-
-* <strong>Programmatically</strong> running custom program code (such as Python, JavaScript, etc.) which call AWS APIs (Application Programming Interface) called by custom programs calling <a href="#APIKeys">AWS's API (Application Programming Interface)</a>. Amazon's Boto3 SDK and Pulumi.com use this approach. This is the mechanism behind the scenes by mobile apps. Authentication is by including APIKeys generated by AWS.
-
-   Amazon open-sourced its <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">CDK</a> (Cloud Development Kit) as a SDK layer above CF, at the cost of making troubleshooting more complex. A <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">library</a> of "constructs" in TypeScript, JavaScript, Python, Java, .NET C#, and Go. An example in Python to create an Amazon Elastic Container Service (Amazon ECS) service with AWS Fargate launch type:
-   ```python
-   class MyEcsConstructStack(Stack):
-      def __init__(self, scope: Construct, id: str, **kwargs) -> None:
-         super().__init__(scope, id, **kwargs)
-
-         vpc = ec2.Vpc(self, "MyVpc", max_azs=3)     # default is all AZs in region
-         cluster = ecs.Cluster(self, "MyCluster", vpc=vpc)
-         ecs_patterns.ApplicationLoadBalancedFargateService(self, "MyFargateService",
-            cluster=cluster,            # Required
-            cpu=512,                    # Default is 256
-            desired_count=6,            # Default is 1
-            task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
-               image=ecs.ContainerImage.from_registry("amazon/amazon-ecs-sample")),
-            memory_limit_mib=2048,      # Default is 512
-            public_load_balancer=True)  # Default is False
-   ```
-   <a target="_blank" href="https://docs.aws.amazon.com/cdk/v2/guide/home.html">A "stack" of several constructs</a> may be needed.
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png"><img alt="aws-cdk-stack.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769637285/aws-cdk-stack_ho3ulu.png" /></a>
-
-   Each construct creates Cloud Formation files AWS uses to create resources.
-
-   CDK provides no built-in support for Secrets Management.
-   But Pulumi provides built-in support for encrypted secrets. It also supports third-party providers.
-
-   Policy as Code.
-
-* <strong>Declaratively</strong> running Infrastructure as Code (IoC) DSL (Domain Specific Language) definitions to define the <strong>desired state</strong> of the AWS environment. This makes it easier to track changes and repeat the same environment in different regions and accounts. 
-
-   Cloud Formation (CF) was created by Amazon and only works within AWS. So its use would likely enable you to automate the latest tech AWS has to offer.
-
-   CF makes use of GitHub for tracking changes and to provide an AWS deployment role.
-
-   <a target="_blank" href="https://aws.amazon.com/blogs/devops/integrating-with-github-actions-ci-cd-pipeline-to-deploy-a-web-app-to-amazon-ec2/">ECS web apps</a> with VPC, ECS/Fargate or Lambda, RDS/Dynamo can all be defined in CDK.
-   A GitHub Actions workflow runs cdk synth and cdk diff on PR, cdk deploy on merge.
-
-   Use of IaC makes it easier to evaluate the vulnerabilities and costs of an environment even before it is created. Authentication is by including APIKeys generated by AWS. 
-   
-   <a target="_blank" href="https://spacelift.io/blog/terraform-alternatives">Alternatives for IoC</a> on AWS include  Hashicorp CDKTF, <a target="_blank" href="https://wilsonmar.github.io/terraform/">Hashicorp Terraform</a> directed acyclic graphs, OpenTofu, <a target="_blank" href="https://spacelift.io/customers/affinity">Spacelift</a>, <a target="_blank" href="https://www.firefly.ai/academy/terraform-alternatives">Firefly</a>, <a target="_blank" href="https://scalr.com/learning-center/terraform-alternatives-checklist-before-switching/">Scalr cloud</a>, <a target="_blank" href="https://wilsonmar.github.io/ansible/">Red Hat Ansible</a>, Crossplane (inside K8s clusters), <a target="_blank" href="https://github.com/skypilot-org/skypilot">SkyPilot</a> (GPUs), etc. 
-   
-   Some of these are able to use <a target="_blank" href="https://wilsonmar.github.io/opa/">Open Policy Agents (OPA)</a> to define and enforce policies for security, accurate billing, etc. https://www.youtube.com/watch?v=RTEgE2lcyk4&t=1332s
-
-* <strong>Visibly</strong> reading from <a href="#MobileApps">AWS Console Mobile app</a> month-to-date costs, CloudWatch alarms triggered, and AWS Health issues identified.
-
-
-
-<a name="TypesOfAccounts"></a>
-   
-## Types of accounts to sign-up for
-
-1. PROTIP: There are several different sign-up pages: one for each country and type of user: 
-
-   * If you want to create a <strong>stand-alone account</strong> unaffiliateed with any company, click the "Sign up" button:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a> (<a href="#StandAloneAccount">see below</a>)
-   * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a> for program: AWS Academy, Cloud Institute, <a target="_blank" href="https://www.awseducate.com/student/s/content">Educate</a>, re/Start, Skill Builder, Skills Center.
-      
-   * If you're using your <strong>corporate email</strong>, check with your IT department, which may use federated Single-Sign-On. <a target="_blank" href="https://us-east-1.console.aws.amazon.com/singlesignon/home?region=us-east-1#/">IAM Identity Center</a> managed with the free AWS Organizations centralized service to enable enterprise scaling. It involves definition of Organizational Units (OUs) to specify additional security controls that enable consolidated billing, policy-based controls (SCPs), resource sharing, and organized account structures.
-
-   * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
-   * If you're using a gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
-   * If you're using the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
-   <br /><br />
-
-https://www.awseducate.com/registration/s/learner-faqs#jobs
-
-https://www.awseducate.com/registration/s/learner-faqs#emerging-talent-community
-AWS Emerging Talent Community when you earn digital badges
-
 <a name="StandAloneAccount"></a>
 
-## Stand-alone root account setup
+## Setup stand-alone root account
 
 These are steps to create a stand-alone root account.
 
@@ -284,58 +327,16 @@ These are steps to create a stand-alone root account.
 
    ### AWS Health
 
-1. PROTIP: An important widget is the <strong>"AWS Health"</strong> widget. Drag its icon with the six dots to the top left of the page and let go. This widget also appears in the <a href="#AWSMobileApp">AWS mobile app</a>.
+1. PROTIP: An important widget is the <strong>"AWS Health"</strong> widget. Drag its icon with the six dots to the top left of the page and let go. 
 
-   <a name="AWSMobileApp"></a>
-
-   ### AWS Mobile App on smart phones
-
-1. Get the <strong>AWS Console</strong> app on your mobile phone:
-
-   <a target="_blank" href="http://www.amazon.com/AWS-Mobile-LLC-Console/dp/B00ATSN730">On Google Android mobile phones</a>
-
-   On your iPhone, open the Store app and search to get <a target="_blank" href="https://itunes.apple.com/us/app/aws-console/id580990573?mt=8">AWS Console</a>. Make sure the publisher is <strong>AMZN Mobile LLC</strong>  which creates <a target="_blank" href="https://itunes.apple.com/us/developer/amzn-mobile-llc/id297606954?mt=8">all Amazon's apps</a>.
-
-   PROTIP: These apps got low review scores because the app only lets people read-only,
-   but not change anything. And the 2FA is clunky.
-
-1. <strong>Add an identity</strong>: select Root/IAM account or Federation.
-1. Enable Face ID on iPhones.
-1. Provide email, CAPTCHA security, password, email verification code. Success is seeing this:
-
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"><img alt="aws-mobile-iOS-1170x2532.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"></a>
+   Information presented by this widget appears in the <a href="#AWSMobileApp">AWS mobile app</a> (below).
 
 
-## Social Media
+<a name="Support"></a>
 
-* <a target="_blank" href="https://www.reddit.com/r/aws/">Reddit r/AWS</a>
+## AWS Support
 
-* <a target="_blank" href="https://www.twitch.tv/aws/videos/all">https://www.twitch.tv/aws/videos/all</a> videos include:
-
-   * <a target="_blank" href="https://www.twitch.tv/videos/206753304">IoT at re:Invent 2017 video</a> with Sarah Cooper (General Manager IoT), Kip Larson (Principal Product Manager for IoT Analytics)
-
-* Sign-up to receive the <a target="_blank" href="https://www.amazon.com/AWS-Architecture-Monthly-FREE-Subscription/dp/B077F2P7DH/ref=pd_sim_405_1?_encoding=UTF8&psc=1&refRID=8JWKBP6Z7PVJZG34T3AW">AWS Architecture Monthly (FREE Subscription)</a> on your Kindle account.
-
-   <a name="ForumAccount"></a>
-
-   ## Create Forum Account
-
-1. PROTIP: To ensure anonymity interacting on public forums, the Administrator should create in a public email system (such as gmail.com, hotmail.com, etc.) an email address for use on forums. Don't use a real name in the email address, but a positive adjective with a number to ensure it's unique, such as "concerned123".
-
-   AWS says "Your email will be kept private" but I don't trust that they can't be hacked.
-
-2. Go to the AWS forums at URL:
-
-   <a target="_blank" href="https://forums.aws.amazon.com/forum.jspa?forumID=150">https://forums.aws.amazon.com/forum.jspa?forumID=150</a>
-
-3. Register the new email address along with an AWS Nickname without a proper name, such as, again, "concerned123".
-
-3. Use that email in StackOverflow.com and other public forums.
-
-
-   ### AWS Support
-
-   "Support" consists of:
+Expand "Support" to see menu:
    * <a href="#SupportCenter">Support Center</a>
    * Expert Help
    * Documentation
@@ -398,6 +399,36 @@ These are steps to create a stand-alone root account.
    <br /><br />
 
 
+   <a name="ForumAccount"></a>
+
+   ### Create Forum Account
+
+1. PROTIP: To ensure anonymity interacting on public forums, the Administrator should create in a public email system (such as gmail.com, hotmail.com, etc.) an email address for use on forums. Don't use a real name in the email address, but a positive adjective with a number to ensure it's unique, such as "concerned123".
+
+   AWS says "Your email will be kept private" but I don't trust that they can't be hacked.
+
+1. Go to the AWS forums at URL:
+
+   <a target="_blank" href="https://forums.aws.amazon.com/forum.jspa?forumID=150">https://forums.aws.amazon.com/forum.jspa?forumID=150</a>
+
+1. Register the new email address along with an AWS Nickname without a proper name, such as, again, "concerned123".
+
+1. Use that email in StackOverflow.com and other public forums.
+
+
+   ### Social Media
+
+1. <a target="_blank" href="https://www.reddit.com/r/aws/">Reddit r/AWS</a>
+
+1. StackOverflow
+
+1. <a target="_blank" href="https://www.twitch.tv/aws/videos/all">https://www.twitch.tv/aws/videos/all</a> videos include:
+
+   * <a target="_blank" href="https://www.twitch.tv/videos/206753304">IoT at re:Invent 2017 video</a> with Sarah Cooper (General Manager IoT), Kip Larson (Principal Product Manager for IoT Analytics)
+
+1 Sign-up to receive the <a target="_blank" href="https://www.amazon.com/AWS-Architecture-Monthly-FREE-Subscription/dp/B077F2P7DH/ref=pd_sim_405_1?_encoding=UTF8&psc=1&refRID=8JWKBP6Z7PVJZG34T3AW">AWS Architecture Monthly (FREE Subscription)</a> on your Kindle account.
+
+
 ## Job Roles
 
 * Cloud Application Developer: Turn Ideas into Digital Reality
@@ -405,6 +436,7 @@ These are steps to create a stand-alone root account.
 * Cloud Engineer: Build the Backbone of the Cloud
 * Cloud Administrator: Safeguard and Optimize the Cloud
 * Cloud Support Engineer: Solve Complex Challenges
+<br /><br />
 
 ## Separation of Duties and Concerns
 
@@ -416,29 +448,178 @@ These are steps to create a stand-alone root account.
    
    It's common for a separate account to be created for each <strong>department</strong> and <strong>project</strong> as well as each <strong>user</strong>. This is to limit the "blast radius" when an account's credentials become compromised, a situation we need to prepare for.
 
-   CAUTION: Do not use email address used for AWS to also be used in social media.
-   Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping.
-
-1. PROTIP: Passage of access responsibility should be recorded with time stamps and signatures of the parties involved, with a witness present.
-
 https://policysim.aws.amazon.com
 
 
-## IAM Identity Center for AWS Organizations
+<a name="AWSOrganizations"></a>
+
+## AWS Organizations
 
 <a target="_blank" href="https://www.youtube.com/watch?v=_KhrGFV_Npw&pp=2AYt">VIDEO</a>:
-The AWS Organizations service enables various accounts to be consolidated centrally.
-billings for various accounts can be combined to apply <strong>volume discounts</strong>.
+The AWS Organizations service enables central management of multiple AWS accounts used by an organization. It:
+
+* Create and organize accounts into a <strong>hierarchical</strong> structure using <strong>Organizational Units (OUs)</strong>
+* Apply <strong>Service Control Policies (SCPs)</strong> to restrict what actions accounts can perform
+* Share resources across accounts
+* Centrally manage billing with <strong>consolidated billing</strong> to achieve <strong>volume discounts</strong>.
+* Automate account creation
+<br /><br />
+
+### AWS Control Tower
+
+Add <a target="_blank" href="https://aws.amazon.com/controltower/">AWS Control Tower</a> uses AWS Organizations under the hood to automate a standardized setup of a secure, compliant multi-account environment with guardrails to ensure AWS best practices. It adds:
+
+* Pre-configured account structure and OUs (like Security, Sandbox, Production)
+* Automated account provisioning through Account Factory
+* Pre-built guardrails (preventive and detective <strong>controls</strong>) that implement AWS best practices <a target="_blank" href="https://aws.amazon.com/blogs/mt/infosys-implements-aws-control-tower-to-enforce-multi-account-governance/">governance</a>
+* A landing zone - a well-architected multi-account baseline environment
+* Centralized logging and monitoring automatically configured
+* A dashboard for visibility and compliance status
+* Drift detection to ensure your environment stays compliant
+<br /><br />
+
+<a target="_blank" href="https://aws.amazon.com/solutions/guidance/establishing-an-initial-foundation-using-control-tower-on-aws/">pdf</a>
+<img alt="aws-control-tower-flow-2836x1699.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769753040/aws-control-tower-flow-2836x1699_kohvqa.png" /></a> <a target="_blank" href="https://d1.awsstatic.com/solutions/guidance/architecture-diagrams/establishing-an-initial-foundation-using-control-tower-on-aws.pdf">pdf</a>
+
+1. (CFLZ1-P2) Create an AWS account using a planned naming convention for root user
+email and account alias, secure root user account, and configure billing and tax
+information.
+2. (CFLZ1-P4) Create and configure AWS IAM Identity Center and standard management account roles for administrative management. Apply security configurations to IAM Identity Center settings.
+3. (CFLZ1-P3) Activate AWS Cost Explorer and create and configure AWS Cost & Usage Report.
+4. (CFLZ1-P5) Plan and deploy AWS Control Tower from identified parameters and secure your log data through AWS Key Management Service (AWS KMS) encryption. Apply an additional AWS Control Tower setting for landing zone. Set up AWS CloudTrail to deploy CloudTrail to all AWS member accounts, delivering logs to Log Archive S3 Bucket.
+5. (CFLZ1-P6) Build foundational Organizational unit structure on top of your Control Tower deployment.
+6. (CFLZ1-P7) Establish and deploy AWS Tag Policies. Activate cost allocation tags.
+7. (CFLZ1-P8) Deploy additional foundational security hardening configurations to your environment to include CloudWatch monitoring and AWS Config to management account, apply additional service control policies through AWS Organizations.
+
+
+Control Tower enables IAM Identity Center to quickly switch among several user accounts.
+
+
+### IAM Identity Center SSO
 
 <a target="_blank" href="https://www.youtube.com/watch?v=gpquYmcpZpo">VIDEO</a>: 
-Amazon's "IAM Identity Center" service was previously called AWS Single Sign On (SSO)
-for accessing Salesforce, Box, Microsoft 365, and other apps enabled with SAML 2.0 (GitHub).
+Amazon's "IAM Identity Center" service was previously called AWS Single Sign On (SSO).
+That's why its CLI commands are:  <tt><strong>aws sso<strong></tt> and region-specific URL such as:
 
-IAM Identity Center can obtain from centralized identity providers such as Okta, Microsoft Active <strong>attributes</strong> from their corporate directories into AWS sessions. 
+   * <a target="_blank" href="https://us-east-1.console.aws.amazon.com/singlesignon/home?region=us-east-1#/">https://us-east-1.console.aws.amazon.com/singlesignon/home/?region=us-east-1#/</a>
+   * <a target="_blank" href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html?icmpid=docs_sso_console">Documentation</a>
+   <br /><br />
 
-Attributes include department, project, cost center, location, or other fine-grained <strong>tag-value pairs</strong> attached to AWS principals (like users or roles) or resources (like S3 buckets, KMS keys, or SQS queues). Attributes are used for <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html">ABAC (Attribute-Based Access Control)</a> for AWS to grant access based on attributes.
+Identity Center <strong>federates</strong> access to Salesforce, Box, Microsoft 365, GitHub, and other cloud apps enabled with <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html">SAML 2.0</a> or <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc.html">OIDC</a> federation. This is <a target="_blank" href="https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/sec_identities_identity_provider.html">part of being Well-Architected</a>.
+
+Amazon Cognito works with external identity providers that support SAML and OpenID Connect, and with social identity providers like Facebook, Google, and Amazon. Your app can sign in a user with a user <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html#id_roles_providers_cognito">identity pool</a> or an external IdP, then retrieve resources on their behalf with customized temporary sessions in an IAM role through the <a target="_blank" href="https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html">>AssumeRoleWithWebIdentity API operation</a>.
+
+IMPOTANT: Using AWS SSO avoids the security concern of storing long-lived IAM credentials on your local device.
+
+
+<a name="Attributes"></a>
+
+### Identity Attributes
+
+Identity Center obtains from centralized identity providers such as Okta, Microsoft Active <strong>attributes</strong> from their corporate directories into AWS sessions. 
+
+Attributes include department, project, cost center, location, or other fine-grained <strong>tag-value pairs</strong> attached to AWS principals (like users or roles) or resources (like S3 buckets, KMS keys, or SQS queues). Attributes are used for <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html">ABAC (Attribute-Based Access Control)</a> for AWS to grant access based on attributes, such for SCIM (Cross-domain Identity Management) with Microsoft Active Directory.
 
 https://www.youtube.com/watch?v=hAk-7ImN6iM
+
+### Granted to assume role
+
+Granted encrypts cached credentials to avoid plaintext SSO tokens being saved on disk.
+
+Granted stores SSO access token in the system’s keychain rather than on disk.
+
+1. Read <a target="_blank" href="https://docs.commonfate.io/granted/">https://docs.commonfate.io/granted</a>
+
+1. Install open-source Granted CLI (from Common-Fate):
+   ```
+   brew tap common-fate/granted
+   brew install common-fate/granted/granted
+   ``` 
+   <pre>
+   ✔︎ JSON API cask.jws.json                                            Downloaded   15.3MB/ 15.3MB
+   ✔︎ JSON API formula.jws.json                                         Downloaded   32.0MB/ 32.0MB
+   ==> Tapping common-fate/granted
+   Cloning into '/opt/homebrew/Library/Taps/common-fate/homebrew-granted'...
+   remote: Enumerating objects: 772, done.
+   remote: Counting objects: 100% (160/160), done.
+   remote: Compressing objects: 100% (120/120), done.
+   remote: Total 772 (delta 39), reused 0 (delta 0), pack-reused 612 (from 1)
+   Receiving objects: 100% (772/772), 108.62 KiB | 427.00 KiB/s, done.
+   Resolving deltas: 100% (192/192), done.
+   Tapped 2 formulae (14 files, 143.9KB).
+   Warning: Calling `depends_on macos: :high_sierra` is deprecated! There is no replacement.
+   Please report this issue to the powershell/homebrew-tap tap (not Homebrew/* repositories):
+   /opt/homebrew/Library/Taps/powershell/homebrew-tap/Formula/powershell.rb:33
+   &nbsp;
+   ==> Fetching downloads for: granted
+   ✔︎ Bottle Manifest granted (0.38.0)                                  Downloaded    7.6KB/  7.6KB
+   ✔︎ Bottle granted (0.38.0)                                           Downloaded   10.9MB/ 10.9MB
+   ==> Pouring granted--0.38.0.arm64_sequoia.bottle.2.tar.gz
+   🍺  /opt/homebrew/Cellar/granted/0.38.0: 9 files, 36.9MB
+   ==> Running `brew cleanup granted`...
+   Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+   Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+   </pre>
+
+1. List version and sub-commands:
+   ```
+   granted h
+   ```
+   <pre>
+   NAME:
+      granted - <a target="_blank" href="https://granted.dev">https://granted.dev</a>
+   &nbsp;
+   USAGE:
+      granted [global options] command [command options] [arguments...]
+   &nbsp;
+   VERSION:
+      0.38.0
+   &nbsp;
+   COMMANDS:
+      browser             View the web browser that Granted uses to open cloud consoles
+      settings            Manage Granted settings
+      completion          Add autocomplete to your granted cli installation
+      token               Deprecated: Use 'sso-tokens' instead
+      sso-tokens          Manage AWS SSO tokens
+      uninstall           Remove all Granted configuration
+      sso                 Manage your local AWS configuration file from information available in AWS SSO
+      credentials         Manage secure IAM credentials
+      credential-process  Exports AWS session credentials for use with AWS CLI credential_process
+      registry            Manage Profile Registries
+      console             Generate an AWS console URL using credentials in the environment or with a credential process.
+      login               Log in to Glide [deprecated]
+      experimental, exp   
+      cache               Manage your cached credentials that are stored in secure storage
+      auth                Manage OIDC authentication for Granted
+      request             Request access to a role
+      doctor              Run diagnostics locally to help debug common issues relating to granted and aws
+      rds                 Granted RDS plugin
+      common-fate, cf     Interact with your Common Fate deployment
+      eks                 Granted EKS plugin
+      help, h             Shows a list of commands or help for one command
+
+   GLOBAL OPTIONS:
+      --verbose                Log debug messages (default: false)
+      --aws-config-file value  
+      --help, -h               show help
+      --version, -v            print the version
+   </pre>
+
+1. List roles defined:
+   ```
+   assume
+   ```
+
+1. Use Granted to assume a role:
+   ```
+   assume role-a 
+   ```
+   <pre>
+   [role-a] session credentials will expire 2026-02-21 16:47:33 +0000 GMT
+   </pre>
+
+   https://granted.dev/browsers
+
 
 
 <a name="Preparations"></a>
@@ -591,6 +772,8 @@ Follow these steps to create a profile account:
 
 <hr />
 
+<a name="FreeTier"></a>
+
 ## AWS Free Tier Benefits
 
 1. Notice within the <strong>"Cost and Usage"</strong> widget the days and date for credits remaining. 
@@ -598,7 +781,7 @@ Follow these steps to create a profile account:
 
    Since July 15, 2025, new AWS accounts are given just 6 months (182 days rather than a year) of free access to some AWS services.
 
-   Each new AWS account receives up to $200 in AWS Free Tier credits, for application towards eligible AWS services, such as AWS Amplify websites. All Free Tier credits must be used within 12 months of your account creation date.
+   Each new AWS account receives up to $200 in AWS <a href="#FreeTier">Free Tier</a> credits, for application towards eligible AWS services, such as AWS Amplify websites. All Free Tier credits must be used within 12 months of your account creation date.
    See <a target="_blank" href="https://aws.amazon.com/free/">https://aws.amazon.com/free/</a>
    <a target="_blank" href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html">https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html</a>
 
@@ -1507,29 +1690,46 @@ Foundational Policy library</a> is at <a target="_blank" href="https://github.co
 
 ## Coding to obtain resources from S3
 
-In this sample JavaScript code to retrieve a bucket from Amazon S3:
+1. <a target="_blank" href="https://www.youtube.com/watch?v=z-tbVVojMp0">VIDEO</a>: In this sample JavaScript code to retrieve a bucket from Amazon S3:
+   ```JavaScript
+   import {s3client, GetObjectCommand} from "@aws-sdk/client-s3";
+   const s3Client = new S3Client({});
+   const obj = await s3client.send(new GetObjectCommand({
+   Bucket: 'example-bucket',
+   Key: 'path/to/obj'
+   });
+   ...
+   ```
+1. The <strong>new S3Client()</strong> is called to find the credentials. App developers don't have to code authentication code.
 
-```JavaScript
-import {s3client, GetObjectCommand} from "@aws-sdk/client-s3";
-const s3Client = new S3Client({});
-const obj = await s3client.send(new GetObjectCommand({
-  Bucket: 'example-bucket',
-  Key: 'path/to/obj'
-});
-...
-```
-The <strong>new S3Client()</strong> is called to find the credentials.
-App developers don't have to code authentication code.
+1. This CLI Bash script code does the same:
+   ```
+   aws sso login
+   aws s3api list-objects-v2 --bucket example-bucket \
+      --prefix path/
+      --query 'Contents[].{Key:Key}' --output text
 
-This CLI Bash script code does the same:
-```
-aws sso login
-aws s3api get-object --bucket example-bucket --key path/to/obj --debug /tmp/obj.out
-```
-BTW the example-bucket can be retrieved using CLI command:
-```
-dig example-bucket.s3.amazonaws.com
-```
+   aws s3api get-object --bucket example-bucket --key path/to/obj --debug /tmp/obj.out
+   ```
+
+1. BTW the example-bucket can be retrieved using CLI command:
+   ```
+   dig example-bucket.s3.amazonaws.com
+   ```
+
+1. To retrieve resources across an AWS account boundary, define a <strong>resource-based policy</strong> that references the other principal:
+   ```
+   {
+      "Effect": "Allow",
+      "Principal": {
+         "AWS": "111"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::example-bucket/*"
+   }
+   ```
+
+
 
 <a name="S3BucketNames"></a>
 
@@ -2066,63 +2266,12 @@ https://www.youtube.com/watch?v=7-7ugqAxgxI
 
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
 
-## Install granted to assume role
 
-https://docs.commonfate.io/granted/getting-started
+## References
 
-1. Install Granted CLI:
-   ```
-   brew tap common-fate/granted
-   brew install common-fate/granted/granted
-   ``` 
-   <pre>
-   ✔︎ JSON API cask.jws.json                                            Downloaded   15.3MB/ 15.3MB
-   ✔︎ JSON API formula.jws.json                                         Downloaded   32.0MB/ 32.0MB
-   ==> Tapping common-fate/granted
-   Cloning into '/opt/homebrew/Library/Taps/common-fate/homebrew-granted'...
-   remote: Enumerating objects: 772, done.
-   remote: Counting objects: 100% (160/160), done.
-   remote: Compressing objects: 100% (120/120), done.
-   remote: Total 772 (delta 39), reused 0 (delta 0), pack-reused 612 (from 1)
-   Receiving objects: 100% (772/772), 108.62 KiB | 427.00 KiB/s, done.
-   Resolving deltas: 100% (192/192), done.
-   Tapped 2 formulae (14 files, 143.9KB).
-   Warning: Calling `depends_on macos: :high_sierra` is deprecated! There is no replacement.
-   Please report this issue to the powershell/homebrew-tap tap (not Homebrew/* repositories):
-   /opt/homebrew/Library/Taps/powershell/homebrew-tap/Formula/powershell.rb:33
-   &nbsp;
-   ==> Fetching downloads for: granted
-   ✔︎ Bottle Manifest granted (0.38.0)                                  Downloaded    7.6KB/  7.6KB
-   ✔︎ Bottle granted (0.38.0)                                           Downloaded   10.9MB/ 10.9MB
-   ==> Pouring granted--0.38.0.arm64_sequoia.bottle.2.tar.gz
-   🍺  /opt/homebrew/Cellar/granted/0.38.0: 9 files, 36.9MB
-   ==> Running `brew cleanup granted`...
-   Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
-   Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
-   </pre>
+   <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html">Actions and conditions for every AWS service</a>: for <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html">AWS S3</a>
 
-1. Verify install of granted's assume command:
-   ```
-   granted -v
-   ```
-   <pre>
-   Granted version: 0.38.0
-   </pre>
-
-1. Use Granted to switch:
-   ```
-   assume role-a 
-   ```
-   <pre>
-   [role-a] session credentials will expire 2026-02-21 16:47:33 +0000 GMT
-   </pre>
-
-   https://granted.dev/browsers
-
-
-## Referebces
-
-   
+   <a target="_blank" href="https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/building-a-data-perimeter-on-aws.html">BLOG: Building a data perimeter</a>
 
 
 
