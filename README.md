@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-02-06"
-lastchange: "26-02-06 v210 + aws-onboarding :README.md"
+lastchange: "26-02-06 v211 + aws-onboarding :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -31,10 +31,12 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/anyscale-ray">anyscale-ray</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-stats">ap-stats</a>
-1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
-1. <a target="_blank" href="https://bomonike.github.io/aws-onboarding">aws-onboarding</a>
+
+1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-kiro">aws-kiro</a>
+1. <a target="_blank" href="https://bomonike.github.io/aws-onboarding">aws-onboarding</a>
+
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-machine-learning">azure-machine-learning</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-certifications">azure-certifications</a>
