@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-06"
-lastchange: "26-02-06 v211 + aws-onboarding :README.md"
+date: "2026-02-07"
+lastchange: "26-02-07 v212 + aws-onboarding :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -34,12 +34,13 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/arduino">arduino</a>
 
 1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
+1. <a target="_blank" href="https://bomonike.github.io/aws-bedrock">aws-bedrock</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-kiro">aws-kiro</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-onboarding">aws-onboarding</a>
 
+1. <a target="_blank" href="https://bomonike.github.io/azure-certifications">azure-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-machine-learning">azure-machine-learning</a>
-1. <a target="_blank" href="https://bomonike.github.io/azure-certifications">azure-certifications</a>
 
    <a name="B"></a>
    <a name="C"></a>
