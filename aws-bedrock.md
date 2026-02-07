@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-02-07"
-lastchange: "26-02-07 v003 :aws-bedrock.md"
+lastchange: "26-02-07 v004 icons :aws-bedrock.md"
 url: https://bomonike.github.io/aws-bedrock
 file: "aws-bedrock"
 title: "AWS Bedrock"
@@ -37,16 +37,22 @@ Begin by following my <a target="_blank" href="https://bomonike.github.io/aws-on
 
 The list of the many <strong>AI-related services and brands from AWS</strong>:
 
-* <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker</a> is for those who want to <strong>create their own models</strong> from scratch or fine-tune existing ones with full control over the ML lifecycle. Unlike Bedrock (which focuses on pre-built foundation models), Amazon SageMaker provides a <strong>toolset</strong> to build Machine Learning (ML) models used for "data, analytics, and AI". Amazon SageMaker is a comprehensive machine learning platform for building, training, and deploying custom ML models. SageMaker features include Notebooks, training infrastructure, model hosting, and MLOps tools. It uess a Lakehouse architecture to hold and process data with versioning capabilities.
-
-* Amazon Q is Amazon's brand category name for Generative AI capabilities.
-* Amazon Q Developer (now Kiro) is used to develop Agentic AI like Anthropic Claude does.
-
-* "Agentic AI" is an industry-wide term for software that exhibits agency, adapting its behavior to achieve specific goals in dynamic environments.
-
+* <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI<img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/SageMaker-AI.png"></a> is for those who want to <strong>create their own models</strong> from scratch or fine-tune existing ones with full control over the ML lifecycle. Unlike Bedrock (which focuses on pre-built foundation models), Amazon SageMaker provides a <strong>toolset</strong> to build Machine Learning (ML) models used for "data, analytics, and AI". Amazon SageMaker is a comprehensive machine learning platform for building, training, and deploying custom ML models. SageMaker features include Notebooks, training infrastructure, model hosting, and MLOps tools. It uess a Lakehouse architecture to hold and process data with versioning capabilities.
 * Amazon SageMaker Jumpstart (solutions for common ML uses cases that can be deployed in just a few steps)
+* Amazon SageMaker Ground Truth
+* Amazon SageMaker Studio Lab
+
+* <img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/Q.png">Amazon Q is Amazon's brand category name for Generative AI capabilities.
+* Amazon Q Developer is used to develop Agentic AI apps (like Anthropic Claude does).
+
+  Amazon Q capabilities are (as of Jan 2026) provided within<br />
+  Amazon Kiro CLI and Kiro.app created based on a fork of Microsoft's VSCode IDE GUI app.
+
+* Prompts provided to generative AI (that works like ChatGPT) are processed within the<br />Amazon Bedrock GUI.
 
 * Amazon Bedrock provides access to foundation models (LLMs) from leading AI providers and run inference on them to generate text, image, video, and embeddings output through a unified API.
+
+* "Agentic AI" is an industry-wide term for software that exhibits agency, adapting its behavior to achieve specific goals in dynamic environments.
 
 * Amazon Bedrock Agents is a <strong>fully managed</strong> service for configuring and deploying autonomous agents without managing infrastructure or writing custom code. It handles prompt engineering, memory, monitoring, encryption, user permissions, and API invocation for you. Key features include API-driven development, action groups for defining specific actions, knowledge base integration, and a configuration-based implementation approach.
 
@@ -71,9 +77,11 @@ The list of the many <strong>AI-related services and brands from AWS</strong>:
 * Strand workflows are graph-based, with LangSmith integration.
 
 * <a target=_blank" href="https://aws.amazon.com/ai/machine-learning/inferentia/">AWS Inferentia</a> AI chips designed for AI inference used by Alexa and EC2 instances.
-* <a target="_blank" href="https://aws.amazon.com/machine-learning/neuron/">AWS Neuron SDK</a> helps developers deploy models on the AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with popular frameworks, such as PyTorch and TensorFlow, so that you can continue to use your existing code and workflows and run on Inferentia chips.
-   * AWS Trainium (provides cloud infra for machine learning)
+* <a target="_blank" href="https://aws.amazon.com/machine-learning/neuron/">AWS Neuron SDK<img align="right" width="100" src="https://bhavinsangani14.github.io/AWS-Icons-Assets/git-aws-icons/64/svg/Neuron.svg"></a> deploy models on the AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with popular frameworks, such as PyTorch and TensorFlow, so that you can continue to use your existing code and workflows and run on Inferentia chips.
+* AWS Trainium (provides cloud infra for machine learning)
+
    <br /><br />
+
 
 1. View YouTube videos about Bedrock:
 
@@ -82,17 +90,14 @@ The list of the many <strong>AI-related services and brands from AWS</strong>:
 1. <a target="_blank" href="https://catalog.us-east-1.prod.workshops.aws/workshops/a4bdb007-5600-4368-81c5-ff5b4154f518/en-US?refid=ceaf07a2-36ab-4fba-b62f-bcf6c48ca9f2">Text-based "Workshop" introducing Bedrock</a>
 
 
-## Amazon Bedrock
+## Amazon Bedrock GUI Menu
 
    <a target="_blank" href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a> is a service fully managed by AWS to provide you the <strong>infrastructure</strong> to build generative AI applications without needing to manage (using Cloud Formation, etc.). 
 
-1. On the <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/">AWS Console GUI web page</a>, 
+1. On the <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/">AWS Console GUI web page</a>, press <strong>Option+S</strong> or click inside the Search box. Type enough of "Amazon Bedrock" and press Enter when that appears. It's one of Amazon's AI services:
    <img alt="aws-search-1318x170.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769336376/aws-search-1318x170_bp4lwm.png" />
 
-   in the Search box, type "Bedrock" for a list of these AWS products:
-
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png" /></a>
-
 1. Cursor over the "Amazon Bedrock" listed to reveal its "Top features":
 
    Agents, Guardrails, Knowledge Bases, Prompt Management, Flows
@@ -119,10 +124,9 @@ The list of the many <strong>AI-related services and brands from AWS</strong>:
    
    https://docs.aws.amazon.com/bedrock/latest/userguide/sdk-general-information-section.html
 
-
 1. Click <a target="_blank" href="https://aws.amazon.com/bedrock/pricing/">"Bedrock pricing"</a> for a new tab.
 
-   "Pricing is dependent on the modality, provider, and model." <strong>Also by Region</strong> selected.
+   "Pricing is dependent on the modality, provider, and model" choices. <strong>Also by Region</strong> selected.
 
    ### Model choice 
 
@@ -135,6 +139,34 @@ The list of the many <strong>AI-related services and brands from AWS</strong>:
 
 1. Click "<a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/settings">Settings</a>" near the bottom of the menu.
 1. Click "<a target="_blank" href="https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/home">Manage IAM policies</a>" for a new tab.
+
+
+
+### AWS Bedrock IAM role
+
+1. Set up your Amazon Bedrock IAM role
+1. Sign into Amazon Bedrock in the console
+1. Request access to foundation models (Amazon Nova) by following the steps in the Amazon Bedrock user guide.
+1. <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api-keys.html">Generate Bedrock API key</a> (good for 30 days).
+1. Make your first API call.
+
+1. https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api-ex-cli.html
+Run example Amazon Bedrock API requests with the AWS Command Line Interface
+
+1. https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api-ex-python.html
+Run example Amazon Bedrock API requests through the AWS SDK for Python (Boto3)
+
+1. https://docs.aws.amazon.com/nova/latest/nova2-userguide/customization.html
+   Customizing Amazon Nova 2 models
+
+   https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-toolkit.html
+
+   Agent frameworks getting in your way?  
+
+   To <a target="_blank" href="https://learning.oreilly.com/live-events/ai-agents-with-aws/0642572272098/0642572272081/">Develop intelligent agents</a> with Amazon Bedrock, <a target="_blank" href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html">AgentCore</a>, and <a target="_blank" href="https://strandsagents.com/latest/documentation/docs/">Strands Agents</a> by Eduardo Mota
+   * strands-python.md  and 
+   * agentcore_strans_requirements.md
+
 
    ### Create a IAM user
 
@@ -358,48 +390,6 @@ curl -X POST \
         "sessionId": "YOUR_SESSION_ID"
       }'
 </pre>
-
-
-
-
-## AWS Bedrock service
-
-1. Click this link to learn more about Amazon Bedrock: https://docs.aws.amazon.com/bedrock/   
-
-1. In the AWS Console, press <strong>Option+S</strong> or click inside the Search box. Type enough of "Amazon Bedrock" and press Enter when that appears. It's one of Amazon's AI services:
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png"><img align="right" width="200" alt="bedrock-svcs-674x292.png" src="" /></a>
-   <img alt="bedrock-menu-183x822.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769490064/bedrock-menu-183x822_rqpoea.png" />
-   <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#">https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/</a>
-
-
-   ### AWS Bedrock IAM role
-
-1. Set up your Amazon Bedrock IAM role
-1. Sign into Amazon Bedrock in the console
-1. Request access to foundation models (Amazon Nova) by following the steps in the Amazon Bedrock user guide.
-1. <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api-keys.html">Generate Bedrock API key</a> (good for 30 days).
-1. Make your first API call.
-
-1. https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api-ex-cli.html
-Run example Amazon Bedrock API requests with the AWS Command Line Interface
-
-1. https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api-ex-python.html
-Run example Amazon Bedrock API requests through the AWS SDK for Python (Boto3)
-
-1. https://docs.aws.amazon.com/nova/latest/nova2-userguide/customization.html
-   Customizing Amazon Nova 2 models
-
-
-
-https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-toolkit.html
-
-Agent frameworks getting in your way?  
-
-   To <a target="_blank" href="https://learning.oreilly.com/live-events/ai-agents-with-aws/0642572272098/0642572272081/">Develop intelligent agents</a> with Amazon Bedrock, <a target="_blank" href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html">AgentCore</a>, and <a target="_blank" href="https://strandsagents.com/latest/documentation/docs/">Strands Agents</a> by Eduardo Mota
-   * strands-python.md  and 
-   * agentcore_strans_requirements.md
-
-
 
 
 ## Projects
