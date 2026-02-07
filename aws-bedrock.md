@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-02-07"
-lastchange: "26-02-07 v002 new :aws-bedrock.md"
+lastchange: "26-02-07 v003 :aws-bedrock.md"
 url: https://bomonike.github.io/aws-bedrock
 file: "aws-bedrock"
 title: "AWS Bedrock"
@@ -19,47 +19,110 @@ created: "2026-01-25"
 {% include l18n.html %}
 {% include _toc.html %}
 
-This article is a tutorial to show you a guided hands-on tour to learn how to use AI by Amazon Bedrock.
+<a target="_blank" href="https://bomonike.github.io/aws-bedrock"><img align="right" width="200" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/Bedrock.png" /></a>
+This article is a tutorial to show you a hands-on experience to learn how to use AI by Amazon Bedrock.
 
-This is not a 5 minute summary but a step-by-step so you <strong>master</strong> this like a pro.
+This is not a 5 minute summary but a step-by-step guided course so you <strong>master</strong> this like a pro.
 
 Those who created an AWS account can get a $20 credit for completing this.
 
 ## Establish AWS Account
 
-1. Begin by following my <a target="_blank" href="https://bomonike.github.io/aws-onboarding">aws-onboarding tutorial</a> to securely establish an AWS account.
+Begin by following my <a target="_blank" href="https://bomonike.github.io/aws-onboarding">aws-onboarding tutorial</a> to securely establish an AWS account.
 
    https://docs.aws.amazon.com/cli/latest/userguide/cli-authentication-user.html
    
 
-   ## Amazon Bedrock vs Sagemaker vs AgentCore vs Kiro
+## Amazon AI products & services
 
-   Amazon Bedrock is a service fully managed by AWS to provide you the <strong>infrastructure</strong> to build generative AI applications without needing to manage (using Cloud Formation, etc.). 
+The list of the many <strong>AI-related services and brands from AWS</strong>:
 
-1. On the <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/">AWS Console GUI web page</a>, searching for "Bedrock" yields these AWS products:
+* <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker</a> is for those who want to <strong>create their own models</strong> from scratch or fine-tune existing ones with full control over the ML lifecycle. Unlike Bedrock (which focuses on pre-built foundation models), Amazon SageMaker provides a <strong>toolset</strong> to build Machine Learning (ML) models used for "data, analytics, and AI". Amazon SageMaker is a comprehensive machine learning platform for building, training, and deploying custom ML models. SageMaker features include Notebooks, training infrastructure, model hosting, and MLOps tools. It uess a Lakehouse architecture to hold and process data with versioning capabilities.
+
+* Amazon Q is Amazon's brand category name for Generative AI capabilities.
+* Amazon Q Developer (now Kiro) is used to develop Agentic AI like Anthropic Claude does.
+
+* "Agentic AI" is an industry-wide term for software that exhibits agency, adapting its behavior to achieve specific goals in dynamic environments.
+
+* Amazon SageMaker Jumpstart (solutions for common ML uses cases that can be deployed in just a few steps)
+
+* Amazon Bedrock provides access to foundation models (LLMs) from leading AI providers and run inference on them to generate text, image, video, and embeddings output through a unified API.
+
+* Amazon Bedrock Agents is a <strong>fully managed</strong> service for configuring and deploying autonomous agents without managing infrastructure or writing custom code. It handles prompt engineering, memory, monitoring, encryption, user permissions, and API invocation for you. Key features include API-driven development, action groups for defining specific actions, knowledge base integration, and a configuration-based implementation approach.
+
+* Amazon Bedrock AgentCore can flexibly deploy and operate <strong>AI agents</strong> in dynamic agent workloads using <strong>any framework and model</strong>. AgentCore works with CrewAI, LangGraph, LlamaIndex, and Strands Agents. AgentCore components include:
+
+   * Runtime: Provides serverless environments for agent execution
+   * Memory: Manages session and long-term memory
+   * Observability: Offers visualization of agent execution
+   * Identity: Enables secure access to AWS and third-party services
+   * Gateway: Transforms APIs into agent-ready tools
+   * Browser-tool: Enables web application interaction
+   * Code-interpreter: Securely executes code across multiple languages
+   <br /><br />
+
+* "Strands Agents" is an open source Python SDK (releaed in 2025) at https://github.com/strands-agent/sdk-python. It takes a model-driven (MCP & A2A) approach to building and running autonomous AI agents, in just a few lines of code. Unlike Bedrock, Strands is model agnostic (can use Claude, OpenAI, etc.).
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Ausm87d5Ry8">Model Driven Agents - Strands Agents (A New Open Source, Model First, Framework for Agents)</a>
+   * <a target="_blank" href="https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/">Introducing Strands Agents, an Open Source AI Agents SDK</a> by Clare Liguori on 16 MAY 2025
+   * <a target="_blank" href="https://www.youtube.com/watch?v=nS1arlGhKOI">Strands Agents Framework Introduction</a> by Avatar image
+   * <a target="_blank" href="https://www.youtube.com/watch?v=dn3G9jvB98k&pp=ugUEEgJlbg%3D%3D">AWS Strands Agents SDK – Agents as Tools Explained - Multi AI Agent System at Scales #aiagents</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Q3NreEAdKMc&pp=ugUEEgJlbg%3D%3D">Introducing Strands Agents, an Open Source AI Agents SDK — Suman Debnath, AWS</a>
+
+* Strand workflows are graph-based, with LangSmith integration.
+
+* <a target=_blank" href="https://aws.amazon.com/ai/machine-learning/inferentia/">AWS Inferentia</a> AI chips designed for AI inference used by Alexa and EC2 instances.
+* <a target="_blank" href="https://aws.amazon.com/machine-learning/neuron/">AWS Neuron SDK</a> helps developers deploy models on the AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with popular frameworks, such as PyTorch and TensorFlow, so that you can continue to use your existing code and workflows and run on Inferentia chips.
+   * AWS Trainium (provides cloud infra for machine learning)
+   <br /><br />
+
+1. View YouTube videos about Bedrock:
+
+   https://www.youtube.com/playlist?list=PLhr1KZpdzukfmv7jxvB0rL8SWoycA9TIM
+
+1. <a target="_blank" href="https://catalog.us-east-1.prod.workshops.aws/workshops/a4bdb007-5600-4368-81c5-ff5b4154f518/en-US?refid=ceaf07a2-36ab-4fba-b62f-bcf6c48ca9f2">Text-based "Workshop" introducing Bedrock</a>
+
+
+## Amazon Bedrock
+
+   <a target="_blank" href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a> is a service fully managed by AWS to provide you the <strong>infrastructure</strong> to build generative AI applications without needing to manage (using Cloud Formation, etc.). 
+
+1. On the <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/">AWS Console GUI web page</a>, 
+   <img alt="aws-search-1318x170.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769336376/aws-search-1318x170_bp4lwm.png" />
+
+   in the Search box, type "Bedrock" for a list of these AWS products:
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png" /></a>
 
-1. Cursor over "Amazon Bedrock" listed to reveal its "Top features":
+1. Cursor over the "Amazon Bedrock" listed to reveal its "Top features":
 
    Agents, Guardrails, Knowledge Bases, Prompt Management, Flows
 
-   ### Model catalog
-
-1. Click on the "Amazon Bedrock" choice for its "Overview" screen. The service enables you to use a single API to access 100+ <strong>foundation models</strong> (FMs) from various <strong>providers</strong>: Anthropic (Claude), Meta (Llama), Stability AI, Cohere, etc.
+   ### Overview Menu Model catalog
 
 1. Click on the "Amazon Bedrock" choice for its "Overview" screen and left menu:
+
    <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/"><img align="right" width="200" alt="bedrock-menu-512x2182.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1770450444/bedrock-menu-512x2182_emvpu3.png" /></a>
 1. Notice the menu's headings reflect the typical sequence of usage:
 
-   Discover -> Test -> Infer -> Tune -> Build -> Assess
+   Discover -> Test -> Infer -> Tune -> Build -> <a href="#Assess">Assess</a>
 
 1. Although "Configure and Learn" is listed at the bottom of the Bedrock menu, that's where we need to start.
 1. Click "User Guide" to open a new tab to click <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/key-definitions.html">"Key terminology"</a>.
 
 1. Scroll down to "View related pages" such as <a target="_blank" href="https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/definitions.html">Definitions from the Generate AI Lens</a> that opens in another tab.
 
+   ## Pricing
+
 1. Click on "<a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-pricing.html">Amazon Bedrock pricing</a>" from the left menu.
+
+   <a target="_blank" href="https://aws.amazon.com/bedrock/pricing/">Bedrock pricing</a>
+   
+   https://docs.aws.amazon.com/bedrock/latest/userguide/sdk-general-information-section.html
+
+
+1. Click <a target="_blank" href="https://aws.amazon.com/bedrock/pricing/">"Bedrock pricing"</a> for a new tab.
+
+   "Pricing is dependent on the modality, provider, and model." <strong>Also by Region</strong> selected.
 
    ### Model choice 
 
@@ -149,61 +212,11 @@ https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-acc
 1. Click "Run".
 
 
-## Amazon SageMaker
 
-Unlike Bedrock (which focuses on pre-built foundation models), Amazon SageMaker is for when you want to <strong>create your own models</strong> from scratch or fine-tune existing ones with full control over the ML lifecycle. 
-
-Amazon SageMaker provides a <strong>toolset</strong> to build Machine Learning (ML) models used for "data, analytics, and AI". Amazon SageMaker is a comprehensive machine learning platform for building, training, and deploying custom ML models. 
-
-It includes notebooks, training infrastructure, model hosting, and MLOps tools.
-
-## Amazon Bedrock Agents
-
-Amazon Bedrock Agents is a <strong>fully managed</strong> service for configuring and deploying autonomous agents without managing infrastructure or writing custom code. It handles prompt engineering, memory, monitoring, encryption, user permissions, and API invocation for you. Key features include API-driven development, action groups for defining specific actions, knowledge base integration, and a configuration-based implementation approach.
-
-Amazon Bedrock AgentCore can flexibly deploy and operate <strong>AI agents</strong> in dynamic agent workloads using <strong>any framework and model</strong. AgentCore works with CrewAI, LangGraph, LlamaIndex, and Strands Agents. AgentCore components include:
-
-   * Runtime: Provides serverless environments for agent execution
-   * Memory: Manages session and long-term memory
-   * Observability: Offers visualization of agent execution
-   * Identity: Enables secure access to AWS and third-party services
-   * Gateway: Transforms APIs into agent-ready tools
-   * Browser-tool: Enables web application interaction
-   * Code-interpreter: Securely executes code across multiple languages
-   <br /><br />
-
-## Agentic AI
-
-"Agentic AI" is an industry-wide term for software that exhibits agency, adapting its behavior to achieve specific goals in dynamic environments.
-
-## Strands Agents
-
-Strands Agents is an open source Python SDK (releaed in 2025) at https://github.com/strands-agent/sdk-python. It takes a model-driven (MCP & A2A) approach to building and running autonomous AI agents, in just a few lines of code. Unlike Bedrock, Strands is model agnostic (can use Claude, OpenAI, etc.).
-   * <a target="_blank" href="https://www.youtube.com/watch?v=Ausm87d5Ry8">Model Driven Agents - Strands Agents (A New Open Source, Model First, Framework for Agents)</a>
-   * <a target="_blank" href="https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/">Introducing Strands Agents, an Open Source AI Agents SDK</a> by Clare Liguori on 16 MAY 2025
-   * <a target="_blank" href="https://www.youtube.com/watch?v=nS1arlGhKOI">Strands Agents Framework Introduction</a> by Avatar image
-   * <a target="_blank" href="https://www.youtube.com/watch?v=dn3G9jvB98k&pp=ugUEEgJlbg%3D%3D">AWS Strands Agents SDK – Agents as Tools Explained - Multi AI Agent System at Scales #aiagents</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=Q3NreEAdKMc&pp=ugUEEgJlbg%3D%3D">Introducing Strands Agents, an Open Source AI Agents SDK — Suman Debnath, AWS</a>
-
-Strand workflows are graph-based, with LangSmith integration.
-
-<a target="_blank" href="https://aws.amazon.com/blogs/publicsector/why-your-ai-agents-give-inconsistent-results-and-how-agent-sops-fix-it/">SOP</a>
-Why your AI agents give inconsistent results, and how Agent SOPs fix it
 
 ## Well architected
 
 https://aws.amazon.com/architecture/well-architected/
-
-
-## Pricing
-
-1. <a target="_blank" href="https://aws.amazon.com/bedrock/pricing/">Bedrock pricing</a>
-
-https://docs.aws.amazon.com/bedrock/latest/userguide/sdk-general-information-section.html
-
-https://www.youtube.com/watch?v=ab1mbj0acDo
-Integrating Foundation Models into Your Code with Amazon Bedrock
-by Mike Chambers, Dev Advocate
 
 
 ## Permissions
@@ -346,29 +359,18 @@ curl -X POST \
       }'
 </pre>
 
-## Sign Up
 
-1. If you haven't already, follow my aws-onboarding such that you're logged in as a <strong>System Administrator</strong> at your desired region (such as "United States (N. Virginia)".
 
-   ### AWS Bedrock service
 
-   "With Amazon Bedrock, you can access a wide range of foundation models from leading AI companies and run inference on them to generate text, image, video, and embeddings output through a unified API.
+## AWS Bedrock service
 
 1. Click this link to learn more about Amazon Bedrock: https://docs.aws.amazon.com/bedrock/   
 
-   <img alt="aws-search-1318x170.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769336376/aws-search-1318x170_bp4lwm.png" />
 1. In the AWS Console, press <strong>Option+S</strong> or click inside the Search box. Type enough of "Amazon Bedrock" and press Enter when that appears. It's one of Amazon's AI services:
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png"><img align="right" width="200" alt="bedrock-svcs-674x292.png" src="" /></a>
    <img alt="bedrock-menu-183x822.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769490064/bedrock-menu-183x822_rqpoea.png" />
    <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#">https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/</a>
 
-   Other AI related services from AWS:
-   * Amazon Bedrock
-   * Amazon Q Developer (Kiro)
-   * AWS Inferentia
-   * AWS Trainium (provides cloud infra for machine learning)
-   * Amazon SageMaker Jumpstart (slutions for common ML uses cases that can be deployed in just a few steps)
-   <br /><br />
 
    ### AWS Bedrock IAM role
 
@@ -400,19 +402,6 @@ Agent frameworks getting in your way?
 
 
 
-## References
-
-https://aws.amazon.com/bedrock/getting-started/
-
-* <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/APIReference/index.html">Amazon Bedrock API Reference</a>
-* <a target="_blank" href="https://docs.aws.amazon.com/cli/latest/reference/bedrock/">AWS CLI commands for Amazon Bedrock</a>
-* <a target="_blank" href="https://aws.amazon.com/tools/">SDKs & Tools</a>
-* https://github.com/aws
-   * https://docs.aws.amazon.com/bedrock/latest/userguide/key-definitions.html
-   * https://github.com/aws/amazon-sagemaker-examples
-   * https://builder.aws.com/build/tools
-      * https://builder.aws.com/content/2zYQkMbmrsxHPtT89s3teyKJh79/aws-tools-and-resources-python
-
 ## Projects
 
 A. <a target="_blank" href="https://www.youtube.com/watch?v=Ausm87d5Ry8&t=2m34s">VIDEO</a> When is the next time the ISS (International Space Station) will fly over where I am? Strand MCP Agent.
@@ -439,14 +428,22 @@ in SageMaker Unified Studio
   
 https://aws.amazon.com/nova/models/?sc_icampaign=launch_nova-models-reinvent_2025&sc_ichannel=ha&sc_iplace=signin
 
-   ### Creat apps
+
+
+<a name="CreateApps"></a>
+
+## Create apps
    
 1. <a target="_blank" href="https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/create-chat-app.html">Create a chat agent app</a> to chat with an Amazon Bedrock model through a conversational interface. 
 
 1. <a target="_blank" href="https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/create-flows-app.html">Create a flow app</a> that links together prompts, supported Amazon Bedrock models, and other units of work such as a knowledge base, to create generative AI workflows. 
 
 
-   ### Evaluate models
+
+
+<a name="Assess"></a>
+
+## Evaluate models
 
 1. <a target="_blank" href="https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/evaluation.html">Evaluate models for different task types</a>.
 
@@ -462,7 +459,26 @@ https://aws.amazon.com/nova/models/?sc_icampaign=launch_nova-models-reinvent_202
 1. <a target="_blank" href="https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/app-share.html">Share your app to collaborate with your team.
 
 
-## Install
+## References
+
+https://aws.amazon.com/bedrock/getting-started/
+
+* <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/APIReference/index.html">Amazon Bedrock API Reference</a>
+* <a target="_blank" href="https://docs.aws.amazon.com/cli/latest/reference/bedrock/">AWS CLI commands for Amazon Bedrock</a>
+* <a target="_blank" href="https://aws.amazon.com/tools/">SDKs & Tools</a>
+* https://github.com/aws
+   * https://docs.aws.amazon.com/bedrock/latest/userguide/key-definitions.html
+   * https://github.com/aws/amazon-sagemaker-examples
+   * https://builder.aws.com/build/tools
+      * https://builder.aws.com/content/2zYQkMbmrsxHPtT89s3teyKJh79/aws-tools-and-resources-python
+
+<a target="_blank" href="https://aws.amazon.com/blogs/publicsector/why-your-ai-agents-give-inconsistent-results-and-how-agent-sops-fix-it/">SOP</a>
+Why your AI agents give inconsistent results, and how Agent SOPs fix it
+
+https://www.youtube.com/watch?v=ab1mbj0acDo
+Integrating Foundation Models into Your Code with Amazon Bedrock
+by Mike Chambers, Dev Advocate
 
 
-1. Install
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
