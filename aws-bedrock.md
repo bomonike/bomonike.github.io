@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-02-07"
-lastchange: "26-02-07 v004 icons :aws-bedrock.md"
+lastchange: "26-02-07 v005 cert :aws-bedrock.md"
 url: https://bomonike.github.io/aws-bedrock
 file: "aws-bedrock"
 title: "AWS Bedrock"
@@ -20,11 +20,45 @@ created: "2026-01-25"
 {% include _toc.html %}
 
 <a target="_blank" href="https://bomonike.github.io/aws-bedrock"><img align="right" width="200" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/Bedrock.png" /></a>
-This article is a tutorial to show you a hands-on experience to learn how to use AI by Amazon Bedrock.
+This article seeks to be a tutorial to <strong>logically present</strong> a hands-on experience to learn how to use AI by Amazon Bedrock.
 
-This is not a 5 minute summary but a step-by-step guided course so you <strong>master</strong> this like a pro.
+This is not a 5 minute summary to run mindlessly, 
+but a step-by-step guided course so you <strong>master</strong> this like a pro, enough to pass the 3-year
+<a target="_blank" href="https://aws.amazon.com/certification/certified-ai-practitioner/">AIF-C01 AWS Certified AI Practioner</a>: 65 questions in 90 minutes for <a target="_blank" href="https://skillbuilder.aws/category/exam-prep/ai-practitioner-AIF-C01">$100</a>. The <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01.html">Exam Guide</a> Content Domains:
 
-Those who created an AWS account can get a $20 credit for completing this.
+1. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01-domain1.html">20%: Fundamentals of AI and ML</a>
+   * Task Statement 1.1: Explain basic AI concepts and terminologies.
+   * Task Statement 1.2: Identify practical use cases for AI.
+   * Task Statement 1.3: Describe the ML development lifecycle.
+2. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01-domain2.html">24%: Fundamentals of GenAI</a>
+   * Task Statement 2.1: Explain the basic concepts of GenAI.
+   * Task Statement 2.2: Understand the capabilities and limitations of GenAI for solving business problems.
+   * Task Statement 2.3: Describe AWS infrastructure and technologies for building GenAI applications.
+3. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01-domain3.html">28%: Applications of Foundation Models</a>
+   * Task Statement 3.1: Describe design considerations for applications that use foundation models (FMs).
+   * Task Statement 3.2: Choose effective prompt engineering techniques.
+   * Task Statement 3.3: Describe the training and fine-tuning process for FMs.
+   * Task Statement 3.4: Describe methods to evaluate FM performance.
+4. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01-domain4.html">14%: Guidelines for Responsible AI</a>
+   * Task Statement 4.1: Explain the development of AI systems that are responsible.
+   * Task Statement 4.2: Recognize the importance of transparent and explainable models.
+5. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01-domain5.html">14%: Security, Compliance, and Governance for AI Solutions</a>
+   * Task Statement 5.1: Explain methods to secure AI systems.
+   * Task Statement 5.2: Recognize governance and compliance regulations for AI systems.
+   <br /><br />
+
+   * https://www.youtube.com/watch?v=WZeZZ8_W-M4 Freecodecamp with cheat sheets from <a target="_blank" href="https://ExamPro.com/aif-c01">ExamPro</a>
+   * https://youtube.com/playlist?list=PL7Jj8Ba9Yr6BLf2lS4Nfa2jdl0KpdvqYC&si=mZrE2_8vdDkZSLyl CloudExpert Solutions India
+   * https://www.youtube.com/watch?v=6cMLDgFrWqs
+   * https://www.youtube.com/watch?v=kv0VAH6at9E 
+   <br /><br />
+
+1. Take the 65-question free practice exam at:
+
+   <a target="_blank" href="https://cloudninja.pro/practice-tests/ai-practitioner/exam">CodeNinja</a>
+
+
+??? Those who created an AWS account can get a $20 credit for completing this.
 
 ## Establish AWS Account
 
@@ -35,29 +69,83 @@ Begin by following my <a target="_blank" href="https://bomonike.github.io/aws-on
 
 ## Amazon AI products & services
 
-The list of the many <strong>AI-related services and brands from AWS</strong>:
+DEFINITION: The list of the many <strong>AI-related services and brands from AWS</strong>:
 
-* <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI<img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/SageMaker-AI.png"></a> is for those who want to <strong>create their own models</strong> from scratch or fine-tune existing ones with full control over the ML lifecycle. Unlike Bedrock (which focuses on pre-built foundation models), Amazon SageMaker provides a <strong>toolset</strong> to build Machine Learning (ML) models used for "data, analytics, and AI". Amazon SageMaker is a comprehensive machine learning platform for building, training, and deploying custom ML models. SageMaker features include Notebooks, training infrastructure, model hosting, and MLOps tools. It uess a Lakehouse architecture to hold and process data with versioning capabilities.
-* Amazon SageMaker Jumpstart (solutions for common ML uses cases that can be deployed in just a few steps)
-* Amazon SageMaker Ground Truth
-* Amazon SageMaker Studio Lab
+Rule-Based Systems: Early AI relied on explicit programming and fixed rules
 
-* <img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/Q.png">Amazon Q is Amazon's brand category name for Generative AI capabilities.
-* Amazon Q Developer is used to develop Agentic AI apps (like Anthropic Claude does).
+Machine Learning: Introduced data-driven pattern recognition
 
-  Amazon Q capabilities are (as of Jan 2026) provided within<br />
-  Amazon Kiro CLI and Kiro.app created based on a fork of Microsoft's VSCode IDE GUI app.
+   * <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI<img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/SageMaker-AI.png"></a> is for those who want to <strong>create their own models</strong> from scratch or fine-tune existing ones with full control over the ML lifecycle. Unlike Bedrock (which focuses on pre-built foundation models), Amazon SageMaker provides a <strong>toolset</strong> to build Machine Learning (ML) models used for "data, analytics, and AI". Amazon SageMaker is a comprehensive machine learning platform for building, training, and deploying custom ML models. SageMaker features include <a href="#Notebooks">Notebooks</a>, training infrastructure, model hosting, and MLOps tools. It uess a Lakehouse architecture to hold and process data with versioning capabilities.
+   * Amazon SageMaker Jumpstart (solutions for common ML uses cases that can be deployed in just a few steps)
+   * Amazon SageMaker Ground Truth
+   * Amazon SageMaker Studio Lab
+   * Amazon SageMaker Clarify detects bias in ML models and provides explanations for model predictions.
+   <br /><br />
 
-* Prompts provided to generative AI (that works like ChatGPT) are processed within the<br />Amazon Bedrock GUI.
+Deep Learning: Enables complex pattern processing through neural networks:<br />
+* Deep Learning Amis, Deep Learning Containers, Deepcomposer, Deeplens, Deepracer, Pytorch on AWS.
 
-* Amazon Bedrock provides access to foundation models (LLMs) from leading AI providers and run inference on them to generate text, image, video, and embeddings output through a unified API.
+Amazon developed AI utilities:<br />
+* CodeGuru analyzes code and suggests changes
+* Codewhisperer is being <a target="_blank" href="https://docs.aws.amazon.com/codewhisperer/latest/userguide/whisper-legacy.html">folded into Amazon Q Developer Pro</a> to suggest code based on comments, in real-time as auto completion. <a target="_blank" href="https://www.youtube.com/watch?v=erO_6AX_DXk">VIDEO</a>
+* Forecast, Kendra, Lex, 
+* <a target="_blank" href="https://aws.amazon.com/personalize/">Personalize</a> is a recommender engine which elevates customer experience with AI-powered personalization based on timestamped interaction data in S3 datasets. <a target="_blank" href="https://medium.com/@christopheradamson253/create-intelligent-recommendation-systems-with-amazon-personalize-ed9e620f3b43">BLOG</a>
+* Polly converts text to lifelike speech?
+* Rekognition, Amazon Rekognition Image, Amazon Rekognition Video, 
+* Textract extracts text and structured data from documents like PDFs and images.
+* <a target="_blank" href="https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html">Amazon Transcribe</a> speech-to-text (STT) engine.
+* Translate
 
-* "Agentic AI" is an industry-wide term for software that exhibits agency, adapting its behavior to achieve specific goals in dynamic environments.
+Amazon developed a suite of industry-specific AI services:<br />
+* Fraud Detector, 
+* <a target="_blank" href="https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html">Comprehend</a> to detect customer sentiment in reviews written by customers. It's used in
+* Comprehend Medical for entity recognition in notes about patients,
+* Healthimaging, Healthlake, Healnomics, Healthscribe;
+Lookout For Equipment, Lookout for Metrics, Lookout for Vision.
+
+Generative AI: creates new content from learned patterns.
+
+   * <img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/Q.png">Amazon Q is Amazon's brand category name for Generative AI capabilities.
+   * <a taraget="_blank" href="https://aws.amazon.com/q/developer/">Amazon Q Developer</a> is "an AI-power assistant that helps developers write, debug, and understand code faster by answering questions, generating code, and offering real-time support within IDEs". It's used to develop Agentic AI apps (like Anthropic Claude does).
+
+   Amazon Q capabilities are (as of Jan 2026) provided within<br />
+   Amazon Kiro CLI and Kiro.app created based on a fork of Microsoft's VSCode IDE GUI app.
+
+   DEFINITION: A Prompt is the input text or message that a user provides to a foundation model to guide its response. Prompts can be simple instructions or complex examples.  Prompts provided to generative AI (that works like ChatGPT) are processed within the<br />Amazon Bedrock GUI.
+
+   A "system prompt" defines the model's behavior, personality, and constraints, applied to many prompts.
+
+   "fine-tuning" a LLM trains a pre-trained model on additional data (weights) for specific tasks. Used to teach the model a specific style, format, or domain expertise.
+
+   A hallucination is when a model generates plausible-sounding but factually incorrect information
+
+   * Amazon Bedrock provides access to foundation models (LLMs) from leading AI providers and run inference on them to generate text, image, video, and embeddings output through a unified API.
+
+   DEFINITION: Zero-Shot Prompting is a type of prompt that provides no examples—just a direct instruction for the model to complete a task based on its pre-trained knowledge.
+
+   DEFINITION: Few-Shot Prompting is a prompt that includes a few examples to show the model how to respond to similar inputs.
+
+   https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/supplement/IOgNx/prompt-engineering-guide
+
+   https://d2eo22ngex1n9g.cloudfront.net/Documentation/User+Guides/Titan/Amazon+Titan+Text+Prompt+Engineering+Guidelines.pdf
+   Amazon Titan Text Prompt Engineering Guidelines
+
+
+   
+   https://community.aws/content/2tAwR5pcqPteIgNXBJ29f9VqVpF/amazon-nova-prompt-engineering-on-aws-a-field-guide-by-brooke?lang=en
+   Amazon Nova: Prompt Engineering on AWS - A Field Guide
+
+<strong>"Agentic AI"</strong> is an industry-wide term for software that exhibits agency, adapting its behavior to achieve specific goals in dynamic environments.
+* <a target="_blank" href="https://docs.aws.amazon.com/nova/latest/nova2-userguide/getting-started-nova-2.html">Amazon Nova 2 FM/LLM</a> are multimodal foundation models that process text, images, video, documents, and speech. It has Extended thinking capability that allows models to break down complex problems and show their step-by-step analysis before providing answers. It supports up to 1 million tokens.
+   * Its "Lite" variant outputs text.
+   * Its "Sonic" variant operates on speech and text.
+* Amazon Nova Act is in a <a target="_blank" href="https://nova.amazon.com/act?tab=playground">Playground</a> to make use of Amazon's Nova LLM to (like RPA) chain Python action code operating on web browsers such as Google Chrome. Data scraped are put in Pydantic classes. See <a target="_blank" href="https://github.com/aws/nova-act">github.com/aws/nova-act</a> created by <a target="_blank" href="https://labs.amazon.science/blog/nova-act">Amazon AGI Labs</a>.
 
 * Amazon Bedrock Agents is a <strong>fully managed</strong> service for configuring and deploying autonomous agents without managing infrastructure or writing custom code. It handles prompt engineering, memory, monitoring, encryption, user permissions, and API invocation for you. Key features include API-driven development, action groups for defining specific actions, knowledge base integration, and a configuration-based implementation approach.
 
-* Amazon Bedrock AgentCore can flexibly deploy and operate <strong>AI agents</strong> in dynamic agent workloads using <strong>any framework and model</strong>. AgentCore works with CrewAI, LangGraph, LlamaIndex, and Strands Agents. AgentCore components include:
+* <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#">Amazon Bedrock AgentCore</a> can flexibly deploy and operate <strong>AI agents</strong> in dynamic agent workloads using <strong>any framework and model</strong> that include CrewAI, LangGraph, LlamaIndex, and Strands Agents. 
 
+   AgentCore components include:
    * Runtime: Provides serverless environments for agent execution
    * Memory: Manages session and long-term memory
    * Observability: Offers visualization of agent execution
@@ -66,6 +154,8 @@ The list of the many <strong>AI-related services and brands from AWS</strong>:
    * Browser-tool: Enables web application interaction
    * Code-interpreter: Securely executes code across multiple languages
    <br /><br />
+
+* PartyRock free app builder <a target="_blank" href="https://www.youtube.com/watch?v=-6p-u-BwJww">VIDEO</a>
 
 * "Strands Agents" is an open source Python SDK (releaed in 2025) at https://github.com/strands-agent/sdk-python. It takes a model-driven (MCP & A2A) approach to building and running autonomous AI agents, in just a few lines of code. Unlike Bedrock, Strands is model agnostic (can use Claude, OpenAI, etc.).
    * <a target="_blank" href="https://www.youtube.com/watch?v=Ausm87d5Ry8">Model Driven Agents - Strands Agents (A New Open Source, Model First, Framework for Agents)</a>
@@ -100,7 +190,10 @@ The list of the many <strong>AI-related services and brands from AWS</strong>:
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png" /></a>
 1. Cursor over the "Amazon Bedrock" listed to reveal its "Top features":
 
-   Agents, Guardrails, Knowledge Bases, Prompt Management, Flows
+   Agents, <a href="#Guardrails">Guardrails</a>, Knowledge Bases, Prompt Management, Flows
+
+   DEFINITION: Guardrails are Configurable controls in Amazon Bedrock used to detect and filter out harmful or sensitive content from model inputs and outputs.
+
 
    ### Overview Menu Model catalog
 
@@ -128,14 +221,41 @@ The list of the many <strong>AI-related services and brands from AWS</strong>:
 
    "Pricing is dependent on the modality, provider, and model" choices. <strong>Also by Region</strong> selected.
 
-   ### Model choice 
+   <a name="DiscoverModels"></a>
+   
+   ### Discover Model choice 
 
 1. Click the Amazon Bedrock web browser tab (green icon ) to return to the Overview page.
 1. Click on "<a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/model-catalog">View Model catalog</a>" to see the <strong>Filters</strong> to select the provider and <strong>Modality</strong> you want to use.   
    
    Notice that choosing "Anthropic" as your provider involves filling out "paperwork". So let's avoid that.
 
-   ### Manage IAM policies for permissions
+   <a target="_blank" href="https://www.youtube.com/watch?v=jwgW_gHI1Vs">VIDEO</a>:
+   Between Anthropic and AWS have a massive circular investment in AI data center build-out <a target="_blank" href="https://www.youtube.com/watch?v=vnGC4YS36gU">in Indiana</a> that use Amazon-designed Trinium chips (rather than NVIDIA). 30 buildings will consume 2.2 gigawatts.
+
+   <a target="_blank" href="https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/lecture/wMz4e/choosing-a-foundation-model">VIDEO</a>: Try several models so you're not guessing what works best. Models behave differently depending on your data and goals.
+
+   TODO: Use Ray.io to track run times and evaluate.
+
+
+   ### Amazon models
+  
+   PROTIP: Explore AWS AI Service Cards which describe each of Amazon's own models.
+
+   https://aws.amazon.com/nova/models/?sc_icampaign=launch_nova-models-reinvent_2025&sc_ichannel=ha&sc_iplace=signin
+
+   ### Amazon Q Developer regions
+
+   https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/regions.html
+
+   DEFINITION: Token is a unit of text processed by the model. A token could be a word, part of a word, or punctuation. Both
+input prompts and output responses are measured in tokens.
+
+   DEFINITION: Max Tokens is a setting that limits the length of the model’s response by defining the maximum number of tokens (chunks of words or characters) it can generate.
+
+   DEFINITION: Temperature is a parameter used during inference to control the randomness of model output. Higher values produce more creative or varied responses; lower values yield more consistent and focused results.
+
+   ## Manage IAM policies for permissions
 
 1. Click "<a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/settings">Settings</a>" near the bottom of the menu.
 1. Click "<a target="_blank" href="https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/home">Manage IAM policies</a>" for a new tab.
@@ -414,11 +534,95 @@ in SageMaker Unified Studio
 
 1. Generate text responses from a model by sending text and image prompts in the chat playground or generate and edit images and videos by sending text and image prompts to a suitable model in the <a target="_blank" href="https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/bedrock.html">image and video playground</a>.
 
-   ### Amazon Nova models
-  
-https://aws.amazon.com/nova/models/?sc_icampaign=launch_nova-models-reinvent_2025&sc_ichannel=ha&sc_iplace=signin
+
+<a name="Boto3"></a>
+
+## Python Boto3 in a Jupyter Notebook
+
+<img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/Notebook.png">
+<a target="_blank" href="https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/lecture/ImKmF/invoking-an-amazon-bedrock-foundation-model">VIIDEO</a>
+
+<a name="Notebooks"></a>
+
+1. Setup your CLI Jupyter Notebook environment to run Python code:
+
+   https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/supplement/CABQW/exercise-invoking-an-amazon-bedrock-foundation-model
+
+   * Task 1: Install Python (Windows)
+   * Task 2: Install Visual Studio Code 2022 (Windows)
+   * Task 3: Install AWS CLI (Windows)
+
+   * Task 1: Install Brew + Python (Mac)
+   * Task 2: Install Visual Studio Code 2022 (Mac)
+   * Task 3: Install AWS CLI (Mac)
+
+   * Task 4: Create an AWS Account
+   * Task 5: Create an IAM user and configure AWS CLI
+   * Task 6: Create Python environment and installing packages
+   * Task 7: Enable Amazon Bedrock Models
+   * Task 8: Create an S3 bucket for video generation   
+   * Task 9: Using Amazon Bedrock to create videos
+   * Task 10: Using Amazon Bedrock for text generation
+   * Task 11: Using Amazon Bedrock for streaming text generation
+   * Task 12: Cleanup
+
+1. View Python program code samples at:
+   <a target="_blank" href="https://aws-samples.github.io/amazon-bedrock-samples/">https://aws-samples.github.io/amazon-bedrock-samples/</a> based on coding at<br />
+   <a target="_blank" href="https://github.com/aws-samples/aws-bedrock-samples">https://github.com/aws-samples/aws-bedrock-samples</a>
+
+   PROTIP: The Free tier of <a target="_blank" href="https://aws.amazon.com/q/developer/pricing/">Pricing for Amazon Q Developer</a> provides for 50 agentic requests per month, so try a different example each month. 
+
+   Python coding files have a file extension of <strong>.ipynb</strong> because they were created to be run within a <strong>Jupyter Notebook</strong> environment.
+
+   An agentic request is any Q&A chat or agentic coding interaction with Q Developer through either the IDE or Command Line Interface (CLI). All requests made through both the IDE and CLI contribute to your usage limits.
+   
+   The $19/month "Pro" plan automatically opts your code out from being leaked to Amazon for their training.
+
+   DEFINITION: Synchronous Inference is real-time interaction where the model returns results immediately after a prompt is submitted.
+   DEFINITION: Asynchronous Inference is a delayed interaction where the prompt is processed in the background, and the results are delivered later. This is useful for long-running tasks or 
+   DEFINITION: batch inference - a method to process multiple prompts at once, often used for offline or high-volume jobs.
+
+   Notice there are code that <strong>stream</strong>
 
 
+References:
+   * <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html">Bedrock Developer Guide</a>
+   * <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html">Amazon Bedrock API Reference</a>
+   * <a target="_blank" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/bedrock.html">Boto3 1.42.44 documentation</a>
+
+Here's how to use Bedrock's InvokeModel API for text generation:
+
+The InvokeModel API is a low-level API for Amazon Bedrock. There are higher level APIs as well, like the Converse API. This course will first explore the low level APIs, then move to the higher level APIs in later lessons.
+
+```
+import boto3
+import json
+
+# Initialize Bedrock client
+
+bedrock_runtime = boto3.client('bedrock-runtime')
+
+model_id_titan = "amazon.titan-text-premier-v1:0"
+
+# Text generation example
+def generate_text():
+   payload = {
+         "inputText": "Explain quantum computing in simple terms.",        
+         "textGenerationConfig": {            
+                "maxTokenCount": 500,                  
+                "temperature": 0.5,            
+                "topP": 0.9        
+           } 
+     }
+     response = bedrock_runtime.invoke_model(         
+           modelId=model_id_titan,        
+           body=json.dumps(payload)    
+     )
+
+return json.loads(response['body'].read())
+
+generate_text()
+```
 
 <a name="CreateApps"></a>
 
@@ -431,6 +635,7 @@ https://aws.amazon.com/nova/models/?sc_icampaign=launch_nova-models-reinvent_202
 
 
 
+
 <a name="Assess"></a>
 
 ## Evaluate models
@@ -439,15 +644,105 @@ https://aws.amazon.com/nova/models/?sc_icampaign=launch_nova-models-reinvent_202
 
    https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-llms-finetuning-metrics.html
 
+
+   <a name="Guardrails"></a>
+
 1. Bedrock Guardrails for Governance
+
+   See https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/supplement/mJUnP/exercise-amazon-bedrock-guardrails
+
+   <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/security.html">Amazon Bedrock Guardrails</a> helps build trust with your users and protect your applications.
+
+   https://github.com/aws-samples/amazon-bedrock-samples/tree/main/responsible_ai/bedrock-guardrails
+
+   DEFINITION: "Transparency" means being clear about AI capabilities, limitations, and when AI is being used.
+
+   "Explainability" is the ability to understand and interpret how an AI model makes its predictions
+
+   DEFINITION: Guardrails are configurable filters that operate on both input and output sides of model interaction:
+   
+   DEFINITION: Input Protection - screening user inputs before they reach the model:
+
+   * Filters harmful user inputs before reaching the model
+
+   * Prevents prompt injection attempts
+
+   * Control topic boundaries
+
+   * Blocks denied topics and custom phrases
+
+   * Protect sensitive information
+
+   * Ensure response quality through grounding and relevance checks
+
+   Output Safety to validate model responses before they reach users:
+   
+   * Screens model responses for harmful content
+
+   * Masks or blocks sensitive information
+
+   * Ensures responses meet quality thresholds
+
+1. Under the "Build" menu category, click <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/guardrails">Guardrails</a>. Notice there are also Guardrails for Control Tower (unrelated). 
+
+1. At the bottom, click "info" to the right of "System-defined guardrail profiles" for the current AWS Region selected for for routing inference.
+
+   Notice that a Source Region defines where the guardrail inference request orginates.
+   A Destination Region is where the Amazon Bedrock service routes the guardrail inference request to process.
+
+   Guardrails are written in JSON format.
+
+   Creating policies will generate a separate and individual policy for all the AWS Regions included in this profile.
+
+1. Click "Create guardrail". <a target="_blank" href="https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/lecture/cct0i/adding-guardrails-for-inputs-and-responses">VIDEO</a>: 
+
+   1. Provide guardrail details
+   1. Configure content filters
+   1. Add denied topics: Harmful categories and Prompt attacks (Hate, Insults, Sexual, Violence, Misconduct, etc.)
+   1. Add word filters (for profanity)
+   1. Add sensitive information filters: 
+   1. Add contextual grounding check
+   1. Review and create
+   <br /><br />
+
+   Each Guardrail can be applied across multiple foundation models.
+     
+
 
 
 1. Production monitoring with CloudWatch
+
+
+
 
    ## Share your app
 
 1. <a target="_blank" href="https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/app-share.html">Share your app to collaborate with your team.
 
+
+## POC to Production
+
+Cross-Region inference with Amazon Bedrock Guardrails lets you manage unplanned traffic bursts by utilizing compute across different AWS Regions for your guardrail policy evaluations.
+
+
+https://github.com/aws-samples/amazon-bedrock-samples/tree/main/poc-to-prod
+From Proof of Concept (PoC)
+
+Tags for resource cost management with automatic cleanup.
+
+## Generate Documentation
+
+https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/lecture/r9sgh/demo-amazon-q-developer-documentation-agent
+Spring Boot
+
+
+## Notes
+
+A neural network's activation function is how it stores training data. Activation functions introduce non-linearity into neural networks, allowing them to learn complex patterns and relationships in data. Without activation functions, a neural network would only be able to learn linear relationships, regardless of how many layers it has.
+
+Embeddings are Numerical vector representations of data that capture semantic meaning.
+
+The Transformer architecture's key innovation enables efficient processing by its self-attention mechanism. This enables parallel processing and captures long-range dependencies better than recurrent networks.
 
 ## References
 
