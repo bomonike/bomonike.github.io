@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-01-29"
-lastchange: "26-01-29 v105 control tower :aws-onboarding.md"
+date: "2026-02-14"
+lastchange: "26-02-14 v108 permissions :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -98,14 +98,16 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 
    * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
 
-   * If you're using a .gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
+   * To use a .gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
       
-   * If you're using the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
+   * If you want the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
 
-   * Separate <strong>environments</strong> (aka sandboxes) need to be created
+   NOTE: Separate <strong>environments</strong> (aka sandboxes) need to be created
    so that different changes can be evaluated at each levels of maturity, simultaneously: 
    dev (development), performance testing, training, staging, production, etc.
 
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1770133844/environments-1042x284_tupuzd.png">
+   <img alt="environments-1042x284.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1770133844/environments-1042x284_tupuzd.png" /></a>
 
 
 <a name="WaysToInteract"></a>
@@ -114,7 +116,7 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
 
 Console Console GUI, Terminal CLI, Python* API, IoC JSON:
 
-* <strong>Visually</strong> clicking and typing on the internet browser "<strong>AWS Management Console</strong>" at <a target="_blank" href="https://console.aws.amazon.com/">https://console.aws.amazon.com</a>. The Console is used during initial setup to <a href="#RootCredentials">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootCredentials">Root Account</a>. Authentication is by user name and password plus MFA.
+* <strong>Visually</strong> clicking and typing on the internet browser "<strong>AWS Management Console</strong>" at <a target="_blank" href="https://console.aws.amazon.com/">https://console.aws.amazon.com</a>. The Console is used during initial setup to <a href="#RootCredentials">create and configure</a>, then <a href="#RootLockDown">lock down</a> a <a href="#RootCredentials">Root Account</a>. Authentication is by user name and password plus MFA (such as the Authy app).
 
    SECURITY PROTIP: Many enterprises do not permit use of interactive CLI and Console GUI in production and instead allow only automated API calls by IaC (such as CloudFormation and Terraform). This is to ensure version control and repeatability.
 
@@ -149,7 +151,7 @@ Console Console GUI, Terminal CLI, Python* API, IoC JSON:
 
    Policy as Code.
 
-* <strong>Declaratively</strong> running Infrastructure as Code (IoC) DSL (Domain Specific Language) definitions to define the <strong>desired state</strong> of the AWS environment. This makes it easier to track changes and repeat the same environment in different regions and accounts. 
+* <strong>Declaratively</strong> running Infrastructure as Code (IoC) DSL (Domain Specific Language) definitions to define the <strong>desired state</strong> of the AWS environment. This makes it easier to track changes and repeat the same environment in different regions within different accounts. 
 
    Cloud Formation (CF) was created by Amazon and only works within AWS. So its use would likely enable you to automate the <strong>latest tech</strong> AWS has to offer.
 
@@ -465,6 +467,19 @@ The AWS Organizations service enables central management of multiple AWS account
 * Automate account creation
 <br /><br />
 
+<a target="_blank" href="https://aws.amazon.com/solutions/guidance/establishing-an-initial-foundation-using-control-tower-on-aws/">pdf</a>
+<img alt="aws-control-tower-flow-2836x1699.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769753040/aws-control-tower-flow-2836x1699_kohvqa.png" /></a> <a target="_blank" href="https://d1.awsstatic.com/solutions/guidance/architecture-diagrams/establishing-an-initial-foundation-using-control-tower-on-aws.pdf">pdf</a>
+
+1. (CFLZ1-P2) Create an AWS account using a planned naming convention for root user email and account alias, secure root user account, and configure billing and tax information.
+2. (CFLZ1-P4) Create and configure <a href="#IdentityCenter">AWS IAM Identity Center</a> and standard management account roles for administrative management. Apply security configurations to IAM Identity Center settings.
+3. (CFLZ1-P3) Activate AWS Cost Explorer and create and configure AWS Cost & Usage Report.
+4. (CFLZ1-P5) Plan and deploy AWS Control Tower from identified parameters and secure your log data through AWS Key Management Service (AWS KMS) encryption. Apply an additional <a href="#ControlTower">AWS Control Tower</a> setting for landing zone. Set up AWS CloudTrail to deploy CloudTrail to all AWS member accounts, delivering logs to Log Archive S3 Bucket.
+5. (CFLZ1-P6) Build foundational Organizational unit structure on top of your Control Tower deployment.
+6. (CFLZ1-P7) Establish and deploy AWS Tag Policies. Activate cost allocation tags.
+7. (CFLZ1-P8) Deploy additional foundational security hardening configurations to your environment to include CloudWatch monitoring and AWS Config to management account, apply additional service control policies through AWS Organizations.
+
+<a name="ControlTower"></a>
+
 ### AWS Control Tower
 
 Add <a target="_blank" href="https://aws.amazon.com/controltower/">AWS Control Tower</a> uses AWS Organizations under the hood to automate a standardized setup of a secure, compliant multi-account environment with guardrails to ensure AWS best practices. It adds:
@@ -478,22 +493,9 @@ Add <a target="_blank" href="https://aws.amazon.com/controltower/">AWS Control T
 * Drift detection to ensure your environment stays compliant
 <br /><br />
 
-<a target="_blank" href="https://aws.amazon.com/solutions/guidance/establishing-an-initial-foundation-using-control-tower-on-aws/">pdf</a>
-<img alt="aws-control-tower-flow-2836x1699.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769753040/aws-control-tower-flow-2836x1699_kohvqa.png" /></a> <a target="_blank" href="https://d1.awsstatic.com/solutions/guidance/architecture-diagrams/establishing-an-initial-foundation-using-control-tower-on-aws.pdf">pdf</a>
-
-1. (CFLZ1-P2) Create an AWS account using a planned naming convention for root user
-email and account alias, secure root user account, and configure billing and tax
-information.
-2. (CFLZ1-P4) Create and configure AWS IAM Identity Center and standard management account roles for administrative management. Apply security configurations to IAM Identity Center settings.
-3. (CFLZ1-P3) Activate AWS Cost Explorer and create and configure AWS Cost & Usage Report.
-4. (CFLZ1-P5) Plan and deploy AWS Control Tower from identified parameters and secure your log data through AWS Key Management Service (AWS KMS) encryption. Apply an additional AWS Control Tower setting for landing zone. Set up AWS CloudTrail to deploy CloudTrail to all AWS member accounts, delivering logs to Log Archive S3 Bucket.
-5. (CFLZ1-P6) Build foundational Organizational unit structure on top of your Control Tower deployment.
-6. (CFLZ1-P7) Establish and deploy AWS Tag Policies. Activate cost allocation tags.
-7. (CFLZ1-P8) Deploy additional foundational security hardening configurations to your environment to include CloudWatch monitoring and AWS Config to management account, apply additional service control policies through AWS Organizations.
-
-
 Control Tower enables IAM Identity Center to quickly switch among several user accounts.
 
+<a name="IdentityCenter"></a>
 
 ### IAM Identity Center SSO
 
@@ -509,20 +511,103 @@ Identity Center <strong>federates</strong> access to Salesforce, Box, Microsoft 
 
 Amazon Cognito works with external identity providers that support SAML and OpenID Connect, and with social identity providers like Facebook, Google, and Amazon. Your app can sign in a user with a user <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html#id_roles_providers_cognito">identity pool</a> or an external IdP, then retrieve resources on their behalf with customized temporary sessions in an IAM role through the <a target="_blank" href="https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html">>AssumeRoleWithWebIdentity API operation</a>.
 
-IMPOTANT: Using AWS SSO avoids the security concern of storing long-lived IAM credentials on your local device.
+IMPORTANT: Using AWS SSO avoids the security concern of storing long-lived IAM credentials on your local device.
+
+<a target="_blank" href="https://docs.aws.amazon.com/cli/latest/userguide/cli-authentication-user.html">PROTIP</a>:
+Use of SSO add this into the AWS credentials file:
+```
+[sso-session my-sso]
+sso_region = us-east-1
+sso_start_url = https://my-sso-portal.awsapps.com/start
+sso_registration_scopes = sso:account:access
+```
+Access key ID & Secret access key
+
+
+## Federated
+
+AWS Identity Center obtains from centralized identity providers are <strong>attributes</strong> from <strong>federated</strong> corporate-wide directories in iDPs (identity providers):
+   * Cisco
+   * CyberArk
+   * Duo
+   * Fortinet
+   * Google
+   * Okta
+   * Ping Identity
+   * ForgeRock
+   * Microsoft Entra ID (formerly Active Directory (AD))
+   * SailPoint
+   * Salesforce
+   * Oracle
+   <br /><br />
+
+
+## Role Groups for Permissions
+
+Each role group typically have different <a href="#Actions">permissible Actions</a>:
+
+* SysAdmins : GetObject, CreateObject, ListObject
+* Archivist : ListObject, <strong>DeleteObject</strong>
+* Users     : ListObject, EditObject
+* SysAdmin  : ListObject
+<br /><br />
+
+PROTIP: Notice that <strong>only Archivists can delete</strong> within Production environments.
+Other accounts are not allowed to delete to minimize exposure to ransomware, which delete data after encrypting.
+
+PROTIP: Organizational policies are installed by my Python script ____ which automates creation of role groups by processing policy json files.
+
+
+## Permissions in JSON policy files
+
+The permissions which each <strong>role group</strong> has are defined created has its own a separate AWS Account.
+
+Permissions for each <strong>role</strong>, role AWS Account are defined in a <strong>JSON Policy file</strong> such as this: 
+```
+{
+  "Version": "2012-10-17",
+  "Statement": {
+    "Effect": "Allow",
+    "Action": "s3:GetObject",
+    "Resource": "arn:aws:s3:::bucket???/*",
+    "Condition": {
+      "StringEquals": {
+        "aws:ResourceTag/Department": "${aws:PrincipalTag/Department???}"
+      }
+    }
+  }
+}   
+```
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1771131116/aws-policy-json-1084x654_wrctvz.png"><img alt="aws-policy-json-1084x654.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1771131116/aws-policy-json-1084x654_wrctvz.png" /></a>
+
+Permissable <a href="#Actions">Actions</a> on <a href="#Resources">Resources</a> such as, for S3, buckets. Optionally, <a href="#TagABAC">conditions for Account Based Access Control</a> make use of conditional <strong>Tags</strong> (such as a Department name) to accumulate cloud charges.
 
 
 <a name="Attributes"></a>
+<a name="TagABAC"></a>
 
-### Identity Attributes
+### Condition Tags for ABAC
 
-Identity Center obtains from centralized identity providers such as Okta, Microsoft Active <strong>attributes</strong> from their corporate directories into AWS sessions. 
+<a target="_blank" href="https://aws.amazon.com/identity/attribute-based-access-control/">VIDEO</a>:
+Attribute Tag values such as a Department 
 
 Attributes include department, project, cost center, location, or other fine-grained <strong>tag-value pairs</strong> attached to AWS principals (like users or roles) or resources (like S3 buckets, KMS keys, or SQS queues). Attributes are used for <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html">ABAC (Attribute-Based Access Control)</a> for AWS to grant access based on attributes, such for SCIM (Cross-domain Identity Management) with Microsoft Active Directory.
 
+### Automation
+
+My Python script, ____, creates AWS Accounts for individual users, then grants each user permissions by associating each user to a <strong>role group</strong>.
+
+PROTIP: Automation makes security admin. more efficient. The state-of-the-art is to identify when a request is denied,immediately and automatically make a request to create the policy needed.
+
+<a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html
+">BLOG</a>: This Enables coexistence with RBAC, allowing organizations to adopt ABAC (Attribute-Based Access Control) alongside traditional role-based strategies. 
+
 https://www.youtube.com/watch?v=hAk-7ImN6iM
 
-### Granted to assume role
+
+<a name="Granted"></a>
+
+### Granted service to assume role
 
 Granted encrypts cached credentials to avoid plaintext SSO tokens being saved on disk.
 
@@ -620,6 +705,10 @@ Granted stores SSO access token in the system’s keychain rather than on disk.
 
    https://granted.dev/browsers
 
+1. Assume role:
+   ```
+   aws sts assume-role --role-arn arn:aws:iam::ACCOUNT:role/ROLE --role-session-name SESSION
+   ```
 
 
 <a name="Preparations"></a>
@@ -750,7 +839,7 @@ PROTIP: The distinctive aspect of this tutorial is that you are trained to <stro
 Follow these steps to create a profile account:
 
 1. Create a new email address for your AWS account.
-1. In your Password Manager app (such as KeepassXC), create a new entry to store the email, Account Name, password, Account ID, Secret info.
+1. In your Password Manager app (such as KeepassXC), create a new entry to store the email, Account Name, password, Account ID, Secret info, Department, and other <a href="#Attributes">attributes</a>.
 1. If you don't have Google Chrome installed, install it.
 1. Open a Google Chrome app.
 1. Click the person icon at the upper-right corner and sign in using your personal AWS "Skill Builder" profile email address.
@@ -776,7 +865,33 @@ Follow these steps to create a profile account:
 
 ## AWS Free Tier Benefits
 
+1. View the page: https://aws.amazon.com/free/ which lists free tier offer details by catagory. Scroll down and click "Show 8 more".
+
+   * Analytics
+   * Application Integration
+   * Artificial intelligence
+   * Business applications
+   * Compute
+   * Contact Center
+   * Databases
+   * Developer Tools
+   * End User Computing
+   * Game Tech
+   * Management Tools
+   * Media Services
+   * Migration & Modernization
+   * Multicloud & Hybrid
+   * Networking & Content Delivery
+   * Operations
+   * Security & Identity
+   * Storage
+   * Supply Chain
+   <br /><br />
+
+1. REMEMBER: Services only on the Paid tier have <strong>Free Trial</strong> period of varying number of days.
+
 1. Notice within the <strong>"Cost and Usage"</strong> widget the days and date for credits remaining. 
+
 1. PROTIP: Create in your calendar an event to take action before your credits run out.
 
    Since July 15, 2025, new AWS accounts are given just 6 months (182 days rather than a year) of free access to some AWS services.
@@ -811,9 +926,67 @@ Follow these steps to create a profile account:
 1. <a target="_blank" href="https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/select-region.html">Select your default region</a>. PROTIP: The speed of various regions may be imperceptable, but some regions can cost more than others.
 1. PROTIP: <a target="_blank" href="https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html">Some regions you need to opt-in to use</a>.
 
-   <a name="RootLockdown"></a>
+   ### Availability Zones
 
-   ## Root account lockdown
+   For resiliance from failure, some services are processed in duplicate Availability Zones (AZs) within the same Region.
+   Each AZ is physically separate from each other so a fire in one doesn't bring down the whole Region.
+   But data transfer between AZs within the same Region are typically 3-10 milliseconds.
+
+   Within some infrastructure services, AWS requests a choice of <strong>Availability Zones</strong> within a Region:
+   * EC2 instance
+   * EBS volume
+   * RDS instance
+   * FSx file system
+   * Redshift node
+   * VPC subnet
+   * macOS instances
+   <br /><br />
+
+   Some services automatically span multiple AZs, by design:
+   * RDS Multi-AZ
+   * Auto-scaling on EC2
+   * Elastic Load Balancer
+   * Elastic Beanstalk Environment
+   <br /><br />
+
+   Some services have multiple regions:
+   * AWS Backup Plan
+   * DynamoDB Global table
+   * S3 Replication
+   * RDS Read Replica
+   <br /><br />
+
+   ### Local zones
+
+   Some larger cities have "Local Zone" type within a Region (such as Boston's "us-east-1-bos-1a") for some services:
+   * EC2 (some specific instance types)
+   * EBS volume
+   * RDS instance
+   * ELB (Application Load Balancer only)
+   * VPC subnet
+   <br /><br />   
+
+   ### WaveLength Zones
+
+   Amazon has "Wavelength zones" where it provides 5G mobile service.
+
+   ### Edge Locations
+
+   PROTIP: Amazon makes <strong>AWS Edge locations</strong> available in a completely distinct from AWS Regions.
+
+   For end-users of mobile apps, Amazon has established peer connections with mobile carrier (ISP) cell towers
+   Amazon sells as CloudFront embedded into 900+ PoPs (Points of Presence) and Regional Edge Caches.
+
+   * Route 53 Zone
+   * CloudFront Distribution
+   * WAF Web ACL
+   * Lambda@Edge Function
+   <br /><br />
+
+
+<a name="RootLockdown"></a>
+
+## Root account lockdown
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769293001/aws-signin-660x946_gicpxk.png"><img align="right" width="200"  alt="aws-signin-660x946.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769293001/aws-signin-660x946_gicpxk.png" /></a>
 1. On a browser in the <a target="_blank" href="https://aws.amazon.com/">AWS Management Console</a> signed in as Root user for your default region:
@@ -826,7 +999,7 @@ Follow these steps to create a profile account:
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769285487/aws-mfa-choices-1150x768_dd6ahv.png"><img align="right" width="300" src="aws-mfa-choices-1150x768.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769285487/aws-mfa-choices-1150x768_dd6ahv.png" /></a>
 1. Select an authenticator app unlocked by a manually entered PIN.
 
-   PROTIP: The US Supreme Court ruled that biometrics are not protected under the US 5th Amendment gurantees of self-incrimination. So police can use your biometrics without your permission.
+   PROTIP: CAUTION: The US Supreme Court ruled that biometrics are not protected under the US 5th Amendment gurantees of self-incrimination. So police can use your biometrics without your permission.
 
 1. Click "Show QR code" to reveal it.
 1. In the Authy app, scroll down to click "+ Add Account".
@@ -987,6 +1160,31 @@ A description of sections in the script (at the top of the script file):
    * <a target="_blank" href="https://www.oreilly.com/videos/zero-to-hero/0642572107789/">OReilly Course</a>: "Zero to Hero  on AWS Security: An Animated Guide to Security in the Cloud"
    Apr 2025 by Matt Lea of https://schematical.com
 
+### Permissions by Group
+
+   REMEMBER: By default, a <strong>new IAM user has no permissions to do anything</strong>. They are not authorized to even list AWS resources.
+
+   CAUTION: To make it convenient for themselves, many "over-provision" AWS with globally powerful permissions.
+
+   iam:ListAttachedUserPolicies to<br />
+   aws iam list-attached-user-policies --user-name $AWS_USER_NAME
+
+   iam:ListGroupsForUser to<br />
+   aws iam list-users --scope LocalOnly --user-name $AWS_USER_NAME
+
+   iam:ListUserPolicies to<br />
+   aws iam list-user-policies --user-name $AWS_USER_NAME
+
+   iam:SimulatePrincipalPolicy to<br />
+   aws iam simulate-principal-policy \
+   --policy-source-arn "arn:aws:iam::$AWS_ACCT_ID:user/$AWS_USER_NAME" \
+   --action-names pricing:GetProducts
+
+    servicecatalog:ListApplications ???
+   Resources:
+   * https://www.youtube.com/c/cloudopian    
+
+   TODO: 
 
 ### Manual setup steps
 
@@ -1051,6 +1249,13 @@ A description of sections in the script (at the top of the script file):
     <a target="_blank" href="https://us-west-2.console.aws.amazon.com/lambda/home?region=us-west-2">https://us-west-2.console.aws.amazon.com/lambda/home?region=us-west-2</a>
 
     NOTE: Baking different zones into Console URLs makes for more direct connections and removes issues from using a single URL/DNS.
+
+    Alternately, if IAM Identity Center is being configured:
+    ```
+    aws configure sso
+    ```
+    Follow the prompts to set up SSO with your organization.
+
 
 14. Click "Download .csv" to download a "credentials.csv" file to your Downloads folder.
     It contains columns are a couple columns different than the "Add User" GUI:
@@ -1171,6 +1376,11 @@ The installer automatically creates a symlink in a folder in your PATH which lin
    ```
    brew upgrade awscli
    ```
+   The above is equivalent to:
+   ```
+   curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+   sudo installer -pkg AWSCLIV2.pkg -target /
+   ```
 
 1. Verify install:
    ```
@@ -1181,68 +1391,66 @@ The installer automatically creates a symlink in a folder in your PATH which lin
    Previously:
    <pre>aws-cli/1.20.3 Python/3.7.3 Darwin/18.7.0 botocore/1.21.3</pre>
 
-
    <a name="Configure"></a>
 
    ## AWS configure 
 
+   The AWS Management Console provides a way for account owners (administrators) to manually create <strong>IAM user accounts</strong> for programmatic access.
+
 1. To prompt acceptance or override of default AWS ACCESS KEY ID, AWS SECRET ACCESS KEY, and region saved as a plain-text file at~/.aws/credentials</tt>
-
-   <tt>aws configure</tt>
-
-    Prompt:
+   ```
+   aws configure
+   ```
+   The command causes prompting for <strong>Access Key Identifiers (AKIDs)</strong> to an AWS account. 
    
    <pre>AWS Access Key ID [None]: </pre>
 
-  Sample contents:
+   Press Enter to accept the value previously defined:
 
    <pre>[default]
-aws_access_key_id = ABCDEFGHIJKLMNOPQRST
+aws_access_key_id = AKIDEFGHIJKLMNOPQRST
 aws_secret_access_key = 123456786iJsvzQbkIlDiFtBh6DrPzIw8r7hVb35
-[py-ec2–1]
-aws_access_key_id = ABCDEFGHIJKLMNOPQRST
-aws_secret_access_key = 123456782Nwk156aPF0SxZ8KGY+RrhEbq3AIHUSS
    </pre>
 
-   BTW Progress toward AWS providing a more secure approach is at https://github.com/aws/aws-sdk/issues/41
+1. To confirm the default region (such as "us-east-1"):
+   ```
+   aws configure get region
+   ```
 
-   Meanwhile, to avoid having credentials in clear text, store them in encrypted form.
+1. Manually use the <a target="_blank" href="https://aws.amazon.com/iam/">IAM GUI</a> to disable programmatic access to their <strong>root</strong> (email) account and protect it with <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html">MFA (Multi-factor Authentication)</a>
 
 
+## Secure Individual Config
 
-Instead of doing what other clouds do (an <tt>aws login</tt> command which prompt for a user name and password), aws commands reference a specifically-named file at <tt>$HOME/.aws/credentials</tt> created by command <tt>aws configure</tt> or copied in.
-
-The <tt>aws configure</tt> command creates that file after prompting for access key identifiers (AKIDs) to an AWS account. Press Enter to accept the value previously defined:
-
-   * AWS Access Key ID [****************L5ZQ]:
-   * AWS Secret Access Key [****************+1MD]:
-   <br /><br />
-
-Stored with credentials are also:
-
-   * Default region name [us-east-1]: 
-   * Default output format [json]:
-   <br /><br />
-
-To create AKID credentials, AWS asks that account owners to manually use the <a target="_blank" href="https://aws.amazon.com/iam/">IAM GUI</a> to disable programmatic access to their <strong>root</strong> (email) account and protect it with <a target="_blank" href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html">MFA (Multi-factor Authentication)</a>
-
-The AWS Management Console provides a way for account owners (administrators) to manually create <strong>IAM user accounts</strong> for programmatic access.
+CAUTION: For individual users, AWS stores the <strong>long-running secret</strong> credentials file in clear text, unprotected by encryption.
+Clicking on a roque link on a phishing email would expose that file for theft. Many who lose control of their AWS credentials see bills from Amazon of thousands of dollars in unauthorized use (mining Bitcoins).
 
 For programmatic access to resources running inside AWS, the best practice is to use IAM roles which are not associated with a specific user or group. Any trusted entity can <strong>assume the role</strong> to perform a specific business task. A resource can be granted access without hardcoding an access key ID and secret access key into the configuration file. For example, you can grant an Amazon Elastic Compute Cloud (EC2) instance access to an Amazon Simple Storage Service (Amazon S3) bucket by attaching a role with a policy that defines this access to the EC2 instance. IAM dynamically manages the credentials for you with temporary credentials it rotates automatically.
 
 Outside AWS (on a Terminal/Console on your laptop), a dedicated service account should be created for each use case with only the permissions needed to limit the "blast radius" if credentials are compromised. For example, if a monitoring tool and a release management tool both require access to your AWS environment, create two separate service accounts with two separate policies that define the minimum set of permissions for each tool.
 
+When Amazon began offering AWS in 2006, it was a safer, kinder world where a file in one's own laptop can be considered secure. So by default the file <tt>$HOME/.aws/credentials</tt> remains stored in plain-text, but only for individual (learning) accounts. 
 
+OPTION A: AWS organizational logon now use more secure mechanisms.
 
-CAUTION: The problem with IAM user account secrets is that they are <strong>long-running secrets</strong> stored in the credentials file in <strong>clear-text</strong>. Someone who clicks on a roque link on a phishing email would expose that file for theft. Many who lose control of their AWS credentials see bills from Amazon of thousands of dollars in unauthorized use (mining Bitcoins).
+Progress toward AWS providing a more secure approach is at https://github.com/aws/aws-sdk/issues/41
 
-CloudAcademy.com and many enterprises create a centrally-administered
-https://aws.amazon.com/code/token-vending-machine-for-identity-registration-sample-java-web-application/
-"Vending Machine" application to generate and dispense <strong>temporary</strong> IAM user accounts with access keys. Such credentials are valid for only 12 hours or less. 
+OPTION B: To adopt a "Zero Trust" strategy, CloudAcademy.com (and many enterprises) create a centrally-administered <a target="_blank" href="https://aws.amazon.com/code/token-vending-machine-for-identity-registration-sample-java-web-application/">"Vending Machine" application</a> to generate and dispense <strong>new temporary</strong> IAM user accounts with access keys when needed. Each eredential are destroyed after being valid for only 12 hours or less. So there is less of a window for theft.
 
-But that requires tedious repeated manual effort.
-Securing temporary accounts with MFA adds to that toil.
+OPTION C: Store credentials in a temporarily open removeable USB stick that's otherwise encrypted.
+Instructions for that are described below.
 
+   WARNING: This approach requires <strong>tedious repeated manual effort</strong>.
+
+1. Get a USB stick. 
+1. Program the PIN and Admin PIN if it has a PIN pad.
+1. Make a folder "AWSKEY1" for the first account.
+1. Copy credential file to the USB stick.
+1. Edit your laptop's startup shell script (.zshrc, .bashrc, or .bash_profile) to put in that path, if found, system variables directing the aws command to look into the path on the removeable drive (instead of ~/.aws/credentials).
+1. Reboot to see it working.
+1. Run the shell script to back up the folder to your cloud.
+1. Test restore from backup.
+1. Move the credentials to Trash and empty it.
 
 <hr />
 
@@ -1407,7 +1615,7 @@ Portfolio project.
    </pre>
 
 1. Click the icon with the 9 square dots at upper-left for an alphabetical list of service categories.
-1. Click "All services" for an alphabetical list of all AWS services.
+1. Click "All services" for an alphabetical list of all AWS services. (Previously, there was a thumb tack icon).
 1. Click "View all services" in the content for a list of service names by category (in random order).
 
    Notice the URL of the page is for a specific region:
@@ -1588,6 +1796,10 @@ QUESTION: Obtain billing reports.
 <hr />
 
 ## HashiCorp Terraform
+
+DR;TL AI has grown capable enough now to generate Cloud Formation from natural-language prompts
+and audits of resources have matured to be trustworthy as well.
+So use of an intermediate language such as Terraform is no longer necessary.
 
 HashiCorp's Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. 
 Terraform can manage existing and popular service providers as well as custom in-house solutions.
@@ -1803,8 +2015,9 @@ $ aws iam list-access-keys
 
    AWS IAM commands use unique access key identifiers (AKIDs) to refer to individual access keys.
 
-$ aws iam create-access-key --user-name Alice
-
+```
+aws iam create-access-key --user-name Alice
+```
 
 
 Identity and Access Management (IAM) roles for Amazon EC2.
@@ -1841,6 +2054,44 @@ Additionally, add conditions to the policy that further restrict access, such as
     ]
 }
 </pre>
+
+## AWS CLI
+
+<a target="_blank" href="https://www.youtube.com/watch?v=e2A8K47Fj6s&index=4&list=PLZbbT5o_s2xoWPNdBbqi9eWnMJ5cDrr1M">VIDEO: How to Configure the AWS CLI | Amazon Web Services | AWS</a> Nov 26, 2017 by deeplizard
+
+https://docs.aws.amazon.com/cli/latest/index.html
+AWS CLI Command Reference
+
+2. To verify the identity being used in AWS CLI:
+
+   <pre><strong>aws sts get-caller-identity</strong></pre>
+
+   A sample response:
+
+   <pre>
+    "Account": "103265058630", 
+    "UserId": "AIDAJHXCZNAH2MEXAMPLE",
+    "Arn": "arn:aws:iam::103265058630:user/root-admin-work"
+   </pre>
+
+   Alternately, use an <a href="#Aliases">alias defined</a>:
+
+   ```
+   aws whoami
+   ```
+
+
+https://www.perplexity.ai/search/how-to-read-aws-config-file-fr-8KyTy2eGRRWq1LnV5TpexQ
+After awas config Instead of reading from ~/.aws/configure
+Define in ~/.zshrc or ~/.bashrc or ~/.bash_profile
+
+#USB_PATH="/Volumes/AWSKEY1"
+USB_PATH=“~/projects/aws"
+if [ -d "$USB_PATH" ]; then
+  export AWS_SHARED_CREDENTIALS_FILE="$USB_PATH/credentials"
+  export AWS_CONFIG_FILE="$USB_PATH/config"
+fi
+
 
 
 
@@ -2020,33 +2271,11 @@ Orion Papers</a> on Lucidchart
 
 https://scriptcrunch.com/aws-certification-iam-essentials-cheat-sheet/
 
-## AWS CLI
-
-<a target="_blank" href="https://www.youtube.com/watch?v=e2A8K47Fj6s&index=4&list=PLZbbT5o_s2xoWPNdBbqi9eWnMJ5cDrr1M">VIDEO: How to Configure the AWS CLI | Amazon Web Services | AWS</a> Nov 26, 2017 by deeplizard
-
-https://docs.aws.amazon.com/cli/latest/index.html
-AWS CLI Command Reference
-
-2. To verify the identity being used in AWS CLI:
-
-   <pre><strong>aws sts get-caller-identity</strong></pre>
-
-   A sample response:
-
-   <pre>
-    "Account": "103265058630", 
-    "UserId": "AIDAJHXCZNAH2MEXAMPLE",
-    "Arn": "arn:aws:iam::103265058630:user/root-admin-work"
-   </pre>
-
-   Alternately, use an <a href="#Aliases">alias defined</a>:
-
-   <pre>aws whoami</pre>
 
 
-   <a name="Groups"></a>
+<a name="Groups"></a>
 
-   ### Define groups to assign permissions 
+### Define groups to assign permissions 
 
    PROTIP: For a user to do something usually require several AWS resources.
    So several permissions need to be granted to a user.
@@ -2194,7 +2423,50 @@ STS returns:
 
 <a name="SecureCredential"></a>
 
-## Encrypt AWS Credentials
+## Secure AWS Credentials
+
+When AWS was first created in 2008, it was a less hostile world. But the default continues to place AWS credentials (account and password) of stand-alone individual accounts in a <strong>plain text</strong> in file <tt>~/.aws/credentials</tt> such as:
+```
+[personal]
+aws_access_key_id = AKIA...
+aws_secret_access_key = ...
+aws_session_token = ...   # optional if using temporary creds
+```
+Knowing this, that's the first place hackers go when they are able to get control of a developer's laptop (though successful phishing attempts).
+
+More enterprise-worthy tech add techniques to encrypt credential away in a cloud are used by <a href="#IdentityCenter">AWS IAM Identity Center</a>.
+
+<strong>What can individual AWS users do to protect their CLI login credentials?</strong>
+
+* https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/creds-file.html
+* https://docs.aws.amazon.com/sdkref/latest/guide/access-temp-idc.html
+<br /><br />
+
+1. Create the AWS credentials file in folder "aws-creds" within a removeable volume on a USB drive:
+   * Linux/macOS: /media/usb/aws-creds or /Volumes/AWSKEY1/aws-creds
+   * Windows: E:\aws-creds
+   <br /><br />
+
+1. Define OS-level system variables to notify AWS CLI commands and SDKs where the "shared credentials file" is located:
+   On Linux/macOS:
+   ```bash
+   export AWS_SHARED_CREDENTIALS_FILE=/media/usb/aws-creds/credentials
+   export AWS_PROFILE=personal   
+   ```
+   On Windows (PowerShell example):
+   ```powershell
+   $Env:AWS_SHARED_CREDENTIALS_FILE = "E:\aws-creds\credentials"
+   $Env:AWS_PROFILE = "personal"
+   ```
+
+So I wrote both a CLI and Python program to a) install the mechanisms and 
+b) retrieve credentials from the macOS vault guarded by Apple biometrics.
+c) backup the credentials in case I lose the enrypted volume.
+
+
+Another set retrieves from a PIN-lockable removeable drive I temporarily unencrypted.
+
+The challege is to create a 
 
 Use my shell script to log into AWS by decrypting credentials stored securely (instead of in plain text). 
 
@@ -2263,8 +2535,40 @@ https://www.youtube.com/watch?v=g4qKydnd0vU&list=PLmexTtcbIn_hvPcUm3oAufCtH7dwNA
 https://www.youtube.com/watch?v=7-7ugqAxgxI
 
 
+## Lambda Function for $20
 
-<sub>{{ page.lastchange }} created {{ page.created }}</sub>
+1. Choose "Use a blueprint"
+1. Choose the blueprint
+1. Name your function ("http-function-url-tutorial")
+1. Acknowledge public Function URL statement
+1. Complete function creation
+
+   ```
+   import * as fs from 'node:fs';
+
+   const html = fs.readFileSync('index.html', { encoding: 'utf8' });
+
+   /**
+   * Returns an HTML page containing an interactive Web-based tutorial.
+   * Visit the function URL to see it and learn how to build with lambda.
+   */
+   export const handler = async () => {
+      const response = {
+         statusCode: 200,
+         headers: {
+               'Content-Type': 'text/html',
+         },
+         body: html,
+      };
+      return response;
+   };
+   ```
+1. Invoke the function
+1. Review the function code
+1. Invoke your Function URL
+1. List resources created.
+1. Remove the resources created above.
+
 
 
 ## References
