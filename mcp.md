@@ -1,0 +1,532 @@
+---
+layout: post
+date: "2026-02-16"
+lastchange: "26-02-16 v013 kodekloud :mcp.md"
+url: https://bomonike.github.io/mcp
+file: "mcp"
+title: "MCP"
+excerpt: "(AI) Model Context Protocol (MCP), explained using a Python program and CLI commands calling Microsoft's LEARN MCP server."
+tags: [ai, mcp, cloud, cli, python]
+image:
+# mcp-1-1912x649.png
+  feature: https://res.cloudinary.com/dcajqrroq/image/upload/v1760758980/mcp-1-1912x649_ckgchi.png
+  credit: Wilson Mar
+  creditlink:
+comments: true
+created: "2025-10-10"
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
+This article takes a technical deep dive into MCP Servers.
+
+ICYMI: After OpenAI released ChatGPT on November 30, 2022, it achieved peak popularity faster than any mobile app in history. Subsequently, Google, Microsoft, Anthropic, Mistral, DeepSeek, Qwen, etc. released their <strong>foundational LLMs</strong> (Large Language Models) containing all the knowledge accumulated of all mankind over time. This has enabled perfection in translating any language to another.
+
+## The Best MCP Course
+
+* <a target="_blank" href="https://learn.kodekloud.com/user/courses?search=mcp">PROMO</a>: NodeJs FastMCP on OpenAI & Anthropic Claude is taught by <a target="_blank" href="https://learn.kodekloud.com/user/courses/crash-course-mcp-for-beginners">KodeKloud's hands-on MCP course</a> by Mumshad Mannambeth himself. $250/year for the premium subscription which provides a cloud learning environment, quizzes, and Discord with many other learners. Videos show use of VSCode, uv, Postman. Examples is for flight booking using the RooCode MCP agent.
+Uniquely includes checks of work one step at a time to keep you from getting lost, Kubernetes MCP, CI/CD flows.
+
+
+<a name="Components"></a>
+
+## Components of MCP
+
+MCP (Model Context Protocol) is a vendor-neutral standard created by Anthropic, at ???
+On a technical level, the protocol specifies use of async JSON-RPC (2.0) over stateful connections to invoke action by AI Agents. By abstracting the complexities of direct resource access, MCP allows AI models to interact seamlessly with external services.
+
+MCP replaces REST API calls. MCP makes use of an LLM to <strong>identify several options</strong> to achieve goals defined by prompts from users. For example, it can look into the
+   * AI Agent Marketplace Index of AI agents in various categories.
+
+* <strong>MCP Server</strong> = AI Shell coordinates and manages one or multiple MCP clients. This is a <strong>back-end</strong> API which provides functionality like database access, file operations, API integrations such as a database server that exposes query tools, a file system server that provides file access, a web scraping server.
+   * https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/tools/#available-tools
+   * https://github.com/modelcontextprotocol/servers?tab=readme-ov-file lists community servers, such as:
+   * Air to make flight reservations
+   * ___ to check the weather at various locations around the world
+   * AI Tasks to manage various tasks to be performed
+   * ai-Bible
+   * Airbnb listings
+   * Airtable databases online
+   * AgentBay for serverless compute infastructure
+   <br /><br />
+
+   The LLM also helps MCP <strong>decide</strong> from among tools to use and interacts with tools <strong>autonomously</strong>.
+
+* <strong>MCP Client</strong> = a <strong>front-end</strong> (GUI or CLI) app that consumes functionality by making MCP-compliant requests that execute tools, fetch resources, or use prompts. Examples are Warp, Claude Desktop, VS Code extensions, custom AI applications. For example, on Claude client Desktop, click on the slider icon to see what MCP Servers were installed:
+
+   <img alt="mcp-claude-client-432x419.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1760591658/mcp-claude-client-432x419_qea3uz.png" />
+
+* <strong>MCP Host</strong> = A web server/runtime hosts (houses) MCP Clients and <strong>manages the connection and orchestration</strong> among MCP Clients and Servers. It makes use of LLM apps with server lifecycles, transport protocol handling. and message routing (based on MCP, the Model Context Protocol). A Host may expose "Resources" of read-only data or "Template" of prompts.
+
+   For example, GitHub Copilot in Visual Studio Code can act as an MCP host and use MCP clients and servers to expand its capabilities.
+
+   <strong>Orchestration</strong> capabilities is what sparked the "Agentic AI" vision toward a future where multiple AI Agents can be coordianted to <strong>autonomously</strong> take action -- not just moving a cursor, filling forms, and coding, but also <strong>reason</strong> about research, perform entire workflows as physical and virtual robots.
+
+   Tools can be defined and exposed dynamically for LLMs to consume, optionally supporting authentication, prompts, and tool-specific parameters.​
+
+* <strong>A2A (Agent-to-Agent)</strong> standardizes communication for <strong>teamwork among agents</strong>. It was released by Google to enable different AI agents to collaborate with each other for achieving common goals. 
+   * https://medium.com/@neo-cruz/mcp-vs-a2a-comprehensive-comparison-of-ai-agent-protocols-862a969bac47.
+   * https://github.com/santosomar/AI-agents-for-cybersecurity
+   <br /><br />
+
+
+REMEMBER: Components of an MCP server are Resources, Tools, Prompts.
+   * Resources refers to context and data for the user or the AI model to use.
+   * Prompts are templated messages and workflows for users.
+   * Tools are functions (capabilities) for the AI model to execute.
+   <br /><br />
+
+Prompts are defined in each resource file at a URI: https:// url, file:// locally, in git://
+System prompts ???
+```
+{
+  "jsonrps": "2.0",
+  "id": 1,
+  "result: {
+    "prompts": [
+      "name": "flight_search_instruction",
+      "title": "Flight Search Instruction",
+      "description": "Guids the LLM ...",
+      "arguments": [
+        {
+          "name": "userRequest",
+          "description": "The user's ... request in natural language",
+          "required": true
+        }
+      ]
+    ]
+  }
+}
+```
+
+MCP Inspector. ???
+
+Features of each <strong>MCP Client</strong> use the mcp[client] library to include Sampling, Roots, and Elicitation.
+   * Sampling means. server-initiated agentic behaviros and recursive LLM interactions.
+   * Roots: server-initiated inquiries into URI or filesystem boundaries to operate in.
+   * Elicitation: server-initiated requests for additional information from users.
+   <br /><br />
+
+To run an MCP client:
+```
+cd /home/lab-user/flight-booking-server
+uv run mcp run server.py --transport streamable-http
+```
+127.0.0.1:8000 is the MCP CLI default at http://localhost:8000/mcp/
+
+For example, https://api.joyair.com/v1
+
+A2A ???
+
+
+
+## MCP Frameworks
+
+The list of MCP server frameworks from Alex:
+
+1. Open AI Agents SDK: Enables building agentic AI apps with built-in support for MCP.
+
+2. Composio: SDK to integrate OpenAI agents with Composio-managed MCP-compatible servers and workflows.
+
+3. MCP Python SDK: Official Python SDK to implement servers that conform to the MCP specification.
+
+   https://github.com/modelcontextprotocol/python-sdk
+
+4. LastMile MCP Agent: A workflow-driven framework for creating MCP-compliant agents with task coordination logic.
+
+5. MCP TypeScript SDK: TypeScript toolkit to build MCP-compatible servers based on the official schema.
+
+6. Google ADK: Google’s open-source Agent Development Kit with native support for MCP servers.
+
+7. Langchain MCP Adapter: A lightweight wrapper that connects LangChain/LangGraph with MCP-based toolchains.
+
+   Run locally!
+
+8. CopilotKit MCP Support: Enables frontend apps to talk directly to any compliant MCP server with built-in integration support.
+
+9. AWS Strands Agents: Model-driven SDK to design, deploy, and orchestrate MCP-based agents with typed schemas. Runs within the AWS Bedrock service.
+
+10. Semantic Kernel: Microsoft’s orchestration SDK that integrates tools and AI agents in serverless environments.
+
+11. Vercel AI SDK: Client SDK that supports MCP to connect apps to tools and AI agents in serverless environments.
+
+12. <a target="_blank" href="https://docs.praison.ai">praison.ai</a> by Mervin Prison <a target="_blank" href="https://www.youtube.com/watch?v=Fn1lQjC0GO0">VIDEO</a>: Python-based multi-agent framework builds and runs MCP-aligned agents and servers. praisonaiagents from https://github.com/MervinPraison/PraisonAI says "PraisonAI is a production-ready Multi-AI Agents framework with self-reflection. It provides a low-code solution to streamline the building and management of multi-agent LLM systems, emphasising simplicity, customisation, and effective human-agent collaboration." Works with OpenAI, Groq, Ollama. "The fastest AI agent framework for agent instantiation." <a target="_blank" href="https://medium.com/@vg-shyamala/deep-dive-into-praison-ai-agents-and-mcp-a-modern-approach-to-ai-driven-tool-integration-4b9a25b9f66f">BLOG</a>
+
+13. <a target="_blank" href="https://docs.databricks.com/aws/en/generative-ai/mcp/">Databricks Mosaic AI Agent Framework</a> manages <a target="_blank" href="https://docs.databricks.com/gcp/en/generative-ai/mcp/managed-mcp">their own MCP servers</a>. <a target="_blank" href="https://medium.com/@AI-on-Databricks/building-custom-mcp-servers-on-databricks-apps-a-practical-guide-48048480ce62">BLOG</a>
+
+14. PydanticAI ("slow")
+
+15. Agno at https://github.com/agno-agi/agno "builds with memory, knowledge, tools, and reasoning". <a target="_blank" href="https://www.youtube.com/watch?v=5yGcfiA5AxQ">VIDEO</a>
+
+16. <a target="_blank" href="https://www.youtube.com/watch?v=km5-0jhv0JI">VIDEO Ollama</a> "How to Run LLMs Locally". <a target="_blank" href="https://www.youtube.com/watch?v=Wjrdr0NU4Sk&t=89s&pp=ugUEEgJlbg%3D%3D">Network CHuck</a>
+
+
+## Microsoft
+
+Microsoft created an MCP service from all the <strong>documentation</strong> they have created, so that you can ask <strong>"how to"</strong> questions (in English sentences) like you do with ChatGPT.
+
+Microsoft also has a <a target="_blank" href="https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/tools/">"Tools" MCP Server</a> [<a target="_blank" href="https://learn.microsoft.com/en-us/training/modules/connect-agent-to-mcp-tools/?source=recommendations">docs</a>] to answer questions about <strong>your resources</strong> such as:
+
+   * "Show me all my resource groups"
+   * "List blobs in my storage container named 'documents'"
+   * "What's the value of the 'ConnectionString' key in my app configuration?"
+   * "Query my log analytics workspace for errors in the last hour"
+   * "Show me all my Cosmos DB databases"
+   <br /><br />
+
+When, in 2024, Anthropic.com released <a target="_blank" href="https://www.anthropic.com/news/model-context-protocol">MCP (Model Context ProtocoL) standard</a>, it was called the "hottest thing ever in tech" because it enables LLMs (Large Language Models) to be easily connected with to the universe of AI tools and services. A standardized way to communicate means that when a MCP Client is created, it can quickly be connected with other clients who can use them in prompts.
+
+In October, 2025, OpenAI announced a storefront of AI Agents like mobile app Marketplaces put up by <a target="_blank" href="https://en.wikipedia.org/wiki/App_Store_(Apple)">Apple</a> and <a target="_blank" href="https://play.google.com/store/apps?hl=en_US">Google</a>. Another tech Gold Rush.
+
+References:
+   * https://modelcontextprotocol.io/docs/learn/architecture = official Model Context Protocol documentation.
+   * https://www.anthropic.com/news/model-context-protocol
+   * <a target="_blank" href="https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/">6-hr video course: Learn about MCP</a> by Elie Schoppik of Anthropic.
+   <br /><br />
+
+
+<a name="MCP_Catalogs"></a>
+
+## MCP Catalogs
+
+Standardization of how MCP communicates with AI Agents has made it easier for 
+thousands of MCP servers and AI Agents to be created each day and appear in MCP Catalogs:
+
+   * <a target="_blank" href="https://hub.docker.com/mcp">https://hub.docker.com/mcp</a> is <a target="_blank" href="https://www.docker.com/blog/introducing-docker-mcp-catalog-and-toolkit/">Docker's MCP catalog</a>
+   * <a target="_blank" href="https://github.com/mcp/">https://github.com/mcp</a>
+   * <a target="_blank" href="https://mcpservers.org/">https://mcpservers.org</a>
+   * <a target="_blank" href="https://mcp.so">https://mcp.so</a>
+   * <a target="_blank" href="https://github.com/smallnest/mcp">Awesome list of MCP projects</a> by smallnest
+   * <a target="_blank" href="https://github.com/punkpeye/awesome-mcp-servers">Awesome MCP Servers</a> by punkpeye
+   * <a target="_blank" href="https://github.com/microsoft/mcp">https://github.com/microsoft/mcp</a> lists Microsoft's MCP Servers.
+   <br /><br />
+
+### JSON for Configuration
+
+Details about each MCP Server would include a sample JSON-format configuration file sent to execute it.
+For example, the "time" MCP Server also has <strong>tools</strong> such as "get_current_time" and "convert_time" not shown above but described by documentation.
+   ```
+   {
+    "mcpServers": {
+       "time": {
+         "command": "uvx",
+         "args": ["mcp-server-time", "--local-timezone=America/Denver"],
+           "env": { "-y", { "ACCESS_TOKEN": "SECRET_API_KEY" }  },
+           "working_directory": null
+         }
+      }
+   }
+   ```
+PROTIP: The JSON configuration enables you to define multiple servers in one go.
+
+Such configurations contain a <tt>command</tt> spec of <tt>"uvx"</tt>, <tt>"npx"</tt> or <tt>"pip"</tt> utilities used to install the MCP Server named. So the uv, Node.js, and pip packages should be installed.
+
+Alternately, a URL may be provided for an HTTP endpoint that supports Server-Sent Events (SSE).
+
+"args" (arguments) specify parameters that specify program behavior options.
+Other MCP Servers might require "SECRET_API_KEY" in the JSON configuration.
+[<a target="_blank" href="https://www.youtube.com/watch?v=6I2L4U7Xq6g&t=1m14s">VIDEO</a>]
+
+Optionally, the <tt>"env"</tt> (environment) variable is used to hold positional specifications such as  <tt>"-y"</tt> to automatically confirm acceptance of default values.
+
+Aditionally, <tt>working_directory</tt> argument specified if a server needs them.
+
+Dozens of YouTube videos offer conceptual tutorials with flowcharts:
+   * https://www.youtube.com/watch?v=7j1t3UZA1TY
+   * https://www.youtube.com/watch?v=23PzNxw11jc&pp=0gcJCfwJAYcqIYzv gRPC
+   * https://www.youtube.com/watch?v=E2DEHOEbzks "How MCP Works" by the author of KodeKloud.com
+   <br /><br />
+
+In this article, let's get you <strong>hands-on</strong> using the "Official <a target="_blank" href="https://learn.microsoft.com/en-us/">Microsoft Learn</a> MCP Server" loaded with what Microsoft previously displayed on their marketing, documentation, and tutorial websites, so that users can hold <strong>natural language</strong> conversations like with OpenAI's ChatGPT. 
+
+<ul><tt><strong>https://learn.microsoft.com/api/mcp</strong></tt></ul>
+
+Sample prompts are presented after we cover installation of MCP Clients on your laptop.
+
+1. Highlight and copy the above URL to your machine's Clipboard so you can paste it into an internet browser Address field.
+   * If you use the Safari browser, it would try to download a file "mcp". So...
+   * If you use the Chrome, Firefox, or Brave browser, you would see a message returned as a convenience to humans:
+   <br /><br />
+
+   <tt>"This is an MCP server endpoint and cannot be accessed directly via a browser or unsupported transports like SSE. Please use a streamable HTTP transport. For more details, visit: https://github.com/microsoftdocs/mcp.</tt>
+
+   DEFINITION: "streamable HTTP transport" refers to the MCP standard specifying that, unlike websites which return <strong>HTML</strong>, MCP Servers use gRPC (Remote Procedure calls) and SSE (Server Sent Events) for remote and "stdio" for local communication.
+
+   An MCP client usually needs to be installed to handle those technologies:
+
+   ## MCP Clients
+
+   At https://github.com/MicrosoftDocs/mcp/blob/main/README.md#-installation--getting-started
+   the page provides step-by-step instructions to install several clients to use Microsoft's server.
+
+   REMEMBER: Even though the underlying communication protocol is standardized by MCP, each of these categories of MCP Client tech have a different way to <strong>install</strong>:
+
+   * Stand-alone apps such as <a href="#WarpCLI">Warp CLI</a>, Claude Desktop, Cline, Copilot Studio, Microsoft Semantic Kernel, etc.
+   * Stand-alone IDE such as Winsurf, PyCharm, <a target="_blank" href="https://www.continue.dev/">continue.dev</a>
+   * Extensions added to IDE VSCode, such as Cursor, GitHub Copilot.
+   * Stand-alone utilities such as <a href="#MCPInspector"><strong>MCP Inspector</strong></a> for a deep-dive into the "JSON-RPC over HTTP or stdio" protocol used by MCP.
+   * Web servers such as NodeJs 
+   <br /><br />
+
+   Click on a link in the list above for install and run instructions on MCP Hosts.
+
+   PROTIP: Most MCP Hosts ask for monthly subscription.
+
+   This article is an exception, however, is focused on FREE ways to access MCP Servers:
+   a sample Python program and <a href="#curl"><tt>curl</tt> command within the Terminal that comes with macOS.
+
+<a name="PythonPgm"></a>
+
+### Python program
+
+<a target="_blank" href="https://github.com/wilsonmar/azure-quickly/blob/main/mcp-ms-learn.py">https://github.com/wilsonmar/azure-quickly/blob/main/mcp-ms-learn.py</a><br />
+outputs file mcp-ms-learn.json and <a target="_blank" href="https://github.com/wilsonmar/azure-quickly/blob/main/mcp-ms-learn.md">mcp-ms-learn.md</a> containing Markdown format in order to display images.
+
+```
+git clone https://github.com/wilsonmar/azure-quickly/
+cd azure-quickly
+uv run mcp-ms-learn.py -v -q "What are the geo coordinates of azure regions"
+```
+<tt>-v</tt> requests information about the MCP Server.
+
+Other questions:
+
+   * What are the geo coordinates of azure regions
+   * Why do I need MCP?
+   * How do I create my own MCP server
+   * How to generate translations of README in different languages
+   <br /><br />
+
+
+
+
+
+<a name="curl"></a>
+
+### curl
+
+Copy all lines of this command for pasting on the Warp CLI or other Terminal to execute:
+   ```
+   curl -X POST https://learn.microsoft.com/api/mcp \
+    -H "Content-Type: application/json" \
+    -H "Accept: text/event-stream, application/json" \
+    -d '{
+        "jsonrpc": "2.0",
+        "id": "test-1234",
+        "method": "tools/call",
+        "params": {
+           "name": "microsoft_docs_search",
+           "arguments": {
+              "query": "Who uses MCP"
+        }
+        }
+     }' | grep '^data:' | sed 's/^data: //' \
+     | jq -r '.result.content[].text' | jq -r '.[] | .content' \
+     > mcp-ms-learn.md
+     brew install glow
+     glow mcp-ms-learn.md
+   ```
+
+   More about the coding parameters above:
+
+   <tt>-X POST</tt> defines the MCP Server endpoint.
+
+   <tt>-H "Content-Type: application/json</tt> is required for JSON-RPC compliance.
+
+   <tt>-H "Accept: text/event-stream, application/json</tt> defined in<br />
+   <tt>-d '{ ... }'</tt> defines a JSON body defining the RPC method and parameters.
+
+   <tt>"jsonrpc": "2.0"</tt> uses the "JSON-RPC version 2" protocol (which operates over HTTP POST).
+
+   <tt>"method": "tools/call"</tt> — Invokes a tool defined by the MCP server.
+
+   "params.name" — The name of the tool Microsoft defined, and<br />
+   "params.arguments" — Key–value pairs of arguments specific to the selected tool.
+
+   <table border="1" cellpadding="4" cellspacing="1">
+   <tr><th>Tool Name</th><th>Description</th><th>Input Parameters</th></tr>
+   <tr valign="top"><td><tt>"microsoft_docs_search"</tt></td><td>Performs semantic search against Microsoft official technical documentation
+      </td><td>query (string): The search query for retrieva</td></tr>
+   <tr valign="top"><td><tt>"microsoft_docs_fetch"</tt></td><td>	Fetch and convert a Microsoft documentation page into markdown format
+      </td><td>url (string): URL of the documentation page to read</td></tr>
+   <tr valign="top"><td><tt>"microsoft_code_sample_search"</tt></td><td>Search for official Microsoft/Azure code snippets and examples
+      </td><td>query (string): Search query for Microsoft/Azure code snippets<br />
+   language (string, optional): Programming language filter.</td></tr>
+   </table>
+
+   <tt>| grep '^data:' | sed 's/^data: //'</tt> adjusts JSON response parsing for SSE response format, which begins with "Data:" before regular JSON response:
+   ```
+   {
+    "result": {
+        "content": [
+        {
+            "type": "text",
+            "text": "[{"title":"
+   ```
+
+   <tt>| jq -r '.result.content[].text' | jq -r '.[] | .content' \</tt> removes the excess "\\\\n" in JSON response.
+   
+   <tt>> mcp-ms-learn.md; brew install glow; glow mcp-ms-learn.md</tt> 
+   outputs to a markdown file which the glow utility reformats (in-place) for display on the CLI Console.
+
+
+<a name="WarpCLI"></a>
+
+### Warp CLI
+
+Warp.dev is my favorite AI assistant.
+
+1. Open Warp.app
+1. At the same time, press command + comma for the Settings GUI.
+
+   Go to Warp's MCP Server settings via: Warp Drive > Personal > MCP Servers.
+   Command Palette: search "Open MCP Servers"
+
+1. Click "AI" menu.
+1. Scroll down to click "Manage MCP Servers".
+1. Click "+ Add" to add a new MCP server. 
+
+
+https://github.com/MicrosoftDocs/mcp/blob/main/README.md
+
+
+https://github.com/MicrosoftDocs/mcp/blob/main/.openpublishing.publish.config.json
+contains:
+```
+{
+    "docsets_to_publish": [],
+    "notification_subscribers": [],
+    "sync_notification_subscribers": [],
+    "branches_to_filter": [],
+    "need_preview_pull_request": true,
+    "dependent_repositories": [
+        {
+            "path_to_root": "_themes",
+            "url": "https://github.com/Microsoft/templates.docs.msft",
+            "branch": "main",
+            "branch_mapping": {}
+        }
+    ]
+}
+```
+
+
+### Install and use MCP within VS Code
+
+Since most developers already have Visual Studio Code, let's add an MCP server to it:
+
+1. In VSCode, open the Command Palette
+   * Press at the same time: Shift + Command + P
+   * Click the settings icon at the lower-left to select "Command Pallete".
+1. Ignore the ">" and type enough of <tt>MCP: Add Server</tt> to select it.
+1. Choose the server type (HTTP/SSE (Server Sent Events) for remote, stdio for local).
+1. Enter the server URL 
+
+   https://learn.microsoft.com/api/mcp
+
+1. ??? Provide a Server ID, and select whether to save in workspace or user settings.
+1. ??? Configure authentication (e.g., add your API key to headers in .vscode/mcp.json or settings.json).
+
+
+<a name="Claude"></a>
+
+### Claude Desktop
+
+https://claude.ai/download
+
+https://github.com/neomatrix369/awesome-ai-ml-dl/blob/master/blogs/ai-coding-tools/claude-command-reference-card/post.md
+
+## MCP OpenAI Claude
+
+
+References:
+   * https://www.youtube.com/watch?v=Y0tZ35dFFx4
+
+
+
+## MCP servers in the cloud
+
+   https://<apim-service-name>.azure-api.net/<api-name>-mcp/mcp) ???
+
+Ensure you send the required authentication headers (often an API key or OAuth token).​
+
+## Build Custom MCP Servers
+
+Build your own MCP server using any supported language — MCP just requires 
+
+For .NET or Node.js, sample server-side packages are available.
+
+
+<a name="MCPInspector"></a>
+​
+## Install and use MCP Inspector utility
+
+   * https://www.youtube.com/watch?v=tnk80CnhQB4&t=43s by Euron, using Powrshell VSCode uv add "mcp[cli]" to define a program usinf fastmcp library
+
+
+Documentation about the tool is at:
+
+https://modelcontextprotocol.io/docs/develop/connect-remote-servers
+
+"The Inspector runs directly through npx without requiring installation"
+
+   npx @modelcontextprotocol/inspector python main.py
+
+
+## Local DB
+
+Local databases include SQLite that comes with Python, or PostgreSQL.
+
+DuckDB was designed as the "No DevOps" database.
+
+
+## MCP
+
+https://www.youtube.com/watch?v=Ek8JHgZtmcI
+Learn MCP Servers with Python (EASY)" by Alejandro AO - Software & Ai
+
+https://www.youtube.com/watch?v=E2DEHOEbzks&t=61s
+Model Context Protocol (MCP) Explained for Beginners: AI Flight Booking Demo! by Mumshad Mannambeth at KodeKloud
+
+https://learn.kodekloud.com/courses/crash-course-mcp-for-beginners
+1hr Crash Course: MCP For Beginners by Mumshad Mannambeth
+
+https://learn.kodekloud.com/courses/mcp-for-beginners
+MCP For Beginners
+by Jeremy Morgan
+
+https://learn.kodekloud.com/courses/ai-agents
+AI Agents by Gav Ridgeway
+
+https://learn.kodekloud.com/user/courses/cline
+Cline by Jeremy Morgan
+free open-source MCP plan and act workflows agent context windows
+https://learn.kodekloud.com/user/courses/cline/module/07505364-dfb1-4691-8f55-ce69bc5e81ec/lesson/e9b7e535-1529-44be-8dd1-702c06a7b7dc
+
+
+https://www.youtube.com/watch?v=yY6uo6mL-Ic&t=1019s
+Impact of AI on the future of our industry & software development by 4.0 Solutions
+
+https://www.projectpro.io/article/mcp-projects/1142
+
+
+Local notes Obsedian MCP server
+
+https://www.youtube.com/watch?v=5xqFjh56AwM
+1hr MCP Crash Course for Python Developers
+by Dave Ebbelaar
+
+https://www.youtube.com/watch?v=VfZlglOWWZw&t=3s
+1hr MCP Crash Course for Python Developers
+https://github.com/microsoft/mcp-for-beginners
+This high-level generalizations with buzzwords open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.
+
+
+## RAG
+
+https://www.youtube.com/watch?v=X0PwwfcGSHU
+We Found the BEST Vector Database! (Testing Head-to-Head Benchmarks)
+by Better Stack
+
+
