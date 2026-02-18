@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-17"
-lastchange: "26-02-17 v111 permissions :aws-onboarding.md"
+date: "2026-02-18"
+lastchange: "26-02-18 v111 svcs :aws-onboarding.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -43,12 +43,42 @@ B1. each end-user needs to spend between receiving instructions to being complet
 PROTIP: CAUTION: Using speed as the primary basis for judging performance can lead to cutting corners and thus security holes. So security must be a primary consideration. But security is difficult to measure.
 
 
-## AWS Marketing Page
+## AWS Marketing Hubs
 
 1. Use an internet browser to get on the <strong>AWS marketing page</strong> at 
 
    <a target="_blank" href="https://aws.com/">https://aws.com</a> resolves to<br />
    <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
+
+   NOTE: Amazon Web Service (AWS) offer several types of services:
+   * "SaaS" (System as a Service) which works completely from the browser like Microsoft 365, Google Drive, or Salesforce.
+   * "PaaS" (Platform as a Service)
+   <br /><br />
+1. Click "Product" for a list of the <strong>categories of products</strong> offered by AWS.
+1. Click a category below for the products in each category's marketing <strong>hub</strong>:
+   <a name="ProductCategories"></a>
+   * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> (datalakes)
+   * <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration</a>
+   * <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence</a>
+   * <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/compute/">Compute</a>
+   * <a target="_blank" href="https://aws.amazon.com/connect/">Custome Experience (Contact Center)</a> (Amazon Connect)
+   * <a target="_blank" href="https://aws.amazon.com/products/databases/">Databases</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/developer-tools/">Developer Tools</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/end-user-computing/">End User Computing</a>
+   * <a target="_blank" href="https://aws.amazon.com/gamelift/">Game Tech</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/management-and-governance/">Management Tools</a>
+   * <a target="_blank" href="https://aws.amazon.com/media-services/">Media Services</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/migration-and-modernization/">Migration & Modernization</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/multicloud-hybrid/">Multicloud & Hybrid</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/networking/">Networking & Content Delivery</a>
+   * <a target="_blank" href="https://aws.amazon.com/cloudops/">Operations</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/security/">Security & Identity</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/storage/">Storage</a>
+   * <a target="_blank" href="https://aws.amazon.com/aws-supply-chain/">(AWS) Supply Chain</a>
+   <br /><br />
+   
+   <a target="_blank" href="https://wilsonmar.github.io/aws-service-catalog/">My AWS Service Catalog page</a> provides different ways to instantiate entire applications. 
 
 1. Explore its menu items:
 
@@ -924,27 +954,6 @@ Follow these steps to create a profile account:
 ## AWS Free Tier Benefits
 
 1. View the page: https://aws.amazon.com/free/ which lists free tier offer details by catagory. Scroll down and click "Show 8 more".
-
-   * Analytics
-   * Application Integration
-   * Artificial intelligence
-   * Business applications
-   * Compute
-   * Contact Center
-   * Databases
-   * Developer Tools
-   * End User Computing
-   * Game Tech
-   * Management Tools
-   * Media Services
-   * Migration & Modernization
-   * Multicloud & Hybrid
-   * Networking & Content Delivery
-   * Operations
-   * Security & Identity
-   * Storage
-   * Supply Chain
-   <br /><br />
 
 1. REMEMBER: Services only on the Paid tier have <strong>Free Trial</strong> period of varying number of days.
 
