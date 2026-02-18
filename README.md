@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-07"
-lastchange: "26-02-07 v212 + aws-onboarding :README.md"
+date: "2026-02-18"
+lastchange: "26-02-18 v213 + aws-svcs :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -37,6 +37,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/aws-bedrock">aws-bedrock</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-kiro">aws-kiro</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-onboarding">aws-onboarding</a>
+1. <a target="_blank" href="https://bomonike.github.io/aws-svcs">aws-svcs</a>
 
 1. <a target="_blank" href="https://bomonike.github.io/azure-certifications">azure-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/azure-local">azure-local</a>
