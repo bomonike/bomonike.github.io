@@ -21,18 +21,75 @@ created: "2026-01-25"
 
 This article defines how to create apps on the AWS cloud using Kiro, step-by-step.
 
+Kiro was first released by AWS on <a target="_blank" href="https://kiro.dev/blog/introducing-kiro/">July 14th, 2025</a>. 
+That's "the day artificial intelligence stopped being a tool and became a colleague".
+
+   * https://discord.com/invite/kirodotdev
+   * https://www.linkedin.com/showcase/kirodotdev
+   * https://www.instagram.com/kirodotdev
+   * https://x.com/kirodotdev
+   * https://bsky.app/profile/kiro.dev
+   * https://medium.com/search?q=kiro
+   <br /><br />
+
+In November 2025, an internal memo signed by two of Amazon’s most powerful executives -- Peter DeSantis, VP of AWS utility computing, and Dave Treadwell, VP of eCommerce Foundation -- issued a directive that "80% of you will use AI for coding at least once a week." But Kiro is Amazon’s AI-native development tool. “We do not plan to support additional third-party AI development tools.” (OpenAI Codex). Anthropic's Claude Code briefly got the same tag before the designation was reversed after <a target="_blank" href="https://timesofindia.indiatimes.com/technology/tech-news/amazon-wants-80-of-its-developers-to-use-ai-for-coding-at-least-once-a-week-but-theres-one-condition/articleshow/128448190.cms">1,500 Amazon employees endorsed the formal adoption of Claud</a>.
+
+What makes this especially complicated is that Amazon has invested $8 billion in Anthropic, the company behind Claude Code, and signed a $38 billion cloud computing deal with OpenAI.
+
+
+## What's Kiro?
+
+Kiro builds code from design documents (spec requirements), which it can generate by analyzing a codebase. 
+Kiro creates data flow diagrams, TypeScript interfaces, database schemas, and API endpoints—like the Review interfaces for its review system.
+
+Kiro's act like an experienced developer catching what humans miss. 
+Kiro's <strong>Hooks</strong> are event-driven automations that execute when a file is created or saved:
+Hooks delegate tasks to a collaborator. 
+
+   * When a React UI component is saved, Kiro hooks update the test file.
+   * When an API endpoint (URL) is modified, hooks refresh README files.
+   * Upon a git commit, security hooks scan for leaked credentials.
+   <br /><br />
+
+Hooks enforce consistency. Set up a hook once, and Kiro handles the rest.
+
+
+Transion from reactive debugging to proactive architecture.
+
+Frame problems effectively for AI analysis  Validate AI suggestions against real-world constraints  Maintain clear boundaries between AI capabilities and human responsibilities  Accelerate learning through systematic AI-guided exploration  Focus on high-value human skills while AI handles routine complexity
+
+-- <a target="_blank" href="https://medium.com/@kombib">NotbookLM expert</a> Mihailo Zoin. Amazon Kiro: First Contact - When AI Becomes a Colleague (OUT OF THE BOX PROGRAMMING Book 1) (p. 3). (Function). Kindle Edition. 
+
 Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the new AWS Kiro, which consist of a GUI app and CLI.
 
    * <a target="_blank" href="https://www.linkedin.com/in/saurabhdahal/">Saurabh Dahal</a> is Sr Dev Advocate <a target="_blank" href="https://www.youtube.com/watch?v=HI_qexVlU2Y">VIDEO</a>
    <br /><br />
 
-   ## Install
+   "Your browser version is unsupported."
 
-1. Open the OS's default Terminal app, not another AI CLI app from Warp.dev, which cause this error reported by doctor:
+
+## Kiro Installers
+
+Kiro has two basic components:
+
+   1. <a target="_blank" href="https://kiro.dev/changelog/cli">Latest release</a> of <a href="#InstallCLI">Kiro CLI (Command Line Interface)</a> installed and run using a Terminal app; and
+
+   2. <a target="_blank" href="https://kiro.dev/changelog/ide">Latest release</a> of <a href="#InstallIDE">Kiro IDE (Development Environment)</a> run by clicking a mouse as well as keyboard.
+
+Additionally, Apple's XCode IDE is <a target="_blank" href="https://builder.aws.com/content/39bTP5YwFqftZPxsm1oGY9gxmCJ/building-ios-apps-with-kiro-cli-and-xcodes-agentic-coding-tools" title="Published Feb 13, 2026">>also used to create iOS apps</a> with Kiro CLI and <a target="_blank" href="https://developer.apple.com/documentation/xcode/giving-agentic-coding-tools-access-to-xcode">Xcode Agentic Coding Tools</a>.
+by https://www.linkedin.com/in/cmanikandan/">Mani Chandrasekaran</a>
+See <a target="_blank" href="https://developer.apple.com/documentation/Xcode/setting-up-coding-intelligence">Apple’s Coding Intelligence setup guide</a>
+
+
+<a name="InstallCLI"></a>
+
+### Install Kiro-CLI
+
+1. Open the macOS default Terminal app, not another AI CLI app (such as OpenAI or Warp.dev), which cause this error reported by doctor:
 
    <tt>✘ Kiro CLI terminal integrations: WarpTerminal is not supported</tt>
 
-1. Instead of using <tt>curl</tt> following Kiro CLI docs at <a target="_blank" href="https://kiro.dev/docs/cli/">https://kiro.dev/docs/cli</a>, use Homebrew for better upgrade in the future:
+1. PROTIP: Instead of using <tt>curl</tt> following Kiro CLI docs at <a target="_blank" href="https://kiro.dev/docs/cli/">https://kiro.dev/docs/cli</a>, use Homebrew for better upgrade in the future:
    ```
    brew install kiro-cli
    ```
@@ -55,11 +112,58 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    kiro-cli 1.24.0
    </pre>
 
-   ### Run Linux shell commands
+1. View the history of Kiro CLI releases:
+   ```
+   kiro-cli version --changelog
+   ```
+
+
+   <a name="InstallIDE"></a>
+
+   ## Install Kiro IDE
+
+1. Install the Kiro.app, which is a clone of Microsoft Visual Studio Code IDE. 
+   ```bash
+   brew install --cask kiro
+   ```
+   Response:
+   <pre>
+   ✔︎ JSON API cask.jws.json                                            Downloaded   15.3MB/ 15.3MB
+   ✔︎ JSON API formula.jws.json                                         Downloaded   32.0MB/ 32.0MB
+   ==> Downloading https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/0.8.
+   ######################################################################################## 100.0%
+   ==> Installing Cask kiro
+   ==> Moving App 'Kiro.app' to '/Users/johndoe/Applications/Kiro.app'
+   ==> Linking Binary 'code' to '/opt/homebrew/bin/kiro'
+   🍺  kiro was successfully installed!   
+   </pre>
+
+1. View the history of Kiro CLI releases:
+   
+   <a target="_blank" href="https://kiro.dev/changelog/ide/">https://kiro.dev/changelog/ide/</a>
+   
+1. Open Kiro.app:
+   ```bash
+   kiro
+   ```
+
+1. Log in: ???    
+   
+
+   ### Kiro's Keyboard Shortcuts
+
+1. Switch between the Kiro IDE and CLI, press ^ and ` (hold down shift and the 6 key for ^ then the ` to the left of 1). Other shortcuts:
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769430704/kiro-keys-538x836_rcmp0x.png"><img alt="kiro-keys-538x836.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769430704/kiro-keys-538x836_rcmp0x.png" /></a>
+
+
+   <a name="Tree"></a>
+
+   ### Run Linux shell Tree command
 
    REMEMBER: Use an exclaimation prefix to invoke OS-level commands.
 
-1. To list files within the tree of folders under the hidden folder created by the Kiro installer:
+1. In the Kiro CLI, list files within the tree of folders under the hidden folder created by the Kiro installer:
    ```
    !tree ~/.kiro
    ```
@@ -77,6 +181,8 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    </pre>
    Not listed is internal file <tt>.cli-bash_history</tt> to track every command entered.
 
+   * https://towardsdev.com/the-mcp-server-stack-10-open-source-essentials-for-2026-cb13f080ca5c
+
 
    <a name="Powers"></a>
 
@@ -84,13 +190,19 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
 
    <a target="_blank" href="https://www.youtube.com/watch?v=14se2WpEaCo&pp=0gcJCYcKAYcqIYzv">VIDEO: Kiro Powers</a>
    inject specialized context and tools into Kiro agents on-demand, providing focused knowledge exactly when needed. Unlike traditional context injection that loads everything upfront, Powers activate specific capabilities dynamically. 
-   https://dev.to/kirodotdev/analyzing-react-best-practices-with-kiro-powers-4i1f
-   Power-Builder:
+   * https://dev.to/kirodotdev/analyzing-react-best-practices-with-kiro-powers-4i1f but https://github.com/salihgueler/react-best-practices is gone. https://vercel.com/blog/introducing-react-best-practices
    * https://github.com/kirodotdev/powers/blob/main/power-builder/POWER.md
    * https://github.com/kirodotdev/powers/blob/main/power-builder/steering/interactive.md
    * https://github.com/kirodotdev/powers/blob/main/power-builder/steering/testing.md
+   * https://dev.to/aws/how-i-used-kiro-to-optimize-its-own-mcp-configuration-4mdg
+   <br /><br />
 
+   Unlike traditional context injection that loads everything upfront, Powers activate specific capabilities dynamically.   
+   Kiro Powers inject specialized context and tools into Kiro agents on-demand, providing focused knowledge exactly when needed. 
 
+   To build Kiro Powers, add <a target="_blank" href="https://github.com/kirodotdev/powers/tree/main/power-builder">Power Builder</a> or from the Vercel agent-skills repository.
+
+   
    <a name="Steering"></a>
 
    ### Steering specs
@@ -141,10 +253,6 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    * terraform_best_practices.md
    * minimal-engineering-approach.md
    * git_commit_rules.md
-
-   To <a target="_blank" href="https://learning.oreilly.com/live-events/ai-agents-with-aws/0642572272098/0642572272081/">Develop intelligent agents</a> with Amazon Bedrock, <a target="_blank" href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html">AgentCore</a>, and <a target="_blank" href="https://strandsagents.com/latest/documentation/docs/">Strands Agents</a> by Eduardo Mota
-   * strands-python.md  and 
-   * agentcore_strans_requirements.md
 
    Others: QUESTION: Where do we find these???
 
@@ -317,7 +425,13 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
 
 1. PROTIP: Open another Terminal tab for doing other work, so you can quickly ask questions.
 
-1. To the right of the ">", type a chatbot question such as:
+   REMEMBER: To the right of the ">", type a chatbot question.
+
+1. REMEMBER: <strong>Built-in commands</strong> such as this verify whether the Xcode MCP server is connected:
+   ```
+   /tools
+   ```
+1. ???
    ```
    What is the time in NYC
    ```
@@ -333,26 +447,6 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
 
    Kiro outputs standalone HTML files that open directly in any browser - no build step or server required. That enables you to share them with stakeholders by simply sending the files.
 
-1. Install the Kiro.app, which is a clone of Microsoft Visual Studio Code IDE. 
-   ```bash
-   brew install --cask kiro
-   ```
-   Response:
-   <pre>
-   ✔︎ JSON API cask.jws.json                                            Downloaded   15.3MB/ 15.3MB
-   ✔︎ JSON API formula.jws.json                                         Downloaded   32.0MB/ 32.0MB
-   ==> Downloading https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/0.8.
-   ######################################################################################## 100.0%
-   ==> Installing Cask kiro
-   ==> Moving App 'Kiro.app' to '/Users/johndoe/Applications/Kiro.app'
-   ==> Linking Binary 'code' to '/opt/homebrew/bin/kiro'
-   🍺  kiro was successfully installed!   
-   </pre>
-
-1. Open Kiro.app:
-   ```bash
-   kiro
-   ```
 
    <a name="Hooks"></a>
 
@@ -410,6 +504,47 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the ne
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/translation-update.kiro.hook">translation-update.kiro.hook</a> - Syncs translation files
 
 
+## Learn by playing
+
+learn how to use Kiro by completing tasks in the codebase for a sample video game called Spirit of Kiro at
+https://kiro.dev/docs/guides/learn-by-playing/
+
+
+
+## Strands MCP Agents
+
+   * strandsagents.com
+   <br /><br />
+
+https://www.youtube.com/watch?v=9ryQ4Nb32zk
+How to Build your first Agent with AWS Strands Agents (Part 1)
+by Arindam Majumder
+
+https://www.youtube.com/watch?v=cvmC29cu0Gg&pp=ugUEEgJlbg%3D%3D
+Build Stateful AI Agents with AWS Strands Sessions (Part-2)
+
+
+https://www.youtube.com/watch?v=j2wYT6jqXZY
+Beginner-Friendly Amazon Bedrock AgentCore & Strands Agents Tutorial
+
+https://www.youtube.com/watch?v=dn3G9jvB98k&pp=ugUEEgJlbg%3D%3D
+AWS Strands Agents SDK – Agents as Tools Explained - Multi AI Agent System at Scales #aiagents
+
+https://www.youtube.com/watch?v=vqdXVz5lxbk
+Building Multi-Agent Systems: Agents as Tools with Strands SDK
+
+https://www.youtube.com/watch?v=m0sRdeM9RZE&pp=0gcJCXwKAYcqIYzv
+Strands Agents (AWS): Build An Agent with Persistent Memory
+
+https://www.youtube.com/watch?v=Q-tYIAuv9WI
+Deploy Production-Ready Agents in 22 Minutes with AgentCore Runtime
+AWS Developers
+
+https://www.youtube.com/watch?v=dT89C2MuYj4&pp=ugUEEgJlbg%3D%3D
+AWS Strands vs Bedrock Agents Explained Simply with Demo
+Cloud With Raj
+
+
 ## References
 
 BLOG: https://prpm.dev/blog
@@ -418,6 +553,9 @@ https://www.youtube.com/watch?v=40vTCH0Iaac&pp=2AaCAg%3D%3D
 <a target="_blank" href="https://www.youtube.com/@RasmusWiding">videos</a> 
 by Rasmus Widing
 
+Hooks are event-driven automations that trigger an agent to execute a task in the background when you save, create, delete files, or on a manual trigger.
+https://kiro.dev/blog/introducing-kiro-autonomous-agent/">Kiro Autonmous agent</a>
 
 
+<hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
