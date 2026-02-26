@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-01-25"
-lastchange: "26-01-25 v003 steering files :aws-kiro.md"
+date: "2026-02-26"
+lastchange: "26-02-26 v004 steering files :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -21,8 +21,9 @@ created: "2026-01-25"
 
 This article defines how to create apps on the AWS cloud using Kiro, step-by-step.
 
-Kiro was first released by AWS on <a target="_blank" href="https://kiro.dev/blog/introducing-kiro/">July 14th, 2025</a>. 
-That's "the day artificial intelligence stopped being a tool and became a colleague".
+## Socials
+
+Kiro was first released at AWS re:Invent 2025 on <a target="_blank" href="https://kiro.dev/blog/introducing-kiro/">July 14th, 2025</a>. That's "the day artificial intelligence stopped being a tool and became a colleague".
 
    * https://discord.com/invite/kirodotdev
    * https://www.linkedin.com/showcase/kirodotdev
@@ -30,6 +31,8 @@ That's "the day artificial intelligence stopped being a tool and became a collea
    * https://x.com/kirodotdev
    * https://bsky.app/profile/kiro.dev
    * https://medium.com/search?q=kiro
+   * https://aws.amazon.com/search/?searchQuery=kiro
+   * https://learning.oreilly.com/search/?q=kiro&rows=100&language=en
    <br /><br />
 
 In November 2025, an internal memo signed by two of Amazon’s most powerful executives -- Peter DeSantis, VP of AWS utility computing, and Dave Treadwell, VP of eCommerce Foundation -- issued a directive that "80% of you will use AI for coding at least once a week." But Kiro is Amazon’s AI-native development tool. “We do not plan to support additional third-party AI development tools.” (OpenAI Codex). Anthropic's Claude Code briefly got the same tag before the designation was reversed after <a target="_blank" href="https://timesofindia.indiatimes.com/technology/tech-news/amazon-wants-80-of-its-developers-to-use-ai-for-coding-at-least-once-a-week-but-theres-one-condition/articleshow/128448190.cms">1,500 Amazon employees endorsed the formal adoption of Claud</a>.
@@ -42,7 +45,6 @@ What makes this especially complicated is that Amazon has invested $8 billion in
 Kiro builds code from design documents (spec requirements), which it can generate by analyzing a codebase. 
 Kiro creates data flow diagrams, TypeScript interfaces, database schemas, and API endpoints—like the Review interfaces for its review system.
 
-Kiro's act like an experienced developer catching what humans miss. 
 Kiro's <strong>Hooks</strong> are event-driven automations that execute when a file is created or saved:
 Hooks delegate tasks to a collaborator. 
 
@@ -53,19 +55,21 @@ Hooks delegate tasks to a collaborator.
 
 Hooks enforce consistency. Set up a hook once, and Kiro handles the rest.
 
-
 Transion from reactive debugging to proactive architecture.
 
 Frame problems effectively for AI analysis  Validate AI suggestions against real-world constraints  Maintain clear boundaries between AI capabilities and human responsibilities  Accelerate learning through systematic AI-guided exploration  Focus on high-value human skills while AI handles routine complexity
-
 -- <a target="_blank" href="https://medium.com/@kombib">NotbookLM expert</a> Mihailo Zoin. Amazon Kiro: First Contact - When AI Becomes a Colleague (OUT OF THE BOX PROGRAMMING Book 1) (p. 3). (Function). Kindle Edition. 
 
-Processing of <strong>Amazon Q</strong> AI chatbot prompts was moved into the new AWS Kiro, which consist of a GUI app and CLI.
+Processing of <strong>Amazon Q</strong> AI chatbot prompts was <a target="_blank" href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/upgrade-to-kiro.html">moved into Kiro</a>.
 
    * <a target="_blank" href="https://www.linkedin.com/in/saurabhdahal/">Saurabh Dahal</a> is Sr Dev Advocate <a target="_blank" href="https://www.youtube.com/watch?v=HI_qexVlU2Y">VIDEO</a>
+   * https://aws.amazon.com/blogs/machine-learning/build-aws-architecture-diagrams-using-amazon-q-cli-and-mcp/
    <br /><br />
 
    "Your browser version is unsupported."
+
+<a target="_blank" href="https://aws.amazon.com/blogs/database/build-a-fitness-center-management-application-with-kiro-using-amazon-documentdb-with-mongodb-compatibility/">
+Build a Kiro app referencing DocumentDB for fitness center management</a>.
 
 
 ## Kiro Installers
@@ -556,6 +560,14 @@ by Rasmus Widing
 Hooks are event-driven automations that trigger an agent to execute a task in the background when you save, create, delete files, or on a manual trigger.
 https://kiro.dev/blog/introducing-kiro-autonomous-agent/">Kiro Autonmous agent</a>
 
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772088582/aws-kiro-docker-1023x593_ijrprc.png"><img align="right" width="200" alt="aws-kiro-docker-1023x593.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772088582/aws-kiro-docker-1023x593_ijrprc.png" /></a>
+<a target="_blank" href="https://pages.awscloud.com/awsmp-gim-yrdg-webinar-mpd-devops-docker-solution-spotlight-ty.html">VIDEO</a>: AWS Marketplace Solution brief (DevOps Solution Demo from [11:24]) : Docker and Kiro MCP sandboxes from Docker MCP catalog at https://awslabs.github.io/mcp/ from https://github.com/awslabs/mcp 
+(for scalability, governance, security, isolation, portability, velocity) 
+by Abhi Karode, Sr. Solutions Architect.
+
+<a target="_blank" href="https://learning.oreilly.com/live-events/aws-ai-frontier-agents-kiro-aws-security-and-aws-devops-agents/0642572325008/">O’Reilly Live Event</a>:
+AWS AI Frontier Agents: Kiro, AWS Security, and AWS DevOps Agents Apr 22, 2026
+references https://github.com/brightkeycloud-external/aws-ai-frontier-agents
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
