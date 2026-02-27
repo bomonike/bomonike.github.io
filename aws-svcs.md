@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-18"
-lastchange: "26-02-18 v002 svcs links :aws-svcs.md"
+date: "2026-02-26"
+lastchange: "26-02-26 v006 naming conventions :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -18,6 +18,19 @@ created: "2026-02-18"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+Service names begin with either "Amazon" or "AWS". Which one used by a particular service is inconsistent because a naming convention has never been published.
+
+* "Amazon" prefix (e.g., Amazon S3, Amazon EC2, Amazon RDS) tends to be used for <strong>core</strong> building blocks of cloud computing - foundational infrastructure services that have been around since the early days of AWS. Such services are typically a discrete, <strong>provisionable</strong> service/resource (a bucket, an instance, a database, etc.).
+
+* "AWS" prefix (e.g., AWS Lambda, AWS IAM, AWS CloudFormation) tends to be used for higher-level, platform-wide, or management/orchestration services that operate <strong>across the infrastructure</strong> rather than being a discrete resource that is individually provisioned. Such services are typically a tool, framework, or platform capability (identity management, deployment, governance, etc.).
+
+Notable inconsistencies:
+
+   * Amazon CloudWatch is a monitoring/management tool that spans the infrastructure.
+
+   * AWS Glue is a data service that is provisioned
+
 
 ## Categories alphabetically
 
@@ -42,7 +55,7 @@ created: "2026-02-18"
    * <a target="_blank" href="https://aws.amazon.com/aws-supply-chain/">(AWS) Supply Chain</a>
 
 
-## <a target="_blank" href="https://aws.amazon.com/products/analytics//">Analytics</a>
+## <a target="_blank" href="https://aws.amazon.com/products/analytics/">Analytics</a>
 
 Optimize performance and scale for analytics and AI workloads
 
@@ -60,7 +73,7 @@ Optimize performance and scale for analytics and AI workloads
 - <a target="_blank" href="https://aws.amazon.com/redshift/spectrum/">Amazon Redshift Spectrum</a> Query S3 data from Redshift
 
 
-## <a target="_blank" href="https://aws.amazon.com/products/application-integration//">Application Integration</a>
+## <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration</a>
 
 Integrate distributed systems and serverless applications with less code
 
@@ -72,7 +85,7 @@ Integrate distributed systems and serverless applications with less code
 - <a target="_blank" href="https://aws.amazon.com/appsync/">AWS AppSync</a> Managed GraphQL API service
 - <a target="_blank" href="https://aws.amazon.com/appflow/">Amazon AppFlow</a> Integrate SaaS apps with AWS services
 
-## <a target="_blank" href="https://aws.amazon.com/ai//">Artificial intelligence</a>
+## <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence</a>
 
 Build and scale the next wave of AI innovation on AWS
 
@@ -92,7 +105,13 @@ Build and scale the next wave of AI innovation on AWS
 - <a target="_blank" href="https://aws.amazon.com/deepracer/">AWS DeepRacer</a> Autonomous racing car for ML learning
 - <a target="_blank" href="https://aws.amazon.com/kendra/">Amazon Kendra</a> Intelligent enterprise search
 
-## <a target="_blank" href="https://aws.amazon.com/business-applications//">Business applications</a>
+## <a target="_blank" href="https://aws.amazon.com/blockchain/">Blockchain (Web3)</a>
+
+- <a target="_blank" href="https://aws.amazon.com/managed-blockchain/">Amazon Managed Blockchain</a> Create and manage blockchain networks
+- <a target="_blank" href="https://aws.amazon.com/qldb/">Amazon QLDB</a> Immutable, cryptographically verifiable ledger database
+
+
+## <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications</a>
 
 Cloud and native applications built on and by AWS
 
@@ -102,27 +121,46 @@ Cloud and native applications built on and by AWS
 - <a target="_blank" href="https://aws.amazon.com/chime/">Amazon Chime</a> Communications service
 - <a target="_blank" href="https://aws.amazon.com/workmail/">Amazon WorkMail</a> Secure email and calendaring
 
+
+## <a target="_blank" href="https://aws.amazon.com/aws-cost-management/">Cloud Financial Management</a>
+
+Transform your business with cost transparency, control, forecasting, and optimization
+
+- <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing-conductor/">Billing and Cost Management - View and pay bills, analyze and govern your spending, and optimize your costs
+- <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing-conductor/">AWS Billing Conductor</a> - Simplifying your billing practice
+- <a target="_blank" href="https://aws.amazon.com/partners/marketplace/buy-with-aws/">AWS Marketplace</a> - Digital catalog where you can find, buy, and deploy software
+
 <a name="Compute/"></a>
 
-## <a target="_blank" href="https://aws.amazon.com/products/compute//">Compute</a>
+## <a target="_blank" href="https://aws.amazon.com/products/compute/">Compute</a>
 
 Run instances, containers, and serverless computing
 
 - <a target="_blank" href="https://aws.amazon.com/ec2/">Amazon EC2</a> Virtual servers in the cloud
 - <a target="_blank" href="https://aws.amazon.com/lambda/">AWS Lambda</a> Run code without managing servers (serverless)
-- <a target="_blank" href="https://aws.amazon.com/ecs/">Amazon ECS</a> Container orchestration service
-- <a target="_blank" href="https://aws.amazon.com/eks/">Amazon EKS</a> Managed Kubernetes service
-- <a target="_blank" href="https://aws.amazon.com/fargate/">AWS Fargate</a> Serverless compute for containers
+- <a target="_blank" href="https://aws.amazon.com/fargate/">AWS Fargate</a> Serverless compute capacity provider for containers obtained from ECR
 - <a target="_blank" href="https://aws.amazon.com/batch/">AWS Batch</a> Batch computing at any scale
 - <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk</a> Deploy and scale web applications
 - <a target="_blank" href="https://aws.amazon.com/apprunner/">AWS App Runner</a> Deploy containerized web apps easily
 - <a target="_blank" href="https://aws.amazon.com/lightsail/">AWS Lightsail</a> Simple virtual private servers
+- ASG (Auto Scaling Group) is not a separate product but a feature of EC2.
 
-## <a target="_blank" href="https://aws.amazon.com/connect//">Custome Experience (Contact Center)</a>
+<a name="Containers"></a>
+
+## <a target="_blank" href="https://aws.amazon.com/containers/">Containers</a>
+
+- ECR (Elastic Container Registry) - Fully-managed Docker container registry : Share and deploy container software, publicly or privately. Competes with Artifactory.
+- <a target="_blank" href="https://aws.amazon.com/ecs/">Amazon ECS</a> Elastic Container Service for orchestration
+- <a target="_blank" href="https://aws.amazon.com/eks/">Amazon EKS</a> Managed Elastic Kubernetes service
+- Red Hat OpenShift Service on AWS - Fully managed Red Hat OpenShift service on AWS
+
+
+## <a target="_blank" href="https://aws.amazon.com/connect/">Custome Experience (Contact Center)</a> Enablement
 
 - <a target="_blank" href="https://aws.amazon.com/connect/">Amazon Connect</a> Personalized customer experiences at scale
 
-## <a target="_blank" href="https://aws.amazon.com/products/databases//">Databases</a>
+
+## <a target="_blank" href="https://aws.amazon.com/products/databases/">Databases</a>
 
 Power AI and data-driven applications at any scale
 
@@ -138,7 +176,7 @@ Power AI and data-driven applications at any scale
 - <a target="_blank" href="https://aws.amazon.com/memorydb/">Amazon MemoryDB for Redis</a> Redis-compatible, durable in-memory database
 
 
-## <a target="_blank" href="https://aws.amazon.com/products/developer-tools//">Developer Tools</a>
+## <a target="_blank" href="https://aws.amazon.com/products/developer-tools/">Developer Tools</a>
 
 Develop applications on AWS faster and easier
 
@@ -152,21 +190,41 @@ Develop applications on AWS faster and easier
 - <a target="_blank" href="https://aws.amazon.com/codeartifact/">AWS CodeArtifact</a> Managed artifact repository
 - <a target="_blank" href="https://aws.amazon.com/codeguru/">AWS CodeGuru</a> AI-powered code reviews and performance recommendations
 
-## <a target="_blank" href="https://aws.amazon.com/products/end-user-computing//">End User Computing</a>
+
+## <a target="_blank" href="https://aws.amazon.com/products/end-user-computing/">End User Computing</a>
 
 Run cloud-native virtual desktops, secure web browsers, and streaming apps
 
 - <a target="_blank" href="https://aws.amazon.com/workspaces/">Amazon WorkSpaces</a> Virtual desktops in the cloud
 
 
-## <a target="_blank" href="https://aws.amazon.com/gamelift//">Game Tech</a>
+## Front-end Web & Mobile
+
+- Secrets Manager - Easily rotate, manage, and retrieve secrets throughout their lifecycle
+- IAM - Manage access to AWS resources
+- Support - Contact AWS for technical and account support.
+- Amazon Bedrock AgentCore - Deploy and operate highly effective agents securely, at scale using any framework and model.
+
+
+## <a target="_blank" href="https://aws.amazon.com/gamelift/">Game Tech</a>
 
 Build breakthrough gaming experiences
 
 * Amazon GameLift Servers - Game server hosting purpose-built to power the world's most demanding games
 * Amazon GameLift Streams - Managed service for low-latency, high frame rate game streaming at global scale
 
-## <a target="_blank" href="https://aws.amazon.com/products/management-and-governance//">Management Tools</a> 
+
+## **IoT (Internet of Things)**
+
+- <a target="_blank" href="https://aws.amazon.com/iot-core/">AWS IoT Core</a> Connect devices to the cloud
+- <a target="_blank" href="https://aws.amazon.com/greengrass/">AWS IoT Greengrass</a> Local compute, messaging, and sync for devices
+- <a target="_blank" href="https://aws.amazon.com/iot-device-management/">AWS IoT Device Management</a> Register, organize, and manage IoT devices
+- <a target="_blank" href="https://aws.amazon.com/iot-analytics/">AWS IoT Analytics</a> Analytics for IoT devices
+- <a target="_blank" href="https://aws.amazon.com/iot-events/">AWS IoT Events</a> Detect and respond to IoT events
+- <a target="_blank" href="https://aws.amazon.com/iot-sitewise/">AWS IoT SiteWise</a> Collect and organize industrial equipment data
+
+
+## <a target="_blank" href="https://aws.amazon.com/products/management-and-governance/">Management Tools</a> 
 
 Organize, track, and optimize how you use AWS
 
@@ -184,7 +242,7 @@ Organize, track, and optimize how you use AWS
 - <a target="_blank" href="https://aws.amazon.com/license-manager/">AWS License Manager</a> Manage software licenses
 
 
-## <a target="_blank" href="https://aws.amazon.com/media-services//">Media Services</a>
+## <a target="_blank" href="https://aws.amazon.com/media-services/">Media Services</a>
 
 Create digital content, and build live and on-demand video workflows
 
@@ -195,7 +253,7 @@ Create digital content, and build live and on-demand video workflows
 - <a target="_blank" href="https://aws.amazon.com/mediastore/">AWS Elemental MediaStore</a> Media storage optimized for video
 - <a target="_blank" href="https://aws.amazon.com/kinesis/video-streams/">Amazon Kinesis Video Streams</a> Process and analyze video streams
 
-## <a target="_blank" href="https://aws.amazon.com/products/migration-and-modernization//">Migration & Modernization</a>
+## <a target="_blank" href="https://aws.amazon.com/products/migration-and-modernization/">Migration & Modernization</a>
 
 Migrate faster and modernize with confidence (Transfer)
 
@@ -207,14 +265,14 @@ Migrate faster and modernize with confidence (Transfer)
 - <a target="_blank" href="https://aws.amazon.com/snow/">AWS Snow Family</a> Physical devices for data migration
 - <a target="_blank" href="https://aws.amazon.com/application-migration-service/">AWS Application Migration Service</a> Lift-and-shift migration
 
-## <a target="_blank" href="https://aws.amazon.com/products/multicloud-hybrid//">Multicloud & Hybrid</a>
+## <a target="_blank" href="https://aws.amazon.com/products/multicloud-hybrid/">Multicloud & Hybrid</a>
 
 Support operations across AWS, other clouds, and on-premises environments
 
 - <a target="_blank" href="https://aws.amazon.com/athena/">Amazon Athena</a> Query S3 data using SQL
 
 
-## * <a target="_blank" href="https://aws.amazon.com/products/networking//">Networking & Content Delivery</a>
+## <a target="_blank" href="https://aws.amazon.com/products/networking/">Networking & Content Delivery</a>
 
 Run every workload on a secure and reliable global network
 
@@ -230,7 +288,7 @@ Run every workload on a secure and reliable global network
 - <a target="_blank" href="https://aws.amazon.com/app-mesh/">AWS App Mesh</a> Application-level networking for microservices
 
 
-##  <a target="_blank" href="https://aws.amazon.com/cloudops//">Operations</a>
+##  <a target="_blank" href="https://aws.amazon.com/cloudops/">Operations</a>
 
 Gain visibility, control, and governance at scale
 
@@ -239,7 +297,16 @@ Gain visibility, control, and governance at scale
 
 <a target="_blank" href="https://www.youtube.com/playlist?list=PLehXSATXjcQHj8bPSf0uZuQBoxJ7a7ag7/">Cloud Operations Show on YouTube</a>
 
-## <a target="_blank" href="https://aws.amazon.com/products/security//">Security & Identity</a>
+## **Quantum Computing**
+- <a target="_blank" href="https://aws.amazon.com/braket/">Amazon Braket</a> Explore and experiment with quantum computing
+- <a target="_blank" href="https://aws.amazon.com/braket/">Amazon Quantum Ledger Database (QLDB)</a> Fully managed ledger database
+
+
+## **Satellite**
+- <a target="_blank" href="https://aws.amazon.com/ground-station/">AWS Ground Station</a> Communicate with satellites
+
+
+## <a target="_blank" href="https://aws.amazon.com/products/security/">Security & Identity</a> (& Compliance)
 
 + Compliance
 
@@ -259,7 +326,7 @@ Gain visibility, control, and governance at scale
 - <a target="_blank" href="https://aws.amazon.com/firewall-manager/">AWS Firewall Manager</a> Central firewall management
 
 
-## <a target="_blank" href="https://aws.amazon.com/products/storage//">Storage</a>
+## <a target="_blank" href="https://aws.amazon.com/products/storage/">Storage</a>
 
 Store and manage data for every workload at scale
 
@@ -272,28 +339,8 @@ Store and manage data for every workload at scale
 - <a target="_blank" href="https://aws.amazon.com/backup/">AWS Backup</a> Centralized backup across AWS services
 
 
-## **IoT Services**
-- <a target="_blank" href="https://aws.amazon.com/iot-core/">AWS IoT Core</a> Connect devices to the cloud
-- <a target="_blank" href="https://aws.amazon.com/greengrass/">AWS IoT Greengrass</a> Local compute, messaging, and sync for devices
-- <a target="_blank" href="https://aws.amazon.com/iot-device-management/">AWS IoT Device Management</a> Register, organize, and manage IoT devices
-- <a target="_blank" href="https://aws.amazon.com/iot-analytics/">AWS IoT Analytics</a> Analytics for IoT devices
-- <a target="_blank" href="https://aws.amazon.com/iot-events/">AWS IoT Events</a> Detect and respond to IoT events
-- <a target="_blank" href="https://aws.amazon.com/iot-sitewise/">AWS IoT SiteWise</a> Collect and organize industrial equipment data
-
-
-## **Blockchain**
-- <a target="_blank" href="https://aws.amazon.com/managed-blockchain/">Amazon Managed Blockchain</a> Create and manage blockchain networks
-- <a target="_blank" href="https://aws.amazon.com/qldb/">Amazon QLDB</a> Immutable, cryptographically verifiable ledger database
-
-## **Quantum Computing**
-- <a target="_blank" href="https://aws.amazon.com/braket/">Amazon Braket</a> Explore and experiment with quantum computing
-- <a target="_blank" href="https://aws.amazon.com/braket/">Amazon Quantum Ledger Database (QLDB)</a> Fully managed ledger database
-
 ## **Robotics**
 - <a target="_blank" href="https://aws.amazon.com/robomaker/">AWS RoboMaker</a> Develop, test, and deploy robotics applications
-
-## **Satellite**
-- <a target="_blank" href="https://aws.amazon.com/ground-station/">AWS Ground Station</a> Communicate with satellites
 
 
 NOTE: Amazon Web Service (AWS) offer several types of services:
@@ -305,8 +352,6 @@ NOTE: Amazon Web Service (AWS) offer several types of services:
 
 - <a target="_blank" href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/">AWS Regional Services List</a> Services available by region
 
-
-???
 
 
 - <a target="_blank" href="https://aws.amazon.com/appstream2/">Amazon AppStream 2.0</a> Stream desktop applications
