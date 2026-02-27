@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-07"
-lastchange: "26-02-07 v005 cert :aws-bedrock.md"
+date: "2026-02-27"
+lastchange: "26-02-27 v008 $20 button :aws-bedrock.md"
 url: https://bomonike.github.io/aws-bedrock
 file: "aws-bedrock"
 title: "AWS Bedrock"
@@ -20,11 +20,19 @@ created: "2026-01-25"
 {% include _toc.html %}
 
 <a target="_blank" href="https://bomonike.github.io/aws-bedrock"><img align="right" width="200" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/Bedrock.png" /></a>
-This article seeks to be a tutorial to <strong>logically present</strong> a hands-on experience to learn how to use AI by Amazon Bedrock.
+This tutorial aims to <strong>logically</strong> present a hands-on experience to learn how to use AI by Amazon Bedrock.
+
+## Why?
+
+We use Amazon Bedrock because foundation models (LLMs) are so large (and getting larger) that they need to live in the <strong>cloud</strong> - within Bedrock, where one can quickly switch among many models (without downloading).
+
+Cloud billing is how providers monitize (make money from) the billions it took in salaries and data centers needed to create the models.
+
+## AWS-certified AI Practitioner Exam
 
 This is not a 5 minute summary to run mindlessly, 
-but a step-by-step guided course so you <strong>master</strong> this like a pro, enough to pass the 3-year
-<a target="_blank" href="https://aws.amazon.com/certification/certified-ai-practitioner/">AIF-C01 AWS Certified AI Practioner</a>: 65 questions in 90 minutes for <a target="_blank" href="https://skillbuilder.aws/category/exam-prep/ai-practitioner-AIF-C01">$100</a>. The <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01.html">Exam Guide</a> Content Domains:
+but a step-by-step guided course so you <strong>master</strong> this like a pro, enough to pass the 
+<a target="_blank" href="https://aws.amazon.com/certification/certified-ai-practitioner/">AIF-C01 AWS Certified AI Practioner</a>: 65 questions in 90 minutes for <a target="_blank" href="https://skillbuilder.aws/category/exam-prep/ai-practitioner-AIF-C01">$100</a>. The <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01.html">Exam Guide</a> Content Domains (good for 3-years):
 
 1. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01-domain1.html">20%: Fundamentals of AI and ML</a>
    * Task Statement 1.1: Explain basic AI concepts and terminologies.
@@ -45,48 +53,80 @@ but a step-by-step guided course so you <strong>master</strong> this like a pro,
 5. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/examguides/ai-practitioner-01-domain5.html">14%: Security, Compliance, and Governance for AI Solutions</a>
    * Task Statement 5.1: Explain methods to secure AI systems.
    * Task Statement 5.2: Recognize governance and compliance regulations for AI systems.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=oFjxjqYSjMk">5.3</a>
    <br /><br />
 
-   * https://www.youtube.com/watch?v=WZeZZ8_W-M4 Freecodecamp with cheat sheets from <a target="_blank" href="https://ExamPro.com/aif-c01">ExamPro</a>
+Tutorials:
+   * https://www.youtube.com/watch?v=WZeZZ8_W-M4 15-hr Freecodecamp with cheat sheets from <a target="_blank" href="https://ExamPro.com/aif-c01">ExamPro</a>
    * https://youtube.com/playlist?list=PL7Jj8Ba9Yr6BLf2lS4Nfa2jdl0KpdvqYC&si=mZrE2_8vdDkZSLyl CloudExpert Solutions India
+   * <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=4h5m49s">VIDEO Follow Along: Create Bedrock Knowledge Base RAG</a> from Amazon CEO's letter to shareholders uploaded to a new S3 bucket with vector fields for Amazon <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=52386s">Follow along OpenSearch</a>.
+   * https://www.youtube.com/watch?v=gevdk7PV-s8
+   * https://www.zerotocloud.co/course/ai-practitioner-notes $39 from <a target="_blank" href="https://www.youtube.com/watch?v=v5yQNl8Rjy0">Tech with Lucy</a>
+   <br /><br />
+
+Bragadocious "How I Passed it with little effort":
+   * https://www.youtube.com/watch?v=kv0VAH6at9E&pp=ugUEEgJlbg%3D%3D
    * https://www.youtube.com/watch?v=6cMLDgFrWqs
    * https://www.youtube.com/watch?v=kv0VAH6at9E 
+   * https://www.youtube.com/watch?v=kv0VAH6at9E&t=31s&pp=ugUEEgJlbg%3D%3D Digital Cloud Training
    <br /><br />
 
 1. Take the 65-question free practice exam at:
 
-   <a target="_blank" href="https://cloudninja.pro/practice-tests/ai-practitioner/exam">CodeNinja</a>
+   * <a target="_blank" href="https://cloudninja.pro/practice-tests/ai-practitioner/exam">CodeNinja</a>
+   * <a target="_blank" href="https://www.zerotocloud.co/course/aws-certified-ai-practitioner-practice-tests">$29</a> 
+   <br /><br />
 
+There is also the Generative AI Developer, Machine Learning Developer, and Machine Learning Engineer.
 
-??? Those who created an AWS account can get a $20 credit for completing this.
+<hr />
+
+## What: Use Cases
+
+Eduardo Mota provides this list of why people use this tech:
+
+A. Customer Support Automation - Intelligent chatbots, ticket routing, and automated responses
+
+B. Data Analysis and Reporting - Automated insights, report generation, and data visualization
+
+C. Content Generation - Marketing copy, documentation, and creative content at scale
+
+D. DevOps Automation - Infrastructure management, deployment pipelines, and monitoring
+
+E. Research and Information Gathering - Web scraping, document analysis, and knowledge synthesis
+
+F. Other - Tell us about your unique use case
+
 
 ## Establish AWS Account
 
-Begin by following my <a target="_blank" href="https://bomonike.github.io/aws-onboarding">aws-onboarding tutorial</a> to securely establish an AWS account.
+Begin by following my <a target="_blank" href="Error getting IAM user detailshttps://bomonike.github.io/aws-onboarding">aws-onboarding tutorial</a> to securely establish an AWS account.
 
    https://docs.aws.amazon.com/cli/latest/userguide/cli-authentication-user.html
    
 
 ## Amazon AI products & services
 
-DEFINITION: The list of the many <strong>AI-related services and brands from AWS</strong>:
+Below is a list of the many <strong>AI-related services and brands from AWS</strong>:
 
-Rule-Based Systems: Early AI relied on explicit programming and fixed rules
+Rule-Based Systems: Early AI relied on explicit programming and fixed rules.
 
 Machine Learning: Introduced data-driven pattern recognition
 
-   * <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI<img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/SageMaker-AI.png"></a> is for those who want to <strong>create their own models</strong> from scratch or fine-tune existing ones with full control over the ML lifecycle. Unlike Bedrock (which focuses on pre-built foundation models), Amazon SageMaker provides a <strong>toolset</strong> to build Machine Learning (ML) models used for "data, analytics, and AI". Amazon SageMaker is a comprehensive machine learning platform for building, training, and deploying custom ML models. SageMaker features include <a href="#Notebooks">Notebooks</a>, training infrastructure, model hosting, and MLOps tools. It uess a Lakehouse architecture to hold and process data with versioning capabilities.
+* <a target="_blank" href="https://aws.amazon.com/sagemaker/ai/">SageMaker AI</a> (without "Amazon") was formerly<br /><a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI<img align="right" width="100" src="https://www.awsicon.com/static/images/Service-Icons/Artificial-Intelligence/64/png5x/SageMaker-AI.png"></a> is for <strong>creating custom LLM models</strong> from scratch or fine-tune existing ones with full control over the ML lifecycle. Unlike Bedrock (which focuses on pre-built foundation models), Amazon SageMaker provides a <strong>toolset</strong> to build Machine Learning (ML) models used for "data, analytics, and AI". Amazon SageMaker is a comprehensive machine learning platform for building, training, and deploying custom ML models. SageMaker features include <a href="#Notebooks">Notebooks</a>, training infrastructure, model hosting, and MLOps tools. It uess a Lakehouse architecture to hold and process data with versioning capabilities.
    * Amazon SageMaker Jumpstart (solutions for common ML uses cases that can be deployed in just a few steps)
    * Amazon SageMaker Ground Truth
-   * Amazon SageMaker Studio Lab
    * Amazon SageMaker Clarify detects bias in ML models and provides explanations for model predictions.
+
+   * SageMaker Unified Studio (formerly<br />Amazon SageMaker Studio Lab) incorporates (SQL) analytics capabilities referencing data stored in a Lakehouse architecture in<br />Amazon S3 data lakes within<br /><a target="_blank" href="https://aws.amazon.com/redshift/">Amazon Redshift data warehouses</a> plus third-party and federated data sources.
+   * SageMaker Catalog was built on<br />Amazon DataZone to discover, govern, and collaborate on data and AI.
    <br /><br />
 
 Deep Learning: Enables complex pattern processing through neural networks:<br />
 * Deep Learning Amis, Deep Learning Containers, Deepcomposer, Deeplens, Deepracer, Pytorch on AWS.
 
 Amazon developed AI utilities:<br />
-* CodeGuru analyzes code and suggests changes
+* CodeGuru scans & profiles code to suggest security changes in GitHub Actions. <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=10h30m32s">VIDEO</a>
 * Codewhisperer is being <a target="_blank" href="https://docs.aws.amazon.com/codewhisperer/latest/userguide/whisper-legacy.html">folded into Amazon Q Developer Pro</a> to suggest code based on comments, in real-time as auto completion. <a target="_blank" href="https://www.youtube.com/watch?v=erO_6AX_DXk">VIDEO</a>
 * Forecast, Kendra, Lex, 
 * <a target="_blank" href="https://aws.amazon.com/personalize/">Personalize</a> is a recommender engine which elevates customer experience with AI-powered personalization based on timestamped interaction data in S3 datasets. <a target="_blank" href="https://medium.com/@christopheradamson253/create-intelligent-recommendation-systems-with-amazon-personalize-ed9e620f3b43">BLOG</a>
@@ -96,7 +136,7 @@ Amazon developed AI utilities:<br />
 * <a target="_blank" href="https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html">Amazon Transcribe</a> speech-to-text (STT) engine.
 * Translate
 
-Amazon developed a suite of industry-specific AI services:<br />
+Amazon developed a suite of industry-specific AI services sold as SaaS:<br />
 * Fraud Detector, 
 * <a target="_blank" href="https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html">Comprehend</a> to detect customer sentiment in reviews written by customers. It's used in
 * Comprehend Medical for entity recognition in notes about patients,
@@ -129,8 +169,6 @@ Generative AI: creates new content from learned patterns.
 
    https://d2eo22ngex1n9g.cloudfront.net/Documentation/User+Guides/Titan/Amazon+Titan+Text+Prompt+Engineering+Guidelines.pdf
    Amazon Titan Text Prompt Engineering Guidelines
-
-
    
    https://community.aws/content/2tAwR5pcqPteIgNXBJ29f9VqVpF/amazon-nova-prompt-engineering-on-aws-a-field-guide-by-brooke?lang=en
    Amazon Nova: Prompt Engineering on AWS - A Field Guide
@@ -143,35 +181,30 @@ Generative AI: creates new content from learned patterns.
 
 * Amazon Bedrock Agents is a <strong>fully managed</strong> service for configuring and deploying autonomous agents without managing infrastructure or writing custom code. It handles prompt engineering, memory, monitoring, encryption, user permissions, and API invocation for you. Key features include API-driven development, action groups for defining specific actions, knowledge base integration, and a configuration-based implementation approach.
 
-* <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#">Amazon Bedrock AgentCore</a> can flexibly deploy and operate <strong>AI agents</strong> in dynamic agent workloads using <strong>any framework and model</strong> that include CrewAI, LangGraph, LlamaIndex, and Strands Agents. 
-
-   AgentCore components include:
-   * Runtime: Provides serverless environments for agent execution
-   * Memory: Manages session and long-term memory
-   * Observability: Offers visualization of agent execution
-   * Identity: Enables secure access to AWS and third-party services
-   * Gateway: Transforms APIs into agent-ready tools
-   * Browser-tool: Enables web application interaction
-   * Code-interpreter: Securely executes code across multiple languages
+* AgentCore replaces legagacy Bedrock Agents. AgentCore was designed from the ground up to run production AI agent MCP workloads cost efficiently. Its enterprise-grade security: OAuth and IAM authentication with fine-grained access control for enterprise security compliance. Its isolated Python environment for agent-generated code execution with no sandbox escape risk. But its managed web automation instances allows for browser-based interactions and scraping. It provides Serverless execution with 8-hour maximum session duration and configurable idle timeout. No infrastructure management required. Its dual-layer memory has short-term context for current sessions plus long-term insights via vector embeddings across sessions. For real-time monitoring and debugging, OpenTelemetry tracing with native CloudWatch integration.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=N7FGbBq1mI4&pp=ugUHEgVlbi1VUw%3D%3D">AWS Developers</a>
    <br /><br />
 
-* PartyRock free app builder <a target="_blank" href="https://www.youtube.com/watch?v=-6p-u-BwJww">VIDEO</a>
+* <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#">Amazon Bedrock AgentCore</a> can flexibly deploy and operate <strong>AI agents</strong> in dynamic agent workloads using <strong>any framework and model</strong> that include CrewAI, LangGraph, LlamaIndex, and Strands Agents. 
 
-* "Strands Agents" is an open source Python SDK (releaed in 2025) at https://github.com/strands-agent/sdk-python. It takes a model-driven (MCP & A2A) approach to building and running autonomous AI agents, in just a few lines of code. Unlike Bedrock, Strands is model agnostic (can use Claude, OpenAI, etc.).
+* <a target="_blank" href="https://PartyRock.aws">PartyRock.aws</a> is a FREE SaaS app builder powered by several LLMs. Apps built by it can be shared. Sign in can be with a Google, Apple accts too (but not Amazon Builder ID). <a target="_blank" href="https://www.youtube.com/watch?v=-6p-u-BwJww">VIDEO</a> <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=28338s">VIDEO: honest review</a> even though he can't get it working.
+
+
+* <a target="_blank" href="https://strandsagents.com/">StrandsAgents.com</a> is a lightweight SDK (releaed in 2025) for Python & Typescript (Dec 25 with zod schema validation for type-safe tool defs). <a target="_blank" href="https://pypi.org/project/strands-agents/">open sourced</a> Apache 2.0 by AWS to <a target="_blank" href="https://github.com/strands-agent/sdk-python">https://github.com/strands-agent/sdk-python</a> with <a target="_blank" href="https://github.com/strands-agents/tools">MCP tools</a> and <a target="_blank" href="https://github.com/strands-agents/samples">samples</a>. Unlike Bedrock, Strands is model agnostic (can use Anthropic Claude, OpenAI, etc.). It takes a model-driven (MCP & A2A) approach to building and running autonomous AI agents, in just a few lines of code. It emphasizes letting the LLM handle planning and reasoning rather than hardcoding workflows. It takes a model-driven approach to building AI agents.:
    * <a target="_blank" href="https://www.youtube.com/watch?v=Ausm87d5Ry8">Model Driven Agents - Strands Agents (A New Open Source, Model First, Framework for Agents)</a>
    * <a target="_blank" href="https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/">Introducing Strands Agents, an Open Source AI Agents SDK</a> by Clare Liguori on 16 MAY 2025
    * <a target="_blank" href="https://www.youtube.com/watch?v=nS1arlGhKOI">Strands Agents Framework Introduction</a> by Avatar image
    * <a target="_blank" href="https://www.youtube.com/watch?v=dn3G9jvB98k&pp=ugUEEgJlbg%3D%3D">AWS Strands Agents SDK – Agents as Tools Explained - Multi AI Agent System at Scales #aiagents</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=Q3NreEAdKMc&pp=ugUEEgJlbg%3D%3D">Introducing Strands Agents, an Open Source AI Agents SDK — Suman Debnath, AWS</a>
+   <br /><br />
 
 * Strand workflows are graph-based, with LangSmith integration.
 
 * <a target=_blank" href="https://aws.amazon.com/ai/machine-learning/inferentia/">AWS Inferentia</a> AI chips designed for AI inference used by Alexa and EC2 instances.
-* <a target="_blank" href="https://aws.amazon.com/machine-learning/neuron/">AWS Neuron SDK<img align="right" width="100" src="https://bhavinsangani14.github.io/AWS-Icons-Assets/git-aws-icons/64/svg/Neuron.svg"></a> deploy models on the AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with popular frameworks, such as PyTorch and TensorFlow, so that you can continue to use your existing code and workflows and run on Inferentia chips.
-* AWS Trainium (provides cloud infra for machine learning)
-
+* <a target="_blank" href="https://aws.amazon.com/machine-learning/neuron/">AWS Neuron SDK<img align="right" width="100" src="https://bhavinsangani14.github.io/AWS-Icons-Assets/git-aws-icons/64/svg/Neuron.svg"></a> deploy models on new AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with popular frameworks, such as PyTorch and TensorFlow, so that you can continue to use your existing code and workflows and run on Inferentia chips.
+* <a target="_blank" href="https://aws.amazon.com/ai/machine-learning/trainium/">AWS Trainium</a> are evolving AI Accelerator for cloud GenAI "UltraServer" infra used by EC2 P5e and P5en instances controlled by the AWS Neuron SDK. Trainium3 use 3nm AI chips for 2.52 petaflops (PFLOPs) of FP8 compute. <a target="_blank" href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/aws-trainium/">BLOG</a>
+* <a target="_blank" href="https://awsdocs-neuron.readthedocs-hosted.com/en/latest/">Neuron Explorer</a>
    <br /><br />
-
 
 1. View YouTube videos about Bedrock:
 
@@ -179,14 +212,100 @@ Generative AI: creates new content from learned patterns.
 
 1. <a target="_blank" href="https://catalog.us-east-1.prod.workshops.aws/workshops/a4bdb007-5600-4368-81c5-ff5b4154f518/en-US?refid=ceaf07a2-36ab-4fba-b62f-bcf6c48ca9f2">Text-based "Workshop" introducing Bedrock</a>
 
+<a target="_blank" href="https://docs.aws.amazon.com/cli/latest/reference/bedrock/">
+API operations for creating, managing, fine-turning, and evaluating Amazon Bedrock models.</a>
+
+## IAM Permissions
+
+REMEMBER: An AWS Account can do nothing without policies first being added to the account or the user group assigned to the account.
+<pre>
+                "bedrock:ListFoundationModels",
+                "bedrock:GetFoundationModel",
+                "bedrock:TagResource", 
+                "bedrock:UntagResource", 
+                "bedrock:ListTagsForResource", 
+                "bedrock:CreateAgent", 
+                "bedrock:UpdateAgent", 
+                "bedrock:GetAgent", 
+                "bedrock:ListAgents", 
+                "bedrock:DeleteAgent",
+                "bedrock:CreateAgentActionGroup", 
+                "bedrock:UpdateAgentActionGroup", 
+                "bedrock:GetAgentActionGroup", 
+                "bedrock:ListAgentActionGroups", 
+                "bedrock:DeleteAgentActionGroup",
+                "bedrock:GetAgentVersion",
+                "bedrock:ListAgentVersions", 
+                "bedrock:DeleteAgentVersion",
+                "bedrock:CreateAgentAlias", 
+                "bedrock:UpdateAgentAlias",               
+                "bedrock:GetAgentAlias",
+                "bedrock:ListAgentAliases",
+                "bedrock:DeleteAgentAlias",
+                "bedrock:AssociateAgentKnowledgeBase",
+                "bedrock:DisassociateAgentKnowledgeBase",
+                "bedrock:ListAgentKnowledgeBases",
+                "bedrock:GetKnowledgeBase",
+                "bedrock:ListKnowledgeBases",
+                "bedrock:PrepareAgent",
+                "bedrock:InvokeAgent",
+                "bedrock:AssociateAgentCollaborator",
+                "bedrock:DisassociateAgentCollaborator",
+                "bedrock:GetAgentCollaborator",
+                "bedrock:ListAgentCollaborators",
+                "bedrock:UpdateAgentCollaborator"
+</pre>
+
+The range of services for AI: BedrockCore, Sagemaker, BedrockAgentCore, Kira, etc. have dozens of actions.
+Knowing them means knowing the service.
+
+PROTIP: Using Bedrock in production requires several AWS services. 
+Auxillary services include: KMS, APIGateway, Lambda, Logging, logs, application-signals, CloudWatch, oam, rum, xray (tracing).
+
+It's convenient to grant to all resources:
+   * "AmazonBedrockFullAccess" 
+   * ARN: arn:aws:iam::aws:policy/BedrockAgentCoreFullAccess for "bedrock-agentcore:*"
+   <br /><br />
+
+But that's not the safest way to go.
+
+These instructions make use of AWS policy file "aws-quickly/.../bedrocks-01-policy.json" based on:
+   <a target="_blank" href="https://docs.aws.amazon.com/aws-managed-policy/latest/reference/BedrockAgentCoreFullAccess.html">JSON policy document for <strong>BedrockAgentCoreFullAccess</strong>.
+
+   It is a subset of the <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples-agent.html#iam-agents-ex-all">required permissions for Bedrock agents</a>
+
+1. Click the copy icon for the "JSON policy document" section to get all those lines in your OS Clipboard.
+1. In IAM, select a User groups. 
+1. Click the orange "Create group" sausage. 
+1. Name the group "Bedrocks".
+1. Check the user to assign the group (to obtain permissions associated with the group).
+1. Click "Create Group" at the lower-right of the page.
+1. Select the user group. Click "Edit". Click the "Permissions" tab.
+1. Click "Add permissions". Click "Create inline policies". Click "JSON".
+1. Click in the Policy editor text "Version". Press command+A to select all. Press delete
+1. Press command+V to paste from your Clipboard all 386 lines.
+1. "2170 characters exceeding limit"
+
+Alternately, using CLI:
+```
+# To return an ARN like arn:aws:iam::123456789012:policy/Bedrocks-01-Policy
+aws iam create-policy \
+  --policy-name Bedrocks-01-Policy \
+  --policy-document file://bedrocks-01-policy.json
+
+aws iam attach-group-policy \
+  --group-name MyGroupName \
+  --policy-arn arn:aws:iam::123456789012:policy/Bedrocks-01-Policy
+```
 
 ## Amazon Bedrock GUI Menu
 
    <a target="_blank" href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a> is a service fully managed by AWS to provide you the <strong>infrastructure</strong> to build generative AI applications without needing to manage (using Cloud Formation, etc.). 
 
-1. On the <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/">AWS Console GUI web page</a>, press <strong>Option+S</strong> or click inside the Search box. Type enough of "Amazon Bedrock" and press Enter when that appears. It's one of Amazon's AI services:
+1. On the <a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/">AWS Console GUI web page</a>, press <strong>Option+S</strong> or click inside the Search box. 
    <img alt="aws-search-1318x170.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769336376/aws-search-1318x170_bp4lwm.png" />
 
+   Type enough of "Amazon Bedrock" and press Enter when that appears. It's one of Amazon's AI services:
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769489879/bedrock-svcs-674x292_zze5xx.png" /></a>
 1. Cursor over the "Amazon Bedrock" listed to reveal its "Top features":
 
@@ -221,6 +340,8 @@ Generative AI: creates new content from learned patterns.
 
    "Pricing is dependent on the modality, provider, and model" choices. <strong>Also by Region</strong> selected.
 
+
+
    <a name="DiscoverModels"></a>
    
    ### Discover Model choice 
@@ -228,14 +349,24 @@ Generative AI: creates new content from learned patterns.
 1. Click the Amazon Bedrock web browser tab (green icon ) to return to the Overview page.
 1. Click on "<a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/model-catalog">View Model catalog</a>" to see the <strong>Filters</strong> to select the provider and <strong>Modality</strong> you want to use.   
    
-   Notice that choosing "Anthropic" as your provider involves filling out "paperwork". So let's avoid that.
+   Notice that choosing "Anthropic" as your provider involves filling out their survey, which
+   PROTIP: Anthropic <a target="_blank" href="https://www.anthropic.com/research/anthropic-economic-index-january-2026-report">publishes as their "Economic Index" report</a>.
 
    <a target="_blank" href="https://www.youtube.com/watch?v=jwgW_gHI1Vs">VIDEO</a>:
-   Between Anthropic and AWS have a massive circular investment in AI data center build-out <a target="_blank" href="https://www.youtube.com/watch?v=vnGC4YS36gU">in Indiana</a> that use Amazon-designed Trinium chips (rather than NVIDIA). 30 buildings will consume 2.2 gigawatts.
+   BTW: Anthropic and AWS have a massive circular investment in AI data center build-out <a target="_blank" href="https://www.youtube.com/watch?v=vnGC4YS36gU">in Indiana</a> that use Amazon-designed Trinium chips (rather than NVIDIA). 30 buildings will consume 2.2 gigawatts.
 
    <a target="_blank" href="https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/lecture/wMz4e/choosing-a-foundation-model">VIDEO</a>: Try several models so you're not guessing what works best. Models behave differently depending on your data and goals.
 
    TODO: Use Ray.io to track run times and evaluate.
+
+   TODO: Add cost info to <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/Basic%20Bedrock/1-bedrock_intro.ipynb">Python code to list models within Bedrock</a>
+
+   ### Leaderboards
+
+   The Berkeley Function Calling Leaderboard (BFCL) at <a target="_blank" href="https://gorilla.cs.berkeley.edu/leaderboard.html">https://gorilla.cs.berkeley.edu/leaderboard.html</a> evaluates the LLM's ability to call functions (aka tools) accurately. This leaderboard consists of real-world data and get updated periodically. For more information on the evaluation dataset and methodology, please refer to our blogs: BFCL-v1 introducing AST as an evaluation metric, BFCL-v2 introducing enterprise and OSS-contributed functions, BFCL-v3 introducing multi-turn interactions, and BFCL-v4 introducing holistic agentic evaluation. Checkout code and data. At time of writing, "Qwen3-0.6B (FC)" is the least cost LLM and also the least latency.
+
+   See https://block.github.io/goose/docs/getting-started/providers
+   about variables holding API keys for each LLM provider.
 
 
    ### Amazon models
@@ -259,7 +390,6 @@ input prompts and output responses are measured in tokens.
 
 1. Click "<a target="_blank" href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/settings">Settings</a>" near the bottom of the menu.
 1. Click "<a target="_blank" href="https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/home">Manage IAM policies</a>" for a new tab.
-
 
 
 ### AWS Bedrock IAM role
@@ -329,32 +459,95 @@ Run example Amazon Bedrock API requests through the AWS SDK for Python (Boto3)
 1. Click the blue copy icon among "Variables". Paste that in your Password Manager.
 1. Close.
 
-   ### Access
+References:
+   * https://learning.oreilly.com/live-events/agentic-ai-and-cybersecurity-risks/0642572186456/
+   Course: "Agentic AI and Cybersecurity Risks" by Dr. Petar Radanliev
+   * https://genai.owasp.org/2025/12/09/owasp-genai-security-project-releases-top-10-risks-and-mitigations-for-agentic-ai-security/
+   <br /><br />
 
-   ???
 
-1. Model Access Not Enabled
+   <a name="InfProfiles"></a>
 
-You need to explicitly request access to models in Bedrock
-Go to AWS Console → Bedrock → Model access
-Select the models you want to use and request access
-Access is usually granted immediately for most models
+   ### Inference Profiles
 
-2. Region Mismatch
+   <table border="1" cellpadding="4" cellspacing="0">
+   <tr><th> Feature </th><th> System-Defined </th><th> Application </th></tr>
+   <tr valign="top"><td>           Management </td><td> AWS Managed  </td><td> User Managed</td></tr>
+   <tr valign="top"><td> Best For </td><td> High availability, global apps </td><td> Cost tracking, multi-tenant</td></tr>
+   <tr valign="top"><td>      Setup Required? </td><td> ✓ None </td><td> ✗ Must create</td></tr>
+   <tr valign="top"><td> Cross-Region Routing </td><td> ✓ Yes  </td><td> ✓ Inherits from base</td></tr>
+   <tr valign="top"><td>    High Availability </td><td> ✓ Yes  </td><td> ✓ Inherits from base</td></tr>
+   <tr valign="top"><td>     Usage Monitoring </td><td> ✗ No   </td><td> ✓ Yes</td></tr>
+   <tr valign="top"><td>        Cost Tracking </td><td> ✗ No   </td><td> ✓ Yes</td></tr>
+   <tr valign="top"><td>  Custom IAM Policies </td><td> ✗ No   </td><td> ✓ Yes</td></tr>
+   </table>
 
-The model you're trying to use isn't available in your current region
-Check which models are available in your region
-Claude models are available in us-east-1, us-west-2, ap-northeast-1, ap-southeast-1, eu-central-1, and eu-west-3
+   <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/Basic%20Bedrock/4-inference_profiles.ipynb">Python code: List System-Defined vs Application Inference Profiles</a>
+   create_inference_profile(), 
+   Both inherit cross-region routing capabilities.
+   * Usage monitoring - Separate metrics for different apps
+   * Cost tracking - Track usage per application/team for Chargeback to business units, esp. in Multi-tenant systems
+   * Separate dev/staging/prod environments
+   * Cost allocation across teams
+   * Access control - IAM policies per profile
+   * Quota management - Separate rate limits
 
-3. Incorrect Model ID
 
-Make sure you're using the correct model identifier
-For Claude models, use formats like:
+   ### Chat with BedRock
 
-anthropic.claude-3-5-sonnet-20241022-v2:0
-anthropic.claude-3-5-haiku-20241022-v1:0
+   <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/Basic%20Bedrock/1-bedrock_intro.ipynb">Python code</a> to Make an invoke_model(prompt) request
 
-https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-access-permissions
+   <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/Basic%20Bedrock/1-bedrock_intro.ipynb">Python code</a> to Make a multi-turn converse(conversation) request
+
+   <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/Basic%20Bedrock/2-image_generation.ipynb">Python code: generate, display and save images</a> with model Nova Canvas
+   (gen single or multiple images)
+
+   <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/Basic%20Bedrock/3-video_generation.ipynb">Python code: Text to Video Generation</a> with model Nova Reel
+
+   // ARN: arn:aws:bedrock:us-east-1:058264544288:inference-profile/us.amazon.nova-lite-v1:0
+   // ID: us.amazon.nova-lite-v1:0
+   // Status: ACTIVE
+   // Models: [{'modelArn': 'arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-lite-v1:0'}, {'modelArn': 'arn:aws:bedrock:us-west-2::foundation-model/amazon.nova-lite-v1:0'}, {'modelArn': 'arn:aws:bedrock:us-east-2::foundation-model/amazon.nova-lite-v1:0'}]
+
+   // Get details of a system profile:
+   // Use system profile for inference
+
+
+   ### Manually on console:
+
+   Alternatively, 
+   
+   TODO: ???
+
+   Potential responses:
+
+   <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-access-permissions">
+   DOCS: access permissions</a>
+
+   <strong>
+   ValidationException
+   Operation not allowed
+   </strong>
+
+   Model Access Not Enabled. 
+   You need to explicitly request access to models in Bedrock
+   1. Go to AWS Console → Bedrock → Model access
+   1. Select the models you want to use and request access
+   1. Access is usually granted immediately for most models
+
+   Region Mismatch:
+
+   The model you're trying to use isn't available in your current region
+   Check which models are available in your region
+   Claude models are available in us-east-1, us-west-2, ap-northeast-1, ap-southeast-1, eu-central-1, and eu-west-3
+
+   Incorrect Model ID
+
+   Make sure you're using the correct model identifier
+   For Claude models, use formats like:<br />
+   anthropic.claude-3-5-sonnet-20241022-v2:0<br />
+   anthropic.claude-3-5-haiku-20241022-v1:0
+
 
    ### Chat / Text playbaround"
 
@@ -387,7 +580,7 @@ REMEMBER: First-time Amazon Bedrock model invocation requires AWS Marketplace pe
 
 Your IAM User or Role should have the <strong>AmazonBedrockFullAccess</strong> AWS managed policy attached[5].
 
-To allow only Amazon Nova Lite v1:
+To allow use of Amazon Nova Lite v1 as the <a href="#InfProfile">inference profile</a> and foundation model:
 
 ```
 {
@@ -415,13 +608,17 @@ If you clicked an Activity to earn credits, you would be at:
    https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/text-generation-playground?tutorialId=playground-get-started
    Amazon Bedrock > Chat / Text playground
 
+<a target="_blank" href="https://www.youtube.com/watch?v=yW5m9c7U4YE&list=PLcVUEmr8aWhV3TYoGD9l8RMufs-NiIX3D&index=2">VIDEO</a>:
 Follow the blue pop-ups (but don't click "Next" within them):
+
 1. Click the orange "Select model" orange button.
 
    PROTIP: Do not select "Anthropic" to avoid their mandatory "use case survey" and possibly thrown into https://console.aws.amazon.com/support/home hell.
 
 1. Click the "+" at the top of your browser bar to see the difference between the various LLM models:
-   <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">Supported foundation models in Amazon Bedrock</a>
+
+   <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html">
+   DOCS: Table of foundation models supported in Amazon Bedrock</a>
 
    PROTIP: Some models are available only in a <strong>single region</strong>. <a target="_blank" href="https://dev.to/pradeep_kasula_dff004d770/accessing-amazon-nova-lite-on-aws-bedrock-22pi">Amazon Nova Lite v1 is only available in us-east-1</a>
 
@@ -438,8 +635,10 @@ Follow the blue pop-ups (but don't click "Next" within them):
 
    PROTIP: Generally, for least cost, select the smallest number of "B" or tokens, such as "Gemma 3 4B IT v1".
 
+1. <img align="right" width="200" alt="aws-bedrock-access-284x142.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772207816/aws-bedrock-access-284x142_u0atbc.png" />PROTIP: A lot of people miss this: Click at the upper-right the circle icon with three dots to select "Modify access". The resulting list of models should show green "Access granted" for your model.
+
 1. Ignore the "Inference" selections that appear.
-1. Click "Apply". 
+1. Click the orange "Apply". 
 1. Type in a question under "Write a prompt and choose Run to generate a response."
 
    PROTIP: Refer to a chat template to craft a prompt. See <a target="_blank" href="https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html">Prompt engineering concepts</a>:
@@ -554,7 +753,7 @@ in SageMaker Unified Studio
 
    * Task 1: Install Brew + Python (Mac)
    * Task 2: Install Visual Studio Code 2022 (Mac)
-   * Task 3: Install AWS CLI (Mac)
+   * Task 3: Install AWS CLI (Mac) <a target="_blank" href="https://youtu.be/t5pCWBp-EjI">VIDEO</a>
 
    * Task 4: Create an AWS Account
    * Task 5: Create an IAM user and configure AWS CLI
@@ -639,6 +838,11 @@ generate_text()
 <a name="Assess"></a>
 
 ## Evaluate models
+
+   * <a target="_blank" href="https://learning.oreilly.com/live-events/-/0642572186456/">CLASS</a>: Take Agentic AI and Cybersecurity Risks (live online course with Petar Radanliev)
+   * <a target="_blank" href="https://learning.oreilly.com/live-events/-/0642572007604/">CLASS</a>: AI Agents A-Z with Sinan Ozdemir
+   * <a target="_blank" href="https://learning.oreilly.com/library/view/-/9781803238753/">BOOK</a>: Building Agentic AI Systems (book)
+   <br /><br />
 
 1. <a target="_blank" href="https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/evaluation.html">Evaluate models for different task types</a>.
 
@@ -736,6 +940,141 @@ https://www.coursera.org/learn/getting-started-aws-generative-ai-developers/lect
 Spring Boot
 
 
+## eduamota
+
+https://www.udemy.com/course/amazon-bedrock-aws-generative-ai-beginner-to-advanced/
+Generative AI on AWS - Amazon Bedrock, RAG & Langchain[2025]
+Build 9+ GenAI Use Cases on AWS with Amazon Bedrock, RAG, Langchain, AI Agents, MCP, Amazon Q, LLM. No AI/Coding exp req
+
+referencing his https://github.com/eduamota/building-apps-with-bedrock
+
+In a browser:
+1. With an OReilly subscription, View their video class "AI Agents with AWS (Develop intelligent agents with Bedrock, AgentCore, and Strands Agents)" from <a target="_blank" href="https://www.linkedin.com/in/motaed/">Eduardo Mota</a>:
+
+   https://learning.oreilly.com/live-events/ai-agents-with-aws/0642572272098/0642572272081/
+
+1. Among References, save the PDF.
+1. View https://github.com/eduamota/building-apps-with-bedrock
+
+   In a Terminal:
+
+1. Make a folder to receive new github folder, such as "bomonike".
+1. Download just the latest main branch with a renamed repo name:
+   ```
+   git clone git@github.com:eduamota/building-apps-with-bedrock.git --depth 1 aws-bedrock
+   cd aws-bedrock
+   ```
+1. Initialize project folder `aws-bedrock` to contain a blank README.md, main.py, and pyproject.toml files:
+   ```bash
+   uv init 
+   ```
+1. Use Homebrew to install utilities:
+   ```
+   brew install certifi
+   ```
+1. Install required packages from the pypi on the internet:
+   ```bash
+   uv pip install boto3 strands-agents strands-agents-tools bedrock-agentcore bedrock-agentcore-starter-toolkit
+   ```
+1. Configure aws by following my:
+   https://bomonike.github.io/aws-onboarding
+
+1. Confirm region:
+   ```bash
+   aws configure get region
+   ```
+1. Launch the Streamlit interface to explore all capabilities:
+   ```
+   cd UI
+   uv pip install -r requirements.txt
+   ```
+1. Install Streamlit:
+   ```bash
+   uv add streamlit  # instead of python -m pip install streamlit
+   ```
+   <pre>
+   Streamlit is now installed (version 1.54.0) in your virtual environment at /Users/johndoe/bomonike/aws-bedrock/.venv.
+   </pre>
+1. Activate the virtual environment:
+   ```
+   source ~/bomonike/aws-bedrock/.venv/bin/activate
+   ```
+1. Notebook to open http://localhost:8888/lab and a new browser tab:
+   ```
+   uv add jupyterlab
+   jupyter lab
+   ```
+1. Switch to a browser to open the "Bedrock Showcase" web server at:
+   http://localhost:8501
+1. At default "Chat with Model", click the model list.
+
+1. Select Model.
+1. Select Demo:
+   <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/UI/README.md"><img alt="aws-bedrock-demos-279x359.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1770761641/aws-bedrock-demos-279x359_qqjnho.png" /></a>
+
+
+1. To prevent "AccessDenied" error within JupyterLab:
+   ???
+   
+1. Navigate to these notebooks in cd "Bedrock Agents": 
+   ```bash
+   cd ..
+   cd "Bedrock Agents"
+   pwd
+   ```
+1. Run the Python notebook <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/Bedrock%20Agents/5-knowledge_base_s3_vectors.ipynb">https://github.com/eduamota/building-apps-with-bedrock/blob/main/Bedrock%20Agents/5-knowledge_base_s3_vectors.ipynb</a>
+   ```bash
+   # For RAG demo:  
+   jupyter execute 5-knowledge_base_s3_vectors.ipynb
+   ```
+1. Run the Python notebook guardrails demo at https://github.com/eduamota/building-apps-with-bedrock/blob/main/Bedrock%20Agents/7-bedrock_guardrails.ipynb
+   ```bash
+   jupyter execute 7-bedrock_guardrails.ipynb
+   ```
+1. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+   <pre>
+      👋 Welcome to Streamlit!
+   &nbsp;
+      If you'd like to receive helpful onboarding emails, news, offers, promotions,
+      and the occasional swag, please enter your email address below. Otherwise,
+      leave this field blank.
+   &nbsp;
+      Email: _
+   </pre>
+
+1. Type in your email.
+   <pre>
+  You can find our privacy policy at https://streamlit.io/privacy-policy
+   &nbsp;
+  Summary:
+  - This open source library collects usage statistics.
+  - We cannot see and do not store information contained inside Streamlit apps,
+    such as text, charts, images, etc.
+  - Telemetry data is stored in servers in the United States.
+  - If you'd like to opt out, add the following to ~/.streamlit/config.toml,
+    creating that file if necessary:
+   &nbsp;
+    [browser]
+    gatherUsageStats = false
+   &nbsp;
+   &nbsp;
+  You can now view your Streamlit app in your browser.
+  &nbsp;
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.8:8501
+   </pre>
+
+1. Features:
+
+💬 Chat with Bedrock models (Nova, Claude)
+📚 Knowledge Base RAG with equipment specs
+🛡️ Test guardrails in real-time
+🎨 Generate images with Nova Canvas
+🎬 Create videos with Nova Reel   
+
 ## Notes
 
 A neural network's activation function is how it stores training data. Activation functions introduce non-linearity into neural networks, allowing them to learn complex patterns and relationships in data. Without activation functions, a neural network would only be able to learn linear relationships, regardless of how many layers it has.
@@ -743,6 +1082,7 @@ A neural network's activation function is how it stores training data. Activatio
 Embeddings are Numerical vector representations of data that capture semantic meaning.
 
 The Transformer architecture's key innovation enables efficient processing by its self-attention mechanism. This enables parallel processing and captures long-range dependencies better than recurrent networks.
+
 
 ## References
 
