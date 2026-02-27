@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-02-26"
-lastchange: "26-02-26 v006 naming conventions :aws-svcs.md"
+lastchange: "26-02-26 v007 AI items sorted :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -30,6 +30,8 @@ Notable inconsistencies:
    * Amazon CloudWatch is a monitoring/management tool that spans the infrastructure.
 
    * AWS Glue is a data service that is provisioned
+
+   * "SageMaker AI" and "Kiro" are being marketed without the Amazon/AWS prefix.
 
 
 ## Categories alphabetically
@@ -89,21 +91,27 @@ Integrate distributed systems and serverless applications with less code
 
 Build and scale the next wave of AI innovation on AWS
 
-- <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker</a> Build, train, and deploy ML models
 - <a target="_blank" href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a> Foundation models for generative AI
+- <a target="_blank" href="https://aws.amazon.com/comprehend/">Amazon Comprehend</a> Natural language processing (NLP)
+- <a target="_blank" href="https://aws.amazon.com/kendra/">Amazon Kendra</a> Intelligent enterprise search
+- <a target="_blank" href="https://bomonike.github.io/aws-kiro/">AWS Kiro.dev</a> AI Agent development IDE & CLI (incorporates Amazon Q)
+
+- <a target="_blank" href="https://aws.amazon.com/lex/">Amazon Lex</a> Build conversational chatbots
+- <a target="_blank" href="https://aws.amazon.com/personalize/">Amazon Personalize</a> Real-time personalization and recommendations
+- <a target="_blank" href="https://aws.amazon.com/polly/">Amazon Polly</a> Text-to-speech service
 - <a target="_blank" href="https://aws.amazon.com/q/">Amazon Q</a> AI-powered assistant for developers and businesses
 - <a target="_blank" href="https://aws.amazon.com/rekognition/">Amazon Rekognition</a> Image and video analysis
-- <a target="_blank" href="https://aws.amazon.com/comprehend/">Amazon Comprehend</a> Natural language processing (NLP)
-- <a target="_blank" href="https://aws.amazon.com/lex/">Amazon Lex</a> Build conversational chatbots
-- <a target="_blank" href="https://aws.amazon.com/polly/">Amazon Polly</a> Text-to-speech service
+- <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI</a> Build, train, and deploy ML models
+
+- <a target="_blank" href="https://aws.amazon.com/textract/">Amazon Textract</a> Extract text and data from documents
 - <a target="_blank" href="https://aws.amazon.com/transcribe/">Amazon Transcribe</a> Speech-to-text service
 - <a target="_blank" href="https://aws.amazon.com/translate/">Amazon Translate</a> Language translation service
-- <a target="_blank" href="https://aws.amazon.com/textract/">Amazon Textract</a> Extract text and data from documents
-- <a target="_blank" href="https://aws.amazon.com/personalize/">Amazon Personalize</a> Real-time personalization and recommendations
 - <a target="_blank" href="https://aws.amazon.com/forecast/">Amazon Forecast</a> Time-series forecasting
-- <a target="_blank" href="https://aws.amazon.com/deeplens/">AWS DeepLens</a> Deep learning enabled video camera
+
+- <a target="_blank" href="https://aws.amazon.com/appstudio/">AWS App Studio</a> The fastest and easiest way to build enterprise-grade applications, using natural language. [<a target="_blank" href="https://docs.aws.amazon.com/appstudio/latest/userguide/welcome.htmlZ">UG</a>]
+- <a target="_blank" href="https://aws.amazon.com/deeplens/">AWS DeepLens</a> Deep learning enabled video camera [discontinued]
 - <a target="_blank" href="https://aws.amazon.com/deepracer/">AWS DeepRacer</a> Autonomous racing car for ML learning
-- <a target="_blank" href="https://aws.amazon.com/kendra/">Amazon Kendra</a> Intelligent enterprise search
+
 
 ## <a target="_blank" href="https://aws.amazon.com/blockchain/">Blockchain (Web3)</a>
 
