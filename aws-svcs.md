@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-26"
-lastchange: "26-02-26 v007 AI items sorted :aws-svcs.md"
+date: "2026-02-27"
+lastchange: "26-02-27 v008 partyrock :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -87,6 +87,7 @@ Integrate distributed systems and serverless applications with less code
 - <a target="_blank" href="https://aws.amazon.com/appsync/">AWS AppSync</a> Managed GraphQL API service
 - <a target="_blank" href="https://aws.amazon.com/appflow/">Amazon AppFlow</a> Integrate SaaS apps with AWS services
 
+
 ## <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence</a>
 
 Build and scale the next wave of AI innovation on AWS
@@ -97,6 +98,12 @@ Build and scale the next wave of AI innovation on AWS
 - <a target="_blank" href="https://bomonike.github.io/aws-kiro/">AWS Kiro.dev</a> AI Agent development IDE & CLI (incorporates Amazon Q)
 
 - <a target="_blank" href="https://aws.amazon.com/lex/">Amazon Lex</a> Build conversational chatbots
+- <a target="_blank" href="https://aws.amazon.com/nova/act/">Amazon Nova Act</a> SaaS to use a custom Nova 2 Lite model to build fleets of reliable agents to automate production UI workflows at scale (navigating & filling forms, extracting info)
+- <a target="_blank" href="https://aws.amazon.com/nova/forge/">Amazon Nova Forge</a> use HyperPod CLI to build custom frontier models. Reinforment Learning in customer environment with proprietary data. [<a target="_blank" href="https://docs.aws.amazon.com/sagemaker/latest/dg/nova-forge.html">UG</a>]
+
+- <a target="_blank" href="https://partyrock.aws">PartyRock.aws</a> Website to create reusable,
+useful and delightful apps with generative AI prompts. <a target="_blank" href="https://www.youtube.com/watch?v=96SiaQnKfJY
+">VIDEO</a>
 - <a target="_blank" href="https://aws.amazon.com/personalize/">Amazon Personalize</a> Real-time personalization and recommendations
 - <a target="_blank" href="https://aws.amazon.com/polly/">Amazon Polly</a> Text-to-speech service
 - <a target="_blank" href="https://aws.amazon.com/q/">Amazon Q</a> AI-powered assistant for developers and businesses
