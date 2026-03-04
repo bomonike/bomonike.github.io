@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-02"
-lastchange: "26-03-02 v007 requirements :aws-kiro.md"
+date: "2026-03-04"
+lastchange: "26-03-04 v009 PBT :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -53,48 +53,72 @@ Literature search:
 
 ## Kiro Product Components  
 
-Kiro has two basic components:
+Developers interact with Kiro two ways:
 
 1. <a target="_blank" href="https://kiro.dev/changelog/cli">Latest release</a> of <a href="#InstallCLI">Kiro <strong>CLI</strong> (Command Line Interface)</a> installed and run using a Terminal app; and
 
 2. <a target="_blank" href="https://kiro.dev/changelog/ide">Latest release</a> of <a href="#InstallIDE">Kiro <strong>IDE</strong> (Integrated Development Environment)</a> run by clicking a mouse as well as keyboard.
+
+This article focuses on CLI Spec-Mode operations.
 
 
 ### Competition
 
 <a target="_blank" href="https://www.youtube.com/watch?v=73h5Lb_N9r8" title="Kiro explained in 5 minutes
 Caleb Writes Code">VIDEO</a>:
-Here is where Amazon Kiro fits with other AI tools:
+Here is where Amazon Kiro fits with other AI spec-driven tools:
 
 <table border="1" cellpadding="4" cellspacing="0">
 <tr><th> Type </th><th> AI Tools </th></tr>
-<tr valign="top"><td> Cloud based </td><td> Codex </td></tr> 
+<tr valign="top"><td> Cloud based </td><td> Codex, GitHub Spec </td></tr> 
 <tr valign="top"><td> Web based </td><td> V0, Loveable, Bolt </td></tr>
 <tr valign="top"><td> IDE Extensions </td><td> Kiro IDE, Cline, Roo, Trae </td></tr>
 <tr valign="top"><td> Native apps </td><td> Cursor, Windsurf </td></tr>
 <tr valign="top"><td> Terminal </td><td> Kiro CLI, Aider, Claude Code, OpenAI Codex, Warp CLI </td></tr>
 </table>
 
-Other <a href=#SpecDriven">spec-driven</a> tools:
+Other <a href="#SpecDriven">spec-driven</a> tools:
 * Anthropic Claude Code
 * OpenAI Opus
+* Microsoft GitHub Spec Kit at https://github.com/github/spec-kit generates tons of files <a target="_blank" href="https://www.youtube.com/watch?v=cQv3ocbsKHY">VIDEO</a>
 * Google Antigravity
 * WarpAI
-* Cline
+* <a target="_blank" href="https://www.linkedin.com/posts/davetbo_kiro-agentcore-mcptool-activity-7377475581392687105-5ywk/">Cline</a>
+* Roo Code
 * Trae IDE
+* Windsurf https://www.educative.io/courses/advanced-windsurf-ai-for-professionals
+* OpenSpec.dev "lightweight"
+* BMAD (Breakthrough Method for Agile AI Development) at <a target="_blank" href="https://github.com/bmadcode/BMAD-METHOD">https://github.com/bmadcode/BMAD-METHOD</a> created by <a target="_blank" href="https://www.youtube.com/watch?v=LorEJPrALcg">Brian and his YouTube channel</a>.
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=fD8NLPU0WYU">VIDEO</a>: define PRD (Product Requirement Document), build in small chucks, and ship them incrementally. Its "*branstorm" command asks clarifying questions. <a target="_blank" href="https://www.youtube.com/watch?v=sBVVGQnCHqI">VIDEO</a> 
+* AgentOS
+* Cursor
 <br /><br />
 
-"Kiro's context window is too small. isn't enough for me".
+Evaluations:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ZgXG5hE8Na8&t=3m52s">Cursor vs Antigravity vs Kiro vs Windsurf: The Real Results (2026)</a> says Kiro "couldn't parse requirements".
+   * <a target="_blank" href="https://www.youtube.com/watch?v=sGYvGUkerA0&pp=ugUEEgJlbg%3D%3D">BMAD vs. Spec Kit vs. Open Spec: Which AI Coding Methodology is Best?</a> by The Grey Cat
+   <br /><br />
+
+https://www.youtube.com/watch?v=cQv3ocbsKHY
+
+https://www.youtube.com/watch?v=RhaF4LVAVng&t=323s 
+How I Code With AI Agents (Spec-Driven Development) by Owain Lewis using Claude
+
+https://www.youtube.com/watch?v=pey9u_ANXZM How I Tamed Claude - Emmz Rendle - NDC London 2026
 
 In November 2025, an internal memo from two of Amazon’s most powerful executives -- Peter DeSantis, VP of AWS utility computing, and Dave Treadwell, VP of eCommerce Foundation -- directed that "80% of you will use AI for coding at least once a week." But Kiro is Amazon’s AI-native development tool. PROTIP: Adoption, measured by access and frequency, is no longer a meaningful signal of progress. So use KPIs about use cases worth using. Expose use cases with monthly use case spotlight in team meetings to expose AI wins and hold quarterly review where team leads share the highest-impact use cases from their function. See https://www.sectionai.com/ai/the-ai-proficiency-report
 
-The executives say “We do not plan to support additional third-party AI development tools.” (OpenAI Codex). Anthropic's Claude Code briefly got the shade before the designation was reversed after <a target="_blank" href="https://timesofindia.indiatimes.com/technology/tech-news/amazon-wants-80-of-its-developers-to-use-ai-for-coding-at-least-once-a-week-but-theres-one-condition/articleshow/128448190.cms">1,500 Amazon employees endorsed the formal adoption of Claud</a>. <a target="_blank" href="https://www.youtube.com/watch?v=JF2iDNgaMd0">VIDEO</a>: Unlike AWS, Anthropic doesn't want US to use its AI to wage war.
+   The executives say “We do not plan to support additional third-party AI development tools.” (OpenAI Codex). Anthropic's Claude Code briefly got the shade before the designation was reversed after <a target="_blank" href="https://timesofindia.indiatimes.com/technology/tech-news/amazon-wants-80-of-its-developers-to-use-ai-for-coding-at-least-once-a-week-but-theres-one-condition/articleshow/128448190.cms">1,500 Amazon employees endorsed the formal adoption of Claud</a>. <a target="_blank" href="https://www.youtube.com/watch?v=JF2iDNgaMd0">VIDEO</a>: Unlike AWS, Anthropic doesn't want US to use its AI to wage war.
 
    * <a target="_blank" href="https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/?td=keepreading">Kiro has been implicated in production outages</a>
    <br /><br />
 
-The complication is that Amazon has invested $8 billion in Anthropic, the company behind Claude Code.
-Yet Amazon signed a $38 billion cloud computing deal with OpenAI.
+   The complication is that Amazon has invested $8 billion in Anthropic, the company behind Claude Code.
+   Yet Amazon signed a $38 billion cloud computing deal with OpenAI.
+
+Issues encountered:
+   * "Kiro's context window is too small. isn't enough for me".
 
 "The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but move among multiple domains at once and point the right tools at the right problems.
 
@@ -136,8 +160,13 @@ PROTIP: So Kiro users need to transition from reactive debugging vibe coding to 
 
 Specs created build "agentic" system: AI entities that can plan, reason, take actions, observe results, and iterate.
 
-Kiro really works when it fully captures into "Organizational Intelligence" fragmented "tribal memory" by individual development team members
+Specs in Kiro captures into "Organizational Intelligence" fragmented "tribal memory" by individual development team members
 throughout the <a target="_blank" href="https://medium.com/@faiyazengineer/from-ai-co-pilot-to-agentic-systems-the-ai-teammate-what-amazon-q-and-kiro-reveal-about-the-0973a09c167a">AI systems development lifecycle</a> (from <a target="_blank" href="https://www.linkedin.com/in/faiyazengineer/">Faiyaz</a>:
+
+Kiro generates code by processing a <strong>tasks.md</strong> file such as this from AWS Transform:
+
+<a target="_blank" href=""><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772561987/aws-kiro-trans-tasks-602x535_ybqfbz.png" /></a>
+
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png">
 <img alt="aws-kiro-ai-flow-1247x503.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png" /></a>
@@ -159,6 +188,7 @@ Kiro Hooks enforce consistency. Set up a hook once, and Kiro handles the rest.
 
 On Windows 11 OS, use voice dictation (speech to text) by pressing Windows key + H.
 
+TOOL: To convert a repo injestible by AI, change "github.com" to "gitinjest.com" and paste it in Claude.
 
 <a name="Credits"></a>
 
@@ -487,12 +517,31 @@ Function-specific use case libraries give employees a map instead of a mandate, 
 
    "RE is a cross-discipline activity and includes both soft skills and technical aspects. No two developments are the same; the scale, complexity, risk, novelty, and the composition of the project team all vary between projects. When developing new products, systems or services, there is much that is unknown and must be discovered. Because of these and many other factors, RE is not an exact science; it is not a completely systematic and repeatable “engineering process.” Successful RE follows a reusable approach for efficiency but is not a copy-exact process. RE processes must be adapted or customized for the nuance of each individual development program.
 
-   References about this sub-topic:
+   References about this sub-topic of EARS:
+   * https://www.youtube.com/watch?v=pa8C449yhCg&pp=ugUEEgJlbg%3D%3D">EARS - The Basics</a>
    * https://github.com/SagnikGos/hack-ai-bharat-spec-design/tree/main by https://www.linkedin.com/in/sagnikgos06/
    * https://dev.to/sebastian_dingler/ears-the-easy-approach-to-requirements-syntax-39a5
    * https://reqassist.com/blog/ears-requirements-syntax
    * https://www.youtube.com/watch?v=RhaF4LVAVng How I Code With AI Agents (Spec-Driven Development) by Owain Lewis
+   * <a target="_blank" href="https://www.youtube.com/watch?v=4TBKvkG-WwA&pp=0gcJCa4KAYcqIYzv">How granfular should your specs be?</a>
    <br /><br />
+
+
+
+   ## Property-Based Testing (PBT)
+
+   Use of formal specifications following EARS enables labor-saving automation of validation of <strong>actual behavior</strong> against requirements defining what should occur,
+   at the most precise "property" level. 
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772641464/aws-kiro-1473x898_jl2ea6.png"><img alt="aws-kiro-1473x898.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772641464/aws-kiro-1473x898_jl2ea6.png" /></a>
+
+   Automation is not limited by the number of people working 8 hours a day, so can yield <strong>complete coverage</strong> of edge cases if a human determines it's not a spec error.
+
+   A demo of the <a target="_blank" href="https://www.youtube.com/watch?v=mkgd9iOiICc">Hypothesis library</a> for Python to derive Requirements from Properties which are implemented as test code. Kiro can "shrink" issues found to what needs auto-fix.
+   -- from <a target="_blank" href="https://www.youtube.com/watch?v=rj__7H9y4cY&t=4m2s">VIDEO</a>: "What is Property Based Testing & How it Works in KIRO" from  by Adventures in Generative AI shows generation from https://github.com/kirodotdev/spirit-of-kiro 
+
+
+
 
 
    <a name="Powers"></a>
@@ -889,6 +938,113 @@ In this project, we’ll containerize a Flask app, push it to Docker Hub, and de
 https://www.coursera.org/learn/aws-generative-ai-essentials/home/module/1
 AWS Generative AI Essentials course
 
+
+<a name="Transform"></a>
+
+## AWS Transform (from IBM Mainframes)
+
+Kiro is used as a component of <a target="_blank" href="https://aws.amazon.com/transform/">AWS Transform AI service</a> used to <a target="_blank" href="https://aws.amazon.com/mainframe/?p=hub&c=mm&z=3">modernize legacy IBM Mainframe coding</a>:
+   * from COBOL (Common Business-Oriented Language aka CBL) and related CPY (Copybooks) to Java Spring Boot, 
+   * JCL (Job Control Language) and JCL Procedures (PROC) to Groovy by the Blu Age Velocity,
+   * CICS System Definitions (CSD)
+   * Z/OS to containers in EC2, 
+   * WebSphere .war files to Tomcat, 
+   * BSM (Basic Mapping Support) map sets
+   * Db2 
+   * VSAM (Virtual Storage Access Method) data files to Aurora PostgreSQL (via SQL)
+   * IBM MQ (Message Queue) to Amazon MQ messaging
+   * IMS TM (Transaction Manager)
+   <br /><br />
+
+The "tech.md" file defines the project's chosen frameworks, libraries, development tools, and technical constraints
+which Kiro generates. Sample:
+
+```
+Technology Stack & Implementation Standards
+
+Technology Stack
+
+Backend (LTS Only)
+- Java: Eclipse Temurin LTS (Java 17)
+- Spring Boot: Latest LTS 3.x
+- Database: H2 (testing), Aurora PostgreSQL (production)
+- Build: Maven wrapper (./mvnw) only
+
+Frontend
+- Framework: React + TypeScript
+- State Management: Redux Toolkit
+- API Client: Axios with error handling
+- Styling: AWS Cloudscape Design System
+
+AWS Infrastructure
+- Database: Amazon RDS Aurora PostgreSQL
+- Compute: ECS Fargate
+- Load Balancing: ALB
+- Registry: Amazon ECR
+- Monitoring: CloudWatch
+- CI/CD: AWS CodeBuild
+- IaC: AWS CDK (v2)
+```
+
+NOTE: Character-level encoding on mainframes are in EBCDIC in various code pages vs. UTF-8 on Linux, macs, Windows.
+
+Transform aims to reduce project timelines when "Reimagining" apps. Tasks are invoked by Administrators writing natural language prompts (objectives, jobs, tasks) to perform: codebase analysis to extracts business logic and tech doc generation, Decompose the monolithic application into functional domains. It refactors, decomposes, define dependency mapping, validation to improve the quality of refactored code.
+
+Analysis of each <strong>job</strong> (each containing a max of 3,000,000 lines of code) results in organized using these folders:
+
+  * "business‑documentation" – extracted business logic for the entire application, in a zip archive.
+
+  * "data_analysis" – data‑lineage visibility for data modernization to generate data dictionaries with business meanings.
+
+  * "decomposition" – workloads grouped into business domains as identified by the BLE agent.
+
+  * "documentation" – technical documents that explain the mainframe application.
+
+  * "inputs" - The inputs folder stores the original source artifacts of the mainframe application—COBOL code, JCL scripts, copybooks, and related configuration files.
+
+Transform plans <strong>waves</strong> for code modernization transformation planning because there is a <a target="_blank" href="https://docs.aws.amazon.com/transform/latest/userguide/transform-limits.html">hard 150 server quota (limit)</a> to each wave.
+<a target="_blank" href="https://docs.aws.amazon.com/transform/latest/userguide/transform-forward-engineering-tutorial.html">A sample <strong>product.md</strong> file</a> that defines your product's purpose, target users, key features, and business objectives:
+```
+Product Requirements — COBOL/JCL Business Rules Only
+
+CRITICAL PRINCIPLE: COBOL/JCL BUSINESS RULES ONLY
+
+ABSOLUTE REQUIREMENT: Implement ONLY the business rules explicitly defined in COBOL/JCL programs for CustomerAccountManagement Business Function ONLY.
+- NO industry standards
+- NO assumptions about validation logic
+- NO inferences from incomplete COBOL/JCL rules
+- ONLY explicit COBOL/JCL business rule specifications
+
+COBOL/JCL Business Rule Implementation
+
+Rule Discovery & Implementation
+1. Locate Entry Points: ApplicationLevelAnalysis/*/entrypoint-*/
+2. Locate Program Paths: Search cbl/ jcl programs mentioned in the Entry point files. cbl/jcl programs are located at program_paths.
+3. Locate COBOL Program Rules: Search carddemo-v2-main/app/cbl/*.json
+4. Locate JCL Program Rules: Search carddemo-v2-main/app/jcl/*.json
+5. Extract Components: Rule_Id, Rule_Name, Rule_Description, Acceptance_Criteria, Rule_Type
+6. Implementation: Group related COBOL/JCL rules into single methods with exact specification
+
+MANDATORY Code Documentation:
+/**
+ * <Rule_Id>COBOL_OR_JCL_RULE_ID_1</Rule_Id>
+ * <Rule_Description>Brief description from COBOL/JCL rule</Rule_Description>
+ * <Acceptance_Criteria>Given/When/Then criteria from COBOL/JCL rule</Acceptance_Criteria>
+ *
+ * <Rule_Id>COBOL_OR_JCL_RULE_ID_2</Rule_Id>
+ * <Rule_Description>Brief description from related COBOL/JCL rule</Rule_Description>
+ * <Acceptance_Criteria>Given/When/Then criteria from related COBOL/JCL rule</Acceptance_Criteria>
+ */
+```
+
+Code and Test Quality are boosted with Kiro Hooks.
+
+<a target="_blank" hre="https://www.youtube.com/watch?v=SnMR9WbnWtE&t=6m11s">VIDEO</a>:
+Objectives are written in natural language.
+
+## IDE Previews
+
+https://www.youtube.com/watch?v=8k1g-E1qGyQ "How To Use Kiro, the New Agentic IDE" (in preview 2025) by Syntax
 
 
 <hr />
