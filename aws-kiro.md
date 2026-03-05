@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-04"
-lastchange: "26-03-04 v009 PBT :aws-kiro.md"
+date: "2026-03-05"
+lastchange: "26-03-05 v011 Claude :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -227,8 +227,10 @@ Create a task and Kiro handles the planning and implementation across all repos.
 
 References:
    * https://github.com/kiro-community/kiro-autonomous-agent-power
+   <br /><br />
 
-### Kiro Enterprise
+
+## Kiro Enterprise
 
 https://kiro.dev/enterprise/
 Kiro "autonomous agent for teams" integrates with Jira, Confluence, GitLab, GitHub, Teams, and Slack.
@@ -403,6 +405,10 @@ Function-specific use case libraries give employees a map instead of a mandate, 
    🍺  kiro was successfully installed!   
    </pre>
 
+1. PROTIP: Optionally, click the gear at the lower-left and select "Extensions" to add the extension "EARS Syntax" (from https://bluedotbrigade.com sourced at https://github.com/BlueDotBrigade/ears-syntax-vscode) for syntax highlighting and code completion when writing <a href="#EARS">EARS requirements</a>. It highlights EARS patterns and keywords to improve readability and focus. It doesn't generate code itself, but pairs well with Copilot or Cursor in the same editor. It uses intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
+
+   <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode">https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode</a>
+
 1. View the history of Kiro CLI releases:
    
    <a target="_blank" href="https://kiro.dev/changelog/ide/">https://kiro.dev/changelog/ide/</a>
@@ -496,28 +502,83 @@ Function-specific use case libraries give employees a map instead of a mandate, 
    Kiro feels like working with a disciplined senior engineer who insists on doing things the right way.
 
 
+   <a name="EARS"></a>
+
    ### EARS Requirement markdown files
 
-   See the <a target="_blank" href="https://www.youtube.com/watch?v=HY_JyxAZsiE" title="Agentic Coding at FAANG Scale and Quality 25-11-22">demo video</a> by <a target="_blank" href="https://www.linkedin.com/in/al-harris-7a755640/">Al Harris</a>, Kiro Lead Developer at AWS Seattle. Shows use of Asana calling MCP server https://github.com/alharris-at/nobel-mcp
-
-   REMEMBER: Kiro processes requests for creating apps by creating <strong>requirements</strong> markdown text files
-   that enables reproducible delivery of sound and correct software, including verification and testing.
+   REMEMBER: Kiro processes requests for creating apps by creating <strong>requirements</strong> markdown (.md) text files that enables reproducible delivery of sound and correct software, including verification and testing.
 
    Requirements files are made precise and parseable by following <strong>EARS</strong>: the <a target="_blank" href="https://www.jamasoftware.com/requirements-management-guide/writing-requirements/adopting-the-ears-notation-to-improve-requirements-engineering/">Easy Approach to Requirements Syntax</a>, a lightweight template for writing unambiguous, machine- and human-friendly requirements, authored by <a target="_blank" href="https://alistairmavin.com/ears/">Allistair Maven (Mav)</a>, an independent requirements specialist based in the UK. He is known internationally for his <a target="_blank" href="https://alistairmavin.com/training/">2-day training</a>, coaching, and consulting. 
 
-   "A small number of keywords are used to denote the different clauses of an EARS requirement. 
-   The basic structure of an EARS requirement is: While, when, the shall.
-   The clauses are always in the same order, following temporal logic. 
-   The syntax and the keywords closely match common usage of English and are therefore intuitive."
-
-   REMEMBER: Following the EARS standard enables the use of Requirements Engineering algorithms and software that has been refined since EARS was first published in 2009, such as automated correctness checking. Some enterprises use the <a target="_blank" href="https://www.jamasoftware.com/platform/jama-connect/">Jama Connect</a> requirements management system for traceability.
+   REMEMBER: Following the EARS standard enables the use of Requirements Engineering algorithms and software that has been refined since EARS was first published in 2009, such as automated correctness checking. 
+   
+   PROTIP: Some enterprises use the <a target="_blank" href="https://www.jamasoftware.com/platform/jama-connect/">Jama Connect</a> requirements management system for traceability.
    So there is less hallucinations from use of LLMs (neuro-symbolic reasoning tool).
 
-   "Requirements engineering (RE) is a human-centered activity and is fundamentally about communication. In some ways RE is straightforward: you need to work out who will be affected by a product, system or service, find out what they want it to do and document it. You will need to manage their expectations about what can be achieved. Once the solution is built, you need to check that it does what the people asked for. This sounds simple but is not necessarily easy.
+   Other requirements management systems include IBM DOORS, Siemens Polarion, Perforce Helix, and <a target="_blank" href="https://visuresolutions.com/thank-you/member-portal">Visure</a>.
+   QUESTION: Does Amazon provide equivalent capabilities for <strong>traceability</strong> than these legacy Requirements Engineering products?
 
-   "RE is a cross-discipline activity and includes both soft skills and technical aspects. No two developments are the same; the scale, complexity, risk, novelty, and the composition of the project team all vary between projects. When developing new products, systems or services, there is much that is unknown and must be discovered. Because of these and many other factors, RE is not an exact science; it is not a completely systematic and repeatable “engineering process.” Successful RE follows a reusable approach for efficiency but is not a copy-exact process. RE processes must be adapted or customized for the nuance of each individual development program.
+   "Requirements engineering (RE) is about coordinating expectations about what can be achieved. Once the solution is built, you need to check that it does what the people asked for. This sounds simple but is not necessarily easy. RE is a cross-discipline activity and includes both soft skills and technical aspects. No two developments are the same; the scale, complexity, risk, novelty, and the composition of the project team all vary between projects. When developing new products, systems or services, there is much that is unknown and must be discovered. Because of these and many other factors, RE is not an exact science; it is not a completely systematic and repeatable “engineering process.” Successful RE follows a reusable approach for efficiency but is not a copy-exact process. RE processes must be adapted or customized for the nuance of each individual development program."
+
+   ### EARS Requirements
+
+   The <a target="_blank" href="https://alistairmavin.com/ears/">syntax and keywords</a> closely match common usage of English and are therefore intuitive.
+
+   REMEMBER: Requirements are always active (so there is no EARS keyword).
+   The basic structure of an EARS requirement are keywords shall, while, when, if.
+   A small number of keywords are used to denote the different clauses of an EARS requirement. 
+
+   Here are examples and clarifications:
+   ```
+   The mobile phone <strong>shall</strong> have a mass of less than 15 grams.
+   ```
+   * "shall" is a ubiquitous keyword which drives all requirement parsing.
+   * To the left of "shall" is the system name "mobile phone".
+   * To the right of "shall" is the system response.
+   <br /><br />
+
+   ```
+   While there is no card in the ATM, the ATM shall display “insert card to begin”.
+   ```
+   * "while" drives <strong>state-driven requirements</strong> parsing.
+   * To the right of "while" is the optional pre-condition.
+   * To the right of "when" is the optional trigger.
+   * Again, to the left of the "shall" is the system name.
+   * Again, to the right of "shall" is the system response.
+
+   REMEMBER: Clauses are always in the same order, following temporal logic. 
+   So state-driven requirements are active as long as the specified state remains true and are denoted by the keyword While.
+
+   ```
+   When “mute” is selected, the laptop shall suppress all audio output.
+   ```
+   * "When" drives <strong>event driven requirements</strong> parsing. Event driven requirements specify how a system must respond when a triggering event occurs and are denoted by the keyword When.
+   * To the right of "when" is the triggering event.
+
+   ```
+   Where the car has a sunroof, the car shall have a sunroof control panel on the driver door.
+   ```
+   * "Where" drives optional <strong>feature requirements</strong> parsing. Optional feature requirements apply in products or systems that include the specified feature and are denoted by the keyword Where.
+   * To the right of "where" is the feature included.
+
+   ```
+   If an invalid credit card number is entered, then the website shall display “please re-enter credit card details”.
+   ```
+   * "if" drives <strong>unwanted behaviour requirements</strong> parsing.
+   
+   ```
+   <strong>While</strong> the aircraft is on ground, <strong>when</strong> reverse thrust is commanded, the engine control system <strong>shall</strong> enable reverse thrust.
+   ```
+   * Use of several keywords drives <strong>complex requirements</strong> parsing.
+   * To the right of "while" is the optional pre-condition.
+   * To the right of "when" is the triggering event.
+   * To the left of the "shall" is the system name.
+   * To the right of "shall" is the system response.
+   <br /><br />
 
    References about this sub-topic of EARS:
+   * See the <a target="_blank" href="https://www.youtube.com/watch?v=HY_JyxAZsiE" title="Agentic Coding at FAANG Scale and Quality 25-11-22">demo video</a> by <a target="_blank" href="https://www.linkedin.com/in/al-harris-7a755640/">Al Harris</a>, Kiro Lead Developer at AWS Seattle. Shows use of Asana calling MCP server https://github.com/alharris-at/nobel-mcp
+
    * https://www.youtube.com/watch?v=pa8C449yhCg&pp=ugUEEgJlbg%3D%3D">EARS - The Basics</a>
    * https://github.com/SagnikGos/hack-ai-bharat-spec-design/tree/main by https://www.linkedin.com/in/sagnikgos06/
    * https://dev.to/sebastian_dingler/ears-the-easy-approach-to-requirements-syntax-39a5
@@ -531,7 +592,9 @@ Function-specific use case libraries give employees a map instead of a mandate, 
    ## Property-Based Testing (PBT)
 
    Use of formal specifications following EARS enables labor-saving automation of validation of <strong>actual behavior</strong> against requirements defining what should occur,
-   at the most precise "property" level. 
+   at the most precise "property" level. <a target="_blank" href="https://www.youtube.com/watch?v=mkgd9iOiICc&t=2m22s">Example</a>:
+      * After a list is sorted, its length should not have changed.
+      <br /><br />
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772641464/aws-kiro-1473x898_jl2ea6.png"><img alt="aws-kiro-1473x898.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772641464/aws-kiro-1473x898_jl2ea6.png" /></a>
 
@@ -540,6 +603,9 @@ Function-specific use case libraries give employees a map instead of a mandate, 
    A demo of the <a target="_blank" href="https://www.youtube.com/watch?v=mkgd9iOiICc">Hypothesis library</a> for Python to derive Requirements from Properties which are implemented as test code. Kiro can "shrink" issues found to what needs auto-fix.
    -- from <a target="_blank" href="https://www.youtube.com/watch?v=rj__7H9y4cY&t=4m2s">VIDEO</a>: "What is Property Based Testing & How it Works in KIRO" from  by Adventures in Generative AI shows generation from https://github.com/kirodotdev/spirit-of-kiro 
 
+   References about EARS:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=qSS9grfEASo">VIDEO</a> by Visure Solutions.
+   <br /><br />
 
 
 
