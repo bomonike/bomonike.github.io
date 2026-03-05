@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-27"
-lastchange: "26-02-27 v008 partyrock :aws-svcs.md"
+date: "2026-03-05"
+lastchange: "26-03-05 v010 Global Accelerator :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -116,6 +116,7 @@ useful and delightful apps with generative AI prompts. <a target="_blank" href="
 - <a target="_blank" href="https://aws.amazon.com/forecast/">Amazon Forecast</a> Time-series forecasting
 
 - <a target="_blank" href="https://aws.amazon.com/appstudio/">AWS App Studio</a> The fastest and easiest way to build enterprise-grade applications, using natural language. [<a target="_blank" href="https://docs.aws.amazon.com/appstudio/latest/userguide/welcome.htmlZ">UG</a>]
+- <a target="_blank" href="https://aws.amazon.com/transform/">AWS Transform</a> Modernize .NET applications to Linux-ready cross-platform .NET. Migrate IBM z/OS and VMware to AWS EC2. Modernize [<a target="_blank" href="https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html">UG</a>]
 - <a target="_blank" href="https://aws.amazon.com/deeplens/">AWS DeepLens</a> Deep learning enabled video camera [discontinued]
 - <a target="_blank" href="https://aws.amazon.com/deepracer/">AWS DeepRacer</a> Autonomous racing car for ML learning
 
@@ -139,7 +140,7 @@ Cloud and native applications built on and by AWS
 
 ## <a target="_blank" href="https://aws.amazon.com/aws-cost-management/">Cloud Financial Management</a>
 
-Transform your business with cost transparency, control, forecasting, and optimization
+"Transform your business with cost transparency, control, forecasting, and optimization"
 
 - <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing-conductor/">Billing and Cost Management - View and pay bills, analyze and govern your spending, and optimize your costs
 - <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing-conductor/">AWS Billing Conductor</a> - Simplifying your billing practice
@@ -289,14 +290,14 @@ Support operations across AWS, other clouds, and on-premises environments
 
 ## <a target="_blank" href="https://aws.amazon.com/products/networking/">Networking & Content Delivery</a>
 
-Run every workload on a secure and reliable global network
+"Run every workload on a secure and reliable global network"
 
 - <a target="_blank" href="https://aws.amazon.com/vpc/">Amazon VPC</a> Isolated cloud networks
 - <a target="_blank" href="https://aws.amazon.com/cloudfront/">Amazon CloudFront</a> Global content delivery network (CDN)
 - <a target="_blank" href="https://aws.amazon.com/route53/">Amazon Route 53</a> Scalable DNS and domain registration
 - <a target="_blank" href="https://aws.amazon.com/directconnect/">AWS Direct Connect</a> Dedicated network connection to AWS
 - <a target="_blank" href="https://aws.amazon.com/elasticloadbalancing/">Elastic Load Balancing</a> Distribute incoming traffic across targets
-- <a target="_blank" href="https://aws.amazon.com/global-accelerator/">AWS Global Accelerator</a> Improve global application availability and performance
+- <a target="_blank" href="https://aws.amazon.com/global-accelerator/">AWS Global Accelerator</a> "Improve global application availability and performance" using AWS-assigned 2 local AnyCast IP addresses on AWS Edge locations (Points of Presence) routed through AWS' optimized private backbone CDN. AWS auto-switches among listening Enpoint Groups in a Region ALB, NLB, Elastic IP, EC2 instance. <a target="_blank" href="https://www.youtube.com/watch?v=9LPKDeRlobg">VIDEO</a>
 - <a target="_blank" href="https://aws.amazon.com/transit-gateway/">AWS Transit Gateway</a> Connect VPCs and on-premises networks
 - <a target="_blank" href="https://aws.amazon.com/privatelink/">AWS PrivateLink</a> Private connectivity between VPCs and services
 - <a target="_blank" href="https://aws.amazon.com/vpn/">AWS VPN</a> Secure connections to AWS
