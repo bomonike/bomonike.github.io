@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-06"
-lastchange: "26-03-06 v012 UGs :aws-svcs.md"
+lastchange: "26-03-06 v014 rmv extra categories :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -37,7 +37,7 @@ Notable inconsistencies:
 AWS IAM action service prefixes from <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html">documentation</a>
 
 
-## Categories alphabetically
+## Category Websites, alphabetically
 
    * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> (datalakes): Streaming, Data lakehouse, Data warehouse, Data lake, Data processing, Business intelligence, Search analytics, Data and AI governance
    * <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration</a>
@@ -176,6 +176,15 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 
 - ??? <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk</a> Deploy and scale web applications. 
 
+* robomaker: AWS RoboMaker</a> Develop, test, and deploy robotics applications. Shut down September 10, 2025.
+
+   The service failed to gain enough traction in the market. It was essentially built for iRobot (maker of the Roomba), and there wasn't sufficient due diligence to determine if it was useful for anyone else.
+   
+   On December 14, 2025, iRobot filed for Chapter 11 bankruptcy protection. After 35 years, the company is` acquired by China's Shenzhen Picea Robotics — the manufacturer contracted to build Roombas.
+
+   AWS Batch is the primary recommended replacement. Migrating means containerizing your ROS/Gazebo simulation apps into Docker images, pushing them to ECR, then creating Batch compute environments and job queues to run those containers.
+   The tradeoff is that you lose integrated RoboMaker features like the WorldForge GUI and on-demand development IDE, but gain more control over instance types, unlimited scaling, and better cost optimization through Spot instances — with no Batch service fee. NBC Sports Sonnet 4.6
+
 * ASG (Auto Scaling Group) is not a separate product but a feature of EC2.
 
 
@@ -190,10 +199,6 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 
 * fargate is a part of AmazonECS: Serverless compute capacity provider for containers obtained from ECR. [<a target="_blank" href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html">UG</a>]
 
-
-## <a target="_blank" href="https://aws.amazon.com/connect/">Custome Experience (Contact Center)</a> Enablement
-
-- <a target="_blank" href="https://aws.amazon.com/connect/">Amazon Connect</a> Personalized customer experiences at scale. [<a target="_blank" href="https://docs.aws.amazon.com/connect/">UG</a>]
 
 
 ## <a target="_blank" href="https://aws.amazon.com/products/databases/">Database</a>
@@ -315,19 +320,15 @@ Build breakthrough gaming experiences
 "Migrate faster and modernize with confidence (Transfer)"
 
 - ??? <a target="_blank" href="https://aws.amazon.com/migration-hub/">AWS Migration</a> Track migrations from a central location. [<a target="_blank" href="https://docs.aws.amazon.com/migration-hub/">UG</a>]
+
 - ??? <a target="_blank" href="https://aws.amazon.com/dms/">AWS Database Migration Service</a> Migrate databases to AWS. [<a target="_blank" href="https://docs.aws.amazon.com/dms/">UG</a>]
 - ??? <a target="_blank" href="https://aws.amazon.com/server-migration-service/">AWS Server Migration Service</a> Migrate on-premises servers to AWS.
+- mgn: <a target="_blank" href="https://aws.amazon.com/application-migration-service/">AWS Application Migration Service</a> Lift-and-shift migration.
+
 - ??? <a target="_blank" href="https://aws.amazon.com/datasync/">AWS DataSync</a> Fast data transfer to/from AWS. [<a target="_blank" href="https://docs.aws.amazon.com/datasync/">UG</a>]
 - ??? <a target="_blank" href="https://aws.amazon.com/aws-transfer-family/">AWS Transfer Family</a> Managed file transfers (SFTP, FTPS, FTP).
 - ??? <a target="_blank" href="https://aws.amazon.com/snow/">AWS Snow Family</a> Physical devices for data migration.
-- ??? <a target="_blank" href="https://aws.amazon.com/application-migration-service/">AWS Application Migration Service</a> Lift-and-shift migration.
 
-
-## <a target="_blank" href="https://aws.amazon.com/products/multicloud-hybrid/">Multicloud & Hybrid</a>
-
-Support operations across AWS, other clouds, and on-premises environments
-
-- <a target="_blank" href="https://aws.amazon.com/athena/">Amazon Athena</a> Query S3 data using SQL
 
 
 ## <a target="_blank" href="https://aws.amazon.com/products/networking/">Networking & Content Delivery</a>
@@ -342,10 +343,13 @@ Support operations across AWS, other clouds, and on-premises environments
 - globalaccelerator: <a target="_blank" href="https://aws.amazon.com/global-accelerator/">AWS Global Accelerator</a> "Improve global application availability and performance" using AWS-assigned 2 local AnyCast IP addresses on AWS Edge locations (Points of Presence) routed through AWS' optimized private backbone CDN. AWS auto-switches among listening Enpoint Groups in a Region ALB, NLB, Elastic IP, EC2 instance.  [<a target="_blank" href="https://docs.aws.amazon.com/global-accelerator/">UG</a>] <a target="_blank" href="https://www.youtube.com/watch?v=9LPKDeRlobg">VIDEO</a>
 - route53: <a target="_blank" href="https://aws.amazon.com/route53/">Amazon Route 53</a> Scalable DNS and domain registration. [<a target="_blank" href="https://docs.aws.amazon.com/route53/">UG</a>]
 - route53resolver: Route 53 Resolver. [<a target="_blank" href="https://docs.aws.amazon.com/cli/latest/reference/route53resolver/index.html">UG</a>]
-- vpc: <a target="_blank" href="https://aws.amazon.com/vpc/">Amazon VPC</a> Isolated cloud networks. [<a target="_blank" href="https://docs.aws.amazon.com/vpc/">UG</a>]
 
-- ??? <a target="_blank" href="https://aws.amazon.com/privatelink/">AWS PrivateLink</a> Private connectivity between VPCs and services.
-- ??? <a target="_blank" href="https://aws.amazon.com/vpn/">AWS VPN</a> Secure connections to AWS. [<a target="_blank" href="https://docs.aws.amazon.com/vpn/">UG</a>]
+- vpc: <a target="_blank" href="https://aws.amazon.com/vpc/">Amazon VPC</a> Isolated cloud networks. [<a target="_blank" href="https://docs.aws.amazon.com/vpc/">UG</a>]
+- vpc: ??? <a target="_blank" href="https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html">AWS PrivateLink</a> between VPC (Virtual Private Connectivity) and service resources.
+
+- <a target="_blank" href="https://aws.amazon.com/ground-station/">AWS Ground Station</a> Communicate with satellites. [<a target="_blank" href="https://docs.aws.amazon.com/ground-station/">UG</a>]
+
+- vpn: ??? <a target="_blank" href="https://aws.amazon.com/vpn/">AWS Verified Access</a> (VPN) Secure connections to AWS. [<a target="_blank" href="https://docs.aws.amazon.com/vpn/">UG</a>]
 
 
 ##  <a target="_blank" href="https://aws.amazon.com/cloudops/">Operations</a>
@@ -356,11 +360,6 @@ Support operations across AWS, other clouds, and on-premises environments
 - etc. ???
 
 <a target="_blank" href="https://www.youtube.com/playlist?list=PLehXSATXjcQHj8bPSf0uZuQBoxJ7a7ag7/">Cloud Operations Show on YouTube</a>
-
-
-## **Satellite**
-
-- <a target="_blank" href="https://aws.amazon.com/ground-station/">AWS Ground Station</a> Communicate with satellites. [<a target="_blank" href="https://docs.aws.amazon.com/ground-station/">UG</a>]
 
 
 ## <a target="_blank" href="https://aws.amazon.com/products/security/">Security & Identity</a> (& Compliance)
@@ -402,10 +401,6 @@ Support operations across AWS, other clouds, and on-premises environments
 - backup: <a target="_blank" href="https://aws.amazon.com/backup/">AWS Backup</a> Centralized backup across AWS services. [<a target="_blank" href="https://docs.aws.amazon.com/backup/">UG</a>]
 
 
-## **Robotics**
-
-- robomaker: <a target="_blank" href="https://aws.amazon.com/robomaker/">AWS RoboMaker</a> Develop, test, and deploy robotics applications.
-
 NOTE: Amazon Web Service (AWS) offer several types of services:
    * "SaaS" (System as a Service) which works completely from the browser like Microsoft 365, Google Drive, or Salesforce.
    * "PaaS" (Platform as a Service)
@@ -417,3 +412,6 @@ NOTE: Amazon Web Service (AWS) offer several types of services:
 - <a target="_blank" href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/">AWS Regional Services List</a> Services available by region
 
 
+
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
