@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-05"
-lastchange: "26-03-05 v010 Global Accelerator :aws-svcs.md"
+lastchange: "26-03-05 v011 service prefixes :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -34,6 +34,9 @@ Notable inconsistencies:
    * "SageMaker AI" and "Kiro" are being marketed without the Amazon/AWS prefix.
 
 
+AWS IAM action service prefixes from <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html">documentation</a>
+
+
 ## Categories alphabetically
 
    * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> (datalakes): Streaming, Data lakehouse, Data warehouse, Data lake, Data processing, Business intelligence, Search analytics, Data and AI governance
@@ -59,66 +62,82 @@ Notable inconsistencies:
 
 ## <a target="_blank" href="https://aws.amazon.com/products/analytics/">Analytics</a>
 
-Optimize performance and scale for analytics and AI workloads
+"Optimize performance and scale for analytics and AI workloads"
 
-- <a target="_blank" href="https://aws.amazon.com/athena/">Amazon Athena</a> Query S3 data using SQL
-- <a target="_blank" href="https://aws.amazon.com/emr/">Amazon EMR</a> Big data processing with Hadoop/Spark
-- <a target="_blank" href="https://aws.amazon.com/cloudsearch/">Amazon CloudSearch</a> Managed search service
-- <a target="_blank" href="https://aws.amazon.com/opensearch-service/">Amazon OpenSearch Service</a> Search, analyze, and visualize data
-- <a target="_blank" href="https://aws.amazon.com/kinesis/">Amazon Kinesis</a> Real-time data streaming
-- <a target="_blank" href="https://aws.amazon.com/quicksight/">Amazon QuickSight</a> Business intelligence and dashboards
-- <a target="_blank" href="https://aws.amazon.com/datapipeline/">AWS Data Pipeline</a> Orchestrate data workflows
-- <a target="_blank" href="https://aws.amazon.com/glue/">AWS Glue</a> Serverless data integration (ETL)
-- <a target="_blank" href="https://aws.amazon.com/lake-formation/">AWS Lake Formation</a> Build and manage data lakes
+- athena: <a target="_blank" href="https://aws.amazon.com/athena/">Amazon Athena</a> Query S3 data using SQL
+- cleanrooms ??? AWS Clean Rooms
+- datapipeline: <a target="_blank" href="https://aws.amazon.com/datapipeline/">AWS Data Pipeline</a> Orchestrate data workflows
+- datazone: <a target="_blank" href="https://aws.amazon.com/datazone/">Amazon DataZone</a> Data catalog and governance
+- emr: <a target="_blank" href="https://aws.amazon.com/emr/">Amazon EMR</a> Big data processing with Hadoop/Spark
+
+- es: ??? Elasticsearch Service (legacy)
+- cloudsearch: <a target="_blank" href="https://aws.amazon.com/cloudsearch/">Amazon CloudSearch</a> Managed search service
+
+- glue: <a target="_blank" href="https://aws.amazon.com/glue/">AWS Glue</a> Serverless data integration (ETL)
+- lakeformation: <a target="_blank" href="https://aws.amazon.com/lake-formation/">AWS Lake Formation</a> Build and manage data lakes
+- opensearch: <a target="_blank" href="https://aws.amazon.com/opensearch-service/">Amazon OpenSearch Service</a> Search, analyze, and visualize data
+- quicksight: <a target="_blank" href="https://aws.amazon.com/quicksight/">Amazon QuickSight</a> Business intelligence and dashboards
+- redshift: <a target="_blank" href="https://aws.amazon.com/redshift/spectrum/">Amazon Redshift Spectrum</a> Query S3 data from Redshift
+
+
 - <a target="_blank" href="https://aws.amazon.com/msk/">Amazon MSK</a> Managed Apache Kafka service
-- <a target="_blank" href="https://aws.amazon.com/datazone/">Amazon DataZone</a> Data catalog and governance
-- <a target="_blank" href="https://aws.amazon.com/redshift/spectrum/">Amazon Redshift Spectrum</a> Query S3 data from Redshift
 
 
-## <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration</a>
+## <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration</a> (Messaging)
 
-Integrate distributed systems and serverless applications with less code
+"Integrate distributed systems and serverless applications with less code"
 
-- <a target="_blank" href="https://aws.amazon.com/sns/">Amazon SNS</a> Pub/sub messaging and mobile push notifications
-- <a target="_blank" href="https://aws.amazon.com/sqs/">Amazon SQS</a> Message queuing service
-- <a target="_blank" href="https://aws.amazon.com/step-functions/">AWS Step Functions</a> Orchestrate distributed applications
-- <a target="_blank" href="https://aws.amazon.com/eventbridge/">Amazon EventBridge</a> Serverless event bus
-- <a target="_blank" href="https://aws.amazon.com/amazon-mq/">Amazon MQ</a> Managed message broker (ActiveMQ, RabbitMQ)
-- <a target="_blank" href="https://aws.amazon.com/appsync/">AWS AppSync</a> Managed GraphQL API service
-- <a target="_blank" href="https://aws.amazon.com/appflow/">Amazon AppFlow</a> Integrate SaaS apps with AWS services
+- events: <a target="_blank" href="https://aws.amazon.com/eventbridge/">Amazon EventBridge</a> Serverless event bus
+- firehose: ??? Kinesis Firehose
+- kafka: ??? Amazon MSK (Managed Kafka)
+- kinesis: <a target="_blank" href="https://aws.amazon.com/kinesis/">Amazon Kinesis</a> Real-time data streaming
+- ??? <a target="_blank" href="https://aws.amazon.com/kinesis/video-streams/">Amazon Kinesis Video Streams</a> Process and analyze video streams
+- mq: <a target="_blank" href="https://aws.amazon.com/amazon-mq/">Amazon MQ</a> Managed message broker (ActiveMQ, RabbitMQ)
+- pipes: ??? EventBridge Pipes
+- scheduler: ??? EventBridge Scheduler
+- ses: <a target="_blank" href="https://aws.amazon.com/ses/">Amazon SES</a> Email sending and receiving
+- sns: <a target="_blank" href="https://aws.amazon.com/sns/">Amazon SNS</a> Pub/sub messaging and mobile push notifications
+- sqs: <a target="_blank" href="https://aws.amazon.com/sqs/">Amazon SQS</a> Message queuing service
+- states: <a target="_blank" href="https://aws.amazon.com/step-functions/">AWS Step Functions</a> Orchestrate distributed applications
+- swf: ??? Simple Workflow Service
+
+- ??? <a target="_blank" href="https://aws.amazon.com/appsync/">AWS AppSync</a> Managed GraphQL API service
+- ??? <a target="_blank" href="https://aws.amazon.com/appflow/">Amazon AppFlow</a> Integrate SaaS apps with AWS services
 
 
-## <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence</a>
+## <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence</a> (AI)
 
-Build and scale the next wave of AI innovation on AWS
+"Build and scale the next wave of AI innovation on AWS"
 
-- <a target="_blank" href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a> Foundation models for generative AI
-- <a target="_blank" href="https://aws.amazon.com/comprehend/">Amazon Comprehend</a> Natural language processing (NLP)
-- <a target="_blank" href="https://aws.amazon.com/kendra/">Amazon Kendra</a> Intelligent enterprise search
-- <a target="_blank" href="https://bomonike.github.io/aws-kiro/">AWS Kiro.dev</a> AI Agent development IDE & CLI (incorporates Amazon Q)
+- bedrock: <a target="_blank" href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a> Foundation models for generative AI
+- comprehend: <a target="_blank" href="https://aws.amazon.com/comprehend/">Amazon Comprehend</a> Natural language processing (NLP)
+- forecast: <a target="_blank" href="https://aws.amazon.com/forecast/">Amazon Forecast</a> Time-series forecasting
+- frauddetector: ??? Fraud Detector
+- kendra: <a target="_blank" href="https://aws.amazon.com/kendra/">Amazon Kendra</a> Intelligent enterprise search
 
-- <a target="_blank" href="https://aws.amazon.com/lex/">Amazon Lex</a> Build conversational chatbots
-- <a target="_blank" href="https://aws.amazon.com/nova/act/">Amazon Nova Act</a> SaaS to use a custom Nova 2 Lite model to build fleets of reliable agents to automate production UI workflows at scale (navigating & filling forms, extracting info)
-- <a target="_blank" href="https://aws.amazon.com/nova/forge/">Amazon Nova Forge</a> use HyperPod CLI to build custom frontier models. Reinforment Learning in customer environment with proprietary data. [<a target="_blank" href="https://docs.aws.amazon.com/sagemaker/latest/dg/nova-forge.html">UG</a>]
+- ??? <a target="_blank" href="https://bomonike.github.io/aws-kiro/">AWS Kiro.dev</a> AI Agent development IDE & CLI (incorporates Amazon Q)
 
-- <a target="_blank" href="https://partyrock.aws">PartyRock.aws</a> Website to create reusable,
+- lex: <a target="_blank" href="https://aws.amazon.com/lex/">Amazon Lex</a> Build conversational chatbots
+- ??? <a target="_blank" href="https://aws.amazon.com/nova/act/">Amazon Nova Act</a> SaaS to use a custom Nova 2 Lite model to build fleets of reliable agents to automate production UI workflows at scale (navigating & filling forms, extracting info)
+- ??? <a target="_blank" href="https://aws.amazon.com/nova/forge/">Amazon Nova Forge</a> use HyperPod CLI to build custom frontier models. Reinforment Learning in customer environment with proprietary data. [<a target="_blank" href="https://docs.aws.amazon.com/sagemaker/latest/dg/nova-forge.html">UG</a>]
+
+- ??? <a target="_blank" href="https://partyrock.aws">PartyRock.aws</a> Website to create reusable,
 useful and delightful apps with generative AI prompts. <a target="_blank" href="https://www.youtube.com/watch?v=96SiaQnKfJY
 ">VIDEO</a>
-- <a target="_blank" href="https://aws.amazon.com/personalize/">Amazon Personalize</a> Real-time personalization and recommendations
-- <a target="_blank" href="https://aws.amazon.com/polly/">Amazon Polly</a> Text-to-speech service
-- <a target="_blank" href="https://aws.amazon.com/q/">Amazon Q</a> AI-powered assistant for developers and businesses
-- <a target="_blank" href="https://aws.amazon.com/rekognition/">Amazon Rekognition</a> Image and video analysis
-- <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI</a> Build, train, and deploy ML models
+- personalize: <a target="_blank" href="https://aws.amazon.com/personalize/">Amazon Personalize</a> Real-time personalization and recommendations
+- polly: <a target="_blank" href="https://aws.amazon.com/polly/">Amazon Polly</a> Text-to-speech service
+- rekognition: <a target="_blank" href="https://aws.amazon.com/rekognition/">Amazon Rekognition</a> Image and video analysis
+- ??? <a target="_blank" href="https://aws.amazon.com/q/">Amazon Q</a> AI-powered assistant for developers and businesses
+- sagemaker: <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI</a> Build, train, and deploy ML models
 
-- <a target="_blank" href="https://aws.amazon.com/textract/">Amazon Textract</a> Extract text and data from documents
-- <a target="_blank" href="https://aws.amazon.com/transcribe/">Amazon Transcribe</a> Speech-to-text service
-- <a target="_blank" href="https://aws.amazon.com/translate/">Amazon Translate</a> Language translation service
-- <a target="_blank" href="https://aws.amazon.com/forecast/">Amazon Forecast</a> Time-series forecasting
+- textract: <a target="_blank" href="https://aws.amazon.com/textract/">Amazon Textract</a> Extract text and data from documents
+- transcribe: <a target="_blank" href="https://aws.amazon.com/transcribe/">Amazon Transcribe</a> Speech-to-text service
+- translate: <a target="_blank" href="https://aws.amazon.com/translate/">Amazon Translate</a> Language translation service
 
-- <a target="_blank" href="https://aws.amazon.com/appstudio/">AWS App Studio</a> The fastest and easiest way to build enterprise-grade applications, using natural language. [<a target="_blank" href="https://docs.aws.amazon.com/appstudio/latest/userguide/welcome.htmlZ">UG</a>]
-- <a target="_blank" href="https://aws.amazon.com/transform/">AWS Transform</a> Modernize .NET applications to Linux-ready cross-platform .NET. Migrate IBM z/OS and VMware to AWS EC2. Modernize [<a target="_blank" href="https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html">UG</a>]
-- <a target="_blank" href="https://aws.amazon.com/deeplens/">AWS DeepLens</a> Deep learning enabled video camera [discontinued]
-- <a target="_blank" href="https://aws.amazon.com/deepracer/">AWS DeepRacer</a> Autonomous racing car for ML learning
+- ??? <a target="_blank" href="https://aws.amazon.com/appstudio/">AWS App Studio</a> The fastest and easiest way to build enterprise-grade applications, using natural language. [<a target="_blank" href="https://docs.aws.amazon.com/appstudio/latest/userguide/welcome.htmlZ">UG</a>]
+- ??? <a target="_blank" href="https://aws.amazon.com/transform/">AWS Transform</a> Modernize .NET applications to Linux-ready cross-platform .NET. Migrate IBM z/OS and VMware to AWS EC2. Modernize [<a target="_blank" href="https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html">UG</a>]
+- ??? <a target="_blank" href="https://aws.amazon.com/deeplens/">AWS DeepLens</a> Deep learning enabled video camera [discontinued]
+- ??? <a target="_blank" href="https://aws.amazon.com/deepracer/">AWS DeepRacer</a> Autonomous racing car for ML learning
 
 
 ## <a target="_blank" href="https://aws.amazon.com/blockchain/">Blockchain (Web3)</a>
@@ -127,47 +146,49 @@ useful and delightful apps with generative AI prompts. <a target="_blank" href="
 - <a target="_blank" href="https://aws.amazon.com/qldb/">Amazon QLDB</a> Immutable, cryptographically verifiable ledger database
 
 
-## <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications</a>
+## Messaging <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications</a>
 
-Cloud and native applications built on and by AWS
+"Cloud and native applications built on and by AWS"
 
 - <a target="_blank" href="https://aws.amazon.com/connect/">Amazon Connect</a> Cloud contact center
-- <a target="_blank" href="https://aws.amazon.com/ses/">Amazon SES</a> Email sending and receiving
 - <a target="_blank" href="https://aws.amazon.com/pinpoint/">Amazon Pinpoint</a> Multi-channel marketing communications
 - <a target="_blank" href="https://aws.amazon.com/chime/">Amazon Chime</a> Communications service
-- <a target="_blank" href="https://aws.amazon.com/workmail/">Amazon WorkMail</a> Secure email and calendaring
 
 
 ## <a target="_blank" href="https://aws.amazon.com/aws-cost-management/">Cloud Financial Management</a>
 
 "Transform your business with cost transparency, control, forecasting, and optimization"
 
-- <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing-conductor/">Billing and Cost Management - View and pay bills, analyze and govern your spending, and optimize your costs
-- <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing-conductor/">AWS Billing Conductor</a> - Simplifying your billing practice
-- <a target="_blank" href="https://aws.amazon.com/partners/marketplace/buy-with-aws/">AWS Marketplace</a> - Digital catalog where you can find, buy, and deploy software
+- billing: <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing/">Billing and Cost Management - View and pay bills, analyze and govern your spending, and optimize your costs
+- ??? <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing-conductor/">AWS Billing Conductor</a> - Simplifying your billing practice
+- ??? <a target="_blank" href="https://aws.amazon.com/partners/marketplace/buy-with-aws/">AWS Marketplace</a> - Digital catalog where you can find, buy, and deploy software
+
 
 <a name="Compute/"></a>
 
 ## <a target="_blank" href="https://aws.amazon.com/products/compute/">Compute</a>
 
-Run instances, containers, and serverless computing
+"Run instances, containers, and serverless computing"
 
-- <a target="_blank" href="https://aws.amazon.com/ec2/">Amazon EC2</a> Virtual servers in the cloud
-- <a target="_blank" href="https://aws.amazon.com/lambda/">AWS Lambda</a> Run code without managing servers (serverless)
-- <a target="_blank" href="https://aws.amazon.com/fargate/">AWS Fargate</a> Serverless compute capacity provider for containers obtained from ECR
-- <a target="_blank" href="https://aws.amazon.com/batch/">AWS Batch</a> Batch computing at any scale
-- <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk</a> Deploy and scale web applications
-- <a target="_blank" href="https://aws.amazon.com/apprunner/">AWS App Runner</a> Deploy containerized web apps easily
-- <a target="_blank" href="https://aws.amazon.com/lightsail/">AWS Lightsail</a> Simple virtual private servers
-- ASG (Auto Scaling Group) is not a separate product but a feature of EC2.
+- app-runner: <a target="_blank" href="https://aws.amazon.com/apprunner/">AWS App Runner</a> Deploy containerized web apps easily
+- batch: <a target="_blank" href="https://aws.amazon.com/batch/">AWS Batch</a> Batch computing at any scale
+- ec2: <a target="_blank" href="https://aws.amazon.com/ec2/">Amazon EC2</a> Virtual servers in the cloud
+- lambda: <a target="_blank" href="https://aws.amazon.com/lambda/">AWS Lambda</a> Run code without managing servers (serverless)
+- lightsail: <a target="_blank" href="https://aws.amazon.com/lightsail/">AWS Lightsail</a> Simple virtual private servers
+
+- fargate? <a target="_blank" href="https://aws.amazon.com/fargate/">AWS Fargate</a> Serverless compute capacity provider for containers obtained from ECR
+- beanstalk? <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk</a> Deploy and scale web applications
+
+* ASG (Auto Scaling Group) is not a separate product but a feature of EC2.
+
 
 <a name="Containers"></a>
 
-## <a target="_blank" href="https://aws.amazon.com/containers/">Containers</a>
+## <a target="_blank" href="https://aws.amazon.com/containers/">Containers</a> (Compute)
 
-- ECR (Elastic Container Registry) - Fully-managed Docker container registry : Share and deploy container software, publicly or privately. Competes with Artifactory.
-- <a target="_blank" href="https://aws.amazon.com/ecs/">Amazon ECS</a> Elastic Container Service for orchestration
-- <a target="_blank" href="https://aws.amazon.com/eks/">Amazon EKS</a> Managed Elastic Kubernetes service
+- ecr: (Elastic Container Registry) - Fully-managed Docker container registry : Share and deploy container software, publicly or privately. Competes with Artifactory.
+- ecs: <a target="_blank" href="https://aws.amazon.com/ecs/">Amazon ECS</a> Elastic Container Service for orchestration
+- eks: <a target="_blank" href="https://aws.amazon.com/eks/">Amazon EKS</a> Managed Elastic Kubernetes service
 - Red Hat OpenShift Service on AWS - Fully managed Red Hat OpenShift service on AWS
 
 
@@ -176,42 +197,51 @@ Run instances, containers, and serverless computing
 - <a target="_blank" href="https://aws.amazon.com/connect/">Amazon Connect</a> Personalized customer experiences at scale
 
 
-## <a target="_blank" href="https://aws.amazon.com/products/databases/">Databases</a>
+## <a target="_blank" href="https://aws.amazon.com/products/databases/">Database</a>
 
-Power AI and data-driven applications at any scale
+"Power AI and data-driven applications at any scale"
 
-- <a target="_blank" href="https://aws.amazon.com/rds/">Amazon RDS</a> Managed relational databases (MySQL, PostgreSQL, SQL Server, etc.)
-- <a target="_blank" href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a> Fast, flexible NoSQL database
-- <a target="_blank" href="https://aws.amazon.com/rds/aurora/">Amazon Aurora</a> High-performance MySQL and PostgreSQL compatible database
-- <a target="_blank" href="https://aws.amazon.com/redshift/">Amazon Redshift</a> Fast, scalable data warehouse
-- <a target="_blank" href="https://aws.amazon.com/elasticache/">Amazon ElastiCache</a> In-memory caching (Redis, Memcached)
-- <a target="_blank" href="https://aws.amazon.com/documentdb/">Amazon DocumentDB</a> MongoDB-compatible document database
-- <a target="_blank" href="https://aws.amazon.com/neptune/">Amazon Neptune</a> Graph database service
-- <a target="_blank" href="https://aws.amazon.com/timestream/">Amazon Timestream</a> Time series database
-- <a target="_blank" href="https://aws.amazon.com/keyspaces/">Amazon Keyspaces</a> Managed Cassandra-compatible database
-- <a target="_blank" href="https://aws.amazon.com/memorydb/">Amazon MemoryDB for Redis</a> Redis-compatible, durable in-memory database
+- cassandra: <a target="_blank" href="https://aws.amazon.com/keyspaces/">Amazon Keyspaces</a> Managed Cassandra-compatible database
+- dax:
+- docdb: <a target="_blank" href="https://aws.amazon.com/documentdb/">Amazon DocumentDB</a> MongoDB-compatible document database
+- dynamodb: <a target="_blank" href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a> Fast, flexible NoSQL database
+- elasticache: <a target="_blank" href="https://aws.amazon.com/elasticache/">Amazon ElastiCache</a> In-memory caching (Redis, Memcached)
+- neptune: <a target="_blank" href="https://aws.amazon.com/neptune/">Amazon Neptune</a> Graph database service
+- qldb: Quantum Ledger Database
+- rds: <a target="_blank" href="https://aws.amazon.com/rds/">Amazon RDS</a> Managed relational databases (MySQL, PostgreSQL, SQL Server, etc.)
+- redshift: <a target="_blank" href="https://aws.amazon.com/redshift/">Amazon Redshift</a> Fast, scalable data warehouse
+- timestream: <a target="_blank" href="https://aws.amazon.com/timestream/">Amazon Timestream</a> Time series database
+
+- aurora? <a target="_blank" href="https://aws.amazon.com/rds/aurora/">Amazon Aurora</a> High-performance MySQL and PostgreSQL compatible database
+- redis? <a target="_blank" href="https://aws.amazon.com/memorydb/">Amazon MemoryDB for Redis</a> Redis-compatible, durable in-memory database
 
 
 ## <a target="_blank" href="https://aws.amazon.com/products/developer-tools/">Developer Tools</a>
 
-Develop applications on AWS faster and easier
+"Develop applications on AWS faster and easier"
 
-- <a target="_blank" href="https://aws.amazon.com/codecommit/">AWS CodeCommit</a> Git repository hosting
-- <a target="_blank" href="https://aws.amazon.com/codebuild/">AWS CodeBuild</a> Build and test code
-- <a target="_blank" href="https://aws.amazon.com/codedeploy/">AWS CodeDeploy</a> Automate code deployments
-- <a target="_blank" href="https://aws.amazon.com/codepipeline/">AWS CodePipeline</a> Continuous integration and delivery
-- <a target="_blank" href="https://aws.amazon.com/cloud9/">AWS Cloud9</a> Cloud-based IDE
-- <a target="_blank" href="https://aws.amazon.com/cloudshell/">AWS CloudShell</a> Browser-based shell
-- <a target="_blank" href="https://aws.amazon.com/xray/">AWS X-Ray</a> Trace and analyze distributed applications
-- <a target="_blank" href="https://aws.amazon.com/codeartifact/">AWS CodeArtifact</a> Managed artifact repository
-- <a target="_blank" href="https://aws.amazon.com/codeguru/">AWS CodeGuru</a> AI-powered code reviews and performance recommendations
+- cloud9: <a target="_blank" href="https://aws.amazon.com/cloud9/">AWS Cloud9</a> Cloud-based IDE
+- cloudshell: <a target="_blank" href="https://aws.amazon.com/cloudshell/">AWS CloudShell</a> Browser-based shell
+- codeartifact: <a target="_blank" href="https://aws.amazon.com/codeartifact/">AWS CodeArtifact</a> Managed artifact repository
+- codebuild: <a target="_blank" href="https://aws.amazon.com/codebuild/">AWS CodeBuild</a> Build and test code
+- codecommit: <a target="_blank" href="https://aws.amazon.com/codecommit/">AWS CodeCommit</a> Git repository hosting
+- codedeploy: <a target="_blank" href="https://aws.amazon.com/codedeploy/">AWS CodeDeploy</a> Automate code deployments
+- codeguru: <a target="_blank" href="https://aws.amazon.com/codeguru/">AWS CodeGuru</a> AI-powered code reviews and performance recommendations
+- codepipeline: <a target="_blank" href="https://aws.amazon.com/codepipeline/">AWS CodePipeline</a> Continuous integration and delivery
+- codestar: ???
+- xray: <a target="_blank" href="https://aws.amazon.com/xray/">AWS X-Ray</a> Trace and analyze distributed applications
+
 
 
 ## <a target="_blank" href="https://aws.amazon.com/products/end-user-computing/">End User Computing</a>
 
-Run cloud-native virtual desktops, secure web browsers, and streaming apps
+"Run cloud-native virtual desktops, secure web browsers, and streaming apps"
 
-- <a target="_blank" href="https://aws.amazon.com/workspaces/">Amazon WorkSpaces</a> Virtual desktops in the cloud
+- appstream: <a target="_blank" href="https://aws.amazon.com/appstream2/">Amazon AppStream 2.0</a> Stream desktop applications
+- workdocs: <a target="_blank" href="https://aws.amazon.com/workdocs/">Amazon WorkDocs</a> Secure document collaboration
+- worklink: ??? <a target="_blank" href="https://aws.amazon.com/worklink/">Amazon WorkLink</a> Secure mobile access to internal websites
+- workmail: <a target="_blank" href="https://aws.amazon.com/workmail/">Amazon WorkMail</a> Secure email and calendaring
+- workspaces: <a target="_blank" href="https://aws.amazon.com/workspaces/">Amazon WorkSpaces</a> Virtual desktops in the cloud
 
 
 ## Front-end Web & Mobile
@@ -232,46 +262,53 @@ Build breakthrough gaming experiences
 
 ## **IoT (Internet of Things)**
 
-- <a target="_blank" href="https://aws.amazon.com/iot-core/">AWS IoT Core</a> Connect devices to the cloud
-- <a target="_blank" href="https://aws.amazon.com/greengrass/">AWS IoT Greengrass</a> Local compute, messaging, and sync for devices
-- <a target="_blank" href="https://aws.amazon.com/iot-device-management/">AWS IoT Device Management</a> Register, organize, and manage IoT devices
-- <a target="_blank" href="https://aws.amazon.com/iot-analytics/">AWS IoT Analytics</a> Analytics for IoT devices
-- <a target="_blank" href="https://aws.amazon.com/iot-events/">AWS IoT Events</a> Detect and respond to IoT events
-- <a target="_blank" href="https://aws.amazon.com/iot-sitewise/">AWS IoT SiteWise</a> Collect and organize industrial equipment data
+- iot: <a target="_blank" href="https://aws.amazon.com/iot-core/">AWS IoT Core</a> Connect devices to the cloud
+- greengass: <a target="_blank" href="https://aws.amazon.com/greengrass/">AWS IoT Greengrass</a> Local compute, messaging, and sync for devices
+- ??? <a target="_blank" href="https://aws.amazon.com/iot-device-management/">AWS IoT Device Management</a> Register, organize, and manage IoT devices
+- ??? <a target="_blank" href="https://aws.amazon.com/iot-analytics/">AWS IoT Analytics</a> Analytics for IoT devices
+- iotevents: <a target="_blank" href="https://aws.amazon.com/iot-events/">AWS IoT Events</a> Detect and respond to IoT events
+- ??? <a target="_blank" href="https://aws.amazon.com/iot-sitewise/">AWS IoT SiteWise</a> Collect and organize industrial equipment data
 
 
-## <a target="_blank" href="https://aws.amazon.com/products/management-and-governance/">Management Tools</a> 
+## <a target="_blank" href="https://aws.amazon.com/products/management-and-governance/">Management Tools</a> (& Monitoring)
 
-Organize, track, and optimize how you use AWS
+"Organize, track, and optimize how you use AWS"
 
-- <a target="_blank" href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a> Infrastructure as code
-- <a target="_blank" href="https://aws.amazon.com/cloudtrail/">AWS CloudTrail</a> Track user activity and API usage
-- <a target="_blank" href="https://aws.amazon.com/cloudwatch/">Amazon CloudWatch</a> Monitoring and observability
-- <a target="_blank" href="https://aws.amazon.com/config/">AWS Config</a> Resource inventory and configuration history
-- <a target="_blank" href="https://aws.amazon.com/systems-manager/">AWS Systems Manager</a> Operational insights and automation
-- <a target="_blank" href="https://aws.amazon.com/organizations/">AWS Organizations</a> Manage multiple AWS accounts
-- <a target="_blank" href="https://aws.amazon.com/controltower/">AWS Control Tower</a> Set up and govern multi-account environments
-- <a target="_blank" href="https://aws.amazon.com/servicecatalog/">AWS Service Catalog</a> Create and manage approved service catalogs
-- <a target="_blank" href="https://aws.amazon.com/premiumsupport/technology/trusted-advisor/">AWS Trusted Advisor</a> Optimize costs, performance, and security
-- <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-cost-explorer/">AWS Cost Explorer</a> Visualize and manage AWS costs
-- <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-budgets/">AWS Budgets</a> Set custom cost and usage budgets
-- <a target="_blank" href="https://aws.amazon.com/license-manager/">AWS License Manager</a> Manage software licenses
+- account: ??? AWS Account Management
+- billing: <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing/">Billing and Cost Management - View and pay bills, analyze and govern your spending, and optimize your costs
+- budgets: <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-budgets/">AWS Budgets</a> Set custom cost and usage budgets
+- ce: <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-cost-explorer/">AWS Cost Explorer</a> Visualize and manage AWS costs
+- cloudformation: <a target="_blank" href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a> Infrastructure as code
+- cloudtrail: <a target="_blank" href="https://aws.amazon.com/cloudtrail/">AWS CloudTrail</a> Track user activity and API usage
+- cloudwatch: <a target="_blank" href="https://aws.amazon.com/cloudwatch/">Amazon CloudWatch</a> Monitoring and observability
+- compute-optimizer: ??? Compute Optimizer
+- config: <a target="_blank" href="https://aws.amazon.com/config/">AWS Config</a> Resource inventory and configuration history
+- health: ??? AWS Health
+- logs: ??? CloudWatch Logs
+- organizations: <a target="_blank" href="https://aws.amazon.com/organizations/">AWS Organizations</a> Manage multiple AWS accounts
+- servicecatalog: <a target="_blank" href="https://aws.amazon.com/servicecatalog/">AWS Service Catalog</a> Create and manage approved service catalogs
+- ssm: <a target="_blank" href="https://aws.amazon.com/systems-manager/">AWS Systems Manager</a> Operational insights and automation
+- trustedadvisor: <a target="_blank" href="https://aws.amazon.com/premiumsupport/technology/trusted-advisor/">AWS Trusted Advisor</a> Optimize costs, performance, and security
+
+- ??? <a target="_blank" href="https://aws.amazon.com/controltower/">AWS Control Tower</a> Set up and govern multi-account environments
+- ??? <a target="_blank" href="https://aws.amazon.com/license-manager/">AWS License Manager</a> Manage software licenses
+
 
 
 ## <a target="_blank" href="https://aws.amazon.com/media-services/">Media Services</a>
 
-Create digital content, and build live and on-demand video workflows
+"Create digital content, and build live and on-demand video workflows"
 
 - <a target="_blank" href="https://aws.amazon.com/elastictranscoder/">Amazon Elastic Transcoder</a> Media transcoding in the cloud
 - <a target="_blank" href="https://aws.amazon.com/mediaconvert/">AWS Elemental MediaConvert</a> File-based video transcoding
 - <a target="_blank" href="https://aws.amazon.com/medialive/">AWS Elemental MediaLive</a> Live video processing
 - <a target="_blank" href="https://aws.amazon.com/mediapackage/">AWS Elemental MediaPackage</a> Video origination and packaging
 - <a target="_blank" href="https://aws.amazon.com/mediastore/">AWS Elemental MediaStore</a> Media storage optimized for video
-- <a target="_blank" href="https://aws.amazon.com/kinesis/video-streams/">Amazon Kinesis Video Streams</a> Process and analyze video streams
+
 
 ## <a target="_blank" href="https://aws.amazon.com/products/migration-and-modernization/">Migration & Modernization</a>
 
-Migrate faster and modernize with confidence (Transfer)
+"Migrate faster and modernize with confidence (Transfer)"
 
 - <a target="_blank" href="https://aws.amazon.com/migration-hub/">AWS Migration</a> Track migrations from a central location
 - <a target="_blank" href="https://aws.amazon.com/dms/">AWS Database Migration Service</a> Migrate databases to AWS
@@ -292,21 +329,23 @@ Support operations across AWS, other clouds, and on-premises environments
 
 "Run every workload on a secure and reliable global network"
 
-- <a target="_blank" href="https://aws.amazon.com/vpc/">Amazon VPC</a> Isolated cloud networks
-- <a target="_blank" href="https://aws.amazon.com/cloudfront/">Amazon CloudFront</a> Global content delivery network (CDN)
-- <a target="_blank" href="https://aws.amazon.com/route53/">Amazon Route 53</a> Scalable DNS and domain registration
-- <a target="_blank" href="https://aws.amazon.com/directconnect/">AWS Direct Connect</a> Dedicated network connection to AWS
-- <a target="_blank" href="https://aws.amazon.com/elasticloadbalancing/">Elastic Load Balancing</a> Distribute incoming traffic across targets
-- <a target="_blank" href="https://aws.amazon.com/global-accelerator/">AWS Global Accelerator</a> "Improve global application availability and performance" using AWS-assigned 2 local AnyCast IP addresses on AWS Edge locations (Points of Presence) routed through AWS' optimized private backbone CDN. AWS auto-switches among listening Enpoint Groups in a Region ALB, NLB, Elastic IP, EC2 instance. <a target="_blank" href="https://www.youtube.com/watch?v=9LPKDeRlobg">VIDEO</a>
-- <a target="_blank" href="https://aws.amazon.com/transit-gateway/">AWS Transit Gateway</a> Connect VPCs and on-premises networks
-- <a target="_blank" href="https://aws.amazon.com/privatelink/">AWS PrivateLink</a> Private connectivity between VPCs and services
-- <a target="_blank" href="https://aws.amazon.com/vpn/">AWS VPN</a> Secure connections to AWS
-- <a target="_blank" href="https://aws.amazon.com/app-mesh/">AWS App Mesh</a> Application-level networking for microservices
+- apigateway: <a target="_blank" href="https://aws.amazon.com/transit-gateway/">AWS Transit Gateway</a> Connect VPCs and on-premises networks
+- appmesh: <a target="_blank" href="https://aws.amazon.com/app-mesh/">AWS App Mesh</a> Application-level networking for microservices
+- cloudfront: <a target="_blank" href="https://aws.amazon.com/cloudfront/">Amazon CloudFront</a> Global content delivery network (CDN)
+- directconnect: <a target="_blank" href="https://aws.amazon.com/directconnect/">AWS Direct Connect</a> Dedicated network connection to AWS
+- elb: & elasticloadbalancing: <a target="_blank" href="https://aws.amazon.com/elasticloadbalancing/">Elastic Load Balancing</a> Distribute incoming traffic across targets
+- globalaccelerator: <a target="_blank" href="https://aws.amazon.com/global-accelerator/">AWS Global Accelerator</a> "Improve global application availability and performance" using AWS-assigned 2 local AnyCast IP addresses on AWS Edge locations (Points of Presence) routed through AWS' optimized private backbone CDN. AWS auto-switches among listening Enpoint Groups in a Region ALB, NLB, Elastic IP, EC2 instance. <a target="_blank" href="https://www.youtube.com/watch?v=9LPKDeRlobg">VIDEO</a>
+- route53: <a target="_blank" href="https://aws.amazon.com/route53/">Amazon Route 53</a> Scalable DNS and domain registration
+- route53resolver: Route 53 Resolver
+- vpc: <a target="_blank" href="https://aws.amazon.com/vpc/">Amazon VPC</a> Isolated cloud networks
+
+- ??? <a target="_blank" href="https://aws.amazon.com/privatelink/">AWS PrivateLink</a> Private connectivity between VPCs and services
+- ??? <a target="_blank" href="https://aws.amazon.com/vpn/">AWS VPN</a> Secure connections to AWS
 
 
 ##  <a target="_blank" href="https://aws.amazon.com/cloudops/">Operations</a>
 
-Gain visibility, control, and governance at scale
+"Gain visibility, control, and governance at scale"
 
 - <a target="_blank" href="https://aws.amazon.com/systems-manager/">AWS Systems Manager</a> Operational insights and automation
 - etc. ???
@@ -326,25 +365,31 @@ Gain visibility, control, and governance at scale
 
 + Compliance
 
-- <a target="_blank" href="https://aws.amazon.com/iam/">AWS IAM</a> Identity and access management
-- <a target="_blank" href="https://aws.amazon.com/cognito/">Amazon Cognito</a> User authentication and authorization
-- <a target="_blank" href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a> Securely store and rotate secrets
-- <a target="_blank" href="https://aws.amazon.com/kms/">AWS KMS</a> Managed encryption key service
-- <a target="_blank" href="https://aws.amazon.com/waf/">AWS WAF</a> Web application firewall
-- <a target="_blank" href="https://aws.amazon.com/shield/">AWS Shield</a> DDoS protection
-- <a target="_blank" href="https://aws.amazon.com/guardduty/">Amazon GuardDuty</a> Threat detection service
-- <a target="_blank" href="https://aws.amazon.com/inspector/">Amazon Inspector</a> Automated security assessment
-- <a target="_blank" href="https://aws.amazon.com/macie/">Amazon Macie</a> Discover and protect sensitive data
-- <a target="_blank" href="https://aws.amazon.com/security-hub/">AWS Security</a> Centralized security and compliance
-- <a target="_blank" href="https://aws.amazon.com/certificate-manager/">AWS Certificate Manager</a> Provision and manage SSL/TLS certificates
-- <a target="_blank" href="https://aws.amazon.com/directoryservice/">AWS Directory Service</a> Managed Active Directory
-- <a target="_blank" href="https://aws.amazon.com/cloudhsm/">AWS CloudHSM</a> Hardware security module
-- <a target="_blank" href="https://aws.amazon.com/firewall-manager/">AWS Firewall Manager</a> Central firewall management
+- access-analyzer: IAM Access Analyzer
+- acm: <a target="_blank" href="https://aws.amazon.com/certificate-manager/">AWS Certificate Manager</a> Provision and manage SSL/TLS certificates
+- cognito-identity: <a target="_blank" href="https://aws.amazon.com/cognito/">Amazon Cognito</a> User authentication and authorization
+- detective: Amazon detective
+- guardduty: <a target="_blank" href="https://aws.amazon.com/guardduty/">Amazon GuardDuty</a> Threat detection service
+- iam: <a target="_blank" href="https://aws.amazon.com/iam/">AWS IAM</a> Identity and access management
+- inspector2: <a target="_blank" href="https://aws.amazon.com/inspector/">Amazon Inspector</a> Automated security assessment
+- kms: <a target="_blank" href="https://aws.amazon.com/kms/">AWS KMS</a> Managed encryption key service
+- macie2: <a target="_blank" href="https://aws.amazon.com/macie/">Amazon Macie</a> Discover and protect sensitive data
+- ram: Resource Access Manager
+- secretsmanager: <a target="_blank" href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a> Securely store and rotate secrets
+- securityhub: <a target="_blank" href="https://aws.amazon.com/security-hub/">AWS Security Hub</a> Centralized security and compliance
+- shield: <a target="_blank" href="https://aws.amazon.com/shield/">AWS Shield</a> DDoS protection
+- sso: AWS IAM Identity Center (SSO)
+- sts: ??? Security Token Service
+- waf: & wafv2: <a target="_blank" href="https://aws.amazon.com/waf/">AWS WAF</a> Web application firewall
+
+- ??? <a target="_blank" href="https://aws.amazon.com/directoryservice/">AWS Directory Service</a> Managed Active Directory
+- ??? <a target="_blank" href="https://aws.amazon.com/cloudhsm/">AWS CloudHSM</a> Hardware security module
+- ??? <a target="_blank" href="https://aws.amazon.com/firewall-manager/">AWS Firewall Manager</a> Central firewall management
 
 
 ## <a target="_blank" href="https://aws.amazon.com/products/storage/">Storage</a>
 
-Store and manage data for every workload at scale
+"Store and manage data for every workload at scale"
 
 - <a target="_blank" href="https://aws.amazon.com/s3/">Amazon S3</a> Scalable object storage
 - <a target="_blank" href="https://aws.amazon.com/ebs/">Amazon EBS</a> Block storage for EC2 instances
@@ -356,21 +401,17 @@ Store and manage data for every workload at scale
 
 
 ## **Robotics**
-- <a target="_blank" href="https://aws.amazon.com/robomaker/">AWS RoboMaker</a> Develop, test, and deploy robotics applications
 
+- robomaker: <a target="_blank" href="https://aws.amazon.com/robomaker/">AWS RoboMaker</a> Develop, test, and deploy robotics applications
 
 NOTE: Amazon Web Service (AWS) offer several types of services:
    * "SaaS" (System as a Service) which works completely from the browser like Microsoft 365, Google Drive, or Salesforce.
    * "PaaS" (Platform as a Service)
    <br /><br />
 
+
 ## Services by AWS Region
 
 - <a target="_blank" href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/">AWS Regional Services List</a> Services available by region
 
-
-
-- <a target="_blank" href="https://aws.amazon.com/appstream2/">Amazon AppStream 2.0</a> Stream desktop applications
-- <a target="_blank" href="https://aws.amazon.com/workdocs/">Amazon WorkDocs</a> Secure document collaboration
-- <a target="_blank" href="https://aws.amazon.com/worklink/">Amazon WorkLink</a> Secure mobile access to internal websites
 
