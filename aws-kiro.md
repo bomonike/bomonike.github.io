@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-07"
-lastchange: "26-03-07 v014 table format err fix :aws-kiro.md"
+lastchange: "26-03-07 v016 flowchart :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -62,67 +62,6 @@ Developers interact with Kiro two ways:
 This article focuses on CLI Spec-Mode operations.
 
 
-### Competition
-
-<a target="_blank" href="https://www.youtube.com/watch?v=73h5Lb_N9r8" title="Kiro explained in 5 minutes
-Caleb Writes Code">VIDEO</a>:
-Here is where Amazon Kiro fits with other AI spec-driven tools:
-
-
-Kiro competes with these other <a href="#SpecDriven">spec-driven</a> tools:
-* AgentOS
-* Anthropic Claude Code - Claude's hallmark is its large context window and strong reasoning — it's the tool you'd use to generate code from a high-level spec, possibly producing multiple files at once or analyzing a whole codebase. You can feed it your entire EARS .md file directly and instruct it to generate code from each requirement. It understands the WHEN/WHILE/IF/SHALL patterns naturally.
-* <a target="_blank" href="https://www.linkedin.com/posts/davetbo_kiro-agentcore-mcptool-activity-7377475581392687105-5ywk/">Cline</a>
-* Cursor
-* Microsoft GitHub Spec Kit at https://github.com/github/spec-kit generates tons of files <a target="_blank" href="https://www.youtube.com/watch?v=cQv3ocbsKHY">VIDEO</a>
-* Google Antigravity
-* OpenAI Opus
-* Roo Code
-* Trae IDE
-* WarpAI
-* Windsurf https://www.educative.io/courses/advanced-windsurf-ai-for-professionals
-* OpenSpec.dev "lightweight"
-* BMAD (Breakthrough Method for Agile AI Development) at <a target="_blank" href="https://github.com/bmadcode/BMAD-METHOD">https://github.com/bmadcode/BMAD-METHOD</a> created by <a target="_blank" href="https://www.youtube.com/watch?v=LorEJPrALcg">Brian and his YouTube channel</a>.
-
-   <a target="_blank" href="https://www.youtube.com/watch?v=fD8NLPU0WYU">VIDEO</a>: define PRD (Product Requirement Document), build in small chucks, and ship them incrementally. Its "*branstorm" command asks clarifying questions. <a target="_blank" href="https://www.youtube.com/watch?v=sBVVGQnCHqI">VIDEO</a> 
-<br /><br />
-
-IMPORTANT: They all make use of some variation of the <a href="#EARS">EARS requirements specification format (see below)</a>.
-
-Evaluations:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=ZgXG5hE8Na8&t=3m52s">Cursor vs Antigravity vs Kiro vs Windsurf: The Real Results (2026)</a> says Kiro "couldn't parse requirements".
-   * <a target="_blank" href="https://www.youtube.com/watch?v=sGYvGUkerA0&pp=ugUEEgJlbg%3D%3D">BMAD vs. Spec Kit vs. Open Spec: Which AI Coding Methodology is Best?</a> by The Grey Cat
-   <br /><br />
-
-https://www.youtube.com/watch?v=cQv3ocbsKHY
-
-https://www.youtube.com/watch?v=RhaF4LVAVng&t=323s 
-How I Code With AI Agents (Spec-Driven Development) by Owain Lewis using Claude
-
-https://www.youtube.com/watch?v=pey9u_ANXZM How I Tamed Claude - Emmz Rendle - NDC London 2026
-
-In November 2025, an internal memo from two of Amazon’s most powerful executives -- Peter DeSantis, VP of AWS utility computing, and Dave Treadwell, VP of eCommerce Foundation -- directed that "80% of you will use AI for coding at least once a week." But Kiro is Amazon’s AI-native development tool. PROTIP: Adoption, measured by access and frequency, is no longer a meaningful signal of progress. So use KPIs about use cases worth using. Expose use cases with monthly use case spotlight in team meetings to expose AI wins and hold quarterly review where team leads share the highest-impact use cases from their function. See https://www.sectionai.com/ai/the-ai-proficiency-report
-
-   The executives say “We do not plan to support additional third-party AI development tools.” (OpenAI Codex). Anthropic's Claude Code briefly got the shade before the designation was reversed after <a target="_blank" href="https://timesofindia.indiatimes.com/technology/tech-news/amazon-wants-80-of-its-developers-to-use-ai-for-coding-at-least-once-a-week-but-theres-one-condition/articleshow/128448190.cms">1,500 Amazon employees endorsed the formal adoption of Claud</a>. <a target="_blank" href="https://www.youtube.com/watch?v=JF2iDNgaMd0">VIDEO</a>: Unlike AWS, Anthropic doesn't want US to use its AI to wage war.
-
-   * <a target="_blank" href="https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/?td=keepreading">Kiro has been implicated in production outages</a>
-   <br /><br />
-
-   The complication is that Amazon has invested $8 billion in Anthropic, the company behind Claude Code.
-   Yet Amazon signed a $38 billion cloud computing deal with OpenAI.
-
-Issues encountered:
-   * "Kiro's context window is too small. isn't enough for me".
-   <br /><br />
-
-"The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but move among multiple domains at once and point the right tools at the right problems." -- NateBJones
-
-   * https://www.youtube.com/watch?v=QXClbPW3zAM
-   * <a target="_blank" href="https://www.youtube.com/watch?v=hcuR2hcqHHE&pp=ugUHEgVlbi1VUw%3D%3D" title="by Cloudmancer">VIDEO</a> "Kiro Has Changed How I Build Software"
-   * <a target="_blank" href="https://www.youtube.com/watch?v=QXClbPW3zAM" title="by Adventures in Generative AI">VIDEO</a> "Spec-Driven Development with Kiro: From Requirements to Production in 6 Hours"
-   <br /><br />
-
-
 ## What's Kiro?
 
 Kiro is a "No-Code AI" platform from Amazon that (like with Anthropic's Claude Code) is <a target="_blank" href="https://medium.com/ai-in-plain-english/the-end-of-software-engineer-why-anthropics-claude-code-creator-says-the-title-will-disappear-c35f2dfe66f5">obsoleting "Software Engineer/programming" jobs ... by the end of 2026.</a>.
@@ -135,24 +74,47 @@ using https://github.com/Rani-01/Calendar_Merge.git
 
 <a name="SpecDriven"></a> 
 
-### spec-driven AI code generators
+### Spec and code generation
 
-Kiro goes beyond code analysis by Amazon Q as developer convenience tool.
-Kiro enforces architectural coherence for the entire organization.
+KEY POINT: Kiro <a href="#Competition">(and other "spec-driven" offerings)</a> enable a fundamental revolution in how applications are created and maintained.
 
-Kiro's output is saved to a team repo used to enforce architectural coherence for the <strong>entire organization</strong>.
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png"><img alt="ai-coding-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png" /></a>
 
-PROTIP: So Kiro users need to transition from reactive debugging vibe coding to proactive architectural design, from the beginning.
+1. The "Traditional approach" to creating programming <strong>code</strong> housed in <strong>repositories</strong> is for programmers to <strong>edit code directly</strong> based on <strong>ideas</strong> in their heads.
+1. Coding work includes <string>scripts</strong> that define how each application works.
+1. Coding work also includes <strong>.terraform</strong> directives (or other ways) to define infrastructure that run applications in a datacenter.
+1. Earlier versions of Generative AI that appeared in 2023 enabled developers to write <strong>prompts</strong> for the AI to write code. But engineers often had to edit the generated code to incorporate best practices.
+1. <strong>AI Vibe coding</strong> capabilities that appeared in 2025 (such as Kiro) enabled prompts to <strong>define design</strong> specs.
+1. Each Kiro repo contains a folder full of <strong>hooks</strong> that AI draws from established <strong>best practices</strong> logic used to generate <strong>specifications</strong> for <strong>steering</strong>.
+1. IMPORTANT: The revolution enabled by recent AI is that the specifications are edited (changed) <strong>indirectly</strong> during iterations.
+1. REMEMBER: Specs are now <strong>changed using prompts</strong>.
+1. To create programming and infrastruction code, prompts make requests to <strong>run tasks</strong>.
+1. The AI automatically references <strong>sample code</strong> in the background.
+1. IMPORTANT: Because <strong>all assets</strong> can now be re-created with <strong>testing included</strong>, the impact of seemingly small changes can <strong>iterate</strong> quickly and surely.
 
-Specs created build "agentic" system: AI entities that can plan, reason, take actions, observe results, and iterate.
+## Implications
+
+"The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but move among multiple domains at once and point the right tools at the right problems." -- NateBJones
+
+   * https://www.youtube.com/watch?v=QXClbPW3zAM
+   * <a target="_blank" href="https://www.youtube.com/watch?v=hcuR2hcqHHE&pp=ugUHEgVlbi1VUw%3D%3D" title="by Cloudmancer">VIDEO</a> "Kiro Has Changed How I Build Software"
+   * <a target="_blank" href="https://www.youtube.com/watch?v=QXClbPW3zAM" title="by Adventures in Generative AI">VIDEO</a> "Spec-Driven Development with Kiro: From Requirements to Production in 6 Hours"
+   <br /><br />
 
 Specs in Kiro captures into "Organizational Intelligence" fragmented "tribal memory" by individual development team members
 throughout the <a target="_blank" href="https://medium.com/@faiyazengineer/from-ai-co-pilot-to-agentic-systems-the-ai-teammate-what-amazon-q-and-kiro-reveal-about-the-0973a09c167a">AI systems development lifecycle</a> (from <a target="_blank" href="https://www.linkedin.com/in/faiyazengineer/">Faiyaz</a>:
+
+
+<a name="Tasks"></a>
+
+## Kiro Tasks
 
 Kiro generates code by processing a <strong>tasks.md</strong> file such as this from AWS Transform:
 
 <a target="_blank" href=""><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772561987/aws-kiro-trans-tasks-602x535_ybqfbz.png" /></a>
 
+
+## Flow 
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png">
 <img alt="aws-kiro-ai-flow-1247x503.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png" /></a>
@@ -1102,9 +1064,70 @@ In this project, we’ll containerize a Flask app, push it to Docker Hub, and de
 https://www.coursera.org/learn/aws-generative-ai-essentials/home/module/1
 AWS Generative AI Essentials course
 
+
+<a name="Competition"></a>
+
+### Competition
+
+<a target="_blank" href="https://www.youtube.com/watch?v=73h5Lb_N9r8" title="Kiro explained in 5 minutes
+Caleb Writes Code">VIDEO</a>:
+Here is where Amazon Kiro fits with other AI spec-driven tools:
+
+Kiro competes with these other <a href="#SpecDriven">spec-driven</a> tools:
+* AgentOS
+* Anthropic Claude Code - Claude's hallmark is its large context window and strong reasoning — it's the tool you'd use to generate code from a high-level spec, possibly producing multiple files at once or analyzing a whole codebase. You can feed it your entire EARS .md file directly and instruct it to generate code from each requirement. It understands the WHEN/WHILE/IF/SHALL patterns naturally.
+* <a target="_blank" href="https://www.linkedin.com/posts/davetbo_kiro-agentcore-mcptool-activity-7377475581392687105-5ywk/">Cline</a>
+* Cursor
+* Microsoft GitHub Spec Kit at https://github.com/github/spec-kit generates tons of files <a target="_blank" href="https://www.youtube.com/watch?v=cQv3ocbsKHY">VIDEO</a>
+* Google Antigravity
+* OpenAI Opus
+* Roo Code
+* Trae IDE
+* WarpAI
+* Windsurf https://www.educative.io/courses/advanced-windsurf-ai-for-professionals
+* OpenSpec.dev "lightweight"
+* BMAD (Breakthrough Method for Agile AI Development) at <a target="_blank" href="https://github.com/bmadcode/BMAD-METHOD">https://github.com/bmadcode/BMAD-METHOD</a> created by <a target="_blank" href="https://www.youtube.com/watch?v=LorEJPrALcg">Brian and his YouTube channel</a>.
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=fD8NLPU0WYU">VIDEO</a>: define PRD (Product Requirement Document), build in small chucks, and ship them incrementally. Its "*branstorm" command asks clarifying questions. <a target="_blank" href="https://www.youtube.com/watch?v=sBVVGQnCHqI">VIDEO</a> 
+<br /><br />
+
+IMPORTANT: They all make use of some variation of the <a href="#EARS">EARS requirements specification format (see below)</a>.
+
+Evaluations:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ZgXG5hE8Na8&t=3m52s">Cursor vs Antigravity vs Kiro vs Windsurf: The Real Results (2026)</a> says Kiro "couldn't parse requirements".
+   * <a target="_blank" href="https://www.youtube.com/watch?v=sGYvGUkerA0&pp=ugUEEgJlbg%3D%3D">BMAD vs. Spec Kit vs. Open Spec: Which AI Coding Methodology is Best?</a> by The Grey Cat
+   <br /><br />
+
+https://www.youtube.com/watch?v=cQv3ocbsKHY
+
+https://www.youtube.com/watch?v=RhaF4LVAVng&t=323s 
+How I Code With AI Agents (Spec-Driven Development) by Owain Lewis using Claude
+
+https://www.youtube.com/watch?v=pey9u_ANXZM How I Tamed Claude - Emmz Rendle - NDC London 2026
+
+In November 2025, an internal memo from two of Amazon’s most powerful executives -- Peter DeSantis, VP of AWS utility computing, and Dave Treadwell, VP of eCommerce Foundation -- directed that "80% of you will use AI for coding at least once a week." But Kiro is Amazon’s AI-native development tool. PROTIP: Adoption, measured by access and frequency, is no longer a meaningful signal of progress. So use KPIs about use cases worth using. Expose use cases with monthly use case spotlight in team meetings to expose AI wins and hold quarterly review where team leads share the highest-impact use cases from their function. See https://www.sectionai.com/ai/the-ai-proficiency-report
+
+   The executives say “We do not plan to support additional third-party AI development tools.” (OpenAI Codex). Anthropic's Claude Code briefly got the shade before the designation was reversed after <a target="_blank" href="https://timesofindia.indiatimes.com/technology/tech-news/amazon-wants-80-of-its-developers-to-use-ai-for-coding-at-least-once-a-week-but-theres-one-condition/articleshow/128448190.cms">1,500 Amazon employees endorsed the formal adoption of Claud</a>. <a target="_blank" href="https://www.youtube.com/watch?v=JF2iDNgaMd0">VIDEO</a>: Unlike AWS, Anthropic doesn't want US to use its AI to wage war.
+
+   * <a target="_blank" href="https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/?td=keepreading">Kiro has been implicated in production outages</a>
+   <br /><br />
+
+   The complication is that Amazon has invested $8 billion in Anthropic, the company behind Claude Code.
+   Yet Amazon signed a $38 billion cloud computing deal with OpenAI.
+
+Issues encountered:
+   * "Kiro's context window is too small. isn't enough for me".
+   <br /><br />
+
+
+<a name="Questions"></a>
+
+## Questions
+
 QUESTION: Since Kiro uses a closed model, what are mechanisms for explainability of decisions made?
 
 QUESTION: How is bias and fairness evaluated (to maintain trust)?
+
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
