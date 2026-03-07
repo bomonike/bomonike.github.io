@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-07"
-lastchange: "26-03-07 v017 refs to flowchart :aws-kiro.md"
+lastchange: "26-03-07 v017 fix flowchart :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -473,15 +473,15 @@ See <a target="_blank" href="https://developer.apple.com/documentation/Xcode/set
 
    "Requirements engineering (RE) is about coordinating expectations about what can be achieved. Once the solution is built, you need to check that it does what the people asked for. This sounds simple but is not necessarily easy. RE is a cross-discipline activity and includes both soft skills and technical aspects. No two developments are the same; the scale, complexity, risk, novelty, and the composition of the project team all vary between projects. When developing new products, systems or services, there is much that is unknown and must be discovered. Because of these and many other factors, RE is not an exact science; it is not a completely systematic and repeatable “engineering process.” Successful RE follows a reusable approach for efficiency but is not a copy-exact process. RE processes must be adapted or customized for the nuance of each individual development program."
 
-   ### EARS Requirements
+### EARS Requirements
 
-   The <a target="_blank" href="https://alistairmavin.com/ears/">syntax and keywords</a> closely match common usage of English and are therefore intuitive.
+The <a target="_blank" href="https://alistairmavin.com/ears/">syntax and keywords</a> closely match common usage of English and are therefore intuitive.
 
-   REMEMBER: Requirements are always active (so there is no EARS keyword).
-   The basic structure of an EARS requirement are keywords shall, while, when, if.
-   A small number of keywords are used to denote the different clauses of an EARS requirement. 
+REMEMBER: Requirements are always active (so there is no EARS keyword).
+The basic structure of an EARS requirement are keywords shall, while, when, if.
+A small number of keywords are used to denote the different clauses of an EARS requirement. 
 
-   Here are examples and clarifications:
+Here are examples and clarifications:
    ```
    The mobile phone <strong>shall</strong> have a mass of less than 15 grams.
    ```
@@ -499,37 +499,37 @@ See <a target="_blank" href="https://developer.apple.com/documentation/Xcode/set
    * Again, to the left of the "shall" is the system name.
    * Again, to the right of "shall" is the system response.
 
-   REMEMBER: Clauses are always in the same order, following temporal logic. 
-   So state-driven requirements are active as long as the specified state remains true and are denoted by the keyword While.
+REMEMBER: Clauses are always in the same order, following temporal logic. 
+So state-driven requirements are active as long as the specified state remains true and are denoted by the keyword While.
 
    ```
-   When “mute” is selected, the laptop shall suppress all audio output.
+   WHEN “mute” is selected, the laptop SHALL suppress all audio output.
    ```
-   * "When" drives <strong>event driven requirements</strong> parsing. Event driven requirements specify how a system must respond when a triggering event occurs and are denoted by the keyword When. This is the basis for <a href="#agent-hooks">Kiro Agent Hooks</a>.
-   * To the right of "when" is the triggering event.
+   * "WHEN" drives <strong>event driven requirements</strong> parsing. Event driven requirements specify how a system must respond when a triggering event occurs and are denoted by the keyword When. This is the basis for <a href="#agent-hooks">Kiro Agent Hooks</a>.
+   * To the right of "WHEN" is the triggering event.
 
    ```
-   Where the car has a sunroof, the car shall have a sunroof control panel on the driver door.
+   WHERE the car has a sunroof, the car SHALL have a sunroof control panel on the driver door.
    ```
-   * "Where" drives optional <strong>feature requirements</strong> parsing. Optional feature requirements apply in products or systems that include the specified feature and are denoted by the keyword Where.
-   * To the right of "where" is the feature included.
+   * "WHERE" drives optional <strong>feature requirements</strong> parsing. Optional feature requirements apply in products or systems that include the specified feature and are denoted by the keyword Where.
+   * To the right of "WHERE" is the feature included.
 
    ```
-   If an invalid credit card number is entered, then the website shall display “please re-enter credit card details”.
+   IF an invalid credit card number is entered, then the website SHALL display “please re-enter credit card details”.
    ```
-   * "if" drives <strong>unwanted behaviour requirements</strong> parsing.
+   * "IF" drives <strong>unwanted behaviour requirements</strong> parsing.
    
    ```
-   <strong>While</strong> the aircraft is on ground, <strong>when</strong> reverse thrust is commanded, the engine control system <strong>shall</strong> enable reverse thrust.
+   <strong>WHILE</strong> the aircraft is on ground, <strong>WHEN</strong> reverse thrust is commanded, the engine control system <strong>SHALL</strong> enable reverse thrust.
    ```
    * Use of several keywords drives <strong>complex requirements</strong> parsing.
-   * To the right of "while" is the optional pre-condition.
-   * To the right of "when" is the triggering event.
-   * To the left of the "shall" is the system name.
-   * To the right of "shall" is the system response.
+   * To the right of "WHILE" is the optional pre-condition.
+   * To the right of "WHEN" is the triggering event.
+   * To the left of the "SHALL" is the system name.
+   * To the right of "SHALL" is the system response.
    <br /><br />
 
-   References about this sub-topic of EARS:
+References about this sub-topic of EARS:
    * See the <a target="_blank" href="https://www.youtube.com/watch?v=HY_JyxAZsiE" title="Agentic Coding at FAANG Scale and Quality 25-11-22">demo video</a> by <a target="_blank" href="https://www.linkedin.com/in/al-harris-7a755640/">Al Harris</a>, Kiro Lead Developer at AWS Seattle. Shows use of Asana calling MCP server https://github.com/alharris-at/nobel-mcp
 
    * https://www.youtube.com/watch?v=pa8C449yhCg&pp=ugUEEgJlbg%3D%3D">EARS - The Basics</a>
