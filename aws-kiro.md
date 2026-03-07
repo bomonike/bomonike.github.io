@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-07"
-lastchange: "26-03-07 v016 flowchart :aws-kiro.md"
+lastchange: "26-03-07 v017 refs to flowchart :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -81,22 +81,21 @@ KEY POINT: Kiro <a href="#Competition">(and other "spec-driven" offerings)</a> e
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png"><img alt="ai-coding-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png" /></a>
 
 1. The "Traditional approach" to creating programming <strong>code</strong> housed in <strong>repositories</strong> is for programmers to <strong>edit code directly</strong> based on <strong>ideas</strong> in their heads.
-1. Coding work includes <string>scripts</strong> that define how each application works.
+1. Coding work includes <strong>scripts</strong> that define how each application works.
 1. Coding work also includes <strong>.terraform</strong> directives (or other ways) to define infrastructure that run applications in a datacenter.
 1. Earlier versions of Generative AI that appeared in 2023 enabled developers to write <strong>prompts</strong> for the AI to write code. But engineers often had to edit the generated code to incorporate best practices.
 1. <strong>AI Vibe coding</strong> capabilities that appeared in 2025 (such as Kiro) enabled prompts to <strong>define design</strong> specs.
 1. Each Kiro repo contains a folder full of <strong>hooks</strong> that AI draws from established <strong>best practices</strong> logic used to generate <strong>specifications</strong> for <strong>steering</strong>.
 1. IMPORTANT: The revolution enabled by recent AI is that the specifications are edited (changed) <strong>indirectly</strong> during iterations.
-1. REMEMBER: Specs are now <strong>changed using prompts</strong>.
-1. To create programming and infrastruction code, prompts make requests to <strong>run tasks</strong>.
+1. REMEMBER: Specs are now <strong>changed using prompts</strong>, not directly edited.
+1. To create programming and infrastruction code, prompts make requests to <strong>run <a href="#Tasks">tasks</a></strong> defined.
 1. The AI automatically references <strong>sample code</strong> in the background.
 1. IMPORTANT: Because <strong>all assets</strong> can now be re-created with <strong>testing included</strong>, the impact of seemingly small changes can <strong>iterate</strong> quickly and surely.
 
 ## Implications
 
-"The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but move among multiple domains at once and point the right tools at the right problems." -- NateBJones
+"The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but the ones who move among multiple domains at once and point the right tools at the right problems." -- NateBJones
 
-   * https://www.youtube.com/watch?v=QXClbPW3zAM
    * <a target="_blank" href="https://www.youtube.com/watch?v=hcuR2hcqHHE&pp=ugUHEgVlbi1VUw%3D%3D" title="by Cloudmancer">VIDEO</a> "Kiro Has Changed How I Build Software"
    * <a target="_blank" href="https://www.youtube.com/watch?v=QXClbPW3zAM" title="by Adventures in Generative AI">VIDEO</a> "Spec-Driven Development with Kiro: From Requirements to Production in 6 Hours"
    <br /><br />
@@ -104,23 +103,7 @@ KEY POINT: Kiro <a href="#Competition">(and other "spec-driven" offerings)</a> e
 Specs in Kiro captures into "Organizational Intelligence" fragmented "tribal memory" by individual development team members
 throughout the <a target="_blank" href="https://medium.com/@faiyazengineer/from-ai-co-pilot-to-agentic-systems-the-ai-teammate-what-amazon-q-and-kiro-reveal-about-the-0973a09c167a">AI systems development lifecycle</a> (from <a target="_blank" href="https://www.linkedin.com/in/faiyazengineer/">Faiyaz</a>:
 
-
-<a name="Tasks"></a>
-
-## Kiro Tasks
-
-Kiro generates code by processing a <strong>tasks.md</strong> file such as this from AWS Transform:
-
-<a target="_blank" href=""><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772561987/aws-kiro-trans-tasks-602x535_ybqfbz.png" /></a>
-
-
-## Flow 
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png">
-<img alt="aws-kiro-ai-flow-1247x503.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png" /></a>
-
-Kiro builds "Agentic AI" using MCP and A2A protocols.
-Kiro builds code from spec (design) <a href="#Requirements">requirements</a>, which Kiro can generate by analyzing a codebase. 
+## Hooks
 
 Kiro creates data flow diagrams, TypeScript interfaces, database schemas, and API endpoints—like the Review interfaces for its review system.
 
@@ -137,6 +120,26 @@ Kiro Hooks enforce consistency. Set up a hook once, and Kiro handles the rest.
 On Windows 11 OS, use voice dictation (speech to text) by pressing Windows key + H.
 
 TOOL: To convert a repo injestible by AI, change "github.com" to "gitinjest.com" and paste it in Claude.
+
+
+<a name="Tasks"></a>
+
+## Kiro Tasks
+
+Kiro generates code by processing a <strong>tasks.md</strong> file such as this from AWS Transform:
+
+<a target="_blank" href=""><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772561987/aws-kiro-trans-tasks-602x535_ybqfbz.png" /></a>
+
+
+## Agentic 
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png">
+<img alt="aws-kiro-ai-flow-1247x503.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png" /></a>
+
+Kiro builds "Agentic AI" using MCP and A2A protocols.
+
+Kiro builds code from spec (design) <a href="#Requirements">requirements</a>, which Kiro can generate by analyzing a codebase. 
+
 
 <a name="Credits"></a>
 
@@ -946,7 +949,7 @@ Objectives are written in natural language.
    Kiro outputs standalone HTML files that open directly in any browser - no build step or server required. That enables you to share them with stakeholders by simply sending the files.
 
 
-<a name="Hooks"></a>
+<a name="AgentHooks"></a>
 
 ## Agent Hooks
 
