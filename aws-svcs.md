@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-06"
-lastchange: "26-03-06 v018 fix actions urls :aws-svcs.md"
+date: "2026-03-07"
+lastchange: "26-03-07 v019 category desc :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -19,7 +19,16 @@ created: "2026-02-18"
 {% include l18n.html %}
 {% include _toc.html %}
 
-This reference was prepared because Amazon does not provide major links together to the service prefix and action for each service.
+This reference was prepared because Amazon does not provide, on one page, useful links to each service.
+
+* Click the <strong>category title</strong> (in larger font) for the marketing page of that category. 
+* The <strong>service prefix</strong> name shown for each service is the code used in granting permissions.
+* Click the service prefix for details about <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html">IAM Actions, resources, and condition keys</a> to grant fine-grained <strong>permissions</strong> to that service.
+* Click the name of the service for the marketing page for the service. Or press commad+F to <strong>find</strong> part of a service name within this page.
+   * On top of each of those pages, click <strong>Sign in to console</strong> for the console GUI.
+* "[UG]" goes to the User Guide page, 
+   * Within each User Guide page may optionally also be links to [API] documentation for the service.
+<br /><br />
 
 Service names begin with either "Amazon" or "AWS". Which one used by a particular service is inconsistent because a naming convention has never been published.
 
@@ -35,32 +44,11 @@ Notable inconsistencies:
 
    * "SageMaker AI" and "Kiro" are being marketed without the Amazon/AWS prefix.
 
+NOTE: Amazon Web Service (AWS) offer several types of services:
+   * "SaaS" (System as a Service) which works completely from the browser like Microsoft 365, Google Drive, or Salesforce.
+   * "PaaS" (Platform as a Service)
+   <br /><br />
 
-
-## Category Websites, alphabetically
-
-   * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> 
-   * <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration</a>
-   * <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence</a>
-   * <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/compute/">Compute</a>
-   * <a target="_blank" href="https://aws.amazon.com/connect/">Custome Experience (Contact Center)</a> (Amazon Connect)
-   * <a target="_blank" href="https://aws.amazon.com/products/databases/">Databases</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/developer-tools/">Developer Tools</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/end-user-computing/">End User Computing</a>
-   * <a target="_blank" href="https://aws.amazon.com/gamelift/">Game Tech</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/management-and-governance/">Management Tools</a> (and Governance)
-   * <a target="_blank" href="https://aws.amazon.com/media-services/">Media Services</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/migration-and-modernization/">Migration & Modernization</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/multicloud-hybrid/">Multicloud & Hybrid</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/networking/">Networking & Content Delivery</a>
-   * <a target="_blank" href="https://aws.amazon.com/cloudops/">Operations</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/security/">Security & Identity</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/storage/">Storage</a>
-   * <a target="_blank" href="https://aws.amazon.com/aws-supply-chain/">(AWS) Supply Chain</a>
-
-
-AWS IAM action service prefixes from <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html">Actions, resources, and condition keys documentation</a>
 
 
 ## <a target="_blank" href="https://aws.amazon.com/products/analytics/">Analytics</a>
@@ -155,7 +143,7 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqbusiness.html">qbusiness</a>: ??? Amazon Q Business
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqbusinessqapps.html">qapps</a>: ??? Amazon Q Business Q Apps
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqdeveloper.html">qdeveloper</a>: ??? Amazon Q Developer
-- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqinconnect.html"><strong>wisdom</strong></a>: ??? Amazon Q in Connect
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqinconnect.html"><strong>wisdom</strong></a>: ??? <a target="_blank" href="https://builder.aws.com/content/2xOKbcx5jZyU9HcFXMcmxzi20t8/amazon-q-in-connect-for-generative-ai-powered-self-service">Amazon Q in Connect</a>  helps customer service agents quickly find the information they need by searching all connected sources at once in Salesforce and ServiceNow, as well as company wikis, FAQs, and file systems. Uses Contact Lens to understand customer issues.
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemaker.html">sagemaker</a>: <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker (AI)</a> Build, train, and deploy ML models. [<a target="_blank" href="https://docs.aws.amazon.com/sagemaker/">UG</a>]
 - ???: SageMaker Clarify > detect and mitigate bias (data skew) in ML models before and after deployment.
@@ -190,7 +178,7 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 
 "Cloud and native applications built on and by AWS"
 
-- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnect.html">connect</a>: <a target="_blank" href="https://aws.amazon.com/connect/">Amazon Connect</a> a cloud contact center as a service (CCaaS) solution that offers easy, self-service configuration and enables dynamic, personal, and natural customer engagement at any scale.  [<a target="_blank" href="https://docs.aws.amazon.com/connect/">UG</a>]
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnect.html">connect</a>: <a target="_blank" href="https://aws.amazon.com/connect/">Amazon Connect</a> a cloud contact center as a service (CCaaS) solution that offers easy, self-service configuration and enables dynamic, personal, and natural customer engagement at any scale. Creates an Amazon Q Domain (Assistant)  and an integration with pre-configured connectors such as Salesforce, Zendesk, Microsoft SharePoint, ServiceNow, Amazon S3, etc. [<a target="_blank" href="https://docs.aws.amazon.com/connect/">UG</a>]
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpinpoint.html">mobiletargeting</a>: <a target="_blank" href="https://aws.amazon.com/pinpoint/">Amazon Pinpoint</a> Multi-channel marketing communications.  service-specific resources, actions, and condition context keys for use in IAM permission policies. [<a target="_blank" href="https://docs.aws.amazon.com/pinpoint/">UG</a>]
 
@@ -472,11 +460,6 @@ Build breakthrough gaming experiences
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbackup.html">backup</a>: <a target="_blank" href="https://aws.amazon.com/backup/">AWS Backup</a> Centralized backup across AWS services. [<a target="_blank" href="https://docs.aws.amazon.com/backup/">UG</a>]
 
-
-NOTE: Amazon Web Service (AWS) offer several types of services:
-   * "SaaS" (System as a Service) which works completely from the browser like Microsoft 365, Google Drive, or Salesforce.
-   * "PaaS" (Platform as a Service)
-   <br /><br />
 
 
 ## Services by AWS Region
