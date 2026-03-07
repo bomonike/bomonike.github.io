@@ -1,11 +1,11 @@
 ---
 layout: post
 date: "2026-03-07"
-lastchange: "26-03-07 v019 category desc :aws-svcs.md"
+lastchange: "26-03-07 v020 Service Names title :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
-excerpt: "URLs and codes associated with each AWS service, grouped by AWS's product categories."
+excerpt: "URLs and permission role prefixes for each AWS service, grouped by service category."
 tags: [AWS, cloud, on-boarding]
 image:
 # feature: pic data center slice 1900x500.jpg
@@ -19,16 +19,34 @@ created: "2026-02-18"
 {% include l18n.html %}
 {% include _toc.html %}
 
+## Why this?
+
+Questions in certification exams often insert distractors which contain names of services which does not exist.
+So being familiar with the names of all services available would help you be more confident during exams.
+
+For that reason, discontinued services are listed here as well.
+
 This reference was prepared because Amazon does not provide, on one page, useful links to each service.
 
-* Click the <strong>category title</strong> (in larger font) for the marketing page of that category. 
+* Click the <strong>category title</strong> (in larger font) for the marketing page of that category.
+   
+   Individual services listed are grouped by service category. 
+   Not all services are listed on marketing pages.
+
 * The <strong>service prefix</strong> name shown for each service is the code used in granting permissions.
 * Click the service prefix for details about <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html">IAM Actions, resources, and condition keys</a> to grant fine-grained <strong>permissions</strong> to that service.
-* Click the name of the service for the marketing page for the service. Or press commad+F to <strong>find</strong> part of a service name within this page.
-   * On top of each of those pages, click <strong>Sign in to console</strong> for the console GUI.
+* Click the <a href="#ServiceNames">name of the service</a> for the marketing page for the service. 
+   * Press commad+F to <strong>find</strong> for part of a service name within this page.
+   * On top of each service's page, click <strong>Sign in to console</strong> for the console GUI.
 * "[UG]" goes to the User Guide page, 
    * Within each User Guide page may optionally also be links to [API] documentation for the service.
+* "???" appears when a prefix or service webpage is not known.
 <br /><br />
+
+
+<a name="ServiceNames"></a>
+
+### About Names of Services
 
 Service names begin with either "Amazon" or "AWS". Which one used by a particular service is inconsistent because a naming convention has never been published.
 
@@ -36,13 +54,17 @@ Service names begin with either "Amazon" or "AWS". Which one used by a particula
 
 * "AWS" prefix (e.g., AWS Lambda, AWS IAM, AWS CloudFormation) tends to be used for higher-level, platform-wide, or management/orchestration services that operate <strong>across the infrastructure</strong> rather than being a discrete resource that is individually provisioned. Such services are typically a tool, framework, or platform capability (identity management, deployment, governance, etc.).
 
-Notable inconsistencies:
+Notable exception:
 
    * Amazon CloudWatch is a monitoring/management tool that spans the infrastructure.
 
-   * AWS Glue is a data service that is provisioned
+   * AWS Glue is a data service that is provisioned.
 
    * "SageMaker AI" and "Kiro" are being marketed without the Amazon/AWS prefix.
+   <a name="PrefixExceptions"></a>
+   * "Kiro" are installed locally on your computer.
+   * "PartyRock.aws" is a URL SaaS publicly available, so no service prefix.
+   <br /><br />
 
 NOTE: Amazon Web Service (AWS) offer several types of services:
    * "SaaS" (System as a Service) which works completely from the browser like Microsoft 365, Google Drive, or Salesforce.
@@ -54,8 +76,6 @@ NOTE: Amazon Web Service (AWS) offer several types of services:
 ## <a target="_blank" href="https://aws.amazon.com/products/analytics/">Analytics</a>
 
 "Optimize performance and scale for analytics and AI workloads"
-
-(datalakes): Streaming, Data lakehouse, Data warehouse, Data lake, Data processing, Business intelligence, Search analytics, Data and AI governance
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonathena.html">athena</a>: <a target="_blank" href="https://aws.amazon.com/athena/">Amazon Athena</a> Query S3 data using SQL  [<a target="_blank" href="https://docs.aws.amazon.com/athena/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscleanrooms.html">cleanrooms</a>: <a target="_blank" href="https://aws.amazon.com/clean-rooms/">AWS Clean Rooms</a> analyze and collaborate on your collective datasets to gain new insights without revealing underlying data to one another. [<a target="_blank" href="https://docs.aws.amazon.com/clean-rooms/">UG</a>]
@@ -127,13 +147,13 @@ NOTE: Amazon Web Service (AWS) offer several types of services:
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkendra.html">kendra</a>: <a target="_blank" href="https://aws.amazon.com/kendra/">Amazon Kendra</a> Intelligent enterprise search.  [<a target="_blank" href="https://docs.aws.amazon.com/kendra/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkendraintelligentranking.html">kendra-ranking</a>: Amazon Kendra Intelligent Ranking
 
-- ???: <a target="_blank" href="https://bomonike.github.io/aws-kiro/">AWS Kiro.dev</a> AI Agent development IDE & CLI (incorporates Amazon Q).  [<a target="_blank" href="https://bomonike.github.io/aws-kiro/">UG</a>]
+- <a target="_blank" href="#PrefixExceptions">none</a>: <a target="_blank" href="https://bomonike.github.io/aws-kiro/">AWS Kiro.dev</a> AI Agent development IDE & CLI (incorporates Amazon Q).  [<a target="_blank" href="https://bomonike.github.io/aws-kiro/">UG</a>]
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlexv2.html">lex</a>: <a target="_blank" href="https://aws.amazon.com/lex/">Amazon Lex</a> Build conversational chatbots.  [<a target="_blank" href="https://docs.aws.amazon.com/lex/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonnovaact.html">nova-act</a>: <a target="_blank" href="https://aws.amazon.com/nova/act/">Amazon Nova Act</a> SaaS to use a custom Nova 2 Lite model to build fleets of reliable agents to automate production UI workflows at scale (navigating & filling forms, extracting info).
 - ???: <a target="_blank" href="https://aws.amazon.com/nova/forge/">Amazon Nova Forge</a> use HyperPod CLI to build custom frontier models. Reinforment Learning in customer environment with proprietary data. [<a target="_blank" href="https://docs.aws.amazon.com/sagemaker/latest/dg/nova-forge.html">UG</a>]
 
-- ???: <a target="_blank" href="https://partyrock.aws">PartyRock.aws</a> Website to create reusable,
+- <a target="_blank" href="#PrefixExceptions">none</a>: <a target="_blank" href="https://partyrock.aws">PartyRock.aws</a> Website to create reusable,
 useful and delightful apps with generative AI prompts.  [<a target="_blank" href="https://docs.aws.amazon.com/appflow/">UG</a>] <a target="_blank" href="https://www.youtube.com/watch?v=96SiaQnKfJY">VIDEO</a>
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpersonalize.html">personalize</a>: <a target="_blank" href="https://aws.amazon.com/personalize/">Amazon Personalize</a> Real-time personalization and recommendations.  [<a target="_blank" href="https://docs.aws.amazon.com/personalize/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonpolly.html">polly</a>: <a target="_blank" href="https://aws.amazon.com/polly/">Amazon Polly</a> Text-to-speech service.  [<a target="_blank" href="https://docs.aws.amazon.com/polly/">UG</a>]
@@ -162,8 +182,8 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstransform.html">transform</a>: <a target="_blank" href="https://aws.amazon.com/transform/">AWS Transform</a> Modernize .NET applications to Linux-ready cross-platform .NET. Migrate IBM z/OS and VMware to AWS EC2. Modernize [<a target="_blank" href="https://docs.aws.amazon.com/transform/">UG</a>]
 - AWS Transform custom
 
-- ???: <a target="_blank" href="https://aws.amazon.com/deeplens/">AWS DeepLens</a> Deep learning enabled video camera [discontinued]
-- ???: <a target="_blank" href="https://aws.amazon.com/deepracer/">AWS DeepRacer</a> Autonomous racing car for ML learning
+- discontinued: <a target="_blank" href="https://aws.amazon.com/deeplens/">AWS DeepLens</a> Deep learning enabled video camera.
+- discontinued December 15, 2025: <a target="_blank" href="https://aws.amazon.com/deepracer/">AWS DeepRacer</a> Autonomous racing car for ML learning.
 
 
 ## <a target="_blank" href="https://aws.amazon.com/blockchain/">Blockchain (Web3)</a>
@@ -210,16 +230,16 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html">batch</a>: <a target="_blank" href="https://aws.amazon.com/batch/">AWS Batch</a> Batch computing at any scale. [<a target="_blank" href="https://docs.aws.amazon.com/batch/">UG</a>]
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html">ec2: <a target="_blank" href="https://aws.amazon.com/ec2/">Amazon EC2</a> Virtual servers in the cloud.  [<a target="_blank" href="https://docs.aws.amazon.com/ec2/">UG</a>]
-- Amazon EC2 Auto Scaling
-- Amazon EC2 Image Builder
-- Amazon EC2 Instance Connect
+- ???: Amazon EC2 Auto Scaling
+- ???: Amazon EC2 Image Builder
+- ???: Amazon EC2 Instance Connect
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslambda.html">lambda</a>: <a target="_blank" href="https://aws.amazon.com/lambda/">AWS Lambda</a> Run code without managing servers (serverless). [<a target="_blank" href="https://docs.aws.amazon.com/lambda/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlightsail.html">lightsail: <a target="_blank" href="https://aws.amazon.com/lightsail/">AWS Lightsail</a> Simple virtual private servers. [<a target="_blank" href="https://docs.aws.amazon.com/lightsail/">UG</a>]
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticbeanstalk.html">elasticbeanstalk</a>: <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk</a> Deploy and scale web applications. 
 
-* robomaker: AWS RoboMaker > Develop, test, and deploy robotics applications. Shut down September 10, 2025.
+* discontinued September 10, 2025: AWS RoboMaker > Develop, test, and deploy robotics applications.
 
    The service failed to gain enough traction in the market. It was essentially built for iRobot (maker of the Roomba), and there wasn't sufficient due diligence to determine if it was useful for anyone else.
    
@@ -247,6 +267,8 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 ## <a target="_blank" href="https://aws.amazon.com/products/databases/">Database</a>
 
 "Power AI and data-driven applications at any scale"
+
+(datalakes): Streaming, Data lakehouse, Data warehouse, Data lake, Data processing, Business intelligence, Search analytics, Data and AI governance
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkeyspacesforapachecassandra.html">cassandra</a>: <a target="_blank" href="https://aws.amazon.com/keyspaces/">Amazon Keyspaces (for Apache Cassandra)</a> Managed open-source Cassandra-compatible database. [<a target="_blank" href="https://docs.aws.amazon.com/keyspaces/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondynamodbacceleratordax.html">dax</a>: ??? Amazon DynamoDB Accelerator (DAX)
@@ -284,7 +306,7 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncodeguru.html">codeguru</a>: <a target="_blank" href="https://aws.amazon.com/codeguru/">AWS CodeGuru</a> AI-powered code reviews and performance recommendations. [<a target="_blank" href="https://docs.aws.amazon.com/codeguru/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodepipeline.html">codepipeline</a>: <a target="_blank" href="https://aws.amazon.com/codepipeline/">AWS CodePipeline</a> Continuous integration and delivery. [<a target="_blank" href="https://docs.aws.amazon.com/codepipeline/">UG</a>]
 
-- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodestar.html">codestar</a>: ??? AWS CodeStar
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodestar.html">codestar</a>: <a target="_blank" href="https://aws.amazon.com/blogs/aws/new-aws-codestar/">AWS CodeStar</a> > pre-configured, end-to-end CI/CD pipelines and project templates. 
 - AWS CodeStar Connections
 - AWS CodeStar Notifications
 
