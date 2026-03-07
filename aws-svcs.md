@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-06"
-lastchange: "26-03-06 v014 rmv extra categories :aws-svcs.md"
+lastchange: "26-03-06 v015 marketplace :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -34,12 +34,10 @@ Notable inconsistencies:
    * "SageMaker AI" and "Kiro" are being marketed without the Amazon/AWS prefix.
 
 
-AWS IAM action service prefixes from <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html">documentation</a>
-
 
 ## Category Websites, alphabetically
 
-   * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> (datalakes): Streaming, Data lakehouse, Data warehouse, Data lake, Data processing, Business intelligence, Search analytics, Data and AI governance
+   * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> 
    * <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration</a>
    * <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence</a>
    * <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications</a>
@@ -60,9 +58,14 @@ AWS IAM action service prefixes from <a target="_blank" href="https://docs.aws.a
    * <a target="_blank" href="https://aws.amazon.com/aws-supply-chain/">(AWS) Supply Chain</a>
 
 
+AWS IAM action service prefixes from <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html">Actions, resources, and condition keys documentation</a>
+
+
 ## <a target="_blank" href="https://aws.amazon.com/products/analytics/">Analytics</a>
 
 "Optimize performance and scale for analytics and AI workloads"
+
+(datalakes): Streaming, Data lakehouse, Data warehouse, Data lake, Data processing, Business intelligence, Search analytics, Data and AI governance
 
 - athena: <a target="_blank" href="https://aws.amazon.com/athena/">Amazon Athena</a> Query S3 data using SQL  [<a target="_blank" href="https://docs.aws.amazon.com/athena/">UG</a>]
 - cleanrooms: <a target="_blank" href="https://aws.amazon.com/clean-rooms/">AWS Clean Rooms</a> analyze and collaborate on your collective datasets to gain new insights without revealing underlying data to one another. [<a target="_blank" href="https://docs.aws.amazon.com/clean-rooms/">UG</a>]
@@ -107,7 +110,10 @@ AWS IAM action service prefixes from <a target="_blank" href="https://docs.aws.a
 
 "Build and scale the next wave of AI innovation on AWS"
 
+- augmentedai: sagemaker-a2i-runtime: <a target="_blank" href="https://aws.amazon.com/augmented-ai/">Amazon Augmented AI (A2I)</a> API a2i-runtime.sagemaker to integrate human reviews with Amazon Textract to verify or override ML predictions.  [<a target="_blank" href="https://docs.aws.amazon.com/augmented-ai/">UG</a>]
 - bedrock: <a target="_blank" href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a> Foundation models for generative AI.  [<a target="_blank" href="https://docs.aws.amazon.com/bedrock/">UG</a>]
+- bedrock: ??? Amazon Bedrock AgentCore - Deploy and operate highly effective agents securely, at scale using any framework and model.
+
 - comprehend: <a target="_blank" href="https://aws.amazon.com/comprehend/">Amazon Comprehend</a> Natural language processing (NLP). [<a target="_blank" href="https://docs.aws.amazon.com/comprehend/">UG</a>]
 - forecast: <a target="_blank" href="https://aws.amazon.com/forecast/">Amazon Forecast</a> Time-series forecasting.  [<a target="_blank" href="https://docs.aws.amazon.com/forecast/">UG</a>]
 - frauddetector: <a target="_blank" href="https://aws.amazon.com/frauddetector/">Fraud Detector</a>.  [<a target="_blank" href="https://docs.aws.amazon.com/frauddetector/">UG</a>]
@@ -125,13 +131,17 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 - polly: <a target="_blank" href="https://aws.amazon.com/polly/">Amazon Polly</a> Text-to-speech service.  [<a target="_blank" href="https://docs.aws.amazon.com/polly/">UG</a>]
 - rekognition: <a target="_blank" href="https://aws.amazon.com/rekognition/">Amazon Rekognition</a> Image and video analysis.  [<a target="_blank" href="https://docs.aws.amazon.com/rekognition/">UG</a>]
 - ??? <a target="_blank" href="https://aws.amazon.com/q/">Amazon Q</a> AI-powered assistant for developers and businesses.  [<a target="_blank" href="https://docs.aws.amazon.com/q/">UG</a>]
+
 - sagemaker: <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker AI</a> Build, train, and deploy ML models. [<a target="_blank" href="https://docs.aws.amazon.com/sagemaker/">UG</a>]
+- ??? SageMaker Clarify > detect and mitigate bias (data skew) in ML models before and after deployment.
+- ??? SageMaker Model Miner > Monitor models in production to detect quality issues or performance degradation, such as model & data drift and feature distribution. Notify users of deviations found.
+- ??? SageMaker Model Cards > Document (version controlled) critical details of ML models for governance. Features include model overview, intended uses, risk ratings, evalution metrics, definitions, training details.
 
 - textract: <a target="_blank" href="https://aws.amazon.com/textract/">Amazon Textract</a> Extract text and data from documents.  [<a target="_blank" href="https://docs.aws.amazon.com/textract/">UG</a>]
 - transcribe: <a target="_blank" href="https://aws.amazon.com/transcribe/">Amazon Transcribe</a> Speech-to-text service.  [<a target="_blank" href="https://docs.aws.amazon.com/transcribe/">UG</a>]
 - translate: <a target="_blank" href="https://aws.amazon.com/translate/">Amazon Translate</a> Language translation service.  [<a target="_blank" href="https://docs.aws.amazon.com/translate/">UG</a>]
 
-- ??? <a target="_blank" href="https://aws.amazon.com/appstudio/">AWS App Studio</a> The fastest and easiest way to build enterprise-grade applications, using natural language. [<a target="_blank" href="https://docs.aws.amazon.com/appstudio/latest/userguide/welcome.htmlZ">UG</a>]
+- ??? <a target="_blank" href="https://aws.amazon.com/appstudio/">AWS App Studio</a> Build enterprise-grade applications, using natural language. [<a target="_blank" href="https://docs.aws.amazon.com/appstudio/latest/userguide/welcome.htmlZ">UG</a>]
 - ??? <a target="_blank" href="https://aws.amazon.com/transform/">AWS Transform</a> Modernize .NET applications to Linux-ready cross-platform .NET. Migrate IBM z/OS and VMware to AWS EC2. Modernize [<a target="_blank" href="https://docs.aws.amazon.com/transform/">UG</a>]
 
 - ??? <a target="_blank" href="https://aws.amazon.com/deeplens/">AWS DeepLens</a> Deep learning enabled video camera [discontinued]
@@ -159,7 +169,7 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 
 - billing: <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing/">Billing and Cost Management - View and pay bills, analyze and govern your spending, and optimize your costs.
 - ??? <a target="_blank" href="https://aws.amazon.com/aws-cost-management/aws-billing-conductor/">AWS Billing Conductor</a>  Simplifying your billing practice.
-- ??? <a target="_blank" href="https://aws.amazon.com/partners/marketplace/buy-with-aws/">AWS Marketplace</a> - Digital catalog where you can find, buy, and deploy software.
+- aws-marketplace: <a target="_blank" href="https://aws.amazon.com/partners/marketplace/buy-with-aws/">AWS Marketplace</a> - Digital catalog where you can find, buy, and deploy software.  [<a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplace.html">UG</a>]
 
 
 <a name="Compute/"></a>
@@ -246,32 +256,27 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 "Run cloud-native virtual desktops, secure web browsers, and streaming apps"
 
 - appstream: <a target="_blank" href="https://aws.amazon.com/appstream2/">Amazon AppStream 2.0</a> Stream desktop applications. [<a target="_blank" href="https://docs.aws.amazon.com/appstream2/">UG</a>]
-- workdocs: <a target="_blank" href="https://aws.amazon.com/workdocs/">Amazon WorkDocs</a> Secure document collaboration. 
-- worklink: ??? <a target="_blank" href="https://aws.amazon.com/worklink/">Amazon WorkLink</a> Secure mobile access to internal websites.
+- workdocs: <a target="_blank" href="https://aws.amazon.com/workdocs/">Amazon WorkDocs</a> Secure document collaboration. [<a target="_blank" href="https://docs.aws.amazon.com/workdocs/">No UG</a>]
 - workmail: <a target="_blank" href="https://aws.amazon.com/workmail/">Amazon WorkMail</a> Secure email and calendaring.  [<a target="_blank" href="https://docs.aws.amazon.com/workmail/">UG</a>]
 - workspaces: <a target="_blank" href="https://aws.amazon.com/workspaces/">Amazon WorkSpaces</a> Virtual desktops in the cloud. [<a target="_blank" href="https://docs.aws.amazon.com/workspaces/">UG</a>]
 
-
-## Front-end Web & Mobile
-
-- Secrets Manager - Easily rotate, manage, and retrieve secrets throughout their lifecycle
-- IAM - Manage access to AWS resources
-- Support - Contact AWS for technical and account support.
-- Amazon Bedrock AgentCore - Deploy and operate highly effective agents securely, at scale using any framework and model.
+* worklink: ??? Amazon WorkLink</a> Secure mobile access to internal websites.
 
 
 ## <a target="_blank" href="https://aws.amazon.com/gamelift/">Game Tech</a>
 
 Build breakthrough gaming experiences
 
-* Amazon GameLift Servers - Game server hosting purpose-built to power the world's most demanding games
-* Amazon GameLift Streams - Managed service for low-latency, high frame rate game streaming at global scale
+* gamelift: <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazongameliftservers.html#amazongameliftservers-actions-as-permissions">Amazon GameLift Servers</a> Game server hosting purpose-built to power the world's most demanding games. No UG.
+
+* gameliftstreams: ??? <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazongameliftstreams.html">Amazon GameLift Streams</a> - Managed service for low-latency, high frame rate game streaming at global scale. No UG.
 
 
-## **IoT (Internet of Things)**
+## <a target="_blank" href="https://aws.amazon.com/iot/">IoT (Internet of Things)</a>
+
+- greengrass: <a target="_blank" href="https://aws.amazon.com/greengrass/">AWS IoT Greengrass</a> Local compute, messaging, and sync for devices. Version 2 [<a target="_blank" href="https://docs.aws.amazon.com/greengrass/">UG</a>]
 
 - iot: <a target="_blank" href="https://aws.amazon.com/iot-core/">AWS IoT Core</a> Connect devices to the cloud. [<a target="_blank" href="https://docs.aws.amazon.com/iot/">UG</a>]
-- greengass: <a target="_blank" href="https://aws.amazon.com/greengrass/">AWS IoT Greengrass</a> Local compute, messaging, and sync for devices. Version 2 [<a target="_blank" href="https://docs.aws.amazon.com/greengrass/">UG</a>]
 - ??? <a target="_blank" href="https://aws.amazon.com/iot-device-management/">AWS IoT Device Management</a> Register, organize, and manage IoT devices. [<a target="_blank" href="https://docs.aws.amazon.com/iot-device-management/">UG</a>]
 - ??? <a target="_blank" href="https://aws.amazon.com/iot-analytics/">AWS IoT Analytics</a> Analytics for IoT devices.
 - iotevents: <a target="_blank" href="https://aws.amazon.com/iot-events/">AWS IoT Events</a> Detect and respond to IoT events.
