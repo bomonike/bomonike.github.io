@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-06"
-lastchange: "26-03-06 v017 more actions urls :aws-svcs.md"
+lastchange: "26-03-06 v018 fix actions urls :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -110,13 +110,13 @@ AWS IAM action service prefixes from <a target="_blank" href="https://docs.aws.a
 
 - ???: <a target="_blank" href="https://aws.amazon.com/amazon-mq/">Amazon MQ</a> Managed message broker (ActiveMQ, RabbitMQ).  [<a target="_blank" href="https://docs.aws.amazon.com/amazon-mq/">UG</a>]
 
-- ses</a>: <a target="_blank" href="https://aws.amazon.com/ses/">Amazon SES</a> Email sending and receiving.  [<a target="_blank" href="https://docs.aws.amazon.com/ses/">UG</a>]
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsimpleemailservicev2.html">ses</a>: <a target="_blank" href="https://aws.amazon.com/ses/">Amazon SES</a> (Simple Email Service V2) sending and receiving.  [<a target="_blank" href="https://docs.aws.amazon.com/ses/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsns.html">sns</a>: <a target="_blank" href="https://aws.amazon.com/sns/">Amazon SNS</a> (Simple Notification Service) Pub/sub messaging and mobile push notifications.  [<a target="_blank" href="https://docs.aws.amazon.com/sns/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsqs.html">sqs</a>: <a target="_blank" href="https://aws.amazon.com/sqs/">Amazon SQS</a> Message queuing service.  [<a target="_blank" href="https://docs.aws.amazon.com/sqs/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsstepfunctions.html"><strong>states</strong></a>: <a target="_blank" href="https://aws.amazon.com/step-functions/">AWS Step Functions</a> Orchestrate distributed applications. coordinate the components of distributed applications as a series of steps in a visual workflow. You can quickly build and run state machines to execute the steps of your application in a reliable and scalable fashion. [<a target="_blank" href="https://docs.aws.amazon.com/step-functions/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsimpleworkflowservice.html">swf</a>:  <a target="_blank" href="https://aws.amazon.com/swf/">Simple Workflow Service</a>.  build applications that coordinate work across distributed components. In Amazon SWF, a task represents a logical unit of work that is performed by a component of your application. Coordinating tasks across the application involves managing intertask dependencies, scheduling, and concurrency in accordance with the logical flow of the application. Amazon SWF gives you full control over implementing tasks and coordinating them without worrying about underlying complexities such as tracking their progress and maintaining their state. [<a target="_blank" href="https://docs.aws.amazon.com/swf/">UG</a>]
 
-- <a target="_blank" href=https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappsync.html"">appsync</a>: <a target="_blank" href="https://aws.amazon.com/appsync/">AWS AppSync</a> Managed GraphQL API service.  [<a target="_blank" href="https://docs.aws.amazon.com/appsync/">UG</a>]
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappsync.html"">appsync</a>: <a target="_blank" href="https://aws.amazon.com/appsync/">AWS AppSync</a> Managed GraphQL API service.  [<a target="_blank" href="https://docs.aws.amazon.com/appsync/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonappflow.html">appflow</a>: <a target="_blank" href="https://aws.amazon.com/appflow/">Amazon AppFlow</a> API to integrate SaaS apps with AWS services to securely transfer data. No-code. [<a target="_blank" href="https://docs.aws.amazon.com/appflow/">UG</a>]
 
 
@@ -152,10 +152,10 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrekognition.html">rekognition</a>: <a target="_blank" href="https://aws.amazon.com/rekognition/">Amazon Rekognition</a> Image and video analysis.  [<a target="_blank" href="https://docs.aws.amazon.com/rekognition/">UG</a>]
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonq.html">q</a>: <a target="_blank" href="https://aws.amazon.com/q/">Amazon Q</a> AI-powered assistant for developers and businesses.  [<a target="_blank" href="https://docs.aws.amazon.com/q/">UG</a>]
-- Amazon Q Business
-- Amazon Q Business Q Apps
-- Amazon Q Developer
-- Amazon Q in Connect
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqbusiness.html">qbusiness</a>: ??? Amazon Q Business
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqbusinessqapps.html">qapps</a>: ??? Amazon Q Business Q Apps
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqdeveloper.html">qdeveloper</a>: ??? Amazon Q Developer
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonqinconnect.html"><strong>wisdom</strong></a>: ??? Amazon Q in Connect
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemaker.html">sagemaker</a>: <a target="_blank" href="https://aws.amazon.com/sagemaker/">Amazon SageMaker (AI)</a> Build, train, and deploy ML models. [<a target="_blank" href="https://docs.aws.amazon.com/sagemaker/">UG</a>]
 - ???: SageMaker Clarify > detect and mitigate bias (data skew) in ML models before and after deployment.
@@ -231,7 +231,7 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticbeanstalk.html">elasticbeanstalk</a>: <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk</a> Deploy and scale web applications. 
 
-* robomaker: AWS RoboMaker</a> Develop, test, and deploy robotics applications. Shut down September 10, 2025.
+* robomaker: AWS RoboMaker > Develop, test, and deploy robotics applications. Shut down September 10, 2025.
 
    The service failed to gain enough traction in the market. It was essentially built for iRobot (maker of the Roomba), and there wasn't sufficient due diligence to determine if it was useful for anyone else.
    
@@ -316,7 +316,7 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworkspaces.html">workspaces</a>: <a target="_blank" href="https://aws.amazon.com/workspaces/">Amazon WorkSpaces</a> Virtual desktops in the cloud. [<a target="_blank" href="https://docs.aws.amazon.com/workspaces/">UG</a>]
 
-* <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworklink.html">worklink</a>: ??? Amazon WorkLink</a> Secure mobile access to internal websites.
+* <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonworklink.html">worklink</a>: ??? Amazon WorkLink > Secure mobile access to internal websites.
 
 
 ## <a target="_blank" href="https://aws.amazon.com/gamelift/">Game Tech</a>
@@ -353,7 +353,7 @@ Build breakthrough gaming experiences
 
 "Organize, track, and optimize how you use AWS"
 
-- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsactionrecommendations.html">action-recommendations</a>: Action Recommendations</a> actions in the AWS Management Console.
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsactionrecommendations.html">action-recommendations</a>: ??? Action Recommendations > actions in the AWS Management Console.
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudformation.html">cloudformation</a>: <a target="_blank" href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a> Infrastructure as code. [<a target="_blank" href="https://docs.aws.amazon.com/cloudformation/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscloudtrail.html">cloudtrail</a>: <a target="_blank" href="https://aws.amazon.com/cloudtrail/">AWS CloudTrail</a> Track user activity and API usage. [<a target="_blank" href="https://docs.aws.amazon.com/cloudcloudtrailformation/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudwatch.html">cloudwatch</a>: <a target="_blank" href="https://aws.amazon.com/cloudwatch/">Amazon CloudWatch</a> Monitoring and observability.  [<a target="_blank" href="https://docs.aws.amazon.com/cloudwatch/">UG</a>]
@@ -447,7 +447,7 @@ Build breakthrough gaming experiences
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssecretsmanager.html">secretsmanager</a>: <a target="_blank" href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a> Securely store and rotate secrets. [<a target="_blank" href="https://docs.aws.amazon.com/secretsmanager/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssecurityhub.html">securityhub</a>: <a target="_blank" href="https://aws.amazon.com/security-hub/">AWS Security Hub</a> Centralized security and compliance. [<a target="_blank" href="https://docs.aws.amazon.com/securityhub/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsshield.html">shield</a>: <a target="_blank" href="https://aws.amazon.com/shield/">AWS Shield</a> DDoS protection. [<a target="_blank" href="https://docs.aws.amazon.com/shield/">UG</a>]
-- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycenter.html">sso</a>: ??? AWS IAM Identity Center (SSO = Single Sign On)
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycenter.html">sso</a>: (Single Sign On) ??? AWS IAM Identity Center
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssecuritytokenservice.html">sts</a>: ??? Security Token Service
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awswafv2.html">wafv2: <a target="_blank" href="https://aws.amazon.com/waf/">AWS WAF</a> Web application firewall. [<a target="_blank" href="https://docs.aws.amazon.com/waf/">UG</a>]
 
