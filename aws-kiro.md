@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-05"
-lastchange: "26-03-05 v013 reorg topics transform ahead :aws-kiro.md"
+date: "2026-03-07"
+lastchange: "26-03-07 v014 table format err fix :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -68,18 +68,10 @@ This article focuses on CLI Spec-Mode operations.
 Caleb Writes Code">VIDEO</a>:
 Here is where Amazon Kiro fits with other AI spec-driven tools:
 
-<table border="1" cellpadding="4" cellspacing="0">
-<tr><th> Type </th><th> AI Tools </th></tr>
-<tr valign="top"><td> Cloud based </td><td> Codex, GitHub Spec </td></tr> 
-<tr valign="top"><td> Web based </td><td> V0, Loveable, Bolt </td></tr>
-<tr valign="top"><td> IDE Extensions </td><td> Cline, Roo, Trae </td></tr>
-<tr valign="top"><td> VSCode forked apps </td><td> <a href="#InstallIDE">Kiro IDE, Cursor, Windsurf </td></tr>
-<tr valign="top"><td> Terminal </td><td> <a href="#InstallCLI">Kiro CLI</a>, Aider, Claude Code, OpenAI Codex, Warp CLI </td></tr>
-</table>
 
 Kiro competes with these other <a href="#SpecDriven">spec-driven</a> tools:
 * AgentOS
-* Anthropic Claude Code
+* Anthropic Claude Code - Claude's hallmark is its large context window and strong reasoning — it's the tool you'd use to generate code from a high-level spec, possibly producing multiple files at once or analyzing a whole codebase. You can feed it your entire EARS .md file directly and instruct it to generate code from each requirement. It understands the WHEN/WHILE/IF/SHALL patterns naturally.
 * <a target="_blank" href="https://www.linkedin.com/posts/davetbo_kiro-agentcore-mcptool-activity-7377475581392687105-5ywk/">Cline</a>
 * Cursor
 * Microsoft GitHub Spec Kit at https://github.com/github/spec-kit generates tons of files <a target="_blank" href="https://www.youtube.com/watch?v=cQv3ocbsKHY">VIDEO</a>
@@ -418,6 +410,7 @@ Referencs:
 1. Switch between the Kiro IDE and CLI, press ^ and ` (hold down shift and the 6 key for ^ then the ` to the left of 1). Other shortcuts:
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1769430704/kiro-keys-538x836_rcmp0x.png"><img alt="kiro-keys-538x836.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769430704/kiro-keys-538x836_rcmp0x.png" /></a>
+   <br /><br />
 
 
    <a name="Tree"></a>
@@ -444,7 +437,7 @@ Referencs:
    </pre>
    Not listed is internal file <tt>.cli-bash_history</tt> kiro updates to track every command it processes.
 
-   * https://towardsdev.com/the-mcp-server-stack-10-open-source-essentials-for-2026-cb13f080ca5c
+   * <a target="_blan" href="https://towardsdev.com/the-mcp-server-stack-10-open-source-essentials-for-2026-cb13f080ca5c">BLOG</a>
    <br /><br />
 
    ### agent_config.json
@@ -547,7 +540,7 @@ See <a target="_blank" href="https://developer.apple.com/documentation/Xcode/set
    ```
    When “mute” is selected, the laptop shall suppress all audio output.
    ```
-   * "When" drives <strong>event driven requirements</strong> parsing. Event driven requirements specify how a system must respond when a triggering event occurs and are denoted by the keyword When.
+   * "When" drives <strong>event driven requirements</strong> parsing. Event driven requirements specify how a system must respond when a triggering event occurs and are denoted by the keyword When. This is the basis for <a href="#agent-hooks">Kiro Agent Hooks</a>.
    * To the right of "when" is the triggering event.
 
    ```
@@ -986,7 +979,7 @@ Objectives are written in natural language.
 
    <a target="_blank" href="https://github.com/jasonkneen/kiro/blob/main/spec-process-guide/prompting/templates.md">https://github.com/jasonkneen/kiro/blob/main/spec-process-guide/prompting/templates.md</a>
 
-   https://github.com/aws-samples/sample-kiro-cli-prompts-for-product-teams
+   <a target="_blank" href="https://github.com/aws-samples/sample-kiro-cli-prompts-for-product-teams">https://github.com/aws-samples/sample-kiro-cli-prompts-for-product-teams</a>
 
    Kiro outputs standalone HTML files that open directly in any browser - no build step or server required. That enables you to share them with stakeholders by simply sending the files.
 
@@ -1045,7 +1038,7 @@ Objectives are written in natural language.
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/accessibility-audit.kiro.hook">accessibility-audit.kiro.hook</a> - Checks React components for accessibility issues
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/update-documentation.kiro.hook">update-documentation.kiro.hook</a> - Updates docs when code changes
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/translation-update.kiro.hook">translation-update.kiro.hook</a> - Syncs translation files
-
+   <br /><br />
 
 ## Strands MCP Agents
 
@@ -1109,6 +1102,9 @@ In this project, we’ll containerize a Flask app, push it to Docker Hub, and de
 https://www.coursera.org/learn/aws-generative-ai-essentials/home/module/1
 AWS Generative AI Essentials course
 
+QUESTION: Since Kiro uses a closed model, what are mechanisms for explainability of decisions made?
+
+QUESTION: How is bias and fairness evaluated (to maintain trust)?
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
