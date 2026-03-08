@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-07"
-lastchange: "26-03-07 v020 Service Names title :aws-svcs.md"
+lastchange: "26-03-07 v023 icons :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -21,8 +21,8 @@ created: "2026-02-18"
 
 ## Why this?
 
-Questions in certification exams often insert distractors which contain names of services which does not exist.
-So being familiar with the names of all services available would help you be more confident during exams.
+Questions in certification exams often insert distractors such as names of services which do not exist.
+Even though there are hundreds of servicess, being familiar with the names of all services available would help you be more confident during exams.
 
 For that reason, discontinued services are listed here as well.
 
@@ -83,7 +83,7 @@ NOTE: Amazon Web Service (AWS) offer several types of services:
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazondatazone.html">datazone</a>: <a target="_blank" href="https://aws.amazon.com/datazone/">Amazon DataZone</a> Data catalog and governance
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticmapreduce.html">elasticmapreduce</a>: <a target="_blank" href="https://aws.amazon.com/emr/">Amazon EMR (Elastic Map Reduce)</a> Big data processing with Hadoop/Spark
 
-- es: Elasticsearch Service (legacy)
+- discontinued: Elasticsearch Service (legacy)
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncloudsearch.html">cloudsearch</a>:: <a target="_blank" href="https://aws.amazon.com/cloudsearch/">Amazon CloudSearch</a> Managed search service.  [<a target="_blank" href="https://docs.aws.amazon.com/cloudsearch/">UG</a>]
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsglue.html">glue</a>: <a target="_blank" href="https://aws.amazon.com/glue/">AWS Glue</a> Serverless data integration (ETL) [<a target="_blank" href="https://docs.aws.amazon.com/glue/">UG</a>]
@@ -449,6 +449,7 @@ Build breakthrough gaming experiences
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonguardduty.html">guardduty</a>: <a target="_blank" href="https://aws.amazon.com/guardduty/">Amazon GuardDuty</a> Threat detection service. [<a target="_blank" href="https://docs.aws.amazon.com/guardduty/">UG</a>]
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementiam.html">iam</a>: <a target="_blank" href="https://aws.amazon.com/iam/">AWS IAM</a> Identity and access management. [<a target="_blank" href="https://docs.aws.amazon.com/iam/">UG</a>]
+   * IAM Identity Center (IDC) gives users a central SSO login page to access multiple AWS accounts and applications.
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoninspector2.html">inspector2</a>: <a target="_blank" href="https://aws.amazon.com/inspector/">Amazon Inspector</a> Automated security assessment.
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awskeymanagementservice.html">kms</a>: <a target="_blank" href="https://aws.amazon.com/kms/">AWS KMS</a> Managed encryption key service. [<a target="_blank" href="https://docs.aws.amazon.com/kms/">UG</a>]
