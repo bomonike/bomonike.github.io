@@ -482,19 +482,6 @@ See <a target="_blank" href="https://developer.apple.com/documentation/Xcode/set
    
    REMEMBER: The wonderful thing about using AI is the hope that the whole system can be rebuilt quickly after changes in specs. That completely changes how work can proceed.
 
-   "Kiro feels like working with a disciplined senior engineer who insists on doing things the right way." <a target="_blank" href="https://medium.com/@sizarta/kiro-the-ai-ide-that-actually-gets-how-software-should-be-built-5b026f4dd926">"Kiro: The AI IDE That Actually Gets How Software Should Be Built"</a>. 
-   
-   * Comparison of Kiro vs. established frameworks are at <a target="_blank" href="https://github.com/pliekhus77/pr-suit-for-kiro/wiki">https://github.com/pliekhus77/pr-suit-for-kiro/wiki</a> by Patrick Liekhus   
-
-
-   | Concept | Kiro | Claude Skills |
-   | ======= | ==== | ============= |
-   | Packaged instructions/behavior | Rules / steering | Skill instructions config |
-   | Scripts / automations | MCP tools, hooks, external CLIs | Skill scripts |
-   | Domain docs / resources | Project docs + MCP data tools | Files inside Skill folder |
-   | Dynamic loading per task | Agentic chat + MCP, spec context | Auto-loaded Skills |
-   | Cross-tool reuse | MCP servers shared with Kiro/Q | Skills across Claude/Code |
-
 
    <a name="EARS"></a>
 
@@ -645,6 +632,10 @@ NOTE: Character-level encoding on mainframes are in various code pages of EBCDIC
 
 Transform aims to reduce project timelines when "Reimagining" apps. Tasks are invoked by Administrators writing natural language prompts (objectives, jobs, tasks) to perform: codebase analysis to extracts business logic and tech doc generation, Decompose the monolithic application into functional domains. It refactors, decomposes, define dependency mapping, validation to improve the quality of refactored code.
 
+<a name="Jobs"></a>
+
+### Jobs
+
 Analysis of each <strong>job</strong> (each containing a max of 3,000,000 lines of code) results in organized using these folders:
 
   * "business‑documentation" – extracted business logic for the entire application, in a zip archive.
@@ -698,6 +689,8 @@ Code and Test Quality are boosted with Kiro Hooks.
 Objectives are written in natural language.
 
 
+<a name="PBT"></a>
+
 ## Property-Based Testing (PBT)
 
    Use of formal specifications following EARS enables labor-saving automation of validation of <strong>actual behavior</strong> against requirements defining what should occur,
@@ -715,7 +708,6 @@ Objectives are written in natural language.
    References about EARS:
    * <a target="_blank" href="https://www.youtube.com/watch?v=qSS9grfEASo">VIDEO</a> by Visure Solutions.
    <br /><br />
-
 
 
 
@@ -1072,6 +1064,18 @@ Objectives are written in natural language.
 
 ## Kiro vs. Anthropic Skills
 
+   "Kiro feels like working with a disciplined senior engineer who insists on doing things the right way." <a target="_blank" href="https://medium.com/@sizarta/kiro-the-ai-ide-that-actually-gets-how-software-should-be-built-5b026f4dd926">"Kiro: The AI IDE That Actually Gets How Software Should Be Built"</a>. 
+   
+   * Comparison of Kiro vs. established frameworks are at <a target="_blank" href="https://github.com/pliekhus77/pr-suit-for-kiro/wiki">https://github.com/pliekhus77/pr-suit-for-kiro/wiki</a> by Patrick Liekhus   
+
+   | Concept | Kiro | Claude Skills |
+   | ======= | ==== | ============= |
+   | Packaged instructions/behavior | Rules / steering | Skill instructions config |
+   | Scripts / automations | MCP tools, hooks, external CLIs | Skill scripts |
+   | Domain docs / resources | Project docs + MCP data tools | Files inside Skill folder |
+   | Dynamic loading per task | Agentic chat + MCP, spec context | Auto-loaded Skills |
+   | Cross-tool reuse | MCP servers shared with Kiro/Q | Skills across Claude/Code |
+
 Kiro doesn’t (yet) expose a first‑class “Skills” object, but it offers pieces that cover the same needs.
 
    Anthropic created Agent Skills at <a target="_blank" href="https://agentskills.io/home/">https://agentskills.io</a>
@@ -1080,6 +1084,10 @@ Kiro doesn’t (yet) expose a first‑class “Skills” object, but it offers p
    to provide a simple, open format for giving agents new capabilities and expertise.
    are folders of instructions, scripts, and resources that agents can discover and use to perform better at specific tasks. Write once, use everywhere.
 
+   * https://www.theverge.com/ai-artificial-intelligence/800868/anthropic-claude-skills-ai-agents
+   Anthropic turns to ‘skills’ to make Claude more useful at work
+   
+
 a) Rules / steering for persistent behavior
 
    Kiro has steering rules to guide AI behavior across projects, shaping how the agent works globally (coding standards, review rules, architectural preferences).
@@ -1087,6 +1095,8 @@ a) Rules / steering for persistent behavior
    This maps to the instruction part of a Claude Skill: reusable behavior that’s always in effect, or scoped to a workspace/project.
 
    Use this for: “Always write tests this way, follow these patterns, use our logging wrapper,” etc.
+
+
 
 b) MCP tools as the “scripts/resources” layer
 Kiro supports Model Context Protocol (MCP) to connect specialized tools and external systems into the IDE.
