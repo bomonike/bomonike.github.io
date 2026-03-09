@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-09"
-lastchange: "26-03-09 v023 powers file :aws-kiro.md"
+lastchange: "26-03-09 v024 commands :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -281,7 +281,7 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was <a target="_blank
    kiro-cli version --changelog
    ```
    
-   ### Kiro-cli login
+   ### Kiro-cli login/logout
 
 1. Login to Kiro using a login method: AWS Builder ID or IDC (IAM Identity Center) account:
    ```
@@ -292,6 +292,141 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was <a target="_blank
    kiro-cli logout
    ```
    
+   ### Kiro-CLI doctor
+
+1. Know Kiro commands:
+   ```
+   kiro-cli --help
+   ```
+   <pre>
+   ╭────────────────────────────────────────────────────╮
+   │ chat         Chat with Kiro CLI                    │
+   │ agent        Manage AI agents                      │
+   │ doctor       Debug installation issues             │ 
+   │ settings     Customize appearance & behavior       │
+   │ quit         Quit the app                          │
+   ╰────────────────────────────────────────────────────╯
+   </pre>
+
+1. Analyze (like with Git):
+   ```bash
+   kiro-cli doctor
+   ```
+   <pre>
+   Model: claude-sonnet-4 (/model to change)
+   </pre>
+
+1. Chat:
+   ```bash
+   kiro-cli chat
+   ```
+   <pre>
+   Model: claude-sonnet-4 (/model to change)
+   </pre>
+   TODO: ???
+
+1. Know Kiro commands:
+   ```bash
+   kiro-cli --help-all
+   ```
+   <pre>
+   debug         Debug the app
+   settings      Customize appearance & behavior
+   setup         Setup cli components
+   update        Update the Kiro application
+   diagnostic    Run diagnostic tests
+   init          Generate the dotfiles for the given shell
+   theme         Get or set theme
+   issue         Create a new Github issue
+   login         Login
+   logout        Logout
+   whoami        Prints details about the current user
+   profile       Show the profile associated with this idc user
+   user          Manage your account
+   doctor        Fix and diagnose common issues
+   launch        Launch the desktop app
+   quit          Quit the desktop app
+   restart       Restart the desktop app
+   integrations  Manage system integrations
+   translate     Natural Language to Shell translation
+   dashboard     Open the dashboard
+   chat          AI assistant in your terminal
+   mcp           Model Context Protocol (MCP)
+   inline        Inline shell completions
+   agent         Agent root commands
+   help          Print this message or the help of the given subcommand(s)
+   &nbsp;
+   Options:
+   -v, --verbose...
+            Increase logging verbosity
+         --help-all
+            Print help for all subcommands
+         --agent <AGENT>
+            Launch chat with specified agent
+   -h, --help
+            Print help
+   -V, --version
+            Print version
+   </pre>
+
+1. Drag the Terminal window's right edge to widen it for viewing the response:
+   <pre>
+   Device authorized
+   Logged in successfully
+   &nbsp;
+   ⠀⠀⠀⠀⠀⠀⠀     ⢀⣴⣶⣶⣦⡀⠀⠀⠀⢀⣴⣶⣦⣄⡀⠀⠀⢀⣴⣶⣶⣦⡀⠀⠀⢀⣴⣶⣶⣶⣶⣶⣶⣶⣶⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⣶⣶⣶⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+   ⠀⠀⠀⠀⠀⠀⠀    ⢰⣿⠋⠁⠈⠙⣿⡆⠀⢀⣾⡿⠁⠀⠈⢻⡆⢰⣿⠋⠁⠈⠙⣿⡆⢰⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⣦⠀⠀⠀⠀⣴⡿⠟⠋⠁⠀⠀⠀⠈⠙⠻⢿⣦⠀⠀⠀⠀⠀⠀⠀
+   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⣿⣇⣴⡿⠋⠀⠀⠀⢀⣼⠇⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⢠⣤⣤⣤⣤⣄⠀⠀⠀⠀⣿⡆⠀⠀⣼⡟⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⠀⢻⣧⠀⠀⠀⠀⠀
+   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⣿⡿⠋⠀⠀⠀⢀⣾⡿⠁⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⢸⣿⠉⠉⠉⣿⡇⠀⠀⠀⣿⡇⠀⣼⡟⠀⠀⠀⣰⡿⠟⠛⠻⢿⣆⠀⠀⠀⢻⣧⠀⠀⠀⠀
+   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⠙⠁⠀⠀⢀⣼⡟⠁⠀⠀⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⢸⣿⣶⣶⡶⠋⠀⠀⠀⠀⣿⠇⢰⣿⠀⠀⠀⢰⣿⠀⠀⠀⠀⠀⣿⡆⠀⠀⠀⣿⡆
+   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⡀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣼⠟⠀⢸⣿⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⣿⡇
+   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⠀⣠⡀⠀⠀⠹⣷⡄⠀⠀⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⠀⣤⣄⠀⠀⠀⠀⠹⣿⡅⠀⠀⠸⣿⠀⠀⠀⠸⣿⠀⠀⠀⠀⠀⣿⠇⠀⠀⠀⣿⠇
+   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⣾⡟⣷⡀⠀⠀⠘⣿⣆⠀⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⠀⣿⡟⣷⡀⠀⠀⠀⠘⣿⣆⠀⠀⢻⣧⠀⠀⠀⠹⣷⣦⣤⣤⣾⠏⠀⠀⠀⣼⡟
+   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⣿⡇⠹⣷⡀⠀⠀⠈⢻⡇⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⠀⣿⡇⠹⣷⡀⠀⠀⠀⠈⢻⡇⠀⠀⢻⣧⠀⠀⠀⠀⠉⠉⠉⠀⠀⠀⠀⣼⡟
+   ⠀⠀⠀⠀⠀⠀⠀    ⠸⣿⣄⡀⢀⣠⣿⠇⠀⠙⣷⡀⠀⢀⣼⠇⠀⠸⣿⣄⡀⢀⣠⣿⠇⠸⣿⣄⡀⢀⣠⣿⠇⠀⠙⣷⡀⠀⠀⢀⣼⠇⠀⠀⠀⠻⣷⣦⣄⡀⠀⠀⠀⢀⣠⣴⣾⠟
+   ⠀⠀⠀⠀⠀⠀⠀    ⠀⠈⠻⠿⠿⠟⠁⠀⠀⠀⠈⠻⠿⠿⠟⠁⠀⠀⠈⠻⠿⠿⠟⠁⠀⠀⠈⠻⠿⠿⠟⠁⠀⠀⠀⠈⠻⠿⠿⠟⠁⠀⠀⠀⠀⠀⠈⠙⠻⠿⠿⠿⠿⠟⠋⠁
+   &nbsp;
+   Jump into building with Kiro:
+   &nbsp;
+   1. Ask a question or describe a task
+   2. Use /context add <file> to provide Kiro with additional info
+   3. Connect to external tools with by using /mcp
+   &nbsp;
+   Use /help for more information and happy coding!
+   &nbsp;
+   Model: claude-sonnet-4 (/model to change)
+   </pre>
+
+1. https://support.aws.amazon.com/#/contacts/kiro says
+   "For technical support, please submit an issue on Github
+
+   <a target="_blank" href="https://github.com/kirodotdev/Kiro/issues">https://github.com/kirodotdev/Kiro/issues</a>
+
+1. PROTIP: Open another Terminal tab for doing other work, so you can quickly ask questions.
+
+   REMEMBER: To the right of the ">", type a chatbot question.
+
+1. REMEMBER: <strong>Built-in commands</strong> such as this verify whether the Xcode MCP server is connected:
+   ```
+   /tools
+   ```
+1. ???
+   ```
+   What is the time in NYC
+   ```
+   PROTIP: A question mark is not needed.
+
+1. To exit kiro-cli, press <strong>control+c</strong> twice.
+
+1. Consider <a target="_blank" href="https://kiro.dev/docs/cli/chat/manage-prompts/">prompt templates</a> uses "steering files" to guide AI behavior with project-specific instructions. Steering files are markdown documents in .kiro/steering/ that provide context, workflows, and constraints. When you work in Kiro, these files automatically shape how the AI assistant responds - no manual prompting required.
+
+   <a target="_blank" href="https://github.com/jasonkneen/kiro/blob/main/spec-process-guide/prompting/templates.md">https://github.com/jasonkneen/kiro/blob/main/spec-process-guide/prompting/templates.md</a>
+
+   <a target="_blank" href="https://github.com/aws-samples/sample-kiro-cli-prompts-for-product-teams">https://github.com/aws-samples/sample-kiro-cli-prompts-for-product-teams</a>
+
+   Kiro outputs standalone HTML files that open directly in any browser - no build step or server required. That enables you to share them with stakeholders by simply sending the files.
+
+
    ### Kiro-cli chat & context
 
 1. Start using Kiro Chat: view parameters using help:
@@ -326,6 +461,7 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was <a target="_blank
    * Press Ctrl+D twice in quick succession
    * Enter /quit
    * Enter /exit
+
 
    ### Kiro CLI models
 
@@ -766,6 +902,29 @@ Unlike Claude skill knowledge packages, Kiro (standalone IDE) can more comprehen
    * author: Creator name
    <br /><br />
 
+   In the YAML front matter (between "---") at the top of each steering file, configure <strong>inclusion</strong> directives for loading, to optimize performance and ensures relevant context is available when needed. 
+   ```yaml
+   ---
+   title: Invoked in all runs
+   inclusion: always
+   ---
+   ```
+   For example, steering for Typescript files use this conditional:
+   ```yaml
+   ---
+   title: Typescript steering
+   inclusion: fileMatch
+   fileMatchPattern: "components/**/*.tsx"
+   ---
+   ```
+   Other fileMatchPatterns:
+   * "*.tsx" - React components and JSX files
+   * "app/api/**/*" - API routes and backend logic
+   * "**/*.test.*" - Test files and testing utilities
+   * "src/components/**/*" - Component-specific guidelines
+   * "*.md" - Documentation files
+   <br /><br />
+
 1. Write (or paste into the file (text extracted from the Claude <strong>README.md</strong>, if there is one)<br /><strong>Attribution</strong> metadata such as:
    ```
    ## License & Attribution
@@ -927,160 +1086,6 @@ Unlike Claude skill knowledge packages, Kiro (standalone IDE) can more comprehen
    | **.NET Best Practices** | Development | .NET 8.0 development standards for performance, security, and maintainability |
    | **4D SDLC + SAFe Work Management** | Work Management | Define-Design-Develop-Deploy phases with SAFe practices and WSJF prioritization |
    | **Enterprise Architecture (TOGAF/Zachman)** | Architecture | Strategic planning questions for product and feature design |
-
-1. In the YAML front matter (between "---") at the top of each steering file, configure <strong>inclusion</strong> directives for loading, to optimize performance and ensures relevant context is available when needed. 
-   ```yaml
-   ---
-   title: Invoked in all runs
-   inclusion: always
-   ---
-   ```
-   For example, steering for Typescript files use this conditional:
-   ```yaml
-   ---
-   title: Typescript steering
-   inclusion: fileMatch
-   fileMatchPattern: "components/**/*.tsx"
-   ---
-   ```
-   Other fileMatchPatterns:
-   * "*.tsx" - React components and JSX files
-   * "app/api/**/*" - API routes and backend logic
-   * "**/*.test.*" - Test files and testing utilities
-   * "src/components/**/*" - Component-specific guidelines
-   * "*.md" - Documentation files
-
-1. Know Kiro commands:
-   ```
-   kiro-cli --help
-   ```
-   <pre>
-   ╭────────────────────────────────────────────────────╮
-   │ chat         Chat with Kiro CLI                    │
-   │ agent        Manage AI agents                      │
-   │ doctor       Debug installation issues             │ 
-   │ settings     Customize appearance & behavior       │
-   │ quit         Quit the app                          │
-   ╰────────────────────────────────────────────────────╯
-   </pre>
-
-1. Analyze (like with Git):
-   ```bash
-   kiro-cli doctor
-   ```
-   <pre>
-   Model: claude-sonnet-4 (/model to change)
-   </pre>
-
-1. Chat:
-   ```bash
-   kiro-cli chat
-   ```
-   <pre>
-   Model: claude-sonnet-4 (/model to change)
-   </pre>
-   TODO: ???
-
-1. Know Kiro commands:
-   ```bash
-   kiro-cli --help-all
-   ```
-   <pre>
-   debug         Debug the app
-   settings      Customize appearance & behavior
-   setup         Setup cli components
-   update        Update the Kiro application
-   diagnostic    Run diagnostic tests
-   init          Generate the dotfiles for the given shell
-   theme         Get or set theme
-   issue         Create a new Github issue
-   login         Login
-   logout        Logout
-   whoami        Prints details about the current user
-   profile       Show the profile associated with this idc user
-   user          Manage your account
-   doctor        Fix and diagnose common issues
-   launch        Launch the desktop app
-   quit          Quit the desktop app
-   restart       Restart the desktop app
-   integrations  Manage system integrations
-   translate     Natural Language to Shell translation
-   dashboard     Open the dashboard
-   chat          AI assistant in your terminal
-   mcp           Model Context Protocol (MCP)
-   inline        Inline shell completions
-   agent         Agent root commands
-   help          Print this message or the help of the given subcommand(s)
-   &nbsp;
-   Options:
-   -v, --verbose...
-            Increase logging verbosity
-         --help-all
-            Print help for all subcommands
-         --agent <AGENT>
-            Launch chat with specified agent
-   -h, --help
-            Print help
-   -V, --version
-            Print version
-   </pre>
-
-1. Drag the Terminal window's right edge to widen it for viewing the response:
-   <pre>
-   Device authorized
-   Logged in successfully
-   &nbsp;
-   ⠀⠀⠀⠀⠀⠀⠀     ⢀⣴⣶⣶⣦⡀⠀⠀⠀⢀⣴⣶⣦⣄⡀⠀⠀⢀⣴⣶⣶⣦⡀⠀⠀⢀⣴⣶⣶⣶⣶⣶⣶⣶⣶⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⣶⣶⣶⣶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-   ⠀⠀⠀⠀⠀⠀⠀    ⢰⣿⠋⠁⠈⠙⣿⡆⠀⢀⣾⡿⠁⠀⠈⢻⡆⢰⣿⠋⠁⠈⠙⣿⡆⢰⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⣦⠀⠀⠀⠀⣴⡿⠟⠋⠁⠀⠀⠀⠈⠙⠻⢿⣦⠀⠀⠀⠀⠀⠀⠀
-   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⣿⣇⣴⡿⠋⠀⠀⠀⢀⣼⠇⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⢠⣤⣤⣤⣤⣄⠀⠀⠀⠀⣿⡆⠀⠀⣼⡟⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⠀⢻⣧⠀⠀⠀⠀⠀
-   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⣿⡿⠋⠀⠀⠀⢀⣾⡿⠁⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⢸⣿⠉⠉⠉⣿⡇⠀⠀⠀⣿⡇⠀⣼⡟⠀⠀⠀⣰⡿⠟⠛⠻⢿⣆⠀⠀⠀⢻⣧⠀⠀⠀⠀
-   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⠙⠁⠀⠀⢀⣼⡟⠁⠀⠀⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⢸⣿⣶⣶⡶⠋⠀⠀⠀⠀⣿⠇⢰⣿⠀⠀⠀⢰⣿⠀⠀⠀⠀⠀⣿⡆⠀⠀⠀⣿⡆
-   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⡀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣼⠟⠀⢸⣿⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⣿⡇
-   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⠀⣠⡀⠀⠀⠹⣷⡄⠀⠀⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⠀⣤⣄⠀⠀⠀⠀⠹⣿⡅⠀⠀⠸⣿⠀⠀⠀⠸⣿⠀⠀⠀⠀⠀⣿⠇⠀⠀⠀⣿⠇
-   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⣾⡟⣷⡀⠀⠀⠘⣿⣆⠀⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⠀⣿⡟⣷⡀⠀⠀⠀⠘⣿⣆⠀⠀⢻⣧⠀⠀⠀⠹⣷⣦⣤⣤⣾⠏⠀⠀⠀⣼⡟
-   ⠀⠀⠀⠀⠀⠀⠀    ⢸⣿⠀⠀⠀⠀⣿⡇⠹⣷⡀⠀⠀⠈⢻⡇⠀⢸⣿⠀⠀⠀⠀⣿⡇⢸⣿⠀⠀⠀⠀⣿⡇⠹⣷⡀⠀⠀⠀⠈⢻⡇⠀⠀⢻⣧⠀⠀⠀⠀⠉⠉⠉⠀⠀⠀⠀⣼⡟
-   ⠀⠀⠀⠀⠀⠀⠀    ⠸⣿⣄⡀⢀⣠⣿⠇⠀⠙⣷⡀⠀⢀⣼⠇⠀⠸⣿⣄⡀⢀⣠⣿⠇⠸⣿⣄⡀⢀⣠⣿⠇⠀⠙⣷⡀⠀⠀⢀⣼⠇⠀⠀⠀⠻⣷⣦⣄⡀⠀⠀⠀⢀⣠⣴⣾⠟
-   ⠀⠀⠀⠀⠀⠀⠀    ⠀⠈⠻⠿⠿⠟⠁⠀⠀⠀⠈⠻⠿⠿⠟⠁⠀⠀⠈⠻⠿⠿⠟⠁⠀⠀⠈⠻⠿⠿⠟⠁⠀⠀⠀⠈⠻⠿⠿⠟⠁⠀⠀⠀⠀⠀⠈⠙⠻⠿⠿⠿⠿⠟⠋⠁
-   &nbsp;
-   Jump into building with Kiro:
-   &nbsp;
-   1. Ask a question or describe a task
-   2. Use /context add <file> to provide Kiro with additional info
-   3. Connect to external tools with by using /mcp
-   &nbsp;
-   Use /help for more information and happy coding!
-   &nbsp;
-   Model: claude-sonnet-4 (/model to change)
-   </pre>
-
-1. https://support.aws.amazon.com/#/contacts/kiro says
-   "For technical support, please submit an issue on Github
-
-   <a target="_blank" href="https://github.com/kirodotdev/Kiro/issues">https://github.com/kirodotdev/Kiro/issues</a>
-
-1. PROTIP: Open another Terminal tab for doing other work, so you can quickly ask questions.
-
-   REMEMBER: To the right of the ">", type a chatbot question.
-
-1. REMEMBER: <strong>Built-in commands</strong> such as this verify whether the Xcode MCP server is connected:
-   ```
-   /tools
-   ```
-1. ???
-   ```
-   What is the time in NYC
-   ```
-   PROTIP: A question mark is not needed.
-
-1. To exit kiro-cli, press <strong>control+c</strong> twice.
-
-1. Consider <a target="_blank" href="https://kiro.dev/docs/cli/chat/manage-prompts/">prompt templates</a> uses "steering files" to guide AI behavior with project-specific instructions. Steering files are markdown documents in .kiro/steering/ that provide context, workflows, and constraints. When you work in Kiro, these files automatically shape how the AI assistant responds - no manual prompting required.
-
-   <a target="_blank" href="https://github.com/jasonkneen/kiro/blob/main/spec-process-guide/prompting/templates.md">https://github.com/jasonkneen/kiro/blob/main/spec-process-guide/prompting/templates.md</a>
-
-   <a target="_blank" href="https://github.com/aws-samples/sample-kiro-cli-prompts-for-product-teams">https://github.com/aws-samples/sample-kiro-cli-prompts-for-product-teams</a>
-
-   Kiro outputs standalone HTML files that open directly in any browser - no build step or server required. That enables you to share them with stakeholders by simply sending the files.
 
 
 <a name="AgentHooks"></a>
