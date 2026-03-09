@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-07"
-lastchange: "26-03-07 v017 fix flowchart :aws-kiro.md"
+date: "2026-03-08"
+lastchange: "26-03-08 v021 frameworks table :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -83,11 +83,16 @@ KEY POINT: Kiro <a href="#Competition">(and other "spec-driven" offerings)</a> e
 1. The "Traditional approach" to creating programming <strong>code</strong> housed in <strong>repositories</strong> is for programmers to <strong>edit code directly</strong> based on <strong>ideas</strong> in their heads.
 1. Coding work includes <strong>scripts</strong> that define how each application works.
 1. Coding work also includes <strong>.terraform</strong> directives (or other ways) to define infrastructure that run applications in a datacenter.
-1. Earlier versions of Generative AI that appeared in 2023 enabled developers to write <strong>prompts</strong> for the AI to write code. But engineers often had to edit the generated code to incorporate best practices.
+1. Earlier versions of Generative AI that appeared in 2023 enabled developers to write <strong>prompts</strong> for the AI to write code. But engineers often had to edit the generated code to incorporate <a href="#BestPractices">software development best practices frameworks</a>.
 1. <strong>AI Vibe coding</strong> capabilities that appeared in 2025 (such as Kiro) enabled prompts to <strong>define design</strong> specs.
-1. Each Kiro repo contains a folder full of <strong>hooks</strong> that AI draws from established <strong>best practices</strong> logic used to generate <strong>specifications</strong> for <strong>steering</strong>.
-1. IMPORTANT: The revolution enabled by recent AI is that the specifications are edited (changed) <strong>indirectly</strong> during iterations.
-1. REMEMBER: Specs are now <strong>changed using prompts</strong>, not directly edited.
+1. Each Kiro repo contains a folder full of <a href="#Hooks">hooks</a> that AI draws from established <strong>best practices</strong> logic used to generate <strong>specifications</strong> for <strong>steering</strong>.
+
+1. IMPORTANT: The revolution enabled by recent AI is that programming code are edited changed <strong>indirectly</strong> by the AI. Prompts now used to change specs which change programming code.
+
+   Kiro <strong>steering rules</strong> consist of coding standards, review rules, architectural preferences which guide AI behavior across projects, shaping how the agent works globally.
+
+   Other spec-driven AI such as Anthropic Claude have different names for the markdown files they create.
+
 1. To create programming and infrastruction code, prompts make requests to <strong>run <a href="#Tasks">tasks</a></strong> defined.
 1. The AI automatically references <strong>sample code</strong> in the background.
 1. IMPORTANT: Because <strong>all assets</strong> can now be re-created with <strong>testing included</strong>, the impact of seemingly small changes can <strong>iterate</strong> quickly and surely.
@@ -129,14 +134,6 @@ TOOL: To convert a repo injestible by AI, change "github.com" to "gitinjest.com"
 Kiro generates code by processing a <strong>tasks.md</strong> file such as this from AWS Transform:
 
 <a target="_blank" href=""><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772561987/aws-kiro-trans-tasks-602x535_ybqfbz.png" /></a>
-
-
-## Agentic 
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png">
-<img alt="aws-kiro-ai-flow-1247x503.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png" /></a>
-
-Kiro builds "Agentic AI" using MCP and A2A protocols.
 
 Kiro builds code from spec (design) <a href="#Requirements">requirements</a>, which Kiro can generate by analyzing a codebase. 
 
@@ -198,14 +195,12 @@ Management and Control:
 * Unified Billing - Simplified Enterprise-Level Billing and Cost Management
 <br /><br />
 
-Frame problems effectively for AI analysis: Validate AI suggestions against real-world constraints  Maintain clear boundaries between AI capabilities and human responsibilities.  Accelerate learning through systematic AI-guided exploration  Focus on high-value human skills while AI handles routine complexity
+PROTIP: Frame problems effectively for AI analysis: 
+   * Validate AI suggestions against real-world constraints.
+   * Maintain clear boundaries between AI capabilities and human responsibilities.
+   * Accelerate learning through systematic AI-guided exploration.
+   * Focus on high-value human skills while AI handles routine complexity
 -- <a target="_blank" href="https://medium.com/@kombib">NotbookLM expert</a> Mihailo Zoin. Amazon Kiro: First Contact - When AI Becomes a Colleague (OUT OF THE BOX PROGRAMMING Book 1) (p. 3). (Function). Kindle Edition. 
-
-Processing of <strong>Amazon Q</strong> AI chatbot prompts was <a target="_blank" href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/upgrade-to-kiro.html">moved into Kiro</a>.
-
-   * <a target="_blank" href="https://www.linkedin.com/in/saurabhdahal/">Saurabh Dahal</a> is Sr Dev Advocate <a target="_blank" href="https://www.youtube.com/watch?v=HI_qexVlU2Y">VIDEO</a>
-   * https://aws.amazon.com/blogs/machine-learning/build-aws-architecture-diagrams-using-amazon-q-cli-and-mcp/
-   <br /><br />
 
    "Your browser version is unsupported."
 
@@ -217,11 +212,17 @@ Referencs:
 
 ### Install Kiro-CLI
 
+Processing of <strong>Amazon Q</strong> AI chatbot prompts was <a target="_blank" href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/upgrade-to-kiro.html">moved into Kiro</a>.
+
+   * <a target="_blank" href="https://www.linkedin.com/in/saurabhdahal/">Saurabh Dahal</a> is Sr Dev Advocate <a target="_blank" href="https://www.youtube.com/watch?v=HI_qexVlU2Y">VIDEO</a>
+   * https://aws.amazon.com/blogs/machine-learning/build-aws-architecture-diagrams-using-amazon-q-cli-and-mcp/
+   <br /><br />
+
 1. Open your default Terminal app, not another AI CLI app (such as OpenAI or Warp.dev), which cause this error reported by doctor:
 
    <tt>✘ Kiro CLI terminal integrations: WarpTerminal is not supported</tt>
 
-1. To set up Kiro CLI and Docker on a fresh Ubuntu system:
+1. To set up Kiro CLI and Docker on an Ubuntu system:
    ```
    sudo apt update && sudo apt upgrade -y
 
@@ -266,34 +267,51 @@ Referencs:
    kiro-cli --version
    ```
    <pre>
-   kiro-cli 1.24.0
+   kiro-cli 1.27.1
    </pre>
 
-1. View the history of Kiro CLI releases:
-   ```
-   ???
-   ```
+1. Since Kiro does not display releases on its GitHub, view the history of releases at:
+
+   <a target="_blank" href="https://kiro.dev/changelog/">https://kiro.dev/changelog/</a>
+
+1. To update Kiro-CLI, run <tt>brew install kiro-cli</tt> again.
+
 1. Summarize the content of the current Kiro CLI release:
    ```
    kiro-cli version --changelog
    ```
+   
+   ### Kiro-cli login
 
-1. Login to Kiro using a login method: AWS Builder ID or IDC account:
+1. Login to Kiro using a login method: AWS Builder ID or IDC (IAM Identity Center) account:
    ```
    kiro-cli login
    ```
+1. To logout:
+   ```
+   kiro-cli logout
+   ```
+   
+   ### Kiro-cli chat & context
 
-1. Start using Kiro Chat: view parameters using help
+1. Start using Kiro Chat: view parameters using help:
    ```
    kiro-cli chat --help
    ```
+
+1. View the current context usage:
+   ```
+   /usage --context
+   ```
+1. Kiro CLI automatically compresses the context if the session goes out of context.
+1. To clear the context manually:
+   ```
+   /clear 
+   ```
+
 1. If you forget to save your session, resume the last session Kiro automatically put in the current folder:
    ```
    kiro-cli chat --resume`restore` 
-   ```
-1. To clear the context:
-   ```
-   /clear 
    ```
 1. To save the session into file "xxx.json":
    ```
@@ -303,17 +321,13 @@ Referencs:
    ```
    /load xxx.json
    ```
-1. View the current context usage:
-   ```
-   /usage --context
-   ```
-1. Compress the context (Kiro CLI will also compress it automatically if the session goes out of context), and `--context` 
-
 1. Exit the chat using any one of the following methods:
    * Press Ctrl+C twice in a row
    * Press Ctrl+D twice in quick succession
    * Enter /quit
    * Enter /exit
+
+   ### Kiro CLI models
 
 1. Kiro CLI commands ???
    ```
@@ -325,6 +339,7 @@ Referencs:
    
    Credits are metered to the second decimal point, so the least number of credits a task can consume is 0.01 credits.
 
+   PROTIP: Changes within models can result in different output generated. That's why outputs should be stored in GitHub, which provides a way to "time travel" back to the state of all files at the point of each git commit and make comparisons.
 
 
    <a name="InstallIDE"></a>
@@ -428,12 +443,27 @@ Referencs:
    https://aws.amazon.com/blogs/industries/from-spec-to-production-a-three-week-drug-discovery-agent-using-kiro/
 
 
+
+## Agentic 
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png">
+<img alt="aws-kiro-ai-flow-1247x503.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772171399/aws-kiro-ai-flow-1247x503_b7dzll.png" /></a>
+
+Kiro builds "Agentic AI" using MCP and A2A protocols.
+
+
 ### Apple XCode IDE
 
-Additionally, Apple's XCode IDE 26.3 with MCP support is <a target="_blank" href="https://builder.aws.com/content/39bTP5YwFqftZPxsm1oGY9gxmCJ/building-ios-apps-with-kiro-cli-and-xcodes-agentic-coding-tools" title="Published Feb 13, 2026">>also used to create iOS apps</a> with Kiro CLI and <a target="_blank" href="https://developer.apple.com/documentation/xcode/giving-agentic-coding-tools-access-to-xcode">Xcode Agentic Coding Tools</a>.
+Additionally, Apple's XCode IDE can be used to <a target="_blank" href="https://builder.aws.com/content/39bTP5YwFqftZPxsm1oGY9gxmCJ/building-ios-apps-with-kiro-cli-and-xcodes-agentic-coding-tools" title="Published Feb 13, 2026">create iOS apps</a> using Kiro CLI and <a target="_blank" href="https://developer.apple.com/documentation/xcode/giving-agentic-coding-tools-access-to-xcode">Xcode Agentic Coding Tools</a>.
 by https://www.linkedin.com/in/cmanikandan/">Mani Chandrasekaran</a>
 See <a target="_blank" href="https://developer.apple.com/documentation/Xcode/setting-up-coding-intelligence">Apple’s Coding Intelligence setup guide</a>
 
+1. Install the latest XCode (26.3+ has MCP support) and open Xcode.app.
+1. From the upper-left select Xcode, then Settings. 
+1. Select <strong>Intelligence</strong> in the sidebar. If you don't see that, you don't have the correct version.
+   <img alt="aws-kiro-xcode-config.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772912819/aws-kiro-xcode-config_vmwjx5.png" />
+
+1. Switch "Xcode Tools" on (under "Model Context Protocol") to enable MCP connections from external tools.
 
 
 <a name="Requirements"></a>
@@ -454,6 +484,17 @@ See <a target="_blank" href="https://developer.apple.com/documentation/Xcode/set
 
    "Kiro feels like working with a disciplined senior engineer who insists on doing things the right way." <a target="_blank" href="https://medium.com/@sizarta/kiro-the-ai-ide-that-actually-gets-how-software-should-be-built-5b026f4dd926">"Kiro: The AI IDE That Actually Gets How Software Should Be Built"</a>. 
    
+   * Comparison of Kiro vs. established frameworks are at <a target="_blank" href="https://github.com/pliekhus77/pr-suit-for-kiro/wiki">https://github.com/pliekhus77/pr-suit-for-kiro/wiki</a> by Patrick Liekhus   
+
+
+   | Concept | Kiro | Claude Skills |
+   | ======= | ==== | ============= |
+   | Packaged instructions/behavior | Rules / steering | Skill instructions config |
+   | Scripts / automations | MCP tools, hooks, external CLIs | Skill scripts |
+   | Domain docs / resources | Project docs + MCP data tools | Files inside Skill folder |
+   | Dynamic loading per task | Agentic chat + MCP, spec context | Auto-loaded Skills |
+   | Cross-tool reuse | MCP servers shared with Kiro/Q | Skills across Claude/Code |
+
 
    <a name="EARS"></a>
 
@@ -531,13 +572,13 @@ So state-driven requirements are active as long as the specified state remains t
 
 References about this sub-topic of EARS:
    * See the <a target="_blank" href="https://www.youtube.com/watch?v=HY_JyxAZsiE" title="Agentic Coding at FAANG Scale and Quality 25-11-22">demo video</a> by <a target="_blank" href="https://www.linkedin.com/in/al-harris-7a755640/">Al Harris</a>, Kiro Lead Developer at AWS Seattle. Shows use of Asana calling MCP server https://github.com/alharris-at/nobel-mcp
+   * <a target="_blank" href="https://www.youtube.com/watch?v=RhaF4LVAVng">VIDEO: How I Code With AI Agents (Spec-Driven Development) by <a target="_blank" href="https://www.linkedin.com/in/lewisowain/">Owain Lewis</a>
 
    * https://www.youtube.com/watch?v=pa8C449yhCg&pp=ugUEEgJlbg%3D%3D">EARS - The Basics</a>
    * https://github.com/SagnikGos/hack-ai-bharat-spec-design/tree/main by https://www.linkedin.com/in/sagnikgos06/
    * https://dev.to/sebastian_dingler/ears-the-easy-approach-to-requirements-syntax-39a5
    * https://reqassist.com/blog/ears-requirements-syntax
-   * https://www.youtube.com/watch?v=RhaF4LVAVng How I Code With AI Agents (Spec-Driven Development) by Owain Lewis
-   * <a target="_blank" href="https://www.youtube.com/watch?v=4TBKvkG-WwA&pp=0gcJCa4KAYcqIYzv">How granfular should your specs be?</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=4TBKvkG-WwA&pp=0gcJCa4KAYcqIYzv">How granular should your specs be?</a>
    <br /><br />
 
 
@@ -569,7 +610,7 @@ Kiro is used as a component of <a target="_blank" href="https://aws.amazon.com/t
    * Db2 
    * VSAM (Virtual Storage Access Method) data files to Aurora PostgreSQL (via SQL)
    * IBM MQ (Message Queue) to Amazon MQ messaging
-   * IMS TM (Transaction Manager)
+   * IMS (Information Management System) TM (Transaction Manager)
    <br /><br />
 
 The "tech.md" file defines the project's chosen frameworks, libraries, development tools, and technical constraints
@@ -578,21 +619,19 @@ which Kiro generates. Sample:
 ```
 Technology Stack & Implementation Standards
 
-Technology Stack
-
-Backend (LTS Only)
+Backend (LTS versions):
 - Java: Eclipse Temurin LTS (Java 17)
 - Spring Boot: Latest LTS 3.x
 - Database: H2 (testing), Aurora PostgreSQL (production)
 - Build: Maven wrapper (./mvnw) only
 
-Frontend
+Frontend:
 - Framework: React + TypeScript
 - State Management: Redux Toolkit
 - API Client: Axios with error handling
 - Styling: AWS Cloudscape Design System
 
-AWS Infrastructure
+AWS Infrastructure:
 - Database: Amazon RDS Aurora PostgreSQL
 - Compute: ECS Fargate
 - Load Balancing: ALB
@@ -602,7 +641,7 @@ AWS Infrastructure
 - IaC: AWS CDK (v2)
 ```
 
-NOTE: Character-level encoding on mainframes are in EBCDIC in various code pages vs. UTF-8 on Linux, macs, Windows.
+NOTE: Character-level encoding on mainframes are in various code pages of EBCDIC vs. UTF-8 on Linux, macOS, Windows.
 
 Transform aims to reduce project timelines when "Reimagining" apps. Tasks are invoked by Administrators writing natural language prompts (objectives, jobs, tasks) to perform: codebase analysis to extracts business logic and tech doc generation, Decompose the monolithic application into functional domains. It refactors, decomposes, define dependency mapping, validation to improve the quality of refactored code.
 
@@ -704,24 +743,30 @@ Objectives are written in natural language.
    
 <a name="Steering"></a>
 
-## Steering specs
+## Project-specific Steering specs
 
    * https://www.youtube.com/watch?v=Ap0tXXvyn3k by Allie Fortman, GTM
    <br /><br />
 
    REMEMBER: Agentic AI is goal-driven. Programming code is procedure-driven.
 
-1. Add into the "steering" folder .md (markdown) files <strong>foundational steering files</strong> from the Steering section in the Kiro panel. Click the Generate Steering Docs button, or click the + button and select the Foundation steering files option
+1. In the "steering" folder .md (markdown) files <strong>foundational steering files</strong> from the Steering section in the Kiro panel. Click the Generate Steering Docs button, or click the + button and select the Foundation steering files option
 
    * product.md (Product Overview) - Defines the product's purpose, target users, key features, and business objectives. This helps Kiro understand the "why" behind technical decisions and suggest solutions aligned with your product goals.
 
+   * structure.md (Project Structure) - Outlines file organization, naming conventions, import patterns, and architectural decisions. This ensures generated code fits seamlessly into your existing codebase.
+
    * tech.md (Technology Stack) - Documents your chosen frameworks, libraries, development tools, and technical constraints. When Kiro suggests implementations, it will prefer your established stack over alternatives.
 
-   * structure.md (Project Structure) - Outlines file organization, naming conventions, import patterns, and architectural decisions. This ensures generated code fits seamlessly into your existing codebase.
+   Additionally:
 
    * AGENTS.md provides steering directives. This does not support inclusion modes and are always included.
 
 1. Add into the "steering" folder .md (markdown) files that define your team's own <strong>standards and conventions</strong> (context) for building apps. So <a target="_blank" href="https://builder.aws.com/content/35ciE341oLnIjDbpGsVRvIGfMCf/mastering-kiro-steering-a-complete-guide-to-context-aware-ai-development">master it</a>.
+
+   * Strategies (Installed): Framework-based strategies from the library
+
+   * Custom: Team-specific custom steering documents
 
    "KIRO automatically shows which steering documents are being included in your conversation, giving you full visibility into the context being applied.*"
 
@@ -793,6 +838,26 @@ Objectives are written in natural language.
    This is how consistency is automatically enforced.
 
    These files can be generated or refactored by AI.
+
+   <a name="BestPractices">
+   
+   ## software development best practices frameworks
+
+1. Import <a target="_blank" href="https://github.com/wilsonmar/kiro-suit">legacy frameworks for installation as VS Code extensions</a> to steer Kiro's behavior, from Patrick Liekhus:
+
+   | Framework | Category | Description |
+   |-----------|----------|-------------|
+   | **TDD/BDD Testing Strategy** | Testing | Test-driven and behavior-driven development practices with testing-plan.md requirements |
+   | **SABSA Security Strategy** | Security | Security architecture, threat modeling (STRIDE), and compliance (GDPR, HIPAA, SOC2) |
+   | **C4 Model Architecture** | Architecture | When and how to use C4 diagrams in specs (System Context, Container, Component, Dynamic) |
+   | **AWS Hosting Strategy** | Cloud | AWS service selection, Well-Architected Framework (6 pillars), and hosting patterns |
+   | **Azure Hosting Strategy** | Cloud | Azure service selection, Well-Architected principles, and hosting patterns |
+   | **DevOps CI/CD Strategy** | DevOps | Continuous integration/deployment, DORA metrics, and deployment strategies |
+   | **Infrastructure as Code (Pulumi)** | Infrastructure | IaC patterns and best practices with Pulumi (real programming languages) |
+   | **Domain-Driven Design (DDD)** | Architecture | Strategic and tactical DDD patterns for complex business domains |
+   | **.NET Best Practices** | Development | .NET 8.0 development standards for performance, security, and maintainability |
+   | **4D SDLC + SAFe Work Management** | Work Management | Define-Design-Develop-Deploy phases with SAFe practices and WSJF prioritization |
+   | **Enterprise Architecture (TOGAF/Zachman)** | Architecture | Strategic planning questions for product and feature design |
 
 1. In the YAML front matter (between "---") at the top of each steering file, configure <strong>inclusion</strong> directives for loading, to optimize performance and ensures relevant context is available when needed. 
    ```yaml
@@ -1004,6 +1069,74 @@ Objectives are written in natural language.
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/update-documentation.kiro.hook">update-documentation.kiro.hook</a> - Updates docs when code changes
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/translation-update.kiro.hook">translation-update.kiro.hook</a> - Syncs translation files
    <br /><br />
+
+## Kiro vs. Anthropic Skills
+
+Kiro doesn’t (yet) expose a first‑class “Skills” object, but it offers pieces that cover the same needs.
+
+   Anthropic created Agent Skills at <a target="_blank" href="https://agentskills.io/home/">https://agentskills.io</a>
+   (https://agentskills.io/home) 
+   to define their an open format for adoption across <strong>agent products</strong>
+   to provide a simple, open format for giving agents new capabilities and expertise.
+   are folders of instructions, scripts, and resources that agents can discover and use to perform better at specific tasks. Write once, use everywhere.
+
+a) Rules / steering for persistent behavior
+
+   Kiro has steering rules to guide AI behavior across projects, shaping how the agent works globally (coding standards, review rules, architectural preferences).
+
+   This maps to the instruction part of a Claude Skill: reusable behavior that’s always in effect, or scoped to a workspace/project.
+
+   Use this for: “Always write tests this way, follow these patterns, use our logging wrapper,” etc.
+
+b) MCP tools as the “scripts/resources” layer
+Kiro supports Model Context Protocol (MCP) to connect specialized tools and external systems into the IDE.
+
+MCP servers can expose commands, data sources, and workflows that the agent calls as tools—very similar to having scripts/resources inside a Claude Skill.
+
+Use this for: “Here are our deployment scripts, DB admin tools, internal APIs—call them via MCP when coding or refactoring.”
+
+c) Agent Skills via MCP (cross‑platform bridge)
+   
+   There’s AWS guidance on using Anthropic’s Agent Skills with Amazon Q Developer and Kiro through an MCP server, essentially making Claude Skills consumable from Kiro.
+
+   In practice, you can host an MCP server that fronts your Claude Skills / Agent Skills, then plug that server into Kiro as a tool provider.
+
+
+   <table>
+      <tr>
+        <th>Concept</th>
+        <th class="claude">Claude Skills <small style="opacity:0.7">(the verge)</small></th>
+        <th class="kiro">Kiro <small style="opacity:0.7">(kiro+2)</small></th>
+      </tr>
+      <tr>
+        <td>Packaged instructions/behavior</td>
+        <td>Skill instructions</td>
+        <td>Rules / steering config</td>
+      </tr>
+      <tr>
+        <td>Scripts / automations</td>
+        <td>Skill scripts</td>
+        <td>MCP tools, hooks, external CLIs</td>
+      </tr>
+      <tr>
+        <td>Domain docs / resources</td>
+        <td>Files inside Skill folder</td>
+        <td>Project docs + MCP data tools</td>
+      </tr>
+      <tr>
+        <td>Dynamic loading per task</td>
+        <td>Auto‑loaded Skills</td>
+        <td>Agentic chat + MCP, spec context</td>
+      </tr>
+      <tr>
+        <td>Cross‑tool reuse</td>
+        <td>Skills across Claude/Code</td>
+        <td>MCP servers shared with Kiro/Q</td>
+      </tr>
+    </table>
+
+
+
 
 ## Strands MCP Agents
 
