@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-08"
-lastchange: "26-03-08 v021 frameworks table :aws-kiro.md"
+date: "2026-03-09"
+lastchange: "26-03-09 v023 powers file :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -377,7 +377,7 @@ Processing of <strong>Amazon Q</strong> AI chatbot prompts was <a target="_blank
 
 1. Log in: ???
 
-1. <a target="_blank" href="https://www.youtube.com/watch?v=7bYAB98THI0">VIDEO</a>: Download within the Kiro IDE skills folder, Claude Superpowers, referenced as Kiro powers.
+1. <a target="_blank" href="https://www.youtube.com/watch?v=7bYAB98THI0">VIDEO</a>: Download within the Kiro IDE skills folder, Claude Superpowers, referenced as <a href="#Powers">Kiro powers</a>.
 
    <a target="_blank" href="https://github.com/obra/superpowers">https://github.com/obra/superpowers</a>
    
@@ -715,11 +715,12 @@ Objectives are written in natural language.
 
 ## Powers knowledge on demand
 
-   Unlike traditional context injection that loads everything upfront,
-   <a target="_blank" href="https://www.youtube.com/watch?v=14se2WpEaCo&pp=0gcJCYcKAYcqIYzv">VIDEO: Kiro Powers</a>
-   inject specialized context and tools into Kiro agents on-demand, providing focused knowledge exactly when needed. 
+   Unlike traditional AI context injection that loads everything upfront,<br />
+   DEFINITION: <a target="_blank" href="https://www.youtube.com/watch?v=14se2WpEaCo&pp=0gcJCYcKAYcqIYzv">VIDEO: Kiro Powers</a>
+   inject specialized context knowledge and tools into Kiro agents <strong>on-demand</strong> when needed. 
    Powers activate specific capabilities dynamically.
    
+Resources about Kiro Powers:
    * https://github.com/kiro-community/powers
    * https://github.com/kiro-community/kiro-knowledge-power
    * https://github.com/kiro-community/kiro-powers-power The Kiro Power to build Kiro Powers
@@ -730,9 +731,85 @@ Objectives are written in natural language.
    * https://dev.to/aws/how-i-used-kiro-to-optimize-its-own-mcp-configuration-4mdg
    <br /><br />
 
-   To build Kiro Powers, add <a target="_blank" href="https://github.com/kirodotdev/powers/tree/main/power-builder">Power Builder</a> or from the Vercel agent-skills repository.
+Build Kiro Powers by first adding <a target="_blank" href="https://github.com/kirodotdev/powers/tree/main/power-builder">Power Builder</a> from the Vercel agent-skills repository. 
 
-   
+Unlike Claude skill knowledge packages, Kiro (standalone IDE) can more comprehensively combine documentation, workflows + best practices, and executable capabilities in one package bundle for MCP servers and tools.
+
+1. Create a folder for the power:
+   ```
+   mkdir -p powers/{power-name}
+   cd powers/{power-name}
+   ```
+   To <a target="_blank" href="https://builder.aws.com/content/39DLiJ3W2dTp53IqbWNxsJYgcHB/a-guide-for-migrating-claude-code-skills-to-kiro-powers">convert from a Claude skill</a>:
+
+1. Create a "POWER.md" file within the new power folder:
+   ```
+   edit POWER.md
+   ```
+1. Within the editor, add <strong>Metadata location</strong> such as from ".claude-plugin/marketplace.json":
+
+1. Write (or paste into the file text extracted from the Claude <strong>SKILL.md</strong>, if there is one)<br />a <strong>sample heading frontmatter</strong> in this format:
+   ```
+   ---
+   name: "power-name"
+   displayName: "Human Readable Name"
+   description: "Clear description (max 3 sentences)"
+   keywords: ["keyword1", "keyword2", "keyword3"]
+   author: "Your Name"
+   ---
+   ```
+   Frontmatter rules:
+   * name: lowercase kebab-case with dashes.
+   * displayName: Title Case for display
+   * description: What the power does and why it's useful
+   * keywords: 5-7 specific terms for discovery (avoid generic words like "help", "tool")
+   * author: Creator name
+   <br /><br />
+
+1. Write (or paste into the file (text extracted from the Claude <strong>README.md</strong>, if there is one)<br /><strong>Attribution</strong> metadata such as:
+   ```
+   ## License & Attribution
+   **License:** [Original License]
+   **Power Author:** [Your Name]
+   **Original Work:** This power is inspired by [original-skill](https://github.com/...) by [Original Author].
+   **Source Version:** Based on [version/commit reference].
+   **Update Frequency:** This power will be updated periodically.
+   ```
+
+1. Write (or paste into the Kiro POWER.md file<br /><strong>a list of available steering files</strong> in this format:
+   ```
+   ## Available Steering Files
+
+   - **file-name** - Description of what this file covers
+   - **another-file** - Description of content
+   ```
+   Get file names from the steps below.
+
+1. Copy all files in Claude's reference folder into the Power's steering folder <strong>deep-dive content that Kiro loads on-demand</strong>:
+   ```
+   cp references/*.md steering/
+   ```
+   Example of files in the folder are:
+   * testing-frameworks.md
+   * module-patterns.md
+   * development-guide.md
+   * maintenance-notes.md
+   * contributing-guidelines.md
+   * etc.
+   <br /><br />
+
+1. Create file "contributing-guidelines.md" in the "steering" folder:
+   ```
+   edit contributing-guidelines.md
+   ```
+1. Paste into the file (extract from the Claude <strong>CLAUDE.md</strong>, if there is one):
+   * Content philosophy (what belongs, what doesn't)
+   * Writing style guidelines
+   * Quality standards checklists
+   * Update criteria
+   <br /><br />
+
+
 <a name="Steering"></a>
 
 ## Project-specific Steering specs
@@ -1044,7 +1121,7 @@ Objectives are written in natural language.
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/env-file-validation.kiro.hook">env-file-validation.kiro.hook</a> - Checks .env files for security issues
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/api-schema-validation.kiro.hook">api-schema-validation.kiro.hook</a> - Validates OpenAPI/GraphQL schemas and generates types   
 
-   ### 🔘 Manual Hooks (Button Triggers) run on-demand from the Kiro Agent Hooks panel:
+### 🔘 Manual Hooks (Button Triggers) run on-demand from the Kiro Agent Hooks panel:
 
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/commit-message-helper.kiro.hook">commit-message-helper.kiro.hook</a> - Creates conventional commit messages
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/readme-spell-check.kiro.hook">readme-spell-check.kiro.hook</a> - Fixes spelling and grammar in documentation
@@ -1053,7 +1130,7 @@ Objectives are written in natural language.
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/code-coverage-check.kiro.hook">code-coverage-check.kiro.hook</a> - Analyzes test coverage gaps
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/performance-analysis.kiro.hook">performance-analysis.kiro.hook</a> - Identifies optimization opportunities
 
-   ### 🎛️ Optional Hooks are disabled by default
+### 🎛️ Optional Hooks are disabled by default
 
    Because these hooks are performance-sensitive, enable as needed:
 
@@ -1061,6 +1138,60 @@ Objectives are written in natural language.
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/update-documentation.kiro.hook">update-documentation.kiro.hook</a> - Updates docs when code changes
    * <a target="_blank" href="https://github.com/awsdataarchitect/kiro-best-practices/blob/main/.kiro/hooks/translation-update.kiro.hook">translation-update.kiro.hook</a> - Syncs translation files
    <br /><br />
+
+
+
+<a name="Competition"></a>
+
+### Competition
+
+<a target="_blank" href="https://www.youtube.com/watch?v=73h5Lb_N9r8" title="Kiro explained in 5 minutes
+Caleb Writes Code">VIDEO</a>:
+Here is where Amazon Kiro fits with other AI spec-driven tools:
+
+Kiro competes with these other <a href="#SpecDriven">spec-driven</a> tools:
+* AgentOS
+* Anthropic Claude Code - Claude's hallmark is its large context window and strong reasoning — it's the tool you'd use to generate code from a high-level spec, possibly producing multiple files at once or analyzing a whole codebase. You can feed it your entire EARS .md file directly and instruct it to generate code from each requirement. It understands the WHEN/WHILE/IF/SHALL patterns naturally.
+* <a target="_blank" href="https://www.linkedin.com/posts/davetbo_kiro-agentcore-mcptool-activity-7377475581392687105-5ywk/">Cline</a>
+* Cursor
+* Microsoft GitHub Spec Kit at https://github.com/github/spec-kit generates tons of files <a target="_blank" href="https://www.youtube.com/watch?v=cQv3ocbsKHY">VIDEO</a>
+* Google Antigravity
+* OpenAI Opus
+* Roo Code
+* Trae IDE
+* WarpAI
+* Windsurf https://www.educative.io/courses/advanced-windsurf-ai-for-professionals
+* OpenSpec.dev "lightweight"
+* BMAD (Breakthrough Method for Agile AI Development) at <a target="_blank" href="https://github.com/bmadcode/BMAD-METHOD">https://github.com/bmadcode/BMAD-METHOD</a> created by <a target="_blank" href="https://www.youtube.com/watch?v=LorEJPrALcg">Brian and his YouTube channel</a>.
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=fD8NLPU0WYU">VIDEO</a>: define PRD (Product Requirement Document), build in small chucks, and ship them incrementally. Its "*branstorm" command asks clarifying questions. <a target="_blank" href="https://www.youtube.com/watch?v=sBVVGQnCHqI">VIDEO</a> 
+<br /><br />
+
+IMPORTANT: They all make use of some variation of the <a href="#EARS">EARS requirements specification format (see below)</a>.
+
+Evaluations:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ZgXG5hE8Na8&t=3m52s">Cursor vs Antigravity vs Kiro vs Windsurf: The Real Results (2026)</a> says Kiro "couldn't parse requirements".
+   * <a target="_blank" href="https://www.youtube.com/watch?v=sGYvGUkerA0&pp=ugUEEgJlbg%3D%3D">BMAD vs. Spec Kit vs. Open Spec: Which AI Coding Methodology is Best?</a> by The Grey Cat
+   <br /><br />
+
+https://www.youtube.com/watch?v=cQv3ocbsKHY
+
+https://www.youtube.com/watch?v=RhaF4LVAVng&t=323s 
+How I Code With AI Agents (Spec-Driven Development) by Owain Lewis using Claude
+
+https://www.youtube.com/watch?v=pey9u_ANXZM How I Tamed Claude - Emmz Rendle - NDC London 2026
+
+In November 2025, an internal memo from two of Amazon’s most powerful executives -- Peter DeSantis, VP of AWS utility computing, and Dave Treadwell, VP of eCommerce Foundation -- directed that "80% of you will use AI for coding at least once a week." But Kiro is Amazon’s AI-native development tool. PROTIP: Adoption, measured by access and frequency, is no longer a meaningful signal of progress. So use KPIs about use cases worth using. Expose use cases with monthly use case spotlight in team meetings to expose AI wins and hold quarterly review where team leads share the highest-impact use cases from their function. See https://www.sectionai.com/ai/the-ai-proficiency-report
+
+   The executives say “We do not plan to support additional third-party AI development tools.” (OpenAI Codex). Anthropic's Claude Code briefly got the shade before the designation was reversed after <a target="_blank" href="https://timesofindia.indiatimes.com/technology/tech-news/amazon-wants-80-of-its-developers-to-use-ai-for-coding-at-least-once-a-week-but-theres-one-condition/articleshow/128448190.cms">1,500 Amazon employees endorsed the formal adoption of Claud</a>. <a target="_blank" href="https://www.youtube.com/watch?v=JF2iDNgaMd0">VIDEO</a>: Unlike AWS, Anthropic doesn't want US to use its AI to wage war.
+
+   * <a target="_blank" href="https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/?td=keepreading">Kiro has been implicated in production outages</a>
+   <br /><br />
+
+   The complication is that Amazon has invested $8 billion in Anthropic, the company behind Claude Code.
+   Yet Amazon signed a $38 billion cloud computing deal with OpenAI.
+
+
 
 ## Kiro vs. Anthropic Skills
 
@@ -1150,41 +1281,23 @@ c) Agent Skills via MCP (cross‑platform bridge)
 
 ## Strands MCP Agents
 
-   * strandsagents.com
-   <br /><br />
-
-https://www.youtube.com/watch?v=9ryQ4Nb32zk
-How to Build your first Agent with AWS Strands Agents (Part 1)
-by Arindam Majumder
-
-https://www.youtube.com/watch?v=cvmC29cu0Gg&pp=ugUEEgJlbg%3D%3D
-Build Stateful AI Agents with AWS Strands Sessions (Part-2)
-
-
-https://www.youtube.com/watch?v=j2wYT6jqXZY
-Beginner-Friendly Amazon Bedrock AgentCore & Strands Agents Tutorial
-
-https://www.youtube.com/watch?v=dn3G9jvB98k&pp=ugUEEgJlbg%3D%3D
-AWS Strands Agents SDK – Agents as Tools Explained - Multi AI Agent System at Scales #aiagents
-
-https://www.youtube.com/watch?v=vqdXVz5lxbk
-Building Multi-Agent Systems: Agents as Tools with Strands SDK
-
-https://www.youtube.com/watch?v=m0sRdeM9RZE&pp=0gcJCXwKAYcqIYzv
-Strands Agents (AWS): Build An Agent with Persistent Memory
-
-https://www.youtube.com/watch?v=Q-tYIAuv9WI
-Deploy Production-Ready Agents in 22 Minutes with AgentCore Runtime
-AWS Developers
-
-https://www.youtube.com/watch?v=dT89C2MuYj4&pp=ugUEEgJlbg%3D%3D
-AWS Strands vs Bedrock Agents Explained Simply with Demo
+   * <a target="_blank" href="https://strandsagents.com">strandsagents.com</a>
+   * https://www.youtube.com/watch?v=9ryQ4Nb32zk How to Build your first Agent with AWS Strands Agents (Part 1) by Arindam Majumder
+   * https://www.youtube.com/watch?v=cvmC29cu0Gg&pp=ugUEEgJlbg%3D%3D Build Stateful AI Agents with AWS Strands Sessions (Part-2)
+   * https://www.youtube.com/watch?v=j2wYT6jqXZY Beginner-Friendly Amazon Bedrock AgentCore & Strands Agents Tutorial
+   * https://www.youtube.com/watch?v=dn3G9jvB98k&pp=ugUEEgJlbg%3D%3D AWS Strands Agents SDK – Agents as Tools Explained - Multi AI Agent System at Scales #aiagents
+   * https://www.youtube.com/watch?v=vqdXVz5lxbk Building Multi-Agent Systems: Agents as Tools with Strands SDK
+   * https://www.youtube.com/watch?v=m0sRdeM9RZE&pp=0gcJCXwKAYcqIYzv Strands Agents (AWS): Build An Agent with Persistent Memory
+   * https://www.youtube.com/watch?v=Q-tYIAuv9WI Deploy Production-Ready Agents in 22 Minutes with AgentCore Runtime by AWS Developers
+   * https://www.youtube.com/watch?v=dT89C2MuYj4&pp=ugUEEgJlbg%3D%3D AWS Strands vs Bedrock Agents Explained Simply with Demo
 Cloud With Raj
 
 
 ## References
 
 BLOG: https://prpm.dev/blog
+
+* https://www.crn.com/news/cloud/2025/aws-kiro-5-key-features-to-amazon-s-new-ai-coding-tool AWS Kiro: Five Key Features In Amazon’s New AI Coding Tool
 
 https://www.youtube.com/watch?v=40vTCH0Iaac&pp=2AaCAg%3D%3D
 <a target="_blank" href="https://www.youtube.com/@RasmusWiding">videos</a> 
@@ -1211,57 +1324,8 @@ https://www.coursera.org/learn/aws-generative-ai-essentials/home/module/1
 AWS Generative AI Essentials course
 
 
-<a name="Competition"></a>
+## Issues encountered:
 
-### Competition
-
-<a target="_blank" href="https://www.youtube.com/watch?v=73h5Lb_N9r8" title="Kiro explained in 5 minutes
-Caleb Writes Code">VIDEO</a>:
-Here is where Amazon Kiro fits with other AI spec-driven tools:
-
-Kiro competes with these other <a href="#SpecDriven">spec-driven</a> tools:
-* AgentOS
-* Anthropic Claude Code - Claude's hallmark is its large context window and strong reasoning — it's the tool you'd use to generate code from a high-level spec, possibly producing multiple files at once or analyzing a whole codebase. You can feed it your entire EARS .md file directly and instruct it to generate code from each requirement. It understands the WHEN/WHILE/IF/SHALL patterns naturally.
-* <a target="_blank" href="https://www.linkedin.com/posts/davetbo_kiro-agentcore-mcptool-activity-7377475581392687105-5ywk/">Cline</a>
-* Cursor
-* Microsoft GitHub Spec Kit at https://github.com/github/spec-kit generates tons of files <a target="_blank" href="https://www.youtube.com/watch?v=cQv3ocbsKHY">VIDEO</a>
-* Google Antigravity
-* OpenAI Opus
-* Roo Code
-* Trae IDE
-* WarpAI
-* Windsurf https://www.educative.io/courses/advanced-windsurf-ai-for-professionals
-* OpenSpec.dev "lightweight"
-* BMAD (Breakthrough Method for Agile AI Development) at <a target="_blank" href="https://github.com/bmadcode/BMAD-METHOD">https://github.com/bmadcode/BMAD-METHOD</a> created by <a target="_blank" href="https://www.youtube.com/watch?v=LorEJPrALcg">Brian and his YouTube channel</a>.
-
-   <a target="_blank" href="https://www.youtube.com/watch?v=fD8NLPU0WYU">VIDEO</a>: define PRD (Product Requirement Document), build in small chucks, and ship them incrementally. Its "*branstorm" command asks clarifying questions. <a target="_blank" href="https://www.youtube.com/watch?v=sBVVGQnCHqI">VIDEO</a> 
-<br /><br />
-
-IMPORTANT: They all make use of some variation of the <a href="#EARS">EARS requirements specification format (see below)</a>.
-
-Evaluations:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=ZgXG5hE8Na8&t=3m52s">Cursor vs Antigravity vs Kiro vs Windsurf: The Real Results (2026)</a> says Kiro "couldn't parse requirements".
-   * <a target="_blank" href="https://www.youtube.com/watch?v=sGYvGUkerA0&pp=ugUEEgJlbg%3D%3D">BMAD vs. Spec Kit vs. Open Spec: Which AI Coding Methodology is Best?</a> by The Grey Cat
-   <br /><br />
-
-https://www.youtube.com/watch?v=cQv3ocbsKHY
-
-https://www.youtube.com/watch?v=RhaF4LVAVng&t=323s 
-How I Code With AI Agents (Spec-Driven Development) by Owain Lewis using Claude
-
-https://www.youtube.com/watch?v=pey9u_ANXZM How I Tamed Claude - Emmz Rendle - NDC London 2026
-
-In November 2025, an internal memo from two of Amazon’s most powerful executives -- Peter DeSantis, VP of AWS utility computing, and Dave Treadwell, VP of eCommerce Foundation -- directed that "80% of you will use AI for coding at least once a week." But Kiro is Amazon’s AI-native development tool. PROTIP: Adoption, measured by access and frequency, is no longer a meaningful signal of progress. So use KPIs about use cases worth using. Expose use cases with monthly use case spotlight in team meetings to expose AI wins and hold quarterly review where team leads share the highest-impact use cases from their function. See https://www.sectionai.com/ai/the-ai-proficiency-report
-
-   The executives say “We do not plan to support additional third-party AI development tools.” (OpenAI Codex). Anthropic's Claude Code briefly got the shade before the designation was reversed after <a target="_blank" href="https://timesofindia.indiatimes.com/technology/tech-news/amazon-wants-80-of-its-developers-to-use-ai-for-coding-at-least-once-a-week-but-theres-one-condition/articleshow/128448190.cms">1,500 Amazon employees endorsed the formal adoption of Claud</a>. <a target="_blank" href="https://www.youtube.com/watch?v=JF2iDNgaMd0">VIDEO</a>: Unlike AWS, Anthropic doesn't want US to use its AI to wage war.
-
-   * <a target="_blank" href="https://www.theregister.com/2026/02/20/amazon_denies_kiro_agentic_ai_behind_outage/?td=keepreading">Kiro has been implicated in production outages</a>
-   <br /><br />
-
-   The complication is that Amazon has invested $8 billion in Anthropic, the company behind Claude Code.
-   Yet Amazon signed a $38 billion cloud computing deal with OpenAI.
-
-Issues encountered:
    * "Kiro's context window is too small. isn't enough for me".
    <br /><br />
 
@@ -1273,6 +1337,7 @@ Issues encountered:
 QUESTION: Since Kiro uses a closed model, what are mechanisms for explainability of decisions made?
 
 QUESTION: How is bias and fairness evaluated (to maintain trust)?
+
 
 
 <hr />
