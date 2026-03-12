@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-11"
-lastchange: "26-03-11 v31 kiro-icon2 :aws-kiro2.md"
+lastchange: "26-03-11 v32 kiro IDE menu :aws-kiro2.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -39,7 +39,7 @@ Kiro was first released at AWS re:Invent 2025 on <a target="_blank" href="https:
    <br /><br />
 
 PROTIP: Set your calendar:
-   * Twitch.tv Bi-Weekly Show "Design to Code" by Nikhil Swaminathan
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ML6inYqj5J0">Twitch.tv Bi-Weekly Show "Design to Code"</a> by <a target="_blank" href="https://www.linkedin.com/in/nikhilswaminathan/">Nikhil Swaminathan</a>, Head of Product @AWS Kiro.
 
 Learning literature search:
    * https://www.youtube.com/results?search_query=%23kiro
@@ -116,9 +116,24 @@ What is new for Agentic system is integration autonomous agency to take action, 
 
    ## A. Install Kiro IDE
 
-1. <a href="#InstallIDE">Install</a> the <a target="_blank" href="https://kiro.dev/changelog/ide">Latest release</a> of <a href="#InstallIDE">Kiro <strong>IDE</strong> (Integrated Development Environment)</a> run by clicking a mouse as well as keyboard.
+   PROTIP: We don't use <strike>brew install --cask kiro</strike> Homebrew to install Kiro because Kiro has its own update mechanism.
 
-   PROTIP: We don't need to use Homebrew to install Kiro because it has its own update mechanism.
+1. Use an internet browser to visit:
+
+   <a target="_blank" href="https://kiro.dev/">kiro.dev</a>
+
+1. Click the purple "Download for macOS" (or Linux).
+1. Select "Apple Silicon" if you have the newer M-series machines. Select "Intel" for older models.
+
+   File such as "kiro-ide-0.11.28-stable-darwin-arm64.dmg" appears in the pop-up dialog.
+
+1. Select "Downloads" folder on the left menu if you are at a different folder.
+1. Click "Save" to begin download.
+1. Click the download icon and wait for the download to finish.
+1. Drag the purple Kiro and drop it in the Applications folder.
+1. Switch to the Finder app to verify that in the <tt>~/Applications</tt> folder <tt>Kiro.app</tt> is among the files.
+1. Click on "Kiro.app" to open it.
+1. <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773287604/aws-kiro-ide-menu_eaniq3.png"><img align="right" width="200" alt="aws-kiro-ide-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773287604/aws-kiro-ide-menu_eaniq3.png" /></a>Click the Kiro "purple ghost" icon at the center of the vertical left menu.
 
 1. PROTIP: Optionally, click the gear at the lower-left and select "Extensions" to add the extension "EARS Syntax" (from https://bluedotbrigade.com sourced at https://github.com/BlueDotBrigade/ears-syntax-vscode) for syntax highlighting and code completion when writing <a href="#EARS">EARS requirements</a>. It highlights EARS patterns and keywords to improve readability and focus. It doesn't generate code itself, but pairs well with Copilot or Cursor in the same editor. It uses intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
 
