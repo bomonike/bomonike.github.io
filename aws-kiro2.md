@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-11"
-lastchange: "26-03-11 v30 kiro-icon :aws-kiro2.md"
+lastchange: "26-03-11 v31 kiro-icon2 :aws-kiro2.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
