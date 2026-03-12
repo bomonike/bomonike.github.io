@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-09"
-lastchange: "26-03-09 v026 reorg install :aws-kiro.md"
+date: "2026-03-11"
+lastchange: "26-03-11 v30 kiro-icon :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -19,6 +19,7 @@ created: "2026-01-25"
 {% include l18n.html %}
 {% include _toc.html %}
 
+<a target="_blank" href="https://bomonike.github.io/aws-kiro"><img align="right" width="150" alt="kiro-logo.jpg" src="https://github.com/wilsonmar/aws-quickly/blob/b36529de9360e5965450f38841af6530e6dfb6a5/icons/kiro-logo.jpg?raw=true" /></a>
 This article defines how to create apps on the AWS cloud using Kiro, step-by-step.
 
 ## Socials
@@ -34,12 +35,13 @@ Kiro was first released at AWS re:Invent 2025 on <a target="_blank" href="https:
    * https://x.com/kirodotdev
    * https://bsky.app/profile/kiro.dev
    * https://www.twitch.tv/kirodotdev/videos (Follow & turn on notifications of live and recorded meetings)
+   * https://marketplace.visualstudio.com/search?term=kiro&target=VSCode&category=SCM%20Providers&sortBy=Relevance
    <br /><br />
 
 PROTIP: Set your calendar:
-   * Twitch.tv Bi-Weekly Show "Design to Code".
+   * Twitch.tv Bi-Weekly Show "Design to Code" by Nikhil Swaminathan
 
-Literature search:
+Learning literature search:
    * https://www.youtube.com/results?search_query=%23kiro
    * https://learning.oreilly.com/search/?q=kiro&rows=100&language=en
    * https://aws.amazon.com/search/?searchQuery=kiro
@@ -48,92 +50,119 @@ Literature search:
    * https://www.reddit.com/r/kiroIDE/ "The AI IDE for prototype to production, by AWS"
    <br /><br />
 
-## Get Support
+Introductory articles:
+   * https://ai.plainenglish.io/aws-just-released-its-cursor-killer-meet-kiro-fe0818e4736c
+   <br /><br />
+
+## Get Support from AWS
 
 * https://support.aws.amazon.com/#/contacts/kiro says
    "For technical support, please submit an issue on Github
 
    <a target="_blank" href="https://github.com/kirodotdev/Kiro/issues">https://github.com/kirodotdev/Kiro/issues</a>
 
+Issues with Kiro overheard
+
+  * Kiro was intended to support a VS Code-style ${input:} system that would prompt users to enter API keys at runtime rather than storing them anywhere, but this feature is currently not working as documented. Cleveland Scene For now, environment variables are the recommended workaround.
+  
 
 ## What's Kiro?
 
 Kiro is a "No-Code AI" platform from Amazon that (like with Anthropic's Claude Code) is <a target="_blank" href="https://medium.com/ai-in-plain-english/the-end-of-software-engineer-why-anthropics-claude-code-creator-says-the-title-will-disappear-c35f2dfe66f5">obsoleting "Software Engineer/programming" jobs ... by the end of 2026.</a>.
 
+Kiro development was led by Deepak Singh, Vice President of Developer Agents and Experiences at Amazon.
+
 ??? <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
 aggregating events from Google and Microsoft Outlook into a single "Single Pane of Glass" view</a> 
 using https://github.com/Rani-01/Calendar_Merge.git
 
-<a name="#Installation"></a>
+What is new for Agentic system is integration autonomous agency to take action, through interfaces such as "Stripe for payments".
 
-## Installation
+## Getting Started
 
-Kiro <strong>runs locally</strong> (macOS, Windows, Linux) doing work.
+1. Obtain an email account to use on other accounts below.
+1. Obtain a personal Amazon Builder ID.
+1. Obtain an account on github.com.
+1. Obtain an AWS IAM account with the permissions needed.
+
+   <a name="#Installation"></a>
+
+   ### CLI and IDE Component Install  
+
+   Kiro <strong>runs locally</strong> (macOS, Windows, Linux).
+   Unlike cloud-base Claude.ai, which can only see what is pasted into the chat window,
+   Kiro has full read/write access to read and write files locally, call APIs, and run bash commands autonomously without you having to copy/paste anything.
 
 1. Open your default Terminal app for macOS or Linux, not another AI CLI app (such as OpenAI or Warp.dev), which cause this error reported by doctor:
 
    <tt>✘ Kiro CLI terminal integrations: WarpTerminal is not supported</tt>
 
 1. Navigate to the OS user - the current user.
-
-   <a name="Components"></a>
-
-   ### CLI and IDE Component Install  
+1. Edit ~/.bashrc, ~/.zshrc (or ~/.bash_profile) to include ??? in the PATH.
+1. Install XCode (for command utilities), Homebrew
+1. Use Homebrew to install Chrome, KeePassXC, VSCode and extensions, GitHub, Python, uv, uvx, Docker, aws-cli, Q Developer CLI, Aurora DSQL, NodeJs, Supabase CLI, etc.
+1. Configure GitHub access with SSH, Verified email, etc.
+1. Buy a USB to take a full backup as a recoverable checkpoint.
 
    Install how developers interact with Kiro two ways:
 
-   1. <a href="#InstallCLI">Install</a> the <a target="_blank" href="https://kiro.dev/changelog/cli">latest release</a> of <a href="#InstallCLI">Kiro <strong>CLI</strong> (Command Line Interface)</a> running inside a Terminal app; and
+   A. <a href="#InstallIDE">Install</a> the <a target="_blank" href="https://kiro.dev/changelog/ide">Latest release</a> of <a href="#InstallIDE">Kiro <strong>IDE</strong> (Integrated Development Environment)</a> run by clicking a mouse as well as keyboard.
 
-   2. <a href="#InstallIDE">Install</a> the <a target="_blank" href="https://kiro.dev/changelog/ide">Latest release</a> of <a href="#InstallIDE">Kiro <strong>IDE</strong> (Integrated Development Environment)</a> run by clicking a mouse as well as keyboard.
+   B. <a href="#InstallCLI">Install</a> the <a target="_blank" href="https://kiro.dev/changelog/cli">latest release</a> of <a href="#InstallCLI">Kiro <strong>CLI</strong> (Command Line Interface)</a> running inside a Terminal app; and
 
    Let's start with installing the IDE.
 
    <a name="InstallIDE"></a>
 
-   ## Install Kiro IDE
+   ## A. Install Kiro IDE
 
 1. <a href="#InstallIDE">Install</a> the <a target="_blank" href="https://kiro.dev/changelog/ide">Latest release</a> of <a href="#InstallIDE">Kiro <strong>IDE</strong> (Integrated Development Environment)</a> run by clicking a mouse as well as keyboard.
-   ```bash
-   brew install --cask kiro
-   ```
-   Response:
-   <pre>
-   ✔︎ JSON API cask.jws.json                                            Downloaded   15.3MB/ 15.3MB
-   ✔︎ JSON API formula.jws.json                                         Downloaded   32.0MB/ 32.0MB
-   ==> Downloading https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/0.8.
-   ######################################################################################## 100.0%
-   ==> Installing Cask kiro
-   ==> Moving App 'Kiro.app' to '/Users/johndoe/Applications/Kiro.app'
-   ==> Linking Binary 'code' to '/opt/homebrew/bin/kiro'
-   🍺  kiro was successfully installed!   
-   </pre>
+
+   PROTIP: We don't need to use Homebrew to install Kiro because it has its own update mechanism.
 
 1. PROTIP: Optionally, click the gear at the lower-left and select "Extensions" to add the extension "EARS Syntax" (from https://bluedotbrigade.com sourced at https://github.com/BlueDotBrigade/ears-syntax-vscode) for syntax highlighting and code completion when writing <a href="#EARS">EARS requirements</a>. It highlights EARS patterns and keywords to improve readability and focus. It doesn't generate code itself, but pairs well with Copilot or Cursor in the same editor. It uses intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
 
-   <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode">https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode</a>
+   From the Marketplace:
+
+   * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode">https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode</a>
+
+   * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=blessingtutka.smart-gitcom&ssr=false#qna">"GitCom - AI Commit Assistant</a>. This extension for Kiro that helps developers create meaningful, structured, and consistent commit messages using AI analysis. Features: - Git Diff Analysis: Uses simple-git to analyze staged/unstaged changes, file paths, and diff. Its developer <a target="_blank" href="https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-tuteka-mukuta-5184802b2/">Blessing Tutka</a> responded from Belgium. It references https://github.com/blessingtutka/gitcom
+
+   CAUTION: DO NOT install <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=dadop.git-commit-generator">Kiro Git Commit Message Generator (FREE by dadop)</a> to Generate intelligent, conventional commit messages using Kiro's AI based on your code changes. Its https://github.com/davorpeu/kiro-git-message-gen/ is no longer on GitHub.
 
 1. View the history of Kiro IDE releases:
    
    <a target="_blank" href="https://kiro.dev/changelog/ide/">https://kiro.dev/changelog/ide/</a>
-   
-1. Open Kiro.app:
+
+1. Find the folder path: ???
    ```bash
-   open kiro.app
+   mdfind "kMDItemFSName == 'Kiro.app'"
+   ```
+1. Instead of <tt>open Kiro.app</tt>
+   ```bash
+   /Users/johndoe/Applications/Kiro.app/Contents/Resources/app/bin/code
    ```
    PROTIP: The Kiro.app is a clone of Microsoft Visual Studio Code IDE.
 
-1. Log in: ???
+1. Click the purpose "Sign in" to have your default browser open a window at:
+
+   https://app.kiro.dev/signin?state=12345678-f169-4738-8872-ae6831c67663&code_challenge=U1O4CtWNaDu8YIwY5_tcOJKLTnrGTr6s_IG5ikUqjgI&code_challenge_method=S256&redirect_uri=http://localhost:3128&redirect_from=KiroIDE
+
+
+
 
 1. <a target="_blank" href="https://www.youtube.com/watch?v=7bYAB98THI0">VIDEO</a>: Download within the Kiro IDE skills folder, Claude Superpowers, referenced as <a href="#Powers">Kiro powers</a>.
 
    <a target="_blank" href="https://github.com/obra/superpowers">https://github.com/obra/superpowers</a>
    
-   <a target="_blank" href="https://www.twitch.tv/videos/2707445311">VIDEO: Kiro Bi-Weekly Show | Design to Code with Figma</a> by Nikhil Swaminathan from AWS & Akbar Mirza at Figma
+   <a target="_blank" href="https://www.twitch.tv/videos/2707445311">VIDEO: Kiro Bi-Weekly Show | Design to Code with Figma</a> by <a target="_blank" href="https://www.linkedin.com/in/nikhilswaminathan/">Nikhil Swaminathan</a>, AWS Kiro Product Lead & Akbar Mirza at Figma
+
+   Nikhil Swaminathan says in <a target="_blank" href="https://kiro.dev/blog/introducing-powers/">BLOG</a> "Introducing Kiro powers" December 3, 2025: "We're building toward a future where powers work across any AI development tool—Kiro CLI, Cline, Cursor, Claude Code, and beyond."
 
 
    <a name="InstallCLI"></a>
 
-   ### Install Kiro-CLI
+   ### B. Install Kiro-CLI
 
    REMEMBER: Processing of <strong>Amazon Q</strong> AI chatbot prompts was <a target="_blank" href="https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/upgrade-to-kiro.html">moved into Kiro</a>.
 
@@ -211,7 +240,7 @@ Kiro <strong>runs locally</strong> (macOS, Windows, Linux) doing work.
 1. The first time kiro-cli is run, click "Allow access" to the browser window that appears.
    /coVerify the install:
    ```
-   kiro-cli --version
+   kiro-cli version
    ```
    <pre>
    kiro-cli 1.27.1
@@ -227,13 +256,20 @@ Kiro <strong>runs locally</strong> (macOS, Windows, Linux) doing work.
    ```
    kiro-cli version --changelog
    ```
-   
+   <pre>
+   Changelog for version 1.27.1:
+   Version 1.27.1 (2026-03-05)
+   - Fixed: Prevent bash commands from hanging when processes access the terminal (SIGTTIN)   </pre>
    ### Kiro-cli login/logout
+   ```
 
 1. Login to Kiro using a login method: AWS Builder ID or IDC (IAM Identity Center) account:
    ```
    kiro-cli login
    ```
+   If you select "GitHub", the response is like:<br />
+   "Google will allow kiro-prod-us-east-1.auth.us-east-1.amazoncognito.com to access this info about you"
+
 1. To logout:
    ```
    kiro-cli logout
@@ -336,9 +372,6 @@ Kiro <strong>runs locally</strong> (macOS, Windows, Linux) doing work.
    </pre>
    Not listed is internal file <tt>.cli-bash_history</tt> kiro updates to track every command it processes.
 
-   * <a target="_blan" href="https://towardsdev.com/the-mcp-server-stack-10-open-source-essentials-for-2026-cb13f080ca5c">BLOG</a>
-   <br /><br />
-
    ### agent_config.json
 
    ??? Default configuration read every time you chat with Kiro CLI:
@@ -361,17 +394,75 @@ Kiro <strong>runs locally</strong> (macOS, Windows, Linux) doing work.
 
    https://aws.amazon.com/blogs/industries/from-spec-to-production-a-three-week-drug-discovery-agent-using-kiro/
 
+   
+   ### settings.mcp.json
 
+1. Create and edit <strong>mcp.json</strong> file within settings.
+   ```
+   {
+      "mcpServers": {
+         "ambient-weather": {
+            "command": "python3",
+            "args": ["/absolute/path/to/server.py"],
+            "env": {
+            "AMBIENT_API_KEY": "your_api_key_here",
+            "AMBIENT_APP_KEY": "your_application_key_here"
+            }
+         }
+      }
+   }
+   ```
    
+   * <a target="_blan" href="https://towardsdev.com/the-mcp-server-stack-10-open-source-essentials-for-2026-cb13f080ca5c">BLOG</a>
+   <br /><br />
+
+   Supabase is a full backend in one platform. It's the fastest way to go from zero to a production-ready backend without sacrificing the power of a real relational database. Supabase CLI runs locally within a Docker Desktop container powered by NodeJs.
+
+   Supabase is popular because it's built not on a proprietary DB like Google's Firebase (NoSQL with vendor lock-in), but on the full open source PostgreSQL database. So you get SQL, foreign keys, ACID compliance, and can always migrate away if needed. It supports complex data relationships and real-time features that Firebase simply can't match.
+
+   Supabase handles all the behind-the-scenes work that AI code generation tools need to create fully functional apps. Tools like Bolt, Lovable, Cursor, and Kiro all have native Supabase integrations.
+
+   Every project gets a full Postgres database, authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings — all integrated together. Instead of wiring up five separate services, you get them all out of the box.
+
+   * http://localhost:54321 — REST API
+   * http://localhost:54322 — Postgres database
+   * http://localhost:54323 — Supabase Studio (the dashboard UI)
+   * http://localhost:54324 — Mailpit (local SMTP for auth emails)
+   <br /><br />
+
+   Running supabase start spins up a complete local environment with Docker, including the database, auth server, and edge functions runtime. Schema migrations are version-controlled and deploy consistently across environments.
+
+   Running supabase start spins up a complete local environment with Docker, including the database, auth server, and edge functions runtime. Schema migrations are version-controlled and deploy consistently across environments. 
+
+   Supabase.com offers a generous free tier. Users get 500MB DB storage, 5GB bandwidth, and more — completely free with no credit card required — enough for hobbyists or small side projects, with painless scaling to paid tiers as usage grows. 
    
-   
-   
-   
-   
-   
-   
-   
-   
+   This tutorial describes the prompts to make use of it without coding.
+   ```bash
+   brew install supabase/tap/supabase
+   # or npm install supabase --save-dev
+   supabase --version   # 2.75.0
+   # Start Docker:
+   pgrep -x "OrbStack" > /dev/null && echo "running" || echo "not running"
+   open -a OrbStack  # to use Ubuntu plucky for arm64
+   docker ps --filter "name=supabase"
+   docker compose up -d
+   docker info
+   supabase status --debug
+   # Initialize a new project:
+   supabase init
+   # Start the local stack:
+   supabase start
+   docker compose up -d
+   supabase stop           # stop all containers
+   supabase db reset       # reset local database
+   supabase status         # show local URLs and keys
+   ```
+   To sync with production in the cloud:
+   ```
+   supabase db pull        # pull remote schema locally
+   supabase db push        # push local migrations to production
+   supabase db diff        # see what changed
+   ```
    
    Tasks ???
 
@@ -455,6 +546,9 @@ KEY POINT: Kiro <a href="#Competition">(and other "spec-driven" offerings)</a> e
 Specs in Kiro captures into "Organizational Intelligence" fragmented "tribal memory" by individual development team members
 throughout the <a target="_blank" href="https://medium.com/@faiyazengineer/from-ai-co-pilot-to-agentic-systems-the-ai-teammate-what-amazon-q-and-kiro-reveal-about-the-0973a09c167a">AI systems development lifecycle</a> (from <a target="_blank" href="https://www.linkedin.com/in/faiyazengineer/">Faiyaz</a>:
 
+
+<a name="Hooks"></a>
+
 ## Hooks
 
 Kiro creates data flow diagrams, TypeScript interfaces, database schemas, and API endpoints—like the Review interfaces for its review system.
@@ -478,7 +572,7 @@ TOOL: To convert a repo injestible by AI, change "github.com" to "gitinjest.com"
 
 ## Kiro Tasks
 
-Kiro generates code by processing a <strong>tasks.md</strong> file such as this from AWS Transform:
+Kiro generates code by processing a <strong>TASKS.md</strong> file such as this from AWS Transform:
 
 <a target="_blank" href=""><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772561987/aws-kiro-trans-tasks-602x535_ybqfbz.png" /></a>
 
@@ -486,10 +580,11 @@ Kiro builds code from spec (design) <a href="#Requirements">requirements</a>, wh
 
 
 
+<a name="KiroEnterprise"></a>
 
 ## Kiro Enterprise
 
-https://kiro.dev/enterprise/
+<a target="_blank" href="https://kiro.dev/enterprise/">https://kiro.dev/enterprise</a>
 Kiro "autonomous agent for teams" integrates with Jira, Confluence, GitLab, GitHub, Teams, and Slack.
 Enterprise features: Safety and Compliance:
 * Firewall whitelist configuration - Configuring access control for enterprise network environments
@@ -575,6 +670,7 @@ Referencs:
 
    REMEMBER: Credits are metered to the second decimal point, so the least number of credits a task can consume is 0.01 credits.
 
+   REMEMBER: Unlike traditional MCP servers which load all tools upfront and consuming tokens, Kira loads and activate tools dynamically when relevant to the current task.
 
 1. PROTIP: Multiply the <strong>percentage</strong> by the <strong>tokens used</strong>. For example, if 10,000 tokens shows as 5% used, the total window is ~200K.
 
@@ -934,10 +1030,11 @@ Objectives are written in natural language.
 
 ## Kiro Powers on demand
 
-   Unlike traditional AI context injection that loads everything upfront,<br />
+Kiro powers provide a unified approach to enable a broad range of development and deployment use cases:
+MCP tools, and framework expertise, packaged together and loaded dynamically (rather than everything upfront).
+
    DEFINITION: <a target="_blank" href="https://www.youtube.com/watch?v=14se2WpEaCo&pp=0gcJCYcKAYcqIYzv">VIDEO: Kiro Powers</a>
    inject specialized context knowledge and tools into Kiro agents <strong>on-demand</strong> when needed. 
-   Powers activate specific capabilities dynamically.
    
 Resources about Kiro Powers:
    * https://github.com/kiro-community/powers
@@ -948,12 +1045,13 @@ Resources about Kiro Powers:
    * https://github.com/kirodotdev/powers/blob/main/power-builder/steering/interactive.md
    * https://github.com/kirodotdev/powers/blob/main/power-builder/steering/testing.md
    * https://dev.to/aws/how-i-used-kiro-to-optimize-its-own-mcp-configuration-4mdg
+   * Build Kiro Powers by first adding <a target="_blank" href="https://github.com/kirodotdev/powers/tree/main/power-builder">Power Builder</a> from the Vercel agent-skills repository. 
    <br /><br />
 
-Build Kiro Powers by first adding <a target="_blank" href="https://github.com/kirodotdev/powers/tree/main/power-builder">Power Builder</a> from the Vercel agent-skills repository. 
-
 Unlike Claude skill knowledge packages, Kiro (standalone IDE) can more comprehensively combine documentation, workflows + best practices, and executable capabilities in one package bundle for MCP servers and tools.
+Kiro Powers activate specific capabilities dynamically.
 
+1. Define the power name in place of "{power-name}" referenced below.
 1. Create a folder for the power:
    ```
    mkdir -p powers/{power-name}
@@ -1026,6 +1124,19 @@ Unlike Claude skill knowledge packages, Kiro (standalone IDE) can more comprehen
    - **another-file** - Description of content
    ```
    Get file names from the steps below.
+
+1. Edit POWER.md to add conditions for "# When to Load Steering Files". This keeps context focused. Instead of loading all Supabase patterns upfront, the agent loads only what's relevant to its current task. For example:
+   ```
+   # When to Load Steering Files
+   - Setting up a database → `database-setup-workflow.md`
+   - Writing or formatting SQL code → `supabase-code-format-sql.md`
+   - Creating or modifying RLS policies → `supabase-database-rls-policies.md`
+   - Creating PostgreSQL functions → `supabase-database-functions.md`
+   - Working with declarative schema (`supabase/schemas/` directory) → `supabase-declarative-database-schema.md`
+   - Setting up or modifying Next.js authentication with Supabase SSR → `supabase-nextjs-supabase-auth.md`
+   - Implementing realtime features (broadcast, presence, channels, subscriptions) → `supabase-use-realtime.md`
+   ```
+   DEFINITION: RLS (Row Level Security) is a database feature — most commonly used in PostgreSQL (and Supabase, which builds on it).
 
 1. Copy all files in Claude's reference folder into the Kiro Power's steering folder <strong>deep-dive content that Kiro loads on-demand</strong>:
    ```
@@ -1423,6 +1534,10 @@ QUESTION: Since Kiro uses a closed model, what are mechanisms for explainability
 
 QUESTION: How is bias and fairness evaluated (to maintain trust)?
 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=G9e-zMiPPRk">VIDEO</a>:
+Can Kiro be as amazing as https://github.com/msitarzewski/agency-agents
+of 51 specialized AI agents just exploded to 13,000 stars in 5 days after going viral on Reddit. These aren't basic chatbots - they're specialized personas for every business function you can imagine. I break down what Agency-Agents is, why it blew up so fast, and which agents could literally replace entire departments. Whether you're building with Claude, Cursor, or any AI coding tool, this collection is insane.
 
 
 <hr />
