@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-11"
-lastchange: "26-03-11 v32 kiro IDE menu :aws-kiro2.md"
+date: "2026-03-12"
+lastchange: "26-03-12 v033 projects :aws-kiro2.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -54,6 +54,7 @@ Introductory articles:
    * https://ai.plainenglish.io/aws-just-released-its-cursor-killer-meet-kiro-fe0818e4736c
    <br /><br />
 
+
 ## Get Support from AWS
 
 * https://support.aws.amazon.com/#/contacts/kiro says
@@ -68,26 +69,37 @@ Issues with Kiro overheard
 
 ## What's Kiro?
 
-Kiro is a "No-Code AI" platform from Amazon that (like with Anthropic's Claude Code) is <a target="_blank" href="https://medium.com/ai-in-plain-english/the-end-of-software-engineer-why-anthropics-claude-code-creator-says-the-title-will-disappear-c35f2dfe66f5">obsoleting "Software Engineer/programming" jobs ... by the end of 2026.</a>.
+In recent years, many tools created to create custom application code have been called "No Code".
+Unlike Kiro, such early tools provided a set of GUI forms which limited what could be created.
 
-Kiro development was led by Deepak Singh, Vice President of Developer Agents and Experiences at Amazon.
+But Kiro is not constrained. Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform because it uses "Reasoning" capabilities of Generative AI LLMs (Large Language Models). 
 
-??? <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
-aggregating events from Google and Microsoft Outlook into a single "Single Pane of Glass" view</a> 
+Kiro development in 2025 was led by Deepak Singh, Vice President of Developer Agents and Experiences at Amazon. ???
+
+from Amazon that (like with Anthropic's Claude Code) is <a target="_blank" href="https://medium.com/ai-in-plain-english/the-end-of-software-engineer-why-anthropics-claude-code-creator-says-the-title-will-disappear-c35f2dfe66f5">obsoleting "Software Engineer/programming" jobs ... by the end of 2026.</a>.
+
+
+## My projects
+
+What can you build using this? Here is what we're working toward:
+
+A. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API.
+
+B. <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
+aggregating events from Google Gmail and Microsoft Outlook into a single "Single Pane of Glass" view</a> 
 using https://github.com/Rani-01/Calendar_Merge.git
 
-What is new for Agentic system is integration autonomous agency to take action, through interfaces such as "Stripe for payments".
+C. An app to make it easier for people to restrict their diet of salt, sugar, potassium, etc. The app can keep shopping lists and track inventory for freshness, then provide ideas for planning meals with variety.
 
-## Getting Started
+D. Make use of "Stripe for payments" agent interfaces.
+
+
+## Prerequisites
 
 1. Obtain an email account to use on other accounts below.
-1. Obtain a personal Amazon Builder ID.
-1. Obtain an account on github.com.
+1. Use your emailxd to obtain an account on <a target="_blank" href="https://github.com/">github.com</a>.
+1. Obtain a personal Amazon Builder ID at <a target="_blank" href="https://builder.aws/">builder.aws</a>
 1. Obtain an AWS IAM account with the permissions needed.
-
-   <a name="#Installation"></a>
-
-   ### CLI and IDE Component Install  
 
    Kiro <strong>runs locally</strong> (macOS, Windows, Linux).
    Unlike cloud-base Claude.ai, which can only see what is pasted into the chat window,
@@ -98,13 +110,23 @@ What is new for Agentic system is integration autonomous agency to take action, 
    <tt>✘ Kiro CLI terminal integrations: WarpTerminal is not supported</tt>
 
 1. Navigate to the OS user - the current user.
-1. Edit ~/.bashrc, ~/.zshrc (or ~/.bash_profile) to include ??? in the PATH.
-1. Install XCode (for command utilities), Homebrew
-1. Use Homebrew to install Chrome, KeePassXC, VSCode and extensions, GitHub, Python, uv, uvx, Docker, aws-cli, Q Developer CLI, Aurora DSQL, NodeJs, Supabase CLI, etc.
-1. Configure GitHub access with SSH, Verified email, etc.
+1. Use my <a target="_blank" href="https://wilsonmar.github.io/mac-setup/">mac-setup approach and install shell script</a> which installs:
+   1. Install XCode (for command utilities), Homebrew
+   1. Use Homebrew to install Chrome browser, KeePassXC password manager, VSCode and extensions, GPG, GitHub, Python, uv, uvx, Docker, aws-cli, Q Developer CLI, Aurora DSQL, NodeJs, Supabase CLI, etc.
+   1. Configure ~/.zshrc (or ~/.bash_profile) (and optionally ~/.bashrc) to include in the PATH and Variables
+   1. Use custom automations.
+1. Configure GitHub access with SSH, verified email that appears as "Verified".
+
+1. Under your own github.com account, create a repo (repository).
+1. Follow standards to create a README.md file describing the technologies.
+1. Create a <strong>.gitignore</strong> file specifying the folders and files to block from uploading to GitHub for each technology that will be associated with the repo.
 1. Buy a USB to take a full backup as a recoverable checkpoint.
 
-   Install how developers interact with Kiro two ways:
+   <a name="#Installation"></a>
+
+   ### CLI and IDE Component Install  
+
+   Install Kiro two ways:
 
    A. <a href="#InstallIDE">Install</a> the <a target="_blank" href="https://kiro.dev/changelog/ide">Latest release</a> of <a href="#InstallIDE">Kiro <strong>IDE</strong> (Integrated Development Environment)</a> run by clicking a mouse as well as keyboard.
 
@@ -118,7 +140,7 @@ What is new for Agentic system is integration autonomous agency to take action, 
 
    PROTIP: We don't use <strike>brew install --cask kiro</strike> Homebrew to install Kiro because Kiro has its own update mechanism.
 
-1. Use an internet browser.
+1. Open the Google Chrome internet browser, set as your default browser.
 1. Visit the history of Kiro IDE releases:
    
    <a target="_blank" href="https://kiro.dev/changelog/ide/">https://kiro.dev/changelog/ide/</a>
@@ -127,7 +149,10 @@ What is new for Agentic system is integration autonomous agency to take action, 
 
    <a target="_blank" href="https://kiro.dev/">kiro.dev</a>
 
-1. Click "View Demo" for the video, if you haven't watched it before.
+1. Click to see the <a target="_blank" href="https://www.youtube.com/watch?v=JOqLp1adGO4">"View Demo" video</a>.
+
+   PROTIP: This article aims to take you on a logical and thorough step-by-step sequence through install, configuration, and usage.
+
 1. Click "Sign in" using your AWS Builder ID email and password.
 1. On the <a target="_blank" href="https://app.kiro.dev/account/usage">Account page</a>,<br />click the purple "Download for macOS" (or Linux).
 1. Select "Apple Silicon" if you have the newer M-series machines. Select "Intel" for older models.
@@ -710,23 +735,28 @@ Referencs:
 
    ## Pricing: Credits Monthly Subscriptions
 
+   All subscriptions have overage of <strong>$0.04/credit</strong>.
+
+   Subscribers pay $0.02 per credit:
+   REMEMBER: Unused credits don't roll over to the next month. Use it or lose it.
+   
    NOTICE: But it's currently only for users who paid for a <strong>monthly subscription</strong>.
    The <a target="_blank" href="https://kiro.dev/pricing/">https://kiro.dev/pricing</a> page says
    "Get 500 bonus credits usable within 30 days when you first sign up using social login or Builder ID."
       * Free users get 50 credits/mo.
-      * $20/mo for 1,000 credits/mo on Kiro Pro
-      * $40/month for 2,000 credits/mo on Pro+
-      * $200/month for 10,000 credits/mo on Power subscriptions
+      * $20/mo for 1,000 credits/mo on Kiro Pro (after 500 credits at $0.04) 
+      * $40/month for 2,000 credits/mo on Pro+ (after 1,000 credits at $0.04) 
+      * $200/month for 10,000 credits/mo on Power subscriptions (after 5,000 credits at $0.04) 
       <br /><br />
+
+   Credit usage updates at least every 5 minutes.
 
    PROTIP: If you are strapped for cash, make an appointment on your calendar to use Kiro free credits every month.
    Or create several AWS accounts. "I have cloudecode pro, then use kiro pro+ after 5 hour limit, so I can continue non stop."
 
-   All subscriptions works out to $0.02 per credit.
-
-   All subscriptions have overage of $0.04/credit under pay-per-use.
-
    One user experienced <a target="_blank" href="https://www.reddit.com/r/kiroIDE/comments/1mvqmfv/kiro_is_amazing_but_amazons_pricing_model_is_a/">errors in charges</a>.
+
+   REMEMBER: Kiro credits reset on the 1st of every month, regardless of when you signed up.
 
 
    <a name="KiroModels"></a>
