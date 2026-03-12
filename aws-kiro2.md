@@ -118,11 +118,18 @@ What is new for Agentic system is integration autonomous agency to take action, 
 
    PROTIP: We don't use <strike>brew install --cask kiro</strike> Homebrew to install Kiro because Kiro has its own update mechanism.
 
-1. Use an internet browser to visit:
+1. Use an internet browser.
+1. Visit the history of Kiro IDE releases:
+   
+   <a target="_blank" href="https://kiro.dev/changelog/ide/">https://kiro.dev/changelog/ide/</a>
+
+1. Visit the Kiro product landing page:
 
    <a target="_blank" href="https://kiro.dev/">kiro.dev</a>
 
-1. Click the purple "Download for macOS" (or Linux).
+1. Click "View Demo" for the video, if you haven't watched it before.
+1. Click "Sign in" using your AWS Builder ID email and password.
+1. On the <a target="_blank" href="https://app.kiro.dev/account/usage">Account page</a>,<br />click the purple "Download for macOS" (or Linux).
 1. Select "Apple Silicon" if you have the newer M-series machines. Select "Intel" for older models.
 
    File such as "kiro-ide-0.11.28-stable-darwin-arm64.dmg" appears in the pop-up dialog.
@@ -133,21 +140,33 @@ What is new for Agentic system is integration autonomous agency to take action, 
 1. Drag the purple Kiro and drop it in the Applications folder.
 1. Switch to the Finder app to verify that in the <tt>~/Applications</tt> folder <tt>Kiro.app</tt> is among the files.
 1. Click on "Kiro.app" to open it.
-1. <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773287604/aws-kiro-ide-menu_eaniq3.png"><img align="right" width="200" alt="aws-kiro-ide-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773287604/aws-kiro-ide-menu_eaniq3.png" /></a>Click the Kiro "purple ghost" icon at the center of the vertical left menu.
+1. Hold command and press Tab to rotate through apps open. Release on the purple Kiro app icon.
+1. <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773287604/aws-kiro-ide-menu_eaniq3.png"><img align="right" width="200" alt="aws-kiro-ide-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773287604/aws-kiro-ide-menu_eaniq3.png" /></a>Click the Kiro "purple ghost" icon at the center of the vertical left menu (shown to the right here).
+
+   Notice the major components of Kiro:
+
+   * <a href="#Specs">SPECS</a> "Build complex features with structured planning"
+   * <a href="#Hooks">AGENT HOOKS</a> "Automate repetitive tasks with smart triggers"
+   * <a href="#Steering">AGENT STEERING & SKILLS</a> "Guide agent behaviro and responses"
+   * <a href="#MCP">MCP SERVERS</a> "Connect external tools and data sourced"
+   * <a href="#Powers">POWERS</a> is revealed when the ghost icon with the thunderbolt is clicked.
+   <br /><br />
+
+   REMEMBER: The Kiro.app is a clone (fork) of Microsoft's Visual Studio Code IDE.
+
+   ### Extensions: Requirements Syntax 
 
 1. PROTIP: Optionally, click the gear at the lower-left and select "Extensions" to add the extension "EARS Syntax" (from https://bluedotbrigade.com sourced at https://github.com/BlueDotBrigade/ears-syntax-vscode) for syntax highlighting and code completion when writing <a href="#EARS">EARS requirements</a>. It highlights EARS patterns and keywords to improve readability and focus. It doesn't generate code itself, but pairs well with Copilot or Cursor in the same editor. It uses intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
 
-   From the Marketplace:
+   ### From the Marketplace:
+
+   * https://registry.modelcontextprotocol.io/ Official MCP Registry of servers from<br />https://github.com/modelcontextprotocol/servers Model Context Protocol servers
 
    * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode">https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode</a>
 
    * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=blessingtutka.smart-gitcom&ssr=false#qna">"GitCom - AI Commit Assistant</a>. This extension for Kiro that helps developers create meaningful, structured, and consistent commit messages using AI analysis. Features: - Git Diff Analysis: Uses simple-git to analyze staged/unstaged changes, file paths, and diff. Its developer <a target="_blank" href="https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-tuteka-mukuta-5184802b2/">Blessing Tutka</a> responded from Belgium. It references https://github.com/blessingtutka/gitcom
 
    CAUTION: DO NOT install <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=dadop.git-commit-generator">Kiro Git Commit Message Generator (FREE by dadop)</a> to Generate intelligent, conventional commit messages using Kiro's AI based on your code changes. Its https://github.com/davorpeu/kiro-git-message-gen/ is no longer on GitHub.
-
-1. View the history of Kiro IDE releases:
-   
-   <a target="_blank" href="https://kiro.dev/changelog/ide/">https://kiro.dev/changelog/ide/</a>
 
 1. Find the folder path: ???
    ```bash
@@ -157,8 +176,6 @@ What is new for Agentic system is integration autonomous agency to take action, 
    ```bash
    /Users/johndoe/Applications/Kiro.app/Contents/Resources/app/bin/code
    ```
-   PROTIP: The Kiro.app is a clone of Microsoft Visual Studio Code IDE.
-
 1. Click the purpose "Sign in" to have your default browser open a window at:
 
    https://app.kiro.dev/signin?state=12345678-f169-4738-8872-ae6831c67663&code_challenge=U1O4CtWNaDu8YIwY5_tcOJKLTnrGTr6s_IG5ikUqjgI&code_challenge_method=S256&redirect_uri=http://localhost:3128&redirect_from=KiroIDE
