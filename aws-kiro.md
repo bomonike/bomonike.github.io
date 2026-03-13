@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-12"
-lastchange: "26-03-12 v033 projects :aws-kiro.md"
+lastchange: "26-03-12 v034 summary :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -22,9 +22,108 @@ created: "2026-01-25"
 <a target="_blank" href="https://bomonike.github.io/aws-kiro"><img align="right" width="150" alt="kiro-logo.jpg" src="https://github.com/wilsonmar/aws-quickly/blob/main/icons/kiro-logo.jpg?raw=true" /></a>
 This article defines how to create apps on the AWS cloud using Kiro, step-by-step.
 
-## Socials
+## What's Kiro? Why?
 
-Kiro was first released at AWS re:Invent 2025 on <a target="_blank" href="https://kiro.dev/blog/introducing-kiro/">July 14th, 2025</a>. That's "the day artificial intelligence stopped being a tool and became a colleague".
+But when "Reasoning" capabilities emerged in Generative AI LLMs (Large Language Models), several frontier AI firms began offering "Spec-driven" development of code where prompts created <strong>specifications</strong> which in turn were run to generate code more precisely then ever.
+
+On <a target="_blank" href="https://kiro.dev/blog/introducing-kiro/">July 14th, 2025</a>, when Kiro was first released (at AWS re:Invent), was "the day artificial intelligence stopped being a tool and became a colleague".
+
+
+<a name="SpecDriven"></a> 
+
+### Spec and code generation
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png"><img alt="ai-coding-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png" /></a>
+
+Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me explain what that means.
+
+1. The "Traditional approach" to creating applications <strong>code</strong> is for programmers to write or implement code based on <strong>ideas</strong> in their heads.
+
+    When Generative AI (GenAI) was released by OpenAI in November, 2022 it was installed by the most people ever in a month because it answered prompts from a "model" created from much of what has been written down over time.
+
+1. In past years, many tools created to create custom application code have been called "No Code" or "Low Code".
+   Before AI and Kiro, such early tools provided a set of GUI forms which limited what could be created.
+
+1. Early in 2025, developers tweaked verbose prompts to "<strong>Vibe</strong>" (free form natural language) to request the generation of code.
+
+   But this approach got mixed results because code often needed to be <strong>re-edited</strong>
+   since the same prompt can be answered differenly each time.
+
+1. And since several people are usually involved, several rounds of changes can occur before agreement can be reached.
+1. Also notice that code with this approach is edited <strong>directly</strong> by programmers.
+
+1. Coding work includes <strong>scripts</strong> that define how each application works.
+1. Coding work also includes <strong>.terraform</strong> directives (or other ways) to define infrastructure that run applications in a datacenter.
+1. Earlier versions of Generative AI that appeared in 2023 enabled developers to write <strong>prompts</strong> for the AI to write code. But engineers often had to edit the generated code to incorporate <a href="#BestPractices">software development best practices frameworks</a>.
+1. <strong>AI Vibe coding</strong> capabilities that appeared in 2025 (such as Kiro) enabled prompts to <strong>define design</strong> specs.
+1. Each Kiro <strong>repo</strong> contains a folder full of <a href="#Hooks">hooks</a> that take action automatically when triggered.
+1. Within the Kiro <a href="#Specs">specs folder</a> folder specify <strong>what features to build</strong> through three <strong>phases</strong> of software development:
+
+   1. **requirements.md** - <a href="#UserStories">user stories</a> with acceptance criteria.
+
+   2. **design.md** - technical architecture and implementation considerations.
+
+   3. **tasks.md** - <strong>implementation</strong> (coding) steps.
+
+   These files are committed into the same github repo as the code generated.
+
+1. Kiro maintains consistency across projects by referencing its <a href="#Steering">steering folder</a> which contain "always on" standards and conventions about <strong>how to code</strong> specific features:
+
+   * **product.md** describes the <strong>product's purpose</strong>, target users, key features, and business objectives. This helps Kiro understand the "why" behind technical decisions and suggest solutions aligned with your product goals.
+
+   * **structure.md** outlines the <strong>Project Structure</strong> - file organization, naming conventions, import patterns, and architectural decisions. This ensures that generated code fits seamlessly into your existing codebase.
+
+   * **tech.md** documents the <strong>Technology Stack</strong> - frameworks, libraries, development tools, and technical constraints. This is so when Kiro suggests implementations, it will prefer your stack choices over alternatives.
+
+1. Kiro references <strong>best practices</strong> logic used to generate <strong>specifications</strong> for <strong>steering</strong>.
+
+
+   Other spec-driven AI such as Anthropic Claude have different names for the markdown files they create.
+
+1. IMPORTANT: The revolution enabled by recent AI is that procedural programming code are changed <strong>indirectly</strong> by the AI. Prompts are now used to change specs which change programming code.
+
+1. To create programming and infrastruction code, prompts make requests to <strong>run <a href="#Tasks">tasks</a></strong> defined.
+1. The AI automatically references <strong>sample code</strong> in the background.
+1. IMPORTANT: Because <strong>all assets</strong> can now be re-created with <strong>testing included</strong>, the impact of seemingly small changes can <strong>iterate</strong> quickly and surely.
+
+
+<a name="Implications"></a>
+
+## Implications
+
+KEY POINT: Kiro <a href="#Competition">(and other "spec-driven" offerings)</a> enable a fundamental revolution in how applications are created and maintained.
+
+
+??? backdrop 
+from Amazon that (like with Anthropic's Claude Code) is <a target="_blank" href="https://medium.com/ai-in-plain-english/the-end-of-software-engineer-why-anthropics-claude-code-creator-says-the-title-will-disappear-c35f2dfe66f5">obsoleting "Software Engineer/programming" jobs ... by the end of 2026.</a>.
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=hcuR2hcqHHE&pp=ugUHEgVlbi1VUw%3D%3D" title="by Cloudmancer">VIDEO</a> "Kiro Has Changed How I Build Software"
+   * <a target="_blank" href="https://www.youtube.com/watch?v=QXClbPW3zAM" title="by Adventures in Generative AI">VIDEO</a> "Spec-Driven Development with Kiro: From Requirements to Production in 6 Hours"
+   <br /><br />
+
+Specs in Kiro captures into "Organizational Intelligence" fragmented "tribal memory" by individual development team members
+throughout the <a target="_blank" href="https://medium.com/@faiyazengineer/from-ai-co-pilot-to-agentic-systems-the-ai-teammate-what-amazon-q-and-kiro-reveal-about-the-0973a09c167a">AI systems development lifecycle</a> (from <a target="_blank" href="https://www.linkedin.com/in/faiyazengineer/">Faiyaz</a>:
+
+
+
+## My projects
+
+What can you build using this? Here is what we're working toward:
+
+"The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but the ones who move among multiple domains at once and point the right tools at the right problems." -- NateBJones
+
+A. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API.
+
+B. <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
+aggregating events from Google Gmail and Microsoft Outlook into a single "Single Pane of Glass" view</a> 
+using https://github.com/Rani-01/Calendar_Merge.git
+
+C. An app to make it easier for people to restrict their diet of salt, sugar, potassium, etc. The app can keep shopping lists and track inventory for freshness, then provide ideas for planning meals with variety.
+
+D. For monitization, make use of "Stripe for payments" agent interfaces.
+
+
+## Socials
 
    * https://www.linkedin.com/search/results/all/?keywords=%23kiro&origin=GLOBAL_SEARCH_HEADER
    * https://kiro-community.github.io/book-of-kiro/ (from Chinese)
@@ -64,34 +163,8 @@ Introductory articles:
 
 Issues with Kiro overheard
 
-  * Kiro was intended to support a VS Code-style ${input:} system that would prompt users to enter API keys at runtime rather than storing them anywhere, but this feature is currently not working as documented. Cleveland Scene For now, environment variables are the recommended workaround.
+  * Kiro was intended to support a VS Code-style <tt>${input:}</tt> system that would prompt users to enter API keys at runtime rather than storing them anywhere, but this feature is currently not working as documented. Cleveland Scene For now, environment variables are the recommended workaround.
   
-
-## What's Kiro?
-
-In recent years, many tools created to create custom application code have been called "No Code".
-Unlike Kiro, such early tools provided a set of GUI forms which limited what could be created.
-
-But Kiro is not constrained. Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform because it uses "Reasoning" capabilities of Generative AI LLMs (Large Language Models). 
-
-Kiro development in 2025 was led by Deepak Singh, Vice President of Developer Agents and Experiences at Amazon. ???
-
-from Amazon that (like with Anthropic's Claude Code) is <a target="_blank" href="https://medium.com/ai-in-plain-english/the-end-of-software-engineer-why-anthropics-claude-code-creator-says-the-title-will-disappear-c35f2dfe66f5">obsoleting "Software Engineer/programming" jobs ... by the end of 2026.</a>.
-
-
-## My projects
-
-What can you build using this? Here is what we're working toward:
-
-A. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API.
-
-B. <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
-aggregating events from Google Gmail and Microsoft Outlook into a single "Single Pane of Glass" view</a> 
-using https://github.com/Rani-01/Calendar_Merge.git
-
-C. An app to make it easier for people to restrict their diet of salt, sugar, potassium, etc. The app can keep shopping lists and track inventory for freshness, then provide ideas for planning meals with variety.
-
-D. Make use of "Stripe for payments" agent interfaces.
 
 
 ## Prerequisites
@@ -179,24 +252,22 @@ D. Make use of "Stripe for payments" agent interfaces.
 
    REMEMBER: The Kiro.app is a clone (fork) of Microsoft's Visual Studio Code IDE.
 
-   ### Extensions: Requirements Syntax 
-
-1. PROTIP: Optionally, click the gear at the lower-left and select "Extensions" to add the extension "EARS Syntax" (from https://bluedotbrigade.com sourced at https://github.com/BlueDotBrigade/ears-syntax-vscode) for syntax highlighting and code completion when writing <a href="#EARS">EARS requirements</a>. It highlights EARS patterns and keywords to improve readability and focus. It doesn't generate code itself, but pairs well with Copilot or Cursor in the same editor. It uses intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
-
-   ### From the Marketplace:
-
-   * https://registry.modelcontextprotocol.io/ Official MCP Registry of servers from<br />https://github.com/modelcontextprotocol/servers Model Context Protocol servers
+   <a name="Extensions"></a>
+   
+   ### IDE Extensions
 
    * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode">https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode</a>
 
-   * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=blessingtutka.smart-gitcom&ssr=false#qna">"GitCom - AI Commit Assistant</a>. This extension for Kiro that helps developers create meaningful, structured, and consistent commit messages using AI analysis. Features: - Git Diff Analysis: Uses simple-git to analyze staged/unstaged changes, file paths, and diff. Its developer <a target="_blank" href="https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-tuteka-mukuta-5184802b2/">Blessing Tutka</a> responded from Belgium. It references https://github.com/blessingtutka/gitcom
-
    CAUTION: DO NOT install <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=dadop.git-commit-generator">Kiro Git Commit Message Generator (FREE by dadop)</a> to Generate intelligent, conventional commit messages using Kiro's AI based on your code changes. Its https://github.com/davorpeu/kiro-git-message-gen/ is no longer on GitHub.
 
-1. Find the folder path: ???
-   ```bash
-   mdfind "kMDItemFSName == 'Kiro.app'"
-   ```
+   * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=blessingtutka.smart-gitcom&ssr=false#qna">"GitCom - AI Commit Assistant</a>. This extension for Kiro that helps developers create meaningful, structured, and consistent commit messages using AI analysis. Features: - Git Diff Analysis: Uses simple-git to analyze staged/unstaged changes, file paths, and diff. Its developer <a target="_blank" href="https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-tuteka-mukuta-5184802b2/">Blessing Tutka</a> responded from Belgium. It references https://github.com/blessingtutka/gitcom
+
+1. PROTIP: Optionally, click the gear at the lower-left and select "Extensions" to add the extension "EARS Syntax" (from https://bluedotbrigade.com sourced at https://github.com/BlueDotBrigade/ears-syntax-vscode) for syntax highlighting and code completion when writing <a href="#EARS">EARS requirements</a>. It highlights EARS patterns and keywords to improve readability and focus. It doesn't generate code itself, but pairs well with Copilot or Cursor in the same editor. It uses intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
+
+   <a name="Marketplace"></a>
+
+   ### From the Marketplace:
+
 1. Instead of <tt>open Kiro.app</tt>
    ```bash
    /Users/johndoe/Applications/Kiro.app/Contents/Resources/app/bin/code
@@ -410,24 +481,31 @@ D. Make use of "Stripe for payments" agent interfaces.
 
    NOTE: A <pre>.kiro</pre> folder tree is also in each Kiro project root to control that repo only.
 
-1. Let's see what folders and files are within the repo's hidden folder created by the Kiro installer, using the tree utility:
+1. To see what folders and files are within the <tt>~/.kiro</tt> global repo created by the Kiro installer, using the tree utility:
    ```
    !tree ~/.kiro
    ```
    REMEMBER: Use an exclaimation prefix to invoke OS-level commands.
    <pre>
+   |-- .cli_bash_history   # file
    |-- agents
    |   `-- agent_config.json.example
-   |-- argv.json
+   |-- argv.json           # file
    |-- extensions
    |   `-- extensions.json
    |-- <a href="#Powers">powers</a>
+   |   `-- installed.json
+   |   `-- registries
    |   `-- registry.json
+   |   `-- registry.json.v1.backup
    |-- settings
    |   `-- cli.json
+   |   `-- mcp.json
+   |-- skills
    `-- <a href="#Steering">steering</a>
    </pre>
-   Not listed is internal file <tt>.cli-bash_history</tt> kiro updates to track every command it processes.
+
+   The internal file <tt>.cli-bash_history</tt> kiro updates to track every command it processes.
 
    ### agent_config.json
 
@@ -452,26 +530,68 @@ D. Make use of "Stripe for payments" agent interfaces.
    https://aws.amazon.com/blogs/industries/from-spec-to-production-a-three-week-drug-discovery-agent-using-kiro/
 
    
+   ### .env file
+
+   my-server.env ??? unencrypted
+
+1. PROTIP: The API_KEY value is replace with "your-api-key" values shown above with variable name which are replaced with values ???.
+1. PROTIP: The AMBIENT_API_KEY value is replace with variable name which are replaced with values ???.
+
    ### settings.mcp.json
+
+   Kiro IDE serves as a <strong>MCP client</strong> supporting MCP integrations.
+   The official Registry of MCP clients are listed at<br />
+   <a target="_blank" href="https://modelcontextprotocol.io/clients">modelcontextprotocol.io/clients</a>
+   and include ChatGPT from OpenAI, Claude Code, Cline, OpenAI Codex, etc.
+
+   <a target="_blank" href="https://registry.modelcontextprotocol.io/">registry.modelcontextprotocol.io</a>
+   from<br />https://github.com/modelcontextprotocol/servers
 
 1. Create and edit <strong>mcp.json</strong> file within settings.
    ```
    {
       "mcpServers": {
-         "ambient-weather": {
+         "my-server": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-name"],
+            "env": {
+            "API_KEY": "$MCP_SERVER_API_KEY"
+            },
+            "autoApprove": ["tool_name1"],
+            "disabled": false
+         }
+         "ambient-cloud": {
+            "url": "https://your-mcp-endpoint.com",
+            "headers": { "Authorization": "Bearer your-token" },
+            "env": {
+               "AMBIENT_API_KEY": "$AMBIENT_CLOUD_API_KEY",
+               "AMBIENT_APP_KEY": "$AMBIENT_CLOUD_APP_KEY"
+            },
+            "disabled": false
+         }
+         "local-server": {
             "command": "python3",
             "args": ["/absolute/path/to/server.py"],
             "env": {
-            "AMBIENT_API_KEY": "your_api_key_here",
-            "AMBIENT_APP_KEY": "your_application_key_here"
-            }
+               "AMBIENT_API_KEY": "$AMBIENT_CLOUD_API_KEY",
+               "AMBIENT_APP_KEY": "$AMBIENT_CLOUD_APP_KEY"
+            },
+            "disabled": false
          }
       }
    }
    ```
-   
+   PROTIP: I always put <tt>"disabled": false</tt> on each section so all other lines can have a comma at end of line.
+
+
+1. PROTIP: Variables are replaced ???
+
+   ### MCP servers available
+
    * <a target="_blan" href="https://towardsdev.com/the-mcp-server-stack-10-open-source-essentials-for-2026-cb13f080ca5c">BLOG</a>
-   <br /><br />
+
+
+   ### Supabase database
 
    Supabase is a full backend in one platform. It's the fastest way to go from zero to a production-ready backend without sacrificing the power of a real relational database. Supabase CLI runs locally within a Docker Desktop container powered by NodeJs.
 
@@ -547,61 +667,6 @@ D. Make use of "Stripe for payments" agent interfaces.
    * https://github.com/kiro-community/kiro-autonomous-agent-power 
    * https://kiro.dev/blog/introducing-kiro-autonomous-agent/
    <br /><br />
-
-
-<a name="SpecDriven"></a> 
-
-### Spec and code generation
-
-KEY POINT: Kiro <a href="#Competition">(and other "spec-driven" offerings)</a> enable a fundamental revolution in how applications are created and maintained.
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png"><img alt="ai-coding-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png" /></a>
-
-1. The "Traditional approach" to creating programming <strong>code</strong> housed in <strong>repositories</strong> is for programmers to <strong>edit code directly</strong> based on <strong>ideas</strong> in their heads.
-1. Coding work includes <strong>scripts</strong> that define how each application works.
-1. Coding work also includes <strong>.terraform</strong> directives (or other ways) to define infrastructure that run applications in a datacenter.
-1. Earlier versions of Generative AI that appeared in 2023 enabled developers to write <strong>prompts</strong> for the AI to write code. But engineers often had to edit the generated code to incorporate <a href="#BestPractices">software development best practices frameworks</a>.
-1. <strong>AI Vibe coding</strong> capabilities that appeared in 2025 (such as Kiro) enabled prompts to <strong>define design</strong> specs.
-1. Each Kiro <strong>repo</strong> contains a folder full of <a href="#Hooks">hooks</a> that take action automatically when triggered.
-1. Within the Kiro <a href="#Specs">specs folder</a> folder specify <strong>what features to build</strong> through three <strong>phases</strong> of software development:
-
-   1. **requirements.md** - <a href="#UserStories">user stories</a> with acceptance criteria.
-
-   2. **design.md** - technical architecture and implementation considerations.
-
-   3. **tasks.md** - <strong>implementation</strong> (coding) steps.
-
-   These files are committed into the same github repo as the code generated.
-
-1. Kiro maintains consistency across projects by referencing its <a href="#Steering">steering folder</a> which contain "always on" standards and conventions about <strong>how to code</strong> specific features:
-
-   * **product.md** describes the <strong>product's purpose</strong>, target users, key features, and business objectives. This helps Kiro understand the "why" behind technical decisions and suggest solutions aligned with your product goals.
-
-   * **structure.md** outlines the <strong>Project Structure</strong> - file organization, naming conventions, import patterns, and architectural decisions. This ensures that generated code fits seamlessly into your existing codebase.
-
-   * **tech.md** documents the <strong>Technology Stack</strong> - frameworks, libraries, development tools, and technical constraints. This is so when Kiro suggests implementations, it will prefer your stack choices over alternatives.
-
-1. Kiro references <strong>best practices</strong> logic used to generate <strong>specifications</strong> for <strong>steering</strong>.
-
-
-   Other spec-driven AI such as Anthropic Claude have different names for the markdown files they create.
-
-1. IMPORTANT: The revolution enabled by recent AI is that procedural programming code are changed <strong>indirectly</strong> by the AI. Prompts are now used to change specs which change programming code.
-
-1. To create programming and infrastruction code, prompts make requests to <strong>run <a href="#Tasks">tasks</a></strong> defined.
-1. The AI automatically references <strong>sample code</strong> in the background.
-1. IMPORTANT: Because <strong>all assets</strong> can now be re-created with <strong>testing included</strong>, the impact of seemingly small changes can <strong>iterate</strong> quickly and surely.
-
-## Implications
-
-"The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but the ones who move among multiple domains at once and point the right tools at the right problems." -- NateBJones
-
-   * <a target="_blank" href="https://www.youtube.com/watch?v=hcuR2hcqHHE&pp=ugUHEgVlbi1VUw%3D%3D" title="by Cloudmancer">VIDEO</a> "Kiro Has Changed How I Build Software"
-   * <a target="_blank" href="https://www.youtube.com/watch?v=QXClbPW3zAM" title="by Adventures in Generative AI">VIDEO</a> "Spec-Driven Development with Kiro: From Requirements to Production in 6 Hours"
-   <br /><br />
-
-Specs in Kiro captures into "Organizational Intelligence" fragmented "tribal memory" by individual development team members
-throughout the <a target="_blank" href="https://medium.com/@faiyazengineer/from-ai-co-pilot-to-agentic-systems-the-ai-teammate-what-amazon-q-and-kiro-reveal-about-the-0973a09c167a">AI systems development lifecycle</a> (from <a target="_blank" href="https://www.linkedin.com/in/faiyazengineer/">Faiyaz</a>:
 
 
 <a name="Hooks"></a>
@@ -1600,6 +1665,8 @@ QUESTION: How is bias and fairness evaluated (to maintain trust)?
 <a target="_blank" href="https://www.youtube.com/watch?v=G9e-zMiPPRk">VIDEO</a>:
 Can Kiro be as amazing as https://github.com/msitarzewski/agency-agents
 of 51 specialized AI agents just exploded to 13,000 stars in 5 days after going viral on Reddit. These aren't basic chatbots - they're specialized personas for every business function you can imagine. I break down what Agency-Agents is, why it blew up so fast, and which agents could literally replace entire departments. Whether you're building with Claude, Cursor, or any AI coding tool, this collection is insane.
+
+Kiro development in 2025 was led by Deepak Singh, Vice President of Developer Agents and Experiences at Amazon. ???
 
 
 <hr />
