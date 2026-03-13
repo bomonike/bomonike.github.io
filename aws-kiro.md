@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-12"
-lastchange: "26-03-12 v034 summary :aws-kiro.md"
+date: "2026-03-13"
+lastchange: "26-03-13 v035 Automation Types :aws-kiro.md"
 url: https://bomonike.github.io/aws-kiro
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -77,8 +77,7 @@ Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me ex
 
 1. Kiro references <strong>best practices</strong> logic used to generate <strong>specifications</strong> for <strong>steering</strong>.
 
-
-   Other spec-driven AI such as Anthropic Claude have different names for the markdown files they create.
+   NOTE: Other spec-driven AI such as Anthropic Claude have different names for the markdown files they create.
 
 1. IMPORTANT: The revolution enabled by recent AI is that procedural programming code are changed <strong>indirectly</strong> by the AI. Prompts are now used to change specs which change programming code.
 
@@ -93,7 +92,6 @@ Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me ex
 
 KEY POINT: Kiro <a href="#Competition">(and other "spec-driven" offerings)</a> enable a fundamental revolution in how applications are created and maintained.
 
-
 ??? backdrop 
 from Amazon that (like with Anthropic's Claude Code) is <a target="_blank" href="https://medium.com/ai-in-plain-english/the-end-of-software-engineer-why-anthropics-claude-code-creator-says-the-title-will-disappear-c35f2dfe66f5">obsoleting "Software Engineer/programming" jobs ... by the end of 2026.</a>.
 
@@ -105,22 +103,31 @@ Specs in Kiro captures into "Organizational Intelligence" fragmented "tribal mem
 throughout the <a target="_blank" href="https://medium.com/@faiyazengineer/from-ai-co-pilot-to-agentic-systems-the-ai-teammate-what-amazon-q-and-kiro-reveal-about-the-0973a09c167a">AI systems development lifecycle</a> (from <a target="_blank" href="https://www.linkedin.com/in/faiyazengineer/">Faiyaz</a>:
 
 
+<a name="MyProjects"></a>
 
 ## My projects
 
-What can you build using this? Here is what we're working toward:
+What can you build using this? 
 
-"The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but the ones who move among multiple domains at once and point the right tools at the right problems." -- NateBJones
+Effort toward higher-level requirements are amortized over several projects.
 
-A. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API.
+> "The people who are going to build the most interesting things over the next few years aren't necessarily the ones with the deepest skill in a domain but the ones who move among multiple domains at once and point the right tools at the right problems." -- NateBJones
 
-B. <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
+Here is what we're working toward:
+
+A. A MCP server to return the value of a variable stored in an encrypted location (macOS Keychain).
+
+B. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API.
+
+C. <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
 aggregating events from Google Gmail and Microsoft Outlook into a single "Single Pane of Glass" view</a> 
 using https://github.com/Rani-01/Calendar_Merge.git
 
-C. An app to make it easier for people to restrict their diet of salt, sugar, potassium, etc. The app can keep shopping lists and track inventory for freshness, then provide ideas for planning meals with variety.
+D. An app to make it easier for people to <strong>restrict their diet</strong> of salt, sugar, potassium, etc. The app can keep shopping lists and track inventory for freshness, then provide ideas for planning meals with variety.
 
-D. For monitization, make use of "Stripe for payments" agent interfaces.
+E. For monitization, make use of "Stripe for payments" agent interfaces.
+
+F. An MCP service that returns the lowest-cost cloud region within multi-region clouds (AWS, Azure, GCP, Oracle, etc.)
 
 
 ## Socials
@@ -252,9 +259,18 @@ Issues with Kiro overheard
 
    REMEMBER: The Kiro.app is a clone (fork) of Microsoft's Visual Studio Code IDE.
 
+
    <a name="Extensions"></a>
    
-   ### IDE Extensions
+   ### Kira IDE Extensions
+
+   These add functionality to Kira IDE:
+
+1. Click the gear at the lower-left of the Kira IDE left menu and select "Extensions".
+
+1. PROTIP: Add the extension "EARS Syntax" (from https://bluedotbrigade.com sourced at https://github.com/BlueDotBrigade/ears-syntax-vscode) for syntax highlighting and code completion when writing <a href="#EARS">EARS requirements</a>. It highlights EARS patterns and keywords to improve readability and focus. It doesn't generate code itself, but pairs well with Copilot or Cursor in the same editor. It uses intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
+
+1. Other Kira IDE Extensions to consider:
 
    * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode">https://marketplace.visualstudio.com/items?itemName=BlueDotBrigade.ears-syntax-vscode</a>
 
@@ -262,7 +278,6 @@ Issues with Kiro overheard
 
    * <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=blessingtutka.smart-gitcom&ssr=false#qna">"GitCom - AI Commit Assistant</a>. This extension for Kiro that helps developers create meaningful, structured, and consistent commit messages using AI analysis. Features: - Git Diff Analysis: Uses simple-git to analyze staged/unstaged changes, file paths, and diff. Its developer <a target="_blank" href="https://www.linkedin.com/in/b%C3%A9n%C3%A9dicte-tuteka-mukuta-5184802b2/">Blessing Tutka</a> responded from Belgium. It references https://github.com/blessingtutka/gitcom
 
-1. PROTIP: Optionally, click the gear at the lower-left and select "Extensions" to add the extension "EARS Syntax" (from https://bluedotbrigade.com sourced at https://github.com/BlueDotBrigade/ears-syntax-vscode) for syntax highlighting and code completion when writing <a href="#EARS">EARS requirements</a>. It highlights EARS patterns and keywords to improve readability and focus. It doesn't generate code itself, but pairs well with Copilot or Cursor in the same editor. It uses intelligent snippets to quickly insert EARS patterns, such as "When [trigger], the system shall [response]."
 
    <a name="Marketplace"></a>
 
@@ -489,7 +504,7 @@ Issues with Kiro overheard
    <pre>
    |-- .cli_bash_history   # file
    |-- agents
-   |   `-- agent_config.json.example
+   |   `-- <a href="#agent_config.json">agent_config.json</a> # from agent_config.json.example
    |-- argv.json           # file
    |-- extensions
    |   `-- extensions.json
@@ -499,13 +514,73 @@ Issues with Kiro overheard
    |   `-- registry.json
    |   `-- registry.json.v1.backup
    |-- settings
-   |   `-- cli.json
-   |   `-- mcp.json
+   |   `-- <a href="#cli.json">cli.json</a>
+   |   `-- <a href="#mcp.json">mcp.json</a>
    |-- skills
    `-- <a href="#Steering">steering</a>
    </pre>
 
    The internal file <tt>.cli-bash_history</tt> kiro updates to track every command it processes.
+   TODO: history commands
+
+   <a name="AutomationTypes"></a>
+
+   ### Automation Types
+
+   | Use for: | When loaded: | Best for: |
+   | ======== | ============ | ========= |
+   | Always-on instructions | Every session | Codebase guardrails |
+   | MCP server | Session start | External gateways |
+   | File-based instructions | Pattern / description match | Area-specific rules |
+   | Prompts | / commands | one-shot workflows |
+   | Custom agents | Droptdown OR subagents | Constrained workflows |
+   | Skills | On demand | Reusable capabilities |
+   | <a href="#Hooks">Hooks</a> | On lifecycle trigger | Contexual automation |
+
+   -- From <a target="_blank" href="https://www.youtube.com/watch?v=flpKLkZla2Q&list=PLj6YeMhvp2S4gpM0lGDd5hIDveC7IsLwv&index=9" title="amonh videos Feb 19, 2026 by Courtney Webster">VIDEO: Customize Your VS Code Agents</a> 
+
+   REMEMBER: Kira IDE is a fork of Microsoft's VSCode, so assets from <a target="_blank" href="https://github.com/github/awesome-copilot">github.com/github/awesome-copilot</a> may work within Kiro IDE.
+ 
+   Each VSCode subagent runs in its own context window and returns just the response, so the main agent's context stays clean. Subagents receive an input prompt from the orchestrator.
+
+
+   <a name="agent_config.json"></a>
+
+   ### agent_config.json
+
+   ```
+   {
+      "name": "example",
+      "description": "This is an example agent config (and will not be loaded unless you change it to have .json extension)",
+      "prompt": null,
+      "mcpServers": {},
+      "tools": [
+         "read",
+         "write",
+         "shell",
+         "aws",
+         "report",
+         "introspect",
+         "knowledge",
+         "thinking",
+         "todo",
+         "delegate",
+         "grep",
+         "glob",
+         "@mcp_server_name/mcp_tool_name",
+         "@mcp_server_name_without_tool_specification_to_include_all_tools"
+      ],
+      "toolAliases": {},
+      "allowedTools": [],
+      "resources": [],
+      "hooks": {},
+      "toolsSettings": {},
+      "useLegacyMcpJson": true,
+      "model": null
+      }
+   ```
+
+   <a name="cli.json"></a>
 
    ### agent_config.json
 
@@ -537,7 +612,15 @@ Issues with Kiro overheard
 1. PROTIP: The API_KEY value is replace with "your-api-key" values shown above with variable name which are replaced with values ???.
 1. PROTIP: The AMBIENT_API_KEY value is replace with variable name which are replaced with values ???.
 
+   
+   <a name="MCP"></a>
+   <a name="mcp.json"></a>
+
    ### settings.mcp.json
+
+   REFERENCES: 
+   * <a target="_blank" href="https://code.visualstudio.com/docs/copilot/customization/mcp-servers">Add and manage MCP servers in VS Code</a>
+   <br /><br />
 
    Kiro IDE serves as a <strong>MCP client</strong> supporting MCP integrations.
    The official Registry of MCP clients are listed at<br />
@@ -591,59 +674,9 @@ Issues with Kiro overheard
    * <a target="_blan" href="https://towardsdev.com/the-mcp-server-stack-10-open-source-essentials-for-2026-cb13f080ca5c">BLOG</a>
 
 
-   ### Supabase database
+   https://github.com/github/awesome-copilot/blob/main/plugins/project-planning/README.md
+   Tools and guidance for software project planning, feature breakdown, epic management, implementation planning, and task organization for development teams.
 
-   Supabase is a full backend in one platform. It's the fastest way to go from zero to a production-ready backend without sacrificing the power of a real relational database. Supabase CLI runs locally within a Docker Desktop container powered by NodeJs.
-
-   Supabase is popular because it's built not on a proprietary DB like Google's Firebase (NoSQL with vendor lock-in), but on the full open source PostgreSQL database. So you get SQL, foreign keys, ACID compliance, and can always migrate away if needed. It supports complex data relationships and real-time features that Firebase simply can't match.
-
-   Supabase handles all the behind-the-scenes work that AI code generation tools need to create fully functional apps. Tools like Bolt, Lovable, Cursor, and Kiro all have native Supabase integrations.
-
-   Every project gets a full Postgres database, authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings — all integrated together. Instead of wiring up five separate services, you get them all out of the box.
-
-   * http://localhost:54321 — REST API
-   * http://localhost:54322 — Postgres database
-   * http://localhost:54323 — Supabase Studio (the dashboard UI)
-   * http://localhost:54324 — Mailpit (local SMTP for auth emails)
-   <br /><br />
-
-   Running supabase start spins up a complete local environment with Docker, including the database, auth server, and edge functions runtime. Schema migrations are version-controlled and deploy consistently across environments.
-
-   Running supabase start spins up a complete local environment with Docker, including the database, auth server, and edge functions runtime. Schema migrations are version-controlled and deploy consistently across environments. 
-
-   Supabase.com offers a generous free tier. Users get 500MB DB storage, 5GB bandwidth, and more — completely free with no credit card required — enough for hobbyists or small side projects, with painless scaling to paid tiers as usage grows. 
-   
-   This tutorial describes the prompts to make use of it without coding.
-   ```bash
-   brew install supabase/tap/supabase
-   # or npm install supabase --save-dev
-   supabase --version   # 2.75.0
-   # Start Docker:
-   pgrep -x "OrbStack" > /dev/null && echo "running" || echo "not running"
-   open -a OrbStack  # to use Ubuntu plucky for arm64
-   docker ps --filter "name=supabase"
-   docker compose up -d
-   docker info
-   supabase status --debug
-   # Initialize a new project:
-   supabase init
-   # Start the local stack:
-   supabase start
-   docker compose up -d
-   supabase stop           # stop all containers
-   supabase db reset       # reset local database
-   supabase status         # show local URLs and keys
-   ```
-   To sync with production in the cloud:
-   ```
-   supabase db pull        # pull remote schema locally
-   supabase db push        # push local migrations to production
-   supabase db diff        # see what changed
-   ```
-   
-   Tasks ???
-
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773080864/kiro-auto-tasks_qkknim.jpg"><img align="right" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773080864/kiro-auto-tasks_qkknim.jpg" /></a>
 
    <a name="AutonomouseAgent"></a>
 
@@ -874,10 +907,67 @@ Referencs:
 
 
 
+   <a name="Supabase"></a>
+
+   ### Supabase database power
+
+1. Among https://kiro.dev/powers is "Build a backend with Supabase".
+1. Click "+ Add to Kiro".
+
+   Supabase is a full backend in one platform. It's the fastest way to go from zero to a production-ready backend without sacrificing the power of a real relational database. Supabase CLI runs locally within a Docker Desktop container powered by NodeJs.
+
+   Supabase is popular because it's built not on a proprietary DB like Google's Firebase (NoSQL with vendor lock-in), but on the full open source PostgreSQL database. So you get SQL, foreign keys, ACID compliance, and can always migrate away if needed. It supports complex data relationships and real-time features that Firebase simply can't match.
+
+   Supabase handles all the behind-the-scenes work that AI code generation tools need to create fully functional apps. Tools like Bolt, Lovable, Cursor, and Kiro all have native Supabase integrations.
+
+   Every project gets a full Postgres database, authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings — all integrated together. Instead of wiring up five separate services, you get them all out of the box.
+
+   * http://localhost:54321 — REST API
+   * http://localhost:54322 — Postgres database
+   * http://localhost:54323 — Supabase Studio (the dashboard UI)
+   * http://localhost:54324 — Mailpit (local SMTP for auth emails)
+   <br /><br />
+
+   Running supabase start spins up a complete local environment with Docker, including the database, auth server, and edge functions runtime. Schema migrations are version-controlled and deploy consistently across environments.
+
+   Running supabase start spins up a complete local environment with Docker, including the database, auth server, and edge functions runtime. Schema migrations are version-controlled and deploy consistently across environments. 
+
+   Supabase.com offers a generous free tier. Users get 500MB DB storage, 5GB bandwidth, and more — completely free with no credit card required — enough for hobbyists or small side projects, with painless scaling to paid tiers as usage grows. 
+   
+   This tutorial describes the prompts to make use of it without coding.
+   ```bash
+   brew install supabase/tap/supabase
+   # or npm install supabase --save-dev
+   supabase --version   # 2.75.0
+   # Start Docker:
+   pgrep -x "OrbStack" > /dev/null && echo "running" || echo "not running"
+   open -a OrbStack  # to use Ubuntu plucky for arm64
+   docker ps --filter "name=supabase"
+   docker compose up -d
+   docker info
+   supabase status --debug
+   # Initialize a new project:
+   supabase init
+   # Start the local stack:
+   supabase start
+   docker compose up -d
+   supabase stop           # stop all containers
+   supabase db reset       # reset local database
+   supabase status         # show local URLs and keys
+   ```
+   To sync with production in the cloud:
+   ```
+   supabase db pull        # pull remote schema locally
+   supabase db push        # push local migrations to production
+   supabase db diff        # see what changed
+   ```
+   
+   Tasks ???
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773080864/kiro-auto-tasks_qkknim.jpg"><img align="right" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773080864/kiro-auto-tasks_qkknim.jpg" /></a>
 
 
 
-zzz
    ### Kiro's Keyboard Shortcuts
 
 1. Switch between the Kiro IDE and CLI, press ^ and ` (hold down shift and the 6 key for ^ then the ` to the left of 1). Other shortcuts:
@@ -1292,6 +1382,10 @@ Kiro Powers activate specific capabilities dynamically.
    * Update criteria
    <br /><br />
 
+zzz
+
+
+
 
 <a name="Steering"></a>
 
@@ -1580,7 +1674,7 @@ c) Agent Skills via MCP (cross‑platform bridge)
       <tr>
         <td>Scripts / automations</td>
         <td>Skill scripts</td>
-        <td>MCP tools, hooks, external CLIs</td>
+        <td>MCP tools, <a href="#Hooks">hooks</a>, external CLIs</td>
       </tr>
       <tr>
         <td>Domain docs / resources</td>
