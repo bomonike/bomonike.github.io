@@ -1,8 +1,8 @@
 ---
 layout: post
-date: "2026-03-14"
-lastchange: "26-03-14 v036speech to text :aws-kiro2.md"
-url: https://bomonike.github.io/aws-kiro
+date: "2026-03-15"
+lastchange: "26-03-15 v038 flowchart starts :aws-kiro2.md"
+url: https://bomonike.github.io/aws-kiro2
 file: "aws-kiro"
 title: "AWS Kiro"
 excerpt: "Create Spec-Driven Development (SDD) of apps running in AWS"
@@ -24,20 +24,21 @@ This article defines how to create apps on the AWS cloud using Kiro, step-by-ste
 
 ## What's Kiro? Why?
 
-But when "Reasoning" capabilities emerged in Generative AI LLMs (Large Language Models), several frontier AI firms began offering "Spec-driven" development of code where prompts created <strong>specifications</strong> which in turn were run to generate code more precisely then ever.
+Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me explain what those words mean with this video flowchart:
 
-On <a target="_blank" href="https://kiro.dev/blog/introducing-kiro/">July 14th, 2025</a>, when Kiro was first released (at AWS re:Invent), was "the day artificial intelligence stopped being a tool and became a colleague".
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773573921/aws-kiro-flow_n9h8r8.png"><img alt="aws-kiro-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773573921/aws-kiro-flow_n9h8r8.png" /></a>
 
+1. Each computer running within an <strong>infrastructure</strong> of various <strong>resources</strong> (such as network switches).
 
-<a name="SpecDriven"></a> 
+1. Introductory lessons about computers talk about how "ones and zeros" move inside computers are controlled by programs described as <strong>executables</strong>.
 
-### Spec and code generation
+1. Since the 1960's, the <strong>"traditional"</strong> approach to turning <strong>ideas</strong> into <strong>computers</strong> doing things is to have human programmers <strong>implement</strong> or manually <strong>write</strong> a lot of human-readable <strong>scripts</strong> (such as Java or Python) organized into <strong>libraries</strong> of code. 
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png"><img alt="ai-coding-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772901567/ai-coding-flow_tqo3h8.png" /></a>
+1. Scripts contain English keywords that need to be <strong>compiled</strong> into the <strong>executables</strong> that control the "ones and zeros" inside computers.
 
-Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me explain what that means.
+1. There is a different script language for each type of computer equipment. To specify exactly what resources are used, companies came up with script languages <strong>".Terraform"</strong> and <strong>.ansible</strong>.
 
-1. The "Traditional approach" to creating applications <strong>code</strong> is for programmers to write or implement code based on <strong>ideas</strong> in their heads.
+1. It takes time to learn each language, so employers organized programmers into different departments. But departments often do not communicate well with each other even though there are <strong>differing ideas</strong> about how computers should work.
 
     When Generative AI (GenAI) was released by OpenAI in November, 2022 it was installed by the most people ever in a month because it answered prompts from a "model" created from much of what has been written down over time.
 
@@ -84,6 +85,13 @@ Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me ex
 1. To create programming and infrastruction code, prompts make requests to <strong>run <a href="#Tasks">tasks</a></strong> defined.
 1. The AI automatically references <strong>sample code</strong> in the background.
 1. IMPORTANT: Because <strong>all assets</strong> can now be re-created with <strong>testing included</strong>, the impact of seemingly small changes can <strong>iterate</strong> quickly and surely.
+
+
+
+But when "Reasoning" capabilities emerged in Generative AI LLMs (Large Language Models), several frontier AI firms began offering "Spec-driven" development of code where prompts created <strong>specifications</strong> which in turn were run to generate code more precisely then ever.
+
+On <a target="_blank" href="https://kiro.dev/blog/introducing-kiro/">July 14th, 2025</a>, when Kiro was first released (at AWS re:Invent), was "the day artificial intelligence stopped being a tool and became a colleague".
+
 
 
 <a name="Implications"></a>
@@ -1615,7 +1623,7 @@ zzz
 Caleb Writes Code">VIDEO</a>:
 Here is where Amazon Kiro fits with other AI spec-driven tools:
 
-Kiro competes with these other <a href="#SpecDriven">spec-driven</a> tools:
+Kiro competes with these other "spec-driven" software development tools:
 * AgentOS
 * Anthropic Claude Code - Claude's hallmark is its large context window and strong reasoning — it's the tool you'd use to generate code from a high-level spec, possibly producing multiple files at once or analyzing a whole codebase. You can feed it your entire EARS .md file directly and instruct it to generate code from each requirement. It understands the WHEN/WHILE/IF/SHALL patterns naturally.
 * <a target="_blank" href="https://www.linkedin.com/posts/davetbo_kiro-agentcore-mcptool-activity-7377475581392687105-5ywk/">Cline</a>
