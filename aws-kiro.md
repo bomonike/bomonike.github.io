@@ -115,19 +115,21 @@ Effort toward higher-level requirements are amortized over several projects.
 
 Here is what we're working toward:
 
-A. A MCP server to return the value of a variable stored in an encrypted location (macOS Keychain).
+A. A MCP server to return the value of a variable stored in an encrypted location (macOS Keychain). This is instead of keeping all secrets in plain text in .env files. This has a mechanism like temporarily assumming an AWS role. This provides a way to centrally manage (and log) what permissions are given to whom.
 
-B. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API.
+B. Track events such as new resources being invoked (the project above) to remind the developer the cost of resources continuing to be used, and provide an easy way to remove the resources and the permissions which created them. 
 
-C. <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
+C. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API.
+
+D. <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
 aggregating events from Google Gmail and Microsoft Outlook into a single "Single Pane of Glass" view</a> 
 using https://github.com/Rani-01/Calendar_Merge.git
 
-D. An app to make it easier for people to <strong>restrict their diet</strong> of salt, sugar, potassium, etc. The app can keep shopping lists and track inventory for freshness, then provide ideas for planning meals with variety.
+E. An app to make it easier for people to <strong>restrict their diet</strong> of salt, sugar, potassium, etc. The app can keep shopping lists and track inventory for freshness, then provide ideas for planning meals with variety.
 
-E. For monitization, make use of "Stripe for payments" agent interfaces.
+F. For monitization, make use of "Stripe for payments" agent interfaces.
 
-F. An MCP service that returns the lowest-cost cloud region within multi-region clouds (AWS, Azure, GCP, Oracle, etc.)
+G. An MCP service that returns the lowest-cost cloud region within multi-region clouds (AWS, Azure, GCP, Oracle, etc.)
 
 
 ## Socials
@@ -347,7 +349,7 @@ Issues with Kiro overheard
    🍺  kiro-cli was successfully installed!
    </pre>
 
-1. Restart your session or apply Docker group changes by running:
+1. ??? Restart your session or apply Docker group changes by running:
    ```
    newgrp docker
    ```
@@ -718,9 +720,56 @@ Hooks delegate tasks to a collaborator.
 
 Kiro Hooks enforce consistency. Set up a hook once, and Kiro handles the rest.
 
-On Windows 11 OS, use voice dictation (speech to text) by pressing Windows key + H.
 
-TOOL: To convert a repo injestible by AI, change "github.com" to "gitinjest.com" and paste it in Claude.
+## Tools 
+
+QUESTION: TOOL: To convert a repo ingestible by AI, change "github.com" to "gitinjest.com" and paste it in Claude.
+
+
+## Sample app
+
+Dynatrace Astroshop
+
+
+<a name="SpeechToText"></a>
+
+### Voice-driven development
+
+As of Feburary, 2026, Kiro does not have built-in voice input yet, unlike Cursor
+which has a microphone button in the chat window to let developers speak instructions instead of typing them. 
+Upvote the feature requests on Kiro's GitHub to help prioritize it:
+   * Issue #830 – Voice Interaction
+   * Issue #1344 – Speech to Text
+   <br /><br />
+
+Since Kiro is built on VS Code, try installing the VS Code Speech extension 
+(ms-vscode.vscode-speech) — it may work for the chat input panel.
+
+On macOS:
+   * Position cursor, then press and hold Right command after <a target="_blank" href="https://superwhisper.com/">brew install --cask superwhisper</a> has the best quality. Applications/superwhisper.app uses NVIDIA's small Parakeet model.
+   * Use your OS built-in speech-to-text: System Settings > Accessibility > Voice Control or press Fn Fn to dictate
+   * VoiceInk is a free option
+On Linux:
+   * Nerd Dictation is Whisper-based and free
+   * Install whisper-ctranslate2
+On Windows 11 OS, use voice dictation (speech to text) by pressing Windows key + H to open voice typing.
+   * Whisper 
+   <br /><br />
+
+<a target="_blank" href="https://www.youtube.com/watch?v=nqOrydK9ie8">VIDEO</a>:
+See https://github.com/aws-samples/sample-kiro-steering-studio which 
+references file <tt>.kiro/steering-studio/state.json</tt> to
+Vibe code an entire NodeJs app in TypeScript (.ts) using voice commands (without typing) in Kiro
+using <a target="_blank" href="https://nova.amazon.com/sonic">browser Web Audio API support</a> backed by the 
+<a target="_blank" href="https://docs.aws.amazon.com/ai/responsible-ai/nova-2-sonic/overview.html">amazon.nova-2-sonic-v1:0</a> <a target="_blank" href="https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conversational-speech.html">robust Speech-to-Speech</a> 
+<a target="_blank" href="https://docs.aws.amazon.com/nova/latest/userguide/speech.html">multi-modal model</a> 
+on Amazon Bedrock in the AWS Cloud. <a target="_blank" href="https://www.youtube.com/watch?v=3wQ_yte0TTo" title="Nova 2 Sonic Show and Tell Jan 21, 2026">VIDEO</a>
+Key Components:
+* NovaSonicClient: Manages bidirectional streaming with Amazon Bedrock, handling audio input/output and tool calling
+* SteeringStore: Maintains in-memory state of steering files with atomic file writes and session recovery
+* SessionManager: Tracks Socket.IO session state including audio readiness and keepalive timers
+* Tool System: Zod-validated tools for AI-controlled steering file updates
+<br /><br />
 
 
 <a name="Tasks"></a>
