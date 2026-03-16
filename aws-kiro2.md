@@ -26,13 +26,11 @@ This article defines how to create apps on the AWS cloud using Kiro, step-by-ste
 
 Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me explain what those words mean with this video flowchart:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773573921/aws-kiro-flow_n9h8r8.png"><img alt="aws-kiro-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773573921/aws-kiro-flow_n9h8r8.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773595227/aws-kiro-flow_z7ttdn.png"><img alt="aws-kiro-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773595227/aws-kiro-flow_z7ttdn.png" /></a>
 
-1. Each computer running within an <strong>infrastructure</strong> of various <strong>resources</strong> (such as network switches).
+1. Each computer we run is part of a whole <strong>infrastructure</strong> of various <strong>resources</strong> (such as network gateways and switches).
 
-1. Introductory lessons about computers talk about how "ones and zeros" move inside computers are controlled by programs described as <strong>executables</strong>.
-
-1. Since the 1960's, the <strong>"traditional"</strong> approach to turning <strong>ideas</strong> into <strong>computers</strong> doing things is to have human programmers <strong>implement</strong> or manually <strong>write</strong> a lot of human-readable <strong>scripts</strong> (such as Java or Python) organized into <strong>libraries</strong> of code. 
+1. Since the 1960's, the <strong>"traditional"</strong> approach to turning <strong>ideas</strong> into computers doing things is to have human programmers <strong>implement</strong> or manually <strong>write</strong> a lot of human-readable <strong>scripts</strong> (such as Java or Python) organized into <strong>libraries</strong> of code. 
 
 1. Scripts contain English keywords that need to be <strong>compiled</strong> into the <strong>executables</strong> that control the "ones and zeros" inside computers.
 
