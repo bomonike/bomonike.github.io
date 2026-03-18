@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-18"
-lastchange: "26-03-18 v097 ROUGE :acronyms.md"
+lastchange: "26-03-18 v098 HDM :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -600,7 +600,7 @@ created: "2024-12-28"
 *	HANA	=	High-performance ANalytic Application	(SAP's in-memory column-oriented relational DBMS)
 * HBD = Happy Birth Day
 *	HBI	=	High Business Impact (flag for Azure to add encryption and limit diagnostics collection on sensitive data)
-* HBM = High Bandwidth Memory (a type of RAM designed for high-performance applications like GPUs, AI accelerators, and supercomputers)
+* HBM = High Bandwidth Memory (a sandwich of RAM on top of an imposer next to the processor for 1-4 TB/s bandwidth to GPUs, AI accelerators, and supercomputers)
 * HNSW = Hierarchical Navigable Small World (graphs)
 *	HCL	=	HashiCorp Configuration Language
 *	HD	=	High Definition
