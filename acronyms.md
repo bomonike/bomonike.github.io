@@ -1,19 +1,19 @@
 ---
 layout: post
-date: "2025-02-20"
-lastchange: "v032 + rm flags :acronyms.md"
+date: "2026-03-18"
+lastchange: "26-03-18 v097 ROUGE :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
-excerpt: "Because it's often difficult to know the context of an acronym, here, in one page, are all 1,000+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG!"
+excerpt: "Here in one page, are all 1,000+ acronyms covering Business, Finance, Marketing as well as: AI/Quantum/Web3 IT, Security, Networking, Amazon, Azure, GCP, OMG!"
 tags: [cloud, security, management, audit]
 comments: true
 created: "2024-12-28"
 ---
-<a target="_blank" href="https://bomonike.github.io/acronyms"><img align="right" width="100" height="100" alt="acronyms-qr.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/acronyms-qr.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 
 <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a>
+
 
 <hr />
 
@@ -22,7 +22,9 @@ created: "2024-12-28"
 *	2FA	=	Two-Factor Authentication (MFA)
 *	2SA	=	Two-Step Authentication
 *	3DES	=	Triple Digital Encryption Standard
-* 5IR = Fifth Industrial Revolution
+* 4IR = Fourth Industrial Revolution (automation of business processes to make data the primary commodity in your business)
+* 5IR = Fifth Industrial Revolution (autonomous AI agents that reason, select tools, take action without human confirmation)
+* 86 = NSFW slang for kicking someone out
 
 <a name="A"></a>
 ### A
@@ -33,6 +35,7 @@ created: "2024-12-28"
 *	ABAC	=	Attribute-Based Access Control
 *	ABI	=	Application Binary Interface (on Apple operating systems)
 *	AC	=	Alternating Current	(as in electrical wall plugs)
+* ACE = Access Control Entries (determines which subjects - user accounts, host IP addresses, and so on - are allowed or denied access to the object and the privileges given)
 *	ACI	=	Azure Container Instance	(Microsoft)
 *	ACL	=	Access Control List	(defines CRUD permissions for an identity)
 *	ACM	=	AWS Certificate Manager (Amazon)
@@ -42,10 +45,10 @@ created: "2024-12-28"
 *	ADC	=	Analog to Digital Converter (converts continuos analog to digital values on microprocessor boards)
 *	ADC	=	AWS Direct Connect (Amazon)
 *	ADE	=	Automated Device Enrollment (Microsoft 365 Intune auto configuration of macOS)
-* ACE = Access Control Entries (determines which subjects - user accounts, host IP addresses, and so on - are allowed or denied access to the object and the privileges given)
 *	ADAS	=	Advanced Driver Assistance Systems
 *	ADF	=	Azure Data Factory (part of Microsoft Fabric)
 *	ADLS	=	Azure Data Lake Storage (Microsoft cloud Fabric storage)
+*	ADR	=	Architectual Decision Record
 *	AEAD	=	Authenticated Encryption with Associated Data	(cipher used in TLS)
 *	AES	=	Advanced Encryption Standard	(symmetric encryption algorithm)
 * AFAIK	=	As Far As I Know (internet slang)
@@ -95,7 +98,7 @@ created: "2024-12-28"
 *	ARO	=	Annual Rate of Occurrence
 *	ARP	=	Address Resolution Protocol	(Networking)
 *	ARR	=	Annual Recurring Revenue
-*	ASAP	=	As Soon As Possible (slang)
+*	ASAP	=	As Soon As Possible (can be an initialism where each letter is pronounced)
 *	ASB	=	Azure Security Benchmarks (Microsoft)
 *	ASC	=	Azure Security Center (Microsoft)
 *	ASCII	=	American Standard Code Information Interchange (defined binary values to display letters and special characters)
@@ -109,7 +112,10 @@ created: "2024-12-28"
 *	ASO	=	Application Security Orchestration and Correlation (integrated security tools and processes)
 *	ASOC	=	Azure Service Operator
 *	ASPM	=	Application Security Posture Management
+*	ASR	=	Automatic Speech Recognition (an AI capability)
 *	ASR	=	Automated System Recovery
+* AST = Abstract Syntax Tree (a structured representation of source code used by compilers and tools to catch bugs and refactor code automatically)
+* ASVS = Application Security Verifiation Standard (levels defined by OWASP)
 *	ATA	=	Advanced Threat Analytics (Microsoft)
 *	ATARC	=	Advanced Technology Academic Research Center	(non-profit collaborative forum on emerging technology challenges like zero trust)
 *	ATO	=	Authority To Operate	(FEDRAMP designation for production-ready state)
@@ -150,6 +156,7 @@ created: "2024-12-28"
 *	BKM	=	Best Known Method
 *	BLE	=	Bluetooth Low Energy
 *	BLF	=	Business Logic Flaw
+*	BNPL	=	Buy Now Pay Later (debit credit offering from Klarna, Affirm, etc.)
 *	BOD	=	Board of Directors
 *	BOLA	=	Broken Object Level Authorization
 *	BOPLA	=	Broken Object Property Level Authorization
@@ -187,6 +194,7 @@ created: "2024-12-28"
 *	CA	=	Certificate Authority	(issues cryptographic certificates)
 *	CaaS	=	Container as a Service (such as AWS ECS or Azure AKS or Docker Cloud)
 *	CaC	=	Configuration as Code
+* CAD = Computer-Aided Design
 *	CAF	=	Cloud Adoption Framework (multi-cloud)
 *	CAGR	=	Compound Annual Growth Rate
 *	CAI	=	Cloud Asset Inventory (Google)
@@ -200,7 +208,9 @@ created: "2024-12-28"
 * CAR = Content Addressable aRchive (used in IPFS)
 *	CASB	=	Cloud Access Security Broker	(provides IAM services to mediate cloud service access)
 *	CBC	= Cipher Block Chaining (used by AES openssl encryption)
+*	CBD	=	Component Based Development (by reusing pre-existing loosely-coupled modular components)
 *	CBK	=	Common Body of Knowledge
+* CBRN = Chemical, Biological, Radiological, and Nuclear  (risks)
 *	CCB	=	Change Control Board	(organization)
 *	CCE	=	Critical Customer Escalation
 *	CCM	=	Cloud Controls Matrix	(from CSA)
@@ -244,6 +254,7 @@ created: "2024-12-28"
 *	CLU	=	Conversational Language Understanding (Azure AI Language)
 *	CMDB	=	Configuration Management Database	(ITIL term for where all aspects of the system is defined)
 *	CMK	=	Customer-Managed Key	(for encryption)
+*	CMO	=	Chief Marketing Officer
 *	CMP	=	Cloud Management Platform	(for easier use of multiple clouds)
 *	CN	=	Common Name	(a human-readable name of the subject in certificates)
 *	CNAME	=	Canonical Name Record	(DNS)
@@ -257,6 +268,7 @@ created: "2024-12-28"
 *	COOP	=	Continuity of Operations (plan)
 *	CORS	=	Cross-Origin Resource Sharing	(used by browsers to allow web apps to access resources from other origins)
 *	COSO	=	Committee of Sponsoring Organization	(of the Treadway Commission)
+*	CoT	=	CoT (Chain of Thought - reasoning in AI)
 *	COTS	=	Commercial Off-The-Shelf	(Software vs. custom-built)
 *	CPA	=	Certified Public Accountant
 *	CPIC	=	Capital Planning Investment Controls
@@ -319,10 +331,12 @@ created: "2024-12-28"
 
 *	DaaS	=	Data as a Service
 *	DA	=	Developer Advocate
+*	DAAT	=	Dangerous Asymmetric Advanced Technologies
 *	DAC	=	Digital to Analog Converter
 *	DAC	=	Discretionary Access Control (for Security)
 *	DAG	=	Directed Acyclic Graph
 *	DAO	=	Decentralized Autonomous Organization
+* Dapps = Decentralized Applications (run on peer-to-peer networks, such as a blockchain using smart contracts)
 *	DART	=	Detection and Response Team (Microsoft)
 *	DAX	=	Data Analysis Expressions   (Microsoft formula language)
 *	DAX	=	DynamoDB Accelerator (Amazon)
@@ -354,6 +368,7 @@ created: "2024-12-28"
 * DIY = Do It Yourself
 *	DKIM	=	DomainKeys Identified Mail	(provides public keys for signing of emails to prevent spoofing)
 *	DLP	=	Data Loss Prevention
+* DMA-BUF = Direct Memory Access Buffering (for GPU)
 * DMARC = Domain-based Message Authentication Reporting and Conformance (policies for VMC about what to do when SPF and DKIM fails)
 *	DMCA	=	Digital Millennium Copyright Act
 *	DMI	=	Direct Media Interface (the bus connecting the chipset and the CPU)
@@ -367,7 +382,9 @@ created: "2024-12-28"
 *	DoD	=	Definition of Done
 *	DOD	=	Department of Defense	(US government organization)
 *	DODAF	=	Department of Defense Architecture Framework
+*	DoH	=	DNS over HTTPS
 *	DoR	=	Definition of Ready
+* DPO = Direct Preference Optimization (technique to optimize models based on preference data or ranking)
 *	DPIA	=	Data Protection Impact Assessment (<a target="_blank" href="https://ec.europa.eu/newsroom/article29/items/611236">required by EU GDPR</a>)
 * DPL = Data Protection Officer (job role required by GDPR)
 *	DQL	=	Data Query Language (to SELECT SQL data)
@@ -381,7 +398,7 @@ created: "2024-12-28"
 *	DRDoS	=	Distributed Reflection Denial-of-Service
 *	DSC	=	Digital Signature Algorithm	(algorithm for signatures)
 *	DSC	=	Desired State Configuration (declarative DevOps)
-*	DSL	=	Domain-Specific Language (used to control Apache Kafka stream processing)
+*	DSL	=	Domain-Specific Language (custom data structure to control processing such as Apache Kafka streams)
 *	DSL	=	Digital Subscriber Line
 * DSP = Digital Signal Processing
 * DSSE = Dead Simple Signing Envelope (signing methods and formats used by Secure Systems Lab)
@@ -389,6 +406,8 @@ created: "2024-12-28"
 *	DST	=	Daylight Saving Time
 *	DTLS	=	Datagram Transport Layer Security
 *	DUT	=	Device Under Test
+*	DVIA	=	Damn Vulnerable iOS Application (written in Swift, <a target="_blank" href="https://github.com/prateek147/DVIA-v2">on GitHub</a>)
+*	DVWA	=	Damn Vulnerable Web Application (by OWASP)
 *	DWaaS	=	Data Warehouse as a Service
 *	DWeb	=	Decentralized Web
 *	DWBH	=	Don't Worry Be Happy (internet slang)
@@ -411,9 +430,10 @@ created: "2024-12-28"
 *	ECS	=	Elastic Container Service	(Amazon service)
 *	ECU	=	EC2 compute unit	(Amazon)
 *	EDA	=	Event Driven Architecture	(Serverless)
+* EDA = Exploratory Data Analysis (an iterative process to understand data through investigative analysis of the data)
 *	EDM	=	External Dependency Management	(NIST)
 * EDPB = European Data Protection Board (EU GDPR)
-*	EDR	=	Endpoint Detection and Remediation
+*	EDR	=	Endpoint Detection and Remediation (Defender for endpoints)
 *	ECDSA	=	Elliptic Curve Digital Signature Algorithm	(algorithm for signatures)
 *	ECU	=	Electronic Control Unit (Embedded system in autos)
 *	EDA	=	Exploratory Data Analysis (Microsoft MLOps)
@@ -458,6 +478,7 @@ created: "2024-12-28"
 *	EPSS	=	Exploit Prediction Scoring System (to predict the likelihood of a vulnerability being exploited)
 *	ERM	=	Enterprise Risk Management
 *	ERP	=	Enterprise Resource Planning	(SAP does this)
+* ESB = ???
 * eSRAM = embedded Static Random-Access Memory (TSMC memory coupled with the GPU of Microsoft Xbox One gaming console's architecture)
 * ESNI = Encrypted Server Name Indication (with TLS 1.3)
 *	ETDR	=	Endpoint Threat Detection and Response (security)
@@ -487,6 +508,7 @@ created: "2024-12-28"
 * FFB = Force Feedback (on gaming consoles)
 * FFT = Fast Fourier transform
 *	FGAC	=	Fine-grained Access Control (AWS)
+*	FHE	=	Fully Homomorphic Encryption
 *	FHRP	=	First Hop Redundancy Protocol (for shared IP routing redundancy)
 * FHS = Filesystem Hierarchy Standard (directory structure of Linux distributions)
 *	FIDO2	=	Fast IDentity Online	(Spec for web authorization using devices with PKI instead of passwords)
@@ -494,6 +516,7 @@ created: "2024-12-28"
 *	FIM	=	Federated Identity Management
 *	FIM	=	File Integrity Monitoring	(for Intrusion Detection)
 *	FinFET	=	Fin (as in fish) FET
+* FIPS = Federal Information Processing Standards (aligns with ISO/IEC 19790 to specify encryption, key management, etc. to protect data over 4 levels)
 *	FISMA	=	Federal Information Security Management Act (US government)
 * FLC = Fuzzy Logic Control
 *	FM	=	Foundation Model (LLM for Generative AI)
@@ -513,6 +536,7 @@ created: "2024-12-28"
 * FSBP = Foundational Security Best Practices (defined by AWS)
 *	FSD	=	Full Self-Driving (by autonomous vehicles)
 *	FSM	=	Finite State Machine
+*	FTW	=	For The Win (a big contributor to great success)
 *	FYE	=	Fiscal Year End
 *	FYI	=	For Your Information
 *	FUD	=	Fear Uncertainty and Doubt
@@ -536,13 +560,14 @@ created: "2024-12-28"
 *	GEOINT	=	Geospatial Intelligence	(from analysis and visualization of security activities on a map)
 *	GG	=	Good Game (gamer digital handshake to convey sportsmanship)
 * GGML = GPT-Generated Model Language (Early Tensor library designed for machine learning large models at high performance)
-* GGUF = GPT-Generated Unified Format (for sharing LLMs)
+* GGUF = GPT-Generated Unified Format (model for sharing LLMs with Ollama or LM Studio using JSON-RPC)
 *	GHA	=	GitHub Actions	(SVM cloud purchased by Microsoft)
 *	GID	=	Group Identifier	(used in Kubernetes)
 * GIL = Global Interpreter Lock (removed in Python 3.13)
 *	GKE	=	Google Kubernetes Engine	(manages container images within Google cloud)
 *	GKS	=	Google Kubernetes Service	(runs container images within Google-managed Kubernetes)
 *	GLB	=	Global Load Balancing
+*	GLBA	=	Gramm-Leach-Bliley Act (US regulation of financial data privacy protection)
 *	GNM	=	Global Network Manager	(HashiCorp product feature)
 *	GNU	=	GNU is Not Unix	(a recursive acronym for the set of commands in Linux Bash scripts)
 *	GPG	=	GNU Privacy Guard	(software program to handle encryption)
@@ -551,8 +576,10 @@ created: "2024-12-28"
 *	GPS	=	Global Positioning System
 *	GPT	=	Generative Pre-trained Transformer (LLM used in ChatGPT by OpenAI for GenAI)
 *	GPT	=	GUID Partition Table (used with UEFI)
+* GQA = Generalized Question Answering (a dataset for visual question answering tasks)
 *	GRC	=	Governance and Risk and Compliance
 *	gRPC =	Global Remote Procedure Call	(a protocol to connect services)
+* GRPO = Generalized Reinforcement Policy Optimization (<a target="_blank" href="https://arxiv.org/abs/2502.18548">advanced</a> reinforcement learning optimization used by DeepSeek)
 *	GRS	=	Geo-Redundant Storage (replication of 3 copies in an Availability Zone in each of two Azure regions)
 *	GSI	=	Global Secondary Index (AWS DynamoDB)
 *	GSI	=	Global System Integrator
@@ -573,6 +600,7 @@ created: "2024-12-28"
 *	HANA	=	High-performance ANalytic Application	(SAP's in-memory column-oriented relational DBMS)
 * HBD = Happy Birth Day
 *	HBI	=	High Business Impact (flag for Azure to add encryption and limit diagnostics collection on sensitive data)
+* HBM = High Bandwidth Memory (a type of RAM designed for high-performance applications like GPUs, AI accelerators, and supercomputers)
 * HNSW = Hierarchical Navigable Small World (graphs)
 *	HCL	=	HashiCorp Configuration Language
 *	HD	=	High Definition
@@ -581,11 +609,13 @@ created: "2024-12-28"
 *	HCM	=	Human Capital Management	(system for HR processes)
 *	HCP	=	HashiCorp Cloud Provider
 *	HCS	=	HashiCorp Consul Service	(SaaS on Azure)
+*	HE	=	Homomorphic Encryption  (Privacy-Preserving technology)
 * HIDS	=	Host-Based Intrusion Detection System
 *	HIPAA	=	Health Insurance Portability and Accountability Act
 *	HiPPO	=	Highest Paid Person's Opinion (deference between high and low status employees)
 *	HLS	=	HTTP Live Streaming (Apple video streaming protocol)
 *	HMI	=	Human-Machine Interface
+* HMM = Hidden Markov Model (AI used for speech recognition)
 * HNDL = Harvest Now, Decrypt Later (store encrypted data for decrypting later using post-quantum computers)
 *	HPA	=	Horizontal Pod Autoscaler	(Kubernetes)
 *	HPC	=	High-Performance Compute
@@ -624,9 +654,10 @@ created: "2024-12-28"
 *	ICMP	=	Internet Control Message Protocol	(used by the Linux ping command)
 *	ICS	=	Industrial Control System	(aka Operational Technologies)
 *	ICT	=	Information and Communication Technology
+*	ICT	=	Ideal Cycle Time (maximum achievable performance for OEE Fully Productive Time)
 *	ICYMI	=	In Case You Missed It
 *	ID	=	Identifier
-*	IDaaS	=	Identity as a Service
+*	IDaaS	=	Identity as a Service (for central management of users and groups)
 *	IDE	=	Integrated Development Environment
 * IDN = Unicode Domain Names
 *	IDOR	=	Insecure Direct Object Reference
@@ -717,7 +748,7 @@ created: "2024-12-28"
 *	KPL	=	Kinesis Python Library (AWS)
 *	KPU	=	Kinesis Processing Units (AWS streaming memory and compute)
 *	KQL	=	Kusto Query Language (to access Microsoft Azure Data Explorer)
-*	KTLO	=	Keep/Keeping The Lights On (minimal necessary effort and income)
+*	KTLO	=	Keep/Keeping The Lights On (minimal necessary effort and income for legacy capabilities)
 *	KTS	=	Kubernetes Threat Detection	(Google service)
 *	KRI	=	Key Recovery Information
 *	KSAs	=	Knowledge, Skills, and Abilities (Work Roles)
@@ -731,10 +762,12 @@ created: "2024-12-28"
 * LAM = Large Action Models (multihop & multimodal data type for agentic/action on LLMs)
 *	LAMP	=	Linux OS + Apache web server + MySQL DB + PHP/Perl/Python	(open-source web development technology stack)
 *	LAN	=	Local Area Network
+* LARPing = Live Action Role-Playing (nteractive gaming where participants physically act out their characters' actions in real time)
 * LCEL = LangChain Expression Language (chain series of AI models and parsers)
 * LCM = Large Concepts Model (Meta's approach for reasoning)
 *	LDAP	=	Lightweight Directory Access Protocol	(used by Linux to manage user and group access)
 *	LED	=	Light-Emitting Diode
+* LER = Lable Edige Router (edge routers used by MPLS using forward equivalence classes)
 *	LF-TBAC	=	Lake Formation tag-based access control (AWS)
 *	LGPD	=	Lei Geral de Proteção de Dados Pessoais (privacy/data protection law in Brazil)
 * LGTM = Looks Good To Me
@@ -742,8 +775,10 @@ created: "2024-12-28"
 *	LI	=	Lead Implementer
 *	LIFO	=	Last In - Last Out
 * LIMS = Laboratory Information Management System
+* LINDDUN = framework to ensure privacy
 *	LLC	=	Limited Liability Company
 *	LLM	=	Large Language Model (such as GPT-x for Generative AI)
+*	LMM	=	Large Multimodal Model (Meta's approach for reasoning)
 *	LLMNR	=	Link-Local Multicast Name Resolution (Microsoft protocol for name resolution)
 *	LMS	=	Learning Management System
 *	LOL	=	Laughing Out Loud (internet slang)
@@ -754,6 +789,8 @@ created: "2024-12-28"
 *	LRS	=	Locally-Redundant Storage (within same Azure Availability Zone)
 *	LSD	=	Least Significant Digit
 *	LSI	=	Local Secondary Index (AWS DynamoDB)
+* LSP = Label Switched Paths (used by MPLS)
+* LSR = Label Switched Routers (core routers used by MPLS to swap labels using a label forwarding table)
 *	LTM	=	Last Twelve Months
 *	LUKS	=	Linux Unified Key Setup (root + boot + swap partition encryption)
 *	LUN	=	Logical Unit Number (within a physical storage device volume manager)
@@ -771,6 +808,8 @@ created: "2024-12-28"
 * MAE = Mean Absolute Error (to calculate the accuracy of a regression model)
 *	MAP	=	Minimum Acceptable Product
 *	MASINT	=	Measurement and Signatures Intelligence	(of weapons capabilities and industrial activities)
+* MASTG = Mobile Application Security Testing Guide (defined by OWASP)
+*	MASVS	=	Mobile Application Security Verification Standard (defined by OWASP)
 *	MBR	=	Master Boot Record
 *	MBCFET	=	Multi-Bridge Channel Field Effect Transister (Samsung)
 *	MCSB	=	Microsoft Cybersecurity Security Benchmark (best-practice framework using Microsoft Defender for Cloud. Successor of Azure Security Benchmark v3)
@@ -778,6 +817,7 @@ created: "2024-12-28"
 *	MCRA	=	Microsoft Cybersecurity Reference Architectures
 *	MCU	=	Microprocessor Unit (integrated circuit that contains one or more CPUs and supporting electronics for general-purpose computing)
 *	MDFC	=	Microsoft Defender for Cloud
+* MDP = Markov Decision Process
 *	MDT	=	Microsoft Deployment Toolkit (to install Windows 11 from file shares)
 *	MDTI	=	Microsoft Defender Threat Intelligence
 *	MDM	=	Master Data Management (for a single source of truth about critical corporate data)
@@ -792,6 +832,7 @@ created: "2024-12-28"
 *	MFA	=	Multi-Factor Authentication	(security)
 * MFS = Mutable File System (to read and write files on web3 IPFS)
 * MGT = Microsoft Graph Toolkit (to read the Outlook calendars and log of actions by each Microsoft user)
+* MHA = Multi-Head Attention (traditional mechanism to MQA in transformers where the model jointly attend to information from different representation subspaces)
 *	MIG	=	Managed Instance Group (for autoscaling within Google Cloud)
 *	MIP	=	Microsoft Information Protection (sensitivity labels)
 *	MIT	=	Most Important Task
@@ -808,10 +849,12 @@ created: "2024-12-28"
 *	MNC	=	Multi-National Corporation
 * MNO = Mobile Network Operator (ATT, Verizon, T-Mobile)
 *	MOD	=	Manager on Duty (incident manager - security and hospitality industry)
-* MoE = Mixture of Experts (in AI)
+* MoE = Mixture of Experts (in AI, Transformer for longer context)
 * MOSFET = Metal Oxide Field Effect Transitor
 * MPC = Model Predictive Control
+* MPLS = Multiprotocol Label Switching (WAN service provider between Layer 2 and Layer 3 that forwards traffic based on short label-switched paths instead of traditional IP lookups at every hop, for predictable paths, QoS, and VPN services between sites)
 *	MPP	=	Massively Parallel Processing (on databases)
+* MQA = Multi-Query Attention (a transformer encoding, used by PaLM and Falcon, that uses less memory and bandwidth than MHA, without sacrificing accuracy, by shareing Keys and Values across all heads but keeps separate transformations for each Query)
 *	MRO	=	Method Resolution Order (in Python multiple inheritance hierarchy using C3 linearization algorithm which uses the method from the first parent class in the inheritance list)
 *	MS	=	Microsoft
 *	MSA	=	Master Service Agreement
@@ -859,9 +902,10 @@ created: "2024-12-28"
 *	NDE	=	Net Dollar Expansion
 * NER = Named Entity Recognition (identifying and extracting names of persons, organizations, locations, dates from text and media)
 * NeRF = Neural Radiance Fields (for generating 3D content from 2D images)
-*	NPU	=	Neural Processing Unit (specialized for processing AI neural networks in parallel, especially on edge/hand-held devices)
+*	NHI	=	<a target="_blank" href="https://cloudsecurityalliance.org/search?s=NHI#">Non-Human Identities (security)</a>
 * NDI = National Defense Information (classified secrets)
 *	NDRR	=	Net Dollar Retention Rate
+* NER = Named Entity Recognition (AI)
 *	NFR	=	Non-Functional Requirements
 *	NFS	=	Network File System
 *	NFT	=	Non-fungible Tokens (currently defined as investments rather than consumer goods)
@@ -872,25 +916,29 @@ created: "2024-12-28"
 * NIACAP	=	National Information Assurance Certification and Accreditation Process
 *	NIAP	=	National Information Assurance Partnership (Common Criteria)
 *	NIC	=	Network Interface Card
+*	NIM	=	NVIDIA Inference Microservices
 *	NISQ	=	Noisy Intermediate-Scale Quantum (device)
 *	NIST	=	National Institute of Standards and Technology	(US)
+* NKI = Neuron Kernel Interface (custom kernel for AWS Neuron SDK)
 *	NLB	=	Network Load Balancer	(Amazon)
 *	NLP	=	Natural Language Processing (interaction between computers and human language such as Alexa and Google Assistant)
 *	NLU	=	Natural Language Understanding  (Alexa & Generative AI)
+* NN = Neural Network
 *	NOC	=	Network Operations Center
 *	NoSQL	=	(Nonrelational database system such as key-value pair document storage in DynamoDB)
 *	NPD	=	Non-Production (vs PRD for production in keeping with a consistent number of letters)
 *	NPS	=	Net Promoter Score (rating by customers willing to promote to others)
-*	NPU	=	Neuro Processing Unit (powers Microft's AI laptops)
+*	NPU	=	Neural Processing Unit (specialized for processing AI neural networks in parallel, especially on edge/hand-held devices and on Microft's AI laptops)
 *	NSA	=	National Security Agency	(conducts SIGINT)
 * NSFET = Nanosheet Field-Effect Transistor
-*	NSFW	=	Not Safe For Work (chat slang)
+*	NSFW	=	Not Safe For Work (slang one should avoid repeating)
 *	NSG	=	Network Security Group	(Azure)
 *	NSP	=	Next Sentence Prediction (GenAI for BERT Natural Language Processing)
 *	NTA	=	Network Traffic Anomaly
 *	NTM	=	Next Twelve Months
 *	NTP	=	Network Time Protocol
 * NUI = Natural User Interface
+* NUMA = Non-Uniform Memory Access (optimization enables AI runtimes to keep tensors close to the accelerator and cut back on data copying)
 *	NVIDIA	=	(the corporation which produces GPUs for AI and graphics)
 * NVMe = Non-Volatile Memory Express (protocol to connect SSDs to the CPU via high-speed PCIe bus)
 
@@ -908,7 +956,7 @@ created: "2024-12-28"
 *	OCM	=	Organizational Change Management
 *	ODNI	=	Office of the Director of National Intelligence
 *	OECD	=	Organization for Economic Cooperation and Development (published trans-border privacy guidelines in 1980)
-* OEE = Overall Equipment Effectiveness
+* OEE = Overall Equipment Effectiveness (the percentage metric of making only good parts as fast as possible (Good Count x Ideal Cycle Time) / Planned Production Time. OEE  OEE does not provide information about loss-related factors in the preferred metric consisting of Availability, Performance, and Quality)
 *	OEL	=	Oracle Enterprise Linux
 *	OEM	=	Original Equipment Manufacturer
 *	OEP	=	Occupant Emergency Plan
@@ -916,7 +964,7 @@ created: "2024-12-28"
 *	OG	=	Original Gangster (slang to praise someone as exceptional, authentic, or old-school)
 *	OIDC	=	OpenID Connect
 *	OKR	=	Objectives and Key Results
-*	OODA	=	Objective and Key Results
+*	OODA	=	Observe Orient Decide Act (decision making sequence used by US Air Force for agility)
 *	OOM	=	Orders Of Magnatude (where 10x = 1 OOM)
 * OLA	= Observe - Orient - Decide - Act (acrostic for the rapid decision-making strategy used by US fighter pilots during aerial combat)
 *	OLAP	=	OnLine Analytical Processing	(A business intelligence approach that allows users to analyze large amounts of data from different points of view)
@@ -928,6 +976,8 @@ created: "2024-12-28"
 *	OPEX	=	Operating Expenditures	(impacts Profit and Loss statement for current periods)
 *	ORC	=	Optimized Row Columnar (data format used within Apache Hadoop databases)
 * ORM = Object-Relational Mapping (to simplify interaction between OOP CRUD apps and SQL databases)
+* OOS = Out of Stock (when a retail store is out of inventory to sell of an item)
+* OOV = Out-Of-Vocabulary (words or terms that a LLM has not encountered during its training phase)
 *	OS	=	Operating System
 *	OSCAL	=	Open Security Controls Assessment Language	(NIST-defined format for communicating CVEs)
 *	OSCP	=	Online Certificate Status Protocol	(used to obtain the revocation status of X.509 digital certificates)
@@ -937,12 +987,13 @@ created: "2024-12-28"
 *	OT	=	Operational Technology
 *	OTA	=	Over The Air
 *	OTCSA	= Operational Technology Cyber Security Alliance
+*	OTF 	= Open Table Formats (industry standard used by Delta Lake, Apache Iceberg, Hudi for versioned object storage)
 *	OTOH	=	On the Other Hand (chat slang)
 *	OTP	=	One-Time Password (for security)
 *	OTR	=	Off The Record (privacy)
 *	OVAL	=	Open Vulnerability and Assessment Language
 *	OU	=	Organizational Unit
-* OUI = Organizational Unique Identifier | The first three bytes of the six-byte field of the MAC address the IEEE identifies as vendor of the network adapter.
+* OUI = Organizational Unique Identifier (The first three bytes of the six-byte field of the MAC address the IEEE identifies as vendor of the network adapter)
 * OWA = Outlook Web Application (Microsoft Exchange web interface)
 *	OWASP	=	Open Web Application Security Project
 
@@ -952,21 +1003,28 @@ created: "2024-12-28"
 *	P2P	=	Person to Person or Point to Point
 *	PaC	=	Policy as Code
 *	PaaS	=	Platform as a Service
+* PaLM = Pathways Language Model (built based on Google's Pathways system as a dense decoder-only transformer LLM with 540 billion parameters for a wide range of AI tasks including reasoning, natural language understanding, text generation, multi-step logical inference reasoning, arithmetic, code generation, and translation)
 *	PAM	=	Privileged Access Management
 *	PAN	=	Primary Account Number (PCI DSS)
 * PAP = Permissible Actions Protocol (defines actions to avoid attackers detecting investigation - RED for non-detectable actions, AMBER for passive, GREEN for active, WHITE for no restrictions)
 * PASTA = Process for Attack Simulation and Threat Analysis
+*	PAT	=	Personal Access Token (to authenticate GitHub static access)
 *	PAT	=	Port Address Translation (networking)
 *	PAW	=	Privileged Access Workstation (Microsoft)
 *	PAYG	=	Pay-As-You-Go (such as for cloud services billing)
 *	PBC	=	Printed Control Board
 *	PBC	=	Provided By Client	(SOC term)
+*	PBC	=	Public Benefit Corporation (where mission overrides shareholder interests)
+*	PBL	=	Project-Based Learning
 *	PC	=	Personal Computer	(refers to a Microsoft Windows machine)
+* PCA = Principal Component Analysis (<a target="_blank" href="https://learning.oreilly.com/library/view/hands-on-machine-learning/9781098125967/ch08.html#id129">dimensionality reduction algorithm that identifies the hyperplane variance closest to the data to project data onto it</a>)
 *	PCI	=	Peripheral Components Interconnect
 *	PCI DSS	=	Payment Card Industry Data Security Standard	(private regulation by credit card processors to prevent identity theft)
 * PCIe = Peripheral Component Interconnect Express (bus to connect solid-state drives directly to the CPU)
+* PDCA = Plan Do Check Act (created by Deming to iterate improvement, adopted for Agile development)
 *	PDD	=	Project Delivery Document	(containing IS project scope	 prerequisites	 scheduling info	 etc.)
 *	PDF	=	Portable Document Format	(the format created by Adobe to create a universally accessible file containing graphics and text)
+* PDM = Product Data Management (aka version control of CAD and other data for branching & merging)
 * PDW = Parallel Data Warehouse (Microsoft SQL 2012 Analytics Platform System that became Azure SQL Data Warehouse)
 * PE = Pre-installed Environment (a bootable image of Microsoft Windows used to automate install)
 * PEFT = Parameter-Efficient Fine-Tuning (techniques such as LoRA to update a small subset of an AI ML model’s parameters)
@@ -978,6 +1036,7 @@ created: "2024-12-28"
 * PFAS = Per- and polyfluoroalkyl Substances (<a target="_blank" href="https://en.wikipedia.org/wiki/Per-_and_polyfluoroalkyl_substances">carcinogenic</a> forever chemicals)
 *	PFS	=	Perfect Forward Secrecy
 * PHD	=	Personal Health Dashboard
+*	PHE	=	Partially Homomorphic Encryption
 *	PHI	=	Protected Health Information
 *	PHP	=	(recursive acronym for PHP: Hypertext Preprocessor. A web scripting language used in WordPress)
 *	PHS	=	Password Hash Synchronization (Microsoft Azure AD Connect)
@@ -1007,9 +1066,13 @@ created: "2024-12-28"
 *	POLP	=	Principle of Least Privilege
 *	POM	=	Production Operations Management
 *	POR	=	Process of Record
+*	PPE	=	Personal Protective Equipment
+*	PPE	=	Poisoned Pipeline Execution (of CI/CD pipeline configuration files such as Jenkinsfile, .gitlab-ci.yml, makefile, etc.)
+*	PPE	=	Pre-Production Enviornment
 *	PPG	=	Point-to-Point Tunneling Protocol (networking)
 *	PPG	=	Proximity Placement Group (Azure VMs)
 *	PPK	=	Putty Private Key (AWS private key certificate encoding file type for Windows PuTTY SSH client)
+* PPO = Proximal Policy Optimization (A reinforcement learning algorithm that improves training stability and reliability)
 *	PPTP	=	Point-to-Point Tunneling Protocol
 *	PQC	=	Post-Quantum Cryptography (encryption resistant to crackers on fast quantum computers)
 *	PR	=	Pull Request	(GitHub feature for suggesting code changes and integrating them into the main code base)
@@ -1074,6 +1137,7 @@ created: "2024-12-28"
 * RDMA = Remote Direct Memory Access (to share liquid-cooled memory in parallel connected by low-latency Ethernet fabric by SMCI)
 *	RDP	=	Remote Desktop Protocol	(Microsoft technology for users to access a Windows computer remotely)
 *	RDS	=	Relational Database Service	(AWS cloud SQL service to host databases)
+* ReALM = Reference Resolution As Language Modeling (Apple's approach to language modeling powering Apple Intelligence)
 *	REST	=	Representational State Transfer
 *	REEs = Rare Earths Elements (mining and processing, mostly in China, for minerals needed in modern electronics)
 *	RFI	=	Request for Information
@@ -1098,10 +1162,12 @@ created: "2024-12-28"
 *	ROE	=	Return on Equity
 * RoHS = Restriction of Hazardous Substances Directive (EU Feb 2003)
 *	ROI	=	Return on Investment
+*	ROIC	=	Return on Invested Capital
 *	ROM	=	Read-only Memory
 *	ROS	=	Return on Sales
 *	ROSA	=	Red Hat OpenShift Service on AWS (containers)
 *	RoT	=	Root of Trust
+* ROUGE = Recall-Oriented Understudy for Gisting Evaluation (metrics for evaluating automatic summarization and machine translation)
 *	RPA	=	Robotic Process Automation
 *	RPC	=	Remote Procedure Call
 *	RPO	=	Recovery Point Objective
@@ -1111,6 +1177,7 @@ created: "2024-12-28"
 *	RSA	=	Resident System Engineer	(role within HashiCorp)
 *	RSA	=	Rivest + Shamir + Adleman	(an encryption algorithm and company name based on the initials of its inventors)
 *	RSS	=	Real Simple Syndication (web feed format)
+*	RSVP	=	répondez s’il vous plaît (French for Respond Please - an initialism where each letter is pronounced)
 *	RTC	=	Real Time Clock
 *	RTFM	=	Read The Fine Manual (slang)
 *	RTO	=	Recovery Time Objective
@@ -1153,21 +1220,25 @@ created: "2024-12-28"
 * SCRM = Cyber Supply Chain Risk Management (defined by NIST)
 *	SCSS	=	Sidecar Container Security Stack
 * SCT	=	Schema Conversion Tool (AWS)
+* SDD = Spec Driven Development (Vibe coding Kiro and Spec Kit platform from GitHub)
 *	SDE	=	Standardized Development Environment
 *	SDK	=	Software Development Kit
+* SDL = Schema Definition Language (in GraphQL)
 *	SDN	=	Software-Defined Networking	(used by AWS - an advancement to BGP used on public networks)
 *	SDLC	=	System Development Life Cycle
 *	SDMN	=	Software-defined Mobile Network (for SDN)
 * SDR = Single Data Rate (memory)
 * SDRAM = Synchronous Dynamic Random Access Memory
 *	SDP	=	Software Defined Perimeter
+*	SDP	=	Software Delivery Platform
 *	SEB	=	Secure Enterprise Browsers
 *	SEC	=	Security and Exchange Commission (regulates US financial markets)
+* SERP = Search Engine Results Page
 *	SES	=	Simple Email Service	(AWS)
 *	SEU	=	Single Event Upset (a soft error caused by a random alpha particle flipping a bit)
 *	SF	=	Service Fabric	(Azure)
 * SFC = Sequential Function Charts
-* SFT = Supervised Fine Tuning
+* SFT = Supervised Fine Tuning (a pre-trained model on labeled data for a specific task)
 * SG	=	Security Group
 * SGD	=	Stochastic Gradient Descent (AI technique to iteratively optimize)
 *	SHA	=	Secure Hash Algorithm	(a method to identify whether a file has been altered - also used by GitHub to create an index)
@@ -1177,12 +1248,14 @@ created: "2024-12-28"
 *	SIEM	=	Security Information and Event Management
 *	SIG	=	Special Interest Group
 *	SIGINT	=	Signals Intelligence	(of electronic transmissions)
+*	SIMD	=	Single Instruction, Multiple Data (parallel processing technique)
 * SIP = Session Initiation Protocol (real-time multimedia communication sessions over IP networks)
 *	SIRP	=	Security Incident Response Plan	(for SOC2)
 *	SIRT	=	Security Incident Response Team	(work in a SOC department)
 *	SIS	=	Safety Instrumented System  (automated control system that safeguards manufacturing environment in case of any hazardous incident in the industry)
 *	SKSKSKSK	=	(internet slang expressing excitement)
 *	SLA	=	Service Level Agreement
+*	SLAM	=	Simultaneous Localization and Mapping (of image file contents by OpenCV)
 *	SLE	=	Single Loss Expectancy
 *	SLI	=	Service Level Indicator
 *	SLM	=	Small Language Model
@@ -1193,6 +1266,7 @@ created: "2024-12-28"
 *	SMB	=	Small or Mid-sized Business
 *	SME	=	Subject Matter Expert
 *	SMF	=	Session Management Function
+* SNDL = Store Now Decrypt Later (for malicious decryption when quantum enables it)
 *	SMI	=	Service Mesh Interface
 *	SNMP	=	Simple Network Management Protocol
 *	SMaaS	=	Service Mesh as a Service
@@ -1230,6 +1304,7 @@ created: "2024-12-28"
 *	SRE	=	Site Reliability Engineer	(job role)
 *	SRG	=	Security Requirements Guides (general guidelines for STIGs, from DISA)
 * SRP = Single Responsibility Principle
+* SRTM = Software Requirements Traceability Matrix
 * SRUM	=	System Resource Utilization Monitor (on Windows machines)
 *	SSAE	=	Statement on Standards for Attestation Engagements
 * SSAS = SQL Server Analysis Services (from Microsoft)
@@ -1237,7 +1312,9 @@ created: "2024-12-28"
 * SSE = Server-Sent Events (A one-way channel from server to client. The client subscribes to a stream of events, and the server continuously sends updates as text-based messages.)
 *	SSDT	=	SQL Server Data Tools (Microsoft SQL Server)
 *	SSE	=	Security Service Edge  (Microsoft conditional access mechanisms for Zero Trust)
+* SSE = Server Sent Events (machine-level protocol used between MCP components)
 *	SSE	=	Server-Side Encryption
+*	SSG	=	Static Site Generator
 *	SSDLC	=	Secure Software Development Lifecycle
 *	SSH	=	Secure Shell	(a Linux feature to enable remote access of computers)
 *	SSI	=	Sensitive Security Information
@@ -1262,6 +1339,7 @@ created: "2024-12-28"
 *	STS	=	Security Token Service	(AWS)
 *	STS	=	StatefulSets	(Kubernetes)
 *	SUT	=	System Under Test
+* SVD = Singular Value Decomposition (standard matrix factorization NumPy function to decompose training set)
 *	SVID	=	SPIFFE Verifiable Identity Document	(cryptographic file used by a workload to prove its identity to a resource or caller)
 * SWF	=	Simple Workflow (service from AWS for developers to run tasks in parallel or sequentially)
 *	SWG	=	Secure Web Gateway
@@ -1277,13 +1355,15 @@ created: "2024-12-28"
 *	TB	=	TerraByte
 *	TBD	=	To Be Decided	(common vernacular)
 *	TBH	=	To Be Honest (Gen Z slang)
+* TCB = Trusted Computing Base (secure boot kernel and other isolation tech)
 * TCC = Trusted Cloud Computing (Microsoft)
 * TCC = Transparency, Consent, and Control (for user data protection within Apple OS)
 * TCO	=	Total Cost of Ownership
-*	TDE	=	Transparent Data Encryption	(HashiCorp Vault feature to substitute encrypted values in databases instead of HSMs)
+*	TDE	=	Transparent Data Encryption	(encrypt database without altering app interactions by substituting encrypted values in the background outside apps)
 *	TDIR	=	Threat Detection and Incident Response (security workflow)
 * TDP = Thermal Design Power (avg. max. power a processor dissipates heat while running)
 *	TDM	=	Technical Decision Maker	(vs. Business Decision Maker)
+* TEE = Trusted Execution Environments (to provide secure runtime)
 *	TFC	=	Terraform Cloud	(SaaS Terraform offering)
 *	TFE	=	Terraform Enterprise	(self-installed/managed Terraform)
 * TFW	=	The Feeling When
@@ -1291,11 +1371,14 @@ created: "2024-12-28"
 *	TIC	=	Trusted Internet Connection
 *	TIN	=	Tax Identification Number
 *	TIP	=	Threat Intelligence Platform
+* TIPS = Treasury Inflation-Protected Securities (<a target="_blank" href="https://www.investopedia.com/articles/investing/080813/how-profit-inflation.asp">BLOG</a>)
 *	TCSEC	=	Trusted Computer System Evaluation Criteria
 *	TCO	=	Total Cost of Ownership
 *	TDD	=	Test-Driven Development
 *	TDM	=	Technical Decision Maker
 * TDS = Tabular Data Stream (network protocol for communication between Microsoft SQL Server and its clients)
+* TEEP = Total Effective Equipment Performance (the actual percentage of calendar hour asset utilization versus theoretical 24x365 maximum)
+* TEMPEST = (not an acronym for analyzing unshielded equipment emissions to steal information) <a target="_blank" href="https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/cryptologic-spectrum/tempest.pdf">pdf</a>
 *	TFE	=	Terraform Enterprise
 *	TLP	=	Traffic Light Protocol (defines levels of information sharing with contractors - CLEAR, GREEN, AMBER, RED)
 *	TTFN	=	Ta Ta For Now (chat)
@@ -1309,7 +1392,9 @@ created: "2024-12-28"
 *	TOE	=	Target of Evaluation	(what is being evaluated by the Common Criteria EAL)
 *	TOFU	=	Trust On First Use
 *	TOML	=	Tom's Obvious Minimal Language (config text file format)
+*	TOON	=	Token-Oriented Object Notation (more compact than JSON for reading by models)
 * TOPI = Tensor Operator Inventory (pre-defined templates of common tensor operators e.g., conv2d, transpose)
+*	TOPS	=	Tera Operations per Second (AI inference performance)
 *	TOTP	=	Time-based One Time Password
 *	TPISRM	=	Third Party Information Security Risk Management
 *	TPM	=	Trusted Platform Module	(on newer Microsoft Windows PCs)
@@ -1340,11 +1425,13 @@ created: "2024-12-28"
 *	UDM	=	Unified Data Management
 *	UDR	=	User-Defined Routes (used by Azure)
 *	UDS	=	Unified Diagnostic Services	(use in vehicles)
+*	UDT	=	User-defined Data Types
 *	UEBA	=	User and Entity Behavior Analytics	(detect any anomalous behavior - deviations from normal patterns of usage which have security implications)
 *	UEFI	=	Unified Extensible Firmware Interface	(spec. replaces BIOS to boot-up disks larger than 2TB)
 *	UEM	=	Unified Endpoint Management/Manager (Microsoft Intune and Config. Manager)
 *	UDP	=	User Datagram Protocol	(networking)
 *	UML	=	Unified Modeling Language
+* UNS = Unified Namespace (for MQTT to integrate IIoT components)
 *	UPF	=	User Plane Function
 *	UPN	=	User Principal Name (Microsoft)
 *	URI	=	Universal Resource Identifier
@@ -1368,8 +1455,9 @@ created: "2024-12-28"
 *	VAR	=	Value-Added Reseller
 *	VAT	=	Value-Added Tax
 *	VBO	=	Value-Based Outcome
+*	VCDM =	Verifiable Credentials Data Model v2.0 (W3C Candidate Recommendation 2024 defines a schema for issuing, exchanging, and verifying credentials in a decentralized ecosystem using cryptographic primitives such as JSON-LD proofs and JWT-based verifiable presentations)
 *	VCS	=	Version Control System
-*	VDI	=	Virtual Desktop Infrastructure (from Citrix, Microsoft, AWS, etc.)
+*	VDI	=	Virtual Desktop Infrastructure (from Citrix, Microsoft, AWS, etc. to share desktop infrastructure)
 *	VDP	=	Vulnerability Disclosure Program
 * VEX = Vulnerability Exploitability Exchange
 *	VGW	=	Virtual Gateway (Amazon AWS)
@@ -1392,7 +1480,9 @@ created: "2024-12-28"
 * VPG	=	Virtual Private Gateway (AWS)
 * VPS	=	Virtual Private Server (AWS)
 * VDP = Vulnerability Disclosure Policy (<a target="_blank" href="https://www.cisa.gov/securebydesign/pledge">CISA Pledge</a>)
+* VLM = Vision-Language Model (AI models that jointly understand and generate both visual and language data)
 *	VPN	=	Virtual Private Network
+* VRF = Virtual Routing and Forwarding (a way to run multiple, completely separate routing tables on the same network device so that traffic from different “tenants” or environments is isolated at Layer 3, similar to how VLANs isolate at Layer 2.)
 *	VRP	=	Vulnerability Research Program (way for organizations to receive security vulnerabilities found)
 *	VSM	=	Value Stream Mapping
 *	VSTS	=	Visual Studio Team Services  (Microsoft)
@@ -1443,7 +1533,7 @@ created: "2024-12-28"
 *	XKX	=	External Key Store	(Amazon service to store secrets outside of AWS)
 *	XDR	=	Extended Detection and Response (formerly Microsoft Security Center)
 *	XML	=	Extensible Markup Language
-*	XMPP	=	Extensible Message and Presence Protocol
+*	XMPP =	Extensible Message and Presence Protocol
 *	XOR	=	Exclusive-Or (Assembly language instruction and symmetric encryption algorithm)
 
 <a name="Y"></a>
@@ -1457,25 +1547,24 @@ created: "2024-12-28"
 <a name="Z"></a>
 ### Z
 
-* ZOPA = Zone Of Possible Agreement (in a negotiation)
+*	ZKP =	Zero-Knowledge Proof (cryptographic protocols where a prover demonstrates knowledge of a secret to a verifier without disclosing the actual secret or other information)
+*	ZOPA = Zone Of Possible Agreement (in a negotiation)
 *	ZRS	=	Zone-Redundant Storage (across 3 Azure Availability Zones)
 *	ZT	=	Zero Trust
 *	ZTA	=	Zero Trust Architecture
 *	ZTDA	=	Zero Trust Data Access
 *	ZTNA	=	Zero Trust Network Access/Architecture
 *	ZTS	=	Zero Trust Security
+
 <hr />
 
 ## Other Glossaries provide definitions:
   * <a target="_blank" href="https://www.youtube.com/watch?v=GBHim0-CyzU">VIDEO of acronyms</a> takes 21 minutes
   * https://www.acronymfinder.com/
   * https://tryhackme.com/r/glossary
+  * https://www.edglossary.org/
   * https://github.com/mikepound/tls-exercises/blob/master/glossary.pdf
   * https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html
   <br /><br />
 
-## More about Security
-
-This is one of a series about cyber security:
-
-{% include security_links.html %}
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
