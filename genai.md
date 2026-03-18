@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/genai
-date: "2025-02-18"
-lastchange: git commit -m"v006 + aws svcs :genai.md"
+date: "2026-03-17"
+lastchange: gxp "26-03-17 v008 google generic prompt :genai.md"
 file: "genai"
 title: "GenAI (Generative AI)"
 excerpt: "GenAI burst out in 2022 and changed the world with the generation of text, images, audio, and video."
@@ -14,6 +14,21 @@ created: "2023-08-08"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+## Discriminative
+
+Human beings can discriminate between win/loss, faulty/non-faulty, herb/tree, living/non-living, etc. They have natural intelligence (Discriminative Intelligence) to do so.
+
+Inspired by the human behavior, many artificial intelligence algorithms have been developed that mimic this human intelligence.
+
+AI systems also perform tasks like classification, clustering, and regression analysis.  This capability is termed as Discriminative AI.
+
+Potential harms by AI consequential enough to significantly harm humanity" are divided into four main areas:
+
+   * Deliberate misuse by humans
+   * Misalignment (where the AI takes action its programmers didn't intend)
+   * Mistakes (where the AI causes harm by accident)
+   * Structural risks where the interaction of AI agents could result in harm with no one system at fault
 
 ## Lay of the land
 
@@ -112,8 +127,8 @@ Use an Application Lifecycle plan to better envision and coordinate work on GenA
 
 1. Define Use Case
 
-   Define the problem to be solved and gather requirements. 
-   
+   Define the problem to be solved and gather requirements.
+
    * Create flowcharts as you follow the process as it actually is.
    * Measure time and costs
 
@@ -164,29 +179,6 @@ Use an Application Lifecycle plan to better envision and coordinate work on GenA
 
 <hr />
 
-<a name="Evaluation"></a>
-
-## Evaluation Quality Metrics
-
-It depends on what you are trying to achieve.
-
-* Classification tasks are measured using the "Accuracy" metric.
-* Regression tasks are measured using mean squared error (MSE).
-* Generation tasks are measured using mean squared error (MSE).
-
-* Task allocation tasks are measured using the F1 score.
-* Text summarization tasks are measured using the ROUGE score.
-* Question answering tasks are measured using the BLEU score.
-
-<a href="https://bomonike.github.io/ai-benchmarks">https://bomonike.github.io/ai-benchmarks</a>
-
-
-## Benchmarks
-
-https://betterbench.stanford.edu/
-A repository of AI benchmark assessments for informed benchmark selection through quality evaluation and best practice analysis
-
-
 ## Use Cases: Ranking GenAI models
 
 <a target="_blank" href="https://www.youtube.com/watch?v=Rxbirwpq9FA&t=7m12s">VIDEO</a>:
@@ -205,18 +197,6 @@ This comparison using benchmarks:
 
 * Multi-turn
 * Multi-turn w/Style Control
-
-Other benchmarks:
-
-   * AIME: O3-mini-high (Math)
-   * GPQA Diamond: for science
-   * Codeforces (ELO) for coding reaching a lofty 2130, making chess grandmasters nervous
-
-Clean code: 
-O3-mini achieved a perfect 10/10 on pylint for a Hangman game project.
-
-<a target="_blank" href="https://www.youtube.com/watch?v=7LTks_tOosk">VIDEO</a>:
-Build a game usong ChatGPT 03 Mini
 
 
 ## Prompt Engineering
@@ -283,7 +263,7 @@ They call it the "Google Killer".
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1739894682/ai-chat-541x544_y6vqwh.png"><img align="right" width="100" alt="ai-chat-541x544.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1739894682/ai-chat-541x544_y6vqwh.png" /></a>
 Unlike ChatGPT, Perplexity is an "answer engine":
    * Can reference where knowledge is from (Academic, etc.)
-   * Citations to sources are provided to reduce hallucinations 
+   * Citations to sources are provided to reduce hallucinations
    * Taps into real-time knowledge
    <br /><br />
 
@@ -381,6 +361,11 @@ Microsoft has a <a target="_blank" href="https://www.microsoft.com/en-us/researc
 
    * https://www.linkedin.com/learning/streamlining-your-work-with-microsoft-bing-chat/understand-how-chat-ai-works by Jess Stratton (LinkedIn Learning Staff Author, Tech Consultant)
    <br /><br />
+
+## Google Workspace Generic Prompt
+
+When I ask for information from my connected apps (Gmail, Drive, etc.), do not provide a "first-match" response. You must perform an exhaustive scan of all relevant results. Before answering, internally verify the chronological order of data points to ensure the output reflects the most recent and accurate state of affairs. If there is a discrepancy, highlight the conflict rather than choosing one arbitrarily.
+
 
 
 ### GitHub CoPilot
@@ -798,7 +783,7 @@ Unlike Microsoft, which offers just OpenAI,
 
    Understanding the RAG Architecture of LLM
 
-   AWS Services for Storage of Vector Embeddings 
+   AWS Services for Storage of Vector Embeddings
 
    Amazon Bedrock RAG & Knowledge Base - Demo
 
@@ -1670,7 +1655,7 @@ But note beforehand that Neo4j is licensed (not free).
 Many examples are in Java, not Python.
 
 https://neo4j.com/graph-algorithms-book/?ref=blog
-Apache Spark and Neo4j 
+Apache Spark and Neo4j
 
 
 ## References
@@ -1691,7 +1676,7 @@ https://store.certiport.com/msi-online-course-for-critical-career-skills-ccs-gen
 $95 Critical Career Skills (CCS) Generative AI Foundations Certification on Pearson's Certiport.com
 "The exam positions learners at the cutting edge of a rapidly emerging field. It provides a solid grounding in generative AI, enhancing their ability to adapt in a tech-driven job market."
 
-$235 with MSi Online Course 
+$235 with MSi Online Course
 
 ## Johns Hopkins with Great Learning India
 
@@ -1717,11 +1702,25 @@ Faculty members:
 <a target="_blank" href="https://www.linkedin.com/school/great-learning/posts/?feedView=all">Great Learning</a> is based in Bengaluru, Karnataka, India. <a target="_blank" href="https://www.linkedin.com/video/live/urn:li:ugcPost:7297594005645578241/">VIDEO</a> <a target="_blank" href="https://www.indeed.com/cmp/Great-Learning/reviews">REVIEWS</a>
 
 Mentors:
-* <a target="_blank" href="https://www.linkedin.com/in/jeremyjsamuelson/">Jeremy Samuelson</a>, Marietta, Georgia, 
+* <a target="_blank" href="https://www.linkedin.com/in/jeremyjsamuelson/">Jeremy Samuelson</a>, Marietta, Georgia,
    GenAI consultant
    Until Jan 25 Principal Data Scientist & ML Engineer, Equifax
 * <a target="_blank" href="https://www.linkedin.com/in/suryakunju/">Surya Kunju</a>, Austin, TX
    Retail Media & Marketing Transformation Leader @ Google | Visiting Professor for AI Leadership, Gen AI & ML @MIT, JHU (Via EdTech) https://www.advancedmartech.com
 * <a target="_blank" href="https://www.linkedin.com/in/bhaskarjitsarmah/">Bhaskarjit Sarmah</a> Gurgaon, Haryana, India
    Head RQA AI Labs, BlackRock
+
+## For educators
+
+https://skillshop.exceedlms.com/student/path/1176018?authuser=0
+Generative AI for Educators
+By Google
+A two-hour, no-cost online course for K-12 educators.
+
+* Save time on everyday tasks
+Save time and enhance lesson planning with generative AI.
+
+* Differentiate instruction to meet student needs
+* Develop your own instructional resource using an AI tool
+* Enhance lessons and activities in creative ways
 
