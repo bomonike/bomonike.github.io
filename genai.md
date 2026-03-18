@@ -1,8 +1,8 @@
 ---
 layout: post
+date: "2026-03-18"
+lastchange: "26-03-18 v050 Workspace Generic Prompt :genai.md"
 url: https://bomonike.github.io/genai
-date: "2026-03-17"
-lastchange: gxp "26-03-17 v008 google generic prompt :genai.md"
 file: "genai"
 title: "GenAI (Generative AI)"
 excerpt: "GenAI burst out in 2022 and changed the world with the generation of text, images, audio, and video."
@@ -14,6 +14,10 @@ created: "2023-08-08"
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
+
+## Why?
+
+https://www.linkedin.com/pulse/take-power-back-how-spec-first-tdd-restored-my-joy-coding-prakoso-vkc5c/
 
 ## Discriminative
 
