@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-15"
-lastchange: "26-03-15 v038 flowchart starts :aws-kiro2.md"
+date: "2026-03-17"
+lastchange: "26-03-17 v040 mcp fle :aws-kiro2.md"
 url: https://bomonike.github.io/aws-kiro2
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -32,7 +32,7 @@ Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me ex
 
 1. Since the 1960's, the <strong>"traditional"</strong> approach to turning <strong>ideas</strong> into computers doing things is to have human programmers <strong>implement</strong> or manually <strong>write</strong> a lot of human-readable <strong>scripts</strong> (such as Java or Python) organized into <strong>libraries</strong> of code. 
 
-1. Scripts contain English keywords that need to be <strong>compiled</strong> into the <strong>executables</strong> that control the "ones and zeros" inside computers.
+1. Scripts contain English keywords that need to be <strong>compiled</strong> into the <strong>executables</strong> which control the "ones and zeros" inside computers.
 
 1. There is a different script language for each type of computer equipment. To specify exactly what resources are used, companies came up with script languages <strong>".Terraform"</strong> and <strong>.ansible</strong>.
 
@@ -121,11 +121,11 @@ Effort toward higher-level requirements are amortized over several projects.
 
 Here is what we're working toward:
 
-A. A MCP server to return the value of a variable stored in an encrypted location (macOS Keychain). This is instead of keeping all secrets in plain text in .env files. This has a mechanism like temporarily assumming an AWS role. This provides a way to centrally manage (and log) what permissions are given to whom.
+A. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API. Addding an entry in the MCP Marketplace would be a flex.
 
-B. Track events such as new resources being invoked (the project above) to remind the developer the cost of resources continuing to be used, and provide an easy way to remove the resources and the permissions which created them. 
+B. A MCP server to return the value of a variable stored in an encrypted location (macOS Keychain). This is instead of keeping all secrets in plain text in .env files. This has a mechanism like temporarily assumming an AWS role. This provides a way to centrally manage (and log) what permissions are given to whom.
 
-C. Add MCP agent to dynamically retrieve and display from an API weather data from individual <a target="_blank" href="https://bomonike.github.io/weather-info">Ambient Weather stations</a>, based on code and tutorials to use MCP to retrieve utility data from open weather API.
+C. Track events such as new resources being invoked (the project above) to remind the developer the cost of resources continuing to be used, and provide an easy way to remove the resources and the permissions which created them. 
 
 D. <a target="_blank" href="https://builder.aws.com/content/36SsJHCXYvo8PEEdu8Z3TAD6vqf/calendarmerge-using-kiro">
 aggregating events from Google Gmail and Microsoft Outlook into a single "Single Pane of Glass" view</a> 
@@ -169,17 +169,26 @@ Introductory articles:
    <br /><br />
 
 
-## Get Support from AWS
+## Issues with Kiro overheard
 
-* https://support.aws.amazon.com/#/contacts/kiro says
-   "For technical support, please submit an issue on Github
+   * Kiro was intended to support a VS Code-style <tt>${input:}</tt> system that would prompt users to enter API keys at runtime rather than storing them anywhere, but this feature is currently not working as documented. Cleveland Scene For now, environment variables are the recommended workaround.
+  
+   * "Kiro's context window is too small. isn't enough for me".
+   <br /><br />
+
+
+## Support from AWS
+
+* https://support.aws.amazon.com/#/contacts/kiro says "For technical support, please submit an issue on Github
 
    <a target="_blank" href="https://github.com/kirodotdev/Kiro/issues">https://github.com/kirodotdev/Kiro/issues</a>
 
-Issues with Kiro overheard
-
-  * Kiro was intended to support a VS Code-style <tt>${input:}</tt> system that would prompt users to enter API keys at runtime rather than storing them anywhere, but this feature is currently not working as documented. Cleveland Scene For now, environment variables are the recommended workaround.
-  
+With AWS Business Support+, get first 60 days free:
+* 30-minute expert response for business-critical cases.
+* 24/7 access to AWS Support Engineers for architectural guidance and troubleshooting.
+* Context-aware AI assistance to accelerate diagnosis and surface tailored recommendations.
+* Proactive monitoring and actionable insights to enhance performance, cost efficiency, and reliability.
+<br /><br />
 
 
 ## Prerequisites
@@ -1193,19 +1202,19 @@ which Kiro generates. Sample:
 ```
 Technology Stack & Implementation Standards
 
-Backend (LTS versions):
+**Backend (LTS versions)**:
 - Java: Eclipse Temurin LTS (Java 17)
 - Spring Boot: Latest LTS 3.x
 - Database: H2 (testing), Aurora PostgreSQL (production)
 - Build: Maven wrapper (./mvnw) only
 
-Frontend:
+**Frontend**:
 - Framework: React + TypeScript
 - State Management: Redux Toolkit
-- API Client: Axios with error handling
-- Styling: AWS Cloudscape Design System
+- API Client: Axios with error handling (https://axios-http.com/docs/handling_errors)
+- Styling: AWS Cloudscape Design System (https://cloudscape.design/, https://wilsonmar.github.io/design-systems/, https://github.com/aws-samples/cloudscape-examples)
 
-AWS Infrastructure:
+**AWS Infrastructure**:
 - Database: Amazon RDS Aurora PostgreSQL
 - Compute: ECS Fargate
 - Load Balancing: ALB
@@ -1216,6 +1225,7 @@ AWS Infrastructure:
 ```
 
 NOTE: Character-level encoding on mainframes are in various code pages of EBCDIC vs. UTF-8 on Linux, macOS, Windows.
+See 
 
 Transform aims to reduce project timelines when "Reimagining" apps. Tasks are invoked by Administrators writing natural language prompts (objectives, jobs, tasks) to perform: codebase analysis to extracts business logic and tech doc generation, Decompose the monolithic application into functional domains. It refactors, decomposes, define dependency mapping, validation to improve the quality of refactored code.
 
@@ -1796,11 +1806,6 @@ https://www.coursera.org/learn/aws-generative-ai-essentials/home/module/1
 AWS Generative AI Essentials course
 
 
-## Issues encountered:
-
-   * "Kiro's context window is too small. isn't enough for me".
-   <br /><br />
-
 
 <a name="Questions"></a>
 
@@ -1816,6 +1821,13 @@ Can Kiro be as amazing as https://github.com/msitarzewski/agency-agents
 of 51 specialized AI agents just exploded to 13,000 stars in 5 days after going viral on Reddit. These aren't basic chatbots - they're specialized personas for every business function you can imagine. I break down what Agency-Agents is, why it blew up so fast, and which agents could literally replace entire departments. Whether you're building with Claude, Cursor, or any AI coding tool, this collection is insane.
 
 Kiro development in 2025 was led by Deepak Singh, Vice President of Developer Agents and Experiences at Amazon. ???
+
+
+https://www.linkedin.com/pulse/take-power-back-how-spec-first-tdd-restored-my-joy-coding-prakoso-vkc5c/
+"Take the Power Back: How Spec-First TDD Restored My Joy in Coding"
+
+https://www.youtube.com/watch?v=OrhlO6sjvzA
+Integration with Google Gemini's Gmail & other Workspace apps
 
 
 <hr />
