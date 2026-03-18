@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-18"
-lastchange: "26-02-18 v213 + aws-svcs :README.md"
+date: "2026-03-18"
+lastchange: "26-03-18 v214 acronyms :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -21,7 +21,7 @@ Topics alphabetically:
 <a name="A"></a>
 ### A
 
-1. <a target="_blank" href="https://wilsonmar.github.io/acronyms">acronyms</a>
+1. <a target="_blank" href="https://bomonike.github.io/acronyms">acronyms</a>
 1. <a target="_blank" href="https://bomonike.github.io/ag-tech">ag-tech</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-agents">ai-agents</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-benchmarks">ai-benchmarks</a>
