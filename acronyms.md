@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-18"
-lastchange: "26-03-18 v098 HDM :acronyms.md"
+lastchange: "26-03-18 v099 HDM def :acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -609,6 +609,7 @@ created: "2024-12-28"
 *	HCM	=	Human Capital Management	(system for HR processes)
 *	HCP	=	HashiCorp Cloud Provider
 *	HCS	=	HashiCorp Consul Service	(SaaS on Azure)
+*	HDM	=	High Density Memory (a stack of DRAM near the CPU - faster for use by GPUs & HPC than DDR4 & GDDR5)
 *	HE	=	Homomorphic Encryption  (Privacy-Preserving technology)
 * HIDS	=	Host-Based Intrusion Detection System
 *	HIPAA	=	Health Insurance Portability and Accountability Act
