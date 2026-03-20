@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-27"
-lastchange: "26-02-27 v008 $20 button :aws-bedrock.md"
+date: "2026-03-20"
+lastchange: "26-03-20 v012 pro cert :aws-bedrock.md"
 url: https://bomonike.github.io/aws-bedrock
 file: "aws-bedrock"
 title: "AWS Bedrock"
@@ -24,7 +24,9 @@ This tutorial aims to <strong>logically</strong> present a hands-on experience t
 
 ## Why?
 
-We use Amazon Bedrock because foundation models (LLMs) are so large (and getting larger) that they need to live in the <strong>cloud</strong> - within Bedrock, where one can quickly switch among many models (without downloading).
+We use Amazon Bedrock because foundation models being offered are getting so large (and getting larger) that they need to live in the <strong>cloud</strong> - within Bedrock, where one can quickly switch among many models (without downloading).
+
+BTW LLMs (Large Language Models) deal with text. Visual models deal with other modalities such images and videos.
 
 Cloud billing is how providers monitize (make money from) the billions it took in salaries and data centers needed to create the models.
 
@@ -56,12 +58,29 @@ but a step-by-step guided course so you <strong>master</strong> this like a pro,
    * <a target="_blank" href="https://www.youtube.com/watch?v=oFjxjqYSjMk">5.3</a>
    <br /><br />
 
-Tutorials:
-   * https://www.youtube.com/watch?v=WZeZZ8_W-M4 15-hr Freecodecamp with cheat sheets from <a target="_blank" href="https://ExamPro.com/aif-c01">ExamPro</a>
-   * https://youtube.com/playlist?list=PL7Jj8Ba9Yr6BLf2lS4Nfa2jdl0KpdvqYC&si=mZrE2_8vdDkZSLyl CloudExpert Solutions India
+References:
+   * https://docs.aws.amazon.com/bedrock/latest/userguide/security.html
+   <br /><br />
+
+Tutorials to pass the exam:
+   * <a target="_blank" href="https://youtube.com/playlist?list=PL7Jj8Ba9Yr6BLf2lS4Nfa2jdl0KpdvqYC&si=mZrE2_8vdDkZSLyl">VIDEO series</a>: CloudExpert Solutions India
+   * <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4">15-hr Freecodecamp</a> with cheat sheets from <a target="_blank" href="https://ExamPro.com/aif-c01">ExamPro</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=4h5m49s">VIDEO Follow Along: Create Bedrock Knowledge Base RAG</a> from Amazon CEO's letter to shareholders uploaded to a new S3 bucket with vector fields for Amazon <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=52386s">Follow along OpenSearch</a>.
    * https://www.youtube.com/watch?v=gevdk7PV-s8
    * https://www.zerotocloud.co/course/ai-practitioner-notes $39 from <a target="_blank" href="https://www.youtube.com/watch?v=v5yQNl8Rjy0">Tech with Lucy</a>
+
+   * <a target="_blank" href="https://learning.oreilly.com/videos/-/9780135420782/" title="March 2025">COURSE: AWS Certified AI Practitioner (AIF-C01)"</a> By Chad Smith
+   * <a target="_blank" href="https://learning.oreilly.com/library/view/-/9798341622326/" title="Aug 2025">BOOK: AWS Certified AI Practitioner (AIF-C01) Study Guide</a> By Tom Taulli
+   * <a target="_blank" href="https://learning.oreilly.com/live-events/aws-ai-practitioner-certification-aif-c01-crash-course/0642572010715/" title="Apr 1 2026">Live Crash Course</a> by Yasir Khan
+   * <a target="_blank" href="https://learning.oreilly.com/library/view/-/9781394328192/" title="Oct 2025">Sybex BOOK</a>: "AWS Certified AI Practitioner Study Guide" by Vikram Elango, Vivek Gangasani and Shreyas Subramanian
+   <br /><br />
+
+Practice exams:
+   * <a target="_blank" href="https://learning.oreilly.com/certifications/9780135427026/" title="November 2024">Pearson IT</a> on OReilly is automated
+   Free:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Yt87f--RWfw">AWS AI Practitioner Exam Practice | 60 Realistic Practice Questions & Answers 2025</a> by Cloud Journey with Esther
+   * <a target="_blank" href="https://www.youtube.com/watch?v=9NmVGPEohzM&pp=0gcJCa4KAYcqIYzv">AWS Certified AI Practitioner Exam Prep | AIF-C01 Practice Test - Questions & Explanation</a> by Architecture Bytes - AI
+   * <a target="_blank" href="https://www.youtube.com/watch?v=AJy0DoxJZ1U">10 exam questions</a>
    <br /><br />
 
 Bragadocious "How I Passed it with little effort":
@@ -71,13 +90,74 @@ Bragadocious "How I Passed it with little effort":
    * https://www.youtube.com/watch?v=kv0VAH6at9E&t=31s&pp=ugUEEgJlbg%3D%3D Digital Cloud Training
    <br /><br />
 
-1. Take the 65-question free practice exam at:
+1. Take practice exams:
 
-   * <a target="_blank" href="https://cloudninja.pro/practice-tests/ai-practitioner/exam">CodeNinja</a>
+   * <a target="_blank" href="https://cloudninja.pro/practice-tests/ai-practitioner/exam">CodeNinja</a> 65 questions.
    * <a target="_blank" href="https://www.zerotocloud.co/course/aws-certified-ai-practitioner-practice-tests">$29</a> 
    <br /><br />
 
-There is also the Generative AI Developer, Machine Learning Developer, and Machine Learning Engineer.
+There is also exams from AWS:
+* Generative AI Developer,
+* Machine Learning Developer
+* Machine Learning Engineer
+
+https://skillbuilder.aws/learn/32Y249P272/aws-agentic-ai-demonstrated/TTAJ5WKYTS
+AWS Agentic AI Demonstrated for $29/mo or $449/year subscription.
+practicing with AWS SimuLearn: Generative AI Practitioner for foundational skills, or AWS SimuLearn: Generative AI Architect for more advanced troubleshooting scenarios. For an immersive game-b...
+
+"AWS Certified Machine Learning - Specialty" retired March 31, 2026.
+
+## AWS Certified Generative AI Developer - Professional (AIP-C01)
+
+Beta until 3/31/26. For $300 USD, answer 75 multiple choice or multiple response in 180 minutes. No prerequisites.
+
+https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html
+
+showcases advanced technical expertise in building and deploying production-ready AI solutions using AWS Services like Bedrock. For organizations investing in AI initiatives, this certification provides a reliable way to identify and verify developers who can move beyond proof-of-concept to build production-grade generative AI solutions that deliver tangible business results while maintaining security and cost efficiency. 
+
+Content Domains and Task streams:
+
+1. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain1.html">31% Foundation Model Integration, Data Management, and Compliance</a>
+
+2. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain1.html">26% Implementation and Integration</a>
+
+3. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain3.html'>20% AI Safety, Security, and Governance
+
+4. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain4.html">12% Operational Efficiency and Optimization for GenAI Applications</a>
+
+5. <a target="_blank" href="https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain5.html">11% Testing, Validation, and Troubleshooting</a>
+
+   Task 5.1: Implement evaluation systems for GenAI:
+
+   * 5.1.1: Develop comprehensive assessment frameworks to evaluate the quality and effectiveness of FM outputs beyond traditional ML evaluation approaches (for example, by using metrics for relevance, factual accuracy, consistency, and fluency).
+
+   * 5.1.2: Create systematic model evaluation systems to identify optimal configurations (for example, by using Amazon Bedrock Model Evaluations, A/B testing and canary testing of FMs, multi-model evaluation, cost-performance analysis to measure token efficiency, latency-to-quality ratios, and business outcomes).
+
+   * 5.1.3: Develop user-centered evaluation mechanisms to continuously improve FM performance based on user experience (for example, by using feedback interfaces, rating systems for model outputs, annotation workflows to assess response quality).
+
+   * 5.1.4: Create systematic quality assurance processes to maintain consistent performance standards for FMs (for example, by using continuous evaluation workflows, regression testing for model outputs, automated quality gates for deployments).
+
+   * 5.1.5: Develop comprehensive assessment systems to ensure thorough evaluation from multiple perspectives for FM outputs (for example, by using RAG evaluation, automated quality assessment with LLM-as-a-Judge techniques, human feedback collection interfaces).
+
+   * 5.1.6: Implement retrieval quality testing to evaluate and optimize information retrieval components for FM augmentation (for example, by using relevance scoring, context matching verification, retrieval latency measurements).
+
+   * 5.1.7: Develop agent performance frameworks to ensure that agents perform tasks correctly and efficiently (for example, by using task completion rate measurements, tool usage effectiveness evaluations, Amazon Bedrock Agent evaluations, reasoning quality assessment in multi-step workflows).
+
+   * 5.1.8: Create comprehensive reporting systems to communicate performance metrics and insights effectively to stakeholders for FM implementations (for example, by using visualization tools, automated reporting mechanisms, model comparison visualizations).
+
+   * 5.1.9: Create deployment validation systems to maintain reliability during FM updates (for example, by using synthetic user workflows, AI-specific output validation for hallucination rates and semantic drift, automated quality checks to ensure response consistency).
+
+   Task 5.2: Troubleshoot GenAI applications:
+
+   * 5.2.1: Resolve content handling issues to ensure that necessary information is processed completely in FM interactions (for example, by using context window overflow diagnostics, dynamic chunking strategies, prompt design optimization, truncation-related error analysis).
+
+   * 5.2.2: Diagnose and resolve FM integration issues to identify and fix API integration problems specific to GenAI services (for example, by using error logging, request validation, response analysis).
+
+   * 5.2.3: Troubleshoot prompt engineering problems to improve FM response quality and consistency beyond basic prompt adjustments (for example, by using prompt testing frameworks, version comparison, systematic refinement).
+
+   * 5.2.4: Troubleshoot retrieval system issues to identify and resolve problems that affect information retrieval effectiveness for FM augmentation (for example, by using model response relevance analysis, embedding quality diagnostics, drift monitoring, vectorization issue resolution, chunking and preprocessing remediation, vector search performance optimization).
+
+   * 5.2.5: Troubleshoot prompt maintenance issues to continuously improve the performance of FM interactions (for example, by using template testing and CloudWatch Logs to diagnose prompt confusion, X-Ray to implement prompt observability pipelines, schema validation to detect format inconsistencies, systematic prompt refinement workflows).
 
 <hr />
 
@@ -198,9 +278,9 @@ Generative AI: creates new content from learned patterns.
    * <a target="_blank" href="https://www.youtube.com/watch?v=Q3NreEAdKMc&pp=ugUEEgJlbg%3D%3D">Introducing Strands Agents, an Open Source AI Agents SDK — Suman Debnath, AWS</a>
    <br /><br />
 
-* Strand workflows are graph-based, with LangSmith integration.
+* <strong>Strand workflows</strong> are graph-based, with LangSmith integration.
 
-* <a target=_blank" href="https://aws.amazon.com/ai/machine-learning/inferentia/">AWS Inferentia</a> AI chips designed for AI inference used by Alexa and EC2 instances.
+* <a target="_blank" href="https://aws.amazon.com/ai/machine-learning/inferentia/">AWS Inferentia</a> AI chips designed for AI inference used by Alexa and EC2 instances.
 * <a target="_blank" href="https://aws.amazon.com/machine-learning/neuron/">AWS Neuron SDK<img align="right" width="100" src="https://bhavinsangani14.github.io/AWS-Icons-Assets/git-aws-icons/64/svg/Neuron.svg"></a> deploy models on new AWS Inferentia chips (and train them on AWS Trainium chips). It integrates natively with popular frameworks, such as PyTorch and TensorFlow, so that you can continue to use your existing code and workflows and run on Inferentia chips.
 * <a target="_blank" href="https://aws.amazon.com/ai/machine-learning/trainium/">AWS Trainium</a> are evolving AI Accelerator for cloud GenAI "UltraServer" infra used by EC2 P5e and P5en instances controlled by the AWS Neuron SDK. Trainium3 use 3nm AI chips for 2.52 petaflops (PFLOPs) of FP8 compute. <a target="_blank" href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/aws-trainium/">BLOG</a>
 * <a target="_blank" href="https://awsdocs-neuron.readthedocs-hosted.com/en/latest/">Neuron Explorer</a>
@@ -1103,6 +1183,16 @@ Why your AI agents give inconsistent results, and how Agent SOPs fix it
 https://www.youtube.com/watch?v=ab1mbj0acDo
 Integrating Foundation Models into Your Code with Amazon Bedrock
 by Mike Chambers, Dev Advocate
+
+<a target="_blank" href="https://www.linkedin.com/pulse/kiro-ide-first-agentic-developer-glauco-labone-bjlpc/">ARTICLE</a>:
+"Is Kiro IDE the First Agentic Developer? Feb 12, 2026 by 
+by <a target="_blank" href="https://www.linkedin.com/in/glaucolabonepmp/">Glauco</a>
+
+<img alt="genai-overfitting-957x706.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1772818929/genai-overfitting-957x706_iiom41.png"><br />--<a target="_blank" href="https://learning.oreilly.com/search/?query=author%3A%22Chad%20Smith%22&sort=relevance&highlight=true" title="12.6 AI Bias and Variation [2:52]">Chad Smith</a>
+
+https://aws.amazon.com/blogs/machine-learning/build-and-scale-adoption-of-ai-agents-for-education-with-strands-agents-amazon-bedrock-agentcore-and-librechat/
+Build and scale adoption of AI agents for education with Strands Agents, Amazon Bedrock AgentCore, and LibreChat
+by Changsha Ma, Sudheer Manubolu, Mary Strain, and Abhilash Thallapally on 08 SEP 2025 
 
 
 <hr />
