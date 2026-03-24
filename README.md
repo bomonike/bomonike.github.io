@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-18"
-lastchange: "26-03-18 v214 acronyms :README.md"
+date: "2026-03-24"
+lastchange: "26-03-24 v215 anthropic-certs :README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -28,6 +28,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
 1. <a target="_blank" href="https://bomonike.github.io/alexa">alexa</a>
 1. <a target="_blank" href="https://bomonike.github.io/algorithmic-complexity">algorithmic-complexity</a>
+1. <a target="_blank" href="https://bomonike.github.io/anthropic-certs">anthropic-certs</a>
 1. <a target="_blank" href="https://bomonike.github.io/anyscale-ray">anyscale-ray</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-stats">ap-stats</a>
@@ -35,7 +36,7 @@ Topics alphabetically:
 
 1. <a target="_blank" href="https://bomonike.github.io/aws-certifications">aws-certifications</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-bedrock">aws-bedrock</a>
-1. <a target="_blank" href="https://bomonike.github.io/aws-kiro">aws-kiro</a>
+1. <a target="_blank" href="https://bomonike.github.io/aws-kiro2">aws-kiro2</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-onboarding">aws-onboarding</a>
 1. <a target="_blank" href="https://bomonike.github.io/aws-svcs">aws-svcs</a>
 
@@ -97,6 +98,8 @@ Topics alphabetically:
    ### J
 
 1. <a target="_blank" href="https://bomonike.github.io/jupyter">jupyter</a>
+1. <a target="_blank" href="https://bomonike.github.io/joy-and-beauty-of-data">joy-and-beauty-of-data</a>
+
 
    <a name="K"></a>
    ### K
