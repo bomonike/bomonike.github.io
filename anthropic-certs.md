@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-25"
-lastchange: "26-03-25 v006 support :anthropic-certs.md"
+lastchange: "26-03-25 v007 Glossary :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -28,29 +28,39 @@ created: "2021-11-01"
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a>REMEMBER: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. Manages several production environments:
 
+"Claude" refers to foundation models created by Anthropic.
+
 * <a target="_blank" href="https://claude.ai/">claude.ai</a> 
 
    Meet Claude - Platform - Solutions - Pricing - Resources - Contact sales - Try Claude
 
-* <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization).
-
-* Unlike chatting, using <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work."
-
-* Claude API refers to the endpoint provided to SDK requests.
-
-* <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says " Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
+   <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says "Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
 
    "Brainstorm in Claude, build in Cowork"
 
-   "Claude" refers to foundation models created by Anthropic.
+* <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization).
 
-   REMEMBER: Anththropic does not <strong>host</strong> their own models but use AWS, Azure, GCP, etc.
+* Claude API refers to the endpoint provided to SDK requests.
+
+* Unlike chatting, using <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work."
+
+* The history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons is summarized in <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> 
+
+   It says the company is headquartered in San Francisco's <a target="_blank" href="https://en.wikipedia.org/wiki/Foundry_Square">Foundry Square</a> (near the Bay Bridge) at 500 Howard and First Streets (across from Chipotle & BlackRock and close to the SalesForce tower's BART/busses). 
+
+REMEMBER: Anththropic does not <strong>host</strong> their own models but use AWS, Azure, GCP, etc.
    Claude is the only frontier AI model available on all three leading cloud providers: AWS, Google Cloud, and Microsoft.
+
+   Claude would be integrated into the Databricks Data Intelligence Platform and Snowflake's platform.
 
    PROTIP: That enables us to bring costs down by <a target="_blank" href="https://medium.com/towards-artificial-intelligence/i-cancelled-my-200-mo-claude-api-subscription-again-0e2175502778">using another foundation model</a> while using Claude Code/Work.
 
 
 ## Anthropic the Company
+
+1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a><br />-- the corporate marketing landing page.
+
+   Notice "Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks."
 
 1. <a target="_blank" href="https://www.linkedin.com/company/anthropicresearch/posts/?feedView=all">Anthropic's entry on LinkedIn</a> classifies the company in the "Research Services" industry:
 
@@ -58,17 +68,7 @@ created: "2021-11-01"
 
    3M followers. 501-1K employees.
 
-1. <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> says the company is headquartered in San Francisco's <a target="_blank" href="https://en.wikipedia.org/wiki/Foundry_Square">Foundry Square</a> (near the Bay Bridge) at 500 Howard and First Streets (across from Chipotle & BlackRock and close to the SalesForce tower's BART/busses). 
-
-   The wiki summarizes the history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons.
-
 1. CEO Dario Amodei was OpenAI's Vice President of Research.
-
-1. Claude would be integrated into the Databricks Data Intelligence Platform and Snowflake's platform.
-
-1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a><br />-- the corporate marketing landing page.
-
-   Notice "Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks."
 
 1. Click <a target="_blak" href="https://www.anthropic.com/research">"Read more" at https://www.anthropic.com/research</a> about results from Anthropic's survey of users.
 
@@ -87,6 +87,25 @@ created: "2021-11-01"
    * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> by Brock Mesarich | AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
    <br /><br />
+
+## Features Glossary
+
+* <strong>Memory system</strong>: CLAUDE.md files that provide persistent context across sessions.
+Slash commands: Powerful slash commands to control its behavior, and you can write custom slash commands.
+
+* <strong>Subagents</strong>: Create specialized subagents for different tasks with their own context window.
+
+* <strong>Skills</strong>: Reusable skills that can be invoked automatically by Claude or subagents.
+
+* <strong>MCP Suppor</strong>t: Extend it with any MCP tool to access APIs, databases and other external systems.
+
+* <strong>GitHub Integratio</strong>n: Deep integration with GitHub for PR reviews, issue management and even CI/CD.
+
+* <strong>Hooks</strong>: Activate agentic workflows automatically triggered by events
+
+* <strong>Plugins</strong>: Bundle hooks, slash commands and skills into plugins you can share with other people
+
+* <strong>Claude Agent SDK</strong>: Build agentic AI systems beyond coding assistance
 
 
 ## Pricing Subscriptiions
@@ -204,7 +223,7 @@ Load my template:
    /opt/homebrew/bin/claude
    </pre>
 
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img width=300" alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
 
 1. REMEMBER: The free Claude.ai plan does not include Claude Code access.
    Upgrade to a Claude Pro, Max, Teams, Enterprise, or Console account.\
