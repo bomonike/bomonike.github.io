@@ -1,10 +1,11 @@
 ---
 layout: post
-date: "2026-03-23"
-lastchange: "26-03-23 v002 claude code templates :anthropic-certs.md"
+date: "2026-03-25"
+lastchange: "26-03-25 v004 Anthropic info :anthropic-certs.md"
+url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
-excerpt: "Tips and tricks to get certified: links to tutorials, videos, practice exams."
+excerpt: "Deep Dive tips and tricks to get certified: Step-by-step tutorials, videos, practice exams."
 tags: [AI, Certifications, Anthropic, Claude]
 image:
 # feature: pic data center slice 1900x500.jpg
@@ -21,16 +22,63 @@ created: "2021-11-01"
 
 {% include whatever.html %}
 
-## Products
+## Anthropics the Company
 
-"Brainstorm in Claude, build in Cowork"
+1. <a target="_blank" href="https://www.linkedin.com/company/anthropicresearch/posts/?feedView=all">Anthropic's entry on LinkedIn</a> classifies the company in the "Research Services" industry:
 
-* "Claude" refers to foundation models created by Anthropic.
+   "Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems."
 
-   REMEMBER: Anththropic does not host their own models but use AWS, Azure, GCP, etc.
+   3M followers
+   501-1K employees
+
+1. <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> says the company is headquartered in San Francisco's <a target="_blank" href="https://en.wikipedia.org/wiki/Foundry_Square">Foundry Square</a> (near the Bay Bridge) at 500 Howard and First Streets. The article summarizes the history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons.
+
+1. CEO Dario Amodei was OpenAI's Vice President of Research.
+
+1. Claude would be integrated into the Databricks Data Intelligence Platform and Snowflake's platform.
+
+1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a><br />-- the corporate marketing landing page.
+
+   Notice "Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks."
+
+1. Click <a target="_blak" href="https://www.anthropic.com/research">"Read more" at https://www.anthropic.com/research</a> about results from Anthropic's survey of users.
+
+   1. Click "Posts" tab to view announcements.
+   1. Click <a target="_blank" href="https://www.linkedin.com/ad-library/search?companyIds=106863934">"Ads"</a> to see videos of Superbowl commercials.
+   <br /><br />
+
+1. <a target="_blank" href="https://www.youtube.com/@anthropic-ai">Anthropic's YouTube channel</a>
+
+1. Random YouTube videos by others:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
+   * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk | AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> by Brock Mesarich | AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
+   <br /><br />
+
+
+<br />open your Terminal app and run:
+
+<a name="Products"></a>
+
+## Claude Product Line
+
+* <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says " Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
+
+   "Brainstorm in Claude, build in Cowork"
+
+   "Claude" refers to foundation models created by Anthropic.
+
+   REMEMBER: Anththropic does not <strong>host</strong> their own models but use AWS, Azure, GCP, etc.
    Claude is the only frontier AI model available on all three leading cloud providers: AWS, Google Cloud, and Microsoft.
 
    PROTIP: That enables us to bring costs down by <a target="_blank" href="https://medium.com/towards-artificial-intelligence/i-cancelled-my-200-mo-claude-api-subscription-again-0e2175502778">using another foundation model</a> while using Claude Code/Work.
+
+* Unlike chatting, using <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work."
+
+
+
+## Claude app Install
 
 1. PROTIP: Instead of (using an internet browser such as Chrome) at clicking "Download desktop app" (claude.dmg to install on macOS) <a target="_blank" href="https://claude.ai/login">https://claude.ai</a> or <a target="_blank" href="https://claude.com/download">https://claude.com/download</a>,<br />open your Terminal app and run:
    ```dash
@@ -42,7 +90,57 @@ created: "2021-11-01"
    ==> Moving App 'Claude.app' to '/Users/johndoe/Applications/Claude.app'
    </pre>
 
-1. PROTIP: Instead of clicking "Download" for "Desktop" within "Claude Code environments", in a Terminal, install <strong>Claude Code</a>
+1. Confirm installation location: 
+   ```bash
+   whereis claude
+   ```
+   If you installed using Homebrew:
+   <pre>
+   claude: /opt/homebrew/bin/claude
+   </pre>
+
+
+<hr />
+
+<a name="ClaudeCode"></a>
+
+## Claude Code Install
+
+Load my template:
+
+1. In your OS Terminal app, create a GitHub folder. Example:
+   ```bash
+   git clone https://github.com/bomonike/claude-proj1.git --depth 1
+   cd claude-proj1
+   ```
+1. View:
+   * MEMORY.md 
+   * etc. ???
+   <br /><br />
+
+
+1. PROTIP: Instead of clicking "Download" for "Desktop" within "Claude Code environments", 
+   ```bash
+   curl -fsSL https://claude.ai/install.sh | bash
+   ```
+   <pre>
+   Setting up Claude Code...
+   ✔ Claude Code successfully installed!        
+   Version: 2.1.81
+   Location: ~/.local/bin/claude
+   Next: Run claude --help to get started
+   ⚠ Setup notes:
+   • Native installation exists but ~/.local/bin is not in your PATH. Run:
+   echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+   ✅ Installation complete!
+   </pre>
+   
+   WARNING: Installing using curl would require adding to the $PATH in your ~/.zshrc or ~/.bashrc file this line:
+   ```
+   export PATH="$HOME/.claude/bin:$PATH"
+   ```
+
+   RECOMMENDED: In a Terminal, install <strong>Claude Code</a>
    ```dash
    brew info claude-code
    brew install claude-code
@@ -53,16 +151,51 @@ created: "2021-11-01"
    ==> Moving App 'Claude.app' to '/Users/johndoe/Applications/Claude.app'
    </pre>
 
-   See <a href="#ClaudeCode">My Claude Code tutorial (below)</a>
-
-
-1. Confirm installation location:
+1. Confirm app folder location:
    ```bash
-   whereis claude
+   tree ~/.claude
+   ```
+   folders:
+   <pre>
+   backups
+   cache
+   downloads
+   </pre>
+
+1. Invoke the claude app:
+   ```bash
+   $( which claude )
    ```
    <pre>
-   claude: /opt/homebrew/bin/claude
+   /opt/homebrew/bin/claude
    </pre>
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
+
+1. REMEMBER: The free Claude.ai plan does not include Claude Code access.
+   Upgrade to a Claude Pro, Max, Teams, Enterprise, or Console account.\
+
+   Select the subscription level:
+   ```
+   Claude Code can be used with your Claude subscription or billed based on API usage through your Console account.
+                                                            
+   Select login method:            
+
+   ❯ 1. Claude account with subscription · Pro, Max, Team, or Enterprise
+                  
+      2. Anthropic Console account · API usage billing
+                                       
+      3. 3rd-party platform · Amazon Bedrock, Microsoft Foundry, or Vertex AI
+   ```
+    Documentation:                                                           
+   · Amazon Bedrock: https://code.claude.com/docs/en/amazon-bedrock
+   · Microsoft Foundry: https://code.claude.com/docs/en/microsoft-foundry                                                    
+   · Vertex AI: https://code.claude.com/docs/en/google-vertex-ai   
+
+1. Consider this:
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp"><img alt="how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp" /></a>
+
 
    <a name="CLAUDE.md"></a>
    
@@ -71,21 +204,29 @@ created: "2021-11-01"
    REMEMBER: Claude Code has no memory. On every new single session, it wakes up with <strong>zero context</strong> about your project.
    So history and preferences must be added added as context.
 
-1. In Claude CLI Console, creating a GitHub folder. Example:
-   ```bash
-   mkdir -p ~/bomonike/claude-proj1
-   cd claude-proj1
-   ```
 1. Start Claude Code in your project’s root directory:
    ```bash
    claude
    ```
+   If you used Homebrew to install Claude 
+   ```bash
+   $(which cl???)
+   ```
 
-1. Tell Claude to generate a starter CLAUDE.md as a starting point:
+1. At the <sstrong>Claude CLI</strong>, 
+1. Copy in files from ???
+
+   * CLAUDE.md referenced by
+   * state.md — current state of the project
+   * architecture.md — how everything fits together
+   * terraform-CLAUDE.md
+   * python-CLAUDE.md
+   <br /><br />
+
+1. generate a starter CLAUDE.md as a starting point:
    ```bash
    /init
    ```
-1. Copy in files.
 
 1. List folders and files:
    ```bash
@@ -193,6 +334,32 @@ created: "2021-11-01"
     npm run test               # Run all tests
     npm run test -- <filename> # Run tests in a specific file
 
+   ### Auto-Update Memory (MANDATORY)
+
+   **Update memory files AS YOU GO, not at the end.** When you learn something new, update immediately.
+
+   | Trigger | Action |
+   |---------|--------|
+   | User shares a fact about themselves | → Update `memory-profile.md` |
+   | User states a preference | → Update `memory-preferences.md` |
+   | A decision is made | → Update `memory-decisions.md` with date |
+   | Completing substantive work | → Add to `memory-sessions.md` |
+
+   **Skip:** Quick factual questions, trivial tasks with no new info.
+
+   **DO NOT ASK. Just update the files when you learn something.**
+
+   ## For new features:
+
+   - Read the relevant source files before planning
+   - Check architecture.md for structural context
+   - Propose a plan before writing code
+
+   ## For bug fixes or small changes:
+
+   - Reference state.md and architecture.md first
+   - Only read source files if the bug requires deeper context
+   - Make the change directly if it's clearly scoped
 
     ## Workflows
 
@@ -268,11 +435,14 @@ created: "2021-11-01"
     - Install components from configured registries
    ``` 
 
-1. Consider best practices: PROTIP: Keep CLAUDE.md files to a maximum of 100–200 lines. Long files are a code smell and take up precious context. An example:
+1. PROTIP: Keep CLAUDE.md files to a maximum of 100–200 lines. Long files are a code smell and take up precious context. CLAUDE.md should be a routing file, not a knowledge dump. 
+   
+   Point to <tt>.claude/rules/*.md</tt> for detailed specs and <tt>docs/</tt> for architecture. Otherwise it gets so long that Claude skims it and misses the important stuff.
 
    Delete what you don't need — deleting is easier than creating from scratch.
 
    * <a target="_blank" href="https://dometrain.com/blog/creating-the-perfect-claudemd-for-claude-code/">"Creating the Perfect CLAUDE.md for Claude Code" by Ivan Kahl January 15, 2026
+   * https://medium.com/@CodeCoup/i-wasted-8-minutes-per-change-in-claudes-code-heres-what-fixed-it-4baeeef1c07f
    * https://github.com/ArthurClune/claude-md-examples which is based on:
    * https://github.com/modelcontextprotocol/python-sdk/blob/main/CLAUDE.md
    * https://github.com/p33m5t3r/vibecoding/blob/main/conway/CLAUDE.md
@@ -284,14 +454,8 @@ created: "2021-11-01"
 
 * <a target="_blank" href="https://claude.com/skills">Claude Skills</a> "turn expertise, procedures, and best practices into reusable capabilities." To ensure output follows proven patterns (rather than guessing) for handling PowerPoint pptx files, <strong>pptx/SKILL.md</strong> is defined. 
 
-
-<a name="ClaudeCode"></a>
-
-## Claude Code
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp"><img alt="how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp" /></a>
-
-Unlike Chat, using Claude Code is "like handing a capable teammate who actually does the work."
+   https://platform.claude.com/workspaces/default/skills
+   handlers for pdf, Microsoft xlsx, pptx, docx, 
 
 
 ## Claude Partner Network
@@ -337,15 +501,41 @@ https://anthropic.skilljar.com/claude-certified-architect-foundations-access-req
 | &nbsp; | Claude Opus | Claude Sonnet | Claude Haiku |
 | ------ | ----------- | ------------- | ------------ |
 | Description | Highest level of intelligence | Balance of quality, speed, cost | Most cost-efficient and latency-optimized model |
+| <tt>capabilities</tt><br />(Best used for) | <a href="#AdvancedReasoning">advanced reasoning</a> | <a href="#CommonCodingTasks">Common coding tasks</a> | <a href="#QuickCode">Quick code completions and suggestions</a> |
 | Cost: | Highest | Medium | Lowest |
-| <a target="_blank" href="https://claude.com/pricing#api">Input/Output $/MTok</a> | $5/$25 | $3/$15 | $1/$5
-| <a target="_blank" href="https://claude.com/pricing#api">Prompt caching Read/Write $/MTok</a> | $0.50/$6.25 | $0.30/$3.75 | $0.10/$1.25
-
+| <a target="_blank" href="https://claude.com/pricing#api">Input/Output $/MTok</a> | $5/$25 | $3/$15 | $1/$5 |
+| <a target="_blank" href="https://claude.com/pricing#api">Prompt caching Read/Write $/MTok</a> | $0.50/$6.25 | $0.30/$3.75 | $0.10/$1.25 |
+| <tt>max_input_tokens</tt> (Context window) | 1M tokens | 1M tokens | 200k tokens |
+| <tt>max_tokens</tt> (Max output) | 128k tokens | 64k tokens | 64k tokens |
+| <a target="_blank" href="https://platform.claude.com/settings/limits">Tokens/min</a> Input & Output | 30K/8K | 30K/8K | 50K/10K |
 | Comparative Latency: | Moderate | Fast | <strong>Fastest</strong> |
-| Supports Reasoning? | Yes | Yes | No! |
-| Best used for: | <strong>advanced reasoning</strong>:<br />* Advanced software development, especially large-scale architecting<br />* Long-running tasks that require sustained focus<br />* Strategic planning with multi-step problem solving | Common coding tasks | Quick code completions and suggestions |
+| Supports Reasoning<br />& Adaptive Thinking | Yes | Yes | No! |
 
-Common coding tasks:
+
+REMEMBER: Each model used has a different ID and version on each cloud: See <a target="_blank" href="https://platform.claude.com/docs/en/about-claude/models/overview">DOCS: API codes for each Claude Model version list</a> or <tt>GET https://api.anthropic.com/v1/models</tt>
+
+| Feature | Claude Opus 4.6 | Claude Sonnet 4.6 | Claude Haiku 4.5 |
+| ------- | --------------- | ----------------- | ---------------- |
+| Claude API ID | claude-opus-4-6 | claude-sonnet-4-6 | claude-haiku-4-5-20251001 |
+| Claude API alias used by <a href="#ChatAPICall">API calls</a> | claude-opus-4-6 | claude-sonnet-4-6 | claude-haiku-4-5 |
+| GCP Vertex AI ID  | claude-opus-4-6 | claude-sonnet-4-6 | claude-haiku-4-5@20251001 |
+| AWS Bedrock ID | anthropic.claude-opus-4-6-v1 | anthropic.claude-sonnet-4-6 | anthropic.claude-haiku-4-5-20251001-v1:0 |
+
+On AWS, the full <tt>model_id = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"</tt>
+
+<a name="AdvancedReasoning"></a>
+
+## Advanced reasoning:
+
+* Advanced software development, especially large-scale architecting
+* Long-running tasks that require sustained focus
+* Strategic planning with multi-step problem solving
+<br /><br />
+
+<a name="CommonCodingTasks"></a>
+
+## Common coding tasks:
+
 * Document creation and editing
 * Content marketing and copywriting
 * Data analysis and visualization projects
@@ -353,7 +543,10 @@ Common coding tasks:
 * Process automation
 <br /><br />
 
-Quick code completions and suggestions:
+<a name="QuickCode"></a>
+
+## Quick code completions and suggestions:
+
 * Content moderation and filtering
 * Data extrction and categorization
 * Language translation
@@ -361,12 +554,67 @@ Quick code completions and suggestions:
 * Most high-volume, straightforward text processing tasks
 <br /><br />
 
-<tt>model_id = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"</tt>
+
+<a name="ChatAPICall"></a>
+
+## Chat API call using Claude Opus
+
+* Based on https://platform.claude.com/docs/en/get-started
+
+1. Get your API key from the Claude Console 
+1. Save the value in your Password Manager.
+1. In a Terminal app, set environment variable:
+   ```bash
+   export ANTHROPIC_API_KEY='your-api-key-here'
+   ```
+1. For API usage, buy $5 of credits from https://platform.claude.com/settings/billing
+1. Run the <tt>curl-model-info.sh</tt> from https://github.com/bomonike/claude-proj1...
+
+   ```bash
+   curl https://api.anthropic.com/v1/messages \
+   -H "Content-Type: application/json" \
+   -H "x-api-key: $ANTHROPIC_API_KEY" \
+   -H "anthropic-version: 2023-06-01" \
+   -d '{
+      "model": "claude-opus-4-6",
+      "max_tokens": 1000,
+      "messages": [
+         {
+         "role": "user",
+         "content": "What are the capabilities of Claude Opus 4.5 and its Reliable knowledge cutoff date and Training data cutoff dates?"
+         }
+      ]
+   }'
+   ```
+   An example of the response: ???
+   ```
+   {
+   "id": "msg_01HCDu5LRGeP2o7s2xGmxyx8",
+   "type": "message",
+   "role": "assistant",
+   "content": [
+      {
+         "type": "text",
+         "text": "Here are some effective search strategies to find the latest renewable energy developments:\n\n## Search Terms to Use:\n- \"renewable energy news 2024\"\n- \"clean energy breakthrough\"\n- \"solar/wind/battery technology advances\"\n- \"green energy innovations\"\n- \"climate tech developments\"\n- \"energy storage solutions\"\n\n## Best Sources to Check:\n\n**News & Industry Sites:**\n- Renewable Energy World\n- GreenTech Media (now Wood Mackenzie)\n- Energy Storage News\n- CleanTechnica\n- PV Magazine (for solar)\n- WindPower Engineering & Development..."
+      }
+   ],
+   "model": "claude-opus-4-6",
+   "stop_reason": "end_turn",
+   "usage": {
+      "input_tokens": 21,
+      "output_tokens": 305
+   }
+   }
+   ```
+1. Review token usage at
+   https://platform.claude.com/usage
 
 
-## AI Fluency
+## AI Fluency Class
 
 https://www.anthropic.com/learn/claude-for-you
+
+<a target="_blank" href="https://www.youtube.com/watch?v=-UN9sNqQ0t4&list=PLf2m23nhTg1NjL3-jL3s0qZCYzO07ZQPv">AI Fluency 11-video playlist on YouTube</a>
 
 01Introduction to AI Fluency
 
@@ -391,8 +639,28 @@ https://www.anthropic.com/learn/claude-for-you
 
 
 
+<a name="ChatAPICall"></a>
 
 ## Text Chat using Claude API
+
+https://platform.claude.com/docs/en/get-started
+
+```bash
+curl https://api.anthropic.com/v1/messages \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: $ANTHROPIC_API_KEY" \
+  -H "anthropic-version: 2023-06-01" \
+  -d '{
+    "model": "claude-opus-4-6",
+    "max_tokens": 1000,
+    "messages": [
+      {
+        "role": "user",
+        "content": "What should I search for to find the latest developments in renewable energy?"
+      }
+    ]
+  }'
+```
 
 Making a request
 
@@ -401,7 +669,7 @@ Multi-Turn conversations work by you maintaining your own chat history.
 
 Chatbot
 
-<a target="_blank" href="https://anthropic.skilljar.com/claude-in-amazon-bedrock/276724"PROTIP</a>: By default, Chat returns message with code between backticks so its explanation text can be added.
+<a target="_blank" href="https://anthropic.skilljar.com/claude-in-amazon-bedrock/276724">PROTIP</a>: By default, Chat returns message with code between backticks so its explanation text can be added.
 To retrieve just the code returned with "stop sequences":
 ```
 import json
@@ -429,6 +697,9 @@ Controlling model output
 Structured data
 
 
+
+<a name="MCP"></a>
+
 ## MCP
 
 <a target="_blank" href="https://anthropic.skilljar.com/claude-in-amazon-bedrock/276798">PROTIP</a>:
@@ -445,3 +716,18 @@ but MCP dramatically reduces the development work required on your end.
 ## Tutorials
 
 <a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
+
+
+## Code Container
+
+Instead of sitting around monitoring every prompt like a hall monitor just in case a rogue <tt>rm -rf</tt> slips by, I use Code Container to mount every project into an <strong>isolated container</strong> where I can let my harness run loose with full permissions. My actual machine stays untouched.
+
+1. Install container:
+   ```bash
+   npm install -g code-container
+   ```
+
+300ms startup time,
+
+   Reference:
+   * https://medium.com/gitconnected/stop-babysitting-claude-code-get-work-done-10x-faster-with-code-container-fcd515381751   
