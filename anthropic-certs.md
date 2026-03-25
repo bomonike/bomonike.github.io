@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-25"
-lastchange: "26-03-25 v007 Glossary :anthropic-certs.md"
+lastchange: "26-03-25 v008 tokens :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -13,7 +13,7 @@ image:
   credit:
   creditlink:
 comments: true
-created: "2021-11-01"
+created: "2026-03-19"
 ---
 <a target="_blank" href="https://bomonike.github.io/anthropic-certs"><img align="right" width="100" height="100" alt="anthropic-certs.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/anthropic-certs.png?raw=true" /></a>
 <i>{{ page.excerpt }}</i>
@@ -32,17 +32,21 @@ created: "2021-11-01"
 
 * <a target="_blank" href="https://claude.ai/">claude.ai</a> 
 
-   Meet Claude - Platform - Solutions - Pricing - Resources - Contact sales - Try Claude
+   Meet Claude - Platform - Solutions - <a href="#Pricing">Pricing</a> - Resources - Contact sales - Try Claude
 
    <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says "Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
 
    "Brainstorm in Claude, build in Cowork"
 
-* <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization).
+* <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization). Claude also creates the evaluation automation that it rubs.
 
-* Claude API refers to the endpoint provided to SDK requests.
+* Claude API refers to the endpoint provided to <a href="#ChatAPICall">SDK requests</a>.
 
-* Unlike chatting, using <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work."
+* <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work". Instead of hand coding, human app designers now speak natural language conversations with Claude Code to write design specs from which both infrastructure creation and programming code are generated.
+
+   > “AI will soon be writing 90 percent of all code.” — Dario Amodei, Anthropic CEO, March 10 2025
+
+   That is why instead of hiring entry-level programmers, companies will be <a href="#Pricing">paying for AI tokens</a>.
 
 * The history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons is summarized in <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> 
 
@@ -50,10 +54,9 @@ created: "2021-11-01"
 
 REMEMBER: Anththropic does not <strong>host</strong> their own models but use AWS, Azure, GCP, etc.
    Claude is the only frontier AI model available on all three leading cloud providers: AWS, Google Cloud, and Microsoft.
+   Claude would also be integrated into the Databricks Data Intelligence Platform and Snowflake's Lakehouse databases.
 
-   Claude would be integrated into the Databricks Data Intelligence Platform and Snowflake's platform.
-
-   PROTIP: That enables us to bring costs down by <a target="_blank" href="https://medium.com/towards-artificial-intelligence/i-cancelled-my-200-mo-claude-api-subscription-again-0e2175502778">using another foundation model</a> while using Claude Code/Work.
+   PROTIP: That enables us to bring costs down by <a target="_blank" href="https://medium.com/towards-artificial-intelligence/i-cancelled-my-200-mo-claude-api-subscription-again-0e2175502778">using a downloaded local foundation model</a> while using Claude Code/Work.
 
 
 ## Anthropic the Company
@@ -81,17 +84,14 @@ REMEMBER: Anththropic does not <strong>host</strong> their own models but use AW
    * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
    <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
 
-1. Random YouTube videos peddling tutorials:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
-   * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> by Brock Mesarich | AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
-   <br /><br />
 
 ## Features Glossary
 
-* <strong>Memory system</strong>: CLAUDE.md files that provide persistent context across sessions.
-Slash commands: Powerful slash commands to control its behavior, and you can write custom slash commands.
+Authomation capabilitiesib AI agents have gone beyond auto-complete of code.
+
+* <strong>Memory system</strong>: CLAUDE.md and other files that provide persistent <strong>context</strong> across sessions.
+
+* <strong>Slash commands</strong>: <a href="#SlashCommands">Powerful keywords to control agent behavior</a>.
 
 * <strong>Subagents</strong>: Create specialized subagents for different tasks with their own context window.
 
@@ -119,11 +119,7 @@ Sign up for a paid Claude AI account to use Claude Code at <a target="_blank" hr
 * Teams
 * Enterprise
 <br /><br />
-<a target="_blank" href="https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans">Claude’s context window</a> is 200K, meaning it can ingest 200K+ tokens (about 500 pages of text or more) when using a paid Claude plan.
-The Claude API can ingest <strong>1M tokens</strong> when using Claude Opus 4.6 or Sonnet 4.6.
-Users on Claude Code with a Max, Team, or Enterprise plan, Claude Opus 4.6 have a 1M token context window.
 
-When your conversation approaches the context window limit, Claude summarizes earlier messages to make room for new content. 
 
 ## Claude app Install
 
@@ -245,9 +241,140 @@ Load my template:
    · Microsoft Foundry: https://code.claude.com/docs/en/microsoft-foundry                                                    
    · Vertex AI: https://code.claude.com/docs/en/google-vertex-ai   
 
+
+   ### Aliases
+   
+   ```
+   cl='claude --dangerously-skip-permissions'
+   cl --continue  # resume last session
+   alias clc='cl --continue'
+   ```
+
 1. Consider this:
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp"><img alt="how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp" /></a>
+
+   Type ? to see all 
+
+   <pre>
+   ! for bash mode       double tap esc to clear input      ctrl + _ to undo
+   / for commands        shift + tab to auto-accept edits   ctrl + z to suspend
+   @ for file paths      ctrl + o for verbose output        ctrl + v to paste images
+   & for background      ctrl + t to show todos             opt + p to switch model
+                           shift + ⏎ for newline              ctrl + s to stash prompt
+   </pre>
+
+   ## /terminal-setup slash command 
+
+   <a name="SlashCommands"></a>
+
+   ## slash commands
+
+   ```
+   /help       # menu below:
+   /connect    # establish connection
+   /start      # Begin a new session
+
+   /status     # overview of your current Claude Code setup
+   /config     # configuration
+
+   /statusline # below the prompt defined in ~/.claude/statusline-command.sh
+   /settings   # menu
+   /context    # <a href="#TokenContext">token usage by each system component</a>
+   /cost       # <a href="#Cost">tokens spent</a>
+   /clear      # (aka /reset) is faster than exiting and starting Claude Code again.
+
+   /search     # through the database
+   /upload     # files
+   /compact    # summarize the conversation and replaces the current context with the summary. 
+
+   /logout     # from system
+   ```
+   ### /status
+
+   Example:
+   <pre>
+   ❯ /status
+   Version: 2.1.3
+   Session name: /rename to add a name
+   Session ID: 4eb36de6-c9f2-4c22-8ad3-a8232ea6c078
+   cwd: /Users/gigi
+   Auth token: none
+   API key: /login managed key
+   Organization: Perplexity AI
+   Email: gigi.sayfan@perplexity.ai
+
+   Model: opus (claude-opus-4-5-20251101)
+   MCP servers: notion ✔, linear ✔, datadog ✔
+   Memory: user (.claude/CLAUDE.md)
+   Setting sources: User settings, Shared project settings, Project local settings
+  </pre>
+
+   <pre>
+   ❯ /config
+      Auto-compact                              true
+      Show tips                                 true
+      Thinking mode                             true
+      Prompt suggestions                        true
+      Rewind code (checkpoints)                 true
+      Verbose output                            false
+      Terminal progress bar                     true
+      Default permission mode                   Accept edits
+      Respect .gitignore in file picker         true
+      Auto-update channel                       latest
+      Theme                                     Dark mode
+      Notifications                             Auto
+      Output style                              default
+      Language                                  Default (English)
+      Editor mode                               normal
+      Model                                     opus
+   </pre>
+
+   The above are obtained from file <tt>.claude/settings.json</tt>
+
+
+   <a href="TokenContext"></a>
+
+   ### Token /context usage
+
+   <a target="_blank" href="https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans">Claude’s context window</a> is 200K, meaning it can ingest 200K+ tokens (about 500 pages of text or more) when using a paid Claude plan.
+   The Claude API can ingest <strong>1M tokens</strong> when using Claude Opus 4.6 or Sonnet 4.6.
+   
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774472191/claude-token-usage_ggrffl.webp"><img width="300" alt="claude-token-usage.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774472191/claude-token-usage_ggrffl.webp" /></a>
+
+   The first line in the example above:" 51k tokens (26%)" is what is currently used. 
+   Users on Claude Code with a Max, Team, or Enterprise plan, Claude Opus 4.6 have a <strong>1M token</strong> context window.
+
+   REMEMBER: The Autocompact Buffer: 45k tokens (22.5%) is <strong>reserved</strong> for autocompaction. When your conversation approaches the context window limit, Claude summarizes earlier messages to make room for new content.    Claude Code does this automatically when the context window fills up, but here's the thing - automatic compaction might keep less important stuff and throw away useful insights. But that takes time and require work space. The context window limit applies to input + output combined. When autocompaction triggers, the model needs room to generate the summary. Without reserved space, a full context would leave no room for output. So right off the bat, you only have about half the context window for your actual conversation.
+
+   System Overhead: The system prompt and tools reserve almost 20k tokens (~10%).
+
+   The more MCP servers are used, the more "MCP Tools" tokens are used. Each tool within an MCP server consumes token before it even starts.
+
+   <a name="Cost"></a>
+   
+   ### /cost tokens spent
+   ```
+   ❯ /cost
+  ⎿  Total cost:            $2.69
+     Total duration (API):  5m 12s
+     Total duration (wall): 9h 39m 12s
+     Total code changes:    10 lines added, 1 line removed
+     Usage by model:
+             claude-haiku:  42.1k input, 790 output, 0 cache read, 11.9k cache write ($0.0609)
+          claude-opus-4-5:  3.4k input, 10.7k output, 1.7m cache read, 235.3k cache write, 1 web search ($2.63).  x          ```
+
+   zzz
+
+
+
+
+   shift+tab cycles through the permissions modes, so auto-accept edits is displayed just because currently I'm in the bypass permissions mode. There is one more permission mode plan, in which Claude Code will discuss and plan, but will not make changes to your files.
+
+   Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
+
+
+   ???
 
 
    <a name="CLAUDE.md"></a>
@@ -609,7 +736,8 @@ On AWS, the full <tt>model_id = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"</
 | Reliable knowledge cutoff: | - | - | February 2025 |
 | Training data cutoff: | - | - | July 2025 |
 
-REMEMBER: The Reliable Cutoff is the date through which knowledge is most extensive and reliable.
+REMEMBER: The Reliable knowledge cutoff is the date through which knowledge is most extensive and reliable.
+
 Training Data Cutoff is the broader range of data used.
 
 
@@ -819,13 +947,9 @@ while direct tool use requires you to author everything yourself. Both involve C
 but MCP dramatically reduces the development work required on your end.
 
 
+<a name="Containers"></a>
 
-## Tutorials
-
-<a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
-
-
-## Code Container
+## Run in Containers
 
 Instead of sitting around monitoring every prompt like a hall monitor just in case a rogue <tt>rm -rf</tt> slips by, I use Code Container to mount every project into an <strong>isolated container</strong> where I can let my harness run loose with full permissions. My actual machine stays untouched.
 
@@ -836,12 +960,26 @@ Instead of sitting around monitoring every prompt like a hall monitor just in ca
 
 300ms startup time!
 
-
-
-## Run in Containers
-
-   References:
+References:
    * https://medium.com/gitconnected/stop-babysitting-claude-code-get-work-done-10x-faster-with-code-container-fcd515381751   
 
    * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
    <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
+
+
+
+
+## Tutorials
+
+<a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
+
+1. Random YouTube videos peddling tutorials:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
+   * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> by Brock Mesarich | AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
+   <br /><br />
+
+
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
