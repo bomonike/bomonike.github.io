@@ -22,16 +22,45 @@ created: "2021-11-01"
 
 {% include whatever.html %}
 
-## Anthropics the Company
+<a name="Products"></a>
+
+## Claude Product Line
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a>REMEMBER: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. Manages several production environments:
+
+* <a target="_blank" href="https://claude.ai/">claude.ai</a> 
+
+   Meet Claude - Platform - Solutions - Pricing - Resources - Contact sales - Try Claude
+
+* <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization).
+
+* Unlike chatting, using <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work."
+
+* Claude API refers to the endpoint provided to SDK requests.
+
+* <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says " Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
+
+   "Brainstorm in Claude, build in Cowork"
+
+   "Claude" refers to foundation models created by Anthropic.
+
+   REMEMBER: Anththropic does not <strong>host</strong> their own models but use AWS, Azure, GCP, etc.
+   Claude is the only frontier AI model available on all three leading cloud providers: AWS, Google Cloud, and Microsoft.
+
+   PROTIP: That enables us to bring costs down by <a target="_blank" href="https://medium.com/towards-artificial-intelligence/i-cancelled-my-200-mo-claude-api-subscription-again-0e2175502778">using another foundation model</a> while using Claude Code/Work.
+
+
+## Anthropic the Company
 
 1. <a target="_blank" href="https://www.linkedin.com/company/anthropicresearch/posts/?feedView=all">Anthropic's entry on LinkedIn</a> classifies the company in the "Research Services" industry:
 
    "Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems."
 
-   3M followers
-   501-1K employees
+   3M followers. 501-1K employees.
 
-1. <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> says the company is headquartered in San Francisco's <a target="_blank" href="https://en.wikipedia.org/wiki/Foundry_Square">Foundry Square</a> (near the Bay Bridge) at 500 Howard and First Streets. The article summarizes the history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons.
+1. <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> says the company is headquartered in San Francisco's <a target="_blank" href="https://en.wikipedia.org/wiki/Foundry_Square">Foundry Square</a> (near the Bay Bridge) at 500 Howard and First Streets (across from Chipotle & BlackRock and close to the SalesForce tower's BART/busses). 
+
+   The wiki summarizes the history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons.
 
 1. CEO Dario Amodei was OpenAI's Vice President of Research.
 
@@ -49,6 +78,9 @@ created: "2021-11-01"
 
 1. <a target="_blank" href="https://www.youtube.com/@anthropic-ai">Anthropic's YouTube channel</a>
 
+   * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
+   <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
+
 1. Random YouTube videos peddling tutorials:
    * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
    * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
@@ -57,33 +89,16 @@ created: "2021-11-01"
    <br /><br />
 
 
-<a name="Products"></a>
-
-## Claude Product Line
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a><a target="_blank" href="https://support.claude.com/en/">Anthropic support at support.claude.com</a> manages several production enviornments:
-
-* <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says " Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
-
-   "Brainstorm in Claude, build in Cowork"
-
-   "Claude" refers to foundation models created by Anthropic.
-
-   REMEMBER: Anththropic does not <strong>host</strong> their own models but use AWS, Azure, GCP, etc.
-   Claude is the only frontier AI model available on all three leading cloud providers: AWS, Google Cloud, and Microsoft.
-
-   PROTIP: That enables us to bring costs down by <a target="_blank" href="https://medium.com/towards-artificial-intelligence/i-cancelled-my-200-mo-claude-api-subscription-again-0e2175502778">using another foundation model</a> while using Claude Code/Work.
-
-* Unlike chatting, using <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work."
-
-## Pricing
+## Pricing Subscriptiions
 
 Anthropic's Superbowl commercials made a big deal about free accounts not having ads.
 
-Sign up for a paid Claude AI account to use Claude Code at https://claude.com/pricing
+Sign up for a paid Claude AI account to use Claude Code at <a target="_blank" href="https://claude.com/pricing">https://claude.com/pricing</a>:
 * Claude Free
 * Claude Max $17/month to use Claude Code and Cowork
 * Claude Max $100/month for 5x or 20x more usage than Pro
+* Teams
+* Enterprise
 <br /><br />
 <a target="_blank" href="https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans">Claude’s context window</a> is 200K, meaning it can ingest 200K+ tokens (about 500 pages of text or more) when using a paid Claude plan.
 The Claude API can ingest <strong>1M tokens</strong> when using Claude Opus 4.6 or Sonnet 4.6.
@@ -564,14 +579,20 @@ References:
 
 REMEMBER: Each model used has a different ID and version on each cloud: See <a target="_blank" href="https://platform.claude.com/docs/en/about-claude/models/overview">DOCS: API codes for each Claude Model version list</a> or <tt>GET https://api.anthropic.com/v1/models</tt>
 
+On AWS, the full <tt>model_id = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"</tt>
+
 | Feature | Claude Opus 4.6 | Claude Sonnet 4.6 | Claude Haiku 4.5 |
 | ------- | --------------- | ----------------- | ---------------- |
 | Claude API ID | claude-opus-4-6 | claude-sonnet-4-6 | claude-haiku-4-5-20251001 |
 | Claude API alias used by <a href="#ChatAPICall">API calls</a> | claude-opus-4-6 | claude-sonnet-4-6 | claude-haiku-4-5 |
 | GCP Vertex AI ID  | claude-opus-4-6 | claude-sonnet-4-6 | claude-haiku-4-5@20251001 |
 | AWS Bedrock ID | anthropic.claude-opus-4-6-v1 | anthropic.claude-sonnet-4-6 | anthropic.claude-haiku-4-5-20251001-v1:0 |
+| Reliable knowledge cutoff: | - | - | February 2025 |
+| Training data cutoff: | - | - | July 2025 |
 
-On AWS, the full <tt>model_id = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"</tt>
+REMEMBER: The Reliable Cutoff is the date through which knowledge is most extensive and reliable.
+Training Data Cutoff is the broader range of data used.
+
 
 <a name="AdvancedReasoning"></a>
 
@@ -611,13 +632,30 @@ On AWS, the full <tt>model_id = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"</
 
 * Based on https://platform.claude.com/docs/en/get-started
 
-1. Get your API key from the Claude Console 
+1. Get your API key from the <a target="_blank" href="https://platform.claude.com/settings/keys">Claude Console API keys page</a>.
 1. Save the value in your Password Manager.
 1. In a Terminal app, set environment variable:
    ```bash
-   export ANTHROPIC_API_KEY='your-api-key-here'
+   export ANTHROPIC_API_KEY='sk...your-api-key-here'
    ```
-1. For API usage, buy $5 of credits from https://platform.claude.com/settings/billing
+1. <strike>For API usage, buy $5 of credits from https://platform.claude.com/settings/billing</strike>
+
+   https://platform.claude.com/settings/keys
+
+1. Run the <tt>simple-msg.py</tt> from https://github.com/bomonike/claude-proj1...
+   '''python
+   import anthropic
+   client = anthropic.Anthropic()
+   message = client.messages.create(
+   model="claude-sonnet-4-6",
+   max_tokens=1024,
+   messages=[{
+      "role": "user",
+      "content": "Hello, Claude"
+      }]
+   )
+   print(message.content[0].text)
+   ```
 1. Run the <tt>curl-model-info.sh</tt> from https://github.com/bomonike/claude-proj1...
 
    ```bash
@@ -785,5 +823,6 @@ Instead of sitting around monitoring every prompt like a hall monitor just in ca
 
    References:
    * https://medium.com/gitconnected/stop-babysitting-claude-code-get-work-done-10x-faster-with-code-container-fcd515381751   
+
    * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
-   * https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/
+   <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
