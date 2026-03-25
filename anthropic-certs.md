@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-25"
-lastchange: "26-03-25 v004 Anthropic info :anthropic-certs.md"
+lastchange: "26-03-25 v005 Gigi Sayfan :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -52,7 +52,7 @@ created: "2021-11-01"
 1. Random YouTube videos by others:
    * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
    * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk | AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> by Brock Mesarich | AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
    <br /><br />
 
@@ -462,9 +462,9 @@ Load my template:
 
 https://claude.com/partners
 
-<a target="_blank" href="https://www.anthropic.com/news/claude-partner-network">"Anthropic invests $100 million into the Claude Partner Network
-Mar 12, 2026"</a> mentions "technical certifications".
+<a target="_blank" href="https://www.anthropic.com/news/claude-partner-network">"Anthropic invests $100 million into the Claude Partner Network"</a> (announced Mar 12, 2026) mentions "technical" <strong>Claude Certified Architect (CCA)</strong> Foundations certification.
 
+https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request
 
 "A significant proportion of our $100 million investment will go directly to our partners as direct support for training and sales enablement, and for market development (including work to make customer deployments successful) and co-marketing for joint campaigns and events. "
 
@@ -484,12 +484,27 @@ Additional certifications for sellers, architects, and developers.
 
 1. Use your <strong>personal email</strong> to sign In to <a target="_blank" href="https://anthropic.skilljar.com/">https://anthropic.skilljar.com</a>
 
-## Claude Certified Architect, Foundations
+## Claude Certified Architect (CCA), Foundations
+
+Domains:
+1. 27% Agentic Architecture & Orchestration
+2. 20% Claude Code Configuration & Workflows
+3. 20% Prompt Engineering & Structured Output	
+4. 18% Tool Design & MCP Integration	
+5. 15% Context Management & Reliability	
+<br /><br />
+
+The community confirms is the exam's focus areas: fallback loop design, Batch API cost optimization, JSON schema structuring to prevent hallucinations, and MCP tool orchestration.
+
+IBM AI Engineering (Coursera)	ML/DL concepts and model deployment	Conceptual + hands-on	Cloud-agnostic
 
 https://www.anthropic.com/learn
 Anthropic Academy
 
 https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request
+
+References:
+* https://dev.to/mcrolly/inside-anthropics-claude-certified-architect-program-what-it-tests-and-who-should-pursue-it-1dk6
 
 
 <a name="Models">
@@ -727,7 +742,9 @@ Instead of sitting around monitoring every prompt like a hall monitor just in ca
    npm install -g code-container
    ```
 
-300ms startup time,
+300ms startup time!
 
-   Reference:
+   References:
    * https://medium.com/gitconnected/stop-babysitting-claude-code-get-work-done-10x-faster-with-code-container-fcd515381751   
+   * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
+   * https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/
