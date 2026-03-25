@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-25"
-lastchange: "26-03-25 v005 Gigi Sayfan :anthropic-certs.md"
+lastchange: "26-03-25 v006 support :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -49,7 +49,7 @@ created: "2021-11-01"
 
 1. <a target="_blank" href="https://www.youtube.com/@anthropic-ai">Anthropic's YouTube channel</a>
 
-1. Random YouTube videos by others:
+1. Random YouTube videos peddling tutorials:
    * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
    * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
@@ -57,11 +57,11 @@ created: "2021-11-01"
    <br /><br />
 
 
-<br />open your Terminal app and run:
-
 <a name="Products"></a>
 
 ## Claude Product Line
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a><a target="_blank" href="https://support.claude.com/en/">Anthropic support at support.claude.com</a> manages several production enviornments:
 
 * <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says " Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
 
@@ -76,7 +76,20 @@ created: "2021-11-01"
 
 * Unlike chatting, using <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work."
 
+## Pricing
 
+Anthropic's Superbowl commercials made a big deal about free accounts not having ads.
+
+Sign up for a paid Claude AI account to use Claude Code at https://claude.com/pricing
+* Claude Free
+* Claude Max $17/month to use Claude Code and Cowork
+* Claude Max $100/month for 5x or 20x more usage than Pro
+<br /><br />
+<a target="_blank" href="https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans">Claude’s context window</a> is 200K, meaning it can ingest 200K+ tokens (about 500 pages of text or more) when using a paid Claude plan.
+The Claude API can ingest <strong>1M tokens</strong> when using Claude Opus 4.6 or Sonnet 4.6.
+Users on Claude Code with a Max, Team, or Enterprise plan, Claude Opus 4.6 have a 1M token context window.
+
+When your conversation approaches the context window limit, Claude summarizes earlier messages to make room for new content. 
 
 ## Claude app Install
 
@@ -102,9 +115,9 @@ created: "2021-11-01"
 
 <hr />
 
-<a name="ClaudeCode"></a>
+<a name="ClaudeCodeTemplate"></a>
 
-## Claude Code Install
+## Claude Code Template
 
 Load my template:
 
@@ -115,9 +128,15 @@ Load my template:
    ```
 1. View:
    * MEMORY.md 
+   * https://github.com/centminmod/my-claude-code-setup?tab=readme-ov-file#alternate-read-me-guides
+   * Git Worktrees (for <a target="_blank" href="https://code.claude.com/docs/en/desktop#work-in-parallel-with-sessions">Parallel Sessions in Claude Code</a> via Claude Desktop apps
+   * https://github.com/Piebald-AI/claude-code-system-prompts?tab=readme-ov-file
    * etc. ???
    <br /><br />
 
+   * https://github.com/Piebald-AI/claude-code-system-prompts?tab=readme-ov-file#system-reminders
+
+1. Customize System prompts using https://github.com/Piebald-AI/tweakcc
 
 1. PROTIP: Instead of clicking "Download" for "Desktop" within "Claude Code environments", 
    ```bash
@@ -447,8 +466,14 @@ Load my template:
    * https://github.com/modelcontextprotocol/python-sdk/blob/main/CLAUDE.md
    * https://github.com/p33m5t3r/vibecoding/blob/main/conway/CLAUDE.md
    * https://github.com/saaspegasus/pegasus-docs/blob/main/CLAUDE.md
+   * https://github.com/centminmod/my-claude-code-setup
    <br /><br />
 
+1. Explore Claude Plugin Marketplace of Curated plugins, agent skills, and MCP servers for Claude Code: https://claudemarketplaces.com/learn
+
+   <a target="_blank" href="https://claudemarketplaces.com/">https://claudemarketplaces.com</a>
+
+1. Consider https://github.com/BayramAnnakov/claude-reflect on Claude Plugin Marketplace - a self-learning system (<tt>/reflect-skills</tt>) for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.
 
 * <a target="_blank" href="https://claude.com/product/cowork?open_in_browser=1">Claude Co-Work</a> - "Hand off tasks to Claude and come back to finished work."
 
@@ -458,13 +483,21 @@ Load my template:
    handlers for pdf, Microsoft xlsx, pptx, docx, 
 
 
+## Create an iPhone app
+
+<a target="_blank" href="https://www.youtube.com/watch?v=18V3lFePdWU" title="Uploaded Jul 25 2025">
+VIDEO</a>: Chris Raroque runs Claude Code Opus inside a Warp client referencing a [paid] mobbin.com design template. Voice dictates changes. Breaks down generation section by section. No hand edits.
+
+
 ## Claude Partner Network
 
 https://claude.com/partners
 
 <a target="_blank" href="https://www.anthropic.com/news/claude-partner-network">"Anthropic invests $100 million into the Claude Partner Network"</a> (announced Mar 12, 2026) mentions "technical" <strong>Claude Certified Architect (CCA)</strong> Foundations certification.
 
-https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request
+#CAExamPrep 
+   * https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request
+   <br /><br />
 
 "A significant proportion of our $100 million investment will go directly to our partners as direct support for training and sales enablement, and for market development (including work to make customer deployments successful) and co-marketing for joint campaigns and events. "
 
@@ -477,6 +510,8 @@ enterprise buyers can find firms with Claude implementation experience.
 Partners get priority access to new certifications as they roll out.
 
 Additional certifications for sellers, architects, and developers. 
+
+<a name="Certifications"></a>
 
 ## Certifications
 
@@ -743,6 +778,10 @@ Instead of sitting around monitoring every prompt like a hall monitor just in ca
    ```
 
 300ms startup time!
+
+
+
+## Run in Containers
 
    References:
    * https://medium.com/gitconnected/stop-babysitting-claude-code-get-work-done-10x-faster-with-code-container-fcd515381751   
