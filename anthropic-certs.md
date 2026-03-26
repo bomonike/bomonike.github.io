@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-25"
-lastchange: "26-03-25 v008 tokens :anthropic-certs.md"
+lastchange: "26-03-25 v011 from claude-proj1 :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -40,7 +40,7 @@ created: "2026-03-19"
 
 * <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization). Claude also creates the evaluation automation that it rubs.
 
-* Claude API refers to the endpoint provided to <a href="#ChatAPICall">SDK requests</a>.
+* Claude API refers to the endpoint provided to <a href="#ChatAPICall">SDK requests</a> to the claude-agent-sdk wrapper around claude -p, the SDK spawns the Claude Code CLI as a subprocess and communicates over stdin/stdout via JSON-lines. xcompare it to the Anthropic Client SDK.
 
 * <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work". Instead of hand coding, human app designers now speak natural language conversations with Claude Code to write design specs from which both infrastructure creation and programming code are generated.
 
@@ -95,17 +95,17 @@ Authomation capabilitiesib AI agents have gone beyond auto-complete of code.
 
 * <strong>Subagents</strong>: Create specialized subagents for different tasks with their own context window.
 
-* <strong>Skills</strong>: Reusable skills that can be invoked automatically by Claude or subagents.
+* <strong>Skills</strong> enable new knowledge to be dynamically obtained by Claude or subagents based on minimal description and the current query as opposed to always taking up room lurking in the context memory.
 
 * <strong>MCP Suppor</strong>t: Extend it with any MCP tool to access APIs, databases and other external systems.
 
 * <strong>GitHub Integratio</strong>n: Deep integration with GitHub for PR reviews, issue management and even CI/CD.
 
-* <strong>Hooks</strong>: Activate agentic workflows automatically triggered by events
+* <strong>Hooks</strong> activate agentic workflows automatically triggered by events.
 
-* <strong>Plugins</strong>: Bundle hooks, slash commands and skills into plugins you can share with other people
+* <strong>Plugins</strong> bundle hooks, slash commands, and skills together for sharing with others.
 
-* <strong>Claude Agent SDK</strong>: Build agentic AI systems beyond coding assistance
+* <strong>Claude Agent SDK</strong> are used to build agentic AI systems beyond coding assistance.
 
 
 ## Pricing Subscriptiions
@@ -153,8 +153,8 @@ Load my template:
 
 1. In your OS Terminal app, create a GitHub folder. Example:
    ```bash
-   git clone https://github.com/bomonike/claude-proj1.git --depth 1
-   cd claude-proj1
+   git clone https://github.com/bomonike/claude-templates.git --depth 1
+   cd claude-templates
    ```
 1. View:
    * MEMORY.md 
@@ -250,6 +250,10 @@ Load my template:
    alias clc='cl --continue'
    ```
 
+   ### Permissions
+
+   shift+tab cycles through the permissions modes, so auto-accept edits is displayed just because currently I'm in the bypass permissions mode. There is one more permission mode plan, in which Claude Code will discuss and plan, but will not make changes to your files.
+
 1. Consider this:
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp"><img alt="how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp" /></a>
@@ -263,6 +267,8 @@ Load my template:
    & for background      ctrl + t to show todos             opt + p to switch model
                            shift + ⏎ for newline              ctrl + s to stash prompt
    </pre>
+
+   Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
 
    ## /terminal-setup slash command 
 
@@ -286,10 +292,12 @@ Load my template:
 
    /search     # through the database
    /upload     # files
+   <a href="#loop">/loop</a>
    /compact    # summarize the conversation and replaces the current context with the summary. 
 
    /logout     # from system
    ```
+
    ### /status
 
    Example:
@@ -349,7 +357,13 @@ Load my template:
 
    System Overhead: The system prompt and tools reserve almost 20k tokens (~10%).
 
-   The more MCP servers are used, the more "MCP Tools" tokens are used. Each tool within an MCP server consumes token before it even starts.
+   The more MCP servers are used, the more "MCP Tools" tokens are used. Each tool within an MCP server consumes token before it even starts. Each of several tools are usually a part of each MCP server. For example, Notion has a tool for
+      * create-pages
+      * create-comment
+      * update-page
+      * update-database
+      <br /><br />
+   
 
    <a name="Cost"></a>
    
@@ -357,24 +371,29 @@ Load my template:
    ```
    ❯ /cost
   ⎿  Total cost:            $2.69
-     Total duration (API):  5m 12s
-     Total duration (wall): 9h 39m 12s
-     Total code changes:    10 lines added, 1 line removed
-     Usage by model:
+      Total duration (API):  5m 12s
+      Total duration (wall): 9h 39m 12s
+      Total code changes:    10 lines added, 1 line removed
+      Usage by model:
              claude-haiku:  42.1k input, 790 output, 0 cache read, 11.9k cache write ($0.0609)
           claude-opus-4-5:  3.4k input, 10.7k output, 1.7m cache read, 235.3k cache write, 1 web search ($2.63).  x          ```
 
-   zzz
+
+   <a name="loop"></a>
+
+   ## /loop
+
+   The <tt>/loop</tt> command parses natural language specifications into three parameters of a <strong>CronCreate call </strong>, which is not just a repetitiive <a target="_blank" href="https://ghuntley.com/loop/">"Ralph loop"</a>. It can also <strong>schedule a task</strong> that fires based on a timer, in the current Claude Code session. Close the terminal, exit Claude, or lose your connection, and all scheduled tasks vanish. 
+
+   <pre>
+   {
+   "cron": "*/10 * * * *",
+   "prompt": "Check the CI status on PR #42 and summarize any failures",
+   "recurring": true
+   }
+   </pre>
 
 
-
-
-   shift+tab cycles through the permissions modes, so auto-accept edits is displayed just because currently I'm in the bypass permissions mode. There is one more permission mode plan, in which Claude Code will discuss and plan, but will not make changes to your files.
-
-   Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
-
-
-   ???
 
 
    <a name="CLAUDE.md"></a>
@@ -789,7 +808,7 @@ Training Data Cutoff is the broader range of data used.
 
    https://platform.claude.com/settings/keys
 
-1. Run the <tt>simple-msg.py</tt> from https://github.com/bomonike/claude-proj1...
+1. Run the <tt>simple-msg.py</tt> from https://github.com/bomonike/claude-templates...
    '''python
    import anthropic
    client = anthropic.Anthropic()
@@ -803,7 +822,7 @@ Training Data Cutoff is the broader range of data used.
    )
    print(message.content[0].text)
    ```
-1. Run the <tt>curl-model-info.sh</tt> from https://github.com/bomonike/claude-proj1...
+1. Run the <tt>curl-model-info.sh</tt> from https://github.com/bomonike/claude-templates...
 
    ```bash
    curl https://api.anthropic.com/v1/messages \
@@ -841,8 +860,17 @@ Training Data Cutoff is the broader range of data used.
    }
    }
    ```
-1. Review token usage at
+
+1. Review Claude token usage at
    https://platform.claude.com/usage
+
+
+### Multi-Provider
+
+The "AI-6 framework" at <a target="_blank" href="https://www.amazon.com/Design-Multi-Agent-Systems-Using-MCP/dp/1806116472">
+February 2026 Packt BOOK: "Design Multi-Agent AI Systems Using MCP and A2A" (<a target="_blank" href="https://learning.oreilly.com/library/view/design-multi-agent-ai/9781806116478/">on OReilly.com</a>) by Gigi Sayfan referencing his <a targe="_blank" href="https://github.com/PacktPublishing/Design-Multi-Agent-AI-Systems-Using-MCP-and-A2A">book GitHub repo</a>
+https://github.com/Sayfan-AI/ai-six.
+
 
 
 ## AI Fluency Class
