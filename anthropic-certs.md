@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-25"
-lastchange: "26-03-25 v011 from claude-proj1 :anthropic-certs.md"
+lastchange: "26-03-25 v012 from claude-proj1 :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -36,11 +36,13 @@ created: "2026-03-19"
 
    <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says "Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
 
-   "Brainstorm in Claude, build in Cowork"
+   "Brainstorm in Claude, build in Cowork" <a target="_blank" href="https://www.youtube.com/watch?v=grh7CMl960s">VIDEO</a>
 
 * <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization). Claude also creates the evaluation automation that it rubs.
 
-* Claude API refers to the endpoint provided to <a href="#ChatAPICall">SDK requests</a> to the claude-agent-sdk wrapper around claude -p, the SDK spawns the Claude Code CLI as a subprocess and communicates over stdin/stdout via JSON-lines. xcompare it to the Anthropic Client SDK.
+* Claude API refers to the endpoint provided to <a href="#ChatAPICall">SDK requests</a> to the claude-agent-sdk wrapper around <tt>claude -p</tt>, the SDK spawns the Claude Code CLI as a subprocess and communicates over stdin/stdout via JSON-lines. xcompare it to the Anthropic Client SDK. 
+
+   REMEMBER: The <strong>-p</strong> flag specifies non-interactive. No prompts, no confirmations. Runs and returns the result.
 
 * <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work". Instead of hand coding, human app designers now speak natural language conversations with Claude Code to write design specs from which both infrastructure creation and programming code are generated.
 
@@ -101,7 +103,7 @@ Authomation capabilitiesib AI agents have gone beyond auto-complete of code.
 
 * <strong>GitHub Integratio</strong>n: Deep integration with GitHub for PR reviews, issue management and even CI/CD.
 
-* <strong>Hooks</strong> activate agentic workflows automatically triggered by events.
+* <strong>Hooks</strong> are small scripts (agentic workflows) that run automatically triggered by events (before or after Claude tries to do something). So a hook can block Claude from taking an action unless a specific condition has been met.
 
 * <strong>Plugins</strong> bundle hooks, slash commands, and skills together for sharing with others.
 
@@ -281,13 +283,14 @@ Load my template:
    /connect    # establish connection
    /start      # Begin a new session
 
-   /status     # overview of your current Claude Code setup
-   /config     # configuration
+   <a href="#status">/status</a>     # overview of your current Claude Code setup
+   <a href="#config">/config</a>     # configuration
+   /memory     # 
 
    /statusline # below the prompt defined in ~/.claude/statusline-command.sh
    /settings   # menu
    /context    # <a href="#TokenContext">token usage by each system component</a>
-   /cost       # <a href="#Cost">tokens spent</a>
+   <a href="#Cost">/cost</a>       # <a href="#Cost">tokens spent</a>
    /clear      # (aka /reset) is faster than exiting and starting Claude Code again.
 
    /search     # through the database
@@ -295,8 +298,10 @@ Load my template:
    <a href="#loop">/loop</a>
    /compact    # summarize the conversation and replaces the current context with the summary. 
 
-   /logout     # from system
+   /logout     # from Claude UI/CLI program
    ```
+
+   <a name="status"></a>
 
    ### /status
 
@@ -317,6 +322,10 @@ Load my template:
    Memory: user (.claude/CLAUDE.md)
    Setting sources: User settings, Shared project settings, Project local settings
   </pre>
+
+   <a name="config"></a>
+   
+   ### /config
 
    <pre>
    ❯ /config
@@ -441,6 +450,7 @@ Load my template:
     ├── README.md
     └── docker-compose.yml
    </pre>
+
 
 1. Edit file CLAUDE.md, the long-term memory file.
    ```
@@ -701,25 +711,47 @@ Additional certifications for sellers, architects, and developers.
 
 ## Claude Certified Architect (CCA), Foundations
 
+<a target="_blank" href="https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2F8lsy243ftffjjy1cx9lm3o2bw%2Fpublic%2F1773274827%2FClaude+Certified+Architect+%E2%80%93+Foundations+Certification+Exam+Guide.pdf">Anthropic's Exam Guide.pdf</a>
+
 Domains:
-1. 27% Agentic Architecture & Orchestration
-2. 20% Claude Code Configuration & Workflows
-3. 20% Prompt Engineering & Structured Output	
-4. 18% Tool Design & MCP Integration	
-5. 15% Context Management & Reliability	
+1. 27% Agentic Architecture & Orchestration - how agents loop, coordinate with subagents, and enforce rules with hooks
+vs prompts.
+   * The Agentic Loop
+   * Hub-and-Spoke Architecture
+   * Prompts vs. Hooks
+2. 18% Tool Design & MCP Integration - how Claude connects to external systems and how tool descriptions
+determine routing.
+   * Tool Descriptions
+   * MCP Scoping
+   * Tool overload
+3. 20% Claude Code Configuration & Workflows - skills, commands, plan mode, and CI/CD.
+   * Configuration Hierarchy
+   * When to Use What
+   * CI/CD Integration
+4. 20% Prompt Engineering & Structured Output - structured output with JSON schemas, and validation
+loops.
+   * Few-Shot Advantage
+   * Guaranteed structured output with JSON schemas
+   * Validation Loop
+5. 15% Context Management & Reliability covers the 'lost in the middle' effect, escalation patterns, and error propagation.
+   * Context Window Problem
+   * When to Escalate
+   * Error Propagation
 <br /><br />
 
 The community confirms is the exam's focus areas: fallback loop design, Batch API cost optimization, JSON schema structuring to prevent hallucinations, and MCP tool orchestration.
 
 IBM AI Engineering (Coursera)	ML/DL concepts and model deployment	Conceptual + hands-on	Cloud-agnostic
 
-https://www.anthropic.com/learn
-Anthropic Academy
+Anthropic Academy is at 
+<a target="_blank" href="https://www.anthropic.com/learn/">https://www.anthropic.com/learn</a>
 
 https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request
 
 References:
+* <a target="_blank" href="https://x.com/hooeem/status/2033198345045336559">@hoeem's X post "I want to become a Claude architect (full course)" provides a set of prompts.
 * https://dev.to/mcrolly/inside-anthropics-claude-certified-architect-program-what-it-tests-and-who-should-pursue-it-1dk6
+* https://github.com/BayramAnnakov/claude-reflect - A self-learning system for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.
 
 
 <a name="Models">
@@ -1006,6 +1038,7 @@ References:
    * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> by Brock Mesarich | AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=vizgFWixquE">"Anthropic's NEW Claude Architect Guide In 39 Minutes" by Mark Kashef to pitch <a target="_blank" href="https://www.skool.com/earlyaidopters/">$64/mo Early AI-dopters</a>
    <br /><br />
 
 
