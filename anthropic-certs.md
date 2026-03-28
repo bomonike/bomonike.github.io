@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-25"
-lastchange: "26-03-25 v012 from claude-proj1 :anthropic-certs.md"
+date: "2026-03-27"
+lastchange: "26-03-27 v013 doc: keys :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -22,13 +22,56 @@ created: "2026-03-19"
 
 {% include whatever.html %}
 
+This article was completely hand-crafted (for now).
+
+
+<a name="Company"></a>
+
+## Anthropic the Company
+
+1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a><br />-- the corporate marketing landing page.
+
+   Notice "Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks."
+
+1. <a target="_blank" href="https://www.linkedin.com/company/anthropicresearch/posts/?feedView=all">Anthropic's entry on LinkedIn</a> classifies the company in the "Research Services" industry:
+
+   "Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems."
+
+   3M followers. 501-1K employees.
+
+1. Anthropic was founded in 2021 by seven former employees of OpenAI, including now CEO Dario Amodei was OpenAI's Vice President of Research.
+
+1. Click <a target="_blak" href="https://www.anthropic.com/research">"Read more" at https://www.anthropic.com/research</a> about results from Anthropic's survey of users.
+
+   1. Click "Posts" tab to view announcements.
+   1. Click <a target="_blank" href="https://www.linkedin.com/ad-library/search?companyIds=106863934">"Ads"</a> to see videos of Superbowl commercials.
+   <br /><br />
+
+1. <a target="_blank" href="https://www.youtube.com/@anthropic-ai">Anthropic's YouTube channel</a>
+
+   * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
+   <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
+
+
+<a name="Competition"></a>
+
+## Competition
+
+Claude competes with agentic coding tools (aka coding agent IDEs) that read a codebase, edit files, and run commands:
+   * Amazon's Kiro CLI & IDE for spec-driven development
+   * OpenAI's Codex <a target="_blank" href="https://www.youtube.com/watch?v=kFS6z_97Ohc&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
+   * OpenCode
+   * Perplexity
+   <br /><br />
+
+
 <a name="Products"></a>
 
-## Claude Product Line
+## Claude Product Components/Apps
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a>REMEMBER: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. Manages several production environments:
 
-"Claude" refers to foundation models created by Anthropic.
+"Claude" refers to foundation models created by Anthropic and associated software.
 
 * <a target="_blank" href="https://claude.ai/">claude.ai</a> 
 
@@ -50,6 +93,8 @@ created: "2026-03-19"
 
    That is why instead of hiring entry-level programmers, companies will be <a href="#Pricing">paying for AI tokens</a>.
 
+* <strong>Claude CoWork</strong> can control macOS mouse, keyboard, and screen - letting Claude operate any app.
+
 * The history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons is summarized in <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> 
 
    It says the company is headquartered in San Francisco's <a target="_blank" href="https://en.wikipedia.org/wiki/Foundry_Square">Foundry Square</a> (near the Bay Bridge) at 500 Howard and First Streets (across from Chipotle & BlackRock and close to the SalesForce tower's BART/busses). 
@@ -60,55 +105,65 @@ REMEMBER: Anththropic does not <strong>host</strong> their own models but use AW
 
    PROTIP: That enables us to bring costs down by <a target="_blank" href="https://medium.com/towards-artificial-intelligence/i-cancelled-my-200-mo-claude-api-subscription-again-0e2175502778">using a downloaded local foundation model</a> while using Claude Code/Work.
 
+* Claude <strong>Dispatch</strong> enables <strong>cross-device workflows</strong> where tasks move from <strong>mobile app</strong> to desktop app which stays awake (doing whatever else).
 
-## Anthropic the Company
+* <a target="_blank" href="https://medium.com/data-and-beyond/claude-can-use-your-computer-a-comprehensive-security-first-deep-dive-into-claude-computer-use-cf424f48105d">Claude "Computer Use"</a>: Because raw GUI control is powerful, but also brittle, slower, and much harder to govern, the Claude ecosystem is a layered agent system where <strong>connectors</strong> (with structured contracts) via MCP apps are preferred, browser automation (of forms on websites) is secondary, and raw full-screen (difficult to govern) desktop control is the fallback layer.
 
-1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a><br />-- the corporate marketing landing page.
-
-   Notice "Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks."
-
-1. <a target="_blank" href="https://www.linkedin.com/company/anthropicresearch/posts/?feedView=all">Anthropic's entry on LinkedIn</a> classifies the company in the "Research Services" industry:
-
-   "Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems."
-
-   3M followers. 501-1K employees.
-
-1. CEO Dario Amodei was OpenAI's Vice President of Research.
-
-1. Click <a target="_blak" href="https://www.anthropic.com/research">"Read more" at https://www.anthropic.com/research</a> about results from Anthropic's survey of users.
-
-   1. Click "Posts" tab to view announcements.
-   1. Click <a target="_blank" href="https://www.linkedin.com/ad-library/search?companyIds=106863934">"Ads"</a> to see videos of Superbowl commercials.
+References:
+   * https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built
    <br /><br />
 
-1. <a target="_blank" href="https://www.youtube.com/@anthropic-ai">Anthropic's YouTube channel</a>
 
-   * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
-   <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
-
+<a name="Glossary"></a>
 
 ## Features Glossary
 
-Authomation capabilitiesib AI agents have gone beyond auto-complete of code.
+Automation provided by AI agents have gone beyond auto-complete of code.
+
+* <strong>Connectors</strong> (under the "Customize" and <a target="_blank" href="https://claude.ai/settings/connectors">Settings</a> menu items) enable Claude to interact with external platforms GitHub,  Gmail, Google Calendar, Google Drive, etc.
+
+* An <strong>agentic code harness</strong> is what enables an LLM to be Agentic with sandboxes, accept prompts, use tools, etc.
 
 * <strong>Memory system</strong>: CLAUDE.md and other files that provide persistent <strong>context</strong> across sessions.
 
-* <strong>Slash commands</strong>: <a href="#SlashCommands">Powerful keywords to control agent behavior</a>.
+* <a href="#SlashCommands"><strong>Slash commands</strong></a>: Powerful keywords to control agent behavior. <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY">VIDEO</a>
 
-* <strong>Subagents</strong>: Create specialized subagents for different tasks with their own context window.
+* <strong>Subagents</strong>: Create specialized subagents for different tasks with their own context window. REMEMBER: Subagents operate with isolated context and do NOT share memory with the coordinator. Every piece of its information must be passed explicitly in it.
 
-* <strong>Skills</strong> enable new knowledge to be dynamically obtained by Claude or subagents based on minimal description and the current query as opposed to always taking up room lurking in the context memory.
+* <strong>Skills</strong> (under the Customize menu item) enable new knowledge to be dynamically obtained by Claude or subagents based on minimal description and the current query as opposed to always taking up room lurking in the context memory.
 
 * <strong>MCP Suppor</strong>t: Extend it with any MCP tool to access APIs, databases and other external systems.
 
 * <strong>GitHub Integratio</strong>n: Deep integration with GitHub for PR reviews, issue management and even CI/CD.
 
 * <strong>Hooks</strong> are small scripts (agentic workflows) that run automatically triggered by events (before or after Claude tries to do something). So a hook can block Claude from taking an action unless a specific condition has been met.
+   https://dev.to/gunnargrosch/automating-your-workflow-with-claude-code-hooks-389h
 
-* <strong>Plugins</strong> bundle hooks, slash commands, and skills together for sharing with others.
+* <strong>Plugins</strong> (under the Customize menu item) bundle hooks, <a href="#SlashCommands">slash commands</a>, and skills together for sharing with others.
 
 * <strong>Claude Agent SDK</strong> are used to build agentic AI systems beyond coding assistance.
 
+
+<a name="Capabilities"></a>
+
+## Capabilities: What can you do with Claude?
+
+Your professional <strong>capabilities</strong> can be confidently monitized when features are combined to be <strong>useful</strong>:
+
+* Customer Support Resolution Agent (Agent SDK + MCP + escalation)
+
+* Code Generation with Claude Code (CLAUDE.md + plan mode + <a href="#SlashCommands">slash commands</a>)
+
+* Multi-Agent Research System (coordinator-subagent orchestration)
+
+* Developer Productivity Tools (built-in tools + MCP servers)
+
+* Claude Code for CI/CD (non-interactive pipelines + structured output)
+
+* Structured Data Extraction (JSON schemas + tool_use + validation loops)
+
+
+<a name="Pricing"></a>
 
 ## Pricing Subscriptiions
 
@@ -123,7 +178,16 @@ Sign up for a paid Claude AI account to use Claude Code at <a target="_blank" hr
 <br /><br />
 
 
+* https://anthropic.skilljar.com/
+
+
+<a name="Install"></a>
+
 ## Claude app Install
+
+<a target="_blank" href="https://www.youtube.com/watch?v=julbw1JuAz0">VIDEO</a>:
+Fun fact: 90% of code in Claude Code is written by itself, in TypeScript, React, Ink, Yoga, and Bun.
+The team works at around 5 releases per engineer each day. AI agents are used for code reviews and tests, test-driven development’s (TDD) renaissance, automating incident response, and cautious use of feature flags. 
 
 1. PROTIP: Instead of (using an internet browser such as Chrome) at clicking "Download desktop app" (claude.dmg to install on macOS) <a target="_blank" href="https://claude.ai/login">https://claude.ai</a> or <a target="_blank" href="https://claude.com/download">https://claude.com/download</a>,<br />open your Terminal app and run:
    ```dash
@@ -139,10 +203,80 @@ Sign up for a paid Claude AI account to use Claude Code at <a target="_blank" hr
    ```bash
    whereis claude
    ```
-   If you installed using Homebrew:
+   If you used Homebrew to install, you don't need to add the program to the OS $PATH because Homebrew places all in the <tt>/opt/homebrew/bin</tt> folder:
    <pre>
    claude: /opt/homebrew/bin/claude
    </pre>
+1. Open the claude app: 
+   ```bash
+   $( whereis claude)
+   ```
+   Alternately, more simply since the path is within $PATH:
+   ```bash
+   claude
+   ```
+   
+   <a name="Settings"></a>
+
+   ### Settings menu and keyboard shortcuts
+
+1. <a target="_blank" href="https://claude.ai/settings/general"><img align="right" width="150" alt="claude-settings-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774655469/claude-settings-menu_cr3e9j.png" /></a>Click the Toggle sidebar (squarish) icon to collapse and expand the sidebar menu.
+
+1. PROTIP: From anywhere in Claude, press shift+command+, (comma) for Claude's Settings at <a target="_blank" href="https://claude.ai/settings/general">https://claude.ai/settings/general</a>
+
+   But switch off the "AWS Extend Switch Roles" browser extension if that comes up instead.
+
+1. PROTIP: To chat from any screen, switch to a New Chat prompt by pressing <strong>shift+command+O</strong> (the letter) and start typing. Better yet, press <strong>command+K</strong> for the pop-up.
+
+   REMEMBER: When your cursor is within the chat box, use these keyboard shortcuts:
+
+   <a target="_blank" href=""><img alt="claude-chat-keys.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774658242/claude-chat-keys_hwanw5.png" /></a>
+
+
+   <a name="Connectors"></a>
+
+   ### Connectors
+
+1. Click one Category at a time to see what's available already: Code, Communication, Data, Design, Development, Financial Services, Health, Life sciences, Productivity, Sales and Marketing.
+
+   REMEMBER: Most services at the end of the connector (such as Zapier) charge money.
+
+   
+
+
+
+   <a name="Prompts"></a>
+   
+   ### Prompts
+
+1. Type your question or command on top of "How can I help you today?"
+
+   REMEMBER, there is a cutoff for when information has been loaded in the model.
+
+   ### Artifacts
+
+   <img align="right" width="150" alt="claude-app-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774594600/claude-app-menu_qr26in.png">
+1. Click "+ New artifacts". Artifiacts are pre-coded small interactive apps such as Productivity Tools.
+1. Click "Artifacts" on the menu and under its "Inspiration" tab, try:
+   * click "Flashcards" and provide a CSV file.
+   * Click "QR code generator".
+   * Click "Trivia" game.
+   * Click "Better than very" to find more expressive words.
+   * Click "CSV Data Visualizer".
+
+1. To create your own automations, consider the "Cowork" button at the top of the Claude app.
+
+   Cowork and Projects both require a Pro Plan subscription.
+
+   ### Project
+
+   "Upload materials, set custom instructions, and organize conversations in one space."
+
+1. Click the "Project" on the left menu to provide a way for Claude to remember your preferences and <strong>customize</strong> its responses to your preferences. So you don't to repeat yourself.
+
+   PROTIP: If you work with different companies or clients, isolate each by creating a different project containing different information.
+
+1. Click "+ New Project"
 
 
 <hr />
@@ -272,11 +406,16 @@ Load my template:
 
    Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
 
-   ## /terminal-setup slash command 
+   
+   <a name="SlashCommands"></a>
+
+   ## /terminal-setup slash commands
 
    <a name="SlashCommands"></a>
 
    ## slash commands
+
+1. Type just the / slash character for a menu:
 
    ```
    /help       # menu below:
@@ -299,6 +438,28 @@ Load my template:
    /compact    # summarize the conversation and replaces the current context with the summary. 
 
    /logout     # from Claude UI/CLI program
+   ```
+
+   REMEMBER: Each session is a 5-hour rolling window (at time of this writing). ???
+
+   Models reset ???
+
+   Additional slash commands:
+   ```
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insignts   # file://$HOME/.claude/usage-data/report.html
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=6m31s">/batch   # Batch Tasks & PRs </a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=9m3s">/simplify   # Code Review</a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=11m42s">/loop   # Schedule Prompts</a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=14m31s">/btw   # side question</a>
+   ```
+   12:34 7. Rewind Mode (Escape x2)<br />
+   13:19 8. Hooks & Automation Rules<br />
+   14:31 9. BTW Side Questions (/btw)<br />
+
+   ```
+   /fast     # to speed up Opus execution.
    ```
 
    <a name="status"></a>
@@ -679,6 +840,8 @@ Load my template:
 VIDEO</a>: Chris Raroque runs Claude Code Opus inside a Warp client referencing a [paid] mobbin.com design template. Voice dictates changes. Breaks down generation section by section. No hand edits.
 
 
+Anthropic provides free tutorials at https://anthropic.skilljar.com/
+
 ## Claude Partner Network
 
 https://claude.com/partners
@@ -701,6 +864,7 @@ Partners get priority access to new certifications as they roll out.
 
 Additional certifications for sellers, architects, and developers. 
 
+
 <a name="Certifications"></a>
 
 ## Certifications
@@ -711,14 +875,14 @@ Additional certifications for sellers, architects, and developers.
 
 ## Claude Certified Architect (CCA), Foundations
 
-<a target="_blank" href="https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2F8lsy243ftffjjy1cx9lm3o2bw%2Fpublic%2F1773274827%2FClaude+Certified+Architect+%E2%80%93+Foundations+Certification+Exam+Guide.pdf">Anthropic's Exam Guide.pdf</a>
+Exam Domains from <a target="_blank" href="https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2F8lsy243ftffjjy1cx9lm3o2bw%2Fpublic%2F1773274827%2FClaude+Certified+Architect+%E2%80%93+Foundations+Certification+Exam+Guide.pdf">Anthropic's Exam Guide.pdf</a>:
 
-Domains:
 1. 27% Agentic Architecture & Orchestration - how agents loop, coordinate with subagents, and enforce rules with hooks
-vs prompts.
+vs prompts. <a target="_blank" href="https://github.com/bomonike/claude-templates/blob/main/cca-domain-notes/cca-domain1-starter.md">STARTER</a>
    * The Agentic Loop
    * Hub-and-Spoke Architecture
    * Prompts vs. Hooks
+   * Anti-patterns: natural language parsing to determine loop termination; arbitrary iteration caps as the primary stopping mechanism; checking for assistant text as a completion indicator.
 2. 18% Tool Design & MCP Integration - how Claude connects to external systems and how tool descriptions
 determine routing.
    * Tool Descriptions
@@ -733,10 +897,15 @@ loops.
    * Few-Shot Advantage
    * Guaranteed structured output with JSON schemas
    * Validation Loop
-5. 15% Context Management & Reliability covers the 'lost in the middle' effect, escalation patterns, and error propagation.
-   * Context Window Problem
-   * When to Escalate
+5. 15% Context Management & Reliability
+   * Context Window Problem ('lost in the middle' effect)
+   * When to Escalate (escalation patterns)
    * Error Propagation
+   * <a target="_blank" href="https://github.com/bomonike/claude-templates/???">domain5-starter.md</a>
+   * <a target="_blank" href="https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk">Building Agents with the Claude Agent SDK</a> covers context management, error propagation, and escalation design
+   * <a target="_blank" href="https://platform.claude.com/docs/en/agent-sdk/overview">Agent SDK session docs</a> for resumption, fork_session, /compact
+   * <a target="_blank" href="https://github.com/affaan-m/everything-claude-code">Everything Claude Code repo</a> by <a target="_blank" href="https://www.linkedin.com/in/affaanmustafa/">Affaan Mustafa</a> for battle-tested context management patterns, scratchpad files, and strategic compaction. <a target="_blank" href="https://x.com/affaanmustafa/status/2012378465664745795">Tools and Tips</a>.
+
 <br /><br />
 
 The community confirms is the exam's focus areas: fallback loop design, Batch API cost optimization, JSON schema structuring to prevent hallucinations, and MCP tool orchestration.
@@ -1028,18 +1197,39 @@ References:
 
 
 
+<a name="Grind"></a>
 
-## Tutorials
+## Tutorial Grind
 
-<a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
+* <a target="_blank" href="https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/">Anthropic is trainging the country of Iceland</a>
 
-1. Random YouTube videos peddling tutorials:
+   * <a target="_blank" href="https://dev.to/gunnargrosch/teaching-claude-code-how-you-work-claudemd-in-practice-21d9">Teaching Claude Code How You Work: CLAUDE.md in Practice</a>
+   * <a target="_blank" href="https://dev.to/gunnargrosch/from-zero-to-agentic-coding-running-claude-code-with-amazon-bedrock-1f00">From Zero to Agentic Coding: Running Claude Code with Amazon Bedrock</a>
+   <br /><br />
+
+Random YouTube videos:
+   * https://www.youtube.com/watch?v=ofLvTNZEHVk">"Inside Claude Code: The Architecture of AI Agents" by PY</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
+   <br /><br />
+
+YouTube videos peddling subscriptions:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
    * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> by Brock Mesarich | AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
+
+by Brock Mesarich - AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=5bhh8ffHN6Q">"How to Use Claude Cowork Projects Better Than 99% of People"</a>   
+
    * <a target="_blank" href="https://www.youtube.com/watch?v=vizgFWixquE">"Anthropic's NEW Claude Architect Guide In 39 Minutes" by Mark Kashef to pitch <a target="_blank" href="https://www.skool.com/earlyaidopters/">$64/mo Early AI-dopters</a>
+   * <a target="_blank" href="">"The Easiest Way to Get Ahead With Claude Code"</a> by Simon Scrapes pushing <a target="_blank" href="https://skool.com/scrapes">$37/mo Scrapes</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_gV7qDhRiNk">"Claude's New AI Auto-Mode Runs Itself Now"</a> by AI News Today - Julian Goldie Podcast" to plug <a target="_blank" href="https://www.skool.com/ai-profit-lab-7462/about">$59/mo AI Profit Boardbroom</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=nLy3YYGJrjQ">"Claude Explained - Chat vs Cowork vs Code" by Oliur Online to plug <a target="_blank" href="https://www.oliur.com/resources">free resources</a> and <a target="_blank" href="https://digitalcreator.club/">$179/yr Digital Creator Club</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY">"Claude Code Just Got 10X Powerful (10 Insane Features)</a> by The AI Growth Lab with Tom to push <a target="_blank" href="https://learnn8nautomation.com/claude-code-challenge">$500 one-time</a> "30 day Challenge"
    <br /><br />
+
+Others when you're through with the above:
+   * <a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
 
 
 <hr />
