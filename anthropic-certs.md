@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-28"
-lastchange: "26-03-28 v016 doc: fix pre formatting :anthropic-certs.md"
+lastchange: "26-03-28 v017 doc: first time auth :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -302,7 +302,24 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    claude
    ```
 
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img width="300" alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
+   <a name="Auth"></a>
+
+   ### First-time Authentication
+
+1. The first time that Claude runs:
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img width="350" alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
+
+1. Continue to browser
+1. Claude Code would like to connect to your Claude chat account
+1. Click "Authorize".
+1. Press command+W to close the browser window.
+1. Click "Copy Code". Press command+tab to switch to VSCode. 
+1. Click on the entry until the orange border appears.
+1. Press command+V to paste. Click "Authorize".
+
+   PROTIP: Press shift+command and - or + to make fonts larger or smaller. But that adjusts for all panes. So many prefer to view Claude Code standalone rather than within VSCode.
+
+   PROTIP: Ideally, use three monitor screens: Terminal for Claude Code, Visual Studio (vertical view), Tutorial screen.
 
 1. Type ? to see all 
 
@@ -551,24 +568,30 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    <a href="#doctor">/doctor</a>
    </pre>
 
-   REMEMBER: Each session is a 5-hour rolling window (at time of this writing). ???
-
-   Models reset ???
-
    Additional slash commands:
    <pre>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insights   # file://$HOME/.claude/usage-data/report.html
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insights</a>   # file://$HOME/.claude/usage-data/report.html
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=6m31s">/batch   # Batch Tasks & PRs </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=9m3s">/simplify   # Code Review</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=11m42s">/loop   # Schedule Prompts</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=14m31s">/btw   # side question</a>
-   /fast     # to speed up Opus model execution.
-   </pre>
    </pre>
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=13m19s">Hooks & Automation Rules</a><br />
+   REMEMBER: Each session is a 5-hour rolling window (at time of this writing). ???
+
+   Models reset ???
+
+   <pre>
+   /model haiku     # to switch to using the latest Haiku model.
+   /model opus.     # to switch to using the latest Opus model.
+   /fast            # to speed up Opus model execution.
+   </pre>
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=13m19s">Hooks & Automation Rules</a>
+
+<hr />
 
    <a name="status"></a>
 
@@ -619,18 +642,17 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    </pre>
 
 
+<a name="#doctor"></a>
 
-   <a name="#doctor"></a>
-
-   ### /doctor or CLI claude doctor
+### /doctor or CLI claude doctor
 
    <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=36m39s" title="Andrew Brown">VIDEO</a>
 
 
 
-   <a href="TokenContext"></a>
+<a href="TokenContext"></a>
 
-   ### Token /context usage
+### Token /context usage
 
    <a target="_blank" href="https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans">Claude’s context window</a> is 200K, meaning it can ingest 200K+ tokens (about 500 pages of text or more) when using a paid Claude plan.
    The Claude API can ingest <strong>1M tokens</strong> when using Claude Opus 4.6 or Sonnet 4.6.
@@ -692,15 +714,6 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    REMEMBER: Claude Code has no memory. On every new single session, it wakes up with <strong>zero context</strong> about your project.
    So history and preferences must be added added as context.
 
-1. Start Claude Code in your project’s root directory:
-   ```bash
-   claude
-   ```
-   If you used Homebrew to install Claude 
-   ```bash
-   $(which cl???)
-   ```
-
 1. At the <sstrong>Claude CLI</strong>, 
 1. Copy in files from ???
 
@@ -710,6 +723,8 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    * terraform-CLAUDE.md
    * python-CLAUDE.md
    <br /><br />
+
+   <a name="init"></a>
 
 1. generate a starter CLAUDE.md as a starting point:
    ```bash
@@ -1341,21 +1356,6 @@ References:
 
 
 https://github.com/citypaul/.dotfiles/blob/main/claude/.claude/CLAUDE.md
-curl -fsSL https://claude.ai/install.sh | bash
-
-Continue to browser
-Claude Code would like to connect to your Claude chat account
-Click "Authorize".
-1. Press command+W to close the browser window.
-1. Click "Copy Code". Press command+tab to switch to VSCode. 
-1. Click on the entry until the orange border appears.
-1. Press command+V to paste. Click "Authorize".
-
-   PROTIP: Press shift+command and - or + to make fonts larger or smaller. But that adjusts for all panes. So many prefer to view Claude Code standalone rather than within VSCode.
-
-   PROTIP: Ideally, use three monitor screens: Terminal for Claude Code, Visual Studio (vertical view), Tutorial screen.
-
-~/.local/bin/claude
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
