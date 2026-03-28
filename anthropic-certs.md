@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-28"
-lastchange: "26-03-28 v015 doc: keys formatting :anthropic-certs.md"
+lastchange: "26-03-28 v016 doc: fix pre formatting :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -503,6 +503,9 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 
    <a name="SlashCommands"></a>
 
+   ???
+
+
    ## slash commands
 
 1. Type just the / slash character for a menu:
@@ -523,9 +526,11 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    /security-review
    /simplify
    /update-config
-   /chedule
+   /schedule
    </pre>
+
    Others:
+   <pre>
    /help       # menu below:
    /connect    # establish connection
    /start      # Begin a new session
@@ -552,22 +557,18 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 
    Additional slash commands:
    <pre>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insignts   # file://$HOME/.claude/usage-data/report.html
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insights   # file://$HOME/.claude/usage-data/report.html
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=6m31s">/batch   # Batch Tasks & PRs </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=9m3s">/simplify   # Code Review</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=11m42s">/loop   # Schedule Prompts</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=14m31s">/btw   # side question</a>
-
-   12:34 7. Rewind Mode (Escape x2)<br />
-   13:19 8. Hooks & Automation Rules<br />
-   14:31 9. BTW Side Questions (/btw)<br />
+   /fast     # to speed up Opus model execution.
+   </pre>
    </pre>
 
-   ```
-   /fast     # to speed up Opus execution.
-   ```
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=13m19s">Hooks & Automation Rules</a><br />
 
    <a name="status"></a>
 
@@ -634,7 +635,7 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    <a target="_blank" href="https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans">Claude’s context window</a> is 200K, meaning it can ingest 200K+ tokens (about 500 pages of text or more) when using a paid Claude plan.
    The Claude API can ingest <strong>1M tokens</strong> when using Claude Opus 4.6 or Sonnet 4.6.
    
-   PROTIP: Take action when token usage is above 50%.
+   PROTIP: Take action when token usage is above 50%. See <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=12m34s">Rewind Mode (Escape x2)</a>
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774472191/claude-token-usage_ggrffl.webp"><img alt="claude-token-usage.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774472191/claude-token-usage_ggrffl.webp" /></a>
 
