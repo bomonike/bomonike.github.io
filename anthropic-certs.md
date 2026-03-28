@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-27"
-lastchange: "26-03-27 v013 doc: keys :anthropic-certs.md"
+date: "2026-03-28"
+lastchange: "26-03-28 v014 doc: keys formatting :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -122,7 +122,7 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <strong>Connectors</strong> (under the "Customize" and <a target="_blank" href="https://claude.ai/settings/connectors">Settings</a> menu items) enable Claude to interact with external platforms GitHub,  Gmail, Google Calendar, Google Drive, etc.
 
-* An <strong>agentic code harness</strong> is what enables an LLM to be Agentic with sandboxes, accept prompts, use tools, etc.
+* An <strong>agentic code harness</strong> is what enables an LLM to be Agentic with <a href="#Sandbox">sandboxes</a>, accept prompts, use tools, etc.
 
 * <strong>Memory system</strong>: CLAUDE.md and other files that provide persistent <strong>context</strong> across sessions.
 
@@ -183,27 +183,45 @@ Sign up for a paid Claude AI account to use Claude Code at <a target="_blank" hr
 
 <a name="Install"></a>
 
-## Claude app Install
+## Claude Desktop app Install
 
 <a target="_blank" href="https://www.youtube.com/watch?v=julbw1JuAz0">VIDEO</a>:
 Fun fact: 90% of code in Claude Code is written by itself, in TypeScript, React, Ink, Yoga, and Bun.
 The team works at around 5 releases per engineer each day. AI agents are used for code reviews and tests, test-driven development’s (TDD) renaissance, automating incident response, and cautious use of feature flags. 
 
+1. Install pre-requisite utilties NodeJs:
+   ```bash
+   brew install node
+   ```
+   ```bash
+   node --version
+   ```
+   <pre>
+   v20.18.0
+   </pre>
+
 1. PROTIP: Instead of (using an internet browser such as Chrome) at clicking "Download desktop app" (claude.dmg to install on macOS) <a target="_blank" href="https://claude.ai/login">https://claude.ai</a> or <a target="_blank" href="https://claude.com/download">https://claude.com/download</a>,<br />open your Terminal app and run:
    ```dash
    brew info --cask claude
+
+   brew install --cask claude-code
    brew install --cask claude
    ```
    <pre>
    Anthropic's official Claude AI desktop app
    ==> Moving App 'Claude.app' to '/Users/johndoe/Applications/Claude.app'
    </pre>
-
+1. Confirm installation success: 
+   ```bash
+   claude
+   ```
 1. Confirm installation location: 
    ```bash
    whereis claude
    ```
-   If you used Homebrew to install, you don't need to add the program to the OS $PATH because Homebrew places all in the <tt>/opt/homebrew/bin</tt> folder:
+   Claude was not installed if you see: <tt>bash: claude:: command not found</tt>
+
+   REMEMBER: If you used Homebrew to install, you don't need to add the program to the OS $PATH because Homebrew places all in the <tt>/opt/homebrew/bin</tt> folder:
    <pre>
    claude: /opt/homebrew/bin/claude
    </pre>
@@ -220,13 +238,15 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 
    ### Settings menu and keyboard shortcuts
 
-1. <a target="_blank" href="https://claude.ai/settings/general"><img align="right" width="150" alt="claude-settings-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774655469/claude-settings-menu_cr3e9j.png" /></a>Click the Toggle sidebar (squarish) icon to collapse and expand the sidebar menu.
+1. <a target="_blank" href="https://claude.ai/settings/general"><img align="right" width="200" alt="claude-settings-menu2.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774681383/claude-settings-menu2_cuqvae.png" /></a>Click the Toggle sidebar (squarish) icon to collapse and expand the sidebar menu.
+
+   REMEMBER: The "Usage" Settings menu item does not appear until you have a paid subscription.
 
 1. PROTIP: From anywhere in Claude, press shift+command+, (comma) for Claude's Settings at <a target="_blank" href="https://claude.ai/settings/general">https://claude.ai/settings/general</a>
 
    But switch off the "AWS Extend Switch Roles" browser extension if that comes up instead.
 
-1. PROTIP: To chat from any screen, switch to a New Chat prompt by pressing <strong>shift+command+O</strong> (the letter) and start typing. Better yet, press <strong>command+K</strong> for the pop-up.
+1. PROTIP: To chat from any screen, switch to a New Chat prompt by pressing <strong>shift+command+O</strong> (the letter) and start typing. For the pop-up, press <strong>command+K</strong> or <strong>shift+command+I</strong> for incognito (for the prompt to not appear among Recents).
 
    REMEMBER: When your cursor is within the chat box, use these keyboard shortcuts:
 
@@ -436,7 +456,7 @@ Load my template:
    /upload     # files
    <a href="#loop">/loop</a>
    /compact    # summarize the conversation and replaces the current context with the summary. 
-
+   <a href="#doctor">/doctor</a>
    /logout     # from Claude UI/CLI program
    ```
 
@@ -445,7 +465,7 @@ Load my template:
    Models reset ???
 
    Additional slash commands:
-   ```
+   <pre>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insignts   # file://$HOME/.claude/usage-data/report.html
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
@@ -453,10 +473,11 @@ Load my template:
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=9m3s">/simplify   # Code Review</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=11m42s">/loop   # Schedule Prompts</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=14m31s">/btw   # side question</a>
-   ```
+
    12:34 7. Rewind Mode (Escape x2)<br />
    13:19 8. Hooks & Automation Rules<br />
    14:31 9. BTW Side Questions (/btw)<br />
+   </pre>
 
    ```
    /fast     # to speed up Opus execution.
@@ -488,6 +509,8 @@ Load my template:
    
    ### /config
 
+   Configuration choices are stored by Claude in its file <tt>.claude/settings.json</tt>
+
    <pre>
    ❯ /config
       Auto-compact                              true
@@ -508,7 +531,14 @@ Load my template:
       Model                                     opus
    </pre>
 
-   The above are obtained from file <tt>.claude/settings.json</tt>
+
+
+   <a name="#doctor"></a>
+
+   ### /doctor or CLI claude doctor
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=36m39s" title="Andrew Brown">VIDEO</a>
+
 
 
    <a href="TokenContext"></a>
@@ -615,7 +645,7 @@ Load my template:
 
 1. Edit file CLAUDE.md, the long-term memory file.
    ```
-    # CLAUDE.md
+   # CLAUDE.md
 
     This file guides Claude Code (claude.ai/code) when working with code in this repository.
    ```
@@ -1180,12 +1210,36 @@ but MCP dramatically reduces the development work required on your end.
 
 ## Run in Containers
 
-Instead of sitting around monitoring every prompt like a hall monitor just in case a rogue <tt>rm -rf</tt> slips by, I use Code Container to mount every project into an <strong>isolated container</strong> where I can let my harness run loose with full permissions. My actual machine stays untouched.
+Instead of sitting around monitoring every prompt like a hall monitor just in case a rogue <tt>rm -rf</tt> slips by.
 
-1. Install container:
+So consider a Code Container to mount every project into an <strong>isolated container</strong> where I can let my harness run loose with full permissions while the actual machine stays untouched.
+
+1. Install container in NodeJs:
    ```bash
    npm install -g code-container
    ```
+
+   However, although actions within a container can’t affect your real system, it breaks when it needs network access, host filesystem access, or anything that crosses the sandbox boundary. Most real workflows need at least one of those.
+
+   So <strong>auto mode</strong> lets an AI classifier decide what’s safe, block what isn’t, and ask you only when it’s genuinely unsure. Auto mode runs two separate security systems. One watches what goes into the agent’s context.A server-side detector scans content for prompt injection attempts.
+
+   The second line of defense evaluates what the agent wants to do before it does it. 
+   Before the agent executes any action with real consequences, the "transcript classifier" built on Claude Sonnet 4.6 classifier evaluates the action against a set of decision criteria using full chain-of-thought reasoning.
+
+   <a target="_blank" href="https://kotrotsos.medium.com/claude-code-auto-mode-actually-explained-4ec90aa36086">This BLOG</a> by <a target="_blank" href="https://acdigest.substack.com/">Marco Kotrotsos</a> reports a 17% false negative which allowed dangerous actions, including 5.7% data exfiltration attack success rate.
+   But that's still better that letting everything through when using the time-saving:
+
+   <tt>--dangerously-skip-permissions</tt>
+
+   Auto mode is not a replacement for judgment on high-stakes operations. 
+
+1. To see the complete default configuration for customization:
+   ```bash
+   claude auto-mode defaults
+   ```
+   References:
+   * https://www.youtube.com/watch?v=OBQtXEUe3Ik&pp=0gcJCdkKAYcqIYzv
+
 
 300ms startup time!
 
@@ -1207,9 +1261,13 @@ References:
    * <a target="_blank" href="https://dev.to/gunnargrosch/from-zero-to-agentic-coding-running-claude-code-with-amazon-bedrock-1f00">From Zero to Agentic Coding: Running Claude Code with Amazon Bedrock</a>
    <br /><br />
 
-Random YouTube videos:
+YouTube videos with no subscription:
    * https://www.youtube.com/watch?v=ofLvTNZEHVk">"Inside Claude Code: The Architecture of AI Agents" by PY</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=jw0pMr54Ztc&pp=ugUEEgJlbg%3D%3D">"The Ultimate Beginner’s Guide To Claude"</a> by <a target="_blank" href="https://www.aiedgehq.co/">AI Edge on Telegram</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ntDIxaeo3Wg">"Claude Code - Full Tutorial for Beginners"</a> by Tech With Tim offering <a target="_blank" href="https://techwithtim.net/newsletter">newsletter</a>
+   * https://www.youtube.com/watch?v=aWAfpOi91vc&pp=ugUEEgJlbg%3D%3D">"Let Claude Cowork Work For You, here’s how"
+   * https://www.youtube.com/watch?v=rSoeh6K5Fqo "Making Claude Code more useful with TDD and XP Techniques by FeedbackDrivenDev
    <br /><br />
 
 YouTube videos peddling subscriptions:
@@ -1226,11 +1284,28 @@ by Brock Mesarich - AI for Non Techies to pitch <a target="_blank" href="https:/
    * <a target="_blank" href="https://www.youtube.com/watch?v=_gV7qDhRiNk">"Claude's New AI Auto-Mode Runs Itself Now"</a> by AI News Today - Julian Goldie Podcast" to plug <a target="_blank" href="https://www.skool.com/ai-profit-lab-7462/about">$59/mo AI Profit Boardbroom</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=nLy3YYGJrjQ">"Claude Explained - Chat vs Cowork vs Code" by Oliur Online to plug <a target="_blank" href="https://www.oliur.com/resources">free resources</a> and <a target="_blank" href="https://digitalcreator.club/">$179/yr Digital Creator Club</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY">"Claude Code Just Got 10X Powerful (10 Insane Features)</a> by The AI Growth Lab with Tom to push <a target="_blank" href="https://learnn8nautomation.com/claude-code-challenge">$500 one-time</a> "30 day Challenge"
+   * <a target="_blank" href="https://www.youtube.com/watch?v=mpALXah_PBg">"Build & Sell with Claude Code (10+ Hour Course)"</a> by Nate Herk pushing <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/">$99/mo AI Automation Society Plus</a>
    <br /><br />
 
 Others when you're through with the above:
    * <a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
 
+https://github.com/citypaul/.dotfiles/blob/main/claude/.claude/CLAUDE.md
+curl -fsSL https://claude.ai/install.sh | bash
+
+Continue to browser
+Claude Code would like to connect to your Claude chat account
+Click "Authorize".
+1. Press command+W to close the browser window.
+1. Click "Copy Code". Press command+tab to switch to VSCode. 
+1. Click on the entry until the orange border appears.
+1. Press command+V to paste. Click "Authorize".
+
+   PROTIP: Press shift+command and - or + to make fonts larger or smaller. But that adjusts for all panes. So many prefer to view Claude Code standalone rather than within VSCode.
+
+   PROTIP: Ideally, use three monitor screens: Terminal for Claude Code, Visual Studio (vertical view), Tutorial screen.
+
+~/.local/bin/claude
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
