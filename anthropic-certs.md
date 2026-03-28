@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-28"
-lastchange: "26-03-28 v014 doc: keys formatting :anthropic-certs.md"
+lastchange: "26-03-28 v015 doc: keys formatting :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -144,11 +144,11 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 * <strong>Claude Agent SDK</strong> are used to build agentic AI systems beyond coding assistance.
 
 
-<a name="Capabilities"></a>
+<a name="Productivity"></a>
 
-## Capabilities: What can you do with Claude?
+## Productivity: What can you do with Claude?
 
-Your professional <strong>capabilities</strong> can be confidently monitized when features are combined to be <strong>useful</strong>:
+PROTIP: Improvements in net productivity can be confidently <strong>monitized</strong> when features are combined to be <strong>useful</strong> when consistently applied:
 
 * Customer Support Resolution Agent (Agent SDK + MCP + escalation)
 
@@ -173,12 +173,72 @@ Sign up for a paid Claude AI account to use Claude Code at <a target="_blank" hr
 * Claude Free
 * Claude Max $17/month to use Claude Code and Cowork
 * Claude Max $100/month for 5x or 20x more usage than Pro
-* Teams
+* Teams $20/month
 * Enterprise
 <br /><br />
 
 
-* https://anthropic.skilljar.com/
+<a name="Tutorials"></a>
+
+## Tutorials
+
+Anthropic's own tutorials are at:
+   * <a target="_blank" href="https://anthropic.skilljar.com/">https://anthropic.skilljar.com</a>
+   * <a target="_blank" href="https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/">Anthropic is trainging the country of Iceland</a>
+   <br /><br />
+
+Articles:
+   * <a target="_blank" href="https://dev.to/gunnargrosch/teaching-claude-code-how-you-work-claudemd-in-practice-21d9">Teaching Claude Code How You Work: CLAUDE.md in Practice</a>
+   * <a target="_blank" href="https://dev.to/gunnargrosch/from-zero-to-agentic-coding-running-claude-code-with-amazon-bedrock-1f00">From Zero to Agentic Coding: Running Claude Code with Amazon Bedrock</a>
+   <br /><br />
+
+YouTube videos with no subscription:
+   * https://www.youtube.com/watch?v=ofLvTNZEHVk">"Inside Claude Code: The Architecture of AI Agents" by PY</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=jw0pMr54Ztc&pp=ugUEEgJlbg%3D%3D">"The Ultimate Beginner’s Guide To Claude"</a> by <a target="_blank" href="https://www.aiedgehq.co/">AI Edge on Telegram</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ntDIxaeo3Wg">"Claude Code - Full Tutorial for Beginners"</a> by Tech With Tim offering <a target="_blank" href="https://techwithtim.net/newsletter">newsletter</a>
+   * https://www.youtube.com/watch?v=aWAfpOi91vc&pp=ugUEEgJlbg%3D%3D">"Let Claude Cowork Work For You, here’s how"
+   * https://www.youtube.com/watch?v=rSoeh6K5Fqo "Making Claude Code more useful with TDD and XP Techniques by FeedbackDrivenDev
+   <br /><br />
+
+YouTube videos peddling subscriptions:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
+   * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
+
+by Brock Mesarich - AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=5bhh8ffHN6Q">"How to Use Claude Cowork Projects Better Than 99% of People"</a>   
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=vizgFWixquE">"Anthropic's NEW Claude Architect Guide In 39 Minutes" by Mark Kashef to pitch <a target="_blank" href="https://www.skool.com/earlyaidopters/">$64/mo Early AI-dopters</a>
+   * <a target="_blank" href="">"The Easiest Way to Get Ahead With Claude Code"</a> by Simon Scrapes pushing <a target="_blank" href="https://skool.com/scrapes">$37/mo Scrapes</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_gV7qDhRiNk">"Claude's New AI Auto-Mode Runs Itself Now"</a> by AI News Today - Julian Goldie Podcast" to plug <a target="_blank" href="https://www.skool.com/ai-profit-lab-7462/about">$59/mo AI Profit Boardbroom</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=nLy3YYGJrjQ">"Claude Explained - Chat vs Cowork vs Code" by Oliur Online to plug <a target="_blank" href="https://www.oliur.com/resources">free resources</a> and <a target="_blank" href="https://digitalcreator.club/">$179/yr Digital Creator Club</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY">"Claude Code Just Got 10X Powerful (10 Insane Features)</a> by The AI Growth Lab with Tom to push <a target="_blank" href="https://learnn8nautomation.com/claude-code-challenge">$500 one-time</a> "30 day Challenge"
+   * <a target="_blank" href="https://www.youtube.com/watch?v=mpALXah_PBg">"Build & Sell with Claude Code (10+ Hour Course)"</a> by Nate Herk pushing <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/">$99/mo AI Automation Society Plus</a>
+   <br /><br />
+
+Others when you're through with the above:
+   * <a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
+
+
+<a name="ClaudeCodeTemplate"></a>
+
+## Claude Code Template
+
+PROTIP: Load my templates repo from GitHub, which contains a curated set from other tutorials.
+
+1. In your OS Terminal app, create a "bomonike" folder.
+   ```bash
+   mkdir -p ~/bomonike
+   ```
+1. In your OS Terminal app, clone just the main branch:
+   ```bash
+   git clone https://github.com/bomonike/claude-templates.git --depth 1
+   cd claude-templates
+   ```
+
+   PROTIP: Use this as your base project when you install Claude.
 
 
 <a name="Install"></a>
@@ -200,31 +260,39 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    v20.18.0
    </pre>
 
-1. PROTIP: Instead of (using an internet browser such as Chrome) at clicking "Download desktop app" (claude.dmg to install on macOS) <a target="_blank" href="https://claude.ai/login">https://claude.ai</a> or <a target="_blank" href="https://claude.com/download">https://claude.com/download</a>,<br />open your Terminal app and run:
+1. Click "Download desktop app" (claude.dmg to install on macOS) <a target="_blank" href="https://claude.ai/login">https://claude.ai</a> or <a target="_blank" href="https://claude.com/download">https://claude.com/download</a>,<br />open your Terminal app and run:
    ```dash
-   brew info --cask claude
-
-   brew install --cask claude-code
-   brew install --cask claude
+   curl -fsSL https://claude.ai/install.sh | bash
    ```
-   <pre>
-   Anthropic's official Claude AI desktop app
-   ==> Moving App 'Claude.app' to '/Users/johndoe/Applications/Claude.app'
-   </pre>
+
+   PROTIP: We do not recommend "brew install" because it can be out of date, even though it's more convenient since Homebrew installs to <tt>/opt/homebrew/bin</tt> for all apps.
+
+1. Edit your <tt>~/.bashrc</tt> and .zshrc file to ensure that the program will be first in the OS $PATH folder by adding this at the bottom of the file:
+   ```bash
+   echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+   ```
+
 1. Confirm installation success: 
    ```bash
-   claude
+   claude --version
    ```
+   This should reflect the latest release at <a target="_blank" href="https://github.com/anthropics/claude-code/releases">https://github.com/anthropics/claude-code/release</a> which was, at time of this writing:
+   <pre>
+   2.1.86 (Claude Code)
+   </pre>
+
+   PROTIP: Notice that Claude is updated daily. So end your day with a backup and start your day with an update.
+
 1. Confirm installation location: 
    ```bash
    whereis claude
    ```
    Claude was not installed if you see: <tt>bash: claude:: command not found</tt>
-
-   REMEMBER: If you used Homebrew to install, you don't need to add the program to the OS $PATH because Homebrew places all in the <tt>/opt/homebrew/bin</tt> folder:
+   Otherwise you should see this (where ??? is replaced with your machine username):
    <pre>
-   claude: /opt/homebrew/bin/claude
+   claude: /Users/???/.local/bin/claude
    </pre>
+
 1. Open the claude app: 
    ```bash
    $( whereis claude)
@@ -233,7 +301,22 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    ```bash
    claude
    ```
-   
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img width="300" alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
+
+1. Type ? to see all 
+
+   <pre>
+   ! for bash mode       double tap esc to clear input      ctrl + _ to undo
+   / for commands        shift + tab to auto-accept edits   ctrl + z to suspend
+   @ for file paths      ctrl + o for verbose output        ctrl + v to paste images
+   & for background      ctrl + t to show todos             opt + p to switch model
+                           shift + ⏎ for newline              ctrl + s to stash prompt
+   </pre>
+
+   Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
+
+
    <a name="Settings"></a>
 
    ### Settings menu and keyboard shortcuts
@@ -253,16 +336,33 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    <a target="_blank" href=""><img alt="claude-chat-keys.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774658242/claude-chat-keys_hwanw5.png" /></a>
 
 
-   <a name="Connectors"></a>
+   <a name="Permissions"></a>
 
-   ### Connectors
+   ### Permissions
 
-1. Click one Category at a time to see what's available already: Code, Communication, Data, Design, Development, Financial Services, Health, Life sciences, Productivity, Sales and Marketing.
+   shift+tab cycles through the permissions modes, so auto-accept edits is displayed just because currently I'm in the bypass permissions mode. There is one more permission mode plan, in which Claude Code will discuss and plan, but will not make changes to your files.
 
-   REMEMBER: Most services at the end of the connector (such as Zapier) charge money.
 
+   ### Plan mode workflow
    
+   REMEMBER: The revolution to productivity from AI comes from "Plan Mode", which uses AI to generate a plan rather than "vibe coding" prompts thtat generate results directly. Generating code from plans is more repeatable and enables several people to review and collaborate.
 
+1. Cycle to plan mode by pressing <strong>shift+tab</strong> twice (switching):
+   <pre>
+   ⏸ plan mode on (shift+tab to cycle)   
+   </pre>
+
+   1. Write your goals. Build your ability to define objectives clearly.
+   1. Let Claude break it into steps.
+   1. Review and iterate the plan. Ask Claude improve the plan (in a loop).
+   1. Ask Claude to add tests to evaluate whether its solution is complete and valid.
+
+   1. Switch to auto-accept edits mode.
+   1. Setup a container during dev.
+   1. Have Claude execute the plan end-to-end.
+   1. Review output - Refine if needed.
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp"><img alt="how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp" /></a>
 
 
    <a name="Prompts"></a>
@@ -288,6 +388,9 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 
    Cowork and Projects both require a Pro Plan subscription.
 
+
+   <a name="Project"></a>
+
    ### Project
 
    "Upload materials, set custom instructions, and organize conversations in one space."
@@ -299,19 +402,17 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 1. Click "+ New Project"
 
 
+   <a name="Connectors"></a>
+
+   ### Connectors
+
+1. Click one Category at a time to see what's available already: Code, Communication, Data, Design, Development, Financial Services, Health, Life sciences, Productivity, Sales and Marketing.
+
+   REMEMBER: Most services at the end of the connector (such as Zapier) charge money.   
+
+
 <hr />
 
-<a name="ClaudeCodeTemplate"></a>
-
-## Claude Code Template
-
-Load my template:
-
-1. In your OS Terminal app, create a GitHub folder. Example:
-   ```bash
-   git clone https://github.com/bomonike/claude-templates.git --depth 1
-   cd claude-templates
-   ```
 1. View:
    * MEMORY.md 
    * https://github.com/centminmod/my-claude-code-setup?tab=readme-ov-file#alternate-read-me-guides
@@ -367,16 +468,6 @@ Load my template:
    downloads
    </pre>
 
-1. Invoke the claude app:
-   ```bash
-   $( which claude )
-   ```
-   <pre>
-   /opt/homebrew/bin/claude
-   </pre>
-
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img width=300" alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
-
 1. REMEMBER: The free Claude.ai plan does not include Claude Code access.
    Upgrade to a Claude Pro, Max, Teams, Enterprise, or Console account.\
 
@@ -406,27 +497,6 @@ Load my template:
    alias clc='cl --continue'
    ```
 
-   ### Permissions
-
-   shift+tab cycles through the permissions modes, so auto-accept edits is displayed just because currently I'm in the bypass permissions mode. There is one more permission mode plan, in which Claude Code will discuss and plan, but will not make changes to your files.
-
-1. Consider this:
-
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp"><img alt="how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774378280/how-i-structure-claude-code-projects-skills-mcp-v0-ubchqhdo8ujg1_q633zf.webp" /></a>
-
-   Type ? to see all 
-
-   <pre>
-   ! for bash mode       double tap esc to clear input      ctrl + _ to undo
-   / for commands        shift + tab to auto-accept edits   ctrl + z to suspend
-   @ for file paths      ctrl + o for verbose output        ctrl + v to paste images
-   & for background      ctrl + t to show todos             opt + p to switch model
-                           shift + ⏎ for newline              ctrl + s to stash prompt
-   </pre>
-
-   Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
-
-   
    <a name="SlashCommands"></a>
 
    ## /terminal-setup slash commands
@@ -437,28 +507,44 @@ Load my template:
 
 1. Type just the / slash character for a menu:
 
-   ```
+   <pre>
+   /batch
+   /claude-api
+   /compact    # summarize the conversation and replaces the current context with the summary. 
+   /context    # <a href="#TokenContext">token usage by each system component</a>
+   <a href="#Cost">/cost</a>       # <a href="#Cost">tokens spent</a>
+   /debug
+   /extra-usage
+   /heapdump
+   /loop
+   /pr-comments
+   /release-notes
+   /review
+   /security-review
+   /simplify
+   /update-config
+   /chedule
+   </pre>
+   Others:
    /help       # menu below:
    /connect    # establish connection
    /start      # Begin a new session
 
-   <a href="#status">/status</a>     # overview of your current Claude Code setup
-   <a href="#config">/config</a>     # configuration
    /memory     # 
-
    /statusline # below the prompt defined in ~/.claude/statusline-command.sh
    /settings   # menu
-   /context    # <a href="#TokenContext">token usage by each system component</a>
-   <a href="#Cost">/cost</a>       # <a href="#Cost">tokens spent</a>
+
    /clear      # (aka /reset) is faster than exiting and starting Claude Code again.
 
    /search     # through the database
    /upload     # files
-   <a href="#loop">/loop</a>
-   /compact    # summarize the conversation and replaces the current context with the summary. 
-   <a href="#doctor">/doctor</a>
    /logout     # from Claude UI/CLI program
-   ```
+
+   <a href="#status">/status</a>     # overview of your current Claude Code setup
+   <a href="#config">/config</a>     # configuration
+   <a href="#loop">/loop</a>
+   <a href="#doctor">/doctor</a>
+   </pre>
 
    REMEMBER: Each session is a 5-hour rolling window (at time of this writing). ???
 
@@ -503,7 +589,7 @@ Load my template:
    MCP servers: notion ✔, linear ✔, datadog ✔
    Memory: user (.claude/CLAUDE.md)
    Setting sources: User settings, Shared project settings, Project local settings
-  </pre>
+   </pre>
 
    <a name="config"></a>
    
@@ -548,7 +634,9 @@ Load my template:
    <a target="_blank" href="https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans">Claude’s context window</a> is 200K, meaning it can ingest 200K+ tokens (about 500 pages of text or more) when using a paid Claude plan.
    The Claude API can ingest <strong>1M tokens</strong> when using Claude Opus 4.6 or Sonnet 4.6.
    
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774472191/claude-token-usage_ggrffl.webp"><img width="300" alt="claude-token-usage.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774472191/claude-token-usage_ggrffl.webp" /></a>
+   PROTIP: Take action when token usage is above 50%.
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774472191/claude-token-usage_ggrffl.webp"><img alt="claude-token-usage.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774472191/claude-token-usage_ggrffl.webp" /></a>
 
    The first line in the example above:" 51k tokens (26%)" is what is currently used. 
    Users on Claude Code with a Max, Team, or Enterprise plan, Claude Opus 4.6 have a <strong>1M token</strong> context window.
@@ -1250,45 +1338,6 @@ References:
    <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
 
 
-
-<a name="Grind"></a>
-
-## Tutorial Grind
-
-* <a target="_blank" href="https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/">Anthropic is trainging the country of Iceland</a>
-
-   * <a target="_blank" href="https://dev.to/gunnargrosch/teaching-claude-code-how-you-work-claudemd-in-practice-21d9">Teaching Claude Code How You Work: CLAUDE.md in Practice</a>
-   * <a target="_blank" href="https://dev.to/gunnargrosch/from-zero-to-agentic-coding-running-claude-code-with-amazon-bedrock-1f00">From Zero to Agentic Coding: Running Claude Code with Amazon Bedrock</a>
-   <br /><br />
-
-YouTube videos with no subscription:
-   * https://www.youtube.com/watch?v=ofLvTNZEHVk">"Inside Claude Code: The Architecture of AI Agents" by PY</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
-   * <a target="_blank" href="https://www.youtube.com/watch?v=jw0pMr54Ztc&pp=ugUEEgJlbg%3D%3D">"The Ultimate Beginner’s Guide To Claude"</a> by <a target="_blank" href="https://www.aiedgehq.co/">AI Edge on Telegram</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=ntDIxaeo3Wg">"Claude Code - Full Tutorial for Beginners"</a> by Tech With Tim offering <a target="_blank" href="https://techwithtim.net/newsletter">newsletter</a>
-   * https://www.youtube.com/watch?v=aWAfpOi91vc&pp=ugUEEgJlbg%3D%3D">"Let Claude Cowork Work For You, here’s how"
-   * https://www.youtube.com/watch?v=rSoeh6K5Fqo "Making Claude Code more useful with TDD and XP Techniques by FeedbackDrivenDev
-   <br /><br />
-
-YouTube videos peddling subscriptions:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
-   * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
-
-by Brock Mesarich - AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
-   * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> 
-   * <a target="_blank" href="https://www.youtube.com/watch?v=5bhh8ffHN6Q">"How to Use Claude Cowork Projects Better Than 99% of People"</a>   
-
-   * <a target="_blank" href="https://www.youtube.com/watch?v=vizgFWixquE">"Anthropic's NEW Claude Architect Guide In 39 Minutes" by Mark Kashef to pitch <a target="_blank" href="https://www.skool.com/earlyaidopters/">$64/mo Early AI-dopters</a>
-   * <a target="_blank" href="">"The Easiest Way to Get Ahead With Claude Code"</a> by Simon Scrapes pushing <a target="_blank" href="https://skool.com/scrapes">$37/mo Scrapes</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=_gV7qDhRiNk">"Claude's New AI Auto-Mode Runs Itself Now"</a> by AI News Today - Julian Goldie Podcast" to plug <a target="_blank" href="https://www.skool.com/ai-profit-lab-7462/about">$59/mo AI Profit Boardbroom</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=nLy3YYGJrjQ">"Claude Explained - Chat vs Cowork vs Code" by Oliur Online to plug <a target="_blank" href="https://www.oliur.com/resources">free resources</a> and <a target="_blank" href="https://digitalcreator.club/">$179/yr Digital Creator Club</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY">"Claude Code Just Got 10X Powerful (10 Insane Features)</a> by The AI Growth Lab with Tom to push <a target="_blank" href="https://learnn8nautomation.com/claude-code-challenge">$500 one-time</a> "30 day Challenge"
-   * <a target="_blank" href="https://www.youtube.com/watch?v=mpALXah_PBg">"Build & Sell with Claude Code (10+ Hour Course)"</a> by Nate Herk pushing <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/">$99/mo AI Automation Society Plus</a>
-   <br /><br />
-
-Others when you're through with the above:
-   * <a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
 
 https://github.com/citypaul/.dotfiles/blob/main/claude/.claude/CLAUDE.md
 curl -fsSL https://claude.ai/install.sh | bash
