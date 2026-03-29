@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-03-28"
-lastchange: "26-03-28 v017 doc: first time auth :anthropic-certs.md"
+lastchange: "26-03-28 v019 doc: HUD :anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -52,6 +52,10 @@ This article was completely hand-crafted (for now).
    * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
    <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
 
+* <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says "Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
+
+   "Brainstorm in Claude, build in Cowork" <a target="_blank" href="https://www.youtube.com/watch?v=grh7CMl960s">VIDEO</a>
+
 
 <a name="Competition"></a>
 
@@ -62,30 +66,26 @@ Claude competes with agentic coding tools (aka coding agent IDEs) that read a co
    * OpenAI's Codex <a target="_blank" href="https://www.youtube.com/watch?v=kFS6z_97Ohc&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
    * OpenCode
    * Perplexity
+   * Google Gemini CLI
+   * Mistral AI
    <br /><br />
 
 
 <a name="Products"></a>
 
-## Claude Product Components/Apps
+## Claude Product Uptime
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a>REMEMBER: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. Manages several production environments:
-
-"Claude" refers to foundation models created by Anthropic and associated software.
+<a target="_blank" href="https://status.claude.com/uptime/"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a>REMEMBER: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. <a target="_blank" href="https://status.claude.com/uptime/">Uptime</a> shows Anthropic's own production environments:
 
 * <a target="_blank" href="https://claude.ai/">claude.ai</a> 
 
    Meet Claude - Platform - Solutions - <a href="#Pricing">Pricing</a> - Resources - Contact sales - Try Claude
 
-   <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says "Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
-
-   "Brainstorm in Claude, build in Cowork" <a target="_blank" href="https://www.youtube.com/watch?v=grh7CMl960s">VIDEO</a>
-
 * <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization). Claude also creates the evaluation automation that it rubs.
 
-* Claude API refers to the endpoint provided to <a href="#ChatAPICall">SDK requests</a> to the claude-agent-sdk wrapper around <tt>claude -p</tt>, the SDK spawns the Claude Code CLI as a subprocess and communicates over stdin/stdout via JSON-lines. xcompare it to the Anthropic Client SDK. 
+* <strong>Claude API</strong> refers to the endpoint provided to <a href="#ChatAPICall">SDK requests</a> to the claude-agent-sdk wrapper around <tt>claude -p</tt> 
 
-   REMEMBER: The <strong>-p</strong> flag specifies non-interactive. No prompts, no confirmations. Runs and returns the result.
+   REMEMBER: The <strong>-p</strong> flag specifies non-interactive (aka  <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&&t=5h18m36s">"headless" task), No prompts, no confirmations. Runs and returns the result. The SDK spawns the Claude Code CLI as a subprocess and communicates over stdin/stdout via JSON-lines. xcompare it to the Anthropic Client SDK. Specify --allowedTools and --disallowedTools permissions.
 
 * <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work". Instead of hand coding, human app designers now speak natural language conversations with Claude Code to write design specs from which both infrastructure creation and programming code are generated.
 
@@ -122,19 +122,19 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <strong>Connectors</strong> (under the "Customize" and <a target="_blank" href="https://claude.ai/settings/connectors">Settings</a> menu items) enable Claude to interact with external platforms GitHub,  Gmail, Google Calendar, Google Drive, etc.
 
+* <strong>GitHub Integratio</strong>n: Deep integration with GitHub for PR reviews, issue management and even CI/CD.
+
 * An <strong>agentic code harness</strong> is what enables an LLM to be Agentic with <a href="#Sandbox">sandboxes</a>, accept prompts, use tools, etc.
 
-* <strong>Memory system</strong>: CLAUDE.md and other files that provide persistent <strong>context</strong> across sessions.
+* <strong>Memory system</strong>: <a href="#CLAUDE.md">CLAUDE.md</a> and other files that provide persistent <strong>context</strong> across sessions.
 
 * <a href="#SlashCommands"><strong>Slash commands</strong></a>: Powerful keywords to control agent behavior. <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY">VIDEO</a>
 
+* <strong>Skills</strong> (under the Customize menu item) enable new knowledge to be dynamically obtained by Claude or subagents based on minimal description and the current query as opposed to always taking up room lurking in the context memory. <a target="_blank" href="https://medium.com/towards-artificial-intelligence/claude-code-agent-skills-2-0-from-custom-instructions-to-programmable-agents-ab6e4563c176">Skills are now integrated with commands</a>.
+
 * <strong>Subagents</strong>: Create specialized subagents for different tasks with their own context window. REMEMBER: Subagents operate with isolated context and do NOT share memory with the coordinator. Every piece of its information must be passed explicitly in it.
 
-* <strong>Skills</strong> (under the Customize menu item) enable new knowledge to be dynamically obtained by Claude or subagents based on minimal description and the current query as opposed to always taking up room lurking in the context memory.
-
 * <strong>MCP Suppor</strong>t: Extend it with any MCP tool to access APIs, databases and other external systems.
-
-* <strong>GitHub Integratio</strong>n: Deep integration with GitHub for PR reviews, issue management and even CI/CD.
 
 * <strong>Hooks</strong> are small scripts (agentic workflows) that run automatically triggered by events (before or after Claude tries to do something). So a hook can block Claude from taking an action unless a specific condition has been met.
    https://dev.to/gunnargrosch/automating-your-workflow-with-claude-code-hooks-389h
@@ -142,6 +142,8 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 * <strong>Plugins</strong> (under the Customize menu item) bundle hooks, <a href="#SlashCommands">slash commands</a>, and skills together for sharing with others.
 
 * <strong>Claude Agent SDK</strong> are used to build agentic AI systems beyond coding assistance.
+
+* Rules ???
 
 
 <a name="Productivity"></a>
@@ -156,20 +158,20 @@ PROTIP: Improvements in net productivity can be confidently <strong>monitized</s
 
 * Multi-Agent Research System (coordinator-subagent orchestration)
 
-* Developer Productivity Tools (built-in tools + MCP servers)
+* Developer Productivity Tools (built-in tools + MCP servers) See https://github.com/anthropics/courses/blob/master/tool_use/README.md
 
 * Claude Code for CI/CD (non-interactive pipelines + structured output)
 
 * Structured Data Extraction (JSON schemas + tool_use + validation loops)
+
+CAUTION: Cowork activity is not captured in audit logs or Compliance APIs today, which is why it is not for regulated workloads. 
 
 
 <a name="Pricing"></a>
 
 ## Pricing Subscriptiions
 
-Anthropic's Superbowl commercials made a big deal about free accounts not having ads.
-
-Sign up for a paid Claude AI account to use Claude Code at <a target="_blank" href="https://claude.com/pricing">https://claude.com/pricing</a>:
+PROTIP: <a target="_blank" href="https://www.getmerlin.in/pricing?coupon=merlin">Use merlin.ai</a>'s bulk purchasing costs <strong>$5/mo ($60/year)</strong> (with code AZ5) to access several LLMs (Claude Sonnet 4.5, OpenAI GPT5, etc.) instead of paying for a Claude AI subscription at <a target="_blank" href="https://claude.com/pricing">https://claude.com/pricing</a>:
 * Claude Free
 * Claude Max $17/month to use Claude Code and Cowork
 * Claude Max $100/month for 5x or 20x more usage than Pro
@@ -178,12 +180,15 @@ Sign up for a paid Claude AI account to use Claude Code at <a target="_blank" hr
 <br /><br />
 
 
+
+
 <a name="Tutorials"></a>
 
 ## Tutorials
 
 Anthropic's own tutorials are at:
    * <a target="_blank" href="https://anthropic.skilljar.com/">https://anthropic.skilljar.com</a>
+   * https://github.com/anthropics/courses
    * <a target="_blank" href="https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/">Anthropic is trainging the country of Iceland</a>
    <br /><br />
 
@@ -197,34 +202,53 @@ YouTube videos with no subscription:
    * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
    * <a target="_blank" href="https://www.youtube.com/watch?v=jw0pMr54Ztc&pp=ugUEEgJlbg%3D%3D">"The Ultimate Beginner’s Guide To Claude"</a> by <a target="_blank" href="https://www.aiedgehq.co/">AI Edge on Telegram</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=ntDIxaeo3Wg">"Claude Code - Full Tutorial for Beginners"</a> by Tech With Tim offering <a target="_blank" href="https://techwithtim.net/newsletter">newsletter</a>
-   * https://www.youtube.com/watch?v=aWAfpOi91vc&pp=ugUEEgJlbg%3D%3D">"Let Claude Cowork Work For You, here’s how"
-   * https://www.youtube.com/watch?v=rSoeh6K5Fqo "Making Claude Code more useful with TDD and XP Techniques by FeedbackDrivenDev
+   * https://www.youtube.com/watch?v=aWAfpOi91vc&pp=ugUEEgJlbg%3D%3D">"Let Claude Cowork Work For You, here’s how"</a>
+   * https://www.youtube.com/watch?v=rSoeh6K5Fqo">"Making Claude Code more useful with TDD and XP Techniques"</a> by FeedbackDrivenDev
+   * <a target="_blank" href="https://www.youtube.com/watch?v=pDoBe4qbFPE">"12 Hidden Settings To Enable In Your Claude Code Setup"</a> by AI LABS
+   * <a target="_blank" href="https://www.youtube.com/watch?v=6SnFH43qPAw">"You Can Build The Craziest Things with Claudes Agent SDK"</a> by Traversy Media
    <br /><br />
 
 YouTube videos peddling subscriptions:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
+   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> referencing <a target="_blank" href="https://github.com/enthropics/">github.com/enthropics</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
    * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
 
 by Brock Mesarich - AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
    * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> 
-   * <a target="_blank" href="https://www.youtube.com/watch?v=5bhh8ffHN6Q">"How to Use Claude Cowork Projects Better Than 99% of People"</a>   
+   * <a target="_blank" href="https://www.youtube.com/watch?v=5bhh8ffHN6Q">"How to Use Claude Cowork Projects Better Than 99% of People"</a>
 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_PwlnU-Yoe8">"Anthropic's SECRET Model Just Leaked (INSANE)" pushing <a target="_blank" href="https://www.shippingskool.com/">$99/yr ShippingSkool</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=vizgFWixquE">"Anthropic's NEW Claude Architect Guide In 39 Minutes" by Mark Kashef to pitch <a target="_blank" href="https://www.skool.com/earlyaidopters/">$64/mo Early AI-dopters</a>
    * <a target="_blank" href="">"The Easiest Way to Get Ahead With Claude Code"</a> by Simon Scrapes pushing <a target="_blank" href="https://skool.com/scrapes">$37/mo Scrapes</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=_gV7qDhRiNk">"Claude's New AI Auto-Mode Runs Itself Now"</a> by AI News Today - Julian Goldie Podcast" to plug <a target="_blank" href="https://www.skool.com/ai-profit-lab-7462/about">$59/mo AI Profit Boardbroom</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=nLy3YYGJrjQ">"Claude Explained - Chat vs Cowork vs Code" by Oliur Online to plug <a target="_blank" href="https://www.oliur.com/resources">free resources</a> and <a target="_blank" href="https://digitalcreator.club/">$179/yr Digital Creator Club</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY">"Claude Code Just Got 10X Powerful (10 Insane Features)</a> by The AI Growth Lab with Tom to push <a target="_blank" href="https://learnn8nautomation.com/claude-code-challenge">$500 one-time</a> "30 day Challenge"
    * <a target="_blank" href="https://www.youtube.com/watch?v=mpALXah_PBg">"Build & Sell with Claude Code (10+ Hour Course)"</a> by Nate Herk pushing <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/">$99/mo AI Automation Society Plus</a>
+   * https://www.youtube.com/watch?v=UPtmKh1vMN8">"CLAUDE CODE ADVANCED: Everything They Don't Teach You"</a> by <a target-"_blank" href="https://nicksaraev.com/">Nick Saraev</a> pushing <a target="_blamk" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a> 2100.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=6SnFH43qPAw">"5 Open Source Repos That Make Claude Code UNSTOPPABLE (March 2026)"</a> by Chase AI <a target="_blank" href="https://www.skool.com/chase-ai/about">$97/mo Chase AI+</a> 837.
    <br /><br />
+https://www.youtube.com/watch?v=6SnFH43qPAw&t=20s
+AutoResearch - https://github.com/karpathy/autoresearch
+https://www.youtube.com/watch?v=6SnFH43qPAw&t=372s
+OpenSpace - https://github.com/HKUDS/OpenSpace
+https://www.youtube.com/watch?v=6SnFH43qPAw&t=563s
+CLI-Anything - https://github.com/HKUDS/CLI-Anything
+https://www.youtube.com/watch?v=6SnFH43qPAw&t=635s
+Claude Peers MCP - https://github.com/louislva/claude-peers-mcp
+https://www.youtube.com/watch?v=6SnFH43qPAw&t=772s
+Google Workspace CLI - https://github.com/googleworkspace/cli
 
 Others when you're through with the above:
    * <a target="_blank" href="https://www.udemy.com/course/claude-code-the-complete-guide/">$15.99 Udemy: "Claude Code – The Complete Guide: Master Claude Code & Modern AI Coding — Real Vibe Coding Projects" (Rating: 3.9 out of 5)
 
+https://www.youtube.com/watch?v=uUGfo8QOsW0&pp=ugUEEgJlbg%3D%3D
+Claude Mythos 5: Most Powerful Model Ever! AGI, GLM 5.1, Claude Code Update & Codex Plugins! AI NEWS  
+
+
 
 <a name="ClaudeCodeTemplate"></a>
 
-## Claude Code Template
+## Use My Claude Code Template
 
 PROTIP: Load my templates repo from GitHub, which contains a curated set from other tutorials.
 
@@ -240,6 +264,31 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
 
    PROTIP: Use this as your base project when you install Claude.
 
+   <a href="aliases"></a>
+
+   ### aliases.sh
+   
+   ```
+   alias cl='claude --dangerously-skip-permissions'
+   alias clc='cl --continue'   # resume last session with the context/history from the previoius session
+   # Resume Claude with the context/history from the previoius session but still be able to get back to that point later:
+   alias clf='claude --resume --fork session'. 
+      ```
+
+<a name="VSCode"></a>
+
+## Visual Studio Code Install
+
+1. Install Homebrew (which is based on Ruby).
+1. Install VSCode and start it:
+   ```bash
+   brew install --cask visual-studio-code
+   code
+   ```
+1. Click the Extensions and enter "Claude Code" in the Marketplace
+   <img alt="claude-vscode-install.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774686736/claude-vscode-install_dhapdt.png" />
+1. Click "Install" to the one from "Anthropic" (marked with a blue star).
+
 
 <a name="Install"></a>
 
@@ -252,6 +301,7 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 1. Install pre-requisite utilties NodeJs:
    ```bash
    brew install node
+   winget install OpenJS.NodeJS.LTS   # on Windows
    ```
    ```bash
    node --version
@@ -288,28 +338,48 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    whereis claude
    ```
    Claude was not installed if you see: <tt>bash: claude:: command not found</tt>
-   Otherwise you should see this (where ??? is replaced with your machine username):
+   Otherwise you should see this (where ~ is replaced with /Users/your machine username):
    <pre>
-   claude: /Users/???/.local/bin/claude
+   claude: ~/.local/bin/claude
    </pre>
 
 1. Open the claude app: 
    ```bash
    $( whereis claude)
    ```
+   That's the equivalent of:
+   ```bash
+   ~/.local/bin/claude
+   ```
    Alternately, more simply since the path is within $PATH:
    ```bash
    claude
    ```
+   Alternately: To begin Claude with the context/history from the previoius session:
+   ```bash
+   claude --resume
+   ```
+   Alternately, to begin Claude with the context/history from the previoius session but still be able to get back to that point later:
+   ```bash
+   claude --resume --fork session
+   ```
+   Remember that <a href="#aliases">aliases</a> were setup.
+   ```bash
+   crf
+   ```
+
 
    <a name="Auth"></a>
 
-   ### First-time Authentication
+   ### /login First-time Authentication
 
 1. The first time that Claude runs:
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img width="350" alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
 
-1. Continue to browser
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png"><img width="350" alt="claude-code-start.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774399725/claude-code-start_lbx13m.png" /></a>
+   
+   ???
+
+1. Continue to browser.
 1. Claude Code would like to connect to your Claude chat account
 1. Click "Authorize".
 1. Press command+W to close the browser window.
@@ -320,19 +390,65 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    PROTIP: Press shift+command and - or + to make fonts larger or smaller. But that adjusts for all panes. So many prefer to view Claude Code standalone rather than within VSCode.
 
    PROTIP: Ideally, use three monitor screens: Terminal for Claude Code, Visual Studio (vertical view), Tutorial screen.
+ 
+ 1. Check Authentication status:
+   ```bash
+   claude auth status
+   ```
+1. To disable Authentication:
+   ```bash
+   claude auth logout
+   ```
+   REMEMBER: Logout auth before setting up auth for 3rd-party clouds (Amazon, GCP, Microsoft, etc.)
 
-1. Type ? to see all 
+   From Google VertexAI after installing gcloud cli:
+   ```bash
+   export ANTHROPIC_???_API_KEY="..."
+   export CLAUDE_CODE_USE_???=1
+   ```
 
-   <pre>
-   ! for bash mode       double tap esc to clear input      ctrl + _ to undo
-   / for commands        shift + tab to auto-accept edits   ctrl + z to suspend
-   @ for file paths      ctrl + o for verbose output        ctrl + v to paste images
-   & for background      ctrl + t to show todos             opt + p to switch model
-                           shift + ⏎ for newline              ctrl + s to stash prompt
-   </pre>
+   From Micrsoft Foundry Project API Key:
+   ```bash
+   export ANTHROPIC_FOUNDRY_API_KEY="..."
+   export CLAUDE_CODE_USE_FOUNDRY=1
+   ```
 
-   Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
+1. <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Run Claude with no token fees (with some privacy invasion).
+   ```bash
+   export ANTHROPIC_API_KEY=""
+   export ANTHROPIC_BASE_URL=http://localhost:11434
+   ```
+   <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Instead of "Download" at<br />
+   <a target="_blank" href="https://lmstudio.ai/blog/claudecode/">https://lmstudio.ai/blog/claudecode</a>
+   ```bash
+   brew install --cask lm-studio
+   ```
+   Alternately, use Ollama <a target="_blank" href="https://www.youtube.com/watch?v=WhW3iuUArqI" title="by Ruslan Brilenkov">VIDEO</a>: 
+   ```bash
+   brew install ollama
+   export ANTHROPIC_AUTH_TOKEN=ollama
+   ollama signin
+   ollama pull kimi-k2.5:cloud  # on Claude's cloud (AWS)
+   OLLAMA_CONTEXT_LENGTH=64000 ollama serve
+   claude --model "kimi-k2.5:cloud"
+   ```
+   WARNING: <a target="_blank" href="https://medium.com/towards-artificial-intelligence/ive-been-recommending-deepseek-kimi-for-months-then-anthropic-published-this-40e95dc8cd1b">Kimi (in China) was created (stolen) by distillation of Anthropic's model</a>.
 
+   Setup auth for free use of moonshot.ai's Kimi model downloaded for running on Ollama via <strong>local relay path</strong>.
+   The model features a 1T-parameter Mixture-of-Experts (MoE) Transformer architecture with 32B activated parameters.
+   It supports image, video, PDF, and text inputs up to 256K tokens and excels in benchmarks like MMMU-Pro (78.5), SWE-Bench Verified (76.8), and AIME 2025 (96.1). 
+   Trained on approximately 15 trillion mixed visual and text tokens, it enables native multimodality, cross-modal reasoning, and efficient tool use grounded in visual data.
+
+   Using a free model means that you can use automatic <strong>/loop</strong> to iterate through many results, then select the best, like a Monte Carlo simulation.
+
+   But LM Studio using the MLX backend can produce 20 to 30 percent faster generation for the same model on the same hardware.
+   And the Apple M3 Max has more bandwidth than the newer M4 Pro. 
+
+   ### /help for Shortcuts 
+
+   <a target="_blank" href="https://code.claude.com/docs/en/overview/"><img width="350" alt="claude-code-help.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774687133/claude-code-help_bjkq9f.png" /></a>
+
+   REMEMBER: Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
 
    <a name="Settings"></a>
 
@@ -351,6 +467,29 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    REMEMBER: When your cursor is within the chat box, use these keyboard shortcuts:
 
    <a target="_blank" href=""><img alt="claude-chat-keys.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774658242/claude-chat-keys_hwanw5.png" /></a>
+
+   <a name="Projects"></a>
+
+   ### Projects
+
+   References:
+   * <em>"Upload materials, set custom instructions, and organize conversations in one space."</em>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=5936s&t=3m7s">VIDEO</a>
+   <br /><br />
+
+   REMEMBER: Unless you go incognito, every time you run Claude in a directory, a Claude Code Project is created under <tt>~/.claude/projects</tt>. So review and remove.
+
+1. Click the "Project" on the left menu to provide a way for Claude to remember your preferences and <strong>customize</strong> its responses to your preferences. So you don't to repeat yourself.
+
+   PROTIP: If you work with different companies or clients, isolate each by creating a different project containing different information.
+
+1. Click "+ New Project"
+
+   TODO: ???
+
+   <a href="#Pricing">Team/Enterprise subscribers</a> can share a Project among themselves.
+
+
 
 
    <a name="Permissions"></a>
@@ -405,20 +544,7 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 
    Cowork and Projects both require a Pro Plan subscription.
 
-
-   <a name="Project"></a>
-
-   ### Project
-
-   "Upload materials, set custom instructions, and organize conversations in one space."
-
-1. Click the "Project" on the left menu to provide a way for Claude to remember your preferences and <strong>customize</strong> its responses to your preferences. So you don't to repeat yourself.
-
-   PROTIP: If you work with different companies or clients, isolate each by creating a different project containing different information.
-
-1. Click "+ New Project"
-
-
+   
    <a name="Connectors"></a>
 
    ### Connectors
@@ -430,22 +556,7 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 
 <hr />
 
-1. View:
-   * MEMORY.md 
-   * https://github.com/centminmod/my-claude-code-setup?tab=readme-ov-file#alternate-read-me-guides
-   * Git Worktrees (for <a target="_blank" href="https://code.claude.com/docs/en/desktop#work-in-parallel-with-sessions">Parallel Sessions in Claude Code</a> via Claude Desktop apps
-   * https://github.com/Piebald-AI/claude-code-system-prompts?tab=readme-ov-file
-   * etc. ???
-   <br /><br />
-
-   * https://github.com/Piebald-AI/claude-code-system-prompts?tab=readme-ov-file#system-reminders
-
-1. Customize System prompts using https://github.com/Piebald-AI/tweakcc
-
 1. PROTIP: Instead of clicking "Download" for "Desktop" within "Claude Code environments", 
-   ```bash
-   curl -fsSL https://claude.ai/install.sh | bash
-   ```
    <pre>
    Setting up Claude Code...
    ✔ Claude Code successfully installed!        
@@ -506,13 +617,6 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    · Vertex AI: https://code.claude.com/docs/en/google-vertex-ai   
 
 
-   ### Aliases
-   
-   ```
-   cl='claude --dangerously-skip-permissions'
-   cl --continue  # resume last session
-   alias clc='cl --continue'
-   ```
 
    <a name="SlashCommands"></a>
 
@@ -553,14 +657,14 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    /start      # Begin a new session
 
    /memory     # 
-   /statusline # below the prompt defined in ~/.claude/statusline-command.sh
+   /statusline # below the prompt defined in customizable ~/.claude/statusline.sh
    /settings   # menu
 
    /clear      # (aka /reset) is faster than exiting and starting Claude Code again.
 
    /search     # through the database
    /upload     # files
-   /logout     # from Claude UI/CLI program
+   exit        # from Claude UI/CLI program
 
    <a href="#status">/status</a>     # overview of your current Claude Code setup
    <a href="#config">/config</a>     # configuration
@@ -571,7 +675,7 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    Additional slash commands:
    <pre>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insights</a>   # file://$HOME/.claude/usage-data/report.html
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a> https://www.youtube.com/watch?v=brLhhkUqcn4&t=18618s">max for Opus only. high, medium, low, auto.
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=6m31s">/batch   # Batch Tasks & PRs </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=9m3s">/simplify   # Code Review</a>
@@ -584,12 +688,22 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    Models reset ???
 
    <pre>
+   /model default   # to switch to the sonnet model
    /model haiku     # to switch to using the latest Haiku model.
-   /model opus.     # to switch to using the latest Opus model.
-   /fast            # to speed up Opus model execution.
+   /model Sonnet (1M context)  # to switch to using the latest Opus model.
+   /model Opus (1M context)    # to switch to using the latest Opus model.
+   /model mythos               # new Capybarra March 28, 2026 to Cyber Defenders.
+   /fast                       # to speed up Opus model execution.
    </pre>
 
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=13m19s">Hooks & Automation Rules</a>
+
+
+1. Install utility a program ccusage to analyze session logs:  
+   https://github.com/ryoppippi/ccusage/
+
+   See ccusage.com/guide/session/reports
+   
 
 <hr />
 
@@ -676,9 +790,9 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
       <br /><br />
    
 
-   <a name="Cost"></a>
+<a name="Cost"></a>
    
-   ### /cost tokens spent
+## /cost tokens spent
    ```
    ❯ /cost
   ⎿  Total cost:            $2.69
@@ -714,7 +828,7 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    REMEMBER: Claude Code has no memory. On every new single session, it wakes up with <strong>zero context</strong> about your project.
    So history and preferences must be added added as context.
 
-1. At the <sstrong>Claude CLI</strong>, 
+1. At the <strong>Claude CLI</strong>, 
 1. Copy in files from ???
 
    * CLAUDE.md referenced by
@@ -722,7 +836,24 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    * architecture.md — how everything fits together
    * terraform-CLAUDE.md
    * python-CLAUDE.md
+   * MEMORY.md 
    <br /><br />
+
+1. Integrate from those who shared theirs:
+   * https://github.com/anthropics/courses/blob/master/tool_use/README.md
+   * https://github.com/citypaul/.dotfiles/blob/main/claude/.claude/CLAUDE.md
+   * https://github.com/jarrodwatts/claude-code-config
+
+   * https://github.com/centminmod/my-claude-code-setup?tab=readme-ov-file#alternate-read-me-guides
+   * Git Worktrees (for <a target="_blank" href="https://code.claude.com/docs/en/desktop#work-in-parallel-with-sessions">Parallel Sessions in Claude Code</a> via Claude Desktop apps
+   * https://github.com/Piebald-AI/claude-code-system-prompts?tab=readme-ov-file
+   * etc. ???
+   <br /><br />
+
+   * https://github.com/Piebald-AI/claude-code-system-prompts?tab=readme-ov-file#system-reminders
+
+1. Customize System prompts using https://github.com/Piebald-AI/tweakcc
+
 
    <a name="init"></a>
 
@@ -735,209 +866,27 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
    ```bash
    tree
    ```
+   TODO:
    <pre>
     ├── api
     ├── web
     ├── .editorconfig
     ├── .env.example
     ├── .gitignore
-    ├── CLAUDE.md            # File generated by Claude Code
+    ├── <a target="_blank" href="https://github.com/bomonike/claude-templates.git">CLAUDE.md</a>
     ├── README.md
     └── docker-compose.yml
    </pre>
 
 
 1. Edit file CLAUDE.md, the long-term memory file.
-   ```
-   # CLAUDE.md
 
-    This file guides Claude Code (claude.ai/code) when working with code in this repository.
-   ```
+   The file guides Claude Code (claude.ai/code) when working with code in this repository.
+
    REMEMBER: At the start of <strong>each agent session</strong>, Claude looks for a <strong>CLAUDE.MD</strong> file in each GitHub repository root, in parent directories for monorepo setups, or in your home folder for universal application across all projects. So the file must be named with uppercase "CLAUDE", lowercase ".md" (like GitHub looks for "README.md"). Providing this context up front helps agents avoid running incorrect commands or introducing architectural or stylistic inconsistencies when implementing new features.
    
    Each CLAUDE.md file holds markdown-formatted <strong>project-specific context</strong> that should be repeated in every prompt: Project context (basic rules), About this project, Key directories, Standards, structure, conventions, workflows, style, domain-specific terminology. Example:
-   ```
-    # Project Context
-    When working with this codebase, prioritize readability over cleverness.
-    Ask clarifying questions before making architectural changes.
 
-    ## Project Overview
-
-    ***RunCover*** is a full-stack web application that generates Wrapped-style short videos of your GPX activities (runs, rides, etc.). Users upload GPX files, and the system creates personalized visual summaries of their activities.
-
-    ## About This Project
-
-    FastAPI REST API for user authentication and profiles.
-    Uses SQLAlchemy for database operations.
-    Uses Pydantic for validation.
-
-    ## Terminology Specific to Domain
-
-    - **Wraps:** Another name for the annual video summary video for users.
-    - **Athlete:** Also referred to as Users in the system.
-    - **Track:** Refers to the collection of segments in a GPX file making up the runner's route.
-    - **Pace:** Refers to running speed. Always in `min/km` or `min/mile`
-
-    ## Tech Stack
-
-    - **Backend**: .NET 10.0, ASP.NET Core Web API, Entity Framework Core 10.0, PostgreSQL 17
-    - **Frontend**: React 19, TypeScript 5.9, TanStack Router & Query, Tailwind CSS 4.1, Vite 7.2
-
-    ### Backend
-
-    The backend follows **Clean Architecture** with four layers:
-
-    api/src/
-    ├── RunCover.API/            # Controllers, Program.cs (entry point), middleware
-    ├── RunCover.Application/    # Service interfaces, DTOs, business logic
-    ├── RunCover.Domain/         # Entities (User, Activity, UserPhoto, UserTemplatePhoto), value objects
-    └── RunCover.Infrastructure/ # EF Core DbContext, repositories, external services (Gemini), migrations
-
-    Tests are split into similar layers:
-
-    api/tests/
-    ├── RunCover.Application.Tests/     # Unit tests covering classes in the RunCover.Application project
-    ├── RunCover.Domain.Tests/          # Unit tests covering business logic in the RunCover.Domain.Tests project
-    └── RunCover.Infrastructure.Tests/  # Tests external service implementations
-
-    ### Frontend
-
-    web/src/
-    ├── routes/          # File-based routing (TanStack Router) - __root.tsx, index.tsx, dashboard.tsx
-    ├── components/ui/   # Radix UI wrapper components
-    ├── lib/api.ts       # API client utilities
-    └── hooks/           # Custom React hooks
-
-    Test files are stored alongside implementation files, and are differentiated using the `*.test.ts` suffix on the file name.
-
-    The file `routeTree.gen.ts` is auto-generated by TanStack Router - do not edit manually.
-
-    ## Common Commands
-
-    dotnet build src/RunCover.API --configuration Release # Build the production API
-    dotnet test tests/RunCover.Domain.Tests               # Run domain tests
-    dotnet test tests/RunCover.Application.Tests          # Run application tests
-    dotnet test tests/RunCover.Infrastructure.Tests       # Run integration tests
-    dotnet run --project src/RunCover.API                 # Run API server
-    dotnet build <csproj_file>                            # Build a project (inside project folder)
-    dotnet format --verify-no-changes <csproj_file>       # Check for invalid formatted code (inside project folder)
-    dotnet format <csproj_file>                           # Format code files (inside project folder)
-
-    dotnet ef migrations add <name> --project src/RunCover.Infrastructure --startup-project src/RunCover.API
-    dotnet ef database update --project src/RunCover.Infrastructure --startup-project src/RunCover.API
-
-    ### Frontend
-
-    The frontend uses Node.js 24. Run all commands inside `web/` directory:
-
-    npm install                # Install dependencies
-    npm run dev                # Dev server (localhost:5173)
-    npm run build              # Production build
-    npm run lint               # ESLint check
-    npm run lint -- --fix      # Fix ESLint issues
-    npm run test               # Run all tests
-    npm run test -- <filename> # Run tests in a specific file
-
-   ### Auto-Update Memory (MANDATORY)
-
-   **Update memory files AS YOU GO, not at the end.** When you learn something new, update immediately.
-
-   | Trigger | Action |
-   |---------|--------|
-   | User shares a fact about themselves | → Update `memory-profile.md` |
-   | User states a preference | → Update `memory-preferences.md` |
-   | A decision is made | → Update `memory-decisions.md` with date |
-   | Completing substantive work | → Add to `memory-sessions.md` |
-
-   **Skip:** Quick factual questions, trivial tasks with no new info.
-
-   **DO NOT ASK. Just update the files when you learn something.**
-
-   ## For new features:
-
-   - Read the relevant source files before planning
-   - Check architecture.md for structural context
-   - Propose a plan before writing code
-
-   ## For bug fixes or small changes:
-
-   - Reference state.md and architecture.md first
-   - Only read source files if the bug requires deeper context
-   - Make the change directly if it's clearly scoped
-
-    ## Workflows
-
-    ### Creating/Modifying API Endpoints
-
-    When creating new API endpoints:
-
-    1. First plan the new endpoint changes, including new/updated methods, paths and request payloads
-    2. Confirm proposed changes with user
-    3. Implement the endpoint
-    4. Add/update endpoint in the .http file, including documenting endpoint and payloads
-    5. Test the .http file using: `docker run --rm -i -t -v $PWD:/workdir jetbrains/intellij-http-client <http_file_name>`
-
-    ### Docker
-
-    Run all commands in root directory:
-
-    ```bash
-    docker-compose up -d         # Start full stack (PostgreSQL, API, Frontend)
-    docker-compose up --build -d # Rebuild all containers and start full stack (PostgreSQL, API, Frontend).
-                                # First try the first command before rebuilding.
-    ```
-
-    ## Key Directories
-
-    - `app/models/` - database models
-    - `app/api/` - route handlers
-    - `app/core/` - configuration and utilities
-
-    ## Standards
-
-    - Type hints required on all functions
-    - Use Pydantic models for all request/response schemas
-    - Follow existing patterns for error handling
-
-    ## Code Style
-
-    Read `docs/csharp-standards.md` when modifying or creating any C# files.
-    Read `docs/web-standards.md` when modifying a JS, TS, or CSS files.
-
-    - General:
-        - Prefer writing clear code and use inline comments sparingly
-    - C#: 
-        - 4-space indent
-        - `PascalCase` for classes/methods
-        - `_camelCase` for private fields
-        - `camelCase` for local variables, parameters
-        - Prefer primary constructors where possible
-        - Use auto-properties, and `field` if necessary
-        - Write XML comments on all classes, methods, properties and fields
-        - Tests:
-            - `<ClassName>Tests` for test class
-            - `<MethodName>_<Conditions>_<AssertedOutcome>` for test methods (never `Async` suffix)
-            - Arrange, Act, Assert pattern (comment each section in method)
-    - TypeScript/JavaScript/CSS:
-        - 2-space indent
-        - Document all methods, types and interfaces with JSDoc comments
-        - Keep `*.test.ts` files in same directory as corresponding `*.ts` file
-    - Commits: 
-        - Use Conventional Commit format
-        - **Commit Types:** `feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`
-        - **Scopes:** `web`, `api`, `docker`
-
-   ```
-   An example of standards for using specific MCP servers:
-   ```
-    ## Model Context Protocol (MCP) Servers
-
-    ### Shadcn UI MCP
-    When working with Shadcn UI components, always use the Shadcn MCP server to:
-    - Browse available component repositories
-    - Search for specific components
-    - Install components from configured registries
-   ``` 
 
 1. PROTIP: Keep CLAUDE.md files to a maximum of 100–200 lines. Long files are a code smell and take up precious context. CLAUDE.md should be a routing file, not a knowledge dump. 
    
@@ -957,6 +906,18 @@ The team works at around 5 releases per engineer each day. AI agents are used fo
 1. Explore Claude Plugin Marketplace of Curated plugins, agent skills, and MCP servers for Claude Code: https://claudemarketplaces.com/learn
 
    <a target="_blank" href="https://claudemarketplaces.com/">https://claudemarketplaces.com</a>
+
+1. Install HeadsUpDisplay (HUD) plugin to <a target="_blank" href="https://medium.com/@joe.njenga/i-found-this-claude-code-plugin-that-shows-whats-happening-inside-the-engine-d38447d852c7">add up to 4 lines below your input prompt to know</a> if it’s still making progress or is stuck. 
+   ```
+   /plugin marketplace add <a target="_blank" href="https://github.com/jarrodwatts/claude-hu">jarrodwatts/claude-hud</a>
+   /plugin install claude-hud
+   /reload-plugins   # to activate
+   /claude-hud:setup     # to ~/.claude/settings.json 
+   /restart Claude Code
+   code ~/.claude/plugins/claude-hud/config.json
+   ```
+   Updates every ~300ms.
+   <a target="_blank" href="https://newsletter.claudecodemasterclass.com/">$80/yr Masterclass</a>
 
 1. Consider https://github.com/BayramAnnakov/claude-reflect on Claude Plugin Marketplace - a self-learning system (<tt>/reflect-skills</tt>) for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.
 
@@ -1063,8 +1024,8 @@ References:
 
 <a target="_blank" href="https://anthropic.skilljar.com/claude-in-amazon-bedrock/303332">Claude Model Family</a>:
 
-| &nbsp; | Claude Opus | Claude Sonnet | Claude Haiku |
-| ------ | ----------- | ------------- | ------------ |
+| &nbsp; | Claude Opus | Claude Sonnet | Claude Haiku | Mythos |
+| ------ | ----------- | ------------- | ------------ | ------ |
 | Description | Highest level of intelligence | Balance of quality, speed, cost | Most cost-efficient and latency-optimized model |
 | <tt>capabilities</tt><br />(Best used for) | <a href="#AdvancedReasoning">advanced reasoning</a> | <a href="#CommonCodingTasks">Common coding tasks</a> | <a href="#QuickCode">Quick code completions and suggestions</a> |
 | Cost: | Highest | Medium | Lowest |
@@ -1089,6 +1050,8 @@ On AWS, the full <tt>model_id = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"</
 | AWS Bedrock ID | anthropic.claude-opus-4-6-v1 | anthropic.claude-sonnet-4-6 | anthropic.claude-haiku-4-5-20251001-v1:0 |
 | Reliable knowledge cutoff: | - | - | February 2025 |
 | Training data cutoff: | - | - | July 2025 |
+
+TODO: Microsoft Foundry?
 
 REMEMBER: The Reliable knowledge cutoff is the date through which knowledge is most extensive and reliable.
 
@@ -1314,6 +1277,9 @@ but MCP dramatically reduces the development work required on your end.
 
 ## Run in Containers
 
+   * https://www.youtube.com/watch?v=brLhhkUqcn4&t=20061s
+   <br /><br />
+
 Instead of sitting around monitoring every prompt like a hall monitor just in case a rogue <tt>rm -rf</tt> slips by.
 
 So consider a Code Container to mount every project into an <strong>isolated container</strong> where I can let my harness run loose with full permissions while the actual machine stays untouched.
@@ -1353,9 +1319,9 @@ References:
    * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
    <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
 
-
-
-https://github.com/citypaul/.dotfiles/blob/main/claude/.claude/CLAUDE.md
+https://www.youtube.com/watch?v=IjiaCOt7bP8&pp=ugUHEgVlbi1VUw%3D%3D
+Agent Skills: Code Beats Markdown (Here's Why)
+Sam Witteveen
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
