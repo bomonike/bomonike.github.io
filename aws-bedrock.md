@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-20"
-lastchange: "26-03-20 v012 pro cert :aws-bedrock.md"
+date: "2026-03-23"
+lastchange: "26-03-23 v013 claude course :aws-bedrock.md"
 url: https://bomonike.github.io/aws-bedrock
 file: "aws-bedrock"
 title: "AWS Bedrock"
@@ -160,6 +160,13 @@ Content Domains and Task streams:
    * 5.2.5: Troubleshoot prompt maintenance issues to continuously improve the performance of FM interactions (for example, by using template testing and CloudWatch Logs to diagnose prompt confusion, X-Ray to implement prompt observability pipelines, schema validation to detect format inconsistencies, systematic prompt refinement workflows).
 
 <hr />
+
+## Anthropic Claude Course
+
+Anthropic provides a free <a target="_blank" href="https://anthropic.skilljar.com/claude-in-amazon-bedrock">
+"Claude with Amazon Bedrock" videod course</a>
+
+
 
 ## What: Use Cases
 
@@ -546,9 +553,9 @@ References:
    <br /><br />
 
 
-   <a name="InfProfiles"></a>
+<a name="InfProfiles"></a>
 
-   ### Inference Profiles
+## Inference Profiles
 
    <table border="1" cellpadding="4" cellspacing="0">
    <tr><th> Feature </th><th> System-Defined </th><th> Application </th></tr>
@@ -573,7 +580,7 @@ References:
    * Quota management - Separate rate limits
 
 
-   ### Chat with BedRock
+### Chat with BedRock
 
    <a target="_blank" href="https://github.com/eduamota/building-apps-with-bedrock/blob/main/Basic%20Bedrock/1-bedrock_intro.ipynb">Python code</a> to Make an invoke_model(prompt) request
 
@@ -593,7 +600,7 @@ References:
    // Use system profile for inference
 
 
-   ### Manually on console:
+### Manually on console:
 
    Alternatively, 
    
@@ -629,7 +636,7 @@ References:
    anthropic.claude-3-5-haiku-20241022-v1:0
 
 
-   ### Chat / Text playbaround"
+### Chat / Text playbaround"
 
 1. Click the web app green icon browser tab to return to Amazon Bedrock.
 1. Click "Chat / Text playbaround" menu.
@@ -702,12 +709,15 @@ Follow the blue pop-ups (but don't click "Next" within them):
 
    PROTIP: Some models are available only in a <strong>single region</strong>. <a target="_blank" href="https://dev.to/pradeep_kasula_dff004d770/accessing-amazon-nova-lite-on-aws-bedrock-22pi">Amazon Nova Lite v1 is only available in us-east-1</a>
 
-   https://wilsonmar.github.io/aws-benchmarks
+   See <a target="_blank" href="https://bomonike.github.io/aws-benchmarks">https://bomonike.github.io/aws-benchmarks</a>
    * "Google" generally has the lowest cost
    * AI21 Labs
-   * Moonshot AI
+   * <a target="_blank" href="https://platform.moonshot.ai/console/api-keys">Moonshot AI Kimi models</a>
    * Writer
    * <a target="_blank" href="https://aws.amazon.com/blogs/machine-learning/deepseek-r1-model-now-available-in-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/">DeepSeek</a>
+   * <a target="_blank" href="https://bomonike.github.io/anthropic-certs.md/#Models">Anthropic Claude Models</a>
+   <br /><br />
+
 1. Switch back to the Amazon Bedrock tab.
 
 1. Click "Amazon" to select a model provider. The "Cross-region" selection should appear.
