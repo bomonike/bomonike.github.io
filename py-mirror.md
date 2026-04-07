@@ -1,0 +1,83 @@
+---
+layout: post
+date: "2026-04-06"
+lastchange: "26-04-06 v001 new @py-mirror.md"
+url: "https://bomonike.github.io/py-mirror"
+file: "py-mirror"
+title: "Python package Mirror"
+excerpt: "Be able to go offline and skill run Python."
+tags: [Python, localfirst]
+image:
+# feature: pic data center slice 1900x500.jpg
+  feature: https://cloud.githubusercontent.com/assets/300046/14622043/8b1f9cce-0584-11e6-8b9f-4b6db5bb6e37.jpg
+  credit:
+  creditlink:
+comments: true
+created: "2026-03-19"
+---
+<a target="_blank" href="https://bomonike.github.io/py-mirror"><img align="right" width="100" height="100" alt="py-mirror.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/py-mirror.png?raw=true" /></a>
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
+This article was completely hand-crafted (for now).
+
+{% include whatever.html %}
+
+Within Python code, "import" statements are resolved according to the PEP 503 standard which includes sha256 hash verification in every link. See https://packaging.python.org/en/latest/glossary/
+`uv add` or `pip install` commands retrieve packages from the PyPi repository on the internet.
+to it via `--index-url`.
+
+My request to Claude began with this:
+"Create a mirror server running on my local Mac Mini to download all packages referenced by all my Python programs and shell scripts. This is for transparent fallback — if a package isn't cached locally, pip is redirected to upstream PyPI (installs never hard-fail) so that at any time python interpreters can still reference packages locally if the internet, pypi, or a package version becomes unavailable. Keep old versions of each package used for forensics in case of corruption of any kind. Create Python code that passes Ruff standard rules. Insert (or update) a PEP 723 inline metadata block at the top of every .py file."
+
+Python programs:
+
+1. `pre_download.py` bulk-fetches packages from PyPI into the local mirror cache based on requirements.txt
+2. `py-mirror-server.py` establishes the HTTP mirror server (PEP 503 `/simple/` API + file serving).
+3. `py-mirror-setup.py`  Interactive pip configuration helper.
+4. `packages/` cache directory (one sub-folder per package) 
+5. `py-mirror-manage.py` lists, inspects, and removes cached packages for cache inspection, listing, and removal
+
+
+Step 0 - Environment
+```bash
+brew install python uv  # etc.
+python -m site    # lists where packages are installed to:
+   # USER_BASE: '~/.local' (exists)
+```
+Step 1 — pre-download packages (while you have internet)
+```bash
+python pre_download.py -r requirements.txt
+   # supports version specs: "numpy>=1.24", "scipy==1.12.0"
+   # --all-versions NOT used to grab every release from beginning.
+   # --python-version 3.11 --platform linux_x86_64 to filter wheels
+brew install safety
+safety scan      # Check dependencies that have CVEs
+```
+Step 2 — start the server:
+```bash
+python py-mirror-server.py             # http://127.0.0.1:8080
+# or to share across a network:
+python py-mirror-server.py --host 0.0.0.0
+# This locks up a Terminal window.
+```
+Step 3 - With no internet, in an internet browser view
+open http://127.0.0.1:8080
+   # for "Simple index"
+
+pip install requests --index-url http://localhost:8080/simple/
+# or permanently:
+pip config set global.index-url http://localhost:8080/simple/
+# or use the interactive helper:
+python py-mirror-setup.py
+```
+Step 4 - Test without internet
+```bash
+pip install ???
+python py-mirror-manage.py
+```
+Step 5 - Update library
+```bash
+python py-mirror-manage.py
+```
