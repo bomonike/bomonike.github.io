@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-04-07"
-lastchange: "26-04-07 v003 fix: verif commands @py-mirror.md"
+lastchange: "26-04-07 v004 fix: verif commands @py-mirror.md"
 url: "https://bomonike.github.io/py-mirror"
 file: "py-mirror"
 title: "Python package Mirror"
@@ -58,6 +58,7 @@ python -m site    # lists where packages are installed to:
 ```
 
 ### Step 1 — pre-download packages (while you have internet)
+
 ```bash
 python py-mirror-download.py -r requirements.txt
    # supports version specs: "numpy>=1.24", "scipy==1.12.0"
@@ -68,6 +69,7 @@ safety scan      # Check dependencies that have CVEs
 ```
 
 ### Step 2 — start the server:
+
 ```bash
 python py-mirror-server.py             # http://127.0.0.1:8080
 # or to share across a network:
@@ -89,15 +91,13 @@ pip config set global.index-url http://localhost:8080/simple/
 python py-mirror-setup.py
 ```
 
-REMEMBER: The `--index-url` parameter 
-
 ### Step 4 - Test fetch with and without internet
 
 Pick a new Python package to add in one of your programs from:
 <a target="_blank" href="https://hugovk.dev/top-pypi-packages/">https://hugovk.dev/top-pypi-packages</a>
 Substitute it with the "???" in this command:
 ```bash
-uv install ???
+uv add ???
 ```
 
 ### Step 5 - List library
@@ -106,7 +106,6 @@ Confirm that your local mirror now contains the new package by constructing your
 ```bash
 python py-mirror-manage.py list | grep "???"
 ```
-
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
