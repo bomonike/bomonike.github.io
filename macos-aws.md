@@ -1,0 +1,1797 @@
+---
+layout: post
+date: "2026-04-08"
+lastchange: "26-04-08 v012 MacMiniVault @macos-aws.md"
+url: https://bomonike.github.io/macos-aws
+file: "macos-aws"
+title: "MacOS within AWS"
+excerpt: "Mac Mini instances without buying hardware within AWS EC2 (and MacStadium): step-by-step and in one command using Terraform"
+tags: [aws, mac, setup, cloud]
+#image:
+# macos-aws-1900x500.png
+#  feature: https://res.cloudinary.com/dcajqrroq/image/upload/v1674403396/macos-aws-1900x500_vguv9p.png
+comments: true
+created: "2022-09-30"
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
+---
+layout: post
+comments: true
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
+This is a <strong>deep dive</strong> with commentary and warnings,
+written by human hands.
+
+{% include whatever.html %}  
+
+<hr />
+
+<a target="_blank" href="https://aws.amazon.com/mac">https://aws.amazon.com/mac</a> redirecting to <a target="_blank" href="https://aws.amazon.com/ec2/instance-types/mac/">https://aws.amazon.com/ec2/instance-types/mac</a> says a <strong>pool</strong> of macOS Mini machine throughout the world can be setup (with <a href="#installbrews">your own brews installed</a>) for nomads and testers. Get a Mac Mini temporarily to:
+
+   * Run XCode iPhone mobile development builds
+   * Not lug your macbook everywhere
+   * Test a new version of macOS (such as Ventura)
+   * Use shared development environments 
+   <br /><br />
+
+Having a mac in the AWS cloud has these advantages:
+   * Devs can pass an instance to others anywhere else in the world (which otherwise require being in the same room with physical machines).
+   * The number of instances are <strong>scalable</strong> -- many macs can be created the same way.
+   * Each mac can have a <strong>massive data storage</strong> with access to (AWS S3, EBS IOPS, etc.).
+   * Backup and transfer of data snapshots is easier/faster.
+   <br /><br />
+
+PROTIP: With macs in the cloud, you're paying for <strong>convenience and scalability</strong>.
+
+You don't have to wait for physical machines to be shipped to you.
+
+
+## Intel mac1 & ARM M1 mac2 within AWS cloud
+
+In 2022 AWS announced availability of <a target="_blank" href="https://www.apple.com/mac-mini/">Apple Mac mini</a> machines within the AWS EC2 cloud as <a target="_blank" href="https://aws.amazon.com/ec2/instance-types/">EC2 instance types</a>. This AWS service is made possible by the <a target="_blank" href="https://aws.amazon.com/ec2/nitro/">AWS Nitro System</a> virtualization infrastructure enabling new <tt>*.metal</tt> EC2 Server Types:
+
+   * <strong>mac1.metal</strong> are Mac Mini's with Intel’s 8th generation (Coffee Lake) 3.2 GHz (4.6 GHz turbo) Core i7 x86 processors
+  
+   * <strong>mac2.metal</strong> has Apple's M1 ARM (16-core Neural Engine) processors made by Apple -- using TSMC's 5nm (N5) process
+   <br /><br />
+
+   <table border="1" cellpadding="4" cellspacing="0">
+   <tr><th>Type</th><th>Processor</th><th>vCPU cores</th><th>GiB memory</th><th>Gbps Network</th><th>Gbps EBS Bandwidth</th></tr>
+   <tr valign="top" align="center"><td>mac1.metal</td><td>Intel x86</td><td>12</td><td>32</td><td>10</td><td>8</td></tr>
+   <tr valign="top" align="center"><td>mac2.metal</td><td>arm64</td><td>8</td><td>16</td><td>10</td><td>8</td></tr>
+   </table>
+
+BLAH: As of this writing, AWS doesn't yet support M2 processors, which is about 18% faster than M1.
+<a target="_blank" href="https://www.macrumors.com/guide/m1-vs-m2-chip/">PROTIP</a>: 
+M2 can go up to 24GB or 32GB of RAM.
+
+## Cost of Mac minis
+
+PROTIP: If it's only about the money, you might as well buy physical mac minis from Apple.
+
+<a target="_blank" href="https://www.apple.com/shop/buy-mac/mac-mini">Mac minis from Apple</a> 
+are cheaper than MacBook laptops which have monitors and keyboards:
+
+   * $699 for M1 8-core CPU & GPU with 256GB storage
+   * $699 for M1 8-core CPU & GPU with 512GB storage
+   * $1099 for i5 6-core CPU & GPU with 512GB storage, 3GHz RAM
+   <br /><br />
+
+AWS has a mechanism they call <a target="_blank" href="https://aws.amazon.com/ec2/dedicated-hosts/">EC2 Dedicated Hosts</a> for providing a whole physical server fully dedicated for a single user.
+This was originally used to associate EC2 instances with licenses traditionally sold by Microsoft, Oracle, etc.
+But for Apple machines, AWS holds licenses to machines.
+
+<a name="mac1or2"></a>
+
+PROTIP: AWS' minimum billing ("required by Apple") is <strong>one day</strong>, even if you use a few minutes.
+
+That's why AWS requires the additional mechanism of a <a target="_blank" href="https://aws.amazon.com/ec2/dedicated-hosts/pricing/">dedicated host</a> and <a target="_blank" href="https://aws.amazon.com/ec2/instance-types/mac/#Pricing">unit of billing</a>: 
+
+   * mac1 US per hour $0.650 x 24 = $15.6/day = <strong>$468 per 30-day month</strong>
+   * mac2 US per hour $1.083 x 24 = $25.992/day = $779.76 per 30-day month
+
+PROTIP: Prices are higher in some regions outside the US.
+
+   * mac1 Mumbai per hour $1.14 = $27.36/day = $820.80/month (75% more than US price)
+  
+   * mac2 Frankfurt per hour $1.298 = $31.15/day = $934.56/month (20% more than US price)
+   <br /><br />
+
+NOTE: <a target="_blank" href="https://aws.amazon.com/fargate/">AWS Fargate</a> does not currently adjust madOS server types automatically like it does with Linux machines.
+
+### AWS discounts
+
+AWS offers savings up to 44% off On-Demand pricing for a 3-year commitment. 
+
+See <a target="_blank" href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html">
+AWS Documentation at https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html</a>.
+
+<hr />
+
+<a name="MacStadium"></a>
+
+## MacStadium cheaper
+
+Compare AWS against <a target="_blank" href="https://www.macstadium.com/pricing">MacStadium.com</a>, who have machines only in Atlanta, Dublin, Las Vegas (as of this writing).
+
+Their <a target="_blank" href="https://portal.macstadium.com/bare-metal-mac/create">prices for bare-metal macOS</a>, billed monthly, are a fraction of what AWS charges:
+
+CPU	RAM	STORAGE	MONTHLY	HOURLY
+* Gen 4 Mac mini (G4B/G4D) Intel i7 3.2GHz 6C	32 GB	512 GB SSD <strong>$239/mo</strong> = $0.33/hour
+* Gen 4 Mac mini (G4C/G4E) Intel i7 3.2GHz 6C	64 GB	1 TB SSD	$299/mo = $0.41/hour
+
+* Gen 5 Mac mini (G5A/G5I) Apple Silicon M1	8 GB	256 GB SSD	$132/mo = $0.18/hour
+* Gen 5 Mac mini (G5G/G5K) Apple Silicon M1	16 GB	1 TB SSD	<strong>$171/mo</strong> = $0.23/hour
+<br /><br />
+
+<a name="MacMiniVault"></a>
+
+## MacMiniVault cheaper
+
+Compare AWS against <a target="_blank" href="https://www.macminivault.com/about-us/datacenter/">MacMiniVault.com</a>, who, as of this writing, have machines in Milwaukee, WI (MKE1) and Phoenix, Arizona (PHX1). 
+
+Response time to 
+
+Their <a target="_blank" href="https://portal.macstadium.com/bare-metal-mac/">prices for bare-metal macOS</a>, billed monthly, are a fraction of what AWS charges:
+
+Cores CPU RAM	STORAGE	MONTHLY	HOURLY
+* M4 256GB 16GB 256GB SSD <strong>$104.99/mo</strong>
+* M4 1TB 32GB 1TB SSD <strong>$154.99/mo</strong>
+* M4 2TB 32GB 2TB SSD <strong>$194.99/mo</strong>
+* M4 Pro 1TB 64GB 1TB SSD <strong>$254.99/mo</strong>
+* M4 Pro 2TB 64GB 2TB SSD <strong>$294.99/mo</strong>
+MacStudio:
+* 16 M4 Max 40 64GB 1TB SSD <strong>$294.99/mo</strong>
+* 24 M2 Ultra 60 128GB 2TB SSD <strong>$524.99/mo</strong>
+<br /><br />
+
+CPU	RAM	STORAGE	MONTHLY	HOURLY
+* Gen 4 Mac mini (G4B/G4D) Intel i7 3.2GHz 6C	32 GB	512 GB SSD <strong>$239/mo</strong> = $0.33/hour
+* Gen 4 Mac mini (G4C/G4E) Intel i7 3.2GHz 6C	64 GB	1 TB SSD	$299/mo = $0.41/hour
+<br /><br />
+
+* Gen 5 Mac mini (G5A/G5I) Apple Silicon M1	8 GB	256 GB SSD	$132/mo = $0.18/hour
+* Gen 5 Mac mini (G5G/G5K) Apple Silicon M1	16 GB	1 TB SSD	<strong>$171/mo</strong> = $0.23/hour
+<br /><br />
+
+
+<hr />
+
+## Get one now
+
+The ways to get a mac*.metal instance:
+
+   >>> <a href="#OptionA"><strong>Option A: Use AWS Management Console GUI manually</strong></a> (not preferred as it's not repeatable, but good for learning)
+   <br /><br />
+   >>> <a href="#OptionB"><strong>Option B: Use CLI commands locally on your laptop</strong></a> (programmatic commands that require testing adequacy of conditions and verification of results)
+   <br /><br />
+   >>> <a href="#OptionC"><strong>Option C: Use Terraform</strong></a> (declarative JSON that's simpler and repeatable)
+
+<hr />
+
+<a name="OptionA"></a>
+
+## Option A: Use AWS GUI Manually
+
+   Resources:
+   * https://medium.com/aws-architech/how-to-run-macos-using-amazon-ec2-mac-instances-cur-d918094f9b65
+   <br /><br />
+
+<a name="AvailableMetal"></a>
+
+### Instance Type in Availability Zone
+
+When provisioning an instance, you'll need to specify an Availability Zone.
+
+REMEMBER: Each Instance Type (mac1.metal or mac2.metal) may not be in your desired Availability Zones within a Region.
+
+If you select an Instance Type that's not in your chosen Availability Zone, you'll get an <a target="_blank" href="http://blog.piefox.com/2011/07/ec2-availability-zones-and-instance.html">ERROR</a> such as: 
+
+   <ul><tt>Your requested instance type (mac2.metal) is not supported in your requested Availability Zone (us-east-1b). Please retry your request by not specifying an availability zone or choosing us-east-1a, us-east-1c, us-east-1d
+   </tt></ul>
+
+<a target="_blank" href="https://blyx.com/2016/03/24/how-to-restrict-by-regions-and-instance-types-in-aws-with-iam/">PROTIP</a>: 
+I recommend that you first identify specifically what Machine Type is available from each Availability Zone you wish to use.
+Run this AWS shell script I created, adapted from <a target="_blank" href="https://www.middlewareinventory.com/blog/run-aws-cli-commands-on-all-regions-awsall/">this blog</a> and <a target="_blank" href="https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/instance-discovery.html">this Amazon article</a> referencing <a target="_blank" href="https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-type-offerings.html">AWS CLI describe-instance-type-offerings command</a>, 
+rotated through a list of AWS Regions permitted for the AWS account I was given:
+
+1. Open a Terminal.
+2. Install awscli, perhaps using my comprehensive mac-setup shell.
+   
+3. Create a folder and navigate to it.
+4. Ensure that credentials to access a valid AWS account are in your <tt>~/.aws/credentials</tt> file. Otherwise, the command below will encounter this error message:
+
+   <tt>An error occurred (RequestExpired) when calling the DescribeRegions operation: <strong>Request has expired</strong>.</tt>
+   
+5.  Remotely retrieve and immediately run <a target="_blank" href="https://github.com/wilsonmar/mac-setup/blob/master/aws-info.sh">my shell script</a> to list the mac*.metal instances by copying and pasting this command on your Terminal:
+
+    <pre><strong>bash -c "$(curl -fsSL https://raw.githubusercontent.com/wilsonmar/mac-setup/master/aws-info.sh)" -v -ec2info
+    </strong></pre>
+
+    The above runs this set of commands in my script:
+
+    <pre>export AWS_INSTANCE_TYPE="mac*.metal"
+   function aws_list_macs {
+   export AWS_PAGER=""
+   for i in `aws ec2 describe-regions --query "Regions[].{Name:RegionName}" --output text | sort -r`
+   do
+      export AWS_REGION="${i}"
+      if [ `echo "$@"|grep -i '\-\-region'|wc -l` -eq 1 ]; then
+         echo "ERROR: -–region flag cannot be used while using this function"
+         break
+      fi
+      echo -e "${AWS_REGION}  -------"
+      aws ec2 describe-instance-type-offerings \
+         --region "${AWS_REGION}" \
+         --location-type "availability-zone" \
+         --query "InstanceTypeOfferings[*].[Location, InstanceType]" \
+         --filters "Name=instance-type,Values=${AWS_INSTANCE_TYPE}" \
+         --output text  | sort
+   done
+   trap "break" INT TERM
+   }
+   aws_list_macs
+
+    </pre>
+
+    <a target="_blank" href="https://docs.amazonaws.cn/en_us/cli/latest/userguide/cli-usage-filter.html">PROTIP</a>: In the <tt>for</tt> loop which retrieves the list of region in the above script, notice that double-ticks are used instead of sub <tt>$(...)</tt> because output to a variable are recognized as a single string rather than thel lines needed for iteration.
+
+    Sample output of the "mac*.metal" (macOS) server type/Availability Zones combinations available at time of run, world-wide within AWS:
+
+    <pre>us-west-2  -------
+us-west-2a	mac1.metal
+us-west-2a	mac2.metal
+us-west-2b	mac1.metal
+us-west-2b	mac2.metal
+us-west-2c	mac1.metal
+us-west-2c	mac2.metal
+us-west-2d	mac1.metal
+us-west-2d	mac2.metal
+us-west-1  -------
+us-east-2  -------
+us-east-2b	mac1.metal
+us-east-2b	mac2.metal
+us-east-2c	mac1.metal
+us-east-2c	mac2.metal
+us-east-1  -------
+us-east-1b	mac1.metal
+us-east-1b	mac2.metal
+us-east-1c	mac1.metal
+us-east-1c	mac2.metal
+us-east-1d	mac2.metal
+sa-east-1  -------
+eu-west-3  -------
+eu-west-2  -------
+eu-west-2a	mac1.metal
+eu-west-2c	mac1.metal
+eu-west-1  -------
+eu-west-1b	mac1.metal
+eu-west-1b	mac2.metal
+eu-west-1c	mac1.metal
+eu-west-1c	mac2.metal
+eu-north-1  -------
+eu-north-1a	mac1.metal
+eu-north-1b	mac1.metal
+eu-central-1  -------
+eu-central-1a	mac1.metal
+eu-central-1c	mac1.metal
+ca-central-1  -------
+ap-southeast-2  -------
+ap-southeast-2a	mac1.metal
+ap-southeast-2b	mac1.metal
+ap-southeast-1  -------
+ap-southeast-1a	mac1.metal
+ap-southeast-1a	mac2.metal
+ap-southeast-1b	mac1.metal
+ap-southeast-1b	mac2.metal
+ap-south-1  -------
+ap-south-1a	mac1.metal
+ap-south-1c	mac1.metal
+ap-northeast-3  -------
+ap-northeast-2  -------
+ap-northeast-2a	mac1.metal
+ap-northeast-2d	mac1.metal
+ap-northeast-1  -------
+ap-northeast-1a	mac1.metal
+ap-northeast-1c	mac1.metal
+
+    </pre>
+
+    Notice the AWS regions which do NOT have "mac*.metal" instances (at time of this writing Jan 2023):
+
+    * us-west-1 (Oregon)
+    * sa-east-1 (Sao Paolo, Brazil)
+    * eu-west-3 (Paris, France)
+    * ca-central-1 (Central Canada)
+    * ap-northeast-3 (Osaka, Japan)
+    <br /><br />
+
+1.  Write down the Availability Zone you've chosen in a note file so you can copy the values later.
+
+    NOTE: There is a possibility that between the time when the above is run and when you allocate it below, someone else grabs it.
+
+<hr />
+
+<a name="DedicatedHosts"></a>
+
+### Dedicated Hosts
+
+   * https://www.trek10.com/blog/dedicated-hosts-and-dedicated-instances
+   * AWS Dedicated Instances were first released March 2011 to meet compliance regulations, such as the Health Insurance Portability and Accountability Act (HIPAA), which requires completely dedicated infrastructure for any instances that process Protected Health Information (PHI).
+   * AWS Dedicated Hosts were first released November 2015 for <strong>additional visibility and control</strong> over how instances are placed on a physical server, so you can consistently deploy instances to the <strong>same physical server</strong> over time.
+    <br /><br />
+
+<a name="YourQuota"></a>
+
+### Your Dedicated Hosts Quota
+
+PROTIP: Verify that the AWS account you're using has the <strong>quota</strong> set to use mac2/mac1 Dedicated Hosts:
+
+1.   In the AWS Console Home, select a region such as "Oregon" (us-west-2) because a different region changes the Quata Code within the destination URL after following steps below:
+   
+2.  Type <strong>limits</strong> over the <em>Search</em> prompt at the top of every AWS Console GUI. 
+
+    AWS "Limits" applies to all AWS services.
+
+3.  Click "<a target="_blank" href="https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html">Service Quotas</a>".
+4.  Click "AWS Services" on the left menu.
+5.  Type "EC2" over the <em>Find services</em> search prompt.
+6.  Click "Amazon Elastic Compute Cloud (Amazon EC2)".
+7.  Type "mac" over the <em>Find quotas</em> search prompt for the list of Quotas:
+
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1675573760/macos-aws-quotas-1504x402_oz5cqn.jpg"><img alt="macos-aws-quotas-1504x402.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1675573760/macos-aws-quotas-1504x402_oz5cqn.jpg"></a> 
+
+    The "Applied quota value" needs to be non-zero in order to enable creation of EC2 Dedicated Hosts.
+
+    #### CLI for Dedicated Hosts Quota
+
+    There is a different <strong>Quota code</strong> associated with mac1 vs mac2 in the URL, such as:
+
+8.  Click "Running dedicated mac1 hosts". Note the code at the end of the URL:
+
+    <!-- <img alt="macos-aws-dedicated-1692x436.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1673542063/macos-aws-dedicated-1692x436_moed9s.jpg"></a> 
+    -->
+
+    https://us-west-2.console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A8448DC5
+
+9.  Click "Running dedicated mac2 hosts". Note the code at the end of the URL:
+
+    https://us-west-2.console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5D8DADF5
+
+    Highlight and copy the Quota code to paste in the <a target="_blank" href="https://docs.aws.amazon.com/cli/latest/reference/service-quotas/">CLI command</a>:
+
+    <pre><strong>AWS_REGION="us-west-2"
+    AWS_QUOTA_CODE=L-5D8DADF5
+    aws service-quotas get-service-quota \
+    --service-code ec2 \
+    --quota-code "$AWS_QUOTA_CODE" \
+    --region "${AWS_REGION}" \
+    --output json
+    </strong></pre>
+
+    A sample response:
+
+    <pre>    "Quota": {
+        "ServiceCode": "ec2",
+        "ServiceName": "Amazon Elastic Compute Cloud (Amazon EC2)",
+        "QuotaArn": "arn:aws:servicequotas:us-west-2:849506427193:ec2/L-5D8DADF5",
+        "QuotaCode": "L-5D8DADF5",
+        "QuotaName": "Running Dedicated mac2 Hosts",
+        "Value": 0.0,
+        "Unit": "None",
+        "Adjustable": true,
+        "GlobalQuota": false
+    </pre>
+
+
+    #### Request Quota change
+
+    If the quota Value is zero, talk to whoever supports your account or click the help icon at the top of the AWS UI for the <a target="_blank" href="https://support.console.aws.amazon.com/support/home?region=us-west-2#/">Support Center</a> to file a <a target="_blank" href="https://aws.amazon.com/premiumsupport/knowledge-center/request-service-quota-increase-cli/">case to request service quota</a> with a desired-value of 3 for each region and Server Type you use.
+    
+    Unless you have a quota, you'll see this error message when you attempt to allocate a Dedicated Host:
+
+    <tt>The number of Dedicated hosts you've requested (1) would bring your total up to 1 for the specified group of instance types (mac2). This exceeds your current limit of 0. If you've recently released Dedicated hosts, it may take some time for them to stop counting towards your limit. Try allocating your hosts again after a few minutes. Please visit http://aws.amazon.com/contact-us/ec2-request to request an adjustment to this limit.</tt>
+
+    PROTIP: Before you submit your case, type your email in the Additional contacts field so you are notified when a response is created by AWS.
+
+    ### Dedicated Host selection
+
+11. Select an AWS Region such as "Oregon" (us-west-2).
+12. Type <tt>EC2</tt> over the <em>Search</em> search prompt at the top of each AWS Console GUI (after you press Option+S) for the EC2 features left menu.
+13. Select <strong>Dedicated Hosts</strong> among EC2 features (under the Instances category).
+14. Click the orange "Allocate Dedicated Host" at the right.
+
+    <a name="HostNameSpec"></a>
+
+15. PROTIP: Construct a Name tag containing your email (so people know how to find you) and the <a href="#AvailableMetal">Availability Zone you select above</a>. Example:
+   
+    <strong>johndoe-us-west-2d-mac2-01</strong>
+
+    NOTE: Each AWS Dedicated Host is actually a physical Mac Mini machine purchased from Apple.
+
+16. Click <strong>Choose instance family</strong> and type <strong>mac2</strong> (even though there is no feedback) to select <a href="#mac1or2">"mac2"</a>.
+
+    <a name="NoMultipleInstances"></a>
+
+17. <a target="_blank" href="https://medium.com/aws-architech/the-instance-family-mac1-is-not-supported-b6ca31154f22">IMPORTANT</a>: Uncheck <strong>Enable</strong> default "Support multiple instance types" to avoid getting this cryptic error message:
+
+    <tt>The instance family 'mac2' is not supported.</tt>
+
+18. Click "Choose Instance type" and select "mac1.metal" or "mac2.metal".
+19. Click "Choose Availability Zone" and select the AZ in your Name tag (above), such as "us-west-2d".
+20. For "Outpost ARN", leave alone.
+
+21. Leave "Instance auto-placement" <strong>unhecked</strong>, the default, which preserves the Dedicated Host for targeted launch requests. Enabling auto-placement will allow untargeted (no host ID specified) launch requests to succeed.
+22. Leave "Host recovery" <strong>unchecked</strong>, the default. It restarts your instances on to a new replacement host if failures are detected on your Dedicated Host. 
+23. Leave "Quantity" to 1.
+
+    <a name="installbrews"></a>
+
+24. Click "> CLI commands" to add what you want executed upon on the instance's Terminal after boot-up:
+
+25. Specify a Tag for accounting and budgeting, etc.
+
+    PROTIP: So that others know how to contact you, create a tag with Key "creator" and your email address as the value.
+
+    Notice that the Name is automatically created as Key tags.
+
+26. Click the orange "Allocate". 
+
+    PROTIP: If you get this message, read <a href="#NoMultipleInstances">this (above) to uncheck a default</a>:
+
+    <tt>The instance family 'mac2' is not supported.</tt>
+
+    <a name="CalendarHostDeletion"></a>
+    
+    ### Calendar deletion
+
+27. PROTIP: Switch to your <strong>calendar</strong> to create a reminder 24 hours from now, with a subject mentionig <a href="#HostNameSpec">the name of the host</a>, such as:
+
+    <tt><strong>Release Dedicated Host johndoe-us-west-2d-mac2-01</strong></tt>
+    
+    You can't delete Dedicated Hosts manually until 24 hours after its creation.
+
+    WARNING: The value of <strong>Allocation time</strong> is when <strong>charges began accumulating</strong>.
+
+    Example "T05:48:03" is a 24-hour <strong>UTC</strong> (previously Greenwich Mean Time near London) but with never a Summertime/Dayight Savings change.
+
+28. PROTIP: Convert to your local time visually using the widely used 
+
+    <a target="_blank" href="https://www.timeanddate.com/worldclock/meetingtime.html?month=1&day=27&year=2023&p1=75&iv=0">Meeting Planner at timeanddate.com</a>
+
+29. Click the Host ID in blue for its "Dedicated Hosts details" page.
+30. Highlight and copy the URL and paste it in your calendar entry so you can quickly return to that URL. Example:
+
+    https://us-west-2.console.aws.amazon.com/ec2/home?region=us-west-2#Host:hostId=h-080b8780c5c9f9c02
+
+31. PROTIP: If you are not going to immediately <a href="#ConfigLaunchInstance">Configure Launch Instance</a> (make use of) the Dedicated Host <strong>within the hour</strong>, please <a href="#ReleaseHost">release it</a> so it's not eating up money unproductively.
+
+    Proceed to <a href="#CreateEC2instance">create an EC2 instance to use the Dedicated Host</a> you just created.
+
+
+    <a name="ConfigLaunchInstance"></a>
+
+    ### Config Launch Instance
+
+32. If you are at the EC2 list of Dedicated Hosts such as:
+
+    https://us-west-2.console.aws.amazon.com/ec2/home?region=us-west-2#Hosts:
+
+    click the checkbox associated with the (Dedicated) Host ID you recently created.
+ 
+    Alternately, if you're at the "Dedicated Hosts details" page of a particular Host:
+
+33. Pull down the <strong>Actions</strong> list to select <strong>Launch instance(s) onto host</strong> for the "Launch an instance" form.
+
+34. Construct a Name with your own name, Availability Zone, mac1/2, etc.
+
+    <tt>johndoe-us-west-2d-mac2-01a</tt>
+
+    <tt>-001</tt> is if you're bringing up several instances for a multi-machine test.
+
+35. Select the "macOS" icon for a list of instance types for the region. Example for Oregon:
+
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1673914725/macos-aws-ec2-ventura-img-1344x1246_zshynx.jpg"><img alt="macos-aws-ec2-ventura-img-1344x1246.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1673914725/macos-aws-ec2-ventura-img-1344x1246_zshynx.jpg"></a>
+
+    CAUTION: The version of macOS (currently Ventura 13.1), along with the AMI-ID will change over time.
+
+    The "macOS" icon would NOT appear if the region chosen does not carry the server type requested.
+
+36. If you don't want the latest MacOS operating system (Ventura at time of this writing), click the down arrow icon to select the previus macOS release (such as Monterey).
+    
+37. Click the selection under "Architecture" and select "64-bit (Mac-Arm)" to override the default which is incorrect for mac2.
+   
+    <a name="NewKeyPair"></a>
+
+    ### Create or select key pair
+
+    <a target="_blank" href="https://www.youtube.com/watch?v=RbVe14H-pIE">VIDEO</a>:
+
+38. For <strong>Key pair name</strong>, click "Create new key pair".
+
+    <img alt="macos-aws-key-pair-1070x1134.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1673920944/macos-aws-key-pair-1070x1134_q6ed5q.jpg">
+
+39. Construct a <strong>Key pair name</strong> that distinguishes it from other key pairs, such as this, to enable you to reuse it:
+
+    <tt>johndoe-rsa-pem-231231</tt>
+
+    Replace "johndoe" with your name, from your email, so people know who to reach about the instance.
+
+    <tt>221231</tt> indicates the key was created in 2022 December 31, so you can tell whether it needs to be rotated to meet policies.
+
+40. PROTIP: Highlight and copy (using Command+C) the value to your computer's hidden Clipboard to paste in your work notes file.
+41. For key pair type, keep RSA the default (not ED25519).
+42. For Private key file format, click ".pem" for macOS.
+43. Click the orange "Create key pair" for the <strong>private key</strong> to be downloaded to your <strong>Downloads folder</strong>.
+    
+    WARNING: Do not move the .pem secret file to a folder (away from your $HOME folder) where it may be uploaded publicly.
+
+    <a target="_blank" href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-keypairs.html#displaying-a-key-pair">Delete the key pair</a>
+
+    ### Network settings - Security Group
+
+    NOTE: A security group acts as a virtual firewall for your ENIs to control inbound and outbound traffic. Security groups act at the ENI level, not the subnet level.
+
+    REMEMBER: By default, AWS creates a new Security Group with a prefix of <strong>launch-wizard-???</strong>.
+
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1675071913/macos-aws-firewall-719x316_rhljac.jpg"><img alt="macos-aws-firewall-719x316.jpg" width="719" height="316" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1675071913/macos-aws-firewall-719x316_rhljac.jpg"></a>
+
+44. If you have already created a Security Group for your IP address, select "Select existing security group" and scroll to pick it.
+    
+    Alternately:
+    1. Select "Create security group" 
+    2. Edit Inbound rules.
+    3. Under the "Type" column select "Custom ICMP Rule - IPv4".
+    4. Under the "Protocol" column select "Echo Request".
+    5. Check <strong>Allow SSH traffic from</strong> 
+    6. Select "My IP" for better security of restricting traffic to only the IP you use.
+    <br >
+
+    WARNING: Your IP address will change when you switch internet providers, such as when you go from home to office.
+
+45. Write down the name of the Security Group created (such as "launch-wizard-23") because they are <strong>not deleted automatically</strong>. Thus, a process is needed to <a href="#RemoveSGroups">identify and remove abandoned Security Groups no longer used</a>.
+
+    ### TODO: Configure Extra Storage
+
+    * <a target="_blank" href="https://www.youtube.com/watch?v=--BfdlnIc7Y">VIDEO</a>: How to Use Block and File Storage
+    <br /><br />    
+
+46. Click the arrow in "> Configure storage".
+47. Notice that, by default, the instance get 100 GiB of "gp2" (General Purpose SSD) for its Root volume used for boot-up.
+
+    <tt>Free tier eligible customers can get up to 30 GB of EBS General Purpose (SSD) or Magnetic storage</tt>
+
+    NOTE: The largest volume size for a gp2 volume is 16384 GiB.
+
+    PROTIP: If you're exploring for the first time, keep things simple and proceed to <a href="#LaunchInstance">Launch Instance</a> and come back later here to configure more space.
+
+48. Click "Advanced" at the right to configure EBS Volumes.
+49. increase the size of the Root Volume from a default of 60 to 300 GiB (or whatever your capacity analysis runs reveal). 
+50. Select Volume Type:
+
+    * Magnetic (Standard)
+    * General Purpose SSD (gp2)
+    * General Purpose SSD (gp3)
+
+    * Provisional IOPS SSD (io1)
+    * Provisional IOPS SSD (io2) on new Nitro-based Amazon EC2 instances using the Scalable Reliable Datagram (SRD) networking protocol
+    <br /><br />
+
+    Provisioned IOPS (Input-Output Per Second) SSD volumes are designed for time-sensitive sustained I/O for sub-millisecond latency in database retrieval speed. Latency is a measurement of time it takes for individual packet to be transferred.
+
+    An example of pricing for 100 GB for a month at 1000 IOPS is the total of:
+    * Cost of EBS-optimized EC2 instance
+    * Number of 100 GB allocated 
+    * <strong>Fixed charge</strong> for the IOPS level selected during that month (rather than the variable millions of I/O requests for standard volumes).
+    <br /><br />
+
+    Throughput is a measurement of how much (Megabytes of) sequential data (such as a video file) can be transferred per second.
+
+    Up to <strong>6 TiB (Terrabytes)</strong> can be selected for mac instance types.
+
+    PROTIP: Mac server types can obtain a maximum throughput of <strong>up to 1,000 MiB/s</strong> (Megabytes per second) by specifying <a target="_blank" href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/provisioned-iops.html#EBSVolumeTypes_piops">Provisioned IOPS SSD (Solid State Drive) volumes</a> of up to 64,000 IOPS (using I/O in 16 KiB blocks). 
+    This is illustrated by the orange line reaching the upper-right:
+
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1664652178/aws_io1_throughput-1275_460_qautbp.png"><img alt="aws io1 throughput" width="1275" height="460" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1664652178/aws_io1_throughput-1275_460_qautbp.png"></a>
+
+    The graph illustrates the impact of both IOPS selection and the size of I/O blocks.
+
+    PROTIP: The blue line illustrates the "worst case" maximum throughut of <strong>500 MiB/s</strong> when 2,000 IOPs is specified and using larger 256 KiB blocks.
+
+    BTW: Mac instances are not among EC2 instance types C7g, R5b, X2idn, and X2iedn which can use <a target="_blank" href="http://aws.amazon.com/ebs/provisioned-iops/">io2 Block Express volumes</a> which provide the maximum throughput from any instance at <strong>4,000 MiB/s</strong> (using smaller 16 KiB I/O blocks) when 256,000 IOPS is selected. See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/provisioned-iops.html
+
+    PROTIP: Analysis of actual and simulated peak usage is done to reveal the IOPS level needed. Specifying higher IOPS for increased capacity in many cases does not improve latency. Selection of IOPS and instance type sets a fixed expenditure per month regardless of how much was actually used.
+
+51. Add tags per your administrator's guidelines and examples.
+
+    Usage reports do not distinguish between io2 Block Express volumes and io2 volumes. 
+    So add tags to identify the volume used is a io2 Block Express volume.
+
+    <a name="AdvancedDetails"></a>
+
+    ### Advanced Details
+
+52. Click the arrow in front of "Advanced Details".
+
+    Most these settings are left to their default.
+
+53. For "Shutdown behavior", leave it "Stop" unless you want to select "Terminate" so you are experimenting and want a fresh start every time.
+
+54. Under "Tenancy", select "Dedicated host - launch this instance on a dedicated Host".
+
+    "The selected instance type must be launched onto a Dedicated Host. To continue, choose a Dedicated Host  that has been allocated for this instance type.
+
+55. For "Target host by", select "Host ID".
+56. For "Target host ID", select the ID of the Dedicated Host you created (above).
+
+    This is where you verify the ID based on that list you maintain manually.
+
+    ### Advanced: User data Boot-up commands
+
+57. Scroll to the bottom among <strong>Advanced details</strong> to expand options.
+58. If you have commands to be executed upon on the instance's Terminal after boot-up:
+
+    <pre>echo "Hello world"</pre>
+
+    <a target="_blank" href="https://www.youtube.com/watch?v=ZMgbBmlgA7k">VIDEO</a>: 
+    Consider using my <a target="_blank" href="https://github.com/wilsonmar/mac-setup/">mac-setup repo</a> to install all the utilities you want, including .zshrc and aliases, by a single command:
+
+    <pre><strong>bash -c "$(curl -fsSL https://raw.githubusercontent.com/wilsonmar/mac-setup/main/mac-setup.zsh)" -v
+    </strong></pre>
+
+    ### Launch Instance
+
+59. Click the orange "Launch instance" for a message such as:
+    
+    Success! Successfully initiated launch of instance (i-1234567890abcdef)
+
+60. Click that instance ID (such as "i-1234567890abcdef") instead of clicking the orange "View all instances" so that you only see that instance in the list of instances presented.
+
+65. Press command+R to refresh until "Status check: Initializing" changes to green "Running".
+
+61. PROTIP: Highlight and copy the instance URL to paste into that <a href="#CalendarHostDeletion">calendar entry created above</a>, such as:
+
+    https://us-west-2.console.aws.amazon.com/ec2/home?region=us-west-2#InstanceDetails:instanceId=i-1234567890abcdef
+
+    PROTIP: EC2 instances need to be <strong>terminated</strong> before its Dedicated Host can be released.
+
+62. Click the "Actions" box if you're at the Instance Summary or if you've check the box asociated with your mac?.metal instance.
+    
+    <a name="ConnectInstructions"></a>
+
+    ### Connection Instructions
+
+63. Click <strong>Connect</strong> within the Actions pull-down.
+
+    <a name="PrivateIPAddress"></a>
+
+    REMEMBER: Connecting to the macOS instance is based on the AWS <strong>Public IPv4 DNS name</strong>, such as:
+
+    ec2-44-234-9-188.us-west-2.compute.amazonaws.com
+
+    NOTE: A ping of the above DNS name will always time out because, by default, AWS blocks all ICMP requests on its servers.
+
+    That resolves to the Private IPv4 address, such as <tt>172.31.55.215</tt> shown on the prompt when connected.
+    
+    Both will be different when another instance is created.
+
+64. REMEMBER: The "User name" is <tt>ec2-user</tt> which is used by the SSH utility used to log into the macOS instance.
+
+    CAUTION: Do not click the orange "Connect" with the default "EC2 Instance Connect" selected. That creates a new browser window. You will see this in red:
+
+    <tt>Failed to connect to your instance<br />
+    EC2 Instance Connect is unable to connect to your instance. Ensure your instance network settings are configured correctly for EC2 Instance Connect. For more information, see Set up EC2 Instance Connect at https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html.
+    </tt>
+
+65. Click "SSH client" for instructions to appear.
+
+66. Copy the command associated with the icon under <tt>Example</tt> by clicking it, such as:
+
+    <pre>ssh -i "johndoe-rsa-pem-231231.pem" ec2-user@ec2-52-88-58-184.us-west-2.compute.amazonaws.com</pre>
+
+67. PROTIP: Instead of using what AWS presents above, use a Terminal based on <a href="#AWSMacConnect">my (enhanced) instructions (below) on how to connect to macOS using SSH</a>.
+
+    PROTIP: During development work, <a href="#TerminateInstanceGUI">terminate instance</a> (and associate Volumes and Dedicated Host) to minimize charges.
+
+
+<hr />
+
+<a name="OptionB"></a>
+
+## Option B: Use CLI to create instance
+
+   References:
+   * https://aws.amazon.com/blogs/aws/use-amazon-ec2-m1-mac-instances-to-build-test-macos-ios-ipados-tvos-and-watchos-apps/
+   <br /><br />
+
+TODO: Daniel and I are working to get you a macOS desktop on AWS, by running a single script command:
+Here's what it does:
+
+   1. Install awscli and other utilities needed.
+   2. Identify an <a name="AvailableMetal">available "mac*.metal" server type</a> within a desired Availability Zone.
+   3. Invoke Terraform commands to automatically:
+      1. <a href="#DedicatedHost">Create a Dedicated Host</a> instance in AWS
+      2. Create EC2 instance
+      3. Install XCode command utilities, brew; use brew to install utilities, run dotfiles to configure macOS; define aliases, etc.
+      4. Create EC2 images for each region (if requested)
+   4. Remove files that don't need to be left over.
+   <br /><br />
+
+<hr />
+
+Here are the steps to invoke the script:
+
+1. Open a Terminal window.
+2. Define your AWS Region, such as:
+
+   <pre><strong>export AWS_REGION="us-west-2"</strong></pre>
+
+<a name="DedicatedHost"></a>
+
+### Using Terraform Dedicated Host Module
+
+The easiest way to create an instance (repeatedly) is using automation based on <a target="_blank" href="https://wilsonmar.github.io/terraform/">Terraform</a>.
+
+To create for yourself:
+
+   * A <strong>dedicated_host_id</strong>
+   * A <strong>mac_ami_id</strong> for the region and Architecture, such as "64-bit (Mac-Arm)" for Mac2.
+   <br /><br />
+
+In a Terminal:
+
+1. Fork to your GitHub account the "dedicated-host" Terraform module created by <a target="_blank" href="https://www.linkedin.com/in/danielricardodias/">Daniel Dias</a> (of Berlin, Germany):
+
+   <pre>https://github.com/DanielRDias/terraform-aws-dedicated-host
+   </pre>
+
+   This repo makes use of a module. But originally 
+
+   git clone it and cd into the download.
+
+   It references <a target="_blank" href="https://registry.terraform.io/modules/DanielRDias/dedicated-host/aws/latest/examples/macOS">[here](https://registry.terraform.io/modules/DanielRDias/dedicated-host/aws/latest)</a>
+
+2. View the <tt>.gitignore</tt> file. 
+
+   Notice it has "stage.auto.tfvars.example" and "stage.auto.tfvars" along with other specifications of files and folders not to upload to GitHub.
+
+3. Rename the <tt>stage.auto.tfvars.example</tt> file to <tt>stage.auto.tfvars</tt>.
+
+   <pre><strong>mv stage.auto.tfvars.example  stage.auto.tfvars
+   </strong></pre>
+   
+4. Edit file <tt>stage.auto.tfvars</tt> to your preference, such as:
+
+   <pre>instance_type     = "mac2.metal"
+   availability_zone = "us-east-1a"
+   </pre>
+
+   <a href="#AvailableMetal">REMEMBER</a>: Some instance_type values are not available in some Availability Zones world-wide.
+
+   TODO: Logic to switch if not available? CDK for this? Reserved instance?
+
+   
+   ### What mac you already have?
+
+   If you want to replicate a specific physical macOS laptop you have:
+
+5. Press Shift+Command+/ for the Apple menu. Click on the Apple logo, then "About This Mac" 
+
+   <img alt="mac-about-this-121x62.jpg" width="121" height="62" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1667270209/mac-about-this-121_x62_wnv4by.jpg">
+
+6. In the pop-up, notice whether it says "M1" or "M2", and the amount of memory (16 GB?):
+
+   <img alt="mac-monterey-m1-398x244.jpg" width="398" height="244" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1667270788/mac-monterey-m1-398_x244_bmi7q4.jpg">
+
+7. Navigate to (after creating) the folder where you add GitHub repos.
+   
+8. Obtain the repo (only the main branch at --depth 1):
+
+   <pre><strong>git clone git@github.com:DanielRDias/terraform-aws-mac.git --depth 1
+   cd terraform-aws-mac
+   </strong></pre>
+
+9.  Navigate to one of the folders under <tt>examples</tt> folder:
+
+    <pre><strong>cd examples
+    cd Monterey_M2
+    </strong></pre>
+
+    ### Config for your AWS
+
+    In a Terminal program
+
+10. Obtain the <tt>subnet-id</tt> value for the region you have been set to use.
+   
+   <pre><strong>aws ec2 describe-subnets --output json
+   </strong></pre>
+
+   <pre>{
+    "Subnets": [
+        {
+            "AvailabilityZone": "us-west-2d",
+            "AvailabilityZoneId": "usw2-az4",
+            "AvailableIpAddressCount": 4091,
+            "CidrBlock": "172.31.48.0/20",
+            "DefaultForAz": true,
+            "MapPublicIpOnLaunch": true,
+            "MapCustomerOwnedIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0872bb332f1aab798",
+            ,,,
+   </pre>
+
+11. Highlight the value for "SubnetId:", such as <tt>subnet-0872bb332f1aab798</tt>.
+
+12. Edit file <tt>main.tf</tt> to paste the value:
+
+   <pre>subnet_id     = "subnet-0872bb332f1aab798"
+   </pre>
+
+13. In <tt>main.tf</tt>, make sure that the AWS Region specified is the same as the Subnet's <tt>AvailabilityZone</tt>
+
+   <pre>provider "aws" {
+  region = "us-east-1"
+}
+   </pre>
+
+1. Also in <tt>maint.tf</tt>, adjust AWS <strong>tags</strong> to satisfy your company's standards, such as project code, etc.
+   
+2. Consider other specifications that should be specified in the <a target="_blank" href="https://github.com/DanielRDias/terraform-aws-mac#inputs">Inputs section of the README</a>:
+   
+   * host_recovery (disabled by default)
+   * Security Group (to enable only your IP address to access)
+   <br /><br />
+
+3. PROTIP: In your .bash_profile or .zshrc, define quick keys such as:
+
+   <pre>alias tfp="terraform plan"
+alias tfv="tfsec"
+alias tfa="terraform apply -auto-approve"
+alias tfs="terraform show"
+alias tfd="terraform destroy"
+   </pre>
+
+   Explanations of TFSec warnings are at pages such as this:
+   https://aquasecurity.github.io/tfsec/v1.28.0/checks/aws/ec2/enable-at-rest-encryption/
+
+
+<hr />
+
+<a name="OptionC"></a>
+
+## Option C: Run within HCP Vault with Terraform
+
+NOTE: <a target="_blank" href="https://www.linkedin.com/in/mmeidlin/">Michael Meidlinger</a> wrote a 
+<a target="_blank" href="https://aws.amazon.com/blogs/compute/setting-up-ec2-mac-instances-as-shared-remote-development-environments/">2021 blog</a> and created <a target="_blank" href="https://github.com/aws-samples/ec2-mac-remote-dev-env">a repo</a> containing Cloud Formation code.
+   
+TODO: To automate creation of resources in AWS using Terraform, see my
+<a target="_blank" href="https://wilsonmar.github.io/hashicorp-vault">https://wilsonmar.github.io/hashicorp-vault</a>
+
+
+<a name="OptionD"></a>
+
+## Option D: Run locally using Terraform
+
+1. Make sure you're connected to AWS (file <tt>~/.aws/credentials</tt>).
+
+2. Initialize Terraform folder:
+
+   <pre><strong>terraform init
+   </strong></pre>
+
+   Example expected response:
+
+   <pre>Initializing the backend...
+&nbsp;
+Initializing provider plugins...
+- Finding latest version of hashicorp/aws...
+- Installing hashicorp/aws v4.37.0...
+- Installed hashicorp/aws v4.37.0 (signed by HashiCorp)
+&nbsp;
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+&nbsp;
+Terraform has been successfully initialized!
+&nbsp;
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+&nbsp;
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+   </pre>
+
+1. Create a run plan file:
+
+   <pre><strong>terraform plan
+   </strong></pre>
+
+2. Verify for vulnerabilities (after installing tfsec), such as:
+
+   <pre><strong>tfsec
+   </strong></pre>
+
+   TODO: I'm looking into why these messages are appearing.
+
+   <pre>Result #1 HIGH Instance does not require IMDS access to require a token 
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  terraform-aws-modules/ec2-instance/aws/Users/wilsonmar/github-wilsonmar/terraform-aws-mac/examples/Monterey_M2/.terraform/modules/mac.ec2_instance/main.tf:106
+   via main.tf:5-16 (module.mac)
+───────────────────────────────────────────────────────────────────────────────────────────────────
+   19    resource "aws_instance" "this" {
+   ..  
+  106  [       http_tokens                 = lookup(metadata_options.value, "http_tokens", "optional") ("optional")
+  ...  
+  154    }
+───────────────────────────────────────────────────────────────────────────────────────────────────
+          ID aws-ec2-enforce-http-token-imds
+      Impact Instance metadata service can be interacted with freely
+  Resolution Enable HTTP token requirement for IMDS
+&nbsp;
+  More Information
+  - https://aquasecurity.github.io/tfsec/v1.28.0/checks/aws/ec2/enforce-http-token-imds/
+  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#metadata-options
+───────────────────────────────────────────────────────────────────────────────────────────────────
+&nbsp;
+&nbsp;
+Result #2 HIGH Root block device is not encrypted. 
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  terraform-aws-modules/ec2-instance/aws/Users/wilsonmar/github-wilsonmar/terraform-aws-mac/examples/Monterey_M2/.terraform/modules/mac.ec2_instance/main.tf:19-154
+   via main.tf:5-16 (module.mac)
+───────────────────────────────────────────────────────────────────────────────────────────────────
+   19  ┌ resource "aws_instance" "this" {
+   20  │   count = local.create && !var.create_spot_instance ? 1 : 0
+   21  │ 
+   22  │   ami                  = try(coalesce(var.ami, data.aws_ssm_parameter.this[0].value), null)
+   23  │   instance_type        = var.instance_type
+   24  │   cpu_core_count       = var.cpu_core_count
+   25  │   cpu_threads_per_core = var.cpu_threads_per_core
+   26  │   hibernation          = var.hibernation
+   27  └ 
+   ..  
+───────────────────────────────────────────────────────────────────────────────────────────────────
+          ID aws-ec2-enable-at-rest-encryption
+      Impact The block device could be compromised and read from
+  Resolution Turn on encryption for all block devices
+&nbsp;
+  More Information
+  - https://aquasecurity.github.io/tfsec/v1.28.0/checks/aws/ec2/enable-at-rest-encryption/
+  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#ebs-ephemeral-and-root-block-devices
+───────────────────────────────────────────────────────────────────────────────────────────────────
+   </pre>
+1. Apply the plan file created:
+
+   <pre><strong>terraform apply <a target="_blank" href="https://www.terraform.io/docs/commands/apply.html#auto-approve">-auto-approve</a>
+   </strong></pre>
+
+2. If it ran well, you should see something like:
+
+   <pre>instance_type     = "mac2.metal"
+   availability_zone = "us-east-1a"
+   </pre>
+
+   If you instead see a message like this:
+
+   <pre>module.mac.module.host.aws_ec2_host.this: Creating...
+╷
+│ Error: allocating EC2 Host: HostLimitExceeded: Your request for accessing resources in this region is being validated, and you will not be able to launch additional resources in this region until the validation is complete. We will notify you by email once your request has been validated. While normally resolved within minutes, please allow up to 4 hours for this process to complete. If the issue still persists, please let us know by writing to aws-verification@amazon.com for further assistance.
+│ 	status code: 400, request id: cf24ceed-6ef5-4f04-be1a-8aaebae6e374
+│ 
+│   with module.mac.module.host.aws_ec2_host.this,
+│   on .terraform/modules/mac.host/main.tf line 5, in resource "aws_ec2_host" "this":
+│    5: resource "aws_ec2_host" "this" {
+   </pre>
+
+   TODO: I'm looking into the reason for the above message.
+
+
+3. Allocate hosts:
+
+   <pre><strong>aws ec2 allocate-hosts --instance-type="mac1.metal" \
+   --quantity=1 \
+   --region "${AWS_REGION}" \
+   --availability-zone="us-west-2b" \
+   --auto-placement="on" --host-recovery="off"
+   </strong></pre>
+
+   Auto-placment = on preserves the Dedicated Host for targeted launch requests,
+   allow untargeted (no host ID specified) requests to succeed.
+   
+   When Host recovery = on, it automatically restarts instances to a new replacement host if failures are detected on the Dedicated Host.
+
+   Response:
+
+   <pre>{
+    "hostIds": [
+      "h-043de1b44a0374973"
+    ]
+   }
+   </pre>
+
+4. View file <tt>mapping.json</tt> for <tt>--block-device-mappings</tt>
+
+   <pre>
+   [
+      {
+         "DeviceName": "/dev/sda1",
+         "Ebs": {
+              "VolumeSize": 300,
+              "VolumeType": "gp3"
+         }
+      }
+   ]
+   </pre>
+
+5. Run the instance using the image-id associated with the region selected:
+
+   <pre><strong>aws ec2 run-instances --region="${AWS_REGION}" \
+   --image-id="ami-04fdffdf922f4de8e" \
+   --key-name="malx-us-west-2" \
+   --block-device-mappings file://mapping.json \
+   --associate-public-ip-address \
+   --placement="Tenancy"="host"
+   </strong></pre>
+
+
+
+<hr />
+
+<a name="AWSMacConnect"></a>
+
+## Access AWS MacOS
+
+   References:
+   * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+   * https://asf.alaska.edu/how-to/data-recipes/connect-to-ec2-with-ssh-mac-os-x/
+   * https://www.ateam-oracle.com/post/simplify-your-day-with-ssh-config-file-entries-and-self-closing-tunnels
+   <br /><br />
+
+### SSH to AWS MacOS
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=8UqtMcX_kg0">As with other instance types</a>, use SSH to connect to your Mac instance.
+
+    If you are using macOS, open your macOS Terminal.
+
+6.  Set permissions needed:
+
+    <pre><strong>chmod 600 "$KEY_PAIR"
+    </strong></pre>
+
+    There are several ways to use SSH to connect to macOS.
+
+    Rather than defining variables each time, such as this:
+    
+    <pre><strong>KEY_PAIR="$HOME/Downloads/wilsonmar-rsa-pem-231231.pem"
+    SSH_TARGET="ec2-user@ec2-44-234-9-188.us-west-2.compute.amazonaws.com"
+    yes | ssh -v "$KEY_PAIR" -l "$SSH_TARGET"
+    </strong></pre>
+   
+    <tt>yes | </tt> is to automatically answer<br />
+    <pre>Are you sure you want to continue connecting (yes/no)?
+    </pre>
+
+
+   PROTIP: The approach below makes it easily <stsrong>repeatable</strong> by enabling you to change just one parameter rather than typing all of them in CLI.
+
+2. Edit the SSH configuration file:
+
+    <pre><strong>code $HOME/.ssh/config
+    </strong></pre>
+   
+    <a target="_blank" href="https://man7.org/linux/man-pages/man5/ssh_config.5.html">
+    SSH Config documentation is at<br />https://man7.org/linux/man-pages/man5/ssh_config.5.html</a>
+
+3.  Replace the HostName and IdentityFile if you changed it. For example:
+
+    <pre><strong>Host awsmaccli1
+     HostName ec2-35-80-9-25.us-west-2.compute.amazonaws.com
+     User ec2-user
+     Port 22
+     IdentityFile ~/Downloads/wilsonmar-rsa-pem-230126.pem
+   Host awsmacvnc1
+     HostName ec2-35-80-9-25.us-west-2.compute.amazonaws.com
+     User ec2-user
+     Port 22
+     LocalForward 5900 localhost:5900
+     IdentityFile ~/Downloads/wilsonmar-rsa-pem-230126.pem    </strong></pre>
+
+    The 1 in awsmaccli1 is if you have several instances.
+
+    <a target="_blank" href="https://therootcompany.com/blog/ssh-defaults-config-and-priorities/">REMEMBER</a>: With SSH, generic configurations should be at the bottom of the config file.
+
+4.  Save the file.
+
+    <a name="sshagain"></a>
+
+5.  Use the same command each time:
+
+    <pre><strong>ssh awsmacvnc1
+    </strong></pre>
+
+    Verify the config file if you get this back:
+
+    <pre>ssh: Could not resolve hostname awsmaccli1: nodename nor servname provided, or not known
+    </pre>
+
+6.  It may take a few seconds to connect. Success looks something like this (with a different IP address):
+
+    <pre>
+    ┌───┬──┐   __|  __|_  )
+    │ ╷╭╯╷ │   _|  (     /
+    │  └╮  │  ___|\___|___|
+    │ ╰─┼╯ │  Amazon EC2
+    └───┴──┘  macOS Ventura 13.1
+
+    ec2-user@ip-172-31-55-215 ~ % 
+    </pre>
+
+    Notice the sample "@ip-172-31-55-215" above is the <a href="#PrivateIPAddress">Private IPv4 address for the instance</a> within AWS. 
+    
+    That IP address will time out when ICMP <tt>ping</tt> unless the Security Group used is configured for it (which it's not by default).
+
+7.  Define an environment variable for use by commands to follow:
+
+    <pre><strong>export EC2_USER_IP=172.31.55.215
+    </strong></pre>
+
+8. If you are idle too long and it times out, execute the <a href="#sshagain">ssh command</a> again if you see:
+
+    <pre>client_loop: send disconnect: Broken pipe
+    </pre>
+
+
+    <a name="OnMacPrompt"></a>
+
+    ### Commands on AWS macOS CLI
+
+9.  Edit my shell script which installs all that I want on my macOS development laptops:
+
+    TODO: See ...
+
+10. Run that script:
+
+    <a target="_blank" href="https://www.youtube.com/watch?v=ZMgbBmlgA7k">VIDEO</a>: 
+    Consider using my <a target="_blank" href="https://github.com/wilsonmar/mac-setup/">mac-setup repo</a> to install all the utilities you want, including .zshrc and aliases, by a single command:
+
+    <pre><strong>bash -c "$(curl -fsSL https://raw.githubusercontent.com/wilsonmar/mac-setup/main/mac-setup.zsh)" -v
+    </strong></pre>
+
+    It all worked if you see (if you used my settings as the default) the prompt:
+    TODO
+
+
+
+7.  To verify, obtain a list of folders and files:
+
+    <pre><strong>ls -al
+    </strong></pre>
+
+    Normally you should see something like:
+
+    <pre>total 8
+   drwxr-xr-x   5 ec2-user  staff   160 Jan 26 14:03 .
+   drwxr-xr-x   5 root      admin   160 Dec 28 09:29 ..
+   drwx------   3 ec2-user  staff    96 Jan 26 14:03 .ssh
+   -rw-r--r--   1 ec2-user  staff  1258 Nov  1 02:09 .zshrc
+   drwx------  11 ec2-user  staff   352 Jan 26 14:12 Library
+    </pre>
+
+    As you probably know, the "Library" folder is where macOS stores its operating system files.
+
+    <pre><strong>ls Library
+    </strong></pre>
+
+    <pre>Application Scripts ContainerManager    Mail
+    Audio               Containers          Preferences
+    Caches              Keychains           Staging
+    </pre>
+
+8.  Obtain a password to set for ec2-user. From Vault KV UI?
+
+9.  Set a password for ec2-user:
+
+    <pre><strong>sudo /usr/bin/dscl . -passwd /Users/ec2-user
+    </strong></pre>
+
+    The response:
+
+    <pre>Changing password for ec2-user.
+    New password: _
+    Retype new password: _
+    &nbsp;
+    ################################### WARNING ###################################
+    # This tool does not update the login keychain password.                      #
+    # To update it, run `security set-keychain-password` as the user in question, #
+    # or as root providing a path to such user's login keychain.                  #
+    ###############################################################################
+    </pre>
+
+    <a name="nmap"></a>
+
+10. Obtain the latest Network Map utility using the brew utility Apple added into the OS image:
+
+    <pre><strong>brew install nmap
+    </strong></pre>
+
+11. See what:
+
+    <pre><strong>nmap -P0 localhost
+    </strong></pre>
+    
+    Response:
+
+    <pre>Starting Nmap 7.93 ( https://nmap.org ) at 2023-02-02 21:09 GMT
+    Nmap scan report for localhost (127.0.0.1)
+    Host is up (0.000041s latency).
+    Other addresses for localhost (not scanned): ::1
+    Not shown: 996 closed tcp ports (conn-refused)
+    PORT     STATE SERVICE
+    22/tcp   open  ssh
+    88/tcp   open  kerberos-sec
+    3283/tcp open  netassistant
+    5900/tcp open  vnc
+    </pre>
+
+
+
+    <a name="vnc"></a>
+
+    ### VNC
+
+    Several packages provide graphical desktop sharing on macOS through Virtual Network Computing (VNC), originally developed by the Olivetti & Oracle Research Lab, which spun off RealVNC.
+
+    <a target="_blank" href="https://thehackernews.com/2019/11/vnc-remote-software-hacking.html">CAUTION</a>: VNC in itself is not a secure protocol. Researchers found 37 memory corruption vulnerabilities in client and server software: 22 of which were found in UltraVNC, 10 in LibVNC, 4 in TightVNC, just 1 in TurboVNC.
+
+5.  At <a target="_blank" href="https://support.apple.com/guide/remote-desktop/welcome/mac">https://support.apple.com/guide/remote-desktop/welcome/mac</a>, click "Table of Contents".
+
+
+    ### VNC on mac
+
+    Apple's macOS comes with "Screen Sharing" built-in.
+
+    But to remotely <strong>control/manage</strong> Mac computers (such as restart, securely transferring files, installing and configuring apps, etc.), Apple makes available for purchase  from Apple's App Store its <a target="_blank" href="https://apps.apple.com/us/app/apple-remote-desktop/id409907375?mt=12">$79.99 Apple Remote Desktop app</a>.
+
+    See https://www.helpwire.app/blog/apple-remote-desktop/
+
+    That makes use of Apple’s Remote Management service (ARMS)listening on <strong>UDP/3283</strong> that's disabled by default. That's important because <a target="_blank" href="https://www.netscout.com/blog/asert/call-arms-apple-remote-management-service-udp">ARMS is a vector for reflection/amplification DDoS attacks</a>.
+
+    NetScout urges "administrators of ARMS-enabled Macs to shield UDP/3283 from the public Internet, and instead make use of VPN technologies in order to forward remote administration traffic between administration systems and managed Macs."
+
+1.  To activate Remote Management using the command line (using administrator privileges on the client computer):
+
+    <pre><strong>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
+    </strong></pre>
+
+    <pre>Starting...
+    Screen recording might be disabled. Screen Sharing or Remote Management must be enabled from System Preferences or via MDM.
+    Screen control might be disabled. Screen Sharing or Remote Management must be enabled from System Preferences or via MDM.
+    Activated Remote Management.
+    Done.
+    </pre>
+
+1.  To deactivate Remote Management using the command line (using administrator privileges on the client computer):
+
+    <pre><strong>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate
+    </strong></pre>
+
+
+    <a name="vpn"></a>
+    
+    ### Client Option C: AWS VPN client
+
+    Thus, we follow https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos.html
+    which requires:
+
+1.  AWS administrators to <a target="_blank" href="https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html#cvpn-working-endpoint-create">create a Client VPN endpoint</a> on the AWS account you use. A <strong>VPN Configuration File</strong> should be provided for each AWS region.
+
+2.  Instead of <a target="_blank" href="https://aws.amazon.com/vpn/client-vpn-download/">downloading the pkg file</a>, install <a target="_blank" href="https://formulae.brew.sh/cask/aws-vpn-client">this formula</a> using <a target="_blank" href="https://wilsonmar.github.io/homebrew">Homebrew</a> so you can more easily upgrade:
+
+    <pre><strong>brew install aws-vpn-client
+    </strong></pre>
+
+    (This is included among installs using my mac-setup.sh).
+
+    The response (at time of writing):
+
+    <pre>==> Downloading https://d20adtppz83p9s.cloudfront.net/OSX/3.2.0/AWS_VPN_Client.pkg
+    ######################################################################## 100.0%
+    ==> Installing Cask aws-vpn-client
+    ==> Running installer for aws-vpn-client; your password may be necessary.
+    Package installers may write to any location; options such as `--appdir` are ignored.
+    Password:
+    installer: Package name is AWS VPN Client
+    installer: Installing at base path /
+    installer: The install was successful.
+    🍺  aws-vpn-client was successfully installed!
+    </pre>
+
+    The client reserves TCP port 8096 on your computer. 
+
+3.  Invoke the app:
+
+    <pre><strong>open "/Applications/AWS VPN Client/AWS VPN Client.app"
+    </strong></pre>
+
+    Alternately, <a target="_blank" href="https://docs.aws.amazon.com/vpn/latest/clientvpn-user/macos.html">establish</a> a VPN connection using the <a target="_blank" href="https://tunnelblick.net/documents.html">Tunnelblick</a> or <a target="_blank" href="https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-macos/">OpenVPN Access</a> client application on a macOS computer. See https://github.com/samm-git/aws-vpn-client
+
+4.  Add a profile for each AWS region.
+    
+    https://docs.aws.amazon.com/vpn/latest/clientvpn-user/macos.html
+
+    In macOS, remote control of other computer makes use of the Remote Frame Buffer protocol (RFB) to relay graphical-screen updates and transmit keyboard and mouse input from one computer to another over the network.
+
+    RFB is different than Microsofts’ Remote Desktop Protocol (RDP), which is "semantic" (it’s aware of controls, fonts, etc. such that controls are drawn by the client application), thus sending a minimal amount data to the client application and a <strong>much cleaner display</strong> of the controlled computer.
+
+
+    ### VNC Server config
+
+6.  Create a password of sufficient complexity. 8 characters is all that Apple allows. TODO: Store that password in a secrets Vault. Use code to retrieve it so that the password doesn't end up in the command history. So we want the equivalent of:
+    
+    <pre>VNC_PASSWORD="239$Vacx"
+    </pre>
+
+    Alternately, within AWS:
+
+    <pre>VNC_PASSWORD=$(aws secretsmanager get-secret-value --secret-id vnc-secret-id \
+    --region "${AWS_REGION}" \
+    | jq .SecretString -r)
+    </pre>
+
+    WARNING: Please make up another password than the above.
+
+7.  Issue a CLI command (via SSH) to enable Sharing after defining VNC_PASSWORD:
+
+    <a name="VNCcommand"></a>
+
+    <pre>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart \
+    -activate -configure -access -on \
+    -restart -agent -privs -all \
+    -clientopts -setvnclegacy -vnclegacy yes \
+    -clientopts -setvncpw -vncpw "$VNC_PASSWORD"
+    </pre>
+
+8. When <tt>Password:</tt> appears because of the <tt>sudo</tt>, type in your macOS password (not the VNC password).
+   
+    The normal response:
+
+    <pre>Starting...
+Screen recording might be disabled. Screen Sharing or Remote Management must be enabled from System Settings or via MDM.
+Screen control might be disabled. Screen Sharing or Remote Management must be enabled from System Settings or via MDM.
+Activated Remote Management.
+Stopped ARD Agent.
+ec2-user: Set user remote control privileges.
+ec2-user: Set user remote access.
+Set the client options.
+Done.
+    </pre>
+
+    Alternately, instead of using a single VNC password, to share access with any and all (which is less secure and not recommended), replace the last two <a href="#VNCcommand">lines above</a> with:
+
+    <pre>-configure -allowAccessFor -allUsers
+    </pre>
+
+    
+1.  Create an SSH tunnel
+
+    ssh -i wilsonmar-rsa-pem-230126.pem -L 5900:localhost:5900 ec2-user@ec2-18-246-17-23.us-west-2.compute.amazonaws.com
+
+
+    <a target="_blank" href="https://support.apple.com/guide/remote-desktop/virtual-network-computing-access-and-control-apde0dd523e/mac">The GUI equivalent</a>:
+
+    1. On the client computer, choose Apple menu > System Preferences, then click Sharing.
+    2. If prompted, enter the user name and password.
+    3. Select Remote Management in the list at the left, then click Computer Settings.
+    4. Select “VNC viewers may control screen with password,” enter a VNC password, then click OK.
+    <br /><br />
+
+2.  Highlight the 
+3.  Hit Command+Spacebar to bring up Spotlight, then type enough of "Screen Sharing" to select "Screen Sharing.app".
+
+    NOTE: That app comes with MacOS, "hidden" at:
+    <pre>/System/Library/CoreServices/Applications/Screen Sharing.app/</pre>    
+
+4.  In "Connect to" type the IP address.
+
+    The Screen Sharing.app is simply a client. 
+    To connect to a Mac remotely and control it’s screen from other Macs, Linux, Windows, even an iPhone or iPad, set up remote Screen Sharing through Mac OS X System Preferences to enable the VNC server on a Mac.
+
+    ### Remote Desktop App
+
+    On Linux, use Remmina. 
+    TightVNC running on Windows don't work with this resolution.
+
+    <pre>bash -c "$(curl -fsSL https://raw.githubusercontent.com/wilsonmar/mac-setup/main/mac-ec2-client.zsh)"
+    </pre>
+
+    https://aws.amazon.com/premiumsupport/knowledge-center/ec2-mac-instance-gui-access/
+
+    ### Change password
+
+    <a target="_blank" href="https://medium.com/aws-architech/how-to-run-macos-using-amazon-ec2-mac-instances-cur-d918094f9b65">Alternately</a>, to change password:
+
+    <pre><strong>echo "$VNC_PASSWORD" | \
+    perl -we ‘BEGIN { @k = unpack “C*”, pack "H*", “1734516E8BA8C5E2FF1C39567390ADCA”}; \
+    $_ = <>; \
+    chomp; \
+    s/^(.{8}).*/$1/; @p = unpack “C*”, $_; 
+    foreach (@k) { printf "%02X", $_ ^ (shift @p || 0) }; \
+    print "\n"’ | \
+    sudo tee /Library/Preferences/com.apple.VNCSettings.txt
+    </strong></pre>
+
+
+    <a name="TurnOffSharing"></a>
+
+    To turn off screen-sharing via SSH:
+
+    <pre>sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart \
+    -deactivate -configure -access -off
+    </pre>
+
+    If the above commands are not done, the RealVNC client will return this message:
+
+    "VNC Server is not currently listening for Cloud connections."
+
+    Exit the ssh session.
+
+
+    ### Client Option B: VNC Client install
+
+    MacOS X has built in a VNC server in its "Sharing".
+
+    BTW, on a regular macOS, to enable the VNC <strong>server</strong>: 
+    1. Enter the macOS "System Preferences" by clicking the Apple icon in the upper left corner. 
+    2. Click the blue "Sharing" icon or type enough of "Sharing" in the Search box at the upper-right to choose it.<br /><br />
+    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1675209781/macos-aws-sharing-651x312_h2vzvw.png"><img alt="macos-aws-sharing-651x312.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1675209781/macos-aws-sharing-651x312_h2vzvw.png"></a><br />
+
+    3. Click "Computer Settings..."
+    4. Check "VNC viewers may control screen with password:"
+    <br /><br />
+
+2.  On the client computer that controls the VNC server computer remotely, install the <a target="_blank" href="https://www.realvnc.com/en/connect/download/viewer/macos/">Real VNC <strong>viewer</strong></a>:
+
+    <pre><strong>brew install --cask vnc-viewer
+    open "$HOME/Applications/VNC Viewer.app"
+    </strong></pre>
+
+3.  Click "Open" to the pop-up download alert.
+4.  Check to accept its terms, then click OK.
+5.  Provide your email and Password "that you used to create your RealVNC account".
+
+6.  PROTIP: To connect:
+
+    <pre>ssh -f awsmacvnc1 sleep 10
+    </pre>
+
+    You should now be seeing the mac screen.
+
+    ### Disconnect
+
+7.  To disconnect and reconnect to enable the GUI, define :
+
+    <pre><strong>echo "KEY_PAIR=$KEY_PAIR"
+    echo "SSH_TARGET=$SSH_TARGET"
+    ssh -L 5900:localhost:5900 \
+    -i "$KEY_PAIR" -l "$SSH_TARGET"
+    </strong></pre>
+
+
+    ### Client Option C: SSH within VSCode
+
+    https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+    
+    ### Client Option D: Tiger VNC
+
+    Alternately, <a target="_blank" href="https://medium.com/idomongodb/vnc-viewer-for-macos-2fdc4858c213">PROTIP</a> recommends that (free) Tiger VNC be installed from SourceForge, which many no longer trust.
+
+    ### Client Option C: Microsoft Remote Desktop
+
+    https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients
+
+
+    <a name="InsideMacGUI"></a>
+
+    ### Actions inside macOS GUI
+
+10. Press command+spacebar for Spotlight to search for the screen-sharing app.
+
+10. Login using your password.
+
+    <a target="_blank" href="https://help.realvnc.com/hc/en-us/articles/360003474552#on-the-computer-you-want-to-control-0-1">license</a>
+
+    ## Storage
+
+17. If you selected a larger volume (above), <a target="_blank" href="https://www.youtube.com/watch?v=--BfdlnIc7Y">VIDEO</a>:
+
+    <pre><strong>PDISK=$(diskutil list physical external | head -n1 | cut -d' ' -f1 )
+    sudo diskutil repairDisk $PDISK
+    </strong></pre>
+
+
+    ### Resize disk
+
+15. Resize (which takes a few minutes):
+
+    <pre><strong>APFSCONT=$(dikutil list physical external | grepApple_APFS | tr -s ' ' | cut -d ' ' -f8 )
+    sudo diskutil apfs resizeContainer $APFSCONT 0
+    </strong></pre>
+
+
+    ## Backups and Restore
+
+16. Consider using my <a target="_blank" href="https://github.com/wilsonmar/mac-setup/">mac-setup repo</a> to install all your utilities you want on a new Mac with a single command:
+
+    <pre><strong>bash -c "$(curl -fsSL https://raw.githubusercontent.com/wilsonmar/mac-setup/main/mac-setup.zsh)" -v
+    </strong></pre>
+
+17. <a target="_blank" href="https://www.youtube.com/watch?v=--BfdlnIc7Y&t=4m11s">Take a snapshot</a> backup at volume or instance level to copy across regions or accounts to create new AMI machine images.
+
+
+
+<hr />
+
+## macOS Jenkins & Kubernetes
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=XWcCzqEemQQ">VIDEO: macOS Workers with Kubernetes and Jenkins</a>
+
+   Orka orchestrates macOS in a cloud environment using Kubernetes technology on genuine Apple hardware.
+
+   Anka is designed specifically for Mac-based CI workflows and easily integrates with existing container-based DevOps CI pipelines.
+
+
+
+<hr />
+
+<a name="Alerts"></a>
+
+## Alerts about continued usage
+
+PROTIP: So that instances are not forgeten and left to accumulate charges needlessly, do one/all of these options:
+
+1. Setup <strong>email/Slack of reminders</strong> to be sent automatically about instances that stay alive -- 
+
+2. Send <strong>calendar appointment</strong> to review the instance, with a link to manually shut down the instance.
+(To send a calendar invite from a CLI command line shell script:
+https://github.com/insanum/gcalcli)
+
+### Release Dedicated Host
+
+Setup <strong>automatic shut down</strong> of billed instance after a set time.
+
+   https://docs.aws.amazon.com/cli/latest/reference/ec2/release-hosts.html
+
+1. Capture the Host ID (such as "h-098a7654b1234clep")
+
+   export HOST_ID="h-098a7654b1234clep"
+
+2. Run:
+   
+   aws release-hosts
+      --host-ids "$HOST_ID"
+
+
+<hr />
+
+## Monitoring
+
+See https://catalog.us-east-1.prod.workshops.aws/workshops/5ced3c00-8e8a-4c4d-82fa-ca1b7804ea4d/en-US/advanced-use-cases/monitoring
+
+
+### Obtain EC2 metadata
+
+<a target="_blank" href="https://derflounder.wordpress.com/2022/01/11/amazon-web-servicess-new-ec2-metadata-tag-option-doesnt-allow-spaces-in-tag-names/">NOTE</a>: 
+Beginning on January 6, 2022, AWS added a new option to include your instance’s tags as part of the instance’s metadata when the instance is launched.
+
+https://aws.amazon.com/about-aws/whats-new/2022/01/instance-tags-amazon-ec2-instance-metadata-service/
+
+According to https://github.com/aws/amazon-ec2-metadata-mock
+Amazon EC2 Metadata Mock (AEMM) is a tool to simulate Amazon EC2 instance metadata service for local testing:
+
+1.  Install on macOS using Homebrew:
+
+    <pre><strong>brew tap aws/tap
+    brew install ec2-metadata-mock
+    </strong></pre>
+
+<hr />
+
+aws ec2 allocate-hosts --availability-zone "us-west-2a" --auto-placement "on" --host-recovery "off" --host-maintenance "on" --quantity 1 --instance-family "mac2"
+
+## Python Fabric
+
+Fabric is a Python library and command-line tool for executing shell commands remotely over SSH. It simplifies the process of executing commands on multiple servers and can be used for tasks such as deployment, management, and monitoring. Use case: Automating the deployment of a web application on multiple servers. Example:
+
+<pre>from fabric.api import run, env
+# Set the environment
+env.hosts = ['server1', 'server2']
+env.user = 'deploy'
+env.key_filename = '~/.ssh/id_rsa'
+&nbsp;
+def deploy():
+    run('git pull')
+    run('sudo service apache2 restart')
+</pre>
+
+## SSH with OPA policies
+
+TODO: Extend policy-based access control to SSH and sudo:
+https://www.openpolicyagent.org/docs/latest/ssh-and-sudo-authorization/
+
+
+
+<hr />
+
+<a name="CleanUP"></a>
+
+## Clean-up
+
+TODO: An automated way to shut down the Remote port, instance, and Dedicated Host;
+Also to remove uneeded Security Groups and key pairs.
+
+REMEMBER: The Dedicated Host can't be killed until after the day that it's up.
+
+<a name="ReleaseHost"></a>
+
+### Release Dedicated Host
+
+   * https://docs.aws.amazon.com/cli/latest/reference/ec2/release-hosts.html
+   <br /><br />
+
+1.  Be at the "Dedicated Hosts" menu item at the left under EC2.
+
+    https://us-west-2.console.aws.amazon.com/ec2/home?region=us-west-2#Hosts:
+
+    See https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-hosts.html
+
+    The states of a Dedicated Host are: 
+    available, under-assessment,<br />
+    released, permanent-failure,<br />
+    released-permanent-failure
+
+2.  Check the checkbox to the right of the Host ID you want to release.
+3.  Click "Actions" to pull down the menu to select "Release host".
+4.  Click the orange "Release" to confirm.
+5.  REMEMBER: AWS does not let users manually release DURING the first day. So you may get this error:
+
+    <img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1674720659/macos-aws-release-1588x168_hplxwt.jpg">
+
+    The <tt>Z</tt> in the time stamp <tt>T05:48:03.141Z</tt>  denotes 24-hour <strong>UTC</strong> (previously Greenwich Mean Time near London). UTC/GMT never has a Dayight Savings (aka Summertime) offset.
+
+    PROTIP: Convert to your local time visually using the widely used <a target="_blank" href="https://www.timeanddate.com/worldclock/meetingtime.html?month=1&day=27&year=2023&p1=75&iv=0">Meeting Planner at timeanddate.com</a>.
+
+6.  TODO: Manually create an entry in your calendar (calendar.google.com for Gmail, Apple iCalendar, etc.).
+
+    TODO: <a target="_blank" href="https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html">Amazon EC2 License Manager</a> can now allocate and manage Dedicated Hosts on your behalf to simplify the management experience
+    The simplified management experience includes the ability to launch different instance sizes on a host, share hosts across accounts, automatically recover hosts, and more.
+
+    Note that Dedicated Hosts in "Released" state continue to appear in the list.
+
+7. Start over by following the <a href="#DedicatedHosts">Dedicated Hosts steps above</a>.
+
+
+<a name="TerminateInstanceGUI"></a>
+
+### Terminate EC2 Instance in GUI
+
+    * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html
+    <br /><br />
+
+1.  <a target="_blank" href="https://www.youtube.com/watch?v=dapXcfhMoGw">VIDEO</a>: Use a browser to the EC2 Instances page for your region.
+    
+    https://us-west-2.console.aws.amazon.com/ec2/home?region=us-west-2#Instances
+
+1.  Select the checkbox associated with the "mac2.metal" instance you created.
+2.  Pull down the "Instance state" box to select "Terminate instance".
+3.  Click the orange "Terminate" button for "Successfully terminated" appears at the top.
+4.  Wait a few minutes and press Command+R or the browser's refresh button to see "Terminated" for your instance.
+
+5.  REMEMBER: Go to <a href="#ReleaseHost">release the Dedicated Host</a> to stop charges for accumulting for the current hour.
+
+    NOTE: To do this in CLI, stop and Terminate EC2 instance or <a target="_blank" href="https://www.youtube.com/watch?v=e0RegZZ9i04">VIDEO</a>: Generate the CLI commands by using the interactive AWSSupport-ListEC2Resources document.
+
+PROTIP: The toil of instance termination and Host release is a good reason to automate the entire process of instance creation,  shown below.
+The automation script can contain a notification sound when the instance is ready for use.
+
+
+<a name="RemoveSGroups"></a>
+
+## Remove Security Groups no longer used
+
+The challenge is to determine whether or not each security group is being used, perhaps by other Security Groups Inbound/Outbound rules.
+
+1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+
+1. In the navigation pane, choose Security Groups.
+
+1. PROTIP: Delete the inbound rules first
+
+1. Press the "apply rule changes" button
+
+2. Delete all referenced rules to 
+
+3. Select the security group to delete and choose Actions, Delete security group, Delete.
+
+   * https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-sg.html
+   * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#deleting-security-group
+   * https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-security-group.html
+
+
+<a name="RemoveKeyPairs"></a>
+
+## Remove EC2 Key Pairs
+
+1. at https://console.aws.amazon.com/ec2/
+2. Select your Region.
+3. At the Amazon EC2 console left menu, select "Key Pairs" under "Network & Security"
+
+   https://us-west-2.console.aws.amazon.com/ec2/home?region=us-west-2#KeyPairs:
+
+4. Identify your Key pair based on its name and Created date.
+5. Check the box to the left of the Key pair you want to delete.
+6. Click "Actions" to select "Delete".
+7. Type "Delete" to confirm.
+
+
+## Remove
+
+an automated way to shut down the Remote port, instance, and Dedicated Host. The Dedicated Host can't be killed until after the day that it's up.
+
+<hr />
+
+## Videos:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Pn3miC_tTH0" title="">Origin story</a>: Dan Brown of AWS coming up with the idea and taking delivery of a truckload of mac minis on Feb 10, 2020.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_pjl7PAsCPI" title="Jul 20, 2021">Part 1 - Getting Started</a> by <a target="_blank" href="https://www.linkedin.com/in/scottmalkie/">Scott Malkie</a> who wrote <a target="_blank" href="https://aws.amazon.com/blogs/compute/getting-started-with-anka-on-ec2-mac-instances/">this blog</a> about CLI commands using <a target="_blank" href="https://veertu.com/anka-build/">Anka from Veertun.com</a> for the Apple Hypervisor to create and manage macOS virtual machines running on top of macOS, in the same manner as other native macOS applications. 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=--BfdlnIc7Y">Part 2</a>: How to Use Block and File Storage
+   * <a target="_blank" href="https://www.youtube.com/watch?v=XWcCzqEemQQ">Part 3</a>: macOS Workers with Kubernetes and Jenkins
+   <br /><br />
+
+Videos from others:
+   * https://www.youtube.com/watch?v=UexCJtF5bA8 Tiny Technical Tutorials
+   * https://www.youtube.com/watch?v=OjeW33eahWM by <a target="_blank" href="https://www.linkedin.com/in/udit-chugh/">Udit Chugh</a> has distracting background music
+   <br /><br />
+
+<hr />
+
+## References
+
+<a target="_blank" href="https://catalog.us-east-1.prod.workshops.aws/workshops/5ced3c00-8e8a-4c4d-82fa-ca1b7804ea4d/en-US">AWS EC2 Mac Workshop</a>: https://catalog.us-east-1.prod.workshops.aws/workshops/5ced3c00-8e8a-4c4d-82fa-ca1b7804ea4d/en-US/instance-setup/connect-to-ec2-mac/screen-sharing
+
+https://arstechnica.com/gadgets/2020/12/amazon-web-services-adds-macos-on-bare-metal-to-ec2/
+
+<a target="_blank" href="https://www.youtube.com/watch?v=UexCJtF5bA8&t=5m27s">VIDEO</a>:
+
+## SSH
+
+https://therootcompany.com/blog/ssh-defaults-config-and-priorities/
+
+
+<hr />
+
+## More on MacOS
+
+This is one of a series on MacOS:
+
+{% include mac_links.html %}
+
+## More on Amazon #
+
+This is one of a series on Amazon:
+
+{% include aws_links.html %}
+
+## More on Cloud Computing
+
+This is one of a series on cloud computing:
+
+{% include cloud_links.html %}
+
