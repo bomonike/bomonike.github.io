@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-17"
-lastchange: "26-03-17 v040 mcp fle :aws-kiro2.md"
+date: "2026-03-23"
+lastchange: "26-03-23 v041 mcp fle @aws-kiro2.md"
 url: https://bomonike.github.io/aws-kiro2
 file: "aws-kiro"
 title: "AWS Kiro"
@@ -24,7 +24,8 @@ This article defines how to create apps on the AWS cloud using Kiro, step-by-ste
 
 ## What's Kiro? Why?
 
-Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform. Let me explain what those words mean with this video flowchart:
+Kiro is described as a "Spec-Driven GenAI Agentic Reasoning" platform running on the AWS Cloud. 
+Let me explain what those words mean with this video flowchart:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1773595227/aws-kiro-flow_z7ttdn.png"><img alt="aws-kiro-flow.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1773595227/aws-kiro-flow_z7ttdn.png" /></a>
 
