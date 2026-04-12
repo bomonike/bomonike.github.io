@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-04-12"
-lastchange: "26-04-12 v004 flowchart @time-services.md"
+lastchange: "26-04-12 v005 flowchart @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
@@ -27,7 +27,7 @@ This article was hand-crafted based on AI responses.
 
 The lesson I created creating a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is that stand-alone servers need time sync servers.
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775975036/260412-time-services_egkcah.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775975036/260412-time-services_egkcah.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775976450/260412-time-services_eaadyl.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775976450/260412-time-services_eaadyl.png" /></a>
 
 This article describes how we:
 
@@ -164,8 +164,8 @@ PTP provides resiliecy to jitter when using proper hardware. The jitter for PTP 
 
 When a server ultimately loses its external reference and begins to drift, PTP has a massive advantage simply because its starting baseline is astronomically tighter.
 
-https://www.wikiwand.com/en/Precision_Time_Protocol
-IEEE 1588-2019 was published in November 2019 and includes backward-compatible improvements to the IEEE 1588:2008 PTP Protocol publication.
+<a target="_blank" href="https://www.wikiwand.com/en/Precision_Time_Protocol">
+IEEE 1588-2019</a> was published in November 2019 and includes backward-compatible improvements to the IEEE 1588:2008 PTP Protocol publication.
 
 Related standards are 802.1AS (gPTP), Telecom Profiles, G.8265.1, G.8275.1, G.8275.2, Automotive Profiles. Customers report testing against various media profiles such as SMPTE 2059-2. 
 
