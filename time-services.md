@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-04-12"
-lastchange: "26-04-12 v002 flowchart @time-services.md"
+lastchange: "26-04-12 v003 flowchart @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
@@ -27,17 +27,18 @@ This article was hand-crafted based on AI responses.
 
 The lesson I created creating a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is that stand-alone servers need time sync servers.
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775973734/261012-time-services_fzfw40.png"><img alt="261012-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775973734/261012-time-services_fzfw40.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775975036/260412-time-services_egkcah.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775975036/260412-time-services_egkcah.png" /></a>
 
-This article describes how we:
-1. Created an installer of shell scripts and Python code using AI generation based on spec code.
-1. Configured a computer that obtains time sync signals from three sources (<a href="#GPS">GPS satellites</a>, <a href="#NTP">NTP (Network Time Protocol) sync websites, and <a href="#TimeRadio">Time Radio Broadcasts</a>).
+This article describes how we 
+1. went from <a href="#TwoSignals">Ye Ole Town crier and church bells</a> to <a href="#Oscillator">oscillators</a>.
+
+1. Create an installer of shell scripts and Python code using AI generation based on spec code.
+
+1. Configure a computer that obtains time sync signals from three sources (<a href="#GPS">GPS satellites</a>, <a href="#NTP">NTP (Network Time Protocol) sync websites, and <a href="#TimeRadio">Time Radio Broadcasts</a>).
+
 1. <a href="#chrony">Using the chrony package</a>, analyze <a href="#Drift">drift</a>.
-1. <strong>Compensate</strong> for drift so that if time signals are delayed, servers can continue for a while longer.
 
-* <a href="#TwoSignals">Ye Ole Town crier and church bells</a>
-* <a href="#ManualSet">Manual Setting</a>
-* <a href="#Oscillator">Oscillator</a>
+1. <strong>Compensate</strong> for drift so that if time signals are delayed, servers can continue for a while longer.
 <br /><br />
 
 <hr />
