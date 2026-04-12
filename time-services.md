@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-04-12"
-lastchange: "26-04-12 v005 flowchart @time-services.md"
+lastchange: "26-04-12 v006 sources in flowchart @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
@@ -27,7 +27,7 @@ This article was hand-crafted based on AI responses.
 
 The lesson I created creating a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is that stand-alone servers need time sync servers.
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775976450/260412-time-services_eaadyl.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775976450/260412-time-services_eaadyl.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775976684/260412-time-services_maqcxn.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775976684/260412-time-services_maqcxn.png" /></a>
 
 This article describes how we:
 
