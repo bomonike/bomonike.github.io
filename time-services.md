@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-11"
-lastchange: "26-04-11 v001 new @time-services.md"
+date: "2026-04-12"
+lastchange: "26-04-12 v002 flowchart @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
@@ -25,17 +25,19 @@ This article was hand-crafted based on AI responses.
 
 ## Airgapped
 
-I created a set of isolated servers to do performance tests at GoDaddy, at Lockheed Skunkworks, and other companies. 
-Computers on boats that travel oceans without Starlink satellite receivers also need time servers.
+The lesson I created creating a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is that stand-alone servers need time sync servers.
 
-1. <a href="#TwoSignals">Ye Ole Town crier and church bells</a>
-1. <a href="#Drift">Drift in watches</a>
-1. <a href="#NTP">NTP (Network Time Protocol) sync service</a>
-1. <a href="#ManualSet">Manual Setting</a>
-2. <a href="#chrony">Drift analysis: chrony</a>
-3. <a href="#GPS">GPS</a>
-4. <a href="#TimeRadio">Time Radio Broadcast</a>
-5. <a href="#Oscillator">Oscillator</a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775973734/261012-time-services_fzfw40.png"><img alt="261012-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775973734/261012-time-services_fzfw40.png" /></a>
+
+This article describes how we:
+1. Created an installer of shell scripts and Python code using AI generation based on spec code.
+1. Configured a computer that obtains time sync signals from three sources (<a href="#GPS">GPS satellites</a>, <a href="#NTP">NTP (Network Time Protocol) sync websites, and <a href="#TimeRadio">Time Radio Broadcasts</a>).
+1. <a href="#chrony">Using the chrony package</a>, analyze <a href="#Drift">drift</a>.
+1. <strong>Compensate</strong> for drift so that if time signals are delayed, servers can continue for a while longer.
+
+* <a href="#TwoSignals">Ye Ole Town crier and church bells</a>
+* <a href="#ManualSet">Manual Setting</a>
+* <a href="#Oscillator">Oscillator</a>
 <br /><br />
 
 <hr />
