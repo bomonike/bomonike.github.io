@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-04-12"
-lastchange: "26-04-12 v003 flowchart @time-services.md"
+lastchange: "26-04-12 v004 flowchart @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
@@ -27,9 +27,10 @@ This article was hand-crafted based on AI responses.
 
 The lesson I created creating a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is that stand-alone servers need time sync servers.
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775975036/260412-time-services_egkcah.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775975036/260412-time-services_egkcah.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775975036/260412-time-services_egkcah.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1775975036/260412-time-services_egkcah.png" /></a>
 
-This article describes how we 
+This article describes how we:
+
 1. went from <a href="#TwoSignals">Ye Ole Town crier and church bells</a> to <a href="#Oscillator">oscillators</a>.
 
 1. Create an installer of shell scripts and Python code using AI generation based on spec code.
@@ -150,7 +151,7 @@ The u-blox NEO-M8N is a low-cost (~$15–30) GNSS module that generates both an 
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=lP_WaOgIwXg">VIDEO</a>: "Connect and Fire Up the Adafruit GPS with the Pi Pico W"
 
-* <a https://www.youtube.com/watch?v=CLsXnSOIYMg&pp=ugUEEgJlbg%3D%3D">How to add GPS to Your Raspberry Pi Pico | A Simple GPS Project</a> by Core Electronics
+* <a https://www.youtube.com/watch?v=CLsXnSOIYMg&pp=ugUEEgJlbg%3D%3D">How to add GPS to Your Raspberry Pi Pico - A Simple GPS Project</a> by Core Electronics
 
 
 ## PTP (Precision Time Protocol)
