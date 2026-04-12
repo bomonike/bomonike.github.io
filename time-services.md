@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-04-12"
-lastchange: "26-04-12 v007 chrony context in flowchart @time-services.md"
+lastchange: "26-04-12 v008 chrony context in flowchart @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
@@ -25,21 +25,26 @@ This article was hand-crafted based on AI responses.
 
 ## Airgapped servers
 
-The lesson I created creating a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is this: stand-alone servers (like most microwave ovens) need to be time sync'd.
+The lesson I created creating a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is this: stand-alone servers (like most microwave ovens) need to <strong>be time sync'd</strong>.
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776005207/260412-time-services_zjwiot.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776005207/260412-time-services_zjwiot.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776012487/260412-time-services_mgbn2s.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776012487/260412-time-services_mgbn2s.png" /></a>
 
 This article describes how we:
 
-1. went from <a href="#TwoSignals">Ye Ole Town crier and church bells</a> to <a href="#Oscillator">oscillators</a>.
+1. Operating sytems today usually automatically time sync computers based on <a href="#NTP">NTP (Network Time Protocol) websites and provide a System Settings GUI to configure that protocol. 
+1. Apple, Microsoft, and other major computer companies have their own NTP service, but <strong>ntp.org</strong> provides a consistent appproach across all technologies.
+1. Away from the internet, there are additional technologies to sync time. Many countries still operate <a href="#TimeRadio">radio stations that broadcast time codes</a> received by <strong>receivers</strong> in clocks so they adjust automatically for daylight savings.
+1. Since the 90's several governments have sent up <a href="#GPS">GPS (Global Positioning Satellites)</a> with accurate <a href="#Oscillator">oscillators</a> so receivers can sync more accurately than with radio signals. The two signals sent out by GPS satellites are similar to what historical <a href="#TwoSignals">Town crier and church bells</a>.
+1. Electronics that receive satellite and radio signals are low power and can be installed on small computers such as <strong>Raspberry Pi and ESP32 boards</strong>.
+1. On working servers, instead of relying purely on NTP, the <a href="#chrony">chrony</a> utility is installed to set time on each server. QUESTION: based on the three methods.
+1. To reduce drift when external time signals are delayed, servers can continue for a while longer by having chrony analyze the extent of drift, then <strong>compensate</strong> for that.
+1. The bash scripts that <strong>install</strong> programs tha were AI generated based on  specification code and a context frame of organizational standards.
 
-1. Create an installer of shell scripts and Python code using AI generation based on spec code.
+ <a href="#NTP">NTP (Network Time Protocol) sync websites, and 
 
-1. Configure a computer that obtains time sync signals from three sources (<a href="#GPS">GPS satellites</a>, <a href="#NTP">NTP (Network Time Protocol) sync websites, and <a href="#TimeRadio">Time Radio Broadcasts</a>).
+1. Using the chrony package</a>, analyze <a href="#Drift">drift</a>.
 
-1. <a href="#chrony">Using the chrony package</a>, analyze <a href="#Drift">drift</a>.
-
-1. <strong>Compensate</strong> for drift so that if time signals are delayed, servers can continue for a while longer.
+1. <strong>Compensate</strong> for 
 <br /><br />
 
 <hr />
