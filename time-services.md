@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-12"
-lastchange: "26-04-12 v008 chrony context in flowchart @time-services.md"
+date: "2026-04-13"
+lastchange: "26-04-13 v012 frequencies @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
@@ -25,9 +25,9 @@ This article was hand-crafted based on AI responses.
 
 ## Airgapped servers
 
-The lesson I created creating a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is this: stand-alone servers (like most microwave ovens) need to <strong>be time sync'd</strong>.
+When I created a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is this: stand-alone servers (like most microwave ovens) need to <strong>be time sync'd</strong>.
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776012487/260412-time-services_mgbn2s.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776012487/260412-time-services_mgbn2s.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776027295/260412-time-services_pzbjq7.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776027295/260412-time-services_pzbjq7.png" /></a>
 
 This article describes how we:
 
@@ -35,16 +35,11 @@ This article describes how we:
 1. Apple, Microsoft, and other major computer companies have their own NTP service, but <strong>ntp.org</strong> provides a consistent appproach across all technologies.
 1. Away from the internet, there are additional technologies to sync time. Many countries still operate <a href="#TimeRadio">radio stations that broadcast time codes</a> received by <strong>receivers</strong> in clocks so they adjust automatically for daylight savings.
 1. Since the 90's several governments have sent up <a href="#GPS">GPS (Global Positioning Satellites)</a> with accurate <a href="#Oscillator">oscillators</a> so receivers can sync more accurately than with radio signals. The two signals sent out by GPS satellites are similar to what historical <a href="#TwoSignals">Town crier and church bells</a>.
-1. Electronics that receive satellite and radio signals are low power and can be installed on small computers such as <strong>Raspberry Pi and ESP32 boards</strong>.
-1. On working servers, instead of relying purely on NTP, the <a href="#chrony">chrony</a> utility is installed to set time on each server. QUESTION: based on the three methods.
-1. To reduce drift when external time signals are delayed, servers can continue for a while longer by having chrony analyze the extent of drift, then <strong>compensate</strong> for that.
-1. The bash scripts that <strong>install</strong> programs tha were AI generated based on  specification code and a context frame of organizational standards.
-
- <a href="#NTP">NTP (Network Time Protocol) sync websites, and 
-
-1. Using the chrony package</a>, analyze <a href="#Drift">drift</a>.
-
-1. <strong>Compensate</strong> for 
+1. Electronics that receive satellite and radio signals are low power and can be installed on <a href="#Raspberry">Raspberry Pi and ESP32 boards</a>, which servers can use as an alternative NTP source.
+1. To reduce drift when external time signals are delayed, servers can continue for a while longer by having <strong>chrony</strong> analyze the extent of drift versus GPS time, then <strong>compensate</strong> for that drift.
+1. Instead of relying purely on <a href="#NTP">NTP</a>, the <a href="#chrony">chrony</a> utility is installed to set time on each server.
+1. The bash scripts that <strong>install</strong> programs are AI generated based on  specification code and a context frame of organizational standards. This is revolutionary transparency.
+1. This use if AI revolutionizes how sytems are created because changes to program code and configurations are not edited manually but by editing the specs - such as switching a time service from <strong>primary to secondary</strong> based on conditions. This enables systems to be completely recreated quickly. 
 <br /><br />
 
 <hr />
@@ -66,7 +61,7 @@ The British empire was able to defeat the Spanish was due in no small part to re
 
 <a href="#Drift"></a>
 
-## Drift in watches
+## Drift is bad
 
 Within a server, drift from actual time can cause serious errors because
 inaccurate time stamps make troubleshooting among a cluster more difficult.
@@ -87,18 +82,27 @@ The most accurate wristwatch which does not reference an external time signal - 
 
 ## GNSS
 
-The most accurate among all wristwatch in 2026 - the <a target="_blank" href="https://www.seikowatches.com/us-en/products/astron">"Seiko Astron GPS Solar 5X"</a> quartz chronograph - has a 3-year warranty but never needs a battery change because it powers itself by light source. The watch (listed at $2,500 USD) keeps accurate time by syncing with a GPS signal from space. So its date and daylight savings are adjusted automatically until the year 2100. However, the watch references the MICHIBIKI 4-satellite QZSS (Quasi-Zenith Satellite System) constellation in quasi-zenith orbits (QZO) above Japan.
+The most accurate among all wristwatch in 2026 - the <a target="_blank" href="https://www.seikowatches.com/us-en/products/astron">"Seiko Astron GPS Solar 5X83"</a> quartz chronograph - has a 3-year warranty but never needs a battery change because it powers itself by light source. Models SSH001, SSH003, SSH006, and SSH007 are a rather wide 42.9 mm diameter and 12.2 mm thick (thinner than most Rolex watches). It shows <a target="_blank" href="https://youtu.be/tJcTleq08wo?si=cU_vupWIVVKUf6mh">dual-time</a>. The watch (listed at $2,500 USD) keeps accurate time by syncing with a GPS signal twice a day. So its date and daylight savings are adjusted automatically until the year 2100. 
 
-NEXT: That is not a watch to use on other parts of the world.
+NEXT: That is not a watch to use on the Southern Hemisphere?
 
-There are several GNSSs (Global Navigation Satellite Systems) circling the earth. 
-   * GPS — the US system, the original and most universal
-   * BDS — BeiDou, China's global system (the "B" stands for BeiDou in Chinese)
-   * QZSS — Japan's Quasi-Zenith Satellite System, a small regional constellation that sits nearly overhead Japan/Asia-Pacific at high elevation angles, which helps in urban canyons where low-angle satellites get blocked by buildings
-   * Russia
+GNSS (Global Navigation Satellite Systems) is the generic term for several independent constallations from various countries. A "Multi-GNSS" receiver can listen to multiple satellite constellations simultaneously, getting fixes from more satellites for better accuracy and reliability:
+   * GPS — refers to the US system, the original and most universal (built by Lockheed Martin). 27-36 satellites at medium altitude provides worldwide coverage.
+   * GLONASS - Russia's 24-30 satellites
+   * Gallileo - EU's 26-30 satellites
+   * BDS — BeiDou, China's global system (the "B" stands for BeiDou in Chinese) 36 SVs
+   * QZSS — Japan's Quasi-Zenith Satellite System, a small regional constellation that sits nearly overhead Japan/Asia-Pacific at high elevation angles, which helps in urban canyons where low-angle satellites get blocked by buildings. MICHIBIKI 4-satellite QZSS (Quasi-Zenith Satellite System) constellation in quasi-zenith orbits (QZO) above Japan.
+   * IRNSS - India's 5+ satellites
+   * SBAS 14-20 satellites
    <br /><br />
 
-A "Multi-GNSS" receiver can listen to multiple independent satellite constellations simultaneously, getting fixes from more satellites for better accuracy and reliability:
+<a target="_blank" href="https://www.youtube.com/watch?v=qJ7ZAUjsycY&t=6m">VIDEO</a>: GPS adoption history & CDMA:<br />
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776087839/260413-gnss-spectrum_qdscjf.png"><img alt="260413-gnss-spectrum.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776087839/260413-gnss-spectrum_qdscjf.png" /></a>
+
+
+<a target="_blank" href="https://youtube.com/watch?v=qJ7Z AUjsycY&t=24m58s">VIDEO</a>: Military frequencies (in red) are spread to resist 
+<a target="_blank" href="https://youtube.com/shorts/h0-r9K1ylsE?si=wyFf_Meemc3UxMCq">VIDEO</a>:
+GPS signals can be <a target="_blank" href="https://www.youtube.com/watch?v=sAjWJbZOq6I&pp=ugUEEgJlbg%3D%3D">jamming</a> within conflict zones (such as the Strait of Hermuz). 
 
 
 
@@ -115,32 +119,42 @@ That pairing is what makes a ~$15 GPS module competitive with a rack-mount strat
 
 chrony uses both together: NMEA tells it what second it is, PPS tells it exactly when that second begins.
 
+<a target="_blank" href="https://www.amazon.com/stores/WelcometoGeekstory/page/52ED32B5-677E-461A-BB08-22E05B712D97?lp_asin=B078Y2WNY6&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&bl_grd_status=override">Some GNSS receivers</a>, such as the Gookstory USB plugs, do not provide 1PPS signals, so are less accurate.
+
 
 
 ### GPS Time Servers
 
-For a complete server with case, motherboard, 1575.42 MHz GPS patch antenna with 5-meter RG174 Cable, and rubber grips for device physical stability, the <a target="_blank" href="https://timemachinescorp.com/gps-time-servers-accessories/">$349.99 "GPS NTP Network Time Server (TM1000A)"</a> from timemachinescorp.com has a 12 volt power supply.
+For a complete server with case, motherboard, L1 (1575.42 MHz carrier) GPS patch antenna with 5-meter RG174 Cable, and rubber grips for device physical stability, the <a target="_blank" href="https://timemachinescorp.com/gps-time-servers-accessories/">$349.99 "GPS NTP Network Time Server (TM1000A)"</a> from timemachinescorp.com has a 12 volt power supply.
+
+The miliary-use L2 frequency (1227.6 MHz) is more accurate. 
+More modern satellites use the L5 (1545.42) frequency.
 
 
 <a name="DGPS"></a>
 
-### Differential GPS)
+### Differential GPS
 
 DGPS (Differential GPS) — a ground-based correction technique. A reference station at a known precise location measures GPS errors (atmospheric delay, clock drift, etc.) and broadcasts corrections to nearby receivers. With these errors removed, a receiver can achieve accuracies up to 10 centimeters. The limitation is range — it works best within a few hundred kilometers of the reference station.
 
-Wide-area DGPS are delivered via geostationary satellites instead of ground radio. Although not relevant for time keeping, for sub-meter GNSS position accuracy, SBAS (Satellite-Based Augmentation System) correction signals refine the receiver's understanding of atmospheric delays. It improves accuracy and reliability by correcting signal measurement errors and providing integrity information, alerting users within a few seconds if positioning error becomes too large. They're operated by each country:
-   * WAAS — US Space Force satellites 
-   * EGNOS — Europe, operated by the EU
+Wide-area DGPS are delivered via geostationary satellites instead of ground radio. Although not relevant for time keeping, for sub-meter GNSS position accuracy, SBAS (Satellite-Based Augmentation System) correction signals refine the receiver's understanding of atmospheric delays. It improves accuracy and reliability by correcting signal measurement errors and providing integrity information, alerting users within a few seconds if positioning error becomes too large.
+A separate SBAS is operated by each country instead of ground-based beacons:
+   * WAAS (Wide Area Augmentation System) for the US-FAA uses SBAS deployed in 2003 on every aircraft.
+   * EGNOS — EU
    * MSAS — Japan, operated by Japan's civil aviation bureau
    * GAGAAN — India (GPS Aided GEO Augmented Navigation)
-   * GLONASS (Global Navigation Satellite System) by Russia  consists of 24 satellites in three orbital planes at about 19,100 km altitude and 64.8° inclination, providing strong signal availability in high northern latitudes. Development began in the 1970s, with the first satellite launched in 1982 and full operational status achieved in the mid-1990s; signals are transmitted on L1 and L2 frequencies for standard and high-precision use.
+   * GLONASS (Global Navigation Satellite System) by Russia consists of 24 satellites in three orbital planes at about 19,100 km altitude and 64.8° inclination, providing strong signal availability in high northern latitudes. Development began in the 1970s, with the first satellite launched in 1982 and full operational status achieved in the mid-1990s; signals are transmitted on L1 and L2 frequencies for standard and high-precision use.
    <br /><br />
 
+
+<a name="Raspberry"></a>
 
 ### Raspberry Pi/Pico GPS modules
 
 The Raspberry and Pico boards do not come with an accurate clock.
  
+For something reliable long-term, most people end up with a Pi 4 with Uputronics HAT ($100-120 USD).
+
 <a target="_blank" href="https://www.youtube.com/watch?v=dxtVyDXvIBE">VIDEO</a>: The $260 U-blox Neo-6 GPS receiver chip (made by ocplap.com) has a tiny OXCO (Oven-controlled Crystal Oscillator) which heats an accurate clock chip to 100 degreesC.
 timecardmini.com
 <a target="_blank" href="https://www.u-blox.com/en/product/u-center">u-center software</a> 
@@ -148,7 +162,7 @@ a spin-off from the Swiss Federal Institute of Technology in Zurich (ETH),
 
 But you can get a GPS/clock chip on a HAT (Hardware Attached on Top) board for a micro computer such as Raspberry Pi or Pico. But you would have to also need to buy a case, motherboard, antenna, then solder them together.
 
-The <a target="_blank" href="https://www.amazon.com/Garmin-18x-LVC-Navigator-Unit/dp/B0016O3T7A">$63.99 Garmin 18x LVC GPS receiver</a> connects withe autos and trucks. It is offered in three different cable configurations: A style USB, DB 9 pin serial with 12 volt cigarette lighter adapter /PC, or bare wire /LVC.  It has 12 parallel channel, WAAS enabled GPS receiver is available in either CMOS level serial or USB 2.0 full speed versions, and comes with an integrated magnetic base. The PC and LVC versions both default to output data in the industry standard NMEA 0183 data format, but may also be user programmed to output data in the GARMIN proprietary format. The USB version produces data only in the GARMIN proprietary format. All three versions of the GPS 18 come complete with non volatile memory for storage of configuration information, a real time clock, and raw measurement output data for sophisticated customer applications. The LVC version additionally provides a pulse per second logic level output whose rising edge is aligned to the UTC second within 1 microsecond. The USB 2.0 full speed version of the GPS18 is also compatible with USB 1.1 full speed hosts. QUESTION: Connection to the Raspberry Pi?
+The <a target="_blank" href="https://www.amazon.com/Garmin-18x-LVC-Navigator-Unit/dp/B0016O3T7A">$63.99 Garmin 18x LVC GPS receiver</a> connects withe autos and trucks. It is offered in three different cable configurations: A style USB, DB 9 pin serial with 12 volt cigarette lighter adapter /PC, or bare wire /LVC.  It has 12 parallel channel, WAAS-enabled GPS receiver is available in either CMOS level serial or USB 2.0 full speed versions, and comes with an integrated magnetic base. The PC and LVC versions both default to output data in the industry standard NMEA 0183 data format, but may also be user programmed to output data in the GARMIN proprietary format. The USB version produces data only in the GARMIN proprietary format. All three versions of the GPS 18 come complete with non volatile memory for storage of configuration information, a real time clock, and raw measurement output data for sophisticated customer applications. The LVC version additionally provides a pulse per second logic level output whose rising edge is aligned to the UTC second within 1 microsecond. The USB 2.0 full speed version of the GPS18 is also compatible with USB 1.1 full speed hosts. QUESTION: Connection to the Raspberry Pi?
 
 For a Raspberry Pi the standard stack is gpsd → chrony with both a SHM refclock (NMEA) and a PPS /dev/pps0 refclock locked to it. For ESP32 there's no OS clock to discipline, so you use TinyGPS++ to decode NMEA and a GPIO interrupt on the PPS pin to precisely timestamp the second boundary in IRAM_ATTR.
 
@@ -245,7 +259,7 @@ PROTIP: Instead of ntpd, chrony is now the default on all major distros becuase 
     ==> Pouring chrony--4.8.arm64_sequoia.bottle.tar.gz
     🍺  /opt/homebrew/Cellar/chrony/4.8: 11 files, 866.9KB
    ```
-1. See https://chrony-project.org
+1. See <a target="_blank" href="https://chrony-project.org">https://chrony-project.org</a>
    
 1. Set chrony as an NTPv4 (RFC 5905) server and peer to provide a local time service to other computers in the network. 
    ```bash
@@ -446,17 +460,11 @@ To add precision time and location to most Raspberry Pi boards (anything with th
     Fix status LED blinks to let you know when the GPS has determined the current coordinates
 
 
+
 ## No-wire USB option (~$10-15): 
 
-The VK-162 USB dongle is plug-and-play on Linux. No wiring required.
+The <a target="_blank" href="https://www.amazon.com/G-Mouse-Navigation-Naroote-External-Receiver/dp/B0C3WKL541/">$14.89 VK-162 USB dongle</a> is plug-and-play on Linux. No wiring required.
+It has a built-in RTC crystal and picofarad capacitor.
 
-WARNING: It has no PPS pin, so its accuracy tops out around 1–10 ms rather than sub-microsecond. So for sub-microsecond accuracy you need a GPIO-connected GPS module with a PPS output.
+It has no PPS pin so its accuracy tops out around <strong>1–10 ms</strong> rather than sub-microsecond. For sub-microsecond accuracy you need a GPIO-connected GPS module with a PPS output.
 
-For something reliable long-term, most people end up with a Pi 4 with Uputronics HAT ($100-120 USD).
-
-
-## Time
-
-$549.99
-
-The gold standard is a GPS receiver (even a cheap u-blox module) combined with chrony using a 1 PPS signal. This gives you ~microsecond accuracy with no network dependency at all. For multi-server environments, one GPS-disciplined stratum-1 box distributes time to the rest over your LAN via NTP or PTP.
