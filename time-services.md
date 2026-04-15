@@ -1,11 +1,11 @@
 ---
 layout: post
-date: "2026-04-13"
-lastchange: "26-04-13 v012 frequencies @time-services.md"
+date: "2026-04-14"
+lastchange: "26-04-14 v014 frequencies @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
-excerpt: "How to keep servers synchronized in case satellites and radio signals fail"
+excerpt: "How to keep local servers synchronized in case satellites and radio signals fail"
 tags: [IoT, Meshtastic, Time, AI, Anthropic, Claude]
 image:
 # feature: pic data center slice 1900x500.jpg
@@ -31,16 +31,33 @@ When I created a set of isolated servers (to do performance tests) at GoDaddy, a
 
 This article describes how we:
 
-1. Operating sytems today usually automatically time sync computers based on <a href="#NTP">NTP (Network Time Protocol) websites and provide a System Settings GUI to configure that protocol. 
-1. Apple, Microsoft, and other major computer companies have their own NTP service, but <strong>ntp.org</strong> provides a consistent appproach across all technologies.
-1. Away from the internet, there are additional technologies to sync time. Many countries still operate <a href="#TimeRadio">radio stations that broadcast time codes</a> received by <strong>receivers</strong> in clocks so they adjust automatically for daylight savings.
-1. Since the 90's several governments have sent up <a href="#GPS">GPS (Global Positioning Satellites)</a> with accurate <a href="#Oscillator">oscillators</a> so receivers can sync more accurately than with radio signals. The two signals sent out by GPS satellites are similar to what historical <a href="#TwoSignals">Town crier and church bells</a>.
+1. Computers by themselves off the internet are known to have time clocks that get slower or faster by <strong>several seconds per day</a>. That <strong>drift</strong> adds up over time, and may make it seem like trace log from one computer shows an event occurred ahead of another computer when the opposite is true.
+1. If you wear a manual watch such as a Rolex, you know that you have to adjust the time for the number of days each month and for daylight savings time. That's a hassle.
+1. But there are several ways each machine can <strong>automatically obtain</strong> the correct time.
+1. Operating system vendors provide a <a href="#MacSystemSettings">System Settings GUI</a> and CLI commands to configure time settings such as Time Zone and Daylight Savings.
+1. Most governments and global enterprises set their servers to <strong>UTC</strong> (Coordinated Universal Time) aka <strong>GMT</strong> (Greenwich Mean Time) at the Observatory in London, UK.
+
+1. Apple, Microsoft, and other major operating systems now recognize time signals sent over the <strong>internet</strong> as <a href="#NTP"><strong>NTP</strong> (Network Time Protocol)</a> to recognize  (based on <a target="_blank" href="https://en.wikipedia.org/wiki/Network_Time_Protocol">RFC 5905 v4 standard</a> <a target="_blank" href="https://www.youtube.com/watch?v=DMuuAKr84aE">VIDEO</a>) 
+1. NTP enable clocks to be accurate within a few <strong>milliseconds</strong> of the reference Coordinated Universal Time (UTC).
+1. Internet utilities such as Google, Cloudflare, and others also provide their own NTP time service.
+1. However, <strong>pool.ntp.org</strong> has the largest pool of time servers to resist Denial of Service attacks.
+1. The <strong>jitter</strong> latency from NTP signals traveling over the internet (as UDP frames) provide <strong>accuracy</strong> of <strong>10-100 milliseconds</strong> versus the reference time.
+
+1. For accuracy of <strong>~10–100 nanoseconds</strong>, get a "<strong>Time Machine</strong>" box that uses the <strong>PTP</strong> (Precision Time Protocol) to broadcast time syncs locally based on its onboard (OCXO oscillators) that vibrate so consistently that it maintains holdover accuracy (without internet) of 34µs after 19 hours providing a common time signal to all local servers.
+
+1. Rather than routing through the internet, antennas can receive timing signals from <strong>GNSS (Global Navigation Satellite Systems)</strong> that include <a href="#GPS">GPS (Global Positioning Satellites)</a> sent up by the United States. The satellites transmit <strong>Time of Day</strong> sentences in a format defined by the <a href="#NMEA">NMEA</a> (National Marine Electronics Association).
+1. Accuracy from satellites in space is about <strong>~5-50 ms</strong>, slower that going throught than NTP going thru the internet.
+
 1. Electronics that receive satellite and radio signals are low power and can be installed on <a href="#Raspberry">Raspberry Pi and ESP32 boards</a>, which servers can use as an alternative NTP source.
+
 1. To reduce drift when external time signals are delayed, servers can continue for a while longer by having <strong>chrony</strong> analyze the extent of drift versus GPS time, then <strong>compensate</strong> for that drift.
 1. Instead of relying purely on <a href="#NTP">NTP</a>, the <a href="#chrony">chrony</a> utility is installed to set time on each server.
 1. The bash scripts that <strong>install</strong> programs are AI generated based on  specification code and a context frame of organizational standards. This is revolutionary transparency.
 1. This use if AI revolutionizes how sytems are created because changes to program code and configurations are not edited manually but by editing the specs - such as switching a time service from <strong>primary to secondary</strong> based on conditions. This enables systems to be completely recreated quickly. 
 <br /><br />
+
+1. Many countries still operate <a href="#TimeRadio">radio stations that broadcast time codes</a> received by <strong>receiver clocks</strong> that adjust automatically for daylight savings.
+
 
 <hr />
 
@@ -99,19 +116,21 @@ GNSS (Global Navigation Satellite Systems) is the generic term for several indep
 <a target="_blank" href="https://www.youtube.com/watch?v=qJ7ZAUjsycY&t=6m">VIDEO</a>: GPS adoption history & CDMA:<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776087839/260413-gnss-spectrum_qdscjf.png"><img alt="260413-gnss-spectrum.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776087839/260413-gnss-spectrum_qdscjf.png" /></a>
 
+"L1" frequency was around 1575.42 MHz.
+Most modern satellites use "L5" frequencies at 1545.42 MHz (at right).
+The miliary-use "L2" frequencies at 1227.60 MHz for more accuracy.
+Military frequencies (<a target="_blank" href="https://youtube.com/watch?v=qJ7ZAUjsycY&t=24m58s">shown in red above</a>) are spread to resist <a target="_blank" href="https://youtube.com/shorts/h0-r9K1ylsE?si=wyFf_Meemc3UxMCq">VIDEO</a>:
+GPS signals being <a target="_blank" href="https://www.youtube.com/watch?v=sAjWJbZOq6I&pp=ugUEEgJlbg%3D%3D">jammed</a> within conflict zones (such as the Strait of Hermuz).
 
-<a target="_blank" href="https://youtube.com/watch?v=qJ7Z AUjsycY&t=24m58s">VIDEO</a>: Military frequencies (in red) are spread to resist 
-<a target="_blank" href="https://youtube.com/shorts/h0-r9K1ylsE?si=wyFf_Meemc3UxMCq">VIDEO</a>:
-GPS signals can be <a target="_blank" href="https://www.youtube.com/watch?v=sAjWJbZOq6I&pp=ugUEEgJlbg%3D%3D">jamming</a> within conflict zones (such as the Strait of Hermuz). 
 
-
+<a name="NMEA"></a>
 
 ## GPS NMEA & 1PPS
 
 Each GPS satellite has a very accurate <strong>caesium atomic clock</strong>. 
 
 As a reference source, GPS send two signals, neither is useful without the other:
-   * A NMEA (National Marine Electronics Association) sentence is sent once per second, containing a UTC time stamp (epoch). But its slow 5–50 ms of inherent fuzziness.
+   * A NMEA (National Marine Electronics Association) sentence is sent once per second, containing a UTC ToD (Time of Day) stamp (epoch). But it's slow at ~   5–50 ms of inherent fuzziness.
    * 1PPS (Pulse Per Second) is like a church bell, sent as a 3.5V spike thru a GPIO pin at ~10–100 nanoseconds of accuracy. 
    <br /><br />
 
@@ -126,9 +145,6 @@ chrony uses both together: NMEA tells it what second it is, PPS tells it exactly
 ### GPS Time Servers
 
 For a complete server with case, motherboard, L1 (1575.42 MHz carrier) GPS patch antenna with 5-meter RG174 Cable, and rubber grips for device physical stability, the <a target="_blank" href="https://timemachinescorp.com/gps-time-servers-accessories/">$349.99 "GPS NTP Network Time Server (TM1000A)"</a> from timemachinescorp.com has a 12 volt power supply.
-
-The miliary-use L2 frequency (1227.6 MHz) is more accurate. 
-More modern satellites use the L5 (1545.42) frequency.
 
 
 <a name="DGPS"></a>
@@ -175,11 +191,19 @@ The u-blox NEO-M8N is a low-cost (~$15–30) GNSS module that generates both an 
 
 ## PTP (Precision Time Protocol)
 
-For millisecond accuracy, the newer PTP (Precision Time Protocol) should be used instead of NTP.
+<a target="_blank" href="https://www.youtube.com/watch?v=tF48vjVxUO0">VIDEO</a>:
+For millisecond accuracy, especially among logs, the newer PTP (Precision Time Protocol at IEEE 1588-2008) are used instead of NTP
+to keep servers at about <strong>200 nanoseconds</strong> of the reference clock (a fraction of NTP).
 
-Dedicated servers in PTP mode run within about 200 nanoseconds of the reference clock (a fraction of NTP).
-
-PTP provides resiliecy to jitter when using proper hardware. The jitter for PTP sources is kept to a tight +/- 500 nanoseconds.
+PTP provides resiliency to <strong>jitter</strong> when using proper hardware. The jitter for PTP sources is kept to a tight +/- 500 nanoseconds.
+   * <a target="_blank" href="https://www.redhat.com/en/blog/combining-ptp-ntp-get-best-both-worlds">PTP & NTP together details</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=RvnG-ywF6_s">by Jeff Geerling</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=N2ZbkCtpWFA">by Kevin Staton</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=mWU99wQNwf0&pp=0gcJCdMKAYcqIYzv">JupyterLab Notebook coordinating cameras</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=-8DQ6jqTiQM">by Kevin Wallace</a> about follow-up syncs to calculate offsets to sync GrandMaster Transparent to Ordinary clocks.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=wPGRXQYDAyQ">by ATIS</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=pCNvHlhcGJU">by Cisco</a>
+   <br /><br />
 
 When a server ultimately loses its external reference and begins to drift, PTP has a massive advantage simply because its starting baseline is astronomically tighter.
 
@@ -217,6 +241,8 @@ PROTIP: Specify the NTP Pool ("<strong>pool.ntp.org</strong>") to use GeoDNS rou
 
 Google uses "leap smearing" to spread the leap second over 24 hours to avoid disruptive events.
 
+<a name="MacSystemSettings"></a>
+
 1. To <a target="_blank" href="https://support.apple.com/zh-sg/guide/mac-help/mchlp2996/mac">manually sync the time on macOS</a>:
    1. Go to the System Settings app  on your Mac.
    1. Click General  in the sidebar, then click Date & Time on the right.
@@ -228,7 +254,21 @@ Google uses "leap smearing" to spread the leap second over 24 hours to avoid dis
    1. Close the Settings app.
    <br /><br />
 
+   Alternately, CLI: scutil --ntp
+
+1. sntp is a tool that queries NTP servers, and localhost refers to "this machine". The type of response varies depending on which macOS system version you are using, but either of the following responses indicate success:
+
+   ```bash
+   sntp localhost
+   ```
+
+   http://www.openntpd.org/
+
 QUESTION: What about if external NTP service is not available?
+
+References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=BAo5C2qbLq8">by Computerphile</a>
+   <br /><br />
 
 
 <a name="chrony"></a>
