@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-04-15"
-lastchange: "26-04-15 v020 all classes @anthropic-certs.md"
+lastchange: "26-04-15 v023 bottom version @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -29,7 +29,7 @@ This article was hand-crafted based on AI responses.
 
 ## Anthropic the Company
 
-1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a><br />-- the corporate marketing landing page.
+1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a> - the corporate marketing landing page.
 
    Notice "Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks."
 
@@ -38,6 +38,8 @@ This article was hand-crafted based on AI responses.
    "Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems."
 
    3M followers. 501-1K employees.
+
+1. On <a target="_blank" href="https://www.glassdoor.com/Reviews/Anthropic-Reviews-E8109027.htm">Glassdoor.com</a>, <strong>86%</strong> of Anthropic employees would recommend to a friend.
 
 1. Anthropic was founded in 2021 by seven former employees of OpenAI, including now CEO Dario Amodei was OpenAI's Vice President of Research.
 
@@ -69,8 +71,9 @@ Claude competes with agentic coding tools (aka coding agent IDEs) that read a co
    * OpenAI's Codex <a target="_blank" href="https://www.youtube.com/watch?v=kFS6z_97Ohc&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
    * OpenCode
    * Perplexity
-   * Google Gemini CLI
+   * Google Gemini Gemma & Antigravity IDE
    * Mistral AI
+   * Devon (merged)
    <br /><br />
 
 
@@ -78,7 +81,7 @@ Claude competes with agentic coding tools (aka coding agent IDEs) that read a co
 
 ## Claude Products
 
-<a target="_blank" href="https://status.claude.com/uptime/"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a>REMEMBER: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. <a target="_blank" href="https://status.claude.com/uptime/">Uptime</a> shows Anthropic's own production environments:
+<a target="_blank" href="https://status.claude.com/uptime/"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a>REMEMBER: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. <a target="_blank" href="https://status.claude.com/uptime/">Uptime</a> shows Anthropic's own production environments:
 
 * <a target="_blank" href="https://claude.ai/">claude.ai</a> website reached on internet browser.
 
@@ -168,6 +171,14 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 * <strong>Claude Agent SDK</strong> are used to build agentic AI systems beyond coding assistance.
 
 * <a href="#Rules">Rules</a>
+
+<a name="Quizzes"></a>
+
+## Quizzes
+
+* <a target="_blank" href="https://quizlet.com/1139139502/comprehensive-guide-to-claude-ai-features-applications-and-best-practices-flash-cards/">127 terms</a>
+* <a target="_blank" href="https://quizlet.com/1063707525/ai-fluency-claude-anthropic-flash-cards/">14 terms: "AI Fluency"</a>
+
 
 
 <a name="Productivity"></a>
@@ -1067,6 +1078,10 @@ hooks/todo-enforcer.config.json
 
 ## Python Project
 
+<a target="_blank" href="https://www.linkedin.com/posts/goyalshalini_every-developer-using-claude-code-makes-the-activity-7445719686350184448-pX5n/">BLOG</a>: Plan > Scope > Execute > Verify
+
+Plan: "Explain how you'd solve X. No code yet."
+
 From <tt>uv init</tt> using prompt:
 
 ```
@@ -1170,7 +1185,14 @@ my-python-app/
    ```
    "env": {
      "NODE_ENV": "development",
+     "GIT_MAIN_BRANCH": "main",
      "PYTHONPATH": "./src:./tests"
+     "REPOSITORY_NAME": "data-ai-tickets-template",
+     "DATABASE": "ANALYTICS",
+     "WAREHOUSE": "DATA_ANALYSIS",
+     "SCHEMA": "REPORTING",
+     "DATABRICKS_PROFILE_PROD": "production",
+     "DATABRICKS_PROFILE_DEV": "development"
    },
    ```
 1. Set shell program (not zsh) for compatibility:
@@ -1216,11 +1238,14 @@ my-python-app/
    ```
    "permissions" : {
      "deny": [
+       "Read(.env)",
+       "Read(.env.*)",
        "Read(**/.env)",
        "Read(**/.env.*)",
        "Read(./.env)",
        "Read(./.env.*)",
        "Read(./secrets/**)"
+       "Read(credentials/**)",
        "Read(**/*.key)",
        "Read(**/*.pem)",
      ]
@@ -1234,20 +1259,34 @@ my-python-app/
        "Bash(rm -rf *)"
        "Bash(curl *)",
        "Bash(wget *)",
+       "Delete",
+       "Bash(git push --force:*)",
+       "Bash(git push -f:*)",
+       "Bash(git reset --hard:*)",
      ]
    ```
 1. Allow to not need user confirmation:
    ```
     "allow": [
+      "Read",
+      "Write(./projects/**)",
+      "Write(./documentation/**)",
+      "Write(./videos/**)",
+
       "Bash(brew install *)",
       "Bash(brew upgrade *)",
       "Bash(cat *)",
       "Bash(echo *)",
-      "Bash(git status)",
-      "Bash(git diff *)",
-      "Bash(git log *)",
+      "Bash(pwd)",
+      "Bash(tree:*)",
+
       "Bash(git add *)",
+      "Bash(git branch:*)",
       "Bash(git commit *)",
+      "Bash(git diff *)",
+      "Bash(git show:*)",
+      "Bash(git status)",
+      "Bash(git log *)",
       "Bash(git push)",
       "Bash(ls *)",
       "Bash(npm run *)",
@@ -1255,11 +1294,13 @@ my-python-app/
       "Bash(poetry install)",
       "Bash(poetry run *)",
       "Bash(python -m *)",
+      "Read(**/requirements*.txt)",
+      "Read(**/pyproject.toml)"
       "Bash(uv *)",
       "Bash(ruff check:*)"
       "Read(**/*.py)",
-      "Read(**/requirements*.txt)",
-      "Read(**/pyproject.toml)"
+      "Glob",
+      "Grep"
     ]
    ``` 
 1. Useful for debugging if hooks are misbehaving:
@@ -1294,6 +1335,23 @@ my-python-app/
    ```
    "sessionPersistenceDays": 0,
    ```
+1. Force push of feature branch instead of main branch: <a target="_blank" href="https://www.youtube.com/watch?v=WKt28ytMl3c">VIDEO</a> from <a target="_blank" href="https://github.com/kyle-chalmers/data-ai-tickets-template/blob/main/.claude/settings.json">Kyle Chalmers' Github</a>:
+   ```
+   "hooks": {
+      "PreToolUse": [
+         {
+         "matcher": "Bash(git commit:*)",
+         "hooks": [
+            {
+               "type": "command",
+               "command": "bash -c 'if [ $(git branch --show-current) = \"main\" ]; then echo \"ERROR: Cannot commit to main branch. Create a feature branch first.\" && exit 1; fi'"
+            }
+         ]
+         }
+      ]
+   }
+   ```
+
 References:
    * <a target="_blank" href="https://www.youtube.com/watch?v=pDoBe4qbFPE&pp=ygUUY2xhdWRlIHNldHRpbmdzLmpzb24%3D">12 Hidden Settings To Enable In Your Claude Code Setup</a>
 
