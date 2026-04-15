@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-18"
-lastchange: "26-03-18 v099 HDM def :acronyms.md"
+date: "2026-04-15"
+lastchange: "26-04-15 v101 MEO GEO IGSO @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -557,6 +557,7 @@ created: "2024-12-28"
 *	GCM	=	Galois/Counter Mode	(mode of operation for symmetric-key cryptographic block ciphers)
 *	GCP	=	Google Cloud Platform
 *	GDPR	=	General Data Protection Regulation	(EU Regulation 2016/679)
+* GEO = Geostationary Earth Orbit (35,786 km above equator - used by some BeiDou satellites)
 *	GEOINT	=	Geospatial Intelligence	(from analysis and visualization of security activities on a map)
 *	GG	=	Good Game (gamer digital handshake to convey sportsmanship)
 * GGML = GPT-Generated Model Language (Early Tensor library designed for machine learning large models at high performance)
@@ -672,6 +673,7 @@ created: "2024-12-28"
 *	IYDMMA	=	If you don't mind me asking (chat slang)
 * IFS	=	Internal Field Separator (to define character used to split strings in Bash shell scripts)
 *	IGA	=	Identity Governance and Administration
+* IGSO = Inclined Geosynchronous Orbit (at GEO but tilted for figure-8 coverage for strong high‑elevation signals)
 *	IGPT	=	Insulated Gate Bipolar Transistor
 * IGW	=	Internet Gateway
 * IIFE = Immediately Invoked Function Expression (by Webpack)
@@ -829,6 +831,7 @@ created: "2024-12-28"
 *	MEF	=	Mission Essential Functions
 * MEI = Merit, Excellence, and Intelligence (anti DEI)
 *	MELT	=	Metrics + Errors + Traces + Logs (for Observability)
+* MEO = Medium Earth Orbit (about 20,200 km - used by GPS satellites)
 * MES = Manufacturing Execution System (track material movement through the shop floor)
 *	MFA	=	Multi-Factor Authentication	(security)
 * MFS = Mutable File System (to read and write files on web3 IPFS)
@@ -953,6 +956,7 @@ created: "2024-12-28"
 *	OAI	=	Origin Access Identity (virtual identity used to require users to access content via AWS CloudFront URl instead of S3 URL)
 *	OASIS	=	Organization for the Advancement of Structured Information Standards (defined CSAF and CVRF)
 *	OCI	=	Container Open Initiative	(to replace Docker Compose and Docker containers)
+* OCLP = <a target="_blank" href="https://dortania.github.io/OpenCore-Legacy-Patcher/">OpenCore Legacy Patcher</a> (USB setup for bootable macOS Hackintosh)
 *	OCSP	=	Online Certificate Status Protocol
 *	OCM	=	Organizational Change Management
 *	ODNI	=	Office of the Director of National Intelligence
