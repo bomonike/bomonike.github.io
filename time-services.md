@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-14"
-lastchange: "26-04-14 v014 frequencies @time-services.md"
+date: "2026-04-15"
+lastchange: "26-04-15 v015 bottom ver @time-services.md"
 url: "https://bomonike.github.io/time-services"
 file: "time-services"
 title: "Time Services of local servers"
@@ -27,11 +27,11 @@ This article was hand-crafted based on AI responses.
 
 When I created a set of isolated servers (to do performance tests) at GoDaddy, at Lockheed Skunkworks, and on boats without Starlink is this: stand-alone servers (like most microwave ovens) need to <strong>be time sync'd</strong>.
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776027295/260412-time-services_pzbjq7.png"><img alt="260412-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776027295/260412-time-services_pzbjq7.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776226903/260414-time-services_t04fk1.png"><img alt="260414-time-services.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/q_auto/f_auto/v1776226903/260414-time-services_t04fk1.png" /></a>
 
 This article describes how we:
 
-1. Computers by themselves off the internet are known to have time clocks that get slower or faster by <strong>several seconds per day</a>. That <strong>drift</strong> adds up over time, and may make it seem like trace log from one computer shows an event occurred ahead of another computer when the opposite is true.
+1. Computers by themselves off the internet are known to have time clocks that get slower or faster by several seconds per day! That <strong>drift</strong> adds up over time, and may make it seem like trace log from one computer shows an event occurred ahead of another computer when the opposite is true.
 1. If you wear a manual watch such as a Rolex, you know that you have to adjust the time for the number of days each month and for daylight savings time. That's a hassle.
 1. But there are several ways each machine can <strong>automatically obtain</strong> the correct time.
 1. Operating system vendors provide a <a href="#MacSystemSettings">System Settings GUI</a> and CLI commands to configure time settings such as Time Zone and Daylight Savings.
@@ -103,11 +103,11 @@ The most accurate among all wristwatch in 2026 - the <a target="_blank" href="ht
 
 NEXT: That is not a watch to use on the Southern Hemisphere?
 
-GNSS (Global Navigation Satellite Systems) is the generic term for several independent constallations from various countries. A "Multi-GNSS" receiver can listen to multiple satellite constellations simultaneously, getting fixes from more satellites for better accuracy and reliability:
-   * GPS — refers to the US system, the original and most universal (built by Lockheed Martin). 27-36 satellites at medium altitude provides worldwide coverage.
-   * GLONASS - Russia's 24-30 satellites
-   * Gallileo - EU's 26-30 satellites
-   * BDS — BeiDou, China's global system (the "B" stands for BeiDou in Chinese) 36 SVs
+GNSS (Global Navigation Satellite Systems) is the generic term for several independent constallations from various countries. A "Multi-GNSS" receiver can listen to multiple satellite constellations simultaneously, getting fixes from more satellites for better accuracy and reliability. They are generally at MEO (Medium Earth Orbit).
+   * GPS — refers to the US system, the original and most universal (built by Lockheed Martin). 27-36 satellites at 20,200 km provides worldwide coverage.
+   * GLONASS - Russia's 24-30 satellites at 19,100 km
+   * Gallileo - EU's 26-30 satellites at 23,222 km
+   * BDS — BeiDou, China's global system (the "B" stands for BeiDou in Chinese) 36 SVs at 21,500 km, but also GEO (Geosychonous Earth Orbit) at 35,786 and IGSO.
    * QZSS — Japan's Quasi-Zenith Satellite System, a small regional constellation that sits nearly overhead Japan/Asia-Pacific at high elevation angles, which helps in urban canyons where low-angle satellites get blocked by buildings. MICHIBIKI 4-satellite QZSS (Quasi-Zenith Satellite System) constellation in quasi-zenith orbits (QZO) above Japan.
    * IRNSS - India's 5+ satellites
    * SBAS 14-20 satellites
@@ -186,7 +186,7 @@ The u-blox NEO-M8N is a low-cost (~$15–30) GNSS module that generates both an 
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=lP_WaOgIwXg">VIDEO</a>: "Connect and Fire Up the Adafruit GPS with the Pi Pico W"
 
-* <a https://www.youtube.com/watch?v=CLsXnSOIYMg&pp=ugUEEgJlbg%3D%3D">How to add GPS to Your Raspberry Pi Pico - A Simple GPS Project</a> by Core Electronics
+* <a target="_blank" href="https://www.youtube.com/watch?v=CLsXnSOIYMg&pp=ugUEEgJlbg%3D%3D">How to add GPS to Your Raspberry Pi Pico - A Simple GPS Project</a> by Core Electronics
 
 
 ## PTP (Precision Time Protocol)
@@ -508,3 +508,6 @@ It has a built-in RTC crystal and picofarad capacitor.
 
 It has no PPS pin so its accuracy tops out around <strong>1–10 ms</strong> rather than sub-microsecond. For sub-microsecond accuracy you need a GPIO-connected GPS module with a PPS output.
 
+
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
