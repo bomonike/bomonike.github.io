@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-15"
-lastchange: "26-04-15 v023 bottom version @anthropic-certs.md"
+date: "2026-04-16"
+lastchange: "26-04-16 v024 tutorials @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -172,14 +172,6 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <a href="#Rules">Rules</a>
 
-<a name="Quizzes"></a>
-
-## Quizzes
-
-* <a target="_blank" href="https://quizlet.com/1139139502/comprehensive-guide-to-claude-ai-features-applications-and-best-practices-flash-cards/">127 terms</a>
-* <a target="_blank" href="https://quizlet.com/1063707525/ai-fluency-claude-anthropic-flash-cards/">14 terms: "AI Fluency"</a>
-
-
 
 <a name="Productivity"></a>
 
@@ -219,6 +211,13 @@ PROTIP: <a target="_blank" href="https://www.getmerlin.in/pricing?coupon=merlin"
 CAUTION: The concern is the rate tokens are consumed by a specific request is not transparent nor static.
 
 
+<a name="Quizzes"></a>
+
+## Quizzes
+
+* <a target="_blank" href="https://quizlet.com/1139139502/comprehensive-guide-to-claude-ai-features-applications-and-best-practices-flash-cards/">127 terms</a>
+* <a target="_blank" href="https://quizlet.com/1063707525/ai-fluency-claude-anthropic-flash-cards/">14 terms: "AI Fluency"</a>
+
 
 <a name="Tutorials"></a>
 
@@ -230,13 +229,19 @@ Anthropic's own tutorials are at:
    * <a target="_blank" href="https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/">Anthropic is trainging the country of Iceland</a>
    <br /><br />
 
+Intro:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=qUQbU7h4RoE">I Took All 7 Anthropic Courses in One Weekend (Honest Review)</a> by Jas Wong
+   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> referencing <a target="_blank" href="https://github.com/enthropics/">github.com/enthropics</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=M-NTwkM3VwM">Local AI Agents In 26 Minutes</a> by Tina Huang
+   * <a target="_blank" href="https://www.udemy.com/course/claude-code-the-practical-guide/">3-hr Practical Guide</a> by <a target="_blank" href="https://www.udemy.com/user/academind">Academind</a> by <a target="_blank" href="https://www.youtube.com/watch?v=DNhjITZy7cQ">Maximilian Schwarzmüller</a> 
+
+
+
 Articles:
    * <a target="_blank" href="https://dev.to/gunnargrosch/teaching-claude-code-how-you-work-claudemd-in-practice-21d9">Teaching Claude Code How You Work: CLAUDE.md in Practice</a>
    * <a target="_blank" href="https://dev.to/gunnargrosch/from-zero-to-agentic-coding-running-claude-code-with-amazon-bedrock-1f00">From Zero to Agentic Coding: Running Claude Code with Amazon Bedrock</a>
    <br /><br />
-
-Video tutorials:
-   * <a target="_blank" href="https://www.udemy.com/course/claude-code-the-practical-guide/">3-hr Practical Guide</a> by <a target="_blank" href="https://www.udemy.com/user/academind">Academind</a> by <a target="_blank" href="https://www.youtube.com/watch?v=DNhjITZy7cQ">Maximilian Schwarzmüller</a> 
 
 YouTube videos with no subscription:
    * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
