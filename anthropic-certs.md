@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-16"
-lastchange: "26-04-16 v024 tutorials @anthropic-certs.md"
+date: "2026-04-19"
+lastchange: "26-04-19 v025 fix indents @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -74,6 +74,7 @@ Claude competes with agentic coding tools (aka coding agent IDEs) that read a co
    * Google Gemini Gemma & Antigravity IDE
    * Mistral AI
    * Devon (merged)
+   * Temporal's <a target="_blank" href="https://www.youtube.com/watch?v=3rpwaKQXI7A">Pydantic</a>
    <br /><br />
 
 
@@ -425,32 +426,32 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    claude -?
    ```
    <pre>
-Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-s <partial SDK name>][-b <bundle identifier>] [-a <application>] [-u URL] [filenames] [--args arguments]
-Help: Open opens files from a shell.
-      By default, opens each file using the default application for that file.  
-      If the file is in the form of a URL, the file will be opened as a URL.
-Options: 
-      -a                    Opens with the specified application.
-      --arch ARCH           Open with the given cpu architecture type and subtype.
-      -b                    Opens with the specified application bundle identifier.
-      -e                    Opens with TextEdit.
-      -t                    Opens with default text editor.
-      -f                    Reads input from standard input and opens with TextEdit.
-      -F  --fresh           Launches the app fresh, that is, without restoring windows. Saved persistent state is lost, excluding Untitled documents.
-      -R, --reveal          Selects in the Finder instead of opening.
-      -W, --wait-apps       Blocks until the used applications are closed (even if they were already running).
-          --args            All remaining arguments are passed in argv to the application's main() function instead of opened.
-      -n, --new             Open a new instance of the application even if one is already running.
-      -j, --hide            Launches the app hidden.
-      -g, --background      Does not bring the application to the foreground.
-      -h, --header          Searches header file locations for headers matching the given filenames, and opens them.
-      -s                    For -h, the SDK to use; if supplied, only SDKs whose names contain the argument value are searched.
-                            Otherwise the highest versioned SDK in each platform is used.
-      -u, --url URL         Open this URL, even if it matches exactly a filepath
-      -i, --stdin  PATH     Launches the application with stdin connected to PATH; defaults to /dev/null
-      -o, --stdout PATH     Launches the application with /dev/stdout connected to PATH; 
-          --stderr PATH     Launches the application with /dev/stderr connected to PATH to
-          --env    VAR      Add an enviroment variable to the launched process, where VAR is formatted AAA=foo or just AAA for a null string value.
+   Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-s <partial SDK name>][-b <bundle identifier>] [-a <application>] [-u URL] [filenames] [--args arguments]
+   Help: Open opens files from a shell.
+         By default, opens each file using the default application for that file.  
+         If the file is in the form of a URL, the file will be opened as a URL.
+   Options: 
+         -a                    Opens with the specified application.
+         --arch ARCH           Open with the given cpu architecture type and subtype.
+         -b                    Opens with the specified application bundle identifier.
+         -e                    Opens with TextEdit.
+         -t                    Opens with default text editor.
+         -f                    Reads input from standard input and opens with TextEdit.
+         -F  --fresh           Launches the app fresh, that is, without restoring windows. Saved persistent state is lost, excluding Untitled documents.
+         -R, --reveal          Selects in the Finder instead of opening.
+         -W, --wait-apps       Blocks until the used applications are closed (even if they were already running).
+            --args            All remaining arguments are passed in argv to the application's main() function instead of opened.
+         -n, --new             Open a new instance of the application even if one is already running.
+         -j, --hide            Launches the app hidden.
+         -g, --background      Does not bring the application to the foreground.
+         -h, --header          Searches header file locations for headers matching the given filenames, and opens them.
+         -s                    For -h, the SDK to use; if supplied, only SDKs whose names contain the argument value are searched.
+                              Otherwise the highest versioned SDK in each platform is used.
+         -u, --url URL         Open this URL, even if it matches exactly a filepath
+         -i, --stdin  PATH     Launches the application with stdin connected to PATH; defaults to /dev/null
+         -o, --stdout PATH     Launches the application with /dev/stdout connected to PATH; 
+            --stderr PATH     Launches the application with /dev/stderr connected to PATH to
+            --env    VAR      Add an enviroment variable to the launched process, where VAR is formatted AAA=foo or just AAA for a null string value.
    </pre>
 
 1. Confirm installation success: 
@@ -464,10 +465,23 @@ Options:
 
    PROTIP: Notice that Claude is updated daily. So end your day with a backup and start your day with an update.
 
-   
-   <a name="SlashCommands"></a>
 
-   ## / slash commands
+<a name="HowClaudeWorks"></a>
+
+## How Claude Code Works
+
+Anthropic has issued dozens of take-down requests to "claw back" its leak. 
+But https://github.com/oboard/claude-code-rev has restored some functionality using the bun JavaScript package manager and testing utility. bun replaces Node + npm + ts-node + jest + esbuild with a single binary.
+
+<a target="_blank" href="https://deep-dive-claude-code.vercel.app">The "Deep Dive Claude Code app"</a> presents its analysis of the leak's 960+ files, 50+ integrated tools, 380K+ lines of code.
+These 13 chapters take you from the core loop to the full engineering picture, layer by layer.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=LACyqdAfnaw">"Why devs are OBSESSED with Claude Code"</a> by Alberta Tech mentions 
+
+
+<a name="SlashCommands"></a>
+
+## / slash commands
 
 1. Type just the / slash character for a menu:
 
@@ -1400,7 +1414,8 @@ References:
 <a name="Cost"></a>
    
 ## /cost tokens spent
-   ```
+
+   <pre>
    ❯ /cost
   ⎿  Total cost:            $2.69
       Total duration (API):  5m 12s
@@ -1409,7 +1424,7 @@ References:
       Usage by model:
              claude-haiku:  42.1k input, 790 output, 0 cache read, 11.9k cache write ($0.0609)
           claude-opus-4-5:  3.4k input, 10.7k output, 1.7m cache read, 235.3k cache write, 1 web search ($2.63).  x          ```
-
+   </pre>
 
    <a name="loop"></a>
 
@@ -1980,6 +1995,11 @@ References:
 <a target="_blank" href="https://www.youtube.com/watch?v=IjiaCOt7bP8&pp=ugUHEgVlbi1VUw%3D%3D">"Agent Skills: Code Beats Markdown (Here's Why)"</a> by Sam Witteveen
 
 <a target="_blank" href="https://www.youtube.com/watch?v=As2xy_cSx00">"How I Review AI-Generated Code"</a> by Owain Lewis
+
+https://www.youtube.com/watch?v=89bhDV0FBSM
+Coding in VS Code with Gemma 4 and Ollama
+by Zero to MVP
+
 
 
 <hr />
