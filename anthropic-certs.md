@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-19"
-lastchange: "26-04-19 v025 fix indents @anthropic-certs.md"
+date: "2026-04-22"
+lastchange: "26-04-22 v026 addy's flow skills/slash cmds @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -67,15 +67,21 @@ This article was hand-crafted based on AI responses.
 ## Competition
 
 Claude competes with agentic coding tools (aka coding agent IDEs) that read a codebase, edit files, and run commands:
-   * Amazon's Kiro CLI & IDE for spec-driven development
+   * Amazon's Kiro CLI & IDE for spec-driven development. But it needs to be constantly connected to AWS eating up credits.
+   * warp.dev (which does a great job of detecting coding and CLI errors and suggesting fixes)
    * OpenAI's Codex <a target="_blank" href="https://www.youtube.com/watch?v=kFS6z_97Ohc&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
    * OpenCode
    * Perplexity
    * Google Gemini Gemma & Antigravity IDE
    * Mistral AI
-   * Devon (merged)
+   * Devin by Cognition (merged)
    * Temporal's <a target="_blank" href="https://www.youtube.com/watch?v=3rpwaKQXI7A">Pydantic</a>
+   * OpenCode
    <br /><br />
+
+https://www.tbench.ai/leaderboard (Terminal Bench Leaderboard) provides benchmarks AI agents' terminal mastery
+operating the https://www.harborframework.com/ 
+
 
 
 <a name="Products"></a>
@@ -230,14 +236,19 @@ Anthropic's own tutorials are at:
    * <a target="_blank" href="https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/">Anthropic is trainging the country of Iceland</a>
    <br /><br />
 
+On Coursera, <a target="_blank" href="https://www.coursera.org/instructor/~192606412">Stephen Grider</a> of Anthropic built 
+   * <a target="_blank" href="https://www.coursera.org/learn/claude-code-in-action">Claude Code in Action</a>
+   * <a target="_blank" href="https://www.coursera.org/learn/building-with-the-claude-api">Building with the Claude API</a>
+   * <a target="_blank" href="https://www.coursera.org/learn/introduction-to-model-context-protocol">Introduction to Model Context Protocol</a>
+   * <a target="_blank" href="https://www.coursera.org/learn/model-context-protocol-advanced-topics">Model Context Protocol: Advanced Topics</a>
+   <br /><br />
+
 Intro:
    * <a target="_blank" href="https://www.youtube.com/watch?v=qUQbU7h4RoE">I Took All 7 Anthropic Courses in One Weekend (Honest Review)</a> by Jas Wong
    * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> referencing <a target="_blank" href="https://github.com/enthropics/">github.com/enthropics</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
 
    * <a target="_blank" href="https://www.youtube.com/watch?v=M-NTwkM3VwM">Local AI Agents In 26 Minutes</a> by Tina Huang
    * <a target="_blank" href="https://www.udemy.com/course/claude-code-the-practical-guide/">3-hr Practical Guide</a> by <a target="_blank" href="https://www.udemy.com/user/academind">Academind</a> by <a target="_blank" href="https://www.youtube.com/watch?v=DNhjITZy7cQ">Maximilian Schwarzmüller</a> 
-
-
 
 Articles:
    * <a target="_blank" href="https://dev.to/gunnargrosch/teaching-claude-code-how-you-work-claudemd-in-practice-21d9">Teaching Claude Code How You Work: CLAUDE.md in Practice</a>
@@ -477,6 +488,58 @@ But https://github.com/oboard/claude-code-rev has restored some functionality us
 These 13 chapters take you from the core loop to the full engineering picture, layer by layer.
 
 <a target="_blank" href="https://www.youtube.com/watch?v=LACyqdAfnaw">"Why devs are OBSESSED with Claude Code"</a> by Alberta Tech mentions 
+
+<a name="CustomSlash"></a>
+
+## Custom Slash Commands
+
+<a target="_blank" href="https://www.youtube.com/watch?v=4bfKyZ7hbsU">VIDEO</a>
+The essence of the <strong>revolution that is AI</a> is this diagram from the
+<a target="_blank" href="https://github.com/addyosmani/agent-skills">agent-skills Github</a>:<br />
+<pre>
+  DEFINE        PLAN          BUILD         VERIFY        REVIEW        SHIP
+ ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐
+ │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │  QA  │ ───▶ │  Go  │
+ │Refine│      │  PRD │      │ Impl │      │Debug │      │ Gate │      │ Live │
+ └──────┘      └──────┘      └──────┘      └──────┘      └──────┘      └──────┘
+  /spec         /plan         /build        /test         /review       /ship
+</pre>
+
+Instead of diving into coding right away and making changes later, 
+a slash command is invoked at each stage in the development lifecycle.
+
+People collaborate by revising .md files that are consolidated into a "PRD" describing all aspects of what needs to be built.
+
+"/build" then have AI generate/implement all the code.
+
+AI generation can be repeated with slight variations so the AI has additional opportunities to get it right, based on the PRD specification. 
+
+The sample skills github is by Google cloud leader Addy Osmani, who has examples for several clients:
+   * Claude Code (recommended)
+   * Cursor
+   * Gemini CLI
+   * Windsurf
+   * OpenCode
+   * GitHub Copilot
+   * Kiro IDE & CLI
+   * Codex / Other Agents
+   <br /><br />
+
+The 20 skills in the repo include a "/code-simplify" step for more clarity over cleverness.
+
+What's really special are Pre-configured specialist personas for targeted reviews by
+the "security-auditor" persona.
+
+Each skill file contains:
+   * Overview         → What this skill does
+   * When to Use      → Triggering conditions
+   * Process          → Step-by-step workflow
+   * Rationalizations → Excuses + rebuttals
+   * Red Flags        → Signs something's wrong
+   * Verification     → Evidence requirements
+   <br /><br />
+
+Addy advises "Skills should be specific (actionable steps, not vague advice), verifiable (clear exit criteria with evidence requirements), battle-tested (based on real workflows), and minimal (only what's needed to guide the agent)."
 
 
 <a name="SlashCommands"></a>
@@ -1459,7 +1522,7 @@ Skills collected from others, such as git@github.com:jarrodwatts/claude-code-con
 The entry point for each skill is a SKILL.md file in its own directory.
 So keep primary instructions in SKILL.md concise while still giving Claude access to rich supporting material when it needs it.
 
-```
+<pre>
 skill-name/
 ├── SKILL.md           # Main instructions (required)
 ├── assets/            # Spec: templates, resources
@@ -1472,7 +1535,7 @@ skill-name/
 │   └── validate.sh    # Executable scripts
 └── templates/
     └── output.md      # Template Claude fills in
-```
+</pre>
 
 REMEMBER: Skill folders under <tt>~/.claude/skill/...</tt> are usable by all projects.
 
