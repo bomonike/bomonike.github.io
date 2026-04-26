@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-22"
-lastchange: "26-04-22 v026 addy's flow skills/slash cmds @anthropic-certs.md"
+date: "2026-04-26"
+lastchange: "26-04-26 v027 ui menu @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -118,11 +118,13 @@ REMEMBER: Anththropic does not <strong>host</strong> their own models but use AW
 
    PROTIP: That enables us to bring costs down by <a target="_blank" href="https://medium.com/towards-artificial-intelligence/i-cancelled-my-200-mo-claude-api-subscription-again-0e2175502778">using a downloaded local foundation model</a> while using Claude Code/Work.
 
-* <a target="_blank" href="https://www.youtube.com/watch?v=DNhjITZy7cQ">Glasswing</a> secures software.
+* <a target="_blank" href="https://www.youtube.com/watch?v=DNhjITZy7cQ">Glasswing</a> secures software using the Mythos frontier model built using NVIDIA's GP3 chips.
 
 * Claude <strong>Dispatch</strong> enables <strong>cross-device workflows</strong> where tasks move from <strong>mobile app</strong> to desktop app which stays awake (doing whatever else).
 
-* <a target="_blank" href="https://medium.com/data-and-beyond/claude-can-use-your-computer-a-comprehensive-security-first-deep-dive-into-claude-computer-use-cf424f48105d">Claude "Computer Use"</a>: Because raw GUI control is powerful, but also brittle, slower, and much harder to govern, the Claude ecosystem is a layered agent system where <strong>connectors</strong> (with structured contracts) via MCP apps are preferred, browser automation (of forms on websites) is secondary, and raw full-screen (difficult to govern) desktop control is the fallback layer.
+* "Memory on Claude Managed Agents" enables agents to learn from past sessions and share what they’ve learned with other agents. The memories mounts directly onto a filesystem so developers can keep control over what these agents retain - the same bash and code execution capabilities that make it effective at agentic tasks. "With filesystem-based memory, our latest models save more comprehensive, well-organized memories and are more discerning about what to remember for a given task.”
+
+* <a target="_blank" href="https://medium.com/data-and-beyond/claude-can-use-your-computer-a-comprehensive-security-first-deep-dive-into-claude-computer-use-cf424f48105d">Claude "Computer Use"</a>: <a target="_blank" href="https://www.coursera.org/projects/building-toward-computer-use-with-anthropic" title="by Colt Steele https://skillbuilder.deeplearning.ai/">Computer Use</a> utilizes the capabilities of the latest models including image reasoning and tool use to enable an LLM-based agent to use a computer. Like a human user, the model processes an image of the screen, analyzes it to understand what’s going on, and navigates the computer by issuing mouse clicks and generating keyboard strokes to get things done.
 
    <a target="_blank" href="https://www.youtube.com/watch?v=julbw1JuAz0">VIDEO</a>:
    Fun fact: 90% of code in Claude Code is written by itself, in TypeScript, 
@@ -136,17 +138,18 @@ REMEMBER: Anththropic does not <strong>host</strong> their own models but use AW
    <a target="_blank" href="https://www.youtube.com/watch?v=mBHRPeg8zPU">VIDEO</a>: Although Temporal is used on Claude,
    the <a target='_blank" href="https://ccunpacked.dev">leak</a> revealed that Claude is vulnerable to the in remote access trojan from Axios 1.14.1 npm.
    <a target="_blank" href="https://stepsecurity.io/">Get rid of the vulnerability</a>
-
    
    The team works at around 5 releases per engineer each day. AI agents are used for code reviews and tests, test-driven development’s (TDD) renaissance, automating incident response, and cautious use of feature flags. 
    <a target="_blank" href="https://www.youtube.com/watch?v=ofLvTNZEHVk">"Inside Claude Code: The Architecture of AI Agents" by PY</a>
    is a while loop.
 
+Tool selection: Because raw GUI control is powerful, but also brittle, slower, and much harder to govern, the Claude ecosystem is a layered agent system where <strong>connectors</strong> (with structured contracts) via MCP apps are preferred, browser automation (of forms on websites) is secondary, and raw full-screen (difficult to govern) desktop control is the fallback layer.
+
 References:
    * https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built
    <br /><br />
 
-
+zzz
 <a name="Glossary"></a>
 
 ## Features Glossary
@@ -302,7 +305,7 @@ Claude Mythos 5: Most Powerful Model Ever! AGI, GLM 5.1, Claude Code Update & Co
 
 ## Installs
 
-1. If you need to buy a machine, consider that MacMini have good resale value and value on mid-tier vs. PC server with NVIDIA GPU.
+1. If you need to buy a machine, consider that Mac Mini have good resale value and value on mid-tier vs. PC server with NVIDIA GPU.
 1. Buy two USB drives for backup. One to keep plugged in and another for daily full backups you leave in a faraday bag.
 
 1. Install Homebrew
@@ -320,7 +323,6 @@ Claude Mythos 5: Most Powerful Model Ever! AGI, GLM 5.1, Claude Code Update & Co
    open -a kitty
    ```
    PROTIP: 3rd-party Terminal apps Kitt and Ghostly natively support notification events without additional configuration (which iTerm2 does).
-
 
 
 <a name="ClaudeCodeTemplate"></a>
@@ -477,9 +479,19 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    PROTIP: Notice that Claude is updated daily. So end your day with a backup and start your day with an update.
 
 
+<a name="ClaudeDesktopUI"></a>
+
+## Claude Desktop Keys
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1777224351/claude-menus-keys_bl5oxm.png"><img alt="claude-menus-keys.png from pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1777224351/claude-menus-keys_bl5oxm.png" /></a>
+
+PROTIP: Instead of moving your mouse and clicking the icons, it's faster to hold down the command key and press the key indicated.
+
+
 <a name="HowClaudeWorks"></a>
 
 ## How Claude Code Works
+
 
 Anthropic has issued dozens of take-down requests to "claw back" its leak. 
 But https://github.com/oboard/claude-code-rev has restored some functionality using the bun JavaScript package manager and testing utility. bun replaces Node + npm + ts-node + jest + esbuild with a single binary.
@@ -487,7 +499,24 @@ But https://github.com/oboard/claude-code-rev has restored some functionality us
 <a target="_blank" href="https://deep-dive-claude-code.vercel.app">The "Deep Dive Claude Code app"</a> presents its analysis of the leak's 960+ files, 50+ integrated tools, 380K+ lines of code.
 These 13 chapters take you from the core loop to the full engineering picture, layer by layer.
 
-<a target="_blank" href="https://www.youtube.com/watch?v=LACyqdAfnaw">"Why devs are OBSESSED with Claude Code"</a> by Alberta Tech mentions 
+The revolution Claude (and other GenAI products) is that instead of typing precise programming code, you type English sentences to describe how Claude generates programming code.
+
+Press <strong>Shift + Tab</strong> to toggle to "Planning Mode" where Claude expands its <strong>planning</strong> of changes to md files it will make based on your specification.
+
+You can type "ultrathink" to switch Claude into a "Thinking mode" which applies the maximum <strong>depth</strong> of <strong>reasoning</strong> at planning.
+
+WARNING: Additional planning and thinking require additional tokens to be charged.
+
+Press the Esc key to interrrupt Claude.
+
+Press # (for "memory mode") instructions on edits to CLAUDE.md files based on your dictates.
+
+markdown files with ".md" at the end of file names.
+
+Press @ to begin specifying a file's path pointing to contents to retrieve in your request to Claude.
+
+To take a screen shot on macOS, press the usual command + Shift + 4 which changes the cursor to crosshairs. Position it on the screen and press your mouse to drag and drop to the opposite corner of the box to capture the section to your computer's invisible clipboard. Click the Claude input field and press control + V to paste. "[Image #1]" would appear to confirm. To the right of that, type a sentence to specify what you want done based on that image.
+
 
 <a name="CustomSlash"></a>
 
@@ -747,7 +776,10 @@ REMEMBER: Two folders are created:
    * <a href="#Skills">skills folder</a>
    <br /><br />
 
-   
+   https://github.com/forrestchang/andrej-karpathy-skills
+   A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
+
+
    <a name="MarkdownFormat"></a>
 
    ### *.md Markdown YAML files
@@ -2062,6 +2094,17 @@ References:
 https://www.youtube.com/watch?v=89bhDV0FBSM
 Coding in VS Code with Gemma 4 and Ollama
 by Zero to MVP
+
+<a target="_blank" href="https://babich.gumroad.com/l/claude">BOOK: 
+$19 Claude Code: Practical Guide for Product Designers</a>
+by Nick Babich
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=LACyqdAfnaw">"Why devs are OBSESSED with Claude Code"</a> by Alberta Tech mentions 
+   <br /><br />
+
+
+
+
 
 
 
