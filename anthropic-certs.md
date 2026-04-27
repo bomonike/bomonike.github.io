@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-26"
-lastchange: "26-04-26 v027 ui menu @anthropic-certs.md"
+date: "2026-04-27"
+lastchange: "26-04-27 v029 key people @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -29,29 +29,32 @@ This article was hand-crafted based on AI responses.
 
 ## Anthropic the Company
 
+1. Anthropic was founded in 2021 by seven former employees from OpenAI, including now CEO Dario Amodei was OpenAI's Vice President of Research. Key personnel now:
+   * <a target="_blank" href="https://www.linkedin.com/in/bcherny/">Boris Cherny</a>, Engineering
+   * <a target="_blank" href="https://www.linkedin.com/in/katelynlesse/">Katelyn Lesse</a>, Engineering
+   * <a target="_blank" href="https://www.linkedin.com/in/cat-wu/">Cat Wu</a>, Product
+   * <a target="_blank" href="https://www.linkedin.com/in/angelajiang/">Angela Jiang</a>, Product
+   <br /><br />
+
 1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a> - the corporate marketing landing page.
 
-   Notice "Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks."
+   It says "Anthropic is a <strong>public benefit corporation</strong> dedicated to securing its benefits and mitigating its risks."
 
 1. <a target="_blank" href="https://www.linkedin.com/company/anthropicresearch/posts/?feedView=all">Anthropic's entry on LinkedIn</a> classifies the company in the "Research Services" industry:
 
-   "Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems."
+   "Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems." 3M followers. 501-1K employees.
 
-   3M followers. 501-1K employees.
-
-1. On <a target="_blank" href="https://www.glassdoor.com/Reviews/Anthropic-Reviews-E8109027.htm">Glassdoor.com</a>, <strong>86%</strong> of Anthropic employees would recommend to a friend.
-
-1. Anthropic was founded in 2021 by seven former employees of OpenAI, including now CEO Dario Amodei was OpenAI's Vice President of Research.
+1. On <a target="_blank" href="https://www.glassdoor.com/Reviews/Anthropic-Reviews-E8109027.htm">Glassdoor.com</a>, <strong>86%</strong> of Anthropic employees would recommend to a friend, which is high praise indeed.
 
 1. Click <a target="_blak" href="https://www.anthropic.com/research">"Read more" at https://www.anthropic.com/research</a> about results from Anthropic's survey of users.
 
    1. Click "Posts" tab to view announcements.
-   1. Click <a target="_blank" href="https://www.linkedin.com/ad-library/search?companyIds=106863934">"Ads"</a> to see videos of Superbowl commercials.
+   1. Click <a target="_blank" href="https://www.linkedin.com/ad-library/search?companyIds=106863934">"Ads"</a> to see videos of 2026 Superbowl commercials.
    <br /><br />
 
 1. <a target="_blank" href="https://www.youtube.com/@anthropic-ai">Anthropic's YouTube channel</a>
 
-   * https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b by Gigi Sayfan
+   * <a target="_blank" href="https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b">Article</a> by Gigi Sayfan
    <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
 
 * <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says "Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
@@ -59,7 +62,7 @@ This article was hand-crafted based on AI responses.
    <a target="_blank" href="https://www.youtube.com/watch?v=inLFfXFapnw">PROTIP</a>: 
    Claude is named for Claude Shannon at Bell Labs, who founded "informational theory of communication" which made AI possible.
 
-   "Brainstorm in Claude, build in Cowork" <a target="_blank" href="https://www.youtube.com/watch?v=grh7CMl960s">VIDEO</a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=grh7CMl960s">VIDEO</a>: "Brainstorm in Claude, build in Cowork"
 
 
 <a name="Competition"></a>
@@ -79,16 +82,21 @@ Claude competes with agentic coding tools (aka coding agent IDEs) that read a co
    * OpenCode
    <br /><br />
 
-https://www.tbench.ai/leaderboard (Terminal Bench Leaderboard) provides benchmarks AI agents' terminal mastery
-operating the https://www.harborframework.com/ 
+https://www.tbench.ai/leaderboard (Terminal Bench Leaderboard) provides benchmarks AI agents' terminal mastery operating the <a target="_blank" href="https://www.harborframework.com/">harbor framework</a>.
 
+
+<a name="Support"></a>
+
+## Claude Support
+
+REMEMBER: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. 
 
 
 <a name="Products"></a>
 
 ## Claude Products
 
-<a target="_blank" href="https://status.claude.com/uptime/"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a>REMEMBER: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. <a target="_blank" href="https://status.claude.com/uptime/">Uptime</a> shows Anthropic's own production environments:
+<a target="_blank" href="https://status.claude.com/uptime/"><img align="right" width="300" alt="anthropic-systems-hist.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774449180/anthropic-systems-hist_vl2oig.png" /></a><a target="_blank" href="https://status.claude.com/uptime/">Uptime</a> shows Anthropic's own production environments:
 
 * <a target="_blank" href="https://claude.ai/">claude.ai</a> website reached on internet browser.
 
@@ -100,11 +108,11 @@ operating the https://www.harborframework.com/
 
    REMEMBER: The <strong>-p</strong> flag specifies non-interactive (aka  <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&&t=5h18m36s">"headless" task), No prompts, no confirmations. Runs and returns the result. The SDK spawns the Claude Code CLI as a subprocess and communicates over stdin/stdout via JSON-lines. xcompare it to the Anthropic Client SDK. Specify --allowedTools and --disallowedTools permissions.
 
-* <strong>Claude Code</strong> is "like handing a capable teammate who actually does the work". Instead of hand coding, human app designers now speak natural language conversations with Claude Code to write design specs from which both infrastructure creation and programming code are generated.
+* <strong>Claude Code</strong> is "like talking to a capable teammate who actually does the work". Instead of hand coding, human app designers now speak natural language conversations with Claude Code to write design specs from which both infrastructure creation and programming code are generated.
 
    > “AI will soon be writing 90 percent of all code.” — Dario Amodei, Anthropic CEO, March 10 2025
 
-   That is why instead of hiring entry-level programmers, companies will be <a href="#Pricing">paying for AI tokens</a>.
+   That is why instead of human employees, companies will be <a href="#Pricing">paying for AI tokens</a> to do work. That's the basis for high valuations and unpresedented investments in gigantic data centers using AI chips.
 
 * <strong>Claude CoWork</strong> can interact with you computer's files, mouse, keyboard, and screen, to operate any app. <a target="_blank" href="https://www.youtube.com/watch?v=rlIy7b-3DC8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
 
@@ -149,7 +157,7 @@ References:
    * https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built
    <br /><br />
 
-zzz
+
 <a name="Glossary"></a>
 
 ## Features Glossary
@@ -176,16 +184,38 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <strong>Hooks</strong> are small Python and Bash shell scripts (agentic workflows) that run when automatically triggered by events (before or after Claude tries to do something). REMEMBER: A hook can also block Claude from taking an action unless a specific condition has been met.
 
-* <strong>Plugins</strong> (under the Customize menu item) bundle hooks, <a href="#SlashCommands">slash commands</a>, and skills together for sharing with others. The "plugins" folder contains a <tt>blocklist.json</tt> file, a "known_marketplaces.json" file and the <strong>marketplaces</strong> folder, starting with "claude-plugins-official".
+* <a href="#Plugins">Plugins</a> (under the Customize menu item) bundle hooks, <a href="#SlashCommands">slash commands</a>, and skills together for sharing with others. The "plugins" folder contains a <tt>blocklist.json</tt> file, a "known_marketplaces.json" file and the <strong>marketplaces</strong> folder, starting with "claude-plugins-official".
 
 * <strong>Claude Agent SDK</strong> are used to build agentic AI systems beyond coding assistance.
 
 * <a href="#Rules">Rules</a>
 
+* "Constitutional AI" is a training approach developed by Anthropic to help AI models <strong>self-evaluate and revise</strong> their own responses, based on a predefined set of ethical guidelines and principles (harmless, honest, etc.) rather than RLHF (Reinforcement Learning with Human Feedback). "intent classification" in Claude’s safety system
+
 
 <a name="Productivity"></a>
 
 ## Productivity: What can you do with Claude?
+
+Target one job that has these three qualities:
+
+   * It wastes real time
+
+   * It happens often
+
+   * It has multiple steps
+
+Good first examples with a small test group:
+
+   * turn meeting notes into action items
+
+   * research a list of companies and make a short brief
+
+   * respomd to support emails with draft replies
+
+   * pull weekly numbers and write a simple report
+
+   * check a few sources and summarize what changed
 
 PROTIP: Improvements in net productivity can be confidently <strong>monitized</strong> when features are combined to be <strong>useful</strong> when consistently applied:
 
@@ -203,7 +233,7 @@ PROTIP: Improvements in net productivity can be confidently <strong>monitized</s
 
 CAUTION: Cowork activity is not captured in audit logs or Compliance APIs today, which is why it is not for regulated workloads. 
 
-<a target="_blank" href="https://www.youtube.com/watch?v=Y3PcRp5RFzk&pp=ugUEEgJlbg%3D%3D">"5 ‘Boring’ AI Workflows that Businesses Actually Want (And How to Sell them)"</a> by Nate Herk | AI Automation
+<a target="_blank" href="https://www.youtube.com/watch?v=Y3PcRp5RFzk&pp=ugUEEgJlbg%3D%3D">"5 ‘Boring’ AI Workflows that Businesses Actually Want (And How to Sell them)"</a> by Nate Herk of AI Automation
 
 
 <a name="Pricing"></a>
@@ -218,7 +248,11 @@ PROTIP: <a target="_blank" href="https://www.getmerlin.in/pricing?coupon=merlin"
 * Enterprise
 <br /><br />
 
-CAUTION: The concern is the rate tokens are consumed by a specific request is not transparent nor static.
+CAUTION: In April 2026 Anthropic removed the $17/month tier and requires the $100/month for use of Claude Code.
+
+CAUTION: Rate tokens chargess for the same request prompt is not consistent over time.
+
+CAUTION: Claude's token charges are more complicated that figuring out your taxes.
 
 
 <a name="Quizzes"></a>
@@ -483,9 +517,11 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
 
 ## Claude Desktop Keys
 
+PROTIP: Instead of moving your mouse and clicking the icons, it's faster to hold down the command key and press the key indicated.
+
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1777224351/claude-menus-keys_bl5oxm.png"><img alt="claude-menus-keys.png from pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1777224351/claude-menus-keys_bl5oxm.png" /></a>
 
-PROTIP: Instead of moving your mouse and clicking the icons, it's faster to hold down the command key and press the key indicated.
+QUESTION: How to get shortcut keys for other menu items?
 
 
 <a name="HowClaudeWorks"></a>
@@ -503,7 +539,8 @@ The revolution Claude (and other GenAI products) is that instead of typing preci
 
 Press <strong>Shift + Tab</strong> to toggle to "Planning Mode" where Claude expands its <strong>planning</strong> of changes to md files it will make based on your specification.
 
-You can type "ultrathink" to switch Claude into a "Thinking mode" which applies the maximum <strong>depth</strong> of <strong>reasoning</strong> at planning.
+Type <strong>ULTRATHINK</strong> ahead of requests to use a Claude "<strong>Thinking</strong> mode" which applies the maximum <strong>depth</strong> of <strong>reasoning</strong> at planning.
+This invokes Claude to break down complex problems step by step.
 
 WARNING: Additional planning and thinking require additional tokens to be charged.
 
@@ -523,8 +560,10 @@ To take a screen shot on macOS, press the usual command + Shift + 4 which change
 ## Custom Slash Commands
 
 <a target="_blank" href="https://www.youtube.com/watch?v=4bfKyZ7hbsU">VIDEO</a>
-The essence of the <strong>revolution that is AI</a> is this diagram from the
+The essence of the <strong>revolution that is AI</strong> is this diagram from the
 <a target="_blank" href="https://github.com/addyosmani/agent-skills">agent-skills Github</a>:<br />
+
+PROTIP: To make full use of Claude, instead of diving into coding right away (then making changes later), separate your work into several stages of a <strong>development lifecycle</strong>, using a slash command at each stage, such as these custom slash commands:
 <pre>
   DEFINE        PLAN          BUILD         VERIFY        REVIEW        SHIP
  ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐
@@ -534,12 +573,9 @@ The essence of the <strong>revolution that is AI</a> is this diagram from the
   /spec         /plan         /build        /test         /review       /ship
 </pre>
 
-Instead of diving into coding right away and making changes later, 
-a slash command is invoked at each stage in the development lifecycle.
+<strong>/build</strong> has AI generate/implement all the code.
 
-People collaborate by revising .md files that are consolidated into a "PRD" describing all aspects of what needs to be built.
-
-"/build" then have AI generate/implement all the code.
+People collaborate by revising .md files that are consolidated into a <strong>"PRD" (Product Requirements Document)</strong> a short document that defines a "high level" description of what a product should do, why it exists, and what “done” looks like. It keeps product, design, engineering, and stakeholders aligned on the same goal. 
 
 AI generation can be repeated with slight variations so the AI has additional opportunities to get it right, based on the PRD specification. 
 
@@ -901,12 +937,6 @@ REMEMBER: Two folders are created:
    * https://github.com/centminmod/my-claude-code-setup
    <br /><br />
 
-1. Explore Claude Plugin Marketplace of Curated plugins, agent <a href="#Skills">skills</a>, and MCP servers for Claude Code: https://claudemarketplaces.com/learn
-
-   <a target="_blank" href="https://claudemarketplaces.com/">https://claudemarketplaces.com</a>
-
-1. Consider https://github.com/BayramAnnakov/claude-reflect on Claude Plugin Marketplace - a self-learning system (<tt>/reflect-skills</tt>) for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.
-
 * <a target="_blank" href="https://claude.com/product/cowork?open_in_browser=1">Claude Co-Work</a> - "Hand off tasks to Claude and come back to finished work."
 
 * <a target="_blank" href="https://claude.com/skills">Claude Skills</a> "turn expertise, procedures, and best practices into reusable capabilities." To ensure output follows proven patterns (rather than guessing) for handling PowerPoint pptx files, <strong>pptx/SKILL.md</strong> is defined. 
@@ -971,6 +1001,42 @@ As Claude "thinks", it distracts you with one of
 (<a target="_blank" href="https://github.com/levindixon/tengu_spinner_words/blob/main/README.md">previously thought 90+</a>).
 
 
+<a name="DesignSystem"></a>
+
+## @DESIGN.md Design System
+
+In your CLAUDE.md file, <tt>@DESIGN.md</tt> causes Claude to load the <strong>DESIGN.md</strong> file at the start of every session to specify visual standards of your brand.
+<pre>
+## Design System
+This project uses a design system defined in @DESIGN.md.
+Follow strictly the rules defined in @DESIGN.md for all UI generation.
+Do not invent colors, fonts, or spacing values outside the design system.
+Match component states (hover, focus, active, disabled) to patterns in @DESIGN.md.
+</pre>
+
+The <a target="_blank" href="https://github.com/bomonike/claude-templates/blob/main/DESIGN.md">example within my claude-templates repo</a> says it's for "Acme Corp" but was open-sourced based on <a target="_blank" href="https://medium.com/autocomplete-real-world-ai/design-md-the-complete-guide-ac8c5cd0d14d">Google Labs'</a> 
+Stitch <a target="_blank" href="https://wilsonmar.github.io/design-system">Design System</a> and AI tool.
+
+The <a target="_blank" href="https://github.com/VoltAgent/awesome-design-md">VoltAgent/awesome-design-md</a> repo contains 69+ ready-to-use DESIGN.md files with HTML previews (light and dark mode).
+
+DESIGN.md combines technical tokens (exact values agents parse) with 
+qualitative rationale (context agents use for judgment) in a single file that every major AI coding tool can read. 
+
+Between <tt>---</tt> fencing YAML front matter are the machine-readable: specs of exact colors as hex codes, typography as font families and sizes, spacing as pixel values, components as token references.
+
+In the body, ## sections explain design philosophy, when to use which tokens, and what to avoid.
+
+   * Overview (alias: “Brand & Style”): holistic product description, brand personality, emotional tone
+   * Colors: palettes with semantic roles and usage guidelines
+   * Typography: type scale, font pairings, hierarchy rules
+   * Layout (alias: “Layout & Spacing”): grid models, spacing strategy, responsive behavior
+   * Elevation & Depth (alias: “Elevation”): shadow and depth techniques
+   * Shapes: border radius, corner treatments, decorative geometry
+   * Components: style guidance for UI atoms (buttons, cards, inputs, navigation)
+   * Do’s and Don’ts: guardrails and common pitfalls
+   <br /><br />
+
+From here, reference the design system in your prompts: “Build a primary button component using the design system in DESIGN.md.” Claude Code reads the tokens, applies the values, and generates code that matches your brand.
 
 
 <a name="Agents"></a>
@@ -1968,6 +2034,21 @@ Claude's AskUserQuestion tool can be invoked used to produce a detailed specific
 https://github.com/jarrodwatts/claude-code-config/blob/main/commands/interview.md ???
 
 <a target="_blank" href="https://github.com/anthropics/courses/tree/master/prompt_evaluations">Prompt Evaluations</a>
+
+
+<a name="Plugins"></a>
+
+## Plugins
+
+1. Explore Claude Plugin Marketplace of Curated plugins, agent <a href="#Skills">skills</a>, and MCP servers for Claude Code: https://claudemarketplaces.com/learn
+
+   <a target="_blank" href="https://claudemarketplaces.com/">https://claudemarketplaces.com</a>
+
+1. PROTIP: <a target="_blank" href="https://github.com/justfinethanku/ultra-doc">ultra-doc</a> (by Jonathan Edwards) auto-syncs two sets of documentation to solve "Context Rot".
+   * context_for_humans/: Readable, narrative-driven docs for humans. 
+   * context_for_llms/: Optimized, token-efficient, rigid Markdown for Claude. 
+
+1. Consider <a target="_blank" href="https://github.com/BayramAnnakov/claude-reflect">claude-reflect</a>  a self-learning system (<tt>/reflect-skills</tt>) for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.
 
 
 <a name="MCP"></a>
