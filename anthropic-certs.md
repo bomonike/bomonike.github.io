@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-27"
-lastchange: "26-04-27 v029 key people @anthropic-certs.md"
+date: "2026-04-28"
+lastchange: "26-04-28 v030 statusline @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -339,7 +339,7 @@ Claude Mythos 5: Most Powerful Model Ever! AGI, GLM 5.1, Claude Code Update & Co
 
 ## Installs
 
-1. If you need to buy a machine, consider that Mac Mini have good resale value and value on mid-tier vs. PC server with NVIDIA GPU.
+1. If you need to buy a machine, consider that Mac Mini's have good resale value and value on mid-tier vs. PC server with NVIDIA GPU. 
 1. Buy two USB drives for backup. One to keep plugged in and another for daily full backups you leave in a faraday bag.
 
 1. Install Homebrew
@@ -513,9 +513,41 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    PROTIP: Notice that Claude is updated daily. So end your day with a backup and start your day with an update.
 
 
+   <a name="StartClaude"></a>
+
+   ### Start Claude
+
+   REMEMBER: You can specify what model (LLM) to use when you start Claude. 
+
+1. PROTIP: In a CLI, define your model id variable such as:
+   ```
+   MY_MODEL_ID="deepseek-v4-pro:cloud"
+   ```
+   CAUTION: Do not insert spaces to the left/right of "=" such CLI commands.
+
+   Using a variable enables you to copy commands below and switch tot he CLI to paste them (with command+V):
+
+* Chat with the model like Google & ChatGPT Question & Answer:
+   ```
+   ollama run "$MY_MODEL_ID"
+   ``` 
+* To use DeepSeek-V4-Pro with Claude Code, run:
+   ```
+   ollama launch claude --model "$MY_MODEL_ID"
+   ```
+* For use with OpenClaw:
+   ```
+   ollama launch openclaw --model "$MY_MODEL_ID"
+   ```
+* For use with Hermes Agent:
+   ```
+   ollama launch hermes --model "$MY_MODEL_ID"
+   ```
+
+
 <a name="ClaudeDesktopUI"></a>
 
-## Claude Desktop Keys
+## Claude Desktop Key Shortcuts
 
 PROTIP: Instead of moving your mouse and clicking the icons, it's faster to hold down the command key and press the key indicated.
 
@@ -528,29 +560,26 @@ QUESTION: How to get shortcut keys for other menu items?
 
 ## How Claude Code Works
 
-
 Anthropic has issued dozens of take-down requests to "claw back" its leak. 
 But https://github.com/oboard/claude-code-rev has restored some functionality using the bun JavaScript package manager and testing utility. bun replaces Node + npm + ts-node + jest + esbuild with a single binary.
 
 <a target="_blank" href="https://deep-dive-claude-code.vercel.app">The "Deep Dive Claude Code app"</a> presents its analysis of the leak's 960+ files, 50+ integrated tools, 380K+ lines of code.
 These 13 chapters take you from the core loop to the full engineering picture, layer by layer.
 
-The revolution Claude (and other GenAI products) is that instead of typing precise programming code, you type English sentences to describe how Claude generates programming code.
+REMEMBER: The revolution Claude (and other GenAI products) is that instead of typing precise programming code, you type English sentences to describe how Claude generates programming code, in markdown format files (with “.md” at the end of file names).
 
-Press <strong>Shift + Tab</strong> to toggle to "Planning Mode" where Claude expands its <strong>planning</strong> of changes to md files it will make based on your specification.
+Press # (for "memory mode") instructions for Claude Code to update <a href="#CLAUDE.md">CLAUDE.md files</a> which define your preferences.
+
+Press <strong>Shift + Tab</strong> to toggle to "<strong>Planning Mode</strong>" where Claude expands its <strong>planning</strong> of changes to md files it will make based on your specification.
 
 Type <strong>ULTRATHINK</strong> ahead of requests to use a Claude "<strong>Thinking</strong> mode" which applies the maximum <strong>depth</strong> of <strong>reasoning</strong> at planning.
 This invokes Claude to break down complex problems step by step.
 
 WARNING: Additional planning and thinking require additional tokens to be charged.
 
-Press the Esc key to interrrupt Claude.
+REMEMBER: Press the Esc key to interrrupt Claude.
 
-Press # (for "memory mode") instructions on edits to CLAUDE.md files based on your dictates.
-
-markdown files with ".md" at the end of file names.
-
-Press @ to begin specifying a file's path pointing to contents to retrieve in your request to Claude.
+Within prompts, type @ to begin specifying a file's path pointing to contents to retrieve in your request to Claude.
 
 To take a screen shot on macOS, press the usual command + Shift + 4 which changes the cursor to crosshairs. Position it on the screen and press your mouse to drag and drop to the opposite corner of the box to capture the section to your computer's invisible clipboard. Click the Claude input field and press control + V to paste. "[Image #1]" would appear to confirm. To the right of that, type a sentence to specify what you want done based on that image.
 
@@ -586,7 +615,7 @@ The sample skills github is by Google cloud leader Addy Osmani, who has examples
    * Windsurf
    * OpenCode
    * GitHub Copilot
-   * Kiro IDE & CLI
+   * AWS Kiro IDE & CLI <a target="_blank" href="https://thenewstack.io/kiro-is-awss-specs-centric-answer-to-windsurf-and-cursor/">*</a>
    * Codex / Other Agents
    <br /><br />
 
@@ -728,37 +757,46 @@ Addy advises "Skills should be specific (actionable steps, not vague advice), ve
    export CLAUDE_CODE_USE_FOUNDRY=1
    ```
 
-1. <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Run Claude with no token fees (with some privacy invasion).
+1. <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Run Claude with no token fees
    ```bash
    export ANTHROPIC_API_KEY=""
    export ANTHROPIC_BASE_URL=http://localhost:11434
    ```
-   <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Instead of "Download" at<br />
-   <a target="_blank" href="https://lmstudio.ai/blog/claudecode/">https://lmstudio.ai/blog/claudecode</a>
-   ```bash
-   brew install --cask lm-studio
-   ```
-   Alternately, use Ollama <a target="_blank" href="https://www.youtube.com/watch?v=WhW3iuUArqI" title="by Ruslan Brilenkov">VIDEO</a>: 
+   For CLI, use Ollama <a target="_blank" href="https://www.youtube.com/watch?v=WhW3iuUArqI" title="by Ruslan Brilenkov">VIDEO</a>, <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/04/cc-deep-dive-16-the-local-showdown/">BLOG</a>: 
    ```bash
    brew install ollama
    export ANTHROPIC_AUTH_TOKEN=ollama
    ollama signin
-   ollama pull kimi-k2.5:cloud  # on Claude's cloud (AWS)
-   OLLAMA_CONTEXT_LENGTH=64000 ollama serve
-   claude --model "kimi-k2.5:cloud"
    ```
+   Setup auth for free use of moonshot.ai's Kimi model downloaded for running on Ollama via <strong>local relay path</strong>.
+
+1. Consider the model to use:
+   ```
+   MY_MODEL="kimi-k2.5:cloud"
+   ollama pull "$MY_MODEL"  # on Claude's cloud (AWS)
+   OLLAMA_CONTEXT_LENGTH=64000 ollama serve
+   claude --model "$MY_MODEL"
+   ```
+   CAUTION: "cloud" in the model ID means access in the cloud and loss of privacy.
+
    WARNING: <a target="_blank" href="https://medium.com/towards-artificial-intelligence/ive-been-recommending-deepseek-kimi-for-months-then-anthropic-published-this-40e95dc8cd1b">Kimi (in China) was created (stolen) by distillation of Anthropic's model</a>.
 
-   Setup auth for free use of moonshot.ai's Kimi model downloaded for running on Ollama via <strong>local relay path</strong>.
    The model features a 1T-parameter Mixture-of-Experts (MoE) Transformer architecture with 32B activated parameters.
    It supports image, video, PDF, and text inputs up to 256K tokens and excels in benchmarks like MMMU-Pro (78.5), SWE-Bench Verified (76.8), and AIME 2025 (96.1). 
    Trained on approximately 15 trillion mixed visual and text tokens, it enables native multimodality, cross-modal reasoning, and efficient tool use grounded in visual data.
 
    Using a free model means that you can use automatic <strong>/loop</strong> to iterate through many results, then select the best, like a Monte Carlo simulation.
 
-   But LM Studio using the MLX backend can produce 20 to 30 percent faster generation for the same model on the same hardware.
-   And the Apple M3 Max has more bandwidth than the newer M4 Pro. 
+   The Apple M3 Max has more bandwidth than the newer M4 Pro. 
 
+
+   But LM Studio using the MLX backend can produce 20 to 30 percent faster generation for the same model on the same hardware. 
+   
+1. <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Instead of "Download" at<br />
+   <a target="_blank" href="https://lmstudio.ai/blog/claudecode/">https://lmstudio.ai/blog/claudecode</a>
+   ```bash
+   brew install --cask lm-studio
+   ```
 
 
 <a name="help"></a>
@@ -780,9 +818,9 @@ REMEMBER: Two folders are created:
    * <a href="#.claude"><tt>.claude</tt></a> contains files
    <br /><br />
 
-   <a name=".claude"></a>
+<a name=".claude"></a>
 
-   ### Root .claude folder
+### Root .claude folder
 
 1. Navigate to <tt>.claude</tt> at the root (above User folders), where Claude keeps its internal folders and files:
    * backups
@@ -1117,7 +1155,7 @@ hooks/todo-enforcer.config.json
 
    ### Artifacts
 
-   <img align="right" width="150" alt="claude-app-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774594600/claude-app-menu_qr26in.png">
+   <a href="#ClaudeDesktopUI"><img align="right" width="150" alt="claude-app-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774594600/claude-app-menu_qr26in.png" /></a>
 1. Click "+ New artifacts". Artifiacts are pre-coded small interactive apps such as Productivity Tools.
 1. Click "Artifacts" on the menu and under its "Inspiration" tab, try:
    * click "Flashcards" and provide a CSV file.
@@ -1139,8 +1177,6 @@ hooks/todo-enforcer.config.json
 
    REMEMBER: Most services at the end of the connector (such as Zapier) charge money.   
 
-
-<hr />
 
 1. PROTIP: Instead of clicking "Download" for "Desktop" within "Claude Code environments", 
    <pre>
@@ -1216,21 +1252,38 @@ hooks/todo-enforcer.config.json
 
    ### /statusline
 
-   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=11585s">VIDEO</a>:
-
-   Install HeadsUpDisplay (HUD) plugin to <a target="_blank" href="https://medium.com/@joe.njenga/i-found-this-claude-code-plugin-that-shows-whats-happening-inside-the-engine-d38447d852c7">add up to 4 lines below your input prompt to know</a> if it’s still making progress or is stuck.
+   By default, there are two lines in the "status line" below the Claude Code prompt:
    ```
-   /plugin marketplace add <a target="_blank" href="https://github.com/jarrodwatts/claude-hu">jarrodwatts/claude-hud</a>
+   [Sonnet 4.6] | User
+   Context .... 0%
+   ```
+
+   REMEMBER: To determine what it displays on its Status Line, Claude references JSON file:<br/>
+   <tt>~/.claude/statusline.sh</tt>
+   which can be changed by Plugins from the Claude Marketplace.
+
+   <a target="_blank" href="https://medium.com/@joe.njenga/i-tested-every-claude-code-statusline-plugin-only-these-5-are-worth-it-c40af8385e4a">Among StatusLine Plugins</a>
+   making use of <a target="_blank" href="https://code.claude.com/docs/en/statusline#build-a-status-line-step-by-step">Claude Code’s native statusline API</a>:
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=11585s">VIDEO</a>:
+   Optionally install <a target="_blank" href="https://github.com/jarrodwatts/claude-hu">jarrodwatts/claude-hud</a> for the HeadsUpDisplay (HUD) plugin to <a target="_blank" href="https://medium.com/@joe.njenga/i-found-this-claude-code-plugin-that-shows-whats-happening-inside-the-engine-d38447d852c7">add up to 4 lines below your input prompt to know</a> if it’s still making progress or is stuck.
+   <a target="_blank" href="https://newsletter.claudecodemasterclass.com/">$80/yr Masterclass</a>
+
+   ```
+   /plugin marketplace add jarrodwatts/claude-hud
    /plugin install claude-hud
    /reload-plugins   # to activate
-   /claude-hud:setup     # to ~/.claude/settings.json
+   /claude-hud:setup
    /restart Claude Code
    code ~/.claude/plugins/claude-hud/config.json
    ```
-   Updates every ~300ms.
-   <a target="_blank" href="https://newsletter.claudecodemasterclass.com/">$80/yr Masterclass</a>
+   The "add" downloads to folder <tt>~/.claude/plugins/marketplaces/claude-plugins-official</tt>
+   
+   Claude references <tt>~/.claude/plugins/claude-hud/config.json</tt>
 
-
+   The Updates every ~300ms.
+   
+   
    <a name="status"></a>
 
    ### /status
