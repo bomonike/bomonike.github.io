@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-04-28"
-lastchange: "26-04-28 v030 statusline @anthropic-certs.md"
+lastchange: "26-04-28 v031 hooks @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -182,9 +182,9 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <href="#Tools">MCP Tools</a> defines what MCP clients should run to take action.
 
-* <strong>Hooks</strong> are small Python and Bash shell scripts (agentic workflows) that run when automatically triggered by events (before or after Claude tries to do something). REMEMBER: A hook can also block Claude from taking an action unless a specific condition has been met.
+* <a href="#Hooks">Hooks</a> are small Python and/or Bash shell scripts (agentic workflows) that run when <strong>triggered by events</strong>: "PreToolUse" (after Read) or "PostToolUse" (after Write or Edit). REMEMBER: A hook can also block Claude from taking an action unless a specific condition has been met.
 
-* <a href="#Plugins">Plugins</a> (under the Customize menu item) bundle hooks, <a href="#SlashCommands">slash commands</a>, and skills together for sharing with others. The "plugins" folder contains a <tt>blocklist.json</tt> file, a "known_marketplaces.json" file and the <strong>marketplaces</strong> folder, starting with "claude-plugins-official".
+* <a href="#Plugins">Plugins</a> (under the Customize menu item) “packaged feature bundles” may include (bundle) hooks, <a href="#SlashCommands">slash commands</a>, and skills together for sharing with others. The "plugins" folder contains a <tt>blocklist.json</tt> file, a "known_marketplaces.json" file and the <strong>marketplaces</strong> folder, starting with "claude-plugins-official".
 
 * <strong>Claude Agent SDK</strong> are used to build agentic AI systems beyond coding assistance.
 
@@ -544,175 +544,6 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    ollama launch hermes --model "$MY_MODEL_ID"
    ```
 
-
-<a name="ClaudeDesktopUI"></a>
-
-## Claude Desktop Key Shortcuts
-
-PROTIP: Instead of moving your mouse and clicking the icons, it's faster to hold down the command key and press the key indicated.
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1777224351/claude-menus-keys_bl5oxm.png"><img alt="claude-menus-keys.png from pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1777224351/claude-menus-keys_bl5oxm.png" /></a>
-
-QUESTION: How to get shortcut keys for other menu items?
-
-
-<a name="HowClaudeWorks"></a>
-
-## How Claude Code Works
-
-Anthropic has issued dozens of take-down requests to "claw back" its leak. 
-But https://github.com/oboard/claude-code-rev has restored some functionality using the bun JavaScript package manager and testing utility. bun replaces Node + npm + ts-node + jest + esbuild with a single binary.
-
-<a target="_blank" href="https://deep-dive-claude-code.vercel.app">The "Deep Dive Claude Code app"</a> presents its analysis of the leak's 960+ files, 50+ integrated tools, 380K+ lines of code.
-These 13 chapters take you from the core loop to the full engineering picture, layer by layer.
-
-REMEMBER: The revolution Claude (and other GenAI products) is that instead of typing precise programming code, you type English sentences to describe how Claude generates programming code, in markdown format files (with “.md” at the end of file names).
-
-Press # (for "memory mode") instructions for Claude Code to update <a href="#CLAUDE.md">CLAUDE.md files</a> which define your preferences.
-
-Press <strong>Shift + Tab</strong> to toggle to "<strong>Planning Mode</strong>" where Claude expands its <strong>planning</strong> of changes to md files it will make based on your specification.
-
-Type <strong>ULTRATHINK</strong> ahead of requests to use a Claude "<strong>Thinking</strong> mode" which applies the maximum <strong>depth</strong> of <strong>reasoning</strong> at planning.
-This invokes Claude to break down complex problems step by step.
-
-WARNING: Additional planning and thinking require additional tokens to be charged.
-
-REMEMBER: Press the Esc key to interrrupt Claude.
-
-Within prompts, type @ to begin specifying a file's path pointing to contents to retrieve in your request to Claude.
-
-To take a screen shot on macOS, press the usual command + Shift + 4 which changes the cursor to crosshairs. Position it on the screen and press your mouse to drag and drop to the opposite corner of the box to capture the section to your computer's invisible clipboard. Click the Claude input field and press control + V to paste. "[Image #1]" would appear to confirm. To the right of that, type a sentence to specify what you want done based on that image.
-
-
-<a name="CustomSlash"></a>
-
-## Custom Slash Commands
-
-<a target="_blank" href="https://www.youtube.com/watch?v=4bfKyZ7hbsU">VIDEO</a>
-The essence of the <strong>revolution that is AI</strong> is this diagram from the
-<a target="_blank" href="https://github.com/addyosmani/agent-skills">agent-skills Github</a>:<br />
-
-PROTIP: To make full use of Claude, instead of diving into coding right away (then making changes later), separate your work into several stages of a <strong>development lifecycle</strong>, using a slash command at each stage, such as these custom slash commands:
-<pre>
-  DEFINE        PLAN          BUILD         VERIFY        REVIEW        SHIP
- ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐
- │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │  QA  │ ───▶ │  Go  │
- │Refine│      │  PRD │      │ Impl │      │Debug │      │ Gate │      │ Live │
- └──────┘      └──────┘      └──────┘      └──────┘      └──────┘      └──────┘
-  /spec         /plan         /build        /test         /review       /ship
-</pre>
-
-<strong>/build</strong> has AI generate/implement all the code.
-
-People collaborate by revising .md files that are consolidated into a <strong>"PRD" (Product Requirements Document)</strong> a short document that defines a "high level" description of what a product should do, why it exists, and what “done” looks like. It keeps product, design, engineering, and stakeholders aligned on the same goal. 
-
-AI generation can be repeated with slight variations so the AI has additional opportunities to get it right, based on the PRD specification. 
-
-The sample skills github is by Google cloud leader Addy Osmani, who has examples for several clients:
-   * Claude Code (recommended)
-   * Cursor
-   * Gemini CLI
-   * Windsurf
-   * OpenCode
-   * GitHub Copilot
-   * AWS Kiro IDE & CLI <a target="_blank" href="https://thenewstack.io/kiro-is-awss-specs-centric-answer-to-windsurf-and-cursor/">*</a>
-   * Codex / Other Agents
-   <br /><br />
-
-The 20 skills in the repo include a "/code-simplify" step for more clarity over cleverness.
-
-What's really special are Pre-configured specialist personas for targeted reviews by
-the "security-auditor" persona.
-
-Each skill file contains:
-   * Overview         → What this skill does
-   * When to Use      → Triggering conditions
-   * Process          → Step-by-step workflow
-   * Rationalizations → Excuses + rebuttals
-   * Red Flags        → Signs something's wrong
-   * Verification     → Evidence requirements
-   <br /><br />
-
-Addy advises "Skills should be specific (actionable steps, not vague advice), verifiable (clear exit criteria with evidence requirements), battle-tested (based on real workflows), and minimal (only what's needed to guide the agent)."
-
-
-<a name="SlashCommands"></a>
-
-## / slash commands
-
-1. Type just the / slash character for a menu:
-
-   <pre>
-   /init
-   /batch    # orchestrates large-scale changes across your entire codebase — decomposing work into 5 to 30 independent units, presenting a plan for approval, then spawning one background agent per unit in an isolated git worktree. 
-
-   /claude-api  # loads Claude API reference material for your project's language. These are like bundled skills but built-in.
-   /compact     # summarize the conversation and replaces the current context with the summary. 
-   /context     # <a href="#TokenContext">token usage by each system component</a>
-   <a href="#Cost">/cost</a>       # <a href="#Cost">tokens spent</a>
-   /debug   # Shows config loading details and full context composition.
-   /extra-usage
-   /heapdump
-   /loop
-   /pr-comments
-   /release-notes
-   /review
-   /security-review
-   /simplify
-   /update-config
-   /schedule
-   </pre>
-
-   Others:
-   <pre>
-   /help       # menu below:
-   /connect    # establish connection
-   /start      # Begin a new session
-   /terminal-setup  # ???
-
-   /memory     # 
-   <a href="#statusline">/statusline</a> # below the prompt defined in customizable ~/.claude/statusline.sh
-   /settings   # menu
-
-   /clear      # (aka /reset) is faster than exiting and starting Claude Code again.
-
-   /search     # through the database
-   /upload     # files
-   exit        # from Claude UI/CLI program
-
-   <a href="#status">/status</a>     # overview of your current Claude Code setup
-   <a href="#config">/config</a>     # configuration
-   <a href="#loop">/loop</a>
-   <a href="#doctor">/doctor</a>
-   </pre>
-
-   Additional slash commands:
-   <pre>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insights</a>   # file://$HOME/.claude/usage-data/report.html
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a> https://www.youtube.com/watch?v=brLhhkUqcn4&t=18618s">max for Opus only. high, medium, low, auto.
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=6m31s">/batch   # Batch Tasks & PRs </a>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=9m3s">/simplify   # Code Review</a>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=11m42s">/loop   # Schedule Prompts</a>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=14m31s">/btw   # side question</a>
-   </pre>
-
-
-
-   REMEMBER: Each session is a 5-hour rolling window (at time of this writing). ???
-
-   Models reset ???
-
-   <pre>
-   /model default   # to switch to the sonnet model
-   /model haiku     # to switch to using the latest Haiku model.
-   /model Sonnet (1M context)  # to switch to using the latest Opus model.
-   /model Opus (1M context)    # to switch to using the latest Opus model.
-   /model mythos               # new Capybarra March 28, 2026 to Cyber Defenders.
-   /fast                       # to speed up Opus model execution.
-   </pre>
-
-
    <a name="Auth"></a>
 
    ### /login = First-time Authentication
@@ -798,14 +629,195 @@ Addy advises "Skills should be specific (actionable steps, not vague advice), ve
    brew install --cask lm-studio
    ```
 
+<a name="ClaudeDesktopUI"></a>
 
-<a name="help"></a>
+## Claude Desktop Key Shortcuts
+
+PROTIP: Instead of moving your mouse and clicking the icons, it's faster to hold down the command key and press the key indicated.
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1777224351/claude-menus-keys_bl5oxm.png"><img alt="claude-menus-keys.png from pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1777224351/claude-menus-keys_bl5oxm.png" /></a>
+
+QUESTION: How to get shortcut keys for other menu items?
+
+
+<a name="SlashCommands"></a>
+
+## / slash commands
+
+1. Type just the / slash character for a menu:
+   <pre>
+   /init
+   /batch    # orchestrates large-scale changes across your entire codebase — decomposing work into 5 to 30 independent units, presenting a plan for approval, then spawning one background agent per unit in an isolated git worktree. 
+
+   /claude-api  # loads Claude API reference material for your project's language. These are like bundled skills but built-in.
+   /compact     # summarize the conversation and replaces the current context with the summary. 
+   /context     # <a href="#TokenContext">token usage by each system component</a>
+   <a href="#Cost">/cost</a>       # <a href="#Cost">tokens spent</a>
+   /debug   # Shows config loading details and full context composition.
+   /extra-usage
+   /heapdump
+   /loop
+   /pr-comments
+   /release-notes
+   /review
+   /security-review
+   /simplify
+   /update-config
+   /schedule
+   </pre>
+
+   Others:
+   <pre>
+   /help       # menu below:
+   /connect    # establish connection
+   /start      # Begin a new session
+   /terminal-setup  # ???
+
+   /memory     # 
+   <a href="#statusline">/statusline</a> # below the prompt defined in customizable ~/.claude/statusline.sh
+   /settings   # menu
+
+   /clear      # (aka /reset) is faster than exiting and starting Claude Code again.
+
+   /search     # through the database
+   /upload     # files
+   exit        # from Claude UI/CLI program
+
+   <a href="#status">/status</a>     # overview of your current Claude Code setup
+   <a href="#config">/config</a>     # configuration
+   <a href="#loop">/loop</a>
+   <a href="#doctor">/doctor</a>
+   </pre>
+
+   <a name="help"></a>
    
-## /help for Shortcuts 
+   ### /help for Shortcuts 
 
    <a target="_blank" href="https://code.claude.com/docs/en/overview/"><img width="350" alt="claude-code-help.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774687133/claude-code-help_bjkq9f.png" /></a>
 
    REMEMBER: Just as within Jupyter Notebook, run shell commands prefixed with the ! modifier. For example, ! pwd will run the pwd command and insert the output right into the conversation.
+
+   ### /model switch
+
+   <pre>
+   /model default   # to switch to the sonnet model
+   /model haiku     # to switch to using the latest Haiku model.
+   /model Sonnet (1M context)  # to switch to using the latest Opus model.
+   /model Opus (1M context)    # to switch to using the latest Opus model.
+   /model mythos               # new Capybarra March 28, 2026 to Cyber Defenders.
+   /fast                       # to speed up Opus model execution.
+   </pre>
+
+
+   ### More slash commands
+   <pre>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insights</a>   # file://$HOME/.claude/usage-data/report.html
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a> https://www.youtube.com/watch?v=brLhhkUqcn4&t=18618s">max for Opus only. high, medium, low, auto.
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=6m31s">/batch   # Batch Tasks & PRs </a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=9m3s">/simplify   # Code Review</a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=11m42s">/loop   # Schedule Prompts</a>
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=14m31s">/btw   # side question</a>
+   </pre>
+   
+   ### 5-hour window
+
+   REMEMBER: Each session is a 5-hour rolling window (at time of this writing). ???
+
+   Models reset ???
+
+
+
+
+<a name="HowClaudeWorks"></a>
+
+## How Claude Code Works
+
+Anthropic has issued dozens of take-down requests to "claw back" its leak. 
+But https://github.com/oboard/claude-code-rev has restored some functionality using the bun JavaScript package manager and testing utility. bun replaces Node + npm + ts-node + jest + esbuild with a single binary.
+
+<a target="_blank" href="https://deep-dive-claude-code.vercel.app">The "Deep Dive Claude Code app"</a> presents its analysis of the leak's 960+ files, 50+ integrated tools, 380K+ lines of code.
+These 13 chapters take you from the core loop to the full engineering picture, layer by layer.
+
+REMEMBER: The revolution Claude (and other GenAI products) is that instead of typing precise programming code, you type English sentences to describe how Claude generates programming code, in markdown format files (with “.md” at the end of file names).
+
+Press # (for "memory mode") instructions for Claude Code to update <a href="#CLAUDE.md">CLAUDE.md files</a> which define your preferences.
+
+Press <strong>Shift + Tab</strong> to toggle to "<strong>Planning Mode</strong>" where Claude expands its <strong>planning</strong> of changes to md files it will make based on your specification.
+
+Type <strong>ULTRATHINK</strong> ahead of requests to use a Claude "<strong>Thinking</strong> mode" which applies the maximum <strong>depth</strong> of <strong>reasoning</strong> at planning.
+This invokes Claude to break down complex problems step by step.
+
+WARNING: Additional planning and thinking require additional tokens to be charged.
+
+REMEMBER: Press the Esc key to interrrupt Claude.
+
+Within prompts, type @ to begin specifying a file's path pointing to contents to retrieve in your request to Claude.
+
+
+### Screen shot in a prompt
+
+To take a screen shot on macOS, press the usual command + Shift + 4 which changes the cursor to crosshairs. Position it on the screen and press your mouse to drag and drop to the opposite corner of the box to capture the section to your computer's invisible clipboard. Click the Claude input field and press control + V to paste. "[Image #1]" would appear to confirm. To the right of that, type a sentence to specify what you want done based on that image.
+
+
+<a name="CustomSlash"></a>
+
+## Custom Slash Commands
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=4bfKyZ7hbsU">VIDEO</a>
+   The essence of the <strong>revolution that is AI</strong> is this diagram from the
+   <a target="_blank" href="https://github.com/addyosmani/agent-skills">agent-skills Github</a>:<br />
+   PROTIP: To make full use of Claude, instead of diving into coding right away (then making changes later), separate your work into several stages of a <strong>development lifecycle</strong>, using a slash command at each stage, such as these custom slash commands:
+
+   <pre>
+   DEFINE        PLAN          BUILD         VERIFY        REVIEW        SHIP
+   ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐
+   │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │  QA  │ ───▶ │  Go  │
+   │Refine│      │  PRD │      │ Impl │      │Debug │      │ Gate │      │ Live │
+   └──────┘      └──────┘      └──────┘      └──────┘      └──────┘      └──────┘
+   /spec         /plan         /build        /test         /review       /ship
+   </pre>
+
+   <strong>/build</strong> has AI generate/implement all the code.
+
+   People collaborate by revising .md files that are consolidated into a <strong>"PRD" (Product Requirements Document)</strong> a short document that defines a "high level" description of what a product should do, why it exists, and what “done” looks like. It keeps product, design, engineering, and stakeholders aligned on the same goal. 
+
+   AI generation can be repeated with slight variations so the AI has additional opportunities to get it right, based on the PRD specification. 
+
+   The sample skills github is by Google cloud leader Addy Osmani, who has examples for several clients:
+   * Claude Code (recommended)
+   * Cursor
+   * Gemini CLI
+   * Windsurf
+   * OpenCode
+   * GitHub Copilot
+   * AWS Kiro IDE & CLI <a target="_blank" href="https://thenewstack.io/kiro-is-awss-specs-centric-answer-to-windsurf-and-cursor/">*</a>
+   * Codex / Other Agents
+   <br /><br />
+
+The 20 skills in the repo include a "/code-simplify" step for more clarity over cleverness.
+
+What's really special are Pre-configured specialist personas for targeted reviews by
+the "security-auditor" persona.
+
+Each skill file contains:
+   * Overview         → What this skill does
+   * When to Use      → Triggering conditions
+   * Process          → Step-by-step workflow
+   * Rationalizations → Excuses + rebuttals
+   * Red Flags        → Signs something's wrong
+   * Verification     → Evidence requirements
+   <br /><br />
+
+Addy advises "Skills should be specific (actionable steps, not vague advice), verifiable (clear exit criteria with evidence requirements), battle-tested (based on real workflows), and minimal (only what's needed to guide the agent)."
+
+
+1. <a target="_blank" href="https://www.coursera.org/learn/claude-code-in-action/lecture/b36jN/custom-commands">VIDEO</a>: Create a folder to hold all custom commands:
+   ```bash
+   md -p ~/.claude/commands
+   ```
+1. Create a .md (markdown) file for each custom command.
+
 
 
 <a name="ClaudeFiles"></a>
@@ -1344,7 +1356,7 @@ my-python-app/
 
 <a name="settings"></a>
 
-### Settings config
+## Settings config
 
 * managed-settings.json — enterprise-enforced, can't be overridden.
 * .claude/settings.json — project-level, commit to share with team.
@@ -1352,9 +1364,9 @@ my-python-app/
 * .claude/settings.local.json — your <strong>personal</strong> project overrides (gitignored).
 <br /><br />
 
-   <a name="config"></a>
+<a name="config"></a>
    
-   ### /config
+### /config
 
    <tt>/config</tt> inside Claude Code's interactive REPL to edit settings through a UI instead of editing JSON directly. See https://code.claude.com/docs/en/settings
    <pre>
