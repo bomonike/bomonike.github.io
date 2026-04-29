@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-28"
-lastchange: "26-04-28 v031 hooks @anthropic-certs.md"
+date: "2026-04-29"
+lastchange: "26-04-29 v032 ollama context @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -71,7 +71,7 @@ This article was hand-crafted based on AI responses.
 
 Claude competes with agentic coding tools (aka coding agent IDEs) that read a codebase, edit files, and run commands:
    * Amazon's Kiro CLI & IDE for spec-driven development. But it needs to be constantly connected to AWS eating up credits.
-   * warp.dev (which does a great job of detecting coding and CLI errors and suggesting fixes)
+   * warp.dev (which does a great job of detecting coding and CLI errors and suggesting fixes), <a target="_blank" href="https://github.com/warpdotdev/warp">now open source</a>
    * OpenAI's Codex <a target="_blank" href="https://www.youtube.com/watch?v=kFS6z_97Ohc&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
    * OpenCode
    * Perplexity
@@ -102,7 +102,7 @@ REMEMBER: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a
 
    Meet Claude - Platform - Solutions - <a href="#Pricing">Pricing</a> - Resources - Contact sales - Try Claude
 
-* <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization). Claude also creates the evaluation automation that it runs. <a target="_blank" href="https://www.youtube.com/watch?v=QKdKcFjjZhE">"You Guide To Local AI | Hardware, Setup and Models"</a>
+* <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a> is the user <strong>Claude Console</strong> Dashboard, Workbench, Files, and <a href="#Skills">Skills</a>, <a target="_blank" href="https://platform.claude.com/docs/en/home">Documentation</a> (for each organization). Claude also creates the evaluation automation that it runs. <a target="_blank" href="https://www.youtube.com/watch?v=QKdKcFjjZhE">"You Guide To Local AI - Hardware, Setup and Models"</a>
 
 * <strong>Claude API</strong> refers to the endpoint listening for <a href="#ChatAPICall">SDK requests</a> from procedural programming code or via the claude-agent-sdk wrapper around <tt>claude -p</tt> commands
 
@@ -335,22 +335,31 @@ https://www.youtube.com/watch?v=uUGfo8QOsW0&pp=ugUEEgJlbg%3D%3D
 Claude Mythos 5: Most Powerful Model Ever! AGI, GLM 5.1, Claude Code Update & Codex Plugins! AI NEWS  
 
 
+<a name="Hardware"></a>
+
+## Hardware Needed
+
+1. If you need to buy a machine, consider that Mac Mini's have good resale value and value on mid-tier vs. PC server with NVIDIA GPU. Apple does overcharge for memory. The Apple M3 Max has more bandwidth than the newer M4 Pro.
+1. Buy two 2+ TB USB drives for backup. One to keep plugged in and another for daily full backups you leave in a faraday bag.
+
+QUESTION: Can a Chromebook (with no large RAM or hard drive) be used?
+
+
 <a name="Installs"></a>
 
 ## Installs
 
-1. If you need to buy a machine, consider that Mac Mini's have good resale value and value on mid-tier vs. PC server with NVIDIA GPU. 
-1. Buy two USB drives for backup. One to keep plugged in and another for daily full backups you leave in a faraday bag.
-
-1. Install Homebrew
+1. To enable installation of utility packages on macOS, install the Homebrew package manager for macOS, from any folder:
    ```bash
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
+   NOTE: It makes use of Ruby that comes with all macOS.
 
-1. To freely open apps, add the two app paths to .bash_profile:
+1. To freely open apps from any folder, add the two app paths to .bash_profile:
    ```
    /Applications;~/Applications
    ```
+
 1. Optionally, install an alternative to macOS native Terminal app:
    ```bash
    brew install --cask kitty
@@ -386,7 +395,7 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    alias clc='cl --continue'   # resume last session with the context/history from the previoius session
    # Resume Claude with the context/history from the previoius session but still be able to get back to that point later:
    alias clf='claude --resume --fork session'. 
-      ```
+   ```
 
    <a name="VSCode"></a>
 
@@ -401,6 +410,148 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
 1. Click the Extensions and enter "Claude Code" in the Marketplace
    <img alt="claude-vscode-install.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774686736/claude-vscode-install_dhapdt.png" />
 1. Click "Install" to the one from "Anthropic" (marked with a blue star).
+
+
+   <a name="OllamaInstall"></a>
+
+   ### Ollama Install
+
+   To Run LLMs locally on your machine off the cloud, install Ollama (for more privacy). On a Mac Mini:
+
+1. Install Ollama: <a target="_blank" href="https://www.youtube.com/watch?v=WhW3iuUArqI" title="by Ruslan Brilenkov">VIDEO</a>, <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/04/cc-deep-dive-16-the-local-showdown/">BLOG</a>: 
+   ```bash
+   brew install ollama
+   ```
+   That installs folders that need to be removed to fully uninstall:
+   * <tt>~/.ollama</tt> to hold models and configuration. Under that, <tt>~/.ollama/logs</tt> contains logs.
+   * "~/Library/Application Support/Ollama"
+   * "~/Library/Saved Application State/com.electron.ollama.savedState"
+   *  ~/Library/Caches/com.electron.ollama/
+   *  ~/Library/Caches/ollama
+   *  ~/Library/WebKit/com.electron.ollama
+   <br /><br />
+
+1. Get an Ollama account and API key:
+   1. https://ollama.com
+   2. Click "Sign in". This creates a client_id in the URL.
+   3. Click "Sign Up". Type your email address. Continue.
+   4. Create a password using your secrets manager and switch to paste it.
+   5. Switch to your email client and copy the code.
+   6. Copy the code and switch back to the Ollama.com to paste it.
+   7. Click "Sign in". Type your email and click Continue.
+   8. Copy your password from your secrets manager and switch to paste it.
+   9. At https://ollama.com/pricing notice the "Free" account enables you to "Run models on your hardware" and the paid subscriptions enable you to run their cloud models. "Add API Key".
+   9. Type a key name (using a date such as 261231). Click "Generate API key".
+   9. Click the copy icon to copy the API key and paste it in your secrets manager.
+   9. Optionally, create an add your asymmetric key which starts with "ssh-ed25519 AAA".
+   9. At https://ollama.com/settings click "Create API key" to run models on their cloud.
+
+1. In your file, construct the variable by pasting the password copied from your secret manager:
+   ```
+   OLLAMA_API_KEY=your_api_key
+   ```
+
+1. Sign into Ollama CLI:
+   ```bash
+   ollama signin
+   ```
+1. In the window that opened automatically to <tt>https://signin.ollama.com/...</tt> on your default browser app, type your email and password to sign in to your paid account.
+
+   Setup auth for free use of moonshot.ai's <a target="_blank" href="https://medium.com/@joe.njenga/i-tried-kimi-k2-6-on-claude-code-and-forgot-opus-4-6-exists-5d9ba4c01911">Kimi model downloaded</a> for running on Ollama via <strong>local relay path</strong>.
+
+
+   ### Ollama model selection
+
+1. At https://ollama.com/search select a cloud model and copy its model id listed to paste in a variable. For example:
+   ```bash
+   #MY_MODEL_ID="kimi-k2.5:cloud"
+   MY_MODEL_ID="gpt-oss:120b-cloud"
+   ollama show "$MY_MODEL_ID"
+   ```
+   For example, "context length" is 131072
+   <pre>
+    Model
+        architecture        gptoss          
+        parameters          116829156672    
+        context length      131072          
+        embedding length    2880            
+        quantization        MXFP4           
+
+    Capabilities
+        completion    
+        tools         
+        thinking   
+   </pre>
+
+   | model ID | context<br />length | embedding<br />length | VRAM |
+   | -------- | ------------------: | --------: | ---- |
+   | deepseek-v3.1:671b-cloud | 163840 | 7168 | ~128 GB |
+   | deepseek-r1:14b | 131072 | 5120 | ? |
+   | gpt-oss:20b-cloud | 131072 | 2880 | ? |
+   | gpt-oss:120b-cloud | 131072 | 2880 | ? |
+   | kimi-k2:1t-cloud | 262144 | 2048 | ? |
+   | qwen3-coder:480b-cloud | 262144 | 2048 | ? |
+
+   Multiply the two numbers to calculate the <strong>KV cache size</strong><br />
+   ≈ embedding_length × context_length × 2 × num_layers × bytes_per_element
+   
+   Since there are 2 bytes per element for fp16,
+   VRAM for deepseek-r1:14b: <br />
+   = 131072 × 5120 × 2 × 48 × 2 (fp16)
+   ≈ ~128 GB  (full context, fp16)
+
+   AirLLM?
+
+   DEFINITION: The <strong>embedding length</strong> is the size of each vector representing each token internally. It is larger for more complex models. The embedding length needs to match the "dimensions=" spec to define a vector DB used to create RAG pipelines for semantic search.
+
+1. Calculate OLLAMA_CONTEXT_LENGTH:
+
+   DEFINITION: <a target="_blank" href="https://docs.ollama.com/context-length#context-length">DOCS</a>: The OLLAMA_CONTEXT_LENGTH specification is the context window size (in tokens) of how much text the model can "see" at once during inference:
+
+   | Use Case | Range |
+   | -------- | ----- |
+   | Default if unset | 2048 |
+   | Chat / Q&A | 2048 – 4096|
+   | Document summarization | 8192 – 32768 |
+   | Long-form coding/analysis | 16384 – 65536 |
+
+1. Pull the model down to your machine:
+   ```bash
+   ollama pull "$MY_MODEL_ID"        # download
+   ```
+
+   ### Start Ollama
+
+1. To run Ollama in the <strong>foreground</strong>, start the service using the memory specification:
+   ```bash
+   OLLAMA_CONTEXT_LENGTH=64000 OLLAMA_FLASH_ATTENTION="1" OLLAMA_KV_CACHE_TYPE="q8_0" /opt/homebrew/opt/ollama/bin/ollama serve
+   ```
+
+   Alternately, to have ollama start/restart on every login always running in the <strong>background</strong> (taking up RAM):
+   ```bash
+   brew services start ollama
+   ```
+
+1. While running, identify the CONTEXT memory being used:
+   ```bash
+   ollama ps
+   ```
+   For example:
+   <pre>
+    NAME             ID              SIZE      PROCESSOR    CONTEXT    UNTIL
+    gemma3:latest    a2af6cc3eb7f    6.6 GB    100% GPU     65536      2 minutes from now
+   </pre>
+
+
+
+   ### Anthropic API Key
+
+1. To tell Claude to use Ollama locally instead: <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>:
+   ```bash
+   export ANTHROPIC_API_KEY=""
+   export ANTHROPIC_BASE_URL=http://localhost:11434
+   export ANTHROPIC_AUTH_TOKEN=ollama
+   ```
 
 
    <a name="ClaudeDesktopInstall"></a>
@@ -528,22 +679,22 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    Using a variable enables you to copy commands below and switch tot he CLI to paste them (with command+V):
 
 * Chat with the model like Google & ChatGPT Question & Answer:
-   ```
+   ```bash
    ollama run "$MY_MODEL_ID"
    ``` 
 * To use DeepSeek-V4-Pro with Claude Code, run:
-   ```
+   ```bash
    ollama launch claude --model "$MY_MODEL_ID"
    ```
 * For use with OpenClaw:
-   ```
+   ```bash
    ollama launch openclaw --model "$MY_MODEL_ID"
    ```
 * For use with Hermes Agent:
-   ```
+   ```bash
    ollama launch hermes --model "$MY_MODEL_ID"
    ```
-
+  
    <a name="Auth"></a>
 
    ### /login = First-time Authentication
@@ -588,18 +739,10 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    export CLAUDE_CODE_USE_FOUNDRY=1
    ```
 
-1. <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Run Claude with no token fees
-   ```bash
-   export ANTHROPIC_API_KEY=""
-   export ANTHROPIC_BASE_URL=http://localhost:11434
-   ```
-   For CLI, use Ollama <a target="_blank" href="https://www.youtube.com/watch?v=WhW3iuUArqI" title="by Ruslan Brilenkov">VIDEO</a>, <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/04/cc-deep-dive-16-the-local-showdown/">BLOG</a>: 
-   ```bash
-   brew install ollama
-   export ANTHROPIC_AUTH_TOKEN=ollama
-   ollama signin
-   ```
-   Setup auth for free use of moonshot.ai's Kimi model downloaded for running on Ollama via <strong>local relay path</strong>.
+
+   <a name="CostCompare"></a>
+
+   ### Model Cost Comparison
 
 1. Consider the model to use:
    ```
@@ -610,24 +753,26 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    ```
    CAUTION: "cloud" in the model ID means access in the cloud and loss of privacy.
 
-   WARNING: <a target="_blank" href="https://medium.com/towards-artificial-intelligence/ive-been-recommending-deepseek-kimi-for-months-then-anthropic-published-this-40e95dc8cd1b">Kimi (in China) was created (stolen) by distillation of Anthropic's model</a>.
-
    The model features a 1T-parameter Mixture-of-Experts (MoE) Transformer architecture with 32B activated parameters.
    It supports image, video, PDF, and text inputs up to 256K tokens and excels in benchmarks like MMMU-Pro (78.5), SWE-Bench Verified (76.8), and AIME 2025 (96.1). 
    Trained on approximately 15 trillion mixed visual and text tokens, it enables native multimodality, cross-modal reasoning, and efficient tool use grounded in visual data.
 
    Using a free model means that you can use automatic <strong>/loop</strong> to iterate through many results, then select the best, like a Monte Carlo simulation.
 
-   The Apple M3 Max has more bandwidth than the newer M4 Pro. 
+   <a target="_blank" href="https://www.youtube.com/watch?v=UV1WDNe4J5w&t=5m35s">VIDEO</a>:
+   * Using the "DeepSeek V4 Flash (high)" (from China) yields 75% of performance at 1% of the cost.
+   * Using the "DeepSeek V4 Pro" is the best price/performance
+   <br /><br />
 
+   WARNING: <a target="_blank" href="https://medium.com/towards-artificial-intelligence/ive-been-recommending-deepseek-kimi-for-months-then-anthropic-published-this-40e95dc8cd1b">models from China (Kimi, DeepSeek, etc.) was created (stolen) by (adversarial) distillation of Anthropic's models</a>. Michael Kratsios @mkratsios47
 
-   But LM Studio using the MLX backend can produce 20 to 30 percent faster generation for the same model on the same hardware. 
-   
-1. <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Instead of "Download" at<br />
+1. The LM Studio GUI using the MLX backend can produce 20 to 30 percent faster generation for the same model on the same hardware. 
+   <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Instead of "Download" at<br />
    <a target="_blank" href="https://lmstudio.ai/blog/claudecode/">https://lmstudio.ai/blog/claudecode</a>
    ```bash
    brew install --cask lm-studio
    ```
+
 
 <a name="ClaudeDesktopUI"></a>
 
@@ -652,7 +797,6 @@ QUESTION: How to get shortcut keys for other menu items?
    /claude-api  # loads Claude API reference material for your project's language. These are like bundled skills but built-in.
    /compact     # summarize the conversation and replaces the current context with the summary. 
    /context     # <a href="#TokenContext">token usage by each system component</a>
-   <a href="#Cost">/cost</a>       # <a href="#Cost">tokens spent</a>
    /debug   # Shows config loading details and full context composition.
    /extra-usage
    /heapdump
@@ -682,6 +826,9 @@ QUESTION: How to get shortcut keys for other menu items?
    /search     # through the database
    /upload     # files
    exit        # from Claude UI/CLI program
+
+   <strike><a href="#Cost">/cost</a></strike>     # Now at tokens spent in <a href="#Usage">/usage</a>
+   <strike><a href="#Usage">/stats</a></strike>     # Now at tokens spent in <a href="#Usage">/usage</a>
 
    <a href="#status">/status</a>     # overview of your current Claude Code setup
    <a href="#config">/config</a>     # configuration
@@ -743,7 +890,7 @@ REMEMBER: The revolution Claude (and other GenAI products) is that instead of ty
 
 Press # (for "memory mode") instructions for Claude Code to update <a href="#CLAUDE.md">CLAUDE.md files</a> which define your preferences.
 
-Press <strong>Shift + Tab</strong> to toggle to "<strong>Planning Mode</strong>" where Claude expands its <strong>planning</strong> of changes to md files it will make based on your specification.
+Press <strong>Shift + Tab</strong> to toggle from "Standard" to "<strong>Planning Mode</strong>" where Claude expands its <strong>planning</strong> of changes to md files it will make based on your specification.
 
 Type <strong>ULTRATHINK</strong> ahead of requests to use a Claude "<strong>Thinking</strong> mode" which applies the maximum <strong>depth</strong> of <strong>reasoning</strong> at planning.
 This invokes Claude to break down complex problems step by step.
@@ -941,14 +1088,15 @@ REMEMBER: Two folders are created:
 
    <a name="init"></a>
 
-1. generate a starter CLAUDE.md as a starting point:
+1. Generate a starter CLAUDE.md as a starting point:
    ```bash
    /init
    ```
 
-1. List folders and files:
+1. List folders and files as a tree 3 levels down from <tt>~/.claude/</tt>:
    ```bash
-   tree
+   brew install eza
+   eza -T -G -L 3 ~/.claude/
    ```
    TODO:
    <pre>
@@ -956,11 +1104,13 @@ REMEMBER: Two folders are created:
     ├── web
     ├── .editorconfig
     ├── .env.example
-    ├── .gitignore
-    ├── <a target="_blank" href="https://github.com/bomonike/claude-templates.git">CLAUDE.md</a>
+    ├── <a href="#.gitignore">.gitignore</a>
+    ├── CLAUDE.md
     ├── README.md
     └── docker-compose.yml
    </pre>
+
+   <a target="_blank" href="https://github.com/bomonike/claude-templates.git">CLAUDE.md</a>
 
 
 1. Edit file CLAUDE.md, the long-term memory file.
@@ -991,8 +1141,8 @@ REMEMBER: Two folders are created:
 
 * <a target="_blank" href="https://claude.com/skills">Claude Skills</a> "turn expertise, procedures, and best practices into reusable capabilities." To ensure output follows proven patterns (rather than guessing) for handling PowerPoint pptx files, <strong>pptx/SKILL.md</strong> is defined. 
 
-   https://platform.claude.com/workspaces/default/skills
-   handlers for pdf, Microsoft xlsx, pptx, docx, 
+   <a target="_blank" href="https://platform.claude.com/workspaces/default/skills">
+   Claud.com docs</a> on handlers for pdf, Microsoft xlsx, pptx, docx, 
 
 
 
@@ -1108,6 +1258,14 @@ From here, reference the design system in your prompts: “Build a primary butto
    * https://dev.to/gunnargrosch/automating-your-workflow-with-claude-code-hooks-389h
    <br /><br />
 
+Conceptually Claude hooks are like Git hooks: “run this script whenever X happens,” but for your AI coding workflow. Hooks are small, user‑defined scripts (shell commands, HTTP calls, or model prompts) that run automatically at specific points in a Claude Code session, such as:
+   * When Claude edits a file.
+   * When a session starts or ends.
+   * When a command is about to run or just finished.
+   <br /><br />
+
+They give deterministic control: you can enforce rules (code formatting, security checks, linting, notifications) without relying on Claude’s model to “remember” to do them.
+
 Programming (.py Python, .sh shell files, etc.):
 
    * check-comments.py  # checks for for excessive comments.
@@ -1115,6 +1273,11 @@ Programming (.py Python, .sh shell files, etc.):
    * skill-reminder.sh
    * todo-enforcer.sh
    <br /><br />
+
+
+<a name=".gitignore"></a>
+
+## .gitignore
 
 PROTIP: Within the <tt>.gitignore</tt> file are files generated by Claude:
 ```
@@ -1295,7 +1458,18 @@ hooks/todo-enforcer.config.json
 
    The Updates every ~300ms.
    
+1. To remove orphaned auto-installed dependencies:
+   ...bash
+   claude plugin prune now
+   ```
+1. validate accepts $schema, version, and description fields.    
    
+   Plugins pinned by another plugin's version constraint auto-update to the highest satisfying git tag. 
+
+   Plugin error handling distinguishes between conflicting dependencies, invalid versions, and overly complex version requirements.
+
+
+
    <a name="status"></a>
 
    ### /status
@@ -1358,11 +1532,12 @@ my-python-app/
 
 ## Settings config
 
-* managed-settings.json — enterprise-enforced, can't be overridden.
 * .claude/settings.json — project-level, commit to share with team.
 * ~/.claude/settings.json — global user defaults (see below).
 * .claude/settings.local.json — your <strong>personal</strong> project overrides (gitignored).
 <br /><br />
+* managed-settings.json — enterprise-enforced, can't be overridden.
+
 
 <a name="config"></a>
    
@@ -1510,9 +1685,16 @@ my-python-app/
        "Bash(git reset --hard:*)",
      ]
    ```
-1. Allow to not need user confirmation:
+1. Allow to MCP servers:
    ```
+   "permissions" : {
     "allow": [
+      "mcp__playwright",
+   ```
+   Notice the two underlines in the name.
+
+1. Under permissions -> allow to not need user confirmation:
+   ```
       "Read",
       "Write(./projects/**)",
       "Write(./documentation/**)",
@@ -1548,8 +1730,10 @@ my-python-app/
       "Grep"
     ]
    ``` 
+
 1. Useful for debugging if hooks are misbehaving:
    ```
+   ],
    "disableHooks": true,
    ```
 1. When running a shell command, to prevent silent truncation and wasted retries, set a higher number than the default 30-50,000:
@@ -1845,7 +2029,7 @@ References:
 
 ## Models
 
-<a target="_blank" href="https://anthropic.skilljar.com/claude-in-amazon-bedrock/303332">Claude Model Family</a>:
+### <a target="_blank" href="https://anthropic.skilljar.com/claude-in-amazon-bedrock/303332">Claude Model Family</a>:
 
 | &nbsp; | Claude Opus | Claude Sonnet | Claude Haiku | Mythos |
 | ------ | ----------- | ------------- | ------------ | ------ |
@@ -1911,6 +2095,8 @@ Training Data Cutoff is the broader range of data used.
 * Q&A Systems and knowledge retrieval
 * Most high-volume, straightforward text processing tasks
 <br /><br />
+
+
 
 
 <a name="ChatAPICall"></a>
