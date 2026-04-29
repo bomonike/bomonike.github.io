@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-15"
-lastchange: "26-04-15 v216 time-services @README.md"
+date: "2026-04-28"
+lastchange: "26-04-28 v217 mesh-networking @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -118,6 +118,7 @@ Topics alphabetically:
 
 1. <a target="_blank" href="https://bomonike.github.io/mac-mini">mac-mini</a>
 1. <a target="_blank" href="https://bomonike.github.io/mac-utilities">mac-utilities</a>
+1. <a target="_blank" href="https://bomonike.github.io/mesh-networking">mesh-networking</a>
 1. <a target="_blank" href="https://bomonike.github.io/mlops">mlops</a> (Machine Learning Operations)
 1. <a target="_blank" href="https://wilsonmar.github.io/london">london</a> (England)
 1. <a target="_blank" href="https://bomonike.github.io/macos">macos</a>
