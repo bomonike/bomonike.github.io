@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-15"
-lastchange: "26-04-15 v101 MEO GEO IGSO @acronyms.md"
+date: "2026-04-30"
+lastchange: "26-04-30 v102 BZ @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -183,6 +183,7 @@ created: "2024-12-28"
 *	BYOK	=	Bring Your Own Key
 *	BYOIP	=	Bring Your Own IP address
 *	BYOK	=	Bring Your Own Key
+* BZ = Bravo Zulu (use by miliary to recognize the successful completion of a difficult task)
 
 <a name="C"></a>
 ### C
