@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-30"
-lastchange: "26-04-30 v102 BZ @acronyms.md"
+date: "2026-04-01"
+lastchange: "26-05-01 v103 acronymania @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -14,6 +14,7 @@ created: "2024-12-28"
 
 <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a>
 
+In his book The Upside of Irrationality, the Duke University behavioral scientist Dan Ariely writes that acronyms “confer a kind of secret insider knowledge” and “help keep other ideas from entering the inner circle.”
 
 <hr />
 
