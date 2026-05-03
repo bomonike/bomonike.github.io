@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-02"
-lastchange: "26-05-02 v035 models @anthropic-claude.md"
+date: "2026-05-03"
+lastchange: "26-05-03 v037 model diagram @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -239,23 +239,38 @@ CAUTION: Claude's token charges are more complicated that figuring out your taxe
 
 DEFINITION: A "token" takes about 3/4 of a word to store because each token is a chunk of each word in a text file from a "corpus" of documents. Tokens are "trained" within AI models by turning chunks of each word into a numerical representation vector for each concept. The "weight" of each token refers to the numerical coordinates in each of many dimensions of meaning.
 
+DEFINITION: "Quantization" reduces the accuracy of token vectors like reducing the number of decimal points.
+
 
 <a name="Models"></a>
 
 ## PROTIP: Models Availability
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1777781132/claude-models_jmjt0r.png"><img alt="claude-models.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1777781132/claude-models_jmjt0r.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1777807910/ai-models_qilqsd.png"><img alt="ai-models.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1777807910/ai-models_qilqsd.png" /></a>
 
-On your local machine, Claude API calls are, by default, to the Claude cloud. But Claude is the most expensive cloud service and getting more expensive.
-This diagram illustrates the alternatives. 
+This diagram illustrates an analysis of alternatives for making API calls to AI models from your local machine.
 
-NVIDIA's service that's free for now on its NIM cloud. Being the first to market, the OpenAI APIs can be made to access NVIDIA as well as OpenAI's own cloud. NVIDIA hosts models from IBM, Meta, and others as well. The OpenAI API also mimics calls to Claude's cloud.
+The first to market in 2023 was the <strong>OpenAI</strong> API accessing its Codex model in it own cloud service.
+The OpenAI API client can also be used to access other clouds, simply by changing the <strong>API and endpoint URL</strong>.
 
-DeepSeek's cloud in China is 30 times less expensive than Claude. Claude Code can make use of DeepSeek's cloud service via a Proxy service. 
+While the cost for tokens beyond the monthly subscription is about average among cloud model vendors. ???
+The same API code can be used to make use of NVIDIA's NIM AI cloud services while it's <strong>free</strong> for limited runs. NVIDIA hosts many models, including from IBM, Meta, and others.
 
-Qwen and Google Gemini are offered as open source that can be downloaded to run on your local server, for privacy offline, at no cost through the Ollama service.
+OpenAI's API client can also <strong>emulate</strong> xAI's API as if Grok models are called using xAI's own API client
+and <strong>Claude</strong> API client.
 
-There is also a <strong>OpenRouter.ai</strong> service that hosts various models at low cost.
+But remember that using OpenAI's API emulation adds compatibility layer overhead and loses Anthropic-native capabilities such as top_k, metadata. That may mean subtle behavioral differences. The very latest model may not be available.
+
+There are several other approaches to get around Claude's cloud being an expensive AI service.
+
+DeepSeek is 30 times less expensive than Claude. 
+A Proxy service can transparently trick Claude API calls to be routed to DeepSeek's cloud service in China.
+Yes, that is a security concern.
+
+For privacy offline, open sourced models such as DeepSeek, <strong>Qwen</strong>, <strong>Google Gemini</strong>, Kimi, etc. can be pulled (downloaded) to run on your local server, at no cost, runniing the <strong>Ollama</strong> service.
+
+Lastely, there <strong>OpenRouter.ai</strong> service hosts many models at low cost (for now). 
+But it is known to limit the speed of access.
 
 
 <a name="Productivity"></a>
