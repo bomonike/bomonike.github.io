@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-28"
-lastchange: "26-04-28 v217 mesh-networking @README.md"
+date: "2026-05-02"
+lastchange: "26-05-02 v218 anthropic-claude @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -29,6 +29,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/alexa">alexa</a>
 1. <a target="_blank" href="https://bomonike.github.io/algorithmic-complexity">algorithmic-complexity</a>
 1. <a target="_blank" href="https://bomonike.github.io/anthropic-certs">anthropic-certs</a>
+1. <a target="_blank" href="https://bomonike.github.io/anthropic-claude">anthropic-claude</a>
 1. <a target="_blank" href="https://bomonike.github.io/anyscale-ray">anyscale-ray</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-compsci">ap-compsci</a>
 1. <a target="_blank" href="https://bomonike.github.io/ap-stats">ap-stats</a>
