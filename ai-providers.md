@@ -22,7 +22,7 @@ toward a "winner take all" dominance.
 ## AI Vendors and their LLM Brands
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr><th>Country</th><th>Vendor</th><th>LLM brand</th><th>app</th></tr>
+<tr><th>Country</th><th>Vendor</th><th>LLM brand</th><th>tools</th></tr>
 <tr valign="top"><td>China</td><td>Alibaba</td><td>Qwen</td></tr>
 <tr valign="top"><td>US</td><td>Allen AI</td><td><a target="_blank" href="https://allenai.org/olmo">Olmo</a></td></tr>
 <tr valign="top"><td>US</td><td>Amazon</td><td>Nova</td></tr>
