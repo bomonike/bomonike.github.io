@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-02"
-lastchange: "26-05-02 v218 anthropic-claude @README.md"
+date: "2026-05-05"
+lastchange: "26-05-05 v219 ai-providers @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -26,6 +26,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ai-agents">ai-agents</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-benchmarks">ai-benchmarks</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
+1. <a target="_blank" href="https://bomonike.github.io/ai-providers">ai-providers</a>
 1. <a target="_blank" href="https://bomonike.github.io/alexa">alexa</a>
 1. <a target="_blank" href="https://bomonike.github.io/algorithmic-complexity">algorithmic-complexity</a>
 1. <a target="_blank" href="https://bomonike.github.io/anthropic-certs">anthropic-certs</a>
