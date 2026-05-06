@@ -26,7 +26,7 @@ toward a "winner take all" dominance.
 <tr valign="top"><td>China</td><td>Alibaba</td><td>Qwen</td></tr>
 <tr valign="top"><td>US</td><td>ai21 (Allen AI)</td><td><a target="_blank" href="https://allenai.org/olmo">Olmo</a></td></tr>
 <tr valign="top"><td>US</td><td>Amazon</td><td>Nova</td></tr>
-<tr valign="top"><td>US</td><td>Anthropic</td><td>Claude</td></tr>
+<tr valign="top"><td>US</td><td>Anthropic</td><td><a target="_blank" href="https://bomonike.github.io/anthropic-claude/">Claude</a></td></tr>
 <tr valign="top"><td>US</td><td>Apple</td><td>MM1, ReALM</td></tr>
 <tr valign="top"><td>China</td><td>DeepSeek</td><td>R1,R2,V3</td></tr>
 <tr valign="top"><td>US</td><td><a target="_blank" href="#Fireworks.ai">Fireworks.ai</a></td><td>KwaiKAT-Coder</td></tr>
@@ -36,11 +36,11 @@ toward a "winner take all" dominance.
 <tr valign="top"><td>Singapore</td><td><a target="_blank" href="https://www.minimax.io/news/minimax-m2">MiniMax</a></td><td>M2, Hailuo, Speech</td></tr>
 <tr valign="top"><td>France</td><td>Mistral</td><td>Medium, Large</td></tr>
 <tr valign="top"><td>US</td><td>NVIDIA</td><td><a target="_blank" href="https://research.nvidia.com/labs/nemotron/Nemotron-3/">Nemotron</a></td></tr>
-<tr valign="top"><td>US</td><td>OpenAI</td><td>GPT</td><td>ChatGPT</td><td>Largest context length of 2m for highest price.</td></tr>
+<tr valign="top"><td>US</td><td>OpenAI</td><td>GPT</td><td>ChatGPT, OpenClaw</td><td>Largest context length of 2m for highest price.</td></tr>
 <tr valign="top"><td>China</td><td>Tencent</td><td>Hy3</td></tr>
 <tr valign="top"><td>US</td><td>xAI</td><td><a href="#Grok">Grok</a></td></tr>
 <tr valign="top"><td>US</td><td>Xiaomi</td><td>mimo</a></td></tr>
-<tr valign="top"><td>China</td><td>Z.Ai (Zhipu)</td><td>Kimi K2</td></tr>
+<tr valign="top"><td>China</td><td><a target="_blank" href="https://www.kimi.com/">Z.Ai (Zhipu)</a></td><td>Kimi K2</td><td><a target="_blank" href="https://chat.z.ai/">chat</a></td></tr>
 </table>
 
 
@@ -85,11 +85,19 @@ DeepSeek and other models from China, such as Alibaba's <strong>Qwen</strong>, h
 
 You can individually go to the websites of DeepSeek, Qwen, Kimi, Mistral, and others to download models to run in <strong>privacy</strong> offline, and program API calls to each, separately.
 
-OpenAI's API can simplify access to the <strong>OpenRouter.ai</strong> gateway service enables a single API (and <a target="_blank" href="https://openrouter.ai/chat">chat</a>) interface to use LLMs from 60+ authors, including <a target="_blank" href="https://openrouter.ai/docs/guides/get-started/free-models-router-playground">free</a> <a target="_blank" href="https://openrouter.ai/openrouter/free/api">models</a> and even <strong>AWS</strong> and its vast cloud SageMaker ecosystem models.
+OpenAI's API can simplify access to the <strong>OpenRouter.ai</strong> gateway service enables a single API (and <a target="_blank" href="https://openrouter.ai/chat">chat</a>) interface to use LLMs from 60+ authors, including <a target="_blank" href="https://openrouter.ai/docs/guides/get-started/free-models-router-playground">free</a> <a target="_blank" href="https://openrouter.ai/openrouter/free/api">models</a> and even <strong>AWS</strong> and its vast cloud Bedrock SageMaker ecosystem.
 
-<strong>OpenRouter</strong> provides a common security, observability, and tracing interface, which allows for easy A/B testing and comparison between different models. Its shared billing abstracts away the complexity of managing separate accounts, authentication, and billing for each one. It can automatically routes requests to the <strong>fastest or cheapest provider</strong> for a given model. However, this may limit the speed of access and impose usage limits to free LLMs. 
+<strong>OpenRouter</strong> provides pass-through billing to abstract away the complexity of managing separate accounts, authentication, and billing to 370 models from 60+ providers. It can automatically route requests to the <strong>fastest or cheapest provider</strong>, including 30 free models. It provides a common security, observability, and tracing interface, which allows for easy A/B testing and comparison between different models. For that, it takes a 5.5% fee when you buy credits. However, this may limit the speed of access and impose usage limits to free LLMs. 
+
+There is still a doubt about whether one can trust model providers with your proprietary data.
 
 OpenAI was hosted exclusively in Microsoft's <strong>Azure cloud</strong> until April 2026 when it also appeared among models Amazon makes available on its <strong>AWS cloud</strong>.
+
+There are now <a target="_blank" href="https://pinggy.io/blog/best_ai_llm_routers_openrouter_alternatives/">several LLM routers</a>:
+   * https://router.orq.ai/ analyzes each prompt and routes it to the most cost-effective among what it claims as 400+ models from 17+ providers who meet quality requirements. 
+   * https://ngrok.ai 
+   * 
+   <br /><br />
 
 <hr />
 
@@ -105,6 +113,13 @@ OpenAI was hosted exclusively in Microsoft's <strong>Azure cloud</strong> until 
 * Video (.mp4)
 <br /><br />
 
+
+<a name="Claude"></a>
+
+## Anthropic's Claude
+
+I have an entire <a target="_blank" href="https://bomonike.github.io/anthropic-claude/">
+section to Anthropic and its Claude technologies</a>.
 
 <a name="Grok"></a>
 
@@ -130,6 +145,71 @@ Column	Description
 * is_free	TRUE if both input and output costs are $0
 * modalities	Supported input types (text, image, audio, video, file)
 <br /><br />
+
+<pre>
+PROVIDER                            MODELS
+==================================================
+ai21                                     1
+aion-labs                                4
+alfredpros                               1
+alibaba                                  1
+allenai                                  2
+alpindale                                1
+amazon                                   5
+anthracite-org                           1
+anthropic                               14
+arcee-ai                                 7
+baidu                                    7
+bytedance                                1
+bytedance-seed                           4
+cognitivecomputations                    1
+cohere                                   4
+deepcogito                               1
+deepseek                                13
+essentialai                              1
+google                                  26
+gryphe                                   1
+ibm-granite                              2
+inception                                1
+inclusionai                              2
+inflection                               2
+kwaipilot                                1
+liquid                                   3
+mancer                                   1
+meta-llama                              14
+microsoft                                3
+minimax                                  8
+mistralai                               25
+moonshotai                               5
+morph                                    2
+nex-agi                                  1
+nousresearch                             6
+nvidia                                  11
+openai                                  65
+openrouter                               5
+perplexity                               5
+poolside                                 2
+prime-intellect                          1
+qwen                                    51
+rekaai                                   2
+relace                                   2
+sao10k                                   5
+stepfun                                  1
+switchpoint                              1
+tencent                                  2
+thedrummer                               4
+tngtech                                  1
+undi95                                   1
+upstage                                  1
+writer                                   1
+x-ai                                    11
+xiaomi                                   5
+z-ai                                    13
+~anthropic                               3
+~google                                  2
+~moonshotai                              1
+~openai                                  2
+</pre>
 
 "~" in front of model names (such as "~google/gemini-flash-latest") ???
 
@@ -162,7 +242,7 @@ ppm = price_per_million</a> prices, as of {{ page.date }}:
 | grok-2-vision-1212 | 8k | image understanding | $5.00 | $15.00 |
 | grok-2-vision-latest | 32k | image understanding | — | — |
 
-| model_id | context_tokens | features | $/item | 
+| model_id | context_tokens | features | price| 
 | -------- | -------------- | -------- | --------- | 
 | grok-imagine-image | — | image generation | $0.02 / image | 
 | grok-imagine-image-pro | — | high-quality image generation | $0.07 / image |
@@ -171,6 +251,19 @@ ppm = price_per_million</a> prices, as of {{ page.date }}:
 PROTIP: I generated a Python program to create a CSV or JSON file at
 <a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/deepseek-rates.py">
 deepseek-rates.py</a>
+
+
+## References
+
+https://www.cybergym.io/ found that OpenAI's GPT5.5 found 82% vs 83% by Mythos.
+Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale 
+
+https://www.armorcode.com/blog/the-mythos-moment-is-real-the-fix-it-faster-response-is-not
+The Mythos Moment is Real. The Fix-It-Faster Response isn’t.
+
+https://www.youtube.com/watch?v=T7bQ86m5AEk
+Warp open source office hours: why open source?
+
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
