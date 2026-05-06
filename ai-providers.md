@@ -1,10 +1,10 @@
 ---
 layout: post
 date: "2026-05-05"
-lastchange: "26-05-05 v034 add gcp in flow @ai-providers.md"
+lastchange: "26-05-05 v037 openrouter list @ai-providers.md"
 url: "https://bomonike.github.io/ai-providers"
 file: "ai-providers"
-title: "AI Providerss"
+title: "AI Providers"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
 tags: [ai, benchmarks]
 comments: true
@@ -22,30 +22,34 @@ toward a "winner take all" dominance.
 ## AI Vendors and their LLM Brands
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr><th>Country</th><th>Vendor</th><th>LLM brand</th><th>tools</th></tr>
+<tr><th>Country</th><th>Vendor</th><th>LLM brand</th><th><a href="#Clients">Clients</a></th></tr>
 <tr valign="top"><td>China</td><td>Alibaba</td><td>Qwen</td></tr>
-<tr valign="top"><td>US</td><td>Allen AI</td><td><a target="_blank" href="https://allenai.org/olmo">Olmo</a></td></tr>
+<tr valign="top"><td>US</td><td>ai21 (Allen AI)</td><td><a target="_blank" href="https://allenai.org/olmo">Olmo</a></td></tr>
 <tr valign="top"><td>US</td><td>Amazon</td><td>Nova</td></tr>
 <tr valign="top"><td>US</td><td>Anthropic</td><td>Claude</td></tr>
 <tr valign="top"><td>US</td><td>Apple</td><td>MM1, ReALM</td></tr>
 <tr valign="top"><td>China</td><td>DeepSeek</td><td>R1,R2,V3</td></tr>
 <tr valign="top"><td>US</td><td><a target="_blank" href="#Fireworks.ai">Fireworks.ai</a></td><td>KwaiKAT-Coder</td></tr>
 <tr valign="top"><td>US</td><td>Google</td><td>Gemini</td></tr>
-<tr valign="top"><td>China</td><td>Z.Ai (Zhipu)</td><td>Kimi K2</td></tr>
 <tr valign="top"><td>US</td><td>Meta</td><td>Llama</td></tr>
 <tr valign="top"><td>US</td><td>Microsoft</td><td>Phi</td></tr>
 <tr valign="top"><td>Singapore</td><td><a target="_blank" href="https://www.minimax.io/news/minimax-m2">MiniMax</a></td><td>M2, Hailuo, Speech</td></tr>
 <tr valign="top"><td>France</td><td>Mistral</td><td>Medium, Large</td></tr>
 <tr valign="top"><td>US</td><td>NVIDIA</td><td><a target="_blank" href="https://research.nvidia.com/labs/nemotron/Nemotron-3/">Nemotron</a></td></tr>
-<tr valign="top"><td>US</td><td>OpenAI</td><td>GPT</td><td>ChatGPT</td></tr>
+<tr valign="top"><td>US</td><td>OpenAI</td><td>GPT</td><td>ChatGPT</td><td>Largest context length of 2m for highest price.</td></tr>
+<tr valign="top"><td>China</td><td>Tencent</td><td>Hy3</td></tr>
 <tr valign="top"><td>US</td><td>xAI</td><td><a href="#Grok">Grok</a></td></tr>
+<tr valign="top"><td>US</td><td>Xiaomi</td><td>mimo</a></td></tr>
+<tr valign="top"><td>China</td><td>Z.Ai (Zhipu)</td><td>Kimi K2</td></tr>
 </table>
 
 
-## Ways to Access
+<a href="Clients"></a>
+
+## Clients to Access
 
 * CLI on Terminal
-* IDE GUI app
+* IDE GUI app (VSCode add-in, etc.)
 * Website
 * API access provides a way to <strong>batch</strong> work at discounted pricing.
 
@@ -73,7 +77,7 @@ Claude's models are currently recognized as best for prose and coding.
 Clude's cloud and client tools require a <strong>$100/month</strong> subscription, but also allow access to other models, some for <strong>free</strong>. 
 This strategy has resulted in Anthropic making billions.
 
-The DeepSeek model on DeepSeek's cloud is 30 times less expensive than Claude, so someone created a <strong>Proxy</strong> service that routes Claude API calls to DeepSeek's cloud service. Yes, that is a security concern so I recommend <strong>blocking</strong> it.
+The DeepSeek model on DeepSeek's cloud is 30 times less expensive than Claude, so someone created a <strong>Proxy</strong> service that routes Claude API calls to DeepSeek's cloud service. Yes, that is a security concern so I recommend <strong>blocking</strong> it. BTW, AFAIK, none of these services provide for two-way client certificates to ensure that services are who they say they are.
 
 DeepSeek and other models from China, such as Alibaba's <strong>Qwen</strong>, have been accused of being based on data <strong>distilled</strong> from Claude. So it's smaller.
 
@@ -83,30 +87,72 @@ You can individually go to the websites of DeepSeek, Qwen, Kimi, Mistral, and ot
 
 OpenAI's API can simplify access to the <strong>OpenRouter.ai</strong> gateway service enables a single API (and <a target="_blank" href="https://openrouter.ai/chat">chat</a>) interface to use LLMs from 60+ authors, including <a target="_blank" href="https://openrouter.ai/docs/guides/get-started/free-models-router-playground">free</a> <a target="_blank" href="https://openrouter.ai/openrouter/free/api">models</a> and even <strong>AWS</strong> and its vast cloud SageMaker ecosystem models.
 
-OpenRouter provides a common security, observability, and tracing interface, which allows for easy A/B testing and comparison between different models. Its shared billing abstracts away the complexity of managing separate accounts, authentication, and billing for each one. It can automatically routes requests to the <strong>fastest or cheapest provider</strong> for a given model. However, this may limit the speed of access and impose usage limits to free LLMs. 
+<strong>OpenRouter</strong> provides a common security, observability, and tracing interface, which allows for easy A/B testing and comparison between different models. Its shared billing abstracts away the complexity of managing separate accounts, authentication, and billing for each one. It can automatically routes requests to the <strong>fastest or cheapest provider</strong> for a given model. However, this may limit the speed of access and impose usage limits to free LLMs. 
 
 OpenAI was hosted exclusively in Microsoft's <strong>Azure cloud</strong> until April 2026 when it also appeared among models Amazon makes available on its <strong>AWS cloud</strong>.
 
 <hr />
 
+<a name="Capabilities"></a>
+
+## Capabilities
+
+* Files
+* Text (translation)
+* Image (search, reverse search, .png, .jpg, etc.)
+* Speech
+* Audio (.mp3)
+* Video (.mp4)
+<br /><br />
+
+
 <a name="Grok"></a>
 
-## XAI's Grok
+## OpenRouter models
+
+<a target="_blank" href="https://github.com/ai-shifu/ChatALL/issues/1028">This GitHub Issue</a>
+lists 65 free models and 254 paid models available on OpenRouter.ai.
+
+The list is available as a <a target="_blank" href="https://openrouter.ai/api/v1/models">JSON file</a> and <a target="_blank" href="https://openrouter.ai/models?q=free-models-router">webpage</a>.
+
+PROTIP: I generated a Python program to create a CSV or JSON file at
+<a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/openrouter-models.py">
+openrouter-models.py</a> - last run on {{ page.date }} found 370 models among 60 providers.
+
+
+Column	Description
+* model_id	Unique identifier for the model when making API calls
+* name	Human-readable display name
+* provider	Primary provider or organization offering the model
+* context_length	Maximum tokens the model can process (input + reasoning)
+* pricing_prompt	Cost per 1,000 input tokens (in USD)
+* pricing_completion	Cost per 1,000 output tokens (in USD)
+* is_free	TRUE if both input and output costs are $0
+* modalities	Supported input types (text, image, audio, video, file)
+<br /><br />
+
+"~" in front of model names (such as "~google/gemini-flash-latest") ???
+
+
+
+<a name="Grok"></a>
+
+## XAI's Grok models
 
 Elon Musk's XAI Grok series of LLMs <strong>do not have free usage</strong>.
 
-It can ba accessed using OpenAI's API.
+It can be accessed using OpenAI's API.
 
-https://docs.x.ai/developers/models#batch-api-pricing
-ppm = price_per_million
+<a target="_blank" href="https://docs.x.ai/developers/models#batch-api-pricing">
+ppm = price_per_million</a> prices, as of {{ page.date }}:
 
-| model_id | context_tokens | features | input_ppm | output_ppm |
-| -------- | -------------- | -------- | --------- | --- |
-| grok-4.20-0309-reasoning | 2 million | reasoning, tool calls, structured output | $1.25 | $2.50 |
-| grok-4.20-0309-non-reasoning | 2 million | tool calls, structured output | $1.25 | $2.50 |
-| grok-4.20-multi-agent-0309 | 2 million | multi-agent collaboration | $2.00 | $6.00 |
-| grok-4-1-fast-reasoning | 2 million | reasoning, vision, tool calls, structured output | $0.20 | $0.50 |
-| grok-4-1-fast-non-reasoning | 2 million | vision, tool calls, structured output | $0.20 | $0.50 |
+| model_id | context<br />tokens | features | input_ppm | output_ppm |
+| -------- | -------------- | -------- | --------: | ---------: |
+| grok-4.20-0309-reasoning | 2m | reasoning, tool calls, structured output | $1.25 | $2.50 |
+| grok-4.20-0309-non-reasoning | 2m | tool calls, structured output | $1.25 | $2.50 |
+| grok-4.20-multi-agent-0309 | 2m | multi-agent collaboration | $2.00 | $6.00 |
+| grok-4-1-fast-reasoning | 2m | reasoning, vision, tool calls, structured output | $0.20 | $0.50 |
+| grok-4-1-fast-non-reasoning | 2m | vision, tool calls, structured output | $0.20 | $0.50 |
 | grok-code-fast-1 | 256k | code optimization, reasoning, tool calls | $0.20 | $1.50 |
 | grok-4-0709 | 256k | reasoning, tool calls, structured output | $3.00 | $15.00 |
 | grok-3 | 131k | tool calls, structured output | $3.00 | $15.00 |
@@ -122,6 +168,9 @@ ppm = price_per_million
 | grok-imagine-image-pro | — | high-quality image generation | $0.07 / image |
 | grok-imagine-video | — | video generation | $0.05 / second |
 
+PROTIP: I generated a Python program to create a CSV or JSON file at
+<a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/deepseek-rates.py">
+deepseek-rates.py</a>
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
