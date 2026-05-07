@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-05"
-lastchange: "26-05-05 v037 openrouter list @ai-providers.md"
+date: "2026-05-06"
+lastchange: "26-05-06 v038 openrouter & orq.ai lists @ai-providers.md"
 url: "https://bomonike.github.io/ai-providers"
 file: "ai-providers"
 title: "AI Providers"
@@ -79,9 +79,9 @@ This strategy has resulted in Anthropic making billions.
 
 The DeepSeek model on DeepSeek's cloud is 30 times less expensive than Claude, so someone created a <strong>Proxy</strong> service that routes Claude API calls to DeepSeek's cloud service. Yes, that is a security concern so I recommend <strong>blocking</strong> it. BTW, AFAIK, none of these services provide for two-way client certificates to ensure that services are who they say they are.
 
-DeepSeek and other models from China, such as Alibaba's <strong>Qwen</strong>, have been accused of being based on data <strong>distilled</strong> from Claude. So it's smaller.
+DeepSeek and other models from China, such as Alibaba's <strong>Qwen</strong>, have been accused of being based on data <strong>distilled</strong> from Claude. So it's smaller. There is still doubt about whether one can trust model providers with  proprietary data. So for <strong>privacy</strong>, organizations created a shortage of Mac Minis to run behind an in-house firewall.
 
-<strong>Google's</strong> models were trained from all the books has been scanning for decades along with YouTube and searches. Google has one of the first APIs to their top-ranked LLMs. Google also open-sourced its <strong>Gemma4</strong> models and enabled it to be <strong>pulled</strong> inside the <strong>firewall</strong> to as local models run, at no cost, via the <strong>Ollama</strong> service.
+<strong>Google's</strong> models were trained from all the books it has been scanning for decades, along with YouTube and searches. Google has one of the first APIs to their <a target="_blank" href="https://bomonike.github.io/ai-benchmarks/">top-ranked LLMs</a>. Google also open-sourced the Gemini models in its cloud as <strong>Gemma4</strong> models for being <strong>pulled</strong> inside the <strong>firewall</strong> to as local models run, at no cost, via the <strong>Ollama</strong> service.
 
 You can individually go to the websites of DeepSeek, Qwen, Kimi, Mistral, and others to download models to run in <strong>privacy</strong> offline, and program API calls to each, separately.
 
@@ -89,12 +89,10 @@ OpenAI's API can simplify access to the <strong>OpenRouter.ai</strong> gateway s
 
 <strong>OpenRouter</strong> provides pass-through billing to abstract away the complexity of managing separate accounts, authentication, and billing to 370 models from 60+ providers. It can automatically route requests to the <strong>fastest or cheapest provider</strong>, including 30 free models. It provides a common security, observability, and tracing interface, which allows for easy A/B testing and comparison between different models. For that, it takes a 5.5% fee when you buy credits. However, this may limit the speed of access and impose usage limits to free LLMs. 
 
-There is still a doubt about whether one can trust model providers with your proprietary data.
-
 OpenAI was hosted exclusively in Microsoft's <strong>Azure cloud</strong> until April 2026 when it also appeared among models Amazon makes available on its <strong>AWS cloud</strong>.
 
 There are now <a target="_blank" href="https://pinggy.io/blog/best_ai_llm_routers_openrouter_alternatives/">several LLM routers</a>:
-   * https://router.orq.ai/ analyzes each prompt and routes it to the most cost-effective among what it claims as 400+ models from 17+ providers who meet quality requirements. 
+   * https://router.orq.ai/ analyzes each prompt and routes it to the most cost-effective among its 413 models among 25 providers who meet quality requirements. It operates in Singapore, APAC, Europe, US to satisfy data sovereignty laws. My program orq-models.py needed to use tricky CSS tricks to obtain a list of 413 models.
    * https://ngrok.ai 
    * 
    <br /><br />
@@ -213,6 +211,69 @@ z-ai                                    13
 
 "~" in front of model names (such as "~google/gemini-flash-latest") ???
 
+<a name="orq.ai"></a>
+
+## orq.ai models & providers
+
+Count of models by provider (alphabetically):
+
+<pre>
+==================================================
+PROVIDER                            MODELS
+==================================================
+alibaba                                 41
+anthropic                               15
+aws                                     36
+azure                                   25
+bytedance                                4
+cerebras                                 7
+cohere                                  22
+contextualai                             3
+deepseek                                 2
+elevenlabs                               5
+fal                                      4
+google                                  38
+google-ai                               22
+groq                                    16
+jina                                    12
+leonardoai                               4
+minimax                                  7
+mistral                                 35
+moonshotai                               6
+openai                                  67
+orq                                      1
+perplexity                               4
+togetherai                               7
+xai                                     19
+zai                                     11
+==================================================
+</pre>
+
+The .csv file adds location and model description.
+
+<pre>
+================================================================================================
+PROVIDER        TYPE         MODEL ID                                     IN $/M     OUT $/M   FREE
+================================================================================================
+openai          chat         o1-pro                                      $150.00     $600.00       
+openai          chat         gpt-5.4-pro                                  $30.00     $180.00       
+openai          chat         gpt-5.2-pro                                  $21.00     $168.00       
+openai          chat         gpt-5-pro                                    $15.00     $120.00       
+leonardoai      image        leonardo-diffusion-xl                        $80.00      $80.00       
+leonardoai      image        leonardo-kino-xl                             $80.00      $80.00       
+leonardoai      image        leonardo-lightning-xl                        $80.00      $80.00       
+leonardoai      image        leonardo-vision-xl                           $80.00      $80.00       
+openai          chat         o3-pro                                       $20.00      $80.00       
+anthropic       chat         claude-opus-4-0                              $15.00      $75.00       
+anthropic       chat         claude-opus-4-1                              $15.00      $75.00       
+anthropic       chat         claude-opus-4-20250514                       $15.00      $75.00       
+anthropic       chat         claude-opus-4.1-20250805                     $15.00      $75.00       
+aws             chat         anthropic/claude-opus-4.1 (US)               $15.00      $75.00       
+google          chat         anthropic/claude-opus-4-1@20250805           $15.00      $75.00       
+google          chat         anthropic/claude-opus-4@20250514             $15.00      $75.00       
+azure           chat         o1                                           $15.00      $60.00   
+...
+</pre>
 
 
 <a name="Grok"></a>
