@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-06"
-lastchange: "26-05-06 v038 openrouter & orq.ai lists @ai-providers.md"
+date: "2026-05-07"
+lastchange: "26-05-07 v040 poolside @ai-providers.md"
 url: "https://bomonike.github.io/ai-providers"
 file: "ai-providers"
 title: "AI Providers"
@@ -25,23 +25,43 @@ toward a "winner take all" dominance.
 <tr><th>Country</th><th>Vendor</th><th>LLM brand</th><th><a href="#Clients">Clients</a></th></tr>
 <tr valign="top"><td>China</td><td>Alibaba</td><td>Qwen</td></tr>
 <tr valign="top"><td>US</td><td>ai21 (Allen AI)</td><td><a target="_blank" href="https://allenai.org/olmo">Olmo</a></td></tr>
+<tr valign="top"><td>-</td><td>aion-labs</td><td>aion-2.0</td></tr>
 <tr valign="top"><td>US</td><td>Amazon</td><td>Nova</td></tr>
 <tr valign="top"><td>US</td><td>Anthropic</td><td><a target="_blank" href="https://bomonike.github.io/anthropic-claude/">Claude</a></td></tr>
 <tr valign="top"><td>US</td><td>Apple</td><td>MM1, ReALM</td></tr>
+<tr valign="top"><td>China</td><td>Bytedance</td><td>seed</td></tr>
+<tr valign="top"><td>China</td><td>Cerebras</td><td>-</td></tr>
+<tr valign="top"><td>France</td><td>Cohere</td><td>-</td></tr>
+<tr valign="top"><td>-</td><td>Contexual</td><td>-</td></tr>
 <tr valign="top"><td>China</td><td>DeepSeek</td><td>R1,R2,V3</td></tr>
+<tr valign="top"><td>US</td><td>ElevenLabs</td><td>-</td></tr>
+<tr valign="top"><td>-</td><td>FAL</td><td>-</td></tr>
 <tr valign="top"><td>US</td><td><a target="_blank" href="#Fireworks.ai">Fireworks.ai</a></td><td>KwaiKAT-Coder</td></tr>
-<tr valign="top"><td>US</td><td>Google</td><td>Gemini</td></tr>
+<tr valign="top"><td>US</td><td>Google</td><td>Gemini</td><td><a target="_blank" href="https://www.youtube.com/watch?v=nov9uoIQt6g&pp=ugUEEgJlbg%3D%3D">Remy, Antigravity IDE</a></td></tr>
+<tr valign="top"><td>-</td><td>IBM</td><td>granite</td></tr>
+<tr valign="top"><td>-</td><td>Jina</td><td>-</td></tr>
+<tr valign="top"><td>-</td><td>Leonardo.ai</td><td>-</td></tr>
 <tr valign="top"><td>US</td><td>Meta</td><td>Llama</td></tr>
 <tr valign="top"><td>US</td><td>Microsoft</td><td>Phi</td></tr>
 <tr valign="top"><td>Singapore</td><td><a target="_blank" href="https://www.minimax.io/news/minimax-m2">MiniMax</a></td><td>M2, Hailuo, Speech</td></tr>
 <tr valign="top"><td>France</td><td>Mistral</td><td>Medium, Large</td></tr>
+<tr valign="top"><td>-</td><td>Moonshot</td><td><a target="_blank" href="https://www.kimi.com/">Kimi</a></td></tr>
+<tr valign="top"><td>-</td><td>Morph</td><td>Morph</td></tr>
 <tr valign="top"><td>US</td><td>NVIDIA</td><td><a target="_blank" href="https://research.nvidia.com/labs/nemotron/Nemotron-3/">Nemotron</a></td></tr>
+<tr valign="top"><td>-</td><td>nousresearch</td><td>hermes-llama</td></tr>
 <tr valign="top"><td>US</td><td>OpenAI</td><td>GPT</td><td>ChatGPT, OpenClaw</td><td>Largest context length of 2m for highest price.</td></tr>
+<tr valign="top"><td>-</td><td><a target="_blank" href="https://perplexity.ai/">Perplexity.ai</a></td><td>Sonar</td><td>Comet browser</td></tr>
+<tr valign="top"><td>US, Paris</td><td><a target="_blank" href="https://poolside.ai/">poolside.ai</a></td><td><a target="_blank" href="https://poolside.ai/blog/introducing-laguna-xs2-m1">laguna</a></td><td>pool</td><td>Free on OpenRouter</td></tr>
+<tr valign="top"><td>-</td><td>prime-intellect</td><td>intellect-3</td><td>-</td></tr>
+<tr valign="top"><td>-</td><td><a target="_blank" href="https://reka.ai">reka.ai</a></td><td>reka-edge/flash</td><td>-</td></tr>
 <tr valign="top"><td>China</td><td>Tencent</td><td>Hy3</td></tr>
+<tr valign="top"><td>-</td><td>Together.ai</td><td>-</td></tr>
 <tr valign="top"><td>US</td><td>xAI</td><td><a href="#Grok">Grok</a></td></tr>
-<tr valign="top"><td>US</td><td>Xiaomi</td><td>mimo</a></td></tr>
-<tr valign="top"><td>China</td><td><a target="_blank" href="https://www.kimi.com/">Z.Ai (Zhipu)</a></td><td>Kimi K2</td><td><a target="_blank" href="https://chat.z.ai/">chat</a></td></tr>
+<tr valign="top"><td>US</td><td><a target="_blank" href="https://mimo.xiaomi.com/">Xiaomi</a></td><td><a target="_blank" href="https://mimo.xiaomi.com/index#blog">mimo</a></a></td></tr>
+<tr valign="top"><td>China</td><td><a target="_blank" href="https://www.z.ai/">Z.Ai (Zhipu)</a></td><td>glm</td><td><a target="_blank" href="https://chat.z.ai/">chat</a></td></tr>
 </table>
+
+Devstral
 
 
 <a href="Clients"></a>
@@ -274,6 +294,20 @@ google          chat         anthropic/claude-opus-4@20250514             $15.00
 azure           chat         o1                                           $15.00      $60.00   
 ...
 </pre>
+
+<a name="Poolside"></a>
+
+## Poolside
+
+<a target="_blank" href="https://poolside.ai/">poolside.ai</a>
+Founded in 2023
+
+Eiso Kent, CTO
+   * <a target="_blank" href="https://www.youtube.com/watch?v=rNvCdJkrDes">VIDEO</a> Future of AI: A Vision from poolside @Nexus Luxembourg 2025 (toward AGI for devs)
+   * <a target="_blank" href="https://www.youtube.com/shorts/9EZqym5BPvU">Short</a>
+
+Jason Warner, CEO
+   * <a target="_blank" href="https://www.youtube.com/watch?v=zK4lfuP8Ytc&pp=ygULcG9vbHNpZGUgYWk%3D">VIDEO AWS</a>
 
 
 <a name="Grok"></a>
