@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-01"
-lastchange: "26-05-01 v103 acronymania @acronyms.md"
+date: "2026-05-15"
+lastchange: "26-05-15 v104 VAPT @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -1459,6 +1459,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	v12n	=	Virtualization	(numeronym of 11 letters between v and n)
 * VAE = Variational Autoencoders (uses encoder-decoder architecture to generate new data for image and video generation)
 * VADER = Valence Aware Dictionary and sEntiment Reasoner (A lexicon that includes informal words used for sentiment analysis to determine emotional negativity)
+* VAPT = Vulnerability Assessment and Penetration Testing (a security approach that first finds weaknesses in systems, then tries to exploit them safely to see how serious they are)
 *	VAR	=	Value-Added Reseller
 *	VAT	=	Value-Added Tax
 *	VBO	=	Value-Based Outcome
