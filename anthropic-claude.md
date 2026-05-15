@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-13"
-lastchange: "26-05-13 v040 olamma utils @anthropic-claude.md"
+date: "2026-05-15"
+lastchange: "26-05-15 v041 brewin.sh & uvadd.sh @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -22,7 +22,8 @@ created: "2026-03-19"
 
 {% include whatever.html %}
 
-This article was hand-crafted based on AI responses.
+This article was hand-crafted to combine insights from the documents, tutorials, and videos listed below.
+The objective here is to combine all the wisdom into deep knowledge logically sequenced.
 
 
 <a name="Company"></a>
@@ -145,7 +146,7 @@ REMEMBER: Anththropic does not <strong>host</strong> their own models but use AW
 
 * Claude <strong>Dispatch</strong> enables <strong>cross-device workflows</strong> where tasks move from <strong>mobile app</strong> to desktop app which stays awake (doing whatever else).
 
-* "Memory on Claude Managed Agents" enables agents to learn from past sessions and share what they’ve learned with other agents. The memories mounts directly onto a filesystem so developers can keep control over what these agents retain - the same bash and code execution capabilities that make it effective at agentic tasks. "With filesystem-based memory, our latest models save more comprehensive, well-organized memories and are more discerning about what to remember for a given task.”
+* "Memory on Claude Managed Agents" enables agents to learn from past sessions and share what they've learned with other agents. The memories mounts directly onto a filesystem so developers can keep control over what these agents retain - the same bash and code execution capabilities that make it effective at agentic tasks. "With filesystem-based memory, our latest models save more comprehensive, well-organized memories and are more discerning about what to remember for a given task.”
 
 * <a target="_blank" href="https://medium.com/data-and-beyond/claude-can-use-your-computer-a-comprehensive-security-first-deep-dive-into-claude-computer-use-cf424f48105d">Claude "Computer Use"</a>: <a target="_blank" href="https://www.coursera.org/projects/building-toward-computer-use-with-anthropic" title="by Colt Steele https://skillbuilder.deeplearning.ai/">Computer Use</a> utilizes the capabilities of the latest models including image reasoning and tool use to enable an LLM-based agent to use a computer. Like a human user, the model processes an image of the screen, analyzes it to understand what’s going on, and navigates the computer by issuing mouse clicks and generating keyboard strokes to get things done.
 
@@ -202,11 +203,13 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <strong>Subagents</strong>: Create specialized subagents for different tasks with their own context window. REMEMBER: Subagents operate with isolated context and do NOT share memory with the coordinator. Every piece of its information must be passed explicitly in it.
 
-* <strong>MCP Support</strong>: Extend it with any MCP tool to access APIs, databases and other external systems.
+* <strong>MCP Support</strong>: Extend to <strong>external processing</strong> with any MCP tool to access APIs, databases and other external systems. MCP servers provide external tools and integrations
 
 * <a href="#Tools">MCP Tools</a> defines what MCP clients should run to take action.
 
-* <a href="#Hooks">Hooks</a> are small Python and/or Bash shell scripts (agentic workflows) that run when <strong>triggered by events</strong>: "PreToolUse" (after Read) or "PostToolUse" (after Write or Edit). REMEMBER: A hook can also block Claude from taking an action unless a specific condition has been met.
+* Subagents run in <strong>isolated</strong> execution contexts isolated from the main conversation. Use them for delegated work.
+
+* <a href="#Hooks">Hooks</a> are "event-driven" small Python (.md) and/or Bash shell (.sh) scripts (agentic workflows) that run when <strong>triggered by events</strong>: "PreToolUse" (after Read) or "PostToolUse" (after Write or Edit). REMEMBER: A hook can also block Claude from taking an action unless a specific condition has been met.
 
 * <a href="#Plugins">Plugins</a> (under the Customize menu item) “packaged feature bundles” may include (bundle) hooks, <a href="#SlashCommands">slash commands</a>, and skills together for sharing with others. The "plugins" folder contains a <tt>blocklist.json</tt> file, a "known_marketplaces.json" file and the <strong>marketplaces</strong> folder, starting with "claude-plugins-official".
 
@@ -321,6 +324,22 @@ Anthropic's own tutorials are at:
    * <a target="_blank" href="https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/">Anthropic is trainging the country of Iceland</a>
    <br /><br />
 
+<a target="_blank" href="https://anthropic.skilljar.com/page/claude-partner-network-learning-path">Anthropic's partner video courses on Skills</a> (by Lewis Menelaws)
+* <a target="_blank" href="https://anthropic.skilljar.com/introduction-to-agent-skills">Introduction</a> to <a href="#Skills">agent skills</a> - Learn how to build, configure, and share Skills in Claude Code — reusable markdown instructions that Claude automatically applies to the right tasks at the right time. This course takes you from creating your first Skill to distributing them across teams and troubleshooting common issues.
+   * What are skills?
+   * Creating your first skill
+   * Configuration and multi-file skills
+   * Skills vs. other Claude Code features
+   * Sharing skills
+   * <a href="#Troubleshooting">Troubleshooting skills</a>
+   <br /><br />
+* <a target="_blank" href="https://anthropic.skilljar.com/claude-with-the-anthropic-api">Building with the Claude API</a> - This comprehensive course covers the full spectrum of working with Anthropic models using the Claude API.
+
+* <a target="_blank" href="https://anthropic.skilljar.com/introduction-to-model-context-protocol">Introduction to Model Context Protocol</a> - Learn to build Model Context Protocol servers and clients from scratch using Python. Master MCP's three core primitives—tools, resources, and prompts—to connect Claude with external services
+
+* <a target="_blank" href="https://anthropic.skilljar.com/claude-code-in-action">Claude Code in Action</a> (21 lessons) - Integrate Claude Code into your development workflow. Practical walkthrough of using Claude Code to accelerate your development workflow
+<br /><br />
+
 On Coursera, <a target="_blank" href="https://www.coursera.org/instructor/~192606412">Stephen Grider</a> of Anthropic built 
    * <a target="_blank" href="https://www.coursera.org/learn/claude-code-in-action">Claude Code in Action</a>
    * <a target="_blank" href="https://www.coursera.org/learn/building-with-the-claude-api">Building with the Claude API</a>
@@ -354,11 +373,13 @@ YouTube videos with no subscription:
    * <a target="_blank" href="https://www.youtube.com/watch?v=6SnFH43qPAw">"You Can Build The Craziest Things with Claudes Agent SDK"</a> by Traversy Media
    <br /><br />
 
-YouTube videos peddling subscriptions:
+YouTube videos offering subscriptions:
    * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> referencing <a target="_blank" href="https://github.com/enthropics/">github.com/enthropics</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
    * <a target="_blank" href="https://www.youtube.com/@Mark_Kashef ">YouTube</a> by <a target="_blank" href="https://www.linkedin.com/in/mkashef/">Mark Kashef</a> pushes <a target="_blank" href="https://www.skool.com/earlyaidopters/about">$64/mo Early AI-dopters</a>
    * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
+   * <a target="_blank" href="https://www.youtube.com/@zinhoautomates">Zinho Automates</a> https://www.skool.com/ai-launchpad/about</a>
+   <br /><br />
 
 by Brock Mesarich - AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
    * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> 
@@ -411,31 +432,12 @@ About Claude Code + VS Code + Local LLM:
    ```
    NOTE: It makes use of Ruby that comes with all macOS.
 
-1. Install the lateszt NodeJs for Claude to run TypeScript:
-   ```bash
-   brew install node
-   node --version
-   nvm install --lts
-   ```
 
-1. Optionally, install an alternative to macOS native Terminal app:
-   ```bash
-   brew install --cask kitty
-   open -a kitty
-   ```
-   PROTIP: 3rd-party Terminal apps Kitt and Ghostly natively support notification events without additional configuration (which iTerm2 does).
+   <a name="ClaudeCodeTemplate"></a>
 
-1. To freely open apps from any folder, add the two app paths to .bash_profile:
-   ```
-   /Applications;~/Applications
-   ```
+   ### My Claude Code Template
 
-
-<a name="ClaudeCodeTemplate"></a>
-
-### My Claude Code Template
-
-PROTIP: Load my templates repo from GitHub, which contains a curated set from other tutorials.
+   PROTIP: Load my templates repo from GitHub, which contains a curated set from other tutorials.
 
 1. In your OS Terminal app, create a "bomonike" folder.
    ```bash
@@ -460,14 +462,177 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    alias clf='claude --resume --fork session'. 
    ```
 
-   <a name="VSCode"></a>
+   ### Local copy of downloads
 
-   ### Visual Studio Code Install
+   IMPORTANT: Now that hackers are using advanced AI to identify vulnerabilities in warp speed, 
+   for recovery and for forensics comparisons,
+   we need to be able to <strong>fallback</strong> to a previous version of <strong>each version</strong> 
+   of each Python library and brew utility you have ever downloaded. 
+
+   This approach is less work than waiting for others to find issues with specific upgrades.
+
+1. Create a folder to hold the downloads.
+
+1. PROTIP: Get my custom shell scripts <tt>brewin.sh</tt>:
+   ```bash
+   https://github.com/wilsonmar/mac-setup/blob/main/brewin.sh ???
+   ```
+   Install it.
+
+   REMEMBER: brewin.sh creates a folder on the root path at <tt>/brewin</tt> 
+   to store files if a filepath is not specified.
+
+1. For example, if you need to install PostgreSQL database for use locally, instead of the usual;
+   ```bash
+   brewin.sh postgresql@17
+   ```
+   use the custom shell script <tt>brewin.sh</tt> :
+   ```bash
+   brewin.sh postgresql@17
+   ```
+   brewin.sh would download the file and then save a copy of it.
+   
+1. POLICY: Add utilities for vulnerability scanning, etc.
+   instead of pip install of utilities, have uv add it. But instead of
+   ```bash
+   uv add bandit safety semgrep dynaconf --frozen  
+   ```
+
+1. Install the lateszt NodeJs for Claude to run TypeScript:
+   ```bash
+   brewin.sh node
+   node --version
+   nvm install --lts
+   ```
+
+1. Optionally, install an alternative to macOS native Terminal app:
+   ```bash
+   brewin.sh --cask kitty
+   open -a kitty
+   ```
+   PROTIP: 3rd-party Terminal apps Kitt and Ghostly natively support notification events without additional configuration (which iTerm2 does).
+
+1. To freely open apps from any folder, add the two app paths to .bash_profile:
+   ```
+   /Applications;~/Applications
+   ```
+   
+   ### Python uv vs. pip setup
+
+1. In your repo's <tt>.gitignore</tt> file, specify folders which should not be commited into your team Git repo:
+   ```
+   .venv
+   .pytest_cache
+   __pycache__
+   ```
+   These folder should be created for each <strong>session</strong>.
+   .venv contains the specific version of each package desired in a <strong>virtual environment</strong> folder used to hold library files requested by import statements within Python code.
+
+1. So to start fresh with the latest version of libraries, first <strong>remove</strong> versions which may be stale.
+   ```
+   rm -rf .venv .pytest_cache __pycache__
+   ```
+
+1. Many tutorials (include Anthropic's) still use <tt>pip</tt> commands to manage Python libraries, such as:
+   ```bash
+   <strike>pip install anthropic python-dotenv</strike>
+   ```
+   However, the "cool", tech-forward wonderkind now use a substitue:<br />
+   <tt>uv</tt> which is written in Rust and thus blazing fast.
+
+1. Download uv from https://github.com/wilsonmar/mac-setup/blob/main/uvadd.sh 
+   ```bash
+   ???
+   ```
+   REMEMBER: uvadd.sh creates a folder at <tt>/uvadd</tt> to store files if a filepath is not specified.
+   If a file already exists, it creates a folder with the filename and a datestamp.
+
+1. Install uv (instead of "python3 -m pip install uv"). On macOS:
+   ```bash
+   brewin uv
+   ```
+
+1. Later, to ensure archival, update uv by running "brewin uv" again rather than the "uv self update" recommended.
+
+1. Create a folder for git clone repositories to be created and download a repo containing sample code:
+   ```bash
+   git clone https://github.com/wilsonmar/python-samples.git --depth 1
+   cd python-samples  ???
+   ```
+
+1. set pyproject.toml & .python-version bin, include, lib, pyvenv.cfg
+   ```bash
+   uv init
+   ```
+   This is done instead of <tt>python -m venv .venv</tt>
+   ```
+
+1. POLICY: In production, install project dependencies exactly as specified in the lockfile, without allowing any changes, with --no-build from source, only from pre-built .whl (wheel) executable binaries.
+   ```bash
+   uv sync --frozen --no-build 
+   ```
+
+1. POLICY: Install Python utilities to evaluate Python code:
+   ```bash
+   uvadd.sh bandit safety semgrep dynaconf
+   ```
+   The above fails if pyproject.toml and uv.lock are out of sync.
+
+
+   The steps above only needs to be done <strong>once</strong> on each machine.
+ 
+   The steps below needs to be done at the beginning of every <strong>session</strong>.
+
+   IMPORTANT: A "session" does not mean at the beginning of each work day. A session concludes with <strong>comprehensive tests</strong> and test runs which did not identify any blockers to committing changes.
+   So don't wipe out session-related data until you do a commit.
+
+1. Create the uv folder again, activate it, and populate it with the latest import packages:
+   ```bash
+   uv venv .venv                   # create folder .venv (instead of python -m venv .venv)
+   ```
+   This creates the .venv folder and within it, folders bin, include, lib, and file pyvenv.cfg.
+
+1. To modify your shell’s environment  (instead of source .venv/bin/activate):
+   ```bash
+   source .venv/bin/activate       # on macOS & Linux
+        # ./scripts/activate       # PowerShell only
+        # ./scripts/activate.bat   # Windows CMD only
+   ```
+   This would change your CLI prompt with a "(venv)" prefix.
+
+1. CAUTION: Upgrade ALL dependencies to the latest version available publicly (including SHA-256 hashes):
+   ```bash
+   <strong>uv lock --upgrade</strong>       # 
+   ```
+   First make sure that you have everything archived for recovery.
+
+   Previously, pip's "deactivate" CLI command was needed to undo what pip's activate CLI command did,
+   which was to 
+
+   However, these commands are not needed with uv if this command is used to run python programs:
+   ```bash
+   uv run whatever.py
+   ```
+   uv handles, behind the scenes, the environment setup and interpreter resolution itself.
+
+1. REMEMBER: Before removing libraries, if you are running a temporary PostgreSQL instance, avoid corrupting the database by stopping the database using this CLI command before the libraries it depends on go away.
+   ```
+   brew services stop postgresql@17
+   ```
+
+1. AFTER a session, clean up temporary folders:
+   ```
+   rm -rf .venv .pytest_cache __pycache__
+   ```
+
+<a name="VSCode"></a>
+
+## IDE Visual Studio Code Install
 
 1. Install Homebrew (which is based on Ruby).
 1. Install VSCode and start it:
    ```bash
-   brew install --cask visual-studio-code
+   brewin.sh --cask visual-studio-code
    code
    ```
 1. Click the Extensions and enter "Claude Code" in the Marketplace
@@ -483,7 +648,7 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
 
 1. Install Ollama: <a target="_blank" href="https://www.youtube.com/watch?v=WhW3iuUArqI" title="by Ruslan Brilenkov">VIDEO</a>, <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/04/cc-deep-dive-16-the-local-showdown/">BLOG</a>: 
    ```bash
-   brew install ollama
+   brewin ollama
    ```
    That installs folders that need to be removed to fully uninstall:
    * <tt>~/.ollama</tt> to hold models and configuration. Under that, <tt>~/.ollama/logs</tt> contains logs.
@@ -494,8 +659,8 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    *  ~/Library/WebKit/com.electron.ollama
    <br /><br />
 
-1. Get an Ollama account and API key:
-   1. https://ollama.com
+1. On a browser, get an Ollama account and API key:
+   1. <a target="_blank" href="https://ollama.com">https://ollama.com</a>
    2. Click "Sign in". This creates a client_id in the URL.
    3. Click "Sign Up". Type your email address. Continue.
    4. Create a password using your secrets manager and switch to paste it.
@@ -503,15 +668,16 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    6. Copy the code and switch back to the Ollama.com to paste it.
    7. Click "Sign in". Type your email and click Continue.
    8. Copy your password from your secrets manager and switch to paste it.
-   9. At https://ollama.com/pricing notice the "Free" account enables you to "Run models on your hardware" and the paid subscriptions enable you to run their cloud models. "Add API Key".
-   9. Type a key name (using a date such as 261231). Click "Generate API key".
+   9. At <a target="_blank" href="https://ollama.com/pricing">ollama.com/pricing</a>, notice the "Free" account enables you to "Run models on your hardware" and the paid subscriptions enable you to run their cloud models. 
+   9. Click "Add API Key".
+   9. Type a key name (using a date such as 261231 for YYMMDD). Click "Generate API key".
    9. Click the copy icon to copy the API key and paste it in your secrets manager.
    9. Optionally, create an add your asymmetric key which starts with "ssh-ed25519 AAA".
    9. At https://ollama.com/settings click "Create API key" to run models on their cloud.
-
-1. In your file, construct the variable by pasting the password copied from your secret manager:
+   <br /><br />
+1. In your .env file, construct the variable by pasting the password copied from your secret manager:
    ```
-   OLLAMA_API_KEY=your_api_key
+   OLLAMA_API_KEY="your_api_key"
    ```
 
 1. Sign into Ollama CLI:
@@ -825,7 +991,7 @@ Alternately:
 
 1. Install pre-requisite utilties NodeJs:
    ```bash
-   brew install node
+   brewin node
    winget install OpenJS.NodeJS.LTS   # on Windows
    ```
    ```bash
@@ -859,6 +1025,15 @@ Alternately:
    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
    ```
 
+1. See start-up messages:
+   ```bash
+   claude --debug
+   ```
+   Review and delete the file generated for each run, such as:
+   <pre>
+   Logging to: ~/.claude/debug/1234567-1234-1234-1234-123456789.txt
+   </pre>
+
 1. Confirm installation location: 
    ```bash
    whereis claude
@@ -868,7 +1043,7 @@ Alternately:
    <pre>
    claude: ~/.local/bin/claude
    </pre>
-   If you used brew install on an Apple Silicon machine:
+   If you used brew install (brewin.sh ) on an Apple Silicon machine:
    <pre>
    claude: /opt/homebrew/bin/claude
    </pre>
@@ -1076,7 +1251,7 @@ Alternately:
    <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Instead of "Download" at<br />
    <a target="_blank" href="https://lmstudio.ai/blog/claudecode/">https://lmstudio.ai/blog/claudecode</a>
    ```bash
-   brew install --cask lm-studio
+   brewin --cask lm-studio
    ```
 
 
@@ -1340,7 +1515,7 @@ REMEMBER: Two folders are created:
    * <a href="#Skills">skills folder</a>
    <br /><br />
 
-   My https://github.com/bomonike/claude-templates has 3 different CLAUDE.MD files for each
+   <a target="_blank" href="https://github.com/bomonike/claude-templates">My github</a> has 3 different CLAUDE.MD files for each
    * ~/.claude/CLAUDE.md - loaded with all prompts for all projects of the user
    * ~/.claude/projects/<em>project_id</em>/CLAUDE.md - applicable to a specific project (/init)
    <br /><br />
@@ -1444,7 +1619,7 @@ REMEMBER: Two folders are created:
 
 1. List folders and files as a tree 3 levels down from <tt>~/.claude/</tt>:
    ```bash
-   brew install eza
+   brewin eza
    eza -T -G -L 3 ~/.claude/
    ```
    TODO:
@@ -1458,8 +1633,6 @@ REMEMBER: Two folders are created:
     ├── README.md
     └── docker-compose.yml
    </pre>
-
-   <a target="_blank" href="https://github.com/bomonike/claude-templates.git">CLAUDE.md</a>
 
 
 1. Edit file CLAUDE.md, the long-term memory file.
@@ -1489,9 +1662,6 @@ REMEMBER: Two folders are created:
 * <a target="_blank" href="https://claude.com/product/cowork?open_in_browser=1">Claude Co-Work</a> - "Hand off tasks to Claude and come back to finished work."
 
 * <a target="_blank" href="https://claude.com/skills">Claude Skills</a> "turn expertise, procedures, and best practices into reusable capabilities." To ensure output follows proven patterns (rather than guessing) for handling PowerPoint pptx files, <strong>pptx/SKILL.md</strong> is defined. 
-
-   <a target="_blank" href="https://platform.claude.com/workspaces/default/skills">
-   Claud.com docs</a> on handlers for pdf, Microsoft xlsx, pptx, docx, 
 
 
 
@@ -1566,7 +1736,7 @@ Do not invent colors, fonts, or spacing values outside the design system.
 Match component states (hover, focus, active, disabled) to patterns in @DESIGN.md.
 </pre>
 
-The <a target="_blank" href="https://github.com/bomonike/claude-templates/blob/main/DESIGN.md">example within my claude-templates repo</a> says it's for "Acme Corp" but was open-sourced based on <a target="_blank" href="https://medium.com/autocomplete-real-world-ai/design-md-the-complete-guide-ac8c5cd0d14d">Google Labs'</a> 
+<a target="_blank" href="https://github.com/bomonike/claude-templates/blob/main/DESIGN.md">My DESIGN.md example within my claude-templates repo</a> says it's for "Acme Corp" but was open-sourced based on <a target="_blank" href="https://medium.com/autocomplete-real-world-ai/design-md-the-complete-guide-ac8c5cd0d14d">Google Labs'</a> 
 Stitch <a target="_blank" href="https://wilsonmar.github.io/design-system">Design System</a> and AI tool.
 
 The <a target="_blank" href="https://github.com/VoltAgent/awesome-design-md">VoltAgent/awesome-design-md</a> repo contains 69+ ready-to-use DESIGN.md files with HTML previews (light and dark mode).
@@ -1725,8 +1895,7 @@ hooks/todo-enforcer.config.json
 
    RECOMMENDED: In a Terminal, install <strong>Claude Code</a>
    ```dash
-   brew info claude-code
-   brew install claude-code
+   brewin claude-code
    ```
    <pre>
    Terminal-based AI coding assistant
@@ -1913,13 +2082,11 @@ my-python-app/
 
 ## Settings config
 
-* <tt>/.claude/settings.local.json</tt> — your <strong>personal</strong> project overrides (gitignored).
+* <tt>~/.claude/settings.local.json</tt> — your <strong>personal</strong> project overrides (gitignored).
+* <tt>/.claude/settings.json</tt> — global user defaults (see below). 
 * <tt>/.claude/settings.json</tt> — project-level, commit to github for sharing on each team member's setup.
-* <tt>~/.claude/settings.json</tt> — global user defaults (see below). Its first line should be:
-   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-   NOT        "https://json-schema.org/claude-code-settings.json",
 <br /><br />
-* managed-settings.json — enterprise-enforced, can't be overridden.
+* <a href="#managed-settings">managed-settings.json</a> — enterprise-enforced, can't be overridden by standard user.
 <br /><br />
 
 <a target="_blank" href="https://youtube.com/shorts/hbRQqEcvBeI?si=H2BhITefCuoNhCBO">VIDEO</a>:
@@ -1965,9 +2132,11 @@ PROTIP: Take a full backup before you make changes to conditions after install.
 1. At the top, for autocomplete in editors like VS Code:
    ```
    }
-     "$schema": "https://json-schema.org/claude-code-settings.json",
+     "$schema": "https://json.schemastore.org/claude-code-settings.json",
    ```
-1. Set basis for rules by what enviornment (vs prod):
+      NOT       "https://json-schema.org/claude-code-settings.json",
+   
+1. <a target="_blank" href="https://code.claude.com/docs/en/env-vars">Environment variables</a> set basis for rules by what enviornment (vs prod). Examples of additional custom variables include:
    ```
    "env": {
      "NODE_ENV": "development",
@@ -2231,10 +2400,125 @@ Illegal trailing comma before end of array: line 44 column 21 (char 942)
 <a name="Skills"></a>
 
 ## Skills
+   * <a target="_blank" href="https://www.youtube.com/watch?v=0cVuMHaYEHE">VIDEO</a>: Skills reduce the pain from copy-and-paste prompting. Skills compound.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=bjdBVZa66oU">VIDEO</a>: What are skills?
+   <br /><br />
 
-<a target="_blank" href="https://www.youtube.com/watch?v=0cVuMHaYEHE">VIDEO</a>: Skills reduce the pain from copy-and-paste prompting. Skills compound. 
+WHen Claude starts, it looks for skills the might be requested from within these four folders: <a target="_blank" href="https://www.youtube.com/watch?v=Wx6_vjFFyHM">VIDEO</a>:
+1. <a href="#managed-settings">managed-settings.json</a> provided by enterprise administrators to Claude users under its charge.
+2. <tt>$HOME/.claude/skills</tt>                 # personal folder $HOME such as "/Users/JohnDoe/..." in a git repo
+3. <tt>project/.claude/skills</tt>               # project
+4. <tt>project/.claude-plugin/plugin.json</tt>   # plugins
+<br /><br />
+The above defines the precedance of a lower skill being "shadowing" if that same skill name is in different levels.
+The top one is used.
 
-Skills collected from others, such as git@github.com:jarrodwatts/claude-code-config.git
+REMEMBER: Skill folders under <tt>~/.claude/skills/...</tt> are <strong>reusable by all projects</strong>.
+
+Skill folders can also be downloaded from a Marketplace such as:
+   * <a target="_blank" href="https://www.atcyrus.com/skills">https://www.atcyrus.com/skills</a>
+   * github ???
+   <br /><br />
+
+<a target="_blank" href="https://www.youtube.com/watch?v=98KaK_rn5rQ">VIDEO</a>: 
+REMEMBER: The <a target="_blank" href="https://agentskills.io/">agentskills.io</a> standard says
+each Claude skill is defined by a folder named for the skill plus a SKILL.md file within that folder. 
+<a target="_blank" href="https://thenewstack.io/agent-skills-anthropics-next-bid-to-define-ai-standards/">DOC</a>:
+<pre>
+skill-name/
+├── SKILL.md           # Required: metadata + main instructions
+├── assets/            # Spec: templates, resources
+│   └── onboarding.md
+├── examples/
+│   └── sample-output.md   # What good output looks like
+├── reference.md       # Detailed docs (loaded on demand)
+├── references/        # Spec: documentation
+│   └── api-spec.md    # Detailed specs Claude reads when communicating using APIs
+│   └── architecture.md    # Architectural pattern (use of technologies such as MVC, REST API, microservices, etc.)
+│   └── deep-dives.md  # Detailed technical tours referencing visual diagrams on the page
+│   └── example-fas.md # Detailed specs Claude reads when needed
+├── scripts/           # Spec: exectable code
+│   └── validate.sh    # Executable bash scripts
+└── templates/
+    └── output.md      # Template Claude fills in at run-time
+</pre>
+
+Project skills should be committed to version control alongside your code, for the whole team to use.
+
+The three main distribution methods — repository commits, plugins, and enterprise managed settings.
+
+Skills shared aross projects are cloned from folder <tt>.claude/skills</tt> where team standards live, like your company's brand guidelines, preferred fonts, and colors for web design.
+
+The entry point for each skill is a SKILL.md file in its own directory.
+
+POLICY: The SKILL.md file should contain a link to each file under it, and be <strong>under 500 lines</strong>.
+
+SKILL.md can contains other metadata such as: 
+* allowed-tools: Read, Grep, Glob, Bash
+* model: sonnet
+<br /><br />
+
+Skills provide guidelines that affect Claude's reasoning.
+
+<strong>Default skills</strong> described in markdown files<a target="_blank" href="https://platform.claude.com/workspaces/default/skills">Claud.com docs</a> provide <strong>handlers</strong> for each <strong>type of file</strong>: pdf, Microsoft xlsx, pptx, docx, etc.
+When a file is uploaded but its content isn't visible in context yet, the "file-reading" skill acts as a router to the right reading approach per file type.
+
+Skills encode environment-specific constraints (available libraries, output paths, rendering quirks) that improve output quality beyond what training data alone provides.
+   * The "product-self-knowledge" skill deliver facts about Anthropic's products (Claude Code, API details, claude.ai plan limits, pricing).
+   * The "frontend-design" skill handles Web UIs, React components, HTML/CSS layouts, dashboards, landing pages.
+   * The "skill-creator" skill is invoked when creating, editing, or evaluating skills themselves.
+   <br /><br />
+
+<a target="_blank" href="https://www.youtube.com/watch?v=IgNN4v0BJdU">VIDEO</a>:
+
+For example, in each SKILL.md file the skill name is repeated within the header:
+```
+---
+name: pr-review
+description: Reviews pull requests for code quality. Use when reviewing PRs or checking code changes.
+---
+```
+REMEMBER: "Use when" begins the sentence Claude uses to select the skill for the task it needs to fulfill.
+
+REMEMBER: Ensure that Claude actually invokes the skill with a prompt such as "Create a PR".
+
+Another example:
+```
+---
+name: backend-review
+description: Reviews backend code for security issues and compliance mishaps.
+tools: Bash, Glob, Grep, Read, WebFetch, WebSearch, Skill...
+skills: accessibility-audit, performance-check
+---
+```
+REMEMBER: The skill name must be in <strong>lower case</strong> and be a maximum of 64 characters.
+The description has a maximum of 1,024 characters in <strong>only one line</strong>.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=0cVuMHaYEHE&t=9m33s">VIDEO</a>: "Good descriptions names the document types output format the skill produces. It includes trigger phrases to invoke the skill.
+
+REMEMBER: Built-in Claude agents (like Explorer, Plan, and Verify) can't access skills at all.
+When a subagent starts, explicitly listed custom Skills for them are loaded.
+This is a way to enforce standards in delegated work without relying on prompts.
+
+Claude collects skill descriptions in SKILL.md files within each skill folder to compile an index of skills.
+Claude traverses that index to complete each task it needs to do.
+
+Skills provide <strong>specialized knowledge</strong> that applies to specific tasks:
+   * Code review standards your team follows
+   * Commit message formats you prefer
+   * Brand guidelines for your organization
+   * Documentation templates for specific types of docs
+   * Debugging checklists for particular frameworks
+   <br /><br />
+
+REMEMBER: Unlike slash commands which users deliberately type in, 
+each skill is opened and viewed automatically by Claude only when needed.
+
+So mastery of custom skills lies in part to proper crafting of those descriptions in each SKILL.md markdown file.
+
+So keep primary instructions in SKILL.md concise while still giving Claude access to rich supporting material when it needs it.
+
+Custom skills can be created, such at git@github.com:jarrodwatts/claude-code-config.git
    * planning-with-files
    * <strong>rigorous-coding</strong>
    * web-design-guidelines
@@ -2242,39 +2526,78 @@ Skills collected from others, such as git@github.com:jarrodwatts/claude-code-con
    * vercel-react-best-practices
    <br /><br />
 
-The entry point for each skill is a SKILL.md file in its own directory.
-So keep primary instructions in SKILL.md concise while still giving Claude access to rich supporting material when it needs it.
-
-<pre>
-skill-name/
-├── SKILL.md           # Main instructions (required)
-├── assets/            # Spec: templates, resources
-├── examples/
-│   └── sample-output.md      # What good output looks like
-├── reference.md       # Detailed docs (loaded on demand)
-├── references/        # Spec: documentation
-│   └── api-spec.md    # Detailed specs Claude reads when needed
-├── scripts/           # Spec: exectable code
-│   └── validate.sh    # Executable scripts
-└── templates/
-    └── output.md      # Template Claude fills in
-</pre>
-
-REMEMBER: Skill folders under <tt>~/.claude/skill/...</tt> are usable by all projects.
-
-<a target="_blank" href="https://www.youtube.com/watch?v=0cVuMHaYEHE&t=9m33s">"Good descriptions names the document types output format the skill produces. It includes trigger phrases to invoke the skill.</a>
-
-CAUTION: Description of what the skill does and when to use it must be only one line. Max 1024 characters.
-
 <a target="_blank" href="https://www.youtube.com/watch?v=IjiaCOt7bP8">VIDEO</a>: Agent Skills</a> makes use of OpenAI's "open agent skills standard" (<a target="_blank" href="https://www.vibesparking.com/en/blog/ai/agent-skills/2026-01-15-agent-skills-open-standard-authoritative-guide/">released on December 18, 2025</a>), written in OpenAI Codex CLI, IDE Extension, Codex app. Google Gemini and DeepMind adopted it too. They's on <a target="_blank" href="https://skillsmp.com/">skillsmp.com marketplace</a>
 
-https://thenewstack.io/agent-skills-anthropics-next-bid-to-define-ai-standards/
-Open Agent Skills spec is at:
-https://agentskills.io/home
+<a name="Troubleshooting"></a>
 
-https://www.atcyrus.com/skills
-Marketplace
+<a target="_blank" href="https://www.youtube.com/watch?v=YBa1cwaG7is">VIDEO</a>: Troubleshooting skills.
 
+Try "skills-ref", the Agent Skills Verifier, using uv (written in Rust).
+
+
+<a name="managed-settings"></a>
+
+## managed-settings.json
+
+The <tt>managed-settings.json</tt> file is meant for corporate-level admin-controlled settings that cannot be overriden by project or user level settings.
+
+REMEMBER: Unlike other settings.json files, the managed-settings.json file is stored in a folder outside of /Users folders.
+
+   * Mac: <tt>/Library/Application Support/ClaudeCode/managed-settings.json</tt>
+   * Linux or WSL: <tt>/etc/claude-code/managed-settings.json</tt>
+   * Windows: <tt>C:\ProgramData\ClaudeCode\managed-settings.json</tt>
+   <br /><br />
+
+PROTIP: Enterprises use MDM/Jamf-style policy controls on macs to require standard users to provide an admin password to view/modify.
+
+View <a target="_blank" href="https://managed-settings.com/">managed-settings.com</a> to craft secure claude code settings.json and managed-settings.json enterprise security policy.
+   * cleanupPeriodDays
+   <br /><br />
+
+Example: <a target="_blank" href="https://www.youtube.com/watch?v=OCBi3eScNLk">VIDEO</a>: Share skills.
+```
+{
+    "permissions": {
+        "defaultMode": "deny",
+        "onlyAllow": [
+            "Read(*)",
+            "Search(*)"
+            "Write(*)"
+        ]
+    },
+    "askBeforeRunningTool": true
+          ],
+        "deny": [
+           "Edit(/etc/*)",
+           "Bash(rm *)",
+           "Bash(curl *)",
+           "Read(./.env.*)",
+           "Read(./secrets/**)"
+        ]
+    },
+    "forceRemoteSettingsRefresh": true
+    "env": {
+        "ANTHROPIC_API_KEY": "redacted",
+        "CLAUDE_CODE_ENABLE_TELEMETRY": "1",
+        "OTEL_METRICS_EXPORTER": "otlp"
+    },
+    "companyAnnouncements": [
+        "Welcome! Review our code guidelines.",
+        "Our new security policies are now active."
+    ],
+    "strictKnownMarketplaces": [
+        {
+            "source": "github",
+            "repo": "acme-corp/approved-plugins"
+        },
+        {
+            "source": "npm",
+            "package": "@acme-corp/compliance-plugins"
+        }
+    ]
+}
+```
+<tt>strictKnownMarketplaces</tt> control where plugins can be installed from.
 
 
 <a name="Rules"></a>
@@ -2328,8 +2651,7 @@ Anthropic provides free tutorials at https://anthropic.skilljar.com/
 
 Anthropic's Claude Partner Network includes Accenture, Deloitte, PwC, and other consulting and systems integration firms.
 
-https://www.anthropic.com/news/enterprise-ai-services-company
-In May 2026, Anthropic, Blackstone, Hellman & Friedman, and Goldman Sachs announced the formation of a new AI services company to bring Claude into mid-sized companies' core operations. The company is also backed by General Atlantic, Leonard Green, Apollo Global Management, GIC, and Sequoia Capital. 
+<a target="_blank" href="https://www.anthropic.com/news/enterprise-ai-services-company">In May 2026</a>, Anthropic, Blackstone, Hellman & Friedman, and Goldman Sachs announced the formation of a new AI services company to bring Claude into mid-sized companies' core operations. The company is also backed by General Atlantic, Leonard Green, Apollo Global Management, GIC, and Sequoia Capital. 
 
 \#CAExamPrep 
    * https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request
@@ -2496,7 +2818,7 @@ Training Data Cutoff is the broader range of data used.
 
    https://platform.claude.com/settings/keys
 
-1. Run the <tt>simple-msg.py</tt> from https://github.com/bomonike/claude-templates...
+1. Run the <tt>simple-msg.py</tt> from https://github.com/bomonike/claude-templates/???
    '''python
    import anthropic
    client = anthropic.Anthropic()
