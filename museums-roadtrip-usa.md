@@ -1,7 +1,8 @@
 ---
 layout: post
-date: "2025-02-12"
-lastchange: "v007 + from wilsonmar :museum-roadtrip-usa.md"
+date: "2026-05-16"
+lastchange: "26-05-16 v013 scenic drives @museums-roadtrip-usa.md"
+url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
 excerpt: "Visual, architectural, and culinary art in every state and major city, mapped by Machine Learning"
@@ -14,15 +15,14 @@ image:
 comments: true
 created: "2016-03-19"
 ---
-<a target="_blank" href="https://bomonike.github.io/museums-roadtrip-usa"><img align="right" width="100" height="100" alt="museums-roadtrip-usa.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/museums-roadtrip-usa.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include _toc.html %}
 
-This page lists where one can visit, see, and eat at the most important cultural artifacts in America.
+This page lists where one can visit, see, and eat near the most significant cultural artifacts in America.
 I created this page as a "bucket list" so that even if I can't visit each one and perhaps enjoy on-site, I can still visit their web pages. Someday soon everyone can see treasures from anywhere using VR (Virtual Reality) glasses providing 360-degree views in High Definition.
 
-> Do you have a road trip map or story? Please send it to me for posting here.
+> Do you have a road trip map or story? Share it! I'd love to know.
 
 {% include whatever.html %}
 
@@ -50,6 +50,8 @@ BTW, finding where each site is located resulted in a great geography and histor
 
 
 ## References (Websites)
+
+Since July 4, 1776, the US has grown from 13 colonies with 2.5 million people to 50 states and 14 territories with over <a target="_blank" href="https://www.census.gov/popclock/">342 million</a> people connected by roughly 5,000 airports, 140,000 miles of train tracks, 4 million miles of roads, and 5.5 million miles of power lines. 
 
 * <a target="_blank" href="https://www.hmdb.org/">hmdb.org  = Historical Marker Database</a>
 * <a target="_blank" href="https://www.movie-locations.com/">movie-locations.com</a>
@@ -126,6 +128,41 @@ North-South interstate highway numbers end with 5.
 
 <img alt="North-South" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1660662994/roadtrip-usa-north-south-hwy_sontf7.jpg">
 
+### Most scenic drives in America
+
+<a target="_blank" href="https://scenicbyways.info">scenicbyways.info</a>
+
+* Kancamagus Scenic Highway "The Kanc" (New Hampshire) - 34.5 miles for Fall foliage from Route 16 in Conway to Route 3 in Lincoln.
+* Blue Ridge Parkway (Virginia to North Carolina) - 469 miles along the crest of the Appalachian Mountains.
+* Skyline Drive (Virginia) - 105 miles from Blue Ridge Parkway US 340 in Front Royal Shenandoah Valley National Park on the crest of the Virginia Blue Ridge Mountains to US 250 in Waynesboro. Dinner at Inn at Little Washington.
+
+* Going-to-the-Sun Road (Montana) - 50 miles through Glacier National Park. Cross the Continental Divide. Massive glaciers, alpine meadows, and sheer rock cliffs. So take the bus. 
+* Beartooth Highway 212 (Montana to Wyoming) - 68 miles from Red Lodge, through thrilling switchbacks, unobstructed views of glacial lakes, deep valleys, and snow-capped peaks, to shop at "Top of the World" at 11,000 feet. Sing that Carpenters song. <a target="_blank" href="https://www.carolynsrvlife.com/best-scenic-drives/">VIDEO</a>
+* Grand Loop Road (Lamar Valley + Hayden Valley), Yellowstone National Park (Wyoming) - 142 miles from Livington to the park's Northeast Entrance then to the Grand Loop Road to reach Hayden Valley. See wild bison and grizzly bears create traffic jams.
+* Badlands Loop State Scenic Highway (South Dakota) - 39 miles from Exit 110 of Interstate 90 in Wall, South Dakota (for free water, eats, shops, and fake dinosaurs) to Exit 131 of Interstate 90 near Cactus Flat. See a nuclear bunker along the way on your Harley.
+
+* Burr Trail Scenic Drive (Southern Utah) - 67 miles from Boulder on Utah Hwy 12 to <a target="_blank" href="https://www.ytravelblog.com/lone-rock-beach-lake-powell-utah/">Glen Canyon National Recreation Area</a> through the red rock canyons - Bryce Canyon National Park to Capitol Reef, passing through towering sandstone walls and the breathtaking Escalante Canyons.
+* Monument Valley Scenic Drive (& Route 163) (UT) - 17 miles of unpaved dirt from the Arizona border to see where Westerns were filmed. See Mexican Hat, an inverted sombrero-shaped rock formation. Detour to Valley of the Gods, a 15-mile loop road for spectacular rock formations and landscapes.
+
+* Independence Pass (Colorado) - 32 miles from Twin Lakes up 12,095 ft. for posh Aspen. At 10,152 ft. is Leadville, the US’s highest incorporated city.
+* Pikes Peak Highway (Colorado Springs, Colorado) - 19 miles from Cascade to Pikes Peak on 156 turns for an elevation gain of 2.049 meters with 6.70% average gradient. All to sing “America the Beautiful” because Katherine Lee wrote it there while soaking up the views of the valley. Or take the Pikes Peak Cog Railway to get up to the summit.
+
+* Columbia River Scenic Byway (Oregon) - 75 miles along the Columbia River Gorge from Troutdale to The Dalles, through the Cascade range into the Pacific Ocean just west of Astoria. Visit Multnomah Falls. 
+* Red Rock Scenic Byway 179 (Sedona, AZ) - 7.5 miles between Interstate 17 (I-17) and State Route 89A many describe as a spiritual experience due to the energy of striking red rock formations associated with feelings of peace, introspection, and other-wordly connection. Experience vortexes?
+
+* Great River Road follows the Mississippi River for 2,340 miles through ten states, from Minnesota through Iowa to New Orleans, Louisiana - from the rolling hills of the Upper Midwest to the lush bayous of the Deep South and its plantation homes. Visit Mark Twain's Boyhood Home in Hannibal, Missouri.
+* Overseas Highway 42 (Florida) - 113 miles include 17 miles on open water bridges to Key West, the lowest point in the continental US.
+
+* <a href="#Route66">Route 66</a> from Chicago, Illinois to Santa Monica, California
+* Pacific Coast Highway (California Route 1) - 1,500 miles from Washington/Oregon to Los Angeles with the Pacific Ocean out your window. As seen in movies: Malibu, Hearst Castle, Big Sur, Bixby Creek Bridge.
+* Avenue of the Giants (Northern California) - 31 miles on US 101 near Phillipsville (north of Garberville) to Pepperwood (south of Fortuna) through the Humboldt Redwood State Park, home to the largest remaining old-growth redwood forest in the world with more than 17,000 acres of ancient coast redwood and Douglas-fir trees.
+
+* Dalton Highway (Alaska) - 415 miles from Fairbanks to Deadhorse, crossing the Arctic Circle. Visit in September for the tundra’s fall-foliage. Fill up at Coldfoot.
+* Richardson Highway (Alaska) - 366 miles from Valdez to Fairbanks (gateway to the North Pole) to see Chugach Mountains, Prince William Sound, the snowy mountain pass known as Thompson Pass, he Copper River, and many small towns where you can fish for salmon and hike in boreal forests.
+
+* Road to Hana (Maui, Hawaii) - 45 miles between Kahului and Hana has 617 hairpin curves and 56 one-lane bridges. But there are roadside food stands along panoramic Pacific Ocean views, bamboo jungle and Norfolk pines, sacred waterfalls and swimming holes, lava tubes, tropical flowers.
+
+
 ## Refueling and ReCharging
 
 The number of <a target="_blank" href="https://www.tesla.com/supercharger">Tesla Supercharger locations</a> jumped to <a target="_blank" href="https://en.wikipedia.org/wiki/Tesla_Supercharger">2,966 in Q2 2021 from 1,587 at Q1 2019:<br />
@@ -154,14 +191,22 @@ The American Discovery Trail (https://discoverytrail.org/) spans 6,800 miles fro
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1707778533/museums-us-am-disc-trail-1688x1018_snp2gt.png"><img alt="museums-us-am-disc-trail-1688x1018.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707778533/museums-us-am-disc-trail-1688x1018_snp2gt.png"></a>
 
-## National Parks
 
-America's greatest treasure is the <a target="_blank" href="https://www.wikiwand.com/en/National_Park_Service">63</a> <a target="_blank" href="https://www.nps.gov/index.htm">national parks managed by the U.S. National Park Service.
+NERDY TRIVIA: How fast would one need to drive to see a sunset continuously?<br />
+If you were at 89.9 degrees North near a Pole, you could walk across all time zones in the world.<br />
+The formula is: v = circumference * cos(ϕ) where ϕ = latitude.<br />
+At the equator, the circumferance of the earth is 40,075 km, so the earth rotates at
+40,075 km / 24 h ≈ <strong>1670 km/h (1038 mph)</strong>.<br />
+At Denver, Colorado, its 40 degrees latitude = 0.77 radians, so <strong>1279 km/h (795 mph)</strong>.
+See my Python program that calculates it at 
+https://github.com/wilsonmar/python-samples/blob/main/sunset-speed.py
 
+## US National Parks
+
+Among America's greatest treasures are the <a target="_blank" href="https://www.wikiwand.com/en/National_Park_Service">63</a> <a target="_blank" href="https://www.nps.gov/index.htm">national parks managed by the U.S. National Park Service.
 
 <img alt="us-nps-ma-1500x938.jpeg" width="1500" height="938" src="https://user-images.githubusercontent.com/300046/133946844-809c6182-2763-45ba-8d29-217ea2eb28cc.jpeg">
 The <a target="_blank" href="https://www.amazon.com/US-National-Parks-Map-22-5/dp/B072ZWHL8V">map above</a> is missing White Sands National Park (New Mexico), Indiana Dunes, and Gateway Arch (St. Louis).
-
 
 <a target="_blank" href="https://tbandjtravel.com/the-u-s-map/">One couple visited the most significant parks in this order</a>:
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/25560224/6b14fde6-2d1c-11e7-952e-52e883844808.jpg">
@@ -197,7 +242,7 @@ When the Civil War ended in 1865, The Confederacy included the 11 Southern state
 <img width="600" height="300" alt="map-us-states-civil-war-323x227-c64.jpg"
 src="https://cloud.githubusercontent.com/assets/300046/16953089/fc8c99ba-4d88-11e6-9845-7b4120243ea4.jpg">
 
-The 5 "Border States" were Maryland, Delaware, West Virginia, Kentucky, and Missouri (where "brother fought brother").
+The 5 "Border States" were Maryland, Delaware, West Virginia, Kentucky, and Missouri (where "brother fought brother"). <a target="_blank" href="https://youtube.com/shorts/JuWB9qyVmIs?si=9xw1rg581fglgHYT">VIDEO</a>: Although Kentucky's legislature voted to be neutral, the state was represented as a star in both Confederate and Union flags and was occupied by both Confederate and Union troops. Four times more Kentucky citizens fought for the Union than for the Confederacy.
 
 States in white (Oklahoma) did not fight for either side.
 Idaho <a target="_blank" href="https://www.wikiwand.com/en/Idaho_in_the_American_Civil_War">
@@ -1259,10 +1304,8 @@ Detroit had the #2 rate of crime among all cities in the US (2,057/100,000 in 20
 Cleveland had the #8 rate of crime among all cities in the US (1,557/100,000 in 2022).
 
 <ul>
-<li><a target="_blank" href="https://www.rockhall.com/"> Rock and Roll Hall of Fame</a>, Cleveland</li>
+<li><a target="_blank" href="https://www.rockhall.com/"> Rock and Roll Hall of Fame</a> by the Lake Erie shore</li>
 <li><a target="_blank" href="https://www.clevelandart.org/"> Cleveland Museum of Art</a></li>
-<br />
-<li type="circle"><a target="_blank" href="https://www.thedailymeal.com/greenhouse-tavern">The Greenhouse Tavern</a>, Cleveland <a target="_blank" href="https://www.thedailymeal.com/101-best-restaurants-america-2019/slide-4">[#97]</a></li>
 </ul>
 
 
@@ -1801,6 +1844,8 @@ Minneapolis had the #19 rate of crime among all cities in the US (1,101/100,000 
 
 ## Westward through the Southwest
 
+<a name="Route66"></a>
+
 ### Route 66
 
 <a target="_blank" href="https://www.amazon.com/Passport-World-Route-Donna-Bouche/dp/B088DZ79NH/">VIDEO</a>:
@@ -1813,7 +1858,11 @@ In post-war years, motels, diners, and gas stations along Route 66 became popula
 Route 66 begins on Michigan Avene in Chicago, where you can eat at Lou Mitchell's diner.
 The route goes to St. Louis, Missouri, then through smaller road-side towns on the way to Tulsa and Oklahoma City, Amarillo TX, Alberquque New Mexico, then over mountains to Flagstaff AZ before ending on the Santa Monica pier in Los Angeles, California.
 
-However, <a href="#freeways">interstate freeways</a> built from 1956 enabled travel without the need to slow down through towns. That bypassed small businesses along Route 66.
+However, <a href="#freeways">interstate freeways</a> built from 1956 enabled travel without the need to slow down through towns. That bypassed small businesses along Route 66. So visit iconic sites before they're gone:
+
+* Cadillac Ranch: An art installation in Amarillo, Texas, featuring half-buried Cadillacs.
+* Petrified Forest National Park: Located in Arizona, this park showcases stunning petrified wood and colorful badlands.
+
 
 ### Chisolm Trail
 
