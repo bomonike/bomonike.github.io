@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-07"
-lastchange: "26-05-07 v040 poolside @ai-providers.md"
+date: "2026-05-17"
+lastchange: "26-05-17 v043 webchats @ai-providers.md"
 url: "https://bomonike.github.io/ai-providers"
 file: "ai-providers"
 title: "AI Providers"
@@ -29,19 +29,21 @@ toward a "winner take all" dominance.
 <tr valign="top"><td>US</td><td>Amazon</td><td>Nova</td></tr>
 <tr valign="top"><td>US</td><td>Anthropic</td><td><a target="_blank" href="https://bomonike.github.io/anthropic-claude/">Claude</a></td></tr>
 <tr valign="top"><td>US</td><td>Apple</td><td>MM1, ReALM</td></tr>
+<tr valign="top"><td>China</td><td>Baidu</td><td>Ernie</td></tr>
 <tr valign="top"><td>China</td><td>Bytedance</td><td>seed</td></tr>
 <tr valign="top"><td>China</td><td>Cerebras</td><td>-</td></tr>
 <tr valign="top"><td>France</td><td>Cohere</td><td>-</td></tr>
 <tr valign="top"><td>-</td><td>Contexual</td><td>-</td></tr>
-<tr valign="top"><td>China</td><td>DeepSeek</td><td>R1,R2,V3</td></tr>
+<tr valign="top"><td>China</td><td>DeepSeek</td><td>R1,R2,V3</td><td><a target="_blank" href="https://chat.deepseek.com">WebChat</a></td></tr>
 <tr valign="top"><td>US</td><td>ElevenLabs</td><td>-</td></tr>
 <tr valign="top"><td>-</td><td>FAL</td><td>-</td></tr>
 <tr valign="top"><td>US</td><td><a target="_blank" href="#Fireworks.ai">Fireworks.ai</a></td><td>KwaiKAT-Coder</td></tr>
+<tr valign="top"><td>-</td><td>Florian</td><td><a target="_blank" href="https://open.substack.com/pub/robotic/p/latest-open-artifacts-14-nvidias">Parakeet 3</a></td><td> speech-to-text</td></tr>
 <tr valign="top"><td>US</td><td>Google</td><td>Gemini</td><td><a target="_blank" href="https://www.youtube.com/watch?v=nov9uoIQt6g&pp=ugUEEgJlbg%3D%3D">Remy, Antigravity IDE</a></td></tr>
-<tr valign="top"><td>-</td><td>IBM</td><td>granite</td></tr>
+<tr valign="top"><td>US</td><td>IBM</td><td>granite</td></tr>
 <tr valign="top"><td>-</td><td>Jina</td><td>-</td></tr>
-<tr valign="top"><td>-</td><td>Leonardo.ai</td><td>-</td></tr>
-<tr valign="top"><td>US</td><td>Meta</td><td>Llama</td></tr>
+<tr valign="top"><td>-</td><td><a target="_blank" href="https://leonardo.ai">Leonardo.ai</a></td><td>-</td><td>img & video gen using Alibaba's video model</td></tr>
+<tr valign="top"><td>US</td><td>Meta</td><td>Llama, <a href="#Muse">Muse Spark</a></td><td>Instagram</td></tr>
 <tr valign="top"><td>US</td><td>Microsoft</td><td>Phi</td></tr>
 <tr valign="top"><td>Singapore</td><td><a target="_blank" href="https://www.minimax.io/news/minimax-m2">MiniMax</a></td><td>M2, Hailuo, Speech</td></tr>
 <tr valign="top"><td>France</td><td>Mistral</td><td>Medium, Large</td></tr>
@@ -49,17 +51,19 @@ toward a "winner take all" dominance.
 <tr valign="top"><td>-</td><td>Morph</td><td>Morph</td></tr>
 <tr valign="top"><td>US</td><td>NVIDIA</td><td><a target="_blank" href="https://research.nvidia.com/labs/nemotron/Nemotron-3/">Nemotron</a></td></tr>
 <tr valign="top"><td>-</td><td>nousresearch</td><td>hermes-llama</td></tr>
-<tr valign="top"><td>US</td><td>OpenAI</td><td>GPT</td><td>ChatGPT, OpenClaw</td><td>Largest context length of 2m for highest price.</td></tr>
+<tr valign="top"><td>US</td><td>OpenAI</td><td>GPT</td><td><a target="_blank" href="https://chatgpt.com">ChatGPT</a>, OpenClaw, Cursor</td><td>Largest context length of 2m for highest price.</td></tr>
 <tr valign="top"><td>-</td><td><a target="_blank" href="https://perplexity.ai/">Perplexity.ai</a></td><td>Sonar</td><td>Comet browser</td></tr>
 <tr valign="top"><td>US, Paris</td><td><a target="_blank" href="https://poolside.ai/">poolside.ai</a></td><td><a target="_blank" href="https://poolside.ai/blog/introducing-laguna-xs2-m1">laguna</a></td><td>pool</td><td>Free on OpenRouter</td></tr>
 <tr valign="top"><td>-</td><td>prime-intellect</td><td>intellect-3</td><td>-</td></tr>
 <tr valign="top"><td>-</td><td><a target="_blank" href="https://reka.ai">reka.ai</a></td><td>reka-edge/flash</td><td>-</td></tr>
 <tr valign="top"><td>China</td><td>Tencent</td><td>Hy3</td></tr>
 <tr valign="top"><td>-</td><td>Together.ai</td><td>-</td></tr>
-<tr valign="top"><td>US</td><td>xAI</td><td><a href="#Grok">Grok</a></td></tr>
+<tr valign="top"><td>US</td><td>Starlink(xAI)</td><td><a href="#Grok">Grok</a></td></tr>
 <tr valign="top"><td>US</td><td><a target="_blank" href="https://mimo.xiaomi.com/">Xiaomi</a></td><td><a target="_blank" href="https://mimo.xiaomi.com/index#blog">mimo</a></a></td></tr>
-<tr valign="top"><td>China</td><td><a target="_blank" href="https://www.z.ai/">Z.Ai (Zhipu)</a></td><td>glm</td><td><a target="_blank" href="https://chat.z.ai/">chat</a></td></tr>
+<tr valign="top"><td>China</td><td><a target="_blank" href="https://www.z.ai/">Z.Ai (Zhipu)</a></td><td>glm</td><td><a target="_blank" href="https://chat.z.ai/">Webchat</a></td></tr>
 </table>
+
+Andromeda commodity futures market
 
 Devstral
 
@@ -113,8 +117,7 @@ OpenAI was hosted exclusively in Microsoft's <strong>Azure cloud</strong> until 
 
 There are now <a target="_blank" href="https://pinggy.io/blog/best_ai_llm_routers_openrouter_alternatives/">several LLM routers</a>:
    * https://router.orq.ai/ analyzes each prompt and routes it to the most cost-effective among its 413 models among 25 providers who meet quality requirements. It operates in Singapore, APAC, Europe, US to satisfy data sovereignty laws. My program orq-models.py needed to use tricky CSS tricks to obtain a list of 413 models.
-   * https://ngrok.ai 
-   * 
+   * https://ngrok.ai
    <br /><br />
 
 <hr />
@@ -138,6 +141,7 @@ There are now <a target="_blank" href="https://pinggy.io/blog/best_ai_llm_router
 
 I have an entire <a target="_blank" href="https://bomonike.github.io/anthropic-claude/">
 section to Anthropic and its Claude technologies</a>.
+
 
 <a name="Grok"></a>
 
@@ -300,7 +304,12 @@ azure           chat         o1                                           $15.00
 ## Poolside
 
 <a target="_blank" href="https://poolside.ai/">poolside.ai</a>
-Founded in 2023
+Founded in 2023 to run airgapped in AWS only on PostgeSQL.
+
+Train free models using proprietary synthetic data for reinforcement learning.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=V7wvTHgZiwg">VIDEO</a>:
+for internal infra (Northrup Grumman)
 
 Eiso Kent, CTO
    * <a target="_blank" href="https://www.youtube.com/watch?v=rNvCdJkrDes">VIDEO</a> Future of AI: A Vision from poolside @Nexus Luxembourg 2025 (toward AGI for devs)
@@ -308,6 +317,25 @@ Eiso Kent, CTO
 
 Jason Warner, CEO
    * <a target="_blank" href="https://www.youtube.com/watch?v=zK4lfuP8Ytc&pp=ygULcG9vbHNpZGUgYWk%3D">VIDEO AWS</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=OGCG_QkCcZo">At AI Engineer</a> about ADA used by govt. 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=ZW7E0ytuQME&pp=ugUHEgVlbi1HQg%3D%3D">
+Inside Poolside’s Mission to Reinvent Enterprise Software Engineering</a>
+
+Install (no brew):
+```
+curl -fsSL https://downloads.poolside.ai/pool/install.sh | sh
+```
+Installs to <tt>$HOME/.local/bin/pool</tt>
+
+In VS Code or Visual Studio, use the native Poolside Assistant integration.
+In Zed, JetBrains, Neovim, and other ACP-compatible editors with pool acp.
+ACP (Agent Client Protocol)
+
+https://docs.poolside.ai/
+
+Shimmer
+https://shimmer.poolside.ai/login
 
 
 <a name="Grok"></a>
@@ -348,6 +376,41 @@ PROTIP: I generated a Python program to create a CSV or JSON file at
 deepseek-rates.py</a>
 
 
+<a name="Muse"></a>
+
+## Meta Llama vs Muse Spark
+
+Meta's Llama 4 uses Meta’s Community License with conditions for large-scale commercial deployments.
+
+Muse Spark API was <a target="_blank" href="https://ai.meta.com/blog/introducing-muse-spark-msl/">announced quietly on April 8, 2026</a>, with a price tag instead of a download link, in a complete reversal of the free open-source Llama models.
+
+<a target="_blank" href="https://wavespeed.ai/blog/posts/is-there-muse-spark-api-2026/">
+The API & docs are available only to  a private API preview to select users”</a> 
+
+use Muse Spark right now through meta.ai or the Meta AI app. Free. Requires a Meta account (Facebook or Instagram login). The model runs in Instant and Thinking modes through the chat interface, with a Contemplating mode rolling out later.
+
+Meta worked with a 1,000 doctors on Muse, which beat all other models on the HealthBench Hard.
+Muse is from Meta Superintelligence Labs, Meta's new elite research division led by Alexandr Wang after his $14.3 billion acquihire from Scale AI. 
+
+See https://ai.gopubby.com/meta-just-killed-open-source-ai-696275b740ab
+
+https://dev.to/o96a/metas-muse-spark-has-16-tools-and-a-secret-weapon-your-instagram-posts-37mg
+Meta's Muse Spark Has 16 Tools and a Secret Weapon: Your Instagram Posts
+
+"Meta's tools pull from your Instagram posts, let you manipulate images you generated, run Python against them, and spawn sub-agents. That's not a chatbot. That's an operating system for multimodal workflows."
+
+Simon Willison <a target="_blank" href="https://gist.github.com/simonw/e1ce0acd70443f93dcd6481e716c4304#response-1">poked around the meta.ai interface</a> and extracted the complete tool catalog. <a target="_blank" href="https://dev.to/o96a/the-tool-harness-meta-didnt-tell-you-about-92h">The highlights</a>:
+
+   * browser.search / browser.open / browser.find — Web search and page analysis. Standard pattern now, but solid.
+   * meta_1p.content_search — This is the sleeper. Semantic search across Instagram, Threads, and Facebook posts you have access to, filtered by author, celebrity mentions, comments, likes. Posts since January 2025 only. This turns your social graph into queryable context.
+   * container.python_execution — Full Code Interpreter with Python 3.9, pandas, numpy, matplotlib, scikit-learn, OpenCV, Pillow, PyMuPDF. Files persist at /mnt/data/.
+   * container.visual_grounding — This is Segment Anything integrated directly into the chat. Give it an image path and object names, get back bounding boxes, point coordinates, or counts. Yes, it can literally count whiskers on a generated raccoon.
+   * container.create_web_artifact — Generate HTML/JS artifacts or SVG graphics, rendered inline Claude Artifacts style.
+   * subagents.spawn_agent — The sub-agent pattern. Spawn independent agents for research or delegation.
+   * media.image_gen — Image generation (likely Emu or an updated version) with artistic/realistic modes.
+   * And the rest: file editing tools, Meta content download, third-party account linking (Google Calendar, Outlook, Gmail).
+
+
 ## References
 
 https://www.cybergym.io/ found that OpenAI's GPT5.5 found 82% vs 83% by Mythos.
@@ -359,6 +422,8 @@ The Mythos Moment is Real. The Fix-It-Faster Response isn’t.
 https://www.youtube.com/watch?v=T7bQ86m5AEk
 Warp open source office hours: why open source?
 
+https://www.interconnects.ai/p/2025-open-models-year-in-review
+2025 Open Models Year in Review
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
