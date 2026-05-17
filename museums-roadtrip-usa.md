@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-16"
-lastchange: "26-05-16 v013 scenic drives @museums-roadtrip-usa.md"
+date: "2026-05-17"
+lastchange: "26-05-17 v015 resorts @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -134,7 +134,7 @@ North-South interstate highway numbers end with 5.
 
 * Kancamagus Scenic Highway "The Kanc" (New Hampshire) - 34.5 miles for Fall foliage from Route 16 in Conway to Route 3 in Lincoln.
 * Blue Ridge Parkway (Virginia to North Carolina) - 469 miles along the crest of the Appalachian Mountains.
-* Skyline Drive (Virginia) - 105 miles from Blue Ridge Parkway US 340 in Front Royal Shenandoah Valley National Park on the crest of the Virginia Blue Ridge Mountains to US 250 in Waynesboro. Dinner at Inn at Little Washington.
+* Skyline Drive (Virginia) - 105 miles from Blue Ridge Parkway US 340 in Front Royal Shenandoah Valley National Park on the crest of the Virginia Blue Ridge Mountains to US 250 in Waynesboro. Dine at <a target="_blank" href="https://guide.michelin.com/en/district-of-columbia/washington-dc/restaurant/the-inn-at-little-washington">Inn at Little Washington (2-Michelin star)</a>.
 
 * Going-to-the-Sun Road (Montana) - 50 miles through Glacier National Park. Cross the Continental Divide. Massive glaciers, alpine meadows, and sheer rock cliffs. So take the bus. 
 * Beartooth Highway 212 (Montana to Wyoming) - 68 miles from Red Lodge, through thrilling switchbacks, unobstructed views of glacial lakes, deep valleys, and snow-capped peaks, to shop at "Top of the World" at 11,000 feet. Sing that Carpenters song. <a target="_blank" href="https://www.carolynsrvlife.com/best-scenic-drives/">VIDEO</a>
@@ -154,7 +154,7 @@ North-South interstate highway numbers end with 5.
 * Overseas Highway 42 (Florida) - 113 miles include 17 miles on open water bridges to Key West, the lowest point in the continental US.
 
 * <a href="#Route66">Route 66</a> from Chicago, Illinois to Santa Monica, California
-* Pacific Coast Highway (California Route 1) - 1,500 miles from Washington/Oregon to Los Angeles with the Pacific Ocean out your window. As seen in movies: Malibu, Hearst Castle, Big Sur, Bixby Creek Bridge.
+* Pacific Coast Highway (California Route 1) - 1,500 miles from Washington/Oregon to Los Angeles with the Pacific Ocean out your window. As seen in movies: Malibu, J. Paul Getty Museum, Hearst Castle, Big Sur, Bixby Creek Bridge.
 * Avenue of the Giants (Northern California) - 31 miles on US 101 near Phillipsville (north of Garberville) to Pepperwood (south of Fortuna) through the Humboldt Redwood State Park, home to the largest remaining old-growth redwood forest in the world with more than 17,000 acres of ancient coast redwood and Douglas-fir trees.
 
 * Dalton Highway (Alaska) - 415 miles from Fairbanks to Deadhorse, crossing the Arctic Circle. Visit in September for the tundra’s fall-foliage. Fill up at Coldfoot.
@@ -332,6 +332,7 @@ John F. Kennedy Presidential Library and Museum</a>, Columbia Point, Boston</li>
 <li>Arthur M. Sackler Museum</li>
 <li><a target="_blank" href="https://www.brandeis.edu/rose/">Rose Art Museum at Brandeis University</a>, Waltham</li>
 <li type="square">Henry Wadsworth Longfellow House, Cambridge, Massachusetts</li>
+<li type="circle">The Winnetu Oceanside Resort, <a target="_blank" href="https://maps.app.goo.gl/RdeUgCGNi44Zy6BX9">Edgartown</a>, Martha's Vinvard</li>
 </ul>
 
 ### Western Mass Turnpike 90:
@@ -758,6 +759,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.nps.gov/fosu/">Fort Sumter National Monument</a>, Sullivan's Island</li>
 <li type="circle">FIG restaurant, Charleston</li>
 <li type="circle">Husk restaurant (Southern food), Charleston</li>
+<li type="circle">Montage Palmetto Bluff resort</li>
 </ul>
 
 <a name="GA"></a>
@@ -769,6 +771,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.boothmuseum.org/">Booth Western Art Museum</a>, Cartersville</li>
 <li><a target="_blank" href="https://www.columbusmuseum.com/">Columbus Museum</a></li>
 <li><a target="_blank" href="https://www.uga.edu/gamuseum/">Georgia Museum of Art at the University of Georgia</a>, Athens</li>
+<li type="circle">The Cloister at Sea Island Resort</li>
 </ul>
 
 <a name="Atlanta"></a>
@@ -831,7 +834,9 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 
 <li><a target="_blank" href="https://www.rollins.edu/cfam/">Cornell Fine Arts Museum at Rollins College</a>, Winter Park</li>
 <li><a target="_blank" href="https://www.morsemuseum.org/">Morse Museum of American Art</a>, Winter Park</li>
+
 <li>Disneyworld EPCOT, Orlando</li>
+<li type="circle">Four Seasons Resort Orlando, Walt Disney World</a></li>
 <li><a target="_blank" href="https://omart.org/">Orlando Museum of Art</a></li>
 
 <li><a target="_blank" href="https://www.artandscience.org/">Brevard Museum of Art and Science</a>, Melbourne</li>
@@ -857,14 +862,21 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.miamiartmuseum.org/">Miami Art Museum</a></li>
 <li><a target="_blank" href="https://www.mocanomi.org/">Museum of Contemporary Art (MoCA)</a>, North Miami</li>
 <li><a target="_blank" href="https://www.fiu.edu/~museum/">Art Museum at Florida International University</a>, Miami</li>
-<li><a target="_blank" href="https://www.bassmuseum.org/">Bass Museum of Art</a>, Miami Beach</li>
 <li><a target="_blank" href="https://www.vizcayamuseum.org/">Vizcaya Museum and Gardens</a>, Miami</li>
+<li><a target="_blank" href="https://www.bassmuseum.org/">Bass Museum of Art</a>, Miami Beach</li>
 <li><a target="_blank" href="https://www.wolfsonian.fiu.edu/">The Wolfsonian at Florida International University</a>, Miami Beach</li>
 <li><a target="_blank" href="https://www.bocamuseum.org/">Boca Raton Museum of Art</a></li>
 <li><a target="_blank" href="https://www.norton.org/"><strong>Norton Museum of Art</strong></a>, West Palm Beach</li>
 <li><a target="_blank" href="https://www.lowemuseum.com/">Lowe Art Museum at the University of Miami</a>, Coral Gables</li>
-<br />
 <li><a target="_blank" href="https://www.nps.gov/ever/planyourvisit/svdirections.htm">Shark Valley Observation Tower</a>, E of Miami</li>
+
+<li type="circle">L'Atelier de Joël Robuchon Miami<a target="_blank" href="https://guide.michelin.com/en/florida/miami/restaurant/l-atelier-de-joel-robuchon-miami">(3-Michelin-star)</a></li>
+</ul>
+
+### Key West:
+
+<li>
+<li>house with the cats</li>
 <li><a target="_blank" href="https://www.trumanlittlewhitehouse.com/">Harry S. Truman Little White House</a>, Key West</li>
 <li><a target="_blank" href="https://www.gulfcoastmuseum.org/">Gulf Coast Museum of Art</a>, Largo (the southern most point in the continental US)</li>
 </ul>
@@ -934,6 +946,7 @@ Chicago had the #20 rate of crime among all cities in the US (1,099/100,000 in 2
 <li type="circle"><a target="_blank" href="https://www.thedailymeal.com/fat-rice">Fat Rice</a>, Chicago <a target="_blank" href="https://www.thedailymeal.com/eat/101-best-casual-restaurants-america-2018-gallery/slide-74">[#58]</a></li>
 <li type="circle"><a target="_blank" href="https://www.thedailymeal.com/red-apple-1">Red Apple Buffet</a></li>
 <li type="circle"><a target="_blank" href="https://www.alinearestaurant.com/">Alinea</a> (3-star Michelin & rated the Best Restaurant in the US)</li>
+<li type="circle">Smyth (3-Michelin-star)</li>
 </ul>
 
 
@@ -989,7 +1002,7 @@ St. Louis had the #1 rate of crime among all cities in the US (2,082/100,000 in 
 <li><a target="_blank" href="https://www.knoxart.org/">Knoxville Museum of Art</a></li>
 <li><a target="_blank" href="https://mcclungmuseum.utk.edu/">McClung Museum at the University of Tennesse</a>, Knoxville</li>
 <li><a target="_blank" href="https://www.dollywood.com/">Dollywood</a> (amusement park), Pigeon Forge</li>
-<li type="circle">The Barn at Blackberry Farm, Walland, Tennessee</li>
+<li type="circle">The Barn at Blackberry Farm (resort), Walland, Tennessee</li>
 </ul>
 
 <a name="Nashville"></a>
@@ -1269,7 +1282,7 @@ But their service lasted for less than 2 years -- from April 3, 1860 to October 
 Detroit had the #2 rate of crime among all cities in the US (2,057/100,000 in 2022).
 
 <ul>
-<li><a target="_blank" href="https://www.dia.org/">Detroit Institute of Art</strong></a></li>
+<li><a target="_blank" href="https://www.dia.org/"><strong>Detroit Institute of Art</strong></a></li>
 <li><a target="_blank" href="https://www.diamondial.org/">Detroit Institute of Arts Image Database</a></li>
 <li type="circle"><a target="_blank" href="https://www.thedailymeal.com/lafayette-coney-islandt">Lafayette vs. American Coney Island</a> hot dogs <a target="_blank" href="https://www.thedailymeal.com/eat/101-best-casual-restaurants-america-2018-gallery/slide-6">[#97]</a></li>
 </ul>
@@ -1292,7 +1305,7 @@ Detroit had the #2 rate of crime among all cities in the US (2,057/100,000 in 20
 <ul>
 <li><a target="_blank" href="https://www.cincinnatiartmuseum.org/"> Cincinnati Art Museum</a></li>
 <li><a target="_blank" href="https://www.cincymuseum.org/union-terminal"> Museum Center of Union Terminal</a></li>
-<li>American Neon Sign Museum</a></li>
+<li>American Neon Sign Museum</li>
 <li><a target="_blank" href="https://www.creationmuseum.org/">Creation Museum</a> (is closest to the Cincinnati airport)</li>
 <li><a target="_blank" href="https://arkencounter.com//">Ark Encounter</a> (44 miles South in Kentucky from the Creation Museum)</li>
 </ul>
@@ -1446,7 +1459,20 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://www.svma.org/">Sonoma Valley Museum of Art</a>, Sonoma</li>
 <li><a target="_blank" href="https://www.sonoma.edu/ArtGallery/default.html">Sonoma State University Art Gallery</a>, Rohnert Park</li>
 <li><a target="_blank" href="https://www.dirosapreserve.org/">di Rosa Preserve</a>, Napa</li>
+<li type="circle">The French Laundry, Yountville (Frank Keller's 3-Michelin-star)</li>
+<li type="circle">Single Thread, Healdsburg (3-Michelin-star)</li>
 </ul>
+
+### North Coast, California:
+
+<li>
+<li type="circle">Harbor House restaurant, Elk by the sea (2-Michelin-star)</li>
+<li><a target="_blank" href="https://www.stowitts.org/">Hubert Julian Stowitts Museum and Library</a>, Pacific Grove</li>
+<li><a target="_blank" href="https://www.montereyart.org/">Monterey Museum of Art</a></li>
+<li>Monterey Aquarium</li>
+<li type="circle">Aubergine restaurant, Carmel (2-Michelin-star)</li>
+</ul>
+
 
 <a name="SF"></a>
 
@@ -1463,7 +1489,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://www.sfmoma.org/">San Francisco Museum of Modern Art</a></li>
 <li><a target="_blank" href="https://www.famsf.org/">M H de Young Museum</a>, San Francisco </li>
 <li><a target="_blank" href="https://www.friendsofphotography.org/">Friends of Photography/Ansel Adams Center</a>, San Francisco</li>
-<li><a target="_blank" href="https://www.jmsf.org/">The Jewish Museum</a>, San Francisco</a></li>
+<li><a target="_blank" href="https://www.jmsf.org/">The Jewish Museum</a>, San Francisco</li>
 <li><a target="_blank" href="https://www.mocfa.org/">Museum of Craft and Folk Art</a> </li>
 <li><a target="_blank" href="https://www.cablecarmuseum.org/">Cable Car Museum</a> </li>
 <li>Alcatraz island [ferry]</li>
@@ -1489,8 +1515,6 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://www.santacruzmah.org/">Museum Of Art And History</a>, Santa Cruz</li>
 <li><a target="_blank" href="https://www.egyptianmuseum.org/">Rosicrucian Egyptian Museum</a></li>
 <li><a target="_blank" href="https://www.tritonmuseum.org/">Triton Museum of Art</a>, Santa Clara</li>
-<li><a target="_blank" href="https://www.stowitts.org/">Hubert Julian Stowitts Museum and Library</a>, Pacific Grove</li>
-<li><a target="_blank" href="https://www.montereyart.org/">Monterey Museum of Art</a></li>
 </ul>
 
 <a name="SantaBarbara"></a>
@@ -1501,7 +1525,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://hearstcastle.org/">Hearst Castle</a>, San Simeon</li>
 <li><a target="_blank" href="https://www.oma-online.org/">Oceanside Museum of Art</a></li>
 <li><a target="_blank" href="https://www.uam.ucsb.edu/">Art Museum at U.C. Santa Barbara</a></li>
-<li><a target="_blank" href="https://www.sbmuseart.org/">Santa Barbara Museum of Art</a></li>
+<li><a target="_blank" href="https://www.sbmuseart.org/">Santa Barbara Museum of Art</a> (Thanksgiving declaration)</li>
 <li><a target="_blank" href="https://www.wildlingmuseum.org/">Wildling Art Museum</a>, Los Olivos</li>
 <li><a target="_blank" href="https://www.artcenter.org/">California Center for the Arts</a>, Escondido</li>
 <li><a target="_blank" href="https://www.vcnet.com/carnart/">Carnegie Art Museum</a>, Oxnard</li>
@@ -1536,7 +1560,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://www.neonmona.org/">Museum of Neon Art</a>, Los Angeles</li>
 <li><a target="_blank" href="https://www.kamuseum.org/">Korean American Museum</a>, Los Angeles</li>
 <li><a target="_blank" href="https://www.usc.edu/org/fishergallery/">Fisher Gallery at the University of Southern California</a>, Los Angeles</li>
-<li><a target="_blank" href="https://www.thebroad.org/">The Broad</a>, then <a target="_blank" href="https://otiumla.com/menus/">Otium restaurant</a>, downtown Los Angeles</li>
+<li><a target="_blank" href="https://www.thebroad.org/">The Broad</a> (new 202?), downtown Los Angeles</li>
 
 <li><a target="_blank" href="https://southwestmuseum.org/">Southwest Museum</a>, Los Angeles</li>
 </ul>
@@ -1546,8 +1570,9 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 ### East Los Angeles:
 
 <ul>
-<li><a target="_blank" href="https://www.autry-museum.org/">Autry Museum of Western Heritage</a></li>
+<li><a target="_blank" href="https://www.autry-museum.org/"><strong>Autry Museum of Western Heritage</strong></a></li>
 <li><a target="_blank" href="https://www.reagan.utexas.edu/">Ronald Reagan Presidential Library and Museum</a>, Simi Valley</li>
+
 <li><a target="_blank" href="https://www.huntington.org/">Huntington Library</a>, San Marino</li>
 <li><a target="_blank" href="https://www.nortonsimon.org/">Norton Simon Museum</a>, Pasadena</li>
 <li><a target="_blank" href="https://www.pacificasiamuseum.org/">Pacific Asia Museum</a>, Pasadena</li>
@@ -1574,6 +1599,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://www.irvinemuseum.org/">Irvine Museum</a></li>
 <li><a target="_blank" href="https://www.ocma.net/">Orange County Museum of Art</a>, Newport Beach</li>
 <li><a target="_blank" href="https://www.lagunaartmuseum.org/">Laguna Art Museum</a>, Laguna Beach</li>
+<li type="circle">Pendry Resort, Newport Beach</li>
 </ul>
 
 
@@ -1604,6 +1630,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://stuartcollection.ucsd.edu/">Stuart Collection of Sculpture at U.C. San Diego</a></li>
 <li><a target="_blank" href="https://www.sdmart.org/">San Diego Museum Of Art</a></li>
 <li type="circle"><a target="_blank" href="https://www.opentable.com/addison-restaurant">Addison (restaurant)</a>, Del Mar, San Diego</li>
+<li type="circle">Addison, San Diego (3-Michelin-star)</li>
 </ul>
 
 
@@ -1756,7 +1783,7 @@ Minneapolis had the #19 rate of crime among all cities in the US (1,101/100,000 
 
 <ul>
 <li><a target="_blank" href="https://www.mtn.org/MIA/">The Minneapolis Institute of Arts</a></li>
-<li><a target="_blank" href="https://www.artsmia.org/">Minneapolis Institute of Arts</strong></a></li>
+<li><a target="_blank" href="https://www.artsmia.org/"><strong>Minneapolis Institute of Arts</strong></a></li>
 <li><a target="_blank" href="https://www.walkerart.org/">Walker Art Center</a>, Minneapolis</li>
 <li><a target="_blank" href="https://www.weisman.umn.edu/">Weisman Art Museum at the University of Minnesota</a>, Minneapolis</li>
 <li type="circle">Spoon and Stable restaurant, Minneapolis</li>
@@ -1824,6 +1851,7 @@ Minneapolis had the #19 rate of crime among all cities in the US (1,101/100,000 
 <li><a target="_blank" href="https://www.compustory.com/">American Computer & Robotics Museum</a>, Bozeman</li>
 <li><a target="_blank" href="https://www.tippetrise.org/">Tippet Rise Art Center</a>, near Bozeman</li>
 
+<li type="circle">The Ranch at Rock Creek, (near Yellowstone)</li>
 <li><a target="_blank" href="https://yellowstone.artmuseum.org/">Yellowstone Art Museum</a>, Billings</li>
 <li>The only known markings by the <a href="#LewisAndClark">Lewis and Clark Corp</a>, Billings</li>
 </ul>
@@ -1918,8 +1946,8 @@ here we begin from Oklahoma and take a long detour North to avoid too much deser
 <li><a target="_blank" href="https://www.the-mac.org/">The McKinney Avenue Contemporary (MAC)</a></li>
 <li><a target="_blank" href="https://www.meadowsmuseumdallas.org/">Meadows Museum at Southern Methodist University</a>, Dallas</li>
 <li><a target="_blank" href="https://www.cartermuseum.org/">Amon Carter Museum</a>, Fort Worth</li>
-<li><a target="_blank" href="https://dmaws.dallasmuseumofart.org/">Dallas Museum of Art</strong></a></li>
-<li><a target="_blank" href="https://www.kimbellart.org/">Kimbell Art Museum</strong></a>, Fort Worth</li>
+<li><a target="_blank" href="https://dmaws.dallasmuseumofart.org/"><strong>Dallas Museum of Art</strong></a></li>
+<li><a target="_blank" href="https://www.kimbellart.org/"><strong>Kimbell Art Museum</strong></a>, Fort Worth</li>
 <li><a target="_blank" href="https://www.artcenterwaco.org/">Art Center Waco</a></li>
 <li><a target="_blank" href="https://www.mamfw.org/">Modern Art Museum of Fort Worth</a></li>
 <li><a target="_blank" href="https://www.sidrmuseum.org/">Sid Richardson Collection of Western Art</a>, Fort Worth</li>
@@ -1937,8 +1965,7 @@ here we begin from Oklahoma and take a long detour North to avoid too much deser
 <li><a target="_blank" href="https://www.amoa.org/">Austin Museum of Art</a></li>
 <li><a target="_blank" href="https://www.utexas.edu/cofa/bma/">Blanton Museum of Art at the University of Texas</a>, Austin</li>
 <li><a target="_blank" href="https://www.main.org/mexic-arte/">Mexic-Arte Museum</a>, Austin</li>
-<li><a target="_blank" href="https://www.georgewbushlibrary.smu.edu/">
-Lyndon Baines Johnson Presidential Library and Museum</a>, Austin</li>
+<li><a target="_blank" href="https://www.georgewbushlibrary.smu.edu/">Lyndon Baines Johnson Presidential Library and Museum</a>, Austin</li>
 </ul>
 
 <a name="Houston"></a>
@@ -1949,7 +1976,7 @@ Lyndon Baines Johnson Presidential Library and Museum</a>, Austin</li>
 <li> Baker Planetarium</li>
 <li><a target="_blank" href="https://www.ricegallery.org/">Rice University Art Gallery</a>, Houston</li>
 <li><a target="_blank" href="https://www.hfac.uh.edu/blaffer/">Blaffer Gallery at the University of Houston</a></li>
-<li><a target="_blank" href="https://mfah.org/">Museum of Fine Arts</strong></a>, Houston</li>
+<li><a target="_blank" href="https://mfah.org/"><strong>Museum of Fine Arts</strong></a>, Houston</li>
 <li><a target="_blank" href="https://www.camh.org/">Contemporary Arts Museum, Houston</a></li>
 <li> Museum of Medical Science</li>
 <li> The Contemporary Arts Museum</li>
@@ -2000,6 +2027,7 @@ Lyndon Baines Johnson Presidential Library and Museum</a>, Austin</li>
 <li><a target="_blank" href="https://www.fine-art.com/museum/moa.html">The Museum of Outdoor Arts</a>, Englewood</li>
 <li><a target="_blank" href="https://www.usbr.gov/lc/hooverdam/">Hoover Dam</a>, Boulder City</li>
 <li type="circle">Frasca Food & Wine, Boulder</li>
+<li type="circle">C Lazy U Ranch resort</li>
 </ul>
 
 <a name="Denver"></a>
@@ -2012,6 +2040,7 @@ Lyndon Baines Johnson Presidential Library and Museum</a>, Austin</li>
 <li><a target="_blank" href="https://www.kirklandmuseum.org/">Kirkland Museum</a>, Denver</li>
 <li><a target="_blank" href="https://www.museo.org/">Museo de las Americas</a>, Denver</li>
 <li><a target="_blank" href="https://www.mcartdenver.org/">Museum of Contemporary Art/Denver</a></li>
+<li type="circle">The Wolf's Tailor restaurant, Denver (2-Michelin-star)</li>
 </ul>
 
 
@@ -2040,6 +2069,7 @@ Lyndon Baines Johnson Presidential Library and Museum</a>, Austin</li>
 <li><a target="_blank" href="https://www.umfa.utah.edu/">Utah Museum of Fine Arts at the University of Utah</a>, Salt Lake City</li>
 
 <li><a target="_blank" href="https://www.suu.edu/museums/">Braithwaite Arts Gallery at Southern Utah University</a>, Cedar City</li>
+<li type="circle">Grand Hyatt resort, Deer Valley</li>
 </ul>
 
 
