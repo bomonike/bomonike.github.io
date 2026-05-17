@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-15"
-lastchange: "26-05-15 v041 brewin.sh & uvadd.sh @anthropic-claude.md"
+date: "2026-05-17"
+lastchange: "26-05-17 v044 mirror @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -69,8 +69,6 @@ The objective here is to combine all the wisdom into deep knowledge logically se
    <a target="_blank" href="https://www.youtube.com/watch?v=inLFfXFapnw">PROTIP</a>: 
    Claude is named for Claude Shannon at Bell Labs, who founded "informational theory of communication" which made AI possible.
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=grh7CMl960s">VIDEO</a>: "Brainstorm in Claude, build in Cowork"
-
 
 <a name="Competition"></a>
 
@@ -132,7 +130,7 @@ WARNING: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a 
 
    That is why instead of human employees, companies will be <a href="#Pricing">paying for AI tokens</a> to do work. That's the basis for high valuations and unpresedented investments in gigantic data centers using AI chips.
 
-* <strong>Claude CoWork</strong> can interact with you computer's files, mouse, keyboard, and screen, to operate any app. <a target="_blank" href="https://www.youtube.com/watch?v=rlIy7b-3DC8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
+* <a href="#CoWork">Claude CoWork</a> can interact with you computer's files, mouse, keyboard, and screen, to operate any app. <a target="_blank" href="https://www.youtube.com/watch?v=rlIy7b-3DC8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
 
 * "computer use" can open native applications, click through user interfaces, test its own changes, and fix what breaks — all from a developer's terminal. Combined with existing debugging workflows, these features move Claude Code closer to autonomous identification and resolution of bugs during development.
 
@@ -203,7 +201,7 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <strong>Subagents</strong>: Create specialized subagents for different tasks with their own context window. REMEMBER: Subagents operate with isolated context and do NOT share memory with the coordinator. Every piece of its information must be passed explicitly in it.
 
-* <strong>MCP Support</strong>: Extend to <strong>external processing</strong> with any MCP tool to access APIs, databases and other external systems. MCP servers provide external tools and integrations
+* <a href="#MCP">MCP Support</a>: Extend to <strong>external processing</strong> with any MCP tool to access APIs, databases and other external systems. MCP servers provide external tools and integrations
 
 * <a href="#Tools">MCP Tools</a> defines what MCP clients should run to take action.
 
@@ -211,13 +209,20 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <a href="#Hooks">Hooks</a> are "event-driven" small Python (.md) and/or Bash shell (.sh) scripts (agentic workflows) that run when <strong>triggered by events</strong>: "PreToolUse" (after Read) or "PostToolUse" (after Write or Edit). REMEMBER: A hook can also block Claude from taking an action unless a specific condition has been met.
 
-* <a href="#Plugins">Plugins</a> (under the Customize menu item) “packaged feature bundles” may include (bundle) hooks, <a href="#SlashCommands">slash commands</a>, and skills together for sharing with others. The "plugins" folder contains a <tt>blocklist.json</tt> file, a "known_marketplaces.json" file and the <strong>marketplaces</strong> folder, starting with "claude-plugins-official".
+* <a href="#Plugins">Plugins</a> (under the Customize menu item) “packaged feature bundles” may include (bundle) hooks, <a href="#SlashCommands">slash commands</a>, and <a href="#Skills">skills</a> together for sharing with others. The "plugins" folder contains a <tt>blocklist.json</tt> file, a "known_marketplaces.json" file and the <strong>marketplaces</strong> folder, starting with "claude-plugins-official".
 
 * <strong>Claude Agent SDK</strong> are used to build agentic AI systems beyond coding assistance.
 
-* <a href="#Rules">Rules</a>
+* <a href="#Rules">Rules</a> ???
 
 * "Constitutional AI" is a training approach developed by Anthropic to help AI models <strong>self-evaluate and revise</strong> their own responses, based on a predefined set of ethical guidelines and principles (harmless, honest, etc.) rather than RLHF (Reinforcement Learning with Human Feedback). "intent classification" in Claude’s safety system
+
+* "<a target="_blank" href="https://agentskills.io/client-implementation/adding-skills-support">Progressive disclosure</a>" ensures only relevant content occupies the context window at any given time. Every skills-compatible agent follows the same three-tier loading strategy: REMEMBER:
+
+   | Tier | What’s loaded | When | Token cost |
+   | 1. Catalog | Name + description | Session start | ~50-100 tokens per skill |
+   | 2. Instructions | Full SKILL.md body | When the skill is activated | <5000 tokens (recommended) |
+   | 3. Resources | Scripts, references, assets | When the instructions reference them | Varies |
 
 
 <a name="Pricing"></a>
@@ -249,7 +254,7 @@ PROTIP: <a target="_blank" href="https://www.getmerlin.in/pricing?coupon=merlin"
 * Enterprise
 <br /><br />
 
-REMEMBER: A paid plan is required to use Claude Code and Cowork, <a href="#Projects">Projects</a> freature, Claude for Chrome, Slack, Excel, Word, PowerPoint.
+REMEMBER: A paid plan is required to use Claude Code and <a href="#CoWork">Cowork</a>, <a href="#Projects">Projects</a> freature, Claude for Chrome, Slack, Excel, Word, PowerPoint.
 
 CAUTION: In April 2026 Anthropic removed the $17/month tier and requires the $100/month for use of Claude Code.
 
@@ -292,19 +297,17 @@ Good first examples with a small test group:
 
 PROTIP: Improvements in net productivity can be confidently <strong>monitized</strong> when features are combined to be <strong>useful</strong> when consistently applied:
 
-* Customer Support Resolution Agent (Agent SDK + MCP + escalation)
+* Customer Support Resolution Agent (Agent SDK + <a href="#MCP">MCP</a> + escalation)
 
 * Code Generation with Claude Code (<a href="#CLAUDE.md">CLAUDE.md</a> + plan mode + <a href="#SlashCommands">slash commands</a>)
 
 * Multi-Agent Research System (coordinator-subagent orchestration)
 
-* Developer Productivity Tools (built-in tools + MCP servers) See https://github.com/anthropics/courses/blob/master/tool_use/README.md
+* Developer Productivity Tools (built-in tools + <a href="#MCP">MCP</a> servers) See https://github.com/anthropics/courses/blob/master/tool_use/README.md
 
 * Claude Code for CI/CD (non-interactive pipelines + structured output)
 
 * Structured Data Extraction (JSON schemas + tool_use + validation loops)
-
-CAUTION: Cowork activity is not captured in audit logs or Compliance APIs today, which is why it is not for regulated workloads. 
 
 <a target="_blank" href="https://www.youtube.com/watch?v=Y3PcRp5RFzk&pp=ugUEEgJlbg%3D%3D">"5 ‘Boring’ AI Workflows that Businesses Actually Want (And How to Sell them)"</a> by Nate Herk of AI Automation
 
@@ -324,7 +327,7 @@ Anthropic's own tutorials are at:
    * <a target="_blank" href="https://www.techrepublic.com/article/news-anthropic-iceland-ai-education/">Anthropic is trainging the country of Iceland</a>
    <br /><br />
 
-<a target="_blank" href="https://anthropic.skilljar.com/page/claude-partner-network-learning-path">Anthropic's partner video courses on Skills</a> (by Lewis Menelaws)
+<a target="_blank" href="https://anthropic.skilljar.com/page/claude-partner-network-learning-path">Anthropic's partner video courses on Skills</a> (by <a target="_blank" href="https://www.linkedin.com/in/lewis-menelaws-53333b6a/">Lewis Menelaws</a>)
 * <a target="_blank" href="https://anthropic.skilljar.com/introduction-to-agent-skills">Introduction</a> to <a href="#Skills">agent skills</a> - Learn how to build, configure, and share Skills in Claude Code — reusable markdown instructions that Claude automatically applies to the right tasks at the right time. This course takes you from creating your first Skill to distributing them across teams and troubleshooting common issues.
    * What are skills?
    * Creating your first skill
@@ -335,9 +338,9 @@ Anthropic's own tutorials are at:
    <br /><br />
 * <a target="_blank" href="https://anthropic.skilljar.com/claude-with-the-anthropic-api">Building with the Claude API</a> - This comprehensive course covers the full spectrum of working with Anthropic models using the Claude API.
 
-* <a target="_blank" href="https://anthropic.skilljar.com/introduction-to-model-context-protocol">Introduction to Model Context Protocol</a> - Learn to build Model Context Protocol servers and clients from scratch using Python. Master MCP's three core primitives—tools, resources, and prompts—to connect Claude with external services
+* <a target="_blank" href="https://anthropic.skilljar.com/introduction-to-model-context-protocol">Introduction to Model Context Protocol</a> - Learn to build Model Context Protocol servers and clients from scratch using Python. Master three <a href="#MCP">MCP</a> core primitives—tools, resources, and prompts—to connect Claude with external services.
 
-* <a target="_blank" href="https://anthropic.skilljar.com/claude-code-in-action">Claude Code in Action</a> (21 lessons) - Integrate Claude Code into your development workflow. Practical walkthrough of using Claude Code to accelerate your development workflow
+* <a target="_blank" href="https://anthropic.skilljar.com/claude-code-in-action">Claude Code in Action</a> (21 lessons) by Stephen GREGOR - Integrate Claude Code as a partner into your development workflow. Practical walkthrough of using Claude Code to accelerate your development workflow.
 <br /><br />
 
 On Coursera, <a target="_blank" href="https://www.coursera.org/instructor/~192606412">Stephen Grider</a> of Anthropic built 
@@ -473,14 +476,14 @@ About Claude Code + VS Code + Local LLM:
 
 1. Create a folder to hold the downloads.
 
-1. PROTIP: Get my custom shell scripts <tt>brewin.sh</tt>:
+1. PROTIP: Get my custom shell script to get <tt>brewin.sh</tt>:
    ```bash
    https://github.com/wilsonmar/mac-setup/blob/main/brewin.sh ???
    ```
    Install it.
 
    REMEMBER: brewin.sh creates a folder on the root path at <tt>/brewin</tt> 
-   to store files if a filepath is not specified.
+   to store files (bottles) if a filepath is not specified.
 
 1. For example, if you need to install PostgreSQL database for use locally, instead of the usual;
    ```bash
@@ -560,17 +563,19 @@ About Claude Code + VS Code + Local LLM:
    cd python-samples  ???
    ```
 
-1. set pyproject.toml & .python-version bin, include, lib, pyvenv.cfg
+1. Create pyproject.toml & .python-version, pyvenv.cfg and folders bin, include, lib:
    ```bash
    uv init
    ```
    This is done instead of <tt>python -m venv .venv</tt>
-   ```
-
+   
+   The <tt>uv.lock</tt> created with pyproject.toml pins exact dependency versions, including Git dependencies, so everyone gets the same result, which prevents “works on my machine” problems.
+   
 1. POLICY: In production, install project dependencies exactly as specified in the lockfile, without allowing any changes, with --no-build from source, only from pre-built .whl (wheel) executable binaries.
    ```bash
    uv sync --frozen --no-build 
    ```
+   uv create a <tt>uv.lock</tt> file instead of Poetry creating its poetry.lock file.
 
 1. POLICY: Install Python utilities to evaluate Python code:
    ```bash
@@ -600,29 +605,72 @@ About Claude Code + VS Code + Local LLM:
    ```
    This would change your CLI prompt with a "(venv)" prefix.
 
-1. CAUTION: Upgrade ALL dependencies to the latest version available publicly (including SHA-256 hashes):
+1. CAUTION: Upgrade ALL dependencies in the <tt>pyproject.toml</tt> (declared dependency constraints) file to the latest version available publicly (including SHA-256 hashes) by creating a <tt>uv.lock</tt> file (of exact resolved versions):
    ```bash
    <strong>uv lock --upgrade</strong>       # 
    ```
-   First make sure that you have everything archived for recovery.
+   The desired response is:
+   <pre>
+   Resolved 180 packages in 3.75s
+   </pre>
 
-   Previously, pip's "deactivate" CLI command was needed to undo what pip's activate CLI command did,
-   which was to 
+   If you see a response such as:
+   <pre>
+   Updated dbus-fast v4.2.6 -> v4.2.7
+   </pre>
+   Noet that in your notebook of changes and update the pyproject.toml file:
+   ```bash
+   uv sync --refresh
+   ```
+1. Download all packages of *.whl (wheel executables) and *.tar.gz specified in the lock file:
+   ```bash
+   PYTHON_PKG_MIRROR_FILEPATH="~/mirror/python"
+   mkdir -p "$PYTHON_PKG_MIRROR_FILEPATH"
+   # Create a n inventory of python packages, with hashes for each package:
+   uv export --format requirements-txt > requirements.lock.txt
+   uv pip download -r requirements.lock.txt -d "$PYTHON_PKG_MIRROR_FILEPATH"
+   uv sync --offline
+   ```
+   Example response:
+   <pre>
+   Resolved 180 packages in 24ms
+   Checked 165 packages in 38ms
+   </pre>
+   Confirm:
+   ```bash
+   ls -al "$PYTHON_PKG_MIRROR_FILEPATH"
+   ```
 
-   However, these commands are not needed with uv if this command is used to run python programs:
+1. Run tests on ALL .py programs to verify that the latest
+
+1. Fallback to previous version if any test fails.
+
+1. To undo what pip's activate CLI command did:
+   ```bash
+   uv deactivate
+   ```
+   REMEMBER: , these commands are not needed with uv if this command is used to run python programs:
+
+1. Instead of invoking a program this way:
+   ```
+   <strike>python whatever.py
+   ./whatever.py</strike>
+   ```
+   Use this command so uv to handle, behind the scenes, the environment setup and interpreter resolution itself.
    ```bash
    uv run whatever.py
    ```
-   uv handles, behind the scenes, the environment setup and interpreter resolution itself.
+   
+   ### Stop uv session
 
 1. REMEMBER: Before removing libraries, if you are running a temporary PostgreSQL instance, avoid corrupting the database by stopping the database using this CLI command before the libraries it depends on go away.
    ```
    brew services stop postgresql@17
    ```
 
-1. AFTER a session, clean up temporary folders:
+1. AFTER a session, clean up temporary folders which will be created at the next session:
    ```
-   rm -rf .venv .pytest_cache __pycache__
+   rm -rf .venv .pytest_cache __pycache__ uv.lock
    ```
 
 <a name="VSCode"></a>
@@ -975,7 +1023,7 @@ Alternately:
    ```
 
 
-   ### Anthropic API Key
+   ### Anthropic API Key .env
 
 1. To tell Claude to use Ollama locally instead: <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>:
    ```bash
@@ -984,6 +1032,15 @@ Alternately:
    export ANTHROPIC_AUTH_TOKEN=ollama
    ```
 
+1. Signup for a Voyage API key (based on <a target="_blank" href="https://docs.pinecone.io/integrations/voyage">Pinecode docs</a> at:
+   
+   <a target="_blank" href="https://dash.voyageai.com/">https://dash.voyageai.com</a>
+
+1. In your .env file, construct the variable by pasting the key copied from your secret manager:
+   ```
+   VOYAGE_API_KEY="???"
+   ```
+   voyage-embeddings.py - Generate embeddings from file content using Voyage AI API.
 
    <a name="ClaudeDesktopInstall"></a>
 
@@ -1009,7 +1066,7 @@ Alternately:
    PROTIP: We do not recommend "brew install --cask claude-code" because it can be out of date, even though it's more convenient since Homebrew installs to <tt>/opt/homebrew/bin</tt> for all apps.
 
 
-   ### Prior versions
+   ### Prior Claude versions
 
    PROTIP: Since Claude is closed-source, click a prior version installer at 3rd-party website:<br />
    <a target="_blank" href="https://claude.en.uptodown.com/mac/versions">https://claude.en.uptodown.com/mac/versions</a>
@@ -1017,10 +1074,10 @@ Alternately:
    1. In the Finder app, unzip it to create Claude.app. 
    1. Drag and drop it in your <tt>~/Applications</tt> folder.
    1. Double-click to open Claude.app. Click "Open" in the pop-up.
-   1. <a href="#UsingClaude">Open Claude</a>
+   1. <a href="#StartClaude">Open Claude</a>
    1. In Claude.app, click the Claude menu item and "Check for updates".
-
-1. Edit your <tt>~/.bashrc</tt> and .zshrc file to ensure that the program will be first in the OS $PATH folder by adding this at the bottom of the file:
+   <br /><br />
+1. Edit your .bash_profile or newer <tt>~/.bashrc</tt> or .zshrc file to ensure that the program will be first in the OS $PATH folder by adding this at the bottom of the file:
    ```bash
    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
    ```
@@ -1059,7 +1116,7 @@ Alternately:
    claude uninstall
    ```
    <pre>
-   The file /Users/johndoe/.claude/uninstall does not exist. ???
+   The file ~/.claude/uninstall does not exist. ???
    </pre>
 
    
@@ -1068,8 +1125,12 @@ Alternately:
    ```bash
    export DISABLE_AUTOUPDATER=1
    ```
+   To enable auto-update, the original default:
+   ```bash
+   export DISABLE_AUTOUPDATER=0
+   ```
 
-   Confirm "disabled" status with CLI command: ???
+   Confirm status with CLI command:
    ```
    claude config get -g autoUpdates
    ```
@@ -1144,9 +1205,9 @@ Alternately:
    PROTIP: Notice that Claude is updated daily. So end your day with a backup and start your day with an update.
 
 
-   <a name="StartClaude"></a>
+   <a name="StartOllama"></a>
 
-   ### Start Claude
+   ### Start Ollama
 
    REMEMBER: You can specify what model (LLM) to use when you start Claude. 
 
@@ -1255,6 +1316,17 @@ Alternately:
    ```
 
 
+
+
+<a name="StartClaude"></a>
+
+### Start Claude
+
+1. <img align="right" alt="claude-enable-devmode.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1778929267/claude-enable-devmode_baa3f3.png"></a>To set Claude to use alternative models other than Anthropic's own, when Claude prompt appears, click the Help top menu, then "Enable Developer Mode".
+
+1. Select model???
+
+
 <a name="ClaudeDesktopUI"></a>
 
 ## Claude Desktop Key Shortcuts
@@ -1276,7 +1348,7 @@ QUESTION: How to get shortcut keys for other menu items?
    /batch    # orchestrates large-scale changes across your entire codebase — decomposing work into 5 to 30 independent units, presenting a plan for approval, then spawning one background agent per unit in an isolated git worktree. 
 
    /claude-api  # loads Claude API reference material for your project's language. These are like bundled skills but built-in.
-   /compact     # summarize the conversation and replaces the current context with the summary. 
+   /compact     # summarize the conversation and replace the current context with that summary. Saves space.
    /context     # <a href="#TokenContext">token usage by each system component</a>
    /debug   # Shows config loading details and full context composition.
    /extra-usage
@@ -1358,7 +1430,7 @@ PROTIP: A great first project to really leverage the capabilities of Claude is a
 create @file://$HOME/.claude/usage-data/report.html from 
 
    <pre>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a> https://www.youtube.com/watch?v=brLhhkUqcn4&t=18618s">max for Opus only. high, medium, low, auto.
+   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort</a>   # previously "think harder" Effort Level Control <>a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=18618s">max for Opus only. high, medium, low, auto.
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=6m31s">/batch   # Batch Tasks & PRs </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=9m3s">/simplify   # Code Review</a>
@@ -1417,10 +1489,30 @@ To take a screen shot on macOS, press the usual command + Shift + 4 which change
 
 ## Custom Slash Commands
 
-   <a target="_blank" href="https://www.youtube.com/watch?v=4bfKyZ7hbsU">VIDEO</a>
-   The essence of the <strong>revolution that is AI</strong> is this diagram from the
-   <a target="_blank" href="https://github.com/addyosmani/agent-skills">agent-skills Github</a>:<br />
-   PROTIP: To make full use of Claude, instead of diving into coding right away (then making changes later), separate your work into several stages of a <strong>development lifecycle</strong>, using a slash command at each stage, such as these custom slash commands:
+1. <a target="_blank" href="https://www.coursera.org/learn/claude-code-in-action/lecture/b36jN/custom-commands">VIDEO</a>: Create a commands folder to hold all custom commands:
+   ```bash
+   md -p ~/.claude/commands
+   ```
+
+1. <a target="_blank" href="https://anthropic.skilljar.com/claude-code-in-action/303234">VIDEO</a>: In that folder, create a markdown file for each custom command, such as "audit.md" containing:
+   <pre>
+   Your goal is to update any vulnerable dependencies for $ARGUMENTS
+   Do the following:
+   1. Run `npm audit` to find vulnerable installed packages in this project.
+   2. Run `npm audit fix` to apply updates.
+   3. Run tests and verify the updates didn't break anything.
+   </pre>
+
+1. Restart Claude.
+1. Type command <tt>/audit</tt>, which is the same name as the markdown file name.
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=4bfKyZ7hbsU">VIDEO</a>: View Addy Osamni's Agent Skills at
+
+   <a target="_blank" href="https://github.com/addyosmani/agent-skills">github.com/addyosmani/agent-skills</a>
+   
+   REMEMBER: The essence of the <strong>revolution that is AI</strong> is this diagram.
+   To make full use of GanAI tools, instead of Q&A style prompting to generate code (then making changes later), 
+   separate your work into <strong>several stages of a development lifecycle</strong>:
 
    <pre>
    DEFINE        PLAN          BUILD         VERIFY        REVIEW        SHIP
@@ -1430,6 +1522,8 @@ To take a screen shot on macOS, press the usual command + Shift + 4 which change
    └──────┘      └──────┘      └──────┘      └──────┘      └──────┘      └──────┘
    /spec         /plan         /build        /test         /review       /ship
    </pre>
+
+   Use the custom slash command at the bottom of the box for each stage.
 
    <strong>/build</strong> has AI generate/implement all the code.
 
@@ -1463,13 +1557,6 @@ Each skill file contains:
    <br /><br />
 
 Addy advises "Skills should be specific (actionable steps, not vague advice), verifiable (clear exit criteria with evidence requirements), battle-tested (based on real workflows), and minimal (only what's needed to guide the agent)."
-
-
-1. <a target="_blank" href="https://www.coursera.org/learn/claude-code-in-action/lecture/b36jN/custom-commands">VIDEO</a>: Create a folder to hold all custom commands:
-   ```bash
-   md -p ~/.claude/commands
-   ```
-1. Create a .md (markdown) file for each custom command.
 
 
 
@@ -1659,9 +1746,9 @@ REMEMBER: Two folders are created:
    * https://github.com/centminmod/my-claude-code-setup
    <br /><br />
 
-* <a target="_blank" href="https://claude.com/product/cowork?open_in_browser=1">Claude Co-Work</a> - "Hand off tasks to Claude and come back to finished work."
+* <a target="_blank" href="https://claude.com/product/cowork?open_in_browser=1">Claude CoWork</a> - "Hand off tasks to Claude and come back to finished work." <a target="_blank" href="https://www.youtube.com/watch?v=grh7CMl960s">VIDEO</a>: "Brainstorm in Claude, build in <a href="#CoWork">Cowork</a>"
 
-* <a target="_blank" href="https://claude.com/skills">Claude Skills</a> "turn expertise, procedures, and best practices into reusable capabilities." To ensure output follows proven patterns (rather than guessing) for handling PowerPoint pptx files, <strong>pptx/SKILL.md</strong> is defined. 
+* <a target="_blank" href="https://claude.com/skills">Claude.com/skills</a> says "turn expertise, procedures, and best practices into reusable capabilities." To ensure output follows proven patterns (rather than guessing) for handling PowerPoint pptx files, <strong>pptx/SKILL.md</strong> is defined. Try this prompt: "Based on my rcent sessions, what tasks am I doing repeatedly that should be skills instead of one-off prompts? For each one, suggest a skill name and what context it would need."
 
 
 
@@ -1682,6 +1769,43 @@ REMEMBER: Two folders are created:
    REMEMBER: When your cursor is within the chat box, use these keyboard shortcuts:
 
    <a target="_blank" href=""><img alt="claude-chat-keys.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774658242/claude-chat-keys_hwanw5.png" /></a>
+
+
+
+   <a name="statusline"></a>
+
+   ### /statusline
+
+   By default, there are two lines in the "status line" below the Claude Code prompt:
+   ```
+   [Sonnet 4.6] | User
+   Context .... 0%
+   ```
+
+   REMEMBER: To determine what it displays on its Status Line, Claude references JSON file:<br/>
+   <tt>~/.claude/statusline.sh</tt>
+   which can be changed by Plugins from the Claude Marketplace.
+
+   <a target="_blank" href="https://medium.com/@joe.njenga/i-tested-every-claude-code-statusline-plugin-only-these-5-are-worth-it-c40af8385e4a">Among StatusLine Plugins</a>
+   making use of <a target="_blank" href="https://code.claude.com/docs/en/statusline#build-a-status-line-step-by-step">Claude Code’s native statusline API</a>:
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=11585s">VIDEO</a>:
+   Optionally install <a target="_blank" href="https://github.com/jarrodwatts/claude-hu">jarrodwatts/claude-hud</a> for the HeadsUpDisplay (HUD) plugin to <a target="_blank" href="https://medium.com/@joe.njenga/i-found-this-claude-code-plugin-that-shows-whats-happening-inside-the-engine-d38447d852c7">add up to 4 lines below your input prompt to know</a> if it’s still making progress or is stuck.
+   <a target="_blank" href="https://newsletter.claudecodemasterclass.com/">$80/yr Masterclass</a>
+
+   ```
+   /plugin marketplace add jarrodwatts/claude-hud
+   /plugin install claude-hud
+   /reload-plugins   # to activate
+   /claude-hud:setup
+   /restart Claude Code
+   code ~/.claude/plugins/claude-hud/config.json
+   ```
+   The "add" downloads to folder <tt>~/.claude/plugins/marketplaces/claude-plugins-official</tt>
+   
+   Claude references <tt>~/.claude/plugins/claude-hud/config.json</tt>
+
+   The Updates every ~300ms.
 
 
    <a name="Projects"></a>
@@ -1861,9 +1985,9 @@ hooks/todo-enforcer.config.json
    * Click "Better than very" to find more expressive words.
    * Click "CSV Data Visualizer".
 
-1. To create your own automations, consider the "Cowork" button at the top of the Claude app.
+1. To create your own automations, consider the "<a href="#CoWork">Cowork</a>" button at the top of the Claude app.
 
-   Cowork and Projects both require a Pro Plan subscription.
+   <a href="#CoWork">Cowork</a> and Projects both require a Pro Plan subscription.
 
    
    <a name="Connectors"></a>
@@ -1929,60 +2053,40 @@ hooks/todo-enforcer.config.json
                                        
       3. 3rd-party platform · Amazon Bedrock, Microsoft Foundry, or Vertex AI
    ```
-    Documentation:                                                           
-   · Amazon Bedrock: https://code.claude.com/docs/en/amazon-bedrock
-   · Microsoft Foundry: https://code.claude.com/docs/en/microsoft-foundry                                                    
-   · Vertex AI: https://code.claude.com/docs/en/google-vertex-ai   
+   Documentation:                                                           
+   * Amazon Bedrock: https://code.claude.com/docs/en/amazon-bedrock
+   * Microsoft Foundry: https://code.claude.com/docs/en/microsoft-foundry                                                    
+   * Google  Vertex AI: https://code.claude.com/docs/en/google-vertex-ai   
+   <br /><br />
+
+<a name="CoWork"></a>
+
+## CoWork 
+
+CoWork automates the use of <a href="#Connectors">Connectors</a>.
+
+??? edit a custom <strong>goals.md</strong> file which contains the priorities I want to <strong>achieve</strong> in my own life.
+
+<strong>Progress</strong> made toward those goals is what CoWork automatically reports on when it's asked for a "Progress Report".
+
+Purpose -> Setup -> Skills -> Scheduling
+
+<strong>scheduled</strong>
 
 
+   CAUTION: <a href="#CoWork">Cowork</a> activity is not captured in audit logs or Compliance APIs today, which is why it is not for regulated workloads. 
 
+   ### Session Log analysis
 
-1. Install utility a program ccusage to analyze session logs:  
-   https://github.com/ryoppippi/ccusage/
-
-   See ccusage.com/guide/session/reports
+1. PROTIP: Install utility program <a target="_blank" href="https://github.com/ryoppippi/ccusage/">ccusage</a> to analyze session logs. See ccusage.com/guide/session/reports
    
 <hr />
-
-   <a name="statusline"></a>
-
-   ### /statusline
-
-   By default, there are two lines in the "status line" below the Claude Code prompt:
-   ```
-   [Sonnet 4.6] | User
-   Context .... 0%
-   ```
-
-   REMEMBER: To determine what it displays on its Status Line, Claude references JSON file:<br/>
-   <tt>~/.claude/statusline.sh</tt>
-   which can be changed by Plugins from the Claude Marketplace.
-
-   <a target="_blank" href="https://medium.com/@joe.njenga/i-tested-every-claude-code-statusline-plugin-only-these-5-are-worth-it-c40af8385e4a">Among StatusLine Plugins</a>
-   making use of <a target="_blank" href="https://code.claude.com/docs/en/statusline#build-a-status-line-step-by-step">Claude Code’s native statusline API</a>:
-
-1. <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=11585s">VIDEO</a>:
-   Optionally install <a target="_blank" href="https://github.com/jarrodwatts/claude-hu">jarrodwatts/claude-hud</a> for the HeadsUpDisplay (HUD) plugin to <a target="_blank" href="https://medium.com/@joe.njenga/i-found-this-claude-code-plugin-that-shows-whats-happening-inside-the-engine-d38447d852c7">add up to 4 lines below your input prompt to know</a> if it’s still making progress or is stuck.
-   <a target="_blank" href="https://newsletter.claudecodemasterclass.com/">$80/yr Masterclass</a>
-
-   ```
-   /plugin marketplace add jarrodwatts/claude-hud
-   /plugin install claude-hud
-   /reload-plugins   # to activate
-   /claude-hud:setup
-   /restart Claude Code
-   code ~/.claude/plugins/claude-hud/config.json
-   ```
-   The "add" downloads to folder <tt>~/.claude/plugins/marketplaces/claude-plugins-official</tt>
-   
-   Claude references <tt>~/.claude/plugins/claude-hud/config.json</tt>
-
-   The Updates every ~300ms.
    
 1. To remove orphaned auto-installed dependencies:
    ...bash
    claude plugin prune now
    ```
+
 1. validate accepts $schema, version, and description fields.    
    
    Plugins pinned by another plugin's version constraint auto-update to the highest satisfying git tag. 
@@ -2220,13 +2324,15 @@ PROTIP: Take a full backup before you make changes to conditions after install.
        "Bash(git reset --hard:*)",
      ]
    ```
-1. Allow to MCP servers:
+   <a name="MCPAllow"></a>
+
+1. Allow to <a href="#MCP">MCP servers</a>:
    ```
    "permissions" : {
     "allow": [
       "mcp__playwright",
    ```
-   Notice the two underlines in the name.
+   REMEMBER: The two underlines ("__") in the name allows Claude to use Playwright tools without asking for permission every time.
 
 1. Under permissions -> allow to not need user confirmation:
    ```
@@ -2357,7 +2463,7 @@ Illegal trailing comma before end of array: line 44 column 21 (char 942)
 
    System Overhead: The system prompt and tools reserve almost 20k tokens (~10%).
 
-   The more MCP servers are used, the more "MCP Tools" tokens are used. Each tool within an MCP server consumes token before it even starts. Each of several tools are usually a part of each MCP server. For example, Notion has a tool for
+   The more <a href="#MCP">MCP</a> servers are used, the more "MCP Tools" tokens are used. Each tool within an MCP server consumes token before it even starts. Each of several tools are usually a part of each MCP server. For example, Notion has a tool for
       * create-pages
       * create-comment
       * update-page
@@ -2415,13 +2521,18 @@ The top one is used.
 
 REMEMBER: Skill folders under <tt>~/.claude/skills/...</tt> are <strong>reusable by all projects</strong>.
 
-Skill folders can also be downloaded from a Marketplace such as:
-   * <a target="_blank" href="https://www.atcyrus.com/skills">https://www.atcyrus.com/skills</a>
+View, evaluate, and download skill folders from these marketplace such as:
+   * <a target="_blank" href="https://claudemarketplaces.com/">claudemarketplaces.com</a> has skills, plugins, MCP)
+   * <a target="_blank" href="https://www.atcyrus.com/skills">atcyrus.com/skills</a> 
+   * <a target="_blank" href="">1,419,713 skills to Search with AI semantics or keywords, filter by occupation, sort by stars popularity. All skills use the open SKILL.md standard and are ready to install.
    * github ???
+   * <a target="_blank" href="https://skillsmp.com/">skillsmp.com</a>
+   * <a target="_blank" href="https://claudeskills.info/skills/">claudeskills.info/skills</a>
+   * <a target="_blank" href="https://github.com/anthropics/skills/tree/main/skills">github.com/anthropics/skills/tree/main/skills</a> to process pdf, Word, PowerPoint, Excel Spreadsheet
    <br /><br />
 
-<a target="_blank" href="https://www.youtube.com/watch?v=98KaK_rn5rQ">VIDEO</a>: 
-REMEMBER: The <a target="_blank" href="https://agentskills.io/">agentskills.io</a> standard says
+REMEMBER: <a target="_blank" href="https://www.youtube.com/watch?v=98KaK_rn5rQ">VIDEO</a>: 
+The <a target="_blank" href="https://agentskills.io/">agentskills.io</a> standard says
 each Claude skill is defined by a folder named for the skill plus a SKILL.md file within that folder. 
 <a target="_blank" href="https://thenewstack.io/agent-skills-anthropics-next-bid-to-define-ai-standards/">DOC</a>:
 <pre>
@@ -2443,6 +2554,11 @@ skill-name/
     └── output.md      # Template Claude fills in at run-time
 </pre>
 
+### Default skills
+
+https://claudeskills.info/skill/skill-creator/
+Anthropic's guide for creating effective skills that extend Claude's capabilities
+
 Project skills should be committed to version control alongside your code, for the whole team to use.
 
 The three main distribution methods — repository commits, plugins, and enterprise managed settings.
@@ -2460,14 +2576,21 @@ SKILL.md can contains other metadata such as:
 
 Skills provide guidelines that affect Claude's reasoning.
 
-<strong>Default skills</strong> described in markdown files<a target="_blank" href="https://platform.claude.com/workspaces/default/skills">Claud.com docs</a> provide <strong>handlers</strong> for each <strong>type of file</strong>: pdf, Microsoft xlsx, pptx, docx, etc.
-When a file is uploaded but its content isn't visible in context yet, the "file-reading" skill acts as a router to the right reading approach per file type.
+When a file is uploaded but its content isn't visible in context yet, the "file-reading" skill acts as a router to the right reading approach per file type. 
+
+<strong>Default skills</strong> described in markdown files<a target="_blank" href="https://platform.claude.com/workspaces/default/skills">Claud.com docs</a> provide <strong>handlers</strong> for each <strong>type of file</strong>: 
+   * <a target="_blank" href="https://github.com/anthropics/skills/tree/main/skills/docx">.docx</a> documents
+   * <a target="_blank" href="https://github.com/anthropics/skills/tree/main/skills/pdf">.pdf</a>
+   * <a target="_blank" href="https://github.com/anthropics/skills/tree/main/skills/xlsx">.xlsx</a> spreadsheets
+   <br /><br />
 
 Skills encode environment-specific constraints (available libraries, output paths, rendering quirks) that improve output quality beyond what training data alone provides.
    * The "product-self-knowledge" skill deliver facts about Anthropic's products (Claude Code, API details, claude.ai plan limits, pricing).
    * The "frontend-design" skill handles Web UIs, React components, HTML/CSS layouts, dashboards, landing pages.
    * The "skill-creator" skill is invoked when creating, editing, or evaluating skills themselves.
    <br /><br />
+
+https://claudeskills.info/skill/template-skill/
 
 <a target="_blank" href="https://www.youtube.com/watch?v=IgNN4v0BJdU">VIDEO</a>:
 
@@ -2713,7 +2836,7 @@ loops.
 
 <br /><br />
 
-The community confirms is the exam's focus areas: fallback loop design, Batch API cost optimization, JSON schema structuring to prevent hallucinations, and MCP tool <a target="_blank" href="https://www.youtube.com/watch?v=0cVuMHaYEHE">orchestration</a>.
+The community confirms is the exam's focus areas: fallback loop design, Batch API cost optimization, JSON schema structuring to prevent hallucinations, and <a href="#MCP">MCP</a> tool <a target="_blank" href="https://www.youtube.com/watch?v=0cVuMHaYEHE">orchestration</a>.
 
 IBM AI Engineering (Coursera)	ML/DL concepts and model deployment	Conceptual + hands-on	Cloud-agnostic
 
@@ -2979,6 +3102,24 @@ Tool use is about Claude calling defined functions to accomplish tasks.
 Tools allow us to write code that can perform specific tasks or computations that Claude wouldn't be able to do otherwise. 
 
 Claude can be given access to a set of predefined tools that it can invoke at any point. 
+Default tools:  
+
+   - **Agent** - Launch a subagent to handle a task
+   - **Bash** - Run a shell command
+   - **Edit** - Edit a file
+   - **Glob** - Find files based upon a pattern
+   - **Grep** - Search the contents of a file
+   - **LS** - List files and directories
+   - **MultiEdit** - Make several edits at the same time
+   - **NotebookEdit** - Write to a cell in a Jupyter notebook
+   - **NotebookRead** - Read a cell
+   - **Read** - Read a file
+   - **TodoRead** - Read one of the created to-do's
+   - **TodoWrite** - Update the list of to-do's
+   - **WebFetch** - Fetch from a URL
+   - **WebSearch** - Search the web
+   - **Write** - Write to a file
+   <br /><br />
 
 Claude's AskUserQuestion tool can be invoked used to produce a detailed specification document for spec-based development with a prompt 
 <a target="_blank" href="https://www.atcyrus.com/stories/claude-code-ask-user-question-tool-guide">such as</a>:
@@ -2988,6 +3129,7 @@ Claude's AskUserQuestion tool can be invoked used to produce a detailed specific
 https://github.com/jarrodwatts/claude-code-config/blob/main/commands/interview.md ???
 
 <a target="_blank" href="https://github.com/anthropics/courses/tree/master/prompt_evaluations">Prompt Evaluations</a>
+
 
 
 <a name="Plugins"></a>
@@ -3007,15 +3149,51 @@ https://github.com/jarrodwatts/claude-code-config/blob/main/commands/interview.m
 
 <a name="MCP"></a>
 
-## MCP
-
-MCP Servers defined by https://github.com/punkpeye/awesome-mcp-servers and others
-provide <strong>tool schemas</strong> and <strong>function code</strong>
-that someone else has already implemented as an MCP Server.
-So MCP dramatically reduces the development work required on your end.
+## MCP servers
 
 <a target="_blank" href="https://anthropic.skilljar.com/claude-in-amazon-bedrock/276798">PROTIP</a>:
 MCP Servers and tool use are complementary but different concepts. 
+
+Consider MCP servers for:
+
+   * Database interactions
+   * API testing and monitoring
+   * File system operations
+   * Cloud service integrations
+   * Development tool automation
+   <br /><br />
+
+1. To reduce the development work required on your end, use the MCP Servers defined by <a target="_blank" href="https://github.com/punkpeye/awesome-mcp-servers">https://github.com/punkpeye/awesome-mcp-servers</a> and others to provide <strong>tool schemas</strong> and <strong>function code</strong> implemented as MCP Servers.
+
+
+   ### MCP GitHub Action
+
+1. <a target="_blank" href="https://anthropic.skilljar.com/claude-code-in-action/303240">VIDEO</a>: A common MCP server to install is GitHub Actions CI (Continuous Integration). Install the Claude GitHub app from github.com/apps/claude using a built-in command:
+   ```bash
+   /install-github-app
+   ```
+
+   Instead of using a browser to get the GitHub API key and then scheduling a rotation of that key according to your corporate security standards. GitHub does not provide an API to automatically create or rotate new Personal Access Tokens (PATs) for a user account. PAT creation is intentionally manual for security reasons. 
+
+1. GitHub explicitly recommends GitHub Apps for automation use cases. A GitHub App can generate short-lived installation tokens automatically via API. See https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation
+
+
+   ### MCP Playwright
+
+1. Another common MCP server to install is Microsoft Playwright:
+   ```bash
+   claude mcp add playwright npx @playwright/mcp@latest
+   ```
+1. To avoid needing to confirm the next command, edit your <tt>.claude/settings.local.json</tt> file to <a href="#MCPAllow">add permissions: to allow "mcp_playwright".
+
+1. Prompt in Claude:
+   ```
+   open the browser and navigate to localhost:3000
+   ```
+1. See <a target="_blank" href="https://wilsonmar.github.io/playwright/">my notes on Playwright</a>.
+
+   Accessing the browser and controlling it with Playwright enables Claude can see the actual visual output, not just the code, so it can make decisions about improving styling.
+
 
 
 <a name="Tools"></a>
