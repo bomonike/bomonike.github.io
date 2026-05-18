@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-17"
-lastchange: "26-05-17 v015 resorts @museums-roadtrip-usa.md"
+date: "2026-05-18"
+lastchange: "26-05-18 v016 svg list fix, reorg @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -28,30 +28,46 @@ I created this page as a "bucket list" so that even if I can't visit each one an
 
 ## Journeys
 
-It's a large country, so cites are listed by each <a href="#CivilWar">state of the union</a>, along natural geography East-to-West:
+Since July 4, 1776, the US has grown from 13 colonies with 2.5 million people to 50 states (48 of them continguous) and 14 territories with over <a target="_blank" href="https://www.census.gov/popclock/">342 million</a> people connected by roughly 5,000 airports, 140,000 miles of train tracks, 4 million miles of roads, and 5.5 million miles of power lines. 
 
-Journeys on water as she flows toward the Equator:
+<img src="svg/us_census_regions.svg">
+   * "New England" states are: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont.
+   * "Mid-Atlantic" states are New York, New Jersey, and Pennsylvania.
+   <br /><br />
 
-   * <a href="#DownEastCoast"> Down the Atlantic Eastern Seaboard</a> (<a href="#FreedomRide">Freedom Ride</a>)
-   * <a href="#DownMississippi"> Down the Mississippi River</a> (on a riverboat?)
-   * <a href="#DownWestCoast"> Down the Pacific West Coast</a>
+<strong>Cites</strong> here are listed within each <a href="#CivilWar">state of the union</a>, along natural geography East-to-West:
 
-Journeys Northward on <a href="#CattleDrives">Cattle Drives</a> in the 1880s.
 
-<a href="#PanAm">Journey South down the Pan American Highway</a>.
+<a href="#extreme-corners">Extreme Corners</a>
+
+Journeys floatng <strong>on water</strong> toward the Equator:
+
+* <a href="#DownEastCoast"> Down the <strong>Atlantic Eastern Seaboard</strong></a> (<a href="#FreedomRide">Freedom Ride</a>)
+
+* <a href="#DownMississippi"> Down the Mississippi River</a> (on a riverboat?)
+
+* <a href="#DownWestCoast"> Down the Pacific West Coast</a>
+   * <a href="#PanAm">South down the Pan American Highway</a>
+<br /><br />
+
+Journeys through the heartland of America:
+   * Northward on <a href="#CattleDrives">Cattle Drives</a> in the 1880s.
+   * <a target="_blank" href="#the-us-rain-shadow-divide">Across the "Rain Shadow" Divide</a>
+<br /><br />
 
 <a href="#Westward">Journeys Westward on land</a> (<a href="#PonyExpress">The Pony Express</a>):
 
-   * <a href="#WestwardVermont"> Westward from Vermont to Kentucky</a>
-   * <a href="#NorthernMiddleAmerica">Westward through Northern states</a> (like <a href="#LewisAndClark">Lewis and Clark</a> and on the <a href="#OregonTrail">Oregon Trail)</a>
-   * <a href="#Southwestward"> Westward through the Southwest (on Route 66)</a>
+* <a href="#WestwardVermont"> Westward from Vermont to Kentucky</a>
+* <a href="#NorthernMiddleAmerica">Westward through Northern states</a> (like <a href="#LewisAndClark">Lewis and Clark</a> and on the <a href="#OregonTrail">Oregon Trail)</a>
+* <a href="#Southwestward"> Westward through the Southwest (on Route 66)</a>
+<br /><br />
 
 BTW, finding where each site is located resulted in a great geography and historical lesson for me.
 
+By US Census Bureau - https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10687031
+https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States
 
 ## References (Websites)
-
-Since July 4, 1776, the US has grown from 13 colonies with 2.5 million people to 50 states and 14 territories with over <a target="_blank" href="https://www.census.gov/popclock/">342 million</a> people connected by roughly 5,000 airports, 140,000 miles of train tracks, 4 million miles of roads, and 5.5 million miles of power lines. 
 
 * <a target="_blank" href="https://www.hmdb.org/">hmdb.org  = Historical Marker Database</a>
 * <a target="_blank" href="https://www.movie-locations.com/">movie-locations.com</a>
@@ -59,6 +75,7 @@ Since July 4, 1776, the US has grown from 13 colonies with 2.5 million people to
 * <a target="_blank" href="https://rs.locationshub.com/Home/Index?page=1">locationshub.com/#featured-filming-locations</a>
 * <a target="_blank" href="https://www.wikiwand.com/en/List_of_World_Heritage_Sites_in_the_United_States">24 UNESCO World Heritage Sites in the United State</a>
 * <a target="_blank" href="https://www.wikiwand.com/en/List_of_National_Historic_Landmarks_in_the_United_States">2,500 National Historic Landmarks in the United States</a>
+* <a target="_blank" href="https://guide.michelin.com/en/restaurants">Restaurants recognized with Michelin stars</a>
 <br /><br />
 
 
@@ -82,8 +99,7 @@ Since July 4, 1776, the US has grown from 13 colonies with 2.5 million people to
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1660661005/ThomasCannonandJustinMorrisRoute-589x301_g6ygsm.jpg">
 <img alt="6 days" width="750" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1660661005/ThomasCannonandJustinMorrisRoute-589x301_g6ygsm.jpg"></a>
 
-To deter reckless driving among Extreme Road-trippers, the <a target="_blank" href="https://www.guinnessworldrecords.com/news/2015/8/60-years-on-the-categories-that-guinness-world-records-no-longer-monitors-393758">Guinness World Records discontinued listing speed records in 1996</a>. But that didn't stop the <a target="_blank" href="https://allfiftyclub.com/members/record-holders-fast-to-50/">All Fifty States Club</a> website.
-
+To deter reckless driving among Extreme Road-trippers, the <a target="_blank" href="https://www.guinnessworldrecords.com/news/2015/8/60-years-on-the-categories-that-guinness-world-records-no-longer-monitors-393758">Guinness World Records discontinued listing speed records in 1996</a>. But that didn't stop the <a target="_blank" href="https://allfiftyclub.com/members/record-holders-fast-to-50/">All Fifty States Club</a> website. On May 2025, including Alaska, 7 days, 23 hours, and 2 minutes.
 
 ## The US Rain Shadow Divide
 
@@ -98,24 +114,6 @@ Also impacted will be agriculture around Winnipeg (Manitoba, Canada), Fargo, Sio
 
 That green line down the middle of America defines the extent wet storms reach from the East. West of that is the "Rain Shadow" of limited moisture from the Pacific West blocked by the tall Cascade Mountains in Washington state housing Leavenworth, Washington and Rocky Mountains housing Aspen, Vail, Breckenridge, Telluride, <a target="_blank" href="https://www.google.com/maps/place/Denver,+CO/@39.7584783,-113.8531857,5z/">Denver, Colorado</a>), Park City, Utah, California.
 
-The East coast also has quaint <a target="_blank" href="https://www.travelandleisure.com/holiday-travel/americas-best-towns-for-the-holidays/">towns well decorated for Christmas </a>:
-   * Ogunquit, Maine
-   * Portsmouth, New Hampshire
-   * Nantucket, Massachusetts
-   * Newport, Rhode Island
-   * Christmas Village, Philadelphia
-   * Cape May, New Jersey
-   * Atlantic City, New Jersey
-   * New York, New York
-
-   * Annapolis, Maryland
-   * Charlottesville, Virginia
-   * Lewisburg, West Virginia
-   * Beaufort, North Carolina
-   * Myrtle Beach, South Carolina
-   * Natchitoches, Louisiana
-   * Santa Rosa Beach, Florida
-   <br /><br />
 
 <a name="freeways"></a>
 
@@ -191,27 +189,28 @@ The American Discovery Trail (https://discoverytrail.org/) spans 6,800 miles fro
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1707778533/museums-us-am-disc-trail-1688x1018_snp2gt.png"><img alt="museums-us-am-disc-trail-1688x1018.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707778533/museums-us-am-disc-trail-1688x1018_snp2gt.png"></a>
 
-
 NERDY TRIVIA: How fast would one need to drive to see a sunset continuously?<br />
 If you were at 89.9 degrees North near a Pole, you could walk across all time zones in the world.<br />
 The formula is: v = circumference * cos(ϕ) where ϕ = latitude.<br />
-At the equator, the circumferance of the earth is 40,075 km, so the earth rotates at
-40,075 km / 24 h ≈ <strong>1670 km/h (1038 mph)</strong>.<br />
-At Denver, Colorado, its 40 degrees latitude = 0.77 radians, so <strong>1279 km/h (795 mph)</strong>.
-See my Python program that calculates it at 
+At the equator, the circumferance of the earth is 40,075 km.
+So the earth rotates at 40,075 km over 24 h ≈ <strong>1670 km/h (1038 mph)</strong>.<br />
+At Denver, Colorado, its 40 degrees latitude = 0.77 radians, so <strong>1279 km/h (795 mph)</strong>.<br />
+See my Python program that calculates it at<br />
 https://github.com/wilsonmar/python-samples/blob/main/sunset-speed.py
 
 ## US National Parks
 
 Among America's greatest treasures are the <a target="_blank" href="https://www.wikiwand.com/en/National_Park_Service">63</a> <a target="_blank" href="https://www.nps.gov/index.htm">national parks managed by the U.S. National Park Service.
 
-<img alt="us-nps-ma-1500x938.jpeg" width="1500" height="938" src="https://user-images.githubusercontent.com/300046/133946844-809c6182-2763-45ba-8d29-217ea2eb28cc.jpeg">
+<a target="_blank" href="https://user-images.githubusercontent.com/300046/133946844-809c6182-2763-45ba-8d29-217ea2eb28cc.jpeg">
+<img alt="us-nps-ma-1500x938.jpeg" src="https://user-images.githubusercontent.com/300046/133946844-809c6182-2763-45ba-8d29-217ea2eb28cc.jpeg" /></a>
 The <a target="_blank" href="https://www.amazon.com/US-National-Parks-Map-22-5/dp/B072ZWHL8V">map above</a> is missing White Sands National Park (New Mexico), Indiana Dunes, and Gateway Arch (St. Louis).
 
 <a target="_blank" href="https://tbandjtravel.com/the-u-s-map/">One couple visited the most significant parks in this order</a>:
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/25560224/6b14fde6-2d1c-11e7-952e-52e883844808.jpg">
 <img alt="us-tour-natl-park-route" width="650" src="https://cloud.githubusercontent.com/assets/300046/25560224/6b14fde6-2d1c-11e7-952e-52e883844808.jpg"></a>
 
+Adding New England as well:
 
 <a target="_blank" title="Route around the US on Google map" href="https://wilsonmar.github.io/US_Landmarks_Roadtrip_v01.html">
 <img alt="map us_landmarks_roadtrip_v01_683x396" width="683" height="396" src="https://cloud.githubusercontent.com/assets/300046/14229554/5531ac58-f8f3-11e5-8ce4-c01a5289358e.png"></a>
@@ -224,7 +223,11 @@ https://github.com/wilsonmar/Data-Analysis-and-Machine-Learning-Projects/blob/ma
 
 <a name="Mighty5"></a>
 
-Many "Western" movies were filmed in iconic "Mighty 5" parks below Salt Lake City in Utah: <a target="_blank" href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=16KbY2hCvDQEAAPsK6bwyEDjPZyc&ll=37.542383125235986%2C-110.57365010534873&z=8">Las Vegas from the South and Denver from the North <img width="841" alt="us-might5-route-1682x1014" src="https://user-images.githubusercontent.com/300046/134821783-60f33b47-ccea-4ab0-a12f-69505411c763.png">322 miles in 5 hours without stopping (click for Google Map)</a>. But you'll want to stop and marvel the views at each park:
+Many "Western" movies were filmed in iconic "Mighty 5" parks below Salt Lake City in Utah: 
+<a target="_blank" href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=16KbY2hCvDQEAAPsK6bwyEDjPZyc&ll=37.542383125235986%2C-110.57365010534873&z=8">Las Vegas from the South and Denver from the North<br />
+<img alt="us-might5-route-1682x1014" src="https://user-images.githubusercontent.com/300046/134821783-60f33b47-ccea-4ab0-a12f-69505411c763.png" /></a>
+
+322 miles in 5 hours without stopping (click for Google Map)</a>. But you'll want to stop and marvel the views at each park:
    1. <a target="_blank" href="https://www.youtube.com/results?search_query=zion+national+park++360+4k">4K 360 VIDEO</a>: <a target="_blank" href="https://www.nps.gov/zion/index.htm">Zion</a> (Utah's first National Park)
    2. <a target="_blank" href="https://www.youtube.com/results?search_query=4k+360+bryce+canyon">4K 360 VIDEO</a>: <a target="_blank" href="https://www.nps.gov/brca/index.htm">Bryce Canyon</a> <a target="_blank" href="https://www.youtube.com/brycecanyonnps">VIDEO</a>
    3. <a target="_blank" href="https://www.youtube.com/results?search_query=capital+reef+national+park++360+4k">4K 360 VIDEO</a>: Capital Reef
@@ -234,13 +237,12 @@ Many "Western" movies were filmed in iconic "Mighty 5" parks below Salt Lake Cit
 
 <a name="CivilWar"></a>
 
-## Civil War Confederates
+## Civil War: Union, Confederacy, and Border States
 
 When the Civil War ended in 1865, The Confederacy included the 11 Southern states of Texas, Arkansas, Louisiana, Tennessee, Mississippi, Alabama, Georgia, Florida, South Carolina, North Carolina, and Virginia.
 
-<a target="_blank" href="https://www.nps.gov/civilwar/facts.htm">
-<img width="600" height="300" alt="map-us-states-civil-war-323x227-c64.jpg"
-src="https://cloud.githubusercontent.com/assets/300046/16953089/fc8c99ba-4d88-11e6-9845-7b4120243ea4.jpg">
+<a target="_blank" href="https://www.nps.gov/civilwar/facts.htm"><img alt="map-us-states-civil-war-323x227-c64.jpg"
+src="https://cloud.githubusercontent.com/assets/300046/16953089/fc8c99ba-4d88-11e6-9845-7b4120243ea4.jpg" /></a>
 
 The 5 "Border States" were Maryland, Delaware, West Virginia, Kentucky, and Missouri (where "brother fought brother"). <a target="_blank" href="https://youtube.com/shorts/JuWB9qyVmIs?si=9xw1rg581fglgHYT">VIDEO</a>: Although Kentucky's legislature voted to be neutral, the state was represented as a star in both Confederate and Union flags and was occupied by both Confederate and Union troops. Four times more Kentucky citizens fought for the Union than for the Confederacy.
 
@@ -257,6 +259,30 @@ Areas in Arizona and New Mexico were claimed by both sides</a>.
 ## Down the Atlantic Eastern Seaboard
 
 This is where the United States of America began as colonies of England.
+
+<a name="ChristmasTowns"></a>
+
+### Christmas down the Atlantic Coast
+
+The East coast also has quaint <a target="_blank" href="https://www.travelandleisure.com/holiday-travel/americas-best-towns-for-the-holidays/">towns well decorated for Christmas </a>:
+   * Ogunquit, Maine
+   * Portsmouth, New Hampshire
+   * Nantucket, Massachusetts
+   * Newport, Rhode Island
+   * Christmas Village, Philadelphia
+   * Cape May, New Jersey
+   * Atlantic City, New Jersey
+   * New York, New York
+
+   * Annapolis, Maryland
+   * Charlottesville, Virginia
+   * Lewisburg, West Virginia
+   * Beaufort, North Carolina
+   * Myrtle Beach, South Carolina
+   * Natchitoches, Louisiana
+   * Santa Rosa Beach, Florida
+   <br /><br />
+
 
 <a name="FreedomRide"></a>
 
@@ -875,7 +901,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 
 ### Key West:
 
-<li>
+<ul>
 <li>house with the cats</li>
 <li><a target="_blank" href="https://www.trumanlittlewhitehouse.com/">Harry S. Truman Little White House</a>, Key West</li>
 <li><a target="_blank" href="https://www.gulfcoastmuseum.org/">Gulf Coast Museum of Art</a>, Largo (the southern most point in the continental US)</li>
@@ -940,7 +966,7 @@ Chicago had the #20 rate of crime among all cities in the US (1,099/100,000 in 2
 <li><a target="_blank" href="https://www.obamalibrary.gov/">Barack Obama Presidential Library</a>, Hoffman Estates</li>
 <li type="square"><a target="_blank" href="https://www.farnsworthhouse.org/">Farnsworth House (1951)</a>, 14520 River Road, Plano, IL 60545</li>
 <br />
-<li type="circle">Purple Pig</li>
+<li type="circle">Purple Pig restaurant</li>
 <li type="circle"><a target="_blank" href="https://www.zahavrestaurant.com/">Zahav</a> [Israeli restaurant]</li>
 <li type="circle"><a target="_blank" href="https://www.thedailymeal.com/au-cheval">Au Cheval burgers</a> <a target="_blank" href="https://www.thedailymeal.com/eat/101-best-casual-restaurants-america-2018-gallery/slide-6">[#29]</a></li>
 <li type="circle"><a target="_blank" href="https://www.thedailymeal.com/fat-rice">Fat Rice</a>, Chicago <a target="_blank" href="https://www.thedailymeal.com/eat/101-best-casual-restaurants-america-2018-gallery/slide-74">[#58]</a></li>
@@ -1102,19 +1128,17 @@ New Orleans had the #18 rate of crime among all cities in the US (1,121/100,000 
 <li><a target="_blank" href="https://www.mobilemuseumofart.com/">Mobile Museum of Art</a></li>
 </ul>
 
-<hr />
-
 <a name="CattleDrives"></a>
 
 ## Northward on Cattle Drives
 
-The <a target="_blank" href="https://www.paramountplus.com/shows/1883/">TV series "1883"</a> is about one of the cattle drives that brought Texas back from economic collapse after the end of the Civil War in 1865. The drive went from Fort Worth North toward Montana and Portland. Although a fictional story, the script mentions real locations: <a target="_blank" href="https://www.frontiertimesmagazine.com/blog/doans-store-red-river">Doan's Store</a> Red River Crossing, established 1878 along the Western Trail to Dodge City, Kansas where trains carried cattle East.
+The <a target="_blank" href="https://www.paramountplus.com/shows/1883/">TV series "1883"</a> is about one of the cattle drives that brought Texas back from economic collapse after the end of the Civil War in 1865. Drovers went from Fort Worth North toward Montana and Portland. Although a fictional story, the script mentions real locations: <a target="_blank" href="https://www.frontiertimesmagazine.com/blog/doans-store-red-river">Doan's Store</a> at Red River Crossing, Texas, established 1878 along the Western Trail to Dodge City, Kansas where trains carried cattle East for slaughter.
 
 <a target="_blank" href="https://user-images.githubusercontent.com/300046/152900517-ff8c03db-325d-4c27-b225-36a50da6ad3b.png"><img alt="museum-us-1883-great-cattle-750x782" src="https://user-images.githubusercontent.com/300046/152900517-ff8c03db-325d-4c27-b225-36a50da6ad3b.png"></a>
 
-In 1881 the Doan's Cross reached a peak of 301,000 cattle driven by to Kansas shipping points. This was before the "Chisolm Trail".
+In 1881 the Doan's Cross reached a peak of 301,000 cattle. This was before the "Chisolm Trail".
 
-In 1884 an annual picnic, celebrating the cattle drives and cowboy tradition, began near Doan's Store.
+An annual picnic at Doan's Store still occurs on the first Saturday in May to celebrate cowboy tradition.
 
 In 1885 long cattle drives was eliminated by both the construction of railroads across north Texas and the fencing of the West using newly invented barbed wire.
 
@@ -1140,7 +1164,8 @@ Then down 90, 25, into Denver.
 Except for a break flying over the swamps of the Darian Gap between two continents at Yaviza, Panama and Turbo, Antioquia, Colombia,
 the <em>Vía Panam or Vía Panamericana</em> goes all the way down to Tierra del Fuego, Chile.
 
-<a target="_blank" href="https://www.wikiwand.com/en/Pan-American_Highway"><img align="right" width="200" src="https://www.wikiwand.com/en/Pan-American_Highway#Media/File:PanAmericanHwy.png"></a>
+<!-- <a target="_blank" href="https://www.wikiwand.com/en/Pan-American_Highway"><img align="right" width="200" src="https://www.wikiwand.com/en/Pan-American_Highway#Media/File:PanAmericanHwy.png"></a>
+-->
 
 <a name="Westward"></a>
 
@@ -1188,7 +1213,6 @@ But their service lasted for less than 2 years -- from April 3, 1860 to October 
 <a name="NY-Upstate"></a>
 
 > <strong>Upstate New York</strong>
-
 
 ### Albany/Rochester:
 
@@ -1465,7 +1489,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 
 ### North Coast, California:
 
-<li>
+<ul>
 <li type="circle">Harbor House restaurant, Elk by the sea (2-Michelin-star)</li>
 <li><a target="_blank" href="https://www.stowitts.org/">Hubert Julian Stowitts Museum and Library</a>, Pacific Grove</li>
 <li><a target="_blank" href="https://www.montereyart.org/">Monterey Museum of Art</a></li>
