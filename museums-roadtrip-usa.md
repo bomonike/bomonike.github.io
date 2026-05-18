@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-18"
-lastchange: "26-05-18 v017 svg list fix, reorg @museums-roadtrip-usa.md"
+lastchange: "26-05-18 v018 highest @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -88,6 +88,13 @@ https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States
    * SouthEast: <a target="_blank" href="https://en.wikipedia.org/wiki/Key_West">Key West, Florida</a> ("Home of the Sunset" where you can see the <a target="_blank" href="https://eclipsewise.com/lunar/LEprime/2001-2100/LE2029Jun26Tprime.html">total lunar eclipse on June 26, 2029</a> [<a target="_blank" href="https://en.wikipedia.org/wiki/June_2029_lunar_eclipse">Wikipedia</a>])
    * SouthWest: <a target="_blank" href="https://en.wikipedia.org/wiki/San_Ysidro%2C_San_Diego">San Ysidro, California</a> (the busiest border crossing in the Western Hemisphere)
    <br /><br />
+
+## Highest 
+
+Denali is the highest peak anywhere in the US, reaching heights of 20,310 feet. But it’s located in Alaska. 
+
+Mount Whitney is the tallest point in the contiguous U.S. at a height of 14,494 feet above sea level.
+It's part of the Sierra Nevada mountain range in eastern California.
 
 
 <a name="Google_route_map"></a>
