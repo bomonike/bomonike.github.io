@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-18"
-lastchange: "26-05-18 v016 svg list fix, reorg @museums-roadtrip-usa.md"
+lastchange: "26-05-18 v017 svg list fix, reorg @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -19,7 +19,7 @@ created: "2016-03-19"
 {% include l18n.html %}
 {% include _toc.html %}
 
-This page lists where one can visit, see, and eat near the most significant cultural artifacts in America.
+This page lists the very best America has to offer: visit, see, and eat near the most significant cultural artifacts in America.
 I created this page as a "bucket list" so that even if I can't visit each one and perhaps enjoy on-site, I can still visit their web pages. Someday soon everyone can see treasures from anywhere using VR (Virtual Reality) glasses providing 360-degree views in High Definition.
 
 > Do you have a road trip map or story? Share it! I'd love to know.
@@ -2167,8 +2167,7 @@ In addition to "museums", also included here are grand natural sights:
 
 ## Technical Footnote #
 
-This rather large list was originally created to be intentionally large in order to test how well the system handles a large file
-(how quickly it can download and display).
+This rather large list was originally created to be intentionally large in order to test how well the system handles a large file (how quickly it can download and display).
 
 This is an upgrade of my terrible <a target="_blank" href="https://wilsonmar.com/1usa.htm">
 Roadtrips to visit museums across the USA</a> from 2005.
@@ -2187,3 +2186,7 @@ Mapbox</a>
 libraries.
 
 > "I haven't been everywhere, but it's on my list." -- <a target="_blank" href="https://en.wikipedia.org/wiki/Susan_Sontag">Susan Sontag</a>
+
+
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
