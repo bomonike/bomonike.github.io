@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-17"
-lastchange: "26-05-17 v043 webchats @ai-providers.md"
+date: "2026-05-18"
+lastchange: "26-05-18 v044 webchats @ai-providers.md"
 url: "https://bomonike.github.io/ai-providers"
 file: "ai-providers"
 title: "AI Providers"
@@ -27,7 +27,7 @@ toward a "winner take all" dominance.
 <tr valign="top"><td>US</td><td>ai21 (Allen AI)</td><td><a target="_blank" href="https://allenai.org/olmo">Olmo</a></td></tr>
 <tr valign="top"><td>-</td><td>aion-labs</td><td>aion-2.0</td></tr>
 <tr valign="top"><td>US</td><td>Amazon</td><td>Nova</td></tr>
-<tr valign="top"><td>US</td><td>Anthropic</td><td><a target="_blank" href="https://bomonike.github.io/anthropic-claude/">Claude</a></td></tr>
+<tr valign="top"><td>US</td><td>Anthropic</td><td><a target="_blank" href="https://bomonike.github.io/anthropic-claude/">Claude</a></td><td><a target="_blank" href="https://claude.ai/new">WebChat</a></td></tr>
 <tr valign="top"><td>US</td><td>Apple</td><td>MM1, ReALM</td></tr>
 <tr valign="top"><td>China</td><td>Baidu</td><td>Ernie</td></tr>
 <tr valign="top"><td>China</td><td>Bytedance</td><td>seed</td></tr>
