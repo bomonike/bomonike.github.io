@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-18"
-lastchange: "26-05-18 v018 highest @museums-roadtrip-usa.md"
+date: "2026-05-19"
+lastchange: "26-05-19 v020 rain shadow reorg @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -20,20 +20,39 @@ created: "2016-03-19"
 {% include _toc.html %}
 
 This page lists the very best America has to offer: visit, see, and eat near the most significant cultural artifacts in America.
-I created this page as a "bucket list" so that even if I can't visit each one and perhaps enjoy on-site, I can still visit their web pages. Someday soon everyone can see treasures from anywhere using VR (Virtual Reality) glasses providing 360-degree views in High Definition.
-
-> Do you have a road trip map or story? Share it! I'd love to know.
 
 {% include whatever.html %}
 
-## Journeys
+## Measurements
 
 Since July 4, 1776, the US has grown from 13 colonies with 2.5 million people to 50 states (48 of them continguous) and 14 territories with over <a target="_blank" href="https://www.census.gov/popclock/">342 million</a> people connected by roughly 5,000 airports, 140,000 miles of train tracks, 4 million miles of roads, and 5.5 million miles of power lines. 
 
-<img src="svg/us_census_regions.svg">
+The US is only one of two countries in the world still stuck on the imperial system while the rest of the world has converted to metric.
+   * of feet, miles, pints, quarts, 
+   * fareninheight 
+
+## Naming Conventions
+
+<a target="_blank" href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States"><img src="svg/us_census_regions.svg" /></a>
    * "New England" states are: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont.
    * "Mid-Atlantic" states are New York, New Jersey, and Pennsylvania.
    <br /><br />
+
+<a name="RainShadow"></a>
+
+### The US Rain Shadow Divide: Mountains to Midwest
+
+"Mountain" states refer to the tall mountains in the states of Montana, Idaho, Wyoming, Nevada, Utah, Colorado, Arizona, New Mexico. They force moisture up to bypass the "Midwest" US.
+
+> <a target="_blank" href="https://youtube.com/shorts/mOmpn0m7pxk?si=6c6Rfj-s0q5HftEp">VIDEO</a>: Notice the transition between <strong>yellow to green</strong> down the middle of the country?
+
+<a target="_blank" href="https://www.youtube.com/watch?v=ki-hoy-3ea8&t=7m50s">VIDEO</a>: 80% of Americans live East of the (vertical) <strong>98th Meridian</strong>, as shown by a green straight line overlaid this map from <a target="_blank" href="https://blackmarble.gsfc.nasa.gov/">NASA's BlackMarble satellite images of the nigh sky worldwide</a>:<br />
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1672456116/usa-frontier-1920x1080_a2urp2.jpg"><img alt="usa-frontier-1920x1800.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1672456116/usa-frontier-1920x1080_a2urp2.jpg"></a>
+
+That green line down the middle of America defines the extent wet storms reach from the East. West of that is the "Rain Shadow" of limited moisture from the Pacific West blocked by the tall Cascade Mountains in Washington state housing Leavenworth, Washington and Rocky Mountains housing Aspen, Vail, Breckenridge, Telluride, <a target="_blank" href="https://www.google.com/maps/place/Denver,+CO/@39.7584783,-113.8531857,5z/">Denver, Colorado</a>), Park City, Utah, California.
+
+When geologist John Westly Powell identified this phenomenon across the "pairies" in 1890, that natural line was at the 100th Meridian (vs. 98th today). Since then, "Climate change" continues to shift East. So expect less rain for agriculture around Winnipeg (Manitoba, Canada), Fargo, Sioux Falls, Omaha, Lincoln, Wichita, Oklahoma City, Forth Worth, Austin, and San Antonio Texas.
+
 
 <strong>Cites</strong> here are listed within each <a href="#CivilWar">state of the union</a>, along natural geography East-to-West:
 
@@ -64,8 +83,6 @@ Journeys through the heartland of America:
 
 BTW, finding where each site is located resulted in a great geography and historical lesson for me.
 
-By US Census Bureau - https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf, Public Domain, https://commons.wikimedia.org/w/index.php?curid=10687031
-https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States
 
 ## References (Websites)
 
@@ -89,12 +106,19 @@ https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States
    * SouthWest: <a target="_blank" href="https://en.wikipedia.org/wiki/San_Ysidro%2C_San_Diego">San Ysidro, California</a> (the busiest border crossing in the Western Hemisphere)
    <br /><br />
 
-## Highest 
+### Highest and lowest 
 
 Denali is the highest peak anywhere in the US, reaching heights of 20,310 feet. But it’s located in Alaska. 
 
 Mount Whitney is the tallest point in the contiguous U.S. at a height of 14,494 feet above sea level.
 It's part of the Sierra Nevada mountain range in eastern California.
+
+Sequoias are the largest tree species in the country.
+Hyperion is the largest individual sequoia tree, reaching 380 feet above ground in California’s Redwood National Park.
+
+The St. Louis Gateway Arch is the tallest monument anywhere in the United States, reaching 630 feet above ground. It’s also the largest human-made arch in the world. It was designed by Finnish-American architect Eero Saarinen and built between 1963 and 1965.
+
+Oregon’s Crater Lake is the deepest lake in America, descending to depths of 1,943 feet — taller than the Eiffel Tower, Washington Monument, and Statue of Liberty stacked on top of one another. Its pure, crystalline waters are fed entirely by snowmelt and rain.
 
 
 <a name="Google_route_map"></a>
@@ -107,20 +131,6 @@ It's part of the Sierra Nevada mountain range in eastern California.
 <img alt="6 days" width="750" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1660661005/ThomasCannonandJustinMorrisRoute-589x301_g6ygsm.jpg"></a>
 
 To deter reckless driving among Extreme Road-trippers, the <a target="_blank" href="https://www.guinnessworldrecords.com/news/2015/8/60-years-on-the-categories-that-guinness-world-records-no-longer-monitors-393758">Guinness World Records discontinued listing speed records in 1996</a>. But that didn't stop the <a target="_blank" href="https://allfiftyclub.com/members/record-holders-fast-to-50/">All Fifty States Club</a> website. On May 2025, including Alaska, 7 days, 23 hours, and 2 minutes.
-
-## The US Rain Shadow Divide
-
-> <a target="_blank" href="https://youtube.com/shorts/mOmpn0m7pxk?si=6c6Rfj-s0q5HftEp">VIDEO</a>: Notice the transition between <strong>yellow to green</strong> down the middle of the country?
-
-<a target="_blank" href="https://www.youtube.com/watch?v=ki-hoy-3ea8&t=7m50s">VIDEO</a>: 80% of Americans live East of the (vertical) <strong>98th Meridian</strong>, as shown by a green straight line overlaid this map from <a target="_blank" href="https://blackmarble.gsfc.nasa.gov/">NASA's BlackMarble satellite images of the nigh sky worldwide</a>:<br />
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1672456116/usa-frontier-1920x1080_a2urp2.jpg"><img alt="usa-frontier-1920x1800.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1672456116/usa-frontier-1920x1080_a2urp2.jpg"></a>
-
-When geologist John Westly Powell identified this phenomenon across the "pairies" in 1890, that natural line was at the 100th Meridian (vs. 98th today).
-Since then, "Climate change" continues to shift to the East. So expect less rain from Winnapeg (Canada) to Forth Worth, Ausin, and San Antonio Texas.
-Also impacted will be agriculture around Winnipeg (Manitoba, Canada), Fargo, Sioux Falls, Omaha, Lincoln, Wichita, Oklahoma City.
-
-That green line down the middle of America defines the extent wet storms reach from the East. West of that is the "Rain Shadow" of limited moisture from the Pacific West blocked by the tall Cascade Mountains in Washington state housing Leavenworth, Washington and Rocky Mountains housing Aspen, Vail, Breckenridge, Telluride, <a target="_blank" href="https://www.google.com/maps/place/Denver,+CO/@39.7584783,-113.8531857,5z/">Denver, Colorado</a>), Park City, Utah, California.
-
 
 <a name="freeways"></a>
 
@@ -217,7 +227,7 @@ The <a target="_blank" href="https://www.amazon.com/US-National-Parks-Map-22-5/d
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/25560224/6b14fde6-2d1c-11e7-952e-52e883844808.jpg">
 <img alt="us-tour-natl-park-route" width="650" src="https://cloud.githubusercontent.com/assets/300046/25560224/6b14fde6-2d1c-11e7-952e-52e883844808.jpg"></a>
 
-Adding New England as well:
+Adding New England as well to an AI-planned route:
 
 <a target="_blank" title="Route around the US on Google map" href="https://wilsonmar.github.io/US_Landmarks_Roadtrip_v01.html">
 <img alt="map us_landmarks_roadtrip_v01_683x396" width="683" height="396" src="https://cloud.githubusercontent.com/assets/300046/14229554/5531ac58-f8f3-11e5-8ce4-c01a5289358e.png"></a>
