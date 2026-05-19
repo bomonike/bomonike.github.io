@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-19"
-lastchange: "26-05-19 v020 rain shadow reorg @museums-roadtrip-usa.md"
+lastchange: "26-05-19 v021 I-95 & metrics @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -28,10 +28,17 @@ This page lists the very best America has to offer: visit, see, and eat near the
 Since July 4, 1776, the US has grown from 13 colonies with 2.5 million people to 50 states (48 of them continguous) and 14 territories with over <a target="_blank" href="https://www.census.gov/popclock/">342 million</a> people connected by roughly 5,000 airports, 140,000 miles of train tracks, 4 million miles of roads, and 5.5 million miles of power lines. 
 
 The US is only one of two countries in the world still stuck on the imperial system while the rest of the world has converted to metric.
-   * of feet, miles, pints, quarts, 
-   * fareninheight 
+   * 1 inch = 2.54 cm.
+   * 1 foot = 0.3048 m.
+   * 1 yard = 0.9144 m.
+   * 1 mile = 1.6093 km.
+   * 1 US gallon = 3.7854 litres
+   * 1 lb = 0.4536 kg.   &  1 kg = 2.2046 lb.
+   * 1 oz = 28.35 grams  &  1 g = 0.0353 oz.
+   * Fahrenheit to Celsius: C=(F−32)×5/9.
+   <br /><br />
 
-## Naming Conventions
+## Divisions and Dividers
 
 <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States"><img src="svg/us_census_regions.svg" /></a>
    * "New England" states are: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont.
@@ -136,12 +143,17 @@ To deter reckless driving among Extreme Road-trippers, the <a target="_blank" hr
 
 ## US interstate highways
 
+REMEMBER:<br />
 East-west interstate highway numbers end with 0.<br />
 North-South interstate highway numbers end with 5.
 
 <img alt="East-West" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1660663003/roadtrip-usa-east-west-hwy_dovluc.jpg">
 
 <img alt="North-South" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1660662994/roadtrip-usa-north-south-hwy_sontf7.jpg">
+
+I-95 runs along the East Coast is the longest and busiest major U.S. highway.
+American cruise ship crews use "I-95" as slang for the main behind-the-scenes route running bow to stern. The corridor connects crew areas across the ship, including cabins, kitchens, storage, and workspaces. It lets crew move quickly without crossing guest areas. That keeps operations smooth and keeps passenger spaces quieter and less crowded.
+
 
 ### Most scenic drives in America
 
@@ -930,9 +942,12 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 
 ## Down the Mississippi River
 
-At <a target="_blank" href="https://www.nps.gov/miss/riverfacts.htm" title="US National Park Service">2,300 miles, the Mississippi River is the 4th longest in the world (after Nile, Amazon, Yangtze). It's part of the largest watershed in the world.<br />
+At <a target="_blank" href="https://www.nps.gov/miss/riverfacts.htm" title="US National Park Service">2,300 miles, the Mississippi River is the 4th longest in the world (after Nile, Amazon, Yangtze). 
+With feeds from the Missouri River (starting in Montana), Ohio River, and Arkansas River,
+it's part of the <strong>largest watershed in the world</strong>.
+
 <img alt="us-watershedbg" width="650" src="https://cloud.githubusercontent.com/assets/300046/25560325/ff5f8ab4-2d1e-11e7-9b96-f34d6aa0d902.jpg"></a>
-<br />
+
 <a target="_blank" href="https://www.youtube.com/watch?v=BubAF7KSs64&t=3m2s">VIDEO</a>: "It's inevitable that the US emerged as a global superpower": the Missisippi is the longest <strong>navigable</strong> river in the world, enabling inland cities to be oceanic ports serving world markets by boat (10-39X cheaper than by road).<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1672416011/usa-mississippi-1920x1080_ipjcqr.jpg"><img alt="usa-mississippi-1920x1080.jpg" width="650" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1672416011/usa-mississippi-1920x1080_ipjcqr.jpg"></a>
 <br /><br />
