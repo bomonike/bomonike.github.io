@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-17"
-lastchange: "26-05-17 v044 mirror @anthropic-claude.md"
+date: "2026-05-20"
+lastchange: "26-05-20 v047 harness @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -44,6 +44,8 @@ The objective here is to combine all the wisdom into deep knowledge logically se
    * <a target="_blank" href="https://www.linkedin.com/in/angelajiang/">Angela Jiang</a>, Product
    <br /><br />
 
+1. Social media tags: <strong>#CodeWithClaude</strong>
+
 1. Visit <a target="_blank" href="https://anthropic.com/">https://anthropic.com/</a> - the corporate marketing landing page.
 
    It says "Anthropic is a <strong>public benefit corporation</strong> dedicated to securing its benefits and mitigating its risks."
@@ -72,9 +74,9 @@ The objective here is to combine all the wisdom into deep knowledge logically se
 
 <a name="Competition"></a>
 
-## Competition
+## Competition in Harnesses
 
-Claude competes with agentic coding tools (aka coding agent IDEs) that read a codebase, edit files, and run commands:
+Claude competes with agentic coding tools (aka coding agent IDEs and CLI) that read a codebase, edit files, and run commands:
    * Amazon's Kiro CLI & IDE for spec-driven development. But it needs to be constantly connected to AWS eating up credits. <a target="_blank" href="https://builder.aws.com/content/34NW7Wl1gpOl2E4jeJQ6iytovSM/how-to-use-agent-skills-with-amazon-q-developer-and-kiro">agent-skills-mcp</a> to convert from Anthropic Agent Skills.
    * warp.dev (which does a great job of detecting coding and CLI errors and suggesting fixes), <a target="_blank" href="https://github.com/warpdotdev/warp">now open source</a>
    * OpenAI's Codex <a target="_blank" href="https://www.youtube.com/watch?v=kFS6z_97Ohc&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
@@ -85,6 +87,9 @@ Claude competes with agentic coding tools (aka coding agent IDEs) that read a co
    * Devin by Cognition (merged)
    * Temporal's <a target="_blank" href="https://www.youtube.com/watch?v=3rpwaKQXI7A">Pydantic</a>
    * OpenCode
+
+   * Hermes
+   * Pi.dev by Mario Zechner.
    <br /><br />
 
 https://www.tbench.ai/leaderboard (Terminal Bench Leaderboard) provides benchmarks AI agents' terminal mastery operating the <a target="_blank" href="https://www.harborframework.com/">harbor framework</a>.
@@ -501,6 +506,8 @@ About Claude Code + VS Code + Local LLM:
    uv add bandit safety semgrep dynaconf --frozen  
    ```
 
+   NOTE: OpenAI acquired Astral on <a target="_blank" href="https://openai.com/index/openai-to-acquire-astral/">March 19, 2026</a>.
+
 1. Install the lateszt NodeJs for Claude to run TypeScript:
    ```bash
    brewin.sh node
@@ -524,9 +531,9 @@ About Claude Code + VS Code + Local LLM:
 
 1. In your repo's <tt>.gitignore</tt> file, specify folders which should not be commited into your team Git repo:
    ```
-   .venv
    .pytest_cache
    __pycache__
+   CLAUDE.local.md
    ```
    These folder should be created for each <strong>session</strong>.
    .venv contains the specific version of each package desired in a <strong>virtual environment</strong> folder used to hold library files requested by import statements within Python code.
@@ -1510,9 +1517,9 @@ To take a screen shot on macOS, press the usual command + Shift + 4 which change
 
    <a target="_blank" href="https://github.com/addyosmani/agent-skills">github.com/addyosmani/agent-skills</a>
    
-   REMEMBER: The essence of the <strong>revolution that is AI</strong> is this diagram.
-   To make full use of GanAI tools, instead of Q&A style prompting to generate code (then making changes later), 
-   separate your work into <strong>several stages of a development lifecycle</strong>:
+   REMEMBER: The essence of the <strong>2026 revolution in GenAI</strong> is this diagram:
+   instead of Q&A style prompting to generate code (then making changes later), 
+   progressively define your work into <strong>several separate stages in a development lifecycle</strong>:
 
    <pre>
    DEFINE        PLAN          BUILD         VERIFY        REVIEW        SHIP
@@ -1904,30 +1911,58 @@ From here, reference the design system in your prompts: “Build a primary butto
    * https://dev.to/gunnargrosch/automating-your-workflow-with-claude-code-hooks-389h
    <br /><br />
 
-Conceptually Claude hooks are like Git hooks: “run this script whenever X happens,” but for your AI coding workflow. Hooks are small, user‑defined scripts (shell commands, HTTP calls, or model prompts) that run automatically at specific points in a Claude Code session, such as:
-   * When Claude edits a file.
-   * When a session starts or ends.
-   * When a command is about to run or just finished.
+
+Conceptually, Claude hooks are like Git hooks: “run this script whenever X happens,” but for your AI coding workflow. 
+Hooks are small, user-defined scripts (shell commands, HTTP calls, or model prompts) that run automatically at specific points in a Claude Code session, such as:
+   * SessionStart - Runs when starting or resuming a session
+   * SessionEnd - Runs when a session ends
+   * Stop - Runs when Claude Code has finished responding
+
+   * UserPromptSubmit - Runs when the user submits a prompt, before Claude processes it
+   * When Claude edits a file
+   * When a session starts or ends
+   * When a command is about to run or just finished
+   * Notification - Runs when Claude Code sends a notification, which occurs when Claude needs permission to use a tool, or after Claude Code has been idle for 60 seconds
+   * SubagentStop - Runs when a subagent (these are displayed as a "Task" in the UI) has finished
+   * PreCompact - Runs before a compact operation occurs, either manual or automatic
    <br /><br />
 
-They give deterministic control: you can enforce rules (code formatting, security checks, linting, notifications) without relying on Claude’s model to “remember” to do them.
+They give deterministic control: you can enforce rules (code formatting, security checks, linting, notifications) without relying on Claude's model to “remember” to do them.
 
-Programming (.py Python, .sh shell files, etc.):
+Look at my claud-templates repo containing these (.py Python, .sh shell files, etc.):
 
-   * check-comments.py  # checks for for excessive comments.
+   * check-comments.py      # checks for for excessive comments.
    * keyword-detector.py
    * skill-reminder.sh
    * todo-enforcer.sh
    <br /><br />
 
+When a hook command executes, Claude sends JSON data through standard input containing details about the proposed tool call to provide the basis for decising whether to allow or block the operation:
+```
+{
+  "session_id": "2d6a1e4d-6...",
+  "transcript_path": "/Users/sg/...",
+  "hook_event_name": "PreToolUse",
+  "tool_name": "Read",
+  "tool_input": {
+    "file_path": "/code/queries/.env"
+  }
+}
+```
+REMEMBER: The stdin input to your commands changes based upon the type of hook being executed (PreToolUse, PostToolUse, Notification, etc) and the matcher used (in the case of PreToolUse and PostToolUse).
+The tool_input contained in that will differ based upon the tool that was called (in the case of PreToolUse and PostToolUse hooks).
+
+Your command reads this JSON from standard input, parses it, based on the tool name and input parameters.
+
+Exit Code 2 - Block the tool call (PreToolUse hooks only)
 
 <a name=".gitignore"></a>
 
 ## .gitignore
 
-PROTIP: Within the <tt>.gitignore</tt> file are files generated by Claude:
+I my claud-templates repo is a sample <tt>.gitignore</tt> file which
 ```
-# Exclude runtime/generated files from hooks
+# Exclude runtime/generated files from hooks executed:
 hooks/*.log
 hooks/debug.log
 hooks/todo-enforcer.config.json
@@ -2240,9 +2275,13 @@ PROTIP: Take a full backup before you make changes to conditions after install.
    ```
       NOT       "https://json-schema.org/claude-code-settings.json",
    
-1. <a target="_blank" href="https://code.claude.com/docs/en/env-vars">Environment variables</a> set basis for rules by what enviornment (vs prod). Examples of additional custom variables include:
+1. Disable <a href="#MCP">MCP</a> server tool descriptions loaded for use by web chat, but should not needed but still take up tokens on Claude CLI:
    ```
    "env": {
+     "ENABLE_CLAUDEAI_MCP_SERVERS": "false",
+   ```
+1. <a target="_blank" href="https://code.claude.com/docs/en/env-vars">Environment variables</a> set basis for rules by what enviornment (vs prod). Examples of additional custom variables include: xamples:
+   ```
      "NODE_ENV": "development",
      "GIT_MAIN_BRANCH": "main",
      "PYTHONPATH": "./src:./tests"
@@ -2257,6 +2296,10 @@ PROTIP: Take a full backup before you make changes to conditions after install.
 1. Set shell program (not zsh) for compatibility:
    ```
    "defaultShell": "bash",
+   ```
+1. Set the default model to Sonnet 1-million token context rather than more expensive Opus :
+   ```
+   "model": "sonnet[1m]",
    ```
 1. For stronger command isolation, especially in higher-risk environments.:
    ```
@@ -2326,7 +2369,7 @@ PROTIP: Take a full backup before you make changes to conditions after install.
    ```
    <a name="MCPAllow"></a>
 
-1. Allow to <a href="#MCP">MCP servers</a>:
+1. Allow <a href="#MCP">MCP servers</a>:
    ```
    "permissions" : {
     "allow": [
@@ -2449,6 +2492,8 @@ Illegal trailing comma before end of array: line 44 column 21 (char 942)
 
 ### Token /context usage
 
+https://github.com/getagentseal/codeburn
+
    <a target="_blank" href="https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans">Claude’s context window</a> is 200K, meaning it can ingest 200K+ tokens (about 500 pages of text or more) when using a paid Claude plan.
    The Claude API can ingest <strong>1M tokens</strong> when using Claude Opus 4.6 or Sonnet 4.6.
    
@@ -2462,6 +2507,23 @@ Illegal trailing comma before end of array: line 44 column 21 (char 942)
    REMEMBER: The Autocompact Buffer: 45k tokens (22.5%) is <strong>reserved</strong> for autocompaction. When your conversation approaches the context window limit, Claude summarizes earlier messages to make room for new content.    Claude Code does this automatically when the context window fills up, but here's the thing - automatic compaction might keep less important stuff and throw away useful insights. But that takes time and require work space. The context window limit applies to input + output combined. When autocompaction triggers, the model needs room to generate the summary. Without reserved space, a full context would leave no room for output. So right off the bat, you only have about half the context window for your actual conversation.
 
    System Overhead: The system prompt and tools reserve almost 20k tokens (~10%).
+
+1. Disable unused MCP servers per session. Unused servers burn context silently via tool descriptions.
+   ```bash
+   claude mcp list
+   ```
+   REMEMBER: The list includes those set in the browser-based Claude.ai workspace:
+   <pre>
+   claude.ai Notion: ✓ Connected
+   claude.ai Gmail: ! Needs authentication
+   claude.ai Google Calendar: ! Needs authentication
+   claude.ai Slack: ! Needs authentication
+   claude.ai Atlassian: ! Needs authentication
+   claude.ai Asana: ! Needs authentication
+   claude.ai GitHub MCP: ! Needs authentication
+   ... 33 servers total
+   </pre>
+   CAUTION: The tool descriptions of every MCP server active loads into Claude’s system prompt, your first message. This also widens your attack surface — every connected server is one more thing that could break, leak, or be misused.
 
    The more <a href="#MCP">MCP</a> servers are used, the more "MCP Tools" tokens are used. Each tool within an MCP server consumes token before it even starts. Each of several tools are usually a part of each MCP server. For example, Notion has a tool for
       * create-pages
@@ -2838,7 +2900,8 @@ loops.
 
 The community confirms is the exam's focus areas: fallback loop design, Batch API cost optimization, JSON schema structuring to prevent hallucinations, and <a href="#MCP">MCP</a> tool <a target="_blank" href="https://www.youtube.com/watch?v=0cVuMHaYEHE">orchestration</a>.
 
-IBM AI Engineering (Coursera)	ML/DL concepts and model deployment	Conceptual + hands-on	Cloud-agnostic
+IBM AI Engineering (Coursera)	ML/DL concepts and model deployment	Conceptual + hands-on
+Cloud-agnostic
 
 Anthropic Academy is at 
 <a target="_blank" href="https://www.anthropic.com/learn/">https://www.anthropic.com/learn</a>
@@ -3168,10 +3231,12 @@ Consider MCP servers for:
 
    ### MCP GitHub Action
 
-1. <a target="_blank" href="https://anthropic.skilljar.com/claude-code-in-action/303240">VIDEO</a>: A common MCP server to install is GitHub Actions CI (Continuous Integration). Install the Claude GitHub app from github.com/apps/claude using a built-in command:
+1. <a target="_blank" href="https://anthropic.skilljar.com/claude-code-in-action/303240">VIDEO</a>: A popular MCP server to install is GitHub Actions CI (Continuous Integration). Install the Claude GitHub app from github.com/apps/claude using a built-in command:
    ```bash
    /install-github-app
    ```
+   FIXME: ??? That creates under your cwd folder/file <tt>~/.github/workflows/claude.yml</tt> 
+
 
    Instead of using a browser to get the GitHub API key and then scheduling a rotation of that key according to your corporate security standards. GitHub does not provide an API to automatically create or rotate new Personal Access Tokens (PATs) for a user account. PAT creation is intentionally manual for security reasons. 
 
@@ -3180,21 +3245,32 @@ Consider MCP servers for:
 
    ### MCP Playwright
 
-1. Another common MCP server to install is Microsoft Playwright:
+   Another common MCP server to install is Microsoft Playwright. It gives Claude Code structured DOM access with a <strong>browser's</strong> accessibility tree, element attributes, network requests, and page state directly. So Playwright is more precise and efficient for web-specific tasks than Computer Use.
+
+1. Install MCP Playwright:
    ```bash
    claude mcp add playwright npx @playwright/mcp@latest
    ```
 1. To avoid needing to confirm the next command, edit your <tt>.claude/settings.local.json</tt> file to <a href="#MCPAllow">add permissions: to allow "mcp_playwright".
 
-1. Prompt in Claude:
+1. Prompt in Claude UI to use MCP Playwright, the default control of browsers:
    ```
    open the browser and navigate to localhost:3000
    ```
+   Alternately:
+   ```
+   Use playwright mcp to open a browser to example.com
+   ```
+
 1. See <a target="_blank" href="https://wilsonmar.github.io/playwright/">my notes on Playwright</a>.
 
    Accessing the browser and controlling it with Playwright enables Claude can see the actual visual output, not just the code, so it can make decisions about improving styling.
 
+   ### Computer Use
 
+   <strong>Claude Computer Use</strong> works through screenshots and mouse/keyboard simulation, treating the browser like a visual interface. So it can be used for <strong>anything that runs on a desktop</strong>, including apps outside the browser.
+
+1. Install 
 
 <a name="Tools"></a>
 
