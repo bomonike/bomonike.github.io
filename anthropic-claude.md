@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-20"
-lastchange: "26-05-20 v047 harness @anthropic-claude.md"
+date: "2026-05-24"
+lastchange: "26-05-24 v048 pm os @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -74,7 +74,7 @@ The objective here is to combine all the wisdom into deep knowledge logically se
 
 <a name="Competition"></a>
 
-## Competition in Harnesses
+## Competition among Harnesses
 
 Claude competes with agentic coding tools (aka coding agent IDEs and CLI) that read a codebase, edit files, and run commands:
    * Amazon's Kiro CLI & IDE for spec-driven development. But it needs to be constantly connected to AWS eating up credits. <a target="_blank" href="https://builder.aws.com/content/34NW7Wl1gpOl2E4jeJQ6iytovSM/how-to-use-agent-skills-with-amazon-q-developer-and-kiro">agent-skills-mcp</a> to convert from Anthropic Agent Skills.
@@ -185,6 +185,7 @@ References:
 * <a target="_blank" href="https://quizlet.com/1139139502/comprehensive-guide-to-claude-ai-features-applications-and-best-practices-flash-cards/">127 terms</a>
 * <a target="_blank" href="https://quizlet.com/1063707525/ai-fluency-claude-anthropic-flash-cards/">14 terms: "AI Fluency"</a>
 
+zzz
 
 <a name="Glossary"></a>
 
@@ -316,11 +317,7 @@ PROTIP: Improvements in net productivity can be confidently <strong>monitized</s
 
 <a target="_blank" href="https://www.youtube.com/watch?v=Y3PcRp5RFzk&pp=ugUEEgJlbg%3D%3D">"5 ‘Boring’ AI Workflows that Businesses Actually Want (And How to Sell them)"</a> by Nate Herk of AI Automation
 
-
-
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1778688019/ai-harness-engr_rqoudz.webp"><img alt="ai-harness-engr.webp" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1778688019/ai-harness-engr_rqoudz.webp"> /></a>
-
-
 
 <a name="Tutorials"></a>
 
@@ -531,6 +528,7 @@ About Claude Code + VS Code + Local LLM:
 
 1. In your repo's <tt>.gitignore</tt> file, specify folders which should not be commited into your team Git repo:
    ```
+   .DS_Store
    .pytest_cache
    __pycache__
    CLAUDE.local.md
@@ -1142,6 +1140,72 @@ Alternately:
    claude config get -g autoUpdates
    ```
 
+<a name="PMOS"></a>
+
+### PM OS
+
+<a target="_blank" href="https://www.youtube.com/watch?v=bITUsUsrxjM">VIDEO</a>:
+<a target="_blank" href="https://www.linkedin.com/in/aagupta/">Project Manager Aakash Gupta</a>
+created a set of <a target="_blank" href="https://github.com/aakashg">MIT-licensed Claude-Code assets</a> that includes
+<a target="_blank" href="https://github.com/aakashg/pm-claude-code-setup">pm-claude-code-setup</a>
+is a production-ready standalone configuration which immediately understands PM work.
+Inspired by Tom Preston‑Werner’s '''README first''' philosophy.
+It includes, in addition to LICENSE & README.md :
+<pre>
+├── CLAUDE.md              ← Master context (Claude reads this first)
+├── QUICKSTART.md
+├── .claude/skills/        ← 30+ 41 custom commands for 6 common PM tasks # trigger phrases:
+        ├── competitive-analysis/       # "analyze competitor" → smart/weak/implications framework
+        ├── launch-checklist/           # "launch checklist" → risk-scaled pre/post launch plan
+        ├── metrics-definer/            # "define metrics" → primary, guardrail, and anti-metrics
+        ├── prd-writer/                 # "write a PRD" → structured PRD with clarifying questions
+        ├── sprint-planner/             # "plan sprint" → capacity-checked sprint with risks
+        └── user-research/              # "synthesize research" → evidence-ranked findings
+├── templates/             ← 4: Launch checklists, roadmaps, OKRs, retros
+│   ├── launch-plan.md                  # Launch planning template
+│   ├── okr-template.md                 # OKR scorecard
+│   ├── prd-template.md                 # Blank PRD structure
+│   └── sprint-review.md                # Sprint review template</pre>
+</pre>
+https://github.com/aakashg/pm-github-starter-kit
+<pre>
+├── templates/
+│   ├── PROFILE-README.md      # Your GitHub profile landing page
+│   └── PROJECT-README.md      # README template for every project you build
+├── prompts/
+│   ├── create-repo.md         # Cursor/Claude Code: create a new repo
+│   ├── build-project.md       # Cursor/Claude Code: build your first agent
+│   ├── commit-and-push.md     # Cursor/Claude Code: save and publish
+│   └── write-readme.md        # Cursor/Claude Code: generate documentation
+├── CHECKLIST.md               # Your 3-week roadmap from zero to live
+└── .gitignore                 # Python project defaults
+</pre>
+Additional skills from https://github.com/aakashg/pm-claude-skills
+https://www.news.aakashg.com/p/steal-6-of-my-claude-skills
+<pre>
+├── .claude/skills/
+        └── idea-validator
+        └── linkdin-post-writer
+        └── product-designer
+        └── prompt-engineer
+        └── status-update-writer
+</pre>
+The full <a target="_blank" href="https://www.news.aakashg.com/p/pm-os">$49/250 PM OS</a>
+PM Operating System has 41+ skills, 7 sub-agent perspectives, a complete context library, launch templates, and sprint planning workflows refined over 100+ iterations.
+<pre>
+├── setup/                 ← Installation & first session checklist
+├── context-library/       ← Your company info, writing styles, stakeholders
+├── sub-agents/            ← 7 AI reviewers (engineer, designer, exec, legal...) perspectives
+</pre>
+
+The Workflow Cheatsheet provides an important decoder to remember:
+| Phase | Key Output | Trigger Command / Prompt |
+| Strategic Alignment | product_charter.md | "Who is this for?" |
+| Problem Discovery | opportunity_brief.md | "Draft 5 survey Qs" |
+| Solution Definition | mvp_scope.md | "Prioritize MVP features" |
+| Feasibility & Viability | technical_feasibility.md and business_viability.md | "Assess tech risks" |
+| Requirements | prd.md | "Generate PRD" |
+
 
 <a name="UsingClaude"></a>
 
@@ -1444,14 +1508,6 @@ create @file://$HOME/.claude/usage-data/report.html from
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=11m42s">/loop   # Schedule Prompts</a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=14m31s">/btw   # side question</a>
    </pre>
-   
-   ### 5-hour window
-
-   REMEMBER: Each session is a 5-hour rolling window (at time of this writing). ???
-
-   Models reset ???
-
-
 
 
 <a name="HowClaudeWorks"></a>
@@ -1490,6 +1546,20 @@ Within prompts, type @ to begin specifying a file's path pointing to contents to
 ### Screen shot in a prompt
 
 To take a screen shot on macOS, press the usual command + Shift + 4 which changes the cursor to crosshairs. Position it on the screen and press your mouse to drag and drop to the opposite corner of the box to capture the section to your computer's invisible clipboard. Click the Claude input field and press control + V to paste. "[Image #1]" would appear to confirm. To the right of that, type a sentence to specify what you want done based on that image.
+
+
+
+## Session Management
+
+   REMEMBER: Each session is a 5-hour rolling window (at time of this writing).
+
+* /clear between unrelated tasks. Context bleed is the #1 quality killer.
+* Cap conversations at ~50 exchanges. Quality degrades past this.
+* Use handoffs. Before ending a long session: "Write a HANDOFF.md." Next session: "Read @HANDOFF.md and continue."
+* Run parallel sessions. Multiple terminals, each with its own Claude instance and context window.
+* Resume sessions. claude --continue for last session, claude --resume to pick from history.
+
+   Models reset ???
 
 
 <a name="CustomSlash"></a>
