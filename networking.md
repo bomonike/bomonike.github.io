@@ -1,8 +1,291 @@
 ---
-file: "networking.md"
+layout: post
+date: "2026-05-25"
+lastchange: "26-05-25 v004 + ccna youtube @networking.md"
+url: "https://bomonike.github.io/networking"
+file: "networking"
+title: "Networking Certifications"
+excerpt: "Deep Dive tips and tricks to get certified: Step-by-step tutorials, videos, practice exams."
+tags: [AI, Certifications, Networking]
+image:
+# feature: pic data center slice 1900x500.jpg
+  feature: https://cloud.githubusercontent.com/assets/300046/14622043/8b1f9cce-0584-11e6-8b9f-4b6db5bb6e37.jpg
+  credit:
+  creditlink:
+comments: true
+created: "2026-03-19"
 ---
+<a target="_blank" href="https://bomonike.github.io/networking"><img align="right" width="100" height="100" alt="networking.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/networking.png?raw=true" /></a>
+<i>{{ page.excerpt }}</i>
+{% include _toc.html %}
 
-<a target="_blank" href="https://bomonike.github.io/networking"><img align="right" width="100" height="100" alt="networking.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/networking.png?raw=true" />
+{% include whatever.html %}
+
+This article was hand-crafted to combine insights from the documents, tutorials, and videos listed below.
+The objective here is to combine all the wisdom into deep knowledge logically sequenced.
+
+
+## Certifications
+
+   * https://www.youtube.com/watch?v=w0MzbFbs-cM
+   <br /><br />
+
+PROTIP: Networking knowledge are fundamental to CyberSecurity and data center operations jobs.
+
+COMPtia Network+ does not have the proprietary information in the Cisco CCNA & CCNP exams. 
+But knowing Cisco (all product model numbers) can opens doors for you to work in enterprises, which pays better than mom and pop employers.
+
+NVIDIA
+
+## Tutorial jungle
+
+There are many tutorials available from entrepreneurs.
+Most of them just copy from each other.
+
+https://jitl.jp/ccna-files
+
+
+
+## Anki Study Flash Cards app
+
+PROTIP: Certifications is basically a memorization game, so focus on quick and comprehensive recall of terms, in your set of Anki files on your mobile phone. Make a habit of using time instead of wasting it on TV and doomscrolling.
+
+CAUTION: Avoid "multi-tasking" like watching a movie while studying. Study after study have concluded that people don't remember ideas while multi-tasking.
+
+$24.99 AnkiMobile Flashcards
+by https://apps.ankiweb.net/
+https://apps.apple.com/us/app/ankimobile-flashcards/id373493387
+AnkiDroid on Android
+
+
+## Cisco Packet Tracer
+
+<a target="_blank" href="https://www.youtube.com/watch?v=a1Im6GYaSno&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ&index=3">VIDEO</a>:
+Install from https://jitl.jp/packet-tracer redirects to
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=a1Im6GYaSno">@JeremysITLab 003: Packet Tracer Introduction - Day 1 Lab</a>
+
+
+
+## CCNA YouTube Videos
+
+### @Flock = Neil Anderson
+
+<a target="_blank" href="https://www.youtube.com/watch?v=H8W9oMNSuwo&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ">@JeremysITLab = 35 hours of videos on YouTube</a>: "Free CCNA v1.1 200-301 - Complete Course 2026" with 126 lessons. 
+   or for $49 https://www.flackbox.com/cisco-ccna-gold-bootcamp-course
+   Many of the topics are from years ago.
+   https://sendfox.com/jeremysitlab
+
+   Or paid version by Neil Anderson
+
+* @Flock: 1. Welcome
+* @Flock: 2. Lab Exercises & Anki Flashcards
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=H8W9oMNSuwo">@JeremysITLab 001 Network Devices - Day 1</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=6Atw8oMtVTA">@JeremysITLab 002 Anki Flashcards - Day 1 Extra</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=ieTH5lVhNaY">@JeremysITLab 004 Interfaces and Cables - Day 2</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=K6Qt23sY68Y">@JeremysITLab 005 Connecting Devices - Day 2 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=yM-XNq9ADlI">@JeremysITLab 006 How the TCP/IP Model Actually Works - CCNA Day 3</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=7nmYoL0t2tU">@JeremysITLab 007 OSI Model - Day 3 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=IYbtai7Nu2g">@JeremysITLab 008 Intro to the CLI - Day 4</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=SDocmq1c05s">@JeremysITLab 009 Basic Device Security - Day 4 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=u2n762WG0Vo">@JeremysITLab 010 Ethernet LAN Switching (Part 1) - Day 5</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=5q1pqdmdPjo">@JeremysITLab 011 Ethernet LAN Switching (Part 2) - Day 6</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=lKYUHu9cDcA">@JeremysITLab 012 Analyzing Ethernet Switching - Day 6 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nAQFkCvWpFo">@JeremysITLab 013 IPv4 Addressing (Part 1) - Day 7</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=THdoGJjQ-A8">@JeremysITLab 014 IPv4 Addressing (Part 2) - Day 8</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=XY2lfcl6HRQ">@JeremysITLab 015 Configuring IP Addresses - Day 8 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=V5KOhSdVeNs">@JeremysITLab 016 Switch Interfaces - Day 9</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=s0HrOy3KPBU">@JeremysITLab 017 Configuring Interfaces - Day 9 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=NlvBHnXGb6E">@JeremysITLab 018 IPv4 Header - Day 10</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=Wg4PkNMEGKw">@JeremysITLab 019 Routing Fundamentals - Day 11 (part 1)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=GIfgkU3k_sw">@JeremysITLab 020 Static Routing - Day 11 (part 2)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=wXiBZ1YrNbo">@JeremysITLab 021 Configuring Static Routes - Day 11 Lab 1</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=9ZzZV4QTCKM">@JeremysITLab 022 Troubleshooting Static Routes - Day 11 Lab 2</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=N2DXWMM1RaI">@JeremysITLab 023 The Life of a Packet - Day 12</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=iDqmFzqEFpU">@JeremysITLab 024 Life of a Packet - Day 12 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=BWZ-MHIhqjM">@JeremysITLab 025 Subnetting (Part 1) - Day 13</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=Cl3bXhvB3kc">@JeremysITLab 026 Subnetting (Part 2) - Day 14</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=vl-Cp8bkzB8">@JeremysITLab 027 Subnetting (Part 3 - VLSM) - Day 15</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=bQ8sdpGQu8c">@JeremysITLab 028 Subnetting (VLSM) - Day 15 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=0nDqFGFkNqA">@JeremysITLab 029 VLANs (Part 1) - Day 16</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=m5cGCGkvBGk">@JeremysITLab 030 VLANs (Part 1) - Day 16 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=Oi7tcKJLyMY">@JeremysITLab 031 VLANs (Part 2) - Day 17</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=yqoNBkMeXHk">@JeremysITLab 032 VLANs (Part 2) - Day 17 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=acREnMMOhgw">@JeremysITLab 033 VLANs (Part 3) - Day 18</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=I2h6NMa1C_s">@JeremysITLab 034 VLANs (Part 3) - Day 18 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=7s-0fEyQGKk">@JeremysITLab 035 DTP/VTP - Day 19</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=5HYeaAlROgE">@JeremysITLab 036 DTP/VTP - Day 19 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=t6rlC_vMBbw">@JeremysITLab 037 Spanning Tree Protocol (Part 1) - Day 20</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=n-VWfNRBnPY">@JeremysITLab 038 Analyzing STP - Day 20 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=ij5XRmOkFEc">@JeremysITLab 039 Spanning Tree Protocol (Part 2) - Day 21</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=QMiPMQXuJSY">@JeremysITLab 040 PortFast (STP Toolkit) - CCNA 200-301 Day 21 (part 1)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=iVT1uIqpzYc">@JeremysITLab 041 BPDU Guard & BPDU Filter (STP Toolkit) - CCNA 200-301 Day 21 (part 2)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=S17RDh1VZyc">@JeremysITLab 042 Root Guard (STP Toolkit) - CCNA 200-301 Day 21 (part 3)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=X_EFMCcjsaA">@JeremysITLab 043 Loop Guard (STP Toolkit) - CCNA 200-301 Day 21 (part 4)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=dMdZC93JKWY">@JeremysITLab 044 Configuring STP (PVST+) - Day 21 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=zObNh3LkXLE">@JeremysITLab 045 Rapid Spanning Tree Protocol - Day 22</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=fcyUb60AKBE">@JeremysITLab 046 Rapid STP - Day 22 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=Xu2IbXPHiBE">@JeremysITLab 047 EtherChannel - Day 23</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=b72Rq7PSMEY">@JeremysITLab 048 Configuring EtherChannel - Day 23 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=pJTNZJAJ3WI">@JeremysITLab 049 Dynamic Routing - Day 24</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=f7gJEKyAyzM">@JeremysITLab 050 Floating Static Routes - Day 24 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=4SvH0u1HKAQ">@JeremysITLab 051 RIP & EIGRP - Day 25</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=6sJsLpMKwNk">@JeremysITLab 052 Configuring EIGRP - Day 25 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=AXlQIbwHVis">@JeremysITLab 053 OSPF Part 1 - Day 26</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=vXYXOWLbqWg">@JeremysITLab 054 Configuring OSPF (1) - Day 26 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=7pbDiQblSHs">@JeremysITLab 055 OSPF Part 2 - Day 27</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=lMeIhO17fG0">@JeremysITLab 056 Configuring OSPF (2) - Day 27 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=QX42TBXKnks">@JeremysITLab 057 OSPF Part 3 - Day 28</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=tHo6xrG01s4">@JeremysITLab 058 Configuring OSPF (3) - Day 28 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=jkQRwFCBaGI">@JeremysITLab 059 First Hop Redundancy Protocols - Day 29</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=EYqMiexXKNA">@JeremysITLab 060 Configuring HSRP - Day 29 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=7IS7gigunyI">@JeremysITLab 061 TCP & UDP - Day 30</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=7NWwrHmBEMM">@JeremysITLab 062 Wireshark Demo (TCP/UDP) - Day 30 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=JGkBf83kOKg">@JeremysITLab 063 IPv6 Part 1 - Day 31</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=uRvJkLc-1Qk">@JeremysITLab 064 Configuring IPv6 (Part 1) - Day 31 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=0gB_YT3NBLY">@JeremysITLab 065 IPv6 Part 2 - Day 32</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=h6IM0LDCEaE">@JeremysITLab 066 Configuring IPv6 (Part 2) - Day 32 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=9R3B0UL0VK4">@JeremysITLab 067 IPv6 Part 3 - Day 33</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=m0bZ2pqTCyU">@JeremysITLab 068 Configuring IPv6 (Part 3) - Day 33 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=N7Xa9iqYWmQ">@JeremysITLab 069 Standard ACLs - Day 34</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=UjEPp5eX5tA">@JeremysITLab 070 Standard ACLs - Day 34 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=t9nOcMgKxLQ">@JeremysITLab 071 Extended ACLs - Day 35</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=YuFJ3wkEKk8">@JeremysITLab 072 Extended ACLs - Day 35 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=M8pNuQ2GCf0">@JeremysITLab 073 CDP & LLDP - Day 36</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=wCyWRLMU0g4">@JeremysITLab 074 CDP & LLDP - Day 36 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=Lm4UMxKGCes">@JeremysITLab 075 NTP - Day 37</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=xLBFLjxiMkM">@JeremysITLab 076 NTP - Day 37 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=0mJRdlpBLU4">@JeremysITLab 077 DNS - Day 38</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=t2bqIbSmjfs">@JeremysITLab 078 DNS - Day 38 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=PiZ0Jjz-fqE">@JeremysITLab 079 DHCP - Day 39</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=t60OiKCH8do">@JeremysITLab 080 DHCP - Day 39 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=Ck2wpBqwMEo">@JeremysITLab 081 SNMP - Day 40</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=mHuaqHdSmUU">@JeremysITLab 082 SNMP - Day 40 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=tFQFnlbzYiI">@JeremysITLab 083 Syslog - Day 41</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=xBOgCRSyxhI">@JeremysITLab 084 Syslog - Day 41 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=ztj43A0YkDs">@JeremysITLab 085 SSH - Day 42</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=hQGKpzBMEsU">@JeremysITLab 086 SSH - Day 42 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=tOae8Rnez6U">@JeremysITLab 087 FTP & TFTP - Day 43</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=yxmZxn8Y-3s">@JeremysITLab 088 FTP & TFTP - Day 43 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=gELMTMGrCoI">@JeremysITLab 089 NAT (Part 1) - Day 44</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=v0iaBbsv8oc">@JeremysITLab 090 Static NAT - Day 44 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=F5OkEEkR3Uo">@JeremysITLab 091 NAT (part 2) - Day 45</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=sVj5drTWqv8">@JeremysITLab 092 Dynamic NAT - Day 45 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=sF4To_aFpSg">@JeremysITLab 093 QoS (Part 1) - Day 46</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=2gXpPJBv7hk">@JeremysITLab 094 Voice VLANs - Day 46 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=0e6mfvDgFAE">@JeremysITLab 095 QoS (Part 2) - Day 47</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=q3gWQe9KjDk">@JeremysITLab 096 QoS - Day 47 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=eKTi8RDq4c8">@JeremysITLab 097 Security Fundamentals - Day 48</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=OQGCBK9JKmE">@JeremysITLab 098 Kali Linux Demo - Day 48 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=o4oFALMxjEs">@JeremysITLab 099 Port Security - Day 49</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=zZwhrxKeGj8">@JeremysITLab 100 Port Security - Day 49 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=qYYeg2kz1yE">@JeremysITLab 101 DHCP Snooping - Day 50</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=YMom_e545H4">@JeremysITLab 102 DHCP Snooping - Day 50 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=HwbTKaIvL6s">@JeremysITLab 103 Dynamic ARP Inspection - Day 51</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=oLF2mbmYMAk">@JeremysITLab 104 Dynamic ARP Inspection - Day 51 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=PvyEcLhmNBk">@JeremysITLab 105 LAN Architectures - Day 52</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=BgIEhyoETgU">@JeremysITLab 106 STP & FHRP Synchronization - Day 52 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=BW3fQgdf4-w">@JeremysITLab 107 WAN Architectures - Day 53</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=_MMuU5viinM">@JeremysITLab 108 GRE Tunnels - Day 53 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=_S3greGajJA">@JeremysITLab 109 Virtualization & Cloud - Day 54 (part 1)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=K731pAS22Aw">@JeremysITLab 110 Containers - Day 54 (part 2)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=wYlRO_3AMBY">@JeremysITLab 111 VRF - Day 54 (part 3)</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=w_xGgMvCLV8">@JeremysITLab 112 Network Automation - Day 55</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=xTEbTrJcjAE">@JeremysITLab 113 EEM - Day 55 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=CuXbxdgV7zI">@JeremysITLab 114 JSON, XML & YAML - Day 56</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=p5vKFnzJkiE">@JeremysITLab 115 REST APIs - Day 57</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=FCJT6t-vInA">@JeremysITLab 116 Ansible, Puppet & Chef - Day 58</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=0F2_Bd82qak">@JeremysITLab 117 Software-Defined Networking - Day 59</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=UPaQBBb_j7s">@JeremysITLab 118 Cisco SD-Access - Day 59 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=rcFfIPYMFWQ">@JeremysITLab 119 How to Configure Wireless Networks - CCNA Day 60</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=o3FQHhNAqtE">@JeremysITLab 120 Wireless Configuration - Day 60 Lab</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=7WD5bnk8LzU">@JeremysITLab 121 Wireless Security - Day 61</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=h-LcgxBFOGk">@JeremysITLab 122 WPA3 - Day 61 Lab</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=RuzZvLnDFSA">@JeremysITLab 125 Network Assurance - Day 63</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=Wr6zIDq3fFc">@JeremysITLab 126 Network Assurance - Day 63 Lab</a>
+
+### @NetworkChuck
+
+<a target="_blank" href="https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P">@NetworkChuck</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=S7MNX_UD7vY">@NetworkChuck 01 What is a Network? Day 0</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=9eH16Fxeb9o">@NetworkChuck 02 What is a SWITCH? Day 1</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=p9ScLm9S3B4">@NetworkChuck 03 What is a ROUTER? EP 2</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=CRdL1PcherM">@NetworkChuck 04 what is TCP/IP and OSI? EP 3</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=3kfO61Mensg">@NetworkChuck 05 REAL LIFE example!! (TCP/IP and OSI layers) EP 4</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=oIRkXulqJA4">@NetworkChuck 06 how the OSI model works on YouTube (Application and Transport Layers) EP 5</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=wwwAXlE4OtU">@NetworkChuck 07 DO NOT design your network like this!! EP 6</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=6-66D9J5PkY">@NetworkChuck 08 Data Center NETWORKS (what do they look like??) EP 7</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=xPi4uZu4uF0">@NetworkChuck 09 WAN....it's not the internet!! (sometimes) EP 8</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=80vIin4xGp8">@NetworkChuck 10 let's hack your home network EP 9</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=37tyxaQbtN4">@NetworkChuck 11 you need to learn Hybrid-Cloud RIGHT NOW!! EP 10</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=y8h5qY3kwic">@NetworkChuck 12 forcing my kids to make Ethernet cables EP 11</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=MLxgmkRzgIQ">@NetworkChuck 13 why Power over Ethernet (PoE) is amazing!! EP 12</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=E3DEJ7odWq0">@NetworkChuck 14 fiber optic cables (what you NEED to know) EP 13</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=0W4JZIWtjLQ">@NetworkChuck 15 you NEED to learn Port Security…….RIGHT NOW!! EP 14</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=5WfiTHiU4x8">@NetworkChuck 16 what is an IP Address? You SUCK at Subnetting EP 1</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=tcae4TSSMo8">@NetworkChuck 17 we ran OUT of IP Addresses!!</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=8bhvn9tQk8o">@NetworkChuck 18 we're out of IP Addresses….but this saved us (Private IP Addresses)</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=2-i5x8KCfII">@NetworkChuck 19 i bet you can't do this (because you still suck at subnetting)</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=oZGZRtaGyG8">@NetworkChuck 20 What is a Subnet Mask??? (you NEED to know it!!)</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=bQ8sdpGQu8c">@NetworkChuck 21 let's subnet your home network You SUCK at subnetting EP 5</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=ecCuyq-Wpqu">@NetworkChuck 22 subnetting made easy (I promise) You SUCK at subnetting EP 6</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=VrLPPmwC-TM">@NetworkChuck 23 i bet you STILL can't subnet (but you will after this) You SUCK at subnetting EP 7</a></li>
+* <a target="_blank" href="https://www.youtube.com/watch?v=pomxrg8Gkyk">@NetworkChuck 24 STOP trying to memorize subnets!! You SUCK at subnetting EP 8</a></li>
+
+
+## Wireless
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=8gFvjVMLhcA">@JeremysITLab 123 Wireless Architectures - Day 62</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=EUJwALQP0Os">@JeremysITLab 124 Wireless Architectures - Day 62 Lab</a>
+* @Flock 37. Wireless Networking Fundamentals
+
+
+* @Flock: 3. Host to Host Communications
+* @Flock: 4. Cisco IOS Operating System
+* @Flock: 5. OSI Layer 4 - Transport
+* @Flock: 6. OSI Layer 3 - Network
+* @Flock: 7. IP Address Classes
+* @Flock: 8. Subnetting
+* @Flock: 9. OSI Layer 2 - Data Link
+* @Flock: 10. OSI Layer 1 - Physical
+* @Flock: 11. Cisco Device Functions
+* @Flock: 12. The Life of a Packet
+* @Flock: 13. Cisco Troubleshooting Methodology
+* @Flock: 14. Cisco Router and Switch Basics
+* @Flock: 15. Cisco Device Management
+
+* @Flock: 16. Routing Fundamentals
+* @Flock: 17. Dynamic Routing Protocols
+* @Flock: 18. Connectivity Troubleshooting
+* @Flock: 19. IGP Interior Gateway Protocol Fundamentals
+* @Flock: 20. OSPF - Open Shortest Path First
+* @Flock: 21. VLANs Virtual Local Area Networks
+* @Flock: 22. Inter-VLAN Routing
+* @Flock: 23. DHCP - Dynamic Host Configuration Protocol
+* @Flock: 24. HSRP - Hot Standby Router Protocol
+* @Flock: 25. STP - Spanning Tree Protocol
+* @Flock: 26. EtherChannel
+* @Flock: 27. Switch Security
+* @Flock: 28. ACLs - Access Control Lists
+* @Flock: 29. NAT - Network Address Translation
+* @Flock: 30. IPv6 Addressing and Routing
+* @Flock: 31. WAN - Wide Area Networks
+* @Flock: 32. The Security Threat Landscape
+* @Flock: 33. <strike>Cisco Device Security</strike>
+* @Flock: 34. Network Device Management
+* @Flock: 35. QoS Quality of Service
+* @Flock: 36. Cloud Computing
+
+* @Flock: 38. Network Automation and Programmability
+* @Flock: 39. AI Artificial Intelligence and Machine Learning
+
+
+
+## Q&A
 
 Question 17
 Which company developed and now owns Linux?
