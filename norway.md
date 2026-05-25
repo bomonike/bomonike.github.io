@@ -1,0 +1,1300 @@
+---
+layout: post
+date: "2026-05-24"
+lastchange: "26-05-24 v013 film @norway.md"
+url: https://bomonike.github.io/norway
+file: "norway"
+title: "Norway"
+excerpt: "Notes about the country, the language, the people, and their art."
+tags: [travel]
+image:
+# norway-trolltunga-1900x500.png
+  feature: https://res.cloudinary.com/dcajqrroq/image/upload/v1696947565/norway-trolltunga-1900x500_xgjfqb.png
+  credit:  Trolltunga, at the end of a 17 km long hike and waiting in line, by J-wildman
+  creditlink: Thinkstockphotos.com
+comments: true
+created: "2023-10-10"
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=unkUccQ31-w&t=1m30s">VIDEO</a>: <em lang="no">Hei</em> ("high") = Hello
+
+
+## The Most Northern
+
+The name "Norway" is rooted in the Old Norse <em lang="no">Norðr Vegr</em> which literally means “North Way,” indicating it's on the sailing route North up the Artic coast.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=bAGhXcYc0o4" title="Geography">VIDEO</a>: [Norway](https://en.wikipedia.org/wiki/Norway) is the northernmost point in Northern Europe at 71 degrees North, where Norway shares the Barents Sea with Russia.
+
+Half of Norway is North of the <strong>Arctic Circle</strong> at approximiately 66°33′49″ N near Tromsø where the sun doesn't set during the summer solstice (around June 21) and doesn't rise during the winter solstice (around December 21). The line shifts roughly 14.5 meters per year due to changes in Earth's axial tilt.
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1697033192/norway-map-602x750_c75ra1.jpg"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1697033192/norway-map-602x750_c75ra1.jpg"></a>
+
+On the map above (beyond the map's legend) are Norway's Spitsbergen and other islands on the Svalbard archipelago, which ranges from 74° to 81° north latitude and from 10° to 35° east longitude, as defined by the Svalbard Treaty of 1920. [<a target="_blank" href="https://www.wikiwand.com/en/Svalbard">WIKIWAND</a>] It has its own Internet TLD of .sj.
+
+
+## Image Compilations
+
+   * <a target="_blank" href="https://www.airvuz.com/video/Discover-Norway---A-100-days-journey?id=5aff5cfed260ed79c4e7225a&ccid=58cc29531e05002ae37543c8">Norwegian drone videographer Grim Berge spent 100 days to create this video</a>, which won many prizes.
+   * <a target="_blank" href="https://www.walmart.com/ip/Travel-Guide-Lonely-Planet-Norway-8-Edition-8-Paperback-9781787016088/280084875?wmlspartner=wlpa&selectedSellerId=0">BOOK: Lonely Planet Norway Edition 2018 $14.95 at Walmart</a>
+
+   * https://www.reddit.com/r/Norway/comments
+
+
+## Fjords
+
+<a target="_blank" href="https://www.etsy.com/listing/1504901231/norway-fjords-travel-poster-birthday"><img align="right" width="200" alt="norway-fjords-510x743.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1696934034/norway-fjords-510x743_jwmtyw.png"></a>
+<em lang="no">Fjord</em> is a Norwegian word. There are 1,190 fjords in Norway. The longest fjord is Sognefjord, which stretches 127 miles inland from the coast. The deepest is Sognesjøen, which is 4,291 feet deep. The narrowest is Nærøyfjord, which is only 820 feet wide at its narrowest point. The most popular fjord is Geirangerfjord. The most visited fjord is Nærøyfjord. They are designated among <a target="_blank" href="https://whc.unesco.org/en/statesparties/no">UNESCO World Heritage Sites</a> for protection. So several ports require only eco-friendly ships to protect the environment. 
+
+References:
+   * <a target="_blank" href="https://www.amazon.com/Footloose-Norway-Debra-Rixon/dp/B0B8T84X2F/ref=sr_1_1?crid=1DJMVO9GRDVIL&keywords=norway&qid=1697400187&s=instant-video&sprefix=norway%2Cinstant-video%2C200&sr=1-1">2 h 26 min VIDEO</a>: "Footloose in Norway" (2022) - A spectacular sunny journey between Oslo, the Fjords and Bergen, by UK filmmakers Debra and David Rixon. The feature length film Includes: a walking tour of glitzy Oslo and a visit to the Folk Museum; amazing scenic rail journeys on the Bergensbanen and Flamsbana; visiting Flam and the Viking Valley; a wonderful fjord cruise to Bergen; then a city tour visiting Grieg's home and the mountains.
+
+
+## Nordlys (Northern Lights)
+
+<em lang="no">Nordlys</em> = Norther Lights or, as the Romans call it, <a target="_blank" href="https://www.youcouldtravel.com/travel-blog/northern-lights-norway">Aurora Borealis</a>, are most visible in Fall/Winter when the nights are long and dark in "The Land of the Midnight Sun". End of August - April. But that's also when Norway has the most cloud cover and rain. 
+
+   * "My Aurora Forecast & Alerts" iPad app.
+   <br /><br />
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1698053665/noddlys-1413x404_lh62mb.png"><img alt="norway-imigrants-1774x1150.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1698053665/noddlys-1413x404_lh62mb.png"></a>
+There is a whole industry of Northern Lights time-lapse movies on YouTube:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=kWlu7tBAkNA">2023</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Y-GkMP8Twp4">2022 best places compared</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=3vHSq_lrUc8">Jim Zim's arials of Norwegian fjords</a>
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=miqbNFmbN2Q">among trees</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=2BKOuGeHAd0">2 hours in 4K Norway</a> 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=T75IKSXVXlc">2 hours in 4K</a> Alaska between 60-70N
+   * <a target="_blank" href="https://www.youtube.com/watch?v=VYc4glg5ctY&t=2m41s">Pablo's video</a> of the Northern Lights in Norway.
+   <br /><br />
+
+Tromsø is the "capital of Nordlys tourism". So it can also be the most expensive city in Norway.
+
+Due to the tilt of the earth, nights are short in summer (3-5 hours/night May-July) and long in Winter:
+
+<a target="_blank" href="https://www.youtube.com/watch?v=87i7Pva_Sao">VIDEO</a>: 
+<em lang="no">måned</em> = Months of the year, and
+<em lang="no">årstid</em> = <a target="_blank" href="https://norwegianacademy.com/learn-months-and-seasons-in-norwegian/">seasons</a> <a target="_blank" href="https://ielanguages.com/norwegian-seasons.html">Seasons</a>:
+* <em lang="no">om vinteren</em> = in Winter <em lang="no">vinter</em>
+   * <em lang="no">desember</em> = December
+   * <em lang="no">januar</em> = January
+   * <em lang="no">februar</em> = February
+* <em lang="no">om våren</em> = In Spring <em lang="no">vår</em>
+   * <em lang="no">mars</em> = March ("marsh")
+   * <em lang="no">april</em> = April
+   * <em lang="no">mai</em> = May
+* <em lang="no">om sommeren</em> = in Summer <em lang="no">sommer</em>
+   * <em lang="no">juni</em> = June
+   * <em lang="no">juli</em> = July
+   * <em lang="no">august</em> = August
+* <em lang="no">om høsten</em> = in Fall <em lang="no">høst</em>
+   * <em lang="no">september</em> = September (pronounced with twill for "er")
+   * <em lang="no">oktober</em> = October
+   * <em lang="no">november</em> = November
+   <br /><br />
+
+
+
+##  Norwegian Dates
+
+Most Norwegians speak English, but "they appreciate it when you try to speak Norwegian", unlike the French, who don't appreciate you butchering their language.
+
+Words in italics here identify Norwegian words.
+
+To better understand the Norwegian history and language, first view <a target="_blank" href="https://www.youtube.com/watch?v=8O5uGzJ9jQM&t=35s">VIDEO</a>: Royal lineage of Norwegian royalty, starting with King Harald Fairhair (872-931) based on Islandic sagas written hundreds of years later. 
+
+The official language of Norway was Danish during the 400 year union with Denmark until 1814 when Norway was ceded from Denmark to Sweden. 
+Then it was Swedish due to the 90 year union with Sweden until 1905. 
+Every year on May 17 <em lang="no">Syttende Mai</em> "Constitution Day" parades celebrate independence from Sweden (referenced in the opening of the TV series "Occupied").
+
+<a target="_blank" href="https://www.youtube.com/watch?v=TXVvCvQwFoo">VIDEO</a>:
+REMEMBER: Unlike in the US, Norwegians write <strong>dates with the day first</strong>, then the month, then the year. So 17 May 2023 is written as 17.05.23, with periods instead of slashes. 
+
+Notice days are spoken using <strong>ordinal</strong> format, such as "17th", just as American say "4th of July" for their Independence Day.
+   * <em lang="no">forste</em> =  first
+   * <em lang="no">andre</em> = second
+   * <em lang="no">tredje</em> = third
+   * <em lang="no">fjerde</em> = fourth
+   * <em lang="no">femte</em> = fifth
+   * <em lang="no">sjette</em> = sixth
+   * <em lang="no">syvende</em> = seventh
+   * <em lang="no">åttende</em> = eighth
+   * <em lang="no">niende</em> = ninth
+   * <em lang="no">tiende</em> = tenth
+   * <em lang="no">ellevte</em> = eleventh
+   * <em lang="no">tolvte</em> = twelfth
+   * <em lang="no">trettende</em> = thirteenth
+   * <em lang="no">fjortende</em> = fourteenth
+   * <em lang="no">femtende</em> = fifteenth
+   * <em lang="no">sekstende</em> = sixteenth
+   * <em lang="no">syttende</em> = seventeenth
+   * <em lang="no">attende</em> = eighteenth
+   * <em lang="no">nittende</em> = nineteenth
+   * <em lang="no">tjuende</em> = twentieth
+   * <em lang="no">tjueførste</em> = twenty-first
+   * <em lang="no">tjuetredje</em> = twenty-third
+   <br /><br />
+
+   * <em lang="no">ikke enda</em> = not yet
+   <br /><br />
+
+
+## Country Codes for Norway
+
+The mobile phone country code for Norway is +47.
+
+So that browser screen readers can pronounce them correctly, for accessibility, <strong>three</strong> <a target="_blank" href="https://www.w3.org/International/questions/qa-html-language-declarations">HTML language tags</a> can be used to designate words in the Norwegian language.
+
+Most common is the "no" also code used for Top-level domain (TLD) names on websites:
+
+   * <code>&lt;em lang="no"></code> <em lang="no">Norsk</em> <code>&lt;/em></code> ("nor-sk") for Norwegian.
+   <br /><br />
+
+The country Norway is also called by two other names:
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=WxW76FkhkgY&t=4m28s">VIDEO</a>: <code>&lt;em lang="nb"><em lang="nb">Norge</em>&lt;/em></code> ("nor-re-gay") in <em lang="nb">Bokmål</em> = literally "book language" <a target="_blank" href="https://www.wikiwand.com/en/Bokm%C3%A5l">WIKIWAND</a>:, It's highly influenced by Danish, used by 85% of the population. Written Bokmål is regulated by the governmental <a target="_blank" href="https://www.wikiwand.com/en/Language_Council_of_Norway">Language Council of Norway</a>. 
+  
+   * <a target="_blank" href="https://www.youtube.com/watch?v=WxW76FkhkgY&t=4m28s">VIDEO</a>: <code>&lt;em lang="nn"><em lang="nn">Noreg</em>&lt;/em></code> in <em lang="no">Nynorsk</em>. <em lang="no">Nynorsk</em> or neen-norsk = New Norwegian.
+   New Norwegian was created as an alternative to Danish by Ivar Aasen, who traveled throughout as an alternative to Danish to collect words in the 1800s. It is used in 4 of the 19 Norwegian counties, by 10% of the population, as many don't want to study it.
+   <br /><br />
+
+
+## Norwegian money
+
+<a target="_blank" href="https://www.youtube.com/watch?v=8O5uGzJ9jQM&t=2m15s">VIDEO</a>: <em lang="no">Penger</em> (peng-er) = Money. 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=FpvN2OBkHGk">VIDEO</a>: Along with Iceland, Switzerland, and UK, Norway opted out of the EU (and its Common Fisheries Policies) in 1972 and 1994. So instead of EU currency, <strong>Norwegian Krona (NOK) currency</strong> (different from Danish Krona) is used in Norway.
+
+PROTIP: You won't need much paper currency in Norway because almost everyone uses credit cards. But you will need coins for public toilets and paper currency for tipping.
+   * 1 US dollar = 10.820 kroner as of 23.10.10, and <a target="_blank" href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=NOK">USD getting stronger since 10.0 on July 2023</a>.
+   <br /><br />
+
+Norway is among the 11 "first mover" countries (with Singapore, Estonia, and others) to adopt DPI (Digital Public Infrastructure) toward a global digital ID and currency as part of the <a target="_blank" href="https://www.undp.org/news/11-first-mover-countries-launch-50-5-campaign-accelerate-digital-public-infrastructure-adoption-around-world">"50 in 5" initiative by the UN</a>. 
+
+The 25% VAT (value-added tax) is included in the price of everything in Norway. 
+
+The price of a McDonald's Big Mac in Norway is $6.92 USD, the second highest in the world vs. Switzerland $7.73 and $5.58 in the US.
+
+So there is no need to tip. But you can tip 5-10% for good service.
+
+   * <a target="_blank" href=""><em lang="no">Hvor mye koster dette?</em></a> = Live on air and love
+   * <em lang="no">Hvor mye koster dette?</em> = How much does this cost?
+   * <em lang="no">en prisa</em> = a price
+   <br /><br />
+
+PROTIP: It takes up to 6 months to open a bank account in Norway.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=WxW76FkhkgY&t=3m17s">VIDEO</a>: <em lang="no">Penger</em> (peng-er) = Money. Etiquette from a fictional "Law of Jante" = Don't think you're better than anyone else.
+   * Don't talk about money
+   * Don't brag about yourself.
+   * Don't compare yourself (your country, etc.) to others.
+   <br /><br />
+
+To me, such culture is why Norway has such strong democracy and equality.
+
+In the 1970s, Norway became one of the wealthiest countries in the world due to its oil reserves, operated by state-run Statoil renamed later to Equinol. Unlike other countries, where oil companies plundered resources, Norway ensured that 50% of revenues from oil production went into a sovereign wealth fund, which is now worth over $1 trillion. So at $330,000 for each of $5 million people, Norway has the highest per capita pension fund in the world. <em lang="no">Satens Pensjonsfond Utland</em> = Government Pension Fund Global.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=8O5uGzJ9jQM&t=1m30s">VIDEO</a>: <em lang="no">Olje</em> (oil-ya) = Oil. <em lang="no">Oljeplattform</em> = Oil platform. <em lang="no">Oljefondet</em> = Oil fund. <em lang="no">Oljepenger</em> = Oil money. <em lang="no">Oljeproduksjon</em> = Oil production. <em lang="no">Oljepris</em> = Oil price. <em lang="no">Oljereserver</em> = Oil reserves. <em lang="no">Oljere</em>
+
+In the 2000s, Norway's oil production peaked and has been declining since. So Norway has been investing its oil money in other industries, such as <em lang="no">fornybar energi</em> = renewable energy. A large percentage of Norway's electricity is generated by <em lang="no">vannkraft</em> = hydropower. Norway is building the world's largest wind farm in the North Sea.
+
+<a target="_blank" href="https://youtube.com/shorts/wk2lhP4EJrY/">VIDEO</a>
+In 2022, large deposits of <em lang="no">lithium</em> were discovered in Norway, which is used in batteries for electric cars. 
+Norway also invest in <em lang="no">elbiler</em> = electric cars.
+
+
+## Norwegian numbers
+
+Linguists call the Norwegian language "North Germanic".
+
+The Celsius scaled is named for the Swedish astronomer Anders Celsius, who developed the scale in 1742.
+
+In Norway, as in Germany, numbers are separated differently tha English and Americans. 
+So $1,000.50 USD in Norway is written as 1.000,50.
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=unkUccQ31-w&t=50s">Count 1-10,0</a>: Nummeret mitt er ... en, to, tre, fire (firaa), fem, seks, sjv (sieve), åtte (akta), ni, ti, null (noo)
+* <a target="_blank" href="https://www.youtube.com/watch?v=X-pB3s0N_6o">11-100</a>
+
+BTW <a target="_blank" href="https://www.ssb.no/befolkning/artikler-og-publikasjoner/_attachment/103718?_ts=13d6d5b6cc8">PDF</a>: "Norway avoided population decline due to immigration".
+
+In 2023 the population of Norway was 5,488,984. But there are as many of Norwegian descent in the US and Canada. 
+<a target="_blank" href="https://www.wikiwand.com/en/Norwegian_diaspora">Norwegian emigration to America</a>  began in 1825, especially the states of Wisconsin and Minnesota. According to scholar Daniel Judah Elazar, "It was the Norwegian diaspora in the United States which initiated the separation of Norway from Sweden, which led to Norwegian independence in 1905." As of 2006 there are over 5,000,000 Americans who claim Norwegian descent. In Canada in a 2006 survey, 432,515 Canadians reported Norwegian ancestry.
+
+
+## Neighbors to Norway
+
+Norway is among <a target="_blank" href="https://en.wikipedia.org/wiki/Scandinavia">Scandinavian countries</a> (with Denmark, Finland, Sweden). 
+
+Norway is one of the <a target="_blank" href="https://www.wikiwand.com/en/Nordic_countries">Nordic countries</a>, which also includes Denmark, Finland, Iceland, and Sweden as well as the autonomous territories of the Faroe Islands and Greenland; and the autonomous region of Åland.
+
+Norway is also a part of the <a target="_blank" href="https://www.wikiwand.com/en/Nordic_Council">Nordic Council</a>, an intergovernmental body that promotes cooperation among the Nordic countries. 
+
+Norway is also a member of the <a target="_blank" href="https://www.wikiwand.com/en/Council_of_Europe">Council of Europe</a> and the <a target="_blank" href="https://www.wikiwand.com/en/North_Atlantic_Treaty_Organization">North Atlantic Treaty Organization</a> (NATO) military alliance (with the US).
+
+Along with Iceland, Switzerland, and Lichtenstein, Norway in 2001 joined as a "Non-EU" country the <a target="_blank" href="https://www.worldtrips.com/schengen-visa/countries">Schengen visa-free zone</a> established in 1990. Cyprus, Ireland, and the United Kingdom opted out. So citizens of the US, Canada, Australia, New Zealand, and the UK can stay in Norway or other Schengen countries for up to 90 days without a visa. 
+
+
+### Norwegian websites & VPN
+
+The largest media organization in Norway is the free government-owned radio and television broadcasts from <a target="_blank" href="https://www.wikiwand.com/en/NRK">NRK</a>, with regional programming such as “Dagsnytt”, “Dagsrevyen”, and “Urix”. There is also privately-funded TV3 in 1987 and TVNorge in 1988, TV 2 in 1992.
+
+"no" is both Norway's country code top-level domain (ccTLD) and the ISO 3166-1 alpha-2 country code:
+   * <a target="_blank" href="https://www.nrk.no/"><strong>https://nrk.no</strong></a> is NRK's website.<br />
+   * <a target="_blank" href="https://tv.nrk.no/">https://tv.nrk.no</a> is NRK's TV channel.
+   <br /><br />
+
+“<em lang="no">Ikke tilgjengelig utenfor Norge</em>” roughly translates to “Not available outside of Norway” is the greeting when those outside Norway try to access it.
+
+PROTIP: Outside Norway, use a VPN, which gives you an IP address within Norway. NordVPN has dozens of servers in Norway. It also works with Netflix. No-logs VPN with 24/7 support and a risk-free 30-day money-back guarantee.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=mh5j0Z-Mvqs&t=2m15s">VIDEO</a>:
+NRK broadcasts in both Bokmål and Nynorsk. 
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=94j13irz3RI&list=PLCs4Ok_gDn3OsjkUdzWMr5VXS-gjWMcnP&index=1">Norwegian children's songs</a> and <a target="_blank" href="https://www.mamalisa.com/?lang=Norwegian&t=el">rhymes</a>
+
+* In the 1840s, Per Christian Asbjørnsen og Jørgen Moe traveled among Norwegian villages and recorded over 100 local folk tales, which they put in their book <em lang="no">Norske Folkeeventyr</em>. 
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=MM7AolhLuOM&list=PL6HCr1WuCUS2o0a_dSHgNeqZSEbC6DOXb&index=25">Worship songs</a> <a target="_blank" href="https://www.youtube.com/watch?v=sEGz-xkVXa0">Verdig = Worthy by Implus</a>, <a target="_blank" href="https://www.youtube.com/watch?v=RH4X-sx0QYQ">Lovsång</a>, <a target="_blank" href="https://www.youtube.com/watch?v=oJF0pw_-8sE&list=PLsPXB3hLB1ufLHNJ_C0KCa8jkzIFqtQTM&index=5">Juletide</a>
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=DH3vi7Av5Vs">Norwegian folk songs</a> <a target="_blank" href="https://www.youtube.com/watch?v=PWH3hLXaTgw">Part 2</a>
+
+* https://www.ingebretsens.com/barnefest-norwegian-songs-for-all-ages
+
+
+## Norwegian alphabet
+
+PROTIP: Knowing how to sound out place names and menu items enables you to feel more at ease visiting a country.
+
+Norwegians use the Dano-Norwegian alphabet of 29 letters since 1917 (Norwegian) and 1948 (Danish).
+
+   * https://www.wikiwand.com/en/Help:IPA/Norwegian
+   <br /><br />
+
+The 29-letter Norwegian alphabet has <strong>three extra vowels</strong> not in the 26-letter English alphabet.
+
+On an iPhone, hold down on a letter to see the accented versions of the letter.<br />   
+On a Mac hold down Option key while pressing another key: For upper-case, hold down Shift key as well
+   * <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710417"><img alt="say" width="18" height="18" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1697900107/sound-icon-564x564_hjxivp.jpg"></a> oe = Option + o for ø - plus Shift for Ø - pronounced like the ur in "turn" or "bleu" - with rounded lips and tongue on lower teeth.
+   * <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710452"><img alt="say" width="18" height="18" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1697900107/sound-icon-564x564_hjxivp.jpg"></a><a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710482"> aa</a> = Option + a for å - plus ???  - like the o in "lord" (like "awe" in "awesome", "always")
+   * <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710452">ae</a> = Option + ‘ (single quote) for æ - plus shift for Æ  - pronounced like the a in "sad"
+   <br /><br />
+
+The Swedish letter å officially replaced aa in Norwegian in 1917. 
+While most words now use å, personal names and historic places often retain ‘aa' due to tradition.
+
+For quotes symbols:
+   * option + \ (backslash) for « (left angle quote)
+   * Option + Shift + \ (backslash) for » (right angle quote)
+   <br /><br />
+
+Pronounce: <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/42229168">A</a>
+   * <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710476">A</a> like the a in "father" or "dark" - with mouth open (never like in "and")
+   * E sounds like "seven" with a forced smile A[4:17]<a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710460">+</a>
+   * ER sounds like "air" as if "Erna" in "Aerna" A[4:41]
+   * I sounds like e as the i in "listen" A[1:48] written as <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710795">EI / EG</a> ("eye-yee")
+   * <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710693">O</a> sounds like the beginning of English W A[3:18] - Oslo, Ove, opera, pose, kone, sol or short in lomme, nummer
+   * U 
+   * Sometimes we write norw: U but we say norw : O. A[3:14]
+
+   * <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710486">TJ/KJ</a> sounds like "sh" as in "shoe"
+   <br /><br />
+
+For Umlauts (like in German):
+   * Option + e plus the letter for ë
+   * Option + i plus the letter for ï 
+   * Option + u plus the letter for ü 
+   <br /><br />
+
+Consonants immediately following the vowel change the pronunciation of the vowel:
+   * A single consonant gives the vowel a longer sound.
+   * A double consonant gives the vowel a shorter sound. 
+
+   * <a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/1710680">L</a> in alle, hele, tolv, fylle, føle, lam, lære, låne, liv (tongue touch upper teeth rather than English) 
+   <br /><br />
+
+The letters c, q, w, x, and z are almost never used in Norwegian words.
+   * C as an s sound
+   <br /><br />
+
+   * Y - shape your mouth as if you are about to say “ooooh”, but say “eeee.” 
+   <br /><br />
+
+Silent letters A[5:02]
+   * h is not pronounced in hva
+   * g is not pronounced in gjør nor in færdi nor in og [å]
+   * t is not pronounced in det
+   <br /><br />
+
+
+### Norwegian Phrases
+
+PROTIP: <a target="_blank" href="https://www.youtube.com/watch?v=0zKU7jDA2nc">VIDEO</a>: Use the Google Translate mobile AI app to show the translation of Norwegian text and road signs, in real-time. 
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=uWQYqcFX8JE&t=4m41s">VIDEO</a>: by <a target="_blank" href="https://www.instagram.com/norwegian.with.ilys/">Ilyas</a>: "I learned Norwegian by using Goolge to translate what the teenage girls in the show <a href="#Skam">Skam</a> text each other".
+   <br /><br />
+
+For your safety:
+
+   * <em lang="no">Stans! / Stopp!</em> = Stop!
+   * <em lang="no">Fare!</em> = Danger!
+   * <em lang="no">Pass på!</em> = Watch out!
+   * <em lang="no">Forsiktighet</em> = Caution
+   * <em lang="no">Ikke gå dit</em> = Don't go there
+
+   * <em lang="no">Brann!</em> = Fire!
+   * <em lang="no">Politi!</em> = Police!
+   * <em lang="no">Ambulanse!</em> = Ambulance!
+   * <em lang="no">nødsituasjon</em> = emergency
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=B2pT7k9Iwqs">VIDEO</a>: You look like a sporty guy. Can you help me?
+   * <em lang="no">Hjelp!</em> = Help!
+   * <em lang="no">Jeg trenger hjelp</em> = I need help
+   <br /><br />
+
+<a target="_blank" href="https://ielanguages.com/norwegian-phrases.html">Greetings</a>:
+   * <em lang="no">Hallo / God dag</em> = Hello / Good Day
+   * Hei / Ha det Hi / Bye
+
+   * God morgen Good Morning
+   * God kveld Good Evening
+   * God natt Good Night
+
+   * Hyggelig å treffe deg! Pleased to meet you!
+   <br /><br />
+
+<a target="_blank" href="https://www.youtube.com/watch?v=-yx18SZM3bQ&t=32s">VIDEO</a>: Most question words start with <em lang="no">h</em> but it's silent:
+   * <em lang="no">hvem</em> = who?
+   * <em lang="no">hva</em> = what?
+   * <em lang="no">når</em> = when?
+   * <em lang="no">hvor</em> ("wood") = where? as in <em lang="no">Hvor er de?</em> = Where are they?
+   * <em lang="no">hvorfor</em> = why?
+   * <em lang="no">hvordan</em> = how?
+
+   * <em lang="no">hvilken</em> = which (singlar male or female)?
+   * <em lang="no">hvilket</em> = which (singular neutral)?
+   * <em lang="no">hvilke</em> = which (plural)?
+   <br /><br />
+
+<a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/486160">Pronouns</a>:
+   * <em lang="no">jeg</em> for I ("yai") as in <em lang="no">Jeg heter</em> (I am called)
+   * <em lang="no">du</em> for one person 
+   * <em lang="no">dere</em> for several persons, pronounced with a twill
+   * <em lang="no">de</em> for they
+   * <em lang="no">vi</em> for we
+   * <em lang="no">han</em> for he
+   * <em lang="no">hun</em> for she
+   <br /><br />
+
+   * Jeg heter... My name is... (I am called...)
+   * Jeg er fra... I'm from...
+   * Jeg er ____ år (gammel). I am ____ years (old)
+
+   * Hva heter du? What's your name?
+   * Hvor kommer du fra? Where are you from?
+   * Hvor gammel er du? How old are you?
+
+   * <em lang="no">Snakker du norsk?</em> ("snuck...") = Do you speak Norwegian?
+   * <em lang="no">Jeg snakker ikke norsk</em> = I don't speak Norwegian
+   * <em lang="no">Jeg forstår ikke</em> = I don't understand
+   * <em lang="no">Kan du snakke engelsk?</em> = Can you speak English?
+   * <em lang="no">Jeg snakker engelsk</em> = I speak English
+
+   * <em lang="no">Snakk langsomt</em> Speak slowly
+   * Ja / Nei Yes / No
+   * <em lang="no">litt</em> = a little	
+
+   * Hvordan går det? How it's going?
+   * Bra / Dårlig Good / Bad
+   * Jeg vet [ikke.] I [don't] know.
+   <br /><br />
+
+Total Physical Response (TPR) is a language learning method based on the coordination of language and physical movement. 
+   * Eat, Drink
+   * Read, write
+   * Sit, Stand, Walk, Run, Drive
+   <br /><br />
+
+
+### Learning Norwegian
+
+Instead of learning phrases, dive in by reading a coherent, engaging story -- the <a target="_blank" href="https://skapago.teachable.com/p/norwegian-course-for-beginners?affcode=26285_ti33taz2">"The Mystery of Nils"</a> -- to learn Norwegian grammar on video and <a target="_blank" href="https://soundcloud.com/skapago/the-mystery-of-nils-chapter-1">Soundcloud</a> along the way. For USD $27 per month. Individual training on Skype is available (at an additional cost)
+
+<ul>"Erna Langvik gives her eight-year-old granddaughter a special birthday present: Nils, a doll inspired by a traditional Norwegian mythical creature. Nils leads a happy life with his new family in Oslo. But after an accident, Nils finds out that he means a lot more to Erna than just being a birthday present. Without knowing it, he has been carrying a painful secret, and during an adventurous trip to Northern Norway, he helps Erna to make one of the most important decisions of her life."
+</ul>
+
+   * Children's books and cartoons use simple language.
+
+   * <a target="_blank" href="https://www.lifeinnorway.net/learn-norwegian-with-ai/">How AI can help you learn Norwegian</a> <a target="_blank" href="https://www.youtube.com/watch?v=BxzKkCRBBOI">ChatGPT</a>
+   * Travel magazines (such as Sunset magazine)
+
+   * <a target="_blank" href="https://www.folkeuniversitetet.no/en/courses-in-english/norwegian-courses/">FolkUniversitet.no</a> 48 hours of on-site or online courses for NOK 6,670.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=FIC1pfcCmiQ">Learn Norwegian in 30 Minutes - ALL the Norwegian Grammar Basics You Need</a>
+
+   <br /><br />
+
+iPhone mobile apps for translation and learning:
+   * <a target="_blank" href="https://apps.apple.com/us/app/wordful-norwegian/id1663215267">Wonderful Norwegian (Made for Beginners)</a>
+Mac app:
+   * <a target="_blank" href="https://apps.apple.com/us/app/emme-norwegian/id1500221654">Emme Norwegian</a>
+
+Android mobile apps for translation and learning:
+   * https://play.google.com/store/apps/details?id=no.nrk.tv&hl=en_NZ&pli=1
+   <br /><br />
+
+For vocabulary memorization to 2,000 words:
+   * Babbel.com has a Norwegian course on mobile phones: https://www.babbel.com/mobile
+   * RosettaStone is boring because it misses the people, conversation
+   * Duolingo is free but not very effective
+   * Quizlet.com has flashcards
+   * Anki
+   <br /><br />
+
+* Tandem and HelloTalk helps you find people who trade languages.
+
+
+### Dialects
+
+In 2020 Norway consolidated into 17 counties (<em lang="no">fylker</em>), 356 municipalities (<em lang="no">kommuner</em>), and 11 cities (<em lang="no">byer</em>).
+
+Roughly speaking, five groups can be distinguished: 
+   * Trøndersk (in Trøndelag, a part of central Norway around the city of Trondheim), 
+   * Bergensk, 
+   * Trøndelag (Central Norway), 
+   * Bergen (SW) treats feminine nouns as masculine.
+   * Oslo (Eastern Norwegian)
+   <br /><br />
+
+"The difference between the Dano-Norwegian and the Swedish alphabet is that Swedish uses the variant Ä instead of Æ, and the variant Ö instead of Ø, similarly to German. Also, the collating order for these three letters is different in Swedish: Å, Ä, Ö. Æ and Ä are sorted together in all Scandinavian languages, as well as Finnish, and so are Ø and Ö.
+
+"The letters c, q, w, x and z are not used in the spelling of indigenous words. They are rarely used in Norwegian, where loan words routinely have their orthography adapted to the native sound system. Conversely, Danish has a greater tendency to preserve loan words' original spellings. In particular, a c that represents/s/is almost never normalized to s in Danish, as would most often happen in Norwegian. Many words originally derived from Latin roots retain c in their Danish spelling, for example Norwegian sentrum vs Danish centrum.
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=lsgvREC317U">VIDEO: Norwegian Pronunciation - Some of the basics</a> by the Norwegian University of Science and Technology
+
+* <a target="_blank" href="https://www.youtube.com/@NorwegianClass101">VIDEO: Learn Norwegian free channel</a>:
+* <a target="_blank" href="https://www.youtube.com/watch?v=WxW76FkhkgY">Favoirte words</a>
+   * venn = friend  as in <em lang="no">Du er en god venn</em>
+* <a target="_blank" href="https://www.youtube.com/watch?v=unkUccQ31-w">manners in 3 minutes</a>
+   * Takk = Thanks (less formal)
+   * Tusen Takk = A thousand Thanks
+   * Velbekomme = You are welcome
+   * Bare hyggelig = with pleasure
+   * unnskyld  = excuse me
+   <br /><br />
+
+To be allowed residency, proficiency in Norwegian is required at the A1 Beginner level.
+There are also A2 (pre-intermediate), B1 & B2 Intermediate, and C1 Advanced.
+<a target="_blank" href="https://skapago.teachable.com/courses/34228/lectures/518953">Levels of skill</a>: 
+   * Jeg snakker bare litt norsk = I speak only a little Norwegian.
+   * Jeg forstår ikke = I don't understand.
+   * Kan du gjenta? = Can you repeat?
+   * Hva betyr ... på engelsk? = What does ... mean in English?
+   <br /><br />
+
+   * <em lang="no">Hvordan går det?</em> (vor-dan gor de) = How are you?
+
+Norway was the first country to announce a complete switch-off of national FM radio stations. 
+DAB+ radio receivers are required on all new cars sold in Norway since 2017.
+
+<a target="_blank" href="https://www.nrk.no/ytring/triks-for-nye-nordmenn-1.14990898">Tricks for new Norwegians: Get a dog</a> <em lang="no">en hund [hunn]</em>
+
+
+## Norwegian Cinema
+
+<a target="_blank" href="https://www.imdb.com/search/title/?title_type=feature&primary_language=no&sort=moviemeter,asc">IMDB's list of Norwegian movies</a>
+
+In Alfred Hitchcock's "North by Northwest", there’s a sequence at the U.N. where two characters are speaking to each other in [air quotes] Norwegian. Norwegians recognize the dialog as gibberish. At the beginning of Hitchcock’s Torn Curtain (1966), two ship’s officers on a ship in a Norwegian fjord converse in a faked, partial Norwegian.
+
+
+Dubbed in English for the US:
+
+<a target="_blank" href="https://www.wikiwand.com/en/Cinema_of_Norway">Cinema_of_Norway</a>:
+   * Cristian Mungiu‘s Fjord, the Romanian director’s English-language debut starring Renate Reinsve and Sebastian Stan as Romanian religious parents who relocate to a small Norwegian village and find themselves accused of child abuse, won the Palme d’Or at the 79th Cannes Film Festival in 2026.
+   * Frozen Disney   
+   * <a target="_blank" href="https://www.justwatch.com/us/movie/the-headhunters">Headhunters (2011)</a> <a target="_blank" href="https://www.wikiwand.com/en/Headhunters_(film)">WIKIWAND</a> - the highest-grossing Norwegian film in history. Filmed in Germany, Denmark, Norway, Sweden.
+   * <a target="_blank" href="https://www.justwatch.com/us/movie/eurovision-song-contest-the-story-of-fire-saga">Eurovision Song Contest: The Story of Fire Saga (2020)</a> on Netflix
+   * https://www.wikiwand.com/en/Elling
+   * <a target="_blank" href="https://www.justwatch.com/us/movie/trolls">Trolls</a> (2016) Dreamworks $3.79 rent
+   * <a target="_blank" href="https://www.justwatch.com/us/movie/trolls-world-tour">Trolls World Tour</a> (2020) Dreamworks $3.79 rent
+
+On Freevee (with commercials):
+   * <a target="_blank" href="https://www.imdb.com/title/tt10147580/">"Three Wishes for Cinderella"</a> <em lang="no">Tre nøtter til Askepott</em> (2021) "A Cinderella story: in snow-heavy forests the heroine battles against her evil stepmother for her dream of meeting the handsome prince. This is a breathtaking ride featuring brilliant archery and a gorgeous palace ball."
+   * <a target="_blank" href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.6b77eddd-ccc5-411b-8397-453e784bc4d0?ref=imdb_web&autoplay=1&ref_=imdbref_tt_wbr_fdv&tag=imdbtag_tt_wbr_fdv-20">Magrete: Queen of the North</a> (2021) Filmed in the Czech Republic. "1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union."
+
+   * <a target="_blank" href="https://www.justwatch.com/us/movie/the-ash-lad-in-the-hall-of-the-mountain-king">INFO</a>: <a target="_blank" href="https://www.youtube.com/watch?v=l68a7v4u8MM">Transcript</a>: <a target="_blank" href="https://www.amazon.com/gp/video/detail/0O2SQ8GVDHMMI7GZ36KFY4GRVN/ref=atv_dl_rdr?tag=justus1ktp-20">The Ash Lad: In the Hall of the Mountain King (2017)</a>  "Espen "Ash Lad", a poor farmer's son, embarks on a dangerous quest with his brothers to save the princess from a vile troll known as the Mountain King - in order to collect a reward and save his family's farm from ruin."
+   * <a target="_blank" href="https://www.justwatch.com/us/movie/the-ash-lad-in-the-hall-of-the-mountain-king">INFO</a>: <a target="_blank" href="https://www.amazon.com/gp/video/detail/0PM94Q8IKGVII5YEMY399YBGKC/ref=atv_dl_rdr?tag=justus1ktp-20">The Ash Lad: In Search of the Golden Castle (2019)</a> "When the King and Queen are poisoned, brothers Per and Pål are arrested as suspects. Younger brother Espen "The Ash Lad" and Princess Kristin set out on a quest to find the mythical Soria Moria castle, said to be built of pure gold and contain the Water of Life, which can cure Kristin's parents. If they fail, it will spell the end for the brothers, the kingdom, and perhaps the entire world."
+   * <a target="_blank" href="https://www.amazon.com/gp/video/detail/0PUQJCVQFYPXH22QY4Q8A7VVSD/ref=atv_dl_rdr?tag=justus1ktp-20">The Shamer's Daughter</a> 2016                                                               Filmed in Denmark, Iceland, Norway, Sweden, Czech Republic. "The Shamer's daughter, Dina, has unwillingly inherited her mother's supernatural ability. She can look straight into the soul of other people, making them feel ashamed of themselves. The sole heir to the throne is wrongfully accused of the horrible murders of his family. It is now up to Dina to uncover the truth of the murders, but soon she finds herself whirled into a dangerous power struggle."
+
+   <a name="Skam"></a>
+
+   * <a target="_blank" href="https://skam.p3.no/">Skam</a> (<a target="_blank" href="https://www.dailymotion.com/englishskam">English: Shame</a>) (TV 2015-2017) "The story of young teenagers and pupils on Hartvig Nissens upper secondary school in Oslo, and their troubles, scandals and everyday life. Each season is told from a different person's point of view." <a target="_blank" href="https://tv.nrk.no/serie/skam">WATCH</a>.  Each character also had real social media accounts, which allowed fans to follow along and interact based on those “real-time” snippets. The show was so popular that it was remade in the US, France, Germany, Italy, Spain, and the Netherlands.
+   <br /><br />
+
+On Hulu:
+   * <a target="_blank" href="https://www.hulu.com/movie/e30177ce-5201-402d-a346-6333ca2fe5b8">The Worst Person in the World (2021)</a> R-rated dramady "Chronicling four years in the life of Julie, this modern story about the quest for love and meaning explores a young woman’s navigation of the troubled waters of her love life and career path."
+   <br /><br />
+
+On Amazon Prime:
+   * <a target="_blank" href="https://www.amazon.com/gp/video/detail/0SGFY8ZDUROEDXCLS5IW73FZWA/ref=atv_dl_rdr?tag=justus1ktp-20">Betrayed</a> 2021 "During World War II, millions of Jews are deported and killed in German concentration camps. "Betrayed" is based on the true story about the Braude family. An ordinary Norwegian family whose fate is sealed by the fact that they are Jews."
+   * <a target="_blank" href="https://www.imdb.com/title/tt19705884/">Good Boy</a> (Dark) Christian - a millionaire heir, meets Sigrid - a young student, on a dating app. They hit it off quickly, but there's only one problem: Christian lives with Frank, a man who dresses up and constantly acts like a dog."
+   
+   * <a target="_blank" href="https://www.amazon.com/Wave-Kristoffer-Joner/dp/B01CKAGVUU/ref=sr_1_1?crid=4Q4Z4RQP74WS&keywords=the+wave&qid=1697399993">The Wave (2015)</a> "Geologist Kristian Elkjord senses something wrong with the mountain that overlooks his scenic town. When a landslide sends tons of rock and earth crashing into the water, everyone has ten minutes to outrace the resulting tsunami to higher ground."
+   * <a target="_blank" href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.b8b3cc9e-ca45-e9a7-136d-aba7ee2c84cc">The Quake</a> (2018) "After surviving The Wave, Kristian Eikjord and his family find themselves at the center of an earthquake. Kristian makes a perilous attempt to help his family and others escape a crumbling skyscraper."
+   <br /><br />
+
+On Netflix:
+   * <a target="_blank" href="https://www.justwatch.com/us/tv-show/occupied">INFO</a>: <a target="_blank" href="https://www.netflix.com/watch/80092722?trackId=255824129"><strong>Occupied</strong></a> (<em lang="no">Okkupert<em>) (3 seasons) English subtitles! "In the near future, Norway is occupied by Russia on behalf of the European Union, due to the fact that the newly elected environmental-friendly Norwegian government has stopped the all important oil- and gas-production in the North Sea."
+
+   * <a target="_blank" href="https://www.netflix.com/title/81643922">War Sailor</a> (series) "When WWII erupts, two sailors on a Norwegian merchant ship face brutal conditions as they fight to survive a conflict they were never asked to join. Based on true stories of Norwegian merchant sailors and their families during and after World War II."
+   * <a target="_blank" href="https://www.netflix.com/watch/70222562?trackId=253863245">Lilyhammer</a> Steven Van Zandt plays a mobster who enters the witness protection program and moves to Lillehammer, Norway. 3 seasons. (Steven is also a member of Bruce Springsteen's E Street Band)
+   * <a target="_blank" href="https://www.netflix.com/browse/m/genre/81422105?jbv=81166149">Narvik</a> 
+   * <a target="_blank" href="https://www.netflix.com/browse/m/genre/81422105?jbv=81166149">Vikings Valhalla</a> "11th century Europe: The exploits of the great viking Ragnar Lothbrok have faded into legend"...
+   * <a target="_blank" href="https://www.justwatch.com/us/movie/22-july">22 July</a> On that day in 2011, a neo-Nazi terrorist (who wanted muslims out of Norway) murdered 77 young people attending the Labour Party Youth Camp on Utøya Island 40km West of Oslo. This three-part story focuses on the survivors, the political leadership of Norway, and the lawyers involved."
+   * <a target="_blank" href="https://www.netflix.com/title/80131415">Nobel</a>
+   * <a target="_blank" href="https://www.wikiwand.com/en/Norsemen_(TV_series)">Norsemen</a> 2016 comedy series originally premiered in Norway under the name Vikingane (The Vikings) on NRK1 in October 2016. Recorded simultaneously in both Norwegian and English-language versions by filming each scene twice. Set in 790.
+   
+   * <a target="_blank" href="https://www.netflix.com/search?q=the%20lorenskog&jbv=81394937">The Lorenskog Disappearance</a> series (2022) "When a billionaire's wife vanishes, Norwegian police must deal with the frenzied press an deceitful informants to find the truth. Base on real events.
+   <br /><br />
+
+On <a target="_blank" href="https://plex.tv">Plex.tv</a>:
+   * <a target="_blank" href="https://watch.plex.tv/movie/dead-snow">Dead Snow (Dod Sno) 2009</a> English subtitles. Filmed on location in Alta, Finnmark, Norway and Målselv, Troms. "Eight medical students on a ski trip to Norway discover that Hitler's horrors live on when they come face to face with a battalion of zombie Nazi soldiers intent on devouring anyone unfortunate enough to wander into the remote mountains where they were once sent to die." Trivia: Ancient Norse mythical beings are known as <em lang="no">draug</em> -- an undead being who would inhabit graves, often the graves of important men, as they often had treasures in them. A draug would protect these treasures as if they were their own.
+
+   * <a target="_blank" href="https://www.imdb.com/title/tt2832470/?ref_=adv_li_tt">Dead Snow 2" Red vs Dead (2014)</a> Dubbed in English. "Still on the run from a group of Nazi zombies, a man seeks the aid of a group of American zombie enthusiasts, and discovers new techniques for fighting the zombies."
+   <br /><br />
+
+On YouTube:
+   * <a target="_blank" href="https://www.youtube.com/@lifeinnorway1">VIDEO</a>: <a target="_blank" href="https://www.youtube.com/@AnnaGoldmanTravel">Anna Goldman channel</a> has <a target="_blank" href="https://www.youtube.com/watch?v=cPEDd9lfc6Q">How to get a job in Norway</a>.
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Z3Z4Z3XHJyY">Don't wear a mask in Norway</a>
+   * Don't bring high heels.
+   * Don't stare.
+   <br /><br />
+
+Curiosity Stream has several documentaries:
+   * <a target="_blank" href="https://curiositystream.com/video/3632">Magical Fjords</a>
+   * <a target="_blank" href="https://curiositystream.com/video/4201">The Fjords of Norway</a> 2018 52m
+
+   * <a target="_blank" href="https://curiositystream.com/video/4605">Eye In the Sky: Nordic Wonders</a>
+   * <a target="_blank" href="https://curiositystream.com/video/5057">Vikings</a> (documentary)
+   * <a target="_blank" href="https://curiositystream.com/video/4203">Vikings: The Lost Kingdom</a>
+   * <a target="_blank" href="https://curiositystream.com/video/4950">Vikings: The Lost Kingdom Extended</a>
+   * <a target="_blank" href="https://curiositystream.com/video/5375">Eat like a Viking</a>
+   <br /><br />
+
+Norway is the birthplace of Henrik Ibsen, actress Liv Ullmann, and artist Edward Much ("The Scream").
+
+On <a target="_blank" href="https://www.hbo.com/game-of-thrones">Max (HBO)</a>:
+   * Kristofer Hivju on Game of Thrones
+   <br /><br />
+
+
+## Colors
+
+<em lang="no">Farge</em> = <a target="_blank" href="https://www.youtube.com/watch?v=swxE_NMmqB4&t=33s">Colors</a>: <a target="_blank" href="https://www.youtube.com/watch?v=EgcgKm_JV_0">TEST</a>
+
+   * <em lang="no">mørk</em> = dark
+   * <em lang="no">lys</em> = light
+
+   * <em lang="no">svart</em> = black
+   * <em lang="no">grå</em> = gray
+   * <em lang="no">hvit</em> = white
+
+   * <em lang="no">brun</em> = brown
+   * <em lang="no">rosa</em> = pink
+
+   * <em lang="no">rød</em> = red
+   * <em lang="no">oransje</em> = orange
+   * <em lang="no">gull</em> = gold
+   * <em lang="no">gul</em> = yellow
+   * <em lang="no">grønn</em> = green
+   * <em lang="no">blå</em> = blue
+   * <em lang="no">lilla</em> = purple (violet)
+   <br /><br />
+
+
+## Norwegian Clothing and Souvenirs to buy
+
+<a target="_blank" href="https://www.youtube.com/watch?v=VqpSW3lLIcg&t=22s">VIDEO</a>: Clothing words: <a target="_blank" href="https://www.youtube.com/watch?v=owEPj4ODb34">TEST</a>
+
+   * <em lang="no">klær</em> = ("clad") clothing
+
+   * <em lang="no">en hanske</em> = gloves
+   * <em lang="no">en lue</em> = hat
+   * <em lang="no">en skjerf</em> = scarf
+
+   * <em lang="no">en kåpe</em> = cape
+   * <em lang="no">en kjekk</em> = handsome 
+   * <em lang="no">en frakk</em> = coat
+   * <em lang="no">en jakke</em> = jacket
+
+   * <em lang="no">en genser</em> = sweater
+   * <em lang="no">en dress</em> = suit
+   * <em lang="no">en slips</em> = tie
+   * <em lang="no">en belte</em> = belt
+
+   * <em lang="no">en kjole</em> = ("shula") dress
+   * <em lang="no">Jeg liker den kjolen</em> = I like that dress <a target="_blank" href="https://www.youtube.com/watch?v=jFnwiNV18MA&t=1m47s">VIDEO</a>
+   * <em lang="no">en skjørt</em> = skirt
+
+   * <em lang="no">en skjorte</em> = shirt
+   * <em lang="no">en t-skjørte</em> = ("terr shuk-ter") t-shirt
+
+   * <em lang="no">en bukse</em> = pants (trousers)
+   * <em lang="no">en shorts</em> = shorts
+   * <em lang="no">en bh / brystholder</em> = bra
+   * <em lang="no">en sko</em> = shoe
+   * <em lang="no">en sokk</em> = sock
+
+   * <em lang="no">en undertøy</em> = underwear
+   * <em lang="no">tøys</em> ("tays") = nonsense/silliness
+   <br /><br />
+
+   <ul><a target="_blank" href="https://translate.google.com/details?sl=no&tl=en&text=Har%20du%20r%C3%B8yka%20sokka%20dine%3F&op=translate"><em lang="no">Har du røyka sokka dine?</em></a> = "Have you smoked your socks?", an idiom for "Are you crazy/out of your mind?"
+   </ul>
+
+   * <em lang="no">Kan jeg få prøve den på?</em> = Can I try it on?
+   * <em lang="no">søt</em> ("sur") = cute
+   * <em lang="no">perfect</em> ("sur") = perfect
+   * <em lang="no">Du ser bra ut</em> = You look great
+   <br /><br />
+
+   * <em lang="no">Jeg mistet passet mitt</em> = I lost my passport
+   * <em lang="no">Jeg mistet lommeboken min</em> = I lost my wallet
+   * <em lang="no">Jeg mistet vesken min</em> = I lost my purse
+   <br /><br />
+
+A <em lang="no">sitteunderlag</em> is a small reindeer pelt to sit on. It fits in a regular backpack brought on hikes, especially when its rainy or snowy outside. They are 400 – 500 NOK range.
+
+Norway is a rather damp place, even in the summertime.
+
+> "There is no bad weather, only inappropriate clothing."
+
+<a target="_blank" href="https://www.hellyhansen.com/en_us/">HellyHansen.com</a> headquartered in Oslo, has been making heavy-duty clothing since 1877. Their most renowned item is its sailing jacket, which is water-repellant, windproof and lined with fleece, and comes in white, black, red and bright nautical blue. Helly Hansen gear is sold in more than 275 stores throughout Norway, including 40 stores in Oslo alone and 12 in Bergen. They sell ski jackets, hiking jackets, windbreakers, rainwear, sailing pants, ski pants, hiking pants, sweaters and hoodies, base layer tops and pants, winter boots, hats and beanies, gloves and mittens, backpacks, wetsuits and so much more. 
+
+<em lang="no">Rosemaling</em> (pronounced roo-suh-mah-ling) means “rose painting”. It’s a traditional way of decorating wooden objects, such as plates, chopping boards, wooden chests, spoons or cake containers.
+<em lang="no">Rosemaling</em> decoration on <em lang="no">tine</em> (bread boxes) are a find from second-hand shops. The wooden boxes are the traditional way to store and transport cakes. 
+
+<a target="_blank" href="https://www.wikiwand.com/en/Bunad">WIKI</a>: A <em lang="no">bunad</em> is a traditional Norwegian costume, usually made from thick wool fleece. Rules surrounding its making are quite strict, and enforced by the proverbial "<em lang="no">bunad politiet</em>" (bunad police). Prices for them are upwards of 25,000 NOK (2,550 USD or 2,000 GBP), not including the mandatory silver buttons and jewelry. <a target="_blank" href="https://www.norskflid.no/bunad/bunader/">https://www.norskflid.no/bunad/bunader/</a>
+
+   * <a target="_blank" href="https://translate.google.com/details?sl=no&tl=en&text=Det%20er%20en%20vakker%20bunad&op=translate"><em lang="no">Det er en vakker bunad</em></a> = That is a beautiful bunad
+   <br /><br />
+
+<em lang="no">Hardanger</em> is a type of embroidery that originated in the Hardanger region of Norway. It’s a type of whitework that uses counted thread and drawn thread work techniques. It’s often used to decorate tablecloths, napkins, pillows, curtains, and other home decor items. They also decorate church alters.<br />
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1697675676/Hardanger-cloth-1260x660_pulxfl.png"><img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1697675676/Hardanger-cloth-1260x660_pulxfl.png"></a>
+
+<a target="_blank" href="https://susanfosse.com/products/rundemann-mittens?variant=12889039110186">
+Runde Mittens</a> $46 Classic Norwegian gloves for him and her in 100% wool with a fleece lining. Knitted in the same traditional pattern as the rest of the Rundemann design inspired by the traditional Norwegian eight-petal rose.
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=WxW76FkhkgY&t=2m3s">VIDEO</a>: <em lang="no">Sunn</em> (soon) = healthy
+   * <a target="_blank" href="https://www.youtube.com/watch?v=WxW76FkhkgY&t=2m11s">VIDEO</a>: <em lang="no">Sovn</em> (seven) = Sleep
+   <br /><br />
+
+References:
+   * https://www.lifeinnorway.net/norwegian-souvenirs/
+   * https://www.ingebretsens.com/barnefest-norwegian-songs-for-all-ages
+   <br /><br />
+
+
+### Trolls
+
+Gnomes???
+
+Nisse dolls are a popular tourist souvenir. They are a type of gnome that is said to live in barns and bring good luck to farmers. 
+
+According to Norse mythology, the <em lang="no">jotner</em> – the trolls – lived among the Jotunheimen mountains in Central Norway SE of Geiranger. Mount <a target="_blank" href="https://www.wikiwand.com/en/Galdh%C3%B8piggen">Galdhøpiggen</a> is the <a target="_blank" href="https://www.lifeinnorway.net/highest-mountains/">highest point</a> in Norway, at 2,469 metres (8,100 feet). It and  Glittertind (2nd highest peak) are reached from a 3-hour hike from Spiterstulen.
+
+The <em lang="no">Nisse</em> is said to live in barns and bring good luck to farmers. 
+
+The Nisse are popular Christmas decorations in Norway.
+
+
+### Norwegina Christmas
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=z6yevmluq2M&list=PL1EBB3A25BDE4EE48">Northern Norwegian Christmas song</a> by Norwegian native <a target="_blank" href="https://www.youtube.com/results?search_query=sissel+kyrkjebo">Sissel Kyrkjebø</a>
+<br /><br />
+
+The tree in London's Trafalgar Square every Christmas is a spruce, typically 20 metres tall and 50-60 years old, felled in November during a ceremony in Oslo, and is transported by sea to the UK. It's decorated in a traditional Norwegian style with vertical strings of lights, then lit in a ceremony on the first Thursday in December. The tree remains until just before the Twelfth Night of Christmas, when it is taken down for recycling. This has been the tradition since 1947, in memory of England’s support during the Second World War. England hosted King Haakon VII of Norway during his exile from the Nazis.
+
+The Norwegian word for Christmas (the season as well) is Jul, and it’s pronounced “yule.”
+
+<em lang="no">God Jul</em> = Merry Christmas in Swedish/Norwegian
+
+<em lang="no">Juletre</em> (pronounced “yule-a-tre”) = Christmas tree
+
+<em lang="no">Julaften</em> (pronounced “yule-aften”) = Christmas Eve
+
+<em lang="no">Julenisse</em> (pronounced “yule-nisse”) = Santa Claus
+
+In Oslo, the Norsk Folkemuseum’s annual Christmas fair on the first weekend of December is famous for its traditional Norwegian Christmas market.
+
+The <a target="_blank" href="https://www.etsy.com/market/norwegian_table_prayer">Norwegian Table Prayer on paper and tea towels: $23.99
+
+   * I Jesu navn går vi til bords = In Jesus' name we go to the table
+   * Å spise, drikke på ditt ord = To eat and drink at your word
+   * Deg Gud til ære, oss til gavn = To God's honor, to our benefit
+   * Så får vi mat i Jesu navn = So we get food in Jesus' name
+   <br /><br />
+
+   * <em lang="no">Hygge</em> (hoo-ga) = a feeling of contentment.
+   * <em lang="no">Glad</em> ("glah") = Happy
+   <br /><br />
+
+
+## Norwegian Drinks
+
+   * <em lang="no">venn</em> = water
+
+   * <em lang="no">Jeg er tørst</em> = I'm thirsty
+   * <em lang="no">Skål!</em> = Cheers! (a toast)
+
+   * <em lang="no">koffe</em> = (koffa) coffee
+   * <em lang="no">(et) øl</em> = beer
+   <br /><br />
+> PROTIP: Norwegians drink (usually black) the most coffee per capita of any country in the world.
+
+Norwegian ciders are considered among the finest in the world.
+
+At Christmas and other celebratory occasions, since the 15th century, the Scandinavian liquor (<em lang="no">akevitt</em> in Norwegian; aquavit in English), made from grains or potatoes and aromatised with herbs and spices, is served straight up, at room temperature, with no ice or water. To be classified as an aquavit, the dominant flavour must come from a distillate of caraway or dill seed. The word aquavit derives from the Latin words aqua (water) and vita (life), translating to “the water of life”.
+"Tastes like licorice cough syrup".
+Drunk with a pilsner beer. It's purchased from a Vinmonopol. <a target="_blank" href="https://www.thewhiskyexchange.com/p/54106/nuet-aquavit">$41.25 for 72cl</a>.
+
+<a target="_blank" href="https://nuetaquavit.com/2021/06/29/everything-you-need-to-know-about-aquavit/">Nuet Dry Aquavit</a> replaces the fennel and the anise seeds with botanicals like grapefruit peel, blackcurrant and blackcurrant leaves, with less caraway (sourced from Inderøy, Norway). substitute to gin.
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=GE3Zk5Ze3rY&t=1m30s">VIDEO</a>: <em lang="no">Hvor er nærmeste v'nmonopolet?</em> = Where is the nearest liquor store?
+   <br /><br />
+
+<a target="_blank" href="https://www.youtube.com/watch?v=GE3Zk5Ze3rY">VIDEO</a>: The government has a monopoly on sales of liquor in <strong>v'nmonopolet</strong> stores, which closes at 3pm on Saturdays, til 6 on weekdays for wine, til 8 for beer. Closed Sundays, Christmas, and election days.
+
+
+## Norwegian food
+
+   * <a target="_blank" href="https://translate.google.com/details?sl=no&tl=en&text=Jeg%20er%20sulten&op=translate"><em lang="no">Jeg er sulten</em></a> = I'm hungry
+   * <em lang="no">Velbekomme!</em> = Have a good meal!
+   * <em lang="no">matpakke</em> = (a lunch/snack taken from home) <a target="_blank" href="https://www.youtube.com/watch?v=JlNmeVK_zLg">VIDEO</a>
+   * <em lang="no">hjemmelagde</em> = homemade
+   <br /><br />
+
+<em lang="no">det lenge</em> = long time
+
+<a target="_blank" href="https://ielanguages.com/norwegian-days.html">Days of the week</a>: 
+   * mandag = Monday
+   * tirsdag = Tuesday
+   * onsdag = Wednesday
+   * torsdag = Thursday
+   * fredag = Friday  <a target="_blank" href="https://ielanguages.com/norwegian-days.html"><em lang="no">fredagstaco</em></a> ("Taco Fridays") <a target="_blank" href="https://www.youtube.com/watch?v=Gs0pZZfQ-Uo">VIDEO</a>
+   * lørdag = Saturday (<em lang="no">lørdagsgodt</em> = Saturday candy)
+   * søndag = Sunday
+   <br /><br />
+
+<strong>Fozen pizza</strong> is a popular <em lang="no">frysemat</em> = frozen meal -- Norway's unofficial national dish. <a target="_blank" href="https://www.youtube.com/watch?v=WBGsChrecYI">VIDEO</a>: Grandiosa brand is <em lang="no">Norges mest spiste</em> = Norway's most eaten. Each year, Norway's 5 million people consume 50 million frozen pizzas a year. PROTIP: Norwegians eat pizzas with a knife and fork, not with their hands.
+
+<a target="_blank" href="https://www.visitnorway.com/things-to-do/food-and-drink/the-norwegian-cookbook/">The Norwegian Cookbook</a> <em lang="no">ei kokebok, kokebøkera</em> online is a collection of traditional and contemporary <em lang="no">en oppskrift [å]</em> recipes from across the country.
+
+<em lang="no">kjøtideig</em> = minced meat:
+
+   * Finnbiff – Reindeer stew
+   * <em lang="no">Julesild</em> – Traditional Norwegian pickled herring
+   * Smalahove – Sheep’s head
+   * Lutefisk – Dried cod soaked in lye (with butter?)
+   * Pinnekjøtt – Salted, dried, and sometimes smoked lamb ribs
+   * Ribbe – Christmas pork belly rib roast with traditional side dishes - one of the most popular Norwegian Christmas foods.
+   * Pinnekjøtt - a traditional Norwegian Christmas favourite!
+
+   * Tørrfisk, dried cod, has been a major export for centuries.
+   * Rakfisk – Fermented trout
+   * Elgkarbonader – Moose meat cakes
+   * Fårikål – Lamb and cabbage stew
+   * fenalår – salted and dried leg of lamb.
+   * Pinnekjøtt – Salted, dried, and sometimes smoked lamb ribs
+   * Hjortegryte - red deer Venison stew
+   * Kjøttkaker – Meatballs
+   * Arctic cod called skrei.
+
+   * Raspeballer, klubber, komler or potetballer – traditional Norwegian potato dumplings
+   * Jordskokk- og gulrotsuppe – Jerusalem artichoke and carrot soup Mushroom stew in a pot.
+   * Soppstuing – Chanterelle mushroom stew
+   * Rømmegrøt – Sour cream porridge
+   * Het potetgryte – spicy potato stew made by cookbook author Hanne-Lene Dahlgren
+
+   * <em lang="no">velbalansert</em> = well-balanced
+   <br /><br />
+
+Ginger snaps.
+
+Norwegian chocolates (<em lang="no">sjokolade</em>) don't have the butyric acid that gives American chocolate its sour taste. The balance of sweetness and bitterness is different than what Americans are used to.
+Freia of Oslo (on Karl Johans Gate) is Norway's leading chocolate maker since 1889. 
+
+   * chocolate-covered licorice ball
+
+   * melkesjokolade is a classic, made with milk from Norwegian cows. 
+
+   * Melkehjerter are "chocolate hearts".
+
+   * Like the American Kit-Kat, Kvikk Lunsj (Meaning “quick lunch” in Norwegian) was created in 1937 with a retro three-colour-stripe wrapper. Advertised as an outdoorsy energy-boosting snack, so it’s an essential part of any hiking or kayaking trip around Norway’s fjords.
+   
+   * Freia’s Firkløver brand contains chopped hazelnuts
+   <br /><br />
+
+Trondheim's Nidar.
+
+<em lang="no">Gudbrandsdalost</em> and <em lang="no">Gjetost</em> - Caramelized dense brown cheese (<em lang="no">ost</em>), made from a mixture of goat’s and cow’s milk, with a sweet, caramel-like flavour. It’s often served on bread or waffles, and is a popular topping for Norwegian pancakes. From Ski Queen $24.45, Heidals Ost, and Ekte Geitost $38.95. Get the Ostehøvel (Cheese Slicer) invented in Norway by Thor Bjørklund in 1925 and by Clas Ohlson today.
+
+   <ul><a target="_blank" href="https://translate.google.com/details?sl=no&tl=en&text=%C3%85%20v%C3%A6re%20f%C3%B8dt%20bak%20en%20brunost%3C&op=translate"><em lang="no">Å være født bak en brunost</em></a> literally means "to be born behind a brown cheese", an idiom for to be a bit slow or stupid.
+   </ul>
+
+In 2016, the blue cheese Kraftkar from small local producer Tingvollost in Fjord Norway was chosen as Champion of Champions (best) cheese.
+
+Salmon.
+
+Autumn is hunting season in Norway, when game is served in both restaurants and Norwegian homes. 
+
+   1. MOOSE. Moose meat is a delicacy when prepared correctly, and the taste is typically compared to venison.
+
+   2. REINDEER. Northern Norway is home to as many as 250,000 reindeer. The indigenous Sami people are especially known for reindeer herding. The meat is lean and delicious.
+
+   3. DEER. The deer population has surpassed the moose population in Norwegian forests. Deer is frequently served as steak, but can also be smoked, dried, or cured.
+
+   4. GROUSE. Grouse is the most sought-after bird for hunters in Norway. The breast of young grouse is tender, with a mild, gamey taste. The rest of its flesh has a more intense flavour.
+
+In the San Francisco Norwegian restaurant <a target="_blank" href="https://kantinesf.com/">Kantine</a>, I ate a sweet porridge dish, served with sugar and cinnamon. In the middle of the dish is a generous amount of melted butter, called <em lang="no">smørøye</em> (butter eye) -- a very good thing.
+
+   <ul><a target="_blank" href="https://translate.google.com/details?sl=no&tl=en&text=%C3%85%20ha%20det%20som%20plommen%20i%20egget&op=translate"><em lang="no">Å ha det som plommen i egget</em></a> literally means "To have it like the yolk in the egg", an idiom for being in an ideal situation, to have as good a time as possible.
+   </ul>
+
+   <ul><a target="_blank" href="https://translate.google.com/details?sl=no&tl=en&text=%C3%85%20v%C3%A6re%20midt%20i%20sm%C3%B8r%C3%B8yet&op=translate"><em lang="no">Å være midt i smørøyet</em></a> literally means "to be in the middle of the butter eye", an idiom for being in an ideal place, to be in a good spot.
+   </ul>
+
+   <ul><a target="_blank" href="https://translate.google.com/details?sl=no&tl=en&text=%C3%85%20tr%C3%A5kke%20i%20salaten&op=translate"><em lang="no">Å tråkke i salaten</em></a> literally means "stepped in the salad", an idiom for having mess up, acted tactlessly, like the American idiom "put your foot in your mouth".
+   </ul>
+
+References:
+   * <a target="_blank" href="https://www.visitnorway.com/things-to-do/food-and-drink/cuisine/?gclid=EAIaIQobChMIz8qTgafrgQMVyh6tBh1MnguwEAAYASAAEgLRxfD_BwE&gclsrc=aw.ds">VisitNorway.com</a>
+   <br /><br />
+
+BTW Norway is the country with the most medals in the history of the Bocuse d'Or competition among chefs, even ahead of France. In 2022, Filip August Bendi's team from Oslo came in 3rd in Lyon.
+
+Å tråkke i salaten
+Translation: To step in the salad
+Meaning: To mess up, act tactlessly, to put your foot in it
+Example: Nå har jeg virkelig tråkket i salaten og irritert hele families.
+
+
+## Destinations from North to South:
+
+   * https://norway.nordicvisitor.com/tours/visit-north-norway/
+   <br /><br />
+
+<em lang="no">Du er Vakker</em> (vak-kay) = You are beautiful (said to a close friend)
+
+Norway is a mythical land of Vikings, Valhalla.
+
+* <a target="_blank" href="https://maps.app.goo.gl/hXy8JhiXnRYeyKzEA">MAP</a>: It's home to prehistoric <a target="_blank" href="http://altarockart.no/">Hjemmeluft petroglyphs</a> (UNESCO) and the Northern Lights Cathedral 
+
+   Alta is in the region of Arctic Norway where the Sea Sami people live. 
+
+* Turisten marker
+
+* <a target="_blank" href="https://www.timeanddate.com/weather/norway/tromso/ext">WEATHER</a>: <a target="_blank" href="https://maps.app.goo.gl/oo2eVfxPpCX8v8H56">MAP</a>: Tromso on <strong>Lofoten Islands</strong> Tromso is known as the "Paris of the North". 02296537 
+
+   Tromso videos:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=dxVTSmEiOSw">Worth Travels</a>
+   * <a target="_blank" href="https://www.wanderingowl.com/">wanderingowl tours</a>
+   <br /><br />
+   
+   10:00 AM 3 hr NOV 1 from <a target="_blank" href="https://maps.app.goo.gl/tAgWYj8mEaFgkYEc7">Samuel Arnesens gate 12, 9008 Tromsø</a> <a target="_blank" href="https://www.getyourguide.com/tromso-l32375/tromso-reindeer-sledding-and-feeding-with-sami-culture-t180764/?date_from=2023-11-03&date_to=2023-11-03&partner=true&ranking_uuid=a6b0e45d-ae16-4950-8424-d25fa18d8a6b">3 hours $180 Reindeer sledding and feeding with Sami culture</a> with <em lang="no">joika</em> = Raindeer stew.  GYG7VL8WW79K Book direct https://www.tromsoarticreindeer.com.
+
+   8pm 930pm NOV 1 - At the port city center are preserved mid-19th-century wooden buildings and the contemporary triangular-shaped <strong>Tromsdalen Church</strong>, nicknamed <em lang="no">Ishavskatedralen</em> (The Arctic Cathedral), an impressive church and concert venue inaugurated in 1965.  <a target="_blank" href="_blank" href="https://my.cunard.com/en-us/mycruise/QV/excursions/TOS/arctic-cathedral-evening-recital">$80</a>. Its stained glass window on the Eastern wall depicts the Return of Christ.
+   
+   Tromso is home to the <a target="_blank" href="https://www.lifeinnorway.net/stave-churches/">Stave cathedral</a> built as a Catholic church. It's Norway’s largest of 2,000 wooden churches built 1050-1150 AD. It demonstrates a rare link between Christian architecture and art forms from the Viking era. They are built of wood without nails. Enough room for 50 people. <a target="_blank" href="https://www.youtube.com/watch?v=wJkNlpmLU9U">VIDEO</a>: There is also one in Poland. Originally it had no heating nor benches. The large windows were added later. <a target="_blank" href="https://www.youtube.com/watch?v=GEBbJJXnipo">VIDEO</a> A Stave church is in the US (Rapid City, South Dakota). 
+   BTW "Stave" is translated to "storehouse". 
+
+   * WARNING: <a target="_blank" href="https://www.youtube.com/watch?v=Pe-bchfqkaw&t=12m37s">VIDEO</a>: A Norwegian's religion is a very private subject and it "don't ask don't tell".
+   * <a target="_blank" href="https://tv.nrk.no/serie/hurtigruten-minutt-for-minutt/2020/DVFJ67004611/avspiller">VIDEO: At the quay in Tromso 2020</a>
+   * <a target="_blank" href="https://www.marinetraffic.com/en/data/?asset_type=expected_arrivals&columns=shipname,recognized_next_port,reported_eta,arrived,show_on_live_map,dwt,ship_type&recognized_next_port_in|begins|TROMSO|recognized_next_port_in=267&arrival_time_gte|gte|arrival_time_gte=360,43200&arrival_time_gte|gte|arrival_time_gte=360,43200">MarineTraffic.com</a> shows ships arriving in Tromso
+   <br /><br />
+
+   Polaria is an Arctic research center and aquarium housed in a stainless steel saw tooth structure that looks like a giant, stacked glacial ice shard. Inside an 1837 wharf Custom House, the Polarmuseet (Polar Museum) exhibits recount the region’s hunting history and tell the stories of famous icy expeditions by explorer Roald Amundsen and sea captain Fridtjof Nansen of the North Pole ship Fram. Trom is also the base for active shore adventures, including husky dog sledding and snowmobiling. 
+   
+   Tromso is known for having the most pubs per capita in Norway. <a target="_blank" href="https://www.youtube.com/watch?v=7o89BpMmqjs" title="Must-dos">VIDEO</a>: <a target="_blank" href="http://www.mack.no/olhallen/">Mack's</a> Brewpub Ohallen (<a target="_blank" href="https://maps.app.goo.gl/J1atBuDFXUjzG5vU7">MAP</a>: Strogata 4, 9008 Tromso) is the most Northern brewery in the world.
+      * <a target="_blank" href="https://www.yelp.com/search?find_desc=restaurant&find_loc=tromso%2C+norway&sortby=rating">Yelp: best restaurants in Tromso</a>
+      <br /><br />
+
+   The cable car <a target="_blank" href="https://www.instagram.com/stories/highlights/17961801332335734/">Instagram</a>: Fjellheisen goes to the top of Mount Storsteinen. A great place to see Northern Lights.
+
+   * https://www.couchsurfing.com/nearby/favorites/69.670317/18.956567/Troms%C3%B8,%20Troms,%20Norway?search_query=Troms%C3%B8%2C+Troms%2C+Norway&search_type=event
+   * https://www.viator.com/tours/Tromso/Small-Group-Aurora-Hunting-Northern-Lights-Tour-from-Tromso/d4362-7700P4
+   * https://www.viator.com/tours/Tromso/Northern-Light-Safari-with-Catamaran-4-Hours/d4362-337632P1
+   * https://www.viator.com/tours/Tromso/Small-group-Northern-Lights-tour-All-inclusive-Northern-Horizon/d4362-62615P1
+   <br /><br />
+ 
+* <a target="_blank" href="https://www.timeanddate.com/weather/norway/narvik/ext">WEATHER</a> <a target="_blank" href="https://weather.com/no-NO/weather/today/l/c95b45ab8f197fcd92493e209e81e1055ea6819d7cf0489b59c1a503fac88d89">IBM</a>: 11:15a FRI NOV 3 -<a target="_blank" href="https://maps.app.goo.gl/bAJ5R1PVPyBKewWLA">MAP</a>: Narvik is where Nazi Germans invaded Norway in WWII even though Norway declared neutrality. 85% of iron ore Nazis needed was shipped from Sweden through Norvik. British and French troops landed in Narvik to help Norway. "8,500 casualties. 65 ships sunk. And 86 planes shot down. The battle for strategic Narvik was one of the fiercest of World War II. It came to be known as Hitler's first defeat and lasted 62 days."
+
+   * <a target="_blank" href="https://maps.app.goo.gl/9buRzr8BFusJ52oQ7">MAP</a>: Narvik Krigsmuseum (War Museum) by the AMFI Narvik Malmporten (shopping mall)
+   <br /><br />
+
+   * 11:40 departs from <a target="_blank" href="https://maps.app.goo.gl/h15qQCURqm7uaVaH6">MAP</a>: Artic Train station Station 43 km to <a target="_blank" href="https://maps.app.goo.gl/6sVGjY58X2j1PJBc9">MAP</a>: Bjørnfjell station and back at 4:10. Norway’s northern-most railway. It's <a target="_blank" href="https://my.cunard.com/en-us/mycruise/QV/excursions/NAR/the-arctic-train-the-ofoten-line">$179</a> vs. <a target="_blank" href="https://store.arctictrain.com/en/to-do/2111762/the-arctic-train-ofoten-line/showdetails">$43 (520 NOK) direct on the Ofoten Arctic train</a>
+   
+      "A picturesque journey through desolate, untamed, and awe-inspiring landscapes winds along a spectacular 27-mile route, from breath-taking scenes of Narvik’s ice-blue fjord, past cascading waterfalls, and into the alpine terrain of Nordland’s soaring mountains. Savour extended stops at Rombak (868 feet above sea level) and Katterat (1,225 feet), and a coffee or tea, accompanied by a cinnamon bun, on your return journey."
+
+   * 830pm NOV 3 <a target="_blank" href="https://my.cunard.com/en-us/mycruise/QV/excursions/NAR/in-search-of-the-northern-lights">In Search of Northern Lights tour 4-hour $121</a> "Join a group of specially trained guides who use their detailed knowledge of the region and its ever-changing weather, to lead you to areas for optimum viewing of the Northern Lights. They’ll also assist with camera settings to ensure you capture Mother Nature’s light show. Your guides will explain why this natural phenomenon occurs, as you travel around searching for this celestial wonder. It’s always a wonderful occasion when a faint colourful wisp, or a great shimmering blanket of wavering light, appears above you in the expansive night sky."
+
+   BTW Narvik is also the namesake of the Android operating system.
+   
+<em>Artic Circle</em>:
+
+<a target="_blank" href="https://www.etsy.com/listing/1485531158/fjords-norway-travel-print-fjords-poster"><img align="right" width="200" alt="norway-fjords-poster-327x464.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1696934430/norway-fjords-poster-327x464_aacwq0.png"></a>
+
+* <a target="_blank" href="https://maps.app.goo.gl/6U3XP793uQ2ogbEn7">MAP</a>: Trondheim
+* Molde
+
+* <a target="_blank" href="https://www.timeanddate.com/weather/norway/alesund/ext">WEATHER</a>: 9AM OCT 30 - <strong>Fjord Norway: Ålesund</strong> Art Nouveau city with <a target="_blank" href="https://maps.app.goo.gl/TzPygqgY7mbDWeFr7">MAP</a>: $129 for 3-hour 33km-long Hjørundfjord (inland) is one of the country’s most magnificent waterways to <a target="_blank" href="https://maps.app.goo.gl/aqy42moXRVriQjwN7">MAP</a>: <a target="_blank" href="https://www.youtube.com/watch?v=yMSc-qqW3To">PORT VIDEO</a> <strong>fjord Geiranger</strong> -- top <a target="_blank" href="https://whc.unesco.org/en/list/1195">World Heritiage site</a> <a target="_blank" href="https://www.havilavoyages.com/excursions/winter-cruise-to-the-world-heritage-area-of-geiranger">on Havila</a> 
+
+   * <a target="_blank" href="https://maps.app.goo.gl/2j4Z3eK7LDhDf9dJ6">MAP</a>: Jugendstilsenteret museum is in an elegant, 1907 pharmacy, with period interiors & temporary exhibitions on art nouveau.
+   <br /><br />
+
+* <a target="_blank" href="https://maps.app.goo.gl/pnwLDLKMDBA1tFcM8">Nordfjordeid</a>
+* <a target="_blank" href="https://maps.app.goo.gl/npZ7pLgLYDGhhYGH8">MAP</a>: Skjolden inland
+
+* <a target="_blank" href="https://maps.app.goo.gl/JSohCT57JDatMdKA9">MAP: Olden</a> inland.
+  <a target="_blank" href="https://en.wikipedia.org/wiki/Olden,_Norway">Wiki</a> - Briksdal Glacier
+* <a target="_blank" href="https://maps.app.goo.gl/vjyvvfrfcxkvwFb67">MAP</a>: Bergen to Sognefjord, the country’s longest and deepest. It’s home to the Jostedalsbreen Glacier, as well as waterfalls like the Mardalsfossen and the Kjelfossen. colorful wooden houses on the old wharf. The funicular climbs up Mt. Floyen for scenic views and hiking trails.
+* <a target="_blank" href="hhttps://maps.app.goo.gl/iByKNb1cd59S8iUA8">MAP</a>: Lofthus (inland from Bergen)
+
+* <a target="_blank" href="https://www.timeanddate.com/weather/norway/flam/ext">WEATHER</a>: <a target="_blank" href="https://www.ncl.com/port-of-call/cruises-to-flam#!#itineraries">Flam on Norwegian</a> 10-DAY CRUISE Sep 25 from Reykjavik, Iceland ON NORWEGIAN PRIMA Northern Europe: Iceland & Norway $17.  a tiny town, nestled between the Aurlandsfjord and snow-capped mountains. There, you'll want to take a cruise along the Aurlandsfjord and Naeroyfjord or a ride on the steep Flam Railway. <a target="_blank" href="https://maps.app.goo.gl/fmYVrR2nQxTQTYhM8">MAP</a>: Nærøyfjord Fjord (World Heritage Site).  2 hours from Flám to <a target="_blank" href="https://maps.app.goo.gl/uSXWSqeXSKpSDR1j8">MAP: Gudvangen</a>. used as inspiration for Disney’s animated feature Frozen. 
+
+* <a target="_blank" href="https://www.timeanddate.com/weather/norway/eidfjord/ext">WEATHER</a>: <a target="_blank" href="https://maps.app.goo.gl/WeEmmUHegtEAoSqL6">MAP</a>: Eidfjord - deep inside Hardangerfjord, explore the inland rivers and waterfalls that have cut through Norway's landscape for millennia. Sights include Voringfossen, which is one of the nation's <strong>most iconic waterfalls</strong>, Hardangervidda National Park has places to hike and kayak.
+
+* Jondal inland
+
+* <a target="_blank" href="https://maps.app.goo.gl/Fh1oAKRHJS15aqAu7">MAP</a>: Haugesund
+* <a target="_blank" href="https://www.timeanddate.com/weather/norway/stavanger/ext">WEATHER</a>: <a target="_blank" href="https://maps.app.goo.gl/JWfuUzogzroR8s1E8">MAP</a>: Stavanger boat trips into the Lysefjord, with its dramatic cliffs (including the towering Pulpit Rock) and gushing waterfalls. It's also home to some unique museums, including the Norwegian Canning Museum and the Norwegian Petroleum Museum. Don't miss a walk through the wooden houses of Old Stavanger or the harbor area with its seaside restaurants and local shops.
+* <a target="_blank" href="https://maps.app.goo.gl/5p9aaos2PjvDmjw26">MAP</a>: Sandnes (4th largest city in Norway)
+
+* <a target="_blank" href="https://maps.app.goo.gl/LoLisCjV7CUQdFyHA">Kristiansand</a> - Sørlandets Museum
+
+* <a target="_blank" href="https://www.timeanddate.com/weather/norway/oslo/ext">WEATHER</a>: <strong>Oslo</strong> is on the SouthEast of Norway. It's the capital city
+
+
+
+## Slow TV on nrk.no
+
+<a target="_blank" href="https://tv.nrk.no/serie/fjellfolk/sesong/2/episode/1/avspiller">Mountain people</a>
+Norwegian documentary series about people who live in, for and by the mountains.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=PlYftJU5P0k">VIDEO</a>: "Bergensbanen minute by minute" shows every minute of the 7 hour 16 minute train ride from Bergen to Oslo. It was the longest documentary ever made when it <a target="_blank" href="https://tv.nrk.no/program/PRHO63004009">aired in Norwegian on NRK2 27 November 2009</a>, one of the first documentaries released under a Creative Commons license.
+[<a target="_blank" href="https://www.youtube.com/watch?v=i6Zybcu1Jzg">A 7 minute sped-up version</a>]
+
+That started the <a target="_blank" href="https://www.youtube.com/watch?v=X_A-XX6ynU8">"Slow TV" movement</a> and <a target="_blank" href="https://www.youtube.com/watch?v=hXMtC8Kj-sQ">NRK's "Slow TV" channel on YouTube</a>
+   * <a target="_blank" href="https://tv.nrk.no/serie/hurtigruten-minutt-for-minutt/2012/DVFJ60005012/avspiller">VIDEO: Hurtigruten</a> MS "Nordnorge" 134-hour journey from June 16th 2011 (a few days before the Summer Solstice on June 21 when the day is longest of the year).
+   * <a target="_blank" href="https://www.imdb.com/title/tt11707418/">documentary reliving the 10 days of sailing around Svalbard in August 2019</a>
+   * Choir singing all Norwegian hymns
+   <br /><br />
+
+* Ride the Flåm Railway
+* Ride the Bergen Railway
+* Ride the Rauma Railway
+* Ride the Nordland Railway
+* Ride the Dovre Railway
+* Ride the Røros Railway
+* Ride the Ofoten Railway
+* Ride the Raumabanen Railway
+* Ride the Setesdalsbanen Railway
+* Ride the Krøderbanen Railway
+* Ride the Thamshavn Railway
+* Ride the Urskog–Hølandsbanen Railway
+* Ride the Gamle Vossebanen Railway
+
+* Ride the speedboat over the white water rapids of the Sjoa River
+
+## It's so cold 
+
+* You have to open the fridge to heat the house
+* We pulled everything out of the freezer and huddled inside to keep warm.
+* The ice cubes in my drink have goose bumps.
+* Ice cubes are coming out of my faucet.
+
+* Cops are tazing themselves.
+* I'm shivering like a mobster in a tax office.
+* Lawyers have their hands in their own pockets.
+* Prisoners are begging for the electric chair.
+
+* You have to break the smoke off your chimney
+* Your false teeth chatter, and they are still in the glass
+
+* People look forward to getting a fever
+* Women are thankful for hot flashes
+* I farted snowflakes
+* optometrists are giving away free ice scrapers with eyeglasses.
+
+Read More: 'It's So Cold...' Jokes You Can Use Today | https://wakeupwyo.com/its-so-cold-jokes-you-can-use-today/?utm_source=tsmclip&utm_medium=referral
+* We had to chisel the dog off a lamp-post
+* Pet stores sell hamsters, gerbils, and penguins
+* Roosters are rushing into KFC and begging to use the pressure cooker!
+
+* Lady Liberty put her torch inside her dress!
+* An Amish guy is buying an electric blanket.
+
+* Starbucks is serving coffee on a stick.
+* I'm drinking hot sauce instead of coffee.
+
+* Trees are chopping themselves into firewood.
+* Even Elsa is bothered by it
+* Donald Trump's hair freezes in place.
+* I saw a greyhound bus and the dog was riding on the inside.
+
+-- <a target="_blank" href="https://wbsm.com/the-best-its-so-cold-jokes-2016/">Source</a>
+
+<hr />
+
+## Cruise ships in Norway
+
+   * https://www.wikiwand.com/en/List_of_cruise_lines
+   <br /><br />
+
+PROTIP: Some Norwegians are disdainful of tourists on big cruise ships which spoil views of their fjords and pollute their air with carbon fuels. Norway has a higher adoption of electric cars than any other country in the world. In 2025 only enviornmentally friendly ships will be allowed in fjords. So don't show cruise ship logos when you go ashore.
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=2mq0BwRz0kU">13 things you should never do in Norway</a>
+   <br /><br />
+
+References:
+   * <a target="_blank" href="https://www.cruisecritic.com/cruiseto/cruiseitineraries.cfm?cl=73">Cruise Critic</a> has a list of Norwegian cruises
+   * https://www.seascanner.com/norwegian-fjords-cruises
+   * https://www.cruisecritic.com/articles/everything-you-need-to-know-about-a-norway-cruise
+   * <a target="_blank" href="https://www.airvuz.com/collection/video/the-best-drone-videos-of-norway?id=SJj8FsYoe">Drone vidoes of cruise ships in Norway (for sale)</a>
+   * <a target="_blank" href="https://www.videvo.net/video/aerial-drone-forward-moving-shot-of-a-giant-cruise-ship-leaving-the-harbor-along-norwegian-fjord-in-flam-norway-on-a-summer-day/1301113/">video</a>
+   <br /><br />
+
+Sailing from nearby UK Southampton port or Scotland:
+
+1. <a target="_blank" href="https://www.hurtigruten.com/">Hurtigruten</a>, based in Norway, has at least one ship departing daily freight service for locals on its 780-mile coastal route. Between Bergen to Kirkenes and back the ship stops at 34 communities. Northern Lights Promise. $1,476pp 5 nights ($295/night) <a target="_blank" href="https://www.cruisecritic.com/cruiseto/cruiseitineraries.cfm?cl=73">Itinerary</a>. Serves Norwegian food throughout. Feast with the Viking chieftain in at Stamsund on the Lofoten Islands Northern Norway
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Jc8AQUViGAQ">VIDEO</a>: Hurtigruten MS Nordlys from Bergen to Ålesund, Norway - Travel Guide 4K
+   <br /><br />
+
+1. <a target="_blank" href="https://www.havilavoyages.com/the-ships/havila-food-stories">Havila Voyages</a> is a Norwegian company and serves Norwegian food throughout the Norwegian coast from Bergen to Kirkenes. Feast with the Viking chieftain in at Stamsund on the Lofoten Islands Northern Norway
+
+1. <a target="_blank" href="https://www.cruisewise.com/sc.do?d=04/10/2024&d2=04/20/2024&i=942801&c=344&v=1085&utm_medium=comparison_engine&utm_source=cw-cruise_critic&utm_campaign=meta&utm_content=cc_meta_comparison_desktop&ccdid=DID264564494&utm_term=DID264564494">BOOK</a> French Ponant cruise line has a Northern Europe from Tromso (Northern Norway) to Copenhagen for $8,320 over 10 nights from April 10, 2024.
+
+1. Cunard 800.728-6273x3 a(M-F 6-5, SS 6-245 PT) <a target="_blank" href="https://www.wikiwand.com/en/MS_Queen_Victoria">WIKIPEDIA</a>: Queen Victoria <a target="_blank" href="https://www.cunard.com/en-us/find-a-cruise/V329/V329">12-night Oct 27 - Nov 8</a> from/back to Southampton to Alesund, Tromso, Narvik, Haugesund, Southampton  $4391 ($400/day) Costco Direct per Balcony stateroom ($358/night) 2459 pp for 2. "Guest speakers, astronomers and award-winning photographers are usually on board to join guests on deck to each evening to scan for and enjoy the northern lights show. 
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=dfI2wm_Qvj4">VIDEO</a>: Although Cunard is as British as  Queen and King, with a strict formal (proper tuxedo) dress code and British spelling on menus, the company was acquired in 1998 by the <a target="_blank" href="https://www.carnivalcorp.com/">Carnival Group</a> (which owns 90 vessels across brands P&O, Seabourn, Carnival, Holland America, Princess, Germany AIDA, and Costa cruises). So <strong>US Dollars are used on board</strong> to buy extra-charge dining. <a target="_blank" href="https://www.wikiwand.com/en/Carnival_Corporation_%26_plc">WIKI</a>
+   
+   Starlink is $20/day at https://my.cunard.com/en-us/mycruise/QV/ShorexLanding 2T5QWH    
+
+   Like other cruise lines, almost all service workers are from India, Indonesia, the Philippines, South America. 
+   Soaps are from London's <a target="_blank" href="https://www.moltonbrown.com/store/">Molton Brown</a> and <a target="_blank" href="https://www.penhaligons.com/us/en/">Penhaligon's</a>.
+
+   <a target="_blank" href="https://my.cunard.com/en-us/mycruise/login">Use Edge browser to book excursions and dining</a>. Tea is daily 3:30-4:30 at the Queen's room or in your cabin. Their "Enhanced Tea" only happens once near the end of the voyage and cannot be booked ahead. 2T5QWH
+
+   10am $90 PAID bus to SouthHampton Cunard from the Victoria Coach station <a target="_blank" href="https://maps.app.goo.gl/cHQ9Rtw6ZEyUnje47">MAP</a>: 164 Buck Palance Road at Junction Elizabeth Street.
+
+   <a target="_blank" href="https://www.beyondships2.com/cunard-queen-victoria-daily-programmes.html">Sample Daily Programmes from 2018</a>
+
+   Named for its "Edwardian" decor, Queen Victoria's maiden voyage was in 2007, with 2,061 guests and 981 crew. It's a 965-foot long 90,000 ton "Vista" class built in Italy by Fincantieri Marghera shipyards. It's the smallest of Cunard's ships in operation. After rooms added with each refitting, there are 1037 staterooms. The "Hamilton" at the stern (rear) refers to a town in Bermuda, where the ship is legally registered.
+   * https://cunardcommodore.com/queenvictoria.html
+   * https://drive.google.com/file/d/1pSRcX-HpfLpuG4VBp5EmkBku-wJZlVMP/view dress code and event by day
+   <br /><br />
+
+   * <a target="_blank" href="https://www.cunard.com/en-us/the-cunard-experience/my-voyage">Planner</a> is a web page, not a mobile app.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=8temHoOX8X8">VIDEO</a> ship tour Aug 2023 shows Camilla as the "Godmother"  of the ship.
+   
+   Cunard's social media:
+   * <a target="_blank" href="https://www.instagram.com/cunardline">Instagram.com/cunardline</a>
+   * <a target="_blank" href="https://www.facebook.com/cunard">Facebook.com/cunard</a>
+   * <a target="_blank" href="https://twitter.com/cunardline">Twitter.com/cunardline</a>
+   * <a target="_blank" href="https://www.youtube.com/user/Cunard">YouTube.com/user/Cunard</a>
+   <br /><br />
+
+   On the <a target="_blank" href="https://www.youtube.com/@CunardLineOfficial">Cunard YouTube channel</a>:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=667AqY0b6QU">VIDEO</a>: Verandah dining
+   <br /><br />
+
+   The ship's facilities include seven restaurants, thirteen bars, three swimming pools, a ballroom, and a theatre.
+   <a target="_blank" href="https://www.cruisedeckplans.com/ships/dragdeck.php?ship=Queen-Victoria&zoom=1">PDF</a> <a target="_blank" href="https://www.cruisedeckplans.com/ships/info.php?ship=Queen-Victoria#livetracking">Deck plans</a>:
+   * Deck 1: Bottom of lobby, Purser Desk to arrange cash for tips, reservations, excursions, art classes, <strong>fencing lessons</strong>
+   * Deck 2: Seats in Royal Court Theater shows, casino, Golden Lion Pub, Library (6,000 titles), Lower Britannia
+   * Deck 3: Boxes in Royal Court Theater shows, shops, top of lobby, Chart Room, Britannia Restaurant (for all), Queen's Room (the ballroom where Tea is served and dances occur)
+   * Deck 4-8: rooms
+   * Deck 9: Spa, pool, Lido buffet Restaurant, Winter Garden
+   * Deck 10: Commodore Club
+   * Deck 11: Lido Pool, Pavilion Pool, Grills rooms for suite guests
+   * Self-serve free laundromats on this ship?
+   * Royal Arcade
+   <br /><br />
+
+   Videos by Cunarders:
+   * https://www.cunard.com/en-us/inspiration/destinations/starry-starry-night
+   * https://www.cruisecritic.com/cruise/cunard/queen-victoria/activities
+   * https://boards.cruisecritic.com/forum/469-queen-victoria/
+   * https://www.cunard.com/en-gb/the-cunard-experience/what-to-pack
+   * <a target="_blank" href="https://www.youtube.com/watch?v=PzJ4VARCu4A">VIDEO</a>: Day 2
+   * <a target="_blank" href="https://www.youtube.com/watch?v=8temHoOX8X8">VIDEO</a>: Day 3
+   * <a target="_blank" href="https://andanyways.com/2023/03/22/queen-victoria-on-board-dining/">AndAnyways.com</a>
+   * <a target="_blank" href="https://www.goodreads.com/book/show/44313499-high-tea-on-the-cunard-queens?from_search=true&from_srp=true&qid=RH1meGhw9f&rank=10">GoodReads.com: "High Tea on the Cunard Queens: A Light-Hearted Look at Life at Sea" by Paul Curtis</a>
+   * https://www.aboutluxurycruising.com/cunard-queen-victoria-review-2023/
+   * https://www.youtube.com/watch?v=8Yd3XXY95_M
+   <br /><br />
+
+   On other Cunard ships:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=HhJ2Ros9BfY">VIDEO</a>: <a target="_blank" href="https://paulandcarolelovetotravel.com/cunard-queen-elizabeth-review/">Queen Elizabeth</a> 2019
+   <br /><br />
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=Tusk-2lpU58">VIDEO</a>: P&O 877-828-4728 is based in UK. <a target="_blank" href="hhttps://www.poamericas.com/cruise_regions/norway_cruises.cfm">sailings to Norway</a> mostly begin in Southhampton, UK. Its Iona ship holds 5204 guests and 1800 crew, not suited for the Fjords.
+
+1. <a target="_blank" href="https://www.windstarcruises.com/norway/luxury-cruises">Winstar</a>
+   * https://boards.cruisecritic.com/forum/478-windstar-roll-calls/
+   <br /><br />
+
+1. <a target="_blank" href="https://www.fredolsencruises.com/cruise/northern-lights-l2328">Fred Olsen</a> 0800 084 6210 is a British company so serves British food (tea) throughout. Their 21 Dec 23 - 4 Jan cruise from Southampton to Alta Norway and back is $4,111pp 14-night ($200/night) with photographer Paul Howard. https://www.lifeinnorway.net/fred-olsen-balmoral-tour/
+   * https://boards.cruisecritic.com/forum/620-fred-olsen-roll-calls/
+   <br /><br />
+
+1. Viking Homelands from Bergen to Stockholm on <a target="_blank" href="https://www.luxuryonly.com/sc.do?d=04/28/2025&d2=05/12/2025&i=940811&c=354&v=1076&utm_medium=comparison_engine&utm_source=lo-cruise_critic&utm_campaign=cc_meta_comparison_desktop">Viking Jupier $7,099</a> Eidfjord, Norway • Stavanger, Norway • Oslo, Norway • Aalborg, Denmark • Copenhagen, Denmark • Warnemunde (Berlin), Germany • Bornholm, Denmark • Gdansk (Danzig), Poland • Mariehamn, Aaland, Finland • Stockholm, Sweden. Flights to Bergen, Norway (airport code BGO) are actually cheaper than to London (LHN). 
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=IIdaqPHOP50">VIDEO: Northern Isles Cruise - Holland, Scotland, Iceland & Norway
+
+1. <a target="_blank" href="https://www.disneyholidays.co.uk/disney-cruise-line/destinations/europe/norwegian-baltic/">Disney Dream</a> 7 nights from Southhampton to Amsterdam, Netherlands; Skjolden, Norway; Nordfjordeid, Norway; Sandnes, Norway 0800 169 0742
+
+* Quark Expeditions has a fantastic cruise to Iceland and Greenland in September
+
+* Silversea
+   * https://boards.cruisecritic.com/forum/680-silversea-cruise-line-roll-calls/
+
+* Saga Cruises
+
+* Seaborn
+   * https://boards.cruisecritic.com/forum/535-seabourn-roll-calls/
+   <br /><br />
+
+* Aurora Expeditions
+
+* https://vientoaparente.es/cruceros/artico-historia-y-biodiversidad/ Oct 26 - Nov 5, 2023 from Madrid, Spain to Tromso and back.
+
+Costco Travel 1-866-921-7925 Lea
+
+https://www.cruisecritic.com/articles/can-you-see-the-northern-lights-from-a-cruise-ship-the-best-cruises-for-viewing-the-northern-lights
+
+## Cunard crusing tips
+
+### Converters
+
+You can get the <a target="_blank" href="https://www.apple.com/uk/shop/product/MD837ZM/A/apple-world-travel-adapter-kit">Apple World Travel Adapter Kit for £29.00</a>. But as you probably know, chargers for the Apple MacBook Pros are so heavy that they fall off wall sockets, so I always plug them into an extension cord. Thus, get a generic converter that can handle at least the 85 watt capacity Appple Macbooks Pros require.
+
+    ### Getting to Southampton
+
+1. There is a train, but I took a bus chartered by Cunard to SouthHampton. While waiting I talked to those who seemed to know what they were doing.
+
+   One couple had laminated luggage tags. The rest of us had paper stapled together. 
+   
+   Sure enough, they had taken dozens of cruises.
+
+   "What are tips for the cruise"? I asked.
+
+1. The check-in process before getting on the boat, in the course of 50 feet four people asked to see my boarding pass.
+
+   "Why" I asked.
+   
+   One said "I was told to do this." one said.
+   
+   "How many people lose their boarding pass walking 50 feet?" I asked the lady who finally scanned me the last time.
+
+   She said "you'd be surprised".
+
+1. Make productive use of waiting time to use your iPad to figure out how to get to your room:
+
+   <a target="_blank" href="https://www.cruisedeckplans.com/ships/dragdeck.php?ship=Queen-Victoria&zoom=1">Queen Victoria deck plans</a>
+
+   Where are bathrooms? I go in them because ventilation within cabins are not great.
+
+   ## Entering Deck 1 Grand Lobby
+
+1. Once on board, what do people do?
+
+   Smell the fresh flowers in the center.  That's one luxury Cunard provides.
+
+   Before heading to the line at the Pursor's Desk, get your ID card in front of your room (for anyone to steal).
+   Why that's not given out at check-in is a mystery to me.
+
+   Some head to the library to checkout books. Cunard ships have a hugh library of books. Queen Mary has 10,000. The Victoria has 6,000. The Just the "M" fiction books took 2 bookshelves. There's a librarian to check out books. The Japanese section had 20 books. Contrast that with Royal Carribean ships. Their library had just 10 books in various non-English languages passengers had left behind.
+
+1. PROTIP: Figure out the way beween your cabin to dinner and shows, so you walk through the ship along shops rather than through narrow cabin hallways.
+
+1. PROTIP: Talk to the people with jackets and yellow arm bands -- the officers.
+
+1. Internet package: After paying for it, register:
+
+   <a target="_blank" href="https://internet.cunard.com/cun/planselection.aspx">https://internet.cunard.com/cun/planselection.aspx</a>
+
+   To login:
+
+   <a target="_blank" href="https://internet.cunard.com">https://internet.cunard.com/</a>
+
+1. Once connected, notice where web sites you visit think you're at.
+
+   QUESTION: I get an error connecting to NordVPN.
+
+1. In the olden days passengers would throw out coloured crepe paper streamers at friends and family saying goodbye at the dock. Airplanes now enable people eaiser.
+
+   Terrorism now requires restricted port access to non-passengers. And they left a mess. 
+
+
+   ### While at sea
+
+1. See the position of your ship, such as <a target="_blank" href="https://www.cruisewatch.com/cruise-ships/queen-victoria/135/position#map">Cunard Queen Victoria</a>
+
+   Remember that the <a target="_blank" href="https://www.wikiwand.com/en/Blue_Riband">fastest cruise ship</a> ever (<a target="_blank" href="https://www.wikiwand.com/en/SS_United_States">The SS United States</a>) went 40 miles per hour (35 knots or 65 km/h). Most cruise liners travel at 20 mph.
+
+1.  Cunard has their own brand of gin. They <a target="_blank" href="https://www.instagram.com/p/CViZFsOtD4Y/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">make a cake with it</a>. They also sell the Costwalds brand of 3-year-old whiskey in fancy boxes.
+
+<hr />
+
+## Jobs and Investments in Norway
+
+<a target="_blank" href="https://www.youtube.com/watch?v=TZhcnn9vzU8">VIDEO</a>: https://ellisculture.com/en/ on how to get a job in Norway
+   * www.thelocal.no (English-language jobs in Norway) $1+/month
+   * www.indeed.com
+   * www.nav.no
+   * www.finn.no
+   * www.jobbnorge.no
+   * www.jobsinoslo.com
+   * www.jobbdirekte.no
+   * www.careerjet.com
+   * www.learn4good.com 
+   <br /><br />
+
+   * <a target="_blank" href="https://emp.jobylon.com/jobs/185070-kpmg-norge-onsker-du-a-jobbe-med-cybersikkerhet-og-teknologi-i-tromso/">KPMG (international consultancy)</a> is a leader in Northern Norway in strategic consultancy within cyber security and technology.
+
+<a target="_blank" href="https://www.linkedin.com/groups/80194/">LinkedIn groups</a>: Norway Business and Professional Network
+
+https://www.linkedin.com/in/rebeccascheel/
+
+* Among <a target="_blank" href="https://www.wikiwand.com/en/List_of_the_largest_companies_of_Norway">WIKIPEDIA</a>: The largest companies of Norway, most are energy/patroleum. But 90% of electricity is from hydroelectricity.
+
+https://ielanguages.com/norwegian-be-have.html
+
+
+## Computer words in Norwegian
+
+* Skytjenester (AWS, Azure, Google Cloud)
+* Kunstig intelligens og maskinlæring (AI and machine learning)
+* Risikovurderinger (Risk assessment)
+* Sikkerhetsarkitektur = Security architecture
+* Tilgangsstyring (IAM og IGA) = Access management (IAM and IGA)
+* Kryptografi = Cryptography
+<br /><br />
+
+"Norges Bank" is the Central Bank of Norway. They are using retail CBDC sandboxs using Hyperledger Besu and ERC-20 tokens in a collaboration with Norwegian FinTech firms, private banks, and government entities.
+
+
+## Port Southhampton and London
+
+https://www.nationalrail.co.uk/
+
+See https://wilsonmar.github.io/london
+
+## Resources
+
+
+## More on traveling
