@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-25"
-lastchange: "26-05-25 v023 spellings fix @museums-roadtrip-usa.md"
+lastchange: "26-05-25 v024 autofixses @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -61,12 +61,12 @@ That green line down the middle of America defines the extent wet storms reach f
 When geologist John Westly Powell identified this phenomenon across the "prairies" in 1890, that natural line was at the 100th Meridian (vs. 98th today). Since then, "Climate change" continues to shift East. So expect less rain for agriculture around Winnipeg (Manitoba, Canada), Fargo, Sioux Falls, Omaha, Lincoln, Wichita, Oklahoma City, Forth Worth, Austin, and San Antonio Texas.
 
 
-<strong>Cites</strong> here are listed within each <a href="#CivilWar">state of the union</a>, along natural geography East-to-West:
+<strong>Cities</strong> here are listed within each <a href="#CivilWar">state of the union</a>, along natural geography East-to-West:
 
 
 <a href="#extreme-corners">Extreme Corners</a>
 
-Journeys floatng <strong>on water</strong> toward the Equator:
+Journeys floating <strong>on water</strong> toward the Equator:
 
 * <a href="#DownEastCoast"> Down the <strong>Atlantic Eastern Seaboard</strong></a> (<a href="#FreedomRide">Freedom Ride</a>)
 
@@ -490,7 +490,6 @@ John F. Kennedy Presidential Library and Museum</a>, Columbia Point, Boston</li>
 <li><a target="_blank" href="https://www.aldrichart.org/">Aldrich Museum of Contemporary Art</a>, Ridgefield</li>
 <li><a target="_blank" href="https://www.stamfordmuseum.org/">The Stamford Museum and Nature Center</a></li>
 <li><a target="_blank" href="https://www.brucemuseum.org/">Bruce Museum of Arts and Science</a>, Greenwich</li>
-</li>
 </ul>
 
 <a name="NJ"></a>
@@ -586,7 +585,7 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>Museum of Chinese in America</li>
 <li>Tenement Museum</li>
 <li>Occulus station (Apple Store), 9/11 Museum, World Trade Center</li>
-<il>Brooklyn Bridge (built 1883)</li>
+<li>Brooklyn Bridge (built 1883)</li>
 <li>New York Stock Exchange, Charging Bull</li>
 <li>Fraunces Tavern</li>
 </ul>
@@ -820,7 +819,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.wm.edu/muscarelle/">Muscarelle Museum of Art at the College of William and Mary</a></li>
 <li> Abby Aldrich</li>
 <li> Rockefeller Folk Art Collection</li>
-<li><a target="_blank" href="https://www.colonialwilliamsburg.org/">Colonial Williamsburg Village</a> reenacts 18th centry American village</li>
+<li><a target="_blank" href="https://www.colonialwilliamsburg.org/">Colonial Williamsburg Village</a> reenacts 18th century American village</li>
 </ul>
 
 
@@ -892,7 +891,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.high.org/">High Museum of Art</a></li>
 <li><a target="_blank" href="https://museum.oglethorpe.edu/">Oglethorpe University Museum</a>, Atlanta</li>
 <li><a target="_blank" href="https://www.jimmycarterlibrary.gov/">Jimmy Carter Presidential Library and Museum</a>, Atlanta</li>
-<li type="circle"><a target="_blank" href="https://www.staplehouse.com/staplehouseabout">Staplehouse restaurant (<a target="_blank" href="https://www.toasttab.com/staplehouse-market-541-edgewood-avenue-southeast/v3/">menu</a>)</li>
+<li type="circle"><a target="_blank" href="https://www.staplehouse.com/staplehouseabout">Staplehouse restaurant</a> (<a target="_blank" href="https://www.toasttab.com/staplehouse-market-541-edgewood-avenue-southeast/v3/">menu</a>)</li>
 </ul>
 
 <ul>
@@ -918,7 +917,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://floridamuseum.org/">Florida International Museum</a>, St. Petersburg</li>
 <li><a target="_blank" href="https://www.fine-arts.org/">Museum of Fine Arts</a>, St. Petersburg</li>
 <li><a target="_blank" href="https://salvadordalimuseum.org/">Salvador Dal&iacute; Museum</a>, St. Petersburg</li>
-<li> Florida State Museum, Gainsville </li>
+<li> Florida State Museum, Gainesville </li>
 <li><a target="_blank" href="https://www.harn.ufl.edu/">Harn Museum at the University of Florida</a>, Gainesville</li>
 <li><a target="_blank" href="https://www.appletonmuseum.org/">Appleton Museum of Art</a>, Ocala
 </li>
@@ -926,7 +925,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.thebrogan.org/">Mary Brogan Museum of Art and Science</a>, Tallahassee</li>
 <li><a target="_blank" href="https://www.pensacolamuseumofart.org/">Pensacola Museum of Art</a></li>
 <li><a target="_blank" href="https://www.mofa.fsu.edu/">Florida State University Museum of Fine Arts</a>, Tallahassee</li>
-<li target="_blank" href="https://www.kennedyspacecenter.com/">NASA Kennedy Center, Merritt Island</li>
+<li><a target="_blank" href="https://www.kennedyspacecenter.com/">NASA Kennedy Center</a>, Merritt Island</li>
 </ul>
 
 ### South down the East coast
@@ -995,16 +994,17 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 
 ## Down the Mississippi River
 
-At <a target="_blank" href="https://www.nps.gov/miss/riverfacts.htm" title="US National Park Service">2,300 miles, the Mississippi River is the 4th longest in the world (after Nile, Amazon, Yangtze). 
+At <a target="_blank" href="https://www.nps.gov/miss/riverfacts.htm" title="US National Park Service">2,300 miles</a>, the Mississippi River is the 4th longest in the world (after Nile, Amazon, Yangtze). 
 With feeds from the Missouri River (starting in Montana), Ohio River, and Arkansas River,
 it's part of the <strong>largest watershed in the world</strong>.
 
-<img alt="us-watershedbg" width="650" src="https://cloud.githubusercontent.com/assets/300046/25560325/ff5f8ab4-2d1e-11e7-9b96-f34d6aa0d902.jpg"></a>
+<img alt="us-watershedbg" width="650" src="https://cloud.githubusercontent.com/assets/300046/25560325/ff5f8ab4-2d1e-11e7-9b96-f34d6aa0d902.jpg">
 
 <a target="_blank" href="https://www.youtube.com/watch?v=BubAF7KSs64&t=3m2s">VIDEO</a>: "It's inevitable that the US emerged as a global superpower": the Missisippi is the longest <strong>navigable</strong> river in the world, enabling inland cities to be oceanic ports serving world markets by boat (10-39X cheaper than by road).<br />
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1672416011/usa-mississippi-1920x1080_ipjcqr.jpg"><img alt="usa-mississippi-1920x1080.jpg" width="650" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1672416011/usa-mississippi-1920x1080_ipjcqr.jpg"></a>
 <br /><br />
-It takes <a target="_blank" href="https://www.vikingrivercruises.com/cruise-destinations/mississippi/americas-heartland/2023-st-louis-to-st-paul/resources.html">8 days for the "America Heartland" cruise between St. Louis and to St. Paul (waterfalls at the head of the Mississipi):<br />
+It takes <a target="_blank" href="https://www.vikingrivercruises.com/cruise-destinations/mississippi/americas-heartland/2023-st-louis-to-st-paul/resources.html">8 days for the "America Heartland" cruise between St. Louis and to St. Paul (waterfalls at the head of the Mississipi):
+
 <img width="377" alt="roadtrip-usa-viking.png" src="https://user-images.githubusercontent.com/300046/90310441-86796580-deae-11ea-8738-2ac6e5bf7669.png"></a>
 <br />
 Cruise on a riverboat between New Orleans and Memphis, with stops in the Vicksburg battlegrounds.
@@ -1435,7 +1435,7 @@ Cleveland had the #8 rate of crime among all cities in the US (1,557/100,000 in 
 
 > <strong> Indiana </strong>
 
-<a name="Cleveland"></a>
+<a name="Indianapolis"></a>
 
 ### Indianapolis:
 
@@ -1674,7 +1674,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://southwestmuseum.org/">Southwest Museum</a>, Los Angeles</li>
 </ul>
 
-<a name="WLA"></a>
+<a name="ELA"></a>
 
 ### East Los Angeles:
 
@@ -1988,11 +1988,11 @@ Minneapolis had the #19 rate of crime among all cities in the US (1,101/100,000 
 <a target="_blank" href="https://www.amazon.com/Passport-World-Route-Donna-Bouche/dp/B088DZ79NH/">VIDEO</a>:
 <a target="_blank" href="https://en.wikipedia.org/wiki/U.S._Route_66#/media/File:Map_of_US_66.svg">Route 66</a> was one of the original highways within the U.S. starting in 1924.
 Thus its colloqual name the "Mother Road". It served as a military transport corridor during WWII.
-In post-war years, motels, diners, and gas stations along Route 66 became popular vacaction destinations.
+In post-war years, motels, diners, and gas stations along Route 66 became popular vacation destinations.
 
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/14080916/1a0a42ca-f4c5-11e5-8230-cb0b95dde974.jpg"><img alt="!map beige route-66 600x200.jpg" width="600" height="200" src="https://cloud.githubusercontent.com/assets/300046/14080916/1a0a42ca-f4c5-11e5-8230-cb0b95dde974.jpg"></a>
 
-Route 66 begins on Michigan Avene in Chicago, where you can eat at Lou Mitchell's diner.
+Route 66 begins on Michigan Avenue in Chicago, where you can eat at Lou Mitchell's diner.
 The route goes to St. Louis, Missouri, then through smaller road-side towns on the way to Tulsa and Oklahoma City, Amarillo TX, Albuquerque, New Mexico, then over mountains to Flagstaff AZ before ending on the Santa Monica pier in Los Angeles, California.
 
 However, <a href="#freeways">interstate freeways</a> built from 1956 enabled travel without the need to slow down through towns. That bypassed small businesses along Route 66. So visit iconic sites before they're gone:
