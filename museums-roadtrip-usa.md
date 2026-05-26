@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-19"
-lastchange: "26-05-19 v021 I-95 & metrics @museums-roadtrip-usa.md"
+date: "2026-05-25"
+lastchange: "26-05-25 v021 free days @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -526,51 +526,70 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 
 <a name="NYC"></a>
 
-### New York City (Manhattan)
+### New York City (Manhattan Central Park)
 
 <ul>
+<li>Bronx Zoo</li>
+<li>New York Botanical Garden</li>
 <li><a target="_blank" href="https://www.bxma.org/">Bronx Museum of Art</a></li>
 <li><strong>Metropolitan Museum of Art</strong> and the Cloisters</li>
-<li><a target="_blank" href="https://www.alternativemuseum.org/">Alternative Museum</a></li>
-<li><a target="_blank" href="https://www.folkartmuseum.org/">American Folk Art Museum</a></li>
-<li><a target="_blank" href="https://www.amnh.org/">American Museum of Natural History</a></li>
-<li><a target="_blank" href="https://chelseaartmuseum.org/">Chelsea Art Museum</a></li>
-<li><a target="_blank" href="https://ndm.si.edu/">Cooper-Hewitt, National Design Museum</a></li>
-<li><a target="_blank" href="https://www.daheshmuseum.org/">Dahesh Museum</a></li>
-<li><a target="_blank" href="https://www.diacenter.org/">Dia Center for the Arts</a></li>
-<li><a target="_blank" href="https://www.diachelsea.org/">Dia: Chelsea</a></li>
-<li><a target="_blank" href="https://www.icp.org/">International Center of Photography</a></li>
-<li><a target="_blank" href="https://www.thejewishmuseum.org/"><strong>Jewish Museum</strong></a></li>
-<li><a target="_blank" href="https://ca80.lehman.cuny.edu/gallery/">Lehman College Art Gallery</a></li>
-<li><a target="_blank" href="https://www.morganlibrary.org/">Morgan Library</a></li>
-<li><a target="_blank" href="https://www.elmuseo.org/">El Museo del Barrio</a></li>
-<li><a target="_blank" href="https://www.africanart.org/">Museum for African Art</a></li>
-<li><a target="_blank" href="https://www.moma.org/"><strong>Museum of Modern Art (MOMA)</strong></a></li>
+<li>Apollo Theater, Harlem</li>
+<li>Columbia University</li>
 <li><a target="_blank" href="https://www.mcny.org/"><strong>Museum of the City of New York</strong></a></li>
-<li><a target="_blank" href="https://www.nationalacademy.org/">Museum of the National Academy of Design</a></li>
-<li><a target="_blank" href="https://www.nmai.si.edu/">National Museum of the American Indian</a></li>
-<li><a target="_blank" href="https://www.neuegalerie.org/">Neue Galerie Museum for German and Austrian Art</a></li>
-<li><a target="_blank" href="https://www.newmuseum.org/">New Museum of Contemporary Art</a></li>
-<li><a target="_blank" href="https://www.nyhistory.org/">New-York Historical Society</a></li>
-<li><a target="_blank" href="https://www.roerich.org/">Nicholas Roerich Museum</a></li>
-<li><a target="_blank" href="https://www.queensmuseum.org/">Queens Museum of Art</a></li>
-<li><a target="_blank" href="https://www.rmanyc.org/">Rubin Museum of Art: Art of the Himalayas</a></li>
-<li><a target="_blank" href="https://www.siiasmuseum.org/">Staten Island Institute of Arts and Sciences</a></li>
-<li><a target="_blank" href="https://www.studiomuseuminharlem.org/">Studio Museum in Harlem</a></li>
-<li><a target="_blank" href="https://www.ukrainianmuseum.org/">Ukrainian Museum</a></li>
-<li><a target="_blank" href="https://www.whitney.org/"><strong>Whitney Museum of American Art</strong></a></li>
-<li> American Museum of Natural History</li>
-<li> Gallery of Modern Art</li>
-<li> GONE: Museum of Holography</li>
 <li><a target="_blank" href="https://www.metmuseum.org/">Metropolitan Museum of Art (the Met)</a></li>
-<li><a target="_blank" href="https://www.guggenheim.org/new_york_index.shtml"><strong>Guggenheim Museum</strong></a></li>
-<li>Solomon R. Guggenheim Museum, with
-<a target="_blank" href="https://www.Guggenheim.com/"> Guggenheim.com</a> for motorcycles and
-<a target="_blank" href="https://www.Guggenheim.org/">Guggenheim.org</a> for environmental art</li>
-<li> Museum of the American Indian</li>
-<li><a target="_blank" href="https://www.nyu.edu/greyart/">Grey Art Gallery at New York University</a></li>
-<li><a target="_blank" href="https://www.frick.org/"> <strong>Frick Collection</strong></a></li>
-<li><a target="_blank" href="https://hispanicsociety.org/">Hispanic Society of America</a></li>
+<li>New York Historical Society</li>
+<li>Bethesda Terrace</li>
+<li><a target="_blank" href="https://www.frick.org/"> <strong>Frick Collection</strong></a> (Free 5:30–9pm 1st Friday each month except January and September)</li>
+<li>Lincoln Center</li>
+<li type="circle">Tavern on the Green, Central Park West</li>
+</ul>
+
+### New York City (Manhattan Midtown)
+
+<ul>
+<li>Trump Tower</li>
+<li><a target="_blank" href="https://www.amnh.org/">American Museum of Natural History</a> (Big Bang theater)</li>
+<li>American Museum of Natural History</li>
+<li>Museum of Art and Design</li>
+<li>Carnagie Hall</li>
+
+<li><a target="_blank" href="https://www.moma.org/"><strong>Museum of Modern Art (MOMA)</strong></a></li>
+<li>Le Bernardine (3 Michelin star)</li>
+<li>Radio City Music Hall, Top of The Rock</li>
+<li>FAO Schwarz toy store</li>
+<li>TKTS Times Square</li>
+<li>Museum of Broadway</li>
+<li>Bryant Park booths & ice skating</li>
+<li>Grand Central Terminal</li>
+
+<li>Penn Station, NY Pizza Suprema</li>
+<li>Macy's</li>
+<li>Empire State Building</li>
+<li><a target="_blank" href="https://www.morganlibrary.org/">Morgan Library</a></li>
+<li>United Nations</li>
+
+<li>Chelsea Piers, Pier 57, Chelsea Market</li>
+<li><a target="_blank" href="https://chelseaartmuseum.org/">Chelsea Art Museum</a></li>
+<li>Flatiron building</li>
+<li>Eleven Madison Park (3-star Michelin restaurant)</li>
+
+<li><a target="_blank" href="https://www.rmanyc.org/">Rubin Museum of Art: Art of the Himalayas</a></li>
+<li><a target="_blank" href="https://www.whitney.org/"><strong>Whitney Museum of American Art</strong></a></li>
+<li>Strand Book Store</li>
+</ul>
+
+### New York City (Manhattan Lower East Side)
+
+<ul>
+<li>McSorley's Old Ale House</li>
+<li>Russ & Daughters & Katz's Delicatessen</li>
+<li>Mulberry Street ("Little Italy")</li>
+<li>Museum of Chinese in America</li>
+<li>Tenament Museum</li>
+<li>Occulus station (Apple Store), 9/11 Museum, World Trade Center</li>
+<il>Brooklyn Bridge (built 1883)</li>
+<li>New York Stock Exchange, Charging Bull</li>
+<li>Fraunces Tavern</li>
 </ul>
 
 <a name="Brooklyn"></a>
@@ -582,11 +601,45 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 
 <ul>
 <li> Walk the Brooklyn Bridge</li>
+<li>Jane's Carousel</li>
 <li type="circle"><a target="_blank" href="https://www.opentable.com/river-cafe-brooklyn">River Cafe</a> (Jackets required of men) </li>
 <li><a target="_blank" href="https://www.brooklynmuseum.org/">Brooklyn Museum of Art</a></li>
 <li><a target="_blank" href="https://www.brooklynx.org/rotunda/default.asp">Rotunda Gallery</a></li>
 </ul>
 
+<ul>
+<li><a target="_blank" href="https://www.alternativemuseum.org/">Alternative Museum</a></li>
+<li><a target="_blank" href="https://www.folkartmuseum.org/">American Folk Art Museum</a></li>
+<li><a target="_blank" href="https://ndm.si.edu/">Cooper-Hewitt, National Design Museum</a></li>
+<li><a target="_blank" href="https://www.daheshmuseum.org/">Dahesh Museum</a></li>
+<li><a target="_blank" href="https://www.diacenter.org/">Dia Center for the Arts</a></li>
+<li><a target="_blank" href="https://www.diachelsea.org/">Dia: Chelsea</a></li>
+<li><a target="_blank" href="https://www.icp.org/">International Center of Photography</a></li>
+<li><a target="_blank" href="https://www.thejewishmuseum.org/"><strong>Jewish Museum</strong></a></li>
+<li><a target="_blank" href="https://ca80.lehman.cuny.edu/gallery/">Lehman College Art Gallery</a></li>
+<li><a target="_blank" href="https://www.elmuseo.org/">El Museo del Barrio</a></li>
+<li><a target="_blank" href="https://www.africanart.org/">Museum for African Art</a></li>
+<li><a target="_blank" href="https://www.nationalacademy.org/">Museum of the National Academy of Design</a></li>
+<li><a target="_blank" href="https://www.nmai.si.edu/">National Museum of the American Indian</a></li>
+<li><a target="_blank" href="https://www.neuegalerie.org/">Neue Galerie Museum for German and Austrian Art</a></li>
+<li><a target="_blank" href="https://www.newmuseum.org/">New Museum of Contemporary Art</a></li>
+<li><a target="_blank" href="https://www.nyhistory.org/">New-York Historical Society</a></li>
+<li><a target="_blank" href="https://www.roerich.org/">Nicholas Roerich Museum</a></li>
+<li><a target="_blank" href="https://www.queensmuseum.org/">Queens Museum of Art</a></li>
+<li><a target="_blank" href="https://www.siiasmuseum.org/">Staten Island Institute of Arts and Sciences</a></li>
+<li><a target="_blank" href="https://www.studiomuseuminharlem.org/">Studio Museum in Harlem</a></li>
+<li><a target="_blank" href="https://www.ukrainianmuseum.org/">Ukrainian Museum</a></li>
+
+<li> Gallery of Modern Art</li>
+<li> GONE: Museum of Holography</li>
+<li><a target="_blank" href="https://www.guggenheim.org/new_york_index.shtml"><strong>Guggenheim Museum</strong></a></li>
+<li>Solomon R. Guggenheim Museum, with
+<a target="_blank" href="https://www.Guggenheim.com/"> Guggenheim.com</a> for motorcycles and
+<a target="_blank" href="https://www.Guggenheim.org/">Guggenheim.org</a> for environmental art</li>
+<li> Museum of the American Indian</li>
+<li><a target="_blank" href="https://www.nyu.edu/greyart/">Grey Art Gallery at New York University</a></li>
+<li><a target="_blank" href="https://hispanicsociety.org/">Hispanic Society of America</a></li>
+</ul>
 
 <a name="PA"></a>
 
