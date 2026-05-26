@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-25"
-lastchange: "26-05-25 v024 autofixses @museums-roadtrip-usa.md"
+date: "2026-05-26"
+lastchange: "26-05-26 v026 joes @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -567,11 +567,11 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>United Nations</li>
 
 <li>Chelsea Piers, Pier 57, Chelsea Market</li>
-<li><a target="_blank" href="https://chelseaartmuseum.org/">Chelsea Art Museum</a></li>
 <li>Flatiron building</li>
-<li>Eleven Madison Park (3-star Michelin restaurant)</li>
+<li type="circle">Eleven Madison Park (3-star Michelin restaurant)</li>
 
 <li><a target="_blank" href="https://www.rmanyc.org/">Rubin Museum of Art: Art of the Himalayas</a></li>
+<li><a target="_blank" href="https://momath.org/visit/">National Museum of Mathematics</a></li>
 <li><a target="_blank" href="https://www.whitney.org/"><strong>Whitney Museum of American Art</strong></a></li>
 <li>Strand Book Store</li>
 </ul>
@@ -582,6 +582,7 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>McSorley's Old Ale House</li>
 <li>Russ & Daughters & Katz's Delicatessen</li>
 <li>Mulberry Street ("Little Italy")</li>
+<li type="circle">Joe's Shanghai (dumplings), Chinatown (<a target="_blank" href="https://www.youtube.com/watch?v=Ybaz2bF9YSY&t=4816s">VIDEO</a>)</li>
 <li>Museum of Chinese in America</li>
 <li>Tenement Museum</li>
 <li>Occulus station (Apple Store), 9/11 Museum, World Trade Center</li>
@@ -2015,9 +2016,9 @@ here we begin from Oklahoma and take a long detour North to avoid too much deser
 
 <ul>
 <li><a target="_blank" href="https://www.ou.edu/fjjma/">Fred Jones Jr. Museum of Art at the University of Oklahoma</a>, Norman</li>
-<li><a target="_blank" href="https://www.gilcrease.org/">Gilcrease Museum</a>, Tulsa</li>
+<li><a target="_blank" href="https://www.gilcrease.org/">Gilcrease Museum ???</a>, Tulsa</li>
 <li><a target="_blank" href="https://www.cowboyhalloffame.org/">National Cowboy Hall of Fame and Western Heritage Museum</a>, Oklahoma City</li>
-<li><a target="_blank" href="https://www.philbrook.org/">Philbrook Museum of Art (Philbrook Art Centre)</a>, Tulsa</li>
+<li><a target="_blank" href="https://www.philbrook.org/">Philbrook Museum of Art (Philbrook Art Centre)</a> (villa & gardens), Tulsa</li>
 </ul>
 
 <a name="TX"></a>
