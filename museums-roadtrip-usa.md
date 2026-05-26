@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-25"
-lastchange: "26-05-25 v021 free days @museums-roadtrip-usa.md"
+lastchange: "26-05-25 v023 spellings fix @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -58,7 +58,7 @@ The US is only one of two countries in the world still stuck on the imperial sys
 
 That green line down the middle of America defines the extent wet storms reach from the East. West of that is the "Rain Shadow" of limited moisture from the Pacific West blocked by the tall Cascade Mountains in Washington state housing Leavenworth, Washington and Rocky Mountains housing Aspen, Vail, Breckenridge, Telluride, <a target="_blank" href="https://www.google.com/maps/place/Denver,+CO/@39.7584783,-113.8531857,5z/">Denver, Colorado</a>), Park City, Utah, California.
 
-When geologist John Westly Powell identified this phenomenon across the "pairies" in 1890, that natural line was at the 100th Meridian (vs. 98th today). Since then, "Climate change" continues to shift East. So expect less rain for agriculture around Winnipeg (Manitoba, Canada), Fargo, Sioux Falls, Omaha, Lincoln, Wichita, Oklahoma City, Forth Worth, Austin, and San Antonio Texas.
+When geologist John Westly Powell identified this phenomenon across the "prairies" in 1890, that natural line was at the 100th Meridian (vs. 98th today). Since then, "Climate change" continues to shift East. So expect less rain for agriculture around Winnipeg (Manitoba, Canada), Fargo, Sioux Falls, Omaha, Lincoln, Wichita, Oklahoma City, Forth Worth, Austin, and San Antonio Texas.
 
 
 <strong>Cites</strong> here are listed within each <a href="#CivilWar">state of the union</a>, along natural geography East-to-West:
@@ -229,7 +229,7 @@ https://github.com/wilsonmar/python-samples/blob/main/sunset-speed.py
 
 ## US National Parks
 
-Among America's greatest treasures are the <a target="_blank" href="https://www.wikiwand.com/en/National_Park_Service">63</a> <a target="_blank" href="https://www.nps.gov/index.htm">national parks managed by the U.S. National Park Service.
+Among America's greatest treasures are the <a target="_blank" href="https://www.wikiwand.com/en/National_Park_Service">63</a> <a target="_blank" href="https://www.nps.gov/index.htm">national parks managed by the U.S. National Park Service</a>.
 
 <a target="_blank" href="https://user-images.githubusercontent.com/300046/133946844-809c6182-2763-45ba-8d29-217ea2eb28cc.jpeg">
 <img alt="us-nps-ma-1500x938.jpeg" src="https://user-images.githubusercontent.com/300046/133946844-809c6182-2763-45ba-8d29-217ea2eb28cc.jpeg" /></a>
@@ -253,9 +253,7 @@ https://github.com/wilsonmar/Data-Analysis-and-Machine-Learning-Projects/blob/ma
 <a name="Mighty5"></a>
 
 Many "Western" movies were filmed in iconic "Mighty 5" parks below Salt Lake City in Utah: 
-<a target="_blank" href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=16KbY2hCvDQEAAPsK6bwyEDjPZyc&ll=37.542383125235986%2C-110.57365010534873&z=8">Las Vegas from the South and Denver from the North<br />
-<img alt="us-might5-route-1682x1014" src="https://user-images.githubusercontent.com/300046/134821783-60f33b47-ccea-4ab0-a12f-69505411c763.png" /></a>
-
+<a target="_blank" href="https://www.google.com/maps/d/u/0/viewer?msa=0&mid=16KbY2hCvDQEAAPsK6bwyEDjPZyc&ll=37.542383125235986%2C-110.57365010534873&z=8">Las Vegas from the South and Denver from the North<br /><img alt="us-might5-route-1682x1014" src="https://user-images.githubusercontent.com/300046/134821783-60f33b47-ccea-4ab0-a12f-69505411c763.png" />
 322 miles in 5 hours without stopping (click for Google Map)</a>. But you'll want to stop and marvel the views at each park:
    1. <a target="_blank" href="https://www.youtube.com/results?search_query=zion+national+park++360+4k">4K 360 VIDEO</a>: <a target="_blank" href="https://www.nps.gov/zion/index.htm">Zion</a> (Utah's first National Park)
    2. <a target="_blank" href="https://www.youtube.com/results?search_query=4k+360+bryce+canyon">4K 360 VIDEO</a>: <a target="_blank" href="https://www.nps.gov/brca/index.htm">Bryce Canyon</a> <a target="_blank" href="https://www.youtube.com/brycecanyonnps">VIDEO</a>
@@ -315,7 +313,7 @@ The East coast also has quaint <a target="_blank" href="https://www.travelandlei
 
 <a name="FreedomRide"></a>
 
-## Freedom Ride
+### Freedom Ride
 
 The planned route of the courageous <a target="_blank" href="https://www.history.com/topics/black-history/freedom-rides">Freedom Ride</a> May 1961 through the "Jim Crow" South to test a Supreme Court ruling against “whites-only” restrooms and lunch counters at bus stations:
 
@@ -325,7 +323,7 @@ The Woolworth lunch counter in downtown Greensboro, NC is now a <a target="_blan
 
 The ride stopped on May 14 in Anniston, Alabama where their bus was burnt by segregationists.
 
-<hr />
+### By State & City
 
 <a name="ME"></a>
 
@@ -358,7 +356,7 @@ The ride stopped on May 14 in Anniston, Alabama where their bus was burnt by seg
 
 <a name="MA"></a>
 
-> <strong> Massachusettes</strong>
+> <strong>Massachusetts</strong>
 
 ### Boston:
 
@@ -477,7 +475,7 @@ John F. Kennedy Presidential Library and Museum</a>, Columbia Point, Boston</li>
 <li><a target="_blank" href="https://benton.uconn.edu/">Benton Museum of Art at the University of Connecticut</a>, Storrs</li>
 <li><a target="_blank" href="https://www.marktwainhouse.org/">Mark Twain House and Museum</a>, West Hartford [1]</li>
 <li>Harriet Beecher Stowe Home, West Hartford</li>
-<li><a target="_blank" href="https://www.wadsworthatheneum.org/"><strong>Wadsworth Atheneum</strong></a>, Hartford
+<li><a target="_blank" href="https://www.wadsworthatheneum.org/"><strong>Wadsworth Atheneum</strong></a>, Hartford</li>
 <li><a target="_blank" href="https://www.hillstead.org/">Hill-Stead Museum</a>, Farmington</li>
 <li><a target="_blank" href="https://www.nbmaa.org/"><strong>New Britain Museum of American Art</strong></a></li>
 
@@ -506,7 +504,7 @@ John F. Kennedy Presidential Library and Museum</a>, Columbia Point, Boston</li>
 <li><a target="_blank" href="https://www.zimmerlimuseum.rutgers.edu/">Jane Voorhees Zimmerli Art Museum at Rutgers University</a>, Brunswick</li>
 <li><a target="_blank" href="https://www.princetonartmuseum.org/">Art Museum at Princeton University</a>, Princeton</li>
 <li type="circle"><a target="_blank" href="https://www.opentable.com/rats-restaurant-grounds-for-sculpture">Rats</a> [restaurant with gardens]</li>
-<br />
+
 <li><a target="_blank" href="https://thebergenmuseum.com/">Bergen Museum</a>, Hackensack</li>
 <li><a target="_blank" href="https://www.groundsforsculpture.org/">Grounds For Sculpture</a>, Hamilton</li>
 <li><a target="_blank" href="https://www.montclairartmuseum.org/">Montclair Art Museum</a></li>
@@ -551,13 +549,14 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li><a target="_blank" href="https://www.amnh.org/">American Museum of Natural History</a> (Big Bang theater)</li>
 <li>American Museum of Natural History</li>
 <li>Museum of Art and Design</li>
-<li>Carnagie Hall</li>
+<li>Carnegie Hall</li>
 
 <li><a target="_blank" href="https://www.moma.org/"><strong>Museum of Modern Art (MOMA)</strong></a></li>
 <li>Le Bernardine (3 Michelin star)</li>
 <li>Radio City Music Hall, Top of The Rock</li>
+<li>Summit One Vanderbilt @ 45 E 42nd St</li>
 <li>FAO Schwarz toy store</li>
-<li>TKTS Times Square</li>
+<li>TKTS Times Square (for less popular Broadway show tickets)</li>
 <li>Museum of Broadway</li>
 <li>Bryant Park booths & ice skating</li>
 <li>Grand Central Terminal</li>
@@ -585,12 +584,13 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>Russ & Daughters & Katz's Delicatessen</li>
 <li>Mulberry Street ("Little Italy")</li>
 <li>Museum of Chinese in America</li>
-<li>Tenament Museum</li>
+<li>Tenement Museum</li>
 <li>Occulus station (Apple Store), 9/11 Museum, World Trade Center</li>
 <il>Brooklyn Bridge (built 1883)</li>
 <li>New York Stock Exchange, Charging Bull</li>
 <li>Fraunces Tavern</li>
 </ul>
+
 
 <a name="Brooklyn"></a>
 
@@ -688,7 +688,7 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li> Museum of American Art</li>
 <li> University Museum of Archaeology and Anthropology</li>
 <li><a target="_blank" href="https://www.woodmereartmuseum.org/">Woodmere Art Museum</a></li>
-<br />
+
 <li type="circle">Ristorante Pesto</li>
 <li type="circle"><a target="_blank" href="https://www.thedailymeal.com/vetri">Vetri Cucina</a> <a target="_blank" href="https://www.thedailymeal.com/101-best-restaurants-america-2019/slide-50">[#50]</a></li>
 <li type="circle">Zahav restaurant of Israeli cuisine, Philadelphia</li>
@@ -776,11 +776,11 @@ The Smithsonian Institution: The Freer Gallery of Art and The Arthur M. Sackler 
 <li><a target="_blank" href="https://www.uschs.org/04_history/subs_collection/04b.html">U.S. Capital Art Collection</a></li>
 <li><a target="_blank" href="https://www.history.navy.mil/branches/nhcorg6.htm">U.S. Navy Art Collection</a></li>
 <li><a target="_blank" href="https://www.ushmm.org/">
-US Holocost Memorial Museum</a> 10-5:30 every day, but timed passes are necessary for visiting the permanent exhibit (20 each day from tickets.com for $1.75)</li>
+US Holocaust Memorial Museum</a> 10-5:30 every day, but timed passes are necessary for visiting the permanent exhibit (20 each day from tickets.com for $1.75)</li>
 <li type="square"><a target="_blank" href="https://www.whitehouse.gov/">White House</a>, 1900 Pennsylvania Avenue</li>
 </ul>
 
-<a name="WA"></a>
+<a name="WV"></a>
 
 > <strong>West Virginia</strong>
 
@@ -820,7 +820,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.wm.edu/muscarelle/">Muscarelle Museum of Art at the College of William and Mary</a></li>
 <li> Abby Aldrich</li>
 <li> Rockefeller Folk Art Collection</li>
-<li><a target="_blank" href="https://www.colonialwilliamsburg.org/">Colonial Williamsburg Villege</a> reenacts 18th centry American village</li>
+<li><a target="_blank" href="https://www.colonialwilliamsburg.org/">Colonial Williamsburg Village</a> reenacts 18th centry American village</li>
 </ul>
 
 
@@ -892,7 +892,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.high.org/">High Museum of Art</a></li>
 <li><a target="_blank" href="https://museum.oglethorpe.edu/">Oglethorpe University Museum</a>, Atlanta</li>
 <li><a target="_blank" href="https://www.jimmycarterlibrary.gov/">Jimmy Carter Presidential Library and Museum</a>, Atlanta</li>
-<li type="center" href="https://www.staplehouse.com/staplehouseabout">Staplehouse restaurant (<a target="_blank" href="https://www.toasttab.com/staplehouse-market-541-edgewood-avenue-southeast/v3/">menu</a>)</li>
+<li type="circle"><a target="_blank" href="https://www.staplehouse.com/staplehouseabout">Staplehouse restaurant (<a target="_blank" href="https://www.toasttab.com/staplehouse-market-541-edgewood-avenue-southeast/v3/">menu</a>)</li>
 </ul>
 
 <ul>
@@ -905,7 +905,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 
 > <strong> Florida</strong>
 
-### St. Petersberg Northwest on 75 up the Gulf coast
+### St. Petersburg Northwest on 75 up the Gulf coast
 
 <ul>
 <li type="square"><a target="_blank" href="https://www.ringling.org/">John and Mable Ringling Museum of Art</a>, Sarasota</li>
@@ -944,7 +944,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.morsemuseum.org/">Morse Museum of American Art</a>, Winter Park</li>
 
 <li>Disneyworld EPCOT, Orlando</li>
-<li type="circle">Four Seasons Resort Orlando, Walt Disney World</a></li>
+<li type="circle">Four Seasons Resort Orlando, Walt Disney World</li>
 <li><a target="_blank" href="https://omart.org/">Orlando Museum of Art</a></li>
 
 <li><a target="_blank" href="https://www.artandscience.org/">Brevard Museum of Art and Science</a>, Melbourne</li>
@@ -1050,7 +1050,7 @@ Chicago had the #20 rate of crime among all cities in the US (1,099/100,000 in 2
 <li><a target="_blank" href="https://www.uima-art.org/">Ukrainian Institute of Modern Art</a></li>
 <li><a target="_blank" href="https://www.obamalibrary.gov/">Barack Obama Presidential Library</a>, Hoffman Estates</li>
 <li type="square"><a target="_blank" href="https://www.farnsworthhouse.org/">Farnsworth House (1951)</a>, 14520 River Road, Plano, IL 60545</li>
-<br />
+
 <li type="circle">Purple Pig restaurant</li>
 <li type="circle"><a target="_blank" href="https://www.zahavrestaurant.com/">Zahav</a> [Israeli restaurant]</li>
 <li type="circle"><a target="_blank" href="https://www.thedailymeal.com/au-cheval">Au Cheval burgers</a> <a target="_blank" href="https://www.thedailymeal.com/eat/101-best-casual-restaurants-america-2018-gallery/slide-6">[#29]</a></li>
@@ -1073,7 +1073,7 @@ Harry S. Truman Presidential Library and Museum</a>, Independence</li>
 <li><a target="_blank" href="https://www.daummuseum.org/">Daum Museum of Contemporary Art</a>, Sedalia</li>
 <li><a target="_blank" href="https://www.mham.org/">Margaret Harwell Art Museum</a>, Poplar Bluff</li>
 <li><a target="_blank" href="https://museum.research.missouri.edu/">Museum of Art and Archaeology at the University of Missouri</a>, Columbia</li>
-<li>Mark Twain Museum, Hanibal</li>
+<li>Mark Twain Museum, Hannibal</li>
 </ul>
 
 <a name="KC"></a>
@@ -1140,7 +1140,7 @@ Memphis had the #4 rate of crime among all cities in the US (2,003/100,000 in 20
 <li><a target="_blank" href="https://www.dixon.org/">Dixon Gallery and Gardens</a></li>
 <li><a target="_blank" href="https://www.brooksmuseum.org/">Memphis Brooks Museum of Art</a></li>
 <li><a target="_blank" href="https://www.memphis.edu/egypt/">University of Memphis Institute of Egyptian Art and Archaeology</a></li>
-<li><a target="_blank" href="https://www.graceland.com/">Elvis Prestly's Graceland</a></li>
+<li><a target="_blank" href="https://www.graceland.com/">Elvis Presley's Graceland</a></li>
 <li>Sun Records</li>
 <li type="circle"><a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g55197-d1409484-Reviews-Flight_Restaurant_and_Wine_Bar-Memphis_Tennessee.html">Flight restaurant</a>, Memphis</li>
 </ul>
@@ -1193,7 +1193,7 @@ New Orleans had the #18 rate of crime among all cities in the US (1,121/100,000 
 <li><a target="_blank" href="https://www.ogdenmuseum.org/">Ogden Museum of Southern Art</a>, New Orleans</li>
 <li><a target="_blank" href="https://www.crt.state.la.us/dataprojects/archaeology/povertypoint/mound-a.html">Mounds at Poverty Point</a></li>
 <li> Delgado Museum of Art</li>
-<li> Louisiane State Museum</li>
+<li> Louisiana State Museum</li>
 </ul>
 
 <a name="AL"></a>
@@ -1207,7 +1207,7 @@ New Orleans had the #18 rate of crime among all cities in the US (1,121/100,000 
 <li type="circle">Highlands Bar & Grill, Birmingham</li>
 
 <li><a target="_blank" href="https://www.fineartsmuseum.com/">Montgomery Museum of Fine Arts</a></li>
-<li type="center">Acre, Auburn</li>
+<li type="circle">Acre, Auburn</li>
 <li><a target="_blank" href="https://www.asama.org/">American Sport Art Museum and Archives</a>, Daphne</li>
 <li><a target="_blank" href="https://www.wiregrassmuseumoart.org/">Wiregrass Museum of Art</a>, Dothan</li>
 <li><a target="_blank" href="https://www.mobilemuseumofart.com/">Mobile Museum of Art</a></li>
@@ -1338,7 +1338,7 @@ But their service lasted for less than 2 years -- from April 3, 1860 to October 
 <li><a target="_blank" href="https://www.longislandmuseum.org/">Long Island Museum of American Art, History and Carriages</a>, Stony Brook</li>
 <li><a target="_blank" href="https://www.morrisville.edu/pages/library/">Morrisville College Library</a></li>
 <li><a target="_blank" href="https://www.nassaumuseum.com/">Nassau County Museum of Art</a>, Roslyn Harbor</li>
-<li><a target="_blasincnk" href="https://www.neuberger.org/">Neuberger Museum of Art at Purchase College</a>, Purchase</li>
+<li><a target="_blank" href="https://www.neuberger.org/">Neuberger Museum of Art at Purchase College</a>, Purchase</li>
 <li><a target="_blank" href="https://www.nysm.nysed.gov/">New York State Museum</a>, Albany</li>
 <li><a target="_blank" href="https://www.newingtoncropsey.com/">Newington-Cropsey Foundation</a>, Hastings on Hudson</li>
 <li><a target="_blank" href="https://www.nycmediaarts.org/">NY Center for Media Arts</a>, Long Island City</li>
@@ -1404,7 +1404,7 @@ Detroit had the #2 rate of crime among all cities in the US (2,057/100,000 in 20
 
 <ul>
 <li><a target="_blank" href="https://www.toledomuseum.org/"> Toledo Museum of Art</a></li>
-<li type="center"><a target="_blank" href="https://www.opentable.com/table-128-bistro-and-bar">Table 128 Bistro</a>, Toledo</li>
+<li type="circle"><a target="_blank" href="https://www.opentable.com/table-128-bistro-and-bar">Table 128 Bistro</a>, Toledo</li>
 </ul>
 
 <a name="Cincinnati"></a>
@@ -1447,7 +1447,7 @@ Cleveland had the #8 rate of crime among all cities in the US (1,557/100,000 in 
 <li><a target="_blank" href="https://www.ima-art.org/">Indianapolis Museum of Art</a></li>
 <li><a target="_blank" href="https://www.namos.iupui.edu/">National Art Museum of Sport at Indiana University</a>, Indianapolis</li>
 <li><a target="_blank" href="https://www.richmondartmuseum.org/">Richmond Art Museum</a></li>
-<li type="center">Alewife restaurant, Richmond</li>
+<li type="circle">Alewife restaurant, Richmond</li>
 
 <li><a target="_blank" href="https://www.indplsartcenter.org/">Indianapolis Art Center</a></li>
 <li> Indianapolis Museum of Art</li>
@@ -1563,7 +1563,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 
 <ul>
 <li><a target="_blank" href="https://www.crockerartmuseum.org/">Crocker Art Museum</a>, Sacramento</li>
-<li type="center">The Kitchen Restaurant, Sacramento</li>
+<li type="circle">The Kitchen Restaurant, Sacramento</li>
 <li><a target="_blank" href="https://www.hagginmuseum.org/">Stockton - Haggin Museum</a></li>
 <li><a target="_blank" href="https://www.svma.org/">Sonoma Valley Museum of Art</a>, Sonoma</li>
 <li><a target="_blank" href="https://www.sonoma.edu/ArtGallery/default.html">Sonoma State University Art Gallery</a>, Rohnert Park</li>
@@ -1585,7 +1585,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 
 <a name="SF"></a>
 
-### San Francisco Bay: #
+### San Francisco Bay:
 
 <ul>
 <li><a target="_blank" href="https://www.yerbabuenaarts.org/">Yerba Buena Center for the Arts</a>, San Francisco</li>
@@ -1660,7 +1660,7 @@ Jundt Art Center and Museum at Gonzaga University</a></li>
 <li><a target="_blank" href="https://www.moca-la.org/">Museum of Contemporary Art</a></li>
 </ul>
 
-<a name="LA"></a>
+<a name="CALA"></a>
 
 ### Downtown Los Angeles:
 
@@ -1764,7 +1764,7 @@ Honolulu and Hawaii as a whole had the lowest crime rate among all US cities and
 
 Going from New York City to Seattle takes 2,852-miles on Interstates 80 and 90, crossing 11 states.
 
-### Northern Rail #
+### Northern Rail
 
 <a target="_blank" href="https://www.amtrak.com/empire-builder-train">
 Amtrak's Empire Builder train</a> between Chicago to Seattle and Portland takes 46 hours.
@@ -1840,7 +1840,7 @@ A map of the trail in 1907:
 <li><a target="_blank" href="https://www.wplwloo.lib.ia.us/waterloo/arts/">Waterloo Museum of Art</a></li>
 <li> Des Moines: Living History Farms (at Urbandale)</li>
 <li><a target="_blank" href="https://hoover.archives.gov/">Herbert Hoover Presidential Library and Museum</a>, West Branch</li>
-<li><a target="_blank" href="http://www.iowa80truckingmuseum.com/">Walcott Trucking Museum</a>is next to Iowa 80, the largest truck stop in the world (<a target="_blank" href="https://www.youtube.com/watch?v=sCcl-dU9a2Y">VIDEO</a>)</li>
+<li><a target="_blank" href="http://www.iowa80truckingmuseum.com/">Walcott Trucking Museum</a> is next to Iowa 80, the largest truck stop in the world (<a target="_blank" href="https://www.youtube.com/watch?v=sCcl-dU9a2Y">VIDEO</a>)</li>
 </ul>
 
 
@@ -1993,7 +1993,7 @@ In post-war years, motels, diners, and gas stations along Route 66 became popula
 <a target="_blank" href="https://cloud.githubusercontent.com/assets/300046/14080916/1a0a42ca-f4c5-11e5-8230-cb0b95dde974.jpg"><img alt="!map beige route-66 600x200.jpg" width="600" height="200" src="https://cloud.githubusercontent.com/assets/300046/14080916/1a0a42ca-f4c5-11e5-8230-cb0b95dde974.jpg"></a>
 
 Route 66 begins on Michigan Avene in Chicago, where you can eat at Lou Mitchell's diner.
-The route goes to St. Louis, Missouri, then through smaller road-side towns on the way to Tulsa and Oklahoma City, Amarillo TX, Alberquque New Mexico, then over mountains to Flagstaff AZ before ending on the Santa Monica pier in Los Angeles, California.
+The route goes to St. Louis, Missouri, then through smaller road-side towns on the way to Tulsa and Oklahoma City, Amarillo TX, Albuquerque, New Mexico, then over mountains to Flagstaff AZ before ending on the Santa Monica pier in Los Angeles, California.
 
 However, <a href="#freeways">interstate freeways</a> built from 1956 enabled travel without the need to slow down through towns. That bypassed small businesses along Route 66. So visit iconic sites before they're gone:
 
@@ -2005,7 +2005,7 @@ However, <a href="#freeways">interstate freeways</a> built from 1956 enabled tra
 
 The <a target="_blank" href="https://en.wikipedia.org/wiki/Chisholm_Trail">Chisolm Trail</a> was used between 1867-1884 to drive cows to market from various cowtowns in Texas through Oklahoma Indian Territory to Abilene and other railheads in Kansas. The Lonesome Dove TV series depicts that time.
 
-<em>Since <a href="#IL">Illinos</a> and <a href="#MO">Missouri</a> are already listed in our <a href="#DownMississippi">Mississippi route</a>,
+<em>Since <a href="#IL">Illinois</a> and <a href="#MO">Missouri</a> are already listed in our <a href="#DownMississippi">Mississippi route</a>,
 here we begin from Oklahoma and take a long detour North to avoid too much desert along the way.</em>
 
 
@@ -2190,7 +2190,7 @@ here we begin from Oklahoma and take a long detour North to avoid too much deser
 <li><a target="_blank" href="https://www.grandcanyonlodges.com/lodging/el-tovar-hotel/">El Tovar Hotel</a> on the North Rim has a formal dress code!</li>
 <li type="disc"><a target="_blank" href="https://www.nps.gov/grca/">Grand Canyon Village</a></li>
 <li><a target="_blank" href="https://asuartmuseum.asu.edu/">Arizona State University Art Museum</a>, Tempe</li>
-<li><a target="_blank" href="https://dizzy.library.arizona.edu/branches/ccp/ccphome.html">Center for Creative Photography at the University of Arizona</a>, Tuscon</li>
+<li><a target="_blank" href="https://dizzy.library.arizona.edu/branches/ccp/ccphome.html">Center for Creative Photography at the University of Arizona</a>, Tucson</li>
 <li><a target="_blank" href="https://westernmuseum.org/">Desert Caballeros Western Museum</a>, Wickenburg</li>
 <li><a target="_blank" href="https://www.fleischer.org/">Fleischer Museum of American and Russian Impressionism</a>, Scottsdale</li>
 <li><a target="_blank" href="https://www.heard.org/">Heard Museum</a>, Phoenix</li>
@@ -2250,7 +2250,7 @@ In addition to "museums", also included here are grand natural sights:
    * <a target="_blank" href="https://www.tripadvisor.com/TravelersChoice">Tripadvisor Excellence award winners</a>
    * Most scenic restaurants according to <a target="_blank" href="https://www.opentable.com/lists/most-scenic-restaurants-2018">OpenTable</a>, Zagat, Michelin
 
-## Technical Footnote #
+## Technical Footnote
 
 This rather large list was originally created to be intentionally large in order to test how well the system handles a large file (how quickly it can download and display).
 
