@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-27"
-lastchange: "26-05-27 v008 NetworkUpskill @networking.md"
+lastchange: "26-05-27 v010 create html from playlist at end @networking.md"
 url: "https://bomonike.github.io/networking"
 file: "networking"
 title: "Networking Certifications"
@@ -90,8 +90,16 @@ Install from https://jitl.jp/packet-tracer redirects to
 * <a target="_blank" href="https://www.youtube.com/watch?v=EdsLU9oBudg">@DavidBombal 009 Build a Web Server network for free using Cisco Packet Tracer</a>
 
 
+## Wireless
 
-## Wendell Odom's @NetworkUpskill
+* <a target="_blank" href="https://www.youtube.com/watch?v=8gFvjVMLhcA">@JeremysITLab 123 Wireless Architectures - Day 62</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=EUJwALQP0Os">@JeremysITLab 124 Wireless Architectures - Day 62 Lab</a>
+
+
+
+## YouTube videos
+
+### Wendell Odom's @NetworkUpskill
 
 Wendell Odom's @NetworkUpskill YouTube channel provides the most detailed explanations,
 covering all 29 chapters of the official CCNA book/ebook from Cisco, which he wrote.
@@ -100,8 +108,9 @@ Get the book for its practice tests.
 <a target="_blank" href="https://www.youtube.com/watch?v=uG0qZ4PoXmI&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">
 Playlist</a>: "CCNA Course Update: What's Coming in 2026"
 
-/agent From https://www.youtube.com/watch?v=kuMbWiJHtxY&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3 create a HTML file containing a list of videos such as * <a target="_blank" href="https://www.youtube.com/watch?v=kuMbWiJHtxY&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 001 CCNA Course Update: What's Coming in 2026.mp4</a>
+<pre>/agent From https://www.youtube.com/watch?v=kuMbWiJHtxY&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3 create a HTML file containing a list of videos such as * <a target="_blank" href="https://www.youtube.com/watch?v=kuMbWiJHtxY&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 001 CCNA Course Update: What's Coming in 2026.mp4</a>
 where the file name is prefixed by "@NetworkUpskill", the playlist's zero-filled sequence number, suffixed with ".mp4".
+</pre>
 
 <li><a target="_blank" href="https://www.youtube.com/watch?v=uG0qZ4PoXmI&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 001 CCNA Course Update: What&#x27;s Coming in 2026.mp4</a></li>
 <li><a target="_blank" href="https://www.youtube.com/watch?v=NgxwETGdDvA&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 002 Two TCP/IP Layers Dominate CCNA Exam Scoring: Data-Link and Network.mp4</a></li>
@@ -569,7 +578,8 @@ where the file name is prefixed by "@NetworkUpskill", the playlist's zero-filled
 
 ### @NetworkChuck
 
-<a target="_blank" href="https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P">@NetworkChuck</a>
+<a target="_blank" href="https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P">Playlist</a>
+from the too-caffeinated @NetworkChuck as sales for Boson prep course.
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=S7MNX_UD7vY">@NetworkChuck 01 What is a Network? Day 0</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=9eH16Fxeb9o">@NetworkChuck 02 What is a SWITCH? Day 1</a>
@@ -586,23 +596,16 @@ where the file name is prefixed by "@NetworkUpskill", the playlist's zero-filled
 * <a target="_blank" href="https://www.youtube.com/watch?v=MLxgmkRzgIQ">@NetworkChuck 13 why Power over Ethernet (PoE) is amazing!! EP 12</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=E3DEJ7odWq0">@NetworkChuck 14 fiber optic cables (what you NEED to know) EP 13</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=0W4JZIWtjLQ">@NetworkChuck 15 you NEED to learn Port Security…….RIGHT NOW!! EP 14</a>
+
 * <a target="_blank" href="https://www.youtube.com/watch?v=5WfiTHiU4x8">@NetworkChuck 16 what is an IP Address? You SUCK at Subnetting EP 1</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=tcae4TSSMo8">@NetworkChuck 17 we ran OUT of IP Addresses!!</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=8bhvn9tQk8o">@NetworkChuck 18 we're out of IP Addresses….but this saved us (Private IP Addresses)</a>
-
 * <a target="_blank" href="https://www.youtube.com/watch?v=2-i5x8KCfII">@NetworkChuck 19 i bet you can't do this (because you still suck at subnetting)</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=oZGZRtaGyG8">@NetworkChuck 20 What is a Subnet Mask??? (you NEED to know it!!)</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=bQ8sdpGQu8c">@NetworkChuck 21 let's subnet your home network You SUCK at subnetting EP 5</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=ecCuyq-Wpqu">@NetworkChuck 22 subnetting made easy (I promise) You SUCK at subnetting EP 6</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=VrLPPmwC-TM">@NetworkChuck 23 i bet you STILL can't subnet (but you will after this) You SUCK at subnetting EP 7</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=pomxrg8Gkyk">@NetworkChuck 24 STOP trying to memorize subnets!! You SUCK at subnetting EP 8</a>
-
-
-## Wireless
-
-* <a target="_blank" href="https://www.youtube.com/watch?v=8gFvjVMLhcA">@JeremysITLab 123 Wireless Architectures - Day 62</a>
-* <a target="_blank" href="https://www.youtube.com/watch?v=EUJwALQP0Os">@JeremysITLab 124 Wireless Architectures - Day 62 Lab</a>
-
 
 
 ## Q&A
