@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-27"
-lastchange: "26-05-27 v008 @NetworkUpskill @networking.md"
+lastchange: "26-05-27 v008 NetworkUpskill @networking.md"
 url: "https://bomonike.github.io/networking"
 file: "networking"
 title: "Networking Certifications"
@@ -1821,3 +1821,8 @@ Incorrect
 Incorrect. This was covered in Cybersecurity Capstone: Ransomware
 Status: [object Object]
 0 / 1 point
+
+
+
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
