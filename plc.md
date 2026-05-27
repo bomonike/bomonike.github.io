@@ -1,6 +1,24 @@
-
+---
+layout: post
+date: "2025-04-04"
+lastchange: "v008 + header :plc.md"
+url: "https://bomonike.github.io/plc"
+file: "plc"
+title: "plc"
+excerpt: "Learn PLCs for enterprise MES use."
+tags: [cloud, functions]
+image:
+# feature: pic green matrix hallway 1900x500.jpg
+  feature: https://cloud.githubusercontent.com/assets/300046/14623876/07afd066-0593-11e6-933a-2e596511ac67.jpg
+  credit:
+  creditlink:
+comments: true
+created: "2018-04-03"
+---
 <a target="_blank" href="https://bomonike.github.io/plc"><img align="right" width="100" height="100" alt="plc.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/plc.png?raw=true" />
-This is at <a target="_blank" href="https://bomonike.github.io/plc">https://bomonike.github.io/plc</a> from code within private repo <a target="_blank" href="https://github.com/bomonike/bomonike.github.io/blob/master/plc.md">https://github.com/bomonike/bomonike.github.io/blob/master/plc.md</a>
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
 
 Diagrams such as this <a target="_blank" href="https://www.youtube.com/watch?v=IAhxYsMi4e8">Purdue "Automation Pyramid"</a> are from a PowerPoint file <a target="_blank" href="https://7451111251303.gumroad.com/l/pussom">here</a>.
 
@@ -58,6 +76,20 @@ PLC programming include:
 * Oracle
 * Siemens
 <br /><br />
+
+
+## Certifications
+
+https://inductiveuniversity.com/
+
+https://training.inductiveautomation.com/core-certification/study-guide/
+Core Certification
+
+https://training.inductiveautomation.com/gold-certification/study-guide/
+Gold Certification $2,000
+
+https://www.reddit.com/r/PLC/comments/12chn4b/ignition_gold_certified/
+
 
 ### InductiveAutomation.com
 

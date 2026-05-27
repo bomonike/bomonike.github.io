@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-08-14"
-lastchange: "v022 + mcp quote :ai-agents.md"
+date: "2026-05-09"
+lastchange: "26-05-09 v023 + hermes :ai-agents.md"
 url: https://bomonike.github.io/ai-agents
 file: "ai-agents"
 title: "AI Agents"
@@ -21,6 +21,16 @@ This was written so that you will be able to claim on your resume (LinkedIn prof
 
 "Created Bash, Python, and Terraform, automation to, in an hour, configure and stand up a service (running locally, on Azure, AWS, Google, and other clouds) which interacts with users' voice (SST & TTS) to autonomously perform reasoning tasks by using MCP & A2A to supervise a mix of AI agents. The AI supervisor automatically responds to trends and telemetry. (Ask me how)"
 
+Telegram, Discord, Slack, WhatsApp, Signal, 
+
+Think of them as virtual assistants capable of handling the chores people generally rather avoid.
+
+Unlike humans, AI agents don't need to sleep, operate at lightning speed, and collaborate with other agents.
+
+Agentic means <strong>proactive</strong> -- they try to solve problems without constant human input.
+
+MCP Client is Claude client or IDE Cursor or Windsurf
+
 Among <a target="_blank" href="https://www.youtube.com/@aiDotEngineer">@aiDotEngineer World's Fair vidoes</a>,
 <a target="_blank" href="https://www.youtube.com/watch?v=zM9RYqCcioM" title="by https://AI.Engineer">VIDEO</a> by 
 OpenPipe worked with Method: Instead of hiring people, AI Agents in fintech 
@@ -38,13 +48,14 @@ Agents access <strong>tools</strong> to perform tasks.
 
 C. In 2025, "Agentic AI" came on the scene when LLMs (Anthropic Claude 3) were able to "reason" in "Chain of Thought". Agentic AI can reflect, plan, and delegate (orchestrate) steps to achieve objectives by recalling context, constraints, and previous actions (<strong>from memory</strong>) to avoid redundant or dumb behavior by breaking down obstacles into steps, then adapting to select and strategies collaboratively, and execute across tools or environments.
 
-Think of them as virtual assistants capable of handling the chores people generally rather avoid.
+D. In 2026, OpenClaw, followed by 
 
-Unlike humans, AI agents don't need to sleep, operate at lightning speed, and collaborate with other agents.
+E. NateBJones' DB1 organizes content in md files.
 
-Agentic means <strong>proactive</strong> -- they try to solve problems without constant human input.
+F. Andrej Karpathy's Self-learning & <a target="_blank" href="https://www.youtube.com/watch?v=Bg-IPiql7x8">VIDEO</a>: 
 
-MCP Client is Claude client or IDE Cursor or Windsurf
+Hyperframe.
+
 
 D. A <strong>Global Agent</strong> can be an ID such as IDE OpenAI/Windsurf, Claude, Cursor, or extension-enabled VS Code.
 
@@ -70,6 +81,15 @@ E. A <strong>Local Agent</strong> is a tool that can be called by an MCP client.
    * Adaptability - Adjusting strategies based on changing circumstances
 
    * Responsibility - Bearing some causal or moral accountability for actions
+
+   Additionally:
+
+   * Reasoning — The ability to draw inferences, evaluate options, and make decisions based on logic or evidence
+   * Proactivity — Taking initiative to anticipate needs or problems rather than only reacting to prompts
+   * Memory — Retaining and leveraging past experiences or context to inform future actions
+   * Communication — The ability to exchange information meaningfully with humans or other agents
+   * Tool Use — The capacity to interact with external systems, APIs, or environments to accomplish goals
+   * Learning — Improving performance over time through experience or feedback   
 
 * <strong>Vertical AI agents</strong> are tailored to address unique challenges and streamline processes within designated sectors such as healthcare, finance, or customer support. Vertical AI agents could be <a target="_blank" href="https://www.ycombinator.com/library/Lt-vertical-ai-agents-could-be-10x-bigger-than-saas">10X bigger than SAAS</a> repleaes entire teams and organizationa -- a fundamentally new paradigm.
 https://www.rippling.com/ works on verticals.
@@ -171,6 +191,51 @@ are building in their hardware and operating system for applications to see what
 
 The path of control logic
 
+
+## Misalignment
+
+Models are learning how to think through tradeoffs, weigh consequences, and make judgment calls.
+
+So your CLAUDE.md should read more like a constitution than a checklist.
+It should answer these questions:
+   * What does this project value? Reliability over speed? Backward compatibility? Explicit over implicit?
+   * What tradeoffs are acceptable here, and which ones are not?
+   * What does good engineering judgment look like in this codebase?
+   * What kind of engineer should this agent behave like?
+   <br /><br />
+
+Instead of specific edge-case rules, tell the agent WHY, what's important in a reasoning framework:
+
+<pre>
+This codebase serves paying customers in production. Every file 
+change carries risk. Your job is to solve the specific problem 
+with the minimum blast radius because unrelated changes create 
+untested surface area that can cause outages.
+&nbsp;
+Tests are the contract between our code and our users. Deleting 
+or skipping tests to make code pass is backwards - it means the 
+code is wrong, not the tests.
+We use TypeScript strict mode because this is a payments system 
+where a runtime type error means a customer gets charged wrong. 
+Type safety is a user-trust decision, not a style preference.
+</pre>
+
+Additional files:
+   * README — project philosophy, architecture overview, conventions
+   * ADRs (Architecture Decision Records) — past decisions and the reasoning behind them. There’s the “why” theme again
+   * test files — so it understands what the expected contract looks like
+   * PR templates — so it knows what a good change looks like in this codebase
+   * Past incident postmortems — so it knows what has gone wrong before
+   <br /><br />
+
+When your agent makes a bad decision, don’t just add a rule against that specific action. 
+Ask: What principle was the agent missing? Teach that principle.
+
+Show examples of good PRs and good decisions alongside the principles they embody.
+
+Karpathy says: “LLMs are exceptionally good at looping until they meet specific goals. Don’t tell it what to do. Give it success criteria and watch it go.”
+
+
 ## GenAI 
 
 Frameworks like AutoGPT, LangGraph, CrewAI, and MetaGPT.
@@ -190,8 +255,30 @@ It scored 90% of the GAIA "state of the art" benchmark.
    * https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-an-ai-agent March 25, 2025 | Article
    * https://www.udemy.com/course/langgraph-with-ollama/ "2025 Master LangGraph and LangChain with Ollama- Agentic RAG: Agentic RAG and Chatbot, AI Agent, DeepSeek, LLAMA 3.2 Agent, FAISS Vector Database, LLM RAG, Lang Graph RAG, Ollama RAG"
    * https://www.linkedin.com/pulse/what-is-an-ai-agent-yasir-khan/
+   <br /><br />
 
 create separate hubs for each business area (such as Marketing, HR, and so on) i
+
+
+<a name="Hermes"></a>
+
+## Hermes Agent
+
+<a target="_blank" href="https://github.com/nousresearch/hermes-agent">Hermes Agent</a> from Nous Research has a type of Kanban board where human Triage entries are shifted to "READY" after the agent adds relevant info from context in Obsidian.
+<a target="_blank" href="https://www.youtube.com/watch?v=Bg-IPiql7x8&t=10m">VIDEO</a>:
+"/goal" gives agent a mission statements. 
+https://www.youtube.com/watch?v=gb5TlGw6Uks
+   * <a target="_blank" href="https://www.youtube.com/watch?v=zwqhemjHq3E&pp=ugUEEgJlbtIHCQkDCwGHKiGM7w%3D%3D">Hermes vs OpenClaw</a> Claude Agent 2.0 GravityClaw <a target="_blank" href="https://www.skool.com/aiautomationsbyjack/about">$77/m Skool</a>
+
+https://www.youtube.com/watch?v=YBp_PXBbe80
+
+self-improving by 
+
+
+YouTube videos about Hermes Agent:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=cEo95olh2j4">Alex Finn</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=1ve4Atbqmoo">Tech with Tim</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Qn2c_U-cWQs">Greg Isenberg</a>
 
 
 ## Google AgentSpace

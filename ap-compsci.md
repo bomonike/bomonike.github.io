@@ -2011,9 +2011,6 @@ Elite universities for computer science in the US:
 
 * <a target="_blank" href="https://curiositystream.com/video/1643">Making money in the 21st century</a>
 
-https://grow.google/educators/
-Google CS4HS program (http://cs4hs.com)
-
 http://introcspogil.org
 http://cspogil.org/Python
 https://github.com/ChrisMayfield/cspogil/tree/master/CS0 CS101 uses Python (but not about Python)
@@ -2023,10 +2020,41 @@ including roughly 30 activities for AP CS Principles and 30 activities for CS 1.
 The CS-POGIL website (http://cspogil.org) lists many of POGIL activities, sorted by author, course, etc.
 only a few of these activities have been formally reviewed by The POGIL Project.
 
+## Google
+
+https://grow.google/educators/
+Google CS4HS program (http://cs4hs.com)
 
 https://skillshop.exceedlms.com/student/path/1176018
 Google's Generative AI for Educators
 (using ExceedLMS)
+
+## Should AI Be Banned?
+
+https://www.youtube.com/watch?v=ogcSQ-cFRVM
+Should we let students use ChatGPT? | Natasha Berg | TEDxSioux Falls 
+
+https://www.youtube.com/watch?v=KT-B2wZoY6g
+ow AI is Shaping the Future of Education | Askwith Education Forum
+Harvard Graduate School of Education
+
+https://www.youtube.com/watch?v=0FvxMUYxVhU
+What I have learned from teaching with AI
+Centre for Innovation in Teaching and Learning (CITL)
+   * False Positives greater for ESL students
+   * False Positives decreased after ESL students enhance word choice
+   * False Positives increased after regular students reduce word choice
+
+https://www.youtube.com/watch?v=a_ysmXsA4XQ
+MIT AI + Education Summit 2024: AI & Education Panel
+MIT Open Learning
+
+https://www.youtube.com/watch?v=mEtAfbFr6RE
+Cheating or Learning? Walking the AI tightrope in education | Erik Winerö | TEDxGöteborg
+TEDx Talks
+
+
+https://www.databricks.com/sites/default/files/2024-05/Databricks-Exam-Guide-Generative-AI-Engineer-Associate-Exam-Guide.pdf
 
 ## GitHub
 
@@ -2035,3 +2063,68 @@ https://www.twitch.tv/githubeducation
 ## IB Networking topics
 
 https://www.youtube.com/watch?v=b5GZcldk_cY
+
+
+## AP Computer Science Principles (CSP) Curriculum
+
+Apple
+Beauty and Joy of Computing(BJC)
+CodeHS
+
+Code.org
+Computer Science (CS) Matters
+CS50
+
+Microsoft MakeCode
+Mobile Computer Science Principles (Mobile CSP)
+
+Popfizz CS
+Project Lead The Way (PLTW)
+Project STEM (formerly Edhesive)
+
+Tynker
+UTeach
+Zulama by Carnegie Learning
+
+None
+Other (specify)
+
+
+## BJC (Beauty and Joy of Computing)
+
+### BJC: Social Implications of Computing
+
+Topics included in the BJC units:
+
+* Privacy and Search Engines
+* Video Games and Violence
+* Owning Ideas (Copyrights and Patents)
+* Innovation
+* Encryption
+* Computers and Community
+* Social networks
+* Cyberbullying
+* Computers and War
+* Computers and Work
+
+In all of these topics, our goal is to avoid preaching; we look for alternate points of view. For example, we don't assume that pirating copyrighted works is wrong; since many students do it, we try to elicit honest perspectives on why it might be okay, and consider alternate ways to support artists and writers. Both student pages and the Teachers' Guide point to provocative readings on each topic.
+
+In general, we hope to leave students feeling optimistic about the benefits of technology, but also ready to think critically about any specific technology. We also remind them that the decisions about how a new technology is used are made by human beings, including themselves if they pursue a career in computer science, so they shouldn't feel helpless in the face of a supposed technological imperative.
+
+We use the excellent <a target="_blank" href="https://www.bitsbook.com/">bitsbook.com</a>
+"Blown to Bits: The Digital Explosion of Everything: YOUR Life, Liberty, and Happiness After the Digital Explosion"
+(by Hal Abelson, Ken Ledeen, Harry Lewis, Wendy Seltzer)
+as the textbook for this part of the course. (There is no textbook for the technical parts of the course, beyond the online materials we provide.) The book is aimed at adult readers, and will be difficult especially for ESL students, so we use short excerpts and discuss alternative presentations in the Teachers' Guide. Like the rest of the course materials, this book is avaliable free online, with a Creative Commons BY-NC-SA license.
+
+The book is a few years old now, so we supplement it with current readings, looking for topics that will be relevant to students. Students choose their own topics to study in more depth; this is one way we appeal to a diverse audience. We start class meetings with "Computing in the News," presenting items from that morning's newspaper, one generally positive and one problematic. After some teacher-chosen examples to illustrate the idea, we encourage teachers to assign the selection of articles to students in rotation.
+
+This book isn’t about computers. It’s about your life and mine. It’s about how the ground underneath us has shifted in fundamental ways.  We all know it is happening. We see it all around us, every day. We all need to understand it more.
+
+The digital explosion is changing everything. In this book we talk about both what is happening and how. We explain the technology itself—why it creates so many surprises and why things often don’t work the way we expect them to. It is also about things the information explosion is destroying: old assumptions about our privacy, about our identity, and about who is in control of our lives. It’s about how we got this way, what we are losing, and what remains that society still has a chance to put right.
+
+The digital explosion is creating both opportunities and risks. Many of both will be gone in a decade, settled one way or another. Governments, corporations, and other authorities are taking advantage of the chaos, and most of us
+don’t even see it happening. Yet we all have a stake in the outcome. Beyond the science, the history, the law, and the politics, this book is a wake-up call.
+
+The forces shaping your future are digital, and you need to understand them.
+
+This book is about the stories we hear and read every day. Stories that are about the profound, often unexpected impact that digital technology is having on our lives

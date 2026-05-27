@@ -157,6 +157,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	BKM	=	Best Known Method
 *	BLE	=	Bluetooth Low Energy
 *	BLF	=	Business Logic Flaw
+*	BM25	=	Better Matching 25 (the version released to index and rank documents by how well they match a search query. A bag-of-words keyword-based search method used by search engines Elasticsearch and Lucene)
 *	BNPL	=	Buy Now Pay Later (debit credit offering from Klarna, Affirm, etc.)
 *	BOD	=	Board of Directors
 *	BOLA	=	Broken Object Level Authorization

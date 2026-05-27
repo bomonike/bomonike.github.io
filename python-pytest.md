@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-10-29"
-lastchange: "25-10-30 v001 + new :python-pytest.md"
+lastchange: "25-10-30 v002 + new :python-pytest.md"
 url: https://bomonike.github.io/python-pytest
 file: "python-pytest"
 title: "Python Pytest"
@@ -34,12 +34,15 @@ There are several tools and plugins that help you manage the initiation and resu
 
 ## Competitors
 
+Playwright from Microsoft.
+
 Django has a test runner built in.
 <a target="_blank" href="https://www.youtube.com/watch?v=toKW2YLnGFQ">VIDEO</a> by Adam Parkin
 shows how to create custom manage.py commands in Django.
 <a target="_blank" href="https://www.youtube.com/watch?v=7it7JFPInX0">VIDEO</a>
 
 Custom Python Management Commands: For frameworks like Django, you can create custom commands (such as python manage.py pytest) to initiate pytest runs and pass arguments programmatically. These can be extended to collect and handle results within your application's context.​
+
 
 
 <a name="Pytest"></a>
@@ -71,6 +74,8 @@ For those willing to spend $39 per user /month, the
 <a target="_blank" href="https://www.linkedin.com/in/baevdm/">Russian CTO</a> & CEO at Qameta on <a target="_blank" href="https://qameta.io/">qameta.io</a> provides the TestOps 
 <a target="_blank" href="https://allurereport.org/docs/pytest/">"Allure Report"</a> 
 that integrates with pytest to organize test runs, generate detailed, interactive reports, and manage results. It supports hierarchical organization of tests and offers rich visualization.
+
+<a target="_blank" href="https://www.youtube.com/@QametaSoftwareInc">YouTube Playlist</a>
 
 The utility supports multiple programming languages and frameworks. It installs on Windows, Linux, MacOS, and NodeJs.
 Its web UI can switch to Spanish.

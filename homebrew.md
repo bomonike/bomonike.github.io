@@ -1014,6 +1014,148 @@ This goes against the Filesystem Hierarchy Standard’s recommendation to use �
 Within Fink’s directory, a FHS-like layout (/sw/bin, /sw/include, /sw/lib, etc.) is used.
 
 
+## Local Mirror
+
+https://docs.brew.sh/Formula-Cookbook#homebrew-terminology
+Homebrew package definition that builds from upstream sources ???
+
+To establish an airgapped local mirror that's off the internet except for download, we create two mirrors for the brew command: 
+   * a Git repo
+   * an archive containing CLI formulae bottles for arm64_sonoma M1/M2 and Intel x86_64_sonoma tags.
+   * an archive to return <strong>--cask</strong> package definitions of pre-compiled binaries (GUI apps) built and signed by upstream.
+   <br /><br />
+
+DEFINITION: A "keg" is the installation destination directory of a given formula version within a "rack" directory containing one or more versioned kegs.
+A "Cellar" is a directory containing one or more named racks.
+
+Define Key Environment Variables:
+* HOMEBREW_BREW_GIT_REMOTE = Custom URL for the brew repo
+* HOMEBREW_CORE_GIT_REMOTE = Custom * URL for homebrew-core tap
+* HOMEBREW_ARTIFACT_DOMAIN = Prefix for bottle download * URLs
+* HOMEBREW_NO_AUTO_UPDATE = to Disable automatic updates
+* HOMEBREW_CACHE = to Override local cache directory
+
+* HOMEBREW_MAIN_LOCAL="/path/to/mirror/brew.git"
+* HOMEBREW_CORE_LOCAL="/path/to/mirror/homebrew-core.git"
+* HOMEBREW_CASK_LOCAL="/path/to/mirror/homebrew-cask.git"
+<br /><br />
+
+1. How many brew are there?
+   ```bash
+   brew formulae | wc
+   ```
+   The first number returned (such as 9044).
+
+   ff96c159b3c954f282f0a282dcbfb38168b39131302d982a4610838ff9126d56--pillow--12.1.1.arm64_sequoia.bottle.tar.gz
+
+   That string is prefixed by a SHA-256 hash of 64 hexadecimal characters = 256 bits.
+
+1. List how many bottles have been downloaded to the local cache using brew command:
+   ```bash
+   ls ~/Library/Caches/Homebrew/downloads/ | wc
+   ```
+   Example response:
+   <pre>
+    662     664   70309
+   </pre>
+   * 662 lines = number of files in the downloads cache
+   * 664 words = same as lines (one word per line)
+   * 70309 characters = total character count of all the filenames combined (including newlines)
+   <br /><br />
+
+1. Show disk space used:
+   ```bash
+   du -sh ~/Library/Caches/Homebrew/downloads/
+   ```
+   <pre>
+    11G	/Users/johndoe/Library/Caches/Homebrew/downloads/
+   </pre>
+
+1. Mirror the Homebrew Git Repositories.
+
+   Homebrew needs two main repos: the core repo and the formulae tap.
+   Homebrew uses Git for storing formulae.
+
+   ```bash
+   # Mirror the main Homebrew repo:
+   git clone --mirror https://github.com/Homebrew/brew.git \
+      "$HOMEBREW_MAIN_LOCAL"
+
+   # Mirror the core formulae tap:
+   git clone --mirror https://github.com/Homebrew/homebrew-core.git \
+      "$HOMEBREW_CORE_LOCAL"
+
+   # mirror casks:
+   git clone --mirror https://github.com/Homebrew/homebrew-cask.git \
+      "$HOMEBREW_CASK_LOCAL"
+   ```
+
+2. To keep the brew mirros updated later: 
+
+   ```bash
+   git --git-dir="$HOMEBREW_MAIN_LOCAL" fetch --all
+   ```
+
+2. Mirror the Binary Bottles (Pre-built Packages)
+   Bottles are hosted on GitHub Releases (and sometimes CDNs). Use a script to download them:
+
+   ```bash
+   # Example: download bottles for specific formulae:
+   brew fetch --bottle-tag=arm64_sonoma <formula-name>
+
+   # Or fetch all dependencies:
+   brew fetch --deps --bottle-tag=arm64_sonoma <formula-name>
+   ```
+
+   You can now serve those cached bottles from a local HTTP server.
+
+3. Set up a simple HTTP server to serve bottles locally:
+
+   ```bash
+   # Serve the Homebrew cache directory
+   cd ~/Library/Caches/Homebrew/downloads
+   python3 -m http.server 8080
+
+   # Or use nginx/caddy for a more permanent solution
+   ```
+
+4. Set environment variables to redirect Homebrew to local sources:
+   Configure Homebrew to Use Your Mirror:
+
+   ```bash
+   # In ~/.zshrc or ~/.bash_profile
+
+   # Point to your local git mirrors
+   export HOMEBREW_BREW_GIT_REMOTE="http://localhost/mirror/brew.git"
+   export HOMEBREW_CORE_GIT_REMOTE="http://localhost/mirror/homebrew-core.git"
+
+   # Point bottle downloads to your local server
+   export HOMEBREW_ARTIFACT_DOMAIN="http://localhost:8080"
+
+   # Disable analytics (optional, good for airgapped)
+   export HOMEBREW_NO_ANALYTICS=1
+
+   # Disable auto-update if fully offline
+   export HOMEBREW_NO_AUTO_UPDATE=1
+   ```
+
+5. On the target machine (instead of the official install script),
+Install Homebrew from Your Local Mirror:
+
+   ```bash
+   # Clone your local brew mirror:
+   git clone http://your-mirror-host/brew.git /usr/local/Homebrew
+
+   # Set up the PATH:
+   echo 'eval "$(/usr/local/Homebrew/bin/brew shellenv)"' >> ~/.zprofile
+   eval "$(/usr/local/Homebrew/bin/brew shellenv)"
+
+   # Point to local taps:
+   brew tap --force-auto-update homebrew/core http://your-mirror-host/homebrew-core.git
+   ```
+
+
+
 ## Documentation #
 
 1. For more documentation on brew, look <a target="_blank" href="https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/FAQ.md">
@@ -1045,3 +1187,8 @@ brew's readme</a>:
 This is one of a series on macOS:
 
 {% include mac_links.html %}
+
+
+
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>

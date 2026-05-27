@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-01-30"
-lastchange: "v012 + Palo Alto :security-certs.md"
+date: "2026-04-27"
+lastchange: "26-04-27 v013 RMF :security-certs.md"
 file: "security-certs"
 title: "Security Certifications"
 excerpt: "There are several (overlapping) ones."
@@ -292,11 +292,20 @@ https://my.isc2.org/s/Candidate-Benefits/1MCC-Online-Self-Paced
 
 <a target="_blank" href="https://www.isc2.org/Register-for-Exam/ISC2-Exam-Pricing">$599 USD</a> <a target="_blank" href="https://www.isc2.org/Certifications/CGRC">CGRC (Certified Government Risk and Compliance) professional</a> -- previously CAP (Certified Authorization Professionl) until Feb 23, 2023 -- is for individuals with 2+ years of experience being responsible for the implementation and management of information security risk management and compliance programs. Pass 70% of 125 questons over 3 hours at a <a target="_blank" href="https://www.pearsonvue.com/isc2/">Pearson VUE Testing Center</a>.
 
-CGRC Content maps to the NIST SP 800-37 RMF (Risk Management Framework)
-<a target="_blank" href="https://nira.com/nist-csf-categories/">categories</a>:
+CGRC Content maps to the NIST SP 800-37 Rev 5 RMF (Risk Management Framework)
+
+<a target="_blank" href="https://nira.com/nist-csf-categories/">categories</a> on a timeline:
    * "Left of boom": Identify, Protect
    * "Right of boom": Detect, Respond, Recover
    <br /><br />
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=8zxzqpw0jBA&list=RDLV8zxzqpw0jBA&start_radio=1&rv=8zxzqpw0jBA">"Definitive Guide to RMF (Actionable plan for FISMA Compliance)"</a> 
+
+   <a target="_blank" href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6">Department of Defense (DoD) Impact Level 6 (IL6)</a>
+
+   IL-6 ConMon mirrors FedRAMP/NIST 800-137: Monthly scans, POA&Ms, incident reporting to DISA, plus classified overlays for continuous SIPRNet monitoring. Use tools like monthly control tests and dashboards; report to mission owners for ongoing ATO sustainment.
+
+   IL-6 builds on IL-5's FedRAMP High baseline but adds a classified overlay, 209 new controls in recent SRG updates, and SIPRNet isolation—think dedicated infrastructure in cleared facilities. No more mixing with non-DoD tenants; physical separation is mandatory, unlike IL-5's virtual options.
 
 CGRC is taken from a broad spectrum of vendor-neutral topics in the CGRC Common Body of Knowledge (CBK®) over <a target="_blank" href="https://www.isc2.org/-/media/ISC2/Certifications/Exam-Outlines/2021/CAP-Exam-Outline.ashx">7 domains</a>:
    1. Information Security Risk Management Program

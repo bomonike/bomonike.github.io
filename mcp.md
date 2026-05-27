@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-16"
-lastchange: "26-02-16 v013 kodekloud :mcp.md"
+date: "2026-03-20"
+lastchange: "26-03-20 v014 marketplaces :mcp.md"
 url: https://bomonike.github.io/mcp
 file: "mcp"
 title: "MCP"
@@ -23,18 +23,107 @@ This article takes a technical deep dive into MCP Servers.
 
 ICYMI: After OpenAI released ChatGPT on November 30, 2022, it achieved peak popularity faster than any mobile app in history. Subsequently, Google, Microsoft, Anthropic, Mistral, DeepSeek, Qwen, etc. released their <strong>foundational LLMs</strong> (Large Language Models) containing all the knowledge accumulated of all mankind over time. This has enabled perfection in translating any language to another.
 
-## The Best MCP Course
+<a target="_blank" href="https://www.anthropic.com/engineering/writing-tools-for-agents">"Writing effective tools for agents — with agents"</a>
+from Engineering at Anthropic
+
+
+<a name="Gateways"></a>
+
+## MCP Gateways
+
+MCP Gateways are the infrastructural layer control panel that makes AI agent tools enterprise-ready. MCP Gateways provide security isolation, comprehensive observability, and centralized management. 
+
+   * Security Issues: MCP servers execute with whatever permissions you grant them. Managing permission allowances, security groups, auth issues, user-specific roles, container-based isolation, etc., becomes too inconvenient, too quickly, as systems expand.
+
+   * The Visibility Black Hole: Direct MCP connections provide zero insight into what agents are actually doing with your tools. Your system logs, their reports, and analysis are all hidden, unless shown in a structured manner on a well-managed dashboard. 
+
+   * Operational Chaos: Managing individual MCP servers becomes unwieldy fast. Multiply that by dozens of tools and multiple environments, and you've got an operational nightmare.
+
+But each solution takes a distinctly different design approach.
+
+
+<a name="Registries"></a>
+
+## MCP Marketplaces & Registries
+
+First, know the room. CAUTION: Run MCP servers <strong>in a Docker sandbox container</strong>. An MCP server execute arbitrary code on your system with the same permissions as the host process. This creates significant security risks. Review code before installation.
+
+* <a target="_blank" href="https://hub.docker.com/mcp/explore?search=weather">Docker MCP Hub at https://hub.docker.com/mcp/explore?search=weather</a> lists Docker-built images for containers which include cryptographic signatures, provenance tracking, SBOMs, and automatic security updates
+
+   https://github.com/docker/mcp-registry
+
+* <a target="_blank" href="https://github.com/appcypher/awesome-mcp-servers?utm_source=aiagentstore.ai">https://github.com/appcypher/awesome-mcp-servers?utm_source=aiagentstore.ai</a> by category
+
+* <a target="_blank" href="https://huggingface.co/spaces/taishi-i/awesome-ChatGPT-repositories-search">Amazing lists of Amazing lists</a>: 2506 repositories stored at <a target="_blank" href="https://github.com/taishi-i/awesome-ChatGPT-repositories">github.com/taishi-i/awesome-ChatGPT-repositories</a> (translated to CHinese, Japanese)
+
+* Anthropic's Official GitHub — The canonical reference implementation repo (20k+ stars), maintained by the MCP team itself.
+
+* <a target="_blank" href="https://mcpmarket.com/">mcpmarket.com</a> has separate lists for MCP servers and <strong>Agent Skills</strong> in a directory of MCP servers and clients to connect AI agents with your favorite tools. MCP Market LobeHub MCP (lobehub.com/mcp) — A community-driven marketplace for MCP servers, active and frequently updated.
+
+* <a target="_blank" href="https://github.com/wong2/awesome-mcp-servers">https://github.com/wong2/awesome-mcp-servers</a>
+
+* <a target="_blank" href="https://github.com/PipedreamHQ/awesome-mcp-servers">https://github.com/PipedreamHQ/awesome-mcp-servers</a>
+
+* <a target="_blank" href="https://glama.ai/mcp/servers">https://glama.ai/mcp/servers</a> is served from https://github.com/punkpeye/awesome-mcp-servers">Awesome MCP list at https://github.com/punkpeye/awesome-mcp-servers</a> to list various community-curated GitHub repos aggregating servers by category and languages (ja, ko, fa-ir, th, zh, ah_TW).
+
+   https://glama.ai/mcp/servers?query=weather
+
+* <a target="_blank" href="https://mastra.ai/mcp-registry-registry">Mastra Registry at mastra.ai/mcp-registry-registry</a>
+aggregates multiple MCP server directories to functions as a central hub for discovering other registries. From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.
+
+   https://github.com/mastra-ai/mastra
+
+* <a target="_blank" href="https://Smithery.ai/">Smithery.ai</a> (as of March 20, 2026, claims 5,397+) MCP capabilities and detailed usage metrics. Includes installation guides and API documentation for various client integrations. Authenticates via Google & GitHub.
+
+   <pre>npx @smithery/cli@latest setup</pre>
+
+* <a target="_blank" href="https://MCP.so/">MCP.so</a> is a third-party MCP marketplace with over 18,700 MCP servers collected. MCP One of the largest aggregators. 
+
+* <a target="_blank" href="https://www.pulsemcp.com/">PulseMCP.com</a> — searchable marketplace index of AI agents with detailed information including descriptions, websites, and performance metrics to help users discover specialized agents for specific tasks.
+
+* Cline MCP Marketplace (cline.bot/mcp-marketplace) — Built into Cline, an open-source AI coding agent trusted by 4M+ developers, with MCP integration and terminal-first workflows. Cline
+
+* Higress MCP Marketplace (mcp.higress.ai) — An enterprise marketplace platform for packaging, publishing, and managing AI assets like model APIs and MCP servers. Higress
+
+* AWS Marketplace — AI Agents & Tools — A new category in AWS Marketplace that serves as a centralized catalog for hundreds of AI solutions from AWS Partners, helping customers accelerate procurement to drive AI innovation. Wiz
+
+* <a target="_blank" href="https://thenewstack.io/ai-engineering-trends-in-2025-agents-mcp-and-vibe-coding/">The magazine New Stack</a>
+Microsoft's Magentic marketplace is a simulation environment for agentic markets, to explore multi-agent collaboration from the AI Frontiers Lab at Microsoft Research, who previously developed AutoGen.
+also emerging as an experimental distribution platform for agents. <a target="_blank" href="https://thenewstack.io/ai-engineering-trends-in-2025-agents-mcp-and-vibe-coding/">The magazine New Stack</a>.
+
+
+<a name="Courses"></a>
+
+## MCP Courses to learn
 
 * <a target="_blank" href="https://learn.kodekloud.com/user/courses?search=mcp">PROMO</a>: NodeJs FastMCP on OpenAI & Anthropic Claude is taught by <a target="_blank" href="https://learn.kodekloud.com/user/courses/crash-course-mcp-for-beginners">KodeKloud's hands-on MCP course</a> by Mumshad Mannambeth himself. $250/year for the premium subscription which provides a cloud learning environment, quizzes, and Discord with many other learners. Videos show use of VSCode, uv, Postman. Examples is for flight booking using the RooCode MCP agent.
 Uniquely includes checks of work one step at a time to keep you from getting lost, Kubernetes MCP, CI/CD flows.
+
+* https://github.com/NirDiamant/GenAI_Agents/blob/main/all_agents_tutorials/mcp-tutorial.ipynb
+
+* Bruce Hopkins 
+   * <a target="_blank" href="https://learning.oreilly.com/live-events/build-ai-agents-from-existing-apis-with-mcp/0642572220433/0642572280468/" title="Feb 17 & Apr 14, 2026">Build AI Agents from Existing APIs with MCP</a> referencing<br />https://github.com/BruceTraining/MCP-Oreilly-1 to build an MCP Server in Node.js for the Smart Home, Smart Car
+
+   * <a target="_blank" href="https://learning.oreilly.com/live-events/-/0642572196868/" title="Mar 1, 2026">Create AI Agents with Model Context Protocol (MCP)</a> referencing<br />https://github.com/BruceTraining/MCP-Oreilly-2
+
+   * <a target="_blank" href="https://learning.oreilly.com/live-events/how-to-use-ai-with-sql-databases/0642572244712/" title="Mar 17, 2026">How to Use AI with SQL Databases</a> Using ChatGPT with Oracle 23ai and SELECT AI.
+
+* By HHN Automate Book <a target="_blank" href="https://learning.oreilly.com/videos/-/9781806384136/">7hr COURSE</a>: MCP Complete Guide – Build and Connect Tools for LLMs. July 2025.
+
+* <a target="_blank" href="https://www.linkedin.com/in/sinan-ozdemir/">Sinan Ozdemir</a>: <a target="_blank" href="https://learning.oreilly.com/course/modern-ai-agents/9780135882634/">8 hr COURSE</a>: "Modern AI Agents: Building Practical Single- and Multi-Agent Systems with MCP and LLMs, 2nd Edition
+ 
+* Chad Smith: <a target="_blank" href="https://learning.oreilly.com/live-events/ai-agents-and-mcp-in-software-development-and-devops/0642572258481/">COURSE</a>: AI Agents and MCP in Software Development and DevOps. Feb 23, 2026
+
+* Kyle Stratis: <a target="_blank" href="https://learning.oreilly.com/library/view/-/9798341639546/">BOOK: Agents with MCP</a> Aug 2026.
 
 
 <a name="Components"></a>
 
 ## Components of MCP
 
-MCP (Model Context Protocol) is a vendor-neutral standard created by Anthropic, at ???
-On a technical level, the protocol specifies use of async JSON-RPC (2.0) over stateful connections to invoke action by AI Agents. By abstracting the complexities of direct resource access, MCP allows AI models to interact seamlessly with external services.
+MCP is not a product. MCP (Model Context Protocol) is a vendor-neutral <strong>standard</strong> created by Anthropic.
+
+On a technical level, the protocol specifies use of two-way async JSON-RPC (2.0) over stateful connections to invoke action by AI Agents. By abstracting the complexities of direct resource access, MCP allows AI models to interact seamlessly with external services. This includes discovery of agents.
 
 MCP replaces REST API calls. MCP makes use of an LLM to <strong>identify several options</strong> to achieve goals defined by prompts from users. For example, it can look into the
    * AI Agent Marketplace Index of AI agents in various categories.
@@ -53,7 +142,11 @@ MCP replaces REST API calls. MCP makes use of an LLM to <strong>identify several
 
    The LLM also helps MCP <strong>decide</strong> from among tools to use and interacts with tools <strong>autonomously</strong>.
 
-* <strong>MCP Client</strong> = a <strong>front-end</strong> (GUI or CLI) app that consumes functionality by making MCP-compliant requests that execute tools, fetch resources, or use prompts. Examples are Warp, Claude Desktop, VS Code extensions, custom AI applications. For example, on Claude client Desktop, click on the slider icon to see what MCP Servers were installed:
+* <strong>MCP Client</strong> = a <strong>front-end</strong> (GUI or CLI) app that consumes functionality by making MCP-compliant requests that execute tools, fetch resources, or use prompts. List at
+
+   <a target="_blank" href="https://modelcontextprotocol.io/clients">https://modelcontextprotocol.io/clients</a>
+
+   Examples are Warp, Claude Desktop, VS Code extensions, custom AI applications. For example, on Claude client Desktop, click on the slider icon to see what MCP Servers were installed:
 
    <img alt="mcp-claude-client-432x419.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1760591658/mcp-claude-client-432x419_qea3uz.png" />
 
@@ -103,10 +196,12 @@ System prompts ???
 MCP Inspector. ???
 
 Features of each <strong>MCP Client</strong> use the mcp[client] library to include Sampling, Roots, and Elicitation.
-   * Sampling means. server-initiated agentic behaviros and recursive LLM interactions.
+   * Sampling means server-initiated agentic behaviros and recursive LLM interactions. Use <a target="_blank" href="https://github.com/block/goose">Goose MCP</a> local AI agent, automating engineering tasks seamlessly. Authenticate with Tetrate.
+
    * Roots: server-initiated inquiries into URI or filesystem boundaries to operate in.
    * Elicitation: server-initiated requests for additional information from users.
    <br /><br />
+
 
 To run an MCP client:
 ```
@@ -412,7 +507,7 @@ contains:
 ```
 
 
-### Install and use MCP within VS Code
+### VS Code
 
 Since most developers already have Visual Studio Code, let's add an MCP server to it:
 
@@ -529,4 +624,6 @@ https://www.youtube.com/watch?v=X0PwwfcGSHU
 We Found the BEST Vector Database! (Testing Head-to-Head Benchmarks)
 by Better Stack
 
+## Repetitive MCP Intro videos
 
+* https://www.youtube.com/watch?v=mm-LAkpM56g&pp=ugUHEgVlbi1VUw%3D%3D">Understanding Agentic AI with MCP in 5 minutes! by Pragmatic Works AI Academy

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-12-05"
-lastchange: "25-12-05 v003 mv from lamp-oil.md :fuels.md"
+lastchange: "25-12-05 v004 conseration :fuels.md"
 file: "fuels"
 title: "Fuels"
 url: "https://wilsonmar.github.io/fuels"
@@ -138,22 +138,30 @@ It's also packable.
 
 ## Grain Alcohol
 
-VIDEO: Grain alcohol stoves can be made out of a 12oz beer or soda can.
-
 Alcohol burns very clean.
-
-Many backpackers may carry an alcohol stove as a backup to their primary stove.
-
-But alcohol used to flambe cherries burn at a relatively low temperature.
 
 <strong>Denatured alcohol</strong> is the preferred fuel for alcohol stoves
 It has the highest percentage of alcohol to water ratio, like 90%.
-
 $__ per __oz. purchased at the hardware store burns for __ hours.
 
-"everclear" (Pure ethanol) can be purchased at a liquor store and used in an alcohol stove. 
+"Everclear" (Pure ethanol over 120 proof) are purchased at liquor store can be used in an alcohol stove. These are considered too dangerous for flambé.
+
+But warmed alcohol of around 40% alcohol (80 proof) used to flambé cherries burn at a relatively low temperature. Flames last 10-30 seconds. Common choices for flambé are brandy (including cognac), rum, and whiskey for meats or fruit cake. Liqueurs like Grand Marnier, Cointreau, or other orange liqueurs for desserts like crêpes Suzette with orange liqueur.
+
+PROTIP: Get a $__ long lighter to avoid burning. Warm food first before adding liquor around edges. Wait 2-5 seconds for vapors. Hold lighter 3-4 inches above pan (not in it); ignite vapors. Step back, shake gently if needed. 
+   * https://www.masterclass.com/articles/learn-how-to-flambe-at-home-the-12-best-flambe-recipes
+   <br /><br />
+
+Wine or beer usually will not ignite.
 
 "Rubbing alcohol" can be used but doesn't burn as clean as denatured alcohol or pure ethanol.
+
+VIDEO: Grain alcohol stoves can be made out of a 12oz beer or soda can.
+
+Many backpackers carry an alcohol stove as a backup to their primary stove.
+
+Buffets in retaurants keep their food warm by heating water by burning Sterno brand fuel.
+They're $__ for each __oz. can, which burn for __ hours.
 
 
 <a name="WhiteGas"></a>

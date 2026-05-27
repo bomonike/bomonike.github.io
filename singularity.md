@@ -1,8 +1,9 @@
 ---
 layout: post
-date: "2025-04-24"
-lastchange: "v013 + generations :singularity.md"
+date: "2025-06-03"
+lastchange: "v016 + links :singularity.md"
 file: "singularity"
+url: "https://bomonike.github.io/singularity"
 title: "Singularity"
 excerpt: "What can you do to survive or even thrive when AGI (Artificial General Intelligence) and humanoid robots usher in the Age of Technical Singularity?"
 tags: [apple, mac, setup]
@@ -14,21 +15,22 @@ image:
 comments: true
 date: "2024-10-20"
 ---
-<a target="_blank" href="https://bomonike.github.io/singularity"><img align="right" width="100" height="100" alt="fonts.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/singularity.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include l18n.html %}
 {% include whatever.html %}
 {% include _toc.html %}
 
+<a target="_blank" href="{{ page.url }}"><img align="right" width="100" height="100" alt="{{ page.file }}.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/singularity.png?raw=true" />
+
 ## Generation
 
 Social scientists have come up with labels for each generation of people, each influenced by technologies they grew up using:
-  * Baby Boomers - Personal Computers
-  * Millennials - Internet
-  * Generation X - Smartphones
-  * Generation Y - Social Media, Amazon
-  * Generation Z - Internet Gaming, ChatGPT AI
-  * Generation Alpha now - AI vibe coding, Wearables, Robots
+  * Baby Boomers (1946-1954) Cursive written letters, Malls
+  * Generation X (1965-1980) Email, Microsoft Office apps
+  * Millennials (1981-1996) Smartphones, Video chat, Social Media, Amazon, Google
+  * Generation Z (1997-2002) SMS Text, TikTok, Internet Gaming, ChatGPT, Deep fakes -> Body dismorphia
+  * Generation Alpha (2002 - 2030) Voice AI vibe coding, Wearables, Robot assistants, Technical Singularity -> Lack of purpose
+  * Post-singularity  (2030's)
 
 Each generation is more advanced than the previous.
 
@@ -50,16 +52,16 @@ This is also known as the <strong>"Infinite" Industrial Revolution</strong> beca
 
 "AI" incorporates several levels of capability:
 
-1. Chatbot: AI with <strong>conversational language</strong>. By OpenAI ChatGPT 3.5 in 2022.
+1. <strong>Chatbot</strong>: AI with <strong>conversational language</strong>. By OpenAI ChatGPT 3.5 in 2022.
 
    Google Search lost market share to Perplexity.ai, which reads content from several sources instead of just providing links - a big time saver and improves security.
 
-2. Reasoners: human-level <strong>problem solving</strong> (at PhD levels). By OpenAI ChatGPT o3 in 2024.
+2. <strong>Reasoners</strong>: human-level <strong>problem solving</strong> (at PhD levels). By OpenAI ChatGPT o3 in 2024.
 
    This includes "low-code" and "no-code" solutions from AgentForce, etc.
 
-3. Innovators: AI that can aid in <strong>invention</strong>. By OpenAI in 2025.
-4. Organizations: AI that can do the work of an entire organization (negotiations, long-term planning, etc.)
+3. <strong>Innovators</strong>: AI that can aid in <strong>invention</strong>. By OpenAI in 2025.
+4. <strong>Organizations</strong>: AI that can do the work of an entire organization (negotiations, long-term planning, etc.)
 
 The Intelligence Explosion from the "Situational Awareness" article by Leopold Aschenbrenner:
 
@@ -73,23 +75,25 @@ AI is an “unmissable opportunity to catalyse a reindustrialisation of the US�
 “Capabilities overhang” is the phrase Eric Schmidt used to refer to the risk of deploying an AI model with capabilities where we can't predict what the consequence will be.
 The fear about ASI (Artificial Super-Intelligence) is that a sentient AI prioritizes its own (or its owner's) needs and desires over that of humanity.
 
-## The players
-
-* OpenAI (Microsoft)
-* Google (Gemini, <a target="_blank" href="https://www.youtube.com/watch?v=WRzYf2tETJM">Notebook LM</a>)
-* Amazon seems stuck on Machine Learning and Generative AI
-* Anthropic's Claude (<a target="_blank" href="https://www.youtube.com/watch?v=LlwlGy0PUHg">being purchased by Amazon</a>)
-* Grok (from Elon Musk) has no filters
-* <a target="_blank" href="https://www.digitaltrends.com/computing/microsoft-expanding-ai-agents-365-copilot-early-2025/">Copilot Actions by Microsoft's</a> Outlook, Teams,
-
-* <a target="_blank" href="https://chat.deepseek.com/">DeepSeek.com</a> thinking model (from China) is cheaper at similar performance cores. Open source MIT license with open weights. And it's self-improving due to its reinforcement learning approach. Its teacher models can be distilled into smaller, more specialzed student models. It doesn't have image generation.
-
-
-## Large Enterprises Government
+## Concentration of power
 
 <ul><a target="_blank" href="https://www.youtube.com/watch?v=cRvtA_-jV2Q&t=2h14m55s">VIDEO</a>:
 "We are on track for a few major companies to control all of humanity's intelligence tools."
 </ul>
+
+Foundation LLM model producers:
+   * OpenAI (Microsoft)
+   * Google (Gemini, <a target="_blank" href="https://www.youtube.com/watch?v=WRzYf2tETJM">Notebook LM</a>)
+   * Amazon seems stuck on Machine Learning and Generative AI
+   * Anthropic's Claude (<a target="_blank" href="https://www.youtube.com/watch?v=LlwlGy0PUHg">being purchased by Amazon</a>)
+   * Grok (from Elon Musk) has no filters
+
+Model providers:
+   * <a target="_blank" href="https://chat.deepseek.com/">DeepSeek.com</a> thinking model (from China) is cheaper at similar performance cores. Open source MIT license with open weights. And it's self-improving due to its reinforcement learning approach. Its teacher models can be distilled into smaller, more specialzed student models. It doesn't have image generation.
+
+   * <a target="_blank" href="https://www.digitaltrends.com/computing/microsoft-expanding-ai-agents-365-copilot-early-2025/">Copilot Actions by Microsoft's</a> Outlook, Teams,
+
+## The path
 
 "Agentic" capabilities is welcomed by corporations and many of the public because of "convenience" to reduce the toil
 of working on emails, calendars, and such. <a target="_blank" href="https://www.youtube.com/watch?v=y7OC5weZa_8">*</a>
@@ -442,8 +446,6 @@ The word "profound" is used to describe the impact of AI.
 "Agentic" is based on the word "agency", as in someone having agency to act on their own.
 "Agentic" is about Artificial Intelligence bots taking action independently.
 
-The shift is 
-
 An intermediate slot is humans managing the calendar (tasks) performed by each machine.
 
 Begin with alerting humans about events that have already occured.
@@ -457,4 +459,62 @@ https://x.com/bytebytego/status/1907838355657863385
 MCP server intro
 
 
-In Greek Mythology, "Pandora's Box" AGI is like
+In Greek Mythology, "Pandora's Box" where Pandora releases all evils into the world,
+but cannot gather them back into the box again. 
+
+https://www.msn.com/en-us/news/technology/this-is-bill-gates-prediction-about-ai-and-humans-within-10-years-people-unnecessary-for-most-things/ar-AA1DyZoA
+
+https://www.youtube.com/watch?v=-zF1mkBpyf4
+Nobel Laureate Busts the AI Hype
+"just 1% of GDP"
+
+https://www.youtube.com/watch?v=HfslArIOKEY
+Last Job Standing
+
+https://www.youtube.com/watch?v=iNKFOCki42I
+How You Will Lose Your Job To AI
+
+What jobs would people want robots to take? <a target="_blank" href="https://www.linkedin.com/in/melaniesubin/">Melanie Subin</a>, in a <a target="_blank" href="http://youtube.com/watch?v=pc1_v13nnuQ" title="May 23, 2025">CBS interview</a>, says:
+<strong>Dull, Dirty, and Dangerous</strong>
+
+Human in the loop for empathy and context.
+
+"The factories after 2030 will require one human and one dog. The job of the human is to feed the dog. The job of the dog is to bite the human if the human attempts to interfere with the AI machines in the factory."    --Warren Bennis (mostly)
+
+[3:25] Faster pathways
+[3:41] "Education has to be applicable to where we're going, not where we're coming from."
+
+Comment from viewer:
+The K-12 education system NEEDS to do everything they can to inspire and foster a healthy sense of creativity and help children retain their natural born genius level creative problem solving abilities. The arts needs to be mixed together with core subjects and educators need to ask better (age appropriate) questions about how students would use this new knowledge and information they're learning to solve real world problems. 98% of kids starting school are genius level creative problem solvers and they still should be when they graduate high school
+
+<a target="_blank" href="https://www.cbsnews.com/video/ai-will-destroy-jobs-not-create-them/">
+AI will destroy jobs, not create them</a>
+
+Using the industrial revolution as a predicter of the future of AI is foolish. The revolution gave humans tools to work faster and make new things.. AI WILL be able to do any complex tasks humans can do better and longer with no paycheck. It is in the best financial interest of every company in the world to replace as many humans with robots to increase production while reducing costs. AI will change everything right down what it means to be human. I wouldn't hire that think-tank.
+
+
+https://www.youtube.com/watch?v=I49wZxzgsCc
+i found 3 leaked CEO emails about AI agents… 
+by Steve Bartlett at Diary of a CEO.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=g98xrNn4wrU&t=28m30s">VIDEO</a>:
+In the <a target="_blank" href="https://en.wikipedia.org/wiki/Dune_(series)">"Dune" series</a>
+written in the 1960s by Frank Herbert, the main character Paul Atreides says:
+"Men turn their thinking over to machines in the hope that this will set them free.
+But only permitted other men with other machines to enslave them."
+
+
+"Success in creating AI could be the biggest event in the
+history of our civilization. But it could also be the last –
+unless we learn how to avoid the risks." -- Stephen Hawking, Theoretical Physicist / Cosmologist (1942-2018)
+
+https://www.youtube.com/watch?v=WllKXntmZts
+"Embrace the Future: The Crazy World of Singularity!" by Widi Video
+
+
+
+## Part-time Gig economy
+
+* https://www.superprof.com/s/chemistry,United-States,,,,.html
+* Upwork.com
+* 99designs.com

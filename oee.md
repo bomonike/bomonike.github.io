@@ -72,3 +72,14 @@ The constant battle of process control is to act on one and ignore the other.
    ## Visualization
 
    https://inductiveautomation.com/exchange/2674/overview
+
+https://www.iiot.university/products/iiot-mini-course/categories/3362300/posts/11221064
+Lesson 6: How to calculate OEE and why you need to
+
+Industry 3,0 is paper based.
+
+Industry 4.0 is the automation of business processes to make data the primary commodity in your business. 
+
+Industry 5.0 is the introduction of AI LLM's, LRM's and AI agents to help find patterns, repost, and make suggested solutions to your business problems.
+
+https://www.oee.com/

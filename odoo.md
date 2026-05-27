@@ -1549,6 +1549,9 @@ TODO:
 
 ## Consultants
 
+https://www.odoo.com/partners/
+
+
 https://www.upwork.com/freelancers/~01f688ac2ee5f3320a
 $95/hr Andrew H.
 Garden Valley, ID
@@ -1562,3 +1565,4 @@ $45/hr Asim Z.
 Wilson Mar is a veteran of many transformations - from working on the Skunkworks stealth fighter IT  ERP to cloud to AI. He is APICS-certified to work on SAP, Salesforce, Azure, AWS, and many other technologies.
 
 What can waste your time, money, and reputation? You can spend a lot of money attracting prospects but not allowed to demo because your company doesn't have a SOC2/ISO 27000 letter. You can make millions only to lose it to ransomware. This talk is about what organizations can do to avoid such fate.
+

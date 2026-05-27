@@ -1,7 +1,8 @@
 ---
 layout: post
-date: "2024-12-06"
-change: git commit -m"v005 + URDF :ros.md"
+date: "2025-07-12"
+lastchange: "v006 + URDF :2021-08-02-ros.md"
+url: "https://wilsonmar.github.io/ros"
 file: "ros"
 title: "ROS (Robotic Operating System)"
 excerpt: "Learn the operating system for viewing using Gazebo and controlling simple robots"
@@ -26,6 +27,10 @@ https://classic.gazebosim.org/tutorials?tut=ros_urdf
 
 https://gazebosim.org/docs/ionic/spawn_urdf/
 
+https://www.nvidia.com/en-us/learn/learning-path/robotics/
+Robotics Fundamentals
+Start your robotics journey with essential foundations in simulation, Robot Operating System (ROS), and robot learning.
+Discover how to build intelligent robotic systems with NVIDIA Isaac™, a comprehensive ecosystem for robotic development, with these NVIDIA Deep Learning Institute (DLI) courses. Gain a foundational understanding of core robotics concepts and explore essential workflows in simulation and robot learning with hands-on training in Isaac Sim™ and Isaac Lab.
 
 ## Areas
 
@@ -579,3 +584,4 @@ https://releases.ubuntu.com/noble/
    ```bash
    rviz2
    ```
+

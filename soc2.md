@@ -50,12 +50,14 @@ Levels for rating status are adapted from <a target="_blank" href="https://logrh
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1705947975/soc2-somm-240122-2884x1152_oehmgp.png"><img alt="soc2-somm-240122-2884x1152.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1705947975/soc2-somm-240122-2884x1152_oehmgp.png"></a>
 
-   * 0 = INITIAL = Controls are not fully documented.
-   * 1 = PERFORMED = Controls <strong>documented</strong> for each practice
-   * 2 = MANAGED = Controls also <strong>follow plans and policies</strong>
-   * 3 = MEASURED = Controls also <strong>measured and tested</strong>
-   * 4 = DEFINED = Controls also <strong>standardized</strong>
-   * 5 = OPTIMIZED = Controls also ("continuosly") <strong>improved</strong>
+The level of each control/practice:
+
+   * 0 = INITIAL = not fully documented.
+   * 1 = PERFORMED = <strong>documented</strong> for each practice
+   * 2 = MANAGED = also <strong>follow plans and policies</strong> by resources
+   * 3 = MEASURED = also <strong>measured and tested</strong> for effectiveness, with results shared
+   * 4 = DEFINED = also <strong>standardized</strong> (automated) and followed by resources
+   * 5 = OPTIMIZED = also <strong>improvements</strong> are demonstrated
    <br /><br />
 
 BTW, an alternative is <a target="_blank" href="https://www.wikiwand.com/en/Cybersecurity_Maturity_Model_Certification">CMMC maturity model rating</a> which was deprecated in 2021 in favor of a "Fundamental, Advanced, and Expert" levels.

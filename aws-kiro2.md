@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-23"
-lastchange: "26-03-23 v041 mcp fle @aws-kiro2.md"
+date: "2026-04-10"
+lastchange: "26-04-10 v041 mcp fle @aws-kiro2.md"
 url: https://bomonike.github.io/aws-kiro2
 file: "aws-kiro"
 title: "AWS Kiro"

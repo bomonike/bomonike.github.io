@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2025-08-23"
-lastchange: "v038 + bytebytego flowchart :dns-ip-firewalls.md"
+lastchange: "v039 + bytebytego flowchart :dns-ip-firewalls.md"
 url: "https://bomonike.github.io/dns-ip-firewalls"
 file: "dns-ip-firewalls"
 title: "DNS IP Firewalls"
@@ -59,7 +59,7 @@ the <strong>public internet</strong> (Data Link layer) using
 
 &nbsp; &nbsp; &nbsp; Because most enterprises use just a couple of DNS servers, they can be vulerable to <strong>volumetric attacks</strong> where large amounts of malicious traffic can prevent users from finding the website. 
 
-Most consumers are asked to configure their machine's <strong>default local DNS reslover</strong> to 
+Most consumers are asked to configure their machine's <strong>default local DNS resolover</strong> to 
 use the public DNS server provided or controlled by their Internet Service Provider (ISP) (such as ATT, TMobile, Verizon, etc.).
 That enables them to make money from <strong>selling logs</strong> of your traffic details for profit.
 
@@ -86,11 +86,11 @@ That can be automatically done using the <strong>"gravity"</strong> utility.
 You can also override specific domains by editing your <strong>custom allowlist</strong>.
 
 Instead of using sketchy public DNS services to do the TLD and Authorative lookups,
-unfiltered traffic is passed to a <strong>local Recursive DNS service called "unbound"</strong>.
+unfiltered traffic is passed to a <strong>local Recursive DNS service called <a href="#Unbound">"unbound"</a>.
 
 This customization enables you to use <strong>DNSSEC</strong> protocols to encrypt traffic to make them more difficult to hack. By default, DNS traffic is unencryped. So anyone near you can intercept your DNS traffic and <a href="#DNSPoisoning">poison it</a> to send you to a malicious website instead.
 
-The unbound service needs to be invoked automatically upon <strong>reboot</strong>, and be controlled by a
+The <a href="#Unbound">unbound</a> service needs to be invoked automatically upon <strong>reboot</strong>, and be controlled by a
 <strong>automation CLI script</strong> that installs Python and other services such as <strong>DoH</strong> (DNS over HTTPS) protocol for better privacy by encrypting communications.
 
 To use your custom private blocklists <strong>while traveling</strong>, install a
@@ -202,7 +202,7 @@ REMEMBER: The ping command makes use of the ICMP protocol which reaches the webs
 
    <pre>PING google.com (216.58.193.206): 56 data bytes
 64 bytes from 142.250.217.110: icmp_seq=15 ttl=119 time=45.650 ms
-^C
+
 --- google.com ping statistics ---
 16 packets transmitted, 16 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 45.650/68.117/85.318/12.225 ms
@@ -213,6 +213,11 @@ round-trip min/avg/max/stddev = 45.650/68.117/85.318/12.225 ms
 <a name="localDNS"></a>
 
 ## Local DNS Resolver
+
+/etc/dns/config contains settings.
+
+To Uninstall dnsmasq base package:
+sudo apt-get remove dnsmasq-base
 
 1.  Use Terminal to show IP addresses used for DNS on your macOS machine:
 
@@ -357,7 +362,10 @@ ECS defines a mechanism for recursive solvers to send partial client IP address 
 
 ### HTTP/3 over QUIC
 
-Google designed QUIC with IETF in 2012 too speed YouTube, particularly on cellular networks.
+Google designed QUIC with IETF in 2012 to speed YouTube, particularly on cellular networks.
+
+https://www.ietf.org/rfc/rfc9250.html
+
 Google calls <a target="_blank" href="https://blog.cloudflare.com/the-road-to-quic/">QUIC</a> (Quick UDP Internet Connections) but IETF just uses the letters.
 
 It's already enabled on Chrome, Firefox. Open UDP port 443 in your firewall and create TLS SSL certs. Nginx servers need to add ALT-SVC header for HTTP/3 advertisement.
@@ -470,7 +478,7 @@ using server in <strong>Root Hints</strong> stored in the <strong>Cache.dns</str
 
 <hr />
 
-## Options for Firewall Blocking
+## Hardware for Firewall Blocking
 
 Large businesses install firewalls in their corporate networks such as from Palo Alto or Cisco.
 
@@ -478,25 +486,139 @@ Homes and small businesses use "consumer-grade" firewalls from brands such as Li
 
 Blocking ads makes for quicker browsing.
 
-* <a target="_blank" href="https://www.youtube.com/watch?v=Eyc3LVrhmIo">VIDEO</a>: Unifi Ad Blocker.
+* NextDS is a SaaS product so doesn't require local hardware setup, with concerns about privacy (even though they promise not to save and sell logs of your traffic).
 
+* <a target="_blank" href="https://www.youtube.com/watch?v=Eyc3LVrhmIo">VIDEO</a>: Unifi Ad Blocker.
 * <a target="_blank" href="https://www.youtube.com/watch?v=dTUvlFfThPw">VIDEO</a>: OPNSense
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=AgJGuyDyP_M">VIDEO</a>: UniFi Dream Machine Pro (UDM-Pro) by Crosstalk Solutions
 
-* Firewalla is a consumer-grade firewall that is also a router. It comes assembled with software installed. Firewalla has a Purple and Gold editions. The Gold edition adds Intrusion Detection.
+* Firewalla is a consumer-grade firewall hardware that is also a router. It comes assembled with software installed. Firewalla has a Purple and Gold editions. The Gold edition adds Intrusion Detection.
 
-* Technitium DNS Server
+* Apple macOS Mini?
+
+   Running a Docker container on my Mac Mini with port 53 open would also not work because all Macs run mDNSRepsonder that binds to port 53. This is one way Macs discover themselves on the network with each other and this cannot be turned off easily. You’d also have to disable macOS’s SIP (System Integrity Protection). Ref: https://github.com/docker/for-mac/issues/5335
+
+   So it's better to have DNS Ad blocker outside a Mac.
+
+* If you have the time and geeky inclinations, the least-cost and most customizable option is to buy a $120 Raspberry Pi SBC and install and configure utility software Pi-Hole.
+
+   <a name="Cooling"></a>
+
+   A crucial hardware component is cooling as chips get faster and run hotter.
+
+   * The Raspberry Pi Active Cooler. Idle at 0% CPU usage my Pi ran at 122F/50C.
+   * The Cana kit has a fan in the box.
+   <br /><br />
+   A $39 portable drink cooler?
+   <br /><br />
+
+   Another considering is support of new DNS protocols: QUIC.
+
+<hr />
+
+## Raspberry Pi Install
+
+### Raspberry Pi OS Install
+
+
+### Raspberry Pi Utilities Install
+
+### Benchmark drives using hdparm 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=kG1B5Vuf8sg">VIDEO</a>:
+
+1. List drives:
+   <tt><strong>sudo blkid</strong></tt>
+   ```
+   /dev/mmcblk0p1 Label_FATBOOT="bootfss" LABEL="bootfs" ...
+   /dev/mmcblk0p2: LABEL="rootfs" ...
+   /dev/sda1:
+   /dev/sda2:
+   ```
+1. Install on Raspberry Pi:
+   <tt><strong>sudo apt-get install hdparm -y</strong></tt>
+
+1. Run speed test: (-z is invalid parm)
+   <tt><strong>sudo hdparm -Tt /dev/mmcblk0p2</strong></tt>
+   ```
+   /dev/mmcblk0p2:
+    Timing cached reads:    11542 MB in  2.00 seconds = 5777.74 kB/sec
+    Timing buffered disk reads:  250 MB in  3.01 seconds =   83.06 MB/sec
+    ```
+1. Run through all storage devices found (within ):
+   ```
+   for dev in $(blkid -o device); do
+      # skip run on /dev/ram* disks:
+      if [[ $dev == /dev/ram* ]]; then
+         continue
+      fi
+      sudo hdparm -tt "$dev"
+   done
+   ```
+   The bash script at github.com/bomonike/hdparm-csv.sh 
+
+
+## DNS software for Raspberry Pi
+
+*  Technitium DNS Server supports DUIC and gets to work after install.
+   <a target="_blank" href="https://www.youtube.com/watch?v=QWvVVheYCes">VIDEO</a>
+   <a target="_blank" href="https://medium.com/@a.j.longchamps/home-lab-dns-goodbye-pi-hole-hello-technitium-fa947aed4a4f">fan blog</a> cautions:
+   "Pi-Hole has some opinions about Apple’s Private Relay functions and will not allow DNS resolution for some of Apple’s domains[1], even if they are explicitly whitelisted[2].
+   1. https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay
+   2. https://docs.pi-hole.net/ftldns/configfile/#icloud_private_relay
+
+   To install and run for a stand-alone machine:
+
+   <tt>curl -sSL https://download.technitium.com/dns/install.sh | sudo bash</tt>
+
+   Technitium has other utilities too.
+
+   <tt>du sh /opt/technitium</tt>
+
+   * 15548 MB /opt/technitium  250824T0527
+
+   Alternately, a Docker container image can also be downloaded:
+ 
+   <tt>docker pull technitium/dns-server:latest</tt>
+
+   http://localhost:5380
+
+   Techniitium was built ASP.NET core, also downloaded is the  .NET runtime to make it work.
+   So <a target="_blank" href="https://resources.imaginit.com/support-blog/how-to-uninstall-and-reinstall-microsoft-net-runtimes-to-fix-errors-with-autodesk-software">uninstall</a> would involve removing the .NET framework files:
+   ```
+   sudo rm /usr/bin/dotnet
+   sudo rm -rf /opt/dotnet/
+   ```
+   Additionally, the dns.service is installed, which should be removed on uninstall:
+   ```
+   # stop and disable the dns daemon
+   sudo systemctl disable dns.service
+   sudo systemctl stop dns.service
+   # delete dns server files
+   sudo rm -rf /etc/dns/
+   ```
+
+   <a name="AdGuard"></a>
 
 * AdGuard uniquely can be scheduled for a specific block of time each day with parental blocking. AdGuard can use DNSSEC (DNS over HTTPS). AdGuard can also be configured with wildcard specification. AdGuard can enable encryption using a certificate pulled from a CA every 3 months. <a target="_blank" href="https://www.youtube.com/watch?v=c3XMAz--_Us">VIDEO</a> But assumes less advanced configurations than PiHole.
 
+   <a target="_blank" href="https://www.youtube.com/watch?v=FLwlQafM3RM">by WWunderTech</a>
+
    Which is better? PiHole vs AdGuard Home?
+   * <a target="_blank" href="https://www.youtube.com/watch?v=hmjKCNtbulM">Install AdGuard Home - Cross Platform PiHole Alternative - on Raspberry Pi 4</a>
    * https://www.youtube.com/watch?v=c3XMAz--_Us by Hardwood
    * https://www.youtube.com/watch?v=nV5dKpGMGx4 by Tobi Teaches
    * https://www.youtube.com/watch?v=O15RD_gPz-s by Barmine
    <br /><br />
 
-* Set up UFW (Uncomplicated Firewall) to control incoming and outgoing network traffic:
+* OpenWRT
+
+* Firebog List Generator
+
+* Portainers
+
+* UFW (Uncomplicated Firewall) to control incoming and outgoing network traffic:
 
    ```
    sudo apt install ufw
@@ -506,8 +628,9 @@ Blocking ads makes for quicker browsing.
    sudo ufw enable
    ```
 
-* If you have the time and geeky inclinations, the least-cost and most customizable option is to buy a Raspberry Pi SBC and install and configure utility software Pi-Hole.
+* PiHole, see below.
 
+<hr />
 
 <a name="AutoInstall"></a>
 
@@ -520,25 +643,26 @@ Blocking ads makes for quicker browsing.
 
 ## Static IP on router
 
-To make this work, you first need to get into your internet router to set a 
-static (fixed) IP address instead of using one dynamically assigned by DHCP.
+1. Find out the static IP address of your PiHole.
 
-I gave a fixed private IP on my network to redirect all DNS queries.
+1. Identify the model of IP router to search for "configuration".
+
+   * Verizon https://www.verizon.com/support/residential/internet/home-network/wifi-settings
+   * T-Mobile Wi-Fi: https://www.t-mobile.com/support/devices/t-mobile-hotspot
+   * T-Mobile 5G Gateway: https://www.t-mobile.com/support/home-internet/t-mobile-gateway
+
+1. The default password is often printed with the Wi-Fi name.
+
+   PROTIP: Some homeowners add a (mesh) network devices to extend the range of service.
+
+1. It's important that you change the default password so others can't get into it.
+
+
+
+1. Change the static (fixed) IP address instead of having it dynamically assigned by DHCP.
 
 <hr />
 
-<a name="AdGuard"></a>
-
-## AdGuard on Raspberry Pi
-
-   * <a target="_blank" href="https://www.youtube.com/watch?v=hmjKCNtbulM">Install AdGuard Home - Cross Platform PiHole Alternative - on Raspberry Pi 4</a>
-
-
-with OpenWRT
-
-Firebog List Generator
-
-Portainers
 
 <hr />
 
@@ -892,7 +1016,12 @@ https://docs.pi-hole.net/main/basic-install/
 
     https://github.com/vmstan/gravity-sync
 
+
+   <a name="Unbound"></a>
+
     ### Install Unbound DNS route proxy
+
+    <a target="_blank" href="https://www.youtube.com/watch?v=X2J3a-x6nWA">Install by WunderTech</a>
 
 8.  Install Unbound service to make DNS queries anonymously:
 

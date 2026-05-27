@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-23"
-lastchange: "26-03-23 v013 claude course :aws-bedrock.md"
+date: "2026-04-01"
+lastchange: "26-04-01 v015 Yasir :aws-bedrock.md"
 url: https://bomonike.github.io/aws-bedrock
 file: "aws-bedrock"
 title: "AWS Bedrock"
@@ -64,14 +64,14 @@ References:
 
 Tutorials to pass the exam:
    * <a target="_blank" href="https://youtube.com/playlist?list=PL7Jj8Ba9Yr6BLf2lS4Nfa2jdl0KpdvqYC&si=mZrE2_8vdDkZSLyl">VIDEO series</a>: CloudExpert Solutions India
-   * <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4">15-hr Freecodecamp</a> with cheat sheets from <a target="_blank" href="https://ExamPro.com/aif-c01">ExamPro</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4">15-hr Freecodecamp</a> with cheat sheets from <a target="_blank" href="https://ExamPro.co/aif-c01">ExamPro</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=4h5m49s">VIDEO Follow Along: Create Bedrock Knowledge Base RAG</a> from Amazon CEO's letter to shareholders uploaded to a new S3 bucket with vector fields for Amazon <a target="_blank" href="https://www.youtube.com/watch?v=WZeZZ8_W-M4&t=52386s">Follow along OpenSearch</a>.
    * https://www.youtube.com/watch?v=gevdk7PV-s8
    * https://www.zerotocloud.co/course/ai-practitioner-notes $39 from <a target="_blank" href="https://www.youtube.com/watch?v=v5yQNl8Rjy0">Tech with Lucy</a>
 
    * <a target="_blank" href="https://learning.oreilly.com/videos/-/9780135420782/" title="March 2025">COURSE: AWS Certified AI Practitioner (AIF-C01)"</a> By Chad Smith
    * <a target="_blank" href="https://learning.oreilly.com/library/view/-/9798341622326/" title="Aug 2025">BOOK: AWS Certified AI Practitioner (AIF-C01) Study Guide</a> By Tom Taulli
-   * <a target="_blank" href="https://learning.oreilly.com/live-events/aws-ai-practitioner-certification-aif-c01-crash-course/0642572010715/" title="Apr 1 2026">Live Crash Course</a> by Yasir Khan
+   * <a target="_blank" href="https://learning.oreilly.com/live-events/aws-ai-practitioner-certification-aif-c01-crash-course/0642572010715/" title="Apr 1 2026">Live Crash Course</a> by Yasir Khan <a target="_blank" href="https://38labs.atlassian.net/wiki/external/OWU0YWU5NTIxZmUyNGNkMGI3NjlmZjc3YmI3OTc1OWE">Labs</a>
    * <a target="_blank" href="https://learning.oreilly.com/library/view/-/9781394328192/" title="Oct 2025">Sybex BOOK</a>: "AWS Certified AI Practitioner Study Guide" by Vikram Elango, Vivek Gangasani and Shreyas Subramanian
    <br /><br />
 

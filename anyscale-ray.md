@@ -28,12 +28,13 @@ The contribution of this article is use of CI/CD pipline that <strong>automates 
 Ray enables developers to run Python code at scale on <strong>Kubernetes clusters</strong> by abstracting orchestration on individual machines. 
 
 Workloads to use Ray for:
-   * Data processing
+   * Data processing (hosting MCP servers of AI Agents processing calendar & events)
    * Parallel processing Python code (using ray.remote)
+
    * Reinforcement learning
    * Distributed training
    * Hyperparameter tuning
-   * Batch & Online inference
+   * Batch & Online inference, such as Requirements mangagement (Jira, Trello, Monday.com) planning
 
 Ray is a high-performance distributed execution framework targets large-scale machine learning and reinforcement learning applications. Ray's MLOps ecosystem includes features for:
    * Developer tools
@@ -375,12 +376,12 @@ enables use of GPUs being managed as clusters of containers managed by Kubernete
 <a target="_blank" href="https://www.linkedin.com/in/robert-nishihara-b6465444/">
 Robert Nishihara</a>
 
-On <a target="_blank" href="https://learning.oreilly.com/videos/-/0636920487463/" title="Dean Wampler on Scaling ML/AI Applications with Ray">video October 5 2020</a> Dean Wampler</a> (<a target="_blank" href="https://deanwampler.com">deanwampler.com</a>) Head of DevRel at Anyscale, said "The biggest use uer of Ray is Ant Financial in China. It's like the Stripe/Paypal of China, running thousands of nodes."
+On <a target="_blank" href="https://learning.oreilly.com/videos/-/0636920487463/" title="Dean Wampler on Scaling ML/AI Applications with Ray">video October 5 2020</a> Dean Wampler (<a target="_blank" href="https://deanwampler.com">deanwampler.com</a>) when he was Head of DevRel at Anyscale, said "The biggest use uer of Ray is Ant Financial in China. It's like the Stripe/Paypal of China, running thousands of nodes."
 He's <a target="_blank" href="https://www.linkedin.com/in/deanwampler/">now IBM's chief technical representative to the AI Alliance (@the-aialliance)</a>. 
     * Author of "Programming Scala, Third Edition", 2021
     * polyglotprogramming.com/talks
 
-<a target="_blank" href="https://www.linkedin.com/in/dmatrix/">Jules Damji</a>, pormerly at Databrickss, is Lead Developer Advocate at Anyscale, gave these talks:
+<a target="_blank" href="https://www.linkedin.com/in/dmatrix/">Jules Damji</a>, formerly at Databrickss, is Lead Developer Advocate at Anyscale, gave these talks:
    * https://github.com/dmatrix/ray-core-tutorial#-setup-instructions-for-local-laptop-
    * https://github.com/dmatrix/ray-misc-examples
    * https://github.com/ray-project/ray-educational-materials

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-01-20"
-lastchange: "26-01-20 v005 + Frigate :security-cameras.md"
+lastchange: "26-01-20 v006 + Frigate :security-cameras.md"
 url: https://bomonike.github.io/security-cameras
 file: "security-cameras"
 title: "Security Cameras"
@@ -12,18 +12,17 @@ comments: true
 created: "2019-03-21"
 ---
 <i>{{ page.excerpt }}</i> 
-{% include l18n.html %}
 {% include _toc.html %}
 
-## Capabilities
+## The capabilities I seek
 
-   References: 
-   * <a target="_blank" href="https://www.youtube.com/@foxysLab">@foxysLab</a>
-   * https://www.youtube.com/watch?v=tbCKWX34_G4 @NetworkChuck
-   * Hook Up channel by Robert
-   <br /><br />
+I like SimpliSafe's <strong>proactive</strong> slogan for selling their monitoring service to homeowners: "Stop Crime Before It Happens". SimpliSafe Pro has a human call you when hardware alarms are triggered.
 
-What we want are continuous video feeds from wired and wifi cameras being stored locally in an NVR (Network Video Recorder) so I don't pay to send to China (violating my privacy). Cameras have Infrared (IR) <strong>night vision</strong> to see in the dark.
+I'm also interested in <strong>automations</strong> for convenience to save time.
+
+Ultimately, I'd like a <strong>drone</strong> to be sent out to (autonomously) investigate closer when an alarm is triggered, like in the <a target="_blank" href="https://www.justwatch.com/us/movie/minority-report">2002 movie Minority Report</a>. The drone would navigate through a 4D "digital twin" <a href="#PointClouds">point cloud</a> (Cartesian space) of the property.
+
+I want continuous <a href="#HiRes">high-resolution</a> video feeds (from wired and wifi cameras) stored locally in an <strong>NVR (Network Video Recorder)</strong> so I don't pay to send to China (violating my privacy). <strong>Cameras</strong> have Infrared (IR) <strong>night vision</strong> to see in the dark.
 
 Many brands of cameras are junk (have problems keeping a connection, etc.).
 UniFi has their own NVR ecosystem.
@@ -31,45 +30,41 @@ Reolink and Amcrest camera generally plays nicer than other brands.
 The Reolink 811A PoE IP Wired Security Camera 4K - 123° FoV, 5X Optical Zoom, 2 Way Talk (<a target="_blank" href="https://www.amazon.com/REOLINK-Security-Detection-Spotlight-Time-Lapse/dp/B09873G7X3/">$130 from Amazon</a>) has higher performance than the $89 810A or 510A.
 Annke B1200 has the highest performance but ???.
 
-Human monitoring services such as SimpliSafe Pro would have a human call when hardware alarms are triggered.
-
 We want to use AI object detection smart enough to recognize objects as named entitites such as "dog" vs "human", "porch pirate" vs "mailman", etc.
 Recognition focuses on custom <strong>detection zones</strong>.
 
-## Frigate
+   References:
+   * <a target="_blank" href="https://www.youtube.com/@foxysLab">@foxysLab</a>
+   * https://www.youtube.com/watch?v=tbCKWX34_G4 @NetworkChuck
+   * Hook Up channel by Robert
+   <br /><br />
 
-Frigate began in 2019 by Blake Blackshear.
+## Frigate for Real AI
 
-To process streams from several cameras using AI requires a hefty computer with a TPU (Tensor Processing Unit) for running machine learning models efficiently. Frigate no longer supports use of the Coral USB accelerator, Google's edge TPU. And Google stopped making them. So look for them on Ebay or at Amazon UK.
+To process streams from several cameras using AI requires a hefty computer with a TPU (Tensor Processing Unit) for running machine learning models efficiently. Frigate no longer supports use of the <a target="_blank" href="https://developers.google.com/coral">Coral USB-C accelerator, Google's edge TPU</a>. And Google stopped making them. So look for them on Ebay or at Amazon UK. It processes 4 TOPS (trillion operations per second) at 2 TOPS per watt.
 
-Now consider the Hailo 8L accelerator.
+Now consider the <a target="_blank" href="https://hailo.ai/">Hailo 8L accelerator</a>.
 
-We don't have time to scroll through hours of videos, so we want our AI to extract from the NVR relavent video clips and snapshot images across several cameras.
+Who has time to scroll through hours of videos? So we want our AI to automatically extract from the NVR relavent video clips and snapshot images across several cameras.
 
 Since storage capacity is finite (and costs money), this enables flexibility in retention policy which controls how far back recordings are kept. We keep videos of our kids for a year, other people for 30 days, and car detections for 7 days.
 
 On a Mac, the Scripted app passes recognitions to Apple HomeKit for viewing on Apple TV and/or Home Automation software???
 
 <a target="_blank" href="https://frigate.video/">https://frigate.video</a>
-Frigatae+ is $50/yr.
+
+Frigate began in 2019 by Blake Blackshear.
+
+Frigate was trained on the COCO (Common Objects in Context) dataset of random images.
+Frigate+ subscription was trained on security-related images around the world. Frigate+ is $50/yr.
+
+### Cameras
 
 Discovery and auto-configuration of IP cameras use the ONVIF (Open Network Video Interface Forum) protocol.
 
 Streaming makes use of cameras that sends out video streams in RTSP (Real Time Streaming Protocol).
 
 Frigate can control cameras able to PTZ (Pan & Tilt & Zoom).
-
-
-
-Triggers
-
-Frigate was trained on the COCO (Common Objects in Context) dataset of random images.
-Frigate+ subscription was trained on security-related images around the world.
-
-Frigate 
-Home Automation
-
-
 
 
 ## The problems with security cameras
@@ -102,6 +97,8 @@ https://www.cnet.com/home/security/eufy-says-software-bug-that-exposed-users-vid
 
 * Nest Cam IQ Indoor - https://amzn.to/44tlj4R
 * Netgear Arlo Q - https://amzn.to/4cCSaX8
+
+<hr />
 
 <a name="Eufy"></a>
 
@@ -165,3 +162,13 @@ by Feelin Tech Today
 How To Setup Eufy Indoor Camera E30 / Review.
 
 
+<a name="PointClouds"></a>
+
+## Point Clouds
+
+   References: 
+   * <a target="_blank" href="https://www.oreilly.com/library/view/3d-data-science/9781098161323/">OREILLY Apr 2025 BOOK: 3D Data Science with Python</a> by Florent Poux at the 3D Geodata Academy.
+   <br /><br />
+
+Entwine, COPC and Potree format is the solution for huge poinclouds. With Potree, not problem to visualize hundreds billions points and store this in a single > Terrabyte file. What other software can manage this ? 
+https://youtu.be/XCW2oraeV0Y

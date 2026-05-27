@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-29"
-lastchange: "26-04-29 v032 ollama context @anthropic-certs.md"
+date: "2026-05-02"
+lastchange: "26-05-02 v036 grok model @anthropic-certs.md"
 url: "https://bomonike.github.io/anthropic-certs"
 file: "anthropic-certs"
 title: "Anthropic Claude AI Certifications"
@@ -52,10 +52,9 @@ This article was hand-crafted based on AI responses.
    1. Click <a target="_blank" href="https://www.linkedin.com/ad-library/search?companyIds=106863934">"Ads"</a> to see videos of 2026 Superbowl commercials.
    <br /><br />
 
-1. <a target="_blank" href="https://www.youtube.com/@anthropic-ai">Anthropic's YouTube channel</a>
+1. The history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons is summarized in <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> 
 
-   * <a target="_blank" href="https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b">Article</a> by Gigi Sayfan
-   <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
+   It says the company is headquartered in San Francisco's <a target="_blank" href="https://en.wikipedia.org/wiki/Foundry_Square">Foundry Square</a> (near the Bay Bridge) at 500 Howard and First Streets (across from Chipotle & BlackRock and close to the SalesForce tower's BART/busses). 
 
 * <a target="_blank" href="https://www.linkedin.com/showcase/claude/posts/?feedView=all">"Claude" on LinkedIn.com</a> says "Claude is an AI assistant built by Anthropic to be safe, accurate, and secure." in Technology, Information and Internet. 884K followers.
 
@@ -65,31 +64,22 @@ This article was hand-crafted based on AI responses.
    <a target="_blank" href="https://www.youtube.com/watch?v=grh7CMl960s">VIDEO</a>: "Brainstorm in Claude, build in Cowork"
 
 
-<a name="Competition"></a>
-
-## Competition
-
-Claude competes with agentic coding tools (aka coding agent IDEs) that read a codebase, edit files, and run commands:
-   * Amazon's Kiro CLI & IDE for spec-driven development. But it needs to be constantly connected to AWS eating up credits.
-   * warp.dev (which does a great job of detecting coding and CLI errors and suggesting fixes), <a target="_blank" href="https://github.com/warpdotdev/warp">now open source</a>
-   * OpenAI's Codex <a target="_blank" href="https://www.youtube.com/watch?v=kFS6z_97Ohc&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
-   * OpenCode
-   * Perplexity
-   * Google Gemini Gemma & Antigravity IDE
-   * Mistral AI
-   * Devin by Cognition (merged)
-   * Temporal's <a target="_blank" href="https://www.youtube.com/watch?v=3rpwaKQXI7A">Pydantic</a>
-   * OpenCode
-   <br /><br />
-
-https://www.tbench.ai/leaderboard (Terminal Bench Leaderboard) provides benchmarks AI agents' terminal mastery operating the <a target="_blank" href="https://www.harborframework.com/">harbor framework</a>.
-
-
 <a name="Support"></a>
 
 ## Claude Support
 
-REMEMBER: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. 
+WARNING: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a target="_blank" href="https://support.claude.com/en/">chat at support.claude.com</a>. 
+
+   * https://support.claude.com/en/articles/9015913-how-to-get-support
+
+1. <a target="_blank" href="https://www.youtube.com/@anthropic-ai">Anthropic's YouTube channel</a>
+   
+   * <a target="_blank" href="https://medium.com/@the.gigi/claude-code-deep-dive-lock-him-up-ea142fc8246b">Article</a> by Gigi Sayfan
+   <a target="_blank" href="https://the-gigi.github.io/gigi-zone/posts/2026/03/cc-deep-dive-12-lock-him-up/">CCDD (Claude Code Deep Dive)</a>
+
+1. <a target="_blank" href="https://www.reddit.com/r/ClaudeAI/">Reddit: r/ClaudeAI</a> https://claudecodeguide.dev/
+
+   * https://www.reddit.com/r/ClaudeAI/wiki/survivalguideweekly/ Weekly Survival for Claude Users is a must-read.
 
 
 <a name="Products"></a>
@@ -116,9 +106,7 @@ REMEMBER: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a
 
 * <strong>Claude CoWork</strong> can interact with you computer's files, mouse, keyboard, and screen, to operate any app. <a target="_blank" href="https://www.youtube.com/watch?v=rlIy7b-3DC8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
 
-* The history of the US Government's use of Claude for domestic surveillance or in fully autonomous weapons is summarized in <a target="_blank" href="https://en.wikipedia.org/wiki/Anthropic" title="Visited 25-03-25">https://en.wikipedia.org/wiki/Anthropic</a> 
-
-   It says the company is headquartered in San Francisco's <a target="_blank" href="https://en.wikipedia.org/wiki/Foundry_Square">Foundry Square</a> (near the Bay Bridge) at 500 Howard and First Streets (across from Chipotle & BlackRock and close to the SalesForce tower's BART/busses). 
+* "computer use" can open native applications, click through user interfaces, test its own changes, and fix what breaks — all from a developer's terminal. Combined with existing debugging workflows, these features move Claude Code closer to autonomous identification and resolution of bugs during development.
 
 REMEMBER: Anththropic does not <strong>host</strong> their own models but use AWS, Azure, GCP, etc.
    Claude is the only frontier AI model available on all three leading cloud providers: AWS, Google Cloud, and Microsoft.
@@ -180,7 +168,7 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 
 * <strong>MCP Support</strong>: Extend it with any MCP tool to access APIs, databases and other external systems.
 
-* <href="#Tools">MCP Tools</a> defines what MCP clients should run to take action.
+* <a href="#Tools">MCP Tools</a> defines what MCP clients should run to take action.
 
 * <a href="#Hooks">Hooks</a> are small Python and/or Bash shell scripts (agentic workflows) that run when <strong>triggered by events</strong>: "PreToolUse" (after Read) or "PostToolUse" (after Write or Edit). REMEMBER: A hook can also block Claude from taking an action unless a specific condition has been met.
 
@@ -193,9 +181,92 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 * "Constitutional AI" is a training approach developed by Anthropic to help AI models <strong>self-evaluate and revise</strong> their own responses, based on a predefined set of ethical guidelines and principles (harmless, honest, etc.) rather than RLHF (Reinforcement Learning with Human Feedback). "intent classification" in Claude’s safety system
 
 
+<a name="Pricing"></a>
+
+## Pricing/Billing
+
+REMEMBER: There are two ways to pay for Claude:
+
+   <ul>
+   A. <strong>Buy credits</strong> (pop-up clicking "Add funds" at the bottom of <a target="_blank" href="https://platform.claude.com/">platform.claude.com</a>. Good for 1 year to be consumed with API, Claude Code, and Workbench usage.
+
+   B. Anthropic Console Account (auto reload) at <a target="_blank" href="https://platform.claude.com/settings/billing">https://platform.claude.com/settings/billing</a> for <strong>API usage</strong>. <strong>Buy credits</strong> ("credit grants" via Stripe, like Starbucks). Includes Batch for cheaper API rates.
+
+   C. <a href="#Subscription">Claude account with subscription</a> (plus overage charges) when using Claude Code IDE/CLI.
+
+   D. Arrange for invoicing after consumption: contact Sales.
+
+   E. Via third-party providers Vertex or AWS Bedrock
+   </ul>
+
+### Subscriptions
+
+PROTIP: <a target="_blank" href="https://www.getmerlin.in/pricing?coupon=merlin">Use merlin.ai</a>'s bulk purchasing costs <strong>$5/mo ($60/year)</strong> (with code AZ5) to access several LLMs (Claude Sonnet 4.5, OpenAI GPT5, etc.) instead of paying for a Claude AI subscription at <a target="_blank" href="https://claude.com/pricing">https://claude.com/pricing</a>:
+* Claude Free
+* Claude Max $17/month 
+* Claude Max $100/month for 5x or 20x more usage than Pro
+* Teams $20/month
+* Enterprise
+<br /><br />
+
+REMEMBER: A paid plan is required to use Claude Code and Cowork, <a href="#Projects">Projects</a> freature, Claude for Chrome, Slack, Excel, Word, PowerPoint.
+
+CAUTION: In April 2026 Anthropic removed the $17/month tier and requires the $100/month for use of Claude Code.
+
+CAUTION: Rate tokens chargess for the same request prompt is not consistent over time.
+
+CAUTION: Claude's token charges are more complicated that figuring out your taxes.
+
+DEFINITION: A "token" takes about 3/4 of a word to store because each token is a chunk of each word in a text file from a "corpus" of documents. Tokens are "trained" within AI models by turning chunks of each word into a numerical representation vector for each concept. The "weight" of each token refers to the numerical coordinates in each of many dimensions of meaning.
+
+
+<a name="ToolCompetition"></a>
+
+## AI Tool Competition
+
+Claude competes with agentic coding tools (aka coding agent IDEs) that read a codebase, edit files, and run commands:
+   * Amazon's Kiro CLI & IDE for spec-driven development. But it needs to be constantly connected to AWS eating up credits. <a target="_blank" href="https://builder.aws.com/content/34NW7Wl1gpOl2E4jeJQ6iytovSM/how-to-use-agent-skills-with-amazon-q-developer-and-kiro">agent-skills-mcp</a> to convert from Anthropic Agent Skills.
+   * warp.dev (which does a great job of detecting coding and CLI errors and suggesting fixes), <a target="_blank" href="https://github.com/warpdotdev/warp">now open source</a>
+   * OpenAI's Codex <a target="_blank" href="https://www.youtube.com/watch?v=kFS6z_97Ohc&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
+   * OpenClaw (acquired by OpenAI)
+
+   * Google Gemini Gemma & Antigravity IDE
+   * Warp CLI & IDE
+   * Temporal's <a target="_blank" href="https://www.youtube.com/watch?v=3rpwaKQXI7A">Pydantic</a>
+
+   * OpenCode
+   * Perplexity for chat
+   * Mistral AI
+   * Devin by Cognition (merged)
+   <br /><br />
+
+https://www.tbench.ai/leaderboard (Terminal Bench Leaderboard) provides benchmarks AI agents' terminal mastery operating the <a target="_blank" href="https://www.harborframework.com/">harbor framework</a>.
+
+
+<a name="Models"></a>
+
+## LLM Model Availability
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1777784319/claude-models_imewjt.png"><img alt="claude-models.png/pptx" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1777784319/claude-models_imewjt.png" /></a>
+
+On your local machine, Claude API calls are, by default, to the Claude cloud. But Claude is the most expensive cloud service and getting more expensive.
+This diagram illustrates the alternatives. 
+
+NVIDIA's service that's free for now on its NIM cloud. Being the first to market, the OpenAI APIs can be made to access NVIDIA as well as OpenAI's own cloud. NVIDIA hosts models from IBM, Meta, and others as well. The OpenAI API also mimics calls to Claude's cloud.
+
+DeepSeek's cloud in China is 30 times less expensive than Claude. Claude Code can make use of DeepSeek's cloud service via a Proxy service. 
+
+Qwen and Google Gemini are offered as open source that can be downloaded to run on your local server, for privacy offline, at no cost through the Ollama service.
+
+There is also a <strong>OpenRouter.ai</strong> service that hosts various models at low cost.
+
+
+
 <a name="Productivity"></a>
 
 ## Productivity: What can you do with Claude?
+
+PROTIP: What outcomes are changed for customers?
 
 Target one job that has these three qualities:
 
@@ -236,25 +307,6 @@ CAUTION: Cowork activity is not captured in audit logs or Compliance APIs today,
 <a target="_blank" href="https://www.youtube.com/watch?v=Y3PcRp5RFzk&pp=ugUEEgJlbg%3D%3D">"5 ‘Boring’ AI Workflows that Businesses Actually Want (And How to Sell them)"</a> by Nate Herk of AI Automation
 
 
-<a name="Pricing"></a>
-
-## Pricing Subscriptiions
-
-PROTIP: <a target="_blank" href="https://www.getmerlin.in/pricing?coupon=merlin">Use merlin.ai</a>'s bulk purchasing costs <strong>$5/mo ($60/year)</strong> (with code AZ5) to access several LLMs (Claude Sonnet 4.5, OpenAI GPT5, etc.) instead of paying for a Claude AI subscription at <a target="_blank" href="https://claude.com/pricing">https://claude.com/pricing</a>:
-* Claude Free
-* Claude Max $17/month to use Claude Code and Cowork
-* Claude Max $100/month for 5x or 20x more usage than Pro
-* Teams $20/month
-* Enterprise
-<br /><br />
-
-CAUTION: In April 2026 Anthropic removed the $17/month tier and requires the $100/month for use of Claude Code.
-
-CAUTION: Rate tokens chargess for the same request prompt is not consistent over time.
-
-CAUTION: Claude's token charges are more complicated that figuring out your taxes.
-
-
 <a name="Quizzes"></a>
 
 ## Quizzes
@@ -280,7 +332,11 @@ On Coursera, <a target="_blank" href="https://www.coursera.org/instructor/~19260
    * <a target="_blank" href="https://www.coursera.org/learn/model-context-protocol-advanced-topics">Model Context Protocol: Advanced Topics</a>
    <br /><br />
 
-Intro:
+With a OReilly.com subscription:
+   * <a target="_blank" href="https://learning.oreilly.com/course/claude-code-masterclass/9781807784119/">2hr video course: Claude Code Masterclass: Code faster with Agentic AI</a> by <a target="_blank" href="https://www.linkedin.com/in/arunprabu-nallasamy-7363a854/">Arunprabu Nallasamy</a> references<br />https://github.com/Arunprabusamy/course-explainer-app known-bad code to fix and quizzes at
+   https://github.com/PacktPublishing/Claude-Code-Masterclass-Code-faster-with-Agentic-AI
+
+Youtube:
    * <a target="_blank" href="https://www.youtube.com/watch?v=qUQbU7h4RoE">I Took All 7 Anthropic Courses in One Weekend (Honest Review)</a> by Jas Wong
    * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4">12 hour "Claude Code Essentials" exam</a> released by Andrew and <a target="_blank" href="https://gunnargrosch.com/">Gunnar Grosch</a> referencing <a target="_blank" href="https://github.com/enthropics/">github.com/enthropics</a> on March 20, 2026 via freeCodeCamp.org to plug <a target="_blank" href="https://www.exampro.co/exp-claudecode-01">$34 ExamPro study materials</a> to pass ExamPro.co's own "EXP-CLAUDECODE-01".
 
@@ -344,10 +400,14 @@ Claude Mythos 5: Most Powerful Model Ever! AGI, GLM 5.1, Claude Code Update & Co
 
 QUESTION: Can a Chromebook (with no large RAM or hard drive) be used?
 
+About Claude Code + VS Code + Local LLM:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=GImq1WL9OJQ&pp=ugUHEgVlbi1VUw%3D%3D">by Zero to MVP</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=117s">by Alex Ziskind</a>
+
 
 <a name="Installs"></a>
 
-## Installs
+## Install utilities
 
 1. To enable installation of utility packages on macOS, install the Homebrew package manager for macOS, from any folder:
    ```bash
@@ -355,9 +415,11 @@ QUESTION: Can a Chromebook (with no large RAM or hard drive) be used?
    ```
    NOTE: It makes use of Ruby that comes with all macOS.
 
-1. To freely open apps from any folder, add the two app paths to .bash_profile:
-   ```
-   /Applications;~/Applications
+1. Install the lateszt NodeJs for Claude to run TypeScript:
+   ```bash
+   brew install node
+   node --version
+   nvm install --lts
    ```
 
 1. Optionally, install an alternative to macOS native Terminal app:
@@ -366,6 +428,11 @@ QUESTION: Can a Chromebook (with no large RAM or hard drive) be used?
    open -a kitty
    ```
    PROTIP: 3rd-party Terminal apps Kitt and Ghostly natively support notification events without additional configuration (which iTerm2 does).
+
+1. To freely open apps from any folder, add the two app paths to .bash_profile:
+   ```
+   /Applications;~/Applications
+   ```
 
 
 <a name="ClaudeCodeTemplate"></a>
@@ -483,14 +550,24 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
         thinking   
    </pre>
 
-   | model ID | context<br />length | embedding<br />length | VRAM |
-   | -------- | ------------------: | --------: | ---- |
-   | deepseek-v3.1:671b-cloud | 163840 | 7168 | ~128 GB |
-   | deepseek-r1:14b | 131072 | 5120 | ? |
-   | gpt-oss:20b-cloud | 131072 | 2880 | ? |
-   | gpt-oss:120b-cloud | 131072 | 2880 | ? |
-   | kimi-k2:1t-cloud | 262144 | 2048 | ? |
-   | qwen3-coder:480b-cloud | 262144 | 2048 | ? |
+   Notice that "thinking" is among Capabilities for 
+   "kimi-k2.5:cloud" but NOT for<br />
+   "kimi-k2:1t-cloud"
+   kimi and qwen3.
+
+   | model ID | context<br />length | embedding<br />length | Quant | VRAM | Capabilities |
+   | -------- | ------------------: | --------: | ---- | ---- | ---- |
+   | deepseek-v3.1:671b-cloud | 163840 | 7168 | FP8 | ~128 GB | completion, tools, thinking |
+   | deepseek-r1:14b | 131072 | 5120 | Q4_K_M | ? | completion, tools, thinking |
+   | gpt-oss:20b-cloud | 131072 | 2880 | MXFP4 | ? | completion, tools, thinking |
+   | gpt-oss:120b-cloud | 131072 | 2880 | MXFP4 | ? | completion, tools, thinking |
+   | kimi-k2.5:cloud | 131072 | 2880 | MXFP4 | ? | completion, tools, thinking |
+   | kimi-k2.6:1t-cloud | 262144 | 2048 | INT4 | ? | completion, tools |
+   | qwen3-coder:480b-cloud | 262144 | 2048 | FP8 | ? | completion, tools |
+
+   The "Quant" (Quantization Type) value is the <tt>OLLAMA_KV_CACHE_TYPE="q8_0"</tt> (for 8-bit) in the <a href="#OllamaServe">ollama serve command</a>. It controls the precision of how the KV cache is stored in memory. Using "q8_0" instead of the default "f16" reduces memory pressure. Quantization in AI is a way to make models smaller, faster, and cheaper to run by using lower-precision numbers for weights and activations. It's like rounding numbers to save space.
+
+   All models started with that setting use the same cache type.
 
    Multiply the two numbers to calculate the <strong>KV cache size</strong><br />
    ≈ embedding_length × context_length × 2 × num_layers × bytes_per_element
@@ -520,6 +597,8 @@ PROTIP: Load my templates repo from GitHub, which contains a curated set from ot
    ollama pull "$MY_MODEL_ID"        # download
    ```
 
+   <a name="OllamaServe"></a>
+   
    ### Start Ollama
 
 1. To run Ollama in the <strong>foreground</strong>, start the service using the memory specification:
@@ -834,6 +913,8 @@ QUESTION: How to get shortcut keys for other menu items?
    <a href="#config">/config</a>     # configuration
    <a href="#loop">/loop</a>
    <a href="#doctor">/doctor</a>
+
+   <a target="_blank" href="https://www.perplexity.ai/page/claude-code-adds-cloud-based-b-LmtJQA7lRFuuG2Dr2sutTw">/ultrareview</a> launches reviewer agents in a remote sandbox to analyze a developer's branch or pull request, independently reproducing and verifying each finding to focus on real bugs rather than style suggestions. 
    </pre>
 
    <a name="help"></a>
@@ -849,16 +930,32 @@ QUESTION: How to get shortcut keys for other menu items?
    <pre>
    /model default   # to switch to the sonnet model
    /model haiku     # to switch to using the latest Haiku model.
-   /model Sonnet (1M context)  # to switch to using the latest Opus model.
-   /model Opus (1M context)    # to switch to using the latest Opus model.
+   /model sonnet (1M context)  # to switch to using the latest Opus model.
+   /model opus (1M context)    # to switch to using the latest Opus model.
    /model mythos               # new Capybarra March 28, 2026 to Cyber Defenders.
    /fast                       # to speed up Opus model execution.
    </pre>
 
 
-   ### More slash commands
+## Periodic 
+
+PROTIP: A great first project to really leverage the capabilities of Claude is an action management system that integrates task lists, calendars, metrics, dashboards -- as if you're managing a production process for money (because you actually are). Such an approach create mechanisms:
+
+* Signon (Morning) "news since yesterday", priorities for today
+* Signoff (Evening) cleanup, backups
+* Weekly Dashboard review
+* Monthly process (<a href="#insights">/insights</a>)
+* Quarterly (like filing tax)
+* Annual (like doing taxes)
+<br /><br />
+
+<a href="#insights">/insights</a>
+### /insights
+
+<a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insights</a>
+create @file://$HOME/.claude/usage-data/report.html from 
+
    <pre>
-   <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=27s">/insights</a>   # file://$HOME/.claude/usage-data/report.html
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=3m42s">/effort   # Effort Level Controls</a> https://www.youtube.com/watch?v=brLhhkUqcn4&t=18618s">max for Opus only. high, medium, low, auto.
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=5m20s">/remote-control   # </a>
    <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY&t=6m31s">/batch   # Batch Tasks & PRs </a>
@@ -885,6 +982,7 @@ But https://github.com/oboard/claude-code-rev has restored some functionality us
 
 <a target="_blank" href="https://deep-dive-claude-code.vercel.app">The "Deep Dive Claude Code app"</a> presents its analysis of the leak's 960+ files, 50+ integrated tools, 380K+ lines of code.
 These 13 chapters take you from the core loop to the full engineering picture, layer by layer.
+<a target="_blank" href="https://www.reddit.com/r/LocalLLaMA/comments/1s8xj2e/claude_codes_source_just_leaked_i_extracted_its/">r/LocalLaMA</a> reimplemented https://github.com/JackChen-me/open-multi-agent
 
 REMEMBER: The revolution Claude (and other GenAI products) is that instead of typing precise programming code, you type English sentences to describe how Claude generates programming code, in markdown format files (with “.md” at the end of file names).
 
@@ -1009,9 +1107,15 @@ REMEMBER: Two folders are created:
    * <a href="#Skills">skills folder</a>
    <br /><br />
 
-   https://github.com/forrestchang/andrej-karpathy-skills
-   A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
+   My https://github.com/bomonike/claude-templates has 3 different CLAUDE.MD files for each
+   * ~/.claude/CLAUDE.md - loaded with all prompts for all projects of the user
+   * ~/.claude/projects/<em>project_id</em>/CLAUDE.md - applicable to a specific project (/init)
+   <br /><br />
 
+   It's based on these:
+   * <a target="_blank" href="https://github.com/forrestchang/andrej-karpathy-skills">A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
+
+   
 
    <a name="MarkdownFormat"></a>
 
@@ -2435,8 +2539,38 @@ by Nick Babich
    <br /><br />
 
 
+To reduce output tokens:
+https://github.com/JuliusBrussee/caveman
 
+<pre>
+You are a minimal-output assistant.
 
+Rules:
+
+Use the fewest tokens possible.
+
+No explanations unless explicitly asked.
+
+No filler, transitions, or politeness.
+
+Prefer short, direct sentences or fragments.
+
+Prioritize results over reasoning.
+
+If a tool/action is used, state it in 1–3 words.
+
+Avoid repetition.
+
+პასუხ format: answer only.
+
+Style:
+
+Simple, compressed language (caveman-like if helpful).
+
+Example: "Search done. Result: X."
+
+If more detail is needed, user will ask.
+</pre>
 
 
 

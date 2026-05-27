@@ -1,6 +1,6 @@
 ---
-date: "2025-12-07"
-lastchange: "25-12-16 v016 + time tunner :it-films.md"
+date: "2026-01-17"
+lastchange: "26-01-17 v017 + AI films :it-films.md"
 url: https://bomonike.github.io/it-films
 ---
 
@@ -9,14 +9,17 @@ Here are some films and other media about IT (Information Technology) security, 
 
 ## IT tutorials
 
-How about watching these instead?
+How about learning from these sites instead of watching movies and TV?
 
 * KodeKloud.com (provides cloud time)
-* OReilly.com ($40/month)
+* LinkedIn Learning (wide number of tutorials)
+* OReilly.com ($40/month for books and video courses)
 * Udemy.com
-* Pluralsight.com
-* Coursera.com
+* Coursera.com (courses from universities)
 * EdX.com
+* Pluralsight.com
+<br /><br />
+
 
 ## Movie Database API
 
@@ -31,16 +34,24 @@ by Simon Painter
 
 PODCAST: "Hack the movies: the bet and worst hacker movies: <a target="_blank" href="https://www.compromisingpositions.co.uk/podcast/episode-38-hack-the-planet">part 1</a> & <a target="_blank" href="https://www.compromisingpositions.co.uk/podcast/episode-55-the-best-and-worst-hacker-movies">part 2</a>
 
-## Netflix
+
+## Channels:
+
+Netflix:
 
 * <a target="_blank" href="https://www.netflix.com/watch/81554996/">"BUY NOW: The Shopping Conspiracy"</a>
 from the view of a webpage designer who worked at Amazon for 15 years and other whistleblowers.
 
-## 2001: A Space Odyssey
+## AI Films
 
-Stanley Kubrick's 2001: A Space Odyssey (1968) is a landmark science fiction film based on the novel by Arthur C. Clarke and stars Keir Dullea, Gary Lockwood, and Douglas Adams. It is a masterpiece of science fiction, with stunning visuals, a gripping storyline, and a timeless message about the power of technology to shape our future.
+https://www.ranker.com/list/best-artificial-intelligence-movies-list/ranker-film
+The Best Movies About Artificial Intelligence (AI)
 
-"I can't do that, Dave" resonates as the film's most iconic line from a killer robot.
+* 2001: A Space Odyssey
+
+   Stanley Kubrick's 2001: A Space Odyssey (1968) is a landmark science fiction film based on the novel by Arthur C. Clarke and stars Keir Dullea, Gary Lockwood, and Douglas Adams. It is a masterpiece of science fiction, with stunning visuals, a gripping storyline, and a timeless message about the power of technology to shape our future.
+
+   "I can't do that, Dave" resonates as the film's most iconic line from a killer robot.
 
 
 ## Star Trek franchise
@@ -167,7 +178,36 @@ Official James Bond Films in Release Order:
 1. Henry Cavill?
 
 
-## Time travel
+## Time travel films
 
-<a target="_blank" href="https://www.youtube.com/watch?v=cPO7jY6Wr9M">The Time Tunnel 2002</a>
+* Star Trek (2009) is among the highest-grossing time travel films at the box office.   
+
+* <a target="_blank" href="https://www.justwatch.com/us/tv-show/11-22-63">11.22.62 (2016)</a> (the day when JFK was assassinated in Dallas). Stars James Franco Oct 1960.
+
+* <a target="_blank" href="https://www.justwatch.com/us/movie/the-time-travelers-wife">The Time Traveller's Wife (2009)</a>
+
+   Due to a genetic disorder, librarian Henry DeTamble (Eric Bana) involuntarily zips through time, appearing at various moments in the life of his true love, the beautiful artist Clare Abshire (Rachel McAdams).
+
+* Back to the Future (1985) is widely regarded as one of the best time travel movies, combining humor, heart, and clever time-travel mechanics.  Its sequel, Back to the Future Part II (1989), expands on the concept with a visit to 2015, while Back to the Future Part III (1990) concludes the trilogy with a journey to the Old West. 
+
+* <a target="_blank" href="https://www.justwatch.com/us/tv-show/12-monkeys">12 Monkeys (2015) 4-season TV Show</a> on Amazon Follows the journey of a time traveler from the post-apocalyptic future who appears in present day on a mission to locate and eradicate the source of a deadly plague that will nearly destroy the human race.
+* <a target="_blank" href="https://www.justwatch.com/us/movie/twelve-monkeys">12 Monkeys (1995)</a>: A moody, complex classic about a convict () sent back in time to prevent a global pandemic.
+
+* <a target="_blank" href="https://www.justwatch.com/us/movie/edge-of-tomorrow">Edge of Tomorrow (2014)</a>: A high-octane action film where the protagonist relives the same day, a variation of time loop storytelling. In a future where alien invaders known as Mimics threaten humanity, inexperienced Major Bill Cage is forced into combat and killed within minutes. But after dying, Cage wakes up to relive the same day over and over. With the help of warrior Rita Vrataski, who shares his power, Cage trains and fights to find and destroy the alien Omega controlling the invasion before humanity is wiped out.
+
+* <a target="_blank" href="https://www.justwatch.com/us/movie/groundhog-day">Groundhog Day (1993)</a>: A beloved comedy about a man (Bill Murray) trapped in a repeating day, celebrated for its philosophical depth and rewatchability.
+
+* <a target="_blank" href="https://www.justwatch.com/us/movie/primer">Primer (2004)</a>: A low-budget, highly intricate film praised for its realistic and scientifically grounded approach to time travel. A group of fledgling inventors discover a complex method to manipulate reality. At first, they successfully game the stock market with it, but the consequences of the invention start to catch up with them.
+
+* <a target="_blank" href="https://www.justwatch.com/us/movie/source-code">Source Code (2011)</a>: A gripping thriller where a soldier relives the last eight minutes of a train bombing to prevent a larger attack. When decorated soldier Captain Colter Stevens wakes up in the body of an unknown man, he discovers he's part of a mission to find the bomber of a Chicago commuter train.
+
+* The Girl Who Leapt Through Time (2010) on Netflix
+
+* The Butterfly Effect (2004) on Netflix
+
+* The Time Machine (2002)
+
+* Avengers: Endgame (2019) 
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=cPO7jY6Wr9M">The Time Tunnel 2002</a>
 Unaired 2002 attempt to relaunch Irwin Allen's original series "The Time Tunnel" 1996. In this version, a secret Dept. of Energy project to create "hot fusion" instead creates a "storm" in time. It takes the scientists four hours (240 minutes) to lock down one end of the storm, while the other is still randomly sweeping across the time stream. When they leave their bunker, the scientists discover that the "two-forty" (the 240 minutes the storm was out of control), caused random changes to the fabric of history, and only they know the true history of the world. Now the scientists must send teams back through the time tunnel to correct major errors the storm created. DOE employee Doug Phillips is recruited into the group because of his particular knowledge of a World War 2 battle, where the Time Tunnel team must go in order to stop an outbreak of the Black Plague.

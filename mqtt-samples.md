@@ -1,7 +1,8 @@
 ---
 layout: post
 date: "2024-06-09"
-last_change: "25-09-02 v001 + oreilly :mqtt-samples.md"
+last_change: "25-09-02 v002 + url :mqtt-samples.md"
+url: "https://bomonike.github.io/mqtt-samples"
 file: "mqtt-samples"
 title: "MQTT samples"
 excerpt: "Communicate with Palantir, Induction Ignition, and other Raspberry Pi IoT devices using the MQTT protocol Mosquito pub/sub server."
@@ -28,27 +29,19 @@ Widely adopted in 2010's by Facebook Messenger, Google, etc. MQTT 5-2019 added m
 
 ## DevOps Workflow
  
-1. Setup MQTT Broker <a href="#Mosquitto">Mosquitto</a> server app</a> on a Raspberry Pi within the firewall.
+1. Design flow using the <a href="#NodeRED">NodeRED</a>.
+2. Setup a <a href="#MQTTBroker">MQTT Broker</a> <a href="#Mosquitto">Mosquitto</a> server app</a> on a Raspberry Pi within the firewall.
 
    (There is a broker on the internet at mqtt.groov.com)
 
-2. Setup MQTT clients (Node-RED app)
-   * https://www.youtube.com/watch?list=PLKYvTRORAnx6a9tETvF95o35mykuysuOw&v=3AR432bguOY Intro to Node-RED
-2. Define case-sensitive <strong>Topics</strong> (in hierarchy levels that includes company, equipment Node, Site, etc.) per SparkPlug B spec to communicate MQTT data using UDT (User-defined Data Type). Used by industry and maintained by the Eclipse Foundation created by IBM and other vendors. Has QoS (Quality of Service) 2 for guarantee of delivery.
-3. SparkPlug B clients subscribe to Topics on MQTT broker.
-4. Publish instrumentation Messages (containing a Topic plus associated payload data)
-5. Confirm forwarding of messages to subscribers
-6. Publish command messages within a Topic (to turn on a lamp)
-7. Identify group system health monitored by SparkPlug B "birth & death certificates"
-8. Write from internal client to external clients
-
-## Enterprise MQTT brokers
-* Inductive Automation's Ignition server - <a target="_blank" href="https://inductiveautomation.com/resources/video/what-is-mqtt">VIDEO</a>
-* SiriusLink Ignition SCADA
-* HiveMQ
-* <a target="_blank" href="">EMQX.io</a> MQTT
-   * https://www.youtube.com/watch?v=kuyCd53AOtg MQTT Beginners Guide by Techletters
-
+3. Setup MQTT clients (Node-RED app)
+4. Define case-sensitive <strong>Topics</strong> (in hierarchy levels that includes company, equipment Node, Site, etc.) per SparkPlug B spec to communicate MQTT data using UDT (User-defined Data Type). Used by industry and maintained by the Eclipse Foundation created by IBM and other vendors. Has QoS (Quality of Service) 2 for guarantee of delivery.
+5. SparkPlug B clients subscribe to Topics on MQTT broker.
+6. Publish instrumentation Messages (containing a Topic plus associated payload data)
+7. Confirm forwarding of messages to subscribers
+8. Publish command messages within a Topic (to turn on a lamp)
+9. Identify group system health monitored by SparkPlug B "birth & death certificates"
+10. Write from internal client to external clients
 
 <a name="NodeRED"></a>
 
@@ -60,23 +53,64 @@ NodeRED is a GUI editor to use low-code visual way to build event-driven flows t
 
 NodeRED, being built using NodeJS, runs on Windows, macs, Linux Raspberry Pi, and industrial appliances (groov AR1), as a Docker container.
 
-According to https://nodered.org/docs/getting-started/raspberrypi, install using:
+1. According to https://nodered.org/docs/getting-started/raspberrypi, install using:
 
-bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb)
+   <tt>bash <(curl -sL https://github.com/node-red/linux-installers/releases/latest/download/update-nodejs-and-nodered-deb)</tt>
 
-Its default port is 1880.
+1. Confirm Settings file, such as:
 
-To run Node-RED in the background when the Pi is turned on or re-booted:
+   <tt>/home/yummy1/.node-red/settings.js</tt>
 
-<tt>sudo systemctl enable nodered.service</tt>
+1. Confirm flows file, such as:
 
-To disable the service:
+   <tt>/home/yummy1/.node-red/flows.json</tt>
 
-<tt>sudo systemctl disable nodered.service</tt>
+1. Record in a Password Manager the password you assigned.
 
+1. Cursor up to select "Solarized-dark" theme or whatever you prefer.
+
+1. To run Node-RED in the background when the Pi is turned on or re-booted:
+
+   <tt>sudo systemctl enable nodered.service</tt>
+
+   Response: Created symlink /etc/systemd/system/multi-user.targete.wants/nodered.servie - /lib/systemd/system/nodered.service
+
+1. Use this address in the Firefox browser:
+
+   <a target="_blank" href="http://localhost:1880/">http://localhost:1880</a>
+
+1. To disable the service:
+
+   <tt>sudo systemctl disable nodered.service</tt>
 
 References:
+   * https://www.youtube.com/watch?list=PLKYvTRORAnx6a9tETvF95o35mykuysuOw&v=3AR432bguOY Intro to Node-RED
    * https://www.youtube.com/watch?v=3AR432bguOY&list=PLKYvTRORAnx6a9tETvF95o35mykuysuOw by Opto Video
+   * https://www.youtube.com/watch?v=K_gTcaoVjxs&pp=2AYz Industry 4.0
+   * https://www.youtube.com/watch?v=vXHBYTCO9U0 unified namespace by HiveMQ
+   <br /><br />
+
+
+<a name="MQTTBroker"></a>
+<a name="Mosquitto"></a>
+
+## MQTT brokers
+
+Mosquitto MQTT Broker: On a Raspberry Pi OS, ( there is no "brew info mosquito").
+
+1. Configure
+
+   sudo nano mosquitto.conf
+
+
+Enterprise MQTT brokers:
+
+* Inductive Automation's Ignition server - <a target="_blank" href="https://inductiveautomation.com/resources/video/what-is-mqtt">VIDEO</a>
+* SiriusLink Ignition SCADA
+* HiveMQ
+* <a target="_blank" href="">EMQX.io</a> MQTT
+   * https://www.youtube.com/watch?v=kuyCd53AOtg MQTT Beginners Guide by Techletters
+
 
 
 <a name="IoTClouds"></a>
@@ -88,16 +122,6 @@ References:
 * Microsoft Azure - https://nodered.org/docs/getting-started/azure
 * IBM
 
-
-<a name="Mosquitto"></a>
-
-## Mosquitto MQTT Broker
-
-On a Raspberry Pi OS, ( there is no "brew info mosquito").
-
-1. Configure
-
-   sudo nano mosquitto.conf
 
 
 <a name="OPC-UA"></a>
@@ -112,6 +136,8 @@ By Rajvir Singh at codeandcompile.com:
    1. https://www.youtube.com/watch?v=3EREV8Q5PNU What is OPC UA?
    2. https://www.youtube.com/watch?v=yCd2j2WsgBM Server simulation
    <br /><br />
+References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=k2Pwbtj_APc">What I love and hate about UPC
 
 
 ## References
@@ -134,18 +160,20 @@ By 4.0 Solutions: <a target="_blank" href="https://www.youtube.com/watch?v=Apxtn
    * <a target="_blank" href="https://www.youtube.com/watch?v=epx1Y5p4jtU&pp=0gcJCbIJAYcqIYzv">Part II</a> The MQTT Stack
 
    * CoAP
-   * <a target="_blank" href="https://www.youtube.com/watch?v=-9vMAe7P25A&list=PLGLQEZs6ivMpFMoTAcnRrTfmnNmuo4PbX&index=5&pp=iAQB">Sparkplub A & B</a>  
+   * <a target="_blank" href="https://www.youtube.com/watch?v=-9vMAe7P25A&list=PLGLQEZs6ivMpFMoTAcnRrTfmnNmuo4PbX&index=5&pp=iAQB">Sparkplug B</a>  
 
 By Gary Explains
    * https://www.youtube.com/watch?v=p3vJxGKWDIg
+
 By The Hook Up:
    * https://www.youtube.com/watch?v=NjKK5ab0-Kk&pp=0gcJCbIJAYcqIYzv
+
 By Learn Embedded Systems:
    * https://www.youtube.com/watch?v=_DO2wHI6JWQ&pp=0gcJCbIJAYcqIYzv
+
 Others on YouTube:
    * https://www.youtube.com/watch?v=jTeJxQFD8Ak&list=PLRkdoPznE1EMXLW6XoYLGd4uUaB6wB0wd
    * https://www.youtube.com/watch?v=EIxdz-2rhLs&pp=ygUEbXF0dA%3D%3D 
-   * <a target="_blank" href="https://www.youtube.com/watch?v=k2Pwbtj_APc">What I love and hate about UPC
    * https://www.youtube.com/watch?v=p3vJxGKWDIg
    * https://www.youtube.com/watch?v=_DO2wHI6JWQ
    * <a target="_blank" href="https://www.youtube.com/watch?v=wIiI1yaJ_9s">VIDEO</a>: Setting up Authentication for your Mosquitto MQTT Broker

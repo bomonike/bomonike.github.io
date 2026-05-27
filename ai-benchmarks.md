@@ -1,22 +1,75 @@
 ---
 layout: post
-date: "2025-12-07"
-lastchange: "25-12-07 v025 dollar html :ai-benchmarks.md"
-url: "https://bomonike.github.io/ai-benchmarks"
-file: "ai-benchmarks"
-title: "AI Benchmarks"
+date: "2026-05-05"
+lastchange: "26-05-05 v032 metrics @ai-providers.md"
+url: "https://bomonike.github.io/ai-providers"
+file: "ai-providers"
+title: "AI Providerss"
 excerpt: "Let's get to know the benchmarks AI companies use to compare each others' versions."
 tags: [ai, benchmarks]
 comments: true
 created: "2024-12-28"
 mathjax: true
 ---
-<a target="_blank" href="https://bomonike.github.io/ai-benchmarks"><img align="right" width="100" height="100" alt="ai-benchmarks.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-benchmarks.png?raw=true" />
 <i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
 
-In AI Computer Science, a benchmark is a way to determine how well a computer system can solve problems. Several benchmarks have been created, mostly by academics and giant frountier LLM producers.
+In AI Computer Science, a benchmark is a way to determine how well each LLM model can solve problems. 
+Several benchmarks have been created, mostly by academics and giant frountier LLM producers.
 
-<img alt="ai-benchmark-hle-251203.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764810089/ai-benchmark-hle-251203_frs2bz.png" />
+
+## AI Vendors and their LLM Brands
+
+See the latest version at <a target="_blank" https://bomonike.github.io/ai-providers/">ai-providers</a>.
+
+<a target="_blank" href="https://artificialanalysis.ai/evaluations/humanitys-last-exam#humanitys-last-exam-benchmark-leaderboard-score-vs-release-date"><img alt="ai-benchmark-hle-251203.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1764810089/ai-benchmark-hle-251203_frs2bz.png" /></a>
+
+<table border="1" cellpadding="4" cellspacing="0">
+<tr><th>Country</th><th>Vendor</th><th>LLM brand</th><th>app</th></tr>
+<tr valign="top"><td>China</td><td>Alibaba</td><td>Qwen</td></tr>
+<tr valign="top"><td>US</td><td>Allen AI</td><td><a target="_blank" href="https://allenai.org/olmo">Olmo</a></td></tr>
+<tr valign="top"><td>US</td><td>Amazon</td><td>Nova</td></tr>
+<tr valign="top"><td>US</td><td>Anthropic</td><td>Claude</td></tr>
+<tr valign="top"><td>US</td><td>Apple</td><td>MM1, ReALM</td></tr>
+<tr valign="top"><td>China</td><td>DeepSeek</td><td>R1,R2,V3</td></tr>
+<tr valign="top"><td>US</td><td><a target="_blank" href="#Fireworks.ai">Fireworks.ai</a></td><td>KwaiKAT-Coder</td></tr>
+<tr valign="top"><td>US</td><td>Google</td><td>Gemini</td></tr>
+<tr valign="top"><td>China</td><td>Zhipu (Z.Ai)</td><td>Kimi K2</td></tr>
+<tr valign="top"><td>US</td><td>Meta</td><td>Llama</td></tr>
+<tr valign="top"><td>US</td><td>Microsoft</td><td>Phi</td></tr>
+<tr valign="top"><td>Singapore</td><td><a target="_blank" href="https://www.minimax.io/news/minimax-m2">MiniMax</a></td><td>M2, Hailuo, Speech</td></tr>
+<tr valign="top"><td>France</td><td>Mistral</td><td>Medium, Large</td></tr>
+<tr valign="top"><td>US</td><td>NVIDIA</td><td><a target="_blank" href="https://research.nvidia.com/labs/nemotron/Nemotron-3/">Nemotron</a></td></tr>
+<tr valign="top"><td>US</td><td>OpenAI</td><td>GPT</td><td>ChatGPT</td></tr>
+<tr valign="top"><td>US</td><td>xAI</td><td>Grok</td></tr>
+</table>
+
+
+### LLM Highlights:
+
+<a target="_blank" href="https://www.interconnects.ai/p/2025-open-models-year-in-review">Nathan Lambert's 2025</a> <a target="_blank" href="https://tiermaker.com/create/chinese-model-makers-18511783">tier list</a> shows Chinese labs (DeepSeek, Qwen, Kimi) now define the frontier. Their list:
+
+   * Frontier: DeepSeek, Qwen, Moonshot AI (Kimi)
+   * Close competitors: Zhipu (Z.Ai), Minimax
+   * Noteworthy: StepFun, InclusionAI / Ant Ling, Meituan Longcat, Tencent, IBM, NVIDIA, Google, Mistral
+   * Specialists: OpenAI, Ai2, Moondream, Arcee, RedNote, HuggingFace, LiquidAI, Microsoft, Xiaomi, Mohamed bin Zayed University of Artificial Intelligence
+   * On the rise: ByteDance Seed, Apertus, OpenBMB, Motif, Baidu, Marin Community, InternLM, OpenGVLab, ServiceNow, Skywork
+   * Honorable mentions: TNG Group, Meta, Cohere, Beijing Academy of Artificial Intelligence, Multimodal Art Projection, Huawei
+   <br /><br />
+
+No US company currently appears in their top tier.
+But NVIDIA's response is to compete on efficiency and openness. <a target="_blank" href="https://research.nvidia.com/labs/nemotron/Nemotron-3/">NVIDIA's Nemotron 3 claims to be the Intelligence vs. Output Speed king:
+<img alt="nano-3-aa-5112x2220.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1765896478/nano-3-aa-5112x2220_zrxxf5.png" /></a>
+
+OpenRouter
+
+<a name="Fireworks.ai"></a>
+* <a target="_blank" href="https://app.fireworks.ai/models/fireworks/kat-coder">KAT-Coder-Pro V1</a> from <a target="_blank" href="https://fireworks.ai/models/fireworks/kat-coder">Fireworks.ai</a> was ranked 2nd on HLE and the lowest token usage. What a bargain! It's for coding and “agentic” work. Founded by leads from Meta PyTorch & Google Vertex at San Mateo.
+
+* Anthropic's Claude
+* Microsoft's Phi-1 (1.3B parameters) LLM is focused on Python coding. <a target="_blank" href="https://news.microsoft.com/source/features/ai/the-phi-3-small-language-models-with-big-potential/">Microsoft's focus is on edge devices</a>.
+
 
 ## List of benchmarks
 
@@ -30,7 +83,7 @@ https://huggingface.co/datasets/cais/hle/viewer/default/test?p=24&views%5B%5D=te
 <a target="_blank" href="https://www.youtube.com/watch?v=aOjgPJ94-aM">VIDEO</a>:
 Huggingface accelerate library to run 
 
-The biggest one is "Humanity's Last Exam", 
+"Humanity's Last Exam"
 
 
 ## Show your work. Get famous.
@@ -44,6 +97,13 @@ PROTIP: Suggest new problems. File a PR and get listed as a contributor.
 BTW I'm working on a website to encourage such evaluations and contributions, 
 by giving out rewards and recognition (including cash). 
 Let me know if you're interested.
+
+A concern about AI benchmarks is data contamination, where test questions leak into training data, enabling models to "memorize" answers instead of reasoning that connect concepts rather than just recalling facts.
+Thus, the Massive Multitask Language Understanding (MMLU) benchmark that evaluates language understanding is enhanced by <a target="_blank" href="https://github.com/TIGER-AI-Lab/MMLU-Pro">MMLU-Pro</a> with broader and more challenging tasks. 
+Its <a target="_blank" href="https://huggingface.co/spaces/TIGER-Lab/MMLU-Pro">Leaderboard</a> now exceeds 90%
+over its 12,000 rigorously curated questions from academic exams and textbooks, spanning 14 diverse domains including Biology, Business, Chemistry, Computer Science, Economics, Engineering, Health, History, Law, Math, Philosophy, Physics, Psychology, and Others. 
+
+To raise the difficulty and reduce the chance of success through random guessing, ten <a target="_blank" href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro">answer options</a> are given.
 
 
 ## LLMs by subject category
@@ -105,6 +165,7 @@ Create an account at https://agi.safe.ai/ and click "Contributors" to see submis
 
 <a target="_blank" href="https://www.youtube.com/watch?time_continue=1430&v=om5KAKSSpNg">VIDEO</a>:
 In June 2024, <a target="_blank" href="https://www.linkedin.com/in/leopold-aschenbrenner">Leopold Aschenbrenner</a> wrote his <a target="_blank" href="https://situational-awareness.ai/">situational-awareness.ai blog</a> with this illustration:
+
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png">
 <img alt="" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1737377788/agi-sit-1375x901_vsc5af.png" /></a>
 
@@ -280,8 +341,7 @@ The <tt>&#92;&#36;&#36;</tt> at the beginning and <tt>&#36;&#36;</tt> at the end
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
-
-\$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
+ \$$\frac{4}{9} \left( 17 - 8\cos(2\sqrt{3}) \right)$$
 
    * <tt>\frac</tt> specifies the fraction "4/9".
    * <tt>\left</tt> specifies left parentheses.
@@ -406,10 +466,16 @@ https://sofworld.org/pattern-questions-and-marking-scheme
    * SOF IGKO - International General Knowledge Olympiad
    * SOF ISSO - International Social Studies Olympiad
    * SOF International Hindi Olympiad
+   <br /><br />
 
-### GAIA
 
-GAIA: Real-World AI Assistant Assessment GAIA (General AI Assistant Benchmark) evaluates AI systems on practical, real-world tasks that encompass reasoning, multi-modal processing, web browsing, and tool utilization. Despite being conceptually simple for humans, who achieve 92% accuracy, GAIA poses significant challenges for AI, with GPT-4 (with plugins) scoring only 15%. This stark performance gap underscores GAIA's effectiveness in benchmarking AI systems' robustness and adaptability across diverse, everyday scenarios, emphasizing the need for AI to match or exceed average human performance on practical tasks.
+### GAIA Real-World AI Assistant Assessment
+
+<a target="_blank" href="https://www.youtube.com/watch?v=vSxX2L-YffU">VIDEO</a>:
+<a target="_blank" href="https://arxiv.org/abs/2311.12983">https://arxiv.org/abs/2311.12983</a>
+[Submitted on 21 Nov 2023] GAIA (General AI Assistant) real-World AI assistant Benchmark evaluates AI systems on practical, real-world tasks that encompass reasoning, multi-modal processing, web browsing, and tool utilization. 
+
+Despite being conceptually simple for humans, who achieve 92% accuracy, GAIA's 466 questions aims to pose 3 levels of challenges for AI, requiring web browsing, multi-modaity, coding, diverse file type reading, play Tetris, translation, spell checking. GPT-4 (with plugins) scored only 15%. This stark performance gap underscores GAIA's effectiveness in benchmarking AI systems' robustness and adaptability across diverse, everyday scenarios, emphasizing the need for AI to match or exceed average human performance on practical tasks.
 
 ### BASIS
 
@@ -421,7 +487,7 @@ BASIS: Frontier of Scientific AI Capabilities BASIS (Benchmark for Advanced Scie
 
 ## Coding LCB (Live Code Bench)
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-benchmarks-kimi_micquq.png"><img alt="ai-benchmarks-kimi.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-benchmarks-kimi_micquq.png?raw=true" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-providers-kimi_micquq.png"><img alt="ai-providers-kimi.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1740618053/ai-providers-kimi_micquq.png?raw=true" /></a>
 
    * Model names beginning with "O" such as "O3" are from <a target="_blank" href="https://openai.com">OpenAI.com</a>
    * Model name "Kimi" is at <a target="_blank" href="https://kimi.moonshot.cn">https://kimi.moonshot.cn</a> from China.
@@ -629,7 +695,23 @@ It depends on what you are trying to achieve.
 * Text summarization tasks are measured using the ROUGE score.
 * Question answering tasks are measured using the BLEU score.
 
-<a href="https://bomonike.github.io/ai-benchmarks">https://bomonike.github.io/ai-benchmarks</a>
+## Microsoft's Model Evaluation Metrics
+
+Each metric offer a unique insight into the performance of LLMs:
+
+* Groundedness: Measures alignment of the LLM application’s output with the input source or database.
+
+* Relevance: Assesses how pertinent the LLM application’s output is to the given input.
+
+* Coherence: Evaluates the logical flow and readability of the LLM application’s text.
+
+* Fluency: Assesses the grammatical and linguistic accuracy of the LLM application’s output.
+
+* Similarity: Quantifies the contextual and semantic match between the LLM application’s output and the ground truth.
+
+These are for quality assurance to ensure that interactions with LLM applications are accurate and effective.
+
+Charges occur on inference performed on model deployments.
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>

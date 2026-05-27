@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-01-02"
-lastchange: "26-01-02 v009 + baltics :countries.md"
+date: "2026-04-28"
+lastchange: "26-04-28 v011 cities @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -229,7 +229,22 @@ The weakest passports on the list, ranked from 195 to 199, are Pakistan, Iraq, E
 https://nomadcapitalist.com/nomad-passport-index/
 
 
-<hr />
+<a target="_blank" href="https://www.youtube.com/watch?v=05-EgC5ILas">VIDEO</a>: 
+World’s Largest Cities by Population (3700 BC – 2050 AD)
+
+## Commercial Nuclear countries
+
+<a target="_blank" href="https://www.visualcapitalist.com/expected-nuclear-capacity-by-country/">
+<img alt="" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1777052666/countries-nuclear_tlciml.jpg" /></a>
+
+Countries are entering a new "golden age" of nuclear. This shift reflects a broader push to secure reliable, low-carbon energy as electricity demand rises.
+
+The world’s first commercial nuclear power plant came online in 1956 within the UK, which later scaled back its use of nuclear. 
+
+France remains a historic leader in nuclear energy, with around 69% of its electricity generated from the technology. 
+
+Uganda is set to scale up the most to 18,000 MW, followed by Poland with 15,612 MW and Türkiye with 14,700 MW.
+
 
 ## Dominican Republic
 

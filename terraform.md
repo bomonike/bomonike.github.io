@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2024-02-12"
-lastchange: "v012 + from wilsonmar :terraform.md"
+date: "2025-07-21"
+lastchange: "v014 + fix indents, add 18F :terraform.md"
 file: "terraform"
 title: "Terraform"
 excerpt: "Immutable declarative versioned Infrastructure as Code (IaC) and Policy as Code provisioning into AWS, Azure, GCP, and other clouds using Terragoat, Bridgecrew, and Atlantis team versioning GitOps"
@@ -142,7 +142,9 @@ Among <a href="#CoreWorkflow">Terraform usage workflow stages</a>:
 
    <pre><strong>brew install --cask visual-studio-code</strong></pre>
 
-1. If you prefer using Python, there is a Python module to provide a wrapper of terraform command line tool at <a target="_blank" href="https://github.com/beelit94/python-terraform">https://github.com/beelit94/python-terraform</a>
+1. If you prefer using Python, consider <a target="_blank" href="https://wilsonmar.github.io/pulumi/">Pulumi></a>
+   
+   Alas, there was a Python module to provide a wrapper of terraform command line tool at <a target="_blank" href="https://github.com/beelit94/python-terraform">https://github.com/beelit94/python-terraform</a> which is no longer actively maintained.
 
    <a name="KeyboardAliases"></a>
 
@@ -3928,7 +3930,7 @@ variable "database_username" {
 
    <a name="AdhocCLIcommands"></a>
 
-   ### Ad hoc Terraform CLI commands
+### Ad hoc Terraform CLI commands
 
 1. <tt>terraform init</tt>
 1. <tt>terraform validate</tt>
@@ -5478,6 +5480,9 @@ A curated list of awesome Terraform tools, modules, resources and tutorials.
 
 https://github.com/dstamen/Terraform
 by David Stamen
+
+https://github.com/18F/identity-terraform
+AWS Terraform modules published by the Login.gov team (DOGE'd under Trump 47)
 
 
 ## More on DevOps #

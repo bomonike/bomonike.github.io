@@ -523,7 +523,7 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 
 <a name="NYC"></a>
 
-### New York City (Manhattan Central Park)
+### New York City (Manhattan Central Park & North)
 
 <ul>
 <li>Bronx Zoo</li>
@@ -538,7 +538,7 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>Bethesda Terrace</li>
 <li><a target="_blank" href="https://www.frick.org/"> <strong>Frick Collection</strong></a> (Free 5:30–9pm 1st Friday each month except January and September)</li>
 <li>Lincoln Center</li>
-<li type="circle">Tavern on the Green, Central Park West</li>
+<li type="circle">Tavern on the Green, inside Central Park West [<a target="_blank" href="https://www.youtube.com/watch?v=YFmkdqYPGhM">VIDEO</a>]</li>
 </ul>
 
 ### New York City (Manhattan Midtown)

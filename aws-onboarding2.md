@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-02-18"
-lastchange: "26-02-18 v112 svcs :aws-onboarding2.md"
+date: "2026-03-01"
+lastchange: "26-03-01 v114 roles failure modes :aws-onboarding2.md"
 url: https://bomonike.github.io/aws-onboarding
 file: "aws-onboarding"
 title: "AWS Onboarding"
@@ -41,135 +41,6 @@ B. each <strong>end-user</strong> needs to spend from receiving a laptop to bein
 B1. each end-user needs to spend between receiving instructions to being completely productive on AWS?
 
 PROTIP: CAUTION: Using speed as the primary basis for judging performance can lead to cutting corners and thus security holes. So security must be a primary consideration. But security is difficult to measure.
-
-
-## AWS URLs
-
-1. Internet Browser tricks
-
-   PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
-
-   PROTIP: So that you can organize the links the way you want (despite when Amazon changes them),
-   create a set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
-   Share them for those new to AWS.
-
-1. Use an internet browser to get on the <strong>AWS marketing page</strong> at 
-
-   <a target="_blank" href="https://aws.com/">https://aws.com</a> resolves to<br />
-   <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
-
-1. Explore its menu items:
-
-   <a target="_blank" href="https://aws.amazon.com/"><img alt="aws-landing-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154950/aws-landing-menu_e8io6g.png"></a>
-   <!-- aws-marketing-1205x224_uaojtf.png -->
-
-   "My account" consists of:
-   * <a href="#Console">AWS Management Console</a>
-   * <a href="#account-settings">Account Settings</a>
-   * <a href="#billing">Billing & Cost Management</a>
-   * <a href="#security">Security Credentials</a>
-   * <a href="https://health.console.aws.amazon.com/health/home?nc2=h_uta_hd#/account/dashboard/open-issues">AWS Personal Health Dashboard</a> (EventBridge rules)
-   <br /><br />
-
-   PROTIP: Additionally:
-   - <a target="_blank" href="https://aws.amazon.com/cli/">AWS CLI</a> Command line interface for AWS
-   - <a target="_blank" href="https://health.aws.amazon.com/health/status - **AWS Service Health Dashboard</a> Real-time service status
-
-   - <a target="_blank" href="https://aws.amazon.com/architecture/">AWS Architecture Center</a> Reference architectures and best practices
-   - <a target="_blank" href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected</a> Best practices for cloud architectures
-
-   - <a target="_blank" href="https://calculator.aws/">AWS Pricing Calculator</a> Estimate costs for AWS services
-   - <a target="_blank" href="https://aws.amazon.com/free/">AWS Free Tier</a> Free usage tiers for AWS services
-   - <a target="_blank" href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/">AWS Regional Services List</a> Services available by region
-
-   <a name="Support"></a>
-
-   Click "Support" menu:
-   * <a href="#SupportCenter">Support Center</a>
-   * <a target="_blank" href="https://iq.aws.amazon.com/">Expert Help</a> for Experts on-demand. Post your request and work with pre-vetted talent. Pay securely through AWS.  On May 28, 2026, AWS will discontinue support for AWS IQ.
-   * <a target="_blank" href="https://docs.aws.amazon.com/">Documentation</a>
-   * <a target="_blank" href="https://repost.aws/knowledge-center/">Knowledge Center</a>
-   * <a target="_blank" href="https://aws.amazon.com/premiumsupport/">AWS Support Overview</a>
-   * <a target="_blank" href="https://repost.aws/">AWS re:Post</a>
-   <br /><br />
-
-   **Resources**
-   - <a target="_blank" href="https://docs.aws.amazon.com">Documentation</a> Get detailed technical guides and references for all AWS services and tools
-   - <a target="_blank" href="https://aws.amazon.com/what-is">Cloud term glossary</a> Learn more about key cloud computing concepts
-   - <a target="_blank" href="https://aws.amazon.com/getting-started/cloud-essentials">Cloud fundamentals (essentials)</a> Step-by-step instructions for common AWS tasks 
-
-   - <a target="_blank" href="https://docs.aws.amazon.com/training/">Training & Certification</a> Build and validate your AWS cloud skills and technical expertise
-   - <a target="_blank" href="https://docs.aws.amazon.com/whitepapers/">Whitepapers & Guides</a> 
-   - <a target="_blank" href="https://aws.amazon.com/getting-started/hands-on/">Tutorials</a> Get started with step-by-step tutorials that help you start building on AWS
-
-   <a name="ProductsAlphabetically"></a>
-
-1. Filter the 264+ AWS Products listed alphabetically at <a target="_blank" href="https://aws.amazon.com/products/">https://aws.amazon.com/products/</a> or <a target="_blank" href="https://bomonike.github.io/aws-svcs"> my page of each product's codes and URL links</a>.
-
-   <a name="ProductCategories"></a>
-
-1. Click a link below to directly reach the <strong>hub page</strong> for each of 20+ categories of AWS product:
-   * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> (datalakes): Streaming, Data lakehouse, Data warehouse, Data lake, Data processing, Business intelligence, Search analytics, Data and AI governance
-   * <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/compute/">Compute Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/connect/">Custome Experience (Contact Center) Hub</a> (Amazon Connect)
-   * <a target="_blank" href="https://aws.amazon.com/products/databases/">Databases Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/developer-tools/">Developer Tools Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/end-user-computing/">End User Computing Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/gamelift/">Game Tech Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/management-and-governance/">Management Tools Hub</a> (and Governance)
-   * <a target="_blank" href="https://aws.amazon.com/media-services/">Media Services Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/migration-and-modernization/">Migration & Modernization Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/multicloud-hybrid/">Multicloud & Hybrid Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/networking/">Networking & Content Delivery Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/cloudops/">Operations Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/security/">Security & Identity Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/storage/">Storage Hub</a>
-   * <a target="_blank" href="https://aws.amazon.com/aws-supply-chain/">(AWS) Supply Chain Hub</a>
-   <br /><br />
-   
-   <a target="_blank" href="https://wilsonmar.github.io/aws-service-catalog/">My AWS Service Catalog page</a> provides different ways to instantiate entire applications. 
-
-
-   <a name="TypesOfAccounts"></a>
-   
-   ## Types of AWS accounts
-
-   PROTIP: There are several different sign-up processess:
-
-   * If you want to <a href="#StandAloneAccount">create an individual (stand-alone) account</a> (using a free email account such as Gmail) unaffiliated with any company, click the "Sign up" button at:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a>
-
-      PROTIP: CAUTION: To stop fueling phishing attempts, create new email addresses for use in AWS so that you don't expose it in public social media.
-      Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping. 
-
-      Individual accounts have use of designated <a href="#FreeTier">Free Tier</a> resources for a period of time.
-
-   * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a> for program: AWS Academy, Cloud Institute, <a target="_blank" href="https://www.awseducate.com/student/s/content">Educate</a>, re/Start, Skill Builder, Skills Center.
-
-      * https://www.awseducate.com/registration/s/learner-faqs#jobs
-      * https://www.awseducate.com/registration/s/learner-faqs#emerging-talent-community AWS Emerging Talent Community when you earn digital badges
-      <br /><br />
-
-      Education accounts also have use of a <a href="#FreeTier">Free Tier</a>.
-         
-   * If you're using your <strong>corporate email</strong>, check with your IT department, which typically use <a href="#AWSOrganizations">AWS Organizations</a> and federated Single-Sign-On to enable enterprise scaling. It involves definition of Organizational Units (OUs) to specify additional security controls that enable consolidated billing, policy-based controls (SCPs), resource sharing, and organized account structures.
-      
-         CAUTION: Switching to use <a href="#AWSOrganizations">AWS Organizations</a> before the end of the individual <a href="#FreeTier">Free Tier</a> period automatically <a target="_blank" href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html">upgrades the account to a paid plan</a>.
-
-   * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
-
-   * To use a .gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
-      
-   * If you want the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
-
-   NOTE: Separate <strong>environments</strong> (aka sandboxes) need to be created
-   so that different changes can be evaluated at each levels of maturity, simultaneously: 
-   dev (development), performance testing, training, staging, production, etc.
-
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1770133844/environments-1042x284_tupuzd.png">
-   <img alt="environments-1042x284.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1770133844/environments-1042x284_tupuzd.png" /></a>
 
 
 <a name="WaysToInteract"></a>
@@ -238,7 +109,7 @@ Console Console GUI, Terminal CLI, Python* API, IoC JSON:
 
 <a name="AWSMobileApp"></a>
 
-## AWS Mobile App on smart phones
+### AWS Mobile App on smart phones
 
 1. Get the <strong>AWS Console</strong> app on your mobile phone:
 
@@ -256,6 +127,67 @@ Console Console GUI, Terminal CLI, Python* API, IoC JSON:
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"><img alt="aws-mobile-iOS-1170x2532.png" width="300" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694653422/aws-mobile-iOS-1170x2532_ns4mgt.png"></a>
 
 
+<a name="ChromeBrowser"/></a>
+
+### Use Chrome Browser
+
+1. Internet Browser tricks
+
+   PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
+
+   PROTIP: So that you can organize the links the way you want (despite when Amazon changes them),
+   create a set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
+   Share them for those new to AWS.
+
+1. Get to the <strong>AWS marketing page</strong> at 
+
+   <a target="_blank" href="https://aws.com/">https://aws.com</a> resolves to<br />
+   <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
+
+
+REMEMBER: An AWS account is needed to "Sign in to console".
+
+<a name="TypesOfAccounts"></a>
+   
+## Types of AWS accounts
+
+PROTIP: There are several different sign-up processess to get each type of account.
+
+   * If you want to <a href="#StandAloneAccount">create an individual (stand-alone) account</a> (using a free email account such as Gmail) unaffiliated with any company, click the "Sign up" button at:<br /><a target="_blank" href="https://signin.aws.amazon.com/signup?request_type=register">https://signin.aws.amazon.com/signup?request_type=register</a>
+
+      PROTIP: CAUTION: To stop fueling phishing attempts, create new email addresses for use in AWS so that you don't expose it in public social media.
+      Emails used for managing AWS production accounts <strong>should be used only for managing AWS</strong> and not for regular email use, social media, and shopping. 
+
+      Individual accounts have use of designated <a href="#FreeTier">Free Tier</a> resources for a period of time.
+
+   * If you're a <strong>student or educator</strong> with an ".edu" email:<br /><a target="_blank" href="https://aws.amazon.com/education/awseducate/">https://aws.amazon.com/education/awseducate/</a> for program: AWS Academy, Cloud Institute, <a target="_blank" href="https://www.awseducate.com/student/s/content">Educate</a>, re/Start, Skill Builder, Skills Center.
+
+      * https://www.awseducate.com/registration/s/learner-faqs#jobs
+      * https://www.awseducate.com/registration/s/learner-faqs#emerging-talent-community AWS Emerging Talent Community when you earn digital badges
+      <br /><br />
+
+      Education accounts also have use of a <a href="#FreeTier">Free Tier</a>.
+         
+   * If you're using your <strong>corporate email</strong>, check with your IT department, which typically use <a href="#AWSOrganizations">AWS Organizations</a> and federated Single-Sign-On to enable enterprise scaling. It involves definition of Organizational Units (OUs) to specify additional security controls that enable consolidated billing, policy-based controls (SCPs), resource sharing, and organized account structures.
+      
+         CAUTION: Switching to use <a href="#AWSOrganizations">AWS Organizations</a> before the end of the individual <a href="#FreeTier">Free Tier</a> period automatically <a target="_blank" href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html">upgrades the account to a paid plan</a>.
+
+   * If you're working with an AWS salesperson assigned to a business:<br /><a target="_blank" href="https://aws.amazon.com/resources/create-account/">https://aws.amazon.com/resources/create-account/</a>
+
+   * To use a .gov (US government) cloud:<br /><a target="_blank" href="https://aws.amazon.com/government-education/government/">https://aws.amazon.com/government-education/government/</a>
+      
+   * If you want the AWS-affiliated cloud in China, that's a whole different ecosystem. See<br /><a target="_blank" href="https://www.amazonaws.cn/en/about-aws/china/">https://www.amazonaws.cn/en/about-aws/china</a> as China law dictates that foreign companies cannot own cloud computing infrastructures within the country.
+
+   NOTE: Separate <strong>environments</strong> (aka sandboxes) need to be created
+   so that different changes can be evaluated at each levels of maturity, simultaneously: 
+   dev (development), performance testing, training, staging, production, etc.
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1770133844/environments-1042x284_tupuzd.png">
+   <img alt="environments-1042x284.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1770133844/environments-1042x284_tupuzd.png" /></a>
+
+https://www.youtube.com/watch?v=RnjgLlQTMf0
+20 People. $100M Revenue. The 5 Operations Behind Every Tiny Team Beating a Giant One.
+
 
 <a name="Flowchart"></a>
 
@@ -269,11 +201,10 @@ Let's jump right inside the heart of the technology:
 
 All this work can be done by one person. But "separation of duties" is shown how different departments can enable scaling and technical specialization.
 
-1. The IT department obtains and configures <strong>laptops</strong> with secure DNS settings, 
-1. Password Manager, and utilities to keep <strong>secrets</strong> on and off computers.
-1. Architects define what <strong>services</strong> are used within each <strong>region</strong>.
+1. The <strong>IT department</strong> obtains and configures <strong>laptops</strong> with secure settings such as DNS.  They install and configure apps such as Password Manager to keep <strong>secrets</strong> on and off computers. They also install utilities such as Slack, Discord, Zoom, and apps for learning. They also ensure training on their use.
+1. <strong>Architects</strong> define what <strong>services</strong> are used within each <strong>region</strong>.
 
-   Regions not used are disabled to prevent rogue charges from accumulating.
+   For example, they disable regions not used to prevent rogue usage.
 
 1. Architects also define <strong>policy files</strong> to specify the <strong>actions</strong> on AWS resources that each <strong>AWS Security Group</strong> is allowed to use.
 1. People handling <strong>Payables</strong> are fudiciaries of the <a  href="#StandAloneAccount">AWS Root Account created</a> with the credit card charges for billing. 
@@ -390,13 +321,65 @@ These are steps to create a stand-alone root account.
 1. PROTIP: Since you'll be using this Console screen often, drag the Console tab all the way to the left.
 1. PROTIP: Right-click the Console tab to Bookmark it so you can easily open it after logging out.
 
+   ## Explore top menu items
+
+   <a target="_blank" href="https://aws.amazon.com/"><img alt="aws-landing-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154950/aws-landing-menu_e8io6g.png"></a>
+   <!-- aws-marketing-1205x224_uaojtf.png -->
+
+   PROTIP: <a target="_blank" href="https://aws.amazon.com/cli/">AWS CLI</a> Command line interface for AWS.
+
+   "My account" consists of:
+   * <a href="#Console">AWS Management Console</a>
+   * <a href="#account-settings">Account Settings</a>
+   * <a href="#billing">Billing & Cost Management</a>
+   * <a href="#security">Security Credentials</a>
+   <br /><br />
+
    <a name="Health"></a>
 
    ### AWS Health
 
-1. PROTIP: An important widget is the <strong>"AWS Health"</strong> widget. Drag its icon with the six dots to the top left of the page and let go. 
+   * <a href="https://health.console.aws.amazon.com/health/home?nc2=h_uta_hd#/account/dashboard/open-issues">AWS Personal Health Dashboard</a> (EventBridge rules)
 
    Information presented by this widget appears in the <a href="#AWSMobileApp">AWS mobile app</a> (below).
+
+   PROTIP: An important widget is the <strong>"AWS Health"</strong> widget. Drag its icon with the six dots to the top left of the page and let go. 
+
+   * <a target="_blank" href="https://health.aws.amazon.com/health/status/">AWS Service Health Dashboard</a> Real-time service status.
+
+
+   PROTIP: Additionally:
+
+   - <a target="_blank" href="https://aws.amazon.com/architecture/">AWS Architecture Center</a> Reference architectures and best practices
+   - <a target="_blank" href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected</a> Best practices for cloud architectures
+
+   - <a target="_blank" href="https://calculator.aws/">AWS Pricing Calculator</a> Estimate costs for AWS services
+   - <a target="_blank" href="https://aws.amazon.com/free/">AWS Free Tier</a> Free usage tiers for AWS services
+   - <a target="_blank" href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/">AWS Regional Services List</a> Services available by region
+
+   <a name="Support"></a>
+
+   Click "Support" menu:
+   * <a href="#SupportCenter">Support Center</a>
+   * <a target="_blank" href="https://iq.aws.amazon.com/">Expert Help</a> for Experts on-demand. Post your request and work with pre-vetted talent. Pay securely through AWS.  On May 28, 2026, AWS will discontinue support for AWS IQ.
+   * <a target="_blank" href="https://docs.aws.amazon.com/">Documentation</a>
+   * <a target="_blank" href="https://repost.aws/knowledge-center/">Knowledge Center</a>
+   * <a target="_blank" href="https://aws.amazon.com/premiumsupport/">AWS Support Overview</a>
+   * <a target="_blank" href="https://repost.aws/">AWS re:Post</a>
+   <br /><br />
+
+   **Resources**
+   - <a target="_blank" href="https://docs.aws.amazon.com">Documentation</a> Get detailed technical guides and references for all AWS services and tools
+   - <a target="_blank" href="https://aws.amazon.com/what-is">Cloud term glossary</a> Learn more about key cloud computing concepts
+   - <a target="_blank" href="https://aws.amazon.com/getting-started/cloud-essentials">Cloud fundamentals (essentials)</a> Step-by-step instructions for common AWS tasks 
+
+   - <a target="_blank" href="https://docs.aws.amazon.com/training/">Training & Certification</a> Build and validate your AWS cloud skills and technical expertise
+   - <a target="_blank" href="https://docs.aws.amazon.com/whitepapers/">Whitepapers & Guides</a> 
+   - <a target="_blank" href="https://aws.amazon.com/getting-started/hands-on/">Tutorials</a> Get started with step-by-step tutorials that help you start building on AWS
+
+
+
+
 
 
 
@@ -1892,24 +1875,26 @@ You can also download a zip containing .png and .svg files of icons
 
 <a name="EarnMoney"></a>
 
-## Earn Money: Explore AWS
+## Earn $100 Extra to Explore AWS
 
 1. <a href="#SysAdminLogin">Login as a System Administrator</a>.
 1. Scroll to the "Explore AWS" pane of the AWS Management Console.
 1. For Filter, select "Earn AWS credits".
 1. Click an Activity on the Console, then "Start activity" (to begin earning $20 each).
-   * <a target="_blank" href="">Create a web app using AWS Lambda</a>
-   * <a target="_blank" href="">Create an Aurora or RDS database</a>
-   * <a target="_blank" href="">Launch an instance using EC2</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=YgnSeA-xjZs&list=PLcVUEmr8aWhV3TYoGD9l8RMufs-NiIX3D&index=1&pp=iAQB0gcJCb4KAYcqIYzv">VIDEO: Create a web app using AWS Lambda</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=I_HjLP9IQmk&list=PLcVUEmr8aWhV3TYoGD9l8RMufs-NiIX3D&index=3&pp=iAQB">VIDEO: Create an Aurora or RDS database</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=eHe8V6sRJXU&list=PLcVUEmr8aWhV3TYoGD9l8RMufs-NiIX3D&index=6&pp=iAQB">Launch an instance using EC2</a>
    * <a href="#SetupBudgets">Set up a cost budget using AWS Budgets</a>
-   * <a target="_blank" href="https://bomonike.github.io/aws-bedrock">Use a foundation model in the Amazon Bedrock playground</a>: In this activity, you'll select a model and submit a prompt to generate a response in the Amazon Bedrock playground.
+   * <a target="_blank" href="https://bomonike.github.io/aws-bedrock">Use a foundation model in the Amazon Bedrock playground</a>: In this activity, you'll select a model and submit a prompt to generate a response in the Amazon Bedrock playground. <a target="_blank" href="https://www.youtube.com/watch?v=yW5m9c7U4YE&list=PLcVUEmr8aWhV3TYoGD9l8RMufs-NiIX3D&index=2">VIDEO</a>
 
 
 <a name="SetupBudgets"></a>
 
-## Setup AWS Budgets
+## Setup AWS Cost Budget
 
 To improve planning and cost control with flexible budgeting and forecasting...
+
+<a target="_blank" href="https://www.youtube.com/watch?v=VOEEr6QDXtA&list=PLcVUEmr8aWhV3TYoGD9l8RMufs-NiIX3D&index=4">VIDEO</a>:
 
 1. In the Console "Explore AWS" widget, click "Set up a cost budget using AWS Budget".
 

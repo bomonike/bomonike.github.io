@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-03-27"
-lastchange: "v015 + reseq table :algorithmic-complexity.md"
+date: "2025-03-31"
+lastchange: "v015 + rhym :algorithmic-complexity.md"
 file: "algorithmic-complexity"
 title: "Algorithmic Complexity"
 excerpt: "We use Python programs using Matplotlib to illustrate time and memory space complexity of algorithms (aka Big O Notation) such for sorting different ways."
@@ -22,7 +22,9 @@ created: "2025-03-20"
 
 ## Why this?
 
-"Big O" is a set of <strong>code words</strong> about <strong>predicting</strong> what will happen when the number of elements to sort (represented by variable N) grows really big. 
+"Big O" is a set of <strong>code words</strong> about <strong>predicting</strong> what will happen when the number of elements to sort (represented by variable N) grows really big. The rhym is:
+
+   <ul>How code slows as data grows</ul>
 
 Symbols such as O(N^2) and O(log N) -- explained in the <a href="#SummaryTable">table below</a> -- were invented in the 1970s by academics in theoretical computer scientists (such as Donald Knuth) so they (and us) can focus on each algorithm's fundamental nature rather than implementation-specific details.
 See <a target="_blank" href="https://www.amazon.com/gp/product/0262033844/">$68.66 BOOK</a> "Introduction to Algorithms, 3rd Edition" by Thomas H. Cormen, et. al.
@@ -500,6 +502,19 @@ Explanations here are a conglomeration of several videos:
 * Berkeley BJC <a target="_blank" href="https://www.youtube.com/watch?v=_fgtTE2bhMg&t=11m26s" title="from 2013">Lecture 7: Algorithmic Complexity</a>
 
 * Khan Academy (text) covers <a target="_blank" href="https://www.khanacademy.org/computing/computer-science/algorithms">Algorithms</a> in detail (Binary search, Asymptotic notation, Selection sort, Insertion sort, Recursive algorithms, Towers of Hanoi, Merge sort, Quick sort, Graph representation, Breadth-first search)
+
+## Quizzes
+
+From among https://blog.bigo.tv/en/best-apps/live-trivia-apps/
+
+https://quizizz.com/admin/quiz/5d9ec32ddeb74c001accf87f/big-o-notation
+17 questions.
+
+https://www.101computing.net/big-o-notation-quiz/
+
+
+https://www.youtube.com/watch?v=mni64IAd-_U
+Sorting algorithms & Big O Quiz
 
 
 ## More

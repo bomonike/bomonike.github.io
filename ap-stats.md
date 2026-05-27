@@ -18,7 +18,12 @@ created: "2025-10-22"
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
+
+## AP Statistics
+
 AP Statistics is College Board's most popular exam.
+
+The AP Statistics Exam is Thu, May 7, 2026 at 12 PM Local
 
 https://apstudents.collegeboard.org/courses/ap-Statistics
 
@@ -34,39 +39,48 @@ D. Statistical Argumentation = Develop an explanation or justify a conclusion us
 definitions, or statistical inference. Use statistical reasoning to draw appropriate conclusions and justify claims.
 <br /><br />
 
-REMEMBER: Graphing calculators (TI-85) are allowed during exams.
+REMEMBER: Graphing calculators (TI-85) are allowed during exams. No access to Excel.
 
 https://apcentral.collegeboard.org/courses/ap-statistics
 Exam Description PDF (Effective Fall 2020) 
 
 <table border="1" cellpadding="4" cellspacing="0">
-<tr><th>Unit</th><th> Weight </th><th> <a href="#Khan">Khan</a> </th></tr>
+<tr><th>Unit</th><th> Weight </th><th> <a href="#Khan">Khan</a> </th><th> Excel </th><th> Python </th></tr>
 <tr valign="top"><td> 1. Exploring One-Variable Data </td><td align="center"> 15-23% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/quantitative-data-ap">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/quantitative-data-ap">AP</a>
+   </td><td> - </td><td> - </td></tr>
 <tr valign="top"><td> 2. Exploring Two-Variable Data </td><td align="center"> 5-7% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/bivariate-data-ap">AP</a>
+   </td><td> - </td><td> - </td></tr>
 <tr valign="top"><td> 3. Collecting Data </td><td align="center"> 12-15% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/gathering-data-ap">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/gathering-data-ap">AP</a>
+   </td><td> - </td><td> - </td></tr>
 
 <tr valign="top"><td> 4. Probability, Random Variables, and Probability Distributions </td><td align="center"> 10-20% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/random-variables-ap">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/random-variables-ap">AP</a>
+   </td><td> - </td><td> - </td></tr>
 <tr valign="top"><td> 5. Sampling Distributions </td><td align="center"> 7-12% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/sampling-distribution-ap">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/sampling-distribution-ap">AP</a>
+   </td><td> - </td><td> - </td></tr>
 
 <tr valign="top"><td> 6. Inference for Categorical Data: Proportions </td><td align="center"> 12-15% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:inference-categorical-proportions">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:inference-categorical-proportions">AP</a>
+   </td><td> - </td><td> - </td></tr>
 <tr valign="top"><td> 7. Inference for Quantitative Data: Means </td><td align="center"> 10-18% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:inference-quantitative-means">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:inference-quantitative-means">AP</a>
+   </td><td> - </td><td> - </td></tr>
 <tr valign="top"><td> 8. Inference for Categorical Data: Chi-square </td><td align="center"> 2-5% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/chi-square-tests">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/chi-square-tests">AP</a>
+   </td><td> - </td><td> - </td></tr>
 <tr valign="top"><td> 9. Inference for Quantitative Data: Slopes </td><td align="center"> 2-65% 
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/inference-slope-linear-regression">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/inference-slope-linear-regression">AP</a>
+   </td><td><a target="_blank" href="https://wilsonmar.github.io/regression/">[_]
+   </td><td> - </td></tr>
 <tr valign="top"><td> * Prepare for the 2022* AP Statistics Exam </td><td align="center"> -
-   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:prepare-for-the-2022-ap-statistics-exam">AP</a></td></tr>
+   </td><td><a target="_blank" href="https://www.khanacademy.org/math/ap-statistics/xfb5d8e68:prepare-for-the-2022-ap-statistics-exam">AP</a>
+   </td><td> - </td><td> - </td></tr>
 </table>
 <br /><br />
-
-The AP Statistics Exam is Thu, May 7, 2026 at 12 PM Local
 
 <hr />
 
@@ -99,7 +113,7 @@ see https://www.statsdirect.com/help/references/glossary.htm
 | σ      | sigma | Population standard deviation              |
 | Var or s² | - | Variance (measure of dispersion)         |
 | P      | - | Probability of an event or data sample     |
-| p̂      | hat | Sample proportion (estimate of population proportion) |
+| p̂      | circumflex<br />U0302 | Sample proportion (estimate of population proportion) |
 | R      | - | Correlation coefficient (linear relationship strength) |
 | t      | - | Student’s t-statistic for small-sample inference |
 | z      | - | Standardized score or test statistic divided by SE |
@@ -369,7 +383,11 @@ Unit 16: Analysis of variance (ANOVA)
 * Analysis of variance (ANOVA)
 
 
+## More Online Tutorial videos
+
 https://brilliant.org/welcome/?sem=statistics
+
+https://www.youtube.com/@datamlistic/shorts and videos explaining match used for Machine Learning.
 
 
 ## Study Guides
@@ -445,3 +463,15 @@ Statistics & Probability Practice Problems for Praxis Mathematics (Praxis 5165)
 
 
 https://teachercertification.com/buy/praxis/
+
+## Teacher training
+
+https://skewthescript.org/skewu-online-new-stats-teachers
+Nonprofit, low-cost alternatives like SkewU Online (Skew the Script) — a 3-week, self-paced online course for new AP Statistics teachers that issues a training certificate.​
+
+https://blog.mathmedic.com/post/new-to-teaching-ap-stats-start-here
+Math Medic’s APSO workshops designed to build both content mastery and teaching strategy.​
+
+https://moreland.edu/resources/blog-insights/how-to-get-your-u-s-teaching-certification-from-anywhere-in-the-world
+
+https://uwf.edu/soe/teacherready/

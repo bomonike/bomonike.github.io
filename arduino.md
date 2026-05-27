@@ -1,3 +1,19 @@
+---
+layout: post
+date: "2025-04-26"
+lastchange: "v008 + buffers headers :cat.md"
+file: "arduino"
+title: "Arduino"
+excerpt: "Microcontrollers"
+tags: [skills, practical]
+image:
+# python-samples-1900x500.jpg
+  feature: https://user-images.githubusercontent.com/300046/145717691-60b8c765-e0a3-4d63-bf7f-0cb89492c0ee.png
+  credit: An Athlete Wrestling with a Python (1877) by Sir Frederic Leighton (1830-1896) at the Tate, London
+  creditlink: https://www.wikiwand.com/en/An_Athlete_Wrestling_with_a_Python
+comments: true
+created: "2025-01-11"
+---
 
 <a target="_blank" href="https://bomonike.github.io/arduino"><img align="right" width="100" height="100" alt="arduino.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/arduino.png?raw=true" />
 This is at https://bomonike.github.io/arduino
@@ -56,6 +72,69 @@ https://www.youtube.com/watch?v=yi29dbPnu28
 
 https://support.arduino.cc/hc/
 
+https://learn.parallax.com/book_collection/arduino-shield-bot-tutorial-series/
+Arduino Shield-Bot Tutorial Series
+
+### Course at Montana.edu Bozeman
+
+<a target="_blank" href="https://www.linkedin.com/in/brock-lameres/">Brock LaMeres</a>, associate professor of electrical and computer engineering who has taught engineering at MSU for the past 10 years and conducts research on how to use technology to teach the concepts of STEM. LaMeres also created the MSU robotics competition team that won the national championship at the NASA Mining Competition in 2010. He has extensive experience in online teaching.
+
+<a target="_blank" href="https://www.youtube.com/playlist?list=PLGfr4aGVCmFbwPkNQh_PXY5yKwcgRdXzk">Videos on youtube</a> from 2009
+<a target="_blank" href="https://eu.courses.montana.edu/wconnect/CourseStatus.awp?&course=19ARDUINO">
+Arduino Based Robotics (19ARDUINO)</a> Self-paced online course
+introduces an Arduino-based robotic platform as a method for teaching STEM (Science, Technology, Engineering and Mathematics). The course is designed for pre- and in-service teachers, and is also appropriate for youth leaders, coaches or parents who are interested in integrating robotics and programming into their courses.
+
+https://eu.courses.montana.edu/XPage.awp?&Page=policy.htm
+- Arduino computer system
+- robot construction, locomotion and autonomy
+- sensors
+- common robot challenges
+
+The course offers five hours of video-based instruction from MSU Professor Brock LaMeres along with a series of hands-on activities building and programming the robotic platform.
+
+1. 14:01 - 1.1 -- Course Overview - 
+    Materials from Parallax:
+    * 5 AA batteries
+    * <a target="_blank" href="https://www.parallax.com/product/32335">Robotics Shield Kit with Arduino Robotic Shield Kit with Arduino</a> https://www.parallax.com/product/robot-shield-with-arduino/ $249 (previously $179)
+    * <a target="_blank" href="https://www.parallax.com/product/28108">QTI Line Follower AppKit for the small robot QTI Line Follower AppKit</a> https://www.parallax.com/product/qti-line-follower-appkit-for-the-small-robot/ $44.95 (previously $29.99) so the robot can follow a line on the floor.
+    * https://www.parallax.com/product/board-of-education-shield-for-arduino/ (BOE) $49.95
+    * https://www.parallax.com/product/tank-tread-kit/ $39.95
+
+2. <a target="_blank" href="https://www.youtube.com/watch?v=h52a04bHTaY&list=PLGfr4aGVCmFbwPkNQh_PXY5yKwcgRdXzk&index=1">13:37 - 2.1 -- Getting Started</a>
+    * https://learn.parallax.com/courses/robotics-with-the-board-of-education-shield-for-arduino/ Learn how to build a robot with the BOE-Bot Robot platform based on the Arduino Uno computer.
+
+3. 16:20 - 2.2 -- Writing Your First Arduino Program
+4. 13:40 - 2.3 -- Data Types 
+5. 14:22 - 2.4 -- Math Operations
+6. 9:29 - 2.5 -- Making Decisions
+7. 13:32 - 2.6 -- Loops
+8. 1:25 - 2.7 -- Comments
+9. 6:09 - 3.1 -- Connect the BOE Shield to Your Arduino
+10. 8:35 - 3.2 -- Build and Test the LED Indicators
+11. 1:32 - 3.4 -- Connecting the Servos and Batteries
+12. 3:36 - 3.5 -- Calibrate the Servos
+13. 7:40 - 3.6 -- Connect the BOE Shield
+14. 4:51 - 4.1 Assemble the BOE-Bot
+15. 13:26 - 4.2 Making the BOE-Bot Move
+16. 30:03 - 4.3 Robot Golf
+17. 1:11 - 5.1 Build the Piezospeaker Circuit
+18. 21:39 - 5.2 -- Writing a Program to Play Tones
+19. 4:02 - 6.1 -- Add the Whisker Sensors to Your BOE-Bot
+20. 12:31 - 6.2 -- Test the Whiskers
+21. 19:27 - 6.3 -- Avoid Obstacles While Navigating Using the Whiskers
+22. 1:56 - 7.1 -- Add the QTI Sensor to Your BOE-Bot
+23. 14:17 - 7.2 -- Test the QTI Sensor
+24. 14:49 - 7.3 -- Following a Line Using the QTI Sensor
+25. 7:14 - 7.4 -- Following a Line and Detecting an Object
+26. 3:49 - 8.1 -- Add the IR Heading Circuit to Your BOE-Bot
+27. 11:38 - 8.2 -- Test the IR Headlamps
+28. 11:02 - 8.3 -- Following a Line and Detecting an Object with the IR Headlamps
+
+
+### Digital
+
+https://www.youtube.com/@digitallogicprogramming2199
+YouTube channel: Digital Logic & Programming 
 
 https://www.youtube.com/watch?v=BLrHTHUjPuw
 A: Arduino MASTERCLASS | Full Programming Workshop in 90 Minutes!
@@ -257,3 +336,9 @@ https://paperswithcode.com/search?q_meta=&q_type=&q=arduino
 ## Marionette
 
 https://github.com/knee-koh/MarIOnette
+
+## MicroPython
+
+https://www.youtube.com/watch?v=oq1fLK5vn-g
+Why MicroPython is a Game Changer for Embedded Engineers
+by SparkFun Electronics

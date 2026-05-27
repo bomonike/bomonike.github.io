@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-19"
-lastchange: "26-05-19 v019 from wilsonmar @rustlang.md"
+date: "2026-05-23"
+lastchange: "26-05-23 v020 Deza classes @rustlang.md"
 url: https://bomonike/rustlang
 file: "rustlang"
 title: "Rustlang (Rust language)"
@@ -45,7 +45,11 @@ Rust uses <a target="_blank" href="https://llvm.org/">LLVM</a> to generate a lan
 
 ## Why Rust?
 
+> "Rust isn't difficult. It's unfamiliar."
+
 Rust was rated the "most loved" among all programming languages in the <a target="_blank" href="https://web.archive.org/web/20201008033536/https://insights.stackoverflow.com/survey/2019/?utm_source=social-share&utm_medium=social&utm_campaign=dev-survey-2019#most-loved-dreaded-and-wanted">2020 StackOverflow survey of developers</a> (ahead of Python, TypeScript, Kotlin, etc.).
+
+> "In other languages simple things are easy and complex things are possible, in Rust simple things are possible and complex things are easy."
 
 Rust was <a target="_blank" href="https://www.tiobe.com/tiobe-index/">#26 on the TIOBE index of programming languages</a>, based on "the number of skilled engineers world-wide, courses and third party vendors. Popular search engines such as Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu were used to calculate the ratings.".
 
@@ -107,6 +111,8 @@ Unlike Python, JavaScript:
 
 Rust catches concurrency programming mistakes.
 
+Stack overflow vulnerabilities not possible?
+
 Videos comparing languages:
    * <a target="_blank" href="https://www.youtube.com/watch?v=E-47VLwMY_U" title="Apr 29, 2021">Rust vs Go: Which is best? THE Definitive Answer</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=FKMrpaFjQm4">Rust Vs Go Panel - Miriah Peterson, Michael Snoyman, Jonathan Turner, Steve Francia
@@ -119,9 +125,11 @@ RustLab Conference</a>
 
 Rust developers are called "Rustlings" or "Rustaceans".
 
+r/rust
+
 <a target="_blank" href="https://twitter.com/search?q=%23rustlang&src=typed_query">#RustLang on Twitter</a>.
 
-Rust is named after the <a target="_blank" href="https://www.wikiwand.com/en/Rust_(fungus)">rust family of parasitic fungi causing plant diseases with its brown spores</a>, yet there is a
+Rust is named after the <a target="_blank" href="https://www.wikiwand.com/en/Rust_(fungus)">rust family of parasitic fungi causing plant diseases with its brown spores</a>.
 
 Rust Belt Rust: conference held in the "Rust Belt" of the U.S.
 
@@ -135,7 +143,67 @@ Rust LATAM
 
 Oxidize Global
 
-<hr />
+## Learning Sequence
+
+The core Rust team nor the Rust Foundation currently provide an official, globally recognized certification for Rust developers.
+But The Linux Foundation's "Programming in Rust (LFD480)" is an instructor-led training and certification "money grab".
+
+The sequence of concepts: https://github.com/0atman/noboilerplate
+
+   * Multipl string types
+   * <a target="_blank" href="https://www.youtube.com/watch?v=K-KK_UGuXFI" title="Oct 8, 2019 Doug Milford">Rust println! and format! macros</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=N28mGv1L8EM" title="Oct 8, 2019 Doug Milford">Rust Enumerations</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=1nCZOh83ins" title="Oct 8, 2019 Doug Milford">Rust Primatives (basic data)</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ClPrjjHmo2Y" title="Oct 8, 2019 Doug Milford">Rust strings vs str slices</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Vz9_y7NjRlQ" title="Oct 8, 2019 Doug Milford">Rust Conditionals</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=LJ_tHdhkkng" title="Oct 8, 2019 Doug Milford">Rust Casting, Shadowing, Consts and Static</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=hEhnDRR4Ijs" title="Oct 8, 2019 Doug Milford">Rust Functions and Procedures</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=afFehipXJFA" title="Oct 8, 2019 Doug Milford">Rust Tuples</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=gi0AQ78diSA" title="Oct 8, 2019 Doug Milford">Rust Structs, Traits, and Impl</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=nvur2Ast8hE" title="Nov 17, 2019 Doug Milford">Rust Generics</a>
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lQ7XF-6HYGc" title="Nov 17, 2019 Doug Milford">Rust Ownership and Borrowing</a> shows coding for stack and heap (which houses collections that needs to grow)
+   * <a target="_blank" href="https://www.youtube.com/watch?v=1QoT9fmPYr8" title="Apr 12, 2020 Doug Milford 25:51">Rust lifetimes</a> of references to memory erased at end of } scopes. Lifetimes are defined by an apostrophe prefix.
+   <br /><br />  
+
+https://github.com/PacktPublishing/Speed-up-your-Python-with-Rust
+
+https://github.com/PyO3/maturin
+
+https://github.com/Indosaram/rust-python-book
+
+## Sample Rust Code
+
+### Leetcode
+
+https://github.com/AnasImloul/Leetcode-Solutions
+A repository with over 7000 solutions to more than 1800 Leetcode problems written in C++, Python, Java, Javascript, Rust & Golang. by <a target="_blank" href="https://www.linkedin.com/in/anas-imloul/">Anas Imloul</a>
+   * Algorithms
+   * Database
+   * Shell
+   * Concurrency
+   <br /><br />
+
+
+### Logging
+
+https://github.com/muhammad-fiaz/logly
+a Rust-powered, Loguru-like logging library for Python that combines the familiarity of Python’s standard logging API with high-…
+
+### AI Face Recognition
+
+https://github.com/rustybuilder/rust-faces
+Face Detection in Rust with Python Bindings
+
+
+## What to use
+
+<a target="_blank" href="https://www.youtube.com/watch?v=yW_U1Tz8qac&pp=0gcJCQYLAYcqIYzv">
+Top 4 Rust career paths (and which one you should choose)</a>
+
+
+
+
 
 <a name="Install"></a>
 
@@ -189,7 +257,7 @@ Bash completion has been installed to:
   /usr/local/etc/bash_completion.d
    </pre>
 
-### Uninstall
+   ### Uninstall
 
    <ul>
    <tt><strong>brew uninstall rust</strong></tt>
@@ -201,59 +269,42 @@ Bash completion has been installed to:
    <tt><strong>rustup self uninstall</strong></tt>
    </ul>
 
+   ### VSCode & Rust Analyzer
 
-<a name="gitignore"></a>
+   There is Rust Rover and Freemium Fleet from JetBrains. 
+   <a target="_blank" href="https://www.youtube.com/watch?v=sZaAP4AS0hc">VIDEO</a> 
+   VSCode extensions to get comparable features:
 
-## .gitignore for Rust
+   * rust-analyzer
+   * CodeLLDB
+   * Even Better TOML
+   * Crates
+   <br /><br />
 
-1. Obtain the folder:
+   
+   <a name="IDE"></a>
 
-   <pre><strong>git clone https://github.com/wilsonmar/rustlang-samples
-   cd rustlang-samples
-   </strong></pre>
+   <a target="_blank" href="https://www.linkedin.com/in/doug-milford-065a292/">Doug Milford</a> 
+   (lambdavalley.com) uses Visual Studio Code (VSCode) IDE on YouTube:
 
-1. View the <strong>.gitignore</strong> file in my by GitHub:
-
-   <pre># will have compiled files and executables
-/target/
-&nbsp;
-# Remove Cargo.lock from gitignore if creating an executable, leave it for libraries
-# More information here https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
-Cargo.lock
-&nbsp;
-# Backup files generated by rustfmt:
-**/*.rs.bk
-   </pre>
-
-   PROTIP: The <tt>target</tt> folder is where compiled assets are stored.
-
-   The <tt>Cargo.lock</tt> file?
-
-<hr />
-
-<a name="IDE"></a>
-
-<a target="_blank" href="https://www.linkedin.com/in/doug-milford-065a292/">Doug Milford</a> 
-(lambdavalley.com) uses Visual Studio Code (VSCode) IDE on YouTube:
-
-   * <a target="_blank" href="https://www.youtube.com/watch?v=Az3jBd4xdF4" title="Oct 8, 2019">Rust intro trailer</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=f6tizikEMTk" title="Oct 8, 2019">Rust setup for Windows</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=DWcIZFGiKr0" title="Oct 8, 2019">Rust Hello World</a> and Cargo.toml (without using cargo)
-   * <a target="_blank" href="https://www.youtube.com/watch?v=2KTG3OQPPJ4" title="Oct 8, 2019">Why Rust</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=sE2cDV91IRg" title="Oct 8, 2019">Rust Cargo.toml</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=5F6pHtkWMxg" title="Oct 8, 2019">Rust lib vs main</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=SoK2TT1JJGo" title="Oct 8, 2019">Rust Cargo and Rustup commands</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=K-KK_UGuXFI" title="Oct 8, 2019">Rust println! and format! macros</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=N28mGv1L8EM" title="Oct 8, 2019">Rust Enumerations</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=1nCZOh83ins" title="Oct 8, 2019">Rust Primatives (basic data)</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=ClPrjjHmo2Y" title="Oct 8, 2019">Rust strings vs str slices</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=Vz9_y7NjRlQ" title="Oct 8, 2019">Rust Conditional Statements</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=LJ_tHdhkkng" title="Oct 8, 2019">Rust Casting, Shadowing, Consts and Static</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=hEhnDRR4Ijs" title="Oct 8, 2019">Rust Functions and Procedures</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=afFehipXJFA" title="Oct 8, 2019">Rust Tuples</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=gi0AQ78diSA" title="Oct 8, 2019">Rust Rust Structs, Traits and Impl</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=lQ7XF-6HYGc" title="Nov 17, 2019">Rust Ownership and Borrowing</a> shows coding for stack and heap (which houses collections which needs to grow)
-   * <a target="_blank" href="https://www.youtube.com/watch?v=nvur2Ast8hE" title="Nov 17, 2019">Rust Generics</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Az3jBd4xdF4" title="Oct 8, 2019 Doug Milford">Rust intro trailer</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=f6tizikEMTk" title="Oct 8, 2019 Doug Milford">Rust setup for Windows</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=DWcIZFGiKr0" title="Oct 8, 2019 Doug Milford">Rust Hello World</a> and Cargo.toml (without using cargo)
+   * <a target="_blank" href="https://www.youtube.com/watch?v=2KTG3OQPPJ4" title="Oct 8, 2019 Doug Milford">Why Rust</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=sE2cDV91IRg" title="Oct 8, 2019 Doug Milford">Rust Cargo.toml</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=5F6pHtkWMxg" title="Oct 8, 2019 Doug Milford">Rust lib vs main</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=SoK2TT1JJGo" title="Oct 8, 2019 Doug Milford">Rust Cargo and Rustup commands</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=K-KK_UGuXFI" title="Oct 8, 2019 Doug Milford">Rust println! and format! macros</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=N28mGv1L8EM" title="Oct 8, 2019 Doug Milford">Rust Enumerations</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=1nCZOh83ins" title="Oct 8, 2019 Doug Milford">Rust Primatives (basic data)</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ClPrjjHmo2Y" title="Oct 8, 2019 Doug Milford">Rust strings vs str slices</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Vz9_y7NjRlQ" title="Oct 8, 2019 Doug Milford">Rust Conditional Statements</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=LJ_tHdhkkng" title="Oct 8, 2019 Doug Milford">Rust Casting, Shadowing, Consts and Static</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=hEhnDRR4Ijs" title="Oct 8, 2019 Doug Milford">Rust Functions and Procedures</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=afFehipXJFA" title="Oct 8, 2019 Doug Milford">Rust Tuples</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=gi0AQ78diSA" title="Oct 8, 2019 Doug Milford">Rust Rust Structs, Traits and Impl</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=lQ7XF-6HYGc" title="Nov 17, 2019 Doug Milford">Rust Ownership and Borrowing</a> shows coding for stack and heap (which houses collections which needs to grow)
+   * <a target="_blank" href="https://www.youtube.com/watch?v=nvur2Ast8hE" title="Nov 17, 2019 Doug Milford">Rust Generics</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=1QoT9fmPYr8" title="Apr 12, 2020">Rust lifetimes</a>
    <br /><br />
 
@@ -261,16 +312,83 @@ VisualRust IDE?
 
 
 
+## Cargo Package Manager of Crates
+
+   In the Rust development environment, all tools are installed to the directory<br />
+   <tt>~/.cargo/bin</tt> 
+   That's where the Rust toolchain is installed, including rustc, cargo, and rustup.
+
+1. Install <a target="_blank" href="https://crates.io/">https://crates.io</a> is the Rust language's library registry (like npm and pypi). On Linux and macOS systems:
+
+   <pre><strong>curl https://sh.rustup.rs -sSf | sh</strong></pre>
+
+   Response:
+
+   <pre>...
+      warning: rustup should not be installed alongside Rust. Please uninstall your existing Rust first.
+   </pre>
+
+1. Notice the most downloaded libraries are rand, syn.
+
+1. Build
+
+   <pre><strong>cargo build</strong></pre>
+
+1. Toolchain management with rustup (at <a target="_blank" href="https://github.com/rust-lang/rustup.rs">https://github.com/rust-lang/rustup.rs</a>)
+   rustup manages builds in a consistent way on every platform that Rust supports, enabling installation of Rust from the beta and nightly release channels as well as support for additional cross-compilation targets.
+
+   <pre>[dependencies]
+   rand = "^0"
+   </pre>
+
+   * <tt>^0</tt> specifies upgrade automatically up to, but not including "1.0.0".
+   * <tt>~.0.7.1</tt> with a tilde specifies minimal upgrade automatically up to, but not including "0.8".
+   <br /><br />
+
+## Wrk framework
+
+<a target="_blank" href="https://www.youtube.com/watch?v=TuXyGkf8MEo">VIDEO</a>:
+
+40x speed of FastAPI in Python running concurrently.
+
+onnx model format
+
+<a target="_blank" href="https://www.youtube.com/watch?v=wXtngLBkK4Q">VIDEO</a>: Async Rust explained in 20 minutes
+
+## My GitHub
+
+1. Obtain the folder:
+
+   <pre><strong>git clone https://github.com/wilsonmar/rustlang-samples --depth 1
+   cd rustlang-samples
+   </strong></pre>
+
+   <a name="gitignore"></a>
+
+   ### .gitignore for Rust
+
+1. View the <strong>.gitignore</strong> file in my by GitHub:
+
+   <pre># will have compiled files and executables
+/target/
+target/
+&nbsp;
+# Remove Cargo.lock from gitignore if creating an executable, leave it for libraries
+# More information here https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
+Cargo.lock
+&nbsp;
+# Backup files generated by rustfmt:
+**/*.rs.bk
+&nbsp;
+.obsidian
+.trash
+   </pre>
+
+   PROTIP: The <tt>target</tt> folder is where compiled assets are stored.
+
+   The <tt>Cargo.lock</tt> file?
 
 <hr />
-
-<a name="SamplePrograms"></a>
-
-## Sample programs
-
-The most thorough
-
-https://github.com/TheAlgorithms/Rust
 
 
 
@@ -299,7 +417,8 @@ authors=["John Doe <john.doe@gmail.com>]
 edition="2018"
    </pre>
 
-   <tt>edition</tt> refers to the year of the compiler to be used. 2018 is the lastest one as of this writing. (This should really be "Vintage")
+   REMEMBER:
+   <tt>edition</tt> refers to the year of the Rust compiler to be used. 2018 is the lastest one as of this writing. (This should really be "Vintage").
 
    ### Compile
 
@@ -344,39 +463,9 @@ edition="2018"
    <pre>rustc --explain E0308</pre>
 
    
+The most thorough
 
-   ## Cargo Package Manager of Crates
-
-   In the Rust development environment, all tools are installed to the <tt>~/.cargo/bin</tt> directory, where the Rust toolchain is installed, including rustc, cargo, and rustup.
-
-1. Install <a target="_blank" href="https://crates.io/">https://crates.io</a> is the Rust language's library registry (like npm and pypi). On Linux and macOS systems:
-
-   <pre><strong>curl https://sh.rustup.rs -sSf | sh</strong></pre>
-
-   Response:
-
-   <pre>...
-      warning: rustup should not be installed alongside Rust. Please uninstall your existing Rust first.
-   </pre>
-
-1. Notice the most downloaded libraries are rand, syn.
-
-1. Build
-
-   <pre><strong>cargo build</strong></pre>
-
-Toolchain management with rustup (at <a target="_blank" href="https://github.com/rust-lang/rustup.rs">https://github.com/rust-lang/rustup.rs</a>)
-rustup manages builds in a consistent way on every platform that Rust supports, enabling installation of Rust from the beta and nightly release channels as well as support for additional cross-compilation targets.
-
-
-
-<pre>[dependencies]
-rand = "^0"
-</pre>
-
-   * <tt>^0</tt> specifies upgrade automatically up to, but not including "1.0.0".
-   * <tt>~.0.7.1</tt> with a tilde specifies minimal upgrade automatically up to, but not including "0.8".
-   <br /><br />
+https://github.com/TheAlgorithms/Rust
 
 
 ### Benchmarking with crate Criterion
@@ -503,15 +592,17 @@ shows use of IntelliJ IDEA.
 ## Tutorials
 
 
-## Rust with AWS & AI
+### Rust with AWS & AI
 
-By the distinguished Noah Gift, 
-Liam Parker, 
-Alfredo Deza at Pragmatic AI Labs:
+By the distinguished <a target="_blank" href="https://www.linkedin.com/in/noahgift/">Noah Gift</a> (US expat in Valencia, Spain), Liam Parker, <a target="_blank" href="https://www.linkedin.com/in/alfredodeza/">Alfredo Deza</a> at Pragmatic AI Labs: <a target="_blank" href="https://github.com/paiml">https://github.com/paiml</a>
 
-A. https://ds500.paiml.com/bootcamps/rust/ - 5 weeks, 6 hours $20/month
+If you have an OReilly subscription:
 
-B. With a Coursera subscription (~$400/year), earn a career certificate you can add to your LinkedIn profile, resume, or CV. Share it on social media and in your performance review.
+A. <a target="_blank" href="https://learning.oreilly.com/videos/-/08132023VIDEOPAIML/">1h Using Rust with Python Nov 23</a> 
+B. <a target="_blank" href="https://learning.oreilly.com/videos/-/09142023VIDEOPAIML/">5h Rust for Pythonistas</a> Nov 23
+B. <a target="_blank" href="https://learning.oreilly.com/videos/-/08252023VIDEOPAIML/">3h Rust LLMOps</a>
+
+D. <a target="_blank" href="https://builder.aws.com/content/3CcA8u1UUlFqDRXOAovCe7wavz6/learn-aws-ai-and-cloud-with-me-40-courses-across-bedrock-sagemaker-lambda-and-mlops">AWS Builder Center</a>: With a Coursera subscription (~$400/year), earn a career certificate you can add to your LinkedIn profile, resume, or CV. Share it on social media and in your performance review.
 <a target="_blank" href="https://www.coursera.org/specializations/ai-tooling">
 AI Tooling Specialization</a>: Build and deploy production AI systems using Rust on AWS.
 Master 20 courses with projects spanning foundation models, prompt engineering, security
@@ -543,6 +634,15 @@ in 75 hours of videos:
    * 1 hr Deno Foundations and AI-Driven Development
    * 1 hr Data Engineering and Task Systems
    * 1 hr Production Deno Tooling
+
+https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale 
+The Duke University Building Cloud Computing Solutions at Scale Specialization  is a four-course foundation covering serverless, containers, data engineering, and MLOps on AWS:
+
+Databricks
+
+X. <a target="_blank" href="https://ds500.paiml.com/bootcamps/rust/">Rust Fundamentals Bootcamp</a> in 6 hours over 5 weeks for $20/month.
+
+
 
 <br /><br />
 
@@ -576,4 +676,13 @@ by Bryan Cantrill
 https://www.youtube.com/watch?v=Uqi9xwlFbEc
 
 <a target="_blank" href="https://www.youtube.com/watch?v=vqavdUGKeb4">Rust Programming Techniques</a>
+
+
+https://medium.com/@mithi/genetic-algorithms-in-rust-for-autonomous-agents-an-introduction-ac182de32aee
+https://github.com/mithi/rusty-genes
+A Rust implementation of a genetic algorithm to solve the traveling salesman problem with animated visualizations
+
+
+grafana/augurs
+Time series analysis for Rust, with bindings to Python and Javascript
 

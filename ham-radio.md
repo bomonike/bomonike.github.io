@@ -70,6 +70,14 @@ Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
     * <a target="_blank" href="https://www.repeaterbook.com/gmrs/index.php?state_id=none">U.S. GMRS Repeaters</a>, including all countries not listed above.
     * https://medium.com/@life-is-short-so-enjoy-it/applying-gmrs-radio-license-purchasing-gmrs-radio-5421f1ee729b
     <br /><br />
+    Tidradio TD H8
+    Midland makes high quality.
+    https://www.amazon.com/BAOFENG-Weather-Receiver-Rechargeable-Headsets/dp/B0B3DRG9GC
+    $46.98 for 2 BAOFENG GMRS Radio Handheld Long Range GM-15 Pro 8W Walkie Talkie with Earpiece NOAA Weather Receiver Rechargeable GMRS Repeater Two Way Radio with USB-C Charger for Hunting Survival Gear.
+
+    For firmwae, Patreon. Look for "nicSure". His actual name is Marcus Dudley. It's $5 but older versions are free. He's a wizard and he unlocks features these radios never had. He could make a radio walk and talk if it physically could. He's written for the Tidradio TD-H3, Radtel RT-890, RT-900 and is working on the RT-880/880G. Also look for the nicFW support group on Facebook.
+    <br /><br />
+    
 * Ham/Amateur radio individual operators licensed at the Technician level can build their own equipment.
 
 * Ham/Amateur radio operators licensed at the General level can communicate all over the world on additional frequencies. <a target="_blank" href="https://www.amazon.com/ARRL-General-Class-License-Manual/dp/162595171X/">$29.66 BOOK: AARL manual</a>

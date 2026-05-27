@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2025-04-17"
-lastchange: "v010 + imgs :palantir.md"
+date: "2026-02-25"
+lastchange: "26-02-25 v011 vids :palantir.md"
 url: "https://bomonike.github.io/palantir"
 file: "palantir"
 title: "Palantir"
@@ -15,7 +15,7 @@ image:
 comments: true
 created: "2018-04-03"
 ---
-<a target="_blank" href="https://bomonike.github.io/palantir"><img align="right" width="100" height="100" alt="palantir.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/palantir.png?raw=true" />
+<a target="_blank" href="https://bomonike.github.io/ai-scaling"><img align="right" width="100" height="100" alt="ai-scaling.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ai-scaling.png?raw=true" />
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
@@ -304,7 +304,10 @@ Karp describes himself as "anti-woke, pro-Israel, pro-Ukraine". VIDEOS:
    * <a target="_blank" href="https://www.youtube.com/watch?v=KZWB5XGZy-Q">"I don't think in win/lose"
 
 <a target="_blank" href="https://www.youtube.com/watch?v=jLH0FALLRtg&t=4m47s">VIDEO</a>: Fund manager Kathy Wood said "Alex Karp believes that Plantir will be the largest AI company in the world. .. I think that might be right. ... It could be a big disruptor to Microsoft."
+
 Others:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=F5a9aASy--c">SKYKIT</a> self-contained intelligence center in a suitcase with batteries, SpaceX satellite wifi dish, ruggedize laptop, drone, trailcam.
+   * MAVEN
 
 Glassdoor's employee rating of the company is 3.8/5.0 (on the lower end of scale, not among <a target="_blank" href="https://www.glassdoor.com/Award/Best-Places-to-Work-LST_KQ0,19.htm">Best Places to Work</a>). One employee commented:
 
@@ -381,6 +384,7 @@ Call Query functions which uses GPT-4o from a TypeScript Query function.
 
 from which Jupyter notebooks run to analyze data and trigger AIP Logic functions from your OSDK application.
 
+<a target="_blank" href="https://www.youtube.com/watch?v=2lgwr7trSgw">VIDEO Vibe Coding in Palantir AIP</a>
 
 
 ## Ontology Software Development Kit (OSDK)
@@ -665,6 +669,12 @@ x 92
 100
 6
 Utilize the filters, charts, and Object Table in your application to explore your data. (Hint: ensure you use the sorting feature of the Object Table to sort by highest quantity).
+
+## Referenes
+
+https://www.youtube.com/watch?v=DZ95Gmvg_D4">
+I Worked At Palantir: The Tech Company Reshaping Reality by More Perfect Union
+
 
 <hr />
 <i>{{ page.lastchange }}</i>

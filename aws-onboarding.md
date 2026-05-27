@@ -43,49 +43,25 @@ B1. each end-user needs to spend between receiving instructions to being complet
 PROTIP: CAUTION: Using speed as the primary basis for judging performance can lead to cutting corners and thus security holes. So security must be a primary consideration. But security is difficult to measure.
 
 
-## AWS Marketing Hubs
+## AWS URLs
+
+1. Internet Browser tricks
+
+   PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
+
+   PROTIP: So that you can organize the links the way you want (despite when Amazon changes them),
+   create a set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
+   Share them for those new to AWS.
 
 1. Use an internet browser to get on the <strong>AWS marketing page</strong> at 
 
    <a target="_blank" href="https://aws.com/">https://aws.com</a> resolves to<br />
    <a target="_blank" href="https://aws.amazon.com/">https://aws.amazon.com</a> 
 
-   NOTE: Amazon Web Service (AWS) offer several types of services:
-   * "SaaS" (System as a Service) which works completely from the browser like Microsoft 365, Google Drive, or Salesforce.
-   * "PaaS" (Platform as a Service)
-   <br /><br />
-1. Click "Product" for a list of the <strong>categories of products</strong> offered by AWS.
-1. Click a category below for the products in each category's marketing <strong>hub</strong>:
-   <a name="ProductCategories"></a>
-   * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> (datalakes)
-   * <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration</a>
-   * <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence</a>
-   * <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/compute/">Compute</a>
-   * <a target="_blank" href="https://aws.amazon.com/connect/">Custome Experience (Contact Center)</a> (Amazon Connect)
-   * <a target="_blank" href="https://aws.amazon.com/products/databases/">Databases</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/developer-tools/">Developer Tools</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/end-user-computing/">End User Computing</a>
-   * <a target="_blank" href="https://aws.amazon.com/gamelift/">Game Tech</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/management-and-governance/">Management Tools</a>
-   * <a target="_blank" href="https://aws.amazon.com/media-services/">Media Services</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/migration-and-modernization/">Migration & Modernization</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/multicloud-hybrid/">Multicloud & Hybrid</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/networking/">Networking & Content Delivery</a>
-   * <a target="_blank" href="https://aws.amazon.com/cloudops/">Operations</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/security/">Security & Identity</a>
-   * <a target="_blank" href="https://aws.amazon.com/products/storage/">Storage</a>
-   * <a target="_blank" href="https://aws.amazon.com/aws-supply-chain/">(AWS) Supply Chain</a>
-   <br /><br />
-   
-   <a target="_blank" href="https://wilsonmar.github.io/aws-service-catalog/">My AWS Service Catalog page</a> provides different ways to instantiate entire applications. 
-
 1. Explore its menu items:
 
    <a target="_blank" href="https://aws.amazon.com/"><img alt="aws-landing-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1769154950/aws-landing-menu_e8io6g.png"></a>
    <!-- aws-marketing-1205x224_uaojtf.png -->
-
-   PROTIP: Right-click on each link to "open in a new tab". Then quickly switch back and forth between this tutorial and other browser tabs by pressing <strong>Command+`</strong> (backtick at the left of the 1 key). However, tabs set to full-screen are not accessible this way but by pressing shift+command+/ to see the menu to select the tab you want to switch to.
 
    "My account" consists of:
    * <a href="#Console">AWS Management Console</a>
@@ -95,10 +71,66 @@ PROTIP: CAUTION: Using speed as the primary basis for judging performance can le
    * <a href="https://health.console.aws.amazon.com/health/home?nc2=h_uta_hd#/account/dashboard/open-issues">AWS Personal Health Dashboard</a> (EventBridge rules)
    <br /><br />
 
-   ## Browser Bookmarks
+   PROTIP: Additionally:
+   - <a target="_blank" href="https://aws.amazon.com/cli/">AWS CLI</a> Command line interface for AWS
+   - <a target="_blank" href="https://health.aws.amazon.com/health/status - **AWS Service Health Dashboard</a> Real-time service status
 
-1. Set a <strong>bookmark</strong> this page in your browser for quicker frequent access. 
+   - <a target="_blank" href="https://aws.amazon.com/architecture/">AWS Architecture Center</a> Reference architectures and best practices
+   - <a target="_blank" href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected</a> Best practices for cloud architectures
 
+   - <a target="_blank" href="https://calculator.aws/">AWS Pricing Calculator</a> Estimate costs for AWS services
+   - <a target="_blank" href="https://aws.amazon.com/free/">AWS Free Tier</a> Free usage tiers for AWS services
+   - <a target="_blank" href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/">AWS Regional Services List</a> Services available by region
+
+   <a name="Support"></a>
+
+   Click "Support" menu:
+   * <a href="#SupportCenter">Support Center</a>
+   * <a target="_blank" href="https://iq.aws.amazon.com/">Expert Help</a> for Experts on-demand. Post your request and work with pre-vetted talent. Pay securely through AWS.  On May 28, 2026, AWS will discontinue support for AWS IQ.
+   * <a target="_blank" href="https://docs.aws.amazon.com/">Documentation</a>
+   * <a target="_blank" href="https://repost.aws/knowledge-center/">Knowledge Center</a>
+   * <a target="_blank" href="https://aws.amazon.com/premiumsupport/">AWS Support Overview</a>
+   * <a target="_blank" href="https://repost.aws/">AWS re:Post</a>
+   <br /><br />
+
+   **Resources**
+   - <a target="_blank" href="https://docs.aws.amazon.com">Documentation</a> Get detailed technical guides and references for all AWS services and tools
+   - <a target="_blank" href="https://aws.amazon.com/what-is">Cloud term glossary</a> Learn more about key cloud computing concepts
+   - <a target="_blank" href="https://aws.amazon.com/getting-started/cloud-essentials">Cloud fundamentals (essentials)</a> Step-by-step instructions for common AWS tasks 
+
+   - <a target="_blank" href="https://docs.aws.amazon.com/training/">Training & Certification</a> Build and validate your AWS cloud skills and technical expertise
+   - <a target="_blank" href="https://docs.aws.amazon.com/whitepapers/">Whitepapers & Guides</a> 
+   - <a target="_blank" href="https://aws.amazon.com/getting-started/hands-on/">Tutorials</a> Get started with step-by-step tutorials that help you start building on AWS
+
+   <a name="ProductsAlphabetically"></a>
+
+1. Filter the 264+ AWS Products listed alphabetically at <a target="_blank" href="https://aws.amazon.com/products/">https://aws.amazon.com/products/</a> or <a target="_blank" href="https://bomonike.github.io/aws-svcs"> my page of each product's codes and URL links</a>.
+
+   <a name="ProductCategories"></a>
+
+1. Click a link below to directly reach the <strong>hub page</strong> for each of 20+ categories of AWS product:
+   * <a target="_blank" href="https://aws.amazon.com/big-data/datalakes-and-analytics/">Analytics</a> (datalakes): Streaming, Data lakehouse, Data warehouse, Data lake, Data processing, Business intelligence, Search analytics, Data and AI governance
+   * <a target="_blank" href="https://aws.amazon.com/products/application-integration/">Application Integration Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/ai/">Artificial intelligence Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/business-applications/">Business applications Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/compute/">Compute Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/connect/">Custome Experience (Contact Center) Hub</a> (Amazon Connect)
+   * <a target="_blank" href="https://aws.amazon.com/products/databases/">Databases Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/developer-tools/">Developer Tools Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/end-user-computing/">End User Computing Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/gamelift/">Game Tech Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/management-and-governance/">Management Tools Hub</a> (and Governance)
+   * <a target="_blank" href="https://aws.amazon.com/media-services/">Media Services Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/migration-and-modernization/">Migration & Modernization Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/multicloud-hybrid/">Multicloud & Hybrid Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/networking/">Networking & Content Delivery Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/cloudops/">Operations Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/security/">Security & Identity Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/products/storage/">Storage Hub</a>
+   * <a target="_blank" href="https://aws.amazon.com/aws-supply-chain/">(AWS) Supply Chain Hub</a>
+   <br /><br />
+   
+   <a target="_blank" href="https://wilsonmar.github.io/aws-service-catalog/">My AWS Service Catalog page</a> provides different ways to instantiate entire applications. 
 
 
    <a name="TypesOfAccounts"></a>
@@ -367,17 +399,6 @@ These are steps to create a stand-alone root account.
    Information presented by this widget appears in the <a href="#AWSMobileApp">AWS mobile app</a> (below).
 
 
-<a name="Support"></a>
-
-## AWS Support
-
-Expand "Support" to see menu:
-   * <a href="#SupportCenter">Support Center</a>
-   * Expert Help
-   * Documentation
-   * Knowledge Center
-   * AWS Support Overview
-   * AWS re:Post
 
    <a name="ComparePlans"></a>
 
@@ -953,7 +974,7 @@ Follow these steps to create a profile account:
 
 ## AWS Free Tier Benefits
 
-1. View the page: https://aws.amazon.com/free/ which lists free tier offer details by catagory. Scroll down and click "Show 8 more".
+1. <a target="_blank" href="https://aws.amazon.com/free/">Filter the 185 free services at https://aws.amazon.com/free</a> which lists free tier offer details by catagory. Scroll down and click "Show 8 more".
 
 1. REMEMBER: Services only on the Paid tier have <strong>Free Trial</strong> period of varying number of days.
 

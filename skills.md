@@ -1,8 +1,8 @@
 ---
 layout: post
+date: "2026-03-11"
+lastchange: "26-03-11 v007 cider alcohol :skills.md"
 url: https://bomonike.github.io/skills
-date: "2025-04-23"
-lastchange: "v005 + knots:skills.md"
 file: "skills"
 title: "Skills"
 excerpt: "Skills you need to live without modern conveniences. Survival and otherwise."
@@ -46,11 +46,12 @@ References:
 ## Clothing
 
 * Gray Man clothing for urban
-* Shoes
+* <a tatget="_blank" href="https://www.youtube.com/watch?v=Cix4z0uqKE8">Lace boots</a>
 * Rain
 * Snow gloves, hats, jackets
 * Heat & Humidity
 * <a target="_blank" href="https://www.youtube.com/watch?v=j1KRFqtM0eg">Wear a winter neck gaiter/buff</a> and hat in winter.
+* Tie shoes with the Berlutti knot “Knot IQ” app <a target="_blank" href="https://www.youtube.com/shorts/LqG2_L62tog">VIDEO</a>.
 
 ## Water
 
@@ -119,7 +120,7 @@ Living in tents
 
 * Create a tripod using forked sticks
 
-## Foof Preservation
+## Food Preservation
 
 * Preserve eggs without electricity
 * Water Canning
@@ -137,6 +138,9 @@ Living in tents
 * Poles
 * Lures
 * The measurement of <a target="_blank" href="https://youtube.com/shorts/fEyaYJt9TrA?si=0NTS2t7L3uOxevH-">Knots per hour</a> began with sailing ships who tied evenly-spaced knots on the rope.
+
+* <a target="_blank" href="https://youtube.com/shorts/FWQidurGndA?si=6gKExH2_-XkPspZ4">Tie small bag using a string</a>
+
 
 ## Hunt Wild Game
 
@@ -167,10 +171,13 @@ https://www.youtube.com/@AgPhD/shorts
 ## Shelter/Home
 
 * <a target="_blank" href="https://www.youtube.com/shorts/oT0FNIP7bck">Tie rope to tow car</a>
+* <a target="_blank" href="https://youtube.com/shorts/4GRpd4GFt7Y?si=Y75gP5r0osIBMvvz">Connect a steel cable to a loop</a>
 * Tie tarps <a target="_blank" href="https://youtube.com/shorts/ajl7GSMlQto?si=uB8GzFgHmOPL2Sb5">using stopper knots</a> for faster release.
-* Make tent stakes from tree branches <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo&t=9m12s">VIDEO</a>
+* <a target="_blank" href="https://www.youtube.com/shorts/UQ1buG8rq28">India Palki knot to lift water bottles</a>
 * Use parachord to tie sticks together for bi-pod seat <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo">VIDEO</a>
+* <a target="_blank" href="https://www.youtube.com/shorts/lEZoKkMlR6c">Knot on a swivel ring</a>
 
+* Make tent stakes from tree branches <a target="_blank" href="https://www.youtube.com/watch?v=8VrgeLeruFo&t=9m12s">VIDEO</a>
 * Build emergency shelter using tarps and ropes
 * Build emergency shelter using tree branches and leaves
 
@@ -203,6 +210,7 @@ https://www.youtube.com/@AgPhD/shorts
 ## Travel Transportation
 
 * Orienteering & Navigation
+* <a target="_blank" href="https://www.youtube.com/watch?v=eaqynPX3sPo">!:24000 Map & compass</a>
 * Identify compass direction - sun and stars
 * Navigating off a map
 
@@ -255,6 +263,30 @@ https://www.youtube.com/@AgPhD/shorts
 * Signage
 
 * Travel agent
+
+## Cooking heat
+
+https://www.youtube.com/watch?v=gqKoL6TUatA Peach moonshine
+1. Pour case of canned peaches in a bucket
+2. Reflectometer shows sugar level of 1.025.
+3. Add 2.5kg sugar to 1.085 (11%). Stir`
+4. Add Angel Red Yeast (rather than Brandy yeast) 
+5. Add 1.5 tablespoons Yeast nutrient
+6. Gently mix
+7. Wait 3-5 days to develop acid. 31 degree celcium. Above 20c.
+8. Boil in a still for distillation 
+   $1340 https://chasethecraft.com/products/all-rounder-plate-still?utm_campaign=YT_tinned_peach
+
+https://www.youtube.com/watch?v=Cprrl8sfb0I Make Limoncello from the Amalfi coast
+https://www.youtube.com/watch?v=-tVB3WI1slo&pp=0gcJCcUKAYcqIYzv
+
+https://www.youtube.com/watch?v=roJtSrDIJ1w
+Make Hard Lemon Soda Alcohol 
+  15ml Lemon juice 
+  125g Sugar
+  500ml cold water
+  500ml warm water
+  Yeast
 
 ## Computers
 

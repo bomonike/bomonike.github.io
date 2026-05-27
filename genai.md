@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-18"
-lastchange: "26-03-18 v050 Workspace Generic Prompt :genai.md"
+date: "2026-03-23"
+lastchange: "26-03-23 v051 Agent AI Fundamentals :genai.md"
 url: https://bomonike.github.io/genai
 file: "genai"
 title: "GenAI (Generative AI)"
@@ -18,6 +18,10 @@ created: "2023-08-08"
 ## Why?
 
 https://www.linkedin.com/pulse/take-power-back-how-spec-first-tdd-restored-my-joy-coding-prakoso-vkc5c/
+
+https://www.youtube.com/watch?v=ZaPbP9DwBOE
+"Don't learn AI Agents without Learning these Fundamentals" by KodeKloud
+
 
 ## Discriminative
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-07"
-lastchange: "26-03-07 v023 icons :aws-svcs.md"
+date: "2026-03-11"
+lastchange: "26-03-11 v024 Educative course :aws-svcs.md"
 url: https://bomonike.github.io/aws-svcs
 file: "aws-svcs"
 title: "AWS Services"
@@ -70,7 +70,6 @@ NOTE: Amazon Web Service (AWS) offer several types of services:
    * "SaaS" (System as a Service) which works completely from the browser like Microsoft 365, Google Drive, or Salesforce.
    * "PaaS" (Platform as a Service)
    <br /><br />
-
 
 
 ## <a target="_blank" href="https://aws.amazon.com/products/analytics/">Analytics</a>
@@ -229,13 +228,13 @@ useful and delightful apps with generative AI prompts.  [<a target="_blank" href
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsapprunner.html">app-runner</a>: <a target="_blank" href="https://aws.amazon.com/apprunner/">AWS App Runner</a> Deploy containerized web apps easily. [<a target="_blank" href="https://docs.aws.amazon.com/apprunner/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbatch.html">batch</a>: <a target="_blank" href="https://aws.amazon.com/batch/">AWS Batch</a> Batch computing at any scale. [<a target="_blank" href="https://docs.aws.amazon.com/batch/">UG</a>]
 
-- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html">ec2: <a target="_blank" href="https://aws.amazon.com/ec2/">Amazon EC2</a> Virtual servers in the cloud.  [<a target="_blank" href="https://docs.aws.amazon.com/ec2/">UG</a>]
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html">ec2: <a target="_blank" href="https://aws.amazon.com/ec2/">Amazon EC2</a> Virtual servers in Docker containers.  [<a target="_blank" href="https://docs.aws.amazon.com/ec2/">UG</a>]
 - ???: Amazon EC2 Auto Scaling
 - ???: Amazon EC2 Image Builder
 - ???: Amazon EC2 Instance Connect
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslambda.html">lambda</a>: <a target="_blank" href="https://aws.amazon.com/lambda/">AWS Lambda</a> Run code without managing servers (serverless). [<a target="_blank" href="https://docs.aws.amazon.com/lambda/">UG</a>]
-- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlightsail.html">lightsail: <a target="_blank" href="https://aws.amazon.com/lightsail/">AWS Lightsail</a> Simple virtual private servers. [<a target="_blank" href="https://docs.aws.amazon.com/lightsail/">UG</a>]
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonlightsail.html">lightsail: <a target="_blank" href="https://aws.amazon.com/lightsail/">AWS Lightsail</a> Simple VPS (virtual private servers) hosting apps. [<a target="_blank" href="https://docs.aws.amazon.com/lightsail/">UG</a>]
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselasticbeanstalk.html">elasticbeanstalk</a>: <a target="_blank" href="https://aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk</a> Deploy and scale web applications. 
 
@@ -388,7 +387,7 @@ Build breakthrough gaming experiences
 
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelastictranscoder.html">elastictranscoder</a>: <a target="_blank" href="https://aws.amazon.com/elastictranscoder/">Amazon Elastic Transcoder</a> Media transcoding in the cloud. [<a target="_blank" href="https://docs.aws.amazon.com/elastictranscoder/">UG</a>]
 
-- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediaconvert.html">mediaconvert</a>: <a target="_blank" href="https://aws.amazon.com/mediaconvert/">AWS Elemental MediaConvert</a> File-based video transcoding. [<a target="_blank" href="https://docs.aws.amazon.com/mediaconvert/">UG</a>]
+- <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediaconvert.html">mediaconvert</a>: <a target="_blank" href="https://aws.amazon.com/mediaconvert/">AWS Elemental MediaConvert</a> File-based video transcoding, to easily create video-on-demand (VOD) content for broadcast and multiscreen delivery. [<a target="_blank" href="https://docs.aws.amazon.com/mediaconvert/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmedialive.html">medialive</a>: <a target="_blank" href="https://aws.amazon.com/medialive/">AWS Elemental MediaLive</a> Live video processing. [<a target="_blank" href="https://docs.aws.amazon.com/medialive/">UG</a>]
 - <a target="_blank" href="https://docs.aws.amazon.com/service-authorization/latest/reference/list_awselementalmediapackage.html">mediapackage</a>: <a target="_blank" href="https://aws.amazon.com/mediapackage/">AWS Elemental MediaPackage</a> Video origination and packaging. [<a target="_blank" href="https://docs.aws.amazon.com/mediapackage/">UG</a>]
 - mediapackage-vod: ??? MediaPackage VOD
@@ -488,6 +487,25 @@ Build breakthrough gaming experiences
 ## Services by AWS Region
 
 - <a target="_blank" href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/">AWS Regional Services List</a> Services available by region
+
+
+## TODO: Icon images
+
+* https://aws-icons.com/
+* https://github.com/weibeld/aws-icons-svg
+* https://www.gliffy.com/blog/aws-architecture-icons
+* https://aws.amazon.com/blogs/aws/introducing-aws-simple-icons-for-your-architecture-diagrams/
+<br /><br />
+
+## References
+
+This article was developed based on these:
+
+* https://wilsonmar.github.io/well-architected-cloud/
+
+* <a target="_blank" href="https://www.educative.io/courses/learn-the-a-to-z-of-amazon-web-services-aws">3h COURSE: Learn the A to Z of Amazon Web Services (AWS)</a>
+
+Altogether now:
 
 
 

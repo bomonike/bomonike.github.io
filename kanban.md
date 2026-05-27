@@ -1,18 +1,71 @@
 ---
-lastchange: "v002 + fix yaml :kanban.md"
-file: "kanban.md"
+layout: post
+date: "2026-05-08"
+lastchange: "26-05-08 v003 + poolside @kanban.md"
+url: "https://bomonike.github.io/kanban"
+file: "kanban"
+title: "Kanban"
+excerpt: "Exploring how we rack what needs work, then stay focused, avoiding the urgent from killing the important, using Kanban and Linear to build using AI agents."
+tags: [work, collaboration]
+comments: true
 created: "2024-05-14"
 ---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
 
 <a target="_blank" href="https://bomonike.github.io/kanban"><img align="right" width="100" height="100" alt="kanban.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/kanban.png?raw=true" />
 
-If I'm working with small team or just by myself, I use the Kanban system to stay focused.
+We need a consistent way to track what needs work, then stay focused, avoiding the urgent from killing the important.
 
-I've found that the Kanban system helps me focus and collaborate better with others.
+This article introduces <a href="#Kanban">Kanban</a> and Linear.app 
+(among <a target="_blank" href="https://www.youtube.com/watch?v=QT07E_rw-b8">PM tools</a> 
+<a target="_blank" href="https://go.softwarefinds.com/services">evaluated</a>).
 
 And that's not only because I've worked at Toyota, where Kanban was made famous.
 Use of Kanban enabled the car manufacturer to achieve large efficiency and quality gains in the 1950s and beyond.
 
+
+<a name="Linear"></a>
+
+## Linear.app
+
+What's revolutionary about Linear.app is that it the source of truth for both humans AND agents.
+
+Linear is marketed as an <strong>agent-first</strong> approach to development.
+
+Forge, the custom agentic harness built by the Linear team inside Slack,
+defines work to BOTH humans and automated agents.
+Linear's AI chat agent answers questions in Slack related to project status, timelines, and shipping.
+
+When a bug is created as an issue, Forge works on a fix, drafts a PR, creates a one-off mobile build, and pushes it back to the team in Slack for review.
+
+<a target="_blank" href="https://linear.app/customers/coinbase">CoinBase</a> tracks autonomous operation time as a key metric: how many minutes an agent can run without a human stepping in.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=mRql2VJ99gM&pp=ygUOaW5zdGFsbCBsaW5lYXLSBwkJAwsBhyohjO8%3D">Linear agent</a>
+ verify code quality with Linear Diffs before anything gets merged.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=qaR4jRrc1Iw">VIDEO</a>:
+
+1. Install 
+1. Workflow
+1. <a target="_blank" href="https://www.youtube.com/watch?v=WE60Zgz8aL4&pp=ygUOaW5zdGFsbCBsaW5lYXI%3D">Projects</a>
+1. People/Members
+1. Link GitHub
+1. Members
+1. Issues
+1. Dependencies
+1. Target Dates
+1. Milestones
+
+<a target="_blank" href="https://www.youtube.com/watch?v=7oN7aFzfIvQ">VIDEO</a>:
+Day in the life
+
+https://www.youtube.com/watch?v=nTr21kgCFF4
+
+
+<a name="Kanban"></a>
 
 ## What's Kanban?
 

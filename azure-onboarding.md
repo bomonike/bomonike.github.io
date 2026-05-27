@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2025-03-14"
+date: "2025-03-26"
 lastchange: "v015 + from wilsonmar :azure-onboarding.md"
 file: "azure-onboarding"
 title: "Azure Onboarding"

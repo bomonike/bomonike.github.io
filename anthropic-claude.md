@@ -177,6 +177,11 @@ References:
    <br /><br />
 
 
+Claude takes to heart the "README first" philosophy popularized by Tom Preston‑Werner  (co-founder of GitHub)  
+before the AI era in a 2010 blog post.
+The software development approach is that the README be written before writing any code it describes.
+To clearly articulate the purpose for coding.
+The benefits he outlined include catching design flaws early, producing better documentation (since it's written when the idea is freshest), and creating a shared vision if you're working with others.
 
 <a name="Quizzes"></a>
 
@@ -185,7 +190,8 @@ References:
 * <a target="_blank" href="https://quizlet.com/1139139502/comprehensive-guide-to-claude-ai-features-applications-and-best-practices-flash-cards/">127 terms</a>
 * <a target="_blank" href="https://quizlet.com/1063707525/ai-fluency-claude-anthropic-flash-cards/">14 terms: "AI Fluency"</a>
 
-zzz
+* <a target="_blank" href="https://github.com/bomonike/claude-templates/tree/main/quizzes">Quizzes in my claude-templates</a> 
+
 
 <a name="Glossary"></a>
 
@@ -248,6 +254,8 @@ REMEMBER: There are several ways to pay for Claude:
 
    E. Via third-party providers Vertex or AWS Bedrock
    </ul>
+
+<a target="_blank" href="https://medium.com/@kanishks772/microsoft-couldnt-afford-claude-code-that-should-terrify-every-engineering-team-8d0cc9323883">CAUTION</a>: Flat seat licensing obscured true token consumption costs a structural gap that usage-based pricing exposes immediately at enterprise scale.
 
 
 ### Subscriptions
@@ -524,6 +532,38 @@ About Claude Code + VS Code + Local LLM:
    /Applications;~/Applications
    ```
    
+   ### Claude in Chrome Connector
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=ZewsZZ3_iQs">VIDEO</a>: 
+   Instead of copy & Pasting or use MCP, 
+   Claude can navigate, click buttons, and fill forms on Chrome for you.
+   Install the "Claude in Chrome" plugin from the Chrome Web Store:
+
+1. Install the latest version of Google Chrome browser from https://www.google.com/chrome/ in a Safari browser or in CLI:
+   ```bash
+   brew install --cask google-chrome
+   open -a "Google Chrome"
+   ```
+1. At https://claude.com/claude-for-chrome click "Add to Chrome".
+1. Connect it to your Claude account
+1. Open Chrome and click the extension icon
+1. At the <a target="_blank" href="https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn?pli=1">extension page</a> click "Add to Chrome". Confirm "Add extension". At claude.ai, "Authorize".
+1. Withdraw from install pages on Chrome.
+1. Switch to the Claude Desktop using Chrome:
+   ```bash
+   claude --chrome
+   ```
+   Alternately, inside Claude CLI:
+   ```
+   /chrome
+   ```
+   Choose the option to enable it by default.
+
+1. List Claude plugins installed to select the specific browser to use:
+   ```
+   /plugin
+   ```
+
    ### Python uv vs. pip setup
 
 1. In your repo's <tt>.gitignore</tt> file, specify folders which should not be commited into your team Git repo:
@@ -1149,24 +1189,58 @@ Alternately:
 created a set of <a target="_blank" href="https://github.com/aakashg">MIT-licensed Claude-Code assets</a> that includes
 <a target="_blank" href="https://github.com/aakashg/pm-claude-code-setup">pm-claude-code-setup</a>
 is a production-ready standalone configuration which immediately understands PM work.
-Inspired by Tom Preston‑Werner’s '''README first''' philosophy.
 It includes, in addition to LICENSE & README.md :
 <pre>
-├── CLAUDE.md              ← Master context (Claude reads this first)
+├── CLAUDE.md              ← Master context (Claude reads this first and every time)
 ├── QUICKSTART.md
 ├── .claude/skills/        ← 30+ 41 custom commands for 6 common PM tasks # trigger phrases:
-        ├── competitive-analysis/       # "analyze competitor" → smart/weak/implications framework
-        ├── launch-checklist/           # "launch checklist" → risk-scaled pre/post launch plan
-        ├── metrics-definer/            # "define metrics" → primary, guardrail, and anti-metrics
-        ├── prd-writer/                 # "write a PRD" → structured PRD with clarifying questions
-        ├── sprint-planner/             # "plan sprint" → capacity-checked sprint with risks
-        └── user-research/              # "synthesize research" → evidence-ranked findings
 ├── templates/             ← 4: Launch checklists, roadmaps, OKRs, retros
 │   ├── launch-plan.md                  # Launch planning template
 │   ├── okr-template.md                 # OKR scorecard
 │   ├── prd-template.md                 # Blank PRD structure
 │   └── sprint-review.md                # Sprint review template</pre>
 </pre>
+
+The <a href="#Skills">skills</a> and trigger phrases that activatete them, and their analytical output:
+
+| Stage | Skill/folder name  | Trigger              | Output          |
+| --- | -------------------- | -------------------- | --------------- |
+| [1] | user-research        | "synthesize research" | evidence-ranked findings |
+| [3] | competitive-analysis | "analyze competitor" | smart/weak/implications framework |
+| [3] | metrics-definer      | "define metrics" | primary, guardrail, and anti-metrics |
+| [4] | prd-writer           | "write a PRD" | structured PRD with clarifying questions |
+| [5] | sprint-planner       | "plan sprint" | capacity-checked sprint with risks |
+| [6] | launch-checklist     | "launch checklist" | risk-scaled pre/post launch plan |
+| [7] | ?                    | Code the first draft PR for the eng team |
+
+[1] user-research consists of:
+   1. Analyze customer feedback & data 
+   2. Survey and interview customers
+   3. Synthesize customer & internal feedback
+   4. Competitive Analysis
+
+Explore the solution space?
+
+Communication (stakeholder updates, Slack drafts, decision documents)
+
+Meetings (transcript processing, agenda creation, batch cleanup, effectiveness tracking)
+
+Planning (daily plans, weekly priorities, weekly reviews, all tied to your goals)
+
+[1] User research (interview processing, JTBD guides, multi-interview synthesis, debrief loops)
+
+[4] PRDs and specs (from rough idea to launch-ready doc, with multi-perspective AI review)
+
+Strategy (full strategy docs, time-boxed strategy sprints, North Star definition, prioritization frameworks)
+
+[3] Analytics (impact sizing, success metrics, activation funnels, retention cohorts, expansion revenue, experiment design)
+
+Prototyping (AI prototype generation, wireframes, feedback loops, designer handoffs)
+
+[6] Execution (launch checklists, ticket creation, competitive monitoring, initial implementation)
+
+Tool integration (connect your analytics, PM tools, and communication platforms for live data)
+
 https://github.com/aakashg/pm-github-starter-kit
 <pre>
 ├── templates/
@@ -1190,8 +1264,7 @@ https://www.news.aakashg.com/p/steal-6-of-my-claude-skills
         └── prompt-engineer
         └── status-update-writer
 </pre>
-The full <a target="_blank" href="https://www.news.aakashg.com/p/pm-os">$49/250 PM OS</a>
-PM Operating System has 41+ skills, 7 sub-agent perspectives, a complete context library, launch templates, and sprint planning workflows refined over 100+ iterations.
+The full <a target="_blank" href="https://growthpioneer.gumroad.com/l/pmos">$49</a> - <a target="_blank" href="https://www.news.aakashg.com/p/pm-os">$250 PM OS</a> PM Operating System has 41+ skills, 7 sub-agent perspectives, a complete context library, launch templates, and sprint planning workflows refined over 100+ iterations.
 <pre>
 ├── setup/                 ← Installation & first session checklist
 ├── context-library/       ← Your company info, writing styles, stakeholders

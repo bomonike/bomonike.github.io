@@ -15,37 +15,44 @@ comments: true
 created: "2025-01-11"
 ---
 
+This is a part of my <a target="_blank" href="https://bomonike.github.io/ag-tech">ag-tech</a> series.
+
 https://catdpc.docebosaas.com/t4w/learn/signin
 Caterpillar's Technicans for the World certification is <a target="_blank" href="https://catdpc.docebosaas.com/t4w/pages/49/caterpillarr-technicians-for-the-world">available in English, Arabic, Chinese, Japanese, Spanish, Portugese, French</a>
 
 ## Glossary
 
-* azimuth thrusters 
+* azimuth thrusters
 * APC = Accessory power converter receives DC voltage from the power inverter and supplies it to the HVAC compressor and machine batteries. The APC also monitors the machine frame for ground fault conditions.
 * CWL = Compact wheel loader |  have fully electric systems
 * ECM = electronic control modules
-GPIC = Generator Power Inverter Control
-MPIC = Motor Power Inverter Control
+* MPIC = Motor Power Inverter Control
 * EMD = Electro-Mechanical Drive
 *  Energy Time Shift Module (ETSM) | Charges during the day and discharges at night, minimizing reliance on carbon-intense fuels and grid supply.  Contains lithium-ion batteries for energy storage.
-* gensets | Provides supplemental power when renewable energy sources are not producing at full capacity.
-*  Grid Stability Module (GSM) | Helps remote sites and firing of grid facilities to overcome large load steps, enabling high penetration levels of renewable energy.  Contains lithium-ion batteries for energy storage, with optional ultracapacitors for short duration, high-power output to support momentary load charges.
-* IGBT = insulated-gate bipolar transistor inverters (3). 
+
+* gensets = generator sets | Provides supplemental power when renewable energy sources are not producing at full capacity.
+* GPIC = Generator Power Inverter Control
+* GSM = Grid Stability Module | Helps remote sites and firing of grid facilities to overcome large load steps, enabling high penetration levels of renewable energy.  Contains lithium-ion batteries for energy storage, with optional ultracapacitors for short duration, high-power output to support momentary load charges.
+
+* IGBT = insulated-gate bipolar transistor inverters
 * LHD = Load-Haul-Dump (model)
-* Microgrid Master Controller (MMC) | Allows operators to precisely control and monitor microgrid system energy.
-* NG output | Current produced by the alternator is sent to the electrical locker with a cabinet of insulated-gate bipolar transistor (IGBT) inverters (3).  These are supplied with rectified MG output. 
+
+* MMC = Microgrid Master Controller | Allows operators to precisely control and monitor microgrid system energy.
+* NG output | Current produced by the alternator is sent to the electrical locker with a cabinet of insulated-gate bipolar transistor (IGBT) inverters (3).  These are supplied with rectified MG output.
 
 * OHT = Off-Highway Truck | The 795F AC OHT has an electric drive power train. The engine drives a generator (6) through a drive shaft. Three phase AC electrical current produced by the generator is sent to the inverter cabinet (7) through high voltage cables. The power inverter rectifies the three phase AC current to DC current. The DC power is then inverted back to variable frequency AC, which can be regulated to adjust machine speed. The AC power is transmitted to the traction motors (8). The traction motors convert the electrical energy from the inverter cabinet to rotating mechanical energy. The traction motors are connected to the final drives, which propel the rear wheels. The 795F electric drive is also equipped with a retarding grid (9), which places a resistive load on the traction motors to help slow the motor speed and the wheel speed.
 
 * PIC = power inverter control | controls the flow of generator output current into the power inverter, as commanded by the machine ECM.
-* pentograph 
+* pentograph
+
 * SPM = Screed Power Module | Screeds have a tractor-integrated generator driven by the engines of F-series asphalt pavers to power the screed heaters.
-* SR 
-* switched reluctance (SR) generator (2). In the D6 XE track-type tractor, 
+* SR
+* switched reluctance (SR) generator (2). In the D6 XE track-type tractor,
+
 * versatile power system (VPS)
 * WHL = WHEEL LOADER | The 938M WHL has a hydrostatic power train hydraulic motors to transfer power to a transmission (5). The transmission controls the output speed, direction and torque of the power delivered to the remainder of the power train, as previously described with the mechanical power train. These applications also utilize drive shafts, differentials, and final drives similar to machines with a mechanical power train.
 
-During retarding mode, traction motors are used to generate power and deliver power to the inverter cabinet. 
+During retarding mode, traction motors are used to generate power and deliver power to the inverter cabinet.
 The power generated is the result of the energy required to maintain or reduce the machine speed while traveling downhill. The inverter cabinet rectifies the three-phase AC from the traction motors to DC. This DC power is delivered to the retarding grid (6).  The retarding grid dissipates the electric power in the form of heat.
 
 ## Social Media
@@ -221,12 +228,12 @@ Refer to the <a target="_blank" href="https://catdealer.com/">catdealer.com</a> 
 
 2018 and after:
 
-* Model 140GC motor grader has a PIN with a prefix followed by a unique number for each machine built. 
-The 140GC shown has the prefix W92, and each machine has a different number, or suffix, following the prefix. 
+* Model 140GC motor grader has a PIN with a prefix followed by a unique number for each machine built.
+The 140GC shown has the prefix W92, and each machine has a different number, or suffix, following the prefix.
 The 140GC also contains an engine and transmission.  This 140GC identification plate contains the model number, serial number, and arrangement number for the engine and transmission.
 * "1" is the machine family (1 being the motor grader family)
 * "40" is the machine size
-* "GC" is the value segment identifier focused on cost per hour and have the lowest cost of downtime/affordability of the Lifecycle Value segment. Customers see these machines as providing an exceptional value proposition for the applications and markets where they are designed to compete. 
+* "GC" is the value segment identifier focused on cost per hour and have the lowest cost of downtime/affordability of the Lifecycle Value segment. Customers see these machines as providing an exceptional value proposition for the applications and markets where they are designed to compete.
 
    Alternately, "XE" is a value segment identifier for Cat premium products with advanced technology where significant additional customer value is offered -- include a specific breakthrough technological advancement that is clearly differentiating in the industry and provides dramatic benefits to our customers' owning and operating costs.
 
@@ -234,7 +241,7 @@ The 140GC also contains an engine and transmission.  This 140GC identification p
 * A serial number is used to identify the major components in the machine.
 * A build number to identify the standard features on the machine. The build number '01' would be the letter designation and 'A' would be the Annual Product Update (APU) that it has. This numbering system gives each machine a unique number.
 
-* Refer to SEBU5596 for the PIN plate locations for all machines, or 
+* Refer to SEBU5596 for the PIN plate locations for all machines, or
 * refer to its Operation and Maintenance Manual (OMM) found in Cat's Service Information System (SIS).
 
 <a target="_blank" href="https://www.cat.com/en_US/products/new/equipment/articulated-trucks.html">Articulated trucks</a> are designed to haul materials in poor underfoot conditions on shorter hauls and steeper grades.
@@ -261,7 +268,7 @@ Utilities installation
    Centers only swings from side to side around a center point at the middle of the machine's rear. The backhoe cannot slide from side to side along the rear of the machine.
    * Side Shift Backhoe can be used in close quarters with walls, fences, and other equipment as it goes about its work. (422F2, 427F2, 428F2, 432F2, 434F2, 444F2)
 
-Compact Track Loader (239D3, 249D3, 259D3) for 
+Compact Track Loader (239D3, 249D3, 259D3) for
 Adding soil layers over patios, sidewalks, and other areas
 Final grading
 Landscaping
@@ -272,14 +279,14 @@ Spread filling and back filling
 Stockpiling
 Truck loading
 
-Multi-Terrain Track Loader (257D3, 277D, 279D3, 287D, 289D3, 297D2 XHP, 299D3, 399D3), 
+Multi-Terrain Track Loader (257D3, 277D, 279D3, 287D, 289D3, 297D2 XHP, 299D3, 399D3),
    * XHP = Xtra Hydraulic Power
 
 Skid Steer Loader (226D3, 232D3, 236D3, 242D3, 246D3, 262D3, 272D3, 272D3XE)
 
 Landfill (816K, 826K, 836K) - Three wheel and tip configurations: paddle tip, plus tip, combination tip
 
-Soil Compactors (815K, 825K) to handle waste & spread materials. features 
+Soil Compactors (815K, 825K) to handle waste & spread materials. features
 Articulated frame
 Cleaner bars
 Tamping wheels with tips in a chevron pattern
@@ -475,7 +482,7 @@ The basic functions of the power train are to:
 * Provide a means for reverse
 * Equalize power distribution to the final drives (enables the vehicle to turn)
 
-There are three primary types of power trains; mechanical, hydrostatic, and electric. 
+There are three primary types of power trains; mechanical, hydrostatic, and electric.
 Mechanical power train is the most commonly used in Cat machines.
 In a mechanical power train, power from the engine (1) is transferred through a coupling (2) (clutch or torque converter) to the transmission (3). From the transmission, power is transferred through the drive line (4) to the differential (5), final drives (6), and to the wheels or tracks.
 
@@ -499,7 +506,7 @@ The chain drive provides no slippage, can handle high loads, and allows distance
 
 Differential | transmits power through the axles to the final drive and wheels or tracks while allowing each wheel to rotate at a different speed when required. During a turn, the inside wheel may turn slower than the outside wheel.
 
-Countershaft | A power shift 
+Countershaft | A power shift
 
 
 Final drive connects power to the wheels or tracks and helps the other power train components convert the engine speed into torque, allowing the machine to push or pull extremely heavy loads. Final Drives can be single reduction or double reduction depending on the application.
@@ -682,3 +689,12 @@ The Engine Control Module (ECM) is a critical component that requires programmin
 
 
 * https://www.youtube.com/watch?v=0vbTkRvFa80 ECM on fuel-injector Harleys
+
+## Electrification
+
+https://catdpc.docebosaas.com/t4w/learn/learning-plans/1/technicians-for-the-world-english/courses/5629/t4w-introduction-to-electrification-technology/lessons/10666:223/t4w-fet01-introduction-to-electrification-technology-english
+
+At Caterpillar, electrification is defined as "making a machine, product, or system operate using electricity when it did not before."
+
+Electrification, along with high-efficiency energy conversion, is one of five key pillars in Caterpillar's technology strategy.  Electrified equipment, in the right application, can benefit customers in each major industry segment through fuel savings, increased environmental sustainability, greater durability, and higher productivity.  Since the customer value proposition is quite diverse, so is the range of solutions.
+

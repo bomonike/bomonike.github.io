@@ -1,8 +1,8 @@
 ---
 layout: post
 url: https://bomonike.github.io/genai-ide
-date: "2025-03-01"
-lastchange: "v004 + Criteria :genai-ide.md"
+date: "2025-04-26"
+lastchange: "v005 Claude & Firebase :genai-ide.md"
 file: "genai-ide"
 title: "genai-ide"
 excerpt: "Here is how to select and use GenAI to speed up your programming effectiveness."
@@ -29,7 +29,8 @@ Coding agents have made impressive progress on SWE-bench, with top scoring agent
    * OpenAI GPT-4
    * Windsurf
    * Cursor
-   
+
+   * <a href="#Firebase">Google Firebase Studio</a> online
 
 <a target="_blank" href="https://www.youtube.com/watch?v=XaOqSAXNkaM">SourcegrphCody's context fetching:<br />
 <img alt="genai-cody-flow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1738733609/genai-cody-flow_hipplt.png" /></a>
@@ -174,6 +175,13 @@ Their test measured the code generation capability of LLM models by using 164 pr
 
 
 https://www.linkedin.com/pulse/new-roles-developer-ai-assisted-workflows-github-copilot-ajit-jaokar-j6nie/
+
+
+<a name="Windsurf"></a>
+
+## Windsurf
+
+https://www.youtube.com/watch?v=5Z0RCxDZdrE
 
 
 ## Dictation (Speech To Text)
@@ -458,3 +466,19 @@ President at Anthropic
 https://www.youtube.com/watch?v=gXAq-EXEgec
  Groq on Generative AI: Challenges, Opportunities, and Solutions
 Groq
+
+<a name="Firebase"></a>
+
+## Firebase Studio
+
+<a target="_blank" href="https://firebase.google.com/studio">Google Firebase Studio</a> online
+
+https://www.linkedin.com/pulse/11-reasons-developers-switching-firebase-studio-2025-deepak-bhandari-pv9tf/?trackingId=CCRTUvZVSvuFKdVuyVbCLQ%3D%3D
+This may read like it was written by a salesman with too much coffee like those hocking supplements. Nevertheless, I encourage you to consider https://firebase.studio/
+not just for the cool "productivity" aspects but to see the _integration_ -- how Google's ad empire riches has enable its AI innovations - cloud, Gemini LLM, Firebase Android app development, and Workspace apps working together.
+https://cloud.google.com/blog/products/application-development/firebase-studio-lets-you-build-full-stack-ai-apps-with-gemini
+Remember that using integrated ecosystems inevitably limit choice. If your idea of fun is the fight to integrate disparate tech together (building a Frankenstein) this isn't for you.
+
+https://medium.com/@babhijitbansode/roadmap-to-earn-genai-l400-skill-badge-by-google-0c377e1687d1
+
+* https://www.reddit.com/r/Firebase/

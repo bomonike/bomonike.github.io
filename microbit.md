@@ -1,6 +1,25 @@
+---
+layout: post
+date: "2025-08-01"
+lastchange: "v018 + remove CMSSIS-DAP :2024-09-12-microbit.md"
+url: "https://wilsonmar.github.io/microbit"
+file: "microbit"
+title: "Microbit"
+excerpt: "How to use the UK-based Micro:bit hardware to learn Python programming of IoT devices"
+tags: [IoT, Python]
+image:
+# pic silver robot white skin handshake 1900x500
+  feature: https://cloud.githubusercontent.com/assets/300046/14622149/306629f0-0585-11e6-961a-dc8f60dadbf6.jpg
+  credit:
+  creditlink:
+comments: true
+created: "2024-09-12"
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
 
-<a target="_blank" href="https://bomonike.github.io/microbit"><img align="right" width="100" height="100" alt="microbit.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/microbit.png?raw=true" />
-This is at https://bomonike.github.io/microbit
+This is at https://wilsonmar.github.io/microbit
 
 This is part of a series about low-cost, low-power SOC (System on a Chip) microcontrollers (MCUs):
 
@@ -9,6 +28,7 @@ This is part of a series about low-cost, low-power SOC (System on a Chip) microc
 * <a target="_blank" href="https://bomonike.github.io/esp332/">ESP32</a>
 * <a target="_blank" href="https://bomonike.github.io/microbit/">micro:bit</a>
 * <a target="_blank" href="https://bomonike.github.io/zima/">zima</a>
+* <a target="_blank" href="https://bomonike.github.io/firia/">Firia Labs</a>
 
 https://microbit.org/code/
 
@@ -496,3 +516,11 @@ See https://learn.parallax.com/node/2681
 https://www.youtube.com/watch?v=mUOAQRa17T4
 MDeLuise/plant-it
 self-hosted, open source gardening companion
+
+## Remove CMSIS-DAP
+
+If you are no longer using Microbit on a particular machine, don't leave the connection active.
+
+
+
+In browsers or WebUSB contexts, you can "forget" paired devices. For example, in Chrome you can click the lock icon in the address bar when on a relevant page and uncheck or remove "BBC micro:bit CMSIS-DAP" or "DAPLink CMSIS-DAP" from the USB device list to disconnect it from web applications.
