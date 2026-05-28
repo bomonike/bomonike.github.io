@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-24"
-lastchange: "26-05-24 v048 pm os @anthropic-claude.md"
+date: "2026-05-28"
+lastchange: "26-05-28 v049 brock @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -3569,6 +3569,20 @@ If more detail is needed, user will ask.
 </pre>
 
 https://github.com/AnastasiyaW/claude-code-config/blob/main/CLAUDE.md
+
+https://brockster6202.gumroad.com/
+* Claude Routine Setup Guide
+* 5 Live Artifacts Prompts
+* The Leaked Prompts Vault
+* Claude Cowork Plugins - Free Resource Guide
+* 5 Claude Code Hacks (Cheat Sheet)
+* GStack: The YC CEO's AI Engineering Team
+* HTML Over Markdown Explained
+* 380+ Free Claude Cowork Skills
+* 9 Claude Cowork Skills I Can’t Live Without (steal them)
+* Claude Cowork x Higgsfield Plugin
+* 15 Claude Cowork Skills I Can’t Live Without (steal them)
+
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
