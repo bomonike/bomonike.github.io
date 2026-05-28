@@ -89,6 +89,41 @@ Install from https://jitl.jp/packet-tracer redirects to
 * <a target="_blank" href="https://www.youtube.com/watch?v=jW5GhNhBReA">@DavidBombal 008 Build a network with me for free using Cisco Packet Tracer</a>
 * <a target="_blank" href="https://www.youtube.com/watch?v=EdsLU9oBudg">@DavidBombal 009 Build a Web Server network for free using Cisco Packet Tracer</a>
 
+## Firewall
+
+<a target="_blank" href="https://www.linkedin.com/pulse/taking-control-outbound-network-requests-macos-nino-bilic-iztcc/">BLOG</a>:
+To block malware from sending data home.
+
+Firewalls built-in to macOS are turned OFF by default. Turning the application-level firewall at Settings > Network > Firewall <strong>only blocks incoming</strong> (not outgoing) traffic and only “per installed app”.
+
+Apple's ScreenTime may stop you from using these because it needs access to the internet.
+
+The 3 installable macOS firewall options:
+
+1. Little Snitch at <a target="_blank" href="https://www.obdev.at/products/index.html">obdev.at/products</a> has a full $59 edition for a single machine and $115 for a family license. It comes with community-maintained blocklists and provides <a target="_blank" href="https://www.obdev.at/products/littlesnitch/whatsnew.html">graphic insight into network traffic</a>. The free edition (Little Snitch Mini) does not provide alerts / blocking of new outgoing network requests. NOTE: This is not the same as <a target="_blank" href="https://github.com/karol-broda/snitch">github.com/karol-broda/snitch</a> "friendlier ss / netstat".
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=K-FSfjLVno4&pp=ygUNTGl0dGxlIFNuaXRjaA%3D%3D">by Sun Knudsen</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_0EiqiPuR4Q&pp=ygUNTGl0dGxlIFNuaXRjaA%3D%3D">by Naomi Brockwell</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=1g0RzOGxe40&t=430s&pp=ygUNTGl0dGxlIFNuaXRjaA%3D%3D">How to make your Mac PRIVATE</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=X3TUGnYSu3s&pp=ygUNTGl0dGxlIFNuaXRjaA%3D%3D">"I tried both" by Paperclock</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=pBPuIJvahhI&pp=ygUNTGl0dGxlIFNuaXRjaA%3D%3D">by AimApple</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=pzLGIEGStTg&pp=ygUNTGl0dGxlIFNuaXRjaA%3D%3D">by Student App Centre</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=kqleA9QLp0Y&pp=ygUNTGl0dGxlIFNuaXRjaA%3D%3D">by DistroTesster</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=0zwt_mi0thM&pp=ygUNTGl0dGxlIFNuaXRjaA%3D%3D">by Practical</a>
+   <br /><br />
+
+2. <a target="_blank" href="https://radiosilenceapp.com/">Radio Silence app</a> is simple to use. It's $9 with a 24-hour trial.
+
+2. The native <tt>pfctl</tt> needs custom rules to block outbound traffic while leaving inbound untouched, but that requires careful rule writing.
+
+2. Lulu at https://objective-see.org/products/lulu.html is free.
+
+4. The native CLI command <tt>pf</tt> packet filter is rule-based and usually blocks outbound by IP, port, or interface — not by app name. See https://www.wavether.com/2016/11/pf-firewall-macos-jetbrains
+
+
+
+
+
 
 ## Wireless
 
