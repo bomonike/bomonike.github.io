@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-26"
-lastchange: "26-05-26 v026 joes @museums-roadtrip-usa.md"
+date: "2026-05-29"
+lastchange: "26-05-29 v027 ny hidden @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -557,18 +557,21 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>FAO Schwarz toy store</li>
 <li>TKTS Times Square (for less popular Broadway show tickets)</li>
 <li>Museum of Broadway</li>
-<li>Bryant Park booths & ice skating</li>
+<li>Bryant Park booths & ice skating, bathroom, New York public library</li>
+<li>Greenacre Park waterfall</li>
 <li>Grand Central Terminal</li>
 
-<li>Penn Station, NY Pizza Suprema</li>
-<li>Macy's</li>
+<li>New Yorker Hotel 8th Ave Nicilas Tesla museum room 3327 <a target="_blank" href="https://www.youtube.com/watch?v=ZYJj3IdHd3k">VIDEO</a></li>
+<li>Penn Station 3pm line, NY Pizza Suprema</li>
+<li>Macy's 9th floor wooden elevator</li>
 <li>Empire State Building</li>
 <li><a target="_blank" href="https://www.morganlibrary.org/">Morgan Library</a></li>
-<li>United Nations</li>
+<li>United Nations, Ploughshares garden</li>
 
 <li>Chelsea Piers, Pier 57, Chelsea Market</li>
 <li>Flatiron building</li>
 <li type="circle">Eleven Madison Park (3-star Michelin restaurant)</li>
+<li>Ghostbusters firehouse 14 N Moore St Tribeca</li>
 
 <li><a target="_blank" href="https://www.rmanyc.org/">Rubin Museum of Art: Art of the Himalayas</a></li>
 <li><a target="_blank" href="https://momath.org/visit/">National Museum of Mathematics</a></li>
@@ -579,11 +582,15 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 ### New York City (Manhattan Lower East Side)
 
 <ul>
+<li>secret sushi</li>
 <li>McSorley's Old Ale House</li>
 <li>Russ & Daughters & Katz's Delicatessen</li>
 <li>Mulberry Street ("Little Italy")</li>
 <li type="circle">Joe's Shanghai (dumplings), Chinatown (<a target="_blank" href="https://www.youtube.com/watch?v=Ybaz2bF9YSY&t=4816s">VIDEO</a>)</li>
 <li>Museum of Chinese in America</li>
+<li>Olfactory art Keller 25 Henry (bricks)</a>
+<li>Rudolph de Harak Digital Clock above Starbucks 127 John St <a target="_blank" href="https://www.youtube.com/watch?v=OyJmHTYn-Z4&t=2m26s">VIDEO</a></li>
+<li>Jerry's Rocket garage sale 247 W 16th St Chelsea<a target="_blank" href="https://www.youtube.com/watch?v=vLrzD1eF4PQ&t=24s">VIDEO</a></li>
 <li>Tenement Museum</li>
 <li>Occulus station (Apple Store), 9/11 Museum, World Trade Center</li>
 <li>Brooklyn Bridge (built 1883)</li>
@@ -605,6 +612,9 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li type="circle"><a target="_blank" href="https://www.opentable.com/river-cafe-brooklyn">River Cafe</a> (Jackets required of men) </li>
 <li><a target="_blank" href="https://www.brooklynmuseum.org/">Brooklyn Museum of Art</a></li>
 <li><a target="_blank" href="https://www.brooklynx.org/rotunda/default.asp">Rotunda Gallery</a></li>
+<li>Captain America statue</li>
+<li>Superhero Supply Co</li>
+<li>Tom's Diner from Seinfeld</li>
 </ul>
 
 <ul>
