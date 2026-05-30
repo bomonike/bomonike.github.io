@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-29"
-lastchange: "26-05-29 v027 ny hidden @museums-roadtrip-usa.md"
+date: "2026-05-30"
+lastchange: "26-05-30 v028 ny hidden @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -514,7 +514,7 @@ John F. Kennedy Presidential Library and Museum</a>, Columbia Point, Boston</li>
 
 <a name="NY"></a>
 
-> <strong> New York </strong>
+> <a target="_blank" href="https://www.atlasobscura.com/things-to-do/new-york-state"><strong> New York state:</strong></a>
 
 <ul>
 <li><a target="_blank" href="https://www.fdrlibrary.marist.edu/">
@@ -555,7 +555,8 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>Radio City Music Hall, Top of The Rock</li>
 <li>Summit One Vanderbilt @ 45 E 42nd St</li>
 <li>FAO Schwarz toy store</li>
-<li>TKTS Times Square (for less popular Broadway show tickets)</li>
+<li>TKTS Times Square (for less popular Broadway show tickets), midnight show</li>
+<li><a target="_blank" href="https://www.atlasobscura.com/places/national-debt-clock">National Debt Clock</a> 132 W 43rd St</li>
 <li>Museum of Broadway</li>
 <li>Bryant Park booths & ice skating, bathroom, New York public library</li>
 <li>Greenacre Park waterfall</li>
