@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-30"
-lastchange: "26-05-30 v028 ny hidden @museums-roadtrip-usa.md"
+lastchange: "26-05-30 v030 html fixes @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -40,7 +40,7 @@ The US is only one of two countries in the world still stuck on the imperial sys
 
 ## Divisions and Dividers
 
-<a target="_blank" href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States"><img src="svg/us_census_regions.svg" /></a>
+<a target="_blank" href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States"><img alt="US Regions" src="svg/us_census_regions.svg" /></a>
    * "New England" states are: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont.
    * "Mid-Atlantic" states are New York, New Jersey, and Pennsylvania.
    <br /><br />
@@ -155,7 +155,7 @@ I-95 runs along the East Coast is the longest and busiest major U.S. highway.
 American cruise ship crews use "I-95" as slang for the main behind-the-scenes route running bow to stern. The corridor connects crew areas across the ship, including cabins, kitchens, storage, and workspaces. It lets crew move quickly without crossing guest areas. That keeps operations smooth and keeps passenger spaces quieter and less crowded.
 
 
-### Most scenic drives in America
+### Most Scenic Drives in America
 
 <a target="_blank" href="https://scenicbyways.info">scenicbyways.info</a>
 
@@ -336,7 +336,7 @@ The ride stopped on May 14 in Anniston, Alabama where their bus was burnt by seg
 <li><a target="_blank" href="https://www.farnsworthmuseum.org/">Farnsworth Art Museum</a>, Rockland</li>
 <li><a target="_blank" href="https://umaine.edu/hudsonmuseum/">Hudson Museum at the University of Maine</a>, Orono</li>
 <li><a target="_blank" href="https://www.portlandmuseum.org/">Portland Museum of Art</a></li>
-<li><strike>University of Maine Museum of Art</strike>, Orono</li>
+<li>University of Maine Museum of Art, Orono</li>
 <li><a target="_blank" href="https://www.mainememory.net/artifact/8707">Artemus Ward House</a>, Waterford Maine</li>
 <li type="circle">Maple syrup creamies!</li>
 </ul>
@@ -395,7 +395,7 @@ John F. Kennedy Presidential Library and Museum</a>, Columbia Point, Boston</li>
 <li><a target="_blank" href="https://www.museumofbadart.org/">Museum of Bad Art</a>, Dedham</li>
 <li><a target="_blank" href="https://www.bc.edu/bc_org/avp/cas/artmuseum/">McMullen Museum of Art at Boston College</a>, Chestnut Hill</li>
 <li><a target="_blank" href="https://www.wellesley.edu/DavisMuseum/">Davis Museum and Cultural Center at Wellesley College</a>, in Wellesley, MA</li>
-<li><strike>Danforth Museum of Art</strike>, Framingham</li>
+<li><del>Danforth Museum of Art</del>, Framingham</li>
 <li><a target="_blank" href="https://www.worcesterart.org/">Worcester Art Museum</a></li>
 <li><a target="_blank" href="https://www.osv.org/"><strong>Old Sturbridge Village</strong></a></li>
 <li><a target="_blank" href="https://www.nrm.org/"><strong>Norman Rockwell Museum</strong></a>, Stockbridge</li>
@@ -561,6 +561,7 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>Bryant Park booths & ice skating, bathroom, New York public library</li>
 <li>Greenacre Park waterfall</li>
 <li>Grand Central Terminal</li>
+<li>SOHO (South of Houston street)</li>
 
 <li>New Yorker Hotel 8th Ave Nicilas Tesla museum room 3327 <a target="_blank" href="https://www.youtube.com/watch?v=ZYJj3IdHd3k">VIDEO</a></li>
 <li>Penn Station 3pm line, NY Pizza Suprema</li>
@@ -589,7 +590,7 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>Mulberry Street ("Little Italy")</li>
 <li type="circle">Joe's Shanghai (dumplings), Chinatown (<a target="_blank" href="https://www.youtube.com/watch?v=Ybaz2bF9YSY&t=4816s">VIDEO</a>)</li>
 <li>Museum of Chinese in America</li>
-<li>Olfactory art Keller 25 Henry (bricks)</a>
+<li>Olfactory art Keller 25 Henry (bricks)</li>
 <li>Rudolph de Harak Digital Clock above Starbucks 127 John St <a target="_blank" href="https://www.youtube.com/watch?v=OyJmHTYn-Z4&t=2m26s">VIDEO</a></li>
 <li>Jerry's Rocket garage sale 247 W 16th St Chelsea<a target="_blank" href="https://www.youtube.com/watch?v=vLrzD1eF4PQ&t=24s">VIDEO</a></li>
 <li>Tenement Museum</li>
@@ -616,9 +617,7 @@ Franklin D. Roosevelt Presidential Library and Museum</a>, Hyde Park</li>
 <li>Captain America statue</li>
 <li>Superhero Supply Co</li>
 <li>Tom's Diner from Seinfeld</li>
-</ul>
 
-<ul>
 <li><a target="_blank" href="https://www.alternativemuseum.org/">Alternative Museum</a></li>
 <li><a target="_blank" href="https://www.folkartmuseum.org/">American Folk Art Museum</a></li>
 <li><a target="_blank" href="https://ndm.si.edu/">Cooper-Hewitt, National Design Museum</a></li>
@@ -1247,7 +1246,7 @@ The <a target="_blank" href="https://www.wikiwand.com/en/Lonesome_Dove_(miniseri
 
 ## Journey down the Pan American Highway
 
-<a target="_blank" href="https://www.wikiwand.com/en/Pan-American_Highway"><img align="right" width="200" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Pan-american-hwy-north-1.jpg"></a>
+<a target="_blank" href="https://www.wikiwand.com/en/Pan-American_Highway"><img align="right" width="200" alt="Pan Am map" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Pan-american-hwy-north-1.jpg"></a>
 <a target="_blank" href="https://www.youtube.com/watch?v=oS7cKjBjQCQ">VIDEO</a>:
 The longest road in the world is the 30,000 km (19,000 miles) of the Pan American Highway.
 
@@ -2234,7 +2233,7 @@ here we begin from Oklahoma and take a long detour North to avoid too much deser
 
 
 
-## All the sights
+## All the Sights
 
 In addition to "museums", also included here are grand natural sights:
 
