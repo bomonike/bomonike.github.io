@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-30"
-lastchange: "26-05-30 v031 fixes @history.md"
+lastchange: "26-05-30 v032 auto fixes @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -43,14 +43,14 @@ Over the years, I reference this page when watching documentaries, traveling to 
 
 ## About the Future
 
-> "... the sons of Issachar had understanding of the times, to know what Israel ought to do,&#8221; <a target="bible" href="https://www.blueletterbible.org/kjv/1ch/12/32/s_350032"><nobr>--1 Chronicles 12:32</nobr> (KJV)</a>
+> "... the sons of Issachar had understanding of the times, to know what Israel ought to do,&#8221; <a target="bible" href="https://www.blueletterbible.org/kjv/1ch/12/32/s_350032"><span style="white-space:nowrap">--1 Chronicles 12:32</span> (KJV)</a>
 
 > "I like the dreams of the future better than the history of the past.&#8221;
-<nobr>--Thomas Jefferson</nobr>
+<span style="white-space:nowrap">--Thomas Jefferson</span>
 
-> "We celebrate the past to awaken the future."<nobr>--John F. Kennedy, August 14, 1960</nobr>
+> "We celebrate the past to awaken the future."<span style="white-space:nowrap">--John F. Kennedy, August 14, 1960</span>
 
-> "Trying to plan for the future without regard for the past is like trying to plant cut flowers."<nobr>--Daniel Boorstin, Historian</nobr>
+> "Trying to plan for the future without regard for the past is like trying to plant cut flowers."<span style="white-space:nowrap">--Daniel Boorstin, Historian</span>
 
 
 ## Jokes and Quotes
@@ -81,16 +81,16 @@ What are the most significant events in world history, and what do they tell us 
 
 It turns out I found one ancient book that has been proven to be a reliable chronicle: the "Judeon-Christian" Bible (66 Old and 44 New Testament books) which were written in several languages in the ancient Hebrew Masoretic Text, the <em lang="gr">Textus Receptus</em> in <em lang="gr">koine</em> (common) Greek, Aramaic. Over the years, various translations have been created for different audiences over the world. This article is written for reading online by readers of English. Underlined links to passages referenced in the Bible are presented by the <a target="_blank" href="https://BlueLetterBible.org/">BlueLetterBible.org</a>. Readers can select from among several translations in English:
 
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694505960/history-bibles-2711x398_a8jjgt.png"><img alt="history-bibles.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694505960/history-bibles-2711x398_a8jjgt.png" width="100%" /></a>
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1694505960/history-bibles-2711x398_a8jjgt.png"><img alt="Comparison of Bible translations in English" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1694505960/history-bibles-2711x398_a8jjgt.png" width="2711" height="398" style="width:100%;height:auto" loading="lazy" /></a>
 
-The default here is the King James Version (KJV) of the Bible from 1611 Anglican England. The KJV is in the public domain and is considered by many to be the most accurate translation of the original Hebrew Masoretic Text and Greek <em lang="gr">Textus Receptus</em>. The BlueLetterBible.org site also provides a concordance of where each (of 6,000) words is referenced. There are also commentaries to help readers better understand the original meaning of the words and concepts in the Bible.
+The default here is the King James Version (KJV) of the Bible from <a href="#Y1611">1611</a> Anglican England. The KJV is in the public domain and is considered by many to be the most accurate translation of the original Hebrew Masoretic Text and Greek <em lang="gr">Textus Receptus</em>. The BlueLetterBible.org site also provides a concordance of where each (of 6,000) words is referenced. There are also commentaries to help readers better understand the original meaning of the words and concepts in the Bible.
 
 
 ### Timeline of History?
 
 <a href="#Other+Timelines">Several</a> have deduced timelines presenting the most significant events. Below is one version <a target="_blank" href="https://www.youtube.com/watch?v=IJlIcmiz0fs">from CJ Lovik</a>, which have not come true:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1693191201/bible-countdown_lc6rw5.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1693191201/bible-countdown_lc6rw5.png" alt="Bible Countdown" width="100%" /><em>Click image for full screen</em></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1693191201/bible-countdown_lc6rw5.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1693191201/bible-countdown_lc6rw5.png" alt="Bible Countdown timeline diagram" width="100%" style="height:auto" loading="lazy" /><em>Click image for full screen</em></a>
 
 The above diagram got wrong the beginning of "70th Week of Daniel" (7 years of Tribulation) when the al-Madhi rules the world (<a target="_blank" href="https://www.blueletterbible.org/kjv/dan/9/27/s_859027">Dan 9:27</a>; <a target="bible" href="https://www.blueletterbible.org/kjv/rev/6/1/s_1173001">Rev 6:1-19?</a>.
 
@@ -163,7 +163,7 @@ To understand the various events in world history, it helps to have some context
 
 1.  One day is as a thousand years
 
-    "... one day is with the Lord as a thousand years, and a thousand years as one day" &#151;<a target="bible" href="https://www.blueletterbible.org/kjv/psa/90/4/s_568004">Psalm 90:4 (NKJ)</a> &amp; <a target="bible" href="https://www.blueletterbible.org/kjv/2pe/3/8/s_1159008">2nd Peter 3:8 (NKJ)</a>
+    "... one day is with the Lord as a thousand years, and a thousand years as one day" &#8212;<a target="bible" href="https://www.blueletterbible.org/kjv/psa/90/4/s_568004">Psalm 90:4 (NKJ)</a> &amp; <a target="bible" href="https://www.blueletterbible.org/kjv/2pe/3/8/s_1159008">2nd Peter 3:8 (NKJ)</a>
 
 1.  Ancient calendars around the world initially used a <a target="_blank" href="https://360dayyear.com/">360-day calendar</a> without leap years and 5 extra days (in 31-day months) to make the cycle of seasons uniformity on the <a target="_blank" href="https://www.wikiwand.com/en/Equinox">equinoxes</a> of 20 March and 23 September -- when daytime and nighttime are of equal duration.
 
@@ -187,7 +187,7 @@ To understand the various events in world history, it helps to have some context
 
 1.  The 70th week of Daniel (7 years of Tribulation). See <a target="_blank" href="https://www.youtube.com/watch?v=JyZkvtjGOh8">Ron Wyatt’s Red Sea Discoveries</a> and <a target="_blank" href="https://www.youtube.com/watch?v=ehgdgVblCyE">Talmud</a> <a target="_blank" href="https://www.wikiwand.com/en/Talmud">Talmud</a>
 
-1.  A pivotal basis for an important prediction is "when the sacrifice cease". <a target="_blank" href="">This video</a> points out that it refers not in the plural (sacrifices of the Tabernacle system), but singluar -- of Christ's sacrifice.
+1.  A pivotal basis for an important prediction is "when the sacrifice cease". This video points out that it refers not in the plural (sacrifices of the Tabernacle system), but singluar -- of Christ's sacrifice.
 
 1.  Many are concerned about the "Mark of the Beast" (666) an how those who take it will be condemned to hell.
 
@@ -272,17 +272,17 @@ References:
 
 ## PreHistory (Geologic Time)
 
-<table border="1" cellpadding="4" cellspacing="0">
-<tr valign="top"><td>Precambrian</td><td>-4.6 Billion years</td></tr>
-<tr valign="top"><td>Cambrian</td><td>-570 million years (<a target="_blank" href="https://www.youtube.com/watch?v=pkHpHwoL_iw">Peking Man, Java Man</a>)</td></tr>
-<tr valign="top"><td>Mesozoic</td><td>-225 million years (dinosaurs)</td></tr>
-<tr valign="top"><td>Holocene</td><td>-10,000 BC</td></tr>
-<tr valign="top"><td><a target="_blank" href="https://en.wikipedia.org/wiki/Paleolithic">Paleolithic (Old Stone Age)</a></td><td>50,000 years ago,<br />40,000 BC in Australia & Japan,<br />27,000 BC Siberia</td></tr>
-<tr valign="top"><td><a target="_blank" href="https://en.wikipedia.org/wiki/Neolithic">Neolithic</a> (New Stone Age)</td><td>15,000 Wall paintings made in caves at Lascaux, France and Altamira, Spain.<br />12,000 BC with cereals farming in the Levant</td></tr>
-<tr valign="top"><td>Calcolitic (Copper-Stone)</td><td>6500 BC in Eastern Anatolia,<br /><a href="#Creation">5176/4114/4004 BC - Biblical Creation</a>
+<table style="border:1px solid #999;border-collapse:collapse;">
+<tr style="vertical-align:top;"><td style="padding:4px;">Precambrian</td><td style="padding:4px;">-4.6 Billion years</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;">Cambrian</td><td style="padding:4px;">-570 million years (<a target="_blank" href="https://www.youtube.com/watch?v=pkHpHwoL_iw">Peking Man, Java Man</a>)</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;">Mesozoic</td><td style="padding:4px;">-225 million years (dinosaurs)</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;">Holocene</td><td style="padding:4px;">-10,000 BC</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;"><a target="_blank" href="https://en.wikipedia.org/wiki/Paleolithic">Paleolithic (Old Stone Age)</a></td><td style="padding:4px;">50,000 years ago,<br />40,000 BC in Australia & Japan,<br />27,000 BC Siberia</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;"><a target="_blank" href="https://en.wikipedia.org/wiki/Neolithic">Neolithic</a> (New Stone Age)</td><td style="padding:4px;">15,000 Wall paintings made in caves at Lascaux, France and Altamira, Spain.<br />12,000 BC with cereals farming in the Levant</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;">Calcolitic (Copper-Stone)</td><td style="padding:4px;">6500 BC in Eastern Anatolia,<br /><a href="#Creation">5176/4114/4004 BC - Biblical Creation</a>
 <br />4500 BC in India,<br />3000 BC throughout Mediterranean</td></tr>
-<tr valign="top"><td>Broze Age (Copper+Tin from Cornwall, England & Afgahnistan)</td><td>3000 BC in Greece & China,<br />1900 BC in Britain (source of Tin)</td></tr>
-<tr valign="top"><td>Iron Age</td><td>From 1200 BC in the Middle East,<br />600 BC in China</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;">Broze Age (Copper+Tin from Cornwall, England & Afgahnistan)</td><td style="padding:4px;">3000 BC in Greece & China,<br />1900 BC in Britain (source of Tin)</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;">Iron Age</td><td style="padding:4px;">From 1200 BC in the Middle East,<br />600 BC in China</td></tr>
 </table>
 
 Astronomer Barry Setterfield of Australia theorizes that because the speed of light is decreasing geometrically, millions of years could have gone by in our current perception of time. The Bible speaks of this:
@@ -668,7 +668,7 @@ when new Roman consuls take office (see Shakespear's Julius Ceasar).
 	45</a> <strong>Julian calendar</strong> of 12 months and 365.25 days per year (with a leap year every 4 years)
 instituted by Roman Julius Ceasar.
 <br /> 40 Jimmu Tenno, first emperor of Japan
-<br /> 37 Herod the Great, ruling under Roman authority, builds <a target="_blank" href="http://www.nd.edu/~theo/glossary/TempleHerSchem.jpg" target="_top"> 2nd Temple</a>
+<br /> 37 Herod the Great, ruling under Roman authority, builds <a target="_blank" href="http://www.nd.edu/~theo/glossary/TempleHerSchem.jpg"> 2nd Temple</a>
 <br /> 31 Octavius defeats Mark Anthony and Cleopatra of Egypt, ending Roman civil wars at the Battle of Actium, Greece.
 <br /> 27 Octavius (Julius Ceasar's adopted son) is renamed Augustus Ceasar and replaces Republic.
 <br /> 19 <strong>Herod </strong>finishes construction on <strong> Temple</strong> in Jerusalem.
@@ -699,7 +699,7 @@ Third son, Archelaeus, took the central portion which includes Jerusalem.
 	(the First Advent), as <a target="bible" href="https://www.blueletterbible.org/kjv/dan/9/24-26/s_859024">predicted in Daniel+9:24-26</a>, but <a target="bible" href="https://www.blueletterbible.org/kjv/mat/16/1-4/s_945001">Matthew+16:1-4: not recognized by people at the time</a>.
 
 <a id="JesusCrucified"></a>
-<br /> April 6 (Nizon 13), 29/30 AD Christ crucified (</a><a target="bible" href="https://www.blueletterbible.org/kjv/dan/9/26/s_859026">Daniel+9:26 "cut off"</a>) as Passover (Pesach) lambs were slain.
+<br /> April 6 (Nizon 13), 29/30 AD Christ crucified (<a target="bible" href="https://www.blueletterbible.org/kjv/dan/9/26/s_859026">Daniel+9:26 "cut off"</a>) as Passover (Pesach) lambs were slain.
 
 
 <br /> (Nisan 16) Ressurection (Easter) on the Feast of Unleavened Bread
@@ -835,8 +835,7 @@ asceticism</a>.
 <br /> 410 Rome sacked by Visigoths from the North
 <br /> 451 <a target="_blank" href="http://iclnet93.iclnet.org/pub/resources/text/history/creeds.chalcedon.txt">The 4th Council at Chalcedon</a> 
 clarifies orthodox Christology -
-<ul><em> Christ as truly man AND truly divine without Monophysite confusion, mixture; or Nestorian separation.</em>
-</ul>
+<blockquote><em>Christ as truly man AND truly divine without Monophysite confusion, mixture; or Nestorian separation.</em></blockquote>
  <strong> 476 Fall of last Roman Emperor;</strong>
 <br /> Roman monk Dionysius establishes <strong> Before Christ/Anno Domini calendar </strong>
 <br /> 476 Romulus Augustulus, the last Roman emperor, is overthrow.
@@ -1063,6 +1062,7 @@ defines Anglican theology (such as "transubstantiation") by publishing the first
 <br /> 1590 Hideyoshi Toyotomi (1536-1598) unifies Japan
 <br /> 1565-1616 Shakespeare, <a target="_blank" href="http://www.crinos.com/users/aforte/features/shakespear/shakespear.insult.html">
 	the Bard</a>, writes!
+<a id="Y1611"></a>
 <br /><strong> 1611 "Authorized" King James Version of Bible published in English</strong>
 <br /> Galileo (1564-1642) proposes earth not center of universe
 <br /> Isaac Newton (1642-1727)
@@ -1316,7 +1316,7 @@ in Jonestown, Guyana.
 <br /> Aug. 7, '90 American forces arrive in Saudi Arabia &#8212; what some see as violating
 the "one religion" in the holy muslim land of Mecca and Medina.
 <br /> Nov. 17 '90 Non-Aggression pact signed between NATO and the Warsaw Pact countries.
-<br /> Dec. 25 '91 Gorbachev announces "I cease my activities as President of the U.S.S.R." &#151; ending the Soviet Union.
+<br /> Dec. 25 '91 Gorbachev announces "I cease my activities as President of the U.S.S.R." &#8212; ending the Soviet Union.
 <br /> '91 Promise Keepers started by coach McCartney
 <br /> Aug. 21-22 '92 FBI kills "white separatist" Randy Weaver and family at Ruby Ridge, Idaho
 <br /> Sep. 13 '93 Jimmy Carter arranges a 7-year &#8220;Peace Accord&#8221;
