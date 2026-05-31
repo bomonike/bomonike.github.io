@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-05-30"
-lastchange: "26-05-30 v030 fr wm 26-02-19 @history.md"
+lastchange: "26-05-30 v031 fixes @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -942,12 +942,12 @@ dynasty which advanced into Africa.
 <br /> 1008-1020 Tale of Genji written in Japan
 <br /> Inquisitions by Pope Innocent.
 <br /> 1044 Gunpowder invented in China.
-<br /> 1053 Western Church insists on the celibacy of its higher clergy.  50 years later church excommunicates all married priests.
-<br /> <strong>1054 </strong> Orthodox Eastern church and Roman Catholic church separate after
+<br /> 1053 Western Church insists on the celibacy of its higher clergy. 50 years later church excommunicates all married priests.
+<br /> <strong>1054</strong> Orthodox Eastern church and Roman Catholic church separate after
 excommunicating each other in a <strong>Great Schism</strong>.
 <br /> 1055 Seljuk Turks from central Asia conquer Baghdad.
-<br /> 1066 French under William the Conqueror beats Saxon England in the Battle of Hastings at <a target="_blank" href="http://ourworld.compuserve.com/homepages/conquestsoc/page2.htm">
-Norman, England</a>
+<br /> 1066 French under William the Conqueror beats Saxon England in the Battle of Hastings at 
+Norman, England
 
 <br />1071 Byzantine era when muslims defeat Islamic Ottomans at Anatolia (now Western Turkey).
 <br />1085 Spanish Alfonso VI takes Muslim city Toledo.
@@ -967,7 +967,7 @@ Saladin (&quot;rectifier of the faith&quot;) captures Jerusalem from crusaders l
 <br /> 1189 Jews in England massacred during the coronation of Richard I.
 <br /> 1191 Zen Buddhism introduced to Japan by Chinese monk Eisai.
 <br /> 1200 Inca civilization forms to peak in the 15th century.
-<br /> 1204 Constantinople sacked by crusaders during the 4th Crusade.
+<br /> <strong>1204</strong> Constantinople sacked by Western crusaders during the 4th Crusade.
 <br /> 1206-1227 Genghis Khan establishes the <strong>Mongol Empire</strong>
 <br /> June 15, <strong> 1215</strong> <a target="_blank" href="https://www.wikiwand.com/en/Magna_Carter">Magna Carter</a> of liberty signed by king John to avert English Barons' War.
 <br /> (1182-1226) Francis of Assisi establishes the Franciscan order.
@@ -1007,7 +1007,7 @@ Sardis in <a target="bible" href="https://www.blueletterbible.org/kjv/rev/3/1/s_
 
 <br /> 1429 French heroine Joan of Arc lifts English seige of Orleans, France.
 <br /> 1448 Russians under Jonas become <em>autosepholis</em> - self governing religiously.
-<br /> 1453 Turks capture Constantinople (in Türkiye) to end the Byzantine empire.
+<br /> <strong>April 2, 1453</strong> 21 yo Sultan Nemet 2nd capture Constantinople (in Türkiye) to end the Byzantine empire. Scholarius installed as patriach.
 <br /> 1455-1485 30-year <strong> War of the Roses </strong> between Houses of York and Lancaster for the English throne
 <br /> 1456 Gutenberg produces German Bibles using movable type
 <br />1462 Russian Grand prince Ivan, in marrying Sophia, niece of Constantine, unites church and state
