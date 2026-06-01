@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-01"
-lastchange: "26-06-01 v033 greeks vs persians @history.md"
+date: "2026-06-02"
+lastchange: "26-06-02 v034 html div fix @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -920,6 +920,7 @@ dynasty which advanced into Africa.
 <br /> 859 <a target="_blank" href="https://www.youtube.com/watch?v=iWFEJueL01k">VIDEO</a> 62 Viking longships from France, each carrying 50 warriors with shields and axes, sack the Mediterranean, taking locals back to Ireland as slaves. 
 <br /> 861 end of Abbasids empire.
 
+<hr />
 
 <a id="Medieval"></a>
 
@@ -997,6 +998,8 @@ falls to cavalry of Yuan dynasty (1271-1368) (Tartars) commanded by nomadic Mong
 <br /> July 6, 1415 Bohemian pastor John Hus, singing, burns for heresy in Prague.
 <br /> 1453 Ottoman Mehmet II of Turkey captures Constanopole and ends the Byzantine empire.
 <br /> 1467-1477 Onin War burns everything in Japan
+
+<hr />
 
 <a id="Renaissance"></a>
 
@@ -1246,13 +1249,14 @@ and sold the Philippine Islands.
 <br /> July, 1925 schoolteacher John Scopes is found guilty of violating the Tennessee Butler bill against teaching evolution in the "Monkey Trial." The first American trial to be nationally broadcast on radio. Christian fundamentalism lost ground.
 <br />	1928 Alexander Fleming discovers penicillin.
 
+<hr />
 
 <a id="Lateranz"></a>
 
 ### Lateran Rome Recovery
 
 <br /> 1926 controversial Father Coughlin creates a radio congregation in the US.
-<br /><strong>Feb. 11, '28</strong> Dictator Mussolini signs <a target="_blank" href="http://en.wikipedia.org/wiki/Lateran_Treaty">Lateran Pact</a> to settle the "Roman Question" by establishing Catholic Vatican as a sovereign state within Italy. (healing the wound).
+<br /><strong>Feb. 11, '28</strong> Dictator Mussolini signs <a target="_blank" href="http://en.wikipedia.org/wiki/Lateran_Treaty">Lateran Pact</a> to establish The Vatican as a sovereign state within Italy. (healing the wound).
 <br /> Jan 30 '33 President Paul von Hindenburg appoints Hitler Chancellor of 3rd Reich of Germany
 <br /> Nov 10 '38 <em>Kristallnacht</em> (Night of Broken Glas) riots destroy Jewish businesses and <a target="_blank" href="http://fcit.coedu.usf.edu/holocaust/timeline/KMap.htm">synagogues throughout Germany</a>
 <br /> '36 African-American Jesse Owens wins Berlin Olympics
@@ -1271,6 +1275,8 @@ and sold the Philippine Islands.
 <br /> '49 Russia detonates their first atom bomb, beginning the Cold War. NATO forms.
 <br /> May 12, 49 Blockade of Berlin ends.
 <br /> Jul 4, 47 UFO crash outside nuclear air force base in Roswell, New Mexico
+
+<hr />
 
 <a id="IsrealIndep"></a>
 <strong> May 14, 1948 Israel declares Independence </strong> to avoid being <a target="bible" href="https://www.blueletterbible.org/kjv/eze/37/19/s_839019">Ezekiel+37:19 - partitioned</a>	(fulfills <a target="bible" href="https://www.blueletterbible.org/kjv/eze/4/3-6/s_806003"> Ezekiel 4:3-6</a>,
