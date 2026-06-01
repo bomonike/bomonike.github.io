@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-06-01"
-lastchange: "26-06-01 v035 Acre @history.md"
+lastchange: "26-06-01 v036 pr fixes @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -55,19 +55,19 @@ Over the years, I reference this page when watching documentaries, traveling to 
 
 ## Jokes and Quotes
 
-"<strong>War </strong> is God's way of teaching us <strong>geography</strong>" --Comedian Paul Rodriguez
+&ldquo;<strong>War </strong> is God's way of teaching us <strong>geography</strong>&rdquo; --Comedian Paul Rodriguez
 
-"<strong>Coincidence </strong>is just God protecting his <strong>anonymity</strong>.--anonymous
+&ldquo;<strong>Coincidence </strong>is just God protecting his <strong>anonymity</strong>.&rdquo; --anonymous
 
-"God cannot alter the past, though historians can." --Samuel Butler
+&ldquo;God cannot alter the past, though historians can.&rdquo; --Samuel Butler
 
-"You can't understand who we <strong>are</strong>, unless you understand who we <strong>were</strong>."--David McCullough, Historian
+&ldquo;You can't understand who we <strong>are</strong>, unless you understand who we <strong>were</strong>.&rdquo;--David McCullough, Historian
 
-"Those who cannot remember the past are condemned to repeat it."--George Santayana (1863-1952), in "The Life of Reason"
+&ldquo;Those who cannot remember the past are condemned to repeat it.&rdquo;--George Santayana (1863-1952), in "The Life of Reason"
 
-"History is the sum total of things that could have been avoided."--Konrad Adenauer (1876-1967), first chancellor of West Germany
+&ldquo;History is the sum total of things that could have been avoided.&rdquo;--Konrad Adenauer (1876-1967), first chancellor of West Germany
 
-"It is easier to fool people than to convince them that they have been fooled." Mark Twain
+&ldquo;It is easier to fool people than to convince them that they have been fooled.&rdquo;--Mark Twain
 
 <hr />
 
@@ -90,7 +90,7 @@ The default here is the King James Version (KJV) of the Bible from <a href="#Y16
 
 <a href="#Other+Timelines">Several</a> have deduced timelines presenting the most significant events. Below is one version <a target="_blank" href="https://www.youtube.com/watch?v=IJlIcmiz0fs">from CJ Lovik</a>, which have not come true:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1693191201/bible-countdown_lc6rw5.png"><img src="https://res.cloudinary.com/dcajqrroq/image/upload/v1693191201/bible-countdown_lc6rw5.png" alt="Bible Countdown timeline diagram" width="100%" style="height:auto" loading="lazy" /><em>Click image for full screen</em></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1693191201/bible-countdown_lc6rw5.png"><img alt="Scope of history" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1693191201/bible-countdown_lc6rw5.png" alt="Bible Countdown timeline diagram" width="100%" style="height:auto" loading="lazy" /><em>Click image for full screen</em></a>
 
 The above diagram got wrong the beginning of "70th Week of Daniel" (7 years of Tribulation) when the al-Madhi rules the world (<a target="_blank" href="https://www.blueletterbible.org/kjv/dan/9/27/s_859027">Dan 9:27</a>; <a target="bible" href="https://www.blueletterbible.org/kjv/rev/6/1/s_1173001">Rev 6:1-19?</a>.
 
@@ -103,8 +103,8 @@ The most significant events in world history are:
 * Promised land from Egypt 1408 BC
 
 <a id="Sieges">Sieges:</a>
-* First Seige of Jerusalem 701 BC
-* Second Seige of Jerusalem 589 BC
+* First siege of Jerusalem 701 BC
+* Second siege of Jerusalem 589 BC
 * <a href="#JesusCrucified">Crucifixion of Jesus</a> on Nisan 14 (Friday), 30 AD (at the same time as the Passover lamb was being sacrificed).
 * Third Siege of Jerusalem (by Roman Emperor Titus in 70 AD)
 
@@ -153,8 +153,7 @@ Biblical vs. Egyptian Timeline at artsales.com</a>
 
 * <a target="_blank" href="https://www.wikiwand.com/en/History_of_Israel">WIKIPEDIA: History of Israel</a>
 
-* <a target="_blank" href="https://www.youtube.com/watch?v=nDu4K8kroNw">VIDEO:
-b  37 Bible Characters Found Through Archaeology</a>
+* <a target="_blank" href="https://www.youtube.com/watch?v=nDu4K8kroNw">VIDEO: 37 Bible Characters Found Through Archaeology</a>
 
 
 ## Contextual Principles
@@ -281,7 +280,7 @@ References:
 <tr style="vertical-align:top;"><td style="padding:4px;"><a target="_blank" href="https://en.wikipedia.org/wiki/Neolithic">Neolithic</a> (New Stone Age)</td><td style="padding:4px;">15,000 Wall paintings made in caves at Lascaux, France and Altamira, Spain.<br />12,000 BC with cereals farming in the Levant</td></tr>
 <tr style="vertical-align:top;"><td style="padding:4px;">Calcolitic (Copper-Stone)</td><td style="padding:4px;">6500 BC in Eastern Anatolia,<br /><a href="#Creation">5176/4114/4004 BC - Biblical Creation</a>
 <br />4500 BC in India,<br />3000 BC throughout Mediterranean</td></tr>
-<tr style="vertical-align:top;"><td style="padding:4px;">Broze Age (Copper+Tin from Cornwall, England & Afgahnistan)</td><td style="padding:4px;">3000 BC in Greece & China,<br />1900 BC in Britain (source of Tin)</td></tr>
+<tr style="vertical-align:top;"><td style="padding:4px;">Bronze Age (Copper+Tin from Cornwall, England & Afghanistan)</td><td style="padding:4px;">3000 BC in Greece & China,<br />1900 BC in Britain (source of Tin)</td></tr>
 <tr style="vertical-align:top;"><td style="padding:4px;">Iron Age</td><td style="padding:4px;">From 1200 BC in the Middle East,<br />600 BC in China</td></tr>
 </table>
 
@@ -386,7 +385,7 @@ the "New Chronology" proposed in the 1990s, which lowers New Kingdom dates by as
 
 ## Mosaic Age of Law
 
-? Egyptian pharaoh Phiops II subjugates Isrealistes.
+? Egyptian pharaoh Phiops II subjugates Israelites.
 <br /> Moses rescued from the Nile to become <a target="_blank" href="https://youtube.com/shorts/YQWX1VEVhIA?si=MXcmN8PMXPCpx_kL"><em>Senenmut</em></a> ("mother's brother") [marked on empty tomb in the temple of Egyptian princess Hatshepsut 1503-1482 BC, first female Egyptian pharaoh]
 <br /> PROPOSED: <a target="_blank" href="http://www.biblicalchronologist.org/qa/adb/millennium.htm">
 2447(+/-12)</a> (during reign of Egyptian Menkaure, 1480 years after the Promise was given Abram, per modern reading of <a target="_blank" href="https://www.blueletterbible.org/kjv/1ki/6/1/s_297001">1Kings 6:1</a>)
@@ -841,9 +840,8 @@ clarifies orthodox Christology -
 <br /> 476 Romulus Augustulus, the last Roman emperor, is overthrow.
 	Apostles are scattered (Acts 8:1)
 <br /> 491 Armenian church founded.
-<p>520 Guptas of India invent the decimal system.
-<br />527-529 <a href="http://iclnet93.iclnet.org/pub/resources/text/history/council.orange.txt">
-	Canons of the Council of Orange</a>
+<br /> 520 Guptas of India invent the decimal system.
+<br /> 527-529 <a href="http://iclnet93.iclnet.org/pub/resources/text/history/council.orange.txt">Canons of the Council of Orange</a>
 <br /> 533 Ananthemas of the 2nd Council of Constantinople
 <br /> 533 Roman Emperor Justian retakes northern Africa.
 <br />
@@ -879,7 +877,7 @@ the 9th month each year with day-time fasting during <em>Ramadan</em>.
 <br /> 617? 618-906 T'ang dynasty in China
 <br /> July 16, 622 Muhammad PBUH and his followers start a 200 mile <em>Hijrah </em> (migration) from Mecca/Makkah to
 Madina (now Saudi Arabia), an event marked as the first day of each Islamic new year (epoch)
-<p>627 Byzantine Emperor Heracles defeats the Persian army.
+<br /> 627 Byzantine Emperor Heracles defeats the Persian army.
 <br /> 629-645 Chinese pilgrim Xuanzang collects Buddhist teachings in China, Cambodia, and India,
 	then translates many of the surviving Sutra of the Mahayana Canon into Middle Chinese.
 <br />630 (Without a battle) Muhammad's 10,000 man army <em> Jihad </em> (struggle) restores the Ka'bah (first mosque) in Mecca.
@@ -1312,8 +1310,8 @@ June 5-10 '67 Israel regains Jerusalem after 3rd seige <strong> "6 Day War"</str
 <br /> '69 California is the first state to adopt no-fault divorce.
 <br /> October 1969 The Internet is born with a message transported across the ARPAnet from UCLA's Network Measurement Center to Stanford University.
 <br />Apr 29 '75 Saigon falls when Americans leave.
-<p>
-<strong>Sept. 17 '78 Israel makes peace with Egypt </strong>(Is this <a target="bible" href="https://www.blueletterbible.org/kjv/eze/29/6-7/s_831006">Ezekiel 29:6-7</a>)
+
+<br /> <strong>Sept. 17 '78 Israel makes peace with Egypt</strong> (<a target="bible" href="https://www.blueletterbible.org/kjv/eze/29/6-7/s_831006">Ezekiel 29:6-7</a>)
 <br /> Nov. '78 Jim Jones orchestrates the mass suicide of 912 People's Temple followers
 in Jonestown, Guyana.
 <br /> Nov 4 '79 - 52 American hostages begin 444 days in Teheran, Iran
@@ -1334,7 +1332,7 @@ the "one religion" in the holy muslim land of Mecca and Medina.
 	(fulfills <a target="bible" href="https://www.blueletterbible.org/kjv/dan/9/27/s_859027">Daniel 9:27</a>?)
 <br /> '93 FBI burns down Waco, TX compound of David Koresh and his Branch Dividians
 <br /> Apr '94 Mandela (age 75) elected first black President of South Africa
-<p><strong> May 5, '94 Palestinians take Israeli controlled Jericho </strong>
+<br /> <strong>May 5, '94 Palestinians take Israeli controlled Jericho</strong>
 	and 25 square miles of the Gaza strip. (See <a target="bible" href="https://www.blueletterbible.org/kjv/jos/6/26/s_193026">Joshua 6:26</a>)
 <br /> <a target="_blank" href="http://gbgm-umc.org/advance/Church-Burnings/index.html">
 	Black churches are burned</a>.
