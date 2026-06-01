@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-02"
-lastchange: "26-06-02 v034 html div fix @history.md"
+date: "2026-06-01"
+lastchange: "26-06-01 v035 Acre @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -956,7 +956,7 @@ Norman, England
 	And help Italy capture trade through Constatinopole Byzytine (Greek Orthodox) church territory.
 <br /> 1096 First crusades begin.
 <br /> July 15, 1099 Crusaders enter Jerusalem.
-<br /> 1104 Crusaders take Acre in Isreal from muslims referred derisively as <em> saracen</em> (roughly meaning "Easterners").
+<br /> 1104 Crusaders take Acre in Israel from Muslims referred derisively as <em>saracen</em> (roughly meaning "Easterners").
 <br /> 1169 Muslim Saladin becomes King of Cairo, Egypt.
 <br /> 1170 Thomas Becket (born 1162), Archbishop of Canterbury, is murdered for standing up against the English King.
 <br />
@@ -984,8 +984,8 @@ falls to cavalry of Yuan dynasty (1271-1368) (Tartars) commanded by nomadic Mong
 <br /> 1274 Mogol invade Japan
 <br /> 1275-1292 Marco Polo in China
 <br /> May 1281 KubliKhan's Mongols invade Japan. Although initially successful at Tsushima, were thawrted by <em>Kamikaze</em> (divine/god-wind) typhoons <a target="_blank" href="https://www.youtube.com/watch?v=S1hz8DETxIY">VIDEO</a>
-<br /><strong> 1291 Crusades end after 8 wars.</strong></p>
-<p> 1304 The first "humanist," Francesco Petrarca (1304-1374) is born to become a poet and "father of the <a target="_blank" href="https://www.wikiwand.com/en/Renaissance">Renaissance</a>"
+<br /><strong> May 18, 1291 Acre falls to Mamaluk seige: European Crusades end after 8 wars.</strong> <a target="_blank" href="https://www.youtube.com/watch?v=gs_Wq9W5w1M">VIDEO</a>
+<br /> 1304 The first "humanist," Francesco Petrarca (1304-1374) is born to become a poet and "father of the <a target="_blank" href="https://www.wikiwand.com/en/Renaissance">Renaissance</a>"
 <br /> 1325 Ibn Battuta (1304-1368) travels from Morocco throughout the Muslim world.  <a target="_blank" href="https://www.youtube.com/watch?v=FavaU9D9lf8">VIDEO</a>
 <br /> 1345 Black Plague wipes out 30%-50% of Europe
 <br /> 1345-1521 Aztec civilization in central Mexico peaks, just when the Spanish conquistadors arrived.
@@ -1049,10 +1049,10 @@ including the pope as "Vicar" of Christ on Earth.
 defines Anglican theology (such as "transubstantiation") by publishing the first <a href="http://www.eskimo.com/~lhowell/bcp1662/">Book of Common Prayer</a> used in English worship services.
 <br /> 1551 Robert Stephens Estienne of France divides New Testament verses in the Bible.
 <br /> 1555 Peace of Augsberg reached by Catholic Charles V with Lutherans.
-<br /> 1557 Portuguese establish settlement in Macao, China
+<br /> 1557 Portuguese establish settlement in Macao, China.
 <br /> 1565 Malta survives seige by muslim Suiliman <a target="_blank" href="https://www.youtube.com/watch?v=J59dk0Wxghc" title="AI slop">VIDEO</a> <a target="_blank" href="https://www.youtube.com/watch?v=k4t4gJGDBus">part2</a>
-<br /> 1565, on St. Augustine's Day, Pedro Menendez de Aviles arrived to establish America's first city in Florida.
-<br /> 1557 first Index of Forbidden Books officially issued under Catholic Pope Paul IV
+<br /> 1565, on St. Augustine's Day, Pedro Menendez de Aviles arrived to establish America's "first city" in Florida.
+<br /> 1557 first "Index of Forbidden Books" officially issued under Catholic Pope Paul IV.
 <br /> 1556-1605 Mughal Empire prospers in India under Akbar (the Great).
 <br /> 1571 Battle of Lepanto in Greece ends Turkish seapower in the Mediterranean.
 <br /> 4-15 Oct. 1582 Based on a committee led by Naples astronomer Aloysius Lilius,
