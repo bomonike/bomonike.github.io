@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-30"
-lastchange: "26-05-30 v032 auto fixes @history.md"
+date: "2026-06-01"
+lastchange: "26-06-01 v033 greeks vs persians @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -330,7 +330,7 @@ on 1 Tishrei (New Year)
 <br />
 <br /> 3520(+/-21) [Usher 2348] Methuselah dies at 969 years old (Gen 7:27),
 	his death shall bring the one-year <strong>flood</strong> of Noah on
-	<strong> 17th Nisan</strong>.
+	<strong> 17th Nisan</strong>. <a target="_blank" href="https://www.youtube.com/watch?v=KXLfMvxo1MY">ark</a>
 	This begins 427-year Dispensation of Human Government.
 <br /> <em> Post-diluvian times: </em>
 <br />
@@ -487,6 +487,7 @@ seiges Meggiddo</a> (among 350 cities) during his 1504-1450 reign of Egypt's 18t
 <br /> Northern Prophets: 760-750 Amos, 753 Hosea (harlot wife Gomer)
 <br /> 763 June 15 <a target="_blank" href="https://www.youtube.com/watch?v=3DJtVlLRMGw">VIDEO</a>: <a target="_blank" href="https://www.blueletterbible.org/kjv/isa/13/10/s_692010">Solar eclipse</a> in Nineveh (North of Bagdad Iraq) noted on cuniform tablets under Assyrian king Ashurbanipal provides a way to corroborate (using <a target="_blank" href="https://www.alcyone.de/alcyone_eclipse_calculator.html">Eclipse Emphemeris</a>) <a href="https://www.blueletterbible.org/kjv/jon/1/1-2/s_890001">Jonah</a> and correlate <a href="2 Kings 18:13">Sennacherib's captue of Jerusalem on 701 BC</a> and Exodus at 1446 BC.
 <br /> 753 Foundation of Rome.
+
 <br /> Southern Jotham &amp; Ahaz & Hezekiah: 742 Micah, 740-681 Isaiah
 <br /> 731 Ukinzer (a Chaldean) becomes king of Babylon (modern-day Iraq) to begin Chaldean rule.
 <br /> 730 Sparta conquers Messene.
@@ -533,18 +534,33 @@ Nebuchadnezzar destroys <strong> Soloman's temple</strong> in Jerusalem
 <br /> Oct 12, 539 Persian Aramaic Cyrus overthrows Babylon (<a target="bible" href="https://www.blueletterbible.org/kjv/dan/8/25/s_858025">Daniel 8:25</a> fulfills <a target="bible" href="https://www.blueletterbible.org/kjv/isa/44/28/s_723028">Isaiah 44:28</a>) under Belshazzar.
 
 <a id="Medo-Persiaz"></a>
-<br /> 521 - 485 BC Darius I (the Great of Persia) (<a target="_blank" href="https://www.blueletterbible.org/kjv/ezr/4/5/s_407005">Ezra 4:5</a>)
+<br /> 521 - 485 BC Darius I (the Great) of Persia (<a target="_blank" href="https://www.blueletterbible.org/kjv/ezr/4/5/s_407005">Ezra 4:5</a>)
 <br /> 520 Cyrus allows Isreal to return from Babylonian Exile (<a target="bible" href="https://www.blueletterbible.org/kjv/ezr/1/1/s_404001">Ezra</a>).
 <br /> 512 <strong> Second Temple of Isreal finished.</strong>
 <br /> 510 Cleisthenes, with exiled Athenian nobles and an army from Sparta, liberates Athenians from Pisistratus and his sons.
 <br /> 505 Democracy established in Athens.
 
-<br /> 486 - 464 BC Xerxes I (Ahasuerus) of Persia marries Esther (<a target="_blank" href="https://www.blueletterbible.org/kjv/est/1/1-22/s_427001">Esther 1:1-22</a>)
-<br /> 464 - 424 BC Artaxerxes I (Longimanus) of Persia sends Ezra to Jerusalem (<a target="_blank" href="https://www.blueletterbible.org/kjv/ezr/7/1-28/s_410001">Ezra 7:1-28</a>)
-<br /> 424 BC Xerxes II
+<br /> 490 [not 434] Led by Athenian Miltiades and joined by Plantea, at the <strong>Marathon</strong> road to Athens (coast of Attica) Greece defeats army of Persian king Darius I killed by a Greek beauty. <a target="_blank" href="https://www.youtube.com/watch?v=UebkPaosYrU">VIDEO</a> The Olympics 42 KM run commemorates the messenger to get Spartans.
+
+<br /> 480 [not 424] during Athens Carnea celebrations, 300 Spartans (of 7,000 from other Greeks) at the Battle of Thermopylae ("hot gates") delay Xerxes II (aka Artaxerxes, son of Darius), <a target="_blank" href="https://www.youtube.com/watch?v=4IxNAZTIQsc">VIDEO</a> This buys time for Athens to evacuate.
+
+<br /> 480 Athenian general Thermistocles with 300 ships at the Strait of Salamis defeats 1,000 ships from Persian Xerxes with Carthaginians <a target="_blank" href="https://www.youtube.com/watch?v=xqS2zdV1Vvg">VIDEO</a>
+<br /> 479 [not 425] alliance of hoplites from Greek city-states <a target="_blank" href="https://www.wikiwand.com/en/Battle_of_Plataea">kills</a> Persian Mardonius at the plains of Plattea, ending Xerxes I's invasion of Greece. <a target="_blank" href="https://www.youtube.com/watch?v=9MJ__EVk4Mk">VIDEO</a>
+
+<br /> 477 Athens assumes leadership of the Delian League alliance of the city-states and islands of Greece against the Persians.
+<br /> 464 Earthquake in Sparta; helots revolt.
+
+<br /> <strong> 458 </strong> On the 20th Jubilee, 7th year into his reign Artaxerxes I (Longimanus) (464-424 BC) allows Ezra to leave Babylon to rebuild Jerusalem. (<a target="_blank" href="https://www.blueletterbible.org/kjv/ezr/7/1-28/s_410001">Ezra 7:1-28</a>) This starts the 490 (70x7) prophesy in Daniel 9:25 to <strong>Jesus' death on 1 Nisan (Friday April 15) AD 33</strong>.
+
+<br /> 434 Dedication of the wall of Jerusalem by Ezra and Nehemiah (Nehemiah 12:27)
+
+<br /> 428 Xerxes I (Ahasuerus) of Persia (486 - 464 BC) marries Esther (<a target="_blank" href="https://www.blueletterbible.org/kjv/est/1/1-22/s_427001">Esther 1:1-22</a>) who saves her people (celebrated in Jewish Purim festivals).
+
 <br /> 424 - 423 BC Sognianus
 <br /> 424 - 404 BC Darius II (Nothus) of Persia sends Nehemiah to Jerusalem (<a target="_blank" href="https://www.blueletterbible.org/kjv/gen/11/1/s_11001">Nehemiah 13:6</a>)
 <br /> 404 - 358 BC Artaxerxes II (Mnemon) of Persia
+<br /> 403- [according to Thucycides] Sparta defeats Athens in the 27 year Peloponnesian War.
+
 <br /> 358 - 338 BC Artaxerxes III (Ochus) of Persia
 <br /> 338 - 336 BC Arses of Persia
 <br /> 336 - 330 BC Darius III (Codomannus) of Persia conquered by Alexander the Great (<a target="_blank" href="https://www.blueletterbible.org/kjv/dan/11/2/s_861002">Daniel 11:2</a>)
@@ -552,33 +568,16 @@ Nebuchadnezzar destroys <strong> Soloman's temple</strong> in Jerusalem
 A "diadem" (crown) is a blue band marked with white which Persian kings used to bind on the turban or tiera.
 
 
-<br /> 477 Athens assumed leadership of the Delian League alliance of the city-states and islands of Greece against the Persians.
-<br /> 464 Earthquake in Sparta; helots revolt.
-<br /> <strong> 458 </strong> On the 20th Jubilee, 7th year into the reign of Artaxerxes Longimanus decree allows Ezra to leave Babylon to rebuild Jerusalem. This starts the 490 (70x7) prophesy in Daniel 9:25 to Jesus' death on 1 Nisan (Friday April 15) AD 33.
-<br /> 434 Dedication of the wall of Jerusalem by Ezra and Nehemiah (Nehemiah 12:27)
-<br />
-<br /> 434 [not 490] Battle of Marathon, (coast of Attica) Greece won by Athenians
-	after Persian king Darius I is killed by a Greek beauty.
-<br /> 424 [not 480] Xerxes (aka Artaxerxes, son of Darius) destroys an empty Athens after
-	overcoming the heroic 300 Spartans at the Battle of Thermopylae.
-<br /> Xerxes leaves the war to Mardonius after defeat by the more nimble Greek navy at the Battle of Salamis.
-<br /> 425 [not 479] Persians under Mardonius are defeated by allied Greeks at the Battle of Plataea.
-
-<br /> 428 (<a target="bible" href="https://www.blueletterbible.org/kjv/est/1/1/s_427001">Esther</a> saves her people (celebrated in Jewish Purim festivals).
-
-<br /> 403- [according to Thucycides] Sparta defeats Athens in the 27 year Peloponnesian War.
-
 <a id="InterTestament"></a>
 
 ## Inter-Testament Times
 
-753 Romulus & Remus (Castor & Pollux) saved by wolves, start of Roman <em>Anno Urbis (ab urbe condita)</em> calendar.
+753 BC Romulus & Remus (Castor & Pollux) saved by wolves, start of Roman <em>Anno Urbis (ab urbe condita)</em> calendar.
 <br /> 630 Egyptians ransack the Temple in Jerusalem
 <br /> 606 Babylon captures Jerusalem, the <strong>beginning of &#8220;times of the Gentiles&#8221; <a target="bible" href="https://www.blueletterbible.org/kjv/luk/21/24/s_994024">Luke 21:24</a>)
 <br /> 604 Lao-tzu, founder of Taoism, born in China.
 
-<br /> 328 AD Nammara inscription is among earliest written evidence of Nabataean script Old Arabic.
-<br /> 470 AD oldest known inscription, a composite of Nabataean and Arabic writing, found near Najran in Saudi Arabia.
+<br /> 470 AD oldest known inscription, a composite of Nabataean and Arabic writing, found near Najran,  Saudi Arabia.
 
 <br /> 410-322 Age of Socrates (the first to recognize a one true, but unknown, G-d), Plato, and Aristotle in Greece
 <br /> 403 Start of &quot;Waring States&quot; period in China.
@@ -588,6 +587,7 @@ A "diadem" (crown) is a blue band marked with white which Persian kings used to 
 <br /> 335 Alexander begins in Thebes the conquest of the known world.
 <br /> 334 BC Battle of Granicus (now the Biga River in modern-day Turkey) is Alexander the Great's first major victory against the Persian Empire
 
+<br /> 328 AD Nammara inscription is among earliest written evidence of Nabataean script Old Arabic.
 
 <a id="Greecez"></a>
 
@@ -1086,7 +1086,9 @@ upon their landing at Provincetown on Cape Cod, Mass.<br />
 <br /> (1628-1688) John Bunyan, English minister and preacher, writes <a target="_blank" href="http://www.ccel.org/b/bunyan/pilgrims_progress/title.html">
 Pilgrim's Progress</a>.
 <br /> 11-12 September 1683 Ottomans under Kara Mustafa Pasha defeated by Polish King John III Sobieski and his winged Hussars (with funding from the Holy Roman Empire and German troops under Charles of Lorraine) at the <a target="_blank" href="https://en.wikipedia.org/wiki/Battle_of_Vienna">2nd Turkish siege of Vienna</a> on the Danube. Al-Qaeda recognized this date as when the Western world gained dominance over Islam by attacking the US 318 years later.
-<br /> 1693 Jacob Ammon and his followers in Old Order Amish break from Mennonites.
+<br /> 1688 Sphardic jews who fled Spain and Portgugal to Amsterdam in 1492, rich from global banking, discretely financed naval build by William of Orange for invading England under Catholic James II, who fled to France under Louis 14th. <a target="_blank" href="https://www.youtube.com/watch?v=5uTe9WgJvgg">VIDEO</a> 
+From then on, Catholics are barred from the British monarchy.
+
 <br /> 1699 Guru Gobind Singh organizes Sikhs into the <em>Khalsa</em> (brotherhood of man).
 
 
@@ -1097,6 +1099,8 @@ Pilgrim's Progress</a>.
 > Philadelphia in <a target="bible" href="https://www.blueletterbible.org/kjv/rev/3/7-13/s_1170007">Revelation 3:7-13</a>
 
 	Israel ben Eliezer (1700-1760) the Ba'al Shem Tov (Master of the Good Name) Hasidism from the Ukraine
+
+<br /> 1693 Jacob Ammon and his followers in Old Order Amish break from Mennonites.
 <br /> 1704 British Duke of Marlborough limits French power in Battle of Blenheim, Germany.
 <br /> 1709 Peter the Great of Russia defeat Swedes under Charles XII to control the Baltic Sea in the Battle of Poltava, Ukraine.
 <br /> (1703-1791) <a target="_blank" href="http://search.biography.com/print_record.pl?id=6853"> John</a> and Charles Wesley (author of Easter hymn <a target="_blank" href="http://www.hymntime.com/tch/htm/c/l/r/t/clrtodac.htm">"Christ The Lord Is Risen Today"</a> initiate the Methodist movement.
