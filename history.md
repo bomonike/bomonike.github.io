@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-01"
-lastchange: "26-06-01 v038 Hakata @history.md"
+date: "2026-06-02"
+lastchange: "26-06-02 v040 Hastings remove p> @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -936,9 +936,10 @@ dynasty which advanced into Africa.
 <br /> 962 Coronation by Pope of Otto I as Emporor of the Roman Empire.
 <br /> 969 Descendents of Fatimid (a daughter of Mohammed) conquer Jerusalem from Cairo and North Africa.
 <br /> 982 Viking warrior Erik the Red settles Greenland.
-<br /> 1003 Leif Eriksson (son of Erik the Red) sails down North America and names it "Vinland."
-<p> In Dalmatia (Yugolavia) Croats use Roman alphabet, Serbs loyal
-	to Eastern Constantinople church use Cyrillic alphabet invented by missionary brothers Cyril and Methodius.</p>
+<br /> 1003 Leif Eriksson (son of Erik the Red) sails down North America they name "Vinland."
+
+   In Dalmatia (Yugolavia) Croats use Roman alphabet, Serbs loyal to Eastern Constantinople church use Cyrillic alphabet invented by missionary brothers Cyril and Methodius.
+
 <br /> 1008-1020 Tale of Genji written in Japan
 <br /> Inquisitions by Pope Innocent.
 <br /> 1044 Gunpowder invented in China.
@@ -947,7 +948,7 @@ dynasty which advanced into Africa.
 excommunicating each other in a <strong>Great Schism</strong>.
 <br /> 1055 Seljuk Turks from central Asia conquer Baghdad.
 <br /> 1066 French under William the Conqueror beats Saxon England in the Battle of Hastings at 
-Norman, England
+Norman, England <a target="_blank" href="https://www.youtube.com/watch?v=yByXepIt8_c">VIDEO</a>
 
 <br />1071 Byzantine era when muslims defeat Islamic Ottomans at Anatolia (now Western Turkey).
 <br />1085 Spanish Alfonso VI takes Muslim city Toledo.
@@ -1020,7 +1021,7 @@ Sardis in <a target="bible" href="https://www.blueletterbible.org/kjv/rev/3/1/s_
 <br /> 1497 John Cabot explores the coast of Newfoundland.
 <br /> 1497 Vasco da Gama voyages around the Cape of Good Hope for a sea route to India.
 <br /> 1499 Amerigo Vespucci locates mouth of the River Amazon.
-<br /> 1512 Michelangelo completes Sistine Chapel frescoes in the Vatican Palace of Pope Julius II (1443-1513), who reigned from 1503 to 1513.</p>
+<br /> 1512 Michelangelo completes Sistine Chapel frescoes in the Vatican Palace of Pope Julius II (1443-1513), who reigned from 1503 to 1513.
 <br /> 1513 Vasco Nunez de Balboa crosses the Panama Isthmus to discover the Pacific Ocean.
 <br /> 1516 Desiderium Erasmus of Holland is first to publish Greek New Testament.
 <br /> 1517 Ottoman Selim I captures Jerusalem
@@ -1157,7 +1158,7 @@ evangelizes southern Africa</a>
 	allow Jews to live in their original homeland.
 
 1844+ <br /> &quot;Modern&quot; History of <a target="_blank" rel="noopener noreferrer" href="http://www.5loaves2fishes.org.nz/Sign.htm">Apostasy</a> and Lukewarm Church
-Laodicea in <a target="bible" href="https://www.blueletterbible.org/kjv/rev/3/14-19/s_1170014">Revelation 3:14-19</a></P>
+Laodicea in <a target="bible" href="https://www.blueletterbible.org/kjv/rev/3/14-19/s_1170014">Revelation 3:14-19</a>
 
 <a id="TheBab"></a> May 23, 1844 (Islamic year 1260) young Persian Mirza Ali Muhammad (later executed July 1850),
 	declares himself the promised Qa'im of Shi'ah Islam and
