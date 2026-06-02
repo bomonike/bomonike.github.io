@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-06-01"
-lastchange: "26-06-01 v037 auto fixes @history.md"
+lastchange: "26-06-01 v038 Hakata @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -279,8 +279,9 @@ References:
 <tr style="vertical-align:top;"><th scope="row" style="padding:4px;">Holocene</th><td style="padding:4px;">-10,000 BC</td></tr>
 <tr style="vertical-align:top;"><th scope="row" style="padding:4px;"><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Paleolithic">Paleolithic (Old Stone Age)</a></th><td style="padding:4px;">50,000 years ago,<br />40,000 BC in Australia & Japan,<br />27,000 BC Siberia</td></tr>
 <tr style="vertical-align:top;"><th scope="row" style="padding:4px;"><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Neolithic">Neolithic</a> (New Stone Age)</th><td style="padding:4px;">15,000 Wall paintings made in caves at Lascaux, France and Altamira, Spain.<br />12,000 BC with cereals farming in the Levant</td></tr>
-<tr style="vertical-align:top;"><th scope="row" style="padding:4px;">Calcolitic (Copper-Stone)</th><td style="padding:4px;">6500 BC in Eastern Anatolia,<br /><a href="#Creation">5176/4114/4004 BC - Biblical Creation</a>
-<br />4500 BC in India,<br />3000 BC throughout Mediterranean</td></tr>
+<tr style="vertical-align:top;"><th scope="row" style="padding:4px;">Calcolitic (Copper-Stone)</th><td style="padding:4px;">6500 BC in Eastern Anatolia,
+<br /> <a href="#Creation">5176/4114/4004 BC - Biblical Creation</a>
+<br /> `4500 BC in India,<br />3000 BC throughout Mediterranean</td></tr>
 <tr style="vertical-align:top;"><th scope="row" style="padding:4px;">Bronze Age (Copper+Tin from Cornwall, England & Afghanistan)</th><td style="padding:4px;">3000 BC in Greece & China,<br />1900 BC in Britain (source of Tin)</td></tr>
 <tr style="vertical-align:top;"><th scope="row" style="padding:4px;">Iron Age</th><td style="padding:4px;">From 1200 BC in the Middle East,<br />600 BC in China</td></tr>
 </table>
@@ -982,7 +983,7 @@ falls to cavalry of Yuan dynasty (1271-1368) (Tartars) commanded by nomadic Mong
 	Kublai Khan (1215-1294), grandson of Genghis Khan. Paper currency first instituted.
 <br /> 1274 Mogol invade Japan
 <br /> 1275-1292 Marco Polo in China
-<br /> May 1281 KubliKhan's Mongols invade Japan. Although initially successful at Tsushima, were thawrted by <em>Kamikaze</em> (divine/god-wind) typhoons <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=S1hz8DETxIY">VIDEO</a>
+<br /> May 1281 KubliKhan's Mongols invade Hakata Bay, Southern Japan. Although initially successful at Tsushima, were thawrted by <em>Kamikaze</em> (divine/god-wind) typhoons <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=S1hz8DETxIY">VIDEO</a>
 <br /><strong> May 18, 1291 Acre falls to Mamaluk seige: European Crusades end after 8 wars.</strong> <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=gs_Wq9W5w1M">VIDEO</a>
 <br /> 1304 The first "humanist," Francesco Petrarca (1304-1374) is born to become a poet and "father of the <a target="_blank" rel="noopener noreferrer" href="https://www.wikiwand.com/en/Renaissance">Renaissance</a>"
 <br /> 1325 Ibn Battuta (1304-1368) travels from Morocco throughout the Muslim world.  <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=FavaU9D9lf8">VIDEO</a>
@@ -1100,8 +1101,7 @@ From then on, Catholics are barred from the British monarchy.
 
 > Philadelphia in <a target="bible" href="https://www.blueletterbible.org/kjv/rev/3/7-13/s_1170007">Revelation 3:7-13</a>
 
-	Israel ben Eliezer (1700-1760) the Ba'al Shem Tov (Master of the Good Name) Hasidism from the Ukraine
-
+Israel ben Eliezer (1700-1760) the Ba'al Shem Tov (Master of the Good Name) Hasidism from the Ukraine.
 <br /> 1693 Jacob Ammon and his followers in Old Order Amish break from Mennonites.
 <br /> 1704 British Duke of Marlborough limits French power in Battle of Blenheim, Germany.
 <br /> 1709 Peter the Great of Russia defeat Swedes under Charles XII to control the Baltic Sea in the Battle of Poltava, Ukraine.
@@ -1374,8 +1374,6 @@ the "one religion" in the holy muslim land of Mecca and Medina.
 ## Predictions about the Future
 
 Apophis asteroid Apr 13, 2029.
-
-
 
 
 ## References
