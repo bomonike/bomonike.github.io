@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-28"
-lastchange: "26-05-28 v049 brock @anthropic-claude.md"
+date: "2026-06-02"
+lastchange: "26-06-02 v051 brock @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -394,10 +394,19 @@ YouTube videos offering subscriptions:
    * <a target="_blank" href="https://www.youtube.com/@zinhoautomates">Zinho Automates</a> https://www.skool.com/ai-launchpad/about</a>
    <br /><br />
 
-by Brock Mesarich - AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
+Brock Mesarich, on the <a target="_blank" href="https://www.youtube.com/@BrockMesarich">@BrockMesarich YouTube channel</a> aifornontechies.com
+AI for Non Techies to pitch <a target="_blank" href="https://www.skool.com/aifornontechies1/about">$47/mo AI for Non-Technies</a>: "Dispatch" from your phone.
+   * Browse awesomeclaude.ai to identify what looks useful to you, in priority.
    * <a target="_blank" href="https://www.youtube.com/watch?v=wXQGd-Yg8Ac">"Claude's Biggest Update Just Dropped... (Computer Use)"</a> 
    * <a target="_blank" href="https://www.youtube.com/watch?v=5bhh8ffHN6Q">"How to Use Claude Cowork Projects Better Than 99% of People"</a>
 
+On LinkedIn Learning by <a target="_blank" href="https://www.linkedin.com/in/planetoftheweb/">Ray Villalobos</a>:
+   * <a target="_blank" href="https://www.linkedin.com/learning/getting-started-with-claude-3">Getting Started with Claude 3</a>
+   * <a target="_blank" href="https://www.linkedin.com/learning/claude-code-101-from-prompt-to-product">1 hr video "Claude Code 101: From Prompt to Product"</a> 
+   * <a target="_blank" href="https://www.linkedin.com/learning/claude-code-4-agentic-coding-for-professional-developers">Claude Code 4: Agentic Coding for Professional Developers</a>
+   * <a target="_blank" href="https://www.linkedin.com/learning/ai-powered-development-with-the-anthropic-api">Building with the Claude API by Anthropic</a>
+
+Others on YouTube:
    * <a target="_blank" href="https://www.youtube.com/watch?v=_PwlnU-Yoe8">"Anthropic's SECRET Model Just Leaked (INSANE)" pushing <a target="_blank" href="https://www.shippingskool.com/">$99/yr ShippingSkool</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=vizgFWixquE">"Anthropic's NEW Claude Architect Guide In 39 Minutes" by Mark Kashef to pitch <a target="_blank" href="https://www.skool.com/earlyaidopters/">$64/mo Early AI-dopters</a>
    * <a target="_blank" href="">"The Easiest Way to Get Ahead With Claude Code"</a> by Simon Scrapes pushing <a target="_blank" href="https://skool.com/scrapes">$37/mo Scrapes</a>
@@ -1656,6 +1665,8 @@ To take a screen shot on macOS, press the usual command + Shift + 4 which change
 1. Restart Claude.
 1. Type command <tt>/audit</tt>, which is the same name as the markdown file name.
 
+   General skills being specific, verifiable, battle-tested, and minimal, which is more about general agent skills design and does not clearly describe a concrete, practical benefit of using custom commands such as automating repetitive tasks, ensuring consistent workflows, or adding project-specific context. 
+
 1. <a target="_blank" href="https://www.youtube.com/watch?v=4bfKyZ7hbsU">VIDEO</a>: View Addy Osamni's Agent Skills at
 
    <a target="_blank" href="https://github.com/addyosmani/agent-skills">github.com/addyosmani/agent-skills</a>
@@ -1757,7 +1768,9 @@ REMEMBER: Two folders are created:
    * ~/.claude/projects/<em>project_id</em>/CLAUDE.md - applicable to a specific project (/init)
    <br /><br />
 
-   It's based on these:
+   PROTIP: Examples of project divisions: <strong>frontend/, backend/, migrations/, docker/</strong>
+
+   TODO: Checkout:
    * <a target="_blank" href="https://github.com/forrestchang/andrej-karpathy-skills">A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
 
    
@@ -1849,12 +1862,17 @@ REMEMBER: Two folders are created:
 
    <a name="init"></a>
 
-1. Generate a starter CLAUDE.md as a starting point:
+1. Look at the file which Claude /init references to create an initial CLAUDE.md:
+   ```
+   package.json/pyproject.toml/Makefile/README.md
+   ```
+
+1. IMPORTANT: Instead of editing your CLAUDE.md, have Claude itself generate a starter CLAUDE.md file:
    ```bash
    /init
    ```
 
-1. List folders and files as a tree 3 levels down from <tt>~/.claude/</tt>:
+1. List folders and files as a tree 3 levels down from <tt>~/.claude/</tt>, using a utility:
    ```bash
    brewin eza
    eza -T -G -L 3 ~/.claude/
@@ -1871,7 +1889,6 @@ REMEMBER: Two folders are created:
     └── docker-compose.yml
    </pre>
 
-
 1. Edit file CLAUDE.md, the long-term memory file.
 
    The file guides Claude Code (claude.ai/code) when working with code in this repository.
@@ -1880,6 +1897,12 @@ REMEMBER: Two folders are created:
    
    Each CLAUDE.md file holds markdown-formatted <strong>project-specific context</strong> that should be repeated in every prompt: Project context (basic rules), About this project, Key directories, Standards, structure, conventions, workflows, style, domain-specific terminology. Example:
 
+
+1. PROTIP: Make your setup <strong>multi-framework</strong> to be used easily by Windsurf, Cursor, Codex CLI, Aider, and others) by specifying inline inclusion of contents from another file that the other platforms reference: 
+   ```
+   @AGENTS.md
+   ```
+   REMEMBER: This means your CLAUDE.md would contain <strong>additions unique to Claude</strong> tools.
 
 1. PROTIP: Keep CLAUDE.md files to a maximum of 100–200 lines. Long files are a code smell and take up precious context. CLAUDE.md should be a routing file, not a knowledge dump. 
    
@@ -2241,7 +2264,24 @@ hooks/todo-enforcer.config.json
 
 ## CoWork 
 
-CoWork automates the use of <a href="#Connectors">Connectors</a>.
+CoWork automates the use of <a href="#Connectors">Connectors</a> to 3rd-party apps.
+
+<strong>Default connectors</strong> are to:
+   * Microsoft Word for <a target="_blank" href="https://github.com/anthropics/skills/tree/main/skills/docx">.docx</a> documents
+   * Microsoft Excel for <a target="_blank" href="https://github.com/anthropics/skills/tree/main/skills/xlsx">.xlsx</a> spreadsheets
+   * Microsoft Powerpoint for pptx presentation files.
+   * PDF <a target="_blank" href="https://github.com/anthropics/skills/tree/main/skills/pdf">.pdf</a>
+   <br /><br />
+
+The "Higgsfield Cowork Pack" enables, within a single Claude Cowork MCP, content-creator workflow automation that Cowork does not do.
+Running "setup-higghsfield-project" asks 7 questions about your brand to create a project-level CLAUDE.md spec file. 
+It then installs skill that saves creators from needing to bounce out. Open a browser tab, switch to Midjourney, design something there, download it, drag it back into Cowork. <a target="_blank" href="https://www.youtube.com/watch?v=JBDQ9SGgQrw&pp=ugUHEgVlbi1VUw%3D%3D">7 Skills Everyone Needs for the Future Economy</a>
+   * "character-looker" to save reusable characters, 
+   * "product-to-ad" to scrape product URLs for product images for saved characters to "/outputs/ads"
+   * "url-to-ad" to generate UGC ads into "/outputs/ads"
+   * "overnight-content" to schedule overnight runs to "/outputs/morning"
+   * "ig-carousel" to build cinematic Instagram carousels to "/outputs/carousels"
+   <br /><br />
 
 ??? edit a custom <strong>goals.md</strong> file which contains the priorities I want to <strong>achieve</strong> in my own life.
 
@@ -2250,7 +2290,6 @@ CoWork automates the use of <a href="#Connectors">Connectors</a>.
 Purpose -> Setup -> Skills -> Scheduling
 
 <strong>scheduled</strong>
-
 
    CAUTION: <a href="#CoWork">Cowork</a> activity is not captured in audit logs or Compliance APIs today, which is why it is not for regulated workloads. 
 
@@ -3010,26 +3049,39 @@ Additional certifications for sellers, architects, and developers.
 
 Exam Domains from <a target="_blank" href="https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2F8lsy243ftffjjy1cx9lm3o2bw%2Fpublic%2F1773274827%2FClaude+Certified+Architect+%E2%80%93+Foundations+Certification+Exam+Guide.pdf">Anthropic's Exam Guide.pdf</a>:
 
-1. 27% Agentic Architecture & Orchestration - how agents loop, coordinate with subagents, and enforce rules with hooks
-vs prompts. <a target="_blank" href="https://github.com/bomonike/claude-templates/blob/main/cca-domain-notes/cca-domain1-starter.md">STARTER</a>
+1. 27% Agentic Architecture & Orchestration - how agents loop, coordinate with subagents, and enforce rules with hooks vs prompts. <a target="_blank" href="https://github.com/bomonike/claude-templates/blob/main/cca-domain-notes/cca-domain1-starter.md">STARTER</a>
    * The Agentic Loop
    * Hub-and-Spoke Architecture
    * Prompts vs. Hooks
    * Anti-patterns: natural language parsing to determine loop termination; arbitrary iteration caps as the primary stopping mechanism; checking for assistant text as a completion indicator.
+   1. How to design multi-agent systems?
+   2. How coordinator delegates to sub-agents?
+   3. What happens when a sub-agent fails?
+   4. How to avoid anti-patterns that blow up in production?
+
 2. 18% Tool Design & MCP Integration - how Claude connects to external systems and how tool descriptions
 determine routing.
-   * Tool Descriptions
    * MCP Scoping
    * Tool overload
+   1. Standard to connect AI systems to external tools and data sources?
+   1. How to write Tool Descriptions that don't confuse the model
+   1. How to configure MCP servers correctly.
+   1. How to return structured errors that a coordinate can use to recover?
+
 3. 20% Claude Code Configuration & Workflows - skills, commands, plan mode, and CI/CD.
    * Configuration Hierarchy
    * When to Use What
    * CI/CD Integration
+   1. How CLAUDE.md files work at different levels - user, project, and profile?
+   1. How to run Claude code in CI/CD pipelines without it hanging?
+   1. 
+
 4. 20% Prompt Engineering & Structured Output - structured output with JSON schemas, and validation
 loops.
    * Few-Shot Advantage
    * Guaranteed structured output with JSON schemas
    * Validation Loop
+
 5. 15% Context Management & Reliability
    * Context Window Problem ('lost in the middle' effect)
    * When to Escalate (escalation patterns)
@@ -3038,6 +3090,15 @@ loops.
    * <a target="_blank" href="https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk">Building Agents with the Claude Agent SDK</a> covers context management, error propagation, and escalation design
    * <a target="_blank" href="https://platform.claude.com/docs/en/agent-sdk/overview">Agent SDK session docs</a> for resumption, fork_session, /compact
    * <a target="_blank" href="https://github.com/affaan-m/everything-claude-code">Everything Claude Code repo</a> by <a target="_blank" href="https://www.linkedin.com/in/affaanmustafa/">Affaan Mustafa</a> for battle-tested context management patterns, scratchpad files, and strategic compaction. <a target="_blank" href="https://x.com/affaanmustafa/status/2012378465664745795">Tools and Tips</a>.
+
+References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=mVHpPVE3O70">"Claude Certified Architect - Full Breakdown"</a> by Tech With Deepanshu for K21
+   * <a target="_blank" href="https://www.youtube.com/watch?v=mVHpPVE3O70">VIDEO</a> by <a target="_blank" href="https://www.linkedin.com/in/paullarionov">Paul Larionov</a> referencing github.com/paullarionov/claude-certified-architect, https://github.com/paullarionov/claude-code-best-practice, https://github.com/paullarionov/claude-code-commands-cheatsheet, https://github.com/paullarionov/claude-code-ultimate-guide, https://github.com/paullarionov/everything-claude-code
+   https://github.com/paullarionov/magic-resume
+   * <a target="_blank" href="https://www.youtube.com/watch?v=_2bZZw68l4Y&pp=ygUaQ2xhdWRlIENlcnRpZmllZCBBcmNoaXRlY3Q%3D">"Claude Certified Architect Exam Explained Before It Goes Public"</a> by Baleelo
+
+   <br /><br />
+
 
 <br /><br />
 
@@ -3581,7 +3642,18 @@ https://brockster6202.gumroad.com/
 * 380+ Free Claude Cowork Skills
 * 9 Claude Cowork Skills I Can’t Live Without (steal them)
 * Claude Cowork x Higgsfield Plugin
-* 15 Claude Cowork Skills I Can’t Live Without (steal them)
+<br /><br />
+
+
+
+## References
+
+https://www.youtube.com/watch?v=Nmr02XA9n1o
+How To Use Claude Code In Vscode - Learn AI In 5 Minutes Series
+by Jonathan Acuña - Doctor AI
+
+https://www.youtube.com/watch?v=qNskXaMfIjE
+Claude Code in VS Code Full Course: Build & Deploy apps to Railway in 60 Minutes
 
 
 <hr />
