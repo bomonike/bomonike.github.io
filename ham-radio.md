@@ -1,23 +1,75 @@
 ---
-date: "2025-11-22"
-lastchange: "25-11-22 v005 + who are you :ham-radio.md"
+date: "2026-06-02"
+lastchange: "26-06-02 v006 Yeasu VX-6 @ham-radio.md"
 url: "https://bomonike.github.io/ham-radio"
-file: "ham-radio.md"
+file: "ham-radio"
+title: "Ham Radio"
 created: "2024-05-14"
 ---
 
 <a target="_blank" href="https://bomonike.github.io/ham-radio"><img align="right" width="100" height="100" alt="ham-radio.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/ham-radio.png?raw=true" />
 
-I'm KK7UFL.
-
-So many are getting on this for emergencies.
+I'm licensed as KK7UFL.
 
 But "who are you and why should I help you?"
 
+## Why?
+
+Many got on this for emergencies.
+
 PROTIP: Before an emergency, figure out who you can help and who can help you.
+
+I stumbed onto a Yaesu VX-6, a submersible 5W handheld ham radio.
+It's <a target="_blank" href="https://www.instructables.com/How-to-program-a-Yaesu-VX6-ham-radio/">hammenu-driven</a>.
+1. charge it.
+1. power up by pressing and holding the orange button. Check battery voltage. The radio shows voltage at startup, and a weak battery will cause poor performance.
+
+   REMEMBER: The battery is fully charged at 8.3 volts and fully discharged at 7.3 volts.
+
+1. Identify the <a target="_blank" href="https://www.radioreference.com/db/browse/ctid/1649/ham">frequencies and tone of repeaters in your area</a>. For example:
+
+   https://uwyellowstone.galaxydigital.com/agency/detail/?agency_id=80383
+
+   | Location | Frequency | Callsign | Tone | Notes |
+   | Red Lodge Mountain | 147.000 (+0.6) | WB7RIS | 100.0 PL | Main Red Lodge repeater  |
+   | Red Lodge Mountain | 147.360 (+0.6) | K7EFA | 100.0 PL | Yellowstone Radio Club  |repeater 
+   | Red Lodge Mountain | 449.900 (-5) | KE7FEL | 100.0 PL | 70cm Red Lodge repeater  |
+   | Billings | 147.080 (+0.6) | WR7MT | 100.0 PL | Main Billings repeater  |
+   | Billings | 147.300 (+0.6) | K7EFA | 100.0 PL | Yellowstone Radio Club repeater  |
+   | Billings | 449.250 (-5) | W7JDX | 100.0 PL | RF Hill location |
+
+1. To type in a frequency directly, press the V/M key to switch (from manual) to <strong>VFO mode</strong>.
+1. Type a frequency. It can transmit on amateur bands: 2 meters, 70 cm, and 1.25 m.
+
+1. save it to memory. 
+
+1. If you are using simplex or a repeater that requires a tone (such as 100.0 PL), press the red F/W then the Mode (SQ TYP) button to enable selection of the CTCSS (Continuous Tone-Coded Squelch System) mode.
+1. Rotate the dial on the top right of the radio until "TONE" appears on the display. This activates the CTCSS encoder for repeaters that require a tone.
+
+1. Press the red F/W key then the 2 (CODE) button to enter the tone frequency adjustment menu.
+1. Use the dial on the top right corner of the radio to select the desired frequency.
+1. Press the black rubber PTT button on the left side of the radio to exit the menu.
+1. Press and hold the F/W button for one second.
+
+   The microprocessor automatically selects the next unused memory channel so unless you want to change this proceed to the next step. To change the memory channel that your selection will be stored in rotate the dial on the top right of the radio. Note, this menu only stays open for a brief period.
+
+1. Press the red F/W key again to store the frequency and repeater information in memory.
+1. The VX-6 is now back in VFO mode so you can enter frequencies directly or save more by following the instructions again.
 
 
 ## Goverment & Community bands
+
+<a target="_blank" href="https://www.aoml.noaa.gov/general/graphics/lib/radio.html">NOAA weather service</a> transmits 29 VHF-FM stations with a 40 mile range. [<a target="_blank" href="https://en.wikipedia.org/wiki/NOAA_Weather_Radio">Wikipedia</a>: daily schedule]
+   * 162.400 MHz
+   * 162.425 MHz
+   * 162.450 MHz
+   * 162.475 MHz
+   * 162.500 MHz
+   * 162.525 MHz
+   * 162.550 MHz on 1,000 watts in SF bay
+   <br /><br />
+
+There is no station for all of MT at <a target="_blank" href="https://www.weatherusa.net/radio">https://www.weatherusa.net/radio</a>.
 
 The FCC (Federal Communications Commission) in the US, and its equivalent in each country (except Yemen and North Korea) have rules on how its citizens can use the airwaves.
 
@@ -25,15 +77,6 @@ The US NIST operates two Short Wave radio stations which broadcast atomic clock 
 <a target="_blank" href="https://www.nist.gov/pml/time-and-frequency-division/time-distribution/radio-station-wwv">WWV</a> near Fort Collins, Colorado & WWVH in Hawaii
 10 000 W on 5 MHz, 10 MHz, and 15 MHz; and 2500 W on 2.5 MHz and 20 MHz.
 
-Listen to https://www.weatherusa.net/radio from <a target="_blank" href="https://www.aoml.noaa.gov/general/graphics/lib/radio.html">NOAA weather service</a> 29 VHF-FM transmitters have a 40 mile range. [<a target="_blank" href="https://en.wikipedia.org/wiki/NOAA_Weather_Radio">Wikipedia</a>: daily schedule]
-   1. 162.550 MHz on 1,000 watts in SF bay
-   2. 162.400 MHz
-   3. 162.475 MHz
-   4. 162.425 MHz
-   5. 162.450 MHz
-   6. 162.500 MHz
-   7. 162.525 MHz
-   <br /><br />
 Increasingly, Police and Fire use encrypted communications on P25 systems.
 
 For Search and Rescue, automated distress signals are sent on Channel 70 on VHF as a dedicated frequency that's monitored continuously by radios enabled by DSC (Digital Selective Calling) as a vital part of the Global Maritime Distress and Safety System (GMDSS).
