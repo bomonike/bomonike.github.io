@@ -994,6 +994,9 @@ falls to cavalry of Yuan dynasty (1271-1368) (Tartars) commanded by nomadic Mong
 <br /> 1356 Koreans overthrow Mongols
 <br /> John Wycliffe (1329-1384) translates Latin Bible into English & converts England
 <br /> Timur the Lame (1369-1405)
+<br /> 1356 Edward III of England, requires all men to practice pulling 160 pound longbows with steel Boydkin tips on euwood shafts to fly accurately 200 yards to piece French armor at Cresi 
+<br /> 1356 at Portier, the English Black Prince captures French king John.
+<br /> Agincourt Henry III speech Shakespeare rousing paid Yeomen longbowmen
 <br /> 1368-1408 Yoshimitsu is third Shogun of Japan
 <br /> 1368-1611 Ming (&#8220;brilliant&#8221;) dynasty in China
 <br /> July 6, 1415 Bohemian pastor John Hus, singing, burns for heresy in Prague.
@@ -1081,7 +1084,7 @@ Mayflower Compact</a> drafted by <a target="_blank" rel="noopener noreferrer" hr
 <a target="_blank" rel="noopener noreferrer" href="http://www.autopenhosting.org/mayflowerhistory/passenger.html"> Pilgrims</a>
 upon their landing at Provincetown on Cape Cod, Mass.<br />
 1623 William Shakespeare's plays are published in book form for the first time.
-<br /> (1624-1691) <a target="_blank" rel="noopener noreferrer" href="http://search.biography.com/print_record.pl?id=8623"> George Fox</a> establishes the Quaker church.
+<br /> (1624-1691) George Fox establishes the Quaker church.
 <br /> 1644-1911 Ch'ing dynasty rules into a republic
 <br /> 1640 John Harvard establishes university to educate clergy in Boston.
 <br /> 1648 Peace of Westphalia ends 30 Year War.
@@ -1106,10 +1109,9 @@ Israel ben Eliezer (1700-1760) the Ba'al Shem Tov (Master of the Good Name) Hasi
 <br /> 1693 Jacob Ammon and his followers in Old Order Amish break from Mennonites.
 <br /> 1704 British Duke of Marlborough limits French power in Battle of Blenheim, Germany.
 <br /> 1709 Peter the Great of Russia defeat Swedes under Charles XII to control the Baltic Sea in the Battle of Poltava, Ukraine.
-<br /> (1703-1791) <a target="_blank" rel="noopener noreferrer" href="http://search.biography.com/print_record.pl?id=6853"> John</a> and Charles Wesley (author of Easter hymn <a target="_blank" rel="noopener noreferrer" href="http://www.hymntime.com/tch/htm/c/l/r/t/clrtodac.htm">"Christ The Lord Is Risen Today"</a> initiate the Methodist movement.
-<br /> 1734-1770 Great Awakening led by <a target="_blank" rel="noopener noreferrer" href="http://search.biography.com/print_record.pl?id=14527"> Jonathan Edwards</a> from Boston, MA.  On
-8 July 1741 delivers <a target="_blank" rel="noopener noreferrer" href="http://www.gospelcom.net/rbc/ds/q0602/point1.html"> Sinners in the Hands of an Angry God</a> and other <a target="_blank" rel="noopener noreferrer" href="http://home.navisoft.com/outreach/Edwards.html">
-other sermons</a>
+<br /> (1703-1791) John and Charles Wesley (author of Easter hymn <a target="_blank" rel="noopener noreferrer" href="http://www.hymntime.com/tch/htm/c/l/r/t/clrtodac.htm">"Christ The Lord Is Risen Today"</a> initiate the Methodist movement.
+<br /> 1734-1770 Great Awakening led by Jonathan Edwards from Boston, MA. On
+<br /> 8 July 1741 delivers <a target="_blank" rel="noopener noreferrer" href="http://www.gospelcom.net/rbc/ds/q0602/point1.html">"Sinners in the Hands of an Angry God"</a> and other sermons
 <br /> Easter, 1742, Handel's Messiah first performed in Dublin, Ireland.
 <br /> 1752 England and the American colonies had 354 days becuase of a calendar change lost 11 days.
 <br /> 1756-1763 England and Prussia wins Seven Years War against Austria and France over control of Germany.
@@ -1143,8 +1145,7 @@ Over a 1,000 militia poured onto the Battle Road killed over 270 British soldier
 <br /> 1808 importation of slaves from other countries banned by U.S. Congress
 <br /> 1821-1829 Greek War of Independence from Turkey.
 <br /> June 18, 1815 Napoleon defeated by British Duke Wellington at Waterloo, Belgium. ;)
-<br /> 1821 <a target="_blank" rel="noopener noreferrer" href="http://search.biography.com/print_record.pl?id=14752">
-Charles Finney</a> (1792-1875) conducts evangelist campaigns through New England before pastoring Oberlin, Ohio.
+<br /> 1821 Charles Finney (1792-1875) conducts evangelist campaigns through New England before pastoring Oberlin, Ohio.
 <br /> 1825-1830 Java War of Indonesians against Dutch.
 <br /> 1830 Mormon church is organized by Joseph Smith at Nauvoo, Illinois.
 <br /> 1839 The first <a target="_blank" rel="noopener noreferrer" href="http://www.baseballhalloffame.org/">
