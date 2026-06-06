@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-02"
-lastchange: "26-06-02 v040 Hastings remove p> @history.md"
+date: "2026-06-06"
+lastchange: "26-06-06 v042 Pius 1799 @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -43,14 +43,20 @@ Over the years, I reference this page when watching documentaries, traveling to 
 
 ## About the Future
 
+> "Trying to plan for the future without regard for the past is like trying to plant cut flowers."<span style="white-space:nowrap">&mdash;Daniel Boorstin, Historian</span>
+
+> Noah built the ark before the flood.
+
+> Joseph interpreted Pharaoh's dream before the famine.
+
+> Jesus warned Jerusalem before its destruction.
+
 > "... the sons of Issachar had understanding of the times, to know what Israel ought to do,&#8221; <a target="bible" href="https://www.blueletterbible.org/kjv/1ch/12/32/s_350032"><span style="white-space:nowrap">&mdash;1 Chronicles 12:32</span> (KJV)</a>
 
 > "I like the dreams of the future better than the history of the past.&#8221;
 <span style="white-space:nowrap">&mdash;Thomas Jefferson</span>
 
 > "We celebrate the past to awaken the future."<span style="white-space:nowrap">&mdash;John F. Kennedy, August 14, 1960</span>
-
-> "Trying to plan for the future without regard for the past is like trying to plant cut flowers."<span style="white-space:nowrap">&mdash;Daniel Boorstin, Historian</span>
 
 
 ## Jokes and Quotes
@@ -1135,7 +1141,8 @@ Over a 1,000 militia poured onto the Battle Road killed over 270 British soldier
 <br />
 <a id="PopeStoppedz"></a>
 	1798 Nepolean's general enters Rome to depose pope (Rev. 13:15, 17:10), ending 42 months=years (Ezekiel 4:6) of papal supremecy.
-<br /> 1797 Napoleon conquers Venice
+<br /> 1797 Napoleon conquers Venice, then Rome
+<br /> Aug 29, 1799 Pope Pius VI dies in a Valence, France prison
 <br /> 1799 Rosetta Stone found in Egypt during Napoleon's campaign in Egypt. Went to Berlin, then to the British Museum in 1802. The three languages saying the same things was the key to deciphering Egyptian hieroglyphics. It's now in the <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/vLeBn5LCuMGYe2s4A">Grand Egyptian Museum in Cairo</a> (GEM).
 
 <br /> 1805 Unitarians take over Harvard University board
@@ -1144,7 +1151,8 @@ Over a 1,000 militia poured onto the Battle Road killed over 270 British soldier
 <br /> 1806 Frances II renounces the title of Roman Empire.
 <br /> 1808 importation of slaves from other countries banned by U.S. Congress
 <br /> 1821-1829 Greek War of Independence from Turkey.
-<br /> June 18, 1815 Napoleon defeated by British Duke Wellington at Waterloo, Belgium. ;)
+<br /> June 18, 1815 Napoleon defeated by British Duke Wellington at Waterloo, Belgium.
+<br /> Congress of Vienna and Rothchilds finances the Vatican <a target="_blank" href="https://www.youtube.com/watch?v=Bwt-pIxekMQ">VIDEO</a>
 <br /> 1821 Charles Finney (1792-1875) conducts evangelist campaigns through New England before pastoring Oberlin, Ohio.
 <br /> 1825-1830 Java War of Indonesians against Dutch.
 <br /> 1830 Mormon church is organized by Joseph Smith at Nauvoo, Illinois.
