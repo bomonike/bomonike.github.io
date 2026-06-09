@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-24"
-lastchange: "26-05-24 v013 film @norway.md"
+date: "2026-06-08"
+lastchange: "26-06-08 v014 Kinds Choice @norway.md"
 url: https://bomonike.github.io/norway
 file: "norway"
 title: "Norway"
@@ -106,8 +106,12 @@ Words in italics here identify Norwegian words.
 
 To better understand the Norwegian history and language, first view <a target="_blank" href="https://www.youtube.com/watch?v=8O5uGzJ9jQM&t=35s">VIDEO</a>: Royal lineage of Norwegian royalty, starting with King Harald Fairhair (872-931) based on Islandic sagas written hundreds of years later. 
 
-The official language of Norway was Danish during the 400 year union with Denmark until 1814 when Norway was ceded from Denmark to Sweden. 
-Then it was Swedish due to the 90 year union with Sweden until 1905. 
+The official language of Norway was Danish during the 400 year union with Denmark until 1814 when Norway was ceded from Denmark to Sweden for 90 years.
+
+In June, 1905, the Parliament of Norway resolved to end the union with Sweden.
+The people chose constitutional monarchy as its form of government.
+Prince Carl of Denmark was offered the throne of Norway.
+
 Every year on May 17 <em lang="no">Syttende Mai</em> "Constitution Day" parades celebrate independence from Sweden (referenced in the opening of the TV series "Occupied").
 
 <a target="_blank" href="https://www.youtube.com/watch?v=TXVvCvQwFoo">VIDEO</a>:
@@ -518,6 +522,7 @@ Dubbed in English for the US:
    * https://www.wikiwand.com/en/Elling
    * <a target="_blank" href="https://www.justwatch.com/us/movie/trolls">Trolls</a> (2016) Dreamworks $3.79 rent
    * <a target="_blank" href="https://www.justwatch.com/us/movie/trolls-world-tour">Trolls World Tour</a> (2020) Dreamworks $3.79 rent
+   * Amazon Prime: <a target="_blank" href="https://www.imdb.com/title/tt4353996/">The King's Choice</a> (English subtitles) "April 1940. Norway has been invaded by Germany and the royal family and government have fled into the interior. The German envoy to Norway tries to negotiate a peace. Ultimately, the decision on Norway's future will rest with the king."
 
 On Freevee (with commercials):
    * <a target="_blank" href="https://www.imdb.com/title/tt10147580/">"Three Wishes for Cinderella"</a> <em lang="no">Tre nøtter til Askepott</em> (2021) "A Cinderella story: in snow-heavy forests the heroine battles against her evil stepmother for her dream of meeting the handsome prince. This is a breathtaking ride featuring brilliant archery and a gorgeous palace ball."
