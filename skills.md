@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-03-11"
-lastchange: "26-03-11 v007 cider alcohol :skills.md"
+date: "2026-06-09"
+lastchange: "26-06-09 v008 slings @skills.md"
 url: https://bomonike.github.io/skills
 file: "skills"
 title: "Skills"
@@ -244,6 +244,20 @@ https://www.youtube.com/@AgPhD/shorts
 
 * Hiding
 * Hand-to-hand combat
+* <a target="_blank" href="https://www.youtube.com/watch?v=6sLozwbSlEs">Slings</a> throwing lead balls at 235 mph
+
+   | Caliber | Avg. Muzzle Energy Jules |
+   | .22 LR | ~160 J |
+   | .32 ACP | ~175 J |
+   | .380 ACP | ~250 J |
+   | .38 Special | ~300 J |
+   | .45 ACP | ~480 J |
+   | 9mm Luger | ~550 J |
+   | .40 S&W | ~580 J |
+   | .357 Magnum | ~780 J |
+   | 10 mm Auto | ~815 J |
+   | .44 Magnum | ~1,500 J |
+
 * Knife handling
 * Dart throwing
 * Bow and arrows
