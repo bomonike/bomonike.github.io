@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-25"
-lastchange: "26-05-25 v220 networking @README.md"
+date: "2026-06-13"
+lastchange: "26-06-13 v221 php @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -27,6 +27,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ai-benchmarks">ai-benchmarks</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-glossary">ai-glossary</a>
 1. <a target="_blank" href="https://bomonike.github.io/ai-providers">ai-providers</a>
+1. <a target="_blank" href="https://bomonike.github.io/airgapped-local">airgapped-local</a>
 1. <a target="_blank" href="https://bomonike.github.io/alexa">alexa</a>
 1. <a target="_blank" href="https://bomonike.github.io/algorithmic-complexity">algorithmic-complexity</a>
 1. <a target="_blank" href="https://bomonike.github.io/anthropic-certs">anthropic-certs</a>
@@ -138,6 +139,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/neo4j">neo4j</a>
 1. <a target="_blank" href="https://bomonike.github.io/netbox">netbox</a>
 1. <a target="_blank" href="https://bomonike.github.io/networking">networking</a>
+1. <a target="_blank" href="https://bomonike.github.io/nextcloud">nextcloud</a>
 1. <a target="_blank" href="https://bomonike.github.io/nft">nft (Non-Fungible Tokens) on web3</a>
 1. <a target="_blank" href="https://bomonike.github.io/nvidia">nvidia</a>
 
@@ -154,12 +156,14 @@ Topics alphabetically:
 
 1. <a target="_blank" href="https://bomonike.github.io/palantir">palantir</a>
 1. <a target="_blank" href="https://bomonike.github.io/personal-data-security">personal-data-security</a>
+1. <a target="_blank" href="https://bomonike.github.io/macos-php">macos-php</a>
 1. <a target="_blank" href="https://bomonike.github.io/pid">pid</a> (Proportional Integral Derivative)
 1. <a target="_blank" href="https://bomonike.github.io/plc">plc</a> (Programmable Logic Controllers & Industrial Automation with Ignition from InductiveAutomation.com, etc.)
 
 1. <a target="_blank" href="https://bomonike.github.io/podcasts">podcasts</a>
 1. <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
 1. <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
+1. <a target="_blank" href="https://bomonike.github.io/prod-macos-backend">prod-macos-backend</a>
 1. <a target="_blank" href="https://bomonike.github.io/prompt-engineering">prompt-engineering</a> using DPSy to automate better prompts using LLMs.
 1. <a target="_blank" href="https://wilsonmar.github.io/python-exams">python-exams</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
