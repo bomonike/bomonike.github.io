@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-02"
-lastchange: "26-06-02 v051 brock @anthropic-claude.md"
+date: "2026-06-13"
+lastchange: "26-06-13 v051 brock @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -92,7 +92,26 @@ Claude competes with agentic coding tools (aka coding agent IDEs and CLI) that r
    * Pi.dev by Mario Zechner.
    <br /><br />
 
-https://www.tbench.ai/leaderboard (Terminal Bench Leaderboard) provides benchmarks AI agents' terminal mastery operating the <a target="_blank" href="https://www.harborframework.com/">harbor framework</a>.
+   To avoid AI vendor lock-in, Mike Faffenberger at Walmart open-sourced "Code Puppy" Claude wrapper 
+   <a target="_blank" href="https://www.youtube.com/shorts/JCsop-O0pT0">VIDEO</a>
+   https://github.com/mpfaffenberger/code_puppy
+   <a target="_blank" href="https://www.youtube.com/watch?v=D2p_nh5wN0U">VIDEO</a>
+   It includes a DBOS plugin for durable execution  that survives crashes for long agent runs.
+
+<a target="_blank" href="https://www.tbench.ai/leaderboard">tbench.ai (Terminal Bench)/Leaderboard</a>
+provides benchmarks AI agents' terminal mastery operating the <a target="_blank" href="https://www.harborframework.com/">harbor framework</a>.
+
+<a target="_blank" href="https://artificialanalysis.ai/models/">artificialanalysis.ai/models</a>
+human Comparison of Models: Intelligence, Performance & Price Analysis
+
+<a target="_blank" href="https://openlm.ai/chatbot-arena/">https://openlm.ai/chatbot-arena/</a>
+specifically for "Coding" work rates Sonnet 3.5 slightly higher than Opus 3.
+s based on the following benchmarks. The leaderboard presents 3 benchmarks:
+   * Arena - a crowdsourced, randomized battle platform for large language models (LLMs). We use 6M+ user votes to compute Elo ratings.
+   * AAII - Artificial Analysis Intelligence Index v3 aggregating 10 challenging evaluations.
+   * ARC-AGI - Artificial General Intelligence benchmark v2 to measure fluid intelligence.
+   <br /><br />
+QUESTION: Are ratings from proprietary models worth the money versus lower-rated MIT licenses from Chinese Z.ai, DeepSeek, Xiaomi, Kimi, MiMo, etc.?
 
 
 <a name="Support"></a>
@@ -136,6 +155,8 @@ WARNING: BLAH: Anthropic doesn't offer phone or live chat support, only thru <a 
    That is why instead of human employees, companies will be <a href="#Pricing">paying for AI tokens</a> to do work. That's the basis for high valuations and unpresedented investments in gigantic data centers using AI chips.
 
 * <a href="#CoWork">Claude CoWork</a> can interact with you computer's files, mouse, keyboard, and screen, to operate any app. <a target="_blank" href="https://www.youtube.com/watch?v=rlIy7b-3DC8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>
+
+* Claude Artefacts are full executable apps such as games that can be published for others to use.
 
 * "computer use" can open native applications, click through user interfaces, test its own changes, and fix what breaks — all from a developer's terminal. Combined with existing debugging workflows, these features move Claude Code closer to autonomous identification and resolution of bugs during development.
 
@@ -240,6 +261,8 @@ Automation provided by AI agents have gone beyond auto-complete of code.
 <a name="Pricing"></a>
 
 ## Pricing/Billing
+
+> Ironic: corporations replace humans with AI that “work continuously and never ask for raises.” But then Claude AI hard stops after 5 hours and automatically increase prices without notice.
 
 REMEMBER: There are several ways to pay for Claude:
 
@@ -1465,10 +1488,12 @@ The Workflow Cheatsheet provides an important decoder to remember:
    <a target="_blank" href="https://www.youtube.com/watch?v=Cyn_Dm05_eU&t=1m44s" title="by Alex Ziskind">VIDEO</a>: Instead of "Download" at<br />
    <a target="_blank" href="https://lmstudio.ai/blog/claudecode/">https://lmstudio.ai/blog/claudecode</a>
    ```bash
-   brewin --cask lm-studio
+   brew install --cask lm-studio
    ```
 
-
+https://www.youtube.com/watch?v=S_oN3vlzpMw
+"How AI agents & Claude skills work (Clearly Explained)"
+by Greg Isenberg interviewing Ras Mic
 
 
 <a name="StartClaude"></a>
@@ -1478,6 +1503,24 @@ The Workflow Cheatsheet provides an important decoder to remember:
 1. <img align="right" alt="claude-enable-devmode.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1778929267/claude-enable-devmode_baa3f3.png"></a>To set Claude to use alternative models other than Anthropic's own, when Claude prompt appears, click the Help top menu, then "Enable Developer Mode".
 
 1. Select model???
+
+
+<a name="ClaudeChat"></a>
+
+## Claude Chat
+
+From your Finder app, drag a file and drop it on Claude Chat. Refer to the file with a prompt such as:
+
+"Analyze key findings from the data in a report published as an artifact."
+
+REMEMBER: In Claude Chat, 30 MB per file max and up to 20 files per chat.
+However, Claude Code has no file limits.
+
+
+### Screen shot in a prompt
+
+To take a screen shot on macOS, press the usual command + Shift + 4 which changes the cursor to crosshairs. Position it on the screen and press your mouse to drag and drop to the opposite corner of the box to capture the section to your computer's invisible clipboard. Click the Claude input field and press control + V to paste. "[Image #1]" would appear to confirm. To the right of that, type a sentence to specify what you want done based on that image.
+
 
 
 <a name="ClaudeDesktopUI"></a>
@@ -1624,10 +1667,6 @@ REMEMBER: Press the Esc key to interrrupt Claude.
 
 Within prompts, type @ to begin specifying a file's path pointing to contents to retrieve in your request to Claude.
 
-
-### Screen shot in a prompt
-
-To take a screen shot on macOS, press the usual command + Shift + 4 which changes the cursor to crosshairs. Position it on the screen and press your mouse to drag and drop to the opposite corner of the box to capture the section to your computer's invisible clipboard. Click the Claude input field and press control + V to paste. "[Image #1]" would appear to confirm. To the right of that, type a sentence to specify what you want done based on that image.
 
 
 
@@ -2178,22 +2217,26 @@ hooks/todo-enforcer.config.json
    ### Artifacts
 
    <a href="#ClaudeDesktopUI"><img align="right" width="150" alt="claude-app-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1774594600/claude-app-menu_qr26in.png" /></a>
-1. Click "+ New artifacts". Artifiacts are pre-coded small interactive apps such as Productivity Tools.
+1. Click "+ New artifacts". Claude Artifiacts are <strong>separate dedicated panel</strong> (workspace) that display self-contained working outputs from a small app, HTML page, document, code, diagram (interactive component) you can preview, revise, and reuse without digging through the conversation.
+
 1. Click "Artifacts" on the menu and under its "Inspiration" tab, try:
-   * click "Flashcards" and provide a CSV file.
    * Click "QR code generator".
+   * Click "CSV Data Visualizer".
+   * click "Flashcards" and provide a CSV file.
    * Click "Trivia" game.
    * Click "Better than very" to find more expressive words.
-   * Click "CSV Data Visualizer".
+   <br /><br />
 
 1. To create your own automations, consider the "<a href="#CoWork">Cowork</a>" button at the top of the Claude app.
 
    <a href="#CoWork">Cowork</a> and Projects both require a Pro Plan subscription.
 
+   TODO: Stats from your own Weather station
    
-   <a name="Connectors"></a>
 
-   ### Connectors
+<a name="Connectors"></a>
+
+## Connectors
 
 1. Click one Category at a time to see what's available already: Code, Communication, Data, Design, Development, Financial Services, Health, Life sciences, Productivity, Sales and Marketing.
 
@@ -3648,11 +3691,11 @@ https://brockster6202.gumroad.com/
 
 ## References
 
-https://www.youtube.com/watch?v=Nmr02XA9n1o
+<a target="_blank" href="https://www.youtube.com/watch?v=Nmr02XA9n1o">VIDEO</a>
 How To Use Claude Code In Vscode - Learn AI In 5 Minutes Series
 by Jonathan Acuña - Doctor AI
 
-https://www.youtube.com/watch?v=qNskXaMfIjE
+<a target="_blank" href="https://www.youtube.com/watch?v=qNskXaMfIjE">VIDEO</a>
 Claude Code in VS Code Full Course: Build & Deploy apps to Railway in 60 Minutes
 
 
