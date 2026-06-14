@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-18"
-lastchange: "26-05-18 v044 webchats @ai-providers.md"
+date: "2026-06-13"
+lastchange: "26-06-13 v045 crosscheck @ai-providers.md"
 url: "https://bomonike.github.io/ai-providers"
 file: "ai-providers"
 title: "AI Providers"
@@ -77,6 +77,7 @@ Devstral
 * Website
 * API access provides a way to <strong>batch</strong> work at discounted pricing.
 
+* <a target="_blank" href="https://www.linkedin.com/labs/crosscheck/">LinkedIn's CrossCheck</a> provides a prompt UI that goes to two different LLMs so you can compare (crosscheck).
 
 <a name="Models"></a>
 
