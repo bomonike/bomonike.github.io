@@ -32,6 +32,39 @@ created: "2014-08-09"
 
    <a target="_blank" href="https://www.php.net/manual/en/">https://www.php.net/manual/en/</a>
 
+## Certifications
+
+   <a target="_blank" href="https://www.zend.com/training/php-certification-exam">"Zend PHP Certified Engineer"</a> is a well-known vendor-specific exam for PHP developers. For $200 for testing or $1295 with a class to Perforce, 
+
+   <a target="_blank" href="https://certiport.pearsonvue.com/Certifications/IC3/Digital-Literacy-Certification/Certify/IC-PHP-Developer-Fundamentals.aspx">"PHP Developer Fundamentals" exam</a> from IC3 (administered by Pearson) is the entry-level PHP exam. Answer 70% of 40 questions over 50 minutes online Certiport Console 8.
+   The IC PHP covers nine domains of knowledge and skill:
+
+   1. Development Environment: Web server and database MySQL/MariaDB PhPMyAdmin
+   1. PHP Fundamentals: General notions
+         Style programming 
+         Limitation structure of the data
+         Manage the output of PHP script
+   1. Conditional instruction of control and cycles: Repetitive operations
+   1. Complex data structures: Arrays
+   1. PHP code management:
+      Re-use the PHP code
+      Functions for the variables management
+      The functions for the management, comparison and string formatting
+      The functions for the management of the complex structures of data
+      The functions for the management of the dates
+      Customized functions
+      Send email in PHP
+   1. Data recovery and check in an HTML form
+   1. Maintain information in PHP: Sessions
+   1. The DBMS MySQL and MariaDB
+   1. Interaction with I DBMS MySQL and MariaDB
+
+To add generative AI to PHP programs, you can use <a target="_blank" href="https://github.com/llphant/llphant">LLPhant</a>, a comprehensive PHP Generative AI Framework using OpenAI GPT 4 Inspired by Langchain.
+Install it using command "composer require theodo-group/llphant".
+
+https://www.youtube.com/watch?v=lTr06V9uyts
+
+
 
 
 <a id="Version"></a>
