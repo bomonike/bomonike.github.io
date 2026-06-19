@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-13"
-lastchange: "26-06-13 v051 brock @anthropic-claude.md"
+date: "2026-06-19"
+lastchange: "v052 url fixes @anthropic-claude.md"
 url: "https://bomonike.github.io/anthropic-claude"
 file: "anthropic-claude"
 title: "Anthropic Claude AI Certifications"
@@ -184,7 +184,7 @@ REMEMBER: Anththropic does not <strong>host</strong> their own models but use AW
    <a target="_blank" href="https://bun.com/">BUN toolkit</a> (acquired by Anthropic in '25).
 
    <a target="_blank" href="https://www.youtube.com/watch?v=mBHRPeg8zPU">VIDEO</a>: Although Temporal is used on Claude,
-   the <a target='_blank" href="https://ccunpacked.dev">leak</a> revealed that Claude is vulnerable to the in remote access trojan from Axios 1.14.1 npm.
+   the <a target="_blank" href="https://ccunpacked.dev">leak</a> revealed that Claude is vulnerable to the in remote access trojan from Axios 1.14.1 npm.
    <a target="_blank" href="https://stepsecurity.io/">Get rid of the vulnerability</a>
    
    The team works at around 5 releases per engineer each day. AI agents are used for code reviews and tests, test-driven development’s (TDD) renaissance, automating incident response, and cautious use of feature flags. 
@@ -403,8 +403,8 @@ YouTube videos with no subscription:
    * <a target="_blank" href="https://www.youtube.com/watch?v=lNNH-Ox_r04" title="Viewed 25-03-25">VIDEO: "Claude Isn't Safe. This Anthropic Whistleblower Has the Proof."</a> by Novara Media quoting Mrinank Sharma's resignation letter.
    * <a target="_blank" href="https://www.youtube.com/watch?v=jw0pMr54Ztc&pp=ugUEEgJlbg%3D%3D">"The Ultimate Beginner’s Guide To Claude"</a> by <a target="_blank" href="https://www.aiedgehq.co/">AI Edge on Telegram</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=ntDIxaeo3Wg">"Claude Code - Full Tutorial for Beginners"</a> by Tech With Tim offering <a target="_blank" href="https://techwithtim.net/newsletter">newsletter</a>
-   * https://www.youtube.com/watch?v=aWAfpOi91vc&pp=ugUEEgJlbg%3D%3D">"Let Claude Cowork Work For You, here’s how"</a>
-   * https://www.youtube.com/watch?v=rSoeh6K5Fqo">"Making Claude Code more useful with TDD and XP Techniques"</a> by FeedbackDrivenDev
+   * <a target="_blank" href="https://www.youtube.com/watch?v=aWAfpOi91vc&pp=ugUEEgJlbg%3D%3D">"Let Claude Cowork Work For You, here’s how"</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=rSoeh6K5Fqo">"Making Claude Code more useful with TDD and XP Techniques"</a> by FeedbackDrivenDev
    * <a target="_blank" href="https://www.youtube.com/watch?v=pDoBe4qbFPE">"12 Hidden Settings To Enable In Your Claude Code Setup"</a> by AI LABS
    * <a target="_blank" href="https://www.youtube.com/watch?v=6SnFH43qPAw">"You Can Build The Craziest Things with Claudes Agent SDK"</a> by Traversy Media
    <br /><br />
@@ -414,7 +414,7 @@ YouTube videos offering subscriptions:
    * <a target="_blank" href="https://www.youtube.com/@Mark_Kashef ">YouTube</a> by <a target="_blank" href="https://www.linkedin.com/in/mkashef/">Mark Kashef</a> pushes <a target="_blank" href="https://www.skool.com/earlyaidopters/about">$64/mo Early AI-dopters</a>
    * <a target="_blank" href="https://youtu.be/2u93VTYvG5U" title="Viewed 25-03-25">"Claude Computer Use Just Dropped, Here's How to Hack It"</a> (Use the Min browsser to avoid blocking) to plug <a target="_blank" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=vDVSGVpB2vc" title="Viewed 25-03-25">"How to Build Claude Agent Teams Better Than 99% of People"</a> by Nate Herk - AI Automation of <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/about" title="Viewed 25-03-25">$99/mo AI Automation Society Plus</a>
-   * <a target="_blank" href="https://www.youtube.com/@zinhoautomates">Zinho Automates</a> https://www.skool.com/ai-launchpad/about</a>
+   * <a target="_blank" href="https://www.youtube.com/@zinhoautomates">Zinho Automates</a> <a target="_blank" href="https://www.skool.com/ai-launchpad/about">ai-launchpad</a>
    <br /><br />
 
 Brock Mesarich, on the <a target="_blank" href="https://www.youtube.com/@BrockMesarich">@BrockMesarich YouTube channel</a> aifornontechies.com
@@ -437,7 +437,7 @@ Others on YouTube:
    * <a target="_blank" href="https://www.youtube.com/watch?v=nLy3YYGJrjQ">"Claude Explained - Chat vs Cowork vs Code" by Oliur Online to plug <a target="_blank" href="https://www.oliur.com/resources">free resources</a> and <a target="_blank" href="https://digitalcreator.club/">$179/yr Digital Creator Club</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=F_i_s0L2aWY">"Claude Code Just Got 10X Powerful (10 Insane Features)</a> by The AI Growth Lab with Tom to push <a target="_blank" href="https://learnn8nautomation.com/claude-code-challenge">$500 one-time</a> "30 day Challenge"
    * <a target="_blank" href="https://www.youtube.com/watch?v=mpALXah_PBg">"Build & Sell with Claude Code (10+ Hour Course)"</a> by Nate Herk pushing <a target="_blank" href="https://www.skool.com/ai-automation-society-plus/">$99/mo AI Automation Society Plus</a>
-   * https://www.youtube.com/watch?v=UPtmKh1vMN8">"CLAUDE CODE ADVANCED: Everything They Don't Teach You"</a> by <a target-"_blank" href="https://nicksaraev.com/">Nick Saraev</a> pushing <a target="_blamk" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a> 2100.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=UPtmKh1vMN8">"CLAUDE CODE ADVANCED: Everything They Don't Teach You"</a> by <a target-"_blank" href="https://nicksaraev.com/">Nick Saraev</a> pushing <a target="_blamk" href="https://www.skool.com/makerschool/about">$184/mo Maker School</a> 2100.
    * <a target="_blank" href="https://www.youtube.com/watch?v=6SnFH43qPAw">"5 Open Source Repos That Make Claude Code UNSTOPPABLE (March 2026)"</a> by Chase AI <a target="_blank" href="https://www.skool.com/chase-ai/about">$97/mo Chase AI+</a> 837.
       - <a target="_blank" href="https://www.youtube.com/watch?v=6SnFH43qPAw&t=20s">AutoResearch</a> - https://github.com/karpathy/autoresearch
       - <a target="_blank" href="https://www.youtube.com/watch?v=6SnFH43qPAw&t=372s">OpenSpace</a> - https://github.com/HKUDS/OpenSpace
@@ -1500,7 +1500,7 @@ by Greg Isenberg interviewing Ras Mic
 
 ### Start Claude
 
-1. <img align="right" alt="claude-enable-devmode.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1778929267/claude-enable-devmode_baa3f3.png"></a>To set Claude to use alternative models other than Anthropic's own, when Claude prompt appears, click the Help top menu, then "Enable Developer Mode".
+1. <img align="right" alt="claude-enable-devmode.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1778929267/claude-enable-devmode_baa3f3.png">To set Claude to use alternative models other than Anthropic's own, when Claude prompt appears, click the Help top menu, then "Enable Developer Mode".
 
 1. Select model???
 
@@ -2261,7 +2261,7 @@ hooks/todo-enforcer.config.json
    export PATH="$HOME/.claude/bin:$PATH"
    ```
 
-   RECOMMENDED: In a Terminal, install <strong>Claude Code</a>
+   RECOMMENDED: In a Terminal, install <strong>Claude Code</strong>:
    ```dash
    brewin claude-code
    ```
@@ -2936,7 +2936,8 @@ Custom skills can be created, such at git@github.com:jarrodwatts/claude-code-con
    * vercel-react-best-practices
    <br /><br />
 
-<a target="_blank" href="https://www.youtube.com/watch?v=IjiaCOt7bP8">VIDEO</a>: Agent Skills</a> makes use of OpenAI's "open agent skills standard" (<a target="_blank" href="https://www.vibesparking.com/en/blog/ai/agent-skills/2026-01-15-agent-skills-open-standard-authoritative-guide/">released on December 18, 2025</a>), written in OpenAI Codex CLI, IDE Extension, Codex app. Google Gemini and DeepMind adopted it too. They's on <a target="_blank" href="https://skillsmp.com/">skillsmp.com marketplace</a>
+<a target="_blank" href="https://www.youtube.com/watch?v=IjiaCOt7bP8">VIDEO</a>: Agent Skills makes use of OpenAI's "open agent skills standard" (<a target="_blank" href="https://www.vibesparking.com/en/blog/ai/agent-skills/2026-01-15-agent-skills-open-standard-authoritative-guide/">released on December 18, 2025</a>), written in OpenAI Codex CLI, IDE Extension, Codex app. Google Gemini and DeepMind adopted it too. They's on <a target="_blank" href="https://skillsmp.com/">skillsmp.com marketplace</a>
+
 
 <a name="Troubleshooting"></a>
 
@@ -3610,9 +3611,9 @@ So consider a Code Container to mount every project into an <strong>isolated con
    claude auto-mode defaults
    ```
    References:
-   * https://www.youtube.com/watch?v=OBQtXEUe3Ik&pp=0gcJCdkKAYcqIYzv
+   * <a target="_blank" href="https://www.youtube.com/watch?v=OBQtXEUe3Ik&pp=0gcJCdkKAYcqIYzv">VIDEO</a>
 
-   * https://www.youtube.com/watch?v=brLhhkUqcn4&t=4h39m38s">Enabling claude sanbox mode</a> (bubblewrap)b  "is finicky".
+   * <a target="_blank" href="https://www.youtube.com/watch?v=brLhhkUqcn4&t=4h39m38s">Enabling claude sanbox mode</a> (bubblewrap)b  "is finicky".
    <br /><br />
 
 300ms startup time!
