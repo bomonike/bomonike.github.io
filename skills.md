@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-09"
-lastchange: "26-06-09 v008 slings @skills.md"
+date: "2026-06-18"
+lastchange: "v010 rice @skills.md"
 url: https://bomonike.github.io/skills
 file: "skills"
 title: "Skills"
@@ -115,6 +115,15 @@ Living in tents
 
 
 ## Cooking
+
+* Remove arsenic from white rice: <a target="_blank" href="https://www.youtube.com/watch?v=S0-NalQdxos&t=14m">VIDEO</a>
+   1. Buy white rice grown in California (not southern states with arsenic soil) from <a target="_blank" href="https://www.amazon.com/stores/LundbergFamilyFarms/page/75BBC85B-5ADD-4547-B530-0F5B7546E4A8">Lundberg</a>, Scramento Vally, Himalaya River aged a year Basmati, <a target="_blank" href="https://www.amazon.com/stores/LotusFoods/">Lotus Foods brand</a> SRI method. Basmati better insulin than sticky Sushi & Jasmine rice.
+   1. Rinse rice until water is clear.
+   1. Bring a pot of water at high heat to full boil. 
+   1. Add rice and boil for 5 minutes.
+   1. Drain water immediately.
+   1. Add fresh water at normal ratio to cook at lower heat.
+   1. Cooling rice reduces insulin.
 
 * Boil water to cook eggs, noodles, rice
 
@@ -258,6 +267,8 @@ https://www.youtube.com/@AgPhD/shorts
    | 10 mm Auto | ~815 J |
    | .44 Magnum | ~1,500 J |
 
+   <a target="_blank" href="https://safelifedefense.com/shop/iiia-plus-soft-armor-panels/ref/Tommy.Free.Field.Training/">$620 IIIA+ Soft Armor Panels</a> from SafeLifedefense.com
+
 * Knife handling
 * Dart throwing
 * Bow and arrows
@@ -349,3 +360,17 @@ Make Hard Lemon Soda Alcohol
 * https://www.youtube.com/watch?v=XFbunDgMTGs filming hobos in Austin, TX.
 
 * https://www.youtube.com/watch?v=SSitRqKIt48 50 survival tips
+
+https://youtu.be/-VxSMds9pn0
+store foof in #10 cans 
+https://www.houseofcans.com/105-oz-plain-inside-603-x-700-10-can-p-1798.html?ref_id=1798#1
+https://www.houseofcans.com/manual-can-sealer-equipped-to-seal-10-cans-p-1801.html?ref_id=384#1
+	$1,520.00
+https://www.lehmans.com/product/can-sealer-for-number-10-cans/ $1,499 hand cast aluminum
+
+https://www.youtube.com/watch?v=hHSpRhHFBE4
+https://www.youtube.com/watch?v=Fu_WyCTKNtk
+https://www.youtube.com/watch?v=EpxSaOiT2LE&pp=ugUEEgJlbg%3D%3D
+https://www.youtube.com/watch?v=ev9OjxuzoU8
+https://www.youtube.com/watch?v=zLNU6eR5--w&t=42s
+https://www.youtube.com/watch?v=n3PMfV9z5Qo&pp=ugUHEgVlbi1VUw%3D%3D
