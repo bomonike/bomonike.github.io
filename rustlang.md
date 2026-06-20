@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-23"
-lastchange: "26-05-23 v020 Deza classes @rustlang.md"
+date: "2026-06-19"
+lastchange: "v022 refs @rustlang.md"
 url: https://bomonike/rustlang
 file: "rustlang"
 title: "Rustlang (Rust language)"
@@ -121,6 +121,12 @@ RustLab Conference</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=s2Xk3dMTHg8">Virtual Lunch & Learn: Why you want to choose Rust for your next web service!</a> by CodeControl
 
 
+<a target="_blank" href="https://academy.extropy.io/pages/courses/rust-fundamentals-landing.html">COURSE</a>:
+Rust has become the industry standard for high-performance <strong>blockchain</strong> development. 
+Use Rust instead of Solidity.
+Rust is the native language for Solana, Near, and Polkadot, and is unlocking new performance levels on EVM (Etherium Virtual Machine) chains like Arbitrum Stylus. It also underpins the logic of Starknet. Whether you are building next-gen DeFi or high-frequency trading dApps, a solid foundation in Rust is your gateway to these ecosystems. 
+
+
 ## Social ecosystem
 
 Rust developers are called "Rustlings" or "Rustaceans".
@@ -142,6 +148,15 @@ RustCon Asia
 Rust LATAM
 
 Oxidize Global
+
+## References
+
+<a target="_blank" href="https://doc.rust-lang.org/book/">doc.rust-lang.org/book</a> "The official Rust Programming Language book"
+
+<a target="_blank" href="https://doc.rust-lang.org/rust-by-example/">doc.rust-lang.org/rust-by-example</a> "Rust by Example: Learn by doing with annotated examples"
+
+<a target="_blank" href="https://rustlings.rust-lang.org/">rustlings.rust-lang.org<a> "Rustlings: Small exercises to get you used to reading and writing Rust code"
+
 
 ## Learning Sequence
 
@@ -686,3 +701,26 @@ A Rust implementation of a genetic algorithm to solve the traveling salesman pro
 grafana/augurs
 Time series analysis for Rust, with bindings to Python and Javascript
 
+
+Rust has become the industry standard for high-performance blockchain development. It is the native language for Solana, Near, and Polkadot, and is unlocking new performance levels on EVM chains like Arbitrum Stylus. It also underpins the logic of Starknet. Whether you are building next-gen DeFi or high-frequency trading dApps, a solid foundation in Rust is your gateway to these ecosystems.
+
+https://academy.extropy.io/pages/courses/rust-fundamentals-landing.html
+Free video course: 
+Welcome to Rust Fundamentals, your guide to mastering the Rust programming language. This course is designed to take you from a beginner to a confident Rustacean, specifically tailoring examples and projects towards blockchain and smart contract development.
+
+Learn the Rust programming language with a focus on blockchain development, tailored for developers looking transition from other languages to Rust.
+   * Master Rust syntax and unique memory safety features
+   * Understand Ownership, Borrowing, and Lifetimes
+   * Work with Structs, Enums, and Pattern Matching
+   * Handle Errors gracefully with Result and Option types
+   * Apply functional programming patterns
+   * Strategies for migrating from Solidity to Rust
+
+1	Introduction to Rust	Why Rust: Memory Safety, Zero Cost Abstractions and Thread Safety.
+2	Ownership & References	Deep dive into Ownership, References, and Slices - the keys to Rust's memory safety.
+3	Types & Traits	Scalar and Compound types (Tuples, Arrays), Logic, and Introduction to Traits.
+4	Functional Rust & Errors	Functional programming patterns, Error Handling, and practical application.
+5	From Solidity to Rust	A guide for Solidity developers transitioning to Rust for blockchain development.
+
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
