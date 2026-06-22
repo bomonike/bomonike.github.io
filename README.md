@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-13"
-lastchange: "26-06-13 v221 php @README.md"
+date: "2026-06-22"
+lastchange: "26-06-22 v222 prometheus @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -164,6 +164,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/ports-open">ports-open</a>
 1. <a target="_blank" href="https://bomonike.github.io/printing">printing</a>
 1. <a target="_blank" href="https://bomonike.github.io/prod-macos-backend">prod-macos-backend</a>
+1. <a target="_blank" href="https://bomonike.github.io/prometheus">prometheus</a>
 1. <a target="_blank" href="https://bomonike.github.io/prompt-engineering">prompt-engineering</a> using DPSy to automate better prompts using LLMs.
 1. <a target="_blank" href="https://wilsonmar.github.io/python-exams">python-exams</a>
 1. <a target="_blank" href="https://bomonike.github.io/python-features">python-features</a>
