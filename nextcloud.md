@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-11"
-lastchange: "26-06-11 v002 orbstack server @nextcloud.md"
+date: "2026-06-23"
+lastchange: "26-06-23 v003 install macos @nextcloud.md"
 url: https://bomonike.github.io/nextcloud
 file: "nextcloud"
 title: "NextCloud"
@@ -61,10 +61,13 @@ The core programming code for the server is open-sourced with 1,048 contributors
    * Other 0.3%
    <br /><br />
 
-Symfony or Laravel ?
+Symfony or Laravel or CodeIgniter?
 
-NOTE: Although PHP is now an archaic language, it's faster than Python.
-And AI capabilities can be called from PHP code.
+NOTE: Although PHP is now an archaic language (https://pypl.github.io/PYPL.html?country)
+However, there is a large code base that needs maintenance work. <a target="_blank" href="https://w3techs.com/technologies/overview/programming_language">71% of all websites were written in PHP</a>.
+And PHP runs faster than Python.
+Web clients for Python are clumsy.
+Nevertheless, AI capabilities can be called from PHP code.
 
 * https://nextcloud.com/changelog/ shows NextCloud version 34 was released June 9, 2026.
 * <a target="_blank" href="https://www.youtube.com/watch?v=aORBb6Vs-EA">How Nextcloud does Free Software right</a>
@@ -123,8 +126,8 @@ PROTIP: Use a Visa/Mastercard that does not charge extra outside the US.
 * Unraid
    * <a target="_blank" href="https://www.youtube.com/watch?v=U47nvwXrAOo">VIDEO</a>: "Effortless Nextcloud AIO Setup on Unraid – Complete Stack with Office & Talk" by Spaceinvader One
 
-
-* Synology DSM - https://x.com/mariushosting?lang=en and https://mariushosting.com/how-to-install-outline-on-your-synology-nas/ via Portainer
+* Synology DSM - https://x.com/mariushosting?lang=en and 
+   * <a target="_blank" href="https://mariushosting.com/how-to-install-outline-on-your-synology-nas/">Synology via Portainer</a>
 
 * TrueNAS SCALE
 
@@ -221,18 +224,30 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
 1. Use Docker context to switch to use orbstack:
    ```bash
    docker context use orbstack
-   docker context ls
    ```
    <pre>Current context is now "orbstack"</pre>
+
+   ```bash
+   docker context ls
+   ```
+   <pre>
+   NAME            DESCRIPTION                               DOCKER ENDPOINT                                   ERROR
+   default         Current DOCKER_HOST based configuration   unix:///var/run/docker.sock                       
+   desktop-linux   Docker Desktop                            unix:///Users/johndoe/.docker/run/docker.sock     
+   orbstack *      OrbStack                                  unix:///Users/johndoe/.orbstack/run/docker.sock   
+   </pre>
 
 1. Remove the old Docker Desktop context:
    ```bash
    docker context rm desktop-linux
    ```
    REMEMBER: The default Docker context name is "docker-linux" even though it's running on macOS because Orbstack emulates by default Linux Ubuntu.
-1. Start the OrbStack engine to finish setup
-   ```
+1. Start (pop-up) the OrbStack engine to finish setup:
+   ```bash
    open -a OrbStack
+   ```
+   Alternately:
+   ```bash
    orb start
    ```
 1. In the browser window that opens up, Sign-Up/Sign-in. remember to save your assigned password in a Password Manager.
@@ -246,7 +261,6 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
    ```bash
    open https://github.com/nextcloud/all-in-one/releases
    ```
-
 1. Switch back to CLI.
 1. Update to latest version:
    ```bash
@@ -258,13 +272,31 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
 1. Confirm OrbStack is working and data migrated: Make sure containers, images, and volumes you care about are present:
    ```bash
    docker ps -a
-      CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-   docker images
-      REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
-   docker volume ls
-      DRIVER    VOLUME NAME
    ```
-1. Verify Docker works immediately:
+   <pre>
+   CONTAINER ID   IMAGE                                          COMMAND       CREATED       STATUS                   PORTS                                                                                                                                     NAMES
+   ffa432a3bf7a   ghcr.io/nextcloud-releases/all-in-one:latest   "/start.sh"   12 days ago   Up 2 minutes (healthy)   0.0.0.0:80->80/tcp, [::]:80->80/tcp, 0.0.0.0:8443->8443/tcp, [::]:8443->8443/tcp, 9000/tcp, 0.0.0.0:8081->8080/tcp, [::]:8081->8080/tcp   nextcloud-aio-mastercontainer
+   </pre>
+
+1. List images downloaded:
+   ```bash
+   docker images
+   ```
+   <pre>
+   IMAGE                                               ID             DISK USAGE   CONTENT SIZE   EXTRA
+   ghcr.io/nextcloud-releases/aio-domaincheck:latest   e3d1e0ad5836         19MB             0B        
+   ghcr.io/nextcloud-releases/all-in-one:latest        f7aa470b2456        272MB             0B    U   
+   </pre>
+1. List images downloaded:
+   ```bash
+   docker volume ls
+   ```
+   <pre>
+   DRIVER    VOLUME NAME
+   local     nextcloud_aio_mastercontainer
+   </pre>
+
+1. Verify Docker works immediately by downloading the default getting-started image:
    ```bash
    docker run -p 80:80 docker/getting-started
    ```
@@ -284,7 +316,7 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
    &nbsp;
    NAME    STATE    DISTRO  VERSION  ARCH   SIZE      IP
    ----    -----    ------  -------  ----   ----      --
-   ubuntu  running  ubuntu  plucky   arm64  704.7 MB  192.168.139.133   
+   ubuntu  running  ubuntu  plucky   arm64  704.7 MB  192.168.???.???
    </pre>
 
 1. Live resources:
@@ -297,9 +329,15 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
    </pre>
    REMEMBER: Press control+C to exit.
    
-1. Create a Linux machine: orb create ubuntu ci-runner
+1. Create a Linux machine: 
+   ```bash
+   orb create ubuntu ci-runner
+   ```
 
-1. Restart Docker engine: orb restart docker
+1. Restart Docker engine: 
+   ```bash
+   orb restart docker
+   ```
 
 1. Start the AIO mastercontainer using commands that differs from Linux:
    ```bash
@@ -334,16 +372,29 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
    ```bash
    docker ps --filter "name=nextcloud-aio-mastercontainer" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
    ```
-1. Open a browser to open the AIO web interface:
+   
+   <a id="WebUI"></a>
+   
+   ## WebUI
+
+1. Open your default browser to open the AIO web interface:
    ```bash
-   open https://localhost:8081
+   open https://localhost:8081/login
    ```
+1. Click "Advanced" & "Proceed to localhost (unsafe)".
+
 1. Use the IP/localhost form (not a domain) for port 8081 to avoid HSTS issues later. 
 1. Accept the self-signed certificate warning
 1. Copy the initial password shown and paste in your password manager.
-1. Paste the password to log in at https://localhost:8081/containers
+1. Paste the password to log in at <tt>https://localhost:8081/containers</tt>
 
-   Complete the setup wizard:
+1. Click the Orb icon at the top of the screen for:
+   <img alt="nextcloud-orbstack-menu.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782240957/nextcloud-orbstack-menu_dbszqx.png" /></a>
+
+1. In that, click "nextcloud-aio", mastercontainer for:
+   <img alt="nextcloud-aio-mastercontainer.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782241466/nextcloud-aio-mastercontainer_klypjs.png" />
+
+   ## Complete the setup wizard:
 
 1. If you don't have a public domain, follow the local-instance guide: 
    https://github.com/nextcloud/all-in-one/blob/main/local-instance.md
@@ -357,6 +408,7 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
 
 1. Read the README documentation at:<br />
    https://github.com/nextcloud/all-in-one
+
 1. Adjust the configuration parameters defined by system variables.
 
 1. Set your timezone.
@@ -364,6 +416,67 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
 1. Install optional add-ons — Office, Talk, ClamAV, Imaginary, etc.) 
 
 1. Click Start containers — downloads and starts everything (~10 min).
+
+1. In the GUI, Containers section, click the arrow to start a stopped container. Example:
+   <img alt="nexcloud-containers.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782241698/nexcloud-containers_z70opz.png">
+
+
+## Access WebDAV 
+
+WebDAV enables real-time collaborative workspace like Google Drive, Calendar. Create new files, delete old ones, move them around into folders, and edit existing files directly on the server.
+
+WebDAV is an extention to HTTP to over the standard web ports (80 for HTTP, 443 for HTTPS),
+so no special network configuration is needed.
+WebDAV adds new methods:
+   * PUT for upload
+   * MKCOL for mkdir: Create a new folder (collection).
+   * COPY / MOVE: Copy or move files from one location to another.
+   * LOCK / UNLOCK: Prevent other people from editing a file while you are working on it (preventing overwrites).
+   * PROPFIND for list: Get detailed information about a file (like its size, creation date, or author).
+
+SETTING - VALUE
+* WebDAV Endpoint	/remote.php/dav/files/{username}/{path}
+* Auth:	Basic Auth (use App Password, not account password)
+* Success Codes:	201 Created, 204 No Content
+
+To setup:
+1. Edit <tt>Crate.toml</tt> to add [dependencies]:
+   ```toml
+   [package]
+   name = "nextcloud-uploader"
+   version = "0.1.0"
+   edition = "2021"
+
+   [dependencies]
+   reqwest = { version = "0.12", features = ["blocking", "stream"] }
+   tokio = { version = "1", features = ["full"] }
+   serde = { version = "1", features = ["derive"] }
+   serde_json = "1"
+   base64 = "0.22"
+   mime_guess = "2"
+   anyhow = "1"
+   ```
+1. Login to <a href="#WebUI">Nextcloud web UI</a>
+1. Go to Settings → Security
+1. Under Devices & sessions, click Create new app password
+1. Use this password in your Rust code (more secure than your main password)
+WebDAV allows for file locking, which is great for collaborative work.
+
+
+
+```bash
+# Build and run:
+cargo run
+
+# Or for production, create a release:
+cargo build --release
+./target/release/nextcloud-uploader
+```
+
+
+## Collabra
+
+* https://apps.nextcloud.com/categories/integration apps QUESTION: Collabra?
 
 
 
@@ -389,9 +502,6 @@ PROTIP: Instead of Docker Desktop — https://www.docker.com/products/docker-des
    ```bash
    ls -al "$HOME/Library/Application Support/Nextcloud Talk/config.json"
    ```
-
-* https://apps.nextcloud.com/categories/integration apps QUESTION: Collabra?
-
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
