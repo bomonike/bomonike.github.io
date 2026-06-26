@@ -30,7 +30,7 @@ Currently shown is the <a target="_blank" href="https://7451111251303.gumroad.co
 
 ## How it works
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1782368794/prometheus-flow_orwczt.png"><img alt="prometheus-flow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782368794/prometheus-flow_orwczt.png"></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1782464275/prometheus-diagram-2266x944_unm2wh.png"><img alt="prometheus-diagram-2266x944" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782464275/prometheus-diagram-2266x944_unm2wh.png"></a>
 
 1. The core component of Prometheus is a <strong>server service</strong>. It is written in <a target="_blank" href="https://wilsonmar.github.io/golang/">Golang</a>), so there are no additional VM installs like with Java, Python, etc.
 
@@ -134,8 +134,7 @@ Currently shown is the <a target="_blank" href="https://7451111251303.gumroad.co
 
 Recap the flowchart:
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1782368794/prometheus-flow_orwczt.png"><img alt="prometheus-flow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782368794/prometheus-flow_orwczt.png"></a>
-
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1782464275/prometheus-diagram-2266x944_unm2wh.png"><img alt="prometheus-diagram-2266x944" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782464275/prometheus-diagram-2266x944_unm2wh.png"></a>
 
 QUESTION: Prometheus does not collect <strong>event</strong> data from operating systems or logs emitted from applications.
 
@@ -207,8 +206,6 @@ In 2016, Prometheus joined the CNCF (Cloud Native Computing Foundation) as its s
 <a target="_blank" href="https://training.linuxfoundation.org/certification/prometheus-certified-associate/"><img align="right" width="200" alt="prometheus-cert.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782402946/prometheus-cert_ke97pr.png" /></a>
 CNCF is under the Linux Foundation, which offers the <a target="_blank" href="https://training.linuxfoundation.org/certification/prometheus-certified-associate/">$250 Prometheus Certified Associate (PCA) exam</a> for beginners who (with one retake) in 90-minutes answer 75% of 60 questions correctly around these domains:
 
-Confirm validity of certification last name and certification ID at https://training.linuxfoundation.org/certification/verify">
-
 18% Observability Concepts
    * Metrics
    * Understand logs and events
@@ -259,20 +256,17 @@ Confirm validity of certification last name and certification ID at https://trai
 
 <a target="_blank" href="https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2">Candidate Handbook</a> reference the PSI BRIDGE Proctoring platform.
 
+Confirm validity of certification last name and certification ID at https://training.linuxfoundation.org/certification/verify">
+
 <hr />
 
 ## Courses
 
-Linux Foundation developed a 2018 course.
-
-
-<a target="_blank" href="https://www.youtube.com/watch?v=gaUopdFlgko">VIDEO</a>: 
-Prometheus co-founder <a target="_blank" href="https://www.linkedin.com/in/julius-volz/">Julius Volz (in Berlin, Germany)</a> authored the Linux Foundation's 2018 course which is now dated. So he created <a target="_blank" href="https://www.promlabs.com/">promlabs.com</a> to offer a <a target="_blank" href="https://training.promlabs.com/">$349 video training</a> on Prometheus monitoring fundamentals, tutorials, quizzes, tips, and best practices. It's based on  Ubuntu Linux 20.04. Julius also built <a target="_blank" href="https://promlens.com/">Promlens query builder</a>.
+<a target="_blank" href="https://www.youtube.com/watch?v=gaUopdFlgko">VIDEO</a>: Prometheus co-founder <a target="_blank" href="https://www.linkedin.com/in/julius-volz/">Julius Volz (in Berlin, Germany)</a> authored the Linux Foundation's 2018 course which is now dated. So he created <a target="_blank" href="https://www.promlabs.com/">promlabs.com</a> to offer a <a target="_blank" href="https://training.promlabs.com/">$349 video training</a> on Prometheus monitoring fundamentals, tutorials, quizzes, tips, and best practices. It's based on  Ubuntu Linux 20.04. Julius also built <a target="_blank" href="https://promlens.com/">Promlens query builder</a>.
 
 ### KodeKloud
 
-https://kodekloud.com/courses/prometheus-certified-associate-pca
-KodeKloud PCA Certification Course
+If you have a $250/year KodeKloud subscription, <a target="_blank" href="https://www.linkedin.com/in/sanjeev-thiyagarajan-690001163/">Sanjeev Thiyagarajan</a> has a <a target="_blank" href="https://kodekloud.com/courses/prometheus-certified-associate-pca">PCA Certification Course</a> with a community.
 
 ### OReilly.com
 
@@ -286,11 +280,12 @@ If you have a subscription to OReilly.com:
 
 <a name="Bipin"></a>
 
-### By Bipin:
+### By Bipin Upadhyay
+<a target="_blank" href="https://www.linkedin.com/in/bipinupadhyay/">LinkedIn profile</a> and <a target="_blank" href="https://devopscube.com/author/bipin/">blog</a> at DevOpsCube.com. 
 
-* <a target="_blank" href="https://devopscube.com/prometheus-certified-associate/">Prometheus Certified Associate (PCA) Exam Study Guide</a> by Bipin Upadhyay, who has a <a target="_blank" href="https://www.linkedin.com/in/bipinupadhyay/">LinkedIn profile</a> and <a target="_blank" href="https://devopscube.com/author/bipin/">blog</a> at DevOpsCube.com. 
+* <a target="_blank" href="https://devopscube.com/prometheus-certified-associate/">Prometheus Certified Associate (PCA) Exam Study Guide</a> 
+
 * <a target="_blank" href="https://devopscube.com/install-configure-prometheus-linux/">Setup Prometheus on Linux</a>
-<br /><br />
 
 By Sean Bradley:
 * <a target="_blank" href="https://www.udemy.com/course/prometheus/">4-hour "Prometheus and Grafana - Monitoring Docker Containers"</a> video course on Udemy Jan 2024.
