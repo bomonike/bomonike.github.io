@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-22"
-lastchange: "v024 + @prometheus.md"
+date: "2026-06-25"
+lastchange: "v026 PCA logo @prometheus.md"
 url: https://bomonike/prometheus
 file: "prometheus"
 title: "Prometheus"
@@ -19,55 +19,72 @@ created: "2018-06-22"
 {% include l18n.html %}
 {% include _toc.html %}
 
-This is a deep dive into getting started using Prometheus in dev on macos
-and enterprise production.
+This is a deep dive for getting started using Prometheus on local macos, with <strong>enterprise</strong> production features.
+
+## Why this?
+
+The diagram below highlists what I need to remember: 
+key flows among components for an usage of Prometheus.
+
+Currently shown is the <a target="_blank" href="https://7451111251303.gumroad.com/l/wzcnen">PowerPoint file animations used to create</a> <a target="_blank" href="https://www.youtube.com/watch?v=5GYe_-qqP30&t=15m14s">this gradual-reveal VIDEO "world map"</a> (when done):
 
 ## How it works
 
-From the <a target="_blank" href="https://7451111251303.gumroad.com/l/wzcnen">PowerPoint file animations used to create</a> this <a target="_blank" href="https://www.youtube.com/watch?v=5GYe_-qqP30&t=15m14s">VIDEO</a> and diagram:<br />
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1705122755/prometheus-flow-1739x838_ugraxn.png"><img alt="prometheus-flow-240113-1739x838.png" width="1739" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1705122755/prometheus-flow-1739x838_ugraxn.png"></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1782368794/prometheus-flow_orwczt.png"><img alt="prometheus-flow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782368794/prometheus-flow_orwczt.png"></a>
 
-brew services start prometheus && brew services start grafana
+1. The core component of Prometheus is a <strong>server service</strong>. It is written in <a target="_blank" href="https://wilsonmar.github.io/golang/">Golang</a>), so there are no additional VM installs like with Java, Python, etc.
 
-1. The core component of Prometheus is a <strong>server service</strong>. (written in <a target="_blank" href="https://wilsonmar.github.io/golang/">Golang</a>), so there are no additional VM installs like with Java, Python, etc.
+1. Installers for Prometheus have been created in <a href="#Homebrew">Homebrew for macOS</a>, Ubuntu, and Windows. 
 
-1. Installers for Prometheus have been created in <a href="#Homebrew">Homebrew for macOS</a>, Ubuntu, and Windows. Commands to invoke them, along with sample configuration files are in a sample project GitHub repo. 
+1. In a sample project <strong>GitHub</strong> repo are commands to download and invoke a <strong>Docker</strong> image, along with sample configuration files.
 
-1. Prometheus is configured by editing the <tt>prometheus.yaml</tt> file. One comes with the installer, but you should have a customized file in each app github repo. Start the server.
+1. Prometheus is configured by editing the <tt>prometheus.yaml</tt> file that comes with the github repo and docs.
 
-1. The Prometheus server sends HTTPS GET requests to <strong>scrape</strong> (pull) metrics from <strong>target hosts</strong> defined in its <tt>targets.json</tt> file. In addition to statically-defined targets, 
+   Each Prometheus server can run distributed standalone so as not to be dependent on network storage or other remote services. So it's available even when other parts of the infrastructure are broken.
 
-   A single Prometheus server can handle up to 1,000 scrape targets.
+1. <tt>static_configs</tt> define targets that rarely change (are static), such as DNS, <a target="_blank" href="https://kubernetes.io/docs/concepts/services-networking/service/">Kubernetes</a>, Gateways, Time Servers, and other utility servers.
 
-1. Targets can be discovered by <strong>Service Discovery</strong> such as DNS, <a target="_blank" href="https://kubernetes.io/docs/concepts/services-networking/service/">Kubernetes Services</a>, or HashiCorp Consul services. The frequency of scraping and other settings are defined in the <tt>prometheus.yml</tt> file.
+1. Targets for scraping by Prometheus can also be dynamically <strong>discovered</strong> by a <strong>Service Discovery</strong> 
 
-1. Each target interacts with Prometheus through a <a href="#Exporters">job exporter</a> service installed on each host. There is a <a href="#WMI+Exporter">WMI exporter on Windows</a> and a type of exporter on Linux, etc.
+1. <strong>file_sd</strong> (a JSON or YAML file) allows dynamic updates to the monitoring targets list without restarting Prometheus.
 
-1. This can be done via an intermediary <strong>push gateway</strong> for short-lived jobs. 
+   Target File <tt>/etc/prometheus/targets/servers.json</tt>
 
-1. Exporters reference <strong>custom metric providers</strong> which expose specific metrics. 
+1. The Prometheus server usually operate using a <strong>pull service</strong> which sends HTTPS GET requests to <strong>scrape</strong> (pull) <strong>metrics, logs, and traces</strong> from <strong>target hosts</strong>.
 
-1. Unlike the legacy <tt>statsd</tt> daemon which is concerned only with system-level metrics such as CPU, Memory, etc., the tool Prometheus (at <a target="_blank" href="https://prometheus.io/">https://prometheus.io</a>) gathers metrics from targets at the cluster, node, and microservice API levels.
+1. Tracing is enabled within app code which follow the <strong>OTel</strong> (OpenTelemetry standard) to generate spans (each the length of an event) with the same traceID. OTel uses the OLTP protocol to format what is communicated.
+
+   The OpenTelemetry <strong>(OTel) Collector</strong> has largely replaced older tools like Logstash or custom scripts for metrics routing. 
+   
+   The OTel Collector drops debug metrics, filters
+
+1. The frequency of scraping and other configuration settings are defined in the <tt>prometheus.yml</tt> file.
 
    <a target="_blank" href="https://app.pluralsight.com/ilx/video-courses/46bf9d2d-2947-4e0e-94cc-131715532a21/3e05432b-7c61-4eb1-83b1-7cef861beb0b/a90d6e30-c9f1-43ee-9778-5d5824a34690">NOTE</a>: A single Prometheus server can handle up to 1,000 scrape targets, at 100,000+ samples per second. But for larger deployments, multiple Prometheus servers can be deployed in a federated architecture, with a root Prometheus server scraping data from the child servers.
 
-1. Prometheus stores scraped samples locally in its own multi-dimensional numeric <strong>time-series database (TSDB)</strong>. 
+1. <a href="#scrape_configs">scrape_configs</a> ???
 
-1. <strong>Rules</strong> defined in the Prometheus TSDB can be defined with filtering and aggregate new time series from data.
+1. This can be done via an intermediary <strong>push gateway</strong> for short-lived jobs. 
 
-   Each Prometheus server runs distributed standalone so thus not dependent on network storage or other remote services. So it's available even when other parts of the infrastructure are broken.
+1. Defined in its <tt>targets.json</tt> file ???. In addition to statically-defined targets, <strong>custom metric providers</strong> can be defined.
 
-   PROTIP: Data on Prometheus servers should be considered <strong>short-lived (temporary)</strong> because data on it can be lost if the server is restarted. 
+1. Each target interacts with Prometheus through a <a href="#Exporters">job exporter</a> service installed on each host. There is a <a href="#WMI+Exporter">WMI exporter on Windows</a> and a type of exporter on Linux, etc.
+
+1. Exporters reference <strong>custom metric providers</strong> which expose specific metrics. 
+
+   NOTE: Unlike the legacy <tt>statsd</tt> daemon which is concerned only with system-level metrics such as CPU, Memory, etc., the tool Prometheus (at <a target="_blank" href="https://prometheus.io/">https://prometheus.io</a>) gathers metrics from targets at the cluster, node, and microservice API levels.
+
+1. Prometheus can also operate a <strong>push service</strong> in a <strong>gateway server</strong> that receives metrics pushed to it from runs from various <strong>short term jobs</strong>.
+
+1. The Data gathered Prometheus stores stores locally in its own multi-dimensional numeric <strong>time-series database (TSDB)</strong>. 
+
+1. <strong>Rules</strong> defined in the Prometheus TSDB defines the filtering and aggregation to operate on new time series data being stored.
+
+   PROTIP: Data on Prometheus servers should be considered <strong>short-lived (temporary)</strong> because data on it can be lost if the server is restarted or fails. 
 
 1. Prometheus exposes its time-series data to a variety of <strong>API clients</strong> making <a href="#PromQL">PromQL</a> (Prometheus Query Language) statements which extract data. 
 
-1. Many enterprises have API clients go through an API Gateway to enforce strong authentication and traffic limits from specific users.
-
-1. Data on Prometheus should be frequently sent to a long-term storage system such as AWS S3, <a target="_blank" href="https://www.influxdata.com/">InfluxDB</a>, <a target="_blank" href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a>, <a target="_blank" href="https://wilsonmar.github.io/microsoft-fabric/">Microsoft Fabric</a>, etc.
-
-   PROTIP: Sending operational data to a <strong>central enterprise repository</strong> would enable a central SOC (Security Operations Center) to <strong>correlate events</strong> from throughout the enterprise and outside the enterprise. This approach does require diligence at managing disk space and retention.
-
-1. PROTIP: To minimize training and confusion, enterprise organizations typically have a preferred set of tools for <strong>analytics</strong> processing to generate <strong>graphs</strong> and <strong>dashboards</strong> for visualization.
+1. Some enterprises have <strong>API clients</strong> go through an <strong>API Gateway</strong> to enforce strong authentication and traffic limits from specific users.
 
 1. The same vendor who created Prometheus also created <a target="_blank" href="https://grafana.com/">Grafana</a> to present <strong>dashboards</strong> to visualize data. 
 
@@ -77,22 +94,56 @@ brew services start prometheus && brew services start grafana
    * <a target="_blank" href="https://wilsonmar.github.io/microsoft-fabric/">Microsoft Fabric</a> running Cosmos DB, etc.
    <br /><br />
 
-1. PROTIP: When using S3, by default, Prometheus references a static file of long-lived credentials for authentication. To prevent compromise, many organizations use a <strong>Credentials insert</strong> utility such as HashiCorp Vault which dynamically creates a new set of S3 credentials every time before running the backup.
-
-1. PROTIP: Cloud storage mechanisms have a <strong>backup</strong> mechanism to <strong>restore</strong> data in case of failure. Practice restoring data to a new server to ensure that the backup mechanism actually works.
-
-1. <a target="_blank" href="https://app.pluralsight.com/ilx/video-courses/46bf9d2d-2947-4e0e-94cc-131715532a21/3e05432b-7c61-4eb1-83b1-7cef861beb0b/ae204f21-9e52-4272-842b-eb155b77e3fb">NOTE</a>: The Prometheus server can be configured to <strong>read</strong> data from remote sources -- perform <strong>remote read</strong>.
-
-1. Because people can't be always watching dashboard screens, <a href="#Alerting-Rules">Alerting Rules</a> are set to trigger <strong>alerts</strong> pushed to the <a href="#AlertManager">Alert Manager</a> which forwards to various <strong>end-points</strong> such as email, Slack, Pager Duty, SMS, OpsGenie, or other notification mechanisms.
+1. Because people can't be always watching dashboard screens, <a href="#Alerting-Rules">Alerting Rules</a> are set to trigger <strong>alerts</strong> pushed to the <a href="#AlertManager">Alert Manager</a> which forwards to various <strong>end-points</strong> such as <strong>email, Slack, Pager Duty</strong>, SMS, OpsGenie, or other <strong>notification</strong> mechanisms.
 
    <a target="_blank" href="https://app.pluralsight.com/ilx/video-courses/46bf9d2d-2947-4e0e-94cc-131715532a21/3e05432b-7c61-4eb1-83b1-7cef861beb0b/ae204f21-9e52-4272-842b-eb155b77e3fb">NOTE</a>: In a HA configuration, alerts are sent to multiple Alert Managers (with different external labels -a and -b), which deduplicate and fan out alerts to their configured <a href="#Receivers">receivers</a>. 
 
-1. PROTIP: To minimize training and confusion, enterprise organizations typically have a preferred set of tools for <strong>analytics</strong> processing to generate <strong>graphs</strong> and <strong>dashboards</strong> for visualization.
+1. PROTIP: Data on Prometheus should be frequently sent to a <strong>longer-term storage</strong> system because data accumulating over time in the same server can casue out-of-space crashes. 
+
+   When the disk crash occurs, data to diagnose causes is lost too.
+
+   Locally, the data can be sent to another backup server.
+
+   Alternately, metrics can be sent to a cloud such as as AWS S3, <a target="_blank" href="https://www.influxdata.com/">InfluxDB</a>, <a target="_blank" href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a>, <a target="_blank" href="https://wilsonmar.github.io/microsoft-fabric/">Microsoft Fabric</a>, etc.
+
+   CAUTION: The cloud option involves ending operational data to a 3rd-party entity.  
+
+1. PROTIP: To minimize training and confusion, enterprise organizations typically have a commonly preferred set of tools (Tableau, PowerBI, Looker) for <strong>analytics</strong> processing to generate <strong>graphs</strong> and <strong>dashboards</strong> for visualization and alerts. 
+
+   Here is how to bridge two fundamentally different worlds: 
+   * Operational Monitoring (real-time, recent, high-resolution) and 
+   * Enterprise Analytics (historical, low-resolution, aggregated, joined with business data).
+
+1. <a target="_blank" href="https://app.pluralsight.com/ilx/video-courses/46bf9d2d-2947-4e0e-94cc-131715532a21/3e05432b-7c61-4eb1-83b1-7cef861beb0b/ae204f21-9e52-4272-842b-eb155b77e3fb">NOTE</a>: The Prometheus server can be configured to <strong>read</strong> data from remote sources -- perform <strong>remote read</strong>.
+
+1. PROTIP: Derviving actionable insight from statistics often requires data to be <strong>consolidated</strong> over a <strong>longer term</strong>, to establish the context needed.
+
+   For example, ClickHouse has a Remote Write Adapter to accept and downsample data to populate materialized daily table views accessible by Grafana/Superset.
+
+   For example, in an enterprise environment, Apache Kafka -> Kafka Connect (Snowflake Sink) -> Snowflake Raw Table -> Spark/dbt (downsamples to hourly) -> Snowflake Analytics Table -> PowerBI.
+
+1. PROTIP: Many enterprises establish a NOC (Network Operations Center) or SOC (Security Operations Center) to be responsible for on-going survelliance using data captured. This organization can correlate events reported from various parts of the organization, then issue notifications to endpoints based on their overwatch capabilities. 
+
+   The NOC/SOC are equipped to take quick actions such as changing the <strong>credentials</strong> and access by individuals and groups.
+
+   But even if you're a "lone wolf" operation, you still need to do what NOC/SOC departments do:
+   * Predict when gradual growth in disk space usage need action on free disk space.
+   * Investigate the cause of dips or spikes.
+   * Triage anomalies detected.
+   * etc.
+
+Recap the flowchart:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1782368794/prometheus-flow_orwczt.png"><img alt="prometheus-flow.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782368794/prometheus-flow_orwczt.png"></a>
 
 
 QUESTION: Prometheus does not collect <strong>event</strong> data from operating systems or logs emitted from applications.
 
-The for each Prometheus:
+
+(based on this <a target="_blank" href="https://www.youtube.com/watch?v=5GYe_-qqP30&t=15m14s">VIDEO</a>)
+
+
+### Prometheus Commands
 
    * /status = Run-time and build information
    * /flags = Command-line flags and their values
@@ -137,22 +188,26 @@ There are also Elasticsearch, Datadog, and other
 
 Ridley Scott named his <a target="_blank" href="https://www.imdb.com/title/tt1446714/trivia">2012 film "Prometheus"</a>, saying: "It's the story of creation; the gods and the man who stood against them." 
 
+
 <a target="_blank" href="https://www.youtube.com/watch?v=rT4fJNbfe14">VIDEO</a>:
 <a target="_blank" href="https://prometheus.io/docs/introduction/overview/">https://prometheus.io/docs/introduction/overview/</a><br />
-The software named Prometheus began at SoundCloud in 2012, where ex-Google SREs (Site Reliability Engineers) adopted Google's Borgmon. 
+Also in 2012 the software named Prometheus began at SoundCloud, where ex-Google SREs (Site Reliability Engineers) adopted Google's internal Borgmon. 
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1707574621/prometheus-borgmon-1856x1136_fwxjqo.png"><img alt="prometheus-borgmon-1856x1136.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707574621/prometheus-borgmon-1856x1136_fwxjqo.png"></a>
 
-Prometheus was open-sourced in 2015 at <a target="_blank" href="https://github.com/prometheus/prometheus/releases">https://github.com/prometheus/prometheus/releases</a>
+In 2015, Prometheus was open-sourced at <a target="_blank" href="https://github.com/prometheus/prometheus/releases">https://github.com/prometheus/prometheus/releases</a>
 
-Prometheus joined the CNCF (Cloud Native Computing Foundation) in 2016 as its second hosted project after Kubernetes. So as would be expected, Prometheus works with K8s.
+In 2016, Prometheus joined the CNCF (Cloud Native Computing Foundation) as its second hosted project after Kubernetes, which also came from Google. So as would be expected, Prometheus works with K8s.
 
 
 <hr />
 
 ## PCA Exam
 
+<a target="_blank" href="https://training.linuxfoundation.org/certification/prometheus-certified-associate/"><img align="right" width="200" alt="prometheus-cert.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782402946/prometheus-cert_ke97pr.png" /></a>
 CNCF is under the Linux Foundation, which offers the <a target="_blank" href="https://training.linuxfoundation.org/certification/prometheus-certified-associate/">$250 Prometheus Certified Associate (PCA) exam</a> for beginners who (with one retake) in 90-minutes answer 75% of 60 questions correctly around these domains:
+
+Confirm validity of certification last name and certification ID at https://training.linuxfoundation.org/certification/verify">
 
 18% Observability Concepts
    * Metrics
@@ -476,7 +531,7 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 
    On an Apple Silicon M1/M2/M3 ARM architecture chip:
 
-   <pre>/usr/local/opt/prometheus</pre>
+   <pre>/opt/homebrew/bin/prometheus</pre>
 
    BTW: <tt>./prometheus</tt> (with the <tt>./</tt>) is run when you are in a folder containing the executable.
    But that's not necessary because <tt>/usr/local</tt> is typically in the operating system $PATH environment variable.
@@ -487,12 +542,22 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 
    Response at time of writing on an AMD machine:
 
-   <pre>prometheus, version 2.49.1 (branch: non-git, revision: non-git)
-  build user:       brew@Ventura
-  build date:       20240115-16:56:27
-  go version:       go1.21.6
-  platform:         darwin/amd64
-  tags:             netgo,builtinassets,stringlabels
+   <pre>
+   prometheus, version 3.12.0 (branch: non-git, revision: non-git)
+      build user:       reproducible@reproducible
+      build date:       20260528-15:31:32
+      go version:       go1.26.3
+      platform:         darwin/arm64
+      tags:             netgo,builtinassets
+   </pre>
+   Previously:
+   <pre>
+   prometheus, version 2.49.1 (branch: non-git, revision: non-git)
+      build user:       brew@Ventura
+      build date:       20240115-16:56:27
+      go version:       go1.21.6
+      platform:         darwin/amd64
+      tags:             netgo,builtinassets,stringlabels
    </pre>
 
 1. List all the parameters, drag the right edge wider for:
@@ -501,31 +566,51 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 
    Response at time of writing on an AMD machine:
 
-   <pre>usage: prometheus [&LT;flags>]
-The Prometheus monitoring server
-&nbsp;
-Flags:
-  -h, --[no-]help                Show context-sensitive help (also try --help-long and --help-man).
+   <pre>
+   usage: prometheus [&LT;flags>]
+   &nbsp;
+   The Prometheus monitoring server
+   &nbsp;
+   Flags:
+   -h, --[no-]help                Show context-sensitive help (also try --help-long and --help-man).
       --[no-]version             Show application version.
       --config.file="prometheus.yml"  
                                  Prometheus configuration file path.
-      --web.listen-address="0.0.0.0:9090"  
-                                 Address to listen on for UI, API, and telemetry.
+      --[no-]config.auto-reload  Enable automatic configuration file reloading. See also --config.auto-reload-interval.
+      --config.auto-reload-interval=30s  
+                                 Specifies the interval for checking and automatically reloading the Prometheus
+                                 configuration file upon detecting changes. Only used when --config.auto-reload is set.
+      --web.listen-address=0.0.0.0:9090 ...  
+                                 Address to listen on for UI, API, and telemetry. Can be repeated.
+      --[no-]auto-gomaxprocs     Automatically set GOMAXPROCS to match Linux container CPU quota
+      --[no-]auto-gomemlimit     Automatically set GOMEMLIMIT to match Linux container or system memory limit
+      --auto-gomemlimit.ratio=0.9  
+                                 The ratio of reserved GOMEMLIMIT memory to the detected maximum container or system memory
       --web.config.file=""       [EXPERIMENTAL] Path to configuration file that can enable TLS or authentication.
       --web.read-timeout=5m      Maximum duration before timing out read of the request, and closing idle connections.
-      --web.max-connections=512  Maximum number of simultaneous connections.
-      --web.external-url=<em>URL</em>   The URL under which Prometheus is externally reachable (for example, if Prometheus is served via a reverse
-                                 proxy). Used for generating relative and absolute links back to Prometheus itself. If the URL has a path
-                                 portion, it will be used to prefix all HTTP endpoints served by Prometheus. If omitted, relevant URL components
-                                 will be derived automatically.
-      --web.route-prefix=<em>path</em>  Prefix for the internal routes of web endpoints. Defaults to path of --web.external-url.
-      --web.user-assets=<em>path</em>   Path to static asset directory, available at /user.
+      --web.max-connections=512  Maximum number of simultaneous connections across all listeners.
+      --web.max-notifications-subscribers=16  
+                                 Limits the maximum number of subscribers that can concurrently receive live notifications.
+                                 If the limit is reached, new subscription requests will be denied until existing
+                                 connections close.
+      --web.external-url=<URL>   The URL under which Prometheus is externally reachable (for example, if Prometheus is
+                                 served via a reverse proxy). Used for generating relative and absolute links back to
+                                 Prometheus itself. If the URL has a path portion, it will be used to prefix all HTTP
+                                 endpoints served by Prometheus. If omitted, relevant URL components will be derived
+                                 automatically.
+      --web.route-prefix=<path>  Prefix for the internal routes of web endpoints. Defaults to path of --web.external-url.
+      --web.user-assets=<path>   Path to static asset directory, available at /user.
       --[no-]web.enable-lifecycle  
                                  Enable shutdown and reload via HTTP request.
       --[no-]web.enable-admin-api  
                                  Enable API endpoints for admin control actions.
       --[no-]web.enable-remote-write-receiver  
                                  Enable API endpoint accepting remote write requests.
+      --web.remote-write-receiver.accepted-protobuf-messages=prometheus.WriteRequest... ...  
+                                 List of the remote write protobuf messages to accept when receiving the remote writes.
+                                 Supported values: prometheus.WriteRequest, io.prometheus.write.v2.Request
+      --[no-]web.enable-otlp-receiver  
+                                 Enable API endpoint accepting OTLP write requests.
       --web.console.templates="consoles"  
                                  Path to the console template directory, available at /consoles.
       --web.console.libraries="console_libraries"  
@@ -535,66 +620,98 @@ Flags:
       --web.cors.origin=".*"     Regex for CORS origin. It is fully anchored. Example: 'https?://(domain1|domain2)\.com'
       --storage.tsdb.path="data/"  
                                  Base path for metrics storage. Use with server mode only.
-      --storage.tsdb.retention=STORAGE.TSDB.RETENTION  
-                                 [DEPRECATED] How long to retain samples in storage. This flag has been deprecated, use
-                                 "storage.tsdb.retention.time" instead. Use with server mode only.
       --storage.tsdb.retention.time=STORAGE.TSDB.RETENTION.TIME  
-                                 How long to retain samples in storage. When this flag is set it overrides "storage.tsdb.retention". If neither
-                                 this flag nor "storage.tsdb.retention" nor "storage.tsdb.retention.size" is set, the retention time defaults to
-                                 15d. Units Supported: y, w, d, h, m, s, ms. Use with server mode only.
+                                 [DEPRECATED] How long to retain samples in storage. If neither this flag nor
+                                 "storage.tsdb.retention.size" is set, the retention time defaults to 15d. Units Supported:
+                                 y, w, d, h, m, s, ms. This flag has been deprecated, use the storage.tsdb.retention.time
+                                 field in the config file instead. Use with server mode only.
       --storage.tsdb.retention.size=STORAGE.TSDB.RETENTION.SIZE  
-                                 Maximum number of bytes that can be stored for blocks. A unit is required, supported units: B, KB, MB, GB, TB,
-                                 PB, EB. Ex: "512MB". Based on powers-of-2, so 1KB is 1024B. Use with server mode only.
+                                 [DEPRECATED] Maximum number of bytes that can be stored for blocks. A unit is required,
+                                 supported units: B, KB, MB, GB, TB, PB, EB. Ex: "512MB". Based on powers-of-2, so 1KB is
+                                 1024B. This flag has been deprecated, use the storage.tsdb.retention.size field in the
+                                 config file instead. Use with server mode only.
       --[no-]storage.tsdb.no-lockfile  
                                  Do not create lockfile in data directory. Use with server mode only.
       --storage.tsdb.head-chunks-write-queue-size=0  
-                                 Size of the queue through which head chunks are written to the disk to be m-mapped, 0 disables the queue
-                                 completely. Experimental. Use with server mode only.
+                                 Size of the queue through which head chunks are written to the disk to be m-mapped,
+                                 0 disables the queue completely. Experimental. Use with server mode only.
+      --storage.tsdb.delay-compact-file.path=""  
+                                 Path to a JSON file with uploaded TSDB blocks e.g. Thanos shipper meta file. If set TSDB
+                                 will only compact 1 level blocks that are marked as uploaded in that file, improving
+                                 external storage integrations e.g. with Thanos sidecar. 1+ level compactions won't be
+                                 delayed. Use with server mode only.
       --storage.agent.path="data-agent/"  
                                  Base path for metrics storage. Use with agent mode only.
       --[no-]storage.agent.wal-compression  
-                                 Compress the agent WAL. Use with agent mode only.
-      --storage.agent.retention.min-time=STORAGE.AGENT.RETENTION.MIN-TIME  
-                                 Minimum age samples may be before being considered for deletion when the WAL is truncated Use with agent mode
-                                 only.
-      --storage.agent.retention.max-time=STORAGE.AGENT.RETENTION.MAX-TIME  
-                                 Maximum age samples may be before being forcibly deleted when the WAL is truncated Use with agent mode only.
+                                 Compress the agent WAL. If false, the --storage.agent.wal-compression-type flag is ignored.
+                                 Use with agent mode only.
+      --storage.agent.retention.min-time=5m  
+                                 Minimum age samples may be before being considered for deletion when the WAL is truncated
+                                 Use with agent mode only.
+      --storage.agent.retention.max-time=4h  
+                                 Maximum age samples may be before being forcibly deleted when the WAL is truncated Use with
+                                 agent mode only.
+      --[no-]storage.agent.checkpoint-from-in-memory-series  
+                                 Use only in-memory series data when building a checkpoint. Use with agent mode only.
+      --storage.agent.checkpoint-batch-size=1000  
+                                 Size of a single WAL log entry chunk to be flushed. Has no effect without
+                                 --storage.agent.checkpoint-from-in-memory-series flag. Use with agent mode only.
       --[no-]storage.agent.no-lockfile  
                                  Do not create lockfile in data directory. Use with agent mode only.
-      --storage.remote.flush-deadline=<em>duration</em>  
+      --storage.remote.flush-deadline=<duration>  
                                  How long to wait flushing sample on shutdown or config reload.
       --storage.remote.read-sample-limit=5e7  
-                                 Maximum overall number of samples to return via the remote read interface, in a single query. 0 means no limit.
-                                 This limit is ignored for streamed response types. Use with server mode only.
-      --storage.remote.read-concurrent-limit=10  
-                                 Maximum number of concurrent remote read calls. 0 means no limit. Use with server mode only.
-      --storage.remote.read-max-bytes-in-frame=1048576  
-                                 Maximum number of bytes in a single frame for streaming remote read response types before marshalling. Note
-                                 that client might have limit on frame size as well. 1MB as recommended by protobuf by default. Use with server
+                                 Maximum overall number of samples to return via the remote read interface, in a single
+                                 query. 0 means no limit. This limit is ignored for streamed response types. Use with server
                                  mode only.
+      --storage.remote.read-concurrent-limit=10  
+                                 Maximum number of concurrent remote read calls. 0 means no limit. Use with server mode
+                                 only.
+      --storage.remote.read-max-bytes-in-frame=1048576  
+                                 Maximum number of bytes in a single frame for streaming remote read response types before
+                                 marshalling. Note that client might have limit on frame size as well. 1MB as recommended by
+                                 protobuf by default. Use with server mode only.
       --rules.alert.for-outage-tolerance=1h  
-                                 Max time to tolerate prometheus outage for restoring "for" state of alert. Use with server mode only.
+                                 Max time to tolerate prometheus outage for restoring "for" state of alert. Use with server
+                                 mode only.
       --rules.alert.for-grace-period=10m  
-                                 Minimum duration between alert and restored "for" state. This is maintained only for alerts with configured
-                                 "for" time greater than grace period. Use with server mode only.
+                                 Minimum duration between alert and restored "for" state. This is maintained only for alerts
+                                 with configured "for" time greater than grace period. Use with server mode only.
       --rules.alert.resend-delay=1m  
-                                 Minimum amount of time to wait before resending an alert to Alertmanager. Use with server mode only.
+                                 Minimum amount of time to wait before resending an alert to Alertmanager. Use with server
+                                 mode only.
+      --rules.max-concurrent-evals=4  
+                                 Global concurrency limit for independent rules that can run concurrently. When set,
+                                 "query.max-concurrency" may need to be adjusted accordingly. Use with server mode only.
       --alertmanager.notification-queue-capacity=10000  
-                                 The capacity of the queue for pending Alertmanager notifications. Use with server mode only.
-      --query.lookback-delta=5m  The maximum lookback duration for retrieving metrics during expression evaluations and federation. Use with
-                                 server mode only.
+                                 The capacity of the queue for pending Alertmanager notifications. Use with server mode
+                                 only.
+      --alertmanager.notification-batch-size=256  
+                                 The maximum number of notifications per batch to send to the Alertmanager. Use with server
+                                 mode only.
+      --[no-]alertmanager.drain-notification-queue-on-shutdown  
+                                 Send any outstanding Alertmanager notifications when shutting down. If false, any
+                                 outstanding Alertmanager notifications will be dropped when shutting down. Use with server
+                                 mode only.
+      --query.lookback-delta=5m  The maximum lookback duration for retrieving metrics during expression evaluations and
+                                 federation. Use with server mode only.
       --query.timeout=2m         Maximum time a query may take before being aborted. Use with server mode only.
       --query.max-concurrency=20  
                                  Maximum number of queries executed concurrently. Use with server mode only.
       --query.max-samples=50000000  
-                                 Maximum number of samples a single query can load into memory. Note that queries will fail if they try to load
-                                 more samples than this into memory, so this also limits the number of samples a query can return. Use with
-                                 server mode only.
-      --enable-feature= ...      Comma-separated feature names to enable. Valid options: agent, exemplar-storage, expand-external-labels,
-                                 memory-snapshot-on-shutdown, promql-at-modifier, promql-negative-offset, promql-per-step-stats,
-                                 promql-experimental-functions, remote-write-receiver (DEPRECATED), extra-scrape-metrics,
-                                 new-service-discovery-manager, auto-gomaxprocs, no-default-scrape-port, native-histograms, otlp-write-receiver.
-                                 See https://prometheus.io/docs/prometheus/latest/feature_flags/ for more details.
+                                 Maximum number of samples a single query can load into memory. Note that queries will fail
+                                 if they try to load more samples than this into memory, so this also limits the number of
+                                 samples a query can return. Use with server mode only.
+      --enable-feature=ENABLE-FEATURE ...  
+                                 Comma separated feature names to enable. Valid options: concurrent-rule-eval,
+                                 created-timestamp-zero-ingestion, delayed-compaction, exemplar-storage,
+                                 extra-scrape-metrics, memory-snapshot-on-shutdown, metadata-wal-records, old-ui,
+                                 otlp-deltatocumulative, otlp-native-delta-ingestion, promql-binop-fill-modifiers,
+                                 promql-delayed-name-removal, promql-duration-expr, promql-experimental-functions,
+                                 promql-extended-range-selectors, promql-per-step-stats, st-storage, st-synthesis,
+                                 type-and-unit-labels, use-start-timestamps, use-uncached-io, xor2-encoding. See
+                                 https://prometheus.io/docs/prometheus/latest/feature_flags/ for more details.
+      --[no-]agent               Run Prometheus in 'Agent mode'.
       --log.level=info           Only log messages with the given severity or above. One of: [debug, info, warn, error]
       --log.format=logfmt        Output format of log messages. One of: [logfmt, json]
    </pre>
@@ -827,6 +944,7 @@ ts=2024-02-04T23:16:57.812Z caller=notifier.go:530 level=error component=notifie
    <pre>./prometheus --config.file prometheus.yml</pre>
 
 
+<a id="scrape_configs"></a>
 
 ### scrape_configs
 
@@ -2028,13 +2146,6 @@ https://github.com/akeylesslabs/helm-charts/blob/main/monitoring/akeyless-zero-t
 
 https://financialit.net/news/apis/how-stash-keeping-its-platform-secure-amid-drive-integration
 
-https://mattermost.com/blog/sloth-for-slo-monitoring-and-alerting-with-prometheus/
-https://github.com/slok/sloth with 
-Thanos ruler evaluates rules and sends alerts to Alertmanager.
-Prometheus and Grafana.
-Alertmanager integrates notifications and alerts with the Mattermost Community Server and 
-OpsGenie.
-
 An example of what Metrics documentation about its <tt>scrape_config</tt> looks like:
 https://docs-git-update-metrics-gatewaydio.vercel.app/using-gatewayd/global-configuration/metrics/
 
@@ -2073,7 +2184,39 @@ Monitoring Docker Containers using Grafana & Prometheus
 https://training.linuxfoundation.org/training/monitoring-systems-and-services-with-prometheus-lfs241/
 $299 for 25 hours with labs: Monitoring Systems and Services with Prometheus (LFS241)
 
+
+## Data processing
+
+https://mattermost.com/blog/sloth-for-slo-monitoring-and-alerting-with-prometheus/
+https://github.com/slok/sloth with 
+Thanos ruler evaluates rules and sends alerts to Alertmanager.
+Prometheus and Grafana.
 Thanos & promscale can dedup
+Alertmanager integrates notifications and alerts with the Mattermost Community Server and 
+OpsGenie.
+
+Best Practice: Use dbt (Data Build Tool) after ingestion.
+
+Raw Layer: Store the data exactly as it arrives (e.g., prom_raw_metrics).
+
+Downsampled Layer: Prometheus scrapes every 15 seconds. For a year of data, aggregate this into 1-hour or 1-day buckets using AVG, MAX, MIN, and PERCENTILE.
+```sql
+-- Example dbt SQL transformation
+SELECT
+    date_trunc('hour', timestamp) as hour,
+    metric_name,
+    avg(value) as avg_value,
+    max(value) as max_value
+FROM prom_raw_metrics
+WHERE timestamp >= current_date - interval '30 days'
+GROUP BY 1, 2
+```
+
+Wide/Pivot Layer: Pivot the data so each metric becomes a column.
+   * Bad: 3 rows for cpu_usage, memory_usage, disk_usage for server A.
+   * Good: 1 row for Server A with columns cpu_usage_avg, memory_usage_avg, disk_usage_avg.
+
+
 
 
 <hr />
