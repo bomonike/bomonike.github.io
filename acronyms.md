@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-15"
-lastchange: "26-05-15 v104 VAPT @acronyms.md"
+date: "2026-06-27"
+lastchange: "v105 SCSI @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -341,6 +341,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	DAO	=	Decentralized Autonomous Organization
 * Dapps = Decentralized Applications (run on peer-to-peer networks, such as a blockchain using smart contracts)
 *	DART	=	Detection and Response Team (Microsoft)
+* DAS   = Direct Attached Storage
 *	DAX	=	Data Analysis Expressions   (Microsoft formula language)
 *	DAX	=	DynamoDB Accelerator (Amazon)
 *	DB	=	Database
@@ -1226,6 +1227,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	SCM	=	Source Control Manager	(such as GitHub)
 *	SCP	=	Service Control Policy (in AWS to govern the use of other IAM policies)
 * SCRM = Cyber Supply Chain Risk Management (defined by NIST)
+8 SCSI = Small Computer System Interface (legacy drive interfaces)
 *	SCSS	=	Sidecar Container Security Stack
 * SCT	=	Schema Conversion Tool (AWS)
 * SDD = Spec Driven Development (Vibe coding Kiro and Spec Kit platform from GitHub)
@@ -1256,7 +1258,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	SIEM	=	Security Information and Event Management
 *	SIG	=	Special Interest Group
 *	SIGINT	=	Signals Intelligence	(of electronic transmissions)
-*	SIMD	=	Single Instruction, Multiple Data (parallel processing technique)
+*	SIMD	=	Single Instruction, Multiple Data (CPU parallel processing as a vector is 8x faster than individual calcs)
 * SIP = Session Initiation Protocol (real-time multimedia communication sessions over IP networks)
 *	SIRP	=	Security Incident Response Plan	(for SOC2)
 *	SIRT	=	Security Incident Response Team	(work in a SOC department)
@@ -1438,6 +1440,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	UEFI	=	Unified Extensible Firmware Interface	(spec. replaces BIOS to boot-up disks larger than 2TB)
 *	UEM	=	Unified Endpoint Management/Manager (Microsoft Intune and Config. Manager)
 *	UDP	=	User Datagram Protocol	(networking)
+* UGC = User Generated Content (social media)
 *	UML	=	Unified Modeling Language
 * UNS = Unified Namespace (for MQTT to integrate IIoT components)
 *	UPF	=	User Plane Function
@@ -1517,6 +1520,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	WAN	=	Wide Area Network
 *	Wasm	=	WebAssembly (binary instruction coding for a stack-based virtual machine in browsers)
 *	WBS	=	Work Breakdown Structure
+* WebDAV = Web Distributed Authoring and Versioning
 *	WDYM	=	What Do You Mean? (chat slang)
 *	WEP	=	Wired Equivalent Privacy (mobile security)
 *	WFA	=	Work From Anywhere
