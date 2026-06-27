@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-21"
-lastchange: "v022 refs @rustlang.md"
+date: "2026-06-26"
+lastchange: "v025 glossary @rustlang.md"
 url: https://bomonike/rustlang
 file: "rustlang"
 title: "Rustlang (Rust language)"
@@ -22,26 +22,48 @@ created: "2021-10-03"
 <a target="_blank" href="https://github.com/rust-lang/rust-artwork/tree/master/logo
 "><img align="right" width="100" src="https://raw.githubusercontent.com/rust-lang/rust-artwork/refs/heads/master/logo/rust-logo.svg" /></a> <a target="_blank" href="https://www.rust-lang.org/">rust-lang.org</a> is the home page for the language. 
 
-{% include whatever.html %}
-
-
 The mascot for the Rust language is a red crab?
 Their name is <a target="_blank" href="https://rustacean.net/">Ferris</a> (like "ferrous")
 because ferrous oxide is the chemical name for rust of iron.
 
-
+{% include whatever.html %}
 
 ## History
 
-According to [1]<a target="_blank" href="https://www.wikiwand.com/en/Rust_(programming_language)">Wikipedia</a>, the Rust language begun in 2006 as a personal project by <a target="_blank" href="https://usesthis.com/interviews/graydon.hoare/">Graydon Hoare</a> while a Mozilla employee, before he went to Apple.
-Rust is open-sourced (MIT license) since July 7, 2010.
-Rust 1.0 was released on May 15, 2015.
+<a target="_blank" href="https://www.wikiwand.com/en/Rust_(programming_language)">Wikipedia</a> notes that the Rust language begun in 2006 as a personal project by <a target="_blank" href="https://usesthis.com/interviews/graydon.hoare/">Graydon Hoare</a> while a Mozilla employee, before he went to Apple.
+In 2013 <a target="_blank" href="https://www.linkedin.com/in/graydon-h-881374212/">Graydon Hoare</a> stepped away from the project.
+
+2009 (Mozilla Sponsorship): Mozilla recognized the potential of Hoare's project and officially became its sponsor. Graydon was able to work on Rust full-time with a growing team.
+
+Rust was officially announced to the public by Mozilla on<br />
+July 7, 2010.
+
+Rust 1.0 was released (under open-source MIT license) on May 15, 2015 as the "official" birth of the language, when it became stable enough for developers to confidently use in production.
+
+<a target="_blank" href="https://github.com/rust-lang">https://github.com/rust-lang</a>
+
+REMEMBER: Unlike Python, JavaScript:
+   * Rust has an integrated (built-in) <tt>cargo</tt> <strong>package manager</strong>, build tool, and test runner (<tt>cargo test</tt>).
+   * <tt>rustup</tt> toolchain installer. https://rustup.rs 
+   * <a target="_blank" href="https://doc.rust-lang.org/clippy/">clippy</a> linter to catch common mistakes and improve your Rust code.
+   * <tt>rustfmt</tt> to Format Rust code
+   * rustdoc to build formatted HTML from code.
+   * <tt>cargo clean</tt> cleans up generated files
 
 Rust maintainers have a <a target="_blank" href="https://github.com/rust-lang/rfcs/blob/master/text/0507-release-channels.md">6-week rapid release process</a> even though they support a large number of platforms.
 
-In August 2020, Mozilla laid off most of the Rust team (along with completely disbanding the Servo parallel browser team). 
-The event raised concerns about the future of Rust.
-So in Feburary 2021, the "Rust Foundation" was formed with (AWS, Huawei, Google, Microsoft, and Mozilla) all who use Rust as a <strong>systems programming</strong> language:
+<a target="_blank" href="https://perf.rust-lang.org/dashboard.html">Their Dashboard</a>
+
+
+## Who Uses Rust?
+
+<a target="_blank" href="https://jobs.letsgetrusty.com">https://jobs.letsgetrusty.com</a>
+
+<a target="_blank" href="https://www.linkedin.com/jobs/search-results/?currentJobId=4427009987&keywords=rust&origin=JOB_SEARCH_PAGE_JOB_FILTER&referralSearchId=2Bx6IDBa6uZgZTTZ7TMrsQ%3D%3D&f_SAL=f_SA_id_225001%3A272001">LinkedIn Jobs in Rust (Remote)</a>
+
+During the pandemic in August 2020, Mozilla laid off most of the Rust team (along with completely disbanding the Servo parallel browser team). The event raised concerns about the future of Rust.
+
+On Feburary 2021, the "Rust Foundation" was formed with AWS, Huawei, Google, Microsoft, and Mozilla, who all use Rust as a <strong>systems programming</strong> language:
    * TensorFlow and ONNX libraries use Rust's FFI to wrap underlying C implementations.
    * Linkerd creator Oliver Gould, says <a target="_blank" href="https://www.youtube.com/watch?v=BWL4889RKhU" title="May 14, 2021">the Future of the Cloud will be Built on Rust</a> CNCF 
    * Amazon Web Services (AWS) has used Rust since 2017 for its serverless computing offerings, AWS Lambda and AWS Fargate. With that, Rust has gained further inroads. The company has written the Bottlerocket OS and the AWS Nitro System to deliver its Elastic Compute Cloud (EC2) service.<a href="#[3]">[3]</a> See “How our AWS Rust team will contribute to Rust’s future successes,” http://mng.bz/BR4J 
@@ -50,19 +72,34 @@ So in Feburary 2021, the "Rust Foundation" was formed with (AWS, Huawei, Google,
    * Facebook uses Rust to power Facebook’s web, mobile, and API services, as well as parts of HHVM, the HipHop virtual machine used by the Hack programming language. See “HHVM 4.20.0 and 4.20.1,” https://hhvm.com/blog/2019/08/27/hhvm-4.20.0.html.
    <br /><br />
 
+* <a target="_blank" href="https://vector.dev/docs/setup/">Vector.dev</a> (by Datadog) is a lightweight agent running on the app server to send logs to the central server without slowing down the app after updating XCOde CLI:
+   ```bash
+   sudo rm -rf /Library/Developer/CommandLineTools
+   sudo xcode-select --install
+   brew trust --formula vectordotdev/brew/vector
+   brew tap vectordotdev/brew && brew install vector
+   ```
+   Incredibly fast, low memory footprint, and handles both collection, parsing (transform), and routing logs. Recommended over Fluent Bit written in C and Filebeat written in Go. Vector does not block your application’s main thread. Instead of your app waiting for a network round-trip to the central server, your app writes logs to a local buffer (e.g., stdout, a local file, or a Unix socket). Vector reads from these local sources asynchronously. The app continues processing requests while Vector handles the network I/O in the background.
+
 Rust uses <a target="_blank" href="https://llvm.org/">LLVM</a> to generate a language compiler/debugger, so performance improvements in LLVM would also benefit Rust.
 
-## Show Me The Money
 
-https://jobs.letsgetrusty.com
+## Glossary: Packages vs Crates vs Modules
+
+| Feature: | Package | Crate | Module |
+| Analogy: | bookshelf (holds everything together) | individual book | Chapters in the book |
+| Definition: | a wrapper that contains one or more crates | the root of modules | branches inside that root |
+| How many per level? | 1 package per project | 1+ per package | Many per crate |
+| What is it? | A distribution unit | A compilation unit | A namespace/organizer |
+| Defined by: | Cargo.toml | main.rs or lib.rs | mod keyword or file tree |
+| Purpose: | Manage dependencies, build settings, and publishing | Group code that compiles together | Control visibility and scope |
+| Example: | cargo new my_app | serde, rand, tokio | std::fs, std::io |
 
 
 ## Why Rust?
 
    * <a target="_blank" href="https://www.youtube.com/watch?v=2KTG3OQPPJ4" title="Oct 8, 2019 Doug Milford">Why Rust</a>
    <br /><br />
-
-> "Rust isn't difficult. It's unfamiliar."
 
 Rust was rated the "most loved" among all programming languages in the <a target="_blank" href="https://web.archive.org/web/20201008033536/https://insights.stackoverflow.com/survey/2019/?utm_source=social-share&utm_medium=social&utm_campaign=dev-survey-2019#most-loved-dreaded-and-wanted">2020 StackOverflow survey of developers</a> (ahead of Python, TypeScript, Kotlin, etc.).
 
@@ -73,35 +110,50 @@ Rust was <a target="_blank" href="https://www.tiobe.com/tiobe-index/">#26 on the
 Like C, C++, Java:
    * Rust uses <tt>//</tt> for comments and ignored code between <tt>/*</tt> and <tt>*/</tt>
    * Rust uses <tt>//!</tt> to precede comments about the program file.
-   * In practice <tt>///</tt> are comments that apply to a particular line below the comment.
+   * In practice, <tt>///</tt> are comments that apply to a particular line below the comment.
    * Rust uses semicolons to end each sentence.
    <br /><br />
 
-Like C, C++:
-   * Rust does not use a <strong>garbage collector</strong> (which increases Runtime program size).
-   * Objects in Rust are discarded when the last "owner" goes out of <a href="#Scope">scope</a>.
- 
-Unlike Python and Java:
-   * Rust execution does not pauses occassionally for automatic Garbage Collection.
+REMEMBER: <a target="_blank" href="https://www.youtube.com/watch?v=XGtWsfnnvh0">VIDEO</a>:
+The genius of Rust is that its memory "borrowing" and "ownership" model provides a way to avoid much of the null pointer exceptions and buffer overrun issues in C and garbage collection delays in Java.
 
-Unlike other languages: <a target="_blank" href="https://www.youtube.com/watch?v=DJdUjjOmyx8">This Is How Rust Stops Memory Leaks</a> by @Low Level
-   * which can have several variables point to the same memory, which can cause parallel and concurrency issues, Rust has a <strong>clone</strong> method.
-   * "&" in front of a variable designates "borrowing"
-   * Rust provides <tt>assert</tt> and <tt>cargo test</tt> commands for <tt>#[test]</tt> or <tt>#[should_panic]</tt>
-   * <tt>rustdoc</tt> command generates HTML documentation (like JavaDoc) without installing additional tools
-   <br /><br />
+   * Objects in Rust are discarded when the last "owner" goes out of <a href="#Scope">scope</a>.
+
+> "Rust isn't difficult. It's unfamiliar."
+
+> "Rust enables low-level control without giving up high-level conveniences."
 
 Rust is used to write performance intensive, highly-concurrent code, with predictable tail latencies.
-   * Variables are immutable (can't be changed) unless marked as "mut" (mutable).
-   * The lifetime of several variables that exist together are marked with: <tt>&'z Person</tt> and <tt>Person&LT;'z></tt>
-   <br /><br />
+Thus, Rust can power performance-critical services, run on embedded devices, and easily integrate with other languages.
+
+> Analogy: C/C++ is a nightclub with no bouncers. Anyone can go in, mess with the DJ equipment, and start fights (memory leaks, crashes). It's a very fast, wild party, but someone eventually gets hurt. Java/Python is a nightclub with a janitor (Garbage Collector) who constantly walks around cleaning up empty cups while you dance. It's safe, but sometimes the janitor stops the music to clean, causing awkward pauses. Rust is a nightclub with a strict bouncer at the front door (The Borrow Checker). He checks your ID and your intentions before you even enter the building. If you look like you're going to cause trouble, you aren't allowed in. But once you are inside, there are no janitors stopping the music, and because everyone inside was vetted, the party is both incredibly fast and perfectly safe.
 
 Like C: <a target="_blank" href="https://www.youtube.com/watch?v=NtYHC1KNGoc">C is 50 Years Old. Should You Learn Rust?</a>
    * Developers manage memory in code.
    <br /><br />
    
-Thus, Rust can power performance-critical services, run on embedded devices, and easily integrate with other languages.
-"Rust enables low-level control without giving up high-level conveniences."
+Unlike Python and Java, which can have <strong>object classes</strong>:
+   * Rust <strong>enums</strong> ???
+
+Unlike Python and Java, which use a <strong>garbage collector</strong> (that increases Runtime program size) and pauses occassionally for automatic Garbage Collection:
+   * Values in Rust are strict: bound to a type at compile time vs. at runtime.
+   * Rust is strictly typed, but it avoids the complex, deep inheritance trees of older object-oriented languages. Instead, it uses <strong>Traits</strong> (similar to Interfaces in Java or TypeScript). You define behaviors (traits) and apply them to data structures (structs). This allows for highly modular, composable code.
+
+Unlike Python and Java which use <strong>try/catch exceptions</strong>:
+   * The Rust compiler (1<tt>rustc</tt>) doesn't allow resolution of errors to be undefined outside program.
+   * Rust makes error handling predictable by stopping compiling when all success and error cases are not handled. 
+   * Rust uses a <tt>Result</tt> type for things that can fail (like reading a file).
+
+Unlike other languages: <a target="_blank" href="https://www.youtube.com/watch?v=DJdUjjOmyx8" title="by @Low Level">This Is How Rust Stops Memory Leaks</a> 
+   * which can have several variables point to the same memory, which can cause parallel and concurrency issues, Rust has a <strong>clone</strong> method.
+
+   * Rust provides <tt>assert</tt> and <tt>cargo test</tt> commands for <tt>#[test]</tt> or <tt>#[should_panic]</tt>
+   * <tt>rustdoc</tt> command generates HTML documentation (like JavaDoc) without installing additional tools
+   <br /><br />
+
+   * Variables are immutable (can't be changed) unless marked as "mut" (mutable).
+   * The lifetime of several variables that exist together are marked with: <tt>&'z Person</tt> and <tt>Person&LT;'z></tt>
+   <br /><br />
 
 Unlike Python & Go:
    * Rust compiler issues errors when garbage situations are detexted.
@@ -111,20 +163,25 @@ Unlike Python & Go:
    * Rust has <strong>no runtime</strong> Rust does not use an intrepreter.
    <br /><br />
 
-Like Go:
-   * Rust compiles to machine running byte-code rather than a level of abstraction of a virtual machine.
+Unlike Java and C#:
+   * Rust does not compile (builds) to <strong>byte-code</strong> abstraction.
+   * Rust does not run in a virtual machine.
+Like C:
+   * Rust compiles directly to machine code (via the LLVM backend, the same engine used by C and C++).
+   * To get the safety of high-level code with the speed of low-level code, Rust uses "zero-cost abstractions". This means you write high-level, readable code (like looping over a list using for loops or map/filter functions), and the compiler will optimize it down into the exact same brutally fast machine code as if you had written complex, low-level pointer math manually.
    <br /><br />
 
 Like shell scripts:
    * Rust enables creation of CLI tools. See the <a target="_blank" href="https://crates.io/categories/command-line-utilities">gallary of CLIs built using Rust</a>
    <br /><br />
 
+Data types larger than 128 bytes are copied with more expensive memcpy rather than inline code.
+
 Like Python: 
    * Rust can infer a data type by the value assigned.
    <br /><br />
 
 Unlike Python, JavaScript:
-   * Rust has an integrated package manager and build tool: Cargo.
    * Rust has smart multi-editor support with auto-completion and type inspections, and an auto-formatter.
    * Rust does not have <tt>--</tt> and <tt>++</tt> operators.
    * Rust raises “non-exhaustive patterns” compiler errors if match and if logic do not consider all possible values.
@@ -136,7 +193,25 @@ Unlike Zig:
    <br /><br />
 
 
+### "Fearless Concurrency"
+
 Rust catches concurrency programming mistakes.
+
+Because of the Ownership rules, Rust solves one of the hardest problems in programming: concurrent (multi-threaded) programming.
+
+In languages like C++, <strong>data races</strong> (where two threads accidentally overwrite each other's data) are a nightmare to debug. Rust make data races impossible because the <strong>Borrow Checker</strong> ensures that if a thread is accessing data, no other thread can mutate it unless you explicitly use safe locking mechanisms (like Mutex).
+
+Unlike C, copies of data can be made, (which is slow for large data).
+Within Rust, to pass data to another part of your code, you don't copy it , and you don't share it freely (which is dangerous). Instead, you <strong>borrow</strong> using references (&).
+
+Analogy for Rust strict borrowing rules:
+* You can have as many read-only (&) borrowed references as you want. (Many people can read a book at the same time).
+* You can have only one mutable (&mut) reference, and no read-only references at the same time. (Only one person can hold the pen and edit the book; no one else can read it while they are writing).
+
+If you write code that tries to use a variable after it has been deleted, or if two threads try to modify the same data at the same time, The Borrow Checker throws an error, and forces you to fix the logic before the program ever runs. This is why Rust developers say: 
+
+> "If it compiles, it works."
+
 
 Stack overflow vulnerabilities not possible?
 
@@ -170,7 +245,17 @@ Face Detection in Rust with Python Bindings
 
 Rust developers are called "Rustlings" or "Rustaceans".
 
-r/rust
+Rust is the work of tens of thousands of contributors from around the world.
+https://thanks.rust-lang.org/rust/all-time/
+
+* ignore stats for @bors, the merge bot.
+* <a target="_blank" href="https://www.linkedin.com/in/alex-crichton-b99b7554/">Alex Crichton</a>
+* Aleksey Kladov
+* <a target="_blank" href="https://www.linkedin.com/in/centril/">@centril = Mazdak Farrokhzad</a>
+* <a target="_blank" href="https://nnethercote.github.io/2025/07/18/looking-for-a-new-job.html">@nnethercote = Nicholas Nethercote</a>, author of <a target="_blank" href="https://nnethercote.github.io/perf-book/">The Rust Performance Book 2020</a>
+
+
+r/rust on Reddit
 
 <a target="_blank" href="https://twitter.com/search?q=%23rustlang&src=typed_query">#RustLang on Twitter</a>.
 
@@ -208,20 +293,20 @@ The Linux Foundation's "Programming in Rust (LFD480)" is an instructor-led train
 
 ## Reference books and websites
 
-https://github.com/sger/RustBooks
-List of Rust books
+Lists:
+   * <a target="_blank" href="https://github.com/sger/RustBooks">List of Rust books</a>
+   * <a target="_blank" href="xhttps://github.com/ctjhoa/rust-learning">A bunch of links to blog posts, articles, videos, etc for learning Rust</a>
+   * <a target="_blank" href="https://github.com/rust-unofficial/awesome-rust">A curated list of Rust code and resources</a>
+   <br /><br />
 
-https://github.com/ctjhoa/rust-learning
-A bunch of links to blog posts, articles, videos, etc for learning Rust
+https://rust-book.cs.brown.edu/
+is an interactive fork of 
+<a target="_blank" href="https://doc.rust-lang.org/book/">doc.rust-lang.org/book</a> = TRPL ("The official Rust Programming Language book") by Steve Klabnik, Carol Nichols, and Chris Krycho. 
+It references 
+<a target="_blank" href="https://github.com/rust-lang/book">https://github.com/rust-lang/book</a>
 
-https://github.com/rust-unofficial/awesome-rust
-A curated list of Rust code and resources.
-
-<a target="_blank" href="https://doc.rust-lang.org/book/">doc.rust-lang.org/book</a> "The official Rust Programming Language book" 
-https://github.com/rust-lang/book
-The Rust Programming Language
-
-<a target="_blank" href="https://doc.rust-lang.org/rust-by-example/">doc.rust-lang.org/rust-by-example</a> "Rust by Example: https://github.com/rust-lang/rust-by-example
+<a target="_blank" href="https://doc.rust-lang.org/rust-by-example/">doc.rust-lang.org/rust-by-example</a> = "Rust by Example references 
+https://github.com/rust-lang/rust-by-example
 Learn by doing with annotated examples"
 
 https://github.com/sunface/rust-by-practice
@@ -239,7 +324,25 @@ https://github.com/pretzelhammer/rust-blog
 Educational blog posts for Rust beginners
 
 
-## Video tutorials
+https://learning.oreilly.com/library/view/-/0642572230241/
+The Rust Programming Language, 3rd Edition, March 2026
+By Steve Klabnik, Carol Nichols and Chris Krycho
+
+https://learning.oreilly.com/videos/-/9781491925447/continue
+VIDEO</a>: The Rust Programming Language: Fast, Safe, and Beautiful, 2015
+By Jim Blandy
+
+https://learning.oreilly.com/videos/oscon-2017/9781491976227/9781491976227-video306635/
+1h VIDEO: Rust for non-Rust developers - Hanneli Tavante (Codemine42) at OSCon 2017 Austin
+by <a target="_blank" href="https://www.linkedin.com/in/jim-blandy-b130842/">Jim Blandy</a>
+Borrowing
+
+https://learning.oreilly.com/library/view/-/9781098176228/
+Programming Rust, 3rd Edition, Oct 2026
+By Jim Blandy, Jason Orendorff and Leonora F. S. Tindall
+
+
+## OReilly tutorials
 
 <a target="_blank" href="https://learning.oreilly.com/videos/ultimate-rust-crash/9781800563902/">VIDEO: Packt: "Ultimate Rust Crash Course" Oct. 2020</a> by <a target="_blank" href="https://www.linkedin.com/in/nathan-stocks/">Nathan Stocks</a>,
 with code at https://github.com/CleanCut/ultimate_rust_crash_course
@@ -247,15 +350,15 @@ with code at https://github.com/CleanCut/ultimate_rust_crash_course
 when Rust was at 1.89.0.
 Shows how to write an interactive Space Invaders game with audio, multithreading.
 
-<a target="_blank" href="https://www.udemy.com/course/rust-lang/">8.5 hour video course "The Rust Programming Language"</a>
-by <a target="_blank" href="https://www.linkedin.com/in/dmitri-nesteruk-87b069aa/">Dmitri Nesteruk ("semi-retired" Quant in the UK</a>) shows use of IntelliJ IDEA.
+https://www.udemy.com/course/autogpt-gpt4-code-writing-ai/?couponCode=25BBPMXINACTIVE
+
+<a target="_blank" href="https://www.udemy.com/course/rust-lang/">8.5 hour video course "The Rust Programming Language"</a> by <a target="_blank" href="https://www.linkedin.com/in/dmitri-nesteruk-87b069aa/">Dmitri Nesteruk ("semi-retired" Quant in the UK</a>) shows use of IntelliJ IDEA.
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=zF34dRivLOw">VIDEO "Rust Crash Course | Rustlang"</a> by Traversy Media
 
 * <a target="_blank" href="https://www.youtube.com/watch?v=m76sRj2VgGo">The Box Smart Pointer in Rust</a>
 
 * by <a target="_blank" href="https://www.youtube.com/watch?v=nvur2Ast8hE#:~:text=I%20Code%20Forever-,ForrestKnight">@ForrestKnight</a>
-
 
 
 ## Sample Rust Code
@@ -326,17 +429,20 @@ Repository for advanced Red Team techniques focused on Rust
 
 ### Sample Code: Algorithms
 
+https://discord.com/invite/mnQfzktNu9
+
 So that we can confidently call each of the 393 wonderful modules from our own custom modules,
 I generated file algorithms.csv to enable automatic execution of each module to:
    * recompile after module dependency upgrades
    * identify coding errors
    * identify function issues    
    * identify version issues (using crate-audit)
-   * identify performance issues
+   * xidentify where code is running "hot" (consuming more memory or time than necessary)
 
-The algorithms.csv file contains these fields:
+The algorithms.csv file contains these fields updated by run-algorithms.rs:
    * seq - sequence to run, starting from 1 to 393.
-   * status - "PASS" or "FAIL" summarizing result of last run.
+   * status - "SKIP" bypasses run. "PASS" or "FAIL" summarizes result of last run.
+   * runsecs - Number of floating point seconds each took to run.
    * category1 — top-level module (e.g., Backtracking), with Category / Subcategory for nested entries like Data Structures / Probabilistic or Machine Learning / Loss Function
    * category2 - metadata for modules to be in a second category:
    * name — display name from the markdown link (e.g., All Combinations of Size K)
@@ -344,7 +450,7 @@ The algorithms.csv file contains these fields:
    * wikipedia - url to details about each algorithm.
    <br /><br />
 
-The 22 categories are listed in the <tt>lib.rs</tt> file.
+The 22 categories are listed in the <tt>lib.rs</tt> file to hold reuseable functions.
 
 <tt>mod.rs</tt> files are not in the .csv file because they're in every category folder.
 
@@ -415,6 +521,15 @@ https://github.com/TheAlgorithms/Rust/blob/master/DIRECTORY.md
    * String
    <br /><br />
 
+Sample summary output:
+<pre>
+Summary: 99 passed, 0 failed, 1 skipped  (100 selected)
+Elapsed: 16.409s
+Log file: /Users/johndoe/github-wilsonmar/Rust-algorithms/target/run-algorithms-20260623T142830.169122000Z.log
+Log bytes: 121633 bytes
+Summary file: /Users/johndoe/github-wilsonmar/Rust-algorithms/target/run-algorithms-20260623T142830.169122000Z.txt
+</pre>
+
 Prompt to create the program:
 ```
 create program run-algorithms.rs in new utils folder in the src folder.
@@ -426,11 +541,40 @@ If num2run is not specified, use hard-coded default of 1.
 To algorithms-001.csv add column "status" to the right of column "seq" and change run-algorithms.rs to update the status to contain "PASS" or "FAIL" after running each row.
 Stop execution if a module on a row returns FAIL.
 Add run-algorithms.rs run of clippy before cargo test. Skip the test if clippy has an error.
+
+Rather than output to stdout, write to a run log file in the workspace /target folder.
+The run would be quicker because run progress is not shown in STDOUT interactively.
+The log file name folder is specified in .gitignore so it doesn't get committed up.
+Near the end of a run, report in STDOUT a run summary of run elasped time, number of .rs run, skipped.
+Include a precise UTC timestamp as of start of run to each log's filename.
+Add calculation of log file output byte size and location. Report that in the run summary.
+Zip the run log file.
+Do not include run summary in the run log file, to make file length calc straightforward.
+
+Store run summary statistics by adding to a new summary-run-algorithms.csv file.
 ```
-Run:
+Check run:
 ```bash
 cargo build --bin run-algorithms 2>&1
 cargo run --bin run-algorithms -- --startnum 1 --num2run 1  2>&1
+cargo fmt --manifest-path /Users/johndoe/github-wilsonmar/Rust-algorithms/Cargo.toml -- src/utils/run-algorithms.rs && cargo run --manifest-path /Users/johndoe/github-wilsonmar/Rust-algorithms/Cargo.toml --bin run-algorithms -- --startnum 1 --num2run 1
+```
+Full run: remove -- --startnum 1 --num2run 1 to run all rows
+```
+cd /Users/johndoe/github-wilsonmar/Rust-algorithms
+echo "=== build ==="
+cargo build --quiet --bin run-algorithms 2>&1; echo "build_exit=$?"
+echo "=== rows 1-3 BEFORE (seq,status,runsecs) ==="
+awk -F, 'FNR>=2 && FNR<=4{print " "$1","$2","$3}' algorithms-001.csv
+sed -i '' 's/^2,PASS,/2,SKIP,/' algorithms-001.csv
+echo "=== run rows 1-3 with row 2 marked SKIP ==="
+cargo run --quiet --bin run-algorithms -- --startnum 1 --num2run 3 > /tmp/skip-test.log 2>&1; echo "run_exit=$?"
+grep -E "^\[|status :|^Summary:|^Elapsed:" /tmp/skip-test.log
+echo "=== rows 1-3 AFTER (row 2 must remain SKIP, runsecs unchanged) ==="
+awk -F, 'FNR>=2 && FNR<=4{print " "$1","$2","$3}' algorithms-001.csv
+sed -i '' 's/^2,SKIP,/2,PASS,/' algorithms-001.csv
+echo "=== rows 1-3 RESTORED ==="
+awk -F, 'FNR>=2 && FNR<=4{print " "$1","$2","$3}' algorithms-001.csv
 ```
 
 
@@ -439,23 +583,54 @@ cargo run --bin run-algorithms -- --startnum 1 --num2run 1  2>&1
 <a target="_blank" href="https://github.com/QMHTMY/RustBook">github.com/QMHTMY/RustBook</a>:
 A book about Rust Data Structures and Algorithms.   
 
-Leetcode
+Leetcode???
 
+
+## Observability & Visualizations
+
+1. <strong>runsecs<strong> of runs over time (total and for individual .rs modules)
+
+
+
+### A bad Client
+
+In my https://github.com/wilsonmar/rustlang/../bad-client.rs
+
+https://rust-book.cs.brown.edu/ch21-02-multithreaded.html
+provides sample code for a badly-behaved client app to test defensive error detection and correction behavior by servers interacting with various protocols (HTTP, gRPC, OLTP, etc.).
+
+Program invocation commands provide a way to select what anti-pattern and worst practice to inflict
+
+1. Too many invalid attempts at authentication
+1. hang forever (not return anything)
+1. A delay in response (3 minutes)
+1. Return wrong HTTP code
+1. Return wrong sequence
+1. Return too much information (overflow)
+1. Flood response (concurrent requests to ~50 at a time)
+1. Implement exponential backoff with jitter if it receives a 429 Too Many Requests response.
+1. self immolation - spawn 100,000 tasks. It will exhaust sockets, memory, and cause the OS to kill the process.
+1. see  WebPageTest for more
+* etc.
 
 <a id="Database"></a>
 
-## Speed with database 
+## Speed with databases
 
-1. <a target="_blank" href="https://www.youtube.com/watch?v=s19G6n0UjsM" title="2019">
-   Rust at speed — building a fast concurrent database</a> Noria
-   by Jon Gjengset (MIT CSAIL) using Rust ownership system.
+There are many alternative technologies to hold data:
 
+1. NextCloud local WebDAV format documents
+1. TSDB database to hold Prometheus
 1. Obsedian notes
-1. marimo notebooks contain Directed Acyclic Graphs (DAG) for Reactivity to determine the correct running order of cells. 
+1. Marimo notebooks contain Directed Acyclic Graphs (DAG) for Reactivity to determine the correct running order of cells. 
 1. PostgreSQL database to index of my movie DVD collection
 1. GraphQL API style db minimizes roundtrips
 1. Redis server for caching
 1. RAG vector db gRPC microservices protobuff 
+1. <a target="_blank" href="https://www.youtube.com/watch?v=s19G6n0UjsM" title="2019">
+   Rust at speed — building a fast concurrent database</a> Noria
+   by Jon Gjengset (MIT CSAIL) using Rust ownership system.
+1. RocksDB
 
 
 ## Learning Sequence
@@ -678,8 +853,7 @@ Bash completion has been installed to:
    ## My rustlang-samples
 
 1. Create folder and navigate to a folder to receive downloads.
-
-1. Obtain the folder:
+1. Obtain the folder locally so you can create PRs (Pull Requests):
    ```bash
    git clone https://github.com/wilsonmar/rustlang-samples --depth 1
    cd rustlang-samples
@@ -692,6 +866,67 @@ Bash completion has been installed to:
    * <a target="_blank" href="https://www.youtube.com/watch?v=DWcIZFGiKr0" title="Oct 8, 2019 Doug Milford">Milford: Hello World</a> and Cargo.toml (without using cargo)
    * <a target="_blank" href="https://www.youtube.com/watch?v=sE2cDV91IRg" title="Oct 8, 2019 Doug Milford">Milford: Cargo.toml</a>
    <br /><br />
+
+   ### rustfmt.toml
+
+1. Generate default settings to a <tt>rustfmt.toml</tt> file, which specifies limits enforced when <tt>cargo rustfmt</tt> is run. They reduce the need for human interaction (and stress) within a team.
+   ```bash
+   rustfmt --print-config default >default-rustfmt.toml
+   ```
+   PROTIP: In the rustfmt.toml file, only specifies overrides (non-default) setting values.
+   Its faster for the program to ignore a comment.
+
+1. Get a utility to automatically insert the description and default value of each setting as comments above each setting, using https://github.com/ravyne/rustfmt-expander/blob/main/rustfmt-expander.awk 
+   ```bash
+   brew install curl
+   curl -O https://raw.githubusercontent.com/ravyne/rustfmt-expander/refs/heads/main/rustfmt-expander.awk
+   ```
+1. The rustfmt-expander.awk was written to run on Linux, so on macOS, replace the "/*" and "*\" C-style block comments with shell-style comments:
+   ```bash
+   code rustfmt-expander.awk 
+   cp rustfmt-expander.awk ~/.local/bin/.
+   ```
+   Folder <tt>~/.local/bin</tt> is a common component in the <tt>$PATH</tt> within <tt>.bash_profile</tt> to make it known within CLI shells.
+
+1. Get the utility <tt>gawk</tt> to run the <tt>rustfmt-expander.awk</tt> file:
+   ```bash
+   brew install gawk
+   gawk -f rustfmt-expander.awk -- default-rustfmt.toml >> documented-rustfmt.toml
+   rm default-rustfmt.toml
+   ```
+   The above only needs to be done once.
+
+1. Rename the edited documented-rustfmt.toml to rustfmt.toml read by the command. Edit the file: For each setting you want to change, uncomment it (max_with =, above) and providing your own value. 
+   ```bash
+   cp documented-rustfmt.toml rustfmt.toml
+   rm documented-rustfmt.toml
+   code rustfmt.toml
+   ```
+   This makes it easy to see which settings is using the default and which the override.   
+
+1. Install the utility (into the active stable-aarch64-apple-darwin toolchain's bin directory):
+   ```bash
+   rustup component add rustfmt
+   rustfmt --version
+   ```
+   At time of this writing, the response:
+   <pre>
+   rustfmt 1.8.0-stable (f8297e351a 2025-10-28)
+   </pre>
+
+1. Run 
+   ```bash
+   cargo fmt
+   ```
+   FIXME: no response???
+
+1. Run from within Visual Studio Code and <a target="_blank" href="https://github.com/rust-lang/rustfmt#running-rustfmt-from-your-editor">other IDEs</a>:
+   ```bash
+   open https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
+   ```
+
+
+   ### Cargo.lock
 
 1. The <tt>Cargo.lock</tt> file:
 
@@ -1059,7 +1294,7 @@ let mut v = vec![1,2,3];
 
    * <a target="_blank" href="https://learning.oreilly.com/videos/ultimate-rust-crash/9781800563902/9781800563902-video2_8/">Ultimate</a>
    * <a target="_blank" href="https://www.youtube.com/watch?v=5F6pHtkWMxg" title="Oct 8, 2019 Doug Milford">Milford: lib vs main</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=5RPXgDQrjio">Let'sGetRusty: Rust's Module System Explained!</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=5RPXgDQrjio">Bogdan from Let'sGetRusty: Rust's Module System Explained!</a>
    <br /><br />
 
 <tt>use</tt> statements above main() are like Python import.
@@ -1123,6 +1358,7 @@ To benchmark non-public methods, use feature flags and wrappers.
 
    * <a target="_blank" href="https://www.youtube.com/watch?v=guuGCsNAiZg">VIDEO: Rust - Live coding implementation of non-blocking async agents on top of Tokio"</a> by Boy Maas 
    * <a target="_blank" href="https://www.youtube.com/watch?v=4DqP57BHaXI" title="May 20, 2021">VIDEO: Creating a Chat Server with async Rust and Tokio</a> by Lily Mara, author of "Refactoring to Rust" from Manning Publications
+   * <a target="_blank" href="https://www.youtube.com/watch?v=FUg1y-yv6cs">How Rust engineered the perfect ansync runtime.
    <br /><br />
 
 <a target="_blank" href="https://github.com/tokio-rs/tokio">github.com/tokio-rs/tokio</a> for concurrent runtime.
@@ -1392,10 +1628,13 @@ If you have an OReilly subscription:
 
 A. <a target="_blank" href="https://learning.oreilly.com/videos/-/08132023VIDEOPAIML/">1h Using Rust with Python Nov '23</a> 
 
-B. <a target="_blank" href="https://learning.oreilly.com/videos/-/09142023VIDEOPAIML/">5h Rust for Pythonistas</a> Nov '23
-creates a Python with Make file, Polars tests.
+B. <a target="_blank" href="https://learning.oreilly.com/videos/-/09142023VIDEOPAIML/">5h Rust for Pythonistas</a> Nov '23 creates a Python with Make file, Polars tests.
 
-C. <a target="_blank" href="https://learning.oreilly.com/videos/-/08252023VIDEOPAIML/">3h Rust LLMOps Nov '23</a>
+C. <a target="_blank" href="https://learning.oreilly.com/videos/-/08252023VIDEOPAIML/">4h Rust LLMOps Nov '23</a> AWS Code Whisperer Live Coding Rust Cargo Lambda using Simple Browser:
+   * <a target="_blank" href="https://learning.oreilly.com/videos/rust-llmops/08252023VIDEOPAIML/08252023VIDEOPAIML-c12_s1/">Part 1</a>
+   * <a target="_blank" href="https://learning.oreilly.com/videos/rust-llmops/08252023VIDEOPAIML/08252023VIDEOPAIML-c12_s2/">Part 2</a>
+   * <a target="_blank" href="https://learning.oreilly.com/videos/rust-llmops/08252023VIDEOPAIML/08252023VIDEOPAIML-c12_s3/">Part 3</a> cargo lambda build & release
+   --arm64 go use Graviton processors on AWS Lambda
 
 D. <a target="_blank" href="https://builder.aws.com/content/3CcA8u1UUlFqDRXOAovCe7wavz6/learn-aws-ai-and-cloud-with-me-40-courses-across-bedrock-sagemaker-lambda-and-mlops">AWS Builder Center</a>: With a Coursera subscription (~$400/year), earn a career certificate you can add to your LinkedIn profile, resume, or CV. Share it on social media and in your performance review.
 <a target="_blank" href="https://www.coursera.org/specializations/ai-tooling">
@@ -1432,6 +1671,8 @@ in 75 hours of videos:
 
 https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale 
 The Duke University Building Cloud Computing Solutions at Scale Specialization  is a four-course foundation covering serverless, containers, data engineering, and MLOps on AWS:
+
+
 
 Databricks
 
@@ -1535,7 +1776,12 @@ Techniiques:
    * Algorithms
    * Parallelization (Async)
 
+https://github.com/nnethercote/perf-book/blob/master/src/heap-allocations.md
 cd /Users/johndoe/github-wilsonmar/rustlang-samples/src/hello-rust && sudo cargo flamegraph --release -o flamegraph.svg 2>&1
+
+
+https://docs.google.com/presentation/d/1C1XEDoqdEEMkoTE7GqfsXgTkMh2z15CwkfFVXprVCaY/edit?usp=sharing
+Rust container cheat sheet
 
 
 <hr />
