@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-30"
-lastchange: "26-05-30 v030 html fixes @museums-roadtrip-usa.md"
+date: "2026-06-26"
+lastchange: "v031 vegas @museums-roadtrip-usa.md"
 url: https://bomonike/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -305,7 +305,7 @@ The East coast also has quaint <a target="_blank" href="https://www.travelandlei
    * Charlottesville, Virginia
    * Lewisburg, West Virginia
    * Beaufort, North Carolina
-   * Myrtle Beach, South Carolina
+   * Myrtle Beach, South Carolina is the 3rd cheapest airport to fly from.
    * Natchitoches, Louisiana
    * Santa Rosa Beach, Florida
    <br /><br />
@@ -953,6 +953,7 @@ Richmond is the capital of Virginia, and the capital of the Confederacy during t
 <li><a target="_blank" href="https://www.rollins.edu/cfam/">Cornell Fine Arts Museum at Rollins College</a>, Winter Park</li>
 <li><a target="_blank" href="https://www.morsemuseum.org/">Morse Museum of American Art</a>, Winter Park</li>
 
+<li>Orlando airport is the 4th cheapest airport to fly from.</li>
 <li>Disneyworld EPCOT, Orlando</li>
 <li type="circle">Four Seasons Resort Orlando, Walt Disney World</li>
 <li><a target="_blank" href="https://omart.org/">Orlando Museum of Art</a></li>
@@ -2219,10 +2220,14 @@ here we begin from Oklahoma and take a long detour North to avoid too much deser
 
 > <strong> Nevada </strong>
 
+Las Vegas has the cheapest tax on cell phones in the country.
+Also the 5th cheapest airport to fly from.
+
 <ul>
 <li><a target="_blank" href="https://www.guggenheimlasvegas.org/">Guggenheim Hermitage Museum</a>, Las Vegas</li>
 <li><a target="_blank" href="https://www.lasvegasartmuseum.org/">Las Vegas Art Museum</a></li>
 <li><a target="_blank" href="https://www.neonmuseum.org/">The Neon Museum</a></li>
+<li>Shoot machine guns</li>
 </ul>
 
 <ul>
