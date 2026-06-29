@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-22"
-lastchange: "26-06-22 v222 prometheus @README.md"
+date: "2026-06-28"
+lastchange: "v223 otel rustlang-samples @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -149,7 +149,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/odoo">odoo</a>
 1. <a target="_blank" href="https://bomonike.github.io/oee">oee</a> (Overall Equipment Effectiveness)
 1. <a target="_blank" href="https://bomonike.github.io/openmct">openmct</a>
-1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (Operational Technologies)
+1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (OpenTelemetry)
 
    <a name="P"></a>
    ### P
@@ -182,6 +182,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/regex">regex</a>
 1. <a target="_blank" href="https://bomonike.github.io/ros">ros</a> (Robotic Operating System)
 1. <a target="_blank" href="https://bomonike.github.io/ruby">ruby</a>
+1. <a target="_blank" href="https://bomonike.github.io/rustlang-samples">rustlang-samples</a>
 
    <a name="S"></a>
    ### S
