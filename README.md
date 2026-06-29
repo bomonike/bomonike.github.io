@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-06-28"
-lastchange: "v223 otel rustlang-samples @README.md"
+lastchange: "v224 rustlang-samples @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -182,7 +182,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/regex">regex</a>
 1. <a target="_blank" href="https://bomonike.github.io/ros">ros</a> (Robotic Operating System)
 1. <a target="_blank" href="https://bomonike.github.io/ruby">ruby</a>
-1. <a target="_blank" href="https://bomonike.github.io/rustlang-samples">rustlang-samples</a>
+1. <a target="_blank" href="https://bomonike.github.io/rust">rust (programming)</a> [<a target="_blank" href="https://github.com/bomonike/rustlang-samples">rustlang-samples</a>,  [<a target="_blank" href="https://github.com/wilsonmar/Rust-algorithms">Rust-algorithms</a>]]
 
    <a name="S"></a>
    ### S
