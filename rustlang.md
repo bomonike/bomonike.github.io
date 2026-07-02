@@ -1,11 +1,11 @@
 ---
 layout: post
 date: "2026-07-02"
-lastchange: "v029 diagram top @rustlang"
+lastchange: "v030 diagram top @rustlang.md"
 url: https://bomonike/rustlang
 file: "rustlang"
 title: "Rustlang (Rust language)"
-excerpt: "Efficient, secure, performant concurrent systems programming that compiles to machine running byte-code"
+excerpt: "Efficient, secure, performant concurrent systems programming that compiles to machine code"
 tags: [Rust, Python, Machine Learning]
 image:
 # rustlang-1900x500.png
@@ -19,16 +19,7 @@ created: "2021-10-03"
 
 {% include whatever.html %}
 
-This article, here at <a href="https://bomonike.github.io/rustlang/">https://bomonike.github.io/rustlang</a>, and its companion repo at <a href="https://github.com/bomonike/rustlang-samples/">github.com/bomonike/rustlang-samples</a>, describe the quickest way to <a href='#UseAI">use AI</a> to build practical and <a href="#Worthy">working</a> computer applications while learning the Rust language.
-
-<a id="Diagram"></a>
-
-## RustOps Diagram
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1782943478/rustlang-rustops_hstvye.png">Click on this link to pop-up a full-screen image of this flowchart</a> or<br />
-<a target="_blank" src="https://youtu.be/tcE5_AvFy6U">click anywhere on this flowchart for a gradual-reveal video (with no audio for now):</ab>
-<img alt="rustlang-rustops.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1782943478/rustlang-rustops_hstvye.png" /></a>
-Textual explanation (the script for this) is below at <a target="_blank" src="https://github.com/bomonike/rustlang/"></a>
+This article, here at <a href="https://bomonike.github.io/rustlang/">https://bomonike.github.io/rustlang</a>, and its companion repo at <a href="https://github.com/bomonike/rustlang-samples/">github.com/bomonike/rustlang-samples</a>, describe the quickest way to <a href="#UseAI">use AI</a> to build practical and <a href="#Worthy">working</a> computer applications while learning the Rust language.
 
 {% include _toc.html %}
 
@@ -37,19 +28,22 @@ Textual explanation (the script for this) is below at <a target="_blank" src="ht
 <a target="_blank" href="https://github.com/rust-lang/rust-artwork/tree/master/logo
 "><img align="right" width="100" src="https://raw.githubusercontent.com/rust-lang/rust-artwork/refs/heads/master/logo/rust-logo.svg" /></a> <a target="_blank" href="https://www.rust-lang.org/">rust-lang.org</a> is the home page for the language. 
 
+<img align="right" width="100" src="https://raw.githubusercontent.com/bomonike/rustlang-samples/refs/heads/main/rustacean-flat-gesture.svg?token=GHSAT0AAAAAADT7HA3MFMBC24COYZK25OIO2SGKR7A" />
 The mascot for the Rust language is a red crab?
 Its name is <a target="_blank" href="https://rustacean.net/">Ferris</a> (like "ferrous")
 because ferrous oxide is the chemical name for rust from iron.
 
-<a target="_blank" href="https://www.wikiwand.com/en/Rust_(programming_language)">Wikipedia</a> notes that the Rust language begun in 2006 as a <a target="_blank" href="https://github.com/graydon">personal project</a> by <a target="_blank" href="https://usesthis.com/interviews/graydon.hoare/">Graydon Hoare</a> while that browser company Mozilla employee, before he went to Apple.
-In 2013 <a target="_blank" href="https://www.linkedin.com/in/graydon-h-881374212/">Graydon Hoare</a> stepped away from the project.
+<a target="_blank" href="https://www.wikiwand.com/en/Rust_(programming_language)">Wikipedia</a> notes that the Rust language begun in 2006 as a <a target="_blank" href="https://github.com/graydon">personal project</a> by <a target="_blank" href="https://usesthis.com/interviews/graydon.hoare/">Graydon Hoare</a> while an employee of that browser company Mozilla. 
 
-2009 (Mozilla Sponsorship): Mozilla recognized the potential of Hoare's project and officially became its sponsor. Graydon was able to work on Rust full-time with a growing team.
+In 2013 <a target="_blank" href="https://www.linkedin.com/in/graydon-h-881374212/">Graydon Hoare</a> stepped away from the project to join Apple (to work on their Swift language).
+
+2009: Mozilla recognized the potential of Hoare's project and officially became its sponsor. Graydon was able to work on Rust full-time with a growing team.
 
 Rust was officially announced to the public by Mozilla on<br />
 July 7, 2010.
 
-Rust 1.0 was released (under open-source MIT license) on May 15, 2015 as the "official" birth of the language, when it became stable enough for developers to confidently use in production.
+Rust 1.0 was released (under open-source MIT license) 
+??? on May 15, 2015 as the "official" birth of the language, when it became stable enough for developers to confidently use in production.
 
 <a target="_blank" href="https://github.com/rust-lang">https://github.com/rust-lang</a>
 
@@ -65,10 +59,10 @@ Rust maintainers have a <a target="_blank" href="https://github.com/rust-lang/rf
 
 <a target="_blank" href="https://perf.rust-lang.org/dashboard.html">Their Dashboard</a>
 
-Rust uses <a target="_blank" href="https://llvm.org/">LLVM</a> to generate a language compiler/debugger, so performance improvements in LLVM would also benefit Rust.
+<a target="_blank" href="https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA">Videos from Rust conf presentations</a>
 
 
-## Who Uses Rust?
+## Jobs asking for Rust skills
 
 <a target="_blank" href="https://jobs.letsgetrusty.com">https://jobs.letsgetrusty.com</a>
 
@@ -76,42 +70,30 @@ Rust uses <a target="_blank" href="https://llvm.org/">LLVM</a> to generate a lan
 
 <a target="_blank" href="https://www.linkedin.com/jobs/search-results/?currentJobId=4427009987&keywords=rust&origin=JOB_SEARCH_PAGE_JOB_FILTER&referralSearchId=2Bx6IDBa6uZgZTTZ7TMrsQ%3D%3D&f_SAL=f_SA_id_225001%3A272001">LinkedIn Jobs in Rust (Remote)</a>
 
+
+## Who Uses Rust?
+
+Rust uses <a target="_blank" href="https://llvm.org/">LLVM</a> to generate a language compiler/debugger, so performance improvements in LLVM would also benefit Rust.
+
 During the pandemic in August 2020, Mozilla laid off most of the Rust team (along with completely disbanding the Servo parallel browser team). The event raised concerns about the future of Rust.
 
 On Feburary 2021, the "Rust Foundation" [<a target="_blank" href="https://www.linkedin.com/company/rust-foundation/">Linkedin</a>] was formed with AWS, Huawei, Google, Microsoft, and Mozilla, who all use Rust as a <strong>systems programming</strong> language:
    * TensorFlow and ONNX libraries use Rust's FFI to wrap underlying C implementations.
-   * Linkerd creator Oliver Gould, says <a target="_blank" href="https://www.youtube.com/watch?v=BWL4889RKhU" title="May 14, 2021">the Future of the Cloud will be Built on Rust</a> CNCF 
+
+Linkerd creator Oliver Gould, says <a target="_blank" href="https://www.youtube.com/watch?v=BWL4889RKhU" title="May 14, 2021">the Future of the Cloud will be Built on Rust</a> CNCF 
+
    * Amazon Web Services (AWS) has used Rust since 2017 for its serverless computing offerings, AWS Lambda and AWS Fargate. With that, Rust has gained further inroads. The company has written the Bottlerocket OS and the AWS Nitro System to deliver its Elastic Compute Cloud (EC2) service.<a href="#[3]">[3]</a> See “How our AWS Rust team will contribute to Rust’s future successes,” http://mng.bz/BR4J 
    * Google, on April 6, 2021, announced support for Rust within Android Open Source Project as an alternative to C/C++. Google develops parts of Android, such as its Bluetooth module, with Rust. Rust is also used for the crosvm component of Chrome OS and plays an important role in Google’s new operating system, Fuchsia. http://mng.bz/ryOX
    * Microsoft writes components of its Azure platform, including a security daemon for its Internet of Things (IoT) service, in Rust. See https://github.com/Azure/iotedge/tree/master/edgelet.
    * Facebook uses Rust to power Facebook’s web, mobile, and API services, as well as parts of HHVM, the HipHop virtual machine used by the Hack programming language. See “HHVM 4.20.0 and 4.20.1,” https://hhvm.com/blog/2019/08/27/hhvm-4.20.0.html.
    <br /><br />
 
-## Practical utilities written in Rust
 
-* grafana/augurs = Time series analysis for Rust, with bindings to Python and Javascript
+<a id="Glossary"></a>
 
-* https://github.com/RustScan/RustScan = Rust Scan - finds all open ports faster than Nmap.
+## Glossary
 
-* https://github.com/dani-garcia/vaultwarden/ = Vaultwarden - unofficial Bitwarden compatible server written in Rust.
-
-* https://github.com/starship/starship = Starship - the cross-shell prompt written in Rust.
-
-   * <a target="_blank" href="https://www.youtube.com/watch?v=5C_HPTJg5ek&pp=ugUEEgJlbg%3D%3D">Rust in 100 Seconds</a> @Fireship
-
-* https://github.com/rustybuilder/rust-faces = Face Detection in Rust with Python Bindings
-
-* <a target="_blank" href="https://vector.dev/docs/setup/">Vector.dev</a> (by Datadog) is a lightweight agent running on the app server to send logs to the central server without slowing down the app after updating XCOde CLI:
-   ```bash
-   sudo rm -rf /Library/Developer/CommandLineTools
-   sudo xcode-select --install
-   brew trust --formula vectordotdev/brew/vector
-   brew tap vectordotdev/brew && brew install vector
-   ```
-   Incredibly fast, low memory footprint, and handles both collection, parsing (transform), and routing logs. Recommended over Fluent Bit written in C and Filebeat written in Go. Vector does not block your application’s main thread. Instead of your app waiting for a network round-trip to the central server, your app writes logs to a local buffer (e.g., stdout, a local file, or a Unix socket). Vector reads from these local sources asynchronously. The app continues processing requests while Vector handles the network I/O in the background.
-
-
-## Glossary: Packages vs Crates vs Modules
+### Packages vs Crates vs Modules
 
 | Feature: | Package | Crate | Module |
 | Analogy: | bookshelf (holds everything together) | individual book | Chapters in the book |
@@ -1730,6 +1712,9 @@ To expose a function, return it or pass it to another function.
 
 
 ## Traits for inheritance
+
+Unlike Java, the Rust language does not have "class inheritance" features.
+   * <a target="_blank" href="https://www.youtube.com/watch?v=3IyKC5EtNkM">9 ways to do inheritance in Rust</a>
 
 Traits were added in Rust 0.4 as a means to provide inheritance; 
 
