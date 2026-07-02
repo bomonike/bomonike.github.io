@@ -182,7 +182,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/regex">regex</a>
 1. <a target="_blank" href="https://bomonike.github.io/ros">ros</a> (Robotic Operating System)
 1. <a target="_blank" href="https://bomonike.github.io/ruby">ruby</a>
-1. <a target="_blank" href="https://bomonike.github.io/rust">rust (programming)</a> [<a target="_blank" href="https://github.com/bomonike/rustlang-samples">rustlang-samples</a>,  [<a target="_blank" href="https://github.com/wilsonmar/Rust-algorithms">Rust-algorithms</a>]]
+1. <a target="_blank" href="https://bomonike.github.io/rustlang">Rust (programming)</a> [<a target="_blank" href="https://github.com/bomonike/rustlang-samples">rustlang-samples</a>], [<a target="_blank" href="https://github.com/wilsonmar/Rust-algorithms">Rust-algorithms</a>]
 
    <a name="S"></a>
    ### S
