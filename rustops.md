@@ -23,7 +23,7 @@ This is about installing and using the infrastructure around the Rust programmin
 the quickest way to <a href="#UseAI">use AI</a> to building <a href="#Worthy">production-quality</a> <a href="#Practical">practical applications</a> while learning the Rust language.
 
 This references my <a href="https://github.com/bomonike/rustlang-samples/">github.com/bomonike/rustlang-samples repo</a> and<br />
-<a href="https://bomonike.github.io/rustlang/">bomonike.github.io/rustlang</a> website.
+<a href="https://bomonike.github.io/rustlang">bomonike.github.io/rustlang</a> website.
 
 {% include whatever.html %}
 
@@ -149,10 +149,12 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - <a target="_blank" href="https://crates.io/crates/axum">axum crate</a> is a popular modern, ergonomic web framework built by the Tokio team. More popular than actix-web.
    - <a target="_blank" href="https://wilsonmar.github.io/alexa/">Alexa</a> voice response
    - <a target="_blank" href="https://wilsonmar.github.io/azure-functions/">Azure Serverless functions</a>
+
 * Multi-platform
    - <a target="_blank" href="https://wilsonmar.github.io/printing/">printing to printers</a>  Use multi-os std::process::Command (No external crates needed for CUPS like Linux [DONE]
    - rodio crate: play an audio file (mp3, wav) [DONE]
    - Camera scan bar code or QR code
+
 * Authentication
    - #localvault - retrieve secrets from a secure local vault on USB drive (rather than clear-text env files)
    - <a target="_blank" href="https://wilsonmar.github.io/passkeys/">Passkeys</a>
@@ -162,11 +164,13 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - custom header-based API auth
    - <a target="_blank" href="https://wilsonmar.github.io/okta/">Okta</a>
    - <a target="_blank" href="https://wilsonmar.github.io/zero-trust/">Zero Trust</a>
+
 * Configuration Management
+   - Use a --verbose/-v argument to select run-time verbosity of run stats
    - <a target="_blank" href="https://www.generalistprogrammer.com/tutorials/whoami-rust-crate-guide">whoami crate</a> to get the current user and environment.
-   - Read-only restore handling accounts
    - <a target="_blank" href="https://crates.io/crates/dirs">dirs crate</a> to get user directories cross-platform, C:\Users\... or assuming /usr/local/bin) [DONE]
    - <a target="_blank" href="https://wilsonmar.github.io/dns/">DNS</a> host name hops nslookup [DONE]
+
 * Secrets
    - Load from environment variables, for retrieving variables that don't need to be kept secret. [DONE]
    - AWS Secrets Manager
@@ -174,44 +178,47 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - secretscout crate scans for secrets in your own Rust applications.
    - leakguard crate: to redact secrets & PII from text and logs. It can find and remove emails, credit cards, IP addresses, JWTs, AWS keys, and more.
    - caviarder Rust CLI (that can also be used as a library) to read text and replace detected secrets using Gitleaks' 220+ detection patterns.
+
 * Client framework support
    - multi-modal OpenAI prompt handling (speech recognition, GenAI of text, images, video)
    - <a target="_blank" href="https://github.com/AnBowell/s3-filesystem">OpenOptions struct</a>: read (get) file at the end of a AWS S3 or MinIO compatible endpoint cloud URI. To treat S3 files as if they were local files.
    - write (put) a file to AWS S3 cloud (mimio) 
    - AWS, Azure, <a target="_blank" href="https://wilsonmar.github.io/gcp/">GCP</a> interoperability
-* Retry Logic with Exponential Backoff
-   - Automatically retries failed requests
-   - Implements exponential backoff (2s, 4s, 8s...)
-   - Special handling for rate limits
+
 * Logging and Observability
+   - In dev, consistently and pleasantly formatted print messages (like the rich library in Python) by replacing default print macros with a comprehensive toolkit with colors, styles, tables, progress bars, etc. 
+   - For production environments, logs need to be machine-readable JSON injestible by Loki. use tracing_subscriber::{fmt, prelude::*, EnvFilter};
+   - Logs are fowarded using Promtail or Fluentd to easily parse and forward.
+   - Add logging, locally and with RFC 3339 timestamps (Such as 2026-07-05T11:19:24.356999Z) and OTel (OpenTelemetry) via Prometheus.
+
+   - Issue alert to a SOC SIEM about security-relevant events and conditions defined in the MITRE ATT&CK framework or standard compliance controls (like PCI-DSS, HIPAA, or NIST). A SIEM (Security Information and Event Management) system is designed to cut through the noise of millions of mundane log entries to find the signals that indicate a threat, a breach, or a compliance violation. Such as failed access attempt, a malicious URL, email found.
+
+   - tracing library to log structured spans that follow execution history through an app
+
+   - tracking of run times and costs over time to identify anomalies occuring
+   - Error context for debugging
    - Progress logging
    - Token usage tracking
-   - Error context for debugging
-   - tracing library to log structured spans that follow execution history through an app
-   - tracking of run times and costs over time to identify anomalies occuring
-* Error handling 
-   - <tt>error.rs</tt> custom module serves as a central hub for all error types used within that crate. Thefile that defines a project's core error-handling logic. This is a common and structured error handling. standard convention. Automated
-   - Generation of tests
-   - <a target="_blank" href="https://crates.io/crates/thiserror">thiserror crate</a> for modeling errors in errors.rs instead of multiple trait implementations. Declining in usage over time.
+
+   - Automatic log file rotation offsite to remote backup
+   - Limit log backup handling accounts to Write-only access to prevent deletion ability.
+   - Limit log restore handling accounts to Read-only access to prevent deletion ability.
+
+* Error handling
+   - actix-web-prometheus crate to easily add a metrics middleware.
+   
    - Custom error type using thiserror
+   - <tt>error.rs</tt> custom module serves as a central hub for all error types used within that crate. Thefile that defines a project's core error-handling logic. This is a common and structured error handling. standard convention. Automated
+   - <a target="_blank" href="https://crates.io/crates/thiserror">thiserror crate</a> for modeling errors in errors.rs instead of multiple trait implementations. Declining in usage over time.
    - Handles rate limiting with retry logic
    - Timeout handling
-   - Environment variable validation)
-* Streaming Support
-   - <a target="_blank" href="https://crates.io/crates/serde">serde crate</a> for serialization/deserialization
-   - Real-time token-by-token response
-   - Flushes output immediately for better UX
-   - rayon crate for parallel computing with complicated synchronization
-   - YouTube uploading & casting
-* Database interaction support
-   - csv
-   - UUID for NoSWL documentDB [DONE]
-   - TSDB (Time Series DataBase) a la Prometheus
-   - PostgSQL, MariaDB
-   - GraphDB
-   - RAG embedding
-   - Parquet format from Databrick & <a target="_blank" href="https://wilsonmar.github.io/snowflake/">Snowflake</a>
+
+   - Generation of property-based tests
+   - Generation of tests that exercise user GUI functional workflow 
+
 * Data validation
+   - Use uom (unit of measure) crate so the Rust compiler will not allow conversion errors between metric & imperial. The API's raw f64 elevation is wrapped immediately via Length::new::<meter>(result.elevation), so the "this number means meters" fact is encoded in the type, not just a variable name. So there's no way to accidentally treat one as the other, since Length doesn't expose a bare numeric value without picking a unit. [DONE]
+
    - URL texts do not contain Homoglyphs for malicious rerouting [DONE]
    - DNS domain, IP, email addresses not reported to be malicious [DONE]
    - Phone numbers not reported to be spam-related
@@ -226,6 +233,34 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - Translation of geo names between English and French
    - proptest library to make property-based tests
 
+* Streaming Support
+   - <a target="_blank" href="https://crates.io/crates/serde">serde crate</a> for serialization/deserialization
+   - Real-time token-by-token response
+   - Flushes output immediately for better UX
+   - rayon crate for parallel computing with complicated synchronization
+   - YouTube uploading & casting
+
+* Database interaction support
+   - csv
+   - UUID for NoSWL documentDB [DONE]
+   - TSDB (Time Series DataBase) a la Prometheus
+   - PostgSQL, MariaDB
+   - GraphDB
+   - RAG embedding
+   - Parquet format from Databrick & <a target="_blank" href="https://wilsonmar.github.io/snowflake/">Snowflake</a>
+   - <a target="_blank" href="https://docs.rs/object_store/latest/object_store/">object_store crate</a> provides an tokio async API works for interacting with a trait object storage services and local files via the ObjectStore trait. The same binary and code can run in multiple clouds and local test environments, via a simple runtime configuration change. From InfluxData and subsequently donated to Apache Arrow for governance. futures = "0.3" # for iterating over list streams. bytes = "1"
+
+   Interaction to change storage backends by changing "aws" to "gcp", "azure", or "fs" (filesystem) as needed
+   (AWS S3, Google Cloud Storage, Azure Blob Storage, local filesystem, etc.)
+   <tt>object_store = { version = "0.10", features = ["aws"]</tt>
+
+* Retry Logic with Exponential Backoff
+   - Automatically retries failed requests
+   - Implements exponential backoff (2s, 4s, 8s...)
+   - Special handling for rate limits
+
+* Payment
+   - Use <a target="_blank" href="https://docs.rs/crypto-pay-api">Telegram’s crypto-pay-api</a> to create crypto invoices and handle payment flows to a return payment URL. [<a target="_blank" href="https://help.send.tg/en/articles/10279948-crypto-pay-api">release</a>]
 
 ### Secrets scanning
 
@@ -463,11 +498,14 @@ Examples in Python:
    ```
    <tt>2>&1</tt> routes STDERR to screen.
 
+
+   ## Cargo audit
+
 1. Run <a target="_blank" href="https://crates.io/crates/cargo-audit">cargo audit</a> to scan the <tt>Cargo.lock</tt> file (generated by <tt>cargo run</tt>) against the RustSec Advisory Database, which tracks known vulnerabilities (including CVEs) and security advisories for published crates.
    ```bash
    cargo audit
    ```
-   displays "Vulnerable crates found!" or "unmainted". Examples:
+   At time of running, it displayed "Vulnerable crates found!" within openai-client calling async-openai transitively calling backoff calling instant:
    <pre>
    Version:   0.4.0
    Warning:   unmaintained
@@ -494,10 +532,33 @@ Examples in Python:
          └── openai-client 0.1.0
    </pre>
 
-   cargo-deny 
-
    REMEMBER: As they say, "with Rust, you get the hangover before". 
-   Use Clippy whinning as learning opportunities to write safe code.
+   Use Clippy whinning as learning opportunities to write safer code.
+
+1. https://github.com/divviup/janus/issues/3725
+   <pre>
+   ├ Advisory: https://rustsec.org/advisories/RUSTSEC-2025-0012
+   ├ The [backoff](https://crates.io/crates/backoff) crate is no longer actively maintained. For exponential backoffs/retrying, you can use the [backon](https://crates.io/crates/backon) crate.
+   ├ Announcement: https://github.com/ihrwein/backoff/issues/66
+   ├ Solution: No safe upgrade is available!
+   </pre>
+
+1. If you decide to wait for fixes, so that the same error doesn't appear, silence them by setting unmaintained crates to "warn" instead of "deny":
+   ```bash
+   cargo deny
+   ```
+
+1. Migrate backoff to backon https://github.com/divviup/janus/pull/3769 shows a resolution on Apr 14, 2025
+
+1. I asked AI "how to fix this" and got back:
+   
+   The most sustainable solution is to update async-openai to a version that no longer depends on backoff. The latest version (0.41.1) still lists backoff as a dependency, but the maintainers may address this in a future release.
+   ```bash
+   cargo update async-openai --verbose
+   ```
+   
+
+   ### Clippy scans
 
 1. PROTIP: Run the built-in clippy code scanner utility different ways. First, get a summary:
    ```bash
@@ -528,20 +589,21 @@ help: collapse nested if block">warning: this `if` statement can be collapsed</a
    </pre>
    
    TODO: Define these commands as aliases so you can invoke the command easily and frequently.
+   See my https://github.com/wilsonmar/mac-setup/main/blob/aliases.sh
 
 
    ### Learn!
 
-   > If you'd rather be a pro than a mindless poser, do the work now and reap the rewards in the years to come.
+   > If you'd rather be a pro than a mindless poser, do the work now to reap rewards in the years to come.
 
 1. The command to get the full details into a file so you can take notes on the response:
    ```bash
-   timestamp=$(date "+%Y%m%d_%H%M%S");clear;cargo clippy --manifest-path Cargo.toml --all -- -D warnings 2>"clippy$timestamp.txt"
+   timestamp=$(date "+%Y%m%d_%H%M%S");clear;cargo clippy --manifest-path Cargo.toml --all -- -D warnings 2>"clippy-$timestamp.txt"
    code "clippy-run-$timestamp.txt"
    ```
    PROTIP: A <tt>clear</tt> command would enable you to quickly reach the top of a long output by pressing command+up arrow.
 
-   PROTIP: <tt>2>"clippy$timestamp.txt"</tt> sends the output to a file named with a date/time stamp.
+   PROTIP: <tt>2>"clippy_$timestamp.txt"</tt> sends the output to a file named with a ISO8601 UTC date/time stamp.
 
 1. REMEMBER: Bookmark the link to <a target="_blank" href="https://doc.rust-lang.org/error-index.html">Rust error codes</a>
 
@@ -610,6 +672,8 @@ Examples of what is applicable to many modules:
 // POLICY: Generally, issue results from functions rather than print formatted output so that the calling function has a choice of natural languages to present results.
 
 // POLICY: Within main(), uniquely identify each step to provide the AI a way to reference code rather than using more cumbersome line numbers. The AI can renumber sequentially numbered steps automatically when asked.
+
+// POLICY: When printing sequential numbers, zero-fill 3-digit numbers (specified as "{:03}") so columns line up vertically.
 
 // POLICY: Do not store sensitive values in clear-text .env files, even though they are in the user home folder. Store secrets in a local secrets database such as KeepassXC.
 
