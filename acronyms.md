@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-27"
-lastchange: "v105 SCSI @acronyms.md"
+date: "2026-07-06"
+lastchange: "v107 ESPR CEAP DDP EU @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -231,6 +231,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	CDN	=	Content Delivery Network (Amazon)
 *	CDPI	=	Control Data-Plane Interface (between SDN Datapath and Controller)
 *	CE	=	Community Edition
+*	CEAP	=	Circular Economy Action Plan (EU)
 *	CEO	=	Chief Executive Officer (position title)
 *	CF	=	CloudFormation (AWS IaC)
 *	CFAA	=	Computer Fraud & Abuse Act (of 1986)
@@ -392,6 +393,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	DPIA	=	Data Protection Impact Assessment (<a target="_blank" href="https://ec.europa.eu/newsroom/article29/items/611236">required by EU GDPR</a>)
 * DPL = Data Protection Officer (job role required by GDPR)
 *	DQL	=	Data Query Language (to SELECT SQL data)
+*	DPP	=	Digital Product Passport (EU regulation of physical product mfg.)
 *	DR	=	Disaster Recovery
 * DRAM = Dynamic Random Access Memory
 *	DRI	=	Directly Responsible Individual	(Coined by Apple for the person to make sure that a task is completed)
@@ -482,9 +484,9 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	EPSS	=	Exploit Prediction Scoring System (to predict the likelihood of a vulnerability being exploited)
 *	ERM	=	Enterprise Risk Management
 *	ERP	=	Enterprise Resource Planning	(SAP does this)
-* ESB = ???
 * eSRAM = embedded Static Random-Access Memory (TSMC memory coupled with the GPU of Microsoft Xbox One gaming console's architecture)
 * ESNI = Encrypted Server Name Indication (with TLS 1.3)
+* ESPR = Ecodesign for Sustainable Product Regulation (EU)
 *	ETDR	=	Endpoint Threat Detection and Response (security)
 *	ETW	=	Event Tracing for Windows (Microsoft EventPipe)
 *	EU	=	European Union
@@ -504,6 +506,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	FBL	=	Feedback Loop
 *	FCEB	=	Federal Civilian Executive Branch (US government departments and agencies)
 *	FCI	=	Failover Cluster Instance (Microsoft SQL Server)
+* FCoE = Fibre Channel over Ethernet
 *	FDE	=	Full Disk Encryption
 *	FEA	=	Federal Enterprise Architecture (by OMB)
 *	FEDRAMP	=	Federal Risk and Authorization Management Program
