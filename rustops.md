@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-04"
-lastchange: "v031 feat: error top @rustops.md"
+date: "2026-07-07"
+lastchange: "v033 feat: nato-audio @rustops.md"
 url: https://bomonike.github.io/rustops
 file: "rustops"
 title: "rustops (Rust Operations)"
@@ -90,6 +90,14 @@ obtainable from shared registry are downloaded.
 
 1. A <tt>git clone</tt> command can create a <strong>package folder</strong> and its
 
+## Not Discussed
+
+* Translation to different languages
+
+* CONTRIBUTING.md
+
+* CHANGELOG at the root. A CHANGELOG is not a dump of your Git commit history, but chronologically summarizee, in plain English, notable impacts. https://keepachangelog.com/en/1.1.0/ provides an example of the categories: Added, Changed, Deprecated, Removed, Fixed, Security.
+
 
 ## Table of Contents
 
@@ -118,6 +126,10 @@ Stripe keys	4	Critical	Payment API keys
 
 ## AI FTW
 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=sKNq4CqWkT4">How I Use Claude Code with Gemma 4 (Local LLMs, No API Costs)</a>
+   * https://github.com/ollama
+   <br /><br />
+
 AI today (in 2026) is not only able to respond to questions based on its vast accumulated knowledge but now also can analyze error messages and automatically fix many issues, even across layers of architecture.
 Example response:
 <pre>
@@ -145,15 +157,17 @@ Since it's genuinely in-progress and not hung, let's just wait longer.
 
 By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.io/production/">production</a> code", "easy to extend", "performant", and other nice objectives are achieved not by empty promises but the extent that these features are implemented.
 
-* Interactive Web GUI
+* GUI Interactive
+   GUI in the Autonomous Age of AI is for "Human In the Loop" to approve rather than initiate actions.
+
    - <a target="_blank" href="https://crates.io/crates/axum">axum crate</a> is a popular modern, ergonomic web framework built by the Tokio team. More popular than actix-web.
-   - <a target="_blank" href="https://wilsonmar.github.io/alexa/">Alexa</a> voice response
    - <a target="_blank" href="https://wilsonmar.github.io/azure-functions/">Azure Serverless functions</a>
 
 * Multi-platform
    - <a target="_blank" href="https://wilsonmar.github.io/printing/">printing to printers</a>  Use multi-os std::process::Command (No external crates needed for CUPS like Linux [DONE]
    - rodio crate: play an audio file (mp3, wav) [DONE]
    - Camera scan bar code or QR code
+   - <a target="_blank" href="https://wilsonmar.github.io/alexa/">Alexa</a> voice response
 
 * Authentication
    - #localvault - retrieve secrets from a secure local vault on USB drive (rather than clear-text env files)
@@ -204,6 +218,23 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - Limit log backup handling accounts to Write-only access to prevent deletion ability.
    - Limit log restore handling accounts to Read-only access to prevent deletion ability.
 
+* Network protection
+   - Incoming IP addresses are checked for its physical geography used to reject based on origin (which can be spoofed).
+   - URL texts do not contain Homoglyphs for malicious rerouting [DONE]
+   - DNS domain, IP, not reported to be malicious [DONE]
+   - Use the EmailRep.io and AlienVault API to determine Email Reputation - whether email addresses were reported as being used to distribute malware, phishing, or spam. There's also IPQualityScore for a Threat Intelligence - where the domain is newly registered (a sign of malicious intent).
+
+   - Phone numbers not reported to be spam-related
+
+   - <a target="_blank" href="https://github.com/Naurt-Ltd/simple-address-format">Address Formatting</a>
+   - <a target="_blank" href="https://wilsonmar.github.io/regex/">regex</a> (Regular Expression)
+   - <a target="_blank" href="https://crates.io/crates/countries">countries crate</a> gives rich metadata for each Alpha-2 ISO 3166 country (name, continent, region) 
+   - <a target="_blank" href="https://crates.io/crates/iso-country">iso-country crate</a> for quick is_valid_country_code("US") using a tiny binary enum table in-memory. No README file.
+   - <a target="_blank" href="https://crates.io/crates/rust_iso3166">rust-iso3166 crate</a> to use Rust's type system for making invalid country codes unrepresentable
+   - Currency Exchange rates and time series
+   - Delivery Point Validated by USPS, EU Loqate GBG, 
+   - Translation of geo names between English and French names
+
 * Error handling
    - actix-web-prometheus crate to easily add a metrics middleware.
    
@@ -219,18 +250,6 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
 * Data validation
    - Use uom (unit of measure) crate so the Rust compiler will not allow conversion errors between metric & imperial. The API's raw f64 elevation is wrapped immediately via Length::new::<meter>(result.elevation), so the "this number means meters" fact is encoded in the type, not just a variable name. So there's no way to accidentally treat one as the other, since Length doesn't expose a bare numeric value without picking a unit. [DONE]
 
-   - URL texts do not contain Homoglyphs for malicious rerouting [DONE]
-   - DNS domain, IP, email addresses not reported to be malicious [DONE]
-   - Phone numbers not reported to be spam-related
-
-   - <a target="_blank" href="https://github.com/Naurt-Ltd/simple-address-format">Address Formatting</a>
-   - <a target="_blank" href="https://wilsonmar.github.io/regex/">regex</a> (Regular Expression)
-   - <a target="_blank" href="https://crates.io/crates/countries">countries crate</a> gives rich metadata for each Alpha-2 ISO 3166 country (name, continent, region) 
-   - <a target="_blank" href="https://crates.io/crates/iso-country">iso-country crate</a> for quick is_valid_country_code("US") using a tiny binary enum table in-memory. No README file.
-   - <a target="_blank" href="https://crates.io/crates/rust_iso3166">rust-iso3166 crate</a> to use Rust's type system for making invalid country codes unrepresentable
-   - Currency Exchange rates and time series
-   - Delivery Point Validated by USPS, EU Loqate GBG, 
-   - Translation of geo names between English and French
    - proptest library to make property-based tests
 
 * Streaming Support
@@ -261,6 +280,33 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
 
 * Payment
    - Use <a target="_blank" href="https://docs.rs/crypto-pay-api">Telegram’s crypto-pay-api</a> to create crypto invoices and handle payment flows to a return payment URL. [<a target="_blank" href="https://help.send.tg/en/articles/10279948-crypto-pay-api">release</a>]
+
+
+### Emailrep.io Enum
+
+<pre>
+{
+  "email": "test@test.com",
+  "reputation": "high",
+  "suspicious": false,
+  "malicious": false,
+  "credentials_leaked": true, 
+  "data_breaches": ["LinkedIn", "Adobe"],
+  "first_seen": "2015-01-01",
+  "last_seen": "2023-10-24"
+}
+</pre>
+
+### Phone number
+
+* WhoCalled.us: One of the oldest and most straightforward databases. Just type in the number to see comments from other people who received calls from it.
+
+* 800Notes.com: Highly active forum-style site. You type in the number and read a thread of comments from other users detailing exactly what the scammer said or wanted.
+
+* ShouldIAnswer.com: Originally a popular app, their website (shouldianswer.com) allows you to search numbers and see a "trust rating" based on community feedback.
+
+* RoboKiller Lookup: RoboKiller is a major spam-blocking app, but they have a free web lookup tool where you can type in a number to see if it's in their scam database.
+
 
 ### Secrets scanning
 
@@ -347,6 +393,15 @@ Examples in Python:
    ```
    Incredibly fast, low memory footprint, and handles both collection, parsing (transform), and routing logs. Recommended over Fluent Bit written in C and Filebeat written in Go. Vector does not block your application’s main thread. Instead of your app waiting for a network round-trip to the central server, your app writes logs to a local buffer (e.g., stdout, a local file, or a Unix socket). Vector reads from these local sources asynchronously. The app continues processing requests while Vector handles the network I/O in the background.
 
+## Achilles Heel
+
+This may be a popular trivia question that everyone may not know:
+
+<a target="_blank" href="https://www.youtube.com/watch?v=eULu3j81Ak0&t=16m35s">VIDEO</a>
+Rust cannot handle double-linked lists, aka self-referential structs and cyclic graphs.
+
+The workaround is the Arena Pattern which has a 36% performance penalty to maintain the sequence number.
+
 
 <a id="Algorithms"></a>
 
@@ -386,6 +441,32 @@ Examples in Python:
    ```
 1. Read <a target="_blank" href="https://rustup.rs/">rustup.rs</a>
 
+   You don't need to rememeber that "toml" means (Tom's Obvious Minimal Language).
+
+   Inside the file, version="0.1.0" is updated manually to semver.org (Semantic Versioning).
+
+   The edition="2024" is described at
+   https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
+
+1. To find the version history of a crate such as "backup"
+   ```bash
+   cargo info backup
+   ```
+   The response at time of this writing:
+   <pre>
+        Updating crates.io index
+      Downloaded backup v0.1.0
+      Downloaded 1 crate (85.6KiB) in 0.39s
+    backup #backup #cli #restore
+    create encrypted backups
+    version: 0.1.0
+    license: BSD-3-Clause
+    rust-version: unknown
+    documentation: https://github.com/nbari/backup
+    homepage: https://github.com/nbari/backup
+    repository: https://github.com/nbari/backup
+    crates.io: https://crates.io/crates/backup/0.1.0
+           </pre>
 
 
    ### IDE install
@@ -425,9 +506,30 @@ Examples in Python:
    
    * <a href="https://github.com/bomonike/rustlang-samples/blob/main/src/useful-rust/src/main.rs">useful-rust at https://github.com/bomonike/rustlang-samples/blob/main/src/useful-rust/src/main.rs</a>
    
+   * nato-phonetic-audio is designed to be submitted to crates.io
+
    * openai-chat between a front-end client talking with a chat bot.
 
    * started around Nov 2022 
+
+
+   <a id="nato-phonetic-audio"></a>
+
+   ### nato-phonetic-audio
+
+   I created it with Claude's help.
+
+   Its Rust code is within a <tt>lib.rs</tt> file because the package is structured for upload to crates.io as a library for use by others.
+
+1. Navigate to the <tt>examples</tt> directory provided to execute it like clients would:
+   ```bash
+   cargo run --example speak_sentence -- "KLQ9" -v
+   ```
+   The example file .rs name is auto-discovered.
+
+   Observe that the letters have a note to ensure proper pronounciation.
+
+   ### useful-rust
 
 1. To work on it, first navigate to:
    ```bash
@@ -499,6 +601,29 @@ Examples in Python:
    <tt>2>&1</tt> routes STDERR to screen.
 
 
+   ## cargo dev dependencies
+
+1. Navigate to your project's root directory (where your Cargo.toml is located) and run:
+   ```bash
+   cargo install cargo-udeps
+   cargo udeps
+   ```
+
+   ## cargo outdated
+
+1. Widen your CLI window and/or set the font smaller.
+1. Navigate to your project's root directory (where your Cargo.toml is located) and run:
+   ```bash
+   cargo install cargo-outdated
+   cargo outdated --aggressive --offline
+   ```
+   Specify "--root-deps-only" instead of "--aggressive".
+
+   Exclude "--offline" if you're not offline.
+
+   Expect to see a table listing your dependencies, their current version, the latest compatible version, and the absolute latest version:
+   
+   
    ## Cargo audit
 
 1. Run <a target="_blank" href="https://crates.io/crates/cargo-audit">cargo audit</a> to scan the <tt>Cargo.lock</tt> file (generated by <tt>cargo run</tt>) against the RustSec Advisory Database, which tracks known vulnerabilities (including CVEs) and security advisories for published crates.
@@ -564,6 +689,9 @@ Examples in Python:
    ```bash
    cargo clippy --manifest-path Cargo.toml 2>&1 | grep -E "warning:|error:|Finished" | sort -u
    ```
+   TODO: Define the commands above as aliases so you can invoke the command easily and frequently.
+   See my https://github.com/wilsonmar/mac-setup/main/blob/aliases.sh
+
    PROTIP: In the command above, "grep" creates a summary of one line per message. The "sort -u" presents only unique lines:
    
    * <a target="_blank" href="https://rust-lang.github.io/rust-clippy/rust-1.96.0/index.html#no_effect_underscore_binding">warning: binding to `_` prefixed variable with no side-effect</a>
@@ -588,9 +716,6 @@ help: collapse nested if block">warning: this `if` statement can be collapsed</a
    * <a target="_blank" href="https://rust-lang.github.io/rust-clippy/rust-1.96.0/index.html#uninlined_format_arg">warning: variables can be used directly in the `format!` string</a>
    </pre>
    
-   TODO: Define these commands as aliases so you can invoke the command easily and frequently.
-   See my https://github.com/wilsonmar/mac-setup/main/blob/aliases.sh
-
 
    ### Learn!
 
@@ -682,6 +807,25 @@ Examples of what is applicable to many modules:
 // POLICY: To access a database from multiple threads (e.g., in a Tauri or Axum web app), wrap crypto keys in a Mutex inside a single thread, or decrypt what you need and pass the decrypted strings (carefully) to other threads.
 
 // POLICY: When running in production (ENV_TYPE="PROD"), verify that the hash (SHA-1) of the main.rs file is the same hash as the file in GitHub to ensure that the file has not been corrupted.
+
+
+## Using KeePassXC
+
+To store API keys as secrets using the "Custom Attributes" Approach (Recommended)
+
+This method allows you to store as many distinct API values as you need for a single service while keeping them organized and secure.
+
+1. Create a new .kdbx file for APIs separate from your personal secrets (for banking, etc.).
+
+1. Open KeePassXC and create a new entry (or open an existing one).
+1. In the Title field, enter the name of the service (e.g., OpenAI API or AWS Production).
+Leave the Username and Password fields blank (or put a dummy username like API_User if your workflow requires those fields not to be empty).
+1. Click on the Advanced tab in the right-hand panel of the entry window.
+1. Under the Additional Attributes section, click the + (Plus) button to add a new custom field.
+1. In the Key column, type the name of the value (e.g., API Key, Client Secret, Base URL, Refresh Token).
+1. In the Value column, paste your actual API value.
+
+1. CRITICAL: Check the box under the Protect column (the little shield icon). This ensures the value is hidden behind asterisks and cannot be read by casual shoulder-surfers. It also prevents the value from being stored in cleartext in certain plugin caches.
 
 
 <hr />
