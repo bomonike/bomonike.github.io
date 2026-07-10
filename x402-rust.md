@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-07-10"
-lastchange: "v003 video reorg @x402-rust.md"
+lastchange: "v005 fix: youtube url @x402-rust.md"
 url: "https://bomonike.github.io/x402-rust"
 file: "x402-rust"
 title: "x402-rust"
@@ -160,15 +160,15 @@ Each server is configured
    | [01-intro](https://github.com/wilsonmar/axum-full-course/tree/main/module-01-intro) | **Introduction** | Hello World, `axum::serve`, basic handlers | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=4m20s">4:20</a> |
    | [02-routing](https://github.com/wilsonmar/axum-full-course/tree/main/module-02-routing) | **Routing** | Path params `/{id}`, nesting, HTTP methods | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=11m57s">11:57</a> |
    | [03-extractors](https://github.com/wilsonmar/axum-full-course/tree/main/module-03-extractors) | **Extractors** | Path, Query, Json, Headers, custom extractors | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=17m29s">17:29</a> |
-   | [04-responses](https://github.com/wilsonmar/axum-full-course/tree/main/module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=21m57s">21:57</a> |
-   | [05-state](https://github.com/wilsonmar/axum-full-course/tree/main/module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=25m19s:>25:19</a> |
+   | [04-responses](https://github.com/wilsonmar/axum-full-course/tree/main/module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=21m57s">21:57</a> |
+   | [05-state](https://github.com/wilsonmar/axum-full-course/tree/main/module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=25m19s:>25:19</a> |
    | [06-middleware](https://github.com/wilsonmar/axum-full-course/tree/main/module-06-middleware) | **Middleware** | Tower, CORS, compression, logging_, timing_, auth_middleware | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=28m48s">28:48</a> |
    | [07-errors](https://github.com/wilsonmar/axum-full-course/tree/main/module-07-errors) | **Errors** | Custom error types, thiserror, error handling | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=32m28s">32:28</a> |
    | [08-database](https://github.com/wilsonmar/axum-full-course/tree/main/module-08-database) | **Database** | SQLx, PostgreSQL, CRUD operations | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=35m12s">35:12</a> |
    | [09-auth](https://github.com/wilsonmar/axum-full-course/tree/main/module-09-auth) | **Authentication** | JWT, Argon2 hashing, protected routes | - |
    | [10-advanced](https://github.com/wilsonmar/axum-full-course/tree/main/module-10-advanced) | **Advanced** | WebSocket, SSE upgrqde, file uploads | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=52m56s">52:56</a> |
-   | [11-testing](https://github.com/wilsonmar/axum-full-course/tree/main/module-11-testing) | **Testing** | Unit tests, integration tests, oneshot | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=58m57s">58:57</a> |
-   | [12-production](https://github.com/wilsonmar/axum-full-course/tree/main/module-12-production) | **Production** | Docker, graceful shutdown, health checks, tracing | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=1h4m2s">1:04:02</a> |
+   | [11-testing](https://github.com/wilsonmar/axum-full-course/tree/main/module-11-testing) | **Testing** | Unit tests, integration tests, oneshot | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=58m57s">58:57</a> |
+   | [12-production](https://github.com/wilsonmar/axum-full-course/tree/main/module-12-production) | **Production** | Docker, graceful shutdown, health checks, tracing | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=1h4m2s">1:04:02</a> |
 
 
 ## Configure secure environment Variables:
@@ -211,7 +211,11 @@ Each server is configured
 
 ## B. Learn Basic Rust knowledge 
 
-The main.rs file from <a target="_blank" href="https://www.linkedin.com/in/arfan-zubi/">Arfan Zubi</a> references <a target="_blank" href="https://github.com/3rfaan/courses/tree/main/Rust/rust-by-practice/src">these</a> folders holding packages and individual functions:
+This project makes use of several ways for my custom program to reuse others' Rust code.
+
+a. <a target="_blank" href="https://github.com/wilsonmar/Rust-algorithms">https://github.com/wilsonmar/Rust-algorithms</a> is cloned Side-by-side so that updates to that repo can be synced to update branch like any other forked repo, but also have its functions be available to my custom app.
+
+b. The main.rs file from <a target="_blank" href="https://www.linkedin.com/in/arfan-zubi/">Arfan Zubi</a> references <a target="_blank" href="https://github.com/3rfaan/courses/tree/main/Rust/rust-by-practice/src">these</a> folders holding packages and individual functions:
    <pre>
    mod basic_types;
    mod collection_types;
@@ -232,6 +236,7 @@ The main.rs file from <a target="_blank" href="https://www.linkedin.com/in/arfan
    * CLI folder, file utilities
    * git & github
    * Tokio async handler tutorial [https://tokio.rs/tokio/tutorial](https://tokio.rs/tokio/tutorial)
+
 
 <a id="#SetupDBs"></a>
 
@@ -453,13 +458,73 @@ Waste of time:
 
 github.com/x402-rs
 
-### Wallet
+### Wallet setup
 
-provides public key
+1. The user on either end of a transaction needs to have a crypto wallet to hold his/her public and private keys.
+1. Consider a dedicated email browser profile you only use for crypto. This is so random phishing emails you can just ignore.
 
-metamask or Coinbase
+1. Install MetaMask as a <strong>internet browser extension</strong> on Chrome, Brave, or Firefox on macOS.
 
-fund Base, Solana
+   PROTIP: The browser extension is simpler and integrates better with dApps.
+
+   1. Open your browser and go to: https://metamask.io
+   1. Click Get MetaMask in the top menu.
+   1. Choose your browser.
+   1. Click the icon for your browser (Chrome / Brave / Firefox). You’ll be redirected to the official extension store page.
+   1. Install the extension
+   1. Click Add to Chrome (or “Add to Firefox” / “Add to Brave”).
+   1. Confirm by clicking Add extension in the popup.
+   1. The extension installs and a MetaMask icon appears in your toolbar.
+   1. Pin it (optional but useful)
+   1. Click the puzzle/extension icon in the toolbar, find MetaMask, and pin it so it’s always visible.
+
+   Option B: macOS Desktop App (less common)
+   1. MetaMask also offers a macOS app via the Apple App Store, but the extension is more widely used and supported.
+   1. Open App Store on macOS.
+   1. Search for MetaMask.
+   1. Click Get / Download, then open the app.
+   1. Follow the prompts to create or import a wallet.
+
+2. Configure Your MetaMask Wallet
+   1. Click the MetaMask icon in your browser toolbar.
+   1. Click Get Started → Create a Wallet.
+   1. Decide whether to help MetaMask improve the product (“I Agree” or “No Thanks”) — this doesn’t affect functionality.
+   1. Set a strong password (≥8 characters) for locking the extension on this browser.
+   1. This password only protects local access; it does not replace your Secret Recovery Phrase.
+   1. Confirm Terms of Use and click Create.
+
+3. Secure your wallet with the Secret Recovery Phrase (SRP)
+
+   This is the most critical step.
+
+   1. Click Secure My Wallet (do not skip this).
+   1. Click Click here to reveal secret words.
+   1. MetaMask shows 12 words in order. Write them down:
+   1. On paper, stored offline. In a secure, physical location (e.g., safe). Do not store them in iCloud, emails, notes apps, or screenshots.
+   1. Click Next, then re‑enter the words in the correct order.
+   1. Click Confirm, then All Done.
+
+   If you ever lose access to this browser or reinstall, you’ll use this SRP to restore your wallet.
+
+4. Use MetaMask with a hardware wallet (e.g., Ledger) via the extension.
+
+5. x402 asks for Block or Solana.  MetaMask defaults to Ethereum Mainnet. You can add other networks manually.
+
+   Add Custom Networks (e.g., Polygon, Solana EVM, etc.).:
+   1. Lookup the RPC, Chain ID, and explorer for the EVM chain you want (Avalanche, Arbitrum, Optimism, etc.). 
+   1. Example: Add Polygon (as shown in one guide):
+   1. Open MetaMask.
+   1. Click the network dropdown at the top (e.g., “Ethereum Mainnet”).
+   1. Click Add Network → Add Network again.
+   1. Fill in: Network Name: Polygon
+   1. New RPC URL: https://polygon-rpc.com (or official RPC)
+   1. Chain ID: 137
+   1. Currency Symbol: MATIC
+
+   1. Block Explorer URL: https://polygonscan.com
+   1. Click Save. You can now switch to Polygon and see MATIC balances and compatible tokens/NFTs.
+
+6. Coinbase
 
 
 ### X402 Facilitator
@@ -486,6 +551,12 @@ fund Base, Solana
     # Run tests matching a name
     cargo test health_check
     ```
+
+7. Test x402 as buyer (get money) on testnet.
+8. Test x402 as seller (receive money) on testnet.
+
+8. Fund your crypto wallet.
+
 
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
