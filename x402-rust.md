@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-08"
-lastchange: "v002 video timings @x402-rust.md"
+date: "2026-07-10"
+lastchange: "v003 video reorg @x402-rust.md"
 url: "https://bomonike.github.io/x402-rust"
 file: "x402-rust"
 title: "x402-rust"
@@ -21,18 +21,21 @@ created: "2026-05-19"
 
 {% include whatever.html %}
 
-My dream is to have someone's mobile photo app scan my QR code (at right) and I instantly receive <strong>x402money</strong>. But without plus 3% transaction fee and monthly subscription on my credit card.
+## What's this?
+
+This document is not about exploring options and syntax, but the steps for making a specific set of choices happen. 
+
+My dream is to have someone's <strong>mobile photo</strong> app scan my QR code (at right) and I instantly receive <strong>x402money</strong>. But without plus 3% transaction fee and monthly subscription on my credit card.
 
 I've been searching for <strong>sample code</strong> and step-by-step to make that happen, such that wee mortals can just change secrets and it works. We can they study the inner workings.
-
-<a target="_blank" href="https://www.youtube.com/watch?v=_a9hrASXekc">VIDEO</a>: Unlike web apps using Electron, Rust Tauri or Iced or Floem interacts directly with the GPU, so Rust runs fundamentally faster.
 
 But so far I've only seen deep dive tutorials that tell me to first learn <strong>Axum web servers</strong> and API calls from the ground up. It's like I ask to rent an apartmentment and I'm told "first learn how to find ingredients to make concrete". 
 
 So here's what I've learned so far ... because I want to learn the Rust programming language well. 
 And I wanted to use both local and cloud resources such as Hertzner based in Germany.
 
-<hr />
+
+## The project plan
 
 <a href="#SetupDevEnv">A. Setup dev enviornment on my Mac</a>
 
@@ -44,9 +47,9 @@ And I wanted to use both local and cloud resources such as Hertzner based in Ger
 
 <a href="#x402servers">E. Setup x402 servers</a> (on EU compute resources such as Herzner)
 
-<a href="#TestSystem">F. Test whole system making calls
+<a href="#TestSystem">F. Test whole system making calls</a>
 
-<a href="#ProdPrep">G. Prepare for Production
+<a href="#ProdPrep">G. Prepare for Production</a> begins from the beginning with test data.
 
 <hr />
 
@@ -70,18 +73,105 @@ Here's what we'll end up with your client machine in production
    * NodeJs, Rust 1.78+
    * Docker, Dockeer Compose
    * PostgreSQL for Modules 08-09
-   * SQLx ORM
+   * SQLx databaase driver
 
    * external SMTP, DNS, CDN, email server
 
    https://app.insomnia.rest/app/authorize
 
-Responsibilities
+<a id="Responsibilities"></a>
+
+## Responsibilities
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1783652708/org-tasks-2422x1034_d792xt.png"><img alt="org-tasks-2422x1034.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1783652708/org-tasks-2422x1034_d792xt.png" /></a>
 
 
-To setup secure environment Variables:
+<a id="Servers"></a>
+
+## Servers
+
+Services are brought up in this sequence:
+   
+   1. SMTP Time service
+   1. Keepass database giving out secrets
+   1. DNS
+   1. Artifactory providing run-time artifacts
+   1. Email server
+   1. Messaging server (NextCloud)
+   1. Document servicr (NextCloud)
+   1. Pingdom PagerDuty external uptime monitor
+   1. Archiving
+   1. Alerting OpsGenie
+   1. Grafana dashboards
+   1. Logging
+   1. Prometheus metrics
+   1. Kubernetes
+   1. x402 Facilitator
+   1. WebSocket
+   1. Web service
+
+   Shutdown sequence goes the opposite direction.
+
+Each server is configured 
+
+1. Create or navigate to a folder to receive GitHub repos.
+1. Download:
+   ```bash
+   # Clone the repository:
+   git clone https://github.com/wilsonmar/axum-full-course.git
+   cd axum-full-course
+   ```
+   <pre>
+   Cloning into 'axum-full-course'...
+   remote: Enumerating objects: 69, done.
+   remote: Counting objects: 100% (69/69), done.
+   remote: Compressing objects: 100% (45/45), done.
+   remote: Total 69 (delta 11), reused 66 (delta 11), pack-reused 0 (from 0)
+   Receiving objects: 100% (69/69), 43.64 KiB | 732.00 KiB/s, done.
+   Resolving deltas: 100% (11/11), done.
+   </pre>
+1. Watch <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=2m30s">2:30 modules</a> View folders and files downloaded:
+   <pre>
+   axum-full-course/
+   │ module-nn-xxx (see table below) 
+   ├── target/                    # folder appears after cargo is run
+   ├── .env.example               # Environment variables template
+   ├── .gitignore
+   ├── Cargo.lock                 # file appears after cargo is run
+   ├── Cargo.toml                 # Workspace manifest with shared dependencies
+   ├── Dockerfile                 # Production Docker image
+   ├── LICENSE
+   ├── README.md                  # This file
+   ├── docker-compose.yml         # Local development stack
+   </pre>
+   <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=2m49s">2:49</a>: <a target="_blank" href="https://github.com/wilsonmar/axum-full-course/tree/main#-whats-new-in-axum-08">What changed</a>
+
+   | Feature | Old Syntax | New Syntax |
+   |---------|------------|------------|
+   | Path Parameters | `/:id` | `/{id}` ✨ |
+   | Custom Extractors | `#[async_trait]` required | Native async traits ✨ |
+   | Optional Extractors | Manual handling | `OptionalFromRequestParts` ✨ |
+   | Connection Limiting | External | `ListenerExt::limit_connections` ✨ |
+
+   ### Tutorials by module
+
+   | module- folder | Topic | Description | video |
+   |----------------|-------|-------------|-------|
+   | [01-intro](https://github.com/wilsonmar/axum-full-course/module-01-intro) | **Introduction** | Hello World, `axum::serve`, basic handlers | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=4m20s">4:20</a> |
+   | [02-routing](https://github.com/wilsonmar/axum-full-course/module-02-routing) | **Routing** | Path params `/{id}`, nesting, HTTP methods | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=11m57s">11:57</a> |
+   | [03-extractors](https://github.com/wilsonmar/axum-full-course/module-03-extractors) | **Extractors** | Path, Query, Json, Headers, custom extractors | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=17m29s">17:29</a> |
+   | [04-responses](https://github.com/wilsonmar/axum-full-course/module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=21m57s">21:57</a> |
+   | [05-state](https://github.com/wilsonmar/axum-full-course/module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=25m19s:>25:19</a> |
+   | [06-middleware](https://github.com/wilsonmar/axum-full-course/module-06-middleware) | **Middleware** | Tower, CORS, compression, logging_, timing_, auth_middleware | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=28m48s">28:48</a> |
+   | [07-errors](https://github.com/wilsonmar/axum-full-course/module-07-errors) | **Errors** | Custom error types, thiserror, error handling | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=32m28s">32:28</a> |
+   | [08-database](https://github.com/wilsonmar/axum-full-course/module-08-database) | **Database** | SQLx, PostgreSQL, CRUD operations | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=35m12s">35:12</a> |
+   | [09-auth](https://github.com/wilsonmar/axum-full-course/module-09-auth) | **Authentication** | JWT, Argon2 hashing, protected routes | - |
+   | [10-advanced](https://github.com/wilsonmar/axum-full-course/module-10-advanced) | **Advanced** | WebSocket, SSE upgrqde, file uploads | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=52m56s">52:56</a> |
+   | [11-testing](https://github.com/wilsonmar/axum-full-course/module-11-testing) | **Testing** | Unit tests, integration tests, oneshot | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=58m57s">58:57</a> |
+   | [12-production](https://github.com/wilsonmar/axum-full-course/module-12-production) | **Production** | Docker, graceful shutdown, health checks, tracing | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=1h4m2s">1:04:02</a> |
+
+
+## Configure secure environment Variables:
 
 1. Copy `.env.example` to `.env` and configure:
 
@@ -116,30 +206,6 @@ To setup secure environment Variables:
    docker-compose up
    ```
 
-   <a id="Servers"></a>
-
-   ## Servers
-
-   Bring up in this sequence:
-   1. SMTP Time service
-   1. Keepass database giving out secrets
-   1. DNS
-   1. Artifactory providing run-time artifacts
-   1. Email server
-   1. Messaging server (NextCloud)
-   1. Document servicr (NextCloud)
-   1. Pingdom PagerDuty external uptime monitor
-   1. Archiving
-   1. Alerting OpsGenie
-   1. Grafana dashboards
-   1. Logging
-   1. Prometheus metrics
-   1. Kubernetes
-   1. x402 Facilitator
-   1. WebSocket
-   1. Web service
-
-   Shutdown sequence goes the opposite direction.
 
 <a id="Rustlang">
 
@@ -179,7 +245,8 @@ PostgreSQL
 ## D. Setup Axum web server
 
    * <a target="_blank" href="https://www.youtube.com/watch?v=CdVO7oDoAGk&pp=ugUEEgJlbg%3D%3D">VIDEO</a>: Rust Axum in 2026: Is it actually better than Go, Python  and Node?
-   * <a target="_blank" href="">VIDEO
+   * https://www.youtube.com/watch?v=FDWKlJmHv6k&pp=ugUEEgJlbg%3D%3D Creating an Axum Web Server in Rust is easy!
+   * <a target="_blank" href="https://www.youtube.com/watch?v=cJyl9e2oqHY&t=321s&pp=ugUEEgJlbg%3D%3D">VIDEO</a>: Rust REST API Tutorial: Axum, SQLx, Postgres & Docker" by Francesco Ciulla
    * [Axum Documentation](https://docs.rs/axum)
    * [SQLx Documentation](https://docs.rs/sqlx)
    * [Tower Service](https://docs.rs/tower)
@@ -191,48 +258,6 @@ Complete Axum 0.8.8 Tutorial: Build Production REST APIs in Rust (2026 Full Cour
    * <a target="_blank" href="https://www.youtube.com/watch?v=M0wi7V1rP4Y">VIDEO</a>: "Master Rust Backend with Axum: Full-Stack Guide for Auth, PostgreSQL & Email Verification"
    * https://www.youtube.com/watch?v=M0wi7V1rP4Y">Master Rust Backend with Axum: Full-Stack Guide for Auth, PostgreSQL & Email Verification
    * https://app.codecrafters.io/join?via=aarambh-darshan codecrafters rewrite useful projects
-
-1. Create or navigate to a folder to receive GitHub repos.
-
-1. Download:
-
-   ```bash
-   # Clone the repository:
-   git clone https://github.com/aarambh-darshan/axum-full-course.git
-   cd axum-full-course
-   ```
-   <pre>
-   Cloning into 'axum-full-course'...
-   remote: Enumerating objects: 69, done.
-   remote: Counting objects: 100% (69/69), done.
-   remote: Compressing objects: 100% (45/45), done.
-   remote: Total 69 (delta 11), reused 66 (delta 11), pack-reused 0 (from 0)
-   Receiving objects: 100% (69/69), 43.64 KiB | 732.00 KiB/s, done.
-   Resolving deltas: 100% (11/11), done.
-   </pre>
-1. <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=2m30s">2:30 modules</a> View folders and files downloaded:
-   https://github.com/wilsonmar/axum-full-course/tree/main
-   <pre>
-   axum-full-course/
-   │ module-nn-xxx (see table below) 
-   ├── target/                    # folder appears after cargo is run
-   ├── .env.example               # Environment variables template
-   ├── .gitignore
-   ├── Cargo.lock                 # file appears after cargo is run
-   ├── Cargo.toml                 # Workspace manifest with shared dependencies
-   ├── Dockerfile                 # Production Docker image
-   ├── LICENSE
-   ├── README.md                  # This file
-   ├── docker-compose.yml         # Local development stack
-   </pre>
-   <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=2m49s">2:49</a>: <a target="_blank" href="https://github.com/wilsonmar/axum-full-course/tree/main#-whats-new-in-axum-08">What changed</a>
-
-   | Feature | Old Syntax | New Syntax |
-   |---------|------------|------------|
-   | Path Parameters | `/:id` | `/{id}` ✨ |
-   | Custom Extractors | `#[async_trait]` required | Native async traits ✨ |
-   | Optional Extractors | Manual handling | `OptionalFromRequestParts` ✨ |
-   | Connection Limiting | External | `ListenerExt::limit_connections` ✨ |
 
 
    <a id="Libraries"></a>
@@ -311,8 +336,8 @@ Complete Axum 0.8.8 Tutorial: Build Production REST APIs in Rust (2026 Full Cour
    | [01-intro](./module-01-intro) | **Introduction** | Hello World, `axum::serve`, basic handlers | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=4m20s">4:20</a> |
    | [02-routing](./module-02-routing) | **Routing** | Path params `/{id}`, nesting, HTTP methods | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=11m57s">11:57</a> |
    | [03-extractors](./module-03-extractors) | **Extractors** | Path, Query, Json, Headers, custom extractors | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=17m29s">17:29</a> |
-   | [04-responses](./module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=21m57s>21:57</a> |
-   | [05-state](./module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=25m19s>25:19</a> |
+   | [04-responses](./module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=21m57s">21:57</a> |
+   | [05-state](./module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=25m19s:>25:19</a> |
    | [06-middleware](./module-06-middleware) | **Middleware** | Tower, CORS, compression, logging_, timing_, auth_middleware | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=28m48s">28:48</a> |
    | [07-errors](./module-07-errors) | **Errors** | Custom error types, thiserror, error handling | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=32m28s">32:28</a> |
    | [08-database](./module-08-database) | **Database** | SQLx, PostgreSQL, CRUD operations | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=35m12s">35:12</a> |
@@ -357,6 +382,17 @@ Complete Axum 0.8.8 Tutorial: Build Production REST APIs in Rust (2026 Full Cour
    ```
    REMEMBER: Port 3000 is the default port.
 
+   SQLx
+
+   https://www.youtube.com/watch?v=v9fnBhzH5u8&pp=0gcJCU8LAYcqIYzv SQLx by David Choi
+   database driver, not ORM
+
+   ```bash
+   docker compose up -d --build
+   ```
+   5432 default port
+
+sqlx % sh dockeDeploy.sh
 
 A basic Axum app in main.rs:
 ```
