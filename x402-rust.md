@@ -157,18 +157,18 @@ Each server is configured
 
    | module- folder | Topic | Description | video |
    |----------------|-------|-------------|-------|
-   | [01-intro](https://github.com/wilsonmar/axum-full-course/module-01-intro) | **Introduction** | Hello World, `axum::serve`, basic handlers | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=4m20s">4:20</a> |
-   | [02-routing](https://github.com/wilsonmar/axum-full-course/module-02-routing) | **Routing** | Path params `/{id}`, nesting, HTTP methods | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=11m57s">11:57</a> |
-   | [03-extractors](https://github.com/wilsonmar/axum-full-course/module-03-extractors) | **Extractors** | Path, Query, Json, Headers, custom extractors | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=17m29s">17:29</a> |
-   | [04-responses](https://github.com/wilsonmar/axum-full-course/module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=21m57s">21:57</a> |
-   | [05-state](https://github.com/wilsonmar/axum-full-course/module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=25m19s:>25:19</a> |
-   | [06-middleware](https://github.com/wilsonmar/axum-full-course/module-06-middleware) | **Middleware** | Tower, CORS, compression, logging_, timing_, auth_middleware | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=28m48s">28:48</a> |
-   | [07-errors](https://github.com/wilsonmar/axum-full-course/module-07-errors) | **Errors** | Custom error types, thiserror, error handling | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=32m28s">32:28</a> |
-   | [08-database](https://github.com/wilsonmar/axum-full-course/module-08-database) | **Database** | SQLx, PostgreSQL, CRUD operations | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=35m12s">35:12</a> |
-   | [09-auth](https://github.com/wilsonmar/axum-full-course/module-09-auth) | **Authentication** | JWT, Argon2 hashing, protected routes | - |
-   | [10-advanced](https://github.com/wilsonmar/axum-full-course/module-10-advanced) | **Advanced** | WebSocket, SSE upgrqde, file uploads | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=52m56s">52:56</a> |
-   | [11-testing](https://github.com/wilsonmar/axum-full-course/module-11-testing) | **Testing** | Unit tests, integration tests, oneshot | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=58m57s">58:57</a> |
-   | [12-production](https://github.com/wilsonmar/axum-full-course/module-12-production) | **Production** | Docker, graceful shutdown, health checks, tracing | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=1h4m2s">1:04:02</a> |
+   | [01-intro](https://github.com/wilsonmar/axum-full-course/tree/main/module-01-intro) | **Introduction** | Hello World, `axum::serve`, basic handlers | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=4m20s">4:20</a> |
+   | [02-routing](https://github.com/wilsonmar/axum-full-course/tree/main/module-02-routing) | **Routing** | Path params `/{id}`, nesting, HTTP methods | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=11m57s">11:57</a> |
+   | [03-extractors](https://github.com/wilsonmar/axum-full-course/tree/main/module-03-extractors) | **Extractors** | Path, Query, Json, Headers, custom extractors | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=17m29s">17:29</a> |
+   | [04-responses](https://github.com/wilsonmar/axum-full-course/tree/main/module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=21m57s">21:57</a> |
+   | [05-state](https://github.com/wilsonmar/axum-full-course/tree/main/module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=25m19s:>25:19</a> |
+   | [06-middleware](https://github.com/wilsonmar/axum-full-course/tree/main/module-06-middleware) | **Middleware** | Tower, CORS, compression, logging_, timing_, auth_middleware | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=28m48s">28:48</a> |
+   | [07-errors](https://github.com/wilsonmar/axum-full-course/tree/main/module-07-errors) | **Errors** | Custom error types, thiserror, error handling | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=32m28s">32:28</a> |
+   | [08-database](https://github.com/wilsonmar/axum-full-course/tree/main/module-08-database) | **Database** | SQLx, PostgreSQL, CRUD operations | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=35m12s">35:12</a> |
+   | [09-auth](https://github.com/wilsonmar/axum-full-course/tree/main/module-09-auth) | **Authentication** | JWT, Argon2 hashing, protected routes | - |
+   | [10-advanced](https://github.com/wilsonmar/axum-full-course/tree/main/module-10-advanced) | **Advanced** | WebSocket, SSE upgrqde, file uploads | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=52m56s">52:56</a> |
+   | [11-testing](https://github.com/wilsonmar/axum-full-course/tree/main/module-11-testing) | **Testing** | Unit tests, integration tests, oneshot | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=58m57s">58:57</a> |
+   | [12-production](https://github.com/wilsonmar/axum-full-course/tree/main/module-12-production) | **Production** | Docker, graceful shutdown, health checks, tracing | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=1h4m2s">1:04:02</a> |
 
 
 ## Configure secure environment Variables:
