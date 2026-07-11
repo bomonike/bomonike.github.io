@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-07-10"
-lastchange: "v005 fix: youtube url @x402-rust.md"
+lastchange: "v006 fix: metamask @x402-rust.md"
 url: "https://bomonike.github.io/x402-rust"
 file: "x402-rust"
 title: "x402-rust"
@@ -83,7 +83,9 @@ Here's what we'll end up with your client machine in production
 
 ## Responsibilities
 
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1783652708/org-tasks-2422x1034_d792xt.png"><img alt="org-tasks-2422x1034.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1783652708/org-tasks-2422x1034_d792xt.png" /></a>
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1783745401/org-tasks-1666x715_rfealm.png"><img alt="org-tasks-1666x715.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1783745401/org-tasks-1666x715_rfealm.png" /></a>
+
+It takes much more than writing code to implement a solution at organizations.
 
 
 <a id="Servers"></a>
@@ -161,7 +163,7 @@ Each server is configured
    | [02-routing](https://github.com/wilsonmar/axum-full-course/tree/main/module-02-routing) | **Routing** | Path params `/{id}`, nesting, HTTP methods | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=11m57s">11:57</a> |
    | [03-extractors](https://github.com/wilsonmar/axum-full-course/tree/main/module-03-extractors) | **Extractors** | Path, Query, Json, Headers, custom extractors | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=17m29s">17:29</a> |
    | [04-responses](https://github.com/wilsonmar/axum-full-course/tree/main/module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=21m57s">21:57</a> |
-   | [05-state](https://github.com/wilsonmar/axum-full-course/tree/main/module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=25m19s:>25:19</a> |
+   | [05-state](https://github.com/wilsonmar/axum-full-course/tree/main/module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=25m19s">25:19</a> |
    | [06-middleware](https://github.com/wilsonmar/axum-full-course/tree/main/module-06-middleware) | **Middleware** | Tower, CORS, compression, logging_, timing_, auth_middleware | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=28m48s">28:48</a> |
    | [07-errors](https://github.com/wilsonmar/axum-full-course/tree/main/module-07-errors) | **Errors** | Custom error types, thiserror, error handling | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=32m28s">32:28</a> |
    | [08-database](https://github.com/wilsonmar/axum-full-course/tree/main/module-08-database) | **Database** | SQLx, PostgreSQL, CRUD operations | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=35m12s">35:12</a> |
@@ -288,6 +290,7 @@ Complete Axum 0.8.8 Tutorial: Build Production REST APIs in Rust (2026 Full Cour
 
 1. TODO: Add files to be a versioned GitHub repo   
    <pre>
+   examples/
    ├── CONTRIBUTING.md
    ├── .editorconfig
    ├── git-hooks/
@@ -335,23 +338,6 @@ Complete Axum 0.8.8 Tutorial: Build Production REST APIs in Rust (2026 Full Cour
    ???
 
 1. <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=4m20s">4:20</a>: Click to open each module folder to follow along the video:
-
-   | module- folder | Topic | Description | video |
-   |----------------|-------|-------------|-------|
-   | [01-intro](./module-01-intro) | **Introduction** | Hello World, `axum::serve`, basic handlers | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=4m20s">4:20</a> |
-   | [02-routing](./module-02-routing) | **Routing** | Path params `/{id}`, nesting, HTTP methods | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=11m57s">11:57</a> |
-   | [03-extractors](./module-03-extractors) | **Extractors** | Path, Query, Json, Headers, custom extractors | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=17m29s">17:29</a> |
-   | [04-responses](./module-04-responses) | **Responses** | IntoResponse, Json, Html, status codes | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=21m57s">21:57</a> |
-   | [05-state](./module-05-state) | **State** | Arc, RwLock, shared mutable state | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=25m19s:>25:19</a> |
-   | [06-middleware](./module-06-middleware) | **Middleware** | Tower, CORS, compression, logging_, timing_, auth_middleware | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=28m48s">28:48</a> |
-   | [07-errors](./module-07-errors) | **Errors** | Custom error types, thiserror, error handling | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=32m28s">32:28</a> |
-   | [08-database](./module-08-database) | **Database** | SQLx, PostgreSQL, CRUD operations | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=35m12s">35:12</a> |
-   | [09-auth](./module-09-auth) | **Authentication** | JWT, Argon2 hashing, protected routes | - |
-   | [10-advanced](./module-10-advanced) | **Advanced** | WebSocket, SSE upgrqde, file uploads | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE&t=52m56s">52:56</a> |
-   | [11-testing](./module-11-testing) | **Testing** | Unit tests, integration tests, oneshot | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=58m57s">58:57</a> |
-   | [12-production](./module-12-production) | **Production** | Docker, graceful shutdown, health checks, tracing | <a target="_blank" href="https://www.youtube.com/watch?v=Ka7mRKsTCyE"&t=1h4m2s">1:04:02</a> |
-
-   QUESTION: What is the logic for the sequence above?
 
 1. TODO: Make real example code with hard-coded "User-123", "Demo User", John Doe", and "john@example.com" which need to be converted to variables.
 
@@ -446,13 +432,12 @@ use axum::{
 
 ## D. Setup x402 server
 
-https://www.youtube.com/watch?v=S6wc6yvoZLY
-AI agents are paying each other now…
-by Fireship
+   * https://www.youtube.com/watch?v=qT_pvH4UoK8&pp=0gcJCU8LAYcqIYzv = The Rust language is popular in crypto. But why tho?
+   * https://www.youtube.com/watch?v=S6wc6yvoZLY = AI agents are paying each other now… by Fireship
 
 Waste of time:
    * <a target="_blank" href="https://github.com/ethanniser">Ethan Niser</a> <a target="_blank" href="https://www.youtube.com/watch?v=iaIxRxvp9Vk">VIDEO</a>
-   * https://www.youtube.com/watch?v=S6wc6yvoZLY&pp=0gcJCU8LAYcqIYzv
+
 
   (on EU compute resources such as Herzner)
 
@@ -539,23 +524,29 @@ github.com/x402-rs
 1. Testing
 
     ```bash
-    # Run all tests
-    cargo test --workspace
-    
+    # Run tests matching a name
+    cargo test health_check
+
     # Run specific module tests
     cargo test -p module-11-testing
     
     # Run with output
     cargo test --workspace -- --nocapture
     
-    # Run tests matching a name
-    cargo test health_check
+    # Run all tests
+    cargo test --workspace
+    
     ```
 
 7. Test x402 as buyer (get money) on testnet.
 8. Test x402 as seller (receive money) on testnet.
 
 8. Fund your crypto wallet.
+
+## References
+
+https://www.youtube.com/watch?v=md-ecvXBGzI = "Learn Rust (by building a simple bitcoin wallet)" by FuturePaul
+PlebLab
 
 
 <hr />
