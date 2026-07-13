@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-04-28"
-lastchange: "26-04-28 v011 cities @countries.md"
+date: "2026-07-12"
+lastchange: "v013 bti @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -117,6 +117,10 @@ This is perhaps the most important consideration.
 https://www.visionofhumanity.org/maps/#/
 publishes a composite score weighted on a scale of 1-5 based on 23 quantitative and qualitative indicators. The lower the score the more peaceful the country. The lowest score is Iceland at 1.095, followed by Ireland, New Zealand, Austria, Switzerland, Singapore, Portugal, Denmark, Slovenia, Finland in the top 10. The US is 128th at 2.443.
 
+https://atlas.bti-project.org/
+The project “Shaping Change – Strategies of Development and Transformation” is carried out in consultation with an interdisciplinary board of experts that helps to define the project focus, identifies challenges and debates project results.
+The BTI is the result of the collaboration of nearly 300 country and regional experts from leading universities and think tanks worldwide. The project analyzes and compares transformation processes towards democracy and inclusive market economy worldwide. The BTI aims to identify successful strategies for steering change.
+
 
 ## Passport Rankings
 
@@ -131,8 +135,37 @@ The top-ranked countries in the 2024 report:
 
 UAE
 
+## Citizenship & Residency Program Evaluations
 
-## NomadCapitalist.com
+https://ntltrust.com/
+https://www.youtube.com/@ntltrust1994
+
+## Language requirements:
+
+French is an official language in 29 countries around the world.
+French is the sole official language in France & Monaco, Benin, Burkina Faso, Democratic Republic of the Congo, Republic of the Congo, Djibouti, Gabon, Guinea, Ivory Coast (Côte d’Ivoire), Mali, Niger, Senegal, Togo
+French is one of multiple official languages in: 
+   * Belgium (one of 3 official languages, mainly in Wallonia. Germany)
+   * Switzerland (one of 4 official languages, in western regions)
+   * Luxembourg (one of 3 official languages: Luxembourgish,  French, German )
+   * Burundi, Cameroon, Central African Republic, Chad, Comoros, Equatorial Guinea, Madagascar, Rwanda, Seychelles
+   * Canada (one of 2 official languages, dominant in Québec)
+   * Haiti (one of 2 official languages)
+   * Vanuatu (one of 3 official languages)
+
+Spanish
+
+German: Germany, Austrian German, Lichtenstein, Luxembourg, Belgium
+https://en.wikipedia.org/wiki/High_German_languages
+"High (Highland) German" refers to the dialect group that originated in the mountainous central and southern regions (the "High" refers to the High/Middle Uplands and Alps). in Central and southern areas (south of the Benrath isogloss) 
+   * Brazil (5 million), Russia, France, Canada, Italy, Paraguay.
+   * Czech Republic – Bohemia
+   * Poland – Upper Silesia
+High German dialects also exist in diaspora communities in Romania, Russia, Canada, the US, Brazil, Argentina, Mexico, Chile, and Namibia.
+
+
+
+### NomadCapitalist.com
 
 To consider the “true value” of citizenship in countries around the world, to “go where you’re treated best”, NomadCapitalist.com presents rankings based on "20 sources, such as country tax authorities for tax rankings, and the World Happiness Report and the United Nations’ Human Development Index for perception rankings".
 
@@ -285,4 +318,21 @@ spysatphone.com
 
 https://satellitephonestore.com/catalog/sale/details/iridium-9555-satellite-phone-kit-4
 $100/mo. 
+
+
+## International Money
+
+https://www.youtube.com/watch?v=QitVfpFfNTo
+Don’t Leave the US Until You Do This With Your Money
+Smile Abroad | The American Exit System
+
+Charles Schwab
+
+NOT HSBC
+
+https://www.youtube.com/watch?v=tty9GpglnmQ
+by International Asset Management
+
+https://www.youtube.com/watch?v=bnxeMVfkBl4
+Medicare Doesn't Work Abroad: Here's What Expat Retirees Need Instead
 
