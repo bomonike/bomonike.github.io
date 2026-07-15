@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-12"
-lastchange: "v013 bti @countries.md"
+date: "2026-07-15"
+lastchange: "v014 british baliwicks @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -99,12 +99,18 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
    * Venezuela?
 
 
-## New Countries
-
-* Greenland is a self-governing, autonomous country within the Kingdom of Denmark and has been part of Denmark for 600 years despite being 1,815 miles away (for context, the distance between Greenland and the US is 3,134 miles).
+## Country Notes
 
 * South Sudan split from Sudan in 2025.
 * Bougainville	is expected to split from Popua New Guinea in 2027
+
+* Greenland is a self-governing, autonomous country within the Kingdom of Denmark and has been part of Denmark for 600 years despite being 1,815 miles away (for context, the distance between Greenland and the US is 3,134 miles).
+
+* "Guyana" is a sovereign country with a capital at Georgetown.
+* “Guianas” refers to the historical region in northern South America, which also includes Suriname.
+* "French Guiana" is an overseas territory of France, with a capital is Cayenne. If someone says “Guiana,” they usually mean the region; if they say “Guyana,” they mean the country.
+
+* Jersey and Guernsey are separate Bailiwicks (legal areas of jurisdiction) collectively called the "Channel Islands". The islands are possessions of the Crown, not UK regions or overseas territories. Their constitutional link is directly with the Crown rather than with Parliament. The UK government is responsible for defence and international representation, but the islands run most domestic affairs themselves. Residents are British citizens, but Channel Islands law and taxes can differ from UK law. Island laws require Crown assent (via Privy Council) to become final, so the Crown/UK has ultimate constitutional oversight.
 
 ## Passport Index
 
