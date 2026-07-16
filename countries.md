@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-07-15"
-lastchange: "v014 british baliwicks @countries.md"
+lastchange: "v015 KEast Timor osovo  @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -18,17 +18,72 @@ created: "2025-10-22"
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
-<a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/country_info.csv">My country_info.csv file</a> contains data combined from several sources.
+<a target="_blank" href="https://github.com/wilsonmar/python-samples/blob/main/country_info.csv">My country_info.csv file</a> 
+contains data combined from several sources. We've spent countless hours: downloading, merging, cleaning, formatting, and aggregating this data into an accurate and concise product.
+   * https://simplemaps.com/data/countries free version has less fields than paid updated scope
+   * https://www.worlddata.info/downloads/#google_vignette (charges 8 euros)
+   * https://gist.github.com/ofou/df09a6834a8421b4f376c875194915c9#file-country-capital-lat-long-population-csv
+   * CIA World Book (RIP)
+   * https://history.state.gov/countries/all
+   * https://countrycode.org/ misses some
 
-* TLD (Top-Level Domain) codes used on the internet
-* Telephone country code prefix
-* ISO codes (two and three letters)
-* ISO codes (two and three letters)
-* Olympic Committee
-<br /><br />
+Fields (columns) in the csv:
+* _Country_Name in English
++ _CountryName in local language
++ _demonym = The name used to refer to natives or inhabitants of the country. (Americans)
 
-* https://history.state.gov/countries/all
-* https://countrycode.org/ misses some
+* _Phone = Telephone Dialing prefix Mobile Country Code (MCC)
+* _ISO639-2 (two letters) = ISO 3166-1 alpha-2
+* ISO-3 (three letters) = ISO 3166-1 alpha-3
++ iso_numeric = Three-digit country code (ISO 3166-1 numeric).
+* _tld = Internet domain TLD (Top-Level Domain) codes used on the internet
+
+* _cur_name = currency name
+* _cur_cd  = ISO 4217 currency code (USD), used for lookup
+* _cur_num = currency number (whatever that's for)
+
++ median_age	Age that divides a population into two numerically equal groups.
+* Population
+
+* Area_KM2 (Surface area (km² and sq mi)
+* Langs ???
+* GDP_USD_BIL
+* GDP_PP
+
+* Capital city name
+* Latitude
+* Longitude
+* Population
+* CapType = ("Capital", "Admin", "Legis.")
+
++ website = The official government website of the country.
++ calling_code	= The international calling code for the country.		
++ driving_side	= The side of the road on which vehicles drive (right or left).		
++ continent	= One of 7 continents where the country is located.		
+* un_member	= Whether the country is a member of the United Nations (TRUE or FALSE).		
+
++ language_all	= The primary languages spoken in the country. Delimited by |.
+* religion_all	= The most practiced religions in the country in order. Delimted by |. Limit of 3. Lower threshold 10%. "No Religion" included.	
+
+Additional fields to be added:
++ labor_force	Total labor force figure.
++ Capital Building name (Bundestag)
++ Olympic Committee code
+* Region
+
+* Coastline (km and mi)
+* Government form
+* Birthrate (per 1000 inhabitants/year)
+* Deathrate (per 1000 inhabitants/year)
++ Fips10
++ STANAG 1059
++ Country code FIFA (also non-members)
++ Vehicle registration codes (unofficial codes in brackets)
++ United Nations Code for Trade and Transport Locations
++ Maritime identification digits (MID)
++ International Telecommunication Union (ITU)
++ International Union of Railways (UIC)
+
 
 
 ## Country groups
@@ -101,8 +156,17 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
 
 ## Country Notes
 
+* Akrotiri in the West and Dhekelia in the East are part of Sovereign Base Areas (SBAs) in a British Overseas Territory the UK retained for military purposes when Cyprus gained independence in 1960. Its official currency is the Euro (€), and the calling code is +357, the same as the Republic of Cyprus.
+
+* Bougainville	is expected to split from Popua New Guinea in 2027.
+
+* The "Caribbean Netherlands" (Dutch: Caribisch Nederland) (code "BQ") is the Caribbean part of the country of the Netherlands. It is a distinct "special" region consisting of three special municipalities: Bonaire, Sint Eustatius, and Saba (often called the BES islands). It came into being on 10 October 2010, when the Netherlands Antilles (AN") was dissolved. 
+
 * South Sudan split from Sudan in 2025.
-* Bougainville	is expected to split from Popua New Guinea in 2027
+
+* The "Republic of North Macedonia" changed from "Republic of Macedonia" on February 12, 2019. It became the 30th member of NATO on March 27, 2020. Greece objected to the use of the name "Macedonia," as it is also the name of a northern Greek region and the ancient kingdom of Alexander the Great, which Greece considers part of its own history and heritage. The islands do not form part of the European Union. They have the status of "overseas countries and territories" (OCT), meaning EU law does not automatically apply to them.
+
+* Kosovo is a country in Southeast Europe in the Balkans. It declared independence from Serbia in 2008, and its international status is partly disputed because some countries recognize it while others do not. It's a EU candidate country, but blocked by Bulgaria minority.
 
 * Greenland is a self-governing, autonomous country within the Kingdom of Denmark and has been part of Denmark for 600 years despite being 1,815 miles away (for context, the distance between Greenland and the US is 3,134 miles).
 
@@ -111,6 +175,14 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
 * "French Guiana" is an overseas territory of France, with a capital is Cayenne. If someone says “Guiana,” they usually mean the region; if they say “Guyana,” they mean the country.
 
 * Jersey and Guernsey are separate Bailiwicks (legal areas of jurisdiction) collectively called the "Channel Islands". The islands are possessions of the Crown, not UK regions or overseas territories. Their constitutional link is directly with the Crown rather than with Parliament. The UK government is responsible for defence and international representation, but the islands run most domestic affairs themselves. Residents are British citizens, but Channel Islands law and taxes can differ from UK law. Island laws require Crown assent (via Privy Council) to become final, so the Crown/UK has ultimate constitutional oversight.
+
+* "Swaziland" is the former name of the southern African country now officially known as the Kingdom of Eswatini. Eswatini is Africa's last absolute monarchy. The name was changed in April 2018 by King Mswati III to mark the 50th anniversary of the country's independence from British rule and to reclaim its pre-colonial identity. "Eswatini," means "land of the Swazis" in the local Swati language.
+
+* "Timor-Leste" is the official name of "East Timor". "Timor" comes from the Malay word for "east." "Leste" is the Portuguese word for east. So the country's name is essentially "East East", as it occupies the eastern half of the island of Timor, north of Australia. After being colonized by Portugal, it declared independence in 1975 but was almost immediately invaded and occupied by Indonesia. It wasn't until May 20, 2002 that East Timor finally achieved full independence, becoming the first new sovereign state of the 21st century.
+
+* Although the <strong>Vatican City</strong> has +379 as its official country code is, it not used because their telephone system is integrated with Italy's country code +39. Call that, followed by the area code for Rome 06, and then the local number 698xxxxx.
+
+
 
 ## Passport Index
 
