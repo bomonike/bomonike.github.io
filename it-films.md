@@ -1,6 +1,6 @@
 ---
-date: "2026-01-17"
-lastchange: "26-01-17 v017 + AI films :it-films.md"
+date: "2026-07-18"
+lastchange: "v018 + IMAX theaters @it-films.md"
 url: https://bomonike.github.io/it-films
 ---
 
@@ -19,6 +19,42 @@ How about learning from these sites instead of watching movies and TV?
 * EdX.com
 * Pluralsight.com
 <br /><br />
+
+## Screens for watching movies
+
+https://en.wikipedia.org/?curid=77817528
+
+The tallest IMAX ("Image Maximum") screen in the world, measuring 76 feet (approximately 23.2 meters) tall and 101 feet (30.8 meters) wide is at The Royal Cinemas 14 in Pooler, Georgia, USA.
+Opened in 2022, it's an IMAX "GT" (Grand Theatre) with a "Dual Laser" system (IMAX+DL2).
+It has 363 recliner seats.
+
+The IMAX Melbourne in Australia also can project IMAX at full 1.43:1 aspect ratio.
+
+Although as tall, Traumpalast Leonberg can't project in 1:90:1 aspect ratio.
+
+Theater marquis only say "IMAX".
+A "Digital IMAX" screen Aka "LIEMAX" can be as small as 28 ft by 58 ft displaying in 1:90:1 aspect ratio at 2K image resolution with 6-channel sound. Their "xenon" is less bright than laser projectors.
+They are smaller than older "standard IMAX" screens that are "hugh" at 52 ft by 72 ft
+at full 1.43:1 aspect ratio at 4K images with 12-channel sound.
+
+Until Oct 2021, [LFExaminer.com](https://lfexaminer.com/theaters/) and <a target="_blank" href="https://www.google.com/maps/d/viewer?ie=UTF8&hl=en&msa=0&ll=36.20729899999999%2C-86.693566&spn=0.010787%2C0.019312&t=h&z=16&mid=1kFpygofjM9yQ0beWTjcrl6Lc8IU">This Google Maps layer</a> listed IMAX theaters.
+
+In Manhattan, New York City, the AMC Empire 25 at 42nd and 8th has the newer, digital IMAX screen. The Loews Lincoln Center at 68th and Broadway, has a standard IMAX screen.
+
+In the US, only <a target="_blank" href="https://www.yahoo.com/entertainment/movies/article/only-24-us-theaters-can-show-the-odyssey-the-way-its-meant-to-be-watched-heres-where-they-are-080833476.html">25 IMAX theaters</a> have the equipment to show ‘The Odyssey’ in the 70-mm format it was filmed in: 
+   * <a target="_blank" href="https://www.usatoday.com/story/entertainment/movies/2026/07/15/the-odyssey-imax-70mm-locations-christopher-nolan/90911917007/">Apple Providence Place, Rhode Island</a>.
+   * AMC Licoln Square 13, NYC 
+   * AMC Universal CityWalk in Los Angeles
+   * Regal Colorado Center 9 in Denver, CO
+   * AMC Metreon 16, San Francisco, CA
+   * Brenden Palms 14, Las Vegas, NV
+
+https://en.wikipedia.org/wiki/Category:IMAX_venues_in_the_United_States
+
+The IMAX screen at Universal Hollywood is 58' x 79'.
+* San Francisco
+* London
+* New York
 
 
 ## Movie Database API
