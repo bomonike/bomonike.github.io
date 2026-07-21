@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-05-31"
-lastchange: "26-05-31 v014 ref in href @networking.md"
+date: "2026-07-21"
+lastchange: "v016 jake's tech labs switches @networking.md"
 url: "https://bomonike.github.io/networking"
 file: "networking"
 title: "Networking Certifications"
@@ -15,7 +15,7 @@ image:
 comments: true
 created: "2026-03-19"
 ---
-<a target="_blank" rel="noopener noreferrer" href="https://bomonike.github.io/networking"><img align="right" width="100" height="100" alt="networking.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/networking.png?raw=true" /></a>
+<a target="_blank" rel="noopener noreferrer" href="https://bomonike.github.io/networking"><img style="float:right" width="100" height="100" alt="networking.png" src="https://github.com/bomonike/bomonike.github.io/blob/master/images/networking.png?raw=true" /></a>
 <i>{{ page.excerpt }}</i>
 {% include _toc.html %}
 
@@ -70,6 +70,8 @@ AnkiDroid on Android
 
 https://www.retrievalpractice.org/strategies/2019/11/18/flashcards
 
+https://jakestechlabs.com/labs/cisco-switch-commands
+free, formatted well.
 
 
 ## Cisco Modeling Labs
@@ -105,20 +107,35 @@ From here, ask the AI about:
    <br /><br />
 
 
+https://learn.flackbox.com/courses/enrolled/793825
+
 ## Cisco Packet Tracer
 
-<a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=a1Im6GYaSno&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ&index=3">VIDEO</a>:
+@NeilAnderson (flackbox.com):
+<a target="_blank" href="https://learn.flackbox.com/courses/enrolled/227187">GNS3 and Packet Tracer Installation</a>:
+   1. <a target="_blank" href="https://www.flackbox.com/cisco-ccna-lab-guide">PDF: Free CCNA Lab Guide</a>
+   1. Sign up https://www.netacad.com/courses/packet-tracer/introduction-packet-tracer
+      * Start Cisco Packet Tracer Installation and Configuration (10:19 )
+   1. https://github.com/GNS3/gns3-gui/releases/tag/v2.0.3 (Assets not the latest)
+      https://learn.flackbox.com/courses/227187/lectures/3535851
+      * Start GNS3 Installation and Configuration (17:06 )
+
+@jitl.jp:
+* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=a1Im6GYaSno&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ&index=3">VIDEO</a>:
 Install from https://jitl.jp/packet-tracer redirects to
 
-* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=a1Im6GYaSno">@JeremysITLab 003: Packet Tracer Introduction - Day 1 Lab</a>
+@Jeremys:
+   * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=a1Im6GYaSno">@JeremysITLab 003: Packet Tracer Introduction - Day 1 Lab</a>
 
-* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=XXCEk8FO9lQ">@DavidBombal 004 Cisco Packet Tracer install (Windows 11)</a>
-* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=rKUhxX_a-mg">@DavidBombal 005 Cisco Packet Tracer install (Apple macOS)</a>
-* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=_nrvLja2lfY&list=PLw6kwOJVj3MbMZ8B72ZgUryj8OSETC0ds&index=6&pp=iAQB">@DavidBombal 006 CCNA Packet Tracer Tips</a>
+@DavidBombal:
+   * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=XXCEk8FO9lQ">@DavidBombal 004 Cisco Packet Tracer install (Windows 11)</a>
+   * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=rKUhxX_a-mg">@DavidBombal 005 Cisco Packet Tracer install (Apple macOS)</a>
 
-* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=RLTiLwQ75YQ">@DavidBombal 007 Real Equipment vs. Packet Tracer</a>
-* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=jW5GhNhBReA">@DavidBombal 008 Build a network with me for free using Cisco Packet Tracer</a>
-* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=EdsLU9oBudg">@DavidBombal 009 Build a Web Server network for free using Cisco Packet Tracer</a>
+   * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=_nrvLja2lfY&list=PLw6kwOJVj3MbMZ8B72ZgUryj8OSETC0ds&index=6&pp=iAQB">@DavidBombal 006 CCNA Packet Tracer Tips</a>
+
+   * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=RLTiLwQ75YQ">@DavidBombal 007 Real Equipment vs. Packet Tracer</a>
+   * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=jW5GhNhBReA">@DavidBombal 008 Build a network with me for free using Cisco Packet Tracer</a>
+   * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=EdsLU9oBudg">@DavidBombal 009 Build a Web Server network for free using Cisco Packet Tracer</a>
 
 
 ## Terminology Mind Map diagrams
@@ -160,6 +177,9 @@ Hubs broadcast traffic promiscuously. Now obsolete.
 Switches route to specific (48 bit) MAC Addresses
 
 IOL-L2 adds Layer-2 switching support (standard IOL is L3-only).
+
+https://www.youtube.com/watch?v=-R5ak7-LiVY
+API gateway 
 
 
 ### IP Addresses & Subnetting
@@ -224,7 +244,7 @@ IOL-L2 adds Layer-2 switching support (standard IOL is L3-only).
 ASAv (ASA Virtual) firewall image for security/FTD lab testing.
 
 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/pulse/taking-control-outbound-network-requests-macos-nino-bilic-iztcc/">BLOG</a>:
-To block malware from sending data home.
+To block malware from sending data home, block sensitive apps from sending data out.
 
 Firewalls built-in to macOS are turned OFF by default. Turning the application-level firewall at Settings > Network > Firewall <strong>only blocks incoming</strong> (not outgoing) traffic and only “per installed app”.
 
@@ -630,7 +650,7 @@ where the file name is prefixed by "@NetworkUpskill", the playlist's zero-filled
 * @Flock: 30. IPv6 Addressing and Routing
 * @Flock: 31. WAN - Wide Area Networks
 * @Flock: 32. The Security Threat Landscape
-* @Flock: 33. <strike>Cisco Device Security</strike>
+* @Flock: 33. <s>Cisco Device Security</s>
 * @Flock: 34. Network Device Management
 * @Flock: 35. QoS Quality of Service
 * @Flock: 36. Cloud Computing
@@ -786,7 +806,7 @@ from the too-caffeinated @NetworkChuck as sales for Boson prep course.
 
 ## @PaoloReyes1
 
-<a target="_blank" rel="noopener noreferrer" href="linkedin.com/in/paolomreyes">Paolo Reyes</a>
+<a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/paolomreyes">Paolo Reyes</a>
 
 <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=eVFqTYhc43w&list=PL6THIlXpIRaJbF6qVeHnf8JqYEgI0D4dT">
 CCNA Networking Fundamentals" playlist</a>
@@ -808,6 +828,37 @@ Remove repetitive text in URL names.
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Oe8Vd12m4H4">@PaoloReyes1 012 subnetting doesn't have to be hard.mp4</a></li>
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=4FYeIGM_1hc">@PaoloReyes1 013 How to Set up a Cisco Switch in 15 MINUTES.mp4</a></li>
 </ul>
+
+## Others
+
+<a target="_blank" href="https://www.youtube.com/watch?v=bdeV_TjNfFA&pp=ugUHEgVlbi1VUw%3D%3D">"Every Networking Concept Explained | Networking 101 (2026)"</a> by Tech With Diego
+0:31 Ethernet
+0:38 Wi-Fi
+0:56 MAC Address
+1:15 Switch
+1:35 IP Address
+1:47 Static IP
+1:57 DHCP
+2:19 Subnet
+2:31 Router
+2:48 Default Gateway
+3:03 Routes
+3:11 Static Routing
+3:23 OSPF
+3:38 BGP
+4:15 Ping
+4:23 ICMP
+4:35 TCP
+4:55 UDP
+5:23 Ports
+5:46 Firewall
+6:14 TLS
+6:24 SSL
+6:40 VPN
+7:06 DNS
+7:20 HTTP
+7:33 HTTPS
+7:45 Load Balancer
 
 
 ## Q&A
@@ -865,7 +916,6 @@ All of the above.
 
 Correct
 Correct!
-Status: [object Object]
 1 / 1 point
 2.
 Question 2
@@ -880,7 +930,6 @@ White hats
 Black hats
 Correct
 Correct!
-Status: [object Object]
 1 / 1 point
 3.
 Question 3
@@ -1969,6 +2018,15 @@ Incorrect. This was covered in Cybersecurity Capstone: Ransomware
 Status: [object Object]
 0 / 1 point
 
+
+## References
+
+https://ocw.mit.edu/courses/6-829-computer-networks-fall-2002/
+6.829 | GRADUATE
+Computer Networks
+Prof. Hari Balakrishnan
+(no videos)
+How does the global network infrastructure work and what are the design principles on which it is based? In what ways are these design principles compromised in practice? How do we make it work better in today’s world? How do we ensure that it will work well in the future in the face of rapidly growing scale and heterogeneity? And how should Internet applications be written, so they can obtain the best possible performance both for themselves and for others using the infrastructure? These are some issues that are grappled with in this course. The course will focus on the design, implementation, analysis, and evaluation of large-scale networked systems. Topics include internetworking philosophies, unicast and multicast routing, congestion control, network quality of service, mobile networking, router architectures, network-aware applications, content dissemination systems, network security, and performance issues. Material for the course will be drawn from research papers, industry white papers, and Internet RFCs.
 
 
 <hr />
