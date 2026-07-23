@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-21"
-lastchange: "v036 from rustops @infisical.md"
+date: "2026-07-22"
+lastchange: "v038 + intro @infisical.md"
 url: https://bomonike.github.io/infisical
 file: "infisical"
 title: "infisical"
@@ -17,21 +17,79 @@ created: "2021-10-03"
 ---
 <i>{{ page.excerpt }}</i>
 
+## What's the problem?
+
+<a target="_blank" href="https://www.youtube.com/watch?v=AkyMmDSX8b4">VIDEO</a>:
+Traditionally, when a computer client program makes a call <strong>directly</strong> to a server using HTTP protocol, that client adds a "permission slip" ("API key") in request authorization headers.
+API keys need to be treated as the secrets they are because whoever holds that key can conduct the transaction.
+
+When autonomous AI agents are given API keys to conduct transactions, those agents have been known to be tricked into <strong>exfiltrating</strong> API key secrets to attackers.
+AI agents create new attack surfaces. 
+See https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/
+
+Infisical was open-sourced from 2022 at<br />
+<a target="_blank" href="https://github.com/Infisical/">https://github.com/Infisical</a>
+
+<a target="_blank" href="https://github.com/Infisical/agent-vault/">https://github.com/Infisical/agent-vault</a> open sources their Agent Vault credentials proxy.
+
+It makes it so AI agents don't handle API keys.
+
+Infisical's Agent Vault credentials broker is a man-in-the-middle proxy (like the mitmproxy utility) that <strong>intercepts</strong> HTTP traffic in order to <strong>inject</strong> credentials on the wire.
+
+Infisical's proxy approach enables <strong>dynamic</strong> creation of API key values.
+
+Infisical provides <strong>templates</strongs> that know how to place secrets accurately in specific apps.
+
+Infisical wraps CLI commands as well as HTTP.
+
+
+
+QUESTION: Does Infisical work with customer-facing API Management software like Kong which generate API keys?
+
+QUESTION: Does Infisical provide a Zero Trust approach where a new account and password is created for each access?
+
+Mutual TLS authentication?
+
+
 <a target="_blank" href="https://infisical.com">infisical.com</a> says the software is an:
 
    > "All-in-one platform to securely manage application secrets, certificates, and privileged access across cloud, on-prem, and AI infrastructure."
 
-Their HQ is at <a target="_blank" href="https://www.loopnet.com/Listing/235-2nd-St-San-Francisco-CA/40483148/">235 2nd St</a> STE 110, San Francisco, CA 94105, in SoMA, SouthEast of the Market St. BART stop, across from The Clancy Marriott hotel. Cnet is in the building. <a target="_blank" href="https://www.builtinsf.com/company/infisical/jobs">jobs</a>
+Infisical makes money from running a deploy cloud.
+
+What does the name mean? in-fisical as like invisible, in-physical, not-physical like a Post-it note.
+
+Founded via Y-Combinator in 2022, their HQ is at <a target="_blank" href="https://www.loopnet.com/Listing/235-2nd-St-San-Francisco-CA/40483148/">235 2nd St</a> STE 110, San Francisco, CA 94105, in SoMA, SouthEast of the Market St. BART stop, across from The Clancy Marriott hotel. Cnet is in the building. <a target="_blank" href="https://www.builtinsf.com/company/infisical/jobs">jobs</a>
 
 Led by CEO <a target="_blank" href="https://www.linkedin.com/in/vmatsiiako/">Vlad Matsiiako</a>
+
 Ashwin Punj
 
-Founded via Y-Combinator in 2022 and open-sourced at
-https://github.com/Infisical/
 
-### Docs
+## YouTube videos
 
-1. Sign up for an account.
+   * https://www.youtube.com/@infisical_os official
+   * https://www.youtube.com/watch?v=EzDQC7nY3YY = "Manage Secrets in Local Development (without .env)"
+   * https://www.youtube.com/watch?v=oU2nNBwlOTA = "The Best Way to Manage .env Variables in Docker (Compose, Secrets & More)"
+   * https://www.youtube.com/watch?v=AkyMmDSX8b4 = How Agent Vault Works: Credential Brokering for AI Agents
+   * https://www.youtube.com/watch?v=5juDO2796ds vs. Hashicorp
+
+Josh Geissler:
+   * https://www.youtube.com/watch?v=Kf_sKXuv-RY = Infisical Secrets Management for Beginners
+
+Elestio
+   * https://www.youtube.com/watch?v=TujNVL6NQX0&pp=0gcJCZkLAYcqIYzv = "Infisical: Open Source Secrets Management Platform"
+
+Christian Lempa
+   * https://www.youtube.com/watch?v=kGKQ-j4jTg0 = Better HomeLab Secret Management // Infisical Tutorial
+
+
+
+## Start
+
+1. Sign up for an account at
+   https://app.infisical.com/
+
 1. Organization slug & Contact
    https://app.infisical.com/organizations/.../settings?selectedTab=tab-org-general
 
@@ -319,7 +377,7 @@ CAUTION: No installer for direct macOS install (just Docker).
    ### License pricing
 
    To run a <strong>Secrets gateway</strong>, an Enterprise subscription is needed.
-   That's also the case for <a target="_blank" href="https://www.microsoft.com/en-us/security/business/security-101/what-is-scim">SCIM Automated Provisioning/Deprovisioning</a>, LDAP, <a target="_blank" href="https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol">KMIP</a>, KMS, HSM, SLA, SOC2.
+   That's also the case for <a target="_blank" href="https://www.microsoft.com/en-us/security/business/security-101/what-is-scim">SCIM Automated Provisioning/Deprovisioning</a>, LDAP, Groups, <a target="_blank" href="https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol">KMIP</a>, KMS, HSM, SLA, SOC2.
 
    An <a target="_blank" href="https://infisical.com/pricing">"Pro Plus" $18/month subscription</a> is needed to:
    
@@ -332,7 +390,9 @@ CAUTION: No installer for direct macOS install (just Docker).
    * 90-day audit log retention
    * Priority customer support
 
-1. Stop server, press Control+C:
+   BTW, in 2023, HashiCorp switched Vault from MPL to BSL license so it cannot be used in “competitive” products. But their definition of “competitive” is rather vague.
+
+1. To stop server, press Control+C:
    ```bash
    docker compose -f docker-compose.dev.yml --profile queue down
    ```
@@ -394,4 +454,8 @@ CAUTION: No installer for direct macOS install (just Docker).
       Adding infisical v0.0.3
    </pre>
 
-   
+
+
+
+<hr />
+<sub>{{ page.lastchange }} created {{ page.created }}</sub>
