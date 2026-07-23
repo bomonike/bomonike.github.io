@@ -1,11 +1,11 @@
 ---
 layout: post
 date: "2026-07-22"
-lastchange: "v038 + intro @infisical.md"
+lastchange: "v039 + intro @infisical.md"
 url: https://bomonike.github.io/infisical
 file: "infisical"
 title: "infisical"
-excerpt: "Keep secrets like HashiCorp Vault"
+excerpt: "Keep secrets off AI agents with proxy via a stateless SaaS (unlike HashiCorp Vault)"
 tags: [Rust, Security, DevSecOps]
 image:
 # rustops-1900x500.png
@@ -20,14 +20,15 @@ created: "2021-10-03"
 ## What's the problem?
 
 <a target="_blank" href="https://www.youtube.com/watch?v=AkyMmDSX8b4">VIDEO</a>:
-Traditionally, when a computer client program makes a call <strong>directly</strong> to a server using HTTP protocol, that client adds a "permission slip" ("API key") in request authorization headers.
+Traditionally, when a computer client program makes an HTTP API call <strong>directly</strong> to a server, that client adds a "permission slip" ("API key") among HTTP request authorization headers.
+
 API keys need to be treated as the secrets they are because whoever holds that key can conduct the transaction.
 
 When autonomous AI agents are given API keys to conduct transactions, those agents have been known to be tricked into <strong>exfiltrating</strong> API key secrets to attackers.
 AI agents create new attack surfaces. 
-See https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/
+See <a target="_blank" href="https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/">Snyk's report on how widespread vulnerabilities are</a>.
 
-Infisical was open-sourced from 2022 at<br />
+Infisical was open-sourced Nov 2022 at<br />
 <a target="_blank" href="https://github.com/Infisical/">https://github.com/Infisical</a>
 
 <a target="_blank" href="https://github.com/Infisical/agent-vault/">https://github.com/Infisical/agent-vault</a> open sources their Agent Vault credentials proxy.
@@ -38,11 +39,16 @@ Infisical's Agent Vault credentials broker is a man-in-the-middle proxy (like th
 
 Infisical's proxy approach enables <strong>dynamic</strong> creation of API key values.
 
-Infisical provides <strong>templates</strongs> that know how to place secrets accurately in specific apps.
+Infisical provides <strong>templates</strong> that know how to place secrets accurately in specific apps.
 
 Infisical wraps CLI commands as well as HTTP.
 
+<a target="_blank" href="https://infisical.com">infisical.com</a> says the software is an:
 
+   > "All-in-one platform to securely manage application secrets, certificates, and privileged access across cloud, on-prem, and AI infrastructure."
+
+
+## Questions
 
 QUESTION: Does Infisical work with customer-facing API Management software like Kong which generate API keys?
 
@@ -51,18 +57,21 @@ QUESTION: Does Infisical provide a Zero Trust approach where a new account and p
 Mutual TLS authentication?
 
 
-<a target="_blank" href="https://infisical.com">infisical.com</a> says the software is an:
-
-   > "All-in-one platform to securely manage application secrets, certificates, and privileged access across cloud, on-prem, and AI infrastructure."
+## Infisical the company
 
 Infisical makes money from running a deploy cloud.
 
 What does the name mean? in-fisical as like invisible, in-physical, not-physical like a Post-it note.
 
-Founded via Y-Combinator in 2022, their HQ is at <a target="_blank" href="https://www.loopnet.com/Listing/235-2nd-St-San-Francisco-CA/40483148/">235 2nd St</a> STE 110, San Francisco, CA 94105, in SoMA, SouthEast of the Market St. BART stop, across from The Clancy Marriott hotel. Cnet is in the building. <a target="_blank" href="https://www.builtinsf.com/company/infisical/jobs">jobs</a>
+<a target="_blank" href="https://www.youtube.com/watch?v=qDumDlXcMkg">VIDEO</a>:
+Founded via Y-Combinator W23 and a $16 M Series A led by Elad Gil, Infisical is HQ'd at the <a target="_blank" href="https://www.loopnet.com/Listing/235-2nd-St-San-Francisco-CA/40483148/">brick-fronted 235 2nd St</a> STE 110, San Francisco, CA 94105, in SoMA, SouthEast of the Market St. BART stop, across from The Clancy Marriott hotel. Cnet is in the building. <a target="_blank" href="https://www.builtinsf.com/company/infisical/jobs">jobs</a>
 
-Led by CEO <a target="_blank" href="https://www.linkedin.com/in/vmatsiiako/">Vlad Matsiiako</a>
+Led by Cornell classmates 
+<a target="_blank" href="https://www.linkedin.com/in/vmatsiiako/">Vlad Matsiiako</a>,
+<a target="_blank" href="https://www.linkedin.com/in/maidul98/">Maidul Islam</a>,
+<a target="_blank" href="https://www.linkedin.com/in/tony-d-a104a6125/">Tony Dang</a>,
 
+AEs <a target="_blank" href="https://www.linkedin.com/in/diegoaranda512/">Diego Aranda</a>
 Ashwin Punj
 
 
