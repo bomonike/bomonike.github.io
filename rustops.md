@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-07"
-lastchange: "v033 feat: nato-audio @rustops.md"
+date: "2026-07-26"
+lastchange: "v036 workspace @rustops.md"
 url: https://bomonike.github.io/rustops
 file: "rustops"
 title: "rustops (Rust Operations)"
@@ -17,12 +17,12 @@ created: "2021-10-03"
 ---
 <i>{{ page.excerpt }}</i>
 
-This page is NOT about the Rust game and <a target="_blank" href="https://rustops.org/">Rustops.org</a>
-
 This is about installing and using the infrastructure around the Rust programming language -- 
 the quickest way to <a href="#UseAI">use AI</a> to building <a href="#Worthy">production-quality</a> <a href="#Practical">practical applications</a> while learning the Rust language.
 
-This references my <a href="https://github.com/bomonike/rustlang-samples/">github.com/bomonike/rustlang-samples repo</a> and<br />
+This page is NOT about the Rust game and <a target="_blank" href="https://rustops.org/">Rustops.org</a>
+
+This references my <a href="https://github.com/bomonike/rustlang-samples/">github.com/bomonike/rustlang-samples</a> repo and 
 <a href="https://bomonike.github.io/rustlang">bomonike.github.io/rustlang</a> website.
 
 {% include whatever.html %}
@@ -76,12 +76,13 @@ with narrative that logically explains how the various websites, folders, and fi
 1. The specific <strong>version</strong> of each library are kept updated by the
 1. <tt>cargo audit</tt> command ensures that the latest version is referenced from the
 1. <strong>crates.io</strong> registry on the <strong>public</strong> internet.
+1. DEFINITION: A library crate is a crate that is not compiled, and thus doesn’t generate binaries. It’s a crate provided so that other crates or packages can reference code.
 1. Some crates act on code, such as creating <tt>error.rs</tt> file that structures common error handling.
 1. Each day, changes in the crates.io website are reflected in the <strong>lib.rs</strong> website which provides advanced filtering and categories. There are also additional libraries not in crates.io.
 
 1. <tt>cargo fmt</tt> reformats your Rust code, based on settings in the 
 1. <tt>rustfmt.toml</tt> file.
-1. <tt>cargo clippy</tt> scans your Rust code to identify warnings and errors, based on settings in the 
+1. <tt>cargo clippy</tt> scans your Rust code to identify <a target="_blank" href="https://rust-lang.github.io/rust-clippy/master/index.html">lint warnings and errors</a>, based on settings in the <a target="_blank" href="https://github.com/rust-lang/rust-clippy">clippy.toml</a>
 1. <tt>rustfmt.toml</tt> file.
 
 1. Specifying the <tt>--release</tt> parameter creates an <strong>optimized</strong> executable.
@@ -90,7 +91,10 @@ obtainable from shared registry are downloaded.
 
 1. A <tt>git clone</tt> command can create a <strong>package folder</strong> and its
 
+
 ## Not Discussed
+
+* An "application" is  built to meet the needs of a user persona - a standalone executable that uses multiple services.
 
 * Translation to different languages
 
@@ -98,28 +102,114 @@ obtainable from shared registry are downloaded.
 
 * CHANGELOG at the root. A CHANGELOG is not a dump of your Git commit history, but chronologically summarizee, in plain English, notable impacts. https://keepachangelog.com/en/1.1.0/ provides an example of the categories: Added, Changed, Deprecated, Removed, Fixed, Security.
 
+* <a target="_blank" href="https://www.youtube.com/watch?v=QZKWEEO-Uoo">VIDEO</a>: Chapter 14.3: Manage complexity by using <strong>workspaces</strong> that consists of a main binary and several internal crates (libraries each with clear boundaries) that are always developed and released together. Create
+   ```
+   cargo new my_app --bin   # Creates a binary crate
+   cargo new my_lib --lib   # Creates a library crate
+   cargo run -p my_app
+   ```
+See more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+## My Workspace
+
+   ```
+   my-workspace/
+    ├── Cargo.toml        # Workspace root config
+    ├── Cargo.lock        # Created after first build
+    ├── my_app/
+    │   ├── Cargo.toml
+    │   └── src/
+    │       └── main.rs   # binary
+    │   └── bin/
+    │       └── main.rs
+    ├── my_lib/
+    │   ├── Cargo.toml
+    │   └── src/
+    │       └── lib.rs    # library code
+    └── target/           # Shared build output directory
+   ```
+   So they share a single Cargo.lock external versioning file. A <tt>[workspace]</tt> section in the Cargo.toml file defines member subdirectories belonging to the workspace.
+   
+   ```
+   cargo new my_app --bin   # Creates a binary crate
+   cargo new my_lib --lib   # Creates a library crate
+   cargo run -p my_app
+   ```
+   DEFINITION: A workspace is a container for several Rust projects which share the same target folder.
+
+   ```
+   cargo run --bin [name]
+   ```
+   "[name]" means that instead of specifying "server.rs" in the command, specify "server" because that's the name for that file in Cargo.toml.
+
+   ```
+   cargo run -p my_app
+   ```
+   In the Workspace root config
+   ```
+    # my-workspace/Cargo.toml
+    [workspace.dependencies]
+    serde = { version = "1.0", features = ["derive"] }
+    tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+   ```
+Use  when your project is a workspace, a CLI tool with multiple sub-commands, or any project where you have multiple executable files and need to run a specific one.
+
+
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=70_9IIsQfjs">Cargo Workspaces</a>
+
+https://rust-analyser.github.io
+
 
 ## Table of Contents
 
 {% include _toc.html %}
 
-##
+## My apps
+
+I'd like to build each app below in multiple platforms (iPhone, Android, macOS desktop, web SPA) from a single code base:
+
+1. pre-commit to remove metadata in img files
+1. Calculator app that converts ISE metric to imperial.
+1. Inventory and consumption projection in future timeline
+1. Bible verse memorization
+1. Home power managenent from weather forecast
+1. A time zone meeting calculator
+1. matrix for making Decisions as a group
+1. Project and task integrator 
+1. Payment via blockchain and smart contract development. 
+1. Contacts integrator (Linkedin, Google, iPhone)
+1. Country codes lookup (phone, tld, etc.)
+1. Replay videos downloaded from YouTube & local mp4 files
+1. Use Rust algorithm within Python <a target="_blank" href="https://medium.com/vortechsa/integrating-rust-into-python-1515a752fdb3">BLOG</a>
+1. lookup linkedin based on AI voice recognition of name anf AI Facial recognition from selfie face 
 
 * cargo-capsec crate performs a static capability audit, reporting which functions in your code can perform actions like filesystem access or network connections.
 
 * rust-sanitize scrubs sensitive data from logs and configs before sharing them, rather than scanning a codebase.
 
+## Rust-algorithms
+
+```bash
+# clone Rust-Algorithms as a peer of 
+cd /Users/johndoe/github-wilsonmar/rustlang-samples/src
+git clone https://github.com/wilsonmar/Rust-algorithms.git Rust-algorithms 2>&1 | tail -20
+echo "---"
+ls /Users/johndoe/github-wilsonmar/rustlang-samples/src
+```
+
 
 ### Scan for sensitive data:
 Type	Count	Severity	Description
-Sensitive file extensions	2,053	Medium	.pem, .key, .p12 files
-Connection strings	1,146	High	Credentials in URLs
-Backup files	412	Low	Editor or config backups
-Private key headers	233	Critical	Actual private keys
-Database URLs	184	Critical	Exposed DB credentials
-AWS access keys	20	Critical	AWS API keys
-GitHub tokens	7	Critical	Access tokens
-Stripe keys	4	Critical	Payment API keys
+* Sensitive file extensions	2,053	Medium	.pem, .key, .p12 files
+* Connection strings	1,146	High	Credentials in URLs
+* Backup files	412	Low	Editor or config backups
+* Private key headers	233	Critical	Actual private keys
+* Database URLs	184	Critical	Exposed DB credentials
+* AWS access keys	20	Critical	AWS API keys
+* GitHub tokens	7	Critical	Access tokens
+* Stripe keys	4	Critical	Payment API keys
 
 
 <a id="UseAI"></a>
@@ -150,15 +240,123 @@ mostly CPU-bound at only 7%/93% split suggests limited GPU offload).
 Since it's genuinely in-progress and not hung, let's just wait longer.
 </pre>
 
+Many repos have a "NO AI SLOP" policy to protect themselves.
+
+PROTIP: First of all, look at existing code and ask experienced team members to ensure consistency with established standards (whether formal or de facto).
+
+So use AI to build in segments, identifying code to add such that you're <strong>crafting</strong> the program:
+<pre>
+rust function to humanize the display of the number of elapsed seconds. 
+</pre>
+Provide details such as:
+<pre>
+For sub-second values, output using abbreviations such as ns, µs, ms, s.
+</pre>
+
+The better AI provide test code without being asked.
+
+The best AI recognizes typos and comes up with ideas without being asked:
+<pre>
+Rather than growing the hardcoded list further (which is already a maintenance trap), I'll write a dedicated extractor for comparison queries that matches directly against the loaded country names in SQLite — a real fix, not a patch on a fragile pattern.
+</pre>
+
+I am often surprised at compatibility note such as:
+```
+auth-git2 version mismatches with newer git2/rustc releases are a common cause of this error.
+```
+
+Analyze the AI response for programming techniques rather than blindly copying and pasting.
+PROTIP: Look at the version of Cargo.toml provided by AI. Edit the year to the latest (2024) so that you're using the latest version associated with that.
+
+Use follow-up prompt such as:
+<pre>
+Explain the use of <`a> in rust code.
+</pre>
+
+PROTIP: AI can save you a lot of time at finding crates which may have issues resolved in its code as well as documentation that you don't have to write and review:
+<pre>
+rust crate that humanize the display of the number of elapsed seconds. 
+</pre>
+The response can be pleasant surprises, such as
+   * "eternity-rs" crate provides bot readable formats and time range selection, ideal for use with logging/monitoring.
+   * "humfmt" crate is an ergonomic toolkit that handles durations, byte sizes, compact numbers, ordinals, relative time, and natural-language lists—all in one crate."
+
+PROTIP: Prefer using crates (such as time-humanize and human-repr) which have "zero dependencies" that potentially allow security vulnerabilities to creep in. 
+
+PROTIP: TEAMWORK: Have your Security team review your use of external crates. 
+
+PROTIP: Once working (passes all the edits you can think off), commit the version and ecpore alternatives.
+
+
+
+<a name="CLIoptions"></a>
+
+## Kitty CLI options
+
+The Terminal program that comes with Operating Systems such as macOS are rather primitive compared to AI-enabled CLI Terminals. For one, legacy Terminal (including VS Code Terminal) cannot display images such as QR codes.
+
+* Kitty - True 24-bit color depth, high resolution
+* iTerm2 - Full color (macOS)
+
+* Windows Terminal - Sixel support (from version v1.22+)
+* WezTerm - Full support
+* GNOME Terminal - Sixel support via patch
+* Konsole Terminal - Sixel support via patch
+* xTerm - Sixel support With -ti vt340
+
+Sixel (short for "Six-bit elements") is a graphics protocol that allows terminals to display bitmap images directly within the terminal window. It was originally developed by DEC (Digital Equipment Corporation) in the 1980s for their VT-series terminals.
+
+1. Check if your terminal supports Sixel. This returns colored blocks if supported:
+   ```bash
+   echo -e "\ePq#0;2;0;0;0#1;2;100;100;0#2;2;0;100;0#1~#2~#3~\e\\"
+   ```
+
+viuer automatically falls back to ASCII art rendering. This ensures your PNG still displays something readable:
+
+
+## Output folders
+
+What folder should rust programs output files to from within the main.rs?
+
+POLICY: ❌ Don't hardcode filepath to just <tt>./output.txt</tt> which this dumps files wherever the user runs the program -- messy and unpredictable.
+
+POLICY: The output folder (designated by a /) should be in <tt>.gitignore</tt> so that they are never pushed up to GitHub.
+
+POLICY: ❌ Don't write to the <tt>target/</tt> folder — it's for build artifacts, not your program's output.
+
+Use my ____ function which puts outputs based on the OUTPUT_DIRPATH variable in .env file.
+If that is not specified, runs in Test environment output to hard-coded:
+   * <tt>target/tests/</tt> (which get cleaned by <tt>cargo clean</tt>)
+
+POLICY: ❌ Do not output to target/release and /debug folders the only cargo should output to:
+   * ../target/debug/ for debug builds (cargo build)
+   * ../target/release/ for release builds (cargo build --release)
+
+If that is not specified in production, the standard practice is to 
+   * macOS:   ~/Library/Application Support/<em>com.mycompany.myapp</em>/
+   * Linux:   ~/.local/share/<em>myapp</em>/
+   * Windows: C:\Users\<em>You</em>\AppData\Roaming\MyCompany\MyApp\data\
+
+Use the ProjectDirs::data_dir() method to return a platform-specific path intended for your application's persistent data files. https://docs.rs/envpath/0.0.1/x86_64-apple-darwin/envpath/struct.ProjectDirs.html
+??? write to the user's OS-specific data directory by using the directories crate to get the right path:
+   ```
+   let output_filename = "a-very-fine-file.pdf"
+   let test_dir = std::path::Path::new(output_filename);
+   std::fs::create_dir_all(test_dir).unwrap();
+   ```
+
 
 <a id="Worthy"></a>
 
-## What is production-worthy?
+## Production-worthy?
 
-By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.io/production/">production</a> code", "easy to extend", "performant", and other nice objectives are achieved not by empty promises but the extent that these features are implemented.
+"Robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.io/production/">production</a> code", "easy to extend", "performant", and other nice objectives are achieved not by empty promises but the extent that these features are implemented. Here are specific coding features:
 
 * GUI Interactive
-   GUI in the Autonomous Age of AI is for "Human In the Loop" to approve rather than initiate actions.
+   - Automatic screen blank logout after a few minutes
+   - Login required after screen blanking
+   - Plausible self-hostable instead of Google tracking: No cookies. Minimal impact on site speed.
+   There are several frameworks for developing interactive apps in Rus, for the Autonomous Age of AI is for "Human In the Loop" to approve rather than initiate actions.
 
    - <a target="_blank" href="https://crates.io/crates/axum">axum crate</a> is a popular modern, ergonomic web framework built by the Tokio team. More popular than actix-web.
    - <a target="_blank" href="https://wilsonmar.github.io/azure-functions/">Azure Serverless functions</a>
@@ -168,8 +366,10 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - rodio crate: play an audio file (mp3, wav) [DONE]
    - Camera scan bar code or QR code
    - <a target="_blank" href="https://wilsonmar.github.io/alexa/">Alexa</a> voice response
+   - Flipt Open-source feature flags and experimentation. Graduel feature rollouts. A/B Testing. Target specific user groups.
 
 * Authentication
+   - Hanko: Passwordless Authentication with WebAuthn Support:
    - #localvault - retrieve secrets from a secure local vault on USB drive (rather than clear-text env files)
    - <a target="_blank" href="https://wilsonmar.github.io/passkeys/">Passkeys</a>
    - Write-only archival handling accounts
@@ -178,15 +378,19 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - custom header-based API auth
    - <a target="_blank" href="https://wilsonmar.github.io/okta/">Okta</a>
    - <a target="_blank" href="https://wilsonmar.github.io/zero-trust/">Zero Trust</a>
+   - Ory Kratos Open-source identity management.
+   - Twingate for Zero Trust means every interaction is authorized. No assumed safe areas. [Christian Lempa](https://www.youtube.com/@christianlempa)
 
 * Configuration Management
    - Use a --verbose/-v argument to select run-time verbosity of run stats
    - <a target="_blank" href="https://www.generalistprogrammer.com/tutorials/whoami-rust-crate-guide">whoami crate</a> to get the current user and environment.
    - <a target="_blank" href="https://crates.io/crates/dirs">dirs crate</a> to get user directories cross-platform, C:\Users\... or assuming /usr/local/bin) [DONE]
    - <a target="_blank" href="https://wilsonmar.github.io/dns/">DNS</a> host name hops nslookup [DONE]
+   - Set a wait after creating Azure Cosmos DB's sub-resources (database/container) of 2.5 minutes headroom.
+   - No billed resources are left behind at the end of full capability test runs.
 
 * Secrets
-   - Load from environment variables, for retrieving variables that don't need to be kept secret. [DONE]
+   - Load run control variables that don't need to be kept secret retrieved from environment variable (.env) in your user home folder, away from Github repos. [DONE]
    - AWS Secrets Manager
    - <a target="_blank" href="https://wilsonmar.github.io/azure-key-vault/">Azure Key Vault</a>
    - secretscout crate scans for secrets in your own Rust applications.
@@ -194,21 +398,27 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - caviarder Rust CLI (that can also be used as a library) to read text and replace detected secrets using Gitleaks' 220+ detection patterns.
 
 * Client framework support
+   - Scan to not allow standard library "std::process::Command" which executes arbitrary CLI commands. Instead, of calling CLI fastfetch or inxi utilities to get system info, use crate ___.
    - multi-modal OpenAI prompt handling (speech recognition, GenAI of text, images, video)
    - <a target="_blank" href="https://github.com/AnBowell/s3-filesystem">OpenOptions struct</a>: read (get) file at the end of a AWS S3 or MinIO compatible endpoint cloud URI. To treat S3 files as if they were local files.
    - write (put) a file to AWS S3 cloud (mimio) 
    - AWS, Azure, <a target="_blank" href="https://wilsonmar.github.io/gcp/">GCP</a> interoperability
 
 * Logging and Observability
+   - Output logs in dual-format: use human-readable text for development and JSON Lines (JSONL) for machine parsing in production, enabled using CLI flag <tt>--jsonl</tt> or <tt>--log-format json</tt>
    - In dev, consistently and pleasantly formatted print messages (like the rich library in Python) by replacing default print macros with a comprehensive toolkit with colors, styles, tables, progress bars, etc. 
-   - For production environments, logs need to be machine-readable JSON injestible by Loki. use tracing_subscriber::{fmt, prelude::*, EnvFilter};
-   - Logs are fowarded using Promtail or Fluentd to easily parse and forward.
-   - Add logging, locally and with RFC 3339 timestamps (Such as 2026-07-05T11:19:24.356999Z) and OTel (OpenTelemetry) via Prometheus.
+   - consistently use the same RFC 3339 format to display timestamps (such as "2026-07-05T11:19:24.356999Z") 
+   - Use microsecond-level timings accuracy.
+
+   - JSONL preserves the structure of your data, so it's easily ingested by tools like Datadog, ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, and Loki. And it allows for powerful filtering and analysis.
+   Use <tt>tracing_subscriber::{fmt, prelude::*, EnvFilter};</tt>
+   - Data can be stored in a more dense format in <strong>Parquet</strong> format within a columnar database such as Databricks, Snowflake, MS Flow. Parquet files are used by the datafusion crate to push down filters (the WHERE clause) so only relevant data is read. The datafusion crate is from the open-source Apache Arrow ecosystem, to provide a high-performance query engine for reading, filtering, and aggregating logs.
+   - Forward and parse logs using Promtail or Fluentd crate libraries.
 
    - Issue alert to a SOC SIEM about security-relevant events and conditions defined in the MITRE ATT&CK framework or standard compliance controls (like PCI-DSS, HIPAA, or NIST). A SIEM (Security Information and Event Management) system is designed to cut through the noise of millions of mundane log entries to find the signals that indicate a threat, a breach, or a compliance violation. Such as failed access attempt, a malicious URL, email found.
 
-   - tracing library to log structured spans that follow execution history through an app
-
+   - log structured spans that trace execution history through an app tracing library to 
+   - Add logging, locally and with ??? and OTel (OpenTelemetry) via Prometheus.
    - tracking of run times and costs over time to identify anomalies occuring
    - Error context for debugging
    - Progress logging
@@ -218,12 +428,21 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - Limit log backup handling accounts to Write-only access to prevent deletion ability.
    - Limit log restore handling accounts to Read-only access to prevent deletion ability.
 
+   - https://www.youtube.com/watch?v=1ddvwuf0YGw by Fearless
+
+* Deletion prevention
+   - Use Parquet database format which are immutable. Individual entries cannot be deleted. Instead, a new "snapshot" of the data, called a "tombstone", are a new version of all data created with deleted records omitted. This "soft delete" provides a simpler approach of adding a boolean "is_deleted" column that is filtered out in queries. So partition log files by time to make deletion and time-travel queries more efficient. Parquet handles the low-level file operations,
+
+* Secret info leakage prevention
+   - For image compression, use <a target="_blank" href="https://github.com/oxipng/oxipng">cargo install oxipng</a> reduce bandwidth usage by --strip all metadata in png images sizes. Run apngopt before running Oxipng.
+
 * Network protection
    - Incoming IP addresses are checked for its physical geography used to reject based on origin (which can be spoofed).
    - URL texts do not contain Homoglyphs for malicious rerouting [DONE]
    - DNS domain, IP, not reported to be malicious [DONE]
    - Use the EmailRep.io and AlienVault API to determine Email Reputation - whether email addresses were reported as being used to distribute malware, phishing, or spam. There's also IPQualityScore for a Threat Intelligence - where the domain is newly registered (a sign of malicious intent).
 
+   - Use a protocol faster than JSON (CBOR, Protobuf, Flat Buffers, Message Pack)
    - Phone numbers not reported to be spam-related
 
    - <a target="_blank" href="https://github.com/Naurt-Ltd/simple-address-format">Address Formatting</a>
@@ -249,8 +468,11 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
 
 * Data validation
    - Use uom (unit of measure) crate so the Rust compiler will not allow conversion errors between metric & imperial. The API's raw f64 elevation is wrapped immediately via Length::new::<meter>(result.elevation), so the "this number means meters" fact is encoded in the type, not just a variable name. So there's no way to accidentally treat one as the other, since Length doesn't expose a bare numeric value without picking a unit. [DONE]
-
+   - sqlx  is a safe ORM
    - proptest library to make property-based tests
+
+* Honeytaps
+   * <a target="_blank" href="https://infisical.com/docs/documentation/platform/honey-tokens/aws/usage">Plant a decoy among secrets so that alert is triggered</a> to the SOC when an attacker uses them. (AWS only) To avoid alert fatigue, only one email notification per honey token every 24 hours even though all trigger events are  recorded and viewable in the event log.
 
 * Streaming Support
    - <a target="_blank" href="https://crates.io/crates/serde">serde crate</a> for serialization/deserialization
@@ -265,6 +487,9 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - TSDB (Time Series DataBase) a la Prometheus
    - PostgSQL, MariaDB
    - GraphDB
+   - Parquet to hold logs
+   - Supabase managed PostgreSQL real time
+   - Airbyte to move data between many sources (ELT)
    - RAG embedding
    - Parquet format from Databrick & <a target="_blank" href="https://wilsonmar.github.io/snowflake/">Snowflake</a>
    - <a target="_blank" href="https://docs.rs/object_store/latest/object_store/">object_store crate</a> provides an tokio async API works for interacting with a trait object storage services and local files via the ObjectStore trait. The same binary and code can run in multiple clouds and local test environments, via a simple runtime configuration change. From InfluxData and subsequently donated to Apache Arrow for governance. futures = "0.3" # for iterating over list streams. bytes = "1"
@@ -279,7 +504,191 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
    - Special handling for rate limits
 
 * Payment
+   - ACH transfer via Lead.Bank API
+   - Paypal
    - Use <a target="_blank" href="https://docs.rs/crypto-pay-api">Telegram’s crypto-pay-api</a> to create crypto invoices and handle payment flows to a return payment URL. [<a target="_blank" href="https://help.send.tg/en/articles/10279948-crypto-pay-api">release</a>]
+
+* Web3 DeFi micropaymenets in Stablecoin ( USDC on Base Sepolia) 
+   - <a target="_blank" href="https://github.com/DioxusLabs/dioxus">Dioxus</a> cross-platform or web, desktop, and mobile.
+
+
+* Base axum backend web framework which serves the frontend. Or using a server-driven approach with HTMX.
+   - See https://github.com/tokio-rs/axum (built with Tokio and Hyper Tower-http) <a target="_blank" href="https://www.youtube.com/watch?v=sIkbTL5XskY">VIDEO</a>
+   - https://www.youtube.com/watch?v=usYYJSUsfjg = "Are we there yet" 
+   - <a target="_blank" href="https://github.com/coinbase/x402">coinbase</a>
+   - The x402-reqwest client library supports custom payment selectors for complex multi-chain scenarios. It automatically intercepts 402 responses. It signs the payment requirement with a wallet, includes the signature in a Payment-Signature header, and retries the request.
+
+   - the x402-axum Tower middleware layer intercepts HTTP requests to check if they include a valid payment header.
+
+   - The Server (Payment Receiver) protects its API routes using middleware (like x402-axum). When a client requests a protected resource, the server responds with a 402 status and a Payment-Required header detailing the cost. Once payment is verified, access to the resource is granted.  If no valid payment is detected, the API returns a 402 status code accompanied by a cryptographically signed payment request payload.
+
+   - <a target="_blank" href="https://crates.io/crates/x402-rs">x402-rs</a> workspace provide client and server-side libraries, with the latter offering a more modular, multi-chain support.
+
+   - <a target="_blank" href="https://crates.io/crates/x402-facilitator">The x402-facilitator</a> service handles the blockchain settlement with Base or Solana, running in Docker for easy setup. 
+
+   - The rust-x402 crate also provides a standalone facilitator binary. The rust-x402 crate supports frameworks like Actix Web and Warp. 
+   
+   - The Facilitator (Settlement Layer) is optional but a recommended service to verify client signatures and settles payments on the blockchain. This lets your API server focus on its core logic without handling complex blockchain interactions.
+
+* Scalability testing
+   - playwright-rs crate leverages Playwright from Microsoft. Cross-browser: Chromium, Firefox, WebKit. https://github.com/microsoft/playwright-rs (site: https://playwright-rust.dev/
+
+## Know the crates
+
+PROTIP: Pick a category (such as "Security") and specialize at getting to know all the crates.
+
+
+<a name="GUIOptions"></a>
+
+## GUI framework options
+   - Yew uses a virtual DOM. Gentlest learning curve.
+   - Laptos fastest, uses fine-grained reactivity like SolidJs. no tree walking.
+   - Dioxus from https://dioxuslabs.com React-like codung batches virtual DOM operations. Cross platform. Future Dioxus Deploy paid cloud platform. Hosted.
+   - Sycamore
+
+<a target="_blank" href="https://www.youtube.com/watch?v=_a9hrASXekc">VIDEO</a>: Unlike web apps using Electron, Rust Tauri or Iced or Floem,
+
+<a target="_blank" href="https://www.youtube.com/watch?v=_a9hrASXekc&t=2m6s">VIDEO</a>:
+Rust uses WGPU layer, a cross-platform abstraction for backends Vulkan, Metal, DirectX on Windows.
+That allows manipulatio of Floem and Makepath directly on the GPU.
+So Rust runs fundamentally faster bypassing the DOM and CSS engine (the most expensive part).
+
+
+### Dioxus GUI Framework
+
+   * https://dioxuslabs.com/learn/
+   * https://www.youtube.com/watch?v=WgAjWPKRVlQ&pp=ygUPcnVzdCBndWkgRGlveHVz]
+   * https://www.youtube.com/@DioxusLabs
+   * https://www.youtube.com/watch?v=icNqrEVyKsU&list=PLMnB0j0TXECg5Q8sV5RiPHtyuZtEKPJPy = Syed Hussim Dev
+
+<a target="_blank" href="https://www.youtube.com/watch?v=VQHRUQDCh_Q">VIDEO</a>:
+Why WASM? It runs in a sealed sandbox. 16 GB on browser. A WASM module is just code, not like a Docker container which contains a whole operating system like Ubuntu. So it starts in 1ms vs 300ms.
+Thus, Akamai bought Fermyon (serverless WASM). Sopify swapping containers for WASM.
+However, JavaScript still boots the app, fetches .wasm, paints every pixel.
+
+```
+kubectl apply -f wasm-workload.yaml
+```
+
+Dioxus WASM for browser
+```
+rustup target add wasm32-unknown-unknown
+   rust-std installed  
+
+cargo install dioxus-cli
+```
+
+https://www.youtube.com/shorts/fpcS7kifs1I
+```
+dx new hello-dioxus
+cd hello-dioxus
+ls   # assets
+cargo add dioxus      # core
+cargo add dioxus-web  # renderer
+```
+ .cargo/config.toml
+```
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+```
+```
+dx --help
+```
+Execute a binary from npm or jsr, like npx
+
+https://dioxuslabs.com/learn/0.4/getting_started/wasm/?phantom=usage#usage
+```bash
+dx serve --hot-reload
+dx serve --platform web --release  # For a more optimized build (crucial for smaller WASM binaries)
+```
+
+## AWS SDK for Rust
+
+Why? Rust is the lowest-cost language to use on AWS Lambda service.
+
+1. https://aws.amazon.com/sdk-for-rust/ is the marketing landing page.
+1. https://aws.amazon.com/blogs/developer/announcing-general-availability-of-the-aws-sdk-for-rust/ began with samele code for crate: aws-sdk-dynamodb = "1"
+1. https://github.com/smithy-lang/smithy-rs generated from
+1. https://docs.aws.amazon.com/code-library/latest/ug/ docs for each servicez.ai
+1. https://docs.aws.amazon.com/sdk-for-rust/latest/dg/welcome.html
+1. https://smithy.io/2.0/languages/rust/index.html defining services for generator
+1. https://docs.aws.amazon.com/sdk-for-rust/latest/dg/rust_code_examples.html points to
+1. https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1
+1. https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples for each aws svc
+1. https://docs.rs/releases/search?query=aws-sdk-
+1. https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/rustv1/run_all.sh
+
+1. https://awslabs.github.io/aws-sdk-rust/ has a link to the crate for each AWS service
+1. https://github.com/awsdocs/aws-doc-sdk-examples/blob/rust_dev_preview/rustv1/README.md
+1. https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rust_dev_preview
+   by <a target="_blank" href="https://www.linkedin.com/in/david-souther/">David Souther</a>
+
+Rust on AWS use tracing_subscriber with env_filter to print information about various information as the example runs. Because the AWS SDK for Rust and many crates used in these examples use tracing for structured logging, it is important to have an understanding of the RUST_LOG variable.
+
+RUST_LOG controls the tracing environment logger level, allowing fine-tuned control of what log messages to display. 
+   * info will show all common output for the program.
+   * {crate_name}=debug will show some useful per-action details.
+   * aws_smithy_http_tower::dispatch=trace will print the full HTTP request of every call to an AWS SDK.
+   * aws_smithy_http::middleware=trace will print the full HTTP response of every call to an AWS SDK.
+
+Environment variables:
+   * RUSTFLAGS="-D warnings"
+   * APP_ENVIRONMENT="test"
+specific to using the AWS SDK for Rust running in Amazon Elastic Container Service (Amazon ECS). See <a target="_blank" href="https://docs.aws.amazon.com/sdkref/latest/guide/feature-container-credentials.html">AWS SDKs and Tools - Container Credentials</a>
+   * AWS_CONTAINER_CREDENTIALS_FULL_URI specifies the full HTTP URL endpoint for the SDK to use when making a request for credentials.
+   * AWS_CONTAINER_CREDENTIALS_RELATIVE_URI specifies the relative HTTP URL endpoint for the SDK to use when making a request for credentials.
+   * AWS_CONTAINER_AUTHORIZATION_TOKEN specifies the Authorization header on HTTP requests.
+
+Environment variables specify how Instance Metadata Service (IMDS) provides data about your instance when using the AWS SDK for Rust running in Amazon EC2. See <a target="_blank" href="https://docs.aws.amazon.com/sdkref/latest/guide/feature-imds-credentials.html">AWS SDKs and Tools - IMDS Credentials</a>
+   * AWS_EC2_METADATA_DISABLED specifies whether or not to attempt to use IMDS to obtain credentials.
+   * AWS_EC2_METADATA_SERVICE_ENDPOINT specifies the endpoint for IMDS.
+   * AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE specifies whether to access IMDS using IPv4 or IPv6.
+
+Environment variables are specific to the AWS SDK for Rust.
+   * AWS_SDK_UA_APP_ID specifies an additional app name that will be present in the User-Agent header for every SDK request.
+
+https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html
+Docker image
+
+Tutorial: <a target="_blank" href="https://builder.aws.com/content/3CcA8u1UUlFqDRXOAovCe7wavz6/learn-aws-ai-and-cloud-with-me-40-courses-across-bedrock-sagemaker-lambda-and-mlops">AWS Builder Center</a>: With a Coursera subscription (~$400/year), earn a career certificate you can add to your LinkedIn profile, resume, or CV. Share it on social media and in your performance review.
+<a target="_blank" href="https://www.coursera.org/specializations/ai-tooling">
+AI Tooling Specialization</a>: Build and deploy production AI systems using Rust on AWS.
+Master 20 courses with projects spanning foundation models, prompt engineering, security
+in 75 hours of videos:
+
+1. 3 hr LLM Security and Vulnerabilities 
+   * 1 hr LLM Foundations and AI Application Security
+   * 1 hr LLM Security Vulnerabilities and Defense
+   * 1 hr Capstone Project
+1. 3 hr CLI Automation with <strong>Amazon Q and CloudShell</strong> (Kiro)
+1. 3 hr AI-Powered Analytics and Performance Engineering
+1. 4 hr Deterministic LLM programming 
+1. 3 hr Building deterministic MCP Agents
+1. 3 hr Enterprise AIOps with Amazon Q Business
+1. 3 hr Multi-modal AI 
+1. 3 hr Prompt Architecture and NLP on Amazon Bedrock
+1. 5 hr Privacy-Conscious Development with <strong>AI Assistants</strong>
+1. 4 hr Agentic AI: Actor Models and Subagent Architecture
+1. 4 hr Build a Production SaaS Application with AI
+1. 3 hr AI Tooling Capstone: Serverless Multi-Model Systems
+1. 4 hr AI Debugging and Test-Driven fixes
+1. 5 hr AI Orchestration: From local models to cloud
+1. 4 hr AI Security and Governance on AWS
+1. 5 hr AWS Generative AI and Foundation Models
+1. 4 hr AWS Intelligent Applications with Amazon Bedrock
+1. 4 hr AI Code Review Automation with GitHub Actions
+1. 4 hr Conversational Bot Architecture with Rust and Deno
+1. 3 hr AI-Powered Data Pipelines with <strong>Deno</strong>
+   * 1 hr Deno Foundations and AI-Driven Development
+   * 1 hr Data Engineering and Task Systems
+   * 1 hr Production Deno Tooling
+
+https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale 
+The Duke University Building Cloud Computing Solutions at Scale Specialization  is a four-course foundation covering serverless, containers, data engineering, and MLOps on AWS:
 
 
 ### Emailrep.io Enum
@@ -307,6 +716,24 @@ By "robust enterprise-worthy <a target="_blank" href="https://wilsonmar.github.i
 
 * RoboKiller Lookup: RoboKiller is a major spam-blocking app, but they have a free web lookup tool where you can type in a number to see if it's in their scam database.
 
+## CI/CD
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Sx8I4TKRGq8">VIDEO</a>: "Production CI/CD in Rust | GitHub Actions, Docker, Staging & Rollbacks" by @Fearless in Rust <a target="_blank" href="https://vinecksie.github.io/sealed-in-rust/">BOOK: Cyber</a> <a target="_blank" href="https://www.youtube.com/watch?v=wA-p_c19ZFw&list=PLt6KjhjHr5DCaRkfM8dslYB2IIMRuPyGw">video Playlist</a> (<a target="_blank" href="https://www.linkedin.com/in/vincent-eckert-sierota-926828bb/">Vicent</a> )
+
+<a target="_blank" href="https://www.youtube.com/watch?v=_gMzg77Qjm0&list=PLKzy2v2SJ-e7j5zFg7TTMAL240O-Yb5ti">VIDEO</a>: Alternatives:
+
+A. Local Docker with PostgreSQL database
+
+B. Deploy mobile apps via GitHub workflow to Digital Ocean cloud
+
+https://www.youtube.com/watch?v=lpSlbeJyr6M
+learn Rust as JavaScript
+
+https://www.youtube.com/watch?v=nGeWI18e3Y0
+Clean Observability in Rust: OpenTelemetry + Jaeger
+Fearless in Rust
+
+
 
 ### Secrets scanning
 
@@ -332,9 +759,14 @@ We look for secrets leaking at EACH step in the development process:
 
    Kingfisher: An open-source secret scanner built in Rust by MongoDB. It features live secret validation and ships with over 950 built-in rules to detect and triage leaked credentials.
 
-1. In the background, use advanced techniques that take longer:
+   For scanning in CI/CD pipelines, use a pre-built GitHub Action 
+   guibranco/github-infisical-secrets-check-action
 
-   argus: A high-performance security scanner that uses Shannon entropy analysis and multi-pattern matching to identify both known and unknown credentials.
+1. Use batch scanner on whole repos <a target="_blank" href="https://infisical.com/docs/documentation/platform/secret-scanning/overview">which may contain secrets already committed</a>
+
+   argus: A high-performance batch security scanner that uses Shannon entropy analysis and multi-pattern matching to identify both known and unknown credentials.
+
+   <a target="_blank" href="https://app.infisical.com/">infisical</a> to "continuously" scan repositories, builds, and runtime artifacts for leaked secrets and misconfigurations.
 
 * secretsniff: A source-code secret scanner that finds AWS keys, GitHub tokens, JWTs, and high-entropy strings. It has a Rust core and a Python frontend.
 
@@ -421,7 +853,7 @@ The workaround is the Arena Pattern which has a 36% performance penalty to maint
    - Searching
    - Signal analysis
 
-
+QUESTION: How to call functions in the Algorithms repo?
 
 
 
@@ -439,6 +871,24 @@ The workaround is the Arena Pattern which has a 36% performance penalty to maint
    ```bash
    brew upgrade rustup-init
    ```
+   That's instead of<br />
+   <strike>curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh</strike>
+   The response:
+   <pre>
+   Warning: Formula rustup-init was renamed to rustup.
+   Warning: rustup 1.29.0_2 already installed
+   </pre>
+
+1. Check what version:
+   ```bash
+   rustup --version
+   ```
+   <pre>
+   rustup 1.29.0 (2026-03-05)
+   info: This is the version for the rustup toolchain manager, not the rustc compiler.
+   info: the currently active `rustc` version is `rustc 1.96.0 (ac68faa20 2026-05-25)`
+   </pre>
+
 1. Read <a target="_blank" href="https://rustup.rs/">rustup.rs</a>
 
    You don't need to rememeber that "toml" means (Tom's Obvious Minimal Language).
@@ -447,6 +897,8 @@ The workaround is the Arena Pattern which has a 36% performance penalty to maint
 
    The edition="2024" is described at
    https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
+
+   https://www.youtube.com/watch?v=o8aLar7eTFQ&t=3m32s
 
 1. To find the version history of a crate such as "backup"
    ```bash
@@ -474,6 +926,8 @@ The workaround is the Arena Pattern which has a 36% performance penalty to maint
    For code completions, documentation on hover, etc.
 
    VS Code is the most widely used editor for Rust. 
+   * <a target="_blank" href="https://www.youtube.com/watch?v=ZhedgZtd8gw">LGR</a>
+   <br /><br />
 
 1. VSCode users: install <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer">rust-analyzer</a> (not "rust-lang.rust"). https://code.visualstudio.com/docs/languages/rust
 
@@ -540,13 +994,70 @@ The workaround is the Arena Pattern which has a 36% performance penalty to maint
    At that folder, read the <a href="https://github.com/bomonike/rustlang-samples/blob/main/src/useful-rust/README.md">README.md for running useful-rust</a>.
 
    REMEMBER: Unlike Python and other languages, your working folder with Rust is a folder up from the <tt>main.rs</tt> file which is what all Rust code files are named.
+   
+   <a id="PostgreSQL"></a>
+
+   ## PostgreSQL database local
+
+   PostgreSQL (pronounced “post-gres”) is the most popular SQL database, especially on local.
+
+1. Install
+   ```bash
+   brew install postgresql
+   ```
+   Install creates user "postgres" with permission to create and delete all databases..
+1. DBeaver (pronounced “dee-beaver”) 
+   ```bash
+   brew install --cask dbeaver-community
+   ```
+1. Use a tool for connecting to PostgreSQL from the terminal to manage databases or send queries.
+   ```bash
+   psql -U postgres
+   ````
+   Successful response means seeing:
+   <pre>
+   psql (15.0)
+   Type "help" for help.
+   postgres=# _
+   </pre>
+1. In KeepassXC create an account "axum" and generate a password.
+1. Create a new user axum for our backend service. Use the following commands to create the new user axum in the database and change the password to ‘1234’:
+   ```
+   CREATE USER axum;
+   CREATE ROLE
+   ALTER USER axum PASSWORD '1234';
+   ALTER ROLE
+1. Create database:
+   ```
+   postgres=# CREATE USER axum;
+   CREATE ROLE
+   postgres=# ALTER USER axum PASSWORD '1234';
+   ALTER ROLE
+   ```
+1. Then change the database owner to the axum user. Now you can create tables and modify data when logged in as the axum user.
+   ```
+   ALTER DATABASE axum OWNER TO axum;
+   ```
+1. Log in as the axum user. Previously, you saw postgres=# on screen, but now you see axum=#. This shows which user you’re currently logged in as.
+   <pre>
+   $ psql -U axum axum
+   psql (15.0)
+   Type "help" for help.
+   axum=#
+   </pre>
+1. Use SeaORM
+
+1. Read:
+   https://www.postgresql.org/download/
 
 
-   ### Configure
+   ### Configure Rust
 
 1. Edit the <tt>Cargo.toml</tt> file for its sample settings.
 
    PROTIP: Many enterprise teams host sample files like in this repo to provide the team a consistent starting point, which reduces endless discussions when new people join the team.
+
+1. The location of <tt>Cargo.toml</tt> is where <tt>cargo</tt> commands should be run. So to resolve the path relative to the compiled binary's known location ( current working directory ) at compile time using CARGO_MANIFEST_DIR.
 
 1. To update your dependencies to the latest allowed versions, run:
    ```bash
@@ -557,7 +1068,13 @@ The workaround is the Arena Pattern which has a 36% performance penalty to maint
    cargo clean
    cargo build
    ```
+1. PROTIP: To have Cargo capture timeings to an HTML report at target/cargo-timings/cargo-timing.html. See https://docs.rs/crate/cargo/latest/source/src/doc/src/reference/timings.md
+   ```bash
+   cargo build --timings
+   ```
+   The "Unit Graph" visualizes the duration of each compiler invocation and the dependency chain, to identify bottlenecks.
 
+   The "Concurrency Graph" shows how many units are waiting, active, or inactive over time, for insight into parallelization efficiency.
 
    ### Build (Compile) and run
 
@@ -828,5 +1345,8 @@ Leave the Username and Password fields blank (or put a dummy username like API_U
 1. CRITICAL: Check the box under the Protect column (the little shield icon). This ensures the value is hidden behind asterisks and cannot be read by casual shoulder-surfers. It also prevents the value from being stored in cleartext in certain plugin caches.
 
 
+https://www.youtube.com/watch?v=Cjtokv4cG6I&t=18s
+
+    
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
