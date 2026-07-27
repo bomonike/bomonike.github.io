@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-07-27"
-lastchange: "v005 data sources @openobserve.md"
+lastchange: "v006 fix: data sources @openobserve.md"
 url: https://bomonike.github.io/openobserve
 file: "openobserve"
 title: "Open Observability"
@@ -45,7 +45,7 @@ OpenObserve cost $255/mo for 250 GB of logs, 250 GB metrics, 10 GB traces with 3
    * Tempo — bottlenecks on trace storage and block compaction
 
 1. These potential bottlenecks are addressed by the new architecture of OpenObserve's <strong>Unified Agent Ingestion</strong>.
-
+   <a name="Arch"></a>
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785149990/o2-arch-2258x1372_pqn05k.png"><img alt="o2-arch-2258x1372.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785149990/o2-arch-2258x1372_pqn05k.png" /></a>
 
 1. Instead of a separate Grafana process to manage, OpenObserve provides its <strong>own built-in UI</strong>, all in a <strong>Kubernetes cluster</strong> created by a single <strong>Helm chart</strong>.
@@ -79,15 +79,17 @@ OpenObserve is open-sourced with a AGPL 3.0 license for local install from:
 
 ## Quickstart demo
 
-There are two ways to obtain a demo enviornment installer with credentials baked in, and install locally on a Mac:
+There are three ways to obtain a demo environment installer with credentials baked in, and install locally on a Mac:
 
-A. Docker demo image download<br />
-<a href="#curldemo">B. curl and run</a>
+<a href="#DockerDemo">A. Docker demo image download</a><br />
+<a href="#curldemo">B. curl and run</a><br />
 <a href="#clouddemo">C. cloud run</a>
 
-If you have the demo enviornment already running, <a href="#RunDemo">go to Run Demo</a>
+If you have the demo environment already running, <a href="#RunDemo">go to Run Demo</a>.
 
 <hr />
+
+<a id="DockerDemo"></a>
 
 ### A. Docker demo image download & install
 
@@ -216,6 +218,9 @@ OpenObserve holds its users in several geographic ares within two cloud provider
 
 When you're ready to use your own account:
 
+1. Look at the documentation website:<br />
+   <a target="_blank" href="https://openobserve.ai/docs/">https://openobserve.ai/docs</a>
+
 At the OpenObserve dashboard:
 
 1. Click the user icon at the upper-right to "Manage Theme". 
@@ -255,9 +260,12 @@ At the OpenObserve dashboard:
 1. Configure Traces with OpenTelemetry spans
 1. Configure Real User Monitoring (RUM)
 
-   ### Data 
+   ### Data Sources
 
    <img alt="o2-data-menu-1051x91.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785128358/o2-data-menu-1051x91_whwkyu.png" />
+
+   These were identified in the <a href="#Arch">Architecture diagram above</a> and documentation at<br />
+   <a target="_blank" href="https://openobserve.ai/docs/ingestion/">https://openobserve.ai/docs/ingestion</a>
 
    ### Specific O2 Features
 
