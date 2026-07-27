@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-26"
-lastchange: "v002 arch diagrams @openobserve.md"
+date: "2026-07-27"
+lastchange: "v005 data sources @openobserve.md"
 url: https://bomonike.github.io/openobserve
 file: "openobserve"
 title: "Open Observability"
@@ -20,8 +20,8 @@ created: "2026-07-26"
 <a target="_blank" href="https://openobserve.ai">openobserve.ai</a> (O2) 
 is an "Open source observability platform for logs, metrics, traces, frontend monitoring, pipelines and LLM observability. A sophisticated, simple and highly performant alternative to Datadog, Splunk, and Elasticsearch with 140x lower storage costs and single binary deployment." Vs. LGTM, O2 has 1 binary or 1 Helm chart and a Single unified store (local disk, S3, GCS, Azure Blob) Uses PromQL (for metrics). "petabyte scale"
 
-<a target="_blank" href="https://www.linkedin.com/in/isaacinmn/">Isaac Johnson</a> at Abbott in St. Paul 
-presented this showing large deployment costs vs. competitors GroundCover, DataDog, New Relic:
+<a target="_blank" href="https://www.linkedin.com/in/isaacinmn/">Isaac Johnson</a> 
+presented his large deployment costs vs. competitors GroundCover, DataDog, New Relic:
 <a target="_blank" href="https://freshbrewed.science/2026/07/16/openobs.html"><br />
 <img alt="2026-07-openobserve-39.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785128397/2026-07-openobserve-39_sv7rme.png" /></a>
 OpenObserve cost $255/mo for 250 GB of logs, 250 GB metrics, 10 GB traces with 30 hosts and 100 users, 
@@ -32,6 +32,24 @@ OpenObserve cost $255/mo for 250 GB of logs, 250 GB metrics, 10 GB traces with 3
 
    Query is $0.01 per GB with 
    30-Day Non-metric (Logs, Traces) retention and 15-Month Metrics Retention.
+
+## Architecture
+
+1. What does OpenObseve (O2) provide over a traditional observability stack based on Prometheus/Grafana?
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785150905/o2-arch-before-1890x1356_tas5om.png"><img alt="o2-arch-before-1890x1356.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785150905/o2-arch-before-1890x1356_tas5om.png" /></a>
+
+1. Instead of a separate <strong>Query Language</strong> of LogQL for Loki chunk storage and TracQL for trace storage, This  design can run into bottlenecks:
+   * Loki — bottlenecks on ingestion streams and chunk storage
+   * Mimir — bottlenecks on series cardinality and query concurrency
+   * Tempo — bottlenecks on trace storage and block compaction
+
+1. These potential bottlenecks are addressed by the new architecture of OpenObserve's <strong>Unified Agent Ingestion</strong>.
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785149990/o2-arch-2258x1372_pqn05k.png"><img alt="o2-arch-2258x1372.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785149990/o2-arch-2258x1372_pqn05k.png" /></a>
+
+1. Instead of a separate Grafana process to manage, OpenObserve provides its <strong>own built-in UI</strong>, all in a <strong>Kubernetes cluster</strong> created by a single <strong>Helm chart</strong>.
+1. Within the cluster, OpenObserve is able to lower storage costs because it uses a <strong>Parquet-format Apache Arrow columnar database</strong>
 
 
 ## The company 
@@ -52,49 +70,116 @@ OpenObserve is open-sourced with a AGPL 3.0 license for local install from:
    * https://github.com/openobserve/openobserve
    * https://github.com/openobserve (organization) has 156 repos that include:
 
-    * https://github.com/openobserve/playwright-crx
-    * https://github.com/openobserve/sdr_patterns for Sensitive Data Redaction patterns
-    * https://github.com/openobserve/openobserve-helm-chart
-    * https://github.com/openobserve/openobserve-sdk-ios
-    * https://migration.openobserve.ai/
-    
+   * https://github.com/openobserve/playwright-crx
+   * https://github.com/openobserve/sdr_patterns for Sensitive Data Redaction patterns
+   * https://github.com/openobserve/openobserve-helm-chart
+   * https://github.com/openobserve/openobserve-sdk-ios
+   * https://migration.openobserve.ai/
 
-## Local Docker install & run
 
+## Quickstart demo
+
+There are two ways to obtain a demo enviornment installer with credentials baked in, and install locally on a Mac:
+
+A. Docker demo image download<br />
+<a href="#curldemo">B. curl and run</a>
+<a href="#clouddemo">C. cloud run</a>
+
+If you have the demo enviornment already running, <a href="#RunDemo">go to Run Demo</a>
+
+<hr />
+
+### A. Docker demo image download & install
+
+1. Install Docker Desktop, if you don't already have it.
 1. Start Docker Desktop and configure for Kubernetes.
-1. Download the Docker image is 309MB from:
+1. Download the Docker image:
    ```sh
    docker pull public.ecr.aws/zinclabs/openobserve:v0.91.2
    ```
-1. To run using the default email and password:
+1. Optionally, get the disk space used by the image:
+   ```sh
+   docker image ls | grep openobserve
+   ```
+   Observe the "309MB" in the response (at time of writing):
+   <pre>
+   public.ecr.aws/zinclabs/openobserve:v0.91.2        a39535f64535        309MB             0B   U
+   </pre>
+
+1. To run using default email, password, and configurations for a demo baked into the Docker image:
     ```sh
     docker run -v $PWD/data:/data -e ZO_DATA_DIR="/data" -p 5080:5080 -e ZO_ROOT_USER_EMAIL="root@example.com" -e ZO_ROOT_USER_PASSWORD="Complexpass#123" public.ecr.aws/zinclabs/openobserve:v0.91.2
     20
     ```
-1. Switch to an intenet browser to URL: 
-   <a target="_blank" href="http://localhost:5080/web/login">http://localhost:5080/web/login</a>
-1. Login with the default User Email and Password from above.
+1. <a href="#RunLocalDemo">Go to Run Local Demo</a>.
 
 
-## Architecture
+<a id="curldemo"></a>
 
-1. What does OpenObseve (O2) provide over a traditional observability stack based on Prometheus/Grafana?
+### B. curl and run demo locally
 
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785129967/o2-arch-before_qa77jh.png"><img alt="o2-arch-before.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785129967/o2-arch-before_qa77jh.png" /></a>
+1. Create and navigate to a folder to receive the download, such as "o2".
+1. Switch to an internet browser at:
+   <a target="_blank" href="https://openobserve.ai/downloads/">https://openobserve.ai/downloads</a>
 
-1. Instead of a separate <strong>Query Language</strong> of LogQL for Loki chunk storage and TracQL for trace storage, OpenObserve uses a <strong>Unified Agent Ingestion</strong>. That eliminates bottlenecks:
-   * Loki — bottlenecks on ingestion streams and chunk storage
-   * Mimir — bottlenecks on series cardinality and query concurrency
-   * Tempo — bottlenecks on trace storage and block compaction
+1. Select Edition: "Enterprise" and Deployment Mode: "Single Node".
+1. Click operating system "MacOS".
+1. If you want to confirm valid download, double-click the SHA256 UUID to copy to your Clipboard and switch to a CLI Terminal to save it in a file:
+   ```sh
+   export SHA1=$(pbpaste)
+   ```
+1. Click the copy icon for the curl command to capture the Quick Install Script into your Clipboard.
 
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785131628/o2-arch-1627x965_q41lud.png"><img alt="o2-arch-1627x965.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785131628/o2-arch-1627x965_q41lud.png" /></a>
+   REMEMBER: There is not "brew install openobserve" available instead.
 
-1. Instead of a separate Grafana process to manage, OpenObserve provides its <strong>own built-in UI</strong>, all in a <strong>Kubernetes cluster</strong> created by a single <strong>Helm chart</strong>.
-1. Within the cluster, OpenObserve is able to lower storage costs because it uses a <strong>Parquet-format Apache Arrow columnar database</strong>
+   ```sh
+   curl -L https://raw.githubusercontent.com/openobserve/openobserve/main/downloadO2.sh | sh -s o2-enterprise v0.91.3
+   ```
+   Observe that the latest version available (v0.91.3 at the time of this writing) has been automatically updated from https://github.com/openobserve/openobserve/releases/
+   <pre>
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                      Dload  Upload   Total   Spent    Left  Speed
+    100  1445  100  1445    0     0   5023      0 --:--:-- --:--:-- --:--:--  5034
+    Detecting platform...
+    Platform: darwin
+    Detecting architecture...
+    Architecture: arm64
+    Downloading: https://downloads.openobserve.ai/releases/o2-enterprise/v0.91.3/openobserve-ee-v0.91.3-darwin-arm64.tar.gz
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                      Dload  Upload   Total   Spent    Left  Speed
+    100  124M  100  124M    0     0  10.8M      0  0:00:11  0:00:11 --:--:-- 11.4M
+    Extracting...
+    ✅ Download and extraction complete!
+    </pre>
 
-## Select geography & cloud
+1. Optionally, generate a SHA256 for the downloaded file and compare versus the previous SHA saved to variable SHA1 :
+   ```sh
+   export SHA2=$(shasum -a 256 openobserve | awk '{print $1}')
+   diff <(echo "$SHA1") <(echo "$SHA2")
+   ```
 
-1. OpenObserve holds its users in several geographic ares within two cloud providers (AWS and Azure). So open a cloud account in AWS and/or Azure using the email you will use with OpenObserve.
+1. Run openobserve for demo purposes using default credentials within the file:
+   ```sh
+   export ZO_ROOT_USER_EMAIL=root@example.com
+   export ZO_ROOT_USER_PASSWORD=Complexpass#123
+   ./openobserve
+   ```
+   SECURITY PROTIP: The above exposes secrets. Instead, during regular/production usage, to protect your password, create a shell file to run OpenObserver after looking up  passwords and other secrets from a secrets vault and peform the export.
+
+1. Click "Allow" to the pop-up message "Do you want the application "openobserve" to accept incoming network connections? Clicking Deny may limit the application’s behavior. This setting can be changed in the Firewall pane of Network Settings."
+
+1. <a href="#RunLocalDemo">Go to Run Local Demo</a>.
+
+
+
+<a id="clouddemo"></a>
+
+### C. cloud run your own account
+
+OpenObserve holds its users in several geographic ares within two cloud providers (AWS and Azure). So open a cloud account in AWS and/or Azure using the email you will use with OpenObserve.
+
+1. Switch to an internet browser at:
+   <a target="_blank" href="https://openobserve.ai/downloads/">https://openobserve.ai/downloads</a>
 
 1. Click "Log In" to select a geographic area within a cloud vendor (AWS or Azure).
    <img width="200" alt="o2-geo-clouds.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785124209/o2-geo-clouds_fqc0bh.png" />
@@ -106,21 +191,47 @@ OpenObserve is open-sourced with a AGPL 3.0 license for local install from:
 
    Observe that no credit card is requested before a subscribing.
 
-   ## Configure Dashboard
+1. <a href="#RunLocalDemo">Go to Run Local Demo</a>.
 
-   At the OpenObserve dashboard:
+
+<a id="RunLocalDemo"></a>
+
+## Run Local Demo
+
+1. Switch to an intenet browser to URL: 
+   <a target="_blank" href="http://localhost:5080/web/login">http://localhost:5080/web/login</a>
+
+1. Double-click the default User Email and Password baked into the installer and paste to Login:
+   * User Email: root@example.com
+   * Password: Complexpass#123
+
+1. Follow instructions illustrated at<br />
+   <a target="_blank" href="https://freshbrewed.science/2026/07/16/openobs.html#windows-logs">here<br />
+   https://freshbrewed.science/2026/07/16/openobs.html#windows-logs</a>
+
+
+<a id="configacct"></a>
+
+## Configure Dashboard
+
+When you're ready to use your own account:
+
+At the OpenObserve dashboard:
 
 1. Click the user icon at the upper-right to "Manage Theme". 
 1. Select "Dark", then "O2 Signature" or your Custom Color. Click "X" to exit.
+
+   ### Menu
+
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785125785/o2-menu-data-321x761_yk4ch5.png"><img align="right" width="321" src="o2-menu-data-321x761.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785125785/o2-menu-data-321x761_yk4ch5.png" /></a>
+
+1. Menu items "AI", "Incidents", and "Billing" may not appear in your menu.
 
    ### Organization, Users
 
 1. Click the "default" pull down at the top-right. Observe that the URL of the page is the "org_identitifier=" string.
 1. Bookmark the URL with the org_identifier.
 
-   ### Menu
-
-   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785125785/o2-menu-data-321x761_yk4ch5.png"><img align="right" width="321" src="o2-menu-data-321x761.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785125785/o2-menu-data-321x761_yk4ch5.png" /></a>
 1. Click "IAM" at the bottom of the left menu.
 1. Click "Organizations" to optionally click the pencil icon to change from "Default" to your preferred name.
 1. Optionally, click "New organization".
@@ -144,59 +255,25 @@ OpenObserve is open-sourced with a AGPL 3.0 license for local install from:
 1. Configure Traces with OpenTelemetry spans
 1. Configure Real User Monitoring (RUM)
 
-   ### Features
+   ### Data 
+
+   <img alt="o2-data-menu-1051x91.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785128358/o2-data-menu-1051x91_whwkyu.png" />
+
+   ### Specific O2 Features
 
 1. Click "OpenObserve Features" for this pop-up:
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785124347/o2-features-1399x705_doafqw.png"><img src="o2-features-1399x705.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785124347/o2-features-1399x705_doafqw.png" /></a>
 
-
-OpenObserver provides access to 30+ prebuilt dashboards to kickoff your observability strategy. 
-???
-
-
-## Local install
-
-1. At https://openobserve.ai/downloads/ select Edition: "Enterprise" and Deployment Mode: "Single Node".
-1. Click operating system "MacOS".
-1. If you want to confirm valid download, double-click the SHA256 UUID and switch to your utility and paste.
-1. Click the copy icon for the curl command.
-
-   REMEMBER: There is not "brew install openobserve".
-
-1. SECURITY PROTIP: To protect your password, create a shell file to run OpenObserver after looking up  passwords and other secrets from a secrets vault and peform the export instead of exposing commands such as:
-   ```
-   export ZO_ROOT_USER_EMAIL=root@example.com
-   export ZO_ROOT_USER_PASSWORD=Complexpass#123
-   ```
-1. The shell would execute:
-   ```sh
-   ./openobserve
-   ```
-
-1. Get a license key for your business email: ???
-
-1. View one analyst's cost comparison of OpenObserve vs. New Relic, DataDog, GroundCover at
-   https://freshbrewed.science/2026/07/16/openobs.html
-   shows OpenObserve costing $10/mo for 10 GB/mo of logs and 5 GB/mo for metrics with 8 hosts and 7 users.
-
-   
-
-
-<img alt="o2-data-menu-1051x91.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785128358/o2-data-menu-1051x91_whwkyu.png" />
+   OpenObserver provides access to 30+ prebuilt dashboards to kickoff your observability strategy. 
 
 
 ## Tutorials
 
-
-https://www.udemy.com/course/data-analysis-with-polars-and-python/
-$12.99 at Udemy for 22 hours on-demand video course "Data Analysis with Polars and Python"
-by Boris Paskhaver
-
-https://github.com/paskhaver/data-analysis-with-polars-and-python
+TODO:
 
 ## References
 
-https://freshbrewed.science/2026/07/16/openobs.html
+TODO:
 
 
 <hr />
