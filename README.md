@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-12"
-lastchange: "v226 feat: k6 @README.md"
+date: "2026-07-27"
+lastchange: "v227 feat: openobserve.md @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -150,6 +150,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/odoo">odoo</a>
 1. <a target="_blank" href="https://bomonike.github.io/oee">oee</a> (Overall Equipment Effectiveness)
 1. <a target="_blank" href="https://bomonike.github.io/openmct">openmct</a>
+1. <a target="_blank" href="https://bomonike.github.io/openobserve">openobserve</a>
 1. <a target="_blank" href="https://bomonike.github.io/otel">otel</a> (OpenTelemetry)
 
    <a name="P"></a>
