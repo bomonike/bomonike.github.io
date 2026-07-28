@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-26"
-lastchange: "v036 workspace @rustops.md"
+date: "2026-07-27"
+lastchange: "v037 rtree @rustops.md"
 url: https://bomonike.github.io/rustops
 file: "rustops"
 title: "rustops (Rust Operations)"
@@ -111,12 +111,118 @@ obtainable from shared registry are downloaded.
 See more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 
-## My Workspace
+   ## Playground
+    
+   https://github.com/diegopacheco/rust-playground
+   rust-playground is a set of rust useful code and poc.
+
+
+   <a name="IDE"></a>
+
+   ## IDE Install
+
+   ### VSCode & Rust Analyzer
+   
+   <a target="_blank" href="https://www.linkedin.com/in/doug-milford-065a292/">Doug Milford</a> 
+   (lambdavalley.com) uses Visual Studio Code (VSCode) IDE on YouTube:
+
+   There is Rust Rover and Freemium Fleet from JetBrains. 
+   <a target="_blank" href="https://www.youtube.com/watch?v=sZaAP4AS0hc">VIDEO</a> 
+   VSCode extensions to get comparable features:
+
+   * rust-analyzer
+   * CodeLLDB
+   * Even Better TOML
+   * Crates
+   <br /><br />   
+
+   VisualRust IDE?
+
+
+## Monorepo
+
+The Rust compiler, rustc, operates on one crate at a time. So compiling a large abstract syntax tree creates a large and lenthy sequential bottleneck. But multiple crates can be compiled in parallel on different CPU cores.
+
+DEFINITION: A "monorepo" contains several separate crates in the same Git repo, within a single Cargo.lock file and Cargo workspace map defined in a Cargo.toml file and thus a single external dependency.
+Each crate binary executable has its own version number.
+
+Link-Time Optimization???
+
+The most common and effective structure for a production Rust workspace separates the codebase into three distinct categories:
+   1. library crates
+   2. executable binary crates, and 
+   3. shared utility crates.
+<pre>
+workspace_root/
+├── Cargo.toml
+├── Cargo.lock                    # the lockfile freezes your dependencies in time
+├── apps/                         # contains main.rs file as executable entry points
+├── crates/                       # target library creates (do not contain main.rs)
+│   ├── domain_billing/           
+│   ├── domain_inventory/         
+│   ├── domain_shipping/          
+│   ├── infra_postgres/           # contains concreate implementations to persist data
+│   └── infra_redis/              # contains 
+
+├── utils/                        # helper crates that do not contain business logic.
+│   ├── secure_strings/
+│   └── telemetry_helpers/
+├── public_api_gateway/
+├── public_api_server/
+└── background_job_processor/
+</pre>
+
+Under crates/, folder names have a prefix to specify what <strong>architectural layer</strong> each crate belongs in, to reduces cognitive friction while navigating the codebase:
+   * "domanin_" crates contain pure business rules
+   * "infra_"   crates contain external adapters
+   * "util_"    crates contain proovide utility functions
+
+Under each domain_ crate, modules (.rs files) are <strong>business entities</strong>, such as:
+```
+domain_inventory/src/
+├── lib.rs
+├── models/
+│   ├── mod.rs
+│   ├── product.rs
+│   └── location.rs
+├── events/
+│   ├── mod.rs
+│   └── stock_adjusted.rs
+└── errors.rs
+```
+Under each infra_, modules (.rs files) define external integrations or technical implementation details:
+```
+infra_postgres/src/
+├── lib.rs
+├── connection.rs
+├── queries/
+│   ├── mod.rs
+│   ├── insert_product.rs
+│   └── fetch_location.rs
+└── mappings.rs
+```
+
+
+## main.rs module entry point
+
+main.rs files within the apps/ directory define executable entry points. 
+* parse command-line arguments
+* initialize the logging system
+* read environment variables
+* instantiate database connections from infrastructure crates
+* pass connections into the domain logic.
+
+Such logic in main.rs should be thin to keep core logic isolated in library crates where it can be easily subjected to unit and integration testing.
+
+Among helper crates in the utils/ directory, have small, focused crates rather than a single "lib.rs" dumping ground for miscellaneous shared functionality: timezone parsers, cryptographic hashers, string formatting macros, customized error types, etc. 
+
+
+### My Workspace root
 
    ```
-   my-workspace/
-    ├── Cargo.toml        # Workspace root config
-    ├── Cargo.lock        # Created after first build
+   my-workspace root/
+    ├── Cargo.toml        # Central Workspace root config
+    ├── Cargo.lock        # File created after first cargo build/run
     ├── my_app/
     │   ├── Cargo.toml
     │   └── src/
@@ -131,6 +237,56 @@ See more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/ca
    ```
    So they share a single Cargo.lock external versioning file. A <tt>[workspace]</tt> section in the Cargo.toml file defines member subdirectories belonging to the workspace.
    
+### Central Workspace Cargo.toml
+
+The root workspace Cargo.toml defines what member custom code are built into a single crate for distribution.
+```
+[workspace]
+members = [
+"crates/*",
+"utils/*",
+"apps/*"
+]
+```
+The root workspace Cargo.toml is where a <strong>centralized</strong> set of specific <strong>external crate version</strong> defined for use within all member crates:
+```
+[workspace.dependencies]
+tokio = { version = "1.32", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+
+// Centralize internal path dependencies:
+domain_billing = { path = "crates/domain_billing" }
+```
+All members need to follow the same lint rules:
+```
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "warn"
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+expect_used = "warn"
+clone_on_ref_ptr = "deny"
+```
+
+### Child create Cargo.toml
+
+Individual child crates reference versions in the workspace root Cargo.toml instead of specifying versions. Inside the child crate Cargo.toml files:
+```
+[package]
+name = "secure_strings"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+tokio = { workspace = true }
+serde = { workspace = true }
+domain_billing = { workspace = true }
+```
+
+## Cargo new
+
    ```
    cargo new my_app --bin   # Creates a binary crate
    cargo new my_lib --lib   # Creates a library crate
@@ -156,10 +312,49 @@ See more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/ca
 Use  when your project is a workspace, a CLI tool with multiple sub-commands, or any project where you have multiple executable files and need to run a specific one.
 
 
-
+???
 * <a target="_blank" href="https://www.youtube.com/watch?v=70_9IIsQfjs">Cargo Workspaces</a>
 
-https://rust-analyser.github.io
+
+## Local Vendoring
+
+"Vendoring" is the process of downloading and storing external libraries so that builds can occur locally, offline. This insulates builds from being affected by network or vendor infra outages and bad vendor version controls. Having previous versions of vendor libraries provides a way to conduct forensics.
+
+A modern Rust web service can easily pull in two hundred transient dependencies. Vendoring these crates means committing tens of thousands of files and megabytes of third-party source code into your Git history. This can slow down repository cloning times and inflate the size of your storage mechanisms.
+
+1. Define inside <tt>.cargo/config.toml</tt>
+   ```
+   [source.crates-io]
+   replace-with = "vendored-sources"
+
+   [source.vendored-sources]
+   directory = "vendor"
+   ```
+1. Navigate to your repo's <tt>Cargo.lockfile</tt>.
+   
+   CAUTION: Every dependency specified in the lockfile will be downloaded, and take up disk space. Do you have enough disk space?
+
+   QUESTION: Transitive dependencies downloaded?
+
+1. Download every crate specified in the lockfile and place them into the "vendored-sources" directory path specified within <tt>.cargo/config.toml</tt>
+   ```sh
+   cargo vendor
+   ```
+
+
+## Evaluating crates
+
+1. Look at the frequency of recent commits. A repository with no activity for two years is a major risk, even if the code currently works perfectly.
+
+1. Issues. If bug reports remain unaddressed, the project lacks the necessary maintainance bandwidth.
+
+1. When you import a 0.x crate, future updates will likely require your manual refactoring of your code.
+
+1. Many production teams utilize automated tools to monitor the registry and generate pull requests when new versions of dependencies are released. These pull requests trigger the automated test suite. If the tests pass, the team can review the changelog and merge the update confidently.
+
+1. Does the library force you to allocate memory on the heap for every operation?
+
+1. Does it spawn its own background threads (which will destroy your system invariants).
 
 
 ## Table of Contents
@@ -201,15 +396,15 @@ ls /Users/johndoe/github-wilsonmar/rustlang-samples/src
 
 
 ### Scan for sensitive data:
-Type	Count	Severity	Description
-* Sensitive file extensions	2,053	Medium	.pem, .key, .p12 files
-* Connection strings	1,146	High	Credentials in URLs
-* Backup files	412	Low	Editor or config backups
-* Private key headers	233	Critical	Actual private keys
-* Database URLs	184	Critical	Exposed DB credentials
-* AWS access keys	20	Critical	AWS API keys
-* GitHub tokens	7	Critical	Access tokens
-* Stripe keys	4	Critical	Payment API keys
+Type - Count - Severity - Description
+* Sensitive file extensions - 2,053 - Medium - .pem, .key, .p12 files
+* Connection strings - 1,146 - High - Credentials in URLs
+* Backup files - 412 - Low - Editor or config backups
+* Private key headers - 233 - Critical - Actual private keys
+* Database URLs - 184 - Critical - Exposed DB credentials
+* AWS access keys - 20 - Critical - AWS API keys
+* GitHub tokens - 7 - Critical - Access tokens
+* Stripe keys - 4 - Critical - Payment API keys
 
 
 <a id="UseAI"></a>
@@ -690,6 +885,29 @@ in 75 hours of videos:
 https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale 
 The Duke University Building Cloud Computing Solutions at Scale Specialization  is a four-course foundation covering serverless, containers, data engineering, and MLOps on AWS:
 
+1. Secrets Manager - Store and rotate passwords, tokens, credentials.
+1. Lambda / Serverless - Run code without managing servers.
+1. VPC - Secure, isolated cloud network environment.
+1. Load Balancer - Distributes incoming traffic across servers.
+1. NAT Gateway - Lets private subnets access the internet.
+1. API Gateway - Manages, secures, and routes API requests.
+1. IAM - Control access with roles, policies, and permissions.
+
+1. S3 - Object storage for files, logs, media, and backups.
+1. DynamoDB - Ultra-fast NoSQL key-value store.
+1. EC2 - Virtual servers for running applications.
+1. RDS - Managed SQL databases (MySQL, PostgreSQL, MariaDB).
+1. Auto Scaling Groups - Automatically scale compute up or down.
+
+1. SQS - Queue-based decoupling for async tasks.
+1. SNS - Publish/subscribe messaging for alerts and notifications.
+
+1. WAF - Protect apps from attacks like SQLi and XSS.
+1. CloudWatch - Monitoring metrics, logs, and alerts.
+1. ECS / EKS - Container orchestration for Docker workloads.
+1. Route 53 - DNS routing and domain management.
+1. Kinesis / PubSub - Real-time streaming data ingestion.
+1. CloudFront (CDN) - Deliver content from edge locations.
 
 ### Emailrep.io Enum
 
@@ -816,16 +1034,19 @@ Examples in Python:
 
 * https://github.com/rustybuilder/rust-faces = Face Detection in Rust with Python Bindings
 
-* <a target="_blank" href="https://vector.dev/docs/setup/">Vector.dev</a> (by Datadog) is a lightweight agent running on the app server to send logs to the central server without slowing down the app after updating XCOde CLI:
+* <a target="_blank" href="https://vector.dev/docs/setup/">Vector.dev</a> (by Datadog) is a lightweight agent running on the app server to send logs to the central server without slowing down the app after updating XCode CLI:
    ```bash
    sudo rm -rf /Library/Developer/CommandLineTools
    sudo xcode-select --install
+   ```
+
+   ```bash
    brew trust --formula vectordotdev/brew/vector
    brew tap vectordotdev/brew && brew install vector
    ```
    Incredibly fast, low memory footprint, and handles both collection, parsing (transform), and routing logs. Recommended over Fluent Bit written in C and Filebeat written in Go. Vector does not block your application’s main thread. Instead of your app waiting for a network round-trip to the central server, your app writes logs to a local buffer (e.g., stdout, a local file, or a Unix socket). Vector reads from these local sources asynchronously. The app continues processing requests while Vector handles the network I/O in the background.
 
-## Achilles Heel
+## Arena Pattern for Double-linked lists
 
 This may be a popular trivia question that everyone may not know:
 
@@ -879,26 +1100,33 @@ QUESTION: How to call functions in the Algorithms repo?
    Warning: rustup 1.29.0_2 already installed
    </pre>
 
-1. Check what version:
+1. Check the version of the Rust toolchain manager and rustc compiler:
    ```bash
    rustup --version
+   rustc --version
    ```
    <pre>
    rustup 1.29.0 (2026-03-05)
    info: This is the version for the rustup toolchain manager, not the rustc compiler.
    info: the currently active `rustc` version is `rustc 1.96.0 (ac68faa20 2026-05-25)`
    </pre>
+   Alternately, for just the rustc version:
+   ```bash
+   rustc --version
+   ```
+   
+   FUN FACT: <a target="_blank" href="https://www.emilyalbini.it/blog/shipping-a-compiler-every-six-weeks/">Rust is released every 6 weeks</a>
+
 
 1. Read <a target="_blank" href="https://rustup.rs/">rustup.rs</a>
 
-   You don't need to rememeber that "toml" means (Tom's Obvious Minimal Language).
+   DEFINITION: "toml" (Tom's Obvious Minimal Language) contains "[]" section headers.
 
-   Inside the file, version="0.1.0" is updated manually to semver.org (Semantic Versioning).
+   Inside the file, version="0.1.0" is updated manually based on semver.org (Semantic Versioning) conventions.
 
-   The edition="2024" is described at
-   https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
-
-   https://www.youtube.com/watch?v=o8aLar7eTFQ&t=3m32s
+   <tt>edition="2024"</tt> is described at
+   * https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
+   * https://www.youtube.com/watch?v=o8aLar7eTFQ&t=3m32s
 
 1. To find the version history of a crate such as "backup"
    ```bash
@@ -965,6 +1193,8 @@ QUESTION: How to call functions in the Algorithms repo?
    * openai-chat between a front-end client talking with a chat bot.
 
    * started around Nov 2022 
+
+   https://rust-analyser.github.io
 
 
    <a id="nato-phonetic-audio"></a>
@@ -1118,27 +1348,100 @@ QUESTION: How to call functions in the Algorithms repo?
    <tt>2>&1</tt> routes STDERR to screen.
 
 
-   ## cargo dev dependencies
+   ### cargo on file change
+
+   Many find this annoying. But see for yourself.
+
+1. Install cargo-watch to automatically kick off cargo whenever a file is saved.
+   ```sh
+   cargo install cargo-watch
+   ```
+1. Set cargo to run several tasks in sequence:
+   ```sh
+   cargo watch -x check -x test -x run
+   ```
+
+   ## nightly cargo dev dependencies
 
 1. Navigate to your project's root directory (where your Cargo.toml is located) and run:
    ```bash
    cargo install cargo-udeps
-   cargo udeps
+   cargo +nightly udeps 2>&1 | tail -60
    ```
+   This command requires the rustc nightly build or get an error.
+   Example output:
+   <pre>
+   `csv-rag-system v0.1.0 (/Users/johndoe/bomonike/rustlang-samples/src/csv2rag)`
+   └─── dependencies
+      ├─── "openai-api"
+      ├─── "qdrant-client"
+      ├─── "reqwest"
+      ├─── "text-splitter"
+         └─── "tokio"
+   </pre>
 
-   ## cargo outdated
+1. Save a full indented dependency tree of crates and their versions for potential forensics later:
+   ```bash
+   TREEFILE="tree-$(date +%y%m%dT%H%M%S).txt"
+   cargo tree >"$TREEFILE"
+   cargo tree | wc -l >>"$TREEFILE"
+   code "$TREEFILE"
+   ```
+   Example TREEFILE: "tree-260728T022836.txt"
+   These are incorporated in the alias "rtree" defined within aliases.sh.
+   <pre>
+   csv-rag-system v0.1.0 (/Users/johndoe/bomonike/rustlang-samples/src/csv2rag)
+   ├── anyhow v1.0.103
+   ├── csv v1.4.0
+   │   ├── csv-core v0.1.13
+   │   │   └── memchr v2.8.3
+   ├── openai-api v0.1.4
+   │   ├── derive_builder v0.9.0 (proc-macro)
+   │   │   ├── darling v0.10.2
+   │   │   │   ├── darling_core v0.10.2
+   │   │   │   │   ├── fnv v1.0.7
+   │   │   │   │   ├── ident_case v1.0.1
+   ...
+       867
+   </pre>
+   For cybersecurity, this is the SBOM (Software Bill of Material) attestation (like a "food label") that some customers ask to be delivered with each release of software. It's requested by US White House Executive Order 14028 signed by President Biden on May 12, 2021 and rescinded during the second Trump administration.
 
-1. Widen your CLI window and/or set the font smaller.
-1. Navigate to your project's root directory (where your Cargo.toml is located) and run:
+
+   ## transitive dependencies: cargo outdated
+
+1. To get a count of how many <strong>transitive dependencies</strong> you have:
    ```bash
    cargo install cargo-outdated
-   cargo outdated --aggressive --offline
+   cargo outdated --aggressive | wc -l
    ```
-   Specify "--root-deps-only" instead of "--aggressive".
+   <tt>--aggressive</tt> requests reporting of libraries with <strong>transitive dependencies</strong>
 
-   Exclude "--offline" if you're not offline.
+   Specify <tt>--root-deps-only</tt> instead of <tt>--aggressive</tt> for just the named crates.
+
+   The count includes two lines for the heading:
+   <pre>
+   530
+   </pre>
+
+1. Create a line for each transitive dependency:
+   ```bash
+   cargo outdated --aggressive
+   ```
+   Add <tt>--offline</tt> if you're offline (as in no wifi).
 
    Expect to see a table listing your dependencies, their current version, the latest compatible version, and the absolute latest version:
+
+1. Widen your CLI window and/or set the font smaller.
+   <pre>
+   warning: Feature rustls-tls of package reqwest has been obsolete in version 0.13.4
+   Name                                             Project                        Compat   Latest   Kind         Platform
+   ----                                             -------                        ------   ------   ----         --------
+   ahash->cfg-if                                    1.0.4                          ---      Removed  Normal       ---
+   ahash->getrandom                                 0.3.4                          ---      Removed  Normal       ---
+   ahash->once_cell                                 1.21.4                         ---      Removed  Normal       cfg(not(all(target_arch = "arm", target_os = "none")))
+   ahash->version_check                             0.9.5                          ---      Removed  Build        ---
+   ahash->zerocopy                                  0.8.54                         0.8.55   0.8.55   Normal       ---
+   </pre>
    
    
    ## Cargo audit
@@ -1199,8 +1502,22 @@ QUESTION: How to call functions in the Algorithms repo?
    cargo update async-openai --verbose
    ```
    
+   ## Cargo fmt rustfmt.toml
+
+1. Generate default settings to a <tt>rustfmt.toml</tt> file, which specifies limits enforced when <tt>cargo rustfmt</tt> is run. They reduce the need for human interaction (and stress) within a team.
+   ```bash
+   rustfmt --print-config default >default-rustfmt.toml
+   ```
+   PROTIP: In the rustfmt.toml file, only specifies overrides (non-default) setting values.
+   Its faster for the program to ignore a comment.
+
+1. See https://github.com/rust-lang/rustfmt
+
 
    ### Clippy scans
+
+   https://github.com/rust-lang/rust-clippy
+   A bunch of lints to catch common mistakes and improve your Rust code. Book: https://doc.rust-lang.org/clippy/
 
 1. PROTIP: Run the built-in clippy code scanner utility different ways. First, get a summary:
    ```bash
@@ -1234,7 +1551,7 @@ help: collapse nested if block">warning: this `if` statement can be collapsed</a
    </pre>
    
 
-   ### Learn!
+   Learn!
 
    > If you'd rather be a pro than a mindless poser, do the work now to reap rewards in the years to come.
 
@@ -1276,12 +1593,12 @@ help: collapse nested if block">warning: this `if` statement can be collapsed</a
    <a target="_blank" href="https://bomonike.github.io/rustlang">https://bomonike.github.io/rustlang</a>
 
    * cannot borrow * as mutable because it is also borrowed as immutable. 
-      CAUSE: an active immutable borrow when you try to create a mutable borrow.	
+      CAUSE: an active immutable borrow when you try to create a mutable borrow. - 
       Restructure your code. Ensure the immutable borrow is no longer used before the mutable borrow occurs. Sometimes, you can end the borrow earlier by limiting its scope with a block {} or by cloning the data if performance allows.
 
-   * does not live long enough. CAUSE: A value is dropped (goes out of scope) while it's still being borrowed.	Fix the lifetime. You may need to extend the lifetime of the value, take ownership (return an owned String instead of a &str), or add explicit lifetime annotations to your functions.
+   * does not live long enough. CAUSE: A value is dropped (goes out of scope) while it's still being borrowed. - Fix the lifetime. You may need to extend the lifetime of the value, take ownership (return an owned String instead of a &str), or add explicit lifetime annotations to your functions.
 
-   * mismatched types. CAUSE: A variable or return value is of the wrong type.	Convert the type. Use .into(), as, or another method to convert the value to the expected type.
+   * mismatched types. CAUSE: A variable or return value is of the wrong type. - Convert the type. Use .into(), as, or another method to convert the value to the expected type.
 
 
    ### Forgetaboutit
@@ -1292,60 +1609,66 @@ help: collapse nested if block">warning: this `if` statement can be collapsed</a
    
    warning: doc paragraphs should end with a terminal punctuation mark
 
-
 1. https://doc.rust-lang.org/stable/cargo/ = The Cargo Book
 
+   ## Red Teaming
+
+   https://github.com/joaoviictorti/RustRedOps
+   TODO: Repository for advanced Red Team techniques focused on Rust
 
 
+   ## Code Coverage
 
-## Comments in code
+   It takes time to define tests and run code coverage (identifying what portions of the codebase passes quality checks). But automation can help.
+1. Use AI to create tests.
+1. Install  a cargo subcommand developed by <a target="_blank" href="https://github.com/taiki-e">Taiki Endo</a>:
+   ```sh
+   rustup component add llvm-tools-preview
+   cargo install cargo-llvm-cov
+   ```
+   <pre>
+   Installing /Users/johndoe/.cargo/bin/cargo-llvm-cov
+   Installed package `cargo-llvm-cov v0.8.7` (executable `cargo-llvm-cov`)
+   </pre>
 
-These programs were created with the help of several AI tools, including Claude and Warp Oz.
+1. Compute coverage:
+   ```sh
+   cargo llvm-cov --help
+   ```
+   That command explains how to upload code coverage metrics to popular reporting services like Codecov or <a target="_blank" href="https://coveralls.io/">Coveralls.io</a>.
+   <pre>    
+    test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+    &nbsp;
+    Filename                                                             Regions    Missed Regions     Cover   Functions  Missed Functions  Executed       Lines      Missed Lines     Cover    Branches   Missed Branches     Cover
+    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    /Users/johndoe/bomonike/rustlang-samples/src/csv2rag/src/main.rs        1320               155    88.26%          72                 1    98.61%         741                69    90.69%           0                 0         -
+    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    TOTAL                                                                   1320               155    88.26%          72                 1    98.61%         741                69    90.69%           0                 0         -
+    </pre>
 
-Here I aim to provide specifics wisdom and examples, beyond platitudes such as "Leverage the Compiler, Don't Fight It".
+1. To run code coverage within this sample GitHub Action <a target="_blank" href="https://github.com/LukeMathWalker/zero-to-production/blob/root-chapter-03-part0/.github/workflows/general.yml">.yml</a>:
+   ```
+   coverage:
+      name: Code coverage
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v4
+      - name: Install the Rust toolchain
+         uses: actions-rust-lang/setup-rust-toolchain@v1
+         with:
+            components: llvm-tools-preview
+      - name: Install cargo-llvm-cov
+         uses: taiki-e/install-action@cargo-llvm-cov
+      - name: Generate code coverage
+         run: cargo llvm-cov --all-features --workspace --lcov --output-path lcov.info
+      - name: Generate report
+         run: cargo llvm-cov report --html --output-dir coverage
+      - uses: actions/upload-artifact@v4
+         with:
+             name: "Coverage report"
+             path: coverage/
+   ```
 
-* <tt>// TECHNIQUE:</tt> prefixes "how to" coding mechanics learned.
-* <tt>// CAUTION:</tt> highlights dangerous situations to avoid.
-* <tt>// PROTIP:</tt> prefixes suggestions not widely available elsewhere because it's gained from personal heartache.
-* <tt>// POLICY:</tt> "steers" what the code generator should remember for more readable, maintainable, secure, scalable, and efficient code.
-
-Examples of what is applicable to many modules:
-
-// POLICY: Generally, issue results from functions rather than print formatted output so that the calling function has a choice of natural languages to present results.
-
-// POLICY: Within main(), uniquely identify each step to provide the AI a way to reference code rather than using more cumbersome line numbers. The AI can renumber sequentially numbered steps automatically when asked.
-
-// POLICY: When printing sequential numbers, zero-fill 3-digit numbers (specified as "{:03}") so columns line up vertically.
-
-// POLICY: Do not store sensitive values in clear-text .env files, even though they are in the user home folder. Store secrets in a local secrets database such as KeepassXC.
-
-// POLICY: Use the zeroize crate to securely wipe the master password from memory as soon as the database is decrypted. This is so other processes snooping can't steal it.
-
-// POLICY: To access a database from multiple threads (e.g., in a Tauri or Axum web app), wrap crypto keys in a Mutex inside a single thread, or decrypt what you need and pass the decrypted strings (carefully) to other threads.
-
-// POLICY: When running in production (ENV_TYPE="PROD"), verify that the hash (SHA-1) of the main.rs file is the same hash as the file in GitHub to ensure that the file has not been corrupted.
-
-
-## Using KeePassXC
-
-To store API keys as secrets using the "Custom Attributes" Approach (Recommended)
-
-This method allows you to store as many distinct API values as you need for a single service while keeping them organized and secure.
-
-1. Create a new .kdbx file for APIs separate from your personal secrets (for banking, etc.).
-
-1. Open KeePassXC and create a new entry (or open an existing one).
-1. In the Title field, enter the name of the service (e.g., OpenAI API or AWS Production).
-Leave the Username and Password fields blank (or put a dummy username like API_User if your workflow requires those fields not to be empty).
-1. Click on the Advanced tab in the right-hand panel of the entry window.
-1. Under the Additional Attributes section, click the + (Plus) button to add a new custom field.
-1. In the Key column, type the name of the value (e.g., API Key, Client Secret, Base URL, Refresh Token).
-1. In the Value column, paste your actual API value.
-
-1. CRITICAL: Check the box under the Protect column (the little shield icon). This ensures the value is hidden behind asterisks and cannot be read by casual shoulder-surfers. It also prevents the value from being stored in cleartext in certain plugin caches.
-
-
-https://www.youtube.com/watch?v=Cjtokv4cG6I&t=18s
 
     
 <hr />
