@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-16"
-lastchange: "v033 add: blogs gui @rustlang.md"
+date: "2026-07-27"
+lastchange: "v034 move to rustops  @rustlang.md"
 url: https://bomonike.github.io/rustlang
 file: "rustlang"
 title: "Rustlang (Rust language)"
@@ -28,8 +28,7 @@ This article, here at <a href="https://bomonike.github.io/rustlang/">https://bom
 <a target="_blank" href="https://github.com/rust-lang/rust-artwork/tree/master/logo"><img align="right" width="100" src="https://raw.githubusercontent.com/bomonike/rustlang-samples/refs/heads/main/rustacean-flat-gesture.svg" /></a> <a target="_blank" href="https://www.rust-lang.org/">rust-lang.org</a> is the home page for the language. 
 
 <img align="left" width="100" src="https://raw.githubusercontent.com/bomonike/rustlang-samples/6d44a354e7a142c3530984f76275fe617bd5e3ae/rustacean-flat-gesture.svg?token=AACJIDUK5TPCW3N7I4S6MXTKJCAT6" />
-The mascot for the Rust language is a red crab?
-Its name is <a target="_blank" href="https://rustacean.net/">Ferris</a> (like "ferrous")
+The mascot for the Rust language is a <a target="_blank" href="https://emojiterra.com/crab/">🦀 red :crab: emoji</a> named <a target="_blank" href="https://rustacean.net/">Ferris</a> (like "ferrous")
 because ferrous oxide is the chemical name for rust from iron.
 Rust is named after the <a target="_blank" href="https://www.wikiwand.com/en/Rust_(fungus)">rust family of parasitic fungi causing plant diseases with its brown spores</a>?
 
@@ -133,6 +132,9 @@ Rust was <a target="_blank" href="https://www.tiobe.com/tiobe-index/">#26 on the
 ## Social ecosystem
 
 Rust developers are called "Rustlings" or "Rustaceans".
+
+https://rust-lang.org/governance/people/
+lists links to the 336 contributors at time of this writing.
 
 https://blog.rust-lang.org/ is the official Rust blog.
 
@@ -349,251 +351,6 @@ YouTube Playlists:
    * <a target="_blank" href="https://www.youtube.com/watch?v=NDMr9W0hbaI&list=PLFdNoRgzggbo6BqJQ6tqk_wvXeI5yfbGA">Green Tea Coding</a> ("Comfy Coder")
 
 
-
-## Reference books and websites
-
-Lists:
-   * <a target="_blank" href="https://github.com/sger/RustBooks">List of Rust books</a>
-   * <a target="_blank" href="xhttps://github.com/ctjhoa/rust-learning">A bunch of links to blog posts, articles, videos, etc for learning Rust</a>
-   * <a target="_blank" href="https://github.com/rust-unofficial/awesome-rust">A curated list of Rust code and resources</a>
-   <br /><br />
-
-PROTIP: This is the definitive reference book on the language:
-<a target="_blank" href="https://learning.oreilly.com/library/view/-/0642572230241/">BOOK on OReilly
-The Rust Programming Language, 3rd Edition, March 2026</a>
-By Steve Klabnik, Carol Nichols and Chris Krycho
-
-PROTIP: The clearest step-by-step introduction to Rust in video:
-https://learning.oreilly.com/course/learn-to-code/9781837024155/
-66 hour book: Learn to Code with Rust from Packt
-by <a target="_blank" href="https://www.linkedin.com/in/boris-paskhaver/">Boris Paskhaver</a>
-(<a target="_blank" href="https://paskhaver.github.io/">paskhaver.github.io</a>)
-<a target="_blank" href="https://podcasts.apple.com/sg/podcast/boris-paskhaver-on-business-economics-to-software-engineering/id1517209695?i=1000541758054">On Business Economics to Software Engineering
-
-PROTIP: For those using Rust in production:
-Arthur Morgan has a 4-book series on Amazon Kindle:
-1. <a target="_blank" href="https://read.amazon.com/?_encoding=UTF8&asin=B0F7LHBRJD&consumptionLimitReached=false&deviceAccountIds=A091690532T8QI0ZTK89J%2CA0174720OV02KHVHK32Z&hasMultimedia=false&requiredCapabilities=EBOK_PURCHASE_ALLOWED&ref=sr_rn_kfw">KINDLE</a>: The complete Guide to Rust Programming for Beginngers: Syntax, Data Types, and Ownership
-2. The complete Guide to Rust Programming for Beginners: Modules, Traits, Generics, and Error Handling
-3. The complete Guide to Rust Programming for System Engineers
-4. <a target="_blank" href="https://read.amazon.com/?asin=B0GHKWYG25&ref_=kwl_kr_iv_rec_2">KINDLE</a>: The complete Guide to Rust Project Architecture: Designing Scalable and Maintainable Applications, 2025
-5. https://www.everand.com/audiobook/930086082/Data-Oriented-Programming-with-Rust-Efficient-Safe-and-Scalable-Solutions.  https://www.standaardboekhandel.be/p/data-oriented-programming-with-rust-efficient-safe-and-scalable-solutions-9798232924645 = Data-Oriented Programming with Rust: Efficient, Safe, and Scalable Solutions Oct 10, 2025
-
-https://rust-book.cs.brown.edu/
-is an interactive fork of 
-<a target="_blank" href="https://doc.rust-lang.org/book/">doc.rust-lang.org/book</a> = TRPL ("The official Rust Programming Language book") by Steve Klabnik, Carol Nichols, and Chris Krycho. 
-It references 
-<a target="_blank" href="https://github.com/rust-lang/book">https://github.com/rust-lang/book</a>
-
-
-<a target="_blank" href="https://learning.oreilly.com/videos/-/9781491925447/continue">
-VIDEO</a>: The Rust Programming Language: Fast, Safe, and Beautiful, 2015
-By Jim Blandy
-
-<a target="_blank" href="https://learning.oreilly.com/videos/oscon-2017/9781491976227/9781491976227-video306635/">
-1h VIDEO</a>: Rust for non-Rust developers - Hanneli Tavante (Codemine42) at OSCon 2017 Austin
-by <a target="_blank" href="https://www.linkedin.com/in/jim-blandy-b130842/">Jim Blandy</a>
-Borrowing
-
-<a target="_blank" href="https://learning.oreilly.com/library/view/-/9781098176228/">BOOK</a>:
-Oreilly: Programming Rust, 3rd Edition, Oct 2026
-By Jim Blandy, Jason Orendorff and Leonora F. S. Tindall
-
-
-<a target="_blank" href="https://doc.rust-lang.org/rust-by-example/">doc.rust-lang.org/rust-by-example</a> = "Rust by Example references 
-<a target="_blank" href="https://github.com/rust-lang/rust-by-example">
-Learn by doing with annotated examples"</a>
-
-<a target="_blank" href="https://github.com/sunface/rust-by-practice">BLOG</a>:
-Learning Rust By Practice, narrowing the gap between beginner and skilled-dev through challenging examples, exercises and projects.
-
-<a target="_blank" href="https://rustlings.rust-lang.org/">rustlings.rust-lang.org<a> "Rustlings: Small exercises to get you used to reading and writing Rust code"
-
-https://github.com/PacktPublishing/Speed-up-your-Python-with-Rust
-
-https://github.com/PyO3/maturin
-
-https://github.com/Indosaram/rust-python-book
-
-https://github.com/pretzelhammer/rust-blog
-Educational blog posts for Rust beginners
-
-
-
-## Tutorials
-
-https://rustfoundation.org/rust-foundation-trusted-training/
-$3,000
-
-by <a target="_blank" href="https://www.linkedin.com/in/jonhoo/">Jon Gjengset</a> (resident of Oslo, Norway, PhD MIT CSAIL)
-   * <a target="_blank" href="https://learning.oreilly.com/library/view/-/9781098129828/">BOOK</a>: <a target="_blank" href="https://rust-for-rustaceans.com/">Rust for Rustaceans, Dec 2021</a> referencing<br />https://github.com/jonhoo/rust-for-rustaceans.com
-   * https://www.youtube.com/c/JonGjengset/
-   * https://github.com/jamesmunns/awesome-rust-streaming/
-   * Works at @Helsing-ai
-   * https://soundcloud.com/arewepodcastyet/awpy-08-jon-ferdinand-ronge-gjengset
-
-Tim McNamara
-   * Rust in Action: https://www.youtube.com/c/timClicks/
-
-@fasterthanlime
-   * fasterthanli.me/articles/a-half-hour-to-learn-rust
-
-BekBrace and Hunt Sostanza
-   * https://www.youtube.com/watch?v=rQ_J9WH6CGk&t=3m12s White House "Further progress on development toolchains, workforce education, and fielded case studies are needed."
-
-Jonathan Turner
-   * Systems with JT channel: https://www.youtube.com/c/SystemswithJT/. Jonathan’s videos document their work on Nushell, their take on a “new type of shell,” providing a great sense of what it’s like to work on a nontrivial existing codebase.
-
-Ryan Levick
-   * https://www.youtube.com/c/RyanLevicksVideos/ tackles particular Rust concepts and walks through them using concrete code examples, but he also occasionally does implementation videos (like FFI for Microsoft Flight Simulator!) and deep dives into how well-known crates work under the hood.
-
-   * https://www.generalistprogrammer.com/
-
-<a target="_blank" href="https://www.linkedin.com/in/arfan-zubi/">Arfan Zubi</a>, with https://www.freecodecamp.org created <a target="_blank" href="https://www.youtube.com/watch?v=BpPEoZW5IiY">14 hr "Learn Rust Programming - Complete Course 🦀" 2023</a>, referencing https://github.com/3rfaan/courses/tree/main/Rust/rust-by-practice/src at <a target="_blank" href="https://practice-rs.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">https://practice.rs/ translated to English</a>
-https://practice-rust.beatai.org/
-
-   * 00:00:00 Introduction & Learning Resources
-   * <a target="_blank" href="https://www.youtube.com/watch?v=BpPEoZW5IiY&t=6m19s">Variables</a>
-   * 00:27:07 Numbers & Binary System</a>
-   * 01:09:51 Chars, Bools & Unit Types</a>
-   * 01:17:55 Statements & Expressions</a>
-   * 01:24:50 Functions</a>
-   * 01:32:53 Ownership</a>
-   * 02:24:06 Borrowing</a>
-   * 02:47:45 String vs. &str</a>
-   * 03:17:59 Slices</a>
-   * 03:10:27 Array</a>
-   * 03:31:35 Tuples</a>
-   * 03:40:04 Structs</a>
-   * 04:02:52 Enums</a>
-   * 04:13:46 The "Option" Enum</a>
-   * 04:21:32 Flow Control</a>
-   * 04:44:43 Pattern Match</a>
-   * 05:16:42 Methods & Associated Functions</a>
-   * 05:31:50 Generics</a>
-   * 06:06:32 Traits</a>
-   * 06:47:15 Trait Objects</a>
-   * 07:09:51 Associated Types</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=BpPEoZW5IiY&t=7h39m31s">Strings</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=BpPEoZW5IiY&t=7h59m52s">Vectors</a>
-   * 08:29:00 HashMaps</a>
-   * 08:52:45 Type Coercion</a>
-   * 09:04:54 From & Into</a>
-   * 09:36:03 panic!</a>
-   * 09:44:56 Result</a>
-   * 10:28:23 Cargo, Crates & Modules</a>
-   * 11:08:28 Debug & Display</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=BpPEoZW5IiY&t=11h30m55s">Lifetimes</a>
-   * 12:14:46 Lifetime Elision</a>
-   * 12:38:53 Closures</a>
-   * 13:30:08 Iterators</a>
-   <br /><br />
-
-by Rustfully
-   * <a target="_blank" href="https://www.youtube.com/@Rustfully">Playlist</a>
-
-by <a target="_blank" href="https://www.linkedin.com/in/nathan-stocks/">Nathan Stocks</a>
-   * <a target="_blank" href="https://learning.oreilly.com/videos/ultimate-rust-crash/9781800563902/">VIDEO: Packt: "Ultimate Rust Crash Course" Oct. 2020</a> with code at https://github.com/CleanCut/ultimate_rust_crash_course (don't use <a target="_blank" href="https://github.com/PacktPublishing/Ultimate-Rust-Crash-Course">Packt code repo</a>) when Rust was at 1.89.0.
-   Shows how to write an interactive Space Invaders game with audio, multithreading.
-
-   * <a target="_blank" href="https://learning.oreilly.com/search/?q=author%3A%20%22Nathan%20Stocks%22">at O'Reilly</a>:
-      - https://github.com/CleanCut/ultimate_rust_crash_course
-      - https://learning.oreilly.com/course/ultimate-rust-crash/9781800563902/
-
-By Chris Day
-   - <a target="_blank" href="https://www.youtube.com/watch?v=JQEDrbYVO1o&list=PL5Dc_611BqV10BlttMgtqeUBe8LcgrLtX&pp=0gcJCe4COCosWNin">Playlist: "Getting Started"</a>
-
-By @Jayson Lennon 
-   * <a target="_blank" href="https://www.youtube.com/watch?v=lzKeecy4OmQ&t=2m">6 hour "Zero To Mastery"</a> as precursor to <a target="_blank" href="https://zerotomastery.io/courses/learn-rust/#overview">$25/month</a> containing "19 activities".
-
-by Derek Banas
-   * <a target="_blank" href="https://www.youtube.com/watch?v=ygL_xcavzQ4">2.3 hr "Rust Tutorial Full Course" from 2023</a>
-
-by <a target="_blank" href="https://www.linkedin.com/in/jeremychone/">@JeremyChone</a> (from
-France)
-   * <a target="_blank" href="https://www.youtube.com/watch?v=3cA_mk4vdWY&list=PL7r-PXl6ZPcCIOFaL7nVHXZvBmHNhrh_Q">Playlist</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=SuLHINfqJGI&list=PL7r-PXl6ZPcBcLsBdBABOFUuLziNyigqj">AIPack</a>
-   * <a target="_blank" href="https://www.youtube.com/watch?v=MHwpSZA2uNA&list=PL7r-PXl6ZPcCLvwpdD2Vj1O4CyoFTiHKd&index=2">Playlist</a>
-   * <a target="_blank" href="https://youtu.be/3cA_mk4vdWY">Rust in Production</a> series https://github.com/rust10x/rust-web-app Code template for a production Web Application using Axum: The AwesomeApp Blueprint for Professional Web Development.
-   https://rust10x.com/web-app
- 
-by Michael Preston
-   * <a target="_blank" href="https://medium.com/rustaceans/the-most-underrated-rust-crates-that-changed-how-i-build-software-f41b423854a0">The Most Underrated Rust Crates That Changed How I Build Software</a>
-
-On Udemy by others:
-   * <a target="_blank" href="https://www.udemy.com/course/autogpt-gpt4-code-writing-ai/?couponCode=25BBPMXINACTIVE">Auto GPT4 code writing</a>
-
-by <a target="_blank" href="https://www.linkedin.com/in/dmitri-nesteruk-87b069aa/">Dmitri Nesteruk ("semi-retired" Quant in the UK</a>) shows use of IntelliJ IDEA.
-   * <a target="_blank" href="https://www.udemy.com/course/rust-lang/">8.5 hour video course "The Rust Programming Language"</a> 
-
-by Traversy Media
-   * <a target="_blank" href="https://www.youtube.com/watch?v=zF34dRivLOw">VIDEO "Rust Crash Course | Rustlang"</a> 
-
-* <a target="_blank" href="https://www.youtube.com/watch?v=m76sRj2VgGo">The Box Smart Pointer in Rust</a>
-
-by <a target="_blank" href="https://www.youtube.com/watch?v=nvur2Ast8hE#:~:text=I%20Code%20Forever-,ForrestKnight">@ForrestKnight</a>
-
-by anurag-garimella
-* https://github.com/anurag-garimella/rust_basics
-This repo will contain code from Rust books from Chap.1 to Chap. 4. All the code is collected in one single main.rs file.
-
-by the Android team at Google
-* https://github.com/google/comprehensive-rust  is the Rust course used by the Android team at Google. It provides you the material to quickly teach Rust.
-
-By <a target="_blank" href="https://www.linkedin.com/in/davemacleod/">David MacLeod</a> (Canadian in South Korea):
-   * <a target="_blank" href="https://www.youtube.com/playlist?list=PLfllocyHVgsRwLkTAhG0E-2QxCf-ozBkk">@mithradates 197 YouTube videos</a> published April 2024 his personal website <a target="_blank" href="https://dhghomon.github.io/easy_rust/">dhghomon.github.io/easy_rust</a> and by Manning as "Learn Rust in a Month of Lunches" <a target="_blank" href="https://learning.oreilly.com/videos/-/9781633438231VE/">11 hr AI-gen'd VIDEO</a> and <a target="_blank" href="https://learning.oreilly.com/videos/-/9781633438231AU/">AUDIOBOOK</a> from <a target="_blank" href="https://learning.oreilly.com/library/view/-/9781633438231/">BOOK/a>. They reference <a target="_blank" href="https://github.com/Dhghomon/easy_rust">https://github.com/Dhghomon/easy_rust</a> Rust explained in easy English using browser <a target="_blank" href="https://play.rust-lang.org">https://play.rust-lang.org</a> 
-
-Others:
-   * <a target="_blank" href="https://github.com/exercism/rust">exercises in Rust</a> from <a target="_blank" href="https://exercism.org/tracks/rust/exercises">99 exercises at exercism.org</a>
-
-
-https://github.com/rust-lang/rustlings
-Small exercises to get you used to reading and writing Rust code!
-
-https://github.com/microsoft/RustTraining
-Beginner, advanced, expert level Rust training material
-
-
-https://github.com/TheAlgorithms/Rust
-All algorithms written in Rust
-
-https://github.com/AnasImloul/Leetcode-Solutions
-A repository with over 7000 solutions to more than 1800 Leetcode problems written in C++, Python, Java, Javascript & Golang. by <a target="_blank" href="https://www.linkedin.com/in/anas-imloul/">Anas Imloul</a>
-   * <a href="#Algorithms">Algorithms</a>
-   * <a href="#Database">Database</a>
-   * Shell
-   * Concurrency
-   <br /><br />
-
-https://github.com/mainmatter/100-exercises-to-learn-rust
-A self-paced course to learn Rust, one exercise at a time.
-
-Advent of Code <a target="_blank" href="https://en.wikipedia.org/wiki/Advent_of_Code">is</a> (since 2015) an annual event offering daily programming challenges from December 1st to 12th, designed for various skill levels and languages, used for learning, practice, and competition. One puzzle unlocks each midnight at EST/UTC-5.
-https://www.reddit.com/r/adventofcode/
-
-https://github.com/LinuxUser255/run_cmds
-
-https://github.com/ShreyashSarage/file_handling_rust
-[No contributions in 2026] File Handling in rust by accepting the config file path in the command line arguments and passing the file path to the main.rs file to print the content of the given file
-
-https://github.com/rustfs/rustfs
-🚀2.3x faster than MinIO for 4KB object payloads. RustFS is an open-source, S3-compatible high-performance object storage system supportin…
-
-https://github.com/rustcc/RustPrimer
-The Rust primer for beginners. Chinese. From 2016. We need native English speaker help us modify the translation.
-
-
-## Utilities
-
-https://github.com/rust-lang/rustfmt
-rustfmt  // Format Rust code
-
-https://github.com/rust-lang/rust-clippy
-A bunch of lints to catch common mistakes and improve your Rust code. Book: https://doc.rust-lang.org/clippy/
-
-https://github.com/joaoviictorti/RustRedOps
-Repository for advanced Red Team techniques focused on Rust
-
-
 <a id="Algorithms"></a>
 
 ## Sample Code: Algorithms
@@ -757,6 +514,9 @@ SHA-256 vs BLAKE3 — Which Hash Should You Use in Rust?
 Fearless in Rust by Vincent
 
 Leetcode???
+
+https://www.youtube.com/watch?v=md-ecvXBGzI&t=57s
+Learn Rust (by building a simple bitcoin wallet) by FuturePaul
 
 
 ## Observability & Visualizations
@@ -1021,30 +781,6 @@ Bash completion has been installed to:
 
 
 
-   <a name="IDE"></a>
-
-   ## IDE Install
-
-   ### VSCode & Rust Analyzer
-   
-   <a target="_blank" href="https://www.linkedin.com/in/doug-milford-065a292/">Doug Milford</a> 
-   (lambdavalley.com) uses Visual Studio Code (VSCode) IDE on YouTube:
-
-   There is Rust Rover and Freemium Fleet from JetBrains. 
-   <a target="_blank" href="https://www.youtube.com/watch?v=sZaAP4AS0hc">VIDEO</a> 
-   VSCode extensions to get comparable features:
-
-   * rust-analyzer
-   * CodeLLDB
-   * Even Better TOML
-   * Crates
-   <br /><br />   
-
-
-   VisualRust IDE?
-
-
-
    ## My rustlang-samples
 
 1. Create folder and navigate to a folder to receive downloads.
@@ -1061,15 +797,7 @@ Bash completion has been installed to:
    * <a target="_blank" href="https://www.youtube.com/watch?v=DWcIZFGiKr0" title="Oct 8, 2019 Doug Milford">Milford: Hello World</a> and Cargo.toml (without using cargo)
    * <a target="_blank" href="https://www.youtube.com/watch?v=sE2cDV91IRg" title="Oct 8, 2019 Doug Milford">Milford: Cargo.toml</a>
    <br /><br />
-
-   ### rustfmt.toml
-
-1. Generate default settings to a <tt>rustfmt.toml</tt> file, which specifies limits enforced when <tt>cargo rustfmt</tt> is run. They reduce the need for human interaction (and stress) within a team.
-   ```bash
-   rustfmt --print-config default >default-rustfmt.toml
-   ```
-   PROTIP: In the rustfmt.toml file, only specifies overrides (non-default) setting values.
-   Its faster for the program to ignore a comment.
+zzz
 
 1. Get a utility to automatically insert the description and default value of each setting as comments above each setting, using https://github.com/ravyne/rustfmt-expander/blob/main/rustfmt-expander.awk 
    ```bash
@@ -1151,19 +879,6 @@ Bash completion has been installed to:
    ```
    REMEMBER: The <tt>target</tt> folder is where compiled assets (executables) are stored.
 
-
-   ## Evaluate Rust program code like Ruff for Python
-
-1. Add Clippy utility to your project (if using Cargo)
-   ```bash
-   cargo add clippy --dev
-   ```
-1. Run Clippy:
-   ```bash
-   cargo clippy -- -D warnings
-   ```
-
-   
    ## Create new project
 
    REMEMBER: ".rs" is the file extension for Rust program source files.
@@ -1229,6 +944,7 @@ Bash completion has been installed to:
 1. Build
 
    <pre><strong>cargo build</strong></pre>
+
 
    ## Hello World program
 
@@ -1364,10 +1080,172 @@ edition="2024"
    ```
 
 
-   ## Explain Compile Errors
+   ### Use Clippy to lint/evaluate Rust code 
+
+   like Ruff for Python.
+
+   PROTIP: Identifying and resolving warnings often may prevent weird errors from occuring, which wastes time and causes embarassment.
+
+1. Add Clippy utility to your project (if using Cargo)
+   ```bash
+   cargo add clippy --dev
+   ```
+1. When running within a CI pipeline, have Clippy return a fail if any warnings are found:
+   ```bash
+   cargo clippy -- -D warnings
+   ```
+   Use <a target="_blank" href="https://github.com/LukeMathWalker/zero-to-production/tree/root-chapter-03-part0/.github/workflows">this sample GitHub Action workflow .yaml</a>:
+   ```
+   clippy:
+      name: Clippy
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@v4
+         - name: Install the Rust toolchain
+         uses: actions-rust-lang/setup-rust-toolchain@v1
+         with:
+            components: clippy
+         - name: Linting
+         run: cargo clippy -- -D warnings
+   ```   
+
+1. To mute a warning from appearing again, within the code, add this attribute with lint_name substituted for what you don't agree with:
+   ```
+   #[allow(clippy::lint_name)] 
+   ```
+   See Clippy's README at 
+   https://github.com/rust-lang/rust-clippy#configuration
+
+1. To fix what Clippy found:
+   ```bash
+   cargo clippy --fix --allow-dirty
+   ```
+
+   ### Explain Compile Errors
 
    <pre>rustc --explain E0308</pre>
 
+
+## Comments in code
+
+These programs were created with the help of several AI tools, including Claude and Warp Oz.
+
+Here I aim to provide specifics wisdom and examples, beyond platitudes such as "Leverage the Compiler, Don't Fight It".
+
+* <tt>// TECHNIQUE:</tt> prefixes "how to" coding mechanics learned.
+* <tt>// CAUTION:</tt> highlights dangerous situations to avoid.
+* <tt>// PROTIP:</tt> prefixes suggestions not widely available elsewhere because it's gained from personal heartache.
+* <tt>// POLICY:</tt> "steers" what the code generator should remember for more readable, maintainable, secure, scalable, and efficient code.
+
+Examples of what is applicable to many modules:
+
+// POLICY: Generally, issue results from functions rather than print formatted output so that the calling function has a choice of natural languages to present results.
+
+// POLICY: Within main(), uniquely identify each step to provide the AI a way to reference code rather than using more cumbersome line numbers. The AI can renumber sequentially numbered steps automatically when asked.
+
+// POLICY: When printing sequential numbers, zero-fill 3-digit numbers (specified as "{:03}") so columns line up vertically.
+
+// POLICY: Do not store sensitive values in clear-text .env files, even though they are in the user home folder. Store secrets in a local secrets database such as KeepassXC.
+
+// POLICY: Use the zeroize crate to securely wipe the master password from memory as soon as the database is decrypted. This is so other processes snooping can't steal it.
+
+// POLICY: To access a database from multiple threads (e.g., in a Tauri or Axum web app), wrap crypto keys in a Mutex inside a single thread, or decrypt what you need and pass the decrypted strings (carefully) to other threads.
+
+// POLICY: When running in production (ENV_TYPE="PROD"), verify that the hash (SHA-1) of the main.rs file is the same hash as the file in GitHub to ensure that the file has not been corrupted.
+
+
+## Using KeePassXC secrets vault
+
+To store API keys as secrets using the "Custom Attributes" Approach (Recommended)
+
+https://github.com/Narigo/keepass-diff
+
+This method allows you to store as many distinct API values as you need for a single service while keeping them organized and secure.
+
+1. Create a new .kdbx file for APIs separate from your personal secrets (for banking, etc.).
+
+1. Open KeePassXC and create a new entry (or open an existing one).
+1. In the Title field, enter the name of the service (e.g., OpenAI API or AWS Production).
+Leave the Username and Password fields blank (or put a dummy username like API_User if your workflow requires those fields not to be empty).
+1. Click on the Advanced tab in the right-hand panel of the entry window.
+1. Under the Additional Attributes section, click the + (Plus) button to add a new custom field.
+1. In the Key column, type the name of the value (e.g., API Key, Client Secret, Base URL, Refresh Token).
+1. In the Value column, paste your actual API value.
+
+1. CRITICAL: Check the box under the Protect column (the little shield icon). This ensures the value is hidden behind asterisks and cannot be read by casual shoulder-surfers. It also prevents the value from being stored in cleartext in certain plugin caches.
+
+
+https://www.youtube.com/watch?v=Cjtokv4cG6I&t=18s
+
+
+## Data: Polars from Pandas
+
+To make queries, the Rust Polars DataFrame library is the successor to the Python Pandas library.
+
+Polars is based on Apache Arrow’s memory model. Apache Arrow provides very cache efficient columnar data structures and is becoming the defacto standard for columnar data.
+
+To specify use of Polars in Cargo.toml, specify specific functionalities features:
+   * lazy - Enables the Lazy API (recommended for building queries).
+   * parquet - Read and write Parquet files.
+   * json - JSON serialization support.
+   * temporal - Conversions between Chrono and Polars for date/time data types.
+   * strings - Provides extra string utilities for StringChunked.
+   * ipc - Support for Arrow's IPC format.
+   * random - Generate arrays with randomly sampled values.
+   <br /><br />
+
+https://docs.pola.rs/api/rust/dev/polars/index.html
+
+recommends building queries directly with polars-lazy, which can combine expressions into powerful aggregations and column selections. 
+
+Polars provides a powerful <strong>Expression API</strong> is most often used the Lazy API for optimal performance.
+
+```Rust
+use polars::prelude::*;
+
+// Build a query using the Lazy API
+let q = LazyFrame::scan_parquet("my_file.parquet", Default::default())?
+    .filter(col("age").gt(lit(30))) // Filter rows where "age" > 30
+    .group_by([col("city")])       // Group by "city"
+    .agg([                         // Aggregate: calculate the mean "age" per city
+        col("age").mean().alias("avg_age"),
+    ])
+    .sort(["avg_age"], SortMultipleOptions::default()); // Sort by the result
+
+// Execute the query and collect the results into a DataFrame
+let df = q.collect()?;
+```
+
+All expressions are evaluated in parallel and queries are optimized just in time.
+
+As of the latest information, Rust Polars does not have built-in, one-line functions like read_database or write_database that are available in the Python API . This means you would need to handle database connections and data transfer using other Rust crates (like sqlx or diesel) and then convert the result into a Polars DataFrame. This is an acknowledged limitation by the community.
+
+The Rust API closely mirrors the Python one. You use col("column_name") to select a column and chain methods like filter, group_by, and agg to build your query .
+
+The foundation of using Polars in Rust is the LazyFrame and its associated col() (column) function for building expressions.
+
+* Common Aggregations: sum(), mean(), min(), max(), std(), var(), n_unique().
+
+* Selection & Filtering: filter(), head(), tail(), slice().
+
+* Casting & Conversion: cast(DataType::Int64), strict_cast(), is_null(), is_not_null().
+
+* String Operations: (with strings feature) str().lengths(), str().contains(lit("pattern")).
+
+* Temporal Operations: (with temporal feature) dt().year(), dt().month(), dt().date().
+
+* Custom Logic: For operations that cannot be expressed with built-in functions, you can use map() or apply() to pass a Rust closure. However, map() is generally preferred for element-wise operations, while apply() is used within a group_by context .
+
+Polars can also be extended with custom Rust functions for highly specialized logic.
+
+For custom logic that needs to run at native speed, Expression Plugins are the recommended approach. This involves writing a Rust function in a separate library and registering it with Polars, making it behave like a native expression .
+
+Write the Rust function: Annotate custom functions with #[polars_expr(output_type=String)] and accept &[Series] as input.
+
+Register it in Python: For use from Python, you create a Python package that uses register_plugin_function to link to your compiled Rust library.
+
+
+########################################
 ## Numbers
 
 In Rust, f64 does not implement the Ord trait (meaning you can't easily use standard "min/max" sorting functions) because of how computers handle floating-point math (like NaN). We have to use partial_cmp to safely compare costs. Because f64 can technically be NaN (Not a Number), Rust refuses to guess how to sort it. partial_cmp returns an Option, and we use unwrap_or(Equal) to say "If you encounter a NaN, just treat it as equal and move on."
@@ -2231,6 +2109,13 @@ cd /Users/johndoe/github-wilsonmar/rustlang-samples/src/hello-rust && sudo cargo
 https://docs.google.com/presentation/d/1C1XEDoqdEEMkoTE7GqfsXgTkMh2z15CwkfFVXprVCaY/edit?usp=sharing
 Rust container cheat sheet
 
+
+
+https://www.udemy.com/course/data-analysis-with-polars-and-python/
+$12.99 at Udemy for 22 hours on-demand video course "Data Analysis with Polars and Python"
+by Boris Paskhaver
+
+https://github.com/paskhaver/data-analysis-with-polars-and-python
 
 
 ## Clippy suggestions
