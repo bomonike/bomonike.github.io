@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-27"
-lastchange: "v006 fix: data sources @openobserve.md"
+date: "2026-07-30"
+lastchange: "v009 + G2 @openobserve.md"
 url: https://bomonike.github.io/openobserve
 file: "openobserve"
 title: "Open Observability"
@@ -17,17 +17,29 @@ created: "2026-07-26"
 ---
 <i>{{ page.excerpt }}</i>
 
-<a target="_blank" href="https://openobserve.ai">openobserve.ai</a> (O2) 
-is an "Open source observability platform for logs, metrics, traces, frontend monitoring, pipelines and LLM observability. A sophisticated, simple and highly performant alternative to Datadog, Splunk, and Elasticsearch with 140x lower storage costs and single binary deployment." Vs. LGTM, O2 has 1 binary or 1 Helm chart and a Single unified store (local disk, S3, GCS, Azure Blob) Uses PromQL (for metrics). "petabyte scale"
+
+<a target="_blank" href="https://openobserve.ai">openobserve.ai</a> ("O2")
+is an "Open source observability platform for logs, metrics, traces, frontend monitoring, pipelines and LLM observability."
+
+<a target="_blank" href="https://www.g2.com/products/openobserve/reviews">g2.com/products/openobserve/reviews</a>
+shows high 5/5 ratings. Put in a word if you're familiar with it. 
+
+Here's what makes OpenObserve better and cheaper than Datadog, Splunk, Elasticsearch, Prometheus:
+   * Being written in Rust enables higher performant alternative
+   * Rust executables deploy as a single binary (without run-times like Java & Python)
+   * Runs in Kubernetes from a single Helm chart 
+   * Achieves "140x lower storage" from using new Parquet format data storage.
+   * Unlike (now "traditional") Prometheus <a href="#LGTM">LGTM</a> which store logs and metrics in different data stores, O2 retrieves them into a "single unified store"
+   * O2 has a substitute for Grafana dashboard, but still recognizes PromQL (Prometheus Query Language) specs.
 
 <a target="_blank" href="https://www.linkedin.com/in/isaacinmn/">Isaac Johnson</a> 
 presented his large deployment costs vs. competitors GroundCover, DataDog, New Relic:
 <a target="_blank" href="https://freshbrewed.science/2026/07/16/openobs.html"><br />
-<img alt="2026-07-openobserve-39.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785128397/2026-07-openobserve-39_sv7rme.png" /></a>
+<img alt="2026-07-openobserve-39.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785128397/2026-07-openobserve-39_sv7rme.png" /></a><br />
 OpenObserve cost $255/mo for 250 GB of logs, 250 GB metrics, 10 GB traces with 30 hosts and 100 users, 
 
    <a target="_blank" href="https://openobserve.ai/docs/enterprise-setup/license-and-pricing/">Pricing</a>:
-   Enterprise Edition is free for up to 50 GB/day (~1.5 TB/month) of data ingestion.
+   Enterprise Edition is free continually for up to 50 GB/day (~1.5 TB/month) of data ingestion.
    But you can exceed your license limit up to 3 times per month before being blocked.
 
    Query is $0.01 per GB with 
@@ -39,10 +51,10 @@ OpenObserve cost $255/mo for 250 GB of logs, 250 GB metrics, 10 GB traces with 3
 
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785150905/o2-arch-before-1890x1356_tas5om.png"><img alt="o2-arch-before-1890x1356.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785150905/o2-arch-before-1890x1356_tas5om.png" /></a>
 
-1. Instead of a separate <strong>Query Language</strong> of LogQL for Loki chunk storage and TracQL for trace storage, This  design can run into bottlenecks:
-   * Loki — bottlenecks on ingestion streams and chunk storage
+1. Instead of a separate <strong>Query Language</strong> design can run into bottlenecks:
+   * Loki — bottlenecks on ingestion streams and chunk storage accessed using LogQL language
+   * Tempo — bottlenecks on trace storage and block compaction accessed using TracQL language
    * Mimir — bottlenecks on series cardinality and query concurrency
-   * Tempo — bottlenecks on trace storage and block compaction
 
 1. These potential bottlenecks are addressed by the new architecture of OpenObserve's <strong>Unified Agent Ingestion</strong>.
    <a name="Arch"></a>
@@ -77,13 +89,25 @@ OpenObserve is open-sourced with a AGPL 3.0 license for local install from:
    * https://migration.openobserve.ai/
 
 
-## Quickstart demo
+## Quickstart demos
 
 There are three ways to obtain a demo environment installer with credentials baked in, and install locally on a Mac:
 
-<a href="#DockerDemo">A. Docker demo image download</a><br />
-<a href="#curldemo">B. curl and run</a><br />
-<a href="#clouddemo">C. cloud run</a>
+1. Install Helm on your local machine being observed.
+   ```sh
+   brew install helm
+   helm version
+   ```
+   <pre>
+   version.BuildInfo{Version:"v4.2.3", GitCommit:"43e8b7feece8beb0fcba47059ec9b522fd929a64", GitTreeState:"clean", GoVersion:"go1.26.5", KubeClientVersion:"v1.36"}
+   </pre>
+
+1. Install OpenObserve demo locally:
+    <a href="#DockerDemo">A. Docker demo image download</a><br />
+    <a href="#curldemo">B. curl and run</a><br />
+    <a href="#clouddemo">C. cloud run</a>
+    
+The software is localized in 11 languages: English, German, French, Italian, Japanese, Korean, Dutch, Portuguese, Spanish, Turkish, Chinese (Simplified)
 
 If you have the demo environment already running, <a href="#RunDemo">go to Run Demo</a>.
 
@@ -267,12 +291,49 @@ At the OpenObserve dashboard:
    These were identified in the <a href="#Arch">Architecture diagram above</a> and documentation at<br />
    <a target="_blank" href="https://openobserve.ai/docs/ingestion/">https://openobserve.ai/docs/ingestion</a>
 
-   ### Specific O2 Features
+1. Configure Data Source for macOS. Click the icon to get the code to "Install the Agent":
+   ```sh
+   curl -sSL https://raw.githubusercontent.com/openobserve/o2-datasource/main/k8s/install.sh | bash -s --    --cluster-name=cluster1   --o2-url=http://localhost:5080   --org-id=default   --access-key=...
+   ```
+   <pre>
+   ✓ cert-manager installation initiated
+   ℹ Waiting for cert-manager webhook to be ready (timeout: 300s)...
+   </pre>
+
+1. Click "Test" button to "Verify Data in OpenObserve".
+1. Click "Dashboards" menu, "New Dashboard", named "???.
+1. Click "Add panel". TODO:
+
+
+## Unified Log setting
+
+The unified log is high volume. To reduce it, set LEVEL or PREDICATE in
+   ```
+   /opt/openobserve-collector/macos-unified-log.sh 
+   ```
+and run:
+   ```
+   sudo launchctl kickstart -k system/ai.openobserve.macos-unified-log
+   ```
+
+
+### Specific O2 Features
 
 1. Click "OpenObserve Features" for this pop-up:
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1785124347/o2-features-1399x705_doafqw.png"><img src="o2-features-1399x705.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1785124347/o2-features-1399x705_doafqw.png" /></a>
 
    OpenObserver provides access to 30+ prebuilt dashboards to kickoff your observability strategy. 
+
+## VRL
+
+VRL (Vector Remap Language) is a stateless scripting language initiated by Datadog's open-source team for transforming and processing observability data (logs, metrics, and traces): parse, filter, enrich, or reshape telemetry events before they reach storage or dashboards. 
+
+<a target="_blank" href="https://github.com/vectordotdev/vrl">https://github.com/vectordotdev/vrl</a>
+is built using Rust as a <a target="_blank" href="https://crates.io/crates/vrl">https://crates.io/crates/vrl</a>
+
+Play on the <a target="_blank" href="https://playground.vrl.dev/">vrl.dev Playground</a>
+
+https://github.com/vectordotdev/vrl/blob/main/examples/simple.rs
 
 
 ## Tutorials
