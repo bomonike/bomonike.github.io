@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-15"
-lastchange: "v015 KEast Timor osovo  @countries.md"
+date: "2026-08-05"
+lastchange: "v016 Peace  @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -31,7 +31,8 @@ Fields (columns) in the csv:
 * _Country_Name in English
 + _CountryName in local language
 + _demonym = The name used to refer to natives or inhabitants of the country. (Americans)
-
+* Peace_rank
+* Peace_score
 * _Phone = Telephone Dialing prefix Mobile Country Code (MCC)
 * _ISO639-2 (two letters) = ISO 3166-1 alpha-2
 * ISO-3 (three letters) = ISO 3166-1 alpha-3
@@ -180,8 +181,7 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
 
 * "Timor-Leste" is the official name of "East Timor". "Timor" comes from the Malay word for "east." "Leste" is the Portuguese word for east. So the country's name is essentially "East East", as it occupies the eastern half of the island of Timor, north of Australia. After being colonized by Portugal, it declared independence in 1975 but was almost immediately invaded and occupied by Indonesia. It wasn't until May 20, 2002 that East Timor finally achieved full independence, becoming the first new sovereign state of the 21st century.
 
-* Although the <strong>Vatican City</strong> has +379 as its official country code is, it not used because their telephone system is integrated with Italy's country code +39. Call that, followed by the area code for Rome 06, and then the local number 698xxxxx.
-
+* Although the <strong>Vatican City</strong> has +379 as its official country code is, it not used because their telephone system is integrated with Italy's country code +39. Call that, followed by the area code for Rome 06, and then the local number 698xxxxx. When dialing within Italy, 06 698xxxxx.
 
 
 ## Passport Index
@@ -191,6 +191,8 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
 ## Peace Index
 
 This is perhaps the most important consideration.
+
+2026 GPI scores for 162 matching countries. Territories/microstates not covered by the GPI index (Andorra, Monaco, Luxembourg, Malta, small island nations, dependencies) and were correctly left blank.
 
 https://www.visionofhumanity.org/maps/#/
 publishes a composite score weighted on a scale of 1-5 based on 23 quantitative and qualitative indicators. The lower the score the more peaceful the country. The lowest score is Iceland at 1.095, followed by Ireland, New Zealand, Austria, Switzerland, Singapore, Portugal, Denmark, Slovenia, Finland in the top 10. The US is 128th at 2.443.
