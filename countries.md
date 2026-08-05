@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-08-05"
-lastchange: "v016 Peace  @countries.md"
+lastchange: "v017 DST @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -86,6 +86,34 @@ Additional fields to be added:
 + International Union of Railways (UIC)
 
 
+## Time Zones
+
+<a target="_blank" href="https://en.wikipedia.org/wiki/Daylight_saving_time_by_country">BLOG</a>:
+The US, Canada (except Arizona (except Navajo) and Hawaii do not observe DST), and 
+Carribean countries Bahamas, Bermuda, Haiti, Turks & Caicos, Saint Pierre & Miquelon, Mexican border cities (e.g., Tijuana, Ciudad Juárez)
+	* Start DST on the Second Sunday in March, 02:00 local
+   * Stop. DST	on the First Sunday in November, 02:00 local
+Countries that observe DST in the European Union and others: 
+   * start DST on the Last Sunday in March, 01:00 UTC
+   * stop. DST on the Last Sunday in October, 01:00 UTC
+   * Lebanon turns at 00:00 local time
+Israel 
+   * start DST on the Friday before the last Sunday in March, 02:00 local
+   * stop. DST on the Last Sunday in October, 00:00 local time
+
+Egypt
+   * Start DST on the Last Friday in April, 00:00 local	
+   * Stop. DST	on the Last Thursday in October, 24:00 local
+
+In the Southern Hemisphere: Australia, New Zealand 
+   * Start DST on the First Sunday in October, 02:00 local
+   * Stop. DST	on the First Sunday in April, 03:00 local
+Chile (most of country; Magallanes and Aysén now exempt)	
+   * Start DST on the First Saturday in September, 24:00 UTC−04:00
+   * Stop. DST	on the First Saturday in April, 24:00 UTC−03:00
+
+As of 2026, almost all Latin American countries do not use DST.
+Brazil abolished seasonal clock changes in 2019 and now uses four standard time zones year‑round.
 
 ## Country groups
 
