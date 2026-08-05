@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-06"
-lastchange: "v107 ESPR CEAP DDP EU @acronyms.md"
+date: "2026-08-05"
+lastchange: "v109 fix: Slurm edit @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -609,7 +609,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 * HBD = Happy Birth Day
 *	HBI	=	High Business Impact (flag for Azure to add encryption and limit diagnostics collection on sensitive data)
 * HBM = High Bandwidth Memory (a sandwich of RAM on top of an imposer next to the processor for 1-4 TB/s bandwidth to GPUs, AI accelerators, and supercomputers)
-* HNSW = Hierarchical Navigable Small World (graphs)
+* HNSW = Hierarchical Navigable Small World (mathematical algorithm for searching through Nearest Neighbor vectors in RAM)
 *	HCL	=	HashiCorp Configuration Language
 *	HD	=	High Definition
 *	HDFS	=	Hadoop Distributed File System
@@ -1275,6 +1275,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	SLO	=	Service Level Objective
 * SLR	=	Service Linked Role (in IAM for Amazon Lightsail)
 *	SLSA	=	Supply chain Levels for Software Artifacts	(<a target="_blank" href="https://slsa.dev/spec/">framework</a> of standards and controls for a secure supply chain to build secure resilient software)
+* Slurm = Simple Linux Utility for Resource Management (but transitioned in 2012 to mean the Slurm Workload Manager <a target="_blank href="https://slurm.schedmd.com/faq.html#free">open‑source</a> job scheduler and Kubernetes cluster resource manager now sophisticated enough for use on HPC clusters and NVIDIA supercomputers.)
 *	SMB	=	Server Message Block (storage)
 *	SMB	=	Small or Mid-sized Business
 *	SME	=	Subject Matter Expert
