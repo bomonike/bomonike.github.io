@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-08-06"
-lastchange: "v023 reword scatterplot of corruption vs peace @countries.md"
+lastchange: "v024 vertical bar field names @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -66,8 +66,8 @@ Fields (columns) in the csv:
 + continent	= One of 7 continents where the country is located.		
 * un_member	= Whether the country is a member of the United Nations (TRUE or FALSE).		
 
-+ language_all	= The primary languages spoken in the country. Delimited by |.
-* religion_all	= The most practiced religions in the country in order. Delimted by |. Limit of 3. Lower threshold 10%. "No Religion" included.	
++ language_all	= The primary languages spoken in the country. Delimited by \|.
+* religion_all	= The most practiced religions in the country in order. Delimted by \|. Limit of 3. Lower threshold 10%. "No Religion" included.	
 
 Additional fields to be added:
 + labor_force	Total labor force figure.
