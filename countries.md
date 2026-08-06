@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-08-05"
-lastchange: "v017 DST @countries.md"
+lastchange: "v020 add: MERCOSUR, corruption vs peace @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -31,8 +31,10 @@ Fields (columns) in the csv:
 * _Country_Name in English
 + _CountryName in local language
 + _demonym = The name used to refer to natives or inhabitants of the country. (Americans)
-* Peace_rank
-* Peace_score
+* <a href="#Corruption">Corruption</a>
+* <a href="#Peace">Peace_rank</a>
+* <a href="#Peace">Peace_score</a>
+* <a href="#Passport">Passport</a>
 * _Phone = Telephone Dialing prefix Mobile Country Code (MCC)
 * _ISO639-2 (two letters) = ISO 3166-1 alpha-2
 * ISO-3 (three letters) = ISO 3166-1 alpha-3
@@ -86,17 +88,40 @@ Additional fields to be added:
 + International Union of Railways (UIC)
 
 
+## Vector databases for Semantic Search
+
+Popular Vector Databases include Pinecone, Milvus, Weaviate, Qdrant, Chroma, and cloud offerings like AWS OpenSearch, Google Vertex AI Vector Search, and Azure Cognitive Search.
+Qdrant (<a target="_blank" href="https://qdrant.tech/">qdrant.tech</a>, written in Rust) runs as fully open-source self-hosted options or as lightweight embedded libraries. https://qdrant.tech/
+
+My countries-mdrant Rust program was created using this prompt:
+"In folder /Users/johndoe/bomonike/rustlang-samples create countries-mdrant Rust program countries-mdrant to load a Qdrant database named countries-qdrant from country_info.csv in folder /Users/johndoe/bomonike/rustlang-samples. Use the Dioxus library to create Rust code present a chatbot GUI for users to type in questions answered using the database. Measure the elapsed time taken for each step. Write the program such that others can use its functions for other databases. Create a CLI bash shell script named countries-mdrant.sh to start the Qdrant database."
+
+"Also create a scatterplot of Cor_score vs. Peace_score. Include a correlation line. PROTIP: Less-corrupt countries tend to be more peaceful.
+
+
+
+A vector database is a specialized database designed to store, index, and query high-dimensional vector embeddings—numerical representations of unstructured data like text, images, audio, or video. Unlike traditional relational databases that handle structured data in rows and columns, vector databases enable similarity search by treating data as points in a multi-dimensional space where proximity reflects semantic similarity.
+
+Vector embeddings are dense arrays of floating-point numbers (often 100s to 1000s of dimensions) that translate complex, unstructured data into a format machine learning models can process. These embeddings capture semantic meaning—similar items are positioned closer together in vector space, while dissimilar items are farther apart.
+
+Use specialized algorithms like k-nearest neighbor (k-NN), Hierarchical Navigable Small World (HNSW), or Inverted File Index (IVF) to enable fast lookup
+
+
+
+
 ## Time Zones
 
 <a target="_blank" href="https://en.wikipedia.org/wiki/Daylight_saving_time_by_country">BLOG</a>:
 The US, Canada (except Arizona (except Navajo) and Hawaii do not observe DST), and 
-Carribean countries Bahamas, Bermuda, Haiti, Turks & Caicos, Saint Pierre & Miquelon, Mexican border cities (e.g., Tijuana, Ciudad Juárez)
-	* Start DST on the Second Sunday in March, 02:00 local
+Carribean countries Bahamas, Bermuda, Haiti, Turks & Caicos, Saint Pierre & Miquelon, Mexican border cities (e.g., Tijuana, Ciudad Juárez):
+   * Start DST on the Second Sunday in March, 02:00 local
    * Stop. DST	on the First Sunday in November, 02:00 local
+
 Countries that observe DST in the European Union and others: 
    * start DST on the Last Sunday in March, 01:00 UTC
    * stop. DST on the Last Sunday in October, 01:00 UTC
    * Lebanon turns at 00:00 local time
+
 Israel 
    * start DST on the Friday before the last Sunday in March, 02:00 local
    * stop. DST on the Last Sunday in October, 00:00 local time
@@ -108,6 +133,7 @@ Egypt
 In the Southern Hemisphere: Australia, New Zealand 
    * Start DST on the First Sunday in October, 02:00 local
    * Stop. DST	on the First Sunday in April, 03:00 local
+
 Chile (most of country; Magallanes and Aysén now exempt)	
    * Start DST on the First Saturday in September, 24:00 UTC−04:00
    * Stop. DST	on the First Saturday in April, 24:00 UTC−03:00
@@ -117,27 +143,29 @@ Brazil abolished seasonal clock changes in 2019 and now uses four standard time 
 
 ## Country groups
 
-The EU (European Union) is a political and economic union of 27 member countries. 20 of the 27 EU countries are in the "eurozone" where the euro (€) is the official currency in 2002. Members of the Economic Monetary Union (EMU) follow unified monetary policies managed by the European Central Bank (ECB). Some non-EU microstates also use the Euro by arrangement.
+The <a target="_blank" href="https://www.mercosur.int/en/about-mercosur/what-is-mercosur">MERCOSUR</a> (Mercado Común del Sur, or Southern Common Market) refers to a South American regional economic and political bloc created in 1991 by the Treaty of Asencion among full members Brazil, Paraguay, Uruguay, Bolivia, Venezuela. 
+But Venezuela's membership was suspended in 2016. Associate members, with more limited trade and participation rights are, on the west coast: (Colombia, Ecuador, Peru, Chile) and on the Northern coast: Guyana, and Suriname, Panama. 
+Unlike the EU, MERCOSUR is primarily a free-trade area and customs union, not a shared-market system with a common currency or fully unified laws.
+French Guiana is not a member because it's an overseas department and region of France.
 
-Baltic countries include Estonia, Latvia, Lithuania, Poland, which is East of Germany, Austria, Czech Republic.
-
-Former communist country to adopt the euro include Slovakia (2009), Estonia (2011), Latvia (2014), Lithuania (2015), and Croatia (2023).
-
+The <strong>EU (European Union)</strong> is a political and economic union of 27 member countries. 20 of the 27 EU countries are in the "eurozone" where the euro (€) is the official currency since 2002. Members of the Economic Monetary Union (EMU) follow unified monetary policies managed by the European Central Bank (ECB). Some non-EU microstates also use the Euro by arrangement.
 Poland and Hungary do not use the euro.
-
 Malta and the Republic of Cyprus adopted the Euro in 2008. 
+Former communist countries adopted the euro include Slovakia (2009), Estonia (2011), Latvia (2014), Lithuania (2015), and Croatia (2023).
+
+<strong>Baltic</strong> countries include Estonia, Latvia, Lithuania, Poland, which is East of Germany, Austria, Czech Republic.
 
 Those in the <strong>Schengen Area</strong> agreed to abolish passport controls at mutual borders. It includes most EU countries plus Switzerland, Norway, and Iceland who are not in the EU.
 Ireland is not in Schengen.
 
-NATO (North Atlantic Treaty Organization), at <a target="_blank" href="https://www.nato.int/">https://www.nato.int</a>, is a military alliance made up of 32 countries from North America and Europe. US, Canada, Norway, and Turkey are in NATO but not in the EU.
+<strong>NATO (North Atlantic Treaty Organization)</strong>, at <a target="_blank" href="https://www.nato.int/">https://www.nato.int</a>, is a military alliance made up of 32 countries from North America and Europe. US, Canada, Norway, and Turkey are in NATO but not in the EU.
 
-BRICS is an acronym for Brazil, Russia, India, China, and South Africa.
+<strong>BRICS</strong> is an acronym for Brazil, Russia, India, China, and South Africa.
 But it refers to a bloc of 10 economies, of which no EU member nation is a part.
 
-<a target="_blank" href="https://en.wikipedia.org/wiki/Five_Eyes">"Five Eyes"</a> is an Anglosphere intelligence alliance comprising Australia, Canada, New Zealand, the United Kingdom, and the United States. These countries are party to the multilateral UKUSA Agreement, a treaty for joint cooperation in signals intelligence.
+<a target="_blank" href="https://en.wikipedia.org/wiki/Five_Eyes">"Five Eyes"</a> is an "Anglosphere" intelligence alliance comprising English-speaking Australia, Canada, New Zealand, the United Kingdom, and the United States. These countries are party to the multilateral UKUSA Agreement, a treaty for joint cooperation in signals intelligence.
 
-On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-sheet-president-donald-j-trump-further-restricts-and-limits-the-entry-of-foreign-nationals-to-protect-the-security-of-the-united-states/">December 16, 2025, the Trump White House</a> expanded travel bans bans on "12 "High Risk" countries and partial restrictions on 20 others.
+On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-sheet-president-donald-j-trump-further-restricts-and-limits-the-entry-of-foreign-nationals-to-protect-the-security-of-the-united-states/">December 16, 2025, the Trump White House</a> expanded travel bans bans on "12 "High Risk" countries and partial restrictions on 20 others:
 
    1. Afghanistan
    1. Angola (additional partial)
@@ -177,10 +205,8 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
    1. Venezuela (original high risk)
    1. Yemen
    1. Zambia (additional partial)
-   1. Zimbabwe  (additional partial)
+   1. Zimbabwe (additional partial)
    <br /><br />
-
-   * Venezuela?
 
 
 ## Country Notes
@@ -211,10 +237,31 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
 
 * Although the <strong>Vatican City</strong> has +379 as its official country code is, it not used because their telephone system is integrated with Italy's country code +39. Call that, followed by the area code for Rome 06, and then the local number 698xxxxx. When dialing within Italy, 06 698xxxxx.
 
+<a id="Corruption"></a>
+
+## Corruption Perceptions Index (CPI)
+
+An annual ranking published by Transparency International since 1995.
+https://www.unesco.org/en/world-media-trends/corruption-perceptions-index
+https://www.transparency.org/en/cpi/2025
+
 
 ## Passport Index
 
 <a target="_blank" href="https://www.globalcitizensolutions.com/global-passport-index/">Global Passport Index 2025</a> goes beyond visa access. It evaluates mobility, quality of life, and investment appeal, showing not just where a passport can take you, but how well you can live and plan once you get there.
+
+https://www.boundless.com/blog/us-passport-ranking/
+The top-ranked countries in the 2024 report:
+
+1. Singapore (193 destinations)
+2. (tie) Japan and South Korea (190 destinations)<br />
+(tie) France, Germany, Italy, Spain, Denmark, Ireland, Finland<br />
+(tie) Netherlands, Sweden, Belgium, Portugal, Norway, Austria, Luxembourg<br />
+(tie) Switzerland, Greece, New Zealand<br />
+
+UAE
+
+<a id="Peace"></a>
 
 ## Peace Index
 
@@ -229,19 +276,6 @@ https://atlas.bti-project.org/
 The project “Shaping Change – Strategies of Development and Transformation” is carried out in consultation with an interdisciplinary board of experts that helps to define the project focus, identifies challenges and debates project results.
 The BTI is the result of the collaboration of nearly 300 country and regional experts from leading universities and think tanks worldwide. The project analyzes and compares transformation processes towards democracy and inclusive market economy worldwide. The BTI aims to identify successful strategies for steering change.
 
-
-## Passport Rankings
-
-https://www.boundless.com/blog/us-passport-ranking/
-The top-ranked countries in the 2024 report:
-
-1. Singapore (193 destinations)
-2. (tie) Japan and South Korea (190 destinations)<br />
-(tie) France, Germany, Italy, Spain, Denmark, Ireland, Finland<br />
-(tie) Netherlands, Sweden, Belgium, Portugal, Norway, Austria, Luxembourg<br />
-(tie) Switzerland, Greece, New Zealand<br />
-
-UAE
 
 ## Citizenship & Residency Program Evaluations
 
