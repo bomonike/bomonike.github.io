@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-08-06"
-lastchange: "v022 add: scatterplot of corruption vs peace @countries.md"
+lastchange: "v023 reword scatterplot of corruption vs peace @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -87,27 +87,6 @@ Additional fields to be added:
 + Maritime identification digits (MID)
 + International Telecommunication Union (ITU)
 + International Union of Railways (UIC)
-
-
-## Vector databases for Semantic Search
-
-Popular Vector Databases include Pinecone, Milvus, Weaviate, Qdrant, Chroma, and cloud offerings like AWS OpenSearch, Google Vertex AI Vector Search, and Azure Cognitive Search.
-Qdrant (<a target="_blank" href="https://qdrant.tech/">qdrant.tech</a>, written in Rust) runs as fully open-source self-hosted options or as lightweight embedded libraries. https://qdrant.tech/
-
-My countries-mdrant Rust program was created using this prompt:
-"In folder /Users/johndoe/bomonike/rustlang-samples create countries-mdrant Rust program countries-mdrant to load a Qdrant database named countries-qdrant from country_info.csv in folder /Users/johndoe/bomonike/rustlang-samples. Use the Dioxus library to create Rust code present a chatbot GUI for users to type in questions answered using the database. Measure the elapsed time taken for each step. Write the program such that others can use its functions for other databases. Create a CLI bash shell script named countries-mdrant.sh to start the Qdrant database."
-
-"Also create a scatterplot of Cor_score vs. Peace_score. Include a correlation line. PROTIP: Less-corrupt countries tend to be more peaceful.
-
-
-
-A vector database is a specialized database designed to store, index, and query high-dimensional vector embeddings—numerical representations of unstructured data like text, images, audio, or video. Unlike traditional relational databases that handle structured data in rows and columns, vector databases enable similarity search by treating data as points in a multi-dimensional space where proximity reflects semantic similarity.
-
-Vector embeddings are dense arrays of floating-point numbers (often 100s to 1000s of dimensions) that translate complex, unstructured data into a format machine learning models can process. These embeddings capture semantic meaning—similar items are positioned closer together in vector space, while dissimilar items are farther apart.
-
-Use specialized algorithms like k-nearest neighbor (k-NN), Hierarchical Navigable Small World (HNSW), or Inverted File Index (IVF) to enable fast lookup
-
-
 
 
 ## Time Zones
@@ -238,6 +217,7 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
 
 * Although the <strong>Vatican City</strong> has +379 as its official country code is, it not used because their telephone system is integrated with Italy's country code +39. Call that, followed by the area code for Rome 06, and then the local number 698xxxxx. When dialing within Italy, 06 698xxxxx.
 
+
 <a id="Corruption"></a>
 
 ## Corruption Perceptions Index (CPI)
@@ -248,15 +228,8 @@ An annual ranking published by Transparency International since 1995.
 
 
 <a id="Peace"></a>
-<a id="Scatterplot"></a>
 
-## Peace (Conflict) Ranking Scatterplot
-
-In the scatterplot belog, "Peace Index" scores are called "Conflict Rank" to minimize the "mental gymnastics" of reconciling that and the Conflict rank.
-
-> The lower the rank and score the more peaceful and corrupt is the country.
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786021406/countries-scatter-1396x911_r059fs.png"><img alt="countries-scatter-1396x911.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786021406/countries-scatter-1396x911_r059fs.png" /></a>
+## Peace (Conflict) Ranking
 
 <a target="_blank" href="https://www.visionofhumanity.org/maps/#/">visionofhumanity.org</a>
 annually publishes a rank and composite score (weighted on a scale of 1-5) based on 23 quantitative and qualitative indicators. 
@@ -269,6 +242,36 @@ The lowest score (ranked at #1) continues to be Iceland, followed by Ireland, Ne
 https://atlas.bti-project.org/
 The project “Shaping Change – Strategies of Development and Transformation” is carried out in consultation with an interdisciplinary board of experts that helps to define the project focus, identifies challenges and debates project results.
 The BTI is the result of the collaboration of nearly 300 country and regional experts from leading universities and think tanks worldwide. The project analyzes and compares transformation processes towards democracy and inclusive market economy worldwide. The BTI aims to identify successful strategies for steering change.
+
+
+## Vector databases for Semantic Search
+
+A vector database is a specialized database designed to store, index, and query high-dimensional vector embeddings—numerical representations of unstructured data like text, images, audio, or video. Unlike traditional relational databases that handle structured data in rows and columns, vector databases enable similarity search by treating data as points in a multi-dimensional space where proximity reflects semantic similarity.
+
+Vector embeddings are dense arrays of floating-point numbers (often 100s to 1000s of dimensions) that translate complex, unstructured data into a format machine learning models can process. These embeddings capture semantic meaning—similar items are positioned closer together in vector space, while dissimilar items are farther apart.
+
+It uses specialized algorithms like k-nearest neighbor (k-NN), Hierarchical Navigable Small World (HNSW), or Inverted File Index (IVF) to enable fast lookup
+
+Popular Vector Databases include Pinecone, Milvus, Weaviate, Qdrant, Chroma, and cloud offerings like AWS OpenSearch, Google Vertex AI Vector Search, and Azure Cognitive Search.
+Qdrant (<a target="_blank" href="https://qdrant.tech/">qdrant.tech</a>, written in Rust) runs as fully open-source self-hosted options or as lightweight embedded libraries. https://qdrant.tech/
+
+My countries-mdrant Rust program was created using this prompt:
+"In folder /Users/johndoe/bomonike/rustlang-samples create countries-mdrant Rust program countries-mdrant to load a Qdrant database named countries-qdrant from country_info.csv in folder /Users/johndoe/bomonike/rustlang-samples. Use the Dioxus library to create Rust code present a chatbot GUI for users to type in questions answered using the database. Measure the elapsed time taken for each step. Write the program such that others can use its functions for other databases. Create a CLI bash shell script named countries-mdrant.sh to start the Qdrant database."
+
+
+<a id="Scatterplot"></a>
+
+## Scatterplot of Corruption vs. Conflict (Peace)
+
+"Also create a scatterplot of Cor_rank (Corruption rank) vs. Peace_rank. Include a correlation line. 
+
+In the scatterplot below, "Peace Index" scores are called "Conflict Rank" to minimize the "mental gymnastics" of reconciling that and the Conflict rank.
+
+> The lower the rank and score the more peaceful and corrupt is the country.
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786021406/countries-scatter-1396x911_r059fs.png"><img alt="countries-scatter-1396x911.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786021406/countries-scatter-1396x911_r059fs.png" /></a>
+
+Observe that less-corrupt countries (on the left) tend to be be ranked as less conflict (be more peaceful).
 
 
 ## Passport Index
