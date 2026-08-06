@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-05"
-lastchange: "v020 add: MERCOSUR, corruption vs peace @countries.md"
+date: "2026-08-06"
+lastchange: "v022 add: scatterplot of corruption vs peace @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -31,8 +31,9 @@ Fields (columns) in the csv:
 * _Country_Name in English
 + _CountryName in local language
 + _demonym = The name used to refer to natives or inhabitants of the country. (Americans)
-* <a href="#Corruption">Corruption</a>
-* <a href="#Peace">Peace_rank</a>
+* <a href="#Corruption">Cor_rank</a> = Corruption_rank
+* <a href="#Corruption">Cor_scale</a>
+* <a href="#Peace">Peace_rank</a> = "conflict" rank
 * <a href="#Peace">Peace_score</a>
 * <a href="#Passport">Passport</a>
 * _Phone = Telephone Dialing prefix Mobile Country Code (MCC)
@@ -138,15 +139,15 @@ Chile (most of country; Magallanes and Aysén now exempt)
    * Start DST on the First Saturday in September, 24:00 UTC−04:00
    * Stop. DST	on the First Saturday in April, 24:00 UTC−03:00
 
-As of 2026, almost all Latin American countries do not use DST.
+As of 2026, DST is not used by Latin American countries.
 Brazil abolished seasonal clock changes in 2019 and now uses four standard time zones year‑round.
 
 ## Country groups
 
 The <a target="_blank" href="https://www.mercosur.int/en/about-mercosur/what-is-mercosur">MERCOSUR</a> (Mercado Común del Sur, or Southern Common Market) refers to a South American regional economic and political bloc created in 1991 by the Treaty of Asencion among full members Brazil, Paraguay, Uruguay, Bolivia, Venezuela. 
-But Venezuela's membership was suspended in 2016. Associate members, with more limited trade and participation rights are, on the west coast: (Colombia, Ecuador, Peru, Chile) and on the Northern coast: Guyana, and Suriname, Panama. 
+But Venezuela's membership was suspended in 2016. Associate members, with more limited trade and participation rights are, on the west coast: (Colombia, Ecuador, Peru, Chile) and on the Northern coast: Guyana, and Suriname, plus Panama. 
 Unlike the EU, MERCOSUR is primarily a free-trade area and customs union, not a shared-market system with a common currency or fully unified laws.
-French Guiana is not a member because it's an overseas department and region of France.
+French Guiana is not a member because it's a region of France and the only EU territory overseas department in South America.
 
 The <strong>EU (European Union)</strong> is a political and economic union of 27 member countries. 20 of the 27 EU countries are in the "eurozone" where the euro (€) is the official currency since 2002. Members of the Economic Monetary Union (EMU) follow unified monetary policies managed by the European Central Bank (ECB). Some non-EU microstates also use the Euro by arrangement.
 Poland and Hungary do not use the euro.
@@ -242,8 +243,32 @@ On <a target="_blank" href="https://www.whitehouse.gov/fact-sheets/2025/12/fact-
 ## Corruption Perceptions Index (CPI)
 
 An annual ranking published by Transparency International since 1995.
-https://www.unesco.org/en/world-media-trends/corruption-perceptions-index
-https://www.transparency.org/en/cpi/2025
+* https://www.unesco.org/en/world-media-trends/corruption-perceptions-index
+* https://www.transparency.org/en/cpi/2025
+
+
+<a id="Peace"></a>
+<a id="Scatterplot"></a>
+
+## Peace (Conflict) Ranking Scatterplot
+
+In the scatterplot belog, "Peace Index" scores are called "Conflict Rank" to minimize the "mental gymnastics" of reconciling that and the Conflict rank.
+
+> The lower the rank and score the more peaceful and corrupt is the country.
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786021406/countries-scatter-1396x911_r059fs.png"><img alt="countries-scatter-1396x911.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786021406/countries-scatter-1396x911_r059fs.png" /></a>
+
+<a target="_blank" href="https://www.visionofhumanity.org/maps/#/">visionofhumanity.org</a>
+annually publishes a rank and composite score (weighted on a scale of 1-5) based on 23 quantitative and qualitative indicators. 
+
+2026 GPI scores for 162 matching countries. Territories/microstates not covered by the GPI index (Andorra, Monaco, Luxembourg, Malta, small island nations, dependencies) and were correctly left blank.
+
+The lowest score (ranked at #1) continues to be Iceland, followed by Ireland, New Zealand, Austria, Switzerland, Singapore, Portugal, Denmark, Slovenia, Finland in the top 10. The US dropped from 128th in 2025 to 134th in 2026.
+
+
+https://atlas.bti-project.org/
+The project “Shaping Change – Strategies of Development and Transformation” is carried out in consultation with an interdisciplinary board of experts that helps to define the project focus, identifies challenges and debates project results.
+The BTI is the result of the collaboration of nearly 300 country and regional experts from leading universities and think tanks worldwide. The project analyzes and compares transformation processes towards democracy and inclusive market economy worldwide. The BTI aims to identify successful strategies for steering change.
 
 
 ## Passport Index
@@ -260,22 +285,6 @@ The top-ranked countries in the 2024 report:
 (tie) Switzerland, Greece, New Zealand<br />
 
 UAE
-
-<a id="Peace"></a>
-
-## Peace Index
-
-This is perhaps the most important consideration.
-
-2026 GPI scores for 162 matching countries. Territories/microstates not covered by the GPI index (Andorra, Monaco, Luxembourg, Malta, small island nations, dependencies) and were correctly left blank.
-
-https://www.visionofhumanity.org/maps/#/
-publishes a composite score weighted on a scale of 1-5 based on 23 quantitative and qualitative indicators. The lower the score the more peaceful the country. The lowest score is Iceland at 1.095, followed by Ireland, New Zealand, Austria, Switzerland, Singapore, Portugal, Denmark, Slovenia, Finland in the top 10. The US is 128th at 2.443.
-
-https://atlas.bti-project.org/
-The project “Shaping Change – Strategies of Development and Transformation” is carried out in consultation with an interdisciplinary board of experts that helps to define the project focus, identifies challenges and debates project results.
-The BTI is the result of the collaboration of nearly 300 country and regional experts from leading universities and think tanks worldwide. The project analyzes and compares transformation processes towards democracy and inclusive market economy worldwide. The BTI aims to identify successful strategies for steering change.
-
 
 ## Citizenship & Residency Program Evaluations
 
