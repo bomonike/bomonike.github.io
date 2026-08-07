@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2026-08-06"
+date: "2026-08-07"
 lastchange: "v024 vertical bar field names @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
