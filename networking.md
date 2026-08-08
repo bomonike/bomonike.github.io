@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-07-21"
-lastchange: "v016 jake's tech labs switches @networking.md"
+date: "2026-08-08"
+lastchange: "v017 acl jake's tech labs switches @networking.md"
 url: "https://bomonike.github.io/networking"
 file: "networking"
 title: "Networking Certifications"
@@ -24,10 +24,35 @@ created: "2026-03-19"
 This article was hand-crafted to combine insights from the documents, tutorials, and videos listed below.
 The objective here is to combine all the wisdom into deep knowledge logically sequenced.
 
+
+<a id="Glossary"></a>
+
 ## Glossary
 
+https://www.liveaction.com/glossary/glossary-of-network-terms/
 
-## Certifications
+A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X-Z
+
+* ACL = Access Control List (standard and extended to permit or allow access to an interface)
+* AST = Automatic spanning tree (Function that supports the automatic resolution of spanning trees in SRB networks, providing a single path for spanning explorer frames to traverse from a given node in the network to another. AST is based on the IEEE 802.1 standard.)
+* ATM = Asynchronous Transfer Mode (A broadband transmission system using 53-octet packets over a cell-switched network at speeds up to 2.2 GBPS)
+* ATP = AppleTalk Transaction Protocol (Transport-level protocol that allows reliable request-response exchanges between two socket clients)
+* CCNA
+* LAN = Local Area Network
+* SOC = Security Operations Center
+* RSTP = Rapid Spanning Tree Protocol
+* STP = Spanning Tree Protocol
+* VLAN = Virtual LAN
+
+
+## Terminology Mind Map diagrams
+
+<a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=kuMbWiJHtxY&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">Terminology Mind Maps</a>
+   * XMind.com
+   * mindnode.com
+   <br /><br />
+
+## Cisco Certifications: CCNA
 
    * https://www.cisco.com/go/ccna
    * https://www.cisco.com/go/certroadmap
@@ -45,10 +70,19 @@ The transition from v1.1 to v2.0 announced May, 2026 for Feb 3, 2027 release.
    * @certskills <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=iSI0y6a5JMM&pp=ugUHEgVlbi1VUw%3D%3D">VIDEO</a>: v2.0 Blueprint by <a target="_blank" rel="noopener noreferrer" href="https://linktr.ee/Wendello">Wendello</a>
    <br /><br />
 
+https://www.youtube.com/watch?v=Xw02nLyW-q4
+CCNA 2.0 performance labs: How to pass the new hands-on questions
+
+https://www.youtube.com/watch?v=P6NdB2vj6Ng&pp=ugUHEgVlbi1VUw%3D%3D
+CCNA v2.0 Announced: Your Iterim Study Plan & Timeline...
+by Wendell Odem
+
 COMPtia Network+ does not have the proprietary information in the Cisco CCNA & CCNP exams. 
 But knowing Cisco (all product model numbers) can opens doors for you to work in enterprises, which pays better than mom and pop employers.
 
 NVIDIA
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=JJBwzoRRtZk&pp=ugUEEgJlbg%3D%3D">How I passed on first try</a>
 
 
 ## The Tutorials jungle
@@ -106,28 +140,35 @@ From here, ask the AI about:
    * Suggest Supplemental
    <br /><br />
 
-
 https://learn.flackbox.com/courses/enrolled/793825
+
 
 ## Cisco Packet Tracer
 
-@NeilAnderson (flackbox.com):
-<a target="_blank" href="https://learn.flackbox.com/courses/enrolled/227187">GNS3 and Packet Tracer Installation</a>:
+1. Docs with YouTube:
+
+   @NeilAnderson (flackbox.com):
+   <a target="_blank" href="https://learn.flackbox.com/courses/enrolled/227187">GNS3 and Packet Tracer Installation</a>:
    1. <a target="_blank" href="https://www.flackbox.com/cisco-ccna-lab-guide">PDF: Free CCNA Lab Guide</a>
    1. Sign up https://www.netacad.com/courses/packet-tracer/introduction-packet-tracer
       * Start Cisco Packet Tracer Installation and Configuration (10:19 )
    1. https://github.com/GNS3/gns3-gui/releases/tag/v2.0.3 (Assets not the latest)
       https://learn.flackbox.com/courses/227187/lectures/3535851
       * Start GNS3 Installation and Configuration (17:06 )
+   REMEMBER: The app is within a folder of the same name.
+   Each install of a version is another file. 
+   * Cisco Packet Tracer 9.0.0
+   * Cisco Packet Tracer 9.0.1
+   REMEMBER: 
 
-@jitl.jp:
-* <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=a1Im6GYaSno&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ&index=3">VIDEO</a>:
-Install from https://jitl.jp/packet-tracer redirects to
+   @jitl.jp:
+   * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=a1Im6GYaSno&list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ&index=3">VIDEO</a>:
+   Install from https://jitl.jp/packet-tracer redirects to
 
-@Jeremys:
+   @Jeremys:
    * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=a1Im6GYaSno">@JeremysITLab 003: Packet Tracer Introduction - Day 1 Lab</a>
 
-@DavidBombal:
+   @DavidBombal:
    * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=XXCEk8FO9lQ">@DavidBombal 004 Cisco Packet Tracer install (Windows 11)</a>
    * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=rKUhxX_a-mg">@DavidBombal 005 Cisco Packet Tracer install (Apple macOS)</a>
 
@@ -138,12 +179,22 @@ Install from https://jitl.jp/packet-tracer redirects to
    * <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=EdsLU9oBudg">@DavidBombal 009 Build a Web Server network for free using Cisco Packet Tracer</a>
 
 
-## Terminology Mind Map diagrams
+1. Download "Cisco Packet Tracer macOS" pdf at 
+   https://www.netacad.com/skillsforall/files/Cisco_Packet_Tracer_Download_and_Installation_Instructions.pdf
+1. Keep the pdf open on a 3rd screen.
+1. "Step 1.Download the version of Packet Tracer you require:
+   ""Packet Tracer 9.0.1 MacOS 64bit"
+   https://www.netacad.com/resources/lab-downloads?courseLang=en-US
+1. Download to "Downloads" folder:
+   CiscoPacketTracer_901_macOS_64bit.dmg
+1. Click the .dmg to open. Click "I accept the license". 
+1. Click "Install" for installing "core" at 1.15 GB. Type password.
+1. Wait for "unpack".
+1. Click "x" to dismiss pop-up:
+   "Support Ending for Intel-based Apps. This version of "PackaetTracer901_installer" includes a component that will not work with a future release of macOS. Learn how to update to an Apple silicon version.
 
-<a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=kuMbWiJHtxY&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">Terminology Mind Maps</a>
-   * XMind.com
-   * mindnode.com
-   <br /><br />
+
+
 
 ### OSI Layer cake
 
@@ -174,7 +225,7 @@ Install from https://jitl.jp/packet-tracer redirects to
 
 Hubs broadcast traffic promiscuously. Now obsolete.
 
-Switches route to specific (48 bit) MAC Addresses
+Switches on layer 3 route to specific (48 bit) MAC Addresses
 
 IOL-L2 adds Layer-2 switching support (standard IOL is L3-only).
 
@@ -238,6 +289,7 @@ API gateway
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=GwpO4Qn7vVI">@PaoloReyes1 006 Network Security starts with ACLs.mp4</a></li>
 </ul>
 
+Extended access list: 100-299 and 2000-2699, or named, closest at the source ay vlan interface
 
 ### Firewall
 
@@ -310,12 +362,18 @@ $799 Elsa’s Amplimax Ultra
 Layer 2 LLDP (Link Layer Discovery Protocol) between switches
 
 
-### STP (Spanning Tree Protocol) & RSTP
+### STP (Spanning Tree Protocol) & Rapid STP
 
-* @Flock: 25. STP - Spanning Tree Protocol
+Vol 1, Part 3, Chapter 09:
 
 <ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=xsgjY5DOxH8&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 065 How STP Works: The Essential Guide to Preventing Loops in Any Network.mp4</a></li>
+@Flock: 25. STP - Spanning Tree Protocol
+<li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=xsgjY5DOxH8&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 065 How STP Works: The Essential Guide to Preventing Loops in Any Network.mp4</a>
+   Redundant links
+   Root switch, cost, port
+   Designated ports
+   Topologies
+</li>
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=PfOVjMR21Xs&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 066 Interview Review: Analyzing an STP Topology #1 (All Defaults).mp4</a></li>
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=hSW6aXxFZmI&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 067 Interview Review: Analyzing an STP Topology (#2; Varied Costs).mp4</a></li>
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=V0S4H9r2dMQ&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 068 Why is Spanning Tree Protocol Convergence So Slow? (Answers Inside).mp4</a></li>
@@ -325,6 +383,10 @@ Layer 2 LLDP (Link Layer Discovery Protocol) between switches
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=CMp0gLw_V6s&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 072 Lab Intro: Configuration Options for Rapid STP (RSTP). Two Labs!.mp4</a></li>
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=fZUO74wW9Eo&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 073 STP PortFast: Pros (Fast) and Cons (Dangerous).mp4</a></li>
 <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=loDYI_AYALQ&list=PLhDAmDsTz9Xe2JrZqmPlMjYi5vsNAILG3">@NetworkUpskill 074 Interview Review: STP PortFast – Where and at What Cost?.mp4</a></li>
+
+https://www.youtube.com/watch?v=PfOVjMR21Xs&pp=ugUHEgVlbi1VUw%3D%3D
+
+
 </ul>
 
 ### Cisco BPDU Guard & Filter
@@ -2019,6 +2081,15 @@ Status: [object Object]
 0 / 1 point
 
 
+## WireShark
+
+https://diagrams.eventhelix.com/nick-russo/
+PCAP diagram file library
+
+https://www.youtube.com/watch?v=eCVeoNpXPTo&pp=ugUHEgVlbi1VUw%3D%3D
+SOC Interview: I ask candidates this one WireShark question
+
+
 ## References
 
 https://ocw.mit.edu/courses/6-829-computer-networks-fall-2002/
@@ -2027,6 +2098,8 @@ Computer Networks
 Prof. Hari Balakrishnan
 (no videos)
 How does the global network infrastructure work and what are the design principles on which it is based? In what ways are these design principles compromised in practice? How do we make it work better in today’s world? How do we ensure that it will work well in the future in the face of rapidly growing scale and heterogeneity? And how should Internet applications be written, so they can obtain the best possible performance both for themselves and for others using the infrastructure? These are some issues that are grappled with in this course. The course will focus on the design, implementation, analysis, and evaluation of large-scale networked systems. Topics include internetworking philosophies, unicast and multicast routing, congestion control, network quality of service, mobile networking, router architectures, network-aware applications, content dissemination systems, network security, and performance issues. Material for the course will be drawn from research papers, industry white papers, and Internet RFCs.
+
+
 
 
 <hr />
