@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-07"
-lastchange: "v024 vertical bar field names @countries.md"
+date: "2026-08-10"
+lastchange: "v025 CARICOM French Guiana @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -123,15 +123,18 @@ Brazil abolished seasonal clock changes in 2019 and now uses four standard time 
 
 ## Country groups
 
+The <strong>EU (European Union)</strong> is a political and economic union of 27 member countries. 20 of the 27 EU countries are in the "eurozone" where the euro (€) is the official currency since 2002. Members of the Economic Monetary Union (EMU) follow unified monetary policies managed by the European Central Bank (ECB). Some non-EU microstates also use the Euro by arrangement.
+Poland and Hungary do not use the euro.
+Malta and the Republic of Cyprus adopted the Euro in 2008. 
+Former communist countries adopted the euro include Slovakia (2009), Estonia (2011), Latvia (2014), Lithuania (2015), and Croatia (2023).
+
 The <a target="_blank" href="https://www.mercosur.int/en/about-mercosur/what-is-mercosur">MERCOSUR</a> (Mercado Común del Sur, or Southern Common Market) refers to a South American regional economic and political bloc created in 1991 by the Treaty of Asencion among full members Brazil, Paraguay, Uruguay, Bolivia, Venezuela. 
 But Venezuela's membership was suspended in 2016. Associate members, with more limited trade and participation rights are, on the west coast: (Colombia, Ecuador, Peru, Chile) and on the Northern coast: Guyana, and Suriname, plus Panama. 
 Unlike the EU, MERCOSUR is primarily a free-trade area and customs union, not a shared-market system with a common currency or fully unified laws.
 French Guiana is not a member because it's a region of France and the only EU territory overseas department in South America.
 
-The <strong>EU (European Union)</strong> is a political and economic union of 27 member countries. 20 of the 27 EU countries are in the "eurozone" where the euro (€) is the official currency since 2002. Members of the Economic Monetary Union (EMU) follow unified monetary policies managed by the European Central Bank (ECB). Some non-EU microstates also use the Euro by arrangement.
-Poland and Hungary do not use the euro.
-Malta and the Republic of Cyprus adopted the Euro in 2008. 
-Former communist countries adopted the euro include Slovakia (2009), Estonia (2011), Latvia (2014), Lithuania (2015), and Croatia (2023).
+To foster closer cooperation in trade, climate resilience, and security, on July 7, 2026, French Guiana and Martinique (overseas departments of France) became Associate Members of the <strong>Caribbean Community (CARICOM)</strong>, joining
+British Overseas Territories (Anguilla, Bermuda, British Virgin Islands, Cayman Islands) and Curaçao (constituent country of the Kingdom of the Netherlands). Full members of CARICOM include British Overseas Territories (Turks and Caicos Islands, Montserrat); Antigua and Barbuda, The Bahamas, Barbados, Belize, Dominica, Grenada, Guyana, Haiti, Jamaica, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Suriname, Trinidad and Tobago.
 
 <strong>Baltic</strong> countries include Estonia, Latvia, Lithuania, Poland, which is East of Germany, Austria, Czech Republic.
 
