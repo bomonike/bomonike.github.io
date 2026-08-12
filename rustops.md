@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-03"
-lastchange: "v038 azure @rustops.md"
+date: "2026-08-11"
+lastchange: "v038 whereis @rustops.md"
 url: https://bomonike.github.io/rustops
 file: "rustops"
 title: "rustops (Rust Operations)"
@@ -844,6 +844,19 @@ Use the ProjectDirs::data_dir() method to return a platform-specific path intend
    ```
    FUN FACT: <a target="_blank" href="https://www.emilyalbini.it/blog/shipping-a-compiler-every-six-weeks/">Rust is released every 6 weeks</a>
 
+1. Where is that installed?
+   ```bash
+   whereis rustc
+   ```
+   <pre>
+   rustc: /opt/homebrew/opt/rustup/bin/rustc /opt/homebrew/share/man/man1/rustc.1
+   </pre>
+   ```bash
+   whereis cargo
+   ```
+   <pre>
+   cargo: /opt/homebrew/opt/rustup/bin/cargo /opt/homebrew/share/man/man1/cargo.1
+   </pre>
 
 1. Read <a target="_blank" href="https://rustup.rs/">rustup.rs</a>
 
@@ -1939,6 +1952,8 @@ The Duke University Building Cloud Computing Solutions at Scale Specialization  
 * RoboKiller Lookup: RoboKiller is a major spam-blocking app, but they have a free web lookup tool where you can type in a number to see if it's in their scam database.
 
 
-    
+https://github.com/grafana/pyroscope-rs/blob/main/build.rs
+profile
+
 <hr />
 <sub>{{ page.lastchange }} created {{ page.created }}</sub>
