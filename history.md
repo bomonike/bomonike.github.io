@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-06"
-lastchange: "26-06-06 v042 Pius 1799 @history.md"
+date: "2026-08-13"
+lastchange: "v043 chinese prophesy @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -1384,6 +1384,16 @@ the "one religion" in the holy muslim land of Mecca and Medina.
 ## Predictions about the Future
 
 Apophis asteroid Apr 13, 2029.
+
+<a target="_blank" href="https://www.youtube.com/watch?v=dtFS7O9mA1g&t=14m51s">VIDEO</a>:
+In the "Tui Bei Tu" book of 59 prophesies written in China during the Tung dynasty,
+the last prediction is this:<br />
+"A city without walls, without government, without a distinction between you and me,
+all under heaven government is one family, a big change in governance.
+One person brings good fortune to the world.
+In his hand he holds a bamboo stick getting rid of the bamboo shoots.
+Red, yellow, black, white, there is no distinction.
+East, South, North, West, all harmonious."
 
 
 ## References
