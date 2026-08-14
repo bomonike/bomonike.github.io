@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-13"
-lastchange: "v009 dynasties @learn-chinese.md"
+date: "2026-08-14"
+lastchange: "v010 jade @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
 title: "Learn Chinese"
@@ -17,6 +17,8 @@ created: "2021-10-03"
 <i>{{ page.excerpt }}</i>
 
 {% include whatever.html %}
+
+ALPHABETICAL INDEX: <a href="#HSK_exam">HSK_exam</a>, <a href="#Idioms">Idioms</a>, <a href="#Jade">Jade</a>, <a href="#LearningStrategies">LearningStrategies</a>, <a href="#Memonics">Memonics</a> 
 
 ## Among Languages
 
@@ -36,8 +38,15 @@ created: "2021-10-03"
 https://www.youtube.com/watch?v=csmXX1elkwI
 There are 300+ dialects in China, due to historical geographical limits to transportation.
 
+<a id="LearningStrategies"></a>
 
 ## Learning strategies
+
+1. As precisely as you can, repeat the dialog while watching <a href="#Movies">Mandarin-language movies</a> to get used to the pace and pronounciation, plus the mores and idioms of Chinese culture.
+
+1. Install and use apps with features. (ideally an app serving multiple features). Ideally a free one with offline operation.
+
+1. Memorize the 5% of Chinese characters (radicals) that are <a href="#Memonics">memonics</a> with has some resemblance to the object.
 
 1. Children in mainland China learn Pinyin before logograms.
 
@@ -45,11 +54,7 @@ There are 300+ dialects in China, due to historical geographical limits to trans
 
 1. Take the FREE <a target="_blank" href="https://chinesezerotohero.teachable.com/p/introduction-to-chinese">ZeroToHero 15-hour/12 video lesson intro course</a> by an English native speaker who uses the English-subtitled <a target="_blank" href="https://www.youtube.com/playlist?list=PLiL-CuIBxVwMz9Zk9tUc2Q_lFUL_nBS8y">40-episode family comedy drama TV series Go Ahead! (2020) on YouTube</a>.
 
-1. Install an app covering features (ideally an app serving multiple features). Ideally a free one with offline operation.
-
-   * About 5% of Chinese characters are memonics that has some resemblance to the object.
-
-1.    (such as Google Translate and Migaku) to use your camera to take a picture of street signs. for a translation. The Migaku app turns real content turns to flashcard.
+1. (such as Google Translate and Migaku) to use your camera to take a picture of street signs. for a translation. The Migaku app turns real content turns to flashcard.
 
    https://fanyi.baidu.com/mtpe-individual/transText#/zh/en/
 
@@ -69,21 +74,23 @@ get 15%
    italki.com to find conversation partners.
 
 1. Focus on learning the first 500 words in the HSK 1 proficiency exam.
-Ximalaya - HSK 1 textbook audio - HSK 1 workbook audio.
-
-Soundcloud - HSK 1 textbook audio - HSK 1 workbook audio.
+   * Ximalaya - HSK 1 textbook audio - HSK 1 workbook audio.
+   * Soundcloud - HSK 1 textbook audio - HSK 1 workbook audio.
 1. Learn the 
 
 1. Spaced Repetion, install the Anki app and load flash card content and quizzes 
 
-1. Watch movies for immersion
-   - "The Empress of China (2014)" about Wu Zetian
+<a id="HSK_exam"></a>
 
 ## HSK exam 
 
+Undergraduate students in foreign language-taught programs must achieve HSK Level 4 to graduate.
+
+Undergraduate students in For Chinese-taught programs must achieve HSK Level 5 tp graduate.
+
 https://www.chinesetest.cn
 
-Some countries also have their own regional HSK websites managed by local Confucius Institutes or embassy branches,
+Some countries also have their own regional HSK websites managed by local Confucius Institutes or embassy branches.
 
 The HSK (Hanyu Shuiping Kaoshi), the Chinese Proficiency Test, is the standardized international exam used to evaluate the Chinese language proficiency of non-native speakers. It is roughly the Chinese equivalent of the TOEFL or IELTS for English. 
 
@@ -101,10 +108,6 @@ Intermediate (Levels 4–6): Focuses on discussing a wide range of topics and in
    - HSK 4: Can speak Chinese relatively fluently. (Vocab: 1200~3,000 words)
    - HSK 5: Can read Chinese newspapers/magazines and watch Chinese films. (Vocab: 2400~4,300 words)
    - HSK 6: Can easily understand written and spoken information and express themselves fluently. (Vocab: ~5,400 words)
-
-For foreign language-taught programs: Undergraduate students must achieve HSK Level 4 upon graduation.
-
-For Chinese-taught programs: Undergraduate students must achieve HSK Level 5 upon graduation. 
 
 Advanced (HSK Levels 7–9): Focuses on near-native proficiency, academic research, and professional work.
  Levels 7-9 are tested together in one single exam. Passing with varying scores dictates whether you get a Level 7, 8, or 9 certificate. It tests highly nuanced language, classical Chinese elements, and complex writing. (Vocab: 11,000+ words)
@@ -187,6 +190,13 @@ Common Radicals Master List: https://drive.google.com/file/d/1Mkw3VRScOg0i6XqUd7
 
 The 60 Essential Bricks: https://drive.google.com/file/d/19HeF9KnBGkfulDD_ILa3IlhQQ-9ClW7b/view?usp=sharing
 
+## Direction
+
+* North 北   Běi
+* South 南   Nán
+* West  西方 Xīfāng
+* East  东方 Dōngfāng
+
 ## Dynasties
 
 * 2070 – 1600 BC = Xia (legendary)
@@ -194,20 +204,24 @@ The 60 Essential Bricks: https://drive.google.com/file/d/19HeF9KnBGkfulDD_ILa3Il
 * 1046 - 256 BC = Zhou (see sub-periods)
     * 1046 – 771 BC = Western Zhou
     * 770 – 256 BC = Eastern Zhou
+<a id="Jade"></a><a target="_blank" href="https://www.youtube.com/watch?v=YUyLjT2PGtc" title="4x4 inch white jade hierloom seal Xi of the realm"><img align="right" width="200" alt="zn-qin-seal-786x792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786692824/zn-qin-seal-786x792_rekidp.png" /></a>
     * 770 – 476 BC = Eastern Zhou Spring and Autumn Period
     * 475 – 221 BC = Eastern Zhou Warring States Period
-* 221 – 206 BC = Qin
+* 221 – 206 BC = Qin - first emporor (15 year reign)
 * 206 - 220 AD = Han (漢) - see sub-periods:
    * 206 BC – 9 AD = Western Han （西漢）
    * 9 – 23 AD = Xin（新莽）
    * 25 – 220 AD = Eastern Han（東漢）
-* 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity)
+* 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity) <a target="_blank" href="https://www.youtube.com/watch?v=y06ehdYDycY&list=PLIbRFNmcCXo-Jn3PdZ57B3pdcHI2XSztV">YouTube</a>
 * 265 – 420 AD = Jin (晉) - see sub-periods:
     * 265 – 316 AD = Western Jin (西晉)
     * 317 – 420 AD = Eastern Jin（東晉）
 * 420 – 589 AD = Southern & Northern Dynasties (南北朝宋) - period of disunity:
-   * 581 – 618 AD = Sui (隋)
+   * 581 – 618 AD = Sui (隋) 37 years
 * 618 – 907 AD = Tang (唐)
+   * 630 = General Li Jing defeats Turks and capture jade with empress Xiao.
+   * 690 – 907 AD Wu Zetian (only woman empress) renamed jade to Bao (treasure)
+   * 923 - 937 AD = Later Tang under Li Cunxu, who set his family on fire in a tower, but the was seal not found.
 * 907 – 923 AD = Five Dynasties & Ten Kingdoms (五代後梁)
    * 923～936 Later Tang 後唐 Hòu táng
    * 936～946 後晉	
@@ -223,13 +237,13 @@ The 60 Essential Bricks: https://drive.google.com/file/d/19HeF9KnBGkfulDD_ILa3Il
    * 934～965 後蜀	
    * 937～975 南唐	
    * 951～979 北漢	
-* 907 - 1125 AD 遼建國於西元907年，國號契丹，916年始建年號，937年改國號為遼，983年復稱契丹，1066年仍稱遼。Founded in 907 AD with the state name Khitan, then began to use an era name in 916, changed the state name to Liao in 937, reverted to Khitan in 983, and was still called Liao in 1066.
+* 907 - 1125 AD 遼建國於西元907年，國號契丹，916年始建年號，937年改國號為遼，983年復稱契丹，1066年仍稱遼。Founded in 907 AD with the state name <strong>Khitan</strong>, then began to use an era name in 916, changed the state name to <strong>Liao</strong> in 937, reverted to Khitan in 983, and was still called Liao in 1066.
 * 960 – 1279 AD = Song (宋) - see sub-periods:
    * 960 – 1127 AD = Northern Song（北宋）
    * 1127 – 1279 AD = Southern Song（南宋）
    * 1032 ～ 1227 AD = (西夏)
    * 1115 - 1234 AD = gold (金)
-* 1206 ～ 1367 AD = Yuan (元)
+* 1206 ～ 1367 AD = Yuan (元) by Moguls
 * 1271 – 1368 AD = Yuan - 蒙古鐵木真於西元1206年建國，1271年忽必烈定國號為大元，1279年滅南宋。Genghis Khan founded the Mongol Empire in 1206 AD. In 1271, Kublai Khan established the Yuan Dynasty, and in 1279, the Southern Song Dynasty was destroyed.
 * 1368 – 1644 AD = Ming (明) - (centralized Yu Shan Fang) - 西元1644年桂王被殺。In 1644, the Prince of Gui was killed.
 * 1616 - 1911 AD = Qing (清) - 清建國於西元1616年，初稱後金，1636年始改國號為清，1644年入關。The Qing dynasty was founded in 1616, initially called the Later Jin. In 1636, it changed its name to Qing, and in 1644 it entered the Central Plains.
@@ -238,7 +252,10 @@ References:
    * <a target="_blank" href="https://www.youtube.com/watch?v=qWMXG7JtqO0">Legacy of China's Imperial Cuisine and the Role of Food in Imperial Court Etiquette</a>
    * https://www.cambridge.org/core/books/animals-through-chinese-history/chronology-of-dynasties/4C67438128929A17558EEDD834C20D58
 
-Movie Credits:
+<a id="Movies"></a>
+
+## Movies
+- <a target="_blank" href="https://gatsby.tv/where-to-stream/show/the-empress-of-china-december-2014">stream</a>: "The Empress of China (2014)" 武媚娘传奇 (Wǔ Mèiniáng Chuánqí), about Tan dynasty Wu Zetian. Orginally 96 episodes, censors cropped out scenes and reduce to 86 on YouTube</a>
 * The Qin Empire III (2017)
 * Hero (2002)
 * King's War (2012)
@@ -249,6 +266,10 @@ Movie Credits:
 * Red Cliff (2008)
 * Eight Hundred Heroes (1976)
 * The Eight Hundred (2020)
+* Three Kingdoms (2010)
+
+* https://www.youtube.com/watch?v=hcRnPnMp_D0 32:06 "11 Patterns Unlock Natural Chinese" Canto to Mando
+
 
 ## Language History
 
@@ -377,8 +398,7 @@ On all devices:
 
 1. Type entire base Pinyin words such as "nihao" for "hello" (你好, nǐ hǎo) without tone accent marks, then press spacebar to enter. REMEMBER: Do NOT type the tone accent marks. 
 
-   PROTIP: Use the "Option Key" Method (Fastest for Touch Typists) - the traditional Mac method
-   where you do not have to hold the keys down at the same time; it's a two-step process.
+   PROTIP: Use the "Option Key" Method (Fastest for Touch Typists and the traditional Mac method where you do not have to hold the keys down at the same time: a two-step process: 
    Press a quick combination to "set" the accent, and then type the letter (a,e,i,o,u). 
 
    Simply hold down the base letter (with or without pressing shift for upper case) until a small menu with accent options appears (e.g., 1: è, 2: é, 3: ê, 4: ë). Click the accent you want, or press the corresponding number key (e.g., press 2 for é).
@@ -852,9 +872,11 @@ https://www.youtube.com/watch?v=rk8Lk4YK6cI
 Shopping at a Supermarket in Chinese | Beginner Mandarin Conversation | HSK 1-2
 Mandarin Breeze | 汉语微风
 
-## idioms
+<a id="Idioms"></a>
 
-https://www.thechairmansbao.com/wp-content/uploads/2021/08/The-Chairmans-Bao-Idioms-Brochure.pdf
+## idioms (成语, chéngyǔ)
+
+<a target="_blank" href="https://www.thechairmansbao.com/wp-content/uploads/2021/08/The-Chairmans-Bao-Idioms-Brochure.pdf">From pdf</a>:
 
 * 突发奇想 - tūfā qí xiǎng = To suddenly be inspired to do something
 * 丰富多彩 - fēng fù duō cǎi = Richly colorful.
@@ -881,6 +903,8 @@ https://www.thechairmansbao.com/wp-content/uploads/2021/08/The-Chairmans-Bao-Idi
 * 靠山吃山，靠水吃水 - kàoshānchīshān, kàoshuǐchīshuǐ = lit. Those living on a mountain live off the mountain, those living near the water live off the water / fig. To make living with the local advantages.
 * 车水马龙 - chēshuǐmǎlóng = lit. Endless stream of horse and carriages / fig. Heavy traffic.
 * 如鱼得水 - rúyúdéshuǐ = lit. Glad to. fig. Like a fish back in water 
+
+* 完璧归赵 - Wan Bi Gui Zhao = Lit. Returning <a href="#Jade">the jade intact to Zheo</a> refers to cunning recovery skill. This idiom comes from a famous story during the Warring States period, recorded in the historical text Records of the Grand Historian (史记).  A precious and highly coveted jade disk, the "He Shi Bi" (和氏璧), was owned by the State of Zhao. The powerful King of Qin offered to trade 15 cities for it. Fearing the king's military might, Zhao sent the clever diplomat Lin Xiangru (蔺相如) with the jade. Lin realized that the King of Qin had no real intention of giving up the cities, so he used his wits to reclaim the jade and safely return it to Zhao, preventing a major diplomatic loss. China.org.cn 
 
 
 Dog breeds from China
