@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-08-14"
-lastchange: "v010 jade @learn-chinese.md"
+lastchange: "v012 numbers months @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
 title: "Learn Chinese"
@@ -24,7 +24,7 @@ ALPHABETICAL INDEX: <a href="#HSK_exam">HSK_exam</a>, <a href="#Idioms">Idioms</
 
 <a target="_blank" href="https://www.youtube.com/watch?v=GG8aBhUthG0&t=9s">VIDEO</a>:
    Millions of people:
-1. 929.0 - Mandarin Chinese
+1. 929.0 - Mandarin Chinese (汉语) Hànyǔ Mandarin Pǔtōnghuà (普通话 common speech)
 2. 474.4 - Spanish
 3. 372.9 - English
 4. 343.9 - Hindi
@@ -42,17 +42,21 @@ There are 300+ dialects in China, due to historical geographical limits to trans
 
 ## Learning strategies
 
-1. As precisely as you can, repeat the dialog while watching <a href="#Movies">Mandarin-language movies</a> to get used to the pace and pronounciation, plus the mores and idioms of Chinese culture.
+1. As precisely as you can, repeat the dialog while watching <a href="#Movies">Mandarin-language movies</a> to get used to the pace and pronounciation, plus the <a href="#Mores">mores</a> and idioms of Chinese culture.
 
-1. Install and use apps with features. (ideally an app serving multiple features). Ideally a free one with offline operation.
+1. Install and use mobile eSim and VPNs so you can view YouTube videos.
 
-1. Memorize the 5% of Chinese characters (radicals) that are <a href="#Memonics">memonics</a> with has some resemblance to the object.
+1. So you can get around easier, learn <strong>street signs</strong> and names of <strong>foods</strong> with the aid of translation mobile apps with cameras. Learn the <a href="#Dynasties">Dynasties</a> so you can better understand the artwork and how historical stories interconnect.
+ 
+1. Memorize the 5% of Chinese characters (radicals) - pictograms - that are <a href="#Memonics">memonics</a> with some resemblance to the object. 
 
-1. Children in mainland China learn Pinyin before logograms.
-
-1. "To reduce learning time, I skip learning handwritten CHINESE script".
+1. Learn the <strong>radicals</strong> used to form 90% of Chinese words.
 
 1. Take the FREE <a target="_blank" href="https://chinesezerotohero.teachable.com/p/introduction-to-chinese">ZeroToHero 15-hour/12 video lesson intro course</a> by an English native speaker who uses the English-subtitled <a target="_blank" href="https://www.youtube.com/playlist?list=PLiL-CuIBxVwMz9Zk9tUc2Q_lFUL_nBS8y">40-episode family comedy drama TV series Go Ahead! (2020) on YouTube</a>.
+
+1. Children in mainland China learn <a target="_blank" href="https://en.wikipedia.org/wiki/Pinyin">Pinyin</a> https://en.wikipedia.org/wiki/Help:IPA before logograms and associated stroke orders.
+
+1. "To reduce learning time, I skip learning handwritten CHINESE script".
 
 1. (such as Google Translate and Migaku) to use your camera to take a picture of street signs. for a translation. The Migaku app turns real content turns to flashcard.
 
@@ -63,20 +67,20 @@ There are 300+ dialects in China, due to historical geographical limits to trans
    https://languageplayer.io/en/zh/reader/
    Tap on any word for a popup dictionary.
 
-https://www.youtube.com/watch?v=yujUbIyw0j0&t=169s&pp=ugUHEgVlbi1VUw%3D%3D
-19:21
-The Strange Reason Chinese Doesn’t Borrow Words
-Julesy
-get 15%
+1. synonyms and antynms 
+
+   https://www.youtube.com/watch?v=yujUbIyw0j0&t=169s&pp=ugUHEgVlbi1VUw%3D%3D
+   19:21 The Strange Reason Chinese Doesn’t Borrow Words get 15%
 
 1. AI Voice chat like Alexa?
 
    italki.com to find conversation partners.
 
-1. Focus on learning the first 500 words in the HSK 1 proficiency exam.
+1. Begin with learning the 500 words of the HSK 1 proficiency exam.
    * Ximalaya - HSK 1 textbook audio - HSK 1 workbook audio.
    * Soundcloud - HSK 1 textbook audio - HSK 1 workbook audio.
-1. Learn the 
+
+1. <a target="_blank" href="https://docs.google.com/spreadsheets/d/13XGHwvol_4K93gSQiGcvULvMgUdwjRpdfGd5YPpBZCY/edit?gid=0#gid=0">1,000 words</a>
 
 1. Spaced Repetion, install the Anki app and load flash card content and quizzes 
 
@@ -104,18 +108,19 @@ Beginner (Levels 1–3): Focuses on basic daily communication.
    - HSK 1: Can understand and use simple words and phrases. (Vocab: 150~500 words)
    - HSK 2: Can communicate in simple and routine tasks. (Vocab: 300~1,200 words)
    - HSK 3: Can communicate in Chinese at a basic level in daily life, study, and work. (Vocab: 600~2,200 words)
+
 Intermediate (Levels 4–6): Focuses on discussing a wide range of topics and interacting fluently with native speakers.
    - HSK 4: Can speak Chinese relatively fluently. (Vocab: 1200~3,000 words)
    - HSK 5: Can read Chinese newspapers/magazines and watch Chinese films. (Vocab: 2400~4,300 words)
    - HSK 6: Can easily understand written and spoken information and express themselves fluently. (Vocab: ~5,400 words)
 
 Advanced (HSK Levels 7–9): Focuses on near-native proficiency, academic research, and professional work.
- Levels 7-9 are tested together in one single exam. Passing with varying scores dictates whether you get a Level 7, 8, or 9 certificate. It tests highly nuanced language, classical Chinese elements, and complex writing. (Vocab: 11,000+ words)
+   - HSK 7-9 are tested together in one single exam. Passing with varying scores dictates whether you get a Level 7, 8, or 9 certificate. It tests highly nuanced language, classical Chinese elements, and complex writing. (Vocab: 11,000+ words)
 
-The core HSK test is a written exam (available as a paper-based test or a computer-based test) that consists of:
-* Listening Comprehension: Listening to audio clips and answering multiple-choice questions.
-* Reading Comprehension: Reading sentences, paragraphs, or passages and answering multiple-choice questions.
-* Writing: Ranging from arranging words into sentences (lower levels) to writing short essays (higher levels). 
+The core HSK test is a written exam (available as a paper-based test or a computer-based test) to evaluate:
+* Listening Comprehension when listening to audio clips and answering multiple-choice questions
+* Reading Comprehension by reading sentences, paragraphs, or passages and answering multiple-choice questions.
+* Writing by arranging words into sentences (lower levels) and writing short essays (at higher levels). 
 
 Note: No handwritten characters are required if you take the computer-based test, where you type pinyin and select the correct character.
 
@@ -147,18 +152,10 @@ On Coursera, Tsinghua has a course.
    The Harvard of China: Why Can’t Everyone Get Into Tsinghua?!
    Zahra.polyglot
 
-by Peking University
+From Peking University on Coursera:
+   * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmxVLADEqEeaA3xIl-CKqow "Chinese for HSK 1" by Yu Bin
    * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmTJHKj0pEeSGwyIACxCdDw for b
-   * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmxVLADEqEeaA3xIl-CKqow "Chinese for HSK 1" 
    * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EJRctxzFBEeaObw4ta1FaeQ 3
-
-Levels:
-* A1 🐣  I know some basic words and phrases.
-* A2 🔤  I can talk about simple things, but I still struggle.
-* B1 🚶‍♂️  I can have basic conversations, but need practice for complex topics.
-* B2 💬  I'm comfortable speaking, but still make mistakes and want to improve.
-* C1 🧠✨  I speak clearly, but want to build advanced skills and vocabulary.
-* C2 🗣️🌍  I’m nearly fluent, polishing my skills.
 
 ### HSK-based learning
 
@@ -176,12 +173,17 @@ book $30.99 paperback
 
 ## Glossary
 
-A morpheme is the smallest unit of meaning in a langusge.
-A word is te smallest independent/free unit of meaning.
-Among the 3,500 most commonly used Chinese characters, there are 132 component bujian.
+A <strong>morpheme</strong> is the smallest unit of meaning in a language.
 
-https://www.youtube.com/watch?v=Fu8F_XJyIkI
-   * 60 Pictographs (single core components) are used to build 99% of common characters.
+A <strong>word</strong> is the smallest independent/free unit of meaning.
+
+Among the 3,500 most commonly used Chinese characters, there are 132 <strong>component</strong> bujian.
+
+There are about 60 <strong>pictograms</strong> (xiàng xing) depicting objects. They form single core components used to build 99% of common characters.
+
+<strong>Ideograms</strong> (zhǐ shì) represent <strong>abstract concepts</strong>
+
+<a target="_blank" href="https://www.youtube.com/watch?v=Fu8F_XJyIkI">VIDEO</a>:
    * Indicatives
    * Associate compounds - [2m31s] Radical + sound card
    * Pheno-semantic compounds
@@ -219,11 +221,11 @@ The 60 Essential Bricks: https://drive.google.com/file/d/19HeF9KnBGkfulDD_ILa3Il
 * 420 – 589 AD = Southern & Northern Dynasties (南北朝宋) - period of disunity:
    * 581 – 618 AD = Sui (隋) 37 years
 * 618 – 907 AD = Tang (唐)
-   * 630 = General Li Jing defeats Turks and capture jade with empress Xiao.
-   * 690 – 907 AD Wu Zetian (only woman empress) renamed jade to Bao (treasure)
-   * 923 - 937 AD = Later Tang under Li Cunxu, who set his family on fire in a tower, but the was seal not found.
+   * 630 = General Li Jing defeats Turks and capture jade held by empress Xiao.
+   * 665 - 690 AD ruled by Wu Zetian (only woman empress) renamed jade to Bao (treasure)
+   * 690 – 907 AD 
 * 907 – 923 AD = Five Dynasties & Ten Kingdoms (五代後梁)
-   * 923～936 Later Tang 後唐 Hòu táng
+* 923 - 937 AD = Later Tang 後唐 Hòu táng - under Li Cunxu, who set his family on fire in a tower, but the was seal not found, thus lost.
    * 936～946 後晉	
    * 947～950 後漢	
    * 951～960 後周	
@@ -242,7 +244,7 @@ The 60 Essential Bricks: https://drive.google.com/file/d/19HeF9KnBGkfulDD_ILa3Il
    * 960 – 1127 AD = Northern Song（北宋）
    * 1127 – 1279 AD = Southern Song（南宋）
    * 1032 ～ 1227 AD = (西夏)
-   * 1115 - 1234 AD = gold (金)
+   * 1115 - 1234 AD = gold (金) 金子 Jīnzǐ
 * 1206 ～ 1367 AD = Yuan (元) by Moguls
 * 1271 – 1368 AD = Yuan - 蒙古鐵木真於西元1206年建國，1271年忽必烈定國號為大元，1279年滅南宋。Genghis Khan founded the Mongol Empire in 1206 AD. In 1271, Kublai Khan established the Yuan Dynasty, and in 1279, the Southern Song Dynasty was destroyed.
 * 1368 – 1644 AD = Ming (明) - (centralized Yu Shan Fang) - 西元1644年桂王被殺。In 1644, the Prince of Gui was killed.
@@ -252,10 +254,93 @@ References:
    * <a target="_blank" href="https://www.youtube.com/watch?v=qWMXG7JtqO0">Legacy of China's Imperial Cuisine and the Role of Food in Imperial Court Etiquette</a>
    * https://www.cambridge.org/core/books/animals-through-chinese-history/chronology-of-dynasties/4C67438128929A17558EEDD834C20D58
 
+## Elements 素 sù
+
+The five elements:
+
+<a target="_blank" href="https://www.youtube.com/watch?v=yujUbIyw0j0&t=169s">VIDEO</a>:
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786721178/zn-periodic-1920x1080_f0an2t.png">Chinese Periodic Table of Elements:<br /><img width="300" alt="zn-periodic-1920x1080.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786721178/zn-periodic-1920x1080_f0an2t.png" /></a>
+Does not use many phonetically borrowed words.
+
+   * air/gas 气体 Qìtǐ, radical yáng for oxygen
+   * metal   金属 Jīnshǔ, Radical: jiǎ 
+   * stone   石头 Shítou
+   * water/liquids 液体 Yètǐ
+
+<a target="_blank" href="https://www.youtube.com/watch?v=8ol7DsPnHcE&t=1m30s">Funnier</a>
+
+## Dates Months, Numbers
+
+Instead of the European custom of unique names like "January", Chinese reference months by number 1 to 12 and add 月 (yuè) which means "month" and also "moon" for lunar. 3rd 三月 is spoken as one fluid word. Although 一月 is technically Yīyuè (with a high, flat tone on "yi"). But in natural speech, it often changes to Yíyuè (with a rising tone) because it's followed by another fourth-tone syllable (yuè). 
+
+* 一月	Yīyuè   January
+* 二月	Èryuè   February
+* 三月	Sānyuè  March
+* 四月	Sìyuè   April
+* 五月	Wǔyuè   May
+* 六月	Liùyuè  June
+* 七月	Qīyuè   July
+* 八月	Bāyuè   August
+* 九月	Jiǔyuè  September
+* 十月	Shíyuè  October
+* 十一月 Shíyīyuè  November
+* 十二月 Shíèryuè  December
+
+"March 15th" is 三月十五日 (Sānyuè shíwǔ rì) or 三月十五号 (Sānyuè shíwǔ hào) with 号 (hào) being more common in everyday spoken Chinese.
+
+## Celestials
+
+* Sky
+* Star
+
+## Colors 颜色 yánsè
+
+In imperial courts, only the emporer can wear yellow and eat from yellow plates.
+
+Color words are generally formed by taking the color name and adding the character 色 (sè), which means "color" or "look".
+
+* Black	黑色	hēisè
+* White	白色	báisè is the color of death, worn at funerals
+* Gray	灰色	huīsè
+
+* Pink	粉色 / 粉红色	fěnsè / fěnhóngsè
+* Red	红色	hóngsè
+* Green	绿色	lǜsè
+* Blue	蓝色	lánsè
+
+* Brown	棕色 / 咖啡色	zōngsè / kāfēisè
+* Orange	橙色 / 橘色	chéngsè / júsè
+* Yellow	黄色	huángsè
+* Purple	紫色	zǐsè
+
+* Gold	金色	jīnsè
+* Silver	银色	yínsè
+
+
+<a id="Mores"></a>
+
+## Cultural Mores
+
+Respect for the elderly.
+
+Ancestor worship. many setup shrines to ancestors in their home,
+and bow 3 times every morning in front of it.
+
+The first British ambassador to China (Macartney) refused to bow to the Chinese emporor (1793-94), the compromise is that he take a knee.
+
+Most Chinese believe in luck.
+There are Feng Sui professionals who advise on placement of furniture and even entire buildings. Buildings do not have 13 floors.
+The number 4 is avoided because its pronouciation is similar to the one for "death".
+
+The Xinhua News Agency is the official voice of China.
+
+* 12:49 10 Things NOT to do in China" by Maggie Ye
+
+
 <a id="Movies"></a>
 
 ## Movies
-- <a target="_blank" href="https://gatsby.tv/where-to-stream/show/the-empress-of-china-december-2014">stream</a>: "The Empress of China (2014)" 武媚娘传奇 (Wǔ Mèiniáng Chuánqí), about Tan dynasty Wu Zetian. Orginally 96 episodes, censors cropped out scenes and reduce to 86 on YouTube</a>
+- <a target="_blank" href="https://gatsby.tv/where-to-stream/show/the-empress-of-china-december-2014">stream</a>: "The Empress of China (2014)" 武媚娘传奇 (Wǔ Mèiniáng Chuánqí), about Tan dynasty Wu Zetian. Orginally 96 episodes, censors cropped out scenes and reduce to 86 on YouTube</a> Ren Cai Wu Ru Yi Ru Gong
 * The Qin Empire III (2017)
 * Hero (2002)
 * King's War (2012)
@@ -268,8 +353,6 @@ References:
 * The Eight Hundred (2020)
 * Three Kingdoms (2010)
 
-* https://www.youtube.com/watch?v=hcRnPnMp_D0 32:06 "11 Patterns Unlock Natural Chinese" Canto to Mando
-
 
 ## Language History
 
@@ -277,17 +360,17 @@ References:
    * https://www.youtube.com/watch?v=V8EFhnMaVRk
 
 <a target="_blank" href="https://www.youtube.com/watch?v=fojzNrwAAyI&pp=ugUEEgJlbg%3D%3D">VIDEO</a>:
-The Chinese language first appeared as bone script on oracle bones (甲骨文) from the Shang dynasty was discovered in 1899. 
+The earlist appearance of Chinese script is on oracle bones (甲骨文) during the Shang dynasty, discovered in 1899. 
 Bronze script.
-The first emporor, Qin Shi Huang, around 221-1 BC, standardized weights, measures, and writing into 
-"Small Seal Script" as "clerical script" was gaining ground on official documents 200 BC - 300 AD during the Han dynasty. 
+The first emporor, Qin Shi Huang, around 221-1 BC, standardized weights, measures, and writing into "Small Seal Script" as "clerical script" was gaining ground on official documents 200 BC - 300 AD during the Han dynasty. 
 Abbreviated cursive "Grass" script by poets developed into more regular kaishu (楷书) script used today.
 "Running script" xingshu since 100 AD is stylistically between the two.
 
 Early writing were vertical and did not include punctuation marks to show end of sentences.
 
-The first chinese dictionary (Shouwenjiezi) was published in Eastern Han around 100 AD.
-It listed the character for "mountain" with what is now the traditional variant used in Hong Kong.
+### Six writings
+
+The first chinese dictionary (Shouwen jiezi) was compiled by Xu Shen in  published in Eastern Han around 100 AD. He divided letters into "6 writings" (liushu) It listed the character for "mountain" with what is now the traditional variant used in Hong Kong.
 
 Woodblock printing was invented during the Tang dynasty around 600 AD.
 Around 1039-1048 AD, Bi Sheng invented movable clay type printing, which broke often.
@@ -330,6 +413,8 @@ https://www.youtube.com/watch?v=hBDwXipHykQ
 21:06
 How China Conquered The Keyboard
 Johnny Harris
+
+* MOVE: https://www.youtube.com/watch?v=hcRnPnMp_D0 32:06 "11 Patterns Unlock Natural Chinese" Canto to Mando
 
 
 <a id="Apps"></a>
@@ -396,12 +481,14 @@ On Android mobile:
 
 On all devices:
 
-1. Type entire base Pinyin words such as "nihao" for "hello" (你好, nǐ hǎo) without tone accent marks, then press spacebar to enter. REMEMBER: Do NOT type the tone accent marks. 
+1. Type entire base Pinyin words such as "nihao" for "hello" (你好, nǐ hǎo) without tone accent marks, then press spacebar to enter. 
 
-   PROTIP: Use the "Option Key" Method (Fastest for Touch Typists and the traditional Mac method where you do not have to hold the keys down at the same time: a two-step process: 
-   Press a quick combination to "set" the accent, and then type the letter (a,e,i,o,u). 
-
-   Simply hold down the base letter (with or without pressing shift for upper case) until a small menu with accent options appears (e.g., 1: è, 2: é, 3: ê, 4: ë). Click the accent you want, or press the corresponding number key (e.g., press 2 for é).
+   <img alt="mac-a-diacriticals-544x108.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786700493/mac-a-diacriticals-544x108_yujyv8.png" />
+   PROTIP: Simply hold down the base letter (a,e,i,o, or u, with or without pressing shift for upper case) until a small menu with accent options appears (e.g., 1: è, 2: é, 3: ê, 4: ë). 
+   Then click the accent you want or press the corresponding number key (e.g., press 2 for é).
+   
+   Alternately: Use the "Option Key" Method (Fastest for Touch Typists and the traditional Mac method where you do not have to hold the keys down at the same time: a two-step process: 
+   Hold down Option to press the letter (a,e,i,o, or u).
    
    Alternately:
    * Acute (´): Press Option + E, then type the letter (e.g., é)
@@ -516,7 +603,7 @@ https://www.youtube.com/watch?v=ATtAHQQKBas
 https://www.youtube.com/@learnchinesenow
 
 
-## logographic writing system.
+## logographic writing system
 
 Always write in the same sequence of strokes:
 <img align="right" width="300" alt="chinese-seq-924x928.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786454684/chinese-seq-924x928_wzb8zm.png" />
@@ -552,6 +639,11 @@ Cantonese has 6.
 
 YouTube: CantoToMando
 
+## Transportation
+
+* jīchǎng	機場	机场	airport
+* chūkǒu	出口  EXIT
+
 ## Famous folk tales
 
 https://www.youtube.com/watch?v=Acdb_pYxndE&pp=0gcJCckLAYcqIYzv
@@ -577,6 +669,27 @@ Somebody Asked
 
 
 ## Food
+
+* Breakfast
+* Lunch
+* Teatime
+* Dinner
+* 小吃 xiǎo chī = Snack
+
+* wǎn3 	碗	碗	BOWL		
+* pánzi 	盤子	盘子	PLATE		
+* tāngchí	湯匙	汤匙	SPOON		
+* chāzi	  叉子	叉子	FORK		
+* kuàizi  筷子	筷子	CHOPSTICKS		
+
+* = Fish
+* = Meat
+* = Beef
+* = Port
+* = Duck
+* = Chicken
+
+* = Bread
 
 https://www.youtube.com/watch?v=7smyAAkhjOk&pp=ugUEEgJlbg%3D%3D
 The Secret History of Chinese Chopsticks
@@ -829,13 +942,6 @@ Mandarin Corner
 1y ago
 
 
-12:49
-10 Things NOT to do in China
-Maggie Ye
-177K
-10mo ago
-
-
 8:02
 How to Easily Remember Chinese Characters (Without Memorizing Thousands!)
 mifi Chinese
@@ -990,3 +1096,8 @@ Learn Chinese Now
    * https://www.youtube.com/watch?v=dGBuXn6G0js 11:23 The Forgotten Legend Behind Every Chinese Character
  
 Jared Tells Tales
+
+
+
+
+a
