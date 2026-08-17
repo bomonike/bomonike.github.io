@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-14"
-lastchange: "v012 numbers months @learn-chinese.md"
+date: "2026-08-17"
+lastchange: "v015 compass @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
 title: "Learn Chinese"
@@ -18,7 +18,10 @@ created: "2021-10-03"
 
 {% include whatever.html %}
 
-ALPHABETICAL INDEX: <a href="#HSK_exam">HSK_exam</a>, <a href="#Idioms">Idioms</a>, <a href="#Jade">Jade</a>, <a href="#LearningStrategies">LearningStrategies</a>, <a href="#Memonics">Memonics</a> 
+ALPHABETICAL INDEX: <a href="#Languages">Languages</a>, <a href="#LearningStrategies">Learning strategies</a>, <a href="#HSK_exam">HSK_exam</a>, <a href="#Glossary">Glossary</a>, <a href="#Idioms">Idioms</a>, <a href="#Jade">Jade</a>, <a href="#LearningStrategies">LearningStrategies</a>, <a href="#Memonics">Memonics</a>, <a href="#Personal_possessions">Personal possessions</a>
+
+
+<a id="Languages"></a>
 
 ## Among Languages
 
@@ -35,30 +38,129 @@ ALPHABETICAL INDEX: <a href="#HSK_exam">HSK_exam</a>, <a href="#Idioms">Idioms</
 9. 92.7 - Western Punjabi
 10. 85.2 - Yu Chinese (Cantonese, etc.)
 
-https://www.youtube.com/watch?v=csmXX1elkwI
-There are 300+ dialects in China, due to historical geographical limits to transportation.
+<a target="_blank" href="https://www.youtube.com/watch?v=csmXX1elkwI">VIDEO</a>: There are 300+ dialects in China , due to historical geographical limits to transportation.
+
+## Why Learn Chinese? HSK
+
+<a id="HSK_exam"></a>
+
+The China-wide Center for Language Education and Cooperation (CLEC) under the Chinese Ministry of Education officially administers a standardized exam called the <strong>HSK (Hanyu Shuiping Kaoshi)</strong> to evaluate <strong>writing</strong> proficiency among non-native speakers (wai guo ren). It is the Chinese equivalent of the TOEFL or IELTS for English.
+
+A separate exam, the <strong>HSKK (Hanyu Shuiping Kaoshi Kouyu) </strong>,
+evaluates speaking ability using audio-recording equipment. 
+
+Core HSK written tests are available either writing paper or typing Pinyin on a computer QWERTY keyboard. They test for:
+
+    * Listening Comprehension by listening to audio clips, then answering multiple-choice questions
+    
+    * Reading Comprehension by reading sentences, paragraphs, or passages, then answering multiple-choice questions.
+    
+    * Writing ability at arranging words into sentences (at lower levels) or  writing short essays (at higher levels).
+
+Employers ask for scores achieved. To graduate from a university in China, undergraduate students must achieve "Intermediate" proficiency at
+* "HSK Level 4" even in programs taught in a foreign language (English)
+* "HSK Level 5" in programs taught in Mandarin Simplified Chinese.
+
+There's a slang "HSK 0.5" for <a target="_blank" href="https://www.youtube.com/watch?v=nqUScMutDOs&pp=ugUEEgJlbg%3D%3D">foreigners</a> (lǎo wài = old outsider, yáng rén = ocean, wài guó rén = outside country person) who wing it without Chinese language proficiency.
+
+Secondary students in China take the Gaokao exam, which consists of Science, Math, Chinese, English on separate days for 90 to 150 minutes each.
+
+In 2023/2024, the CLEC rolled out version 3.0 of a unified HSK that expanded levels from 6 to 9 for alignment with the Common European Framework of Reference for Languages (CEFR), which has three stages:
+
+Beginner (Levels 1–3): Focuses on basic daily communication:
+   - HSK 1: Can understand and use simple words and phrases. (Vocab: 300  words in v3, 500 in v2) https://github.com/ivankra/hsk30
+   - HSK 2: Can communicate in simple and routine tasks. (Vocab: 300~1,200 words)
+   - HSK 3: Can communicate in Chinese at a basic level in daily life, study, and work. (Vocab: 600~2,200 words)
+
+Intermediate (Levels 4–6): Focuses on discussing a wide range of topics and interacting fluently with native speakers:
+   - HSK 4: Can speak Chinese relatively fluently. (Vocab: 1200~3,000 words)
+   - HSK 5: Can read Chinese newspapers/magazines and watch Chinese films. (Vocab: 2400~4,300 words)
+   - HSK 6: Can easily understand written and spoken information and express themselves fluently. (Vocab: ~5,400 words)
+
+The maximum score is <strong>300</strong> for levels 1-6.
+
+Advanced (HSK Levels 7–9): Focuses on near-native proficiency, academic research, and professional work for master’s/PhD programs:
+   - HSK 7-9 are tested together in one single exam. Passing with varying scores dictates whether you get a Level 7, 8, or 9 certificate. It tests highly nuanced language, classical Chinese elements, and complex writing. (Vocab: 11,000+ words)
+
+Some Chinese cities offer "Green Cards" (permanent residency) or talent visas to foreigners who hold high-level HSK certificates.ccc
+
+The HSK & HSKK can be taken several times a year, usually on weekends (often monthly or bi-monthly depending on the test center), worldwide at authorized test centers in and outside China. 
+
+In China, the HSK Level 4 fee is 750 RMB, Level 5 is 950 RMB for the core.
+
+Applying for Chinese Government Scholarships (CSC) or Confucius Institute Scholarships almost always requires a minimum HSK score.
+
+Register at https://www.chinesetest.cn 
+Some countries also have their own regional HSK websites managed by local Confucius Institutes or embassy branches.
+
+The deadline for registration and payment is 10 days before the test date, which is 3 September 2026 for testing on 13 Septermber 2026.
+
+REMEMBER: Reservations require a photo. Print the registration ticket and bring it with your passport to the test center.
+
+Scores are typically available online about a month after taking the test, and the physical certificate is mailed shortly after. HSK certificates are valid for life.
+
+From Peking University on Coursera:
+   * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmxVLADEqEeaA3xIl-CKqow "Chinese for HSK 1" by Yu Bin
+   * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmTJHKj0pEeSGwyIACxCdDw for b
+   * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EJRctxzFBEeaObw4ta1FaeQ 3
+
+## Language database
+
+Column	Source
+* hsk_level	All set to 1
+* sequence	1-500, matching official order
+* simplified	Simplified Mandarin characters
+* pinyin	Tone-marked pinyin
+* part_of_speech	Normalized (Verb, Noun, Adjective, etc.)
+* english	CC-CEDICT definitions, with overrides for ~26 entries where CEDICT picked the wrong sense
+* measure_word	Curated classifiers only — blank where no measure word applies (no invented defaults)
+* stroke_count	Total strokes from Unicode Unihan kTotalStrokes data
+* example_simplified	Example sentence in simplified Chinese
+* example_pinyin	Pinyin for the example (via pypinyin)
+* example_english	English translation
+
+
+### HSK-based learning
+
+1. <a target="_blank" href="https://www.chinesezerotohero.com/hsk-1-4-bundle/">Chinese Zero to Hero HSK 4 course</a> is a one-time $180 USD (30 Day Money Back Gurantee) for 600+ videos (on the popular Teacheable platform), all aligned with the official HSK framework. Taking you from complete beginner to a confident intermediate level speaker. 
+
+https://www.youtube.com/watch?v=UOvmVE9JBIc&pp=0gcJCcQLAYcqIYzv
+10:41
+New HSK 1 Course Workbook | Lesson 1 | 你好 (Hello) | Chinese Listening & Practice | Beginner Mandarin
+
+https://www.amazon.com/dp/B09ZD12JR1/
+Ling Ling's Learn Chinese Vocabulary for Beginners: New HSK Level 1 Chinese Vocabulary Book (Free Audio) - Master 500 Words in Context (NEW HSK Vocabulary Series)
+
+<a target="_blank" href="https://www.amazon.com/s?k=hsk+textbook&crid=19ME84EF729SC&sprefix=hsk+%2Caps%2C206">paperback</a>: $30.99 
+
+https://www.youtube.com/watch?v=U_SAcVGFpag&
+
 
 <a id="LearningStrategies"></a>
 
 ## Learning strategies
 
-1. As precisely as you can, repeat the dialog while watching <a href="#Movies">Mandarin-language movies</a> to get used to the pace and pronounciation, plus the <a href="#Mores">mores</a> and idioms of Chinese culture.
+1. Install and use translation mobile apps that uses your camera. Google Translate does not require clicking a button before translating. Migaku so you can learn important <strong>pictographs of <a href="#Street_signs">street signs</a> and <a href="#Directions">directions</a>.
 
-1. Install and use mobile eSim and VPNs so you can view YouTube videos.
+   The Migaku app turns social content to flashcards for memorization.
 
-1. So you can get around easier, learn <strong>street signs</strong> and names of <strong>foods</strong> with the aid of translation mobile apps with cameras. Learn the <a href="#Dynasties">Dynasties</a> so you can better understand the artwork and how historical stories interconnect.
+1. Before traveling, sign up for <a href="#Payments">automated payments</a>, install and use <a href="#eSIM">mobile eSIM</a> and VPNs so you can view YouTube videos. The Hong Kong and Macau SAR (Special Administrative Region) residents do have access to western internet and separate currency and passport.
+
+1. While watching reality shows and vlog bloggers, <strong>repeat actors' dialog out loud</strong> to get your mouth used to the pace and pronounciation. You'll also discover the <a href="#Mores">mores</a> and idioms of Chinese culture. <a href="#CityNames">CityNames</a>
  
+   The English-subtitled <a target="_blank" href="https://www.youtube.com/playlist?list=PLiL-CuIBxVwMz9Zk9tUc2Q_lFUL_nBS8y">40-episode family comedy drama TV series Go Ahead! (2020) on YouTube</a> is used by the FREE <a target="_blank" href="https://chinesezerotohero.teachable.com/p/introduction-to-chinese">ZeroToHero 15-hour/12 video lesson intro course</a> by an English native speaker.
+
+1. Practice pronouncing Chinese names for <a href="#Personal_possessions">Personal possessions</a>. When needed, refer to the <a href="#Personal_possessions">list below</a>. Learn to pronounce <a href="#Foods">foods</a> or point to my list.
+ 
+1. So you can better appreciate visiting museums, learn the <a href="#Dynasties">Dynasties</a> so you can better understand the artwork and how historical stories interconnect. Watch <a href="#Movies">Mandarin-language movies</a> for the stories behind history. <a target="_blank" href="https://www.youtube.com/watch?v=dGBuXn6G0js">Legends</a>: Shénnóng (transparent belly) invented Chinese medicine.
+
 1. Memorize the 5% of Chinese characters (radicals) - pictograms - that are <a href="#Memonics">memonics</a> with some resemblance to the object. 
 
 1. Learn the <strong>radicals</strong> used to form 90% of Chinese words.
 
-1. Take the FREE <a target="_blank" href="https://chinesezerotohero.teachable.com/p/introduction-to-chinese">ZeroToHero 15-hour/12 video lesson intro course</a> by an English native speaker who uses the English-subtitled <a target="_blank" href="https://www.youtube.com/playlist?list=PLiL-CuIBxVwMz9Zk9tUc2Q_lFUL_nBS8y">40-episode family comedy drama TV series Go Ahead! (2020) on YouTube</a>.
-
 1. Children in mainland China learn <a target="_blank" href="https://en.wikipedia.org/wiki/Pinyin">Pinyin</a> https://en.wikipedia.org/wiki/Help:IPA before logograms and associated stroke orders.
 
-1. "To reduce learning time, I skip learning handwritten CHINESE script".
-
-1. (such as Google Translate and Migaku) to use your camera to take a picture of street signs. for a translation. The Migaku app turns real content turns to flashcard.
+1. "To reduce learning time, I skip learning handwritten CHINESE script" and memorizing stroke order.
 
    https://fanyi.baidu.com/mtpe-individual/transText#/zh/en/
 
@@ -76,100 +178,172 @@ There are 300+ dialects in China, due to historical geographical limits to trans
 
    italki.com to find conversation partners.
 
-1. Begin with learning the 500 words of the HSK 1 proficiency exam.
+1. Begin with learning the 500 words of the HSK 1 v3 exam.
    * Ximalaya - HSK 1 textbook audio - HSK 1 workbook audio.
    * Soundcloud - HSK 1 textbook audio - HSK 1 workbook audio.
 
 1. <a target="_blank" href="https://docs.google.com/spreadsheets/d/13XGHwvol_4K93gSQiGcvULvMgUdwjRpdfGd5YPpBZCY/edit?gid=0#gid=0">1,000 words</a>
 
-1. Spaced Repetion, install the Anki app and load flash card content and quizzes 
+1. Practice spaced repetition for long-term memory. Install the Anki app and load flash card content and quizzes so you spend time on what you didn't get right. It's free.
 
-<a id="HSK_exam"></a>
 
-## HSK exam 
+<a id="eSIM"></a>
 
-Undergraduate students in foreign language-taught programs must achieve HSK Level 4 to graduate.
+## mobile eSIM vs VPN
 
-Undergraduate students in For Chinese-taught programs must achieve HSK Level 5 tp graduate.
+The Chinese government operates a "Great Firewall" that block many American apps (Google, YouTube, Wikipedia, Reddit, Facebook, Instagram, etc.).
 
-https://www.chinesetest.cn
+Airalo ITCHYFEET20
 
-Some countries also have their own regional HSK websites managed by local Confucius Institutes or embassy branches.
+Activate after you land.
 
-The HSK (Hanyu Shuiping Kaoshi), the Chinese Proficiency Test, is the standardized international exam used to evaluate the Chinese language proficiency of non-native speakers. It is roughly the Chinese equivalent of the TOEFL or IELTS for English. 
+Didi is the ride-hailing app like Uber.
 
-The HSK provides a clear, structured roadmap and measurable milestones to keep learners motivated.
+<a id="Payments"></a>
 
-The test is officially administered by the Center for Language Education and Cooperation (CLEC), an organization under the Chinese Ministry of Education, 
+## Automated Payments
 
-In 2023/2024, the CLEX rolled out a unified HSK 3.0 system that expanded the levels from 6 to 9 -- designed to be more closely aligned with the Common European Framework of Reference for Languages (CEFR), which has three stages:
+Renminbi (RMB) (meaning "people's currency") is the official ISO 4217  name of China's currency, denominated in yuan (CNY) with the symbol ¥, (or CNH in Hong Kong; but abbreviated RMB for buying gold). Currently the Chinese yuan is pegged to a basket of currencies, including the US dollar (which the Chinese call mei yuan). The largest yuan banknote is 100 yuan, followed by 50, 20, 10, 5, and one yuan. A jiao is a tenth of a yuan. The jiao is further divided into 10 fen. The highest rate for 1 USD was worth 8.72 in May 1994 and declining to <a target="_blank" href="macrotrends.net/3570/chinese-yuan-to-usd-exchange-rate">6.78 on Aug 16</a>.
 
-Beginner (Levels 1–3): Focuses on basic daily communication.
-   - HSK 1: Can understand and use simple words and phrases. (Vocab: 150~500 words)
-   - HSK 2: Can communicate in simple and routine tasks. (Vocab: 300~1,200 words)
-   - HSK 3: Can communicate in Chinese at a basic level in daily life, study, and work. (Vocab: 600~2,200 words)
+You'll need two AliPay & WeChat:
 
-Intermediate (Levels 4–6): Focuses on discussing a wide range of topics and interacting fluently with native speakers.
-   - HSK 4: Can speak Chinese relatively fluently. (Vocab: 1200~3,000 words)
-   - HSK 5: Can read Chinese newspapers/magazines and watch Chinese films. (Vocab: 2400~4,300 words)
-   - HSK 6: Can easily understand written and spoken information and express themselves fluently. (Vocab: ~5,400 words)
+1. AliPay https://mobile.alipay.com/
+1. Sign up with your mobile phone number.
+1. Go to your profile and tap on bank cards to add your international credit or debit card.
+1. Verify your identity with your passport details if prompted.
 
-Advanced (HSK Levels 7–9): Focuses on near-native proficiency, academic research, and professional work.
-   - HSK 7-9 are tested together in one single exam. Passing with varying scores dictates whether you get a Level 7, 8, or 9 certificate. It tests highly nuanced language, classical Chinese elements, and complex writing. (Vocab: 11,000+ words)
+WeChat:
 
-The core HSK test is a written exam (available as a paper-based test or a computer-based test) to evaluate:
-* Listening Comprehension when listening to audio clips and answering multiple-choice questions
-* Reading Comprehension by reading sentences, paragraphs, or passages and answering multiple-choice questions.
-* Writing by arranging words into sentences (lower levels) and writing short essays (at higher levels). 
+href="#Street_signs">street signs
+<a id="Street_signs"></a>
 
-Note: No handwritten characters are required if you take the computer-based test, where you type pinyin and select the correct character.
+## Getting around
 
-Speaking is tested by a separate HSKK (Hanyu Shuiping Kaoshi Kouyu) audio-recorded exam that's divided into Beginner, Intermediate, and Advanced levels.
+* Good morning   早上好 Zǎoshang hǎo
+* Good afternoon 下午好 Xiàwǔ hǎo
+* Good evening   晚上好 Wǎnshàng hǎo
 
-The deadline for registration and payment is 10 days before the test date, which is 3 September 2026 for testing on 13 Septermber 2026.
+* 機場	机场 jīchǎng = airport
+* capital city 首都 Shǒudū
 
-Reservations require a photo. 
-Fees vary by country and level, from $15 USD (for Level 1) up to $100+ USD (for the advanced levels).
-In China, the HSK Level 4 fee is 750 RMB, Level 5 is 950 RMB, and Level 6 is 1050 RMB.
+* look here 看这里 Kàn zhèlǐ
+* 标志 Biāozhì = signs
+* 出口 chū kǒu = EXIT
 
-REMEMBER: print ticket and bring it with your passport to the test center.
+* 街道 Jiē dào = street/neighborhood
+* bathroom
 
-The maximum score is 300 for levels 1-6, and the advanced test is scored out of a different total. 
+* tourist attraction 旅游景点 Lǚyóu jǐngdiǎn
 
-You can take the HSK in over 160 countries worldwide at authorized test centers, as well as at various locations inside China.
-several times a year usually on weekends (often monthly or bi-monthly depending on the test center).
+* Unlike in NYC, bus drivers in China wait for people to sit before taking off.
 
-Scores are typically available online about a month after taking the test, and the physical certificate is mailed to you shortly after. HSK certificates are valid for life.
+<a id="Personal_possessions"></a>
 
-* Most Chinese universities require an HSK certificate (usually HSK 4 for undergraduate programs, HSK 5 or 6 for master’s/PhD programs) to admit international students who want to study in Chinese-taught programs.
-* Many companies in China, as well as multinational companies globally, ask for HSK scores as objective proof of your Mandarin abilities on your resume.
-* Scholarships: Applying for Chinese Government Scholarships (CSC) or Confucius Institute Scholarships almost always requires a minimum HSK score.
-* Some Chinese cities offer "Green Cards" (permanent residency) or talent visas to foreigners who hold high-level HSK certificates.
+## Personal possessions
 
-On Coursera, Tsinghua has a course.
+Arranged alphabetically:
 
-   See https://www.youtube.com/watch?v=tmXS82gFLB8&pp=ugUEEgJlbg%3D%3D
-   The Harvard of China: Why Can’t Everyone Get Into Tsinghua?!
-   Zahra.polyglot
+* backpack – bèi bāo (背包)
+* battery - diànchí	電池	电池	
+* book – shū (书)
+* card – shēnfèn zhèng (身份证)
+* cards (in wallet) – qiánbāo lǐ de kǎ (钱包里的卡)
+* cash – xiànjīn (现金)
+* charger – chōngdiàn qì (充电器)
+* clothes – yīfu (衣服)
+* computer - Diàn nǎo (电脑)
+* comb – shūzi (梳子)
+* cosmetics / Makeup – huà zhuāng pǐn (化妆品)
+* glasses – yǎn jìng (眼镜)
+* gloves – shǒu tào (手套)
+* hair dryer - ???
+* hat – màozi (帽子)
+* headphones / Earbuds – ěrjī (耳机)
+* keys – yào shi (钥匙)
+* laptop – bǐjìběn diànnǎo (笔记本电脑)
+* mirror – jìngzi (镜子)
+* mobile phone – shǒujī (手机)
+* notebook (paper) – bǐjìběn (笔记本)
+* passport – hùzhào (护照)
+* pen – bǐ (笔)
+* scarf – wéijīn (围巾)
+* shoes – xiézi (鞋子)
+* sunglasses – tàiyángjìng (太阳镜)
+* towel – máojīn (毛巾)
+* toothbrush – yáshuā (牙刷)
+* toothpaste – yágāo (牙膏)
+* umbrella – yǔsǎn (雨伞)
+* wallet – qiánbāo (钱包)
+* wrist watch – shǒubiǎo (手表)
+* water bottle / Cup – shuǐbēi (水杯)
 
-From Peking University on Coursera:
-   * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmxVLADEqEeaA3xIl-CKqow "Chinese for HSK 1" by Yu Bin
-   * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmTJHKj0pEeSGwyIACxCdDw for b
-   * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EJRctxzFBEeaObw4ta1FaeQ 3
+## Home items
 
-### HSK-based learning
+<a target="_blank" href="https://www.youtube.com/watch?v=3UHHXRlB364">VIDEO</a>
 
-1. <a target="_blank" href="https://www.chinesezerotohero.com/hsk-1-4-bundle/">Chinese Zero to Hero HSK 4 course</a> is a one-time $180 USD (30 Day Money Back Gurantee) for 600+ videos (on the popular Teacheable platform), all aligned with the official HSK framework. Taking you from complete beginner to a confident intermediate level speaker. 
+* bathroom / toilet
+* sink
+* balcony
+* desk
+* mirror
+* chair
+* couch
+etc.
 
-https://www.youtube.com/watch?v=UOvmVE9JBIc&pp=0gcJCcQLAYcqIYzv
-10:41
-New HSK 1 Course Workbook | Lesson 1 | 你好 (Hello) | Chinese Listening & Practice | Beginner Mandarin
+<a name="Compass"></a>
 
-https://www.amazon.com/dp/B09ZD12JR1/
-Ling Ling's Learn Chinese Vocabulary for Beginners: New HSK Level 1 Chinese Vocabulary Book (Free Audio) - Master 500 Words in Context (NEW HSK Vocabulary Series)
+## Compass Direction
 
-https://www.amazon.com/s?k=hsk+textbook&crid=19ME84EF729SC&sprefix=hsk+%2Caps%2C206
-book $30.99 paperback
+<a target="_blank" href="https://www.youtube.com/watch?v=nqUScMutDOs&t=4m47s">Source: <img align="right" width="200" alt="zn-compass-1155x977.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786972952/zn-compass-1155x977_hzv2vz.png" /></a>
+* North 北   Běi (as in Beijing)
+* South 南   Nán (as in Nanking)
+* East  ?东方 Dōng fāng
+* West  西方 Xī fāng = West side
+
+yàng rén = ocean (overseas) people is the more archaic reference except for a few words:
+* yàng fú = western clothes
+* yàng qì = western style
+* yàng cōng = western (yellow) onion (vs green onion = cōng)
+
+<a id="CityNames"></a>
+
+## City Names
+
+Correctly pronounce the names of the largest Tier 1 cities:
+* 上海	Shàng hǎi	2480万 	= Shanghai PVG SHA 
+   * Yu Garden
+   * Shanghai Disney Resort
+   * Shanghai Tower ride
+   * Bund road, Shanghai Gold Exchange International Board
+* 北京	Běi jīng	2183万 	= Beijing (capital) = PEK (PKX)
+   * Forbidden City and the Summer Palace
+   * toboggan down the Great Wall (Mutianyu section)
+   * <a target="_blank" href="https://centurycruise.com/destinations/temple-of-heaven">Temple of Heaven</a>, <a target="_blank" href="https://centurycruise.com/destinations/the-summer-palace">Summer palace</a>
+   * Museum
+   * Tsinghua is ranked #11 globally, top among the C9 (China's Ivy League) <a target="_blank" href="https://www.youtube.com/watch?v=tmXS82gFLB8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>: The Harvard of China: Why Can’t Everyone Get Into Tsinghua?! by Zahra.polyglot <a target="_blank" href="https://www.youtube.com/watch?v=wx9tCK7pFiQ">VIDEO</a>
+* 深圳	Shēn zhèn	1780万 	= Shenzhen SZX
+* 广州	Guǎng zhōu	1880万 	= Guangzhou CAN
+* Hong Kong HKG
+   * Xi'an Terracotta Army and City Wall
+* Chongqing - Mountain City
+* Zhangjiajie National Forest Park (floating "Hallelujah Mountains" in the movie Avatar)  Wuling mountain range of Guizhou. 
+* Chengdu panda base 
+* Shaolin <a target="_blank" href="https://www.youtube.com/watch?v=5_dQ-xYcm5k">Kung Fu</a> Monestary in Dengfeng 
+
+The "Golden Triangle Tour" is Beijing, Xi'an, Zhangjiajie, Shanghai
+
+China is home to 57 UNESCO World Heritage Sites.
+
+Searching for flights in a private browser window to prevent prices from increasing based on your search history.
+
+SFO (San Francisco) has the shortest direct route to Hong Kong (HKG)	~12-13 hours.
+
+✈️ Compare prices on Trip.com, Skyscanner, Momondo, and Google Flights. Set up price alerts to track drops. Consider budget-friendly airlines like <a target="_blank" href="airchina.com.cn">airchina.com.cn</a>, China Southern, or <a target="_blank" href="https://www.hainanairlines.com/">hainanairlines.com</a>. Airline prices in China are centrally managed by the TravelSky system (the national GDS). So use the Qianwen App + Fliggy (Alibaba's travel platform).
+
+Travel on Tuesdays/Wednesdays. Book 1-3 months in advance. Travel in off-peak months like May, June, September, or November. Connecting Flights: one-stop flights via hubs like Dubai, Seoul, Tokyo, or Hong Kong are often cheaper than direct flights. Consider flying into a nearby city and taking the high-speed train. Check for flight + hotel packages, which can be cheaper than booking separately. 
+
+
+<a id="Glossary"></a>
 
 ## Glossary
 
@@ -192,167 +366,6 @@ Common Radicals Master List: https://drive.google.com/file/d/1Mkw3VRScOg0i6XqUd7
 
 The 60 Essential Bricks: https://drive.google.com/file/d/19HeF9KnBGkfulDD_ILa3IlhQQ-9ClW7b/view?usp=sharing
 
-## Direction
-
-* North 北   Běi
-* South 南   Nán
-* West  西方 Xīfāng
-* East  东方 Dōngfāng
-
-## Dynasties
-
-* 2070 – 1600 BC = Xia (legendary)
-* 1600 – 1046 BC = Shang
-* 1046 - 256 BC = Zhou (see sub-periods)
-    * 1046 – 771 BC = Western Zhou
-    * 770 – 256 BC = Eastern Zhou
-<a id="Jade"></a><a target="_blank" href="https://www.youtube.com/watch?v=YUyLjT2PGtc" title="4x4 inch white jade hierloom seal Xi of the realm"><img align="right" width="200" alt="zn-qin-seal-786x792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786692824/zn-qin-seal-786x792_rekidp.png" /></a>
-    * 770 – 476 BC = Eastern Zhou Spring and Autumn Period
-    * 475 – 221 BC = Eastern Zhou Warring States Period
-* 221 – 206 BC = Qin - first emporor (15 year reign)
-* 206 - 220 AD = Han (漢) - see sub-periods:
-   * 206 BC – 9 AD = Western Han （西漢）
-   * 9 – 23 AD = Xin（新莽）
-   * 25 – 220 AD = Eastern Han（東漢）
-* 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity) <a target="_blank" href="https://www.youtube.com/watch?v=y06ehdYDycY&list=PLIbRFNmcCXo-Jn3PdZ57B3pdcHI2XSztV">YouTube</a>
-* 265 – 420 AD = Jin (晉) - see sub-periods:
-    * 265 – 316 AD = Western Jin (西晉)
-    * 317 – 420 AD = Eastern Jin（東晉）
-* 420 – 589 AD = Southern & Northern Dynasties (南北朝宋) - period of disunity:
-   * 581 – 618 AD = Sui (隋) 37 years
-* 618 – 907 AD = Tang (唐)
-   * 630 = General Li Jing defeats Turks and capture jade held by empress Xiao.
-   * 665 - 690 AD ruled by Wu Zetian (only woman empress) renamed jade to Bao (treasure)
-   * 690 – 907 AD 
-* 907 – 923 AD = Five Dynasties & Ten Kingdoms (五代後梁)
-* 923 - 937 AD = Later Tang 後唐 Hòu táng - under Li Cunxu, who set his family on fire in a tower, but the was seal not found, thus lost.
-   * 936～946 後晉	
-   * 947～950 後漢	
-   * 951～960 後周	
-   * 902～937 十國吳	
-   * 907～925 前蜀	
-   * 907～978 吳越	
-   * 907～951 楚	
-   * 907～971 南漢	
-   * 909～945 閩	
-   * 924～960 南平（荊南）	
-   * 934～965 後蜀	
-   * 937～975 南唐	
-   * 951～979 北漢	
-* 907 - 1125 AD 遼建國於西元907年，國號契丹，916年始建年號，937年改國號為遼，983年復稱契丹，1066年仍稱遼。Founded in 907 AD with the state name <strong>Khitan</strong>, then began to use an era name in 916, changed the state name to <strong>Liao</strong> in 937, reverted to Khitan in 983, and was still called Liao in 1066.
-* 960 – 1279 AD = Song (宋) - see sub-periods:
-   * 960 – 1127 AD = Northern Song（北宋）
-   * 1127 – 1279 AD = Southern Song（南宋）
-   * 1032 ～ 1227 AD = (西夏)
-   * 1115 - 1234 AD = gold (金) 金子 Jīnzǐ
-* 1206 ～ 1367 AD = Yuan (元) by Moguls
-* 1271 – 1368 AD = Yuan - 蒙古鐵木真於西元1206年建國，1271年忽必烈定國號為大元，1279年滅南宋。Genghis Khan founded the Mongol Empire in 1206 AD. In 1271, Kublai Khan established the Yuan Dynasty, and in 1279, the Southern Song Dynasty was destroyed.
-* 1368 – 1644 AD = Ming (明) - (centralized Yu Shan Fang) - 西元1644年桂王被殺。In 1644, the Prince of Gui was killed.
-* 1616 - 1911 AD = Qing (清) - 清建國於西元1616年，初稱後金，1636年始改國號為清，1644年入關。The Qing dynasty was founded in 1616, initially called the Later Jin. In 1636, it changed its name to Qing, and in 1644 it entered the Central Plains.
-
-References:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=qWMXG7JtqO0">Legacy of China's Imperial Cuisine and the Role of Food in Imperial Court Etiquette</a>
-   * https://www.cambridge.org/core/books/animals-through-chinese-history/chronology-of-dynasties/4C67438128929A17558EEDD834C20D58
-
-## Elements 素 sù
-
-The five elements:
-
-<a target="_blank" href="https://www.youtube.com/watch?v=yujUbIyw0j0&t=169s">VIDEO</a>:
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786721178/zn-periodic-1920x1080_f0an2t.png">Chinese Periodic Table of Elements:<br /><img width="300" alt="zn-periodic-1920x1080.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786721178/zn-periodic-1920x1080_f0an2t.png" /></a>
-Does not use many phonetically borrowed words.
-
-   * air/gas 气体 Qìtǐ, radical yáng for oxygen
-   * metal   金属 Jīnshǔ, Radical: jiǎ 
-   * stone   石头 Shítou
-   * water/liquids 液体 Yètǐ
-
-<a target="_blank" href="https://www.youtube.com/watch?v=8ol7DsPnHcE&t=1m30s">Funnier</a>
-
-## Dates Months, Numbers
-
-Instead of the European custom of unique names like "January", Chinese reference months by number 1 to 12 and add 月 (yuè) which means "month" and also "moon" for lunar. 3rd 三月 is spoken as one fluid word. Although 一月 is technically Yīyuè (with a high, flat tone on "yi"). But in natural speech, it often changes to Yíyuè (with a rising tone) because it's followed by another fourth-tone syllable (yuè). 
-
-* 一月	Yīyuè   January
-* 二月	Èryuè   February
-* 三月	Sānyuè  March
-* 四月	Sìyuè   April
-* 五月	Wǔyuè   May
-* 六月	Liùyuè  June
-* 七月	Qīyuè   July
-* 八月	Bāyuè   August
-* 九月	Jiǔyuè  September
-* 十月	Shíyuè  October
-* 十一月 Shíyīyuè  November
-* 十二月 Shíèryuè  December
-
-"March 15th" is 三月十五日 (Sānyuè shíwǔ rì) or 三月十五号 (Sānyuè shíwǔ hào) with 号 (hào) being more common in everyday spoken Chinese.
-
-## Celestials
-
-* Sky
-* Star
-
-## Colors 颜色 yánsè
-
-In imperial courts, only the emporer can wear yellow and eat from yellow plates.
-
-Color words are generally formed by taking the color name and adding the character 色 (sè), which means "color" or "look".
-
-* Black	黑色	hēisè
-* White	白色	báisè is the color of death, worn at funerals
-* Gray	灰色	huīsè
-
-* Pink	粉色 / 粉红色	fěnsè / fěnhóngsè
-* Red	红色	hóngsè
-* Green	绿色	lǜsè
-* Blue	蓝色	lánsè
-
-* Brown	棕色 / 咖啡色	zōngsè / kāfēisè
-* Orange	橙色 / 橘色	chéngsè / júsè
-* Yellow	黄色	huángsè
-* Purple	紫色	zǐsè
-
-* Gold	金色	jīnsè
-* Silver	银色	yínsè
-
-
-<a id="Mores"></a>
-
-## Cultural Mores
-
-Respect for the elderly.
-
-Ancestor worship. many setup shrines to ancestors in their home,
-and bow 3 times every morning in front of it.
-
-The first British ambassador to China (Macartney) refused to bow to the Chinese emporor (1793-94), the compromise is that he take a knee.
-
-Most Chinese believe in luck.
-There are Feng Sui professionals who advise on placement of furniture and even entire buildings. Buildings do not have 13 floors.
-The number 4 is avoided because its pronouciation is similar to the one for "death".
-
-The Xinhua News Agency is the official voice of China.
-
-* 12:49 10 Things NOT to do in China" by Maggie Ye
-
-
-<a id="Movies"></a>
-
-## Movies
-- <a target="_blank" href="https://gatsby.tv/where-to-stream/show/the-empress-of-china-december-2014">stream</a>: "The Empress of China (2014)" 武媚娘传奇 (Wǔ Mèiniáng Chuánqí), about Tan dynasty Wu Zetian. Orginally 96 episodes, censors cropped out scenes and reduce to 86 on YouTube</a> Ren Cai Wu Ru Yi Ru Gong
-* The Qin Empire III (2017)
-* Hero (2002)
-* King's War (2012)
-* Ming Dynasty in 1556 (2007)
-* Legends of War TRT Documentary
-* The Emperor in Han Dynasty (2005)
-* Mongol (2007)
-* Red Cliff (2008)
-* Eight Hundred Heroes (1976)
-* The Eight Hundred (2020)
-* Three Kingdoms (2010)
-
 
 ## Language History
 
@@ -360,13 +373,18 @@ The Xinhua News Agency is the official voice of China.
    * https://www.youtube.com/watch?v=V8EFhnMaVRk
 
 <a target="_blank" href="https://www.youtube.com/watch?v=fojzNrwAAyI&pp=ugUEEgJlbg%3D%3D">VIDEO</a>:
-The earlist appearance of Chinese script is on oracle bones (甲骨文) during the Shang dynasty, discovered in 1899. 
-Bronze script.
-The first emporor, Qin Shi Huang, around 221-1 BC, standardized weights, measures, and writing into "Small Seal Script" as "clerical script" was gaining ground on official documents 200 BC - 300 AD during the Han dynasty. 
-Abbreviated cursive "Grass" script by poets developed into more regular kaishu (楷书) script used today.
-"Running script" xingshu since 100 AD is stylistically between the two.
+* The earlist appearance of Chinese script is on oracle bones (甲骨文) during the Shang dynasty, discovered in 1899. 
+* Bronze script.
+* The first emporor, Qin Shi Huang, around 221-1 BC, standardized weights, measures, and writing into "Small Seal Script" as "clerical script" was gaining ground on official documents 200 BC - 300 AD during the Han dynasty. 
+* Abbreviated cursive "Grass" script by poets developed into more regular kaishu (楷书) script used today.
+* "Running script" xingshu since 100 AD is stylistically between the two.
 
 Early writing were vertical and did not include punctuation marks to show end of sentences.
+
+<a target="_blank" href="https://github-com.translate.goog/skywind3000/ECDICT?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">English translation</a> of https://github.com/skywind3000/ECDICT
+provides Python code to process case-insensitive csv to SQLite and MySQL databases containing a "Free English to Chinese Dictionary Database" of 100,000 entries. From ECDICT, Oxford 3000 core vocabulary list,
+
+
 
 ### Six writings
 
@@ -430,10 +448,13 @@ On internet browsers such as Google Chrome, I keep open all the time one of thes
 
    Observe the "REGULATED BY 国家语言文字工作委员会 民事服务局"
 
-1. <a target="_blank" href="https://translate.google.com">translate.google.com</a> 
+* <a target="_blank" href="https://translate.google.com">translate.google.com</a> 
 
-1. For dictionary definitions, type a prompt in an AI chat website such as <a target="_blank" href="https://z.ai">z.ai</a>, <a target="_blank" href="https://deepseek.ai">deepseek.ai</a>, perplexity.ai, etc.
+* For dictionary definitions, type a prompt in an AI chat website such as <a target="_blank" href="https://z.ai">z.ai</a>, <a target="_blank" href="https://deepseek.ai">deepseek.ai</a>, perplexity.ai, etc.
 
+* GoKollab for Android and iPhones</a> (by LEADCONNECTOR) is used by YouTuber CantoToMando.
+
+* TikTok and RedNote
 
 ## Typing Chinese
 
@@ -625,6 +646,185 @@ https://www.youtube.com/watch?v=Std-ucWlfTk
 Speak Chinese Now: 100 Essential Chinese Sentences for 30 Everyday Situations | Part 2
 Effortless Chinese
 
+<a id="Dynasties"></a>
+
+## Dynasties History
+
+* 2070 – 1600 BC = Xia (legendary)
+* 1600 – 1046 BC = Shang
+* 1046 - 256 BC = Zhou (see sub-periods)
+    * 1046 – 771 BC = Western Zhou
+    * 770 – 256 BC = Eastern Zhou
+<a id="Jade"></a><a target="_blank" href="https://www.youtube.com/watch?v=YUyLjT2PGtc" title="4x4 inch white jade hierloom seal Xi of the realm"><img align="right" width="200" alt="zn-qin-seal-786x792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786692824/zn-qin-seal-786x792_rekidp.png" /></a>
+    * 770 – 476 BC = Eastern Zhou Spring and Autumn Period
+    * 475 – 221 BC = Eastern Zhou Warring States Period
+* 221 – 206 BC = Qin - first emporor (15 year reign)
+* 206 - 220 AD = Han (漢) - sub-periods:
+   * 206 BC – 9 AD = Western Han（西漢）
+   * 9 – 23 AD = Xin（新莽）= new. 16 yrs by regent Wang Mang who <a target="_blank" href="https://www.youtube.com/watch?v=ooE7WMXcD9Y">abolished slavery with price controls, land distribution, banking</a> 
+   * 25 – 220 AD = Eastern Han（東漢）
+* 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity) <a target="_blank" href="https://www.youtube.com/watch?v=y06ehdYDycY&list=PLIbRFNmcCXo-Jn3PdZ57B3pdcHI2XSztV">YouTube</a>
+* 265 – 420 AD = Jin (晉) - sub-periods:
+    * 265 – 316 AD = Western Jin (西晉)
+    * 317 – 420 AD = Eastern Jin（東晉）
+* 420 – 589 AD = Southern & Northern Dynasties (南北朝宋) - period of disunity:
+   * 581 – 618 AD = Sui (隋) 37 years
+* 618 – 907 AD = Tang (唐) (golden age)
+   * 630 = General Li Jing defeats Turks and capture jade held by empress Xiao.
+   * 665 - 690 AD ruled by Wu Zetian (only woman empress) renamed jade to Bao (treasure)
+   * 690 – 907 AD ???
+* 907 – 923 AD = <strong>Five Dynasties & Ten Kingdoms</strong> (五代後梁)
+* 923 - 937 AD = Later Tang 後唐 Hòu táng - under Li Cunxu, who set his family on fire in a tower, but the was seal not found, thus lost.
+   * 936～946 後晉	
+   * 947～950 後漢	
+   * 951～960 後周	
+   * 902～937 十國吳	
+   * 907～925 前蜀	
+   * 907～978 吳越	
+   * 907～951 楚	
+   * 907～971 南漢	
+   * 909～945 閩	
+   * 924～960 南平（荊南）	
+   * 934～965 後蜀	
+   * 937～975 南唐	
+   * 951～979 北漢	
+* 907 - 1125 AD 遼建國於西元907年，國號契丹，916年始建年號，937年改國號為遼，983年復稱契丹，1066年仍稱遼。Founded in 907 AD with the state name <strong>Khitan</strong>, then began to use an era name in 916, changed the state name to <strong>Liao</strong> in 937, reverted to Khitan in 983, and was still called Liao in 1066.
+* 960 – 1279 AD = Song (宋) - sub-periods:
+   * 960 – 1127 AD = Northern Song（北宋）
+   * 1127 – 1279 AD = Southern Song（南宋）
+   * 1032 ～ 1227 AD = (西夏)
+   * 1115 - 1234 AD = gold (金) 金子 Jīnzǐ
+* 1206 ～ 1367 AD = Yuan (元) Mongul empire founded by Genghis Khan 
+   * 1271 – 1368 AD = Kublai Khan establishes the Yuan Dynasty
+   * 1279 - Southern Song Dynasty destroyed
+* 1368 – 1644 AD = Ming (明) - (centralized Yu Shan Fang)
+   * 1644 - Prince of Gui killed.
+* 1616 - 1911 AD = Qing (清) = "pure" 
+   * initially called the Later Jin. 
+   * 1636 - Hong Taiji as "Manchu" name to Qing (清)
+   * 1644 - enters the Central Plains
+* 1912 Japanese invade China
+
+References:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=qWMXG7JtqO0">Legacy of China's Imperial Cuisine and the Role of Food in Imperial Court Etiquette</a>
+   * https://www.cambridge.org/core/books/animals-through-chinese-history/chronology-of-dynasties/4C67438128929A17558EEDD834C20D58
+
+### Famous battles
+
+<a target="_blank" href="https://www.youtube.com/watch?v=Acdb_pYxndE&pp=0gcJCckLAYcqIYzv" title="41:26 by Learn Chinese Now">Ancient China’s Deadliest Battles Were Worse Than You Think</a>:
+    * 00:50 The Battle of Changping
+    * 09:59 The Battle of Julu
+    * 16:57 The Battle of Mobei
+    * 24:59 The Battle of Sarhu
+    * 33:20 The Battle of Shanghai
+<a target="_blank" href="https://www.youtube.com/watch?v=1k00xcb87NE">European artiller</a>
+
+
+## Elements 素 sù
+
+The five elements:
+
+<a target="_blank" href="https://www.youtube.com/watch?v=yujUbIyw0j0&t=169s">VIDEO</a>:
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786721178/zn-periodic-1920x1080_f0an2t.png">Chinese Periodic Table of Elements:<br /><img width="300" alt="zn-periodic-1920x1080.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786721178/zn-periodic-1920x1080_f0an2t.png" /></a>
+Does not use many phonetically borrowed words.
+
+   * air/gas 气体 Qìtǐ, radical yáng for oxygen
+   * metal   金属 Jīnshǔ, Radical: jiǎ 
+   * stone   石头 Shítou
+   * water/liquids 液体 Yètǐ
+
+<a target="_blank" href="https://www.youtube.com/watch?v=8ol7DsPnHcE&t=1m30s">Funnier</a>
+
+## Dates Months, Numbers
+
+Instead of the European custom of unique names like "January", Chinese reference months by number 1 to 12 and add 月 (yuè) which means "month" and also "moon" for lunar. 3rd 三月 is spoken as one fluid word. Although 一月 is technically Yīyuè (with a high, flat tone on "yi"). But in natural speech, it often changes to Yíyuè (with a rising tone) because it's followed by another fourth-tone syllable (yuè). 
+
+* 一月	Yīyuè   January
+* 二月	Èryuè   February
+* 三月	Sānyuè  March
+* 四月	Sìyuè   April
+* 五月	Wǔyuè   May
+* 六月	Liùyuè  June
+* 七月	Qīyuè   July
+* 八月	Bāyuè   August
+* 九月	Jiǔyuè  September
+* 十月	Shíyuè  October
+* 十一月 Shíyīyuè  November
+* 十二月 Shíèryuè  December
+
+"March 15th" is 三月十五日 (Sānyuè shíwǔ rì) or 三月十五号 (Sānyuè shíwǔ hào) with 号 (hào) being more common in everyday spoken Chinese.
+
+## Celestials
+
+* Sky
+* Star
+
+## Colors 颜色 yánsè
+
+In imperial courts, only the emporer can wear yellow and eat from yellow plates.
+
+Color words are generally formed by taking the color name and adding the character 色 (sè), which means "color" or "look".
+
+* Black	黑色	hēisè
+* White	白色	báisè is the color of death, worn at funerals
+* Gray	灰色	huīsè
+
+* Pink	粉色 / 粉红色	fěnsè / fěnhóngsè
+* Red	红色	hóngsè
+* Green	绿色	lǜsè
+* Blue	蓝色	lánsè
+
+* Brown	棕色 / 咖啡色	zōngsè / kāfēisè
+* Orange	橙色 / 橘色	chéngsè / júsè
+* Yellow	黄色	huángsè
+* Purple	紫色	zǐsè
+
+* Gold	金色	jīnsè
+* Silver	银色	yínsè
+
+
+<a id="Mores"></a>
+
+## Cultural Mores
+
+Respect for the elderly: The word Lǎo = old is part of the word for teacher lǎoshī, lǎobǎn = boss, and Lǎozǐ (the founder of Taoism and author of dào dé jīng). lǎo pěngyǒu = old friend.
+
+Ancestor worship: many setup shrines to ancestors in their home,
+and bow 3 times every morning in front of it.
+
+The first British ambassador to China (Macartney) refused to bow to the Chinese emporor (1793-94), the compromise is that he take a knee.
+
+Many Chinese believe in luck.
+There are Feng Sui professionals who advise on placement of furniture and even entire buildings. Buildings do not have 13 floors.
+* The number 4 is avoided because its pronouciation is similar to the word for "death". That's why many buildings don't have floor 4, 14, 24, etc.
+* The number 8 is favored because its pronouciation is similar to the word for "fortune". That's why phone numbers containing 8's sell for millions. The 2008 Olympics in Beijing began on Aug 8 at 8:08:08.
+
+The Xinhua News Agency is the official voice of China.
+
+* 12:49 10 Things NOT to do in China" by Maggie Ye
+* lubobo dolls
+* shānzhai = knockoff product
+* xiaohungshu = social media app
+
+
+<a id="Movies"></a>
+
+## Movies
+- <a target="_blank" href="https://gatsby.tv/where-to-stream/show/the-empress-of-china-december-2014">stream</a>: "The Empress of China (2014)" 武媚娘传奇 (Wǔ Mèiniáng Chuánqí), about Tan dynasty Wu Zetian. Orginally 96 episodes, censors cropped out scenes and reduce to 86 on YouTube</a> Ren Cai Wu Ru Yi Ru Gong
+- Shaolin Temple (1985)
+* The Qin Empire III (2017)
+* Hero (2002)
+* King's War (2012)
+* Ming Dynasty in 1556 (2007)
+* Legends of War TRT Documentary
+* The Emperor in Han Dynasty (2005)
+* Mongol (2007)
+* Red Cliff (2008)
+* Eight Hundred Heroes (1976)
+* The Eight Hundred (2020)
+* Three Kingdoms (2010)
+
+
 ## Learning techniques
 
 * Learn pronounciation first
@@ -639,22 +839,6 @@ Cantonese has 6.
 
 YouTube: CantoToMando
 
-## Transportation
-
-* jīchǎng	機場	机场	airport
-* chūkǒu	出口  EXIT
-
-## Famous folk tales
-
-https://www.youtube.com/watch?v=Acdb_pYxndE&pp=0gcJCckLAYcqIYzv
-41:26
-Ancient China’s Deadliest Battles Were Worse Than You Think
-by Learn Chinese Now
-* 00:50 The Battle of Changping
-* 09:59 The Battle of Julu
-* 16:57 The Battle of Mobei
-* 24:59 The Battle of Sarhu
-* 33:20 The Battle of Shanghai
 
 
 ## Etiquette
@@ -667,43 +851,48 @@ https://www.youtube.com/watch?v=IUbAoYnCqa4&pp=ugUHEgVlbi1VUw%3D%3D
 How to Eat With Chopsticks? [Learn effectively once and for all!]
 Somebody Asked
 
+<a id="Foods"></a>
 
-## Food
+## Foods
 
 * Breakfast
 * Lunch
 * Teatime
 * Dinner
-* 小吃 xiǎo chī = Snack
+* Snack 小吃 xiǎo chī 
+
+* Restaurant 餐馆 Cānguǎn
+
+<a target="_blank" href="https://www.youtube.com/watch?v=OR-obiEEm7E">
+VIDEO: How to order food</a>
+
+* 肉类 Ròu lèi = Meats
+* 鱼 Yú = Fish
+* 牛肉 Niúròu = Beef
+* 猪肉 Zhūròu = Pork
+* 鸡 Jī = Chicken
+* 鸭子 Yāzǐ = Duck
+
+* 面包 Miànbāo = Bread
 
 * wǎn3 	碗	碗	BOWL		
 * pánzi 	盤子	盘子	PLATE		
 * tāngchí	湯匙	汤匙	SPOON		
 * chāzi	  叉子	叉子	FORK		
-* kuàizi  筷子	筷子	CHOPSTICKS		
+* kuàizi  筷子	筷子	CHOPSTICKS <a target="_blank" href="https://www.youtube.com/watch?v=7smyAAkhjOk&pp=ugUEEgJlbg%3D%3D" title="The Secret History of Chinese Chopsticks
+by Learn Chinese Now">VIDEO</a>
 
-* = Fish
-* = Meat
-* = Beef
-* = Port
-* = Duck
-* = Chicken
+* Very good 非常好 Fēicháng hǎo
+* I'm very full  我吃得很饱。Wǒ chī dé hěn bǎo.
 
-* = Bread
-
-https://www.youtube.com/watch?v=7smyAAkhjOk&pp=ugUEEgJlbg%3D%3D
-The Secret History of Chinese Chopsticks
-by Learn Chinese Now
-
-https://www.youtube.com/watch?v=OR-obiEEm7E
-ordering food
-
-https://www.youtube.com/watch?v=MGviovQe7-s
-How Famine Created Modern Chinese Food
-Taste of Nations
+* https://www.youtube.com/watch?v=MGviovQe7-s = How Famine Created Modern Chinese Food by Taste of Nations
 
 
 ## Daily Interactions
+
+* zǒng = chief (department head)
+
+PROTIP: Before registering, get a Chinese name based on phonetics and meaning you desire and can remember.
 
 Learn Chinese through juicy Chinese gossip. 🍉 
 
@@ -753,16 +942,14 @@ The Super Common Chinese Number "一": 3 Tones, Which One to Use?
 https://www.youtube.com/watch?v=--rgWETNGmg
 The 11 "Easy" Sounds That Are Ruining Your Chinese Accent
 
+
 ## History: Dynasties
 
-<a target="_blank" href="https://www.youtube.com/watch?v=rNwWFF6DP-I&pp=0gcJCcsLAYcqIYzv" title="30:38">MUST WATCH VIDEO FLOWCHART</a>:
-Chinese Emperors Family Tree | Qin Dynasty to Qing Dynasty (221 BCE - 1912 CE)
-by UsefulCharts
-poster at https://usefulcharts.com/products/asian-royal-family-trees
+<a target="_blank" href="https://www.youtube.com/watch?v=rNwWFF6DP-I&pp=0gcJCcsLAYcqIYzv" title="30:38">MUST WATCH VIDEO</a> explaining the <a target="_blank" href="https://usefulcharts.com/products/asian-royal-family-trees">PDF</a>: Chinese Emperors Family Tree (by UsefulCharts)
 
-https://www.youtube.com/watch?v=Fz_uQNQBK0g
-23:56
-All of China's Dynasties in ONE Video - Chinese History 101
+<a target="_blank" href="https://www.youtube.com/watch?v=Fz_uQNQBK0g" title="23:56">MUST WATCH</a>: "All of China's Dynasties in ONE Video"
+
+<a target="_blank" href="https://www.youtube.com/watch?v=rmug6geuFAM" title="12:38">VIDEO</a>: "China’s Dynasty Names Mean More Than You Think"
 
 Learn Chinese Now
    * https://www.youtube.com/watch?v=Lp60Y9L_3Wg = 16:01 The Chinese Gods EXPLAINED (in 3 realms & 5 elements)
@@ -779,15 +966,15 @@ MIT OpenCourseWare</a> featuring Tristan G. Brown
 https://www.youtube.com/watch?v=IW-Wcv-ieiI
 53:19
 CHINA: The Civilization That Reset Itself Three Times | 4K Documentary
-Where on Earth
-
-MOVIE: Three Kingdoms (2010)
+by Where on Earth
 
 https://www.youtube.com/watch?v=96i2RzaDEIk
 China's ENTIRE Three Kingdoms Story in ONE Video 
 220 AD when last Han Dynasty emporor abdicated.
 
 Battle of the Red Cliffs (where arrows are stolen)
+
+ | Qin Dynasty to Qing Dynasty (221 BCE - 1912 CE)
 
 Tan Dynasty the golden age. 618-907 AD
 
@@ -809,7 +996,7 @@ https://www.youtube.com/watch?v=Vi67QEuHF3M&t=1m15s
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786435109/chinese-iceberg-970x1182_ypccy5.png"><img alt="chinese-iceberg-970x1182.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786435109/chinese-iceberg-970x1182_ypccy5.png" /></a>
 
 
-## films
+## Films
 
 For Chinese-language films with English subtitles in the U.S., these are the most useful legal streaming options:
 
@@ -888,21 +1075,24 @@ https://docs.google.com/document/d/19zAyAVcxxOLqVGwroq9epccT_PcwYVzT24JHTOrZ0SM/
 for Building Vocabulary:
 👍Anki: https://apps.ankiweb.net/
 
-https://www.youtube.com/watch?v=V8EFhnMaVRk
-italki pay per lesson code: julesy3
+For free language exchange:
+* HelloTalk is free
+* <a target="_blank" href="https://www.youtube.com/watch?v=V8EFhnMaVRk">VIDEO</a>: italki pay per lesson code: julesy3
+AI Conversation App:
+* Langua: http://languatalk.com/?via=brian
 
--Best App for Daily Progress:
-👍Pimsleur (7 days free): http://imp.i271380.net/BrianWiles $165/yr conversations
-👍Language Transfer: https://www.languagetransfer.org/ free
+Once you have some fluency:
+* Install Glossika, an audio flashcard app.
 
--Best AI Conversation App:
-👍 Langua: http://languatalk.com/?via=brian
+Best App for Daily Progress:
+* Language Transfer: https://www.languagetransfer.org/ free
+* Pimsleur app (7 days free): http://imp.i271380.net/BrianWiles $165/yr conversations
 
 -Best App for Building Reading Skills:
-👍(Multi-language) BeeLingua: https://beelinguapp.com/ Premium subscribers can get rid of ads 
+* (Mandarin) TCB: https://www.thechairmansbao.com/ news-based articles $11/month
+* (Multi-language) BeeLingua: https://beelinguapp.com/ Premium subscribers can get rid of ads 
    https://www.youtube.com/watch?v=4NlSwUzqAcU&pp=ugUHEgVlbi1HQg%3D%3D
-👍(Japanese) Satori Reader: https://www.satorireader.com/
-👍(Mandarin) TCB: https://www.thechairmansbao.com/ news-based articles $11/month
+* (Japanese) Satori Reader: https://www.satorireader.com/
 
 Arts, Culture & Expression 🎨
 Science, Nature & Exploration 🔬
@@ -963,6 +1153,10 @@ Numbers 0–10 & Days of the Week | Chinese for Beginners
 Mandarin with Phoebe
 
 ## Smalltalk
+
+https://singandlearnchinese.com/ytvs-chuang-qian
+
+https://singandlearnchinese.com/ytvs-yi-xiao-bu
 
 https://www.youtube.com/watch?v=Gh3cxOYjjQ8
 Chinese Daily Podcast | Describe Yourself in Chinese | 自我介绍 | Slow Chinese Podcast | HSK1–HSK2
@@ -1097,7 +1291,23 @@ Learn Chinese Now
  
 Jared Tells Tales
 
+<a id="Questions"></a>
+
+## Questions to answer
+
+<a target="_blank" href="https://www.youtube.com/watch?v=cGz7iVTnego">VIDEO</a>:
+
+1. What is your name?
+1. What is your nationality?
+1. How long have you been studying?
+1. [1:00] Close enough
+1. [1:10] OK, let's go.
+1. [1:23] I think so.
 
 
+## References to add
 
-a
+https://www.youtube.com/watch?v=S-ugOMdynYo&pp=ugUEEgJlbg%3D%3D
+19:49
+Why Speaking "Broken" Chinese Is The Fastest Path to Fluency
+Canto to Mando
