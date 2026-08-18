@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2026-08-17"
+date: "2026-08-18"
 lastchange: "v015 compass @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
@@ -20,29 +20,9 @@ created: "2021-10-03"
 
 ALPHABETICAL INDEX: <a href="#Languages">Languages</a>, <a href="#LearningStrategies">Learning strategies</a>, <a href="#HSK_exam">HSK_exam</a>, <a href="#Glossary">Glossary</a>, <a href="#Idioms">Idioms</a>, <a href="#Jade">Jade</a>, <a href="#LearningStrategies">LearningStrategies</a>, <a href="#Memonics">Memonics</a>, <a href="#Personal_possessions">Personal possessions</a>
 
-
-<a id="Languages"></a>
-
-## Among Languages
-
-<a target="_blank" href="https://www.youtube.com/watch?v=GG8aBhUthG0&t=9s">VIDEO</a>:
-   Millions of people:
-1. 929.0 - Mandarin Chinese (汉语) Hànyǔ Mandarin Pǔtōnghuà (普通话 common speech)
-2. 474.4 - Spanish
-3. 372.9 - English
-4. 343.9 - Hindi
-5. 233.7 - Bengali
-6. 232.4 - Portugese (Brazilian)
-7. 154.0 - Russian
-8. 125.3 - Japanese
-9. 92.7 - Western Punjabi
-10. 85.2 - Yu Chinese (Cantonese, etc.)
-
-<a target="_blank" href="https://www.youtube.com/watch?v=csmXX1elkwI">VIDEO</a>: There are 300+ dialects in China , due to historical geographical limits to transportation.
-
-## Why Learn Chinese? HSK
-
 <a id="HSK_exam"></a>
+
+## Why Learn Chinese? HSK & HSKK
 
 The China-wide Center for Language Education and Cooperation (CLEC) under the Chinese Ministry of Education officially administers a standardized exam called the <strong>HSK (Hanyu Shuiping Kaoshi)</strong> to evaluate <strong>writing</strong> proficiency among non-native speakers (wai guo ren). It is the Chinese equivalent of the TOEFL or IELTS for English.
 
@@ -51,9 +31,9 @@ evaluates speaking ability using audio-recording equipment.
 
 Core HSK written tests are available either writing paper or typing Pinyin on a computer QWERTY keyboard. They test for:
 
-    * Listening Comprehension by listening to audio clips, then answering multiple-choice questions
+    * Listening to audio clips, then answering multiple-choice questions
     
-    * Reading Comprehension by reading sentences, paragraphs, or passages, then answering multiple-choice questions.
+    * Reading sentences, paragraphs, or passages, then answering multiple-choice questions.
     
     * Writing ability at arranging words into sentences (at lower levels) or  writing short essays (at higher levels).
 
@@ -82,11 +62,11 @@ The maximum score is <strong>300</strong> for levels 1-6.
 Advanced (HSK Levels 7–9): Focuses on near-native proficiency, academic research, and professional work for master’s/PhD programs:
    - HSK 7-9 are tested together in one single exam. Passing with varying scores dictates whether you get a Level 7, 8, or 9 certificate. It tests highly nuanced language, classical Chinese elements, and complex writing. (Vocab: 11,000+ words)
 
-Some Chinese cities offer "Green Cards" (permanent residency) or talent visas to foreigners who hold high-level HSK certificates.ccc
+In China, the HSK Level 4 fee is 750 <a href="#Payments">RMB</a>, Level 5 is 950 RMB for the core.
+
+Some Chinese cities offer "Green Cards" (permanent residency) or talent visas to foreigners who hold high-level HSK certificates.
 
 The HSK & HSKK can be taken several times a year, usually on weekends (often monthly or bi-monthly depending on the test center), worldwide at authorized test centers in and outside China. 
-
-In China, the HSK Level 4 fee is 750 RMB, Level 5 is 950 RMB for the core.
 
 Applying for Chinese Government Scholarships (CSC) or Confucius Institute Scholarships almost always requires a minimum HSK score.
 
@@ -103,37 +83,6 @@ From Peking University on Coursera:
    * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmxVLADEqEeaA3xIl-CKqow "Chinese for HSK 1" by Yu Bin
    * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmTJHKj0pEeSGwyIACxCdDw for b
    * https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EJRctxzFBEeaObw4ta1FaeQ 3
-
-## Language database
-
-Column	Source
-* hsk_level	All set to 1
-* sequence	1-500, matching official order
-* simplified	Simplified Mandarin characters
-* pinyin	Tone-marked pinyin
-* part_of_speech	Normalized (Verb, Noun, Adjective, etc.)
-* english	CC-CEDICT definitions, with overrides for ~26 entries where CEDICT picked the wrong sense
-* measure_word	Curated classifiers only — blank where no measure word applies (no invented defaults)
-* stroke_count	Total strokes from Unicode Unihan kTotalStrokes data
-* example_simplified	Example sentence in simplified Chinese
-* example_pinyin	Pinyin for the example (via pypinyin)
-* example_english	English translation
-
-
-### HSK-based learning
-
-1. <a target="_blank" href="https://www.chinesezerotohero.com/hsk-1-4-bundle/">Chinese Zero to Hero HSK 4 course</a> is a one-time $180 USD (30 Day Money Back Gurantee) for 600+ videos (on the popular Teacheable platform), all aligned with the official HSK framework. Taking you from complete beginner to a confident intermediate level speaker. 
-
-https://www.youtube.com/watch?v=UOvmVE9JBIc&pp=0gcJCcQLAYcqIYzv
-10:41
-New HSK 1 Course Workbook | Lesson 1 | 你好 (Hello) | Chinese Listening & Practice | Beginner Mandarin
-
-https://www.amazon.com/dp/B09ZD12JR1/
-Ling Ling's Learn Chinese Vocabulary for Beginners: New HSK Level 1 Chinese Vocabulary Book (Free Audio) - Master 500 Words in Context (NEW HSK Vocabulary Series)
-
-<a target="_blank" href="https://www.amazon.com/s?k=hsk+textbook&crid=19ME84EF729SC&sprefix=hsk+%2Caps%2C206">paperback</a>: $30.99 
-
-https://www.youtube.com/watch?v=U_SAcVGFpag&
 
 
 <a id="LearningStrategies"></a>
@@ -187,6 +136,66 @@ https://www.youtube.com/watch?v=U_SAcVGFpag&
 1. Practice spaced repetition for long-term memory. Install the Anki app and load flash card content and quizzes so you spend time on what you didn't get right. It's free.
 
 
+
+
+## Language database
+
+Column	Source
+* hsk_level	All set to 1
+* sequence	1-500, matching official order
+* simplified	Simplified Mandarin characters
+* pinyin	Tone-marked pinyin
+* part_of_speech	Normalized (Verb, Noun, Adjective, etc.)
+* english	CC-CEDICT definitions, with overrides for ~26 entries where CEDICT picked the wrong sense
+* measure_word	Curated classifiers only — blank where no measure word applies (no invented defaults)
+* stroke_count	Total strokes from Unicode Unihan kTotalStrokes data
+* example_simplified	Example sentence in simplified Chinese
+* example_pinyin	Pinyin for the example (via pypinyin)
+* example_english	English translation
+
+
+### HSK-based learning
+
+1. <a target="_blank" href="https://www.chinesezerotohero.com/hsk-1-4-bundle/">Chinese Zero to Hero HSK 4 course</a> is a one-time $180 USD (30 Day Money Back Gurantee) for 600+ videos (on the popular Teacheable platform), all aligned with the official HSK framework. Taking you from complete beginner to a confident intermediate level speaker. 
+
+https://www.youtube.com/watch?v=UOvmVE9JBIc&pp=0gcJCcQLAYcqIYzv
+10:41
+New HSK 1 Course Workbook | Lesson 1 | 你好 (Hello) | Chinese Listening & Practice | Beginner Mandarin
+
+https://www.amazon.com/dp/B09ZD12JR1/
+Ling Ling's Learn Chinese Vocabulary for Beginners: New HSK Level 1 Chinese Vocabulary Book (Free Audio) - Master 500 Words in Context (NEW HSK Vocabulary Series)
+
+<a target="_blank" href="https://www.amazon.com/s?k=hsk+textbook&crid=19ME84EF729SC&sprefix=hsk+%2Caps%2C206">paperback</a>: $30.99 
+
+https://www.youtube.com/watch?v=U_SAcVGFpag&
+
+
+
+
+<a id="Languages"></a>
+
+## Among Languages
+
+<a target="_blank" href="https://www.youtube.com/watch?v=GG8aBhUthG0&t=9s">VIDEO</a>:
+   Millions of people:
+1. 929.0 - Mandarin Chinese (汉语) Hànyǔ Mandarin Pǔtōnghuà (普通话 common speech)
+2. 474.4 - Spanish
+3. 372.9 - English
+4. 343.9 - Hindi
+5. 233.7 - Bengali
+6. 232.4 - Portugese (Brazilian)
+7. 154.0 - Russian
+8. 125.3 - Japanese
+9. 92.7 - Western Punjabi
+10. 85.2 - Yu Chinese (Cantonese, etc.)
+
+<a target="_blank" href="https://www.youtube.com/watch?v=csmXX1elkwI">VIDEO</a>: There are 300+ dialects in China , due to historical geographical limits to transportation.
+
+China shares land borders with 14 countries.
+
+To drive in China, an International Driving Permit (IDP) is NOT valid. You need to obtain a temporary Chinese driving license. A specialized agency <a target="_blank" href="https://www.chinadragontours.com/how-to-plan-china-rv-caravan-self-driving-tour.html#1">Yaso Trip</a> (which also rents RVs), can handle all the paperwork for foreign RV travelers, including temporary licenses, insurance, and permits for restricted areas. Short-term (up to 90 days): This can be processed easily for about 50 CNY, often with a  traffic rules briefing and no road test. Over 90 days, you must pass the full Chinese written driving test.
+
+
 <a id="eSIM"></a>
 
 ## mobile eSIM vs VPN
@@ -199,13 +208,14 @@ Activate after you land.
 
 Didi is the ride-hailing app like Uber.
 
+
 <a id="Payments"></a>
 
-## Automated Payments
+## Payments & Currency
 
-Renminbi (RMB) (meaning "people's currency") is the official ISO 4217  name of China's currency, denominated in yuan (CNY) with the symbol ¥, (or CNH in Hong Kong; but abbreviated RMB for buying gold). Currently the Chinese yuan is pegged to a basket of currencies, including the US dollar (which the Chinese call mei yuan). The largest yuan banknote is 100 yuan, followed by 50, 20, 10, 5, and one yuan. A jiao is a tenth of a yuan. The jiao is further divided into 10 fen. The highest rate for 1 USD was worth 8.72 in May 1994 and declining to <a target="_blank" href="macrotrends.net/3570/chinese-yuan-to-usd-exchange-rate">6.78 on Aug 16</a>.
+Renminbi (RMB) (meaning "people's currency") is the official ISO 4217  name of China's currency, denominated in 元/圆 yuan (CNY) with the symbol ¥, (or CNH in Hong Kong; but abbreviated RMB for buying gold). Currently the Chinese yuan is pegged to a basket of currencies, including the US dollar (which the Chinese call mei yuan). The largest yuan banknote is 100 yuan, followed by 50, 20, 10, 5, and one yuan. A jiao is a tenth of a yuan. The jiao is further divided into 10 fen. The highest rate for 1 USD was worth 8.72 in May 1994, then declining gradually to <a target="_blank" href="macrotrends.net/3570/chinese-yuan-to-usd-exchange-rate">6.78 on Aug 16</a>.
 
-You'll need two AliPay & WeChat:
+Install both Alibaba's <a target="_blank" href="https://alipay.com/">AliPay</a> & WeChat:
 
 1. AliPay https://mobile.alipay.com/
 1. Sign up with your mobile phone number.
@@ -214,32 +224,81 @@ You'll need two AliPay & WeChat:
 
 WeChat:
 
-href="#Street_signs">street signs
 <a id="Street_signs"></a>
 
-## Getting around
+## Street signs - Getting around
 
+* 欢迎 huānyíng welcome
 * Good morning   早上好 Zǎoshang hǎo
 * Good afternoon 下午好 Xiàwǔ hǎo
 * Good evening   晚上好 Wǎnshàng hǎo
+* 晚上 wǎnshànɡ evening
+* 晚 wǎn late / night
 
-* 機場	机场 jīchǎng = airport
-* capital city 首都 Shǒudū
+* 今天 jīntiān today
+* 昨天 zuótiān yesterday
+* 明天 míngtiān tomorrow
+* 时钟 shízhōng clock
+* 中午 zhōngwǔ noon
+* 分   fēn minute
 
-* look here 看这里 Kàn zhèlǐ
+* 周末 zhōumò weekend
+
 * 标志 Biāozhì = signs
+* 出名 chūmíng well-konwn
 * 出口 chū kǒu = EXIT
 
-* 街道 Jiē dào = street/neighborhood
-* bathroom
+* 开始 kāishǐ to start
+* 结束 jiéshù to end
 
-* tourist attraction 旅游景点 Lǚyóu jǐngdiǎn
+* 機場	机场 jīchǎng = airport
+* 海关 hǎiguān customs
+* 旅客服务中心 lǚkè fúwù zhōngxīn tourist information center
+* 签证 qiānzhèng visa
+* capital city 首都 Shǒudū
+
+* 订房 dìngfáng to reserve/book a room
+* 饭店 fàndiàn hotel
+* 大厅 dàtīng lobby
+* 楼 lóu floor / level
+* 房(间) fángjiān room
+* 窗户 chuānghù window
+* 电视 diànshì TV
+* 浴缸 yùgāng bathtub
+* 洗手间 xǐshǒujiān restroom
+
+* 温度 wēndù temperature
+* 热 rè hot
+* 冷气 lěngqì = air conditioning
+* 空调 kōngtiáo air conditioner
+* 坏 huài bad / broken / doesn't work
+
+* 计程车 jìchéngchē taxi
+* 地址 dìzhǐ address
+* 街道 Jiē dào = street/neighborhood
+* 门 mén = door/gate
+
+* 失物招领区（处）shīwù zhāolǐng qū (chù) lost and found
+
+* look here 看这里 Kàn zhèlǐ
+
+* 观光 guānguāng sightseeing
+* 旅客 lǚkè tourist
+* 旅游景点 Lǚyóu jǐngdiǎn = tourist attraction
 
 * Unlike in NYC, bus drivers in China wait for people to sit before taking off.
+
+* 抱歉 bàoqiàn to be sorry / "Sorry!"
+* 请问 qǐngwèn May I ask...
+* 问题 wèntí question
+* 怎么样 zěnmeyàng how
+
 
 <a id="Personal_possessions"></a>
 
 ## Personal possessions
+
+* 贵 guì expensive
 
 Arranged alphabetically:
 
@@ -254,6 +313,7 @@ Arranged alphabetically:
 * computer - Diàn nǎo (电脑)
 * comb – shūzi (梳子)
 * cosmetics / Makeup – huà zhuāng pǐn (化妆品)
+* 杯 bēi cup
 * glasses – yǎn jìng (眼镜)
 * gloves – shǒu tào (手套)
 * hair dryer - ???
@@ -261,8 +321,10 @@ Arranged alphabetically:
 * headphones / Earbuds – ěrjī (耳机)
 * keys – yào shi (钥匙)
 * laptop – bǐjìběn diànnǎo (笔记本电脑)
+* 行李 xínglǐ luggage
 * mirror – jìngzi (镜子)
 * mobile phone – shǒujī (手机)
+* 钱 qián money
 * notebook (paper) – bǐjìběn (笔记本)
 * passport – hùzhào (护照)
 * pen – bǐ (笔)
@@ -273,9 +335,11 @@ Arranged alphabetically:
 * toothbrush – yáshuā (牙刷)
 * toothpaste – yágāo (牙膏)
 * umbrella – yǔsǎn (雨伞)
-* wallet – qiánbāo (钱包)
+* wallet/purse – qiánbāo (钱包)
 * wrist watch – shǒubiǎo (手表)
 * water bottle / Cup – shuǐbēi (水杯)
+
+* 过期 guòqí = to expire
 
 ## Home items
 
@@ -290,41 +354,31 @@ Arranged alphabetically:
 * couch
 etc.
 
-<a name="Compass"></a>
-
-## Compass Direction
-
-<a target="_blank" href="https://www.youtube.com/watch?v=nqUScMutDOs&t=4m47s">Source: <img align="right" width="200" alt="zn-compass-1155x977.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786972952/zn-compass-1155x977_hzv2vz.png" /></a>
-* North 北   Běi (as in Beijing)
-* South 南   Nán (as in Nanking)
-* East  ?东方 Dōng fāng
-* West  西方 Xī fāng = West side
-
-yàng rén = ocean (overseas) people is the more archaic reference except for a few words:
-* yàng fú = western clothes
-* yàng qì = western style
-* yàng cōng = western (yellow) onion (vs green onion = cōng)
-
 <a id="CityNames"></a>
 
-## City Names
+## Chinese City Names
 
 Correctly pronounce the names of the largest Tier 1 cities:
+* Harbin: luxury hotels in the Songbei District 
 * 上海	Shàng hǎi	2480万 	= Shanghai PVG SHA 
+   * Aurora Museum
    * Yu Garden
    * Shanghai Disney Resort
    * Shanghai Tower ride
    * Bund road, Shanghai Gold Exchange International Board
 * 北京	Běi jīng	2183万 	= Beijing (capital) = PEK (PKX)
-   * Forbidden City and the Summer Palace
+   * Forbidden City's golden ginkgo trees: Get there early (6am). Begin with the side halls instead of the main central axis.
+   * Xiangshan Park red maple leaves in autumn
+   * Summer Palace
    * toboggan down the Great Wall (Mutianyu section)
    * <a target="_blank" href="https://centurycruise.com/destinations/temple-of-heaven">Temple of Heaven</a>, <a target="_blank" href="https://centurycruise.com/destinations/the-summer-palace">Summer palace</a>
    * Museum
    * Tsinghua is ranked #11 globally, top among the C9 (China's Ivy League) <a target="_blank" href="https://www.youtube.com/watch?v=tmXS82gFLB8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>: The Harvard of China: Why Can’t Everyone Get Into Tsinghua?! by Zahra.polyglot <a target="_blank" href="https://www.youtube.com/watch?v=wx9tCK7pFiQ">VIDEO</a>
 * 深圳	Shēn zhèn	1780万 	= Shenzhen SZX
 * 广州	Guǎng zhōu	1880万 	= Guangzhou CAN
-* Hong Kong HKG
-   * Xi'an Terracotta Army and City Wall
+* Hong Kong HKG - Tiger Balm gardens
+* Xi'an Terracotta Army and City Wall: Go against the typical flow: start with Pit 3 (the quietest), then visit Pit 2, and finish with Pit 1.
+   * Xi'an Lintong museum - hands-on experience restoring relics under expert guidance.
 * Chongqing - Mountain City
 * Zhangjiajie National Forest Park (floating "Hallelujah Mountains" in the movie Avatar)  Wuling mountain range of Guizhou. 
 * Chengdu panda base 
@@ -336,16 +390,30 @@ China is home to 57 UNESCO World Heritage Sites.
 
 Searching for flights in a private browser window to prevent prices from increasing based on your search history.
 
-SFO (San Francisco) has the shortest direct route to Hong Kong (HKG)	~12-13 hours.
+The 12-13 hour SFO (San Francisco) to Hong Kong (HKG) is the shortest direct route to China from the US.
 
 ✈️ Compare prices on Trip.com, Skyscanner, Momondo, and Google Flights. Set up price alerts to track drops. Consider budget-friendly airlines like <a target="_blank" href="airchina.com.cn">airchina.com.cn</a>, China Southern, or <a target="_blank" href="https://www.hainanairlines.com/">hainanairlines.com</a>. Airline prices in China are centrally managed by the TravelSky system (the national GDS). So use the Qianwen App + Fliggy (Alibaba's travel platform).
 
 Travel on Tuesdays/Wednesdays. Book 1-3 months in advance. Travel in off-peak months like May, June, September, or November. Connecting Flights: one-stop flights via hubs like Dubai, Seoul, Tokyo, or Hong Kong are often cheaper than direct flights. Consider flying into a nearby city and taking the high-speed train. Check for flight + hotel packages, which can be cheaper than booking separately. 
 
+Taking crowds, weather, and scenery into account, the best months to travel are April, May, September, and mid-to-late October. Summers are the peak season. 
+
+* 特別 tèbié special
+* 酷  kù cool
+* 有意思 yǒuyìsi interesting
+
+假期 Jiàqī = Holidays:
+* Dec 31 fireworks & Jan 5 opening: <a target="_blank" href="https://www.chinahighlights.com/festivals/harbin-ice-and-snow-festival.htm">Harbin Ice and Snow festival</a>: Enter before 2pm for sunsets at 4.
+* Feb. New Year
+* Apr 3-5 - Qingming Festival
+* Apr 30 - May 4 - Labor Day
+* Mid to late June brings frequent downpours
+* July and August - short showers in the morning or evening. 
+* Sep 30 - Oct 6 - National Day
 
 <a id="Glossary"></a>
 
-## Glossary
+## Language Glossary
 
 A <strong>morpheme</strong> is the smallest unit of meaning in a language.
 
@@ -502,7 +570,7 @@ On Android mobile:
 
 On all devices:
 
-1. Type entire base Pinyin words such as "nihao" for "hello" (你好, nǐ hǎo) without tone accent marks, then press spacebar to enter. 
+1. Type entire base Pinyin words such as (你好, nǐ hǎo) = you good? for "hello"  without tone accent marks, then press spacebar to enter. 
 
    <img alt="mac-a-diacriticals-544x108.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786700493/mac-a-diacriticals-544x108_yujyv8.png" />
    PROTIP: Simply hold down the base letter (a,e,i,o, or u, with or without pressing shift for upper case) until a small menu with accent options appears (e.g., 1: è, 2: é, 3: ê, 4: ë). 
@@ -525,6 +593,8 @@ On all devices:
    PROTIP: Type an <strong>apostrophe between syllables</strong> for multiple-syllable words such as the city Xi'an (西安). Typing xian without the apostrophe would incorrectly yield the single word 先 or 仙.
 
 1. If an autocomplete option is offered, press Spacebar to select the top choice. If not, press a number or press arrow keys to select another option.
+
+<a id="Pinyin"></a>
 
 ## Pinyin Alphabet
 
@@ -646,6 +716,43 @@ https://www.youtube.com/watch?v=Std-ucWlfTk
 Speak Chinese Now: 100 Essential Chinese Sentences for 30 Everyday Situations | Part 2
 Effortless Chinese
 
+
+<a name="Compass"></a>
+
+## Compass Direction
+
+<a target="_blank" href="https://www.youtube.com/watch?v=nqUScMutDOs&t=4m47s">Source: <img align="right" width="200" alt="zn-compass-1155x977.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786972952/zn-compass-1155x977_hzv2vz.png" /></a>
+* North 北   Běi (as in Beijing)
+* South 南   Nán (as in Nanking)
+* East  ?东方 Dōng fāng
+* West  西方 Xī fāng = West side
+
+yàng rén = lit. ocean (meaning overseas) people is the more archaic reference except for a few words:
+* yàng fú = western clothes
+* yàng qì = western style
+* yàng cōng = western (yellow) onion (vs green onion = cōng)
+
+## Other countries
+
+* 亚洲 Yăzhōu * Asia
+   * 台湾 Táiwān Taiwan
+   * 香港 = Xiānggăng Hong Kong
+   * 日本 Rìběn Japan
+   * 印度 Yìndù India
+   * 泰国 Tàiguó Thailand
+   * 澳洲 Àozhōu Australia
+* 北美洲 Běiměizhōu North America
+   * 加拿大 Jiānádà Canada
+   * 美国 Měiguó The United States
+* 南美洲 Nánměizhōu South America
+* 欧洲 Ōuzhōu Europe
+   * 法国 Făguó France
+   * 英国 Yīngguó UK
+   * 意大利 Yìdàlì Italy
+   * 俄罗斯 Èluósī Russia
+* 非洲 Fēizhōu Africa
+* 南极洲 Nánjízhōu Antarctica
+
 <a id="Dynasties"></a>
 
 ## Dynasties History
@@ -658,15 +765,17 @@ Effortless Chinese
 <a id="Jade"></a><a target="_blank" href="https://www.youtube.com/watch?v=YUyLjT2PGtc" title="4x4 inch white jade hierloom seal Xi of the realm"><img align="right" width="200" alt="zn-qin-seal-786x792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786692824/zn-qin-seal-786x792_rekidp.png" /></a>
     * 770 – 476 BC = Eastern Zhou Spring and Autumn Period
     * 475 – 221 BC = Eastern Zhou Warring States Period
-* 221 – 206 BC = Qin - first emporor (15 year reign)
-* 206 - 220 AD = Han (漢) - sub-periods:
-   * 206 BC – 9 AD = Western Han（西漢）
-   * 9 – 23 AD = Xin（新莽）= new. 16 yrs by regent Wang Mang who <a target="_blank" href="https://www.youtube.com/watch?v=ooE7WMXcD9Y">abolished slavery with price controls, land distribution, banking</a> 
+* 221 – 206 BC = Qin - first emporor (15 year reign unified, started Great Wall) then separated into 18 kingdoms
+* 136 BC Wu academies. silk road to Rome
+* 206 - 220 AD = Han (漢) - <a target="_blank" href="https://www.youtube.com/watch?v=OHsE7OcafCM">sub-periods</a>:
+   * 206 BC – 9 AD = Western Han（西漢）Liu Bang becomes emporor Gaozu
+   * 9 – 23 AD = Xin（新莽）= new. Regent Wang Mang who <a target="_blank" href="https://www.youtube.com/watch?v=ooE7WMXcD9Y">abolishes slavery with price controls, land distribution, banking</a> 
    * 25 – 220 AD = Eastern Han（東漢）
-* 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity) <a target="_blank" href="https://www.youtube.com/watch?v=y06ehdYDycY&list=PLIbRFNmcCXo-Jn3PdZ57B3pdcHI2XSztV">YouTube</a>
-* 265 – 420 AD = Jin (晉) - sub-periods:
-    * 265 – 316 AD = Western Jin (西晉)
-    * 317 – 420 AD = Eastern Jin（東晉）
+* 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity) <a target="_blank" href="https://www.youtube.com/watch?v=y06ehdYDycY&list=PLIbRFNmcCXo-Jn3PdZ57B3pdcHI2XSztV">VIDEO</a>, <a target="_blank" href="https://www.youtube.com/watch?v=TGiWWG6tS-c">VIDEO</a>.
+   * Cao Cao in battle of Red Cliffs
+* 265 – 420 AD = Jin (晉) = enter, advance - sub-periods:
+   * 265 – 316 AD = Western Jin (西晉)
+   * 317 – 420 AD = Eastern Jin（東晉）
 * 420 – 589 AD = Southern & Northern Dynasties (南北朝宋) - period of disunity:
    * 581 – 618 AD = Sui (隋) 37 years
 * 618 – 907 AD = Tang (唐) (golden age)
@@ -689,7 +798,7 @@ Effortless Chinese
    * 937～975 南唐	
    * 951～979 北漢	
 * 907 - 1125 AD 遼建國於西元907年，國號契丹，916年始建年號，937年改國號為遼，983年復稱契丹，1066年仍稱遼。Founded in 907 AD with the state name <strong>Khitan</strong>, then began to use an era name in 916, changed the state name to <strong>Liao</strong> in 937, reverted to Khitan in 983, and was still called Liao in 1066.
-* 960 – 1279 AD = Song (宋) - sub-periods:
+* 960 – 1279 AD = Sòng (宋) = poem - sub-periods:
    * 960 – 1127 AD = Northern Song（北宋）
    * 1127 – 1279 AD = Southern Song（南宋）
    * 1032 ～ 1227 AD = (西夏)
@@ -697,7 +806,7 @@ Effortless Chinese
 * 1206 ～ 1367 AD = Yuan (元) Mongul empire founded by Genghis Khan 
    * 1271 – 1368 AD = Kublai Khan establishes the Yuan Dynasty
    * 1279 - Southern Song Dynasty destroyed
-* 1368 – 1644 AD = Ming (明) - (centralized Yu Shan Fang)
+* 1368 – 1644 AD = Ming (明) = brilliant (centralized Yu Shan Fang)
    * 1644 - Prince of Gui killed.
 * 1616 - 1911 AD = Qing (清) = "pure" 
    * initially called the Later Jin. 
@@ -728,12 +837,14 @@ The five elements:
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786721178/zn-periodic-1920x1080_f0an2t.png">Chinese Periodic Table of Elements:<br /><img width="300" alt="zn-periodic-1920x1080.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786721178/zn-periodic-1920x1080_f0an2t.png" /></a>
 Does not use many phonetically borrowed words.
 
-   * air/gas 气体 Qìtǐ, radical yáng for oxygen
+   * air/gas 气体 Qìtǐ, radical yáng = oxygen
    * metal   金属 Jīnshǔ, Radical: jiǎ 
    * stone   石头 Shítou
    * water/liquids 液体 Yètǐ
+   * 
 
 <a target="_blank" href="https://www.youtube.com/watch?v=8ol7DsPnHcE&t=1m30s">Funnier</a>
+
 
 ## Dates Months, Numbers
 
@@ -753,6 +864,9 @@ Instead of the European custom of unique names like "January", Chinese reference
 * 十二月 Shíèryuè  December
 
 "March 15th" is 三月十五日 (Sānyuè shíwǔ rì) or 三月十五号 (Sānyuè shíwǔ hào) with 号 (hào) being more common in everyday spoken Chinese.
+
+* 二十一 (èr shí yī) = 21
+* 百 (bǎi) = hundred
 
 ## Celestials
 
@@ -787,7 +901,7 @@ Color words are generally formed by taking the color name and adding the charact
 
 ## Cultural Mores
 
-Respect for the elderly: The word Lǎo = old is part of the word for teacher lǎoshī, lǎobǎn = boss, and Lǎozǐ (the founder of Taoism and author of dào dé jīng). lǎo pěngyǒu = old friend.
+Respect for the elderly: The word 老 lǎo = old is part of the word for teacher 老师 lǎoshī, lǎobǎn = boss, Lǎozǐ (the founder of Taoism and author of dào dé jīng), and lǎo 朋友 pěngyǒu = old friend.
 
 Ancestor worship: many setup shrines to ancestors in their home,
 and bow 3 times every morning in front of it.
@@ -806,6 +920,76 @@ The Xinhua News Agency is the official voice of China.
 * shānzhai = knockoff product
 * xiaohungshu = social media app
 
+## Etiquette
+
+https://www.youtube.com/watch?v=XDClJwGDkFk&pp=ugUEEgJlbg%3D%3D
+Dos and Don'ts of Chinese Etiquette: Things You Should NEVER Do According to Chinese Tradition!
+
+https://www.youtube.com/watch?v=IUbAoYnCqa4&pp=ugUHEgVlbi1VUw%3D%3D
+6:38
+How to Eat With Chopsticks? [Learn effectively once and for all!]
+Somebody Asked
+
+<a id="Foods"></a>
+
+## Foods
+
+* 吃 chī to eat
+
+* 用餐 yòngcān to eat a meal
+* 早餐 zǎocān breakfast
+* 午餐 wǔcān lunch
+* Teatime
+* 晚餐 wǎncān dinner
+* Snack 小吃 xiǎo chī 
+
+* 客房服务 kèfáng fúwù room service
+* 去 qù to go
+* 餐厅 cāntīng = canteen/restaurant
+* 自助餐 zìzhùcān buffet
+
+* 食物 shíwù food
+* 菜 cài vegetable / dish / cuisine
+* 饭 fàn cooked rice / food / meal
+
+* 饮料 yǐnliào drink / beverage
+* 水   shuǐ water
+* 红茶 hóngchá black tea
+* 绿茶 lǜchá green tea
+* 奶茶 nǎichá milk tea
+* 果汁 guǒzhī juice
+* 咖啡 kāfēi coffee
+* 冰   bīng ice / cold
+
+* Restaurant 餐馆 Cānguǎn
+
+<a target="_blank" href="https://www.youtube.com/watch?v=OR-obiEEm7E">
+VIDEO: How to order food</a>
+
+* 肉类 Ròu lèi = Meats
+* 鱼 Yú = Fish
+* 牛 niú cow / ox
+* 牛肉 Niúròu = Beef meat
+* 猪肉 Zhūròu = Pork meat
+* 牛肉面 niúròumiàn beef noodle
+* 鸡 Jī = Chicken
+* 鸭子 Yāzǐ = Duck
+* 鲔鱼 wěiyú tuna
+* 起司 qǐsī cheese
+
+* 面包 Miànbāo = Bread
+
+* wǎn3 	碗	碗	BOWL		
+* pánzi 	盤子	盘子	PLATE		
+* tāngchí	湯匙	汤匙	SPOON		
+* chāzi	  叉子	叉子	FORK		
+* kuàizi  筷子	筷子	CHOPSTICKS <a target="_blank" href="https://www.youtube.com/watch?v=7smyAAkhjOk&pp=ugUEEgJlbg%3D%3D" title="The Secret History of Chinese Chopsticks
+by Learn Chinese Now">VIDEO</a>
+
+* Very good 非常好 Fēicháng hǎo
+* I'm very full  我吃得很饱。Wǒ chī dé hěn bǎo.
+
+* https://www.youtube.com/watch?v=MGviovQe7-s = How Famine Created Modern Chinese Food by Taste of Nations
 
 <a id="Movies"></a>
 
@@ -841,65 +1025,24 @@ YouTube: CantoToMando
 
 
 
-## Etiquette
 
-https://www.youtube.com/watch?v=XDClJwGDkFk&pp=ugUEEgJlbg%3D%3D
-Dos and Don'ts of Chinese Etiquette: Things You Should NEVER Do According to Chinese Tradition!
+<a id="People"></a>
 
-https://www.youtube.com/watch?v=IUbAoYnCqa4&pp=ugUHEgVlbi1VUw%3D%3D
-6:38
-How to Eat With Chopsticks? [Learn effectively once and for all!]
-Somebody Asked
-
-<a id="Foods"></a>
-
-## Foods
-
-* Breakfast
-* Lunch
-* Teatime
-* Dinner
-* Snack 小吃 xiǎo chī 
-
-* Restaurant 餐馆 Cānguǎn
-
-<a target="_blank" href="https://www.youtube.com/watch?v=OR-obiEEm7E">
-VIDEO: How to order food</a>
-
-* 肉类 Ròu lèi = Meats
-* 鱼 Yú = Fish
-* 牛肉 Niúròu = Beef
-* 猪肉 Zhūròu = Pork
-* 鸡 Jī = Chicken
-* 鸭子 Yāzǐ = Duck
-
-* 面包 Miànbāo = Bread
-
-* wǎn3 	碗	碗	BOWL		
-* pánzi 	盤子	盘子	PLATE		
-* tāngchí	湯匙	汤匙	SPOON		
-* chāzi	  叉子	叉子	FORK		
-* kuàizi  筷子	筷子	CHOPSTICKS <a target="_blank" href="https://www.youtube.com/watch?v=7smyAAkhjOk&pp=ugUEEgJlbg%3D%3D" title="The Secret History of Chinese Chopsticks
-by Learn Chinese Now">VIDEO</a>
-
-* Very good 非常好 Fēicháng hǎo
-* I'm very full  我吃得很饱。Wǒ chī dé hěn bǎo.
-
-* https://www.youtube.com/watch?v=MGviovQe7-s = How Famine Created Modern Chinese Food by Taste of Nations
-
-
-## Daily Interactions
+## People words in Daily Interactions
 
 * zǒng = chief (department head)
 
-PROTIP: Before registering, get a Chinese name based on phonetics and meaning you desire and can remember.
+https://quizlet.com/254931199/mandarin-chinese-flash-cards/#
+* 大家 dàjiā = everyone
+
+PROTIP: Before registering, pick a Chinese name based on phonetics and meaning you desire and can remember. Get a chock stamp made.
 
 Learn Chinese through juicy Chinese gossip. 🍉 
 
 https://www.youtube.com/watch?v=WVuaXU-n07Y
 I built a Chinese learning escape room game😲
 
-https://www.youtube.com/watch?v=0CCwMkmMH5k
+<a target="_blank" href="https://www.youtube.com/watch?v=0CCwMkmMH5k
 25:34
 China Travel Guide 2026: Alipay, 12306, Visa-Free & eSIM (Step-by-Step)
 
