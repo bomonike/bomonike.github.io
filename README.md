@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-02"
-lastchange: "v228 feat: helm.md from wilsonmar @README.md"
+date: "2026-08-18"
+lastchange: "v229 chinese @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -116,6 +116,7 @@ Topics alphabetically:
    ### L
 
 1. <a target="_blank" href="https://bomonike.github.io/lamp-oil">lamp-oil</a>
+1. <a target="_blank" href="https://bomonike.github.io/learn-chinese">learn-chinese</a>
 1. <a target="_blank" href="https://bomonike.github.io/london">london</a>
 
    <a name="M"></a>
