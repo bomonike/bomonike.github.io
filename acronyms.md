@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-05"
-lastchange: "v109 fix: Slurm edit @acronyms.md"
+date: "2026-08-18"
+lastchange: "v110 ROAS @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -758,7 +758,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	KPL	=	Kinesis Python Library (AWS)
 *	KPU	=	Kinesis Processing Units (AWS streaming memory and compute)
 *	KQL	=	Kusto Query Language (to access Microsoft Azure Data Explorer)
-*	KTLO	=	Keep/Keeping The Lights On (minimal necessary effort and income for legacy capabilities)
+*	KTLO	=	Keep/Keeping The Lights On (minimal necessary effort and income for basic legacy capabilities)
 *	KTS	=	Kubernetes Threat Detection	(Google service)
 *	KRI	=	Key Recovery Information
 *	KSAs	=	Knowledge, Skills, and Abilities (Work Roles)
@@ -1170,6 +1170,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	RNG	=	Random Number Generator
 *	RNN	=	Recurrent Neural Network (in Deep Learning)
 *	ROA	=	Return on Assets
+*	ROAS	=	Return on Ad Spend
 *	ROC	=	Report on Compliance (issued by DCS PSI  auditors)
 *	ROE	=	Return on Equity
 * RoHS = Restriction of Hazardous Substances Directive (EU Feb 2003)
