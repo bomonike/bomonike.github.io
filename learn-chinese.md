@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-18"
-lastchange: "v015 compass @learn-chinese.md"
+date: "2026-08-19"
+lastchange: "v016 coin @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
 title: "Learn Chinese"
@@ -24,18 +24,12 @@ ALPHABETICAL INDEX: <a href="#Languages">Languages</a>, <a href="#LearningStrate
 
 ## Why Learn Chinese? HSK & HSKK
 
+Secondary students in China take the Gaokao exam, which consists of Science, Math, Chinese, English on separate days for 90 to 150 minutes each. Different provinces use different versions.
+
 The China-wide Center for Language Education and Cooperation (CLEC) under the Chinese Ministry of Education officially administers a standardized exam called the <strong>HSK (Hanyu Shuiping Kaoshi)</strong> to evaluate <strong>writing</strong> proficiency among non-native speakers (wai guo ren). It is the Chinese equivalent of the TOEFL or IELTS for English.
 
 A separate exam, the <strong>HSKK (Hanyu Shuiping Kaoshi Kouyu) </strong>,
 evaluates speaking ability using audio-recording equipment. 
-
-Core HSK written tests are available either writing paper or typing Pinyin on a computer QWERTY keyboard. They test for:
-
-    * Listening to audio clips, then answering multiple-choice questions
-    
-    * Reading sentences, paragraphs, or passages, then answering multiple-choice questions.
-    
-    * Writing ability at arranging words into sentences (at lower levels) or  writing short essays (at higher levels).
 
 Employers ask for scores achieved. To graduate from a university in China, undergraduate students must achieve "Intermediate" proficiency at
 * "HSK Level 4" even in programs taught in a foreign language (English)
@@ -43,7 +37,10 @@ Employers ask for scores achieved. To graduate from a university in China, under
 
 There's a slang "HSK 0.5" for <a target="_blank" href="https://www.youtube.com/watch?v=nqUScMutDOs&pp=ugUEEgJlbg%3D%3D">foreigners</a> (lǎo wài = old outsider, yáng rén = ocean, wài guó rén = outside country person) who wing it without Chinese language proficiency.
 
-Secondary students in China take the Gaokao exam, which consists of Science, Math, Chinese, English on separate days for 90 to 150 minutes each.
+Core HSK written tests involve typing Pinyin on a computer QWERTY keyboard.
+* HSK 1 and HSK 2: You listen to audio clips and read sentences, paragraphs, or passages, then answering multiple-choice questions. There is no handwriting section. 
+* HSK 3 and HSK 4: The "writing" section requires you to rearrange provided words into a correct sentence. You do not have to write characters from scratch.
+* HSK 5 and HSK: You must write short essays. However, these exams are almost entirely computer-based now. You type your answers using pinyin, and you select the correct character from a drop-down menu. You never actually "write" the character. One can take a paper-based test, but graders only check for correct characters, vocabulary, and grammar. As long as the final character is legible and correct, they do not know—and do not care what order strokes are written.
 
 In 2023/2024, the CLEC rolled out version 3.0 of a unified HSK that expanded levels from 6 to 9 for alignment with the Common European Framework of Reference for Languages (CEFR), which has three stages:
 
@@ -95,21 +92,22 @@ From Peking University on Coursera:
 
 1. Before traveling, sign up for <a href="#Payments">automated payments</a>, install and use <a href="#eSIM">mobile eSIM</a> and VPNs so you can view YouTube videos. The Hong Kong and Macau SAR (Special Administrative Region) residents do have access to western internet and separate currency and passport.
 
+1. Children in mainland China learn <a target="_blank" href="https://en.wikipedia.org/wiki/Pinyin">Pinyin</a> https://en.wikipedia.org/wiki/Help:IPA before logograms and associated stroke orders.
+
 1. While watching reality shows and vlog bloggers, <strong>repeat actors' dialog out loud</strong> to get your mouth used to the pace and pronounciation. You'll also discover the <a href="#Mores">mores</a> and idioms of Chinese culture. <a href="#CityNames">CityNames</a>
  
    The English-subtitled <a target="_blank" href="https://www.youtube.com/playlist?list=PLiL-CuIBxVwMz9Zk9tUc2Q_lFUL_nBS8y">40-episode family comedy drama TV series Go Ahead! (2020) on YouTube</a> is used by the FREE <a target="_blank" href="https://chinesezerotohero.teachable.com/p/introduction-to-chinese">ZeroToHero 15-hour/12 video lesson intro course</a> by an English native speaker.
 
-1. Practice pronouncing Chinese names for <a href="#Personal_possessions">Personal possessions</a>. When needed, refer to the <a href="#Personal_possessions">list below</a>. Learn to pronounce <a href="#Foods">foods</a> or point to my list.
- 
+1. Practice pronouncing Chinese names for <a href="#Personal_possessions">Personal possessions</a>. When needed, refer to the <a href="#Personal_possessions">list below</a>. Learn to pronounce <a href="#Foods">foods</a> or point to my list. Home items. 
+
 1. So you can better appreciate visiting museums, learn the <a href="#Dynasties">Dynasties</a> so you can better understand the artwork and how historical stories interconnect. Watch <a href="#Movies">Mandarin-language movies</a> for the stories behind history. <a target="_blank" href="https://www.youtube.com/watch?v=dGBuXn6G0js">Legends</a>: Shénnóng (transparent belly) invented Chinese medicine.
 
-1. Memorize the 5% of Chinese characters (radicals) - pictograms - that are <a href="#Memonics">memonics</a> with some resemblance to the object. 
+1. Know the 10 radicals that are <a href="#Memonics">memonics</a> with some resemblance to the object.
+   * https://www.youtube.com/watch?v=Wg9fNbRqWck
+   * https://www.youtube.com/watch?v=mXxYIuUAFkY 
+   * https://www.youtube.com/watch?v=hcRnPnMp_D0 32:06 "11 Patterns Unlock Natural Chinese" Canto to Mando
 
-1. Learn the <strong>radicals</strong> used to form 90% of Chinese words.
-
-1. Children in mainland China learn <a target="_blank" href="https://en.wikipedia.org/wiki/Pinyin">Pinyin</a> https://en.wikipedia.org/wiki/Help:IPA before logograms and associated stroke orders.
-
-1. "To reduce learning time, I skip learning handwritten CHINESE script" and memorizing stroke order.
+   Learn the <strong>radicals</strong> used to form 90% of Chinese words.
 
    https://fanyi.baidu.com/mtpe-individual/transText#/zh/en/
 
@@ -118,12 +116,12 @@ From Peking University on Coursera:
    https://languageplayer.io/en/zh/reader/
    Tap on any word for a popup dictionary.
 
-1. synonyms and antynms 
+1. synonyms and antoynms (opposites)
 
    https://www.youtube.com/watch?v=yujUbIyw0j0&t=169s&pp=ugUHEgVlbi1VUw%3D%3D
    19:21 The Strange Reason Chinese Doesn’t Borrow Words get 15%
 
-1. AI Voice chat like Alexa?
+1. QUESTION: AI Voice chat like Alexa?
 
    italki.com to find conversation partners.
 
@@ -135,7 +133,8 @@ From Peking University on Coursera:
 
 1. Practice spaced repetition for long-term memory. Install the Anki app and load flash card content and quizzes so you spend time on what you didn't get right. It's free.
 
-
+1. Discussions about current:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=5w4mYeWGVc8&t=457s">What the West gets wrong about China</a>
 
 
 ## Language database
@@ -158,9 +157,7 @@ Column	Source
 
 1. <a target="_blank" href="https://www.chinesezerotohero.com/hsk-1-4-bundle/">Chinese Zero to Hero HSK 4 course</a> is a one-time $180 USD (30 Day Money Back Gurantee) for 600+ videos (on the popular Teacheable platform), all aligned with the official HSK framework. Taking you from complete beginner to a confident intermediate level speaker. 
 
-https://www.youtube.com/watch?v=UOvmVE9JBIc&pp=0gcJCcQLAYcqIYzv
-10:41
-New HSK 1 Course Workbook | Lesson 1 | 你好 (Hello) | Chinese Listening & Practice | Beginner Mandarin
+<a target="_blank" https://www.youtube.com/watch?v=UOvmVE9JBIc&pp=0gcJCcQLAYcqIYzv">10:41</a> New HSK 1 Course Workbook | Lesson 1 | 你好 (Hello) | Chinese Listening & Practice | Beginner Mandarin
 
 https://www.amazon.com/dp/B09ZD12JR1/
 Ling Ling's Learn Chinese Vocabulary for Beginners: New HSK Level 1 Chinese Vocabulary Book (Free Audio) - Master 500 Words in Context (NEW HSK Vocabulary Series)
@@ -169,7 +166,10 @@ Ling Ling's Learn Chinese Vocabulary for Beginners: New HSK Level 1 Chinese Voca
 
 https://www.youtube.com/watch?v=U_SAcVGFpag&
 
-
+https://www.youtube.com/watch?v=Q09_xDZHWeE&pp=ugUEEgJlbg%3D%3D
+10:55
+Learning Mandarin Chinese in 2026 is Awesome, Actually.
+Yuena
 
 
 <a id="Languages"></a>
@@ -189,16 +189,23 @@ https://www.youtube.com/watch?v=U_SAcVGFpag&
 9. 92.7 - Western Punjabi
 10. 85.2 - Yu Chinese (Cantonese, etc.)
 
-<a target="_blank" href="https://www.youtube.com/watch?v=csmXX1elkwI">VIDEO</a>: There are 300+ dialects in China , due to historical geographical limits to transportation.
+<a target="_blank" href="https://www.youtube.com/watch?v=csmXX1elkwI">VIDEO</a>: There are 300+ dialects in China due to historical geographical limits to transportation back in the day.
 
 China shares land borders with 14 countries.
-
-To drive in China, an International Driving Permit (IDP) is NOT valid. You need to obtain a temporary Chinese driving license. A specialized agency <a target="_blank" href="https://www.chinadragontours.com/how-to-plan-china-rv-caravan-self-driving-tour.html#1">Yaso Trip</a> (which also rents RVs), can handle all the paperwork for foreign RV travelers, including temporary licenses, insurance, and permits for restricted areas. Short-term (up to 90 days): This can be processed easily for about 50 CNY, often with a  traffic rules briefing and no road test. Over 90 days, you must pass the full Chinese written driving test.
 
 
 <a id="eSIM"></a>
 
-## mobile eSIM vs VPN
+## Phone mobile eSIM vs VPN
+
+SAR (Special Administrative Region)
+
+| "mainland" China | +86 |
+| Taiwan           | +886 |
+| Hong Kong        | +852 |
+| Macao            | +853 |
+
+immd.gov.hk
 
 The Chinese government operates a "Great Firewall" that block many American apps (Google, YouTube, Wikipedia, Reddit, Facebook, Instagram, etc.).
 
@@ -209,10 +216,14 @@ Activate after you land.
 Didi is the ride-hailing app like Uber.
 
 
+
+
+
 <a id="Payments"></a>
 
 ## Payments & Currency
 
+<img align=right width="200" alt="zn-wu-coin.jpeg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1787123449/zn-wu-coin_r2lcsa.jpg" />
 Renminbi (RMB) (meaning "people's currency") is the official ISO 4217  name of China's currency, denominated in 元/圆 yuan (CNY) with the symbol ¥, (or CNH in Hong Kong; but abbreviated RMB for buying gold). Currently the Chinese yuan is pegged to a basket of currencies, including the US dollar (which the Chinese call mei yuan). The largest yuan banknote is 100 yuan, followed by 50, 20, 10, 5, and one yuan. A jiao is a tenth of a yuan. The jiao is further divided into 10 fen. The highest rate for 1 USD was worth 8.72 in May 1994, then declining gradually to <a target="_blank" href="macrotrends.net/3570/chinese-yuan-to-usd-exchange-rate">6.78 on Aug 16</a>.
 
 Install both Alibaba's <a target="_blank" href="https://alipay.com/">AliPay</a> & WeChat:
@@ -222,7 +233,9 @@ Install both Alibaba's <a target="_blank" href="https://alipay.com/">AliPay</a> 
 1. Go to your profile and tap on bank cards to add your international credit or debit card.
 1. Verify your identity with your passport details if prompted.
 
-WeChat:
+Scan a QR code 二维码 Èr wéi mǎ for mobile payments.
+
+WeChat: ???
 
 <a id="Street_signs"></a>
 
@@ -347,18 +360,46 @@ Arranged alphabetically:
 
 * bathroom / toilet
 * sink
-* balcony
-* desk
-* mirror
-* chair
-* couch
-etc.
+* 阳台 Yángtái balcony
+* 桌子 Zhuōzǐ desk
+* 椅子 Yǐzǐ chair
+* 长椅 Cháng yǐ couch
+* 房间窗帘 Fángjiān chuānglián  room drapes
+
+
+## Transportation
+
+China's Geography and Economy explained by Glopen: 
+
+1. <a target="_blank" href="https://www.youtube.com/watch?v=4ICQooVa_zM&pp=ugUHEgVlbi1VUw%3D%3D">North</a>
+2. <a target="_blank" href="https://www.youtube.com/watch?v=4ICQooVa_zM&pp=ugUHEgVlbi1VUw%3D%3D">South, Central</a>
+3. <a target="_blank" href="https://www.youtube.com/watch?v=zzeL8ZeMetc"> East, Northeast</a>
+
+350 km/hr = 217 mph
+G series trains are the most mordern.
+
+Passengers are given oxygen in the <a target="_blank" href="https://www.youtube.com/watch?v=_tJrHfW4fHw">the world's highest railway</a> 5,072 m over Tan Gu la pass between Qinghai and Lhasa, Tibet 
+
+
+<a id="Driving"></a>
+
+### Driving in China
+
+An International Driving Permit (IDP) is NOT valid. You need to obtain a temporary Chinese driving license. A specialized agency <a target="_blank" href="https://www.chinadragontours.com/how-to-plan-china-rv-caravan-self-driving-tour.html#1">Yaso Trip</a> (which also rents RVs), can handle all the paperwork for foreign RV travelers, including temporary licenses, insurance, and permits for restricted areas. Short-term (up to 90 days): This can be processed easily for about 50 CNY, often with a  traffic rules briefing and no road test. Over 90 days, you must pass the full Chinese written driving test.
+
+Didi = Uber
+
+There are more high-speed trains in China than any other country in the world.
+
 
 <a id="CityNames"></a>
 
-## Chinese City Names
+### Chinese City Names
 
-Correctly pronounce the names of the largest Tier 1 cities:
+Correctly pronounce the names of the largest Tier 1 cities (airports):
+
+The "Golden Triangle Tour" is Beijing, Xi'an, Zhangjiajie, Shanghai
+
 * Harbin: luxury hotels in the Songbei District 
 * 上海	Shàng hǎi	2480万 	= Shanghai PVG SHA 
    * Aurora Museum
@@ -384,13 +425,13 @@ Correctly pronounce the names of the largest Tier 1 cities:
 * Chengdu panda base 
 * Shaolin <a target="_blank" href="https://www.youtube.com/watch?v=5_dQ-xYcm5k">Kung Fu</a> Monestary in Dengfeng 
 
-The "Golden Triangle Tour" is Beijing, Xi'an, Zhangjiajie, Shanghai
-
 China is home to 57 UNESCO World Heritage Sites.
 
-Searching for flights in a private browser window to prevent prices from increasing based on your search history.
+### Flights 
 
-The 12-13 hour SFO (San Francisco) to Hong Kong (HKG) is the shortest direct route to China from the US.
+Searching for flights in a private browser window to prevent prices from increasing based on your search history. Flights into Taipai City (TPE) is about $900, cheaper than into the mainland.
+
+The 12-13 hour SFO (San Francisco) across the Pacific ocean to Shanghai (PVG, SHA) is the shortest direct route to China from the US. Flights East-West take 2 hours longer due to headwinds.
 
 ✈️ Compare prices on Trip.com, Skyscanner, Momondo, and Google Flights. Set up price alerts to track drops. Consider budget-friendly airlines like <a target="_blank" href="airchina.com.cn">airchina.com.cn</a>, China Southern, or <a target="_blank" href="https://www.hainanairlines.com/">hainanairlines.com</a>. Airline prices in China are centrally managed by the TravelSky system (the national GDS). So use the Qianwen App + Fliggy (Alibaba's travel platform).
 
@@ -452,6 +493,8 @@ Early writing were vertical and did not include punctuation marks to show end of
 <a target="_blank" href="https://github-com.translate.goog/skywind3000/ECDICT?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">English translation</a> of https://github.com/skywind3000/ECDICT
 provides Python code to process case-insensitive csv to SQLite and MySQL databases containing a "Free English to Chinese Dictionary Database" of 100,000 entries. From ECDICT, Oxford 3000 core vocabulary list,
 
+Words in the traditional paper dictionary are arranged by the stroke count.
+
 
 
 ### Six writings
@@ -484,23 +527,12 @@ About 2,500 characters were simplified in mainland China, some based on cursive 
 
 Hong Kong defines its own HKSCS (Supplementary Character Set) every 4 years.
 
-https://www.youtube.com/watch?v=riZ5hZUOlk8
-The Impossible Chinese Typewriter
-Julesy
+Videos:
+   * https://www.youtube.com/watch?v=riZ5hZUOlk8 The Impossible Chinese Typewriter by Julesy
+   * https://www.youtube.com/watch?v=-IhuFgiWNS4 We Built a Chinese Typewriter... (based on a 1953 patent) that can print 90,000 characters mechanically. by HTX Studio
+   * https://www.youtube.com/watch?v=hYYHMLsPD6Y&pp=ugUEEgJlbg%3D%3D How Chinese Invented Computing's Predictive Text
+   * https://www.youtube.com/watch?v=hBDwXipHykQ 21:06 How China Conquered The Keyboard by Johnny Harris
 
-https://www.youtube.com/watch?v=-IhuFgiWNS4
-We Built a Chinese Typewriter... (based on a 1953 patent) that can print 90,000 characters mechanically.
-HTX Studio
-
-https://www.youtube.com/watch?v=hYYHMLsPD6Y&pp=ugUEEgJlbg%3D%3D
-How Chinese Invented Computing's Predictive Text
-
-https://www.youtube.com/watch?v=hBDwXipHykQ
-21:06
-How China Conquered The Keyboard
-Johnny Harris
-
-* MOVE: https://www.youtube.com/watch?v=hcRnPnMp_D0 32:06 "11 Patterns Unlock Natural Chinese" Canto to Mando
 
 
 <a id="Apps"></a>
@@ -598,10 +630,11 @@ On all devices:
 
 ## Pinyin Alphabet
 
-The Pinyin alphabet was created in 1958 to aid in pronounciation, not as a whole language like Japanese Katakana text.
+The Pinyin alphabet was created in 1958 to aid <strong>pronounciation</strong>, not as a whole language like Japanese Romaji text.
 Pinyin enables Chinese to be typed into QWRTY typewriters used throughout the world.
 
-   zn-pinyin-vs-abc.png
+<a target="_blank" href="https://www.coursera.org/learn/hsk-1/supplement/FKZzg/pronunciation-of-initials">Pronounce</a>:
+<img alt="zn-pinyin-vs-abc.png" src="" />
 
 Pinyin is nicknamed "Bo Po Mo Fo" for the first four letters (b p m f), which are called "labial initials" because they involve lip (labial) movement. But ignore the "o" because they're pronouced differently.
    * B is like the b in "burger".
@@ -753,6 +786,12 @@ yàng rén = lit. ocean (meaning overseas) people is the more archaic reference 
 * 非洲 Fēizhōu Africa
 * 南极洲 Nánjízhōu Antarctica
 
+During the "Century of Humiliation" for China from 1839, foreign powers imposed unequal treaties, extracting wealth from China during two "Opium Wars". 
+
+<a target="_blank" href="https://www.youtube.com/watch?v=4ruw1gDsbM8">Why does the United States of America hate China</a>
+
+灰犀牛 Huī xīniú "grey rhino" is a meme for a danger that's huge, obvious, and charging strait at you. 
+
 <a id="Dynasties"></a>
 
 ## Dynasties History
@@ -765,12 +804,16 @@ yàng rén = lit. ocean (meaning overseas) people is the more archaic reference 
 <a id="Jade"></a><a target="_blank" href="https://www.youtube.com/watch?v=YUyLjT2PGtc" title="4x4 inch white jade hierloom seal Xi of the realm"><img align="right" width="200" alt="zn-qin-seal-786x792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786692824/zn-qin-seal-786x792_rekidp.png" /></a>
     * 770 – 476 BC = Eastern Zhou Spring and Autumn Period
     * 475 – 221 BC = Eastern Zhou Warring States Period
-* 221 – 206 BC = Qin - first emporor (15 year reign unified, started Great Wall) then separated into 18 kingdoms
+* 221 – 206 BC = Qin - chin
+   * Ying Zheng (251-210BC) first emporor's 15 year reign unified, started Great Wall) then separated into 18 kingdoms, acording to "Records of the Grand Historian" written during the Han dynasty
+
 * 136 BC Wu academies. silk road to Rome
+   * 66 BC <a target="_blank" href="https://www.youtube.com/watch?v=kyqaVTLJR48">Best emporor Zhan</a> "subdued enemy without fighting - Art of war
 * 206 - 220 AD = Han (漢) - <a target="_blank" href="https://www.youtube.com/watch?v=OHsE7OcafCM">sub-periods</a>:
-   * 206 BC – 9 AD = Western Han（西漢）Liu Bang becomes emporor Gaozu
+   * 206 BC – 9 AD = Western Han（西漢）after 4 years, <a target="_blank" href="https://www.youtube.com/watch?v=8YyHb3FKglE">Liu Bang</a> becomes emporor Gaozu
    * 9 – 23 AD = Xin（新莽）= new. Regent Wang Mang who <a target="_blank" href="https://www.youtube.com/watch?v=ooE7WMXcD9Y">abolishes slavery with price controls, land distribution, banking</a> 
-   * 25 – 220 AD = Eastern Han（東漢）
+   * 25 – 220 AD = Eastern Han（東漢）Liu to Guangwu
+   * Son's "Rule of Ming & Zhang"
 * 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity) <a target="_blank" href="https://www.youtube.com/watch?v=y06ehdYDycY&list=PLIbRFNmcCXo-Jn3PdZ57B3pdcHI2XSztV">VIDEO</a>, <a target="_blank" href="https://www.youtube.com/watch?v=TGiWWG6tS-c">VIDEO</a>.
    * Cao Cao in battle of Red Cliffs
 * 265 – 420 AD = Jin (晉) = enter, advance - sub-periods:
@@ -803,7 +846,7 @@ yàng rén = lit. ocean (meaning overseas) people is the more archaic reference 
    * 1127 – 1279 AD = Southern Song（南宋）
    * 1032 ～ 1227 AD = (西夏)
    * 1115 - 1234 AD = gold (金) 金子 Jīnzǐ
-* 1206 ～ 1367 AD = Yuan (元) Mongul empire founded by Genghis Khan 
+* 1206 ～ 1367 AD = Yuan (元) <a target="_blank" href="https://www.youtube.com/watch?v=PGM3gmb-Wxo">Mongol empire</a> founded by Temujin Genghis Khan 
    * 1271 – 1368 AD = Kublai Khan establishes the Yuan Dynasty
    * 1279 - Southern Song Dynasty destroyed
 * 1368 – 1644 AD = Ming (明) = brilliant (centralized Yu Shan Fang)
@@ -812,20 +855,34 @@ yàng rén = lit. ocean (meaning overseas) people is the more archaic reference 
    * initially called the Later Jin. 
    * 1636 - Hong Taiji as "Manchu" name to Qing (清)
    * 1644 - enters the Central Plains
-* 1912 Japanese invade China
+
+* 1911 Ching Hi? revolution, then war lords
+* 1937 Japanese invade China
+* 1946 Civil War resumes
+* October 1, 1949 Mao proclaims the PRC
+* 1971 PRC replaces Taiwan at the UN
+* Nixon's visit to Mao
+* 1989 Tienamen square
+* 2001 China enters World Trade Organization
+* 2008 Global financial crisis
+* 2019 COVID lock-down
 
 References:
-   * <a target="_blank" href="https://www.youtube.com/watch?v=qWMXG7JtqO0">Legacy of China's Imperial Cuisine and the Role of Food in Imperial Court Etiquette</a>
+   * https://www.youtube.com/watch?v=Vp5vfnPc5b0&pp=ugUHEgVlbi1HQg%3D%3D Why the West is running a smear campaign against China | Kishore Mahbubani
    * https://www.cambridge.org/core/books/animals-through-chinese-history/chronology-of-dynasties/4C67438128929A17558EEDD834C20D58
+   * https://www.youtube.com/watch?v=p2F2zfabXto#:~:text=America%20is%20Unlivable-,Know,-way%20no%20how
+
 
 ### Famous battles
 
+<a target="_blank" href="https://www.youtube.com/watch?v=tErhHSyagoo">Top 5 Most Epic Battles in Chinese History</a>
+
 <a target="_blank" href="https://www.youtube.com/watch?v=Acdb_pYxndE&pp=0gcJCckLAYcqIYzv" title="41:26 by Learn Chinese Now">Ancient China’s Deadliest Battles Were Worse Than You Think</a>:
-    * 00:50 The Battle of Changping
-    * 09:59 The Battle of Julu
-    * 16:57 The Battle of Mobei
-    * 24:59 The Battle of Sarhu
-    * 33:20 The Battle of Shanghai
+   * 00:50 The Battle of Changping
+   * 09:59 The Battle of Julu
+   * 16:57 The Battle of Mobei
+   * 24:59 The Battle of Sarhu
+   * 33:20 The Battle of Shanghai
 <a target="_blank" href="https://www.youtube.com/watch?v=1k00xcb87NE">European artiller</a>
 
 
@@ -841,14 +898,16 @@ Does not use many phonetically borrowed words.
    * metal   金属 Jīnshǔ, Radical: jiǎ 
    * stone   石头 Shítou
    * water/liquids 液体 Yètǐ
-   * 
+   * fire    火 Huǒ
 
 <a target="_blank" href="https://www.youtube.com/watch?v=8ol7DsPnHcE&t=1m30s">Funnier</a>
 
 
 ## Dates Months, Numbers
 
-Instead of the European custom of unique names like "January", Chinese reference months by number 1 to 12 and add 月 (yuè) which means "month" and also "moon" for lunar. 3rd 三月 is spoken as one fluid word. Although 一月 is technically Yīyuè (with a high, flat tone on "yi"). But in natural speech, it often changes to Yíyuè (with a rising tone) because it's followed by another fourth-tone syllable (yuè). 
+Instead of the European custom of unique names like "January", Chinese reference months by number 1 to 12 and add 月 (yuè) which means "month" and also "moon" for lunar. 3rd 三月 is spoken as one fluid word. Although 一月 is technically Yīyuè (with a high, flat tone on "yi"). But in natural speech, it often changes to Yíyuè (with a rising tone) because it's followed by another fourth-tone syllable (yuè).
+
+<a target="_blank" href="https://youtube.com/shorts/zdAnAz-OOzQ?si=iY-YzUeWZKeAIcvx">VIDEO</a>: On crowns (lieu) worn by emporors during grand ceremonies, the jade pieces hanging down are on 12 strings (chong'er) for the months of the year:
 
 * 一月	Yīyuè   January
 * 二月	Èryuè   February
@@ -899,9 +958,10 @@ Color words are generally formed by taking the color name and adding the charact
 
 <a id="Mores"></a>
 
-## Cultural Mores
+## Cultural Norms & Mores Taboos
 
 Respect for the elderly: The word 老 lǎo = old is part of the word for teacher 老师 lǎoshī, lǎobǎn = boss, Lǎozǐ (the founder of Taoism and author of dào dé jīng), and lǎo 朋友 pěngyǒu = old friend.
+外国人 Wàiguó rén
 
 Ancestor worship: many setup shrines to ancestors in their home,
 and bow 3 times every morning in front of it.
@@ -909,13 +969,21 @@ and bow 3 times every morning in front of it.
 The first British ambassador to China (Macartney) refused to bow to the Chinese emporor (1793-94), the compromise is that he take a knee.
 
 Many Chinese believe in luck.
-There are Feng Sui professionals who advise on placement of furniture and even entire buildings. Buildings do not have 13 floors.
+There are Feng Sui professionals who advise on placement of furniture and even entire buildings. 
 * The number 4 is avoided because its pronouciation is similar to the word for "death". That's why many buildings don't have floor 4, 14, 24, etc.
 * The number 8 is favored because its pronouciation is similar to the word for "fortune". That's why phone numbers containing 8's sell for millions. The 2008 Olympics in Beijing began on Aug 8 at 8:08:08.
 
-The Xinhua News Agency is the official voice of China.
+When buying gifts, avoid homophones:
+* clocks (sounds like "death")
+* knives
+* pears (sounds like "leaving")
+* umbrella ("separting")
 
-* 12:49 10 Things NOT to do in China" by Maggie Ye
+Press:
+* The Xinhua News Agency is the official voice of China.
+* South China Morning Post
+
+12:49 10 Things NOT to do in China" by Maggie Ye
 * lubobo dolls
 * shānzhai = knockoff product
 * xiaohungshu = social media app
@@ -986,10 +1054,14 @@ VIDEO: How to order food</a>
 * kuàizi  筷子	筷子	CHOPSTICKS <a target="_blank" href="https://www.youtube.com/watch?v=7smyAAkhjOk&pp=ugUEEgJlbg%3D%3D" title="The Secret History of Chinese Chopsticks
 by Learn Chinese Now">VIDEO</a>
 
-* Very good 非常好 Fēicháng hǎo
+* 非常好 Fēicháng hǎo Very good 
 * I'm very full  我吃得很饱。Wǒ chī dé hěn bǎo.
 
-* https://www.youtube.com/watch?v=MGviovQe7-s = How Famine Created Modern Chinese Food by Taste of Nations
+References:
+   * https://www.youtube.com/watch?v=MGviovQe7-s = How Famine Created Modern Chinese Food by Taste of Nations
+   * https://www.youtube.com/watch?v=adMkWIW6yQE Hongmen Banquet | This Shocked Me！
+   * https://www.youtube.com/watch?v=5cRY6MENRZI&pp=ugUEEgJlbtIHCQkTDAGHKiGM7w%3D%3D Xu Yan Shanghai Chinese banquet
+   * <a target="_blank" href="https://www.youtube.com/watch?v=qWMXG7JtqO0">Legacy of China's Imperial Cuisine and the Role of Food in Imperial Court Etiquette</a>
 
 <a id="Movies"></a>
 
@@ -1042,8 +1114,8 @@ Learn Chinese through juicy Chinese gossip. 🍉
 https://www.youtube.com/watch?v=WVuaXU-n07Y
 I built a Chinese learning escape room game😲
 
-<a target="_blank" href="https://www.youtube.com/watch?v=0CCwMkmMH5k
-25:34
+<a target="_blank" href="https://www.youtube.com/watch?v=0CCwMkmMH5k">
+25:34</a>
 China Travel Guide 2026: Alipay, 12306, Visa-Free & eSIM (Step-by-Step)
 
 https://www.youtube.com/watch?v=Fu8F_XJyIkI
@@ -1087,6 +1159,8 @@ The 11 "Easy" Sounds That Are Ruining Your Chinese Accent
 
 
 ## History: Dynasties
+
+https://www.youtube.com/watch?v=jC-0KNtkCkE
 
 <a target="_blank" href="https://www.youtube.com/watch?v=rNwWFF6DP-I&pp=0gcJCcsLAYcqIYzv" title="30:38">MUST WATCH VIDEO</a> explaining the <a target="_blank" href="https://usefulcharts.com/products/asian-royal-family-trees">PDF</a>: Chinese Emperors Family Tree (by UsefulCharts)
 
@@ -1215,8 +1289,10 @@ online dictionary to click the speaker icon to hear a native pronunciation:
 cantotomando masterclass copy & Paste method
 https://docs.google.com/document/d/19zAyAVcxxOLqVGwroq9epccT_PcwYVzT24JHTOrZ0SM/edit?pli=1&tab=t.0#heading=h.dmj2tkm6pce1
 
-for Building Vocabulary:
-👍Anki: https://apps.ankiweb.net/
+1. To build vocabulary:
+   * On a web browser, <a target="_blank" href="https://www.youtube.com/watch?v=i8NnRPm2zh0&time_continue=0&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Flearn.thecmblueprint.com%2F&themeRefresh=1">100 Mandarin Words and Phrases Beginners Must Master</a>
+
+   * Anki: https://apps.ankiweb.net/
 
 For free language exchange:
 * HelloTalk is free
