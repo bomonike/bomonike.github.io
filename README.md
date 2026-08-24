@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-18"
-lastchange: "v229 chinese @README.md"
+date: "2026-08-24"
+lastchange: "v230 cad @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -51,6 +51,7 @@ Topics alphabetically:
    <a name="C"></a>
    ### B C
 
+1. <a target="_blank" href="https://bomonike.github.io/cad">cad (Computer Aided Design)</a> to create files for 3D printers, etc.
 1. <a target="_blank" href="https://bomonike.github.io/chromebook2linux">chromebook2linux</a>
 1. <a target="_blank" href="https://bomonike.github.io/codespaces">codespaces</a>
 1. <a target="_blank" href="https://bomonike.github.io/countries">countries</a>
