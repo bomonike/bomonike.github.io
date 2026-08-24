@@ -1,11 +1,11 @@
 ---
 layout: post
 date: "2026-08-23"
-lastchange: "v018 firewall @learn-chinese.md"
+lastchange: "v019 apps @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
 title: "Learn Chinese"
-excerpt: "How to learn the Chinese Mandarin language"
+excerpt: "How to learn the Chinese (Simplified) Mandarin language"
 tags: [Chinese, Language]
 image:
   feature: https://user-images.githubusercontent.com/300046/136715984-3033af38-810d-4b29-a555-aac392b374ac.png
@@ -134,7 +134,7 @@ https://www.youtube.com/watch?v=Vi67QEuHF3M&t=1m15s
 
 ## Learning strategies
 
-1. Install and use translation <a href="#Apps">mobile apps</a> that use your camera. Google Translate does not require clicking a button before translating. 
+1. Install and use translation <a href="#Apps">mobile apps</a> that use your camera. Google Translate does not require clicking a button before translating. Baidu Translate. DeepL Translate app.  Apple Translate. 9.99-per-month Reverso 
    
    <a target="_blank" href="https://migaku.com/maxchernov">$137/month Migaku</a> enables you to learn important <strong>pictographs of <a href="#Street_signs">street signs</a> and <a href="#Directions">directions</a>. The Migaku app turns social content to flashcards for memorization.
 
@@ -146,16 +146,16 @@ https://www.youtube.com/watch?v=Vi67QEuHF3M&t=1m15s
     
     | blocked .com | category | avail. |
     | ------------ | -------- | ------ |
-    | gmail.com, proton.me, iCloud.com | web email | outlook.com, gmx.com, mail.qq.com, mail.163.com |
-    | walmart.com | shopping | amazon.com |
-    | Discord.com |  | ali dingtalk.com, kookapp.cn, yy.com |
-    | Facebook.com | Social Media | TikTok.com, RedNote.com |
-    | GitHub.com, Bitbucket | - | Codeberg.com, GitLab.com |
-    | Google.com, yahoo.com | search | Baidu (baidu.com), Bing (cn.bing.com) |
-    | imdb.com | - | - |
-    | Instagram.com | Photo Sharing | Xiaohongshu (RED), (xiaohongshu.com), Douyin (douyin.com) |
+    | gmail.com, proton.me, iCloud.com, outlook.com | web email | live.com, gmx.com, mail.qq.com, mail.163.com |
+    | pinterest | media storage | cloudinary |
+    | Discord| discussions | ali dingtalk.com, kookapp.cn, yy.com |
+    | Facebook.com | Social Media | ByteDance's TikTok.com & douyin.com, RedNote.com,  |
+    | GitHub.com, Bitbucket | source versioning | Codeberg.com, GitLab.com |
+    | Google.com, yahoo.com, Qwant (EU) | search | Baidu (baidu.com), Bing (cn.bing.com) |
+    | imdb.com | movie info | - |
+    | Instagram.com | Photo Sharing | Xiaohongshu (RED), (xiaohongshu.com) |
     | maps.google | Navigation | Amap (Gaode) (amap.com), Baidu Maps (map.baidu.com), Apple Maps (uses local data) |
-    | office.com | productivity | ???     |
+    | office.com | productivity | ???   |
     | Pinterest.com | Image Sharing / Bookmarks | - |
     | Reddit.com | Q&A | zhihu.com, tieba.baidu.com |
     | Slack | coordination | Bytedance feishu.cn |
@@ -166,12 +166,24 @@ https://www.youtube.com/watch?v=Vi67QEuHF3M&t=1m15s
     | Twitch.com | videogames | - |
     | YouTube.com | Video Sharing | Youku, bilibili.com, Tencent: v.qq.com |
     | WhatsApp | Messaging | WeChat (weixin.qq.com), QQ (im.qq.com) |
-    | Walmart | shop | costco |
+    | Walmart | shop | amazon |
     | Wikipedia.com | Encyclopedia | baike.baidu.com, CNKI (cnki.net – academic)|
     | maps.google.com | maps | amap.com |
     | hostinger | hosting | ??? |
 
 1. Use a mobile app to translate what appears in your laptop browser.
+   Microsoft Translator (works in China)
+   Audio files (podcasts, lectures)	Whisper + DeepL
+
+   * 打开 Dǎkāi = open
+   * 文件 = file
+
+
+1. Real-time two-way conversation (hands-free) <a target="_blank" href="https://www.amazon.com/Timekettle-W4-Interpreter-Real-Time-Translation/dp/B0GT7HN145">Timekettle M4 Pro earbuds $398</a>. Limitation: Most translation earbuds have a 2-5 second delay and struggle with background noise or overlapping speakers.
+https://www.timekettle.co/products/w4-pro-ai-interpreter-earbuds-2026 
+13 Pairs Offline Languages. It actually listens to the context of your entire sentence. 
+
+1. Long business meeting	native Chinese iFLYTEK $300-600 or Tencent Meeting
 
 1. Learn Pinyin to pronounce Chinese names for <a href="#Personal_possessions">Personal possessions</a>. When needed, refer to the <a href="#Personal_possessions">list below</a>. Learn to pronounce <a href="#Foods">foods</a> or point to my list. Home items. 
 
@@ -295,6 +307,17 @@ immd.gov.hk
 Airalo ITCHYFEET20 & trip.com
 
 Activate after you land.
+
+All communities in mainland China use the same toll-free standard emergency phone numbers. Be ready to give your exact address or cross streets. If you can't speak Chinese, try to say the name of your hotel or use a landmark.
+
+* Traffic Accident	122	For non-injury traffic accidents or road disputes. * Police (General)	110	For crimes, theft, disturbances, or any urgent law enforcement need.
+* Fire (Fire & Rescue)	119	For fires, rescues, or hazardous material incidents.
+* Ambulance (Medical)	120	For medical emergencies, injuries, or sudden illness.
+* Foreign Affairs / Consular Hotline	12308	For Chinese citizens abroad; Foreigners should contact their own embassy/consulate.
+* Emergency SMS	12110	Text-only emergency reporting (for deaf/hearing-impaired or when voice call is unsafe).
+
+Within Hong Kong and Macau Special Administrative Regions:
+* 999 – Unified emergency number (police, fire, ambulance).
 
 Didi is the ride-hailing app like Uber.
 
