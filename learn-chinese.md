@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-23"
-lastchange: "v019 apps @learn-chinese.md"
+date: "2026-08-24"
+lastchange: "v020 bpmf @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
 title: "Learn Chinese"
@@ -18,11 +18,14 @@ created: "2021-10-03"
 
 {% include whatever.html %}
 
+https://www.youtube.com/watch?v=Vi67QEuHF3M&t=1m15s
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786435109/chinese-iceberg-970x1182_ypccy5.png"><img align="right" width="200" alt="chinese-iceberg-970x1182.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786435109/chinese-iceberg-970x1182_ypccy5.png" /></a>
 ALPHABETICAL INDEX: 
 <a href="#Apps">apps</a>, 
 <a href="#Art">Art</a>, 
 <a href="#Battles">Battles</a>, 
 <a href="#CityNames">City Names</a>,
+<a href="#Conversations">Conversations</a>, 
 <a href="#Compass">Compass Directions</a>, 
 <a href="#Months">Dates Months, Numbers</a>, 
 <a href="#Colors">Colors 颜色 yánsè</a>, 
@@ -54,52 +57,73 @@ ALPHABETICAL INDEX:
 <a href="#Tones">Tones</a>, 
 <a href="#Typing">Typing Chinese</a>, 
 <a href="#Vocabulary">Vocabulary database</a>
+<a href="#HSK_exam">Why Chinese?</a>
+
+
+<a id="Why"></a>
+
+## Why Chinese?
+
+<a target="_blank" href="https://www.youtube.com/watch?v=csmXX1elkwI">VIDEO</a>: There are 300+ dialects in China due to historical geographical limits to transportation back in the day.
+
+The Han people constitute more than 90% of the population of China. They call their language 汉语 Hànyǔ (in <a href="#Pinyin">Pinyin</a>). The government in China standardized to Mandarin or Pǔtōnghuà (普通话, ‘common speech’). 
+
+Mainland China uses simplified Mandarin.<br />
+Taiwan uses traditional Mandarin.
+
+Together, Mandarin Chinese is the largest speech community in the world.
 
 
 <a id="HSK_exam"></a>
 
-## Why Learn Chinese? HSK & HSKK
+## HSK & HSKK exams
 
-Secondary students in China take the Gaokao exam, which consists of Science, Math, Chinese, English on separate days for 90 to 150 minutes each. Different provinces use different versions.
+Secondary students in China take the Gaokao exam, which consists of Science, Math, Chinese, English on separate days for 90 to 150 minutes each. Different provinces have different versions.
 
-The China-wide Center for Language Education and Cooperation (CLEC) under the Chinese Ministry of Education officially administers a standardized exam called the <strong>HSK (Hanyu Shuiping Kaoshi)</strong> to evaluate <strong>writing</strong> proficiency among non-native speakers (wai guo ren). It is the Chinese equivalent of the TOEFL or IELTS for English.
+The Chinese language proficiency of non-native speakers (wai guo ren) are evaluated by CLEC, the China-wide Center for Language Education and Cooperation, under the federal Ministry of Education, which administers standardized exams. It is the Chinese equivalent of the TOEFL or IELTS for English. 
+
+The literal translation of HSK (Hànyǔ Shuǐpíng Kǎoshì) is:
+   * 汉语 (Hànyǔ): "Han language" (i.e., Standard Chinese or Mandarin).
+   * 水平 (Shuǐpíng): "Level" or "proficiency."
+   * 考试 (Kǎoshì): "Test" or "examination."
 
 A separate exam, the <strong>HSKK (Hanyu Shuiping Kaoshi Kouyu) </strong>,
 evaluates speaking ability using audio-recording equipment. 
 
-Employers ask for scores achieved. To graduate from a university in China, undergraduate students must achieve "Intermediate" proficiency at
+Some Chinese cities offer "Green Cards" (permanent residency) or talent visas to foreigners who hold high-level HSK certificates.
+
+Employers ask for "HSK成绩单 (HSK chéngjìdān)": your HSK score report. To graduate from a university in China, undergraduate students must achieve "Intermediate" proficiency at
 * "HSK Level 4" even in programs taught in a foreign language (English)
 * "HSK Level 5" in programs taught in Mandarin Simplified Chinese.
 
 There's a slang "HSK 0.5" for <a target="_blank" href="https://www.youtube.com/watch?v=nqUScMutDOs&pp=ugUEEgJlbg%3D%3D">foreigners</a> (lǎo wài = old outsider, yáng rén = ocean, wài guó rén = outside country person) who wing it without Chinese language proficiency.
 
-Core HSK written tests involve typing Pinyin on a computer QWERTY keyboard.
-* HSK 1 and HSK 2: You listen to audio clips and read sentences, paragraphs, or passages, then answering multiple-choice questions. There is no handwriting section. 
-* HSK 3 and HSK 4: The "writing" section requires you to rearrange provided words into a correct sentence. You do not have to write characters from scratch.
-* HSK 5 and HSK: You must write short essays. However, these exams are almost entirely computer-based now. You type your answers using pinyin, and you select the correct character from a drop-down menu. You never actually "write" the character. One can take a paper-based test, but graders only check for correct characters, vocabulary, and grammar. As long as the final character is legible and correct, they do not know—and do not care what order strokes are written.
+Before 2022, version 2 of the exam had only 6 tiers.
+The current Version 3 2023/2024 has 9 tiers for alignment with the Common European Framework of Reference for Languages (CEFR), which has three stages:
 
-In 2023/2024, the CLEC rolled out version 3.0 of a unified HSK that expanded levels from 6 to 9 for alignment with the Common European Framework of Reference for Languages (CEFR), which has three stages:
-
-Beginner (Levels 1–3): Focuses on basic daily communication:
+Beginner stage (Levels 1–3) evaluates basic daily real-world communication:
    - HSK 1: Can understand and use simple words and phrases. (Vocab: 300  words in v3, 500 in v2) https://github.com/ivankra/hsk30
    - HSK 2: Can communicate in simple and routine tasks. (Vocab: 300~1,200 words)
    - HSK 3: Can communicate in Chinese at a basic level in daily life, study, and work. (Vocab: 600~2,200 words)
 
-Intermediate (Levels 4–6): Focuses on discussing a wide range of topics and interacting fluently with native speakers:
+Intermediate stage (Levels 4–6) evaluates the ability to interact with native speakers discussing a wide range of topics:
    - HSK 4: Can speak Chinese relatively fluently. (Vocab: 1200~3,000 words)
    - HSK 5: Can read Chinese newspapers/magazines and watch Chinese films. (Vocab: 2400~4,300 words)
    - HSK 6: Can easily understand written and spoken information and express themselves fluently. (Vocab: ~5,400 words)
 
 The maximum score is <strong>300</strong> for levels 1-6.
 
-Advanced (HSK Levels 7–9): Focuses on near-native proficiency, academic research, and professional work for master’s/PhD programs:
+Advanced (HSK Levels 7–9) focuses on near-native proficiency, academic research, and professional work for master’s/PhD programs:
    - HSK 7-9 are tested together in one single exam. Passing with varying scores dictates whether you get a Level 7, 8, or 9 certificate. It tests highly nuanced language, classical Chinese elements, and complex writing. (Vocab: 11,000+ words)
+
+Core HSK written tests involve typing <a href="#Pinyin">Pinyin</a> on a computer QWERTY keyboard.
+* HSK 1 and HSK 2: You listen to audio clips and read sentences, paragraphs, or passages, then answering multiple-choice questions. There is no handwriting section. 
+* HSK 3 and HSK 4: The "writing" section requires you to rearrange provided words into a correct sentence. You do not have to write characters from scratch.
+* HSK 5 and HSK: You must write short essays. However, these exams are almost entirely computer-based now. You type your answers using pinyin, and you select the correct character from a drop-down menu. You never actually "write" the character. One can take a paper-based test, but graders only check for correct characters, vocabulary, and grammar. As long as the final character is legible and correct, they do not know—and do not care what order strokes are written.
 
 In China, the HSK Level 4 fee is 750 <a href="#Payments">RMB</a>, Level 5 is 950 RMB for the core.
 
-Some Chinese cities offer "Green Cards" (permanent residency) or talent visas to foreigners who hold high-level HSK certificates.
-
-The HSK & HSKK can be taken several times a year, usually on weekends (often monthly or bi-monthly depending on the test center), worldwide at authorized test centers in and outside China. 
+The HSK & HSKK can be taken several times a year, usually on weekends (often monthly or bi-monthly depending on the 考点 (kǎodiǎn): Test center), worldwide at authorized test centers in and outside China. 
 
 Applying for Chinese Government Scholarships (CSC) or Confucius Institute Scholarships (called Hanban) almost always requires a minimum HSK score.
 
@@ -112,22 +136,19 @@ REMEMBER: Reservations require a photo. Print the registration ticket and bring 
 
 Scores are typically available online about a month after taking the test, and the physical certificate is mailed shortly after. HSK certificates are valid for life.
 
-From Peking University on Coursera  "Chinese" by Yu Bin:
+From Peking University on Coursera "Chinese" by Yu Bin:
    1. <a target="_blank" href="https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmxVLADEqEeaA3xIl-CKqow">HSK 1</a>
    2. <a target="_blank" href="https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EmTJHKj0pEeSGwyIACxCdDw">HSK 2</a>
    3. <a target="_blank" href="https://www.coursera.org/search?query=Tsinghua&xdpModal=course%7EJRctxzFBEeaObw4ta1FaeQ">HSK 3</a>
 
+Textbook "HSK Standard Course 
+   * Hanyu Maggie (grammar deep dives)
+   * Chinese Zero to Hero (HSK 6-9 prep)
 
-1. Use <a target="_blank" href="https://www.hellochinese.cc">HelloChinese</a> (Levels 1-3) for game-based basics learning.
-2. Use Anki or Hack Chinese every single day to memorize the specific HSK vocabulary list.
-3. Use $120/year (7-day trial) Du Chinese to practice reading words in context as stories with audio.
-4. Use <a target="_blank" href="https://www.hskonline.com/">$100 SuperTest</a> (formerly HSK Online) for one month right before your exam date to practice the timing and exact format of the test. It's repetitive, though.
-
-## Topics: Cultural iceberg
-
-https://www.youtube.com/watch?v=Vi67QEuHF3M&t=1m15s
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786435109/chinese-iceberg-970x1182_ypccy5.png"><img alt="chinese-iceberg-970x1182.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786435109/chinese-iceberg-970x1182_ypccy5.png" /></a>
+   1. Use <a target="_blank" href="https://www.hellochinese.cc">HelloChinese</a> (Levels 1-3) for game-based basics learning.
+   2. Use Anki or Hack Chinese every single day to memorize the specific HSK vocabulary list.
+   3. Use $120/year (7-day trial) Du Chinese to practice reading words in context as stories with audio.
+   4. Use <a target="_blank" href="https://www.hskonline.com/">$100 SuperTest</a> (formerly HSK Online) for one month right before your exam date to practice the timing and exact format of the test. It's repetitive, though.
 
 
 <a id="LearningStrategies"></a>
@@ -175,28 +196,38 @@ https://www.youtube.com/watch?v=Vi67QEuHF3M&t=1m15s
    Microsoft Translator (works in China)
    Audio files (podcasts, lectures)	Whisper + DeepL
 
+   * Settings
+   * Quit (program)
    * 打开 Dǎkāi = open
    * 文件 = file
+      * Close
+      * Save
+   * Edit
+   * Selection
+   * View
+   * Window
+   * Help
 
+   <a target="_blank" href="https://www.archchinese.com/chinese_english_dictionary.html">Dictionary</a>
 
 1. Real-time two-way conversation (hands-free) <a target="_blank" href="https://www.amazon.com/Timekettle-W4-Interpreter-Real-Time-Translation/dp/B0GT7HN145">Timekettle M4 Pro earbuds $398</a>. Limitation: Most translation earbuds have a 2-5 second delay and struggle with background noise or overlapping speakers.
 https://www.timekettle.co/products/w4-pro-ai-interpreter-earbuds-2026 
 13 Pairs Offline Languages. It actually listens to the context of your entire sentence. 
 
-1. Long business meeting	native Chinese iFLYTEK $300-600 or Tencent Meeting
+1. For speech-to-text with translation during meetings, use an E-ink tablet: $499 8.5" AINote Air2</a>, <a target="_blank" href="https://www.amazon.com/stores/iFLYTEK/page/E9F2D2A8-3FCB-4091-A012-DCFBEA22F09E">$649 10" iFLYTEK AINote</a> with AI Write, or Tencent Meeting.
 
-1. Learn Pinyin to pronounce Chinese names for <a href="#Personal_possessions">Personal possessions</a>. When needed, refer to the <a href="#Personal_possessions">list below</a>. Learn to pronounce <a href="#Foods">foods</a> or point to my list. Home items. 
+1. Learn <a href="#Pinyin">Pinyin</a> to pronounce Chinese names for <a href="#Personal_possessions">Personal possessions</a>. When needed, refer to the <a href="#Personal_possessions">list below</a>. Learn to pronounce <a href="#Foods">foods</a> or point to my list. Home items. 
 
    If you are just starting out, focus on interactive pinyin charts first. They are great for learning the four tones that give Mandarin its distinctive sound. For example, the syllable "ma" can mean different things depending on whether you say it with a high, rising, dipping, or falling tone.
 
    Cantonese has 6 tones.
 
-1. Children in mainland China learn <a target="_blank" href="https://en.wikipedia.org/wiki/Pinyin">Pinyin alphabet</a> (not <a target="_blank" href="https://en.wikipedia.org/wiki/Help:IPA">IPA</a>) before dipping a traditional in ink to draw strokes in a very specific order to make calligraphy.
+1. Children in mainland China, before dipping a traditional in ink to draw strokes in a very specific order to make calligraphy, learn <a target="_blank" href="https://en.wikipedia.org/wiki/Pinyin">Pinyin alphabet</a> (not <a target="_blank" href="https://en.wikipedia.org/wiki/Help:IPA">IPA</a>).
 
 1. Before traveling, sign up for <a href="#Payments">automated payments</a>, install and use <a href="#eSIM">mobile eSIM</a> and VPNs so you can view YouTube videos. 
    The Hong Kong and Macau SAR (Special Administrative Regions (特别行政区) residents do have access to western internet and separate currency and passport. Macau is the only legal gambling in China.
 
-1. Identify <a href="#Movies">media (movies)</a> that show Chinese glyphs and Pinyin plus the English. Reality shows and vlog bloggers have less stilted sound.
+1. Identify <a href="#Movies">media (movies)</a> that show Chinese glyphs and <a href="#Pinyin">Pinyin</a> plus the English. Reality shows and vlog bloggers have less stilted sound.
 
    Songs of Teresa??
 
@@ -217,17 +248,7 @@ https://www.timekettle.co/products/w4-pro-ai-interpreter-earbuds-2026
    
    Watch <a href="#Movies">Mandarin-language movies</a> for the stories behind history. <a target="_blank" href="https://www.youtube.com/watch?v=dGBuXn6G0js">Legends</a>: Shénnóng (transparent belly) invented Chinese medicine.
 
-1. Know the 10 radicals used to form 90% of Chinese words. They are <a href="#Memonics">memonics</a> with some resemblance to the object.
-   * https://www.youtube.com/watch?v=Wg9fNbRqWck
-   * https://www.youtube.com/watch?v=mXxYIuUAFkY 
-   * https://www.youtube.com/watch?v=hcRnPnMp_D0 32:06 "11 Patterns Unlock Natural Chinese" Canto to Mando
-
-   https://fanyi.baidu.com/mtpe-individual/transText#/zh/en/
-
-   https://soundcloud.com/user-682871665/sets/hsk-1-textbook-audio
-
-   https://languageplayer.io/en/zh/reader/
-   Tap on any word for a popup dictionary.
+1. <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck">VIDEO</a>: Know the 10 radicals used to form 100 Chinese characters. They are <a href="#Radicals">Radicals</a> with some resemblance to the object.
 
 1. Synonyms and antoynms (opposites)
 
@@ -236,13 +257,13 @@ https://www.timekettle.co/products/w4-pro-ai-interpreter-earbuds-2026
 
 1. QUESTION: AI Voice chat like Alexa?
 
-   italki.com to find conversation partners.
-
 1. If you are looking to pass the HSK 1 exam, learn the 500 words asked by the HSK 1 v3 exam.
    * Ximalaya - HSK 1 textbook audio - HSK 1 workbook audio.
    * Soundcloud - HSK 1 textbook audio - HSK 1 workbook audio.
 
 1. For the HSK 4 exam, learn the <a target="_blank" href="https://docs.google.com/spreadsheets/d/13XGHwvol_4K93gSQiGcvULvMgUdwjRpdfGd5YPpBZCY/edit?gid=0#gid=0">1,000 words</a>
+
+1. Learn basic conversations.
 
 1. Practice spaced repetition for long-term recall. Install the Anki app and load flash card content and quizzes so you spend time on what you didn't get right. It's free.
 
@@ -255,7 +276,7 @@ Column	Source
 * hsk_level	All set to 1
 * sequence	1-500, matching official order
 * simplified	Simplified Mandarin characters
-* pinyin	Tone-marked pinyin
+* pinyin	Tone-marked <a href="#Pinyin">Pinyin</a>
 * part_of_speech	Normalized (Verb, Noun, Adjective, etc.)
 * english	CC-CEDICT definitions, with overrides for ~26 entries where CEDICT picked the wrong sense
 * measure_word	Curated classifiers only — blank where no measure word applies (no invented defaults)
@@ -284,6 +305,19 @@ Learning Mandarin Chinese in 2026 is Awesome, Actually.
 Yuena
 
 
+<a id="Conversations"></a>
+
+## Conversations
+
+AI Conversation App:
+* Langua: http://languatalk.com/?via=brian
+
+* Find live conversation partners on https://italki.com.
+
+* <a target="_blank" href="https://www.youtube.com/watch?v=Gh3cxOYjjQ8&t=50s">VIDEO: Describe yourself</a>
+
+
+
 <a id="eSIM"></a>
 
 ## Phone mobile eSIM vs VPN
@@ -310,19 +344,16 @@ Activate after you land.
 
 All communities in mainland China use the same toll-free standard emergency phone numbers. Be ready to give your exact address or cross streets. If you can't speak Chinese, try to say the name of your hotel or use a landmark.
 
-* Traffic Accident	122	For non-injury traffic accidents or road disputes. * Police (General)	110	For crimes, theft, disturbances, or any urgent law enforcement need.
-* Fire (Fire & Rescue)	119	For fires, rescues, or hazardous material incidents.
-* Ambulance (Medical)	120	For medical emergencies, injuries, or sudden illness.
-* Foreign Affairs / Consular Hotline	12308	For Chinese citizens abroad; Foreigners should contact their own embassy/consulate.
-* Emergency SMS	12110	Text-only emergency reporting (for deaf/hearing-impaired or when voice call is unsafe).
+* 122 for non-injury traffic accidents or road disputes. 
+* 110 for Police (General) - crimes, theft, disturbances, or any urgent law enforcement need.
+* 119 for Fire & Rescue or hazardous material incidents.
+* 120 for medical ambulance - emergencies, injuries, or sudden illness.
+* 12308 for foreign Affairs / Consular Hotline serving Chinese citizens abroad; Foreigners should contact their own embassy/consulate.
+* 12110 for Text-only emergency SMS reporting (for deaf/hearing-impaired or when voice call is unsafe).
 
 Within Hong Kong and Macau Special Administrative Regions:
 * 999 – Unified emergency number (police, fire, ambulance).
 
-Didi is the ride-hailing app like Uber.
-
-* 频道 Píndào = channel feature
-* 新版频道 Xīnbǎn píndào - qq feature
 
 <a id="Payments"></a>
 
@@ -648,7 +679,7 @@ There are about 60 <strong>pictograms</strong> (xiàng xing) depicting objects. 
    * Indicatives
    * Associate compounds - [2m31s] Radical + sound card
    * Pheno-semantic compounds
-
+zzz
 Common Radicals Master List: https://drive.google.com/file/d/1Mkw3VRScOg0i6XqUd78bRethxIlyirfp/view?usp=sharing
 
 The 60 Essential Bricks: https://drive.google.com/file/d/19HeF9KnBGkfulDD_ILa3IlhQQ-9ClW7b/view?usp=sharing
@@ -671,7 +702,9 @@ The 60 Essential Bricks: https://drive.google.com/file/d/19HeF9KnBGkfulDD_ILa3Il
 9. 92.7 - Western Punjabi
 10. 85.2 - Yu Chinese (Cantonese, etc.)
 
-<a target="_blank" href="https://www.youtube.com/watch?v=csmXX1elkwI">VIDEO</a>: There are 300+ dialects in China due to historical geographical limits to transportation back in the day.
+YouTube influencers on living in China:
+   * <a target="_blank" href="https://www.youtube.com/@AleeseLightyear">Aleese Lightyear</a>
+
 
 
 <a id="History"></a>
@@ -752,13 +785,18 @@ At home in America, on internet browsers such as Google Chrome, I keep open all 
 
 * GoKollab for Android and iPhones</a> (by LEADCONNECTOR) is used by YouTuber CantoToMando.
 
+* Didi is the ride-hailing app like Uber.
+
+* 频道 Píndào = channel feature
+* 新版频道 Xīnbǎn píndào - qq feature
+
 
 <a id="Typing"></a>
 
 ## Typing Chinese
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786535452/zn-mobile-keyboard_ehc64k.png"><img align="right" width="100" alt="zn-mobile-keyboard.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786535452/zn-mobile-keyboard_ehc64k.png" /></a>
-To set up the Pinyin Keyboard for use by other apps on your computer:
+To set up the <a href="#Pinyin">Pinyin</a> Keyboard for use by other apps on your computer:
 
 On Windows:
 
@@ -767,7 +805,7 @@ On Windows:
 1. Under "Preferred languages," click Add a language.
 1. Search for Chinese (Simplified, China) and click Next, then Install.
 1. Once installed, click the three dots next to it (or click the language) and select Language options.
-1. Under "Keyboards," click Add a keyboard and choose Microsoft Pinyin.
+1. Under "Keyboards," click Add a keyboard and choose "Microsoft Pinyin".
 1. To switch: Press Windows Key + Spacebar to cycle through your languages. Look for the abbreviation "CH" or a Chinese character in your taskbar.
 
 On macOS:
@@ -801,16 +839,14 @@ On Android mobile:
 
 On all devices:
 
-1. Type entire base Pinyin words such as (你好, nǐ hǎo) = you good? for "hello"  without tone accent marks, then press spacebar to enter. 
+1. Type entire base Pinyin words such as (你好, nǐ hǎo) lit. you good? for "hello"  without tone accent marks, then press spacebar to enter. PROTIP: Simply hold down the base vowel letter (a,e,i,o, or u, with or without pressing shift for upper case) until a small menu with accent options appears (e.g., 1: è, 2: é, 3: ê, 4: ë):
 
-   <img alt="mac-a-diacriticals-544x108.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786700493/mac-a-diacriticals-544x108_yujyv8.png" />
-   PROTIP: Simply hold down the base letter (a,e,i,o, or u, with or without pressing shift for upper case) until a small menu with accent options appears (e.g., 1: è, 2: é, 3: ê, 4: ë). 
+   <img alt="mac-a-diacriticals-544x108.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786700493/mac-a-diacriticals-544x108_yujyv8.png" /><br />
    Then click the accent you want or press the corresponding number key (e.g., press 2 for é).
    
+   <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1787595992/zn-tone-keys_eshkx9.png"><img align="right" width="200" alt="zn-tone-keys.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1787595992/zn-tone-keys_eshkx9.png" /></a>
+
    Alternately: Use the "Option Key" Method (Fastest for Touch Typists and the traditional Mac method where you do not have to hold the keys down at the same time: a two-step process: 
-   Hold down Option to press the letter (a,e,i,o, or u).
-   
-   Alternately:
    * Acute (´): Press Option + E, then type the letter (e.g., é)
    * Grave ():** Press **Option+ `` `` (the key right above the Tab key), then type the letter (e.g., è)
    * Circumflex (^): Press Option + I, then type the letter (e.g., ê)
@@ -825,55 +861,71 @@ On all devices:
 
 1. If an autocomplete option is offered, press Spacebar to select the top choice. If not, press a number or press arrow keys to select another option.
 
+
 <a id="Pinyin"></a>
 
 ## Pinyin Alphabet
 
+Chinese uses characters. The pronunciation of a character includes a syllable and a tone. Tone is the use of pitch to distinguish lexical or grammatical meanings. 
+
 The Pinyin alphabet was created in 1958 to aid <strong>pronounciation</strong>, not as a whole language like Japanese Romaji text.
 Pinyin enables Chinese to be typed into QWRTY typewriters used throughout the world.
 
-<a target="_blank" href="https://www.coursera.org/learn/hsk-1/supplement/FKZzg/pronunciation-of-initials">Pronounce</a>:
-<img alt="zn-pinyin-vs-abc.png" src="" />
+Alternately, the Zhuyin alphabet is used by Taiwan since 2009.
 
+There are four tones in Chinese, but some characters do not have tones. Pinyin is used to represent the pronunciation of each character. The alphabet for pinyin consists of 26 English letters, among them the letter V is only used to spell foreign names and the other 25 are used for characters. A syllable contains an initial and a final. 
+
+The initial is the beginning consonant of a syllable, whereas the final is the simple or compound vowel of a syllable. For example, “好” is pronounced hǎo with h being the initial and ɑo being the final. The mark (ˇ) over a in ao is the tone.
+
+To practice your tones, use: 
+   * http://www.archchinese.com/mandarin_chinese_tone_drill.html which can customize learning games.
+   * <a target="_blank" href="https://www.coursera.org/learn/hsk-1/supplement/FKZzg/pronunciation-of-initials">[Pronounce]</a>:
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1787596081/zn-bopomofo-1920x1080_y7acez.png"><img align="right" width="200" alt="zn-bopomofo-1920x1080.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1787596081/zn-bopomofo-1920x1080_y7acez.png" /></a>
 Pinyin is nicknamed "Bo Po Mo Fo" for the first four letters (b p m f), which are called "labial initials" because they involve lip (labial) movement. But ignore the "o" because they're pronouced differently.
    * B is like the b in "burger".
    * P is like the purr like a cat.
    * M is like M in money.
    * F is like fun as in games.
+
 [3m50s] The next four are called "dental" initials are pronouced by touching the tip of your tongue to the back of your teeth.
    * D is the initial of duck
    * T is the initial of tough guy
    * N is the initial of nut
    * L is the initial of lucky
+
 [5m2s] Gutteral initials:
    * G as in guy punch
    * K as in come (here)
    * H as in honey
+
 [5m36s] Palatal initials:
    * J as in Genie
    * Q as in chipping bird
    * T as in she as in the female bathroom sign
+
 [6m45s] Retroflex initials (roll-tongue edge sounds)
    * ZH as in drummer 
    * CH as in truck
    * SH as in mushroom
    * R as in shussh (to keep quiet)
+
 [9m4s] Dental sibilants
    * Z and in zap when a mosquito gets too close to a zapper
    * C as in the z in putz (stupid guy)
    * S as in snake
+
 [10m22s] Medials:
    * I/YI as in eee screaming
    * U/WU as in uoh when someone fell
    * U/YU as in e of sweet
+
 [12m48s] Finals:
    * as in the o in bow tie
    * as in pan for bread
    * as in the last part of youngin
    * ANG as in ong in wrong 
    * ER as in er I don't know what to say
-
-Alternately, the Zhuyin alphabet is used by Taiwan since 2009.
 
 REMEMBER: Although the same letters in the English ABC alphabet are NOT pronounced the same in Pinyin.
 So English speakers need to un-memorize the English pronouciations associated with each letter in the ABCs.
@@ -897,7 +949,7 @@ Get your free Chinese pronunciation PDF chart at: https://bit.ly/slc-chart
 
    * https://www.youtube.com/watch?v=Hv6WEWS_re8 = Learn the Chinese Alphabet in Less Than 20 min! Pinyin & Zhuyin (Bopomofo) https://bit.ly/slcvocab 
    * https://www.youtube.com/watch?v=rRHJZMBT9AM&list=PLlHLXsD5BfOt-veEwbAJ3wZOs8T9NsFqH = @Harbin Mandarin playlist
-   * https://www.youtube.com/watch?v=s663Wghq-u4&pp=ugUEEgJlbg%3D%3D = Chinese Alphabet for Beginners| Lesson 1: Why Learn Pinyin Not Bopomofo?|Systematic Pinyin Course by Yuna Chinese
+   * https://www.youtube.com/watch?v=s663Wghq-u4&pp=ugUEEgJlbg%3D%3D = Chinese Alphabet for Beginners- Lesson 1: Why Learn Pinyin Not Bopomofo?-Systematic Pinyin Course by Yuna Chinese
    * https://www.youtube.com/watch?v=miatt5UNq-k "Memorize ANY Chinese Character FAST with Mnemonics" by HanziHero with $15/mo https://hanzihero.com (~50+ words added weekly) 70+ Pinyin sound mnemonics, 500+ Components
 
 
@@ -953,10 +1005,10 @@ Effortless Chinese
 
 ## Seasons
 
-* 春天 Chūntiān Spring:
-* 秋天 Qiūtiān Autumn:
-* 冬天 Dōngtiān Winter:
-* 夏天 Xiàtiān Summer:
+* 春天 Chūntiān   = Spring:
+* 秋天 Qiūtiān    = Autumn:
+* 冬天 Dōngtiān   = Winter:
+* 夏天 Xiàtiān    = Summer:
 
 <a id="Months"></a>
 
@@ -1211,6 +1263,47 @@ Visitors to China:
    * <a target="_blank" href="https://www.youtube.com/watch?v=5w4mYeWGVc8">What the West gets wrong about China</a>
    * https://www.youtube.com/watch?v=fYeRObE3YYk
    * https://www.youtube.com/watch?v=EbrJxh_OQrM
+   * <a target="_blank" href="https://www.youtube.com/watch?v=kG7eiEiA_mA">Black in China</a>
+
+Unlike some other countries, China does not encourage immigration (such as for retirement past age 57) other than family reunification. 
+
+<a id="Radicals"></a>
+
+## Radicals
+
+10 radicals are used to form 100 Chinese characters as visual memonics with some resemblance to the object: <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck">VIDEO</a>:<br /><img alt="zn-10-radicals.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786972952/zn-compass-1155x977_hzv2vz.png" /></a>
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=18s">Person 00:18 Person [人，亻]</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=01h03m38s Woman [女]</a>
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=16m19s Mouth [口]</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=46m06s Speech [言，讠]</a>
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=01h36m21s Hand [手，扌]</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=01h53m11s Heart [心，忄]</a>
+
+Elements:
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=02h27m01s Earth/Soil [土]</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=01h19m44s Sun [日]</a>
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=31m14s Water [水，氵]</a> Get the <a target="_blank" href="https://iheartmandarin.myshopify.com/products/companion-packet-for-character-%E6%B1%89%E5%AD%97-story-%E6%B0%B4?variant=53100922437950&country=US&currency=USD&srsltid=AfmBOorURb7flZaRaST9bGLtzuY2d0uYlIA1Ln2wFahUtpSMIst7_aHzBoU">$5 Companion</a>
+
+   * <a target="_blank" href="https://www.youtube.com/watch?v=Wg9fNbRqWck&t=02h09m54s Tree/Wood [木]</a>
+
+
+Similarly:
+   * https://www.youtube.com/watch?v=mXxYIuUAFkY 
+   * https://www.youtube.com/watch?v=lKAkMvxTKkg by 100Chinese
+   * https://www.youtube.com/watch?v=hcRnPnMp_D0 32:06 "11 Patterns Unlock Natural Chinese" Canto to Mando
+
+   https://fanyi.baidu.com/mtpe-individual/transText#/zh/en/
+
+   https://soundcloud.com/user-682871665/sets/hsk-1-textbook-audio
+
+   https://languageplayer.io/en/zh/reader/
+   Tap on any word for a popup dictionary.
+
+   <a target="_blank" href="https://www.archchinese.com/arch_chinese_radicals.html">214 radicals were in the original Kangxi list that got simplified</a>.
+
 
 
 <a id="Elements"></a>
@@ -1569,8 +1662,6 @@ https://docs.google.com/document/d/19zAyAVcxxOLqVGwroq9epccT_PcwYVzT24JHTOrZ0SM/
 For free language exchange:
 * HelloTalk is free
 * <a target="_blank" href="https://www.youtube.com/watch?v=V8EFhnMaVRk">VIDEO</a>: italki pay per lesson code: julesy3
-AI Conversation App:
-* Langua: http://languatalk.com/?via=brian
 
 Once you have some fluency:
 * Install Glossika, an audio flashcard app.
