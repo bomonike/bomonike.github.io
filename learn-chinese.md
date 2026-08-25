@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-08-24"
-lastchange: "v020 bpmf @learn-chinese.md"
+lastchange: "v021 bpmf @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
 title: "Learn Chinese"
@@ -116,7 +116,7 @@ The maximum score is <strong>300</strong> for levels 1-6.
 Advanced (HSK Levels 7–9) focuses on near-native proficiency, academic research, and professional work for master’s/PhD programs:
    - HSK 7-9 are tested together in one single exam. Passing with varying scores dictates whether you get a Level 7, 8, or 9 certificate. It tests highly nuanced language, classical Chinese elements, and complex writing. (Vocab: 11,000+ words)
 
-Core HSK written tests involve typing <a href="#Pinyin">Pinyin</a> on a computer QWERTY keyboard.
+Core HSK written tests involve typing <a href="#Pinyin">Pinyin</a> on a computer QWERTY keyboard without the accent marks.
 * HSK 1 and HSK 2: You listen to audio clips and read sentences, paragraphs, or passages, then answering multiple-choice questions. There is no handwriting section. 
 * HSK 3 and HSK 4: The "writing" section requires you to rearrange provided words into a correct sentence. You do not have to write characters from scratch.
 * HSK 5 and HSK: You must write short essays. However, these exams are almost entirely computer-based now. You type your answers using pinyin, and you select the correct character from a drop-down menu. You never actually "write" the character. One can take a paper-based test, but graders only check for correct characters, vocabulary, and grammar. As long as the final character is legible and correct, they do not know—and do not care what order strokes are written.
@@ -210,11 +210,15 @@ Textbook "HSK Standard Course
 
    <a target="_blank" href="https://www.archchinese.com/chinese_english_dictionary.html">Dictionary</a>
 
-1. Real-time two-way conversation (hands-free) <a target="_blank" href="https://www.amazon.com/Timekettle-W4-Interpreter-Real-Time-Translation/dp/B0GT7HN145">Timekettle M4 Pro earbuds $398</a>. Limitation: Most translation earbuds have a 2-5 second delay and struggle with background noise or overlapping speakers.
-https://www.timekettle.co/products/w4-pro-ai-interpreter-earbuds-2026 
-13 Pairs Offline Languages. It actually listens to the context of your entire sentence. 
+1. To translate two-way <a href="#Conversations">conversations</a> real-time (hands-free):
 
-1. For speech-to-text with translation during meetings, use an E-ink tablet: $499 8.5" AINote Air2</a>, <a target="_blank" href="https://www.amazon.com/stores/iFLYTEK/page/E9F2D2A8-3FCB-4091-A012-DCFBEA22F09E">$649 10" iFLYTEK AINote</a> with AI Write, or Tencent Meeting.
+   Apple iPhones come with a visual translation feature built into the camera app.
+
+   <a target="_blank" href="https://www.amazon.com/Timekettle-W4-Interpreter-Real-Time-Translation/dp/B0GT7HN145">$398</a> <a target="_blank" href="https://www.timekettle.co/products/w4-pro-ai-interpreter-earbuds-2026">Timekettle M4 Pro earbuds</a>. It understands the context of entire sentences in 13 pairs of languages offline. WARNING: Most translation earbuds have a 2-5 second delay and struggle with background noise or overlapping talk among speakers.
+
+   For <strong>real-time speech-to-text</strong> with translation during meetings, there are E-ink tablets: $499 8.5" AINote Air2, <a target="_blank" href="https://www.amazon.com/stores/iFLYTEK/page/E9F2D2A8-3FCB-4091-A012-DCFBEA22F09E">$649 10" iFLYTEK AINote</a> with AI Write.
+
+   Tencent Meeting.
 
 1. Learn <a href="#Pinyin">Pinyin</a> to pronounce Chinese names for <a href="#Personal_possessions">Personal possessions</a>. When needed, refer to the <a href="#Personal_possessions">list below</a>. Learn to pronounce <a href="#Foods">foods</a> or point to my list. Home items. 
 
@@ -222,7 +226,7 @@ https://www.timekettle.co/products/w4-pro-ai-interpreter-earbuds-2026
 
    Cantonese has 6 tones.
 
-1. Children in mainland China, before dipping a traditional in ink to draw strokes in a very specific order to make calligraphy, learn <a target="_blank" href="https://en.wikipedia.org/wiki/Pinyin">Pinyin alphabet</a> (not <a target="_blank" href="https://en.wikipedia.org/wiki/Help:IPA">IPA</a>).
+1. Children in mainland China, before drawing stokes of traditional calligraphy glyphs (in a very specific sequence), first learn the <a href="#Pinyin">Pinyin alphabet</a>.
 
 1. Before traveling, sign up for <a href="#Payments">automated payments</a>, install and use <a href="#eSIM">mobile eSIM</a> and VPNs so you can view YouTube videos. 
    The Hong Kong and Macau SAR (Special Administrative Regions (特别行政区) residents do have access to western internet and separate currency and passport. Macau is the only legal gambling in China.
@@ -591,14 +595,17 @@ China is home to 59 Cultural and Natural UNESCO World Heritage Sites -  tied wit
 The "Golden Triangle Tour" municipalities (直辖市) of Beijing, Xi'an, Zhangjiajie, Shanghai.
 
 * Harbin ice fest in janu: luxury hotels in the Songbei District 
+
 * 上海	Shàng hǎi	2480万 	= Shanghai PVG SHA 
    * Aurora Museum
-   * Yu Garden
+   * Yu Garden (Yuyuan)
    * Shanghai Disney Resort
    * Shanghai Tower ride view
    * <a target="_blank" href="https://www.uvbypp.cc/">Ultraviolet restaurant</a> (French/Sensory experience – one of the world's most unique dining experiences)
-   * Bund road, Shanghai Gold Exchange International Board
    * Classical Gardens of Suzhou from the 11th to 19th centuries is the "absolute pinnacle of Chinese landscape garden design, where nature is miniaturized into a perfect, philosophical microcosm."
+   * Bund road, Shanghai Gold Exchange International Board
+   * Huangpu River cruise skyscrapers of Lujiazui (Pudong)
+   * Walk Suzhou Creek & Nanjing Road Pedestrian Street
 * 北京	Běi jīng - 2183万 	= Beijing (North capital) = PEK (PKX)
    * Forbidden City's golden ginkgo trees: Get there early (6am). Begin with the side halls instead of the main central axis.
    * Xiangshan Park red maple leaves in autumn
@@ -795,6 +802,8 @@ At home in America, on internet browsers such as Google Chrome, I keep open all 
 
 ## Typing Chinese
 
+Chinese uses characters. The pronunciation of a character includes a syllable and a tone. Tone is the use of pitch to distinguish lexical or grammatical meanings. 
+
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1786535452/zn-mobile-keyboard_ehc64k.png"><img align="right" width="100" alt="zn-mobile-keyboard.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786535452/zn-mobile-keyboard_ehc64k.png" /></a>
 To set up the <a href="#Pinyin">Pinyin</a> Keyboard for use by other apps on your computer:
 
@@ -837,12 +846,21 @@ On Android mobile:
 1. Find Chinese (Simplified) > Pinyin and download/enable it.
 1. To switch: Tap the Globe icon on your keyboard.
 
-On all devices:
+<a id="Pinyin"></a>
 
-1. Type entire base Pinyin words such as (你好, nǐ hǎo) lit. you good? for "hello"  without tone accent marks, then press spacebar to enter. PROTIP: Simply hold down the base vowel letter (a,e,i,o, or u, with or without pressing shift for upper case) until a small menu with accent options appears (e.g., 1: è, 2: é, 3: ê, 4: ë):
+## Pinyin Alphabet
+
+<a target="_blank" href="https://en.wikipedia.org/wiki/Pinyin">PThe Pinyin alphabet</a> was created in 1958 (as ISO 7098-1982) to help <strong>pronounciation</strong>, not as a whole language like Japanese Romaji text.
+Pinyin enables Chinese to be typed into QWRTY typewriters used throughout the world.
+
+Alternately, the Zhuyin alphabet is used by Taiwan since 2009 (not covered here). (not <a target="_blank" href="https://en.wikipedia.org/wiki/Help:IPA">IPA</a>).
+
+1. After you have <a href="#Typing">installed the Chinese keyboard</a>
+
+1. To type an accented vowel, hold down the base vowel letter (a,e,i,o, or u, with or without pressing shift for upper case) until a small menu with accent options appears (e.g., 1: è, 2: é, 3: ê, 4: ë):
 
    <img alt="mac-a-diacriticals-544x108.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786700493/mac-a-diacriticals-544x108_yujyv8.png" /><br />
-   Then click the accent you want or press the corresponding number key (e.g., press 2 for é).
+   Then click the accent you want or press the corresponding number key (e.g., press 2 for á,é,etc.).
    
    <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1787595992/zn-tone-keys_eshkx9.png"><img align="right" width="200" alt="zn-tone-keys.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1787595992/zn-tone-keys_eshkx9.png" /></a>
 
@@ -861,17 +879,6 @@ On all devices:
 
 1. If an autocomplete option is offered, press Spacebar to select the top choice. If not, press a number or press arrow keys to select another option.
 
-
-<a id="Pinyin"></a>
-
-## Pinyin Alphabet
-
-Chinese uses characters. The pronunciation of a character includes a syllable and a tone. Tone is the use of pitch to distinguish lexical or grammatical meanings. 
-
-The Pinyin alphabet was created in 1958 to aid <strong>pronounciation</strong>, not as a whole language like Japanese Romaji text.
-Pinyin enables Chinese to be typed into QWRTY typewriters used throughout the world.
-
-Alternately, the Zhuyin alphabet is used by Taiwan since 2009.
 
 There are four tones in Chinese, but some characters do not have tones. Pinyin is used to represent the pronunciation of each character. The alphabet for pinyin consists of 26 English letters, among them the letter V is only used to spell foreign names and the other 25 are used for characters. A syllable contains an initial and a final. 
 
