@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-13"
-lastchange: "v043 chinese prophesy @history.md"
+date: "2026-08-26"
+lastchange: "v045 radio broadcast @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -434,7 +434,7 @@ in the jubilee of jubilees (50 x 50 years or 2500 years after the fall of Adam)
 <br /> (800 year) Biblically quiet period of more Judges of Isreal
 
 <br /> 1775 casuistic (case) law <a target="_blank" rel="noopener noreferrer" href="http://www.yale.edu/lawweb/avalon/medieval/hammenu.htm">Code</a> established by Hammurabi (1792/1728-1686), the Amotittian ruler of Babylonia.
-<br /> 1766-1121 Shang Dynasty in China is known for its use of acupuncture, elaborate bronze ritual vessels, oracle bones to determine the future, and the earliest standardized form of Chinese characters
+<br /> 1766-1121 Shang Dynasty in China is known for its use of acupuncture, elaborate bronze ritual vessels, oracle bones to determine the future using the earliest form of Chinese characters
 <br /> 1628 Volcano erupts in Thesus (modern day Satorini, Greece)
 	destroys the Minoan civilization on the island of Crete, an art-loving culture Homer calls Atlantis.
 <br /> 1590 <a tartet="_blank" href="http://www.wsu.edu:8080/~dee/MESO/KASSITES.HTM">
@@ -886,8 +886,7 @@ the 9th month each year with day-time fasting during <em>Ramadan</em>.
 <br /> July 16, 622 Muhammad PBUH and his followers start a 200 mile <em>Hijrah </em> (migration) from Mecca/Makkah to
 Madina (now Saudi Arabia), an event marked as the first day of each Islamic new year (epoch)
 <br /> 627 Byzantine Emperor Heracles defeats the Persian army.
-<br /> 629-645 Chinese pilgrim Xuanzang collects Buddhist teachings in China, Cambodia, and India,
-	then translates many of the surviving Sutra of the Mahayana Canon into Middle Chinese.
+<br /> 629-645 Chinese pilgrim Xuanzang collects Buddhist teachings in China, Cambodia, and India, then translates many of the surviving Sutra of the Mahayana Canon into Middle Chinese.
 <br />630 (Without a battle) Muhammad's 10,000 man army <em> Jihad </em> (struggle) restores the Ka'bah (first mosque) in Mecca.
 <br />632 (since Muhammed Recitations written in the <a target="_blank" rel="noopener noreferrer" href="http://alummah.net/texteng/quran-Translation.htm">Qur'an</a> and <em>hadith</em> (words of the prophet) in the Sunna are written.
 It contains the Five Pillars of Islam (submission). These events are celebrated on <a target="_blank" rel="noopener noreferrer" href="http://alummah.net/texteng/isra.htm">Isra'</a>
@@ -1232,9 +1231,11 @@ which proposes a Jewish state in Palestine.
 Cuba, ceded <strong>Puerto Rico and Guam to the US</strong>, and gave up its possessions in the West Indies,
 and sold the Philippine Islands.
 <br /> August 29&#8212;31, 1897 First Zionist Congress meets in Basel, Switzerland led by Theodor Herzl
+<br /> December 1901 Guglielmo Marconi sends first wireless broadcast (Morse code pulses) from Earth.
 <br />1899-1902 Boer War ends with British control of South Africa.
 <br /> Dec. 17, 1903 Wright brothers of Akron, Ohio fly first motorized bicycle/airpline named "Bird of Prey" at SC.
 <br /> April 18, 1906, 700 San Franciscans die in the deadliest earthquake in North American history.
+<br /> December 24, 1906 Canadian Reginald Fessenden broadcasts music in first AM signal from Brant Rock, Massachusetts.
 <br /> Speaking in tongues initiates the <a target="_blank" rel="noopener noreferrer" href="http://www.christianitytoday.com/ch/58h/58h010.html">Azusa Street Pentecostal Revival</a> in Los Angeles.
 <br /> 1913 U.S. Federal income tax law passes
 <br /> 1914-18 on Tisha B'Av, WWI sparked by murder of Ferdinand in Yugoslavia, starts.
@@ -1385,16 +1386,29 @@ the "one religion" in the holy muslim land of Mecca and Medina.
 
 Apophis asteroid Apr 13, 2029.
 
-<a target="_blank" href="https://www.youtube.com/watch?v=dtFS7O9mA1g&t=14m51s">VIDEO</a>:
-In the "Tui Bei Tu" book of 59 prophesies written in China during the Tung dynasty,
-the last prediction is this:<br />
+In the book tuī bèi tú (推背圖) of 59 prophesies written in China during the Tung dynasty. It's authored by the court astronomer Li Chunfeng and the fortuneteller Yuan Tiangang, at the request of Emperor Taizong.
+Many cryptic predictions rooted in the hexagrams of the Book of Changes  have come true. 
+The last prophecy is this: <a target="_blank" href="https://www.youtube.com/watch?v=dtFS7O9mA1g&t=14m51s">VIDEO</a>:<br />
 "A city without walls, without government, without a distinction between you and me,
 all under heaven government is one family, a big change in governance.
+Ode:
 One person brings good fortune to the world.
 In his hand he holds a bamboo stick getting rid of the bamboo shoots.
 Red, yellow, black, white, there is no distinction.
 East, South, North, West, all harmonious."
 
+<a target="_blank" href="https://www.youtube.com/watch?v=MrS8fcsaXCk&t=48m38s">VIDEO</a>: Alternate translation:<br />
+"No cities and no governments; no you and no me.
+The world is one family; 
+governance reaches the state of Great Transformation.
+Ode:
+One person acts for the greatest good, and a=the world is blessed;
+holding a tube of bamboo slips, the bamboo itself it pulled away.
+Red, yellow, black, and white are no longer distinguished;
+East, South, West and North, are all in harmony."
+
+* https://www.youtube.com/watch?v=m0-vXiX18cQ
+* https://en.wikipedia.org/wiki/Tui_bei_tu
 
 ## References
 
