@@ -1,6 +1,6 @@
 ---
-date: "2026-06-02"
-lastchange: "26-06-02 v006 Yeasu VX-6 @ham-radio.md"
+date: "2026-08-29"
+lastchange: "v008 ELF @ham-radio.md"
 url: "https://bomonike.github.io/ham-radio"
 file: "ham-radio"
 title: "Ham Radio"
@@ -142,12 +142,29 @@ That's 300 Meters per second.
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"><img alt="ham-wavelengths-1920x1047.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"></a>
 
-To convert between wavelength and frequency for Technician class Ham raio bands:
+To convert between wavelength and frequency for Technician class Ham radio bands:
    * 300 M/sec/ 10 meters ~ 440 MHz (for phones)
    * 300 M/sec / 2 meters ~ 144 MHz
    * 300 M/sec / 6 meters ~ 50 MHz
    <br /><br />
 The 6-meter (50 MHz) band is excellent for meteor scatter communications, when radio waves are reflected back to Earth from the ionized atmospherem where meteorites enter Earth's atmosphere and burning up on entry.
+
+## Low Frequency
+
+In the movie "The Hunt for Red October" set in 1984, a US submarine receives an "ELF" command message, referring to the US military's Extremely Low Frequency radio system used to communicate with deeply submerged submarines. ELF radio waves are in the 30 Hz to 300 Hz range (wavelengths of 10,000 km to 1,000 km). This is thousands of times lower than standard AM radio because it can penetrate seawater to depths of several hundred feet (100-200+ meters). Normal radio waves (HF, VHF, UHF) can only penetrate a few feet. ELF messages are transmited by two sites:
+
+   * 28-mile Clam Lake, Wisconsin (built 1969, operational 1982)
+   * 56-mile in Republic, Michigan (built 1984).
+
+That means the system operated one-way (shore-to-submarine). 
+Submarines could not reply via ELF because they would don't have an equally massive antenna at the time.
+
+Russia maintains an ELF system called Zevs ("Zeus") – a massive transmitter on the Kola Peninsula. India has ELF capabilities for its nuclear submarine fleet.
+
+The US ELF system was officially shut down in September 2004 when
+VLF (Very Low Frequency) transmitters in Cutler, Maine became operational.
+Also because fixed ground facilities would not survive bombing,
+the TACAMO aircraft (Take Charge and Move Out) had aircraft trailing a long wire antenna to provide survivable, mobile VLF communication.
 
 
 
@@ -213,11 +230,32 @@ FCC Rule §2.201 on emission types:
 * NTSC (National Television System Committee) video UHF analog fast scan
 <br /><br />
 
-A <strong>space station</strong> is any amateur state more than 50 km above earth.
+## Space station
+
+No music can be transmitted by ham operators except to the International Space Station (ISS).
+
+Citizen ham radio operators with the right hobbyist equipment can eavesdrop (without a license) on astronauts speaking from space:
+    * the International Space Station (ISS) Dial <strong>145.800 MHz FM</strong>. Doppler shift (±3.5 kHz) happens fast, so program memories like 145.795, 145.800, 145.805 MHz and step through during approach/overhead. Check AMSAT status for voice repeater or SSTV. Use N2YO.com to spot TheStation.nasa.gov shows visible ones.
+    * China's Tiangong space station callsign is <strong>BJ1SO</strong> at 145.800 MHz (VHF band).
+A license is needed to transmit (not listen). There are also private channels used by the military and space agency for official operations are heavily encrypted which citizens cannot listen.
+
+By definition, a "<strong>space station</strong>" is any amateur state 50 km or more above earth.
 Satellites (such as SpaceX) at "Low Earth Obit" (LEO) are from 160 km (100 miles) but never more than about one-third of the radius of Earth about 2,000 kilometers (1,200 mi).
 In mode U/V, the satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band. Your signal strength on the downlink should be about the same as the beacon.
 
-No music can be transmitted except to the Space Station 50 km above earth.
+The China Manned Space Agency (CMSA) routinely downlinks high-definition video and audio to ground stations in China.
+These feeds are broadcast live on state television (like CCTV) and streamed on platforms like Weibo, Bilibili, and YouTube.
+On the "Tiangong Class" <a target="_blank" href="https://www.youtube.com/@cgtn">YouTube channel @CGTN (China Global Television Network)</a>, astronauts teach science from space, show spacewalks, and daily life inside the modules.
+
+Telemetry (digital data about the station's health, position, and systems such as the station's orbit, battery levels, and internal temperatures) are constantly sent down to controllers can also be received by anyone using a USB radio receiver called an <strong>SDR dongle</strong> (like a NooElec or RTL-SDR, which cost around $30), a simple antenna. 
+
+Telemetry signals do not sound like human voices but digital beeps, bursts of static, or a "waterfall" of data noise on a computer screen. Software to decode include SDR#. 
+
+To know exactly when and where Tiangong will pass over your city, 
+use free satellite tracking websites (like Heavens-Above or N2YO) or smartphone apps.
+
+
+## VHF 
 
 Most VHF power amplifiers are multimode: operate SSB, CW, and FM.
 
@@ -234,7 +272,6 @@ FM transmissions can use 2.8 kHz with SSB (Single Side Band), using only one sid
    * LSB (Lower Side Band) is used at 10 MHz and higher
    * USB (Upper Side Band)
 
-
 (most people don't use 6m)
 
 <a target="_blank" href="https://study.hamradioprep.com/courses/take/general-license-course-2023-2027/lessons/44705801-mixing-digital-microwave-video">VIDEO</a>:
@@ -249,7 +286,6 @@ so are limited to a range of about a mile.
 <a target="_blank" href="https://amzn.to/43X2UuS">$__ TidRadioTD-H3</a> 3W from China
 https://amzn.to/4asgKrQ It can receive FM Airband, NOAA channels. Can scramble (not encryption).
 It contains a GMRS radio and ham radio "mode". Not waterproof. Everytime mode is changed, it resets to factory defaults, wiping out all custom settings. But you can backup and restore via its micro USB connector and low-bit-rate chirp (echolocation like the way dolphins and bats communicate). Hold side button to clone OTW. Hold down 1 to detect nearby frequencies.
-
 
 
 ## Repeaters
