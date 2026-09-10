@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-26"
-lastchange: "v045 radio broadcast @history.md"
+date: "2026-09-10"
+lastchange: "v046 Disneyland @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -1300,6 +1300,7 @@ and sold the Philippine Islands.
 <br /> '52 Bishop Sheen draws 30 million viewers to his "Life Is Worth Living" TV show.
 <br /> Feb 28 '53 Watson and Creek model the DNA.
 <br /> '53 Edmund Hillary and guide Tenzing Norgay make first ascent of Mt. Everest
+<br /> July 17th, 1955 Disneyland opens
 <br /> June 25 '62 Supreme Court bans prayer in school in in Engel vs. Vitale,
 	the first case in which the Supreme Court did not cite any previous precedents or legal cases in making its decision,
 	creating the phrase "separation of church and state".
