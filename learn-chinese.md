@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-28"
-lastchange: "v022 court ruling @learn-chinese.md"
+date: "2026-09-14"
+lastchange: "v024 religions @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
 title: "Learn Chinese"
@@ -67,7 +67,7 @@ ALPHABETICAL INDEX:
 Due to historical geographical limits to transportation back in the day,
 <a target="_blank" href="https://www.youtube.com/watch?v=csmXX1elkwI">VIDEO</a>: There are 300+ dialects of the Chinese language.
 
-The Han people constitute more than 90% of the population of China. They call their language 汉语 Hànyǔ (in <a href="#Pinyin">Pinyin</a>). The government in China standardized to Mandarin or Pǔtōnghuà (普通话, ‘common speech’). 
+The language 汉语 Hànyǔ ("Mandarin") is spoken by more than 90% of the population of China. It's the Pǔtōnghuà (普通话, ‘common speech’) the government in China standardized in the rest of the country. 
 
 Mainland China uses simplified Mandarin.<br />
 Taiwan uses traditional Mandarin.
@@ -563,6 +563,58 @@ McDonalds and other meals can be delivered to those individual pods.
 
 12306 train app
 
+## Religions in China
+
+REMEMBER: A person in China could participate in Buddhist rituals, follow Taoist practices, honor Confucian values, and worship local gods -- all without seeing these as contradictory.
+<table>
+  <thead>
+    <tr>
+      <th>Tradition</th>
+      <th>Main concern</th>
+      <th>Core idea</th>
+      <th>Typical practices</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>儒教 Confucianism</td>
+      <td>How should people live together? behave toward other people?</td>
+      <td>Become a a junzi, morally cultivated person and maintain harmonious relationships</td>
+      <td>Study, ethical conduct, rituals, honoring ancestors</td>
+    </tr>
+    <tr>
+      <td>道教 Taoism (Daoism) Wudang Mountains</td>
+      <td>How should I live in harmony with reality/nature?</td>
+      <td>Follow the Dao (“the Way”) effortless action wu wei (無為) rather than forcing things</td>
+      <td>Meditation, ritual, simplicity, cultivation, traditional healing</td>
+    </tr>
+    <tr>
+      <td>佛教 Buddhism Mogao Caves, Leshan Giant Buddha, Potala Palace</td>
+      <td>Why do we suffer (dukkha), and how can we be liberated?</td>
+      <td>Suffering comes from attachment and ignorance; awakening brings liberation (nirvana)</td>
+      <td>Inner life: Meditation, chanting, offerings, ethical living, compassion</td>
+    </tr>
+    <tr>
+      <td>Chinese folk religion</td>
+      <td>How do I maintain harmony with my ancestors, community, and spiritual world?</td>
+      <td>The spiritual and human worlds are interconnected</td>
+      <td>Ancestor worship, offerings, festivals, temple worship</td>
+    </tr>
+    <tr>
+      <td>Islam Urguyh</td>
+      <td>How should humans live in submission to God?</td>
+      <td>One God (Allah), revelation through Muhammad, ethical and religious obligations</td>
+      <td>Prayer, fasting, charity, pilgrimage to Mecca</td>
+    </tr>
+    <tr>
+      <td>Christianity</td>
+      <td>How can humanity be reconciled with God?</td>
+      <td>One God, Jesus Christ as central to salvation</td>
+      <td>Prayer, worship, Bible reading, sacraments/rituals</td>
+    </tr>
+  </tbody>
+</table>
+
 <a id="Provinces"></a>
 
 ## Provinces
@@ -594,21 +646,32 @@ Province	Capital City	Notable For
 1. Jilin	Changchun	Snow, forests, North Korea border
 1. Heilongjiang	Harbin	Ice Festival, Siberian tiger, cold winters
 1. Hainan	Haikou	Tropical island, beach resort (Sanya)
+
 1. Taiwan	Taipei	Controlled by the ROC but claimed by the PRC
 
 <a id="CityNames"></a>
 <a id="Cities"></a>
 
-### Major Cities
+### Major Municipalities
 
 TASK: pronounce the names of the largest Tier 1 cities (airports):
 
-China is home to 59 Cultural and Natural UNESCO World Heritage Sites -  tied with Italy for the most of any country on Earth.
+As of July 2026, China <a target="_blank" href="https://whc.unesco.org/en/statesparties/cn/">officially has 61 (map)</a> <a target="_blank" href="https://chinavibe.pro/unesco/">Cultural and Natural UNESCO World Heritage Sites</a> -  tied with Italy for the most of any country on Earth.
+   * A replica of the <a target="_blank" href="https://chinavibe.pro/unesco/temple-of-heaven/">"Temple of Heaven"</a> is in Disney's EPCOT theme park.
+
+The chàngjiāng (the "logn river" flows to Shanghai through Dahanbao, Changqing, Uichang, Wuhan, Najing and sānxiá dàbà (the Three Gorges dam), which provides electricity to half of China. The "Three Kingdoms" live show. <a target="_blank" href="https://www.youtube.com/watch?v=C52YNp2xK5I&t=314s">VIDEO: cruise</a>.
 
 The "Golden Triangle Tour" municipalities (直辖市) of Beijing, Xi'an, Zhangjiajie, Shanghai.
 
-* Harbin ice fest in janu: luxury hotels in the Songbei District 
-
+"Municipalities" that are not provinces:
+* 北京	Běi jīng - 2183万 	= Beijing (North capital) = PEK (PKX)
+   * Forbidden City's golden ginkgo trees: Get there early (6am). Begin with the side halls instead of the main central axis.
+   * Xiangshan Park red maple leaves in autumn
+   * Summer Palace
+   * toboggan down the Great Wall (Mutianyu section)
+   * <a target="_blank" href="https://centurycruise.com/destinations/temple-of-heaven">Temple of Heaven</a>, <a target="_blank" href="https://centurycruise.com/destinations/the-summer-palace">Summer palace</a>
+   * Museum
+   * Tsinghua is ranked #11 globally, top among the C9 (China's Ivy League) <a target="_blank" href="https://www.youtube.com/watch?v=tmXS82gFLB8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>: The Harvard of China: Why Can’t Everyone Get Into Tsinghua?! by Zahra.polyglot <a target="_blank" href="https://www.youtube.com/watch?v=wx9tCK7pFiQ">VIDEO</a>
 * 上海	Shàng hǎi	2480万 	= Shanghai PVG SHA 
    * Aurora Museum
    * Yu Garden (Yuyuan)
@@ -619,18 +682,16 @@ The "Golden Triangle Tour" municipalities (直辖市) of Beijing, Xi'an, Zhangji
    * Bund road, Shanghai Gold Exchange International Board
    * Huangpu River cruise skyscrapers of Lujiazui (Pudong)
    * Walk Suzhou Creek & Nanjing Road Pedestrian Street
-* 北京	Běi jīng - 2183万 	= Beijing (North capital) = PEK (PKX)
-   * Forbidden City's golden ginkgo trees: Get there early (6am). Begin with the side halls instead of the main central axis.
-   * Xiangshan Park red maple leaves in autumn
-   * Summer Palace
-   * toboggan down the Great Wall (Mutianyu section)
-   * <a target="_blank" href="https://centurycruise.com/destinations/temple-of-heaven">Temple of Heaven</a>, <a target="_blank" href="https://centurycruise.com/destinations/the-summer-palace">Summer palace</a>
-   * Museum
-   * Tsinghua is ranked #11 globally, top among the C9 (China's Ivy League) <a target="_blank" href="https://www.youtube.com/watch?v=tmXS82gFLB8&pp=ugUEEgJlbg%3D%3D">VIDEO</a>: The Harvard of China: Why Can’t Everyone Get Into Tsinghua?! by Zahra.polyglot <a target="_blank" href="https://www.youtube.com/watch?v=wx9tCK7pFiQ">VIDEO</a>
+* Chongqing, being "5D" mountainous, with ~32 Million people, is the most populated city proper in the 
+world, with hot pot, panda zoo, Chiqikou old town. <a target="_blank" href="https://www.youtube.com/watch?v=vNR9QjmhH00">VIDEO</a>
+* Tianjin
+
+Tourist sites:
+* Harbin ice fest in janu: luxury hotels in the Songbei District 
 * Xi'an Terracotta Army and City Wall: Go against the typical flow: start with Pit 3 (the quietest), then visit Pit 2, and finish with Pit 1.
    * Xi'an Lintong museum - hands-on experience restoring relics under expert guidance.
-* Zhangjiajie National Forest Park (floating "Hallelujah Mountains" in the movie Avatar)  Wuling mountain range of Guizhou. 
-* Chongqing, with ~32 Mil, being "5D" mountainous is the most populated city proper in the world, with hot pot panda zoo. Chiqikou old town.x <a target="_blank" href="https://www.youtube.com/watch?v=vNR9QjmhH00">VIDEO</a>
+* Zhangjiajie National Forest Park Wuling mountain range of Guizhou. (floating "Hallelujah Mountains" in the movie Avatar) 
+
 
 * 深圳	Shēn zhèn	1780万 	= Shenzhen SZX Huaqianbei <a target="_blank" href="https://www.youtube.com/watch?v=m-ztKaXe1k0">hi-tech shops</a>
 
@@ -654,11 +715,15 @@ Jiahui, Parkway, United Family
 
 ### Flights 
 
-Searching for flights in a private browser window to prevent prices from increasing based on your search history. Flights into Taipai City (TPE) is about $900, cheaper than into the mainland.
+PROTIP: Search for flights in a private browser window to prevent prices from increasing based on your search history. Flights into Taiwan's Taipai City (TPE) is about $900 cheaper than into the mainland.
 
-The 12-13 hour SFO (San Francisco) across the Pacific ocean to Shanghai (PVG, SHA) is the shortest direct route to China from the US. Flights East-West take 2 hours longer due to headwinds.
+The shortest direct route to China from the US is the 12-13 hour SFO (San Francisco) across the Pacific ocean to Shanghai (PVG, SHA). Flights East-West take 2 hours longer due to headwinds.
+
+<a target="_blank" href="https://www.youtube.com/shorts/KIMeigR3JN8">PROTIP</a>: There is a pedestrian bridge connecting a parking lot in San Diego into the Tijana, Mexico airport (TIJ) where Volaris & Asiana fly to Beijing cheaply (originating from Mexico City).
 
 ✈️ Compare prices on Trip.com, Skyscanner, Momondo, and Google Flights. Set up price alerts to track drops. Consider budget-friendly airlines like <a target="_blank" href="airchina.com.cn">airchina.com.cn</a>, China Southern, or <a target="_blank" href="https://www.hainanairlines.com/">hainanairlines.com</a>. Airline prices in China are centrally managed by the TravelSky system (the national GDS). So use the Qianwen App + Fliggy (Alibaba's travel platform).
+
+<a target="_blank" href="https://www.momondo.com/flight-search/SEA,LAX,SFO-SHA,BJS/2026-10-11/2026-10-18?fs=fdDir%3Dfalse&ucs=ggb621&sort=price_a">Search on Momondo.com</a> for cheapest round trip found: in November from SEA, SFO, LA Xto Shanghai (PVG) or Guangzhou (with stops) for as low as $600 on Korean Air, Cathay Pacific.
 
 Travel on Tuesdays/Wednesdays. Book 1-3 months in advance. Travel in off-peak months like May, June, September, or November. Connecting Flights: one-stop flights via hubs like Dubai, Seoul, Tokyo, or Hong Kong are often cheaper than direct flights. Consider flying into a nearby city and taking the high-speed train. Check for flight + hotel packages, which can be cheaper than booking separately. 
 
@@ -1142,6 +1207,7 @@ yàng rén = lit. ocean (meaning overseas) people is the more archaic reference 
    * 1032 ～ 1227 AD = (西夏)
    * 1115 - 1234 AD = gold (金) 金子 Jīnzǐ
 * 1206 ～ 1367 AD = Yuan (元) <a target="_blank" href="https://www.youtube.com/watch?v=PGM3gmb-Wxo">Mongol empire</a> founded by Temujin Genghis Khan 
+   * 1275 Marco Polo travels from Venice thru China
    * 1271 – 1368 AD = Kublai Khan establishes the Yuan Dynasty
    * 1279 - Southern Song Dynasty destroyed
 * 1368 – 1644 AD = Ming (明) = brilliant (centralized Yu Shan Fang)
