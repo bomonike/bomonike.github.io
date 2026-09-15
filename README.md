@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-24"
-lastchange: "v230 cad @README.md"
+date: "2026-09-15"
+lastchange: "v231 github @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -77,6 +77,8 @@ Topics alphabetically:
    ### G
 
 1. <a target="_blank" href="https://bomonike.github.io/genai">genai</a>
+1. <a target="_blank" href="https://bomonike.github.io/gcp">gcp</a>
+1. <a target="_blank" href="https://bomonike.github.io/gcp-adk-mcp">gcp-adk-mcp</a>
 1. <a target="_blank" href="https://bomonike.github.io/gta">gta (Grand Theft Auto)</a>
 1. <a target="_blank" href="https://bomonike.github.io/git-signing">git-signing</a>
 1. <a target="_blank" href="https://bomonike.github.io/github-install">github-install</a>
@@ -145,6 +147,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/networking">networking</a>
 1. <a target="_blank" href="https://bomonike.github.io/nextcloud">nextcloud</a>
 1. <a target="_blank" href="https://bomonike.github.io/nft">nft (Non-Fungible Tokens) on web3</a>
+1. <a target="_blank" href="https://bomonike.github.io/non-us-ai">non-us-ai</a>
 1. <a target="_blank" href="https://bomonike.github.io/nvidia">nvidia</a>
 
    <a name="O"></a>
