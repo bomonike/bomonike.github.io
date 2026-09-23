@@ -1,6 +1,6 @@
 ---
 layout: post
-date: "2026-09-14"
+date: "2026-09-23"
 lastchange: "v024 religions @learn-chinese.md"
 url: https://bomonike.github.io/learn-chinese
 file: "learn-chinese"
@@ -1153,39 +1153,43 @@ yàng rén = lit. ocean (meaning overseas) people is the more archaic reference 
 
 ## Dynastries History
 
+https://www.youtube.com/watch?v=WUzLCcq5o_M very Major Chinese Dynasty Explained
 <a target="_blank" href="https://www.youtube.com/watch?v=MgVWPwg_oZ4">VIDEO</a>: Xia > Shang > Zhou > Qin > Wu > Han > 3 > Jin > S&N > Tang > 5/10 > Khitan/Liao > Song > Yuan > Ming > Qing
 
 * 2070 – 1600 BC = Xia (legendary Yu who managed Yanze floods)
    Suceeded by son Yi, then corrupt Ji
 * 1600 – 1046 BC = Shang (Bronze age)
-* 1046 - 256 BC = Zhou (see sub-periods)
+* 1046 - 256 BC = 800 year Zhou (see sub-periods) Revokable "Mandate of heaven"
     * 1046 – 771 BC = Western Zhou
     * 770 – 256 BC = Eastern Zhou
 <a id="Jade"></a><a target="_blank" href="https://www.youtube.com/watch?v=YUyLjT2PGtc" title="4x4 inch white jade hierloom seal Xi of the realm"><img align="right" width="200" alt="zn-qin-seal-786x792.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1786692824/zn-qin-seal-786x792_rekidp.png" /></a>
     * 770 – 476 BC = Eastern Zhou Spring and Autumn Period
     * 475 – 221 BC = Eastern Zhou Warring States Period
-* 221 – 206 BC = Qin - chin
-   * Ying Zheng (251-210BC) first emporor's 15 year reign unified, started Great Wall) then separated into 18 kingdoms, acording to "Records of the Grand Historian" written during the Han dynasty
+* 221 – 206 BC = 15 yr Qin = chin
+   * Ying Zheng (251-210BC) first emporor's reign unified, started Great Wall) then separated into 18 kingdoms, acording to "Records of the Grand Historian" written during the Han dynasty
 
 * 136 BC Wu academies. silk road to Rome
    * 66 BC <a target="_blank" href="https://www.youtube.com/watch?v=kyqaVTLJR48">Best emporor Zhan</a> "subdued enemy without fighting - Art of war
-* 206 - 220 AD = Han (漢) - <a target="_blank" href="https://www.youtube.com/watch?v=OHsE7OcafCM">sub-periods</a>:
+
+* 206 BC - 220 AD = Han (漢) - summer <a target="_blank" href="https://www.youtube.com/watch?v=OHsE7OcafCM">sub-periods</a>: envoys started Silk Road, invented paper 
    * 206 BC – 9 AD = Western Han（西漢）after 4 years, <a target="_blank" href="https://www.youtube.com/watch?v=8YyHb3FKglE">Liu Bang</a> becomes emporor Gaozu
    * 9 – 23 AD = Xin mang（新莽）= new. Regent Wang Mang who <a target="_blank" href="https://www.youtube.com/watch?v=ooE7WMXcD9Y">abolishes slavery with price controls, land distribution, banking</a> 
    * 25 – 220 AD = Eastern Han（東漢）Liu to Guangwu
    * Son's "Rule of Ming & Zhang"
-* 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity) <a target="_blank" href="https://www.youtube.com/watch?v=y06ehdYDycY&list=PLIbRFNmcCXo-Jn3PdZ57B3pdcHI2XSztV">VIDEO</a>, <a target="_blank" href="https://www.youtube.com/watch?v=TGiWWG6tS-c">VIDEO</a>.
+* 220 – 280 AD = Three Kingdoms (三國魏) (period of disunity) <a target="_blank" href="https://www.youtube.com/watch?v=y06ehdYDycY&list=PLIbRFNmcCXo-Jn3PdZ57B3pdcHI2XSztV">VIDEO</a>, <a target="_blank" href="https://www.youtube.com/watch?v=TGiWWG6tS-c">VIDEO</a>: Wei North, Shu West, Wu South
    * Cao Cao in battle of Red Cliffs
 * 265 – 420 AD = Jin (晉) = enter, advance - sub-periods:
    * 265 – 316 AD = Western Jin (西晉)
    * 317 – 420 AD = Eastern Jin（東晉）
-* 420 – 589 AD = Southern & Northern Dynasties (南北朝宋) - period of disunity:
-   * 581 – 618 AD = Sui (隋) 37 years
-* 618 – 907 AD = Tang (唐) (golden age)
+
+* 420 – 589 AD = Northern & Southern Dynasties (南北朝宋) period of disunity:
+   * Emperor Xiaowen of Northern Wei - chaotic & Dark "Five Barbarians"
+   * Emperor Wu of Liang in the South refugee haven
+* 581 – 618 AD = 37 year Sui (隋) 1700km Grand canal, civil service
+* 618 – 907 AD = Tang (唐) (supreme global golden age in Xian)
    * 630 = General Li Jing defeats Turks and capture jade held by empress Xiao.
    * 665 - 690 AD ruled by Wu Zetian (only woman empress) renamed jade to Bao (treasure)
-   * 690 – 907 AD ???
-* 907 – 923 AD = <strong>Five Dynasties & Ten Kingdoms</strong> (五代後梁)
+* 907 – 923 AD = 55 yr <strong>Five Dynasties & Ten Kingdoms</strong> (五代後梁) gunpowder invented
 * 923 - 937 AD = Later Tang 後唐 Hòu táng - under Li Cunxu, who set his family on fire in a tower, but the was seal not found, thus lost.
    * 936～946 後晉	
    * 947～950 後漢	
@@ -1200,25 +1204,28 @@ yàng rén = lit. ocean (meaning overseas) people is the more archaic reference 
    * 934～965 後蜀	
    * 937～975 南唐	
    * 951～979 北漢	
-* 907 - 1125 AD 遼建國於西元907年，國號契丹，916年始建年號，937年改國號為遼，983年復稱契丹，1066年仍稱遼。Founded in 907 AD with the state name <strong>Khitan</strong>, then began to use an era name in 916, changed the state name to <strong>Liao</strong> in 937, reverted to Khitan in 983, and was still called Liao in 1066.
-* 960 – 1279 AD = Sòng (宋) = poem - sub-periods:
+   * 907 - 1125 AD 遼建國於西元907年，國號契丹，916年始建年號，937年改國號為遼，983年復稱契丹，1066年仍稱遼。Founded in 907 AD with the state name <strong>Khitan</strong>, then began to use an era name in 916, changed the state name to <strong>Liao</strong> in 937, reverted to Khitan in 983, and was still called Liao in 1066.
+* 960 – 1279 AD = Sòng (宋) = poem. Jiaozi aper money, sub-periods:
    * 960 – 1127 AD = Northern Song（北宋）
    * 1127 – 1279 AD = Southern Song（南宋）
    * 1032 ～ 1227 AD = (西夏)
    * 1115 - 1234 AD = gold (金) 金子 Jīnzǐ
-* 1206 ～ 1367 AD = Yuan (元) <a target="_blank" href="https://www.youtube.com/watch?v=PGM3gmb-Wxo">Mongol empire</a> founded by Temujin Genghis Khan 
-   * 1275 Marco Polo travels from Venice thru China
-   * 1271 – 1368 AD = Kublai Khan establishes the Yuan Dynasty
-   * 1279 - Southern Song Dynasty destroyed
-* 1368 – 1644 AD = Ming (明) = brilliant (centralized Yu Shan Fang)
+* 1271 ～ 1367 AD = Yuan (元) established by <a target="_blank" href="https://www.youtube.com/watch?v=PGM3gmb-Wxo">Kublai Khan of Mongol empire</a> founded by Temujin grandson Genghis Khan 
+   * 1275 Marco Polo travels from Venice thru China on Silk Road
+   * 1279 - Southern Song destroyed by plague, inflation
+* 1368 – 1644 AD = Ming (明) = brilliant (centralized Yu Shan Fang) Peasant Zhu Yuanzhang to Hongwu emporer. Great Wall. Admiral Zheng He's Treasure Ships. Then isolationist
    * 1644 - Prince of Gui killed.
-   * Morphine
-* 1616 - 1911 AD = Qing (清) = pure/clean
+* 1616 - 1911 AD = Qing Ching (清) of Manchus = pure/clean 
    * initially called the Later Jin. 
    * 1636 - Hong Taiji as "Manchu" name to Qing (清)
    * 1644 - enters the Central Plains
-   * https://www.youtube.com/watch?v=B-p0_jdn-hU XiXi buriel site looted by soldier Sung Dung Ying
-   * 1920 https://www.youtube.com/watch?v=THdguXECRCU GuangShu confirmed aresnic
+   * American sweet potatoes & corn 150 mil to 400 mil
+   * <a target="_blank" href="https://www.youtube.com/watch?v=B-p0_jdn-hU">V</a>: XiXi buriel site looted by soldier Sung Dung Ying
+   * 1920 <a target="_blank" href="https://www.youtube.com/watch?v=THdguXECRCU">Son GuangShu confirmed murdered by eunichs with aresnic</a>
+   * Empress dowager dies
+   * Young Pu Yi is Last Emporer 
+   * Morphine from India
+* Century of Humiliation
 
 References:
    * <a target="_blank" href="https://www.youtube.com/watch?v=rNwWFF6DP-I&pp=0gcJCcsLAYcqIYzv" title="30:38">MUST WATCH VIDEO</a> explaining the <a target="_blank" href="https://usefulcharts.com/products/asian-royal-family-trees">PDF</a>: Chinese Emperors Family Tree (by UsefulCharts)
