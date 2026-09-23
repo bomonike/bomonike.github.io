@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-09-10"
-lastchange: "v046 Disneyland @history.md"
+date: "2026-09-23"
+lastchange: "v047 armenia @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -798,6 +798,7 @@ defending Christianity as a "philosophy" worthy of the respect of the educated a
 <br /> 258 Bishop Cyprian, Catholic theologian, martyred
 
 <br /> 293 Diocletian divides Roman Empire in two.
+<br /> 301 Armenia first Christian country by Gregory
 <br /> 303 Severe persecution of the church by Roman emperor Diocletian.
 <br /> 304 Invasion of Huns divide China.
 <br /> October 27, 312 Battle of Rome's Milvain Bridge leads to the succession of Constantine to the throne and conversion to Christianity.
