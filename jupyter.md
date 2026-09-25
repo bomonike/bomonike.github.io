@@ -1,0 +1,680 @@
+---
+layout: post
+date: "2026-09-25"
+lastchange: "v004 +wilsonmar @jupyter.md"
+url: "https://bomonike.github.io/jupyter"
+title: "Jupyter"
+excerpt: "\"Notebooks\" .ipynb files display HTML markup as comments between executable Python code (for Machine Learning and Data Science), for Style Transfer of images, etc."
+tags: [Python, Machine Learning]
+file: "jupyter"
+image:
+# pic silver robot white skin handshake 1900x500
+  feature: https://cloud.githubusercontent.com/assets/300046/14622149/306629f0-0585-11e6-961a-dc8f60dadbf6.jpg
+  credit: 
+  creditlink: 
+comments: true
+created: "2019-12-13"
+---
+<i>{{ page.excerpt }}</i>
+{% include l18n.html %}
+{% include _toc.html %}
+
+The name "Jupyter" comes from the combination of languages Julia, Python, and R (the statistics package).
+
+{% include whatever.html %}
+
+Jupyter is a <strong>web application server</strong> that runs several 
+separate environments (one on each port). It's open-sourced at:
+<ul><a target="_blank" href="https://github.com/jupyterlab/jupyterlab.git">https://github.com/jupyterlab/jupyterlab.git</a></ul>
+
+Each Jupyter notebook contains explanatory text, math equations, code, and visualizations, all in one easily <strong>sharable</strong> document.
+
+Notebooks used to be called "iPython" notebooks before languages other than Python were added.
+
+Internally, Jupyter Notebooks are <strong>JSON formatted</strong> files with the extension <strong>.ipynb</strong>. However, ".txt" is sometimes added for storage within older systems.
+   * PyCharm lets you right-click a Python file and convert it to notebook format.
+   * To covnert .ipynb json to Python code, ???
+   * To run Python code
+   <br /><br />
+Below is a guided learning experience.
+You perform actions in a planned sequence that takes you through various features.
+"PROTIP" tags commentary to highlight ideas probably unique to this website.
+
+## Superceded by Marimo
+
+https://youtube.com/shorts/I5tG453nzvg?si=bflIYbk_T5hagMGB
+Many have switched to Marimo, is reactive and keeps all cells in sync like in other spreadsheets.
+
+<hr />
+
+## Cloud Environments
+
+If all you have is a Chromebook or Raspberry Pi micro, you can still program by accessing cloud-based enviornments:
+
+   * Google's Colab (Colaboratory)</a>
+   * <a target="_blank" href="https://www.kaggle.com/code/jhoward/jupyter-notebook-101">Kaggle</a>
+   * AWS
+
+<hr />
+
+<a name="Colab"></a>
+
+### Cloud Google Colab (Colaboratory)
+
+Google provides a FREE on-line environment with zero configuration:
+
+<a target="_blank" href="https://colab.research.google.com">https://colab.research.google.com</a>
+
+<img width="1436" height="1216" alt="python-colab-welcome-1436x1216" src="https://user-images.githubusercontent.com/300046/136654704-a53200b7-32d7-475d-9964-6dba7a3ecf85.png">
+
+In the above example, data is received from the numpy (np) library's random function, rounded down.
+
+<hr />
+
+### Hands-on Photo Style Transfer
+
+There are other tools that do this.
+But as a practical example of learning about Colab for programming Python Machine Learning, 
+let's do a "style transfer" on a photo file <strong>you provide</strong>:
+
+1. Click on this link to open the "TF-Hub: Fast Style Transfer for Arbitrary Styles.ipynb" within Colab:
+
+   <a target="_blank" href="https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/tf2_arbitrary_image_stylization.ipynb">https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/tf2_arbitrary_image_stylization.ipynb</a>
+
+1. To <strong>Run all</strong> Notebook cells: on a Mac, hold down command + fn to press the "F9".
+
+   For a reminder of that keyboard sequence, click the "Runtime" menu.
+
+1. Press (command+down arrow) to scroll down to the bottom to see the default original, style image, and stylized image:
+
+   ![python-style-transfer-1178x410](https://user-images.githubusercontent.com/300046/136674720-b24e8620-04e8-4d50-bf01-2e6ac002f70f.png)
+
+1. Scroll down past the list of style images and click on each URL to view them.
+
+   The program creates a stylized image for each entry in the "content_url" dictionary.
+
+1. Click the content_name: <strong>sea_turtle</strong> to select another original image.
+1. Click the style_name: <strong>munch_scream</strong> to select another style image.
+
+   ### Style Transfer your picture's URL
+
+1. To run the code block:
+   * click on the rounded arrow or 
+   * Press the Tab key then hold down Shift key to press Return.
+   <br /><br />
+
+1. At the left menu, click "To Run: Load more images" to see where you can add a statement pointing to your own photo.
+
+1. Click on this URL, to go to many websites go to get a URL of a photo based on an email:
+   
+   <a target="_blank" href="https://en.gravatar.com/">en.gravatar.com</a>
+   
+1. Sign in using your WordPress email and password, or sign up and download your photo.
+1. Right-click on the picture you want to use and select <strong>Copy image address</strong>.
+1. Click on the "TF-Hub" tab to return to the Colab.
+
+1. Replace the "grace_hopper" entry with the URL to your picture, for example:
+
+   <pre>grace_hopper='https://en.gravatar.com/userimage/10217204/6f0736298461c359b864b3939db37f8f.jpg',
+   </pre>
+
+1. To <strong>Run all</strong> Notebook cells: on a Mac, hold down command + fn to press the "F9".
+
+1. Select a different style_name and rerun to see a new stylized image.
+1. When you see a stylized image you like, right-click on the picture and Save Image As... download.jpg in your Downloads folder:
+   
+   <img width="1013" alt="jupyter-amadeo-2026x698" src="https://user-images.githubusercontent.com/300046/136677101-fcc3dc9c-0620-4bc3-91c6-3146c424bafb.png">
+
+   Admittedly, the pictures are not high resolution.
+
+1. Now edit that picture and share it.
+
+
+### Sample Notebook files in Colab
+
+Navigate to a URL containing Jupyter Notebook files:
+
+* Sample Notebook code with "Open in Colab" are in Noah Gift's "Minimal Python" book:
+   <a target="_blank" href="https://github.com/paiml/minimal-python/blob/master/Chapter1_Minimal_Python.ipynb">https://github.com/paiml/minimal-python/blob/master/Chapter1_Minimal_Python.ipynb</a>
+
+* <a target="_blank" href="https://github.com/jakevdp/PythonDataScienceHandbook">https://github.com/jakevdp/PythonDataScienceHandbook</a>
+
+* <a target="_blank" href="https://www.eecis.udel.edu/~boncelet/ipython.html">https://www.eecis.udel.edu/~boncelet/ipython.html</a>
+
+* <a target="_blank" href="https://github.com/odewahn/ipynb-examples">https://github.com/odewahn/ipynb-examples</a>
+
+* <a target="_blank" href="https://github.com/ogrisel/notebooks">https://github.com/ogrisel/notebooks</a>
+
+* <a target="_blank" href="https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html">
+   analysis of gravitational waves from two colliding blackholes detected</a>
+   by the LIGO experiment. 
+
+* <a target="_blank" href="https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5892be63_sentiment-network/sentiment-network.zip">
+   Sentiment-network.zip</a> from 
+   Andrew Trask contains notebooks for sentiment analysis.
+
+### Browser configuration on your laptop
+
+For possible offline access (on a cruise ship, a railcar through the wilderness, at the beach, etc.):
+
+1. PROTIP: Set Chrome as your default browser.
+
+   REMEMBER: Jupyter's <a href="#CommandPalette">Command Palette</a> does not work in Firefox and Internet Explorer, only in Chrome and Apple Safari.
+
+   ### Jupyter notebook and session files
+
+1. Make a container folder (directory) to hold Jupyter <strong>session files</strong>. 
+
+   This is done automatically by doing a git clone.
+
+1. Download a Jupyter Notebook file into your folder.
+
+   You may have to move downloaded files from your Downloads folder.
+
+   ### Ignore checkpoints on push
+
+1. Edit the <tt>.gitignore</tt> file to add <tt>.ipynb_checkpoints/</tt> so that such folders created automatically are not uploaded into the GitHub repository.
+
+1. <a href="#RunNotebook">run a notebook</a>.
+
+<hr />
+
+https://mljar.com/blog/run-jupyter-notebook-command-line/
+
+
+## Server Installation
+
+The canonical <a target="_blank" href="https://jupyter.org/install">https://jupyter.org/install</a> and <a target="_blank" href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">Installation Guide</a> says
+JupyterLab can be <a href="#ManualInsta">manually installed using conda or pip, described below</a>.
+
+However, you will find it easier to use the Docker image defined at <a target="_blank" href="https://github.com/jupyter/docker-stacks">https://github.com/jupyter/docker-stacks</a>. See <a target="_blank" href="
+https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html">https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html</a>
+
+Even better, the easiest approach is to use my Bash script at bash/bash-sample.sh
+
+   https://github.com/wilsonmar/DevSecOps 
+
+<hr />
+
+<a name="jax"></a>
+
+### jax
+
+tbd.
+
+<a name="jupytext"></a>
+
+### jupytext
+
+* To create a .ipynb file based on the name of your .py file:
+   ```
+   pip install jupytext
+   jupytext --to notebook your_script.py
+   ```
+
+   See https://jupytext.readthedocs.io/en/latest/using-cli.html
+
+   This creates the .ipynb file and for an additional bonus keep it synchronized to the .py file:
+   ```
+   jupytext --set-formats ipynb,py your_script.ipynb --sync
+   ```
+
+* To convert to .ipynb within a Python program, use William James Handley's py2nb library (https://github.com/williamjameshandley/py2nb):
+   ```
+   import py2nb
+   py2nb.convert('your_script.py')
+   ```
+
+* This converts "main comments" (i.e. starting with '#' and no leading space) to MarkDown cells, and assigned each function definition to a dedicated cell. 
+   ```
+   pip install p2j
+   p2j your_script.py
+   ```
+
+<a name="ipykernel"></a>
+
+## ipykernel
+
+For a newer but more complex user interface to jupyter notebook:
+
+<tt><strong>python -m ipykernel install --user --name=python3
+jupyter lab
+</strong></tt>
+
+
+<a name="Runipy"></a>
+
+## Runipy
+
+On a Mac:
+1. git clone the repo containing an .ipynb file.
+
+1. To install the server:
+
+   <pre><strong>uv pip install runipy</strong></pre>
+
+1. Run a script using runipy:
+
+   <pre><strong>runipy -o MyNotebook.ipynb</strong></pre>
+
+   <tt>-o</tt> saves the output of each cell back to the notebook file.
+
+   Alternately, generate a HTML report:
+
+   <pre><strong>runipy MyNotebook.ipynb --html report.html</strong></pre>
+
+   https://pypi.python.org/pypi/runipy
+
+
+### nbconvert
+
+1. Use the command that comes with jupyter server to open the notebook, execute it, capture new output, and save the result in mynotebook.nbconvert.ipynb:
+
+   <tt><strong>jupyter nbconvert --to notebook --execute mynotebook.ipynb --output mynotebook.ipynb</strong></tt>
+
+   Alternately, to continue execution despite exceptions:
+
+   <tt>jupyter nbconvert --to notebook --execute --allow-errors --ExecutePreprocessor.timeout=180 mynotebook.ipynb</tt> 
+
+   --inplace
+
+1. For more:
+
+   http://nbconvert.readthedocs.io/en/latest/usage.html#convert-notebook 
+
+
+<a name="ManualInsta"></a>
+<a name="JupyterLab"></a>
+
+### Local Jupyter lab
+
+1. Navigate to the folder where you want to run .ipynb files, such as:
+
+   <tt>github_wilsonmar/python-samples</tt>
+
+1. On a Mac: if you use pipenv, install using that. Otherwise:
+
+   <pre><strong>uv venv
+   source .venv/bin/activate
+   uv pip install jupyterlab
+   </strong></pre>
+   
+   This adds a bunch of "jupyter" files in the <tt>/bin</tt> folder.
+   
+1. In a Terminal window
+
+   <pre><strong>jupyter lab</strong></pre>
+
+   The command opens a tab in the default internet browser to:
+
+   <tt>http://localhost:8888/lab</tt>
+
+1. To shut down the server, on the Terminal CLI, press control + C twice.
+
+
+### Config
+
+1. Edit <tt>~/.bash_profile</tt> to make sure the <tt>/bin</tt> folder is in the PATH.
+
+   <pre>export PATH="$PATH:/bin"  # for /bin/jupyter</pre>
+
+   One may already be there for other apps.
+
+   <a name="AfterInsta"></a>
+
+   ### After install: Add themes
+
+   <a target="_blank" href="https://github.com/dunovank/jupyter-themes">https://github.com/dunovank/jupyter-themes</a>
+
+   ### Use within VSCode
+
+   Jupyter works great within VSCode.
+
+   See https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+
+
+
+   <a name="JupyterNotebook"></a>
+
+### Start Jupyter GUI server
+
+1. To run a specific .pynb file:
+
+   <pre><strong>jupyter notebook --port 8888 notebook1.ipynb
+   </strong></pre>
+
+   A "&" is added to the end of the command above to run the server in background 
+   so that additional bash commands can execute (such as identifying the process number and cleaning up after <a href="#Shutdown">shutdown</a>).
+
+   The command above creates a (hidden) file <strong>.jupyter</strong> in your home folder, invokes a web server locally, and automatically pops up to your default browser a tab with url:
+
+   http://localhost:8888/tree
+
+   Alternately, to start without a web browser:
+
+   <pre>jupyter notebook --no-browser</pre>
+
+   The command response briefly shows a process number:
+
+   <pre>[1] 2809</pre>
+
+   If the command is run again on another Terminal, additional Notebook servers are invoked with the port number incremented from 8888.
+
+
+   <a name="Shutdown"></a>
+
+   ### Shutdown jupyter server
+
+   If the server was started in background, you can't shutdown the server from Terminal by pressing control + C twice. You would need to run (such as):
+   
+   <pre><strong>kill -9 2809</strong></pre>
+
+<hr />
+
+<a name="RunNotebook"></a>
+
+## Run Notebook UI
+
+<a target="_blank" href="https://jupyter.readthedocs.io/en/latest/running.html">
+https://jupyter.readthedocs.io/en/latest/running.html</a>
+
+1. If Jupyter was started without specifying a Notebook file, you would see a tree listing.
+
+1. Click a link to a <tt>.ipynb</tt> (Notebook) file listed, to see it's code.
+
+1. PROTIP: You can press the "Run" icon to run a single step. However,
+those familiar with the file can press the ">>" button to run all <strong>cells (steps)</strong> in the file.
+
+   Each invocation opens a new browser window.
+
+   <a name="CommandPalette"></a>
+
+   ### Keyboard Command Palette of shortcuts
+   
+   NOTE: This does not work in Firefox and Internet Explorer,
+   only in Chrome and Apple Safari.
+
+1. When in command mode, click the little keyboard icon, 
+   called the "command palette". 
+
+   A panel appears with a search bar.
+
+1. Press down arrow to scroll down.
+
+   Keyboard shortcuts are on the right side.
+
+1. Enter a command to search for. 
+   Helpful for speeding up your workflow instead of looking around in the menus with your mouse. 
+
+   See <a target="_blank" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a>
+
+1. Press Esc key.
+
+   ### Run All Cells
+
+1. Click "Cell" in the menu and select "Run All":
+
+   <img width="204" alt="jupyter-cell-menu-408x584" src="https://user-images.githubusercontent.com/300046/70852946-d954d600-1e64-11ea-8e50-f5db438a747f.png">
+
+
+   ### Kernel
+
+   Alternately, select the Kernel menu "Restart and Run All":
+   
+   ![jupyter-kernel-menu-179x232](https://user-images.githubusercontent.com/300046/70844899-3a4cc180-1e05-11ea-89b2-5adbbd90d7d4.jpg)
+
+   DEFINITION: A "kernel" is each web page (window).
+
+1. Create a <strong>kernel</strong> by clicking on the New drop-down
+   and selecting one.
+
+1. Click on tab <strong>File</strong> to show all the 
+   files and folders in the current directory. 
+
+1. Click Open.
+
+1. List all the currently running notebooks
+   by clicking on the Running tab.
+
+1. Select "Python [Conda root]" for a new window (with tabs).
+
+   <img width="572" alt="jupyter types" src="https://cloud.githubusercontent.com/assets/300046/22410989/e736a9de-e66c-11e6-90b2-44cb322a5066.png">
+
+   CAUTION: Just closing the browser leaves a kernel running.
+
+1. To close and halt the kernel, select File, then
+   Close and Halt.
+
+
+   ### Conda
+
+1. cd to the folder containing the Jupyter notebook above.
+
+1. A) Create a conda environment based on the requirements file:
+
+   <pre>conda install --file requirements.txt</pre>
+
+   B) Create a stand-alone environment named PDSH with Python 3.5 and all the required package versions:
+
+   <pre><strong>conda create -n PDSH python=3.5 --file requirements.txt
+   </strong></pre>
+
+1. Source activate the conda environment.
+
+1. Install packages from within the Conda environment:
+
+   conda install jupyter notebook numpy matplotlib scikit-learn bokeh
+
+
+   ### Editing
+
+1. Click on the Edit tab.
+
+   NOTE: Cells are where code is written and run. 
+
+   Several of the selections have an icon equivalent.
+
+1. Press Esc key.
+
+1. Each cell can be changed by just clicking on it.
+
+   When the thick left border on a box is colored <strong>green</strong>,
+   the box is in <strong>edit mode</strong>.
+  
+   If you don't see a blinking cursor in the cell, click in the cell.
+
+1. To exit from edit mode to display mode, hold down Shift and press
+   Enter. 
+   
+
+   ### Command mode
+
+   When a new cell is created, it is in command mode. 
+
+   When the thick left border on a box is colored <strong>blue</strong>,
+   the box is in <strong>command mode</strong>. 
+
+   When the bar is blue, press H for a help screen
+   about Keyboard shortcuts. It reads:
+
+   "Command mode binds the keyboard to notebook level actions."
+
+   When the bar is blue, press A to create a new cell.
+
+   press B to create a cell below the currently selected cell.
+
+
+   ### Python Code
+
+1. Click on the "Code" drop-down, which specifies what is 
+   typed in the cell (input box).
+
+1. Select Markdown to format syntax for writing web content.
+
+1. Type in some markdown text. See
+
+   <a target="_blank" href="https://daringfireball.net/projects/markdown/basics">https://daringfireball.net/projects/markdown/basics</a>
+
+   <a target="_blank" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a>
+
+   REMEMBER: Two dollar signs begin and end math entries.
+
+1. To <strong>run</strong> the cell, click the >| icon 
+   (used to mean forward to the end) or
+   press Shift + Enter or Control + Enter to run the Markdown cell.
+
+
+   ### Heading
+
+1. Click the up/down arrows to position the cell
+   above or below existing runned lines.
+
+1. Select Heading and add a # to reduce the level
+   before typing heading text.
+
+   ### Open and Rename Notebook
+
+1. Click Files tab.
+1. Click Open.
+
+   Select _____???
+
+1. Click the checkbox to the right of the file name.
+1. Click the Rename button.
+1. Remove the ".txt" and press OK.
+1. Click on the file name itself to open the file.
+
+   A new tab should appear.
+
+
+   ### Timings
+
+   To get the number of milliseconds a function took to run,<br />
+   put <strong>%timeit</strong> in front of commands to invoke.
+
+   To get the number of seconds it took for a cell to run,<br />
+   put <strong>%%timeit</strong> at the top of the cell.
+
+
+   ### Debugging
+
+   <strong>%pdb</strong> at the top of the cell turns debugging on.
+
+   <a target="_blank" href="https://docs.python.org/3/library/pdb.html">https://docs.python.org/3/library/pdb.html</a>
+
+
+   ### Visualization magic keywords
+
+   <strong>%matplotlib inline</strong>
+
+   See <a target="_blank" href="http://ipython.readthedocs.io/en/stable/interactive/magics.html">http://ipython.readthedocs.io/en/stable/interactive/magics.html</a>
+   for docs about magic commands.
+
+   ### nbextensions
+
+1. Code to dynamically loaded:
+
+   <pre><strong>%%javascript
+IPython.load_extensions('custom_shortcuts');
+   </strong></pre>
+
+   See <a target="_blank" href="https://carreau.gitbooks.io/jupyter-book/content/Jsextensions.html">https://carreau.gitbooks.io/jupyter-book/content/Jsextensions.html</a>
+
+
+   ### Raw NBConvert
+
+   NBConvert code modify the UI and behavior of Jupyter itself on the browser.
+
+   So Jupyter notebook extensions are written in javascript and CSS. 
+
+   nbextensions are installed in the directory of the same name, 
+   either system wide or in your user profile.
+   Their entry point is named <em>extensionname</em>.js
+
+
+   ### Output as HTML
+
+1. To share a Notebook with others who do not have Notebook installed,
+   convert the Notebook to HTML or Markdown. 
+
+   PROTIP: Some prefer receiving Markdown text so they paste in blog editing software which formats the Markdown to their own liking.
+
+   <pre><strong>jupyter nbconvert --to html notebook.ipynb
+   </strong></pre>
+
+   See <a target="_blank" href="https://nbconvert.readthedocs.io/en/latest/usage.html">https://nbconvert.readthedocs.io/en/latest/usage.html</a>
+
+   See <a target="_blank" href="https://ipython.org/ipython-doc/1/interactive/nbconvert.html#notebook-format">https://ipython.org/ipython-doc/1/interactive/nbconvert.html#notebook-format</a>
+
+   ### GitHub
+
+   <a target="_blank" href="https://github.com/blog/1995-github-jupyter-notebooks-3">https://github.com/blog/1995-github-jupyter-notebooks-3</a>
+   GitHub renders Jupyter Notebooks
+   with
+   Git Large File Support.
+
+
+   ### NBViewer
+
+   <a target="_blank" href="http://nbviewer.jupyter.org/">http://nbviewer.jupyter.org</a>
+   renders notebooks from a GitHub repo or from notebooks stored elsewhere.
+
+
+   ### Pandas Slideshows
+
+1. Click the View tab.
+
+   See http://nbviewer.jupyter.org/format/slides/github/jorisvandenbossche/2015-PyDataParis/blob/master/pandas_introduction.ipynb#/
+
+
+## Turi (Dato) Python algorithms #
+
+<a target="_blank" href="https://dato.com/products/create/">
+GraphLab Create</a> from Dato is no longer available since Dato was sold
+and an unrelated entity now uses their domain name.
+
+It provided scalable "pre-implemented" ML algorithms 
+using Python installed using Anaconda.
+Entire courses on its use is at:
+
+   * https://www.coursera.org/learn/ml-foundations
+   * https://www.turi.com/learn/userguide/
+   * https://www.turi.com/products/create/docs/
+   * https://github.com/learnml/machine-learning-specialization
+   * https://www.coursera.org/learn/ml-clustering-and-retrieval/supplement/iF7Ji/software-tools-you-ll-need-for-this-course
+
+When the one-year free license is over, note
+scikit-learn also uses Python with Anaconda.
+
+https://www.youtube.com/watch?v=GxZUdZMPGpQ
+Large-Scale Deep Learning with TensorFlow
+Turi, Inc.
+
+## References
+
+This is based on tutorials from several sources:
+
+   <a target="_blank" href="https://www.youtube.com/watch?v=HW29067qVWk">
+   Jupyter Notebook Tutorial: Introduction, Setup, and Walkthrough</a>
+
+
+### Additional
+
+   Clusters is not longer used to create multiple kernels used in parallel computing.
+
+   <a target="_blank" href="https://ipyparallel.readthedocs.io/en/latest/intro.html">https://ipyparallel.readthedocs.io/en/latest/intro.html</a>
+
+   <a target="_blank" href="https://bcourses.berkeley.edu/courses/1267848">
+   Introduction to Data Science</a>
+   at UC Berkeley
+
+   <a target="_blank" href="http://proquest.safaribooksonline.com/9781449323592">
+   Python for Data Analysis</a> (Safari books online)
+   by Wes McKinney
+
+
+## More about Python
+
+This is one of a series about Python:
+
+{% include python_links.html %}
