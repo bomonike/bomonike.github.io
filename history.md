@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-09-23"
-lastchange: "v047 armenia @history.md"
+date: "2026-09-26"
+lastchange: "v048 japan perry @history.md"
 url: https://bomonike.github.io/history
 file: "history"
 title: "(Dates in) History"
@@ -1180,11 +1180,12 @@ Laodicea in <a target="bible" href="https://www.blueletterbible.org/kjv/rev/3/14
 <br /> 1848 Gold discovered at Sutter's Mill (Sacramento, CA)
 <br /> 1850 U.S. Congress passed the Fugitive Slave Law. The Underground Railroad is formed in response.
 <br /> 1853-1856 Crimean War in the Black Sea. Turkey, Britain, France, and Sardinia fight Russia.
-<br /> 1853 American Admiral Matthew Perry's black ships (kunefune) enter forbidden Tokyo Bay to demand terms.
-<br /> Feb. 1854 Perry returns to demand regulated trade with Japan
-<br /> 1858 The 15th shogunate steps down in Japan.
+<br /> July 8, 1853 American president Millard Filmore's envoy Admiral Matthew Perry's 4 black steam ships (kunefune) enter Edo Tokyo Bay to demand terms in Dutch due to Sekuku isolation since 1639. <a target="_blank" href="https://www.youtube.com/watch?v=Mq1A7lBaS_c">VIDEO</a>
+<br /> March 8, 1854 Perry returns with 9 ships to demand regulated trade with Japan in Treaty of Kenegawa
+<br /> 1858 The 15th shogunate Tokugara lemochi steps down in Japan.
 <br /> Jan 1, 1859 - First Modified Julian Date
 <br /> 1859 Darwin publishes The Origin of Species with forward by Karl Marx
+<br /> 1860 96 Japan purchase a Dutch warship Kanrin Maru to visit San Francisco. https://www.youtube.com/watch?v=IvPxCuIspWs
 <br /> Apr. 12, 1861 Charleston's Fort Sumter in S.C. starts the American Civil War.
 <br /> October 24, 1861 Western Union completes the transcontinental telegraph service
 <br /> July 21, 1861 Confederates under Irvin McDowell lose at the first Battle of Bull Run.
