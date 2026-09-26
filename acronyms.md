@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-18"
-lastchange: "v110 ROAS @acronyms.md"
+date: "2026-09-25"
+lastchange: "v111 HAL @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -603,6 +603,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	H2M	=	Human to Machine	(interface)
 *	HA	=	High Availability
 *	HADR	=	High Availability	Disaster Recovery
+* HAL = Heuristically-programmed Alogorithmic Computer (in movie 2001)
 * HAL = Hardware Abstraction Layer
 * HAML = HTML Abstraction Markup Language (a template used in Ruby Rails views to simplify writing HTML)
 *	HANA	=	High-performance ANalytic Application	(SAP's in-memory column-oriented relational DBMS)
