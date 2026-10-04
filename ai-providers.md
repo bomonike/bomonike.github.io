@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-17"
-lastchange: "v045 firewall @ai-providers.md"
+date: "2026-10-04"
+lastchange: "v047 apple @ai-providers.md"
 url: "https://bomonike.github.io/ai-providers"
 file: "ai-providers"
 title: "AI Providers"
@@ -42,6 +42,8 @@ toward a "winner take all" dominance.
 <tr valign="top"><td>US</td><td>Google</td><td>Gemini</td><td><a target="_blank" href="https://www.youtube.com/watch?v=nov9uoIQt6g&pp=ugUEEgJlbg%3D%3D">Remy, Antigravity IDE</a></td></tr>
 <tr valign="top"><td>US</td><td>IBM</td><td>granite</td></tr>
 <tr valign="top"><td>-</td><td>Jina</td><td>-</td></tr>
+<tr valign="top"><td>US</td><td>Proton</td><td>Lumo</td></tr>
+<tr valign="top"><td><a target="_blank" href="https://lumo.proton.me/guest">WebChat</a></td><td>-</td><td><a target="_blank" href="https://www.youtube.com/watch?v=5RIQw_Fdxzg">VIDEO</a>: privacy1</td></tr>
 <tr valign="top"><td>-</td><td><a target="_blank" href="https://leonardo.ai">Leonardo.ai</a></td><td>-</td><td>img & video gen using Alibaba's video model</td></tr>
 <tr valign="top"><td>US</td><td>Meta</td><td>Llama, <a href="#Muse">Muse Spark</a></td><td>Instagram</td></tr>
 <tr valign="top"><td>US</td><td>Microsoft</td><td>Phi</td></tr>
@@ -59,7 +61,7 @@ toward a "winner take all" dominance.
 <tr valign="top"><td>China</td><td>Tencent</td><td>Hy3</td></tr>
 <tr valign="top"><td>-</td><td>Together.ai</td><td>-</td></tr>
 <tr valign="top"><td>US</td><td>Starlink(xAI)</td><td><a href="#Grok">Grok</a></td></tr>
-<tr valign="top"><td>US</td><td><a target="_blank" href="https://mimo.xiaomi.com/">Xiaomi</a></td><td><a target="_blank" href="https://mimo.xiaomi.com/index#blog">mimo</a></a></td></tr>
+<tr valign="top"><td>US</td><td><a target="_blank" href="https://mimo.xiaomi.com/">Xiaomi</a></td><td><a target="_blank" href="https://mimo.xiaomi.com/index#blog">mimo</a></td></tr>
 <tr valign="top"><td>China</td><td><a target="_blank" href="https://www.z.ai/">Z.Ai (Zhipu)</a></td><td>glm</td><td><a target="_blank" href="https://chat.z.ai/">Webchat</a></td></tr>
 </table>
 
@@ -138,13 +140,79 @@ There are now <a target="_blank" href="https://pinggy.io/blog/best_ai_llm_router
 <br /><br />
 
 
+<a name="Apple"></a>
+
+## Apple foundation model
+
+<a target="_blank" href="https://www.youtube.com/watch?v=c2DoWnnK8eQ/">VIDEO</a>: In MacOS 27 Golden Gate launched on September 28, 2026, Apple provides its own 3-billion-parameter foundation model LLM and the "fm" CLI to process AI on-Device AI.
+is considered tiny context for slow response text-only processing.
+
+1. <a target="_blank" href="https://www.macworld.com/article/673697/what-version-of-macos-can-my-mac-run.html">macOS compatibility checker</a>. machines from 2019.
+   All M-series Macs are compatible with Apple Intelligence-powered features. AI-powered Siri voice features, such as more expressive voice and advanced dictation, require M3 and at least 12GB RAM.
+
+1. Upgrade to Golden Gate
+1. Agree to terms:
+   ```
+   sudo fm license
+   ```
+   Response "command is not found", you're likely not upgraded to v27.
+
+1. For a list of commands & examples:
+   ```
+   fm
+   ```
+   <pre>
+   Apple Foundation Models CLI
+   &nbsp; 
+   USAGE
+     % fm <command> [options]
+   &nbsp; 
+   COMMANDS
+       available     Check model availability                               ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠛⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+       chat          Start an interactive chat session                      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣿⡀⠀⢀⣽⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+       count-tokens  Count tokens in a prompt or instructions               ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⠴⠚⠋⢁⡼⠛⠛⠛⢧⡈⠙⠓⠦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+       license       Show and agree to the Legal Notice & Terms             ⢠⡶⠒⠲⣦⣠⡴⠞⠋⠉⠀⠀⠀⣴⠟⠀⠀⠀⠀⠀⠹⣆⠀⠀⠀⠈⠙⠲⠦⣄⣠⠖⠒⢦⡀
+       respond       Generate a response to a prompt                        ⢿⡀⠀⠀⣸⣇⠀⠀⠀⠀⠀⣠⡾⠁⠀⠀⠀⠀⠀⠀⠀⠈⢳⡄⠀⠀⠀⠀⠀⣨⣇⠀⠀⢀⡿
+       schema        Generate a structured output generation schema         ⠈⠛⠲⠚⢿⡍⠙⠳⢦⣤⣴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣦⣠⠴⠖⠋⢁⡽⠓⠒⠋⠁
+       serve         Start a Chat Completions API server                    ⠀⠀⠀⠀⠀⠹⣦⡀⣠⠟⠉⠛⠲⢦⣄⣠⡴⠶⢦⣄⣠⡤⠖⠛⠉⠳⣄⠀⣴⠋⠀⠀⠀⠀⠀
+                                                                            ⠀⠀⠀⠀⠀⠀⢈⣿⣏⠀⠀⠀⠀⠀⢈⣿⠀⠀⠀⣿⡁⠀⠀⠀⠀⠀⣸⣿⡁⠀⠀⠀⠀⠀⠀
+    MODELS                                                                 ⠀⠀⠀⠀⠀⣴⠟⠀⠙⣧⣀⣤⠶⠚⠋⠙⠳⠶⠞⠋⠙⠓⠦⣤⣀⡴⠋⠀⠹⣄⠀⠀⠀⠀⠀
+       system        On-device Apple Foundation Model (default)             ⢀⣤⠶⢦⣾⣃⣤⡴⠞⠋⠻⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⠙⠒⠦⣄⡈⣳⡤⠤⢤⡀
+                                                                            ⣿⠁⠀⠀⢹⡏⠀⠀⠀⠀⠀⠙⢷⡀⠀⠀⠀⠀⠀⠀⠀⢀⡾⠃⠀⠀⠀⠀⠀⢉⡏⠀⠀⠀⡷
+    EXAMPLES                                                               ⠘⠷⠦⠶⠟⠙⠳⢦⣤⣀⠀⠀⠀⠻⣦⠀⠀⠀⠀⠀⣴⠏⠀⠀⠀⣀⣠⠴⠒⠋⠙⠦⠤⠞⠁
+       % fm respond 'What is Swift?'                                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠲⢦⣄⡈⢳⣤⠤⣤⡞⢁⣠⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
+       % fm respond --stream 'Summarize this article'                       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣿⠁⠀⠈⣻⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+       % fm chat --instructions 'You are a coding assistant'                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⣤⠴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+       % fm count-tokens 'Hello world'
+       % fm schema object --name Person --string name --int age
+   &nbsp;   
+      Run 'fm <em>command</em> --help' for more information on a command.
+   </pre>
+1. For a list of commands & examples:
+   ```
+   fm count-tokens 'hello world'
+   ``` 
+1. fm chat --instructions "You are a coding assistant"
+1. 'what time is it in madrid, spain'
+   no real-time data.
+
+1. For 
+   ```
+   fm respond --instructions 'summarize this text'
+   ``` 
+1. For 
+   ```
+   fm respond --instructions 'extract unique entities and output JSON'
+   ``` 
+
+
+
 <a name="Claude"></a>
 
 ## Anthropic's Claude
 
 I have an entire <a target="_blank" href="https://bomonike.github.io/anthropic-claude/">
 section to Anthropic and its Claude technologies</a>.
-
 
 <a name="Grok"></a>
 
