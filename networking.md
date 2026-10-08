@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-08-08"
-lastchange: "v017 acl jake's tech labs switches @networking.md"
+lastchange: "v018 cabling flag @networking.md"
 url: "https://bomonike.github.io/networking"
 file: "networking"
 title: "Networking Certifications"
@@ -70,10 +70,10 @@ The transition from v1.1 to v2.0 announced May, 2026 for Feb 3, 2027 release.
    * @certskills <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=iSI0y6a5JMM&pp=ugUHEgVlbi1VUw%3D%3D">VIDEO</a>: v2.0 Blueprint by <a target="_blank" rel="noopener noreferrer" href="https://linktr.ee/Wendello">Wendello</a>
    <br /><br />
 
-https://www.youtube.com/watch?v=Xw02nLyW-q4
+<a target="_blank" href="https://www.youtube.com/watch?v=Xw02nLyW-q4">VIDEO</a>: 
 CCNA 2.0 performance labs: How to pass the new hands-on questions
 
-https://www.youtube.com/watch?v=P6NdB2vj6Ng&pp=ugUHEgVlbi1VUw%3D%3D
+<a target="_blank" href="https://www.youtube.com/watch?v=P6NdB2vj6Ng&pp=ugUHEgVlbi1VUw%3D%3D">VIDEO</a>:
 CCNA v2.0 Announced: Your Iterim Study Plan & Timeline...
 by Wendell Odem
 
@@ -113,10 +113,10 @@ free, formatted well.
 <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=4S_pKcKQfWc&pp=ugUEEgJlbg%3D%3D">
 @DavidBombal -  Use AI to study CCNA</a> with Kareem Iskander of Cisco Apr 2026 talking about CML (Cisco Modeling Labs) 
 Cisco’s official network emulation platform (created by Joe) where you build live topologies with real Cisco images via a web UI.
-https://blogs.cisco.com/learning/the-peloton-approach-to-ccna-exam-success
+<a target="_blank" href="https://blogs.cisco.com/learning/the-peloton-approach-to-ccna-exam-success">BLOG</a>
 
    I am a CCNA exam candidate, and I am bulding a hands-on discovery lab to practice for the exam using the CCNA blueprint. Here are the steps I want to take:
-   1. Create a hands-on lab task based on the CCNA blueprint here: https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf
+   1. Create a hands-on lab task based on the CCNA Exam v1.1 (200-301)Blueprint here: https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf
    2. Only have at most **One** related Task, provide enough infromation to complete the task without giving away the answers
    3. Create a new CML lab for this lab and provide the instructions for what i need to perform as lab notes. Note: lab notes can make use of markdown for richer text.
    4. Create the lab topology in CML using CML Free version. Only Use IOL, IOL-L2, ASAv Desktop, Server, unmanaged switches, and external connectors. Do NOT use IOSv or IOSv-L2. Note: unmanaged switches and external connectors do not count as nodes when considering the maximum of five. Do not create the full topology right away.
@@ -155,6 +155,7 @@ https://learn.flackbox.com/courses/enrolled/793825
    1. https://github.com/GNS3/gns3-gui/releases/tag/v2.0.3 (Assets not the latest)
       https://learn.flackbox.com/courses/227187/lectures/3535851
       * Start GNS3 Installation and Configuration (17:06 )
+      * https://www.gns3.com/software/download
    REMEMBER: The app is within a folder of the same name.
    Each install of a version is another file. 
    * Cisco Packet Tracer 9.0.0
@@ -2088,6 +2089,52 @@ PCAP diagram file library
 
 https://www.youtube.com/watch?v=eCVeoNpXPTo&pp=ugUHEgVlbi1VUw%3D%3D
 SOC Interview: I ask candidates this one WireShark question
+
+
+## Cabeling Capabilities
+
+About that USB-C cable you are holding:
+   * Can it be used for fastest data transfer with a fast USB drive?
+   * Is it a Thunderbolt cable?
+   * What charging wattage is too much for it?
+
+PROTIP: Write the above specs on a small paper and wrap it around each cable like a flag. 
+
+Identifying the exact data transfer speed, charging wattage, and protocol capabilities of a generic USB-C cable via software is notoriously difficult because many passive USB-C cables (under 5A) lack internal <strong>E-Marker chips</strong> that communicate their full limits to the operating system. 
+
+However, macOS can provide details if you are using an active cable, a Thunderbolt cable, or connecting a high-speed peripheral.
+
+Does your mac have Thunderbolt/USB4 devices?
+1. In Terminal:
+   ```
+   system_profiler SPUSBDataType
+   ```
+   If a GUI appears, look at the "Speed" entry under your connected device to see what data rate (e.g., Up to 5 Gb/s, 10 Gb/s, 40 Gb/s) the cable and device are successfully negotiating.
+1. In Terminal from any working director:
+   ```
+   brew install --cask darrylmorley/whatcable/whatcable
+   ```
+   Installs to '/Users/johndoe/Applications/WhatCable.app'
+1. cd to that folder or on Terminal:
+   ```
+   open -a WhatCable.app
+   ```
+   Click "Open" pop-up, "Get Started".
+1. Connect your USB-C cable to your Mac. For the most accurate reading, connect the other end to a device like a charger, SSD, or monitor.
+
+1. Check the Menu Bar: Click the WhatCable icon in your menu bar to see a summary. Click "Show technical details" for deeper information like supported Power Delivery profiles and the cable's Vendor ID.
+
+1. Remove
+   ```
+   brew remove --cask darrylmorley/whatcable/whatcable
+   ```
+
+
+
+1. Click the Apple menu () in the top-left corner and select "About This Mac".
+1. Click "More Info..." (or System Report... depending on your macOS version).
+1. In the sidebar, look under Hardware and select Thunderbolt / USB4 or USB.
+1. Click on the connected device or port to see if macOS detects a Thunderbolt 3/4/5 link speed (e.g., 20 Gbps or 40 Gbps) or maximum power delivery.How to verify: If your cable supports high-speed data or Thunderbolt, you will see specific speeds or controller details listed under that port.
 
 
 ## References
