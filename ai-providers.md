@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-10-04"
-lastchange: "v047 apple @ai-providers.md"
+date: "2026-10-08"
+lastchange: "v048 apple fm @ai-providers.md"
 url: "https://bomonike.github.io/ai-providers"
 file: "ai-providers"
 title: "AI Providers"
@@ -28,7 +28,7 @@ toward a "winner take all" dominance.
 <tr valign="top"><td>-</td><td>aion-labs</td><td>aion-2.0</td></tr>
 <tr valign="top"><td>US</td><td>Amazon</td><td>Nova</td></tr>
 <tr valign="top"><td>US</td><td>Anthropic</td><td><a target="_blank" href="https://bomonike.github.io/anthropic-claude/">Claude</a></td><td><a target="_blank" href="https://claude.ai/new">WebChat</a></td></tr>
-<tr valign="top"><td>US</td><td>Apple</td><td>MM1, ReALM</td></tr>
+<tr valign="top"><td>US</td><td>Apple</td><td>MM1, ReALM</td><td><a href="#Apple">fm CLI</a></td></tr>
 <tr valign="top"><td>China</td><td>Baidu</td><td>Ernie</td></tr>
 <tr valign="top"><td>China</td><td>Bytedance</td><td>seed</td></tr>
 <tr valign="top"><td>China</td><td>Cerebras</td><td>-</td></tr>
@@ -144,8 +144,7 @@ There are now <a target="_blank" href="https://pinggy.io/blog/best_ai_llm_router
 
 ## Apple foundation model
 
-<a target="_blank" href="https://www.youtube.com/watch?v=c2DoWnnK8eQ/">VIDEO</a>: In MacOS 27 Golden Gate launched on September 28, 2026, Apple provides its own 3-billion-parameter foundation model LLM and the "fm" CLI to process AI on-Device AI.
-is considered tiny context for slow response text-only processing.
+<a target="_blank" href="https://www.youtube.com/watch?v=c2DoWnnK8eQ/">VIDEO</a>: In MacOS 27 Golden Gate <a target="_blank" href="https://developer.apple.com/videos/play/wwdc2026/334/">launched on September 28, 2026</a>, Apple provides its own 3-billion-parameter foundation model LLM accessed by Apple's "fm" CLI and Python SDK to process AI on-Device AI. The LLM is considered tiny context for slow response text-only processing.
 
 1. <a target="_blank" href="https://www.macworld.com/article/673697/what-version-of-macos-can-my-mac-run.html">macOS compatibility checker</a>. machines from 2019.
    All M-series Macs are compatible with Apple Intelligence-powered features. AI-powered Siri voice features, such as more expressive voice and advanced dictation, require M3 and at least 12GB RAM.
@@ -188,23 +187,60 @@ is considered tiny context for slow response text-only processing.
    &nbsp;   
       Run 'fm <em>command</em> --help' for more information on a command.
    </pre>
-1. For a list of commands & examples:
+1. REMEMBER: Try examples without typing the "%".
    ```
    fm count-tokens 'hello world'
+   ```
+   <pre>
+   Token count: 3
+   </pre>
+1. Get the AI prompt:
+   ```
+   fm chat --instructions "You are a coding assistant"
+   ```
+1. Within the AI prompt, to save a conversation (as a GUID) to resume later:
+   ```
+   /save
+   /exit
+   ```
+1. For one-shot or scripted prompts:
+   ```
+   fm respond --instructions 'summarize this text' 
+   ```
+
+1. If you're enrolled as a Developer, add to the command:
+   ```
+   --model pcc
+   ```
+   https://developer.apple.com/documentation/foundationmodels/adding-server-side-intelligence-with-private-cloud-compute
+
+1. The default model is "system". To use Apple's Private Cloud Compute (PCC) model in the cloud for prompts that need reasoning or exceed the local model’s practical context capacity (with a 32,000-token shared context window):
+   ```
+   /model pcc
+   ```
+   Use pcc to analyze a long code diff or log bundle; 
+   Reason through a multi-step architecture decision;
+   Work from an image plus detailed instructions;
+   
+
+1. For 
+   ```
+   fm respond --instructions 'extract unique entities and output JSON' --model pcc --image screenshot.png
    ``` 
-1. fm chat --instructions "You are a coding assistant"
-1. 'what time is it in madrid, spain'
+
+1. fm chat --instructions 'what time is it in madrid, spain'
    no real-time data.
 
-1. For 
+1. Get JSON
    ```
-   fm respond --instructions 'summarize this text'
-   ``` 
-1. For 
+   fm schema object --name Person --string name --int age
    ```
-   fm respond --instructions 'extract unique entities and output JSON'
-   ``` 
+   QUESTION: schema.org
 
+https://apple.github.io/python-apple-fm-sdk/
+https://github.com/apple/python-apple-fm-sdk
+Python bindings run the Apple’s Foundation Models framework in Swift under the hood, 
+https://developer.apple.com/design/human-interface-guidelines/generative-ai
 
 
 <a name="Claude"></a>
