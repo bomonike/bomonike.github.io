@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-08-10"
-lastchange: "v025 CARICOM French Guiana @countries.md"
+date: "2026-09-26"
+lastchange: "v026 v-dem @countries.md"
 url: https://bomonike.github.io/countries
 file: "countries"
 title: "Countries"
@@ -87,6 +87,29 @@ Additional fields to be added:
 + Maritime identification digits (MID)
 + International Telecommunication Union (ITU)
 + International Union of Railways (UIC)
+
+
+<hr />
+
+## Democracy
+
+<a target="_blank" href="https://www.youtube.com/watch?v=O7LvhSQ5Te4">VIDEO: "I don't get democracy"</a> ny Johnny Harris
+
+dimensions:
+* Electorial Democracy level
+* Liberal Democracy level
+* Egalitarian Democracy level
+* Participatory Democracy level
+* Deliberative Democracy level
+
+https://www.v-dem.net/data/the-v-dem-dataset/
+Varieties of Democracy (V-Dem) Dataset includes the world's most comprehensive and detailed democracy ratings, by 173 country. contains data for up until the end of 2025. The latest version of the dataset and associated reference documents from
+https://v-dem.net/data_analysis/VariableGraph/
+The five high-level V-Dem democracy indices based on
+ 93 sub-indices, and the 179 indicators constituting them.
+version 16 (March 2026)
+
+https://github.com/eteitelbaum/vdemlite
 
 
 ## Time Zones
