@@ -1,6 +1,6 @@
 ---
-date: "2026-08-29"
-lastchange: "v008 ELF @ham-radio.md"
+date: "2026-10-08"
+lastchange: "v009 no NOAH for MT @ham-radio.md"
 url: "https://bomonike.github.io/ham-radio"
 file: "ham-radio"
 title: "Ham Radio"
@@ -68,6 +68,8 @@ It's <a target="_blank" href="https://www.instructables.com/How-to-program-a-Yae
    * 162.525 MHz
    * 162.550 MHz on 1,000 watts in SF bay
    <br /><br />
+   QUESTION: Why no NOAA in Montana?
+
 
 There is no station for all of MT at <a target="_blank" href="https://www.weatherusa.net/radio">https://www.weatherusa.net/radio</a>.
 
@@ -137,8 +139,9 @@ Technologies citizens can buy from retail stores (Walmart, Costco, etc.):
 
 ## Wavelengths vs Frequencies
 
-Light travels at about a constant velocity of 300,000 kilometers per second.<br />
-That's 300 Meters per second.
+Light travels at about a constant velocity of 300,000 kilometers per second. <a target="_blank" href="https://www.youtube.com/watch?v=FBaZQtKaHs0">VIDEO</a>:<br />
+Maxwell calculated c = 299,792,458 meters per second.
+(1 mile = 1,609 km)
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"><img alt="ham-wavelengths-1920x1047.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1715686931/ham-wavelengths-1920x1047_e5sbk8.png"></a>
 
