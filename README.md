@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-09-15"
-lastchange: "v231 github @README.md"
+date: "2026-10-16"
+lastchange: "v232 macos-bootup @README.md"
 url: https://bomonike.github.io/README
 file: "README"
 title: "README"
@@ -131,6 +131,7 @@ Topics alphabetically:
 1. <a target="_blank" href="https://bomonike.github.io/mlops">mlops</a> (Machine Learning Operations)
 1. <a target="_blank" href="https://wilsonmar.github.io/london">london</a> (England)
 1. <a target="_blank" href="https://bomonike.github.io/macos">macos</a>
+1. <a target="_blank" href="https://bomonike.github.io/macos-bootup">macos-bootup</a>
 1. <a target="_blank" href="https://bomonike.github.io/maximum-limits">maximum-limits</a> configuration settings
 1. <a target="_blank" href="https://bomonike.github.io/microsoft-ai">microsoft-ai</a>
 1. <a target="_blank" href="https://bomonike.github.io/microsoft-fabric">microsoft-fabric</a>
