@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-10-16"
-lastchange: "v036 from wilsonmar @macos-bootup.md"
+lastchange: "v037 remove wireshark plist @macos-bootup.md"
 url: "https://bomonike.github.io/macos-bootup"
 file: "macos-bootup"
 title: "MacOS Bootup"
@@ -191,17 +191,131 @@ which controls the services that start up on boot.
    http://www.peterborgapps.com/lingon/">
    http://www.peterborgapps.com/lingon</a>
 
-6. Consider setting up bash scripts to run periodically or at timed intervals in the background, similar to cron jobs on Linux. For example, to start the Apache web server start automatically when you turn on your Mac:
+6. TODO: Setup bash scripts to run periodically or at timed intervals in the background, similar to cron jobs on Linux. For example, to start the Apache web server start automatically when you turn on your Mac:
 
    <pre><strong>
    sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
    </strong></pre>
 
-   ### Plists
+## Plists
 
-   Plist files are how Macs define services.
+Plist files are how Macs define services.
 
-## PAM
+Based on https://github.com/aaronfagan/macos-launchd/blob/main/README.md
+
+Launch Agents run as a specific users, after that user has logged in.
+
+1. In a Terminal, navigate to the LaunchAgents system folder:
+   <pre>
+   ls -1 ~/Library/LaunchAgents
+   </pre>
+   Example:
+   ```
+    ai.perplexity.CometUpdater.wake.plist
+    ai.perplexity.keystone.agent.plist
+    ai.perplexity.keystone.xpcservice.plist
+    com.DigiDNA.iMazing2Mac.Mini.plist
+    com.elgato.StreamDeck.plist
+    com.google.GoogleUpdater.wake.plist
+    com.google.keystone.agent.plist
+    com.google.keystone.xpcservice.plist
+    homebrew.mxcl.ollama.plist
+    homebrew.mxcl.postgresql@17.plist
+    org.keepassxc.KeePassXC.plist
+    us.zoom.updater.gui.501.login.check.plist
+    us.zoom.updater.gui.501.plist
+   ```
+1. To enable (load) a specific LaunchAgent configuration:
+   <pre>
+   LAUNCH_AGENT_FILE="com.DigiDNA.iMazing2Mac.Mini.plist"
+   launchctl load -w ~/Library/LaunchAgents/${LAUNCH_AGENT_FILE}.plist
+   </pre>
+
+1. To disable (unload) a specific LaunchAgent configuration:
+   <pre>
+   LAUNCH_AGENT_FILE="com.DigiDNA.iMazing2Mac.Mini.plist"
+   launchctl unload -w ~/Library/LaunchAgents/${LAUNCH_AGENT_FILE}.plist
+   </pre>
+
+1. Launch Daemons run as root. No user login is required.
+
+   In order for Launch Daemons to function properly, place them in 
+   <pre>
+   ls -1 /Library/LaunchDaemons
+   </pre>
+   Example:
+   ```
+    ai.openobserve.macos-unified-log.plist
+    ai.openobserve.otelcol-contrib.plist
+    com.microsoft.autoupdate.helper.plist
+    com.microsoft.EdgeUpdater.wake.system.plist
+    com.microsoft.office.licensingV2.helper.plist
+    com.microsoft.OneDriveStandaloneUpdaterDaemon.plist
+    com.microsoft.OneDriveUpdaterDaemon.plist
+    dev.orbstack.OrbStack.privhelper.plist
+    homebrew.mxcl.nginx.plist
+    net.mullvad.daemon.plist
+    org.tanukisoftware.wrapper.Ignition-Gateway.plist
+    org.wireshark.ChmodBPF.plist
+    us.zoom.ZoomDaemon.plist
+   ```
+1. To enable (load) a specific configuration:
+   <pre>
+   LAUNCH_DAEMON_FILE="org.wireshark.ChmodBPF.plist"
+   launchctl load -w /Library/LaunchDaemons/${LAUNCH_DAEMON_FILE}.plist
+   </pre>
+1. To disable (unload) a specific configuration:
+   <pre>
+   LAUNCH_DAEMON_FILE="org.wireshark.ChmodBPF.plist"
+   launchctl unload -w /Library/LaunchDaemons/${LAUNCH_DAEMON_FILE}.plist
+   </pre>
+
+1. To check what is enabled, grep for the Label value from your configuration:
+   <pre>
+   launchctl list | grep "elgato"
+   </pre>
+   ```
+    PID	Status	Label
+    46998	0	com.elgato.StreamDeck
+    -	0	org.gpgtools.updater
+    46018	0	application.net.kovidgoyal.kitty.52929716.91724772
+   ```
+
+## Completely remove Wireshark
+
+1. Quit Wireshark
+1. Delete the app file: <tt>sudo rm -rf /Applications/Wireshark.app</tt>
+1. Remove Wireshark's launch daemon — the piece everyone misses. It's a root-level daemon that relaxes permissions on /dev/bpf* so non-root users can capture packets. Left in place, any local user can sniff traffic:
+   ```
+    sudo launchctl bootout system /Library/LaunchDaemons/org.wireshark.ChmodBPF.plist
+    sudo rm -f /Library/LaunchDaemons/org.wireshark.ChmodBPF.plist
+    sudo rm -rf "/Library/Application Support/Wireshark"
+   ```
+   Ignore "Boot-out failed: 5: Input/output error" or "no such process" messages.
+1. Remove related CLI symlinks (tshark, dumpcap, editcap, etc. — the installer symlinks them into the app bundle):
+   ```
+   sudo find /usr/local/bin -type l -lname '/Applications/Wireshark.app/*' -print -delete
+   ``` 
+1. Forget the installer receipts (bookkeeping, keeps pkgutil clean):
+   ```
+    pkgutil --pkgs | grep -i wireshark
+    sudo pkgutil --forget org.wireshark.pkg.Wireshark    # repeat for each ID listed
+   ```
+1. Sweep for leftovers (which can take several minutes):
+   ```
+    sudo find /Applications /Library /usr/local "$HOME/Library" "$HOME/.config" "$HOME/.local" \
+    -iname '*wireshark*' 2>/dev/null
+   ```
+   Typical stragglers: ~/Library/Saved Application State/org.wireshark.Wireshark.savedState and crash logs in ~/Library/Logs/DiagnosticReports/. 
+1. Delete whatever the sweep turns up.
+1. Homebrew:
+   ```
+    brew uninstall --zap --cask wireshark     # .pkg-based cask: removes app + daemon + app support
+    brew uninstall wireshark                  # if you used the CLI-only formula instead
+   ```
+   
+
+## PAM (Pluggable Authentication Model)
 
 Linux operating systems use PAM (Pluggable Authentication Model).
 
@@ -211,10 +325,11 @@ The macOS equivalent of the Linux <tt>ldd</tt> command which lists the shared li
    
    Example response:
    <pre>/usr/bin/login:
-        /usr/lib/libbsm.0.dylib (compatibility version 1.0.0, current version 1.0.0)
-        /usr/lib/libpam.2.dylib (compatibility version 3.0.0, current version 3.0.0)
-        /usr/lib/libEndpointSecuritySystem.dylib (compatibility version 1.0.0, current version 368.140.3, weak)
-        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1319.100.3)
+    	/usr/lib/libbsm.0.dylib (compatibility version 1.0.0, current version 1.0.0)
+    	/usr/lib/libpam.2.dylib (compatibility version 3.0.0, current version 3.0.0)
+    	/usr/lib/libEndpointSecuritySystem.dylib (compatibility version 1.0.0, current version 0.0.0, weak)
+    	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)
+   Password: _
    </pre>
    </ul>
 
