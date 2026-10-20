@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-06-18"
-lastchange: "v010 rice @skills.md"
+date: "2026-10-20"
+lastchange: "v011 Backup a trailer @skills.md"
 url: https://bomonike.github.io/skills
 file: "skills"
 title: "Skills"
@@ -229,6 +229,7 @@ https://www.youtube.com/@AgPhD/shorts
 * Repel down (safely)
 
 * Drive a car
+* <a target="_blank" href="https://www.youtube.com/watch?v=QtorpEcxVeY">Backup a trailer</a>
 * Drive a tractor
 * Ford a river
 
