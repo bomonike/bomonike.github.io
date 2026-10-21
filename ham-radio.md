@@ -59,17 +59,16 @@ It's <a target="_blank" href="https://www.instructables.com/How-to-program-a-Yae
 
 ## Goverment & Community bands
 
-<a target="_blank" href="https://www.aoml.noaa.gov/general/graphics/lib/radio.html">NOAA weather service</a> transmits 29 VHF-FM stations with a 40 mile range. [<a target="_blank" href="https://en.wikipedia.org/wiki/NOAA_Weather_Radio">Wikipedia</a>: daily schedule]
+<a target="_blank" href="https://www.aoml.noaa.gov/general/graphics/lib/radio.html">NOAA weather service</a> transmits 29 VHF-FM stations with a 40 mile range. [<a target="_blank" href="https://en.wikipedia.org/wiki/NOAA_Weather_Radio">Wikipedia</a>: daily schedule] (300 watts) 
    * 162.400 MHz
    * 162.425 MHz
    * 162.450 MHz
    * 162.475 MHz
    * 162.500 MHz
    * 162.525 MHz
-   * 162.550 MHz on 1,000 watts in SF bay
+   * 162.550 MHz on 1,000 watts in SF bay. Billings (Station WXL27)
    <br /><br />
    QUESTION: Why no NOAA in Montana?
-
 
 There is no station for all of MT at <a target="_blank" href="https://www.weatherusa.net/radio">https://www.weatherusa.net/radio</a>.
 
