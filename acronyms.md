@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-09-25"
-lastchange: "v111 HAL @acronyms.md"
+date: "2026-11-05"
+lastchange: "v113 UTCP @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -1459,6 +1459,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 * USP = Unique Selling Proposition
 *	UTC	=	Coordinated Universal Time	(the new compromise term for GMT)
 *	UTF	=	Unicode Transformation Format
+* UTCP = Universal Tool-Calling Protocol (<a target="_blank" href="https://youtube.com/shorts/PIGN4wkkPb8?si=1eR4ydb6Y4wRvgAn">VIDEO</a>: instead of MCP, UTPC client uses OpenAPI spec published by Stripe with custom blueprint in manual.json)
 *	UUID	=	 Universally Unique Identifier  (to identify information objects)
 *	UVM	=	Unified Vulnerability Management (Armorcode: aggregate, correlate and prioritize findings from security tools)
 *	UX	=	User eXperience
@@ -1522,7 +1523,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 *	WABD	=	Well Architected By Design
 *	WAF	=	Web Application Firewall	(AWS)
 *	WAF	=	Well-Architected Framework
-*	WAL	=	Write-Ahead Log
+*	WAL	=	Write-Ahead Log/Logging
 *	WAN	=	Wide Area Network
 *	Wasm	=	WebAssembly (binary instruction coding for a stack-based virtual machine in browsers)
 *	WBS	=	Work Breakdown Structure
