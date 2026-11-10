@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-11-05"
-lastchange: "v113 UTCP @acronyms.md"
+date: "2026-11-10"
+lastchange: "v114 OMR @acronyms.md"
 url: https://bomonike.github.io/acronyms
 file: "acronyms"
 title: "Acronyms"
@@ -982,6 +982,7 @@ In his book The Upside of Irrationality, the Duke University behavioral scientis
 * OLA	= Observe - Orient - Decide - Act (acrostic for the rapid decision-making strategy used by US fighter pilots during aerial combat)
 *	OLAP	=	OnLine Analytical Processing	(A business intelligence approach that allows users to analyze large amounts of data from different points of view)
 * OLTP	=	OnLine Transaction Processing
+* OMR = Optical Mark Recognition
 * OMS = Operations Management Suite (Microsoft product for datacenter administration)
 *	OOM	=	Out of Memory
 *	OOP	=	Object Oriented Programming
