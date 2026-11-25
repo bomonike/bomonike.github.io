@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-11-24"
-lastchange: "v036 regions.svg @museums-roadtrip-usa.md"
+lastchange: "v037 territories @museums-roadtrip-usa.md"
 url: "https://bomonike.github.io/museums-roadtrip-usa"
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -79,6 +79,43 @@ Hyperion is the largest individual sequoia tree, reaching 380 feet above ground 
 The St. Louis Gateway Arch is the <strong>tallest monument</strong> anywhere in the United States, reaching 630 feet above ground. It’s also the largest human-made arch in the world. It was designed by Finnish-American architect Eero Saarinen and built between 1963 and 1965.
 
 Oregon’s Crater Lake is the <strong>deepest lake</strong> in America, descending to depths of 1,943 feet — taller than the Eiffel Tower, Washington Monument, and Statue of Liberty stacked on top of one another. Its pure, crystalline waters are fed entirely by snowmelt and rain.
+
+## Territories of the United States
+
+Incorporated territories are considered part of the United States proper, and the Constitution applies fully.
+
+Incorporated Territories (with self-governing status)"
+
+* Palmyra Atoll (uninhabited, administered by the U.S. Fish and Wildlife Service)
+
+Unincorporated Territories are not part of the U.S. proper; only certain parts of the US Constitution apply.
+
+Unincorporated Organized territories have a locally adopted constitution and a three-branch government:
+
+* Guam
+
+* Northern Mariana Islands (Commonwealth)
+
+* Puerto Rico (Commonwealth)
+
+* U.S. Virgin Islands
+
+
+Unincorporated Unorganized territories lack a local constitution (though some, like American Samoa, have a basic law) directly administered by the federal government. 
+
+* <a target="_blank" href="https://en.wikipedia.org/wiki/American_Samoa">American Samoa</a> (USPS state code "AS") - the southernmost territory of the United States - 2,200 miles (3,500 km) southwest of the U.S. state of Hawaii. 77 square miles (199 km2).
+
+* Baker Island (uninhabited)
+* Howland Island (uninhabited)
+* Jarvis Island (uninhabited)
+* Johnston Atoll (uninhabited)
+* Kingman Reef (uninhabited)
+* Midway Atoll (uninhabited)
+* Navassa Island (uninhabited, disputed with Haiti)
+* Wake Island (uninhabited, disputed with Marshall Islands)
+
+
+Five territories are permanently inhabited: Puerto Rico, Guam, Northern Mariana Islands, U.S. Virgin Islands, and American Samoa.
 
 
 ## Divisions and Dividers
