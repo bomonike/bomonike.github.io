@@ -1,8 +1,8 @@
 ---
 layout: post
-date: "2026-06-26"
-lastchange: "v031 vegas @museums-roadtrip-usa.md"
-url: https://bomonike/museums-roadtrip-usa
+date: "2026-11-24"
+lastchange: "v033 magnetic north @museums-roadtrip-usa.md"
+url: https://bomonike.github.io/museums-roadtrip-usa
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
 excerpt: "Visual, architectural, and culinary art in every state and major city, mapped by Machine Learning"
@@ -37,6 +37,38 @@ The US is only one of two countries in the world still stuck on the imperial sys
    * 1 oz = 28.35 grams  &  1 g = 0.0353 oz.
    * Fahrenheit to Celsius: C=(F−32)×5/9.
    <br /><br />
+
+### Magnetic Declinations
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1795577160/us-mag-declanation_az75iy.png"><img align="right" width="200" alt="us-mag-declanation.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1795577160/us-mag-declanation_az75iy.png"></a>
+This map shows US magnetic fields from the most recent World Magnetic Model (WMM), World Magnetic Model High Resolution (WMMHR), or the International Geomagnetic Reference Field (IGRF) model.
+
+PROTIP: Rather than having to mentally making the adjustment, many <strong>draw long lines on their paper map</strong> to show adjustsed True North to align their compass.
+
+The green line from New Orleans, Louisiana up through Minneapolis, Minnesota is where
+no declination adjustment is needed for a magetic compass to point to True North.
+But some places have local magnetic field anomalies that can cause the regional angle to be off by more than 10 degrees. 
+
+<img align="right" width="200" alt="east-declination.png" src=""></a>
+Use the <a target="_blank" href="https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml">Magnetic Field Calculators website at NOAA</a> to determine the precise declination adjustment to obtain the <strong>True North bearing</strong> based on your compass-based bearing. 
+Declinations East (shown in red  on the US map) have True North leaning East. 
+
+## Extreme corners in the US
+
+* NorthWest: <a target="_blank" href="https://en.wikipedia.org/wiki/Blaine%2C_Washington">Blaine, Washington</a>  at 48° 59′ 17″ N, 122° 44′ 37″ W or 48.988056 N, -122.743611 W, (where the Peace Arch international monument straddles the border of US and Canada) - declination subract <strong>15° 8' E</strong> ± 0° 23' (changing by  0° 8' W per year from 2026-11-25).
+
+* SouthWest: <a target="_blank" href="https://en.wikipedia.org/wiki/San_Ysidro%2C_San_Diego">San Ysidro, California</a> at 32° 33′ 17.64″ N, 117° 2′ 39.5″ W or 32.5549 N, -117.044306 W
+(the busiest border crossing in the Western Hemisphere) - declination 10° 42' E  ± 0° 20'  changing by  0° 5' W per year 
+
+* NorthEast: <a target="_blank" href="https://en.wikipedia.org/wiki/Madawaska%2C_Maine">Madawaska, Maine</a> at 47° 16′ 25″ N, 68° 15′ 18″ W or 47.273611 N, -68.255 W, (87% speak French at home in this most northeastern town in the contiguous United States, next to the province of Quebec, Canada) - declination 15° 53' W  ± 0° 22'  changing by  0° 8' E per year.
+
+* SouthEast: <a target="_blank" href="https://en.wikipedia.org/wiki/Key_West">Key West, Florida</a> at 24° 33′ 54.64″ N, 81° 46′ 32.86″ W or 24.565176 N, -81.775794 W ("Home of the Sunset" where you can see the <a target="_blank" href="https://eclipsewise.com/lunar/LEprime/2001-2100/LE2029Jun26Tprime.html">total lunar eclipse on June 26, 2029</a> [<a target="_blank" href="https://en.wikipedia.org/wiki/June_2029_lunar_eclipse">Wikipedia</a>]) - declination 6° 18' W  ± 0° 19'  changing by  0° 6' W per year 
+
+<br /><br />
+
+
+<a target="_blank" href="https://ironbutt.org/rides/">Iron Butt</a> motocyle rallies award bonus points for reaching the four corners of the nation:
+
 
 ## Divisions and Dividers
 
@@ -103,16 +135,6 @@ BTW, finding where each site is located resulted in a great geography and histor
 <br /><br />
 
 
-## Extreme corners
-
-<a target="_blank" href="https://ironbutt.org/rides/">Iron Butt</a> motocyle rallies award bonus points for reaching the four corners of the nation:
-
-   * NorthWest: <a target="_blank" href="https://en.wikipedia.org/wiki/Blaine%2C_Washington">Blaine, Washington</a> (where the Peace Arch international monument straddles the border of US and Canada)
-   * NorthEast: <a target="_blank" href="https://en.wikipedia.org/wiki/Madawaska%2C_Maine">Madawaska, Maine</a> (87% speak French at home in this most northeastern town in the contiguous United States, next to the province of Quebec, Canada)
-   * SouthEast: <a target="_blank" href="https://en.wikipedia.org/wiki/Key_West">Key West, Florida</a> ("Home of the Sunset" where you can see the <a target="_blank" href="https://eclipsewise.com/lunar/LEprime/2001-2100/LE2029Jun26Tprime.html">total lunar eclipse on June 26, 2029</a> [<a target="_blank" href="https://en.wikipedia.org/wiki/June_2029_lunar_eclipse">Wikipedia</a>])
-   * SouthWest: <a target="_blank" href="https://en.wikipedia.org/wiki/San_Ysidro%2C_San_Diego">San Ysidro, California</a> (the busiest border crossing in the Western Hemisphere)
-   <br /><br />
-
 ### Highest and lowest 
 
 Denali is the highest peak anywhere in the US, reaching heights of 20,310 feet. But it’s located in Alaska. 
@@ -138,6 +160,25 @@ Oregon’s Crater Lake is the deepest lake in America, descending to depths of 1
 <img alt="6 days" width="750" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1660661005/ThomasCannonandJustinMorrisRoute-589x301_g6ygsm.jpg"></a>
 
 To deter reckless driving among Extreme Road-trippers, the <a target="_blank" href="https://www.guinnessworldrecords.com/news/2015/8/60-years-on-the-categories-that-guinness-world-records-no-longer-monitors-393758">Guinness World Records discontinued listing speed records in 1996</a>. But that didn't stop the <a target="_blank" href="https://allfiftyclub.com/members/record-holders-fast-to-50/">All Fifty States Club</a> website. On May 2025, including Alaska, 7 days, 23 hours, and 2 minutes.
+
+
+
+## Coast-to-Coast Trails
+
+<a target="_blank" href="https://www.youtube.com/watch?v=xljpEbTh1ds/">VIDEO</a>:
+The American Discovery Trail (https://discoverytrail.org/) spans 6,800 miles from coast to coast, with two options in the middle states. The route across rural and urban areas, wilderness, desert mountains and forests.
+
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1707778533/museums-us-am-disc-trail-1688x1018_snp2gt.png"><img alt="museums-us-am-disc-trail-1688x1018.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707778533/museums-us-am-disc-trail-1688x1018_snp2gt.png"></a>
+
+NERDY TRIVIA: How fast would one need to drive to see a sunset continuously?<br />
+If you were at 89.9 degrees North near a Pole, you could walk across all time zones in the world.<br />
+The formula is: v = circumference * cos(ϕ) where ϕ = latitude.<br />
+At the equator, the circumferance of the earth is 40,075 km.
+So the earth rotates at 40,075 km over 24 h ≈ <strong>1670 km/h (1038 mph)</strong>.<br />
+At Denver, Colorado, its 40 degrees latitude = 0.77 radians, so <strong>1279 km/h (795 mph)</strong>.<br />
+See my Python program that calculates it at<br />
+https://github.com/wilsonmar/python-samples/blob/main/sunset-speed.py
+
 
 <a name="freeways"></a>
 
@@ -209,23 +250,6 @@ No sales tax is collected from residents within the states of Alaska, Delaware, 
 Many don't pay the use tax to their home state even though there can be significant fines, on top of paying the tax, for not doing so.
 
 <a target="_blank" href="https://9to5mac.com/2023/07/24/sales-tax-holiday-apple-products/">Some states offer sales tax-free holidays</a> (for a limited time) to encourage spending on products that are considered to be of benefit to the state's economy. This typically occurs in August and early September for back-to-school supplies, books, computers, and clothing.
-
-
-## Coast-to-Coast Trails
-
-<a target="_blank" href="https://www.youtube.com/watch?v=xljpEbTh1ds/">VIDEO</a>:
-The American Discovery Trail (https://discoverytrail.org/) spans 6,800 miles from coast to coast, with two options in the middle states. The route across rural and urban areas, wilderness, desert mountains and forests.
-
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1707778533/museums-us-am-disc-trail-1688x1018_snp2gt.png"><img alt="museums-us-am-disc-trail-1688x1018.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1707778533/museums-us-am-disc-trail-1688x1018_snp2gt.png"></a>
-
-NERDY TRIVIA: How fast would one need to drive to see a sunset continuously?<br />
-If you were at 89.9 degrees North near a Pole, you could walk across all time zones in the world.<br />
-The formula is: v = circumference * cos(ϕ) where ϕ = latitude.<br />
-At the equator, the circumferance of the earth is 40,075 km.
-So the earth rotates at 40,075 km over 24 h ≈ <strong>1670 km/h (1038 mph)</strong>.<br />
-At Denver, Colorado, its 40 degrees latitude = 0.77 radians, so <strong>1279 km/h (795 mph)</strong>.<br />
-See my Python program that calculates it at<br />
-https://github.com/wilsonmar/python-samples/blob/main/sunset-speed.py
 
 ## US National Parks
 
