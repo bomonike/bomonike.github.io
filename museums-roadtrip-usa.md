@@ -1,8 +1,8 @@
 ---
 layout: post
 date: "2026-11-24"
-lastchange: "v033 magnetic north @museums-roadtrip-usa.md"
-url: https://bomonike.github.io/museums-roadtrip-usa
+lastchange: "v035 magnetic north @museums-roadtrip-usa.md"
+url: "https://bomonike.github.io/museums-roadtrip-usa"
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
 excerpt: "Visual, architectural, and culinary art in every state and major city, mapped by Machine Learning"
@@ -43,17 +43,17 @@ The US is only one of two countries in the world still stuck on the imperial sys
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1795577160/us-mag-declanation_az75iy.png"><img align="right" width="200" alt="us-mag-declanation.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1795577160/us-mag-declanation_az75iy.png"></a>
 This map shows US magnetic fields from the most recent World Magnetic Model (WMM), World Magnetic Model High Resolution (WMMHR), or the International Geomagnetic Reference Field (IGRF) model.
 
-PROTIP: Rather than having to mentally making the adjustment, many <strong>draw long lines on their paper map</strong> to show adjustsed True North to align their compass.
-
 The green line from New Orleans, Louisiana up through Minneapolis, Minnesota is where
 no declination adjustment is needed for a magetic compass to point to True North.
 But some places have local magnetic field anomalies that can cause the regional angle to be off by more than 10 degrees. 
 
-<img align="right" width="200" alt="east-declination.png" src=""></a>
+<img align="right" width="200" alt="east-declination.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1795583523/east-declination_l8u0eb.png"></a>
 Use the <a target="_blank" href="https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml">Magnetic Field Calculators website at NOAA</a> to determine the precise declination adjustment to obtain the <strong>True North bearing</strong> based on your compass-based bearing. 
-Declinations East (shown in red  on the US map) have True North leaning East. 
+Declinations East (such as in the NorthWest shown in red on the US map) have True North leaning East. 
 
-## Extreme corners in the US
+PROTIP: Rather than having to mentally making the adjustment, many <strong>draw long lines on their paper map</strong> to show adjusted True North to align their compass.
+
+### Extreme corners in the US
 
 * NorthWest: <a target="_blank" href="https://en.wikipedia.org/wiki/Blaine%2C_Washington">Blaine, Washington</a>  at 48° 59′ 17″ N, 122° 44′ 37″ W or 48.988056 N, -122.743611 W, (where the Peace Arch international monument straddles the border of US and Canada) - declination subract <strong>15° 8' E</strong> ± 0° 23' (changing by  0° 8' W per year from 2026-11-25).
 
@@ -63,11 +63,22 @@ Declinations East (shown in red  on the US map) have True North leaning East.
 * NorthEast: <a target="_blank" href="https://en.wikipedia.org/wiki/Madawaska%2C_Maine">Madawaska, Maine</a> at 47° 16′ 25″ N, 68° 15′ 18″ W or 47.273611 N, -68.255 W, (87% speak French at home in this most northeastern town in the contiguous United States, next to the province of Quebec, Canada) - declination 15° 53' W  ± 0° 22'  changing by  0° 8' E per year.
 
 * SouthEast: <a target="_blank" href="https://en.wikipedia.org/wiki/Key_West">Key West, Florida</a> at 24° 33′ 54.64″ N, 81° 46′ 32.86″ W or 24.565176 N, -81.775794 W ("Home of the Sunset" where you can see the <a target="_blank" href="https://eclipsewise.com/lunar/LEprime/2001-2100/LE2029Jun26Tprime.html">total lunar eclipse on June 26, 2029</a> [<a target="_blank" href="https://en.wikipedia.org/wiki/June_2029_lunar_eclipse">Wikipedia</a>]) - declination 6° 18' W  ± 0° 19'  changing by  0° 6' W per year 
-
 <br /><br />
 
-
 <a target="_blank" href="https://ironbutt.org/rides/">Iron Butt</a> motocyle rallies award bonus points for reaching the four corners of the nation:
+
+### Highest and lowest 
+
+Denali is the <strong>highest peak</strong> anywhere in the US, reaching heights of 20,310 feet. But it’s located in Alaska. 
+
+Mount Whitney is the <strong>tallest point</strong> in the contiguous U.S. at a height of 14,494 feet above sea level. It's part of the Sierra Nevada mountain range in eastern California.
+
+Sequoias are the <strong>largest tree species</strong> in the country.
+Hyperion is the largest individual sequoia tree, reaching 380 feet above ground in California’s Redwood National Park.
+
+The St. Louis Gateway Arch is the <strong>tallest monument</strong> anywhere in the United States, reaching 630 feet above ground. It’s also the largest human-made arch in the world. It was designed by Finnish-American architect Eero Saarinen and built between 1963 and 1965.
+
+Oregon’s Crater Lake is the <strong>deepest lake</strong> in America, descending to depths of 1,943 feet — taller than the Eiffel Tower, Washington Monument, and Statue of Liberty stacked on top of one another. Its pure, crystalline waters are fed entirely by snowmelt and rain.
 
 
 ## Divisions and Dividers
@@ -76,27 +87,6 @@ Declinations East (shown in red  on the US map) have True North leaning East.
    * "New England" states are: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont.
    * "Mid-Atlantic" states are New York, New Jersey, and Pennsylvania.
    <br /><br />
-
-<a name="RainShadow"></a>
-
-### The US Rain Shadow Divide: Mountains to Midwest
-
-"Mountain" states refer to the tall mountains in the states of Montana, Idaho, Wyoming, Nevada, Utah, Colorado, Arizona, New Mexico. They force moisture up to bypass the "Midwest" US.
-
-> <a target="_blank" href="https://youtube.com/shorts/mOmpn0m7pxk?si=6c6Rfj-s0q5HftEp">VIDEO</a>: Notice the transition between <strong>yellow to green</strong> down the middle of the country?
-
-<a target="_blank" href="https://www.youtube.com/watch?v=ki-hoy-3ea8&t=7m50s">VIDEO</a>: 80% of Americans live East of the (vertical) <strong>98th Meridian</strong>, as shown by a green straight line overlaid this map from <a target="_blank" href="https://blackmarble.gsfc.nasa.gov/">NASA's BlackMarble satellite images of the nigh sky worldwide</a>:<br />
-<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1672456116/usa-frontier-1920x1080_a2urp2.jpg"><img alt="usa-frontier-1920x1800.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1672456116/usa-frontier-1920x1080_a2urp2.jpg"></a>
-
-That green line down the middle of America defines the extent wet storms reach from the East. West of that is the "Rain Shadow" of limited moisture from the Pacific West blocked by the tall Cascade Mountains in Washington state housing Leavenworth, Washington and Rocky Mountains housing Aspen, Vail, Breckenridge, Telluride, <a target="_blank" href="https://www.google.com/maps/place/Denver,+CO/@39.7584783,-113.8531857,5z/">Denver, Colorado</a>), Park City, Utah, California.
-
-When geologist John Westly Powell identified this phenomenon across the "prairies" in 1890, that natural line was at the 100th Meridian (vs. 98th today). Since then, "Climate change" continues to shift East. So expect less rain for agriculture around Winnipeg (Manitoba, Canada), Fargo, Sioux Falls, Omaha, Lincoln, Wichita, Oklahoma City, Forth Worth, Austin, and San Antonio Texas.
-
-
-<strong>Cities</strong> here are listed within each <a href="#CivilWar">state of the union</a>, along natural geography East-to-West:
-
-
-<a href="#extreme-corners">Extreme Corners</a>
 
 Journeys floating <strong>on water</strong> toward the Equator:
 
@@ -135,26 +125,30 @@ BTW, finding where each site is located resulted in a great geography and histor
 <br /><br />
 
 
-### Highest and lowest 
+<a name="RainShadow"></a>
 
-Denali is the highest peak anywhere in the US, reaching heights of 20,310 feet. But it’s located in Alaska. 
+### The US Rain Shadow Divide: Mountains to Midwest
 
-Mount Whitney is the tallest point in the contiguous U.S. at a height of 14,494 feet above sea level.
-It's part of the Sierra Nevada mountain range in eastern California.
+"Mountain" states refer to the tall mountains in the states of Montana, Idaho, Wyoming, Nevada, Utah, Colorado, Arizona, New Mexico. They force moisture up to bypass the "Midwest" US.
 
-Sequoias are the largest tree species in the country.
-Hyperion is the largest individual sequoia tree, reaching 380 feet above ground in California’s Redwood National Park.
+> <a target="_blank" href="https://youtube.com/shorts/mOmpn0m7pxk?si=6c6Rfj-s0q5HftEp">VIDEO</a>: Notice the transition between <strong>yellow to green</strong> down the middle of the country?
 
-The St. Louis Gateway Arch is the tallest monument anywhere in the United States, reaching 630 feet above ground. It’s also the largest human-made arch in the world. It was designed by Finnish-American architect Eero Saarinen and built between 1963 and 1965.
+<a target="_blank" href="https://www.youtube.com/watch?v=ki-hoy-3ea8&t=7m50s">VIDEO</a>: 80% of Americans live East of the (vertical) <strong>98th Meridian</strong>, as shown by a green straight line overlaid this map from <a target="_blank" href="https://blackmarble.gsfc.nasa.gov/">NASA's BlackMarble satellite images of the nigh sky worldwide</a>:<br />
+<a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1672456116/usa-frontier-1920x1080_a2urp2.jpg"><img alt="usa-frontier-1920x1800.jpg" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1672456116/usa-frontier-1920x1080_a2urp2.jpg"></a>
 
-Oregon’s Crater Lake is the deepest lake in America, descending to depths of 1,943 feet — taller than the Eiffel Tower, Washington Monument, and Statue of Liberty stacked on top of one another. Its pure, crystalline waters are fed entirely by snowmelt and rain.
+That green line down the middle of America defines the extent wet storms reach from the East. West of that is the "Rain Shadow" of limited moisture from the Pacific West blocked by the tall Cascade Mountains in Washington state housing Leavenworth, Washington and Rocky Mountains housing Aspen, Vail, Breckenridge, Telluride, <a target="_blank" href="https://www.google.com/maps/place/Denver,+CO/@39.7584783,-113.8531857,5z/">Denver, Colorado</a>), Park City, Utah, California.
+
+When geologist John Westly Powell identified this phenomenon across the "prairies" in 1890, that natural line was at the 100th Meridian (vs. 98th today). Since then, "Climate change" continues to shift the line East. So expect less rain for agriculture around Winnipeg (Manitoba, Canada), Fargo, Sioux Falls, Omaha, Lincoln, Wichita, Oklahoma City, Forth Worth, Austin, and San Antonio Texas.
+
+
+<strong>Cities</strong> here are listed within each <a href="#CivilWar">state of the union</a>, along natural geography East-to-West:
 
 
 <a name="Google_route_map"></a>
 
-## Just Touching Each State
+## Being in Each State
 
-<a target="_blank" href="http://goo.gl/maps/ZdUYQ">This Google route map</a> was actually used by <a target="_blank" href="http://www.datapointed.net/2012/08/fastest-route-to-visit-all-fifty-united-states/">recent finishers</a> to go around the 48 states in 6 days:
+<a target="_blank" href="http://goo.gl/maps/ZdUYQ">This Google route map</a> was used by <a target="_blank" href="http://www.datapointed.net/2012/08/fastest-route-to-visit-all-fifty-united-states/">previous finishers</a> to go around the 48 contingous states in 6 days:
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1660661005/ThomasCannonandJustinMorrisRoute-589x301_g6ygsm.jpg">
 <img alt="6 days" width="750" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1660661005/ThomasCannonandJustinMorrisRoute-589x301_g6ygsm.jpg"></a>
@@ -231,9 +225,9 @@ American cruise ship crews use "I-95" as slang for the main behind-the-scenes ro
 * Road to Hana (Maui, Hawaii) - 45 miles between Kahului and Hana has 617 hairpin curves and 56 one-lane bridges. But there are roadside food stands along panoramic Pacific Ocean views, bamboo jungle and Norfolk pines, sacred waterfalls and swimming holes, lava tubes, tropical flowers.
 
 
-## Refueling and ReCharging
+## EV Refueling and ReCharging
 
-The number of <a target="_blank" href="https://www.tesla.com/supercharger">Tesla Supercharger locations</a> jumped to <a target="_blank" href="https://en.wikipedia.org/wiki/Tesla_Supercharger">2,966 in Q2 2021 from 1,587 at Q1 2019:<br />
+The number of <a target="_blank" href="https://www.tesla.com/supercharger">Tesla Supercharger locations</a> jumped to <a target="_blank" href="https://en.wikipedia.org/wiki/Tesl`a_Supercharger">2,966 in Q2 2021 from 1,587 at Q1 2019:<br />
 <img alt="map tesla charging stations 650x334-c59" width="650" height="334" src="https://cloud.githubusercontent.com/assets/300046/17037278/538ea0f8-4f4d-11e6-907a-6a0b65a807e5.jpg"></a>
 
 In 2023 Ford and GM agreed to enable their electric cars to use Tesla's charging ports and stations.
