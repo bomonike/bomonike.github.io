@@ -1,7 +1,7 @@
 ---
 layout: post
-date: "2026-11-24"
-lastchange: "v037 territories @museums-roadtrip-usa.md"
+date: "2026-11-25"
+lastchange: "v038 territories @museums-roadtrip-usa.md"
 url: "https://bomonike.github.io/museums-roadtrip-usa"
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -41,17 +41,17 @@ The US is only one of two countries in the world still stuck on the imperial sys
 ### Magnetic Declinations
 
 <a target="_blank" href="https://res.cloudinary.com/dcajqrroq/image/upload/v1795577160/us-mag-declanation_az75iy.png"><img align="right" width="200" alt="us-mag-declanation.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1795577160/us-mag-declanation_az75iy.png"></a>
-This map shows US magnetic fields from the most recent World Magnetic Model (WMM), World Magnetic Model High Resolution (WMMHR), or the International Geomagnetic Reference Field (IGRF) model.
-
-The green line from New Orleans, Louisiana up through Minneapolis, Minnesota is where
+In this map of US magnetic fields based on the most recent World Magnetic Model (WMM), World Magnetic Model High Resolution (WMMHR), and International Geomagnetic Reference Field (IGRF) model,
+the green line from New Orleans, Louisiana up through Minneapolis, Minnesota is where
 no declination adjustment is needed for a magetic compass to point to True North.
 But some places have local magnetic field anomalies that can cause you angle to be off by more than 10 degrees. 
 
 <img align="right" width="200" alt="east-declination.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1795583523/east-declination_l8u0eb.png">
 Use the <a target="_blank" href="https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml">Magnetic Field Calculators website at NOAA</a> to determine the precise declination adjustment to obtain the <strong>True North bearing</strong> based on your compass-based bearing. 
-Declinations East (such as in the NorthWest shown in red on the US map) have True North leaning East. 
 
-PROTIP: Rather than having to mentally making the adjustment, many <strong>draw long lines on their paper map</strong> to show adjusted True North to align their compass.
+REMEMBER: Declinations East (such as in the NorthWest shown in red on the US map) have True North leaning East. 
+
+PROTIP: Rather than mentally making the adjustment, many <strong>draw long lines on their paper map</strong> to show adjusted True North to align their compass.
 
 ### Extreme corners in the US
 
