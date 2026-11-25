@@ -1,7 +1,7 @@
 ---
 layout: post
 date: "2026-11-24"
-lastchange: "v035 magnetic north @museums-roadtrip-usa.md"
+lastchange: "v036 regions.svg @museums-roadtrip-usa.md"
 url: "https://bomonike.github.io/museums-roadtrip-usa"
 file: "museums-roadtrip-usa"
 title: "Museums Roadtrip USA"
@@ -45,9 +45,9 @@ This map shows US magnetic fields from the most recent World Magnetic Model (WMM
 
 The green line from New Orleans, Louisiana up through Minneapolis, Minnesota is where
 no declination adjustment is needed for a magetic compass to point to True North.
-But some places have local magnetic field anomalies that can cause the regional angle to be off by more than 10 degrees. 
+But some places have local magnetic field anomalies that can cause you angle to be off by more than 10 degrees. 
 
-<img align="right" width="200" alt="east-declination.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1795583523/east-declination_l8u0eb.png"></a>
+<img align="right" width="200" alt="east-declination.png" src="https://res.cloudinary.com/dcajqrroq/image/upload/v1795583523/east-declination_l8u0eb.png">
 Use the <a target="_blank" href="https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml">Magnetic Field Calculators website at NOAA</a> to determine the precise declination adjustment to obtain the <strong>True North bearing</strong> based on your compass-based bearing. 
 Declinations East (such as in the NorthWest shown in red on the US map) have True North leaning East. 
 
@@ -83,7 +83,8 @@ Oregon’s Crater Lake is the <strong>deepest lake</strong> in America, descendi
 
 ## Divisions and Dividers
 
-<a target="_blank" href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States"><img alt="US Regions" src="svg/us_census_regions.svg" /></a>
+<a target="_blank" href="svg/us_census_regions.svg"><img alt="US Regions" src="svg/us_census_regions.svg" /></a>
+In this <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States">regional map of the US</a>:
    * "New England" states are: Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont.
    * "Mid-Atlantic" states are New York, New Jersey, and Pennsylvania.
    <br /><br />
